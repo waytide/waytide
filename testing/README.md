@@ -6,7 +6,7 @@ Controls-based test-writing conventions — not tied to a specific test-framewor
 - Actuate the concern once at the top; assert each outcome in its own nested context (`tdd-test-structure`).
 - Context nesting mirrors the folder hierarchy; a single-case feature is one file named for the feature.
 - A `test` block holds only the assertion; every operand is an explaining variable declared in the enclosing context.
-- Name a test "Is …" only for a value-equals-comparator assertion — with one exception: an error outcome is named "Is an error", its condition promoted to a context.
+- Name a test "Is …" only for a value-equals-comparator assertion. A raised-error outcome is named "Fails" (or "Doesn't fail"), its condition promoted to a context.
 - A predicate method's context is "`<Name>` Predicate"; wrap a test in a context only when it needs local instrumentation.
 
 **Controls**
