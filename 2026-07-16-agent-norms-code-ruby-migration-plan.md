@@ -64,9 +64,9 @@ Create `eventide-project/agent-norms-code-ruby` (public), `git subtree split --p
 
 ## Open questions
 
-1. **Intra-family-factory privilege — general or `Constant`-local?** It reads as a general principle (supertype-as-factory may call a subtype's `new` directly when holding strict form) illustrated with `Constant` — parallel to the `wrap→mediates` reclassification. **Recommendation: general → `code/ruby`**, with the `Constant.namespace` example genericized; only the example was project-specific.
+1. **~~Intra-family-factory privilege~~ — RESOLVED (2026-07-17): general → `code/ruby`.** A supertype-as-factory reaching a subtype's strict `new` once it holds strict-form input is the perimeter reaching the core — the general stance, not Constant-specific. The whole `build`/`new` rule (both parts) relocates to `code/ruby`; the `Constant.namespace` example is genericized (deferred with the other examples).
 2. **~~`string-outputs-permissive-inputs`~~ — RESOLVED (2026-07-17): extract the general robustness rule.** A general `code/ruby` robustness rule is authored (robustness at the class interface, strict instance interface, coercion at increasing distance up to an outer-module function); the constant-names version stays the `local` application. *(Confirm the authored rule's framing at build time.)*
-3. **`lib-report` generalization** — confirm the lenses generalize cleanly with the `Constant` buckets dropped (recommended, parallel to `test-report`).
+3. **~~`lib-report` generalization~~ — RESOLVED (2026-07-17): confirmed.** Keep the lenses (role/layer, Ruby construct, method style, API currency, error taxonomy, idioms), drop the `Constant` buckets, recompute from `lib/` — parallel to `test-report`.
 
 ## Not done without explicit go-ahead
 
