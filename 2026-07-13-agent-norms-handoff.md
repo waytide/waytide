@@ -26,7 +26,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 - **Term artifacts per package:** `vocabulary.md` (terms with meanings) and/or `substitutes.md` (retired → substitute). Terms placed by the domain they serve.
 - **No manifest format;** each package dir carries an `include: …` line in a `package.md` file (separate from the informative `README.md`).
 - **DBE contributes the `loops/` artifact dir;** foundation keeps `rules/observations/deferred/log`.
-- **Each package carries its own `log/`** — package-local decisions travel with the package as provenance (open source). Distinct from the *project* decision log (foundation's `agent/log/` convention for a consuming project's own decisions). Cross-package / migration decisions are foundation decisions, or transitional entries in the composite repo's top-level `agent/log/`.
+- **Each package's `log/` carries only rule-content decisions** (consumer provenance; distributed with the package). **Migration/packaging/authoring history is undistributed** — it stays in the composite repo's top-level `agent/log/` (never split/pushed). Distinct again from the *project* decision log (foundation's `agent/log/` convention for a consuming project's own decisions). A package log starts empty.
 
 ## Consolidations (during migration)
 

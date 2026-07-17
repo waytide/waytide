@@ -23,14 +23,7 @@ Two distinct log concepts, not to be conflated:
 - **A project's own decision log** — the `foundation` convention a consuming project follows: `agent/log/` for *that project's* decisions. Consumer-facing; stays a foundation rule.
 - **A package's authoring log** — `<package>/log/`, recording decisions about *that package's* rules, traveling with the package as provenance. A packaging-structure convention (recorded in the packaging design), not a consumer rule.
 
-**Relocating the existing composite-level entries.** The composite repo's top-level `agent/log/` currently holds four entries. As part of this increment, the framework/convention ones move into **`foundation/log/`**, where they belong (they are foundation decisions):
-
-- `include:` / `package.md` adoption → `foundation/log/`
-- `package.md` / `README.md` ISO-prefix exemption → `foundation/log/`
-- composite / component repo naming → `foundation/log/`
-- the per-package-log convention itself → `foundation/log/`
-
-The composite top-level `agent/log/` then retains only pure **migration-milestone** entries (e.g. the docs+git publish-and-prove record) — the transitional record of the migration, distinct from any package's authoring history.
+**The existing composite-level entries stay put.** (Refined 2026-07-17.) The `include:`/`package.md`, ISO-prefix-exemption, composite/component-naming, and per-package-log entries are **packaging/authoring** decisions, not decisions about foundation's *rule content* — so they remain in the composite repo's top-level `agent/log/`, which never distributes. Shipping them into `foundation/log/` would push packaging-system trivia to every consumer. `foundation/log/` therefore **starts empty**; it gains entries only when a real design choice is made about a foundation rule's content. (The `git/log/` re-home entry was moved back to the composite log for the same reason.)
 
 ## Phase A — Local
 
@@ -39,7 +32,7 @@ The composite top-level `agent/log/` then retains only pure **migration-mileston
 3. **Amend** `agent-file-names-iso8601` with the `package.md`/`README.md` exemption note.
 4. **Author** the framework rules from `AGENTS.md` prose (rules/observations/deferred/log conventions, decision-log format). Prerequisite: read `constant`'s `AGENTS.md` to scope the extraction before writing.
 5. **`package.md`** (`include: (none)`) and an informative **`README.md`**.
-6. **`foundation/log/`** — move the four framework/convention entries here from the composite top-level `agent/log/`.
+6. **No `foundation/log/` yet** — it starts empty (packaging/authoring entries stay in the composite log; see above).
 7. **Commit**, following the git package's own conventions.
 
 ## Phase B — Distribution
