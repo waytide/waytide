@@ -24,6 +24,7 @@ Under those, one rule per substitution — each a small stance-installing rule t
 | plainly ("is that right?") | "does that land?" |
 | scenario | arm |
 | increment | cut |
+| obsolete | dead |
 
 These are general phrasing substitutions with no home domain. Terms tied to a domain live with that domain (controls/verified/protect in `testing`; the efferent/actuation/hinge lexicon in `design-by-efferent`).
 
