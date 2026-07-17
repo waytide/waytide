@@ -9,8 +9,8 @@ Each package lives here as a top-level directory under one shared history. A **c
 ## Preconditions
 
 1. On `master`, working tree clean: `git -C <composite> status` shows nothing.
-2. `gh auth status` logged in, and the account can **push to `eventide-project`** (org membership / write access — confirm this; `gh` being authenticated as `sbellware` does not by itself prove org write access).
-3. `gh auth setup-git` has run once, so `git push https://github.com/...` uses the gh credential.
+2. Raw git can push to the component repos on your existing credential (macOS keychain helper). Confirm with `git ls-remote https://github.com/eventide-project/agent-norms-foundation.git HEAD` — a hash + `HEAD` at exit 0 means the credential works.
+3. **git stays raw.** Every push/pull below is raw `git`. `gh` is used only for the two repo-management actions raw git can't do — rename (step for `language`) and create (step for `design-by-efferent`) — which are GitHub-side API calls that don't alter this repo's git config. **Do not run `gh auth setup-git`** (it rewrites git's credential config). Both actions can be done in the GitHub web UI instead if you prefer no `gh` at all.
 4. Run every command from the composite repo root.
 
 ## Package → repo map

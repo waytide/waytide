@@ -10,16 +10,15 @@ cd /Users/sbellware/projects/eventide/agent-norms
 git symbolic-ref --short HEAD      # expect: master
 git status                         # expect: nothing to commit, working tree clean
 ```
-- [ ] Confirm auth and configure git to use the gh credential:
+- [ ] Confirm credentialed access with raw git (credentials come from the macOS keychain helper — no `gh` needed):
 ```
-gh auth status
-gh auth setup-git
+git ls-remote https://github.com/eventide-project/agent-norms-foundation.git HEAD
 ```
-- [ ] Confirm write access to the org and see which component repos already exist:
-```
-gh repo list eventide-project --limit 200 | grep agent-norms
-```
-Expect the six existing repos (`-foundation`, `-vocabulary`, `-testing`, `-code-ruby`, `-git`, `-docs`). `-vocabulary` is renamed in step 2; `-design-by-efferent` is created in step 6.
+Expect a commit hash followed by `HEAD`, exit 0. If it prompts for a username/password or errors, fix the stored credential before continuing.
+
+> **SSH instead of HTTPS?** If you push over SSH, swap every `https://github.com/eventide-project/<repo>.git` URL below for `git@github.com:eventide-project/<repo>.git`.
+
+> **git stays raw; `gh` only touches GitHub.** Every push and pull below is raw `git` on your keychain credential — unchanged. `gh` is used for exactly two things raw git can't do: rename a repo (step 2) and create one (step 6). Both are GitHub-side API calls that do **not** add a remote or alter credentials in this repo. **Do not run `gh auth setup-git`** — that is the one `gh` command that rewrites git's credential config, and it is deliberately omitted. If you'd rather not use `gh` at all, do those two actions in the GitHub web UI instead (noted inline).
 
 ## 1 — foundation (re-publish)
 
@@ -43,10 +42,11 @@ rm -rf /tmp/prove-foundation
 
 `vocabulary/` → `language/` changed the split path, so this repo **resets** (force-push). Rename first.
 
-- [ ] Rename the GitHub repo:
+- [ ] Rename the GitHub repo (GitHub-side only — does not touch this repo's git config):
 ```
 gh repo rename agent-norms-language -R eventide-project/agent-norms-vocabulary
 ```
+Web-UI alternative: `github.com/eventide-project/agent-norms-vocabulary` → Settings → rename to `agent-norms-language`. GitHub keeps a redirect from the old name either way.
 - [ ] Split and force-push (history reset is expected):
 ```
 git subtree split --prefix=language -b split-language
@@ -121,10 +121,11 @@ rm -rf /tmp/prove-git
 
 ## 6 — design-by-efferent (new repo)
 
-- [ ] Create the repo:
+- [ ] Create the repo (GitHub-side only — does not touch this repo's git config):
 ```
 gh repo create eventide-project/agent-norms-design-by-efferent --public -d "Agent Norms — Design By Efferent: the human-in-the-loop, efferent-first design method"
 ```
+Web-UI alternative: New repository → owner `eventide-project`, name `agent-norms-design-by-efferent`, Public, **no** README / .gitignore / license (it must be empty so the split pushes cleanly to `main`).
 - [ ] Split and push:
 ```
 git subtree split --prefix=design-by-efferent -b split-dbe
