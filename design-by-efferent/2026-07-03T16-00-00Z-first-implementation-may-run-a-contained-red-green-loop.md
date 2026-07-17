@@ -24,7 +24,7 @@ tests is breakage.
 
 **How to apply:**
 - Only at the **first** implementation of a unit, and only for **design** (new behavior)
-  — not for coverage of already-working behavior, which is verified-on-arrival (see the
+  — not for coverage of already-working behavior, which is green-on-arrival (see the
   "TDD designs, coverage protects" rule).
 - Before writing a deliberate red, know that its failure cause is local to the new test.
   Run the full suite after the red; if a **stable** test fails, the red was not
@@ -39,5 +39,5 @@ rule permits a **contained** red/green while first designing new behavior, becau
 the red is isolated to the not-yet-implemented unit. The line between them is exactly the
 containment constraint: does the failure's cause reach other stable tests? If yes,
 forbidden; if no, permitted. Related: the "TDD designs, coverage protects" rule, the
-"hinges gate the design of a test" rule, the no-verified-on-arrival rule, the hinge-cycle
+"hinges gate the design of a test" rule, the no-green-on-arrival rule, the hinge-cycle
 rule, and the present-every-prompt rule.

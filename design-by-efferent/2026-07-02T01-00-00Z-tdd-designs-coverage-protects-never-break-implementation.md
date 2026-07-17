@@ -13,10 +13,10 @@ causes unnatural changes:
   protection**, not design proofs. It is a testing / final-inspection process, not
   TDD.
 
-**When adding coverage, verified-on-arrival is inevitable and correct.** The behavior
+**When adding coverage, green-on-arrival is inevitable and correct.** The behavior
 already exists, so the test passes immediately. That *is the point* — the
 behavior is now protected. It is the nature of coverage, not a defect to engineer
-around, and the no-verified-on-arrival stance is a design concern that does not
+around, and the no-green-on-arrival stance is a design concern that does not
 apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to
@@ -37,4 +37,4 @@ Reserve the failing-test-first cycle for design, where a test drives new behavio
 existence. Related: the companion rule "the hinges gate the design of a test" (they still
 apply when writing coverage), the first-implementation-red-green rule (which permits a
 *contained* red while designing new behavior), the DBE-as-design-tool rule, the
-no-verified-on-arrival rule, and the hinge-cycle rule.
+no-green-on-arrival rule, and the hinge-cycle rule.

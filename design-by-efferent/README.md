@@ -27,7 +27,7 @@ The one-liner:
 **Design vs. coverage**
 - TDD designs behavior; adding coverage protects it — distinct activities. Never break a working implementation to introduce a test.
 - The hinges still gate a *coverage* test's design, with the implementation hinge degenerate.
-- Drop an outcome whose test is verified-on-arrival — it drives no design.
+- Drop an outcome whose test is green-on-arrival — it drives no design.
 - The first implementation may run a *contained* red/green loop, so long as the failure reaches no stable test.
 
 **The `loops/` artifact directory** (this package contributes it)
