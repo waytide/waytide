@@ -1,10 +1,10 @@
 # Test structure: actuate the concern once at the top, assert each outcome in its own nested context
 
-A test file is built in layers: a feature context, a shared control-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
+A test file is built in layers: a feature context, a shared arrangement-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
 
 **Outer `context` names the feature.** Everything for the feature lives inside it.
 
-**Control and actuate once, at the top of the outer context.** Establish the known inputs just above the actuation — built through controls (`Controls::Constant.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it; the variables read as the scenario.
+**Arrange and actuate once, at the top of the outer context.** Arrange inputs just above the actuation — built through controls (`Controls::Constant.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it; the variables read as the scenario.
 
 ```ruby
 receiver_constant = Controls::Constant.example()
@@ -34,6 +34,6 @@ The pattern, abstracted:
 - **Narration is layered.** `comment` narrates scenario-wide values near the actuation; `detail` narrates a value local to one inner context.
 - **One assertion per `test` block, one outcome per `context`.** Each inner context's title states the outcome it establishes, and its single assertion confirms it.
 
-**Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place and lets each outcome be read, named, and diagnosed on its own. Explaining variables and layered narration keep the test reading as a statement of the concern rather than a mechanical check. This is the structure a test grows into as its outcomes accumulate.
+**Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place and lets each outcome be read, named, and diagnosed on its own. Explaining variables and layered narration keep the test reading as a statement of the concern rather than a mechanical check. This is the structure the DBE first-turn rule grows into across subsequent turns.
 
-**How to apply:** Establish the controls and actuate the unit under test once at the top of the outer feature context, binding the result to an explaining variable; narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome, derive an explaining variable, and assert it in a single `test` block — never assert an inline expression. Related: the controls-not-factories rule, the test-block-is-assertion-only rule, and the `control_` test-variable prefix rule.
+**How to apply:** Arrange inputs and actuate the unit under test once at the top of the outer feature context, binding the result to an explaining variable; narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome, derive an explaining variable, and assert it in a single `test` block — never assert an inline expression. Related: the DBE-as-design-tool rule, the DBE first-turn rule, the controls-not-factories rule, and the `control_` test-variable prefix rule.

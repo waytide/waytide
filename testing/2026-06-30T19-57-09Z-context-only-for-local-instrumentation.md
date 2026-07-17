@@ -20,7 +20,7 @@ is an outcome name, and it flattens to a directly-named `test "Equal when
 mediating the same module" do …`.
 
 When the outcome is a **single assertion over values already in scope** (the
-shared control and actuation at the top of the feature context), **name the
+shared arrangement and actuation at the top of the feature context), **name the
 `test` directly and use no context** — a context that only wraps a bare test adds
 a nesting level that carries no information; the name belongs on the test itself.
 

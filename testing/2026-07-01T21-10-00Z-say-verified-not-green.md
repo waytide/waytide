@@ -25,4 +25,5 @@ name-literally-not-by-analogy rule.
 **How to apply:** in prose, commit messages, logs, and loop records, write
 "verified" wherever the impulse is "green" — as a report that tests pass. Applies
 going forward; existing records are not retroactively swept. Related: the
-name-literally-not-by-analogy rule and the other de-slang rules in `vocabulary`.
+name-literally-not-by-analogy rule and the other de-slang rules in `vocabulary`,
+and the DBE vocabulary.
