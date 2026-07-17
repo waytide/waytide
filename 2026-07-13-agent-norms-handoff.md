@@ -23,7 +23,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 - **Package types:** `foundation`, `vocabulary`, `design-by-efferent` (DBE), `testing`, `code/ruby`, `git`, `docs` (plus `eventide`, reserved). `code/` and `local/` are grouping namespaces, not packages.
 - **Dependencies:** everything → `foundation`; `testing` & `code/ruby` → `vocabulary`; `design-by-efferent` → `foundation`, `vocabulary`, `testing`. `git`, `docs` standalone.
 - **`local/` mirror** holds `constant`-specific rules, never subtree'd, mirrors package categories (`local/code/ruby`, `local/vocabulary`, `local/testing`). Stays in `constant` only.
-- **Term artifacts per package:** `vocabulary.md` (terms with meanings) and/or `substitutes.md` (retired → substitute). Terms placed by the domain they serve.
+- **Term artifacts per package:** one rule per substitute (no `substitutes.md` table; revised 2026-07-16). A cohesive glossary of terms-with-meanings (the DBE lexicon) may be a `vocabulary.md`. Terms placed by the domain they serve.
 - **No manifest format;** each package dir carries an `include: …` line in a `package.md` file (separate from the informative `README.md`).
 - **DBE contributes the `loops/` artifact dir;** foundation keeps `rules/observations/deferred/log`.
 - **Each package's `log/` carries only rule-content decisions** (consumer provenance; distributed with the package). **Migration/packaging/authoring history is undistributed** — it stays in the composite repo's top-level `agent/log/` (never split/pushed). Distinct again from the *project* decision log (foundation's `agent/log/` convention for a consuming project's own decisions). A package log starts empty.
@@ -32,7 +32,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 
 - **M1** controls trio → one rule (`testing`).
 - **M2** hinge-presentation trio → one rule (DBE).
-- **M3** per-package `substitutes` tables + the DBE `vocabulary`.
+- **M3** ~~substitutes tables~~ → one rule per substitute (no table; revised 2026-07-16); DBE keeps its `vocabulary` glossary.
 - **M4** stale supersessions closed out (mediates-for → mediates; hinge-choices → present-every-prompt; actuation/efferent-not-caller → DBE vocabulary; assert_raises "Is an error" → the "Is"-naming rule).
 
 Most of the ~67 rules relocate unchanged; only these clusters merge. See the classification table for the row-by-row detail.

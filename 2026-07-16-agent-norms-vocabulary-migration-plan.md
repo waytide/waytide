@@ -6,34 +6,38 @@ Execution plan for the third migration increment — the `vocabulary` package: t
 
 ## Scope
 
-`vocabulary` is the first package with a real **consolidation** (M3): the scattered "say X not Y" terminology rules collapse into one `substitutes.md` table. It `include: foundation`, and unblocks three downstream packages, so it comes before them.
+`vocabulary` is the cross-cutting phrasing discipline. It `include: foundation` and unblocks three downstream packages, so it comes before them.
+
+**One rule per substitute — no `substitutes.md` table.** (Decided 2026-07-16.) Each phrasing substitution is its own rule file, consistent with the one-rule-per-file convention and with `rules-install-a-mindset` (terminology rules are the purest stance-installing rules — each swaps a word to swap a concept, so each keeps its own `Why` and dating). This reduces M3-for-vocabulary from a consolidation to a **relocation-and-split**. (M1 — the redundant controls trio in `testing` — still merges; that is genuine duplication, not distinct substitutions.)
 
 Its content is *not* method- or test-specific — only phrasing substitutions with no home domain. Domain-specific terms live elsewhere (controls/verified/protect → `testing`; efferent/actuation/hinge → the DBE vocabulary).
 
 ## Contents (composite repo)
 
-- **`name-literally-not-by-analogy.md`** — relocated unchanged. The governing principle: name concepts by literal description, no analogies/codes/academic jargon.
-- **A no-slang principle rule** — the principle half of the current `terminology-no-slang-mediates` rule (literal, non-slang phrasing, in prose *and* conversation). **Recommendation:** keep it as its own short rule, parallel to `name-literally` (the packaging design names both as principles), with the specific substitutions moved to the table.
-- **`substitutes.md`** — NEW (M3). One table consolidating the general phrasing/slang substitutions now spread across separate files:
+Two principle rules:
 
-  | Retired | Use instead | from |
-  |---|---|---|
-  | happy path | normal path | `normal-path-not-happy-path` |
-  | vendor (re-vendor, vendored) | install packages | `say-install-packages-not-vendor` |
-  | thread (thread it through) | convey | `say-convey-not-thread` |
-  | "initialized with" / "passed to" | sent to | `sent-to-phrasing` |
-  | wrap / wrapper | mediates | `terminology-no-slang-mediates` |
-  | sweep | conform | `terminology-no-slang-mediates` |
-  | "does that land?" | plain ("is that right?") | `terminology-no-slang-mediates` |
-  | arm (of a method/feature) | scenario | `terminology-no-slang-mediates` |
-  | cut (of scope) | increment | `terminology-no-slang-mediates` |
+- **`name-literally-not-by-analogy.md`** — relocated unchanged. Name concepts by literal description; no analogies/codes/academic jargon.
+- **A no-slang principle rule** — NEW, authored from the principle half of `terminology-no-slang-mediates` (literal, non-slang phrasing, in prose *and* conversation), parallel to `name-literally`.
 
-  A shared `**Why:**` (imported jargon/metaphor forces a mapping; the literal term is free at the point of use) plus a per-row note only where a row carries real information.
-- **`package.md`** (`include: foundation`) and an informative **`README.md`**.
+Nine one-substitution rules — four relocated unchanged, five split out of `terminology-no-slang-mediates`:
+
+| Retired | Use instead | source | disposition |
+|---|---|---|---|
+| happy path | normal path | `normal-path-not-happy-path` | relocate unchanged |
+| vendor | install packages | `say-install-packages-not-vendor` | relocate unchanged |
+| thread | convey | `say-convey-not-thread` | relocate unchanged |
+| "initialized with" / "passed to" | sent to | `sent-to-phrasing` | relocate unchanged |
+| wrap / wrapper | mediates | `terminology-no-slang-mediates` | split out; genericize the `Constant` example |
+| sweep | conform | `terminology-no-slang-mediates` | split out |
+| "does that land?" | plain | `terminology-no-slang-mediates` | split out |
+| arm | scenario | `terminology-no-slang-mediates` | split out |
+| cut | increment | `terminology-no-slang-mediates` | split out |
+
+Plus **`package.md`** (`include: foundation`) and an informative **`README.md`**.
 
 ## Not migrated — stays `constant`-local
 
-**All rows of `terminology-no-slang-mediates` are universal** and go to the composite `substitutes.md` — including **wrap → mediates** (the general verb for a mediating/accessor relationship). Only its *example* ("a `Constant` mediates a module") is `constant`-specific, and it is genericized on the way in; the substitution itself is not `constant`-domain.
+**All substitutions in `terminology-no-slang-mediates` are universal** and become their own rules in the composite package — including **wrap → mediates** (the general verb for a mediating/accessor relationship). Only its *example* ("a `Constant` mediates a module") is `constant`-specific, and it is genericized on the way in; the substitution itself is not `constant`-domain.
 
 One substitution is genuinely `constant`-domain and does **not** enter the composite package — it stays in `constant`, destined for its `local/vocabulary/` mirror:
 
@@ -41,18 +45,18 @@ One substitution is genuinely `constant`-domain and does **not** enter the compo
 
 The `local/` mirror lives in `constant`, never in this composite repo and never split/pushed. Reconciling it (pulling the vocabulary package into `constant`, moving these rows to `local/vocabulary/`) is `constant`-side work, done when `constant` adopts the packages — **out of scope for this increment**.
 
-## Where the consolidation is logged
+## Where the split is logged
 
-The M3 consolidation is a **migration/authoring** event, so its decision-log entry goes in the composite repo's top-level `agent/log/` (undistributed), not `vocabulary/log/`. `vocabulary/log/` starts empty — per the rule-content-only log principle.
+The one-file-per-substitute decision and the `no-slang-mediates` split are **migration/authoring** events, so their decision-log entry goes in the composite repo's top-level `agent/log/` (undistributed), not `vocabulary/log/`. `vocabulary/log/` starts empty — per the rule-content-only log principle.
 
 ## Phase A — Local
 
 1. Create `vocabulary/` in the composite repo.
-2. Relocate `name-literally-not-by-analogy.md` unchanged.
+2. Relocate the five unchanged rules: `name-literally`, `normal-path`, `install-packages`, `convey-not-thread`, `sent-to`.
 3. Author the no-slang principle rule (principle half of `no-slang-mediates`).
-4. Author `substitutes.md` — consolidate the nine general rows above (genericizing the `mediates` example); leave only `literal-constant` for `constant`.
+4. Split the five substitutions out of `no-slang-mediates` into one rule file each (genericize the `mediates` example); leave only `literal-constant` for `constant`.
 5. `package.md` (`include: foundation`) + `README.md`.
-6. Commit; add one M3 consolidation entry to the composite `agent/log/`.
+6. Commit; add one decision entry (the split) to the composite `agent/log/`.
 
 ## Phase B — Distribution
 
@@ -60,9 +64,9 @@ Create `eventide-project/agent-norms-vocabulary` (public), `git subtree split --
 
 ## Open questions
 
-1. **No-slang principle placement** — its own rule (recommended) vs. folded into the `substitutes.md` intro.
-2. **`substitutes.md` structure** — one flat table (recommended) vs. grouped; how much per-row rationale to preserve when the source files' `**Why:**` sections collapse.
-3. **`sent-to`** — the table pins it here (general), but it is Eventide messaging idiom; confirm it isn't `eventide`-reserved.
+1. **~~No-slang principle placement~~ — RESOLVED (2026-07-16): its own rule**, parallel to `name-literally`.
+2. **~~`substitutes.md` structure~~ — MOOT (2026-07-16):** one rule per substitute, no table.
+3. **`sent-to`** — the classification pins it here (general), but it is Eventide messaging idiom; confirm it isn't `eventide`-reserved. *(Open.)*
 
 ## Not done without explicit go-ahead
 

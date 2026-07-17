@@ -2,7 +2,7 @@
 
 Companion to the packaging design. Every current rule in `constant`'s `agent/rules/` (plus the `AGENTS.md` framework prose) pinned to a package, with merges and `local/` flagged. Ordered by current folder so nothing is missed; a per-package tally follows.
 
-**Merge legend:** **M1** controls trio → one rule (testing) · **M2** hinge-presentation trio → one rule (DBE) · **M3** `substitutes` table (per package; DBE's is its **vocabulary**) · **M4** stale supersessions closed out.
+**Merge legend:** **M1** controls trio → one rule (testing) · **M2** hinge-presentation trio → one rule (DBE) · **M3** ~~`substitutes` table~~ → **one rule per substitute, no table** (revised 2026-07-16; each substitution relocates/splits into its own rule file — see the packaging design); DBE keeps its cohesive **vocabulary** glossary · **M4** stale supersessions closed out.
 
 ## `AGENTS.md` (framework prose)
 
@@ -122,9 +122,9 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 ## Per-package tally
 
 - **foundation** — status-report, next-deferred-item, agent-file-names-iso8601, rules-install-a-mindset (meta-rule), + the `AGENTS.md` framework prose (`rules/observations/deferred/log`).
-- **vocabulary** — name-literally (principle) + one `substitutes` table (sent-to, normal-path, install/vendor, convey/thread, general no-slang rows).
+- **vocabulary** — the name-literally and no-slang principle rules + one rule per substitute (sent-to, normal-path, install/vendor, convey/thread, wrap/mediates, sweep/conform, land/plain, arm/scenario, cut/increment). No table.
 - **design-by-efferent** — the methodology rules (incl. the M2 hinge-presentation merge and the M4 present-every-prompt merge), auto-record-tdd-dialogue, loop-records, the `loops/` directory, and the DBE **vocabulary** (tdd-lexicon + efferent/actuation/design-by-efferent). Includes foundation, vocabulary, testing.
-- **testing** — the test-writing rules, test-report, test-tree, do-not-test-the-platform, assert-error-message, and one `substitutes` table (controls [M1], verified, protect).
+- **testing** — the test-writing rules, test-report, test-tree, do-not-test-the-platform, assert-error-message, and one rule per substitute (the merged controls rule [M1], verified, protect). No table.
 - **code/ruby** — the Ruby code-style rules, build/new, lib-report. (`code/` is a language-grouping namespace; future `code/sh`, `code/sql` are separate packages.)
 - **git** — the four commit rules (no-claude-coauthor, run-suite-before-commit, commit-says-task-is-done, subject-first-commit-messages).
 - **docs** — the two documentation rules.
@@ -133,4 +133,4 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 
 ## Coverage
 
-69 rule files + the `AGENTS.md` framework prose, every one accounted for above. Merges reduce the ~16 terminology files to two `substitutes` tables + the DBE vocabulary + two local entries, and collapse the two trios (controls, hinge-presentation) to one rule each; the remaining ~50 rules relocate unchanged.
+69 rule files + the `AGENTS.md` framework prose, every one accounted for above. Merges collapse the two redundant trios (controls, hinge-presentation) to one rule each; the terminology substitutions relocate/split into one rule per substitute (no tables), leaving the DBE vocabulary glossary and the `local/` entries in place; the remaining ~50 rules relocate unchanged.
