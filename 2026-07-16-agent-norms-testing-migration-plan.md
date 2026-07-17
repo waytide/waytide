@@ -21,7 +21,8 @@ It is the first increment to exercise the **M1 redundant-rule merge** (the contr
 - `predicate-context-name`
 - `control-string-value-starts-with-some`
 - `context-only-for-local-instrumentation`
-- `test-name-is-prefix` — relocate **with the M4 fold**: absorb the `assert_raises` "Is an error" naming as its stated exception (the condition promoted to a `context`, the test named "Is an error"). `assert-raises-test-named-is-an-error` does **not** become its own file.
+- `test-name-is-prefix` — relocated as just the "Is" rule. (The M4 fold was **reversed 2026-07-17**: error tests are named "Fails" / "Doesn't fail", which don't clash with "Is", so the error-naming stays its own rule — see below — rather than folding in here.)
+- `error-test-named-fails-condition-is-context` — the `assert_raises` naming, its own rule: an error test is named **"Fails"** (non-raising complement **"Doesn't fail"**), condition promoted to a `context`.
 
 **What-to-test rules — relocate (from `methodology/`):**
 - `assert-error-message-only-as-sole-discriminator`

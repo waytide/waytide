@@ -33,7 +33,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 - **M1** controls trio → one rule (`testing`).
 - **M2** hinge-presentation trio → one rule (DBE).
 - **M3** ~~substitutes tables~~ → one rule per substitute (no table; revised 2026-07-16); DBE keeps its `vocabulary` glossary.
-- **M4** stale supersessions closed out (mediates-for → mediates; hinge-choices → present-every-prompt; actuation/efferent-not-caller → DBE vocabulary; assert_raises "Is an error" → the "Is"-naming rule).
+- **M4** stale supersessions closed out (mediates-for → mediates; hinge-choices → present-every-prompt; actuation/efferent-not-caller → DBE vocabulary; assert_raises naming stays its own rule — error tests named "Fails"/"Doesn't fail" as of 2026-07-17, fold reversed).
 
 Most of the ~67 rules relocate unchanged; only these clusters merge. See the classification table for the row-by-row detail.
 

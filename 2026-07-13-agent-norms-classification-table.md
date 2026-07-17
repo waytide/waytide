@@ -109,14 +109,14 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 |---|---|---|---|
 | control-prefix-test-vars | testing | — | |
 | tdd-test-structure | testing | — | |
-| test-name-is-prefix | testing | M4 | absorbs the assert_raises "Is an error" exception |
+| test-name-is-prefix | testing | — | just the "Is" rule; the error case is a plain non-"Is" outcome named "Fails" (M4 fold reversed 2026-07-17 — see below) |
 | test-context-nesting-mirrors-folders | testing | — | |
 | single-case-test-named-for-feature | testing | — | |
 | test-block-is-assertion-only | testing | — | |
 | predicate-context-name | testing | — | |
 | control-string-value-starts-with-some | testing | — | |
 | context-only-for-local-instrumentation | testing | — | |
-| assert-raises-test-named-is-an-error | testing | M4 | fold into test-name-is-prefix as its stated exception |
+| assert-raises-test-named-is-an-error | testing | — | its own rule, renamed: an error test is "Fails" / "Doesn't fail" (2026-07-17), condition promoted to a context. No longer folded (M4 reversed — "Fails" doesn't clash with "Is") |
 | namespace-variable-suffix | **local/testing** | — | `constant`-specific (reserves "constant" for `Constant` instances) |
 
 ## Per-package tally

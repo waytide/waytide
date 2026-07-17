@@ -60,7 +60,7 @@ eventide (reserved; would depend on code/ruby)
 
 **The hinge-presentation rules → one (DBE).** `actuation-hinge-shows-contexts`, `assertion-hinge-shows-actuation`, and `controls-hinge-shows-actuation` each state "at hinge N, show X" and cross-reference each other constantly. Merge into one "what each hinge displays" table, companion to the hinge-cycle rule.
 
-**Close out stale supersessions.** Fold each corrected rule into its corrector and retire the stale text: "mediates for" → "mediates" (patch the no-prepositions example, retire the mediates-for log reference); `hinge-choices-via-AskUserQuestion` into the broader `present-every-prompt` rule that already says it generalizes it; `actuation-not-call` and `efferent-not-caller` into the DBE vocabulary that already defines both; the `assert_raises` "Is an error" naming into the "Is"-naming rule as its stated exception.
+**Close out stale supersessions.** Fold each corrected rule into its corrector and retire the stale text: "mediates for" → "mediates" (patch the no-prepositions example, retire the mediates-for log reference); `hinge-choices-via-AskUserQuestion` into the broader `present-every-prompt` rule that already says it generalizes it; `actuation-not-call` and `efferent-not-caller` into the DBE vocabulary that already defines both; the `assert_raises` naming stays its own rule (2026-07-17: an error test is named "Fails" / "Doesn't fail", condition promoted to a context — the earlier plan to fold it into the "Is"-naming rule is reversed, since "Fails" doesn't clash with "Is").
 
 ## Stays project-local (`local/`)
 
