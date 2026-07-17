@@ -8,7 +8,7 @@ Execution plan for the fourth migration increment — the `testing` package: con
 
 `testing` holds the controls-based test-writing conventions (not tied to a specific test-framework API). It `include: foundation, vocabulary` and is included by `design-by-efferent`, so it comes before DBE.
 
-It is the first increment to exercise the **M1 redundant-rule merge** (the controls trio), and it carries an **M4 fold** (the `assert_raises` naming into the "Is"-naming rule) plus **command generalization** (`test-report`, `test-tree`).
+It is the first increment to exercise the **M1 redundant-rule merge** (the controls trio) plus **command generalization** (`test-report`, `test-tree`). (An **M4 fold** — the `assert_raises` naming into the "Is"-naming rule — was planned but **reversed** once error tests were renamed "Fails"/"Doesn't fail"; the naming stays its own rule.)
 
 ## Contents (composite repo)
 
@@ -59,7 +59,7 @@ Both are **migration/authoring** events → composite top-level `agent/log/` (on
 ## Phase A — Local
 
 1. Create `testing/` in the composite repo.
-2. Relocate the eight test-writing rules (with `test-name-is-prefix` taking the M4 fold).
+2. Relocate the eight test-writing rules (`test-name-is-prefix` as just the "Is" rule); the error-naming is its own rule ("Fails"/"Doesn't fail").
 3. Relocate the two what-to-test rules from `methodology/`.
 4. Author the **M1** merged controls rule; relocate `verified` and `protect`.
 5. Relocate and generalize `test-report` and `test-tree`.
