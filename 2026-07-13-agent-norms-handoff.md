@@ -2,7 +2,7 @@
 
 Resume point for continuing this work in a fresh session (Cowork or Claude Code). Read this first, then the two companion docs in this folder:
 
-- `2026-07-13-agent-norms-packaging-design.md` — the full design (package types, dependency graph, subtree/monorepo workflow, settled decisions).
+- `2026-07-13-agent-norms-packaging-design.md` — the full design (package types, dependency graph, subtree/composite repo workflow, settled decisions).
 - `2026-07-13-agent-norms-classification-table.md` — every source rule pinned to a package, with merges and `local/` flagged.
 
 Source rules live in the `constant` repo under `agent/rules/` (a separate mounted folder).
@@ -18,7 +18,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 ## Settled decisions
 
 - **Package = unit of reuse.** Projects depend on whole packages; consolidate *within* a package.
-- **Monorepo authoring + split distribution.** This "Agent Norms" folder is the canonical monorepo (packages as root-level dirs, own full history). Each `agent-norms-<package>` distribution repo is a regenerated one-package view via `git subtree split --prefix=<package>`, pushed to its own repo in Scott's org. Sync is one-directional (mono → solo).
+- **Composite repo authoring + split distribution.** This "Agent Norms" folder is the canonical composite repo (packages as root-level dirs, own full history). Each `agent-norms-<package>` component repo is a regenerated one-package view via `git subtree split --prefix=<package>`, pushed to its own repo in Scott's org. Sync is one-directional (composite repo → component repo).
 - **Repo prefix:** `agent-norms-` on a shared account (e.g. `agent-norms-testing`). `code/` flattens to `code-` in repo names; subtree prefix keeps the real path `agent/rules/code/ruby`.
 - **Package types:** `foundation`, `vocabulary`, `design-by-efferent` (DBE), `testing`, `code/ruby`, `git`, `docs` (plus `eventide`, reserved). `code/` and `local/` are grouping namespaces, not packages.
 - **Dependencies:** everything → `foundation`; `testing` & `code/ruby` → `vocabulary`; `design-by-efferent` → `foundation`, `vocabulary`, `testing`. `git`, `docs` standalone.
@@ -45,7 +45,7 @@ Most of the ~67 rules relocate unchanged; only these clusters merge. See the cla
 
 ## Next steps
 
-1. **`docs` + `git` execution** (queued, awaiting go-ahead): `git init` this folder as the monorepo; create root-level `docs/` and `git/`; copy the 2 + 3 rule files from `constant` unchanged; add a `package.md` (`include: (none)`) and an informative `README.md` to each; commit. Then (needs Scott's GitHub): create `agent-norms-docs`/`agent-norms-git`, `subtree split` + push.
+1. **`docs` + `git` execution** (queued, awaiting go-ahead): `git init` this folder as the composite repo; create root-level `docs/` and `git/`; copy the 2 + 3 rule files from `constant` unchanged; add a `package.md` (`include: (none)`) and an informative `README.md` to each; commit. Then (needs Scott's GitHub): create `agent-norms-docs`/`agent-norms-git`, `subtree split` + push.
 2. Finish the classification-table walk-through for the remaining four folders.
 3. Migrate + consolidate the rest per the classification table, one decision-log entry per consolidation (ISO-8601-UTC).
 4. Prove the subtree workflow by pulling one package into a test project.

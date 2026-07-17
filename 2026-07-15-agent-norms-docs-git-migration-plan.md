@@ -1,12 +1,12 @@
 # Agent Norms — Migration Plan: `docs` + `git` packages
 
-Execution plan for the first migration increment — standing up the monorepo skeleton and the two standalone, no-dependency, no-merge packages. Companion to the packaging design (`2026-07-13-agent-norms-packaging-design.md`) and the classification table (`2026-07-13-agent-norms-classification-table.md`).
+Execution plan for the first migration increment — standing up the composite repo skeleton and the two standalone, no-dependency, no-merge packages. Companion to the packaging design (`2026-07-13-agent-norms-packaging-design.md`) and the classification table (`2026-07-13-agent-norms-classification-table.md`).
 
 **Working norm:** this plan is not permission to execute. Present and wait for an explicit go-ahead before `git init`, copying/creating files, or committing. Phase B additionally needs GitHub org repos.
 
 ## Scope
 
-Stand up the canonical monorepo (`git init` this folder) and migrate the `docs` and `git` packages. Both are standalone (`include: (none)`) and involve **no consolidations** (no M1–M4 merges) — pure relocations. Copies are one-directional: `constant` → monorepo. The source `constant` repo is not modified.
+Stand up the canonical composite repo (`git init` this folder) and migrate the `docs` and `git` packages. Both are standalone (`include: (none)`) and involve **no consolidations** (no M1–M4 merges) — pure relocations. Copies are one-directional: `constant` → composite repo. The source `constant` repo is not modified.
 
 **Delta from the handoff's original "2 + 3 files":** the 2026-07-15 walk-through re-homed `subject-first-commit-messages` from `methodology/` into the **git** package, so git is now **4 files** (3 from `git/` + 1 from `methodology/`). Everything else is unchanged.
 
@@ -14,14 +14,14 @@ Stand up the canonical monorepo (`git init` this folder) and migrate the `docs` 
 
 Fully reversible, self-contained, no network.
 
-### A1. Initialize the monorepo
+### A1. Initialize the composite repo
 
 ```
 cd /Users/sbellware/projects/eventide/agent-norms
 git init
 ```
 
-The three planning docs already at root (handoff, classification table, packaging design) — plus this plan — stay at root as monorepo-level meta. They are outside every package, so no `subtree split` will include them.
+The three planning docs already at root (handoff, classification table, packaging design) — plus this plan — stay at root as composite repo-level meta. They are outside every package, so no `subtree split` will include them.
 
 ### A2. Create `docs/` and copy its 2 rules (unchanged, ISO names preserved)
 
@@ -64,7 +64,7 @@ Two package-level files, separated by concern:
   <a few sentences introducing the package and the conventions it carries.>
   ```
 
-**Convention wrinkle (confirm):** the `agent-file-names-iso8601` rule requires every file in an `agent/**` subdir to carry an ISO-8601 prefix; neither `package.md` nor `README.md` does. Both are intentional exceptions — structural package files (a manifest and an intro), not agent artifacts, and the natural repo-root files for each distribution repo. **Recommendation: keep both names as-is.**
+**Convention wrinkle (confirm):** the `agent-file-names-iso8601` rule requires every file in an `agent/**` subdir to carry an ISO-8601 prefix; neither `package.md` nor `README.md` does. Both are intentional exceptions — structural package files (a manifest and an intro), not agent artifacts, and the natural repo-root files for each component repo. **Recommendation: keep both names as-is.**
 
 ### A5. First commit (dogfoods the git package's own rules)
 
@@ -81,11 +81,11 @@ No decision-log entry is required for the relocations themselves (no merges). Th
 
 Gated on the two repos existing/authorized on the shared account.
 
-### B1. Create the distribution repos
+### B1. Create the component repos
 
 `agent-norms-docs` and `agent-norms-git` in the org.
 
-### B2. Split + push each package (one-directional, mono → solo)
+### B2. Split + push each package (one-directional, composite → component)
 
 ```
 git subtree split --prefix=docs -b split-docs
@@ -110,7 +110,7 @@ Confirm the 4 files land at `agent/rules/git/` with names intact and are read at
 ## Open questions (resolve before executing)
 
 1. **~~ISO-prefix exception for `package.md` and `README.md`~~ — RESOLVED (2026-07-16): exempt.** Both structural package files are exempt from the `agent-file-names-iso8601` convention. The `foundation` package's copy of that rule gets an explicit exemption note when foundation is migrated. The filename `package.md` is settled for now (a better term may surface later).
-2. **~~Does the authoring monorepo keep its own `agent/log/`~~ — RESOLVED (2026-07-16): yes.** The monorepo dogfoods the `foundation` `log/` convention. `agent/log/` created and backfilled with the first two migration decisions (the `subject-first` re-home and the `include:`/`package.md` adoption); M1–M4 merge decisions get one entry each as the consolidation increments run.
+2. **~~Does the authoring composite repo keep its own `agent/log/`~~ — RESOLVED (2026-07-16): yes.** The composite repo dogfoods the `foundation` `log/` convention. `agent/log/` created and backfilled with the first two migration decisions (the `subject-first` re-home and the `include:`/`package.md` adoption); M1–M4 merge decisions get one entry each as the consolidation increments run.
 3. **~~Phase B timing~~ — RESOLVED (2026-07-16): done.** Org is `eventide-project`. Both repos created **public** (`agent-norms-docs`, `agent-norms-git`), split + pushed to `main`, and the pull proven into a throwaway project. Phase B complete.
 
 ## Not done without explicit go-ahead

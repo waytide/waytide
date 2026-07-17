@@ -37,7 +37,7 @@ docs  (standalone)
 
 ## Two kinds of repository
 
-**This monorepo is where all authoring happens.** It holds every package as a
+**This composite repo is where all authoring happens.** It holds every package as a
 top-level directory under one shared history. Add or refine a rule here. Because
 the packages live together, a change spanning several packages is one atomic
 commit, and the whole rule set can be read, grepped, and consolidated in one
@@ -48,29 +48,29 @@ place. This is the source of truth.
 flattens to `code-` in the repo name). Each holds a single package's files at its
 root. These are how a consuming project installs a package.
 
-The package repositories are **generated from this monorepo, not edited
+The component repositories are **generated from this composite repo, not edited
 directly.** Publishing a package is a `git subtree split` that extracts one
-package's slice of the monorepo history and pushes it to that package's
-repository. Sync runs one way only: monorepo → package repositories.
+package's slice of the composite repo history and pushes it to that package's
+repository. Sync runs one way only: composite repo → component repositories.
 
-**The package repositories are downstream-only.** They only ever receive; they
-are never an authoring source. Do not commit directly to a package repository —
-its `main` is regenerated from this monorepo's history by `git subtree split`, so
+**The component repositories are downstream-only.** They only ever receive; they
+are never an authoring source. Do not commit directly to a component repository —
+its `main` is regenerated from this composite repo's history by `git subtree split`, so
 a direct commit is not in that history and is lost or made to conflict on the
-next release. All changes land in the monorepo. A change discovered while working
-in a consuming project is promoted back into the monorepo (via `git subtree
+next release. All changes land in the composite repo. A change discovered while working
+in a consuming project is promoted back into the composite repo (via `git subtree
 push` from that project, then reconciled here) and re-published outward.
 
 ## Working as a contributor
 
-Author in the monorepo. You never edit a package repository directly. A release
+Author in the composite repo. You never edit a component repository directly. A release
 re-splits the changed packages out to their repositories and pushes them — the
 split is deterministic, so unchanged history keeps its commits and only new work
 is added.
 
 A refinement discovered while working inside a consuming project is promoted back
-into the monorepo and re-published outward, so the rules stay live without the
-package repositories ever becoming independent sources.
+into the composite repo and re-published outward, so the rules stay live without the
+component repositories ever becoming independent sources.
 
 ## Using a package in a project
 
