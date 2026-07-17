@@ -38,19 +38,19 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 
 **Phase A (authoring) is complete for all seven packages.** Every package exists as a root-level directory with its rules, `package.md`, `README.md`, and (where applicable) `log/`. Working tree is clean on `master`.
 
-**Phase B (distribution) — six of seven previously published, but five now carry unpublished changes.**
+**Phase B (distribution) — COMPLETE as of 2026-07-17.** All seven packages are published to their component repos and each pull was proved. No package carries unpublished changes.
 
-| Package | Published to component repo? | Re-publish needed? |
+| Package | Component repo | State |
 |---|---|---|
-| `docs` | yes | no — untouched since |
-| `git` | yes | **yes** — obsolete-path trim |
-| `foundation` | yes | **yes** — `vocabulary.md` prefix exemption; obsolete paths; retired `no-slang-mediates` name |
-| `language` (was `vocabulary`) | yes, as `agent-norms-vocabulary` | **yes** — renamed; `solubility`, `say-obsolete-not-dead`, and `language-is-precise-here` added; obsolete paths. **Component repo must be renamed `agent-norms-language`.** |
-| `testing` | yes | **yes** — verified-not-green carve-out; observe-not-assert; DBE relabels; arrange/obsolete-path conformance |
-| `code/ruby` | yes | **yes** — two "dead" → precise-word conformances |
-| `design-by-efferent` | **no** | **first publish** — create `agent-norms-design-by-efferent` |
+| `docs` | `agent-norms-docs` | published (untouched this round) |
+| `foundation` | `agent-norms-foundation` | re-published (fast-forward) |
+| `language` | `agent-norms-language` | repo **renamed** from `agent-norms-vocabulary`, then force-pushed (history reset — path changed `vocabulary/`→`language/`) |
+| `testing` | `agent-norms-testing` | re-published (fast-forward) |
+| `code/ruby` | `agent-norms-code-ruby` | re-published (fast-forward) |
+| `git` | `agent-norms-git` | re-published (fast-forward) |
+| `design-by-efferent` | `agent-norms-design-by-efferent` | **created** and first-published |
 
-So Phase B is: re-split/push five packages, rename one component repo (`agent-norms-vocabulary` → `agent-norms-language`), and create + push `agent-norms-design-by-efferent`. `docs` needs nothing.
+The four fast-forward re-publishes each passed a `merge-base --is-ancestor` guard before pushing; `language` force-pushed by design (the only intended force); `design-by-efferent` created `main` fresh. Runbook and checklist: `2026-07-17-agent-norms-phase-b-runbook.md`, `2026-07-17-agent-norms-phase-b-checklist.md`.
 
 ## What this session did (2026-07-17)
 
@@ -78,6 +78,9 @@ Before Phase B, worth one deliberate pass per package asking "does this contradi
 
 ## Next steps
 
-1. Optional pre-Phase-B pass: check each package for the two faults above.
-2. **Phase B (gated):** re-split/push `git`, `foundation`, `language`, `testing`, `code/ruby`; rename the `vocabulary` component repo to `language`; create + push `agent-norms-design-by-efferent`. Prove each pull.
-3. Update the classification table and packaging design where they still lag the built state (both were conformed for the rename this session, but predate the DBE build's detail).
+The migration is functionally done — all seven packages authored, consolidated, conformed, and published. What remains is optional cleanup, none of it blocking:
+
+1. **Reconcile the lagging design docs.** The classification table and packaging design predate the DBE build's detail and the `vocabulary`→`language` rename in a few descriptive spots (not the repo-name list, which is conformed). A pass to bring them level with the built state.
+2. **`Constant`-example generalization.** The relocated `testing` and `code/ruby` rules still carry `Constant` examples, deferred to a later pass (noted in their publish logs). When done, re-publish those two.
+3. **`constant`'s own deferred item** `conform-efferent-oriented-design-to-dbe` still covers `constant`'s observations, design docs, and README — a `constant`-side task, not part of the package work here.
+4. **Ongoing:** new rules and refinements are authored here in the composite repo (Phase A) and released by re-running the relevant package's steps in the checklist (Phase B). The fast-forward guard makes re-publishing safe and repeatable.
