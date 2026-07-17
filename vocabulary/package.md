@@ -1,0 +1,3 @@
+# vocabulary
+
+include: foundation
