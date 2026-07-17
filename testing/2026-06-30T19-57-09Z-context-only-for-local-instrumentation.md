@@ -12,12 +12,12 @@ rule). The context exists to hold that local setup alongside the bare test, or t
 name the condition.
 
 **The `When` exception is narrow — a *leading* `When …` only.** A context named
-`"When the name is not defined"` stays a context (with `test "Is an error"`
+`"When the file is empty"` stays a context (with `test "Fails"`
 inside), even though it holds nothing but the test. But an **outcome name that
-merely contains "when"** — e.g. `"Equal when mediating the same module"`,
-`"Unequal when the binding locations differ"` — is *not* a condition context; it
-is an outcome name, and it flattens to a directly-named `test "Equal when
-mediating the same module" do …`.
+merely contains "when"** — e.g. `"Created when the file is accepted"`,
+`"Located when the response carries a location"` — is *not* a condition context; it
+is an outcome name, and it flattens to a directly-named `test "Created when
+the file is accepted" do …`.
 
 When the outcome is a **single assertion over values already in scope** (the
 shared arrangement and actuation at the top of the feature context), **name the
@@ -26,16 +26,16 @@ a nesting level that carries no information; the name belongs on the test itself
 
 ```ruby
 # No local setup needed → named test, no context
-test "Is the Constant::Literal the name resolves to" do
-  assert(constant == control_literal)
+test "Is the location the response carries" do
+  assert(location == control_location)
 end
 
 # Local explaining variable / detail needed → context holds it
-context "Defined" do
-  defined = receiver_constant.const_defined?(new_constant_name)
-  detail defined.inspect
+context "Status" do
+  status = result.status
+  detail status.inspect
   test do
-    assert(defined)
+    assert(status == 201)
   end
 end
 ```
@@ -51,8 +51,7 @@ explaining variable, adds an outcome-local `comment`/`detail`, or is a leading
 `When …` condition; only then enclose it in a `context`. When flattening an
 over-nested test, flatten **only** when there is no code between the context and
 the `test` (the context holds nothing but the test) **and** the context is not a
-leading `When …` condition. The Constant-class over-nesting was conformed in one
-pass (the `Constant` subtree is now uniformly named tests). Related: the
+leading `When …` condition. Related: the
 test-block-is-assertion-only rule, the test-structure rule
 (the per-outcome context is for outcomes that *derive* locally), and the
 test-name-is-prefix rule.

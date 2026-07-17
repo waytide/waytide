@@ -7,24 +7,24 @@ to the primitive — then its behavior on that path **is** the platform's, and a
 there tests the platform, not the library.
 
 **The signal.** If you can only state the expected behavior in terms of the underlying
-primitive's guarantee ("`const_set` overwrites an existing constant"), and the unit
+primitive's guarantee ("`String#empty?` returns true for an empty string"), and the unit
 contributes nothing of its own on that path, there is nothing of *ours* to protect — so
 write no test.
 
-**Worked example.** `Constant::Define.(name, dest, value)` is `dest.const_set(name,
-value)` (plus a module default when no value is given). Its **redefinition** behavior is
-therefore `const_set`'s — overwrite, with Ruby's "already initialized constant" warning
-— verbatim (proven identical to a bare `const_set` and to literal `X = 1; X = 2`
-reassignment). Having *decided* that `Define` stays transparent to Ruby on redefinition
-(imposes no policy), there is no library redefinition behavior; a "redefinition replaces"
-test would merely assert that `const_set` overwrites — i.e. test Ruby. So: no test. The
+**Worked example.** `Upload#empty?(file)` is `file.empty?` — it forwards to the string
+primitive, adding no branch, guard, or normalization of its own. Its **emptiness**
+behavior is therefore `String#empty?`'s — true for `""`, false for any other content —
+verbatim (proven identical to a bare `file.empty?` and to a literal `"".empty?`
+evaluation). Having *decided* that `#empty?` stays transparent to Ruby
+(imposes no policy), there is no library emptiness behavior; an "empty string is empty"
+test would merely assert that `String#empty?` returns true — i.e. test Ruby. So: no test. The
 resolution is the *decision* (transparent), not a test.
 
 **The contrast — what IS ours.** The moment a unit adds a policy, that policy is the
 library's and must be tested, because it is a **decision**, not the platform's behavior:
-`Define`'s module default (`instance_of?(::Module)`), the coercion's acceptance of
-Symbol names, a guard that raises, a normalization, a suppressed warning. Those are
-protected; the bare forwarding underneath them is not.
+`Upload#call`'s guard that raises `Upload::Error` on an empty file (`raise Error, "File
+is empty" if file.empty?`), a coercion that normalizes the file, a suppressed warning.
+Those are protected; the bare `file.empty?` forwarding underneath them is not.
 
 **Why:** tests exist to protect the library's design and decisions. Testing the platform
 adds noise, couples the suite to language internals, and gives false confidence that

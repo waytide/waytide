@@ -4,13 +4,13 @@ A test file is built in layers: a feature context, a shared arrangement-and-actu
 
 **Outer `context` names the feature.** Everything for the feature lives inside it.
 
-**Arrange and actuate once, at the top of the outer context.** Arrange inputs just above the actuation — built through controls (`Controls::Constant.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it; the variables read as the scenario.
+**Arrange and actuate once, at the top of the outer context.** Arrange inputs just above the actuation — built through controls (`Controls::File.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it; the variables read as the scenario.
 
 ```ruby
-receiver_constant = Controls::Constant.example()
-new_constant_name = :SomeConstant
+file = Controls::File.example()
+upload = Controls::Upload.example()
 
-new_constant = Constant::Define.(new_constant_name, receiver_constant)
+result = upload.(file)
 ```
 
 **Narrate the scenario with `comment`.** Right after the actuation, narrate the salient values — the inputs and the actuation result — for the reader of test output.
@@ -18,11 +18,11 @@ new_constant = Constant::Define.(new_constant_name, receiver_constant)
 **One inner `context` per outcome.** Each inner context establishes one distinct outcome *of that single actuation*: its title states the outcome, it derives an explaining variable, optionally narrates that variable locally with `detail`, then asserts it in a single `test` block.
 
 ```ruby
-context "Defined" do
-  defined = receiver_constant.const_defined?(new_constant_name)
-  detail defined.inspect
+context "Status" do
+  status = result.status
+  detail status.inspect
   test do
-    assert(defined)
+    assert(status == 201)
   end
 end
 ```

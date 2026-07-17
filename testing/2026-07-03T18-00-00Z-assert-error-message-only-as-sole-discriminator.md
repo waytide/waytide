@@ -19,16 +19,16 @@ the message distinguishes them.
 **How to apply.** For each `assert_raises`, ask: *can this exact error class be raised
 from more than one site along this actuation's execution?*
 
-- **No → class + condition suffice; assert no message.** A coercion's lone `TypeError`
-  (one `raise` site on the un-coercible path); a literal's `#get`, which always raises
-  from a single line — the class and the condition already pin it.
-- **Yes → the message is the discriminator; assert it (exact content).** A `::`-path
-  `#get` recurses, so `Constant::Error` can be raised at the **head** segment (an
-  undefined intermediate) *or* the **tail** segment (the final undefined name) — same
-  class, different sites in one execution; the message (which name, which namespace) is
-  what confirms the failure is the intended one. Likewise a mid-path **literal**: the
-  same `Constant::Error` can come from the module's "not defined" site *or* the
-  literal's "primitive value" `#get` site — only the message tells them apart.
+- **No → class + condition suffice; assert no message.** The empty-file guard's lone
+  `Upload::Error` (one `raise` site on the empty-file path); a response check that always
+  raises from a single line — the class and the condition already pin it.
+- **Yes → the message is the discriminator; assert it (exact content).** A multi-part
+  `Upload#call` posts each part in turn, so `Upload::Error` can be raised at the **head**
+  part (an earlier part the server rejects) *or* the **tail** part (the final rejected
+  part) — same class, different sites in one execution; the message (which part, which
+  response) is what confirms the failure is the intended one. Likewise a two-step upload:
+  the same `Upload::Error` can come from the initial post's "rejected" site *or* the
+  finalize step's "rejected" site — only the message tells them apart.
 
 **Why:** this keeps error tests about error *correctness* (was the right failure
 raised under the right condition), not error *presentation*. It is the same line the
