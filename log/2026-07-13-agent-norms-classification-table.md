@@ -10,6 +10,8 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 |---|---|---|
 | `rules/observations/deferred/log` framework, decision-log format, artifact conventions | foundation | the `loops/` portion goes to DBE, not foundation |
 
+On build, this prose split into four foundation convention rules — `agent-rules-convention`, `agent-observations-convention`, `agent-deferred-convention`, `decision-log-convention` (the ISO-8601 filename convention is its own `agent-file-names-use-iso8601-utc-prefix` rule, from `process/` below).
+
 ## `code/`
 
 | Rule | Package | Notes |
@@ -21,6 +23,8 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 | positional-default-no-spaces | code/ruby | |
 | include-domain-mixin-before-infrastructure | code/ruby | |
 | build-constructor-normalizes-new-is-strict | code/ruby | general build/new → code/ruby; the intra-`Constant`-family `new` privilege half → **local/code/ruby** |
+
+On build, the general robustness principle behind `string-outputs-permissive-inputs` was extracted into a new `code/ruby` rule, `robustness-lives-at-the-class-interface` (liberal-accept / uniform-return is a property of the class interface; the strict `new` core stays untouched). Build-authored, not a source rule — the `constant`-specific constant-name application stays in `local/code/ruby`.
 
 ## `commands/`
 
@@ -49,6 +53,8 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 
 ## `methodology/`
 
+On build, the `tdd-*` genus prefix was relabeled `dbe-*` (e.g. `tdd-as-design-tool` → `dbe-as-design-tool`) — the source names are kept in the Rule column below.
+
 | Rule | Package | Notes |
 |---|---|---|
 | tdd-as-design-tool | design-by-efferent | |
@@ -59,7 +65,7 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 | show-the-test-after-implementing | design-by-efferent | |
 | hinge-cycle | design-by-efferent | |
 | no-green-on-arrival-tests | design-by-efferent | |
-| controls-hinge-shows-actuation | design-by-efferent | hinge-presentation trio → one rule |
+| controls-hinge-shows-actuation | design-by-efferent | hinge-presentation trio → one rule, built as `what-each-hinge-displays` |
 | assertion-hinge-shows-actuation | design-by-efferent | hinge-presentation trio → one rule |
 | actuation-hinge-shows-contexts | design-by-efferent | hinge-presentation trio → one rule |
 | never-ask-to-start-test-first | design-by-efferent | |
@@ -93,7 +99,7 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 | say-convey-not-thread | language | own substitution rule |
 | terminology-no-slang-mediates | language | splits into the no-slang principle rule + one rule per substitution (incl. wrap→mediates, a universal verb; only the `Constant`-mediates-a-module *example* is genericized) |
 | literal-constants-terminology | **local/language** | `constant`-specific |
-| controls-not-factories | testing | controls trio → one rule |
+| controls-not-factories | testing | controls trio → one rule, built as `controls-not-factories-fixtures-arrange` |
 | controls-not-fixtures | testing | controls trio → one rule |
 | say-control-not-arrange | testing | controls trio → one rule |
 | say-verified-not-green | testing | own substitution rule |
@@ -133,4 +139,6 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 
 ## Coverage
 
-69 rule files + the `AGENTS.md` framework prose, every one accounted for above. The consolidations collapse the two redundant trios (controls, hinge-presentation) to one rule each; the terminology substitutions relocate/split into one rule per substitute (no tables), leaving the DBE vocabulary glossary and the `local/` entries in place; the remaining ~50 rules relocate unchanged.
+69 rule files + the `AGENTS.md` framework prose, every one accounted for above. The consolidations collapse the two redundant trios (controls, hinge-presentation) to one rule each; the terminology substitutions relocate/split into one rule per substitute (no tables), leaving the DBE vocabulary glossary and the `local/` entries in place; the remaining ~50 rules relocate unchanged. The `AGENTS.md` prose split into four foundation convention rules.
+
+Beyond the source set, the build authored a handful of general rules noted inline above: `language`'s `language-is-precise-here` premise, `say-obsolete-not-dead`, and `solubility`; and `code/ruby`'s `robustness-lives-at-the-class-interface`.
