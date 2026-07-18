@@ -86,6 +86,13 @@ git subtree pull --prefix agent/rules/docs                https://github.com/eve
 git subtree pull --prefix agent/rules/design-by-efferent  https://github.com/eventide-project/agent-norms-design-by-efferent.git  master --squash
 ```
 
+Or do it all at once with [`install-all.sh`](install-all.sh), which installs and refreshes every package. Fetch it and run it from your project root:
+
+```
+curl -O https://raw.githubusercontent.com/eventide-project/agent-norms/master/install-all.sh
+sh install-all.sh
+```
+
 ## Project-local rules
 
 Rules specific to a single project live under a `local/` directory that mirrors
