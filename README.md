@@ -57,4 +57,4 @@ and is never split or pushed, so a project-specific rule cannot leak upstream.
 
 ---
 
-Authoring or publishing the packages themselves? See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for authoring the packages themselves.
