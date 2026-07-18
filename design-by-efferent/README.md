@@ -1,6 +1,6 @@
 # Agent Norms — design-by-efferent
 
-**Design By Efferent** (DBE) — the human-in-the-loop, efferent-first design method. A variant of TDD in which tests are the vehicle and design is the point: the **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface outside-in.
+**Design By Efferent** (DBE) — the human-in-the-loop, efferent-first design method. A variant of TDD with accommodations for AI: tests are the vehicle and design is the point — the **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface outside-in.
 
 The one-liner:
 
