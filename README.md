@@ -28,18 +28,24 @@ below (each has its own repository).
 - **[docs](https://github.com/eventide-project/agent-norms-docs)**. Documentation conventions for design docs and implementation plans.
 
 Each package declares its dependencies in a `package.md` file with an `include:`
-line. Including a package pulls in the packages it includes.
+line. Including a package pulls in the packages it includes. The tree below nests
+each package under what it builds on (indentation = "includes"):
 
 ```
-foundation ──► (everything)
+foundation                       (base — everything builds on it)
+└── language
+    ├── testing
+    │   └── design-by-efferent
+    └── code/ruby
 
-language ──► testing
-language ──► code/ruby
-language, testing ──► design-by-efferent
-
-git   (standalone)
-docs  (standalone)
+git                              (standalone — no dependencies)
+docs                             (standalone — no dependencies)
 ```
+
+Read top-down, a package includes every package above it in its branch:
+`design-by-efferent` pulls in `testing`, `language`, and `foundation`; `testing`
+and `code/ruby` pull in `language` and `foundation`; `language` pulls in
+`foundation`.
 
 ## Using a package in a project
 
