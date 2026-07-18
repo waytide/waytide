@@ -16,3 +16,14 @@ The rules in this package govern how commits are made and worded:
   a scanned log surfaces what changed first.
 
 This is a standalone package: it includes no other packages.
+
+## Installing into a project
+
+Install with `git subtree` — the files land in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+
+```
+git subtree add  --prefix agent/rules/git https://github.com/eventide-project/agent-norms-git.git master --squash
+git subtree pull --prefix agent/rules/git https://github.com/eventide-project/agent-norms-git.git master --squash
+```
+
+It has no dependencies.

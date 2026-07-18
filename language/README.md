@@ -35,3 +35,14 @@ These are general substitutions with no home domain. Terms tied to a domain live
 **This package is not a glossary.** It governs how language is used everywhere. A package with a cohesive lexicon of interlocking terms carries it as its own `vocabulary.md` — `design-by-efferent` is the one that does.
 
 Includes `foundation`.
+
+## Installing into a project
+
+Install with `git subtree` — the files land in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+
+```
+git subtree add  --prefix agent/rules/language https://github.com/eventide-project/agent-norms-language.git master --squash
+git subtree pull --prefix agent/rules/language https://github.com/eventide-project/agent-norms-language.git master --squash
+```
+
+It includes `foundation` — install that too.

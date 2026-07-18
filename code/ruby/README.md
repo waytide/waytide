@@ -18,3 +18,14 @@ Prescriptive Ruby style.
 **Command**: `lib-report` (classify `lib/` by role, construct, method style, API currency, error taxonomy, idioms).
 
 `code/` groups by programming language and is not a package; `code/ruby` is the package. Includes `foundation`, `language`.
+
+## Installing into a project
+
+Install with `git subtree` — the files land in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+
+```
+git subtree add  --prefix agent/rules/code/ruby https://github.com/eventide-project/agent-norms-code-ruby.git master --squash
+git subtree pull --prefix agent/rules/code/ruby https://github.com/eventide-project/agent-norms-code-ruby.git master --squash
+```
+
+It includes `foundation` and `language` — install those too.

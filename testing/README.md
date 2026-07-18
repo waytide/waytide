@@ -22,3 +22,14 @@ Controls-based test-writing conventions — not tied to a specific test-framewor
 **Commands**: `test-report` (classify the suite) and `test-tree` (print a normalized de-duped context tree).
 
 Includes `foundation`, `language`.
+
+## Installing into a project
+
+Install with `git subtree` — the files land in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+
+```
+git subtree add  --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master --squash
+git subtree pull --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master --squash
+```
+
+It includes `foundation` and `language` — install those too.

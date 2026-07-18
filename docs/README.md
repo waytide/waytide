@@ -12,3 +12,14 @@ written:
   Dependency"** — not a bare "Dependency", which is overloaded.
 
 This is a standalone package: it includes no other packages.
+
+## Installing into a project
+
+Install with `git subtree` — the files land in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+
+```
+git subtree add  --prefix agent/rules/docs https://github.com/eventide-project/agent-norms-docs.git master --squash
+git subtree pull --prefix agent/rules/docs https://github.com/eventide-project/agent-norms-docs.git master --squash
+```
+
+It has no dependencies.
