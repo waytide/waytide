@@ -4,6 +4,9 @@ Reusable agent directives — the rules an AI coding agent reads at the start of
 session — organized into installable **packages**. A package is the unit of
 reuse: a project adopts whole packages, never individual rules.
 
+The rules originated in the [Constant](https://github.com/eventide-project/constant)
+project and were generalized and consolidated into these packages.
+
 **This composite repository is not itself installed into a project.** It is the
 authoring source; a consuming project installs the individual component packages
 below (each has its own repository).
