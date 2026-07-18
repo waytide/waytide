@@ -15,7 +15,8 @@ reuse: a project adopts whole packages, never individual rules.
   rule per substitution.
 - **[design-by-efferent](https://github.com/eventide-project/agent-norms-design-by-efferent)** — the human-in-the-loop, efferent-first design method
   (DBE): hinges and gates, the actuation-first cycle, and the method's own
-  `vocabulary.md` lexicon. Contributes the `loops/` artifact directory.
+  `vocabulary.md` lexicon. A variant of TDD with accommodations for AI.
+  Contributes the `loops/` artifact directory.
 - **[testing](https://github.com/eventide-project/agent-norms-testing)** — controls-based test-writing conventions: variable prefixes, test
   structure and naming, assertion form.
 - **[code/ruby](https://github.com/eventide-project/agent-norms-code-ruby)** — prescriptive Ruby style.
