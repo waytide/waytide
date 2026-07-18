@@ -24,7 +24,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 - **Dependencies:** everything → `foundation`; `testing` & `code/ruby` → `language`; `design-by-efferent` → `foundation`, `language`, `testing`. `git`, `docs` standalone.
 - **`local/` mirror** holds `constant`-specific rules, never subtree'd, mirrors package categories (`local/code/ruby`, `local/language`, `local/testing`). Stays in `constant` only.
 - **Term artifacts per package:** one rule per substitute (no `substitutes.md` table). A cohesive glossary of interlocking terms-with-meanings may be a `vocabulary.md` (DBE is the one package that has one); a standalone term-with-meaning is a rule (e.g. `language`'s `solubility`). Terms placed by the domain they serve.
-- **No manifest format;** each package dir carries an `include: …` line in a `package.md` file (separate from the informative `README.md`). A package's structural files — `package.md`, `README.md`, `vocabulary.md` — are exempt from the ISO-8601 filename prefix; its dated artifacts (rules, `log/` entries) always take it.
+- **No manifest format;** a package with dependencies carries an `install-dependencies.sh` that installs them (standalone packages carry none); the composite carries `install-all.sh`. A package's structural files — `README.md`, `vocabulary.md`, `install-dependencies.sh` — are exempt from the ISO-8601 filename prefix; its dated artifacts (rules, `log/` entries) always take it. (The former one-line `include:` `package.md` manifest was dropped 2026-07-18.)
 - **Each package's `log/` carries only rule-content decisions** (consumer provenance; distributed with the package). **Migration/packaging/authoring history is undistributed** — it stays in the composite repo's top-level `agent/log/` (never split/pushed). Distinct from the *project* decision log (foundation's `agent/log/` convention for a consuming project's own decisions). A package log starts empty.
 
 ## Consolidations (during migration)
@@ -36,7 +36,7 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 
 ## Status
 
-**Phase A (authoring) is complete for all seven packages.** Every package exists as a root-level directory with its rules, `package.md`, `README.md`, and (where applicable) `log/`. Working tree is clean on `master`.
+**Phase A (authoring) is complete for all seven packages.** Every package exists as a root-level directory with its rules, `README.md`, and (where applicable) `install-dependencies.sh` and `log/`. Working tree is clean on `master`.
 
 **Phase B (distribution) — COMPLETE as of 2026-07-17.** All seven packages are published to their component repos and each pull was proved. No package carries unpublished changes.
 

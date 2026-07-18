@@ -1,3 +1,0 @@
-# testing
-
-include: foundation, language

@@ -27,9 +27,10 @@ below (each has its own repository).
 - **[git](https://github.com/eventide-project/agent-norms-git)**. Commit conventions.
 - **[docs](https://github.com/eventide-project/agent-norms-docs)**. Documentation conventions for design docs and implementation plans.
 
-Each package declares its dependencies in a `package.md` file with an `include:`
-line. Including a package pulls in the packages it includes. The tree below nests
-each package under what it builds on (indentation = "includes"):
+A package that has dependencies carries an `install-dependencies.sh` that installs
+them; a standalone package has none. Including a package pulls in the packages it
+builds on. The tree below nests each package under what it builds on (indentation
+= "includes"):
 
 ```
 foundation                       (base — everything builds on it)
@@ -58,7 +59,7 @@ git subtree add  --prefix agent/rules/testing https://github.com/eventide-projec
 git subtree pull --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master --squash
 ```
 
-Dependency packages are not installed automatically. Consult a package's `package.md` for the packages it includes, and add those too.
+Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them; otherwise the package is standalone.
 
 ### Installing all packages
 

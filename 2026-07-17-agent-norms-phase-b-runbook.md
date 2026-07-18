@@ -83,11 +83,11 @@ PKG=foundation; REPO=agent-norms-$PKG; INSTALL=agent/rules/$PKG   # adjust for c
 D=$(mktemp -d); git -C "$D" init -q
 git -C "$D" subtree add --prefix "$INSTALL" \
   "https://github.com/eventide-project/$REPO.git" master --squash
-ls "$D/$INSTALL"        # expect the package's rules + package.md + README.md (+ log/ where present)
+ls "$D/$INSTALL"        # expect the package's rules + README.md (+ install-dependencies.sh / log/ where present)
 rm -rf "$D"
 ```
 
-Check: files present with names intact, `package.md` `include:` line correct, no `log/` for packages whose log is empty (`foundation`, `code/ruby`, `git`), `log/` present for `testing`, `language`, `design-by-efferent`.
+Check: files present with names intact, `install-dependencies.sh` present for packages with dependencies (`language`, `testing`, `code/ruby`, `design-by-efferent`), no `log/` for packages whose log is empty (`foundation`, `code/ruby`, `git`), `log/` present for `testing`, `language`, `design-by-efferent`.
 
 ## Suggested order
 

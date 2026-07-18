@@ -36,7 +36,7 @@ rm -rf /tmp/prove-foundation
 git init /tmp/prove-foundation
 git -C /tmp/prove-foundation commit --allow-empty -m init
 git -C /tmp/prove-foundation subtree add --prefix agent/rules/foundation https://github.com/eventide-project/agent-norms-foundation.git master --squash
-ls /tmp/prove-foundation/agent/rules/foundation      # expect rules + package.md + README.md, no log/
+ls /tmp/prove-foundation/agent/rules/foundation      # expect rules + README.md, no log/
 rm -rf /tmp/prove-foundation
 ```
 
@@ -61,7 +61,7 @@ rm -rf /tmp/prove-language
 git init /tmp/prove-language
 git -C /tmp/prove-language commit --allow-empty -m init
 git -C /tmp/prove-language subtree add --prefix agent/rules/language https://github.com/eventide-project/agent-norms-language.git master --squash
-ls /tmp/prove-language/agent/rules/language          # expect 14 rules + package.md + README.md + log/
+ls /tmp/prove-language/agent/rules/language          # expect 14 rules + README.md + log/
 rm -rf /tmp/prove-language
 ```
 
@@ -79,7 +79,7 @@ rm -rf /tmp/prove-testing
 git init /tmp/prove-testing
 git -C /tmp/prove-testing commit --allow-empty -m init
 git -C /tmp/prove-testing subtree add --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master --squash
-ls /tmp/prove-testing/agent/rules/testing            # expect rules + package.md + README.md + log/
+ls /tmp/prove-testing/agent/rules/testing            # expect rules + README.md + log/
 rm -rf /tmp/prove-testing
 ```
 
@@ -99,7 +99,7 @@ rm -rf /tmp/prove-code-ruby
 git init /tmp/prove-code-ruby
 git -C /tmp/prove-code-ruby commit --allow-empty -m init
 git -C /tmp/prove-code-ruby subtree add --prefix agent/rules/code/ruby https://github.com/eventide-project/agent-norms-code-ruby.git master --squash
-ls /tmp/prove-code-ruby/agent/rules/code/ruby        # expect rules + package.md + README.md, no log/
+ls /tmp/prove-code-ruby/agent/rules/code/ruby        # expect rules + README.md, no log/
 rm -rf /tmp/prove-code-ruby
 ```
 
@@ -117,7 +117,7 @@ rm -rf /tmp/prove-git
 git init /tmp/prove-git
 git -C /tmp/prove-git commit --allow-empty -m init
 git -C /tmp/prove-git subtree add --prefix agent/rules/git https://github.com/eventide-project/agent-norms-git.git master --squash
-ls /tmp/prove-git/agent/rules/git                    # expect rules + package.md + README.md, no log/
+ls /tmp/prove-git/agent/rules/git                    # expect rules + README.md, no log/
 rm -rf /tmp/prove-git
 ```
 
@@ -140,7 +140,7 @@ rm -rf /tmp/prove-dbe
 git init /tmp/prove-dbe
 git -C /tmp/prove-dbe commit --allow-empty -m init
 git -C /tmp/prove-dbe subtree add --prefix agent/rules/design-by-efferent https://github.com/eventide-project/agent-norms-design-by-efferent.git master --squash
-ls /tmp/prove-dbe/agent/rules/design-by-efferent     # expect rules + vocabulary.md + package.md + README.md + log/
+ls /tmp/prove-dbe/agent/rules/design-by-efferent     # expect rules + vocabulary.md + README.md + log/
 rm -rf /tmp/prove-dbe
 ```
 
