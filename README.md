@@ -58,7 +58,7 @@ git subtree add  --prefix agent/rules/testing https://github.com/eventide-projec
 git subtree pull --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master --squash
 ```
 
-Consult a package's `package.md` for the packages it includes, and add those too.
+Dependency packages are not installed automatically. Consult a package's `package.md` for the packages it includes, and add those too.
 
 ### Installing all packages
 
