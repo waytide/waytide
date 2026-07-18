@@ -56,8 +56,7 @@ Consult a package's `package.md` for the packages it includes, and add those too
 
 ### Installing all packages
 
-To adopt the whole set, install each package. Order them so dependencies land
-first (`foundation`, then `language`, then the rest):
+To adopt the whole set, install each package:
 
 ```
 git subtree add --prefix agent/rules/foundation          https://github.com/eventide-project/agent-norms-foundation.git          master --squash
