@@ -2,7 +2,7 @@
 
 Companion to the packaging design. Every current rule in `constant`'s `agent/rules/` (plus the `AGENTS.md` framework prose) pinned to a package, with consolidations and `local/` flagged in the Notes. Ordered by current folder so nothing is missed; a per-package tally follows.
 
-> **Built and published 2026-07-17.** This table predates the `vocabulary`→`language` rename: the `language` entries below reflect it, and where a Note says "DBE vocabulary" it means DBE's `vocabulary.md` glossary (correct). The planned per-package `substitutes` table was superseded by one rule per substitute.
+> **Built and published 2026-07-17.** The `language` entries below reflect the `vocabulary`→`language` rename; where a Note says "DBE vocabulary" it means DBE's `vocabulary.md` glossary. The planned per-package `substitutes` table was superseded by one rule per substitute.
 
 ## `AGENTS.md` (framework prose)
 
@@ -122,7 +122,7 @@ Companion to the packaging design. Every current rule in `constant`'s `agent/rul
 ## Per-package tally
 
 - **foundation** — status-report, next-deferred-item, agent-file-names-iso8601, rules-install-a-mindset (meta-rule), + the `AGENTS.md` framework prose (`rules/observations/deferred/log`).
-- **language** — the language-is-precise premise, the name-literally and no-slang principle rules + one rule per substitute (sent-to, normal-path, install/vendor, convey/thread, wrap/mediates, sweep/conform, land/plain, arm/scenario, cut/increment). No table.
+- **language** — the language-is-precise premise, the name-literally and no-slang principle rules + one rule per substitute (sent-to, normal-path, install/vendor, convey/thread, wrap/mediates, sweep/conform, land/plain, arm/scenario, cut/increment, obsolete/dead), plus **solubility** as a general term-with-meaning (referenced by DBE, not owned by it). No table. (The premise, `say-obsolete-not-dead`, and `solubility` were authored during the DBE build, not migrated from `constant`.)
 - **design-by-efferent** — the methodology rules (incl. the merged hinge-presentation rule and the present-every-prompt merge), auto-record-design-dialogue, loop-records, the `loops/` directory, and the DBE **vocabulary** (tdd-lexicon + efferent/actuation/design-by-efferent). Includes foundation, language, testing.
 - **testing** — the test-writing rules, test-report, test-tree, do-not-test-the-platform, assert-error-message, and one rule per substitute (the merged controls rule, verified, protect). No table.
 - **code/ruby** — the Ruby code-style rules, build/new, lib-report. (`code/` is a namespace grouping by programming language; future `code/sh`, `code/sql` are separate packages.)
