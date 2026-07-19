@@ -10,7 +10,7 @@ Because the org and every repo name change, this is a **fresh first publish** of
 - Carried along: the "puts" not "lands" phrasing sweep; the two new `language` rules (`communicate-plainly-name-the-thing`, `expand-abbreviations-on-first-use`); the `docs` → `plan` package rename; and — if decided by then — the `foundation` bootstrap `install.sh` (see [[2026-07-19T02-56-52Z-foundation-must-ship-the-bootstrap-that-switches-the-framework-on]]).
 
 **Procedure:**
-1. **Scott creates** the `waytide` org and the repos: `waytide/waytide` plus one per package (`waytide/foundation`, …, `waytide/code-ruby`, `waytide/plan`, `waytide/design-by-efferent`). Public, empty (no README/license) so the first push lands cleanly on `master`. Org/repo creation is Scott's to do.
+1. ~~Create the `waytide` org and the eight repos.~~ **DONE 2026-07-19** — org created; all eight repos (`waytide/waytide` + one per package) created **public and empty** via `gh repo create`, confirmed `isEmpty=true`. (Publishing is still held — see below.)
 2. **Push the composite** to `waytide/waytide` (`master`).
 3. **For each package:** `git subtree split --prefix=<package> -b publish-tmp`, then `git push https://github.com/waytide/<package>.git publish-tmp:master`, then delete the temp branch. `code/ruby` splits from `--prefix=code/ruby` into `waytide/code-ruby`.
 4. **Prove each pull** into a throwaway project (`git subtree add`); check the files, structural files, and `log/` presence match expectations.
@@ -18,7 +18,7 @@ Because the org and every repo name change, this is a **fresh first publish** of
 
 The runbook (`log/2026-07-17-agent-norms-phase-b-runbook.md`) still holds the split-and-push primitive and the proof step; only the org and repo names differ (`waytide/<package>`, no `agent-norms-` prefix).
 
-**Gated on:** explicit go-ahead — every push writes to public repos, and the org/repos are Scott's to create first.
+**Gated on:** explicit go-ahead **and the license being ready** — the empty repos exist, but publishing the packages before the Eventide Common Interest License is in place would put them out all-rights-reserved (see [[2026-07-19T19-17-49Z-add-the-eventide-common-interest-license-to-each-package]]). Hold the publish until the license lands, or ship with a clear "license forthcoming" note. Every push writes to public repos.
 
 **Why:** the composite is the source of truth and fully rebranded; the packages just need their first publish under the Waytide name. Recorded so the release survives beyond this session.
 
