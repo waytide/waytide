@@ -53,7 +53,7 @@ The example is a *persisted, dated, structured* record — **not** throwaway scr
 
 **Runs are optional, not the default (decided with Scott).** An experiment is normally **one branch worked to a verdict**, no run numbering. Split into runs (`Run 1`, `Run 2`, …) only when deliberately holding the question fixed and **varying one factor to compare** — each run its own branch from the same base, each with its own forecast. A run is a deliberate variation, not a retry.
 
-**Branch naming (folded into `experiment-runs-on-its-own-branch`):** default `experiment/<subject>` (kebab slug of what's under test, named literally); add `-run-<n>` only when there are multiple runs. Upstream branch is **not** in the name (it lives in the record). Optional `experiment/<subject>-base` tag marks a shared baseline, useful mainly for multi-run experiments.
+**Branch naming (folded into `experiment-runs-on-its-own-branch`):** default `experiment/<subject>` (kebab slug of what's under test, named literally); add `-run-<n>` only when there are multiple runs. Upstream branch is **not** in the name (it lives in the record). **No base tag at all** — the baseline is recorded in the experiment record (base commit SHA + ref); a run branches straight from the recorded commit. Tags avoided to prevent `git tag`/remote clutter, and the record already names the base.
 
 ### Bearing on the open placement question
 
