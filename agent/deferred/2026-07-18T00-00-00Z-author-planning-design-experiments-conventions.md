@@ -77,9 +77,10 @@ Drafted five rules (Phase A, not yet committed): foundation `agent-plans-convent
 - **DBE is assumed** for an experiment; **suspending DBE requires specific user confirmation**.
 - **All such user confirmations are recorded** in the experiment record.
 - Agent **watches for the user starting main-sequence work** while an experiment is active and surfaces it.
-- **States (verdict on the question, not the work):** an experiment **ends** as **affirmed** (question held), **refuted** (disproven), **inconclusive** (ran, no clear verdict), or **abandoned** (dropped before a verdict); it may separately be **suspended** (paused). Never left silently open.
+- **States (verdict on the question, not the work):** an experiment **ends** as **affirmed** (question held), **refuted** (disproven), **inconclusive** (ran, no clear verdict), **abandoned** (dropped before a verdict), or **superseded** (replaced by another experiment); it may separately be **suspended** (paused). Never left silently open.
 - **Affirmed is user-declared** (explicit confirmation). On affirmation: **merge** to upstream (under the test gate) **and copy the experiment log into the project decision log** (`agent/log/`). This resolves the earlier "which log" question — confirmations live in the experiment record; an *affirmed* experiment's log is copied into the project log.
 - **Refuted / inconclusive / abandoned:** not merged; record **maintained, marked with the state**.
+- **Superseded:** an experiment may be superseded by another; **both records cross-reference the counterpart**. A superseded experiment **must be concluded explicitly by the user** and **remains suspended until then**. Not merged; record kept.
 - **Suspension:** branch **not removed**; record **characterized as suspended**.
 - On **any** conclusion (affirmed / refuted / inconclusive / abandoned / suspended) the user should end up **on the upstream branch**.
 - **Branch deletion** (local **and** remote) requires **explicit user confirmation**; suspension never deletes.
