@@ -8,10 +8,11 @@ So a fresh project that installs the packages **still won't load the rules** unt
 
 **Draft:** a minimal bootstrap is drafted at `foundation/AGENTS.md.template` — it points at `agent/rules/`, states the override precedence, and defers the framework description to foundation's rules (kept minimal so it can't drift from them).
 
+**Settled:** a **single root `AGENTS.md`** covers everything — it is loaded both by the `agents.md` standard and by **Claude Code** (which loads `AGENTS.md` as well as `CLAUDE.md`). No separate `CLAUDE.md` variant, note, or symlink is needed.
+
 **Open questions — the delivery mechanism (decide before shipping):**
 - **How is it delivered?** Ship the template for consumers to copy to their root; or have `install-dependencies.sh` / `install-all.sh` **offer to create or append** the bootstrap line to the project's root `AGENTS.md`; or just **document** it as a required manual step in foundation's README. (Any is compatible with the drafted content.)
-- **`AGENTS.md` vs `CLAUDE.md`.** The `agents.md` standard uses `AGENTS.md`; **Claude Code auto-loads `CLAUDE.md`**. Decide how to cover both — a single `AGENTS.md` plus a note, a `CLAUDE.md` that defers to it, or a symlink.
-- **Idempotence / non-clobber.** If the script writes the root file, it must not overwrite a project's existing `AGENTS.md`/`CLAUDE.md` — append the line if absent, leave the rest alone.
+- **Idempotence / non-clobber.** If the script writes the root file, it must not overwrite a project's existing `AGENTS.md` — append the line if absent, leave the rest alone.
 
 **Gated on:** not blocking. `foundation` is already published, so shipping the bootstrap (whichever mechanism) is a `foundation` re-publish (Phase B) once the mechanism is decided — do that with explicit go-ahead.
 
