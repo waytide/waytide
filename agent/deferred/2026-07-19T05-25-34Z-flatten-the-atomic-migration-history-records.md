@@ -1,39 +1,34 @@
-# Flatten the atomic history records before finalizing
+# Combine the small migration-note files before finalizing
 
-Before this work is finalized, a good deal of the **atomic history records** should be flattened. Many one-file-per-decision entries split a single topic across many files, which is confusing to read. (Scott, 2026-07-19.)
+Before this work is finalized, a lot of the tiny one-note-per-decision files should be combined. Right now a single piece of work often got split across many small files, which is hard to read. (Scott, 2026-07-19.)
 
-## The three tiers (they don't flatten the same way)
+## The kinds of record files here
 
-1. **Composite `agent/log/` — the migration/authoring history (34 files, UNDISTRIBUTED).** This is the main target. It never ships to consumers, so flattening it is low-risk and doesn't touch the convention consumers adopt. Clear topic-split clusters:
-   - the DBE build — six files stamped `…T03-44-3x` (M2 hinge-trio merge, M4 folds, tdd-lexicon→DBE vocabulary, solubility-b, tdd→dbe genus test, vocabulary.md exemption) are one work session;
-   - the `vocabulary`/`language` decisions — one-rule-per-substitute, solubility-general, wrap→mediates, obsolete-not-dead, vocabulary→language rename, precision-not-formality;
-   - the publishes — five separate `…-package-published` entries plus the Phase B execution;
-   - the framework/packaging decisions — include/package.md (adopted then dropped), per-package logs, composite/component naming, ISO-prefix exemptions.
-   Fold these into a small set of **topic documents** (or sections in the existing `log/` narrative docs), so the record reads as topics, not a scatter of atoms.
+**The build notes — the main thing to fix.** The repo's own `agent/log/` folder holds 34 tiny files, each jotting one small decision made while building the norms. Nobody who installs the packages ever sees these — they stay in this repo. The problem: one piece of work often became six or seven separate files. For example, the design-by-efferent build is six files all saved within the same minute (the hinge-trio merge, the M4 folds, the tdd-lexicon becoming the DBE glossary, solubility, the tdd→dbe rename test, a filename exemption), and there are five separate "published package X" files, and a cluster about the language package. These read far better combined into a handful of by-topic write-ups.
 
-2. **`log/` — the narrative migration docs (11 files).** Already topic-level (packaging design, handoff, classification table, per-package plans, runbook/checklist). Little to flatten; the per-package migration plans (done) could collapse into one "migration record," and the flattened `agent/log/` history could land here.
+**The bigger write-ups — already fine.** The `log/` folder has 11 larger documents (the design doc, the handoff note, the per-package plans). These are already whole topics, so there is little to combine. The finished per-package plans could fold into one "migration record," and the combined build notes above could go there too.
 
-3. **Per-package `log/` — DISTRIBUTED (testing 3, language 1, design-by-efferent 5).** Handle with care: these ship to consumers and *exemplify* the one-file-per-decision decision-log convention, so consolidating them (a) touches consumers → re-publish, and (b) rubs against the very rule they demonstrate. Only flatten a genuinely confusing topic-split here (candidate: DBE's 5), and weigh it against the convention.
+**The notes that ride along inside packages — mostly leave alone.** A few packages carry their own small notes folder that gets copied into other people's projects when they install (testing has 3, language 1, design-by-efferent 5). Combining these is trickier: other people receive them, so changing them means re-publishing the package; and they are the living example of the "one note per decision" rule, so merging them would contradict the rule they demonstrate. Only combine one if it is genuinely confusing (design-by-efferent's five are the candidate).
 
-## Tension with the decision-log convention
+## This does not change the rule
 
-Foundation's `decision-log-convention` is "one file per decision, a one-line title." Flattening is **retrospective consolidation of *completed* history**, not a change to the go-forward live-log convention — the live convention stays one-file-per-decision. Decide whether to note this explicitly (e.g. "a closed body of migration history may be consolidated into topic records") or keep it a one-off.
+The "one note per decision" rule (foundation's `decision-log-convention`) stays exactly as it is for notes written from now on. This is only tidying a finished pile of old notes — not changing how notes get written going forward. Optionally add a line to that rule saying a closed pile of old notes may be combined afterward.
 
 ## Recommendation
 
-- **Flatten tier 1** (composite `agent/log/` migration history) into topic documents — the high-value, low-risk win. Keep the atomic entries' facts; group by topic.
-- **Fold tier 2's done migration plans** into one migration record; place the flattened history alongside.
-- **Leave tier 3 (distributed per-package logs) mostly as-is**; flatten only a specific confusing case, accepting the re-publish.
-- Keep the live decision-log convention unchanged; optionally add the "closed history may be consolidated" note.
+- Combine the repo's own build notes (the 34-file pile) into a few by-topic write-ups — the safe, worthwhile win, since nobody outside sees them.
+- Fold the finished per-package plans into one migration record; put the combined build notes there too.
+- Leave the ride-along package notes mostly as they are.
+- Keep the "one note per decision" rule unchanged.
 
-## Open questions
+## Still to decide
 
-- Scope — tier 1 only, or also tier 3 (distributed)?
-- Target structure — new consolidated doc(s) under `log/`, or sections folded into existing narrative docs (handoff / packaging design)?
-- Do the flattened-away atomic files get deleted, or kept? (Deleting is the point — the flattened doc is the record.)
+- Just the repo's own build notes, or also the notes that ride along inside packages?
+- Where the combined write-ups go — a new document in `log/`, or folded into the handoff / design doc.
+- The combined-away small files get deleted — that is the point; the combined write-up becomes the record.
 
-**Gated on:** finalizing this work — do before the migration is called done. Not urgent; no distribution impact for tier 1 (undistributed). Tier 3 would need a re-publish (see [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]]).
+**Do this before:** calling the migration finished. Not urgent. Combining the repo's own notes affects nobody outside. Touching the ride-along package notes would need a re-publish (see [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]]).
 
-**Why:** one-file-per-decision is right for a live log, but a large *closed* body of migration decisions read better as a few topic narratives than as dozens of atoms — especially when one topic is split across many files. This is readability of the historical record, for anyone reading the repo.
+**Why:** one note per decision is right for a live, active log, but a big pile of finished decisions reads better as a few topic write-ups than as dozens of scraps — especially when one piece of work is spread across many files.
 
-**How to apply:** when picked up, settle the scope/structure questions, group tier 1's entries by topic, write the consolidated topic document(s), delete the flattened atomic files, and log the consolidation itself. Related: foundation's `decision-log-convention`, the `log/` narrative migration docs, and the handoff.
+**How to do it:** settle the questions above, group the build notes by topic, write the combined write-up(s), delete the small files, and add one note recording that the combining was done.
