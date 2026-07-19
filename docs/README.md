@@ -5,6 +5,11 @@ Documentation conventions for a project's design and planning artifacts.
 The rules in this package govern how design docs and implementation plans are
 written:
 
+- **An implementation plan reads in a settled order** — Goal, Source design,
+  Architecture, Process notes, Tasks, and so on (`plan-document-format`).
+- **A design doc shares a common spine** — summary or premise, motivation,
+  substantive sections, dated Settled resolutions, and an Out of Scope / Deferred
+  tail (`design-document-format`).
 - **Plans contain no code samples**. A plan describes intended work and
   outcomes in prose, and avoids pre-baking method names, file names, or other
   details that are decided later, interactively.

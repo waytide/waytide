@@ -23,9 +23,19 @@ names the surface it acts on, not the purpose it serves.
 Foundation also provides project-wide commands: **status report** (a whole-project
 summary) and **next deferred item**.
 
+Beyond the four core directories, foundation defines the **work-artifact**
+directories for planning and running changes — `agent/plans/` (implementation plans
+that sequence a settled design), `agent/design/` (design docs that settle direction
+first), and `agent/experiments/` (recorded experiments that test a question).
+Experiments carry a full branch lifecycle — their own branch, the
+affirmed/refuted/inconclusive/abandoned/superseded states, and a test-gated merge —
+in the `experiment-runs-on-its-own-branch` rule. How plans and designs *read* (their
+sections) is the `docs` package's concern.
+
 Other packages may contribute their own artifact directories (for example,
-design-by-efferent contributes `agent/loops/`); foundation owns only
-`rules`/`observations`/`deferred`/`log`.
+design-by-efferent contributes `agent/loops/`); foundation owns
+`rules`/`observations`/`deferred`/`log` and the `plans`/`design`/`experiments`
+work-artifact directories.
 
 This package includes no others — everything else includes it.
 
