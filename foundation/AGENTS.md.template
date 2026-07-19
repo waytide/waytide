@@ -1,0 +1,24 @@
+<!--
+  Bootstrap template for a project that uses the Agent Norms.
+
+  Copy this file to the PROJECT ROOT as `AGENTS.md` (the harness auto-loads a
+  root AGENTS.md at session start). Its one job is to switch the framework on:
+  point the agent at `agent/rules/` so the installed rules take over. Keep it
+  minimal — the framework itself is defined by the `foundation` package's rules,
+  not restated here, so this file can't drift from them.
+
+  For Claude Code, which auto-loads `CLAUDE.md` rather than `AGENTS.md`, either
+  name this file `CLAUDE.md` or add a `CLAUDE.md` that carries the same line.
+-->
+
+# AGENTS.md
+
+This project uses the **Agent Norms** — its working conventions live as files under `agent/`, committed alongside the code and read at the start of each session.
+
+## Rules — `agent/rules/`
+
+**Read every file in `agent/rules/` at the start of a session and follow them.** They override default behavior where they conflict; explicit user instructions still win.
+
+`agent/rules/` is organized by package (`foundation/`, `testing/`, …), each installed with `git subtree`. The framework itself — what the `agent/` directories are and how to work with them (`rules`, `observations`, `deferred`, `log`, and the `plans` / `design` / `experiments` work artifacts) — is defined by the **`foundation`** package's own rules. Read those first; everything else builds on them.
+
+<!-- Add project-specific instructions below this line. -->
