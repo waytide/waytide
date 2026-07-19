@@ -7,9 +7,9 @@ All seven packages carry **unpublished changes** and need a Phase B re-publish a
 - **`foundation` rules** — `agent-deferred-convention` ("is put into code or rules"), `rules-install-a-mindset` and `experiment-runs-on-its-own-branch` ("goes into" / "is just the log copy").
 - **`language` rule** — `no-slang` ("goes into the codebase").
 
-**Also pending in `language` (new rule):** `communicate-plainly-name-the-thing` — a new principle rule beneath the `language-is-precise-here` premise: speak and write plainly, name the actual thing, no invented labels or unexplained jargon. The language README's principle-rule list gains it.
+**Also pending in `language` (two new rules):** `communicate-plainly-name-the-thing` (speak and write plainly, name the actual thing, no invented labels or unexplained jargon) and `expand-abbreviations-on-first-use` (spell out an abbreviation the first time; no unexplained shorthand). Both are principle rules beneath the `language-is-precise-here` premise; the language README's discipline list gains them (now four disciplines).
 
-So the component repos are behind the composite — `foundation` for the phrasing changes (and later the bootstrap `install.sh`), and `language` also for the new principle rule.
+So the component repos are behind the composite — `foundation` for the phrasing changes (and later the bootstrap `install.sh`), and `language` also for the two new rules.
 
 **How to re-publish:** the routine fast-forward path in `log/2026-07-17-agent-norms-phase-b-runbook.md` — the prefixes are unchanged, so `git subtree split --prefix=<pkg>` fast-forwards each component `master`. All seven are plain re-publishes (no rename/create). Prove each pull. (Note: `foundation` and `docs` were last published earlier this session with the new planning/design/experiments conventions; this release carries only the phrasing changes on top.)
 

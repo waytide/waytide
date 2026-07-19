@@ -6,11 +6,12 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 - **language-is-precise-here**. Words are load-bearing, not decoration; a word choice is a design decision. Precision is not formality: the most precise word is very often the plainest one. Everything below follows from this.
 
-**The three disciplines that make it achievable**
+**The four disciplines that make it achievable**
 
 - **name-literally-not-by-analogy**. Name a concept by describing what it literally is; no analogies, opaque codes, or academic jargon.
 - **no-slang**. Use literal, non-figurative terms in prose and in conversation, not only in the code.
 - **communicate-plainly-name-the-thing**. In explanation and conversation, use plain words and the real names of things; no invented labels ("tier 1") or compressed jargon offered as if already shared.
+- **expand-abbreviations-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses); don't use unexplained shorthand.
 
 **One general term-with-meaning**
 
