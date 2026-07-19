@@ -52,6 +52,13 @@ Turn `constant`'s `agent/rules/` directives into reusable, general-purpose packa
 
 The four fast-forward re-publishes each passed a `merge-base --is-ancestor` guard before pushing; `language` force-pushed by design (the only intended force); `design-by-efferent` created `main` fresh. Runbook and checklist: `2026-07-17-agent-norms-phase-b-runbook.md`, `2026-07-17-agent-norms-phase-b-checklist.md`.
 
+**Release 2026-07-19 — planning/design/experiments conventions.** Authored six new rules and re-published the two packages that carry them, both clean fast-forwards to `master`:
+
+- `foundation` (`agent-norms-foundation`, `488c600 → 503d688`) — added `agent-plans-convention`, `agent-design-convention`, `agent-experiments-convention`, and `experiment-runs-on-its-own-branch`, plus a README update naming the new `plans`/`design`/`experiments` work-artifact directories.
+- `docs` (`agent-norms-docs`, `e990d90 → 04d99b3`) — added `plan-document-format` and `design-document-format`, plus a README update.
+
+Both were proved by a throwaway pull. The rules were drafted from `constant`'s worked examples of `agent/plans/`, `agent/design/`, and `agent/experiments/`. Experiments carry a full branch lifecycle: their own `experiment/<subject>` branch, a single-branch-to-a-verdict default (runs optional), the states **affirmed / refuted / inconclusive / abandoned / superseded** (plus **suspended**), a test-gated merge on affirmation that also copies the experiment's log into `agent/log/`, and user-confirmed branch deletion. The originating deferred item was resolved (deleted, with an `agent/log/` entry). One follow-up remains parked as its own deferred item: surveying `constant`'s `agent/sessions/` for a possible fourth convention — gated behind finishing agent-norms before returning to `constant`.
+
 ## What this session did (2026-07-17)
 
 Built the DBE package (Phase A), then a cascade of conformance work it exposed:
