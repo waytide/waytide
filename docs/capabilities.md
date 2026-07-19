@@ -1,6 +1,6 @@
 # What Waytide does
 
-*Waytide is a project by [Eventide](https://eventide-project.org), grown out of the design practice Eventide uses in its own work.*
+*Waytide is by [the Eventide Project](https://eventide-project.org), grown out of the design practice it uses in its own work.*
 
 The capability list — the things adopting Waytide gives you. This is the basis for the documentation site: each capability below becomes a page or section (see `experiments.md` for a worked example of one). The structure of the project — the packages, how they install, how they're distributed — comes *after* this, once a reader wants to adopt what's here.
 

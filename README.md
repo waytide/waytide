@@ -1,13 +1,13 @@
 # Waytide
 
-**A project by [Eventide](https://eventide-project.org).**
+**By [the Eventide Project](https://eventide-project.org).**
 
 Reusable agent directives — the rules an AI coding agent reads at the start of a
 session — organized into installable **packages**. A package is the unit of
 reuse: a project adopts whole packages, never individual rules.
 
-Waytide grew out of the design practice Eventide uses in its own work. The rules
-were extracted from Eventide's [Constant](https://github.com/eventide-project/constant)
+Waytide grew out of the design practice the Eventide Project uses in its own work.
+The rules were extracted from its [Constant](https://github.com/eventide-project/constant)
 project and generalized and consolidated into these packages.
 
 **This composite repository is not itself installed into a project.** It is the
