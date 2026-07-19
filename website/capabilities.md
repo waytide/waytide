@@ -1,8 +1,8 @@
 # What Agent Norms does
 
-The capability list — the things adopting Agent Norms gives you. This is the spine of the documentation site: each capability below is the seed of a page or section (see `experiments.md` for a worked example of one). The structure of the project — the packages, how they install, how they're distributed — comes *after* this, once a reader wants to adopt what's here.
+The capability list — the things adopting Agent Norms gives you. This is the basis for the documentation site: each capability below becomes a page or section (see `experiments.md` for a worked example of one). The structure of the project — the packages, how they install, how they're distributed — comes *after* this, once a reader wants to adopt what's here.
 
-The headline is the last two: these aren't tips in a prompt, they're a persistent, versioned system that changes how the agent works. Everything else is evidence for that.
+The most important are the last two: these aren't tips in a prompt, they're a persistent, versioned system that changes how the agent works. Everything else supports that claim.
 
 ## Designing and building code
 

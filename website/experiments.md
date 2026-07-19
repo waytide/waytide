@@ -5,7 +5,7 @@ An experiment is deliberate work that tests a **question** — something the cod
 - **About the code** — "Does this approach hold up? Is it faster? Does it handle the awkward cases?"
 - **About the way of working** — "Does this design method actually help, and where does the human really need to step in?"
 
-What makes it an experiment, rather than just trying something, is one move: you **write down what you expect before you start**, then record what actually happened. The gap between the two is the finding — and it only counts because the guess was committed in advance.
+What makes it an experiment, rather than just trying something, is this: you **write down what you expect before you start**, then record what actually happened. The gap between the two is the finding — and it only counts because the guess was committed in advance.
 
 An experiment is kept: it's a dated file under `agent/experiments/`, committed with the code, not a scratch note you throw away.
 

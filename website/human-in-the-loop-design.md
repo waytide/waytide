@@ -2,16 +2,16 @@
 
 *Also called Design by Efferent (DBE) — "efferent" is explained below.*
 
-You stay in charge of the design decisions that actually matter, while the AI does the generation. Not reviewing every line, not rubber-stamping a wall of generated code — your attention goes to the few choices the design turns on, and the AI runs straight through everything else.
+You stay in charge of the design decisions that actually matter, while the AI does the generation. Not reviewing every line, and not approving everything the AI produces without really looking — your attention goes to the few choices the design turns on, and the AI generates the rest.
 
 ## The problem it solves
 
 An AI can generate code quickly, but two things go wrong when you let it design:
 
 - **It pulls toward the average.** The AI leans toward the average of all the code it has seen — and a lot of that code is mediocre. Worse, a single confident proposal drags *your* judgment toward that average too: shown one finished-looking answer, you tend to approve it. Left alone, you end up ratifying average work and calling it review.
-- **The usual ceremony is just friction.** Red-green-refactor only ever existed to force a human to pay attention at each step. A test written before its code is *going* to fail — that failure teaches nothing. The ceremony is a stand-in for the thing you actually want: your attention on the decisions that matter.
+- **The usual ceremony just gets in the way.** Red-green-refactor only ever existed to force a human to pay attention at each step. A test written before its code is *going* to fail — that failure teaches nothing. The ceremony is a stand-in for the thing you actually want: your attention on the decisions that matter.
 
-## The core move
+## The main idea
 
 Keep design judgment with the human; let the AI generate everywhere else. Put your attention on the handful of decisions the design genuinely turns on, and generate straight through the rest.
 
@@ -26,7 +26,7 @@ A **hinge** is a decision that is both:
 
 Two hinges are known (more are still being found):
 
-- **The shape of the call.** How you invoke the thing *is* its interface — `upload.(file)` returning a result, and what that result is. This is the caller's-eye view of the unit, which the method calls its **efferent** shape (hence "Design by Efferent"). It's the highest-leverage decision in the whole feature, and it's usually one line. **You set it.**
+- **The shape of the call.** How you invoke the thing *is* its interface — `upload.(file)` returning a result, and what that result is. This is the caller's-eye view of the unit, which the method calls its **efferent** shape (hence "Design by Efferent"). It's the most important decision in the whole feature, and it's usually one line. **You set it.**
 - **Solubility — the result.** Whether the finished unit has *dissolved into its use*: usable, clear, as simple as it should be and no simpler. **You judge it.**
 
 Everything else — the test scaffolding, the implementation body, running the test — is generation or checking, not a hinge. **The AI does it.**
