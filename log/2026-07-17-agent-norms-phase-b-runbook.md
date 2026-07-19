@@ -61,7 +61,7 @@ git push --force "https://github.com/eventide-project/agent-norms-language.git" 
 git branch -D publish-tmp
 ```
 
-**Why the force is safe here:** component repos are regenerated artifacts, not authoring sources, and per the handoff there are no real consumers yet (each prior publish was proved only with a throwaway project). The reset costs nothing real. If a consumer had installed `agent-norms-vocabulary`, they would re-add under the new name — note it if that ever changes.
+**Why the force is safe here:** component repos are regenerated artifacts, not authoring sources, and per the state-of-the-work note there are no real consumers yet (each prior publish was proved only with a throwaway project). The reset costs nothing real. If a consumer had installed `agent-norms-vocabulary`, they would re-add under the new name — note it if that ever changes.
 
 ## The new-repo case — design-by-efferent
 
@@ -96,7 +96,7 @@ Include-order, so a later package's proof can pull its dependencies if you want 
 ## After all publishes
 
 1. Log a composite `agent/log/` entry per re-publish/publish (or one entry covering the batch), recording what shipped — consistent with the earlier per-package publish logs.
-2. Update the handoff: all seven packages published, none carrying unpublished changes, `agent-norms-language` live.
+2. Update the state-of-the-work note: all seven packages published, none carrying unpublished changes, `agent-norms-language` live.
 3. The classification table and packaging design still say `agent-norms-vocabulary` in the repo list — conform to `agent-norms-language`.
 
 ## Nothing here is run without go-ahead

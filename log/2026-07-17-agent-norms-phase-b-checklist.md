@@ -147,7 +147,7 @@ rm -rf /tmp/prove-dbe
 ## 7 — After all publishes (authoring, back in the composite repo)
 
 - [ ] Add a composite `agent/log/` entry recording the Phase B batch (what shipped, the language reset, the new DBE repo).
-- [ ] Update the handoff: all seven packages published, none carrying unpublished changes, `agent-norms-language` live.
+- [ ] Update the state-of-the-work note: all seven packages published, none carrying unpublished changes, `agent-norms-language` live.
 - [ ] Conform `agent-norms-vocabulary` → `agent-norms-language` in the packaging design and classification table repo lists.
 - [ ] Commit those doc updates.
 

@@ -19,4 +19,4 @@ So the component repos are behind the composite — `foundation` most of all (ph
 
 **Why:** the composite is the source of truth and already conformed; the component repos just need the next deterministic re-publish to catch up. Recorded so the pending release survives beyond the session in which the changes were made.
 
-**How to apply:** when releasing, follow the Phase B runbook for all seven packages (fast-forward re-publish, prove each pull), log a composite `agent/log/` entry, and update the handoff. Delete this item once done.
+**How to apply:** when releasing, follow the Phase B runbook for all seven packages (fast-forward re-publish, prove each pull), log a composite `agent/log/` entry, and update the state-of-the-work note. Delete this item once done.

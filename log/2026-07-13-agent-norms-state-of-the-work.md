@@ -1,6 +1,6 @@
-# Agent Norms — Handoff / Resume Note
+# Agent Norms — State of the Work
 
-Resume point for continuing this work in a fresh session. Read this first, then the two companion docs in this folder:
+A summary of where this work currently stands. Read this first, then the two companion docs in this folder:
 
 - `2026-07-13-agent-norms-packaging-design.md` — the full design (package types, dependency graph, subtree/composite repo workflow, settled decisions).
 - `2026-07-13-agent-norms-classification-table.md` — every source rule pinned to a package, with merges and `local/` flagged.

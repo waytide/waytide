@@ -6,7 +6,7 @@ Before this work is finalized, a lot of the tiny one-note-per-decision files sho
 
 **The build notes — the main thing to fix.** The repo's own `agent/log/` folder holds 34 tiny files, each jotting one small decision made while building the norms. Nobody who installs the packages ever sees these — they stay in this repo. The problem: one piece of work often became six or seven separate files. For example, the design-by-efferent build is six files all saved within the same minute (the hinge-trio merge, the M4 folds, the tdd-lexicon becoming the DBE glossary, solubility, the tdd→dbe rename test, a filename exemption), and there are five separate "published package X" files, and a cluster about the language package. These read far better combined into a handful of by-topic write-ups.
 
-**The bigger write-ups — already fine.** The `log/` folder has 11 larger documents (the design doc, the handoff note, the per-package plans). These are already whole topics, so there is little to combine. The finished per-package plans could fold into one "migration record," and the combined build notes above could go there too.
+**The bigger write-ups — already fine.** The `log/` folder has 11 larger documents (the design doc, the state-of-the-work note, the per-package plans). These are already whole topics, so there is little to combine. The finished per-package plans could fold into one "migration record," and the combined build notes above could go there too.
 
 **The notes that ride along inside packages — mostly leave alone.** A few packages carry their own small notes folder that gets copied into other people's projects when they install (testing has 3, language 1, design-by-efferent 5). Combining these is trickier: other people receive them, so changing them means re-publishing the package; and they are the living example of the "one note per decision" rule, so merging them would contradict the rule they demonstrate. Only combine one if it is genuinely confusing (design-by-efferent's five are the candidate).
 
@@ -24,7 +24,7 @@ The "one note per decision" rule (foundation's `decision-log-convention`) stays 
 ## Still to decide
 
 - Just the repo's own build notes, or also the notes that ride along inside packages?
-- Where the combined write-ups go — a new document in `log/`, or folded into the handoff / design doc.
+- Where the combined write-ups go — a new document in `log/`, or folded into the state-of-the-work note / design doc.
 - The combined-away small files get deleted — that is the point; the combined write-up becomes the record.
 
 **Do this before:** calling the migration finished. Not urgent. Combining the repo's own notes affects nobody outside. Touching the ride-along package notes would need a re-publish (see [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]]).
