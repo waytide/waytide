@@ -76,7 +76,7 @@ git branch -D publish-tmp
 
 ## Prove each pull
 
-After each publish, confirm the package lands correctly by pulling it into a throwaway project (does not touch the component repo):
+After each publish, confirm the package installs correctly by pulling it into a throwaway project (does not touch the component repo):
 
 ```
 PKG=foundation; REPO=agent-norms-$PKG; INSTALL=agent/rules/$PKG   # adjust for code/ruby, language

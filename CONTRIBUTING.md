@@ -24,7 +24,7 @@ repository. Sync runs one way only: composite repo → component repositories.
 are never an authoring source. Do not commit directly to a component repository —
 its `master` is regenerated from this composite repo's history by `git subtree
 split`, so a direct commit is not in that history and is lost or made to conflict
-on the next release. All changes land in the composite repo.
+on the next release. All changes are made in the composite repo.
 
 ## Authoring
 
@@ -75,7 +75,7 @@ to lose it. Two ways to capture it, preferred first:
    git subtree push --prefix agent/rules/testing https://github.com/eventide-project/agent-norms-testing.git master
    ```
 
-   This lands your commits on the component repo. It is a **fallback**: `subtree
+   This puts your commits on the component repo. It is a **fallback**: `subtree
    push` reconciles history awkwardly, and the change still has to be brought into
    the composite repo by hand (the component repo is downstream — the next
    composite split would otherwise overwrite it). Author in the composite whenever
