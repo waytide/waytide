@@ -1,0 +1,1 @@
+# Subject-first means the commit subject is the software and its change of state, never the developer or their work — a commit log is a journal of changes to the software and their effects, not a personal journal of the developer's exploits (imperative "Fix…" and past-tense "Fixed…" both lead with the developer)

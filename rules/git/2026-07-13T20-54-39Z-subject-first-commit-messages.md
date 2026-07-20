@@ -1,17 +1,16 @@
 # Write subject-first commit messages
 
-Commit messages are **subject-first**: the subject of the change leads, described in **passive voice** and **indicative mood** — the message states *what changed about the code*, not what the developer did. We write about the code, not the developer; centering the developer reinforces anthropocentrism in the mindset.
+The subject of a commit message is **the software** — never the developer. A commit log is a journal of the changes made to the software and their effects, not a personal journal of what the developer did. So the first line leads with *the thing that changed and its new state*, stated as a fact in passive voice and indicative mood.
 
-Commit logs are **scanned, not read**, so the most important thing — the subject of the change — comes first. Describe the change as a fact about the code's new state, not as an imperative instruction to the reader.
+Developers gravitate toward recounting their exploits — "Fixed the parser", "Added the tests", "Refactored the module". A leading verb, whether an imperative ("Fix…") or a past-tense report ("Fixed…"), puts the developer's work first. The subject must put the software first.
 
-- **Passive voice, indicative mood — not imperative.** "Widget reconciliation is corrected", **not** "Fix widget reconciliation". "The resolved constant is bound before comparison", not "Bind the resolved constant".
-- **Omit the verb when introducing a new item.** "Widget tests", not "Widget tests are added".
-- **"is corrected", not "is fixed"** — for a defect. "Widget reconciliation is corrected".
-- **"is clarified"** — for a refactor / readability change. "Widget creation is clarified".
+- **State the change, don't narrate the work.** "Widget reconciliation is corrected" — not "Fix widget reconciliation" and not "Fixed widget reconciliation".
+- **"is corrected"** for a defect; **"is clarified"** for a refactor or readability change.
+- **Omit the verb for a new item.** "Widget tests", not "Widget tests are added".
 - **Rename form:** "Widget, rather than sprocket".
 - **Version bump form:** "Package version is increased from 1.1.1 to 1.2.0".
-- **No 50-character subject rule** — make the first line as long as it needs to be to state the subject clearly.
+- **No 50-character limit** — let the first line run as long as it needs to state the subject clearly.
 
-**Why:** the technique matches how humans consume a log — scanning, not careful reading — so leading with the subject (the changed thing) rather than a verb-first action lowers the cognitive load of reviewing history. It is the Eventide house style, and it fits this project's human-centered ethos: the reader's orientation comes first. It also composes with the existing commit-wording rule — "Task 9 is done" (state the fact) is already subject-first indicative.
+**Why:** the log records the history of the software, and it is scanned rather than read, so leading with the changed thing rather than the developer's action is both truer to what the log is for and easier to review. It is the Eventide house style, and it composes with the commit-wording rule — "Task 9 is done" already states the fact, software-first.
 
-**How to apply:** decide the subject of the commit first, then write the first line as a passive, indicative statement of what changed, subject leading. Use "is corrected" / "is clarified", omit the verb for new items, and let the line run as long as it needs to. Do not write imperative-mood, verb-first subjects ("Fix…", "Add…", "Introduce…", "Return…"). Related: the commit-says-task-is-done-not-mark-done rule, the no-Claude-coauthor rule, and the run-suite-before-commit rule — the other commit conventions in this package.
+**How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb — not imperative and not past tense — because both put the developer's work ahead of the software. Related: the commit-says-task-is-done-not-mark-done rule, the no-Claude-coauthor rule, and the run-suite-before-commit rule.
