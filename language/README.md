@@ -44,19 +44,19 @@ language  →  foundation
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+Install with `git subtree` — it puts the files in your project's `waytide/rules/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix agent/rules/language https://github.com/waytide/language.git master --squash
-git subtree pull --prefix agent/rules/language https://github.com/waytide/language.git master --squash
+git subtree add  --prefix waytide/rules/language https://github.com/waytide/language.git master --squash
+git subtree pull --prefix waytide/rules/language https://github.com/waytide/language.git master --squash
 ```
 
-It includes `foundation` — install that too, or run `sh agent/rules/language/install-dependencies.sh` from your project root.
+It includes `foundation` — install that too, or run `sh waytide/rules/language/install-dependencies.sh` from your project root.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix agent/rules/language https://github.com/waytide/language.git master --squash
+git subtree pull --prefix waytide/rules/language https://github.com/waytide/language.git master --squash
 ```
 
 

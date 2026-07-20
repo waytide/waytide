@@ -16,7 +16,7 @@ below (each has its own repository).
 
 ## Packages
 
-- **[foundation](https://github.com/waytide/foundation)**. The `agent/` artifact framework: the
+- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact framework: the
   `rules`/`observations`/`deferred`/`log` directories and how to work with them,
   the one-line decision-log format, and the ISO-8601-UTC filename convention.
   Everything includes it.
@@ -51,12 +51,12 @@ plan                →  (nothing — standalone)
 ## Using a package in a project
 
 A consuming project installs a package with `git subtree`, which places the
-package's files physically into the project's `agent/rules/` tree so they are
+package's files physically into the project's `waytide/rules/` tree so they are
 committed alongside the code and read at session start:
 
 ```
-git subtree add  --prefix agent/rules/testing https://github.com/waytide/testing.git master --squash
-git subtree pull --prefix agent/rules/testing https://github.com/waytide/testing.git master --squash
+git subtree add  --prefix waytide/rules/testing https://github.com/waytide/testing.git master --squash
+git subtree pull --prefix waytide/rules/testing https://github.com/waytide/testing.git master --squash
 ```
 
 Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them; otherwise the package is standalone.
@@ -66,25 +66,25 @@ Dependency packages are not installed automatically. If the package has an `inst
 To adopt the whole set, install each package:
 
 ```
-git subtree add --prefix agent/rules/foundation          https://github.com/waytide/foundation.git          master --squash
-git subtree add --prefix agent/rules/language            https://github.com/waytide/language.git            master --squash
-git subtree add --prefix agent/rules/testing             https://github.com/waytide/testing.git             master --squash
-git subtree add --prefix agent/rules/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
-git subtree add --prefix agent/rules/git                 https://github.com/waytide/git.git                 master --squash
-git subtree add --prefix agent/rules/plan                https://github.com/waytide/plan.git                master --squash
-git subtree add --prefix agent/rules/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
+git subtree add --prefix waytide/rules/foundation          https://github.com/waytide/foundation.git          master --squash
+git subtree add --prefix waytide/rules/language            https://github.com/waytide/language.git            master --squash
+git subtree add --prefix waytide/rules/testing             https://github.com/waytide/testing.git             master --squash
+git subtree add --prefix waytide/rules/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
+git subtree add --prefix waytide/rules/git                 https://github.com/waytide/git.git                 master --squash
+git subtree add --prefix waytide/rules/plan                https://github.com/waytide/plan.git                master --squash
+git subtree add --prefix waytide/rules/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
 ```
 
 Refresh any package later using `git subtree pull`:
 
 ```
-git subtree pull --prefix agent/rules/foundation          https://github.com/waytide/foundation.git          master --squash
-git subtree pull --prefix agent/rules/language            https://github.com/waytide/language.git            master --squash
-git subtree pull --prefix agent/rules/testing             https://github.com/waytide/testing.git             master --squash
-git subtree pull --prefix agent/rules/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
-git subtree pull --prefix agent/rules/git                 https://github.com/waytide/git.git                 master --squash
-git subtree pull --prefix agent/rules/plan                https://github.com/waytide/plan.git                master --squash
-git subtree pull --prefix agent/rules/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
+git subtree pull --prefix waytide/rules/foundation          https://github.com/waytide/foundation.git          master --squash
+git subtree pull --prefix waytide/rules/language            https://github.com/waytide/language.git            master --squash
+git subtree pull --prefix waytide/rules/testing             https://github.com/waytide/testing.git             master --squash
+git subtree pull --prefix waytide/rules/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
+git subtree pull --prefix waytide/rules/git                 https://github.com/waytide/git.git                 master --squash
+git subtree pull --prefix waytide/rules/plan                https://github.com/waytide/plan.git                master --squash
+git subtree pull --prefix waytide/rules/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
 ```
 
 Or do it all at once with [`install-all.sh`](install-all.sh), which installs and refreshes every package. Fetch it and run it from your project root:

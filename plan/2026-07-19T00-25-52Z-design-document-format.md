@@ -1,6 +1,6 @@
 # How a design doc reads
 
-A design doc (`agent/design/*.md`) is titled `# <Title> — Design` and shares a spine, not a fixed section list — the substance differs between a **feature/component** design and a **methodology** design, but the frame is common:
+A design doc (`waytide/design/*.md`) is titled `# <Title> — Design` and shares a spine, not a fixed section list — the substance differs between a **feature/component** design and a **methodology** design, but the frame is common:
 
 - **Summary** or **Premise** — the design in brief, or the premise a methodology argues from.
 - **Background & Motivation** — what prompted the design and the problem it resolves.

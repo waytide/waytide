@@ -7,7 +7,7 @@ An experiment is deliberate work that tests a **question** — something the cod
 
 What makes it an experiment, rather than just trying something, is this: you **write down what you expect before you start**, then record what actually happened. The gap between the two is the finding — and it only counts because the guess was committed in advance.
 
-An experiment is kept: it's a dated file under `agent/experiments/`, committed with the code, not a scratch note you throw away.
+An experiment is kept: it's a dated file under `waytide/experiments/`, committed with the code, not a scratch note you throw away.
 
 ## The shape of one
 
@@ -55,4 +55,4 @@ Sometimes you want to hold the question fixed and change *one thing* to compare 
 
 ---
 
-*The experiment conventions come from the `foundation` package (the record format, and the branch-and-lifecycle rules). Installing `foundation` gives you the `agent/experiments/` directory and these conventions. See [Getting started](#) for installation.*
+*The experiment conventions come from the `foundation` package (the record format, and the branch-and-lifecycle rules). Installing `foundation` gives you the `waytide/experiments/` directory and these conventions. See [Getting started](#) for installation.*

@@ -1,11 +1,11 @@
 # The "next deferred item" command: list the deferred items and prompt for a selection
 
 When the developer gives the command **"next deferred item"**, list the items
-currently in `agent/deferred/` and **prompt the developer to select one** to take
+currently in `waytide/deferred/` and **prompt the developer to select one** to take
 up next. Do not pick one automatically — present the list and let the developer
 choose.
 
-**How to apply:** on the command, read `agent/deferred/`, present each item
+**How to apply:** on the command, read `waytide/deferred/`, present each item
 through the selection UI (one option per deferred item, labelled by its title /
 one-line hook), and let the developer pick which to work on. If there are more
 items than the selection UI's option limit, list them in prose and ask. Once the

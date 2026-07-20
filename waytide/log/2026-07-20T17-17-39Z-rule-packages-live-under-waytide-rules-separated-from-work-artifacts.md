@@ -1,0 +1,1 @@
+# Rule packages install under `waytide/rules/`, separated from the work-artifact directories (`log/`, `plans/`, etc.) that sit at `waytide/` top level; the root AGENTS.md reads `waytide/rules/` at session start

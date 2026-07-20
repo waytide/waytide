@@ -50,8 +50,8 @@ git push https://github.com/waytide/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`code/ruby` splits from the nested path (`--prefix=code/ruby`) into
-`waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
+`code/ruby` splits from the nested path (`--prefix waytide/rules/code/ruby`) into
+the flat repo name `waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
 the component repo diverged (a direct commit, which the downstream-only rule
 forbids). The full step-by-step for every package — including the one-time repo
 create/rename cases — is the **Phase B checklist**
@@ -69,10 +69,10 @@ to lose it. Two ways to capture it, preferred first:
 1. **Make the fix in the composite repo** and `git subtree pull` it back down into
    the consuming project. Cleanest — the change originates where the source lives.
 2. **Push it back from the consuming project.** Commit the edit in the project's
-   `agent/rules/testing/`, then:
+   `waytide/rules/testing/`, then:
 
    ```
-   git subtree push --prefix agent/rules/testing https://github.com/waytide/testing.git master
+   git subtree push --prefix waytide/rules/testing https://github.com/waytide/testing.git master
    ```
 
    This puts your commits on the component repo. It is a **fallback**: `subtree

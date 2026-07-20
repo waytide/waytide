@@ -5,7 +5,7 @@ When the session contains substantive dialogue about the design method — defin
 Two destinations, used together:
 
 - **The running digest** — append each substantive exchange to a dialogue digest observation, preserving the *flow and reasoning* (why a fork was taken), not just conclusions.
-- **Discrete artifacts** — when an exchange yields a binding convention, a working hypothesis, or a decision, also create the appropriate discrete file: a rule (`agent/rules/`), an observation (`agent/observations/`), and/or a one-line decision-log entry (`agent/log/`), per the existing conventions. When the exchange is the deliberation of a feature's hinges, its home is a loop record (`agent/loops/`).
+- **Discrete artifacts** — when an exchange yields a binding convention, a working hypothesis, or a decision, also create the appropriate discrete file: a rule (`waytide/`), an observation (`waytide/observations/`), and/or a one-line decision-log entry (`waytide/log/`), per the existing conventions. When the exchange is the deliberation of a feature's hinges, its home is a loop record (`waytide/loops/`).
 
 **Why:** The design dialogue is too valuable to lose, and conclusions alone omit the reasoning that produced them — the reasoning is often the more valuable part. Recording it automatically removes the dependence on remembering to ask, and keeps the record complete rather than sampled. The harness cannot do this semantically via a settings hook (hooks run shell commands and cannot distill dialogue), so the agent does it as a standing practice.
 

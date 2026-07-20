@@ -5,7 +5,7 @@
 set -e
 
 add() {
-  prefix="agent/rules/$1"
+  prefix="waytide/rules/$1"
   repo="https://github.com/waytide/$2.git"
 
   if [ ! -d "$prefix" ]; then
@@ -26,4 +26,4 @@ add design-by-efferent  design-by-efferent
 # Activate the framework: place the project-root AGENTS.md. Foundation is
 # installed above, so run its AGENTS.md-only mode (it won't re-add itself).
 # The bootstrap logic lives only in foundation/install.sh — not duplicated here.
-sh agent/rules/foundation/install.sh agents-md
+sh waytide/rules/foundation/install.sh agents-md

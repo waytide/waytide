@@ -1,8 +1,8 @@
-# `agent/plans/` — implementation plans that realize a design
+# `waytide/plans/` — implementation plans that realize a design
 
-`agent/plans/` holds **implementation plans**: the sequenced, task-by-task build of a settled direction. A plan turns a design into an ordered set of increments a worker executes one at a time.
+`waytide/plans/` holds **implementation plans**: the sequenced, task-by-task build of a settled direction. A plan turns a design into an ordered set of increments a worker executes one at a time.
 
-- **Relationship to design:** a plan **realizes** an `agent/design/` doc — it names its **Source design** and sequences the build the design settled. Design settles *direction*; the plan settles *order*. A plan may exist without a separate design doc for small work, but when a design exists the plan points back to it.
+- **Relationship to design:** a plan **realizes** an `waytide/design/` doc — it names its **Source design** and sequences the build the design settled. Design settles *direction*; the plan settles *order*. A plan may exist without a separate design doc for small work, but when a design exists the plan points back to it.
 - **Supersession:** a later plan may **supersede** an earlier one, reshaping its pending tasks around a new direction while keeping the earlier plan's **completed tasks as history** (the superseded tasks are marked, not deleted).
 - **Tasks:** each task is a single checkbox (`- [ ] Task N: <name>`) stating the intended **behavior**, not code. Completed tasks carry post-hoc notes inline — reworks, green-on-arrival drops, supersessions — so the plan doubles as a build record.
 - **Format:** the same frontmatter-free markdown as rules; the *document shape* (its sections) is the `plan` package's plan-document-format rule. The filename follows the ISO-8601-UTC prefix convention (see the agent-file-names rule).

@@ -55,5 +55,5 @@ The most important are the last two: these aren't tips in a prompt, they're a pe
 
 ## What makes all of it work
 
-21. **Conventions as files the agent reads every session** — everything above is real files under `agent/`, versioned with the code and read at the start of each session, so the conventions persist, travel with the repo, and hold across sessions rather than living in a prompt or memory.
+21. **Conventions as files the agent reads every session** — everything above is real files under `waytide/`, versioned with the code and read at the start of each session, so the conventions persist, travel with the repo, and hold across sessions rather than living in a prompt or memory.
 22. **Rules install a mindset** — the conventions shape *how* the agent works, not just check its output afterward.

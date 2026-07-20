@@ -4,7 +4,7 @@
 set -e
 
 add() {
-  prefix="agent/rules/$1"
+  prefix="waytide/rules/$1"
   repo="https://github.com/waytide/$1.git"
 
   if [ ! -d "$prefix" ]; then

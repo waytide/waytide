@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install (or refresh) the foundation package AND activate the framework.
 # Foundation is standalone, but it owns the bootstrap: this script places the
-# project-root AGENTS.md that makes agent/rules/ get read at session start.
+# project-root AGENTS.md that makes waytide/rules/ get read at session start.
 # Run from the root of the consuming project.
 #
 # Usage:
@@ -11,7 +11,7 @@
 #                             bootstrap logic lives in one place, not two)
 set -e
 
-prefix="agent/rules/foundation"
+prefix="waytide/rules/foundation"
 repo="https://github.com/waytide/foundation.git"
 
 # The bootstrap section written into the project-root AGENTS.md.
@@ -19,13 +19,21 @@ bootstrap() {
   cat <<'EOF'
 ## Waytide
 
-This project's working conventions live under `agent/`, committed alongside the
-code and read at the start of each session.
+This project's Waytide framework and working conventions live under `waytide/`,
+committed alongside the code and read at the start of each session.
 
-**Read every file in `agent/rules/` at the start of a session and follow them.**
-They override default behavior where they conflict; explicit user instructions
-still win. The framework itself is defined by the `foundation` package's rules
-(`agent/rules/foundation/`) — read those first.
+**At the start of a session, read every rule file under `waytide/rules/` and
+follow them.** These are the installed framework packages — `waytide/rules/foundation/`,
+`waytide/rules/language/`, and so on, including each package's `vocabulary.md`
+glossary (its terms are binding and can't be applied unread) — together with the
+project's own local rules, as loose files in `waytide/rules/`. Read
+`waytide/rules/foundation/` first; it defines the framework. The rules override
+default behavior where they conflict; explicit user instructions still win.
+
+The other directories under `waytide/` hold the project's working state, kept
+separate from the rules — `log/`, `deferred/`, `observations/`, `design/`,
+`plans/`, `sessions/`, `loops/`, `experiments/` — and are worked with as their
+conventions describe, not read as binding rules at session start.
 EOF
 }
 
@@ -33,8 +41,8 @@ EOF
 # absent; when one already exists, asks before appending (never silently); does
 # nothing when it's already there. Idempotent.
 place_agents_md() {
-  if [ -f AGENTS.md ] && grep -q 'agent/rules/' AGENTS.md; then
-    echo "AGENTS.md already points at agent/rules/ — left unchanged."
+  if [ -f AGENTS.md ] && grep -q 'waytide/rules/' AGENTS.md; then
+    echo "AGENTS.md already points at waytide/rules/ — left unchanged."
   elif [ ! -f AGENTS.md ]; then
     # No root AGENTS.md yet — creating one takes nothing away, so do it directly.
     bootstrap > AGENTS.md
@@ -45,7 +53,7 @@ place_agents_md() {
     echo "You already have an AGENTS.md at the project root."
     echo
     echo "Appending the Waytide bootstrap will add a section that tells the agent,"
-    echo "at the start of every session, to read every file in agent/rules/ and follow"
+    echo "at the start of every session, to read every rule file under waytide/rules/ and follow"
     echo "it. Those rules then OVERRIDE the agent's default behavior where they conflict"
     echo "(your explicit instructions still win). Your existing AGENTS.md content is left"
     echo "exactly as it is; the section is added at the end, after a blank line."

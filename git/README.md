@@ -23,11 +23,11 @@ git  →  (nothing — standalone)
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `agent/rules/` tree, committed alongside your code and read at session start:
+Install with `git subtree` — it puts the files in your project's `waytide/rules/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix agent/rules/git https://github.com/waytide/git.git master --squash
-git subtree pull --prefix agent/rules/git https://github.com/waytide/git.git master --squash
+git subtree add  --prefix waytide/rules/git https://github.com/waytide/git.git master --squash
+git subtree pull --prefix waytide/rules/git https://github.com/waytide/git.git master --squash
 ```
 
 It has no dependencies.
@@ -35,7 +35,7 @@ It has no dependencies.
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix agent/rules/git https://github.com/waytide/git.git master --squash
+git subtree pull --prefix waytide/rules/git https://github.com/waytide/git.git master --squash
 ```
 
 
