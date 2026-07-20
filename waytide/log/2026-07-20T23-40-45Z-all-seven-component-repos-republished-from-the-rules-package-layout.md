@@ -1,0 +1,1 @@
+# All seven component repos are republished from the `rules/<package>` split layout by a force-reset (foundation, language, testing, code-ruby, git, plan, design-by-efferent), each history truncated to the post-move commits; every pull is proved, and the composite is pushed to origin
