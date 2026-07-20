@@ -41,10 +41,12 @@ directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path, so a package whose directory path is
 unchanged fast-forwards, while a package whose path moved does not — its next
 publish is a path-change case handled like the `vocabulary`→`language` rename (see
-the Phase B checklist). **Every package moved from its root path into `rules/`, so
-the first publish of each after that move is a path change, not a fast-forward.**
-For an unchanged-path publish, the deterministic split fast-forwards — guard for it
-before pushing:
+the Phase B checklist). **All seven packages moved from their root paths into
+`rules/` and were force-reset onto that layout on 2026-07-20, so every component
+repo now tracks the `rules/<package>` split. The path is stable from here, and
+ordinary publishes fast-forward again — no further reset is due unless a path
+moves once more.** For such an unchanged-path publish, the deterministic split
+fast-forwards — guard for it before pushing:
 
 ```
 git subtree split --prefix=rules/testing -b publish-tmp
