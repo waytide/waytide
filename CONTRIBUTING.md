@@ -5,7 +5,8 @@ How the packages are authored and published. If you only want to *use* a package
 ## Two kinds of repository
 
 **This composite repo is where all authoring happens.** It holds every package as a
-top-level directory under one shared history. Add or refine a rule here. Because
+directory under `rules/` (`rules/foundation`, `rules/testing`, …) under one shared
+history. Add or refine a rule here. Because
 the packages live together, a change spanning several packages is one atomic
 commit, and the whole rule set can be read, grepped, and consolidated in one
 place. This is the source of truth.
@@ -36,12 +37,17 @@ work is added.
 ## Publishing a package
 
 After committing a change here, re-publish the affected package by splitting its
-directory and pushing to the component repo's `master`. For a package whose
-directory path is unchanged (every case except the `vocabulary`→`language`
-rename), the deterministic split fast-forwards — guard for it before pushing:
+directory and pushing to the component repo's `master`. A `git subtree split`'s
+output history depends on the prefix path, so a package whose directory path is
+unchanged fast-forwards, while a package whose path moved does not — its next
+publish is a path-change case handled like the `vocabulary`→`language` rename (see
+the Phase B checklist). **Every package moved from its root path into `rules/`, so
+the first publish of each after that move is a path change, not a fast-forward.**
+For an unchanged-path publish, the deterministic split fast-forwards — guard for it
+before pushing:
 
 ```
-git subtree split --prefix=testing -b publish-tmp
+git subtree split --prefix=rules/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
   "$(git ls-remote https://github.com/waytide/testing.git master | cut -f1)" \
@@ -50,7 +56,7 @@ git push https://github.com/waytide/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`code/ruby` splits from the nested path (`--prefix waytide/rules/code/ruby`) into
+`code/ruby` splits from its nested path (`--prefix rules/code/ruby`) into
 the flat repo name `waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
 the component repo diverged (a direct commit, which the downstream-only rule
 forbids). The full step-by-step for every package — including the one-time repo
