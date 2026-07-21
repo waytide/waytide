@@ -127,3 +127,23 @@ collisions (rename cannot clobber), and all 78 stripped slugs are globally uniqu
 later flatten of the rule files would not name-collide). This deliberately departs
 from the `agent-file-names-use-iso8601-utc-prefix` rule — an experimental deviation,
 isolated on the branch, not merged.
+
+**Step 2 — consolidate the language substitution lexicon.** Per the
+conceptual-cohesion authoring standard settled with the user (a glossary is one
+cohesive unit; its entries are leaves, not separate concepts, so they consolidate,
+while cross-referenced hubs stay separate), the ten language substitution rules —
+`normal-path-not-happy-path`, `say-conform-not-sweep`, `say-convey-not-thread`,
+`say-increment-not-cut`, `say-install-packages-not-vendor`, `say-mediates-not-wrap`,
+`say-obsolete-not-dead`, `say-plainly-not-land`, `say-scenario-not-arm`,
+`sent-to-phrasing` — are consolidated into one `rules/language/word-substitutions.md`
+(title "Word Substitutions"): a table for the mechanical swaps plus prose notes for
+the three with finer distinctions (mediates, obsolete, sent-to). No swap's content
+or nuance is dropped. The ten source files are removed. The language README's "one
+rule each" claim and its duplicated table are replaced with a single listing of the
+lexicon rule. Cross-package back-references are repointed to the Word Substitutions
+rule: the "sent to" phrasing rule (testing `control-prefix-test-vars`,
+`test-name-is-prefix`; code/ruby `no-prepositions`) and "the de-slang rules in
+language" (testing `say-verified-not-green`, `say-protect-not-guard`); a stale
+`mediates-not-wrap` example in foundation `rules-install-a-mindset` is dropped. Hubs
+(`name-literally`, `no-slang`, `solubility`) and the test/commit-domain substitutions
+stay in place. Net: ten files → one, no dangling references.

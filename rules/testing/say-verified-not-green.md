@@ -18,12 +18,12 @@ report. Prefer the direct **"Verified: 75 tests."**
 **Why:** "green" is an oblique, tooling-flavored metaphor — the color of a passing
 CI indicator — that the reader has to map back to the actual meaning: the tests
 pass, the behavior is confirmed. "Verified" states that meaning directly, with no
-mapping to memorize. This is the same literal-naming discipline as the other
-de-slang rules (arm → scenario, cut → increment) and the
+mapping to memorize. This is the same literal-naming discipline as the Word
+Substitutions lexicon (arm → scenario, cut → increment, among others) and the
 name-literally-not-by-analogy rule.
 
 **How to apply:** in prose, commit messages, logs, and loop records, write
 "verified" wherever the impulse is "green" — as a report that tests pass. Applies
 going forward; existing records are not retroactively conformed. Related: the
-name-literally-not-by-analogy rule and the other de-slang rules in `language`,
+name-literally-not-by-analogy rule and the Word Substitutions rule in `language`,
 and the DBE vocabulary.
