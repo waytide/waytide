@@ -56,12 +56,55 @@ Prediction, made before looking:
 
 ## What actually happened
 
-_(recorded against the forecast, after the forecast is committed)_
+Determined by analysis of the working tree at the base commit (no rules file moved).
+
+| Forecast | Outcome |
+|---|---|
+| Rule `.md` files alone do not name-collide | **Held.** 78 rule files, 78 unique basenames — zero basename collisions if gathered into one flat `rules/`. |
+| `README.md` collides | **Confirmed — ×7** (one per package). |
+| Install scripts collide / orphan | **Confirmed** — `install-dependencies.sh` ×4 (language, testing, code/ruby, design-by-efferent) and `install.sh` ×1 (foundation). |
+| `vocabulary.md` is package-scoped | **Confirmed** — ×1 (design-by-efferent). |
+| Distribution breaks (`--prefix=rules/<package>` split) | **Confirmed** structurally — established earlier this session that the publish keys on the per-package directory. Flatten it and there is no slice to split. |
+| Convention's package/local distinction erased | **Confirmed** — `agent-rules-convention` carries package identity in the directory, not the filename. |
+
+**Miss (the informative part):** I forecast "near-unique" filename *prefixes*. In fact
+the timestamp prefix is **not** unique — **77 distinct ISO prefixes for 78 files**:
+`rules/design-by-efferent/2026-07-17T03-44-29Z-what-each-hinge-displays.md` and
+`rules/language/2026-07-17T03-44-29Z-solubility.md` share the second. Their *slugs*
+differ, so full basenames stay unique — but this shows filename uniqueness already
+leans on the slug, not the timestamp. Any flatten scheme that keyed on the timestamp
+alone would collide; one that preserves full basenames is safe.
 
 ## Findings
 
-_(to be written)_
+1. **The rule files themselves are flattenable without collision.** 78 rule `.md`
+   files, 78 unique basenames. The suspicion holds *for the rule files as such*.
+2. **But `rules/` is not only rule files.** It carries per-package scaffolding — 7
+   `README.md`, 4 `install-dependencies.sh` + 1 `install.sh`, 1 `vocabulary.md` —
+   none of which can coexist in a flat directory without renaming or relocation.
+3. **Distribution is the hard blocker.** `git subtree split --prefix=rules/<package>`
+   requires the per-package directory. A flat `rules/` has no per-package slice, so
+   the seven component repos can no longer be produced. Flattening *entails a
+   distribution redesign*, not just a file move.
+4. **Package identity lives in the directory, not the filename.** Flattening erases
+   which package a rule belongs to, and the package-vs-local-rule distinction the
+   convention defines. Recovering it means folding identity into each filename (a
+   renaming scheme) — workable, since names already carry a slug, but a real change.
+5. **Net.** The rule `.md` files *could* be flattened; the packaged, shipped `rules/`
+   tree *could not* be, without (a) relocating/renaming the per-package non-rule
+   files, (b) redesigning distribution away from per-package subtree splits, and (c)
+   re-encoding package identity into filenames.
 
 ## Final state
 
-_(to be declared: affirmed / refuted / inconclusive / abandoned / superseded / suspended)_
+**Determination complete; awaiting the user's declaration** (affirmed is user-declared).
+The verdict turns on which reading of "flatten the rules files" is intended:
+
+- **Narrow — the rule `.md` files alone into one directory:** feasible, no collisions
+  → would be **affirmed**.
+- **Broad — flatten the shipped `rules/` tree in place:** not feasible without a
+  distribution redesign and metadata handling → would be **refuted as infeasible
+  without that redesign**.
+
+No on-disk rules file was changed. Nothing to merge (observation-only); on an
+affirmed narrow reading, these findings are copied to `waytide/log/`.
