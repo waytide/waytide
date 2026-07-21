@@ -108,3 +108,22 @@ The verdict turns on which reading of "flatten the rules files" is intended:
 
 No on-disk rules file was changed. Nothing to merge (observation-only); on an
 affirmed narrow reading, these findings are copied to `waytide/log/`.
+
+## Trial (active — per user direction, 2026-07-21)
+
+After the determination, the user chose to enact a flattening approach directly, so
+the experiment continues as an **active trial** on this branch — no longer
+observation-only. The on-disk change is now explicitly directed, which satisfies the
+`flatten-the-rules-files` deferred item's hard constraint. Steps are taken one at a
+time; `master` stays untouched.
+
+**Step 1 — strip the ISO-8601-UTC timestamp prefixes from the rule filenames.**
+Working copy confirmed clean first. All 78 prefixed rule `.md` files under `rules/`
+were renamed to the slug alone (e.g.
+`2026-07-13T20-54-39Z-subject-first-commit-messages.md` →
+`subject-first-commit-messages.md`); `README.md`, `vocabulary.md`, and the install
+scripts carry no prefix and are untouched. Pre-checks: no within-package slug
+collisions (rename cannot clobber), and all 78 stripped slugs are globally unique (a
+later flatten of the rule files would not name-collide). This deliberately departs
+from the `agent-file-names-use-iso8601-utc-prefix` rule — an experimental deviation,
+isolated on the branch, not merged.
