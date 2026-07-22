@@ -250,5 +250,7 @@ suite applies); the user's merge direction is the confirmation to merge untested
 changes. Merged into `master`; the user ends on `master`. The branch is kept — its
 deletion is a separate confirmation.
 
-**User confirmations recorded:** the affirmation declaration, and the direction to
-merge (2026-07-22).
+**User confirmations recorded:** the affirmation declaration, the direction to merge,
+and the deletion of the experiment branch — confirmed through the AskUserQuestion
+selection UI (the branch was local-only and fully merged; its history lives in
+`master`). All 2026-07-22.
