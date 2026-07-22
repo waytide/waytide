@@ -31,6 +31,8 @@ How language is used: precisely. A word is not a label applied to a thought afte
 | scenario | arm |
 | increment | cut |
 | obsolete | dead |
+| impact | what it costs |
+| examine | decode |
 
 These are general substitutions with no home domain. Terms tied to a domain live with that domain (controls/verified/protect in `testing`; the efferent/actuation/hinge lexicon in `design-by-efferent`).
 
