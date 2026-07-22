@@ -1,6 +1,16 @@
-# Word Substitutions
+# Language — Vocabulary
 
-These are the project's fixed word substitutions — each replaces a slang, imported-jargon, or figurative word with the literal one. They are instances of two principles: name literally, not by analogy, and no slang. When the impulse is a word in the left column, write the right.
+The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
+
+The *principles* that govern word choice stay as rules — `name-literally-not-by-analogy`, `no-slang`, `communicate-plainly-name-the-thing`, `language-is-precise-here`. This file holds the settled lexicon those principles produce.
+
+## Terms
+
+- **solubility** — how readily a unit dissolves into use, judged from the use site; the design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule; it is glossed here only as the vocabulary reference.
+
+## Substitutions
+
+General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`protect` in `testing`.)
 
 | Say | Don't say | What it names |
 |---|---|---|
@@ -21,10 +31,6 @@ These are the project's fixed word substitutions — each replaces a slang, impo
 
 - **mediates.** The canonical form is the bare verb — *`X` mediates `Y`*, not *`X` mediates for `Y`*. "wrap"/"wrapper" reads as a generic decorator and hides the relationship; "mediates" names it exactly — the object stands between a user and the thing it fronts, providing access to it.
 - **obsolete** is the fallback, not the goal — reach for the exact word when there is one: a reference whose target moved is **unresolvable**; a rule no longer in force is **retired** or **superseded**; a branch that can only go one way **has nothing to decide**; an assignment that never happens **never fires**. "dead" over-dramatizes — nothing died, and the drama distorts judgment, making routine tidying read as urgent repair.
-- **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, more mechanism-flavored phrasings for the same thing.
+- **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 
-**Why:** each entry trades a metaphor, an imported convention, or an over-dramatized figure for the plain term the reader needs no mapping to decode. They share one rationale, so they are one concept: a lexicon. Gathering them as a single legible table — rather than a file apiece — makes the whole set scannable and keeps the project's vocabulary decisions in one place.
-
-**How to apply:** when the impulse is a left-column word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the right-column term. When a new substitution is settled, add a row here rather than a new file.
-
-Related: the name-literally-not-by-analogy rule and the no-slang rule (the two principles these instance). The test-domain and commit-domain substitutions stay in their own packages — `say-verified-not-green`, `say-protect-not-guard`, `controls-not-factories` in `testing`, and `commit-says-task-is-done` in `git`.
+**Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.

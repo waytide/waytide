@@ -193,3 +193,26 @@ On the user's judgment, all stay separate — each distinction does work:
 So the substitution lexicon remains the **sole enacted consolidation**. The audit's
 value was to confirm that: an apparent candidate merges only if its distinction is
 truly inert, as the ten swaps were — and these are not.
+
+### Step 3 — adopt the vocabulary.md model (language, testing)
+
+Each package's terminology is gathered into a package `vocabulary.md` (a structural
+file, prefix-exempt) with **Terms** and **Substitutions** sections — generalizing what
+`design-by-efferent` already does. Enacted for two packages:
+
+- `language/vocabulary.md`: Terms (a `solubility` gloss) + Substitutions (the general
+  lexicon). `word-substitutions.md` folds in and is removed.
+- `testing/vocabulary.md`: Terms (a `controls` gloss) + Substitutions (`verified`,
+  `protect`). The two testing swap files fold in and are removed — the two-swap
+  testing lexicon that had been optional, now done for cross-package consistency.
+- `solubility` and `controls` **keep their standalone rules** — each is load-bearing
+  (solubility a methodological principle, controls a hub with application guidance);
+  the vocabulary glosses them and points to the rules rather than absorbing them.
+  (solubility was briefly folded in, then restored on the note that it is a deeper
+  methodological issue than vocabulary — a term with a rule behind it, not a mere
+  lexicon entry.)
+- Conventions updated: `agent-file-names` generalizes the `vocabulary.md` exemption
+  beyond interlocking-glossary packages; the language and testing READMEs point to
+  their `vocabulary.md`, and the "language is not a glossary" framing is dropped.
+- Deferred: `design-by-efferent` already embodies the model; the single-swap packages
+  (`git`, `plan`) and `foundation` / `code/ruby` are not yet given a `vocabulary.md`.

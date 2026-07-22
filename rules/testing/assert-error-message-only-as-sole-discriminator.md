@@ -34,4 +34,4 @@ from more than one site along this actuation's execution?*
 raised under the right condition), not error *presentation*. It is the same line the
 import-define-audit drew — library-specific error classes are "self-evidently the right
 failure and need no message" — made into a precise, testable criterion. Related: the
-"TDD designs, coverage protects" rule and the say-protect rule.
+"TDD designs, coverage protects" rule and the protect substitution (in this package's vocabulary).
