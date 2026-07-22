@@ -2,19 +2,19 @@
 
 These are the project's fixed word substitutions — each replaces a slang, imported-jargon, or figurative word with the literal one. They are instances of two principles: name literally, not by analogy, and no slang. When the impulse is a word in the left column, write the right.
 
-| Don't say | Say | What it names |
+| Say | Don't say | What it names |
 |---|---|---|
-| "happy path" | **normal path** | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", never "sad path" |
-| "sweep" | **conform** (or *reconcile* / *propagate* where more exact) | bringing code or prose into line with a convention |
-| "thread" | **convey** (or plainly "pass … through") | a value passed through layers of methods / APIs |
-| "cut" | **increment** | a bounded slice of scope delivered as a step |
-| "vendor" | **install packages** / "the installed bundle" | a plain installation of gem/package dependencies |
-| "arm" | **scenario** | one variant or case a method or feature handles |
-| "does that land?" | a direct question — **"is that right?"**, "does that work?" | a plain question, not dressed up |
-| "what it costs" | **impact** | the effect or consequences of a change, named neutrally rather than presumed a cost |
-| "wrap" / "wrapper" | **mediates** | an object that provides access to another through itself — see below |
-| "dead" | **obsolete** (or a more exact word) | something no longer in force or in use — see below |
-| "initialized with" / "passed to" | **sent to** | a value passed into a method or initializer — see below |
+| **normal path** | "happy path" | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", never "sad path" |
+| **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention |
+| **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs |
+| **increment** | "cut" | a bounded slice of scope delivered as a step |
+| **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
+| **scenario** | "arm" | one variant or case a method or feature handles |
+| a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up |
+| **impact** | "what it costs" | the effect or consequences of a change, named neutrally rather than presumed a cost |
+| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
+| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below |
+| **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below |
 
 ### Finer distinctions
 
