@@ -18,33 +18,24 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. |
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
 | **cradle** | the constraint | The efferent test, held during generation — it holds the implementation in position without gripping it rigid, steering toward solubility. |
-| **efferent** | the perspective | The use-site view; designing a unit from the outside in. Never "caller". |
-| **actuation** | the act | The invocation of the unit under test — the first efferent reference, written before the implementation. Never "the call". |
+| **efferent** | the perspective | The use-site view; designing a unit from the outside in. |
+| **actuation** | the act | The invocation of the unit under test — the first efferent reference, written before the implementation. |
 | **observation** | the act of reading the outcome | What the test observes about the outcome of the actuation. An **assertion** is the mechanism by which an observation is implemented, not the thing itself. |
 | **load-bearing** | second mark of a hinge | Other work rests on the choice, so a wrong one spreads and sticks: cheap to fix now, costly later. |
 | **solubility** | the quality | The general design-quality term (see the `language` package's solubility rule): how readily a unit dissolves into use. In DBE it is the target of generation and a known hinge — what the efferent view discovers. |
 | **mean-bias** | the AI's failure mode | The AI's pull toward the average of the code it has seen — most of which is poorly designed. It acts on the human too: a single AI proposal put up for approval drags the human's judgment down toward that average. |
 | **origination** | the human's contribution | The human producing a choice rather than ratifying one. The above-the-average answer is originated, not selected — which is what the gates exist to provoke. |
 
-## "Efferent", not "caller"
+## Substitutions
 
-Name the use-site perspective **efferent** — the view that conducts outward from the unit toward its use. Never "caller," "caller-side," "caller-first," or "caller's-eye." The test is the first *efferent reference* to the unit; the interface is designed from the *efferent side*; the view that discovers solubility is the *efferent view*.
+| Say | Don't say | What it names |
+|---|---|---|
+| **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in |
+| **actuation** | "the call" (the call shape, the call site) | the invocation of the unit under test — the first efferent reference |
 
-"Efferent" is the established term for designing a unit from the outside in — from the standpoint of what uses it. "Caller" is a looser, mechanism-flavored synonym. Holding to one term keeps the rules and prose consistent. ("Efferent in, efferent out.") It is the *perspective* word that is always "efferent."
+### Finer distinctions
 
-## "Actuation", not "the call"
-
-The invocation of the unit under test — what the test actuates, the first efferent reference — is the **actuation**. Not "the call," "the call shape," or "the call site." Say **actuation** (and "actuation shape"; use "use site" for where it is invoked).
-
-The verb "to call a method" in a pure-mechanism sense, and "call it X" meaning *name* it, are different uses and not covered.
-
-## "Design By Efferent", not "efferent-oriented design"
-
-Use **Design By Efferent** in full, or **DBE** as shorthand, wherever you name the methodology. The three capitalized words give the acronym: **D**esign **B**y **E**fferent.
-
-The name states the essence: it is a **design** discipline (tests drive design — see the "TDD designs, coverage protects" rule), which is why the name says *Design*, not "Development"; and the design is driven **by the efferent** — the use-site view. The **actuation**, the first efferent reference to the unit, is written before any implementation, forcing the interface outside-in.
-
-Do not name the methodology "efferent-oriented design" (retired), and do not name it "test-driven development" or "development" — **TDD is the genus DBE belongs to; DBE is its name.** The lexicon term **efferent** (the use-site perspective) is unaffected by the retirement; only the *name of the methodology* changed.
+- **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 
 ## The two results the gates rest on
 
@@ -103,9 +94,6 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 - **asymmetric** → **load-bearing**
 - **capability-independent** → state it plainly (subtlety is about the design, not the model)
 - **non-hinge** → **mechanical**
-- **caller** → **efferent**
-- **the call** (for the invocation of the unit under test) → **actuation**
-- **efferent-oriented design** (as the methodology's name) → **Design By Efferent** / **DBE**
 
 **Why:** The terminology is the conveyable output of this work — it is how the approach is taught to other engineers. Scattering it across observations and a digest left no authoritative source and risked drift; one binding glossary keeps usage consistent and avoids the overloaded or academic words this method rejects (e.g. discriminator, intrinsic, "given", "non-hinge"). Each term was chosen for solubility: plain, positive where possible, and free of programming collisions. Two competing "the name" declarations would drift, so DBE is the single canonical name.
 
