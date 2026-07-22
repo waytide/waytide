@@ -17,9 +17,9 @@ The `waytide/` directory holds this project's own working state — `log/`,
 `deferred/`, `observations/`, `design/`, `plans/`, `sessions/`, `loops/`,
 `experiments/` — worked with as their conventions describe, not read as binding
 rules at session start. (In a consuming project the installed packages live under
-`waytide/rules/`; here in the source they are at `rules/`, and `waytide/` carries
+`waytide/packages/`; here in the source they are at `rules/`, and `waytide/` carries
 working state only.)
 
 **Do not run `rules/foundation/install.sh` in this repo.** It installs the packages
-into a *consuming* project and generates that project's `waytide/rules/` AGENTS.md.
+into a *consuming* project and generates that project's `waytide/packages/` AGENTS.md.
 Running it here would append the consuming-project bootstrap to this file.

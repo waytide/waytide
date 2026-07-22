@@ -7,8 +7,9 @@ they are committed to git alongside the code and read at the start of each sessi
 rather than recalled. Foundation defines the four core artifact directories and how
 to work with them; each has its own rule in this package:
 
-- **`waytide/rules/`**. Binding project rules, one per file, read and followed every
-  session — the installed packages and any loose local rules.
+- **`waytide/packages/`** and **`waytide/rules/`**. Binding project rules, one per
+  file, read and followed every session — the installed framework packages in
+  `waytide/packages/`, the project's own local rules in `waytide/rules/`.
 - **`waytide/observations/`**. Working hypotheses and rule-candidates still under
   discovery; not yet binding.
 - **`waytide/deferred/`**. Design changes postponed until the current task finishes;
@@ -51,13 +52,13 @@ Foundation carries an **`install.sh`** — the only package that does, because i
 sh install.sh
 ```
 
-It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/rules/` at the start of every session. That root file is what actually activates the framework: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
+It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/packages/` and `waytide/rules/` at the start of every session. That root file is what actually activates the framework: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
 
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the framework stays inactive:
 
 ```
-git subtree add  --prefix waytide/rules/foundation https://github.com/waytide/foundation.git master --squash
-git subtree pull --prefix waytide/rules/foundation https://github.com/waytide/foundation.git master --squash
+git subtree add  --prefix waytide/packages/foundation https://github.com/waytide/foundation.git master --squash
+git subtree pull --prefix waytide/packages/foundation https://github.com/waytide/foundation.git master --squash
 ```
 
 This package has no dependencies. (The composite `install-all.sh` installs every package and runs this same bootstrap for you.)
@@ -65,7 +66,7 @@ This package has no dependencies. (The composite `install-all.sh` installs every
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/rules/foundation https://github.com/waytide/foundation.git master --squash
+git subtree pull --prefix waytide/packages/foundation https://github.com/waytide/foundation.git master --squash
 ```
 
 

@@ -1,0 +1,1 @@
+# The consuming-project install target is renamed from `waytide/rules/` to `waytide/packages/` (the installed framework packages), and `waytide/rules/` is repurposed for the project's own local rules; both are read at session start — separating installed content from the project's own work
