@@ -42,12 +42,11 @@ output history depends on the prefix path, so a package whose directory path is
 unchanged fast-forwards, while a package whose path moved does not — its next
 publish is a path-change case handled like the `vocabulary`→`language` rename (see
 the Phase B checklist). **The composite's package directory has moved twice: to
-`rules/` (force-reset 2026-07-20), then to `packages/` (2026-07-22). Each move
-changes the split prefix, so the component repos — still tracking the
-`rules/<package>` split — must be force-reset onto the `packages/<package>` split on
-the first publish after the second move. After that reset, the path is stable and
-ordinary publishes fast-forward again.** For an unchanged-path publish, the
-deterministic split fast-forwards — guard for it before pushing:
+`rules/` (force-reset 2026-07-20), then to `packages/` (force-reset 2026-07-22).
+Every component repo now tracks the `packages/<package>` split, the path is stable,
+and ordinary publishes fast-forward again — no further reset is due unless a path
+moves once more.** For such an unchanged-path publish, the deterministic split
+fast-forwards — guard for it before pushing:
 
 ```
 git subtree split --prefix=packages/testing -b publish-tmp
