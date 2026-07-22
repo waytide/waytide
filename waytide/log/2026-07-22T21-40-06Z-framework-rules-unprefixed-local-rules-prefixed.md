@@ -1,0 +1,1 @@
+# The datetime-prefix rule distinguishes the two kinds of rule: framework/package rules carry no prefix (named for what they say), while a consuming project's own local rules take the prefix, like its other dated artifacts. Corrects agent-file-names, which had wrongly said all rules under waytide/rules/ are unprefixed

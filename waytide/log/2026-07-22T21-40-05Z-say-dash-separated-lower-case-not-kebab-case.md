@@ -1,0 +1,1 @@
+# Say "dash-separated, lower-case", not "kebab-case", and "name", not "slug" — both are cutesy slang that the framework's own no-slang and name-literally rules reject; recorded as substitutions and conformed across the rules

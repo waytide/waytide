@@ -1,13 +1,20 @@
-# Working-state files in `waytide/` take an ISO 8601 UTC datetime prefix; rule files do not
+# Dated artifacts in `waytide/` take an ISO 8601 UTC datetime prefix; framework rules do not
 
-The **working-state** artifacts under `waytide/` — the decision log (`log/`), `deferred/`, `observations/`, and the work-artifact directories the project contributes (`plans/`, `design/`, `experiments/`, `loops/`) — are named with an **ISO 8601 datetime normalized to UTC**, followed by a kebab-case slug and `.md`. They are dated events, and the prefix orders them chronologically.
+The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
-**Rule files do not take the prefix.** A rule in `waytide/rules/…` is named by a plain kebab-case slug alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A rule is a durable convention identified by *what it says*, not by when it was written; a datetime on it is noise and buries the rule's name. (This is the norm established by the rules-files-flattening experiment; before it, rules carried the prefix.)
+- The **working-state** directories: the decision log (`log/`), `deferred/`, `observations/`, and the work-artifact directories (`plans/`, `design/`, `experiments/`, `loops/`).
+- A consuming project's **own local rules** — the rules that project adds to its `waytide/rules/`. A local rule is a dated decision in that project's history.
 
-**Format** (working-state artifacts): `YYYY-MM-DDTHH-MM-SSZ-<kebab-slug>.md` — date and time joined by `T`, the trailing `Z` marking UTC, and the time's colons written as hyphens for filesystem safety (e.g. `2026-07-01T20-40-00Z-some-slug.md`).
+The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-separated, lower-case name and `.md`.
 
-**Package files are all unprefixed.** A package (`waytide/rules/<package>/`) carries only unprefixed files: its rule files (kebab slugs), and its structural files — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer). None take a datetime prefix; a package ships no dated working-state artifacts (its development decisions are recorded in Waytide's own `waytide/log/`, not distributed).
+**Format:** `YYYY-MM-DDTHH-MM-SSZ-<name>.md` — date and time joined by `T`, the trailing `Z` marking UTC, and the time's colons written as dashes for filesystem safety (e.g. `2026-07-01T20-40-00Z-some-name.md`). The name is dash-separated and lower-case.
 
-**Why:** the working-state artifacts are a chronological record — a log of decisions, a queue of deferrals, dated experiments — so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. Rules are not a chronology; they are the current, durable set of conventions, so each is named for what it says.
+**Framework rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A framework rule is a curated, durable convention identified by *what it says*, not by when it was written; a datetime on it is noise and buries the rule's name.
 
-**How to apply:** name every new working-state `waytide/` artifact (`log/`, `deferred/`, `observations/`, `plans/`, `design/`, `experiments/`, `loops/`) with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC prefix. Name a rule, and a package's structural files, by a plain kebab-case slug — no prefix.
+That is the distinction between the two kinds of rule: a **framework rule** ships in a package and is timeless, so no prefix; a project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and deferred items.
+
+**Package structural files** — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer) — take no prefix either; they are named by what they are.
+
+**Why:** the dated artifacts are a chronological record, so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. Framework rules are not a chronology; they are the current, durable set of conventions, so each is named for what it says.
+
+**How to apply:** prefix every new working-state artifact, and every local rule a project adds, with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Name a framework package's rules, and its structural files, by a dash-separated, lower-case name — no prefix.

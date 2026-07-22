@@ -14,7 +14,7 @@ displace (the log stays one line per decision).
 
 **Format:**
 - Filename per the ISO 8601 UTC datetime prefix convention:
-  `YYYY-MM-DDTHH-MM-SSZ-<feature-slug>.md`.
+  `YYYY-MM-DDTHH-MM-SSZ-<feature-name>.md`.
 - A `# Loop record — <feature>` title and a one-paragraph summary of the feature.
 - One section per **pass**, in order. Each pass records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
