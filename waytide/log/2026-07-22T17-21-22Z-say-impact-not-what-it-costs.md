@@ -1,0 +1,1 @@
+# Say "impact", not "what it costs" — added to the language Word Substitutions lexicon as a general, domain-less swap; "impact" names a change's effects or consequences neutrally, where "what it costs" presumes a cost

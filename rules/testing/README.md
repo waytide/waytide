@@ -17,7 +17,7 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 - Assert an error's message only when it is the sole way to confirm the correct error was raised.
 - Don't test the platform — a transparent pass-through has nothing of ours to protect.
 
-**Substitutions** (testing domain): verified (not green), protect (not guard, for a test).
+**Vocabulary** (`vocabulary.md`): the term **controls**, and the testing-domain substitutions — verified (not green), protect (not guard, for a test).
 
 **Commands**: `test-report` (classify the suite) and `test-tree` (print a normalized de-duped context tree).
 

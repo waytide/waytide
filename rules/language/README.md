@@ -13,30 +13,12 @@ How language is used: precisely. A word is not a label applied to a thought afte
 - **communicate-plainly-name-the-thing**. In explanation and conversation, use plain words and the real names of things; no invented labels ("tier 1") or compressed jargon offered as if already shared.
 - **expand-abbreviations-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses); don't use unexplained shorthand.
 
-**One general term-with-meaning**
+**Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
-- **solubility**. How readily a unit dissolves into use; usable and transparent from the standpoint of what uses it, as simple as it should be and no simpler. The quality the name-literally test serves, and the criterion a design is judged against. Methods that build on it (e.g. `design-by-efferent`, where it is a hinge) reference it here rather than redefining it.
+- **terms** — `solubility` (how readily a unit dissolves into use — the design-quality criterion; a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
+- **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, caller → efferent, the call → actuation, and the rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`protect` in `testing`; the hinge/cradle/loop lexicon in `design-by-efferent`).
 
-**The substitutions**. One rule each, every one an instance of the premise: a loose word was carrying a loose concept, and the exact word took its place.
-
-| Say | Not |
-|---|---|
-| normal path | happy path |
-| install packages | vendor |
-| convey | thread |
-| sent to | initialized with / passed to |
-| mediates | wrap / wrapper |
-| conform | sweep |
-| plainly ("is that right?") | "does that land?" |
-| scenario | arm |
-| increment | cut |
-| obsolete | dead |
-| impact | what it costs |
-| examine | decode |
-
-These are general substitutions with no home domain. Terms tied to a domain live with that domain (controls/verified/protect in `testing`; the efferent/actuation/hinge lexicon in `design-by-efferent`).
-
-**This package is not a glossary.** It governs how language is used everywhere. A package with a cohesive lexicon of interlocking terms carries it as its own `vocabulary.md` — `design-by-efferent` is the one that does.
+Every package keeps its terminology this way — its terms and substitutions in its own `vocabulary.md`, the model `design-by-efferent` established. The *principles* that govern word choice stay as the rules above.
 
 Includes `foundation`.
 
