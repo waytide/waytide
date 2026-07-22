@@ -1,0 +1,1 @@
+# Rule files carry no datetime prefix — a rule is named by a plain kebab slug (subject-first-commit-messages.md); the ISO-8601-UTC prefix is kept only for working-state artifacts (log, deferred, experiments, …). Established by the affirmed rules-files-flattening experiment; agent-file-names updated

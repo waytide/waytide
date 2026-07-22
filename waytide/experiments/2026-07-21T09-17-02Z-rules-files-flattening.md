@@ -95,9 +95,9 @@ alone would collide; one that preserves full basenames is safe.
    files, (b) redesigning distribution away from per-package subtree splits, and (c)
    re-encoding package identity into filenames.
 
-## Final state
+## Determination (observation phase)
 
-**Determination complete; awaiting the user's declaration** (affirmed is user-declared).
+The observation phase's verdict, before the experiment continued as an active trial.
 The verdict turns on which reading of "flatten the rules files" is intended:
 
 - **Narrow — the rule `.md` files alone into one directory:** feasible, no collisions
@@ -106,8 +106,9 @@ The verdict turns on which reading of "flatten the rules files" is intended:
   distribution redesign and metadata handling → would be **refuted as infeasible
   without that redesign**.
 
-No on-disk rules file was changed. Nothing to merge (observation-only); on an
-affirmed narrow reading, these findings are copied to `waytide/log/`.
+At this point no on-disk rules file had changed. The experiment then continued as an
+active trial (the Trial steps below), and was concluded **Affirmed** — see the
+Conclusion at the end.
 
 ## Trial (active — per user direction, 2026-07-21)
 
@@ -125,8 +126,10 @@ were renamed to the slug alone (e.g.
 scripts carry no prefix and are untouched. Pre-checks: no within-package slug
 collisions (rename cannot clobber), and all 78 stripped slugs are globally unique (a
 later flatten of the rule files would not name-collide). This deliberately departs
-from the `agent-file-names-use-iso8601-utc-prefix` rule — an experimental deviation,
-isolated on the branch, not merged.
+from the `agent-file-names-use-iso8601-utc-prefix` rule — at this point an
+experimental deviation, isolated on the branch. On the experiment's affirmation this
+becomes the framework norm (see the Conclusion), and `agent-file-names` is updated to
+state it.
 
 **Step 2 — consolidate the language substitution lexicon.** Per the
 conceptual-cohesion authoring standard settled with the user (a glossary is one
@@ -223,3 +226,29 @@ file, prefix-exempt) with **Terms** and **Substitutions** sections — generaliz
   glosses them, points to `language`, and keeps the DBE-specific specialization
   (actuation written before implementation, the first gate). DBE's own `## Substitutions`
   section — briefly created for these two — is removed, as they were its only swaps.
+
+## Conclusion — Affirmed (2026-07-22)
+
+The user declared the experiment **Affirmed** and directed the merge to `master`.
+
+What "flatten the rules files" resolved to, affirmed as the new framework norm:
+
+- **Rule filenames carry no datetime prefix.** A rule is named by a plain kebab slug;
+  the datetime prefix is kept for working-state artifacts (`log/`, `deferred/`,
+  `experiments/`, …). `agent-file-names` is updated to state this. Abandoning the
+  experiment would instead have kept the prefix on rules.
+- **The substitution lexicon is consolidated**, and the **`vocabulary.md` model**
+  (Terms + Substitutions per package) is adopted for `language` and `testing`;
+  `design-by-efferent` conformed.
+- **`efferent` and `actuation`** are promoted to `language` as general design
+  vocabulary (the `solubility` pattern), with DBE specializing them.
+- **No rule merges beyond the lexicon** — the audit's apparent candidates each keep a
+  load-bearing distinction and stay separate.
+
+**Merge:** the experiment produced rule and documentation changes (no code, so no test
+suite applies); the user's merge direction is the confirmation to merge untested
+changes. Merged into `master`; the user ends on `master`. The branch is kept — its
+deletion is a separate confirmation.
+
+**User confirmations recorded:** the affirmation declaration, and the direction to
+merge (2026-07-22).

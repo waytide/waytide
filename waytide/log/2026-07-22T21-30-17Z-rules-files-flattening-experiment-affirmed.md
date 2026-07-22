@@ -1,0 +1,1 @@
+# The rules-files-flattening experiment is affirmed: the per-package vocabulary.md model (Terms + Substitutions) is adopted for language and testing (DBE conformed), the substitution lexicon is consolidated, efferent and actuation are promoted to language as general design vocabulary, and no rules merge beyond the lexicon (each apparent candidate keeps a load-bearing distinction)
