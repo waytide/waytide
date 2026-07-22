@@ -1,15 +1,12 @@
-# Author in the files
+# Record a rule's author in the file
 
-Lead raised by the user: "author in the files." Parked for later.
+Record the **author** — the contributor — in each rule file, so a rule's authorship is traceable. Especially valuable for a project with multiple contributors, where the traceability of rules — who authored a new rule, and who changed an established one — is essential to the engineering process.
 
-**Scope to confirm on initiation:** the exact intent is not yet settled. Likely
-readings, to confirm with the user:
-- The framework's content (rules, vocabulary, substitutions) is authored by editing
-  the files directly — the file *is* the interface, no separate authoring layer.
-- Or a specific place/way a consuming project authors its own rules and vocabulary
-  (in `waytide/rules/` and its own `vocabulary.md`), stated as a convention.
-- Or something narrower not captured here.
+**To settle on initiation:**
+- **What** is recorded — the author of the original rule, and/or the author of each change; a name/handle, and a date.
+- **Where and how** — the rules are frontmatter-free markdown, so likely an inline attribution line rather than YAML frontmatter; reconcile with the `agent-rules-convention` format.
+- **Why in-file rather than git history** — a package is installed into a consuming project by `git subtree`, which does **not** carry the composite repo's per-file history into that project. So `git blame`/`log` in a consuming project cannot show who authored a rule; an in-file record travels with the file. Confirm this is the motivation.
 
-Confirm which before acting.
+**Why:** in a multi-contributor project, who authored or changed a rule is part of the engineering process — rules are the durable conventions, and their provenance matters for review, accountability, and understanding intent.
 
-**Gated on:** nothing specific — a lead to settle when picked up.
+**Gated on:** nothing specific — settle the format when initiated.
