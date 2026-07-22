@@ -15,8 +15,8 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 **Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
-- **solubility** (a term). How readily a unit dissolves into use; usable and transparent from the standpoint of what uses it, as simple as it should be and no simpler. The quality the name-literally test serves, and the criterion a design is judged against.
-- **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, dead → obsolete, and the rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`protect` in `testing`; the efferent/actuation/hinge lexicon in `design-by-efferent`).
+- **terms** — `solubility` (how readily a unit dissolves into use — the design-quality criterion; a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
+- **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, caller → efferent, the call → actuation, and the rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`protect` in `testing`; the hinge/cradle/loop lexicon in `design-by-efferent`).
 
 Every package keeps its terminology this way — its terms and substitutions in its own `vocabulary.md`, the model `design-by-efferent` established. The *principles* that govern word choice stay as the rules above.
 

@@ -216,3 +216,10 @@ file, prefix-exempt) with **Terms** and **Substitutions** sections — generaliz
   their `vocabulary.md`, and the "language is not a glossary" framing is dropped.
 - Deferred: `design-by-efferent` already embodies the model; the single-swap packages
   (`git`, `plan`) and `foundation` / `code/ruby` are not yet given a `vocabulary.md`.
+- **`efferent` and `actuation` promoted to `language`.** They are general design
+  vocabulary — more fundamental than DBE (which is *named* after `efferent` but does
+  not own it). So, like `solubility`, their definitions and the `caller→efferent` /
+  `the call→actuation` substitutions move to `language/vocabulary.md`; DBE's glossary
+  glosses them, points to `language`, and keeps the DBE-specific specialization
+  (actuation written before implementation, the first gate). DBE's own `## Substitutions`
+  section — briefly created for these two — is removed, as they were its only swaps.

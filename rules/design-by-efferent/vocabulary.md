@@ -18,24 +18,13 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. |
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
 | **cradle** | the constraint | The efferent test, held during generation — it holds the implementation in position without gripping it rigid, steering toward solubility. |
-| **efferent** | the perspective | The use-site view; designing a unit from the outside in. |
-| **actuation** | the act | The invocation of the unit under test — the first efferent reference, written before the implementation. |
+| **efferent** | the perspective | The use-site view; designing a unit from the outside in (see the `language` vocabulary — the efferent term). DBE is the method built on designing from this view: the test is the first efferent reference, the interface designed from the efferent side. |
+| **actuation** | the act | The invocation of the unit under test — the first efferent reference (see the `language` vocabulary — the actuation term). In DBE it is written before any implementation, forcing the interface outside-in, and is the first and highest-leverage gate. |
 | **observation** | the act of reading the outcome | What the test observes about the outcome of the actuation. An **assertion** is the mechanism by which an observation is implemented, not the thing itself. |
 | **load-bearing** | second mark of a hinge | Other work rests on the choice, so a wrong one spreads and sticks: cheap to fix now, costly later. |
 | **solubility** | the quality | The general design-quality term (see the `language` package's solubility rule): how readily a unit dissolves into use. In DBE it is the target of generation and a known hinge — what the efferent view discovers. |
 | **mean-bias** | the AI's failure mode | The AI's pull toward the average of the code it has seen — most of which is poorly designed. It acts on the human too: a single AI proposal put up for approval drags the human's judgment down toward that average. |
 | **origination** | the human's contribution | The human producing a choice rather than ratifying one. The above-the-average answer is originated, not selected — which is what the gates exist to provoke. |
-
-## Substitutions
-
-| Say | Don't say | What it names |
-|---|---|---|
-| **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in |
-| **actuation** | "the call" (the call shape, the call site) | the invocation of the unit under test — the first efferent reference |
-
-### Finer distinctions
-
-- **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 
 ## The two results the gates rest on
 
