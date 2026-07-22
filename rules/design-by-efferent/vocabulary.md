@@ -6,7 +6,7 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 
 > The AI **generates** straight through, and **gates** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
 
-## The terms
+## Terms
 
 | Term | Role | Meaning |
 |---|---|---|
