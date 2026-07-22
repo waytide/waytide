@@ -25,6 +25,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up |
 | **impact** | "what it costs" | the effect or consequences of a change, named neutrally rather than presumed a cost |
 | **examine** | "decode" | working through or inspecting something to understand it |
+| **initiate** | "pick up" | beginning work on something — starting a task, a deferred item, or other queued work |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
 | **name** | "slug" | the descriptive part of a filename |
 | **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
