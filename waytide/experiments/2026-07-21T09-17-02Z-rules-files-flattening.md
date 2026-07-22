@@ -169,3 +169,27 @@ consolidates. The lexicon is the **sole** Tier-1 consolidation. The rest of the 
 set is already at the right granularity — one concept per file — so for the rules,
 "flatten" means the substitutions specifically, not a broad merge. Consolidation is
 the exception, not the direction.
+
+### Audit and reaffirmation (2026-07-22)
+
+A deliberate duplication-and-fragmentation audit of every package — the hunt the
+earlier cohesion pass had not done — surfaced apparent candidates that closer
+reading made look real: the code/ruby `build` + `robustness` pair (the
+strict-core/forgiving-perimeter core stated near-verbatim in both) and the DBE
+`show-the-test` / `show-feature-test-output` pair (the feature-output rule a
+near-superset). The two testing substitutions (`verified`, `protect`) also parallel
+the lexicon.
+
+On the user's judgment, all stay separate — each distinction does work:
+
+- **build + robustness** touch two separate matters — the two construction paths
+  (`build` normalizes, `new` is strict) versus where robustness lives (the general
+  class-interface principle).
+- **show-the-test pair** — one displays the test *implementation* (the test source,
+  the cradle), the other the test *output*. Distinct matters.
+- **testing substitutions** — distinct corrections, kept as their own files; a thin
+  testing lexicon is optional and deferred.
+
+So the substitution lexicon remains the **sole enacted consolidation**. The audit's
+value was to confirm that: an apparent candidate merges only if its distinction is
+truly inert, as the ten swaps were — and these are not.
