@@ -11,6 +11,7 @@ These are the project's fixed word substitutions — each replaces a slang, impo
 | "vendor" | **install packages** / "the installed bundle" | a plain installation of gem/package dependencies |
 | "arm" | **scenario** | one variant or case a method or feature handles |
 | "does that land?" | a direct question — **"is that right?"**, "does that work?" | a plain question, not dressed up |
+| "what it costs" | **impact** | the effect or consequences of a change, named neutrally rather than presumed a cost |
 | "wrap" / "wrapper" | **mediates** | an object that provides access to another through itself — see below |
 | "dead" | **obsolete** (or a more exact word) | something no longer in force or in use — see below |
 | "initialized with" / "passed to" | **sent to** | a value passed into a method or initializer — see below |
