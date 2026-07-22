@@ -5,7 +5,7 @@ How the packages are authored and published. If you only want to *use* a package
 ## Two kinds of repository
 
 **This composite repo is where all authoring happens.** It holds every package as a
-directory under `packages/` (`packages/foundation`, `packages/testing`, …) under one shared
+directory under `framework/` (`framework/foundation`, `framework/testing`, …) under one shared
 history. Add or refine a rule here. Because
 the packages live together, a change spanning several packages is one atomic
 commit, and the whole rule set can be read, grepped, and consolidated in one
@@ -41,15 +41,16 @@ directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path, so a package whose directory path is
 unchanged fast-forwards, while a package whose path moved does not — its next
 publish is a path-change case handled like the `vocabulary`→`language` rename (see
-the Phase B checklist). **The composite's package directory has moved twice: to
-`rules/` (force-reset 2026-07-20), then to `packages/` (force-reset 2026-07-22).
-Every component repo now tracks the `packages/<package>` split, the path is stable,
-and ordinary publishes fast-forward again — no further reset is due unless a path
-moves once more.** For such an unchanged-path publish, the deterministic split
-fast-forwards — guard for it before pushing:
+the Phase B checklist). **The composite's package directory settled at `framework/`
+after a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
+(2026-07-22) — each a force-reset, since a `git subtree split`'s history depends on
+the prefix path. The component repos now track the `framework/<package>` split, the
+path is stable, and ordinary publishes fast-forward again — no further reset is due
+unless a path moves once more.** For such an unchanged-path publish, the
+deterministic split fast-forwards — guard for it before pushing:
 
 ```
-git subtree split --prefix=packages/testing -b publish-tmp
+git subtree split --prefix=framework/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
   "$(git ls-remote https://github.com/waytide/testing.git master | cut -f1)" \
@@ -58,7 +59,7 @@ git push https://github.com/waytide/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`code/ruby` splits from its nested path (`--prefix packages/code/ruby`) into
+`code/ruby` splits from its nested path (`--prefix framework/code/ruby`) into
 the flat repo name `waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
 the component repo diverged (a direct commit, which the downstream-only rule
 forbids). The full step-by-step for every package — including the one-time repo
@@ -77,10 +78,10 @@ to lose it. Two ways to capture it, preferred first:
 1. **Make the fix in the composite repo** and `git subtree pull` it back down into
    the consuming project. Cleanest — the change originates where the source lives.
 2. **Push it back from the consuming project.** Commit the edit in the project's
-   `waytide/packages/testing/`, then:
+   `waytide/framework/testing/`, then:
 
    ```
-   git subtree push --prefix waytide/packages/testing https://github.com/waytide/testing.git master
+   git subtree push --prefix waytide/framework/testing https://github.com/waytide/testing.git master
    ```
 
    This puts your commits on the component repo. It is a **fallback**: `subtree

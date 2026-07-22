@@ -1,0 +1,1 @@
+# The directory holding installed packages is renamed from packages/ to framework/ — waytide/framework/ in a consuming project, framework/ in the composite; the installed content is the framework, named for what it is. waytide/rules/ (the project's own local rules) is unchanged

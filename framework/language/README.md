@@ -28,19 +28,19 @@ language  →  foundation
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/packages/` tree, committed alongside your code and read at session start:
+Install with `git subtree` — it puts the files in your project's `waytide/framework/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/packages/language https://github.com/waytide/language.git master --squash
-git subtree pull --prefix waytide/packages/language https://github.com/waytide/language.git master --squash
+git subtree add  --prefix waytide/framework/language https://github.com/waytide/language.git master --squash
+git subtree pull --prefix waytide/framework/language https://github.com/waytide/language.git master --squash
 ```
 
-It includes `foundation` — install that too, or run `sh waytide/packages/language/install-dependencies.sh` from your project root.
+It includes `foundation` — install that too, or run `sh waytide/framework/language/install-dependencies.sh` from your project root.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/packages/language https://github.com/waytide/language.git master --squash
+git subtree pull --prefix waytide/framework/language https://github.com/waytide/language.git master --squash
 ```
 
 

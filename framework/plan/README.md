@@ -23,11 +23,11 @@ plan  →  (nothing — standalone)
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/packages/` tree, committed alongside your code and read at session start:
+Install with `git subtree` — it puts the files in your project's `waytide/framework/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/packages/plan https://github.com/waytide/plan.git master --squash
-git subtree pull --prefix waytide/packages/plan https://github.com/waytide/plan.git master --squash
+git subtree add  --prefix waytide/framework/plan https://github.com/waytide/plan.git master --squash
+git subtree pull --prefix waytide/framework/plan https://github.com/waytide/plan.git master --squash
 ```
 
 It has no dependencies.
@@ -35,7 +35,7 @@ It has no dependencies.
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/packages/plan https://github.com/waytide/plan.git master --squash
+git subtree pull --prefix waytide/framework/plan https://github.com/waytide/plan.git master --squash
 ```
 
 

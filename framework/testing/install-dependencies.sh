@@ -4,8 +4,8 @@
 set -e
 
 add() {
-  prefix="waytide/packages/$1"
-  repo="https://github.com/eventide-project/agent-norms-$1.git"
+  prefix="waytide/framework/$1"
+  repo="https://github.com/waytide/$1.git"
 
   if [ ! -d "$prefix" ]; then
     git subtree add --prefix "$prefix" "$repo" master --squash
