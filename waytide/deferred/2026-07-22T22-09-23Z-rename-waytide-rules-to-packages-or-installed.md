@@ -4,7 +4,7 @@ In a consuming project, the installed framework packages land in `waytide/rules/
 
 **Options to choose between:** `waytide/packages/` or `waytide/installed/`.
 
-**Scope when picked up (touches many places):**
+**Scope when initiated (touches many places):**
 - `install-all.sh` (the `add` function's `prefix="waytide/rules/$1"`).
 - Every package README's install instructions (`git subtree add --prefix waytide/rules/<package>`).
 - `foundation/install.sh` — its `prefix` and the AGENTS.md bootstrap text it writes.

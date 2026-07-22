@@ -9,9 +9,9 @@ on disk — **unless and until the user directs it**. Any flattening is understo
 change how the rules are represented or worked with in some other way first; the
 physical file layout is not to be touched without an explicit instruction to do so.
 Treat a change to the on-disk layout as its own separately-authorized step, never a
-side effect of picking this item up.
+side effect of initiating this item.
 
-**Scope to confirm on pickup:** the exact flattening intended is not yet settled.
+**Scope to confirm on initiation:** the exact flattening intended is not yet settled.
 Most likely it means collapsing the per-package nesting under `rules/` so the rule
 files no longer sit inside a package subdirectory (`rules/foundation/…`,
 `rules/testing/…`) but flat under `rules/` — but it could instead mean flattening
