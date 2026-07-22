@@ -147,3 +147,25 @@ language" (testing `say-verified-not-green`, `say-protect-not-guard`); a stale
 `mediates-not-wrap` example in foundation `rules-install-a-mindset` is dropped. Hubs
 (`name-literally`, `no-slang`, `solubility`) and the test/commit-domain substitutions
 stay in place. Net: ten files → one, no dangling references.
+
+### Finding — consolidation is the exception, not the direction
+
+Reviewing the remaining Tier-1 candidates sharpened the criterion: **consolidate
+only when the distinction between the rules is inert.** The substitution lexicon
+qualified because its ten entries are independent swaps with no interplay — a flat
+glossary, nothing lost by gathering them. The other Tier-1 candidates were declined,
+because their distinctions do real work:
+
+- `show-the-test-after-implementing` vs.
+  `show-feature-test-output-after-implementation-hinge` — the distinction *is* the
+  content: **what** to show (the just-satisfied test) vs. the **whole feature's**
+  output, at their own moments. Kept separate.
+- `build-normalizes-new-strict` vs. `robustness-lives-at-the-class-interface` — one
+  is a specific construction mechanic, the other a general design principle reaching
+  past construction. Kept separate.
+
+So a **useful (load-bearing) distinction earns its file**; only an inert distinction
+consolidates. The lexicon is the **sole** Tier-1 consolidation. The rest of the rule
+set is already at the right granularity — one concept per file — so for the rules,
+"flatten" means the substitutions specifically, not a broad merge. Consolidation is
+the exception, not the direction.
