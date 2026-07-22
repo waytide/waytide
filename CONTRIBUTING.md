@@ -5,7 +5,7 @@ How the packages are authored and published. If you only want to *use* a package
 ## Two kinds of repository
 
 **This composite repo is where all authoring happens.** It holds every package as a
-directory under `rules/` (`rules/foundation`, `rules/testing`, …) under one shared
+directory under `packages/` (`packages/foundation`, `packages/testing`, …) under one shared
 history. Add or refine a rule here. Because
 the packages live together, a change spanning several packages is one atomic
 commit, and the whole rule set can be read, grepped, and consolidated in one
@@ -41,15 +41,16 @@ directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path, so a package whose directory path is
 unchanged fast-forwards, while a package whose path moved does not — its next
 publish is a path-change case handled like the `vocabulary`→`language` rename (see
-the Phase B checklist). **All seven packages moved from their root paths into
-`rules/` and were force-reset onto that layout on 2026-07-20, so every component
-repo now tracks the `rules/<package>` split. The path is stable from here, and
-ordinary publishes fast-forward again — no further reset is due unless a path
-moves once more.** For such an unchanged-path publish, the deterministic split
-fast-forwards — guard for it before pushing:
+the Phase B checklist). **The composite's package directory has moved twice: to
+`rules/` (force-reset 2026-07-20), then to `packages/` (2026-07-22). Each move
+changes the split prefix, so the component repos — still tracking the
+`rules/<package>` split — must be force-reset onto the `packages/<package>` split on
+the first publish after the second move. After that reset, the path is stable and
+ordinary publishes fast-forward again.** For an unchanged-path publish, the
+deterministic split fast-forwards — guard for it before pushing:
 
 ```
-git subtree split --prefix=rules/testing -b publish-tmp
+git subtree split --prefix=packages/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
   "$(git ls-remote https://github.com/waytide/testing.git master | cut -f1)" \
@@ -58,7 +59,7 @@ git push https://github.com/waytide/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`code/ruby` splits from its nested path (`--prefix rules/code/ruby`) into
+`code/ruby` splits from its nested path (`--prefix packages/code/ruby`) into
 the flat repo name `waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
 the component repo diverged (a direct commit, which the downstream-only rule
 forbids). The full step-by-step for every package — including the one-time repo
