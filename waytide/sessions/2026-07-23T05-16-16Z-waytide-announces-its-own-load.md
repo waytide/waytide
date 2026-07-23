@@ -60,6 +60,26 @@ The existing deferred and experiment records were backfilled with footers at the
 
 A final rule closed the loop on the session records themselves. The engineer set it: **when the agent asks whether to record a session, it must put the choice through the AskUserQuestion selection UI**, not a prose question, offering three options — write a new session record, append the previous one, or write none. The rule went into the sessions convention, kept self-contained in foundation (which cannot depend on the design-by-efferent package, where the general "present every prompt through the selection UI" rule lives). Committed as `0f20e6b`; foundation published (`605f242..3cc44f3`). Its **first exercise was this very section**: rather than assume, the agent asked through the UI, the engineer chose **append**, and the work landed here — the rule applied to its own first instance.
 
+## 11. Checking the notice — and finding the rule untestable in the session that used it
+
+A later sitting opened with a status report and then turned back on the notice itself: the engineer asked whether it had printed. It had — as the first line, above the report's heading — but the check was worth making, and it separated two things the earlier work had run together.
+
+**Emission is not visibility.** The notice was emitted exactly where the rule requires, and still read as absent: one line of plain text sitting directly above a large heading is easy to scroll past. The rule fixes *when* the notice prints, not how much it stands out. Nothing was changed for it; the distinction was named and left open.
+
+**The session could not test the rule it was exercising.** The engineer's follow-up asked whether the notice printed only because the prompt was `waytide status`. Because that first prompt was itself Waytide-flavored, the evidence cannot distinguish the bootstrap firing from the prompt pulling the rules-reading along with it. Only a first prompt on an unrelated subject separates the two, so the sharpened ordering rule is stated but still unverified.
+
+## 12. The ordering sharpening and the Claude Code bridge are committed
+
+Two changes were already sitting uncommitted in the working tree, and this sitting committed them together as `2c2c342`.
+
+The **ordering sharpening**: the announce rule and both bootstrap texts — the composite `AGENTS.md` and the one `install.sh` generates for a consuming project — now say the rules are read and the notice printed **before the first prompt is answered**, not merely before the work that prompt asks for. The reason is written into the rule: the first prompt arrives together with the bootstrap and pulls for an immediate answer, so an instruction that said only "at session start" read as deferrable and the notice was dropped. Fixing the notice's place relative to the first *response* leaves nothing to defer.
+
+The **`CLAUDE.md` bridge**: Claude Code loads `CLAUDE.md`, not `AGENTS.md`, so the bootstrap did not reach a Claude Code session at all — the framework was installed and inert. `install.sh` gains `place_claude_md`, which puts a one-line `@AGENTS.md` import at the project root, creating the file when absent and asking before appending to one the developer already maintains, the same care `place_agents_md` takes. The composite carries the same bridge, hand-maintained like its `AGENTS.md`. A harness hook had been the alternative considered for enforcing the notice; the stated ordering plus the import was taken instead.
+
+Both were committed as one, on the engineer's selection — they came out of the same problem and interleave in the same two files. A **second decision-log entry** was added for the bridge, which the existing entry did not cover: it recorded the ordering change and named the rejected hook, but not that Claude Code reads `CLAUDE.md` or that the installer now places an import.
+
+Two gaps are on the record rather than closed. The `run-suite-before-commit` gate had nothing to run — this repository carries rule documents and shell installers, with no test suite. And `place_claude_md` is **unexercised**: `install.sh` cannot be run in the authoring source, because doing so would append the consuming-project bootstrap to this repository's own `AGENTS.md`.
+
 ---
 
 ## Takeaways
@@ -72,6 +92,10 @@ A final rule closed the loop on the session records themselves. The engineer set
 - **The footer convention lives in one rule, not repeated per artifact.** `working-state-artifacts-carry-a-provenance-footer` is the single home; each artifact convention points at it. The **decision log is the sole exception** — its one-line shape carries provenance in the filename already.
 - **A footer's datetime is the artifact's true authoring time** — for a dated artifact, the ISO-8601-UTC filename prefix, not a later migration git-add date.
 - **When the agent asks whether to record a session, it asks through the AskUserQuestion selection UI** — three options (a new record, appending the previous, or none), not a prose question. A direct instruction to record needs no prompt.
+- **The notice precedes the first *response*, not merely the work.** The first prompt arrives with the bootstrap and pulls for an immediate answer, so "at session start" alone reads as deferrable. Stating the notice's place relative to the reply leaves nothing to defer.
+- **Emission is not visibility.** A notice can print exactly where the rule requires and still read as absent — one plain line above a large heading is easy to scroll past. The rule governs when it prints, not how much it stands out.
+- **A Waytide-flavored first prompt cannot test the session-start rule.** When the opening request is itself about Waytide, the evidence cannot separate the bootstrap firing from the prompt pulling the rules-reading along. Only an unrelated first prompt verifies it.
+- **Claude Code reads `CLAUDE.md`, not `AGENTS.md`.** Without a root `CLAUDE.md` importing it, the bootstrap never reaches a Claude Code session — the framework installs and stays inert. The installer places the one-line import, asking before touching a `CLAUDE.md` the developer already maintains.
 
 ## Glossary (settled or applied this session)
 
@@ -81,6 +105,8 @@ A final rule closed the loop on the session records themselves. The engineer set
 - **`WAYTIDE_QUIET`** — the environment variable that, set to any non-empty value, silences the load notice; the opt-out that keeps default-on in committed content and silencing in the developer's own environment.
 - **provenance footer (working-state artifact)** — the `Authored by … / Changed by …` block ending a working-state file; here it exists for **self-contained readability** (the file is useful on its own), a reason distinct from the rule-file footer's (recovering history that `git subtree` strips).
 - **useful on its own** — the principle that a working-state file should give a reader what they need, including who wrote it and when, without leaving the file to query the git log; the reason these artifacts carry a footer.
+- **`CLAUDE.md` bridge** — the one-line `@AGENTS.md` import placed at a project root so the Waytide bootstrap in `AGENTS.md` loads under Claude Code, which reads `CLAUDE.md` and not `AGENTS.md`. Placed by `install.sh` in a consuming project; hand-maintained in the authoring source.
+- **emission versus visibility** — whether the load notice was *printed* where the rule requires, as against whether a reader *noticed* it. The announce rule governs the first; the second is a presentation matter it does not address.
 
 ## Where the durable records live
 
@@ -93,6 +119,9 @@ A final rule closed the loop on the session records themselves. The engineer set
 - **The footer decision-log entries:** `waytide/log/2026-07-23T05-21-27Z-session-records-carry-a-provenance-footer.md` and `waytide/log/2026-07-23T05-27-41Z-provenance-footer-generalized-to-all-working-state-artifacts.md`.
 - **The footer commits and publishes:** `64a0472` (session-record footers) and `c9fd44b` (the generalization); foundation at `2aa2f21` then `605f242`, design-by-efferent at `491e1fc`.
 - **The session-recording prompt rule:** the `agent-sessions-convention` "How the recording is asked" clause; decision-log entry `waytide/log/2026-07-23T05-33-25Z-session-record-recording-is-asked-through-askuserquestion.md`; commit `0f20e6b`; foundation `605f242..3cc44f3`.
+- **The ordering sharpening:** `framework/foundation/announce-waytide-at-session-start.md` (the "One line, before the first response" clause and its reason), the composite root `AGENTS.md`, and the `bootstrap()` text in `framework/foundation/install.sh`. Decision-log entry `waytide/log/2026-07-23T21-42-56Z-session-start-notice-precedes-the-first-response.md`.
+- **The Claude Code bridge:** the root `CLAUDE.md`, the `place_claude_md` function in `framework/foundation/install.sh`, and `install-all.sh`. Decision-log entry `waytide/log/2026-07-23T21-52-02Z-installer-places-a-claude-md-that-imports-agents-md.md`.
+- **The commit:** composite `2c2c342` on `master`, carrying both changes and both log entries. Foundation is **not yet published** for this change.
 
 ## A note on the session itself
 
@@ -100,7 +129,10 @@ The turn that did the work was the engineer's question in step 3 — *is this a 
 
 The footer thread had the same shape. An engineer's plain principle — *the file should be useful on its own* — overrode a narrower default (footers were for rule files), and the reasoning was kept **distinct** from the one it superficially resembles rather than conflated with it: the rule-file footer recovers history that subtree strips; the working-state footer serves self-contained readability. Where the load-notice work placed an honesty caveat into a rule, the footer work placed a *reason* into a rule — one home for it, so the seven conventions that rely on it don't each carry their own copy. Twice in one session, the framework's own consolidation discipline was applied to the framework: name the distinction that does work, and refuse to duplicate the rationale that doesn't. And the session closed on a third reflexive turn — a rule for how to *ask* about recording a session, exercised on its own first instance, so this very record was appended by the mechanism the rule had just introduced.
 
+The later sitting added a fourth reflexive turn, and this one did not resolve. Asking whether the notice printed was a check on the rule, and the check came back inconclusive through no fault of the rule: the question was asked in a session whose first prompt was itself about Waytide, which is exactly the condition under which the rule's central claim cannot be observed. The honest outcome was to say so and leave it open, rather than to read a Waytide-shaped session as evidence that the bootstrap works on an ordinary one.
+
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
+Changed by Scott Bellware on Thu Jul 23 2026 at 2 PM PT
