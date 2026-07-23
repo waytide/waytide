@@ -1,0 +1,1 @@
+# The session record format is folded into the foundation agent-sessions-convention and removed from the plan package — plan governs forward-looking documents (plans, designs), but a session record is a record of the past, so its format lives with its directory convention, as the experiment and loop-record formats do

@@ -6,12 +6,24 @@
 - **It is not the source of truth.** The durable records are: the binding rules (`waytide/packages/`, `waytide/rules/`), working observations (`waytide/observations/`), the decision log (`waytide/log/`), experiments (`waytide/experiments/`), and plans (`waytide/plans/`). The session record **points to** them throughout; they are authoritative, and the session record is the narrative that ties them together and preserves the reasoning behind each fork.
 - **When it is written.** At the close of a session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the session has accumulated such work and proposes recording it. A trivial session needs no record; the session record is not a per-session obligation.
 - **Naming.** A session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the agent-file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
-- **Format:** the document shape — its sections — is the `plan` package's session-document-format rule.
 
-**Why:** the durable records capture *what* was decided, but the reasoning and the arc of a session — how the thinking moved, why a fork was taken, what vocabulary settled — are easy to lose and expensive to reconstruct. A narrative session record preserves that arc as a communicable whole, and, because it points to the durable records rather than restating them, it stays a guided tour rather than a second source of truth.
+## The shape of a session record
 
-**How to apply:** at a substantial session's close, write a session record here that narrates the session chronologically, defines the settled vocabulary, and points to the durable records it produced. Follow the session-document-format rule for the sections. Related: the agent-plans-convention, agent-design-convention, and agent-experiments-convention (the sibling artifact conventions), the decision-log rule, and the observations rule.
+Titled `# Session — <name> (<date>)`, it reads in this order:
+
+- **Opening summary** — a short paragraph naming what the session *was*: its arc (began as X, became Y, ended with Z).
+- **Framing note** — that this is the communicable record / guided tour, and that the durable records are the source of truth the narrative points to.
+- **Chronological body** — numbered sections (`## 1.`, `## 2.`, …) walking the session in order: what was asked and concluded at each step, with settled vocabulary defined as it arises, and inline pointers to the durable records a step produced.
+- **Takeaways** — the settled conclusions, compressed to a few bullets.
+- **Glossary** — the terms settled during the session, each with its literal definition.
+- **Where the durable records live** — pointers to the rules, observations, log entries, experiments, and code the session produced.
+- Optionally, a **reflective closing note** on the session itself.
+
+**Why:** the durable records capture *what* was decided, but the reasoning and the arc of a session — how the thinking moved, why a fork was taken, what vocabulary settled — are easy to lose and expensive to reconstruct. A narrative session record preserves that arc as a communicable whole, and, because it points to the durable records rather than restating them, it stays a guided tour rather than a second source of truth. The format lives here, with the directory convention — not in the `plan` package: a session record is a record of the *past*, while `plan` governs the forward-looking documents (plans, designs), the same way the experiment and loop-record formats live with their own conventions.
+
+**How to apply:** at a substantial session's close, write a session record here that narrates the session chronologically per the shape above, defines the settled vocabulary, and points to the durable records it produced. Related: the agent-plans-convention, agent-design-convention, and agent-experiments-convention (the sibling artifact conventions), the decision-log rule, and the observations rule.
 
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
