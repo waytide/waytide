@@ -56,6 +56,10 @@ One artifact is **exempt: the decision log.** Its entries are one line, no body,
 
 The existing deferred and experiment records were backfilled with footers at their **true** authoring times — recovered from the ISO-8601-UTC filename prefixes, not the later migration git-add dates that would misattribute the time. Committed as `c9fd44b`; foundation (`2aa2f21..605f242`) and design-by-efferent (`63e9fd1..491e1fc`) both published.
 
+## 10. Asking about the record itself — through the selection UI
+
+A final rule closed the loop on the session records themselves. The engineer set it: **when the agent asks whether to record a session, it must put the choice through the AskUserQuestion selection UI**, not a prose question, offering three options — write a new session record, append the previous one, or write none. The rule went into the sessions convention, kept self-contained in foundation (which cannot depend on the design-by-efferent package, where the general "present every prompt through the selection UI" rule lives). Committed as `0f20e6b`; foundation published (`605f242..3cc44f3`). Its **first exercise was this very section**: rather than assume, the agent asked through the UI, the engineer chose **append**, and the work landed here — the rule applied to its own first instance.
+
 ---
 
 ## Takeaways
@@ -67,6 +71,7 @@ The existing deferred and experiment records were backfilled with footers at the
 - **Every working-state artifact carries a provenance footer** — for a different reason than a rule file: not to recover history that subtree strips (these keep their history), but so the file is **useful on its own**, without querying the git log.
 - **The footer convention lives in one rule, not repeated per artifact.** `working-state-artifacts-carry-a-provenance-footer` is the single home; each artifact convention points at it. The **decision log is the sole exception** — its one-line shape carries provenance in the filename already.
 - **A footer's datetime is the artifact's true authoring time** — for a dated artifact, the ISO-8601-UTC filename prefix, not a later migration git-add date.
+- **When the agent asks whether to record a session, it asks through the AskUserQuestion selection UI** — three options (a new record, appending the previous, or none), not a prose question. A direct instruction to record needs no prompt.
 
 ## Glossary (settled or applied this session)
 
@@ -87,12 +92,13 @@ The existing deferred and experiment records were backfilled with footers at the
 - **Conventions updated to point at it:** `agent-sessions`, `agent-deferred`, `agent-design`, `agent-experiments`, `agent-observations`, `agent-plans`, `decision-log-convention` (the exemption), and DBE's `loop-records`.
 - **The footer decision-log entries:** `waytide/log/2026-07-23T05-21-27Z-session-records-carry-a-provenance-footer.md` and `waytide/log/2026-07-23T05-27-41Z-provenance-footer-generalized-to-all-working-state-artifacts.md`.
 - **The footer commits and publishes:** `64a0472` (session-record footers) and `c9fd44b` (the generalization); foundation at `2aa2f21` then `605f242`, design-by-efferent at `491e1fc`.
+- **The session-recording prompt rule:** the `agent-sessions-convention` "How the recording is asked" clause; decision-log entry `waytide/log/2026-07-23T05-33-25Z-session-record-recording-is-asked-through-askuserquestion.md`; commit `0f20e6b`; foundation `605f242..3cc44f3`.
 
 ## A note on the session itself
 
 The turn that did the work was the engineer's question in step 3 — *is this a git thing or a session thing?* — which caught loose wording and forced the two moments apart. Once that was clear, the constraints in step 4 did the rest: they did not leave a menu of mechanisms to weigh, they eliminated all but one. The remaining honesty concern wasn't resolved so much as **placed** — written into the rule as the acknowledged cost of a deliberate tradeoff, where a later reader can see it, rather than smoothed over.
 
-The footer thread had the same shape. An engineer's plain principle — *the file should be useful on its own* — overrode a narrower default (footers were for rule files), and the reasoning was kept **distinct** from the one it superficially resembles rather than conflated with it: the rule-file footer recovers history that subtree strips; the working-state footer serves self-contained readability. Where the load-notice work placed an honesty caveat into a rule, the footer work placed a *reason* into a rule — one home for it, so the seven conventions that rely on it don't each carry their own copy. Twice in one session, the framework's own consolidation discipline was applied to the framework: name the distinction that does work, and refuse to duplicate the rationale that doesn't.
+The footer thread had the same shape. An engineer's plain principle — *the file should be useful on its own* — overrode a narrower default (footers were for rule files), and the reasoning was kept **distinct** from the one it superficially resembles rather than conflated with it: the rule-file footer recovers history that subtree strips; the working-state footer serves self-contained readability. Where the load-notice work placed an honesty caveat into a rule, the footer work placed a *reason* into a rule — one home for it, so the seven conventions that rely on it don't each carry their own copy. Twice in one session, the framework's own consolidation discipline was applied to the framework: name the distinction that does work, and refuse to duplicate the rationale that doesn't. And the session closed on a third reflexive turn — a rule for how to *ask* about recording a session, exercised on its own first instance, so this very record was appended by the mechanism the rule had just introduced.
 
 ---
 
