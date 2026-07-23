@@ -1,8 +1,10 @@
-# Session — Waytide Announces Its Own Load: A Session-Start Notice, Carried by Committed Content (2026-07-22)
+# Session — Waytide Announces Its Own Load, Then Provenance Goes Into Every Working-State File (2026-07-22)
 
 A short, focused session on the **Waytide** framework. It opened with a status check, turned into a design question — *should Waytide print a notice when it loads into a session?* — and resolved into a built and published feature: a one-line load notice, listing the packages present, carried by committed content so it prints on every developer's machine, with an environment-variable opt-out. The reasoning that shaped it was a distinction the engineer's constraints ultimately settled: an honest deterministic banner was not available under those constraints, so the notice is an **agent-printed self-report**, grounded by enumerating the real package directories — and the rule says so plainly.
 
-This is the communicable record of that session: a chronological tour of what was asked and concluded at each step. The durable records are the source of truth — the foundation rule, the changed bootstrap and `AGENTS.md`, and the decision-log entry under `waytide/log/`; this narrative points to them, it does not replace them.
+From there the session ran a second thread: whether a session record — and then every working-state artifact — should carry a **provenance footer**. It settled on a plain principle from the engineer: a file must be **useful on its own**, without querying the git log. That reason is deliberately kept distinct from the rule-file footer's (which recovers history that `git subtree` strips), and it was written into a single rule so the seven conventions that use it need not each restate it.
+
+This is the communicable record of that session: a chronological tour of what was asked and concluded at each step. The durable records are the source of truth — the foundation rules, the changed bootstrap, `AGENTS.md`, and artifact conventions, and the decision-log entries under `waytide/log/`; this narrative points to them, it does not replace them.
 
 ---
 
@@ -38,6 +40,22 @@ Four changes, committed together as `b5679b2`:
 
 The commit followed the house rules — software-first subject, no Claude coauthor trailer. Then **foundation was published** to its component repo by the guarded `git subtree split` fast-forward (`57e7012..95e6049`), clean because the `framework/foundation` path is unchanged.
 
+## 7. Do session records carry a footer?
+
+The engineer asked whether session records have provenance footers. The answer, grounded in the conventions: **no** — the footer was scoped to **rule files** only (the record-rule-authorship-in-a-footer rule opens "Every rule file ends with a provenance footer"), and the sessions convention said nothing about one. The reasoning held up: the rule-file footer exists because `git subtree` strips a package's per-file history in a consuming project, so `git blame` can't show a rule's author there; a session record lives in `waytide/sessions/`, is never shipped by subtree, and keeps its git history intact — so the provenance a footer reconstructs is already present.
+
+## 8. Footers into the session files — a different reason
+
+The engineer overrode that default: **session files should carry footers anyway**, because *the files themselves should be useful without having to query the git logs.* This is a **different rationale** from the rule-file footer's — not recovering stripped history, but self-contained readability. The sessions convention was changed to require the footer, and the two existing session records — the framework-reshaping record and this one — were backfilled with `Authored by` footers at their true authoring times. Committed as `64a0472`; foundation published (`95e6049..2aa2f21`).
+
+## 9. Generalizing the footer to every working-state artifact
+
+The engineer widened it once more: **generalize the footer to the other working-state artifacts.** Rather than repeat the rationale in each convention — the fragmentation the framework consolidates away — a single rule was written, `working-state-artifacts-carry-a-provenance-footer`, as the one home of the convention and its "useful on its own" reason. It covers experiments, designs, plans, observations, deferred items, loop records, and session records; each artifact convention — including DBE's loop-records — now points at it, and the sessions convention was slimmed from its inline rationale (added in step 8) to that pointer.
+
+One artifact is **exempt: the decision log.** Its entries are one line, no body, no template, and their author-and-time already live in the ISO-8601-UTC filename and the commit; a footer would contradict that shape and the log's no-reformat protection. The exemption is stated in both the general rule and the decision-log convention.
+
+The existing deferred and experiment records were backfilled with footers at their **true** authoring times — recovered from the ISO-8601-UTC filename prefixes, not the later migration git-add dates that would misattribute the time. Committed as `c9fd44b`; foundation (`2aa2f21..605f242`) and design-by-efferent (`63e9fd1..491e1fc`) both published.
+
 ---
 
 ## Takeaways
@@ -46,6 +64,9 @@ The commit followed the house rules — software-first subject, no Claude coauth
 - **The carrier decides the mechanism.** "Print on every developer's machine, harness-neutral, no `.claude/` dependency" leaves only the committed `AGENTS.md` prose, which is read by the agent — so the notice is necessarily an **agent-printed self-report**, not a deterministic harness banner. That's the honest tradeoff of those constraints, and the rule states it rather than hiding it.
 - **Enumerating the packages present grounds the self-report.** Listing the real directories under `waytide/framework/` requires reading them, so the notice does a little unfakeable work instead of a bare claim. It still is not proof the rules were internalized — that comes from the work honoring them.
 - **The opt-out lives in the developer's environment.** `WAYTIDE_QUIET` decouples silencing from `.claude/`; default-on travels with the repo, opt-out stays personal.
+- **Every working-state artifact carries a provenance footer** — for a different reason than a rule file: not to recover history that subtree strips (these keep their history), but so the file is **useful on its own**, without querying the git log.
+- **The footer convention lives in one rule, not repeated per artifact.** `working-state-artifacts-carry-a-provenance-footer` is the single home; each artifact convention points at it. The **decision log is the sole exception** — its one-line shape carries provenance in the filename already.
+- **A footer's datetime is the artifact's true authoring time** — for a dated artifact, the ISO-8601-UTC filename prefix, not a later migration git-add date.
 
 ## Glossary (settled or applied this session)
 
@@ -53,6 +74,8 @@ The commit followed the house rules — software-first subject, no Claude coauth
 - **agent-printed self-report** — a notice carried by `AGENTS.md` prose and emitted by the agent; it confirms the framework was read far enough to reach the instruction and that the package directories exist, but does not prove every rule was internalized. Contrast a **deterministic harness banner** (a harness-executed hook), which is honest evidence but harness-specific.
 - **carrier** — the artifact that conveys an instruction to session start: committed `AGENTS.md` prose (harness-neutral, read by the agent) versus `.claude/settings.json` config (harness-specific, executed by the harness). The choice of carrier determines whether a notice can be deterministic.
 - **`WAYTIDE_QUIET`** — the environment variable that, set to any non-empty value, silences the load notice; the opt-out that keeps default-on in committed content and silencing in the developer's own environment.
+- **provenance footer (working-state artifact)** — the `Authored by … / Changed by …` block ending a working-state file; here it exists for **self-contained readability** (the file is useful on its own), a reason distinct from the rule-file footer's (recovering history that `git subtree` strips).
+- **useful on its own** — the principle that a working-state file should give a reader what they need, including who wrote it and when, without leaving the file to query the git log; the reason these artifacts carry a footer.
 
 ## Where the durable records live
 
@@ -60,11 +83,18 @@ The commit followed the house rules — software-first subject, no Claude coauth
 - **The bootstrap and activation prose:** `framework/foundation/install.sh` (the `bootstrap()` text placed into a consuming project's root `AGENTS.md`) and the composite root `AGENTS.md`.
 - **The decision log:** `waytide/log/2026-07-23T05-13-10Z-announce-waytide-at-session-start.md`.
 - **The commit and publish:** composite `b5679b2` on `master`; foundation published to `github.com/waytide/foundation` at `95e6049` (fast-forward from `57e7012`).
+- **The generalized footer rule:** `framework/foundation/working-state-artifacts-carry-a-provenance-footer.md` — the single convention, its "useful on its own" reason, and the decision-log exemption.
+- **Conventions updated to point at it:** `agent-sessions`, `agent-deferred`, `agent-design`, `agent-experiments`, `agent-observations`, `agent-plans`, `decision-log-convention` (the exemption), and DBE's `loop-records`.
+- **The footer decision-log entries:** `waytide/log/2026-07-23T05-21-27Z-session-records-carry-a-provenance-footer.md` and `waytide/log/2026-07-23T05-27-41Z-provenance-footer-generalized-to-all-working-state-artifacts.md`.
+- **The footer commits and publishes:** `64a0472` (session-record footers) and `c9fd44b` (the generalization); foundation at `2aa2f21` then `605f242`, design-by-efferent at `491e1fc`.
 
 ## A note on the session itself
 
 The turn that did the work was the engineer's question in step 3 — *is this a git thing or a session thing?* — which caught loose wording and forced the two moments apart. Once that was clear, the constraints in step 4 did the rest: they did not leave a menu of mechanisms to weigh, they eliminated all but one. The remaining honesty concern wasn't resolved so much as **placed** — written into the rule as the acknowledged cost of a deliberate tradeoff, where a later reader can see it, rather than smoothed over.
 
+The footer thread had the same shape. An engineer's plain principle — *the file should be useful on its own* — overrode a narrower default (footers were for rule files), and the reasoning was kept **distinct** from the one it superficially resembles rather than conflated with it: the rule-file footer recovers history that subtree strips; the working-state footer serves self-contained readability. Where the load-notice work placed an honesty caveat into a rule, the footer work placed a *reason* into a rule — one home for it, so the seven conventions that rely on it don't each carry their own copy. Twice in one session, the framework's own consolidation discipline was applied to the framework: name the distinction that does work, and refuse to duplicate the rationale that doesn't.
+
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
