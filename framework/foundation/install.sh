@@ -30,6 +30,14 @@ and can't be applied unread). `waytide/rules/` holds this project's own local ru
 Read `waytide/framework/foundation/` first; it defines the framework. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
+**After reading the rules, print a one-line notice that Waytide is loaded and which
+packages are present** — for example:
+`Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing,
+design-by-efferent, git`. List the package directories actually present under
+`waytide/framework/`, named and counted. Skip the notice when the `WAYTIDE_QUIET`
+environment variable is set to any non-empty value; a developer can set it in their
+shell, `direnv`, or a personal `.claude/settings.json` `env` block to silence it.
+
 The other directories under `waytide/` hold the project's working state, kept
 separate from the rules — `log/`, `deferred/`, `observations/`, `design/`,
 `plans/`, `sessions/`, `loops/`, `experiments/` — and are worked with as their

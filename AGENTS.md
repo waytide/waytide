@@ -13,6 +13,13 @@ terms are binding and can't be applied unread). Read `framework/foundation/` fir
 defines the framework. The rules override default behavior where they conflict;
 explicit user instructions still win.
 
+**After reading the rules, print a one-line notice that Waytide is loaded and which
+packages are present** — for example:
+`Waytide loaded from framework/ — 7 packages: foundation, language, testing,
+design-by-efferent, code/ruby, git, plan`. List the package directories actually
+present under `framework/`, named and counted. Skip the notice when the
+`WAYTIDE_QUIET` environment variable is set to any non-empty value.
+
 The `waytide/` directory holds this project's own working state — `log/`,
 `deferred/`, `observations/`, `design/`, `plans/`, `sessions/`, `loops/`,
 `experiments/` — worked with as their conventions describe, not read as binding

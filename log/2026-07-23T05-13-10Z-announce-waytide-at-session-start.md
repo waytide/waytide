@@ -1,0 +1,1 @@
+# Waytide prints a one-line load notice at session start, listing the packages present under waytide/framework/, carried by the committed root AGENTS.md (harness-neutral, not .claude); opt out with the WAYTIDE_QUIET environment variable
