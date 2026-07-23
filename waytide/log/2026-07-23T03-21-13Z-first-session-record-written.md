@@ -1,0 +1,1 @@
+# The first waytide/sessions/ record is written — a narrative of this session (2026-07-20 – 2026-07-22): the rules-flattening experiment, the vocabulary.md model, the rules->packages->framework renames, provenance footers, and the sessions convention itself. First instance of the new sessions convention
