@@ -1,0 +1,1 @@
+# The provenance footer is generalized to all working-state artifacts (experiments, designs, plans, observations, deferred, loop records, sessions) under one rule — working-state-artifacts-carry-a-provenance-footer — for the useful-on-its-own reason; the decision log is the sole exception, its one-line shape carrying author and time in the filename already

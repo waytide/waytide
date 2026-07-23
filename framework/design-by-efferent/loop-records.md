@@ -24,6 +24,9 @@ displace (the log stays one line per decision).
   - **Decision / chat** — what the developer chose, or the chat that ensued and
     how it resolved (record the substance of the chat, not just the outcome).
 - An **Outcome** line: the resulting code/behavior, suite state, and commit.
+- A **provenance footer** ending the file (`Authored by … / Changed by …`), like
+  every working-state artifact — see foundation's
+  working-state-artifacts-carry-a-provenance-footer rule.
 
 **Live vs. backfill:** a loop record written *while* doing the work is the
 default. A record reconstructed **retroactively from memory** must be marked at
@@ -45,3 +48,4 @@ foundation's file-name prefix and decision-log conventions.
 ---
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT

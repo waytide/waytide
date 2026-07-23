@@ -13,3 +13,7 @@ When the ECIL exists, add it as a `LICENSE` file to **each package directory** â
 **Why:** an open-source project needs a license to actually be open source; without one, nobody can legally use it, so the credibility goal fails. The per-package placement is a real distribution constraint, not a preference.
 
 **How to apply:** once Scott provides the ECIL text, add `LICENSE` to each package directory and the composite root, note the structural-file exemption in foundation's filename rule, and include it in the release. Related: [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]] (the first release should carry the license).
+
+---
+
+Authored by Scott Bellware on Sun Jul 19 2026 at 12 PM PT

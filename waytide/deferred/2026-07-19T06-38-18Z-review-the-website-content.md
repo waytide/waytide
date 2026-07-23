@@ -15,3 +15,7 @@ Check each page for:
 **Why:** the drafts were written quickly and needed several plain-language corrections during drafting; a deliberate review pass will catch the rest and confirm the pages are accurate and consistent before more are written on top of them.
 
 **How to do it:** read each `docs/` page against the packages it describes and against the plain-language rules (`communicate-plainly-name-the-thing`, `no-slang`, `expand-abbreviations-on-first-use`); fix what's off; confirm the capability list and the pages line up.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 11 PM PT

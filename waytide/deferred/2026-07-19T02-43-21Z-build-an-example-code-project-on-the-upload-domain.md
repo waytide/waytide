@@ -25,3 +25,7 @@ So a real project already carries the `Upload` domain; today it lives there as *
 **Use the existing implementation as source material.** `dependencies-and-substitutes` and its `demos/` `Upload` series are the **source material** the fresh build draws on — read them for the target domain, the useful-object shape, and the dependency/substitute concepts, then *originate* the solution via DBE rather than copying the code across. It informs the destination; it is not the starting codebase.
 
 **How to apply:** when initiated, study `dependencies-and-substitutes` (its `demos/` `Upload` series) as source material, settle the scope and home questions above, then build a fresh `Upload` project up **via DBE** — test-first, hinge-by-hinge — under the `code/ruby` and `testing` conventions, installing the packages into its `waytide/rules/` tree and producing real `design`/`plans`/`loops` artifacts as it grows. Decide whether the in-rule snippets should reference it. Related: the source project `dependencies-and-substitutes` (`eventide-examples` org), the `code/ruby` and `testing` rules that already use the `Upload` domain, and the agent-plans / agent-design / agent-experiments conventions the project would exercise.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 7 PM PT

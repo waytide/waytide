@@ -8,6 +8,7 @@
 - **Lifecycle in the record:** the record also carries the experiment's lifecycle facts — the **user confirmations** the work required (the affirmation declaration, concluding a superseded experiment, merging untested code, suspending DBE, suspension, branch deletion) and the experiment's **state**, characterized as **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, or **Suspended** so it is legible at a glance. On **Affirmed** the record's log is **copied into the project decision log** (`waytide/log/`); a **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** record is kept as evidence. When one experiment **supersedes** another, **both records name the counterpart**, and the superseded one stays **Suspended** until the user explicitly concludes it as superseded. The lifecycle itself — branching, the states, the merge gate, DBE governance — is the experiment-runs-on-its-own-branch rule.
 - **Runs are optional, not the default.** Split an experiment into **runs** only when you deliberately hold the question fixed and **vary one factor to compare** (e.g. an "AI-proposes" baseline versus an "originate-blind" run). Then each run is its own branch from the **same base**, carries its **own forecast**, and is titled `Run 1`, `Run 2`, …. A run is a deliberate variation, not a retry.
 - **Format:** the same frontmatter-free markdown as rules — a `# Experiment — <name>` title (add `, Run N` only when the experiment actually has multiple runs), then prose and tables. The filename follows the ISO-8601-UTC prefix convention (see the agent-file-names rule).
+- **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 
 **Why:** a forecast recorded before the work is what turns work into an experiment — the gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch; multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
@@ -16,3 +17,4 @@
 ---
 
 Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT

@@ -254,3 +254,7 @@ deletion is a separate confirmation.
 and the deletion of the experiment branch — confirmed through the AskUserQuestion
 selection UI (the branch was local-only and fully merged; its history lives in
 `master`). All 2026-07-22.
+
+---
+
+Authored by Scott Bellware on Tue Jul 21 2026 at 2 AM PT
