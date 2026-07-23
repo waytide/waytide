@@ -17,3 +17,7 @@ end
 **Relation to the context rule:** the context-only-for-local-instrumentation rule says don't enclose a single-assertion test in a context that holds nothing. An error test is the deliberate exception: the enclosing context isn't empty — it carries the **condition**, which is real information (and is the only place the condition can live, since the test name is fixed as "Fails" / "Doesn't fail").
 
 **How to apply:** any `assert_raises` test → name it "Fails" (or "Doesn't fail" for the non-raising assertion), inside a `context` named for the condition (the "when …"). Related: the test-name-is-prefix rule and the context-only-for-local-instrumentation rule.
+
+---
+
+Authored by Scott Bellware on Thu Jul 16 2026 at 7 PM PT

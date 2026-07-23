@@ -1,0 +1,1 @@
+# Rule files carry a provenance footer — "Authored by <name> on <local human datetime>" below a --- divider, with "Changed by ..." lines appended per change; the new record-rule-authorship-in-a-footer rule states it, and all existing rules are backfilled with their true creation dates (recovered from the stripped ISO-8601-UTC filename prefixes, converted to local time)

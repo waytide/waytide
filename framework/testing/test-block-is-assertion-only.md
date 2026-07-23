@@ -30,3 +30,7 @@ end
 **Why:** The test block should read as a pure statement of the asserted truth — a single relation among named values — not a computation mixed with a check. Naming every operand (in the context, where the arranging happens) documents what each value is, gives each an inspection point, and cleanly separates *arrange* (the context) from *assert* (the test block). An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *both* operands.
 
 **How to apply:** In the enclosing `context`, declare the controls, bind the actuation to an explaining variable, and bind any compared-against/expected value to its own explaining variable. The `test` block contains exactly one `assert`, comparing those variables — no value-producing method call inside it. The comparison operator (`==`, etc.) is the assertion's predicate, not an inlined value-producing call, so it stays. Related: the DBE first-turn rule, the no-inline-method-call-arguments rule, the test-structure rule, and the `control_` test-variable prefix rule.
+
+---
+
+Authored by Scott Bellware on Sun Jun 28 2026 at 8 AM PT

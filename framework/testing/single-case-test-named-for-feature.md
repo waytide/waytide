@@ -7,3 +7,7 @@ The folder-with-case-files form — `call/empty.rb` + `call/present.rb`, `result
 **Why:** a filename should carry meaning. `present` as the sole file implies a contrast that doesn't exist and misdescribes the feature as multi-case. Naming the lone file for the feature keeps the test path honest about how many cases the feature actually has.
 
 **How to apply:** start a feature's test wherever is convenient, but once the case set is settled: if one case, collapse to `<feature>.rb` named for the feature (fix the `require_relative` depth accordingly); if more than one, use `<feature>/<case>.rb` with each file named for its case. Related: the test-context-nesting-mirrors-folders rule, the test-structure rule, and the test-name "Is" rule.
+
+---
+
+Authored by Scott Bellware on Sat Jun 27 2026 at 4 PM PT

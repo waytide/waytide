@@ -9,3 +9,7 @@ This is the premise the rest of this package follows from. **Name concepts liter
 **Why:** the terminology is the conveyable output of this work — it is how the approach is taught to other engineers, and how the people doing it stay oriented to the same concepts. Imprecise words do not merely read badly; they *do damage*, and they do it quietly. A metaphor carries baggage the author never intended and the reader cannot unsee. An overdramatic word distorts judgment — a routine tidying reads as urgent repair. A loose synonym silently merges two concepts that the design depends on keeping apart. By the time the confusion shows up in the work, its origin is a word chosen carelessly some distance back.
 
 **How to apply:** treat a word choice as a design decision, subject to the same deliberation as any other. When two words are available, ask which one *is* the thing rather than which one sounds better. When a word is wrong, change it, and change it everywhere the concept appears — a term that means one thing here and another there is worse than either. When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor. Expect this to feel like more effort than it is worth, right up until the moment an imprecise word costs a day. Related: the name-literally-not-by-analogy rule and the no-slang rule (the two disciplines), the solubility rule (the quality a good name has), and the substitutions in this package's vocabulary (each one an instance).
+
+---
+
+Authored by Scott Bellware on Thu Jul 16 2026 at 10 PM PT

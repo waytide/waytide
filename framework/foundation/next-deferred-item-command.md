@@ -12,3 +12,7 @@ items than the selection UI's option limit, list them in prose and ask. Once the
 developer selects one, take up that item (build it out per its "How to apply", or
 discuss first if it needs settling). Related: the deferred-item convention and the
 other command rules (status report, test tree, lib report).
+
+---
+
+Authored by Scott Bellware on Wed Jul 1 2026 at 2 PM PT

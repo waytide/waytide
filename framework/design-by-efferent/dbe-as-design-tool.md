@@ -13,3 +13,7 @@ Do not regress to the average of the code you've seen — most code is poorly de
 **Why:** Design judgment — knowing in detail what good, soluble design looks like — stays with the human. The ceremony of red-green-refactor only ever existed to put a human's attention in the loop; reproducing it as ritual wastes effort and teaches nothing. The job is to generate within the cradle the human sets, toward solubility, without performing the ceremony. This is what separates DBE from the TDD it is a variant of: tests are the vehicle, design is the point.
 
 **How to apply:** Write the efferent test first and treat it as a cradle for generation, not a pass/fail gate — do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward, hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general. Related: the DBE vocabulary (cradle, efferent, solubility), the human-in-the-loop rule, the first-turn rule, and the "TDD designs, coverage protects" rule.
+
+---
+
+Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT

@@ -10,3 +10,7 @@
 **Why:** design and execution are distinct concerns — one decides what the shape should be, the other decides the order it gets built in. Keeping plans in their own directory, each pointing at the design it realizes, keeps the settled direction stable while the incremental build proceeds against it, and preserves the build history without cluttering the design.
 
 **How to apply:** when a settled design is ready to build, add a plan here that names its source design and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history. Related: the agent-design-convention, the `plan` plan-document-format and plans-no-code-samples rules, and the decision-log rule.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT

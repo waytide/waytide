@@ -9,3 +9,7 @@ Do not use an abbreviation the reader may not already know without spelling it o
 **Why:** an unexplained abbreviation forces the reader to guess or go look it up. It saves the writer a few letters and costs the reader the meaning — the same failure as leading with jargon the reader may not share. Spelling it out once removes the guesswork for good.
 
 **How to apply:** the first time an abbreviation appears, write the full term with the abbreviation in parentheses; use the short form afterward. Skip the expansion only for abbreviations more widely known than their expansions. Applies to conversation with the user as much as to the files. Related: `communicate-plainly-name-the-thing` (the broader plain-communication rule this sharpens), `no-slang`, and the `language-is-precise-here` premise.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 11 PM PT

@@ -9,3 +9,7 @@ Do not put a preposition in a method name (`import_from`, `define_in`, `set_to`,
 **Scope — method names only.** This governs **method/initializer names**, not prose or terminology. Prose deliberately *does* use prepositional phrasing where it carries meaning — e.g. inputs are described as **"sent to"** a method (the "sent to" entry in the Word Substitutions rule, in `language`). That is a description of a relationship, not an identifier; the preposition is load-bearing there and absent here. (The relation verb is the bare **"mediates"** — see the no-slang rule in `language` — so it is not an example of load-bearing prepositional prose.)
 
 **How to apply:** When naming a method, name the action and stop. If you feel the pull to append `_from`/`_to`/`_in`/`_with`/`_into`/`_for`, that is the mean-bias tell — the argument the preposition would point at is already the parameter. Related: the name-literally-not-by-analogy rule and the general `solubility` term (both in `language`).
+
+---
+
+Authored by Scott Bellware on Sat Jun 27 2026 at 11 PM PT

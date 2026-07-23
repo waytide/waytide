@@ -39,3 +39,7 @@ The assertion is made against an **explaining variable** — a named local whose
 **How to apply:** When beginning a feature, write only the test file this turn. Nest one `context` per folder segment (class/namespace, then feature), actuate the unit under test and bind the result to an explaining variable, and write one bare unnamed `test` block asserting that variable. Do not name an inner outcome context yet, do not write the implementation, and do not pause to run the inevitably-failing test.
 
 **Acceptance is separate gates, not one.** The *content* of turn one is as above, but the human accepts it in separate hinges — **actuation, then observation, then controls** (then the implementation as the fourth hinge, and the naming as the fifth, at the feature's close) — each proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept; settle the three test hinges first, then assemble and show the file. Related: the DBE-as-design-tool rule, the test-structure rule (the grown form), the folder-mirroring rule, the what-each-hinge-displays rule, the actuation-gate options-or-chat rule, and the `control_` test-variable prefix rule.
+
+---
+
+Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT

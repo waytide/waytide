@@ -7,3 +7,7 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 **Why:** the reader's attention is the scarce resource. A summary-first shape lets the reader grasp the point at once and choose whether to read on, instead of mining a long response for it. Verbosity taxes the reader and hides the essential among the optional.
 
 **How to apply:** start with the summary; put the must-read before the may-read; cut words that carry no information. Related: the communicate-plainly-name-the-thing rule and the language-is-precise-here rule.
+
+---
+
+Authored by Scott Bellware on Wed Jul 22 2026 at 10 AM PT

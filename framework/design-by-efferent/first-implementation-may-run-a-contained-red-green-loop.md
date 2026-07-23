@@ -41,3 +41,7 @@ containment constraint: does the failure's cause reach other stable tests? If ye
 forbidden; if no, permitted. Related: the "TDD designs, coverage protects" rule, the
 "hinges gate the design of a test" rule, the no-green-on-arrival rule, the hinge-cycle
 rule, and the present-every-prompt rule.
+
+---
+
+Authored by Scott Bellware on Fri Jul 3 2026 at 9 AM PT

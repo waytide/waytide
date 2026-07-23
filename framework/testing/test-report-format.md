@@ -21,3 +21,7 @@ Keep each section tight.
 **Why:** a suite has a discoverable structure worth surfacing on demand. Fixing the report's shape makes it repeatable and steers reading to the test files rather than recollection.
 
 **How to apply:** on a test-report request, read the automated suite and render the sections from current state. Confirm membership by reading the files (actuation placement, assertion kind, loop fan-out) rather than asserting it; derive the hierarchy from the first two nesting depths of the `context "…"` declarations. Companion to the `lib-report` command (in `code/ruby`) and the `test-tree` command; neither report is written to a file.
+
+---
+
+Authored by Scott Bellware on Mon Jun 29 2026 at 12 AM PT

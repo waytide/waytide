@@ -18,3 +18,7 @@ That is the distinction between the two kinds of rule: a **framework rule** ship
 **Why:** the dated artifacts are a chronological record, so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. Framework rules are not a chronology; they are the current, durable set of conventions, so each is named for what it says.
 
 **How to apply:** prefix every new working-state artifact, and every local rule a project adds, with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Name a framework package's rules, and its structural files, by a dash-separated, lower-case name — no prefix.
+
+---
+
+Authored by Scott Bellware on Wed Jul 1 2026 at 1 PM PT

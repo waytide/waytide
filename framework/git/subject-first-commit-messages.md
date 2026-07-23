@@ -14,3 +14,7 @@ Developers gravitate toward recounting their exploits — "Fixed the parser", "A
 **Why:** the log records the history of the software, and it is scanned rather than read, so leading with the changed thing rather than the developer's action is both truer to what the log is for and easier to review. It is the Eventide house style, and it composes with the commit-wording rule — "Task 9 is done" already states the fact, software-first.
 
 **How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb — not imperative and not past tense — because both put the developer's work ahead of the software. Related: the commit-says-task-is-done-not-mark-done rule, the no-Claude-coauthor rule, and the run-suite-before-commit rule.
+
+---
+
+Authored by Scott Bellware on Mon Jul 13 2026 at 1 PM PT

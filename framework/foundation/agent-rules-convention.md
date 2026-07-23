@@ -14,3 +14,7 @@ The project's **binding** rules — naming conventions, terminology, plan-writin
 **Why:** the rules are the project's durable, in-repo conventions, committed alongside the code and read fresh each session rather than recalled — so they stay authoritative and current. One rule per file keeps each convention individually readable, referenceable, and revisable. Splitting the installed packages (`waytide/framework/`) from the project's own rules (`waytide/rules/`) keeps installed content distinct from the project's own work, so refreshing a package never touches a local rule.
 
 **How to apply:** read the rule files under `waytide/framework/` and `waytide/rules/` at session start and hold to them. When a new binding convention is set, write it in `waytide/rules/` in the format above and log it. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule). Related: the agent-file-names rule, the rules-install-a-mindset rule, and the decision-log rule.
+
+---
+
+Authored by Scott Bellware on Thu Jul 16 2026 at 6 PM PT

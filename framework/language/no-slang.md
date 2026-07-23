@@ -13,3 +13,7 @@ Each retired figurative term has a literal replacement, and each is its own rule
 **Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly; "sweep" is loose where "conform" states the actual intent. Literal naming is the house style; this is the prose-and-process counterpart of the name-literally-not-by-analogy rule (that rule governs *naming a concept*; this one governs *phrasing* in prose and conversation).
 
 **How to apply:** don't reach for a figurative or slang term when a literal one states the thing directly. Use the literal replacement (see the individual substitution rules). When a historical record *quotes* a decision, it keeps the original word (rewriting it would erase the record) — only live, forward-looking prose conforms. Related: the name-literally-not-by-analogy rule and the individual substitution rules (mediates, conform, scenario, increment, and the plain-phrasing rule).
+
+---
+
+Authored by Scott Bellware on Thu Jul 16 2026 at 7 PM PT

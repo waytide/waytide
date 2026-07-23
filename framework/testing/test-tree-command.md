@@ -11,3 +11,7 @@ A durable script that does this (runs the suite, suppresses narration, parses an
 **Why:** the de-duped tree is the readable, whole-suite view — it shows the feature/outcome structure at a glance without the per-file repetition, and (via the expanded dynamic names) surfaces loop-generated cases.
 
 **How to apply:** on a "test tree" request, run the durable tree script and present its output. Related: the status-report (in `foundation`) and test-report commands, which include a shallower two-level context tree.
+
+---
+
+Authored by Scott Bellware on Wed Jul 1 2026 at 8 AM PT

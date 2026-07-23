@@ -19,3 +19,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 
 - **verified** governs the *report*, not the cycle. Where "green" names a state in the red/green cycle rather than a claim that behavior is confirmed, it stands — **green-on-arrival** and the **red/green loop** keep their names. Prefer "Verified: N tests" over "the suite is verified at N" (technobabble).
 - **protect** — a test **protects** against a regression (protects the behavior / the delegation / the seam). Keep "guard clause" for the early-return control-flow construct; only a test's protective role is "protect", never "guard".
+
+---
+
+Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT

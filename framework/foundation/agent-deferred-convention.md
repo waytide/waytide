@@ -10,3 +10,7 @@
 **Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately; a parked queue keeps it without derailing the task in flight. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
 **How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Gated on:**` line and continue the task. When the gate clears, carry it out, delete the file, and log that it was done. Related: the decision-log rule and the agent-rules rule.
+
+---
+
+Authored by Scott Bellware on Thu Jul 16 2026 at 6 PM PT

@@ -11,3 +11,7 @@ Speak and write to the user in plain language, using the **actual names of thing
 **Why:** invented labels and unexplained jargon feel precise but actually hide meaning — the reader has to work out what "tier 1" stands for. Naming the real thing costs a few words and saves the reader the decoding. The point of communicating is to be understood, not to sound authoritative.
 
 **How to apply:** when explaining something, use the concrete name and a plain description; bring in a shorthand only after its meaning is clear, and only if it earns its keep. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items. Related: the `language-is-precise-here` premise this serves; its sibling principle rules `name-literally` (name a thing for what it is) and `no-slang`; and foundation's `rules-install-a-mindset` (a rule installs a stance).
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 10 PM PT

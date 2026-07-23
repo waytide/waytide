@@ -9,3 +9,7 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload C
 **Why:** the test output and the file tree then read as the same structure — each outcome is situated under the class/namespace and the feature it establishes. It also keeps the suite consistent with the existing `upload/` tests.
 
 **How to apply:** open one `context` per folder segment of the test's path (the class/namespace, then the feature/method), then the outcome context(s) holding the assertions. Related: the test-structure rule, the test-name "Is" rule, and the `control_` test-variable prefix rule.
+
+---
+
+Authored by Scott Bellware on Fri Jun 26 2026 at 2 PM PT

@@ -42,3 +42,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 
 **Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.
+
+---
+
+Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT

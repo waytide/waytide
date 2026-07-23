@@ -41,3 +41,7 @@ decision/chat. Mark retroactive reconstructions as backfills. Keep the one-line
 decision-log entries separate and intact. Related: the DBE vocabulary (loop, hinge,
 gate, deliberation), the hinge-cycle rule, the auto-record-design-dialogue rule, and
 foundation's file-name prefix and decision-log conventions.
+
+---
+
+Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT

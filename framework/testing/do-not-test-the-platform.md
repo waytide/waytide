@@ -31,3 +31,7 @@ adds noise, couples the suite to language internals, and gives false confidence 
 "we" are covered when nothing of ours ran. Related: the "TDD designs, coverage protects"
 rule and the assert-error-message-only-as-sole-discriminator rule (both are about testing
 what actually discriminates *our* behavior).
+
+---
+
+Authored by Scott Bellware on Fri Jul 3 2026 at 11 AM PT

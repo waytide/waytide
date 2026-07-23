@@ -47,3 +47,7 @@ end
 **Why:** `||=` conflates "omitted" with "any falsy value." That conflation is harmless — even desirable — for flags and selectors, where the falsy default *is* the meaning. It is a defect for a payload the method records verbatim, because it silently rewrites a caller's intended `false`/`nil`. Robustness (the whole point of defaulting in the body) means honoring an explicit falsy value, which only the `.nil?` test does.
 
 **How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. If the method stores or forwards it as a value the caller could legitimately want falsy, default it with `if param.nil?` (or an equivalent `nil`-only test). Related: the build/new-strict rule (`build` normalizes; a settable payload is normalized only for the omitted case).
+
+---
+
+Authored by Scott Bellware on Sun Jun 28 2026 at 9 AM PT

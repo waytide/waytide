@@ -12,3 +12,7 @@
 **Why:** a forecast recorded before the work is what turns work into an experiment — the gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch; multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
 **How to apply:** when a question is worth a deliberate try, add a record here that states the question, names the upstream/experiment/base branches, commits a forecast before the work, then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict; reach for runs only when deliberately comparing a varied factor. Record the user confirmations, and characterize the record's state — **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, or **Suspended**. On affirmation, copy the experiment's log into `waytide/log/`. Keep it even after — it is evidence, not scratch. Related: the experiment-runs-on-its-own-branch rule (the lifecycle), the agent-observations-convention (working hypotheses not yet binding), the agent-plans-convention, and the decision-log rule.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT

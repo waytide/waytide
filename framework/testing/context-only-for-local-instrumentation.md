@@ -55,3 +55,7 @@ leading `When …` condition. Related: the
 test-block-is-assertion-only rule, the test-structure rule
 (the per-outcome context is for outcomes that *derive* locally), and the
 test-name-is-prefix rule.
+
+---
+
+Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT

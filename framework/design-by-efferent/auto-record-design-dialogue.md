@@ -10,3 +10,7 @@ Two destinations, used together:
 **Why:** The design dialogue is too valuable to lose, and conclusions alone omit the reasoning that produced them — the reasoning is often the more valuable part. Recording it automatically removes the dependence on remembering to ask, and keeps the record complete rather than sampled. The harness cannot do this semantically via a settings hook (hooks run shell commands and cannot distill dialogue), so the agent does it as a standing practice.
 
 **How to apply:** After each substantive design exchange, append a dated entry to the digest observation and create/update discrete artifacts as warranted — proactively, in the same turn, before moving on. Keep the digest scannable: short entries that capture the reasoning and point to the discrete files for detail. Trivial mechanics (typo-level edits, restating settled points) do not need recording. Related: the loop-records rule, and foundation's observations and decision-log conventions.
+
+---
+
+Authored by Scott Bellware on Sat Jun 20 2026 at 12 PM PT

@@ -10,3 +10,7 @@
 **Why:** deciding direction and executing it are separate acts, and the direction must stay stable while the build proceeds against it. A dedicated home for designs — distinct from the plans that realize them — keeps the settled shape and its dated resolutions readable on their own, and gives every plan one authoritative source to point at.
 
 **How to apply:** before sequencing a build, settle its direction in a design here, dating each resolution as it is settled and marking what is out of scope. Point the realizing plan back at it. Related: the agent-plans-convention, the `plan` design-document-format and package-dependency-heading rules, and the decision-log rule.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT

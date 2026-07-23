@@ -14,3 +14,7 @@ An implementation plan (`waytide/plans/*.md`) is titled `# <Title> — Implement
 **Why:** a plan is scanned by a worker executing it task by task, so a predictable section order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule protects.
 
 **How to apply:** when writing a plan, follow the section order above and state each task as a behavior with a single checkbox. Point **Source design** at the design being realized, and keep code out of the document. Related: the foundation agent-plans-convention (what the directory is), plans-no-code-samples, and the `git` commit rules.
+
+---
+
+Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT

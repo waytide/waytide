@@ -38,3 +38,7 @@ existence. Related: the companion rule "the hinges gate the design of a test" (t
 apply when writing coverage), the first-implementation-red-green rule (which permits a
 *contained* red while designing new behavior), the DBE-as-design-tool rule, the
 no-green-on-arrival rule, and the hinge-cycle rule.
+
+---
+
+Authored by Scott Bellware on Wed Jul 1 2026 at 6 PM PT

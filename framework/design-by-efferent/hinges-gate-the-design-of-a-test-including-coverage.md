@@ -30,3 +30,7 @@ controls, observation, naming — gating each with the human. Treat the
 implementation hinge as a confirmation step (run, show verified), sending any
 awkwardness back to the test, not the implementation. Related: the hinge-cycle rule,
 the what-each-hinge-displays rule, and the companion "TDD designs, coverage protects" rule.
+
+---
+
+Authored by Scott Bellware on Wed Jul 1 2026 at 6 PM PT

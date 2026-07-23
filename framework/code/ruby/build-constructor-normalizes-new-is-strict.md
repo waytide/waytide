@@ -96,3 +96,7 @@ already in the strict form the initializer records, use `new` — it is preferab
 to a `build` call whose normalization is a no-op. If any normalization remains, use
 `build`. Related: the general `build`/`new` distinction above and the
 robustness-lives-at-the-class-interface rule.
+
+---
+
+Authored by Scott Bellware on Tue Jun 30 2026 at 1 PM PT

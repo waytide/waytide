@@ -37,3 +37,7 @@ The pattern, abstracted:
 **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place and lets each outcome be read, named, and diagnosed on its own. Explaining variables and layered narration keep the test reading as a statement of the concern rather than a mechanical check. This is the structure the DBE first-turn rule grows into across subsequent turns.
 
 **How to apply:** Arrange inputs and actuate the unit under test once at the top of the outer feature context, binding the result to an explaining variable; narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome, derive an explaining variable, and assert it in a single `test` block — never assert an inline expression. Related: the DBE-as-design-tool rule, the DBE first-turn rule, the controls-not-factories rule, and the `control_` test-variable prefix rule.
+
+---
+
+Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT

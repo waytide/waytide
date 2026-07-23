@@ -19,3 +19,7 @@ thing that also happens to be a domain type." Primacy first.
 `include` before any infrastructure mixin's. Put the `dependency` (or other
 macro) call after the infrastructure `include` it depends on. Related: the
 `build`-normalizes / `new`-is-strict rule.
+
+---
+
+Authored by Scott Bellware on Mon Jun 29 2026 at 1 PM PT
