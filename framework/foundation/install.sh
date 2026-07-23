@@ -1,12 +1,13 @@
 #!/bin/sh
 # Install (or refresh) the foundation package AND activate the framework.
 # Foundation is standalone, but it owns the bootstrap: this script places the
-# project-root AGENTS.md that makes waytide/framework/ and waytide/rules/ get read at session start.
+# project-root AGENTS.md that makes waytide/framework/ and waytide/rules/ get read at session start,
+# plus a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md).
 # Run from the root of the consuming project.
 #
 # Usage:
-#   sh install.sh             install/refresh foundation, then place the root AGENTS.md
-#   sh install.sh agents-md   place the root AGENTS.md only (foundation already
+#   sh install.sh             install/refresh foundation, then place the root AGENTS.md and CLAUDE.md
+#   sh install.sh agents-md   place the root AGENTS.md and CLAUDE.md only (foundation already
 #                             installed; used by the composite install-all.sh so the
 #                             bootstrap logic lives in one place, not two)
 set -e
@@ -22,19 +23,25 @@ bootstrap() {
 This project's Waytide framework and working conventions live under `waytide/`,
 committed alongside the code and read at the start of each session.
 
-**At the start of a session, read every rule file under `waytide/framework/` and
-`waytide/rules/`, and follow them.** `waytide/framework/` holds the installed
-framework packages — `waytide/framework/foundation/`, `waytide/framework/language/`,
-and so on, including each package's `vocabulary.md` glossary (its terms are binding
-and can't be applied unread). `waytide/rules/` holds this project's own local rules.
+**At the start of a session, before responding to the first prompt, read every rule
+file under `waytide/framework/` and `waytide/rules/`, and follow them.** The first
+prompt arrives together with this file; read the rules and print the notice below
+before answering it, rather than treating the session-start reading as preamble to
+get to later.
+
+`waytide/framework/` holds the installed framework packages —
+`waytide/framework/foundation/`, `waytide/framework/language/`, and so on, including
+each package's `vocabulary.md` glossary (its terms are binding and can't be applied
+unread). `waytide/rules/` holds this project's own local rules.
 Read `waytide/framework/foundation/` first; it defines the framework. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
-**After reading the rules, print a one-line notice that Waytide is loaded and which
-packages are present** — for example:
+**After reading the rules, and before answering the first prompt, print a one-line
+notice that Waytide is loaded and which packages are present** — for example:
 `Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing,
 design-by-efferent, git`. List the package directories actually present under
-`waytide/framework/`, named and counted. Skip the notice when the `WAYTIDE_QUIET`
+`waytide/framework/`, named and counted. The notice comes before the response to
+what was asked, not after it. Skip the notice when the `WAYTIDE_QUIET`
 environment variable is set to any non-empty value; a developer can set it in their
 shell, `direnv`, or a personal `.claude/settings.json` `env` block to silence it.
 
@@ -91,6 +98,48 @@ place_agents_md() {
   fi
 }
 
+# Ensure a project-root CLAUDE.md imports AGENTS.md. Claude Code loads CLAUDE.md,
+# not AGENTS.md, so without this the bootstrap never reaches a Claude Code session
+# and the framework does not load. A one-line `@AGENTS.md` import bridges the two
+# without duplicating the bootstrap. Same care as place_agents_md: creates it when
+# absent; when one already exists, asks before appending (never silently); does
+# nothing when the import is already there. Idempotent.
+place_claude_md() {
+  if [ -f CLAUDE.md ] && grep -q '@AGENTS.md' CLAUDE.md; then
+    echo "CLAUDE.md already imports AGENTS.md — left unchanged."
+  elif [ ! -f CLAUDE.md ]; then
+    # No root CLAUDE.md yet — creating one takes nothing away, so do it directly.
+    printf '@AGENTS.md\n' > CLAUDE.md
+    echo "Created CLAUDE.md importing AGENTS.md (Claude Code reads CLAUDE.md, not AGENTS.md)."
+  else
+    # A CLAUDE.md you maintain already exists. Explain the effect and ask before
+    # touching it — never append silently.
+    echo "You already have a CLAUDE.md at the project root."
+    echo
+    echo "Claude Code reads CLAUDE.md, not AGENTS.md. For the Waytide bootstrap in AGENTS.md"
+    echo "to load at session start under Claude Code, CLAUDE.md needs to import it with a line"
+    echo "reading: @AGENTS.md. Your existing CLAUDE.md content is left exactly as it is; the"
+    echo "import is added at the end, after a blank line."
+    echo
+    if [ ! -t 0 ]; then
+      echo "Not running interactively, so CLAUDE.md was NOT modified."
+      echo "Re-run this in a terminal to be prompted, or add a line reading '@AGENTS.md' to CLAUDE.md yourself."
+      return 0
+    fi
+    printf 'Append "@AGENTS.md" to your CLAUDE.md now? [y/N] '
+    read -r answer
+    case "$answer" in
+      [Yy] | [Yy][Ee][Ss])
+        printf '\n@AGENTS.md\n' >> CLAUDE.md
+        echo "Appended '@AGENTS.md' to CLAUDE.md."
+        ;;
+      *)
+        echo "Left CLAUDE.md unchanged. Add a line reading '@AGENTS.md' to it to load the framework under Claude Code."
+        ;;
+    esac
+  fi
+}
+
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.
 if [ "$1" != "agents-md" ]; then
   if [ ! -d "$prefix" ]; then
@@ -99,5 +148,7 @@ if [ "$1" != "agents-md" ]; then
   git subtree pull --prefix "$prefix" "$repo" master --squash
 fi
 
-# 2. Ensure the project-root AGENTS.md activates the framework.
+# 2. Ensure the project-root AGENTS.md activates the framework, and that CLAUDE.md
+#    imports it so the bootstrap also reaches Claude Code sessions.
 place_agents_md
+place_claude_md

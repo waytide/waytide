@@ -1,0 +1,1 @@
+# The session-start bootstrap and the announce rule state that the rules are read and the Waytide notice printed before the session's first prompt is answered, rather than enforcing the notice with a harness hook
