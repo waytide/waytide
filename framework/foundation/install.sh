@@ -161,6 +161,41 @@ settings_json() {
 EOF
 }
 
+# Warn when git is configured to ignore .claude/settings.json. The notice is meant to
+# travel with the project, and it only does that if the file is committed — so an
+# ignored settings.json works for whoever ran the install and reaches nobody else.
+# Projects commonly ignore the whole .claude/ directory, in which case the install
+# would otherwise report success while the notice silently stays on one machine.
+# A file that is already committed is unaffected by an ignore rule, so a tracked
+# settings.json draws no warning. Outside a git repository, check-ignore fails and
+# nothing is printed.
+warn_ignored_settings_json() {
+  if ! git check-ignore -q .claude/settings.json 2>/dev/null; then
+    return
+  fi
+
+  if git ls-files --error-unmatch .claude/settings.json >/dev/null 2>&1; then
+    return
+  fi
+
+  echo
+  echo "WARNING: git is set to ignore .claude/settings.json."
+  echo
+  echo "The file is in place and the notice works for you, but git will not commit it,"
+  echo "so it will not reach anyone else who checks this project out."
+  echo
+  echo "If your .gitignore excludes the whole .claude/ directory, a negation alone will"
+  echo "not rescue the file — git cannot re-include anything inside an excluded"
+  echo "directory. Replace the '.claude/' line with these two:"
+  echo
+  echo "    .claude/*"
+  echo "    !.claude/settings.json"
+  echo
+  echo "Or leave the ignore rule alone and commit the file explicitly:"
+  echo
+  echo "    git add -f .claude/settings.json"
+}
+
 # Ensure .claude/settings.json carries the SessionStart hook and status line that
 # print the load notice. Unlike AGENTS.md and CLAUDE.md, this file cannot be safely
 # appended to — merging JSON needs a JSON tool that may not be installed, and a
@@ -191,6 +226,8 @@ place_settings_json() {
     settings_json
     echo "----------------------------------------------------------------------"
   fi
+
+  warn_ignored_settings_json
 }
 
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.

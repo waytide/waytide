@@ -15,6 +15,15 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/framework/` (or `framework/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is now narrower, and true.** It reports that the framework is installed and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did.
+- **A project that ignores `.claude/` is warned.** The notice travels only if
+`.claude/settings.json` is committed, so `install.sh` checks whether git is set to
+ignore that path and — when it is, and the file is not already tracked — prints how to
+correct it. Without the check the install reports success while the notice stays on one
+machine: it works for whoever ran the install and reaches nobody else on the team. Git
+cannot re-include a file inside an excluded directory, so a negation added under a
+`.claude/` rule does nothing; the rule has to become `.claude/*` plus
+`!.claude/settings.json`, which keeps each developer's personal
+`.claude/settings.local.json` ignored.
 - **Adopting the status line replaces the developer's own.** A project-level `statusLine` overrides whatever the developer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the choice with the developer.
 
 **Opt-out:** set the `WAYTIDE_QUIET` environment variable to any non-empty value and both surfaces go quiet. A developer sets it however they like — shell profile, `direnv`, or a personal `.claude/settings.json` `env` block. The opt-out lives in the developer's own environment, never in committed project content, so silencing is a personal preference and the default-on behavior travels with the repository to everyone who checks it out.
