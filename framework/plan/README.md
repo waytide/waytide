@@ -1,6 +1,6 @@
 # Waytide — plan
 
-How a project's **plans and design documents** are written. The package covers both written artifacts that describe a piece of work — the implementation plan (how it gets built) and the design (what it should be) — so despite the name "plan", it governs design documents too.
+How a project's **plans, design documents, and session records** are written. The package covers the written artifacts that describe a piece of work — the implementation plan (how it gets built), the design (what it should be), and the session record (the narrative of a work session) — so despite the name "plan", it governs design documents and session records too.
 
 The rules govern how those documents are written:
 
@@ -9,6 +9,9 @@ The rules govern how those documents are written:
 - **A design doc shares a common spine** — summary or premise, motivation,
   substantive sections, dated Settled resolutions, and an Out of Scope / Deferred
   tail (`design-document-format`).
+- **A session record reads as a chronological guided tour** — an opening arc,
+  numbered chronological sections pointing to the durable records, then takeaways
+  and a glossary (`session-document-format`).
 - **Plans contain no code samples**. A plan describes intended work and
   outcomes in prose, and avoids pre-baking method names, file names, or other
   details that are decided later, interactively.
