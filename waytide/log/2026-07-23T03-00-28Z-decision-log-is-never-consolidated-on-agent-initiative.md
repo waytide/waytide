@@ -1,0 +1,1 @@
+# The decision log is never consolidated, merged, or rewritten on the agent's initiative — never proposed either; only on explicit user command, and even then confirmed with the project's stakeholders. For a readable overview, ask Claude for a summary (a read-time projection), not a consolidation. Added to decision-log-convention
