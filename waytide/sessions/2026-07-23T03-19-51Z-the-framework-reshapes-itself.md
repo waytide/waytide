@@ -85,3 +85,7 @@ Finally, the undefined `waytide/sessions/` was given a convention. `constant`'s 
 ## A note on the session itself
 
 The session was reflexive throughout: an experiment run on the framework's own rules, the framework's language discipline turned on the framework's own files and on the assistant's prose, the framework's decision log recording the reshaping of the framework. The durable conclusions are the assistant's generation; the corrections that made them right were the engineer's — reframing "flatten," rescuing `solubility` and `efferent` from being flattened into mere vocabulary, catching slang the assistant reached for, and placing the session format where it belonged. The above-the-mean element at work, on the framework that names it.
+
+---
+
+Authored by Scott Bellware on Wed Jul 22 2026 at 8 PM PT

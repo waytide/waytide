@@ -1,0 +1,1 @@
+# Session records carry a provenance footer, for a different reason than rule files do: not because subtree strips git history (a session record keeps its history), but so the file is useful on its own without querying the git log

@@ -64,3 +64,7 @@ The commit followed the house rules — software-first subject, no Claude coauth
 ## A note on the session itself
 
 The turn that did the work was the engineer's question in step 3 — *is this a git thing or a session thing?* — which caught loose wording and forced the two moments apart. Once that was clear, the constraints in step 4 did the rest: they did not leave a menu of mechanisms to weigh, they eliminated all but one. The remaining honesty concern wasn't resolved so much as **placed** — written into the rule as the acknowledged cost of a deliberate tradeoff, where a later reader can see it, rather than smoothed over.
+
+---
+
+Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT

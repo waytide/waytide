@@ -18,12 +18,16 @@ Titled `# Session — <name> (<date>)`, it reads in this order:
 - **Glossary** — the terms settled during the session, each with its literal definition.
 - **Where the durable records live** — pointers to the rules, observations, log entries, experiments, and code the session produced.
 - Optionally, a **reflective closing note** on the session itself.
+- A **provenance footer** — the same `Authored by … / Changed by …` block the rule files carry (see the record-rule-authorship-in-a-footer rule for its format and its local, human-readable datetime form). A session record takes the footer too, so the file stands on its own: who wrote it and when is legible in the file itself, not only in version-control history.
 
 **Why:** the durable records capture *what* was decided, but the reasoning and the arc of a session — how the thinking moved, why a fork was taken, what vocabulary settled — are easy to lose and expensive to reconstruct. A narrative session record preserves that arc as a communicable whole, and, because it points to the durable records rather than restating them, it stays a guided tour rather than a second source of truth. The format lives here, with the directory convention — not in the `plan` package: a session record is a record of the *past*, while `plan` governs the forward-looking documents (plans, designs), the same way the experiment and loop-record formats live with their own conventions.
 
-**How to apply:** at a substantial session's close, write a session record here that narrates the session chronologically per the shape above, defines the settled vocabulary, and points to the durable records it produced. Related: the agent-plans-convention, agent-design-convention, and agent-experiments-convention (the sibling artifact conventions), the decision-log rule, and the observations rule.
+A session record carries a **provenance footer** — unlike the other working-state artifacts, which don't. The footer rule's own reason (a package installed by `git subtree` loses the composite's per-file history, so `git blame` can't show a rule's author) does *not* apply to a session record, which lives in the project's working state and keeps its git history intact. The footer is here for a different reason: **the file should be useful on its own.** A session record is written to be read as a self-contained narrative, so a reader should not have to leave the file and query the git log to learn who wrote it and when. The provenance belongs in the file for the same reason the narrative does.
+
+**How to apply:** at a substantial session's close, write a session record here that narrates the session chronologically per the shape above, defines the settled vocabulary, points to the durable records it produced, and ends with a provenance footer in the record-rule-authorship-in-a-footer format. Related: the agent-plans-convention, agent-design-convention, and agent-experiments-convention (the sibling artifact conventions), the record-rule-authorship-in-a-footer rule (the footer's format), the decision-log rule, and the observations rule.
 
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
