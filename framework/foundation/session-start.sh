@@ -46,5 +46,12 @@ fi
 count=$(printf '%s\n' "$packages" | wc -l | tr -d ' ')
 list=$(printf '%s\n' "$packages" | tr '\n' ',' | sed 's|,$||; s|,|, |g')
 
-printf '{"systemMessage": "Waytide loaded from %s/ — %s packages: %s"}\n' \
-  "$framework" "$count" "$list"
+# Installing foundation alone is the ordinary first install, so the single-package
+# notice is what a developer sees before any other package is added.
+noun=packages
+if [ "$count" = "1" ]; then
+  noun=package
+fi
+
+printf '{"systemMessage": "Waytide loaded from %s/ — %s %s: %s"}\n' \
+  "$framework" "$count" "$noun" "$list"

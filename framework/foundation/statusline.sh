@@ -35,7 +35,11 @@ if [ -n "$framework" ] && [ -z "$WAYTIDE_QUIET" ]; then
       find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | wc -l | tr -d ' '
   )
   if [ -n "$count" ] && [ "$count" != "0" ]; then
-    waytide="Waytide — $count packages"
+    noun=packages
+    if [ "$count" = "1" ]; then
+      noun=package
+    fi
+    waytide="Waytide — $count $noun"
   fi
 fi
 
