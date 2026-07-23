@@ -1,0 +1,1 @@
+# Waytide ships committed harness configuration — the constraint against depending on `.claude/` content is dropped, since nothing gitignores it and the CLAUDE.md bridge had already made the bootstrap harness-specific

@@ -1,7 +1,8 @@
 #!/bin/sh
 # Install (or refresh) every Waytide package into a consuming project, then
-# activate the framework by placing the project-root AGENTS.md and a CLAUDE.md
-# that imports it (Claude Code reads CLAUDE.md, not AGENTS.md).
+# activate the framework by placing the project-root AGENTS.md, a CLAUDE.md that
+# imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a .claude/settings.json
+# whose SessionStart hook and status line print the load notice.
 # Run from the root of the consuming project.
 set -e
 

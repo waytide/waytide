@@ -6,10 +6,7 @@ is developed under one shared history, then published to its own component repo 
 *installs* the packages, so this file is hand-maintained for the composite and does
 not match the one the installer generates.
 
-**At the start of a session, before responding to the first prompt, read every rule file
-under `framework/` and follow them.** The first prompt arrives together with this file;
-read the rules and print the notice below before answering it, rather than treating the
-session-start reading as preamble to get to later.
+**At the start of a session, read every rule file under `framework/` and follow them.**
 
 The rule packages live at the top level of `framework/` — `framework/foundation/`,
 `framework/language/`, and so on, including each package's `vocabulary.md` glossary (its
@@ -17,13 +14,14 @@ terms are binding and can't be applied unread). Read `framework/foundation/` fir
 defines the framework. The rules override default behavior where they conflict;
 explicit user instructions still win.
 
-**After reading the rules, and before answering the first prompt, print a one-line
-notice that Waytide is loaded and which packages are present** — for example:
-`Waytide loaded from framework/ — 7 packages: foundation, language, testing,
-design-by-efferent, code/ruby, git, plan`. List the package directories actually
-present under `framework/`, named and counted. The notice comes before the response
-to what was asked, not after it. Skip the notice when the `WAYTIDE_QUIET`
-environment variable is set to any non-empty value.
+**The load notice is printed by the harness, not by you — do not print one.** A
+`SessionStart` hook in `.claude/settings.json` runs `framework/foundation/session-start.sh`,
+which reads the package directories actually present and emits the one-line
+`Waytide loaded from framework/ — N packages: …` notice; `framework/foundation/statusline.sh`
+carries the same count in the status line for the rest of the session. Setting the
+`WAYTIDE_QUIET` environment variable to any non-empty value silences both. In a consuming
+project `install.sh` places the equivalent `.claude/settings.json`; here in the source it
+is committed like this file.
 
 The `waytide/` directory holds this project's own working state — `log/`,
 `deferred/`, `observations/`, `design/`, `plans/`, `sessions/`, `loops/`,

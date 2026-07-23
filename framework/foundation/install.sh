@@ -2,12 +2,13 @@
 # Install (or refresh) the foundation package AND activate the framework.
 # Foundation is standalone, but it owns the bootstrap: this script places the
 # project-root AGENTS.md that makes waytide/framework/ and waytide/rules/ get read at session start,
-# plus a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md).
+# a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a
+# .claude/settings.json whose SessionStart hook and status line print the load notice.
 # Run from the root of the consuming project.
 #
 # Usage:
-#   sh install.sh             install/refresh foundation, then place the root AGENTS.md and CLAUDE.md
-#   sh install.sh agents-md   place the root AGENTS.md and CLAUDE.md only (foundation already
+#   sh install.sh             install/refresh foundation, then place the bootstrap files
+#   sh install.sh agents-md   place the bootstrap files only (foundation already
 #                             installed; used by the composite install-all.sh so the
 #                             bootstrap logic lives in one place, not two)
 set -e
@@ -23,11 +24,8 @@ bootstrap() {
 This project's Waytide framework and working conventions live under `waytide/`,
 committed alongside the code and read at the start of each session.
 
-**At the start of a session, before responding to the first prompt, read every rule
-file under `waytide/framework/` and `waytide/rules/`, and follow them.** The first
-prompt arrives together with this file; read the rules and print the notice below
-before answering it, rather than treating the session-start reading as preamble to
-get to later.
+**At the start of a session, read every rule file under `waytide/framework/` and
+`waytide/rules/`, and follow them.**
 
 `waytide/framework/` holds the installed framework packages —
 `waytide/framework/foundation/`, `waytide/framework/language/`, and so on, including
@@ -36,14 +34,13 @@ unread). `waytide/rules/` holds this project's own local rules.
 Read `waytide/framework/foundation/` first; it defines the framework. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
-**After reading the rules, and before answering the first prompt, print a one-line
-notice that Waytide is loaded and which packages are present** — for example:
-`Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing,
-design-by-efferent, git`. List the package directories actually present under
-`waytide/framework/`, named and counted. The notice comes before the response to
-what was asked, not after it. Skip the notice when the `WAYTIDE_QUIET`
-environment variable is set to any non-empty value; a developer can set it in their
-shell, `direnv`, or a personal `.claude/settings.json` `env` block to silence it.
+**The load notice is printed by the harness, not by you — do not print one.** A
+`SessionStart` hook in `.claude/settings.json` runs
+`waytide/framework/foundation/session-start.sh`, which reads the package directories
+actually present and emits the one-line `Waytide loaded from … — N packages: …`
+notice; a status line carries the same count for the rest of the session. A developer
+silences both by setting the `WAYTIDE_QUIET` environment variable to any non-empty
+value in their own environment.
 
 The other directories under `waytide/` hold the project's working state, kept
 separate from the rules — `log/`, `deferred/`, `observations/`, `design/`,
@@ -140,6 +137,62 @@ place_claude_md() {
   fi
 }
 
+# The .claude/settings.json content that makes the harness print the load notice.
+settings_json() {
+  cat <<'EOF'
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh waytide/framework/foundation/session-start.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "sh waytide/framework/foundation/statusline.sh"
+  }
+}
+EOF
+}
+
+# Ensure .claude/settings.json carries the SessionStart hook and status line that
+# print the load notice. Unlike AGENTS.md and CLAUDE.md, this file cannot be safely
+# appended to — merging JSON needs a JSON tool that may not be installed, and a
+# corrupted settings.json silently disables every setting in it. So an existing file
+# is never modified: the exact block is printed for the developer to merge. Note
+# that adopting the status line replaces whatever status line they had configured.
+# Idempotent.
+place_settings_json() {
+  if [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json; then
+    echo ".claude/settings.json already runs the Waytide session-start notice — left unchanged."
+  elif [ ! -f .claude/settings.json ]; then
+    # No settings file yet — creating one takes nothing away, so do it directly.
+    mkdir -p .claude
+    settings_json > .claude/settings.json
+    echo "Created .claude/settings.json with the Waytide load notice (SessionStart hook and status line)."
+    echo "Commit it so the notice travels to everyone who checks the project out."
+  else
+    echo "You already have a .claude/settings.json."
+    echo
+    echo "It is not modified here: JSON cannot be safely appended to, and a malformed"
+    echo "settings.json silently disables every setting in it. Merge these two keys into"
+    echo "your file yourself — 'hooks' prints the load notice at session start, and"
+    echo "'statusLine' keeps the package count on screen. Note that setting 'statusLine'"
+    echo "REPLACES any status line you have already configured; leave that key out if you"
+    echo "would rather keep yours."
+    echo
+    echo "----------------------------------------------------------------------"
+    settings_json
+    echo "----------------------------------------------------------------------"
+  fi
+}
+
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.
 if [ "$1" != "agents-md" ]; then
   if [ ! -d "$prefix" ]; then
@@ -148,7 +201,9 @@ if [ "$1" != "agents-md" ]; then
   git subtree pull --prefix "$prefix" "$repo" master --squash
 fi
 
-# 2. Ensure the project-root AGENTS.md activates the framework, and that CLAUDE.md
-#    imports it so the bootstrap also reaches Claude Code sessions.
+# 2. Ensure the project-root AGENTS.md activates the framework, that CLAUDE.md
+#    imports it so the bootstrap also reaches Claude Code sessions, and that
+#    .claude/settings.json prints the load notice.
 place_agents_md
 place_claude_md
+place_settings_json
