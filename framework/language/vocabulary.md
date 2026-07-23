@@ -22,7 +22,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **increment** | "cut" | a bounded slice of scope delivered as a step |
 | **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
 | **scenario** | "arm" | one variant or case a method or feature handles |
-| a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up |
+| a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
 | **impact** | "what it costs" | the effect or consequences of a change, named neutrally rather than presumed a cost |
 | **examine** | "decode" | working through or inspecting something to understand it |
 | **initiate** | "pick up" | beginning work on something — starting a task, a deferred item, or other queued work |
@@ -40,9 +40,11 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **obsolete** is the fallback, not the goal — reach for the exact word when there is one: a reference whose target moved is **unresolvable**; a rule no longer in force is **retired** or **superseded**; a branch that can only go one way **has nothing to decide**; an assignment that never happens **never fires**. "dead" over-dramatizes — nothing died, and the drama distorts judgment, making routine tidying read as urgent repair.
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
+- **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master" — say **what changed**, **what was affected**, or **took effect**.
 
 **Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.
 
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT
+Changed by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
