@@ -39,7 +39,7 @@ if [ -n "$framework" ] && [ -z "$WAYTIDE_QUIET" ]; then
     if [ "$count" = "1" ]; then
       noun=package
     fi
-    waytide="Waytide — $count $noun"
+    waytide="Waytide ($count $noun)"
   fi
 fi
 
