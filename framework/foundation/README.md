@@ -16,10 +16,12 @@ to work with them; each has its own rule in this package:
   a queue, not a permanent record.
 - **`waytide/log/`**. The decision log: one file per decision, a one-line title.
 
-Two conventions cut across all of them: the **ISO-8601-UTC filename prefix**
+Three conventions cut across all of them: the **ISO-8601-UTC filename prefix**
 (`agent-file-names`) that makes every artifact sort chronologically and declare its
-timezone, and **purpose-over-category** (`rules-install-a-mindset`) — a rule's folder
-names the surface it acts on, not the purpose it serves.
+timezone; **a time value carries minutes and seconds**
+(`a-time-value-carries-minutes-and-seconds`) wherever a datetime written into a file
+includes a time of day; and **purpose-over-category** (`rules-install-a-mindset`) —
+a rule's folder names the surface it acts on, not the purpose it serves.
 
 Foundation also provides project-wide commands: **status report** (a whole-project
 summary) and **next deferred item**.
