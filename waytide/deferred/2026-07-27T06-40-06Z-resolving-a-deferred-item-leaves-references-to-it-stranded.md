@@ -26,11 +26,16 @@ What has to be settled:
   session record, an experiment record, or a log entry states what was true when written,
   and rewriting it erases the record. This is the same line the no-slang rule draws
   between live prose and a quoted historical decision.
-- **What the correction is.** Not merely deleting the pointer. The referring item pointed
-  at the other for a reason, and that reason usually survives resolution as a *settled
-  answer* worth naming in its place. The feature-cycle correction replaced a pointer to an
-  open question with the answer that question had received, which serves the reader better
-  than the original did.
+- **What the correction is — settled 2026-07-27.** Write `(deleted)` after the name, and
+  add what the deleted item decided:
+
+  > see the git-worktree item (deleted) — settled 2026-07-26: the working location is
+  > chosen at every initiation, in `experiment-runs-on-its-own-branch`
+
+  Both parts are needed. Without the mark, the name reads as a live pointer and the reader
+  only finds out by going to look. Without the decision, the mark leaves a name that cannot
+  be looked up. Where the item was **discarded** rather than carried out, say that and
+  point at its log entry, which is the only durable trace of it.
 - **Whether it is a step in the convention, a mechanical check, or both.** A `[[link]]` to
   a nonexistent file is findable mechanically; a prose reference by title ("the deferred
   item on considering a git worktree for experiments") is not, short of a name match.
@@ -63,3 +68,4 @@ experiments), and the `language` no-slang rule (the live-versus-historical disti
 ---
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:40:06 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:05:20 AM PT
