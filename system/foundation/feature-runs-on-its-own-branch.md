@@ -16,14 +16,15 @@ what accounts for every place this rule departs from the experiment's.
   another topic branch, and the record names it so the merge target is never ambiguous.
 - **The working location is chosen at initiation — single working tree or worktree.** Every
   feature branches; this chooses only how many checkouts the branch is worked in. **Single
-  working tree** creates the branch and switches the one tree to it, switching back at the
-  conclusion (`git switch -c feature/<subject>`). **Worktree** creates the branch and
-  checks it out in a second checkout (`git worktree add -b feature/<subject> <path>`)
-  while the main working tree stays on the upstream branch. At initiation the branch does
-  not exist yet, so both options create it, and both option labels say so — "switch to
-  `feature/<subject>`" would read as though the branch were already there. The `-b` is
-  required; the plain `git worktree add <path> <branch>` form applies only when a worktree
-  is added to a feature already under way. The choice is
+  Each option states what it
+  creates, rather than leaving it to be inferred. **Branch only** — create the branch
+  `feature/<subject>` and switch this working tree to it, switching back at the conclusion
+  (`git switch -c feature/<subject>`). **Branch and worktree** — create the branch and
+  check it out in a new worktree, a second working directory, while this working tree
+  stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). Both
+  create the branch, since it does not exist yet at initiation; the `-b` is required, and
+  the plain `git worktree add <path> <branch>` form applies only when a worktree is added
+  to a feature already under way. The choice is
   put to the user at **every** initiation, through the **AskUserQuestion** selection UI,
   with no standing default — as it is for an experiment. The choice, and for a worktree its
   **path**, go in the record; the conclusion executes the mechanics that match it.
@@ -113,3 +114,4 @@ govern the feature's design), and the `git` run-suite-before-commit rule.
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:33:40 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:12:37 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT

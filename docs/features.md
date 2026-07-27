@@ -10,7 +10,7 @@ A feature is kept: it's a dated file under `waytide/local/features/`, committed 
 
 A feature runs on **its own branch**, named `feature/<subject>`, and merges back into whatever branch it came from — often `master`, sometimes another topic branch.
 
-Starting one asks you **where it gets worked**: in your single working tree, which is created on the feature branch and switched back at the end, or in a **worktree** — a second checkout in its own directory, so your main working tree stays where it was and both are open at once. Either way the feature branches; the choice is only how many checkouts exist. You're asked every time, because the answer depends on the feature.
+Starting one asks you **where it gets worked**: **branch only**, which creates the branch and switches your working tree to it, or **branch and worktree**, which creates the branch and checks it out in a second working directory — a second checkout in its own directory, so your main working tree stays where it was and both are open at once. Either way the feature branches; the choice is only how many checkouts exist. You're asked every time, because the answer depends on the feature.
 
 The record holds:
 
