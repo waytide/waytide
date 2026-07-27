@@ -106,6 +106,14 @@ named **single tree** and **worktree**, not *Branch* and *Worktree* — calling 
 **one** confirmation: git refuses to delete a branch checked out in a worktree, so the
 order is forced and they are one cleanup act.
 
+**The worktree's path was settled afterward:** a sibling of the repository directory,
+named `<repository-name>-<subject>-experiment`. The shared prefix and the sibling
+placement put the worktree in the same lexical vicinity as its repository when the parent
+directory is listed, so the two are seen together — which matters most for the experiment
+nobody has opened in a fortnight, the same failure the session-start check answers from
+the other side. It also satisfies the constraint that the path stay outside the
+repository working tree.
+
 ## 6. The detection gap, and the session-start check
 
 The drift clause said the agent watches for main-sequence work. Examined, that watch
@@ -266,3 +274,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:21:33 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:23:32 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:38:10 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:41:37 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:47:02 PM PT
