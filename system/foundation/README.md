@@ -93,7 +93,17 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 
 This package has no dependencies. (The composite `install-all.sh` installs every package and runs this same bootstrap for you.)
 
-**Refresh from upstream** periodically to pull the latest rules:
+**Refresh from upstream** periodically to pull the latest rules. Once foundation is
+installed, one command refreshes every installed package:
+
+```
+sh waytide/system/foundation/refresh-packages.sh
+```
+
+It reports each package that moved and the rule files that changed in it, because those
+files are binding and a silent refresh would be a change of behavior nobody saw. Name
+packages to refresh only those (`sh … refresh-packages.sh testing git`). A single package
+can still be pulled directly:
 
 ```
 git subtree pull --prefix waytide/system/foundation https://github.com/waytide/foundation.git master --squash
