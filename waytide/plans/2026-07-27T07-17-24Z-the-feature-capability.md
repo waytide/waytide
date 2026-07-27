@@ -25,10 +25,10 @@ Five phases. The first settles a question the design left open and the rules can
 written around; the remaining four are ordered so nothing describes a mechanism that does
 not yet exist.
 
-- **Phase 1 — The open question.** Deliberation, not construction. The design left main-
-  sequence drift unrestated, and the lifecycle rule cannot be written coherently until it
-  is known whether feature work carries a drift clause at all. Resolving to *no clause* is
-  a legitimate outcome and unblocks the phase either way.
+- **Phase 1 — One question to answer.** Nothing gets built here. The design leaves one
+  thing undecided, and the feature rule cannot be finished without it. "The feature rule
+  says nothing about this" is a real answer, and the rest of the work can proceed either
+  way.
 - **Phase 2 — The rules.** Two new `foundation` rules, written to the rule format. Prose
   only; nothing executable, nothing to verify beyond review.
 - **Phase 3 — The mechanism.** The one executable change in the plan. The session-start
@@ -65,9 +65,14 @@ there is no suite in this repository — so each commit is reviewed rather than 
 
 ## Tasks
 
-- [ ] Task 1: The feature lifecycle's position on main-sequence drift is settled — whether
-  the clause is restated in terms that still mean something when features branch, or
-  dropped for feature work with the reason recorded.
+- [ ] Task 1: It is decided whether the feature rule tells you to watch for other work
+  starting while a feature is open.
+
+  The experiment rule tells you to watch for that. It can do so because an experiment is a
+  side trip from ordinary work, so the two can drift apart. A feature *is* the ordinary
+  work, so that reason does not carry over and the instruction cannot simply be copied.
+  Deciding the feature rule says nothing about this is a real answer. Either way the
+  answer and its reason are recorded, and the feature rule can then be written.
 - [ ] Task 2: The `waytide/features/` convention describes what a feature record holds —
   the intent, the branch topology, the working location, the canonical state line, and the
   confirmations — and how it relates to the loop record that carries the same feature's
@@ -87,3 +92,4 @@ there is no suite in this repository — so each commit is reviewed rather than 
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:17:24 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:23:45 AM PT
