@@ -15,7 +15,7 @@ Starting one asks you **where it gets worked**: **branch only**, which creates t
 The record holds:
 
 - **The intent** — what you're building, and why.
-- **Where it's worked** — the single tree, or a worktree and its path.
+- **Where it's worked** — branch only, or the worktree and its path.
 - **What was confirmed** — every decision you were asked to make.
 
 The *design* of the feature — the choices you made at each step, and the options you chose among — lives in its loop record instead. The two files name each other: one is how the feature was governed, the other is how it was designed.

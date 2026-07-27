@@ -36,7 +36,7 @@ first), `waytide/local/experiments/` (recorded experiments that test a question)
 `waytide/local/features/` (the lifecycle record of a feature), and `waytide/local/sessions/` (the narrative record of a work session).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
-working location chosen at initiation (the single working tree or a worktree), declared
+working location chosen at initiation (branch only, or branch and worktree), declared
 end states, and recorded confirmations — in the `experiment-runs-on-its-own-branch` and
 `feature-runs-on-its-own-branch` rules. They differ where an experiment's question does
 not carry over to a feature's intent: an experiment forecasts, reaches a verdict

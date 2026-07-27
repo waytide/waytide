@@ -16,7 +16,7 @@ The most important are the last two: these aren't tips in a prompt, they're a pe
 
 ## Building features
 
-6. **A feature lifecycle** — feature work runs on its own branch, worked in your single working tree or in a worktree, and ends in a stated condition: completed, abandoned, superseded, or paused. No feature quietly trails off.
+6. **A feature lifecycle** — feature work runs on its own branch, worked in your working tree or in a worktree of its own, and ends in a stated condition: completed, abandoned, superseded, or paused. No feature quietly trails off.
 7. **A record of how each feature was built** — what it was for, where it was worked, and what was confirmed along the way, kept after the feature ships.
 
 ## Running experiments

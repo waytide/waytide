@@ -65,11 +65,11 @@ what accounts for every place this rule departs from the experiment's.
   record is maintained, marked with its state. When one feature supersedes another, **both
   records name the counterpart**.
 - **Suspension keeps the branch.** A suspended feature's branch is not removed and its
-  record is marked suspended. Under the **single working tree** the tree switches back to
+  record is marked suspended. With **branch only** the tree switches back to
   the upstream branch and the branch sits dormant; under a **worktree** the worktree is kept
   in place and checked out, so the feature resumes where it stands.
 - **Conclude in the main working tree, on the upstream branch.** However a feature
-  concludes, the user should end up on the upstream branch — under the single working tree
+  concludes, the user should end up on the upstream branch — with branch only
   by switching back, and under a worktree in the main working tree, which never left it.
 - **Branch deletion is user-confirmed, and the worktree is removed first.** Deleting the
   feature branch, local or remote, requires explicit user confirmation put through the
@@ -116,3 +116,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 12:33:40 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:12:37 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:22:48 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT

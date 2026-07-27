@@ -13,12 +13,12 @@ An experiment is kept: it's a dated file under `waytide/local/experiments/`, com
 
 By default, an experiment is **one branch, worked until the question is answered**. No phases, no numbering — most experiments are exactly this. It runs on its own branch (named `experiment/<subject>`) so it's never mistaken for ordinary feature work, and it merges back into whatever branch it came from — often `master`, sometimes another topic branch.
 
-Starting one asks you **where it gets worked**: **branch only**, which creates the branch and switches your working tree to it, or **branch and worktree**, which creates the branch and checks it out in a second working directory — a second checkout on its own directory, so your main working tree stays on the upstream branch and both lines of work are open at once. Either way the experiment branches; the choice is only how many checkouts exist. It's asked every time, because the answer depends on the experiment: one that resolves in a sitting is lighter in the single tree, one that has to coexist with ordinary work is easier in a worktree.
+Starting one asks you **where it gets worked**: **branch only**, which creates the branch and switches your working tree to it, or **branch and worktree**, which creates the branch and checks it out in a second working directory — a second checkout on its own directory, so your main working tree stays on the upstream branch and both lines of work are open at once. Either way the experiment branches; the choice is only how many checkouts exist. It's asked every time, because the answer depends on the experiment: one that resolves in a sitting is lighter with branch only, one that has to coexist with ordinary work is easier in a worktree.
 
 The record holds:
 
 - **The question** — the thing you're testing.
-- **Where it's worked** — the single tree, or a worktree and its path.
+- **Where it's worked** — branch only, or the worktree and its path.
 - **The forecast** — what you expect to happen, written *before* the work.
 - **What actually happened** — recorded against the forecast as you go.
 - **Findings, and the misses** — the outcomes that escaped your forecast are usually the most useful.
@@ -43,7 +43,7 @@ The point of the lifecycle is that an experiment can't quietly become permanent,
 - **Merging is gated on tests passing.** If the branch has no tests covering the code you wrote, merging it needs your explicit confirmation — untested code never merges silently.
 - **You end up back on the main branch** every time an experiment concludes, never stranded on the experiment branch.
 - **Deleting the branch needs your say-so** — local and remote both.
-- **Drift is flagged, and you're offered a way out of it.** If you start ordinary work while a single-tree experiment is still open, the agent surfaces it rather than letting the two quietly diverge — and offers both remedies: **suspend** the experiment if you're setting it down for now, or **add a worktree** for it if you want to keep working it alongside. Which one is right depends on what you intend, so the agent asks rather than picking. In a worktree there's nothing to flag; the two are already separate.
+- **Drift is flagged, and you're offered a way out of it.** If you start ordinary work while a branch-only experiment is still open, the agent surfaces it rather than letting the two quietly diverge — and offers both remedies: **suspend** the experiment if you're setting it down for now, or **add a worktree** for it if you want to keep working it alongside. Which one is right depends on what you intend, so the agent asks rather than picking. In a worktree there's nothing to flag; the two are already separate.
 - **Every confirmation is recorded** in the experiment's file, so who authorized what is always on the record.
 
 ## Runs (only when you're comparing)
