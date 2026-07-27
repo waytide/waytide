@@ -1,0 +1,1 @@
+# The feature rule says nothing about watching for other work starting while a feature is open — during a feature, other work is normally another feature, which is ordinary, and the session-start notice already covers a feature being forgotten

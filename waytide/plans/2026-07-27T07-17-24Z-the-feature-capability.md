@@ -65,8 +65,13 @@ there is no suite in this repository — so each commit is reviewed rather than 
 
 ## Tasks
 
-- [ ] Task 1: It is decided whether the feature rule tells you to watch for other work
-  starting while a feature is open.
+- [x] Task 1: It is decided whether the feature rule tells you to watch for other work
+  starting while a feature is open. **Done 2026-07-27 — it does not.** During a feature,
+  other work is normally another feature, and starting one is ordinary rather than a
+  problem, so there is nothing to detect. The experiment's instruction exists because an
+  experiment is a side trip that can be forgotten while the main line moves on; a feature
+  has no such relationship to the work around it. Being forgotten is still a real risk for
+  a feature, and the session-start notice covers it.
 
   The experiment rule tells you to watch for that. It can do so because an experiment is a
   side trip from ordinary work, so the two can drift apart. A feature *is* the ordinary
@@ -93,3 +98,4 @@ there is no suite in this repository — so each commit is reviewed rather than 
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:17:24 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:23:45 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:26:33 AM PT
