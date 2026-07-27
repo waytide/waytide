@@ -29,9 +29,12 @@ what accounts for every place this rule departs from the experiment's.
   with no standing default — as it is for an experiment. The choice, and for a worktree its
   **path**, go in the record; the conclusion executes the mechanics that match it.
 - **A worktree is a sibling of the repository directory, named
-  `<repository-name>-<subject>-feature`.** For a repository at `…/projects/waytide/waytide`
+  `<repository-name>-feature-<subject>`** — the branch name with its slash written as a
+  dash, prefixed by the repository. For a repository at `…/projects/eventide/constant`
   and the branch `feature/upload-retries`, that is
-  `…/projects/waytide/waytide-upload-retries-feature`. The shared repository-name prefix
+  `…/projects/eventide/constant-feature-upload-retries`. The kind comes before the
+  subject, so every feature sorts together under `<repository>-feature-` rather than
+  interleaving with the experiments by subject. The shared repository-name prefix
   and the sibling placement put the worktree in the same lexical vicinity as its repository
   when the parent directory is listed. Sibling placement also keeps the path **outside the
   repository working tree**, where it must be: a worktree created inside it appears as
@@ -98,7 +101,7 @@ reach — the failure the design method exists to retire.
 **How to apply:** branch every feature as `feature/<subject>`, and record the upstream
 branch, the feature branch, and the base. Put the working location to the user at every
 initiation, and place a worktree as a sibling of the repository directory named
-`<repository-name>-<subject>-feature`. Design the feature through the hinges. End it in a
+`<repository-name>-feature-<subject>`. Design the feature through the hinges. End it in a
 state: **completed** on integration, **abandoned** if dropped, **superseded** if replaced
 (cross-referencing both records), or **suspended** if paused. Verify before integrating and
 add no gate at the merge; fix a post-merge failure from there. Leave the user on the
@@ -117,3 +120,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 4:12:37 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT

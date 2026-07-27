@@ -50,7 +50,7 @@ The two lifecycles look alike on purpose, and they part company in four places. 
 
 > **Intent:** uploads should retry on a timeout rather than failing outright.
 >
-> You branch `feature/upload-retries` and choose a worktree, since a defect report is likely this week and you'd rather not switch back and forth. It's created next to the repository as `waytide-upload-retries-feature`, so listing the parent directory shows both together. You build the feature through the hinges, one outcome at a time. The suite passes on every commit. You merge it into `master`, mark the record **Completed**, and confirm removing the worktree and the branch together.
+> You branch `feature/upload-retries` and choose a worktree, since a defect report is likely this week and you'd rather not switch back and forth. It's created next to the repository as `constant-feature-upload-retries`, so listing the parent directory shows both together — and all your features sort under one prefix. You build the feature through the hinges, one outcome at a time. The suite passes on every commit. You merge it into `master`, mark the record **Completed**, and confirm removing the worktree and the branch together.
 
 ---
 

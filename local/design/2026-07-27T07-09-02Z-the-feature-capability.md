@@ -47,7 +47,7 @@ experiment's. What this design settles is which parts mirror and which do not.
   put to the user through the selection interface at **every** initiation, with no
   standing default, exactly as for an experiment.
 - **A worktree is a sibling of the repository directory**, named
-  `<repository-name>-<subject>-feature`, so it groups lexically with its repository when
+  `<repository-name>-feature-<subject>`, so it groups lexically with its repository when
   the parent is listed, and sits outside the repository working tree.
 - **The working location changes on the same two triggers** — an interruption the user
   intends to work alongside, or **escalation**, the feature judged to need more isolation
@@ -151,3 +151,4 @@ the suite on integration. The response is to fix it from there.
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:09:02 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:11:34 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
