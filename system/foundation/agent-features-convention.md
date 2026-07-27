@@ -1,6 +1,6 @@
-# `waytide/features/` — the record of a feature's lifecycle
+# `waytide/local/features/` — the record of a feature's lifecycle
 
-`waytide/features/` holds **feature records**: one file per feature, carrying how the
+`waytide/local/features/` holds **feature records**: one file per feature, carrying how the
 feature began, where it is being worked, and what became of it. A feature record is a
 persisted, dated artifact, kept after the feature concludes.
 
@@ -33,9 +33,9 @@ persisted, dated artifact, kept after the feature concludes.
   gives it. The record then **gains a line**; the original is not rewritten.
 - **It is the feature's lifecycle record, not its design record.** The same feature's
   design — each pass's hinge, the options put to the developer, and the decision — belongs
-  in a loop record under `waytide/loops/` (see the design-by-efferent loop-records rule).
+  in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
   The two divide by concern and **each names the other**. They are separate files because
-  `waytide/loops/` is contributed by `design-by-efferent`, which includes `foundation`
+  `waytide/local/loops/` is contributed by `design-by-efferent`, which includes `foundation`
   rather than the reverse: a foundation rule requiring fields in that directory would
   invert the package graph, and would make the feature lifecycle unavailable to a project
   that installs `foundation` alone.
@@ -64,3 +64,4 @@ loop-records rule (the design record for the same feature), and the decision-log
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:31:14 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

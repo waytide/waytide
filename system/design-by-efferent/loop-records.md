@@ -1,6 +1,6 @@
-# Loop records — `waytide/loops/`: one file per feature recording the passes through the loop
+# Loop records — `waytide/local/loops/`: one file per feature recording the passes through the loop
 
-`waytide/loops/` holds **loop records** — one file per feature documenting the
+`waytide/local/loops/` holds **loop records** — one file per feature documenting the
 passes through the **loop** (the distributed OODA cycle; see the DBE vocabulary).
 Where the decision log captures *what* was decided (one line per decision), a
 loop record captures *how* — the deliberation history of a feature: the hinges
@@ -39,7 +39,7 @@ one-line decisions survive. A per-feature narrative of the loop's passes keeps i
 teaches the method by example, and exposes where gates were skipped.
 
 **How to apply:** when a feature's loop is worth preserving, add a file under
-`waytide/loops/` in the format above, recording each pass's hinge → options →
+`waytide/local/loops/` in the format above, recording each pass's hinge → options →
 decision/chat. Mark retroactive reconstructions as backfills. Keep the one-line
 decision-log entries separate and intact. Related: the DBE vocabulary (loop, hinge,
 gate, deliberation), the hinge-cycle rule, the auto-record-design-dialogue rule, and
@@ -49,3 +49,4 @@ foundation's file-name prefix and decision-log conventions.
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

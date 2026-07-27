@@ -1,6 +1,6 @@
 # How a design doc reads
 
-A design doc (`waytide/design/*.md`) is titled `# <Title> — Design` and shares a spine, not a fixed section list — the substance differs between a **feature/component** design and a **methodology** design, but the frame is common:
+A design doc (`waytide/local/design/*.md`) is titled `# <Title> — Design` and shares a spine, not a fixed section list — the substance differs between a **feature/component** design and a **methodology** design, but the frame is common:
 
 - **Summary** or **Premise** — the design in brief, or the premise a methodology argues from.
 - **Background & Motivation** — what prompted the design and the problem it resolves.
@@ -16,3 +16,4 @@ A design doc (`waytide/design/*.md`) is titled `# <Title> — Design` and shares
 ---
 
 Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

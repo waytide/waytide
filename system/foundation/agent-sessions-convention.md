@@ -1,9 +1,9 @@
-# `waytide/sessions/` — the narrative record of a work session
+# `waytide/local/sessions/` — the narrative record of a work session
 
-`waytide/sessions/` holds **session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A session is a unit of the engineer's work — it may run a few hours, a whole day, or span more than a day; its boundaries are the discrete piece of work, not a fixed clock.
+`waytide/local/sessions/` holds **session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A session is a unit of the engineer's work — it may run a few hours, a whole day, or span more than a day; its boundaries are the discrete piece of work, not a fixed clock.
 
 - **What a session record is.** The **guided tour** of the session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
-- **It is not the source of truth.** The durable records are: the binding rules (`waytide/packages/`, `waytide/rules/`), working observations (`waytide/observations/`), the decision log (`waytide/log/`), experiments (`waytide/experiments/`), and plans (`waytide/plans/`). The session record **points to** them throughout; they are authoritative, and the session record is the narrative that ties them together and preserves the reasoning behind each fork.
+- **It is not the source of truth.** The durable records are: the binding rules (`waytide/packages/`, `waytide/local/rules/`), working observations (`waytide/local/observations/`), the decision log (`waytide/local/log/`), experiments (`waytide/local/experiments/`), and plans (`waytide/local/plans/`). The session record **points to** them throughout; they are authoritative, and the session record is the narrative that ties them together and preserves the reasoning behind each fork.
 - **When it is written.** At the close of a session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the session has accumulated such work and proposes recording it. A trivial session needs no record; the session record is not a per-session obligation.
 - **How the recording is asked.** When the agent raises the question of recording a session, it puts the choice through the **AskUserQuestion** selection UI — not a free-text prose question — offering three options: **write a new session record** for the work, **append the previous session record**, or **don't write a session record**. The engineer's selection decides it. (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
 - **Naming.** A session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the agent-file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
@@ -30,3 +30,4 @@ Titled `# Session — <name> (<date>)`, it reads in this order:
 Authored by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

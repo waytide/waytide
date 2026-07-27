@@ -1,9 +1,9 @@
 # How an implementation plan reads
 
-An implementation plan (`waytide/plans/*.md`) is titled `# <Title> — Implementation Plan` and reads in a settled order. The sections, in order:
+An implementation plan (`waytide/local/plans/*.md`) is titled `# <Title> — Implementation Plan` and reads in a settled order. The sections, in order:
 
 - **Goal** — one paragraph: what the plan achieves.
-- **Source design** — a pointer to the `waytide/design/` doc the plan realizes (omit only when there is no separate design).
+- **Source design** — a pointer to the `waytide/local/design/` doc the plan realizes (omit only when there is no separate design).
 - **Supersedes** — when the plan replaces an earlier one, name it and say what carries over as history.
 - **Architecture** — the phases and how they group the tasks; characterize each phase (e.g. an atomic behavior-neutral conversion versus a test-first build).
 - **Tech Stack** — one line.
@@ -18,3 +18,4 @@ An implementation plan (`waytide/plans/*.md`) is titled `# <Title> — Implement
 ---
 
 Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

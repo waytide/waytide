@@ -3,7 +3,7 @@
 ## Summary
 
 Feature work gets a lifecycle mirroring the experiment capability's: its own branch, a
-working location chosen at initiation, a record under `waytide/features/`, declared end
+working location chosen at initiation, a record under `waytide/local/features/`, declared end
 states, and recorded confirmations. The mirror breaks in three places, each deliberately.
 A feature has an **intent**, not a question — so there is no forecast and no verdict
 states. Its tests are verified **before** integrating and there is no post-merge gate.
@@ -87,13 +87,13 @@ verdict vocabulary:
 
 ## The record
 
-`waytide/features/<iso-prefix>-<subject>.md`, carrying the intent, the branch topology
+`waytide/local/features/<iso-prefix>-<subject>.md`, carrying the intent, the branch topology
 (upstream branch, feature branch, base), the working location, the canonical `**State:**`
 line, and the confirmations the lifecycle required. It ends with a provenance footer like
 every working-state artifact.
 
 **It is a second file per feature, alongside the DBE loop record, and that is a cost
-accepted for a structural reason.** The loop record lives in `waytide/loops/`, a directory
+accepted for a structural reason.** The loop record lives in `waytide/local/loops/`, a directory
 the `design-by-efferent` package contributes. `design-by-efferent` includes `foundation`,
 not the reverse — so a foundation rule requiring lifecycle fields in the loop record would
 make foundation depend on a directory it does not own, inverting the package graph. It
@@ -118,7 +118,7 @@ the suite on integration. The response is to fix it from there.
 
 - **2026-07-26** — Feature work gets a capability mirroring the experiment capability.
   *None* was a live answer and was rejected.
-- **2026-07-26** — `foundation` owns the capability, with its own `waytide/features/`
+- **2026-07-26** — `foundation` owns the capability, with its own `waytide/local/features/`
   record, rather than `design-by-efferent` growing the loop record. The dependency graph
   decides it.
 - **2026-07-26** — A feature's tests are verified before integrating; there is no
@@ -143,10 +143,11 @@ the suite on integration. The response is to fix it from there.
   sharpening. Not done here.
 - **Whether a feature record and a loop record should cross-reference mechanically**, or
   by prose alone.
-- **The `waytide/features/` directory does not exist yet**, and neither do the rules this
+- **The `waytide/local/features/` directory does not exist yet**, and neither do the rules this
   design would be realized by. A plan sequences that build.
 
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:09:02 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:11:34 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

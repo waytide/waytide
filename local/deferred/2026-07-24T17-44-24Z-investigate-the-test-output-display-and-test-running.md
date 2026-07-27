@@ -53,7 +53,7 @@ What the investigation should establish:
   formats, the tree command) are consistent with each other, or have drifted.
 
 **Gated on:** nothing in flight blocks it. It is an investigation, so it produces
-findings first — recorded as observations under `waytide/observations/` if they are not
+findings first — recorded as observations under `waytide/local/observations/` if they are not
 yet settled — and only then any rule change. No rule is edited before the investigation
 reports.
 
@@ -78,3 +78,4 @@ package standalone), and the observations convention (where unsettled findings b
 
 Authored by Scott Bellware on Fri Jul 24 2026 at 10 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

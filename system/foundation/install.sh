@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install (or refresh) the foundation package AND activate the system.
 # Foundation is standalone, but it owns the bootstrap: this script places the
-# project-root AGENTS.md that makes waytide/system/ and waytide/rules/ get read at session start,
+# project-root AGENTS.md that makes waytide/system/ and waytide/local/rules/ get read at session start,
 # a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a
 # .claude/settings.json whose SessionStart hook and status line print the load notice.
 # Run from the root of the consuming project.
@@ -25,12 +25,12 @@ This project's Waytide system and working conventions live under `waytide/`,
 committed alongside the code and read at the start of each session.
 
 **At the start of a session, read every rule file under `waytide/system/` and
-`waytide/rules/`, and follow them.**
+`waytide/local/rules/`, and follow them.**
 
 `waytide/system/` holds the installed system packages —
 `waytide/system/foundation/`, `waytide/system/language/`, and so on, including
 each package's `vocabulary.md` glossary (its terms are binding and can't be applied
-unread). `waytide/rules/` holds this project's own local rules.
+unread). `waytide/local/rules/` holds this project's own local rules.
 Read `waytide/system/foundation/` first; it defines the system. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
@@ -42,10 +42,12 @@ notice; a status line carries the same count for the rest of the session. A deve
 silences both by setting the `WAYTIDE_QUIET` environment variable to any non-empty
 value in their own environment.
 
-The other directories under `waytide/` hold the project's working state, kept
-separate from the rules — `log/`, `deferred/`, `observations/`, `design/`,
-`plans/`, `sessions/`, `loops/`, `experiments/` — and are worked with as their
-conventions describe, not read as binding rules at session start.
+`waytide/` holds exactly two directories, splitting what came from outside from what
+is this project's own. `waytide/system/` is installed and never edited in place.
+`waytide/local/` is everything this project writes: `rules/` alongside the working
+state — `log/`, `deferred/`, `observations/`, `design/`, `plans/`, `sessions/`,
+`loops/`, `experiments/` — each worked with as its convention describes, and only
+`rules/` read as binding at session start.
 EOF
 }
 
@@ -65,7 +67,7 @@ place_agents_md() {
     echo "You already have an AGENTS.md at the project root."
     echo
     echo "Appending the Waytide bootstrap will add a section that tells the agent,"
-    echo "at the start of every session, to read every rule file under waytide/system/ and waytide/rules/ and follow"
+    echo "at the start of every session, to read every rule file under waytide/system/ and waytide/local/rules/ and follow"
     echo "it. Those rules then OVERRIDE the agent's default behavior where they conflict"
     echo "(your explicit instructions still win). Your existing AGENTS.md content is left"
     echo "exactly as it is; the section is added at the end, after a blank line."

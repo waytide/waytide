@@ -23,12 +23,19 @@ carries the same count in the status line for the rest of the session. Setting t
 project `install.sh` places the equivalent `.claude/settings.json`; here in the source it
 is committed like this file.
 
-The `waytide/` directory holds this project's own working state — `log/`,
-`deferred/`, `observations/`, `design/`, `plans/`, `sessions/`, `loops/`,
-`experiments/` — worked with as their conventions describe, not read as binding
-rules at session start. (In a consuming project the installed packages live under
-`waytide/system/`; here in the source they are at `system/`, and `waytide/` carries
-working state only.)
+The `local/` directory holds this project's own working state — `log/`,
+`deferred/`, `design/`, `plans/`, `sessions/`, `experiments/` — worked with as their
+conventions describe, not read as binding rules at session start.
+
+**This repository drops the `waytide/` wrapper that a consuming project has.** There,
+the two directories sit under it — `waytide/system/` for the installed packages and
+`waytide/local/` for the project's own work. Here they are at the root, `system/` and
+`local/`, for the same reason the packages are: this *is* Waytide, so wrapping it in
+its own name says nothing. Every rule states the consuming-project path; read
+`waytide/system/` as `system/` and `waytide/local/` as `local/` when applying one here.
+
+(The root `log/` directory is not part of this — it holds pre-Waytide working notes from
+the agent-norms migration, kept as a record. The decision log is `local/log/`.)
 
 **Do not run `system/foundation/install.sh` in this repo.** It installs the packages
 into a *consuming* project and generates that project's `waytide/system/` AGENTS.md.

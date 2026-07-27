@@ -4,7 +4,7 @@
 
 A feature is a bounded piece of ordinary work — the thing you're building, as opposed to a question you're testing. Waytide gives it a beginning, a place to be worked, and a stated end, so a project can always say what is in flight and what is finished.
 
-A feature is kept: it's a dated file under `waytide/features/`, committed with the code.
+A feature is kept: it's a dated file under `waytide/local/features/`, committed with the code.
 
 ## The shape of one
 
@@ -54,4 +54,4 @@ The two lifecycles look alike on purpose, and they part company in four places. 
 
 ---
 
-*The feature conventions come from the `foundation` package (the record format, and the branch-and-lifecycle rules). Installing `foundation` gives you the `waytide/features/` directory and these conventions. See [Getting started](#) for installation.*
+*The feature conventions come from the `foundation` package (the record format, and the branch-and-lifecycle rules). Installing `foundation` gives you the `waytide/local/features/` directory and these conventions. See [Getting started](#) for installation.*

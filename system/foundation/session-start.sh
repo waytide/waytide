@@ -132,15 +132,30 @@ report_open() {
   printf '%s %s open: %s' "$open_count" "$noun" "$names"
 }
 
-experiments=$(
-  report_open waytide/experiments experiment experiments \
-    Affirmed Refuted Inconclusive Abandoned Superseded
-)
+# Locate the project's own working state: waytide/local/ in a consuming project,
+# local/ in the Waytide authoring source — the same two-layout check the packages get.
+if [ -d waytide/local ]; then
+  own=waytide/local
+elif [ -d local ]; then
+  own=local
+else
+  own=
+fi
 
-features=$(
-  report_open waytide/features feature features \
-    Completed Abandoned Superseded
-)
+experiments=
+features=
+
+if [ -n "$own" ]; then
+  experiments=$(
+    report_open "$own/experiments" experiment experiments \
+      Affirmed Refuted Inconclusive Abandoned Superseded
+  )
+
+  features=$(
+    report_open "$own/features" feature features \
+      Completed Abandoned Superseded
+  )
+fi
 
 # A literal backslash-n, so the JSON string carries a line break the harness
 # renders — not an actual newline, which would be invalid inside a JSON string.

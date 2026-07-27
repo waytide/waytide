@@ -3,7 +3,7 @@
 ## Goal
 
 Give feature work the lifecycle the design settles: its own branch, a working location
-chosen at initiation, a record under `waytide/features/`, four declared end states, and
+chosen at initiation, a record under `waytide/local/features/`, four declared end states, and
 recorded confirmations — with the four places the mirror to the experiment capability
 deliberately breaks. When this is done, `foundation` carries a feature capability
 alongside its experiment capability, and the session-start notice reports open work of
@@ -16,7 +16,7 @@ feature onward. That is the intent, not a side effect.
 
 ## Source design
 
-`waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md` — settled 2026-07-26 and
+`waytide/local/design/2026-07-27T07-09-02Z-the-feature-capability.md` — settled 2026-07-26 and
 2026-07-27.
 
 ## Architecture
@@ -55,7 +55,7 @@ automated suite in this repository.
   verified: exercised against a concluded record, an unconcluded one, a record with no
   state line, and the quiet opt-out, before it is committed.
 - **Every rule carries a provenance footer**; every decision made during the work gets its
-  own one-line entry in `waytide/log/`.
+  own one-line entry in `waytide/local/log/`.
 
 ## Commit policy
 
@@ -78,7 +78,7 @@ there is no suite in this repository — so each commit is reviewed rather than 
   work, so that reason does not carry over and the instruction cannot simply be copied.
   Deciding the feature rule says nothing about this is a real answer. Either way the
   answer and its reason are recorded, and the feature rule can then be written.
-- [x] Task 2: The `waytide/features/` convention describes what a feature record holds —
+- [x] Task 2: The `waytide/local/features/` convention describes what a feature record holds —
   the intent, which branch it is on and what it branched from, where it is being worked,
   the line that records its state, and the confirmations — and how it relates to the loop
   record that carries the same feature's design. **Done 2026-07-27** as
@@ -119,3 +119,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:30:58 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:12 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:35 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

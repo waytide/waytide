@@ -4,17 +4,20 @@ The `waytide/` [artifact system](https://github.com/waytide/waytide) that every 
 
 All agent artifacts for a project live under a single top-level `waytide/` folder, so
 they are committed to git alongside the code and read at the start of each session
-rather than recalled. Foundation defines the four core artifact directories and how
-to work with them; each has its own rule in this package:
+rather than recalled. It holds two directories, splitting what came from outside from
+what is the project's own: **`waytide/system/`**, the installed packages, never edited
+in place; and **`waytide/local/`**, everything the project writes. Foundation defines
+the four core artifact directories and how to work with them; each has its own rule in
+this package:
 
-- **`waytide/system/`** and **`waytide/rules/`**. Binding project rules, one per
+- **`waytide/system/`** and **`waytide/local/rules/`**. Binding project rules, one per
   file, read and followed every session — the installed system packages in
-  `waytide/system/`, the project's own local rules in `waytide/rules/`.
-- **`waytide/observations/`**. Working hypotheses and rule-candidates still under
+  `waytide/system/`, the project's own local rules in `waytide/local/rules/`.
+- **`waytide/local/observations/`**. Working hypotheses and rule-candidates still under
   discovery; not yet binding.
-- **`waytide/deferred/`**. Design changes postponed until the current task finishes;
+- **`waytide/local/deferred/`**. Design changes postponed until the current task finishes;
   a queue, not a permanent record.
-- **`waytide/log/`**. The decision log: one file per decision, a one-line title.
+- **`waytide/local/log/`**. The decision log: one file per decision, a one-line title.
 
 Three conventions cut across all of them: the **ISO-8601-UTC filename prefix**
 (`agent-file-names`) that makes every artifact sort chronologically and declare its
@@ -27,10 +30,10 @@ Foundation also provides project-wide commands: **status report** (a whole-proje
 summary) and **next deferred item**.
 
 Beyond the four core directories, foundation defines the **work-artifact**
-directories for planning and running changes — `waytide/plans/` (implementation plans
-that sequence a settled design), `waytide/design/` (design docs that settle direction
-first), `waytide/experiments/` (recorded experiments that test a question),
-`waytide/features/` (the lifecycle record of a feature), and `waytide/sessions/` (the narrative record of a work session).
+directories for planning and running changes — `waytide/local/plans/` (implementation plans
+that sequence a settled design), `waytide/local/design/` (design docs that settle direction
+first), `waytide/local/experiments/` (recorded experiments that test a question),
+`waytide/local/features/` (the lifecycle record of a feature), and `waytide/local/sessions/` (the narrative record of a work session).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (the single working tree or a worktree), declared
@@ -44,7 +47,7 @@ integrates. How plans and designs *read* (their sections) is the `plan` package'
 concern.
 
 Other packages may contribute their own artifact directories (for example,
-design-by-efferent contributes `waytide/loops/`); foundation owns
+design-by-efferent contributes `waytide/local/loops/`); foundation owns
 `rules`/`observations`/`deferred`/`log` and the
 `plans`/`design`/`experiments`/`features`/`sessions` work-artifact directories.
 
@@ -62,7 +65,7 @@ Foundation carries an **`install.sh`** — the only package that does, because i
 sh install.sh
 ```
 
-It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/` and `waytide/rules/` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
+It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/` and `waytide/local/rules/` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
 
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 

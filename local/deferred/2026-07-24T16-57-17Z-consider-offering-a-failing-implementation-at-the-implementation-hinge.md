@@ -55,7 +55,7 @@ floor should instead be met by finding the real underlying decision.
 **How to apply:** settle the question first — decide whether a failing implementation is a
 candidate at the implementation hinge, remains a separate optional hinge as the
 contained-red/green rule has it, or is dropped as a candidate entirely — and record the
-decision in `waytide/log/`. Only then conform the hinge-cycle rule, the
+decision in `waytide/local/log/`. Only then conform the hinge-cycle rule, the
 first-implementation-may-run-a-contained-red-green-loop rule, and the present-every-prompt
 rule's two-option guidance to it. Delete this file when it is carried out, and log that it
 was done. Related: the hinge-cycle rule (the implementation hinge), the
@@ -68,3 +68,4 @@ case, where the implementation hinge is degenerate).
 ---
 
 Authored by Scott Bellware on Fri Jul 24 2026 at 9 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

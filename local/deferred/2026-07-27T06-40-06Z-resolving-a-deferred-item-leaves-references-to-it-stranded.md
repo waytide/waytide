@@ -10,7 +10,7 @@ Two instances exist, one of them long predating its discovery:
 - **`add-the-eventide-common-interest-license-to-each-package`** closes with
   `Related: [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]]`. That
   item was carried out — the republication is logged at
-  `waytide/log/2026-07-20T23-40-45Z-all-seven-component-repos-republished-from-the-rules-package-layout.md`
+  `waytide/local/log/2026-07-20T23-40-45Z-all-seven-component-repos-republished-from-the-rules-package-layout.md`
   — and its file deleted, so the link resolves to nothing. It has been stranded since
   **2026-07-20** and was found only by searching for it deliberately.
 - **`consider-a-feature-cycle-mirroring-the-experiment-cycle`** referred twice to the
@@ -69,3 +69,4 @@ experiments), and the `language` no-slang rule (the live-versus-historical disti
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:40:06 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:05:20 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT

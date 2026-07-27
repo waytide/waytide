@@ -17,7 +17,7 @@ Waytide loaded from waytide/system/ — 5 packages: foundation, language, testin
 1 feature open: upload-retries (suspended)
 ```
 
-  Each record under `waytide/experiments/` and `waytide/features/` is read for its
+  Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
   canonical `**State:**` line (see the agent-experiments-convention and the
   agent-features-convention). An experiment whose state is **Affirmed**, **Refuted**,
   **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that
@@ -68,3 +68,4 @@ Changed by Scott Bellware on Thu Jul 23 2026 at 3 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
