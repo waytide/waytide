@@ -282,6 +282,49 @@ history is direct-to-`master`; from the next feature onward, work here starts on
 and asks where it should be worked. The plan named that as the intent rather than a side
 effect.
 
+## 11. Two component repositories had diverged
+
+Only `foundation` changed, so it was the one package to republish. The fast-forward guard
+refused it: `waytide/foundation` carried a commit made directly to the component repo,
+adding `record-title-date-format.md` — a rule existing nowhere in this composite.
+`CONTRIBUTING.md` forbids committing downstream, and nothing detects it.
+
+**It contradicted the night's own work.** That rule writes a record's title date as
+`Mon Jan 1 2026 18:06` — 24-hour, minutes, explicitly no seconds — while
+`a-time-value-carries-minutes-and-seconds`, written hours earlier, requires seconds on
+every datetime written into a file. The general rule had been written against a repository
+that did not contain the rule it contradicted.
+
+**Settled: a record title is the one exception**, and the exception is argued, not
+granted. The seconds rule exists because a **running history's** entries collide at a
+coarse resolution — a footer's later line becomes indistinguishable from the one before it
+and goes unwritten. A title appears **once** per file, so nothing can collide with it, and
+the filename beside it already carries the same instant to the second in UTC. Both rules
+now state the exception and its reason. The seconds rule had also cited a session record's
+title as an example of a date carrying no time, which the adopted rule makes false;
+corrected.
+
+The four session-record titles were conformed, including one carrying a **date range**,
+which the adopted rule forbids — this record's own title among them.
+
+**A second direct commit, in `waytide/git`:** the *Package version form* correction to the
+subject-first commit-message rule, whose own message said its upstream publishing was
+deferred. Adopted verbatim, footer line included, since bringing it into the composite
+changes nothing further.
+
+**Both publishes required a force-push, and nothing was lost.** A commit made directly to
+a component repo can never become an ancestor of a split, so adopting the change does not
+make the publish fast-forward. The content was verified before each push — the foundation
+rule intact with additions, the git rule byte-identical — so the commit objects were
+replaced and their content survived, because it had been put in the composite first.
+
+**Adopted from the episode:** `report-direct-commits.sh`, which walks back from each
+component repo's head reporting commits this history does not contain. It lives in the
+composite, not in `foundation` — a consuming project installs packages and never publishes
+them. And `CONTRIBUTING.md`'s divergence guidance was corrected: it said "stop — do not
+force," which is right about not discarding and wrong about the remedy. Adopt, verify,
+then force.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -299,6 +342,14 @@ effect.
 - **A rule should not claim more than it delivers.** "The agent watches for main-sequence
   drift" read as a guarantee; it rests on one mechanical signal and a judgment, and a
   miss is silent. The clause now says so.
+- **A downstream commit is invisible until a publish fails.** Two of them sat in component
+  repositories for days. Nothing announced either; both surfaced only because a publish was
+  attempted. The check that now exists is four lines and could have been written at any
+  point since the component repos were created.
+- **Adopt before forcing.** A commit made directly to a component repository can never
+  become an ancestor of a split, so the publish will need `--force` no matter what. What
+  decides whether that is destructive is whether the content was brought into the composite
+  first.
 - **A gate is the right home for a situational trade-off.** The worktree item could not
   be settled as one answer for every experiment; it settled in an afternoon once posed as
   a choice made per experiment.
@@ -350,13 +401,14 @@ effect.
   `record-rule-authorship-in-a-footer.md`, `experiment-runs-on-its-own-branch.md`,
   `agent-experiments-convention.md`, `announce-waytide-at-session-start.md`, and the
   foundation `README.md`.
-- **Script:** `framework/foundation/session-start.sh`, which now reports experiments that
-  have not concluded.
-- **Decision log:** twenty-six entries under `waytide/log/` — three for the datetime
+- **Scripts:** `framework/foundation/session-start.sh`, which now reports experiments and
+  features that have not concluded, and `report-direct-commits.sh` at the repository root,
+  which reports component repositories carrying commits this history does not contain.
+- **Decision log:** thirty-one entries under `waytide/log/` — three for the datetime
   resolution, five for the experiment working location, three for the session-start check
   and the drift clause, one each for the second trigger, its name, and the worktree
-  directory naming, five for the feature capability's design, and seven for its plan and
-  build.
+  directory naming, five for the feature capability's design, seven for its plan and build,
+  and five for the component-repository reconciliation.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
 - **Design:** `waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md`, the first
@@ -375,6 +427,12 @@ effect.
   `2026-07-27T06-40-06Z-resolving-a-deferred-item-leaves-references-to-it-stranded`.
 - **Documentation:** `docs/experiments.md`, conformed to the lifecycle change. The
   standing website-content review item still covers the page as a whole.
+- **Adopted from the component repositories:**
+  `framework/foundation/record-title-date-format.md` and the *Package version form*
+  correction in `framework/git/subject-first-commit-messages.md`, both written directly
+  downstream and brought here. `CONTRIBUTING.md` carries the corrected divergence remedy.
+- **Component repositories:** `waytide/foundation` at `80558d8` and `waytide/git` at
+  `e72d484`, both force-published after the adoption. The other five were already current.
 - **Commits:** `1dd49e8` (four uncommitted deferred items), `729e097` (the datetime
   resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
   check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
@@ -382,7 +440,8 @@ effect.
   deferred), `27c5312` (the worktree directory naming), `5749772` (the feature capability
   design), `7929550` (the *completed* state's name), `cae8a5c` and `dd84636` (the plan),
   `6860015` through `d568f3f` (its seven tasks), `f262a47` (a correction to the last
-  task's note), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` / `4a85012` / `142d75f` /
+  task's note), `892a3b8` (the record-title format adopted and reconciled), `9a70204` (the
+  git package's correction adopted), `2aae74e` (the direct-commit check), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` / `4a85012` / `142d75f` /
   `47b4abc` / `5111a9d` (this record's earlier versions).
 
 ---
@@ -398,3 +457,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:51:43 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:14:45 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:34:49 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:57:23 AM PT
