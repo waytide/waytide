@@ -42,8 +42,11 @@ if [ ! -d waytide/framework ]; then
   exit 1
 fi
 
-if [ -n "$(git status --porcelain)" ]; then
-  echo "The working tree has uncommitted changes." >&2
+# Tracked changes only. Untracked files are not at risk from a move or a subtree add,
+# and this script is often downloaded into the project root to be run — which would
+# otherwise trip its own precondition.
+if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+  echo "The working tree has uncommitted changes to tracked files." >&2
   echo "This migration moves directories and makes commits; commit or stash first." >&2
   exit 1
 fi
