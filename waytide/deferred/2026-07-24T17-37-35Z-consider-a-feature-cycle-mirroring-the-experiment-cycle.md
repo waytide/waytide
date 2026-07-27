@@ -75,13 +75,14 @@ feature rather than from the experiment's verdict vocabulary, and record the dec
 `waytide/log/`. Only then write or change the governing rules, restating main-sequence
 drift if features become branched. Delete this file when it is carried out, and log that
 it was done. Related: the experiment-runs-on-its-own-branch rule (the lifecycle being
-mirrored) and the agent-experiments-convention (its record), the design-by-efferent
-hinge-cycle and human-in-the-loop rules (what already governs the inside of a feature),
-the loop-records rule (the per-feature record that exists), the agent-plans-convention,
-the `git` run-suite-before-commit rule (the gate that exists today), and the deferred item
-on a git worktree for experiments.
+mirrored, and where the working-location question was settled for experiments) and the
+agent-experiments-convention (its record), the design-by-efferent hinge-cycle and
+human-in-the-loop rules (what already governs the inside of a feature), the loop-records
+rule (the per-feature record that exists), the agent-plans-convention, and the `git`
+run-suite-before-commit rule (the gate that exists today).
 
 ---
 
 Authored by Scott Bellware on Fri Jul 24 2026 at 10 AM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:33:20 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:35:00 PM PT
