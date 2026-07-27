@@ -8,18 +8,21 @@ A project running Waytide announces the framework's presence through **two surfa
 Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing, design-by-efferent, git
 ```
 
-  The same notice reports **experiments that have not concluded**, on a second line,
-  when there are any:
+  The same notice reports **experiments and features that have not concluded**, on a
+  further line each, when there are any:
 
 ```
 Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
+1 feature open: upload-retries (suspended)
 ```
 
-  Each record under `waytide/experiments/` is read for its canonical `**State:**` line
-  (see the agent-experiments-convention). A record whose state is **Affirmed**,
-  **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded and is
-  not reported; **Suspended** and a record carrying no state line are. When every
+  Each record under `waytide/experiments/` and `waytide/features/` is read for its
+  canonical `**State:**` line (see the agent-experiments-convention and the
+  agent-features-convention). An experiment whose state is **Affirmed**, **Refuted**,
+  **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that
+  is **Completed**, **Abandoned**, or **Superseded**; those are not reported. **Suspended**
+  and a record carrying no state line are. When every
   experiment has concluded the second line is absent entirely, so the notice grows only
   when there is something open.
 
@@ -63,3 +66,4 @@ Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Thu Jul 23 2026 at 2 PM PT
 Changed by Scott Bellware on Thu Jul 23 2026 at 3 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT

@@ -88,8 +88,10 @@ there is no suite in this repository — so each commit is reviewed rather than 
   are verified before integrating with nothing gating the merge. **Done 2026-07-27** as
   `feature-runs-on-its-own-branch`, carrying Task 1's answer as an explicit statement that
   there is no instruction to watch for other work, and why.
-- [ ] Task 4: The session-start notice reports features that have not concluded, alongside
-  the experiments it already reports.
+- [x] Task 4: The session-start notice reports features that have not concluded, alongside
+  the experiments it already reports. **Done 2026-07-27.** The per-directory scan became a
+  shell function taking the directory, its nouns, and its concluded state words, so the two
+  capabilities share one implementation rather than a copied block.
 - [ ] Task 5: The foundation package's introduction names the feature capability and its
   artifact directory, as it names the experiment's.
 - [ ] Task 6: The documentation site describes feature work — an entry in the capability
@@ -104,3 +106,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:23:45 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:26:33 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:27:13 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:28:02 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT

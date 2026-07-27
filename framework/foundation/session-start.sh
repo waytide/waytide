@@ -56,24 +56,34 @@ fi
 notice=$(printf 'Waytide loaded from %s/ — %s %s: %s' \
   "$framework" "$count" "$noun" "$list")
 
-# Report experiments that have not reached a concluded state. An experiment is
-# never left silently open (the experiment-runs-on-its-own-branch rule), but
-# nothing otherwise brings an open one to attention: the working directories
-# under waytide/ are not read at session start, and an experiment worked in a
-# worktree leaves no trace in the main working tree at all — it stays on the
-# upstream branch, so even the branch name gives nothing away.
+# Report work that has not reached a concluded state — experiments and features
+# alike. Neither is ever left silently open (the experiment-runs-on-its-own-branch
+# and feature-runs-on-its-own-branch rules), but nothing otherwise brings an open
+# one to attention: the working directories under waytide/ are not read at session
+# start, and work done in a worktree leaves no trace in the main working tree at
+# all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
-# The state is read from the record's canonical "**State:** <state>" line. The
-# state words also appear throughout a record's forecast and findings prose, so
-# only that line is authoritative; a record without one is still in flight.
-experiments=
-experiment_count=0
+# The state is read from the record's canonical "**State:** <state>" line. The state
+# words also appear throughout a record's prose, so only that line is authoritative;
+# a record without one is still in flight.
+#
+# Prints "<n> <noun> open: <name> (<note>), ..." or nothing. Arguments: the
+# directory, the singular noun, the plural noun, then the concluded state words.
+report_open() {
+  directory=$1
+  singular=$2
+  plural=$3
+  shift 3
 
-if [ -d waytide/experiments ]; then
-  for record in waytide/experiments/*.md; do
+  [ -d "$directory" ] || return 0
+
+  names=
+  open_count=0
+
+  for record in "$directory"/*.md; do
     [ -f "$record" ] || continue
 
-    # The line is ordinarily a list item in the record's Setup block, so an
+    # The line is ordinarily a list item in the record's setup block, so an
     # optional leading dash is allowed.
     state=$(
       sed -n \
@@ -82,10 +92,16 @@ if [ -d waytide/experiments ]; then
         tail -1
     )
 
+    concluded=
+    for word in "$@"; do
+      if [ "$state" = "$word" ]; then
+        concluded=yes
+        break
+      fi
+    done
+    [ -z "$concluded" ] || continue
+
     case "$state" in
-      Affirmed|Refuted|Inconclusive|Abandoned|Superseded)
-        continue
-        ;;
       Suspended)
         note=suspended
         ;;
@@ -102,20 +118,38 @@ if [ -d waytide/experiments ]; then
         sed 's|^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}Z-||'
     )
 
-    experiment_count=$((experiment_count + 1))
-    experiments="${experiments}${experiments:+, }${name} (${note})"
+    open_count=$((open_count + 1))
+    names="${names}${names:+, }${name} (${note})"
   done
-fi
 
-if [ "$experiment_count" -gt 0 ]; then
-  enoun=experiments
-  if [ "$experiment_count" = "1" ]; then
-    enoun=experiment
+  [ "$open_count" -gt 0 ] || return 0
+
+  noun=$plural
+  if [ "$open_count" = "1" ]; then
+    noun=$singular
   fi
 
-  # A literal backslash-n, so the JSON string carries a line break the harness
-  # renders — not an actual newline, which would be invalid inside a JSON string.
-  notice="${notice}\\n${experiment_count} ${enoun} open: ${experiments}"
+  printf '%s %s open: %s' "$open_count" "$noun" "$names"
+}
+
+experiments=$(
+  report_open waytide/experiments experiment experiments \
+    Affirmed Refuted Inconclusive Abandoned Superseded
+)
+
+features=$(
+  report_open waytide/features feature features \
+    Completed Abandoned Superseded
+)
+
+# A literal backslash-n, so the JSON string carries a line break the harness
+# renders — not an actual newline, which would be invalid inside a JSON string.
+if [ -n "$experiments" ]; then
+  notice="${notice}\\n${experiments}"
+fi
+
+if [ -n "$features" ]; then
+  notice="${notice}\\n${features}"
 fi
 
 printf '{"systemMessage": "%s"}\n' "$notice"
