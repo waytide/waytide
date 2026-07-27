@@ -36,6 +36,13 @@ work is added.
 
 ## Publishing a package
 
+**Before publishing, check for direct commits.** Run `sh report-direct-commits.sh` from
+the repository root. It reads each component repo's `master` and reports any commit whose
+message this repository's history does not contain — that is, a commit made directly to the
+component repo rather than produced by a split. It fetches and pushes nothing, and exits
+non-zero when it finds something. Two such commits went unnoticed for days before the check
+existed, found only when a publish was attempted; nothing else announces them.
+
 After committing a change here, re-publish the affected package by splitting its
 directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path, so a package whose directory path is
@@ -60,9 +67,23 @@ git branch -D publish-tmp
 ```
 
 `code/ruby` splits from its nested path (`--prefix framework/code/ruby`) into
-the flat repo name `waytide/code-ruby`. If a push is **rejected**, stop — do not force; it means
-the component repo diverged (a direct commit, which the downstream-only rule
-forbids). The full step-by-step for every package — including the one-time repo
+the flat repo name `waytide/code-ruby`.
+
+**If a push is rejected, stop — do not force yet.** A rejection means the component repo
+diverged, which the downstream-only rule forbids but does not prevent. Do not discard what
+is there. The remedy, in order:
+
+1. **Find what diverged** — `sh report-direct-commits.sh`, or read the component's head
+   directly.
+2. **Adopt the change into the composite**, where it belongs, and reconcile it with any
+   rule it conflicts with. This is a real authoring step, not a mechanical copy: the
+   direct commit was written without the composite in view, so it may contradict something.
+3. **Re-split, and confirm the content matches** what the component repo holds before
+   pushing anything.
+4. **Then force-push.** A commit made directly to a component repo can never become an
+   ancestor of a split, so no amount of adopting makes the publish fast-forward. Forcing is
+   correct once the content is safely in the composite, and only then — the commit object is
+   replaced, and its content survives because step 2 put it here. The full step-by-step for every package — including the one-time repo
 create/rename cases — is the **Phase B checklist**
 (`log/2026-07-17-agent-norms-phase-b-checklist.md`) and its **runbook**.
 
