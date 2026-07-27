@@ -14,6 +14,11 @@
 
 set -e
 
+# Where the component repositories live. Overridable so a fork or a mirror can be
+# refreshed from, and so this script can be exercised against a local repository
+# without reaching the network.
+origin=${WAYTIDE_ORIGIN:-https://github.com/waytide}
+
 # --- Preconditions ---------------------------------------------------------
 
 if [ ! -d .git ]; then
@@ -89,20 +94,30 @@ failed=
 for package in $packages; do
   # code/ruby is nested here and publishes to the flat repository name code-ruby.
   repository=$(printf '%s' "$package" | tr '/' '-')
-  url="https://github.com/waytide/$repository.git"
+  url="$origin/$repository.git"
   prefix="waytide/system/$package"
 
   before=$(git rev-parse HEAD)
 
-  if ! git subtree pull --prefix "$prefix" "$url" master --squash --quiet >/dev/null 2>&1; then
-    # A pull conflicts when the project edited the package in place. Leave no
-    # half-merged tree behind, and keep going — one package should not block the rest.
+  # Keep the pull's own words. A pull fails for more than one reason — the project
+  # edited the package in place, or an untracked file sits where an incoming one goes —
+  # and guessing which would send the reader after the wrong fix.
+  complaint=$(mktemp)
+
+  if ! git subtree pull --prefix "$prefix" "$url" master --squash --quiet >"$complaint" 2>&1; then
+    # Leave no half-merged tree behind, and keep going — one package should not
+    # block the rest.
     if [ -f .git/MERGE_HEAD ]; then
       git merge --abort 2>/dev/null || true
     fi
     failed="${failed}${failed:+ }$package"
+    echo "$package — could not refresh:"
+    sed 's|^|  |' "$complaint" | grep -v '^  $' | head -12
+    rm -f "$complaint"
     continue
   fi
+
+  rm -f "$complaint"
 
   after=$(git rev-parse HEAD)
 
@@ -131,9 +146,9 @@ if [ -n "$failed" ]; then
 
 Could not refresh: $failed
 
-A pull conflicts when the project has edited an installed package in place. Those
-edits belong upstream — see CONTRIBUTING in the Waytide source for how to get them
-there — after which the refresh succeeds. Nothing was left half-merged.
+Each one's own complaint is above. The usual causes are an installed package edited
+in place — those edits belong upstream, and the refresh succeeds once they are there —
+or an untracked file sitting where an incoming one goes. Nothing was left half-merged.
 REPORT
 fi
 

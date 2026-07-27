@@ -102,7 +102,8 @@ sh waytide/system/foundation/refresh-packages.sh
 
 It reports each package that moved and the rule files that changed in it, because those
 files are binding and a silent refresh would be a change of behavior nobody saw. Name
-packages to refresh only those (`sh … refresh-packages.sh testing git`). A single package
+packages to refresh only those (`sh … refresh-packages.sh testing git`). Set
+`WAYTIDE_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/waytide`. A single package
 can still be pulled directly:
 
 ```
