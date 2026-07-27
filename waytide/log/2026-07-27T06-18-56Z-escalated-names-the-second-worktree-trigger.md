@@ -1,0 +1,1 @@
+# An experiment judged to need more isolation than the single working tree gives it is **escalated** to a worktree — the term names the apparatus rising, not the experiment's standing, and does not apply to the interruption trigger
