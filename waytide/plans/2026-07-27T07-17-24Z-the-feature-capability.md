@@ -99,8 +99,9 @@ there is no suite in this repository — so each commit is reviewed rather than 
   list, and a page for the reader who wants the lifecycle in plain terms. **Done
   2026-07-27** as a *Building features* section in `docs/capabilities.md` (which renumbered
   the list from six onward) and a new `docs/features.md`.
-- [ ] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
-  logged as done.
+- [x] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
+  logged as done. **Done 2026-07-27.** No other deferred item referenced it, so nothing was
+  stranded by the deletion — checked, per the standing stranded-reference item.
 
 ---
 
@@ -112,3 +113,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:28:02 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:37 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:30:58 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:12 AM PT
