@@ -78,10 +78,11 @@ there is no suite in this repository — so each commit is reviewed rather than 
   work, so that reason does not carry over and the instruction cannot simply be copied.
   Deciding the feature rule says nothing about this is a real answer. Either way the
   answer and its reason are recorded, and the feature rule can then be written.
-- [ ] Task 2: The `waytide/features/` convention describes what a feature record holds —
-  the intent, the branch topology, the working location, the canonical state line, and the
-  confirmations — and how it relates to the loop record that carries the same feature's
-  design.
+- [x] Task 2: The `waytide/features/` convention describes what a feature record holds —
+  the intent, which branch it is on and what it branched from, where it is being worked,
+  the line that records its state, and the confirmations — and how it relates to the loop
+  record that carries the same feature's design. **Done 2026-07-27** as
+  `agent-features-convention`.
 - [ ] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
   how its working location may change, the four states it can end in, and that its tests
   are verified before integrating with nothing gating the merge.
@@ -99,3 +100,4 @@ there is no suite in this repository — so each commit is reviewed rather than 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:17:24 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:23:45 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:26:33 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:27:13 AM PT
