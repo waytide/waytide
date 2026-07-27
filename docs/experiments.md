@@ -13,7 +13,7 @@ An experiment is kept: it's a dated file under `waytide/local/experiments/`, com
 
 By default, an experiment is **one branch, worked until the question is answered**. No phases, no numbering — most experiments are exactly this. It runs on its own branch (named `experiment/<subject>`) so it's never mistaken for ordinary feature work, and it merges back into whatever branch it came from — often `master`, sometimes another topic branch.
 
-Starting one asks you **where it gets worked**: in your single working tree, switched over to the experiment branch and back, or in a **worktree** — a second checkout on its own directory, so your main working tree stays on the upstream branch and both lines of work are open at once. Either way the experiment branches; the choice is only how many checkouts exist. It's asked every time, because the answer depends on the experiment: one that resolves in a sitting is lighter in the single tree, one that has to coexist with ordinary work is easier in a worktree.
+Starting one asks you **where it gets worked**: in your single working tree, which is created on the experiment branch and switched back at the end, or in a **worktree** — a second checkout on its own directory, so your main working tree stays on the upstream branch and both lines of work are open at once. Either way the experiment branches; the choice is only how many checkouts exist. It's asked every time, because the answer depends on the experiment: one that resolves in a sitting is lighter in the single tree, one that has to coexist with ordinary work is easier in a worktree.
 
 The record holds:
 
