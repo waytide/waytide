@@ -83,9 +83,11 @@ there is no suite in this repository — so each commit is reviewed rather than 
   the line that records its state, and the confirmations — and how it relates to the loop
   record that carries the same feature's design. **Done 2026-07-27** as
   `agent-features-convention`.
-- [ ] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
+- [x] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
   how its working location may change, the four states it can end in, and that its tests
-  are verified before integrating with nothing gating the merge.
+  are verified before integrating with nothing gating the merge. **Done 2026-07-27** as
+  `feature-runs-on-its-own-branch`, carrying Task 1's answer as an explicit statement that
+  there is no instruction to watch for other work, and why.
 - [ ] Task 4: The session-start notice reports features that have not concluded, alongside
   the experiments it already reports.
 - [ ] Task 5: The foundation package's introduction names the feature capability and its
@@ -101,3 +103,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 12:17:24 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:23:45 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:26:33 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:27:13 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:28:02 AM PT

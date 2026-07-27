@@ -1,0 +1,1 @@
+# A feature runs on its own branch and ends completed, abandoned, superseded, or suspended — mirroring the experiment lifecycle, less the forecast, the verdict states, the merge gate, and the affirmation step
