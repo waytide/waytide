@@ -34,8 +34,10 @@ the two directories sit under it — `waytide/system/` for the installed package
 its own name says nothing. Every rule states the consuming-project path; read
 `waytide/system/` as `system/` and `waytide/local/` as `local/` when applying one here.
 
-(The root `log/` directory is not part of this — it holds pre-Waytide working notes from
-the agent-norms migration, kept as a record. The decision log is `local/log/`.)
+`local/migration/` is this repository's own, defined by no rule: the design and execution
+records of migrating `constant`'s rules into the Waytide packages, kept because
+`CONTRIBUTING.md` still points at its publish runbook. It is a record, not a live
+convention.
 
 **Do not run `system/foundation/install.sh` in this repo.** It installs the packages
 into a *consuming* project and generates that project's `waytide/system/` AGENTS.md.

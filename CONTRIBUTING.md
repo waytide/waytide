@@ -86,7 +86,7 @@ is there. The remedy, in order:
    correct once the content is safely in the composite, and only then — the commit object is
    replaced, and its content survives because step 2 put it here. The full step-by-step for every package — including the one-time repo
 create/rename cases — is the **Phase B checklist**
-(`log/2026-07-17-agent-norms-phase-b-checklist.md`) and its **runbook**.
+(`local/migration/2026-07-17-agent-norms-phase-b-checklist.md`) and its **runbook**.
 
 ## Push-back (fallback only)
 
