@@ -39,12 +39,12 @@ if [ -n "$framework" ] && [ -z "$WAYTIDE_QUIET" ]; then
     if [ "$count" = "1" ]; then
       noun=package
     fi
-    waytide="(Waytide framework active - $count $noun)"
+    waytide="- Waytide framework active ($count $noun)"
   fi
 fi
 
 # The directory and branch lead, separated by a middle dot; the Waytide segment
-# trails in parentheses, so the developer's own orientation comes first and the
+# trails after a hyphen, so the developer's own orientation comes first and the
 # framework indicator reads as an annotation on it.
 line=
 for segment in "$directory" "$branch"; do
