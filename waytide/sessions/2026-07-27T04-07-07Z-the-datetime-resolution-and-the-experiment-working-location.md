@@ -1,9 +1,10 @@
 # Session — The datetime resolution and the experiment working location (2026-07-26)
 
 The session began as a request to list the deferred queue and became the working-out of
-two items in it. It settled the resolution of every datetime written into a file, gave
+three items in it. It settled the resolution of every datetime written into a file, gave
 the experiment lifecycle a working location chosen at initiation, defined two triggers
-for changing it, and added a session-start check that reports experiments left open.
+for changing it, added a session-start check that reports experiments left open, and
+designed a feature capability mirroring the experiment's.
 
 *This is the communicable record — the guided tour. It is not the source of truth. The
 durable records are the rules under `framework/`, the decision log under `waytide/log/`,
@@ -200,6 +201,47 @@ findable and a prose reference by title is not; and whether the deferred queue i
 directory whose convention deletes rather than keeps. The ECIL link is deliberately left
 broken until the form of the correction is settled.
 
+## 9. The feature capability, designed
+
+The **feature cycle** deferred item asks whether feature work should carry a lifecycle
+mirroring the experiment's, and treats *none* as a real answer. Settled by decision: the
+capability exists and mirrors it. What remained was which parts.
+
+**What mirrors:** its own branch `feature/<subject>`, a recorded base and upstream branch,
+a working location chosen at initiation, the same two triggers for changing it, declared
+end states, recorded confirmations, conclusion in the main working tree, and reporting by
+the session-start notice.
+
+**Where the mirror breaks, each deliberately:**
+
+- **No question, no forecast.** A feature has an intent. Nothing is predicted, so there is
+  nothing to compare an outcome against — which is most of what an experiment record is.
+- **No verdict states.** *Affirmed*, *refuted*, *inconclusive* judge a question. The
+  feature states are derived from what becomes of a feature instead: **completed**,
+  **abandoned**, **superseded**, **suspended**. (Settled as *delivered* and renamed to
+  *completed* the same night; the superseded log entry stands, append-only.)
+- **No post-merge gate.** Tests are verified before integrating. The merged result is a
+  combination neither branch ran, so a feature whose commits all passed can still break
+  the suite on integration — and that is ordinary, fixed from there rather than gated
+  against.
+- **No affirmation step.** A feature has no finding to promote into the decision log.
+
+**Foundation owns it, with its own `waytide/features/` record** rather than the loop
+record growing lifecycle fields. The dependency graph decides it: `design-by-efferent`
+includes `foundation`, not the reverse, so a foundation rule requiring fields in
+`waytide/loops/` would invert the package graph and make the feature lifecycle unavailable
+to a project installing foundation alone. The cost is two files per feature — lifecycle in
+one, hinges in the other, each naming its counterpart.
+
+**The working location is gated at every feature initiation**, as with an experiment. The
+contrary proposal — no gate, worktree by escalation only, since a prompt paid on every
+feature is ceremony where an experiment's is paid rarely — was raised and rejected. The
+design records that it was considered.
+
+**Left open:** main-sequence drift has no restatement. If features branch, "the main
+sequence" is no longer simply the upstream branch, and the clause needs terms that still
+mean something, or needs dropping.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -220,6 +262,14 @@ broken until the form of the correction is settled.
 - **A gate is the right home for a situational trade-off.** The worktree item could not
   be settled as one answer for every experiment; it settled in an afternoon once posed as
   a choice made per experiment.
+- **A mirrored capability is defined by where the mirror breaks.** The feature capability
+  copies the experiment's branch, working location, states, and confirmations; what makes
+  it a *feature* capability is the four places it refuses to copy — the forecast, the
+  verdict states, the post-merge gate, and the affirmation step.
+- **The package dependency graph can decide a record's shape.** One feature could have had
+  one file instead of two, but only by making `foundation` depend on a directory
+  `design-by-efferent` contributes. Which package owns a capability is not a filing
+  question.
 - **Deleting a resolved deferred item strands references to it.** The convention says to
   delete on resolution and is silent on what else points at the file. Two instances were
   found — one created and corrected today, one stranded six days and discovered only by
@@ -256,13 +306,16 @@ broken until the form of the correction is settled.
   foundation `README.md`.
 - **Script:** `framework/foundation/session-start.sh`, which now reports experiments that
   have not concluded.
-- **Decision log:** fourteen entries under `waytide/log/` — three for the datetime
+- **Decision log:** nineteen entries under `waytide/log/` — three for the datetime
   resolution, five for the experiment working location, three for the session-start check
-  and the drift clause, and one each for the second trigger, its name, and the worktree
-  directory naming.
+  and the drift clause, one each for the second trigger, its name, and the worktree
+  directory naming, and five for the feature capability.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
+- **Design:** `waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md`, the first
+  design in this repo — `waytide/design/` did not exist.
 - **Deferred queue:** two items resolved and deleted, one added; **seven remain**. The
+  feature-cycle item is designed but not yet carried out, so it stays in the queue. The
   **feature cycle** item — named at the session's close as the next to be taken up — had
   its worktree cross-reference and its Related line corrected, the item it pointed at
   having been carried out. The item added is
@@ -273,8 +326,10 @@ broken until the form of the correction is settled.
   resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
   check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
   (the feature-cycle item's cross-references), `bf71eb2` (the stranded-reference question,
-  deferred), `27c5312` (the worktree directory naming), and `974e29e` / `11fc550` /
-  `f9583da` / `21ce22f` / `4a85012` (this record's earlier versions).
+  deferred), `27c5312` (the worktree directory naming), `5749772` (the feature capability
+  design), `7929550` (the *completed* state's name), and `974e29e` / `11fc550` /
+  `f9583da` / `21ce22f` / `4a85012` / `142d75f` / `47b4abc` (this record's earlier
+  versions).
 
 ---
 
@@ -286,3 +341,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:41:37 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:47:02 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:48:56 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:51:43 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:14:45 AM PT
