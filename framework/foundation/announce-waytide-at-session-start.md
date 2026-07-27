@@ -8,6 +8,29 @@ A project running Waytide announces the framework's presence through **two surfa
 Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing, design-by-efferent, git
 ```
 
+  The same notice reports **experiments that have not concluded**, on a second line,
+  when there are any:
+
+```
+Waytide loaded from waytide/framework/ — 5 packages: foundation, language, testing, design-by-efferent, git
+2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
+```
+
+  Each record under `waytide/experiments/` is read for its canonical `**State:**` line
+  (see the agent-experiments-convention). A record whose state is **Affirmed**,
+  **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded and is
+  not reported; **Suspended** and a record carrying no state line are. When every
+  experiment has concluded the second line is absent entirely, so the notice grows only
+  when there is something open.
+
+  **Why the notice carries it.** The lifecycle requires that an experiment never be left
+  silently open, but nothing was enforcing that across sessions. The working directories
+  under `waytide/` are not read at session start, so an open experiment goes unnoticed
+  unless something names it — and an experiment worked in a **worktree** leaves no trace
+  at all in the main working tree, which stays on the upstream branch, so not even the
+  branch name gives it away. The configuration that best isolates an experiment is the
+  one that most easily loses track of it.
+
 - **A status line.** `waytide/framework/foundation/statusline.sh` keeps the same count on screen for the whole session, alongside the working directory and git branch, so the fact stays available instead of scrolling away.
 
 Both are wired by a committed `.claude/settings.json` that `install.sh` places in the consuming project.
@@ -39,3 +62,4 @@ cannot re-include a file inside an excluded directory, so a negation added under
 Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Thu Jul 23 2026 at 2 PM PT
 Changed by Scott Bellware on Thu Jul 23 2026 at 3 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT

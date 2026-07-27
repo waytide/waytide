@@ -9,9 +9,12 @@ subdirectory. Is that feasible, and at what cost?
 
 ## Setup
 
+- **State:** Affirmed
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/rules-files-flattening`
 - **Base:** `4764a6ca713c6857f460179a4040ac71af21a9c1` (master HEAD at start)
+- **Working location:** single working tree (the experiment predates the
+  working-location choice; recorded here for completeness)
 - **Kind:** observation-only. Per the hard constraint on the `flatten-the-rules-files`
   deferred item (2026-07-21), **no on-disk rules-file change is made** — not even on
   this isolated branch. Flattenability is *determined by analysis*, not by trial
@@ -258,3 +261,4 @@ selection UI (the branch was local-only and fully merged; its history lives in
 ---
 
 Authored by Scott Bellware on Tue Jul 21 2026 at 2 AM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT
