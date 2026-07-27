@@ -100,8 +100,11 @@ there is no suite in this repository — so each commit is reviewed rather than 
   2026-07-27** as a *Building features* section in `docs/capabilities.md` (which renumbered
   the list from six onward) and a new `docs/features.md`.
 - [x] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
-  logged as done. **Done 2026-07-27.** No other deferred item referenced it, so nothing was
-  stranded by the deletion — checked, per the standing stranded-reference item.
+  logged as done. **Done 2026-07-27.** One deferred item cites it — the
+  stranded-reference item, which names it twice as evidence of a reference stranded by an
+  earlier deletion. Those are citations of something that happened, not live pointers, and
+  they are left as-is: that same item asks what form such a correction should take and
+  deliberately leaves its own stranded link in place until the question is settled.
 
 ---
 
@@ -114,3 +117,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:37 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:30:58 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:12 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:35 AM PT
