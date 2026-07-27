@@ -167,9 +167,22 @@ work, which is the same objection that item already raises about branching featu
 all. The Related line's reference was dropped, the front reference absorbing what it
 pointed at.
 
-Worth noting as a general matter: the deferred convention says to delete a resolved item,
-and says nothing about the references other items may hold to it. Deleting one can strand
-a pointer in the queue without any signal.
+**The general matter was deferred**, and searching for other instances found one that
+long predated it. The ECIL item closes with
+`Related: [[2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages]]` — an
+item carried out on **2026-07-20**, its file deleted, the link pointing at nothing ever
+since. Six days stranded, found only by looking for it.
+
+So the convention's resolution step — act, delete, log — produces stranded references by
+construction, and nothing surfaces them. The new item
+(`2026-07-27T06-40-06Z-resolving-a-deferred-item-leaves-references-to-it-stranded`) asks
+four things: which artifacts are reconciled (live ones, not historical records — the same
+line the no-slang rule draws between live prose and a quoted decision); what the
+correction is (replacing a pointer to an open question with the answer it received, not
+merely deleting it); whether a check can find them mechanically, since a `[[link]]` is
+findable and a prose reference by title is not; and whether the deferred queue is the only
+directory whose convention deletes rather than keeps. The ECIL link is deliberately left
+broken until the form of the correction is settled.
 
 ## Takeaways
 
@@ -191,9 +204,10 @@ a pointer in the queue without any signal.
 - **A gate is the right home for a situational trade-off.** The worktree item could not
   be settled as one answer for every experiment; it settled in an afternoon once posed as
   a choice made per experiment.
-- **Deleting a resolved deferred item can strand a reference in a remaining one.** The
-  convention says to delete on resolution and is silent on what else points at the file.
-  One reference was stranded here and corrected by hand; nothing would have surfaced it.
+- **Deleting a resolved deferred item strands references to it.** The convention says to
+  delete on resolution and is silent on what else points at the file. Two instances were
+  found — one created and corrected today, one stranded six days and discovered only by
+  searching. Neither surfaced on its own; the question is now deferred.
 
 ## Glossary
 
@@ -231,17 +245,19 @@ a pointer in the queue without any signal.
   and the drift clause, and one each for the second trigger and its name.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
-- **Deferred queue:** two items resolved and deleted; six remain. The **feature cycle**
-  item — named at the session's close as the next to be taken up — had its worktree
-  cross-reference and its Related line corrected, the item it pointed at having been
-  carried out.
+- **Deferred queue:** two items resolved and deleted, one added; **seven remain**. The
+  **feature cycle** item — named at the session's close as the next to be taken up — had
+  its worktree cross-reference and its Related line corrected, the item it pointed at
+  having been carried out. The item added is
+  `2026-07-27T06-40-06Z-resolving-a-deferred-item-leaves-references-to-it-stranded`.
 - **Documentation:** `docs/experiments.md`, conformed to the lifecycle change. The
   standing website-content review item still covers the page as a whole.
 - **Commits:** `1dd49e8` (four uncommitted deferred items), `729e097` (the datetime
   resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
   check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
-  (the feature-cycle item's cross-references), and `974e29e` / `11fc550` / `f9583da`
-  (this record's earlier versions).
+  (the feature-cycle item's cross-references), `bf71eb2` (the stranded-reference question,
+  deferred), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` (this record's earlier
+  versions).
 
 ---
 
@@ -249,3 +265,4 @@ Authored by Scott Bellware on Sun Jul 26 2026 at 9:07:07 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:21:33 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:23:32 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:38:10 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:41:37 PM PT
