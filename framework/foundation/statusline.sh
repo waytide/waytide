@@ -39,13 +39,15 @@ if [ -n "$framework" ] && [ -z "$WAYTIDE_QUIET" ]; then
     if [ "$count" = "1" ]; then
       noun=package
     fi
-    waytide="Waytide ($count $noun)"
+    waytide="(Waytide framework active - $count $noun)"
   fi
 fi
 
-# Assemble the segments that actually have a value, separated by a middle dot.
+# The directory and branch lead, separated by a middle dot; the Waytide segment
+# trails in parentheses, so the developer's own orientation comes first and the
+# framework indicator reads as an annotation on it.
 line=
-for segment in "$waytide" "$directory" "$branch"; do
+for segment in "$directory" "$branch"; do
   if [ -n "$segment" ]; then
     if [ -z "$line" ]; then
       line="$segment"
@@ -54,5 +56,13 @@ for segment in "$waytide" "$directory" "$branch"; do
     fi
   fi
 done
+
+if [ -n "$waytide" ]; then
+  if [ -z "$line" ]; then
+    line="$waytide"
+  else
+    line="$line $waytide"
+  fi
+fi
 
 printf '%s\n' "$line"
