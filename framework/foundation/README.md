@@ -30,7 +30,8 @@ Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/plans/` (implementation plans
 that sequence a settled design), `waytide/design/` (design docs that settle direction
 first), `waytide/experiments/` (recorded experiments that test a question), and `waytide/sessions/` (the narrative record of a work session).
-Experiments carry a full branch lifecycle — their own branch, the
+Experiments carry a full branch lifecycle — their own branch, a working location
+chosen at initiation (the single working tree or a worktree), the
 affirmed/refuted/inconclusive/abandoned/superseded states, and a test-gated merge —
 in the `experiment-runs-on-its-own-branch` rule. How plans and designs *read* (their
 sections) is the `plan` package's concern.
