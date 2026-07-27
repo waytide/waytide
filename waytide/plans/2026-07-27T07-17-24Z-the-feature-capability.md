@@ -1,0 +1,89 @@
+# The Feature Capability — Implementation Plan
+
+## Goal
+
+Give feature work the lifecycle the design settles: its own branch, a working location
+chosen at initiation, a record under `waytide/features/`, four declared end states, and
+recorded confirmations — with the four places the mirror to the experiment capability
+deliberately breaks. When this is done, `foundation` carries a feature capability
+alongside its experiment capability, and the session-start notice reports open work of
+either kind.
+
+One consequence to state plainly: these rules govern this repository as well as the
+projects that install `foundation`. This repository's history is direct-to-`master`
+main-sequence work, so completing this plan changes how work here proceeds, from the next
+feature onward. That is the intent, not a side effect.
+
+## Source design
+
+`waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md` — settled 2026-07-26 and
+2026-07-27.
+
+## Architecture
+
+Five phases. The first settles a question the design left open and the rules cannot be
+written around; the remaining four are ordered so nothing describes a mechanism that does
+not yet exist.
+
+- **Phase 1 — The open question.** Deliberation, not construction. The design left main-
+  sequence drift unrestated, and the lifecycle rule cannot be written coherently until it
+  is known whether feature work carries a drift clause at all. Resolving to *no clause* is
+  a legitimate outcome and unblocks the phase either way.
+- **Phase 2 — The rules.** Two new `foundation` rules, written to the rule format. Prose
+  only; nothing executable, nothing to verify beyond review.
+- **Phase 3 — The mechanism.** The one executable change in the plan. The session-start
+  script gains a second directory to read. Verified by running it against constructed
+  record states, as the experiment reporting was.
+- **Phase 4 — The surfaces.** The package introduction and the documentation site, brought
+  into line with the capability that now exists. Behavior-neutral to the framework itself.
+- **Phase 5 — Close.** The deferred item that raised the question is carried out and
+  removed from the queue.
+
+## Tech Stack
+
+Markdown rule and convention files, one POSIX shell script; no application code and no
+automated suite in this repository.
+
+## Process notes
+
+- **No code in this plan.** Rule filenames, the record's exact field order, and the shape
+  of the script's addition are decided during the work, not pre-baked here.
+- **The rules mirror their experiment counterparts** but are written independently rather
+  than copied — the four breaks in the mirror are the substance, and a copied rule would
+  carry the experiment's justifications where they do not hold.
+- **The script change is the only thing that can be run**, so it is the only thing
+  verified: exercised against a concluded record, an unconcluded one, a record with no
+  state line, and the quiet opt-out, before it is committed.
+- **Every rule carries a provenance footer**; every decision made during the work gets its
+  own one-line entry in `waytide/log/`.
+
+## Commit policy
+
+One commit per task, subject-first and stating the fact rather than the bookkeeping. Log
+entries travel in the commit of the change they describe. The suite gate does not apply —
+there is no suite in this repository — so each commit is reviewed rather than verified.
+
+## Tasks
+
+- [ ] Task 1: The feature lifecycle's position on main-sequence drift is settled — whether
+  the clause is restated in terms that still mean something when features branch, or
+  dropped for feature work with the reason recorded.
+- [ ] Task 2: The `waytide/features/` convention describes what a feature record holds —
+  the intent, the branch topology, the working location, the canonical state line, and the
+  confirmations — and how it relates to the loop record that carries the same feature's
+  design.
+- [ ] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
+  how its working location may change, the four states it can end in, and that its tests
+  are verified before integrating with nothing gating the merge.
+- [ ] Task 4: The session-start notice reports features that have not concluded, alongside
+  the experiments it already reports.
+- [ ] Task 5: The foundation package's introduction names the feature capability and its
+  artifact directory, as it names the experiment's.
+- [ ] Task 6: The documentation site describes feature work — an entry in the capability
+  list, and a page for the reader who wants the lifecycle in plain terms.
+- [ ] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
+  logged as done.
+
+---
+
+Authored by Scott Bellware on Mon Jul 27 2026 at 12:17:24 AM PT
