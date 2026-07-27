@@ -248,9 +248,10 @@ broken until the form of the correction is settled.
   foundation `README.md`.
 - **Script:** `framework/foundation/session-start.sh`, which now reports experiments that
   have not concluded.
-- **Decision log:** twelve entries under `waytide/log/` — three for the datetime
+- **Decision log:** fourteen entries under `waytide/log/` — three for the datetime
   resolution, five for the experiment working location, three for the session-start check
-  and the drift clause, and one each for the second trigger and its name.
+  and the drift clause, and one each for the second trigger, its name, and the worktree
+  directory naming.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
 - **Deferred queue:** two items resolved and deleted, one added; **seven remain**. The
@@ -264,8 +265,8 @@ broken until the form of the correction is settled.
   resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
   check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
   (the feature-cycle item's cross-references), `bf71eb2` (the stranded-reference question,
-  deferred), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` (this record's earlier
-  versions).
+  deferred), `27c5312` (the worktree directory naming), and `974e29e` / `11fc550` /
+  `f9583da` / `21ce22f` / `4a85012` (this record's earlier versions).
 
 ---
 
@@ -275,3 +276,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:23:32 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:38:10 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:41:37 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:47:02 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:48:56 PM PT
