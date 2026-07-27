@@ -7,7 +7,9 @@ changing it, and added a session-start check that reports work left open. It the
 designed, planned, and built a feature capability mirroring the experiment's. Publishing
 that work found two component repositories carrying commits made directly to them; both
 were adopted into this repository, and a check was added so the next one is found before a
-publish fails rather than by it.
+publish fails rather than by it. It ended by renaming the whole thing a **system** rather
+than a framework, and moving the project's own work under `local/`, so `waytide/` holds
+two directories instead of eleven.
 
 *This is the communicable record — the guided tour. It is not the source of truth. The
 durable records are the rules under `framework/`, the decision log under `waytide/log/`,
@@ -328,6 +330,81 @@ them. And `CONTRIBUTING.md`'s divergence guidance was corrected: it said "stop �
 force," which is right about not discarding and wrong about the remedy. Adopt, verify,
 then force.
 
+## 12. Waytide is a system, not a framework
+
+An applicative Ruby error rule was added first — an applicative error extends
+`RuntimeError` directly, argued from what the parent class claims: `StandardError`'s
+direct subclasses are the language's own failure categories, so extending it puts a
+library's error among them. Then a directory-naming question opened a larger one.
+
+The question began as whether the installed-packages directory should be marked apart
+from its ten siblings — `.framework` or `_framework`. Both were rejected on the naming
+standard: a dot prefix hides binding content from listings and from tools that skip
+dot-directories, and an underscore is an opaque code borrowed from Jekyll and Sass, a
+mapping the reader has to be taught. But the problem behind it was real, and it was the
+tree rather than the name.
+
+**Then the word itself failed inspection.** In software a **framework** is something you
+build inside; it inverts control and calls your code. Waytide runs nothing — it is files
+an agent reads, and the two shell scripts are harness hooks rather than a runtime. A
+reader in a software context imports the wrong meaning first. **System**, in the sense a
+*design system* carries, holds on every point: a shared, versioned body of guidance a
+project adopts, distributed rather than executed, accreting, authored, governing how
+work proceeds rather than how programs run — a current term of art in an adjacent
+discipline rather than a metaphor.
+
+Renamed everywhere: the directory, the session-start notice, the status line, the
+generated bootstrap, the harness configuration, the READMEs, the docs, and the six rules
+that named it. Two exclusions, both on rules already in play — **historical records keep
+the original word**, including the log entry that named the directory `framework` in the
+first place, and **"test framework"** in the testing package means TestBench.
+
+A mistake inside it: the directory move made all hundred rule files look changed, so 88
+provenance-footer lines were appended, some twice. Stripped, and re-applied to the nine
+files whose content actually changed. A second: the blanket conversion rewrote
+`CONTRIBUTING.md`'s account of the rename history to claim the path had always settled at
+`system/`. Corrected to read root → `rules/` → `packages/` → `framework/` → `system/`,
+with a note not to restate the earlier names.
+
+## 13. The project's own work moves under `local/`
+
+The eleven-sibling problem remained. `agent-rules-convention` already drew the line the
+tree did not: rules on one side, working state on the other. The shape settled is
+sharper than that — **what came from outside, and what the project wrote** — which puts
+the project's own `rules/` inside `local/` rather than beside the packages:
+
+```
+waytide/
+├── system/   installed, never edited in place
+└── local/    rules/ + log, deferred, observations, design,
+              plans, experiments, features, sessions, loops
+```
+
+The cost is that the bootstrap now names two paths in different branches of the tree.
+
+**This repository drops the `waytide/` wrapper**, keeping `system/` and `local/` at the
+root, for the same reason the packages were never nested under it: this *is* Waytide.
+`AGENTS.md` states the mapping for reading a rule's consuming-project path here.
+
+**The root `log/` went too.** It held fourteen files, of which one was a genuine one-line
+decision entry, misfiled — that moved to `local/log/`. The other thirteen are the record
+of the `constant` migration, and moved to `local/migration/`, which is what their own
+README already called them. Two directories a character apart, holding different kinds of
+thing, is now one.
+
+**Publishing cost the most.** The split path changed, so every component repository's
+history was replaced — all seven force-reset, the fourth such reset the project has had
+and the one `CONTRIBUTING.md` warned about. Later changes fast-forwarded normally.
+
+**A consuming project cannot pull its way across that**, because its installed subtree
+shares no commits with the reset remote. So `migrate-to-system-and-local.sh` moves the
+project's own directories, removes and re-adds the packages at the new prefix, rewrites
+the harness configuration, and refuses to touch `AGENTS.md` — printing what to delete and
+which command regenerates it. Two faults surfaced in testing: `git mv` refuses a directory
+holding no tracked files, which an empty `deferred/` ordinarily is; and the clean-tree
+precondition counted untracked files, so the script tripped over itself when downloaded
+into the project root to be run.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -370,6 +447,12 @@ then force.
 - **A capability arrived design → plan → build in one sitting.** The deferred item had sat
   three days as a question with no answer; posing it as a design with dated resolutions,
   then a plan of seven tasks, carried it to done.
+- **A word can fail inspection years after it is chosen.** "Framework" was settled on the
+  name-literally principle five days earlier and still misdescribed the thing: in software
+  a framework inverts control and calls your code, and Waytide runs nothing.
+- **A naming question can be a structural question wearing a disguise.** `.framework` and
+  `_framework` were both attempts to mark one directory apart from ten siblings. The
+  answer was that there should not be eleven siblings.
 - **Deleting a resolved deferred item strands references to it.** The convention says to
   delete on resolution and is silent on what else points at the file. Two instances were
   found — one created and corrected today, one stranded six days and discovered only by
@@ -393,6 +476,12 @@ then force.
   under way*. **Migration** and **promotion** were both rejected for this — nothing moves,
   and promotion imports a value ordering the rule denies while colliding with
   observation-to-rule promotion.
+- **system** — what Waytide is: a shared, versioned body of guidance a project adopts,
+  distributed rather than executed, governing how work proceeds. Not a **framework**,
+  which in software names something you build inside that inverts control.
+- **`waytide/system/`** — the installed packages, never edited in place. **`waytide/local/`**
+  — everything the project writes, its own `rules/` included. In this repository both sit
+  at the root without the `waytide/` wrapper.
 - **the `**State:**` line** — the canonical, single statement of an experiment's state, in
   its record's setup block. The only place in a record readable as the state, because the
   state words appear throughout its forecast and findings prose. A record without one is
@@ -400,52 +489,40 @@ then force.
 
 ## Where the durable records live
 
-- **Rules:** `framework/foundation/a-time-value-carries-minutes-and-seconds.md` (new),
-  `record-rule-authorship-in-a-footer.md`, `experiment-runs-on-its-own-branch.md`,
-  `agent-experiments-convention.md`, `announce-waytide-at-session-start.md`, and the
-  foundation `README.md`.
-- **Scripts:** `framework/foundation/session-start.sh`, which now reports experiments and
-  features that have not concluded, and `report-direct-commits.sh` at the repository root,
-  which reports component repositories carrying commits this history does not contain.
-- **Decision log:** thirty-one entries under `waytide/log/` — three for the datetime
-  resolution, five for the experiment working location, three for the session-start check
-  and the drift clause, one each for the second trigger, its name, and the worktree
-  directory naming, five for the feature capability's design, seven for its plan and build,
-  and five for the component-repository reconciliation.
-- **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
+*Paths here are current. The narrative above names them as they were at the time —
+`framework/` before the rename, `waytide/log/` before the move — and is left that way,
+since restating them would erase the record of what changed.*
+
+- **New rules:** `system/foundation/a-time-value-carries-minutes-and-seconds.md`,
+  `agent-features-convention.md`, `feature-runs-on-its-own-branch.md`,
+  `record-title-date-format.md` (adopted from the component repository), and
+  `system/code/ruby/applicative-errors-extend-runtime-error.md`.
+- **Rules changed:** `record-rule-authorship-in-a-footer`,
+  `experiment-runs-on-its-own-branch`, `agent-experiments-convention`,
+  `announce-waytide-at-session-start`, `agent-rules-convention`, `status-report-format`,
+  `agent-file-names-use-iso8601-utc-prefix`, and the `subject-first-commit-messages`
+  correction adopted from `waytide/git`.
+- **Scripts:** `system/foundation/session-start.sh`, reporting experiments and features
+  that have not concluded; `system/foundation/statusline.sh`;
+  `system/foundation/migrate-to-system-and-local.sh`, which moves a consuming project to
+  this layout; and `report-direct-commits.sh` at the root, which reports component
+  repositories carrying commits this history does not contain.
+- **Decision log:** forty-three entries under `local/log/`.
+- **Design and plan:** `local/design/2026-07-27T07-09-02Z-the-feature-capability.md` and
+  `local/plans/2026-07-27T07-17-24Z-the-feature-capability.md` — the first of each in this
+  repository, all seven tasks complete with inline notes.
+- **Experiment record:** `local/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
-- **Design:** `waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md`, the first
-  design in this repo — `waytide/design/` did not exist.
-- **Plan:** `waytide/plans/2026-07-27T07-17-24Z-the-feature-capability.md`, likewise the
-  first, all seven tasks complete with inline notes.
-- **Feature capability:** `framework/foundation/agent-features-convention.md` and
-  `framework/foundation/feature-runs-on-its-own-branch.md` (both new),
-  `framework/foundation/session-start.sh`, `framework/foundation/README.md`,
-  `docs/capabilities.md`, and `docs/features.md` (new).
-- **Deferred queue:** three items resolved and deleted, one added; **six remain**. The
-  feature-cycle item was carried out in full — designed, planned, and built. The
-  **feature cycle** item — named at the session's close as the next to be taken up — had
-  its worktree cross-reference and its Related line corrected, the item it pointed at
-  having been carried out. The item added is
-  `2026-07-27T06-40-06Z-resolving-a-deferred-item-leaves-references-to-it-stranded`.
-- **Documentation:** `docs/experiments.md`, conformed to the lifecycle change. The
-  standing website-content review item still covers the page as a whole.
-- **Adopted from the component repositories:**
-  `framework/foundation/record-title-date-format.md` and the *Package version form*
-  correction in `framework/git/subject-first-commit-messages.md`, both written directly
-  downstream and brought here. `CONTRIBUTING.md` carries the corrected divergence remedy.
-- **Component repositories:** `waytide/foundation` at `80558d8` and `waytide/git` at
-  `e72d484`, both force-published after the adoption. The other five were already current.
-- **Commits:** `1dd49e8` (four uncommitted deferred items), `729e097` (the datetime
-  resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
-  check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
-  (the feature-cycle item's cross-references), `bf71eb2` (the stranded-reference question,
-  deferred), `27c5312` (the worktree directory naming), `5749772` (the feature capability
-  design), `7929550` (the *completed* state's name), `cae8a5c` and `dd84636` (the plan),
-  `6860015` through `d568f3f` (its seven tasks), `f262a47` (a correction to the last
-  task's note), `892a3b8` (the record-title format adopted and reconciled), `9a70204` (the
-  git package's correction adopted), `2aae74e` (the direct-commit check), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` / `4a85012` / `142d75f` /
-  `47b4abc` / `5111a9d` (this record's earlier versions).
+- **Documentation:** `docs/experiments.md`, `docs/features.md` (new), and
+  `docs/capabilities.md`, whose list gained a *Building features* section and renumbered
+  from six onward. The standing website-content review item covers all three.
+- **Deferred queue:** three items resolved and deleted, two added; **seven remain** — the
+  stranded-reference item and the upstream-update script.
+- **This repository's layout:** `system/` and `local/` at the root, `local/migration/`
+  holding the pre-Waytide migration records, and `AGENTS.md` stating how to read a rule's
+  consuming-project path here.
+- **Component repositories:** all seven at the `system/<package>` split, force-reset once
+  when the path changed and fast-forwarding since.
 
 ---
 
@@ -463,3 +540,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:57:23 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:58:57 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:59:44 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 3:30:32 PM PT
