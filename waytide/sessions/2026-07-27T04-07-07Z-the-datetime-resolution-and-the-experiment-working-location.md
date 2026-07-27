@@ -2,9 +2,12 @@
 
 The session began as a request to list the deferred queue and became the working-out of
 three items in it. It settled the resolution of every datetime written into a file, gave
-the experiment lifecycle a working location chosen at initiation, defined two triggers
-for changing it, added a session-start check that reports experiments left open, and
-designed a feature capability mirroring the experiment's.
+the experiment lifecycle a working location chosen at initiation, defined two triggers for
+changing it, and added a session-start check that reports work left open. It then
+designed, planned, and built a feature capability mirroring the experiment's. Publishing
+that work found two component repositories carrying commits made directly to them; both
+were adopted into this repository, and a check was added so the next one is found before a
+publish fails rather than by it.
 
 *This is the communicable record — the guided tour. It is not the source of truth. The
 durable records are the rules under `framework/`, the decision log under `waytide/log/`,
@@ -458,3 +461,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:14:45 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:34:49 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:57:23 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:58:57 AM PT
