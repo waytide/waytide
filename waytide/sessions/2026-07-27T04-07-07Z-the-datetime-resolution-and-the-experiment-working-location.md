@@ -242,6 +242,46 @@ design records that it was considered.
 sequence" is no longer simply the upstream branch, and the clause needs terms that still
 mean something, or needs dropping.
 
+## 10. The feature capability, planned and built
+
+A plan realizing the design — the first in `waytide/plans/` — sequenced seven tasks in
+five phases, the first of them a decision rather than anything built.
+
+**Task 1: does the feature rule tell you to watch for other work starting while a feature
+is open? It does not.** The experiment rule gives that instruction because an experiment
+is a side trip that can drift from the main line. During a feature, other work is normally
+**another feature**, and starting one is ordinary rather than a problem — there is nothing
+to detect. Being *forgotten* is still a real risk for a feature, and the session-start
+notice already covers that. The rule states the absence and its reason rather than staying
+silent, so a reader comparing the two lifecycles finds the gap explained.
+
+Built in six further tasks:
+
+- **`agent-features-convention`** — the record: intent, state line, branch topology,
+  working location, confirmations, and its relationship to the same feature's loop record.
+- **`feature-runs-on-its-own-branch`** — the lifecycle, mirroring the experiment's and
+  departing at the four places the design named.
+- **The session-start script** — the per-directory scan became one shell function taking
+  the directory, its nouns, and its concluded state words, so both capabilities share an
+  implementation instead of a copied block. Verified against experiments alone, features
+  alone, both together, singular and plural nouns, a missing state line, and the quiet
+  opt-out.
+- **The foundation introduction** — the two lifecycles stated together, with where they
+  differ, rather than each described alone.
+- **The documentation** — a *Building features* section in the capability list, which
+  renumbered it from six onward, and a `docs/features.md` page.
+- **The deferred item** — carried out and removed. Six remain.
+
+**A correction inside the work.** Task 7's completion note first claimed nothing
+referenced the deleted item. The stranded-reference item cites it twice. Those are
+citations of a past event rather than live pointers, so they were left in place — but the
+note was false as written and was corrected.
+
+**These rules govern this repository, not only projects that install foundation.** Its
+history is direct-to-`master`; from the next feature onward, work here starts on a branch
+and asks where it should be worked. The plan named that as the intent rather than a side
+effect.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -270,6 +310,12 @@ mean something, or needs dropping.
   one file instead of two, but only by making `foundation` depend on a directory
   `design-by-efferent` contributes. Which package owns a capability is not a filing
   question.
+- **An absent instruction is worth stating.** The feature rule says it does *not* tell you
+  to watch for other work, and why. Left silent, the gap against the experiment rule would
+  read as an oversight rather than a decision.
+- **A capability arrived design → plan → build in one sitting.** The deferred item had sat
+  three days as a question with no answer; posing it as a design with dated resolutions,
+  then a plan of seven tasks, carried it to done.
 - **Deleting a resolved deferred item strands references to it.** The convention says to
   delete on resolution and is silent on what else points at the file. Two instances were
   found — one created and corrected today, one stranded six days and discovered only by
@@ -306,16 +352,23 @@ mean something, or needs dropping.
   foundation `README.md`.
 - **Script:** `framework/foundation/session-start.sh`, which now reports experiments that
   have not concluded.
-- **Decision log:** nineteen entries under `waytide/log/` — three for the datetime
+- **Decision log:** twenty-six entries under `waytide/log/` — three for the datetime
   resolution, five for the experiment working location, three for the session-start check
   and the drift clause, one each for the second trigger, its name, and the worktree
-  directory naming, and five for the feature capability.
+  directory naming, five for the feature capability's design, and seven for its plan and
+  build.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
 - **Design:** `waytide/design/2026-07-27T07-09-02Z-the-feature-capability.md`, the first
   design in this repo — `waytide/design/` did not exist.
-- **Deferred queue:** two items resolved and deleted, one added; **seven remain**. The
-  feature-cycle item is designed but not yet carried out, so it stays in the queue. The
+- **Plan:** `waytide/plans/2026-07-27T07-17-24Z-the-feature-capability.md`, likewise the
+  first, all seven tasks complete with inline notes.
+- **Feature capability:** `framework/foundation/agent-features-convention.md` and
+  `framework/foundation/feature-runs-on-its-own-branch.md` (both new),
+  `framework/foundation/session-start.sh`, `framework/foundation/README.md`,
+  `docs/capabilities.md`, and `docs/features.md` (new).
+- **Deferred queue:** three items resolved and deleted, one added; **six remain**. The
+  feature-cycle item was carried out in full — designed, planned, and built. The
   **feature cycle** item — named at the session's close as the next to be taken up — had
   its worktree cross-reference and its Related line corrected, the item it pointed at
   having been carried out. The item added is
@@ -327,9 +380,10 @@ mean something, or needs dropping.
   check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
   (the feature-cycle item's cross-references), `bf71eb2` (the stranded-reference question,
   deferred), `27c5312` (the worktree directory naming), `5749772` (the feature capability
-  design), `7929550` (the *completed* state's name), and `974e29e` / `11fc550` /
-  `f9583da` / `21ce22f` / `4a85012` / `142d75f` / `47b4abc` (this record's earlier
-  versions).
+  design), `7929550` (the *completed* state's name), `cae8a5c` and `dd84636` (the plan),
+  `6860015` through `d568f3f` (its seven tasks), `f262a47` (a correction to the last
+  task's note), and `974e29e` / `11fc550` / `f9583da` / `21ce22f` / `4a85012` / `142d75f` /
+  `47b4abc` / `5111a9d` (this record's earlier versions).
 
 ---
 
@@ -342,3 +396,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:47:02 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:48:56 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:51:43 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:14:45 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:34:49 AM PT
