@@ -4,7 +4,7 @@ Refreshing an installed Waytide is manual and per-package. Each package's README
 command:
 
 ```
-git subtree pull --prefix waytide/framework/foundation https://github.com/waytide/foundation.git master --squash
+git subtree pull --prefix waytide/system/foundation https://github.com/waytide/foundation.git master --squash
 ```
 
 A project with seven packages installed runs seven of those, each carrying a prefix path
@@ -13,14 +13,14 @@ changed, and a package left out of the sweep stays stale silently — the sessio
 notice counts the packages present, not how current they are.
 
 `foundation` already carries `install.sh`, and the dependent packages carry
-`install-dependencies.sh`, so an update script fits a shape the framework has. It belongs
+`install-dependencies.sh`, so an update script fits a shape the system has. It belongs
 in `foundation` and ships to consuming projects — unlike `report-direct-commits.sh`, which
 is composite-only because a consuming project never publishes.
 
 What it would do:
 
 - **Discover what is installed** rather than take a list — a directory under
-  `waytide/framework/` carrying a `README.md` is a package, the same test `session-start.sh`
+  `waytide/system/` carrying a `README.md` is a package, the same test `session-start.sh`
   and `statusline.sh` use. `code/ruby` is nested and publishes to the flat repository name
   `code-ruby`, so the directory-to-repository mapping replaces `/` with `-`, as
   `report-direct-commits.sh` already does.
@@ -45,7 +45,7 @@ What has to be settled:
   dependencies stay behind is a state worth thinking about before allowing it.
 - **What it does about the bootstrap.** `install.sh` places a root `AGENTS.md` and a
   `.claude/settings.json`. Neither is a package, so neither is refreshed by a subtree pull,
-  and both can fall behind the framework they activate. Whether updating is this script's
+  and both can fall behind the system they activate. Whether updating is this script's
   job or a separate concern is open.
 
 **Gated on:** nothing in flight blocks it. It is a piece of work, not a question — though
@@ -53,11 +53,11 @@ the five points above are settled before it is written, since each changes what 
 is.
 
 **Why:** the rules are only authoritative if they are current, and today keeping them
-current is a manual sweep whose omissions are invisible. The framework already automates
+current is a manual sweep whose omissions are invisible. The system already automates
 the two things it considers load-bearing — announcing that it loaded, and reporting work
 left open — and refreshing what it loaded is the same kind of concern left undone.
 
-**How to apply:** settle the five points, then add the script to `framework/foundation/`
+**How to apply:** settle the five points, then add the script to `system/foundation/`
 alongside `install.sh`, discovering installed packages rather than listing them, and
 reference it from each package README's refresh section in place of the bare command.
 Delete this file when it is carried out, and log that it was done. Related: the foundation
@@ -70,3 +70,4 @@ the edited-in-place case).
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 1:42:14 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT

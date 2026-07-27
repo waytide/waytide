@@ -1,6 +1,6 @@
 # Investigate the test output display and test running
 
-The framework says a good deal about **what test output must be shown and when**, and
+The system says a good deal about **what test output must be shown and when**, and
 almost nothing about **how the suite is run or how its output is rendered**. That gap
 has not been examined as a whole. This item is an investigation — it opens the subject
 rather than proposing a change.
@@ -25,7 +25,7 @@ Observations that prompted the investigation:
   other packages." So a package meant to carry commit conventions carries a Ruby and
   TestBench assumption, unlike `testing`, which is deliberately "not tied to a specific
   test-framework API."
-- **The `test-tree` command depends on a script the framework does not ship.**
+- **The `test-tree` command depends on a script the system does not ship.**
   `test-tree-command` calls for "a durable script that does this," and points at another
   project's `test/automated/tree.rb` as "one such implementation." So the command is not
   reproducible from an install alone — each consuming project must supply the script the
@@ -61,7 +61,7 @@ reports.
 where solubility is judged, and solubility is judged against observed behavior, so what
 appears on screen decides what can be deliberated. But those rules rest on running a
 suite, and the running side is specified inconsistently: hardcoded to one stack in one
-place, delegated to a script the framework does not provide in another, and unbounded in
+place, delegated to a script the system does not provide in another, and unbounded in
 a third. Examining them together is the only way to see whether that is three separate
 defects or one missing distinction between producing output and displaying it.
 
@@ -71,9 +71,10 @@ defects or one missing distinction between producing output and displaying it.
 `run-suite-before-commit` rule — and record what is found. Settle each finding before
 changing any rule, and log the decisions. Delete this file when it is carried out, and
 log that it was done. Related: the rules named above, the `testing` package README (which
-declares the package framework-agnostic), the `git` package README (which declares the
+declares the package system-agnostic), the `git` package README (which declares the
 package standalone), and the observations convention (where unsettled findings belong).
 
 ---
 
 Authored by Scott Bellware on Fri Jul 24 2026 at 10 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT

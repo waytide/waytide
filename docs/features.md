@@ -40,7 +40,7 @@ The two lifecycles look alike on purpose, and they part company in four places. 
 - **No gate at the merge.** Your tests are verified before the feature integrates. After it integrates the suite may fail anyway — the merged result is a combination neither side ran — and that's ordinary. You fix it from there.
 - **No declaring it affirmed.** An experiment produces a finding you confirm and promote into the project's decision log. A feature just gets finished.
 
-## What the framework protects
+## What the system protects
 
 - **Nothing quietly trails off.** A feature that's been left open is reported at the start of every session, along with any open experiments — which matters most for one worked in a worktree, where nothing in your main working tree hints that it exists.
 - **You're asked before anything is deleted.** Removing a feature's branch needs your say-so, local and remote both, and its worktree goes first.

@@ -28,19 +28,19 @@ code/ruby  →  foundation, language
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/framework/` tree, committed alongside your code and read at session start:
+Install with `git subtree` — it puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/framework/code/ruby https://github.com/waytide/code-ruby.git master --squash
-git subtree pull --prefix waytide/framework/code/ruby https://github.com/waytide/code-ruby.git master --squash
+git subtree add  --prefix waytide/system/code/ruby https://github.com/waytide/code-ruby.git master --squash
+git subtree pull --prefix waytide/system/code/ruby https://github.com/waytide/code-ruby.git master --squash
 ```
 
-It includes `foundation` and `language` — install those too, or run `sh waytide/framework/code/ruby/install-dependencies.sh` from your project root.
+It includes `foundation` and `language` — install those too, or run `sh waytide/system/code/ruby/install-dependencies.sh` from your project root.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/framework/code/ruby https://github.com/waytide/code-ruby.git master --squash
+git subtree pull --prefix waytide/system/code/ruby https://github.com/waytide/code-ruby.git master --squash
 ```
 
 

@@ -16,7 +16,7 @@
 
 set -e
 
-if [ ! -d framework/foundation ]; then
+if [ ! -d system/foundation ]; then
   echo "Run this from the composite repository root." >&2
   exit 1
 fi
@@ -31,7 +31,7 @@ git log --all --format=%s | sort -u > "$composite_messages"
 # A package is a directory carrying a README.md — the same test the session-start
 # notice uses. The nested `code/ruby` publishes to the flat repo name `code-ruby`.
 packages=$(
-  cd framework || exit 1
+  cd system || exit 1
   find . -mindepth 2 -maxdepth 3 -name README.md |
     sed 's|^\./||; s|/README\.md$||' |
     sort

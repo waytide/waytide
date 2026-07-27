@@ -4,7 +4,7 @@
 set -e
 
 add() {
-  prefix="waytide/framework/$1"
+  prefix="waytide/system/$1"
   repo="https://github.com/eventide-project/agent-norms-$1.git"
 
   if [ ! -d "$prefix" ]; then

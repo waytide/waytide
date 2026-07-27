@@ -35,7 +35,7 @@ not yet exist.
   script gains a second directory to read. Verified by running it against constructed
   record states, as the experiment reporting was.
 - **Phase 4 — The surfaces.** The package introduction and the documentation site, brought
-  into line with the capability that now exists. Behavior-neutral to the framework itself.
+  into line with the capability that now exists. Behavior-neutral to the system itself.
 - **Phase 5 — Close.** The deferred item that raised the question is carried out and
   removed from the queue.
 
@@ -118,3 +118,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:37 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:30:58 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:12 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:31:35 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT

@@ -1,0 +1,1 @@
+# Waytide is a system, not a framework — "framework" in software names something you build inside that inverts control, which Waytide does not do; the directory, the notice, the status line, the bootstrap, and all live prose are renamed

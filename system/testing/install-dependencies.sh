@@ -4,7 +4,7 @@
 set -e
 
 add() {
-  prefix="waytide/framework/$1"
+  prefix="waytide/system/$1"
   repo="https://github.com/waytide/$1.git"
 
   if [ ! -d "$prefix" ]; then
@@ -16,4 +16,3 @@ add() {
 
 add foundation
 add language
-add testing

@@ -27,7 +27,7 @@ proceed, which is what `RuntimeError` already names. `raise "message"` with no c
 produces a `RuntimeError` for exactly that reason.
 
 **Directly.** No intermediate base class between the applicative error and `RuntimeError`
-— not a per-library `Base`, not a shared framework error. Each applicative error class
+— not a per-library `Base`, not a shared system error. Each applicative error class
 states its own parentage where it is defined, so the class definition is the whole answer
 to what it is.
 
@@ -55,3 +55,4 @@ section reports the applicative error classes and which operations raise which).
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 1:26:45 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT

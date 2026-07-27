@@ -36,7 +36,7 @@ Every experiment reaches a clear end — it's never just left open. The end name
 | **Superseded** | replaced by another experiment | not merged; kept, with both records pointing at each other |
 | **Suspended** | *paused, not ended* | the branch is kept; you pick it up later |
 
-## What the framework protects
+## What the system protects
 
 The point of the lifecycle is that an experiment can't quietly become permanent, and can't rejoin the main line without you knowing what it proved:
 

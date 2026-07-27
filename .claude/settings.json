@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh framework/foundation/session-start.sh"
+            "command": "sh system/foundation/session-start.sh"
           }
         ]
       }
@@ -13,6 +13,6 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "sh framework/foundation/statusline.sh"
+    "command": "sh system/foundation/statusline.sh"
   }
 }

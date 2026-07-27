@@ -17,23 +17,23 @@ if [ -n "$WAYTIDE_QUIET" ]; then
   exit 0
 fi
 
-# Locate the framework: waytide/framework/ in a consuming project, framework/
+# Locate the system: waytide/system/ in a consuming project, system/
 # in the Waytide authoring source. Checked in that order — a consuming project
-# may have a framework/ directory of its own.
-if [ -d waytide/framework ]; then
-  framework=waytide/framework
-elif [ -d framework ] && [ -d framework/foundation ]; then
-  framework=framework
+# may have a system/ directory of its own.
+if [ -d waytide/system ]; then
+  system=waytide/system
+elif [ -d system ] && [ -d system/foundation ]; then
+  system=system
 else
   exit 0
 fi
 
 # A package is a directory carrying a README.md. That distinguishes a package
-# from a grouping directory: framework/code/ has no README and is not a package,
-# framework/code/ruby/ has one and is. Depth 2 finds a top-level package's
+# from a grouping directory: system/code/ has no README and is not a package,
+# system/code/ruby/ has one and is. Depth 2 finds a top-level package's
 # README, depth 3 a grouped one's.
 packages=$(
-  cd "$framework" 2>/dev/null || exit 0
+  cd "$system" 2>/dev/null || exit 0
   find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null |
     sed 's|^\./||; s|/README\.md$||' |
     sort
@@ -54,7 +54,7 @@ if [ "$count" = "1" ]; then
 fi
 
 notice=$(printf 'Waytide loaded from %s/ — %s %s: %s' \
-  "$framework" "$count" "$noun" "$list")
+  "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state — experiments and features
 # alike. Neither is ever left silently open (the experiment-runs-on-its-own-branch

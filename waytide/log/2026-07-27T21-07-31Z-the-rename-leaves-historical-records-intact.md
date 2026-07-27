@@ -1,0 +1,1 @@
+# The rename covers live prose only — waytide/log/, waytide/sessions/, waytide/experiments/ and the old log/ keep the original word, since rewriting a record erases it, and "test framework" keeps its generic sense
