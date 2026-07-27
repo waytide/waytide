@@ -15,6 +15,9 @@ Prescriptive Ruby style.
 - Don't inline a method-call result as an argument — bind it to an explaining variable first.
 - Include the primary domain mixin before infrastructure mixins.
 
+**Errors**
+- An applicative error extends `RuntimeError`, and extends it directly — not `StandardError`, and with no base class inserted between for organization.
+
 **Command**: `lib-report` (classify `lib/` by role, construct, method style, API currency, error taxonomy, idioms).
 
 `code/` groups by programming language and is not a package; `code/ruby` is the package. Includes `foundation`, `language`.
