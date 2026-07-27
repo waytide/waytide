@@ -92,8 +92,9 @@ there is no suite in this repository — so each commit is reviewed rather than 
   the experiments it already reports. **Done 2026-07-27.** The per-directory scan became a
   shell function taking the directory, its nouns, and its concluded state words, so the two
   capabilities share one implementation rather than a copied block.
-- [ ] Task 5: The foundation package's introduction names the feature capability and its
-  artifact directory, as it names the experiment's.
+- [x] Task 5: The foundation package's introduction names the feature capability and its
+  artifact directory, as it names the experiment's. **Done 2026-07-27**, stating the two
+  lifecycles together and naming where they differ, rather than describing each alone.
 - [ ] Task 6: The documentation site describes feature work — an entry in the capability
   list, and a page for the reader who wants the lifecycle in plain terms.
 - [ ] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
@@ -107,3 +108,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:26:33 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:27:13 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:28:02 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:37 AM PT

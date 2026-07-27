@@ -29,17 +29,24 @@ summary) and **next deferred item**.
 Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/plans/` (implementation plans
 that sequence a settled design), `waytide/design/` (design docs that settle direction
-first), `waytide/experiments/` (recorded experiments that test a question), and `waytide/sessions/` (the narrative record of a work session).
-Experiments carry a full branch lifecycle — their own branch, a working location
-chosen at initiation (the single working tree or a worktree), the
-affirmed/refuted/inconclusive/abandoned/superseded states, and a test-gated merge —
-in the `experiment-runs-on-its-own-branch` rule. How plans and designs *read* (their
-sections) is the `plan` package's concern.
+first), `waytide/experiments/` (recorded experiments that test a question),
+`waytide/features/` (the lifecycle record of a feature), and `waytide/sessions/` (the narrative record of a work session).
+
+**Experiments and features each carry a full branch lifecycle** — their own branch, a
+working location chosen at initiation (the single working tree or a worktree), declared
+end states, and recorded confirmations — in the `experiment-runs-on-its-own-branch` and
+`feature-runs-on-its-own-branch` rules. They differ where an experiment's question does
+not carry over to a feature's intent: an experiment forecasts, reaches a verdict
+(affirmed/refuted/inconclusive/abandoned/superseded), and merges through a test gate on
+user-declared affirmation; a feature does none of those, ends
+completed/abandoned/superseded (or suspended), and is simply verified before it
+integrates. How plans and designs *read* (their sections) is the `plan` package's
+concern.
 
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/loops/`); foundation owns
-`rules`/`observations`/`deferred`/`log` and the `plans`/`design`/`experiments`
-work-artifact directories.
+`rules`/`observations`/`deferred`/`log` and the
+`plans`/`design`/`experiments`/`features`/`sessions` work-artifact directories.
 
 This package includes no others — everything else includes it.
 
