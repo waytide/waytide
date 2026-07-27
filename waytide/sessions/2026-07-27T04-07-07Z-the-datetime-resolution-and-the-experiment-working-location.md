@@ -152,6 +152,25 @@ carries the sense a support ticket has when escalated to a more involved tier: w
 is the handling, not the standing of the thing handled. Committed as `1f5b9b0` and
 `a18feeb`.
 
+## 8. The queue's cross-references, reconciled
+
+Resolving the worktree item stranded a reference to it. The **feature cycle** item —
+named as the next one to be taken up — closed with "It interacts with the worktree
+question. … see the deferred item on considering a git worktree for experiments," and
+that file no longer exists.
+
+Both the body bullet and the trailing Related line were corrected. The bullet now states
+the settled answer and adds what it implies for features: the experiment's initiation
+gate is affordable *because experiments are rare*, so copying it to features is a live
+thing to **reject** — a per-feature working-location prompt would be paid on ordinary
+work, which is the same objection that item already raises about branching features at
+all. The Related line's reference was dropped, the front reference absorbing what it
+pointed at.
+
+Worth noting as a general matter: the deferred convention says to delete a resolved item,
+and says nothing about the references other items may hold to it. Deleting one can strand
+a pointer in the queue without any signal.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -172,6 +191,9 @@ is the handling, not the standing of the thing handled. Committed as `1f5b9b0` a
 - **A gate is the right home for a situational trade-off.** The worktree item could not
   be settled as one answer for every experiment; it settled in an afternoon once posed as
   a choice made per experiment.
+- **Deleting a resolved deferred item can strand a reference in a remaining one.** The
+  convention says to delete on resolution and is silent on what else points at the file.
+  One reference was stranded here and corrected by hand; nothing would have surfaced it.
 
 ## Glossary
 
@@ -209,16 +231,21 @@ is the handling, not the standing of the thing handled. Committed as `1f5b9b0` a
   and the drift clause, and one each for the second trigger and its name.
 - **Experiment record:** `waytide/experiments/2026-07-21T09-17-02Z-rules-files-flattening.md`,
   backfilled with its `**State:**` line and working location.
-- **Deferred queue:** two items resolved and deleted; six remain.
+- **Deferred queue:** two items resolved and deleted; six remain. The **feature cycle**
+  item — named at the session's close as the next to be taken up — had its worktree
+  cross-reference and its Related line corrected, the item it pointed at having been
+  carried out.
 - **Documentation:** `docs/experiments.md`, conformed to the lifecycle change. The
   standing website-content review item still covers the page as a whole.
 - **Commits:** `1dd49e8` (four uncommitted deferred items), `729e097` (the datetime
-  resolution), `9ad1b56` (the experiment working location), `974e29e` and `11fc550` (this
-  record's earlier versions), `5d99780` (the session-start check), `1f5b9b0` (the second
-  trigger), `a18feeb` (escalated).
+  resolution), `9ad1b56` (the experiment working location), `5d99780` (the session-start
+  check), `1f5b9b0` (the second trigger), `a18feeb` (escalated), `1464956` and `a2076a5`
+  (the feature-cycle item's cross-references), and `974e29e` / `11fc550` / `f9583da`
+  (this record's earlier versions).
 
 ---
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 9:07:07 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:21:33 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:23:32 PM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:38:10 PM PT
