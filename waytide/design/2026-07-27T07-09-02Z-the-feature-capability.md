@@ -29,13 +29,13 @@ experiment's. What this design settles is which parts mirror and which do not.
 ## Vocabulary
 
 - **feature** — a bounded unit of main-line work, designed through the five hinges and
-  delivered to the upstream branch. Distinguished from an experiment by having an
+  completed on the upstream branch. Distinguished from an experiment by having an
   **intent** rather than a question: nothing is being tested, so nothing is forecast and
   no verdict is reached.
 - **working location** — where the branch is worked: the single working tree, or a
   worktree. The term and its mechanics are foundation's, defined in the
   experiment-runs-on-its-own-branch rule and used here unchanged.
-- **delivered**, **abandoned**, **superseded**, **suspended** — the feature states, below.
+- **completed**, **abandoned**, **superseded**, **suspended** — the feature states, below.
 
 ## What mirrors the experiment capability
 
@@ -71,15 +71,15 @@ experiment's. What this design settles is which parts mirror and which do not.
   and that is ordinary and is fixed from there rather than gated against.
 - **No affirmation step.** An experiment is affirmed only on explicit user declaration,
   and affirmation copies its log into the project decision log. A feature has no finding
-  to promote; delivery is the conclusion.
+  to promote; completion is the conclusion.
 
 ## The feature states
 
 Four, derived from what becomes of a feature rather than borrowed from the experiment's
 verdict vocabulary:
 
-- **Delivered** — integrated into the upstream branch. The ordinary conclusion.
-- **Abandoned** — dropped before delivery. The branch is not merged; the record is kept.
+- **Completed** — integrated into the upstream branch. The ordinary conclusion.
+- **Abandoned** — dropped before completion. The branch is not merged; the record is kept.
 - **Superseded** — replaced by a different design. Both records name the counterpart, as
   with experiments.
 - **Suspended** — paused, not ended. The branch is kept; under a worktree, the worktree is
@@ -128,7 +128,7 @@ the suite on integration. The response is to fix it from there.
   proposal — no initiation gate, worktree by escalation only, on the grounds that a prompt
   paid on every feature is ceremony where an experiment's is paid rarely — was raised and
   rejected.
-- **2026-07-27** — The feature states are **delivered**, **abandoned**, **superseded**,
+- **2026-07-27** — The feature states are **completed**, **abandoned**, **superseded**,
   **suspended**.
 
 ## Out of Scope / Deferred
@@ -149,3 +149,4 @@ the suite on integration. The response is to fix it from there.
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:09:02 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:11:34 AM PT
