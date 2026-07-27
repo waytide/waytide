@@ -67,6 +67,18 @@ sh install.sh
 
 It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/` and `waytide/local/rules/` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
 
+**Migrating an installation from before the `system/` and `local/` layout** — a project
+whose packages sit at `waytide/framework/` — run:
+
+```
+sh waytide/framework/foundation/migrate-to-system-and-local.sh
+```
+
+It reports what it will move and re-add, then asks. The packages are re-added rather
+than pulled, because the split path changed and the component repositories' history was
+replaced, so an existing subtree shares no commits with the current remote. Anything
+edited inside `waytide/framework/` is discarded — capture it first.
+
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 
 ```

@@ -1,0 +1,1 @@
+# A migration script moves an installed Waytide from waytide/framework/ to the system/ and local/ layout, re-adding the packages rather than pulling them, since the split path change replaced every component repository history
