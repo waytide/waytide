@@ -6,7 +6,7 @@ An experiment is a bounded unit of work with a lifecycle: it runs on a branch cr
 - **Name the branch `experiment/<subject>`.** The `experiment/` prefix marks it as an experiment (so it is never mistaken for main-sequence topic work — see main-sequence drift below); `<subject>` is a short dash-separated, lower-case name of *what is under test*, named literally. Add a `-run-<n>` suffix **only when the experiment actually has multiple runs** (`experiment/<subject>-run-1`); the default single-branch experiment carries no run suffix. The upstream branch is **not** encoded in the name — a branch can outlive a change of upstream target — it lives in the record.
 - **Record the base — no tag.** The baseline the experiment branched from is captured **in the record** (the base commit SHA and the ref it came from), never pinned with a tag. A later run branches straight from the recorded commit (`git switch -c experiment/<subject>-run-<n> <base-sha>`). Tags are avoided deliberately — experiment tags would accumulate as clutter in `git tag` and on any remote, and the record already names the base, so a tag adds nothing.
 - **Track the upstream branch.** The branch merges back into its **upstream branch**, which is **not always `master`** — it may be another topic branch. The experiment record names the upstream branch (whether `master` or not), along with the experiment branch and its base, so the merge target is never ambiguous.
-- **The working location is chosen at initiation — single tree or worktree.** Every experiment branches; this chooses only **how many checkouts** the branch is worked in. **Each option states what it creates.** Both create the branch — it does not exist yet at initiation — and the second creates a working directory as well. The labels say so outright rather than leaving it to be inferred:
+- **The working location is chosen at initiation — branch only, or branch and worktree.** Every experiment branches; the choice is only how many working directories the branch is worked in. **Each option states what it creates.** Both create the branch — it does not exist yet at initiation — and the second creates a working directory as well. The labels say so outright rather than leaving it to be inferred:
 
 > **Branch only** — Create the branch `experiment/<subject>` and switch this working tree to it. At the conclusion this working tree switches back.
 >
@@ -42,3 +42,4 @@ Changed by Scott Bellware on Sun Jul 26 2026 at 11:47:02 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:12:37 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:22:48 PM PT

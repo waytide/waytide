@@ -14,10 +14,10 @@ what accounts for every place this rule departs from the experiment's.
   captured in the record — the base commit SHA and the ref it came from — never pinned with
   a tag. The upstream branch it merges back into is **not always `master`**; it may be
   another topic branch, and the record names it so the merge target is never ambiguous.
-- **The working location is chosen at initiation — single working tree or worktree.** Every
-  feature branches; this chooses only how many checkouts the branch is worked in. **Single
-  Each option states what it
-  creates, rather than leaving it to be inferred. **Branch only** — create the branch
+- **The working location is chosen at initiation — branch only, or branch and worktree.**
+  Every feature branches; the choice is only how many working directories the branch is
+  worked in. Each option states what it creates, rather than leaving it to be inferred.
+  **Branch only** — create the branch
   `feature/<subject>` and switch this working tree to it, switching back at the conclusion
   (`git switch -c feature/<subject>`). **Branch and worktree** — create the branch and
   check it out in a new worktree, a second working directory, while this working tree
@@ -115,3 +115,4 @@ govern the feature's design), and the `git` run-suite-before-commit rule.
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:33:40 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:12:37 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:22:48 PM PT
