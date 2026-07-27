@@ -22,7 +22,11 @@ what accounts for every place this rule departs from the experiment's.
   (`git switch -c feature/<subject>`). **Branch and worktree** — create the branch and
   check it out in a new worktree, a second working directory, while this working tree
   stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). Both
-  create the branch, since it does not exist yet at initiation; the `-b` is required, and
+  create the branch, since it does not exist yet at initiation. **Branch only says nothing
+  about the working tree** — what distinguishes the two options is whether a working
+  directory is added, so branch only is presented as the branch it creates and the return
+  at the conclusion, not as a movement of the working tree, which is immaterial to it. The
+  `-b` is required, and
   the plain `git worktree add <path> <branch>` form applies only when a worktree is added
   to a feature already under way. The choice is
   put to the user at **every** initiation, through the **AskUserQuestion** selection UI,
@@ -121,3 +125,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 4:18:09 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:34:01 PM PT

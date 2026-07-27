@@ -1,0 +1,1 @@
+# The branch-only option is presented as the branch it creates and the return at the conclusion, not as a movement of the working tree — what distinguishes the two options is whether a working directory is added
