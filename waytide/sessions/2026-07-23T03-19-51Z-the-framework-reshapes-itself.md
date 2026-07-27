@@ -1,4 +1,4 @@
-# Session — The Framework Reshapes Itself: Flattening, Vocabulary, Layout, and Provenance (2026-07-20 – 2026-07-22)
+# Session — The Framework Reshapes Itself: Flattening, Vocabulary, Layout, and Provenance (Wed Jul 22 2026 20:19)
 
 A working session on the **Waytide** framework itself — the composite repo that authors the installable rule packages. It began as a walk through the framework's own concepts (experiments, DBE, planning, loops, sessions), turned into an experiment on the framework's *own* rule files, and from there widened into a run of reshaping: consolidating the substitution rules into per-package vocabularies, renaming the framework's directories twice, giving every rule an authorship footer, and finally writing the sessions convention this very record is the first instance of. Throughout, the framework kept turning its own tools — experiments, precise language, the decision log — on itself.
 
@@ -89,3 +89,4 @@ The session was reflexive throughout: an experiment run on the framework's own r
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 8 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT

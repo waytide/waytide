@@ -1,4 +1,4 @@
-# Session — Waytide Announces Its Own Load, Then Provenance Goes Into Every Working-State File (2026-07-22)
+# Session — Waytide Announces Its Own Load, Then Provenance Goes Into Every Working-State File (Wed Jul 22 2026 22:16)
 
 A short, focused session on the **Waytide** framework. It opened with a status check, turned into a design question — *should Waytide print a notice when it loads into a session?* — and resolved into a built and published feature: a one-line load notice, listing the packages present, carried by committed content so it prints on every developer's machine, with an environment-variable opt-out. The reasoning that shaped it was a distinction the engineer's constraints ultimately settled: an honest deterministic banner was not available under those constraints, so the notice is an **agent-printed self-report**, grounded by enumerating the real package directories — and the rule says so plainly.
 
@@ -136,3 +136,4 @@ The later sitting added a fourth reflexive turn, and this one did not resolve. A
 Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Thu Jul 23 2026 at 2 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT

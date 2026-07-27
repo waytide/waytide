@@ -1,0 +1,1 @@
+# A record title is the one exception to the seconds rule — a title appears once per file, so the repeated-line collision the rule corrects cannot arise there, and the filename carries the same instant to the second

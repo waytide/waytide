@@ -16,8 +16,17 @@ The two datetime conventions in this package both satisfy it:
   because this rule requires it (see the record-rule-authorship-in-a-footer rule).
 
 **A date alone is not a time.** Where a convention records only a date — a design's
-**Settled** resolutions, a session record's title — there is no time of day to
-resolve, and this rule adds none. It applies when a time is written.
+**Settled** resolutions, for instance — there is no time of day to resolve, and this rule
+adds none. It applies when a time is written.
+
+**A record's title is the one exception.** A dated record title is written
+`Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the record-title-date-format
+rule). The defect this rule corrects is a **repeated line within one file**: a running
+history whose entries collide at the same resolution, so a later one cannot be told from
+the one before it and goes unwritten rather than looking like a duplicate. A title occurs
+**once** per file, so that collision cannot arise there — and the seconds-precise UTC
+instant for the same moment is already carried by the record's filename. The exception is
+bounded to titles and reaches no other written time.
 
 **A recorded datetime is never revised to a resolution it never had.** The minutes
 and seconds of a past event are not recoverable, and supplying them would falsify
@@ -47,3 +56,4 @@ footer).
 ---
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:53:08 AM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT

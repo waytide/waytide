@@ -1,4 +1,4 @@
-# Session — The Harness-Printed Notice Is Verified, Then Published (2026-07-23)
+# Session — The Harness-Printed Notice Is Verified, Then Published (Thu Jul 23 2026 18:01)
 
 A verification-and-publication session, continuing directly from [the load-notice session](2026-07-23T05-16-16Z-waytide-announces-its-own-load.md). It opened with the engineer reporting that both harness surfaces work — the session-start notice and the status line — and ended with the foundation package published and the finished mechanism installed from GitHub into a scratch project and observed working. In between it produced one new installer behavior, fixed one defect that every new developer would have seen, and corrected two claims: one of mine, and one made by a background task.
 
@@ -115,3 +115,4 @@ The rest of the session has a single shape repeated. Each step began with someth
 ---
 
 Authored by Scott Bellware on Thu Jul 23 2026 at 6 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
