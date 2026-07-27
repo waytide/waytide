@@ -44,9 +44,16 @@ What has to be weighed — and the central question is whether the experiment li
   paid constantly, where the experiment's is paid rarely. This composite repo's own
   history is direct-to-`master` main-sequence work; a feature cycle would change the
   default rhythm of the project, not just add an option to it.
-- **It interacts with the worktree question.** If both experiments and features are
-  branched, where each is physically worked becomes a sharper question — see the deferred
-  item on considering a git worktree for experiments.
+- **It interacts with the worktree question, which is now answered for experiments.**
+  Settled 2026-07-26: an experiment's **working location** — the single working tree or a
+  worktree — is chosen at every initiation with no default, because the trade-off is
+  situational; it changes afterward on two triggers, an interruption or an escalation
+  (see the experiment-runs-on-its-own-branch rule). If features become branched, the same
+  question arises for them, and the experiment's answer is available to copy or to
+  reject. Rejecting it is a live option: the experiment's gate is affordable because
+  experiments are rare, and a per-feature working-location prompt would be paid on
+  ordinary work, which is the same objection the cost bullet above raises about branching
+  features at all.
 
 **Gated on:** nothing in flight blocks it; it is a methodology question about the
 framework's work lifecycle, not a task. Which parts of the experiment cycle a feature
@@ -77,3 +84,4 @@ on a git worktree for experiments.
 ---
 
 Authored by Scott Bellware on Fri Jul 24 2026 at 10 AM PT
+Changed by Scott Bellware on Sun Jul 26 2026 at 11:33:20 PM PT
