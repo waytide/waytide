@@ -405,6 +405,40 @@ holding no tracked files, which an empty `deferred/` ordinarily is; and the clea
 precondition counted untracked files, so the script tripped over itself when downloaded
 into the project root to be run.
 
+## 14. What the initiation gate actually says
+
+The working-location options were worded from where the work happens — *single tree* and
+*worktree* — and the developer read one at a real gate and corrected it. Two faults, and
+the second was not a wording matter.
+
+**The label described a branch that did not exist.** "Switch this working tree to
+`experiment/<subject>`" reads as though the branch were already there. At initiation it is
+not; the option creates it.
+
+**The rule's worktree command would have failed.** It gave
+`git worktree add <path> experiment/<subject>`, which refuses a branch that does not
+exist — verified. At initiation it takes `-b`. The plain form is right only when a
+worktree is added to work already under way, where the branch is there to check out. The
+wording fault and the broken command had one cause: both assumed a branch that the gate
+is what creates.
+
+**Settled: each option is named for what it creates.**
+
+> **Branch only** — Create the branch `experiment/<subject>` and switch this working tree
+> to it. At the conclusion this working tree switches back.
+>
+> **Branch and worktree** — Create the branch `experiment/<subject>` and check it out in a
+> new worktree: a second working directory at `<path>`. This working tree stays on
+> `<upstream branch>`.
+
+This also retires *single tree*, settled earlier the same night against *Branch* and
+*Worktree* on the grounds that calling one option "Branch" implies the other does not
+branch. The new pair satisfies that and says more: both name a branch, and only one names
+a working directory. What it cost was fourteen stale uses across both lifecycle rules,
+both record conventions, the foundation README, and three documentation pages — found only
+by grepping for them after the question "does the feature capability offer a worktree too?"
+turned up a bullet my own edit had severed mid-sentence.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -447,6 +481,9 @@ into the project root to be run.
 - **A capability arrived design → plan → build in one sitting.** The deferred item had sat
   three days as a question with no answer; posing it as a design with dated resolutions,
   then a plan of seven tasks, carried it to done.
+- **An option label is read at the moment of deciding, and states or hides what happens.**
+  "Switch this working tree to `experiment/X`" described a branch that does not exist yet.
+  The command beside it had the same defect and would have failed.
 - **A word can fail inspection years after it is chosen.** "Framework" was settled on the
   name-literally principle five days earlier and still misdescribed the thing: in software
   a framework inverts control and calls your code, and Waytide runs nothing.
@@ -476,6 +513,10 @@ into the project root to be run.
   under way*. **Migration** and **promotion** were both rejected for this — nothing moves,
   and promotion imports a value ordering the rule denies while colliding with
   observation-to-rule promotion.
+- **branch only** / **branch and worktree** — the two working locations, named for what
+  each creates. Both create the branch; only the second creates a working directory.
+  Retires *single tree*, which named where the work happens and said nothing about a
+  branch.
 - **system** — what Waytide is: a shared, versioned body of guidance a project adopts,
   distributed rather than executed, governing how work proceeds. Not a **framework**,
   which in software names something you build inside that inverts control.
@@ -541,3 +582,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:57:23 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:58:57 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:59:44 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 3:30:32 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 4:25:24 PM PT
