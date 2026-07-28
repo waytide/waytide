@@ -114,8 +114,18 @@ uncontaminated: a test rewritten after seeing the result is weaker evidence than
 advance, and this item deleted a competing memory precisely to avoid accepting a pass that
 looked clean for the wrong reason. The consistent conclusion is to hold.
 
-**Gated on:** a **third** cold session in this repository, opened with a trivial request and
-observed against the criterion settled above — which is now fixed **in advance** of the
+**The foil request makes the third observation ordinary rather than contrived — 2026-07-28.**
+The notice now closes by asking the developer to type `begin`, a message with no content of
+its own (see the announce-waytide-at-session-start rule). Because the agent never sees the
+notice, `begin` is the whole of what reaches it, and the instruction to read comes only from
+the hook — so a read that follows is attributable to the hook alone. That removes the
+difficulty the earlier wording created: a notice naming the read outright, or a `/load-rules`
+command, would have had the developer supply the instruction, and every session would have
+had to be run *against* the mechanism to observe it. The third observation is now just a
+session opened normally.
+
+**Gated on:** a **third** cold session in this repository, opened with the foil request or any
+other trivial request, and observed against the criterion settled above — which is now fixed **in advance** of the
 session that will be judged by it, which is what the second observation lacked. The first
 cold session settled the channel; the second produced a pass under a criterion written after
 the fact. The gate remains compliance alone. Nothing else blocks the publish; the runbook in
@@ -149,3 +159,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 10:41:26 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:57:25 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:59:56 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:28:30 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 1:04:39 AM PT

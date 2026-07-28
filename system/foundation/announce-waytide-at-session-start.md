@@ -6,7 +6,7 @@ A project running Waytide announces the system's presence through **two surfaces
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-The rules are not read yet — type: Read the Waytide rules
+The rules are not read yet — type: begin (the agent reads them, then waits)
 ```
 
   Between those two lines the notice reports **experiments and features that have not
@@ -16,7 +16,7 @@ The rules are not read yet — type: Read the Waytide rules
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
-The rules are not read yet — type: Read the Waytide rules
+The rules are not read yet — type: begin (the agent reads them, then waits)
 ```
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
@@ -73,31 +73,47 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   instruction being buried in a prose file the agent may not open — and no more. The
   verification remains what it has always been, the work honoring the rules.
 
-- **The notice's last line is addressed to the developer, and tells them what to type.**
-  `The rules are not read yet — type: Read the Waytide rules`. It is always present, and it
-  is the one part of the notice that asks for something rather than reporting. It belongs on
-  this channel for the same reason the rest of the notice does: `systemMessage` is what the
-  developer reads. It is **not** the read instruction carried to the agent — that is a
-  different text on `hookSpecificOutput.additionalContext`, addressed to a different reader,
-  and the two are not interchangeable.
+- **The notice's last line asks for the foil request.** `The rules are not read yet — type:
+  begin (the agent reads them, then waits)`. It is always present, and it is the one part of
+  the notice that asks for something rather than reporting.
 
-  **It states the true state before it asks.** At the moment the notice prints, the rules
-  genuinely have not been read — the same fact that makes "installed" the only honest verb
-  in the first line. So the line reports that and then gives the remedy, rather than
-  presenting the read as something already handled.
+  **A foil request is a message with no content of its own, whose only purpose is to give
+  the agent an occasion to act on an instruction already in its context.** Nothing the hook
+  supplies can execute on its own — an agent produces nothing until the developer speaks —
+  so the read cannot happen before some first message exists. The foil request is that
+  message, reduced to the least it can be.
 
-  **It carries no quotation marks around the phrase, and must not gain any.** The notice is
-  interpolated into a JSON string built by `printf` with no escaping, so a double quote
+  **The word is contentless on purpose, and that is what makes the hook observable.** The
+  agent never sees this notice; `systemMessage` renders for the developer alone. So the
+  single word `begin` is the entire content that reaches the agent, and the instruction to
+  read comes from `hookSpecificOutput.additionalContext`. The developer supplies the
+  occasion; the hook supplies the instruction. A read that follows can therefore only have
+  come from the hook.
+
+  **A line naming the read outright would destroy that.** An earlier version told the
+  developer to type *Read the Waytide rules*, which does the hook's work for it: the read
+  then happens whether or not the hook's channel ever reached the agent, and no session can
+  distinguish the two. It also makes the failure silent, where a contentless word makes it
+  loud — an agent that never received the instruction gets an opaque `begin` and has to ask
+  what it means.
+
+  **This is not the developer becoming the primary path.** The hook still carries the whole
+  instruction; the developer contributes only the moment. That distinction is what the
+  contentless word preserves and a content-carrying one collapses.
+
+  **Explaining the word in the notice costs nothing.** The parenthetical is for the
+  developer and never reaches the agent, so the notice can be as clear as it likes without
+  contaminating what the agent is working from.
+
+  **The agent's instruction names the foil request too**, so a bare `begin` is not opaque to
+  an agent that did receive it: read the rules, say only that the read is done, and wait for
+  the real request — printing no package count, which this rule reserves to the harness.
+
+  **No quotation marks, and they must not be added.** The notice and the instruction are
+  both interpolated into a JSON string built by `printf` with no escaping, so a double quote
   would terminate the string and the harness would fail to parse the output — the notice
   would disappear with no error at all, which is the silent failure this whole mechanism
-  exists to avoid. The colon introduces the phrase without that hazard.
-
-  **What it concedes.** A notice that has to tell the developer to ask for the read is an
-  admission that the hook's instruction to the agent does not reliably produce it. That is
-  true, and stating it plainly is better than a notice that implies otherwise. But it makes
-  the developer the primary path and the hook the fallback, which inverts the design — and
-  a session where the developer types the phrase says nothing about whether the hook works
-  unaided. Any session being observed for that must be one where the developer does not.
+  exists to avoid.
 
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
@@ -137,3 +153,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 11:53:12 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:39:47 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:57:27 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 1:04:39 AM PT

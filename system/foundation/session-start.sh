@@ -174,17 +174,25 @@ if [ -n "$features" ]; then
   notice="${notice}\\n${features}"
 fi
 
-# The developer's own instruction line, always present. The notice states what is
-# installed; this states what has not happened yet and what the developer can type to
-# make it happen. Both belong on this channel — it is the one the developer reads — and
-# neither is the read instruction carried to the agent below, which is a different text
-# for a different reader.
+# The foil request line, always present. The notice states what is installed; this states
+# what has not happened yet and what the developer types to trigger it.
 #
-# It carries no quotation marks around the phrase, deliberately. The notice is
-# interpolated into a JSON string built by printf with no escaping, so a double quote
-# here would terminate the string and produce output the harness cannot parse — the
-# notice would vanish with no error. A colon introduces the phrase without that hazard.
-notice="${notice}\\nThe rules are not read yet — type: Read the Waytide rules"
+# The word is deliberately contentless. The agent never sees this notice — systemMessage
+# renders for the developer only — so the single word "begin" is the whole of what reaches
+# it, and the instruction to read comes from additionalContext below. That split is the
+# point: the developer supplies the occasion, the hook supplies the instruction, and a read
+# that follows can only have come from the hook. An agent that never got the instruction
+# receives an opaque "begin" and has to ask what it means, which makes that failure loud
+# instead of silent. A line naming the read outright would do the hook's work for it and
+# hide whether the hook ever functioned.
+#
+# Because the agent does not read this line, explaining it here costs nothing — the
+# parenthetical is for the developer and never reaches the agent.
+#
+# No quotation marks, deliberately. The notice is interpolated into a JSON string built by
+# printf with no escaping, so a double quote here would terminate the string and produce
+# output the harness cannot parse — the notice would vanish with no error at all.
+notice="${notice}\\nThe rules are not read yet — type: begin (the agent reads them, then waits)"
 
 # The read instruction, carried to the agent rather than to the developer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
@@ -198,7 +206,7 @@ notice="${notice}\\nThe rules are not read yet — type: Read the Waytide rules"
 # This does not verify that the rules were read. Nothing here can: the hook runs before
 # the session and has no way to observe what the agent then does. It removes the excuse
 # of the instruction being buried in a file the agent may not open, and no more.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes.' \
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. The developer may open with the single word begin. That is the foil request — a message with no content of its own, whose only purpose is to give you an occasion to act on this instruction. Treat it as exactly that: read the rules, say only that the read is done, and wait for the real request. Do not restate the session-start notice or print a package count; the announce-waytide-at-session-start rule reserves that to the harness.' \
   "$system" "$system" "$system")
 
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
