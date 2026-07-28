@@ -533,6 +533,141 @@ moved `76f9a39..3704677`.
 raised while this record was being appended, with the singular-versus-plural question
 against its siblings left for the resolution to settle.
 
+## 19. The subagent examination, and the hook conformed to its own finding
+
+Two items in sequence, the second following from the first.
+
+**Subagents were deferred rather than tried** —
+`local/deferred/2026-07-28T04-44-55Z-examine-how-claude-subagents-support-work-with-waytide.md`.
+The item's first question is whether a subagent is governed by the rules at all: Waytide
+loads through the `CLAUDE.md` bootstrap and the `SessionStart` hook, and a subagent begins
+with its own context, so it may inherit neither. If it does not, a subagent given authoring
+work writes commit messages and rule files to no standard. The item also fixes a boundary
+that holds whatever the answer is — design-by-efferent requires the developer prompted at
+every hinge, and a subagent's result returns to the main agent, so no gated step can be
+delegated.
+
+**The hook and the status line were still reached through `sh`.** Reading
+`.claude/settings.json` to ground that item turned up `sh system/foundation/session-start.sh`
+and `sh system/foundation/statusline.sh` — the same fault corrected in section 18, in the
+file that wires the whole system on. Both were conformed, in this repository's settings and
+in the `settings_json` heredoc in `install.sh` that generates the same file for a consuming
+project. The two must agree or the source and what it produces diverge. `install.sh` keeps
+its own `sh` prefix, being fetched with `curl`. Foundation was published again,
+`3704677..47574ca`.
+
+## 20. What the rules said, read in full
+
+The rules had not been read at session start, as `AGENTS.md` directs. They were read
+reactively instead — the `git` package when commit messages were needed, the deferred and
+sessions conventions when their formats were, the footer rule when a datetime was. Each read
+was correct in the moment, which is why the gap never announced itself. Asked about it
+directly, there was no defensible answer: the instruction is unconditional and was made
+conditional on how large the opening request looked.
+
+All 86 files were then read and this session's output audited against them. What it found:
+
+**One binding substitution violated.** `language/vocabulary.md` retires *sweep* for
+*conform*; the subagent item used it four times. The correction was not the mechanical swap —
+the vocabulary defines *conform* as bringing prose into line with a convention, and what the
+item named was a **search** for stranded references. Substituting mechanically would have
+traded a retired word for an inaccurate one.
+
+**Three decisions had gone unlogged.** The decision-log convention says to detect and write
+an entry whenever a real decision is made, without being asked. Retiring the migration path,
+invoking a subtree-delivered script directly, and applying that to the hook and status line
+all qualified. The three commits immediately before this session's each carried a log entry;
+this session's carried none. They were written retroactively with a `Log:` prefix.
+
+**Prompts had been put as prose.** `present-every-prompt-through-askuserquestion` covers any
+prompt, not only hinge choices. "Say the word if you want…" appeared at least six times, and
+one of them was answered as a gate.
+
+**The dialogue digest was never kept.** `auto-record-design-dialogue` asks for the reasoning
+recorded as the session proceeds. Offering to reconstruct it was declined —
+`local/log/2026-07-28T05-18-52Z-the-design-dialogue-digest-is-not-backfilled.md`: a digest
+rebuilt from memory is a different artifact wearing the same name, and the honest record of a
+session that did not keep one is that it has none.
+
+Clean: filenames, provenance footers, seconds resolution, commit subjects, and the session
+record's own sections.
+
+## 21. The hook carries the read instruction
+
+The remedy was put where the failure was — not in a promise to do better, which is the same
+mechanism that had already failed. The `SessionStart` hook now carries the read instruction
+to the agent.
+
+**Two readers, two channels.** The notice goes in `systemMessage`, which the harness renders
+for the developer. The instruction goes in `hookSpecificOutput.additionalContext`, which
+reaches the agent's context and is never displayed. They carry different text because the
+developer does not need an instruction addressed to the agent restated every session.
+
+**The instruction states the read is unconditional**, because the failure it answers was
+conditional — a one-line opening request, judged not to warrant seventy-odd files, in a
+session that became rule edits and two package publishes.
+
+**`WAYTIDE_QUIET` no longer silences everything.** It exited before the hook emitted
+anything; it now silences the notice and leaves the instruction. Quieting a display must not
+disable the mechanism that carries the rules, or a personal preference would switch off the
+system's governance — the class of failure the hook exists to answer.
+
+**It does not verify the read, and the rule says so.** The hook runs before the session and
+cannot observe what the agent then does. It removes one excuse — the instruction buried in a
+prose file the agent may not open — and no more. Instructing and vouching are different acts,
+so the notice's existing claim to say nothing about whether the rules were read still holds.
+
+## 22. The publish held, and the test reduced to one variable
+
+The change was committed and **deliberately not published** —
+`local/deferred/2026-07-28T05-31-45Z-publish-foundation-once-the-read-instruction-is-proven.md`.
+The script's output is valid JSON carrying both fields, confirmed by parsing it, along with
+the `WAYTIDE_QUIET` and no-system-installed paths. What could not be confirmed from inside a
+running session is that the harness **consumes**
+`hookSpecificOutput.additionalContext`. If the shape is wrong the instruction does nothing,
+silently — the fault it was written to correct. Publishing it would give a consuming project a
+hook that looks right, reports nothing wrong, and does nothing.
+
+**Testing it by asking is impossible.** Any question about a rule can be answered by reading
+the file at that moment, so correct answers prove nothing; the failure was never inability but
+timing. Only the ordering of the reads against the first substantive action distinguishes
+them, and that lives in the session transcript.
+
+**A competing mechanism was removed.** An agent memory instructing the same read had been
+written earlier in the session. It would have produced a passing session whether or not the
+channel worked, and a consuming project has no equivalent memory — so a confounded pass would
+have shipped a hook that works nowhere else. It was deleted rather than the test weakened.
+
+**A transcript checker and a blocking hook were both considered and declined** —
+`local/log/2026-07-28T05-38-48Z-the-session-start-read-gets-no-check-or-gate.md`. A check
+proves only that the files entered context; a gate that blocks editing until they are read can
+be satisfied mechanically without any of it governing the work. The absence is deliberate, and
+recorded so it is not later mistaken for an oversight.
+
+## 23. Two things nothing reports
+
+Both surfaced from the same shape — work that exists but nothing announces.
+
+**Commits that are not pushed.** The status line reports an uncommitted working tree and says
+nothing about commits that exist in one working copy only —
+`local/deferred/2026-07-28T04-50-23Z-the-status-line-shows-commits-not-pushed.md`. Left open
+rather than settled by parallel: whether the segment carries a count, where the uncommitted
+one deliberately does not, and what is shown when a branch has no upstream. The tracking ref
+is stale by design and the line cannot fetch, so what it would report is the last known remote
+state. The occasion was this session running with commits unpushed while foundation was
+published twice from them.
+
+**The deferred queue itself** —
+`local/deferred/2026-07-28T05-44-59Z-the-deferred-queue-is-surfaced-at-session-start.md`. The
+experiments mechanism does not transfer, and that is the design problem: an experiment
+concludes, so its line is normally absent and its presence means something; a deferred item
+stands until deleted, so its line would appear every session and be read once. Filtering to
+what is actionable is not computable either — `**Gated on:**` is free prose, and making it
+readable would change the deferred convention itself, touching every existing item. Noted as
+possibly the better answer for the case that prompted it: a check comparing a package's
+composite commits against its component repository's head, the mirror of
+`report-direct-commits.sh`, for work awaiting **distribution** rather than awaiting a gate.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -609,6 +744,40 @@ against its siblings left for the resolution to settle.
   does.** The migration script's removal left a documented `curl` URL, an error message
   directing users to it, and a comment naming it. This is the stranded-reference item
   from section 8 recurring in a second form, against a file rather than a queue entry.
+- **A fault found in one file is worth looking for in the file that wires the system on.**
+  The `sh` prefix was corrected on the refresh script, then found again in
+  `.claude/settings.json` — and it had to be corrected in two places that must agree, the
+  settings file and the heredoc in `install.sh` that generates it.
+- **An unconditional instruction made conditional fails silently.** The rules were read on
+  demand rather than at session start, and every individual read was justified in the
+  moment. Nothing ever failed in a way that would send anyone back to the directive; the gap
+  surfaced only when asked about directly.
+- **A vocabulary substitution is not always a swap.** *Sweep* is retired in favor of
+  *conform*, but the passage meant a **search**. Applying the table mechanically would have
+  replaced a retired word with an inaccurate one — the substitution names the impulse to
+  avoid, not the word that necessarily belongs.
+- **A record reconstructed from memory is a different artifact wearing its name.** The
+  dialogue digest is written as the session proceeds or not at all; a session without one
+  honestly has none, and the loop record's marked-backfill allowance does not carry over.
+- **Instructing is not vouching.** The hook can tell the agent to read the rules and still
+  report nothing about whether it did. Conflating the two is what made the old
+  agent-printed notice dishonest; keeping them apart is what let the instruction be added
+  without widening the notice's claim.
+- **An opt-out that silences a display must not disable a mechanism.** `WAYTIDE_QUIET`
+  exited before the hook emitted anything, which would have let a personal preference switch
+  off the read instruction. Silencing what a person sees and disabling what governs the agent
+  are different acts.
+- **A change that might fail silently is not published until it is observed working.** The
+  read instruction's channel could not be confirmed from inside a session, and a consuming
+  project that pulled a hook doing nothing would be worse off than one without it — the
+  projects least able to notice being the ones it most needs to reach.
+- **A second mechanism ruins the test of the first.** An agent memory instructing the same
+  read would have produced a passing session either way, and a consuming project has no such
+  memory. Removing it was cheaper than accepting a pass that proved nothing.
+- **You cannot test a timing failure by asking questions.** Any rule can be read on demand to
+  answer about it, so answers are confounded. Only the ordering of the reads against the
+  first substantive action separates compliance from reacting, and it lives in the
+  transcript.
 
 ## Glossary
 
@@ -659,14 +828,20 @@ since restating them would erase the record of what changed.*
   `agent-file-names-use-iso8601-utc-prefix`, and the `subject-first-commit-messages`
   correction adopted from `waytide/git`.
 - **Scripts:** `system/foundation/session-start.sh`, reporting experiments and features
-  that have not concluded; `system/foundation/statusline.sh`, which gained the
+  that have not concluded, and now carrying the read instruction to the agent on
+  `hookSpecificOutput.additionalContext`; `system/foundation/statusline.sh`, which gained the
   uncommitted-changes segment; `system/foundation/refresh-packages.sh`, now executable and
   documented as invoked directly; and `report-direct-commits.sh` at the root, which reports
   component repositories carrying commits this history does not contain.
+- **Harness configuration:** `.claude/settings.json` and the `settings_json` heredoc in
+  `install.sh` that generates it for a consuming project — both invoking the hook and the
+  status line directly rather than through `sh`, and required to agree.
   `system/foundation/migrate-to-system-and-local.sh`, which moved a consuming project to
   this layout, was **removed** at the session's close along with every reference to it — see
   section 18. Section 13 names it as it stood at the time.
-- **Decision log:** forty-three entries under `local/log/`.
+- **Decision log:** fifty-one entries under `local/log/`. Three of the last eight were written
+  retroactively, after the audit found the convention's detect-and-log trigger had been missed
+  for the foundation-scripts work.
 - **Design and plan:** `local/design/2026-07-27T07-09-02Z-the-feature-capability.md` and
   `local/plans/2026-07-27T07-17-24Z-the-feature-capability.md` — the first of each in this
   repository, all seven tasks complete with inline notes.
@@ -675,15 +850,18 @@ since restating them would erase the record of what changed.*
 - **Documentation:** `docs/experiments.md`, `docs/features.md` (new), and
   `docs/capabilities.md`, whose list gained a *Building features* section and renumbered
   from six onward. The standing website-content review item covers all three.
-- **Deferred queue:** three items resolved and deleted, three added; **seven remain** —
-  among them the stranded-reference item and the `work-session/` rename raised in
-  section 18.
+- **Deferred queue:** three items resolved and deleted, six added; **eleven remain** — among
+  them the stranded-reference item, the `work-session/` rename, the subagent examination, the
+  unpushed-commits segment, the held foundation publish, and surfacing the queue itself.
 - **This repository's layout:** `system/` and `local/` at the root, `local/migration/`
   holding the pre-Waytide migration records, and `AGENTS.md` stating how to read a rule's
   consuming-project path here.
 - **Component repositories:** all seven at the `system/<package>` split, force-reset once
-  when the path changed and fast-forwarding since. `waytide/foundation` was published
-  again at the session's close, `76f9a39..3704677`, a fast-forward.
+  when the path changed and fast-forwarding since. `waytide/foundation` was published twice
+  at the session's close — `76f9a39..3704677`, then `3704677..47574ca` — both fast-forwards,
+  with `report-direct-commits.sh` clean before and after each. It then stayed at `47574ca`
+  **one commit behind on purpose**: the read instruction is committed and held until it is
+  observed reaching the agent.
 
 ---
 
@@ -704,3 +882,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:59:44 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 3:30:32 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:25:24 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 5:44:12 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:48:16 PM PT
