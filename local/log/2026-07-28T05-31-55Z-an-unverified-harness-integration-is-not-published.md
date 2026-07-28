@@ -1,0 +1,1 @@
+# A change whose effect depends on an unverified harness integration is committed but not published until the integration is observed working — a consuming project that pulls a hook which looks correct, reports nothing wrong, and does nothing is worse off than one without it, and the projects least able to notice are the ones the change most needs to reach
