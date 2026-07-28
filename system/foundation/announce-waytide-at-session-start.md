@@ -36,20 +36,46 @@ The rules are not read yet — type: begin (the agent reads them, then waits)
   branch name gives it away. The configuration that best isolates an experiment is the
   one that most easily loses track of it.
 
-- **A status line.** `waytide/system/foundation/statusline.sh` keeps the same count on screen for the whole session, alongside the working directory and git branch, so the fact stays available instead of scrolling away:
+- **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch, so the fact stays available instead of scrolling away:
 
 ```
-waytide · master - Waytide system active (7 packages)
-waytide · master · uncommitted changes - Waytide system active (7 packages)
+waytide · master - Waytide
+waytide · master · uncommitted changes - Waytide
+waytide · master · uncommitted changes · unpushed commits - Waytide
 ```
 
-  The **uncommitted changes** segment appears only when the working tree has something
+  **The Waytide segment is one word and carries no package count.** It did carry one until
+  2026-07-28. The count told a developer nothing they act on, changed only when a package
+  was installed or removed, and competed for width with the segments that do change. What
+  the line is for here is the standing fact that the system is in force. Presence is still
+  read from disk — at least one directory carrying a `README.md`, the same test for a
+  package the notice uses — so only the display drops the number; the on-demand detail is
+  the status report's job (see the status-report-format rule).
+
+  **The uncommitted changes segment** appears only when the working tree has something
   not committed — a modified tracked file, a staged change, or an untracked file that is
   not ignored. All three are uncommitted, and the untracked case is the point rather than
   noise: a file left untracked is usually one that should be added or ignored. Absence is
   the clean signal, as it is for the notice's open experiments and features. It is words
   rather than a mark on the branch — `master*` is the conventional form and means nothing
   until a reader is taught it.
+
+  **The unpushed commits segment** is the next state along the same axis: work that is
+  committed but exists only in this working copy, and would be lost with it just the same.
+  Both segments can be present at once, so each is named in words that read distinctly.
+
+  It carries **no count**, matching the uncommitted segment — the fact worth surfacing is
+  that unpushed work exists at all, and git answers "how much" precisely on request. It
+  **never reaches the network**: the line renders every turn, so fetching is out of the
+  question. It compares against the remote-tracking ref, which reflects the **last fetch**
+  rather than the remote as it stands, so what it reports is the last known remote state
+  and a stale tracking ref can leave it silent when the remote has moved.
+
+  **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to
+  somewhere, and with no upstream configured there is nowhere for it to be relative to — a
+  branch that was never going to be pushed is ordinary, and calling it unpushed would be
+  false. That does leave an upstream missing *by accident* unreported. It is a different
+  fact from the one this segment names, and it is deliberately not folded in.
 
 Both are wired by a committed `.claude/settings.json` that `install.sh` places in the consuming project.
 
@@ -154,3 +180,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 12:39:47 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:57:27 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 1:04:39 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 1:24:32 AM PT

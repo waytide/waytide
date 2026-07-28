@@ -20,7 +20,8 @@ which reads the package directories actually present and emits the
 `Waytide installed at system/ — N packages: …` notice, closing with a line telling the
 developer to type `begin` — the foil request, whose only purpose is to give the agent an
 occasion to act on the read instruction the hook carries; `system/foundation/statusline.sh`
-carries the same count in the status line for the rest of the session. Setting the
+keeps the system's presence in the status line for the rest of the session, beside the
+working directory, branch, and any uncommitted or unpushed work. Setting the
 `WAYTIDE_QUIET` environment variable to any non-empty value silences both. In a consuming
 project `install.sh` places the equivalent `.claude/settings.json`; here in the source it
 is committed like this file.

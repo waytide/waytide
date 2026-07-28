@@ -31,6 +31,33 @@ if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
   changes="uncommitted changes"
 fi
 
+# Commits that exist only here — the next state along the same axis as uncommitted work,
+# and work that would be lost with this working copy just the same. Nothing else announces
+# them; the count is otherwise noticed only when someone thinks to ask.
+#
+# It reads only local refs and never reaches the network. The status line renders on every
+# turn, so fetching is out of the question. What this compares against is the
+# remote-tracking ref, which reflects the last fetch rather than the remote as it stands
+# now — so the segment reports the last known remote state, and a stale tracking ref can
+# leave it silent when the remote has in fact moved.
+#
+# No count, matching the uncommitted segment. The line already carries one number, and the
+# fact worth surfacing is that unpushed work exists at all; how much is a question for git,
+# which answers it precisely on request.
+#
+# A branch with no upstream reports nothing. "Unpushed" is a claim relative to somewhere,
+# and with no upstream configured there is no somewhere for it to be relative to — a branch
+# that was never going to be pushed is ordinary, and calling it unpushed would be false.
+# That leaves an upstream missing by accident unreported, which is a different fact than
+# this segment names and is not folded into it.
+unpushed=
+if git rev-parse --abbrev-ref --symbolic-full-name @{upstream} >/dev/null 2>&1; then
+  ahead=$(git rev-list --count @{upstream}..HEAD 2>/dev/null)
+  if [ -n "$ahead" ] && [ "$ahead" != "0" ]; then
+    unpushed="unpushed commits"
+  fi
+fi
+
 # Locate the system, as the session-start notice does.
 if [ -d waytide/system ]; then
   system=waytide/system
@@ -40,18 +67,22 @@ else
   system=
 fi
 
+# The segment names the system and nothing else. It carried a package count until
+# 2026-07-28; the count told a developer nothing they act on, changed only when a package
+# was installed, and competed for width with the segments that do change. What the line is
+# for here is the standing fact that Waytide is in force — one word says it.
+#
+# Presence is still read from disk rather than assumed: at least one directory carrying a
+# README.md, the same test for a package that the session-start notice uses. Only the
+# display drops the number.
 waytide=
 if [ -n "$system" ] && [ -z "$WAYTIDE_QUIET" ]; then
-  count=$(
+  package=$(
     cd "$system" 2>/dev/null &&
-      find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | wc -l | tr -d ' '
+      find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | head -1
   )
-  if [ -n "$count" ] && [ "$count" != "0" ]; then
-    noun=packages
-    if [ "$count" = "1" ]; then
-      noun=package
-    fi
-    waytide="- Waytide system active ($count $noun)"
+  if [ -n "$package" ]; then
+    waytide="- Waytide"
   fi
 fi
 
@@ -59,7 +90,7 @@ fi
 # trails after a hyphen, so the developer's own orientation comes first and the
 # system indicator reads as an annotation on it.
 line=
-for segment in "$directory" "$branch" "$changes"; do
+for segment in "$directory" "$branch" "$changes" "$unpushed"; do
   if [ -n "$segment" ]; then
     if [ -z "$line" ]; then
       line="$segment"
