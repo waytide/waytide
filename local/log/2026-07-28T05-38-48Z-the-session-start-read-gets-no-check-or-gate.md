@@ -1,0 +1,1 @@
+# The session-start read gets no transcript checker and no blocking hook — the `additionalContext` instruction stands as the only mechanism, judged by observing the next session, because a check that reads the transcript proves only that the files entered context and a gate that blocks editing until they are read can be satisfied mechanically without any of it governing the work

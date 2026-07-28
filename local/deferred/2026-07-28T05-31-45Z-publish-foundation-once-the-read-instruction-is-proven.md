@@ -19,6 +19,33 @@ only when a task appears to call for it — the channel is not reaching it, and 
 belongs in the notice instead, at the cost of showing the developer text addressed to the
 agent.
 
+**What to watch for, precisely:**
+
+- **A run of reads before anything else.** Every `.md` file under `system/` — 86 at the time
+  of writing — read before the first tool call that touches the request, `system/foundation/`
+  first, since the instruction names it first. The failing shape is this session's opening:
+  straight to `git status` and `rm`, with the reads arriving far later.
+- **Open with a trivial request.** The test means nothing otherwise. A request to audit a
+  package would have the agent read those files for task reasons and prove nothing about the
+  instruction. The strongest opening is one that gives every excuse to skip the read — the
+  session that produced this item opened with "remove the untracked file named noise".
+- **Ask what arrived, before giving a task.** *What instruction did you receive about reading
+  the rules, and where did it come from?* Context injected by a hook and a recalled memory
+  arrive distinguishably, so the answer identifies the channel even if the agent then behaves
+  correctly for some other reason. The hook's text is identifiable: it names the install path
+  and says the apparent size of the first request is not a reason to defer.
+- **The evidence is in the transcript**, at
+  `~/.claude/projects/<project>/<session-id>.jsonl`, which records every tool call in order.
+  The ordering of the reads against the first `Edit`/`Write`/mutating `Bash` is there and
+  needs no cooperation from the agent.
+
+**A competing mechanism was removed so this tests one thing.** An agent memory instructing
+the same read was written in the same session and deleted before the test, on the developer's
+decision. It would have produced a passing session whether or not the channel worked — and
+since a consuming project has no such memory, a confounded pass would have shipped a hook
+that does nothing for anyone else. That is the failure this whole item exists to prevent, so
+the memory had to go rather than the test being weakened.
+
 **Publishing an unverified harness integration is what this avoids.** A consuming project
 that pulled it would carry a hook that looks correct, reports nothing wrong, and does
 nothing — and the projects least able to notice are the ones the instruction most needs to
@@ -41,3 +68,4 @@ by deleting this file and logging that it was carried out.
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 10:31:45 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:41:26 PM PT

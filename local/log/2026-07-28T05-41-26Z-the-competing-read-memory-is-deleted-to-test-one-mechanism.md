@@ -1,0 +1,1 @@
+# The agent memory instructing the session-start read is deleted so the hook's `additionalContext` channel is the only mechanism under test — the memory would have produced a passing session whether or not the channel worked, and a consuming project has no equivalent memory, so a confounded pass would have shipped a hook that does nothing for anyone but this repository
