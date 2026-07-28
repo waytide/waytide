@@ -51,21 +51,63 @@ that pulled it would carry a hook that looks correct, reports nothing wrong, and
 nothing — and the projects least able to notice are the ones the instruction most needs to
 reach.
 
-**Gated on:** observing the next session's opening behavior in this repository. Nothing else
-blocks the publish; the runbook in `CONTRIBUTING.md` applies unchanged and the split will
-fast-forward.
+**What the test produced (Mon Jul 27 2026 22:57 PT).** The session opened with the third
+watch item — *what instruction did you receive about reading the rules, and where did it come
+from?* — and the two halves of the result diverge.
+
+*The channel works.* `hookSpecificOutput.additionalContext` reached the agent's context
+verbatim, as its own turn ahead of the developer's message, and was identifiable as the hook's
+text: it named the install path and stated that the apparent size of the first request is not
+a reason to defer. The specific unverified thing — whether the harness consumes that field for
+a `SessionStart` hook — is confirmed. The `systemMessage` notice did **not** reach the agent,
+which is correct; that channel renders for the developer.
+
+*The instruction did not produce the read.* No rule file was read before the first action. The
+agent read `session-start.sh` and `.claude/settings.json` to answer the question, answered it,
+and deferred the rule read on exactly the reasoning the instruction names — the request looked
+small and meta, so the read was judged not to apply to it. It then offered the read as
+something to approve, which is the same deferral in another form. The full read of all 83 rule
+files under `system/` happened only after the developer asked whether the rules should have
+been read. (The count above says 86 at the time of writing; it is 83 now, worth reconciling
+separately.)
+
+*The item's two branches do not cover this.* Moving the instruction to the `systemMessage`
+notice was the remedy for a channel that silently does nothing, and that failure is disproven.
+The same words on the developer's channel would not have changed the agent's judgment. What
+failed is compliance, which the hook's own comment already disclaims any power to verify. So
+the publish does not follow from this observation mechanically — it turns on whether a proven
+channel carrying an instruction the agent then deferred is worth shipping.
+
+**Gated on:** a **second** cold session in this repository, opened with a trivial request and
+observed for whether the rules are read before the first action. The first cold session
+settled the channel and left compliance unsettled, so the gate is now compliance alone.
+Nothing else blocks the publish; the runbook in `CONTRIBUTING.md` applies unchanged and the
+split will fast-forward.
 
 **Why:** the change exists to close a silent failure, so shipping it while it might itself
 fail silently would reproduce the fault at one remove. Holding costs nothing — the commit is
 in the composite and the publish is one runbook away.
 
-**How to apply:** at the start of the next session here, note whether the rules were read
-before the first action. If they were, publish foundation by the `CONTRIBUTING.md` runbook
-and resolve this item. If they were not, move the instruction to the `systemMessage` notice,
-update the announce-waytide-at-session-start rule to match, and publish that instead. Resolve
-by deleting this file and logging that it was carried out.
+**How to apply:** open the next session here with a trivial request and note whether the rules
+were read before the first action.
+
+- **Read before the first action** — publish foundation by the `CONTRIBUTING.md` runbook and
+  resolve this item.
+- **Deferred again** — the instruction reaches the agent and does not compel it, which is a
+  fact about the wording rather than the channel. Revise the instruction's text in
+  `session-start.sh` and test again; do not move it to the `systemMessage` notice, which the
+  first session disproved as the remedy.
+
+Resolve by deleting this file and logging that it was carried out.
+
+**Do not read the first session's answer as a second data point.** Once a session has been
+asked what instruction it received, that session's later behavior proves nothing about the
+instruction — the question itself put the rules in front of the agent. Only a session's
+**opening** counts, and each session supplies one observation.
 
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 10:31:45 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:41:26 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:57:25 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:59:56 PM PT
