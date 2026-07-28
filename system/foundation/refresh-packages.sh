@@ -34,13 +34,11 @@ fi
 
 if [ ! -d waytide/system ]; then
   echo "No packages installed — waytide/system/ is not present." >&2
-  echo "If this project still has waytide/framework/, run" >&2
-  echo "migrate-to-system-and-local.sh first." >&2
   exit 1
 fi
 
 # A subtree pull merges and commits, so it needs a clean tree. Untracked files are not
-# at risk and are allowed, as they are by the installer and the migration script.
+# at risk and are allowed, as they are by the installer.
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
   echo "The working tree has uncommitted changes to tracked files." >&2
   echo "A refresh merges and commits; commit or stash first." >&2
