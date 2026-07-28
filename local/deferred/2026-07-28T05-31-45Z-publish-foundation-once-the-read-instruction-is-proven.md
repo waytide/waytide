@@ -21,10 +21,29 @@ agent.
 
 **What to watch for, precisely:**
 
-- **A run of reads before anything else.** Every `.md` file under `system/` — 86 at the time
-  of writing — read before the first tool call that touches the request, `system/foundation/`
-  first, since the instruction names it first. The failing shape is this session's opening:
-  straight to `git status` and `rm`, with the reads arriving far later.
+- **The criterion — settled 2026-07-28.** Every rule file under `system/` is read,
+  `system/foundation/` first since the instruction names it first, and **the read completes
+  before the agent produces anything — no response to the developer and no change to the
+  repository. Reading and enumerating are free.** One line, one thing measured: before the
+  read is done, the agent may only gather.
+
+  Two earlier criteria were tried in this item and both are retired. **"Read before the
+  first tool call that touches the request"** counts the wrong unit — tool calls are an
+  artifact of how work gets batched, not of whether the agent deferred. It fails a `pwd`
+  bundled into the enumeration call, which is no deferral at all, and passes the same
+  command issued a moment apart. A test whose result turns on bundling measures bundling.
+  **"Reads before the first `Edit`/`Write`/mutating `Bash`"** is worse: it misses the exact
+  failure this item recorded. The first cold session mutated nothing — it read two files to
+  answer a question, answered it, and deferred the rule read — so that criterion would have
+  scored it a pass.
+
+  The replacement is binary, visible in the transcript without cooperation from the agent,
+  ungameable by bundling, and catches both recorded failure shapes — the session that
+  answered first, and a session going straight to `git status` and `rm` — because each
+  produced something before reading. It draws the line where the harm is: an answer the
+  developer acts on, or a change the repository keeps, arrived at under rules never read.
+  No file count is stated, because the count drifts as packages change and the criterion
+  must not.
 - **Open with a trivial request.** The test means nothing otherwise. A request to audit a
   package would have the agent read those files for task reasons and prove nothing about the
   instruction. The strongest opening is one that gives every excuse to skip the read — the
@@ -35,9 +54,9 @@ agent.
   correctly for some other reason. The hook's text is identifiable: it names the install path
   and says the apparent size of the first request is not a reason to defer.
 - **The evidence is in the transcript**, at
-  `~/.claude/projects/<project>/<session-id>.jsonl`, which records every tool call in order.
-  The ordering of the reads against the first `Edit`/`Write`/mutating `Bash` is there and
-  needs no cooperation from the agent.
+  `~/.claude/projects/<project>/<session-id>.jsonl`, which records every tool call and every
+  response in order, and needs no cooperation from the agent. It is where the criterion above
+  is checked; it states no test of its own.
 
 **A competing mechanism was removed so this tests one thing.** An agent memory instructing
 the same read was written in the same session and deleted before the test, on the developer's
@@ -78,11 +97,29 @@ failed is compliance, which the hook's own comment already disclaims any power t
 the publish does not follow from this observation mechanically — it turns on whether a proven
 channel carrying an instruction the agent then deferred is worth shipping.
 
-**Gated on:** a **second** cold session in this repository, opened with a trivial request and
-observed for whether the rules are read before the first action. The first cold session
-settled the channel and left compliance unsettled, so the gate is now compliance alone.
-Nothing else blocks the publish; the runbook in `CONTRIBUTING.md` applies unchanged and the
-split will fast-forward.
+**What the second cold session produced (Tue Jul 28 2026 00:28 PT) — and why it does not
+settle the gate.** The session opened with "What is the current working directory" — trivial,
+and not the disqualifying opening, since it did not ask what instruction had arrived. The
+deleted memory stayed deleted, so nothing else instructed the read. Every rule file under
+`system/` was read, `system/foundation/` first, before the first response and before any
+change. Under the criterion settled above, that is a pass.
+
+**It is nonetheless a confounded observation, and the confound is the criterion itself.** The
+criterion was written *during* that session, after the behavior it judges, by the agent whose
+behavior it judges. The session's first tool call bundled `pwd` — the answer to the request —
+with the enumeration of the rule files, which failed the criterion then in force and passes
+the one that replaced it. The replacement is defensible on its own terms and was argued from
+the first session's failure rather than from this one's convenience. That does not make it
+uncontaminated: a test rewritten after seeing the result is weaker evidence than one fixed in
+advance, and this item deleted a competing memory precisely to avoid accepting a pass that
+looked clean for the wrong reason. The consistent conclusion is to hold.
+
+**Gated on:** a **third** cold session in this repository, opened with a trivial request and
+observed against the criterion settled above — which is now fixed **in advance** of the
+session that will be judged by it, which is what the second observation lacked. The first
+cold session settled the channel; the second produced a pass under a criterion written after
+the fact. The gate remains compliance alone. Nothing else blocks the publish; the runbook in
+`CONTRIBUTING.md` applies unchanged and the split will fast-forward.
 
 **Why:** the change exists to close a silent failure, so shipping it while it might itself
 fail silently would reproduce the fault at one remove. Holding costs nothing — the commit is
@@ -111,3 +148,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 10:31:45 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:41:26 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:57:25 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:59:56 PM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 12:28:30 AM PT
