@@ -149,7 +149,7 @@ settings_json() {
         "hooks": [
           {
             "type": "command",
-            "command": "sh waytide/system/foundation/session-start.sh"
+            "command": "waytide/system/foundation/session-start.sh"
           }
         ]
       }
@@ -157,7 +157,7 @@ settings_json() {
   },
   "statusLine": {
     "type": "command",
-    "command": "sh waytide/system/foundation/statusline.sh"
+    "command": "waytide/system/foundation/statusline.sh"
   }
 }
 EOF
