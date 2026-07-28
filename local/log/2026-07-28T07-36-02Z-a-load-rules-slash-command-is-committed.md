@@ -1,0 +1,1 @@
+# A committed `/load-rules` slash command carries the rule-read instruction, so the wording is fixed in one file rather than re-improvised each session — it names the read's scope and ordering in the terms the publish gate's criterion settled, and forbids the agent from restating the session-start notice, which the announce rule reserves to the harness
