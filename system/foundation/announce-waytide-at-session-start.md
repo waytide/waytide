@@ -41,7 +41,8 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 ```
 waytide · master - Waytide
 waytide · master · uncommitted changes - Waytide
-waytide · master · uncommitted changes · unpushed commits - Waytide
+waytide · master · untracked files - Waytide
+waytide · master · uncommitted changes · untracked files · unpushed commits - Waytide
 ```
 
   **The repository's name leads the line, in bold.** It is the first orientation the line
@@ -66,6 +67,20 @@ waytide · master · uncommitted changes · unpushed commits - Waytide
   the clean signal, as it is for the notice's open experiments and features. It is words
   rather than a mark on the branch — `master*` is the conventional form and means nothing
   until a reader is taught it.
+
+  **The untracked files segment** names the one of those three states whose remedy differs.
+  A modified tracked file is committed; an untracked file is added or ignored, and until it
+  is, it is the file most easily lost. Before this segment existed the line reported
+  `uncommitted changes` over a tree where nothing had been modified at all — true on the
+  axis the segment names, and still misleading, because it sent the developer looking for
+  an edit that was not there.
+
+  **An untracked file raises both segments, deliberately.** `uncommitted changes` names the
+  **axis** — work that is not in the history — and an untracked file is on it. Narrowing
+  that segment to tracked modifications would make the two a partition and cost the axis: a
+  developer scanning for whether anything at all is uncommitted would have to read two
+  segments to answer one question. The overlap is the price of keeping one segment that
+  answers it alone.
 
   **The unpushed commits segment** is the next state along the same axis: work that is
   committed but exists only in this working copy, and would be lost with it just the same.
@@ -197,7 +212,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -220,3 +235,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:33:06 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:39:45 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 11:50:41 AM PT

@@ -42,6 +42,23 @@ if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
   changes="uncommitted changes"
 fi
 
+# Files git has never been told about — untracked and not ignored. They already raise the
+# uncommitted segment, and they still do: uncommitted names the axis, work that is not in
+# the history, and an untracked file is on it. This segment names the particular state,
+# because its remedy is the one that differs — an untracked file is added or ignored, where
+# a modified tracked file is committed. Without it the line reported uncommitted changes
+# over a tree where nothing had been modified at all, which sends the developer looking for
+# an edit that does not exist.
+#
+# So an untracked file raises both segments, deliberately. The alternative — narrowing
+# uncommitted to tracked modifications — would make the two segments a partition and cost
+# the axis: a developer scanning for whether anything is uncommitted would have to read two
+# segments to answer one question.
+untracked=
+if [ -n "$(git ls-files --others --exclude-standard 2>/dev/null)" ]; then
+  untracked="untracked files"
+fi
+
 # Commits that exist only here — the next state along the same axis as uncommitted work,
 # and work that would be lost with this working copy just the same. Nothing else announces
 # them; the count is otherwise noticed only when someone thinks to ask.
@@ -101,7 +118,7 @@ fi
 # trails after a hyphen, so the developer's own orientation comes first and the
 # system indicator reads as an annotation on it.
 line=
-for segment in "$directory" "$branch" "$changes" "$unpushed"; do
+for segment in "$directory" "$branch" "$changes" "$untracked" "$unpushed"; do
   if [ -n "$segment" ]; then
     if [ -z "$line" ]; then
       line="$segment"
