@@ -41,10 +41,23 @@ What has to be settled:
   item on considering a git worktree for experiments") is not, short of a name match.
   Whether the session-start check should report stranded links the way it now reports
   unconcluded experiments is part of this question.
-- **Whether the gap exists anywhere else.** An observation is promoted and *kept* as the
-  discovery record rather than deleted, so it strands nothing. The deferred queue may be
-  the only directory whose convention deletes on resolution — if so, the fix is local to
-  it.
+- **Whether the gap exists anywhere else — answered 2026-07-28: yes.** An observation is
+  promoted and *kept* as the discovery record rather than deleted, so it strands nothing,
+  and that had left the deferred queue looking like the only directory whose convention
+  deletes on resolution. **Removing a system rule does the same thing**, and did:
+  `auto-record-design-dialogue` was removed from `design-by-efferent` on 2026-07-28, and
+  two live artifacts pointed at it — the package `README.md`'s summary line and the
+  `loop-records` rule's `Related:` list. Both were found by grep and corrected in the same
+  turn, so nothing was left stranded, but nothing *required* that search either. So the
+  fix is **not** local to the deferred queue: it belongs wherever a convention deletes an
+  artifact other artifacts cite. Rule removal has no written resolution step at all, which
+  is a second gap this one exposes.
+- **What the correction is when the deleted artifact is a rule.** The `(deleted)` +
+  what-it-decided form settled above suits a queue item whose decision a reader still needs
+  to find. A rule's `Related:` list is a set of live pointers, so a removed rule was simply
+  **dropped** from it rather than marked — a permanent `(deleted)` entry in a Related list
+  is clutter, and the log entry is the durable trace. That is a judgment made in the
+  moment, not a settled convention, and it is part of what this item should settle.
 
 **Gated on:** nothing in flight blocks it; it is a convention question, not a task. What
 gets reconciled and how is settled before `agent-deferred-convention` is changed.
@@ -70,3 +83,4 @@ experiments), and the `language` no-slang rule (the live-versus-historical disti
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:40:06 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:05:20 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 12:21:11 AM PT
