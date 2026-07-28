@@ -4,7 +4,7 @@
 # project-root AGENTS.md that makes waytide/system/ and waytide/local/rules/ get read at session start,
 # a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a
 # .claude/settings.json whose SessionStart hook and status line print the session-start
-# notice.
+# notice, and a .claude/commands/load-rules.md slash command that reads the rules on demand.
 # Run from the root of the consuming project.
 #
 # Usage:
@@ -164,39 +164,110 @@ settings_json() {
 EOF
 }
 
-# Warn when git is configured to ignore .claude/settings.json. The notice is meant to
-# travel with the project, and it only does that if the file is committed — so an
-# ignored settings.json works for whoever ran the install and reaches nobody else.
-# Projects commonly ignore the whole .claude/ directory, in which case the install
-# would otherwise report success while the notice silently stays on one machine.
-# A file that is already committed is unaffected by an ignore rule, so a tracked
-# settings.json draws no warning. Outside a git repository, check-ignore fails and
-# nothing is printed.
-warn_ignored_settings_json() {
-  if ! git check-ignore -q .claude/settings.json 2>/dev/null; then
-    return
-  fi
+# The .claude/commands/load-rules.md content — a slash command a developer invokes to
+# have the rules read on demand.
+#
+# It is a THIRD channel for the read instruction, and the weakest of the three by design.
+# The SessionStart hook carries the instruction to the agent unprompted; this carries it
+# only when the developer types /load-rules. It exists because the wording then lives in
+# one committed file instead of being retyped and re-improvised each session, and because
+# an explicit developer instruction leaves the agent no judgment to make about whether a
+# small-looking request warrants the read — which is the judgment that has actually failed.
+# It does not replace the hook, and a project should not rely on it as the primary path.
+load_rules_command() {
+  cat <<'EOF'
+---
+description: Read every Waytide rule file before doing anything else
+---
 
-  if git ls-files --error-unmatch .claude/settings.json >/dev/null 2>&1; then
+Read every rule file under `waytide/system/` and `waytide/local/rules/`, and follow them.
+
+Start with `waytide/system/foundation/` — it defines the system. Then read the other
+packages, including each package's `vocabulary.md`, whose terms are binding and cannot be
+applied unread.
+
+Complete the read before producing anything: no response to me and no change to the
+repository until every rule file has been read. Reading and enumerating files are the only
+things that should happen first. The size of whatever I ask next is not a reason to defer or
+narrow the read — it predicts nothing about where the session goes.
+
+Say only that the read is done, then wait for my request. Do not restate the session-start
+notice or print a package count — the harness has already printed it, and the
+announce-waytide-at-session-start rule forbids an agent-printed copy.
+EOF
+}
+
+# Ensure .claude/commands/load-rules.md carries the read instruction as a slash command.
+# Created when absent. An existing file is never overwritten — a developer may have a
+# /load-rules of their own, and silently replacing it would destroy their content — so the
+# shipped text is printed for them to compare instead. That also means a refresh does not
+# update an already-placed command; the file is shown so the difference is visible.
+# Idempotent.
+place_load_rules_command() {
+  if [ -f .claude/commands/load-rules.md ]; then
+    if load_rules_command | cmp -s - .claude/commands/load-rules.md; then
+      echo ".claude/commands/load-rules.md already matches the shipped command — left unchanged."
+    else
+      echo "You already have a .claude/commands/load-rules.md, and it differs from the shipped one."
+      echo
+      echo "It is not modified here. Compare it with the current text and merge what you want:"
+      echo
+      echo "----------------------------------------------------------------------"
+      load_rules_command
+      echo "----------------------------------------------------------------------"
+    fi
+  else
+    mkdir -p .claude/commands
+    load_rules_command > .claude/commands/load-rules.md
+    echo "Created .claude/commands/load-rules.md — type /load-rules to have the rules read on demand."
+  fi
+}
+
+# Warn when git is configured to ignore the committed .claude/ files. They are meant to
+# travel with the project, and they only do that if committed — so an ignored file works
+# for whoever ran the install and reaches nobody else. Projects commonly ignore the whole
+# .claude/ directory, in which case the install would otherwise report success while the
+# notice and the command silently stay on one machine. A file that is already committed is
+# unaffected by an ignore rule, so a tracked file draws no warning. Outside a git
+# repository, check-ignore fails and nothing is printed.
+warn_ignored_claude_files() {
+  ignored=
+  for claude_file in .claude/settings.json .claude/commands/load-rules.md; do
+    [ -f "$claude_file" ] || continue
+    git check-ignore -q "$claude_file" 2>/dev/null || continue
+    git ls-files --error-unmatch "$claude_file" >/dev/null 2>&1 && continue
+    ignored="${ignored}${ignored:+ }${claude_file}"
+  done
+
+  if [ -z "$ignored" ]; then
     return
   fi
 
   echo
-  echo "WARNING: git is set to ignore .claude/settings.json."
+  echo "WARNING: git is set to ignore these files:"
   echo
-  echo "The file is in place and the notice works for you, but git will not commit it,"
-  echo "so it will not reach anyone else who checks this project out."
+  for claude_file in $ignored; do
+    echo "    $claude_file"
+  done
+  echo
+  echo "They are in place and work for you, but git will not commit them, so they will"
+  echo "not reach anyone else who checks this project out."
   echo
   echo "If your .gitignore excludes the whole .claude/ directory, a negation alone will"
-  echo "not rescue the file — git cannot re-include anything inside an excluded"
-  echo "directory. Replace the '.claude/' line with these two:"
+  echo "not rescue them — git cannot re-include anything inside an excluded directory."
+  echo "Replace the '.claude/' line with these three:"
   echo
   echo "    .claude/*"
   echo "    !.claude/settings.json"
+  echo "    !.claude/commands/"
   echo
-  echo "Or leave the ignore rule alone and commit the file explicitly:"
+  echo "That keeps your personal .claude/settings.local.json ignored."
   echo
-  echo "    git add -f .claude/settings.json"
+  echo "Or leave the ignore rule alone and commit them explicitly:"
+  echo
+  for claude_file in $ignored; do
+    echo "    git add -f $claude_file"
+  done
 }
 
 # Ensure .claude/settings.json carries the SessionStart hook and status line that
@@ -229,8 +300,6 @@ place_settings_json() {
     settings_json
     echo "----------------------------------------------------------------------"
   fi
-
-  warn_ignored_settings_json
 }
 
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.
@@ -242,8 +311,15 @@ if [ "$1" != "agents-md" ]; then
 fi
 
 # 2. Ensure the project-root AGENTS.md activates the system, that CLAUDE.md
-#    imports it so the bootstrap also reaches Claude Code sessions, and that
-#    .claude/settings.json prints the session-start notice.
+#    imports it so the bootstrap also reaches Claude Code sessions, that
+#    .claude/settings.json prints the session-start notice, and that
+#    .claude/commands/load-rules.md offers the read on demand.
+#
+#    The ignore check runs last, once, over every .claude/ file placed above —
+#    they share one .gitignore failure and one correction, so warning per file
+#    would repeat the same remedy.
 place_agents_md
 place_claude_md
 place_settings_json
+place_load_rules_command
+warn_ignored_claude_files
