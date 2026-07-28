@@ -200,7 +200,7 @@ fi
 # No quotation marks, deliberately. The notice is interpolated into a JSON string built by
 # printf with no escaping, so a double quote here would terminate the string and produce
 # output the harness cannot parse — the notice would vanish with no error at all.
-notice="${notice}\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide."
+notice="${notice}\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide."
 
 # The read instruction, carried to the agent rather than to the developer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an

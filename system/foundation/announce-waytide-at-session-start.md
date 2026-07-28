@@ -6,7 +6,7 @@ A project running Waytide announces the system's presence through **two surfaces
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide.
+Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide.
 ```
 
   Between those two lines the notice reports **experiments and features that have not
@@ -16,7 +16,7 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
-Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide.
+Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide.
 ```
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
@@ -107,8 +107,8 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   verification remains what it has always been, the work honoring the rules.
 
 - **The notice's last line names the command that loads the rules.** `Waytide's rules are
-  loaded before your first instruction will be processed. Loading the rules will take a
-  moment. To load them now, type: load waytide.` It is always present, and it is the one
+  loaded before your first instruction will be processed. Loading the rules will take a few
+  moments. To load them now, type: load waytide.` It is always present, and it is the one
   part of the notice that asks for something rather than reporting.
 
   **Something the developer types is required, whatever it says.** Nothing the hook supplies
@@ -120,7 +120,14 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   says what it does, so a developer who has never seen this system can act on it without
   being told what the word stands for. The line also
   states the two facts a developer needs before deciding whether to type it: that the rules
-  load ahead of their first instruction either way, and that loading takes a moment.
+  load ahead of their first instruction either way, and that loading takes a few moments.
+
+  **The caveat says a few moments, not a moment.** It read `a moment` until 2026-07-28. A
+  moment describes an interval short enough to wait through without noticing it, and the
+  read is not that: it opens every rule file in every installed package, which is a wait a
+  developer sees. Understating it makes the notice's one caveat the part of the line least
+  worth trusting. The plural says the length the wait actually has while staying informal,
+  which is the register the rest of the line is in.
 
   **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the
   other way — the command, then the caveat that loading takes a moment — so the line ended
@@ -212,3 +219,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 1:24:32 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:33:06 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 11:39:45 AM PT

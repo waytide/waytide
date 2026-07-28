@@ -1,0 +1,1 @@
+# The session-start notice's caveat becomes `Loading the rules will take a few moments` — `a moment` names an interval a developer waits through without noticing it, and reading every rule file in every installed package is not that, so the singular understated the one part of the line that exists to set an expectation
