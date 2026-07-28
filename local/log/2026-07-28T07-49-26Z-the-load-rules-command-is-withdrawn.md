@@ -1,0 +1,1 @@
+# The `/load-rules` slash command is withdrawn — removed from this repository and from what `install.sh` places, and the announce rule's third-channel section and the generalized `.claude/` ignore warning are reverted with it, superseding the two entries that recorded adding it (2026-07-28T07-36-02Z and 2026-07-28T07-39-47Z), which stand as the record that it was built

@@ -71,28 +71,6 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   instruction being buried in a prose file the agent may not open — and no more. The
   verification remains what it has always been, the work honoring the rules.
 
-- **A third channel, weakest by design: the `/load-rules` slash command.** `install.sh`
-  places `.claude/commands/load-rules.md`, carrying the same read instruction as a command
-  the **developer** invokes. It is deliberately the weakest of the three: the hook fires
-  unprompted every session, and this fires only when someone types it. It earns its place
-  for two reasons. The wording lives in one committed file rather than being retyped and
-  re-improvised each session, so it cannot drift. And an explicit developer instruction
-  leaves the agent **no judgment to make** about whether a small-looking request warrants
-  the read — which is the judgment that has actually failed, the hook's instruction having
-  reached an agent that then deferred it anyway.
-
-  **It is not a substitute for the hook, and a project must not rely on it as the primary
-  path.** A read that depends on the developer remembering to ask is the condition the hook
-  exists to remove. **It also forecloses observation:** a session opened with the command is
-  one where the read was instructed by the developer, so it says nothing about whether the
-  hook produces the read on its own. Any session being watched for that must be opened
-  without it.
-
-  The command file instructs the agent to confirm the read and **not** print a package
-  count. Confirming is the command's purpose; restating the notice would be the
-  agent-printed copy this rule prohibits, and the command must not become a way to
-  reintroduce it.
-
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
@@ -114,7 +92,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts, and place the `/load-rules` command at `.claude/commands/load-rules.md`; `install.sh` does all of this for a consuming project, and warns when git is set to ignore the `.claude/` files it placed, since an ignored file reaches nobody but the developer who ran the install. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -129,3 +107,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 5:10:17 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:29:09 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 11:53:12 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:39:47 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
