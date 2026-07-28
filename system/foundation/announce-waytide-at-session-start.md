@@ -1,18 +1,18 @@
-# The harness announces Waytide's load; the agent never prints the notice
+# The harness announces Waytide's installation; the agent never prints the notice
 
 A project running Waytide announces the system's presence through **two surfaces the harness renders**, not through anything the agent says:
 
 - **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a one-line notice:
 
 ```
-Waytide loaded from waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 ```
 
   The same notice reports **experiments and features that have not concluded**, on a
   further line each, when there are any:
 
 ```
-Waytide loaded from waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
 ```
@@ -73,7 +73,8 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
 
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
-- **What the notice claims is now narrower, and true.** It reports that the system is installed and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook now tells the agent to read the rules, and still reports nothing about whether it did.
+- **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
+- **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet — the notice and the read instruction are emitted in the same output, which means the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in; that is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one a developer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
 - **A project that ignores `.claude/` is warned.** The notice travels only if
 `.claude/settings.json` is committed, so `install.sh` checks whether git is set to
 ignore that path and — when it is, and the file is not already tracked — prints how to
@@ -91,7 +92,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a load notice as an agent. Keep the scripts reading the real directories rather than asserting a list. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -104,3 +105,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 5:10:17 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:29:09 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 11:53:12 PM PT

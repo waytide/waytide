@@ -1,5 +1,5 @@
 #!/bin/sh
-# Print the Waytide load notice at session start.
+# Print the Waytide session-start notice.
 #
 # Run by the harness as a SessionStart hook, not by the agent — see the
 # announce-waytide-at-session-start rule. It reads the package directories
@@ -56,7 +56,11 @@ if [ "$count" = "1" ]; then
   noun=package
 fi
 
-notice=$(printf 'Waytide loaded from %s/ — %s %s: %s' \
+# "installed", not "loaded": the hook runs before the session, so at the moment the
+# notice prints, no rule file has been read. "Loaded" means brought into a runtime —
+# read in — which is the one thing this notice cannot report. Installation and a live
+# configuration are what the script can actually observe, so they are what it claims.
+notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
   "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state — experiments and features

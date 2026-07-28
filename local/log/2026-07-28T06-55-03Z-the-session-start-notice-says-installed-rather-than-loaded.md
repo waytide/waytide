@@ -1,0 +1,1 @@
+# The session-start notice says "Waytide installed at …" rather than "Waytide loaded from …", because a hook runs before the session and so cannot report that any rule file was read — and the announce rule, which already claimed only installation, is conformed to the word along with the term "load notice", now "session-start notice"

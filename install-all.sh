@@ -2,7 +2,7 @@
 # Install (or refresh) every Waytide package into a consuming project, then
 # activate the system by placing the project-root AGENTS.md, a CLAUDE.md that
 # imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a .claude/settings.json
-# whose SessionStart hook and status line print the load notice.
+# whose SessionStart hook and status line print the session-start notice.
 # Run from the root of the consuming project.
 set -e
 

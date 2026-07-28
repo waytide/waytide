@@ -1,5 +1,5 @@
 #!/bin/sh
-# Render the status line, carrying a persistent Waytide load indicator.
+# Render the status line, carrying a persistent Waytide installation indicator.
 #
 # Run by the harness as its statusLine command — see the
 # announce-waytide-at-session-start rule. Where the SessionStart notice marks
