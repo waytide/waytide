@@ -1,0 +1,1 @@
+# The status line shows "uncommitted changes" when the working tree has anything not committed, including untracked files that are not ignored — words rather than a mark on the branch, and absent when the tree is clean
