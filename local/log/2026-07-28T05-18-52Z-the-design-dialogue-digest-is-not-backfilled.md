@@ -1,0 +1,1 @@
+# The design-dialogue digest is never backfilled — the auto-record rule asks for the reasoning captured as the session proceeds, and a reconstruction from memory is a different artifact wearing its name, so a session whose digest was not kept in real time has none and that absence stands as the true record
