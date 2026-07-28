@@ -1,0 +1,1 @@
+# The proposal to rename "deferred items" to "reminders" — the directory, the term, and the `next deferred item` command alike — is dropped without being carried out, and its deferred item is deleted; the term stays "deferred item", which names when the work is done, over "reminder", which names what the artifact does but reads as something dismissed rather than resolved
