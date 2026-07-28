@@ -17,9 +17,10 @@ it should be established by observation rather than assumed in either direction.
 
 **Where subagents plausibly help**, each to be tested rather than taken on faith:
 
-- **Reference sweeps.** The stranded-reference problem has now recurred twice — against a
-  deleted deferred item, and against the removed `migrate-to-system-and-local.sh`. Both were
-  found by grepping after the fact. A sweep is bounded, read-only, and returns a list.
+- **Searching for stranded references.** The stranded-reference problem has now recurred
+  twice — against a deleted deferred item, and against the removed
+  `migrate-to-system-and-local.sh`. Both were found by grepping after the fact. Such a
+  search is bounded, read-only, and returns a list.
 - **Pre-publish checks across the seven component repositories.** `report-direct-commits.sh`
   already automates the direct-commit check; the surrounding runbook is still read and
   applied by hand, once per package.
@@ -42,13 +43,14 @@ for its own checks — is downstream of the examination and not proposed here.
 **Gated on:** nothing in flight. Actionable whenever it is taken up.
 
 **Why:** subagents are available and unexamined, and the two things that make them
-attractive here — bounded read-only sweeps and per-package repetition — are exactly the
+attractive here — bounded read-only searches and per-package repetition — are exactly the
 work that has produced the most rework. The governance question cuts the other way and is
 the reason to examine before adopting: an agent that does not load the rules can produce
 work that looks conformant and is not.
 
 **How to apply:** establish first whether a subagent loads the Waytide bootstrap and the
-`SessionStart` hook. Then try one bounded, read-only task — a reference sweep is the
+`SessionStart` hook. Then try one bounded, read-only task — a search for stranded
+references is the
 cheapest — and judge the result against what the main agent would have produced. Record
 what is settled in `local/observations/` or the decision log, and resolve by deleting this
 file and logging that it was carried out.
@@ -56,3 +58,4 @@ file and logging that it was carried out.
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 9:44:55 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 10:15:12 PM PT
