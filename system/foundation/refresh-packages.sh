@@ -4,8 +4,8 @@
 # Run from the root of the consuming project.
 #
 # Usage:
-#   sh refresh-packages.sh                 refresh every installed package
-#   sh refresh-packages.sh testing git     refresh only those named
+#   waytide/system/foundation/refresh-packages.sh               refresh every installed package
+#   waytide/system/foundation/refresh-packages.sh testing git   refresh only those named
 #
 # What a refresh changes is binding rules — files read at the start of every session,
 # which govern how the agent works. So every package that moves is reported by name,

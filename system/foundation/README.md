@@ -80,12 +80,12 @@ This package has no dependencies. (The composite `install-all.sh` installs every
 installed, one command refreshes every installed package:
 
 ```
-sh waytide/system/foundation/refresh-packages.sh
+waytide/system/foundation/refresh-packages.sh
 ```
 
 It reports each package that moved and the rule files that changed in it, because those
 files are binding and a silent refresh would be a change of behavior nobody saw. Name
-packages to refresh only those (`sh … refresh-packages.sh testing git`). Set
+packages to refresh only those (`… refresh-packages.sh testing git`). Set
 `WAYTIDE_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/waytide`. A single package
 can still be pulled directly:
 
