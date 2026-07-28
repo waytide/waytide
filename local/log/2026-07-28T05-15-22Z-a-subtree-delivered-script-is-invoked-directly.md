@@ -1,0 +1,1 @@
+# A script that reaches a consuming project inside `waytide/system/` by `git subtree` is executable and invoked directly, never handed to `sh` — subtree preserves the file mode, so `refresh-packages.sh` takes mode 755 and the README and its own usage comment drop the `sh` prefix; `install.sh` keeps its prefix because it is fetched with `curl`, which does not preserve the mode

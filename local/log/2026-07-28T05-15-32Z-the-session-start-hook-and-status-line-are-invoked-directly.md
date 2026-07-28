@@ -1,0 +1,1 @@
+# The `SessionStart` hook and the status line command are invoked directly rather than through `sh`, in this repository's `.claude/settings.json` and in the `settings_json` heredoc in `install.sh` that generates the same file for a consuming project — the two must agree, and `install.sh`'s existing-install check still matches because it greps for `foundation/session-start.sh`
