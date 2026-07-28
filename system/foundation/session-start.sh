@@ -13,9 +13,12 @@ set +e
 
 # A non-empty WAYTIDE_QUIET silences the notice. The opt-out lives in the
 # developer's own environment, never in committed project content.
-if [ -n "$WAYTIDE_QUIET" ]; then
-  exit 0
-fi
+#
+# It is checked at the end rather than here, because it no longer governs everything
+# this hook emits. WAYTIDE_QUIET silences what the developer sees; the read instruction
+# is addressed to the agent and is not a surface they read, so quieting the notice must
+# not disable it. Otherwise a display preference would silently switch off the mechanism
+# that carries the rules — the kind of silent failure this hook exists to answer.
 
 # Locate the system: waytide/system/ in a consuming project, system/
 # in the Waytide authoring source. Checked in that order — a consuming project
@@ -167,4 +170,26 @@ if [ -n "$features" ]; then
   notice="${notice}\\n${features}"
 fi
 
-printf '{"systemMessage": "%s"}\n' "$notice"
+# The read instruction, carried to the agent rather than to the developer. It goes in
+# additionalContext, not in the notice: the notice is rendered for a person, and an
+# instruction addressed to the agent is not something the developer needs to read every
+# session. The two channels have different audiences, so they carry different text.
+#
+# It states the read is unconditional because the failure it answers was conditional —
+# a session opened with a small request, the read was judged not to be worth it, and the
+# session then grew into rule edits and package publishes governed by rules never read.
+#
+# This does not verify that the rules were read. Nothing here can: the hook runs before
+# the session and has no way to observe what the agent then does. It removes the excuse
+# of the instruction being buried in a file the agent may not open, and no more.
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes.' \
+  "$system" "$system" "$system")
+
+hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
+  "$instruction")
+
+if [ -n "$WAYTIDE_QUIET" ]; then
+  printf '{%s}\n' "$hook_output"
+else
+  printf '{"systemMessage": "%s", %s}\n' "$notice" "$hook_output"
+fi
