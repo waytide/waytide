@@ -16,8 +16,9 @@ explicit user instructions still win.
 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
 `SessionStart` hook in `.claude/settings.json` runs `system/foundation/session-start.sh`,
-which reads the package directories actually present and emits the one-line
-`Waytide installed at system/ — N packages: …` notice; `system/foundation/statusline.sh`
+which reads the package directories actually present and emits the
+`Waytide installed at system/ — N packages: …` notice, closing with a line telling the
+developer to type `Read the Waytide rules`; `system/foundation/statusline.sh`
 carries the same count in the status line for the rest of the session. Setting the
 `WAYTIDE_QUIET` environment variable to any non-empty value silences both. In a consuming
 project `install.sh` places the equivalent `.claude/settings.json`; here in the source it

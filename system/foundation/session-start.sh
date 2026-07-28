@@ -174,6 +174,18 @@ if [ -n "$features" ]; then
   notice="${notice}\\n${features}"
 fi
 
+# The developer's own instruction line, always present. The notice states what is
+# installed; this states what has not happened yet and what the developer can type to
+# make it happen. Both belong on this channel — it is the one the developer reads — and
+# neither is the read instruction carried to the agent below, which is a different text
+# for a different reader.
+#
+# It carries no quotation marks around the phrase, deliberately. The notice is
+# interpolated into a JSON string built by printf with no escaping, so a double quote
+# here would terminate the string and produce output the harness cannot parse — the
+# notice would vanish with no error. A colon introduces the phrase without that hazard.
+notice="${notice}\\nThe rules are not read yet — type: Read the Waytide rules"
+
 # The read instruction, carried to the agent rather than to the developer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
 # instruction addressed to the agent is not something the developer needs to read every

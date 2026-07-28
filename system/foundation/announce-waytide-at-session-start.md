@@ -2,19 +2,21 @@
 
 A project running Waytide announces the system's presence through **two surfaces the harness renders**, not through anything the agent says:
 
-- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a one-line notice:
+- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — what is installed, and what the developer can type to have it read:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+The rules are not read yet — type: Read the Waytide rules
 ```
 
-  The same notice reports **experiments and features that have not concluded**, on a
-  further line each, when there are any:
+  Between those two lines the notice reports **experiments and features that have not
+  concluded**, on a further line each, when there are any:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
+The rules are not read yet — type: Read the Waytide rules
 ```
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
@@ -71,6 +73,32 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   instruction being buried in a prose file the agent may not open — and no more. The
   verification remains what it has always been, the work honoring the rules.
 
+- **The notice's last line is addressed to the developer, and tells them what to type.**
+  `The rules are not read yet — type: Read the Waytide rules`. It is always present, and it
+  is the one part of the notice that asks for something rather than reporting. It belongs on
+  this channel for the same reason the rest of the notice does: `systemMessage` is what the
+  developer reads. It is **not** the read instruction carried to the agent — that is a
+  different text on `hookSpecificOutput.additionalContext`, addressed to a different reader,
+  and the two are not interchangeable.
+
+  **It states the true state before it asks.** At the moment the notice prints, the rules
+  genuinely have not been read — the same fact that makes "installed" the only honest verb
+  in the first line. So the line reports that and then gives the remedy, rather than
+  presenting the read as something already handled.
+
+  **It carries no quotation marks around the phrase, and must not gain any.** The notice is
+  interpolated into a JSON string built by `printf` with no escaping, so a double quote
+  would terminate the string and the harness would fail to parse the output — the notice
+  would disappear with no error at all, which is the silent failure this whole mechanism
+  exists to avoid. The colon introduces the phrase without that hazard.
+
+  **What it concedes.** A notice that has to tell the developer to ask for the read is an
+  admission that the hook's instruction to the agent does not reliably produce it. That is
+  true, and stating it plainly is better than a notice that implies otherwise. But it makes
+  the developer the primary path and the hook the fallback, which inverts the design — and
+  a session where the developer types the phrase says nothing about whether the hook works
+  unaided. Any session being observed for that must be one where the developer does not.
+
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
@@ -108,3 +136,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 10:29:09 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 11:53:12 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:39:47 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 12:57:27 AM PT

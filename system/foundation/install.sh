@@ -38,8 +38,9 @@ override default behavior where they conflict; explicit user instructions still 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
 `SessionStart` hook in `.claude/settings.json` runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
-actually present and emits the one-line `Waytide installed at … — N packages: …`
-notice; a status line carries the same count for the rest of the session. A developer
+actually present and emits the `Waytide installed at … — N packages: …` notice, closing
+with a line telling the developer to type `Read the Waytide rules`;
+a status line carries the same count for the rest of the session. A developer
 silences both by setting the `WAYTIDE_QUIET` environment variable to any non-empty
 value in their own environment.
 
