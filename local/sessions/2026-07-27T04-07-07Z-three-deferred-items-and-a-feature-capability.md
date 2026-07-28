@@ -439,6 +439,100 @@ both record conventions, the foundation README, and three documentation pages �
 by grepping for them after the question "does the feature capability offer a worktree too?"
 turned up a bullet my own edit had severed mid-sentence.
 
+## 15. A worktree's name puts the kind before the subject
+
+With both lifecycle rules in place the worktree naming came back as a sorting question.
+A worktree is a sibling of the repository directory, and the name settled as
+`<repository-name>-<kind>-<subject>` — the branch name with its slash written as a dash,
+prefixed by the repository. For a repository at `…/projects/eventide/constant` and the
+branch `feature/upload-retries`, that is `…/projects/eventide/constant-feature-upload-retries`.
+
+**The kind comes before the subject** so that every feature sorts together under
+`<repository>-feature-` and every experiment under `<repository>-experiment-`, rather
+than the two interleaving by subject when the parent directory is listed. The shared
+repository prefix keeps a worktree in the same lexical vicinity as the repository it
+belongs to.
+
+Sibling placement is not cosmetic: it keeps the path **outside the repository working
+tree**, where it must be. A worktree created inside it appears as untracked content in
+the feature's own `git status`.
+
+Recorded in `local/log/2026-07-27T23-40-10Z-the-worktree-name-puts-the-kind-before-the-subject.md`.
+
+## 16. Branch only says nothing about the working tree
+
+The option pair settled in section 14 was read once more at the gate, and the
+**branch only** label was still describing the wrong thing. It had been written as a
+movement of the working tree — switch this tree to the branch — when what actually
+distinguishes the two options is whether a *second working directory* is added.
+
+Branch only adds none. So it is presented as the branch it creates and the return at the
+conclusion, and the working tree is left out of its description entirely, being immaterial
+to what the option decides. The distinction between the two options is carried by the one
+thing that differs.
+
+Recorded in `local/log/2026-07-27T23-50-10Z-branch-only-says-nothing-about-the-working-tree.md`.
+
+## 17. The status line reports an uncommitted working tree
+
+The status line gained a third segment, present only when git reports something not
+committed:
+
+```
+waytide · master · uncommitted changes - Waytide system active (7 packages)
+```
+
+It counts modified tracked files, staged changes, and **untracked files that are not
+ignored**. All three are uncommitted, and the untracked case is the point of the indicator
+rather than a cost it carries — a file left untracked is usually one that should be added
+or ignored. The occasion for the change was this repository beginning the session with four
+such files, unnoticed.
+
+**Words rather than a mark on the branch.** `master*` is the conventional form and carries
+no meaning until a reader is taught it, which the naming standard rejects. No count either:
+the line already carries one, and a number that changes with every edit is noise. The
+segment is absent when the tree is clean, which is how the whole line works — a segment
+appears only when it has something to say.
+
+Recorded in `local/log/2026-07-28T00-05-10Z-the-status-line-shows-uncommitted-changes.md`.
+
+## 18. The foundation scripts, and the old migration path retired
+
+A short pass over `system/foundation/`'s scripts, beginning with the indicator from the
+previous section doing its job: an untracked file named `noise`, empty, was what the new
+segment was reporting. Removing it made the tree clean.
+
+**The refresh script was not executable.** `refresh-packages.sh` was the one script in
+`system/foundation/` still at mode 644 while `install.sh`, `session-start.sh`, and
+`statusline.sh` were at 755.
+
+Setting the bit turned out not to finish the job. The script was still reached through `sh`
+everywhere it was documented — the README's refresh command and the script's own usage
+comment both passed it to `sh`, so the executable bit changed nothing about how anyone was
+told to run it. Both were corrected to the direct form. **`install.sh` keeps its `sh`
+prefix and is not a similar case:** it is fetched with `curl`, which does not preserve the
+mode, whereas `refresh-packages.sh` reaches a project inside `waytide/system/foundation/`
+by `git subtree`, which does.
+
+**`migrate-to-system-and-local.sh` is removed.** It moved a consuming project from
+`waytide/framework/` to the `system/` and `local/` layout — the one-time migration
+recorded in section 13. Removing it was first taken as removing the file alone, and the
+references were then removed with it on a second pass: the README's migration section
+including the `raw.githubusercontent.com` URL the script was fetched from, the refresh
+script's pointer to it when `waytide/system/` is absent, and a comment naming which scripts
+tolerate untracked files. The mention in this record is left in place, being a record of
+what happened rather than a live reference.
+
+**Foundation was published** by the `CONTRIBUTING.md` runbook — `report-direct-commits.sh`
+clean before and after, the split verified to carry the mode and to have lost the migration
+script, and the fast-forward guard confirming no force was involved. `waytide/foundation`
+moved `76f9a39..3704677`.
+
+**Deferred:** the `sessions/` directory should be named `work-session/` —
+`local/deferred/2026-07-28T00-42-29Z-the-sessions-directory-is-named-work-session.md`,
+raised while this record was being appended, with the singular-versus-plural question
+against its siblings left for the resolution to settle.
+
 ## Takeaways
 
 - **A datetime written into a file carries its time of day to seconds.** A format that
@@ -494,6 +588,27 @@ turned up a bullet my own edit had severed mid-sentence.
   delete on resolution and is silent on what else points at the file. Two instances were
   found — one created and corrected today, one stranded six days and discovered only by
   searching. Neither surfaced on its own; the question is now deferred.
+- **A name sorts, and the order of its parts decides what groups.** Putting the kind
+  before the subject in a worktree name is what makes every feature sort together instead
+  of interleaving with the experiments.
+- **An option is described by what distinguishes it.** Branch only was being described by
+  a working tree it does not touch. What separates the two options is whether a second
+  working directory is added, and only that belongs in the label.
+- **An indicator is worth the case that looks like noise.** The untracked-file case is
+  what the status-line segment is *for* — four such files sat unnoticed — not a cost the
+  indicator carries. A fifth, `noise`, was found and removed the moment the segment
+  existed to report it.
+- **A permission bit is not an interface.** Setting `refresh-packages.sh` executable
+  changed nothing anyone would notice: the README and its own usage comment still passed
+  it to `sh`. How a thing is invoked is what the documentation says, not what the
+  filesystem permits.
+- **How a file arrives decides how it is run.** `install.sh` keeps its `sh` prefix and
+  `refresh-packages.sh` sheds it, for one reason — `curl` drops the mode bit and
+  `git subtree` preserves it.
+- **Deleting a script strands what points at it, the same way deleting a deferred item
+  does.** The migration script's removal left a documented `curl` URL, an error message
+  directing users to it, and a comment naming it. This is the stranded-reference item
+  from section 8 recurring in a second form, against a file rather than a queue entry.
 
 ## Glossary
 
@@ -544,10 +659,13 @@ since restating them would erase the record of what changed.*
   `agent-file-names-use-iso8601-utc-prefix`, and the `subject-first-commit-messages`
   correction adopted from `waytide/git`.
 - **Scripts:** `system/foundation/session-start.sh`, reporting experiments and features
-  that have not concluded; `system/foundation/statusline.sh`;
-  `system/foundation/migrate-to-system-and-local.sh`, which moves a consuming project to
-  this layout; and `report-direct-commits.sh` at the root, which reports component
-  repositories carrying commits this history does not contain.
+  that have not concluded; `system/foundation/statusline.sh`, which gained the
+  uncommitted-changes segment; `system/foundation/refresh-packages.sh`, now executable and
+  documented as invoked directly; and `report-direct-commits.sh` at the root, which reports
+  component repositories carrying commits this history does not contain.
+  `system/foundation/migrate-to-system-and-local.sh`, which moved a consuming project to
+  this layout, was **removed** at the session's close along with every reference to it — see
+  section 18. Section 13 names it as it stood at the time.
 - **Decision log:** forty-three entries under `local/log/`.
 - **Design and plan:** `local/design/2026-07-27T07-09-02Z-the-feature-capability.md` and
   `local/plans/2026-07-27T07-17-24Z-the-feature-capability.md` — the first of each in this
@@ -557,13 +675,15 @@ since restating them would erase the record of what changed.*
 - **Documentation:** `docs/experiments.md`, `docs/features.md` (new), and
   `docs/capabilities.md`, whose list gained a *Building features* section and renumbered
   from six onward. The standing website-content review item covers all three.
-- **Deferred queue:** three items resolved and deleted, two added; **seven remain** — the
-  stranded-reference item and the upstream-update script.
+- **Deferred queue:** three items resolved and deleted, three added; **seven remain** —
+  among them the stranded-reference item and the `work-session/` rename raised in
+  section 18.
 - **This repository's layout:** `system/` and `local/` at the root, `local/migration/`
   holding the pre-Waytide migration records, and `AGENTS.md` stating how to read a rule's
   consuming-project path here.
 - **Component repositories:** all seven at the `system/<package>` split, force-reset once
-  when the path changed and fast-forwarding since.
+  when the path changed and fast-forwarding since. `waytide/foundation` was published
+  again at the session's close, `76f9a39..3704677`, a fast-forward.
 
 ---
 
@@ -583,3 +703,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:58:57 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:59:44 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 3:30:32 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:25:24 PM PT
+Changed by Scott Bellware on Mon Jul 27 2026 at 5:44:12 PM PT
