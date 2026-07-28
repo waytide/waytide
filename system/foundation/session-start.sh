@@ -174,25 +174,33 @@ if [ -n "$features" ]; then
   notice="${notice}\\n${features}"
 fi
 
-# The foil request line, always present. The notice states what is installed; this states
-# what has not happened yet and what the developer types to trigger it.
+# The load-command line, always present. The notice states what is installed; this states
+# when the rules are read and what the developer types to have it happen now.
 #
-# The word is deliberately contentless. The agent never sees this notice — systemMessage
-# renders for the developer only — so the single word "begin" is the whole of what reaches
-# it, and the instruction to read comes from additionalContext below. That split is the
-# point: the developer supplies the occasion, the hook supplies the instruction, and a read
-# that follows can only have come from the hook. An agent that never got the instruction
-# receives an opaque "begin" and has to ask what it means, which makes that failure loud
-# instead of silent. A line naming the read outright would do the hook's work for it and
-# hide whether the hook ever functioned.
+# The command names the read outright: "load waytide". It is a command, not the contentless
+# foil request the line carried until 2026-07-28 — the developer's message now carries the
+# instruction rather than only the occasion for it. What that gives up is attributability:
+# with a contentless word, a read that followed could only have come from the hook's
+# additionalContext channel, and with a named command it could have come from either. The
+# command is legible to a developer who has never seen the system, which is what it buys.
 #
-# Because the agent does not read this line, explaining it here costs nothing — the
-# parenthetical is for the developer and never reaches the agent.
+# The command carries no emphasis markup. It was written with markdown asterisks until
+# 2026-07-28, on the assumption that the harness renders the notice as markdown; it does not
+# — the systemMessage is displayed as plain text, so the asterisks reached the developer
+# literally and drew the eye to punctuation rather than to the words they were meant to
+# emphasize. Emphasis is unavailable on this channel, and the line stands without it: it
+# already ends with the command in the position the sentence points at.
+#
+# The command sentence is last. Until 2026-07-28 the cost of typing it — that loading takes
+# a moment — followed the command, so the line ended on a caveat and the words to be typed
+# sat mid-line. The two sentences are swapped so the command ends the line: the caveat is
+# read before the developer decides, and the thing to type is the last thing on the line,
+# which is where the eye lands and where a command can be copied without reading past it.
 #
 # No quotation marks, deliberately. The notice is interpolated into a JSON string built by
 # printf with no escaping, so a double quote here would terminate the string and produce
 # output the harness cannot parse — the notice would vanish with no error at all.
-notice="${notice}\\nThe rules are not read yet — type: begin (the agent reads them, then waits)"
+notice="${notice}\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide."
 
 # The read instruction, carried to the agent rather than to the developer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
@@ -206,7 +214,7 @@ notice="${notice}\\nThe rules are not read yet — type: begin (the agent reads 
 # This does not verify that the rules were read. Nothing here can: the hook runs before
 # the session and has no way to observe what the agent then does. It removes the excuse
 # of the instruction being buried in a file the agent may not open, and no more.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. The developer may open with the single word begin. That is the foil request — a message with no content of its own, whose only purpose is to give you an occasion to act on this instruction. Treat it as exactly that: read the rules, say only that the read is done, and wait for the real request. Do not restate the session-start notice or print a package count; the announce-waytide-at-session-start rule reserves that to the harness.' \
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. The developer may open with the command load waytide. That command asks for exactly this and nothing more: read the rules, say only that the read is done, and wait for the real request. Do not restate the session-start notice or print a package count; the announce-waytide-at-session-start rule reserves that to the harness.' \
   "$system" "$system" "$system")
 
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \

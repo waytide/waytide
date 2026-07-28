@@ -16,7 +16,18 @@ set +e
 # it is consumed so the harness never writes into a closed pipe.
 cat >/dev/null 2>&1
 
+# The repository's own name leads the line and is set in bold, so the developer's first
+# orientation — which repository this is — separates from the segments annotating it. The
+# harness passes terminal escape sequences through, and printf builds them here because a
+# literal escape byte cannot be written into a shell string portably.
+bold=$(printf '\033[1m')
+plain=$(printf '\033[0m')
+
 directory=$(basename "$PWD" 2>/dev/null)
+if [ -n "$directory" ]; then
+  directory="${bold}${directory}${plain}"
+fi
+
 branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
 
 # Anything git would report as not committed — modified tracked files, staged changes,

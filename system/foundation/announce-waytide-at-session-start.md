@@ -6,7 +6,7 @@ A project running Waytide announces the system's presence through **two surfaces
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-The rules are not read yet — type: begin (the agent reads them, then waits)
+Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide.
 ```
 
   Between those two lines the notice reports **experiments and features that have not
@@ -16,7 +16,7 @@ The rules are not read yet — type: begin (the agent reads them, then waits)
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
-The rules are not read yet — type: begin (the agent reads them, then waits)
+Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a moment. To load them now, type: load waytide.
 ```
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
@@ -43,6 +43,13 @@ waytide · master - Waytide
 waytide · master · uncommitted changes - Waytide
 waytide · master · uncommitted changes · unpushed commits - Waytide
 ```
+
+  **The repository's name leads the line, in bold.** It is the first orientation the line
+  gives — which repository this is — and every segment after it annotates that: the branch,
+  the uncommitted and unpushed work, the system in force. Bold separates the subject from
+  its annotations, so the line is read at a glance rather than parsed left to right. It is a
+  terminal escape sequence, which the harness passes through; only the repository name takes
+  one, since a line where several segments are emphasized emphasizes nothing.
 
   **The Waytide segment is one word and carries no package count.** It did carry one until
   2026-07-28. The count told a developer nothing they act on, changed only when a package
@@ -99,41 +106,62 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   instruction being buried in a prose file the agent may not open — and no more. The
   verification remains what it has always been, the work honoring the rules.
 
-- **The notice's last line asks for the foil request.** `The rules are not read yet — type:
-  begin (the agent reads them, then waits)`. It is always present, and it is the one part of
-  the notice that asks for something rather than reporting.
+- **The notice's last line names the command that loads the rules.** `Waytide's rules are
+  loaded before your first instruction will be processed. Loading the rules will take a
+  moment. To load them now, type: load waytide.` It is always present, and it is the one
+  part of the notice that asks for something rather than reporting.
 
-  **A foil request is a message with no content of its own, whose only purpose is to give
-  the agent an occasion to act on an instruction already in its context.** Nothing the hook
-  supplies can execute on its own — an agent produces nothing until the developer speaks —
-  so the read cannot happen before some first message exists. The foil request is that
-  message, reduced to the least it can be.
+  **Something the developer types is required, whatever it says.** Nothing the hook supplies
+  can execute on its own — an agent produces nothing until the developer speaks — so the
+  read cannot happen before some first message exists. What the line settles is only what
+  that first message should be.
 
-  **The word is contentless on purpose, and that is what makes the hook observable.** The
-  agent never sees this notice; `systemMessage` renders for the developer alone. So the
-  single word `begin` is the entire content that reaches the agent, and the instruction to
-  read comes from `hookSpecificOutput.additionalContext`. The developer supplies the
-  occasion; the hook supplies the instruction. A read that follows can therefore only have
-  come from the hook.
+  **The command names the read outright, and carries no emphasis markup.** `load waytide`
+  says what it does, so a developer who has never seen this system can act on it without
+  being told what the word stands for. The line also
+  states the two facts a developer needs before deciding whether to type it: that the rules
+  load ahead of their first instruction either way, and that loading takes a moment.
 
-  **A line naming the read outright would destroy that.** An earlier version told the
-  developer to type *Read the Waytide rules*, which does the hook's work for it: the read
-  then happens whether or not the hook's channel ever reached the agent, and no session can
-  distinguish the two. It also makes the failure silent, where a contentless word makes it
-  loud — an agent that never received the instruction gets an opaque `begin` and has to ask
-  what it means.
+  **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the
+  other way — the command, then the caveat that loading takes a moment — so the line ended
+  on its cost and the words to be typed sat in the middle of it. Swapping them puts the
+  caveat where a developer reads it before deciding and leaves the command as the last
+  thing on the line, which is where the eye settles and where it can be copied without
+  reading past it. The order of the two is the whole of the change; both sentences are
+  still present, and the first sentence still leads.
 
-  **This is not the developer becoming the primary path.** The hook still carries the whole
-  instruction; the developer contributes only the moment. That distinction is what the
-  contentless word preserves and a content-carrying one collapses.
+  **The notice is plain text, not markdown.** The command was written in markdown bold until
+  2026-07-28, on the assumption that the harness renders `systemMessage` as markdown. It does
+  not: the asterisks reached the developer literally, so the markup that was to put the typed
+  words where the eye lands drew the eye to punctuation instead. Emphasis is not available on
+  this channel — the status line's bold repository name is a terminal escape sequence, which
+  is a different mechanism and unaffected — and the line does not need it: the command already
+  ends the sentence that points at it. Nothing else in the notice takes markup either, for the
+  same reason.
 
-  **Explaining the word in the notice costs nothing.** The parenthetical is for the
-  developer and never reaches the agent, so the notice can be as clear as it likes without
-  contaminating what the agent is working from.
+  **What that gives up is attributability.** Until 2026-07-28 the line asked for a **foil
+  request** — a message with no content of its own, whose only purpose was to give the agent
+  an occasion to act on an instruction already in its context. The word was `begin`, and it
+  was contentless on purpose: the agent never sees this notice (`systemMessage` renders for
+  the developer alone), so `begin` was the entire content reaching the agent and the
+  instruction to read came from `hookSpecificOutput.additionalContext`. A read that followed
+  could therefore only have come from the hook, and an agent that never received the
+  instruction got an opaque word and had to ask what it meant — a loud failure. A named
+  command collapses that: the read now happens whether or not the hook's channel reached the
+  agent, and no session distinguishes the two. The trade is deliberate — legibility to the
+  developer over observability of the mechanism — and it means the hook's channel is no
+  longer testable from ordinary use.
 
-  **The agent's instruction names the foil request too**, so a bare `begin` is not opaque to
-  an agent that did receive it: read the rules, say only that the read is done, and wait for
-  the real request — printing no package count, which this rule reserves to the harness.
+  **The hook still carries the whole instruction.** The developer's command names the read,
+  but what the agent is to do with it — read `foundation/` first, read each `vocabulary.md`,
+  say only that the read is done, wait for the real request, print no package count — reaches
+  the agent only through `additionalContext`.
+
+  **The line says the rules are loaded; the notice's first line still says installed.** They
+  are different claims about different things. The first line reports what a pre-session hook
+  can observe — that the packages are on disk and the configuration is live. This line
+  describes what the session does next, and offers the command that does it now; it reports
+  no read as having happened.
 
   **No quotation marks, and they must not be added.** The notice and the instruction are
   both interpolated into a JSON string built by `printf` with no escaping, so a double quote
@@ -162,7 +190,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -181,3 +209,6 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:57:27 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 1:04:39 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 1:24:32 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 11:33:06 AM PT
+Changed by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT

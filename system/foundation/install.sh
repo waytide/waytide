@@ -39,8 +39,8 @@ override default behavior where they conflict; explicit user instructions still 
 `SessionStart` hook in `.claude/settings.json` runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
 actually present and emits the `Waytide installed at … — N packages: …` notice, closing
-with a line telling the developer to type `begin` — the foil request, whose only purpose is
-to give the agent an occasion to act on the read instruction the hook carries;
+with a line telling the developer to type `load waytide` — the command that asks for the
+read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
 the working directory, branch, and any uncommitted or unpushed work. A developer
 silences both by setting the `WAYTIDE_QUIET` environment variable to any non-empty
