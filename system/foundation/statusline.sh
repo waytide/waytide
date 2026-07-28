@@ -110,13 +110,16 @@ if [ -n "$system" ] && [ -z "$WAYTIDE_QUIET" ]; then
       find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | head -1
   )
   if [ -n "$package" ]; then
-    waytide="- Waytide"
+    waytide=":: Waytide"
   fi
 fi
 
 # The directory and branch lead, separated by a middle dot; the Waytide segment
-# trails after a hyphen, so the developer's own orientation comes first and the
-# system indicator reads as an annotation on it.
+# trails after a double colon, so the developer's own orientation comes first and the
+# system indicator reads as an annotation on it. The double colon separates more firmly
+# than the hyphen it replaced on 2026-07-28: a hyphen also joins words, so it read as
+# punctuation inside the sentence of segments rather than as the break between the
+# developer's own state and the system standing behind it.
 line=
 for segment in "$directory" "$branch" "$changes" "$untracked" "$unpushed"; do
   if [ -n "$segment" ]; then

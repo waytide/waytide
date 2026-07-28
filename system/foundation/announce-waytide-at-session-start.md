@@ -39,10 +39,10 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 - **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch, so the fact stays available instead of scrolling away:
 
 ```
-waytide · master - Waytide
-waytide · master · uncommitted changes - Waytide
-waytide · master · untracked files - Waytide
-waytide · master · uncommitted changes · untracked files · unpushed commits - Waytide
+waytide · master :: Waytide
+waytide · master · uncommitted changes :: Waytide
+waytide · master · untracked files :: Waytide
+waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
 ```
 
   **The repository's name leads the line, in bold.** It is the first orientation the line
@@ -59,6 +59,14 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
   read from disk — at least one directory carrying a `README.md`, the same test for a
   package the notice uses — so only the display drops the number; the on-demand detail is
   the status report's job (see the status-report-format rule).
+
+  **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A
+  hyphen also joins words, so it read as punctuation inside the sentence of segments rather
+  than as the break between the developer's own state and the system standing behind it. The
+  double colon separates and does nothing else, which is the whole of what is wanted there.
+  The middle dot between the developer's own segments is unaffected — the two marks now
+  differ from each other, which is what makes the trailing segment read as an annotation on
+  the line rather than another item in it.
 
   **The uncommitted changes segment** appears only when the working tree has something
   not committed — a modified tracked file, a staged change, or an untracked file that is
@@ -212,7 +220,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
