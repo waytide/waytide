@@ -1,0 +1,1 @@
+# A precondition's purpose is documenting the factors that decide a test's outcome where the script doesn't express them — especially properties of controls — with the vacuous-pass case a consequence rather than the criterion

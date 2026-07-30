@@ -14,7 +14,8 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 - The known inputs — the helpers, the values, and the setup phase — are **controls**, never factories, fixtures, or "arrange".
 
 **Preconditions**
-- A **precondition** is a bare `assert`/`refute` that is not a test — it qualifies the test rather than protecting behavior, so a failed one makes the result meaningless rather than wrong.
+- A **precondition** is a bare `assert`/`refute` that is not a test. It **documents a factor that decides the test's outcome** where the script doesn't express it — most often a property of a control, whose value is named rather than described.
+- It documents by **asserting**, so the clarification is checked rather than claimed; it qualifies the test rather than protecting behavior, so a failed one makes the result meaningless rather than wrong.
 - Its predicate reads **inline**, with no explaining variable — the stated exception to the assertion-only rule — and it sits immediately before what it qualifies.
 
 **What to test**
