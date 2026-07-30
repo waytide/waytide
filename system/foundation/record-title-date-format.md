@@ -46,10 +46,11 @@ carried, unambiguously, by the filename.
 not write a date range. Keep the filename's UTC prefix and the footer's local
 `at <hour> <zone>` form as they are. Related: the agent-file-names rule (the UTC filename
 prefix), record-rule-authorship-in-a-footer (the footer's format), the
-agent-sessions-convention (the session record's dated title), and
+agent-work-sessions-convention (the session record's dated title), and
 working-state-artifacts-carry-a-provenance-footer.
 
 ---
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT

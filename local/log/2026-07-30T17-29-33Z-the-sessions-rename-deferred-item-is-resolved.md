@@ -1,0 +1,1 @@
+# The `sessions/` rename deferred item is carried out and deleted — the directory is `local/work-sessions/`, the convention rule and its filename follow it, and the historical records keep the old word per the rename-leaves-historical-records-intact precedent

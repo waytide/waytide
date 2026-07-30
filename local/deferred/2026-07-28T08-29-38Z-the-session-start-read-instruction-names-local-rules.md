@@ -30,8 +30,8 @@ be wrong the moment one is added.
   that is not there invites an agent to report a failed read; omitting it silently is the
   failure being corrected.
 - **How the instruction keeps `local/rules/` distinct from the rest of `local/`.** The
-  working directories beside it — `log/`, `deferred/`, `design/`, `plans/`, `sessions/`,
-  `experiments/` — are explicitly *not* read as binding at session start. An instruction
+  working directories beside it — `log/`, `deferred/`, `design/`, `plans/`,
+  `work-sessions/`, `experiments/` — are explicitly *not* read as binding at session start. An instruction
   that says `local/` rather than `local/rules/` would reverse a settled distinction.
 - **Whether `announce-waytide-at-session-start` needs more than its quoted instruction
   updated.** The rule describes the instruction's content in several places and the
@@ -56,3 +56,4 @@ was carried out.
 ---
 
 Authored by Scott Bellware on Tue Jul 28 2026 at 1:29:38 AM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT

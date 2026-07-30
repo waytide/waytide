@@ -27,7 +27,7 @@ project `install.sh` places the equivalent `.claude/settings.json`; here in the 
 is committed like this file.
 
 The `local/` directory holds this project's own working state — `log/`,
-`deferred/`, `design/`, `plans/`, `sessions/`, `experiments/` — worked with as their
+`deferred/`, `design/`, `plans/`, `work-sessions/`, `experiments/` — worked with as their
 conventions describe, not read as binding rules at session start.
 
 **This repository drops the `waytide/` wrapper that a consuming project has.** There,
