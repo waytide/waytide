@@ -56,9 +56,14 @@ a rule change does not reach it — was open at initiation and is settled below.
   on Thu Jul 30 2026 at 10:20:00 AM PT; **rename the file** was chosen.
 - **An installed project's directory** — put through the selection UI on
   Thu Jul 30 2026 at 10:20:00 AM PT; **`install.sh` renames it** was chosen.
+- **Branch deletion** — put through the selection UI on
+  Thu Jul 30 2026 at 11:36:53 AM PT; **delete it** was chosen. The local branch was
+  deleted at `6e05d56`. There was no remote branch and no worktree, so the two-part
+  cleanup the lifecycle describes did not arise.
 
 ---
 
 Authored by Scott Bellware on Thu Jul 30 2026 at 9:58:10 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 10:31:04 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 11:36:08 AM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 11:36:53 AM PT
