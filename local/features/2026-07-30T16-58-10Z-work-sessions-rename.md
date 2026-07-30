@@ -9,6 +9,7 @@ not carry that. Resolves the deferred item
 
 ## Setup
 
+- **State:** Completed
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/work-sessions-rename`
 - **Base:** `0001f32f7a039078fd525ebf97a6a8dc1d1fb5a5` (`master`)
@@ -16,8 +17,14 @@ not carry that. Resolves the deferred item
   `feature/work-sessions-rename` and switches back to `master` at the conclusion.
 - **Loop record:** `local/loops/2026-07-30T17-29-31Z-work-sessions-rename.md`
 
-No `**State:**` line is carried while the feature is in flight; one is written when it
-concludes. The session-start notice reports it as open until then.
+The record carried no `**State:**` line while the feature was in flight — the four state
+words all name an end or a pause, so none of them is true of a feature still being built,
+and the session-start notice reported it as open on that absence. The line was written at
+the conclusion.
+
+**Completed** on Thu Jul 30 2026 at 11:36:08 AM PT: the work was accepted by the developer
+and `feature/work-sessions-rename` was integrated into `master`. Its one commit is
+`55d660a`.
 
 ## The plural is settled
 
@@ -54,3 +61,4 @@ a rule change does not reach it — was open at initiation and is settled below.
 
 Authored by Scott Bellware on Thu Jul 30 2026 at 9:58:10 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 10:31:04 AM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 11:36:08 AM PT
