@@ -1,0 +1,1 @@
+# Foundation is published with the work-sessions rename — `08981d2..c3fd34a`, a fast-forward carrying the renamed convention rule, the conformed directory lists, and `install.sh`'s migration of an installed project's `local/sessions/`
