@@ -176,7 +176,9 @@ line.
   block carrying the same reasoning).
 - **The log** — `local/log/2026-07-30T18-55-43Z-session-start-notice-command-on-its-own-line.md`
   and `local/log/2026-07-30T19-23-16Z-foundation-published-with-notice-command-line-break.md`.
-- **The deferred item** — `local/deferred/2026-07-30T20-46-41Z-preconditions-in-tests.md`.
+- **The deferred item** — `local/deferred/2026-07-30T20-46-41Z-preconditions-in-tests.md`. Carried
+  out later the same day and deleted, per the deferred convention; what it became is
+  `system/testing/precondition-qualifies-a-test-and-reads-inline.md`.
 - **The published package** — `waytide/foundation` at `4f8a875`.
 - **The tab-completion finding** — this record alone. It produced no durable artifact, because
   the outcome was that nothing changes.
@@ -196,3 +198,4 @@ named.
 ---
 
 Authored by Scott Bellware on Thu Jul 30 2026 at 2:29:55 PM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 4:16:12 PM PT

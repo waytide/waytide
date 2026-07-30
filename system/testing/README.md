@@ -13,11 +13,15 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 - Local variables built by a control take the `control_` prefix; a control's string value starts with "some".
 - The known inputs — the helpers, the values, and the setup phase — are **controls**, never factories, fixtures, or "arrange".
 
+**Preconditions**
+- A **precondition** is a bare `assert`/`refute` that is not a test — it qualifies the test rather than protecting behavior, so a failed one makes the result meaningless rather than wrong.
+- Its predicate reads **inline**, with no explaining variable — the stated exception to the assertion-only rule — and it sits immediately before what it qualifies.
+
 **What to test**
 - Assert an error's message only when it is the sole way to confirm the correct error was raised.
 - Don't test the platform — a transparent pass-through has nothing of ours to protect.
 
-**Vocabulary** (`vocabulary.md`): the term **controls**, and the testing-domain substitutions — verified (not green), protect (not guard, for a test).
+**Vocabulary** (`vocabulary.md`): the terms **controls** and **precondition**, and the testing-domain substitutions — verified (not green), protect (not guard, for a test).
 
 **Commands**: `test-report` (classify the suite) and `test-tree` (print a normalized de-duped context tree).
 
