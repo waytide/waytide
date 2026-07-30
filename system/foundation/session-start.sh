@@ -207,7 +207,14 @@ fi
 # command to type sits at the bottom of an undifferentiated block. The blank line falls
 # after the open-work lines rather than between them and the install line, so the report
 # stays one block and the break marks the change of purpose rather than a change of subject.
-notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide."
+#
+# A second blank line sets the command sentence apart from the caveat ahead of it. Ending
+# the line with the command put the words to be typed in the position the eye settles on,
+# but they were still the tail of a two-sentence paragraph, so finding them meant reading
+# the caveat first. On its own line the command is the one thing on the notice's last line,
+# and it can be read and copied without reading past anything. The caveat keeps its place
+# ahead of it, where a developer reads it before deciding whether to type the command.
+notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.\\n\\nTo load them now, type: load waytide."
 
 # The read instruction, carried to the agent rather than to the developer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
