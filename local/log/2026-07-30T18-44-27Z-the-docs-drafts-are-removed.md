@@ -1,0 +1,1 @@
+# The `docs/` website drafts are removed — the documentation site will be authored fresh when it is built, and the drafts stay recoverable from history; the review-the-website-content deferred item goes with them, having existed only to review those pages
