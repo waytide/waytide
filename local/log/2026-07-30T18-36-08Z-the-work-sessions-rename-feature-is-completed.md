@@ -1,0 +1,1 @@
+# The work-sessions rename feature is completed — the developer accepted the work and `feature/work-sessions-rename` is integrated into `master`; a feature has an intent rather than a question, so completion is its conclusion and no affirmation or merge gate applies

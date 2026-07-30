@@ -1,0 +1,1 @@
+# `install.sh` renames an installed project's `waytide/local/sessions/` to `work-sessions/` — a rule change names the new directory but cannot move a project's own files, so the installer executes the migration, narrowly: only when the old name is present and the new one absent, reporting and touching nothing where both exist

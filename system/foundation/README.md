@@ -33,7 +33,7 @@ Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/local/plans/` (implementation plans
 that sequence a settled design), `waytide/local/design/` (design docs that settle direction
 first), `waytide/local/experiments/` (recorded experiments that test a question),
-`waytide/local/features/` (the lifecycle record of a feature), and `waytide/local/sessions/` (the narrative record of a work session).
+`waytide/local/features/` (the lifecycle record of a feature), and `waytide/local/work-sessions/` (the narrative record of a work session).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (branch only, or branch and worktree), declared
@@ -49,7 +49,7 @@ concern.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/loops/`); foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`plans`/`design`/`experiments`/`features`/`sessions` work-artifact directories.
+`plans`/`design`/`experiments`/`features`/`work-sessions` work-artifact directories.
 
 This package includes no others — everything else includes it.
 
@@ -66,6 +66,8 @@ sh install.sh
 ```
 
 It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/` and `waytide/local/rules/` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
+
+It also **renames `waytide/local/work-sessions/` if your project still holds it under its old name**, `waytide/local/sessions/`. This is the one place the installer touches your project's own working state, and it moves the directory only when the old name is present and the new one is absent; where both exist it reports them and changes nothing, leaving the merge to you.
 
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 

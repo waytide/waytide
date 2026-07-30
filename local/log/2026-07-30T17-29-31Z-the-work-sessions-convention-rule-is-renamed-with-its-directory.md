@@ -1,0 +1,1 @@
+# The convention rule's filename is renamed with the directory it governs — `agent-sessions-convention.md` becomes `agent-work-sessions-convention.md`, since every sibling names its directory and a file named for a directory that no longer exists misdirects
