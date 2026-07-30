@@ -1,0 +1,1 @@
+# A blank line separates the session-start notice's report from its closing ask — the install and open-work lines report, the load-command line is the only part that asks, and run together the ask read as one more reported fact; the break falls after the open-work lines, which belong to the report

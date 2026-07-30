@@ -6,6 +6,7 @@ A project running Waytide announces the system's presence through **two surfaces
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide.
 ```
 
@@ -16,6 +17,7 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
 1 feature open: upload-retries (suspended)
+
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments. To load them now, type: load waytide.
 ```
 
@@ -134,6 +136,15 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   moments. To load them now, type: load waytide.` It is always present, and it is the one
   part of the notice that asks for something rather than reporting.
 
+  **A blank line precedes it.** Everything above the line reports — what is installed, and
+  what has been left open. This line is the only part of the notice that asks the developer
+  to do something, and run together with the report it reads as one more reported fact, with
+  the command to type sitting at the bottom of an undifferentiated block. The blank line
+  marks the change of purpose. It falls **after** the open-experiment and open-feature
+  lines, not between them and the install line: those lines are part of the report, so
+  breaking there would separate the report from itself and leave the ask still joined to
+  half of it.
+
   **Something the developer types is required, whatever it says.** Nothing the hook supplies
   can execute on its own — an agent produces nothing until the developer speaks — so the
   read cannot happen before some first message exists. What the line settles is only what
@@ -220,7 +231,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, with the loading-takes-a-moment caveat ahead of it. Keep the blank line that separates the notice's report from that closing ask, placed after any open-experiment and open-feature lines. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -244,3 +255,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 11:33:06 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:39:45 AM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 11:50:41 AM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 11:48:52 AM PT
