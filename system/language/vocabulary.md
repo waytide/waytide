@@ -16,7 +16,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 
 | Say | Don't say | What it names |
 |---|---|---|
-| **normal path** | "happy path" | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", never "sad path" |
+| **normal path** | "happy path" | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path" |
 | **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention |
 | **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs |
 | **increment** | "cut" | a bounded slice of scope delivered as a step |
@@ -48,3 +48,4 @@ General, domain-less word substitutions — the literal term in place of a slang
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
+Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
