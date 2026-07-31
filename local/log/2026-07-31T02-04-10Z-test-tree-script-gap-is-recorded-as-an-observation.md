@@ -1,0 +1,1 @@
+# The `test-tree` rule mandates a script no package ships, and `testing`'s framework-neutrality claim blocks it shipping there — recorded as an observation, not yet a rule, because the placement is unsettled

@@ -1,0 +1,1 @@
+# The `git` package's standalone claim is contradicted by a named Ruby runner, a TestBench output format, and four cross-package references — recorded as an observation, not yet a rule, because where a runner belongs is unsettled
