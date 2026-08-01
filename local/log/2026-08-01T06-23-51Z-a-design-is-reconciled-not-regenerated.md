@@ -1,0 +1,1 @@
+# A design is reconciled against the records rather than regenerated from them — a session record can be a projection because it is not a source of truth, and a design is one — recorded as an observation, not yet a rule
