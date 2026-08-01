@@ -1,0 +1,1 @@
+# The Ruby tree script's reference to the testing package's test-tree command is a citation, not a dependency — the script works without it and only lacks motivation, so code/ruby stays at foundation and language

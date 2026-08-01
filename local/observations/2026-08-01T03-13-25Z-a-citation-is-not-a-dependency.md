@@ -1,9 +1,11 @@
 # A citation is not a dependency — the criterion is availability, and the system already practices it
 
-**Status:** a working hypothesis under discovery, produced by the test-output-display
-investigation while settling where Ruby-specific material belongs. It is promoted once the
-criterion is ratified as a rule and the one borderline case below is decided. Nothing is
-changed by it as it stands — under this reading no package's declared dependencies are wrong.
+**Status:** **promoted** on Fri Jul 31 2026 — this is now the discovery record, not a working
+hypothesis. The criterion was ratified as the `foundation` rule
+`a-citation-is-not-a-dependency`: a citation is not a dependency unless the citing rule will
+not work without the cited package. The borderline below was decided with it — a `code/ruby`
+tree-script rule **works** without `testing` and merely lacks motivation, so it is a citation
+and `code/ruby` takes no dependency edge. No package's declared dependencies changed.
 
 **The survey.** Every package but one references packages it does not declare:
 
@@ -65,6 +67,13 @@ it is discoverable only by reading `agent-features-convention`'s aside. As a rul
 worked examples above — the model citation that degrades, and the refused dependency that
 would have inverted the graph.
 
+**How it was settled.** The criterion was ratified as stated, with the test fixed at whether
+the rule **works** rather than whether it is motivated — which decided the borderline against a
+dependency edge. The rule is `system/foundation/a-citation-is-not-a-dependency.md`; it carries
+the test, the two worked examples above, and the graph-cycle argument for why the alternative
+reading is unavailable.
+
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 8:13:25 PM PT
+Changed by Scott Bellware on Fri Jul 31 2026 at 10:42:45 PM PT

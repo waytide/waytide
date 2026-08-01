@@ -1,0 +1,1 @@
+# A citation of another package's rule is not a dependency unless the citing rule will not work without it — motivation is not the test, and the criterion is now the foundation rule a-citation-is-not-a-dependency
