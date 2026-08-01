@@ -58,6 +58,38 @@ the divergence that actually matters — the design says one shape and the rules
 — is a reading, not a computation. Attributing changes to the right design also stops being
 mechanical as soon as a project has more than one.
 
+## Writing a session record is the better proxy
+
+The moment a **work-session record is written** is a more timely occasion to reconcile than any
+count of changes, for three reasons:
+
+- **It needs no threshold.** Deciding to write a record *is* the developer judging the work
+  substantial, so the arbitrary number the volume proxy requires disappears. The judgment has
+  already been made by a person, on the right basis.
+- **The inputs are already gathered.** Writing a session record means reading that session's log
+  entries, rules, and observations — the same material a reconciliation reads. At that moment
+  the reading is already done and the reconciliation is nearly free.
+- **A gate already exists there.** The work-sessions convention routes the recording question
+  through the selection UI when the agent raises it, and the session is closing, so nothing is
+  mid-flight and direction can still change cheaply.
+
+**Two limits, stated plainly.** It is a **lagging** trigger — by the time the record is written
+the work has already proceeded against whatever the design said, so it catches staleness after
+the fact rather than before. And it is **not sufficient on its own**: two session records
+postdate the one design on file (2026-07-30 and 2026-08-01) and neither occasioned a change to
+it. The moment recurs; what is missing is the prompt.
+
+**It also connects to the sibling observation's finding.** A session record is already absorbing
+design content the way a deferred item does — the reasoning from the session that produced these
+observations survives in the record, not in a design. Prompting for reconciliation at the moment
+the record is written puts the prompt exactly where that absorption is visible: what is being
+narrated either belongs in the design, or shows that the design has fallen behind.
+
+This composes with the definite detector rather than replacing it. A design naming something
+that no longer resolves is a defect worth reporting whenever it is true; the session close is
+where the **semantic** divergence — the kind no check can find — is most cheaply judged.
+
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 11:23:24 PM PT
+Changed by Scott Bellware on Fri Jul 31 2026 at 11:29:41 PM PT
