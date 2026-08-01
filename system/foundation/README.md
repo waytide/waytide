@@ -16,7 +16,7 @@ this package:
 - **`waytide/local/observations/`**. Working hypotheses and rule-candidates still under
   discovery; not yet binding.
 - **`waytide/local/deferred/`**. Design changes postponed until the current task finishes;
-  a queue, not a permanent record. It is **printed as a table at the start of every
+  a queue, not a permanent record. It is **printed as a list of rows at the start of every
   session**, immediately after the rules are read, so a parked item is not lost by going
   unread (`print-the-deferred-queue-after-the-rule-read`).
 - **`waytide/local/log/`**. The decision log: one file per decision, a one-line title.

@@ -1,24 +1,36 @@
-# Print the deferred queue as a table, immediately after the rules are read
+# Print the deferred queue as a list of rows, immediately after the rules are read
 
 When the rules under `waytide/system/` and `waytide/local/rules/` have been read at the start
 of a session, **print the deferred queue** before waiting for the developer's first real
 request. It is the last thing the read produces.
 
-**The form is a table**, one row per item under `waytide/local/deferred/`:
+**The form is a list, one row per item** under `waytide/local/deferred/` — not a rendered
+table:
 
-| Item | Date | Summary |
-|---|---|---|
-| The deferred queue is surfaced at session start | 2026-07-28 | The notice reports open experiments and features and says nothing about this queue. |
-| Package release rules | 2026-07-28 | Nothing settles how a release is made — version schemes, the prompt, the commit message. |
+```
+8 deferred items
 
-- **Item** is the item's title, as its `# <title>` line states it.
-- **Date** is the date from the ISO-8601-UTC filename prefix.
-- **Summary** is one line saying what the item is about, read from the item.
+- The deferred queue is surfaced at session start — 2026-07-28 — The notice reports open
+  experiments and features and says nothing about this queue.
+- Package release rules — 2026-07-28 — Nothing settles how a release is made: the version
+  schemes, the prompt, the commit message.
+```
 
-**State the count.** The table is preceded or followed by the number of items, so the size of
+Each row carries three fields, in this order:
+
+- **Title**, as the item's `# <title>` line states it.
+- **Date**, from the ISO-8601-UTC filename prefix.
+- **Summary** — one line saying what the item is about, read from the item.
+
+**A row, not a table cell.** A rendered table fixes column widths against its widest cell, so
+one long summary narrows the other two fields and wraps every row; the queue is read in a
+terminal, where that turns a scannable list into a grid to be parsed. A row wraps as prose
+and the fields stay in a fixed order, which is what a reader is actually using to scan.
+
+**State the count.** The list is preceded by the number of items, so the size of
 the queue is a fact the developer is given rather than one they count.
 
-**An empty queue prints a line saying so.** It does not print an empty table and does not
+**An empty queue prints a line saying so.** It does not print an empty list and does not
 print nothing. A queue that has been emptied is worth stating once; silence there would be
 indistinguishable from the print having been skipped.
 
@@ -44,22 +56,23 @@ directory nothing reported. The working directories are not read at session star
 session-start notice covers only experiments and features that have not concluded, and the
 `next-deferred-item` command reaches the queue only when someone thinks to ask — so an item
 was surfaced only by deliberate looking. Printing it at the moment the rules are read costs
-one table, once, at the point the developer is deciding what the session is for, which is
+one list, once, at the point the developer is deciding what the session is for, which is
 exactly when the queue is worth seeing. Putting it after the read rather than in the notice
 is what keeps it from becoming furniture: the notice would carry it every session in the same
 place, and the failure of a permanent line is that it stops being read.
 
 **How to apply:** after reading the rule files at the start of a session, read
-`waytide/local/deferred/` and print one table row per item — title, date from the filename
+`waytide/local/deferred/` and print one row per item — title, date from the filename
 prefix, and a one-line summary — with the count stated. Where the queue is empty, print a
 line saying so. Then wait for the developer's request. Do not print a Waytide installation
 notice, which remains the harness's and is prohibited to the agent. Related: the
 agent-deferred-convention (the queue's format and its resolution step), the
 next-deferred-item-command rule (the on-demand way into the queue), the status-report-format
-rule (whose deferred table carries a `kind` column this one omits, being a fuller report),
+rule (whose deferred table is a rendered table with a `kind` column, this one being neither),
 the agent-rules-convention (the read this follows), and the announce-waytide-at-session-start
 rule (the notice this is not).
 
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:16:40 PM PT

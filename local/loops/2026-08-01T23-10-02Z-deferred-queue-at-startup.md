@@ -73,9 +73,24 @@ candidate homes differ in what they cost. The prohibition in announce-waytide-at
 was then narrowed in place: it forbids the **notice**, not everything the agent prints at a
 session's start, and it now names this rule as the different thing on a different surface.
 
+## Pass 6 — A list of rows, not a rendered table
+
+**Hinge:** the rendering. Pass 2 settled "table form" and pass 3 settled the summary as "a
+table column", and both were written as a markdown table.
+
+**Options:** none — not gated. The developer corrected it on seeing the rendered output: the
+queue is a list of rows, not a tabular table.
+
+**Decision / chat:** a list, one row per item, each row carrying title, date, and summary in
+that order. The reason holds up on inspection: a rendered table sizes its columns to the widest
+cell, so one long summary narrows the other two fields and wraps every row, and the queue is
+read in a terminal. The fields settled in passes 3 and 4 are unchanged; only the rendering is.
+The wording was conformed in the rule, the agent-deferred-convention, and the foundation
+README, all of which said "table".
+
 ## Outcome
 
-- **The rule:** `print-the-deferred-queue-after-the-rule-read` in `foundation` — the table and
+- **The rule:** `print-the-deferred-queue-after-the-rule-read` in `foundation` — the list and
   its three columns, the count, the empty-queue line, and why the print is not the notice.
 - **Cross-references:** the announce-waytide-at-session-start rule's prohibition is narrowed
   and names this print; the agent-deferred-convention names it as what keeps a parked item
@@ -86,3 +101,4 @@ session's start, and it now names this rule as the different thing on a differen
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:16:40 PM PT

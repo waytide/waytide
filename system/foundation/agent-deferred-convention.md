@@ -10,7 +10,7 @@
 - **Leave historical records alone.** A session record, an experiment record, or a log entry states what was true when it was written, and its date is on its face. Do not correct one, and do not annotate one either — an annotation is a live pointer added to a dead record, and it has to be maintained like any other. The one broken reference this convention has produced was an annotation of exactly that kind. A reader who follows a dead path in an old record uses git.
 - **The search happens at deletion; there is no standing check.** A `[[link]]` to a nonexistent file is findable mechanically, but most references are prose or file paths and are not. Searching for the name at the moment of deletion is targeted, raises no false matches on prose that merely shows what a link looks like, and is done by the person who knows what the item became.
 - **Recording one:** add the file; a matching `waytide/local/log/` entry is optional for the deferral itself but required when the item is resolved.
-- **The queue is printed at the start of every session**, as a table, immediately after the rules are read — see the print-the-deferred-queue-after-the-rule-read rule. That is what keeps a parked item from being lost by being unread; this convention's job is only that the item is written down and eventually resolved.
+- **The queue is printed at the start of every session**, as a list of rows, immediately after the rules are read — see the print-the-deferred-queue-after-the-rule-read rule. That is what keeps a parked item from being lost by being unread; this convention's job is only that the item is written down and eventually resolved.
 
 **Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately; a parked queue keeps it without derailing the task in flight. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:48:36 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:16:40 PM PT
