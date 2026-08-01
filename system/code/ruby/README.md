@@ -18,6 +18,11 @@ Prescriptive Ruby style.
 **Errors**
 - An applicative error extends `RuntimeError`, and extends it directly — not `StandardError`, and with no base class inserted between for organization.
 
+**Running the test suite**
+- The suite entry point is `test/automated.rb`, run as `ruby test/automated.rb`; verified output reads `0 failed, 0 aborted`.
+- The `test-tree` command's durable script lives at `test/automated/tree.rb`, excluded from the default run, parsing the run's output rather than the source.
+- This is where the Ruby and TestBench specifics of running a suite live, so `git` and `testing` can state their conventions without naming a stack.
+
 **Command**: `lib-report` (classify `lib/` by role, construct, method style, API currency, error taxonomy, idioms).
 
 `code/` groups by programming language and is not a package; `code/ruby` is the package. Includes `foundation`, `language`.

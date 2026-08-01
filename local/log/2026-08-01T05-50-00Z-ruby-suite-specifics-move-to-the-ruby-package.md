@@ -1,0 +1,1 @@
+# The Ruby runner command, TestBench's verified-output line, and the test-tree script move from the git and testing packages into a code/ruby rule on running the test suite, leaving both general rules stack-neutral
