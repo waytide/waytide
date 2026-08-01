@@ -1,0 +1,1 @@
+# A citation of another package's rule is not a dependency — the criterion is whether the rule can be applied at all without that package — recorded as an observation, not yet a rule, because the code/ruby-to-testing borderline is unsettled
