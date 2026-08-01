@@ -1,0 +1,1 @@
+# Attended versus unattended is a batch-size trade — attended is small-batch with interruptions, unattended is big-batch with commensurately higher rework cost — which makes the answer situational and so a decision rather than the confirmed default never-ask-to-start-test-first forbids asking about

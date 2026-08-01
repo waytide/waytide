@@ -62,6 +62,31 @@ developer's attention the method spends — reached from the other end. The item
 single hinge should offer; this asks whether the hinges should be run at all for a given piece
 of work.
 
+**The question is batch size.** Stated as the developer put it: the choice is whether the
+process is **attended** — human-in-the-loop, with **small-batch interruptions** — or
+**unattended**, which is **big-batch**, carrying the commensurate expectation of **higher
+rework and its attendant cost**.
+
+That framing does two things the amendment above could not do on its own.
+
+- **It says what the two answers mean.** Unattended is not *DBE off*. It is the same
+  generation run in one large batch instead of many small ones, with the gates removed. The
+  cradle, the efferent-first actuation, and the solubility standard are unaffected by batch
+  size; what changes is how much is produced before a person looks.
+- **It makes the answer situational, which is what separates this from the test-first
+  prohibition.** never-ask-to-start-test-first holds that asking is ceremony *because the
+  answer is always yes*. Here the answer is a trade with two real sides: small batches spend
+  the developer's attention continuously and keep rework near zero; big batches spend none
+  until the end and pay for it in rework when the batch is wrong. Which is cheaper depends on
+  how load-bearing the work is and how likely the first pass is to be right — a judgment about
+  *this* piece of work, not a default to be confirmed. A question with a genuinely situational
+  answer is a decision, and the rule's reasoning does not reach it.
+
+**What follows from it, and still has to be settled:** rework cost is the term the decision
+turns on, so the prompt is only worth asking where the two batch sizes actually differ in it.
+That is a criterion, not a standing prompt — and it bears directly on the granularity question
+below, since the rework exposure of a session, a feature, and a single unit are not the same.
+
 **It is in direct tension with a rule now in force, and that is what has to be settled.** The
 never-ask-to-start-test-first rule says: *"Do not ask 'shall I start it test-first?' or
 otherwise put the test-first decision to the human — there is nothing to deliberate at that
@@ -75,18 +100,17 @@ retires."* An upfront DBE-or-unattended prompt is that prompt, or something very
   the method's substance. The amendment asks about *human-in-the-loop gating*, which is its
   cost. Those may be different questions wearing the same shape — a developer can want the
   design driven from the efferent side without wanting to be stopped at five hinges.
-- **Whether the answer is genuinely open.** The existing rule's justification is that the
-  answer is always yes. If the answer to *attended or unattended* is genuinely situational —
-  a short mechanical change versus a load-bearing new unit — then it is a decision rather than
-  a confirmed default, and the rule's reasoning does not reach it.
+- **Whether the answer is genuinely open — answered by the batch framing above.** The existing
+  rule's justification is that the answer is always yes. The batch trade has two real sides, so
+  the answer is situational and this is a decision rather than a confirmed default.
 - **Where the precedent already sits.** Suspending DBE is already possible, and already
   user-initiated: the experiment-runs-on-its-own-branch rule says *"A user may instruct the
   agent to suspend DBE for the experiment — which requires specific user confirmation."* So the
   capability exists and the developer opens it. The amendment would move the initiative to the
   agent, at the start of every piece of work.
-- **What unattended means, exactly.** Whether it suspends the gates only, or the method — the
-  cradle, the efferent-first actuation, and the solubility judgment are separable from the
-  stopping. Generating straight through inside a cradle is not the same as abandoning DBE.
+- **What unattended means, exactly — answered by the batch framing above.** It suspends the
+  gates, not the method. The cradle, the efferent-first actuation, and the solubility standard
+  are unaffected by batch size.
 - **How often it would fire, and against what.** A prompt at the start of every piece of work
   is the cost profile the existing rule objects to. Whether it is asked once per session, per
   feature, or per unit changes the answer.
@@ -116,3 +140,4 @@ user-initiated).
 Authored by Scott Bellware on Fri Jul 24 2026 at 9 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:40:18 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:44:27 PM PT
