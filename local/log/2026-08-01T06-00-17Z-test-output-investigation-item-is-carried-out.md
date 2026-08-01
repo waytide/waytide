@@ -1,0 +1,1 @@
+# The "investigate the test output display and test running" deferred item is carried out and deleted — the runner and tree script moved to code/ruby, the context trees were conformed to derive from the run, and the verbose-output bound was disregarded
