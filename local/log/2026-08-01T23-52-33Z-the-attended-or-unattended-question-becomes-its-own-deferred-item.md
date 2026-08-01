@@ -1,0 +1,1 @@
+# The attended-or-unattended question is separated into its own deferred item — it is about whether the cycle is gated at all, where the failing-implementation item is about what one hinge offers, and the two cross-reference
