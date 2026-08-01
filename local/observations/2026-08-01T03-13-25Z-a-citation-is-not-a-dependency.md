@@ -19,8 +19,8 @@ and `code/ruby` takes no dependency edge. No package's declared dependencies cha
 | `plan` | nothing — standalone | `foundation`, `git` |
 | `code/ruby` | `foundation`, `language` | `testing` |
 
-Eleven `foundation` rules cite another package, among them agent-features-convention,
-agent-rules-convention, agent-file-names-use-iso8601-utc-prefix, and
+Eleven `foundation` rules cite another package, among them features-convention,
+rules-convention, file-names-use-iso8601-utc-prefix, and
 announce-waytide-at-session-start.
 
 **The reading that a citation is a dependency collapses.** It would make `foundation` depend
@@ -30,7 +30,7 @@ happens to sit at the bottom of nothing, would be unaffected. So the question is
 the way it appeared: one of the two answers is not available.
 
 **The criterion is availability, and it is already in the system's own words.**
-`agent-features-convention` is at once a `foundation` rule citing `design-by-efferent`'s
+`features-convention` is at once a `foundation` rule citing `design-by-efferent`'s
 loop-records rule and the rule explaining why it must not depend on it — requiring fields in
 `waytide/local/loops/` "would invert the package graph, and would make the feature lifecycle
 **unavailable** to a project that installs `foundation` alone." It cites freely and refuses to
@@ -62,7 +62,7 @@ criterion that answers only about applicability says citation; one that asks whe
 still has a reason to exist says dependency.
 
 **What ratifying this would require.** The criterion is currently practiced and unstated, so
-it is discoverable only by reading `agent-features-convention`'s aside. As a rule it belongs in
+it is discoverable only by reading `features-convention`'s aside. As a rule it belongs in
 `foundation`, which owns the package system, and it would give both the test and the two
 worked examples above — the model citation that degrades, and the refused dependency that
 would have inverted the graph.

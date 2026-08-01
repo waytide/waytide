@@ -111,7 +111,7 @@ state: **completed** on integration, **abandoned** if dropped, **superseded** if
 add no gate at the merge; fix a post-merge failure from there. Leave the user on the
 upstream branch in the main working tree, confirm before deleting any branch — removing the
 worktree first, under one confirmation — and record every confirmation in the feature
-record. Related: the agent-features-convention (the record), the
+record. Related: the features-convention (the record), the
 experiment-runs-on-its-own-branch rule (the capability this mirrors, and where it
 deliberately differs), the announce-waytide-at-session-start rule (which reports features
 that have not concluded), the design-by-efferent hinge-cycle and loop-records rules (which

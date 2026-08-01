@@ -44,7 +44,7 @@ and is *"convention-aware of the testing package"*, degrading when a project has
 those conventions. `foundation` includes no package, and `testing` includes `foundation`, so a
 foundation rule that knows about `testing` points against the package graph. The conditional
 degradation is what keeps that tolerable rather than broken — but it is the same inversion the
-agent-features-convention refused elsewhere, on the ground that *"a foundation rule requiring
+features-convention refused elsewhere, on the ground that *"a foundation rule requiring
 fields in that directory would invert the package graph."* Whether this instance is acceptable
 where that one was not is its own question.
 

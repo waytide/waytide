@@ -143,7 +143,7 @@ the suite on integration. The response is to fix it from there.
 ## Out of Scope / Deferred
 
 This section states what was open **when the design was written**. Items resolved since are
-marked, per the reconciliation the agent-work-sessions-convention prompts; the unmarked ones
+marked, per the reconciliation the work-sessions-convention prompts; the unmarked ones
 are still open.
 
 - **~~Main-sequence drift has no restatement yet.~~ Resolved 2026-07-31.** The design left open
@@ -161,7 +161,7 @@ are still open.
   *names* the other, which is prose. Never settled explicitly.
 - **~~The `waytide/local/features/` directory does not exist yet~~, and neither do the rules this
   design would be realized by. A plan sequences that build. Resolved 2026-07-31.** The
-  directory exists and holds a feature record; `agent-features-convention` and
+  directory exists and holds a feature record; `features-convention` and
   `feature-runs-on-its-own-branch` are written and published in `foundation`. The design has
   been realized.
 

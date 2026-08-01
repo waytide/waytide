@@ -24,7 +24,7 @@ alongside it; it says nothing about what its rules may refer to.
 testing conventions, degrade this section."* The rule works either way, so `testing` is cited
 and not declared.
 
-**The refused dependency** is the agent-features-convention rule, which cites
+**The refused dependency** is the features-convention rule, which cites
 `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in
 `waytide/local/loops/`, because doing so *"would invert the package graph, and would make the
 feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is
@@ -48,8 +48,8 @@ rule could still be applied with that package absent. If it could, cite it plain
 nothing. If it could not, declare the dependency in the package README's `Includes` line and
 its dependency graph, and add it to `install-dependencies.sh`. Do not declare a dependency
 because a citation is frequent, because the packages are usually installed together, or
-because the rule reads better with its sibling present. Related: the agent-rules-convention
-(the rule format and where rules live), the agent-features-convention (the refused dependency
+because the rule reads better with its sibling present. Related: the rules-convention
+(the rule format and where rules live), the features-convention (the refused dependency
 worked through in full), the status-report-format rule (the model citation, written for the
 cited package's absence), and each package's README (where a dependency is declared).
 

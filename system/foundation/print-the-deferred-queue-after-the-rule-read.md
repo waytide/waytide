@@ -66,10 +66,10 @@ place, and the failure of a permanent line is that it stops being read.
 prefix, and a one-line summary — with the count stated. Where the queue is empty, print a
 line saying so. Then wait for the developer's request. Do not print a Waytide installation
 notice, which remains the harness's and is prohibited to the agent. Related: the
-agent-deferred-convention (the queue's format and its resolution step), the
+deferred-convention (the queue's format and its resolution step), the
 next-deferred-item-command rule (the on-demand way into the queue), the status-report-format
 rule (whose deferred table is a rendered table with a `kind` column, this one being neither),
-the agent-rules-convention (the read this follows), and the announce-waytide-at-session-start
+the rules-convention (the read this follows), and the announce-waytide-at-session-start
 rule (the notice this is not).
 
 ---

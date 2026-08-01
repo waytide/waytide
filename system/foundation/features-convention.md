@@ -41,7 +41,7 @@ persisted, dated artifact, kept after the feature concludes.
   that installs `foundation` alone.
 - **Format:** the same frontmatter-free markdown as rules — a `# Feature — <name>` title,
   then prose. The filename follows the ISO-8601-UTC prefix convention (see the
-  agent-file-names rule).
+  file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like
   every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer
   rule.
@@ -57,7 +57,7 @@ is the more expensive of the two to get wrong.
 state, its branch topology, and the working location chosen at initiation; update the
 state line as the state changes; record each confirmation the lifecycle requires; and name
 the feature's loop record. Keep the record after the feature concludes. Related: the
-feature-runs-on-its-own-branch rule (the lifecycle), the agent-experiments-convention (the
+feature-runs-on-its-own-branch rule (the lifecycle), the experiments-convention (the
 capability this mirrors, and where it deliberately differs), the design-by-efferent
 loop-records rule (the design record for the same feature), and the decision-log rule.
 
@@ -66,3 +66,4 @@ loop-records rule (the design record for the same feature), and the decision-log
 Authored by Scott Bellware on Mon Jul 27 2026 at 12:31:14 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT

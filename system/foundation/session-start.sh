@@ -229,7 +229,7 @@ notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction 
 # the session and has no way to observe what the agent then does. It removes the excuse
 # of the instruction being buried in a file the agent may not open, and no more.
 # The local rules are named unconditionally, whether or not the directory is there. The
-# binding rule (agent-rules-convention) and the AGENTS.md bootstrap both name it without a
+# binding rule (rules-convention) and the AGENTS.md bootstrap both name it without a
 # condition, and an instruction narrower than the rule it exists to get followed is the defect
 # being corrected. A project with no local rules yet is the ordinary case, not an error, and a
 # fixed instruction is one string rather than one per project layout.

@@ -36,7 +36,7 @@ environment variable, a settings entry, or an argument to the hook script — an
 is to say about a session it is running rule-free, since a silent decline reproduces the
 original failure in a new place. Record the choice in the announce-waytide-at-session-start
 rule alongside `WAYTIDE_QUIET`, whose boundary this shares. Related: the
-announce-waytide-at-session-start rule and the agent-rules-convention.
+announce-waytide-at-session-start rule and the rules-convention.
 
 ---
 

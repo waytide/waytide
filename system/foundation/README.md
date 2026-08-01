@@ -22,7 +22,7 @@ this package:
 - **`waytide/local/log/`**. The decision log: one file per decision, a one-line title.
 
 Three conventions cut across all of them: the **ISO-8601-UTC filename prefix**
-(`agent-file-names`) that makes every artifact sort chronologically and declare its
+(`file-names`) that makes every artifact sort chronologically and declare its
 timezone; **a time value carries minutes and seconds**
 (`a-time-value-carries-minutes-and-seconds`) wherever a datetime written into a file
 includes a time of day; and **purpose-over-category** (`rules-install-a-mindset`) —

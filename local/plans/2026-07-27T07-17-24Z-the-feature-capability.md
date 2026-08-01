@@ -82,7 +82,7 @@ there is no suite in this repository — so each commit is reviewed rather than 
   the intent, which branch it is on and what it branched from, where it is being worked,
   the line that records its state, and the confirmations — and how it relates to the loop
   record that carries the same feature's design. **Done 2026-07-27** as
-  `agent-features-convention`.
+  `features-convention`.
 - [x] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
   how its working location may change, the four states it can end in, and that its tests
   are verified before integrating with nothing gating the merge. **Done 2026-07-27** as
@@ -102,7 +102,7 @@ there is no suite in this repository — so each commit is reviewed rather than 
 - [x] Task 7: The feature-cycle deferred item is carried out, removed from the queue, and
   logged as done. **Done 2026-07-27.** One deferred item cited it — the
   stranded-reference item (deleted) — carried out 2026-08-01: reconciling what points at a
-  deleted item is now a step in `agent-deferred-convention`, live artifacts are corrected and
+  deleted item is now a step in `deferred-convention`, live artifacts are corrected and
   historical records are left alone, the search happens at deletion rather than as a standing
   check, and a removed rule is dropped from a `Related:` list rather than marked. That item
   named this task twice as evidence of a reference stranded by an earlier deletion; those were
