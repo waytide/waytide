@@ -209,8 +209,35 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
 
   **The hook still carries the whole instruction.** The developer's command names the read,
   but what the agent is to do with it — read `foundation/` first, read each `vocabulary.md`,
-  say only that the read is done, wait for the real request, print no package count — reaches
-  the agent only through `additionalContext`.
+  read the project's own `local/rules/` as well, leave the other working directories out of
+  the read, print the deferred queue when the read is done, wait for the developer's request,
+  print no package count — reaches the agent only through `additionalContext`.
+
+  **The instruction names the project's own `local/rules/`, unconditionally.** It named only
+  the installed packages until 2026-08-01, which made it **narrower than the rule it exists to
+  get followed**: agent-rules-convention requires reading both `waytide/system/` and
+  `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names both. So
+  the two surfaces carrying the read disagreed, and the hook — the path this rule calls
+  primary, the file route being the one it was written to stop depending on — was the one
+  carrying less. A project's own rules are the half no package supplies and no refresh
+  restores.
+
+  It is named **whether or not the directory exists**, and the instruction says its absence is
+  ordinary rather than an error. A conditional instruction would vary its text by project,
+  which is a second thing to keep true; the binding rule and the bootstrap both name it
+  without a condition, and this now matches them.
+
+  **It names `local/rules/` and nothing else beside the packages.** The working directories
+  next to it — `log/`, `deferred/`, `design/`, `plans/`, `work-sessions/`, `experiments/`,
+  `loops/` — are worked with as their own conventions describe and are **not** read as binding
+  rules at session start. The instruction says so outright, because an instruction naming
+  `local/` rather than `local/rules/` would reverse that settled distinction.
+
+  **The instruction also carries the deferred-queue print.** It formerly said the `load
+  waytide` command asks for *read the rules, say only that the read is done, and wait for the
+  real request* — which, once the print-the-deferred-queue-after-the-rule-read rule existed,
+  **forbade what that rule requires**. The instruction now names the print as the last thing
+  the read produces.
 
   **The line says the rules are loaded; the notice's first line still says installed.** They
   are different claims about different things. The first line reports what a pre-session hook
@@ -245,7 +272,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the instruction naming the project's own `local/rules/` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the agent-rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -272,3 +299,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 11:50:41 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 11:48:52 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 11:56:04 AM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:27:36 PM PT

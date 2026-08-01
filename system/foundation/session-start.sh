@@ -228,8 +228,18 @@ notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction 
 # This does not verify that the rules were read. Nothing here can: the hook runs before
 # the session and has no way to observe what the agent then does. It removes the excuse
 # of the instruction being buried in a file the agent may not open, and no more.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. The developer may open with the command load waytide. That command asks for exactly this and nothing more: read the rules, say only that the read is done, and wait for the real request. Do not restate the session-start notice or print a package count; the announce-waytide-at-session-start rule reserves that to the harness.' \
-  "$system" "$system" "$system")
+# The local rules are named unconditionally, whether or not the directory is there. The
+# binding rule (agent-rules-convention) and the AGENTS.md bootstrap both name it without a
+# condition, and an instruction narrower than the rule it exists to get followed is the defect
+# being corrected. A project with no local rules yet is the ordinary case, not an error, and a
+# fixed instruction is one string rather than one per project layout.
+#
+# The path defaults to the consuming-project layout, which is what an install produces; the
+# authoring source is detected the same way the packages and the open-work scan are.
+own_rules=${own:-waytide/local}
+
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/ and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread. Read the local rules this project adds as well, in %s/rules/, which are binding in the same way and which no package supplies; that directory may not exist yet, which is ordinary and not an error. Read only that one directory beside the packages: the working directories next to it — log, deferred, design, plans, work-sessions, experiments, loops — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Once the rules are read, print the deferred queue as a list of rows, one row per item under %s/deferred/, per the print-the-deferred-queue-after-the-rule-read rule, and then wait for the developer to make a request. The developer may open with the command load waytide, which asks for exactly that and nothing more. Do not restate the session-start notice or print a package count; the announce-waytide-at-session-start rule reserves that to the harness.' \
+  "$system" "$system" "$system" "$own_rules" "$own_rules")
 
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
   "$instruction")

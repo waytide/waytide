@@ -1,0 +1,1 @@
+# The read instruction carries the deferred-queue print, replacing wording that told the agent to say only that the read is done — which forbade what the print-the-deferred-queue-after-the-rule-read rule requires
