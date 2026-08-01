@@ -1,0 +1,1 @@
+# The feature-capability design is reconciled — its realized-yet claim and the main-sequence-drift item are marked resolved, and its package-graph argument now rests on the a-citation-is-not-a-dependency criterion it had reached for in looser words

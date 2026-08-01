@@ -96,9 +96,18 @@ every working-state artifact.
 accepted for a structural reason.** The loop record lives in `waytide/local/loops/`, a directory
 the `design-by-efferent` package contributes. `design-by-efferent` includes `foundation`,
 not the reverse — so a foundation rule requiring lifecycle fields in the loop record would
-make foundation depend on a directory it does not own, inverting the package graph. It
-would also make the feature lifecycle unavailable to a project that installs `foundation`
-without `design-by-efferent`.
+make the feature lifecycle **unavailable** to a project that installs `foundation` without
+`design-by-efferent`.
+
+**Reconciled 2026-07-31:** that unavailability is exactly the criterion since settled by the
+`foundation` rule `a-citation-is-not-a-dependency` — a reference to another package becomes a
+**dependency** only where the citing rule will not work without the cited package. This design
+reached for that test in looser words ("would make foundation depend on a directory it does not
+own"), which describes ownership rather than the test. The conclusion is unchanged and is
+better supported than the original wording claimed: requiring the fields would make the rule
+inapplicable without `design-by-efferent`, which is a dependency under the settled criterion,
+and `foundation` may not take one. Naming the loop record in prose, as the feature record does,
+is a **citation** and costs nothing.
 
 The two records divide by concern: the feature record carries the **lifecycle** (where it
 is worked, what state it is in, what was confirmed); the loop record carries the
@@ -133,18 +142,28 @@ the suite on integration. The response is to fix it from there.
 
 ## Out of Scope / Deferred
 
-- **Main-sequence drift has no restatement yet.** The experiment rule asks the agent to
-  watch for main-sequence work starting while an experiment is open. If features branch,
-  "the main sequence" is no longer simply the upstream branch, and the protection needs
-  terms that still mean something — or needs dropping. Unresolved here.
+This section states what was open **when the design was written**. Items resolved since are
+marked, per the reconciliation the agent-work-sessions-convention prompts; the unmarked ones
+are still open.
+
+- **~~Main-sequence drift has no restatement yet.~~ Resolved 2026-07-31.** The design left open
+  whether the experiment rule's watch for main-sequence work needed restating for features or
+  dropping. `feature-runs-on-its-own-branch` **dropped it**, with a reason: during a feature,
+  other work is normally another feature, and starting one is ordinary rather than a problem,
+  so there is nothing to detect. A feature being forgotten is covered instead by the
+  session-start notice.
 - **The experiment rule's merge-gate wording.** It reads "gated on the experiment's tests
   passing," which is loose about whether the branch or the merged result is meant. Now
   that features have settled the same question explicitly, the experiment wording wants
-  sharpening. Not done here.
+  sharpening. **Still open** — the wording is unchanged as of 2026-07-31.
 - **Whether a feature record and a loop record should cross-reference mechanically**, or
-  by prose alone.
-- **The `waytide/local/features/` directory does not exist yet**, and neither do the rules this
-  design would be realized by. A plan sequences that build.
+  by prose alone. **Answered in practice, not by decision:** both conventions say each record
+  *names* the other, which is prose. Never settled explicitly.
+- **~~The `waytide/local/features/` directory does not exist yet~~, and neither do the rules this
+  design would be realized by. A plan sequences that build. Resolved 2026-07-31.** The
+  directory exists and holds a feature record; `agent-features-convention` and
+  `feature-runs-on-its-own-branch` are written and published in `foundation`. The design has
+  been realized.
 
 ---
 
@@ -152,3 +171,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 12:09:02 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:11:34 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
+Changed by Scott Bellware on Fri Jul 31 2026 at 11:47:03 PM PT
