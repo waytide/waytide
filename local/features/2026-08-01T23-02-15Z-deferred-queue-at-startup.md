@@ -14,7 +14,7 @@ This realizes the deferred item *The deferred queue is surfaced at session start
 
 ## Setup
 
-- **State:** In flight
+- **State:** Completed
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/deferred-queue-at-startup`
 - **Base:** `8d3c06e31352fc0232faf9062da2817121be342a`
@@ -46,25 +46,44 @@ deferred convention's format is required.
 - **2026-08-01 — working location.** Branch only, chosen through the selection interface at
   initiation.
 
-## Open questions
+## What was settled
 
-Settled through the hinges as the feature is built:
+Each question was put to the developer and answered; the loop record carries the passes.
 
-- **What is printed** — every item, or a filtered set. Note that 7 of the 8 current items
-  state a gate of *nothing in flight*, so filtering to actionable work would report nearly
-  all of them and reproduce the always-present problem in a different place.
-- **How much of each item** — title alone, or title with its gate.
-- **Whether the count is stated**, and whether an empty queue prints anything.
-- **Where the instruction lives** — the `agent-deferred-convention`, the
-  `announce-waytide-at-session-start` rule, or a rule of its own. The hook's read
-  instruction and the notice are governed by the announce rule, but this is not the hook.
+- **What is printed** — every item. Filtering to actionable work was rejected on the data: 7
+  of the 8 items then in the queue stated a gate of *nothing in flight*, so the filter would
+  have reported nearly all of them.
+- **How much of each item** — the summary, alongside the title and the date.
+- **The count is stated**, and an empty queue prints a line saying so rather than nothing,
+  since silence is indistinguishable from the print having been skipped.
+- **Where the instruction lives** — a new `foundation` rule of its own,
+  `print-the-deferred-queue-after-the-rule-read`.
+- **The rendering** — a list of rows, not a rendered table. Settled after the first output
+  was shown: a table sizes its columns to the widest summary, narrowing the title and date
+  and wrapping every row in a terminal.
+
+## Verification
+
+This repository has no automated suite, so the `run-suite-before-commit` gate has nothing to
+run. The feature is prose — one new rule and cross-references in three files — and was
+verified by rendering the print against the live queue before integrating.
+
+## Conclusion
+
+**Completed 2026-08-01.** Integrated into `master`. The deferred item it realizes — *The
+deferred queue is surfaced at session start* — was carried out and deleted as part of the
+completion, and its deletion is logged.
 
 ## Related records
 
-- The deferred item this realizes: *The deferred queue is surfaced at session start*, which
-  is carried out and deleted when this feature completes.
-- The loop record for this feature's design, under `waytide/local/loops/`.
+- The loop record for this feature's design:
+  `waytide/local/loops/2026-08-01T23-10-02Z-deferred-queue-at-startup.md`.
+- The deferred item this realized: *The deferred queue is surfaced at session start*
+  (deleted) — carried out 2026-08-01 as the `print-the-deferred-queue-after-the-rule-read`
+  rule. Its central objection, that filtering required a machine-readable `**Gated on:**`
+  line, does not arise on this surface: the agent reads the prose.
 
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:02:15 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:14:38 PM PT
