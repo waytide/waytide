@@ -45,6 +45,9 @@ deferred convention's format is required.
 
 - **2026-08-01 — working location.** Branch only, chosen through the selection interface at
   initiation.
+- **2026-08-01 — branch deletion.** Confirmed through the selection interface after the
+  feature was integrated. The local branch was deleted; it was never pushed, so there was no
+  remote branch to delete.
 
 ## What was settled
 
@@ -87,3 +90,4 @@ completion, and its deletion is logged.
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:02:15 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:14:38 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 4:22:05 PM PT
