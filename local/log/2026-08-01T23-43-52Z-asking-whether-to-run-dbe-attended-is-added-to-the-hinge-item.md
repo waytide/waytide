@@ -1,0 +1,1 @@
+# Asking the developer whether they want DBE attended or the agent proceeding unattended is added to the failing-implementation deferred item — it stands in tension with never-ask-to-start-test-first, which must be reconciled or changed
