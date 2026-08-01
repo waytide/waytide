@@ -51,7 +51,14 @@ design-by-efferent contributes `waytide/local/loops/`); foundation owns
 `rules`/`observations`/`deferred`/`log` and the
 `plans`/`design`/`experiments`/`features`/`work-sessions` work-artifact directories.
 
-This package includes no others — everything else includes it.
+Foundation also settles **what a package dependency is**, in the
+`a-citation-is-not-a-dependency` rule: a rule may name another package's rule freely, and that
+citation becomes a dependency only where the citing rule **will not work** without the cited
+package. Motivation is not the test, and a "standalone" claim is about what must be installed
+rather than about what a rule's prose may name.
+
+This package includes no others — everything else includes it. It cites several, which is
+exactly the distinction the rule above draws.
 
 ```
 foundation  →  (nothing — the base every other package builds on)
