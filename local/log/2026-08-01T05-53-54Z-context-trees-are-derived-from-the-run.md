@@ -1,0 +1,1 @@
+# Every context tree is derived from the suite run's output, never from the `context` declarations in the source — test-report-format and status-report-format are conformed to the test-tree rule, whose reasons already stood
