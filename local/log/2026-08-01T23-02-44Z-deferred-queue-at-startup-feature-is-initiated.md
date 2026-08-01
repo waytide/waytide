@@ -1,0 +1,1 @@
+# The deferred-queue-at-startup feature is initiated on its own branch, worked branch-only, printing the queue after the rule read rather than in the session-start notice — which dissolves the machine-readable-gate question the deferred item held as blocking
