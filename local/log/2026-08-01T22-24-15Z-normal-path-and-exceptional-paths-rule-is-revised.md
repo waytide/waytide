@@ -1,0 +1,1 @@
+# The normal-path-and-exceptional-paths rule is revised — the naming paragraph now states that the condition is promoted to a context with the test named Fails, and the remaining bare uses of "exception" are gone
