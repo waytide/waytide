@@ -1,0 +1,1 @@
+# Writing a work-session record now prompts a design reconciliation through the selection UI — update the design, the design stands, or no design bears on this session — with the agent surfacing divergence and the developer deciding which side is stale
