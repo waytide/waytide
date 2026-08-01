@@ -1,0 +1,1 @@
+# A rule is referenced by its name and never by its file path, since a rename changes the filename while the rule stays the same rule, and a removed rule is dropped from a Related list rather than marked

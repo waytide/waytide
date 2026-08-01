@@ -1,0 +1,1 @@
+# A historical record — a session record, an experiment record, a log entry — is neither corrected nor annotated when what it cites is deleted, because an annotation is itself a live pointer that must be maintained

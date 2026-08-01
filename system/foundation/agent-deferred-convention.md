@@ -6,14 +6,18 @@
 - **Format:** the same frontmatter-free markdown as rules and observations — a `# <title>` stating the change, then prose. Include a `**Gated on:**` line naming what must finish before the item is actionable, plus short `**Why:**` and `**How to apply:**` lines. The filename follows the ISO-8601-UTC prefix convention (see the agent-file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 - **Resolution:** when the gating task is done, act on the item, then **delete the file** — the change itself is put into code or rules, and an `waytide/local/log/` entry records that it was carried out. Deferred items are a queue, not a permanent record.
+- **Before deleting, reconcile what points at the item.** Search for the item's name and correct the **live, forward-looking** artifacts that cite it — another deferred item, an observation, a plan, a design — since those are read as current. Write the correction as the name, `(deleted)`, and what the item decided: *the pending-release republish item (deleted) — carried out 2026-07-20: all seven component repositories were republished from the package layout*. Both parts are needed: without the mark the name reads as a live pointer, and without the decision the mark leaves a name that cannot be looked up. Where the item was **discarded** rather than carried out, say so and point at its log entry, which is the only durable trace.
+- **Leave historical records alone.** A session record, an experiment record, or a log entry states what was true when it was written, and its date is on its face. Do not correct one, and do not annotate one either — an annotation is a live pointer added to a dead record, and it has to be maintained like any other. The one broken reference this convention has produced was an annotation of exactly that kind. A reader who follows a dead path in an old record uses git.
+- **The search happens at deletion; there is no standing check.** A `[[link]]` to a nonexistent file is findable mechanically, but most references are prose or file paths and are not. Searching for the name at the moment of deletion is targeted, raises no false matches on prose that merely shows what a link looks like, and is done by the person who knows what the item became.
 - **Recording one:** add the file; a matching `waytide/local/log/` entry is optional for the deferral itself but required when the item is resolved.
 
 **Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately; a parked queue keeps it without derailing the task in flight. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
-**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Gated on:**` line and continue the task. When the gate clears, carry it out, delete the file, and log that it was done. Related: the decision-log rule and the agent-rules rule.
+**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Gated on:**` line and continue the task. When the gate clears, carry it out, search for what cites the item and correct the live artifacts among them, then delete the file and log that it was done. Leave historical records as written. Related: the decision-log rule, the agent-rules rule (which carries the same reconciliation for a removed rule, and the instruction to reference a rule by name rather than by path), and the agent-observations rule (whose promotion keeps the record rather than deleting it, so it strands nothing).
 
 ---
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 6 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 3:48:36 PM PT
