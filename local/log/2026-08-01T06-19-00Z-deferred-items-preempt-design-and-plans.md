@@ -1,0 +1,1 @@
+# Deferred items preempt design and plans, and a resolved item's reasoning is destroyed when the item is deleted — recorded as an observation, not yet a rule, because whether design should carry this work at all is unsettled
