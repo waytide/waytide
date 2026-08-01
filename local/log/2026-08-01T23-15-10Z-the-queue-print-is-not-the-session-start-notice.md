@@ -1,0 +1,1 @@
+# The queue print is not the session-start notice and is not an exception to the prohibition on one — the notice renders every session from a hook that runs before it, while the print is bounded to the moment the read completes
