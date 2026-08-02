@@ -1,0 +1,1 @@
+# A version is semver, optionally prefixed by a product generation number — the three semver segments are read off what a user of the package must do, and the generation is a declaration about the product line that is never increased at a release

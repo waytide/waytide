@@ -23,6 +23,11 @@ Prescriptive Ruby style.
 - The `test-tree` command's durable script lives at `test/automated/tree.rb`, excluded from the default run, parsing the run's output rather than the source.
 - This is where the Ruby and TestBench specifics of running a suite live, so `git` and `testing` can state their conventions without naming a stack.
 
+**Releasing a gem**
+- The version lives in the gemspec's `s.version` and nowhere else; the gem is built with `gem build` and published with `gem push`.
+- Gem names take the `evt-` prefix, joining a multi-word name with an underscore — `evt-env_var` in a directory named `env-var`.
+- What a version *means* and who chooses the next one are the `versioning` package's, stated without knowledge of Ruby.
+
 **Command**: `lib-report` (classify `lib/` by role, construct, method style, API currency, error taxonomy, idioms).
 
 `code/` groups by programming language and is not a package; `code/ruby` is the package. Includes `foundation`, `language`.

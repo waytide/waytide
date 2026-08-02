@@ -115,4 +115,3 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 ## License
 
 Waytide is in early development and is **not yet licensed for use** — all rights reserved. A license, the Eventide Common Interest License, is forthcoming.
-Changed by Scott Bellware on Sat Aug 1 2026 at 11:03:25 PM PT

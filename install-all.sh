@@ -23,6 +23,7 @@ add testing             testing
 add code/ruby           code-ruby
 add git                 git
 add plan                plan
+add versioning          versioning
 add design-by-efferent  design-by-efferent
 
 # Activate the system: place the project-root AGENTS.md. Foundation is

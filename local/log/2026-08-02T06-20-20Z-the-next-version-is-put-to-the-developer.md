@@ -1,0 +1,1 @@
+# The next version is put to the developer as patch, minor, and major through the selection interface, never decided by the agent — the choice is a claim about other people's code and a published version cannot be taken back

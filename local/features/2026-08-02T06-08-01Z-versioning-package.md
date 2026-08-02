@@ -14,7 +14,7 @@ This realizes the deferred item *Package release rules*, which was ranked first 
 
 ## Setup
 
-- **State:** In flight
+- **State:** Completed
 - **Upstream branch:** `master`
 - **Working location:** the current branch, `master`. Chosen at initiation on 2026-08-02
   through the selection interface — the first feature to take that option since the
@@ -66,25 +66,51 @@ Surveyed across ten Eventide gems before writing anything:
 
 - **2026-08-02 — working location.** The current branch, chosen through the selection
   interface at initiation.
+- **2026-08-02 — no branch deletion confirmation was required.** Built on the current branch,
+  so no branch was created and none had to be deleted.
 
-## Open questions
+## What was settled
 
-To be settled as the package is written:
+All four open questions were put to the developer against the drafted text, and all four
+confirmed it.
 
-- **What each of the three semver segments means here**, stated in the project's own terms
-  rather than by pointing at the semver specification.
-- **Whether `versioning` declares any dependency.** Under the citation criterion it likely
-  stands alone, as `git` and `plan` do.
-- **What the release itself requires beyond the version** — whether the package says anything
-  about when a release happens, or only about what the version becomes.
-- **Whether the three-segment form is written for at all**, given no project uses it.
+- **The semver segments are stated by what a user must do** — nothing, nothing but read, or
+  change their code — rather than by pointing at the specification. That gives the usable test:
+  the segment is read off the change's effect on users, not its size. A rewrite that leaves
+  every interface intact is a patch; a single removed method is a major.
+- **`versioning` is standalone.** Its references to `git` and `code/ruby` are citations under
+  the settled criterion — the rules apply with neither installed — so no dependency is
+  declared and it carries no `install-dependencies.sh`, as `git` and `plan` do not.
+- **The package covers only the version**, not when a release happens. That is a project's
+  judgment about readiness rather than a versioning convention.
+- **The three-segment form is kept** though no project uses it, so a project without a product
+  line has a form to follow and the generation does not read as mandatory.
+
+## Verification
+
+This repository has no automated suite, so `run-suite-before-commit` has nothing to run. The
+package is prose. `install-all.sh` was checked to hardcode its package list and gained the new
+entry; `report-direct-commits.sh` was checked and needed none, since it discovers packages by
+finding READMEs.
+
+## Conclusion
+
+**Completed 2026-08-02.** Built on `master`, so there was no merge and no branch to delete.
+The deferred item it realizes — *Package release rules*, rank 1 — was carried out and deleted,
+and the queue renumbered from 6 items.
+
+**One thing remains outside this repository:** the `waytide/versioning` component repository
+does not exist, so the package is written but not published. Creating it is the developer's.
 
 ## Related records
 
-- The deferred item this realizes: *Package release rules*, rank 1, carried out and deleted
-  when this feature completes.
-- The loop record for this feature's design, under `waytide/local/loops/`.
+- The deferred item this realized: *Package release rules* (deleted) — carried out 2026-08-02
+  as the `versioning` package, with the Ruby mechanics in `code/ruby`'s releasing-a-gem rule
+  and the commit form left where it already was in `git`.
+- The loop record for this feature's design:
+  `waytide/local/loops/2026-08-02T06-08-01Z-versioning-package.md`.
 
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:08:01 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT

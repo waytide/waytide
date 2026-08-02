@@ -40,7 +40,7 @@ There is no `.claude/agents/` directory in this repository, so any use today wou
 hoc. Whether Waytide should *ship* agent definitions — a package carrying its own subagent
 for its own checks — is downstream of the examination and not proposed here.
 
-**Priority:** 7
+**Priority:** 6
 
 **Gated on:** nothing in flight. Actionable whenever it is taken up.
 
@@ -62,3 +62,4 @@ file and logging that it was carried out.
 Authored by Scott Bellware on Mon Jul 27 2026 at 9:44:55 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 10:15:12 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
