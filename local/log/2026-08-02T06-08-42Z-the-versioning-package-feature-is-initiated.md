@@ -1,0 +1,1 @@
+# The versioning package feature is initiated on the current branch — the release rules split three ways, with versioning holding the scheme and the prompt, git keeping the commit form, and code/ruby taking the gemspec and gem mechanics
