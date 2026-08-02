@@ -15,17 +15,17 @@ what accounts for every place this rule departs from the experiment's.
   captured in the record — the base commit SHA and the ref it came from — never pinned with
   a tag. The upstream branch it merges back into is **not always `master`**; it may be
   another topic branch, and the record names it so the merge target is never ambiguous.
-- **The working location is chosen at initiation — the current branch, branch only, or
-  branch and worktree.** Each option states what it creates, rather than leaving it to be
+- **The working location is chosen at initiation — branch only, branch and worktree, or the
+  current branch.** Each option states what it creates, rather than leaving it to be
   inferred.
-  **The current branch** — build the feature where the working tree already is, creating
-  nothing. There is no branch to switch back to at the conclusion and nothing to merge.
   **Branch only** — create the branch
   `feature/<subject>` and switch this working tree to it, switching back at the conclusion
   (`git switch -c feature/<subject>`). **Branch and worktree** — create the branch and
   check it out in a new worktree, a second working directory, while this working tree
-  stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). The latter
-  two create the branch, since it does not exist yet at initiation. **Branch only says nothing
+  stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). **The current
+  branch** — build the feature where the working tree already is, creating nothing; there is
+  no branch to switch back to at the conclusion and nothing to merge. The first two create the
+  branch, since it does not exist yet at initiation. **Branch only says nothing
   about the working tree** — what distinguishes it from the worktree option is whether a
   working directory is added, so branch only is presented as the branch it creates and the
   return at the conclusion, not as a movement of the working tree, which is immaterial to it.
@@ -35,6 +35,11 @@ what accounts for every place this rule departs from the experiment's.
   put to the user at **every** initiation, through the **AskUserQuestion** selection UI,
   with no standing default. The choice, and for a worktree its
   **path**, go in the record; the conclusion executes the mechanics that match it.
+  **The current branch is offered last, after the two branching options.** A selection's first
+  option reads as the recommended one whatever the rule says about defaults, and the current
+  branch is the option that gives up isolation — so putting it first would recommend by
+  position what the rule declines to recommend in words. Last is where it belongs: available
+  without being urged.
 - **The current-branch option is a feature's alone; an experiment never has it.** An
   experiment is a **controlled deviation from the main line** — it may be refuted or
   abandoned, and until it is affirmed its changes must not reach the branch it deviates from.
@@ -127,8 +132,8 @@ states, merge gate, and affirmation all exist to answer a **question**, and a fe
 not ask one. Copying them across would install ceremony where the justification does not
 reach — the failure the design method exists to retire.
 
-**How to apply:** put the working location to the user at every initiation — the current
-branch, branch only, or branch and worktree — and record the choice. Where a branch is taken,
+**How to apply:** put the working location to the user at every initiation — branch only,
+branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
 name it `feature/<subject>` and record the upstream branch, the feature branch, and the base;
 on the current branch, record that and the branch it is being built on. Place a worktree as a
 sibling of the repository directory named
@@ -155,3 +160,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:34:01 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:03:25 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 11:12:40 PM PT

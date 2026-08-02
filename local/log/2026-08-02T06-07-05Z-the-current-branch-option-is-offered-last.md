@@ -1,0 +1,1 @@
+# The current-branch working location is offered last at feature initiation, after branch only and branch and worktree — a selection's first option reads as recommended whatever the rule says about defaults, and the current branch is the option that gives up isolation
