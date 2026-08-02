@@ -10,7 +10,7 @@ persisted, dated artifact, kept after the feature concludes.
 - **Record format:** open with the **Intent** — what is being built and why — then the
   setup: a **`**State:**` line**, the **upstream branch** it will merge into (`master` or
   another topic branch), the **feature branch**, its **base**, and the **working location**
-  chosen at initiation (branch only, or branch and worktree with the worktree's path). As the work
+  chosen at initiation (the current branch, branch only, or branch and worktree with the worktree's path). As the work
   proceeds, record the **confirmations** the lifecycle required and any change of working
   location.
 - **The state sits on a canonical `**State:**` line**, in the setup block, carrying one of
@@ -26,6 +26,11 @@ persisted, dated artifact, kept after the feature concludes.
   counterpart. **Suspended** — paused, not ended. They are derived from what becomes of a
   feature, not borrowed from the experiment's verdict vocabulary: a feature is not proven
   or disproven, so *affirmed*, *refuted*, and *inconclusive* have nothing to say about it.
+- **A feature may be built on the current branch**, which an experiment may not — a feature
+  *is* the main line, so a branch protects it against nothing already ordinary, where an
+  experiment is a deviation that must stay reversible. Where the current branch is chosen the
+  record names the branch being built on, and there is no base, no feature branch, and no
+  merge to record. See the feature-lifecycle rule.
 - **The working location is a short history, not a single fact.** It is written at
   initiation and changes only by a worktree being added for a feature already under way —
   either because other work arrived that the user intends to work alongside it, or because
@@ -57,7 +62,7 @@ is the more expensive of the two to get wrong.
 state, its branch topology, and the working location chosen at initiation; update the
 state line as the state changes; record each confirmation the lifecycle requires; and name
 the feature's loop record. Keep the record after the feature concludes. Related: the
-feature-runs-on-its-own-branch rule (the lifecycle), the experiments-convention (the
+feature-lifecycle rule (the lifecycle), the experiments-convention (the
 capability this mirrors, and where it deliberately differs), the design-by-efferent
 loop-records rule (the design record for the same feature), and the decision-log rule.
 
@@ -67,3 +72,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 12:31:14 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 11:03:25 PM PT

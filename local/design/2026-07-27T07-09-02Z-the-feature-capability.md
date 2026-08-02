@@ -34,7 +34,7 @@ experiment's. What this design settles is which parts mirror and which do not.
   no verdict is reached.
 - **working location** — where the branch is worked: the single working tree, or a
   worktree. The term and its mechanics are foundation's, defined in the
-  experiment-runs-on-its-own-branch rule and used here unchanged.
+  experiment-lifecycle rule and used here unchanged.
 - **completed**, **abandoned**, **superseded**, **suspended** — the feature states, below.
 
 ## What mirrors the experiment capability
@@ -148,7 +148,7 @@ are still open.
 
 - **~~Main-sequence drift has no restatement yet.~~ Resolved 2026-07-31.** The design left open
   whether the experiment rule's watch for main-sequence work needed restating for features or
-  dropping. `feature-runs-on-its-own-branch` **dropped it**, with a reason: during a feature,
+  dropping. `feature-lifecycle` **dropped it**, with a reason: during a feature,
   other work is normally another feature, and starting one is ordinary rather than a problem,
   so there is nothing to detect. A feature being forgotten is covered instead by the
   session-start notice.
@@ -162,7 +162,7 @@ are still open.
 - **~~The `waytide/local/features/` directory does not exist yet~~, and neither do the rules this
   design would be realized by. A plan sequences that build. Resolved 2026-07-31.** The
   directory exists and holds a feature record; `features-convention` and
-  `feature-runs-on-its-own-branch` are written and published in `foundation`. The design has
+  `feature-lifecycle` are written and published in `foundation`. The design has
   been realized.
 
 ---

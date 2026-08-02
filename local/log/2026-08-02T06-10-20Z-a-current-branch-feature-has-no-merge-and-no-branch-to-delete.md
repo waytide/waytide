@@ -1,0 +1,1 @@
+# A feature built on the current branch has no merge, no branch to delete, and nowhere to return to — completion is the intent being built rather than integrated, and abandonment is a revert rather than an unmerged branch

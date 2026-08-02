@@ -41,7 +41,7 @@ something very near it.
   distinction holds, and whether it is stated in that rule's own words or the rule is changed,
   has to be settled.
 - **The precedent, which runs the other way.** Suspending DBE is already possible and already
-  **user-initiated**: the experiment-runs-on-its-own-branch rule says *"A user may instruct the
+  **user-initiated**: the experiment-lifecycle rule says *"A user may instruct the
   agent to suspend DBE for the experiment — which requires specific user confirmation."* The
   capability exists and the developer opens it. This proposal moves the initiative to the agent.
 - **Granularity, which the batch framing makes decisive.** Rework cost is the term the decision
@@ -73,7 +73,7 @@ rules. Delete this file when it is carried out, and log that it was done. Relate
 never-ask-to-start-test-first rule (which forbids the nearest thing to this prompt), the
 human-in-the-loop rule (where the developer's attention is placed and why), the hinge-cycle
 rule (the five gates whose cost this is about), the dbe-as-design-tool rule (ceremony as the
-failure mode), the experiment-runs-on-its-own-branch rule (where suspending DBE already exists
+failure mode), the experiment-lifecycle rule (where suspending DBE already exists
 and is user-initiated), and the deferred item *Consider offering a failing implementation as a
 candidate at the implementation hinge*, which this was separated from — both are about what the
 method's gating costs, that one from inside a single hinge and this one from before the cycle

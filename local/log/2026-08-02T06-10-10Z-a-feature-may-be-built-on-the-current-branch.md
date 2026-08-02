@@ -1,0 +1,1 @@
+# A feature's working location may be the current branch, a third option beside branch only and branch and worktree — an experiment never has it, because an experiment is a deviation that must stay reversible while a feature is the main line

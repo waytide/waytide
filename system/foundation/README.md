@@ -39,8 +39,8 @@ first), `waytide/local/experiments/` (recorded experiments that test a question)
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (branch only, or branch and worktree), declared
-end states, and recorded confirmations — in the `experiment-runs-on-its-own-branch` and
-`feature-runs-on-its-own-branch` rules. They differ where an experiment's question does
+end states, and recorded confirmations — in the `experiment-lifecycle` and
+`feature-lifecycle` rules. They differ where an experiment's question does
 not carry over to a feature's intent: an experiment forecasts, reaches a verdict
 (affirmed/refuted/inconclusive/abandoned/superseded), and merges through a test gate on
 user-declared affirmation; a feature does none of those, ends
@@ -115,3 +115,4 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 ## License
 
 Waytide is in early development and is **not yet licensed for use** — all rights reserved. A license, the Eventide Common Interest License, is forthcoming.
+Changed by Scott Bellware on Sat Aug 1 2026 at 11:03:25 PM PT

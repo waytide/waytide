@@ -64,8 +64,8 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
   "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state — experiments and features
-# alike. Neither is ever left silently open (the experiment-runs-on-its-own-branch
-# and feature-runs-on-its-own-branch rules), but nothing otherwise brings an open
+# alike. Neither is ever left silently open (the experiment-lifecycle
+# and feature-lifecycle rules), but nothing otherwise brings an open
 # one to attention: the working directories under waytide/ are not read at session
 # start, and work done in a worktree leaves no trace in the main working tree at
 # all — it stays on the upstream branch, so even the branch name gives nothing away.

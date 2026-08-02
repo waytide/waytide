@@ -86,7 +86,7 @@ there is no suite in this repository — so each commit is reviewed rather than 
 - [x] Task 3: The feature lifecycle rule states how a feature begins, where it is worked,
   how its working location may change, the four states it can end in, and that its tests
   are verified before integrating with nothing gating the merge. **Done 2026-07-27** as
-  `feature-runs-on-its-own-branch`, carrying Task 1's answer as an explicit statement that
+  `feature-lifecycle`, carrying Task 1's answer as an explicit statement that
   there is no instruction to watch for other work, and why.
 - [x] Task 4: The session-start notice reports features that have not concluded, alongside
   the experiments it already reports. **Done 2026-07-27.** The per-directory scan became a

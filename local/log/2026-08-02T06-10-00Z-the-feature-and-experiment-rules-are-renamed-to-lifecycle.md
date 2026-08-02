@@ -1,0 +1,1 @@
+# The feature and experiment branch rules are renamed feature-lifecycle and experiment-lifecycle — each named for one clause of a rule that settles the whole lifecycle, and the feature's opening clause is no longer true of every feature
