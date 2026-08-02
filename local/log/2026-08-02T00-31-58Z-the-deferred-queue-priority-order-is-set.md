@@ -1,0 +1,1 @@
+# The deferred queue's priority order is set: attended-or-unattended, then the failing implementation at the implementation hinge, package release rules, declining the rule read, the license, and the example project — with the Claude subagents item left out of the ordering
