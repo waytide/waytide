@@ -1,0 +1,1 @@
+# An unattended loop record declares its mode once at the top and records each cycle as its hinge and the decision's reasoning, with no options and no decision line, since writing them would be a false record of a deliberation that never happened

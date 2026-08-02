@@ -1,0 +1,1 @@
+# The never-ask-to-start-test-first rule states what it does not cover — test-first is the method's substance and is never asked, where the gating cadence is a situational trade and so a real decision

@@ -42,7 +42,7 @@ What has to be settled:
   rule makes the implementation hinge **degenerate** when covering existing behavior.
   Any change here must leave both untouched.
 
-**Priority:** 2
+**Priority:** 1
 
 **Gated on:** nothing in flight blocks it; it is a methodology question about the hinge
 cycle, not a task. The question is settled before the hinge-cycle rule or the
@@ -65,9 +65,13 @@ first-implementation-may-run-a-contained-red-green-loop rule, the dbe-as-design-
 the no-green-on-arrival-tests rule (the no-op implementation hinge), the
 tdd-designs-coverage-protects and hinges-gate-the-design-of-a-test rules (the coverage
 case, where the implementation hinge is degenerate), and the deferred item *Ask whether the
-process is attended or unattended before running the DBE cycle*, separated from this one on
-2026-08-01 — both are about what the method's gating costs, this one from inside a single hinge
-and that one from before the cycle begins.
+process is attended or unattended before running the DBE cycle* (deleted) — carried out
+2026-08-02 as the design-by-efferent attended-or-unattended-is-chosen-at-initiation rule: the
+gating cadence is chosen at initiation beside the working location, DBE is in effect either
+way, and an unattended cycle is recorded without options or a decision line. That item and this
+one are both about what the method's gating costs, that one from before the loop begins and
+this one from inside a single hinge — so its answer bears on this one: a hinge's cost is only
+paid in the attended mode.
 
 ---
 
@@ -79,3 +83,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:51:32 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 6:07:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT

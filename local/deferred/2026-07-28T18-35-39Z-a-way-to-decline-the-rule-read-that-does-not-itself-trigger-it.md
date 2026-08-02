@@ -21,7 +21,7 @@ not switch off the system's governance (see the announce-waytide-at-session-star
 a decline needs its own name and its own gate, and settling what it is called and what it
 switches off is most of the work.
 
-**Priority:** 3
+**Priority:** 2
 
 **Gated on:** nothing in flight; take it up when the session-start mechanism is next worked.
 
@@ -45,3 +45,4 @@ announce-waytide-at-session-start rule and the rules-convention.
 Authored by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
