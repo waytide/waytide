@@ -1,0 +1,1 @@
+# Each component repository's GitHub description separates the package name from its subject with a period rather than an em dash, and the word after it is capitalized, so a description reads as three sentences — the package, its subject, and the attribution

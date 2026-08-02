@@ -1,0 +1,1 @@
+# The foundation component repository's description is corrected — it named the retired agent/ directory and called the system a framework, both superseded on 2026-07-27 by waytide/system/, waytide/local/, and the term system
