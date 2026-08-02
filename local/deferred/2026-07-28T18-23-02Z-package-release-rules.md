@@ -16,6 +16,8 @@ settle it, covering three points already stated:
   1.1.1 to 1.2.0` — the current version and the next one both named, so the log line carries
   the transition without a reader reaching for the package specification.
 
+**Priority:** 3
+
 **Gated on:** nothing in flight; taken up when the current session-start work is finished.
 Which package the rules live in is the first thing to settle — the version scheme and the
 release are not a `git` concern and not a `foundation` one, so this may want a package of its
@@ -38,3 +40,4 @@ publish runbook a release sits alongside).
 ---
 
 Authored by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT

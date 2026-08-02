@@ -1,0 +1,1 @@
+# A deferred item carries a **Priority:** rank, 1 through N and contiguous, and the startup print orders the queue by it — renumbering on insertion is the accepted cost of each item stating its own position

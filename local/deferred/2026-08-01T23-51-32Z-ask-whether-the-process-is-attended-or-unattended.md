@@ -50,6 +50,8 @@ something very near it.
   makes it a **criterion** rather than a standing prompt, and settling the criterion is settling
   the granularity.
 
+**Priority:** 1
+
 **Gated on:** nothing in flight. It is a methodology question about how the loop is entered,
 not a task.
 
@@ -80,3 +82,4 @@ begins.
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:51:32 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT

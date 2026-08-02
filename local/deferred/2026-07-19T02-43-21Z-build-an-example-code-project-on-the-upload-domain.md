@@ -18,6 +18,8 @@ So a real project already carries the `Upload` domain; today it lives there as *
 - Home — its own repo (which org — `eventide-examples` alongside `dependencies-and-substitutes`, or elsewhere)?
 - Whether the scattered in-rule `Upload` snippets should then point at the example project as the canonical source of the domain.
 
+**Priority:** 6
+
 **Gated on:** not blocking any in-flight work; deferred as a future initiative. Independent of the parked `constant` work.
 
 **Why:** the norms are currently taught rule-by-rule; a single coherent example project would show how they compose, and would give the packages a real consumer that surfaces integration gaps the isolated pull-proofs can't.
@@ -30,3 +32,4 @@ So a real project already carries the `Upload` domain; today it lives there as *
 
 Authored by Scott Bellware on Sat Jul 18 2026 at 7 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT

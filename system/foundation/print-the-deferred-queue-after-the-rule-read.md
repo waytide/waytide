@@ -8,12 +8,14 @@ request. It is the last thing the read produces.
 table:
 
 ```
-8 deferred items
+7 deferred items
 
-- The deferred queue is surfaced at session start — 2026-07-28 — The notice reports open
-  experiments and features and says nothing about this queue.
+- Ask whether the process is attended or unattended — 2026-08-01 — A batch-size trade:
+  small-batch interruptions against big-batch rework cost.
 - Package release rules — 2026-07-28 — Nothing settles how a release is made: the version
   schemes, the prompt, the commit message.
+- Examine how Claude subagents support work with Waytide — 2026-07-28 — unranked — Whether a
+  subagent is governed by the rules at all is the first question.
 ```
 
 Each row carries three fields, in this order:
@@ -21,6 +23,19 @@ Each row carries three fields, in this order:
 - **Title**, as the item's `# <title>` line states it.
 - **Date**, from the ISO-8601-UTC filename prefix.
 - **Summary** — one line saying what the item is about, read from the item.
+
+**The rows are ordered by priority**, rank 1 first, from each item's `**Priority:**` line (see
+the deferred-convention). The rank itself is not a fourth field — the order carries it, and
+printing the number beside a row already in that position states it twice.
+
+**Items with no rank sort last**, among themselves by filename prefix, oldest first, and are
+**marked unranked**. The marking distinguishes an item awaiting a rank from one buried at the
+bottom of the order.
+
+**Where no item carries a rank, print in filename-prefix order and mark nothing.** This is the
+state of every existing queue the moment a project refreshes the package, and of any project
+that never ranks its items. Marking every row unranked says nothing and reads as a defect
+rather than as a queue that has not been ranked. The marking is for the mixed case only.
 
 **A row, not a table cell.** A rendered table fixes column widths against its widest cell, so
 one long summary narrows the other two fields and wraps every row; the queue is read in a
@@ -63,7 +78,9 @@ place, and the failure of a permanent line is that it stops being read.
 
 **How to apply:** after reading the rule files at the start of a session, read
 `waytide/local/deferred/` and print one row per item — title, date from the filename
-prefix, and a one-line summary — with the count stated. Where the queue is empty, print a
+prefix, and a one-line summary — ordered by the items' `**Priority:**` ranks with unranked
+items last, and with the count stated. Where no item is ranked, order by filename prefix and
+mark nothing. Where the queue is empty, print a
 line saying so. Then wait for the developer's request. Do not print a Waytide installation
 notice, which remains the harness's and is prohibited to the agent. Related: the
 deferred-convention (the queue's format and its resolution step), the
@@ -76,3 +93,4 @@ rule (the notice this is not).
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:16:40 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT

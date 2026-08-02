@@ -1,0 +1,1 @@
+# A queue in which no item is ranked prints in filename-prefix order with no unranked marking — the state of every existing queue on a package refresh, where marking every row would say nothing and read as a defect
