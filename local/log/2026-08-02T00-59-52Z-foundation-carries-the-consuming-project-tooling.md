@@ -1,0 +1,1 @@
+# Foundation carries the tooling a consuming project runs because subtree can only deliver files inside a package directory and foundation is the only package always installed — the reason covers all four of its scripts, not just the installer, and authoring tools stay unpackaged at the composite root

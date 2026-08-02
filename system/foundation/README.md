@@ -68,7 +68,14 @@ foundation  →  (nothing — the base every other package builds on)
 
 ## Installing into a project
 
-Foundation carries an **`install.sh`** — the only package that does, because it also has to switch the system on. Run it from your project root:
+**Foundation carries the tooling a consuming project runs**, and it is the only package that does. Two facts settle that, and they decide all four of its scripts rather than only the installer:
+
+- **`git subtree` can only place files inside a package directory.** So a tool a consuming project runs has to live in some package; there is nowhere else for it to be delivered.
+- **It has to be a package that is always there.** Foundation is the only one — every other package includes it, so a project running Waytide at all has foundation.
+
+So `install.sh`, `refresh-packages.sh`, `session-start.sh`, and `statusline.sh` are here. The **authoring** tools are not: `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository, because only the composite publishes and a consuming project never runs them.
+
+Foundation carries an **`install.sh`**, which also has to switch the system on. Run it from your project root:
 
 ```
 sh install.sh
