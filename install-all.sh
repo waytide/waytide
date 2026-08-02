@@ -29,4 +29,4 @@ add design-by-efferent  design-by-efferent
 # Activate the system: place the project-root AGENTS.md. Foundation is
 # installed above, so run its AGENTS.md-only mode (it won't re-add itself).
 # The bootstrap logic lives only in waytide/system/foundation/install.sh — not duplicated here.
-sh waytide/system/foundation/install.sh agents-md
+waytide/system/foundation/install.sh agents-md

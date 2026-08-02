@@ -36,7 +36,7 @@ work is added.
 
 ## Publishing a package
 
-**Before publishing, check for direct commits.** Run `sh report-direct-commits.sh` from
+**Before publishing, check for direct commits.** Run `./report-direct-commits.sh` from
 the repository root. It reads each component repo's `master` and reports any commit whose
 message this repository's history does not contain — that is, a commit made directly to the
 component repo rather than produced by a split. It fetches and pushes nothing, and exits
@@ -74,7 +74,7 @@ the flat repo name `waytide/code-ruby`.
 diverged, which the downstream-only rule forbids but does not prevent. Do not discard what
 is there. The remedy, in order:
 
-1. **Find what diverged** — `sh report-direct-commits.sh`, or read the component's head
+1. **Find what diverged** — `./report-direct-commits.sh`, or read the component's head
    directly.
 2. **Adopt the change into the composite**, where it belongs, and reconcile it with any
    rule it conflicts with. This is a real authoring step, not a mechanical copy: the

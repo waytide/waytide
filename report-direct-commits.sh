@@ -10,7 +10,7 @@
 #
 # Run from the repository root, before publishing:
 #
-#   sh report-direct-commits.sh
+#   ./report-direct-commits.sh
 #
 # It only reads: it fetches from each component repo and pushes nothing.
 

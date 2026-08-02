@@ -91,7 +91,7 @@ Or do it all at once with [`install-all.sh`](install-all.sh), which installs and
 
 ```
 curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
-sh install-all.sh
+./install-all.sh
 ```
 
 ## Project-local rules
