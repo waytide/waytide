@@ -42,7 +42,7 @@ What has to be settled:
   rule makes the implementation hinge **degenerate** when covering existing behavior.
   Any change here must leave both untouched.
 
-**Priority:** 2
+**Priority:** 3
 
 **Gated on:** nothing in flight blocks it; it is a methodology question about the hinge
 cycle, not a task. The question is settled before the hinge-cycle rule or the
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:40:18 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:44:27 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:51:32 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 6:07:44 PM PT

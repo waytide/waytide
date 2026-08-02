@@ -16,12 +16,17 @@ settle it, covering three points already stated:
   1.1.1 to 1.2.0` — the current version and the next one both named, so the log line carries
   the transition without a reader reaching for the package specification.
 
-**Priority:** 3
+**Priority:** 1
 
-**Gated on:** nothing in flight; taken up when the current session-start work is finished.
-Which package the rules live in is the first thing to settle — the version scheme and the
-release are not a `git` concern and not a `foundation` one, so this may want a package of its
-own.
+**Gated on:** nothing. The session-start work it was formerly waiting on is finished. Which
+package the rules live in is the first thing to settle — the version scheme and the release
+are not a `git` concern and not a `foundation` one, so this may want a package of its own.
+
+**Why it is first, as of 2026-08-01:** it is blocking real work outside this repository.
+**`constant` cannot be released until the release is settled, and `env-var` cannot install
+`constant` until it is released.** Two projects are waiting on a convention that does not
+exist yet, which is a different order of urgency from the methodology questions this item
+was ranked among. Nothing else in the queue has downstream work stopped behind it.
 
 **Why:** a release is a recurring act with a known shape and an irreversible result, and
 right now nothing fixes that shape — the segment to increase is judged ad hoc, the four-segment
@@ -41,3 +46,4 @@ publish runbook a release sits alongside).
 
 Authored by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 6:07:44 PM PT
