@@ -227,4 +227,130 @@ conventions settled this session require citing rules **by name**.
 
 ---
 
+# Continued — the read instruction, the prefix, and the queue's priority (Sat Aug 1 2026 17:52)
+
+Appended after the record above was written. The work continued through three more deferred
+items and a convention change, and the shape held: **each thing settled turned out to have
+been already answered, contradicted, or undercut somewhere in the system, and finding that was
+the work.**
+
+## 11. The reconciliation prompt, answered
+
+The prompt the convention now requires fired immediately after the record above was written.
+Answer: **no design bears on this session.** The one design on file covers the feature
+capability; the work was the session-record and deferred conventions, the rules convention,
+the notice rule, and the startup-print rule.
+
+Worth noting as a gap in the rule rather than an omission here: **a reconciliation that finds
+nothing leaves no trace that it ran.** The rule requires the prompt and says nothing about
+recording the answer.
+
+## 12. The read instruction names the project's own rules
+
+Taken up as the next deferred item. The item's own question — whether `local/rules/` is named
+unconditionally or only when it exists — was settled **unconditionally**, matching
+rules-convention and the `AGENTS.md` bootstrap, which both name it without a condition. A
+conditional instruction would vary its text by project, which is a second thing to keep true.
+
+**Two things beyond the item's scope turned up in the same string.**
+
+- **The instruction contradicted a rule published an hour earlier.** It told the agent that
+  `load waytide` asks for *read the rules, say only that the read is done, and wait for the
+  real request* — which **forbids** the deferred-queue print that
+  print-the-deferred-queue-after-the-rule-read requires. The instruction now names the print as
+  what follows the read.
+- **The working directories are now named as excluded.** The item flagged the risk that naming
+  `local/` rather than `local/rules/` would reverse a settled distinction. The instruction now
+  says outright that `log`, `deferred`, `design`, `plans`, `work-sessions`, `experiments`, and
+  `loops` are not read as binding rules.
+
+Verified by running the hook and parsing its output, since the instruction is interpolated into
+a JSON string built by `printf` with no escaping — a stray quote or apostrophe would make the
+whole output unparseable and the notice would vanish silently.
+
+## 13. The `agent-` prefix is removed
+
+The item asked whether the prefix earns its keep, naming two possible justifications. Both
+failed on inspection:
+
+- **No collisions.** All nine unprefixed names are free.
+- **The grouping argument was already dead.** `decision-log-convention` is the
+  artifact-directory convention for `local/log/` and has **never** carried the prefix. The nine
+  were not grouping the family — the tenth member was already outside it. Removing the prefix
+  makes the set consistent rather than scattering it.
+
+Nine rules renamed. 78 file-citations corrected in live artifacts; historical records keep the
+old names, per the convention settled earlier in this session. Short forms needed hand-fixing —
+"the agent-rules rule" would have become "the rules rule".
+
+**`plan` changed too**, which the pre-publish check caught rather than a person: its two format
+rules cite the foundation conventions by name. `foundation` and `plan` published together.
+
+## 14. The attended-or-unattended question
+
+Raised as an amendment to the failing-implementation item, then **framed as a batch-size
+trade**: attended is human-in-the-loop with **small-batch interruptions**; unattended is
+**big-batch**, carrying commensurately **higher rework and its attendant cost**.
+
+That framing settled two things the amendment could not settle on its own:
+
+- **Unattended is not DBE off.** It is the same generation in one large batch with the gates
+  removed. The cradle, the efferent-first actuation, and the solubility standard are unaffected
+  by batch size; what changes is how much is produced before a person looks.
+- **The answer is situational, which is what separates this from never-ask-to-start-test-first.**
+  That rule forbids asking about test-first *because the answer is always yes*. A batch trade
+  has two real sides, so this is a decision rather than a confirmed default, and the rule's
+  reasoning does not reach it.
+
+Then **separated into its own deferred item**, since the failing-implementation item is about
+what a single hinge offers and this is about whether the cycle is gated at all. Both concern
+what the method's gating costs, from opposite ends; each names the other.
+
+## 15. The queue gains a priority
+
+A priority order was given for all seven items, and then made durable rather than left in the
+log — where it would not have survived to the next session's print.
+
+Settled through the selection interface: **rank is `**Priority:** N`, contiguous 1 through N**,
+with renumbering on insertion accepted as the cost of each item stating its own position; and
+**an unranked item sorts last and is marked**, since registering an item mid-task is exactly
+when a ranking decision is being deferred.
+
+**The consuming-project case came from a question asked mid-work** — what happens to an
+existing queue with no priority data — and it was not covered by either answer. It produced a
+third rule: **where no item carries a rank, the queue prints in filename order and is marked
+not at all.** That is the state of every existing queue the moment a project refreshes the
+package. Marking every row unranked says nothing and reads as a defect rather than as a queue
+nobody has ranked.
+
+Two further distinctions went in: **rank is not the gate** — `**Gated on:**` says when an item
+is *actionable*, priority says what to work *next* among those that are — and **the print
+carries the order, not the number**, since printing a rank beside a row already in that
+position states it twice.
+
+## Takeaways from the continuation
+
+- **Publishing a rule does not make the system consistent with it.** The read instruction
+  contradicted a rule published an hour earlier, in a file nobody had reason to reopen.
+- **A justification can die without anyone noticing.** The `agent-` prefix's grouping argument
+  had been dead since `decision-log-convention` was written without it.
+- **The mechanical check found what a person would not.** `plan` needed republishing because its
+  format rules cite foundation conventions by name; nothing in the work suggested looking there.
+- **A question about the general case produced the rule the specific case missed.** Neither
+  settled answer covered a queue with nothing ranked, which is every consuming project on the
+  day it refreshes.
+
+## Glossary — continuation
+
+- **attended / unattended** — whether the DBE cycle runs human-in-the-loop with small-batch
+  interruptions, or in one large batch with the gates removed. A batch-size trade: attention
+  spent continuously against rework paid at the end. Unattended suspends the gates, not the
+  method.
+- **rank** — a deferred item's position in the queue, `**Priority:** N`, contiguous from 1.
+  Distinct from its **gate**, which says when it becomes actionable rather than what to work
+  next.
+
+---
+
 Authored by Scott Bellware on Sat Aug 1 2026 at 4:22:31 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:52:08 PM PT
