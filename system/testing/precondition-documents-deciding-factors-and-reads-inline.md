@@ -86,6 +86,11 @@ restate the predicate — `connected = session.connected?` in front of `refute(c
 a line and no information. **A precondition carries no name because its expression is the
 name.**
 
+**A block is an expression.** Where the deciding factor is that an actuation completes,
+`assert_raises` and `refute_raises` take a block, and that block is the precondition's
+expression. The discipline is unchanged: nothing is bound, nothing is named, and the
+actuation is written in place rather than behind a variable.
+
 **It sits immediately before what it qualifies.** Before the **actuation** when it documents a
 factor in the controls or in a prior state; before the **test** when it documents a factor in
 a value derived from the result. Both are the same construct in the same relation — the
@@ -104,9 +109,30 @@ end
 ```
 
 **It is not coverage, and it protects nothing.** A precondition asserts over the controls, a
-prior state, or a derivation — never over the library's own decisions — so it is outside what
-the do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing
-about the unit is established by one passing.
+prior state, a derivation, or **the actuation's completion where the controls are what decide
+it** — never over the unit's behavior as an outcome — so it is outside what the
+do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
+the unit is established by one passing.
+
+**The line is what the assertion is for, not what it is written over.** `refute_raises`
+around an actuation is a **precondition** when the controls are arranged so the actuation
+would ordinarily fail, something in that arrangement averts it, and the script does not show
+as much. It is a **test** when whether the unit raises is the thing being established. The
+same expression serves both roles, and only its purpose separates them.
+
+```ruby
+control_destination = Controls::Constant.example(
+  name: "Destination",
+  inner_constants: [control_excluded_constant_name]
+)
+
+refute_raises do
+  Constant::Import.(control_source, control_destination, except: control_excluded_constant_name)
+end
+```
+
+The destination owns the excluded name, so without `except:` the import is refused. Nothing
+else in the script says so, and every outcome below depends on it.
 
 **Why:** a test script is read to learn what its outcome depends on, and the controls
 convention deliberately puts the construction of example values behind a name, so the factors
@@ -123,11 +149,14 @@ test stands on is the ground it appears to.
 **How to apply:** when writing or reading a test, ask what determines its outcome and whether
 the script shows it — looking first at the controls, whose values are named rather than
 described. Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
-it, with its predicate read inline and no explaining variable, placed immediately before what
-it qualifies: the actuation for a factor in the controls or a prior state, the test for a
-factor in a derived value. Do not wrap it in a `test` block, do not name it, do not bind its
-operand, and do not write it as a `comment` instead — an unchecked statement of a deciding
-factor is the thing this replaces. Related: the controls-not-factories-fixtures-arrange rule
+it — or a bare `assert_raises` or `refute_raises` where the factor is that an actuation
+completes — with its predicate read inline and no explaining variable, placed immediately
+before what it qualifies: the actuation for a factor in the controls or a prior state, the
+test for a factor in a derived value. Do not wrap it in a `test` block, do not name it, do not
+bind its operand, and do not write it as a `comment` instead — an unchecked statement of a
+deciding factor is the thing this replaces. Where an actuation's completion is the thing being
+established rather than the ground a later observation stands on, that is a test and belongs
+in a `test` block. Related: the controls-not-factories-fixtures-arrange rule
 and the `control_` test-variable prefix rule (the controls whose values a precondition most
 often documents), the test-block-is-assertion-only rule (the explaining-variable discipline
 this is a stated exception to), the tdd-test-structure rule (the control → actuate → observe
@@ -139,3 +168,4 @@ precondition is not to be confused with).
 
 Authored by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:20:47 PM PT
+Changed by Scott Bellware on Sat Aug 1 2026 at 5:08:21 PM PT
