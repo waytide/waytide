@@ -17,7 +17,7 @@ set +e
 # It is checked at the end rather than here, because it no longer governs everything
 # this hook emits. WAYTIDE_QUIET silences what the developer sees; the read instruction
 # is addressed to the agent and is not a surface they read, so quieting the notice must
-# not disable it. Otherwise a display preference would silently switch off the mechanism
+# not disable it. Otherwise a display preference would silently deactivate the mechanism
 # that carries the rules — the kind of silent failure this hook exists to answer.
 
 # Locate the system: waytide/system/ in a consuming project, system/

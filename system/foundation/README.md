@@ -75,7 +75,7 @@ foundation  →  (nothing — the base every other package builds on)
 
 So `install.sh`, `refresh-packages.sh`, `session-start.sh`, and `statusline.sh` are here. The **authoring** tools are not: `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository, because only the composite publishes and a consuming project never runs them.
 
-Foundation carries an **`install.sh`**, which also has to switch the system on. Run it from your project root:
+Foundation carries an **`install.sh`**, which also has to activate the system. Run it from your project root:
 
 ```
 sh install.sh

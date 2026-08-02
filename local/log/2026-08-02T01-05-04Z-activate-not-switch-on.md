@@ -1,0 +1,1 @@
+# Say "activate" and "deactivate", never "switch on" and "switch off" — a switch is binary, instantaneous, and reversible by the same gesture, where activating a system is a set of arrangements that can be partly in place
