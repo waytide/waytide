@@ -39,8 +39,8 @@ first), `waytide/local/experiments/` (recorded experiments that test a question)
 `waytide/local/migration/` (execution plans for transitions of content **across a repository
 boundary**, kept after the content has gone so the trail of where it went stays in the
 repository it left), and `waytide/local/suspended/` (an **undo queue** for what the project
-stopped doing — the thing itself moves, carrying frontmatter with the return address needed to
-put it back).
+stopped doing — the thing itself moves, carrying the return address needed to put it
+back).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (branch only, or branch and worktree), declared

@@ -1,0 +1,1 @@
+# The suspended file's return address uses canonical **Origin:**, **Kind:**, **Suspended:**, and **Reconciliations:** lines rather than frontmatter — the same recognizable-content form as the **State:** line the session-start script already parses, so the system carries one protocol rather than two
