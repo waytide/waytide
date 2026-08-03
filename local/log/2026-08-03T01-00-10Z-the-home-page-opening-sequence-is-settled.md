@@ -1,0 +1,1 @@
+# The home page's opening sequence is git install, then load waytide, then a status report, then starting a feature — the last two being where the method puts a selection to the developer rather than proceeding

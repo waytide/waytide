@@ -92,6 +92,30 @@ would show the surface and hide the process, which is exactly what is worth show
 real working session rather than a pitch, and one who scrolls a little has still seen more of
 the method than a features list would give them.
 
+**It is loosely scripted — just the bones.** Not a raw session transcript, and not written
+prose in the shape of one. The **sequence** is scripted; what happens inside each step is the
+system doing what it does. That keeps the two properties that matter in tension: a reader sees
+a real working session rather than a composed argument, and the session still gets somewhere
+rather than wandering as a real one would.
+
+**The opening sequence:**
+
+1. **`git` install** — the packages installed into a project.
+2. **`load waytide`** — the rules read, closing with the deferred queue printed.
+3. **A status report** — the whole-project report.
+4. **Starting a feature** — initiation, with the working-location and attended-or-unattended
+   choices put to the developer.
+
+Every step is a real, rule-governed moment rather than a demonstration written for the page,
+and the last two are where the method's distinctive behavior shows: both put a **selection** to
+the developer rather than proceeding, which is the thing a features list cannot convey.
+
+**One wrinkle the sequence raises.** On a **fresh** install there is no plan, no deferred
+queue, no decision log, and no suite — so the status report at step 3 would print its shape
+with nothing in it, and the queue print at step 2 would say the queue is empty. That is honest
+but shows the least. Whether the transcript's project is fresh, or is one with history that the
+install is being added to, is not settled and decides what steps 2 and 3 actually show.
+
 **This is the same property the Upload example project has**, on a different surface: its value
 is that the process is exhibited rather than described (see
 `2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
@@ -121,6 +145,10 @@ A source consulted only by the website has no such constraint, but a source serv
   above it.
 - **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
   arrival.
+- **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
+  scripted; what happens inside each step is the system doing what it does.
+- **2026-08-03** — The opening sequence is **git install → `load waytide` → a status report →
+  starting a feature**.
 
 ## Out of Scope / Deferred
 
@@ -136,12 +164,14 @@ A source consulted only by the website has no such constraint, but a source serv
   the site from the component repositories, or otherwise. The flow must be one-way, as
   composite → component already is.
 - **Whether the removed website drafts return**, and in what form.
-- **Whether the home-page chat is a real session or a written one.** A real transcript has the
-  property the example project has — it happened — and cannot be tidied without becoming the
-  other thing. A written one can be shaped to teach. This bears directly on the source question
-  above: a transcript is a fixed artifact, and a fixed artifact is what drifts.
-- **What the home page's process is, concretely** — which task a reader watches being done, and
-  whether it is the Upload example project's build or something else.
+- **Whether the transcript's project is fresh or has history.** A fresh install makes the
+  status report and the deferred-queue print nearly empty, which is honest and shows the least.
+- **What the feature at step 4 is**, and how far the transcript follows it — to its first
+  gated hinge, or through to its conclusion.
+- **What comes after the opening sequence**, which is scripted only to step 4.
+- **How the scripting is kept honest.** Loosely scripted means the sequence is chosen and the
+  content is not; nothing yet says what stops the content being tidied into a composed
+  argument, which is the failure that would make the page a pitch after all.
 - **What "one continuous scroll" requires of the implementation** — whether content loads as the
   reader scrolls or the page is simply long and unpaginated. Read here as the latter unless
   length forces otherwise.
@@ -152,3 +182,4 @@ A source consulted only by the website has no such constraint, but a source serv
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:48:53 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 5:53:08 PM PT
