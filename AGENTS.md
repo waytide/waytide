@@ -40,10 +40,14 @@ the two directories sit under it — `waytide/system/` for the installed package
 its own name says nothing. Every rule states the consuming-project path; read
 `waytide/system/` as `system/` and `waytide/local/` as `local/` when applying one here.
 
-`local/migration/` is this repository's own, defined by no rule: the design and execution
-records of migrating `constant`'s rules into the Waytide packages, kept because
-`CONTRIBUTING.md` still points at its publish runbook. It is a record, not a live
-convention.
+`local/migration/` is now defined by a rule — foundation's migration-convention, which makes it
+the place every Waytide project writes execution plans for transitions of content across a
+repository boundary. What it holds *here* is one such transition: the design and execution
+records of migrating `constant`'s rules into the Waytide packages. **Its files predate the
+convention** and keep their date-only names, since a datetime is not revised to a resolution it
+never had; new records take the ISO-8601-UTC prefix. `CONTRIBUTING.md` still points at its
+phase-B runbook for the publish procedure — a live procedure sitting in a historical record,
+which wants relocating.
 
 **Do not run `system/foundation/install.sh` in this repo.** It installs the packages
 into a *consuming* project and generates that project's `waytide/system/` AGENTS.md.
