@@ -1,0 +1,1 @@
+# The website deferred item was a review checklist for drafts, deleted 2026-07-30 with them, and is not moved to a design — its subject is superseded by the self-explanation design, where driving both surfaces from one source makes accuracy a property of construction rather than of a review pass
