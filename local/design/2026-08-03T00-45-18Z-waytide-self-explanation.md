@@ -102,19 +102,22 @@ rather than wandering as a real one would.
 
 1. **`git` install** — the packages installed into a project.
 2. **`load waytide`** — the rules read, closing with the deferred queue printed.
-3. **A status report** — the whole-project report.
-4. **Starting a feature** — initiation, with the working-location and attended-or-unattended
+3. **Starting a feature** — initiation, with the working-location and attended-or-unattended
    choices put to the developer.
 
 Every step is a real, rule-governed moment rather than a demonstration written for the page,
-and the last two are where the method's distinctive behavior shows: both put a **selection** to
-the developer rather than proceeding, which is the thing a features list cannot convey.
+and the last is where the method's distinctive behavior shows: it puts **selections** to the
+developer rather than proceeding, which is the thing a features list cannot convey.
 
-**One wrinkle the sequence raises.** On a **fresh** install there is no plan, no deferred
-queue, no decision log, and no suite — so the status report at step 3 would print its shape
-with nothing in it, and the queue print at step 2 would say the queue is empty. That is honest
-but shows the least. Whether the transcript's project is fresh, or is one with history that the
-install is being added to, is not settled and decides what steps 2 and 3 actually show.
+**A status report is deliberately not in the opening sequence.** It was considered and dropped:
+at project initiation there is no plan, no deferred queue, no decision log, and no suite, so
+the report would print its shape with nothing in it. A form with no content demonstrates the
+form, which is the least interesting thing the system does, and it would spend the reader's
+first minutes on emptiness. The status report belongs where there is something to report.
+
+**One residue of that.** The deferred-queue print at step 2 has the same problem in miniature —
+on a fresh install it says the queue is empty. It is one line rather than a section, and it
+shows that the queue is reported at all, so it stays.
 
 **This is the same property the Upload example project has**, on a different surface: its value
 is that the process is exhibited rather than described (see
@@ -147,8 +150,9 @@ A source consulted only by the website has no such constraint, but a source serv
   arrival.
 - **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
   scripted; what happens inside each step is the system doing what it does.
-- **2026-08-03** — The opening sequence is **git install → `load waytide` → a status report →
-  starting a feature**.
+- **2026-08-03** — The opening sequence is **git install → `load waytide` → starting a
+  feature**. A status report was considered for the sequence and **dropped**: at initiation
+  there is nothing to report, and a form with no content demonstrates only the form.
 
 ## Out of Scope / Deferred
 
@@ -164,11 +168,11 @@ A source consulted only by the website has no such constraint, but a source serv
   the site from the component repositories, or otherwise. The flow must be one-way, as
   composite → component already is.
 - **Whether the removed website drafts return**, and in what form.
-- **Whether the transcript's project is fresh or has history.** A fresh install makes the
-  status report and the deferred-queue print nearly empty, which is honest and shows the least.
-- **What the feature at step 4 is**, and how far the transcript follows it — to its first
-  gated hinge, or through to its conclusion.
-- **What comes after the opening sequence**, which is scripted only to step 4.
+- **Where a status report appears later in the transcript**, once the project has a plan, a
+  queue, and a log to report — or whether it appears at all.
+- **What the feature at step 3 is**, and how far the transcript follows it — to its first gated
+  hinge, or through to its conclusion.
+- **What comes after the opening sequence**, which is scripted only to step 3.
 - **How the scripting is kept honest.** Loosely scripted means the sequence is chosen and the
   content is not; nothing yet says what stops the content being tidied into a composed
   argument, which is the failure that would make the page a pitch after all.
@@ -183,3 +187,4 @@ A source consulted only by the website has no such constraint, but a source serv
 Authored by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:48:53 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:53:08 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 5:55:41 PM PT
