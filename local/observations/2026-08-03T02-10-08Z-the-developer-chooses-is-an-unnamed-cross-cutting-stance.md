@@ -58,11 +58,19 @@ sibling of it: a stance rule about the system's rules rather than about any surf
 `design-by-efferent` is where the stance is most concentrated but is the wrong home, since the
 stance reaches `versioning` and `foundation` lifecycles that have nothing to do with the loop.
 
-**What is not settled:** whether the stance is named at all; what test it would give that the
-existing rules do not; whether "personality trait" is the right frame or whether it is simply
-the method's premise stated once; and whether the analogy the developer used is admissible in
-the rule, given that name-literally-not-by-analogy rejects analogies for naming a concept.
+**The stance's name is settled: `the-agent-proposes-the-developer-decides`** (2026-08-02). It
+states both halves rather than only the prohibition, and it echoes DBE's settled spine — *"the
+AI generates; the human deliberates"* — so it reuses existing vocabulary instead of coining. It
+also avoids colliding with `versioning`'s `the-next-version-is-chosen-by-the-developer`, which a
+bare "the developer chooses" would have read as a sibling of rather than as the stance it
+instantiates. The analogy the developer first reached for is not used as the name; whether it is
+admissible as *website prose* is a separate question, left open in the self-explanation design.
+
+**What is not settled:** whether the stance becomes a rule at all; what test it would give that
+the existing rules do not; and whether "personality trait" is the right frame or whether it is
+simply the method's premise stated once.
 
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 7:10:08 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT

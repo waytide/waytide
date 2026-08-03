@@ -191,6 +191,33 @@ copy.
   near-universal reference costs a reader nothing, is a real question and is not settled here.
   What the point itself claims does not depend on the phrase.
 
+- **Five phrasings of the same stance, each foregrounding something different.** Kept together
+  because each is accurate and they are not interchangeable — the one to use depends on what a
+  passage is doing. The first is settled as the **rule's** name (see the observation
+  *"The developer chooses" is a cross-cutting stance that no rule names*); all five are here as
+  ways of **characterizing** the system.
+
+  - **The agent proposes; the developer decides.** States both roles and the division between
+    them. Echoes the method's own spine, *"the AI generates; the human deliberates."* The one to
+    use when explaining how a session actually runs.
+  - **Nothing is decided by default.** States the negative the rules enforce, and it is drawn
+    from their own words — "no standing default" is the recurring phrase at the working location
+    and the gating cadence. The one to use against the assumption that a tool has opinions it
+    applies silently.
+  - **The agent does not decide for the developer.** The plain prohibition. The one to use when
+    a reader's worry is what the agent will do while they are not looking.
+  - **The work goes where the developer takes it.** The literal rendering of the
+    choose-your-own-adventure sense, without the mapping. Describes the result rather than the
+    mechanism, and is the most inviting of the five.
+  - **Every decision that is the developer's is put to them.** The most exact, and the one that
+    carries a **test** rather than a sentiment: *is this decision the developer's?* The one to
+    use where a reader wants to know how the line is drawn.
+
+  **Why they belong on the website.** The stance is the thing hardest to convey by listing
+  features, and it is what a reader has to grasp for the apparatus to make sense rather than
+  read as friction. Having five accurate phrasings means a passage can state it again without
+  repeating itself, and each entry says what its phrasing is *for*.
+
 ## The distribution constraint
 
 Anything a user reads **in their own project** must live in a package: `git subtree` carries
@@ -264,3 +291,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 5:57:03 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:00:12 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:04:47 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:08:19 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT

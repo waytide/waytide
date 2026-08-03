@@ -1,0 +1,1 @@
+# The cross-cutting stance is named "the agent proposes, the developer decides" — it states both halves rather than only the prohibition, echoes the method's settled spine, and avoids colliding with versioning's the-next-version-is-chosen-by-the-developer
