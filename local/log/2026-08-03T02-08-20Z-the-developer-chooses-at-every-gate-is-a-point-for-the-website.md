@@ -1,0 +1,1 @@
+# That the developer chooses at every gate and the work goes where they take it is recorded as a point for the website — the fact that most distinguishes the system from workflow automation, and the one that explains why it stops as often as it does

@@ -172,6 +172,25 @@ copy.
   subtle, load-bearing decision put to a person instead of settled by a procedure — which is
   the thing hardest to convey by describing it.
 
+- **The developer chooses at every gate; the work goes where they take it.** Nothing about a
+  session is fixed in advance. The working location, the gating cadence, each hinge's
+  resolution, whether a unit is driven through the cycle, what the next outcome is — all of it
+  is put to the developer and none of it is decided by the agent. The path through a piece of
+  work is the developer's, and a different set of choices produces a different piece of work.
+
+  **Why it belongs on the website.** It is the single fact that most distinguishes this from
+  tooling that automates a workflow, and it explains the apparatus rather than merely listing
+  it: the hinges, the selection interface, the records of what was decided all exist because
+  the choosing is the point. A reader who grasps this understands why the system stops as often
+  as it does, which otherwise reads as friction.
+
+  **A caution on how it is said.** "Choose-your-own-adventure" states it precisely and in one
+  familiar phrase, and it is an analogy — which the `language` package's
+  name-literally-not-by-analogy rule rejects for **naming a concept**, on the ground that the
+  reader must learn and carry a mapping. Whether it is admissible as *website prose*, where a
+  near-universal reference costs a reader nothing, is a real question and is not settled here.
+  What the point itself claims does not depend on the phrase.
+
 ## The distribution constraint
 
 Anything a user reads **in their own project** must live in a package: `git subtree` carries
@@ -244,3 +263,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 5:55:41 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:57:03 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:00:12 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:04:47 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:08:19 PM PT
