@@ -71,6 +71,32 @@ rules say, which is the README failure at a larger scale.
 derivable from the rules and has to be written; what each package governs is derivable and
 should not be. Settling this is the first work of the plan that realizes this design.
 
+## The home page
+
+**The home page is a very lengthy chat with Waytide that describes a whole process of using
+it**, presented as one continuous scroll. There is no landing copy above it and no summary
+standing in for it — the chat is the page.
+
+**Navigation appears when the user begins to scroll.** It is absent on arrival, so the first
+thing on screen is the conversation and nothing competing with it, and it becomes available the
+moment the reader has committed to reading.
+
+**Why a transcript rather than a description.** Every other way of introducing the system says
+what it is. A chat showing a whole process shows **what using it is like** — the questions a
+developer actually asks, the points where the system stops and asks back, what the artifacts
+look like as they accumulate. That is not a claim about the system that a reader has to take on
+trust; it is the thing itself, and its length is part of what it demonstrates. A short excerpt
+would show the surface and hide the process, which is exactly what is worth showing.
+
+**The length is deliberate and is the design.** A reader who scrolls a long way has seen a
+real working session rather than a pitch, and one who scrolls a little has still seen more of
+the method than a features list would give them.
+
+**This is the same property the Upload example project has**, on a different surface: its value
+is that the process is exhibited rather than described (see
+`2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
+project — whether the process it walks through *is* the example being built — is not settled.
+
 ## The distribution constraint
 
 Anything a user reads **in their own project** must live in a package: `git subtree` carries
@@ -90,6 +116,11 @@ A source consulted only by the website has no such constraint, but a source serv
   given rather than inferred. The work starts from them.
 - **2026-08-03** — The two surfaces share a **source**, not an output, since a website cannot be
   a conversation.
+- **2026-08-03** — **The home page is a very lengthy chat with Waytide** describing a whole
+  process of using it, on one continuous scroll. The chat is the page; there is no landing copy
+  above it.
+- **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
+  arrival.
 
 ## Out of Scope / Deferred
 
@@ -105,8 +136,19 @@ A source consulted only by the website has no such constraint, but a source serv
   the site from the component repositories, or otherwise. The flow must be one-way, as
   composite → component already is.
 - **Whether the removed website drafts return**, and in what form.
+- **Whether the home-page chat is a real session or a written one.** A real transcript has the
+  property the example project has — it happened — and cannot be tidied without becoming the
+  other thing. A written one can be shaped to teach. This bears directly on the source question
+  above: a transcript is a fixed artifact, and a fixed artifact is what drifts.
+- **What the home page's process is, concretely** — which task a reader watches being done, and
+  whether it is the Upload example project's build or something else.
+- **What "one continuous scroll" requires of the implementation** — whether content loads as the
+  reader scrolls or the page is simply long and unpaginated. Read here as the latter unless
+  length forces otherwise.
+- **What the navigation contains**, and whether it persists once shown.
 - **The plan that sequences this.** Not written; this design settles direction only.
 
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 5:48:53 PM PT
