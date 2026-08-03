@@ -42,14 +42,11 @@ reconciliations:
   restore that does not reverse them leaves the thing back in place and uncited. Each one is
   recorded as the file changed and what was done to it.
 
-**This is the one artifact in the system that carries frontmatter, and the departure is
-deliberate.** Rules, designs, plans, observations, deferred items, experiment and feature
-records, loop records, and session records are all frontmatter-free, because every one of them
-is read by a **person**, and a person reads prose. A return address is read by whatever performs
-the restore — it has to be found without interpretation, in a fixed place, in a fixed form.
-Prose is the wrong carrier for a path, and the deferred queue's own rule makes the converse
-point: the agent reads free prose, so nothing there has to be machine-readable. Here something
-does.
+**Frontmatter, because a return address is read by whatever performs the restore** — it wants a
+fixed place and a fixed form, and prose is the wrong carrier for a path. The other artifact
+conventions specify frontmatter-free markdown for their own artifacts, which are written to be
+read by a person; that is a statement about those artifacts, not a prohibition this one is
+departing from.
 
 **Suspension is not deletion, and restoration is not re-invention.** A thing deleted is
 reconstructed later from memory and argument, and comes back different. A thing suspended comes
@@ -81,3 +78,4 @@ the decision-log rule, and the file-names rule (the ISO-8601-UTC prefix a suspen
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 8:26:41 PM PT

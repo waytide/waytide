@@ -1,0 +1,1 @@
+# Frontmatter is allowed — the other conventions specifying frontmatter-free markdown are describing their own artifacts rather than prohibiting it, so the suspended file's frontmatter needs no defense beyond the reason it is useful
