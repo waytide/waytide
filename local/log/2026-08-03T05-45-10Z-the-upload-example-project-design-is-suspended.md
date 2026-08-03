@@ -1,0 +1,1 @@
+# The Upload example project design is suspended rather than discarded — nothing in it was found wrong, and it is the alternative if building fresh under the current conventions proves to matter more than the evidence does

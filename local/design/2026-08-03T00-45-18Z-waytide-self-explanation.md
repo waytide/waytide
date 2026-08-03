@@ -147,10 +147,11 @@ needs — the lifecycle from the one, the design cycles from the other:
 The work-session records are the other candidate: each already narrates an arc, which is close
 to what the page wants, and they point at the durable records rather than restating them.
 
-**This is the same property the Upload example project has**, on a different surface: its value
-is that the process is exhibited rather than described (see
-`2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
-project — whether the process it walks through *is* the example being built — is not settled.
+**This is the same property the Constant example project has**, on a different surface: its
+value is that the process is exhibited rather than described (see
+`2026-08-03T05-40-22Z-the-constant-example-project.md`). Whether the home-page chat draws on
+that project is not settled — though it is the same body of artifacts already named above as the
+transcript's source material, which makes the two questions nearly one.
 
 ## Points the website should make
 
@@ -340,3 +341,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 7:08:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:21:36 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:47:19 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 10:40:22 PM PT

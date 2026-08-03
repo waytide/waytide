@@ -1,0 +1,1 @@
+# The Constant library replaces the Upload example project — constant was built for its own purposes and has the record as a by-product, where the Upload project would have been built in order to demonstrate, which is evidence against illustration

@@ -1,5 +1,29 @@
 # The Upload Example Project — Design
 
+- **Origin:** local/design/2026-08-03T00-47-10Z-the-upload-example-project.md
+- **Kind:** design
+- **Suspended:** 2026-08-03T05-40-22Z
+- **Reconciliations:**
+  - `local/design/2026-08-03T00-45-18Z-waytide-self-explanation.md` — its home-page section named this design; the reference now points at the Constant example project
+
+**Why it was suspended.** Replaced by the **Constant library** as the example project. The
+substance of the difference is that this project would have to be **built in order to
+demonstrate**, where `constant` was built for its own purposes and has the record as a
+by-product — a demonstration against evidence. Everything below stands as the design it was;
+nothing in it was found wrong.
+
+**What would bring it back.** A decision that the example project should be built fresh under
+the current conventions end to end, which is the one thing `constant` cannot offer: its six
+features were begun before several conventions existed, so its records show the method as it
+was rather than as it is. If that gap proves to matter more than the evidence does, this design
+is the alternative and needs no rewriting.
+
+**Note.** Suspending this does **not** retire the `Upload` domain from the rules. Eleven rule
+files in `testing` and `code/ruby` illustrate with it, and they are unaffected. What is
+suspended is the plan to build a project around it.
+
+---
+
 ## Summary
 
 A fresh, buildable Ruby project that **builds up the `Upload` solution through DBE** — originated
