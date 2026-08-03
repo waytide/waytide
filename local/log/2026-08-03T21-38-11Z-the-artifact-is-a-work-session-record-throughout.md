@@ -1,0 +1,1 @@
+# The artifact is called a work session record throughout the rules, not only in the recording prompt — 25 uses conformed across six foundation files, since a shortened "session" invites some other sense of the word

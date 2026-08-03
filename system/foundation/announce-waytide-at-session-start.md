@@ -126,7 +126,7 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   The instruction states that the read is **unconditional** — that the apparent size of the
   first request is not a reason to defer it. That is the failure it answers: a session opened
   with a one-line request, the read was judged not worth it, and the session grew into rule
-  edits, a session record, and two package publishes governed by rules that were never read.
+  edits, a work session record, and two package publishes governed by rules that were never read.
   Reading on demand kept producing locally plausible results, so nothing ever announced the
   gap.
 
