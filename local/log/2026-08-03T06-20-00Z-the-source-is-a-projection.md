@@ -1,0 +1,1 @@
+# The source both self-explanation surfaces are produced from is a projection — derived rather than authored and regenerable rather than maintained, which is the property a written corpus cannot have and the reason a written corpus drifts

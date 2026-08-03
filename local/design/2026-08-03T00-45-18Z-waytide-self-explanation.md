@@ -6,10 +6,10 @@ Waytide explains itself to the people using it through **an interactive chat wit
 skewed toward explaining the system** rather than the developer's project. **The website's
 content is driven by that same content.** One source, two surfaces.
 
-This is a premise rather than a summary because most of the design is not yet settled. What is
-fixed is the form and the one-source constraint; the interaction design parameters come from
-the developer, and the question of what the two surfaces actually share is open and is the
-question the rest turns on.
+What the two surfaces share is a **projection** — settled 2026-08-03, and the question the rest
+of the design turned on. What remains open is narrower: the interaction design parameters, which
+come from the developer, and what "idealized" is allowed to change, which decides whether a
+projection can be trusted.
 
 ## Background & Motivation
 
@@ -50,35 +50,48 @@ installed nothing and is deciding whether to.
 They are not the same artifact and cannot be. **A website cannot be a chat**, so what they
 share is a **source**, not an output.
 
-## The load-bearing question: what the source is
+## The source is a projection
 
-Two candidates, and the choice decides most of the remaining design.
+**Settled 2026-08-03.** Both surfaces are produced from a **projection** — a derived artifact
+generated from the records the system already keeps, rather than from prose written to explain.
+The chat draws on it; the website is generated from it.
 
-**The rules themselves are the source.** The chat reads the installed rules and answers from
-them; the site is generated from the same files. Nothing can drift, because there is nothing
-between the rules and either surface. The cost is that the explanation is different every time
-it is asked, and that the rules are written to *govern* rather than to *introduce* — a reader
-meeting the system needs an entry path and a reason for the shape, which no individual rule
-states.
+**What that means, and what it rules out.** Two other candidates were weighed:
 
-**A written corpus is the source.** Prose written for the purpose of explaining, which the chat
-draws on and the site publishes. It is stable, it can be written as an introduction rather than
-a set of governing statements, and it can carry the reasoning behind the shape. The cost is
-that it is exactly the kind of artifact that drifts — a hand-maintained description of what the
-rules say, which is the README failure at a larger scale.
+- **The rules themselves.** Nothing could drift, because nothing would sit between the rules and
+  either surface. But rules are written to **govern**, not to introduce: a reader meeting the
+  system needs an entry path and the reasoning behind the shape, and no individual rule states
+  either.
+- **A written corpus.** Prose written to explain, which the chat draws on and the site
+  publishes. It reads as an introduction and can carry the reasoning — and it is exactly the
+  artifact that **drifts**. This repository has that failure documented three times over in its
+  own package READMEs, which are hand-maintained descriptions of what the rules say and were
+  corrected by hand when the rules moved underneath them.
 
-**Neither is obviously right, and a mixture may be.** The reasoning behind the shape is not
-derivable from the rules and has to be written; what each package governs is derivable and
-should not be. Settling this is the first work of the plan that realizes this design.
+**A projection is neither.** It is **derived rather than authored**, so nothing is maintained
+alongside the system that can fall out of step with it; and **regenerable rather than fixed**,
+so when the system changes, the explanation is produced again rather than corrected. That is
+precisely the property a written corpus cannot have and the reason a written corpus drifts.
 
-**A third candidate arrived 2026-08-03, from the Constant example project design: a
-projection.** `constant`'s logs are not read literally — an **idealized log** is generated from
-them, the Waytide cycles and steps are synthesized from that, and the demonstrative replay is a
-projection, from which a website script is sequenced and generated. That is a source of a
-different kind from the two above: **derived rather than authored, and regenerable rather than
-maintained**, which is what a written corpus cannot be and why a written corpus drifts. It bears
-directly on this question and may answer it for the home page even if not for the whole site.
+**It is the same mechanism the Constant example project design settles for the replay** —
+`constant`'s logs are not read literally; an idealized log is generated, the Waytide cycles and
+steps are synthesized from it, and a website script is sequenced and generated from that. This
+design adopts the mechanism for the whole of the explanation rather than the home page alone.
 See `2026-08-03T05-40-22Z-the-constant-example-project.md`.
+
+**What a projection does not excuse.** It is derived, not automatic — something decides what is
+included, in what order, and at what altitude. Two constraints already settled for the replay
+carry to every projected surface:
+
+- **It must not present as something it is not.** A projected explanation is not a transcript,
+  not a recording, and not the rules themselves, and what it derives from must be reachable.
+- **The records are not back-edited to suit it.** A projection is derived from a record; changing
+  the record to fit the projection destroys what makes the projection worth anything.
+
+**The open question moves rather than closing.** What "idealized" is allowed to change is now
+this design's question as well as the Constant design's, because it decides whether every
+surface is trustworthy and not only the home page. Compressing, omitting, and inventing are not
+the same act.
 
 ## The home page
 
@@ -301,6 +314,11 @@ A source consulted only by the website has no such constraint, but a source serv
   given rather than inferred. The work starts from them.
 - **2026-08-03** — The two surfaces share a **source**, not an output, since a website cannot be
   a conversation.
+- **2026-08-03** — **The source is a projection** — derived rather than authored, regenerable
+  rather than maintained. The rules alone and a written corpus were both weighed and rejected:
+  the rules govern rather than introduce, and a corpus is the artifact that drifts. The two
+  constraints settled for the replay carry to every projected surface — it must not present as
+  something it is not, and records are not back-edited to suit it.
 - **2026-08-03** — **The home page is a very lengthy chat with Waytide** describing a whole
   process of using it, on one continuous scroll.
 - **2026-08-03** — **The website is not itself an interactive chat.** The chat on the page is a
@@ -318,14 +336,21 @@ A source consulted only by the website has no such constraint, but a source serv
 
 ## Out of Scope / Deferred
 
-- **What the source is** — the rules, a written corpus, or a mixture. The load-bearing question
-  above; unresolved here.
+- **What "idealized" is allowed to change** — inherited from the Constant example project
+  design, and now this design's question too, since a projection is the source for every
+  surface. Compressing a long cycle, omitting a false start, and inventing a decision nobody
+  made are not the same act, and nothing yet says where the line falls.
 - **The interaction design parameters** — how the chat opens, what it offers, how far it leads
   versus follows. To be provided by the developer.
 - **What makes the chat lean toward the system** — a command that opens it, a mode it stays in,
   or a rule about which question it takes as asked. Part of the interaction design.
-- **Which package holds a written source, if there is one.** No package's subject is "Waytide
-  itself"; `foundation` is the candidate on the always-installed argument alone.
+- **What the projection is generated *from*, beyond the replay** — the rules are the obvious
+  input for what each package governs, but the reasoning behind the shape is not derivable from
+  them and lives today in designs, observations, and session records. Which records feed which
+  surface is not settled.
+- **Whether anything written has to be installed with a project.** A projection produced for the
+  website has no distribution constraint; one the chat draws on inside a consuming project does,
+  since subtree carries only package directories.
 - **How the website is produced** — generated at publish time from the packages, assembled by
   the site from the component repositories, or otherwise. The flow must be one-way, as
   composite → component already is.
@@ -366,3 +391,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 10:40:22 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:57:25 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:06:44 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:10:19 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:16:27 PM PT

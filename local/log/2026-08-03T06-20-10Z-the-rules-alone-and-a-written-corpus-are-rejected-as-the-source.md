@@ -1,0 +1,1 @@
+# The rules alone and a written corpus are both rejected as the self-explanation source — the rules are written to govern rather than introduce, and a corpus is exactly the artifact that drifts, as this repository's own package READMEs have three times
