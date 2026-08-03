@@ -218,6 +218,29 @@ copy.
   read as friction. Having five accurate phrasings means a passage can state it again without
   repeating itself, and each entry says what its phrasing is *for*.
 
+- **"Waytide is an agent harness and an engineer ally."** Tentative as a formulation, settled as
+  to what each half is for.
+
+  **"Agent harness"** states the mechanism. The rules are **binding** on the agent — they
+  "override default behavior where they conflict," and the agent has no discretion to depart
+  from them. Note that `dbe-as-design-tool` rejected "harness" for the **cradle**, on the ground
+  that a cradle must hold the implementation "without gripping it rigid." That objection does
+  not carry here: gripping rigid is precisely what the agent's rules do, so the word fails for
+  the test and holds for the agent.
+
+  **"Engineer ally"** forecloses a reading the mechanical phrasings leave open. A system of
+  rules, records, logs, and gates looks, from a distance, like **process compliance imposed on
+  the engineer** — surveillance and metrics have that shape. Saying the engineer is allied with
+  answers that immediately, and no statement of authority does: *binds the agent and defers to
+  the engineer* says who decides without saying whose interest the apparatus serves.
+
+  **One thing the pair does not say, which may want a second sentence.** The two halves are not
+  symmetrical, and the parallel invites reading them as though they were. The engineer is
+  constrained too — branch topology, record contents, commit wording, when a decision is logged.
+  What distinguishes the parties is not constraint against support: **the agent is bound and
+  given no discretion; the engineer is bound and given all of it.** "Harness" states a
+  mechanism, "ally" states a disposition, and the second does not follow from the first.
+
 ## The distribution constraint
 
 Anything a user reads **in their own project** must live in a package: `git subtree` carries
@@ -292,3 +315,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 6:00:12 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:04:47 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:08:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:21:36 PM PT

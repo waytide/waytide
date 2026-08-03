@@ -1,0 +1,1 @@
+# "Waytide is an agent harness and an engineer ally" is recorded as a website point — harness states the binding mechanism on the agent, and ally forecloses the reading that the rules, records, and gates are process compliance imposed on the engineer
