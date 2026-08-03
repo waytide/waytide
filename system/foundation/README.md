@@ -38,7 +38,9 @@ first), `waytide/local/experiments/` (recorded experiments that test a question)
 `waytide/local/features/` (the lifecycle record of a feature), `waytide/local/work-sessions/` (the narrative record of a work session), and
 `waytide/local/migration/` (execution plans for transitions of content **across a repository
 boundary**, kept after the content has gone so the trail of where it went stays in the
-repository it left).
+repository it left), and `waytide/local/suspended/` (an **undo queue** for what the project
+stopped doing — the thing itself moves, carrying frontmatter with the return address needed to
+put it back).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (branch only, or branch and worktree), declared
@@ -54,7 +56,7 @@ concern.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/loops/`); foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`plans`/`design`/`experiments`/`features`/`work-sessions`/`migration` work-artifact directories.
+`plans`/`design`/`experiments`/`features`/`work-sessions`/`migration`/`suspended` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule: a rule may name another package's rule freely, and that

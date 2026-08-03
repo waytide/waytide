@@ -1,0 +1,1 @@
+# local/suspended/ is a foundation-defined undo queue for what the project stopped doing — the thing itself moves rather than being deleted, so restoring returns it as it was rather than reconstructing it from memory

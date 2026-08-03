@@ -1,0 +1,1 @@
+# A suspended file is the one artifact in the system that carries frontmatter — origin, kind, suspended datetime, and the reconciliations to reverse — because a return address is read by whatever performs the restore, where every other artifact is read by a person
