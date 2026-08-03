@@ -1,0 +1,1 @@
+# "The developer chooses" is recorded as an observation — a stance present in seventeen rules across four packages and named as a stance in none, which rules-install-a-mindset says should be stated in a rule's body and cross-referenced
