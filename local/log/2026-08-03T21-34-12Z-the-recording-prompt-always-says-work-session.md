@@ -1,0 +1,1 @@
+# The prompt that asks whether to record a session always says "work session record" rather than "session record" — the directory is work-sessions/ and the shortened form invites some other sense of "session"
