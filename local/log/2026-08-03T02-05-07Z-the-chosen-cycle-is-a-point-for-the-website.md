@@ -1,0 +1,1 @@
+# That the red/green/refactor cycle is chosen rather than performed is recorded as a point for the website, in a "Points the website should make" collection gathered to be lifted whole into the separate website project

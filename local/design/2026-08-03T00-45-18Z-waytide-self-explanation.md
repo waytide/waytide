@@ -152,6 +152,26 @@ is that the process is exhibited rather than described (see
 `2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
 project — whether the process it walks through *is* the example being built — is not settled.
 
+## Points the website should make
+
+A running collection, added to as points surface. **It is gathered here to be lifted out
+whole** — the website work moves to a separate project later, and this section is what goes
+with it. Each entry is a point worth making publicly and the reason it is worth making, not
+copy.
+
+- **The cycle is chosen, not performed.** DBE rejects red-green-refactor **as choreography** —
+  the cycle nobody decided to run — and not as a choice. At the implementation hinge the
+  developer is offered two candidates: the working implementation, or the red/green/refactor
+  cycle. Selecting the cycle for a particular unit is a design judgment, which is the opposite
+  of ceremony.
+
+  **Why it belongs on the website.** A reader who knows TDD arrives with one of two
+  assumptions — that this is TDD with extra apparatus, or that it is against TDD. It is
+  neither, and this is the shortest thing that shows why: the cycle is available and *chosen*
+  rather than *performed*. It also demonstrates the method's general shape in miniature — a
+  subtle, load-bearing decision put to a person instead of settled by a procedure — which is
+  the thing hardest to convey by describing it.
+
 ## The distribution constraint
 
 Anything a user reads **in their own project** must live in a package: `git subtree` carries
@@ -223,3 +243,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 5:53:08 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:55:41 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:57:03 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:00:12 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:04:47 PM PT
