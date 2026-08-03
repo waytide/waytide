@@ -91,7 +91,7 @@ to be the product.
 **The page's structure:**
 
 - **A top header and a short hero image.**
-- **Below it, the chat as the site's backplane** — it scrolls into view beneath the hero.
+- **Below it, the chat**, scrolling into view beneath the hero.
 - **It can scroll on and on**, an infinite scroll through the synthesized session with the
   `constant` library.
 
@@ -306,9 +306,8 @@ A source consulted only by the website has no such constraint, but a source serv
 - **2026-08-03** — **The website is not itself an interactive chat.** The chat on the page is a
   content and style element — a rendered scroll of a synthesized session. The interactive chat
   is the other surface.
-- **2026-08-03** — **The page is a top header and a short hero image, with the chat as the
-  backplane below it**, scrolling into view and continuing through the synthesized `constant`
-  session.
+- **2026-08-03** — **The page is a top header and a short hero image, with the chat below it**,
+  scrolling into view and continuing through the synthesized `constant` session.
 - **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
   arrival.
 - **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
@@ -348,10 +347,6 @@ A source consulted only by the website has no such constraint, but a source serv
   reader scrolls or the page is simply long and unpaginated. Read here as the latter unless
   length forces otherwise.
 - **What the navigation contains**, and whether it persists once shown.
-- **Whether the chat is the backplane *behind* other content or is itself the content.**
-  "Backplane" reads as a substrate; whether anything is layered over it as the reader scrolls —
-  callouts, headings, points from the collection below — is not settled, and it decides whether
-  the page is one element or two.
 - **The plan that sequences this.** Not written; this design settles direction only.
 
 ---
@@ -370,3 +365,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 7:47:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:40:22 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:57:25 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:06:44 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:10:19 PM PT
