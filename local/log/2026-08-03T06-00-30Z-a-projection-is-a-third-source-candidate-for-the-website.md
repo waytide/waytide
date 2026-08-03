@@ -1,0 +1,1 @@
+# A projection is a third source candidate for the website, beside the rules and a written corpus — derived rather than authored and regenerable rather than maintained, which is what a written corpus cannot be and why it drifts

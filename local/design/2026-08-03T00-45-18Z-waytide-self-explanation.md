@@ -71,6 +71,15 @@ rules say, which is the README failure at a larger scale.
 derivable from the rules and has to be written; what each package governs is derivable and
 should not be. Settling this is the first work of the plan that realizes this design.
 
+**A third candidate arrived 2026-08-03, from the Constant example project design: a
+projection.** `constant`'s logs are not read literally — an **idealized log** is generated from
+them, the Waytide cycles and steps are synthesized from that, and the demonstrative replay is a
+projection, from which a website script is sequenced and generated. That is a source of a
+different kind from the two above: **derived rather than authored, and regenerable rather than
+maintained**, which is what a written corpus cannot be and why a written corpus drifts. It bears
+directly on this question and may answer it for the home page even if not for the whole site.
+See `2026-08-03T05-40-22Z-the-constant-example-project.md`.
+
 ## The home page
 
 **The home page is a very lengthy chat with Waytide that describes a whole process of using
@@ -342,3 +351,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:21:36 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:47:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:40:22 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 10:57:25 PM PT

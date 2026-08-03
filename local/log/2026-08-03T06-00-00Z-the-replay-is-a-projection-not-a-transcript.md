@@ -1,0 +1,1 @@
+# Constant's logs are not taken literally — an idealized log is generated from them, the cycles and steps are synthesized from that, and the demonstrative replay is a projection from which a website script is sequenced and generated

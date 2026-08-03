@@ -54,16 +54,51 @@ at `evt-constant` 2.2.0.0, which exercises the versioning conventions and the re
 **three local rules of its own**, which show a project extending the system rather than only
 consuming it.
 
-## What it does not offer, and this is the trade
+## The replay is a projection, not a transcript
 
-**Its records show the method as it was, not as it is.** All six features were begun before
-several conventions existed — the attended-or-unattended gating cadence, the current-branch
-working location, and the renaming of a loop traversal from *pass* to *cycle*. Its loop records
-say "Pass", correctly, because that is what they were written under.
+**`constant`'s logs are not taken literally.** From them an **idealized log** is generated, and
+from that the Waytide cycles and steps are synthesized. The demonstrative, performative
+**replay** is a **projection** — in the sense the decision-log convention already uses, where a
+summary "reads the record without destroying it". The record stays as written; the projection is
+derived and can be regenerated.
 
-A reader following them sees real work under an earlier form of the method. Whether that is a
-defect or a second demonstration — that the system's own conventions move, and its records are
-kept as written rather than back-edited — is not settled here.
+**The pipeline:**
+
+```
+constant's real artifacts  →  an idealized log  →  cycles and steps synthesized
+                           →  the replay (a projection)  →  a website script, sequenced
+                           →  generated
+```
+
+**This dissolves the trade the literal reading carried.** Constant's six features were begun
+before several conventions existed — the attended-or-unattended cadence, the current-branch
+working location, the renaming of a loop traversal from *pass* to *cycle* — so its records show
+the method **as it was**. A literal replay would teach an earlier form of the system. An
+idealized log is free to show the method **as it is**, because it is synthesized rather than
+quoted.
+
+**And it replaces that trade with a different one, which is the thing to hold onto.** The
+project's value was argued above as **evidence rather than illustration** — records written
+because the conventions required them, not because anyone would read them. A projection is one
+step removed from that: the underlying work is real, and the presentation is idealized. What it
+becomes is **a demonstration grounded in evidence**, which is neither of the two things the
+Upload design and the literal reading offered:
+
+| | grounded in | shows the method |
+|---|---|---|
+| the Upload project | nothing yet built | as it is |
+| `constant`, read literally | work that happened | as it was |
+| `constant`, projected | work that happened | as it is |
+
+**The honesty requirement follows from that.** A projection that presents as a transcript claims
+the one property it gave up. Whatever the replay is called on the page, it must not be called a
+session, a recording, or a transcript, and what it is derived from should be reachable — the
+real records are the answer to the reader who asks whether any of this happened.
+
+**The records themselves are not touched.** They say "Pass" and were written under an earlier
+form of the method, and they stay that way: a projection is derived from a record, and
+back-editing the record to suit the projection would destroy the thing that makes the projection
+worth anything.
 
 **It is a specialized domain.** Constant importing and inspection is narrower than the `Upload`
 domain the rules illustrate with, and a reader meeting it has more to hold. The rules' `Upload`
@@ -87,14 +122,22 @@ than two.
   on 2026-08-03.
 - **2026-08-03** — The `Upload` domain **stays in the rules**. What was suspended is the plan to
   build a project around it, not the illustration.
+- **2026-08-03** — **`constant`'s logs are not taken literally.** An **idealized log** is
+  generated from them, the cycles and steps are synthesized from that, and the demonstrative
+  replay is a **projection** — from which a website script is sequenced and generated.
+- **2026-08-03** — **The records are not back-edited** to suit the projection. A projection is
+  derived from a record; changing the record to fit it destroys what makes the projection worth
+  anything.
 
 ## Out of Scope / Deferred
 
 - **What is presented, and where.** `constant` exists; nothing yet says which of its artifacts a
   reader is pointed at, in what order, or through what surface.
-- **Whether its records are brought up to current conventions.** They say "Pass" and were begun
-  under an earlier form of the method. Leaving them is consistent with keeping historical records
-  as written; changing them would falsify what was done.
+- **What the replay is called**, given it must not present as a transcript, and how a reader
+  reaches the real records from it.
+- **What "idealized" is allowed to change** — which is the whole of the projection's honesty.
+  Compressing a long cycle, omitting a false start, and inventing a decision nobody made are not
+  the same act, and nothing yet says where the line falls.
 - **Whether the home-page transcript walks through work recorded here** — see the
   self-explanation design.
 - **Whether `env-var`, the second consuming project, has a part in this.**
@@ -103,3 +146,4 @@ than two.
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 10:44:57 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 10:48:30 PM PT
