@@ -1,0 +1,1 @@
+# Whether the home-page transcript replays a constant feature or is a new session run for the purpose is deferred to planning — it depends on how the transcript is assembled, which is a plan's concern rather than a design's

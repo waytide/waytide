@@ -147,11 +147,6 @@ needs — the lifecycle from the one, the design cycles from the other:
 The work-session records are the other candidate: each already narrates an arc, which is close
 to what the page wants, and they point at the durable records rather than restating them.
 
-**What this does not settle** is whether the transcript replays one of these or is a new session
-run for the purpose. Replaying has the property that it happened; running a new one can follow
-the settled opening sequence exactly, which none of the existing records do, since all six
-features were begun before that sequence existed.
-
 **This is the same property the Upload example project has**, on a different surface: its value
 is that the process is exhibited rather than described (see
 `2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
@@ -202,7 +197,10 @@ A source consulted only by the website has no such constraint, but a source serv
   composite → component already is.
 - **Whether the removed website drafts return**, and in what form.
 - **Whether the transcript replays a `constant` feature or is a new session run for the
-  purpose**, and if it replays one, which.
+  purpose** — **deferred to planning**, not settled here. Replaying has the property that it
+  happened; running a new one can follow the settled opening sequence exactly, which none of the
+  existing records do, since all six features were begun before that sequence existed. The
+  choice depends on how the transcript is actually assembled, which is a plan's concern.
 - **Where a status report appears later in the transcript**, once the project has a plan, a
   queue, and a log to report — or whether it appears at all.
 - **What the feature at step 3 is**, and how far the transcript follows it — to its first gated
@@ -224,3 +222,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 5:48:53 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:53:08 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:55:41 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:57:03 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 6:00:12 PM PT
