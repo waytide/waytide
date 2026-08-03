@@ -45,21 +45,33 @@ before increment 3 runs. The reading above is the proposal: **Waytide keeps why 
 website takes how it looks.** The alternative is that the whole design moves and the composite
 keeps a stub, on the grounds that a design should not be torn in half. Both are defensible.
 
+**Settled 2026-08-03 — neither, but a third reading between them.** The composite keeps **only
+the reasoning**: Premise, Background & Motivation, and Vocabulary. **The two surfaces, the source
+is a projection, and the distribution constraint moved** along with the home page and the points,
+where the table above had them staying. The line the developer drew is **why against how**: what
+the composite keeps says *that* Waytide explains itself and why it must; everything describing
+*how* the explanation is produced, constrained, and presented went to the destination, because
+producing it repeatably is what the destination is for.
+
 ## Increments
 
 1. **Destination prepared.** Repository initialized, packages installed, bootstrap committed.
    **Done 2026-08-03.**
 2. **Settle the split** — whether the self-explanation design divides as proposed above, or
    moves whole with a stub left behind. Nothing moves until this is answered.
+   **Done 2026-08-03** — settled as a third reading, recorded above.
 3. **Copy the website material into the destination**, as its own design there, under its
    `waytide/local/design/`. The destination is a Waytide project, so the design conventions
    apply to it: `# <Title> — Design`, the ISO-8601-UTC filename prefix, dated **Settled**
-   resolutions, and a provenance footer.
+   resolutions, and a provenance footer. **Done 2026-08-03.**
 4. **Reduce the composite's copy** to what stays, and point it at the destination by name.
+   **Done 2026-08-03.**
 5. **Reconcile what cites the moved material.** The Constant example project design references
    the self-explanation design twice; the session records reference it and are historical, so
-   they are left as written.
+   they are left as written. **Done 2026-08-03** — and one artifact this plan did not name was
+   found; see below.
 6. **Log the move**, and record here what actually happened against this plan.
+   **Done 2026-08-03.**
 
 ## What is true in between
 
@@ -76,6 +88,55 @@ removed here, and this record is the trail.
 follows the same conventions — its own `waytide/local/` directories, its own decision log, its
 own feature lifecycle. It is not a content dump.
 
+## What happened
+
+**The move ran in one sitting on 2026-08-03**, in the destination's session rather than this
+repository's, and every increment completed. What follows is what departed from the plan.
+
+**The split settled between the two readings the plan offered**, not on either. The plan proposed
+that the two surfaces, the projection, and the distribution constraint stay here; all three
+moved. The reason given was that the destination exists to make the explanation **producible
+repeatably**, and those three sections describe how it is produced — so keeping them here would
+have separated the mechanism from the project responsible for it.
+
+**The consequence is that what remains here is thin**, and this is worth stating plainly because
+it is the cost of the choice: a premise, a motivation, a vocabulary, and three settled
+resolutions. **All twenty of the design's deferred questions moved**, since every one of them
+concerned production or presentation. The alternative the developer declined — move it whole,
+leave a stub — was declined on the ground that a design should not be torn in half, and the
+remainder is close enough to a stub that the distinction is smaller in practice than it was in
+the abstract. It is still a design and it still settles something: that Waytide explains itself,
+and why a written corpus would drift. That was surfaced before the reduction ran, and the choice
+was made with it in view.
+
+**Increment 5 found an artifact this plan did not name.** The observation *"The developer
+chooses" is a cross-cutting stance that no rule names* cited the moved material twice — once for
+the point the website should make, once for the open question of whether the
+choose-your-own-adventure phrasing is admissible as website prose. Both were corrected to name
+the destination's design. An observation is a live, forward-looking artifact, so it is
+reconciled like a design rather than left like a record.
+
+**One reference was deliberately left standing.** The suspended Upload example project design
+refers to the self-explanation design in four places. It was **not** corrected: a suspended
+artifact is set aside rather than current, and the suspended-convention's whole claim is that a
+suspended thing **comes back as it was**. Editing its body would defeat that. The consequence is
+real and is recorded here rather than fixed — restoring that design would restore references to
+a design that has since been divided, and whoever restores it reconciles them then.
+
+**The destination received more than a copy.** Beyond the moved sections, its design carries two
+new resolutions dated 2026-08-03 — that it holds the operational half, and that the rules which
+query, normalize, and record explanation requests are the destination project's **own local
+rules for now**, with promotion to a distributed package left open. It also carries a new leading
+deferred question, **how an explanation request is queried, normalized, and recorded**, which
+nothing anywhere settles and which is the destination project's stated purpose. And its
+distribution-constraint section gained a paragraph the original did not have: rules held in the
+destination govern the work done there and **cannot reach an agent running in a developer's own
+project**, which is where the chat surface runs.
+
+**Nothing was deleted, and the between-state was brief.** Increments 3 and 4 ran minutes apart,
+so the window in which both repositories held the material — and this one was authoritative —
+did not outlast the session.
+
 ## Why
 
 The website material accumulated in the composite because that is where the conversation was
@@ -90,3 +151,4 @@ it leaves so the trail of where it went stays where a reader will look first.
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 11:35:01 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT

@@ -1,0 +1,1 @@
+# An allusion the reader need not catch is not the analogy name-literally-not-by-analogy rejects — Human-Agent Relations describes the subject accurately without the reference, so the allusion is a second layer that rewards catching it and costs nothing to miss

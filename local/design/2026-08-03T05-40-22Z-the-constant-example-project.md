@@ -105,13 +105,20 @@ domain the rules illustrate with, and a reader meeting it has more to hold. The 
 snippets are unaffected and stay: eleven files in `testing` and `code/ruby` use them, and they
 illustrate conventions rather than pointing at a project.
 
-## Relationship to the self-explanation design
+## Relationship to the self-explanation designs
 
-The self-explanation design names `constant` as the **source material for the home-page
-transcript**. That makes the two designs draw on one body of artifacts from different angles:
+**The home-page transcript is settled in the `website` project**, at
+`waytide/local/design/2026-08-03T06-45-04Z-producing-and-presenting-waytide-self-explanation.md`
+— a sibling repository of this one. It names `constant` as the **source material for the
+transcript**, which makes the two designs draw on one body of artifacts from different angles:
 the transcript shows a session, and this shows a project. Whether the home-page chat walks
 through work recorded here is not settled in either design, and it is nearly one question rather
 than two.
+
+That design was divided from *Waytide's Self-Explanation — Design* on 2026-08-03, which stays in
+this repository and keeps the reasoning — why Waytide explains itself, and the vocabulary both
+designs use. The transcript, the home page, and the projection they rest on went to the
+`website` project with the rest of the production and presentation material.
 
 ## Settled
 
@@ -138,8 +145,9 @@ than two.
 - **What "idealized" is allowed to change** — which is the whole of the projection's honesty.
   Compressing a long cycle, omitting a false start, and inventing a decision nobody made are not
   the same act, and nothing yet says where the line falls.
-- **Whether the home-page transcript walks through work recorded here** — see the
-  self-explanation design.
+- **Whether the home-page transcript walks through work recorded here** — see *Producing and
+  Presenting Waytide's Self-Explanation — Design* in the `website` project, which holds the
+  home page.
 - **Whether `env-var`, the second consuming project, has a part in this.**
 - **The plan that sequences any of it.** Not written; this design settles direction only.
 
@@ -147,3 +155,4 @@ than two.
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 10:44:57 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:48:30 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT

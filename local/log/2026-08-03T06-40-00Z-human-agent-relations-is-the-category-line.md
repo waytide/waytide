@@ -1,0 +1,1 @@
+# "Waytide: Human-Agent Relations" is recorded as the category line beside the Human Ally Harness claim line — it names the subject rather than making a claim, and alludes to C-3PO's self-introduction

@@ -1,0 +1,1 @@
+# The website content move is carried out: the composite's design is reduced to what stays, the Constant example design and the developer-chooses observation are reconciled, and the material now lives in the website project

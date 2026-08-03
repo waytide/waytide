@@ -44,7 +44,9 @@ visible only by reading all four packages and noticing.
   what was decided are one thing seen from three sides. Stated as a stance, they stop reading as
   three separate mechanisms.
 - **The website's use.** It is already recorded as a point the website should make, where it
-  explains why the system stops as often as it does — which otherwise reads as friction.
+  explains why the system stops as often as it does — which otherwise reads as friction. That
+  record moved to the `website` project on 2026-08-03, in *Producing and Presenting Waytide's
+  Self-Explanation — Design*.
 
 **What it might not buy, and the reason to be careful.** The stance is already **practiced
 without being stated**, exactly as the citation-versus-dependency criterion was until it was
@@ -64,7 +66,9 @@ AI generates; the human deliberates"* — so it reuses existing vocabulary inste
 also avoids colliding with `versioning`'s `the-next-version-is-chosen-by-the-developer`, which a
 bare "the developer chooses" would have read as a sibling of rather than as the stance it
 instantiates. The analogy the developer first reached for is not used as the name; whether it is
-admissible as *website prose* is a separate question, left open in the self-explanation design.
+admissible as *website prose* is a separate question, left open in the `website` project's
+*Producing and Presenting Waytide's Self-Explanation — Design*, which took that question with
+the points the website should make on 2026-08-03.
 
 **What is not settled:** whether the stance becomes a rule at all; what test it would give that
 the existing rules do not; and whether "personality trait" is the right frame or whether it is
@@ -74,3 +78,4 @@ simply the method's premise stated once.
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 7:10:08 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:13:24 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT

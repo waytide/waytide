@@ -1,0 +1,1 @@
+# The self-explanation design is divided: this repository keeps the reasoning, and the website project takes the two surfaces, the projection, the distribution constraint, the home page, and the points
