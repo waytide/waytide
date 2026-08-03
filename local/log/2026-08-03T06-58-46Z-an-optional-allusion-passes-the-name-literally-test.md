@@ -1,0 +1,1 @@
+# An allusion the reader need not catch passes the name-literally test — the distinguishing property is whether the literal reading stands alone, not whether a name alludes — recorded as an observation, not yet a rule, because a stated permission would license names whose real content is the reference
