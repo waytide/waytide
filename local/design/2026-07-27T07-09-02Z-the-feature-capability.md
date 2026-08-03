@@ -43,9 +43,15 @@ experiment's. What this design settles is which parts mirror and which do not.
   literally for what is being built.
 - **The base and the upstream branch are recorded**, not tagged. The upstream branch is
   not always `master`.
-- **The working location is chosen at initiation** — single working tree or worktree —
-  put to the user through the selection interface at **every** initiation, with no
-  standing default, exactly as for an experiment.
+- **The working location is chosen at initiation** — put to the user through the selection
+  interface at **every** initiation, with no standing default.
+
+  **Reconciled 2026-08-02:** there are now **three** options, not two — branch only, branch and
+  worktree, and **the current branch**, offered in that order. The third is **a feature's
+  alone**: an experiment is a controlled deviation that must stay reversible until affirmed, so
+  its branch is not optional, where a feature *is* the main line and a branch protects it
+  against nothing already ordinary. So the phrase "exactly as for an experiment", written here
+  when both had the same two options, no longer holds.
 - **A worktree is a sibling of the repository directory**, named
   `<repository-name>-feature-<subject>`, so it groups lexically with its repository when
   the parent is listed, and sits outside the repository working tree.
@@ -133,10 +139,20 @@ the suite on integration. The response is to fix it from there.
 - **2026-07-26** — A feature's tests are verified before integrating; there is no
   post-merge gate. Post-merge failures are ordinary and are fixed from there.
 - **2026-07-26** — A feature may be worked in a worktree, and the working location is put
-  to the user at **every** feature initiation, as with an experiment. The contrary
+  to the user at **every** feature initiation, ~~as with an experiment~~. The contrary
   proposal — no initiation gate, worktree by escalation only, on the grounds that a prompt
   paid on every feature is ceremony where an experiment's is paid rarely — was raised and
-  rejected.
+  rejected. **The "as with an experiment" clause is superseded 2026-08-02**: a feature gained a
+  third option, the current branch, which an experiment does not get. The rest of the resolution
+  stands — the choice is still put at every initiation, with no standing default.
+- **2026-08-02** — A feature may be built on **the current branch**, a third working location
+  offered after the two branching options. There is then no merge and no branch to delete:
+  **completed** means the intent is built rather than integrated, and **abandoned** means the
+  work is reverted rather than a branch left unmerged.
+- **2026-08-02** — A second choice is put at initiation beside the working location: the
+  **gating cadence**, attended or unattended, with attended the default. **DBE is in effect
+  either way** — the cradle, the efferent-first actuation, and the solubility standard hold in
+  both, and only the stopping changes. Both choices are recorded as confirmations.
 - **2026-07-27** — The feature states are **completed**, **abandoned**, **superseded**,
   **suspended**.
 
@@ -172,3 +188,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:11:34 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 11:47:03 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 10:36:12 PM PT

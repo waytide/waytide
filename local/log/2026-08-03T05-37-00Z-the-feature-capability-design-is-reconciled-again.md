@@ -1,0 +1,1 @@
+# The feature-capability design is reconciled a second time — the working location now names three options, the "as with an experiment" clause is marked superseded rather than rewritten, and the gating cadence is added as a second initiation choice
