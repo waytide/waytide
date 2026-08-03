@@ -1,0 +1,1 @@
+# The chat and the website share a source rather than an output, since a website cannot be a conversation — and what that source is, the rules or a written corpus, is the load-bearing question the design leaves open

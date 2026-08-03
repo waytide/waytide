@@ -1,0 +1,1 @@
+# Waytide's self-explanation is moved from the deferred queue to a design under local/design/, and the deferred item is deleted — the first time an item has been promoted to a design rather than carried out from the queue

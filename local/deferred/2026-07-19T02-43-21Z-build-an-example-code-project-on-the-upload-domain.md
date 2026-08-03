@@ -18,7 +18,7 @@ So a real project already carries the `Upload` domain; today it lives there as *
 - Home — its own repo (which org — `eventide-examples` alongside `dependencies-and-substitutes`, or elsewhere)?
 - Whether the scattered in-rule `Upload` snippets should then point at the example project as the canonical source of the domain.
 
-**Priority:** 5
+**Priority:** 4
 
 **Gated on:** not blocking any in-flight work; deferred as a future initiative. Independent of the parked `constant` work.
 
@@ -36,3 +36,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:42:14 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
