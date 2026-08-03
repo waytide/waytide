@@ -82,16 +82,24 @@ See `2026-08-03T05-40-22Z-the-constant-example-project.md`.
 
 ## The home page
 
-**The home page is a very lengthy chat with Waytide that describes a whole process of using
-it**, presented as one continuous scroll. There is no landing copy above it and no summary
-standing in for it — the chat is the page.
+**The website is not itself an interactive chat.** The chat on the page is a **content and
+style element** — a rendered scroll of a **synthesized session**, not something the reader
+converses with. The interactive chat is the other surface: the agent, in a developer's own
+project. The two share a source; they are not the same artifact, and the page does not pretend
+to be the product.
 
-**Navigation appears when the user begins to scroll.** It is absent on arrival, so the first
-thing on screen is the conversation and nothing competing with it, and it becomes available the
-moment the reader has committed to reading.
+**The page's structure:**
 
-**Why a transcript rather than a description.** Every other way of introducing the system says
-what it is. A chat showing a whole process shows **what using it is like** — the questions a
+- **A top header and a short hero image.**
+- **Below it, the chat as the site's backplane** — it scrolls into view beneath the hero.
+- **It can scroll on and on**, an infinite scroll through the synthesized session with the
+  `constant` library.
+
+**Navigation appears when the reader begins to scroll.** It is absent on arrival, so what is on
+screen first is the hero and the chat coming up beneath it, with nothing competing.
+
+**Why a rendered session rather than a description.** Every other way of introducing the system
+says what it is. A session showing a whole process shows **what using it is like** — the questions a
 developer actually asks, the points where the system stops and asks back, what the artifacts
 look like as they accumulate. That is not a claim about the system that a reader has to take on
 trust; it is the thing itself, and its length is part of what it demonstrates. A short excerpt
@@ -294,8 +302,13 @@ A source consulted only by the website has no such constraint, but a source serv
 - **2026-08-03** — The two surfaces share a **source**, not an output, since a website cannot be
   a conversation.
 - **2026-08-03** — **The home page is a very lengthy chat with Waytide** describing a whole
-  process of using it, on one continuous scroll. The chat is the page; there is no landing copy
-  above it.
+  process of using it, on one continuous scroll.
+- **2026-08-03** — **The website is not itself an interactive chat.** The chat on the page is a
+  content and style element — a rendered scroll of a synthesized session. The interactive chat
+  is the other surface.
+- **2026-08-03** — **The page is a top header and a short hero image, with the chat as the
+  backplane below it**, scrolling into view and continuing through the synthesized `constant`
+  session.
 - **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
   arrival.
 - **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
@@ -335,6 +348,10 @@ A source consulted only by the website has no such constraint, but a source serv
   reader scrolls or the page is simply long and unpaginated. Read here as the latter unless
   length forces otherwise.
 - **What the navigation contains**, and whether it persists once shown.
+- **Whether the chat is the backplane *behind* other content or is itself the content.**
+  "Backplane" reads as a substrate; whether anything is layered over it as the reader scrolls —
+  callouts, headings, points from the collection below — is not settled, and it decides whether
+  the page is one element or two.
 - **The plan that sequences this.** Not written; this design settles direction only.
 
 ---
@@ -352,3 +369,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 7:21:36 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 7:47:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:40:22 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:57:25 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:06:44 PM PT

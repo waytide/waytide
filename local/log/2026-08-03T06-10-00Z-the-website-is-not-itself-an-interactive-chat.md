@@ -1,0 +1,1 @@
+# The website is not itself an interactive chat — the chat on the page is a content and style element, a rendered scroll of a synthesized session, where the interactive chat is the agent in a developer's own project
