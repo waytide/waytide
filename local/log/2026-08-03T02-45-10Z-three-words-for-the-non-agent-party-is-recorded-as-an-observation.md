@@ -1,0 +1,1 @@
+# Three words name the non-agent party — human 121 times, developer 91, engineer 9 — split by package and never reconciled, recorded as an observation because whether it is one concept or two is unsettled

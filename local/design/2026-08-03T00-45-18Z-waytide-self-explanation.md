@@ -218,7 +218,7 @@ copy.
   read as friction. Having five accurate phrasings means a passage can state it again without
   repeating itself, and each entry says what its phrasing is *for*.
 
-- **"Waytide is an agent harness and an engineer ally."** Tentative as a formulation, settled as
+- **"Waytide is an agent harness and a human ally."** Tentative as a formulation, settled as
   to what each half is for.
 
   **"Agent harness"** states the mechanism. The rules are **binding** on the agent — they
@@ -228,17 +228,26 @@ copy.
   not carry here: gripping rigid is precisely what the agent's rules do, so the word fails for
   the test and holds for the agent.
 
-  **"Engineer ally"** forecloses a reading the mechanical phrasings leave open. A system of
+  **"Human ally"** forecloses a reading the mechanical phrasings leave open. A system of
   rules, records, logs, and gates looks, from a distance, like **process compliance imposed on
-  the engineer** — surveillance and metrics have that shape. Saying the engineer is allied with
+  the human** — surveillance and metrics have that shape. Saying the human is allied with
   answers that immediately, and no statement of authority does: *binds the agent and defers to
-  the engineer* says who decides without saying whose interest the apparatus serves.
+  the human* says who decides without saying whose interest the apparatus serves.
+
+  **"Human" rather than "engineer", settled 2026-08-02.** It is the pairing the method's own
+  lexicon uses — `design-by-efferent` says *human* 111 times, in *human-in-the-loop* and in "the
+  AI generates; the human deliberates" — and it is the only one that pairs correctly with
+  *agent*, which names a kind of entity rather than a role. *Engineer* appears nine times across
+  three files and is the least established of the three words the system uses for this party.
+  **The known risk is register:** "human ally" is close to AI-marketing idiom, and it lands in
+  the sentence that introduces the system. It is accepted deliberately; the pairing was judged
+  worth it.
 
   **One thing the pair does not say, which may want a second sentence.** The two halves are not
   symmetrical, and the parallel invites reading them as though they were. The engineer is
   constrained too — branch topology, record contents, commit wording, when a decision is logged.
   What distinguishes the parties is not constraint against support: **the agent is bound and
-  given no discretion; the engineer is bound and given all of it.** "Harness" states a
+  given no discretion; the human is bound and given all of it.** "Harness" states a
   mechanism, "ally" states a disposition, and the second does not follow from the first.
 
 ## The distribution constraint

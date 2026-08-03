@@ -1,0 +1,1 @@
+# The formulation is "an agent harness and a human ally" — human pairs with agent, which names a kind of entity rather than a role, and is the method's own lexicon; the AI-marketing register risk is accepted deliberately
