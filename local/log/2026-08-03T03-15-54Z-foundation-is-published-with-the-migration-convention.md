@@ -1,0 +1,1 @@
+# Foundation is published with the migration convention, so every consuming project is given the understanding that local/migration is where transitions of content across a repository boundary are planned
