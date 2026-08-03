@@ -1,0 +1,1 @@
+# Waytide self-explaining itself to users is registered as a deferred item at rank 2 — an interactive chat with the agent skewed toward explaining the system, with the website driven by the same content
