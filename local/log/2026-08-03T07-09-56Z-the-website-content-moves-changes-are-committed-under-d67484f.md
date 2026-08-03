@@ -1,0 +1,1 @@
+# The website content move's changes are committed under d67484f, whose subject names an unrelated change; the commit stands rather than being rewritten, and this entry is the pointer a reader scanning the log would otherwise not find
