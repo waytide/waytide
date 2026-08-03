@@ -104,18 +104,35 @@ to be the product.
 **The page's structure:**
 
 - **A top header and a short hero image.**
-- **Below it, two vertical sides.** On the **left**, the chat. On the **right**, the
-  **artifacts created as the chat progresses** — each appearing at the point in the session
-  that produced it.
-- **Each artifact is an expandable summary**, clickable to open the record in full.
+- **Below it, two vertical sides.** On the **left**, the chat. On the **right**, **what the
+  agent touched** — both the **sources consulted** to answer a request and the **artifacts
+  created** by the work, each appearing at the point in the session it belongs to.
+- **Each entry is an expandable summary**, clickable to open the record, the file, or the query
+  in full.
 - **It can scroll on and on**, an infinite scroll through the synthesized session with the
   `constant` library.
 
-**The right side is what makes the claim visible.** The system's central claim is that working
-this way **accumulates a record** — decisions logged, cycles captured, a feature's lifecycle
-tracked, all committed alongside the code. Prose can assert that. A reader watching a log entry
-and a loop record appear beside the exchange that produced them sees it, and sees **when** each
-one is written, which is the part a description always leaves vague.
+**The right side carries both directions, and that is the point.** Work under this system both
+**reads** and **writes**, and the right pane shows each at the moment it happens:
+
+- **Sources consulted.** When a request is made — a test report, a status report, a deferred
+  listing, anything — the queries and the files read appear on the right. Every answer on the
+  left has its provenance beside it.
+- **Artifacts created.** Log entries, loop records, feature records, appearing at the exchange
+  that produced them.
+
+**Showing the sources answers a question about the whole system that prose cannot.** The rules
+require that reports be **re-derived from current files rather than recalled** —
+`status-report-format` says "do not report stale task counts, suite numbers, contexts, or
+deferred items from memory," and `test-report-format` says "re-derive everything from the
+current files." Those are promises. A reader watching the files being read beside the answer
+being given sees the promise kept, and gets a structural answer to the question every reader of
+an AI system has: **whether any of this is grounded or invented.**
+
+**Showing the artifacts makes the other central claim visible.** Working this way **accumulates
+a record** — committed alongside the code. Prose can assert that. A reader watching a log entry
+appear beside the exchange that produced it sees **when** it is written, which is the part a
+description always leaves vague.
 
 **The summaries are collapsed by default and expand on demand** because the two sides are doing
 different work. The chat carries the reader forward; the artifacts show what it left behind. An
@@ -341,8 +358,8 @@ A source consulted only by the website has no such constraint, but a source serv
 - **2026-08-03** — **The page is a top header and a short hero image, with the chat below it**,
   scrolling into view and continuing through the synthesized `constant` session.
 - **2026-08-03** — **The scroll has two vertical sides: the chat on the left, and on the right
-  the artifacts created as the chat progresses.** Each artifact is an expandable summary,
-  clickable to open the record in full.
+  what the agent touched** — the **sources consulted** for any request, and the **artifacts
+  created** by the work. Each is an expandable summary, clickable to open in full.
 - **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
   arrival.
 - **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
@@ -392,9 +409,12 @@ A source consulted only by the website has no such constraint, but a source serv
 - **How the two sides behave on a narrow screen**, where they cannot sit side by side.
 - **Whether an artifact stays in view once it appears**, or scrolls away with the exchange that
   produced it. A record that persists shows accumulation; one that scrolls away shows sequence.
-- **Which artifacts are shown.** A real session produces more log entries than a reader wants,
-  and the projection decides what appears — which is the same "what is idealized allowed to
-  change" question, arriving on the right-hand side.
+- **Which entries are shown, and how volume is handled.** A status report reads a great many
+  files, and listing every one swamps the pane. The projection decides what appears — the same
+  "what is idealized allowed to change" question, arriving on the right-hand side, where
+  omitting a source is a stronger claim than omitting an artifact.
+- **Whether reads and writes are distinguished**, and how. They are opposite directions and the
+  pane now carries both.
 - **What an artifact's collapsed summary contains** — its title alone, or its title and a line
   of what it says.
 - **The plan that sequences this.** Not written; this design settles direction only.
@@ -418,3 +438,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 11:06:44 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:10:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:16:27 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:19:58 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:23:41 PM PT

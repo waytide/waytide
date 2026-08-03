@@ -1,0 +1,1 @@
+# The right pane shows what the agent touched in both directions — the sources consulted for any request as well as the artifacts created by the work — so every answer on the left has its provenance beside it

@@ -1,0 +1,1 @@
+# Showing the sources makes visible what the report rules already require — that reports are re-derived from current files rather than recalled — and gives a structural answer to whether the system's answers are grounded or invented
