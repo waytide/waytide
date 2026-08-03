@@ -1,0 +1,1 @@
+# A work session record is titled "# Work Session — <name> (<date>)" — the ten records written before 2026-08-03 keep their "# Session —" titles, since retitling would edit a historical record to suit a later convention

@@ -1,7 +1,7 @@
 # A date in a record's title is written `Mon Jan 1 2026 18:06`
 
 When a working-state record's **title** carries a date — the work session record's
-`# Session — <name> (<date>)`, and any other record whose title is dated — the date is
+`# Work Session — <name> (<date>)`, and any other record whose title is dated — the date is
 written as:
 
 ```
@@ -54,3 +54,4 @@ working-state-artifacts-carry-a-provenance-footer.
 Authored by Scott Bellware on Sun Jul 26 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT

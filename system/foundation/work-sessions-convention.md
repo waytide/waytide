@@ -10,7 +10,9 @@
 
 ## The shape of a work session record
 
-Titled `# Session — <name> (<date>)`, it reads in this order:
+Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records written before
+2026-08-03 are titled `# Session — …`** and keep those titles: a record states what it stated
+when it was written, and retitling it would edit a historical record to suit a later convention.
 
 - **Opening summary** — a short paragraph naming what the work session *was*: its arc (began as X, became Y, ended with Z).
 - **Framing note** — that this is the communicable record / guided tour, and that the durable records are the source of truth the narrative points to.
@@ -47,3 +49,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 11:37:12 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 1:42:18 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 2:36:41 PM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT
