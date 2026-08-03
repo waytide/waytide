@@ -8,7 +8,7 @@ When the ECIL exists, add it as a `LICENSE` file to **each package directory** �
 
 **Sequencing — this gates the public release.** Publishing the packages with no license leaves them "all rights reserved" by default, which contradicts the free-open-source intent and undercuts the credibility purpose. So the **first Waytide release should wait for the ECIL**, or ship with a clear "license: Eventide Common Interest License — forthcoming" placeholder. Creating the empty `waytide/*` repos is independent and fine before the license exists.
 
-**Priority:** 2
+**Priority:** 1
 
 **Gated on:** the ECIL text existing (Scott to write it).
 
@@ -30,3 +30,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:47:10 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:02:22 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 7:49:33 PM PT
