@@ -1,0 +1,1 @@
+# The first-implementation-may-run-a-contained-red-green-loop rule is retired, subsumed by the implementation hinge's second candidate — one gate asks rather than two, and the containment constraint and first-implementation scoping move with it

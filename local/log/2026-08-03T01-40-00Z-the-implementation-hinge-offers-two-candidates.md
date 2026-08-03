@@ -1,0 +1,1 @@
+# The implementation hinge offers two candidates — the working implementation, or the red/green/refactor cycle — both answering how the implementation comes about, which is what makes the second a genuine candidate rather than a sequencing step

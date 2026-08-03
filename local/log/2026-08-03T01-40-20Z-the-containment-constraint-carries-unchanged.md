@@ -1,0 +1,1 @@
+# The containment constraint carries unchanged to the chosen cycle — a deliberate red is permitted only where its cause reaches no other stable test, since choosing it at a gate does not make breakage otherwise
