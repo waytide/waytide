@@ -104,9 +104,23 @@ to be the product.
 **The page's structure:**
 
 - **A top header and a short hero image.**
-- **Below it, the chat**, scrolling into view beneath the hero.
+- **Below it, two vertical sides.** On the **left**, the chat. On the **right**, the
+  **artifacts created as the chat progresses** — each appearing at the point in the session
+  that produced it.
+- **Each artifact is an expandable summary**, clickable to open the record in full.
 - **It can scroll on and on**, an infinite scroll through the synthesized session with the
   `constant` library.
+
+**The right side is what makes the claim visible.** The system's central claim is that working
+this way **accumulates a record** — decisions logged, cycles captured, a feature's lifecycle
+tracked, all committed alongside the code. Prose can assert that. A reader watching a log entry
+and a loop record appear beside the exchange that produced them sees it, and sees **when** each
+one is written, which is the part a description always leaves vague.
+
+**The summaries are collapsed by default and expand on demand** because the two sides are doing
+different work. The chat carries the reader forward; the artifacts show what it left behind. An
+artifact opened in full stops the forward motion, which should be the reader's choice and not
+the page's.
 
 **Navigation appears when the reader begins to scroll.** It is absent on arrival, so what is on
 screen first is the hero and the chat coming up beneath it, with nothing competing.
@@ -326,6 +340,9 @@ A source consulted only by the website has no such constraint, but a source serv
   is the other surface.
 - **2026-08-03** — **The page is a top header and a short hero image, with the chat below it**,
   scrolling into view and continuing through the synthesized `constant` session.
+- **2026-08-03** — **The scroll has two vertical sides: the chat on the left, and on the right
+  the artifacts created as the chat progresses.** Each artifact is an expandable summary,
+  clickable to open the record in full.
 - **2026-08-03** — **Navigation appears when the reader begins to scroll**, and is absent on
   arrival.
 - **2026-08-03** — The transcript is **loosely scripted — just the bones**. The sequence is
@@ -372,6 +389,14 @@ A source consulted only by the website has no such constraint, but a source serv
   reader scrolls or the page is simply long and unpaginated. Read here as the latter unless
   length forces otherwise.
 - **What the navigation contains**, and whether it persists once shown.
+- **How the two sides behave on a narrow screen**, where they cannot sit side by side.
+- **Whether an artifact stays in view once it appears**, or scrolls away with the exchange that
+  produced it. A record that persists shows accumulation; one that scrolls away shows sequence.
+- **Which artifacts are shown.** A real session produces more log entries than a reader wants,
+  and the projection decides what appears — which is the same "what is idealized allowed to
+  change" question, arriving on the right-hand side.
+- **What an artifact's collapsed summary contains** — its title alone, or its title and a line
+  of what it says.
 - **The plan that sequences this.** Not written; this design settles direction only.
 
 ---
@@ -392,3 +417,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 10:57:25 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:06:44 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:10:19 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:16:27 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:19:58 PM PT

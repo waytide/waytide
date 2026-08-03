@@ -1,0 +1,1 @@
+# The artifact side is what makes the system's central claim visible — that working this way accumulates a record — since prose can assert accumulation but a reader watching a log entry appear beside the exchange that produced it sees when each one is written
