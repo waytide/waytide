@@ -1,0 +1,1 @@
+# Constant's Waytide artifacts are the source material for the home-page transcript — 206 log entries, 19 loop records, 6 feature records, and 5 work-session records from a project built under the system throughout

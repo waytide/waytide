@@ -119,6 +119,39 @@ first minutes on emptiness. The status report belongs where there is something t
 on a fresh install it says the queue is empty. It is one line rather than a section, and it
 shows that the queue is reported at all, so it stays.
 
+**`constant` is the source material for the transcript.** It is a real project built under
+Waytide throughout, and its artifacts are the bones a loosely-scripted session would be
+assembled from — a record of work that actually happened, which is precisely what a written
+session cannot be. What is there:
+
+| Artifact | Count |
+|---|---|
+| decision log entries | 206 |
+| loop records | 19 |
+| feature records | 6 |
+| work-session records | 5 |
+| observations | 11 |
+| experiments, plans, designs | 2 each |
+| the project's own local rules | 3 |
+
+**Three features carry both a feature record and a loop record**, which is what a transcript
+needs — the lifecycle from the one, the design cycles from the other:
+
+- **`import-literal-constants`** — 6 cycles. Short enough to follow end to end.
+- **`import-shadow-inherited`** — 7 cycles, and the feature was later renamed
+  `override_ancestor`. It therefore shows a **terminology correction landing on finished work**,
+  which is a real and unflattering part of the method that a composed example would omit.
+- **`import-collision-refusal`** — 19 cycles. The fullest record and almost certainly too long
+  for a home page, though it is the best evidence that the method is actually run.
+
+The work-session records are the other candidate: each already narrates an arc, which is close
+to what the page wants, and they point at the durable records rather than restating them.
+
+**What this does not settle** is whether the transcript replays one of these or is a new session
+run for the purpose. Replaying has the property that it happened; running a new one can follow
+the settled opening sequence exactly, which none of the existing records do, since all six
+features were begun before that sequence existed.
+
 **This is the same property the Upload example project has**, on a different surface: its value
 is that the process is exhibited rather than described (see
 `2026-08-03T00-47-10Z-the-upload-example-project.md`). Whether the home-page chat draws on that
@@ -168,6 +201,8 @@ A source consulted only by the website has no such constraint, but a source serv
   the site from the component repositories, or otherwise. The flow must be one-way, as
   composite → component already is.
 - **Whether the removed website drafts return**, and in what form.
+- **Whether the transcript replays a `constant` feature or is a new session run for the
+  purpose**, and if it replays one, which.
 - **Where a status report appears later in the transcript**, once the project has a plan, a
   queue, and a log to report — or whether it appears at all.
 - **What the feature at step 3 is**, and how far the transcript follows it — to its first gated
@@ -188,3 +223,4 @@ Authored by Scott Bellware on Sun Aug 2 2026 at 5:45:18 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:48:53 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:53:08 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 5:55:41 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 5:57:03 PM PT
