@@ -1,5 +1,27 @@
 # Waytide — Phase B Runbook (distribution)
 
+- **Origin:** local/migration/2026-07-17-agent-norms-phase-b-runbook.md
+- **Kind:** procedure record
+- **Suspended:** 2026-08-03T05-26-57Z
+- **Reconciliations:**
+  - `CONTRIBUTING.md` — the "see the Phase B checklist" pointer in the path-change paragraph was removed
+  - `CONTRIBUTING.md` — the closing "full step-by-step … Phase B checklist and its runbook" pointer was replaced with a note that these are suspended
+  - `CONTRIBUTING.md` — the **new-repo case** was lifted out of the runbook and into the publishing section, since it recurs whenever a package is added and this document did not cover it
+  - `local/migration/README.md` — its entry for these files was marked suspended and pointed at `local/suspended/`
+
+**Why it was suspended.** Superseded by `CONTRIBUTING.md`, which carries the publish primitive
+this describes — the split, the fast-forward guard, the push, the branch delete — and which is
+what every publish since has actually followed. Its **package → repo map is stale**: it lists
+`docs`, which no longer exists, and omits `plan` and `versioning`, so following it would publish
+the wrong set.
+
+**What would bring it back.** Another one-time distribution event — a repository rename, or a
+mass re-publish after the package path moves again. This is the only record of how those were
+done. The new-repo case is *not* a reason: it was lifted into `CONTRIBUTING.md` before the
+suspension, because it recurs.
+
+---
+
 > **⚠️ Rebranded to Waytide (2026-07-19).** The org and repo names below are the **old** ones — this document records the 2026-07-17 release under `eventide-project/agent-norms-*`. The project has since moved to the **`waytide`** org with unprefixed repo names: the composite is `waytide/waytide` and each package is `waytide/<package>`. **Do not push to `eventide-project` / `agent-norms-*`.** The current release plan is the deferred item `agent/deferred/2026-07-19T05-22-32Z-pending-release-republish-all-seven-packages.md`. The split-and-push primitive and the proof step below still apply — substitute the new org and names.
 
 Step-by-step for publishing packages from this composite repo to their component repos. **Gated: run only with explicit go-ahead — every push here writes to a public repo.**

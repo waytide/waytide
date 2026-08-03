@@ -47,8 +47,8 @@ After committing a change here, re-publish the affected package by splitting its
 directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path, so a package whose directory path is
 unchanged fast-forwards, while a package whose path moved does not — its next
-publish is a path-change case handled like the `vocabulary`→`language` rename (see
-the Phase B checklist). **The composite's package directory is `system/`, reached
+publish is a path-change case handled like the `vocabulary`→`language` rename.
+**The composite's package directory is `system/`, reached
 by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
 (2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s
 history depends on the prefix path. The earlier names are kept here as the record of what
@@ -70,6 +70,24 @@ git branch -D publish-tmp
 `code/ruby` splits from its nested path (`--prefix system/code/ruby`) into
 the flat repo name `waytide/code-ruby`.
 
+**A new package's first publish** has no `master` to fast-forward from, so the guard does not
+apply — the push creates the branch. Create the repository, give it a description in the form
+the others use, then split and push:
+
+```
+gh repo create waytide/<package> --public \
+  -d "Waytide <package>. <What it governs>. By the Eventide Project."
+
+git subtree split --prefix=system/<package> -b publish-tmp
+git push https://github.com/waytide/<package>.git publish-tmp:master
+git branch -D publish-tmp
+```
+
+`report-direct-commits.sh` handles the repository before its first publish on its own — it
+reports `no master … — skipped` and carries on — so it needs no change when a package is added.
+`install-all.sh` does: its package list is hardcoded, where the direct-commit check discovers
+packages by finding READMEs.
+
 **If a push is rejected, stop — do not force yet.** A rejection means the component repo
 diverged, which the downstream-only rule forbids but does not prevent. Do not discard what
 is there. The remedy, in order:
@@ -84,9 +102,13 @@ is there. The remedy, in order:
 4. **Then force-push.** A commit made directly to a component repo can never become an
    ancestor of a split, so no amount of adopting makes the publish fast-forward. Forcing is
    correct once the content is safely in the composite, and only then — the commit object is
-   replaced, and its content survives because step 2 put it here. The full step-by-step for every package — including the one-time repo
-create/rename cases — is the **Phase B checklist**
-(`local/migration/2026-07-17-agent-norms-phase-b-checklist.md`) and its **runbook**.
+   replaced, and its content survives because step 2 put it here.
+
+The one-time distribution that first created the component repositories is recorded in the
+**Phase B runbook and checklist**, which are **suspended** under `local/suspended/` — superseded
+by this document, and carrying a package map that no longer matches the packages. They are the
+only record of how a repository rename and a mass re-publish after a path change were done; see
+the suspended-convention for restoring them.
 
 ## Push-back (fallback only)
 

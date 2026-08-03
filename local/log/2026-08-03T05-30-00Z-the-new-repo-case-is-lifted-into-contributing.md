@@ -1,0 +1,1 @@
+# The new-repo case is lifted from the phase-B runbook into CONTRIBUTING.md — a new package's first publish has no master to fast-forward from, and it recurs whenever a package is added, as versioning did
