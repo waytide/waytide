@@ -1,0 +1,1 @@
+# A migration record is kept after the content has gone, unlike a resolved deferred item — when content leaves, the trail of where it went leaves with it unless something in the repository it left holds that trail

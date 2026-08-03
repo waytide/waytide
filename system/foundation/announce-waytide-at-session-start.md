@@ -229,7 +229,7 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
 
   **It names `local/rules/` and nothing else beside the packages.** The working directories
   next to it — `log/`, `deferred/`, `design/`, `plans/`, `work-sessions/`, `experiments/`,
-  `loops/` — are worked with as their own conventions describe and are **not** read as binding
+  `loops/`, `migration/` — are worked with as their own conventions describe and are **not** read as binding
   rules at session start. The instruction says so outright, because an instruction naming
   `local/` rather than `local/rules/` would reverse that settled distinction.
 
@@ -300,3 +300,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 11:48:52 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 11:56:04 AM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:27:36 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT

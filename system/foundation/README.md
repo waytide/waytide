@@ -35,7 +35,10 @@ Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/local/plans/` (implementation plans
 that sequence a settled design), `waytide/local/design/` (design docs that settle direction
 first), `waytide/local/experiments/` (recorded experiments that test a question),
-`waytide/local/features/` (the lifecycle record of a feature), and `waytide/local/work-sessions/` (the narrative record of a work session).
+`waytide/local/features/` (the lifecycle record of a feature), `waytide/local/work-sessions/` (the narrative record of a work session), and
+`waytide/local/migration/` (execution plans for transitions of content **across a repository
+boundary**, kept after the content has gone so the trail of where it went stays in the
+repository it left).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at initiation (branch only, or branch and worktree), declared
@@ -51,7 +54,7 @@ concern.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/loops/`); foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`plans`/`design`/`experiments`/`features`/`work-sessions` work-artifact directories.
+`plans`/`design`/`experiments`/`features`/`work-sessions`/`migration` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule: a rule may name another package's rule freely, and that

@@ -1,0 +1,1 @@
+# local/migration/ is defined by a foundation rule as the place every Waytide project writes execution plans for transitions of content across a repository boundary — no consuming project had that understanding, and neither of the two has the directory
