@@ -1,0 +1,1 @@
+# No gated step is delegated to a subagent whatever the governance question's answer — a subagent has no channel to the engineer, so every hinge, initiation choice, and confirmation stays with the main agent
