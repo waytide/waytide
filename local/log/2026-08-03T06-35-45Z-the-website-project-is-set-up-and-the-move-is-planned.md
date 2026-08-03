@@ -1,0 +1,1 @@
+# The website project is initialized at /Users/sbellware/projects/waytide/website with all eight packages installed, and the move of the website content out of the composite is planned in local/migration/ — the migration convention's first use
