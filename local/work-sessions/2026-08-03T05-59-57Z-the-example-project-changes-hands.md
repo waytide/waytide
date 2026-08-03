@@ -122,4 +122,50 @@ candidate; whether it is the source for the whole site or only the home page is 
 
 ---
 
+# Continued — the website is not the chat (Sun Aug 2 2026 23:12)
+
+Appended after the record above. One correction, and it was to something this record's own
+session had introduced.
+
+## 4. The design is not ready for planning
+
+Stated plainly, and the design says as much about itself — its premise opens by saying most of
+it is not settled. The blocker is the **source question**: what the chat draws on, what the
+website is generated from, whether a written corpus exists and which package holds it, and how
+the site is produced are one question wearing four hats. A plan written before it is answered
+would sequence work whose shape is unknown.
+
+Two other things are open and are the developer's rather than the agent's: the **interaction
+design parameters**, which the design records as given rather than inferred, and what
+**"idealized" is allowed to change** in the projection.
+
+No action taken. Recorded here because the assessment is a real state of the design and would
+otherwise exist only in the conversation.
+
+## 5. The website is not itself an interactive chat
+
+A correction to an inconsistency this session introduced. The design had already settled that
+**a website cannot be a chat, so what the two surfaces share is a source** — and the home-page
+section was then written as though the page **were** the chat, with "the chat is the page; there
+is no landing copy above it."
+
+Both wrong. **The website's chat is a content and style element** — a rendered scroll of a
+synthesized session, not something a reader converses with. The interactive chat is the other
+surface: the agent, in a developer's own project. The page is a **top header and a short hero
+image, with the chat below**, scrolling into view and continuing through the synthesized
+`constant` session.
+
+**And a word was withdrawn.** "Backplane" had been used for the chat's place on the page and was
+used incorrectly; it is out of the design, along with the open question it had raised about
+whether anything is layered over the chat. That question existed only because of the word.
+
+## Takeaway from the continuation
+
+- **A design can contradict itself between sections.** The source-versus-output distinction was
+  settled in one section and violated three sections later, in the same document, in the same
+  session. Nothing catches that but reading it.
+
+---
+
 Authored by Scott Bellware on Sun Aug 2 2026 at 10:59:57 PM PT
+Changed by Scott Bellware on Sun Aug 2 2026 at 11:12:47 PM PT
