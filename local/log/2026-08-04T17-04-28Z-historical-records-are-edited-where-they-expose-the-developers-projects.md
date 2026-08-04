@@ -1,0 +1,1 @@
+# Historical records are edited where they name a downstream consuming project, departing from the stance that leaves them as written — not exposing the developer's own projects outranks it, and the composite is public even though `local/` is never installed

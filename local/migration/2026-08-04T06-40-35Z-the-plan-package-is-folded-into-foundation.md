@@ -5,9 +5,10 @@ Execution plan for retiring the `plan` component repository and moving its four 
 
 - **Source:** `system/plan/` in this repository, published to `https://github.com/waytide/plan`.
 - **Destination:** `system/foundation/`, published to `https://github.com/waytide/foundation`.
-- **Consuming projects holding the source:** `constant` and `env-var` at
-  `/Users/sbellware/projects/eventide/`, and `website` at `/Users/sbellware/projects/waytide/`,
-  each with `waytide/system/plan/` installed by `git subtree`.
+- **Projects holding the source:** three, each with `waytide/system/plan/` installed by
+  `git subtree`. Two are named where a decision was about them — `website`, which is part of
+  Waytide at large, and `constant`, the reference project. The third is a project of the
+  developer's that this record does not name.
 
 ## Why
 
@@ -63,7 +64,7 @@ and there is no longer one.
    entries, work session records, features, experiments, and the suspended phase-B runbook — are
    left as written. **Done 2026-08-03.**
 6. **Publish `foundation`.** **Done 2026-08-03.**
-7. **Remove `waytide/system/plan/` from `constant`, `env-var`, and `website`**, each a subtree
+7. **Remove `waytide/system/plan/` from each of the three projects holding it**, each a subtree
    removal in a repository this plan does not reach. **Done 2026-08-03.** In each: the directory
    removed and committed on its own, then `refresh-packages.sh` run so the same four rules
    returned under `waytide/system/foundation/`, then a decision-log entry recorded in that

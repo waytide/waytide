@@ -1,1 +1,1 @@
-# `constant`, `env-var`, and `website` drop `waytide/system/plan/` and refresh — the four rules return under `waytide/system/foundation/`, and the migration record is complete with every increment done
+# Every project with the package installed drops `waytide/system/plan/` and refreshes — the four rules return under `waytide/system/foundation/`, and the migration record is complete with every increment done

@@ -9,8 +9,8 @@ compatibility statement, and that the next version is put to the developer throu
 selection interface rather than decided by the agent.
 
 This realizes the deferred item *Package release rules*, which was ranked first because
-`constant` cannot be released until the convention exists and `env-var` cannot install
-`constant` until it is released.
+`constant` cannot be released until the convention exists, and a project depending on it
+cannot install `constant` until it is released.
 
 ## Setup
 
@@ -51,7 +51,7 @@ way, and it matches `testing`, the existing package named for a practice.
 Surveyed across ten Eventide gems before writing anything:
 
 - **Every gem uses four segments, and every one is generation 2** — `evt-constant` 2.2.0.0,
-  `evt-env_var` 2.3.1.0, `evt-initializer` 2.0.0.0, `evt-clock` 2.4.0.1, `evt-settings`
+  `evt-initializer` 2.0.0.0, `evt-clock` 2.4.0.1, `evt-settings`
   2.1.1.6, `evt-dependency` 2.2.0.0, `evt-schema` 2.5.0.0, `evt-casing` 2.0.0.1, `evt-reflect`
   2.2.0.1, `evt-virtual` 2.1.0.2.
 - **It is not two schemes.** It is semver, optionally prefixed by a generation number:

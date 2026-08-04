@@ -59,16 +59,11 @@ filesystem search, after a package was folded and every consumer needed reaching
 - **Whether the principle becomes a foundation rule, an observation, or stays a log entry.**
   Put to the developer on 2026-08-04 and not answered.
 - **What happens to the historical records that name a plain consumer.** The live case was
-  corrected on 2026-08-04 — the Constant example design no longer calls `constant` and `env-var`
-  "two consuming projects", and its open question about the second project is dropped. What
-  remains is in completed records: two decision-log entries, a feature record, two work session
-  records, and the plan-fold migration record. **Correcting the migration record would make it
-  false** — increment 7 actually reached that repository, and a record of a transition that
-  omits where the content went is not a smaller record but a wrong one.
-- **Whether `evt-env_var` may stay in the `code/ruby` rules** as the illustration of the
-  gem-name underscore convention, in `releasing-a-gem` and the package README. It names a real
-  project, but as a naming example rather than as a record that the project installed anything —
-  the way the rules illustrate with `Upload`.
+  corrected on 2026-08-04, and so were the historical records, which is a departure from the
+  system's stance of leaving them as written. Not exposing the developer's other projects
+  outranks it, and the records stayed true by dropping to a lower resolution rather than by
+  being made to say something false — a transition that reached three projects still reads as
+  having reached three.
 
 **Why:** a package change is not finished when the component repositories are pushed — it is
 finished when the projects reading those rules have them. Nothing detects a consumer left on

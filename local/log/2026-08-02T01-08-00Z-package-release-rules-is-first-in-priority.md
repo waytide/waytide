@@ -1,1 +1,1 @@
-# The package release rules deferred item is moved to rank 1 — constant cannot be released until the release convention is settled, and env-var cannot install constant until it is released, so two projects are stopped behind it
+# The package release rules deferred item is moved to rank 1 — `constant` cannot be released until the release convention is settled, and a project depending on it cannot install `constant` until it is released, so two projects are stopped behind it

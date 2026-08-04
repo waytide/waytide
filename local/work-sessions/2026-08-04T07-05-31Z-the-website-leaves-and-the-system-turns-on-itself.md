@@ -200,7 +200,7 @@ archived repository is read-only. It now tells a reader who lands there where th
 
 ## 10. The consuming projects follow
 
-`constant`, `env-var`, and `website` each dropped `waytide/system/plan/` and refreshed, so the
+Each of the three projects holding it dropped `waytide/system/plan/` and refreshed, so the
 same four rules returned under `waytide/system/foundation/`. Each carried its own decision-log
 entry and was pushed. The refresh brought `design-by-efferent`, `language`, and `versioning`
 forward too — more than this migration required.

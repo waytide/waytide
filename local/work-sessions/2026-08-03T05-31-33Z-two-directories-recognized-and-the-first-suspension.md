@@ -18,8 +18,8 @@ The directory had existed here since July and was **defined by no rule** — thi
 understanding that it is where execution plans for **transitions of content across a repository
 boundary** are written.
 
-**Checked before writing, and the answer was no.** Neither of the two consuming projects —
-`constant` and `env-var` — has the directory; no package mentions it; and `install.sh` never
+**Checked before writing, and the answer was no.** Neither project with the packages installed
+has the directory; no package mentions it; and `install.sh` never
 names it in the `AGENTS.md` it generates. The understanding existed in exactly one hand-written
 file that does not travel. So the rule was not documenting a practice, it was **creating one**.
 
