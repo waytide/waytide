@@ -10,7 +10,7 @@ it is not obliged to hold one that the work does not call for.
 - **Goals** — what the plan achieves. Plural where the work has more than one.
 - **Source designs** — pointers to the `waytide/local/design/` docs the plan realizes. Plural: a
   plan may realize more than one design. Omitted when there is no separate design.
-- **Work sequences** — the orders in which the work can be taken, where the plan has more than
+- **Work sequences** — the orders in which the work can be done, where the plan has more than
   the single front-to-back reading its task list implies.
 - **Superseded plans** — the plans this one supersedes, named, with what carries over from each as history. Plural: a plan may supersede a series that came before it. **Superseded** rather than *replaced* because it states the authority — a superseded plan is not merely earlier, it no longer governs.
 - **Architecture** — the phases and how they group the tasks; characterize each phase (e.g. an atomic behavior-neutral conversion versus a test-first build).
