@@ -88,6 +88,13 @@ removes the disclosure and keeps every claim true by stating it at a lower resol
 making the record say something that did not happen. The developer is the authority on what
 counts, and the git history is not reached by the edit.
 
+**A project does not name its downstream consumers** in its own files
+(`a-project-does-not-name-its-consumers`) — not in the installed packages, not in its own working
+state. A consumer list inverts the dependency direction, drifts silently, and publishes other
+people's projects to everyone who reads the file. A project named because a **decision was about
+it** is unaffected; what a tool needs in order to reach the consuming projects lives in
+per-machine configuration under `~/.config/`, outside the repository.
+
 **Vocabulary** (`vocabulary.md`): the terms every other package and every project uses, since
 foundation defines the artifacts they all write into. It states **deferred**, **suspended**, and
 **out of scope** beside each other — *not yet*, *no longer*, *not here* — because they are

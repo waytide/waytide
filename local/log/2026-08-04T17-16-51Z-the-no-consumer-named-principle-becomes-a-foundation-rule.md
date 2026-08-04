@@ -1,0 +1,2 @@
+# The no-consumer-named principle becomes the foundation rule `a-project-does-not-name-its-consumers`, binding on every project that installs foundation, rather than staying a log entry or an observation
+</content>
