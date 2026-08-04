@@ -41,23 +41,47 @@ filesystem search, after a package was folded and every consumer needed reaching
 
 ## What it does
 
-- **Surveys, read-only by default** — per project: which packages are installed, which are
-  behind the composite's published heads, whether the tree is clean, whether it is level with
-  its remote.
-- **Refreshes on selection**, not automatically — running each project's own
-  `refresh-packages.sh`, writing that project's decision-log entry, committing, and pushing.
-  Each project is a separate repository, so each push is confirmed rather than swept.
-- **Drives the existing tooling** rather than reimplementing it.
+**Superseded on 2026-08-04**, while the feature realizing this item was being designed. What
+stood here was a read-only **survey** — per project, which packages are installed, which are
+behind the composite's published heads, whether the tree is clean, whether it is level with its
+remote — with refresh offered on selection. The developer directed otherwise: **the tool detects
+no status at all.**
+
+- **Discovery only.** It reads the registry, walks the included paths, applies the exclusions,
+  and reports the consuming projects it found. It does not fetch, does not compare against
+  anything, and reports nothing about a project's condition.
+- **The user directs what is taken on** — one consuming project, or all of them. The tool does
+  not select, rank, or recommend.
+- **Refreshing packages is not a default action.** It is one thing that may be directed, never
+  what happens because a project was reached.
+- **Drives the existing tooling** rather than reimplementing it, where anything is driven at all.
+
+**All consuming projects** means the projects that are **not excluded** — the actionable set.
+An excluded path is not reported, not flagged, and not counted; nothing is done to it, which is
+what excluding it does. So the discovery output and *all consuming projects* are the same list.
 
 ## What is not settled
+
+**All four were settled on 2026-08-04** by the feature realizing this item; the deliberation is
+in its loop record. Kept here as written, with each answer beside it, since this item is still
+in the queue and is read as current.
 
 - **Whether the registry holds a scan root, an explicit list, or a root plus exceptions.** The
   argument for a root is that a list drifts, which is the same argument that keeps consumers
   out of the repository; the argument for exceptions is that a scan cannot see another volume
   and cannot distinguish a live consumer from an abandoned clone or a pull-proof mid-run.
-- **Its file format and name** under `~/.config/waytide/`.
+  — **Settled:** the question dissolved. The three were one mechanism at different depths, so
+  the registry is **one list of walked paths**, each tested with the published discriminator
+  before it is descended, and it carries excluded paths as well as included ones.
+- **Its file format and name** under `~/.config/waytide/`. — **Settled:**
+  `~/.config/waytide/consuming-projects.toml`, **TOML**, `included` and `excluded` array keys.
+  The script takes **no parsing dependency** and reads a documented restricted subset, refusing
+  what falls outside it.
 - **Whether the principle becomes a foundation rule, an observation, or stays a log entry.**
-  Put to the developer on 2026-08-04 and not answered.
+  Put to the developer on 2026-08-04 and not answered. — **Settled:** a **foundation rule**,
+  `a-project-does-not-name-its-consumers`.
+- **What happens to the historical records that name a plain consumer.** — Unchanged by the
+  feature; the disclosure rule governs it, as this item already recorded.
 - **What happens to the historical records that name a plain consumer.** The live case was
   corrected on 2026-08-04, and so were the historical records, which is a departure from the
   system's stance of leaving them as written. Not exposing the developer's other projects
@@ -78,3 +102,5 @@ discovery logic — the registry's shape decides most of the script.
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 9:36:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 9:52:06 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:24:10 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:26:32 AM PT

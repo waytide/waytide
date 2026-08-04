@@ -1,0 +1,2 @@
+# "All consuming projects" means the projects that are not excluded — the actionable set — so an excluded path is not reported, not flagged, and not counted, and the discovery output is that same list
+</content>
