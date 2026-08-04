@@ -6,10 +6,10 @@ is developed under one shared history, then published to its own component repo 
 *installs* the packages, so this file is hand-maintained for the composite and does
 not match the one the installer generates.
 
-**At the start of a session, read every rule file under `system/` — and under `local/rules/`,
-if this repository ever adds one — and follow them.** There is no `local/rules/` here today;
-it is named because the read instruction and the binding rule both name it unconditionally, so
-adding one would not require remembering to change this file.
+**At the start of a session, read every rule file under `system/` — and under `local/rules/` —
+and follow them.** `local/rules/` was empty here until 2026-08-04, and was named unconditionally
+anyway, because the read instruction and the binding rule both name it without a condition. That
+is why its first rule needed no change to this file beyond this sentence.
 
 The rule packages live at the top level of `system/` — `system/foundation/`,
 `system/language/`, and so on, including each package's `vocabulary.md` glossary where it
