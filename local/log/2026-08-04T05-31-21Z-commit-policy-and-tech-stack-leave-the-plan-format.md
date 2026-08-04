@@ -1,0 +1,1 @@
+# Commit policy and Tech Stack are removed from the implementation plan format — the first restated the git package's conventions in a second place to keep true, and the second answered per plan a question a project answers once

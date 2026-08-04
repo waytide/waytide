@@ -5,7 +5,7 @@ How a project's **plans and design documents** are written. The package covers b
 The rules govern how those documents are written:
 
 - **An implementation plan reads in a settled order** — Goal, Source design,
-  Architecture, Process notes, Tasks, and so on (`plan-document-format`).
+  Supersedes, Architecture, Process notes, Tasks (`plan-document-format`).
 - **A design doc shares a common spine** — summary or premise, motivation,
   substantive sections, dated Settled resolutions, and an Out of Scope / Deferred
   tail (`design-document-format`).
