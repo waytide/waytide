@@ -1,0 +1,1 @@
+# `website` and `constant` are exempt from the no-downstream-consumers principle — the website is part of Waytide at large and Constant is a reference project for Waytide, so each is named because a decision was about it rather than because it installed the packages

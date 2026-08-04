@@ -18,10 +18,15 @@ filesystem search, after a package was folded and every consumer needed reaching
 - **The registry lives in `~/.config/waytide/`.** Outside the repository entirely, so the
   constraint below holds without depending on `.gitignore` staying correct. It is per-machine,
   which is what this configuration is.
-- **No consuming project is named in Waytide's own files**, neither `system/` nor `local/`. A
+- **No downstream consumer is named in Waytide's own files**, neither `system/` nor `local/`. A
   package knowing its consumers inverts the dependency direction, and a maintained list of them
   is the drifting corpus this system argues against. That principle is the reason the registry
   is outside the repository rather than in `local/`.
+- **Two projects are exempt, and not as exceptions.** `website` is **part of Waytide at large**,
+  and `constant` is **a reference project for Waytide** — the worked example the method is shown
+  through. Neither is named here as a consumer; each is named because a decision was about it.
+  A plain downstream consumer, named only because it installed the packages, is what the
+  principle excludes.
 - **The script itself is committed**, at the composite root beside `report-direct-commits.sh`
   and `install-all.sh`. It names no consumer; it reads the registry. Committed consumer-facing
   tooling is already established there.
@@ -51,13 +56,19 @@ filesystem search, after a package was folded and every consumer needed reaching
   out of the repository; the argument for exceptions is that a scan cannot see another volume
   and cannot distinguish a live consumer from an abandoned clone or a pull-proof mid-run.
 - **Its file format and name** under `~/.config/waytide/`.
-- **Whether the no-consumers-recorded principle becomes a foundation rule, an observation, or
-  stays a log entry.** Put to the developer on 2026-08-04 and not answered.
-- **What happens to the places that already name consuming projects** — the Constant example
-  design calls `constant` and `env-var` "two consuming projects", and the plan-fold migration
-  record carries all three with filesystem paths. Put to the developer on 2026-08-04 and not
-  answered. Migration records name repositories that content actually crossed into, which may
-  be a different case from a standing claim about the set.
+- **Whether the principle becomes a foundation rule, an observation, or stays a log entry.**
+  Put to the developer on 2026-08-04 and not answered.
+- **What happens to the historical records that name a plain consumer.** The live case was
+  corrected on 2026-08-04 — the Constant example design no longer calls `constant` and `env-var`
+  "two consuming projects", and its open question about the second project is dropped. What
+  remains is in completed records: two decision-log entries, a feature record, two work session
+  records, and the plan-fold migration record. **Correcting the migration record would make it
+  false** — increment 7 actually reached that repository, and a record of a transition that
+  omits where the content went is not a smaller record but a wrong one.
+- **Whether `evt-env_var` may stay in the `code/ruby` rules** as the illustration of the
+  gem-name underscore convention, in `releasing-a-gem` and the package README. It names a real
+  project, but as a naming example rather than as a record that the project installed anything —
+  the way the rules illustrate with `Upload`.
 
 **Why:** a package change is not finished when the component repositories are pushed — it is
 finished when the projects reading those rules have them. Nothing detects a consumer left on
@@ -71,3 +82,4 @@ discovery logic — the registry's shape decides most of the script.
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 9:36:34 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 9:52:06 AM PT

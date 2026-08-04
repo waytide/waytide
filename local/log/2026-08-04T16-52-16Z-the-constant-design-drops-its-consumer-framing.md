@@ -1,0 +1,1 @@
+# The Constant example design no longer names a plain downstream consumer — the "two consuming projects" sentence is generalized and the open question about the second project is dropped, since the design's subject is what demonstrates the method rather than who installs it

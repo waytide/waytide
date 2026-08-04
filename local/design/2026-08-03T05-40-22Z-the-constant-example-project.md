@@ -17,9 +17,9 @@ controls conventions, the test structure, the hinge cycle, and the artifact dire
 separately. What they look like together — what a project looks like while being built this
 way — is not demonstrated anywhere.
 
-**The packages have no consumer that is read as one.** They are exercised by two consuming
-projects, `constant` and `env-var`, and by pull-proofs that install and discard. Nothing
-presents a project as a worked example.
+**The packages have no consumer that is read as one.** They are exercised by projects that
+install them and by pull-proofs that install and discard. Nothing presents a project as a
+worked example.
 
 **What `constant` already holds**, as of 2026-08-03:
 
@@ -148,7 +148,6 @@ designs use. The transcript, the home page, and the projection they rest on went
 - **Whether the home-page transcript walks through work recorded here** — see *Producing and
   Presenting Waytide's Self-Explanation — Design* in the `website` project, which holds the
   home page.
-- **Whether `env-var`, the second consuming project, has a part in this.**
 - **The plan that sequences any of it.** Not written; this design settles direction only.
 
 ---
@@ -156,3 +155,4 @@ designs use. The transcript, the home page, and the projection they rest on went
 Authored by Scott Bellware on Sun Aug 2 2026 at 10:44:57 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:48:30 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 9:52:06 AM PT
