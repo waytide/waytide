@@ -1,0 +1,1 @@
+# The plan format's "Supersedes" section becomes "Superseded plans" — the failure was grammatical rather than lexical, since a bare verb with its subject and object absent leaves the direction unreadable where every sibling heading is a noun

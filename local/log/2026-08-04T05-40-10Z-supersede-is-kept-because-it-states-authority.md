@@ -1,0 +1,1 @@
+# "Supersede" is kept over "replace" because it states authority — a superseded plan is not merely earlier, it no longer governs — and the section is plural because a plan may supersede a series that came before it

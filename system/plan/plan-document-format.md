@@ -4,7 +4,7 @@ An implementation plan (`waytide/local/plans/*.md`) is titled `# <Title> — Imp
 
 - **Goal** — one paragraph: what the plan achieves.
 - **Source design** — a pointer to the `waytide/local/design/` doc the plan realizes (omit only when there is no separate design).
-- **Supersedes** — when the plan replaces an earlier one, name it and say what carries over as history.
+- **Superseded plans** — the plans this one supersedes, named, with what carries over from each as history. Plural: a plan may supersede a series that came before it. **Superseded** rather than *replaced* because it states the authority — a superseded plan is not merely earlier, it no longer governs.
 - **Architecture** — the phases and how they group the tasks; characterize each phase (e.g. an atomic behavior-neutral conversion versus a test-first build).
 - **Process notes** — how the tasks are worked (test-first, controls usage, and that **code is not specified in the plan** — see plans-no-code-samples).
 - **Tasks** — each a single checkbox (`- [ ] Task N: <name>`) stating intended **behavior**, not code; completed tasks may carry inline notes recording reworks, drops, and supersessions.
@@ -20,3 +20,4 @@ An implementation plan (`waytide/local/plans/*.md`) is titled `# <Title> — Imp
 Authored by Scott Bellware on Sat Jul 18 2026 at 5 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 10:30:52 PM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 10:35:20 PM PT
