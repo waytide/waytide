@@ -133,6 +133,9 @@ path can be commented out rather than deleted.
 - **2026-08-04 — no status detection, and no default refresh.** Given as a direct instruction,
   in answer to a hinge the agent had put on what *behind* should be measured against. It
   supersedes the deferred item's survey-and-refresh framing and narrows the tool to discovery.
+- **2026-08-04 — branch deletion.** Confirmed through the selection interface after the merge.
+  The branch was local only and never pushed, so no remote branch was deleted, and no worktree
+  had to be removed first — the feature was worked branch-only.
 
 ## Verification
 
@@ -191,3 +194,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:24:10 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:43:25 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:46:32 AM PT
