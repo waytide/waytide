@@ -1,0 +1,1 @@
+# Consuming projects are not recorded in Waytide's files, neither `system/` nor `local/` — a package knowing its consumers inverts the dependency direction, and a maintained list of them is the drifting corpus the system argues against

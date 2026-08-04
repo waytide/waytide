@@ -1,0 +1,1 @@
+# The registry of known consuming projects lives in `~/.config/waytide/`, outside the repository entirely — per-machine configuration, so the no-consumers-recorded constraint holds without depending on `.gitignore` staying correct

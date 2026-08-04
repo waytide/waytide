@@ -1,0 +1,1 @@
+# An orchestrator that surveys the consuming projects and drives each one's refresh is registered as a deferred item, unranked in an otherwise empty queue — it closes the third leg of a pipe whose first two legs are already checked, since nothing detects a consumer left on stale rules
