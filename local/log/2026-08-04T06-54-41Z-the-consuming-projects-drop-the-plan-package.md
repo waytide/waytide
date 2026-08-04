@@ -1,0 +1,1 @@
+# `constant`, `env-var`, and `website` drop `waytide/system/plan/` and refresh — the four rules return under `waytide/system/foundation/`, and the migration record is complete with every increment done

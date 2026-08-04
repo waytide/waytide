@@ -5,8 +5,9 @@ Execution plan for retiring the `plan` component repository and moving its four 
 
 - **Source:** `system/plan/` in this repository, published to `https://github.com/waytide/plan`.
 - **Destination:** `system/foundation/`, published to `https://github.com/waytide/foundation`.
-- **Consuming projects holding the source:** `constant`, `env-var`, and `website`, each with
-  `waytide/system/plan/` installed by `git subtree`.
+- **Consuming projects holding the source:** `constant` and `env-var` at
+  `/Users/sbellware/projects/eventide/`, and `website` at `/Users/sbellware/projects/waytide/`,
+  each with `waytide/system/plan/` installed by `git subtree`.
 
 ## Why
 
@@ -63,8 +64,13 @@ and there is no longer one.
    left as written. **Done 2026-08-03.**
 6. **Publish `foundation`.** **Done 2026-08-03.**
 7. **Remove `waytide/system/plan/` from `constant`, `env-var`, and `website`**, each a subtree
-   removal in a repository this plan does not reach. **Not done — the developer's, in those
-   repositories.**
+   removal in a repository this plan does not reach. **Done 2026-08-03.** In each: the directory
+   removed and committed on its own, then `refresh-packages.sh` run so the same four rules
+   returned under `waytide/system/foundation/`, then a decision-log entry recorded in that
+   project and the whole pushed. Each project was clean, on `master`, and level with its remote
+   before and after. The refresh carried `design-by-efferent`, `language`, and `versioning`
+   forward in the same pass, which is more than this migration required and is noted in each
+   project's log entry.
 8. **Archive `https://github.com/waytide/plan`.** **Done 2026-08-03.** Archived rather than
    deleted: the repository is the trail for anyone who installed the package before this, and its
    final commit is reachable from `foundation`'s history. Its description was rewritten first —
@@ -73,6 +79,10 @@ and there is no longer one.
    where the content went without having to open it.
 
 ## What is true in between
+
+**This window did not open.** Increments 7 and 8 ran in the same sitting as the rest, so no
+project stood with both copies for any appreciable time. What follows describes the state the
+plan had prepared for.
 
 **Until increment 7 runs, the three consuming projects hold both copies.** They have
 `waytide/system/plan/` from the old package and, once they refresh `foundation`, the same four
@@ -90,3 +100,4 @@ whatever this repository last pushed, and nothing in the composite splits to it 
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 11:47:02 PM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 11:54:41 PM PT
