@@ -1,0 +1,1 @@
+# Planning spans three artifacts across two packages — design, implementation plan, and migration record — and nothing names the activity they share or places them beside each other; recorded as an observation because they may be correctly separate
