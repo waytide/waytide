@@ -1,0 +1,1 @@
+# Foundation gains a `vocabulary.md` — deferred, suspended, and out of scope are stated beside each other for the first time, along with projection, reconcile, working-state artifact, and recognizable-content line, and the one substitution the package enforces: work session record, never bare "session record"

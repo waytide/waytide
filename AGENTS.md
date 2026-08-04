@@ -12,8 +12,9 @@ it is named because the read instruction and the binding rule both name it uncon
 adding one would not require remembering to change this file.
 
 The rule packages live at the top level of `system/` — `system/foundation/`,
-`system/language/`, and so on, including each package's `vocabulary.md` glossary (its
-terms are binding and can't be applied unread). Read `system/foundation/` first; it
+`system/language/`, and so on, including each package's `vocabulary.md` glossary where it
+has one (its terms are binding and can't be applied unread; not every package has one, and
+its absence is not a defect). Read `system/foundation/` first; it
 defines the system. The rules override default behavior where they conflict;
 explicit user instructions still win.
 

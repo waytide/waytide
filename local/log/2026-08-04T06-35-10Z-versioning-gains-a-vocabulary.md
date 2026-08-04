@@ -1,0 +1,1 @@
+# Versioning gains a `vocabulary.md` holding one term — product generation, the leading version segment, a product-management declaration rather than a compatibility claim, and the only term the package introduces that semver does not already define

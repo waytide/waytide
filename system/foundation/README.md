@@ -64,6 +64,13 @@ citation becomes a dependency only where the citing rule **will not work** witho
 package. Motivation is not the test, and a "standalone" claim is about what must be installed
 rather than about what a rule's prose may name.
 
+**Vocabulary** (`vocabulary.md`): the terms every other package and every project uses, since
+foundation defines the artifacts they all write into. It states **deferred**, **suspended**, and
+**out of scope** beside each other — *not yet*, *no longer*, *not here* — because they are
+confused most where nothing distinguishes them; and defines **projection**, **reconcile**,
+**working-state artifact**, and **recognizable-content line**. Its one substitution is **work
+session record**, never bare "session record".
+
 This package includes no others — everything else includes it. It cites several, which is
 exactly the distinction the rule above draws.
 

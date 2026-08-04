@@ -1,0 +1,1 @@
+# The read instruction no longer promises a `vocabulary.md` in every package — `git`, `plan`, and `code/ruby` have none and want none, so the instruction, `install.sh`, `AGENTS.md`, the announce rule, and the language README now say the file is written where a package has terms rather than to complete a set

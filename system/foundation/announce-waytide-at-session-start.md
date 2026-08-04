@@ -208,7 +208,8 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   longer testable from ordinary use.
 
   **The hook still carries the whole instruction.** The developer's command names the read,
-  but what the agent is to do with it — read `foundation/` first, read each `vocabulary.md`,
+  but what the agent is to do with it — read `foundation/` first, read each `vocabulary.md`
+  a package has,
   read the project's own `local/rules/` as well, leave the other working directories out of
   the read, print the deferred queue when the read is done, wait for the developer's request,
   print no package count — reaches the agent only through `additionalContext`.
@@ -302,3 +303,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:27:36 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
