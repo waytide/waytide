@@ -1,0 +1,1 @@
+# Disclosure is the one reason to edit a historical record — the standing rule that records are left as written holds against every later convention but not against content the project had no standing to publish, and the correction reduces resolution rather than falsifying, since the disclosure was at least true

@@ -82,6 +82,12 @@ citation becomes a dependency only where the citing rule **will not work** witho
 package. Motivation is not the test, and a "standalone" claim is about what must be installed
 rather than about what a rule's prose may name.
 
+**A historical record is edited for one reason only** — that it discloses what should not have
+been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
+removes the disclosure and keeps every claim true by stating it at a lower resolution, never by
+making the record say something that did not happen. The developer is the authority on what
+counts, and the git history is not reached by the edit.
+
 **Vocabulary** (`vocabulary.md`): the terms every other package and every project uses, since
 foundation defines the artifacts they all write into. It states **deferred**, **suspended**, and
 **out of scope** beside each other — *not yet*, *no longer*, *not here* — because they are
