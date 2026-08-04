@@ -24,9 +24,7 @@ registry from `~/.config/waytide/`*, which was the sole item in the queue and ga
 
 ## Setup
 
-No `**State:**` line: the feature is in flight, which is what the absence of the line states.
-One of the four state words is written here when the feature concludes or is suspended.
-
+- **State:** Completed
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/consuming-project-orchestrator`
 - **Base:** `f19057602d3063cde9b7876cea75928186a87685`, from `master`
@@ -136,11 +134,50 @@ path can be commented out rather than deleted.
   in answer to a hinge the agent had put on what *behind* should be measured against. It
   supersedes the deferred item's survey-and-refresh framing and narrows the tool to discovery.
 
+## Verification
+
+**This repository has no automated suite**, so `run-suite-before-commit` had nothing to run —
+the same state the `versioning` feature recorded. What stands in its place is the manual
+exercise run before the script was committed, and it is not a suite:
+
+- **Discovery**, against a fixture — projects found at depth zero and nested; an excluded clone
+  absent; a `waytide/system/` directory that is not a git repository not reported; an
+  authoring-source lookalike not reported; this repository itself not reported when named
+  directly; a leading `~` expanded; a missing included path skipped with a note.
+- **Refusal**, five paths — no registry, an inline array, an unclosed array, an unquoted path,
+  an unknown key. Each names the line that caused it and exits non-zero.
+- **The real registry** — three consuming projects on this machine, all found.
+
+The exercise found one defect, corrected before the commit: nothing-found and
+everything-excluded reported the same message, which would have sent the developer to the
+included paths when the exclusions were the cause.
+
+**What is not protected.** The script has no regression protection. Adding it needs a test
+harness this repository does not have, and that is left open rather than pretended away.
+
+## Conclusion
+
+**Completed 2026-08-04.** The intent is built and integrated into `master`. Worked branch-only,
+so the working tree returned to `master` at the conclusion.
+
+**No gate applied at the merge**, per the feature lifecycle: a feature is verified before
+integrating, and the merged result is a combination neither branch ran. There was no affirmation
+step, a feature having no finding to promote into the decision log.
+
+**What the feature leaves behind it**, and what is deliberately not part of it: `foundation`
+changed twice here — the `a-project-does-not-name-its-consumers` rule and its README paragraph —
+so the package wants publishing to its component repository and then carrying to the consuming
+projects. That is the loop this tool exists to close, and it will be its first use for its actual
+purpose. It is a publish, not a feature, so it is not folded into this record.
+
 ## Related records
 
 - The deferred item this realizes: *An orchestrator reaches the consuming projects, reading its
-  registry from `~/.config/waytide/`*, which stays in the queue until the feature carries it
-  out — an item is resolved by the work being done, not by the work beginning.
+  registry from `~/.config/waytide/`* **(deleted)** — carried out 2026-08-04 as
+  `read-consuming-projects.sh` at the composite root, reading
+  `~/.config/waytide/consuming-projects.toml` and printing the actionable set. Its survey and
+  refresh framing was superseded during the work: the tool detects no status, and refreshing is
+  not a default action. The queue is now empty.
 - The loop record for this feature's design:
   `waytide/local/loops/2026-08-04T16-54-36Z-consuming-project-orchestrator.md`.
 
@@ -152,4 +189,5 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:14:35 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:24:10 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
-</content>
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:43:25 AM PT

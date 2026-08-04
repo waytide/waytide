@@ -274,7 +274,10 @@ answered in place, since it is still in the queue and read as current.
 
 ## State
 
-No code yet, and every question the feature opened with is settled.
+**The feature completed on 2026-08-04.** The loop ran nine cycles, all attended, and the
+script was built and integrated into `master`. Nothing below is open.
+
+Every question the feature opened with is settled.
 
 **The registry** is one list of walked paths, each tested before it is descended; it carries
 excluded paths as well as included ones; it is **TOML** with `included` and `excluded` array
@@ -284,10 +287,15 @@ dependency**, reading a documented restricted subset and refusing what falls out
 **The principle** is now the foundation rule `a-project-does-not-name-its-consumers`.
 
 **The tool** is discovery only — no status detection, no default refresh, what is taken on
-directed by the user.
+directed by the user. It is `read-consuming-projects.sh`, at the composite root.
 
-Next: what the discovery reports and in what form, which is the last thing between here and the
-build.
+**What the loop is worth noting for.** Three of the nine cycles resolved by the developer
+**rejecting the option set rather than choosing from it** — the registry's shape, the exclusion
+mechanism, and the comparison the survey would have rested on. In each the options were built on
+a distinction that did not survive being questioned: two of them were one mechanism presented as
+several, and the third asked for a judgment about a cost without showing what the cost was. The
+built-in escape carried every one of those, which is the case the gates' second result names —
+the best answer being one the agent could not produce.
 
 ---
 
@@ -299,3 +307,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:24:10 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:26:32 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:43:25 AM PT
