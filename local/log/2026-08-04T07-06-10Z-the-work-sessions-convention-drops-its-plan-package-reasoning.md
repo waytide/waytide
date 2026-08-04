@@ -1,0 +1,1 @@
+# The work-sessions convention no longer explains its format's home by contrast with the `plan` package, which no longer exists — the past-versus-forward-looking distinction is kept as the reason a work session record is not shaped like a plan, but it no longer decides where a format lives

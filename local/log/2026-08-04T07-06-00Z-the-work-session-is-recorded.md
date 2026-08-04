@@ -1,0 +1,1 @@
+# The work session is recorded as *The website leaves and the system turns on itself* — the source question answered as a projection, the website material moved to its own project, the work-session term and the plan document format settled, two vocabularies written, and the `plan` package folded into `foundation`
