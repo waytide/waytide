@@ -169,4 +169,3 @@ script from the repository and writes their own registry.
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
-</content>
