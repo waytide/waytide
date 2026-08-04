@@ -65,10 +65,12 @@ and there is no longer one.
 7. **Remove `waytide/system/plan/` from `constant`, `env-var`, and `website`**, each a subtree
    removal in a repository this plan does not reach. **Not done — the developer's, in those
    repositories.**
-8. **Archive `https://github.com/waytide/plan`.** **Not done — outward-facing, and the
-   developer's call.** It is left as it stands rather than deleted: the repository is the trail
-   for anyone who installed the package before this, and its final commit is reachable from
-   `foundation`'s history.
+8. **Archive `https://github.com/waytide/plan`.** **Done 2026-08-03.** Archived rather than
+   deleted: the repository is the trail for anyone who installed the package before this, and its
+   final commit is reachable from `foundation`'s history. Its description was rewritten first —
+   an archived repository is read-only — to *Waytide plan. Folded into Waytide foundation on
+   2026-08-03 — its rules now live there.*, so a reader who arrives at the repository is told
+   where the content went without having to open it.
 
 ## What is true in between
 
@@ -87,3 +89,4 @@ whatever this repository last pushed, and nothing in the composite splits to it 
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:40:35 PM PT
+Changed by Scott Bellware on Mon Aug 3 2026 at 11:47:02 PM PT

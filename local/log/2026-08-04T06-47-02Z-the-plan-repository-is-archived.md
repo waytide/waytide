@@ -1,0 +1,1 @@
+# The `waytide/plan` repository is archived rather than deleted — it is the trail for anyone who installed the package before the fold, and its description now says the rules moved to `foundation`, set before archiving since an archived repository is read-only
