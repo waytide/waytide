@@ -16,7 +16,6 @@ and `code/ruby` takes no dependency edge. No package's declared dependencies cha
 | `testing` | `foundation`, `language` | `code/ruby` |
 | `design-by-efferent` | `foundation`, `language`, `testing` | — |
 | `git` | nothing — standalone | `design-by-efferent`, `language` |
-| `plan` | nothing — standalone | `foundation`, `git` |
 | `code/ruby` | `foundation`, `language` | `testing` |
 
 Eleven `foundation` rules cite another package, among them features-convention,
@@ -45,9 +44,19 @@ require. So:
 `status-report-format` is the model citation: it names `testing` and is written for its
 absence — "If the project has not adopted the testing conventions, degrade this section."
 
-**Under this criterion no declaration currently in the system is wrong.** `git`'s standalone
+**Corrected 2026-08-03 — one declaration was wrong, and the package is gone.** The survey read
+`plan`'s standalone claim as surviving its references to `foundation`. It did not: every rule in
+that package was addressed to `waytide/local/plans/` or `waytide/local/design/`, directories only
+`foundation` creates, so the rules would not work in a project without it. That is the criterion
+this observation states, applied to the one case the observation itself got wrong — the survey
+checked whether a reference was *merely* naming, and did not check whether the referring rule had
+anything to govern without the referent. **`plan` was folded into `foundation` on 2026-08-03**,
+and its row is dropped from the table above; the row read
+*`plan` | nothing — standalone | `foundation`, `git`*.
+
+**Under this criterion no declaration now in the system is wrong.** `git`'s standalone
 claim survives its four references, because the claim is about what must be installed, not
-about what its prose may name. The same holds for `plan`, and for `foundation` citing
+about what its prose may name. The same holds for `versioning`, and for `foundation` citing
 everything. What was recorded as a defect in the sibling observation on `git` is, on this
 reading, only the runner — a project without Ruby genuinely cannot apply
 `run-suite-before-commit` as written — and not the cross-references.

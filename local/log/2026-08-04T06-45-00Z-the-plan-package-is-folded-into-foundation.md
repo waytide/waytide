@@ -1,0 +1,1 @@
+# The `plan` package is folded into `foundation` — its four rules move unrenamed, the package README is deleted, and the `plan` component repository stops receiving commits; the citation ran both ways, with `foundation` naming the package for the shape of artifacts it defines and every rule in the package addressed to directories only `foundation` creates

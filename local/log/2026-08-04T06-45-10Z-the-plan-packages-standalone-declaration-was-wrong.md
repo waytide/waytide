@@ -1,0 +1,1 @@
+# The `plan` package's standalone declaration was wrong by the criterion the system states — a rule addressed to `waytide/local/design/*.md` does not work in a project without that directory — and the citation observation that surveyed it and passed it is corrected

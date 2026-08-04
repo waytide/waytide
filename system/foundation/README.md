@@ -50,8 +50,26 @@ not carry over to a feature's intent: an experiment forecasts, reaches a verdict
 (affirmed/refuted/inconclusive/abandoned/superseded), and merges through a test gate on
 user-declared affirmation; a feature does none of those, ends
 completed/abandoned/superseded (or suspended), and is simply verified before it
-integrates. How plans and designs *read* (their sections) is the `plan` package's
-concern.
+integrates.
+
+**How plans and designs *read*** — their sections — is foundation's concern too, in four
+rules that were the `plan` package until it was folded in on 2026-08-03:
+
+- **An implementation plan's common elements read in a settled order** — Goals, Source designs,
+  Work sequences, Superseded plans, Architecture, Process notes, Tasks, among others the work
+  calls for. The order is settled; the set is not (`plan-document-format`).
+- **A design doc shares a common spine** — summary or premise, motivation, substantive sections,
+  dated **Settled** resolutions, and an **Out of Scope / Deferred** tail
+  (`design-document-format`).
+- **Plans contain no code samples**, and avoid committing to method or file names that are not
+  yet decided (`plans-no-code-samples`).
+- **A design section documenting a package dependency is titled "Package Dependency"**, never a
+  bare "Dependency", which is overloaded (`package-dependency-heading`).
+
+They live here because foundation defines the artifacts they format. Held separately, the
+citation ran both ways — foundation naming the `plan` package for the shape of documents
+foundation itself governs, and every rule in that package addressed to directories only
+foundation creates.
 
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/loops/`); foundation owns

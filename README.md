@@ -18,8 +18,8 @@ below (each has its own repository).
 
 - **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the
   `rules`/`observations`/`deferred`/`log` directories and how to work with them,
-  the one-line decision-log format, and the ISO-8601-UTC filename convention.
-  Everything includes it.
+  the one-line decision-log format, the ISO-8601-UTC filename convention, and how
+  plans and designs read. Everything includes it.
 - **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a
   word choice is a design decision. Name concepts literally, drop slang, and one
   rule per substitution.
@@ -31,7 +31,9 @@ below (each has its own repository).
   structure and naming, assertion form.
 - **[code/ruby](https://github.com/waytide/code-ruby)**. Prescriptive Ruby style.
 - **[git](https://github.com/waytide/git)**. Commit conventions.
-- **[plan](https://github.com/waytide/plan)**. How plans and design documents are written. Despite the name, it covers design docs as well as plans.
+- **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen:
+  semver, optionally prefixed by a product generation number. Not how a package is
+  built or published.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs
 them; a standalone package has none. Each arrow below points from a package to the
@@ -45,7 +47,7 @@ language            →  foundation
 
 foundation          →  (nothing — the base every other package builds on)
 git                 →  (nothing — standalone)
-plan                →  (nothing — standalone)
+versioning          →  (nothing — standalone)
 ```
 
 ## Using a package in a project
@@ -71,7 +73,7 @@ git subtree add --prefix waytide/system/language            https://github.com/w
 git subtree add --prefix waytide/system/testing             https://github.com/waytide/testing.git             master --squash
 git subtree add --prefix waytide/system/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
 git subtree add --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
-git subtree add --prefix waytide/system/plan                https://github.com/waytide/plan.git                master --squash
+git subtree add --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree add --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
 ```
 
@@ -83,7 +85,7 @@ git subtree pull --prefix waytide/system/language            https://github.com/
 git subtree pull --prefix waytide/system/testing             https://github.com/waytide/testing.git             master --squash
 git subtree pull --prefix waytide/system/code/ruby           https://github.com/waytide/code-ruby.git           master --squash
 git subtree pull --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
-git subtree pull --prefix waytide/system/plan                https://github.com/waytide/plan.git                master --squash
+git subtree pull --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree pull --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
 ```
 
