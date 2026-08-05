@@ -1,0 +1,1 @@
+# `install.sh` no longer names the planning directories in the bootstrap it generates, since the installer runs before a mode is chosen and naming the formal pair would write it back into a creative project on every regeneration

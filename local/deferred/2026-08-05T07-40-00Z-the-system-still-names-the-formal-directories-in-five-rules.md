@@ -1,4 +1,4 @@
-# The system still names the formal directories in six places that have no notion of mode
+# The system still names the formal directories in five rules that have no notion of mode
 
 The project-mode feature made **four** rules mode-aware — design-convention, plans-convention,
 design-document-format, and plan-document-format. It did not reach everything that names
@@ -11,12 +11,23 @@ mode on 2026-08-05 is what surfaced the rest.
 
 ## What still names the formal directories
 
-**`install.sh` is the one with teeth.** It generates the project-root `AGENTS.md`, and its
-working-directory list names `design/` and `plans/` with no notion of mode. A creative project
-that regenerates its bootstrap — which the refresh script tells a developer to do when
-foundation's bootstrap changes — **has the formal directories written back into it**. The
-migration corrected the generated file in each of the five projects by hand; nothing stops the
-generator undoing that.
+~~**`install.sh` is the one with teeth.**~~ **Corrected 2026-08-05.** It generated the
+project-root `AGENTS.md` with a working-directory list naming `design/` and `plans/` and no notion
+of mode, so a creative project regenerating its bootstrap — which `refresh-packages.sh` tells a
+developer to do when foundation's bootstrap changes — would have the formal directories written
+back into it, silently, as part of a routine refresh.
+
+**The generated list now names no planning directory at all**, saying *and the project's planning
+directories* instead. The installer cannot know the mode: it is chosen by the agent at the
+project's initiation, which is **after** an install has run, so at first install there is nothing
+to detect. The list was illustrative already — it omits `migration/` and `suspended/` — and its
+claim is that these are working state rather than rules, which survives without naming every one.
+A comment above `bootstrap()` records why, so the pair is not helpfully added back.
+
+**The five projects' own `AGENTS.md` files are left as they are**, naming `aspiration/` and
+`intention/` from the migration's hand-correction. They are more informative than what the
+generator now emits and no longer at risk from it — a regeneration would replace them with the
+mode-neutral wording, which is true rather than wrong.
 
 **Five rules name them in prose**, each for its own reason and not all of them wrong:
 
@@ -47,8 +58,7 @@ generator undoing that.
 five projects now run a mode that six pieces of the system do not know about. The installer is the
 one that can silently undo work, so it is the reason this is ranked rather than merely noted.
 
-**How to apply:** correct `install.sh`'s generated bootstrap first, since it is the only one that
-can reverse a migration. Then decide, for each of the five rules, whether it is naming the formal
+**How to apply:** the installer is corrected. For what remains, decide, for each of the five rules, whether it is naming the formal
 artifact deliberately or failing to account for the creative one. Related: the
 `a-project-works-in-formal-or-creative-mode` rule (what these need to account for), and the four
 planning conventions that were made mode-aware (the pattern to follow).
@@ -56,3 +66,4 @@ planning conventions that were made mode-aware (the pattern to follow).
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 12:40:00 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:49:21 AM PT
