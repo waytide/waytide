@@ -1,0 +1,1 @@
+# The project mode feature is initiated — formal (design and plan) or creative (aspiration and intention), chosen at project initiation with formal as the default and separate directories for the creative artifacts
