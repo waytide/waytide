@@ -1,0 +1,1 @@
+# `foundation` is published carrying the project mode rules, which makes them available rather than present — a project receives them only on refresh, so the four consuming projects are not refreshed before the migration runs
