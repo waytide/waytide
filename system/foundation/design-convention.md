@@ -2,7 +2,7 @@
 
 `waytide/local/design/` holds **design docs**: the settled *direction* of a piece of work, written before a plan sequences the build. A design decides what the shape should be — structure, construction, API, the model — and records the resolutions that later work rests on.
 
-**Under a project's intuitive mode this is `waytide/local/aspiration/`, and the artifact is an aspiration.** Everything in this rule holds unchanged for it — the mode changes the vocabulary and the directory, not a single obligation (see the a-project-works-in-formal-or-intuitive-mode rule). The rule is written in the formal mode's terms because formal is the default; read *design* as *aspiration* and `design/` as `aspiration/` in an intuitive project.
+**Under a project's intuitive mode this is `waytide/local/aspiration/`, and the artifact is an aspiration.** Everything in this rule holds unchanged for it — the mode changes the vocabulary and the directory, not a single obligation (see the a-project-works-in-formal-or-intuitive-mode rule). The rule is written in the formal mode's terms because formal is the default; read *design* as *aspiration* and `design/` as `aspiration/` in an intuitive-mode project.
 
 - **Relationship to plans:** a design settles direction; an `waytide/local/plans/` plan **realizes** it (an intention, in `waytide/local/intention/`, under intuitive mode). The design is the stable reference the plan points back to (its **Source design**).
 - **Two kinds:** a **feature/component design** (the structure, file layout, construction, and API of a unit of work) and a **methodology design** (a way of working, argued from a premise). Both live here; they share a spine, not a fixed section list.
@@ -24,3 +24,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 11:37:12 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT

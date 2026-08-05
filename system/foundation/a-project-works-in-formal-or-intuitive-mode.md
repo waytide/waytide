@@ -4,13 +4,21 @@ A Waytide project works in one of two **modes**, chosen when the project is init
 for its life. The mode decides what the project's two planning artifacts are **called** and
 **where they live**:
 
-| Mode | The settled-direction artifact | The sequencing artifact |
+| Mode | The direction artifact | The sequencing artifact |
 |---|---|---|
 | **formal** (the default) | a **design**, in `waytide/local/design/` | a **plan**, in `waytide/local/plans/` |
 | **intuitive** | an **aspiration**, in `waytide/local/aspiration/` | an **intention**, in `waytide/local/intention/` |
 
 The pairing is on a near/far axis: a design and an aspiration both answer *what are we going
 toward*; a plan and an intention both answer *what are we going to do*.
+
+**Write *an intuitive-mode project*, never *an intuitive project*.** In this field *intuitive*
+means **easy to use**, and a reader meets that sense first. The compound **intuitive mode** does
+not collide with it — the noun it qualifies is a way of working rather than a thing to be used —
+but **an intuitive project** reads as *a project that is easy to understand*, which is a claim
+this rule never makes. The collision lands on the noun phrase alone, so the whole of the remedy
+is to keep *mode* in it. Named for the finding that established it: the intuitive-mode experiment,
+affirmed 2026-08-05.
 
 ## The conventions are the same in both modes
 
@@ -46,17 +54,31 @@ plans-convention, design-document-format, plan-document-format, and plans-no-cod
 each govern one of the pair, so a reader needs the concrete names in front of them; a rule whose
 whole subject is the sequencing artifact cannot coherently decline to say what it is called.
 
-**A rule that merely *mentions* one of them generalizes.** It says **the settled-direction
-artifact** or **the sequencing artifact** — the terms this rule's own table is headed with — or
-**the project's planning directories** where the pair is meant collectively. It does not name
+**A rule that merely *mentions* one of them generalizes.** It says **the direction artifact** or
+**the sequencing artifact** — the terms this rule's own table is headed with — or **the project's
+planning directories** where the pair is meant collectively. It does not name
 `design/`, `plans/`, `aspiration/`, or `intention/`, and it does not name both pairs either.
+
+**Both terms end in *artifact*, and that is load-bearing.** They name a **class of file** so a
+rule can state an obligation across the pair — the same job **working-state artifact** does for
+the log entries, designs, and experiments it spans, and nobody writes one of those either; they
+write a deferred item. The trailing class noun is what keeps a covering term from becoming a word
+the work is **done in**.
+
+**So neither term is shortened to a bare noun.** *Direction* and *sequencing* alone would be
+sayable — *"I'm writing the direction"* — and a sayable, mode-neutral name for the artifact is a
+**third planning vocabulary**, available in both modes. Adopting it would erase the difference
+this rule exists to create, and the mode would survive as a directory name while ceasing to be a
+stance. The phrases read clumsily in a sentence about doing the work, and that is the property
+being kept, not a cost being tolerated: a rule says *the direction artifact* **about** the work,
+and a developer says *aspiration* or *design* **while** doing it.
 
 **Why generalize rather than name both everywhere.** Two reasons, and the second is the stronger:
 
 - **Consistency.** Naming both pairs in every rule that touches them puts the mode in as many
   places as there are such rules, and nothing checks that a new one complies. A rule naming only
-  `plans/` reviews, publishes, and installs cleanly, and is simply wrong in an intuitive project
-  until someone follows it into a directory that does not exist.
+  `plans/` reviews, publishes, and installs cleanly, and is simply wrong in an intuitive-mode
+  project until someone follows it into a directory that does not exist.
 - **Resilience in a consuming project.** An installed rule that encodes concrete directory names
   is wrong the moment Waytide changes them, and stays wrong until that project refreshes. A rule
   written in the general terms **survives the change**: what the terms bind to lives in one
@@ -123,9 +145,9 @@ Filled for intuitive mode:
 ```markdown
 # This project works in intuitive mode — its planning artifacts are an aspiration and an intention
 
-**What this rule binds:** this project works in **intuitive mode**. Its settled-direction
-artifact is an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact
-is an **intention**, in `waytide/local/intention/`. `waytide/local/design/` and
+**What this rule binds:** this project works in **intuitive mode**. Its direction artifact is
+an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact is an
+**intention**, in `waytide/local/intention/`. `waytide/local/design/` and
 `waytide/local/plans/` are not used here. That is the whole of what this file binds, and it
 is fixed — a project's mode does not change after initiation.
 
@@ -185,11 +207,11 @@ a project where only `design/` and `plans/` hold anything.
 **A contradiction is surfaced and never resolved by assumption.** The agent says what it found and
 asks; it does not pick a mode and proceed.
 
-**The failure this exists to prevent** is an intuitive project whose mode rule is accidentally
-deleted. Without the check, its absence would read as formal, and the agent would write designs
-and plans into `design/` and `plans/` while `aspiration/` and `intention/` held the project's
-actual planning artifacts — the project's planning split across two vocabularies, working
-incorrectly, with nothing announcing it.
+**The failure this exists to prevent** is an intuitive-mode project whose mode rule is
+accidentally deleted. Without the check, its absence would read as formal, and the agent would
+write designs and plans into `design/` and `plans/` while `aspiration/` and `intention/` held the
+project's actual planning artifacts — the project's planning split across two vocabularies,
+working incorrectly, with nothing announcing it.
 
 ## The session-start notice does not report the mode
 
@@ -228,7 +250,11 @@ the selection interface, with formal as the default, and write the chosen mode i
 no mode rule is present, ask — the absence is a question never asked, not a default. Check the
 planning directories against the rule and surface any contradiction rather than assuming a mode.
 Work the directories the mode names, applying the same conventions and document formats in
-either. Do not switch a project's mode after initiation. Related: the design-convention and
+either. In a rule that merely mentions one of the artifacts, write **the direction artifact** or
+**the sequencing artifact**, keeping the trailing class noun — do not shorten either to a bare
+`direction` or `sequencing`, which would be a third planning vocabulary. Write **an
+intuitive-mode project**, never **an intuitive project**. Do not switch a project's mode after
+initiation. Related: the design-convention and
 plans-convention (the directories, both named in each), the design-document-format and
 plan-document-format rules (the shapes, identical in both modes), the rules-convention (where a
 local rule lives and what it looks like), the file-names rule (the datetime prefix), the
@@ -244,3 +270,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 12:16:03 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:18:14 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT

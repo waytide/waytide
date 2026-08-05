@@ -1,0 +1,1 @@
+# The covering terms for the mode-dependent planning artifacts become **the direction artifact** and **the sequencing artifact** — *settled-* is dropped from the first as carrying nothing the table does not already say, and both keep the trailing class noun

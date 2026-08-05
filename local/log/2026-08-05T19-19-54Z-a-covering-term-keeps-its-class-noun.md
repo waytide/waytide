@@ -1,0 +1,1 @@
+# A covering term over the planning pair keeps its trailing class noun — a bare *direction* or *sequencing* would be sayable, and a sayable mode-neutral name for the artifact is a third planning vocabulary that erases the difference the mode exists to create

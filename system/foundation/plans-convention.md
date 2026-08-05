@@ -2,7 +2,7 @@
 
 `waytide/local/plans/` holds **implementation plans**: the sequenced, task-by-task build of a settled direction. A plan turns a design into an ordered set of increments a worker executes one at a time.
 
-**Under a project's intuitive mode this is `waytide/local/intention/`, and the artifact is an intention.** Everything in this rule holds unchanged for it — including supersession and the checkbox tasks, since the mode changes the vocabulary and the directory and not a single obligation (see the a-project-works-in-formal-or-intuitive-mode rule). The rule is written in the formal mode's terms because formal is the default; read *plan* as *intention* and `plans/` as `intention/` in an intuitive project.
+**Under a project's intuitive mode this is `waytide/local/intention/`, and the artifact is an intention.** Everything in this rule holds unchanged for it — including supersession and the checkbox tasks, since the mode changes the vocabulary and the directory and not a single obligation (see the a-project-works-in-formal-or-intuitive-mode rule). The rule is written in the formal mode's terms because formal is the default; read *plan* as *intention* and `plans/` as `intention/` in an intuitive-mode project.
 
 - **Relationship to design:** a plan **realizes** an `waytide/local/design/` doc — it names its **Source design** and sequences the build the design settled. Under intuitive mode an intention realizes an aspiration, in `waytide/local/aspiration/`. Design settles *direction*; the plan settles *order*. A plan may exist without a separate design doc for small work, but when a design exists the plan points back to it.
 - **Supersession:** a later plan may **supersede** one or more earlier ones, reshaping their pending tasks around a new direction while keeping each earlier plan's **completed tasks as history** (the superseded tasks are marked, not deleted). The later plan names them in its **Superseded plans** section — plural, since a plan may supersede a series that came before it.
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 10:35:20 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT

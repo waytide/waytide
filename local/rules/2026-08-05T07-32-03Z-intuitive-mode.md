@@ -1,8 +1,8 @@
 # This project works in intuitive mode — its planning artifacts are an aspiration and an intention
 
-**What this rule binds:** this project works in **intuitive mode**. Its settled-direction
-artifact is an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact
-is an **intention**, in `waytide/local/intention/`. `waytide/local/design/` and
+**What this rule binds:** this project works in **intuitive mode**. Its direction artifact is
+an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact is an
+**intention**, in `waytide/local/intention/`. `waytide/local/design/` and
 `waytide/local/plans/` are not used here. That is the whole of what this file binds, and it
 is fixed — a project's mode does not change after initiation.
 
@@ -43,3 +43,4 @@ following the four planning rules unchanged. Do not use `waytide/local/design/` 
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT

@@ -1,0 +1,1 @@
+# *Heading* and *vector* are rejected as the direction artifact's covering term — *heading* is a nautical figure that also collides with the document sense the package-dependency-heading rule is about, and *vector* is an imported mathematical term carrying a magnitude the artifact has none of
