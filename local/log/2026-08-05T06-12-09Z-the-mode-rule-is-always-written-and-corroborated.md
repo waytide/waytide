@@ -1,0 +1,1 @@
+# A project mode rule is written whichever mode is chosen, an absent rule means the question was never asked rather than that the project is formal, and the planning directories corroborate the rule so an accidentally deleted creative rule cannot silently revert a project to formal
