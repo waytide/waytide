@@ -137,6 +137,13 @@ between *creative* and *intuitive-with-a-convention-about-not-saying-an-intuitiv
   a read that the evidence leaned affirmed with a convention against writing *an intuitive
   project*. The verdict was put with **inconclusive** — the forecast's own prediction — and
   **refuted** beside it.
+- **Merging without a suite** — confirmed by the developer on 2026-08-05 through the selection
+  interface. No test suite exists in this repository, so the lifecycle's merge gate had nothing to
+  run; the merge proceeded on the verification recorded below, which was put as what stands in for
+  the suite. Holding the merge was offered beside it.
+- **Branch deletion** — confirmed by the developer on 2026-08-05 through the selection interface.
+  The local branch `experiment/intuitive-mode` is deleted after the merge. No worktree and no
+  remote branch were involved, so the confirmation covered the local branch alone.
 
 ## The verdict
 
