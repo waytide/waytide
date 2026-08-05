@@ -1,0 +1,1 @@
+# Resilience in a consuming project to upstream change is the stronger argument for the generalization — an installed rule carrying concrete directory names is wrong the moment Waytide changes them and stays wrong until that project refreshes

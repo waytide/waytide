@@ -39,6 +39,37 @@ needs no supersession, and that an aspiration is not measured by completion the 
 Identical conventions abandon that claim. The modes are a vocabulary and a location, and the
 machinery beneath them is one machinery.
 
+## How another rule refers to these artifacts
+
+**A rule that is *about* one of these artifacts names both.** The design-convention,
+plans-convention, design-document-format, plan-document-format, and plans-no-code-samples rules
+each govern one of the pair, so a reader needs the concrete names in front of them; a rule whose
+whole subject is the sequencing artifact cannot coherently decline to say what it is called.
+
+**A rule that merely *mentions* one of them generalizes.** It says **the settled-direction
+artifact** or **the sequencing artifact** — the terms this rule's own table is headed with — or
+**the project's planning directories** where the pair is meant collectively. It does not name
+`design/`, `plans/`, `aspiration/`, or `intention/`, and it does not name both pairs either.
+
+**Why generalize rather than name both everywhere.** Two reasons, and the second is the stronger:
+
+- **Consistency.** Naming both pairs in every rule that touches them puts the mode in as many
+  places as there are such rules, and nothing checks that a new one complies. A rule naming only
+  `plans/` reviews, publishes, and installs cleanly, and is simply wrong in a creative project
+  until someone follows it into a directory that does not exist.
+- **Resilience in a consuming project.** An installed rule that encodes concrete directory names
+  is wrong the moment Waytide changes them, and stays wrong until that project refreshes. A rule
+  written in the general terms **survives the change**: what the terms bind to lives in one
+  place — this rule and the project's own mode rule — so an upstream change moves one file rather
+  than every file that mentioned a path. The fewer specifics an installed rule carries, the less
+  of it can go stale between refreshes.
+
+**What this gives up, stated plainly.** A rule that says *the sequencing artifact* tells a reader
+what governs but not where their own project keeps things; they reach this rule, or their
+project's mode rule, to resolve it. That self-evidence at every site is real and is being traded
+away deliberately, on the judgment that it is not achievable at scale while remaining
+maintainable.
+
 ## The choice is the agent's to put, and it is put at initiation
 
 **Through the selection interface**, per the design-by-efferent
@@ -211,3 +242,4 @@ interface).
 Authored by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:16:03 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:18:14 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT

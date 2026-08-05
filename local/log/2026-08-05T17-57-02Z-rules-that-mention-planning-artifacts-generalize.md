@@ -1,0 +1,1 @@
+# A rule that is about a planning artifact names both modes; a rule that merely mentions one generalizes to the settled-direction artifact, the sequencing artifact, or the planning directories — overturning the project-mode feature name-both-everywhere decision
