@@ -1,0 +1,1 @@
+# A rename across a vowel boundary breaks the indefinite article invisibly — the word that breaks is the one *before* the word being replaced, so a search-and-replace is structurally blind to it and only reading the result finds it

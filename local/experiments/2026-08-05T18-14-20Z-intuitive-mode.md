@@ -6,7 +6,7 @@ Does **intuitive** name the human-centric project mode better than **creative** 
 
 ## Setup
 
-- **State:** (in flight — no state line value until it concludes)
+- **State:** Affirmed
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/intuitive-mode`
 - **Base:** `e887bd71dd4fb4b388563e65622fbaa026bf8778`, from `master`
@@ -128,7 +128,42 @@ between *creative* and *intuitive-with-a-convention-about-not-saying-an-intuitiv
 - **The five consuming projects were not touched**, so affirming this experiment starts a second
   migration of the same shape as the one run the day before.
 
+## Confirmations
+
+- **Working location** — branch only, chosen at initiation on 2026-08-05 through the selection
+  interface.
+- **Gating cadence** — unattended, chosen at initiation beside the working location.
+- **Affirmation** — declared by the developer on 2026-08-05 through the selection interface, over
+  a read that the evidence leaned affirmed with a convention against writing *an intuitive
+  project*. The verdict was put with **inconclusive** — the forecast's own prediction — and
+  **refuted** beside it.
+
+## The verdict
+
+**Affirmed.** *Intuitive* names the human-centric mode better than *creative* does. The gain in
+manner-accuracy is real, the collision is confined to one noun phrase a convention can avoid, and
+the two defects the experiment confirmed — the axis mismatch with *formal*, and the implied slight
+on the other mode — are untouched by either word and so argue for neither.
+
+**What the affirmation carries.** The rename stands in the composite. What it does **not** yet
+carry is the second migration: every project holding a mode rule holds the word in that rule's
+filename, and none of them were touched here. That is outstanding work, not a completed part of
+this experiment.
+
+**The convention the verdict rests on** — do not write *an intuitive project*; write *a project in
+intuitive mode*, or name the mode without the noun phrase. It is unwritten as a rule, and the
+finding that produced it is recorded above.
+
+## Verification at the conclusion
+
+No test suite exists in this repository, so the lifecycle's merge gate had nothing to run. What
+was confirmed instead, on 2026-08-05: no occurrence of *creative* remains under `system/` or
+`local/rules/`; every remaining occurrence is in a historical record, which correctly keeps the
+word it was written with. No broken indefinite article remains outside the loop record's own
+quotation of the defect. Every shell script in the repository parses.
+
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 11:14:20 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:17:55 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
