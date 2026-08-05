@@ -1,0 +1,1 @@
+# The normalization of the modes to a generalization — planning directories and planning files — is deferred, trading self-evident rule files for one place to keep true, against a nine-file obligation that recurs and is enforced by nothing

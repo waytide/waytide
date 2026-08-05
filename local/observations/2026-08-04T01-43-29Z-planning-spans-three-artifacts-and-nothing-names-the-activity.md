@@ -74,7 +74,22 @@ It also touches this observation's remaining open question from the other side. 
 planning **activity** has two modes, the question of whether it wants a name is not the same
 question in each.
 
+## A deferred item now proposes the covering term this warns against
+
+**The modes are normalized to a generalization** (2026-08-05) proposes stating the mode-dependent
+artifacts once, as **planning directories** and **planning files**, rather than naming both pairs
+in every rule that touches them. That is a covering term of the kind this observation cautions
+about, proposed for a reason this observation did not anticipate: the cost of *not* having one,
+counted at nine files with an obligation that recurs and is enforced by nothing.
+
+The caution still applies and is recorded in that item. What may distinguish the case is scope —
+the term there spans two pairs that are **deliberately identical in every obligation**, where this
+observation's concern is a term spanning three artifacts that differ in what they produce and when
+they are written. Whether `migration/` falls inside the proposed term is the point where the two
+questions meet, and it is unsettled in both.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 6:43:29 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:52:00 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 1:12:40 AM PT
