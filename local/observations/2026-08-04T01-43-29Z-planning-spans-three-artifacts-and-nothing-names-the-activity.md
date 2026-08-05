@@ -61,6 +61,20 @@ under it. But the three differ in what they produce and when they are written, a
 spans them would have to be vague enough to fit all three — which is how a word that explains
 nothing gets into a vocabulary that exists to prevent exactly that.
 
+## A second observation approaches the same artifacts from another direction
+
+**Design and planning are process-centric; aspiration and intention are their human-centric
+corollaries** (2026-08-04) proposes a **mode**, chosen at a project's initiation, under which
+design and plan are replaced by aspiration and intention. It reaches the same two artifacts
+this observation is about, and it is a **parallel pair rather than an umbrella**, so the
+warning above does not land on it directly — but the underlying test does, and both
+observations turn on it: does a new word do work, or rename something already named.
+
+It also touches this observation's remaining open question from the other side. If the
+planning **activity** has two modes, the question of whether it wants a name is not the same
+question in each.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 6:43:29 PM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 10:52:00 PM PT

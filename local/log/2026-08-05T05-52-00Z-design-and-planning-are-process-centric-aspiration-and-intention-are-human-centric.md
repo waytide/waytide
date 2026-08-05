@@ -1,0 +1,1 @@
+# Design and planning are process-centric and aspiration and intention are their human-centric corollaries, recorded as an observation rather than a rule because whether the two are separate modes or one mode with looser obligations is undecided
