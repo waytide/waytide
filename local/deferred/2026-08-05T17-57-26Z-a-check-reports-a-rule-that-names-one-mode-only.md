@@ -12,7 +12,7 @@ naming it concretely at all, or a rule about one naming a single pair.
 planning artifacts shrank the surface from nine files to seven, and the seven that remain are
 **about** those artifacts, so they are stable by design. What is unchanged is that **nothing
 enforces either half of the convention**. A new rule naming only `plans/` still reviews,
-publishes, and installs cleanly, and is wrong in every creative project until someone follows it
+publishes, and installs cleanly, and is wrong in every intuitive project until someone follows it
 into a directory that does not exist. The rules corrected on 2026-08-05 were found by a search
 someone happened to run.
 
@@ -39,8 +39,9 @@ every future author remembering it is a convention with a known failure mode and
 **How to apply:** write it at the composite root beside `report-direct-commits.sh` and
 `read-consuming-projects.sh`, reading `system/` and reporting per rule. Settle the *about* versus
 *mentions* question first — it decides whether the check is precise or merely advisory. Related:
-the `a-project-works-in-formal-or-creative-mode` rule (the convention it would check) and
+the `a-project-works-in-formal-or-intuitive-mode` rule (the convention it would check) and
 `report-direct-commits.sh` (the shape).
 
 ---
 Authored by Scott Bellware on Wed Aug 5 2026 at 10:57:26 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT

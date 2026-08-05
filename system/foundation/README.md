@@ -34,7 +34,7 @@ summary) and **next deferred item**.
 Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/local/plans/` (implementation plans
 that sequence a settled design), `waytide/local/design/` (design docs that settle direction
-first) — or, in a creative-mode project, `waytide/local/intention/` and
+first) — or, in an intuitive-mode project, `waytide/local/intention/` and
 `waytide/local/aspiration/` in their places — `waytide/local/experiments/` (recorded experiments that test a question),
 `waytide/local/features/` (the lifecycle record of a feature), `waytide/local/work-sessions/` (the narrative record of a work session), and
 `waytide/local/migration/` (execution plans for transitions of content **across a repository
@@ -89,14 +89,14 @@ removes the disclosure and keeps every claim true by stating it at a lower resol
 making the record say something that did not happen. The developer is the authority on what
 counts, and the git history is not reached by the edit.
 
-**A project works in formal or creative mode**, chosen at its initiation through the selection
-interface (`a-project-works-in-formal-or-creative-mode`). Formal is the default and its planning
+**A project works in formal or intuitive mode**, chosen at its initiation through the selection
+interface (`a-project-works-in-formal-or-intuitive-mode`). Formal is the default and its planning
 artifacts are a **design** and a **plan**, in `waytide/local/design/` and `waytide/local/plans/`;
-creative's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
+intuitive's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`. **The conventions and document formats are identical in both** — the
 mode changes the vocabulary and the directory and no obligation, because the words a project
 plans in are load-bearing. The chosen mode is recorded as a local rule named `formal-mode` or
-`creative-mode`, written whichever mode is chosen, and the planning directories are checked
+`intuitive-mode`, written whichever mode is chosen, and the planning directories are checked
 against it so a deleted rule cannot silently revert a project. It does not change after
 initiation.
 
@@ -170,3 +170,4 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 ## License
 
 Waytide is in early development and is **not yet licensed for use** — all rights reserved. A license, the Eventide Common Interest License, is forthcoming.
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT

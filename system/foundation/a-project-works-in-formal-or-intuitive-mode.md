@@ -1,4 +1,4 @@
-# A project works in formal or creative mode, chosen at its initiation
+# A project works in formal or intuitive mode, chosen at its initiation
 
 A Waytide project works in one of two **modes**, chosen when the project is initiated and held
 for its life. The mode decides what the project's two planning artifacts are **called** and
@@ -7,7 +7,7 @@ for its life. The mode decides what the project's two planning artifacts are **c
 | Mode | The settled-direction artifact | The sequencing artifact |
 |---|---|---|
 | **formal** (the default) | a **design**, in `waytide/local/design/` | a **plan**, in `waytide/local/plans/` |
-| **creative** | an **aspiration**, in `waytide/local/aspiration/` | an **intention**, in `waytide/local/intention/` |
+| **intuitive** | an **aspiration**, in `waytide/local/aspiration/` | an **intention**, in `waytide/local/intention/` |
 
 The pairing is on a near/far axis: a design and an aspiration both answer *what are we going
 toward*; a plan and an intention both answer *what are we going to do*.
@@ -55,7 +55,7 @@ artifact** or **the sequencing artifact** — the terms this rule's own table is
 
 - **Consistency.** Naming both pairs in every rule that touches them puts the mode in as many
   places as there are such rules, and nothing checks that a new one complies. A rule naming only
-  `plans/` reviews, publishes, and installs cleanly, and is simply wrong in a creative project
+  `plans/` reviews, publishes, and installs cleanly, and is simply wrong in an intuitive project
   until someone follows it into a directory that does not exist.
 - **Resilience in a consuming project.** An installed rule that encodes concrete directory names
   is wrong the moment Waytide changes them, and stays wrong until that project refreshes. A rule
@@ -84,8 +84,8 @@ initiated.
 ## The mode is recorded as a local rule named for it
 
 The chosen mode is written into `waytide/local/rules/` as a rule named **`formal-mode`** or
-**`creative-mode`**, carrying the ISO-8601-UTC filename prefix every local rule takes (see the
-file-names rule) — `2026-08-05T06-30-25Z-creative-mode.md`. It states that the project operates
+**`intuitive-mode`**, carrying the ISO-8601-UTC filename prefix every local rule takes (see the
+file-names rule) — `2026-08-05T06-30-25Z-intuitive-mode.md`. It states that the project operates
 under that mode and which conventions are therefore active.
 
 **It is a local rule rather than a setting** because that is what it is: a binding convention of
@@ -118,12 +118,12 @@ mode *this project* is in, and a project's mode does not change. Only the restat
 substance could drift, and it binds nothing, so a drift is a stale explanation rather than two
 binding rules in conflict.
 
-Filled for creative mode:
+Filled for intuitive mode:
 
 ```markdown
-# This project works in creative mode — its planning artifacts are an aspiration and an intention
+# This project works in intuitive mode — its planning artifacts are an aspiration and an intention
 
-**What this rule binds:** this project works in **creative mode**. Its settled-direction
+**What this rule binds:** this project works in **intuitive mode**. Its settled-direction
 artifact is an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact
 is an **intention**, in `waytide/local/intention/`. `waytide/local/design/` and
 `waytide/local/plans/` are not used here. That is the whole of what this file binds, and it
@@ -131,12 +131,12 @@ is fixed — a project's mode does not change after initiation.
 
 **Everything below explains the mode and binds nothing.** It is written out so this file
 stands on its own, and it describes the system as it stood when this project was initiated,
-which is the date in this filename. Waytide's own `a-project-works-in-formal-or-creative-mode`
+which is the date in this filename. Waytide's own `a-project-works-in-formal-or-intuitive-mode`
 rule holds the system's account.
 
 **The two modes.** A Waytide project works in one of two, chosen at its initiation. Under
 **formal**, the default, the artifacts are a **design** and a **plan**, in
-`waytide/local/design/` and `waytide/local/plans/`. Under **creative** they are an
+`waytide/local/design/` and `waytide/local/plans/`. Under **intuitive** they are an
 **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`. A design and an aspiration both answer *what are we going
 toward*; a plan and an intention both answer *what are we going to do*.
@@ -170,7 +170,7 @@ describes; that is the accepted cost of one template rather than two shapes.
 
 **The title states the mode and its consequence**, rather than either alone. The filename already
 carries the mode, so a title repeating only that would state a label a reader cannot act on;
-a title carrying only the directories would leave the word *creative* nowhere in the line a
+a title carrying only the directories would leave the word *intuitive* nowhere in the line a
 person scanning `waytide/local/rules/` actually reads.
 
 **The provenance footer is the ordinary one**, per record-rule-authorship-in-a-footer.
@@ -179,13 +179,13 @@ person scanning `waytide/local/rules/` actually reads.
 
 **A project's directories are evidence, and they are checked against the mode rule.**
 `waytide/local/aspiration/` or `waytide/local/intention/` present in a project with no
-`creative-mode` rule is a **contradiction**, not a formal project. So is a `creative-mode` rule in
+`intuitive-mode` rule is a **contradiction**, not a formal project. So is a `intuitive-mode` rule in
 a project where only `design/` and `plans/` hold anything.
 
 **A contradiction is surfaced and never resolved by assumption.** The agent says what it found and
 asks; it does not pick a mode and proceed.
 
-**The failure this exists to prevent** is a creative project whose mode rule is accidentally
+**The failure this exists to prevent** is an intuitive project whose mode rule is accidentally
 deleted. Without the check, its absence would read as formal, and the agent would write designs
 and plans into `design/` and `plans/` while `aspiration/` and `intention/` held the project's
 actual planning artifacts — the project's planning split across two vocabularies, working
@@ -222,9 +222,9 @@ mean something precise, and corroborating it against the directories is what kee
 from silently reverting a project to a mode it is not in — the same stance the rest of the system
 takes toward ambiguous input, which is to refuse it rather than to guess.
 
-**How to apply:** at a project's initiation, put **formal or creative** to the developer through
+**How to apply:** at a project's initiation, put **formal or intuitive** to the developer through
 the selection interface, with formal as the default, and write the chosen mode into
-`waytide/local/rules/` as a `formal-mode` or `creative-mode` rule with its datetime prefix. Where
+`waytide/local/rules/` as a `formal-mode` or `intuitive-mode` rule with its datetime prefix. Where
 no mode rule is present, ask — the absence is a question never asked, not a default. Check the
 planning directories against the rule and surface any contradiction rather than assuming a mode.
 Work the directories the mode names, applying the same conventions and document formats in
@@ -243,3 +243,4 @@ Authored by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:16:03 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:18:14 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT

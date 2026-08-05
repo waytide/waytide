@@ -73,8 +73,62 @@ because the noun it qualifies is a mode of working rather than a thing to be use
 
 ## What actually happened
 
-To be recorded against the forecast.
+Recorded against the forecast, point by point.
+
+| # | Forecast | Outcome |
+|---|---|---|
+| 1 | The axis mismatch survives the rename | **Held.** Untouched. |
+| 2 | The implied slight transfers exactly | **Held.** |
+| 3 | *Intuitive* collides with the software sense | **Held, but not where predicted** — see below |
+| 4 | *Intuitive* is more accurate about manner | **Held** |
+| 5 | The composite is mechanical | **Held, with a defect not forecast** — see the miss |
+| 6 | The five projects are the real cost | **Held**, and it became a decision rather than a cost |
+| 7 | Historical records untouched | **Held** |
+| 8 | I may be overweighting the collision | **Half wrong, and the correction is the finding** |
+
+### The finding: the collision is real, and it is in a phrase I did not forecast
+
+Forecast 8 guessed that *intuitive mode* as a compound might not invoke *intuitive interface*,
+because the noun it qualifies is a mode of working rather than a thing to be used. **That is
+correct.** *A project works in formal or intuitive mode* reads cleanly, and so does *this project
+works in intuitive mode*.
+
+**But the rules do not only say *intuitive mode*. They say *an intuitive project*** — repeatedly,
+in the corroboration section, the failure-mode paragraph, and both directory conventions. And *an
+intuitive project* reads as **a project that is easy to understand**. The collision lands on the
+noun phrase, not the compound, and it lands hardest in exactly the sentences that explain what
+goes wrong.
+
+*A creative project* had no such reading.
+
+### The miss: the article
+
+**Not forecast at all.** *Creative* begins with a consonant and *intuitive* with a vowel, so every
+*a creative* had to become *an intuitive* — eight occurrences. A search-and-replace cannot see it,
+because the word that breaks is the one **before** the word being replaced. Found by reading the
+result rather than by any check.
+
+It is the most transferable thing here: **any rename across a vowel boundary carries this, and the
+tooling that performs the rename is structurally blind to it.**
+
+### What the experiment cannot settle
+
+Whether manner-accuracy outweighs the collision is a judgment about the word, and the experiment
+was run to inform it rather than to decide it. What it adds to the judgment is that the cost is
+not evenly spread: the compound is fine and the noun phrase is not, so the choice is really
+between *creative* and *intuitive-with-a-convention-about-not-saying-an-intuitive-project*.
+
+## Findings
+
+- **The rename fixes neither structural defect.** Both names sit off the axis *formal* is on, and
+  both imply a slight on the other mode. Whatever the verdict, those are unaddressed.
+- **The collision is localized.** *Intuitive mode* is fine; *an intuitive project* is not.
+- **A vowel-boundary rename breaks articles invisibly**, and nothing in the system would have
+  caught it.
+- **The five consuming projects were not touched**, so affirming this experiment starts a second
+  migration of the same shape as the one run the day before.
 
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 11:14:20 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:17:55 AM PT
