@@ -1,0 +1,1 @@
+# The mode rule is one template filled, self-contained but binding only its first paragraph — the project own mode, which cannot go stale because a mode does not change — with the restated system substance a dated snapshot that binds nothing

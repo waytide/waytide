@@ -71,6 +71,79 @@ file being opened.
   first aspiration cannot be placed until the mode is known, the directory exists only once
   something is in it, and git does not track an empty directory.
 
+## What the mode rule says
+
+**One template, filled.** The two possible files differ only in the mode name, the two artifact
+names, and the two directories — so the text is not composed at initiation, it is substituted.
+Nothing in it is specific to the project beyond that, and the developer is not asked for a
+reason: the file is one of exactly two documents in the system, apart from its date and its
+provenance footer.
+
+**Only the first paragraph binds.** A local rule is a **dated snapshot** — the file-names rule
+calls it a dated decision in that project's history — so the explanation below the binding claim
+states the system as it stood at that project's initiation and is not obliged to track this rule
+afterward. That is safe precisely because the binding part **cannot go stale**: it says which
+mode *this project* is in, and a project's mode does not change. Only the restated system
+substance could drift, and it binds nothing, so a drift is a stale explanation rather than two
+binding rules in conflict.
+
+Filled for creative mode:
+
+```markdown
+# This project works in creative mode — its planning artifacts are an aspiration and an intention
+
+**What this rule binds:** this project works in **creative mode**. Its settled-direction
+artifact is an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact
+is an **intention**, in `waytide/local/intention/`. `waytide/local/design/` and
+`waytide/local/plans/` are not used here. That is the whole of what this file binds, and it
+is fixed — a project's mode does not change after initiation.
+
+**Everything below explains the mode and binds nothing.** It is written out so this file
+stands on its own, and it describes the system as it stood when this project was initiated,
+which is the date in this filename. Waytide's own `a-project-works-in-formal-or-creative-mode`
+rule holds the system's account.
+
+**The two modes.** A Waytide project works in one of two, chosen at its initiation. Under
+**formal**, the default, the artifacts are a **design** and a **plan**, in
+`waytide/local/design/` and `waytide/local/plans/`. Under **creative** they are an
+**aspiration** and an **intention**, in `waytide/local/aspiration/` and
+`waytide/local/intention/`. A design and an aspiration both answer *what are we going
+toward*; a plan and an intention both answer *what are we going to do*.
+
+**The conventions are identical in both modes.** An aspiration is written exactly as a design
+is, an intention exactly as a plan is — the same document shapes, the same dated **Settled**
+resolutions, the same behavior-stated checkbox tasks, the same supersession. The mode changes
+the vocabulary and the directory and no obligation. The design-convention,
+plans-convention, design-document-format, and plan-document-format rules govern both modes
+and each names both directories.
+
+**Why a mode that changes no obligation is worth having.** A word is not a label applied to a
+thought after the fact — it is the thought's working surface, so choosing a word chooses a
+concept. A developer writing an *aspiration* is doing something different from one writing a
+*design*, and the difference is in them rather than in the document.
+
+**Why:** the words a project plans in are load-bearing, so which pair it uses is a binding
+convention rather than a preference, and it belongs where the project's binding conventions
+are read.
+
+**How to apply:** write this project's settled direction as an aspiration in
+`waytide/local/aspiration/` and its sequencing as an intention in `waytide/local/intention/`,
+following the four planning rules unchanged. Do not use `waytide/local/design/` or
+`waytide/local/plans/` here.
+```
+
+**The formal fill substitutes the other mode's terms throughout** — *formal mode*, *a design* in
+`waytide/local/design/`, *a plan* in `waytide/local/plans/`, and the unused pair named as
+`aspiration/` and `intention/`. It restates the default at length, which every other rule already
+describes; that is the accepted cost of one template rather than two shapes.
+
+**The title states the mode and its consequence**, rather than either alone. The filename already
+carries the mode, so a title repeating only that would state a label a reader cannot act on;
+a title carrying only the directories would leave the word *creative* nowhere in the line a
+person scanning `waytide/local/rules/` actually reads.
+
+**The provenance footer is the ordinary one**, per record-rule-authorship-in-a-footer.
+
 ## The planning directories corroborate the rule
 
 **A project's directories are evidence, and they are checked against the mode rule.**
@@ -119,3 +192,4 @@ interface).
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:16:03 AM PT
