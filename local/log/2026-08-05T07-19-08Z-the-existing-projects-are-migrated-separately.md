@@ -1,0 +1,1 @@
+# The projects that predate the project mode are migrated to an explicit mode rule as a separate deliberate effort rather than being prompted one at a time, deferred and gated on the feature concluding and foundation being published
