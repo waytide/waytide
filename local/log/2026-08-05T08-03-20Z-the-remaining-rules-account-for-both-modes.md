@@ -1,0 +1,1 @@
+# The four rules that named the formal planning directories without accounting for the creative ones are corrected — status-report-format, work-sessions-convention, plans-no-code-samples, and migration-convention — the foundation README having been correct as written

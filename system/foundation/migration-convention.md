@@ -8,7 +8,7 @@ this repository for another, or arriving from one, is planned and recorded here.
   into its own repository, a body of work moved to a project that will own it, one repository
   split into several or several merged into one, or existing conventions migrated into an
   installed system. If the content ends up under a different repository's root, it belongs here.
-- **What distinguishes it from a plan.** A `waytide/local/plans/` plan sequences a build
+- **What distinguishes it from a plan.** A `waytide/local/plans/` plan — or a `waytide/local/intention/` intention, under a project's creative mode — sequences a build
   **inside** this repository, against a design this repository settled. A migration plan
   sequences work that **crosses out of it**: the increments land in two repositories, the
   order matters because content is unavailable or duplicated in between, and the plan is not
@@ -41,7 +41,7 @@ it does not survive the session.
 **How to apply:** before moving content across a repository boundary, write a record here naming
 the source and destination, the increments in order, and what is true while the move is under
 way; record what happened against it as the work proceeds; and **keep the record** once the
-content has gone. Do not use `waytide/local/plans/` for a move that crosses out of the
+content has gone. Do not use the project's sequencing directory — `waytide/local/plans/`, or `waytide/local/intention/` — for a move that crosses out of the
 repository, and do not delete a migration record on completion. Related: the plans-convention
 (the plan that sequences work *within* this repository), the design-convention (a migration may
 realize a design, or may be mechanical enough to need none), the file-names rule (the filename
@@ -50,3 +50,4 @@ prefix), and the working-state-artifacts-carry-a-provenance-footer rule.
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 1:03:00 AM PT
