@@ -1,0 +1,1 @@
+# The phrase *an intuitive project* is not written — the software sense of *intuitive* (easy to use) lands on the noun phrase rather than on *intuitive mode*, so the mode is named as *a project in intuitive mode* or without the noun phrase at all

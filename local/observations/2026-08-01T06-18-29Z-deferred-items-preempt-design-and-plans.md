@@ -68,7 +68,7 @@ that the item is deleted, the log entry is one line, and the resulting rule stat
 conclusion? Promotion to an observation is one answer and is already practiced ad hoc. The
 session record is another, and is where this session's reasoning in fact survives.
 
-**Reconciled 2026-08-05.** This project moved to **creative mode**, so the directories named
+**Reconciled 2026-08-05.** This project moved to **intuitive mode**, so the directories named
 above are now `local/aspiration/` and `local/intention/`. The observation is left as written
 otherwise — it is a discovery record, and what it observed was true of the directories under
 the names they had.
@@ -77,3 +77,4 @@ the names they had.
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 11:18:29 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT

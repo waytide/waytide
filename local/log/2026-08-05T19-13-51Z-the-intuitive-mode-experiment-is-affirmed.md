@@ -1,0 +1,1 @@
+# The intuitive-mode experiment is affirmed on the developer's declaration — *intuitive* names the human-centric project mode better than *creative*, the gain in manner-accuracy outweighing a collision confined to one noun phrase, and the rename in the composite merges to master
