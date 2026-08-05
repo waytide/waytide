@@ -1,4 +1,4 @@
-# Waytide's Self-Explanation — Design
+# Waytide's Self-Explanation — Aspiration
 
 ## Premise
 
@@ -93,3 +93,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 11:19:58 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:23:41 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:39:26 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT

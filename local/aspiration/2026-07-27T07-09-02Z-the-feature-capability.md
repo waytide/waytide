@@ -1,4 +1,4 @@
-# The Feature Capability — Design
+# The Feature Capability — Aspiration
 
 ## Summary
 
@@ -189,3 +189,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 11:47:03 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:36:12 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT

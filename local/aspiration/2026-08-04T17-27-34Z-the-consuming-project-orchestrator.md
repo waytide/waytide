@@ -1,4 +1,4 @@
-# The consuming-project orchestrator — Design
+# The consuming-project orchestrator — Aspiration
 
 ## Summary
 
@@ -169,3 +169,4 @@ script from the repository and writes their own registry.
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT

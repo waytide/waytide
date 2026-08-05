@@ -1,4 +1,4 @@
-# Subagents Under Waytide — Design
+# Subagents Under Waytide — Aspiration
 
 ## Premise
 
@@ -94,3 +94,4 @@ the **mechanical** complement, never for a hinge.
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 6:02:22 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT

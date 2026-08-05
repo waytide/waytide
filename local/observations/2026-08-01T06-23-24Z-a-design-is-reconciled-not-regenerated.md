@@ -89,7 +89,13 @@ This composes with the definite detector rather than replacing it. A design nami
 that no longer resolves is a defect worth reporting whenever it is true; the session close is
 where the **semantic** divergence — the kind no check can find — is most cheaply judged.
 
+**Reconciled 2026-08-05.** This project moved to **creative mode**, so the directories named
+above are now `local/aspiration/` and `local/intention/`. The observation is left as written
+otherwise — it is a discovery record, and what it observed was true of the directories under
+the names they had.
+
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 11:23:24 PM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 11:29:41 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
