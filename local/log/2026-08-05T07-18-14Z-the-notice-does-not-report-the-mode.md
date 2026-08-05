@@ -1,0 +1,1 @@
+# The session-start notice does not report a project mode — the mode filename makes it mechanically readable, so declining is a judgment rather than a limitation, and a line reporting a fact that never changes is the furniture the notice already refuses

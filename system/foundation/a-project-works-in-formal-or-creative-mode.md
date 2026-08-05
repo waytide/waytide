@@ -160,6 +160,23 @@ and plans into `design/` and `plans/` while `aspiration/` and `intention/` held 
 actual planning artifacts — the project's planning split across two vocabularies, working
 incorrectly, with nothing announcing it.
 
+## The session-start notice does not report the mode
+
+**And the reason is not that it could not.** The mode rule's **filename** carries the mode, so
+`session-start.sh` could find it with the same kind of directory read it already performs for the
+installed packages. Declining is a judgment rather than a limitation.
+
+**The notice reports live or open state, and a mode is neither.** What is installed changes on an
+install or a refresh; the experiments and features it names are the ones that have **not
+concluded**, and the notice "grows only when there is something open". A project's mode is
+settled once and never changes, so a line reporting it would be identical every session for the
+life of the project — which is exactly the failure the announce-waytide-at-session-start rule
+names in keeping the deferred queue out of the notice: a line that is always present is read once
+and never again.
+
+**Where the mode is legible instead** is where every binding convention is: the rules the agent
+reads at the start of the session, one of which is the mode rule itself.
+
 ## The mode does not change after initiation
 
 A project's mode is settled when the project is initiated and is not switched later. What would
@@ -193,3 +210,4 @@ interface).
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:16:03 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 12:18:14 AM PT
