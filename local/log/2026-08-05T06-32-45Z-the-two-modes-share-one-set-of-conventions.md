@@ -1,0 +1,1 @@
+# The formal and creative modes share one set of conventions and document formats — the mode changes the vocabulary and the directory and no obligation, abandoning the claim that an intention needs no supersession

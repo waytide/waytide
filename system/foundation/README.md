@@ -34,7 +34,8 @@ summary) and **next deferred item**.
 Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/local/plans/` (implementation plans
 that sequence a settled design), `waytide/local/design/` (design docs that settle direction
-first), `waytide/local/experiments/` (recorded experiments that test a question),
+first) — or, in a creative-mode project, `waytide/local/intention/` and
+`waytide/local/aspiration/` in their places — `waytide/local/experiments/` (recorded experiments that test a question),
 `waytide/local/features/` (the lifecycle record of a feature), `waytide/local/work-sessions/` (the narrative record of a work session), and
 `waytide/local/migration/` (execution plans for transitions of content **across a repository
 boundary**, kept after the content has gone so the trail of where it went stays in the
@@ -87,6 +88,17 @@ been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The
 removes the disclosure and keeps every claim true by stating it at a lower resolution, never by
 making the record say something that did not happen. The developer is the authority on what
 counts, and the git history is not reached by the edit.
+
+**A project works in formal or creative mode**, chosen at its initiation through the selection
+interface (`a-project-works-in-formal-or-creative-mode`). Formal is the default and its planning
+artifacts are a **design** and a **plan**, in `waytide/local/design/` and `waytide/local/plans/`;
+creative's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
+`waytide/local/intention/`. **The conventions and document formats are identical in both** — the
+mode changes the vocabulary and the directory and no obligation, because the words a project
+plans in are load-bearing. The chosen mode is recorded as a local rule named `formal-mode` or
+`creative-mode`, written whichever mode is chosen, and the planning directories are checked
+against it so a deleted rule cannot silently revert a project. It does not change after
+initiation.
 
 **A project does not name its downstream consumers** in its own files
 (`a-project-does-not-name-its-consumers`) — not in the installed packages, not in its own working

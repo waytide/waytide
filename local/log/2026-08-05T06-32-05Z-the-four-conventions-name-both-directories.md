@@ -1,0 +1,1 @@
+# The four planning conventions each name both directories rather than the mode rule holding the substitution once, so a reader of any one rule sees the truth for their project without a second lookup

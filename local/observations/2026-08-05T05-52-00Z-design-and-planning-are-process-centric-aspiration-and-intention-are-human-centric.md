@@ -92,6 +92,32 @@ two directories under it.
 - **Where `migration/` falls.** The third planning artifact has no obvious human-centric
   corollary, and a mode that covers two of three planning artifacts is not yet a mode.
 
+## What was settled, 2026-08-04
+
+The developer directed the feature that realizes this, and it answered most of the above — one
+answer running **against** this observation's central argument, which is why the record is
+reconciled here rather than left to read as though it had predicted the outcome.
+
+- **It is two modes, with separate directories** — `local/aspiration/` and `local/intention/`.
+  The observation named the two-modes question decisive and separate directories the more
+  expensive answer; both went that way.
+- **Formal is the default.** `local/migration/` is out of scope.
+- **But the conventions and document formats are the same in both modes** — and that
+  **abandons this observation's strongest argument**. *Nobody supersedes an intention* was the
+  claim that made these two modes rather than two names; with shared conventions, an intention
+  **is** superseded exactly as a plan is, and is measured by completion the same way. What the
+  modes differ in is the **vocabulary and the directory**, and nothing else.
+- **The justification therefore moved**, and the system supplies it: `language-is-precise-here`
+  (a word is the thought's working surface) and `rules-install-a-mindset` (vocabulary is the most
+  direct lever on a mental model). The mode installs a stance in the person while the mechanics
+  stay identical. **This is a different claim from the one recorded above**, and the better one.
+- **The mode does not change after initiation**, deferred for further consideration.
+- **`install.sh` cannot issue the prompt**, as this observation anticipated — the mode is a rule
+  the agent follows, and the feature is built on that.
+
+Still open, and not answered by the feature: where `migration/` falls, and what a mixed project
+would do.
+
 ## Its relation to the observation beside it
 
 The **planning-spans-three-artifacts** observation asks whether the planning **activity** wants
@@ -103,3 +129,4 @@ work, or does it rename something that already had a name.
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:52:00 PM PT
+Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
