@@ -2,23 +2,9 @@
 
 A project running Waytide announces the system's presence through **two surfaces the harness renders**, not through anything the agent says:
 
-- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — the mark, what is installed, and what the developer can type to have it read:
+- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — what is installed, and what the developer can type to have it read:
 
 ```
-     __      /
-    /  \    /
-   |    |  /
-    \__/  /
-      | =/=
-     _|_/
-    / |
-     / \
-    /   \
-   /    /
-===========
-    | |
-  __|_|__
- (o)   (o)
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
@@ -39,24 +25,25 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 To load them now, type: load waytide.
 ```
 
-  **The mark leads the notice, immediately above the install line.** A single line break
-  separates them and no blank line, so it reads as the head of the notice rather than as a
-  separate block floating above it. It is the same mark in every project — it is Waytide's,
-  not a project's, so nothing configures it and nothing supplies a per-project alternative. It
-  is omitted from the further examples below, which are about the lines that vary.
+  **The notice carries no mark.** Waytide's mark led it, immediately above the install line,
+  from 2026-08-05 until 2026-08-06, and it now heads the **rule read** instead, printed by the
+  agent — see the mark-is-printed-when-the-rule-read-begins rule. A mark stands for the system
+  being brought into force, and a hook runs before the session, so this was the one surface that
+  could only ever show it at a moment when nothing was being loaded. The mismatch was already
+  written into the notice's own wording, which says **installed** and never *loaded* for exactly
+  that reason.
 
-  **Its backslashes are doubled in the script, and that is not cosmetic.** The notice is
-  interpolated into a JSON string by `printf` with no escaping, so a lone backslash begins a
-  JSON escape sequence — `\_` is not a valid one, the harness fails to parse the output, and
-  **the notice disappears with no error at all**. This is the same failure the load line's
-  no-quotation-marks constraint avoids, arriving through a different character. The mark is
-  written single-quoted in its JSON-ready form, every backslash doubled and every line break a
-  literal backslash-n, because single quotes are what let the source read as what reaches the
-  string. Anyone editing the art doubles every backslash they add, including one that ends a
-  line.
+  **The move took a hazard with it.** The mark's backslashes had to be doubled here, because the
+  notice is interpolated into a JSON string by `printf` with no escaping and a lone backslash
+  begins a JSON escape sequence — `\_` is not a valid one, the harness fails to parse the output,
+  and **the notice disappears with no error at all**. That constraint is now off the art
+  entirely; it still governs everything else this hook emits, and the load line's
+  no-quotation-marks rule below is the same hazard arriving through a different character.
 
-  **`WAYTIDE_QUIET` silences the mark with the rest of the notice**, and still does not silence
-  the read instruction — the mark is a surface the developer sees, and the instruction is not.
+  **`WAYTIDE_QUIET` still silences the mark**, but no longer by silencing this notice. The agent
+  prints the mark and cannot read the environment, so the opt-out reaches it as a sentence
+  appended to the read instruction. The read instruction itself stays unsilenced, as it always
+  has.
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
   canonical `**State:**` line (see the experiments-convention and the
@@ -244,7 +231,8 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   but what the agent is to do with it — read `foundation/` first, read each `vocabulary.md`
   a package has,
   read the project's own `local/rules/` as well, leave the other working directories out of
-  the read, print the deferred queue when the read is done, wait for the developer's request,
+  the read, print the mark at the read's head, print the deferred queue when the read is done,
+  wait for the developer's request,
   print no package count — reaches the agent only through `additionalContext`.
 
   **The instruction names the project's own `local/rules/`, unconditionally.** It named only
@@ -273,6 +261,29 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   **forbade what that rule requires**. The instruction now names the print as the last thing
   the read produces.
 
+  **And it names the mark print, and the one file the agent opens ahead of the others.** The
+  mark heads the read (see the mark-is-printed-when-the-rule-read-begins rule), and the agent
+  has read nothing at the instant it prints — so the instruction names
+  `foundation/mark-is-printed-when-the-rule-read-begins.md` as the first file to open, which is
+  what puts the figure in hand. The **art is not carried here**: it lives in that rule, which is
+  what takes it off this JSON channel and out from under the doubled-backslash constraint.
+
+  **It also requires the response that opens that file to carry no prose** — the tool call and
+  nothing else, no preamble and no account of what is about to be read. **The mark rule cannot
+  ask for this**, and that is why the sentence is here: the response it governs is the one that
+  reads that rule, so nothing in it is in hand when the agent writes there. This channel is the
+  only one that reaches the agent before any file is opened, which is the same reason it names
+  the file at all. Without the sentence the read opens on a line of the agent's narration
+  standing exactly where the mark is meant to stand — one rule file read ahead of the mark is
+  the concession that rule accepted, and a line of prose ahead of it is not.
+
+  **`WAYTIDE_QUIET` reaches the agent through this instruction, for the mark alone.** Everything
+  else the opt-out governs is rendered by the harness from this hook's output, so withholding
+  the output silences it. The mark is not — the agent prints it, and cannot read the
+  environment. So when the variable is set, the instruction gains a sentence saying to print no
+  mark, and says in the same breath that the read and the deferred queue are unaffected. That is
+  the opt-out's existing boundary restated where it now has to be enforced, not a new one.
+
   **The line says the rules are loaded; the notice's first line still says installed.** They
   are different claims about different things. The first line reports what a pre-session hook
   can observe — that the packages are on disk and the configuration is live. This line
@@ -285,7 +296,7 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   would disappear with no error at all, which is the silent failure this whole mechanism
   exists to avoid.
 
-- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **What this forbids is the notice**, not everything the agent prints at the start of a session: the agent does print the **deferred queue** once the rules are read, which is a different thing on a different surface and duplicates nothing the harness emits. See the print-the-deferred-queue-after-the-rule-read rule, which states why the queue is printed there rather than carried in this notice — a segment here renders every session and would stop being read.
+- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **What this forbids is the notice**, not everything the agent prints at the start of a session. Two things it prints are not the notice and duplicate nothing the harness emits: the **mark**, at the head of the read, and the **deferred queue**, once the read is done. See the mark-is-printed-when-the-rule-read-begins rule and the print-the-deferred-queue-after-the-rule-read rule. Both are bounded to the read and neither recurs, which is the reason each sits there rather than in this notice — a segment here renders every session and would stop being read.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list; the notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
 - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet — the notice and the read instruction are emitted in the same output, which means the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in; that is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one a developer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
@@ -300,13 +311,13 @@ cannot re-include a file inside an excluded directory, so a negation added under
 `.claude/settings.local.json` ignored.
 - **Adopting the status line replaces the developer's own.** A project-level `statusLine` overrides whatever the developer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the choice with the developer.
 
-**Opt-out:** set the `WAYTIDE_QUIET` environment variable to any non-empty value and both surfaces go quiet. **It does not silence the read instruction**, which is not a surface — the developer never sees it. Quieting a display must not disable the mechanism that carries the rules to the agent, or a personal preference would silently deactivate the system's governance, which is the class of failure the hook exists to answer. A developer sets it however they like — shell profile, `direnv`, or a personal `.claude/settings.json` `env` block. The opt-out lives in the developer's own environment, never in committed project content, so silencing is a personal preference and the default-on behavior travels with the repository to everyone who checks it out.
+**Opt-out:** set the `WAYTIDE_QUIET` environment variable to any non-empty value and both surfaces go quiet, along with the mark the agent prints at the head of the read. **The two are silenced differently**: the harness renders them from this hook's output, so withholding the output is enough, while the mark is the agent's and is silenced by a sentence appended to the read instruction. **It does not silence the read instruction itself**, which is not a surface — the developer never sees it. Quieting a display must not disable the mechanism that carries the rules to the agent, or a personal preference would silently deactivate the system's governance, which is the class of failure the hook exists to answer. A developer sets it however they like — shell profile, `direnv`, or a personal `.claude/settings.json` `env` block. The opt-out lives in the developer's own environment, never in committed project content, so silencing is a personal preference and the default-on behavior travels with the repository to everyone who checks it out.
 
 **What this costs:** the mechanism is specific to harnesses that read `.claude/settings.json`. Under any other harness there is no notice until equivalent glue is written for it — the system still loads through the `AGENTS.md` bootstrap, but silently. A harness setting that disables all hooks silences it too, and a newly placed `.claude/settings.json` may not take effect until the harness reloads its configuration.
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the mark leading the notice, immediately above the install line with a single line break and no blank line, with every backslash doubled in the script — a lone one makes the whole notice unparseable and silent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the instruction naming the project's own `local/rules/` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the mark out of the notice — it heads the rule read now, and the mark-is-printed-when-the-rule-read-begins rule governs it. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the instruction naming the project's own `local/rules/` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Keep it naming the mark print and the mark rule as the one file opened ahead of the others, keep it requiring the response that opens that file to carry the tool call and no prose, and keep the `WAYTIDE_QUIET` sentence appended to the instruction when the variable is set — that is the only channel the opt-out has to the mark. Keep the mark's art out of this hook: it belongs in the rule, where it is not a JSON literal. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the mark-is-printed-when-the-rule-read-begins rule (the mark, which this notice no longer carries), the print-the-deferred-queue-after-the-rule-read rule (the read's other bookend), the rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -339,3 +350,5 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:35:57 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:08:06 PM PT
