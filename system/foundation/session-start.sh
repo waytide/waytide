@@ -68,7 +68,7 @@ fi
 # is not a valid one, the harness fails to parse the output, and the notice vanishes with no
 # error at all. A doubled backslash is what produces one literal backslash. Anyone editing
 # this art has to double every backslash they add, including one that ends a line.
-mark='     __      /\n    /  \\    /\n   |    |  /\n    \\__/  /\n      | =/=\n     _|_/\n    / |\n     / \\\n    /   \\\n __/_____\\__\n|___________|\n    | |\n  __|_|__\n (o)   (o)'
+mark='     __      /\n    /  \\    /\n   |    |  /\n    \\__/  /\n      | =/=\n     _|_/\n    / |\n     / \\\n    /   \\\n   /    /\n===========\n    | |\n  __|_|__\n (o)   (o)'
 
 # "installed", not "loaded": the hook runs before the session, so at the moment the
 # notice prints, no rule file has been read. "Loaded" means brought into a runtime —

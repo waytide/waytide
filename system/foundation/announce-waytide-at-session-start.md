@@ -14,8 +14,8 @@ A project running Waytide announces the system's presence through **two surfaces
     / |
      / \
     /   \
- __/_____\__
-|___________|
+   /    /
+===========
     | |
   __|_|__
  (o)   (o)
@@ -338,3 +338,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 10:35:57 PM PT
