@@ -1,0 +1,1 @@
+# The working-directory list the session-start instruction carries is written once, in `session-start.sh`, rather than restated in the announce-waytide-at-session-start rule and checked for agreement — the two copies had already drifted, and removing the second makes the disagreement impossible rather than detectable

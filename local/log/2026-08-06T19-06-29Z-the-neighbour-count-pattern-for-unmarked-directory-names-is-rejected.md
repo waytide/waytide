@@ -1,0 +1,1 @@
+# The neighbour-count pattern for finding an unmarked planning-directory name is rejected — tested over `system/`, it produced six findings and no true one, and it cannot be tuned into working because the directories are named after the documents they hold, so an ordinary sentence listing document kinds is indistinguishable from a list of directories
