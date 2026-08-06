@@ -1,0 +1,1 @@
+# A package refresh does not reach a project's root AGENTS.md, because the bootstrap belongs to no package — so it drifts silently, and every consuming project's bootstrap was found behind the packages beneath it; regenerating it with `install.sh agents-md` is part of a refresh rather than a separate act
