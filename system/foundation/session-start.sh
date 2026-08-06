@@ -56,12 +56,29 @@ if [ "$count" = "1" ]; then
   noun=package
 fi
 
+# The mark, printed immediately above the notice.
+#
+# Single-quoted, and written in its JSON-ready form: every backslash is doubled and every
+# line break is a literal backslash-n. Single quotes are what make that readable — the shell
+# processes nothing inside them, so what is written here is what reaches the JSON string.
+#
+# Backslashes are the hazard here, and they are the same class of hazard as the quotation
+# marks the load-command line avoids. The notice is interpolated into a JSON string by printf
+# with no escaping, so a lone backslash is read as the start of a JSON escape sequence: \_
+# is not a valid one, the harness fails to parse the output, and the notice vanishes with no
+# error at all. A doubled backslash is what produces one literal backslash. Anyone editing
+# this art has to double every backslash they add, including one that ends a line.
+mark='     __      /\n    /  \\    /\n   |    |  /\n    \\__/  /\n      | =/=\n     _|_/\n    / |\n     / \\\n    /   \\\n __/_____\\__\n|___________|\n    | |\n  __|_|__\n (o)   (o)'
+
 # "installed", not "loaded": the hook runs before the session, so at the moment the
 # notice prints, no rule file has been read. "Loaded" means brought into a runtime —
 # read in — which is the one thing this notice cannot report. Installation and a live
 # configuration are what the script can actually observe, so they are what it claims.
-notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
-  "$system" "$count" "$noun" "$list")
+#
+# The mark leads, with a single line break and no blank line, so it sits immediately above
+# the install line rather than floating above the notice as a separate block.
+notice=$(printf '%s\\nWaytide installed at %s/ — %s %s: %s' \
+  "$mark" "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state — experiments and features
 # alike. Neither is ever left silently open (the experiment-lifecycle

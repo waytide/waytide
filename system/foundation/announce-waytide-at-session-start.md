@@ -2,9 +2,23 @@
 
 A project running Waytide announces the system's presence through **two surfaces the harness renders**, not through anything the agent says:
 
-- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — what is installed, and what the developer can type to have it read:
+- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — the mark, what is installed, and what the developer can type to have it read:
 
 ```
+     __      /
+    /  \    /
+   |    |  /
+    \__/  /
+      | =/=
+     _|_/
+    / |
+     / \
+    /   \
+ __/_____\__
+|___________|
+    | |
+  __|_|__
+ (o)   (o)
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
@@ -24,6 +38,25 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 
 To load them now, type: load waytide.
 ```
+
+  **The mark leads the notice, immediately above the install line.** A single line break
+  separates them and no blank line, so it reads as the head of the notice rather than as a
+  separate block floating above it. It is the same mark in every project — it is Waytide's,
+  not a project's, so nothing configures it and nothing supplies a per-project alternative. It
+  is omitted from the further examples below, which are about the lines that vary.
+
+  **Its backslashes are doubled in the script, and that is not cosmetic.** The notice is
+  interpolated into a JSON string by `printf` with no escaping, so a lone backslash begins a
+  JSON escape sequence — `\_` is not a valid one, the harness fails to parse the output, and
+  **the notice disappears with no error at all**. This is the same failure the load line's
+  no-quotation-marks constraint avoids, arriving through a different character. The mark is
+  written single-quoted in its JSON-ready form, every backslash doubled and every line break a
+  literal backslash-n, because single quotes are what let the source read as what reaches the
+  string. Anyone editing the art doubles every backslash they add, including one that ends a
+  line.
+
+  **`WAYTIDE_QUIET` silences the mark with the rest of the notice**, and still does not silence
+  the read instruction — the mark is a surface the developer sees, and the instruction is not.
 
   Each record under `waytide/local/experiments/` and `waytide/local/features/` is read for its
   canonical `**State:**` line (see the experiments-convention and the
@@ -273,7 +306,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 
 **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. Both failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the instruction naming the project's own `local/rules/` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts; `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the mark leading the notice, immediately above the install line with a single line break and no blank line, with every backslash doubled in the script — a lone one makes the whole notice unparseable and silent. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the developer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing when `WAYTIDE_QUIET` is set. Keep the instruction naming the project's own `local/rules/` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Keep the load command worded the same in both channels — the notice tells the developer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more — and keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep both blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the developer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising both the uncommitted and the untracked segment. Related: the rules-convention (the rule format and where the bootstrap lives), the foundation `install.sh` that places the bootstrap files, and the status-report-format rule (the on-demand report that answers in detail what is installed).
 
 ---
 
@@ -304,3 +337,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:27:36 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT

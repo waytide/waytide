@@ -1,0 +1,1 @@
+# The session-start notice carries a mark, printed immediately above the install line with a single line break and no blank line — it is Waytide's rather than a project's, so nothing configures it, and its backslashes are doubled in the script because a lone one begins a JSON escape sequence and makes the whole notice unparseable and silent
