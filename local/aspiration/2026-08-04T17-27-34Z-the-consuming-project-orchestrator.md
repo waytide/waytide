@@ -13,14 +13,33 @@ installed. What is done with a discovered project is directed by the user.
 ## Background & Motivation
 
 A package change moves through three hops: **composite → component repositories → consuming
-projects**. Two of them are checked. `report-direct-commits.sh` reports component repositories
-carrying commits that did not come from the composite. Nothing addresses the last hop, so a
-project left on stale rules is a silent condition — and rules are read at the start of every
-session and govern how the agent works, which makes staleness there a change of behavior nobody
-sees.
+projects**. `report-direct-commits.sh` reports component repositories carrying commits that did
+not come from the composite. A project left on stale rules is a silent condition — rules are read
+at the start of every session and govern how the agent works, which makes staleness there a change
+of behavior nobody sees.
 
 On 2026-08-04 that hop was walked by hand after a package was folded and every consuming project
 needed reaching. This design is what removes the hand-walking.
+
+**Updated 2026-08-06 — the last hop is now checked in part, and what remains unaddressed is
+narrower than this section first claimed.** Two checks were placed that day, and both run **inside
+a consuming project**: `foundation`'s `report-unrecognized-mode.sh` reports a mode rule naming a
+mode Waytide no longer defines, and `refresh-packages.sh` compares the root `AGENTS.md` against the
+bootstrap the installed installer generates. **Neither displaces this design**, for two reasons
+worth stating rather than assuming:
+
+- **A check inside a project reaches a project only when that project refreshes.** The projects
+  furthest behind receive it last, which is the population it most concerns. Something has to reach
+  them from outside, and reaching them begins with knowing which they are — which is what this
+  design provides and nothing else does.
+- **Discovery is still not detection.** These checks report a condition of a project *to that
+  project*. This tool emits the actionable set and nothing about any project's condition, which the
+  2026-08-04 resolution below settled and the 2026-08-06 entries below reopened and then closed
+  unchanged.
+
+What was demonstrated on 2026-08-06 is the motivation, not a counter to it: a survey run by hand
+across the discovered projects found **every one** carrying a rule left behind by a rename made the
+day before.
 
 **Why discovery rather than a survey.** The work was framed initially as a read-only survey of
 each project's condition — what is installed, what is behind, whether the tree is clean — with a
@@ -197,3 +216,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:34:11 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:04:25 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 2:23:04 PM PT
