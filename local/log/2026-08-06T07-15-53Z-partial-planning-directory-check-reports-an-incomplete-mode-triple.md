@@ -1,0 +1,1 @@
+# The planning-directory check reports a mode triple named in part, rather than classifying a rule as being about the artifacts or merely mentioning them — the classification the deferred item was gated on is unnecessary, because only a defect names one or two of a triple's three directories
