@@ -79,6 +79,30 @@ announce-waytide-at-session-start rule). It is stated here as well so the two su
 because a reader of this rule asking what *the head of the response* excludes is asking about
 this.
 
+## It prints, and the agent never mentions it
+
+**The agent prints what this rule carries and says nothing about it.** Not the word this rule
+uses for it, not a substitute word, not a description standing in for one, and not a citation of
+this rule by name. It appears at the head of the read, and nothing the agent prints — in that
+response or in any later one — refers to it.
+
+**A citation of this rule is a mention of it.** The rules-convention has every rule referred to
+by its name, and this rule's name carries the word, so citing it in a response prints exactly
+what is being withheld. This is therefore the one rule a response does not cite. The failure it
+is written from is a response that opened *I'll start by reading the mark rule* — which broke the
+no-prose requirement above and named the thing in the same line, the two failures arriving
+together because they have one cause: prose about the read, where the read itself was to stand.
+
+**The written rules are unaffected, and that is why the filename keeps its word.** This file is
+**read**, and so is the hook's instruction that names it; neither is printed to the developer.
+The prohibition governs the agent's **output**, which is a different surface with a different
+reader. Among themselves the rules go on saying plainly what they are about — a rule that could
+not name its own subject would be unreadable, and renaming the file would buy nothing, since it
+is the printing that was objected to and not the storage.
+
+**There is ordinarily no occasion.** It prints once, unannounced, and the read continues. Nothing
+in an ordinary session calls for the agent to discuss it, which is what makes this cheap to keep.
+
 ## This is not the session-start notice
 
 The announce-waytide-at-session-start rule forbids the agent printing **the notice** — the
@@ -116,13 +140,18 @@ remembers, and forgetting it failed silently and completely. Keeping it to one p
 at the head of the read, is what stops it becoming a permanent line that is read once and never
 again. Keeping the opening response silent is what keeps the one rule file read ahead of the mark
 from becoming a line of prose read ahead of it too — the concession was to the mechanism, not to
-the agent's narration.
+the agent's narration. Keeping it out of the agent's output entirely is the same judgment
+carried one step further: a thing that stands for the system coming into force is diminished by
+being announced, and every word spent introducing it is a word the developer reads instead of
+the work they asked for.
 
 **How to apply:** print the mark above, verbatim, at the head of the response that carries the
 rule read — before the account of the read and before its tool calls. Read this rule file ahead
 of every other so the figure is in hand, and print nothing in the response that reads it: that
 response is the tool call alone. Print it once per session and never again, print no
-words with it, and print nothing where the hook's instruction says `WAYTIDE_QUIET` is set. Do not
+words with it, and print nothing where the hook's instruction says `WAYTIDE_QUIET` is set. Say
+nothing about it in any response — no word for it, no substitute word, no description standing in
+for one — and do not cite this rule by name, which would print the word its name carries. Do not
 print the session-start notice, which remains the harness's. When editing the art, write literal
 backslashes — nothing here is a JSON literal. Related: the announce-waytide-at-session-start rule
 (the notice this is not, and the hook that names this file and carries the no-prose requirement),
@@ -133,3 +162,4 @@ rules-convention (the read this heads).
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:08:06 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 11:30:57 PM PT
