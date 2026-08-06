@@ -1,0 +1,1 @@
+# The deferred item asking for a planning-directory check is carried out and deleted — the check is `report-partial-planning-directories.sh` at the composite root, the eleven findings it reported across seven files are corrected along with an eighth site it cannot see, and what it does not reach is registered as a new deferred item
