@@ -65,14 +65,28 @@ behind by a vocabulary change governs that project's work while being unreadable
 built to read it. The composite repository and the component repositories both have checks; the
 projects that actually run the rules have none, and a survey found every one of them affected.
 
-**How to apply:** settle where the check lives before writing it, because that choice closes a
-resolution left open in the consuming-project orchestrator aspiration. Test a project's mode rule
-filename against the mode names the installed rule defines, and skip the mode rule when checking
-anything else, since it names the other modes' directories by design. Related:
-`report-planning-directories-named-in-part.sh` (the composite's own check, which reads `system/`
-and stops there), the `a-project-works-in-a-mode-chosen-at-initiation` rule (whose filename
-convention makes the check possible), `read-consuming-projects.sh` (which finds the projects), and
-the consuming-project orchestrator aspiration (the resolution this settles).
+**How to apply:**
+
+- Decide whether the script that checks a consuming project's rules against Waytide's current
+  vocabulary goes in the `foundation` package or at this repository's root.
+- Decide whether that script is one script or two.
+- Write it. Two tests:
+  - the mode-rule filename in a consuming project's `waytide/local/rules/` names a mode the
+    installed `a-project-works-in-a-mode-chosen-at-initiation` rule defines
+  - that project's root `AGENTS.md` matches what its installed `install.sh` generates
+- Have that script skip the mode rule when checking anything else — a mode rule names other
+  modes' directories by design.
+- Update the Settled section of
+  `waytide/local/aspiration/2026-08-04T17-27-34Z-the-consuming-project-orchestrator.md`, whose
+  2026-08-04 no-status resolution is reopened pending the location decision above.
+- Delete this file, and log that it was carried out.
+
+Related: `report-planning-directories-named-in-part.sh` (the script at this repository's root that
+reports a file naming some but not all of a planning artifact's directories, and which reads
+`system/` and stops there), the `a-project-works-in-a-mode-chosen-at-initiation` rule (whose
+filename convention makes the mode test possible), `read-consuming-projects.sh` (the script at
+this repository's root that lists the consuming projects on the maintainer's machine), and the
+consuming-project orchestrator aspiration named above.
 
 ---
 
@@ -80,3 +94,4 @@ Authored by Scott Bellware on Thu Aug 6 2026 at 12:25:25 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:06:30 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 1:38:14 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 2:00:23 PM PT
