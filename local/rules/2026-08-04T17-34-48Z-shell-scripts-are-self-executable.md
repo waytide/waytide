@@ -9,6 +9,26 @@ never `sh read-consuming-projects.sh`. Two things together make it so, and both 
 - **The file opens with a shebang** naming the interpreter — `#!/bin/sh` for every script here.
   Without it the bit alone leaves the interpreter to the invoking shell.
 
+**This reaches every shell script Waytide ships**, which is what makes it a rule about the system
+rather than about one repository's tidiness. Two kinds of script are authored here and they are
+covered alike:
+
+- **The authoring tools at the root** — `install-all.sh`, `report-direct-commits.sh`,
+  `read-consuming-projects.sh`, `report-planning-directories-named-in-part.sh` — run by whoever
+  maintains Waytide, in this repository.
+- **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`,
+  `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`. These
+  are **installed into every consuming project** and run there, so a missing executable bit
+  committed here arrives broken on every machine that installs the package. That is the case where
+  the cost is not local, and it is the reason the rule is worth having rather than assuming.
+
+**What it does not reach is a script a consuming project writes for itself.** This is a local rule
+of this repository, so it binds what is authored here and travels no further. A consuming project
+wanting the same convention adopts it as its own local rule. Whether it should instead be a
+`foundation` rule, and so bind every project that installs Waytide, was put on 2026-08-06 and
+declined: the scripts Waytide ships are all authored here, so the rule already covers everything
+Waytide is responsible for.
+
 **Why the bit has to be committed, not applied locally.** A `chmod +x` that is never committed
 lives on one machine. Everyone else clones a file that will not run, and the failure arrives as
 a permission error at the moment they most expect the script to work — with nothing to suggest
@@ -44,3 +64,4 @@ carried to a consuming project.
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 2:50:13 PM PT

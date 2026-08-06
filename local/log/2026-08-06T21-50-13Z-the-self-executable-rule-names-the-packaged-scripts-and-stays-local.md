@@ -1,0 +1,1 @@
+# The self-executable shell-script rule states that it reaches the scripts the packages ship, not only the authoring tools at the root — a missing executable bit on a packaged script arrives broken on every machine that installs the package — and it stays a local rule of this repository rather than becoming a `foundation` rule, since every script Waytide ships is authored here
