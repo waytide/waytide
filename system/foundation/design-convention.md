@@ -4,7 +4,7 @@
 
 **Under intuitive mode this is `waytide/local/aspiration/` and the artifact is an aspiration; under OODA mode it is `waytide/local/orientation/` and the artifact is an orientation.** Everything in this rule holds unchanged for each — the mode changes the vocabulary and the directory, not a single obligation (see the a-project-works-in-a-mode-chosen-at-initiation rule). The rule is written in the formal mode's terms because formal is the default; read *design* as *aspiration* or *orientation*, and `design/` as the directory your mode names.
 
-- **Relationship to plans:** a design settles direction; an `waytide/local/plans/` plan **realizes** it (an intention, in `waytide/local/intention/`, under intuitive mode). The design is the stable reference the plan points back to (its **Source design**).
+- **Relationship to the sequencing artifact:** a design settles direction; the project's sequencing artifact **realizes** it — a plan, an intention, or an action, whichever the mode names. The design is the stable reference it points back to (its **Source design**).
 - **Two kinds:** a **feature/component design** (the structure, file layout, construction, and API of a unit of work) and a **methodology design** (a way of working, argued from a premise). Both live here; they share a spine, not a fixed section list.
 - **Settled resolutions:** a design records **Settled** decisions with the date they were settled, so a reader knows what is fixed versus still open. A trailing **Out of Scope / Deferred** section marks what the design deliberately leaves out.
 - **Format:** the same frontmatter-free markdown as rules; the *document shape* (its sections) is the design-document-format rule. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
@@ -27,3 +27,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT

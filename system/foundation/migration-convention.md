@@ -35,7 +35,8 @@ can be depended on, and stop being authoritative in one place before it becomes 
 another — and the state in between is a state no single repository fully describes. Planning it
 in the repository the content is leaving puts the plan where the content still is, and keeping
 the record afterward leaves a trail from the place a reader will look first. Without a named
-home, such a plan goes into `plans/` where it reads as ordinary build work, or into a chat where
+home, such a plan goes in with the project's sequencing artifacts, where it reads as ordinary
+build work, or into a chat where
 it does not survive the session.
 
 **How to apply:** before moving content across a repository boundary, write a record here naming
@@ -52,3 +53,4 @@ prefix), and the working-state-artifacts-carry-a-provenance-footer rule.
 Authored by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 1:03:00 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT

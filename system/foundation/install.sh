@@ -21,10 +21,11 @@ repo="https://github.com/waytide/foundation.git"
 #
 # It does not name the planning directories, and that is deliberate: they depend on
 # the project's mode — `design/` and `plans/` under formal, `aspiration/` and
-# `intention/` under intuitive (see foundation's a-project-works-in-a-mode-chosen-at-initiation
+# `intention/` under intuitive, `orientation/` and `action/` under OODA (see foundation's
+# a-project-works-in-a-mode-chosen-at-initiation
 # rule). This script cannot know which, because the mode is chosen by the agent at the
 # project's initiation, which is after an install has run. Naming the formal pair here
-# would write it back into an intuitive-mode project every time the bootstrap was regenerated —
+# would write it back into a project in another mode every time the bootstrap was regenerated —
 # which is what refresh-packages.sh tells a developer to do when foundation's bootstrap
 # changes, so a routine refresh would silently undo a migration.
 #

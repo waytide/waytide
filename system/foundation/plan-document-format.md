@@ -10,8 +10,8 @@ appear they appear in this order. A plan is not wrong for holding an element not
 it is not obliged to hold one that the work does not call for.
 
 - **Goals** — what the plan achieves. Plural where the work has more than one.
-- **Source designs** — pointers to the `waytide/local/design/` docs the plan realizes. Plural: a
-  plan may realize more than one design. Omitted when there is no separate design.
+- **Source designs** — pointers to the direction artifacts the plan realizes. Plural: a
+  plan may realize more than one. Omitted when there is no separate direction artifact.
 - **Work sequences** — the orders in which the work can be done, where the plan has more than
   the single front-to-back reading its task list implies.
 - **Superseded plans** — the plans this one supersedes, named, with what carries over from each as history. Plural: a plan may supersede a series that came before it. **Superseded** rather than *replaced* because it states the authority — a superseded plan is not merely earlier, it no longer governs.
@@ -38,3 +38,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT

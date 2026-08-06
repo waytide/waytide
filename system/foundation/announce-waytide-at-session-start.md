@@ -250,8 +250,9 @@ Both are wired by a committed `.claude/settings.json` that `install.sh` places i
   without a condition, and this now matches them.
 
   **It names `local/rules/` and nothing else beside the packages.** The working directories
-  next to it — `log/`, `deferred/`, `design/`, `plans/`, `work-sessions/`, `experiments/`,
-  `loops/`, `migration/`, `suspended/` — are worked with as their own conventions describe and are **not** read as binding
+  next to it — `log/`, `deferred/`, the project's planning directories, `work-sessions/`,
+  `experiments/`, `loops/`, `migration/`, `suspended/` — are worked with as their own
+  conventions describe and are **not** read as binding
   rules at session start. The instruction says so outright, because an instruction naming
   `local/` rather than `local/rules/` would reverse that settled distinction.
 
@@ -359,3 +360,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 10:35:57 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:08:06 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
