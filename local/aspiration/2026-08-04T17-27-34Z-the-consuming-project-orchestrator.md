@@ -159,6 +159,15 @@ script from the repository and writes their own registry.
   `foundation` and run **by** a project would not be, and would leave that resolution intact.
   **Which of the two it is has not been decided**, so the earlier resolution is recorded here as
   reopened rather than superseded. Nothing about the discovery tool changes until it is settled.
+- **2026-08-06 — the reopening above is closed, and the 2026-08-04 no-status resolution stands
+  unchanged.** The script that checks a consuming project's rules against Waytide's current
+  vocabulary is placed in the `foundation` package, so each project runs it on itself rather than
+  this repository running it across the projects `read-consuming-projects.sh` discovers.
+  `read-consuming-projects.sh` therefore still detects no status, still takes no action on a
+  project, and still emits nothing but the actionable set. **What the placement costs is recorded
+  rather than dismissed:** a script delivered inside a package reaches a project only when that
+  project refreshes, so the projects furthest behind receive the check last — which is the
+  population the check most concerns.
 
 ## Out of Scope / Deferred
 
@@ -187,3 +196,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:34:11 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 2:04:25 PM PT

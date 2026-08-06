@@ -1,0 +1,1 @@
+# `install.sh` takes a `bootstrap` subcommand that prints the AGENTS.md section and places nothing, so `refresh-packages.sh` compares against the bootstrap text at its one source rather than parsing the installer's own script for it
