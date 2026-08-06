@@ -1,0 +1,1 @@
+# The OODA mode feature is initiated on branch `feature/ooda-mode`, worked branch-only and attended — a third project mode whose planning artifacts are an orientation and an action, the covering terms unchanged

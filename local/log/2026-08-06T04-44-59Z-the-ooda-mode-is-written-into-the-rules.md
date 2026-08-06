@@ -1,0 +1,1 @@
+# OODA mode is written into the rules — a third mode whose artifacts are an orientation in `waytide/local/orientation/` and an action in `waytide/local/action/`, the rule answering outright that Observe and Decide produce no planning artifact rather than leaving the four-phase expectation to a reader

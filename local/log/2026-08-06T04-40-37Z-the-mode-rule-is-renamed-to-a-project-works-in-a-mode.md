@@ -1,0 +1,1 @@
+# The mode rule is renamed `a-project-works-in-a-mode-chosen-at-initiation` — a name that enumerates the modes goes stale on every mode added, which is the same specificity the rule's own covering-term argument says an installed rule should not carry

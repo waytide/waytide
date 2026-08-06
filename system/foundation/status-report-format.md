@@ -2,7 +2,7 @@
 
 When the user asks for a **status report** (or "project status"), produce a report with these parts, in order:
 
-**The report reads the project's sequencing artifact**, whatever the project's mode names it and wherever that mode puts it (see the a-project-works-in-formal-or-intuitive-mode rule). This rule names no directory, so it stays true whichever mode a project is in and survives a change to what the directories are called.
+**The report reads the project's sequencing artifact**, whatever the project's mode names it and wherever that mode puts it (see the a-project-works-in-a-mode-chosen-at-initiation rule). This rule names no directory, so it stays true whichever mode a project is in and survives a change to what the directories are called.
 
 1. **Task table** — the sequencing artifact's tasks as a table: number, task, status (done / next / pending), and a terse note. Mark the next task. Include any out-of-sequence extras already built.
 2. **Deferred work table** — the items under `waytide/local/deferred/`: name, date, kind (chore vs. open design question), one-line gist. These are parked, off the task line.
@@ -26,3 +26,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 10:53:02 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 1:03:00 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT

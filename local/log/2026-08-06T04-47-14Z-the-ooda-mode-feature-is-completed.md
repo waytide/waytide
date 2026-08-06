@@ -1,0 +1,1 @@
+# The OODA mode feature is completed and integrated — three project modes where there were two, the loop having put a single gate on the one decision that was both subtle and load-bearing and generated through the rest
