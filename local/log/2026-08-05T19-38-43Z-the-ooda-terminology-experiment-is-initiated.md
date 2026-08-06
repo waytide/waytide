@@ -1,0 +1,1 @@
+# The OODA terminology experiment is initiated on branch `experiment/ooda-terminology`, worked branch-only and attended, its forecast committed before the work — whether **orientation** and **action** serve as the generalized covering terms, and whether a third OODA mode may use the same words concretely

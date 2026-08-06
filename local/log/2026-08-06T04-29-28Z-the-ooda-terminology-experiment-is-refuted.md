@@ -1,0 +1,1 @@
+# The OODA terminology experiment is refuted — *orientation* and *action* do not serve as the generalized covering terms, since abstraction is the property a covering term is judged on and a term carrying a specific method's framing is less abstract; **the direction artifact** and **the sequencing artifact** stand

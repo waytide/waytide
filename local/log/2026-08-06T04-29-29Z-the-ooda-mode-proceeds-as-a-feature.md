@@ -1,0 +1,1 @@
+# The OODA mode proceeds as a feature rather than an experiment — it is built to an intent with no question under test, so it takes a feature record and ends completed rather than affirmed, and its concrete artifacts are an orientation and an action

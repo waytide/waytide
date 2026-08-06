@@ -1,0 +1,1 @@
+# A hinge can be put before it is ripe — the OODA experiment's first gate was answered one way and reversed two cycles later by an option that had been offered and declined, the option set having been complete while the consequences needed to answer it were not yet in view
