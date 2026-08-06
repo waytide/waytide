@@ -150,7 +150,7 @@ script from the repository and writes their own registry.
   can be exercised against a registry written for a test without touching the developer's own.
   This follows `refresh-packages.sh`'s `WAYTIDE_ORIGIN`, which exists for the same reason.
 - **2026-08-06 — the no-status resolution above is reopened, and is not yet re-decided.**
-  `report-partial-planning-directories.sh` was written on 2026-08-06 to report a file naming some
+  `report-planning-directories-named-in-part.sh` was written on 2026-08-06 to report a file naming some
   but not all of a mode's planning directories, and it reads `system/` — the packages' own prose.
   A consuming project's **own local rules** can carry the same defect, and the question of
   checking them is now registered in the queue. That question bears directly on this aspiration:
@@ -186,3 +186,4 @@ Authored by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:34:11 AM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT

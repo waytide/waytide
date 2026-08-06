@@ -18,16 +18,16 @@
 #
 # Run from the repository root, before publishing:
 #
-#   ./report-partial-planning-directories.sh
+#   ./report-planning-directories-named-in-part.sh
 #
 # It only reads.
 #
-# What it reports is a triple named in part: the three directories of an
-# artifact are named together or not at all, and only a defect produces one or
-# two of them. So the check needs no notion of what a rule is for. What it does
-# not report is a merely-mentioning rule that names all three rather than
+# What it reports is an artifact's directories named in part: they are named
+# together or not at all, and only a defect names some of them. So the check
+# needs no notion of what a rule is for. What it does not report is a
+# merely-mentioning rule that names every mode's directory rather than
 # generalizing — that is verbose, and it sends no reader to a directory that
-# does not have one.
+# does not exist.
 #
 # The remedy differs by site and this does not choose it: a rule *about* the
 # artifact gains the missing directories, and a rule that merely mentions one
@@ -87,7 +87,7 @@ for file in $(find system -type f | sort); do
 done
 
 if [ "$found" = "0" ]; then
-  echo "No partial planning directories. Every file names a mode's triple in full or not at all."
+  echo "No planning directories named in part. Every file names every mode's directory for an artifact, or none of them."
   exit 0
 fi
 

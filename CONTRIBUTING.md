@@ -43,12 +43,12 @@ component repo rather than produced by a split. It fetches and pushes nothing, a
 non-zero when it finds something. Two such commits went unnoticed for days before the check
 existed, found only when a publish was attempted; nothing else announces them.
 
-**Check for partial planning directories too.** Run
-`./report-partial-planning-directories.sh` from the repository root. It reports any file
-under `system/` naming some but not all of a mode's planning directories — a rule naming
+**Check for planning directories named in part too.** Run
+`./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
+under `system/` naming some but not all of a planning artifact's directories — a rule naming
 `plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is
 *about* one of those artifacts names every mode's directory and one that merely mentions it
-names none, so a partial triple is a defect either way, and it is one that reviews,
+names none, so naming only some of them is a defect either way, and it is one that reviews,
 publishes, and installs cleanly while being wrong in every project whose mode it omits. It
 only reads, and exits non-zero when it finds something.
 

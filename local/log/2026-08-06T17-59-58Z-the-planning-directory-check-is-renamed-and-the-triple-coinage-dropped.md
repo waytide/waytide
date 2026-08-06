@@ -1,0 +1,1 @@
+# The planning-directory check is `report-planning-directories-named-in-part.sh`, and the coined term *triple* is dropped from the live artifacts — the former name attached "partial" to the directories when what is partial is how many of them a file names, and the coinage baked in a count that had changed from two to three the day before it was written
