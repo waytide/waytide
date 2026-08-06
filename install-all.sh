@@ -15,6 +15,36 @@
 # inside a package by `git subtree`, which preserves the mode, and is invoked as itself.
 set -e
 
+if [ ! -d .git ] && ! git rev-parse --git-dir >/dev/null 2>&1; then
+  echo "Run this from the root of a git repository — Waytide is installed with git subtree." >&2
+  exit 1
+fi
+
+# The authoring source holds the packages at system/, with no waytide/ wrapper; a consuming
+# project holds them at waytide/system/. Installing here would add a second, installed copy of
+# every package beside the ones being written, and place a consuming project's bootstrap over
+# this repository's own. The same refusal is in refresh-packages.sh and report-unrecognized-mode.sh.
+if [ -d system/foundation ] && [ ! -d waytide/system ]; then
+  echo "This is the Waytide authoring source, where the packages are written rather than" >&2
+  echo "installed. Installing here would put a second copy of every package under waytide/," >&2
+  echo "beside the ones at system/, and overwrite this repository's own bootstrap." >&2
+  exit 1
+fi
+
+# `git subtree add` resolves HEAD to check the working tree is clean, so a repository that has
+# been initialized and never committed to fails twice over: `git rev-parse HEAD` reports an
+# ambiguous argument, and git subtree reads that failure as a dirty tree and says so — which is
+# false and sends the developer looking for changes that are not there.
+#
+# A project created moments ago is the likeliest project to be installing Waytide into, so the
+# commit is made here rather than demanded. It is empty, it is announced, and it is the history's
+# first commit — nothing of the developer's is swept into it, because there is nothing yet.
+if ! git rev-parse HEAD >/dev/null 2>&1; then
+  git commit --quiet --allow-empty -m "Repository is initialized"
+  echo "This repository had no commits. An empty initial commit was made, because git subtree"
+  echo "cannot add to a repository without one."
+fi
+
 add() {
   prefix="waytide/system/$1"
   repo="https://github.com/waytide/$2.git"
