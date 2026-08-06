@@ -3,7 +3,16 @@
 # activate the system by placing the project-root AGENTS.md, a CLAUDE.md that
 # imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a .claude/settings.json
 # whose SessionStart hook and status line print the session-start notice.
-# Run from the root of the consuming project.
+# Fetch it into the root of the consuming project and run it from there:
+#
+#   curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
+#   sh install-all.sh
+#
+# `sh install-all.sh`, not `./install-all.sh`, and this is the one script here written that
+# way. It is committed executable like every other, but it is also the only one delivered by
+# `curl`, which transfers content and not file metadata — so the copy a developer runs is
+# never executable, whatever mode the original carries. Every other script reaches a project
+# inside a package by `git subtree`, which preserves the mode, and is invoked as itself.
 set -e
 
 add() {

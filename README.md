@@ -93,8 +93,13 @@ Or do it all at once with [`install-all.sh`](install-all.sh), which installs and
 
 ```
 curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
-./install-all.sh
+sh install-all.sh
 ```
+
+`sh install-all.sh`, not `./install-all.sh`. The file is committed executable, but `curl`
+transfers content and not file metadata, so the copy it writes is not executable whatever
+mode the original carries. Every other script here is invoked as itself, because every other
+script reaches a project by `git subtree`, which does preserve the mode.
 
 ## Project-local rules
 
