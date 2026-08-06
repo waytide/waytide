@@ -130,6 +130,29 @@ maintainable.
 **Through the selection interface**, per the present-every-prompt-through-askuserquestion rule,
 with **formal as the default**.
 
+**The question is asked in these words:**
+
+> Select the mode for this project. The behavior and functioning of Waytide isn't affected by the
+> mode. The mode only sets the process vocabulary for the project, and the names of the
+> directories where planning records are stored.
+
+**The wording is fixed because the developer meeting this choice cannot yet know what it
+decides.** It is put at a project's initiation, before any of this system's material has been
+worked with, so a mode named alone — *formal, intuitive, or OODA* — reads as a choice about how
+the system will **behave**: how strict it is, how much ceremony it imposes, what it will require.
+Every one of those readings is wrong, and a developer holding one of them chooses on grounds that
+do not exist. Saying outright that behavior and functioning are unaffected removes the wrong
+question before it is asked, and naming what the mode **does** settle — the process vocabulary,
+and the directories planning records are stored in — leaves the developer weighing the thing
+actually in front of them.
+
+**It does not restate the case for the modes**, which is the argument above about a word being a
+thought's working surface. That is what the `Explain` option is for. The question says what the
+choice governs; the explanation says why it is worth making.
+
+**Each option names its mode's two artifacts and their directories**, and nothing else. The
+developer is choosing a vocabulary and a pair of locations, so those are what the options carry.
+
 **`install.sh` cannot do this**, and neither can any other script. The selection interface is an
 agent-side tool and the installer is a POSIX `sh` script run from a shell; a script has no way to
 reach it. The mode is therefore something the **agent** establishes, not a step in an
@@ -280,7 +303,10 @@ from silently reverting a project to a mode it is not in — the same stance the
 takes toward ambiguous input, which is to refuse it rather than to guess.
 
 **How to apply:** at a project's initiation, put **formal, intuitive, or OODA** to the developer
-through the selection interface, with formal as the default, and write the chosen mode into
+through the selection interface, with formal as the default, asking it in the words fixed above —
+that the behavior and functioning of Waytide are unaffected and the mode sets the process
+vocabulary and the planning directories — with each option naming its mode's two artifacts and
+their directories. Write the chosen mode into
 `waytide/local/rules/` as a `formal-mode`, `intuitive-mode`, or `ooda-mode` rule with its datetime
 prefix. Where
 no mode rule is present, ask — the absence is a question never asked, not a default. Check the
@@ -309,3 +335,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 10:13:17 AM PT

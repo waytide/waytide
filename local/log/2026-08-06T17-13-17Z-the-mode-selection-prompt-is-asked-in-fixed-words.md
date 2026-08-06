@@ -1,0 +1,1 @@
+# The mode selection prompt is asked in fixed words — that the behavior and functioning of Waytide are unaffected and the mode only sets the process vocabulary and the planning-record directories — because a developer meeting the choice at a project's initiation would otherwise read a mode name as a claim about how the system behaves
