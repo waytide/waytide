@@ -1,0 +1,1 @@
+# The present-every-prompt-through-askuserquestion rule moves from `design-by-efferent` to `foundation` — it governs every prompt rather than hinge gates, `foundation`'s own lifecycles and the standalone `versioning` package both instruct the practice, so a project installing `foundation` alone received the instruction without the rule

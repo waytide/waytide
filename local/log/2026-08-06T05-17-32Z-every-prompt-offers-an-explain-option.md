@@ -1,0 +1,1 @@
+# Every prompt offers an `Explain` option — not an escape, which the harness already supplies, but its opposite half: the escape is how a developer answers outside the options and `Explain` is how they ask what the question means, answered summary-first and followed by the same prompt put again unchanged

@@ -31,6 +31,16 @@ a rule's folder names the surface it acts on, not the purpose it serves.
 Foundation also provides project-wide commands: **status report** (a whole-project
 summary) and **next deferred item**.
 
+**Every prompt to the developer goes through the selection interface**
+(`present-every-prompt-through-askuserquestion`) — any choice, decision, or answer, never a prose
+question. The harness supplies the free-text escape, so the agent adds none of its own; it does
+add an **`Explain`** option, which is the opposite half of that escape — the escape is how a
+developer answers outside the options, and `Explain` is how they ask what the question means
+before answering. The rule lives here rather than in `design-by-efferent`, where it was written,
+because it governs **every** prompt: `foundation`'s own lifecycles put choices through the
+interface, and so does the standalone `versioning` package, so a project installing `foundation`
+alone must receive the rule along with the instruction to follow it.
+
 Beyond the four core directories, foundation defines the **work-artifact**
 directories for planning and running changes — `waytide/local/plans/` (implementation plans
 that sequence a settled design), `waytide/local/design/` (design docs that settle direction
@@ -172,5 +182,3 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 ## License
 
 Waytide is in early development and is **not yet licensed for use** — all rights reserved. A license, the Eventide Common Interest License, is forthcoming.
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT

@@ -127,8 +127,8 @@ maintainable.
 
 ## The choice is the agent's to put, and it is put at initiation
 
-**Through the selection interface**, per the design-by-efferent
-present-every-prompt-through-askuserquestion rule, with **formal as the default**.
+**Through the selection interface**, per the present-every-prompt-through-askuserquestion rule,
+with **formal as the default**.
 
 **`install.sh` cannot do this**, and neither can any other script. The selection interface is an
 agent-side tool and the installer is a POSIX `sh` script run from a shell; a script has no way to
@@ -295,9 +295,8 @@ plans-convention (the directories, both named in each), the design-document-form
 plan-document-format rules (the shapes, identical in every mode), the rules-convention (where a
 local rule lives and what it looks like), the file-names rule (the datetime prefix), the
 `language` package's language-is-precise-here rule and this package's rules-install-a-mindset rule
-(why a vocabulary change is a real change), and the design-by-efferent
-present-every-prompt-through-askuserquestion rule (why the choice is put through the selection
-interface).
+(why a vocabulary change is a real change), and the present-every-prompt-through-askuserquestion
+rule (why the choice is put through the selection interface).
 
 ---
 
@@ -309,3 +308,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT

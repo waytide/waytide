@@ -1,0 +1,1 @@
+# A package README carries no provenance footer — five of the seven never had one, and the two that acquired one today did so by mistake; the footer convention reaches rule files and working-state artifacts, not a package's structural files
