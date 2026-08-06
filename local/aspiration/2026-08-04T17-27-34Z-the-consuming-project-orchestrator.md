@@ -149,6 +149,16 @@ script from the repository and writes their own registry.
 - **2026-08-04 — the registry path is overridable through `WAYTIDE_REGISTRY`**, so the script
   can be exercised against a registry written for a test without touching the developer's own.
   This follows `refresh-packages.sh`'s `WAYTIDE_ORIGIN`, which exists for the same reason.
+- **2026-08-06 — the no-status resolution above is reopened, and is not yet re-decided.**
+  `report-partial-planning-directories.sh` was written on 2026-08-06 to report a file naming some
+  but not all of a mode's planning directories, and it reads `system/` — the packages' own prose.
+  A consuming project's **own local rules** can carry the same defect, and the question of
+  checking them is now registered in the queue. That question bears directly on this aspiration:
+  a check driven **over the actionable set** would be this tool detecting a condition of each
+  discovered project, which is what the 2026-08-04 resolution excluded. A check placed in
+  `foundation` and run **by** a project would not be, and would leave that resolution intact.
+  **Which of the two it is has not been decided**, so the earlier resolution is recorded here as
+  reopened rather than superseded. Nothing about the discovery tool changes until it is settled.
 
 ## Out of Scope / Deferred
 
@@ -164,9 +174,15 @@ script from the repository and writes their own registry.
   rule files that changed in it.
 - **A registry written by anything but a person.** The format choices assume hand-editing
   throughout. Nothing generates or updates this file.
+- **Where a consuming-project rule check lives, and whether this tool drives it.** Registered as
+  a deferred item on 2026-08-06 — *what the planning-directory check does not reach*. It is out of
+  scope **here** because it is undecided, not because it is unrelated: one of its two answers puts
+  condition-detection inside this tool and reopens the 2026-08-04 resolution, and the other places
+  the check in `foundation` and leaves this aspiration untouched.
 
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 12:34:11 AM PT

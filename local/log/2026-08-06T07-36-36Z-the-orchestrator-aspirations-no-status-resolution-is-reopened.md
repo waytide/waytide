@@ -1,0 +1,1 @@
+# The consuming-project orchestrator aspiration's 2026-08-04 no-status resolution is reopened rather than superseded — a consuming-project rule check driven over the actionable set would put condition-detection inside that tool, while the same check placed in `foundation` and run by a project would not, and which it is has not been decided
