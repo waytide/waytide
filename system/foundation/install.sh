@@ -21,7 +21,7 @@ repo="https://github.com/waytide/foundation.git"
 #
 # It does not name the planning directories, and that is deliberate: they depend on
 # the project's mode — `design/` and `plans/` under formal, `aspiration/` and
-# `intention/` under intuitive (see foundation's a-project-works-in-formal-or-intuitive-mode
+# `intention/` under intuitive (see foundation's a-project-works-in-a-mode-chosen-at-initiation
 # rule). This script cannot know which, because the mode is chosen by the agent at the
 # project's initiation, which is after an install has run. Naming the formal pair here
 # would write it back into an intuitive-mode project every time the bootstrap was regenerated —

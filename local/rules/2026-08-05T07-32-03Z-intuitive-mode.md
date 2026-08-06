@@ -8,7 +8,7 @@ is fixed — a project's mode does not change after initiation.
 
 **Everything below explains the mode and binds nothing.** It is written out so this file
 stands on its own, and it describes the system as it stood when this project was initiated,
-which is the date in this filename. Waytide's own `a-project-works-in-formal-or-intuitive-mode`
+which is the date in this filename. Waytide's own `a-project-works-in-a-mode-chosen-at-initiation`
 rule holds the system's account.
 
 **The two modes.** A Waytide project works in one of two, chosen at its initiation. Under
@@ -44,3 +44,4 @@ following the four planning rules unchanged. Do not use `waytide/local/design/` 
 Authored by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT

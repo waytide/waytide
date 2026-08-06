@@ -2,7 +2,7 @@
 
 An implementation plan (`waytide/local/plans/*.md`) is titled `# <Title> — Implementation Plan`.
 
-**Under a project's intuitive mode the document is an intention**, in `waytide/local/intention/`, titled `# <Title> — Intention`. **Its shape is this shape, entirely** — the same elements in the same settled order, the same behavior-stated checkbox tasks, the same **Superseded plans** section naming what it supersedes. The mode changes what the document is called and where it lives, and nothing about how it reads (see the a-project-works-in-formal-or-intuitive-mode rule).
+**Under a project's intuitive mode the document is an intention**, in `waytide/local/intention/`, titled `# <Title> — Intention`. **Its shape is this shape, entirely** — the same elements in the same settled order, the same behavior-stated checkbox tasks, the same **Superseded plans** section naming what it supersedes. The mode changes what the document is called and where it lives, and nothing about how it reads (see the a-project-works-in-a-mode-chosen-at-initiation rule).
 
 **The elements below are the common ones, not an exclusive set.** A plan carries whatever
 elements of planning the work actually has; these are the ones that recur, and where they
@@ -25,7 +25,7 @@ it is not obliged to hold one that the work does not call for.
 
 **Why:** a plan is scanned by a worker executing it task by task, so a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule protects.
 
-**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear, and state each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Do not restate the commit conventions or the project's stack; the first is the `git` package's and the second does not vary by plan. Write an intention exactly the same way, titled `— Intention`. Related: the foundation plans-convention (what the directory is), the a-project-works-in-formal-or-intuitive-mode rule (which of the two directories a project uses), plans-no-code-samples, and the `git` commit rules.
+**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear, and state each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Do not restate the commit conventions or the project's stack; the first is the `git` package's and the second does not vary by plan. Write an intention exactly the same way, titled `— Intention`. Related: the foundation plans-convention (what the directory is), the a-project-works-in-a-mode-chosen-at-initiation rule (which of the two directories a project uses), plans-no-code-samples, and the `git` commit rules.
 
 ---
 
@@ -36,3 +36,4 @@ Changed by Scott Bellware on Mon Aug 3 2026 at 10:35:20 PM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 10:40:24 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT

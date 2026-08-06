@@ -90,7 +90,7 @@ making the record say something that did not happen. The developer is the author
 counts, and the git history is not reached by the edit.
 
 **A project works in formal or intuitive mode**, chosen at its initiation through the selection
-interface (`a-project-works-in-formal-or-intuitive-mode`). Formal is the default and its planning
+interface (`a-project-works-in-a-mode-chosen-at-initiation`). Formal is the default and its planning
 artifacts are a **design** and a **plan**, in `waytide/local/design/` and `waytide/local/plans/`;
 intuitive's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`. **The conventions and document formats are identical in both** — the

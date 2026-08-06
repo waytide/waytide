@@ -2,7 +2,7 @@
 
 `waytide/local/design/` holds **design docs**: the settled *direction* of a piece of work, written before a plan sequences the build. A design decides what the shape should be — structure, construction, API, the model — and records the resolutions that later work rests on.
 
-**Under a project's intuitive mode this is `waytide/local/aspiration/`, and the artifact is an aspiration.** Everything in this rule holds unchanged for it — the mode changes the vocabulary and the directory, not a single obligation (see the a-project-works-in-formal-or-intuitive-mode rule). The rule is written in the formal mode's terms because formal is the default; read *design* as *aspiration* and `design/` as `aspiration/` in an intuitive-mode project.
+**Under a project's intuitive mode this is `waytide/local/aspiration/`, and the artifact is an aspiration.** Everything in this rule holds unchanged for it — the mode changes the vocabulary and the directory, not a single obligation (see the a-project-works-in-a-mode-chosen-at-initiation rule). The rule is written in the formal mode's terms because formal is the default; read *design* as *aspiration* and `design/` as `aspiration/` in an intuitive-mode project.
 
 - **Relationship to plans:** a design settles direction; an `waytide/local/plans/` plan **realizes** it (an intention, in `waytide/local/intention/`, under intuitive mode). The design is the stable reference the plan points back to (its **Source design**).
 - **Two kinds:** a **feature/component design** (the structure, file layout, construction, and API of a unit of work) and a **methodology design** (a way of working, argued from a premise). Both live here; they share a spine, not a fixed section list.
@@ -13,7 +13,7 @@
 
 **Why:** deciding direction and executing it are separate acts, and the direction must stay stable while the build proceeds against it. A dedicated home for designs — distinct from the plans that realize them — keeps the settled shape and its dated resolutions readable on their own, and gives every plan one authoritative source to point at.
 
-**How to apply:** before sequencing a build, settle its direction in a design here, dating each resolution as it is settled and marking what is out of scope. Point the realizing plan back at it. In an intuitive-mode project do all of that in `waytide/local/aspiration/`, calling the artifact an aspiration; nothing else differs. Related: the plans-convention, the design-document-format and package-dependency-heading rules, the a-project-works-in-formal-or-intuitive-mode rule (the mode that decides which directory this is), and the decision-log rule.
+**How to apply:** before sequencing a build, settle its direction in a design here, dating each resolution as it is settled and marking what is out of scope. Point the realizing plan back at it. In an intuitive-mode project do all of that in `waytide/local/aspiration/`, calling the artifact an aspiration; nothing else differs. Related: the plans-convention, the design-document-format and package-dependency-heading rules, the a-project-works-in-a-mode-chosen-at-initiation rule (the mode that decides which directory this is), and the decision-log rule.
 
 ---
 
@@ -25,3 +25,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 11:30:25 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
+Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
