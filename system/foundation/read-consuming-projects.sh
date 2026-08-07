@@ -2,7 +2,17 @@
 # Read the consuming projects on this machine — the projects that have installed
 # the Waytide packages — and print the actionable set, one path per line.
 #
-#   ./read-consuming-projects.sh
+# Run from the root of any project that has installed Waytide. This script lives
+# inside the package, so it is invoked by its path from that root:
+#
+#   waytide/system/foundation/read-consuming-projects.sh
+#
+# It is packaged rather than kept with the authoring tools because it is not one.
+# It is machine-scoped rather than project-scoped: it reports the Waytide projects
+# on this machine, and the developer who wants that is anyone who installed
+# Waytide into more than one project, not only whoever maintains Waytide. The
+# authoring tools at the composite root run against the packages; this runs
+# beside projects, which is a third position and the reason it is here.
 #
 # "All consuming projects" means the projects that are not excluded. An excluded
 # path is not printed, not marked, and not counted; nothing is done to it, which

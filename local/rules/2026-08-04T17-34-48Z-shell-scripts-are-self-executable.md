@@ -1,7 +1,7 @@
 # A shell script is self-executable — the executable bit is set and the file opens with a shebang
 
-Every `.sh` file in this repository is **runnable as itself** — `./read-consuming-projects.sh`,
-never `sh read-consuming-projects.sh`. Two things together make it so, and both are required:
+Every `.sh` file in this repository is **runnable as itself** — `./report-direct-commits.sh`,
+never `sh report-direct-commits.sh`. Two things together make it so, and both are required:
 the bit and the shebang, below. **One script is documented with an `sh` prefix even so**, because
 the copy a developer runs is not the file this repository holds; the delivery section states when
 that applies and why the bit is set on it regardless.
@@ -16,14 +16,15 @@ that applies and why the bit is set on it regardless.
 rather than about one repository's tidiness. Two kinds of script are authored here and they are
 covered alike:
 
-- **The tools at the root** — `report-direct-commits.sh`, `read-consuming-projects.sh`, and
+- **The tools at the root** — `report-direct-commits.sh` and
   `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains
   Waytide, in this repository. **`install-all.sh` sits beside them and is not one**: a consuming
   project fetches it, which is what makes it the one script here a developer runs from somewhere
   other than a clone of this repository. That is the whole reason the delivery section below
   exists.
 - **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`,
-  `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`. These
+  `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and
+  `read-consuming-projects.sh`. These
   are **installed into every consuming project** and run there, so a missing executable bit
   committed here arrives broken on every machine that installs the package. That is the case where
   the cost is not local, and it is the reason the rule is worth having rather than assuming.
@@ -58,12 +59,12 @@ unexplained and a reader had no way to tell from a filename.
 
 Three forms are in use, and which one is correct is not a matter of taste:
 
-- **`./name.sh`** — for a script that sits in the directory the command is typed in. The four
-  scripts at this repository's root take this form.
+- **`./name.sh`** — for a script that sits in the directory the command is typed in. Two scripts
+  take this form, both authoring tools at this repository's root.
 - **The path form** — the script's location written from the directory the command is typed in,
   as in `waytide/system/foundation/refresh-packages.sh`. A packaged script is run from a
   consuming project's **root** and lives several directories below it, so `./name.sh` there names
-  a file that is not present and the command fails. Nine scripts take this form.
+  a file that is not present and the command fails. Ten scripts take this form.
 - **`sh name.sh`** — the `curl` case above, and the only form that names an interpreter.
 
 **`./` is not what makes a script self-executing, which is what the rule had confused.** The
@@ -89,7 +90,7 @@ committed `100755` exactly like the rest, and nothing below relaxes that. What v
 - **`git clone` and `git subtree` carry the file's mode.** A script that reaches a developer either
   way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the
   path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this
-  case.
+  case — only the `curl`-fetched one is not.
 - **`curl` carries content and not file metadata.** An HTTP response body is bytes; the mode is a
   filesystem attribute and is not in it, so `curl` writes a new file at the default permissions and
   the copy is **never** executable, whatever the original's mode. A script delivered this way takes
@@ -142,3 +143,4 @@ Authored by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:50:13 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 3:00:44 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:48:30 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:35:11 PM PT

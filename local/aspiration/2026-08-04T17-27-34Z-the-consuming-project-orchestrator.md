@@ -127,12 +127,24 @@ Each of these is a deliberate exclusion rather than an omission:
 
 ## Where it lives, and what that costs
 
-**`read-consuming-projects.sh`, at the composite root, beside `install-all.sh` and
-`report-direct-commits.sh`** — the authoring tools, which foundation's README is explicit that a
-consuming project never runs. The name is verb-first like its two siblings, which state what
-they do rather than what they are about. `git subtree`
-can only place files inside a package directory, so a tool a consuming project runs must live in
-a package; this one is not that, and belongs unpackaged at the root.
+**`read-consuming-projects.sh` is in the `foundation` package**, at
+`waytide/system/foundation/read-consuming-projects.sh`, so it reaches every project that installs
+Waytide. The name is verb-first like the authoring tools it used to sit with, which state what they
+do rather than what they are about.
+
+**It sat at the composite root until 2026-08-07**, classified as an authoring tool on the grounds
+that a consuming project never runs it. That classification was the wrong test and is superseded —
+see the Settled entry for that date. The paragraph below is what it read while the earlier
+placement held, kept because the reasoning it gives is still correct about `git subtree` and is why
+the move required packaging rather than any other mechanism:
+
+> `git subtree` can only place files inside a package directory, so a tool a consuming project runs
+> must live in a package.
+
+**Being packaged means a copy in every project, reading one registry.** Each copy reports the same
+set, so a developer runs whichever is nearest rather than a particular one. That is the cost of the
+placement and it is accepted: the alternative was a tool obtainable only by cloning the authoring
+repository.
 
 The consequence worth stating: **it runs on one machine.** It walks directories on the
 maintainer's own machine and reads that machine's registry. It does not run *in* a consuming
@@ -188,6 +200,30 @@ script from the repository and writes their own registry.
   project refreshes, so the projects furthest behind receive the check last — which is the
   population the check most concerns.
 
+- **2026-08-07 — the script is packaged in `foundation` rather than kept at the composite root.**
+  The 2026-08-04 placement classified it as an authoring tool because a consuming project never
+  runs it. **That is the wrong test.** The script is **machine-scoped**: it reports the Waytide
+  projects on one machine, reading a registry outside every repository. The developer who wants
+  that is anyone who installed Waytide into more than one project, not only whoever maintains
+  Waytide — and such a developer has no reason to clone the authoring repository, which was the
+  only way to obtain it.
+  - **The authoring tools run against the packages; this runs beside projects.** That is a third
+    position, and the earlier classification had two slots.
+  - **`install-all.sh` already occupied a third position** for a different reason: it is fetched by
+    `curl` because it is needed *before* a project exists to deliver it. This one is needed
+    *across* projects.
+  - **What it costs is a copy per project against one registry.** Four copies today, each reporting
+    the same set, so a developer runs whichever is nearest. Accepted against a tool reachable only
+    by cloning the composite.
+  - **Nothing about what the tool does changes.** It still detects no condition, reaches no
+    network, takes no action, and names no consuming project in its own source.
+  - **`foundation` is where it is for now, and its own package is the likely next position.** It is
+    packaged there because `foundation` is the package every project has, which makes it the only
+    one that reaches every project — not because discovery is foundational. A package of its own
+    would carry it to the developers who want it and to no others, and would be the first Waytide
+    package that is a **tool** rather than a set of rules. Nothing in this entry assumes the
+    placement is final.
+
 ## Out of Scope / Deferred
 
 - **Anything done with a discovered project.** Refreshing, committing, and pushing in a consuming
@@ -217,3 +253,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 12:34:11 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:04:25 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:23:04 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:36:13 PM PT
