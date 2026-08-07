@@ -25,9 +25,8 @@ which reads the package directories actually present and emits the
 developer to type `load waytide` — the command that asks for the read instruction the hook
 carries to be acted on now; `system/foundation/statusline.sh`
 keeps the system's presence in the status line for the rest of the session, beside the
-working directory, branch, and any uncommitted, untracked, or unpushed work. Setting the
-`WAYTIDE_QUIET` environment variable to any non-empty value silences both. In a consuming
-project `install.sh` places the equivalent `.claude/settings.json`; here in the source it
+working directory, branch, and any uncommitted, untracked, or unpushed work. Neither can be
+silenced. In a consuming project `install.sh` places the equivalent `.claude/settings.json`; here in the source it
 is committed like this file.
 
 The `local/` directory holds this project's own working state — `log/`,

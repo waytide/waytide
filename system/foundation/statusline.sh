@@ -111,7 +111,7 @@ fi
 # README.md, the same test for a package that the session-start notice uses. Only the
 # display drops the number.
 waytide=
-if [ -n "$system" ] && [ -z "$WAYTIDE_QUIET" ]; then
+if [ -n "$system" ]; then
   package=$(
     cd "$system" 2>/dev/null &&
       find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | head -1
