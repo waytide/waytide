@@ -1,0 +1,1 @@
+# The bullet-list-answers experiment is initiated on `experiment/bullet-list-answers`, branch only and attended — its question is whether bullet lists should be the *required* form for an agent's answers rather than whether they read better, which is settled; the difficulty is therefore the exceptions rather than the requirement
