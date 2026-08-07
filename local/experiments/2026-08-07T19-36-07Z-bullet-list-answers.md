@@ -29,6 +29,13 @@ auditable:
    the experiment's name.
 4. **Affirmation** — declared by the developer on 2026-08-07. The lifecycle reserves this to the
    user, and it was not inferred from the rule having been written.
+5. **Merging without a passing suite** — confirmed specifically, on 2026-08-07. The lifecycle gates
+   an affirmed merge on the experiment's tests passing and requires specific confirmation where
+   nothing covers what the experiment produced. **This repository has no suite at all**, so the
+   condition could not be met rather than having been failed, and what the experiment produced is a
+   rule and a README line rather than code. The planning-directory check was green at the merge.
+6. **Deleting the branch** — confirmed on 2026-08-07, after the merge. The branch was never pushed,
+   so there is no remote branch and the single confirmation covers the whole deletion.
 
 ## What prompted it
 
@@ -141,3 +148,4 @@ The outcomes that escaped the forecast, recorded post hoc.
 Authored by Scott Bellware on Fri Aug 7 2026 at 12:36:07 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:03:17 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:06:37 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:08:07 PM PT
