@@ -1,0 +1,1 @@
+# Waytide is stated as licensed under the Eventide Common Interest License, rather than as not yet licensed with all rights reserved — the eight LICENSE files and the eight READMEs now name the license the work is under and say its text is forthcoming in `LICENSE`, matching the line printed at the head of every rule read

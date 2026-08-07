@@ -1,0 +1,1 @@
+# The gap between the copyright and license lines and the block at the head of the rule read is one blank line, because the agent's output is rendered as markdown and a run of blank lines between blocks collapses to a single paragraph break — a count of two or three was specified and produced exactly what one produces, which is a rule nothing can comply with or violate
