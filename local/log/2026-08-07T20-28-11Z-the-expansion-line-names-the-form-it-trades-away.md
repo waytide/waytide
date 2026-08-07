@@ -1,0 +1,1 @@
+# The expansion line reads `For more detail than bullet points, ask for an expanded answer.` rather than `For more detail, ask for an expanded answer.` — naming the form the expansion trades away rather than only the depth on offer, since a developer reading the shorter line has to guess what an expanded answer would look like
