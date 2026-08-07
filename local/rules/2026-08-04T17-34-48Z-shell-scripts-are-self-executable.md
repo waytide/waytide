@@ -46,9 +46,39 @@ which is how a script written for `sh` gets run by something else and fails some
 middle.
 
 **A script's own documentation depends on it.** Every script in this repository opens with a
-usage line written as `./name.sh`. That line is a claim about how the file is invoked, and it is
-false for a script that is not executable — so the convention is not cosmetic tidiness but the
-thing that keeps each script's header true.
+**usage line** — the command a developer types, in the script's own header. That line is a claim
+about how the file is invoked, and it is false for a script that is not executable, so the
+convention is not cosmetic tidiness but the thing that keeps each script's header true.
+
+## The usage line names the command; the command follows where the script is run from
+
+**`./name.sh` is not the universal form, and this rule asserted that it was until 2026-08-06.**
+Throughout this section `name.sh` stands for the script's own name, which the rule left
+unexplained and a reader had no way to tell from a filename.
+
+Three forms are in use, and which one is correct is not a matter of taste:
+
+- **`./name.sh`** — for a script that sits in the directory the command is typed in. The four
+  scripts at this repository's root take this form.
+- **The path form** — the script's location written from the directory the command is typed in,
+  as in `waytide/system/foundation/refresh-packages.sh`. A packaged script is run from a
+  consuming project's **root** and lives several directories below it, so `./name.sh` there names
+  a file that is not present and the command fails. Nine scripts take this form.
+- **`sh name.sh`** — the `curl` case above, and the only form that names an interpreter.
+
+**`./` is not what makes a script self-executing, which is what the rule had confused.** The
+executable bit and the shebang are, and they are what the two requirements at the top of this rule
+ask for. The `./` prefix contributes nothing to it: it exists to tell the shell that the argument
+is a **path** rather than a name to look up on `PATH`, and any string containing a slash already
+says that. So `waytide/system/foundation/refresh-packages.sh` is exactly as self-executing as
+`./report-direct-commits.sh` — neither names an interpreter, and `./` is simply what a path looks
+like when the file is in the current directory.
+
+**A script nobody types carries an Invocation block instead.** `session-start.sh` and
+`statusline.sh` are wired into `.claude/settings.json` by `install.sh` and run by the harness, so
+a usage line would name a command no developer issues. Each records its invocation anyway, and
+says why: a script whose invocation is not written down is one nobody can reproduce when the
+wiring breaks.
 
 ## The bit is always set; the usage line follows how the script is delivered
 
@@ -57,8 +87,9 @@ committed `100755` exactly like the rest, and nothing below relaxes that. What v
 **usage line**, and it varies because the bit does not survive every delivery.
 
 - **`git clone` and `git subtree` carry the file's mode.** A script that reaches a developer either
-  way arrives executable, so its usage line reads `./name.sh` and it is invoked as itself. Twelve
-  of the thirteen scripts here are in this case.
+  way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the
+  path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this
+  case.
 - **`curl` carries content and not file metadata.** An HTTP response body is bytes; the mode is a
   filesystem attribute and is not in it, so `curl` writes a new file at the default permissions and
   the copy is **never** executable, whatever the original's mode. A script delivered this way takes
@@ -94,11 +125,13 @@ than something each person reconstructs. The cost is remembering `chmod +x` once
 
 **How to apply:** when adding a `.sh` file, open it with `#!/bin/sh` and set its executable bit
 before committing it; confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
-every script, including one fetched with `curl`. Write the usage line in its header as
-`./name.sh`, unless the script is delivered by `curl` — then write `sh name.sh` there and wherever
-its install is documented, since that copy cannot be executable. When reviewing a script someone
-added, check the mode before anything else — it is the one defect that will not show up until
-another machine runs it.
+every script, including one fetched with `curl`. Give it a usage line in its header naming the
+command that runs it, written from the directory that command is typed in — `./name.sh` for a
+script at this repository's root, the path form for a script inside a package, and `sh name.sh`
+only for one delivered by `curl`, there and wherever its install is documented. Where the script
+is run by the harness rather than by a person, record its invocation and say what runs it. When
+reviewing a script someone added, check the mode before anything else — it is the one defect that
+will not show up until another machine runs it.
 Related: the `git` package's run-suite-before-commit rule (the other thing confirmed before a
 commit), and the foundation README's account of which scripts are authoring tools and which are
 carried to a consuming project.
@@ -108,3 +141,4 @@ carried to a consuming project.
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:50:13 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 3:00:44 PM PT
+Changed by Scott Bellware on Thu Aug 6 2026 at 5:48:30 PM PT
