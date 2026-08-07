@@ -1,0 +1,1 @@
+# The aspirations stand against the work session that corrected the usage-line rule and removed the silent option — none of the five addresses script conventions, the session-start surfaces, or the silencing option, and the consuming-project orchestrator aspiration's motivation had already been reconciled earlier the same day
