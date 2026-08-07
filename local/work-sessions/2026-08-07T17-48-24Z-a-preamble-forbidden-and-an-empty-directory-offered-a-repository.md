@@ -1,14 +1,15 @@
 # Work Session — A preamble forbidden, and an empty directory offered a repository (Fri Aug 7 2026 10:48)
 
-A short work session with two changes, both about what happens before a developer has done
-anything. The first forbids the agent explaining a prompt before showing it. The second gives
+A short work session with three changes, the first two about what happens before a developer has
+done anything. The first forbids the agent explaining a prompt before showing it. The second gives
 `install-all.sh` something to do when the directory it is run in is not a repository yet, rather
-than refusing. It closed by running the documented install end to end against the published
-packages and clearing the scratch it had accumulated.
+than refusing. Between them it ran the documented install end to end against the published packages
+and cleared the scratch it had accumulated. **The third was appended after this record was first
+written** — a line naming the wait at the head of the rule read, which nothing had named.
 
 **This is the communicable record — the guided tour, written to be read.** It is not the source of
 truth. The durable records are the decision-log entries under 2026-08-07,
-`a-project-works-in-a-mode-chosen-at-initiation`, and `install-all.sh`.
+`a-project-works-in-a-mode-chosen-at-initiation`, `initialization-rule`, and `install-all.sh`.
 
 It is the fifth record in this stretch of work, following `2026-08-06T07-34-11Z`,
 `2026-08-06T21-19-29Z`, `2026-08-07T00-24-54Z`, and `2026-08-07T02-54-05Z`.
@@ -79,6 +80,30 @@ the bootstrap comparison reported a match.
 The scratch left by two days of installer testing — fifteen directories and six harnesses — was
 cleared, each confirmed to have no remote first.
 
+## 5. The wait nobody had named
+
+**Appended after this record was first written**, covering the work that followed it in the same
+stretch.
+
+A third line joined what prints at the head of the rule read, between the license notice and the
+block: `Loading Waytide will take a few moments.` Everything printed there heads the response that
+then opens every rule file in every installed package — a wait a developer sits through — and
+nothing had named it. Of the three things printed there, it is the only one about the moment
+rather than about the work.
+
+**It repeats the session-start notice's caveat, and that was examined rather than assumed.**
+Duplication has cost this system twice in three days: the directory list written into both
+`session-start.sh` and the rule describing it, and the license claim in sixteen files. The
+difference here is the reader's position. The notice says the same thing **before** the developer
+types `load waytide`, where it is one of two facts they weigh in deciding to type it. This line is
+read **after** they have, while the wait is happening. The first informs a decision; the second
+explains a pause, and removing either leaves that position uncovered.
+
+**Adding a third item broke two paragraphs that described two.** One spoke of a single gap where
+there are now two; the other said the blank line falls before the block when it now falls before
+the loading line. Both were corrected in the same edit — the kind of stale sentence that survives
+because the change that invalidated it looked additive.
+
 ## Takeaways
 
 - **A rule that forbids one shape of a failure does not forbid the other.** *Report and offer* was
@@ -91,6 +116,11 @@ cleared, each confirmed to have no remote first.
   runs when there is no prompt.
 - **Consistency inside a script is a design constraint.** Two adjacent decisions — prompt for
   `git init`, do not prompt for a commit — cannot both be right on the same reasoning.
+- **Not all duplication is the same defect.** One fact stated twice to one reader is drift waiting
+  to happen; one fact stated to a reader in two different positions is coverage. The test is who is
+  reading and when, not how many copies exist.
+- **An addition invalidates the sentences that counted.** Going from two printed items to three
+  broke two paragraphs that had described two, neither of which the addition touched.
 
 ## Glossary
 
@@ -102,9 +132,10 @@ question. Both are forbidden; only the first is obvious.
 ## Where the durable records live
 
 - **Rules** — `a-project-works-in-a-mode-chosen-at-initiation`, whose mode-prompt section now
-  requires the response to carry the prompt and nothing else.
+  requires the response to carry the prompt and nothing else, and `initialization-rule`, which
+  gained the loading line.
 - **Scripts** — `install-all.sh`, for the repository offer and its default.
-- **Decision log** — the entries under 2026-08-07 covering both changes.
+- **Decision log** — the entries under 2026-08-07 covering all three changes.
 
 ## A closing note
 
@@ -116,3 +147,4 @@ defects were found by someone walking the path rather than by anything running.
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 10:48:24 AM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 11:11:02 AM PT
