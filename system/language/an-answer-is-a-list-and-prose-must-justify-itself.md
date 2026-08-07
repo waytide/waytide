@@ -24,6 +24,37 @@ keeping because both are tempting:
 - **Dependent reasoning is not a justification either**, because it is answered inside the form.
   See below.
 
+## A list item states a fact; it does not narrate
+
+**Narration is the failure the list form does not by itself prevent.** An answer can be a correct
+list of items every one of which describes the work rather than stating what is true, and it reads
+as compliance while being the thing the rule exists to stop.
+
+**These are narration, and none of them belongs in an answer:**
+
+- **Describing a choice as a choice** — *the judgment is left as a judgment on purpose*, *this was
+  recorded as a new entry rather than by rewriting the old one*, *the option was declined*.
+- **Explaining why something is as it is**, unasked — *so a later reader knows what tightening
+  would mean*, *which is what keeps the record honest*, *for the same reason the other rule gives*.
+- **Characterizing the work or its result** — *the miss is instructive*, *worth noting*, *this is
+  the substantive part*, *cleanly*, *correctly*.
+- **Reporting the agent's process** — *I checked*, *verified rather than assumed*, *rather than
+  trusting the composite's copy*.
+
+**The fact is what is left when those are removed.** *The rule names two stricter forms: the line
+on every list answer, or above a length threshold. Neither is adopted.* That is the same content
+with nothing said about it.
+
+**The test:** could the item be false? A fact can be. *The check is green*, *nine of thirteen
+scripts lack it*, *the branch is deleted* are all falsifiable. *This keeps the record honest* is
+not — it is a comment on a fact rather than a fact, and it is where narration hides.
+
+**Why the reasoning still belongs somewhere.** A rule, a record, and a commit message all carry
+why; each is written to be read as a document and its reader came for the reasoning. **An answer
+is not one of those.** The developer asked something, and reasoning they did not ask for is the
+agent taking their turn to think out loud. Where the reasoning is wanted, it is asked for — which
+is what the expansion line is for.
+
 ## Dependent reasoning takes an ordered list, not prose
 
 **An unordered list asserts that its items are parallel and independent.** Where a point follows
@@ -73,8 +104,10 @@ restated is a rule that has not been written, because every restatement is evide
 not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
 makes the difference survive a session boundary.
 
-**How to apply:** answer in a list. Number the list where its items depend on each other, and leave
-it unordered where they do not. Write prose only where the answer is a sentence or two, and do not
+**How to apply:** answer in a list. State facts in it — remove any item that describes a choice,
+explains an unasked-for reason, characterizes the work, or reports what the agent did to be sure,
+and test each survivor by whether it could be false. Number the list where its items depend on each
+other, and leave it unordered where they do not. Write prose only where the answer is a sentence or two, and do not
 reach for it because an explanation was requested or because the reasoning is connected — the first
 is not a justification and the second is served by numbering. Where the answer left something out,
 end it with `For more detail, ask for an expanded answer.` on its own line, and omit that line where the
@@ -88,3 +121,4 @@ present-every-prompt-through-askuserquestion rule (the selection interface, whic
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 12:55:09 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:02:58 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:10:48 PM PT
