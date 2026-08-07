@@ -6,6 +6,13 @@
 # the moment the system loaded, this keeps the fact on screen for the whole
 # session, outside the conversation.
 #
+# Invocation:
+#
+#   waytide/system/foundation/statusline.sh
+#
+# Nobody types that either. install.sh wires it into .claude/settings.json as the
+# statusLine command, and the harness runs it every turn.
+#
 # Because a project-level statusLine replaces whatever status line the developer
 # configured for themselves, this renders the working directory and git branch
 # too, so adopting it takes nothing away.

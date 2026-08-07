@@ -5,16 +5,22 @@
 # a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a
 # .claude/settings.json whose SessionStart hook and status line print the session-start
 # notice.
-# Run from the root of the consuming project.
+# Run from the root of the consuming project. This script lives inside the package it
+# installs, so once foundation is present it is invoked by its path from that root — not
+# as `./install.sh`, which would name a file in the project root that is not there.
 #
 # Usage:
-#   ./install.sh              install/refresh foundation, then place the bootstrap files
-#   ./install.sh agents-md    place the bootstrap files only (foundation already
-#                             installed; used by the composite install-all.sh so the
-#                             bootstrap logic lives in one place, not two)
-#   ./install.sh bootstrap    print the AGENTS.md bootstrap section and exit, placing
-#                             nothing; refresh-packages.sh compares it against the
-#                             project's AGENTS.md, so the text has one source here
+#
+#   waytide/system/foundation/install.sh
+#     Install or refresh foundation, then place the bootstrap files.
+#
+#   waytide/system/foundation/install.sh agents-md
+#     Place the bootstrap files only, foundation already being installed. The composite
+#     install-all.sh uses this, so the bootstrap logic lives in one place rather than two.
+#
+#   waytide/system/foundation/install.sh bootstrap
+#     Print the AGENTS.md bootstrap section and exit, placing nothing. refresh-packages.sh
+#     compares it against the project's AGENTS.md, so the text has one source here.
 set -e
 
 prefix="waytide/system/foundation"

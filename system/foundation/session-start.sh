@@ -7,6 +7,14 @@
 # renders as its own message.
 #
 # The notice never disrupts a session: any problem exits quietly with no output.
+#
+# Invocation:
+#
+#   waytide/system/foundation/session-start.sh
+#
+# Nobody types that. install.sh wires it into .claude/settings.json as the SessionStart
+# hook command, and the harness runs it. The line is recorded because a script whose
+# invocation is not written down is one nobody can reproduce when the wiring breaks.
 
 # Never let a notice break a session start.
 set +e
