@@ -15,9 +15,48 @@
 # inside a package by `git subtree`, which preserves the mode, and is invoked as itself.
 set -e
 
+# Waytide is installed with `git subtree`, so there has to be a repository to install into.
+# Rather than refusing outright, offer to make one — a developer running this in a directory
+# they mean to be a project is one `git init` away from what the script needs, and that is a
+# likelier reading than their having run it somewhere by mistake.
+#
+# It is offered rather than done. Creating a repository in a directory is not this script's to
+# assume: the directory may be inside another project, or meant to stay untracked, and an
+# unasked-for `.git` is a thing a developer then has to notice and undo.
 if [ ! -d .git ] && ! git rev-parse --git-dir >/dev/null 2>&1; then
-  echo "Run this from the root of a git repository — Waytide is installed with git subtree." >&2
-  exit 1
+  echo "This is not a git repository, and Waytide is installed with git subtree."
+  echo
+  echo "Directory: $(pwd)"
+  echo
+
+  # No prompt where nobody can answer one. Refusing is the safe outcome, and saying which
+  # command would fix it costs nothing.
+  if [ ! -t 0 ]; then
+    echo "Not running interactively, so nothing was created and nothing was installed." >&2
+    echo "Run \`git init\` here first, then run this again." >&2
+    exit 1
+  fi
+
+  # The default is yes. A developer reaching this prompt fetched the script, chose a
+  # directory, and ran it — the intention is not in doubt, and `git init` creates a
+  # directory and destroys nothing. Defaulting it to no would also sit oddly beside the
+  # empty initial commit this script makes with no prompt at all, which writes to a
+  # developer's repository and is the more intrusive of the two.
+  #
+  # What the prompt is actually for is the wrong directory, and the path printed above is
+  # what catches that. The question remains so there is somewhere to say no.
+  printf 'Initialize a git repository here and install into it? [Y/n] '
+  read -r answer
+  case "$answer" in
+    [Nn] | [Nn][Oo])
+      echo "Nothing was created and nothing was installed."
+      exit 1
+      ;;
+    *)
+      git init --quiet
+      echo "Initialized a git repository."
+      ;;
+  esac
 fi
 
 # The authoring source holds the packages at system/, with no waytide/ wrapper; a consuming
