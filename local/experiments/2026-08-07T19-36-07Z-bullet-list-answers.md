@@ -8,13 +8,27 @@ preference is a **rule**, and if so what it may require without breaking the ans
 
 ## Setup
 
-- **State:** In flight
+- **State:** Affirmed
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/bullet-list-answers`
 - **Base:** `5422551fed1310b7460f24fcae65f90933e1db17`
 - **Working location:** branch only, chosen at initiation. This working tree switches back to
   `master` at the conclusion.
 - **Gating cadence:** attended, chosen at initiation. The loop stops at every hinge.
+
+## Confirmations
+
+The user confirmations this experiment's lifecycle required, recorded so the run's authority is
+auditable:
+
+1. **Working location, at initiation** — branch only, chosen through the selection interface. The
+   current-branch option was named and marked unavailable, an experiment's branch not being
+   optional.
+2. **Gating cadence, at initiation** — attended, chosen through the selection interface.
+3. **The question itself, at initiation** — chosen among three readings rather than assumed from
+   the experiment's name.
+4. **Affirmation** — declared by the developer on 2026-08-07. The lifecycle reserves this to the
+   user, and it was not inferred from the rule having been written.
 
 ## What prompted it
 
@@ -89,7 +103,34 @@ evidence. Two things in particular:
 
 ## Findings
 
-To be recorded.
+1. **The question held.** Bullet lists are the required form, written as
+   `an-answer-is-a-list-and-prose-must-justify-itself` in `language`.
+2. **Inverting the burden is the substance of the rule.** A rule saying *prefer lists* would leave
+   prose available whenever it is easier, which is always. Requiring prose to name a justifying
+   condition is what makes the difference survive a session boundary.
+3. **Dependent reasoning is served by the form, not by an exception to it.** An unordered list
+   asserts its items are parallel; a numbered list asserts sequence. The forecast treated prose as
+   the remedy and was wrong.
+4. **An explanation asked for is not a justification for prose**, refuted by this experiment's own
+   session: every explanation requested outright was answered in a list.
+5. **The expansion offer was not anticipated by the question or the forecast.** It was added by the
+   developer mid-experiment, and it is the one element whose reliability is unproven.
+
+## Misses
+
+1. **Forecast 3 named the right problem and the wrong remedy.** It predicted that a naive
+   requirement would damage reasoning whose steps depend on each other — correct — and assumed the
+   remedy was prose. The remedy is an ordered list. The miss is instructive because it shows the
+   forecast reasoning in the same terms the rule was written to displace: prose against lists,
+   rather than one kind of list against another.
+2. **Forecast 4 is unresolved and is affirmed anyway.** It predicted over-application — reasoning
+   bulleted into fragments — which cannot be observed from writing a rule. Affirmation does not
+   settle it, and nothing is lost by that: the rule itself records that experience decides whether
+   the expansion line's timing needs tightening, and names the two stricter forms available. **The
+   claim carried forward is the rule's, not this record's.**
+3. **The experiment concluded before the thing it was most uncertain about could be tested**, which
+   is a property of what it was testing rather than a defect in how it ran. A rule about how an
+   agent answers can only be judged by an agent answering under it.
 
 ## Misses
 
@@ -99,3 +140,4 @@ The outcomes that escaped the forecast, recorded post hoc.
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 12:36:07 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:03:17 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:06:37 PM PT
