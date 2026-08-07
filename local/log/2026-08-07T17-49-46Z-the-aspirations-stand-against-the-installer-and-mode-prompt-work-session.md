@@ -1,0 +1,1 @@
+# The aspirations stand against the work session that forbade a preamble before the mode prompt and gave the installer something to do in an empty directory — none of the five addresses the installer, the mode prompt, or what an agent prints before a question, and the consuming-project orchestrator aspiration's motivation was reconciled on 2026-08-06
