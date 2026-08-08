@@ -1,0 +1,1 @@
+# `cut` is retired in a second sense — a branch is **created** or **branched from**, never cut from a base; the `language` substitutions table already held `cut` in its slice-of-scope sense, where the term is `increment`, and the table now carries a row for each sense

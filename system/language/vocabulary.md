@@ -19,7 +19,8 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **normal path** | "happy path" | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path" |
 | **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention |
 | **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs |
-| **increment** | "cut" | a bounded slice of scope delivered as a step |
+| **increment** | "cut" | a bounded slice of scope delivered as a step — see below for the word's other sense |
+| **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base — see below |
 | **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
 | **scenario** | "arm" | one variant or case a method or feature handles |
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
@@ -37,6 +38,13 @@ General, domain-less word substitutions — the literal term in place of a slang
 
 ### Finer distinctions
 
+- **cut** is figurative in two senses, and both are retired. As a **slice of scope**, say
+  **increment** — the row above. As **making a branch**, say **created** or **branched from**:
+  *this branch was created from `master`*, never *this branch was cut from `master`*. The
+  `foundation` experiment-lifecycle rule already writes *branched from*, so the literal term was in
+  use before the figure was noticed. The two senses share one word and nothing else, which is why
+  the table carries two rows rather than one.
+
 - **mediates.** The canonical form is the bare verb — *`X` mediates `Y`*, not *`X` mediates for `Y`*. "wrap"/"wrapper" reads as a generic decorator and hides the relationship; "mediates" names it exactly — the object stands between a user and the thing it fronts, providing access to it.
 - **obsolete** is the fallback, not the goal — reach for the exact word when there is one: a reference whose target moved is **unresolvable**; a rule no longer in force is **retired** or **superseded**; a branch that can only go one way **has nothing to decide**; an assignment that never happens **never fires**. "dead" over-dramatizes — nothing died, and the drama distorts judgment, making routine tidying read as urgent repair.
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
@@ -52,3 +60,4 @@ Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT
 Changed by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:59:32 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:17:44 AM PT
