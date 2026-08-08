@@ -15,7 +15,7 @@ with the approved word that replaces it. A word can also be absent.
 2. **Not approved.** The dictionary names a replacement.
 3. **Absent.** Rule 1.1 permits it only as a technical noun or a technical verb.
 
-## List 1 — proposed changes
+## Terms to replace with an approved word
 
 These terms are not approved, and an approved word carries the same meaning.
 
@@ -31,7 +31,7 @@ These terms are not approved, and an approved word carries the same meaning.
 `loop`, `mechanical`, `name`, `activate`, `install packages`, `out of scope`, `work session
 record`.
 
-## List 2 — Waytide's technical vocabulary
+## Terms Waytide declares as technical nouns and technical verbs
 
 **All of these fit category 19, Computer science, information and communication technology.** The
 category's own examples include AI, large language model, machine learning, and prompt
@@ -65,7 +65,7 @@ package's `vocabulary.md` already does.
 | `mediates` | verb | language | absent. A technical verb under Rule 1.12 |
 | `normal path` | noun | language | `path` is absent. The pair is one technical noun |
 
-## Four terms that neither list settles
+## Four terms neither table settles
 
 1. **`Observe`, `Orient`, `Decide`, `Act`.** All four are unapproved. The dictionary replaces them
    with MONITOR, POINT, and SELECT, and gives no replacement for `act`. They are Boyd's OODA
@@ -88,8 +88,8 @@ terms, and the `language` package's substitution tables and the dictionary give 
 instructions for the same word.
 
 **How to apply:** wait for the Simplified Technical English experiment's verdict. If the
-specification is adopted, apply List 1 as substitution-table changes in each package's
-`vocabulary.md`, and record List 2 in the same files as declared technical nouns and technical
+specification is adopted, apply the replacements as substitution-table changes in each package's
+`vocabulary.md`, and record the declared terms in the same files as technical nouns and technical
 verbs with their category. Settle the four open terms first. `gate` breaks Rule 1.7 and Rule 1.13.
 The OODA phase names reach the mode rule, which names `orientation` and `action` as OODA mode's
 artifacts. Related: the STE
@@ -100,3 +100,4 @@ each package's `vocabulary.md`.
 ---
 Authored by Scott Bellware on Fri Aug 7 2026 at 11:57:46 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:09:51 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:27:08 PM PT
