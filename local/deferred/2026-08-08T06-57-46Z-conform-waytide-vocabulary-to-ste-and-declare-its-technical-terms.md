@@ -81,20 +81,22 @@ package's `vocabulary.md` already does.
    Category 21, Law and regulations, lists `conform to` as a technical verb, but Waytide's use is
    not legal or regulatory.
 
-**Why:** the parent experiment forecast that the approved dictionary is where the specification
-breaks against Waytide. The check shows the forecast was right about the dictionary and wrong about
-the scale. **Five terms need replacing. Twenty-three need declaring. Four have no answer yet.** A
-list of that size is work, not an obstacle, which is the difference between the specification being
-inapplicable and merely requiring effort.
+**Why:** Waytide's vocabulary and the STE dictionary disagree in 38 places. Five terms need
+replacing. Twenty-three need declaring as technical nouns or technical verbs. Four have no answer.
+Ten terms already agree. Until this work is done, a rule written in STE cannot use Waytide's own
+terms, and the `language` package's substitution tables and the dictionary give different
+instructions for the same word.
 
 **How to apply:** wait for the Simplified Technical English experiment's verdict. If the
 specification is adopted, apply List 1 as substitution-table changes in each package's
 `vocabulary.md`, and record List 2 in the same files as declared technical nouns and technical
-verbs with their category. Settle the four open terms first, because `gate` is a rule violation
-rather than a preference, and because the OODA phase names reach the mode rule. Related: the STE
+verbs with their category. Settle the four open terms first. `gate` breaks Rule 1.7 and Rule 1.13.
+The OODA phase names reach the mode rule, which names `orientation` and `action` as OODA mode's
+artifacts. Related: the STE
 Spec experiment (which read the specification), the Simplified Technical English experiment (which
 this is gated on), the deferred item recording that the specification permits project words, and
 each package's `vocabulary.md`.
 
 ---
 Authored by Scott Bellware on Fri Aug 7 2026 at 11:57:46 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:09:51 AM PT
