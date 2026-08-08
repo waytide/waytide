@@ -141,7 +141,7 @@ evidence. Two things in particular:
 
 ## Misses
 
-The outcomes that escaped the forecast, recorded post hoc.
+Outcomes the forecast did not account for, recorded post hoc.
 
 ---
 
@@ -149,3 +149,4 @@ Authored by Scott Bellware on Fri Aug 7 2026 at 12:36:07 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:03:17 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:06:37 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:08:07 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:44:33 AM PT

@@ -1,0 +1,1 @@
+# A miss is an outcome the forecast did not account for, rather than one that escaped the forecast — the experiments-convention and the records copied from it said escaped, which describes the forecast's experience of being got past rather than what the record holds
