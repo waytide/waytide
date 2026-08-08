@@ -105,10 +105,11 @@ To be recorded.
 
 ## Misses
 
-The outcomes that escaped the forecast, recorded post hoc.
+Outcomes the forecast did not account for, recorded post hoc.
 
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:32:54 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 11:08:29 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:11:58 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:44:59 AM PT
