@@ -12,7 +12,7 @@ The *principles* that govern word choice stay as rules — `name-literally-not-b
 
 ## Substitutions
 
-General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`protect` in `testing`.)
+General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`protect` in `testing`.)
 
 | Say | Don't say | What it names |
 |---|---|---|
@@ -35,6 +35,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit — the first efferent reference — see below |
 | **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below |
+| **the standard's name, then the number** — *STE Rule 1.7* | "Rule 1.7" | a citation of a numbered rule in an external standard — see below |
 
 ### Finer distinctions
 
@@ -50,6 +51,14 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 - **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters: a switch is binary, instantaneous, and reversible by the same gesture, where activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
+- **A numbered citation names its standard.** Waytide has rules of its own, so a bare *Rule 1.7*
+  leaves a reader to work out which system it belongs to, and the numbering gives them nothing to
+  work it out from. Write the standard's name first — **STE Rule 1.7**, **STE Rules 1.5 through
+  1.13** — in prose, records, commits, and dialogue alike. This is a rule about ambiguity rather
+  than about a figure of speech: neither word is wrong, and the citation is still incomplete
+  without the name. A Waytide rule needs no such prefix, being cited by its name rather than by a
+  number.
+
 - **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master" — say **what changed**, **what was affected**, or **took effect**.
 
 **Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.
@@ -61,3 +70,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:59:32 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:17:44 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 1:38:51 PM PT
