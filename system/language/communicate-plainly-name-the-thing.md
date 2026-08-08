@@ -6,7 +6,7 @@ Speak and write to the user in plain language, using the **actual names of thing
 - **No symbolic back-references.** Don't point back to an earlier item by its number or position ("#2", "option 3", "the second one", "the latter"). The reader has to scroll back and count to recover what you meant. Name the thing again each time — "the show-the-test merge," not "#2" — even at the cost of a little repetition. Repetition the reader can follow beats a shorthand they must decode.
 - **No jargon as shorthand.** A compressed term ("distributed", "atomic records") is fine only once its plain meaning is on the table; don't lead with it as though the reader already shares it.
 - **Plain over impressive.** Prefer the plain word and the concrete description over the clever-sounding one. If a sentence needs a glossary to parse, rewrite it.
-- **Governs conversation, not only the code.** Like `no-slang`, this reaches phrasing addressed *to* the user — an explanation, a summary, a status note — not only what goes into the codebase. The clarity it serves lives in being understood.
+- **Governs conversation, not only the code.** Like `no-slang`, this reaches phrasing addressed *to* the user — an explanation, a summary, a status note — not only what goes into the codebase. The clarity it preserves lives in being understood.
 
 **Why:** invented labels and unexplained jargon feel precise but actually hide meaning — the reader has to work out what "tier 1" stands for. Naming the real thing costs a few words and saves the reader the decoding. The point of communicating is to be understood, not to sound authoritative.
 
@@ -16,3 +16,4 @@ Speak and write to the user in plain language, using the **actual names of thing
 
 Authored by Scott Bellware on Sat Jul 18 2026 at 10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
