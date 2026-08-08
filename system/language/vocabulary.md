@@ -51,7 +51,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 - **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters: a switch is binary, instantaneous, and reversible by the same gesture, where activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
-- **A numbered citation names its standard.** Waytide has rules of its own, so a bare *Rule 1.7*
+- **A citation of a rule in an external standard names that standard.** Waytide has rules of its own, so a bare *Rule 1.7*
   leaves a reader to work out which system it belongs to, and the numbering gives them nothing to
   work it out from. Write the standard's name first — **STE Rule 1.7**, **STE Rules 1.5 through
   1.13** — in prose, records, commits, and dialogue alike. This is a rule about ambiguity rather
@@ -71,3 +71,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:59:32 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:17:44 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:38:51 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:06:25 PM PT
