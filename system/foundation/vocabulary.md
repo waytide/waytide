@@ -17,7 +17,7 @@ it back*.
   finishes. It goes into `waytide/local/deferred/` as a **queue, not a record**: an item is
   worked and then its file is **deleted**, leaving a decision-log entry as the durable trace. A
   deferred item is *waiting its turn* — the project still intends to do it. It carries a
-  `**Gated on:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
+  `**Waits for:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
   rule is the deferred-convention.
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
   rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
@@ -82,3 +82,4 @@ write the **Say** term.
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

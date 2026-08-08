@@ -4,7 +4,7 @@ The AeroSpace and Defence Simplified Technical English specification restricts w
 approved dictionary, and **permits a project to approve its own technical names and technical
 verbs** for its domain. Waytide's settled terms are exactly that case.
 
-- **Gated on:** the Simplified Technical English experiment reaching a verdict. Approving a word
+- **Waits for:** the Simplified Technical English experiment reaching a verdict. Approving a word
   list presumes the specification is adopted, and that is what the experiment tests.
 
 ## Why this changes the forecast it answers

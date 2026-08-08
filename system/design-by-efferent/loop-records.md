@@ -21,14 +21,14 @@ displace (the log stays one line per decision).
   how every cycle below is read.
 - One section per **cycle**, in order. Each cycle records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
-  - **Options** — the candidates put to the developer at the gate (or "none — not
-    gated", explicitly, when a hinge was handled without stopping; surfacing a
+  - **Options** — the candidates put to the developer at the gate (or "none — no
+    gate", explicitly, when a hinge was handled without stopping; surfacing a
     skipped gate is part of the record's value).
   - **Decision / chat** — what the developer chose, or the chat that ensued and
     how it resolved (record the substance of the chat, not just the outcome).
 - **Under an unattended mode, a cycle carries its hinge and the decision with its reasoning,
   and no Options or Decision / chat line** — neither happened, and writing them would be a
-  false record of a deliberation that never occurred. This is **not** the "none — not gated"
+  false record of a deliberation that never occurred. This is **not** the "none — no gate"
   form above: that marks a **skipped** gate in an attended run, which is a defect worth
   surfacing, where an unattended run has no gates by choice. The mode declaration is what
   tells them apart.
@@ -62,3 +62,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:21:11 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

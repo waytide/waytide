@@ -90,7 +90,7 @@ what accounts for every place this rule departs from the experiment's.
   (paused, not ended). Every feature reaches one of these; it is never left silently open.
   There is no *affirmed*, *refuted*, or *inconclusive*: those judge a question, and a
   feature has an intent.
-- **Verified before integrating; nothing gates the merge.** A feature's tests are verified
+- **Verified before integrating; nothing prevents the merge.** A feature's tests are verified
   before it is integrated, which `run-suite-before-commit` already achieves — every commit
   on the branch having been verified. **No further gate applies at the merge.** The merged
   result is a combination neither branch ran, so a feature whose commits all passed can
@@ -171,3 +171,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 11:12:40 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

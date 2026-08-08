@@ -28,7 +28,7 @@ it out and reach a passing implementation directly.
 available when **covering** behavior that already exists: there is no red to manufacture there
 without breaking working code, which the tdd-designs-coverage-protects rule forbids outright,
 and the implementation hinge is degenerate in that case (see the
-hinges-gate-the-design-of-a-test-including-coverage rule). So the second candidate is offered
+the-design-of-a-test-waits-at-the-hinges-including-coverage rule). So the second candidate is offered
 only where it is actually available, rather than being offered and then refused.
 
 **Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by
@@ -69,10 +69,11 @@ floor. Related: the hinge-cycle rule (the five hinges, of which this is the four
 dbe-as-design-tool rule (which rejects the cycle as choreography, not as a choice), the
 present-every-prompt rule (the two-option floor this must not be used to satisfy), the
 tdd-designs-coverage-protects-never-break-implementation and
-hinges-gate-the-design-of-a-test-including-coverage rules (the coverage case where the cycle is
+the-design-of-a-test-waits-at-the-hinges-including-coverage rules (the coverage case where the cycle is
 unavailable), and the no-green-on-arrival-tests rule (the no-op implementation hinge, where
 there is nothing to drive).
 
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

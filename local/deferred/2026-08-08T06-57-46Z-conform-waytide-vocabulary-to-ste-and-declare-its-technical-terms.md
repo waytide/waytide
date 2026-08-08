@@ -3,7 +3,7 @@
 Every Waytide vocabulary term was checked against the ASD-STE100 Issue 9 dictionary on 2026-08-08.
 The dictionary holds 1,898 entries. This item carries the two lists that check produced.
 
-- **Gated on:** a decision to adopt ASD-STE100 in any part. The Simplified Technical English
+- **Waits for:** a decision to adopt ASD-STE100 in any part. The Simplified Technical English
   experiment tests that. Nothing here is applied before it concludes.
 
 ## How a word was classified

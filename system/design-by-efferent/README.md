@@ -4,7 +4,7 @@
 
 The one-liner:
 
-> The AI **generates** straight through, and **gates** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
+> The AI **generates** straight through, and **waits** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
 
 **The vocabulary**. `vocabulary.md` is the method's lexicon: loop, hinge, gate, deliberation, mechanical, subtle, cradle, efferent, actuation, observation, load-bearing, and the DBE name itself. It carries the distributed-OODA framing (the human owns Orient; the AI owns Observe and Act) and the retired terms. Read it first — the rules below use its words with its meanings.
 
@@ -30,7 +30,7 @@ The one-liner:
 
 **Design vs. coverage**
 - TDD designs behavior; adding coverage protects it — distinct activities. Never break a working implementation to introduce a test.
-- The hinges still gate a *coverage* test's design, with the implementation hinge degenerate.
+- A *coverage* test's design still waits at the hinges, with the implementation hinge degenerate.
 - Drop an outcome whose test is green-on-arrival — it drives no design.
 - The implementation hinge offers two candidates: the working implementation, or the **red/green/refactor cycle** — chosen, and so not the choreography this method rejects. The red must reach no stable test, and the cycle is unavailable when covering existing behavior.
 
@@ -65,3 +65,4 @@ git subtree pull --prefix waytide/system/design-by-efferent https://github.com/w
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

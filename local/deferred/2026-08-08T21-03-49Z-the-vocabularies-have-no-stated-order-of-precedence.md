@@ -10,7 +10,7 @@ about a word.** The developer stated the order on 2026-08-08, and it is written 
 5. An individual package's terms
 6. An individual package's substitutions
 
-- **Gated on:** nothing, for levels 3 through 6. The order among Waytide's own vocabularies is a
+- **Waits for:** nothing, for levels 3 through 6. The order among Waytide's own vocabularies is a
   question about Waytide and can be settled now. **Levels 1 and 2 are gated on the Simplified
   Technical English experiment reaching a verdict**, since putting STE at the head of the order
   presumes the specification is adopted, which is what that experiment tests.

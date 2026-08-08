@@ -26,7 +26,7 @@ users, and the agent is not in a position to make it.
 **It is also irreversible in practice.** A version, once published, is what other projects
 pin against and install. A wrong choice is not corrected by editing it — the published
 version stays published, and the correction is another version. That asymmetry is why the
-decision is gated rather than proposed and confirmed.
+decision is put at a gate rather than proposed and confirmed.
 
 **Present the candidates with what each claims, not only the number.** The developer is
 choosing a claim about compatibility, so the option that says *capability added, existing use
@@ -52,3 +52,4 @@ every prompt goes through the selection UI), and the `git` subject-first-commit-
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

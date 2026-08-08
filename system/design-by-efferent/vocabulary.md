@@ -4,7 +4,7 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 
 ## The one-liner
 
-> The AI **generates** straight through, and **gates** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
+> The AI **generates** straight through, and **waits** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
 
 ## Terms
 
@@ -15,7 +15,7 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 | **cycle** | the unit of the loop | **One traversal of the loop**: a hinge surfaced, decided, and acted on. It is the unit a loop record is written in — one section per cycle, carrying that cycle's hinge, the options put at the gate, and the decision. See "cycle is scoped by what precedes it". |
 | **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. |
 | **attended** / **unattended** | the human's participation | Whether the loop **stops** at each hinge for the developer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's initiation and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
-| **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. (Verb: the loop *gates* at hinges.) |
+| **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. The loop *waits* at a gate; `gate` is a noun and never a verb. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. |
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
@@ -70,14 +70,14 @@ The two marks of a hinge — **subtle** and **load-bearing** — are independent
 - It **spreads** — everything built on it inherits the mistake.
 - It **sticks** — once things rest on it, undoing it means undoing them too.
 
-Together these give the **asymmetry that justifies the gate**: a load-bearing choice is **cheap to fix now** (before anything rests on it) and **costly to fix later** (after). The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop gates there and not afterward.
+Together these give the **asymmetry that justifies the gate**: a load-bearing choice is **cheap to fix now** (before anything rests on it) and **costly to fix later** (after). The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
 
 **How to recognize it:** ask *if this choice is wrong, how far does the damage spread, and how expensive is it to reverse once we've built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
 
 **Why both marks are required:**
 
 - Load-bearing **but crude** (the right answer is readable off the code/tests/patterns) → the AI can make it; no gate needed, even though much rests on it.
-- Subtle **but not load-bearing** (takes judgment, but the choice is local and cheaply changed) → not worth stopping the human; gating it is ceremony.
+- Subtle **but not load-bearing** (takes judgment, but the choice is local and cheaply changed) → not worth stopping the human; a wait there is ceremony.
 - **Subtle *and* load-bearing** → a hinge. Gate it.
 
 **Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations, and the implementation all rest on it, so a wrong shape spreads into all of them and gets costly to change once code depends on it (which is why it is the first and highest-leverage gate). By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
@@ -107,7 +107,9 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 - **capability-independent** → state it plainly (subtlety is about the design, not the model)
 - **non-hinge** → **mechanical**
 - **pass** (one traversal of the loop) → **cycle**
-- **suspending DBE** → **unattended** (the method is never suspended; only the gating is)
+- **suspending DBE** → **unattended** (the method is never suspended; only the waits are)
+- **gate**, as a verb → **wait** (the loop *waits* at a gate; `gate` is the noun for the
+  mechanism and takes no verb form)
 - **gating cadence** → **the human's participation** (attended and unattended cause a cadence but
   are not one; what they name is whether the human is in the loop)
 
@@ -121,3 +123,4 @@ Authored by Scott Bellware on Thu Jul 16 2026 at 8 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

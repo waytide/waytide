@@ -3,9 +3,9 @@
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is
 initiated and held for its duration:
 
-- **Attended** — human-in-the-loop. The loop **gates** at every hinge, and the developer
+- **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the developer
   deliberates each one. **This is the default.**
-- **Unattended** — the loop does not gate. The agent determines each hinge and decides it,
+- **Unattended** — the loop does not wait. The agent determines each hinge and decides it,
   generating through to the end of the work.
 
 **DBE is in effect either way, and that is what makes this a cadence rather than a switch.**
@@ -42,15 +42,15 @@ that resolved it. Under unattended work the last two did not happen. So:
 - There is **no Options line and no Decision / chat line**. Writing them would be a false
   record of a deliberation that never occurred.
 
-**This is not the same as an ungated hinge in an attended run.** The loop-records rule has a
-form for that — *"none — not gated"* — and it exists to **surface a skipped gate as a defect**.
-Under unattended work every hinge is ungated by choice, so marking each one that way would
+**This is not the same as a hinge with no gate in an attended run.** The loop-records rule has a
+form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**.
+Under unattended work every hinge has no gate by choice, so marking each one that way would
 report a run of failures where there was a declared mode. The mode declaration is what
 distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
 **Why:** the developer's attention is the scarce thing the whole method is arranged around, and
 the arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
-negligible that assumption is wrong, and gating five times buys nothing — the ceremony this
+negligible that assumption is wrong, and five waits buy nothing — the ceremony this
 method exists to retire, arriving by a different route. Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
 in both modes is what stops the choice from being a way out of the method: unattended work is
@@ -64,8 +64,8 @@ to the developer through the selection UI alongside the working location, with a
 default. Record the choice as a confirmation in the feature or experiment record, and declare
 it at the top of the loop record. Run the hinges either way. When unattended, write each cycle
 as its hinge and the decision with its reasoning, and write no Options or Decision / chat line.
-Do not describe unattended work as suspending DBE — what is suspended is the gating. Related:
-the loop-records rule (the record's shape and the "none — not gated" form this is distinct
+Do not describe unattended work as suspending DBE — what is suspended is the waits. Related:
+the loop-records rule (the record's shape and the "none — no gate" form this is distinct
 from), the dbe-human-in-the-loop rule (why attention is placed at the hinges), the hinge-cycle
 rule (the hinges that run either way), the never-ask-to-start-test-first rule (which forbids
 asking about the method's substance, where this asks about its cadence), and foundation's
@@ -74,3 +74,4 @@ feature-lifecycle and experiment-lifecycle rules (the initiations where the choi
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT

@@ -67,7 +67,7 @@ for the same reason: bounded to the read, printed once, and duplicating nothing 
 emits. The queue is the closing bookend and the mark is the opening one.
 
 **The agent reads the items, so nothing has to be machine-readable.** A script parsing
-`waytide/local/deferred/` would need the `**Gated on:**` line in a fixed form to say anything
+`waytide/local/deferred/` would need the `**Waits for:**` line in a fixed form to say anything
 about what is actionable. The agent reads the prose, so the deferred convention's format is
 unaffected by this rule.
 
@@ -102,3 +102,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:16:40 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
