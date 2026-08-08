@@ -1,6 +1,6 @@
 # Waytide — git
 
-Commit conventions for a project's git history.
+Commit conventions for a project's git history, and the one branch operation the agent announces.
 
 The rules in this package govern how commits are made and worded:
 
@@ -14,6 +14,13 @@ The rules in this package govern how commits are made and worded:
 - **Subject-first commit messages**. The subject of the change leads, in
   passive voice and indicative mood ("Widget reconciliation is corrected"), so
   a scanned log surfaces what changed first.
+
+One rule governs a branch operation rather than a commit:
+
+- **Announce a branch switch in a bordered block**. A switch changes what every
+  path in the repository means, and it is the one operation whose effect is
+  invisible in every later report. The block gives the branch left, the branch
+  reached, and why, inside a border that ordinary output cannot be mistaken for.
 
 This is a standalone package: it includes no other packages.
 

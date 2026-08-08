@@ -1,0 +1,1 @@
+# A branch switch is announced in a bordered block carrying the branch left, the branch reached, and the reason — a switch changes what every path in the repository means and is the one operation whose effect is invisible in every later report, so the block is bordered with `=` characters to keep it from reading as another line of output; the rule is in the `git` package
