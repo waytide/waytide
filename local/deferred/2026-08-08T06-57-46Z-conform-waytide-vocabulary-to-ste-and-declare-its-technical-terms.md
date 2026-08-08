@@ -8,7 +8,7 @@ The dictionary holds 1,898 entries. This item carries the two lists that check p
 
 ## How a word was classified
 
-The dictionary writes an approved word in capitals. It writes an unapproved word in lower case,
+The dictionary writes an approved word in capitals. It writes a word that is not approved in lower case,
 with the approved word that replaces it. A word can also be absent.
 
 1. **Approved.** Use it as the dictionary's part of speech, with the dictionary's meaning.
@@ -25,7 +25,7 @@ These terms are not approved, and an approved word carries the same meaning.
 | `impact` | **EFFECT** | The dictionary names HIT, which is wrong here. EFFECT is approved as a noun and says what Waytide means. |
 | `convey` | **MOVE** | The dictionary names MOVE. Waytide's `convey` is a value passed through layers. |
 | `protect` | **PREVENT** | The dictionary names PREVENT. A test prevents a regression. |
-| `scenario` | **CONDITION** | `scenario` is absent. `case` is unapproved and CONDITION replaces it. |
+| `scenario` | **CONDITION** | `scenario` is absent. `case` is not approved and CONDITION replaces it. |
 
 **These Waytide terms are already approved and do not change:** `examine`, `increment`, `cycle`,
 `loop`, `mechanical`, `name`, `activate`, `install packages`, `out of scope`, `work session
@@ -42,9 +42,9 @@ package's `vocabulary.md` already does.
 | Term | Part of speech | Package | Dictionary status |
 |---|---|---|---|
 | `efferent` | noun, adjective | language, design-by-efferent | absent |
-| `actuation` | noun | language, design-by-efferent | unapproved, replaced by OPERATION |
+| `actuation` | noun | language, design-by-efferent | not approved, replaced by OPERATION |
 | `solubility` | noun | language, design-by-efferent | absent |
-| `hinge` | noun | design-by-efferent | unapproved, replaced by TURN |
+| `hinge` | noun | design-by-efferent | not approved, replaced by TURN |
 | `cradle` | noun | design-by-efferent | absent |
 | `mean-bias` | noun | design-by-efferent | absent |
 | `origination` | noun | design-by-efferent | absent |
@@ -55,19 +55,19 @@ package's `vocabulary.md` already does.
 | `Design By Efferent` | noun | design-by-efferent | the method's name |
 | `controls` | noun | testing | absent |
 | `precondition` | noun | testing | absent |
-| `verified` | adjective | testing | absent. `verify` is unapproved, replaced by MAKE SURE |
+| `verified` | adjective | testing | absent. `verify` is not approved, replaced by MAKE SURE |
 | `deferred`, `suspended` | adjective | foundation | absent |
 | `projection` | noun | foundation | absent |
 | `reconcile` | verb | foundation | absent |
 | `working-state artifact` | noun | foundation | absent |
 | `recognizable-content line` | noun | foundation | absent |
-| `product generation` | noun | versioning | unapproved, no replacement given |
+| `product generation` | noun | versioning | not approved, no replacement given |
 | `mediates` | verb | language | absent. A technical verb under STE Rule 1.12 |
 | `normal path` | noun | language | `path` is absent. The pair is one technical noun |
 
 ## Four terms neither table settles
 
-1. **`Observe`, `Orient`, `Decide`, `Act`.** All four are unapproved. The dictionary replaces them
+1. **`Observe`, `Orient`, `Decide`, `Act`.** None of the four is approved. The dictionary replaces them
    with MONITOR, POINT, and SELECT, and gives no replacement for `act`. They are Boyd's OODA
    phases, quoted from another author. A technical noun category does not obviously hold a phase
    name. **OODA mode's own artifact names, `orientation` and `action`, rest on these words.**
@@ -102,3 +102,4 @@ Authored by Scott Bellware on Fri Aug 7 2026 at 11:57:46 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:09:51 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:27:08 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:37:01 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 1:57:24 PM PT
