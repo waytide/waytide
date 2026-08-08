@@ -77,6 +77,28 @@ Committed before the work.
    against an external standard will expose what the prose is doing that nobody has stated —
    which is worth more than the adoption decision either way.
 
+## The third question is under trial from 2026-08-08
+
+**The developer instructed the agent to write its answers in Simplified Technical English**,
+adapted to Waytide's vocabulary, and to keep the bullet list format. The third question is
+therefore tested by use rather than by argument.
+
+**What the agent applies:**
+
+1. Short sentences. One idea in each sentence.
+2. The active voice.
+3. One instruction in each instruction sentence.
+4. Waytide's settled terms as approved project words.
+5. The list form required by `an-answer-is-a-list-and-prose-must-justify-itself`.
+
+**What the agent cannot apply.** The approved dictionary is not in this repository. The agent
+cannot check a word against it. The agent applies the writing rules only. This is the constraint
+from cycle 3.
+
+**Why a trial answers this question and an argument does not.** The rule settled on 2026-08-07
+carries the same lesson. A rule about how an agent answers cannot be judged by writing it. It is
+judged by answers written under it.
+
 ## What actually happened
 
 To be recorded against the forecast as the work proceeds.
@@ -92,3 +114,4 @@ The outcomes that escaped the forecast, recorded post hoc.
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:32:54 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 11:08:29 PM PT
