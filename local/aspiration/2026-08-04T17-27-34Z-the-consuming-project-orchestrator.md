@@ -2,13 +2,19 @@
 
 ## Summary
 
-`read-consuming-projects.sh`, a committed script at the composite root that **discovers the
-consuming projects on the maintainer's machine** and reports them. It reads a per-machine registry outside the repository,
-walks the paths it names, identifies consuming projects by the discriminator the system already
-publishes, and emits the **actionable set** — the projects that are not excluded.
+`read-consuming-projects.sh`, a committed script in the `foundation` package that **discovers the
+consuming projects on the machine it runs on** and reports them. It reads a per-machine registry
+outside every repository, walks the paths it names, identifies consuming projects by the
+discriminator the system already publishes, and emits the **actionable set** — the projects that
+are not excluded.
 
 It detects nothing about a project's condition, takes no action on one, and requires nothing
 installed. What is done with a discovered project is directed by the user.
+
+**This paragraph read *at the composite root* and *the maintainer's machine* until 2026-08-07**,
+when the script was packaged and the reason was found to be wrong — see the Settled entry for that
+date. The developer who runs it is anyone with Waytide installed in more than one project, which is
+why it no longer says *the maintainer's*.
 
 ## Background & Motivation
 
@@ -254,3 +260,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 10:41:07 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:04:25 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:23:04 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:36:13 PM PT
+Changed by Scott Bellware on Fri Aug 7 2026 at 1:45:20 PM PT
