@@ -1,3 +1,27 @@
+This file is ASD-STE100 Issue 9, dated 2025-01-15, as published — the rules and the
+dictionary with every Issue 9 change already applied by ASD. It is the text of the
+specification and not a summary of it.
+
+Material that is not the specification was removed when the file was made, on
+2026-08-08, from the PDF at https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf:
+the title page, the Highlights section, the change form, the list of reference
+documents, the acknowledgments, and the running page headers and footers. The
+copyright notices, the table of contents, the subject-to-rule index, the general
+introduction, the guide, Part 1, and Part 2 are kept in full.
+
+The Highlights section was a list of the changes from Issue 8 to Issue 9 — entries of
+the form "Wording for rule revised" and "Removed from the word list". Every one of
+those changes is already in the rules and the dictionary below, which is why the list
+is not here. What that section recorded about the current state, it recorded as a
+change: for example, that "technical noun" replaces the previous term "technical
+name". The result is in the text below, where "technical noun" is used throughout and
+"technical name" does not appear.
+
+This note is the only text in this file that ASD did not write. Everything after the
+line of dashes is the specification.
+
+--------------------------------------------------------------------------------
+
                                    Copyright notices
 Copyright
 The information in this document is the property of the Aerospace, Security and Defence Industries
