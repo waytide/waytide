@@ -54,7 +54,7 @@ stopped doing — the thing itself moves, carrying the return address needed to 
 back).
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
-working location chosen at initiation (branch only, or branch and worktree), declared
+working location chosen at the start (branch only, or branch and worktree), declared
 end states, and recorded confirmations — in the `experiment-lifecycle` and
 `feature-lifecycle` rules. They differ where an experiment's question does
 not carry over to a feature's intent: an experiment forecasts, reaches a verdict
@@ -99,8 +99,8 @@ removes the disclosure and keeps every claim true by stating it at a lower resol
 making the record say something that did not happen. The developer is the authority on what
 counts, and the git history is not reached by the edit.
 
-**A project works in one of three modes**, chosen at its initiation through the selection
-interface (`a-project-works-in-a-mode-chosen-at-initiation`). Formal is the default and its planning
+**A project works in one of three modes**, chosen at its start through the selection
+interface (`a-project-works-in-a-mode-chosen-at-the-start`). Formal is the default and its planning
 artifacts are a **design** and a **plan**, in `waytide/local/design/` and `waytide/local/plans/`;
 intuitive's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`; OODA's are an **orientation** and an **action**, in
@@ -110,7 +110,7 @@ identical in every mode** — the mode changes the vocabulary and the directory 
 because the words a project plans in are load-bearing. The chosen mode is recorded as a local rule
 named `formal-mode`, `intuitive-mode`, or `ooda-mode`, written whichever mode is chosen, and the
 planning directories are checked against it so a deleted rule cannot silently revert a project. It
-does not change after initiation.
+does not change after the start.
 
 **A project does not name its downstream consumers** in its own files
 (`a-project-does-not-name-its-consumers`) — not in the installed packages, not in its own working
@@ -148,7 +148,7 @@ So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `re
 
 **It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the developers who want it and no others, and would be the first Waytide package that is a **tool** rather than a set of rules.
 
-**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-initiation` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own** — a rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules, so the drift is only visible from inside the project and only the project's developer can correct it. It reads the defined mode names out of the installed rule rather than carrying a list, so a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
+**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own** — a rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules, so the drift is only visible from inside the project and only the project's developer can correct it. It reads the defined mode names out of the installed rule rather than carrying a list, so a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
 
 **`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach — so a refresh updates the packages beneath it and leaves it behind. The script used to print a reminder saying so; on 2026-08-06 every consuming project's bootstrap was found stale anyway, which is what a reminder is worth. It now compares the section against what the installed installer generates, at the moment the drift is created. Where the comparison cannot be made — no `AGENTS.md`, or an installer predating the `bootstrap` subcommand it asks for — it says the check did not happen rather than reporting agreement, and it never invokes an installer that would treat the request as an install.
 
@@ -192,3 +192,4 @@ git subtree pull --prefix waytide/system/foundation https://github.com/waytide/f
 ## License
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

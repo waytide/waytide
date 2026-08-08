@@ -1,7 +1,7 @@
-# Attended or unattended is chosen when the work is initiated; DBE is in effect either way
+# Attended or unattended is chosen when the work is started; DBE is in effect either way
 
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is
-initiated and held for its duration:
+started and held for its duration:
 
 - **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the developer
   deliberates each one. **This is the default.**
@@ -21,14 +21,14 @@ found with everything built on top of it, so rework is the price. Which is cheap
 how load-bearing the work is and how likely the first pass is to be right — a judgment about
 *this* piece of work.
 
-**It is asked at initiation, through the selection UI, beside the working location.** Both are
+**It is asked at the start, through the selection UI, beside the working location.** Both are
 choices about how the work will be conducted, both are made once, and both hold for its
 duration — so they are put at the same gate rather than adding one. The default is attended,
 and the option set says so.
 
 **The mode is recorded in both records.**
 
-- **The feature or experiment record** carries it as a **confirmation at initiation**, beside
+- **The feature or experiment record** carries it as a **confirmation at the start**, beside
   the working-location choice. It is a lifecycle fact: what was chosen, when, and by whom.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
@@ -59,7 +59,7 @@ solubility. And recording the mode honestly is what keeps the loop record worth 
 record that showed options put to a developer who was not there would be worse than no record,
 because it would be believed.
 
-**How to apply:** at a feature's or an experiment's initiation, put **attended or unattended**
+**How to apply:** at a feature's or an experiment's start, put **attended or unattended**
 to the developer through the selection UI alongside the working location, with attended as the
 default. Record the choice as a confirmation in the feature or experiment record, and declare
 it at the top of the loop record. Run the hinges either way. When unattended, write each cycle
@@ -69,9 +69,10 @@ the loop-records rule (the record's shape and the "none — no gate" form this i
 from), the dbe-human-in-the-loop rule (why attention is placed at the hinges), the hinge-cycle
 rule (the hinges that run either way), the never-ask-to-start-test-first rule (which forbids
 asking about the method's substance, where this asks about its cadence), and foundation's
-feature-lifecycle and experiment-lifecycle rules (the initiations where the choice is put).
+feature-lifecycle and experiment-lifecycle rules (the starts where the choice is put).
 
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

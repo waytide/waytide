@@ -15,7 +15,7 @@ The one-liner:
 - Never ask whether to start test-first — it is the standing default.
 
 **Attended or unattended**
-- The human's participation is chosen at a feature's or experiment's initiation, beside the working location; attended is the default.
+- The human's participation is chosen at a feature's or experiment's start, beside the working location; attended is the default.
 - DBE is in effect either way — the cradle, the efferent-first actuation, and the solubility standard all hold. Only the stopping changes.
 - An unattended cycle is recorded with its hinge and the decision's reasoning, and no options or decision line, since neither happened.
 
@@ -66,3 +66,4 @@ git subtree pull --prefix waytide/system/design-by-efferent https://github.com/w
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

@@ -17,7 +17,7 @@ displace (the log stays one line per decision).
   `YYYY-MM-DDTHH-MM-SSZ-<feature-name>.md`.
 - A `# Loop record — <feature>` title and a one-paragraph summary of the feature.
 - **The mode, declared at the top** — **attended** or **unattended** (see the
-  attended-or-unattended-is-chosen-at-initiation rule). It is stated once, because it changes
+  attended-or-unattended-is-chosen-at-the-start rule). It is stated once, because it changes
   how every cycle below is read.
 - One section per **cycle**, in order. Each cycle records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
@@ -63,3 +63,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Tue Jul 28 2026 at 12:21:11 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

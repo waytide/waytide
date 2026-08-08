@@ -1,6 +1,6 @@
-# A project works in a mode, chosen at its initiation
+# A project works in a mode, chosen at its start
 
-A Waytide project works in one of three **modes**, chosen when the project is initiated and held
+A Waytide project works in one of three **modes**, chosen when the project is started and held
 for its life. The mode decides what the project's two planning artifacts are **called** and
 **where they live**:
 
@@ -125,7 +125,7 @@ project's mode rule, to resolve it. That self-evidence at every site is real and
 away deliberately, on the judgment that it is not achievable at scale while remaining
 maintainable.
 
-## The choice is the agent's to put, and it is put at initiation
+## The choice is the agent's to put, and it is put at the start
 
 **Through the selection interface**, per the present-every-prompt-through-askuserquestion rule,
 with **formal as the default**.
@@ -162,7 +162,7 @@ speech to the developer as well as in an option's wording. This rule's own headi
 > directories where planning records are stored.
 
 **The wording is fixed because the developer meeting this choice cannot yet know what it
-decides.** It is put at a project's initiation, before any of this system's material has been
+decides.** It is put at a project's start, before any of this system's material has been
 worked with, so a mode named alone — *formal, intuitive, or OODA* — reads as a choice about how
 the system will **behave**: how strict it is, how much ceremony it imposes, what it will require.
 Every one of those readings is wrong, and a developer holding one of them chooses on grounds that
@@ -182,7 +182,7 @@ developer is choosing a vocabulary and a pair of locations, so those are what th
 agent-side tool and the installer is a POSIX `sh` script run from a shell; a script has no way to
 reach it. The mode is therefore something the **agent** establishes, not a step in an
 installation. Nor is it the concern of a tool that reaches existing projects — those are already
-initiated.
+started.
 
 ## The mode is recorded as a local rule named for it
 
@@ -213,7 +213,7 @@ a rule that says only *write the file* is followed exactly as far as it is writt
   which is the same failure an uncommitted executable bit produces on a script.
 
 **This lands at the least convenient moment, which is why it is stated.** A mode is chosen at
-initiation, when a project is new and often has nothing else in it, so the mode rule and its log
+the start, when a project is new and often has nothing else in it, so the mode rule and its log
 entry are frequently the project's first substantive commit rather than an addition to work
 already in flight.
 
@@ -227,14 +227,14 @@ already in flight.
 ## What the mode rule says
 
 **One template, filled.** The three possible files differ only in the mode name, the two artifact
-names, and the two directories — so the text is not composed at initiation, it is substituted.
+names, and the two directories — so the text is not composed at the start, it is substituted.
 Nothing in it is specific to the project beyond that, and the developer is not asked for a
 reason: the file is one of exactly three documents in the system, apart from its date and its
 provenance footer.
 
 **Only the first paragraph binds.** A local rule is a **dated snapshot** — the file-names rule
 calls it a dated decision in that project's history — so the explanation below the binding claim
-states the system as it stood at that project's initiation and is not obliged to track this rule
+states the system as it stood at that project's start and is not obliged to track this rule
 afterward. That is safe precisely because the binding part **cannot go stale**: it says which
 mode *this project* is in, and a project's mode does not change. Only the restated system
 substance could drift, and it binds nothing, so a drift is a stale explanation rather than two
@@ -249,14 +249,14 @@ Filled for intuitive mode:
 an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact is an
 **intention**, in `waytide/local/intention/`. `waytide/local/design/` and
 `waytide/local/plans/` are not used here. That is the whole of what this file binds, and it
-is fixed — a project's mode does not change after initiation.
+is fixed — a project's mode does not change after the start.
 
 **Everything below explains the mode and binds nothing.** It is written out so this file
-stands on its own, and it describes the system as it stood when this project was initiated,
-which is the date in this filename. Waytide's own `a-project-works-in-a-mode-chosen-at-initiation`
+stands on its own, and it describes the system as it stood when this project was started,
+which is the date in this filename. Waytide's own `a-project-works-in-a-mode-chosen-at-the-start`
 rule holds the system's account.
 
-**The three modes.** A Waytide project works in one of three, chosen at its initiation. Under
+**The three modes.** A Waytide project works in one of three, chosen at its start. Under
 **formal**, the default, the artifacts are a **design** and a **plan**, in
 `waytide/local/design/` and `waytide/local/plans/`. Under **intuitive** they are an
 **aspiration** and an **intention**, in `waytide/local/aspiration/` and
@@ -332,9 +332,9 @@ and never again.
 **Where the mode is legible instead** is where every binding convention is: the rules the agent
 reads at the start of the session, one of which is the mode rule itself.
 
-## The mode does not change after initiation
+## The mode does not change after the start
 
-A project's mode is settled when the project is initiated and is not switched later. What would
+A project's mode is settled when the project is started and is not switched later. What would
 be involved in changing it — what becomes of artifacts written under the other mode, and whether
 the two can coexist — is deliberately unaddressed rather than answered badly.
 
@@ -346,7 +346,7 @@ mean something precise, and corroborating it against the directories is what kee
 from silently reverting a project to a mode it is not in — the same stance the rest of the system
 takes toward ambiguous input, which is to refuse it rather than to guess.
 
-**How to apply:** at a project's initiation, put **formal, intuitive, or OODA** to the developer
+**How to apply:** at a project's start, put **formal, intuitive, or OODA** to the developer
 through the selection interface, with formal as the default, asking it in the words fixed above —
 that the behavior and functioning of Waytide are unaffected and the mode sets the process
 vocabulary and the planning directories — with each option naming its mode's two artifacts and
@@ -363,7 +363,7 @@ either. In a rule that merely mentions one of the artifacts, write **the directi
 **the sequencing artifact**, keeping the trailing class noun — do not shorten either to a bare
 `direction` or `sequencing`, which would be a third planning vocabulary. Write **an
 intuitive-mode project**, never **an intuitive project**. Do not switch a project's mode after
-initiation. Related: the design-convention and
+the start. Related: the design-convention and
 plans-convention (the directories, both named in each), the design-document-format and
 plan-document-format rules (the shapes, identical in every mode), the rules-convention (where a
 local rule lives and what it looks like), the file-names rule (the datetime prefix), the
@@ -386,3 +386,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 10:13:17 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 3:25:24 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:15:51 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 9:44:31 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

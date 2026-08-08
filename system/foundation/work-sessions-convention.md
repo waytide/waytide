@@ -25,7 +25,7 @@ when it was written, and retitling it would edit a historical record to suit a l
 
 ## Reconcile the settled direction once the record is written
 
-**This section says *design* throughout for readability, and means the project's direction artifact** — a design under formal mode, an aspiration under intuitive (see the a-project-works-in-a-mode-chosen-at-initiation rule). Nothing in it depends on which.
+**This section says *design* throughout for readability, and means the project's direction artifact** — a design under formal mode, an aspiration under intuitive (see the a-project-works-in-a-mode-chosen-at-the-start rule). Nothing in it depends on which.
 
 **After the record is written, put the design to the developer through the AskUserQuestion selection UI**: does what this work session produced change the design, or has the design fallen behind it? Three genuine options — **update the design**, **the design stands**, or **no design bears on this work session**.
 
@@ -59,3 +59,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

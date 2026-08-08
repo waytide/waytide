@@ -1,4 +1,4 @@
-# A feature's working location is chosen at initiation, and it ends completed, abandoned, superseded, or suspended
+# A feature's working location is chosen at the start, and it ends completed, abandoned, superseded, or suspended
 
 A feature is a bounded unit of main-line work with a lifecycle: it is worked in a location
 chosen when it begins, is designed through the five hinges, and reaches one of four declared
@@ -15,7 +15,7 @@ what accounts for every place this rule departs from the experiment's.
   captured in the record — the base commit SHA and the ref it came from — never pinned with
   a tag. The upstream branch it merges back into is **not always `master`**; it may be
   another topic branch, and the record names it so the merge target is never ambiguous.
-- **The working location is chosen at initiation — branch only, branch and worktree, or the
+- **The working location is chosen at the start — branch only, branch and worktree, or the
   current branch.** Each option states what it creates, rather than leaving it to be
   inferred.
   **Branch only** — create the branch
@@ -25,14 +25,14 @@ what accounts for every place this rule departs from the experiment's.
   stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). **The current
   branch** — build the feature where the working tree already is, creating nothing; there is
   no branch to switch back to at the conclusion and nothing to merge. The first two create the
-  branch, since it does not exist yet at initiation. **Branch only says nothing
+  branch, since it does not exist yet at the start. **Branch only says nothing
   about the working tree** — what distinguishes it from the worktree option is whether a
   working directory is added, so branch only is presented as the branch it creates and the
   return at the conclusion, not as a movement of the working tree, which is immaterial to it.
   The `-b` is required, and
   the plain `git worktree add <path> <branch>` form applies only when a worktree is added
   to a feature already under way. The choice is
-  put to the user at **every** initiation, through the **AskUserQuestion** selection UI,
+  put to the user at **every** start, through the **AskUserQuestion** selection UI,
   with no standing default. The choice, and for a worktree its
   **path**, go in the record; the conclusion executes the mechanics that match it.
   **The current branch is offered last, after the two branching options.** A selection's first
@@ -66,7 +66,7 @@ what accounts for every place this rule departs from the experiment's.
   repository working tree**, where it must be: a worktree created inside it appears as
   untracked content in the feature's own `git status`.
 - **The working location changes on two triggers.** Adding a worktree for a feature already
-  under way is the only change the working location undergoes after initiation. **One is
+  under way is the only change the working location undergoes after the start. **One is
   external:** other work arrives that the user intends to work alongside the feature. **One
   is internal — the feature is *escalated*:** it turns out to need more isolation than the
   single working tree gives it, having been begun ad hoc and proved larger than it was
@@ -75,14 +75,14 @@ what accounts for every place this rule departs from the experiment's.
   location.
 - **DBE governs the inside, attended or unattended.** The five hinges — actuation,
   observation, controls, implementation, naming — govern how the feature is designed, and the
-  loop record captures each cycle. What is chosen at initiation is **the human's participation**:
+  loop record captures each cycle. What is chosen at the start is **the human's participation**:
   **attended**, where the loop stops at every hinge for the developer, or **unattended**, where
   the agent decides each hinge and generates through. Attended is the default, and the choice
   is put through the selection UI **beside the working location**, since both are decisions
   about how the work will be conducted and both hold for its duration. **DBE is in effect
   either way** — only the stopping changes. Record it as a confirmation and declare it at the
   top of the loop record. See the design-by-efferent
-  attended-or-unattended-is-chosen-at-initiation rule. This rule governs only the outside: how
+  attended-or-unattended-is-chosen-at-the-start rule. This rule governs only the outside: how
   the feature begins, where it is worked, and how it ends.
 - **The states.** A feature **ends** in one of three states — **completed** (integrated
   into the upstream branch, the ordinary conclusion), **abandoned** (dropped before
@@ -121,7 +121,7 @@ what accounts for every place this rule departs from the experiment's.
   deleting the branch — git refuses to delete a branch checked out in a worktree — and
   **one confirmation covers both**. Suspension never deletes.
 - **Record every confirmation** the lifecycle requires — the working-location choice at
-  initiation, the attended-or-unattended choice at initiation, adding a worktree to a feature
+  the start, the attended-or-unattended choice at the start, adding a worktree to a feature
   under way, branch deletion and worktree removal — in the feature record, so the work's authority is auditable.
 - **There is no instruction to watch for other work.** The experiment rule asks the agent
   to watch for main-sequence work starting while an experiment is open. That has no
@@ -139,7 +139,7 @@ states, merge gate, and affirmation all exist to answer a **question**, and a fe
 not ask one. Copying them across would install ceremony where the justification does not
 reach — the failure the design method exists to retire.
 
-**How to apply:** put the working location to the user at every initiation — branch only,
+**How to apply:** put the working location to the user at every start — branch only,
 branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
 name it `feature/<subject>` and record the upstream branch, the feature branch, and the base;
 on the current branch, record that and the branch it is being built on. Place a worktree as a
@@ -172,3 +172,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

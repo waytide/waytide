@@ -10,12 +10,12 @@ persisted, dated artifact, kept after the feature concludes.
 - **Record format:** open with the **Intent** — what is being built and why — then the
   setup: a **`**State:**` line**, the **upstream branch** it will merge into (`master` or
   another topic branch), the **feature branch**, its **base**, and the **working location**
-  chosen at initiation (branch only, branch and worktree with the worktree's path, or the current branch). As the work
+  chosen at the start (branch only, branch and worktree with the worktree's path, or the current branch). As the work
   proceeds, record the **confirmations** the lifecycle required and any change of working
   location.
 - **The state sits on a canonical `**State:**` line**, in the setup block, carrying one of
   the four state words and nothing else — `- **State:** Suspended`. It is written when the
-  feature is initiated and updated as the state changes, so the state is legible at a
+  feature is started and updated as the state changes, so the state is legible at a
   glance and readable mechanically. That line is the **only** authoritative statement of
   the state; a record with no such line is **in flight**, which is a true reading for a
   feature still being built. The session-start notice reads this line to report features
@@ -32,11 +32,11 @@ persisted, dated artifact, kept after the feature concludes.
   record names the branch being built on, and there is no base, no feature branch, and no
   merge to record. See the feature-lifecycle rule.
 - **The working location is a short history, not a single fact.** It is written at
-  initiation and changes only by a worktree being added for a feature already under way —
+  the start and changes only by a worktree being added for a feature already under way —
   either because other work arrived that the user intends to work alongside it, or because
   the feature was **escalated**, judged to need more isolation than the single working tree
   gives it. The record then **gains a line**; the original is not rewritten.
-- **The human's participation is recorded as a confirmation** — **attended** or **unattended**, chosen at initiation beside the working location. DBE is in effect either way; what the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-initiation rule.
+- **The human's participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way; what the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
 - **It is the feature's lifecycle record, not its design record.** The same feature's
   design — each cycle's hinge, the options put to the developer, and the decision — belongs
   in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
@@ -59,8 +59,8 @@ preserves how it was built rather than only what it produced. Keeping it separat
 loop record costs a second file per feature and buys a correct package dependency, which
 is the more expensive of the two to get wrong.
 
-**How to apply:** when a feature is initiated, add a record here stating its intent, its
-state, its branch topology, and the working location chosen at initiation; update the
+**How to apply:** when a feature is started, add a record here stating its intent, its
+state, its branch topology, and the working location chosen at the start; update the
 state line as the state changes; record each confirmation the lifecycle requires; and name
 the feature's loop record. Keep the record after the feature concludes. Related: the
 feature-lifecycle rule (the lifecycle), the experiments-convention (the
@@ -78,3 +78,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 11:12:40 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT

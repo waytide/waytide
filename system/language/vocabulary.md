@@ -23,9 +23,9 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
 | **scenario** | "arm" | one variant or case a method or feature handles |
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
-| **impact** | "what it costs" | the effect or consequences of a change, named neutrally rather than presumed a cost |
+| **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost |
 | **examine** | "decode" | working through or inspecting something to understand it |
-| **initiate** | "pick up" | beginning work on something — starting a task, a deferred item, or other queued work |
+| **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
 | **name** | "slug" | the descriptive part of a filename |
 | **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
@@ -62,3 +62,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:59:32 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:08:29 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
