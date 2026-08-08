@@ -75,7 +75,7 @@ what accounts for every place this rule departs from the experiment's.
   location.
 - **DBE governs the inside, attended or unattended.** The five hinges — actuation,
   observation, controls, implementation, naming — govern how the feature is designed, and the
-  loop record captures each cycle. What is chosen at initiation is the **gating cadence**:
+  loop record captures each cycle. What is chosen at initiation is **the human's participation**:
   **attended**, where the loop stops at every hinge for the developer, or **unattended**, where
   the agent decides each hinge and generates through. Attended is the default, and the choice
   is put through the selection UI **beside the working location**, since both are decisions
@@ -170,3 +170,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 11:03:25 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:12:40 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
