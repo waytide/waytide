@@ -12,7 +12,7 @@ The *principles* that govern word choice stay as rules — `name-literally-not-b
 
 ## Substitutions
 
-General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`protect` in `testing`.)
+General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
 
 | Say | Don't say | What it names |
 |---|---|---|
@@ -63,3 +63,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:59:32 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:08:29 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

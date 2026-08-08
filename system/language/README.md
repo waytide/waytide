@@ -17,7 +17,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 **Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
 - **terms** — `solubility` (how readily a unit dissolves into use — the design-quality criterion; a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
-- **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, caller → efferent, the call → actuation, and the rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`protect` in `testing`; the hinge/cradle/loop lexicon in `design-by-efferent`).
+- **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, caller → efferent, the call → actuation, and the rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`prevent` in `testing`; the hinge/cradle/loop lexicon in `design-by-efferent`).
 
 Every package keeps its terminology this way — its terms and substitutions in its own `vocabulary.md`, the model `design-by-efferent` established. A package with no terminology of its own keeps no `vocabulary.md`; the file is written where a package has terms whose ordinary meaning misleads or words it swaps, not to complete a set. The *principles* that govern word choice stay as the rules above.
 
@@ -48,3 +48,4 @@ git subtree pull --prefix waytide/system/language https://github.com/waytide/lan
 ## License
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

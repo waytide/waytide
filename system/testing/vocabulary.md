@@ -5,7 +5,7 @@ The testing package's vocabulary: the terms it defines and the word substitution
 ## Terms
 
 - **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules.
-- **precondition** — a bare `assert` or `refute` that is **not** a test, written to **document a factor that decides the test's outcome** where the test script does not express it — most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than protecting behavior: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule.
+- **precondition** — a bare `assert` or `refute` that is **not** a test, written to **document a factor that decides the test's outcome** where the test script does not express it — most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule.
 
 ## Substitutions
 
@@ -14,14 +14,15 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 | Say | Don't say | What it names |
 |---|---|---|
 | **verified** | "green" | passing tests, and the report that tests pass — see below |
-| **protect** | "guard" | what a test does against a regression — see below |
+| **prevent** | "guard" / "protect" | what a test does to a regression — see below |
 
 ### Finer distinctions
 
 - **verified** governs the *report*, not the cycle. Where "green" names a state in the red/green cycle rather than a claim that behavior is confirmed, it stands — **green-on-arrival** and the **red/green loop** keep their names. Prefer "Verified: N tests" over "the suite is verified at N" (technobabble).
-- **protect** — a test **protects** against a regression (protects the behavior / the delegation / the seam). Keep "guard clause" for the early-return control-flow construct; only a test's protective role is "protect", never "guard".
+- **prevent** — a test **prevents** a regression (a regression in the behavior, the delegation, the seam). The STE dictionary replaces `protect` with PREVENT, and the two differ in what they take as an object: `protect` names the thing kept safe, `prevent` names the thing stopped. Write what is stopped. Keep "guard clause" for the early-return control-flow construct; a test's role is "prevent", never "guard".
 
 ---
 
 Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

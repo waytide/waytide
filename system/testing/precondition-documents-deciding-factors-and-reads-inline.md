@@ -41,8 +41,8 @@ assertion states the factor **and** verifies it, so this documentation cannot be
 without the suite saying so. Documentation that is checked is the whole reason a deciding
 factor is written as an assertion.
 
-**It qualifies the test rather than protecting behavior.** A test observes an outcome of the
-unit under test and protects it against regression. A precondition observes nothing about
+**It qualifies the test rather than preventing a regression.** A test observes an outcome of the
+unit under test and prevents its regression. A precondition observes nothing about
 that unit — it states what must already be true for the test's observation to mean anything.
 That decides how a failure reads: **when a precondition fails, the test's result is
 meaningless, not wrong.** The unit may be perfectly correct; the test simply did not exercise
@@ -108,7 +108,7 @@ test "Deposit message follows previous message" do
 end
 ```
 
-**It is not coverage, and it protects nothing.** A precondition asserts over the controls, a
+**It is not coverage, and it prevents nothing.** A precondition asserts over the controls, a
 prior state, a derivation, or **the actuation's completion where the controls are what decide
 it** — never over the unit's behavior as an outcome — so it is outside what the
 do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
@@ -139,7 +139,7 @@ convention deliberately puts the construction of example values behind a name, s
 that decide the outcome are frequently the ones least visible at the test. A test whose
 deciding factors are invisible cannot be read — the reader sees an outcome asserted and no
 account of what produced it — and in its worst form it passes without exercising what it
-names, reporting protection that is not there. Writing the factor as an assertion rather than
+names, reporting prevention that is not there. Writing the factor as an assertion rather than
 a comment is what makes the clarification trustworthy: a comment claims, an assertion is
 checked, so the documentation and the fact cannot drift apart in silence. Keeping it a bare
 assertion rather than a named test is what keeps the two legible as different things — a named
@@ -169,3 +169,4 @@ precondition is not to be confused with).
 Authored by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:20:47 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:08:21 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

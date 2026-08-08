@@ -26,7 +26,7 @@ it out and reach a passing implementation directly.
 
 **The cycle is for the first implementation of a unit** — new behavior being designed. It is not
 available when **covering** behavior that already exists: there is no red to manufacture there
-without breaking working code, which the tdd-designs-coverage-protects rule forbids outright,
+without breaking working code, which the tdd-designs-coverage-prevents rule forbids outright,
 and the implementation hinge is degenerate in that case (see the
 the-design-of-a-test-waits-at-the-hinges-including-coverage rule). So the second candidate is offered
 only where it is actually available, rather than being offered and then refused.
@@ -68,7 +68,7 @@ exists. Do not present a failing implementation as an option merely to reach the
 floor. Related: the hinge-cycle rule (the five hinges, of which this is the fourth), the
 dbe-as-design-tool rule (which rejects the cycle as choreography, not as a choice), the
 present-every-prompt rule (the two-option floor this must not be used to satisfy), the
-tdd-designs-coverage-protects-never-break-implementation and
+tdd-designs-coverage-prevents-never-break-implementation and
 the-design-of-a-test-waits-at-the-hinges-including-coverage rules (the coverage case where the cycle is
 unavailable), and the no-green-on-arrival-tests rule (the no-op implementation hinge, where
 there is nothing to drive).
@@ -77,3 +77,4 @@ there is nothing to drive).
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

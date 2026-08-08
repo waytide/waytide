@@ -28,7 +28,7 @@ is not obstructing. The two differ in what happens to the developer's question:
 - **A question put alongside the answer** costs a selection and leaves the work moving. It is
   worth putting where the answer would change what the design says, and where the developer may
   want that change recorded as a resolution rather than left implicit.
-- **A refusal to proceed until the design is settled** stops the work to protect a record of it.
+- **A refusal to proceed until the design is settled** stops the work to keep a record of it.
   That inverts what the design is for.
 
 **Update the design as a dated addition rather than a rewrite.** The superseded resolution keeps
@@ -59,3 +59,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:37:42 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

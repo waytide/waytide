@@ -44,7 +44,7 @@ what accounts for every place this rule departs from the experiment's.
   experiment is a **controlled deviation from the main line** — it may be refuted or
   abandoned, and until it is affirmed its changes must not reach the branch it deviates from.
   The branch is what makes that reversible, so it is not optional there. A feature **is** the
-  main line, and its changes are meant to land on it, so a branch protects it against nothing
+  main line, and its changes are meant to land on it, so a branch prevents nothing
   that is not already ordinary. The asymmetry is not a relaxation of the feature's discipline;
   it follows from what the two kinds of work are, which is the same reasoning that gives a
   feature no forecast, no verdict, and no merge gate.
@@ -173,3 +173,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

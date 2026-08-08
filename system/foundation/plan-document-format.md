@@ -23,7 +23,7 @@ it is not obliged to hold one that the work does not call for.
 
 **The order is settled; the set is not.** A worker scanning a plan finds Goals before Tasks in every plan that has both, which is what makes the shape learnable. That is not the same as fixing which elements a plan may hold — a plan whose work has an element these do not name should carry it rather than omit it to fit.
 
-**Why:** a plan is scanned by a worker executing it task by task, so a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule protects.
+**Why:** a plan is scanned by a worker executing it task by task, so a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule keeps.
 
 **How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear, and state each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Do not restate the commit conventions or the project's stack; the first is the `git` package's and the second does not vary by plan. Write an intention or an action exactly the same way, titled `— Intention` or `— Action`. Related: the foundation plans-convention (what the directory is), the a-project-works-in-a-mode-chosen-at-the-start rule (which of the two directories a project uses), plans-no-code-samples, and the `git` commit rules.
 
@@ -40,3 +40,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

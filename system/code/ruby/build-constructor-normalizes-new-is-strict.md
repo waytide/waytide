@@ -86,7 +86,7 @@ normalization must go through `build`. **External callers always use
 
 **Why:** the supertype-as-factory relationship makes `new` a legitimate internal
 seam *for the family itself*, the way a class may use its own private constructor.
-The strict/forgiving split protects callers from `new`'s strictness; family code
+The strict/forgiving split keeps callers away from `new`'s strictness; family code
 that has already satisfied that strictness is the factory, not a caller in that
 sense. Forcing it back through `build` would run determination logic whose outcome
 is already known.
@@ -100,3 +100,4 @@ robustness-lives-at-the-class-interface rule.
 ---
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 1 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

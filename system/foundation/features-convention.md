@@ -27,7 +27,7 @@ persisted, dated artifact, kept after the feature concludes.
   feature, not borrowed from the experiment's verdict vocabulary: a feature is not proven
   or disproven, so *affirmed*, *refuted*, and *inconclusive* have nothing to say about it.
 - **A feature may be built on the current branch**, which an experiment may not — a feature
-  *is* the main line, so a branch protects it against nothing already ordinary, where an
+  *is* the main line, so a branch prevents nothing already ordinary, where an
   experiment is a deviation that must stay reversible. Where the current branch is chosen the
   record names the branch being built on, and there is no base, no feature branch, and no
   merge to record. See the feature-lifecycle rule.
@@ -79,3 +79,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

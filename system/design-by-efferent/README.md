@@ -29,7 +29,7 @@ The one-liner:
 - Always show the just-satisfied test, and the current feature's full test output, without being asked.
 
 **Design vs. coverage**
-- TDD designs behavior; adding coverage protects it — distinct activities. Never break a working implementation to introduce a test.
+- TDD designs behavior; adding coverage prevents its regression — distinct activities. Never break a working implementation to introduce a test.
 - A *coverage* test's design still waits at the hinges, with the implementation hinge degenerate.
 - Drop an outcome whose test is green-on-arrival — it drives no design.
 - The implementation hinge offers two candidates: the working implementation, or the **red/green/refactor cycle** — chosen, and so not the choreography this method rejects. The red must reach no stable test, and the cycle is unavailable when covering existing behavior.
@@ -67,3 +67,4 @@ Waytide is licensed under the **Eventide Common Interest License** — source-av
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
