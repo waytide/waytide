@@ -99,19 +99,28 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 
 **What does not transfer.** OODA is best known for its *adversarial, tempo* use — cycle faster than an opponent, get "inside" their loop, collapse their orientation. There is no adversary in DBE; speed-as-weapon does not apply, and importing it would mislead. What transfers is the **structure** — the four phases and the primacy of Orient — not the **contest**.
 
+## Substitutions
+
+A word not to write, and the word to write instead. When the impulse is a word in the
+**Don't say** column, write the **Say** term.
+
+| Say | Don't say | What it names |
+|---|---|---|
+| **subtle** | "intrinsic" | the first mark of a hinge — the judgment lives in the person rather than in the artifacts |
+| **load-bearing** | "asymmetric" | the second mark of a hinge — other work rests on the choice |
+| **mechanical** | "non-hinge" | everything that is not a hinge, which the AI generates straight through |
+| **cycle** | "pass" | one traversal of the loop — see "Cycle is scoped by what precedes it" |
+| **unattended** | "suspending DBE" | the human's participation, where the agent decides each hinge. The method is never suspended. Only the waits are |
+| **wait** | "gate", as a verb | what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form |
+| **the human's participation** | "gating cadence" | whether the human is in the loop. Attended and unattended cause a cadence and are not one |
+
 ## Discontinued terms (do not use)
 
-- **discriminator** → there is no test-noun; the test is just "is this a hinge?"
-- **intrinsic** → **subtle**
-- **asymmetric** → **load-bearing**
-- **capability-independent** → state it plainly (subtlety is about the design, not the model)
-- **non-hinge** → **mechanical**
-- **pass** (one traversal of the loop) → **cycle**
-- **suspending DBE** → **unattended** (the method is never suspended; only the waits are)
-- **gate**, as a verb → **wait** (the loop *waits* at a gate; `gate` is the noun for the
-  mechanism and takes no verb form)
-- **gating cadence** → **the human's participation** (attended and unattended cause a cadence but
-  are not one; what they name is whether the human is in the loop)
+A word removed from use with nothing in its place. **This is not a substitution.** A substitution
+names two words. A discontinuation names one, because the concept went rather than the name.
+
+- **discriminator** — there is no test-noun. The test is just "is this a hinge?"
+- **capability-independent** — state it plainly. Subtlety is about the design, not the model.
 
 **Why:** The terminology is the conveyable output of this work — it is how the approach is taught to other engineers. Scattering it across observations and a digest left no authoritative source and risked drift; one binding glossary keeps usage consistent and avoids the overloaded or academic words this method rejects (e.g. discriminator, intrinsic, "given", "non-hinge"). Each term was chosen for solubility: plain, positive where possible, and free of programming collisions. Two competing "the name" declarations would drift, so DBE is the single canonical name.
 
@@ -127,3 +136,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT

@@ -21,8 +21,19 @@ vocabulary, or that a package vocabulary yields to a project's own `waytide/loca
 
 **The order is now ruled, on 2026-08-09.** `foundation`'s vocabulary-convention rule carries levels
 3 through 6, and states that the more specific vocabulary decides. It also carries the criterion
-that decides which packages have a vocabulary at all. **What remains open in this item is the
-conflation below**, which the rule names and does not fix.
+that decides which packages have a vocabulary at all.
+
+**The conflation was corrected in `design-by-efferent` on 2026-08-09.** It gained a
+`## Substitutions` table holding the seven, and its `## Discontinued terms` keeps the two that name
+no replacement.
+
+**One case is on `master` and cannot be corrected from here.** `language`'s `cut` entry calls a
+two-sense substitution a discontinuation. That entry was written on `master` after this branch was
+created, so this branch does not hold it. Correct it when this branch merges.
+
+**What remains open is one thing.** Four vocabularies still have nowhere to record a true
+discontinuation, because they carry a `## Substitutions` section or nothing. None of them has a
+discontinuation to record today, so the gap is not urgent.
 
 ## What exists now
 
@@ -69,9 +80,9 @@ substitution.
 rather than renamed, and `capability-independent`, where the instruction is to state the thing
 plainly. Neither has a replacement term.
 
-**`language` makes the same conflation.** Its `Finer distinctions` says `cut` is figurative in two
-senses and both are discontinued. Both senses have replacements — `increment`, and `created` or
-`branched from` — so both are substitutions.
+**`language` makes the same conflation, on `master`.** Its `Finer distinctions` says `cut` is
+figurative in two senses and both are discontinued. Both senses have replacements — `increment`,
+and `created` or `branched from` — so both are substitutions. That entry is not on this branch.
 
 **Four vocabularies have nowhere to put a discontinuation.** `foundation`, `language`, `testing`,
 and `versioning` carry a `## Substitutions` section or nothing. A word Waytide stops using with
@@ -119,10 +130,9 @@ by a sentence one of them happens to carry. Adding STE at the head makes the que
 because a standard with 729 approved words will disagree with a package vocabulary somewhere.
 
 **How to apply:** write levels 3 through 6 into a rule, and put it where a reader looking at any
-one vocabulary will find it rather than in a rule that only one of them cites. Separate
-substitution from discontinuation: move the seven substitutions out of
-`design-by-efferent`'s discontinued list, correct the `cut` entry in `language`, and decide where a
-true discontinuation goes in a vocabulary that has only a substitutions table. Write down the
+one vocabulary will find it rather than in a rule that only one of them cites. Correct the `cut` entry in `language` when this branch merges,
+since that entry is on `master`. Decide where a true discontinuation goes in a vocabulary that has
+only a substitutions table. Write down the
 criterion that decides whether a package has a vocabulary at all. Related: the vocabulary deferred item dated 2026-08-08 (which carries the terms
 this would order), the project-specific-approved-words deferred item (which carries the STE
 provision the top two levels rest on), the `language` package's `language-is-precise-here` rule
@@ -134,3 +144,4 @@ Authored by Scott Bellware on Sat Aug 8 2026 at 2:03:49 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 1:52:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:09:43 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
