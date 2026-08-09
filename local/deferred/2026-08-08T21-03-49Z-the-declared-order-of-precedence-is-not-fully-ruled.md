@@ -17,8 +17,12 @@ decides first, and that Waytide keeps its own word where the approved word means
 **Levels 3 through 6 are not.** No rule says that the `language` vocabulary yields to a package
 vocabulary, or that a package vocabulary yields to a project's own `waytide/local/rules/`.
 
-- **Waits for:** nothing. The order is declared and the top of it is ruled. Writing the rest into a
-  rule is a question about Waytide alone.
+- **Waits for:** nothing.
+
+**The order is now ruled, on 2026-08-09.** `foundation`'s vocabulary-convention rule carries levels
+3 through 6, and states that the more specific vocabulary decides. It also carries the criterion
+that decides which packages have a vocabulary at all. **What remains open in this item is the
+conflation below**, which the rule names and does not fix.
 
 ## What exists now
 
@@ -129,3 +133,4 @@ provision the top two levels rest on), the `language` package's `language-is-pre
 Authored by Scott Bellware on Sat Aug 8 2026 at 2:03:49 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 1:52:23 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 2:09:43 PM PT
