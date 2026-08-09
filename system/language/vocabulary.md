@@ -8,6 +8,7 @@ The *principles* that govern word choice stay as rules — `name-literally-not-b
 
 - **solubility** — how readily a unit dissolves into use, judged from the use site; the design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule; it is glossed here only as the vocabulary reference.
 - **efferent** — the use-site perspective: designing a unit from the outside in, from the standpoint of what uses it — the view that conducts outward from the unit toward its use. A general design-vocabulary term; `design-by-efferent` is the method built on designing from this view, and specializes the term in its own vocabulary.
+- **Simplified Technical English Vector (STEve)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in Steve` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. Both spellings, `STEve` and `Steve`, name the same thing. The rules are in `waytide/system/language/ste/`.
 - **actuation** — the invocation of a unit, from its use site; the first efferent reference to it. A general term; `design-by-efferent` specializes it — there the actuation is written before any implementation, and is the first gate.
 
 ## Substitutions
@@ -68,3 +69,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
