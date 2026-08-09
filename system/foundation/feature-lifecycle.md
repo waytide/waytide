@@ -137,7 +137,7 @@ beginning, a recorded place, and an end without inventing a second vocabulary fo
 facts. The four departures are what keep it honest: an experiment's forecast, verdict
 states, merge gate, and affirmation all exist to answer a **question**, and a feature does
 not ask one. Copying them across would install ceremony where the justification does not
-reach — the failure the design method exists to retire.
+reach — the failure the design method exists to discontinue.
 
 **How to apply:** put the working location to the user at every start — branch only,
 branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
@@ -174,3 +174,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT

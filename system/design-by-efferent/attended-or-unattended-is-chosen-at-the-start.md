@@ -51,7 +51,7 @@ distinguishes them, and it is why it goes at the top rather than being inferred 
 **Why:** the developer's attention is the scarce thing the whole method is arranged around, and
 the arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
 negligible that assumption is wrong, and five waits buy nothing — the ceremony this
-method exists to retire, arriving by a different route. Making the cadence a choice puts the
+method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
 in both modes is what stops the choice from being a way out of the method: unattended work is
 still designed from the efferent side, still cradled by a test written first, still judged by
@@ -76,3 +76,4 @@ feature-lifecycle and experiment-lifecycle rules (the starts where the choice is
 Authored by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT

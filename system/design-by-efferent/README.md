@@ -6,7 +6,7 @@ The one-liner:
 
 > The AI **generates** straight through, and **waits** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
 
-**The vocabulary**. `vocabulary.md` is the method's lexicon: loop, hinge, gate, deliberation, mechanical, subtle, cradle, efferent, actuation, observation, load-bearing, and the DBE name itself. It carries the distributed-OODA framing (the human owns Orient; the AI owns Observe and Act) and the retired terms. Read it first — the rules below use its words with its meanings.
+**The vocabulary**. `vocabulary.md` is the method's lexicon: loop, hinge, gate, deliberation, mechanical, subtle, cradle, efferent, actuation, observation, load-bearing, and the DBE name itself. It carries the distributed-OODA framing (the human owns Orient; the AI owns Observe and Act) and the discontinued terms. Read it first — the rules below use its words with its meanings.
 
 **The method**
 - DBE is a design tool, not a testing ritual — the test is a **cradle** for generation, not a pass/fail gate.
@@ -68,3 +68,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT

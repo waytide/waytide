@@ -99,7 +99,7 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 
 **What does not transfer.** OODA is best known for its *adversarial, tempo* use — cycle faster than an opponent, get "inside" their loop, collapse their orientation. There is no adversary in DBE; speed-as-weapon does not apply, and importing it would mislead. What transfers is the **structure** — the four phases and the primacy of Orient — not the **contest**.
 
-## Retired terms (do not use)
+## Discontinued terms (do not use)
 
 - **discriminator** → there is no test-noun; the test is just "is this a hinge?"
 - **intrinsic** → **subtle**
@@ -115,7 +115,7 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 
 **Why:** The terminology is the conveyable output of this work — it is how the approach is taught to other engineers. Scattering it across observations and a digest left no authoritative source and risked drift; one binding glossary keeps usage consistent and avoids the overloaded or academic words this method rejects (e.g. discriminator, intrinsic, "given", "non-hinge"). Each term was chosen for solubility: plain, positive where possible, and free of programming collisions. Two competing "the name" declarations would drift, so DBE is the single canonical name.
 
-**How to apply:** Use these words, with these meanings, wherever you write about DBE. Prefer them over synonyms; do not reintroduce a retired term. Related: the DBE-as-design-tool, first-turn, human-in-the-loop, hinge-cycle, and "TDD designs, coverage prevents" rules; the `language` package's solubility rule and its name-literally standard.
+**How to apply:** Use these words, with these meanings, wherever you write about DBE. Prefer them over synonyms; do not reintroduce a discontinued term. Related: the DBE-as-design-tool, first-turn, human-in-the-loop, hinge-cycle, and "TDD designs, coverage prevents" rules; the `language` package's solubility rule and its name-literally standard.
 
 ---
 
@@ -126,3 +126,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
