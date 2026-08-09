@@ -35,7 +35,7 @@ meaning** — *controls*, *protect*, *verified*, *deferred*, *suspended*. A spec
 each word one meaning and one part of speech has to be told which meaning, and the substitution
 tables are where that is already written down.
 
-**Why:** the forecast named the dictionary as the breaking point and named the technical-name
+**Why:** the forecast named the STE dictionary as the breaking point and named the technical-name
 provision as the obvious accommodation without testing whether it stretches to a methodology's own
 coinages. This item is that test, and it is the difference between the specification being
 inapplicable to Waytide and merely requiring work.
@@ -50,3 +50,4 @@ gated on), each package's `vocabulary.md` (the dictionaries this would formalize
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:41:22 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT

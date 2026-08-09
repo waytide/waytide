@@ -25,7 +25,7 @@ the standard did.
 
 ### `swept across 20 files`
 
-- **`swept`** — the `language` vocabulary discontinues `sweep` for `conform`. The dictionary
+- **`swept`** — the `language` vocabulary discontinues `sweep` for `conform`. The STE dictionary
   replaces `sweep (v)` with `SCAN`, which does not carry the meaning either.
 - **`across`** — `ACROSS (prep)` is approved only as *from one side to the other*. STE Rule 1.3
   restricts a word to its approved meanings. Write `in`.
@@ -40,7 +40,7 @@ After: `` `gate` is a technical noun. Its verb form is `wait`. Twenty files conf
 
 - **`green`** — the `testing` vocabulary substitutes `verified`. The word is also absent from the
   dictionary.
-- **`Both`** — `both (adj)` is not approved. The dictionary gives `THE TWO (TN)`, as in
+- **`Both`** — `both (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
   `ATTACH THE TWO ENDS`.
 - **No verb** — against STE Rule 4.2.
 
@@ -50,21 +50,22 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 `The two checks found no defect.`
 
 **`checks` survives.** `CHECK (n)` is approved, as in `DO A CHECK OF THE …`. Only `check (v)` is
-not approved, and the dictionary gives `MAKE SURE` for it.
+not approved, and the STE dictionary gives `MAKE SURE` for it.
 
-**Why:** the writing rules are where the standard reaches every sentence, and the dictionary is
-where it reaches a word at a time. A writer who reads only the dictionary keeps writing long
+**Why:** the writing rules are where the standard reaches every sentence, and the STE dictionary is
+where it reaches a word at a time. A writer who reads only the STE dictionary keeps writing long
 passive sentences out of approved words. Each rule is recorded here as it is met in use, beside
 the phrase that met it. That makes a rule findable by the shape of the mistake, not by its
 number.
 
-**How to apply:** check a phrase against Waytide's vocabulary first, then against the dictionary,
+**How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary,
 then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep
 a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use,
 add it to the table and add the phrase that met it. Related: the
-ste-is-the-baseline-and-a-waytide-term-overrides-it rule in this directory, the `language` and
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory, the `language` and
 `testing` vocabularies, and the specification at `waytide/local/reference/`.
 
 ---
 
 Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT

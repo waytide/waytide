@@ -63,7 +63,7 @@ Worth knowing before naming Waytide's, since level 2 of the order is STE's mecha
 
 | Waytide | STE |
 |---|---|
-| the **Say** column | **approved alternatives**, or **alternatives** — the dictionary's column 2 header |
+| the **Say** column | **approved alternatives**, or **alternatives** — the STE dictionary's column 2 header |
 | the **Don't say** column | **a word that is not approved** — the specification writes this 46 times and `unapproved` never |
 | the act the table instructs | **word-for-word replacement** — the subject index, and STE Rules 1.2 and 9.1 |
 | a **retired term** | no counterpart. STE has no retirement concept, and its dictionary carries one status axis and no history |
@@ -98,3 +98,4 @@ provision the top two levels rest on), the `language` package's `language-is-pre
 ---
 
 Authored by Scott Bellware on Sat Aug 8 2026 at 2:03:49 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT

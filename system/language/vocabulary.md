@@ -34,7 +34,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit — the first efferent reference — see below |
 | **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below |
-| **the standard's name, then the number** — *STE Rule 1.7* | "Rule 1.7" | a citation of a numbered rule in an external standard — see below |
+| **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard — see below |
 
 ### Finer distinctions
 
@@ -43,13 +43,15 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
 - **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters: a switch is binary, instantaneous, and reversible by the same gesture, where activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
-- **A citation of a rule in an external standard names that standard.** Waytide has rules of its own, so a bare *Rule 1.7*
-  leaves a reader to work out which system it belongs to, and the numbering gives them nothing to
-  work it out from. Write the standard's name first — **STE Rule 1.7**, **STE Rules 1.5 through
-  1.13** — in prose, records, commits, and dialogue alike. This is a rule about ambiguity rather
-  than about a figure of speech: neither word is wrong, and the citation is still incomplete
-  without the name. A Waytide rule needs no such prefix, being cited by its name rather than by a
-  number.
+- **A reference to part of an external standard names that standard.** Waytide has rules of its
+  own, so a bare *Rule 1.7* leaves a reader to work out which system it belongs to, and the
+  numbering gives them nothing to work it out from. **The same holds for the standard's
+  dictionary**, because every `vocabulary.md` in Waytide is an approved-word dictionary for its
+  package, so *the dictionary* names four things at once. Write the standard's name first —
+  **STE Rule 1.7**, **STE Rules 1.5 through 1.13**, **the STE dictionary** — in prose, records,
+  commits, and dialogue alike. This is a rule about ambiguity rather than about a figure of
+  speech: neither word is wrong, and the reference is still incomplete without the name. A Waytide
+  rule needs no such prefix, being referred to by its name.
 
 - **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master" — say **what changed**, **what was affected**, or **took effect**.
 
@@ -65,3 +67,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:08:29 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
