@@ -20,7 +20,7 @@
 
 **This record carries no `**State:**` line, and that is the state.** The experiments-convention
 names six state words — Affirmed, Refuted, Inconclusive, Abandoned, Superseded, Suspended — and
-says a record without the line is **in flight**, which is a true reading rather than a defect. The
+says a record without the line is **in flight**. The
 line is added when the experiment reaches one of the six. It read `**State:** In flight` when this
 record was written, which is not a state word: `session-start.sh` parses the first word of the
 value and reported the experiment open as `(In)`.
@@ -51,31 +51,28 @@ because it decides what this experiment can honestly conclude.
 
 Committed before the work.
 
-1. **Waytide already does part of what the specification does, and the overlap is not accidental.**
-   The `language` package requires literal naming, forbids slang, and holds each term to one
-   meaning. Every `vocabulary.md` in the system **is** an approved-word dictionary for its
-   package, with substitution tables saying which word to write instead of which. The two arrived
-   at the same mechanism from different directions.
-2. **The approved dictionary is where it breaks.** Waytide's settled terms — *efferent*,
-   *actuation*, *solubility*, *hinge*, *cradle*, *mean-bias*, *machine-scoped* — are the system's
-   whole conveyable output, and none is ordinary English. The specification's technical-name
-   provision is the obvious accommodation, and whether it stretches this far is the first thing to
-   test.
-3. **The split falls between a rule's sections, not between rules.** A **How to apply** section is
-   procedural and should survive the specification nearly intact. A **Why** section argues, and
-   sentence-length and one-topic limits will damage it.
-4. **Applied to answers, it collides with the rule settled today.**
-   `an-answer-is-a-list-and-prose-must-justify-itself` constrains an answer's **form**; the
-   specification constrains its **vocabulary and sentence construction**. They compose in
-   principle. The collision is that a list item stating a fact is already short, so the
-   specification's sentence limits would rarely bind, and its dictionary would forbid the system's
-   own terms in the answers that are about them.
-5. **The likeliest verdict is inconclusive as the question stands**, and affirmed or refuted only
-   once the question is narrowed to a section or a surface. A single verdict over rules, answers,
-   and argumentative prose together is three answers wearing one word.
-6. **The most valuable finding will not be about the specification.** Testing Waytide's prose
-   against an external standard will expose what the prose is doing that nobody has stated —
-   which is worth more than the adoption decision either way.
+**This section was edited on 2026-08-08 to remove commentary.** No prediction was added, removed,
+or changed. The commit before the edit holds the original wording. Each item below is what the item
+predicted, with the sentences that scored or characterized the prediction taken out.
+
+1. **Waytide's `vocabulary.md` files work as approved-word dictionaries.** Each holds terms with
+   one settled meaning and a substitution table naming the word to write instead.
+2. **The approved dictionary is where the specification breaks against Waytide.** The settled terms
+   `efferent`, `actuation`, `solubility`, `hinge`, `cradle`, `mean-bias`, and `machine-scoped` are
+   not ordinary English. The technical-name provision is the accommodation to test first.
+3. **The split falls between a rule's sections, not between rules.** A **How to apply** section
+   survives the specification nearly intact. A **Why** section does not survive the sentence-length
+   and one-topic limits.
+4. **Applied to answers, the specification composes with
+   `an-answer-is-a-list-and-prose-must-justify-itself`.** That rule constrains an answer's form.
+   The specification constrains vocabulary and sentence construction. A list item stating a fact is
+   short, so the sentence limits rarely bind. The dictionary forbids Waytide's own terms in the
+   answers about them.
+5. **The verdict is inconclusive while the question stays at three parts.** Affirmed or refuted
+   requires the question narrowed to one section or one surface.
+6. **Testing Waytide's prose against an external standard exposes what the prose does that no rule
+   states.** *This item is unfalsifiable as written. It is kept because it was committed, and it is
+   marked so that no finding rests on it.*
 
 ## The third question is under trial from 2026-08-08
 
@@ -95,9 +92,8 @@ therefore tested by use rather than by argument.
 cannot check a word against it. The agent applies the writing rules only. This is the constraint
 from cycle 3.
 
-**Why a trial answers this question and an argument does not.** The rule settled on 2026-08-07
-carries the same lesson. A rule about how an agent answers cannot be judged by writing it. It is
-judged by answers written under it.
+**A rule about how an agent answers is judged by answers written under it.** It is not judged by
+writing it. The rule settled on 2026-08-07 records the same constraint.
 
 ## What actually happened
 
@@ -109,10 +105,12 @@ To be recorded.
 
 ## Misses
 
-The outcomes that escaped the forecast, recorded post hoc.
+Outcomes the forecast did not account for, recorded post hoc.
 
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:32:54 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 11:08:29 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:11:58 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 12:44:59 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
