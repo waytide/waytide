@@ -23,6 +23,20 @@ The commands are `git switch -c experiment/<subject>` and `git worktree add -b e
 - **Refuted, inconclusive, abandoned, and superseded keep the record.** In any of these the branch is **not merged**; the experiment record is **maintained, marked with the state**, so the attempt and its findings survive as evidence. They differ by *why* there is no affirmation — the question was disproven (refuted), it stayed unresolved (inconclusive), it was dropped before resolving (abandoned), or another experiment replaced it (superseded).
 - **Suspension keeps the branch.** A suspended experiment's **branch is not removed**, and its record is **characterized as suspended** (see the experiments-convention). It resumes from the same branch. With **branch only** the working tree switches back to the upstream branch and the branch sits dormant until the experiment resumes; under a **worktree** the worktree is kept too — left in place and checked out — so the experiment resumes exactly where it stands.
 - **Supersession runs through suspension.** An experiment may be **superseded** by another experiment that replaces it. When one supersedes another, **both records name the counterpart** — the superseded record notes what superseded it, the superseding record notes what it supersedes. A superseded experiment is **not concluded automatically**: it **remains suspended** until the **user explicitly concludes it** as superseded, and its branch is kept until then, then handled like any concluded experiment's.
+- **A child experiment supersedes its parent by preserving it.** An experiment created from another
+  experiment's branch already holds its parent's history. When the derivative goes further than the
+  primitive, the child supersedes the parent, and the steps differ from supersession between two
+  siblings. **The parent's divergent content is preserved on the child's branch first.** The child
+  merges the parent, which brings across every commit the parent made after the child was created
+  from it. That merge is what makes the next step safe: the parent's commits stay reachable from
+  the child, so deleting the parent branch loses nothing. Then the parent record is parked with
+  `**State:** Superseded`, both records name the counterpart, the child's **upstream branch**
+  becomes what the parent's was, and the parent branch is deleted on the user's confirmation.
+  **This is the one supersession that merges the superseded branch.** The bullet above says a
+  superseded branch is not merged, and that holds for two experiments that are siblings, where the
+  superseded work is separate work. A child already contains its parent, so refusing the merge
+  would discard the parent's last commits rather than preserve them. Recorded 2026-08-08, when the
+  STE Spec experiment superseded the Simplified Technical English experiment it was created from.
 - **Conclude in the main working tree, on the upstream branch.** However an experiment concludes — affirmed, refuted, inconclusive, abandoned, superseded, or suspended — the user should end up **on the upstream branch**, not stranded on the experiment branch. With **branch only** that means switching the working tree back. Under a **worktree** the main working tree never left the upstream branch, so what the instruction requires there is that the session ends **in the main working tree** — never in a directory that has been removed.
 - **Branch deletion is user-confirmed, and the worktree is removed first.** Deleting the experiment branch — **local or remote** — requires **explicit user confirmation**, and that confirmation is put through the **AskUserQuestion** selection UI, not asked as free-text prose. Where the experiment was worked in a **worktree**, removing the worktree **precedes** deleting the branch — git refuses to delete a branch that is checked out in a worktree — and **one confirmation covers both**: they are a single cleanup act with a forced order, so splitting them would prompt twice for one decision. Suspension never deletes and never removes a worktree; a concluded experiment's branch and worktree are removed only on confirmation.
 - **Record every confirmation.** Any user confirmation the lifecycle requires — the working-location choice at the start, the attended-or-unattended choice at the start, the affirmation declaration, concluding a superseded experiment, merging untested code, suspending the experiment, adding a worktree to an experiment under way, deleting the branch and removing its worktree — is **recorded in the experiment's record**, so the run's authority is auditable.
@@ -56,3 +70,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:42:59 PM PT

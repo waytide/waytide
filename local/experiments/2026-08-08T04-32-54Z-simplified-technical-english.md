@@ -1,5 +1,21 @@
 # Experiment — Use ASD-STE100 Simplified Technical English
 
+## Superseded on 2026-08-08
+
+**The STE Spec experiment superseded this one.** This experiment asked what the specification
+costs when it is applied to writing that argues. It could not answer, because it did not hold the
+specification. Its cycle 3 forbade any finding that rests on a specific clause. The STE Spec
+experiment was created from this branch to remove that constraint, and it went on to hold the
+document, the vocabulary comparison, the reserved terms, and the rules that came from them.
+
+**A child experiment outgrew its parent.** The derivative went further than the primitive, so the
+primitive gives way. See the experiment-lifecycle rule.
+
+**This record's divergent content is preserved on the child's branch.** Two commits edited this
+file after the child was created from it — the forecast was rewritten to remove commentary, and
+two passages were reworded. Both are here, and both commits stay reachable from the child's
+history. The branch was deleted on 2026-08-08 and was never pushed.
+
 ## Question
 
 **Three questions, worked in this order**, the third informing the first two:
@@ -11,8 +27,10 @@
 
 ## Setup
 
+- **State:** Superseded
+- **Superseded by:** `2026-08-08T06-26-51Z-ste-spec.md`, the STE Spec experiment, on 2026-08-08
 - **Upstream branch:** `master`
-- **Experiment branch:** `experiment/simplified-technical-english`
+- **Experiment branch:** `experiment/simplified-technical-english`, deleted on 2026-08-08
 - **Base:** `fef00202062868632bd4d11043d9279fbd67067b`
 - **Working location:** branch only, chosen at initiation. This working tree switches back to
   `master` at the conclusion.
@@ -114,3 +132,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 11:08:29 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:11:58 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 12:44:59 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:42:59 PM PT
