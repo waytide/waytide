@@ -52,7 +52,7 @@ retired terms.
 
 ## 4. Attended and unattended
 
-The gating cadence is chosen at a feature's or experiment's initiation, beside the working
+The human's participation is chosen at a feature's or experiment's initiation, beside the working
 location, with **attended the default**. The developer's framing settled the substance:
 
 - **DBE is in effect either way.** Unattended is not DBE off — the cradle, the efferent-first
@@ -170,7 +170,7 @@ license item** left because the license is being built in a project under Eventi
 - **cycle** — one traversal of the loop: a hinge surfaced, decided, acted on. The unit a loop
   record is written in. Scoped by the word before it — *the hinge cycle* is five, *the DBE
   cycle* is the loop.
-- **attended / unattended** — the gating cadence. Whether the loop stops at each hinge for the
+- **attended / unattended** — the human's participation. Whether the loop stops at each hinge for the
   developer, or the agent decides each hinge and generates through. DBE is in effect either way.
 - **the-agent-proposes-the-developer-decides** — the cross-cutting stance: every decision that
   is the developer's is put to them, and the agent decides none of them.
@@ -193,3 +193,4 @@ license item** left because the license is being built in a project under Eventi
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 8:06:02 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

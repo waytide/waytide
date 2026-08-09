@@ -235,7 +235,7 @@ script from the repository and writes their own registry.
 - **Anything done with a discovered project.** Refreshing, committing, and pushing in a consuming
   project are directed acts, and where they happen they drive the existing tooling — a project's
   own `refresh-packages.sh` — rather than a reimplementation here. Each project is a separate
-  repository, so each push is confirmed rather than swept.
+  repository, so each push is confirmed rather than conformed in a batch.
 - **Reporting what was excluded.** Discovery emits the actionable set, and an excluded path is
   absent from it. Whether a diagnostic exists for checking that a registry says what its author
   meant is not settled and is not part of the default output.
@@ -261,3 +261,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 2:04:25 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 2:23:04 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:36:13 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:45:20 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

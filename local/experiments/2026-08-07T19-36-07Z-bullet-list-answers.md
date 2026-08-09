@@ -14,7 +14,7 @@ preference is a **rule**, and if so what it may require without breaking the ans
 - **Base:** `5422551fed1310b7460f24fcae65f90933e1db17`
 - **Working location:** branch only, chosen at initiation. This working tree switches back to
   `master` at the conclusion.
-- **Gating cadence:** attended, chosen at initiation. The loop stops at every hinge.
+- **Participation:** attended, chosen at initiation. The loop stops at every hinge.
 
 ## Confirmations
 
@@ -24,7 +24,7 @@ auditable:
 1. **Working location, at initiation** — branch only, chosen through the selection interface. The
    current-branch option was named and marked unavailable, an experiment's branch not being
    optional.
-2. **Gating cadence, at initiation** — attended, chosen through the selection interface.
+2. **Participation, at initiation** — attended, chosen through the selection interface.
 3. **The question itself, at initiation** — chosen among three readings rather than assumed from
    the experiment's name.
 4. **Affirmation** — declared by the developer on 2026-08-07. The lifecycle reserves this to the
@@ -149,3 +149,4 @@ Authored by Scott Bellware on Fri Aug 7 2026 at 12:36:07 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:03:17 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:06:37 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:08:07 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

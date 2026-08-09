@@ -21,7 +21,7 @@ forecast, and state are in the experiment record of the same name; this record c
 
 ## Cycle 2 — how the work is conducted
 
-- **Hinge:** the working location and the gating cadence, settled at initiation and held for the
+- **Hinge:** the working location and the human's participation, settled at initiation and held for the
   experiment's duration.
 - **Options:** branch only attended, branch and worktree attended, branch only unattended.
 - **Decision / chat:** **branch only, attended.**
@@ -39,3 +39,4 @@ forecast, and state are in the experiment record of the same name; this record c
 ---
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:33:14 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

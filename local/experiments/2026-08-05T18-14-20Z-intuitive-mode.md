@@ -12,7 +12,7 @@ Does **intuitive** name the human-centric project mode better than **creative** 
 - **Base:** `e887bd71dd4fb4b388563e65622fbaa026bf8778`, from `master`
 - **Working location:** branch only. Chosen at initiation on 2026-08-05 through the selection
   interface. This working tree switches back to `master` at the conclusion.
-- **Gating cadence:** unattended. Chosen at initiation beside the working location. The loop does
+- **Participation:** unattended. Chosen at initiation beside the working location. The loop does
   not gate; the agent determines and decides each hinge and generates through, and the developer
   reads the finished state.
 - **Loop record:** `waytide/local/loops/2026-08-05T18-14-20Z-intuitive-mode.md`
@@ -132,7 +132,7 @@ between *creative* and *intuitive-with-a-convention-about-not-saying-an-intuitiv
 
 - **Working location** — branch only, chosen at initiation on 2026-08-05 through the selection
   interface.
-- **Gating cadence** — unattended, chosen at initiation beside the working location.
+- **Participation** — unattended, chosen at initiation beside the working location.
 - **Affirmation** — declared by the developer on 2026-08-05 through the selection interface, over
   a read that the evidence leaned affirmed with a convention against writing *an intuitive
   project*. The verdict was put with **inconclusive** — the forecast's own prediction — and
@@ -174,3 +174,4 @@ quotation of the defect. Every shell script in the repository parses.
 Authored by Scott Bellware on Wed Aug 5 2026 at 11:14:20 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:17:55 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

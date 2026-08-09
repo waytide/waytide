@@ -16,7 +16,7 @@
 - **Base:** `fef00202062868632bd4d11043d9279fbd67067b`
 - **Working location:** branch only, chosen at initiation. This working tree switches back to
   `master` at the conclusion.
-- **Gating cadence:** attended, chosen at initiation.
+- **Participation:** attended, chosen at initiation.
 
 **This record carries no `**State:**` line, and that is the state.** The experiments-convention
 names six state words — Affirmed, Refuted, Inconclusive, Abandoned, Superseded, Suspended — and
@@ -115,3 +115,4 @@ The outcomes that escaped the forecast, recorded post hoc.
 
 Authored by Scott Bellware on Fri Aug 7 2026 at 9:32:54 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 11:08:29 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

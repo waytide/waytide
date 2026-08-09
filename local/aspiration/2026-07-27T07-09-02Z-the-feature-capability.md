@@ -150,7 +150,7 @@ the suite on integration. The response is to fix it from there.
   **completed** means the intent is built rather than integrated, and **abandoned** means the
   work is reverted rather than a branch left unmerged.
 - **2026-08-02** — A second choice is put at initiation beside the working location: the
-  **gating cadence**, attended or unattended, with attended the default. **DBE is in effect
+  **the human's participation**, attended or unattended, with attended the default. **DBE is in effect
   either way** — the cradle, the efferent-first actuation, and the solubility standard hold in
   both, and only the stopping changes. Both choices are recorded as confirmations.
 - **2026-07-27** — The feature states are **completed**, **abandoned**, **superseded**,
@@ -190,3 +190,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 4:31:18 PM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 11:47:03 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 10:36:12 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

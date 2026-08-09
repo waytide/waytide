@@ -153,7 +153,7 @@ agent's narration stands where the thing itself should be.
 everyday sense first, where it says nothing about what will happen — the same objection the
 present-every-prompt rule makes to *put this question again* in an option description. It holds in
 speech to the developer as well as in an option's wording. This rule's own headings still read
-*put*, which is the older idiom and is being left rather than swept.
+*put*, which is the older idiom and is being left rather than conformed.
 
 **The question is asked in these words:**
 
@@ -387,3 +387,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 3:25:24 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:15:51 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 9:44:31 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

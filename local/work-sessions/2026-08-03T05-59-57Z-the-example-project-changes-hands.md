@@ -18,7 +18,7 @@ second time** — for the second consecutive session record.
 Three things in it had become false, all from work done after the previous record: the working
 location said **two** options where there are now three; a 2026-07-26 resolution said the choice
 is put *"as with an experiment"*, which the current-branch option broke, since an experiment
-never gets it; and the design said nothing about the **gating cadence**, now a second choice at
+never gets it; and the design said nothing about **the human's participation**, now a second choice at
 the same initiation.
 
 Reconciled the way the first reconciliation was: the false statements corrected in the body,
@@ -60,7 +60,7 @@ record without destroying it". From the projection a website script is sequenced
 generated.
 
 **What it dissolves.** The literal reading had `constant`'s records showing the method **as it
-was**: its six features were begun before the gating cadence, the current-branch working
+was**: its six features were begun before the human's participation, the current-branch working
 location, and the *pass* → *cycle* rename existed. A synthesized log is free to show the method
 **as it is**.
 
@@ -169,3 +169,4 @@ whether anything is layered over the chat. That question existed only because of
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 10:59:57 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:12:47 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
