@@ -1,7 +1,7 @@
 # The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle
 
 At the **implementation hinge** — the fourth of the five — the agent puts two candidates to
-the developer:
+the engineer:
 
 1. **A working implementation** — the code that satisfies the test, written directly.
 2. **An implementation that lets the test fail**, and then the complete **red, green, refactor**
@@ -9,12 +9,12 @@ the developer:
 
 Both answer the hinge's question. The hinge asks *how does this implementation come about*, and
 these are two ways of arriving at the same place — one directly, one through the cycle. That is
-what makes the second a genuine **candidate** rather than a sequencing step: a developer may
+what makes the second a genuine **candidate** rather than a sequencing step: a engineer may
 prefer it, and preferring it is a design judgment about this unit rather than a procedure
 applied to every one.
 
 **This is where the choice is made, and the only place.** A red is not offered at a separate
-hinge preceding the implementation. One gate asks, so a developer who declines is not asked
+hinge preceding the implementation. One gate asks, so a engineer who declines is not asked
 again by another mechanism.
 
 **The containment constraint governs the red, unchanged.** A deliberate red is permitted **only
@@ -34,7 +34,7 @@ only where it is actually available, rather than being offered and then refused.
 **Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by
 rejecting red-green-refactor **as choreography** — as ritual performed because the form calls
 for it, with a pre-implementation failure treated as a checkpoint that teaches nothing. What
-that rejects is the **unchosen** case. A developer selecting the cycle at a gate, for this unit,
+that rejects is the **unchosen** case. A engineer selecting the cycle at a gate, for this unit,
 has made a design judgment, which is the opposite of ceremony: the loop stopped, a person
 weighed two real alternatives, and the choice was theirs. The rule and this one do not conflict,
 and dbe-as-design-tool says so in its own words.
@@ -57,7 +57,7 @@ that unit — how confident the design is, whether the test's discrimination is 
 the shape wants working out under a red. It is subtle, in that it cannot be read off the code,
 and load-bearing, in that the implementation follows from it. That is a hinge's definition, and
 it belongs at the hinge where the implementation is decided rather than as a procedure attached
-to every one. Offering it as one of two candidates puts the developer in the position the gates
+to every one. Offering it as one of two candidates puts the engineer in the position the gates
 exist to create — comparing real alternatives — rather than ratifying a single proposal.
 
 **How to apply:** at the implementation hinge for a unit's **first** implementation, offer both
@@ -78,3 +78,4 @@ there is nothing to drive).
 Authored by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

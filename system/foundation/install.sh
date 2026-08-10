@@ -35,7 +35,7 @@ repo="https://github.com/waytide/foundation.git"
 # rule). This script cannot know which, because the mode is chosen by the agent at the
 # project's start, which is after an install has run. Naming the formal pair here
 # would write it back into a project in another mode every time the bootstrap was regenerated —
-# which is what refresh-packages.sh tells a developer to do when foundation's bootstrap
+# which is what refresh-packages.sh tells a engineer to do when foundation's bootstrap
 # changes, so a routine refresh would silently undo a migration.
 #
 # The list is illustrative rather than exhaustive — it omits `migration/` and
@@ -63,7 +63,7 @@ override default behavior where they conflict; explicit user instructions still 
 `SessionStart` hook in `.claude/settings.json` runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
 actually present and emits the `Waytide installed at … — N packages: …` notice, closing
-with a line telling the developer to type `load waytide` — the command that asks for the
+with a line telling the engineer to type `load waytide` — the command that asks for the
 read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
 the working directory, branch, and any uncommitted, untracked, or unpushed work.
@@ -228,7 +228,7 @@ warn_ignored_settings_json() {
 # print the session-start notice. Unlike AGENTS.md and CLAUDE.md, this file cannot be safely
 # appended to — merging JSON needs a JSON tool that may not be installed, and a
 # corrupted settings.json silently disables every setting in it. So an existing file
-# is never modified: the exact block is printed for the developer to merge. Note
+# is never modified: the exact block is printed for the engineer to merge. Note
 # that adopting the status line replaces whatever status line they had configured.
 # Idempotent.
 place_settings_json() {
@@ -267,9 +267,9 @@ place_settings_json() {
 # state, and it stays narrow accordingly: it moves only when the old directory is
 # present and the new one is absent, so there is exactly one reading of what should
 # happen. Anything else is reported and left alone — an installer guessing at a merge
-# of two directories of records is worse than a developer doing it deliberately. The
+# of two directories of records is worse than a engineer doing it deliberately. The
 # move is a plain mv rather than git mv, which would fail on records that were never
-# committed; git detects the rename when the developer commits it.
+# committed; git detects the rename when the engineer commits it.
 migrate_work_sessions() {
   old_dir="waytide/local/sessions"
   new_dir="waytide/local/work-sessions"

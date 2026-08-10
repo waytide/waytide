@@ -3,7 +3,7 @@
 Every `.sh` file in this repository is **runnable as itself** — `./report-direct-commits.sh`,
 never `sh report-direct-commits.sh`. Two things together make it so, and both are required:
 the bit and the shebang, below. **One script is documented with an `sh` prefix even so**, because
-the copy a developer runs is not the file this repository holds; the delivery section states when
+the copy a engineer runs is not the file this repository holds; the delivery section states when
 that applies and why the bit is set on it regardless.
 
 - **The executable bit is set**, and it is set at the moment the file is created rather than
@@ -19,7 +19,7 @@ covered alike:
 - **The tools at the root** — `report-direct-commits.sh` and
   `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains
   Waytide, in this repository. **`install-all.sh` sits beside them and is not one**: a consuming
-  project fetches it, which is what makes it the one script here a developer runs from somewhere
+  project fetches it, which is what makes it the one script here a engineer runs from somewhere
   other than a clone of this repository. That is the whole reason the delivery section below
   exists.
 - **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`,
@@ -47,7 +47,7 @@ which is how a script written for `sh` gets run by something else and fails some
 middle.
 
 **A script's own documentation depends on it.** Every script in this repository opens with a
-**usage line** — the command a developer types, in the script's own header. That line is a claim
+**usage line** — the command a engineer types, in the script's own header. That line is a claim
 about how the file is invoked, and it is false for a script that is not executable, so the
 convention is not cosmetic tidiness but the thing that keeps each script's header true.
 
@@ -77,7 +77,7 @@ like when the file is in the current directory.
 
 **A script nobody types carries an Invocation block instead.** `session-start.sh` and
 `statusline.sh` are wired into `.claude/settings.json` by `install.sh` and run by the harness, so
-a usage line would name a command no developer issues. Each records its invocation anyway, and
+a usage line would name a command no engineer issues. Each records its invocation anyway, and
 says why: a script whose invocation is not written down is one nobody can reproduce when the
 wiring breaks.
 
@@ -87,7 +87,7 @@ wiring breaks.
 committed `100755` exactly like the rest, and nothing below relaxes that. What varies is only the
 **usage line**, and it varies because the bit does not survive every delivery.
 
-- **`git clone` and `git subtree` carry the file's mode.** A script that reaches a developer either
+- **`git clone` and `git subtree` carry the file's mode.** A script that reaches a engineer either
   way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the
   path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this
   case — only the `curl`-fetched one is not.
@@ -144,3 +144,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 2:50:13 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 3:00:44 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:48:30 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:35:11 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

@@ -4,8 +4,8 @@
 cycles through the **loop** (the distributed OODA cycle; see the DBE vocabulary).
 Where the decision log captures *what* was decided (one line per decision), a
 loop record captures *how* — the deliberation history of a feature: the hinges
-the AI determined, the options it put to the developer, and the decisions the
-developer made (or the chat that replaced options).
+the AI determined, the options it put to the engineer, and the decisions the
+engineer made (or the chat that replaced options).
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were
 found, what alternatives were weighed, and why the chosen path won. It is the
@@ -21,10 +21,10 @@ displace (the log stays one line per decision).
   how every cycle below is read.
 - One section per **cycle**, in order. Each cycle records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
-  - **Options** — the candidates put to the developer at the gate (or "none — no
+  - **Options** — the candidates put to the engineer at the gate (or "none — no
     gate", explicitly, when a hinge was handled without stopping; surfacing a
     skipped gate is part of the record's value).
-  - **Decision / chat** — what the developer chose, or the chat that ensued and
+  - **Decision / chat** — what the engineer chose, or the chat that ensued and
     how it resolved (record the substance of the chat, not just the outcome).
 - **Under an unattended mode, a cycle carries its hinge and the decision with its reasoning,
   and no Options or Decision / chat line** — neither happened, and writing them would be a
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Tue Jul 28 2026 at 12:21:11 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

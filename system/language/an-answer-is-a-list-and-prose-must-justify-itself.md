@@ -1,6 +1,6 @@
 # An answer is a list; prose must justify itself
 
-An answer to the developer is a **list**. Prose is not forbidden, and it is not the default: it is
+An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default: it is
 written where one of the conditions below applies, and those conditions are the whole of what
 justifies it.
 
@@ -18,7 +18,7 @@ and I did not follow it* are answers, and a list would only put marks in front o
 **That is the whole set.** Two candidates were considered and rejected, and the reasons are worth
 keeping because both are tempting:
 
-- **An explanation the developer asked for is not a justification.** The request is for the
+- **An explanation the engineer asked for is not a justification.** The request is for the
   substance, not for a form. Where this was tested, every explanation asked for outright was
   answered in a list and none was harder to follow for it.
 - **Dependent reasoning is not a justification either**, because it is answered inside the form.
@@ -51,7 +51,7 @@ not — it is a comment on a fact rather than a fact, and it is where narration 
 
 **Why the reasoning still belongs somewhere.** A rule, a record, and a commit message all carry
 why; each is written to be read as a document and its reader came for the reasoning. **An answer
-is not one of those.** The developer asked something, and reasoning they did not ask for is the
+is not one of those.** The engineer asked something, and reasoning they did not ask for is the
 agent taking their turn to think out loud. Where the reasoning is wanted, it is asked for — which
 is what the expansion line is for.
 
@@ -67,7 +67,7 @@ relationship the form denied.
 **This is why dependent reasoning is not an exception.** The problem was never prose against
 lists; it was one kind of list used where another was meant.
 
-## After a list answer, the developer is offered an expansion
+## After a list answer, the engineer is offered an expansion
 
 **Where an expansion would add something, the answer ends with one line:**
 
@@ -83,7 +83,7 @@ For more detail than bullet points, ask for an expanded answer.
   difference between this line and the trailing offer-of-more that is otherwise a defect: it points
   back at what was just said, not forward at what else might be done.
 - **It names the form being traded away**, not only the depth on offer. *More detail* alone leaves
-  a developer to guess what an expansion would look like; *more detail than bullet points* says the
+  a engineer to guess what an expansion would look like; *more detail than bullet points* says the
   expansion is a different form of answer, which is what they would be asking for.
 
 **The known weakness, stated rather than discovered later:** the timing rests on the agent judging
@@ -101,7 +101,7 @@ not yet cost anything.
 
 **Why:** an agent produces prose without choosing to, and prose is where padding, editorializing,
 and unattributed back-references hide. A list forces each claim onto its own line, where a claim
-with nothing in it is visible as a line with nothing in it. The developer this was settled with had
+with nothing in it is visible as a line with nothing in it. The engineer this was settled with had
 stated the preference three times across a week before it was written down — and a preference
 restated is a rule that has not been written, because every restatement is evidence the agent does
 not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
@@ -126,3 +126,4 @@ Authored by Scott Bellware on Fri Aug 7 2026 at 12:55:09 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:02:58 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:10:48 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:28:11 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

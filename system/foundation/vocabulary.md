@@ -87,7 +87,7 @@ write the **Say** term.
 
 - **work session record** — always carrying **work**. Bare *session* is ambiguous: a reader can
   supply a shell session, a therapy session, or a parliamentary one, and the shell reading is
-  the one a developer reaches first. The qualifier says which sense is meant. This holds in the
+  the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
   prompt that offers to write one, in the record's own title (`# Work Session — <name> (<date>)`),
   in the directory name (`waytide/local/work-sessions/`), and in prose about either.
 
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

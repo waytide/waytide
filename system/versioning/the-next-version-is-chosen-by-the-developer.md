@@ -1,8 +1,8 @@
-# The next version is put to the developer, never decided by the agent
+# The next version is put to the engineer, never decided by the agent
 
 At a release, the agent does not select the next version. It presents the candidates through
 the **AskUserQuestion** selection UI — one option per segment that could be increased, each
-showing the version that would result — and the developer chooses.
+showing the version that would result — and the engineer chooses.
 
 For a package at `2.2.3.1`, that is:
 
@@ -28,7 +28,7 @@ pin against and install. A wrong choice is not corrected by editing it — the p
 version stays published, and the correction is another version. That asymmetry is why the
 decision is put at a gate rather than proposed and confirmed.
 
-**Present the candidates with what each claims, not only the number.** The developer is
+**Present the candidates with what each claims, not only the number.** The engineer is
 choosing a claim about compatibility, so the option that says *capability added, existing use
 unaffected* is the one being weighed; `2.2.4.0` on its own does not put the question. The
 resulting version is shown too, since it is what will be written and committed.
@@ -36,13 +36,13 @@ resulting version is shown too, since it is what will be written and committed.
 **Why:** the two facts that decide this are that the choice is a claim about other people's
 code and that it cannot be taken back once published. Either alone would argue for putting it
 to a person; together they settle it. Offering the candidates rather than asking for a version
-outright is what keeps the choice about the claim — the developer weighs three statements
+outright is what keeps the choice about the claim — the engineer weighs three statements
 about compatibility instead of typing a number, which is the same reason a hinge presents
 options rather than a fait accompli.
 
 **How to apply:** at a release, read the current version, present patch, minor, and major as
 options through the selection UI with the resulting version and the claim each makes, and let
-the developer choose. Do not include the generation. Do not propose one and ask for
+the engineer choose. Do not include the generation. Do not propose one and ask for
 confirmation. Related: the version-scheme rule (what the segments mean and why the generation
 is excluded), the `foundation` present-every-prompt-through-askuserquestion rule (why
 every prompt goes through the selection UI), and the `git` subject-first-commit-messages rule
@@ -53,3 +53,4 @@ every prompt goes through the selection UI), and the `git` subject-first-commit-
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

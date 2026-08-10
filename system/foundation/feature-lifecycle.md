@@ -76,7 +76,7 @@ what accounts for every place this rule departs from the experiment's.
 - **DBE governs the inside, attended or unattended.** The five hinges — actuation,
   observation, controls, implementation, naming — govern how the feature is designed, and the
   loop record captures each cycle. What is chosen at the start is **the human's level of participation**:
-  **attended**, where the loop stops at every hinge for the developer, or **unattended**, where
+  **attended**, where the loop stops at every hinge for the engineer, or **unattended**, where
   the agent decides each hinge and generates through. Attended is the default, and the choice
   is put through the selection UI **beside the working location**, since both are decisions
   about how the work will be conducted and both hold for its duration. **DBE is in effect
@@ -176,3 +176,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

@@ -4,7 +4,7 @@ A domain class has two construction paths, with distinct jobs:
 
 - **`new` (the initializer)** — **strict**. It records its inputs as-is: no
   normalization, no validation (the initializer is "purely mechanical
-  state-recording"). Passing a malformed input to `new` is developer misuse, not
+  state-recording"). Passing a malformed input to `new` is engineer misuse, not
   accounted for.
 - **`build` (the constructor)** — the **forgiving, user-friendly front door**. It
   **normalizes** its inputs into the strict form the initializer expects, then
@@ -102,3 +102,4 @@ robustness-lives-at-the-class-interface rule.
 Authored by Scott Bellware on Tue Jun 30 2026 at 1 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:53:39 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

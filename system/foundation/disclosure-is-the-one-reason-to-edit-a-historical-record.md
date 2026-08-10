@@ -18,7 +18,7 @@ accurate. The test is whether it is **the project's to publish**:
 - Another party's project, client, or repository, named only incidentally.
 - A path, hostname, or machine layout that describes someone's environment rather than the work.
 - A credential, key, or token, which is a security matter before it is a disclosure one.
-- Anything the developer says should not be there. **They are the authority on this**, not the
+- Anything the engineer says should not be there. **They are the authority on this**, not the
   agent — an agent cannot know what a name costs its owner.
 
 **A project's repositories are public, and its rules are installed on other people's machines.**
@@ -42,8 +42,8 @@ better served than one who cannot tell the record was edited.
 
 **The git history still holds it.** Every removed mention remains in the commit that introduced
 it, and in any component repository the content was published to. Removing it there means
-rewriting history across several repositories, which is the developer's decision and not a
-consequence of this rule. **Say so when a correction is made**, so the developer knows what the
+rewriting history across several repositories, which is the engineer's decision and not a
+consequence of this rule. **Say so when a correction is made**, so the engineer knows what the
 edit did and did not accomplish.
 
 **Log the edit.** The correction is a decision, and the log entry is what tells a later reader
@@ -54,13 +54,13 @@ itself no longer carries.
 is revised to suit the present is not evidence. That reason does not extend to content the
 project had no standing to publish: leaving it in place does not preserve evidence, it continues
 a disclosure. Reducing resolution satisfies both — the evidence survives, and what was not the
-project's to say stops being said. Naming the developer as the authority keeps an agent from
+project's to say stops being said. Naming the engineer as the authority keeps an agent from
 either exposing something on the grounds that a record is immutable, or scrubbing a record on a
 guess about what is sensitive.
 
 **How to apply:** leave historical records alone. Where one discloses what should not have been
 disclosed, correct it: remove the disclosure, keep every claim the record makes true by stating
-it at a lower resolution, log the edit, and tell the developer that the git history is not
+it at a lower resolution, log the edit, and tell the engineer that the git history is not
 reached by it. Related: the deferred-convention and the reconcile entry in this package's
 vocabulary (where the standing rule is stated), and the work-sessions-convention (the title
 format, an instance of the standing rule).
@@ -68,3 +68,4 @@ format, an instance of the standing rule).
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

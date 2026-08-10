@@ -3,7 +3,7 @@
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is
 started and held for its duration:
 
-- **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the developer
+- **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the engineer
   deliberates each one. **This is the default.**
 - **Unattended** — the loop does not wait. The agent determines each hinge and decides it,
   generating through to the end of the work.
@@ -14,7 +14,7 @@ implementation, the actuation designed from the use site, the generation steered
 **solubility**. Every hinge is still determined; what changes is who decides it. The method is
 untouched; only the stopping is.
 
-**The choice is batch size.** Attended is **small-batch**: the developer's attention is spent
+**The choice is batch size.** Attended is **small-batch**: the engineer's attention is spent
 continuously, and a wrong turn is caught at the hinge where it was taken, so rework stays near
 zero. Unattended is **big-batch**: no attention is spent until the end, and a wrong turn is
 found with everything built on top of it, so rework is the price. Which is cheaper depends on
@@ -32,7 +32,7 @@ and the option set says so.
   the working-location choice. It is a lifecycle fact: what was chosen, when, and by whom.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
-**An unattended cycle is not written as though a developer was consulted.** A loop record's
+**An unattended cycle is not written as though a engineer was consulted.** A loop record's
 cycle ordinarily carries a hinge, the **options** put at the gate, and the **decision or chat**
 that resolved it. Under unattended work the last two did not happen. So:
 
@@ -73,7 +73,7 @@ package's ste rules.
 `waytide/local/action/`, whichever the project's mode names. This plan is presented in the response,
 before the agent generates, and it is not written to a file.
 
-**Why:** the developer's attention is the scarce thing the whole method is arranged around, and
+**Why:** the engineer's attention is the scarce thing the whole method is arranged around, and
 the arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
 negligible that assumption is wrong, and five waits buy nothing — the ceremony this
 method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
@@ -81,11 +81,11 @@ trade where it belongs, with the person who knows what the work is worth. Keepin
 in both modes is what stops the choice from being a way out of the method: unattended work is
 still designed from the efferent side, still cradled by a test written first, still judged by
 solubility. And recording the mode honestly is what keeps the loop record worth reading — a
-record that showed options put to a developer who was not there would be worse than no record,
+record that showed options put to a engineer who was not there would be worse than no record,
 because it would be believed.
 
 **How to apply:** at a feature's or an experiment's start, put **attended or unattended**
-to the developer through the selection UI alongside the working location, with attended as the
+to the engineer through the selection UI alongside the working location, with attended as the
 default. Record the choice as a confirmation in the feature or experiment record, and declare
 it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
 as a list before generating, and write it in Steve.** Write each cycle
@@ -105,3 +105,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:02:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:04:16 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

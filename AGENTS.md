@@ -22,7 +22,7 @@ explicit user instructions still win.
 `SessionStart` hook in `.claude/settings.json` runs `system/foundation/session-start.sh`,
 which reads the package directories actually present and emits the
 `Waytide installed at system/ — N packages: …` notice, closing with a line telling the
-developer to type `load waytide` — the command that asks for the read instruction the hook
+engineer to type `load waytide` — the command that asks for the read instruction the hook
 carries to be acted on now; `system/foundation/statusline.sh`
 keeps the system's presence in the status line for the rest of the session, beside the
 working directory, branch, and any uncommitted, untracked, or unpushed work. Neither can be
@@ -57,3 +57,4 @@ The root `CLAUDE.md` is a one-line `@AGENTS.md` import: Claude Code reads `CLAUD
 not `AGENTS.md`, so the import is what makes this bootstrap load in a Claude Code session.
 In a consuming project `install.sh` places the same `CLAUDE.md` bridge alongside the
 generated `AGENTS.md`; here in the source it is hand-maintained like this file.
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

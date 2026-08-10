@@ -42,6 +42,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
 | **name** | "slug" | the descriptive part of a filename |
+| **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to |
 | **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
 | **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below |
 | **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below |
@@ -86,3 +87,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

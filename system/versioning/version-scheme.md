@@ -57,10 +57,11 @@ not what it says.
 project. Choose the segment to increase by asking what a user of the package must do —
 nothing, nothing but read, or change their code. Never increase the generation as part of a
 release; it moves only when a new product line has been declared. Related: the
-the-next-version-is-chosen-by-the-developer rule (who makes the choice and how it is put), the
+the-next-version-is-chosen-by-the-engineer rule (who makes the choice and how it is put), the
 `git` subject-first-commit-messages rule (the commit that records a version change), and the
 `code/ruby` running-the-test-suite rule's package for where a Ruby project records its version.
 
 ---
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

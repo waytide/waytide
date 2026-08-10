@@ -37,7 +37,7 @@ example the method is shown through; neither is named as a consumer.
 **A historical record that already names one.** A record states what was true when it was
 written and is not revised to suit a later convention. The one exception is disclosure, and it is
 the disclosure rule that governs it — the correction removes the name and keeps every claim true
-by stating it at a lower resolution, and the developer is the authority on what counts. This rule
+by stating it at a lower resolution, and the engineer is the authority on what counts. This rule
 governs what is **written from now on**; it does not license going back through the records.
 
 ## Where the operational need goes instead
@@ -45,7 +45,7 @@ governs what is **written from now on**; it does not license going back through 
 A tool sometimes genuinely has to reach the consuming projects — to survey them, or to drive a
 refresh across them. What it reads is **per-machine configuration outside the repository**, under
 `~/.config/`, so the constraint holds without depending on a `.gitignore` staying correct, and so
-the list is what it actually is: one developer's machine, not a fact about the project.
+the list is what it actually is: one engineer's machine, not a fact about the project.
 
 The tool itself is committed and names no consumer; it reads the configuration. That split is
 what lets the tooling be shared while the list stays local.
@@ -71,3 +71,4 @@ reference obliges), and the rules-convention.
 ---
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

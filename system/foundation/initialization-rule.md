@@ -60,12 +60,12 @@ output whose purpose no reader could see.
 greeting, no account of what is about to be read, no name for the block itself.
 
 **The loading line says what the wait is.** Everything printed here appears at the head of the
-response that then opens every rule file in every installed package, which is a wait a developer
+response that then opens every rule file in every installed package, which is a wait a engineer
 sees. The line names it rather than leaving a pause unexplained, and it is the only one of the
 three that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different
-moments.** The notice says *Loading the rules will take a few moments* **before** the developer
+moments.** The notice says *Loading the rules will take a few moments* **before** the engineer
 types `load waytide` — it is one of the two facts they weigh in deciding to type it. This line is
 read **after** they have, while the wait is happening. The first informs a decision; the second
 explains a pause. Duplication that has cost this system elsewhere was one fact stated twice for
@@ -128,3 +128,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 5:08:51 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:11:06 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 6:05:55 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 10:51:50 AM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
