@@ -117,7 +117,7 @@ path can be commented out rather than deleted.
 
 - **2026-08-04 — working location.** Branch only, chosen through the selection interface at
   initiation.
-- **2026-08-04 — the human's participation.** Attended, chosen through the selection interface at
+- **2026-08-04 — the human's level of participation.** Attended, chosen through the selection interface at
   initiation beside the working location.
 - **2026-08-04 — the registry's format, first decision.** JSON, chosen through the selection
   interface against the agent's stated recommendation of YAML.
@@ -196,3 +196,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:43:25 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:46:32 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

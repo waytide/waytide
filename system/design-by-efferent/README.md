@@ -15,7 +15,7 @@ The one-liner:
 - Never ask whether to start test-first — it is the standing default.
 
 **Attended or unattended**
-- The human's participation is chosen at a feature's or experiment's start, beside the working location; attended is the default.
+- The human's level of participation is chosen at a feature's or experiment's start, beside the working location; attended is the default.
 - DBE is in effect either way — the cradle, the efferent-first actuation, and the solubility standard all hold. Only the stopping changes.
 - An unattended cycle is recorded with its hinge and the decision's reasoning, and no options or decision line, since neither happened.
 
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

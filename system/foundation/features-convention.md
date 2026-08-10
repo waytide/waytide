@@ -36,7 +36,7 @@ persisted, dated artifact, kept after the feature concludes.
   either because other work arrived that the user intends to work alongside it, or because
   the feature was **escalated**, judged to need more isolation than the single working tree
   gives it. The record then **gains a line**; the original is not rewritten.
-- **The human's participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way; what the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
+- **The human's level of participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way; what the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
 - **It is the feature's lifecycle record, not its design record.** The same feature's
   design — each cycle's hinge, the options put to the developer, and the decision — belongs
   in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

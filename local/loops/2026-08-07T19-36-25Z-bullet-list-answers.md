@@ -18,7 +18,7 @@ of the same name; this record carries the cycles.
 
 ## Cycle 2 — how the work is conducted
 
-- **Hinge:** the working location and the human's participation, both settled at initiation and held for
+- **Hinge:** the working location and the human's level of participation, both settled at initiation and held for
   the experiment's duration.
 - **Options:** branch only, branch and worktree, each attended. The current-branch option was named
   and marked unavailable — an experiment is a controlled deviation that must stay reversible until
@@ -101,3 +101,4 @@ of the same name; this record carries the cycles.
 Authored by Scott Bellware on Fri Aug 7 2026 at 12:36:25 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:02:20 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

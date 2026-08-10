@@ -2,7 +2,7 @@
 
 Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?" or otherwise put the test-first decision to the human — there is nothing to deliberate at that point; the answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
 
-**What this does not cover: the human's participation.** Test-first is the method's **substance** —
+**What this does not cover: the human's level of participation.** Test-first is the method's **substance** —
 that design is driven from the efferent side, the test written before the implementation — and
 it is never put to the developer, because the answer is always yes. **Attended or unattended**
 is a different question: it asks how often the loop **stops**, not what it builds. DBE is in
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

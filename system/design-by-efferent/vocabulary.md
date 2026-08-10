@@ -27,7 +27,7 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 | **loop** | the cycle | The DBE cycle — a *distributed* OODA loop (Boyd): the AI **observes** and **acts** (mechanized), the human **orients** and **decides** at the gates. Orientation — design judgment — is the irreplaceable phase, kept with the human. (See "The loop, as a distributed OODA cycle".) **STE: approved with a meaning Waytide does not use.** `LOOP (n)` is *a circular shape made in a flexible material*. STE Rule 1.3 forbids the other meaning. |
 | **cycle** | the unit of the loop | **One traversal of the loop**: a hinge surfaced, decided, and acted on. It is the unit a loop record is written in — one section per cycle, carrying that cycle's hinge, the options put at the gate, and the decision. See "cycle is scoped by what precedes it". |
 | **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. **STE: absent as a noun.** The STE dictionary lists `hinge (v)` and gives TURN for it. Waytide does not use the verb. |
-| **attended** / **unattended** | the human's participation | Whether the loop **stops** at each hinge for the developer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's start and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
+| **attended** / **unattended** | the human's level of participation | Whether the loop **stops** at each hinge for the developer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's start and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
 | **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. The loop *waits* at a gate; `gate` is a noun and never a verb. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. **STE: approved with a meaning Waytide does not use.** `MECHANICAL (adj)` is *related to or operated with a mechanism*. STE Rule 1.3 forbids the other meaning. |
@@ -134,9 +134,9 @@ A word not to write, and the word to write instead. When the impulse is a word i
 | **load-bearing** | "asymmetric" | the second mark of a hinge — other work rests on the choice |
 | **mechanical** | "non-hinge" | everything that is not a hinge, which the AI generates straight through |
 | **cycle** | "pass" | one traversal of the loop — see "Cycle is scoped by what precedes it" |
-| **unattended** | "suspending DBE" | the human's participation, where the agent decides each hinge. The method is never suspended. Only the waits are |
+| **unattended** | "suspending DBE" | the human's level of participation, where the agent decides each hinge. The method is never suspended. Only the waits are |
 | **wait** | "gate", as a verb | what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form |
-| **the human's participation** | "gating cadence" | whether the human is in the loop. Attended and unattended cause a cadence and are not one |
+| **the human's level of participation** | "gating cadence" | how much the human is in the loop. Attended and unattended cause a cadence and are not one. **STE: `level` is approved with a meaning Waytide does not use.** `LEVEL (n)` is *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved |
 
 ## Discontinued terms (do not use)
 
@@ -163,3 +163,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

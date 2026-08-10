@@ -73,7 +73,7 @@ instead. A **discontinuation** removes a word from use with nothing in its place
 **`design-by-efferent` files seven substitutions under `## Discontinued terms (do not use)`.**
 `intrinsic` to **subtle**, `asymmetric` to **load-bearing**, `non-hinge` to **mechanical**, `pass`
 to **cycle**, `suspending DBE` to **unattended**, `gate` as a verb to **wait**, and
-`gating cadence` to **the human's participation**. Each names a replacement, so each is a
+`gating cadence` to **the human's level of participation**. Each names a replacement, so each is a
 substitution.
 
 **Two of its nine entries are discontinuations.** `discriminator`, where the concept was dropped
@@ -145,3 +145,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 1:52:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:09:43 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
