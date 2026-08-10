@@ -136,7 +136,7 @@ A word not to write, and the word to write instead. When the impulse is a word i
 | **cycle** | "pass" | one traversal of the loop — see "Cycle is scoped by what precedes it" |
 | **unattended** | "suspending DBE" | the human's level of participation, where the agent decides each hinge. The method is never suspended. Only the waits are |
 | **wait** | "gate", as a verb | what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form |
-| **the human's level of participation** | "gating cadence" | how much the human is in the loop. Attended and unattended cause a cadence and are not one. **STE: `level` is approved with a meaning Waytide does not use.** `LEVEL (n)` is *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved |
+| **the human's level of participation** | "gating cadence" | whether the human is in the loop. Attended is in the loop, and unattended is out of it. Attended and unattended cause a cadence and are not one. **STE: `level` is approved with a meaning Waytide does not use.** `LEVEL (n)` is *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved |
 
 ## Discontinued terms (do not use)
 
@@ -164,3 +164,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:59:35 PM PT
