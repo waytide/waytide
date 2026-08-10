@@ -36,7 +36,8 @@ The commands are `git switch -c experiment/<subject>` and `git worktree add -b e
   superseded branch is not merged, and that holds for two experiments that are siblings, where the
   superseded work is separate work. A child already contains its parent, so refusing the merge
   would discard the parent's last commits rather than preserve them. Recorded 2026-08-08, when the
-  STE Spec experiment superseded the Simplified Technical English experiment it was created from.
+  STE experiment — then named STE Spec — superseded the Simplified Technical English experiment it
+  was created from.
 - **Conclude in the main working tree, on the upstream branch.** However an experiment concludes — affirmed, refuted, inconclusive, abandoned, superseded, or suspended — the user should end up **on the upstream branch**, not stranded on the experiment branch. With **branch only** that means switching the working tree back. Under a **worktree** the main working tree never left the upstream branch, so what the instruction requires there is that the session ends **in the main working tree** — never in a directory that has been removed.
 - **Branch deletion is user-confirmed, and the worktree is removed first.** Deleting the experiment branch — **local or remote** — requires **explicit user confirmation**, and that confirmation is put through the **AskUserQuestion** selection UI, not asked as free-text prose. Where the experiment was worked in a **worktree**, removing the worktree **precedes** deleting the branch — git refuses to delete a branch that is checked out in a worktree — and **one confirmation covers both**: they are a single cleanup act with a forced order, so splitting them would prompt twice for one decision. Suspension never deletes and never removes a worktree; a concluded experiment's branch and worktree are removed only on confirmation.
 - **Record every confirmation.** Any user confirmation the lifecycle requires — the working-location choice at the start, the attended-or-unattended choice at the start, the affirmation declaration, concluding a superseded experiment, merging untested code, suspending the experiment, adding a worktree to an experiment under way, deleting the branch and removing its worktree — is **recorded in the experiment's record**, so the run's authority is auditable.
@@ -73,3 +74,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:42:59 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:11:20 PM PT

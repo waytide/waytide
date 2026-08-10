@@ -1,0 +1,1 @@
+# The STE Spec experiment is renamed STE, and `experiment/ste-spec` becomes `experiment/ste` locally and on the remote — the subject proved to be Waytide's use of ASD-STE100 and the language refinements that follow from it rather than the reading of the document, so the record states a second question with no forecast and leaves the original question exactly as it was committed
