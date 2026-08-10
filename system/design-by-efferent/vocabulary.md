@@ -2,29 +2,35 @@
 
 The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these meanings, in code, tests, rules, designs, commits, and prose. This is the canonical glossary; the deeper docs defer to it.
 
+**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+column of any substitutions table in this file.
+
+- **Approved** in the STE dictionary, and used with its approved meaning.
+- **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
+  in category 19, Computer science, information and communication technology. This is the case for
+  a word this project coined, and for a word the STE dictionary disputes. STE Rule 1.8 requires a
+  technical noun to be approved in the subject field, and this file is that approval.
+- **Approved with a meaning Waytide does not use**, which STE Rule 1.3 forbids.
+
+**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
+package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 ## The one-liner
 
 > The AI **generates** straight through, and **waits** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**; everything else is **mechanical**.
 
 ## Terms
 
-**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
-through 1.13 in category 19, Computer science, information and communication technology. STE
-Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
-approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
-for a word this project coined. See the `language` package's
-waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
-
 | Term | Role | Meaning |
 |---|---|---|
 | **Design By Efferent** / **DBE** | the methodology | The name of the whole approach these rules, this lexicon, and the loop describe. A **design** discipline (tests drive design, not "development"), driven **by the efferent** — the use-site view. A variant *of* TDD (tests are the vehicle); the name foregrounds what makes it distinct: design originated from the efferent reference. |
-| **loop** | the cycle | The DBE cycle — a *distributed* OODA loop (Boyd): the AI **observes** and **acts** (mechanized), the human **orients** and **decides** at the gates. Orientation — design judgment — is the irreplaceable phase, kept with the human. (See "The loop, as a distributed OODA cycle".) |
+| **loop** | the cycle | The DBE cycle — a *distributed* OODA loop (Boyd): the AI **observes** and **acts** (mechanized), the human **orients** and **decides** at the gates. Orientation — design judgment — is the irreplaceable phase, kept with the human. (See "The loop, as a distributed OODA cycle".) **STE: approved with a meaning Waytide does not use.** `LOOP (n)` is *a circular shape made in a flexible material*. STE Rule 1.3 forbids the other meaning. |
 | **cycle** | the unit of the loop | **One traversal of the loop**: a hinge surfaced, decided, and acted on. It is the unit a loop record is written in — one section per cycle, carrying that cycle's hinge, the options put at the gate, and the decision. See "cycle is scoped by what precedes it". |
 | **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. **STE: absent as a noun.** The STE dictionary lists `hinge (v)` and gives TURN for it. Waytide does not use the verb. |
 | **attended** / **unattended** | the human's participation | Whether the loop **stops** at each hinge for the developer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's start and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
 | **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. The loop *waits* at a gate; `gate` is a noun and never a verb. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
-| **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. |
+| **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. **STE: approved with a meaning Waytide does not use.** `MECHANICAL (adj)` is *related to or operated with a mechanism*. STE Rule 1.3 forbids the other meaning. |
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
 | **cradle** | the constraint | The efferent test, held during generation — it holds the implementation in position without gripping it rigid, steering toward solubility. |
 | **efferent** | the perspective | The use-site view; designing a unit from the outside in (see the `language` vocabulary — the efferent term). DBE is the method built on designing from this view: the test is the first efferent reference, the interface designed from the efferent side. |
@@ -156,3 +162,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT

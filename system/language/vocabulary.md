@@ -2,16 +2,22 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
+**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+column of any substitutions table in this file.
+
+- **Approved** in the STE dictionary, and used with its approved meaning.
+- **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
+  in category 19, Computer science, information and communication technology. This is the case for
+  a word this project coined, and for a word the STE dictionary disputes. STE Rule 1.8 requires a
+  technical noun to be approved in the subject field, and this file is that approval.
+- **Approved with a meaning Waytide does not use**, which STE Rule 1.3 forbids.
+
+**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
+package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 The *principles* that govern word choice stay as rules — `name-literally-not-by-analogy`, `no-slang`, `communicate-plainly-name-the-thing`, `language-is-precise-here`. This file holds the settled lexicon those principles produce.
 
 ## Terms
-
-**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
-through 1.13 in category 19, Computer science, information and communication technology. STE
-Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
-approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
-for a word this project coined. See the `language` package's
-waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 - **solubility** — how readily a unit dissolves into use, judged from the use site; the design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule; it is glossed here only as the vocabulary reference.
 - **efferent** — the use-site perspective: designing a unit from the outside in, from the standpoint of what uses it — the view that conducts outward from the unit toward its use. A general design-vocabulary term; `design-by-efferent` is the method built on designing from this view, and specializes the term in its own vocabulary.
@@ -79,3 +85,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
