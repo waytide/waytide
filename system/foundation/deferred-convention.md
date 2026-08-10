@@ -11,6 +11,15 @@
   - **Rank is not the wait.** `**Waits for:**` says what must finish before an item is *actionable*; priority says what to work *next* among those that are. An item that is waiting may still be ranked, and a rank does not clear a wait.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 - **Resolution:** when the task the item waits for is done, act on the item, then **delete the file** — the change itself is put into code or rules, and an `waytide/local/log/` entry records that it was carried out. Deferred items are a queue, not a permanent record.
+- **An item's own content is point-in-time and is not maintained.** What an item says was true when
+  it was written. It names the work that was in flight, the rules as they stood, and the artifacts
+  that existed. **A reference inside an item that time has overtaken is not a defect and is not
+  chased.** An item that waits for an experiment does not stop being correct when that experiment is
+  superseded, because it records what it was waiting for. This is the same standing every other
+  Waytide record has. What makes an item a queue entry rather than a permanent record is that it is
+  **deleted when it is resolved**, not that its content is kept current.
+- **The reconciliation below is about artifacts pointing at an item, never about an item's own
+  content.** The two are different directions and only one is chased.
 - **Before deleting, reconcile what points at the item.** Search for the item's name and correct the **live, forward-looking** artifacts that cite it — another deferred item, an observation, a plan, a design — since those are read as current. Write the correction as the name, `(deleted)`, and what the item decided: *the pending-release republish item (deleted) — carried out 2026-07-20: all seven component repositories were republished from the package layout*. Both parts are needed: without the mark the name reads as a live pointer, and without the decision the mark leaves a name that cannot be looked up. Where the item was **discarded** rather than carried out, say so and point at its log entry, which is the only durable trace.
 - **Leave historical records alone**, unless one discloses what should not have been disclosed — the one exception, in the disclosure-is-the-one-reason-to-edit-a-historical-record rule. A work session record, an experiment record, or a log entry states what was true when it was written, and its date is on its face. Do not correct one, and do not annotate one either — an annotation is a live pointer added to a dead record, and it has to be maintained like any other. The one broken reference this convention has produced was an annotation of exactly that kind. A reader who follows a dead path in an old record uses git.
 - **The search happens at deletion; there is no standing check.** A `[[link]]` to a nonexistent file is findable mechanically, but most references are prose or file paths and are not. Searching for the name at the moment of deletion is targeted, raises no false matches on prose that merely shows what a link looks like, and is done by the person who knows what the item became.
@@ -19,7 +28,7 @@
 
 **Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately; a parked queue keeps it without derailing the task in flight. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
-**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Waits for:**` line and continue the task. When the wait ends, carry it out, search for what cites the item and correct the live artifacts among them, then delete the file and log that it was done. Leave historical records as written. Related: the decision-log rule, the rules-convention (which carries the same reconciliation for a removed rule, and the instruction to reference a rule by name rather than by path), and the observations-convention (whose promotion keeps the record rather than deleting it, so it strands nothing).
+**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Waits for:**` line and continue the task. Leave an item's own content as written — a reference in it that time has overtaken is not a defect. When the wait ends, carry it out, search for what cites the item and correct the live artifacts among them, then delete the file and log that it was done. Leave historical records as written. Related: the decision-log rule, the rules-convention (which carries the same reconciliation for a removed rule, and the instruction to reference a rule by name rather than by path), and the observations-convention (whose promotion keeps the record rather than deleting it, so it strands nothing).
 
 ---
 
@@ -34,3 +43,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 5:35:18 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 7:07:39 PM PT
