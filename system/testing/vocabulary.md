@@ -4,6 +4,13 @@ The testing package's vocabulary: the terms it defines and the word substitution
 
 ## Terms
 
+**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
+through 1.13 in category 19, Computer science, information and communication technology. STE
+Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
+approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
+for a word this project coined. See the `language` package's
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 - **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules.
 - **precondition** — a bare `assert` or `refute` that is **not** a test, written to **document a factor that decides the test's outcome** where the test script does not express it — most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule.
 
@@ -26,3 +33,4 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 Authored by Scott Bellware on Wed Jul 22 2026 at 3 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT

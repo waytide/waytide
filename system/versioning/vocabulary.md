@@ -7,7 +7,14 @@ notes, prose, and dialogue.
 
 ## Terms
 
-- **product generation** — the **leading segment** of a four-segment version
+**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
+through 1.13 in category 19, Computer science, information and communication technology. STE
+Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
+approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
+for a word this project coined. See the `language` package's
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
+- **product generation** *— **STE: absent.** `generation` is absent from the STE dictionary, and `product (n)` is listed with the guidance to be accurate.* — the **leading segment** of a four-segment version
   (`<generation>.<major>.<minor>.<patch>`), and a **different kind of statement** from the three
   that follow it. The semver segments answer *what does a user of this have to do?* — a
   technical compatibility claim, derived from what changed. The generation answers *which
@@ -23,3 +30,4 @@ notes, prose, and dialogue.
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT

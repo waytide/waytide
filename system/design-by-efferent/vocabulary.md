@@ -8,12 +8,19 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 
 ## Terms
 
+**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
+through 1.13 in category 19, Computer science, information and communication technology. STE
+Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
+approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
+for a word this project coined. See the `language` package's
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 | Term | Role | Meaning |
 |---|---|---|
 | **Design By Efferent** / **DBE** | the methodology | The name of the whole approach these rules, this lexicon, and the loop describe. A **design** discipline (tests drive design, not "development"), driven **by the efferent** — the use-site view. A variant *of* TDD (tests are the vehicle); the name foregrounds what makes it distinct: design originated from the efferent reference. |
 | **loop** | the cycle | The DBE cycle — a *distributed* OODA loop (Boyd): the AI **observes** and **acts** (mechanized), the human **orients** and **decides** at the gates. Orientation — design judgment — is the irreplaceable phase, kept with the human. (See "The loop, as a distributed OODA cycle".) |
 | **cycle** | the unit of the loop | **One traversal of the loop**: a hinge surfaced, decided, and acted on. It is the unit a loop record is written in — one section per cycle, carrying that cycle's hinge, the options put at the gate, and the decision. See "cycle is scoped by what precedes it". |
-| **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. |
+| **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. **STE: absent as a noun.** The STE dictionary lists `hinge (v)` and gives TURN for it. Waytide does not use the verb. |
 | **attended** / **unattended** | the human's participation | Whether the loop **stops** at each hinge for the developer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's start and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
 | **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. The loop *waits* at a gate; `gate` is a noun and never a verb. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
@@ -21,7 +28,7 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
 | **cradle** | the constraint | The efferent test, held during generation — it holds the implementation in position without gripping it rigid, steering toward solubility. |
 | **efferent** | the perspective | The use-site view; designing a unit from the outside in (see the `language` vocabulary — the efferent term). DBE is the method built on designing from this view: the test is the first efferent reference, the interface designed from the efferent side. |
-| **actuation** | the act | The invocation of the unit under test — the first efferent reference (see the `language` vocabulary — the actuation term). In DBE it is written before any implementation, forcing the interface outside-in, and is the first and highest-leverage gate. |
+| **actuation** | the act | The invocation of the unit under test — the first efferent reference (see the `language` vocabulary — the actuation term). In DBE it is written before any implementation, forcing the interface outside-in, and is the first and highest-leverage gate. **STE: not approved. The STE dictionary gives OPERATION.** |
 | **observation** | the act of reading the outcome | What the test observes about the outcome of the actuation. An **assertion** is the mechanism by which an observation is implemented, not the thing itself. |
 | **load-bearing** | second mark of a hinge | Other work rests on the choice, so a wrong one spreads and sticks: cheap to fix now, costly later. |
 | **solubility** | the quality | The general design-quality term (see the `language` package's solubility rule): how readily a unit dissolves into use. In DBE it is the target of generation and a known hinge — what the efferent view discovers. |
@@ -97,6 +104,17 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 
 **Implicit guidance = mechanical.** Boyd's loop has a fast path — *implicit guidance and control* — where action flows straight from orientation, bypassing explicit Decide. That is exactly **mechanical** generation: once orientation is settled (the cradle set, solubility clear), the AI generates straight through. The **gate** — an explicit Decide — fires only at a **hinge**.
 
+**The four phase names are reserved, as nouns and as verbs.** `Observe`, `Orient`, `Decide`, and
+`Act` are John Boyd's words, quoted rather than coined. Waytide writes the noun in capitals for the
+phase and the verb in lower case for the act — *the AI observes and acts*. **Both forms are
+reserved**, settled 2026-08-09.
+
+**The STE dictionary lists all four as verbs and names a replacement for each** — MONITOR for
+`observe`, POINT for `orient`, SELECT for `decide`, and for `act` the guidance to use an accurate
+verb. None of the four nouns is in the STE dictionary. **Waytide keeps both forms**, because
+replacing the verb would break the quotation and cost the reader Boyd's reference. See the
+`language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 **What does not transfer.** OODA is best known for its *adversarial, tempo* use — cycle faster than an opponent, get "inside" their loop, collapse their orientation. There is no adversary in DBE; speed-as-weapon does not apply, and importing it would mislead. What transfers is the **structure** — the four phases and the primacy of Orient — not the **contest**.
 
 ## Substitutions
@@ -137,3 +155,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT

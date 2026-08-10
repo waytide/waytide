@@ -7,6 +7,13 @@ rules, artifacts, prose, and dialogue.
 
 ## Terms
 
+**These terms are Waytide's technical nouns and technical verbs**, declared under STE Rules 1.5
+through 1.13 in category 19, Computer science, information and communication technology. STE
+Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
+approval. **A term with no STE note is absent from the STE dictionary**, which is the ordinary case
+for a word this project coined. See the `language` package's
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 ### The three ways of saying "not now"
 
 **These are the terms most easily confused, and they are confused because nothing has stated
@@ -83,3 +90,4 @@ write the **Say** term.
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
