@@ -24,6 +24,24 @@ The *principles* that govern word choice stay as rules — `name-literally-not-b
 - **Simplified Technical English Vector (STEve)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in Steve` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. Both spellings, `STEve` and `Steve`, name the same thing. The rules are in `waytide/system/language/ste/`.
 - **actuation** — the invocation of a unit, from its use site; the first efferent reference to it. A general term; `design-by-efferent` specializes it — there the actuation is written before any implementation, and is the first gate. **STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site.**
 
+## Words from the design vocabulary
+
+Words Waytide takes from the established vocabulary of **structural design and software design**,
+because the extant term already says the thing exactly. **Waytide does not define these.** It uses
+them in their own sense, and reserves them where the STE dictionary disputes them.
+
+**This is what the language-is-precise-here rule asks for.** That rule holds that the precise word
+is the one that already means exactly this, and that it is as often an established technical term
+as a plain one. A word here is one of those, kept rather than coined.
+
+- **preserve** — to keep something that already exists, rather than putting it there or serving it.
+  A rule preserves a mindset. Clarity is preserved. **STE: not approved.** The STE dictionary gives
+  PRESERVATION, a technical noun for a maintenance procedure, which does not carry this.
+
+**A term Waytide defines belongs above, not here.** `load-bearing` comes from structural
+engineering and `cradle` from a physical object, and `design-by-efferent` defines both, so both are
+terms. The line is whether Waytide says what the word means.
+
 ## Substitutions
 
 General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
@@ -31,8 +49,8 @@ General, domain-less word substitutions — the literal term in place of a slang
 | Say | Don't say | What it names |
 |---|---|---|
 | **normal path** | "happy path" | the ordinary, non-error course through a method or feature; the raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path" |
-| **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention |
-| **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs |
+| **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention. **STE: not approved.** The STE dictionary gives AGREE, which does not carry it |
+| **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs. **STE: not approved.** The STE dictionary gives MOVE |
 | **increment** | "cut" | a bounded slice of scope delivered as a step |
 | **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
 | **scenario** | "arm" | one variant or case a method or feature handles |
@@ -42,6 +60,7 @@ General, domain-less word substitutions — the literal term in place of a slang
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
 | **name** | "slug" | the descriptive part of a filename |
+| **discontinue** | "retire" | taking a word or a rule out of use. **STE: not approved.** The STE dictionary gives STOP, whose approved meanings are both terminal, and a discontinued word did not end |
 | **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to |
 | **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
 | **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below |
@@ -88,3 +107,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT

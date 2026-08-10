@@ -16,9 +16,17 @@ missing. `git`, `code`, and `code/ruby` have none. Five packages do.
   "sweep". `verified` rather than "green".
 - **Discontinuations** — a word removed from use with nothing in its place. `discriminator` went
   because the concept went, not because another word replaced it.
+- **Words from the design vocabulary** — a word taken from the established vocabulary of structural
+  design and software design, because the extant term already says the thing exactly. `preserve`.
+  **A vocabulary does not define these.** It records that the project uses them in their own sense,
+  and reserves them where the STE dictionary disputes them.
 
 **A substitution and a discontinuation are different acts.** A substitution names two words. A
 discontinuation names one. Do not file one under the other's heading.
+
+**A term and a word from the design vocabulary differ in one test: does the vocabulary say what the
+word means?** `load-bearing` comes from structural engineering, and `design-by-efferent` defines it,
+so it is a term. `preserve` is used in its own sense and is defined nowhere, so it is not.
 
 ## Which vocabulary decides
 
@@ -67,3 +75,4 @@ language-is-precise-here rule (the premise every vocabulary follows from), and t
 ---
 
 Authored by Scott Bellware on Sun Aug 9 2026 at 2:19:00 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
