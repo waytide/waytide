@@ -39,7 +39,7 @@ engineering. STE Rule 1.5 permits a technical noun in a category. STE Rule 1.12 
 a category. STE Rule 1.8 requires the terms to be approved in the company or subject field, which each
 package's `vocabulary.md` already does.
 
-| Term | Part of speech | Package | Dictionary status |
+| Term | Part of speech | Package | In the STE dictionary |
 |---|---|---|---|
 | `efferent` | noun, adjective | language, design-by-efferent | absent |
 | `actuation` | noun | language, design-by-efferent | not approved, replaced by OPERATION |
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 12:27:08 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:37:01 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:57:24 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT

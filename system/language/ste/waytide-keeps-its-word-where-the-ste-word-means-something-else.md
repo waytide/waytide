@@ -54,7 +54,7 @@ a worse word out of deference.
 
 **How to apply:** write to the STE dictionary. Where the STE dictionary names an alternative, use it. Where
 the approved word means something else, keep Waytide's word. Reserve it in the package's
-`vocabulary.md`, with its part of speech and its dictionary status.
+`vocabulary.md`, and record what the STE dictionary says about it.
 
 Related: the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory. The
 `language` package's `vocabulary.md` and its language-is-precise-here rule. The specification at
@@ -65,3 +65,4 @@ Related: the waytide-prose-conforms-to-the-ste-writing-rules rule in this direct
 Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT
