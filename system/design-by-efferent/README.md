@@ -15,18 +15,21 @@ The one-liner:
 - Never ask whether to start test-first — it is the standing default.
 
 **Attended or unattended**
-- The human's level of participation is chosen at a feature's or experiment's start, beside the working location; attended is the default.
+- The human's level of participation is chosen at a feature's or experiment's start, beside the working location; attended is the default. The question is **Who decides?**, and neither it nor an option names a hinge — the engineer has not met one yet.
 - DBE is in effect either way — the cradle, the efferent-first actuation, and the solubility standard all hold. Only the stopping changes.
 - An unattended cycle is recorded with its hinge and the decision's reasoning, and no options or decision line, since neither happened.
 
 **The hinge cycle**
 - Five hinges, each accepted before the next: actuation → observation → controls → implementation → naming.
-- What each hinge displays: the actuation is the anchor at every downstream hinge; the contexts are shown once, at hinge 1.
+- The five are **named once, ahead of the first one**, so the engineer knows what is coming and what the loop does between them.
+- An option **is the artifact** — `assert(retries == 3)`, not `Accept — assert the returned count against 3`. A hinge with one candidate shows it the same way, and never as an accept prompt.
+- The observation reads the **side effect the actuation produces**. A returned value is one such effect, and a case rather than the rule.
+- What each hinge displays: the actuation is the anchor at every downstream hinge; the contexts are shown once, at hinge 1; the **implementation** is on screen before the loop moves on from hinge 4.
 - The actuation gate offers candidate actuations as options, with a mandatory origination escape. A candidate varies what the **use site states** — an omitted argument is one, and a chained construction or a varied receiver is not.
 - Advance one outcome at a time and stop at every gate; never batch-generate test files.
 
 **After the implementation hinge**
-- Always show the just-satisfied test, and the current feature's full test output, without being asked.
+- Always show the implementation, the just-satisfied test, and the current feature's full test output, without being asked. The implementation leads, because the solubility verdict is made on it.
 
 **Design vs. coverage**
 - TDD designs behavior; adding coverage prevents its regression — distinct activities. Never break a working implementation to introduce a test.

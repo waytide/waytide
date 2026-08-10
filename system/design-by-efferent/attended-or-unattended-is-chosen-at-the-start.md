@@ -26,6 +26,29 @@ choices about how the work will be conducted, both are made once, and both hold 
 duration — so they are put at the same gate rather than adding one. The default is attended,
 and the option set says so.
 
+**The question is asked in these words:**
+
+> Who decides?
+
+with these options:
+
+> **Attended** — You decide. The agent automates. (the default)
+>
+> **Unattended** — The agent decides and generates through.
+
+**Neither the question nor an option names a hinge.** The words are fixed for that reason. The
+choice is put at a feature's or an experiment's **start**, and a engineer meeting this system has
+not yet met a hinge, a gate, or the loop — so *the loop waits at each hinge* asks them to hold three
+reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
+of what the choice settles.
+
+**The option says what each party does, in that order.** *You decide. The agent automates.* names
+the engineer's part first, because that part is what the engineer is choosing to keep or to give
+up. The unattended option names only the agent, because under it the engineer has no part.
+
+**The vocabulary is not being avoided, only deferred.** The hinges are named the moment the loop
+reaches the first one, where the engineer sees an actuation rather than a definition.
+
 **The mode is recorded in both records.**
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside
@@ -84,9 +107,10 @@ solubility. And recording the mode honestly is what keeps the loop record worth 
 record that showed options put to a engineer who was not there would be worse than no record,
 because it would be believed.
 
-**How to apply:** at a feature's or an experiment's start, put **attended or unattended**
-to the engineer through the selection UI alongside the working location, with attended as the
-default. Record the choice as a confirmation in the feature or experiment record, and declare
+**How to apply:** at a feature's or an experiment's start, ask **attended or unattended**
+through the selection UI alongside the working location, with attended as the
+default, in the words fixed above — *Who decides?*, with *You decide. The agent automates.* and
+*The agent decides and generates through.* Name no hinge in the question or in an option. Record the choice as a confirmation in the feature or experiment record, and declare
 it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
 as a list before generating, and write it in Steve.** Write each cycle
 as its hinge and the decision with its reasoning, and write no Options or Decision / chat line.
@@ -106,3 +130,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:02:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:04:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
