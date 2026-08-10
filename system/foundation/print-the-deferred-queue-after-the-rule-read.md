@@ -1,6 +1,7 @@
 # Print the deferred queue as a list of rows, immediately after the rules are read
 
-When the rules under `waytide/system/` and `waytide/local/rules/` have been read at the start
+When the rules under `waytide/system/` and `waytide/local/rules/`, and the project's own
+`waytide/local/vocabulary.md`, have been read at the start
 of a session, **print the deferred queue** before waiting for the engineer's first real
 request. It is the last thing the read produces.
 
@@ -104,3 +105,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT

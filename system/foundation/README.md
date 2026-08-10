@@ -13,6 +13,9 @@ this package:
 - **`waytide/system/`** and **`waytide/local/rules/`**. Binding project rules, one per
   file, read and followed every session — the installed system packages in
   `waytide/system/`, the project's own local rules in `waytide/local/rules/`.
+- **`waytide/local/vocabulary.md`**. The project's own vocabulary, read with the rules and
+  binding like them. Its terms and substitutions decide over every package's
+  (`vocabulary-convention`). One file, no datetime prefix, and optional.
 - **`waytide/local/observations/`**. Working hypotheses and rule-candidates still under
   discovery; not yet binding.
 - **`waytide/local/deferred/`**. Design changes postponed until the current task finishes;
@@ -158,7 +161,7 @@ Foundation carries an **`install.sh`**, which also has to activate the system. R
 ./install.sh
 ```
 
-It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/` and `waytide/local/rules/` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
+It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/`, `waytide/local/rules/`, and `waytide/local/vocabulary.md` at the start of every session. That root file is what actually activates the system: `git subtree` can only put files under `waytide/`, never at the project root, so without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending — it never edits your file silently.
 
 It also **renames `waytide/local/work-sessions/` if your project still holds it under its old name**, `waytide/local/sessions/`. This is the one place the installer touches your project's own working state, and it moves the directory only when the old name is present and the new one is absent; where both exist it reports them and changes nothing, leaving the merge to you.
 
