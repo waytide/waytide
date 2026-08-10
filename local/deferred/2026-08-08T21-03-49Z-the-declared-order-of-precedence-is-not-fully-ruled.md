@@ -134,8 +134,11 @@ one vocabulary will find it rather than in a rule that only one of them cites. C
 since that entry is on `master`. Decide where a true discontinuation goes in a vocabulary that has
 only a substitutions table. Write down the
 criterion that decides whether a package has a vocabulary at all. Related: the vocabulary deferred item dated 2026-08-08 (which carries the terms
-this would order), the project-specific-approved-words deferred item (which carries the STE
-provision the top two levels rest on), the `language` package's `language-is-precise-here` rule
+this would order), the project-specific-approved-words deferred item (deleted) — carried out
+2026-08-09: ASD-STE100 permits a project to approve its own technical nouns and technical verbs,
+and each package's `vocabulary.md` now declares Waytide's reserved terms under STE Rules 1.5
+through 1.13, which is what the top two levels rest on — the `language` package's
+`language-is-precise-here` rule
 (the premise the vocabularies follow from), and the rules-convention.
 
 ---
@@ -146,3 +149,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 1:52:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:09:43 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 4:53:01 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 7:15:29 PM PT

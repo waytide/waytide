@@ -94,8 +94,10 @@ verbs with their category. Settle the four open terms first. `gate` breaks STE R
 The OODA phase names reach the mode rule, which names `orientation` and `action` as OODA mode's
 artifacts. Related: the STE
 Spec experiment (which read the specification), the Simplified Technical English experiment (which
-this is gated on), the deferred item recording that the specification permits project words, and
-each package's `vocabulary.md`.
+this is gated on), the project-specific-approved-words deferred item (deleted) — carried out
+2026-08-09: ASD-STE100 permits a project to approve its own technical nouns and technical verbs,
+and each package's `vocabulary.md` now declares Waytide's reserved terms under STE Rules 1.5
+through 1.13 — and each package's `vocabulary.md`.
 
 ---
 Authored by Scott Bellware on Fri Aug 7 2026 at 11:57:46 PM PT
@@ -105,3 +107,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 1:37:01 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:57:24 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 7:15:29 PM PT
