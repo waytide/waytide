@@ -14,11 +14,13 @@ persisted, dated artifact, kept after the feature concludes.
   proceeds, record the **confirmations** the lifecycle required and any change of working
   location.
 - **The state sits on a canonical `**State:**` line**, in the setup block, carrying one of
-  the four state words and nothing else — `- **State:** Suspended`. It is written when the
-  feature is started and updated as the state changes, so the state is legible at a
-  glance and readable mechanically. That line is the **only** authoritative statement of
-  the state; a record with no such line is **in flight**, which is a true reading for a
-  feature still being built. The session-start notice reads this line to report features
+  the four state words and nothing else — `- **State:** Suspended`. **It is added when the
+  record reaches one of those words**, and updated as the state changes after that — not
+  when the feature is started, because none of the four describes a record that has just
+  been created. That line is the **only** authoritative statement of
+  the state. **Absence is the in-flight state**, so a feature still being built carries no
+  line at all — do not add one to say so, and do not invent a word for it. That the state
+  is legible at a glance and readable mechanically is what the line is for. The session-start notice reads this line to report features
   that have not concluded (see the announce-waytide-at-session-start rule).
 - **The four states.** **Completed** — integrated into the upstream branch, the ordinary
   conclusion. **Abandoned** — dropped before completion; the branch is not merged and the
@@ -60,8 +62,9 @@ loop record costs a second file per feature and buys a correct package dependenc
 is the more expensive of the two to get wrong.
 
 **How to apply:** when a feature is started, add a record here stating its intent, its
-state, its branch topology, and the working location chosen at the start; update the
-state line as the state changes; record each confirmation the lifecycle requires; and name
+branch topology, and the working location chosen at the start, and no state line — absence
+is the in-flight state. Add the line when the record reaches one of the four words, update
+it as the state changes after that, record each confirmation the lifecycle requires, and name
 the feature's loop record. Keep the record after the feature concludes. Related: the
 feature-lifecycle rule (the lifecycle), the experiments-convention (the
 capability this mirrors, and where it deliberately differs), the design-by-efferent
@@ -82,3 +85,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 2:01:18 PM PT
