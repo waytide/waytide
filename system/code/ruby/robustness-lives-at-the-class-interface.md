@@ -2,7 +2,7 @@
 
 The robustness principle — **liberal in what it accepts, uniform in what it returns** — is a property of the **class interface**, not the instance interface.
 
-- **The instance interface is strict.** The initializer (`new`) records its inputs as-is: no coercion, no validation, no normalization. It is the mechanical, predictable core. Passing a malformed input to `new` is developer misuse, not something the initializer accounts for.
+- **The instance interface is strict.** The initializer (`new`) records its inputs as-is: no coercion, no validation, no normalization. It is the mechanical, predictable core. Passing a malformed input to `new` is engineer misuse, not something the initializer accounts for.
 - **The class interface is the convenience layer, and robustness lives there.** It accepts liberally, coerces inputs into the strict form the core expects, and normalizes what it returns so callers never branch on type. Construction is lenient where initialization is strict.
 
 **The convenience layer can sit at increasing distance from the strict core.** In order of distance:
@@ -19,3 +19,4 @@ The further out the coercion sits, the more it is pure convenience and the less 
 ---
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 8 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

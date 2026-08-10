@@ -8,8 +8,8 @@ What a version means, and how the next one is chosen. Not how a package is built
   — nothing, nothing but read, or change their code. The leading segment, where a project
   carries one, answers *is this the same product*, which is a **declaration** rather than a
   reading of the change, and is never increased at a release.
-- **The next version is put to the developer, never decided by the agent**
-  (`the-next-version-is-chosen-by-the-developer`). Patch, minor, and major are offered through
+- **The next version is put to the engineer, never decided by the agent**
+  (`the-next-version-is-chosen-by-the-engineer`). Patch, minor, and major are offered through
   the selection interface, each showing the resulting version and the claim it makes. The
   choice is a promise about other people's code, and a published version cannot be taken back.
 
@@ -61,3 +61,4 @@ git subtree pull --prefix waytide/system/versioning https://github.com/waytide/v
 ## License
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

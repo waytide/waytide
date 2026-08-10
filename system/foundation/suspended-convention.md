@@ -2,7 +2,7 @@
 
 `waytide/local/suspended/` holds things the project **stopped doing** and set aside rather than
 deleted: a rule that became ceremony, a procedure nobody runs, a report nobody reads, a step
-that costs more than it protects. Anything the project stopped doing can be suspended, and
+that costs more than it is worth. Anything the project stopped doing can be suspended, and
 anything suspended can be **restored**.
 
 **It is an undo queue, in the sense the Command Pattern means.** Each suspended thing carries
@@ -44,7 +44,7 @@ back:
 
 **This is the recognizable-content form the system already uses.** The experiments-convention
 and features-convention define a canonical `**State:**` line that `session-start.sh` reads
-mechanically, and the deferred queue carries `**Gated on:**` and `**Priority:**` the same way. A
+mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. A
 bold label, a colon, a value, optionally as a list item — one protocol across the system rather
 than a second one for this directory. Frontmatter is allowed and would also serve; it is not
 used here because there is no reason to introduce a second form where the existing one fits.
@@ -82,3 +82,5 @@ Authored by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:26:41 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:28:55 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:33:47 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

@@ -1,0 +1,1 @@
+# [STE] James Hughes pointed out ASD-STE100 Simplified Technical English in the Eventide Slack — the standard entered Waytide there, and the Simplified Technical English experiment was started to test whether Waytide adopts it

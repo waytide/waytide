@@ -5,6 +5,19 @@ enforces. These are the terms every other package and every project uses, becaus
 defines the artifacts the rest of the system writes into. Binding — use these terms and swaps in
 rules, artifacts, prose, and dialogue.
 
+**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+column of any substitutions table in this file.
+
+- **Approved** in the STE dictionary, and used with its approved meaning.
+- **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
+  in category 19, Computer science, information and communication technology. This is the case for
+  a word this project coined, and for a word the STE dictionary disputes. STE Rule 1.8 requires a
+  technical noun to be approved in the subject field, and this file is that approval.
+- **Approved with a meaning Waytide does not use**, which STE Rule 1.3 forbids.
+
+**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
+package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
 ## Terms
 
 ### The three ways of saying "not now"
@@ -17,7 +30,7 @@ it back*.
   finishes. It goes into `waytide/local/deferred/` as a **queue, not a record**: an item is
   worked and then its file is **deleted**, leaving a decision-log entry as the durable trace. A
   deferred item is *waiting its turn* — the project still intends to do it. It carries a
-  `**Gated on:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
+  `**Waits for:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
   rule is the deferred-convention.
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
   rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
@@ -60,6 +73,19 @@ scope** is *not here*.
   `session-start.sh` parses these lines. One form across the system rather than a new one per
   directory. Frontmatter is permitted and would serve equally; it is not used where this form
   already fits.
+- **transfer** — a **technical verb**: to move responsibility for the next act from one party to
+  the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer
+  **transfers responsibility to the agent** once they make the decision. It names the point a
+  collaborative workflow changes hands, which is not the mechanism that carries it — a `gate` is
+  the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives
+  `MOVE (v)`**, which says nothing about who is answerable next. Reserved under STE Rule 1.12 in
+  category 19.
+  - **It is never written as a noun.** STE Rule 1.13 forbids a technical verb used as one, so
+    there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to
+    the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb
+    form, and this one is a verb and takes no noun form.
+- **responsibility** — what transfers: answerability for the next act in the work. **STE: absent**,
+  and reserved as a technical noun under STE Rule 1.5 in category 19.
 
 ## Substitutions
 
@@ -70,11 +96,24 @@ write the **Say** term.
 |---|---|---|
 | **work session record** | "session record" | the record of a stretch of work — see below |
 
+## Discontinuations
+
+A word taken out of use with **nothing in its place**. This is not a substitution — a substitution
+names two words, and each of these names one.
+
+- **handoff** — the point where the work passed between the engineer and the agent. It is
+  discontinued because `transfer` covers it and is a **verb**, so no word-for-word replacement
+  exists: the sentence is rewritten rather than patched. *The naming gate offers the same handoff
+  as the actuation gate* becomes *the naming gate transfers responsibility the same way the
+  actuation gate does*. This is the case STE Rule 9.1 names — use a different sentence
+  construction where a word-for-word replacement is not sufficient — and it is the first one
+  Waytide has recorded.
+
 ### Finer distinctions
 
 - **work session record** — always carrying **work**. Bare *session* is ambiguous: a reader can
   supply a shell session, a therapy session, or a parliamentary one, and the shell reading is
-  the one a developer reaches first. The qualifier says which sense is meant. This holds in the
+  the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
   prompt that offers to write one, in the record's own title (`# Work Session — <name> (<date>)`),
   in the directory name (`waytide/local/work-sessions/`), and in prose about either.
 
@@ -82,3 +121,8 @@ write the **Say** term.
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT

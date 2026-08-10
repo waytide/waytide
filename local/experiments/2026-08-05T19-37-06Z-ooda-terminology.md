@@ -18,7 +18,7 @@ also whether a covering term may be identical to one mode's concrete term.
 - **Base:** `b5d2ad83dd1531ef56ecf808bd998d5b99a97214`, from `master`
 - **Working location:** branch only. Chosen at initiation on 2026-08-05 through the selection
   interface. This working tree switches back to `master` at the conclusion.
-- **Gating cadence:** attended. Chosen at initiation beside the working location. The loop gates
+- **Participation:** attended. Chosen at initiation beside the working location. The loop gates
   at every hinge and the developer deliberates each one.
 - **Loop record:** `waytide/local/loops/2026-08-05T19-37-06Z-ooda-terminology.md`
 - **What it replaces if affirmed:** `the direction artifact` and `the sequencing artifact`,
@@ -178,7 +178,7 @@ and gating it is the failure the method exists to retire.
 
 - **Working location** — branch only, chosen at initiation on 2026-08-05 through the selection
   interface.
-- **Gating cadence** — attended, chosen at initiation beside the working location.
+- **Participation** — attended, chosen at initiation beside the working location.
 - **Verdict** — **Refuted**, declared by the developer on 2026-08-05 through the selection
   interface, with **inconclusive** offered beside it and declined as inaccurate: a clear judgment
   was reached rather than the question being left open.
@@ -190,3 +190,4 @@ and gating it is the failure the method exists to retire.
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 12:37:06 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:28:17 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT

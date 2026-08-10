@@ -34,7 +34,7 @@ version it was built from. `gem push` publishes that file.
 **A published version is permanent.** RubyGems will not accept a second push of a version that
 already exists, and yanking one does not free the number. That is the concrete form of the
 irreversibility the `versioning` package cites as the reason the next version is put to the
-developer rather than decided.
+engineer rather than decided.
 
 **Why:** where a version is recorded, and what commands build and publish it, are facts about
 RubyGems — a project packaged another way records and publishes it differently, and would find
@@ -45,7 +45,7 @@ the ordinary one: the general part is substantial on its own, so separating it c
 **How to apply:** record a gem's version in the gemspec's `s.version` and nowhere else. Choose
 the next version by the `versioning` package's rules, put through the selection interface.
 Build with `gem build <name>.gemspec` and publish with `gem push <name>-<version>.gem`. Related:
-the `versioning` package's version-scheme and the-next-version-is-chosen-by-the-developer rules
+the `versioning` package's version-scheme and the-next-version-is-chosen-by-the-engineer rules
 (what the version means and who chooses it), the `git` subject-first-commit-messages rule (the
 commit that records the change), and the running-the-test-suite rule in this package (the
 suite that is verified before the release commit).
@@ -54,3 +54,4 @@ suite that is verified before the release commit).
 
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:04:18 AM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

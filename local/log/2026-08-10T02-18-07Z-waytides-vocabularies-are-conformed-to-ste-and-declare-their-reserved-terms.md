@@ -1,0 +1,1 @@
+# Waytide's vocabularies are conformed to the STE dictionary and declare their reserved terms under STE Rules 1.5 through 1.13, and the four open terms are settled — `gate` is a noun and never a verb, `verified` and `conform` are reserved, and Boyd's four OODA phase names are reserved as nouns and as verbs — so the conform-the-vocabulary deferred item is carried out and deleted

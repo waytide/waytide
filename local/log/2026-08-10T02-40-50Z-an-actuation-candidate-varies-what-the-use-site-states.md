@@ -1,0 +1,1 @@
+# An actuation candidate varies what the use site states — an omitted argument is a candidate, and a chained construction and a varied receiver are not, the first belonging to the controls hinge and the second asking a question this hinge does not

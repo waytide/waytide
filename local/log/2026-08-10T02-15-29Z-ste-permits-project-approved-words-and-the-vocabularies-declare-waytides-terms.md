@@ -1,0 +1,1 @@
+# ASD-STE100 permits a project to approve its own technical nouns and technical verbs, and each package's vocabulary.md now declares Waytide's reserved terms under STE Rules 1.5 through 1.13 — the deferred item recording the provision is carried out and deleted

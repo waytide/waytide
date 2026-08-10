@@ -30,7 +30,7 @@ registry from `~/.config/waytide/`*, which was the sole item in the queue and ga
 - **Base:** `f19057602d3063cde9b7876cea75928186a87685`, from `master`
 - **Working location:** branch only. Chosen at initiation on 2026-08-04 through the selection
   interface. This working tree switches back to `master` at the conclusion.
-- **Gating cadence:** attended. Chosen at initiation beside the working location.
+- **Participation:** attended. Chosen at initiation beside the working location.
 - **Loop record:** `waytide/local/loops/2026-08-04T16-54-36Z-consuming-project-orchestrator.md`
 - **Design:** `waytide/local/design/2026-08-04T17-27-34Z-the-consuming-project-orchestrator.md`
   — the settled shape, written on 2026-08-04 once the direction stopped moving. It is the
@@ -117,7 +117,7 @@ path can be commented out rather than deleted.
 
 - **2026-08-04 — working location.** Branch only, chosen through the selection interface at
   initiation.
-- **2026-08-04 — gating cadence.** Attended, chosen through the selection interface at
+- **2026-08-04 — the human's level of participation.** Attended, chosen through the selection interface at
   initiation beside the working location.
 - **2026-08-04 — the registry's format, first decision.** JSON, chosen through the selection
   interface against the agent's stated recommendation of YAML.
@@ -195,3 +195,5 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:27:34 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:34:48 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:43:25 AM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:46:32 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT

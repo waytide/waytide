@@ -1,8 +1,8 @@
 # No slang — use literal, non-figurative terms
 
-Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase: the mindset it protects lives in the person, so it reaches conversation, not just the artifact.
+Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase: the mindset it preserves lives in the person, so it reaches conversation, not just the artifact.
 
-Each retired figurative term has a literal replacement, and each is its own rule (one rule per substitute):
+Each discontinued figurative term has a literal replacement, and each is its own rule (one rule per substitute):
 
 - **wrap / wrapper → mediates**
 - **sweep → conform**
@@ -17,3 +17,6 @@ Each retired figurative term has a literal replacement, and each is its own rule
 ---
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 7 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT

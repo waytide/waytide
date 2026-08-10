@@ -25,12 +25,12 @@ when it was written, and retitling it would edit a historical record to suit a l
 
 ## Reconcile the settled direction once the record is written
 
-**This section says *design* throughout for readability, and means the project's direction artifact** — a design under formal mode, an aspiration under intuitive (see the a-project-works-in-a-mode-chosen-at-initiation rule). Nothing in it depends on which.
+**This section says *design* throughout for readability, and means the project's direction artifact** — a design under formal mode, an aspiration under intuitive (see the a-project-works-in-a-mode-chosen-at-the-start rule). Nothing in it depends on which.
 
-**After the record is written, put the design to the developer through the AskUserQuestion selection UI**: does what this work session produced change the design, or has the design fallen behind it? Three genuine options — **update the design**, **the design stands**, or **no design bears on this work session**.
+**After the record is written, put the design to the engineer through the AskUserQuestion selection UI**: does what this work session produced change the design, or has the design fallen behind it? Three genuine options — **update the design**, **the design stands**, or **no design bears on this work session**.
 
-- **Why the prompt fires here.** Writing the record means reading the work session's log entries, rules, and observations — the same material a reconciliation reads — so the reading is already done and the reconciliation costs almost nothing. The work session is closing, so nothing is mid-flight and direction can still change cheaply. And deciding to write a record *is* the developer judging the work substantial, so no threshold has to be invented for when to ask.
-- **Surface the candidates; do not decide.** Name what the work session settled that the design does not reflect, and anything the design asserts that the work session contradicts. **Either side may be the stale one** — a design can be out of date, and a design can be right about a direction the work drifted from. Only the developer can say which, which is why this is a prompt and not an edit.
+- **Why the prompt fires here.** Writing the record means reading the work session's log entries, rules, and observations — the same material a reconciliation reads — so the reading is already done and the reconciliation costs almost nothing. The work session is closing, so nothing is mid-flight and direction can still change cheaply. And deciding to write a record *is* the engineer judging the work substantial, so no threshold has to be invented for when to ask.
+- **Surface the candidates; do not decide.** Name what the work session settled that the design does not reflect, and anything the design asserts that the work session contradicts. **Either side may be the stale one** — a design can be out of date, and a design can be right about a direction the work drifted from. Only the engineer can say which, which is why this is a prompt and not an edit.
 - **A design is reconciled, never regenerated.** A work session record is a projection and says so; a design is a source of truth that a plan points back at as its **Source design**. Read the records against the design and change neither on your own initiative. Regenerating a design from the work downstream of it would invert that relationship and would silently treat the implementation as correct every time.
 - **Nothing to reconcile is a real answer.** Where the project has no design, or the work session produced nothing bearing on one, say so and move on. Do not manufacture a divergence to justify the prompt.
 - **What a projection cannot recover.** A design's **Out of Scope / Deferred** section records decisions *not* to do something, and its settled-but-unbuilt direction describes shape ahead of the code. Neither exists anywhere in the records, which is the second reason the design is read against rather than rebuilt.
@@ -59,3 +59,5 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT

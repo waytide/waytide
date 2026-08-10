@@ -1,0 +1,76 @@
+# Waytide's prose conforms to the STE writing rules
+
+ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, its rules, its
+records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks
+most, and it grows as more are found in use.
+
+**This rule is part of Simplified Technical English Vector, or STEve** — Waytide's implementation
+of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-something-else rule beside
+it, which states what STEve is and the order its two parts decide in.
+
+**A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The
+standard decides second. In both worked phrases below, Waytide's vocabulary caught the word before
+the standard did.
+
+## The writing rules
+
+| The rule | What it requires |
+|---|---|
+| STE Rule 1.3 | Use an approved word only with its approved meaning |
+| STE Rule 3.6 | Use the active voice. In descriptive writing the passive is permitted only where the agent is unknown |
+| STE Rule 4.2 | Do not omit words. Its own words: *Each sentence must have all its parts* |
+| STE Rule 8.1 | Do not use the semicolon. The standard's reason is that a semicolon lets you write very long sentences |
+| STE Rules 5.1 and 6.3 | A procedural sentence takes 20 words. A descriptive sentence takes 25 |
+| STE Rule 6.6 | A descriptive paragraph takes six sentences |
+
+## Two worked phrases
+
+**The agent wrote each of these, and each broke Waytide's vocabulary first.**
+
+### `swept across 20 files`
+
+- **`swept`** — the `language` vocabulary discontinues `sweep` for `conform`. The STE dictionary
+  replaces `sweep (v)` with `SCAN`, which does not carry the meaning either.
+- **`across`** — `ACROSS (prep)` is approved only as *from one side to the other*. STE Rule 1.3
+  restricts a word to its approved meanings. Write `in`.
+- **`was swept`** — the passive with a known agent, against STE Rule 3.6.
+- **the semicolon** in the sentence that held it, against STE Rule 8.1.
+
+Before: `` `gate` is a technical noun; its verb form is `wait`, swept across 20 files. ``
+
+After: `` `gate` is a technical noun. Its verb form is `wait`. Twenty files conform to this. ``
+
+### `Both checks green`
+
+- **`green`** — the `testing` vocabulary substitutes `verified`. The word is also absent from the
+  dictionary.
+- **`Both`** — `both (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
+  `ATTACH THE TWO ENDS`.
+- **No verb** — against STE Rule 4.2.
+
+Before: `Both checks green`
+
+After: `The two checks are verified.` Or, to say what happened rather than name a state:
+`The two checks found no defect.`
+
+**`checks` survives.** `CHECK (n)` is approved, as in `DO A CHECK OF THE …`. Only `check (v)` is
+not approved, and the STE dictionary gives `MAKE SURE` for it.
+
+**Why:** the writing rules are where the standard reaches every sentence, and the STE dictionary is
+where it reaches a word at a time. A writer who reads only the STE dictionary keeps writing long
+passive sentences out of approved words. Each rule is recorded here as it is met in use, beside
+the phrase that met it. That makes a rule findable by the shape of the mistake, not by its
+number.
+
+**How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary,
+then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep
+a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use,
+add it to the table and add the phrase that met it. Related: the
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory, the `language` and
+`testing` vocabularies, and the specification at `waytide/local/reference/`.
+
+---
+
+Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT

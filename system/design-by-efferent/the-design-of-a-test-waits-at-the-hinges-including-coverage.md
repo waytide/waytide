@@ -1,7 +1,7 @@
-# The hinges gate the design of a *test* — they apply to coverage too, with the implementation hinge degenerate
+# The design of a *test* waits at the hinges — they apply to coverage too, with the implementation hinge degenerate
 
-The five hinges (actuation, observation, controls, implementation, naming) gate
-**design decisions**, and *designing a test* is itself a design act — independent of
+The five hinges (actuation, observation, controls, implementation, naming) are where
+**design decisions** wait, and *designing a test* is itself a design act — independent of
 whether behavior is being designed (DBE) or existing behavior is being covered
 (testing). So the hinges are in play when writing coverage, not only when designing.
 
@@ -20,17 +20,19 @@ When adding coverage for behavior that already exists, all five are in play:
 
 **Why:** the hinges are the mechanism for handing each design decision to the human
 at its gate; a coverage test has genuine design decisions — especially its controls
-and observations — so it earns the same gating. What separates coverage from design is
+and observations — so it earns the same wait. What separates coverage from design is
 **not** the absence of hinges: it is that no behavior is being designed and no red
-is driven (see the companion rule — TDD designs, coverage protects; never break an
+is driven (see the companion rule — TDD designs, coverage prevents; never break an
 implementation to introduce a test).
 
 **How to apply:** design a coverage test through the hinges as usual — actuation,
-controls, observation, naming — gating each with the human. Treat the
+controls, observation, naming — with a wait at each for the human. Treat the
 implementation hinge as a confirmation step (run, show verified), sending any
 awkwardness back to the test, not the implementation. Related: the hinge-cycle rule,
-the what-each-hinge-displays rule, and the companion "TDD designs, coverage protects" rule.
+the what-each-hinge-displays rule, and the companion "TDD designs, coverage prevents" rule.
 
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 6 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT

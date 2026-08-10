@@ -2,7 +2,7 @@
 
 An implementation plan (`waytide/local/plans/*.md`) is titled `# <Title> — Implementation Plan`.
 
-**Under intuitive mode the document is an intention**, in `waytide/local/intention/`, titled `# <Title> — Intention`; **under OODA mode it is an action**, in `waytide/local/action/`, titled `# <Title> — Action`. **Its shape is this shape, entirely** — the same elements in the same settled order, the same behavior-stated checkbox tasks, the same **Superseded plans** section naming what it supersedes. The mode changes what the document is called and where it lives, and nothing about how it reads (see the a-project-works-in-a-mode-chosen-at-initiation rule).
+**Under intuitive mode the document is an intention**, in `waytide/local/intention/`, titled `# <Title> — Intention`; **under OODA mode it is an action**, in `waytide/local/action/`, titled `# <Title> — Action`. **Its shape is this shape, entirely** — the same elements in the same settled order, the same behavior-stated checkbox tasks, the same **Superseded plans** section naming what it supersedes. The mode changes what the document is called and where it lives, and nothing about how it reads (see the a-project-works-in-a-mode-chosen-at-the-start rule).
 
 **The elements below are the common ones, not an exclusive set.** A plan carries whatever
 elements of planning the work actually has; these are the ones that recur, and where they
@@ -23,9 +23,9 @@ it is not obliged to hold one that the work does not call for.
 
 **The order is settled; the set is not.** A worker scanning a plan finds Goals before Tasks in every plan that has both, which is what makes the shape learnable. That is not the same as fixing which elements a plan may hold — a plan whose work has an element these do not name should carry it rather than omit it to fit.
 
-**Why:** a plan is scanned by a worker executing it task by task, so a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule protects.
+**Why:** a plan is scanned by a worker executing it task by task, so a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule keeps.
 
-**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear, and state each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Do not restate the commit conventions or the project's stack; the first is the `git` package's and the second does not vary by plan. Write an intention or an action exactly the same way, titled `— Intention` or `— Action`. Related: the foundation plans-convention (what the directory is), the a-project-works-in-a-mode-chosen-at-initiation rule (which of the two directories a project uses), plans-no-code-samples, and the `git` commit rules.
+**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear, and state each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Do not restate the commit conventions or the project's stack; the first is the `git` package's and the second does not vary by plan. Write an intention or an action exactly the same way, titled `— Intention` or `— Action`. Related: the foundation plans-convention (what the directory is), the a-project-works-in-a-mode-chosen-at-the-start rule (which of the two directories a project uses), plans-no-code-samples, and the `git` commit rules.
 
 ---
 
@@ -39,3 +39,5 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
+Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
