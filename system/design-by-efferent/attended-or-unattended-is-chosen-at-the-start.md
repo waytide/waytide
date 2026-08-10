@@ -48,6 +48,31 @@ Under unattended work every hinge has no gate by choice, so marking each one tha
 report a run of failures where there was a declared mode. The mode declaration is what
 distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
+## Unattended presents a plan before it generates
+
+**The developer is out of the loop, so the plan is the only place they see the intended path
+before the work is done.** Attended needs no plan. The loop waits at every hinge, and the sequence
+of those waits is the plan.
+
+**This is the one cheap moment of attention in a big-batch arrangement.** Unattended spends no
+attention until the end, and a wrong turn is found with everything built on top of it. A plan read
+before the work costs one reading and can move the whole path.
+
+**The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet
+list where the steps are independent. This is the `language` package's
+an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
+
+**Write the plan in Steve** — Simplified Technical English Vector, which is the STE dictionary and
+the STE writing rules with Waytide's reserved terms. Short sentences. Active voice. No semicolon.
+One idea in each item. A plan written in the raw standard could not name a `hinge`, an `actuation`,
+a `cradle`, or `solubility`, because the STE dictionary does not approve them. See the `language`
+package's ste rules.
+
+**This is not a plan document.** `foundation`'s plans-convention governs a plan in
+`waytide/local/plans/`, an intention in `waytide/local/intention/`, or an action in
+`waytide/local/action/`, whichever the project's mode names. This plan is presented in the response,
+before the agent generates, and it is not written to a file.
+
 **Why:** the developer's attention is the scarce thing the whole method is arranged around, and
 the arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
 negligible that assumption is wrong, and five waits buy nothing — the ceremony this
@@ -62,7 +87,8 @@ because it would be believed.
 **How to apply:** at a feature's or an experiment's start, put **attended or unattended**
 to the developer through the selection UI alongside the working location, with attended as the
 default. Record the choice as a confirmation in the feature or experiment record, and declare
-it at the top of the loop record. Run the hinges either way. When unattended, write each cycle
+it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
+as a list before generating, and write it in Steve.** Write each cycle
 as its hinge and the decision with its reasoning, and write no Options or Decision / chat line.
 Do not describe unattended work as suspending DBE — what is suspended is the waits. Related:
 the loop-records rule (the record's shape and the "none — no gate" form this is distinct
@@ -77,3 +103,4 @@ Authored by Scott Bellware on Sun Aug 2 2026 at 1:04:45 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:02:16 PM PT
