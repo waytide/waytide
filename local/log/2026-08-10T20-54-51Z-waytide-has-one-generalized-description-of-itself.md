@@ -1,0 +1,1 @@
+# Waytide has one generalized description of itself, serving both the README and the website rather than two written separately — an aspiration recording that direction and nothing more, since which reading of "generalized" is taken, what the description says, and where it lives are all left open
