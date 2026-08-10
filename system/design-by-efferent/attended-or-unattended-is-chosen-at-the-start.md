@@ -50,7 +50,7 @@ distinguishes them, and it is why it goes at the top rather than being inferred 
 
 ## Unattended presents a plan before it generates
 
-**The developer is out of the loop, so the plan is the only place they see the intended path
+**The engineer is out of the loop, so the plan is the only place they see the intended path
 before the work is done.** Attended needs no plan. The loop waits at every hinge, and the sequence
 of those waits is the plan.
 
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:02:16 PM PT
+Changed by Scott Bellware on Sun Aug 9 2026 at 6:04:16 PM PT
