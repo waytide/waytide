@@ -1,0 +1,1 @@
+# The five hinges are named once, ahead of the first one — a brief account of what a hinge is, the five in order, and what the loop does between them — because an engineer deciding the actuation otherwise does not know that four more follow, and it is not repeated at each cycle, and it does not apply under unattended work
