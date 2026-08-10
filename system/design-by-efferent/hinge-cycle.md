@@ -44,7 +44,7 @@ weigh the actuation as though it were the whole of what is being asked, and ever
 account would have answered arrives at a later hinge instead — one at a time, in the middle of
 another decision. Six lines given once removes all of them.
 
-**The handoff mechanism at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In both cases, always offer the origination escape** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in free-text choice *is* that escape — see the present-every-prompt rule.
+**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In both cases, always offer the origination escape** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in free-text choice *is* that escape — see the present-every-prompt rule.
 
 **An option is the artifact, not a label for it.** The option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)` — the line that would be written, shown as it would be written. A gloss may follow it where the difference between two candidates is not visible in the code alone. **A label standing in place of the artifact is not an option**: `Accept — assert the returned count against 3` asks the engineer to approve a description of a thing rather than to read the thing. The engineer is judging a design, and the design is in the characters.
 
@@ -59,3 +59,4 @@ another decision. Six lines given once removes all of them.
 Authored by Scott Bellware on Sun Jun 28 2026 at 8 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT

@@ -28,7 +28,7 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 | **cycle** | the unit of the loop | **One traversal of the loop**: a hinge surfaced, decided, and acted on. It is the unit a loop record is written in — one section per cycle, carrying that cycle's hinge, the options put at the gate, and the decision. See "cycle is scoped by what precedes it". |
 | **hinge** | the object | A decision the design turns on — one that is **subtle** *and* **load-bearing**. Where the human's judgment belongs. **STE: absent as a noun.** The STE dictionary lists `hinge (v)` and gives TURN for it. Waytide does not use the verb. |
 | **attended** / **unattended** | the human's level of participation | Whether the loop **stops** at each hinge for the engineer (attended, the default) or the agent decides each hinge and generates through (unattended). Chosen at a feature's or experiment's start and held for its duration. **DBE is in effect either way** — the cradle, the efferent-first actuation, and the solubility standard hold in both; only the stopping changes. A batch-size trade: attention spent continuously against rework paid at the end. |
-| **gate** | the mechanism | Where the loop stops and hands a hinge to the human. The interrupt/handoff. The loop *waits* at a gate; `gate` is a noun and never a verb. |
+| **gate** | the mechanism | Where the loop stops and responsibility transfers to the human. The interrupt. The loop *waits* at a gate, and `gate` is a noun and never a verb. See `foundation`'s vocabulary for **transfer**, which is a verb and never a noun. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. **STE: approved with a meaning Waytide does not use.** `MECHANICAL (adj)` is *related to or operated with a mechanism*. STE Rule 1.3 forbids the other meaning. |
 | **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
@@ -166,3 +166,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:59:35 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT

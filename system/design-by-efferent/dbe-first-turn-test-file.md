@@ -1,6 +1,6 @@
 # DBE, first turn: the first gate is the actuation and an unnamed assert
 
-Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more, and it stops at the **first gate** — the first handoff to the human.
+Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more, and it stops at the **first gate**, where responsibility first transfers to the human.
 
 What the first gate puts down is small and fixed:
 
@@ -43,3 +43,4 @@ The assertion is made against an **explaining variable** — a named local whose
 ---
 
 Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT

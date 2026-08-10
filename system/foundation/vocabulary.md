@@ -73,6 +73,19 @@ scope** is *not here*.
   `session-start.sh` parses these lines. One form across the system rather than a new one per
   directory. Frontmatter is permitted and would serve equally; it is not used where this form
   already fits.
+- **transfer** — a **technical verb**: to move responsibility for the next act from one party to
+  the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer
+  **transfers responsibility to the agent** once they make the decision. It names the point a
+  collaborative workflow changes hands, which is not the mechanism that carries it — a `gate` is
+  the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives
+  `MOVE (v)`**, which says nothing about who is answerable next. Reserved under STE Rule 1.12 in
+  category 19.
+  - **It is never written as a noun.** STE Rule 1.13 forbids a technical verb used as one, so
+    there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to
+    the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb
+    form, and this one is a verb and takes no noun form.
+- **responsibility** — what transfers: answerability for the next act in the work. **STE: absent**,
+  and reserved as a technical noun under STE Rule 1.5 in category 19.
 
 ## Substitutions
 
@@ -82,6 +95,19 @@ write the **Say** term.
 | Say | Don't say | What it names |
 |---|---|---|
 | **work session record** | "session record" | the record of a stretch of work — see below |
+
+## Discontinuations
+
+A word taken out of use with **nothing in its place**. This is not a substitution — a substitution
+names two words, and each of these names one.
+
+- **handoff** — the point where the work passed between the engineer and the agent. It is
+  discontinued because `transfer` covers it and is a **verb**, so no word-for-word replacement
+  exists: the sentence is rewritten rather than patched. *The naming gate offers the same handoff
+  as the actuation gate* becomes *the naming gate transfers responsibility the same way the
+  actuation gate does*. This is the case STE Rule 9.1 names — use a different sentence
+  construction where a word-for-word replacement is not sufficient — and it is the first one
+  Waytide has recorded.
 
 ### Finer distinctions
 
@@ -99,3 +125,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT
