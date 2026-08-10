@@ -1,0 +1,1 @@
+# `experiment/ste` is deleted, local and on the remote, confirmed through the selection interface after the affirmed experiment merged into `master` — every commit is reachable from `master`, and the experiment record carries the three confirmations the conclusion required
