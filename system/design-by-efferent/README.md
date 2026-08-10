@@ -22,7 +22,7 @@ The one-liner:
 **The hinge cycle**
 - Five hinges, each accepted before the next: actuation → observation → controls → implementation → naming.
 - What each hinge displays: the actuation is the anchor at every downstream hinge; the contexts are shown once, at hinge 1.
-- The actuation gate offers candidate actuations as options, with a mandatory origination escape.
+- The actuation gate offers candidate actuations as options, with a mandatory origination escape. A candidate varies what the **use site states** — an omitted argument is one, and a chained construction or a varied receiver is not.
 - Advance one outcome at a time and stop at every gate; never batch-generate test files.
 
 **After the implementation hinge**
