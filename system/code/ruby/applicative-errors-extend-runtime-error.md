@@ -1,8 +1,6 @@
 # An applicative error extends `RuntimeError` directly
 
-An **applicative error** — an error class the library defines for its own failures, as
-distinct from one the platform raises — extends **`RuntimeError`**, and extends it
-**directly**.
+An **applicative error** — an error class the library defines for its own failures, as distinct from one the platform raises. Extends **`RuntimeError`**, and extends it **directly**.
 
 ```ruby
 # Yes
@@ -40,9 +38,7 @@ for organization rather than for meaning.
 `StandardError` overclaims. Its direct subclasses are the language's failure taxonomy.
 Joining that list says a library's error belongs beside `TypeError` as a category of its
 own, which it does not. `RuntimeError` says the smaller, truer thing — the program ran and
-would not continue. Taking it directly also keeps every applicative error one lookup from
-its meaning: nothing sits between the class and the claim, so a reader is never sent up a
-chain of intermediate classes that exist only to group.
+would not continue. Taking it directly also keeps every applicative error one lookup from its meaning: nothing sits between the class and the claim. A reader is never sent up a chain of intermediate classes that exist only to group.
 
 **How to apply:** define an applicative error as `class Error < RuntimeError`. Do not
 extend `StandardError`, and do not insert a base class between the error and
@@ -60,3 +56,4 @@ Authored by Scott Bellware on Mon Jul 27 2026 at 1:26:45 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

@@ -14,12 +14,8 @@ implementation, the actuation designed from the use site, the generation steered
 **solubility**. Every hinge is still determined. What changes is who decides it. The method is
 untouched. Only the stopping is.
 
-**The choice is batch size.** Attended is **small-batch**: the engineer's attention is spent
-continuously, and a wrong turn is caught at the hinge where it was taken, so rework stays near
-zero. Unattended is **big-batch**: no attention is spent until the end, and a wrong turn is
-found with everything built on top of it, so rework is the price. Which is cheaper depends on
-how load-bearing the work is and how likely the first pass is to be right — a judgment about
-*this* piece of work.
+**The choice is batch size.** Attended is **small-batch**: the engineer's attention is spent continuously. A wrong turn is caught at the hinge where it was taken, so rework stays near zero. Unattended is **big-batch**: no attention is spent until the end, and a wrong turn is
+found with everything built on top of it, so rework is the price. Which is cheaper depends on how load-bearing the work is and how likely the first pass is to be right. A judgment about *this* piece of work.
 
 **It is asked at the start, through the selection UI, beside the working location.** The two are
 choices about how the work will be conducted. Each is made once and holds for its
@@ -36,7 +32,7 @@ with these options:
 >
 > **Unattended** — The agent decides and generates through.
 
-**Neither the question nor an option names a hinge.** The words are fixed for that reason. The choice is put at a feature's or an experiment's **start**, and a engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
+**Neither the question nor an option names a hinge.** The words are fixed for that reason. The choice is put at a feature's or an experiment's **start**. A engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
 of what the choice settles.
 
 **The option says what each party does, in that order.** *You decide. The agent automates.* names
@@ -64,8 +60,7 @@ that resolved it. Under unattended work the last two did not happen. So:
 
 **This is not the same as a hinge with no gate in an attended run.** The loop-records rule has a
 form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**.
-Under unattended work every hinge has no gate by choice, so marking each one that way would
-report a run of failures where there was a declared mode. The mode declaration is what
+Under unattended work every hinge has no gate by choice. Marking each one that way would report a run of failures where there was a declared mode. The mode declaration is what
 distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
 ## Unattended presents a plan before it generates
@@ -93,10 +88,7 @@ package's ste rules.
 `waytide/local/action/`, whichever the project's mode names. This plan is presented in the response,
 before the agent generates, and it is not written to a file.
 
-**Why:** the engineer's attention is the scarce thing the whole method is arranged around, and
-the arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
-negligible that assumption is wrong, and five waits buy nothing — the ceremony this
-method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
+**Why:** the engineer's attention is the scarce thing the whole method is arranged around. The arrangement assumes it is always worth spending at a hinge. For work whose rework cost is negligible that assumption is wrong. Five waits buy nothing. The ceremony this method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
 in the two modes is what stops the choice from being a way out of the method. Unattended work is
 still designed from the efferent side, still cradled by a test written first, and still judged
@@ -107,19 +99,13 @@ because it would be believed.
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended**
 through the selection UI alongside the working location, with attended as the
 default, in the words fixed above — *Who decides?*, with *You decide. The agent automates.* and
-*The agent decides and generates through.* Name no hinge in the question or in an option. Record the choice as a confirmation in the feature or experiment record, and declare
-it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
-as a list before generating, and write it in Steve.** Write each cycle
-as its hinge and the decision with its reasoning, and write no Options or Decision / chat line.
+*The agent decides and generates through.* Name no hinge in the question or in an option. Record the choice as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
+as a list before generating, and write it in Steve.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 Do not describe unattended work as suspending DBE — what is suspended is the waits.
 
 Related:
 
-- the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
-- the dbe-human-in-the-loop rule — why attention is placed at the hinges
-- the hinge-cycle rule — the hinges that run either way
-- the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
-- foundation's feature-lifecycle and experiment-lifecycle rules — the starts where the choice is put
+- the loop-records rule — the record's shape and the "none. No gate" form this is distinct from - the dbe-human-in-the-loop rule. Why attention is placed at the hinges - the hinge-cycle rule. The hinges that run either way - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence - foundation's feature-lifecycle and experiment-lifecycle rules. The starts where the choice is put
 
 ---
 
@@ -134,3 +120,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

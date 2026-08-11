@@ -15,9 +15,9 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 - The known inputs — the helpers, the values, and the setup phase — are **controls**, never factories, fixtures, or "arrange".
 
 **Preconditions**
-- A **precondition** is a bare `assert`/`refute` that is not a test. It **documents a factor that decides the test's outcome** where the script doesn't express it — most often a property of a control, whose value is named rather than described.
+- A **precondition** is a bare `assert`/`refute` that is not a test. It **documents a factor that decides the test's outcome** where the script doesn't express it. Most often a property of a control, whose value is named rather than described.
 - It documents by **asserting**, so the clarification is checked rather than claimed. It qualifies the test rather than preventing a regression, so a failed one makes the result meaningless rather than wrong.
-- Its predicate reads **inline**, with no explaining variable — the stated exception to the assertion-only rule — and it sits immediately before what it qualifies.
+- Its predicate reads **inline**, with no explaining variable. The stated exception to the assertion-only rule — and it sits immediately before what it qualifies.
 
 **What to test**
 - Assert an error's message only when it is the sole way to confirm the correct error was raised.
@@ -53,6 +53,7 @@ git subtree pull --prefix waytide/system/testing https://github.com/waytide/test
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. Source-available and free to use. Not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

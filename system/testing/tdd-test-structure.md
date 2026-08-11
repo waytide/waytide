@@ -1,6 +1,6 @@
 # Test structure: actuate the concern once at the top, assert each outcome in its own nested context
 
-A test file is built in layers: a feature context, a shared arrangement-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
+A test file is built in layers: a feature context, a shared arrangement-and-actuation block at its top. A series of inner contexts that each establish one outcome.
 
 **Outer `context` names the feature.** Everything for the feature lives inside it.
 
@@ -36,7 +36,7 @@ The pattern, abstracted:
 
 **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place and lets each outcome be read, named, and diagnosed on its own. Explaining variables and layered narration keep the test reading as a statement of the concern rather than a mechanical check. This is the structure the DBE first-turn rule grows into in subsequent turns.
 
-**How to apply:** Arrange inputs and actuate the unit under test once at the top of the outer feature context, binding the result to an explaining variable. Narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome, derive an explaining variable, and assert it in a single `test` block — never assert an inline expression.
+**How to apply:** Arrange inputs and actuate the unit under test once at the top of the outer feature context, binding the result to an explaining variable. Narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome, derive an explaining variable. Assert it in a single `test` block — never assert an inline expression.
 
 Related:
 
@@ -50,3 +50,4 @@ Related:
 Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

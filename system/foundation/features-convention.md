@@ -4,16 +4,8 @@
 feature began, where it is being worked, and what became of it. A feature record is a
 persisted, dated artifact, kept after the feature concludes.
 
-- **When to use:** every feature. A feature is a bounded unit of main-line work, built to
-  an **intent** rather than to a question — nothing is being tested, so nothing is
-  forecast and no verdict is reached. That is what separates a feature from an experiment.
-- **Record format:** open with the **Intent** — what is being built and why — then the setup:
-  - a **`**State:**` line**
-  - the **upstream branch** it will merge into — `master` or another topic branch
-  - the **feature branch**
-  - its **base**
-  - the **working location** chosen at the start — branch only, branch and worktree with the
-    worktree's path, or the current branch
+- **When to use:** every feature. A feature is a bounded unit of main-line work, built to an **intent** rather than to a question. Nothing is being tested. Nothing is forecast and no verdict is reached. That is what separates a feature from an experiment.
+- **Record format:** open with the **Intent**. What is being built and why. Then the setup: - a **`**State:**` line** - the **upstream branch** it will merge into. `master` or another topic branch - the **feature branch** - its **base** - the **working location** chosen at the start. Branch only, branch and worktree with the worktree's path, or the current branch
 
   As the work proceeds, record the **confirmations** the lifecycle required and any change of
   working location.
@@ -22,8 +14,7 @@ persisted, dated artifact, kept after the feature concludes.
   record reaches one of those words**, and updated as the state changes after that — not
   when the feature is started, because none of the four describes a record that has just
   been created. That line is the **only** authoritative statement of
-  the state. **Absence is the in-flight state**, so a feature still being built carries no
-  line at all — do not add one to say so, and do not invent a word for it. That the state
+  the state. **Absence is the in-flight state**, so a feature still being built carries no line at all. Do not add one to say so. Do not invent a word for it. That the state
   is legible at a glance and readable mechanically is what the line is for. The session-start notice reads this line to report features
   that have not concluded (see the announce-waytide-at-session-start rule).
 - **The four states.** **Completed** — integrated into the upstream branch, the ordinary
@@ -32,23 +23,14 @@ persisted, dated artifact, kept after the feature concludes.
   counterpart. **Suspended** — paused, not ended. They are derived from what becomes of a
   feature, not borrowed from the experiment's verdict vocabulary: a feature is not proven
   or disproven, so *affirmed*, *refuted*, and *inconclusive* have nothing to say about it.
-- **A feature may be built on the current branch**, which an experiment may not — a feature
-  *is* the main line, so a branch prevents nothing already ordinary, where an
-  experiment is a deviation that must stay reversible. Where the current branch is chosen the
-  record names the branch being built on, and there is no base, no feature branch, and no
-  merge to record. See the feature-lifecycle rule.
+- **A feature may be built on the current branch**, which an experiment may not. A feature *is* the main line. A branch prevents nothing already ordinary, where an experiment is a deviation that must stay reversible. Where the current branch is chosen the record names the branch being built on. There is no base, no feature branch, and no merge to record. See the feature-lifecycle rule.
 - **The working location is a short history, not a single fact.** It is written at
-  the start. It changes only by a worktree being added for a feature already under way. That
-  happens for one of two reasons: other work arrived that the user intends to work alongside it,
-  or the feature was **escalated** — judged to need more isolation than the single working tree
-  gives it. The record then **gains a line**. The original is not rewritten.
+  the start. It changes only by a worktree being added for a feature already under way. That happens for one of two reasons: other work arrived that the user intends to work alongside it, or the feature was **escalated**. Judged to need more isolation than the single working tree gives it. The record then **gains a line**. The original is not rewritten.
 - **The human's level of participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way. What the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
 - **It is the feature's lifecycle record, not its design record.** The same feature's design. Each cycle's hinge, the options put to the engineer, and the decision — belongs in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
   The two divide by concern and **each names the other**. They are separate files because
   `waytide/local/loops/` is contributed by `design-by-efferent`, which includes `foundation`
-  rather than the reverse. A foundation rule requiring fields in that directory would
-  invert the package graph, and would make the feature lifecycle unavailable to a project
-  that installs `foundation` alone.
+  rather than the reverse. A foundation rule requiring fields in that directory would invert the package graph. Would make the feature lifecycle unavailable to a project that installs `foundation` alone.
 - **Format:** the same frontmatter-free markdown as rules — a `# Feature — <name>` title,
   then prose. The filename follows the ISO-8601-UTC prefix convention (see the
   file-names rule).
@@ -57,24 +39,17 @@ persisted, dated artifact, kept after the feature concludes.
   rule.
 
 **Why:** a feature currently starts and stops without a declared state, which makes it
-impossible to say what is in flight and what concluded. Recording the lifecycle in one
-file per feature makes each legible, and keeping the record after the feature concludes
-preserves how it was built rather than only what it produced. Keeping it separate from the
+impossible to say what is in flight and what concluded. Recording the lifecycle in one file per feature makes each legible. Keeping the record after the feature concludes preserves how it was built rather than only what it produced. Keeping it separate from the
 loop record costs a second file per feature and buys a correct package dependency, which
 is the more expensive of the two to get wrong.
 
-**How to apply:** when a feature is started, add a record here stating its intent, its
-branch topology, and the working location chosen at the start, and no state line — absence
-is the in-flight state. Add the line when the record reaches one of the four words, update
+**How to apply:** when a feature is started, add a record here stating its intent, its branch topology. The working location chosen at the start. No state line — absence is the in-flight state. Add the line when the record reaches one of the four words, update
 it as the state changes after that, record each confirmation the lifecycle requires, and name
 the feature's loop record. Keep the record after the feature concludes.
 
 Related:
 
-- the feature-lifecycle rule — the lifecycle
-- the experiments-convention — the capability this mirrors, and where it deliberately differs
-- the design-by-efferent loop-records rule — the design record for the same feature
-- the decision-log rule
+- the feature-lifecycle rule — the lifecycle - the experiments-convention. The capability this mirrors. Where it deliberately differs - the design-by-efferent loop-records rule. The design record for the same feature - the decision-log rule
 
 ---
 
@@ -96,3 +71,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

@@ -3,7 +3,7 @@
 Prescriptive Ruby style.
 
 **Construction and robustness**
-- Robustness lives at the **class interface**, not the instance: the initializer (`new`) is strict and records inputs as-is. The class interface is the forgiving perimeter (coercion, liberal acceptance, uniform returns), and it can sit at increasing distance from the core — a `build` constructor, or a coercion function on an outer module.
+- Robustness lives at the **class interface**, not the instance: the initializer (`new`) is strict and records inputs as-is. The class interface is the forgiving perimeter (coercion, liberal acceptance, uniform returns). It can sit at increasing distance from the core. A `build` constructor, or a coercion function on an outer module.
 - `build` is the normalizing constructor. `new` is the strict initializer. A supertype acting as a factory of its subtypes may call a subtype's `new` directly once it holds strict-form input.
 
 **Naming and signatures**
@@ -21,7 +21,7 @@ Prescriptive Ruby style.
 **Running the test suite**
 - The suite entry point is `test/automated.rb`, run as `ruby test/automated.rb`. Verified output reads `0 failed, 0 aborted`.
 - The `test-tree` command's durable script lives at `test/automated/tree.rb`, excluded from the default run, parsing the run's output rather than the source.
-- This is where the Ruby and TestBench specifics of running a suite live, so `git` and `testing` can state their conventions without naming a stack.
+- This is where the Ruby and TestBench specifics of running a suite live. `git` and `testing` can state their conventions without naming a stack.
 
 **Releasing a gem**
 - The version lives in the gemspec's `s.version` and nowhere else. The gem is built with `gem build` and published with `gem push`.
@@ -56,4 +56,4 @@ git subtree pull --prefix waytide/system/code/ruby https://github.com/waytide/co
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. Source-available and free to use. Not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.

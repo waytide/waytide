@@ -6,9 +6,7 @@ The rules in this package govern how commits are made and worded:
 
 - **No Claude co-author trailer**. Commits appear as authored by the user
   only. Omit any `Co-Authored-By: Claude …` attribution.
-- **Run the suite before considering a commit**. A passing test suite is a
-  precondition of the commit decision, not a step taken after deciding to
-  commit, so history stays verified at every commit.
+- **Run the suite before considering a commit**. A passing test suite is a precondition of the commit decision, not a step taken after deciding to commit. History stays verified at every commit.
 - **Commit messages state the fact, not the bookkeeping**. Write "Task 9 is
   done", never "mark Task 9 done".
 - **Subject-first commit messages**. The subject of the change leads, in
@@ -48,4 +46,4 @@ git subtree pull --prefix waytide/system/git https://github.com/waytide/git.git 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. Source-available and free to use. Not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.

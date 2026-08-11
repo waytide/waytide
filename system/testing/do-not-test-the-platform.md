@@ -1,7 +1,7 @@
 # Don't test the platform — a transparent pass-through has nothing of ours to pin
 
 Test the library's **own** behavior and decisions, not the language or system it
-sits on. When a unit is a **transparent pass-through** to a platform primitive. It adds no branch, guard, normalization, or policy of its own on that path, just forwards to the primitive — then its behavior on that path **is** the platform's, and a test there tests the platform, not the library.
+sits on. When a unit is a **transparent pass-through** to a platform primitive. It adds no branch, guard, normalization, or policy of its own on that path, just forwards to the primitive. Then its behavior on that path **is** the platform's. A test there tests the platform, not the library.
 
 **The signal.** If you can only state the expected behavior in terms of the underlying primitive's guarantee ("`String#empty?` returns true for an empty string"). The unit contributes nothing of its own on that path, there is nothing of *ours* at risk — so write no test.
 
@@ -38,3 +38,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

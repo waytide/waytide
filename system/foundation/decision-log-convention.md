@@ -10,13 +10,11 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 **Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A one-line-per-decision log, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
 
-**How to apply:** when a decision is made, write a titled one-line entry under `waytide/local/log/` with a UTC filename, and commit it with the change (or with a `Log:` prefix).
+**How to apply:** when a decision is made, write a titled one-line entry under `waytide/local/log/` with a UTC filename. Commit it with the change (or with a `Log:` prefix).
 
 Related:
 
-- the file-names rule — the shared filename convention
-- the rules-convention — a new rule pairs with a log entry
-- the observations and deferred rules — their recording and resolution steps log too
+- the file-names rule — the shared filename convention - the rules-convention. A new rule pairs with a log entry - the observations and deferred rules. Their recording and resolution steps log too
 
 ---
 
@@ -26,3 +24,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

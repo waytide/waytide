@@ -14,8 +14,7 @@ Produce these sections, in order:
 3. **By method style**:
    - instance methods
    - class/module functions (`self.`)
-   - macro/hook methods
-   - any **dual class+instance delegation pairs** — a class method and an instance method of the same name, the instance delegating to the class
+   - macro/hook methods - any **dual class+instance delegation pairs**. A class method and an instance method of the same name, the instance delegating to the class
 
 4. **By API currency (what methods take and return)** — group methods by the kinds of value they trade in (e.g. raw platform objects vs. the library's own domain objects vs. Strings vs. boolean predicates). This is the surface where the library's currency and any migration between currencies shows.
 
@@ -33,3 +32,4 @@ Keep each section tight.
 
 Authored by Scott Bellware on Mon Jun 29 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

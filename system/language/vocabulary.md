@@ -2,8 +2,7 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
-column of any substitutions table in this file.
+**Every word here is one of three things**. This holds for the terms below and for the **Say** column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
 - **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
@@ -20,8 +19,8 @@ The *principles* that govern word choice stay as rules — `name-literally-not-b
 ## Terms
 
 - **solubility** — how readily a unit dissolves into use, judged from the use site. The design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule. It is glossed here only as the vocabulary reference.
-- **efferent** — the use-site perspective: designing a unit from the outside in, from the standpoint of what uses it — the view that conducts outward from the unit toward its use. A general design-vocabulary term. `design-by-efferent` is the method built on designing from this view, and specializes the term in its own vocabulary.
-- **Simplified Technical English Vector (STEve)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in Steve` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The two spellings, `STEve` and `Steve`, name the same thing. The rules are in `waytide/system/language/ste/`.
+- **efferent** — the use-site perspective: designing a unit from the outside in, from the standpoint of what uses it. The view that conducts outward from the unit toward its use. A general design-vocabulary term. `design-by-efferent` is the method built on designing from this view, and specializes the term in its own vocabulary.
+- **Simplified Technical English Vector (STEve)**. Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in Steve` is the instruction to write that way**. It differs from `say it in STE`, which asks for the raw standard. That one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The two spellings, `STEve` and `Steve`, name the same thing. The rules are in `waytide/system/language/ste/`.
 - **actuation** — the invocation of a unit, from its use site. The first efferent reference to it. A general term. `design-by-efferent` specializes it — there the actuation is written before any implementation, and is the first gate. **STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site.**
 
 ## Words from the design vocabulary
@@ -30,9 +29,7 @@ Words Waytide takes from the established vocabulary of **structural design and s
 because the extant term already says the thing exactly. **Waytide does not define these.** It uses
 them in their own sense, and reserves them where the STE dictionary disputes them.
 
-**This is what the language-is-precise-here rule asks for.** That rule holds that the precise word
-is the one that already means exactly this, and that it is as often an established technical term
-as a plain one. A word here is one of those, kept rather than coined.
+**This is what the language-is-precise-here rule asks for.** That rule holds that the precise word is the one that already means exactly this. That it is as often an established technical term as a plain one. A word here is one of those, kept rather than coined.
 
 - **preserve** — to keep something that already exists, rather than putting it there or serving it.
   A rule preserves a mindset. Clarity is preserved. **STE: not approved.** The STE dictionary gives
@@ -44,7 +41,7 @@ terms. The line is whether Waytide says what the word means.
 
 ## Substitutions
 
-General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
+General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one. The unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
 
 | Say | Don't say | What it names |
 |---|---|---|
@@ -93,15 +90,12 @@ General, domain-less word substitutions — the literal term in place of a slang
 - **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters. A switch is binary, instantaneous, and reversible by the same gesture. Activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
 - **A reference to part of an external standard names that standard.** Waytide has rules of its own, so a bare *Rule 1.7* leaves a reader to work out which system it belongs to. The numbering gives them nothing to work it out from. **The same holds for the standard's
   dictionary**, because every `vocabulary.md` in Waytide is an approved-word dictionary for its
-  package, so *the dictionary* names four things at once. Write the standard's name first —
-  **STE Rule 1.7**, **STE Rules 1.5 through 1.13**, **the STE dictionary** — in prose, records,
-  commits, and dialogue alike. This is a rule about ambiguity rather than about a figure of
-  speech: neither word is wrong, and the reference is still incomplete without the name. A Waytide
+  package, so *the dictionary* names four things at once. Write the standard's name first — **STE Rule 1.7**, **STE Rules 1.5 through 1.13**, **the STE dictionary**. In prose, records, commits, and dialogue alike. This is a rule about ambiguity rather than about a figure of speech: neither word is wrong. The reference is still incomplete without the name. A Waytide
   rule needs no such prefix, being referred to by its name.
 
-- **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master" — say **what changed**, **what was affected**, or **took effect**.
+- **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master". Say **what changed**, **what was affected**, or **took effect**.
 
-**Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.
+**Applying it:** when the impulse is a **Don't say** word. In names, prose, comments, commit messages, logs, loop records. Dialogue — write the **Say** term. When a new substitution is settled, add a row here.
 
 ---
 
@@ -125,3 +119,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 7:25:35 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:50:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

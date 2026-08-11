@@ -16,19 +16,15 @@ Three principles generate the table.
 
 **The contexts are shown once, where they are decided, and elided after.** The actuation hinge is where the outcome's **structural placement** is established — which class/feature contexts it nests under, mirroring the test's folder path. Seeing the nesting at hinge 1 lets the human judge *where* the outcome lives before anything else is built. Once settled there, the contexts are fixed, and repeating them at the observation and controls hinges buries each hinge's actual concern in noise. The full nesting returns when the turn-one test file is assembled and shown after the three test hinges.
 
-**The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived and withholds the thing the judgment is made on — so the engineer would be asked for a solubility verdict on an artifact they have not seen. The test and the feature's output are shown with it (see the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules), and the implementation leads, because it is what the hinge is about.
+**The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived and withholds the thing the judgment is made on. So the engineer would be asked for a solubility verdict on an artifact they have not seen. The test and the feature's output are shown with it (see the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules), and the implementation leads, because it is what the hinge is about.
 
 **Why:** each hinge is a distinct deliberation, and what is on screen decides what can be deliberated. Too little and the human is asked to judge something in isolation that has no meaning in isolation. The load-bearing linkage (do *these* controls, fed into *this* actuation, produce a result *this* observation reads, and does the whole thing exercise the outcome?) then has to be reconstructed mentally. Too much and the hinge's own concern is buried in material already settled. The anchor principle fixes the first failure. The show-once principle fixes the second.
 
-**How to apply:** render each hinge per the table. At hinge 1, the actuation within its full `context` nesting. At hinge 2, the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block. At hinge 3, the control declarations, then the actuation, then the observation — the complete test body with the `context` blocks omitted. At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output, and do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
+**How to apply:** render each hinge per the table. At hinge 1, the actuation within its full `context` nesting. At hinge 2, the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block. At hinge 3, the control declarations, then the actuation, then the observation. The complete test body with the `context` blocks omitted. At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output. Do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
 
 Related:
 
-- the hinge-cycle rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
-- the first-turn rule — the three test hinges produce turn one
-- the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules — what accompanies the implementation at hinge 4
-- the folder-mirroring rule
-- the test-block-is-assertion-only rule
+- the hinge-cycle rule — the sequence, the acceptance mechanism. The requirement that an option be the artifact rather than a label - the first-turn rule. The three test hinges produce turn one - the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules. What accompanies the implementation at hinge 4 - the folder-mirroring rule - the test-block-is-assertion-only rule
 
 ---
 
@@ -38,3 +34,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

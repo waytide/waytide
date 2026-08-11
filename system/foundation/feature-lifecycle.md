@@ -1,19 +1,13 @@
 # A feature's working location is chosen at the start, and it ends completed, abandoned, superseded, or suspended
 
-A feature is a bounded unit of main-line work with a lifecycle: it is worked in a location
-chosen when it begins, is designed through the five hinges, and reaches one of four declared
-states. The feature record tracks that lifecycle. A feature is built to an **intent**, not
-a question — nothing is being tested — which is what separates it from an experiment and
-what accounts for every place this rule departs from the experiment's.
+A feature is a bounded unit of main-line work with a lifecycle: it is worked in a location chosen when it begins, is designed through the five hinges. Reaches one of four declared states. The feature record tracks that lifecycle. A feature is built to an **intent**, not a question. Nothing is being tested — which is what separates it from an experiment and what accounts for every place this rule departs from the experiment's.
 
 - **A branch is usual but not required.** Where a feature takes a branch it is named
   `feature/<subject>`, where `<subject>` is a short dash-separated, lower-case name of *what
   is being built*, named literally. The upstream branch is not encoded in the name. It lives
   in the record. **A feature may also be built directly on the current branch** — see the
   working location below.
-- **Record the base and the upstream branch.** The baseline the feature branched from is
-  captured in the record — the base commit SHA and the ref it came from — never pinned with
-  a tag. The upstream branch it merges back into is **not always `master`**. It may be
+- **Record the base and the upstream branch.** The baseline the feature branched from is captured in the record. The base commit SHA and the ref it came from — never pinned with a tag. The upstream branch it merges back into is **not always `master`**. It may be
   another topic branch, and the record names it so the merge target is never ambiguous.
 - **The working location is chosen at the start — branch only, branch and worktree, or the
   current branch.** Each option states what it creates, rather than leaving it to be
@@ -32,7 +26,7 @@ what accounts for every place this rule departs from the experiment's.
   put to the user at **every** start, through the **AskUserQuestion** selection UI,
   with no standing default. The choice, and for a worktree its
   **path**, go in the record. The conclusion executes the mechanics that match it.
-  **The current branch is offered last, after the two branching options.** A selection's first option reads as the recommended one whatever the rule says about defaults, and the current branch is the option that gives up isolation. So putting it first would recommend by position what the rule declines to recommend in words. Last is where it belongs: available
+  **The current branch is offered last, after the two branching options.** A selection's first option reads as the recommended one whatever the rule says about defaults. The current branch is the option that gives up isolation. So putting it first would recommend by position what the rule declines to recommend in words. Last is where it belongs: available
   without being urged.
 - **The current-branch option is a feature's alone. An experiment never has it.** An
   experiment is a **controlled deviation from the main line** — it may be refuted or
@@ -48,9 +42,7 @@ what accounts for every place this rule departs from the experiment's.
   lifecycle is unchanged — only its containment is. Choose it where a branch would buy nothing:
   work small enough to finish in one sitting, or work whose intermediate states are harmless
   on the upstream branch.
-- **A worktree is a sibling of the repository directory, named
-  `<repository-name>-feature-<subject>`** — the branch name with its slash written as a
-  dash, prefixed by the repository. For a repository at `…/projects/eventide/constant`
+- **A worktree is a sibling of the repository directory, named `<repository-name>-feature-<subject>`**. The branch name with its slash written as a dash, prefixed by the repository. For a repository at `…/projects/eventide/constant`
   and the branch `feature/upload-retries`, that is
   `…/projects/eventide/constant-feature-upload-retries`. The kind comes before the
   subject, so every feature sorts together under `<repository>-feature-` rather than
@@ -64,9 +56,7 @@ what accounts for every place this rule departs from the experiment's.
   external:** other work arrives that the user intends to work alongside the feature. **One
   is internal — the feature is *escalated*:** it turns out to need more isolation than the
   single working tree gives it, having been begun ad hoc and proved larger than it was
-  taken for. Either way the addition is confirmed and recorded, the record **gains a line**
-  rather than having its original rewritten, and the conclusion dispatches on the current
-  location.
+  taken for. Either way the addition is confirmed and recorded, the record **gains a line** rather than having its original rewritten. The conclusion dispatches on the current location.
 - **DBE governs the inside, attended or unattended.** The five hinges — actuation,
   observation, controls, implementation, naming — govern how the feature is designed, and the
   loop record captures each cycle. What is chosen at the start is **the human's level of participation**:
@@ -98,65 +88,36 @@ what accounts for every place this rule departs from the experiment's.
   record is marked suspended. With **branch only** the tree switches back to
   the upstream branch and the branch sits dormant. Under a **worktree** the worktree is kept
   in place and checked out, so the feature resumes where it stands.
-- **Conclude in the main working tree, on the upstream branch.** However a feature
-  concludes, the user should end up on the upstream branch — with branch only
-  by switching back, and under a worktree in the main working tree, which never left it. On
+- **Conclude in the main working tree, on the upstream branch.** However a feature concludes, the user should end up on the upstream branch. With branch only by switching back. Under a worktree in the main working tree, which never left it. On
   the **current branch** there is nowhere to return from: the working tree never left, and
   the conclusion is the state being recorded.
-- **On the current branch there is no merge and no branch to delete.** The work is already on
-  the upstream branch as it is made, so **completed** means the intent is built rather than
-  integrated, and **abandoned** means the work is reverted rather than a branch left unmerged.
-  That is the substantive cost of the option and the reason it is chosen deliberately: an
-  abandoned feature on a branch is discarded by deleting the branch, and on the current branch
-  it has to be undone.
+- **On the current branch there is no merge and no branch to delete.** The work is already on the upstream branch as it is made. **Completed** means the intent is built rather than integrated. **Abandoned** means the work is reverted rather than a branch left unmerged.
+  That is the substantive cost of the option and the reason it is chosen deliberately: an abandoned feature on a branch is discarded by deleting the branch. On the current branch it has to be undone.
 - **Branch deletion is user-confirmed, and the worktree is removed first.** Deleting the
   feature branch, local or remote, requires explicit user confirmation put through the
-  selection UI. Where the feature was worked in a worktree, removing the worktree precedes
-  deleting the branch — git refuses to delete a branch checked out in a worktree — and
-  **one confirmation covers the two**. Suspension never deletes.
-- **Record every confirmation** the lifecycle requires in the feature record, so the work's
-  authority is auditable:
-  - the working-location choice at the start
-  - the attended-or-unattended choice at the start
-  - adding a worktree to a feature under way
-  - branch deletion and worktree removal
-- **There is no instruction to watch for other work.** The experiment rule asks the agent
-  to watch for main-sequence work starting while an experiment is open. That has no
-  counterpart here: during a feature, other work is normally **another feature**, and
-  starting one is ordinary rather than a problem, so there is nothing to detect. A feature
+  selection UI. Where the feature was worked in a worktree, removing the worktree precedes deleting the branch. Git refuses to delete a branch checked out in a worktree — and **one confirmation covers the two**. Suspension never deletes.
+- **Record every confirmation** the lifecycle requires in the feature record. The work's authority is auditable: - the working-location choice at the start - the attended-or-unattended choice at the start - adding a worktree to a feature under way - branch deletion and worktree removal - **There is no instruction to watch for other work.** The experiment rule asks the agent
+  to watch for main-sequence work starting while an experiment is open. That has no counterpart here: during a feature, other work is normally **another feature**. Starting one is ordinary rather than a problem, so there is nothing to detect. A feature
   being *forgotten* is still a real risk, and the **session-start notice** covers it by
   reporting features that have not concluded.
 
-**Why:** a feature that starts and stops without a declared state leaves the project unable
-to say what is in flight and what concluded — the same gap the experiment lifecycle closed,
-in the far more common case. Mirroring the experiment's structure gives feature work a
+**Why:** a feature that starts and stops without a declared state leaves the project unable to say what is in flight and what concluded. The same gap the experiment lifecycle closed, in the far more common case. Mirroring the experiment's structure gives feature work a
 beginning, a recorded place, and an end without inventing a second vocabulary for the same
-facts. The four departures are what keep it honest: an experiment's forecast, verdict
-states, merge gate, and affirmation all exist to answer a **question**, and a feature does
-not ask one. Copying them would establish ceremony where the justification does not
+facts. The four departures are what keep it honest: an experiment's forecast, verdict states, merge gate. Affirmation all exist to answer a **question**. A feature does not ask one. Copying them would establish ceremony where the justification does not
 reach — the failure the design method exists to discontinue.
 
-**How to apply:** put the working location to the user at every start — branch only,
-branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
+**How to apply:** put the working location to the user at every start. Branch only, branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
 name it `feature/<subject>` and record the upstream branch, the feature branch, and the base.
 On the current branch, record that and the branch it is being built on. Place a worktree as a
 sibling of the repository directory named
 `<repository-name>-feature-<subject>`. Design the feature through the hinges. End it in a
 state: **completed** on integration, **abandoned** if dropped, **superseded** if replaced
 (cross-referencing the two records), or **suspended** if paused. Verify before integrating and
-add no gate at the merge. Fix a post-merge failure from there. On the current branch there is
-no merge, no branch to delete, and nothing to return to — completion is the intent being
-built, and abandonment is a revert. Otherwise leave the user on the upstream branch in the
-main working tree, confirm before deleting any branch — removing the worktree first, under one
-confirmation — and record every confirmation in the feature record.
+add no gate at the merge. Fix a post-merge failure from there. On the current branch there is no merge, no branch to delete. Nothing to return to. Completion is the intent being built, and abandonment is a revert. Otherwise leave the user on the upstream branch in the main working tree, confirm before deleting any branch. Removing the worktree first, under one confirmation — and record every confirmation in the feature record.
 
 Related:
 
-- the features-convention — the record
-- the experiment-lifecycle rule — the capability this mirrors, and where it deliberately differs
-- the announce-waytide-at-session-start rule — which reports features that have not concluded
-- the design-by-efferent hinge-cycle and loop-records rules — which govern the feature's design
-- the `git` run-suite-before-commit rule
+- the features-convention — the record - the experiment-lifecycle rule. The capability this mirrors. Where it deliberately differs - the announce-waytide-at-session-start rule — which reports features that have not concluded - the design-by-efferent hinge-cycle and loop-records rules — which govern the feature's design - the `git` run-suite-before-commit rule
 
 ---
 
@@ -181,3 +142,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

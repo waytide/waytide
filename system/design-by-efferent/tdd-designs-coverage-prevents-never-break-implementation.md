@@ -20,9 +20,7 @@ around, and the no-green-on-arrival stance is a design concern that does not
 apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to
-introduce a test** — e.g. to "see it go red first." That inverts the relationship
-(making correct code fail a ritual), forces unnatural changes to shipped code, and
-muddies the distinction between designing with tests and preventing regression with tests.
+introduce a test** — e.g. to "see it go red first." That inverts the relationship (making correct code fail a ritual), forces unnatural changes to shipped code. Muddies the distinction between designing with tests and preventing regression with tests.
 There is no red to manufacture when covering behavior that already exists.
 
 **Why:** TDD's red→green belongs to design. Force-fitting it onto a
@@ -38,11 +36,7 @@ existence.
 
 Related:
 
-- the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
-- the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
-- the DBE-as-design-tool rule
-- the no-green-on-arrival rule
-- the hinge-cycle rule
+- the companion rule "the design of a test waits at the hinges". They still apply when writing coverage - the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior - the DBE-as-design-tool rule - the no-green-on-arrival rule - the hinge-cycle rule
 
 ---
 
@@ -52,3 +46,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

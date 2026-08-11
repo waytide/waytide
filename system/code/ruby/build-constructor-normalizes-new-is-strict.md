@@ -73,10 +73,7 @@ its subtypes `Success` and `Rejected`. Its own factory code invokes a subtype's
 the input in the strict, normalized form `new` expects.
 
 `build`'s job is the **determination/normalization**: read the response, decide
-the outcome, pull out the fields. Once `Result.build` has made that determination,
-it holds strict values in hand — `Success.new(status, location)` — so routing
-through a subtype `build` would only re-run a determination whose answer is
-already known. The factory goes straight to the initializer.
+the outcome, pull out the fields. Once `Result.build` has made that determination, it holds strict values in hand. `Success.new(status, location)`. So routing through a subtype `build` would only re-run a determination whose answer is already known. The factory goes straight to the initializer.
 
 **The boundary:** this is an **intra-family privilege**, not a general license to
 skip `build`. It applies only to (a) code *within* the family constructing (b) its
@@ -91,9 +88,7 @@ that has already satisfied that strictness is the factory, not a caller in that
 sense. Forcing it back through `build` would run determination logic whose outcome
 is already known.
 
-**How to apply:** inside the family, constructing a family subtype from an input
-already in the strict form the initializer records, use `new` — it is preferable
-to a `build` call whose normalization is a no-op. If any normalization remains, use
+**How to apply:** inside the family, constructing a family subtype from an input already in the strict form the initializer records, use `new`. It is preferable to a `build` call whose normalization is a no-op. If any normalization remains, use
 `build`. Related: the general `build`/`new` distinction above and the
 robustness-lives-at-the-class-interface rule.
 
@@ -105,3 +100,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:53:39 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

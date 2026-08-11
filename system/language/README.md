@@ -1,6 +1,6 @@
 # Waytide — language
 
-How language is used: precisely. A word is not a label applied to a thought after the fact — it is the thought's working surface, so choosing a word chooses a concept. The words are load-bearing, and they are chosen deliberately.
+How language is used: precisely. A word is not a label applied to a thought after the fact. It is the thought's working surface. Choosing a word chooses a concept. The words are load-bearing, and they are chosen deliberately.
 
 **The premise**
 
@@ -12,7 +12,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 - **no-slang**. Use literal, non-figurative terms in prose and in conversation, not only in the code.
 - **communicate-plainly-name-the-thing**. In explanation and conversation, use plain words and the real names of things. No invented labels ("tier 1") or compressed jargon offered as if already shared.
 - **expand-abbreviations-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses). Don't use unexplained shorthand.
-- **an-answer-is-a-list-and-prose-must-justify-itself**. An answer to the engineer is a list, and each item states a fact rather than narrating — no describing a choice, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its items are parallel. Where an expansion would add something, the answer ends by offering one.
+- **an-answer-is-a-list-and-prose-must-justify-itself**. An answer to the engineer is a list. Each item states a fact rather than narrating. No describing a choice, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its items are parallel. Where an expansion would add something, the answer ends by offering one.
 
 **Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
@@ -47,8 +47,9 @@ git subtree pull --prefix waytide/system/language https://github.com/waytide/lan
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. Source-available and free to use. Not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

@@ -5,8 +5,7 @@ introduce: everything else in a version number is semantic versioning, which is 
 elsewhere and is not restated here. Binding — use this term with this meaning in rules, release
 notes, prose, and dialogue.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
-column of any substitutions table in this file.
+**Every word here is one of three things**. This holds for the terms below and for the **Say** column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
 - **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
@@ -38,3 +37,4 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

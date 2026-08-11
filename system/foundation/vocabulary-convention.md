@@ -52,10 +52,7 @@ project settles for itself, in the same shape a package's `vocabulary.md` has. I
 datetime prefix** — it is a structural file rather than a dated decision, exactly as a package's
 `vocabulary.md` is (see the file-names rule).
 
-**It is read at session start**, with `waytide/system/` and `waytide/local/rules/`. That is what
-makes it binding, and it is the reason the file sits where it does rather than in a working
-directory: `session-start.sh` names it in the read instruction, and the `AGENTS.md` bootstrap
-names it too.
+**It is read at session start**, with `waytide/system/` and `waytide/local/rules/`. That is what makes it binding. It is the reason the file sits where it does rather than in a working directory: `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
 
 **It is optional, and its absence is not a defect** — the same standing a package's
 `vocabulary.md` has. Most projects never write one.
@@ -65,9 +62,7 @@ datetime prefix, because it is a dated decision in the project's history. A voca
 and is named for what it is. Putting it inside `rules/` would make the one directory hold two
 kinds of file under two naming conventions, which is what keeping it beside `rules/` avoids.
 
-**What it cost to place it there.** The read instruction previously named `waytide/local/rules/`
-and said *read only that one directory beside the packages*, so a binding file anywhere else under
-`waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached
+**What it cost to place it there.** The read instruction previously named `waytide/local/rules/` and said *read only that one directory beside the packages*. A binding file anywhere else under `waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached
 `session-start.sh`, the announce-waytide-at-session-start rule, the rules-convention, the
 file-names rule, and the bootstrap `install.sh` generates. That cost was taken deliberately, for
 the reason above: the alternative put a glossary in the rules directory and named it like a
@@ -97,17 +92,12 @@ happens to carry. Naming the order once removes that from every future case.
 domain-less term or substitution in `language`. Put a term a **project** settles for itself in
 `waytide/local/vocabulary.md`, with no datetime prefix, and write no such file until the project
 has one to write. Give a package a vocabulary only when its domain
-has specialized words. When a word appears in two vocabularies, the more specific one decides, and
-the entry says whether it narrows the general term or replaces it. Keep substitutions and
+has specialized words. When a word appears in two vocabularies, the more specific one decides. The entry says whether it narrows the general term or replaces it. Keep substitutions and
 discontinuations under separate headings.
 
 Related:
 
-- the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
-- its language-is-precise-here rule — the premise every vocabulary follows from
-- the rules-convention
-- the file-names rule — why the project's file takes no prefix
-- the announce-waytide-at-session-start rule — the read instruction that names it
+- the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule. The level above this one - its language-is-precise-here rule. The premise every vocabulary follows from - the rules-convention - the file-names rule. Why the project's file takes no prefix - the announce-waytide-at-session-start rule. The read instruction that names it
 
 ---
 
@@ -115,3 +105,4 @@ Authored by Scott Bellware on Sun Aug 9 2026 at 2:19:00 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT
