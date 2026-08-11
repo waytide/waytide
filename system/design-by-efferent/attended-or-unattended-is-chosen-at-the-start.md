@@ -16,7 +16,7 @@ implementation, the actuation designed from the use site, the generation steered
 What changes is who decides it. The method is
 untouched. Only the stopping is.
 
-**The choice is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero.
+**The decision is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero.
 
 Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the price.
 
@@ -25,7 +25,7 @@ how load-bearing the work is, and on how likely the first pass is to be right. T
 about *this* piece of work.
 
 **It is asked at the start, through the selection UI, beside the working location.** The two are
-choices about how the work will be conducted. Each is made once and holds for its
+decisions about how the work will be conducted. Each is made once and holds for its
 duration. So they are put at the same gate rather than adding one. The default is attended,
 and the option set says so.
 
@@ -40,9 +40,9 @@ with these options:
 > **Unattended** — The agent decides and generates through.
 
 **Neither the question nor an option names a hinge.** The words are fixed for that reason. The
-choice is put at a feature's or an experiment's **start**. An engineer meeting this system has
+decision is put at a feature's or an experiment's **start**. An engineer meeting this system has
 not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
-of what the choice settles.
+of what the decision settles.
 
 **The option says what each party does, in that order.** *You decide. The agent automates.* names
 the engineer's part first, because that part is what the engineer is choosing to keep or to give
@@ -54,7 +54,7 @@ reaches the first one, where the engineer sees an actuation rather than a defini
 **The mode is recorded in the two records.**
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside
-  the working-location choice. It is a lifecycle fact: what was chosen, when, and by whom.
+  the working-location selection. It is a lifecycle fact: what was chosen, when, and by whom.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
 **An unattended cycle is not written as though an engineer was consulted.** A loop record's
@@ -69,7 +69,7 @@ that resolved it. Under unattended work the last two did not happen. So:
 
 **This is not the same as a hinge with no gate in an attended run.** The loop-records rule has a
 form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**.
-Under unattended work every hinge has no gate by choice. Marking each one
+Under unattended work every hinge has no gate, by decision. Marking each one
 that way would report a run of failures where there was a declared mode. The mode declaration is what
 distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
@@ -102,9 +102,9 @@ arrangement assumes it is always worth spending at a hinge. For work whose rewor
 negligible that assumption is wrong, and five waits buy nothing. That is the ceremony this
 method exists to discontinue, arriving by a different route.
 
-Making the cadence a choice puts the
+Making the cadence a decision puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
-in the two modes is what stops the choice from being a way out of the method. Unattended work is
+in the two modes is what stops the decision from being a way out of the method. Unattended work is
 still designed from the efferent side, still cradled by a test written first, and still judged
 by solubility.
 
@@ -117,7 +117,7 @@ default.
 Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.*
 and *The agent decides and generates through.* Name no hinge in the question or in an option.
 
-Record the choice as a confirmation in the feature or experiment record. Declare
+Record the selection as a confirmation in the feature or experiment record. Declare
 it at the top of the loop record. Run the hinges either way.
 
 **When unattended, present the plan
@@ -131,7 +131,7 @@ Related:
 - the dbe-human-in-the-loop rule — why attention is placed at the hinges
 - the hinge-cycle rule — the hinges that run either way
 - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
-- foundation's feature-lifecycle and experiment-lifecycle rules — the starts where the choice is put
+- foundation's feature-lifecycle and experiment-lifecycle rules — the starts where the decision is put
 
 ---
 
@@ -150,3 +150,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

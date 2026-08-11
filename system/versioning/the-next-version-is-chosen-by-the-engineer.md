@@ -25,7 +25,7 @@ what was documented as supported, or what was incidental against what was promis
 users, and the agent is not in a position to make it.
 
 **It is also irreversible in practice.** A version, once published, is what other projects
-pin against and install. A wrong choice is not corrected by editing it — the published
+pin against and install. A wrong decision is not corrected by editing it — the published
 version stays published, and the correction is another version. That asymmetry is why the
 decision is put at a gate rather than proposed and confirmed.
 
@@ -34,11 +34,11 @@ choosing a claim about compatibility, so the option that says *capability added,
 unaffected* is the one being weighed. `2.2.4.0` on its own does not put the question. The
 resulting version is shown too, since it is what will be written and committed.
 
-**Why:** two facts decide this. The choice is a claim about other people's
+**Why:** two facts decide this. The decision is a claim about other people's
 code, and it cannot be taken back once published. Either alone would argue for putting it
 to a person. Together they settle it.
 
-Offering the candidates rather than asking for a version outright is what keeps the choice about the claim. The engineer weighs three statements
+Offering the candidates rather than asking for a version outright is what keeps the decision about the claim. The engineer weighs three statements
 about compatibility instead of typing a number. That is the same reason a hinge presents
 options rather than a fait accompli.
 
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

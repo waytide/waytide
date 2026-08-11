@@ -37,13 +37,13 @@ Foundation also provides project-wide commands: **status report** (a whole-proje
 summary) and **next deferred item**.
 
 **Every prompt to the engineer goes through the selection interface**
-(`present-every-prompt-through-askuserquestion`) — any choice, decision, or answer, never a prose
+(`present-every-prompt-through-askuserquestion`) — any selection, decision, or answer, never a prose
 question. The harness supplies the free-text escape, so the agent adds none of its own. It does
 add an **`Explain`** option, which is the opposite half of that escape. The escape is how an
 engineer answers outside the options. `Explain` is how they ask what the question means
 before answering.
 
-The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put choices through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
+The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put decisions through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
 
 Beyond the four core directories, foundation defines the **work-artifact** directories for
 planning and running changes:
@@ -219,3 +219,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

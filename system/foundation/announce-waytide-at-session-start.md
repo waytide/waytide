@@ -272,7 +272,7 @@ cannot re-include a file inside an excluded directory, so a negation added under
 `.claude/` rule does nothing. The rule has to become `.claude/*` plus
 `!.claude/settings.json`, which keeps each engineer's personal
 `.claude/settings.local.json` ignored.
-- **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the choice with the engineer.
+- **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the decision with the engineer.
 
 **There is no opt-out.** A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed. An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
 
@@ -357,3 +357,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:21:45 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

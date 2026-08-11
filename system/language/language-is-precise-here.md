@@ -16,7 +16,7 @@ Precision is not a lean toward the plain or toward the technical. It is holding 
 
 A metaphor carries baggage the author never intended and the reader cannot unsee. An overdramatic word distorts judgment — a routine tidying reads as urgent repair. A loose synonym silently merges two concepts that the design depends on keeping apart. By the time the confusion shows up in the work, its origin is a word chosen carelessly some distance back.
 
-**How to apply:** treat a word choice as a design decision, subject to the same deliberation as any other. When two words are available, ask which one *is* the thing rather than which one sounds better. When a word is wrong, change it, and change it everywhere the concept appears. A term that means one thing here and another there is worse than either.
+**How to apply:** treat the selection of a word as a design decision. It takes the same deliberation as any other. When two words are available, ask which one *is* the thing rather than which one sounds better. When a word is wrong, change it, and change it everywhere the concept appears. A term that means one thing here and another there is worse than either.
 
 When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
 
@@ -35,3 +35,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

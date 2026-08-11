@@ -59,7 +59,7 @@ release. It moves only when a new product line has been declared.
 
 Related:
 
-- the the-next-version-is-chosen-by-the-engineer rule — who makes the choice and how it is put
+- the the-next-version-is-chosen-by-the-engineer rule — who makes the decision and how it is put
 - the `git` subject-first-commit-messages rule — the commit that records a version change
 - the `code/ruby` running-the-test-suite rule's package for where a Ruby project records its version
 
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

@@ -21,7 +21,7 @@ below (each has its own repository).
   the one-line decision-log format, the ISO-8601-UTC filename convention, and how
   plans and designs read. Everything includes it.
 - **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a
-  word choice is a design decision. Name concepts literally, drop slang, and one
+  word selection is a design decision. Name concepts literally, drop slang, and one
   rule per substitution.
 - **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method
   (DBE): hinges and gates, the actuation-first cycle, and the method's own

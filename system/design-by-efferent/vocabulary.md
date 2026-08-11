@@ -31,15 +31,15 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 | **gate** | the mechanism | Where the loop stops and responsibility transfers to the human. The interrupt. The loop *waits* at a gate, and `gate` is a noun and never a verb. See `foundation`'s vocabulary for **transfer**, which is a verb and never a noun. |
 | **deliberation** | the human's act | What the human does at a gate: weighs the hinge and decides. *Deliberate* = carefully weighed **and** intentional — the opposite of the AI's averaging. |
 | **mechanical** / **mechanics** | the complement | Everything that isn't a hinge — the AI generates it straight through. **STE: approved with a meaning Waytide does not use.** `MECHANICAL (adj)` is *related to or operated with a mechanism*. STE Rule 1.3 forbids the other meaning. |
-| **subtle** (vs **crude**) | first mark of a hinge | The choice takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
+| **subtle** (vs **crude**) | first mark of a hinge | The decision takes design judgment that isn't written in the code or tests — it lives in the person. Crude = a tool/pattern/answer you can read off the artifacts. (Per Bellware's subtle/crude-knowledge distinction: https://madabout.software/articles/subtle-knowledge-crude-knowledge/) |
 | **cradle** | the constraint | The efferent test, held during generation — it holds the implementation in position without gripping it rigid, steering toward solubility. |
 | **efferent** | the perspective | The use-site view. Designing a unit from the outside in (see the `language` vocabulary — the efferent term). DBE is the method built on designing from this view: the test is the first efferent reference, the interface designed from the efferent side. |
 | **actuation** | the act | The invocation of the unit under test — the first efferent reference (see the `language` vocabulary — the actuation term). In DBE it is written before any implementation, forcing the interface outside-in, and is the first and highest-leverage gate. **STE: not approved. The STE dictionary gives OPERATION.** |
 | **observation** | the act of reading the outcome | What the test observes about the outcome of the actuation. An **assertion** is the mechanism by which an observation is implemented, not the thing itself. |
-| **load-bearing** | second mark of a hinge | Other work rests on the choice, so a wrong one spreads and sticks: cheap to fix now, costly later. |
+| **load-bearing** | second mark of a hinge | Other work rests on the decision, so a wrong one spreads and sticks: cheap to fix now, costly later. |
 | **solubility** | the quality | The general design-quality term (see the `language` package's solubility rule): how readily a unit dissolves into use. In DBE it is the target of generation and a known hinge — what the efferent view discovers. |
 | **mean-bias** | the AI's failure mode | The AI's pull toward the average of the code it has seen — most of which is poorly designed. It acts on the human too: a single AI proposal put up for approval drags the human's judgment down toward that average. |
-| **origination** | the human's contribution | The human producing a choice rather than ratifying one. The above-the-average answer is originated, not selected — which is what the gates exist to provoke. |
+| **origination** | the human's contribution | The human producing a decision rather than ratifying one. The above-the-average answer is originated, not selected — which is what the gates exist to provoke. |
 
 ## The two results the gates rest on
 
@@ -79,19 +79,19 @@ The two marks of a hinge — **subtle** and **load-bearing** — are independent
 
 **The metaphor is literal, not decorative.** In a building, a *load-bearing* wall carries the weight of the structure above it. A *partition* wall just divides a room. You can move a partition wall freely. Move or misplace a load-bearing wall, and everything resting on it shifts or collapses. The later you do it, the more has been built on top, and the more it costs.
 
-**Applied to a decision:** a choice is load-bearing when **other work rests on it** — later code, the tests, and other decisions all assume it. So a wrong load-bearing choice has two properties:
+**Applied to a decision:** a decision is load-bearing when **other work rests on it** — later code, the tests, and other decisions all assume it. So a wrong load-bearing decision has two properties:
 
 - It **spreads** — everything built on it inherits the mistake.
 - It **sticks** — once things rest on it, undoing it means undoing them too.
 
-Together these give the **asymmetry that justifies the gate**. A load-bearing choice is **cheap to fix now**, before anything rests on it, and **costly to fix later**. The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
+Together these give the **asymmetry that justifies the gate**. A load-bearing decision is **cheap to fix now**, before anything rests on it, and **costly to fix later**. The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
 
-**How to recognize it:** ask what happens if this choice is wrong. *How far does the damage spread, and how expensive is it to reverse once we have built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
+**How to recognize it:** ask what happens if this decision is wrong. *How far does the damage spread, and how expensive is it to reverse once we have built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
 
 **Why the two marks are required:**
 
 - Load-bearing **but crude** (the right answer is readable off the code/tests/patterns) → the AI can make it. No gate needed, even though much rests on it.
-- Subtle **but not load-bearing** (takes judgment, but the choice is local and cheaply changed) → not worth stopping the human. A wait there is ceremony.
+- Subtle **but not load-bearing** (takes judgment, but the decision is local and cheaply changed) → not worth stopping the human. A wait there is ceremony.
 - **Subtle *and* load-bearing** → a hinge. Gate it.
 
 **Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations. The implementation all rest on it. So a wrong shape spreads into all of them, and gets costly to change once code depends on it. That is why it is the first and highest-leverage gate. By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
@@ -132,7 +132,7 @@ A word not to write, and the word to write instead. When the impulse is a word i
 | Say | Don't say | What it names |
 |---|---|---|
 | **subtle** | "intrinsic" | the first mark of a hinge — the judgment lives in the person rather than in the artifacts |
-| **load-bearing** | "asymmetric" | the second mark of a hinge — other work rests on the choice |
+| **load-bearing** | "asymmetric" | the second mark of a hinge — other work rests on the decision |
 | **mechanical** | "non-hinge" | everything that is not a hinge, which the AI generates straight through |
 | **cycle** | "pass" | one traversal of the loop — see "Cycle is scoped by what precedes it" |
 | **unattended** | "suspending DBE" | the human's level of participation, where the agent decides each hinge. The method is never suspended. Only the waits are |
@@ -184,3 +184,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

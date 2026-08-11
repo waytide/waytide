@@ -30,7 +30,7 @@ keeping because each is tempting:
 
 **These are narration, and none of them belongs in an answer:**
 
-- **Describing a choice as a choice** — *the judgment is left as a judgment on purpose*, *this was
+- **Describing a decision as a decision** — *the judgment is left as a judgment on purpose*, *this was
   recorded as a new entry rather than by rewriting the old one*, *the option was declined*.
 - **Explaining why something is as it is**, unasked — *so a later reader knows what tightening
   would mean*, *which is what keeps the record honest*, *for the same reason the other rule gives*.
@@ -105,7 +105,7 @@ and unattributed back-references hide. A list forces each claim onto its own lin
 with nothing in it is visible as a line with nothing in it. The engineer this was settled with had stated the preference three times in a week before it was written down. A preference restated is a rule that has not been written, because every restatement is evidence the agent does not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
 makes the difference survive a session boundary.
 
-**How to apply:** answer in a list. State facts in it. Remove any item that describes a choice or explains an unasked-for reason. Remove any item that characterizes the work, or reports what the agent did to be sure.
+**How to apply:** answer in a list. State facts in it. Remove any item that describes a decision or explains an unasked-for reason. Remove any item that characterizes the work, or reports what the agent did to be sure.
 
 Test each survivor by whether it could be false. Number the list where its items depend on each
 other, and leave it unordered where they do not.
@@ -137,3 +137,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

@@ -14,7 +14,7 @@ reasoning does not reach it. See the attended-or-unattended-is-chosen-at-the-sta
 
 **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges, which are the actuation and the solubility verdict. It does not belong on whether to follow the method itself. See the human-in-the-loop and DBE-as-design-tool rules. Re-asking the standing default is ceremony, the same failure DBE discontinues.
 
-**How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task choice if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
+**How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task selection if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
 
 Related:
 
@@ -36,3 +36,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

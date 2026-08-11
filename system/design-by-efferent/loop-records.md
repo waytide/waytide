@@ -28,7 +28,7 @@ displace (the log stays one line per decision).
     how it resolved (record the substance of the chat, not just the outcome).
 - **Under an unattended mode, a cycle carries its hinge and the decision with its reasoning. No Options or Decision / chat line** — neither happened, and writing them would be a false record of a deliberation that never occurred. This is **not** the "none — no gate"
   form above: that marks a **skipped** gate in an attended run, which is a defect worth
-  surfacing, where an unattended run has no gates by choice. The mode declaration is what
+  surfacing, where an unattended run has no gates, by decision. The mode declaration is what
   tells them apart.
 - An **Outcome** line: the resulting code/behavior, suite state, and commit.
 - A **provenance footer** ending the file (`Authored by … / Changed by …`), like
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

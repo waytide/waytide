@@ -36,7 +36,7 @@ announce-waytide-at-session-start rule names about a permanent line.
 **It does not apply under unattended work**, where no hinge is put to the engineer at all. There
 the plan takes its place (see the attended-or-unattended-is-chosen-at-the-start rule).
 
-**It comes after the participation choice, not before it.** That choice names no hinge on purpose,
+**It comes after the participation decision, not before it.** That decision names no hinge on purpose,
 because it is asked at a feature's or an experiment's start and the engineer has met nothing yet.
 This account is where they meet the five, and it sits immediately ahead of the first one.
 
@@ -45,17 +45,17 @@ know that four more follow, what those cover, or what happens in between. Withou
 weigh the actuation as though it were the whole of what is being asked. Every question the
 account would have answered arrives at a later hinge instead. One at a time, in the middle of another decision. Six lines given once removes all of them.
 
-**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the origination escape** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in free-text choice *is* that escape — see the present-every-prompt rule.
+**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the origination escape** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in free-text answer *is* that escape — see the present-every-prompt rule.
 
 **An option is the artifact, not a label for it.** The option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)` — the line that would be written, shown as it would be written. A gloss may follow it where the difference between two candidates is not visible in the code alone. **A label standing in place of the artifact is not an option.** `Accept — assert the returned count against 3` asks the engineer to approve a description of a thing rather than to read the thing. The engineer is judging a design, and the design is in the characters.
 
 **So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form.
 
-**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The escape is what keeps a lone candidate from foreclosing the answer, since the best choice is often one only the human can produce. This generalizes the actuation-gate-options-or-chat rule, which states the same mechanism at the first gate.
+**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The escape is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the actuation-gate-options-or-chat rule, which states the same mechanism at the first gate.
 
 **Why:** Each of the five is a real design hinge with its own failure mode. The implementation is where solubility is judged. An awkward implementation reveals a bad cradle, and the fix then goes to the cradle rather than the code. The naming is where a name that mis-describes what the observation establishes is a design error in its own right. The outcome taxonomy is a design artifact, settled deliberately rather than a label applied after the fact.
 
-Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them — each with a mandatory escape — keeps the human originating at every hinge, where the above-the-mean choice is introduced rather than ratified. The observation and the controls especially had been smuggled in under the actuation's gate.
+Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them — each with a mandatory escape — keeps the human originating at every hinge, where the above-the-mean decision is introduced rather than ratified. The observation and the controls especially had been smuggled in under the actuation's gate.
 
 The controls are a hinge in their own right. A non-discriminating example asserts nothing, and a top-level constant cannot distinguish a full name from a final segment.
 
@@ -91,3 +91,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

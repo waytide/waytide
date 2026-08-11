@@ -95,7 +95,7 @@ stronger:
 what governs but not where their own project keeps things. They reach this rule, or their
 project's mode rule, to resolve it. That self-evidence at every site is real, and it is being traded away deliberately. The judgment is that it is not achievable at scale while remaining maintainable.
 
-## The choice is the agent's to put, and it is put at the start
+## The decision is the agent's to put, and it is put at the start
 
 **Through the selection interface**, per the present-every-prompt-through-askuserquestion rule,
 with **formal as the default**.
@@ -106,7 +106,7 @@ offer to ask and does not wait for a further instruction before asking.
 **Two failures are forbidden here and only one of them is obvious.** Announcing the occasion and stopping leaves the project uninitiated until a second instruction arrives. It also spends a turn on a non-decision. An engineer told that a question could be asked has no answer to give but *yes*.
 
 The subtler one is **announcing and then asking in the same response**. The prompt arrives, so nothing is blocked. The engineer still has to read an explanation of why they are being asked before reaching the question. The prompt states what it needs. A preamble in front of it is the
-agent reasoning where the engineer wanted a choice.
+agent reasoning where the engineer wanted a selection.
 
 This is the same reasoning the `design-by-efferent` never-ask-to-start-test-first rule applies to
 its own settled default: asking whether to ask confirms what is already decided. It is also the shape the announce-waytide-at-session-start rule requires of the response that opens the initialization rule. The tool call and nothing else — for the same reason, that a line of the agent's narration stands where the thing itself should be.
@@ -121,15 +121,15 @@ speech to the engineer as well as in an option's wording. This rule's own headin
 > mode. The mode only sets the process vocabulary for the project, and the names of the
 > directories where planning records are stored.
 
-**The wording is fixed because the engineer meeting this choice cannot yet know what it
-decides.** It is put at a project's start, before any of this system's material has been worked with. So a mode named alone — *formal, intuitive, or OODA* — reads as a choice about how the system will **behave**. It reads as how strict the system is, how much ceremony it imposes, and what it will require.
+**The wording is fixed because the engineer meeting this decision cannot yet know what it
+decides.** It is put at a project's start, before any of this system's material has been worked with. So a mode named alone — *formal, intuitive, or OODA* — reads as a decision about how the system will **behave**. It reads as how strict the system is, how much ceremony it imposes, and what it will require.
 
 Every one of those readings is wrong, and an engineer holding one of them chooses on grounds that
 do not exist. Saying outright that behavior and functioning are unaffected removes the wrong question before it is asked. Naming what the mode **does** settle leaves the engineer weighing the thing actually in front of them. What it settles is the process vocabulary, and the directories planning records are stored in.
 
 **It does not restate the case for the modes**, which is the argument above about a word being a
 thought's working surface. That is what the `Explain` option is for. The question says what the
-choice governs. The explanation says why it is worth making.
+decision governs. The explanation says why it is worth making.
 
 **Each option names its mode's two artifacts and their directories**, and nothing else. The
 engineer is choosing a vocabulary and a pair of locations, so those are what the options carry.
@@ -162,7 +162,7 @@ They are restated here because this is the rule an agent reads at the moment a m
 rule that says only *write the file* is followed exactly as far as it is written.
 
 - **The log entry** states which mode was chosen, in the log's one-line form. The mode rule
-  records that the project is in a mode. The log entry records that the choice was made and when,
+  records that the project is in a mode. The log entry records that the decision was made and when,
   which is the trail every other decision in the project leaves.
 - **The commit** carries the two. An uncommitted mode rule is a mode that exists on one machine. The project's own convention is invisible to everyone who clones it, and to every check that reads it. That is the same failure an uncommitted executable bit produces on a script.
 
@@ -323,7 +323,7 @@ Related:
 - the rules-convention — where a local rule lives and what it looks like
 - the file-names rule — the datetime prefix
 - the `language` package's language-is-precise-here rule and this package's rules-establish-a-mindset rule — why a vocabulary change is a real change
-- the present-every-prompt-through-askuserquestion rule — why the choice is put through the selection interface
+- the present-every-prompt-through-askuserquestion rule — why the decision is put through the selection interface
 
 ---
 
@@ -349,3 +349,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:13:41 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

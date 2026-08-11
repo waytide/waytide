@@ -38,7 +38,7 @@ provenance footer. Two edits an hour apart were indistinguishable. An edit made
 in the same hour as the one before it produced a line identical to its predecessor.
 
 That reads as an error rather than as provenance, so the entry went unwritten instead of being recorded. A format that cannot express its own instances is a
-defect rather than merely a coarse choice. Minutes and seconds remove it at every
+defect rather than merely a coarse decision. Minutes and seconds remove it at every
 scale a person actually works at, for the cost of a few characters.
 
 **How to apply:** when writing a datetime that includes a time of day, write the seconds. That
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:42:20 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

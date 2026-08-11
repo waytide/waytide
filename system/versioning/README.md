@@ -11,7 +11,7 @@ What a version means, and how the next one is chosen. Not how a package is built
 - **The next version is put to the engineer, never decided by the agent**
   (`the-next-version-is-chosen-by-the-engineer`). Patch, minor, and major are offered through
   the selection interface, each showing the resulting version and the claim it makes. The
-  choice is a promise about other people's code, and a published version cannot be taken back.
+  decision is a promise about other people's code, and a published version cannot be taken back.
 
 **Vocabulary** (`vocabulary.md`): one term, **product generation** — the leading segment of a
 four-segment version, a product-management declaration rather than a compatibility claim.
@@ -64,3 +64,4 @@ Waytide is licensed under the **Eventide Common Interest License**. It is source
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

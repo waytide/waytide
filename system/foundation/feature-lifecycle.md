@@ -30,9 +30,9 @@ experiment's.
   branch, since it does not exist yet at the start. **Branch only says nothing about the working tree**. What distinguishes it from the worktree option is whether a working directory is added. So branch only is presented as the branch it creates and the return at the conclusion. It is not presented as a movement of the working tree, which is immaterial to it.
   The `-b` is required, and
   the plain `git worktree add <path> <branch>` form applies only when a worktree is added
-  to a feature already under way. The choice is
+  to a feature already under way. The decision is
   put to the user at **every** start, through the **AskUserQuestion** selection UI,
-  with no standing default. The choice, and for a worktree its
+  with no standing default. The selection, and for a worktree its
   **path**, go in the record. The conclusion executes the mechanics that match it.
   **The current branch is offered last, after the two branching options.** A selection's first option reads as the recommended one whatever the rule says about defaults, and the current branch is the option that gives up isolation. So putting it first would recommend by position what the rule declines to recommend in words. Last is where it belongs: available
   without being urged.
@@ -73,7 +73,7 @@ experiment's.
   observation, controls, implementation, naming — govern how the feature is designed, and the
   loop record captures each cycle. What is chosen at the start is **the human's level of participation**:
   **attended**, where the loop stops at every hinge for the engineer, or **unattended**, where
-  the agent decides each hinge and generates through. Attended is the default, and the choice
+  the agent decides each hinge and generates through. Attended is the default, and the decision
   is put through the selection UI **beside the working location**, since each is a decision
   about how the work will be conducted and each holds for its duration. **DBE is in effect
   either way** — only the stopping changes. Record it as a confirmation and declare it at the
@@ -118,8 +118,8 @@ experiment's.
   **one confirmation covers the two**. Suspension never deletes.
 - **Record every confirmation** the lifecycle requires in the feature record, so the work's
   authority is auditable:
-  - the working-location choice at the start
-  - the attended-or-unattended choice at the start
+    - the working-location selection at the start
+  - the attended-or-unattended selection at the start
   - adding a worktree to a feature under way
   - branch deletion and worktree removal
 - **There is no instruction to watch for other work.** The experiment rule asks the agent
@@ -140,7 +140,7 @@ states, merge gate, and affirmation all exist to answer a **question**. A featur
 not ask one. Copying them would establish ceremony where the justification does not
 reach — the failure the design method exists to discontinue.
 
-**How to apply:** ask the working location at every start, and record the choice. The options are
+**How to apply:** ask the working location at every start, and record the selection. The options are
 branch only, branch and worktree, and then the current branch last. Where a branch is taken,
 name it `feature/<subject>` and record the upstream branch, the feature branch, and the base.
 On the current branch, record that and the branch it is being built on. Place a worktree as a
@@ -193,3 +193,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

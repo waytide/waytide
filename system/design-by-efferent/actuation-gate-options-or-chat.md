@@ -23,7 +23,7 @@ real pair. The first makes the retry policy the object's own and leaves every us
 The second makes every use site state the count.
 
 **Whether a value reaches the use site is the
-efferent decision.** So an absent parameter is a choice about the interface rather than the lack of
+efferent decision.** So an absent parameter is a decision about the interface rather than the lack of
 one. This is the case most easily discarded, because the shorter shape reads as the other one with
 something missing.
 
@@ -49,7 +49,7 @@ omitted-argument shape is discarded as no shape at all.
 
 **Judge distinctness by what the use site states.** Keep a shape that omits an argument. Drop a chained construction and a varied receiver.
 
-Offer them through the selection UI, whose built-in free-text choice *is* the origination escape. Do not add an escape option of your own. See the present-every-prompt rule.
+Offer them through the selection UI, whose built-in free-text answer *is* the origination escape. Do not add an escape option of your own. See the present-every-prompt rule.
 
 If the human chooses one, adopt it as the cradle. If the human originates instead, take their dictated actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
 
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT

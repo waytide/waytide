@@ -12,7 +12,7 @@ two ways of arriving at the same place, one directly and one through the cycle. 
 prefer it, and preferring it is a design judgment about this unit. It is not a procedure
 applied to every one.
 
-**This is where the choice is made, and the only place.** A red is not offered at a separate
+**This is where the decision is made, and the only place.** A red is not offered at a separate
 hinge preceding the implementation. One gate asks, so an engineer who declines is not asked
 again by another mechanism.
 
@@ -35,7 +35,7 @@ only where it is actually available, rather than being offered and then refused.
 What
 that rejects is the **unchosen** case. An engineer selecting the cycle at a gate, for this unit,
 has made a design judgment, which is the opposite of ceremony. The loop stopped, a person
-weighed two real alternatives, and the choice was theirs. The rule and this one do not conflict,
+weighed two real alternatives, and the decision was theirs. The rule and this one do not conflict,
 and dbe-as-design-tool says so in its own words.
 
 **Refactor is part of the cycle, and is why it is worth choosing.** The cycle has three
@@ -74,7 +74,7 @@ floor.
 Related:
 
 - the hinge-cycle rule — the five hinges, of which this is the fourth
-- the dbe-as-design-tool rule — which rejects the cycle as choreography, not as a choice
+- the dbe-as-design-tool rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
 - the tdd-designs-coverage-prevents-never-break-implementation and the-design-of-a-test-waits-at-the-hinges-including-coverage rules — the coverage case where the cycle is unavailable
 - the no-green-on-arrival-tests rule — the no-op implementation hinge, where there is nothing to drive
@@ -91,3 +91,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
