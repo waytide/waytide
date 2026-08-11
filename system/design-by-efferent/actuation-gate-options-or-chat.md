@@ -9,7 +9,7 @@ This is how the highest-leverage hinge — the efferent shape of the actuation �
 
 The form is deliberate. It is the operationalization of the two results the gates rest on (see the DBE vocabulary):
 
-- **Provoke origination, not mean-bias — so present alternatives, not a fait accompli.** A single proposed actuation ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer, exerting mean-bias and lowering the human toward the average. Offering several genuine options keeps the human originating — comparing real candidate shapes for solubility — rather than ratifying.
+- **Provoke origination, not mean-bias — so present alternatives, not a fait accompli.** A single proposed actuation ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. It exerts mean-bias and lowers the human toward the average. Offering several genuine options keeps the human originating — comparing real candidate shapes for solubility — rather than ratifying.
 - **The best options are ones the AI can't produce — so the escape is mandatory.** The option set is the AI's own, drawn from the average. The best actuation is often one only the human can produce, and showing a closed list tempts the human to pick from it instead of producing their own. The escape is what keeps the human above the AI's mean — never boxed into the AI's option set.
 
 ## A candidate varies what the use site states
@@ -51,3 +51,4 @@ Authored by Scott Bellware on Sat Jun 27 2026 at 1 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 7:40:50 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

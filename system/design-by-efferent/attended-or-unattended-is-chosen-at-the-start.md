@@ -22,8 +22,8 @@ how load-bearing the work is and how likely the first pass is to be right — a 
 *this* piece of work.
 
 **It is asked at the start, through the selection UI, beside the working location.** The two are
-choices about how the work will be conducted, each is made once, and each holds for its
-duration — so they are put at the same gate rather than adding one. The default is attended,
+choices about how the work will be conducted. Each is made once and holds for its
+duration. So they are put at the same gate rather than adding one. The default is attended,
 and the option set says so.
 
 **The question is asked in these words:**
@@ -36,10 +36,7 @@ with these options:
 >
 > **Unattended** — The agent decides and generates through.
 
-**Neither the question nor an option names a hinge.** The words are fixed for that reason. The
-choice is put at a feature's or an experiment's **start**, and a engineer meeting this system has
-not yet met a hinge, a gate, or the loop — so *the loop waits at each hinge* asks them to hold three
-reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
+**Neither the question nor an option names a hinge.** The words are fixed for that reason. The choice is put at a feature's or an experiment's **start**, and a engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
 of what the choice settles.
 
 **The option says what each party does, in that order.** *You decide. The agent automates.* names
@@ -101,9 +98,9 @@ the arrangement assumes it is always worth spending at a hinge. For work whose r
 negligible that assumption is wrong, and five waits buy nothing — the ceremony this
 method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
-in the two modes is what stops the choice from being a way out of the method: unattended work is
-still designed from the efferent side, still cradled by a test written first, still judged by
-solubility. And recording the mode honestly is what keeps the loop record worth reading — a
+in the two modes is what stops the choice from being a way out of the method. Unattended work is
+still designed from the efferent side, still cradled by a test written first, and still judged
+by solubility. And recording the mode honestly is what keeps the loop record worth reading — a
 record that showed options put to a engineer who was not there would be worse than no record,
 because it would be believed.
 
@@ -132,3 +129,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:04:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

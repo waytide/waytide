@@ -62,9 +62,9 @@ scope** is *not here*.
   truth a plan points back at, so rebuilding it from downstream work would invert the direction
   of authority.
 - **working-state artifact** — a file holding the project's **own work** rather than an
-  installed rule: everything under `waytide/local/` except `rules/` — log entries, deferred
+  installed rule. It is everything under `waytide/local/` except `rules/`: log entries, deferred
   items, observations, designs, plans, work session records, loop records, feature records,
-  experiments, migration records, suspended things. The class exists because a single set of
+  experiments, migration records, and suspended things. The class exists because a single set of
   obligations falls on all of them: the ISO-8601-UTC filename prefix, and the
   `Authored by … / Changed by …` provenance footer.
 - **recognizable-content line** — a **bold label, a colon, and a value**, optionally as a list
@@ -127,3 +127,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

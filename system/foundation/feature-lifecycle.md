@@ -25,20 +25,14 @@ what accounts for every place this rule departs from the experiment's.
   stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). **The current
   branch** — build the feature where the working tree already is, creating nothing. There is
   no branch to switch back to at the conclusion and nothing to merge. The first two create the
-  branch, since it does not exist yet at the start. **Branch only says nothing
-  about the working tree** — what distinguishes it from the worktree option is whether a
-  working directory is added, so branch only is presented as the branch it creates and the
-  return at the conclusion, not as a movement of the working tree, which is immaterial to it.
+  branch, since it does not exist yet at the start. **Branch only says nothing about the working tree**. What distinguishes it from the worktree option is whether a working directory is added. So branch only is presented as the branch it creates and the return at the conclusion. It is not presented as a movement of the working tree, which is immaterial to it.
   The `-b` is required, and
   the plain `git worktree add <path> <branch>` form applies only when a worktree is added
   to a feature already under way. The choice is
   put to the user at **every** start, through the **AskUserQuestion** selection UI,
   with no standing default. The choice, and for a worktree its
   **path**, go in the record. The conclusion executes the mechanics that match it.
-  **The current branch is offered last, after the two branching options.** A selection's first
-  option reads as the recommended one whatever the rule says about defaults, and the current
-  branch is the option that gives up isolation — so putting it first would recommend by
-  position what the rule declines to recommend in words. Last is where it belongs: available
+  **The current branch is offered last, after the two branching options.** A selection's first option reads as the recommended one whatever the rule says about defaults, and the current branch is the option that gives up isolation. So putting it first would recommend by position what the rule declines to recommend in words. Last is where it belongs: available
   without being urged.
 - **The current-branch option is a feature's alone. An experiment never has it.** An
   experiment is a **controlled deviation from the main line** — it may be refuted or
@@ -120,9 +114,12 @@ what accounts for every place this rule departs from the experiment's.
   selection UI. Where the feature was worked in a worktree, removing the worktree precedes
   deleting the branch — git refuses to delete a branch checked out in a worktree — and
   **one confirmation covers the two**. Suspension never deletes.
-- **Record every confirmation** the lifecycle requires — the working-location choice at
-  the start, the attended-or-unattended choice at the start, adding a worktree to a feature
-  under way, branch deletion and worktree removal — in the feature record, so the work's authority is auditable.
+- **Record every confirmation** the lifecycle requires in the feature record, so the work's
+  authority is auditable:
+  - the working-location choice at the start
+  - the attended-or-unattended choice at the start
+  - adding a worktree to a feature under way
+  - branch deletion and worktree removal
 - **There is no instruction to watch for other work.** The experiment rule asks the agent
   to watch for main-sequence work starting while an experiment is open. That has no
   counterpart here: during a feature, other work is normally **another feature**, and
@@ -178,3 +175,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

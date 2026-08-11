@@ -20,12 +20,7 @@ its absence is not a defect). Read `system/foundation/` first. It
 defines the system. The rules override default behavior where they conflict.
 Explicit user instructions still win.
 
-**The session-start notice is printed by the harness, not by you — do not print one.** A
-`SessionStart` hook in `.claude/settings.json` runs `system/foundation/session-start.sh`,
-which reads the package directories actually present and emits the
-`Waytide installed at system/ — N packages: …` notice, closing with a line telling the
-engineer to type `load waytide` — the command that asks for the read instruction the hook
-carries to be acted on now. `system/foundation/statusline.sh`
+**The session-start notice is printed by the harness, not by you — do not print one.** A `SessionStart` hook in `.claude/settings.json` runs `system/foundation/session-start.sh`. That script reads the package directories actually present and emits the `Waytide installed at system/ — N packages: …` notice. The notice closes with a line telling the engineer to type `load waytide`, the command that asks for the read instruction the hook carries to be acted on now. `system/foundation/statusline.sh`
 keeps the system's presence in the status line for the rest of the session, beside the
 working directory, branch, and any uncommitted, untracked, or unpushed work. Neither can be
 silenced. In a consuming project `install.sh` places the equivalent `.claude/settings.json`. Here in the source it
@@ -61,3 +56,4 @@ In a consuming project `install.sh` places the same `CLAUDE.md` bridge alongside
 generated `AGENTS.md`. Here in the source it is hand-maintained like this file.
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

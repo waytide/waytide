@@ -5,9 +5,7 @@ deleted: a rule that became ceremony, a procedure nobody runs, a report nobody r
 that costs more than it is worth. Anything the project stopped doing can be suspended, and
 anything suspended can be **restored**.
 
-**It is an undo queue, in the sense the Command Pattern means.** Each suspended thing carries
-what it takes to **reverse its own suspension** — not merely a copy of itself, but the
-information needed to put the world back as it was. Suspending is the command. The record is
+**It is an undo queue, in the sense the Command Pattern means.** Each suspended thing carries what it takes to **reverse its own suspension** — not merely a copy of itself. The information needed to put the world back as it was. Suspending is the command. The record is
 what makes it undoable.
 
 - **The thing itself moves.** The file is moved into `waytide/local/suspended/`, not copied and
@@ -60,9 +58,7 @@ suspended file is the artifact. The log entry is the fact that it happened.
 **Why:** conventions accumulate and rarely leave. A rule that has stopped earning its keep is
 ordinarily either endured, because removing it feels like losing something, or deleted, after
 which reconsidering it means reconstructing it from nothing. The two outcomes are bad, and the
-second is why the first happens. A reversible middle state makes setting something aside a small
-act rather than a final one — the cost of being wrong is a restore rather than a rewrite — which
-is what lets a project prune ceremony at the rate it accumulates it. Recording the reconciliations
+second is why the first happens. A reversible middle state makes setting something aside a small act rather than a final one. The cost of being wrong is a restore rather than a rewrite — which is what lets a project prune ceremony at the rate it accumulates it. Recording the reconciliations
 is what makes the reversal real: without them, restoring returns a file and leaves the system
 still arranged around its absence.
 
@@ -85,3 +81,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 8:33:47 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

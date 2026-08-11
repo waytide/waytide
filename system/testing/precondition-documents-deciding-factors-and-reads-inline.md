@@ -34,9 +34,7 @@ Nothing in `Controls::Account::Sequence.example` shows that, so without the prec
 reader has the outcome and no account of what produced it. The precondition states the
 deciding factor where it is needed.
 
-**It documents by asserting, and that is why it is an assertion rather than a comment.**
-Prose narration could state the same factor, and would never be checked — it can drift from
-the control it describes and go on reading as true long after it stopped being so. An
+**It documents by asserting, and that is why it is an assertion rather than a comment.** Prose narration could state the same factor, and would never be checked. It can drift from the control it describes and go on reading as true long after it stopped being so. An
 assertion states the factor **and** verifies it, so this documentation cannot become false
 without the suite saying so. Documentation that is checked is the whole reason a deciding
 factor is written as an assertion.
@@ -80,10 +78,7 @@ carries the condition, read as a sentence at the point it is written:
 `assert(account.processed?(deposit.metadata.global_position))` is *the account has processed
 that position*. **This is a deliberate exception to the test-block-is-assertion-only rule**,
 which requires every operand inside a `test` block to be bound to an explaining variable
-first. Neither of that rule's reasons reaches a precondition: it has one operand, so nothing
-is buried in a nested expression to be parsed inside-out, and a name bound for it would only
-restate the predicate — `connected = session.connected?` in front of `refute(connected)` adds
-a line and no information. **A precondition carries no name because its expression is the
+first. Neither of that rule's reasons reaches a precondition: it has one operand, so nothing is buried in a nested expression to be parsed inside-out. A name bound for it would only restate the predicate — `connected = session.connected?` in front of `refute(connected)` adds a line and no information. **A precondition carries no name because its expression is the
 name.**
 
 **A block is an expression.** Where the deciding factor is that an actuation completes,
@@ -108,10 +103,7 @@ test "Deposit message follows previous message" do
 end
 ```
 
-**It is not coverage, and it prevents nothing.** A precondition asserts over the controls, a
-prior state, a derivation, or **the actuation's completion where the controls are what decide
-it** — never over the unit's behavior as an outcome — so it is outside what the
-do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
+**It is not coverage, and it prevents nothing.** A precondition asserts over the controls, a prior state, a derivation, or **the actuation's completion where the controls are what decide it** — never over the unit's behavior as an outcome. So it is outside what the do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
 the unit is established by one passing.
 
 **The line is what the assertion is for, not what it is written over.** `refute_raises`
@@ -134,17 +126,9 @@ end
 The destination owns the excluded name, so without `except:` the import is refused. Nothing
 else in the script says so, and every outcome below depends on it.
 
-**Why:** a test script is read to learn what its outcome depends on, and the controls
-convention deliberately puts the construction of example values behind a name, so the factors
-that decide the outcome are frequently the ones least visible at the test. A test whose
-deciding factors are invisible cannot be read — the reader sees an outcome asserted and no
-account of what produced it — and in its worst form it passes without exercising what it
-names, reporting prevention that is not there. Writing the factor as an assertion rather than
+**Why:** a test script is read to learn what its outcome depends on. The controls convention deliberately puts the construction of example values behind a name, so the factors that decide the outcome are frequently the ones least visible at the test. A test whose deciding factors are invisible cannot be read. The reader sees an outcome asserted and no account of what produced it — and in its worst form it passes without exercising what it names, reporting prevention that is not there. Writing the factor as an assertion rather than
 a comment is what makes the clarification trustworthy: a comment claims, an assertion is
-checked, so the documentation and the fact cannot drift apart in silence. Keeping it a bare
-assertion rather than a named test is what keeps the two legible as different things — a named
-test claims the unit behaves a certain way, and a precondition claims only that the ground the
-test stands on is the ground it appears to.
+checked, so the documentation and the fact cannot drift apart in silence. Keeping it a bare assertion rather than a named test is what keeps the two legible as different things. A named test claims the unit behaves a certain way, and a precondition claims only that the ground the test stands on is the ground it appears to.
 
 **How to apply:** when writing or reading a test, ask what determines its outcome and whether
 the script shows it — looking first at the controls, whose values are named rather than
@@ -171,3 +155,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 4:20:47 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:08:21 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

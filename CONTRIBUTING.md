@@ -22,10 +22,7 @@ package's slice of the composite repo history and pushes it to that package's
 repository. Sync runs one way only: composite repo → component repositories.
 
 **The component repositories are downstream-only.** They only ever receive. They
-are never an authoring source. Do not commit directly to a component repository —
-its `master` is regenerated from this composite repo's history by `git subtree
-split`, so a direct commit is not in that history and is lost or made to conflict
-on the next release. All changes are made in the composite repo.
+are never an authoring source. Do not commit directly to a component repository. Its `master` is regenerated from this composite repo's history by `git subtree split`, so a direct commit is not in that history and is lost or made to conflict on the next release. All changes are made in the composite repo.
 
 ## Authoring
 
@@ -46,17 +43,11 @@ existed, found only when a publish was attempted. Nothing else announces them.
 **Check for planning directories named in part too.** Run
 `./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
 under `system/` naming some but not all of a planning artifact's directories — a rule naming
-`plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is
-*about* one of those artifacts names every mode's directory and one that merely mentions it
-names none, so naming only some of them is a defect either way, and it is one that reviews,
-publishes, and installs cleanly while being wrong in every project whose mode it omits. It
+`plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is *about* one of those artifacts names every mode's directory and one that merely mentions it names none, so naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
 only reads, and exits non-zero when it finds something.
 
 After committing a change here, re-publish the affected package by splitting its
-directory and pushing to the component repo's `master`. A `git subtree split`'s
-output history depends on the prefix path, so a package whose directory path is
-unchanged fast-forwards, while a package whose path moved does not — its next
-publish is a path-change case handled like the `vocabulary`→`language` rename.
+directory and pushing to the component repo's `master`. A `git subtree split`'s output history depends on the prefix path, so a package whose directory path is unchanged fast-forwards, while a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
 **The composite's package directory is `system/`, reached
 by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
 (2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s

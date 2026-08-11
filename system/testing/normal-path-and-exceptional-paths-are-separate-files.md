@@ -20,10 +20,7 @@ condition is then also promoted to a `context` inside that file, with the test n
 `Fails` (see the error-test-named-fails-condition-is-context rule).
 
 **What belongs in an exceptional-path file is that one exceptional case.** The normal path
-is proven in its own file and is not re-proven here. Where such a file's controls include
-values that also appear on the normal path, they are there to make the failure
-**discriminating** — so the raised error can be told from a different failure of the same
-class — not to establish the normal path a second time.
+is proven in its own file and is not re-proven here. Where such a file's controls include values that also appear on the normal path, they are there to make the failure **discriminating**. So the raised error can be told from a different failure of the same class — not to establish the normal path a second time.
 
 **Why:** a file holds one arrangement and one actuation, and mixing a raising actuation
 with a non-raising one puts two of each in the same file, where neither reads as the
@@ -31,9 +28,7 @@ subject. Separating them also makes a feature's failure modes findable by filena
 than by reading each file for a nested `assert_raises`, and keeps a normal-path file from
 accumulating exceptional cases at its end as conditions are added.
 
-**How to apply:** when a feature has the two a normal path and an exceptional path, give the
-feature a folder and write each in its own file — the normal path named for the feature,
-each exceptional path named for its condition. Keep the normal path's proof in its own
+**How to apply:** when a feature has the two a normal path and an exceptional path, give the feature a folder and write each in its own file. The normal path named for the feature, each exceptional path named for its condition. Keep the normal path's proof in its own
 file. Do not add a second, raising actuation to a normal-path file. Related: the
 tdd-test-structure rule (actuate once at the top), the single-case-test-named-for-feature
 rule (when a folder is warranted and how files are named), the
@@ -48,3 +43,4 @@ Authored by Scott Bellware on Thu Jul 30 2026 at 4:53:20 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:23:44 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

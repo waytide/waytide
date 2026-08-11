@@ -52,6 +52,10 @@ Committed before the survey is run. Each item carries the agent's confidence.
 
 ### The survey — 2026-08-10
 
+> **The counts in this section are wrong, and they are left as they were claimed.** The
+> corrected figures and the three defects that produced them are in *The measurement was wrong
+> three times* below. A reader should take the classes from here and the numbers from there.
+
 **107 rule files under `system/`, 3,184 sentences.** Code fences, table rows, and provenance
 footers are excluded from the counts. A sentence is a run ending in `.`, `!`, or `?` and holding
 more than two words.
@@ -225,8 +229,45 @@ statements that no longer argues.
 **Neither is decided here.** The engineer has not ruled on either, and this section records what
 was proposed rather than what was settled.
 
+## The measurement was wrong three times — 2026-08-10
+
+**Each defect was found only when a sample of the counted sentences was read**, and each
+correction lowered the count. The order matters, because none of the three was visible from the
+totals.
+
+1. **Provenance footers and headings were counted as prose.** A footer of fourteen `Changed by`
+   lines has no terminal punctuation between the lines, so it read as one 91-word sentence. A
+   heading run together with the paragraph below it read as one long sentence too.
+2. **Table rows and block quotes were counted.** A substitutions table's rows are not prose and
+   are not written to the sentence limits. A block quote is usually a quotation of something
+   else.
+3. **A sentence ending `.**` was never split at all.** Waytide's prose leads a great many
+   paragraphs with a bold claim ending in `.**`, and the splitter needed `[.!?]` followed by
+   whitespace. Every such pair counted as one sentence of both their lengths. This was the
+   largest of the three.
+
+**The corrected figures, against what the survey claimed:**
+
+| Measure | Claimed | Corrected |
+|---|---|---|
+| Prose sentences | 3,184 | 4,179 |
+| Over 25 words | 1,168 | 844 |
+| Over 40 words | 359 | 237 |
+| Semicolons | 373 | 401 — the claim excluded table cells |
+
+**The finding this produces, and it is the experiment's most transferable one.** A count of a
+corpus is not evidence until a sample of what it counted has been read. Three separate defects
+survived because the totals looked plausible, and each was exposed the moment a sample was put on
+the page. The survey was run, recorded, and acted on before any of them was found.
+
+**A fourth artifact is known and left alone.** A bullet list has no terminal punctuation, so the
+measurement reads a list of eight items as one sentence of sixty words. Five such lists were
+created by this experiment's own rewrites and then reported as over-length sentences. They are
+not, and the count is not corrected for them.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 2:27:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 5:12:24 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:09 PM PT

@@ -19,7 +19,7 @@ dependency out of every rule that is more useful in company than alone, which is
 dependencies may still name any other package's rules. The claim says what must be installed
 alongside it. It says nothing about what its rules may refer to.
 
-**The model citation** is foundation's own status-report-format rule, which names the
+**The model citation** is foundation's own status-report-format rule. It names the
 `testing` package and is written for its absence: *"If the project has **not** adopted the
 testing conventions, degrade this section."* The rule works either way, so `testing` is cited
 and not declared.
@@ -36,12 +36,9 @@ package builds on — cites all six of them in eleven rules. If a citation were 
 dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on
 `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct,
 and the only workable line between them is whether the rule functions alone. Keeping the line
-at *works* rather than *is motivated* also keeps the declarations meaningful: a declared
-dependency obliges an install, so declaring one that is merely helpful would make every
-install drag in the whole system and reduce the graph to noise. This criterion was practiced
-before it was written — every declaration in the system already conforms to it — and stating
-it here is what makes it available to a rule's author without their having to infer it from
-another rule's aside.
+at *works* rather than *is motivated* also keeps the declarations meaningful. A declared
+dependency obliges an install. Declaring one that is merely helpful would make every
+install drag in the whole system and reduce the graph to noise. This criterion was practiced before it was written. Every declaration in the system already conforms to it — and stating it here is what makes it available to a rule's author without their having to infer it from another rule's aside.
 
 **How to apply:** when a rule you are writing names another package's rule, ask whether your
 rule could still be applied with that package absent. If it could, cite it plainly and declare
@@ -57,3 +54,4 @@ cited package's absence), and each package's README (where a dependency is decla
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 10:42:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

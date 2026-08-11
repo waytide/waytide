@@ -26,9 +26,7 @@ keeping because each is tempting:
 
 ## A list item states a fact. It does not narrate
 
-**Narration is the failure the list form does not by itself prevent.** An answer can be a correct
-list of items every one of which describes the work rather than stating what is true, and it reads
-as compliance while being the thing the rule exists to stop.
+**Narration is the failure the list form does not by itself prevent.** An answer can be a correct list of items every one of which describes the work rather than stating what is true. It reads as compliance while being the thing the rule exists to stop.
 
 **These are narration, and none of them belongs in an answer:**
 
@@ -128,3 +126,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 1:10:48 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:28:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

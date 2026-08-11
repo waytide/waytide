@@ -4,9 +4,7 @@ Waytide writes its prose in ASD-STE100 Simplified Technical English. The standar
 approved dictionary and 53 writing rules. It also permits a project to add its own technical
 nouns and technical verbs. STE Rules 1.5 through 1.13 govern that.
 
-**The rules in this directory are Simplified Technical English Vector, or STEve.** That is
-Waytide's implementation of the standard — the STE dictionary and the STE writing rules, with
-Waytide's reserved terms and its substitutions, in the order this rule states. **`Say it in Steve`
+**The rules in this directory are Simplified Technical English Vector, or STEve.** That is Waytide's implementation of the standard. The STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the order this rule states. **`Say it in Steve`
 is the instruction to write that way.** It is not the same request as `say it in STE`, which asks
 for the raw standard and forbids `efferent`, `cradle`, `hinge`, and every other term Waytide
 reserved.
@@ -67,3 +65,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

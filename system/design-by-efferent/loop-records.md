@@ -2,10 +2,10 @@
 
 `waytide/local/loops/` holds **loop records** — one file per feature documenting the
 cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary).
-Where the decision log captures *what* was decided (one line per decision), a
-loop record captures *how* — the deliberation history of a feature: the hinges
+The decision log captures *what* was decided, one line per decision. A loop
+record captures *how*. It is the deliberation history of a feature: the hinges
 the AI determined, the options it put to the engineer, and the decisions the
-engineer made (or the chat that replaced options).
+engineer made or the chat that replaced them.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were
 found, what alternatives were weighed, and why the chosen path won. It is the
@@ -26,9 +26,7 @@ displace (the log stays one line per decision).
     skipped gate is part of the record's value).
   - **Decision / chat** — what the engineer chose, or the chat that ensued and
     how it resolved (record the substance of the chat, not just the outcome).
-- **Under an unattended mode, a cycle carries its hinge and the decision with its reasoning,
-  and no Options or Decision / chat line** — neither happened, and writing them would be a
-  false record of a deliberation that never occurred. This is **not** the "none — no gate"
+- **Under an unattended mode, a cycle carries its hinge and the decision with its reasoning. No Options or Decision / chat line** — neither happened, and writing them would be a false record of a deliberation that never occurred. This is **not** the "none — no gate"
   form above: that marks a **skipped** gate in an attended run, which is a defect worth
   surfacing, where an unattended run has no gates by choice. The mode declaration is what
   tells them apart.
@@ -66,3 +64,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

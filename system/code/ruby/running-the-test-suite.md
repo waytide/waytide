@@ -25,13 +25,9 @@ name, so identical paths de-duplicate.
   is the established location.
 - **It is excluded from the default suite run.** It runs the suite itself, so a suite that
   ran it would recurse.
-- **It parses the run's output, never the source.** That is the test-tree rule's requirement
-  and its reason: a dynamic `context <expr> do` shows its expanded real value in a run and a
-  placeholder in the source, and a bare unnamed `test do` emits no line at all.
+- **It parses the run's output, never the source.** That is the test-tree rule's requirement and its reason: a dynamic `context <expr> do` shows its expanded real value in a run and a placeholder in the source. A bare unnamed `test do` emits no line at all.
 
-**Why:** what command runs a suite, what its passing output says, and what a script must do to
-parse it are all facts about a stack, and a package that disclaims a stack cannot state them —
-`git` declares itself standalone and `testing` opens by disclaiming any framework API. Left in
+**Why:** what command runs a suite, what its passing output says. What a script must do to parse it are all facts about a stack, and a package that disclaims a stack cannot state them — `git` declares itself standalone and `testing` opens by disclaiming any framework API. Left in
 those packages, the facts made the two claims false and made the rules inapplicable to a project
 that is not Ruby. Held here, the general conventions stay general and a Ruby project still gets
 the concrete answer. The split is the ordinary one: the general part is substantial on its own,
@@ -49,3 +45,4 @@ tree), and the lib-report-format rule in this package (the sibling command rule)
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

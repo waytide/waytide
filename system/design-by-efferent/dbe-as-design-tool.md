@@ -4,11 +4,11 @@ Design By Efferent is a design tool. Do not perform red-green-refactor as choreo
 
 A test written before its implementation exists is trivially going to fail. That failure teaches nothing — do not stop to observe it, and do not treat the red bar as a checkpoint. The point of the test was never the failure.
 
-**What this rejects is the *unchosen* cycle, performed because the form calls for it.** A engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit, where they judge that the design wants working out under a red or the test's discrimination is in doubt (see the the-implementation-hinge-offers-the-red-green-refactor-cycle rule). That is not choreography — the loop stopped, a person weighed two real alternatives, and the choice was theirs. Choreography is the cycle nobody decided to run.
+**What this rejects is the *unchosen* cycle, performed because the form calls for it.** A engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt. See the the-implementation-hinge-offers-the-red-green-refactor-cycle rule. That is not choreography — the loop stopped, a person weighed two real alternatives, and the choice was theirs. Choreography is the cycle nobody decided to run.
 
 The point is the cradle. Approach every unit from the efferent side first — the test is the first efferent reference. Authoring the actuation before the implementation exists forces the unit's interface to be designed from the outside in. What the efferent view discovers is the unit's **solubility**: how readily it dissolves into use, how usable and transparent it is from the efferent side. The target is the greatest simplicity possible — maximum solubility, minimal necessary complexity, found rather than presumed.
 
-The efferent test then acts as a kind of jig or harness — but more precisely a **cradle**: it holds the implementation in its proper position without gripping it rigid, supporting the generation within the dictates of the efferent view while leaving it free to move inside those bounds. It is not an after-the-fact filter and not a point to halt at. Keep the cradle present while you build, steering toward solubility, and generate straight through inside it.
+The efferent test then acts as a jig or a harness. More precisely it is a **cradle**. It holds the implementation in position without gripping it rigid. It supports the generation within the dictates of the efferent view, and leaves it free to move inside those bounds. It is not an after-the-fact filter and not a point to halt at. Keep the cradle present while you build, steering toward solubility, and generate straight through inside it.
 
 Do not regress to the average of the code you've seen — most code is poorly designed, and copying it is garbage in, garbage out. Condition on the well-designed, efferent-oriented, high-solubility code in the project and hold to its standard. Efferent in, efferent out.
 
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

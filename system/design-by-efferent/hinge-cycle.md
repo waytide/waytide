@@ -3,12 +3,12 @@
 Building the initial implementation of an outcome runs a cycle of **five hinges**, each handed to the human separately and accepted before moving to the next:
 
 1. **Actuation** — the invocation of the unit under test (its efferent shape: name, arguments, arity, return).
-2. **Observation** — what is asserted about the result (value-equality vs. identity vs. a raised error, and what the explaining variable is compared against). **What the test reads is the side effect the actuation produces.** A returned value is one such effect, and it is a **case rather than the rule** — an actuation that returns nothing still produces an effect somewhere, and an actuation that returns a value frequently produces others beside it. So the hinge asks **which effect the test reads, and how it reads it**, rather than assuming the return.
+2. **Observation** — what is asserted about the result (value-equality vs. identity vs. a raised error, and what the explaining variable is compared against). **What the test reads is the side effect the actuation produces.** A returned value is one such effect, and it is a **case rather than the rule**. An actuation that returns nothing still produces an effect somewhere. An actuation that returns a value frequently produces others beside it. So the hinge asks **which effect the test reads, and how it reads it**, rather than assuming the return.
 3. **Controls** — the example constants the test is built from (which control form, nested vs. top-level, what inner constants, Array vs. Hash seeding, literals vs. controls).
 4. **Implementation** — the code that satisfies the test. This hinge always has two candidates: the working implementation written directly, or the **red/green/refactor cycle** (see the the-implementation-hinge-offers-the-red-green-refactor-cycle rule).
 5. **Naming** — the outcome `context` that names what the observation establishes (the test's name).
 
-The first three concern the test (turn one). The fourth is the implementation (turn two). Only after the actuation, observation, and controls are accepted does the AI assemble and show the turn-one test file (per the first-turn rule). Then it proposes the implementation as the fourth hinge, and — once that is accepted — writes it, runs the suite, and shows the test with its result. The fifth hinge, **naming**, is **deferred to the feature's close** (per the first-turn rule, the cradle and its outcomes are developed unnamed): once the feature's outcomes are implemented, each outcome's name is settled as its own hinge — via options, per the one-outcome-at-a-time naming rule. For a single-outcome feature, naming directly follows the implementation hinge.
+The first three concern the test (turn one). The fourth is the implementation (turn two). Only after the actuation, observation, and controls are accepted does the AI assemble and show the turn-one test file (per the first-turn rule). Then it proposes the implementation as the fourth hinge, and — once that is accepted — writes it, runs the suite, and shows the test with its result. The fifth hinge, **naming**, is **deferred to the feature's close**. Per the first-turn rule, the cradle and its outcomes are developed unnamed. Once the feature's outcomes are implemented, each outcome's name is settled as its own hinge, via options, per the one-outcome-at-a-time naming rule. For a single-outcome feature, naming directly follows the implementation hinge.
 
 ## The five are named before the first one is put
 
@@ -39,10 +39,7 @@ because it is asked at a feature's or an experiment's start and the engineer has
 This account is where they meet the five, and it sits immediately ahead of the first one.
 
 **Why:** the actuation hinge asks for a decision, and an engineer answering it does not otherwise
-know that four more follow, what those cover, or what happens in between. Without the account they
-weigh the actuation as though it were the whole of what is being asked, and every question the
-account would have answered arrives at a later hinge instead — one at a time, in the middle of
-another decision. Six lines given once removes all of them.
+know that four more follow, what those cover, or what happens in between. Without the account they weigh the actuation as though it were the whole of what is being asked, and every question the account would have answered arrives at a later hinge instead. One at a time, in the middle of another decision. Six lines given once removes all of them.
 
 **How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the origination escape** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in free-text choice *is* that escape — see the present-every-prompt rule.
 
@@ -61,3 +58,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

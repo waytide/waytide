@@ -17,7 +17,7 @@ Produce these sections, in order:
 
 5. **Other factors** — topology pairs (e.g. top-level vs nested for the same method), normal-path vs error outcomes, and controls usage.
 
-6. **Context hierarchy, two levels deep** — each distinct top-level context with its distinct second-level contexts nested beneath, rendered as an indented tree (`├─`/`└─`). See the status-report rule (in `foundation`) for the rendering. Stop at two levels. **This section alone is derived from a suite run, not from the source** — the sections above are source analysis, and this one is not, for the reasons the test-tree rule gives: a dynamic `context <expr> do` reads as a placeholder in the source and as its expanded real value in a run, and a bare unnamed `test do` appears in the source and emits no line at all. A tree read off the declarations is wrong in the two cases.
+6. **Context hierarchy, two levels deep** — each distinct top-level context with its distinct second-level contexts nested beneath, rendered as an indented tree (`├─`/`└─`). See the status-report rule (in `foundation`) for the rendering. Stop at two levels. **This section alone is derived from a suite run, not from the source**. The sections above are source analysis, and this one is not, for the reasons the test-tree rule gives. A dynamic `context <expr> do` reads as a placeholder in the source and as its expanded real value in a run. A bare unnamed `test do` appears in the source and emits no line at all. A tree read off the declarations is wrong in the two cases.
 
 Keep each section tight.
 
@@ -30,3 +30,4 @@ Keep each section tight.
 Authored by Scott Bellware on Mon Jun 29 2026 at 12 AM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 10:53:02 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

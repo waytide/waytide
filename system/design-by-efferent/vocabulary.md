@@ -93,7 +93,7 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 - Subtle **but not load-bearing** (takes judgment, but the choice is local and cheaply changed) → not worth stopping the human. A wait there is ceremony.
 - **Subtle *and* load-bearing** → a hinge. Gate it.
 
-**Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations, and the implementation all rest on it, so a wrong shape spreads into all of them and gets costly to change once code depends on it (which is why it is the first and highest-leverage gate). By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
+**Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations. The implementation all rest on it, so a wrong shape spreads into all of them and gets costly to change once code depends on it (which is why it is the first and highest-leverage gate). By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
 
 ## The loop, as a distributed OODA cycle
 
@@ -168,3 +168,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:59:35 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

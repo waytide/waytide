@@ -47,14 +47,9 @@ one produces, and specifying a count that cannot be observed would be a rule not
 with or violate.
 
 **The block sits in a fenced code block and the notice does not.** The fence is what preserves the
-figure's spacing. The notice is ordinary prose and reads as prose. That difference is also why the
-gap between them is the renderer's paragraph break rather than a count of lines — they are two
-kinds of thing, and the break between them is whatever separates a paragraph from a code block.
+figure's spacing. The notice is ordinary prose and reads as prose. That difference is also why the gap between them is the renderer's paragraph break rather than a count of lines. They are two kinds of thing, and the break between them is whatever separates a paragraph from a code block.
 
-**A wider gap is achievable only by giving something up**, and neither cost is worth it: putting
-the notice inside the fence with the block would set it in monospace and make it part of the
-figure, and separating them with lines carrying an invisible character would put marks in the
-output whose purpose no reader could see.
+**A wider gap is achievable only by giving something up**, and neither cost is worth it. Putting the notice inside the fence with the block would set it in monospace and make it part of the figure. Separating them with lines carrying an invisible character would put marks in the output whose purpose no reader could see.
 
 **These three are the whole of what is printed there.** Nothing else accompanies them — no
 greeting, no account of what is about to be read, no name for the block itself.
@@ -64,9 +59,7 @@ response that then opens every rule file in every installed package, which is a 
 sees. The line names it rather than leaving a pause unexplained, and it is the only one of the
 three that is about the moment rather than about the work.
 
-**It repeats the session-start notice's caveat deliberately, and the two are read at different
-moments.** The notice says *Loading the rules will take a few moments* **before** the engineer
-types `load waytide` — it is one of the two facts they weigh in deciding to type it. This line is
+**It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is
 read **after** they have, while the wait is happening. The first informs a decision. The second
 explains a pause. Duplication that has cost this system elsewhere was one fact stated twice for
 one reader. This is one fact stated to a reader in two different positions, and removing either
@@ -85,9 +78,7 @@ of what this rule carries.
 nothing to attach itself to, so `Waytide` leads it rather than being inferred from the block
 below.
 
-**The license line sits directly under the copyright, with no blank line between them.** The two
-are one statement about the work — who owns it, and on what terms it may be used — and a bare
-copyright answers only the first while raising the second. For a work distributed by copying its
+**The license line sits directly under the copyright, with no blank line between them.** The two are one statement about the work. Who owns it, and on what terms it may be used — and a bare copyright answers only the first while raising the second. For a work distributed by copying its
 files into other people's repositories, the terms are the question a reader actually has.
 
 **The first gap falls after the license line**, so it separates the whole statement — the
@@ -108,10 +99,7 @@ The notice sits there for the same reason: it is the one moment in a session whe
 is announced as itself rather than being used, and a copyright notice belongs on the work at the
 point the work is presented.
 
-**How to apply:** read this file ahead of every other rule file, and at the head of the response
-that carries the rest of the read print the copyright notice and the license line on consecutive
-lines, then one blank line, then the loading line, then one blank line, then the block — all
-verbatim and in that order. Print no other words with any of them. Print them once per session and
+**How to apply:** read this file ahead of every other rule file. At the head of the response that carries the rest of the read, print the copyright notice and the license line on consecutive lines. Then one blank line, then the loading line, then one blank line, then the block. Print all of it verbatim and in that order. Print no other words with any of them. Print them once per session and
 never again. There is no condition under which they are withheld.
 
 ---
@@ -130,3 +118,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 6:05:55 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 10:51:50 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

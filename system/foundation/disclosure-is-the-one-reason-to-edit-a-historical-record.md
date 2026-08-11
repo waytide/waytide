@@ -46,9 +46,7 @@ rewriting history in several repositories, which is the engineer's decision and 
 consequence of this rule. **Say so when a correction is made**, so the engineer knows what the
 edit did and did not accomplish.
 
-**Log the edit.** The correction is a decision, and the log entry is what tells a later reader
-that a record was changed after the fact and on what grounds — which is the trail the record
-itself no longer carries.
+**Log the edit.** The correction is a decision, and the log entry is what tells a later reader that a record was changed after the fact and on what grounds. That is the trail the record itself no longer carries.
 
 **Why:** the reason records are left as written is that a record is evidence, and evidence that
 is revised to suit the present is not evidence. That reason does not extend to content the
@@ -58,10 +56,7 @@ project's to say stops being said. Naming the engineer as the authority keeps an
 either exposing something on the grounds that a record is immutable, or scrubbing a record on a
 guess about what is sensitive.
 
-**How to apply:** leave historical records alone. Where one discloses what should not have been
-disclosed, correct it: remove the disclosure, keep every claim the record makes true by stating
-it at a lower resolution, log the edit, and tell the engineer that the git history is not
-reached by it. Related: the deferred-convention and the reconcile entry in this package's
+**How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it. Related: the deferred-convention and the reconcile entry in this package's
 vocabulary (where the standing rule is stated), and the work-sessions-convention (the title
 format, an instance of the standing rule).
 
@@ -70,3 +65,4 @@ format, an instance of the standing rule).
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

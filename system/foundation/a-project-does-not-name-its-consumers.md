@@ -35,9 +35,7 @@ Waytide's own two are `website`, which is part of Waytide at large, and `constan
 example the method is shown through. Neither is named as a consumer.
 
 **A historical record that already names one.** A record states what was true when it was
-written and is not revised to suit a later convention. The one exception is disclosure, and it is
-the disclosure rule that governs it — the correction removes the name and keeps every claim true
-by stating it at a lower resolution, and the engineer is the authority on what counts. This rule
+written and is not revised to suit a later convention. The one exception is disclosure, and it is the disclosure rule that governs it. The correction removes the name and keeps every claim true by stating it at a lower resolution, and the engineer is the authority on what counts. This rule
 governs what is **written from now on**. It does not license going back through the records.
 
 ## Where the operational need goes instead
@@ -73,3 +71,4 @@ reference obliges), and the rules-convention.
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

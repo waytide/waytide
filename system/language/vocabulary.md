@@ -81,7 +81,7 @@ General, domain-less word substitutions — the literal term in place of a slang
   the table carries two rows rather than one. **Neither is a discontinuation** — a discontinuation
   names one word and drops it, and each of these names a word to write instead.
 - **mediates.** The canonical form is the bare verb — *`X` mediates `Y`*, not *`X` mediates for `Y`*. "wrap"/"wrapper" reads as a generic decorator and hides the relationship. "mediates" names it exactly — the object stands between a user and the thing it fronts, providing access to it.
-- **obsolete** is the fallback, not the goal — reach for the exact word when there is one:
+- **obsolete** is the fallback, not the goal. Reach for the exact word when there is one:
   - a reference whose target moved is **unresolvable**
   - a rule no longer in force is **discontinued** or **superseded**
   - a branch that can only go one way **has nothing to decide**
@@ -90,10 +90,8 @@ General, domain-less word substitutions — the literal term in place of a slang
    "dead" over-dramatizes — nothing died, and the drama distorts judgment, making routine tidying read as urgent repair.
 - **sent to** frames a call as sending a message with arguments — an argument is *sent to* the method that receives it. "initialized with" and "passed to" are looser, mechanism-flavored phrasings for the same thing.
 - **actuation** governs the invocation *noun*. "To call a method" in the pure-mechanism sense, and "call it X" meaning to *name* it, are different uses — not covered. Use "actuation shape" for its shape, and "use site" for where it is invoked.
-- **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters: a switch is binary, instantaneous, and reversible by the same gesture, where activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
-- **A reference to part of an external standard names that standard.** Waytide has rules of its
-  own, so a bare *Rule 1.7* leaves a reader to work out which system it belongs to, and the
-  numbering gives them nothing to work it out from. **The same holds for the standard's
+- **activate** names what actually happens — a system is brought into force. "Switch on" borrows a light switch, and the borrowed image is wrong in the way that matters. A switch is binary, instantaneous, and reversible by the same gesture. Activating a system is a set of arrangements that can be partly in place. The same holds for **deactivate** over "switch off". This is not a preference for the longer word — "activate" is the extant term for the act, and the figure displaced it.
+- **A reference to part of an external standard names that standard.** Waytide has rules of its own, so a bare *Rule 1.7* leaves a reader to work out which system it belongs to. The numbering gives them nothing to work it out from. **The same holds for the standard's
   dictionary**, because every `vocabulary.md` in Waytide is an approved-word dictionary for its
   package, so *the dictionary* names four things at once. Write the standard's name first —
   **STE Rule 1.7**, **STE Rules 1.5 through 1.13**, **the STE dictionary** — in prose, records,
@@ -126,3 +124,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 7:25:35 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:50:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

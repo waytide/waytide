@@ -32,10 +32,7 @@ AM/PM, no seconds.
   title appears once per file, so nothing can collide with it. The filename beside it
   already carries the same instant to the second, in UTC.
 
-**Why:** a title is the first thing read and the line a record is referred to by, so its
-date wants to be compact and precise at once — a bare month and year is too coarse to
-distinguish two records from the same day, and the footer's `at 11 AM PT` form is too long
-to sit inside a title alongside the record's name. Minute-precise 24-hour time is the
+**Why:** a title is the first thing read and the line a record is referred to by, so its date wants to be compact and precise at once. A bare month and year is too coarse to distinguish two records from the same day, and the footer's `at 11 AM PT` form is too long to sit inside a title alongside the record's name. Minute-precise 24-hour time is the
 shortest rendering that separates records written hours apart. Local time is chosen for the
 same reason the footer uses it: the title is for a reader, and the UTC instant is already
 carried, unambiguously, by the filename.
@@ -56,3 +53,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

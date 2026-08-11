@@ -4,11 +4,7 @@ A `test` block holds **exactly one assertion** and nothing else (per the
 test-block-is-assertion-only rule). Naming an outcome does **not** require a
 `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
-Use a named **`context`** to enclose a `test` when that outcome needs local
-instrumentation — an **explaining variable derived for it**, or a
-**`comment`/`detail`** specific to it — **or** when the context is a **leading
-`When …` condition** (a condition promoted to a context, per the assert-raises
-rule). The context exists to hold that local setup alongside the bare test, or to
+Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. An **explaining variable derived for it**, or a **`comment`/`detail`** specific to it — **or** when the context is a **leading `When …` condition** (a condition promoted to a context, per the assert-raises rule). The context exists to hold that local setup alongside the bare test, or to
 name the condition.
 
 **The `When` exception is narrow — a *leading* `When …` only.** A context named
@@ -19,10 +15,7 @@ merely contains "when"** — e.g. `"Created when the file is accepted"`,
 is an outcome name, and it flattens to a directly-named `test "Created when
 the file is accepted" do …`.
 
-When the outcome is a **single assertion over values already in scope** (the
-shared arrangement and actuation at the top of the feature context), **name the
-`test` directly and use no context** — a context that only holds a bare test adds
-a nesting level that carries no information. The name belongs on the test itself.
+When the outcome is a **single assertion over values already in scope** (the shared arrangement and actuation at the top of the feature context), **name the `test` directly and use no context**. A context that only holds a bare test adds a nesting level that carries no information. The name belongs on the test itself.
 
 ```ruby
 # No local setup needed → named test, no context
@@ -60,3 +53,4 @@ test-name-is-prefix rule.
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

@@ -37,9 +37,7 @@ declined: the scripts Waytide ships are all authored here, so the rule already c
 Waytide is responsible for.
 
 **Why the bit has to be committed, not applied locally.** A `chmod +x` that is never committed
-lives on one machine. Everyone else clones a file that will not run, and the failure arrives as
-a permission error at the moment they most expect the script to work — with nothing to suggest
-that the cause is a missing mode rather than a broken script.
+lives on one machine. Everyone else clones a file that will not run. The failure arrives as a permission error at the moment they most expect the script to work — with nothing to suggest that the cause is a missing mode rather than a broken script.
 
 **Why the two are stated together.** Each is useless alone. A shebang without the bit is a
 comment. The bit without a shebang runs the file under whatever shell happens to invoke it,
@@ -126,10 +124,10 @@ than something each person reconstructs. The cost is remembering `chmod +x` once
 
 **How to apply:** when adding a `.sh` file, open it with `#!/bin/sh` and set its executable bit
 before committing it. Confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
-every script, including one fetched with `curl`. Give it a usage line in its header naming the
-command that runs it, written from the directory that command is typed in — `./name.sh` for a
-script at this repository's root, the path form for a script inside a package, and `sh name.sh`
-only for one delivered by `curl`, there and wherever its install is documented. Where the script
+every script, including one fetched with `curl`. Give it a usage line in its header naming the command that runs it, written from the directory
+that command is typed in. Write `./name.sh` for a script at this repository's root, the path form
+for a script inside a package, and `sh name.sh` only for one delivered by `curl` — there and
+wherever its install is documented. Where the script
 is run by the harness rather than by a person, record its invocation and say what runs it. When
 reviewing a script someone added, check the mode before anything else — it is the one defect that
 will not show up until another machine runs it.
@@ -146,3 +144,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 5:48:30 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:35:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT

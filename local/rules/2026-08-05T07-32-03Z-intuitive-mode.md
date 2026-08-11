@@ -18,9 +18,7 @@ rule holds the system's account.
 `waytide/local/intention/`. A design and an aspiration answer *what are we going
 toward*. A plan and an intention answer *what are we going to do*.
 
-**The conventions are identical in the two modes.** An aspiration is written exactly as a design
-is, an intention exactly as a plan is — the same document shapes, the same dated **Settled**
-resolutions, the same behavior-stated checkbox tasks, the same supersession. The mode changes
+**The conventions are identical in the two modes.** An aspiration is written exactly as a design is, an intention exactly as a plan is. The same document shapes, the same dated **Settled** resolutions, the same behavior-stated checkbox tasks, the same supersession. The mode changes
 the vocabulary and the directory and no obligation. The design-convention,
 plans-convention, design-document-format, and plan-document-format rules govern the two modes
 and each names the two directories.
@@ -48,3 +46,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
