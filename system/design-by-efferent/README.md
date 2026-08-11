@@ -1,6 +1,6 @@
 # Waytide — design-by-efferent
 
-**Design By Efferent** (DBE). Human-in-the-loop, efferent-first design method. An updated TDD variant with accommodations for AI: tests are the vehicle and design is the point — the **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface outside-in.
+**Design By Efferent** (DBE). Human-in-the-loop, efferent-first design method. An updated TDD variant with accommodations for AI. Tests are the vehicle and design is the point. The **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface outside-in.
 
 The one-liner:
 
@@ -51,7 +51,7 @@ design-by-efferent  →  foundation, language, testing
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
 
 ```
 git subtree add  --prefix waytide/system/design-by-efferent https://github.com/waytide/design-by-efferent.git master --squash
@@ -69,7 +69,7 @@ git subtree pull --prefix waytide/system/design-by-efferent https://github.com/w
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT

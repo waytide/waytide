@@ -21,14 +21,14 @@ When adding coverage for behavior that already exists, all five are in play:
 **Why:** the hinges are the mechanism for handing each design decision to the human
 at its gate. A coverage test has genuine design decisions — especially its controls
 and observations — so it earns the same wait. What separates coverage from design is
-**not** the absence of hinges: it is that no behavior is being designed and no red
-is driven (see the companion rule — TDD designs, coverage prevents. Never break an
-implementation to introduce a test).
+**not** the absence of hinges. It is that no behavior is being designed and no red
+is driven. See the companion rule: TDD designs, coverage prevents, and an
+implementation is never broken to introduce a test.
 
-**How to apply:** design a coverage test through the hinges as usual — actuation,
-controls, observation, naming — with a wait at each for the human. Treat the
-implementation hinge as a confirmation step (run, show verified), sending any
-awkwardness back to the test, not the implementation.
+**How to apply:** design a coverage test through the hinges as usual. They are actuation,
+controls, observation, and naming, with a wait at each for the human. Treat the
+implementation hinge as a confirmation step: run it, and show it verified. Send any
+awkwardness back to the test, not to the implementation.
 
 Related:
 
@@ -44,3 +44,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT

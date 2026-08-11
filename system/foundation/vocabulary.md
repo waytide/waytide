@@ -5,7 +5,7 @@ enforces. These are the terms every other package and every project uses, becaus
 defines the artifacts the rest of the system writes into. Binding — use these terms and swaps in
 rules, artifacts, prose, and dialogue.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+**Every word here is one of three things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
@@ -105,15 +105,14 @@ names two words, and each of these names one.
   discontinued because `transfer` covers it and is a **verb**, so no word-for-word replacement
   exists: the sentence is rewritten rather than patched. *The naming gate offers the same handoff
   as the actuation gate* becomes *the naming gate transfers responsibility the same way the
-  actuation gate does*. This is the case STE Rule 9.1 names — use a different sentence
-  construction where a word-for-word replacement is not sufficient — and it is the first one
+  actuation gate does*. This is the case STE Rule 9.1 names: use a different sentence
+  construction where a word-for-word replacement is not sufficient. It is the first one
   Waytide has recorded.
 
 ### Finer distinctions
 
-- **work session record** — always carrying **work**. Bare *session* is ambiguous: a reader can
-  supply a shell session, a therapy session, or a parliamentary one, and the shell reading is
-  the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
+- **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
+  parliamentary one, and the shell reading is the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
   prompt that offers to write one, in the record's own title (`# Work Session — <name> (<date>)`),
   in the directory name (`waytide/local/work-sessions/`), and in prose about either.
 
@@ -128,3 +127,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT

@@ -1,12 +1,12 @@
 # Always show the test once the unit has been implemented
 
-In the loop, after the actuation gate — once the unit is brought into existence and the test is run to confirm — **display the just-satisfied test (and the run result) without being asked.** Do not wait for a "show me the test" request. At the moment of implementation, the human always sees the test the implementation now satisfies.
+In the loop, after the actuation gate, **display the just-satisfied test and the run result without being asked.** That is once the unit is brought into existence and the test is run to confirm. Do not wait for a "show me the test" request. At the moment of implementation, the human always sees the test the implementation now satisfies.
 
-**Why:** the test is the cradle — the efferent contract the implementation answers to. Seeing it alongside the confirmed implementation is what lets the human judge **solubility** (how readily the unit dissolves into use) against the actual observed behavior, which is the next gate. Surfacing it automatically keeps the loop's load-bearing artifact in view instead of making the human ask for it each turn.
+**Why:** the test is the cradle — the efferent contract the implementation answers to. Seeing it alongside the confirmed implementation is what lets the human judge **solubility** against the actual observed behavior. Solubility is how readily the unit dissolves into use, and it is the next gate. Surfacing it automatically keeps the loop's load-bearing artifact in view instead of making the human ask for it each turn.
 
 **The implementation is shown with them, and leads.** The solubility verdict is made on the code, so the implementation goes on screen ahead of the test and the run output. The loop does not move on before it is there. See the what-each-hinge-displays rule, which carries this as hinge 4's display.
 
-**How to apply:** when reporting that the unit is implemented and the test confirms, include the implementation, then the test file's content and the run output, in the same turn, then hand over the solubility gate.
+**How to apply:** when reporting that the unit is implemented and the test confirms, include the implementation in the same turn. Include the test file's content and the run output too. Then hand over the solubility gate.
 
 Related:
 
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT

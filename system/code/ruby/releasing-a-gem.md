@@ -17,7 +17,7 @@ One place holds it, so a release changes one line. A version duplicated into a c
 second thing to keep true, and the gemspec is the copy that is actually published.
 
 **The gem name takes the `evt-` prefix**, and a multi-word name joins its words with an
-underscore — `evt-file_store`, in a repository whose directory is `file-store`. The directory name
+underscore. `evt-file_store` sits in a repository whose directory is `file-store`. The directory name
 and the gem name are not the same string and are not derived from each other. The gemspec
 states the gem name, and it is the authority.
 
@@ -32,12 +32,11 @@ gem push <name>-<version>.gem
 version it was built from. `gem push` publishes that file.
 
 **A published version is permanent.** RubyGems will not accept a second push of a version that
-already exists, and yanking one does not free the number. That is the concrete form of the
-irreversibility the `versioning` package cites as the reason the next version is put to the
+already exists, and yanking one does not free the number. That is the concrete form of the irreversibility the `versioning` package cites. It is the reason the next version is put to the
 engineer rather than decided.
 
 **Why:** where a version is recorded, and what commands build and publish it, are facts about
-RubyGems — a project packaged another way records and publishes it differently, and would find
+RubyGems. A project packaged another way records and publishes it differently, and would find
 none of this applicable. Held here, the `versioning` package stays usable by any project
 whatever it is packaged with, and a Ruby project still gets the concrete answer. The split is
 the ordinary one: the general part is substantial on its own, so separating it costs nothing.
@@ -59,3 +58,4 @@ Changed by Scott Bellware on Tue Aug 4 2026 at 10:04:18 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
