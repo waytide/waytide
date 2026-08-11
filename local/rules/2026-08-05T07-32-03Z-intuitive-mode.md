@@ -7,7 +7,7 @@ an **aspiration**, in `waytide/local/aspiration/`, and its sequencing artifact i
 is fixed — a project's mode does not change after initiation.
 
 **Everything below explains the mode and binds nothing.** It is written out so this file
-stands on its own, and it describes the system as it stood when this project was started,
+stands on its own. It describes the system as it stood when this project was started,
 which is the date in this filename. Waytide's own `a-project-works-in-a-mode-chosen-at-the-start`
 rule holds the system's account.
 
@@ -24,17 +24,17 @@ plans-convention, design-document-format, and plan-document-format rules govern 
 and each names the two directories.
 
 **Why a mode that changes no obligation is worth having.** A word is not a label applied to a
-thought after the fact — it is the thought's working surface, so choosing a word chooses a
+thought after the fact. It is the thought's working surface, so choosing a word chooses a
 concept. A engineer writing an *aspiration* is doing something different from one writing a
 *design*, and the difference is in them rather than in the document.
 
-**Why:** the words a project plans in are load-bearing, so which pair it uses is a binding
-convention rather than a preference, and it belongs where the project's binding conventions
+**Why:** the words a project plans in are load-bearing. So which pair it uses is a binding
+convention rather than a preference. It belongs where the project's binding conventions
 are read.
 
 **How to apply:** write this project's settled direction as an aspiration in
-`waytide/local/aspiration/` and its sequencing as an intention in `waytide/local/intention/`,
-following the four planning rules unchanged. Do not use `waytide/local/design/` or
+`waytide/local/aspiration/`. Write its sequencing as an intention in `waytide/local/intention/`.
+Follow the four planning rules unchanged. Do not use `waytide/local/design/` or
 `waytide/local/plans/` here.
 
 ---
@@ -47,3 +47,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT

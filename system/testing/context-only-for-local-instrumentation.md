@@ -4,7 +4,10 @@ A `test` block holds **exactly one assertion** and nothing else (per the
 test-block-is-assertion-only rule). Naming an outcome does **not** require a
 `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
-Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. An **explaining variable derived for it**, or a **`comment`/`detail`** specific to it — **or** when the context is a **leading `When …` condition** (a condition promoted to a context, per the assert-raises rule). The context exists to hold that local setup alongside the bare test, or to
+Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable derived for it**, or a
+**`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading
+`When …` condition**, which is a condition promoted to a context, per the assert-raises
+rule. The context exists to hold that local setup alongside the bare test, or to
 name the condition.
 
 **The `When` exception is narrow — a *leading* `When …` only.** A context named
@@ -15,7 +18,9 @@ merely contains "when"** — e.g. `"Created when the file is accepted"`,
 is an outcome name, and it flattens to a directly-named `test "Created when
 the file is accepted" do …`.
 
-When the outcome is a **single assertion over values already in scope** (the shared arrangement and actuation at the top of the feature context), **name the `test` directly and use no context**. A context that only holds a bare test adds a nesting level that carries no information. The name belongs on the test itself.
+The outcome may be a **single assertion over values already in scope**, meaning the
+shared arrangement and actuation at the top of the feature context. There, **name the
+`test` directly and use no context**. A context that only holds a bare test adds a nesting level that carries no information. The name belongs on the test itself.
 
 ```ruby
 # No local setup needed → named test, no context
@@ -33,17 +38,16 @@ context "Status" do
 end
 ```
 
-**Why:** a context should *mean something* — "there is local instrumentation
+**Why:** a context should *mean something*, namely "there is local instrumentation
 here." A bare `test` inside a `context "name"` whose only content is the
-assertion wastes the context: the name could sit on the `test`. Reserving
+assertion wastes the context. The name could sit on the `test`. Reserving
 contexts for outcomes that actually derive a local variable or add local
 narration keeps the structure honest and flatter.
 
 **How to apply:** name the `test` directly unless the outcome derives its own
 explaining variable, adds an outcome-local `comment`/`detail`, or is a leading
-`When …` condition. Only then enclose it in a `context`. When flattening an
-over-nested test, flatten **only** when there is no code between the context and
-the `test` (the context holds nothing but the test) **and** the context is not a
+`When …` condition. Only then enclose it in a `context`. When flattening an over-nested test, flatten **only** where there is no code between the context and
+the `test`, so the context holds nothing but the test. The context must **also** not be a
 leading `When …` condition.
 
 Related:
@@ -58,3 +62,4 @@ Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT

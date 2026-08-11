@@ -52,9 +52,7 @@ versioning          →  (nothing — standalone)
 
 ## Using a package in a project
 
-A consuming project installs a package with `git subtree`, which places the
-package's files physically into the project's `waytide/system/` tree so they are
-committed alongside the code and read at session start:
+A consuming project installs a package with `git subtree`. That places the package's files physically into the project's `waytide/system/` tree, so they are committed alongside the code and read at session start:
 
 ```
 git subtree add  --prefix waytide/system/testing https://github.com/waytide/testing.git master --squash
@@ -96,22 +94,16 @@ curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
 sh install-all.sh
 ```
 
-`sh install-all.sh`, not `./install-all.sh`. The file is committed executable, but `curl`
-transfers content and not file metadata, so the copy it writes is not executable whatever
-mode the original carries. Every other script here is invoked as itself, because every other
+`sh install-all.sh`, not `./install-all.sh`. The file is committed executable. But `curl` transfers content and not file metadata, so the copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other
 script reaches a project by `git subtree`, which does preserve the mode.
 
 ## Project-local rules
 
-Rules specific to a single project live under a `local/` directory that mirrors
-the package categories (`local/language`, `local/testing`, `local/code/ruby`)
-and is never split or pushed, so a project-specific rule cannot leak upstream.
+Rules specific to a single project live under a `local/` directory that mirrors the package categories, such as `local/language`, `local/testing`, and `local/code/ruby`. It is never split or pushed, so a project-specific rule cannot leak upstream.
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available
-and free to use, and not open source in the strict sense, since it does not permit
-modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 
 ---
 
