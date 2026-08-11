@@ -265,9 +265,47 @@ measurement reads a list of eight items as one sentence of sixty words. Five suc
 created by this experiment's own rewrites and then reported as over-length sentences. They are
 not, and the count is not corrected for them.
 
+## Three transformations damaged the corpus — 2026-08-10
+
+**This is the experiment's second transferable finding, and it cost more than the first.** A
+transformation applied to prose and checked by sampling damages the prose, and the damage is not
+found by the sample. It happened three times, each with a different rule, and the third was
+committed and pushed under an assurance that it was clean.
+
+| The transformation | Splits | Damage | How it was found |
+|---|---|---|---|
+| `both` → `the two` | 103 | 9 broken sentences | Reading the diff |
+| `, which` → `. It` | 212 | 8 broken sentences, one split inside a code span | Reading a sample |
+| Coordination → sentence break | 808 | **36 broken sentences** | Reading an unrelated file, after the commit |
+
+**The first two were caught before they landed.** `both` cannot become *the two* where it is an
+appositive after a compound subject — *the read instruction and the binding rule both name it*.
+`, which` cannot become `. It` where `which` is the clause's object — *which the rule left
+unexplained*.
+
+**The third was not.** Splitting on a coordinator severs a subject from its predicate wherever the
+coordinator was joining a **serial list** or an **apposition** rather than two clauses.
+`foundation`, *the base every other package builds on, cites all six* became `foundation`. *The
+base every other package builds on. Cites all six* — a fragment, then a sentence with no subject.
+
+**What made the third worse is not its size.** It is that a check was run and reported clean. The
+check looked for conjunctions opening a sentence and for `It` substituted badly, because those
+were the failures the first two produced. It did not look for a subject severed from its
+predicate, which is the failure this transformation produces. **A check written from the last
+failure does not find the next one.**
+
+**The commit was reverted rather than repaired**, on the engineer's decision, and the revert is in
+the history beside it. Repairing the 36 would have rested on the detector having found all of
+them, which is the assurance that had just failed.
+
+**What replaces it.** Each sentence is composed and read, in groups, rather than transformed and
+sampled. That is not a guarantee — the reading is still the only check — but it fails one sentence
+at a time instead of eight hundred at once.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 2:27:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 5:12:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:09 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:01:18 PM PT
