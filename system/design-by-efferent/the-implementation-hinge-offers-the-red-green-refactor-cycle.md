@@ -30,7 +30,9 @@ The implementation hinge is degenerate in that case. See the
 the-design-of-a-test-waits-at-the-hinges-including-coverage rule. So the second candidate is offered
 only where it is actually available, rather than being offered and then refused.
 
-**Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing. What
+**Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing.
+
+What
 that rejects is the **unchosen** case. An engineer selecting the cycle at a gate, for this unit,
 has made a design judgment, which is the opposite of ceremony. The loop stopped, a person
 weighed two real alternatives, and the choice was theirs. The rule and this one do not conflict,
@@ -50,7 +52,9 @@ dbe-as-design-tool calls a ritual — motion with no design in it.
 present-every-prompt rule forbids manufacturing cosmetic options to reach two. The
 implementation hinge frequently has one obvious implementation, which makes it the hinge most
 tempted to pad. This candidate is not padding: it is a different way of producing the
-implementation, chosen for reasons that apply to some units and not others. But it does not excuse the search. Where a hinge has a real second implementation, that is the option to surface. The cycle is not a substitute for looking.
+implementation, chosen for reasons that apply to some units and not others.
+
+But it does not excuse the search. Where a hinge has a real second implementation, that is the option to surface. The cycle is not a substitute for looking.
 
 **Why:** whether to drive a unit's implementation through a failing test is a judgment about
 that unit. It turns on how confident the design is, whether the test's discrimination is in
@@ -86,3 +90,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

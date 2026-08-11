@@ -20,7 +20,9 @@ offering the two of them pads the gate.
 
 **An omitted argument is a candidate.** `upload.(file)` beside `upload.(file, retries: 3)` is a
 real pair. The first makes the retry policy the object's own and leaves every use site identical.
-The second makes every use site state the count. **Whether a value reaches the use site is the
+The second makes every use site state the count.
+
+**Whether a value reaches the use site is the
 efferent decision.** So an absent parameter is a choice about the interface rather than the lack of
 one. This is the case most easily discarded, because the shorter shape reads as the other one with
 something missing.
@@ -43,7 +45,19 @@ omitted-argument shape is discarded as no shape at all.
 
 **Why:** The actuation is the cradle and the highest-leverage hinge (human-in-the-loop rule, step 1: "the AI may propose the actuation… asks rather than averaging"). Concrete alternatives make the deliberation tractable and provoke origination. The mandatory escape keeps the human above the AI's mean when the right actuation is one the AI couldn't produce. Together they let the AI carry the proposing work without pulling the human's judgment down to the mean.
 
-**How to apply:** At the first gate, generate a few genuinely distinct candidate actuations. They are different efferent shapes rather than cosmetic variants. Present each as it would read at the use site. **Judge distinctness by what the use site states.** Keep a shape that omits an argument. Drop a chained construction and a varied receiver. Offer them through the selection UI, whose built-in free-text choice *is* the origination escape. Do not add an escape option of your own. See the present-every-prompt rule. If the human chooses one, adopt it as the cradle. If the human originates instead, take their dictated actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled. **When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the escape still open. **Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the hinge-cycle rule. This mechanism is the candidates as options, with the escape. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the hinge-cycle rule.
+**How to apply:** At the first gate, generate a few genuinely distinct candidate actuations. They are different efferent shapes rather than cosmetic variants. Present each as it would read at the use site.
+
+**Judge distinctness by what the use site states.** Keep a shape that omits an argument. Drop a chained construction and a varied receiver.
+
+Offer them through the selection UI, whose built-in free-text choice *is* the origination escape. Do not add an escape option of your own. See the present-every-prompt rule.
+
+If the human chooses one, adopt it as the cradle. If the human originates instead, take their dictated actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
+
+**When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the escape still open.
+
+**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the hinge-cycle rule.
+
+This mechanism is the candidates as options, with the escape. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the hinge-cycle rule.
 
 Related:
 
@@ -65,3 +79,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

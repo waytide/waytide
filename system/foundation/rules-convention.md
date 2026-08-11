@@ -17,7 +17,9 @@ The project's **binding** rules are read at the start of every session and follo
 
 **Why:** the rules are the project's durable, in-repo conventions. They are committed alongside the code and read fresh each session rather than recalled, so they stay authoritative and current. One rule per file keeps each convention individually readable, referenceable, and revisable. The installed packages are in `waytide/system/`, and the project's own rules are in `waytide/local/rules/`. Separating the two keeps installed content distinct from the project's own work, so refreshing a package never touches a local rule.
 
-**How to apply:** read the rule files under `waytide/system/` and `waytide/local/rules/` at session start. Read `waytide/local/vocabulary.md` too, where the project has one. Hold to them. When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
+**How to apply:** read the rule files under `waytide/system/` and `waytide/local/rules/` at session start. Read `waytide/local/vocabulary.md` too, where the project has one. Hold to them.
+
+When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
 
 Related:
 
@@ -43,3 +45,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

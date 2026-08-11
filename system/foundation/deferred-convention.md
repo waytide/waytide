@@ -28,7 +28,9 @@ Some work should not interrupt the task in progress, and must not be lost. `wayt
 
 **Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately. A parked queue keeps it without derailing the task in progress. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
-**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Waits for:**` line. Continue the task. Leave an item's own content as written — a reference in it that time has overtaken is not a defect. When the wait ends, carry it out. Search for what cites the item, and correct the live artifacts among them. Then delete the file, and log that it was done. Leave historical records as written.
+**How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Waits for:**` line. Continue the task. Leave an item's own content as written — a reference in it that time has overtaken is not a defect.
+
+When the wait ends, carry it out. Search for what cites the item, and correct the live artifacts among them. Then delete the file, and log that it was done. Leave historical records as written.
 
 Related:
 
@@ -55,3 +57,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:42:20 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

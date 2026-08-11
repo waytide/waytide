@@ -25,7 +25,13 @@
 
 **Why:** a forecast recorded before the work is what turns work into an experiment. The gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch. Multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
-**How to apply:** when a question is worth a deliberate try, add a record here. It states the question. It names the upstream, experiment, and base branches, and the working location chosen at the start. It commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations. Add the canonical `**State:**` line when the record reaches one of the words. Those are **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, and **Suspended**. Update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-progress state. On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch.
+**How to apply:** when a question is worth a deliberate try, add a record here. It states the question. It names the upstream, experiment, and base branches, and the working location chosen at the start. It commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast.
+
+Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations.
+
+Add the canonical `**State:**` line when the record reaches one of the words. Those are **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, and **Suspended**. Update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-progress state.
+
+On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch.
 
 Related:
 
@@ -57,3 +63,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

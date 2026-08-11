@@ -29,7 +29,9 @@ this repository for another, or arriving from one, is planned and recorded here.
 **Why:** a transition across a repository boundary is the operation most likely to lose content
 and least likely to be recoverable when it does. It is ordered. Content has to arrive before it
 can be depended on. It has to stop being authoritative in one place before it becomes
-authoritative in another. And the state in between is a state no single repository fully describes. Planning it
+authoritative in another. And the state in between is a state no single repository fully describes.
+
+Planning it
 in the repository the content is leaving puts the plan where the content still is. Keeping
 the record afterward leaves a trail from the place a reader will look first. Without a named home, such a plan goes in with the project's sequencing artifacts, where it
 reads as ordinary build work. Or it goes into a chat, where
@@ -58,3 +60,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

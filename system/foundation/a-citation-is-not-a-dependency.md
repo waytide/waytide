@@ -35,10 +35,14 @@ seven packages name packages they do not declare. `foundation`, the base every o
 package builds on, cites all six of them in eleven rules. If a citation were a
 dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on
 `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct,
-and the only workable line between them is whether the rule functions alone. Keeping the line
+and the only workable line between them is whether the rule functions alone.
+
+Keeping the line
 at *works* rather than *is motivated* also keeps the declarations meaningful. A declared
 dependency obliges an install. Declaring one that is merely helpful would make every
-install drag in the whole system and reduce the graph to noise. This criterion was practiced before it was written. Every declaration in the system
+install drag in the whole system and reduce the graph to noise.
+
+This criterion was practiced before it was written. Every declaration in the system
 already conforms to it. Stating it here is what makes it available to a rule's author
 without their having to infer it from another rule's aside.
 
@@ -69,3 +73,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

@@ -20,7 +20,7 @@ around, and the no-green-on-arrival stance is a design concern that does not
 apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to
-introduce a test** — e.g. to "see it go red first." That inverts the relationship, making correct code fail a ritual. It forces unnatural changes to shipped code, and
+introduce a test.** Do not do it to "see it go red first." That inverts the relationship, making correct code fail a ritual. It forces unnatural changes to shipped code, and
 muddies the distinction between designing with tests and preventing regression with tests.
 There is no red to manufacture when covering behavior that already exists.
 
@@ -50,3 +50,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

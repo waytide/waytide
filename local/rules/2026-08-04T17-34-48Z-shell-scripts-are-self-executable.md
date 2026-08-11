@@ -71,6 +71,7 @@ Three forms are in use, and which one is correct is not a matter of taste:
 executable bit and the shebang are, and they are what the two requirements at the top of this rule
 ask for. The `./` prefix contributes nothing to it. It
 exists to tell the shell that the argument is a **path** rather than a name to look up on `PATH`.
+
 Any string containing a slash already says that. So `waytide/system/foundation/refresh-packages.sh` is exactly as self-executing as
 `./report-direct-commits.sh`. Neither names an interpreter, and `./` is simply what a path looks
 like when the file is in the current directory.
@@ -126,10 +127,14 @@ than something each person reconstructs. The cost is remembering `chmod +x` once
 
 **How to apply:** when adding a `.sh` file, open it with `#!/bin/sh` and set its executable bit
 before committing it. Confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
-every script, including one fetched with `curl`. Give it a usage line in its header, naming the command that runs it. Write the command from the
+every script, including one fetched with `curl`.
+
+Give it a usage line in its header, naming the command that runs it. Write the command from the
 directory it is typed in. Write `./name.sh` for a script at this repository's root. Write the path form
 for a script inside a package. Write `sh name.sh` only for one delivered by `curl`, there and
-wherever its install is documented. Where the script
+wherever its install is documented.
+
+Where the script
 is run by the harness rather than by a person, record its invocation. Say what runs it. When
 reviewing a script someone added, check the mode before anything else. It is the one defect that
 will not show up until another machine runs it.
@@ -152,3 +157,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

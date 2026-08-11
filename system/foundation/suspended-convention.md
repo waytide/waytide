@@ -56,7 +56,9 @@ enough to actually happen.
 suspended file is the artifact. The log entry is the fact that it happened.
 
 **Why:** conventions accumulate and rarely leave. A rule that no longer serves the project is ordinarily endured or deleted. It is endured because removing it feels like losing something. Once deleted, reconsidering it means reconstructing it from nothing. The two outcomes are bad, and the
-second is why the first happens. A reversible middle state makes setting something aside a small act rather than a final one. The cost of being wrong is a restore rather than a rewrite. That
+second is why the first happens.
+
+A reversible middle state makes setting something aside a small act rather than a final one. The cost of being wrong is a restore rather than a rewrite. That
 is what lets a project prune ceremony at the rate it accumulates it. Recording the reconciliations
 is what makes the reversal real: without them, restoring returns a file and leaves the system
 still arranged around its absence.
@@ -64,7 +66,9 @@ still arranged around its absence.
 **How to apply:** when something the project does no longer serves it, move it into
 `waytide/local/suspended/`. Add the `**Origin:**`, `**Kind:**`,
 `**Suspended:**`, and `**Reconciliations:**` lines. Write the reason, and what would bring it
-back. Log the suspension. To restore, reverse each reconciliation, move the file back to its
+back. Log the suspension.
+
+To restore, reverse each reconciliation, move the file back to its
 `**Origin:**`, remove the return-address lines, and log that too. Do not delete what can be suspended. Do
 not suspend what was never in use, since that is not a reversal of anything.
 
@@ -88,3 +92,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

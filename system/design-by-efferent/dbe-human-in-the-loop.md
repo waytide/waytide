@@ -1,6 +1,8 @@
 # Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar
 
-In DBE, place the human's attention only where design judgment lives — at the **hinges**. A hinge is a decision the design turns on (subtle and load-bearing. See the DBE vocabulary). Two hinges are the original pair: **setting the cradle** (the efferent shape of the actuation) and **judging solubility** (the result). The loop **waits** at the hinges so the human can **deliberate** them. Everything between is generation the AI does straight through. Never make the human wait at a red or green bar. That is the ceremony, and the ceremony only ever existed to insert human attention that now belongs at the hinges.
+In DBE, place the human's attention only where design judgment lives — at the **hinges**. A hinge is a decision the design turns on, subtle and load-bearing (see the DBE vocabulary). Two hinges are the original pair: **setting the cradle** (the efferent shape of the actuation) and **judging solubility** (the result).
+
+The loop **waits** at the hinges so the human can **deliberate** them. Everything between is generation the AI does straight through. Never make the human wait at a red or green bar. That is the ceremony, and the ceremony only ever existed to insert human attention that now belongs at the hinges.
 
 The spine of the whole thing is one pair: **the AI generates. The human deliberates.**
 
@@ -33,3 +35,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

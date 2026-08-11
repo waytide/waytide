@@ -13,11 +13,21 @@ Every time you prompt the engineer to make a choice, a decision, or an answer, p
 - **It costs one of the four option slots.** The selection UI takes at most four, so a prompt carrying `Explain` has three for genuine candidates. Most prompts have two or three, so it rarely binds. Where one genuinely has four, drop the fourth rather than the `Explain` — an engineer who cannot read the question cannot weigh a fourth candidate either.
 - **Where it appears is not the agent's to choose.** The harness renders the built-in free-text choice last, so `Explain` sits among the supplied options rather than beneath it.
 
-**The UI requires at least two options. Do not manufacture cosmetic options to reach the floor.** When the shape looks pinned, look harder for the **real underlying decision** the engineer should make — an interface-contract choice (a keyword required vs. defaulting), a return-type choice, an identity-vs-value choice. A genuine decision almost always has a real second candidate once examined. Surface it. The built-in "Other" then carries the answer the options do not contain, so the engineer is never boxed into the set.
+**The UI requires at least two options. Do not manufacture cosmetic options to reach the floor.** When the shape looks pinned, look harder for the **real underlying decision** the engineer should make. That is an interface-contract choice, such as a keyword required against defaulting. It is also a return-type choice, or an identity-against-value choice.
 
-**Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text escape. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a choice from being buried inside prose. The two-option floor is a forcing function. It pushes toward finding the real decision rather than presenting a single proposal for approval. A single proposal puts the engineer in the position of ratifying an answer rather than producing one. The `Explain` option answers the failure the rest of the rule cannot reach — a prompt that is well-formed, correctly presented, and **not understood**. Without it the engineer's recourse is the free-text box, which asks them to compose a request at the moment they are least equipped to. The agent's only signal is then a question going unanswered. Making it an option rather than a judgment call is the point. The agent is the party that cannot tell which of its own questions are unclear.
+A genuine decision almost always has a real second candidate once examined. Surface it. The built-in "Other" then carries the answer the options do not contain, so the engineer is never boxed into the set.
 
-**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design choice, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine choice, plus `Explain`. Never add your own escape option. Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants. When `Explain` is selected, answer with a summary first and a normal level of explanation beneath it. Then display the same selection prompt again, unchanged. And word that option's own description *…then display this selection prompt again*, never *put this question again*. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose.
+**Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text escape. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a choice from being buried inside prose. The two-option floor is a forcing function. It pushes toward finding the real decision rather than presenting a single proposal for approval. A single proposal puts the engineer in the position of ratifying an answer rather than producing one.
+
+The `Explain` option answers the failure the rest of the rule cannot reach — a prompt that is well-formed, correctly presented, and **not understood**. Without it the engineer's recourse is the free-text box, which asks them to compose a request at the moment they are least equipped to. The agent's only signal is then a question going unanswered.
+
+Making it an option rather than a judgment call is the point. The agent is the party that cannot tell which of its own questions are unclear.
+
+**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design choice, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine choice, plus `Explain`. Never add your own escape option.
+
+Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants.
+
+When `Explain` is selected, answer with a summary first and a normal level of explanation beneath it. Then display the same selection prompt again, unchanged. And word that option's own description *…then display this selection prompt again*, never *put this question again*. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose.
 
 Related:
 
@@ -37,3 +47,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

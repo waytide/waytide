@@ -30,7 +30,9 @@ name, so identical paths de-duplicate.
 **Why:** what command runs a suite, what its passing output says. What a script must do to parse it are all facts about a stack, and a package that disclaims a stack cannot state them.
 `git` declares itself standalone, and `testing` opens by disclaiming any framework API. Left in
 those packages, the facts made the two claims false and made the rules inapplicable to a project
-that is not Ruby. Held here, the general conventions stay general and a Ruby project still gets
+that is not Ruby.
+
+Held here, the general conventions stay general and a Ruby project still gets
 the concrete answer. The split is the ordinary one. The general part is substantial on its own,
 so separating it costs nothing and leaves each part where it belongs.
 
@@ -52,3 +54,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

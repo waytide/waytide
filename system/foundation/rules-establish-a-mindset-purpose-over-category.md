@@ -8,7 +8,9 @@ Rule folders — `terminology/`, `methodology/`, `git/`, `test-writing/`, `code/
 
 **Why:** Read as local conventions, these rules look like an arbitrary list of do-this-not-that. Read for purpose, they are one stance expressed through many levers. Naming the purpose keeps them coherent, and prevents contradictory rules from accreting in other folders. It also gives the right test for judging a rule. A rule that establishes a stance is judged by the mindset it produces, not by surface conformance. A rule that is technically obeyed while the intended stance is absent has failed.
 
-**How to apply:** When writing or evaluating a rule, ask first *"what stance does this establish?"*. Do not ask only *"what does it standardize?"*. File it by the surface it acts on, which is its folder. State its purpose, the mindset, in the rule's body. Cross-reference sibling rules that establish the same stance through a different lever, even where they live in other folders. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat folder membership as the whole of a rule's meaning.
+**How to apply:** When writing or evaluating a rule, ask first *"what stance does this establish?"*. Do not ask only *"what does it standardize?"*. File it by the surface it acts on, which is its folder.
+
+State its purpose, the mindset, in the rule's body. Cross-reference sibling rules that establish the same stance through a different lever, even where they live in other folders. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat folder membership as the whole of a rule's meaning.
 
 Related:
 
@@ -26,3 +28,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

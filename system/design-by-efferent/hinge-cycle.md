@@ -57,7 +57,7 @@ account would have answered arrives at a later hinge instead. One at a time, in 
 
 Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them — each with a mandatory escape — keeps the human originating at every hinge, where the above-the-mean choice is introduced rather than ratified. The observation and the controls especially had been smuggled in under the actuation's gate.
 
-The controls are a hinge in their own right (a non-discriminating example asserts nothing — e.g. a top-level constant can't distinguish a full name from a final segment).
+The controls are a hinge in their own right. A non-discriminating example asserts nothing, and a top-level constant cannot distinguish a full name from a final segment.
 
 **How to apply:** Give the brief account of the five hinges once, ahead of the first one, and not again. Then run the five in order (naming deferred to the feature's close).
 
@@ -90,3 +90,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

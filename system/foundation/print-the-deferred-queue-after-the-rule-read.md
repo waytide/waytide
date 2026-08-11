@@ -74,14 +74,20 @@ unaffected by this rule.
 **Why:** the deferred queue is where work goes so it is not lost, and it was the one working
 directory nothing reported. The working directories are not read at session start. The
 session-start notice covers only experiments and features that have not concluded. The
-`next-deferred-item` command reaches the queue only when someone thinks to ask. So an item was surfaced only by deliberate looking. Printing it at the moment the rules are read costs
+`next-deferred-item` command reaches the queue only when someone thinks to ask. So an item was surfaced only by deliberate looking.
+
+Printing it at the moment the rules are read costs
 one list, once, at the point the engineer is deciding what the session is for. That is
-exactly when the queue is worth seeing. Putting it after the read rather than in the notice
+exactly when the queue is worth seeing.
+
+Putting it after the read rather than in the notice
 is what keeps it from becoming furniture. The notice would carry it every session in the same
 place. The failure of a permanent line is that it stops being read.
 
 **How to apply:** after reading the rule files at the start of a session, read `waytide/local/deferred/`. Print one row per item: the title, the date from the filename prefix, and a one-line summary. Order the rows by the items' `**Priority:**` ranks, with unranked items last, and state the count. Where no item is ranked, order by filename prefix and
-mark nothing. Where the queue is empty, print a
+mark nothing.
+
+Where the queue is empty, print a
 line saying so. Then wait for the engineer's request. Do not print a Waytide installation
 notice, which remains the harness's and is prohibited to the agent.
 
@@ -108,3 +114,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:42:20 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

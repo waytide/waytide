@@ -50,7 +50,9 @@ that a record was changed after the fact, and on what grounds. That is the trail
 
 **Why:** records are left as written because a record is evidence. Evidence that
 is revised to suit the present is not evidence. That reason does not extend to content the project had no standing to publish. Leaving it in place does not preserve evidence. It continues
-a disclosure. Reducing resolution satisfies the two — the evidence survives, and what was not the
+a disclosure.
+
+Reducing resolution satisfies the two — the evidence survives, and what was not the
 project's to say stops being said. An agent may expose something on the grounds that a record is immutable, or scrub a record on a guess about what is sensitive. Naming the engineer as the authority keeps it from either.
 
 **How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it.
@@ -70,3 +72,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

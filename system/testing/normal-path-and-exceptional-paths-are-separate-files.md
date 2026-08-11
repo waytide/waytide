@@ -6,7 +6,9 @@ normal path and one exceptional path is two files, not one file with two context
 
 The mechanical reason is the actuation. A test file actuates the concern **once**, at
 the top of the feature context. It asserts each outcome of that one actuation in its own
-nested context. See the tdd-test-structure rule. An exceptional path cannot share that
+nested context. See the tdd-test-structure rule.
+
+An exceptional path cannot share that
 actuation. The actuation is inside an `assert_raises` and produces no result to observe.
 The outcomes of the normal-path actuation are not established when it runs. Two
 actuations in one file are two sets of controls sitting side by side, each inert to the other.
@@ -53,3 +55,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

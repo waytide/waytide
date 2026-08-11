@@ -19,6 +19,7 @@ version-scheme rule.
 **Why the agent does not decide.** Which segment increases is a claim about what the change
 means **to the people using the package**. It says whether their code still works, whether they
 have to read anything, and whether they have to change anything. That is not derivable from the diff.
+
 An agent can see what the code did. It cannot see who depends on which part of it,
 what was documented as supported, or what was incidental against what was promised. A version is a promise to
 users, and the agent is not in a position to make it.
@@ -35,7 +36,9 @@ resulting version is shown too, since it is what will be written and committed.
 
 **Why:** two facts decide this. The choice is a claim about other people's
 code, and it cannot be taken back once published. Either alone would argue for putting it
-to a person. Together they settle it. Offering the candidates rather than asking for a version outright is what keeps the choice about the claim. The engineer weighs three statements
+to a person. Together they settle it.
+
+Offering the candidates rather than asking for a version outright is what keeps the choice about the claim. The engineer weighs three statements
 about compatibility instead of typing a number. That is the same reason a hinge presents
 options rather than a fait accompli.
 
@@ -60,3 +63,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

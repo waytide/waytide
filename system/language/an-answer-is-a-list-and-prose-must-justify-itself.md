@@ -91,7 +91,9 @@ necessary. An agent that compresses badly will also decide badly whether it comp
 **It is left as a judgment on purpose, and experience decides whether it stays one.** The rule is
 not tightened before there is proof that it needs to be tightened. The cost of tightening is real.
 The alternatives replace the judgment with a mechanical condition. Each is more reliable, and each
-adds noise. **Appending the line to every list answer**
+adds noise.
+
+**Appending the line to every list answer**
 cannot be got wrong. It puts the same sentence under every answer, which is how a line stops being
 read. **Appending it above a length threshold**
 removes the most pointless instances and still fires on answers that say all they have. Either is
@@ -104,8 +106,11 @@ with nothing in it is visible as a line with nothing in it. The engineer this wa
 makes the difference survive a session boundary.
 
 **How to apply:** answer in a list. State facts in it. Remove any item that describes a choice or explains an unasked-for reason. Remove any item that characterizes the work, or reports what the agent did to be sure.
+
 Test each survivor by whether it could be false. Number the list where its items depend on each
-other, and leave it unordered where they do not. Write prose only where the answer is a sentence or two. Do not
+other, and leave it unordered where they do not.
+
+Write prose only where the answer is a sentence or two. Do not
 reach for it because an explanation was requested, or because the reasoning is connected. The first
 is not a justification, and the second is served by numbering. Where the answer left something out,
 end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the
@@ -131,3 +136,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

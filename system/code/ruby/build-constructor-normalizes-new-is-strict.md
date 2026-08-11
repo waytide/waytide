@@ -12,10 +12,7 @@ A domain class has two construction paths, with distinct jobs:
 
 For example, `Upload::Result` records the outcome of an upload, and it is a small
 family — `Success` and `Rejected`. Each subtype's `new` is strict: it assigns
-fields already in final form. The supertype's `build` is the forgiving factory —
-it takes the raw response, normalizes it (reads the status, decides success vs.
-rejection, extracts the fields that outcome carries), and constructs the right
-subtype:
+fields already in final form. The supertype's `build` is the forgiving factory. It takes the raw response and normalizes it, reading the status, deciding success against rejection, and extracting the fields that outcome carries. Then it constructs the right subtype:
 
 ```ruby
 class Upload
@@ -105,3 +102,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT

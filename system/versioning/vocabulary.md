@@ -18,9 +18,10 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
-- **product generation** *— **STE: absent.** `generation` is absent from the STE dictionary, and `product (n)` is listed with the guidance to be accurate.* — the **leading segment** of a four-segment version
+- **product generation** — the **leading segment** of a four-segment version
   (`<generation>.<major>.<minor>.<patch>`), and a **different kind of statement** from the three
-  that follow it. The semver segments answer *what does a user of this have to do?* — a
+  that follow it. **STE: absent.** `generation` is absent from the STE dictionary, and
+  `product (n)` is listed with the guidance to be accurate. The semver segments answer *what does a user of this have to do?* — a
   technical compatibility claim, derived from what changed. The generation answers *which
   product line is this?* — a **declaration**, made by product management, that a new line has
   begun. It is not derived from a change and cannot be computed from a diff. Nothing about a
@@ -37,3 +38,4 @@ Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
