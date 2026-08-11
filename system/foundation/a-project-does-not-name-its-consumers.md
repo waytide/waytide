@@ -12,7 +12,7 @@ the whole of the test, and it is narrow on purpose — see what it does not reac
 
 Three reasons, and each would be sufficient on its own:
 
-- **It inverts the dependency direction.** A package is depended *upon*; it does not depend on
+- **It inverts the dependency direction.** A package is depended *upon*. It does not depend on
   who depends on it. A package that knows its consumers has a reference running the wrong way,
   and every argument that keeps a package unaware of its use sites applies here unchanged.
 - **A maintained list drifts, and its drift is silent.** A consumer added today is absent from
@@ -32,22 +32,22 @@ whether the named project happens to consume this one. A project that is part of
 large, or a reference project the method is shown through, is named because something was
 decided about it — that is ordinary, and removing such a name would cost the record its subject.
 Waytide's own two are `website`, which is part of Waytide at large, and `constant`, the worked
-example the method is shown through; neither is named as a consumer.
+example the method is shown through. Neither is named as a consumer.
 
 **A historical record that already names one.** A record states what was true when it was
 written and is not revised to suit a later convention. The one exception is disclosure, and it is
 the disclosure rule that governs it — the correction removes the name and keeps every claim true
 by stating it at a lower resolution, and the engineer is the authority on what counts. This rule
-governs what is **written from now on**; it does not license going back through the records.
+governs what is **written from now on**. It does not license going back through the records.
 
 ## Where the operational need goes instead
 
 A tool sometimes genuinely has to reach the consuming projects — to survey them, or to drive a
-refresh across them. What it reads is **per-machine configuration outside the repository**, under
+refresh over them. What it reads is **per-machine configuration outside the repository**, under
 `~/.config/`, so the constraint holds without depending on a `.gitignore` staying correct, and so
 the list is what it actually is: one engineer's machine, not a fact about the project.
 
-The tool itself is committed and names no consumer; it reads the configuration. That split is
+The tool itself is committed and names no consumer. It reads the configuration. That split is
 what lets the tooling be shared while the list stays local.
 
 **Why:** the pull toward a consumer list is real — it is the obvious way to answer *who needs
@@ -72,3 +72,4 @@ reference obliges), and the rules-convention.
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

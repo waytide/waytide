@@ -2,7 +2,7 @@
 
 This rule carries what running a Ruby project's test suite requires that cannot be said
 without naming Ruby and TestBench. The conventions it serves are stated stack-neutrally in
-other packages and cited here; only the concrete parts live in this one.
+other packages and cited here. Only the concrete parts live in this one.
 
 **The entry point is `test/automated.rb`**, run as `ruby test/automated.rb`. That single
 command runs the whole suite. A single test file may be run directly for speed while working,
@@ -11,12 +11,12 @@ but the entry point is what a full run means.
 **Verified output reads `0 failed, 0 aborted`.** This is TestBench's own summary line, not a
 general phrasing — a run that reports it has passed, and anything else has not. The `git`
 package's run-suite-before-commit rule requires the suite to be confirmed passing before the
-commit decision is reached; this is what confirming it looks like here.
+commit decision is reached. This is what confirming it looks like here.
 
 ## The tree script
 
 The `testing` package's test-tree command calls for a **durable script** so the command is
-reproducible across sessions rather than a parser rebuilt each time. In a Ruby project that
+reproducible in every session rather than a parser rebuilt each time. In a Ruby project that
 script is a Ruby file that runs the suite, suppresses TestBench's narration, captures the
 output, and parses it — merging every file's `context`/`test` hierarchy into one tree keyed by
 name, so identical paths de-duplicate.
@@ -32,7 +32,7 @@ name, so identical paths de-duplicate.
 **Why:** what command runs a suite, what its passing output says, and what a script must do to
 parse it are all facts about a stack, and a package that disclaims a stack cannot state them —
 `git` declares itself standalone and `testing` opens by disclaiming any framework API. Left in
-those packages, the facts made both claims false and made the rules inapplicable to a project
+those packages, the facts made the two claims false and made the rules inapplicable to a project
 that is not Ruby. Held here, the general conventions stay general and a Ruby project still gets
 the concrete answer. The split is the ordinary one: the general part is substantial on its own,
 so separating it costs nothing and leaves each part where it belongs.
@@ -48,3 +48,4 @@ tree), and the lib-report-format rule in this package (the sibling command rule)
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

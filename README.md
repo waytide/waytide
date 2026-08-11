@@ -11,7 +11,7 @@ The rules were extracted from its [Constant](https://github.com/eventide-project
 project and generalized and consolidated into these packages.
 
 **This composite repository is not itself installed into a project.** It is the
-authoring source; a consuming project installs the individual component packages
+authoring source. A consuming project installs the individual component packages
 below (each has its own repository).
 
 ## Packages
@@ -36,7 +36,7 @@ below (each has its own repository).
   built or published.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs
-them; a standalone package has none. Each arrow below points from a package to the
+them. A standalone package has none. Each arrow below points from a package to the
 packages it depends on (`→` reads "includes"):
 
 ```
@@ -61,7 +61,7 @@ git subtree add  --prefix waytide/system/testing https://github.com/waytide/test
 git subtree pull --prefix waytide/system/testing https://github.com/waytide/testing.git master --squash
 ```
 
-Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them; otherwise the package is standalone.
+Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them. Otherwise the package is standalone.
 
 ### Installing all packages
 

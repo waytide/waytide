@@ -31,7 +31,7 @@ subject. Separating them also makes a feature's failure modes findable by filena
 than by reading each file for a nested `assert_raises`, and keeps a normal-path file from
 accumulating exceptional cases at its end as conditions are added.
 
-**How to apply:** when a feature has both a normal path and an exceptional path, give the
+**How to apply:** when a feature has the two a normal path and an exceptional path, give the
 feature a folder and write each in its own file — the normal path named for the feature,
 each exceptional path named for its condition. Keep the normal path's proof in its own
 file. Do not add a second, raising actuation to a normal-path file. Related: the
@@ -47,3 +47,4 @@ settled.
 Authored by Scott Bellware on Thu Jul 30 2026 at 4:53:20 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:23:44 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

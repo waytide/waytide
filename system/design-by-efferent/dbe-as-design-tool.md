@@ -12,7 +12,7 @@ The efferent test then acts as a kind of jig or harness — but more precisely a
 
 Do not regress to the average of the code you've seen — most code is poorly designed, and copying it is garbage in, garbage out. Condition on the well-designed, efferent-oriented, high-solubility code in the project and hold to its standard. Efferent in, efferent out.
 
-**Why:** Design judgment — knowing in detail what good, soluble design looks like — stays with the human. The ceremony of red-green-refactor only ever existed to put a human's attention in the loop; reproducing it as ritual wastes effort and teaches nothing. The job is to generate within the cradle the human sets, toward solubility, without performing the ceremony. This is what separates DBE from the TDD it is a variant of: tests are the vehicle, design is the point.
+**Why:** Design judgment — knowing in detail what good, soluble design looks like — stays with the human. The ceremony of red-green-refactor only ever existed to put a human's attention in the loop. Reproducing it as ritual wastes effort and teaches nothing. The job is to generate within the cradle the human sets, toward solubility, without performing the ceremony. This is what separates DBE from the TDD it is a variant of: tests are the vehicle, design is the point.
 
 **How to apply:** Write the efferent test first and treat it as a cradle for generation, not a pass/fail gate — do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward, hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general. Related: the DBE vocabulary (cradle, efferent, solubility), the human-in-the-loop rule, the first-turn rule, the "TDD designs, coverage prevents" rule, and the the-implementation-hinge-offers-the-red-green-refactor-cycle rule (the chosen cycle this does not reject).
 
@@ -22,3 +22,4 @@ Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

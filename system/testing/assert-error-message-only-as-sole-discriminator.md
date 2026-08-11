@@ -19,13 +19,13 @@ the message distinguishes them.
 **How to apply.** For each `assert_raises`, ask: *can this exact error class be raised
 from more than one site along this actuation's execution?*
 
-- **No → class + condition suffice; assert no message.** The empty-file guard's lone
-  `Upload::Error` (one `raise` site on the empty-file path); a response check that always
+- **No → class + condition suffice. Assert no message.** The empty-file guard's lone
+  `Upload::Error` (one `raise` site on the empty-file path). A response check that always
   raises from a single line — the class and the condition already pin it.
-- **Yes → the message is the discriminator; assert it (exact content).** A multi-part
+- **Yes → the message is the discriminator. Assert it (exact content).** A multi-part
   `Upload#call` posts each part in turn, so `Upload::Error` can be raised at the **head**
   part (an earlier part the server rejects) *or* the **tail** part (the final rejected
-  part) — same class, different sites in one execution; the message (which part, which
+  part) — same class, different sites in one execution. The message (which part, which
   response) is what confirms the failure is the intended one. Likewise a two-step upload:
   the same `Upload::Error` can come from the initial post's "rejected" site *or* the
   finalize step's "rejected" site — only the message tells them apart.
@@ -40,3 +40,4 @@ failure and need no message" — made into a precise, testable criterion. Relate
 
 Authored by Scott Bellware on Fri Jul 3 2026 at 11 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

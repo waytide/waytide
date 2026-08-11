@@ -28,7 +28,7 @@ and only one of them is versioning:
   it today is a Ruby gem. What a version means does not change with the packaging technology,
   and a rule that mixed the two would be unusable by a project that packages differently.
 
-**Why it is called versioning.** Not *release* or *packaging*: both name acts whose substance
+**Why it is called versioning.** Not *release* or *packaging*: each names an act whose substance
 is the technology-specific part — bundling a distributable and publishing it. What is left is
 not an act but a meaning. Not *version*: a version is a particular value, where this package
 governs the practice of assigning and interpreting them, and `waytide/version` would read as
@@ -62,3 +62,4 @@ git subtree pull --prefix waytide/system/versioning https://github.com/waytide/v
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

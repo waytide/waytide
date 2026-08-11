@@ -7,7 +7,7 @@ anything suspended can be **restored**.
 
 **It is an undo queue, in the sense the Command Pattern means.** Each suspended thing carries
 what it takes to **reverse its own suspension** — not merely a copy of itself, but the
-information needed to put the world back as it was. Suspending is the command; the record is
+information needed to put the world back as it was. Suspending is the command. The record is
 what makes it undoable.
 
 - **The thing itself moves.** The file is moved into `waytide/local/suspended/`, not copied and
@@ -45,8 +45,8 @@ back:
 **This is the recognizable-content form the system already uses.** The experiments-convention
 and features-convention define a canonical `**State:**` line that `session-start.sh` reads
 mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. A
-bold label, a colon, a value, optionally as a list item — one protocol across the system rather
-than a second one for this directory. Frontmatter is allowed and would also serve; it is not
+bold label, a colon, a value, optionally as a list item — one protocol in the system rather
+than a second one for this directory. Frontmatter is allowed and would also serve. It is not
 used here because there is no reason to introduce a second form where the existing one fits.
 
 **Suspension is not deletion, and restoration is not re-invention.** A thing deleted is
@@ -55,11 +55,11 @@ back as it was, with the record of why it left — which is what makes reconside
 enough to actually happen.
 
 **Suspension is recorded in the decision log**, like any decision, and so is restoration. The
-suspended file is the artifact; the log entry is the fact that it happened.
+suspended file is the artifact. The log entry is the fact that it happened.
 
 **Why:** conventions accumulate and rarely leave. A rule that has stopped earning its keep is
 ordinarily either endured, because removing it feels like losing something, or deleted, after
-which reconsidering it means reconstructing it from nothing. Both outcomes are bad, and the
+which reconsidering it means reconstructing it from nothing. The two outcomes are bad, and the
 second is why the first happens. A reversible middle state makes setting something aside a small
 act rather than a final one — the cost of being wrong is a restore rather than a rewrite — which
 is what lets a project prune ceremony at the rate it accumulates it. Recording the reconciliations
@@ -84,3 +84,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 8:28:55 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 8:33:47 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

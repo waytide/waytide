@@ -32,7 +32,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 ### Finer distinctions
 
 - **verified** governs the *report*, not the cycle. Where "green" names a state in the red/green cycle rather than a claim that behavior is confirmed, it stands — **green-on-arrival** and the **red/green loop** keep their names. Prefer "Verified: N tests" over "the suite is verified at N" (technobabble).
-- **prevent** — a test **prevents** a regression (a regression in the behavior, the delegation, the seam). The STE dictionary replaces `protect` with PREVENT, and the two differ in what they take as an object: `protect` names the thing kept safe, `prevent` names the thing stopped. Write what is stopped. Keep "guard clause" for the early-return control-flow construct; a test's role is "prevent", never "guard".
+- **prevent** — a test **prevents** a regression (a regression in the behavior, the delegation, the seam). The STE dictionary replaces `protect` with PREVENT, and the two differ in what they take as an object: `protect` names the thing kept safe, `prevent` names the thing stopped. Write what is stopped. Keep "guard clause" for the early-return control-flow construct. A test's role is "prevent", never "guard".
 
 ---
 
@@ -41,3 +41,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

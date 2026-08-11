@@ -39,7 +39,7 @@ that never ranks its items. Marking every row unranked says nothing and reads as
 rather than as a queue that has not been ranked. The marking is for the mixed case only.
 
 **A row, not a table cell.** A rendered table fixes column widths against its widest cell, so
-one long summary narrows the other two fields and wraps every row; the queue is read in a
+one long summary narrows the other two fields and wraps every row. The queue is read in a
 terminal, where that turns a scannable list into a grid to be parsed. A row wraps as prose
 and the fields stay in a fixed order, which is what a reader is actually using to scan.
 
@@ -47,7 +47,7 @@ and the fields stay in a fixed order, which is what a reader is actually using t
 the queue is a fact the engineer is given rather than one they count.
 
 **An empty queue prints a line saying so.** It does not print an empty list and does not
-print nothing. A queue that has been emptied is worth stating once; silence there would be
+print nothing. A queue that has been emptied is worth stating once. Silence there would be
 indistinguishable from the print having been skipped.
 
 **This is not the session-start notice, and it is not an exception to the rule forbidding
@@ -63,7 +63,7 @@ duplicate. This is a different thing on a different surface:
   to that one moment, it does not recur, and nothing about it competes with the notice.
 
 **It is one of two things the agent prints around the read**, and the other is the **mark**,
-at the read's head (see the initialization-rule). Both sit here
+at the read's head (see the initialization-rule). The two sit here
 for the same reason: bounded to the read, printed once, and duplicating nothing the harness
 emits. The queue is the closing bookend and the mark is the opening one.
 
@@ -106,3 +106,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

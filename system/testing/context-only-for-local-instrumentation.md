@@ -1,4 +1,4 @@
-# Enclose a test in a context only when the outcome needs local instrumentation; otherwise name the test directly
+# Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly
 
 A `test` block holds **exactly one assertion** and nothing else (per the
 test-block-is-assertion-only rule). Naming an outcome does **not** require a
@@ -15,14 +15,14 @@ name the condition.
 `"When the file is empty"` stays a context (with `test "Fails"`
 inside), even though it holds nothing but the test. But an **outcome name that
 merely contains "when"** — e.g. `"Created when the file is accepted"`,
-`"Located when the response carries a location"` — is *not* a condition context; it
+`"Located when the response carries a location"` — is *not* a condition context. It
 is an outcome name, and it flattens to a directly-named `test "Created when
 the file is accepted" do …`.
 
 When the outcome is a **single assertion over values already in scope** (the
 shared arrangement and actuation at the top of the feature context), **name the
 `test` directly and use no context** — a context that only holds a bare test adds
-a nesting level that carries no information; the name belongs on the test itself.
+a nesting level that carries no information. The name belongs on the test itself.
 
 ```ruby
 # No local setup needed → named test, no context
@@ -48,7 +48,7 @@ narration keeps the structure honest and flatter.
 
 **How to apply:** name the `test` directly unless the outcome derives its own
 explaining variable, adds an outcome-local `comment`/`detail`, or is a leading
-`When …` condition; only then enclose it in a `context`. When flattening an
+`When …` condition. Only then enclose it in a `context`. When flattening an
 over-nested test, flatten **only** when there is no code between the context and
 the `test` (the context holds nothing but the test) **and** the context is not a
 leading `When …` condition. Related: the
@@ -59,3 +59,4 @@ test-name-is-prefix rule.
 ---
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

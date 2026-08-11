@@ -13,7 +13,7 @@ AM/PM, no seconds.
 
 - **The time is the author's local time**, like the provenance footer's — an in-file date is
   written for a person to read. The form carries no timezone marker, so a reader takes it as
-  local to whoever wrote the record; the footer beneath it names the zone, and the filename
+  local to whoever wrote the record. The footer beneath it names the zone, and the filename
   prefix carries the timezone-explicit instant.
 - **The moment is the record's authoring time** — the same instant its ISO-8601-UTC filename
   prefix records, rendered in local time. For a record covering work that spanned more than
@@ -55,3 +55,4 @@ Authored by Scott Bellware on Sun Jul 26 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -38,7 +38,7 @@ it back*.
   reversed. A suspended thing is *not waiting its turn* — the project has stopped, and the
   resumption note states what would change that. Its rule is the suspended-convention.
 - **out of scope** — what a **design deliberately excludes**. It is neither queued nor set
-  aside; it is a boundary the design draws around itself, recorded in its trailing **Out of
+  aside. It is a boundary the design draws around itself, recorded in its trailing **Out of
   Scope / Deferred** section so a reader knows the omission was chosen rather than overlooked.
   Its rule is the design-convention.
 
@@ -48,7 +48,7 @@ scope** is *not here*.
 ### The rest
 
 - **projection** — a **derived** artifact that reads a record **without destroying it**. A
-  summary generated at read-time is a projection of the decision log; a work session record is a
+  summary generated at read-time is a projection of the decision log. A work session record is a
   projection of the records it is reconstituted from. The term exists to name the alternative to
   consolidation: where the impulse is to merge, rewrite, or tidy a record into something more
   readable, a projection gives the readability and leaves the record as written. A projection is
@@ -57,7 +57,7 @@ scope** is *not here*.
 - **reconcile** — to correct the **live, forward-looking** artifacts that cite something which
   has changed, moved, or been deleted. Reconciling is directed at what points *at* a thing, not
   at the thing itself, and it is confined to artifacts read as current: an observation, a
-  design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed; see the disclosure rule. A design is
+  design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
   reconciled **against** the records rather than **regenerated from** them: it is a source of
   truth a plan points back at, so rebuilding it from downstream work would invert the direction
   of authority.
@@ -70,8 +70,8 @@ scope** is *not here*.
 - **recognizable-content line** — a **bold label, a colon, and a value**, optionally as a list
   item — `- **Priority:** 3`, `**State:** active`, `**Origin:** waytide/system/…`. It is the
   system's one protocol for content that is read **mechanically** as well as by a person:
-  `session-start.sh` parses these lines. One form across the system rather than a new one per
-  directory. Frontmatter is permitted and would serve equally; it is not used where this form
+  `session-start.sh` parses these lines. One form in the system rather than a new one per
+  directory. Frontmatter is permitted and would serve equally. It is not used where this form
   already fits.
 - **transfer** — a **technical verb**: to move responsibility for the next act from one party to
   the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer
@@ -126,3 +126,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -14,7 +14,7 @@ BRANCH SWITCHED
 ========================================
 ```
 
-**Print it on every switch.** Print it when the developer asked for the switch. Print it when the
+**Print it on every switch.** Print it when the engineer asked for the switch. Print it when the
 agent switched to reach a file. Print it when the switch returns to a branch the session started
 on.
 
@@ -32,14 +32,14 @@ what happened. A reader who sees the reason knows whether it was right.
 
 **A branch switch changes what every path in the repository means.** The same filename holds
 different content. A file present on one branch is absent on another. Work committed after a
-switch lands somewhere the developer did not choose.
+switch lands somewhere the engineer did not choose.
 
 **The failure this answers is a silent switch.** The agent switches, works, and reports the work.
-The report is accurate and says nothing about where the work went. The developer finds out when a
+The report is accurate and says nothing about where the work went. The engineer finds out when a
 file is missing from the branch they expected it on.
 
 **The border is the requirement, not the decoration.** Ordinary output scrolls. A bordered block
-does not read as another line of a report. Any unmissable form satisfies this rule; `=` characters
+does not read as another line of a report. Any unmissable form satisfies this rule. `=` characters
 above and below are the settled one.
 
 ## What this does not cover
@@ -51,7 +51,7 @@ above and below are the settled one.
 - **A merge, a commit, or a push** does not move the working tree. No block.
 
 **Why:** an agent reports what it did and not where it stood, so a branch switch is the one
-operation whose effect is invisible in every later report. The developer's own record of this
+operation whose effect is invisible in every later report. The engineer's own record of this
 session is the case: the agent switched to a parent experiment branch to edit a file, stayed there
 after committing, and the next instruction was read against a branch neither party had named. A
 block that cannot be scrolled past removes the class of error rather than one instance of it.
@@ -66,3 +66,4 @@ other thing confirmed before work is recorded).
 ---
 
 Authored by Scott Bellware on Sat Aug 8 2026 at 12:23:07 AM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

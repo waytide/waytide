@@ -1,4 +1,4 @@
-# TDD designs behavior; adding coverage prevents its regression — distinct activities; never break an implementation to introduce a test
+# TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test
 
 Tests serve two different purposes in two different processes, and conflating them
 causes unnatural changes:
@@ -25,7 +25,7 @@ introduce a test** — e.g. to "see it go red first." That inverts the relations
 muddies the distinction between designing with tests and preventing regression with tests.
 There is no red to manufacture when covering behavior that already exists.
 
-**Why:** TDD's red→green belongs to design; force-fitting it onto a
+**Why:** TDD's red→green belongs to design. Force-fitting it onto a
 coverage / final-inspection process is a category error. Keeping the two distinct
 keeps design honest (tests as design proofs) and coverage honest (tests as regression
 prevention), and stops shipped implementations from being deformed to satisfy a
@@ -45,3 +45,4 @@ Authored by Scott Bellware on Wed Jul 1 2026 at 6 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -1,7 +1,7 @@
 # Loop records — `waytide/local/loops/`: one file per feature recording the cycles through the loop
 
 `waytide/local/loops/` holds **loop records** — one file per feature documenting the
-cycles through the **loop** (the distributed OODA cycle; see the DBE vocabulary).
+cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary).
 Where the decision log captures *what* was decided (one line per decision), a
 loop record captures *how* — the deliberation history of a feature: the hinges
 the AI determined, the options it put to the engineer, and the decisions the
@@ -22,7 +22,7 @@ displace (the log stays one line per decision).
 - One section per **cycle**, in order. Each cycle records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
   - **Options** — the candidates put to the engineer at the gate (or "none — no
-    gate", explicitly, when a hinge was handled without stopping; surfacing a
+    gate", explicitly, when a hinge was handled without stopping. Surfacing a
     skipped gate is part of the record's value).
   - **Decision / chat** — what the engineer chose, or the chat that ensued and
     how it resolved (record the substance of the chat, not just the outcome).
@@ -42,7 +42,7 @@ default. A record reconstructed **retroactively from memory** must be marked at
 the top as a **Backfill** (it is reconstructed after the fact, not captured live,
 so it is necessarily lossier and may miss cycles or detail).
 
-**Why:** the deliberation — the hinges and the reasoning across options — is the
+**Why:** the deliberation — the hinges and the reasoning over the options — is the
 conveyable substance of this method, and it evaporates if only the final code and
 one-line decisions survive. A per-feature narrative of the loop's cycles keeps it,
 teaches the method by example, and exposes where gates were skipped.
@@ -65,3 +65,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 12:22:15 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

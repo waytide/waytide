@@ -23,8 +23,8 @@ persisted, dated artifact, kept after the feature concludes.
   is legible at a glance and readable mechanically is what the line is for. The session-start notice reads this line to report features
   that have not concluded (see the announce-waytide-at-session-start rule).
 - **The four states.** **Completed** — integrated into the upstream branch, the ordinary
-  conclusion. **Abandoned** — dropped before completion; the branch is not merged and the
-  record is kept. **Superseded** — replaced by a different design; both records name the
+  conclusion. **Abandoned** — dropped before completion. The branch is not merged and the
+  record is kept. **Superseded** — replaced by a different design. The two records name the
   counterpart. **Suspended** — paused, not ended. They are derived from what becomes of a
   feature, not borrowed from the experiment's verdict vocabulary: a feature is not proven
   or disproven, so *affirmed*, *refuted*, and *inconclusive* have nothing to say about it.
@@ -37,8 +37,8 @@ persisted, dated artifact, kept after the feature concludes.
   the start and changes only by a worktree being added for a feature already under way —
   either because other work arrived that the user intends to work alongside it, or because
   the feature was **escalated**, judged to need more isolation than the single working tree
-  gives it. The record then **gains a line**; the original is not rewritten.
-- **The human's level of participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way; what the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
+  gives it. The record then **gains a line**. The original is not rewritten.
+- **The human's level of participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way. What the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
 - **It is the feature's lifecycle record, not its design record.** The same feature's
   design — each cycle's hinge, the options put to the engineer, and the decision — belongs
   in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
@@ -56,7 +56,7 @@ persisted, dated artifact, kept after the feature concludes.
 
 **Why:** a feature currently starts and stops without a declared state, which makes it
 impossible to say what is in flight and what concluded. Recording the lifecycle in one
-file per feature makes both legible, and keeping the record after the feature concludes
+file per feature makes each legible, and keeping the record after the feature concludes
 preserves how it was built rather than only what it produced. Keeping it separate from the
 loop record costs a second file per feature and buys a correct package dependency, which
 is the more expensive of the two to get wrong.
@@ -86,3 +86,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 2:01:18 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

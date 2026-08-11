@@ -8,12 +8,12 @@ what accounts for every place this rule departs from the experiment's.
 
 - **A branch is usual but not required.** Where a feature takes a branch it is named
   `feature/<subject>`, where `<subject>` is a short dash-separated, lower-case name of *what
-  is being built*, named literally. The upstream branch is not encoded in the name; it lives
+  is being built*, named literally. The upstream branch is not encoded in the name. It lives
   in the record. **A feature may also be built directly on the current branch** — see the
   working location below.
 - **Record the base and the upstream branch.** The baseline the feature branched from is
   captured in the record — the base commit SHA and the ref it came from — never pinned with
-  a tag. The upstream branch it merges back into is **not always `master`**; it may be
+  a tag. The upstream branch it merges back into is **not always `master`**. It may be
   another topic branch, and the record names it so the merge target is never ambiguous.
 - **The working location is chosen at the start — branch only, branch and worktree, or the
   current branch.** Each option states what it creates, rather than leaving it to be
@@ -23,7 +23,7 @@ what accounts for every place this rule departs from the experiment's.
   (`git switch -c feature/<subject>`). **Branch and worktree** — create the branch and
   check it out in a new worktree, a second working directory, while this working tree
   stays on the upstream branch (`git worktree add -b feature/<subject> <path>`). **The current
-  branch** — build the feature where the working tree already is, creating nothing; there is
+  branch** — build the feature where the working tree already is, creating nothing. There is
   no branch to switch back to at the conclusion and nothing to merge. The first two create the
   branch, since it does not exist yet at the start. **Branch only says nothing
   about the working tree** — what distinguishes it from the worktree option is whether a
@@ -34,19 +34,19 @@ what accounts for every place this rule departs from the experiment's.
   to a feature already under way. The choice is
   put to the user at **every** start, through the **AskUserQuestion** selection UI,
   with no standing default. The choice, and for a worktree its
-  **path**, go in the record; the conclusion executes the mechanics that match it.
+  **path**, go in the record. The conclusion executes the mechanics that match it.
   **The current branch is offered last, after the two branching options.** A selection's first
   option reads as the recommended one whatever the rule says about defaults, and the current
   branch is the option that gives up isolation — so putting it first would recommend by
   position what the rule declines to recommend in words. Last is where it belongs: available
   without being urged.
-- **The current-branch option is a feature's alone; an experiment never has it.** An
+- **The current-branch option is a feature's alone. An experiment never has it.** An
   experiment is a **controlled deviation from the main line** — it may be refuted or
   abandoned, and until it is affirmed its changes must not reach the branch it deviates from.
   The branch is what makes that reversible, so it is not optional there. A feature **is** the
   main line, and its changes are meant to land on it, so a branch prevents nothing
-  that is not already ordinary. The asymmetry is not a relaxation of the feature's discipline;
-  it follows from what the two kinds of work are, which is the same reasoning that gives a
+  that is not already ordinary. The asymmetry is not a relaxation of the feature's discipline.
+  It follows from what the two kinds of work are, which is the same reasoning that gives a
   feature no forecast, no verdict, and no merge gate.
 - **What the current branch costs, stated plainly.** There is no isolation: partial work sits
   on the branch others read, and abandoning the feature means reverting rather than deleting a
@@ -78,8 +78,8 @@ what accounts for every place this rule departs from the experiment's.
   loop record captures each cycle. What is chosen at the start is **the human's level of participation**:
   **attended**, where the loop stops at every hinge for the engineer, or **unattended**, where
   the agent decides each hinge and generates through. Attended is the default, and the choice
-  is put through the selection UI **beside the working location**, since both are decisions
-  about how the work will be conducted and both hold for its duration. **DBE is in effect
+  is put through the selection UI **beside the working location**, since each is a decision
+  about how the work will be conducted and each holds for its duration. **DBE is in effect
   either way** — only the stopping changes. Record it as a confirmation and declare it at the
   top of the loop record. See the design-by-efferent
   attended-or-unattended-is-chosen-at-the-start rule. This rule governs only the outside: how
@@ -87,10 +87,10 @@ what accounts for every place this rule departs from the experiment's.
 - **The states.** A feature **ends** in one of three states — **completed** (integrated
   into the upstream branch, the ordinary conclusion), **abandoned** (dropped before
   completion), or **superseded** (replaced by a different design) — or it is **suspended**
-  (paused, not ended). Every feature reaches one of these; it is never left silently open.
+  (paused, not ended). Every feature reaches one of these. It is never left silently open.
   There is no *affirmed*, *refuted*, or *inconclusive*: those judge a question, and a
   feature has an intent.
-- **Verified before integrating; nothing prevents the merge.** A feature's tests are verified
+- **Verified before integrating. Nothing prevents the merge.** A feature's tests are verified
   before it is integrated, which `run-suite-before-commit` already achieves — every commit
   on the branch having been verified. **No further gate applies at the merge.** The merged
   result is a combination neither branch ran, so a feature whose commits all passed can
@@ -98,11 +98,11 @@ what accounts for every place this rule departs from the experiment's.
   also **no affirmation step**: a feature has no finding to promote into the decision log,
   so completion is the conclusion.
 - **Abandoned and superseded keep the record.** In either the branch is not merged and the
-  record is maintained, marked with its state. When one feature supersedes another, **both
+  record is maintained, marked with its state. When one feature supersedes another, **the two
   records name the counterpart**.
 - **Suspension keeps the branch.** A suspended feature's branch is not removed and its
   record is marked suspended. With **branch only** the tree switches back to
-  the upstream branch and the branch sits dormant; under a **worktree** the worktree is kept
+  the upstream branch and the branch sits dormant. Under a **worktree** the worktree is kept
   in place and checked out, so the feature resumes where it stands.
 - **Conclude in the main working tree, on the upstream branch.** However a feature
   concludes, the user should end up on the upstream branch — with branch only
@@ -119,7 +119,7 @@ what accounts for every place this rule departs from the experiment's.
   feature branch, local or remote, requires explicit user confirmation put through the
   selection UI. Where the feature was worked in a worktree, removing the worktree precedes
   deleting the branch — git refuses to delete a branch checked out in a worktree — and
-  **one confirmation covers both**. Suspension never deletes.
+  **one confirmation covers the two**. Suspension never deletes.
 - **Record every confirmation** the lifecycle requires — the working-location choice at
   the start, the attended-or-unattended choice at the start, adding a worktree to a feature
   under way, branch deletion and worktree removal — in the feature record, so the work's authority is auditable.
@@ -136,18 +136,18 @@ in the far more common case. Mirroring the experiment's structure gives feature 
 beginning, a recorded place, and an end without inventing a second vocabulary for the same
 facts. The four departures are what keep it honest: an experiment's forecast, verdict
 states, merge gate, and affirmation all exist to answer a **question**, and a feature does
-not ask one. Copying them across would install ceremony where the justification does not
+not ask one. Copying them would establish ceremony where the justification does not
 reach — the failure the design method exists to discontinue.
 
 **How to apply:** put the working location to the user at every start — branch only,
 branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
-name it `feature/<subject>` and record the upstream branch, the feature branch, and the base;
-on the current branch, record that and the branch it is being built on. Place a worktree as a
+name it `feature/<subject>` and record the upstream branch, the feature branch, and the base.
+On the current branch, record that and the branch it is being built on. Place a worktree as a
 sibling of the repository directory named
 `<repository-name>-feature-<subject>`. Design the feature through the hinges. End it in a
 state: **completed** on integration, **abandoned** if dropped, **superseded** if replaced
-(cross-referencing both records), or **suspended** if paused. Verify before integrating and
-add no gate at the merge; fix a post-merge failure from there. On the current branch there is
+(cross-referencing the two records), or **suspended** if paused. Verify before integrating and
+add no gate at the merge. Fix a post-merge failure from there. On the current branch there is
 no merge, no branch to delete, and nothing to return to — completion is the intent being
 built, and abandonment is a revert. Otherwise leave the user on the upstream branch in the
 main working tree, confirm before deleting any branch — removing the worktree first, under one
@@ -177,3 +177,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -44,7 +44,7 @@ reservation there rejects a stated decision, so the record says which case a res
 ## A substitution is not a reservation
 
 The two are different acts. A **substitution** replaces a word Waytide rejects. A **reservation**
-keeps a word STE rejects. `conform` is both, which is why it reads as one thing.
+keeps a word STE rejects. `conform` is the two, which is why it reads as one thing.
 
 **Why:** the standard and Waytide's vocabulary disagree in a small number of places. Each
 disagreement is settled the same way every time it is met, unless a rule settles it once. The
@@ -66,3 +66,4 @@ Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

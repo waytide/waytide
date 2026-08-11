@@ -21,7 +21,7 @@ directly.** Publishing a package is a `git subtree split` that extracts one
 package's slice of the composite repo history and pushes it to that package's
 repository. Sync runs one way only: composite repo → component repositories.
 
-**The component repositories are downstream-only.** They only ever receive; they
+**The component repositories are downstream-only.** They only ever receive. They
 are never an authoring source. Do not commit directly to a component repository —
 its `master` is regenerated from this composite repo's history by `git subtree
 split`, so a direct commit is not in that history and is lost or made to conflict
@@ -41,7 +41,7 @@ the repository root. It reads each component repo's `master` and reports any com
 message this repository's history does not contain — that is, a commit made directly to the
 component repo rather than produced by a split. It fetches and pushes nothing, and exits
 non-zero when it finds something. Two such commits went unnoticed for days before the check
-existed, found only when a publish was attempted; nothing else announces them.
+existed, found only when a publish was attempted. Nothing else announces them.
 
 **Check for planning directories named in part too.** Run
 `./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
@@ -61,7 +61,7 @@ publish is a path-change case handled like the `vocabulary`→`language` rename.
 by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
 (2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s
 history depends on the prefix path. The earlier names are kept here as the record of what
-the component repos previously tracked; do not restate them as `system/`. The component
+the component repos previously tracked. Do not restate them as `system/`. The component
 repos now track the `system/<package>` split, and ordinary publishes fast-forward again —
 no further reset is due unless a path moves once more.** For such an unchanged-path publish, the
 deterministic split fast-forwards — guard for it before pushing:
@@ -116,7 +116,7 @@ is there. The remedy, in order:
 The one-time distribution that first created the component repositories is recorded in the
 **Phase B runbook and checklist**, which are **suspended** under `local/suspended/` — superseded
 by this document, and carrying a package map that no longer matches the packages. They are the
-only record of how a repository rename and a mass re-publish after a path change were done; see
+only record of how a repository rename and a mass re-publish after a path change were done. See
 the suspended-convention for restoring them.
 
 ## Push-back (fallback only)

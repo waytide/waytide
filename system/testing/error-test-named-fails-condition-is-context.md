@@ -1,6 +1,6 @@
-# An error test is named "Fails" (or "Doesn't fail"); its condition is promoted to a context
+# An error test is named "Fails" (or "Doesn't fail"). Its condition is promoted to a context
 
-When a test's assertion is that the actuation raises an error (an `assert_raises`), the `test` block's name is **"Fails"** — the actuation fails. The complementary assertion, that the actuation does **not** raise, is named **"Doesn't fail"**. The **condition** under which the actuation fails (or doesn't) is **not** part of the test name; it is promoted to a **`context`** that encloses the test and names that condition.
+When a test's assertion is that the actuation raises an error (an `assert_raises`), the `test` block's name is **"Fails"** — the actuation fails. The complementary assertion, that the actuation does **not** raise, is named **"Doesn't fail"**. The **condition** under which the actuation fails (or doesn't) is **not** part of the test name. It is promoted to a **`context`** that encloses the test and names that condition.
 
 **The tell:** if a `test` name wants the word **"when"**, that "when" clause is a *condition* — lift it into a `context`, and name the `test` "Fails" (or "Doesn't fail").
 
@@ -21,3 +21,4 @@ end
 ---
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 7 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

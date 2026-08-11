@@ -22,7 +22,7 @@ end
 its direct subclasses are the platform's own categories — `ArgumentError`, `TypeError`,
 `IOError`, `RuntimeError` itself. Extending it directly places a library's error among
 those categories, claiming a kind of failure the language defines. A library's failure is
-not a new category of that sort; it is the ordinary case of a running program declining to
+not a new category of that sort. It is the ordinary case of a running program declining to
 proceed, which is what `RuntimeError` already names. `raise "message"` with no class
 produces a `RuntimeError` for exactly that reason.
 
@@ -37,8 +37,8 @@ and its members extend that root. What the rule forbids is an intermediate class
 for organization rather than for meaning.
 
 **Why:** the parent of an error class is a claim about what kind of failure it is, and
-`StandardError` overclaims. Its direct subclasses are the language's failure taxonomy;
-joining that list says a library's error belongs beside `TypeError` as a category of its
+`StandardError` overclaims. Its direct subclasses are the language's failure taxonomy.
+Joining that list says a library's error belongs beside `TypeError` as a category of its
 own, which it does not. `RuntimeError` says the smaller, truer thing — the program ran and
 would not continue. Taking it directly also keeps every applicative error one lookup from
 its meaning: nothing sits between the class and the claim, so a reader is never sent up a
@@ -56,3 +56,4 @@ section reports the applicative error classes and which operations raise which).
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 1:26:45 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

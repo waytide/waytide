@@ -1,12 +1,12 @@
 # Never ask whether to start a task test-first — test-first is the default
 
-Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?" or otherwise put the test-first decision to the human — there is nothing to deliberate at that point; the answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
+Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?" or otherwise put the test-first decision to the human — there is nothing to deliberate at that point. The answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
 
 **What this does not cover: the human's level of participation.** Test-first is the method's **substance** —
 that design is driven from the efferent side, the test written before the implementation — and
 it is never put to the engineer, because the answer is always yes. **Attended or unattended**
 is a different question: it asks how often the loop **stops**, not what it builds. DBE is in
-effect either way, so nothing about the method is being confirmed or declined; what is chosen
+effect either way, so nothing about the method is being confirmed or declined. What is chosen
 is a batch size, and the trade has two real sides — small batches spend attention continuously
 and keep rework near zero, big batches spend none until the end and pay in rework. A question
 with a genuinely situational answer is a decision rather than a settled default, so this rule's
@@ -25,3 +25,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

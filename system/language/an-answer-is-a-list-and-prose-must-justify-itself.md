@@ -1,4 +1,4 @@
-# An answer is a list; prose must justify itself
+# An answer is a list. Prose must justify itself
 
 An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default: it is
 written where one of the conditions below applies, and those conditions are the whole of what
@@ -16,7 +16,7 @@ for a two-clause answer organizes nothing. *Yes*, *The suite passes*, *Correct �
 and I did not follow it* are answers, and a list would only put marks in front of them.
 
 **That is the whole set.** Two candidates were considered and rejected, and the reasons are worth
-keeping because both are tempting:
+keeping because each is tempting:
 
 - **An explanation the engineer asked for is not a justification.** The request is for the
   substance, not for a form. Where this was tested, every explanation asked for outright was
@@ -24,7 +24,7 @@ keeping because both are tempting:
 - **Dependent reasoning is not a justification either**, because it is answered inside the form.
   See below.
 
-## A list item states a fact; it does not narrate
+## A list item states a fact. It does not narrate
 
 **Narration is the failure the list form does not by itself prevent.** An answer can be a correct
 list of items every one of which describes the work rather than stating what is true, and it reads
@@ -50,7 +50,7 @@ scripts lack it*, *the branch is deleted* are all falsifiable. *This keeps the r
 not — it is a comment on a fact rather than a fact, and it is where narration hides.
 
 **Why the reasoning still belongs somewhere.** A rule, a record, and a commit message all carry
-why; each is written to be read as a document and its reader came for the reasoning. **An answer
+why. Each is written to be read as a document and its reader came for the reasoning. **An answer
 is not one of those.** The engineer asked something, and reasoning they did not ask for is the
 agent taking their turn to think out loud. Where the reasoning is wanted, it is asked for — which
 is what the expansion line is for.
@@ -65,7 +65,7 @@ relationship the form denied.
 `1.`, `2.`, `3.` — the dependence is carried by the form rather than escaping it.
 
 **This is why dependent reasoning is not an exception.** The problem was never prose against
-lists; it was one kind of list used where another was meant.
+lists. It was one kind of list used where another was meant.
 
 ## After a list answer, the engineer is offered an expansion
 
@@ -83,7 +83,7 @@ For more detail than bullet points, ask for an expanded answer.
   difference between this line and the trailing offer-of-more that is otherwise a defect: it points
   back at what was just said, not forward at what else might be done.
 - **It names the form being traded away**, not only the depth on offer. *More detail* alone leaves
-  a engineer to guess what an expansion would look like; *more detail than bullet points* says the
+  a engineer to guess what an expansion would look like. *more detail than bullet points* says the
   expansion is a different form of answer, which is what they would be asking for.
 
 **The known weakness, stated rather than discovered later:** the timing rests on the agent judging
@@ -96,13 +96,13 @@ the alternatives replace the judgment with a mechanical condition, and each buys
 noise. **Appending the line to every list answer** cannot be got wrong and puts the same sentence
 under every answer, which is how a line stops being read. **Appending it above a length threshold**
 removes the most pointless instances and still fires on answers that say all they have. Either is
-available if the judgment proves unreliable in use; neither is worth paying for a weakness that has
+available if the judgment proves unreliable in use. Neither is worth paying for a weakness that has
 not yet cost anything.
 
 **Why:** an agent produces prose without choosing to, and prose is where padding, editorializing,
 and unattributed back-references hide. A list forces each claim onto its own line, where a claim
 with nothing in it is visible as a line with nothing in it. The engineer this was settled with had
-stated the preference three times across a week before it was written down — and a preference
+stated the preference three times in a week before it was written down — and a preference
 restated is a rule that has not been written, because every restatement is evidence the agent does
 not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
 makes the difference survive a session boundary.
@@ -127,3 +127,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 1:02:58 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:10:48 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:28:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

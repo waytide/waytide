@@ -1,4 +1,4 @@
-# `build` is the normalizing constructor; `new` is the strict initializer
+# `build` is the normalizing constructor. `new` is the strict initializer
 
 A domain class has two construction paths, with distinct jobs:
 
@@ -56,11 +56,11 @@ end
 **Why:** separating a strict initializer from a forgiving constructor keeps `new`
 simple and predictable (just records state) while giving callers a lenient,
 normalized entry point. Normalization lives in one place (`build`), not scattered
-across call sites, so it can't be forgotten by a path that bypasses the
+through the call sites, so it can't be forgotten by a path that bypasses the
 constructor.
 
 **How to apply:** give a domain type a `build` that normalizes its inputs and
-constructs; keep `new` strict. Construct through `build`; reserve `new` for the
+constructs. Keep `new` strict. Construct through `build`. Reserve `new` for the
 internal, strict primitive. Related: the robustness-lives-at-the-class-interface
 rule (the general stance this is one case of).
 
@@ -86,7 +86,7 @@ normalization must go through `build`. **External callers always use
 
 **Why:** the supertype-as-factory relationship makes `new` a legitimate internal
 seam *for the family itself*, the way a class may use its own private constructor.
-The strict/forgiving split prevents callers from `new`'s strictness; family code
+The strict/forgiving split prevents callers from `new`'s strictness. Family code
 that has already satisfied that strictness is the factory, not a caller in that
 sense. Forcing it back through `build` would run determination logic whose outcome
 is already known.
@@ -103,3 +103,4 @@ Authored by Scott Bellware on Tue Jun 30 2026 at 1 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:53:39 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

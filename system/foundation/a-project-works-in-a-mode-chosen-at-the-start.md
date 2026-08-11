@@ -11,7 +11,7 @@ for its life. The mode decides what the project's two planning artifacts are **c
 | **OODA** | an **orientation**, in `waytide/local/orientation/` | an **action**, in `waytide/local/action/` |
 
 The pairing is on a near/far axis: a design, an aspiration, and an orientation all answer *what
-are we going toward*; a plan, an intention, and an action all answer *what are we going to do*.
+are we going toward*. A plan, an intention, and an action all answer *what are we going to do*.
 
 **Write *an intuitive-mode project*, never *an intuitive project*.** In this field *intuitive*
 means **easy to use**, and a reader meets that sense first. The compound **intuitive mode** does
@@ -47,7 +47,7 @@ to do — rather than on who performs the phase.
 
 **Here the two words are concrete, not covering.** *An orientation* and *an action* are this mode's
 working words, exactly as *a design* is formal mode's. They are unrelated to the covering terms —
-**the direction artifact** and **the sequencing artifact** — which name the class across all three
+**the direction artifact** and **the sequencing artifact** — which name the class in all three
 modes and are not any mode's vocabulary. The distinction was settled by the OODA terminology
 experiment, refuted 2026-08-05, which established that a covering term is judged on abstraction and
 that a term carrying one method's framing is less abstract than one that does not.
@@ -67,7 +67,7 @@ plans-convention, design-document-format, and plan-document-format rules govern 
 
 **Why a mode that changes no obligation is worth having.** Because a word is not a label applied
 to a thought after the fact — it is the thought's working surface, and choosing a word chooses a
-concept. That is the `language` package's premise, and the rules-install-a-mindset rule states
+concept. That is the `language` package's premise, and the rules-establish-a-mindset rule states
 the same thing from the other side: a large share of what a rule does is install a **stance**,
 and vocabulary is the most direct lever on a mental model. A engineer writing an *aspiration*
 is doing something different from a engineer writing a *design*, and the difference is in them
@@ -83,7 +83,7 @@ machinery beneath them is one machinery.
 
 **A rule that is *about* one of these artifacts names every mode's.** The design-convention,
 plans-convention, design-document-format, plan-document-format, and plans-no-code-samples rules
-each govern one of the pair, so a reader needs the concrete names in front of them; a rule whose
+each govern one of the pair, so a reader needs the concrete names in front of them. A rule whose
 whole subject is the sequencing artifact cannot coherently decline to say what it is called.
 
 **A rule that merely *mentions* one of them generalizes.** It says **the direction artifact** or
@@ -91,9 +91,9 @@ whole subject is the sequencing artifact cannot coherently decline to say what i
 planning directories** where the pair is meant collectively. It does not name
 any mode's directory, and it does not name every pair either.
 
-**Both terms end in *artifact*, and that is load-bearing.** They name a **class of file** so a
-rule can state an obligation across the pair — the same job **working-state artifact** does for
-the log entries, designs, and experiments it spans, and nobody writes one of those either; they
+**The two terms end in *artifact*, and that is load-bearing.** They name a **class of file** so a
+rule can state an obligation over the pair — the same job **working-state artifact** does for
+the log entries, designs, and experiments it spans, and nobody writes one of those either. They
 write a deferred item. The trailing class noun is what keeps a covering term from becoming a word
 the work is **done in**.
 
@@ -120,7 +120,7 @@ stronger:
   of it can go stale between refreshes.
 
 **What this gives up, stated plainly.** A rule that says *the sequencing artifact* tells a reader
-what governs but not where their own project keeps things; they reach this rule, or their
+what governs but not where their own project keeps things. They reach this rule, or their
 project's mode rule, to resolve it. That self-evidence at every site is real and is being traded
 away deliberately, on the judgment that it is not achievable at scale while remaining
 maintainable.
@@ -140,7 +140,7 @@ stopping leaves the project uninitiated until a second instruction arrives, and 
 non-decision — a engineer told that a question could be asked has no answer to give but *yes*.
 The subtler one is **announcing and then asking in the same response**: the prompt arrives, so
 nothing is blocked, and the engineer still has to read an explanation of why they are being asked
-before reaching the question. The prompt states what it needs; a preamble in front of it is the
+before reaching the question. The prompt states what it needs. A preamble in front of it is the
 agent reasoning where the engineer wanted a choice.
 
 This is the same reasoning the `design-by-efferent` never-ask-to-start-test-first rule applies to
@@ -173,13 +173,13 @@ actually in front of them.
 
 **It does not restate the case for the modes**, which is the argument above about a word being a
 thought's working surface. That is what the `Explain` option is for. The question says what the
-choice governs; the explanation says why it is worth making.
+choice governs. The explanation says why it is worth making.
 
 **Each option names its mode's two artifacts and their directories**, and nothing else. The
 engineer is choosing a vocabulary and a pair of locations, so those are what the options carry.
 
 **`install.sh` cannot do this**, and neither can any other script. The selection interface is an
-agent-side tool and the installer is a POSIX `sh` script run from a shell; a script has no way to
+agent-side tool and the installer is a POSIX `sh` script run from a shell. A script has no way to
 reach it. The mode is therefore something the **agent** establishes, not a step in an
 installation. Nor is it the concern of a tool that reaches existing projects — those are already
 started.
@@ -195,7 +195,7 @@ under that mode and which conventions are therefore active.
 the project, read unconditionally at the start of every session along with every other rule. No
 new mechanism carries it, and nothing has to be taught to read it.
 
-**The filename alone carries the mode**, which is what lets both checks below work without the
+**The filename alone carries the mode**, which is what lets the two checks below work without the
 file being opened.
 
 **The mode rule is committed, and a decision-log entry is written with it.** Writing the file is
@@ -206,9 +206,9 @@ They are restated here because this is the rule an agent reads at the moment a m
 a rule that says only *write the file* is followed exactly as far as it is written.
 
 - **The log entry** states which mode was chosen, in the log's one-line form. The mode rule
-  records that the project is in a mode; the log entry records that the choice was made and when,
+  records that the project is in a mode. The log entry records that the choice was made and when,
   which is the trail every other decision in the project leaves.
-- **The commit** carries both. An uncommitted mode rule is a mode that exists on one machine — the
+- **The commit** carries the two. An uncommitted mode rule is a mode that exists on one machine — the
   project's own convention, invisible to everyone who clones it and to every check that reads it,
   which is the same failure an uncommitted executable bit produces on a script.
 
@@ -262,7 +262,7 @@ rule holds the system's account.
 **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`. Under **OODA** they are an **orientation** and an **action**, in
 `waytide/local/orientation/` and `waytide/local/action/`. The first of each pair answers
-*what are we going toward*; the second answers *what are we going to do*.
+*what are we going toward*. The second answers *what are we going to do*.
 
 **The conventions are identical in every mode.** An aspiration is written exactly as a design
 is, an intention exactly as a plan is — the same document shapes, the same dated **Settled**
@@ -287,14 +287,14 @@ following the four planning rules unchanged. Do not use `waytide/local/design/` 
 
 **The other two fills substitute their own mode's terms throughout** — for formal, *formal mode*,
 *a design* in `waytide/local/design/`, *a plan* in `waytide/local/plans/`, and the unused
-directories named; for OODA, *OODA mode*, *an orientation* in `waytide/local/orientation/`, *an
+directories named. For OODA, *OODA mode*, *an orientation* in `waytide/local/orientation/`, *an
 action* in `waytide/local/action/`, and likewise. The formal fill restates the default at length,
-which every other rule already describes; that is the accepted cost of one template rather than
+which every other rule already describes. That is the accepted cost of one template rather than
 three shapes.
 
 **The title states the mode and its consequence**, rather than either alone. The filename already
-carries the mode, so a title repeating only that would state a label a reader cannot act on;
-a title carrying only the directories would leave the word *intuitive* nowhere in the line a
+carries the mode, so a title repeating only that would state a label a reader cannot act on.
+A title carrying only the directories would leave the word *intuitive* nowhere in the line a
 person scanning `waytide/local/rules/` actually reads.
 
 **The provenance footer is the ordinary one**, per record-rule-authorship-in-a-footer.
@@ -307,12 +307,12 @@ rule at all — is a **contradiction**, not a project in the default mode. So is
 project where only some other mode's directories hold anything.
 
 **A contradiction is surfaced and never resolved by assumption.** The agent says what it found and
-asks; it does not pick a mode and proceed.
+asks. It does not pick a mode and proceed.
 
 **The failure this exists to prevent** is a project whose mode rule is accidentally deleted.
 Without the check, its absence would read as formal, and the agent would write designs and plans
 into `design/` and `plans/` while the project's own mode directories held its actual planning
-artifacts — the project's planning split across two vocabularies, working incorrectly, with
+artifacts — the project's planning split between two vocabularies, working incorrectly, with
 nothing announcing it.
 
 ## The session-start notice does not report the mode
@@ -322,7 +322,7 @@ nothing announcing it.
 installed packages. Declining is a judgment rather than a limitation.
 
 **The notice reports live or open state, and a mode is neither.** What is installed changes on an
-install or a refresh; the experiments and features it names are the ones that have **not
+install or a refresh. The experiments and features it names are the ones that have **not
 concluded**, and the notice "grows only when there is something open". A project's mode is
 settled once and never changes, so a line reporting it would be identical every session for the
 life of the project — which is exactly the failure the announce-waytide-at-session-start rule
@@ -353,7 +353,7 @@ vocabulary and the planning directories — with each option naming its mode's t
 their directories. Write the chosen mode into
 `waytide/local/rules/` as a `formal-mode`, `intuitive-mode`, or `ooda-mode` rule with its datetime
 prefix, write a matching one-line `waytide/local/log/` entry naming the mode chosen, and commit
-both. Where
+the two. Where
 no mode rule is present, display the selection prompt at once, in a response carrying the prompt
 and nothing else — no preamble, no report of the absence, no citation of this rule. The absence is
 a question never asked, not a default, and finding it is the occasion to ask. Check the
@@ -364,10 +364,10 @@ either. In a rule that merely mentions one of the artifacts, write **the directi
 `direction` or `sequencing`, which would be a third planning vocabulary. Write **an
 intuitive-mode project**, never **an intuitive project**. Do not switch a project's mode after
 the start. Related: the design-convention and
-plans-convention (the directories, both named in each), the design-document-format and
+plans-convention (the directories, each named in its own), the design-document-format and
 plan-document-format rules (the shapes, identical in every mode), the rules-convention (where a
 local rule lives and what it looks like), the file-names rule (the datetime prefix), the
-`language` package's language-is-precise-here rule and this package's rules-install-a-mindset rule
+`language` package's language-is-precise-here rule and this package's rules-establish-a-mindset rule
 (why a vocabulary change is a real change), and the present-every-prompt-through-askuserquestion
 rule (why the choice is put through the selection interface).
 
@@ -389,3 +389,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 9:44:31 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

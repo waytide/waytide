@@ -1,4 +1,4 @@
-# Dated artifacts in `waytide/` take an ISO 8601 UTC datetime prefix; system rules do not
+# Dated artifacts in `waytide/` take an ISO 8601 UTC datetime prefix. System rules do not
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
@@ -9,15 +9,15 @@ The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-sep
 
 **Format:** `YYYY-MM-DDTHH-MM-SSZ-<name>.md` — date and time joined by `T`, the trailing `Z` marking UTC, and the time's colons written as dashes for filesystem safety (e.g. `2026-07-01T20-40-00Z-some-name.md`). The name is dash-separated and lower-case.
 
-**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written; a datetime on it is noise and buries the rule's name.
+**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
 
-That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix; a project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and deferred items.
+That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix. A project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and deferred items.
 
-**Package structural files** — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer) — take no prefix either; they are named by what they are.
+**Package structural files** — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer) — take no prefix either. They are named by what they are.
 
 **A project's own `waytide/local/vocabulary.md` takes no prefix, for the same reason.** It is a structural file rather than a dated entry: it accretes terms over the project's life and is named by what it is. That is what separates it from a local rule, which is a dated decision and takes the prefix. See the vocabulary-convention rule.
 
-**Why:** the dated artifacts are a chronological record, so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology; they are the current, durable set of conventions, so each is named for what it says.
+**Why:** the dated artifacts are a chronological record, so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable set of conventions, so each is named for what it says.
 
 **How to apply:** prefix every new working-state artifact, and every local rule a project adds, with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
 
@@ -29,3 +29,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

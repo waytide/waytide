@@ -5,7 +5,7 @@ Commit conventions for a project's git history, and the one branch operation the
 The rules in this package govern how commits are made and worded:
 
 - **No Claude co-author trailer**. Commits appear as authored by the user
-  only; omit any `Co-Authored-By: Claude …` attribution.
+  only. Omit any `Co-Authored-By: Claude …` attribution.
 - **Run the suite before considering a commit**. A passing test suite is a
   precondition of the commit decision, not a step taken after deciding to
   commit, so history stays verified at every commit.

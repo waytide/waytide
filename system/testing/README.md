@@ -3,20 +3,20 @@
 Controls-based test-writing conventions. Not tied to a specific test-framework API.
 
 **Structure and naming**
-- Actuate the concern once at the top; assert each outcome in its own nested context (`tdd-test-structure`).
-- Context nesting mirrors the folder hierarchy; a single-case feature is one file named for the feature.
+- Actuate the concern once at the top. Assert each outcome in its own nested context (`tdd-test-structure`).
+- Context nesting mirrors the folder hierarchy. A single-case feature is one file named for the feature.
 - A feature's normal path and each of its exceptional paths are **separate files** — an exceptional path cannot share the normal path's single actuation.
-- A `test` block holds only the assertion; every operand is an explaining variable declared in the enclosing context.
+- A `test` block holds only the assertion. Every operand is an explaining variable declared in the enclosing context.
 - Name a test "Is …" only for a value-equals-comparator assertion. A raised-error outcome is named "Fails" (or "Doesn't fail"), its condition promoted to a context.
-- A predicate method's context is "`<Name>` Predicate"; enclose a test in a context only when it needs local instrumentation.
+- A predicate method's context is "`<Name>` Predicate". Enclose a test in a context only when it needs local instrumentation.
 
 **Controls**
-- Local variables built by a control take the `control_` prefix; a control's string value starts with "some".
+- Local variables built by a control take the `control_` prefix. A control's string value starts with "some".
 - The known inputs — the helpers, the values, and the setup phase — are **controls**, never factories, fixtures, or "arrange".
 
 **Preconditions**
 - A **precondition** is a bare `assert`/`refute` that is not a test. It **documents a factor that decides the test's outcome** where the script doesn't express it — most often a property of a control, whose value is named rather than described.
-- It documents by **asserting**, so the clarification is checked rather than claimed; it qualifies the test rather than preventing a regression, so a failed one makes the result meaningless rather than wrong.
+- It documents by **asserting**, so the clarification is checked rather than claimed. It qualifies the test rather than preventing a regression, so a failed one makes the result meaningless rather than wrong.
 - Its predicate reads **inline**, with no explaining variable — the stated exception to the assertion-only rule — and it sits immediately before what it qualifies.
 
 **What to test**
@@ -55,3 +55,4 @@ git subtree pull --prefix waytide/system/testing https://github.com/waytide/test
 
 Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

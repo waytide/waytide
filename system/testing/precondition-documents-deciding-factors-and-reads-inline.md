@@ -45,7 +45,7 @@ factor is written as an assertion.
 unit under test and prevents its regression. A precondition observes nothing about
 that unit — it states what must already be true for the test's observation to mean anything.
 That decides how a failure reads: **when a precondition fails, the test's result is
-meaningless, not wrong.** The unit may be perfectly correct; the test simply did not exercise
+meaningless, not wrong.** The unit may be perfectly correct. The test simply did not exercise
 what it claims to.
 
 **Where one is warranted:** ask what determines this outcome, and whether the script shows
@@ -76,7 +76,7 @@ end
 
 **The predicate reads inline — no explaining variable.** The assertion's own expression
 carries the condition, read as a sentence at the point it is written:
-`refute(session.connected?)` is *the session is not connected*;
+`refute(session.connected?)` is *the session is not connected*.
 `assert(account.processed?(deposit.metadata.global_position))` is *the account has processed
 that position*. **This is a deliberate exception to the test-block-is-assertion-only rule**,
 which requires every operand inside a `test` block to be bound to an explaining variable
@@ -92,8 +92,8 @@ expression. The discipline is unchanged: nothing is bound, nothing is named, and
 actuation is written in place rather than behind a variable.
 
 **It sits immediately before what it qualifies.** Before the **actuation** when it documents a
-factor in the controls or in a prior state; before the **test** when it documents a factor in
-a value derived from the result. Both are the same construct in the same relation — the
+factor in the controls or in a prior state. Before the **test** when it documents a factor in
+a value derived from the result. The two are the same construct in the same relation — the
 precondition stands directly ahead of the thing whose meaning depends on it.
 
 ```ruby
@@ -118,7 +118,7 @@ the unit is established by one passing.
 around an actuation is a **precondition** when the controls are arranged so the actuation
 would ordinarily fail, something in that arrangement averts it, and the script does not show
 as much. It is a **test** when whether the unit raises is the thing being established. The
-same expression serves both roles, and only its purpose separates them.
+same expression serves the two of them, and only its purpose separates them.
 
 ```ruby
 control_destination = Controls::Constant.example(
@@ -170,3 +170,4 @@ Authored by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:20:47 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 5:08:21 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

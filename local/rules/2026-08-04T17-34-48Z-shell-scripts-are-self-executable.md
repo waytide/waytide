@@ -1,9 +1,9 @@
 # A shell script is self-executable — the executable bit is set and the file opens with a shebang
 
 Every `.sh` file in this repository is **runnable as itself** — `./report-direct-commits.sh`,
-never `sh report-direct-commits.sh`. Two things together make it so, and both are required:
+never `sh report-direct-commits.sh`. Two things together make it so, and each is required:
 the bit and the shebang, below. **One script is documented with an `sh` prefix even so**, because
-the copy a engineer runs is not the file this repository holds; the delivery section states when
+the copy a engineer runs is not the file this repository holds. The delivery section states when
 that applies and why the bit is set on it regardless.
 
 - **The executable bit is set**, and it is set at the moment the file is created rather than
@@ -42,7 +42,7 @@ a permission error at the moment they most expect the script to work — with no
 that the cause is a missing mode rather than a broken script.
 
 **Why the two are stated together.** Each is useless alone. A shebang without the bit is a
-comment; the bit without a shebang runs the file under whatever shell happens to invoke it,
+comment. The bit without a shebang runs the file under whatever shell happens to invoke it,
 which is how a script written for `sh` gets run by something else and fails somewhere in its
 middle.
 
@@ -51,7 +51,7 @@ middle.
 about how the file is invoked, and it is false for a script that is not executable, so the
 convention is not cosmetic tidiness but the thing that keeps each script's header true.
 
-## The usage line names the command; the command follows where the script is run from
+## The usage line names the command. The command follows where the script is run from
 
 **`./name.sh` is not the universal form, and this rule asserted that it was until 2026-08-06.**
 Throughout this section `name.sh` stands for the script's own name, which the rule left
@@ -60,7 +60,7 @@ unexplained and a reader had no way to tell from a filename.
 Three forms are in use, and which one is correct is not a matter of taste:
 
 - **`./name.sh`** — for a script that sits in the directory the command is typed in. Two scripts
-  take this form, both authoring tools at this repository's root.
+  take this form, the two authoring tools at this repository's root.
 - **The path form** — the script's location written from the directory the command is typed in,
   as in `waytide/system/foundation/refresh-packages.sh`. A packaged script is run from a
   consuming project's **root** and lives several directories below it, so `./name.sh` there names
@@ -81,7 +81,7 @@ a usage line would name a command no engineer issues. Each records its invocatio
 says why: a script whose invocation is not written down is one nobody can reproduce when the
 wiring breaks.
 
-## The bit is always set; the usage line follows how the script is delivered
+## The bit is always set. The usage line follows how the script is delivered
 
 **Every `.sh` file here carries the bit, without exception.** A script fetched with `curl` is
 committed `100755` exactly like the rest, and nothing below relaxes that. What varies is only the
@@ -91,7 +91,7 @@ committed `100755` exactly like the rest, and nothing below relaxes that. What v
   way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the
   path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this
   case — only the `curl`-fetched one is not.
-- **`curl` carries content and not file metadata.** An HTTP response body is bytes; the mode is a
+- **`curl` carries content and not file metadata.** An HTTP response body is bytes. The mode is a
   filesystem attribute and is not in it, so `curl` writes a new file at the default permissions and
   the copy is **never** executable, whatever the original's mode. A script delivered this way takes
   a usage line of **`sh name.sh`**, in its own header and everywhere its install is documented.
@@ -106,7 +106,7 @@ Waytide. And the delivery is not permanent — a script fetched by `curl` today 
 some other means later, and a file that had been left `644` because one path stripped the bit would
 then arrive broken by a path that would have carried it.
 
-**The general form:** the bit is a property of the file and is always set; the usage line is a
+**The general form:** the bit is a property of the file and is always set. The usage line is a
 claim about a particular reader's copy and follows the delivery. The two only appear to conflict
 where one reader's copy is not the file.
 
@@ -125,7 +125,7 @@ it. Committing the bit is what makes that knowledge unnecessary for everyone who
 than something each person reconstructs. The cost is remembering `chmod +x` once, at creation.
 
 **How to apply:** when adding a `.sh` file, open it with `#!/bin/sh` and set its executable bit
-before committing it; confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
+before committing it. Confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
 every script, including one fetched with `curl`. Give it a usage line in its header naming the
 command that runs it, written from the directory that command is typed in — `./name.sh` for a
 script at this repository's root, the path form for a script inside a package, and `sh name.sh`
@@ -145,3 +145,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 3:00:44 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 5:48:30 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:35:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

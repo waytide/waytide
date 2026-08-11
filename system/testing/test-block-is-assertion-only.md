@@ -1,4 +1,4 @@
-# A test block holds only the assertion; every assertion operand is an explaining variable declared in the enclosing context
+# A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context
 
 Three bound parts:
 
@@ -27,7 +27,7 @@ context "..." do
 end
 ```
 
-**Why:** The test block should read as a pure statement of the asserted truth — a single relation among named values — not a computation mixed with a check. Naming every operand (in the context, where the arranging happens) documents what each value is, gives each an inspection point, and cleanly separates *arrange* (the context) from *assert* (the test block). An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *both* operands.
+**Why:** The test block should read as a pure statement of the asserted truth — a single relation among named values — not a computation mixed with a check. Naming every operand (in the context, where the arranging happens) documents what each value is, gives each an inspection point, and cleanly separates *arrange* (the context) from *assert* (the test block). An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *the two* operands.
 
 **The three parts govern a `test` block, and a precondition is not one.** A **precondition** — a bare `assert` or `refute` that is not a test, documenting a factor that decides the test's outcome where the script does not express it — reads its predicate **inline**, with no explaining variable, and is the one stated exception to the parts above. The reasons here do not reach it: it has a single operand, so nothing is buried inside a nested expression to be parsed inside-out, and a name bound for it would only restate the predicate. See the precondition rule.
 
@@ -37,3 +37,4 @@ end
 
 Authored by Scott Bellware on Sun Jun 28 2026 at 8 AM PT
 Changed by Scott Bellware on Thu Jul 30 2026 at 4:14:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

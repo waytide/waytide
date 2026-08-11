@@ -41,7 +41,7 @@ it does not survive the session.
 
 **How to apply:** before moving content across a repository boundary, write a record here naming
 the source and destination, the increments in order, and what is true while the move is under
-way; record what happened against it as the work proceeds; and **keep the record** once the
+way. Record what happened against it as the work proceeds, and **keep the record** once the
 content has gone. Do not use the project's sequencing artifact for a move that crosses out of the
 repository, and do not delete a migration record on completion. Related: the plans-convention
 (the plan that sequences work *within* this repository), the design-convention (a migration may
@@ -54,3 +54,4 @@ Authored by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 1:03:00 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -1,4 +1,4 @@
-# Attended or unattended is chosen when the work is started; DBE is in effect either way
+# Attended or unattended is chosen when the work is started. DBE is in effect either way
 
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is
 started and held for its duration:
@@ -11,8 +11,8 @@ started and held for its duration:
 **DBE is in effect either way, and that is what makes this a cadence rather than a switch.**
 Unattended is not DBE off. The **cradle** still holds — the efferent test written before the
 implementation, the actuation designed from the use site, the generation steered toward
-**solubility**. Every hinge is still determined; what changes is who decides it. The method is
-untouched; only the stopping is.
+**solubility**. Every hinge is still determined. What changes is who decides it. The method is
+untouched. Only the stopping is.
 
 **The choice is batch size.** Attended is **small-batch**: the engineer's attention is spent
 continuously, and a wrong turn is caught at the hinge where it was taken, so rework stays near
@@ -21,8 +21,8 @@ found with everything built on top of it, so rework is the price. Which is cheap
 how load-bearing the work is and how likely the first pass is to be right — a judgment about
 *this* piece of work.
 
-**It is asked at the start, through the selection UI, beside the working location.** Both are
-choices about how the work will be conducted, both are made once, and both hold for its
+**It is asked at the start, through the selection UI, beside the working location.** The two are
+choices about how the work will be conducted, each is made once, and each holds for its
 duration — so they are put at the same gate rather than adding one. The default is attended,
 and the option set says so.
 
@@ -49,7 +49,7 @@ up. The unattended option names only the agent, because under it the engineer ha
 **The vocabulary is not being avoided, only deferred.** The hinges are named the moment the loop
 reaches the first one, where the engineer sees an actuation rather than a definition.
 
-**The mode is recorded in both records.**
+**The mode is recorded in the two records.**
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside
   the working-location choice. It is a lifecycle fact: what was chosen, when, and by whom.
@@ -101,7 +101,7 @@ the arrangement assumes it is always worth spending at a hinge. For work whose r
 negligible that assumption is wrong, and five waits buy nothing — the ceremony this
 method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
-in both modes is what stops the choice from being a way out of the method: unattended work is
+in the two modes is what stops the choice from being a way out of the method: unattended work is
 still designed from the efferent side, still cradled by a test written first, still judged by
 solubility. And recording the mode honestly is what keeps the loop record worth reading — a
 record that showed options put to a engineer who was not there would be worse than no record,
@@ -131,3 +131,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:02:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:04:16 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -27,7 +27,7 @@ The reach of a record is not the repository it sits in.
 ## Reduce resolution rather than falsify
 
 **The correction removes the disclosure and keeps the record true.** A record that reached three
-projects still reads as having reached three; only the naming goes. *"Each of the three projects
+projects still reads as having reached three. Only the naming goes. *"Each of the three projects
 holding it"* is less specific than three names and is not less accurate.
 
 **What is never done is making the record say something that did not happen.** Deleting an
@@ -42,7 +42,7 @@ better served than one who cannot tell the record was edited.
 
 **The git history still holds it.** Every removed mention remains in the commit that introduced
 it, and in any component repository the content was published to. Removing it there means
-rewriting history across several repositories, which is the engineer's decision and not a
+rewriting history in several repositories, which is the engineer's decision and not a
 consequence of this rule. **Say so when a correction is made**, so the engineer knows what the
 edit did and did not accomplish.
 
@@ -53,7 +53,7 @@ itself no longer carries.
 **Why:** the reason records are left as written is that a record is evidence, and evidence that
 is revised to suit the present is not evidence. That reason does not extend to content the
 project had no standing to publish: leaving it in place does not preserve evidence, it continues
-a disclosure. Reducing resolution satisfies both — the evidence survives, and what was not the
+a disclosure. Reducing resolution satisfies the two — the evidence survives, and what was not the
 project's to say stops being said. Naming the engineer as the authority keeps an agent from
 either exposing something on the grounds that a record is immutable, or scrubbing a record on a
 guess about what is sensitive.
@@ -69,3 +69,4 @@ format, an instance of the standing rule).
 
 Authored by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -9,7 +9,7 @@ of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-somethi
 it, which states what STEve is and the order its two parts decide in.
 
 **A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The
-standard decides second. In both worked phrases below, Waytide's vocabulary caught the word before
+standard decides second. In the two phrases worked below below, Waytide's vocabulary caught the word before
 the standard did.
 
 ## The writing rules
@@ -40,15 +40,15 @@ Before: `` `gate` is a technical noun; its verb form is `wait`, swept across 20 
 
 After: `` `gate` is a technical noun. Its verb form is `wait`. Twenty files conform to this. ``
 
-### `Both checks green`
+### `The two checks green`
 
 - **`green`** — the `testing` vocabulary substitutes `verified`. The word is also absent from the
   dictionary.
-- **`Both`** — `both (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
+- **`The two`** — `the two (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
   `ATTACH THE TWO ENDS`.
 - **No verb** — against STE Rule 4.2.
 
-Before: `Both checks green`
+Before: `The two checks green`
 
 After: `The two checks are verified.` Or, to say what happened rather than name a state:
 `The two checks found no defect.`
@@ -74,3 +74,4 @@ waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this dire
 Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

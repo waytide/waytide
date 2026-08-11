@@ -1,4 +1,4 @@
-# Optional parameters default to nil in the signature; assign their real defaults in the body
+# Optional parameters default to nil in the signature. Assign their real defaults in the body
 
 Do not put a default value in the parameter list. Declare each optional parameter with a `nil` default in the signature, and assign its actual default in the method body with `||=`.
 
@@ -16,9 +16,9 @@ def self.build(retries=nil, verify: nil)
 end
 ```
 
-**Why:** It is **more robust** — an inline default only applies when the argument is *omitted*, so an explicitly-passed `nil` slips past it (`build(nil)` would leave `retries` as `nil` and then fail). The `||=` form coerces an explicit `nil` to the default too, so the omitted and explicit-`nil` calls behave the same. It also keeps defaulting **uniform and visible in the body** — every default is normalized in one place the reader scans, rather than scattered into the parameter list. This is the convention `Controls::HTTP::Response.example` already follows (`status: nil` / `location: nil`, then `status ||= 201`, `location ||= "some location"`); the rule makes it explicit and project-wide.
+**Why:** It is **more robust** — an inline default only applies when the argument is *omitted*, so an explicitly-passed `nil` slips past it (`build(nil)` would leave `retries` as `nil` and then fail). The `||=` form coerces an explicit `nil` to the default too, so the omitted and explicit-`nil` calls behave the same. It also keeps defaulting **uniform and visible in the body** — every default is normalized in one place the reader scans, rather than scattered into the parameter list. This is the convention `Controls::HTTP::Response.example` already follows (`status: nil` / `location: nil`, then `status ||= 201`, `location ||= "some location"`). The rule makes it explicit and project-wide.
 
-**How to apply:** Give every optional parameter — positional or keyword — a `nil` default in the signature, and assign its real default with `||=` at the top of the body. Note `flag ||= false` for a boolean default normalizes only `nil → false` (a `true` passes through); that is intended and keeps the body's defaulting uniform even when the default is falsy. Keep the assignments free of inlined method calls per the no-inline-method-call-arguments rule (constants and literals as the default are fine). Related: the no-inline-method-call-arguments rule.
+**How to apply:** Give every optional parameter — positional or keyword — a `nil` default in the signature, and assign its real default with `||=` at the top of the body. Note `flag ||= false` for a boolean default normalizes only `nil → false` (a `true` passes through). That is intended and keeps the body's defaulting uniform even when the default is falsy. Keep the assignments free of inlined method calls per the no-inline-method-call-arguments rule (constants and literals as the default are fine). Related: the no-inline-method-call-arguments rule.
 
 ## Don't default an argument you only delegate
 
@@ -42,12 +42,13 @@ def self.build(response, location=nil)
 end
 ```
 
-`Upload::Result.build` is the example: its `location` becomes the value recorded on the result, and a caller may legitimately build a result whose location is `false` (the response reported no location). `location ||= response.location` would replace that `false` with the response's; `location = response.location if location.nil?` defaults only the genuinely-omitted case. This is not a violation of the `||=` convention — it is the convention's boundary. The distinction: `||=` when the parameter is a **selector/flag** (its own falsy default is the only falsy meaning); `if .nil?` when the parameter is a **settable payload** (falsy is a real value the caller may intend).
+`Upload::Result.build` is the example: its `location` becomes the value recorded on the result, and a caller may legitimately build a result whose location is `false` (the response reported no location). `location ||= response.location` would replace that `false` with the response's. `location = response.location if location.nil?` defaults only the genuinely-omitted case. This is not a violation of the `||=` convention — it is the convention's boundary. The distinction: `||=` when the parameter is a **selector/flag** (its own falsy default is the only falsy meaning). `if .nil?` when the parameter is a **settable payload** (falsy is a real value the caller may intend).
 
 **Why:** `||=` conflates "omitted" with "any falsy value." That conflation is harmless — even desirable — for flags and selectors, where the falsy default *is* the meaning. It is a defect for a payload the method records verbatim, because it silently rewrites a caller's intended `false`/`nil`. Robustness (the whole point of defaulting in the body) means honoring an explicit falsy value, which only the `.nil?` test does.
 
-**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. If the method stores or forwards it as a value the caller could legitimately want falsy, default it with `if param.nil?` (or an equivalent `nil`-only test). Related: the build/new-strict rule (`build` normalizes; a settable payload is normalized only for the omitted case).
+**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. If the method stores or forwards it as a value the caller could legitimately want falsy, default it with `if param.nil?` (or an equivalent `nil`-only test). Related: the build/new-strict rule (`build` normalizes, and a settable payload is normalized only for the omitted case).
 
 ---
 
 Authored by Scott Bellware on Sun Jun 28 2026 at 9 AM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

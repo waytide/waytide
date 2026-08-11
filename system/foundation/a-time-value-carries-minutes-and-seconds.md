@@ -5,10 +5,10 @@ written to **seconds** — `3:45:12 PM PT`, not `3 PM PT` and not `3:45 PM PT`.
 
 The rule governs the **resolution** of the time and nothing else. Which fields
 precede it, whether it is local or UTC, and how it is punctuated are each settled
-by the convention that specifies the datetime; this rule only fixes how finely the
+by the convention that specifies the datetime. This rule only fixes how finely the
 time is resolved when one is written.
 
-The two datetime conventions in this package both satisfy it:
+The two datetime conventions in this package satisfy it:
 
 - The **ISO-8601-UTC filename prefix** — `2026-07-01T20-40-00Z-some-name.md` —
   already carried seconds (see the file-names rule).
@@ -57,3 +57,4 @@ footer).
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:53:08 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

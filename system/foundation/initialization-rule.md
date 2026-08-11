@@ -47,7 +47,7 @@ one produces, and specifying a count that cannot be observed would be a rule not
 with or violate.
 
 **The block sits in a fenced code block and the notice does not.** The fence is what preserves the
-figure's spacing; the notice is ordinary prose and reads as prose. That difference is also why the
+figure's spacing. The notice is ordinary prose and reads as prose. That difference is also why the
 gap between them is the renderer's paragraph break rather than a count of lines — they are two
 kinds of thing, and the break between them is whatever separates a paragraph from a code block.
 
@@ -67,13 +67,13 @@ three that is about the moment rather than about the work.
 **It repeats the session-start notice's caveat deliberately, and the two are read at different
 moments.** The notice says *Loading the rules will take a few moments* **before** the engineer
 types `load waytide` — it is one of the two facts they weigh in deciding to type it. This line is
-read **after** they have, while the wait is happening. The first informs a decision; the second
+read **after** they have, while the wait is happening. The first informs a decision. The second
 explains a pause. Duplication that has cost this system elsewhere was one fact stated twice for
-one reader; this is one fact stated to a reader in two different positions, and removing either
+one reader. This is one fact stated to a reader in two different positions, and removing either
 leaves that position uncovered.
 
 **It says *Waytide* rather than *the rules*.** The notice can say *the rules* because its
-preceding line has just named the system; this line stands with a copyright and a license above it
+preceding line has just named the system. This line stands with a copyright and a license above it
 and a figure below, none of which is a sentence, so it names its subject itself.
 
 **The notice leads.** It is therefore the **first text of the read**, which the
@@ -93,7 +93,7 @@ files into other people's repositories, the terms are the question a reader actu
 **The first gap falls after the license line**, so it separates the whole statement — the
 copyright and the terms together — from what follows, rather than splitting the statement in two.
 
-**What the printed line is for, and what it is not.** It **points**; the `LICENSE` file **states**.
+**What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**.
 A copy of that file sits at this repository's root and in every package directory, so it travels
 into each component repository and into every project that installs a package — which is where the
 license is read. The printed line does not carry terms and is not the place to put them.
@@ -129,3 +129,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 5:11:06 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 6:05:55 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 10:51:50 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

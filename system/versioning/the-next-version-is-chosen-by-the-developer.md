@@ -30,12 +30,12 @@ decision is put at a gate rather than proposed and confirmed.
 
 **Present the candidates with what each claims, not only the number.** The engineer is
 choosing a claim about compatibility, so the option that says *capability added, existing use
-unaffected* is the one being weighed; `2.2.4.0` on its own does not put the question. The
+unaffected* is the one being weighed. `2.2.4.0` on its own does not put the question. The
 resulting version is shown too, since it is what will be written and committed.
 
 **Why:** the two facts that decide this are that the choice is a claim about other people's
 code and that it cannot be taken back once published. Either alone would argue for putting it
-to a person; together they settle it. Offering the candidates rather than asking for a version
+to a person. Together they settle it. Offering the candidates rather than asking for a version
 outright is what keeps the choice about the claim — the engineer weighs three statements
 about compatibility instead of typing a number, which is the same reason a hinge presents
 options rather than a fait accompli.
@@ -54,3 +54,4 @@ Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

@@ -1,6 +1,6 @@
 # What each hinge displays: the actuation is the anchor, the contexts are shown once
 
-Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The hinge-cycle rule owns the *sequence* of hinges and the acceptance mechanism; this rule owns what is *displayed* at each one.
+Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The hinge-cycle rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 
 | Hinge | Displays |
 |---|---|
@@ -18,7 +18,7 @@ Three principles generate the table.
 
 **The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived and withholds the thing the judgment is made on — so the engineer would be asked for a solubility verdict on an artifact they have not seen. The test and the feature's output are shown with it (see the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules), and the implementation leads, because it is what the hinge is about.
 
-**Why:** each hinge is a distinct deliberation, and what is on screen decides what can be deliberated. Too little and the human is asked to judge something in isolation that has no meaning in isolation — the load-bearing linkage (do *these* controls, fed into *this* actuation, produce a result *this* observation reads, and does the whole thing exercise the outcome?) then has to be reconstructed mentally. Too much and the hinge's own concern is buried in material already settled. The anchor principle fixes the first failure; the show-once principle fixes the second.
+**Why:** each hinge is a distinct deliberation, and what is on screen decides what can be deliberated. Too little and the human is asked to judge something in isolation that has no meaning in isolation — the load-bearing linkage (do *these* controls, fed into *this* actuation, produce a result *this* observation reads, and does the whole thing exercise the outcome?) then has to be reconstructed mentally. Too much and the hinge's own concern is buried in material already settled. The anchor principle fixes the first failure. The show-once principle fixes the second.
 
 **How to apply:** render each hinge per the table. At hinge 1, the actuation within its full `context` nesting. At hinge 2, the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block. At hinge 3, the control declarations, then the actuation, then the observation — the complete test body with the `context` blocks omitted. At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output, and do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it. Related: the hinge-cycle rule (the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label), the first-turn rule (the three test hinges produce turn one), the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules (what accompanies the implementation at hinge 4), the folder-mirroring rule, and the test-block-is-assertion-only rule.
 
@@ -26,3 +26,4 @@ Three principles generate the table.
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 8 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

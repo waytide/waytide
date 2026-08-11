@@ -18,7 +18,7 @@ second thing to keep true, and the gemspec is the copy that is actually publishe
 
 **The gem name takes the `evt-` prefix**, and a multi-word name joins its words with an
 underscore — `evt-file_store`, in a repository whose directory is `file-store`. The directory name
-and the gem name are not the same string and are not derived from each other; the gemspec
+and the gem name are not the same string and are not derived from each other. The gemspec
 states the gem name, and it is the authority.
 
 **Building and pushing:**
@@ -55,3 +55,4 @@ suite that is verified before the release commit).
 Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:04:18 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
