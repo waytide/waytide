@@ -28,7 +28,7 @@ Prescriptive Ruby style.
 - Gem names take the `evt-` prefix, joining a multi-word name with an underscore — `evt-file_store` in a directory named `file-store`.
 - What a version *means* and who chooses the next one are the `versioning` package's, stated without knowledge of Ruby.
 
-**Command**: `lib-report` (classify `lib/` by role, construct, method style, API currency, error taxonomy, idioms).
+**Command**: `lib-report` (classify `lib/` by role, construct, method style, the values received and returned, error taxonomy, idioms).
 
 `code/` groups by programming language and is not a package. `code/ruby` is the package. Includes `foundation`, `language`.
 

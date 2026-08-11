@@ -17,7 +17,7 @@ Produce these sections, in order:
    - macro/hook methods
    - any **dual class+instance delegation pairs** — a class method and an instance method of the same name, the instance delegating to the class
 
-4. **By API currency (what methods take and return)** — group methods by the kinds of value they trade in (e.g. raw platform objects vs. the library's own domain objects vs. Strings vs. boolean predicates). This is the surface where the library's currency and any migration between currencies shows.
+4. **By the kinds of value received and returned** — group the methods by them. Those are raw platform objects, the library's own domain objects, Strings, and boolean predicates. This is the surface where a migration from one kind to another shows.
 
 5. **Error taxonomy** — the applicative error classes and which operations raise which.
 
@@ -25,7 +25,7 @@ Produce these sections, in order:
 
 Keep each section tight.
 
-**Why:** the library has a discoverable structure — layers, construct kinds, and an API-currency split — worth surfacing on demand. Fixing the report's shape makes it repeatable and steers reading to the source rather than recollection.
+**Why:** the library has a discoverable structure — layers, construct kinds, and a split by the values received and returned — worth surfacing on demand. Fixing the report's shape makes it repeatable and steers reading to the source rather than recollection.
 
 **How to apply:** on a lib-report request, read `lib/` and render the sections from current state. Confirm membership by reading the files rather than asserting it. Companion to the `test-report` command (in `testing`). Neither report is written to a file.
 
@@ -34,3 +34,4 @@ Keep each section tight.
 Authored by Scott Bellware on Mon Jun 29 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 3:04:33 AM PT
