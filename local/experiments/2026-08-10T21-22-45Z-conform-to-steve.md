@@ -372,13 +372,32 @@ a subject severed from its predicate, and each was found while reading a paragra
 reason. That makes the finding sharper rather than weaker: the damage was still being discovered
 eleven days after the transformation was reverted, and every instance was found by reading.
 
-## The Rule 1.3 population was never enumerated — 2026-08-11
+## The class was mislabelled, and its population was never enumerated — 2026-08-11
 
 **The thirteen words the survey reported are a guess-list, not a population.** The survey named the
 words it *predicted* would be offenders and counted those. Nothing enumerated the corpus against
-the dictionary. So the figure this experiment has been publishing for STE Rule 1.3 — approved words
-used in meanings the dictionary does not approve — is not a measurement of the class. It is a
+the dictionary. So the figure this experiment has been publishing is not a measurement of the class. It is a
 measurement of a hypothesis about the class.
+
+**The class was also named wrongly, and it is three rules rather than one.** The standard
+separates them. Rule 1.1 requires a word to be approved in the dictionary, a technical noun, or a
+technical verb. Rule 1.2 requires an approved word to be used only as the specified part of
+speech. Rule 1.3 requires an approved word to be used only with its approved meaning.
+
+| Rule | The surveyed words that fall under it | The failure |
+|---|---|---|
+| **1.1** | `ask`, `choose`, `choice`, `decide`, `option`, `implementation`, `reach`, `switch`, `label`, `both`, `check (v)`, `level (v)` | the word is not approved at all |
+| **1.2** | `design`, `file`, `list` as verbs | the noun is approved and the verb is not |
+| **1.3** | `across`, `point` | the word is approved, in a sense Waytide does not use |
+
+**Nearly the whole of the surveyed population is Rule 1.1, and this changes the resolution.**
+Rule 1.6 permits a word that is not approved *only when it is a technical noun or part of a
+technical noun*, and Rule 1.8 requires a technical noun to be approved in the company, industry,
+or subject field. That is the mechanism Waytide's vocabularies already invoke, and each one says
+so: *reserved by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through
+1.13*, and *this file is that approval*. So for the Rule 1.1 words, reserving them in a vocabulary
+is a resolution the standard provides. Rule 1.3 has no such escape. An approved word used in an
+unapproved meaning is rewritten, or the sentence is recast under Rule 9.1.
 
 **The per-word counts are wrong in the same way the sentence counts were.** The pattern was
 `\b<word>\w*\b`, which misses every inflection that changes the stem. `decide\w*` never matched
@@ -436,3 +455,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:09 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:47:12 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:22:40 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:40:05 AM PT
