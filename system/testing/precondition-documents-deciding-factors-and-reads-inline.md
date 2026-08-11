@@ -5,10 +5,8 @@ beside the controls and the actuation rather than inside a `test` block.
 
 **Its purpose is to clarify the deciding factors.** A test's outcome is determined by
 conditions and factors that are frequently **not clearly expressed in the test script** —
-most often the **controls**. A control is named for itself, not for the properties of the
-value it produces: `Controls::Account::Sequence.example` says nothing about which positions
-that account has already processed, and the definition that would say so lives in another
-file. The factor that actually decides the outcome is therefore absent from the script the
+most often the **controls**. A control is named for itself, not for the properties of the value it produces. `Controls::Account::Sequence.example` says nothing about which positions
+that account has already processed. The definition that would say so lives in another file. The factor that actually decides the outcome is therefore absent from the script the
 reader is reading. **A precondition puts it there.**
 
 ```ruby
@@ -103,11 +101,13 @@ test "Deposit message follows previous message" do
 end
 ```
 
-**It is not coverage, and it prevents nothing.** A precondition asserts over the controls, a prior state, a derivation, or **the actuation's completion where the controls are what decide it** — never over the unit's behavior as an outcome. So it is outside what the do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
+**It is not coverage, and it prevents nothing.** A precondition asserts over the controls, a
+prior state, a derivation, or **the actuation's completion where the controls are what decide
+it**. It never asserts over the unit's behavior as an outcome. So it is outside what the do-not-test-the-platform rule weighs and outside what a coverage test is for. Nothing about
 the unit is established by one passing.
 
 **The line is what the assertion is for, not what it is written over.** `refute_raises`
-around an actuation is a **precondition** when the controls are arranged so the actuation
+around an actuation is a **precondition** in one case. The controls are arranged so the actuation
 would ordinarily fail, something in that arrangement averts it, and the script does not show
 as much. It is a **test** when whether the unit raises is the thing being established. The
 same expression serves the two of them, and only its purpose separates them.
@@ -126,20 +126,25 @@ end
 The destination owns the excluded name, so without `except:` the import is refused. Nothing
 else in the script says so, and every outcome below depends on it.
 
-**Why:** a test script is read to learn what its outcome depends on. The controls convention deliberately puts the construction of example values behind a name, so the factors that decide the outcome are frequently the ones least visible at the test. A test whose deciding factors are invisible cannot be read. The reader sees an outcome asserted and no account of what produced it — and in its worst form it passes without exercising what it names, reporting prevention that is not there. Writing the factor as an assertion rather than
-a comment is what makes the clarification trustworthy: a comment claims, an assertion is
-checked, so the documentation and the fact cannot drift apart in silence. Keeping it a bare assertion rather than a named test is what keeps the two legible as different things. A named test claims the unit behaves a certain way, and a precondition claims only that the ground the test stands on is the ground it appears to.
+**Why:** a test script is read to learn what its outcome depends on. The controls convention deliberately
+puts the construction of example values behind a name. So the factors that decide the outcome are
+frequently the ones least visible at the test. A test whose deciding factors are invisible cannot be read. The reader sees an outcome asserted and no account of what produced it. In its worst form it passes without exercising what it
+names, and reports prevention that is not there. Writing the factor as an assertion rather than
+a comment is what makes the clarification trustworthy. A comment claims, and an assertion is
+checked. So the documentation and the fact cannot drift apart in silence. Keeping it a bare assertion rather than a named test is what keeps the two legible as different things. A named
+test claims the unit behaves a certain way. A precondition claims only that the ground the
+test stands on is the ground it appears to.
 
-**How to apply:** when writing or reading a test, ask what determines its outcome and whether
-the script shows it — looking first at the controls, whose values are named rather than
+**How to apply:** when writing or reading a test, ask what determines its outcome. Ask whether
+the script shows it. Look first at the controls, whose values are named rather than
 described. Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
 it. Where the factor is that an actuation completes, write a bare `assert_raises` or
 `refute_raises` instead. Read its predicate inline, with no explaining variable. Place it
-immediately before what it qualifies: the actuation for a factor in the controls or a prior
-state, and the test for a factor in a derived value. Do not wrap it in a `test` block, do not name it, do not
-bind its operand, and do not write it as a `comment` instead — an unchecked statement of a
-deciding factor is the thing this replaces. Where an actuation's completion is the thing being
-established rather than the ground a later observation stands on, that is a test and belongs
+immediately before what it qualifies. That is the actuation for a factor in the controls or a
+prior state, and the test for a factor in a derived value. Do
+not wrap it in a `test` block, do not name it, and do not bind its operand. Do not write it as a
+`comment` instead. An unchecked statement of a deciding factor is the thing this replaces. Where an actuation's completion is the thing being
+established rather than the ground a later observation stands on, that is a test. It belongs
 in a `test` block.
 
 Related:
@@ -160,3 +165,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
