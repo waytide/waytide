@@ -7,12 +7,16 @@ persisted, dated artifact, kept after the feature concludes.
 - **When to use:** every feature. A feature is a bounded unit of main-line work, built to
   an **intent** rather than to a question — nothing is being tested, so nothing is
   forecast and no verdict is reached. That is what separates a feature from an experiment.
-- **Record format:** open with the **Intent** — what is being built and why — then the
-  setup: a **`**State:**` line**, the **upstream branch** it will merge into (`master` or
-  another topic branch), the **feature branch**, its **base**, and the **working location**
-  chosen at the start (branch only, branch and worktree with the worktree's path, or the current branch). As the work
-  proceeds, record the **confirmations** the lifecycle required and any change of working
-  location.
+- **Record format:** open with the **Intent** — what is being built and why — then the setup:
+  - a **`**State:**` line**
+  - the **upstream branch** it will merge into — `master` or another topic branch
+  - the **feature branch**
+  - its **base**
+  - the **working location** chosen at the start — branch only, branch and worktree with the
+    worktree's path, or the current branch
+
+  As the work proceeds, record the **confirmations** the lifecycle required and any change of
+  working location.
 - **The state sits on a canonical `**State:**` line**, in the setup block, carrying one of
   the four state words and nothing else — `- **State:** Suspended`. **It is added when the
   record reaches one of those words**, and updated as the state changes after that — not
@@ -34,15 +38,15 @@ persisted, dated artifact, kept after the feature concludes.
   record names the branch being built on, and there is no base, no feature branch, and no
   merge to record. See the feature-lifecycle rule.
 - **The working location is a short history, not a single fact.** It is written at
-  the start and changes only by a worktree being added for a feature already under way —
-  either because other work arrived that the user intends to work alongside it, or because
-  the feature was **escalated**, judged to need more isolation than the single working tree
+  the start. It changes only by a worktree being added for a feature already under way. That
+  happens for one of two reasons: other work arrived that the user intends to work alongside it,
+  or the feature was **escalated** — judged to need more isolation than the single working tree
   gives it. The record then **gains a line**. The original is not rewritten.
 - **The human's level of participation is recorded as a confirmation** — **attended** or **unattended**, chosen at the start beside the working location. DBE is in effect either way. What the choice settles is whether the loop stops at each hinge. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
 - **It is the feature's lifecycle record, not its design record.** The same feature's design. Each cycle's hinge, the options put to the engineer, and the decision — belongs in a loop record under `waytide/local/loops/` (see the design-by-efferent loop-records rule).
   The two divide by concern and **each names the other**. They are separate files because
   `waytide/local/loops/` is contributed by `design-by-efferent`, which includes `foundation`
-  rather than the reverse: a foundation rule requiring fields in that directory would
+  rather than the reverse. A foundation rule requiring fields in that directory would
   invert the package graph, and would make the feature lifecycle unavailable to a project
   that installs `foundation` alone.
 - **Format:** the same frontmatter-free markdown as rules — a `# Feature — <name>` title,
@@ -91,3 +95,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 2:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT

@@ -39,22 +39,24 @@ summary) and **next deferred item**.
 question. The harness supplies the free-text escape, so the agent adds none of its own. It does
 add an **`Explain`** option, which is the opposite half of that escape — the escape is how a
 engineer answers outside the options, and `Explain` is how they ask what the question means
-before answering. The rule lives here rather than in `design-by-efferent`, where it was written,
-because it governs **every** prompt: `foundation`'s own lifecycles put choices through the
-interface, and so does the standalone `versioning` package, so a project installing `foundation`
-alone must receive the rule along with the instruction to follow it.
+before answering. The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put choices through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
 
-Beyond the four core directories, foundation defines the **work-artifact**
-directories for planning and running changes — `waytide/local/plans/` (implementation plans
-that sequence a settled design), `waytide/local/design/` (design docs that settle direction
-first) — or, under the other modes, `waytide/local/intention/` and `waytide/local/aspiration/`,
-or `waytide/local/action/` and `waytide/local/orientation/`, in their places — `waytide/local/experiments/` (recorded experiments that test a question),
-`waytide/local/features/` (the lifecycle record of a feature), `waytide/local/work-sessions/` (the narrative record of a work session), and
-`waytide/local/migration/` (execution plans for transitions of content **across a repository
-boundary**, kept after the content has gone so the trail of where it went stays in the
-repository it left), and `waytide/local/suspended/` (an **undo queue** for what the project
-stopped doing — the thing itself moves, carrying the return address needed to put it
-back).
+Beyond the four core directories, foundation defines the **work-artifact** directories for
+planning and running changes:
+
+- `waytide/local/plans/` — implementation plans that sequence a settled design
+- `waytide/local/design/` — design docs that settle direction first
+- `waytide/local/experiments/` — recorded experiments that test a question
+- `waytide/local/features/` — the lifecycle record of a feature
+- `waytide/local/work-sessions/` — the narrative record of a work session
+- `waytide/local/migration/` — execution plans for transitions of content **across a repository
+  boundary**, kept after the content has gone so the trail of where it went stays in the
+  repository it left
+- `waytide/local/suspended/` — an **undo queue** for what the project stopped doing. The thing
+  itself moves, carrying the return address needed to put it back
+
+Under the other modes, `waytide/local/intention/` and `waytide/local/aspiration/`, or
+`waytide/local/action/` and `waytide/local/orientation/`, stand in for the first two.
 
 **Experiments and features each carry a full branch lifecycle** — their own branch, a
 working location chosen at the start (branch only, or branch and worktree), declared
@@ -151,7 +153,7 @@ So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `re
 
 **It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others, and would be the first Waytide package that is a **tool** rather than a set of rules.
 
-**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own** — a rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules, so the drift is only visible from inside the project and only the project's engineer can correct it. It reads the defined mode names out of the installed rule rather than carrying a list, so a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
+**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own**. A rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules. So the drift is only visible from inside the project, and only the project's engineer can correct it. It reads the defined mode names out of the installed rule rather than carrying a list, so a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
 
 **`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach. So a refresh updates the packages beneath it and leaves it behind. The script used to print a reminder saying so. On 2026-08-06 every consuming project's bootstrap was found stale anyway, which is what a reminder is worth. It now compares the section against what the installed installer generates, at the moment the drift is created. Where the comparison cannot be made — no `AGENTS.md`, or an installer predating the `bootstrap` subcommand it asks for. It says the check did not happen rather than reporting agreement, and it never invokes an installer that would treat the request as an install.
 
@@ -199,3 +201,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
