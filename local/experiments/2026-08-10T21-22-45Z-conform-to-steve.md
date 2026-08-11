@@ -517,104 +517,94 @@ the precision of these figures. 78 recorded against thousands used is not a reco
 exists, is correctly described in every vocabulary preamble, and is applied to the terms the project
 coined rather than to the vocabulary it works in.
 
-## The reservation candidates — 2026-08-11
+## The reservation candidates — 2026-08-11, rebuilt
 
-**This table is named *the reservation candidates*.** It lists every word the corpus works in that
-is a candidate for a Waytide vocabulary entry. Each was counted across its inflections and looked up
-in the dictionary one at a time. Refer to it by that name.
+**This table is named *the reservation candidates*.** Refer to it by that name.
 
-### Absent from the dictionary — admissible only as a declared technical noun
+**It replaces a first version built on a wrong premise.** That version put 41 words in a queue for
+declaration, on the reading that a word absent from the dictionary must be declared in a vocabulary
+before it can be used. It must not. **Rule 1.5 is the permission**, and it names no glossary: *you
+can use words that you can include in a technical noun category*. **Rule 1.8** then says to use the
+term the field has already approved, and its worked example is `touchscreen` and `home button`, with
+no glossary entry shown. **Rule 1.9** is where recording earns its place: *when there is no
+technical noun that is approved in your company, industry, or subject field, select…*. With **Rule
+1.11**, *do not use different technical nouns for the same item*, that is what a `vocabulary.md` is
+for. The first version also assigned nearly everything to category 19. Category 15 holds documents
+and their parts, and the standard's own example list for it includes `notice` and `section`.
 
-STE Rule 1.1 permits an absent word only as a technical noun or a technical verb, and Rule 1.8
-requires it to be approved in the subject field. A `vocabulary.md` is that approval. The category is
-19, computer science, information and communication technology, and the assignment is the project's
-to make rather than the dictionary's.
+### Permitted by Rule 1.5, and no entry is owed
 
-| Word | Uses | Declared |
+The field's ordinary technical nouns. Rule 1.8 says to use the field's approved term, and these are
+it.
+
+| Category | Words |
+|---|---|
+| **19** — computer science, information and communication technology | `file` 237, `project` 230, `package` 209, `commit` 92, `directory` 87, `session` 80, `repository` 70, `branch` 65, `default` 58, `path` 57, `script` 55, `command` 50, `segment` 48, `behavior` 42, `suite` 40, `class` 34, `variable` 33, `version` 32, `argument` 21, `parameter` 17, `merge` 15, `constructor` 4, `module` 2 |
+| **15** — official documents, parts of documentation, standards, and guidelines | `rule` 446, `line` 158, `word` 145, `term` 97, `plan` 66, `notice` 59, `vocabulary` 59, `convention` 57, `prose` 51, `section` 25, `format` 17 |
+| **11** — professional roles, individuals, groups, organizations | `engineer` 134, `agent` 92, `reader` 63 |
+
+### Coined by Waytide, so Rule 1.9 applies and an entry is owed
+
+The field has no established term, so the project selected one. Rule 1.11 then requires it to be the
+only noun for that item, which is what the entry fixes.
+
+| Term | Declared | Note |
 |---|---|---|
-| `rule` | 446 | — |
-| `project` | 230 | — |
-| `package` | 209 | — |
-| `line` | 158 | — |
-| `word` | 145 | — |
-| `engineer` | 134 | **declared** |
-| `term` | 97 | — |
-| `commit` | 92 | — |
-| `directory` | 87 | — |
-| `outcome` | 86 | — |
-| `session` | 80 | — |
-| `context` | 72 | — |
-| `artifact` | 72 | — |
-| `repository` | 70 | — |
-| `plan` | 66 | — |
-| `vocabulary` | 59 | — |
-| `notice` | 59 | — |
-| `experiment` | 59 | — |
-| `default` | 58 | — |
-| `path` | 57 | — |
-| `gate` | 57 | **declared** |
-| `convention` | 57 | — |
-| `script` | 55 | — |
-| `prose` | 51 | — |
-| `command` | 50 | — |
-| `segment` | 48 | — |
-| `behavior` | 42 | — |
-| `suite` | 40 | — |
-| `class` | 34 | — |
-| `version` | 32 | — |
-| `assertion` | 26 | **declared** |
-| `section` | 25 | — |
-| `argument` | 21 | — |
-| `harness` | 18 | — |
-| `parameter` | 17 | — |
-| `format` | 17 | — |
-| `worktree` | 15 | — |
-| `merge` | 15 | — |
-| `mixin` | 9 | — |
-| `constructor` | 4 | — |
-| `module` | 2 | — |
+| `hinge` | yes | design-by-efferent |
+| `gate` | yes | design-by-efferent. The standard lists `gate` in category 5 as an airport gate, a different thing, so the entry is doing real work |
+| `cradle` | yes | design-by-efferent |
+| `actuation` | yes | language, design-by-efferent |
+| `efferent` | yes | language, design-by-efferent |
+| `solubility` | yes | language |
+| `mean-bias` | yes | design-by-efferent |
+| `origination` | yes | design-by-efferent |
+| `worktree` 15 | **no** | a git term, arguably the field's and arguably coined |
+| `mixin` 9 | **no** | a Ruby term, arguably the field's and arguably coined |
 
-### Not approved, with a stated alternative — reserved deliberately, or rewritten
+### Used in a narrower sense than the field's, so an entry is owed
 
-Here the dictionary names a replacement. Keeping the word is a divergence and has to say so, the
-way `conform` and `convey` already do in the `language` vocabulary.
+The word is ordinary and Waytide's meaning is not.
 
-| Word | Uses | The dictionary says |
-|---|---|---|
-| `file` | 237 | `file (v)` → **REMOVE (v)**. The noun is unlisted, so the noun is absent |
-| `design` | 143 | `design (v)` → **HAVE (v)**. Declared already, and the note is missing |
-| `run` | 114 | `run (v)` → **OPERATE (v)** |
-| `state` | 99 | `state (n)` → **CONDITION (n)**, and `state (v)` → **TELL (v)** |
-| `feature` | 96 | `feature (v)` → **HAVE (v)**. The noun is unlisted |
-| `implementation` | 88 | `implementation (n)` → **DO (v)** |
-| `option` | 76 | `option (n)` → **ALTERNATIVE (n)** |
-| `branch` | 65 | `branch (v)` → **DIVIDE (v)**. The noun is unlisted |
-| `variable` | 33 | `variable (adj)` → **CHANGE (v)**. The noun is unlisted |
-| `log` | 32 | `log (v)` → **RECORD (v)** |
-| `prompt` | 17 | `prompt (adj)` → **IMMEDIATELY (adv)**. The noun and the verb are unlisted |
+| Term | Uses | Declared | The narrowing |
+|---|---|---|---|
+| `controls` | — | yes | the known inputs, never factories or fixtures |
+| `precondition` | — | yes | a bare assert that is not a test |
+| `observation` | — | yes | what the test reads about the effect |
+| `assertion` | 26 | yes | — |
+| `outcome` | 86 | **no** | one thing a test establishes, rather than a general result |
+| `context` | 72 | **no** | a `context` block, rather than surrounding circumstance |
+| `harness` | 18 | **no** | the runner. The corpus already warns that a cradle is not this |
+| `prompt` | 17 | **no** | the selection UI's question |
 
-### Approved, and nothing is owed
+### The dictionary refuses the word, so a divergence is stated or the word is rewritten
 
-`name` 384 and declared, `test` 251 as a noun, `record` 202, `agent` 92, `report` 64, `method` 49,
-`loop` 48 and declared, `upstream` 22, `release` 15. Two carry a refused verb beside the approved
-noun: `test (v)` gives **TEST (n)**, and `loop (v)` gives **LOOP (n)**.
+The only group where Rule 1.6 does the work, and where an entry is a claim rather than a
+convenience.
 
-### What the table shows
+| Word | Uses | The dictionary says | Declared |
+|---|---|---|---|
+| `design` | 143 | `design (v)` → **HAVE (v)** | yes, with no STE note |
+| `run` | 114 | `run (v)` → **OPERATE (v)** | no |
+| `state` | 99 | `state (n)` → **CONDITION (n)**, and `state (v)` → **TELL (v)** | no |
+| `implementation` | 88 | `implementation (n)` → **DO (v)** | no |
+| `option` | 76 | `option (n)` → **ALTERNATIVE (n)** | no |
+| `log` | 32 | `log (v)` → **RECORD (v)** | no |
 
-**The largest group is absent rather than refused.** 41 candidates have no dictionary entry at all.
-Rule 1.6 permits every one of them as a technical noun, and three are declared.
+**Four words left this group on inspection.** `file`, `feature`, `branch`, and `variable` are
+refused only in a part of speech Waytide does not use. The nouns are unlisted, so they are absent
+rather than refused, and the first table above covers them. That distinction is STE Rule 1.2, and a
+raw count cannot see it.
 
-**Several are refused only in a part of speech Waytide does not use.** `file`, `feature`, `branch`,
-`variable`, and `prompt` are refused as verbs or adjectives. Waytide uses the nouns, which are
-unlisted, so they are absent rather than refused, and are reservable. A raw count cannot see that
-distinction, and STE Rule 1.2 is where it lives.
+### What is actually outstanding
 
-**`design` is the one declared word carrying an unstated divergence.** It sits in the `language`
-vocabulary with no STE note, and `design (v)` is refused with **HAVE (v)**. Waytide uses the noun
-and the verb.
+**Twelve items, not forty-one.** Six terms are coined or narrowed and carry no entry — `worktree`,
+`mixin`, `outcome`, `context`, `harness`, `prompt`. Six are genuine divergences — `design`, `run`,
+`state`, `implementation`, `option`, `log`. Everything else is either already declared or permitted
+outright.
 
-**Two limits.** The counts are lemma-grouped by hand, so a form not grouped is not in them. And the
-category-19 assignment is the project's judgment, which Rule 1.8 makes the project's to make.
+**The category assignments are the project's judgment**, which is what Rule 1.8 makes them. Three
+are the least certain: `word`, `term`, and `vocabulary` in category 15, on the strength of
+`language policy` appearing in that category's example list.
 
 ---
 
@@ -628,3 +618,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 4:22:40 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:40:05 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:18:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:34:12 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:58:07 AM PT
