@@ -6,10 +6,9 @@ How the packages are authored and published. If you only want to *use* a package
 
 **This composite repo is where all authoring happens.** It holds every package as a
 directory under `system/` (`system/foundation`, `system/testing`, …) under one shared
-history. Add or refine a rule here. Because
-the packages live together, a change spanning several packages is one atomic
-commit, and the whole rule set can be read, grepped, and consolidated in one
-place. This is the source of truth.
+history. Add or refine a rule here. A change spanning
+several packages is one atomic commit, since the packages live together. The
+whole rule set can be read, grepped, and consolidated in one place. This is the source of truth.
 
 **Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. The `code/` namespace flattens to `code-` in the repo name, as in `waytide/code-ruby`. Each holds a single package's files at its
 root. These are how a consuming project installs a package.
@@ -48,8 +47,8 @@ directory and pushing to the component repo's `master`. A `git subtree split`'s
 output history depends on the prefix path. So a package whose directory path is
 unchanged fast-forwards, and a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
 **The composite's package directory is `system/`, reached
-by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
-(2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s
+by a series of renames** — root → `rules/` (2026-07-20) → `packages/` → `framework/`
+(2026-07-22) → `system/` (2026-07-27). Each was a force-reset, since a `git subtree split`'s
 history depends on the prefix path. The earlier names are kept here as the record of what
 the component repos previously tracked. Do not restate them as `system/`. The component
 repos now track the `system/<package>` split, and ordinary publishes fast-forward again —
@@ -100,8 +99,8 @@ is there. The remedy, in order:
    pushing anything.
 4. **Then force-push.** A commit made directly to a component repo can never become an
    ancestor of a split, so no amount of adopting makes the publish fast-forward. Forcing is
-   correct once the content is safely in the composite, and only then — the commit object is
-   replaced, and its content survives because step 2 put it here.
+   correct once the content is safely in the composite, and only then. Step 2 put the content
+   here, so replacing the commit object does not lose it.
 
 The one-time distribution that first created the component repositories is recorded in the **Phase B runbook and checklist**. Those are **suspended** under `local/suspended/`, superseded by this document. They carry a package map that no longer matches the packages. They are the
 only record of how a repository rename and a mass re-publish after a path change were done. See

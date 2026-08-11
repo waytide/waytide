@@ -7,7 +7,12 @@ Good examples — tests each asserting `value == <comparator>`:
 - `context "Is the final segment of the qualified name as a String"` → `assert(name == control_inner_constant_name.to_s)`
 - `context "Is the whole name as a String"` → `assert(name == control_value.name)`
 
-Counter-examples (do not use "Is"): a predicate result (`context "Defined"` → `assert(defined)`), a returned value (`context "The defined constant is returned"`), a raised error (named `Fails` — see the error-test-naming rule), an exclusion (`context "Excludes non-module inner constants"`).
+Counter-examples, where "Is" is not used:
+
+- a predicate result — `context "Defined"` → `assert(defined)`
+- a returned value — `context "The defined constant is returned"`
+- a raised error — named `Fails`, per the error-test-naming rule
+- an exclusion — `context "Excludes non-module inner constants"`
 
 **Why:** "Is X" reads as a claim of equality/identity. Using it for a non-equality assertion misdescribes what the test establishes — the name promises a comparison the assertion doesn't make. Reserving "Is" for value-equals-comparator tests keeps each test name faithful to the shape of its assertion.
 
@@ -24,3 +29,4 @@ Authored by Scott Bellware on Fri Jun 26 2026 at 2 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT

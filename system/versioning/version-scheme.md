@@ -45,8 +45,8 @@ uncomparable, since `2.3.1` and `2.2.3.1` do not sit on one line.
 **Why:** a version is read by someone deciding whether to upgrade, so each segment has to
 answer a question they actually have. Semver answers the compatibility question precisely, and
 is worth keeping exactly as it is rather than being re-invented. What it does not have is any
-way to say *this is a different product now* — a statement no analysis of a change can produce,
-because it is not about the change. Adding one segment for that keeps the two kinds of claim
+way to say *this is a different product now*. That statement is not about the change, so no
+analysis of a change can produce it. Adding one segment for that keeps the two kinds of claim
 apart: three segments that are derived, and one that is declared. Collapsing them would make
 the leading number look like a compatibility break so severe it needed its own digit, which is
 not what it says.
@@ -71,3 +71,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT

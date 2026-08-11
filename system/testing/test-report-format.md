@@ -4,7 +4,7 @@ When the user asks for a **test report**, classify the automated suite along the
 
 Produce these sections, in order:
 
-1. **Generations / styles** — if the suite has **coexisting conventions** (an older style alongside a newer one), split the files by which they follow, and name the cleanest mechanical tell (e.g. actuation placement — captured in setup vs. performed inside the assertion block). If the suite is uniform, say so and skip.
+1. **Generations / styles** — the suite may have **coexisting conventions**, an older style alongside a newer one. Split the files by which they follow, and name the cleanest mechanical tell. One such tell is actuation placement, captured in the controls against performed inside the test block. If the suite is uniform, say so and skip.
 
 2. **By subject under test** — group by the unit each test targets (the class, module, or feature). Give the file count per group.
 
@@ -32,3 +32,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 10:53:02 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
