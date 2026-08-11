@@ -49,12 +49,12 @@ either.
 
 **One file, beside `rules/`, named for what it is.** It holds the terms and substitutions a
 project settles for itself, in the same shape a package's `vocabulary.md` has. It takes **no
-datetime prefix** — it is a structural file rather than a dated decision, exactly as a package's
-`vocabulary.md` is (see the file-names rule).
+datetime prefix**. It is a structural file rather than a dated decision, exactly as a package's
+`vocabulary.md` is. See the file-names rule.
 
 **It is read at session start**, with `waytide/system/` and `waytide/local/rules/`. That is what
-makes it binding, and it is the reason the file sits where it does rather than in a working
-directory: `session-start.sh` names it in the read instruction, and the `AGENTS.md` bootstrap
+makes it binding. It is also the reason the file sits where it does rather than in a working
+directory. `session-start.sh` names it in the read instruction, and the `AGENTS.md` bootstrap
 names it too.
 
 **It is optional, and its absence is not a defect** — the same standing a package's
@@ -63,10 +63,10 @@ names it too.
 **It is not a rule, and it does not live in `rules/`.** A rule states an obligation and takes the
 datetime prefix, because it is a dated decision in the project's history. A vocabulary accretes
 and is named for what it is. Putting it inside `rules/` would make the one directory hold two
-kinds of file under two naming conventions, which is what keeping it beside `rules/` avoids.
+kinds of file under two naming conventions. Keeping it beside `rules/` avoids that.
 
 **What it cost to place it there.** The read instruction previously named `waytide/local/rules/`
-and said *read only that one directory beside the packages*, so a binding file anywhere else under
+and said *read only that one directory beside the packages*. So a binding file anywhere else under
 `waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached
 `session-start.sh`, the announce-waytide-at-session-start rule, the rules-convention, the
 file-names rule, and the bootstrap `install.sh` generates. That cost was taken deliberately, for
@@ -97,8 +97,8 @@ happens to carry. Naming the order once removes that from every future case.
 domain-less term or substitution in `language`. Put a term a **project** settles for itself in
 `waytide/local/vocabulary.md`, with no datetime prefix, and write no such file until the project
 has one to write. Give a package a vocabulary only when its domain
-has specialized words. When a word appears in two vocabularies, the more specific one decides, and
-the entry says whether it narrows the general term or replaces it. Keep substitutions and
+has specialized words. When a word appears in two vocabularies, the more specific one decides. The
+entry says whether it narrows the general term or replaces it. Keep substitutions and
 discontinuations under separate headings.
 
 Related:
@@ -115,3 +115,4 @@ Authored by Scott Bellware on Sun Aug 9 2026 at 2:19:00 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT

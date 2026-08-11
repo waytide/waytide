@@ -2,7 +2,7 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+**Every word here is one of three things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
@@ -31,7 +31,7 @@ because the extant term already says the thing exactly. **Waytide does not defin
 them in their own sense, and reserves them where the STE dictionary disputes them.
 
 **This is what the language-is-precise-here rule asks for.** That rule holds that the precise word
-is the one that already means exactly this, and that it is as often an established technical term
+is the one that already means exactly this. It is as often an established technical term
 as a plain one. A word here is one of those, kept rather than coined.
 
 - **preserve** — to keep something that already exists, rather than putting it there or serving it.
@@ -44,7 +44,7 @@ terms. The line is whether Waytide says what the word means.
 
 ## Substitutions
 
-General, domain-less word substitutions — the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
+General, domain-less word substitutions. Each puts the literal term in place of a slang, imported-jargon, or figurative one. Each puts the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
 
 | Say | Don't say | What it names |
 |---|---|---|
@@ -99,9 +99,9 @@ General, domain-less word substitutions — the literal term in place of a slang
   speech: neither word is wrong, and the reference is still incomplete without the name. A Waytide
   rule needs no such prefix, being referred to by its name.
 
-- **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. As an effect taking hold or a change being deployed — "what landed", "the change landed", "it landed on master" — say **what changed**, **what was affected**, or **took effect**.
+- **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. It is also a figure as an effect taking hold, or a change being deployed: "what landed", "the change landed", "it landed on master". Say **what changed**, **what was affected**, or **took effect**.
 
-**Applying it:** when the impulse is a **Don't say** word — in names, prose, comments, commit messages, logs, loop records, and dialogue — write the **Say** term. When a new substitution is settled, add a row here.
+**Applying it:** when the impulse is a **Don't say** word, write the **Say** term. That holds in names, prose, comments, commit messages, logs, loop records, and dialogue. When a new substitution is settled, add a row here.
 
 ---
 
@@ -125,3 +125,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 7:25:35 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:50:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT

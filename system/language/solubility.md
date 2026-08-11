@@ -1,14 +1,14 @@
 # Solubility: how readily a unit dissolves into use
 
-**Solubility** is the design-quality term for how readily a unit **dissolves into use** — how usable and transparent it is from the standpoint of what uses it. A soluble unit is as simple as it should be and no simpler: maximum simplicity, minimal necessary complexity, found rather than presumed.
+**Solubility** is the design-quality term for how readily a unit **dissolves into use**. It is how usable and transparent the unit is from the standpoint of what uses it. A soluble unit is as simple as it should be and no simpler: maximum simplicity, minimal necessary complexity, found rather than presumed.
 
-The word is used as a general quality of a design, and it is judged **from the outside** — from the use site, not from the implementation. An implementation that only works by forcing an awkward use is not soluble, however tidy it reads internally.
+The word is used as a general quality of a design. It is judged **from the outside**, from the use site rather than from the implementation. An implementation that only works by forcing an awkward use is not soluble, however tidy it reads internally.
 
 **Say "soluble" / "solubility"** for this quality. It is not a synonym for "simple" (a unit can be simple and still dissolve badly into use), nor for "clean" or "elegant" (which describe how the code reads, not how it is used).
 
-**Why:** the quality needs one settled name so it can be aimed at, taught, and judged. "Dissolves into use" is the literal description the name is built from — the reader needs no mapping to a metaphor or an imported academic term (this is the name-literally standard applied to the term itself). Naming it makes it available as a target of design work and as a criterion at the moment a design is judged, rather than leaving the judgment to unstated taste.
+**Why:** the quality needs one settled name so it can be aimed at, taught, and judged. "Dissolves into use" is the literal description the name is built from. The reader needs no mapping to a metaphor or an imported academic term. This is the name-literally standard applied to the term itself. Naming it makes it available as a target of design work, and as a criterion at the moment a design is judged. It is not left to unstated taste.
 
-**How to apply:** use "solubility" wherever the concern is how well a unit dissolves into its use — in prose, rules, designs, commits, and dialogue. Judge it from the use site.
+**How to apply:** use "solubility" wherever the concern is how well a unit dissolves into its use. That is in prose, rules, designs, commits, and dialogue. Judge it from the use site.
 
 Related:
 
@@ -20,3 +20,4 @@ Related:
 
 Authored by Scott Bellware on Thu Jul 16 2026 at 8 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT

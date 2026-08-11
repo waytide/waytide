@@ -21,14 +21,14 @@ one, is the **product generation**, and it is a different kind of statement enti
   upgrading, and may have to change their code.
 
 Stated that way, the segment a change increases is **read off what the change does to the
-people using it**, not off how large the change was, how long it took, or how much of the
-source it touched. A rewrite that leaves every interface intact is a patch. A single removed
+people using it**. It is not read off how large the change was, how long it took, or how much of
+the source it touched. A rewrite that leaves every interface intact is a patch. A single removed
 method is a major.
 
 **The generation segment is a declaration, not a compatibility claim.** Semver's three
 segments answer *will what I have still work*. The generation answers *is this the same
 product*. Those are different questions, and only the first is derivable from the change
-itself — the second is decided by whoever decides what the product line is. It is increased
+itself. The second is decided by whoever decides what the product line is. It is increased
 when an entirely new product line is declared, which is a **product management decision**
 rather than a technological one.
 
@@ -38,7 +38,7 @@ occasion. A release that followed one would carry the new generation because the
 already been declared, not as part of deciding the release.
 
 **A project uses one form throughout.** The two forms are not alternatives to be chosen per
-release: a project that carries a generation carries it in every version, and one that does
+release. A project that carries a generation carries it in every version. One that does
 not never acquires it at a release. Mixing them within a project would make two versions
 uncomparable, since `2.3.1` and `2.2.3.1` do not sit on one line.
 
@@ -52,8 +52,8 @@ the leading number look like a compatibility break so severe it needed its own d
 not what it says.
 
 **How to apply:** version a package as `<major>.<minor>.<patch>`, prefixed by a
-`<generation>` where the project carries one, and hold to that form for the life of the
-project. Choose the segment to increase by asking what a user of the package must do —
+`<generation>` where the project carries one. Hold to that form for the life of the
+project. Choose the segment to increase by asking what a user of the package must do. It is
 nothing, nothing but read, or change their code. Never increase the generation as part of a
 release. It moves only when a new product line has been declared.
 
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
