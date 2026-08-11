@@ -10,7 +10,7 @@ Speak and write to the user in plain language, using the **actual names of thing
 
 **Why:** invented labels and unexplained jargon feel precise but actually hide meaning — the reader has to work out what "tier 1" stands for. Naming the real thing costs a few words and saves the reader the decoding. The point of communicating is to be understood, not to sound authoritative.
 
-**How to apply:** when explaining something, use the concrete name and a plain description. Bring in a shorthand only after its meaning is clear, and only if it makes the meaning clearer. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items.
+**How to apply:** when explaining something, use the concrete name and a plain description. Bring in a shorthand only after its meaning is clear, and only if it is justified. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items.
 
 Related:
 
@@ -26,3 +26,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT

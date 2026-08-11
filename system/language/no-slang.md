@@ -10,7 +10,7 @@ Each discontinued figurative term has a literal replacement, and each is its own
 - **arm → scenario**
 - **cut → increment**
 - **in flight → in progress**
-- **earns its keep / earns its place → a literal statement of what it does**
+- **earns its keep / earns its place → justified / justifiable**
 
 **Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly. "sweep" is loose where "conform" states the actual intent. Literal naming is the house style. This is the prose-and-process counterpart of the name-literally-not-by-analogy rule (that rule governs *naming a concept*, and this one governs *phrasing* in prose and conversation).
 
@@ -31,3 +31,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT

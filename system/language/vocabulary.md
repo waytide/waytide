@@ -59,7 +59,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost |
 | **examine** | "decode" | working through or inspecting something to understand it |
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work |
-| a literal statement of what the thing does — **serves the project**, **states something**, **makes the meaning clearer** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about what the thing actually does |
+| **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having |
 | **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
 | **name** | "slug" | the descriptive part of a filename |
@@ -133,3 +133,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 3:22:51 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT

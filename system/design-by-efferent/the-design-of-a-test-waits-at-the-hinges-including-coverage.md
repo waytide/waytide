@@ -17,7 +17,7 @@ When adding coverage for behavior that already exists, all five are in play:
 
 **Why:** the hinges are the mechanism for handing each design decision to the human
 at its gate. A coverage test has genuine design decisions — especially its controls
-and observations — so it takes the same wait. What separates coverage from design is
+and observations — so it justifies the same wait. What separates coverage from design is
 **not** the absence of hinges. It is that no behavior is being designed and no red
 is driven. See the companion rule: TDD designs, coverage prevents, and an
 implementation is never broken to introduce a test.
@@ -43,3 +43,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
