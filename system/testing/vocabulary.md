@@ -2,7 +2,7 @@
 
 The testing package's vocabulary: the terms it defines and the word substitutions it enforces, for controls-based test-writing. Binding — use these terms and swaps in tests, rules, prose, and dialogue.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+**Every word here is one of three things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
@@ -43,3 +43,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

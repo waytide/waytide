@@ -3,8 +3,8 @@
 A historical record states what was true when it was written, and is
 **not** revised to suit a later convention. That is a decision-log entry, a work session record,
 an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against
-renaming, reformatting, correcting a term the project has since replaced, and every other reason
-a reader might want a record to read differently.
+renaming, reformatting, and correcting a term the project has since replaced. It holds against
+every other reason a reader might want a record to read differently.
 
 **It does not hold against disclosure.** Where a record names something that should not have
 been disclosed, it is corrected. A record is not a commitment to keep publishing something that
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

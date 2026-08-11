@@ -9,7 +9,7 @@ Every working-state artifact under `waytide/` that is a document with a body end
 
 **Why:** a working-state artifact is a document meant to be read on its own. A narrative, a design, an experiment record. Its provenance — who wrote it, when, and who changed it since — is part of what a reader needs. So it belongs in the file rather than only in version-control history the reader would have to go query. This is a different justification from the rule-file footer's (which recovers history that subtree strips). Stating it once, here, keeps every working-state convention from repeating it. The decision log is exempt because its one-line-per-file shape already carries its provenance in the filename, and a footer would break that shape.
 
-**How to apply:** end a provenance footer on every one of these. That is an experiment, a design, a plan, an observation, a deferred item, a loop record, or a work session record. The format is the record-rule-authorship-in-a-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/log/` entry.
+**How to apply:** end a provenance footer on every one of these. That is an experiment, a design, a plan, or an observation. It is also a deferred item, a loop record, or a work session record. The format is the record-rule-authorship-in-a-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/log/` entry.
 
 Related:
 
@@ -27,3 +27,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

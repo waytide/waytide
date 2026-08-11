@@ -12,7 +12,7 @@ for primacy/readability, not mechanics.)
 
 **Why:** The order in which includes are listed reads as a statement of what
 matters most to the type. Leading with the domain mixin says "this is a domain
-type, mechanically wired by its infrastructure," not "this is an infrastructure
+type, mechanically wired by its infrastructure." It does not say "this is an infrastructure
 thing that also happens to be a domain type." Primacy first.
 
 **How to apply:** In a class that mixes in the two, write the domain mixin's
@@ -24,3 +24,4 @@ macro) call after the infrastructure `include` it depends on. Related: the
 
 Authored by Scott Bellware on Mon Jun 29 2026 at 1 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

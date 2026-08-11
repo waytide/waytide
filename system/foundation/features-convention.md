@@ -65,7 +65,7 @@ is the more expensive of the two to get wrong.
 
 **How to apply:** when a feature is started, add a record here. It states its intent, its
 branch topology, and the working location chosen at the start. It carries no state line, since
-absence is the in-flight state. Add the line when the record reaches one of the four words, and update
+absence is the in-flight state. Add the line when the record reaches one of the four words. Update
 it as the state changes after that. Record each confirmation the lifecycle requires, and name
 the feature's loop record. Keep the record after the feature concludes.
 
@@ -97,3 +97,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

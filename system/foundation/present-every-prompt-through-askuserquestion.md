@@ -1,6 +1,6 @@
 # Present every prompt to the engineer through the selection UI
 
-Every time you prompt the engineer to make a choice, a decision, or an answer, present it through the interactive **selection UI**, which is the `AskUserQuestion` tool. That holds for **any** prompt. Never use a prose question or a hand-typed list. Each genuine candidate is an option.
+Every time you prompt the engineer to make a choice, a decision, or an answer, present it through the interactive **selection UI**. That is the `AskUserQuestion` tool. That holds for **any** prompt. Never use a prose question or a hand-typed list. Each genuine candidate is an option.
 
 **Do not add an escape option of your own.** The selection UI auto-supplies a free-text **"Other"** choice. That built-in escape *is* how the engineer answers outside the option set. The best answer is often one only they can produce, and a closed list must never foreclose it. Adding your own "Chat about this" duplicates it.
 
@@ -35,3 +35,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

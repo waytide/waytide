@@ -27,9 +27,10 @@ Keep each section tight.
 
 **Why:** the library has a discoverable structure — layers, construct kinds, and an API-currency split — worth surfacing on demand. Fixing the report's shape makes it repeatable and steers reading to the source rather than recollection.
 
-**How to apply:** on a lib-report request, read `lib/` and render the sections from current state, confirming membership by reading the files rather than asserting it. Companion to the `test-report` command (in `testing`). Neither report is written to a file.
+**How to apply:** on a lib-report request, read `lib/` and render the sections from current state. Confirm membership by reading the files rather than asserting it. Companion to the `test-report` command (in `testing`). Neither report is written to a file.
 
 ---
 
 Authored by Scott Bellware on Mon Jun 29 2026 at 12 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

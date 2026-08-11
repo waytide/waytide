@@ -105,7 +105,7 @@ record that showed options put to a engineer who was not there would be worse th
 because it would be believed.
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended**
-through the selection UI, alongside the working location. Attended is the
+through the selection UI. Ask it alongside the working location. Attended is the
 default. Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.*
 and *The agent decides and generates through.* Name no hinge in the question or in an option. Record the choice as a confirmation in the feature or experiment record. Declare
 it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
@@ -135,3 +135,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

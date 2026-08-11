@@ -5,9 +5,7 @@ approved dictionary and 53 writing rules. It also permits a project to add its o
 nouns and technical verbs. STE Rules 1.5 through 1.13 govern that.
 
 **The rules in this directory are Simplified Technical English Vector, or STEve.** That is Waytide's implementation of the standard. The STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the order this rule states. **`Say it in Steve`
-is the instruction to write that way.** It is not the same request as `say it in STE`, which asks
-for the raw standard and forbids `efferent`, `cradle`, `hinge`, and every other term Waytide
-reserved.
+is the instruction to write that way.** It is not the same request as `say it in STE`. That one asks for the raw standard, and forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved.
 
 **This rule states the sequence.** The STE dictionary decides first. Waytide keeps its own word
 where the STE dictionary's approved word means something else.
@@ -68,3 +66,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:09:30 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

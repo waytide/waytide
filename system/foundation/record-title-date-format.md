@@ -41,7 +41,7 @@ same reason the footer uses it. The title is for a reader, and the UTC instant i
 carried, unambiguously, by the filename.
 
 **How to apply:** when writing a record whose title takes a date, render it
-`Mon Jan 1 2026 18:06` in the author's local time, at the moment the record is written. The
+`Mon Jan 1 2026 18:06`. Use the author's local time, at the moment the record is written. The
 command is `date "+%a %b %-d %Y %H:%M"`. Do not add a timezone abbreviation, AM/PM, or seconds, and do
 not write a date range. Keep the filename's UTC prefix and the footer's local
 `at <hour> <zone>` form as they are.
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

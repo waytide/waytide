@@ -1,11 +1,9 @@
 # Versioning — Vocabulary
 
-The versioning package's vocabulary. One term, and it is the one the package exists to
-introduce: everything else in a version number is semantic versioning, which is defined
-elsewhere and is not restated here. Binding — use this term with this meaning in rules, release
+The versioning package's vocabulary. One term, and it is the one the package exists to introduce. Everything else in a version number is semantic versioning, which is defined elsewhere and is not restated here. Binding — use this term with this meaning in rules, release
 notes, prose, and dialogue.
 
-**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+**Every word here is one of three things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
@@ -38,3 +36,4 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

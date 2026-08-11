@@ -90,7 +90,7 @@ that has already satisfied that strictness is the factory, not a caller in that
 sense. Forcing it back through `build` would run determination logic whose outcome
 is already known.
 
-**How to apply:** inside the family, use `new` to construct a family subtype from an input
+**How to apply:** inside the family, use `new` to construct a family subtype. The input is
 already in the strict form the initializer records. It is preferable
 to a `build` call whose normalization is a no-op. If any normalization remains, use
 `build`. Related: the general `build`/`new` distinction above and the
@@ -105,3 +105,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

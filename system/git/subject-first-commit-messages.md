@@ -15,7 +15,7 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
   not each segment.
 - **No 50-character limit** — let the first line run as long as it needs to state the subject clearly.
 
-**Why:** the log records the history of the software. It is scanned rather than read, so leading with the changed thing rather than the engineer's action is truer to what the log is for, and easier to review. It is the Eventide house style, and it composes with the commit-wording rule — "Task 9 is done" already states the fact, software-first.
+**Why:** the log records the history of the software. It is scanned rather than read. Leading with the changed thing rather than the engineer's action is truer to what the log is for, and easier to review. It is the Eventide house style, and it composes with the commit-wording rule — "Task 9 is done" already states the fact, software-first.
 
 **How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb — not imperative and not past tense — because the two put the engineer's work ahead of the software.
 
@@ -34,3 +34,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

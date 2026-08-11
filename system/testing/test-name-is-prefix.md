@@ -1,6 +1,6 @@
 # Start a test name with "Is" only for a value-equals-comparator assertion
 
-A test (context) name should begin with "Is" only when the test asserts that a value **is** some other comparator — an equality or identity comparison of a value against another value. For any other kind of assertion — a predicate being true, a presence/definition check, a raised error, an exclusion, a behavior or side effect — do not start the name with "Is". Name it for what it establishes.
+A test or context name should begin with "Is" only when the test asserts that a value **is** some other comparator. That is an equality or identity comparison of a value against another value. Do not start the name with "Is" for any other kind of assertion. That is a predicate being true, a presence or definition check, a raised error, an exclusion, or a behavior or side effect. Name it for what it establishes.
 
 Good examples — tests each asserting `value == <comparator>`:
 
@@ -23,3 +23,4 @@ Related:
 Authored by Scott Bellware on Fri Jun 26 2026 at 2 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

@@ -6,7 +6,7 @@ In the loop, after the actuation gate, **display the just-satisfied test and the
 
 **The implementation is shown with them, and leads.** The solubility verdict is made on the code, so the implementation goes on screen ahead of the test and the run output. The loop does not move on before it is there. See the what-each-hinge-displays rule, which carries this as hinge 4's display.
 
-**How to apply:** when reporting that the unit is implemented and the test confirms, include the implementation in the same turn. Include the test file's content and the run output too. Then hand over the solubility gate.
+**How to apply:** report that the unit is implemented and the test confirms. Include the implementation in the same turn. Include the test file's content and the run output too. Then hand over the solubility gate.
 
 Related:
 
@@ -24,3 +24,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

@@ -11,9 +11,7 @@ the packages live together, a change spanning several packages is one atomic
 commit, and the whole rule set can be read, grepped, and consolidated in one
 place. This is the source of truth.
 
-**Each package also has its own repository** in the `waytide` org — `foundation`,
-`testing`, `git`, and so on (the `code/` namespace flattens to `code-` in the repo
-name, e.g. `waytide/code-ruby`). Each holds a single package's files at its
+**Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. The `code/` namespace flattens to `code-` in the repo name, as in `waytide/code-ruby`. Each holds a single package's files at its
 root. These are how a consuming project installs a package.
 
 The component repositories are **generated from this composite repo, not edited

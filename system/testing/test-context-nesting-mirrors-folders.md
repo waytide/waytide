@@ -6,7 +6,7 @@ A test at `test/automated/upload/call/present.rb` opens `context "Upload"` → `
 
 Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload Call"`). The leaf files within a feature folder (e.g. `call/present.rb`, `call/empty.rb`) represent distinct cases of the same feature. They share the folder-mirrored context nesting and are distinguished by their outcome-context titles, not by an extra per-file context layer.
 
-**Why:** the test output and the file tree then read as the same structure — each outcome is situated under the class/namespace and the feature it establishes. It also keeps the suite consistent with the existing `upload/` tests.
+**Why:** the test output and the file tree then read as the same structure. Each outcome is situated under the class or namespace, and under the feature it establishes. It also keeps the suite consistent with the existing `upload/` tests.
 
 **How to apply:** open one `context` per folder segment of the test's path (the class/namespace, then the feature/method), then the outcome context(s) holding the assertions.
 
@@ -21,3 +21,4 @@ Related:
 Authored by Scott Bellware on Fri Jun 26 2026 at 2 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

@@ -26,7 +26,7 @@ and not declared.
 
 **The refused dependency** is the features-convention rule. It cites
 `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in
-`waytide/local/loops/`. Doing so *"would invert the package graph, and would make the
+`waytide/local/loops/`. Its words are *"would invert the package graph, and would make the
 feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is
 two things at once. It is a citation of another package, and the reason a dependency was not taken.
 
@@ -65,3 +65,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

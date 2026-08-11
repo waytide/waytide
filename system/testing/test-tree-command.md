@@ -2,7 +2,7 @@
 
 When the user gives the command **"test tree"**, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
 
-The problem it solves is repetition. Each test file re-declares the same outer contexts, the class or namespace and then the feature, so the raw run output repeats those headings per file. The normalized tree merges them. Each outer context appears once, then each sub-feature once beneath it. The individual tests are leaves with a `•` prefix, and the pass/fail summary line comes at the end.
+The problem it solves is repetition. Each test file re-declares the same outer contexts, the class or namespace and then the feature. The raw run output repeats those headings per file. The normalized tree merges them. Each outer context appears once, then each sub-feature once beneath it. The individual tests are leaves with a `•` prefix, and the pass/fail summary line comes at the end.
 
 **Produce it from the run's output, not the source.** The tree is built by running the suite with narration output suppressed, capturing the output, and parsing *that*. Every file's `context`/`test` hierarchy is merged into one tree keyed by name, so identical paths de-duplicate. Because it comes from the run, a dynamic `context <expr> do` shows its **expanded real value**, not the source placeholder. A bare unnamed `test do` produces no line, so its enclosing context becomes the leaf.
 
@@ -25,3 +25,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

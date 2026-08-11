@@ -50,10 +50,7 @@ above and below are the settled one.
   no block is printed. The experiment-lifecycle and feature-lifecycle rules govern that case.
 - **A merge, a commit, or a push** does not move the working tree. No block.
 
-**Why:** an agent reports what it did and not where it stood, so a branch switch is the one
-operation whose effect is invisible in every later report. The engineer's own record of this
-session is the case: the agent switched to a parent experiment branch to edit a file, stayed there
-after committing, and the next instruction was read against a branch neither party had named. A
+**Why:** an agent reports what it did, and not where it stood. So a branch switch is the one operation whose effect is invisible in every later report. The engineer's own record of this session is the case. The agent switched to a parent experiment branch to edit a file, and stayed there after committing. The next instruction was read against a branch neither party had named. A
 block that cannot be scrolled past removes the class of error rather than one instance of it.
 
 **How to apply:** print the block on every branch switch, before reporting anything else about the
@@ -70,3 +67,4 @@ Related:
 Authored by Scott Bellware on Sat Aug 8 2026 at 12:23:07 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

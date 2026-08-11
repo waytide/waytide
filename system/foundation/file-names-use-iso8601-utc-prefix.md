@@ -17,9 +17,9 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 **A project's own `waytide/local/vocabulary.md` takes no prefix, for the same reason.** It is a structural file rather than a dated entry: it accretes terms over the project's life and is named by what it is. That is what separates it from a local rule, which is a dated decision and takes the prefix. See the vocabulary-convention rule.
 
-**Why:** the dated artifacts are a chronological record, so one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory, preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable set of conventions, so each is named for what it says.
+**Why:** the dated artifacts are a chronological record. So one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory. It preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable set of conventions, so each is named for what it says.
 
-**How to apply:** prefix every new working-state artifact, and every local rule a project adds, with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
+**How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
 
 ---
 
@@ -30,3 +30,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

@@ -140,11 +140,9 @@ the script shows it. Look first at the controls, whose values are named rather t
 described. Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
 it. Where the factor is that an actuation completes, write a bare `assert_raises` or
 `refute_raises` instead. Read its predicate inline, with no explaining variable. Place it
-immediately before what it qualifies. That is the actuation for a factor in the controls or a
-prior state, and the test for a factor in a derived value. Do
+immediately before what it qualifies. That is the actuation for a factor in the controls or a prior state. It is the test for a factor in a derived value. Do
 not wrap it in a `test` block, do not name it, and do not bind its operand. Do not write it as a
-`comment` instead. An unchecked statement of a deciding factor is the thing this replaces. Where an actuation's completion is the thing being
-established rather than the ground a later observation stands on, that is a test. It belongs
+`comment` instead. An unchecked statement of a deciding factor is the thing this replaces. An actuation's completion may be the thing being established, rather than the ground a later observation stands on. That is a test. It belongs
 in a `test` block.
 
 Related:
@@ -166,3 +164,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT

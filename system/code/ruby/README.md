@@ -38,7 +38,7 @@ code/ruby  →  foundation, language
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
 
 ```
 git subtree add  --prefix waytide/system/code/ruby https://github.com/waytide/code-ruby.git master --squash
@@ -56,4 +56,4 @@ git subtree pull --prefix waytide/system/code/ruby https://github.com/waytide/co
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.

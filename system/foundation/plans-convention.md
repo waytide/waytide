@@ -12,7 +12,7 @@
 
 **Why:** design and execution are distinct concerns — one decides what the shape should be, the other decides the order it gets built in. Keeping plans in their own directory, each pointing at the design it realizes, keeps the settled direction stable while the incremental build proceeds against it. It preserves the build history without cluttering the design.
 
-**How to apply:** when a settled design is ready to build, add a plan here. It names its source design, and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history. In an intuitive-mode project do all of that in `waytide/local/intention/`, calling the artifact an intention and pointing it at its source aspiration. In an OODA-mode project do it in `waytide/local/action/`, calling it an action and pointing it at its source orientation. Nothing else differs.
+**How to apply:** when a settled design is ready to build, add a plan here. It names its source design, and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history. In an intuitive-mode project do all of that in `waytide/local/intention/`. Call the artifact an intention, and point it at its source aspiration. In an OODA-mode project do it in `waytide/local/action/`, calling it an action and pointing it at its source orientation. Nothing else differs.
 
 Related:
 
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
