@@ -22,32 +22,33 @@ package's slice of the composite repo history and pushes it to that package's
 repository. Sync runs one way only: composite repo → component repositories.
 
 **The component repositories are downstream-only.** They only ever receive. They
-are never an authoring source. Do not commit directly to a component repository. Its `master` is regenerated from this composite repo's history by `git subtree split`, so a direct commit is not in that history and is lost or made to conflict on the next release. All changes are made in the composite repo.
+are never an authoring source. Do not commit directly to a component repository. Its `master` is regenerated from this composite repo's history by `git subtree split`. So a direct commit is not in that history. It is lost, or made to conflict, on the next release. All changes are made in the composite repo.
 
 ## Authoring
 
-Author in the composite repo. You never edit a component repository directly. A
-release re-splits the changed packages out to their repositories and pushes them —
-the split is deterministic, so unchanged history keeps its commits and only new
-work is added.
+Author in the composite repo. You never edit a component repository directly. A release re-splits the changed packages out to their repositories and pushes them. The split is deterministic, so unchanged history keeps its commits and only new work is added.
 
 ## Publishing a package
 
 **Before publishing, check for direct commits.** Run `./report-direct-commits.sh` from
 the repository root. It reads each component repo's `master` and reports any commit whose
-message this repository's history does not contain — that is, a commit made directly to the
+message this repository's history does not contain. That is a commit made directly to the
 component repo rather than produced by a split. It fetches and pushes nothing, and exits
 non-zero when it finds something. Two such commits went unnoticed for days before the check
 existed, found only when a publish was attempted. Nothing else announces them.
 
 **Check for planning directories named in part too.** Run
 `./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
-under `system/` naming some but not all of a planning artifact's directories — a rule naming
-`plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is *about* one of those artifacts names every mode's directory and one that merely mentions it names none, so naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
+under `system/` naming some but not all of a planning artifact's directories. An instance is a
+rule naming `plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is
+*about* one of those artifacts names every mode's directory, and one that merely mentions it
+names none. So naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
 only reads, and exits non-zero when it finds something.
 
 After committing a change here, re-publish the affected package by splitting its
-directory and pushing to the component repo's `master`. A `git subtree split`'s output history depends on the prefix path, so a package whose directory path is unchanged fast-forwards, while a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
+directory and pushing to the component repo's `master`. A `git subtree split`'s
+output history depends on the prefix path. So a package whose directory path is
+unchanged fast-forwards, and a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
 **The composite's package directory is `system/`, reached
 by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
 (2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s
@@ -83,8 +84,8 @@ git push https://github.com/waytide/<package>.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`report-direct-commits.sh` handles the repository before its first publish on its own — it
-reports `no master … — skipped` and carries on — so it needs no change when a package is added.
+`report-direct-commits.sh` handles the repository before its first publish on its own. It
+reports `no master … — skipped` and carries on, so it needs no change when a package is added.
 `install-all.sh` does: its package list is hardcoded, where the direct-commit check discovers
 packages by finding READMEs.
 
@@ -104,9 +105,7 @@ is there. The remedy, in order:
    correct once the content is safely in the composite, and only then — the commit object is
    replaced, and its content survives because step 2 put it here.
 
-The one-time distribution that first created the component repositories is recorded in the
-**Phase B runbook and checklist**, which are **suspended** under `local/suspended/` — superseded
-by this document, and carrying a package map that no longer matches the packages. They are the
+The one-time distribution that first created the component repositories is recorded in the **Phase B runbook and checklist**. Those are **suspended** under `local/suspended/`, superseded by this document. They carry a package map that no longer matches the packages. They are the
 only record of how a repository rename and a mass re-publish after a path change were done. See
 the suspended-convention for restoring them.
 
@@ -128,8 +127,5 @@ to lose it. Two ways to capture it, preferred first:
    git subtree push --prefix waytide/system/testing https://github.com/waytide/testing.git master
    ```
 
-   This puts your commits on the component repo. It is a **fallback**: `subtree
-   push` reconciles history awkwardly, and the change still has to be brought into
-   the composite repo by hand (the component repo is downstream — the next
-   composite split would otherwise overwrite it). Author in the composite whenever
+   This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and the change still has to be brought into the composite repo by hand. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever
    you can.
