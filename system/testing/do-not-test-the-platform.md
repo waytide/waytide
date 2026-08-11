@@ -15,9 +15,9 @@ test would merely assert that `String#empty?` returns true — i.e. test Ruby. S
 resolution is the *decision* (transparent), not a test.
 
 **The contrast — what IS ours.** The moment a unit adds a policy, that policy is the
-library's and must be tested, because it is a **decision**, not the platform's behavior:
-`Upload#call`'s guard that raises `Upload::Error` on an empty file (`raise Error, "File
-is empty" if file.empty?`), a coercion that normalizes the file, a suppressed warning.
+library's and must be tested, because it is a **decision** rather than the platform's behavior.
+`Upload#call`'s guard raises `Upload::Error` on an empty file — `raise Error, "File
+is empty" if file.empty?`. So does a coercion that normalizes the file, and a suppressed warning.
 Those have their regressions prevented. The bare `file.empty?` forwarding underneath them is not.
 
 **Why:** tests exist to prevent a regression in the library's design and decisions. Testing the platform
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

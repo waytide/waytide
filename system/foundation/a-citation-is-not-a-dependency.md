@@ -24,9 +24,9 @@ alongside it. It says nothing about what its rules may refer to.
 testing conventions, degrade this section."* The rule works either way, so `testing` is cited
 and not declared.
 
-**The refused dependency** is the features-convention rule, which cites
+**The refused dependency** is the features-convention rule. It cites
 `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in
-`waytide/local/loops/`, because doing so *"would invert the package graph, and would make the
+`waytide/local/loops/`. Doing so *"would invert the package graph, and would make the
 feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is
 a citation of another package and the reason a dependency was not taken.
 
@@ -60,3 +60,4 @@ Authored by Scott Bellware on Fri Jul 31 2026 at 10:42:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

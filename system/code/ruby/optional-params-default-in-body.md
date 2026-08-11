@@ -32,7 +32,7 @@ Examples:
 
 ## Default with `.nil?`, not `||=`, when the parameter carries a settable value that may be legitimately falsy
 
-`||=` is the right tool **only when `nil` and the real default are the sole falsy possibilities** — as they are for a retry count (`retries ||= 3`) or a boolean flag (`verify ||= false`, which intentionally normalizes only `nil → false`). But when an optional parameter carries a **value the method will store or set as-is** — and that value may legitimately be `false`, `nil`, or another falsy object — `||=` is **wrong**: it clobbers a caller's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
+`||=` is the right tool **only when `nil` and the real default are the sole falsy possibilities**. They are the sole possibilities for a retry count, `retries ||= 3`, and for a boolean flag, `verify ||= false`, which intentionally normalizes only `nil → false`. But when an optional parameter carries a **value the method will store or set as-is** — and that value may legitimately be `false`, `nil`, or another falsy object — `||=` is **wrong**: it clobbers a caller's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
 
 ```ruby
 # Yes — only a truly-omitted value is defaulted; a settable false/nil literal passes through
@@ -52,3 +52,4 @@ end
 
 Authored by Scott Bellware on Sun Jun 28 2026 at 9 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

@@ -27,8 +27,8 @@ AM/PM, no seconds.
 
 - **It is the one exception to the seconds rule.** Every other datetime written into a
   file carries its time of day to seconds (see the a-time-value-carries-minutes-and-seconds
-  rule). A title does not, and the exception is narrow: that rule exists because a running
-  history's entries collide at a coarse resolution and the later one goes unwritten, and a
+  rule). A title does not, and the exception is narrow. That rule exists because a
+  running history's entries collide at a coarse resolution and the later one goes unwritten. A
   title appears once per file, so nothing can collide with it. The filename beside it
   already carries the same instant to the second, in UTC.
 
@@ -59,3 +59,4 @@ Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

@@ -100,8 +100,8 @@ it has anything installed to deliver it. Its usage line is `sh install-all.sh`, 
 
 **Why the bit stays set on a script nobody can receive it from.** Two reasons. It is correct in
 this repository, where the file is cloned like any other and is run as itself by whoever maintains
-Waytide. And the delivery is not permanent — a script fetched by `curl` today may be delivered by
-some other means later, and a file that had been left `644` because one path stripped the bit would
+Waytide. And the delivery is not permanent. A script fetched by `curl` today may be delivered by
+some other means later. A file left `644` because one path stripped the bit would
 then arrive broken by a path that would have carried it.
 
 **The general form:** the bit is a property of the file and is always set. The usage line is a
@@ -147,3 +147,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

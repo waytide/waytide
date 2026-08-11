@@ -33,10 +33,9 @@ when an entirely new product line is declared, which is a **product management d
 rather than a technological one.
 
 **So the generation is never increased at a release.** A release states what a change means
-for the people using it, which is what the three semver segments carry. Declaring a new
-product line is a separate act that happens for its own reasons, on its own occasion, and a
-release that followed one would carry the new generation because the line had already been
-declared — not as part of deciding the release.
+for the people using it, which is what the three semver segments carry. Declaring a new product line is a separate act that happens for its own reasons, on its own
+occasion. A release that followed one would carry the new generation because the line had
+already been declared, not as part of deciding the release.
 
 **A project uses one form throughout.** The two forms are not alternatives to be chosen per
 release: a project that carries a generation carries it in every version, and one that does
@@ -70,3 +69,4 @@ Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

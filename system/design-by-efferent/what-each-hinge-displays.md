@@ -12,7 +12,7 @@ Each hinge of the cycle is handed to the human with a specific amount of the tes
 
 Three principles generate the table.
 
-**The actuation is the anchor at every downstream hinge.** A hinge is meaningful only in relation to the actuation. An observation shown alone (`assert(namespace == other_namespace)`) doesn't reveal what is being read or whether it witnesses the outcome — that depends entirely on the actuation that produced the value under observation. Controls shown alone are inert: a top-level constant, an inner name, a namespace name say nothing about whether they exercise the outcome, because their correctness is a function of how the actuation consumes them (which argument each becomes) *and* what the observation then reads about the result. So the actuation rides along at hinges 2 and 3 — shown for context, not re-decided.
+**The actuation is the anchor at every downstream hinge.** A hinge is meaningful only in relation to the actuation. An observation shown alone (`assert(namespace == other_namespace)`) doesn't reveal what is being read or whether it witnesses the outcome — that depends entirely on the actuation that produced the value under observation. Controls shown alone are inert. A top-level constant, an inner name, and a namespace name say nothing about whether they exercise the outcome. Their correctness is a function of how the actuation consumes them — which argument each becomes — *and* of what the observation then reads about the result. So the actuation rides along at hinges 2 and 3 — shown for context, not re-decided.
 
 **The contexts are shown once, where they are decided, and elided after.** The actuation hinge is where the outcome's **structural placement** is established — which class/feature contexts it nests under, mirroring the test's folder path. Seeing the nesting at hinge 1 lets the human judge *where* the outcome lives before anything else is built. Once settled there, the contexts are fixed, and repeating them at the observation and controls hinges buries each hinge's actual concern in noise. The full nesting returns when the turn-one test file is assembled and shown after the three test hinges.
 
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

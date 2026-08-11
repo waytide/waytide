@@ -52,9 +52,9 @@ inside a control, in a prior state, or in a derivation the reader cannot see, su
 the precondition's job.
 
 A consequence follows from the same gap, and it is worth naming because it is the sharpest
-form of the problem: **where a deciding factor is invisible, a test can pass without
-exercising what it names** — a value already present before the actuation set it, a connection
-already open, a search that found nothing so the assertion is made against nothing and passes
+form of the problem. **Where a deciding factor is invisible, a test can pass without
+exercising what it names.** A value is already present before the actuation set it. A connection
+is already open. A search finds nothing, so the assertion is made against nothing and passes
 vacuously. Documenting the factor closes that too. But the criterion is the legibility of the
 deciding factors, not only the risk of a vacuous pass.
 
@@ -133,10 +133,10 @@ checked, so the documentation and the fact cannot drift apart in silence. Keepin
 **How to apply:** when writing or reading a test, ask what determines its outcome and whether
 the script shows it — looking first at the controls, whose values are named rather than
 described. Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
-it — or a bare `assert_raises` or `refute_raises` where the factor is that an actuation
-completes — with its predicate read inline and no explaining variable, placed immediately
-before what it qualifies: the actuation for a factor in the controls or a prior state, the
-test for a factor in a derived value. Do not wrap it in a `test` block, do not name it, do not
+it. Where the factor is that an actuation completes, write a bare `assert_raises` or
+`refute_raises` instead. Read its predicate inline, with no explaining variable. Place it
+immediately before what it qualifies: the actuation for a factor in the controls or a prior
+state, and the test for a factor in a derived value. Do not wrap it in a `test` block, do not name it, do not
 bind its operand, and do not write it as a `comment` instead — an unchecked statement of a
 deciding factor is the thing this replaces. Where an actuation's completion is the thing being
 established rather than the ground a later observation stands on, that is a test and belongs
@@ -159,3 +159,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

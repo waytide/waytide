@@ -99,18 +99,15 @@ not yet cost anything.
 
 **Why:** an agent produces prose without choosing to, and prose is where padding, editorializing,
 and unattributed back-references hide. A list forces each claim onto its own line, where a claim
-with nothing in it is visible as a line with nothing in it. The engineer this was settled with had
-stated the preference three times in a week before it was written down — and a preference
-restated is a rule that has not been written, because every restatement is evidence the agent does
-not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
+with nothing in it is visible as a line with nothing in it. The engineer this was settled with had stated the preference three times in a week before it was written down. A preference restated is a rule that has not been written, because every restatement is evidence the agent does not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
 makes the difference survive a session boundary.
 
 **How to apply:** answer in a list. State facts in it — remove any item that describes a choice,
 explains an unasked-for reason, characterizes the work, or reports what the agent did to be sure,
 and test each survivor by whether it could be false. Number the list where its items depend on each
-other, and leave it unordered where they do not. Write prose only where the answer is a sentence or two, and do not
-reach for it because an explanation was requested or because the reasoning is connected — the first
-is not a justification and the second is served by numbering. Where the answer left something out,
+other, and leave it unordered where they do not. Write prose only where the answer is a sentence or two. Do not
+reach for it because an explanation was requested, or because the reasoning is connected. The first
+is not a justification, and the second is served by numbering. Where the answer left something out,
 end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the
 answer says all it has.
 
@@ -130,3 +127,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

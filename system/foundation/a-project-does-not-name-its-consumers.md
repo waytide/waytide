@@ -30,7 +30,7 @@ Three reasons, and each would be sufficient on its own:
 **A project named because a decision was about it.** The test is *why* the name is there, not
 whether the named project happens to consume this one. A project that is part of this project at
 large, or a reference project the method is shown through, is named because something was
-decided about it — that is ordinary, and removing such a name would cost the record its subject.
+decided about it. That is ordinary, and removing such a name would cost the record its subject.
 Waytide's own two are `website`, which is part of Waytide at large, and `constant`, the worked
 example the method is shown through. Neither is named as a consumer.
 
@@ -49,10 +49,10 @@ The tool itself is committed and names no consumer. It reads the configuration. 
 what lets the tooling be shared while the list stays local.
 
 **Why:** the pull toward a consumer list is real — it is the obvious way to answer *who needs
-this change* — and each of the three reasons above defeats it separately. The one that is easiest
-to miss is the third: a list of consumers reads as internal bookkeeping right up until the
-repository is public, at which point it is a list of other people's projects published by someone
-who was not thinking about publishing. Putting the operational answer in per-machine
+this change* — and each of the three reasons above defeats it separately. The one
+that is easiest to miss is the third. A list of consumers reads as internal bookkeeping right up
+until the repository is public. At that point it is a list of other people's projects, published by
+someone who was not thinking about publishing. Putting the operational answer in per-machine
 configuration keeps the capability without any of the three costs, so the rule forbids something
 that has an available substitute rather than something that has none.
 
@@ -76,3 +76,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

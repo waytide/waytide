@@ -67,9 +67,9 @@ rule (the general stance this is one case of).
 ## The supertype factory constructs a subtype via `new` directly
 
 The "construct through `build`" instruction governs **callers outside the family**.
-Inside the family, the abstract supertype (`Upload::Result`) **is** a factory of
-its subtypes (`Success`, `Rejected`), and its own factory code invokes a subtype's
-`new` **directly** — not the subtype's `build` — because by then it already holds
+Inside the family, the abstract supertype `Upload::Result` **is** a factory of
+its subtypes `Success` and `Rejected`. Its own factory code invokes a subtype's
+`new` **directly** rather than the subtype's `build`, because by then it already holds
 the input in the strict, normalized form `new` expects.
 
 `build`'s job is the **determination/normalization**: read the response, decide
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:53:39 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

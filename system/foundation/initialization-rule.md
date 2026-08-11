@@ -70,9 +70,9 @@ preceding line has just named the system. This line stands with a copyright and 
 and a figure below, none of which is a sentence, so it names its subject itself.
 
 **The notice leads.** It is therefore the **first text of the read**, which the
-announce-waytide-at-session-start rule permits unchanged: that rule requires the response opening
-this file to carry no prose so that *what this rule carries* comes first, and the notice is part
-of what this rule carries.
+announce-waytide-at-session-start rule permits unchanged. That rule requires the response opening
+this file to carry no prose, so that *what this rule carries* comes first. The notice is part of
+what this rule carries.
 
 **It names the work as well as the owner.** A notice printed with no surrounding prose has
 nothing to attach itself to, so `Waytide` leads it rather than being inferred from the block
@@ -95,7 +95,7 @@ changes.
 
 **Why:** the block stands for the system being brought into force in this session, so it is
 printed at the moment the rule files are opened — the one moment only the agent is present for.
-The notice sits there for the same reason: it is the one moment in a session where the system
+The notice sits there for the same reason. It is the one moment in a session where the system
 is announced as itself rather than being used, and a copyright notice belongs on the work at the
 point the work is presented.
 
@@ -119,3 +119,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 10:51:50 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT

@@ -12,10 +12,10 @@ and the outcomes of the normal-path actuation are not established when it runs. 
 actuations in one file are two arrangements sitting side by side, each inert to the other.
 
 **Naming follows the existing file conventions.** Where a feature has a normal path and
-one or more exceptional paths, the case set is larger than one, so the feature takes a
-folder and each file is named for the case it distinguishes (see the
-single-case-test-named-for-feature rule) — the normal-path file named for the feature, each
-exceptional-path file named for the condition under which the actuation fails. The
+one or more exceptional paths, the case set is larger than one. So the feature takes a
+folder, and each file is named for the case it distinguishes — see the
+single-case-test-named-for-feature rule. The normal-path file is named for the feature, and each
+exceptional-path file for the condition under which the actuation fails. The
 condition is then also promoted to a `context` inside that file, with the test named
 `Fails` (see the error-test-named-fails-condition-is-context rule).
 
@@ -48,3 +48,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 3:23:44 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
