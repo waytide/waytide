@@ -27,7 +27,8 @@ method is a major.
 
 **The generation segment is a declaration, not a compatibility claim.** Semver's three
 segments answer *will what I have still work*. The generation answers *is this the same
-product*. Those are different questions, and only the first is derivable from the change itself. The second is decided by whoever decides what the product line is. It is increased
+product*. Those are different questions, and only the first is derivable from the change
+itself — the second is decided by whoever decides what the product line is. It is increased
 when an entirely new product line is declared, which is a **product management decision**
 rather than a technological one.
 
@@ -36,7 +37,9 @@ for the people using it, which is what the three semver segments carry. Declarin
 occasion. A release that followed one would carry the new generation because the line had
 already been declared, not as part of deciding the release.
 
-**A project uses one form throughout.** The two forms are not alternatives to be chosen per release: a project that carries a generation carries it in every version. One that does not never acquires it at a release. Mixing them within a project would make two versions
+**A project uses one form throughout.** The two forms are not alternatives to be chosen per
+release: a project that carries a generation carries it in every version, and one that does
+not never acquires it at a release. Mixing them within a project would make two versions
 uncomparable, since `2.3.1` and `2.2.3.1` do not sit on one line.
 
 **Why:** a version is read by someone deciding whether to upgrade, so each segment has to
@@ -48,12 +51,17 @@ apart: three segments that are derived, and one that is declared. Collapsing the
 the leading number look like a compatibility break so severe it needed its own digit, which is
 not what it says.
 
-**How to apply:** version a package as `<major>.<minor>.<patch>`, prefixed by a `<generation>` where the project carries one. Hold to that form for the life of the project. Choose the segment to increase by asking what a user of the package must do. Nothing, nothing but read, or change their code. Never increase the generation as part of a
+**How to apply:** version a package as `<major>.<minor>.<patch>`, prefixed by a
+`<generation>` where the project carries one, and hold to that form for the life of the
+project. Choose the segment to increase by asking what a user of the package must do —
+nothing, nothing but read, or change their code. Never increase the generation as part of a
 release. It moves only when a new product line has been declared.
 
 Related:
 
-- the the-next-version-is-chosen-by-the-engineer rule — who makes the choice and how it is put - the `git` subject-first-commit-messages rule. The commit that records a version change - the `code/ruby` running-the-test-suite rule's package for where a Ruby project records its version
+- the the-next-version-is-chosen-by-the-engineer rule — who makes the choice and how it is put
+- the `git` subject-first-commit-messages rule — the commit that records a version change
+- the `code/ruby` running-the-test-suite rule's package for where a Ruby project records its version
 
 ---
 
@@ -62,4 +70,3 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

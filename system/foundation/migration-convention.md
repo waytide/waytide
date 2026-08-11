@@ -15,24 +15,37 @@ this repository for another, or arriving from one, is planned and recorded here.
   of **where it went and why** leaves with it unless something here holds that trail. A reader
   asking what became of something finds the answer in the repository they are already in, rather
   than having to know which repository to look in next.
-- **Format:** the same frontmatter-free markdown as rules — a `# <title>`, then prose. State the **source and destination repositories** outright, the **increments in order**. What is true in between. What is duplicated, what is unavailable. What is authoritative while the move is under way. Record what actually happened against the plan as the work proceeds.
+- **Format:** the same frontmatter-free markdown as rules — a `# <title>`, then prose. State the
+  **source and destination repositories** outright, the **increments in order**, and what is
+  true in between — what is duplicated, what is unavailable, and what is authoritative while the
+  move is under way. Record what actually happened against the plan as the work proceeds.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every
   working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 - **Naming:** the filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
-  **Records written before this convention reached a project keep the names they were given**. A datetime is not revised to a resolution it never had, per the a-time-value-carries-minutes-and-seconds rule.
+  **Records written before this convention reached a project keep the names they were given** —
+  a datetime is not revised to a resolution it never had, per the
+  a-time-value-carries-minutes-and-seconds rule.
 
 **Why:** a transition across a repository boundary is the operation most likely to lose content
-and least likely to be recoverable when it does. It is ordered — content has to arrive before it can be depended on. Stop being authoritative in one place before it becomes authoritative in another. And the state in between is a state no single repository fully describes. Planning it in the repository the content is leaving puts the plan where the content still is. Keeping the record afterward leaves a trail from the place a reader will look first. Without a named
+and least likely to be recoverable when it does. It is ordered — content has to arrive before it can be depended on, and stop being authoritative in one place before it becomes authoritative in another. And the state in between is a state no single repository fully describes. Planning it
+in the repository the content is leaving puts the plan where the content still is, and keeping
+the record afterward leaves a trail from the place a reader will look first. Without a named
 home, such a plan goes in with the project's sequencing artifacts, where it reads as ordinary
 build work, or into a chat where
 it does not survive the session.
 
-**How to apply:** before moving content across a repository boundary, write a record here naming the source and destination, the increments in order. What is true while the move is under way. Record what happened against it as the work proceeds, and **keep the record** once the
-content has gone. Do not use the project's sequencing artifact for a move that crosses out of the repository. Do not delete a migration record on completion.
+**How to apply:** before moving content across a repository boundary, write a record here naming
+the source and destination, the increments in order, and what is true while the move is under
+way. Record what happened against it as the work proceeds, and **keep the record** once the
+content has gone. Do not use the project's sequencing artifact for a move that crosses out of the
+repository, and do not delete a migration record on completion.
 
 Related:
 
-- the plans-convention — the plan that sequences work *within* this repository - the design-convention. A migration may realize a design, or may be mechanical enough to need none - the file-names rule. The filename prefix - the working-state-artifacts-carry-a-provenance-footer rule
+- the plans-convention — the plan that sequences work *within* this repository
+- the design-convention — a migration may realize a design, or may be mechanical enough to need none
+- the file-names rule — the filename prefix
+- the working-state-artifacts-carry-a-provenance-footer rule
 
 ---
 
@@ -43,4 +56,3 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

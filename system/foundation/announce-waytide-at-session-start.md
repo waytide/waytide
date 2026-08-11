@@ -2,7 +2,7 @@
 
 A project running Waytide announces the system's presence through **two surfaces the harness renders**, not through anything the agent says:
 
-- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice. What is installed. What the engineer can type to have it read:
+- **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits a notice — what is installed, and what the engineer can type to have it read:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
@@ -27,7 +27,9 @@ To load them now, type: load waytide.
 
   **The notice carries no mark.** Waytide's mark led it, immediately above the install line,
   from 2026-08-05 until 2026-08-06, and it now heads the **rule read** instead, printed by the
-  agent — see the initialization-rule. A mark stands for the system being brought into force. A hook runs before the session. This was the one surface that could only ever show it at a moment when nothing was being loaded. The mismatch was already
+  agent — see the initialization-rule. A mark stands for the system
+  being brought into force, and a hook runs before the session, so this was the one surface that
+  could only ever show it at a moment when nothing was being loaded. The mismatch was already
   written into the notice's own wording, which says **installed** and never *loaded* for exactly
   that reason.
 
@@ -48,7 +50,7 @@ To load them now, type: load waytide.
   silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the
   one that most easily loses track of it.
 
-- **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch. The fact stays available instead of scrolling away:
+- **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch, so the fact stays available instead of scrolling away:
 
 ```
 waytide · master :: Waytide
@@ -65,17 +67,24 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
   one, since a line where several segments are emphasized emphasizes nothing.
 
   **The Waytide segment is one word and carries no package count.** It did carry one until
-  2026-07-28. The count told a engineer nothing they act on, changed only when a package was installed or removed. Competed for width with the segments that do change. What
-  the line is for here is the standing fact that the system is in force. Presence is still read from disk. At least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is
+  2026-07-28. The count told a engineer nothing they act on, changed only when a package
+  was installed or removed, and competed for width with the segments that do change. What
+  the line is for here is the standing fact that the system is in force. Presence is still
+  read from disk — at least one directory carrying a `README.md`, the same test for a
+  package the notice uses — so only the display drops the number. The on-demand detail is
   the status report's job (see the status-report-format rule).
 
   **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A
   hyphen also joins words, so it read as punctuation inside the sentence of segments rather
   than as the break between the engineer's own state and the system standing behind it. The
   double colon separates and does nothing else, which is the whole of what is wanted there.
-  The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other, which is what makes the trailing segment read as an annotation on the line rather than another item in it.
+  The middle dot between the engineer's own segments is unaffected — the two marks now
+  differ from each other, which is what makes the trailing segment read as an annotation on
+  the line rather than another item in it.
 
-**The uncommitted changes segment** appears only when the working tree has something not committed. A modified tracked file, a staged change, or an untracked file that is not ignored. All three are uncommitted, and the untracked case is the point rather than
+  **The uncommitted changes segment** appears only when the working tree has something
+  not committed — a modified tracked file, a staged change, or an untracked file that is
+  not ignored. All three are uncommitted, and the untracked case is the point rather than
   noise: a file left untracked is usually one that should be added or ignored. Absence is
   the clean signal, as it is for the notice's open experiments and features. It is words
   rather than a mark on the branch — `master*` is the conventional form and means nothing
@@ -92,10 +101,12 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
   segments to answer one question. The overlap is the price of keeping one segment that
   answers it alone.
 
-**The unpushed commits segment** is the next state along the same axis: work that is committed but exists only in this working copy. Would be lost with it just the same.
+  **The unpushed commits segment** is the next state along the same axis: work that is
+  committed but exists only in this working copy, and would be lost with it just the same.
   The two segments can be present at once, so each is named in words that read distinctly.
 
-It carries **no count**, matching the uncommitted segment. The fact worth surfacing is that unpushed work exists at all. Git answers "how much" precisely on request. It
+  It carries **no count**, matching the uncommitted segment — the fact worth surfacing is
+  that unpushed work exists at all, and git answers "how much" precisely on request. It
   **never reaches the network**: the line renders every turn, so fetching is out of the
   question. It compares against the remote-tracking ref, which reflects the **last fetch** rather than the remote as it stands. What it reports is the last known remote state and a stale tracking ref can leave it silent when the remote has moved.
 
@@ -134,7 +145,8 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   **A second blank line stands the command sentence on its own line.** The two closing
   sentences were one line until 2026-07-30, so the command ended it but was still the tail
   of a paragraph, and reaching the words to be typed meant reading the caveat ahead of them
-  first. On its own line the command is the whole of the notice's last line. Read and copied without reading past anything — which is what putting it last was for. It costs a
+  first. On its own line the command is the whole of the notice's last line — read and
+  copied without reading past anything — which is what putting it last was for. It costs a
   line of height, and buys the one thing the notice asks for standing where nothing else
   competes with it.
 
@@ -143,9 +155,16 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   read cannot happen before some first message exists. What the line settles is only what
   that first message should be.
 
-  **The command names the read outright, and carries no emphasis markup.** `load waytide` says what it does. A engineer who has never seen this system can act on it without being told what the word stands for. The line also states the two facts a engineer needs before deciding whether to type it: that the rules load ahead of their first instruction either way. That loading takes a few moments.
+  **The command names the read outright, and carries no emphasis markup.** `load waytide`
+  says what it does, so a engineer who has never seen this system can act on it without
+  being told what the word stands for. The line also
+  states the two facts a engineer needs before deciding whether to type it: that the rules
+  load ahead of their first instruction either way, and that loading takes a few moments.
 
-  **The caveat says a few moments, not a moment.** It read `a moment` until 2026-07-28. A moment describes an interval short enough to wait through without noticing it. The read is not that: it opens every rule file in every installed package, which is a wait a engineer sees. Understating it makes the notice's one caveat the part of the line least
+  **The caveat says a few moments, not a moment.** It read `a moment` until 2026-07-28. A
+  moment describes an interval short enough to wait through without noticing it, and the
+  read is not that: it opens every rule file in every installed package, which is a wait a
+  engineer sees. Understating it makes the notice's one caveat the part of the line least
   worth trusting. The plural says the length the wait actually has while staying informal,
   which is the register the rest of the line is in.
 
@@ -153,15 +172,23 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   caveat where a engineer reads it before deciding and leaves the command last, which is
   where the eye settles and where it can be copied without reading past it. The order of the
   two is the whole of that change. The two sentences are still present, and the first sentence
-  still leads. Standing the command on its own line came later, and finishes the same work. The order put it last, the break leaves nothing beside it.
+  still leads. Standing the command on its own line came later, and finishes the same work
+  — the order put it last, the break leaves nothing beside it.
 
   **The notice is plain text, not markdown.** The command was written in markdown bold until
-  2026-07-28, on the assumption that the harness renders `systemMessage` as markdown. It does not: the asterisks reached the engineer literally. The markup that was to put the typed words where the eye lands drew the eye to punctuation instead. Emphasis is not available on this channel. The status line's bold repository name is a terminal escape sequence, which is a different mechanism and unaffected. And the line does not need it: the command already ends the sentence that points at it. Nothing else in the notice takes markup either, for the
+  2026-07-28, on the assumption that the harness renders `systemMessage` as markdown. It does
+  not: the asterisks reached the engineer literally, so the markup that was to put the typed
+  words where the eye lands drew the eye to punctuation instead. Emphasis is not available on this channel — the status line's bold repository name is a terminal escape sequence, which is a different mechanism and unaffected. And the line does not need it: the command already ends the sentence that points at it. Nothing else in the notice takes markup either, for the
   same reason.
 
   **What that gives up is attributability.** Until 2026-07-28 the line asked for a **foil
   request** — a message with no content of its own, whose only purpose was to give the agent
-  an occasion to act on an instruction already in its context. The word was `begin`, and it was contentless on purpose: the agent never sees this notice (`systemMessage` renders for the engineer alone). `begin` was the entire content reaching the agent and the instruction to read came from `hookSpecificOutput.additionalContext`. A read that followed could therefore only have come from the hook. An agent that never received the instruction got an opaque word and had to ask what it meant — a loud failure. A named
+  an occasion to act on an instruction already in its context. The word was `begin`, and it
+  was contentless on purpose: the agent never sees this notice (`systemMessage` renders for
+  the engineer alone), so `begin` was the entire content reaching the agent and the
+  instruction to read came from `hookSpecificOutput.additionalContext`. A read that followed
+  could therefore only have come from the hook, and an agent that never received the
+  instruction got an opaque word and had to ask what it meant — a loud failure. A named
   command collapses that: the read now happens whether or not the hook's channel reached the
   agent, and no session distinguishes the two. The trade is deliberate — legibility to the
   engineer over observability of the mechanism — and it means the hook's channel is no
@@ -181,7 +208,10 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   **The instruction names the project's own `local/rules/`, unconditionally.** It named only
   the installed packages until 2026-08-01, which made it **narrower than the rule it exists to
   get followed**: rules-convention requires reading the two `waytide/system/` and
-  `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read disagreed. The hook. The path this rule calls primary, the file route being the one it was written to stop depending on — was the one carrying less. A project's own rules are the half no package supplies and no refresh
+  `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So
+  the two surfaces carrying the read disagreed, and the hook — the path this rule calls
+  primary, the file route being the one it was written to stop depending on — was the one
+  carrying less. A project's own rules are the half no package supplies and no refresh
   restores.
 
   It is named **whether or not the directory exists**, and the instruction says its absence is
@@ -200,7 +230,10 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   sits, and why beside `rules/` rather than inside it, is the vocabulary-convention rule's.
 
   **This rule does not restate that list, and the omission is deliberate.** `session-start.sh`
-  builds the instruction and is the only place the directories are enumerated. This rule described the instruction and wrote the same list out a second time. On 2026-08-06 the two copies disagreed: the script still named a single mode's planning directories after the rule had been corrected to name none. **Neither copy was wrong to exist — the second one was.** A
+  builds the instruction and is the only place the directories are enumerated. This rule
+  described the instruction and wrote the same list out a second time, and on 2026-08-06 the two
+  copies disagreed: the script still named a single mode's planning directories after the rule
+  had been corrected to name none. **Neither copy was wrong to exist — the second one was.** A
   reader wanting the list reads the script, which is what actually reaches the agent. A reader
   wanting to know what the instruction is *for* reads this rule. Describing a list and
   reproducing it are different jobs, and only the first belongs here.
@@ -211,11 +244,18 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
 **And it names the mark print, and the one file the agent opens ahead of the others.** The mark heads the read (see the initialization-rule), and the agent has read nothing at the instant it prints. So the instruction names `foundation/initialization-rule.md` as the first file to open, which is what puts the figure in hand. The **art is not carried here**: it lives in that rule, which is
   what takes it off this JSON channel and out from under the doubled-backslash constraint.
 
-**It also requires the response that opens that file to carry no prose**. The tool call and nothing else, no preamble and no account of what is about to be read. **The initialization-rule cannot ask for this**. That is why the sentence is here: the response it governs is the one that reads that rule. Nothing in it is in hand when the agent writes there. This channel is the
+  **It also requires the response that opens that file to carry no prose** — the tool call and
+  nothing else, no preamble and no account of what is about to be read. **The initialization-rule cannot
+  ask for this**, and that is why the sentence is here: the response it governs is the one that
+  reads that rule, so nothing in it is in hand when the agent writes there. This channel is the
   only one that reaches the agent before any file is opened, which is the same reason it names
   the file at all. Without the sentence the read opens on a line of the agent's narration standing exactly where the mark is meant to stand. One rule file read ahead of the mark is the concession that rule accepted, and a line of prose ahead of it is not.
 
-**And it carries the prohibition on the agent referring to what that rule carries**. No name for it, no substitute word, no description standing in for one. No citation of the rule by name. It travels here for the same reason as the sentence above: the failure it answers is a response written **before** the rule is in hand. A requirement stated only in the rule arrives too late to prevent it. The two failures have one cause and now travel on one channel.
+  **And it carries the prohibition on the agent referring to what that rule carries** — no name
+  for it, no substitute word, no description standing in for one, and no citation of the rule by
+  name. It travels here for the same reason as the sentence above: the failure it answers is a
+  response written **before** the rule is in hand, so a requirement stated only in the rule
+  arrives too late to prevent it. The two failures have one cause and now travel on one channel.
 
   **The line says the rules are loaded. The notice's first line still says installed.** They
   are different claims about different things. The first line reports what a pre-session hook
@@ -225,29 +265,33 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
 
   **No quotation marks, and they must not be added.** The notice and the instruction are each interpolated into a JSON string built by `printf` with no escaping. A double quote would terminate the string, and the harness would fail to parse the output. The notice would disappear with no error at all, which is the silent failure this whole mechanism exists to avoid.
 
-- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **What this forbids is the notice**, not everything the agent prints at the start of a session. Two things it prints are not the notice and duplicate nothing the harness emits: the **mark**, at the head of the read. The **deferred queue**, once the read is done. See the initialization-rule and the print-the-deferred-queue-after-the-rule-read rule. The two are bounded to the read and neither recurs, which is the reason each sits there rather than in this notice. A segment here renders every session and would stop being read.
+- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **What this forbids is the notice**, not everything the agent prints at the start of a session. Two things it prints are not the notice and duplicate nothing the harness emits: the **mark**, at the head of the read, and the **deferred queue**, once the read is done. See the initialization-rule and the print-the-deferred-queue-after-the-rule-read rule. The two are bounded to the read and neither recurs, which is the reason each sits there rather than in this notice — a segment here renders every session and would stop being read.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
-- **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output, which means the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway. The rule's narrow claim and the script's wording disagreed. The wide reading was the one a engineer actually saw. Nothing about the timing can be fixed. No message emitted before a session can report on what the session then does. So the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice". The status line reports the system **active**, which is a claim about the configuration rather than the agent.
+- **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output, which means the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one a engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
 - **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it. Without the check the install reports success while the notice stays on one
 machine: it works for whoever ran the install and reaches nobody else on the team. Git
 cannot re-include a file inside an excluded directory, so a negation added under a
 `.claude/` rule does nothing. The rule has to become `.claude/*` plus
 `!.claude/settings.json`, which keeps each engineer's personal
 `.claude/settings.local.json` ignored.
-- **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch. Why `install.sh` never merges into an existing `.claude/settings.json`. It prints the block and leaves the choice with the engineer.
+- **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the choice with the engineer.
 
-**There is no opt-out.** A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed: an option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist. The notice, the status line, and the printed copyright and license are each there for one reason: a system read at the start of every session should say so. The variable was the one sanctioned way to have it in force and say nothing. What it never silenced was the read instruction itself. Quieting a display must not disable the mechanism that carries the rules — and that guarantee is unaffected by its removal, since nothing about the read ever depended on it.
+**There is no opt-out.** A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed: an option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist. The notice, the status line, and the printed copyright and license are each there for one reason: a system read at the start of every session should say so. The variable was the one sanctioned way to have it in force and say nothing. What it never silenced was the read instruction itself — quieting a display must not disable the mechanism that carries the rules — and that guarantee is unaffected by its removal, since nothing about the read ever depended on it.
 
 **What this costs:** the mechanism is specific to harnesses that read `.claude/settings.json`. Under any other harness there is no notice until equivalent glue is written for it — the system still loads through the `AGENTS.md` bootstrap, but silently. A harness setting that disables all hooks silences it too, and a newly placed `.claude/settings.json` may not take effect until the harness reloads its configuration.
 
-**Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file. When it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past. It could be emitted correctly and still go unseen. The two failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
+**Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable** — it depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed** — a line of plain text inside a reply, which either cluttered the response or was scrolled past, so it could be emitted correctly and still go unseen. The two failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance and puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem — whether the notice precedes the first response — disappears with it, because a hook runs before the session rather than inside it.
 
-**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts. `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the mark out of the notice — it heads the rule read now, and the initialization-rule governs it. Keep the scripts reading the real directories rather than asserting a list. Keep the notice claiming **installation** rather than a load. The word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels. `systemMessage` for the engineer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing unconditionally. Keep the instruction naming the project's own `local/rules/` and `local/vocabulary.md` alongside the packages, unconditionally and with the other working directories explicitly left out. Keep it naming the deferred-queue print as what follows the read. Do not restate the instruction's list of working directories here. `session-start.sh` enumerates them and this rule describes what the enumeration is for. A second copy is a second thing to keep true and has already drifted once. Keep it naming the print, and the initialization-rule as the one file opened ahead of the others. Keep it requiring the response that opens that file to carry the tool call and no prose. Keep it carrying the prohibition on the agent referring to what that rule carries. Add no opt-out: these surfaces are not silenceable, and the read instruction is emitted every session. Keep the mark's art out of this hook: it belongs in the rule, where it is not a JSON literal. Keep the load command worded the same in the two channels. The notice tells the engineer to type `load waytide`. The instruction tells the agent that command asks for the read and nothing more. Keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep the two blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines. The one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line. A terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the engineer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon. Keep an untracked file raising the two the uncommitted and the untracked segment.
+**How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts. `install.sh` does this for a consuming project. Never print a session-start notice as an agent. Keep the mark out of the notice — it heads the rule read now, and the initialization-rule governs it. Keep the scripts reading the real directories rather than asserting a list, and keep the notice claiming **installation** rather than a load — the word has to stay inside what a pre-session hook can observe. Keep the notice and the read instruction on their separate channels — `systemMessage` for the engineer, `hookSpecificOutput.additionalContext` for the agent — and keep the instruction firing unconditionally. Keep the instruction naming the project's own `local/rules/` and `local/vocabulary.md` alongside the packages, unconditionally and with the other working directories explicitly left out, and keep it naming the deferred-queue print as what follows the read. Do not restate the instruction's list of working directories here — `session-start.sh` enumerates them and this rule describes what the enumeration is for, so a second copy is a second thing to keep true and has already drifted once. Keep it naming the print, and the initialization-rule as the one file opened ahead of the others. Keep it requiring the response that opens that file to carry the tool call and no prose. Keep it carrying the prohibition on the agent referring to what that rule carries. Add no opt-out: these surfaces are not silenceable, and the read instruction is emitted every session. Keep the mark's art out of this hook: it belongs in the rule, where it is not a JSON literal. Keep the load command worded the same in the two channels. The notice tells the engineer to type `load waytide`, and the instruction tells the agent that command asks for the read and nothing more. Keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep the two blank lines — the one separating the notice's report from the closing ask, placed after any open-experiment and open-feature lines, and the one separating the caveat from the command sentence. Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line — a terminal escape sequence, the one emphasis that does render — and leave every other segment plain. Keep the engineer's own segments separated by the middle dot and the trailing Waytide segment set off by the double colon, and keep an untracked file raising the two the uncommitted and the untracked segment.
 
 Related:
 
-- the initialization-rule — the mark, which this notice no longer carries - the print-the-deferred-queue-after-the-rule-read rule. The read's other bookend - the rules-convention. The rule format and where the bootstrap lives - the foundation `install.sh` that places the bootstrap files - the status-report-format rule. The on-demand report that answers in detail what is installed
+- the initialization-rule — the mark, which this notice no longer carries
+- the print-the-deferred-queue-after-the-rule-read rule — the read's other bookend
+- the rules-convention — the rule format and where the bootstrap lives
+- the foundation `install.sh` that places the bootstrap files
+- the status-report-format rule — the on-demand report that answers in detail what is installed
 
 ---
 
@@ -291,4 +335,3 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

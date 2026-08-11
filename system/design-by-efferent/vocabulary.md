@@ -2,7 +2,8 @@
 
 The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these meanings, in code, tests, rules, designs, commits, and prose. This is the canonical glossary. The deeper docs defer to it.
 
-**Every word here is one of three things**. This holds for the terms below and for the **Say** column of any substitutions table in this file.
+**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
 - **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
@@ -46,7 +47,7 @@ Every gate's form — options plus a mandatory escape — follows from two resul
 
 **Provoke origination, not mean-bias.** A single proposal put up for approval ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. Judging is not originating: the human ratifies, and their judgment is pulled toward the average rather than exercised above it. Offering several genuine alternatives keeps the human comparing real candidates — originating — instead of ratifying. So a gate presents alternatives, never a fait accompli.
 
-**The best options are ones the AI can't produce.** The option set is the AI's own, drawn from the average. The best answer is often one only the human can produce. A closed list tempts the human to pick from it instead of producing their own. So every gate keeps an escape open — the human dictating outright, or a chat to work the answer out. The escape is mandatory, at every gate, without exception: it is what keeps the human above the AI's mean when the right answer isn't on the list.
+**The best options are ones the AI can't produce.** The option set is the AI's own, drawn from the average. The best answer is often one only the human can produce, and a closed list tempts the human to pick from it instead of producing their own. So every gate keeps an escape open — the human dictating outright, or a chat to work the answer out. The escape is mandatory, at every gate, without exception: it is what keeps the human above the AI's mean when the right answer isn't on the list.
 
 The first result says *why there are options*. The second says *why the options are never enough*.
 
@@ -84,7 +85,7 @@ The two marks of a hinge — **subtle** and **load-bearing** — are independent
 
 Together these give the **asymmetry that justifies the gate**: a load-bearing choice is **cheap to fix now** (before anything rests on it) and **costly to fix later** (after). The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
 
-**How to recognize it:** ask *if this choice is wrong, how far does the damage spread. How expensive is it to reverse once we've built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
+**How to recognize it:** ask *if this choice is wrong, how far does the damage spread, and how expensive is it to reverse once we've built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
 
 **Why the two marks are required:**
 
@@ -92,7 +93,7 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 - Subtle **but not load-bearing** (takes judgment, but the choice is local and cheaply changed) → not worth stopping the human. A wait there is ceremony.
 - **Subtle *and* load-bearing** → a hinge. Gate it.
 
-**Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations. The implementation all rest on it. A wrong shape spreads into all of them and gets costly to change once code depends on it (which is why it is the first and highest-leverage gate). By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
+**Example:** the **actuation** — the efferent shape of the invocation — is load-bearing: the test, the observations. The implementation all rest on it, so a wrong shape spreads into all of them and gets costly to change once code depends on it (which is why it is the first and highest-leverage gate). By contrast, the wording of a `comment` line is not load-bearing — nothing rests on it, and it is changed in seconds.
 
 ## The loop, as a distributed OODA cycle
 
@@ -114,7 +115,9 @@ Together these give the **asymmetry that justifies the gate**: a load-bearing ch
 phase and the verb in lower case for the act — *the AI observes and acts*. **The two forms are
 reserved**, settled 2026-08-09.
 
-**The STE dictionary lists all four as verbs and names a replacement for each**. MONITOR for `observe`, POINT for `orient`, SELECT for `decide`. For `act` the guidance to use an accurate verb. None of the four nouns is in the STE dictionary. **Waytide keeps the two forms**, because
+**The STE dictionary lists all four as verbs and names a replacement for each** — MONITOR for
+`observe`, POINT for `orient`, SELECT for `decide`, and for `act` the guidance to use an accurate
+verb. None of the four nouns is in the STE dictionary. **Waytide keeps the two forms**, because
 replacing the verb would break the quotation and cost the reader Boyd's reference. See the
 `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
@@ -176,4 +179,3 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

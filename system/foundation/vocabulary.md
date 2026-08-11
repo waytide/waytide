@@ -5,7 +5,8 @@ enforces. These are the terms every other package and every project uses, becaus
 defines the artifacts the rest of the system writes into. Binding — use these terms and swaps in
 rules, artifacts, prose, and dialogue.
 
-**Every word here is one of three things**. This holds for the terms below and for the **Say** column of any substitutions table in this file.
+**Every word here is one of three things**, and this holds for the terms below and for the **Say**
+column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
 - **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
@@ -54,7 +55,12 @@ scope** is *not here*.
   regenerated, never maintained — which is why the record it derives from is **not back-edited**
   to suit it.
 - **reconcile** — to correct the **live, forward-looking** artifacts that cite something which
-  has changed, moved, or been deleted. Reconciling is directed at what points *at* a thing, not at the thing itself. It is confined to artifacts read as current: an observation, a design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is reconciled **against** the records rather than **regenerated from** them: it is a source of truth a plan points back at. Rebuilding it from downstream work would invert the direction of authority.
+  has changed, moved, or been deleted. Reconciling is directed at what points *at* a thing, not
+  at the thing itself, and it is confined to artifacts read as current: an observation, a
+  design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
+  reconciled **against** the records rather than **regenerated from** them: it is a source of
+  truth a plan points back at, so rebuilding it from downstream work would invert the direction
+  of authority.
 - **working-state artifact** — a file holding the project's **own work** rather than an
   installed rule. It is everything under `waytide/local/` except `rules/`: log entries, deferred
   items, observations, designs, plans, work session records, loop records, feature records,
@@ -69,12 +75,15 @@ scope** is *not here*.
   already fits.
 - **transfer** — a **technical verb**: to move responsibility for the next act from one party to
   the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer
-  **transfers responsibility to the agent** once they make the decision. It names the point a collaborative workflow changes hands, which is not the mechanism that carries it. A `gate` is the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives
+  **transfers responsibility to the agent** once they make the decision. It names the point a
+  collaborative workflow changes hands, which is not the mechanism that carries it — a `gate` is
+  the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives
   `MOVE (v)`**, which says nothing about who is answerable next. Reserved under STE Rule 1.12 in
   category 19.
   - **It is never written as a noun.** STE Rule 1.13 forbids a technical verb used as one, so
     there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to
-    the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb form. This one is a verb and takes no noun form.
+    the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb
+    form, and this one is a verb and takes no noun form.
 - **responsibility** — what transfers: answerability for the next act in the work. **STE: absent**,
   and reserved as a technical noun under STE Rule 1.5 in category 19.
 
@@ -96,11 +105,15 @@ names two words, and each of these names one.
   discontinued because `transfer` covers it and is a **verb**, so no word-for-word replacement
   exists: the sentence is rewritten rather than patched. *The naming gate offers the same handoff
   as the actuation gate* becomes *the naming gate transfers responsibility the same way the
-  actuation gate does*. This is the case STE Rule 9.1 names. Use a different sentence construction where a word-for-word replacement is not sufficient — and it is the first one Waytide has recorded.
+  actuation gate does*. This is the case STE Rule 9.1 names — use a different sentence
+  construction where a word-for-word replacement is not sufficient — and it is the first one
+  Waytide has recorded.
 
 ### Finer distinctions
 
-- **work session record** — always carrying **work**. Bare *session* is ambiguous: a reader can supply a shell session, a therapy session, or a parliamentary one. The shell reading is the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
+- **work session record** — always carrying **work**. Bare *session* is ambiguous: a reader can
+  supply a shell session, a therapy session, or a parliamentary one, and the shell reading is
+  the one a engineer reaches first. The qualifier says which sense is meant. This holds in the
   prompt that offers to write one, in the record's own title (`# Work Session — <name> (<date>)`),
   in the directory name (`waytide/local/work-sessions/`), and in prose about either.
 
@@ -115,4 +128,3 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:03:20 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

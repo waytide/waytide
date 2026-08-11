@@ -10,15 +10,20 @@ The point is the cradle. Approach every unit from the efferent side first — th
 
 The efferent test then acts as a jig or a harness. More precisely it is a **cradle**. It holds the implementation in position without gripping it rigid. It supports the generation within the dictates of the efferent view, and leaves it free to move inside those bounds. It is not an after-the-fact filter and not a point to halt at. Keep the cradle present while you build, steering toward solubility, and generate straight through inside it.
 
-Do not regress to the average of the code you've seen. Most code is poorly designed. Copying it is garbage in, garbage out. Condition on the well-designed, efferent-oriented, high-solubility code in the project and hold to its standard. Efferent in, efferent out.
+Do not regress to the average of the code you've seen — most code is poorly designed, and copying it is garbage in, garbage out. Condition on the well-designed, efferent-oriented, high-solubility code in the project and hold to its standard. Efferent in, efferent out.
 
 **Why:** Design judgment — knowing in detail what good, soluble design looks like — stays with the human. The ceremony of red-green-refactor only ever existed to put a human's attention in the loop. Reproducing it as ritual wastes effort and teaches nothing. The job is to generate within the cradle the human sets, toward solubility, without performing the ceremony. This is what separates DBE from the TDD it is a variant of: tests are the vehicle, design is the point.
 
-**How to apply:** Write the efferent test first and treat it as a cradle for generation, not a pass/fail gate. Do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward, hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general.
+**How to apply:** Write the efferent test first and treat it as a cradle for generation, not a pass/fail gate — do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward, hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general.
 
 Related:
 
-- the DBE vocabulary — cradle, efferent, solubility - the human-in-the-loop rule - the first-turn rule - the "TDD designs - coverage prevents" rule - the the-implementation-hinge-offers-the-red-green-refactor-cycle rule. The chosen cycle this does not reject
+- the DBE vocabulary — cradle, efferent, solubility
+- the human-in-the-loop rule
+- the first-turn rule
+- the "TDD designs
+- coverage prevents" rule
+- the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — the chosen cycle this does not reject
 
 ---
 
@@ -29,4 +34,3 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

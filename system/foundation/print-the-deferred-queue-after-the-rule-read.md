@@ -1,6 +1,9 @@
 # Print the deferred queue as a list of rows, immediately after the rules are read
 
-When the rules under `waytide/system/` and `waytide/local/rules/`. The project's own `waytide/local/vocabulary.md`, have been read at the start of a session, **print the deferred queue** before waiting for the engineer's first real request. It is the last thing the read produces.
+When the rules under `waytide/system/` and `waytide/local/rules/`, and the project's own
+`waytide/local/vocabulary.md`, have been read at the start
+of a session, **print the deferred queue** before waiting for the engineer's first real
+request. It is the last thing the read produces.
 
 **The form is a list, one row per item** under `waytide/local/deferred/` — not a rendered
 table:
@@ -23,7 +26,8 @@ Each row carries three fields, in this order:
 - **Summary** — one line saying what the item is about, read from the item.
 
 **The rows are ordered by priority**, rank 1 first, from each item's `**Priority:**` line (see
-the deferred-convention). The rank itself is not a fourth field. The order carries it. Printing the number beside a row already in that position states it twice.
+the deferred-convention). The rank itself is not a fourth field — the order carries it, and
+printing the number beside a row already in that position states it twice.
 
 **Items with no rank sort last**, among themselves by filename prefix, oldest first, and are
 **marked unranked**. The marking distinguishes an item awaiting a rank from one buried at the
@@ -39,7 +43,8 @@ one long summary narrows the other two fields and wraps every row. The queue is 
 terminal, where that turns a scannable list into a grid to be parsed. A row wraps as prose
 and the fields stay in a fixed order, which is what a reader is actually using to scan.
 
-**State the count.** The list is preceded by the number of items. The size of the queue is a fact the engineer is given rather than one they count.
+**State the count.** The list is preceded by the number of items, so the size of
+the queue is a fact the engineer is given rather than one they count.
 
 **An empty queue prints a line saying so.** It does not print an empty list and does not
 print nothing. A queue that has been emptied is worth stating once. Silence there would be
@@ -68,18 +73,23 @@ about what is actionable. The agent reads the prose, so the deferred convention'
 unaffected by this rule.
 
 **Why:** the deferred queue is where work goes so it is not lost, and it was the one working
-directory nothing reported. The working directories are not read at session start, the session-start notice covers only experiments and features that have not concluded. The `next-deferred-item` command reaches the queue only when someone thinks to ask. So an item was surfaced only by deliberate looking. Printing it at the moment the rules are read costs
+directory nothing reported. The working directories are not read at session start, the session-start notice covers only experiments and features that have not concluded, and the `next-deferred-item` command reaches the queue only when someone thinks to ask. So an item was surfaced only by deliberate looking. Printing it at the moment the rules are read costs
 one list, once, at the point the engineer is deciding what the session is for, which is
 exactly when the queue is worth seeing. Putting it after the read rather than in the notice is what keeps it from becoming furniture: the notice would carry it every session in the same place. The failure of a permanent line is that it stops being read.
 
-**How to apply:** after reading the rule files at the start of a session, read `waytide/local/deferred/` and print one row per item. Title, date from the filename prefix. A one-line summary — ordered by the items' `**Priority:**` ranks with unranked items last, and with the count stated. Where no item is ranked, order by filename prefix and
+**How to apply:** after reading the rule files at the start of a session, read `waytide/local/deferred/` and print one row per item — title, date from the filename prefix. A one-line summary — ordered by the items' `**Priority:**` ranks with unranked items last, and with the count stated. Where no item is ranked, order by filename prefix and
 mark nothing. Where the queue is empty, print a
 line saying so. Then wait for the engineer's request. Do not print a Waytide installation
 notice, which remains the harness's and is prohibited to the agent.
 
 Related:
 
-- the deferred-convention — the queue's format and its resolution step - the next-deferred-item-command rule. The on-demand way into the queue - the status-report-format rule — whose deferred table is a rendered table with a `kind` column, this one being neither - the rules-convention. The read this follows - the initialization-rule. The read's opening bookend - the announce-waytide-at-session-start rule — the notice this is not
+- the deferred-convention — the queue's format and its resolution step
+- the next-deferred-item-command rule — the on-demand way into the queue
+- the status-report-format rule — whose deferred table is a rendered table with a `kind` column, this one being neither
+- the rules-convention — the read this follows
+- the initialization-rule — the read's opening bookend
+- the announce-waytide-at-session-start rule — the notice this is not
 
 ---
 
@@ -94,4 +104,3 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

@@ -1,14 +1,19 @@
 # An answer is a list. Prose must justify itself
 
-An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default: it is written where one of the conditions below applies. Those conditions are the whole of what justifies it.
+An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default: it is
+written where one of the conditions below applies, and those conditions are the whole of what
+justifies it.
 
-**The burden is inverted deliberately.** A rule saying *prefer lists* leaves prose available whenever the agent finds it easier, which is always. Prose is what an agent produces without deciding to. Requiring a justification means the agent has to name which condition applies, and
+**The burden is inverted deliberately.** A rule saying *prefer lists* leaves prose available
+whenever the agent finds it easier, which is always — prose is what an agent produces without
+deciding to. Requiring a justification means the agent has to name which condition applies, and
 where none does, the answer is a list.
 
 ## What justifies prose
 
 **One condition: the answer is a sentence or two.** A single bullet is decoration, and two bullets
-for a two-clause answer organizes nothing. *Yes*, *The suite passes*, *Correct — the rule says so and I did not follow it* are answers. A list would only put marks in front of them.
+for a two-clause answer organizes nothing. *Yes*, *The suite passes*, *Correct — the rule says so
+and I did not follow it* are answers, and a list would only put marks in front of them.
 
 **That is the whole set.** Two candidates were considered and rejected, and the reasons are worth
 keeping because each is tempting:
@@ -79,7 +84,9 @@ For more detail than bullet points, ask for an expanded answer.
   a engineer to guess what an expansion would look like. *more detail than bullet points* says the
   expansion is a different form of answer, which is what they would be asking for.
 
-**The known weakness, stated rather than discovered later:** the timing rests on the agent judging its own answer. An agent's judgment about its own output is exactly what makes this rule necessary. An agent that compresses badly will also decide badly whether it compressed.
+**The known weakness, stated rather than discovered later:** the timing rests on the agent judging
+its own answer, and an agent's judgment about its own output is exactly what makes this rule
+necessary. An agent that compresses badly will also decide badly whether it compressed.
 
 **It is left as a judgment on purpose, and experience decides whether it stays one.** The rule is
 not tightened in advance of evidence that it needs to be, because the cost of tightening is real:
@@ -95,7 +102,9 @@ and unattributed back-references hide. A list forces each claim onto its own lin
 with nothing in it is visible as a line with nothing in it. The engineer this was settled with had stated the preference three times in a week before it was written down. A preference restated is a rule that has not been written, because every restatement is evidence the agent does not hold it between sessions. Inverting the burden, rather than expressing a preference, is what
 makes the difference survive a session boundary.
 
-**How to apply:** answer in a list. State facts in it — remove any item that describes a choice, explains an unasked-for reason, characterizes the work, or reports what the agent did to be sure. Test each survivor by whether it could be false. Number the list where its items depend on each
+**How to apply:** answer in a list. State facts in it — remove any item that describes a choice,
+explains an unasked-for reason, characterizes the work, or reports what the agent did to be sure,
+and test each survivor by whether it could be false. Number the list where its items depend on each
 other, and leave it unordered where they do not. Write prose only where the answer is a sentence or two. Do not
 reach for it because an explanation was requested, or because the reasoning is connected. The first
 is not a justification, and the second is served by numbering. Where the answer left something out,
@@ -104,7 +113,9 @@ answer says all it has.
 
 Related:
 
-- the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does - the language-is-precise-here premise - `foundation`'s present-every-prompt-through-askuserquestion rule. The selection interface, which is where a **question** goes. This rule governs an **answer**, and the two do not overlap
+- the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does
+- the language-is-precise-here premise
+- `foundation`'s present-every-prompt-through-askuserquestion rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
 
 ---
 
@@ -117,4 +128,3 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

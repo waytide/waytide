@@ -25,7 +25,8 @@ and observations — so it earns the same wait. What separates coverage from des
 is driven (see the companion rule — TDD designs, coverage prevents. Never break an
 implementation to introduce a test).
 
-**How to apply:** design a coverage test through the hinges as usual. Actuation, controls, observation, naming. With a wait at each for the human. Treat the
+**How to apply:** design a coverage test through the hinges as usual — actuation,
+controls, observation, naming — with a wait at each for the human. Treat the
 implementation hinge as a confirmation step (run, show verified), sending any
 awkwardness back to the test, not the implementation.
 
@@ -43,4 +44,3 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

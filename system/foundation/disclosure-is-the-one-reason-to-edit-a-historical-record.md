@@ -1,6 +1,10 @@
 # Disclosure is the one reason to edit a historical record
 
-A historical record — a decision-log entry, a work session record, an experiment record, a feature record, a completed migration record. States what was true when it was written and is **not** revised to suit a later convention. That is the standing rule, and it holds against renaming, reformatting, correcting a term the project has since replaced. Every other reason a reader might want a record to read differently.
+A historical record — a decision-log entry, a work session record, an experiment record, a
+feature record, a completed migration record — states what was true when it was written and is
+**not** revised to suit a later convention. That is the standing rule, and it holds against
+renaming, reformatting, correcting a term the project has since replaced, and every other reason
+a reader might want a record to read differently.
 
 **It does not hold against disclosure.** Where a record names something that should not have
 been disclosed, it is corrected. A record is not a commitment to keep publishing something that
@@ -26,7 +30,9 @@ The reach of a record is not the repository it sits in.
 projects still reads as having reached three. Only the naming goes. *"Each of the three projects
 holding it"* is less specific than three names and is not less accurate.
 
-**What is never done is making the record say something that did not happen.** Deleting an increment that ran, changing a count, or reattributing work would trade a disclosure problem for a falsification problem, which is worse. The disclosure was at least true.
+**What is never done is making the record say something that did not happen.** Deleting an
+increment that ran, changing a count, or reattributing work would trade a disclosure problem for
+a falsification problem, which is worse — the disclosure was at least true.
 
 Where the removal leaves a reader unable to follow what happened, say what class of thing was
 removed and why, in the record itself. A reader who can see that something was withheld is
@@ -42,7 +48,8 @@ edit did and did not accomplish.
 
 **Log the edit.** The correction is a decision, and the log entry is what tells a later reader that a record was changed after the fact and on what grounds. That is the trail the record itself no longer carries.
 
-**Why:** the reason records are left as written is that a record is evidence. Evidence that is revised to suit the present is not evidence. That reason does not extend to content the
+**Why:** the reason records are left as written is that a record is evidence, and evidence that
+is revised to suit the present is not evidence. That reason does not extend to content the
 project had no standing to publish: leaving it in place does not preserve evidence, it continues
 a disclosure. Reducing resolution satisfies the two — the evidence survives, and what was not the
 project's to say stops being said. Naming the engineer as the authority keeps an agent from
@@ -53,7 +60,8 @@ guess about what is sensitive.
 
 Related:
 
-- the deferred-convention and the reconcile entry in this package's vocabulary. Where the standing rule is stated - the work-sessions-convention. The title format, an instance of the standing rule
+- the deferred-convention and the reconcile entry in this package's vocabulary — where the standing rule is stated
+- the work-sessions-convention — the title format, an instance of the standing rule
 
 ---
 
@@ -62,4 +70,3 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

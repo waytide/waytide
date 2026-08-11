@@ -1,12 +1,12 @@
 # `waytide/local/observations/` — working hypotheses, not yet binding
 
-`waytide/local/observations/` holds working hypotheses, definitions, and methods that are **not yet binding**. Rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
+`waytide/local/observations/` holds working hypotheses, definitions, and methods that are **not yet binding** — rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
 
 - **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method/definition the user hasn't ratified as a convention. When in doubt between a rule and an observation, prefer an observation — promoting later is cheap, retracting a premature rule is not.
 - **Format:** the same frontmatter-free markdown as rules — a `# <title>`, the content in prose. Open with a `**Status:**` line stating that it is a working hypothesis under discovery and what would promote it. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 - **Promotion:** when an observation stabilizes into a binding convention, lift it into `waytide/local/rules/` as a new local rule and leave the observation as the discovery record (note the promotion in the two). Add a `waytide/local/log/` entry for the promotion.
-- **Recording one:** add the file. Add a matching one-line entry to `waytide/local/log/` noting it was recorded as an observation (and why it isn't yet a rule).
+- **Recording one:** add the file, and add a matching one-line entry to `waytide/local/log/` noting it was recorded as an observation (and why it isn't yet a rule).
 
 **Why:** discovery produces valuable thinking before it is ready to be binding. A place for non-binding hypotheses keeps that thinking without prematurely imposing it as a rule. Preferring an observation when in doubt makes the cheap move (promote later) the default over the costly one (retract a premature rule).
 
@@ -25,4 +25,3 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

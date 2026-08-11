@@ -16,7 +16,10 @@ commit decision is reached. This is what confirming it looks like here.
 ## The tree script
 
 The `testing` package's test-tree command calls for a **durable script** so the command is
-reproducible in every session rather than a parser rebuilt each time. In a Ruby project that script is a Ruby file that runs the suite, suppresses TestBench's narration, captures the output. Parses it. Merging every file's `context`/`test` hierarchy into one tree keyed by name, so identical paths de-duplicate.
+reproducible in every session rather than a parser rebuilt each time. In a Ruby project that
+script is a Ruby file that runs the suite, suppresses TestBench's narration, captures the
+output, and parses it — merging every file's `context`/`test` hierarchy into one tree keyed by
+name, so identical paths de-duplicate.
 
 - **It lives under `test/automated/`**, beside the suite it reads — `test/automated/tree.rb`
   is the established location.
@@ -24,10 +27,11 @@ reproducible in every session rather than a parser rebuilt each time. In a Ruby 
   ran it would recurse.
 - **It parses the run's output, never the source.** That is the test-tree rule's requirement and its reason: a dynamic `context <expr> do` shows its expanded real value in a run and a placeholder in the source. A bare unnamed `test do` emits no line at all.
 
-**Why:** what command runs a suite, what its passing output says. What a script must do to parse it are all facts about a stack. A package that disclaims a stack cannot state them. `git` declares itself standalone and `testing` opens by disclaiming any framework API. Left in
+**Why:** what command runs a suite, what its passing output says. What a script must do to parse it are all facts about a stack, and a package that disclaims a stack cannot state them — `git` declares itself standalone and `testing` opens by disclaiming any framework API. Left in
 those packages, the facts made the two claims false and made the rules inapplicable to a project
 that is not Ruby. Held here, the general conventions stay general and a Ruby project still gets
-the concrete answer. The split is the ordinary one: the general part is substantial on its own. Separating it costs nothing and leaves each part where it belongs.
+the concrete answer. The split is the ordinary one: the general part is substantial on its own,
+so separating it costs nothing and leaves each part where it belongs.
 
 **How to apply:** run a Ruby project's suite with `ruby test/automated.rb` and treat
 `0 failed, 0 aborted` as the verified result. Keep the tree script at `test/automated/tree.rb`,
@@ -35,7 +39,10 @@ excluded from the default run, parsing the run's output rather than the source.
 
 Related:
 
-- the `git` run-suite-before-commit rule — when the run happens relative to the commit decision - the `testing` test-tree-command rule. What the tree is and where it is derived from - the `testing` test-report-format rule and the `foundation` status-report-format rule. The shallower two-level tree - the lib-report-format rule in this package — the sibling command rule
+- the `git` run-suite-before-commit rule — when the run happens relative to the commit decision
+- the `testing` test-tree-command rule — what the tree is and where it is derived from
+- the `testing` test-report-format rule and the `foundation` status-report-format rule — the shallower two-level tree
+- the lib-report-format rule in this package — the sibling command rule
 
 ---
 
@@ -43,4 +50,3 @@ Authored by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

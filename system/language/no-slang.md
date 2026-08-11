@@ -1,6 +1,6 @@
 # No slang — use literal, non-figurative terms
 
-Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase: the mindset it preserves lives in the person. It reaches conversation, not just the artifact.
+Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase: the mindset it preserves lives in the person, so it reaches conversation, not just the artifact.
 
 Each discontinued figurative term has a literal replacement, and each is its own rule (one rule per substitute):
 
@@ -27,4 +27,3 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

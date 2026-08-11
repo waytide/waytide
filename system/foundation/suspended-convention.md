@@ -42,7 +42,9 @@ back:
 
 **This is the recognizable-content form the system already uses.** The experiments-convention
 and features-convention define a canonical `**State:**` line that `session-start.sh` reads
-mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. A bold label, a colon, a value, optionally as a list item. One protocol in the system rather than a second one for this directory. Frontmatter is allowed and would also serve. It is not
+mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. A
+bold label, a colon, a value, optionally as a list item — one protocol in the system rather
+than a second one for this directory. Frontmatter is allowed and would also serve. It is not
 used here because there is no reason to introduce a second form where the existing one fits.
 
 **Suspension is not deletion, and restoration is not re-invention.** A thing deleted is
@@ -60,12 +62,19 @@ second is why the first happens. A reversible middle state makes setting somethi
 is what makes the reversal real: without them, restoring returns a file and leaves the system
 still arranged around its absence.
 
-**How to apply:** when something the project does has stopped earning its keep, move it into `waytide/local/suspended/`, add the `**Origin:**`, `**Kind:**`, `**Suspended:**`. `**Reconciliations:**` lines. Write the reason and what would bring it back. Log the suspension. To restore, reverse each reconciliation, move the file back to its
-`**Origin:**`, remove the return-address lines, and log that too. Do not delete what can be suspended. Do not suspend what was never in use. That is not a reversal of anything.
+**How to apply:** when something the project does has stopped earning its keep, move it into
+`waytide/local/suspended/`, add the `**Origin:**`, `**Kind:**`,
+`**Suspended:**`, and `**Reconciliations:**` lines, and write the reason and what would bring it
+back. Log the suspension. To restore, reverse each reconciliation, move the file back to its
+`**Origin:**`, remove the return-address lines, and log that too. Do not delete what can be suspended, and do
+not suspend what was never in use — that is not a reversal of anything.
 
 Related:
 
-- the rules-convention — removing a rule. The reconciliation a suspension must record - the deferred-convention. The other queue, which deletes on resolution rather than keeping - the decision-log rule - the file-names rule. The ISO-8601-UTC prefix a suspended file keeps
+- the rules-convention — removing a rule, and the reconciliation a suspension must record
+- the deferred-convention — the other queue, which deletes on resolution rather than keeping
+- the decision-log rule
+- the file-names rule — the ISO-8601-UTC prefix a suspended file keeps
 
 ---
 
@@ -78,4 +87,3 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

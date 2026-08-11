@@ -1,6 +1,8 @@
 # Initialization
 
-Print the three things below, verbatim and in this order, **once per session, at the head of the response that carries the rule read**. Above any account of the read and above every tool call the read makes.
+Print the three things below, verbatim and in this order, **once per session, at the head of the
+response that carries the rule read** — above any account of the read and above every tool call
+the read makes.
 
 **This rule file is opened ahead of every other**, which is what puts them in hand.
 
@@ -38,7 +40,11 @@ Then **one blank line**, then the block:
 
 **Each gap is one blank line, and a larger one is not available.** There are two — after the
 license line, and after the loading line. With no gap at all the notice reads as a caption
-attached to what follows, or as its first line, so a separation is needed. A wider one cannot be had: the agent's output is **rendered as markdown**. Markdown collapses any run of blank lines between blocks into a single paragraph break. Writing two or three produces exactly what writing one produces. Specifying a count that cannot be observed would be a rule nothing can comply with or violate.
+attached to what follows, or as its first line, so a separation is needed. A wider one cannot be
+had: the agent's output is **rendered as markdown**, and markdown collapses any run of blank lines
+between blocks into a single paragraph break. Writing two or three produces exactly what writing
+one produces, and specifying a count that cannot be observed would be a rule nothing can comply
+with or violate.
 
 **The block sits in a fenced code block and the notice does not.** The fence is what preserves the
 figure's spacing. The notice is ordinary prose and reads as prose. That difference is also why the gap between them is the renderer's paragraph break rather than a count of lines. They are two kinds of thing, and the break between them is whatever separates a paragraph from a code block.
@@ -50,7 +56,8 @@ greeting, no account of what is about to be read, no name for the block itself.
 
 **The loading line says what the wait is.** Everything printed here appears at the head of the
 response that then opens every rule file in every installed package, which is a wait a engineer
-sees. The line names it rather than leaving a pause unexplained. It is the only one of the three that is about the moment rather than about the work.
+sees. The line names it rather than leaving a pause unexplained, and it is the only one of the
+three that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is
 read **after** they have, while the wait is happening. The first informs a decision. The second
@@ -74,17 +81,23 @@ below.
 **The license line sits directly under the copyright, with no blank line between them.** The two are one statement about the work. Who owns it, and on what terms it may be used — and a bare copyright answers only the first while raising the second. For a work distributed by copying its
 files into other people's repositories, the terms are the question a reader actually has.
 
-**The first gap falls after the license line**. It separates the whole statement. The copyright and the terms together. From what follows, rather than splitting the statement in two.
+**The first gap falls after the license line**, so it separates the whole statement — the
+copyright and the terms together — from what follows, rather than splitting the statement in two.
 
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**.
-A copy of that file sits at this repository's root and in every package directory. It travels into each component repository and into every project that installs a package — which is where the license is read. The printed line does not carry terms and is not the place to put them.
+A copy of that file sits at this repository's root and in every package directory, so it travels
+into each component repository and into every project that installs a package — which is where the
+license is read. The printed line does not carry terms and is not the place to put them.
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is
 printed verbatim, so it does not track the clock and is not computed. It changes when the rule
 changes.
 
-**Why:** the block stands for the system being brought into force in this session. It is printed at the moment the rule files are opened. The one moment only the agent is present for.
-The notice sits there for the same reason. It is the one moment in a session where the system is announced as itself rather than being used. A copyright notice belongs on the work at the point the work is presented.
+**Why:** the block stands for the system being brought into force in this session, so it is
+printed at the moment the rule files are opened — the one moment only the agent is present for.
+The notice sits there for the same reason. It is the one moment in a session where the system
+is announced as itself rather than being used, and a copyright notice belongs on the work at the
+point the work is presented.
 
 **How to apply:** read this file ahead of every other rule file. At the head of the response that carries the rest of the read, print the copyright notice and the license line on consecutive lines. Then one blank line, then the loading line, then one blank line, then the block. Print all of it verbatim and in that order. Print no other words with any of them. Print them once per session and
 never again. There is no condition under which they are withheld.
@@ -107,4 +120,3 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT

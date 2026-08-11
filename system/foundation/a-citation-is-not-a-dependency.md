@@ -6,7 +6,9 @@ rule treats something this one only touches. Naming it is a **citation**, and a 
 without the cited package.
 
 **The test:** take the cited package away. Can the rule still be applied? If it can, the
-reference is a citation and nothing is declared. If it cannot — the rule instructs something that has no meaning, or requires content that is not there. The reference is a dependency. It is declared in the package's README and added to its `install-dependencies.sh`.
+reference is a citation and nothing is declared. If it cannot — the rule instructs something
+that has no meaning, or requires content that is not there — the reference is a dependency,
+and it is declared in the package's README and added to its `install-dependencies.sh`.
 
 **Motivation is not the test.** A rule whose *reason to exist* weakens when a sibling package
 is absent still works, and a citation is what that is. The question is whether the rule can be
@@ -17,13 +19,20 @@ dependency out of every rule that is more useful in company than alone, which is
 dependencies may still name any other package's rules. The claim says what must be installed
 alongside it. It says nothing about what its rules may refer to.
 
-**The model citation** is foundation's own status-report-format rule. It names the `testing` package and is written for its absence: *"If the project has **not** adopted the testing conventions, degrade this section."* The rule works either way. `testing` is cited and not declared.
+**The model citation** is foundation's own status-report-format rule. It names the
+`testing` package and is written for its absence: *"If the project has **not** adopted the
+testing conventions, degrade this section."* The rule works either way, so `testing` is cited
+and not declared.
 
 **The refused dependency** is the features-convention rule. It cites
 `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in
-`waytide/local/loops/`. Doing so *"would invert the package graph. Would make the feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is a citation of another package and the reason a dependency was not taken.
+`waytide/local/loops/`. Doing so *"would invert the package graph, and would make the
+feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is
+a citation of another package and the reason a dependency was not taken.
 
-**Why:** the alternative reading is not available, and the package graph shows it. Six of the seven packages name packages they do not declare. `foundation`. The base every other package builds on. Cites all six of them in eleven rules. If a citation were a
+**Why:** the alternative reading is not available, and the package graph shows it. Six of the
+seven packages name packages they do not declare, and `foundation` — the base every other
+package builds on — cites all six of them in eleven rules. If a citation were a
 dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on
 `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct,
 and the only workable line between them is whether the rule functions alone. Keeping the line
@@ -40,7 +49,10 @@ because the rule reads better with its sibling present.
 
 Related:
 
-- the rules-convention — the rule format and where rules live - the features-convention. The refused dependency worked through in full - the status-report-format rule. The model citation, written for the cited package's absence - each package's README — where a dependency is declared
+- the rules-convention — the rule format and where rules live
+- the features-convention — the refused dependency worked through in full
+- the status-report-format rule — the model citation, written for the cited package's absence
+- each package's README — where a dependency is declared
 
 ---
 
@@ -49,4 +61,3 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:49:34 PM PT
