@@ -81,7 +81,7 @@ For more detail than bullet points, ask for an expanded answer.
   difference between this line and the trailing offer-of-more that is otherwise a defect: it points
   back at what was just said, not forward at what else might be done.
 - **It names the form being traded away**, not only the depth on offer. *More detail* alone leaves
-  a engineer to guess what an expansion would look like. *more detail than bullet points* says the
+  an engineer to guess what an expansion would look like. *more detail than bullet points* says the
   expansion is a different form of answer, which is what they would be asking for.
 
 **The known weakness, stated rather than discovered later.** The timing rests on the agent judging
@@ -89,9 +89,9 @@ its own answer. An agent's judgment about its own output is exactly what makes t
 necessary. An agent that compresses badly will also decide badly whether it compressed.
 
 **It is left as a judgment on purpose, and experience decides whether it stays one.** The rule is
-not tightened in advance of evidence that it needs to be, because the cost of tightening is real:
-the alternatives replace the judgment with a mechanical condition, and each buys reliability with
-noise. **Appending the line to every list answer**
+not tightened before there is proof that it needs to be tightened. The cost of tightening is real.
+The alternatives replace the judgment with a mechanical condition. Each is more reliable, and each
+adds noise. **Appending the line to every list answer**
 cannot be got wrong. It puts the same sentence under every answer, which is how a line stops being
 read. **Appending it above a length threshold**
 removes the most pointless instances and still fires on answers that say all they have. Either is
@@ -130,3 +130,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

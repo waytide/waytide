@@ -148,7 +148,7 @@ So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `re
 
 **`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide. The authoring tools run **against the packages**. This one runs **beside projects**, which is a third position the earlier classification had no slot for. It detects nothing about a project's condition, reaches no network, and takes no action on what it finds. It also names no consuming project in its own source: the list is in the registry, outside any repository, per the `a-project-does-not-name-its-consumers` rule.
 
-**Being installed into every project means a copy per project, and one registry.** Each copy reads the same file and reports the same set, so a engineer runs whichever copy is nearest rather than the right one.
+**Being installed into every project means a copy per project, and one registry.** Each copy reads the same file and reports the same set, so an engineer runs whichever copy is nearest rather than the right one.
 
 **It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others. It would be the first Waytide package that is a **tool** rather than a set of rules.
 
@@ -203,3 +203,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

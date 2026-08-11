@@ -107,8 +107,8 @@ it**. It never asserts over the unit's behavior as an outcome. So it is outside 
 the unit is established by one passing.
 
 **The line is what the assertion is for, not what it is written over.** `refute_raises`
-around an actuation is a **precondition** in one case. The controls are arranged so the actuation
-would ordinarily fail, something in that arrangement averts it, and the script does not show
+around an actuation is a **precondition** in one case. The controls are set so the actuation
+would ordinarily fail, something in that setup averts it, and the script does not show
 as much. It is a **test** when whether the unit raises is the thing being established. The
 same expression serves the two of them, and only its purpose separates them.
 
@@ -165,3 +165,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

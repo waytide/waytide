@@ -50,7 +50,7 @@ plans-convention, design-document-format, and plan-document-format rules govern 
 
 **Why a mode that changes no obligation is worth having.** Because a word is not a label applied to a thought after the fact. It is the thought's working surface, and choosing a word chooses a concept. That is the `language` package's premise, and the rules-establish-a-mindset rule states
 the same thing from the other side. A large share of what a rule does is establish a **stance**,
-and vocabulary is the most direct lever on a mental model. A engineer writing an *aspiration* is doing something different from a engineer writing a *design*. The difference is in them rather than in the document. The mode is that lever, applied at the scale of a whole project
+and vocabulary is the most direct lever on a mental model. An engineer writing an *aspiration* is doing something different from an engineer writing a *design*. The difference is in them rather than in the document. The mode is that lever, applied at the scale of a whole project
 rather than a single term.
 
 **What this deliberately gives up.** The idea began with a stronger claim. An intention needs no supersession, and an aspiration is not measured by completion the way a plan is.
@@ -71,7 +71,7 @@ any mode's directory, and it does not name every pair either.
 write a deferred item. The trailing class noun is what keeps a covering term from becoming a word
 the work is **done in**.
 
-**So neither term is shortened to a bare noun.** *Direction* and *sequencing* alone would be sayable — *"I'm writing the direction"*. A sayable, mode-neutral name for the artifact is a **fourth planning vocabulary**, available in every mode. Adopting it would erase the difference this rule exists to create. The mode would survive as a directory name while ceasing to be a stance. The phrases read clumsily in a sentence about doing the work. That is the property being kept, not a cost being tolerated. A rule says *the direction artifact* **about** the work, and a engineer says *aspiration* or *design* **while** doing it.
+**So neither term is shortened to a bare noun.** *Direction* and *sequencing* alone would be sayable — *"I'm writing the direction"*. A sayable, mode-neutral name for the artifact is a **fourth planning vocabulary**, available in every mode. Adopting it would erase the difference this rule exists to create. The mode would survive as a directory name while ceasing to be a stance. The phrases read clumsily in a sentence about doing the work. That is the property being kept, not a cost being tolerated. A rule says *the direction artifact* **about** the work, and an engineer says *aspiration* or *design* **while** doing it.
 
 **Why generalize rather than name every mode everywhere.** Two reasons, and the second is the
 stronger:
@@ -93,14 +93,14 @@ with **formal as the default**.
 **Where no mode rule is present, the selection prompt is displayed at once. The response carries the prompt and nothing else.** No preamble, no report that the mode has never been chosen, no account of what the read surfaced, and no citation of this rule. The agent does not
 offer to ask and does not wait for a further instruction before asking.
 
-**Two failures are forbidden here and only one of them is obvious.** Announcing the occasion and stopping leaves the project uninitiated until a second instruction arrives. It also spends a turn on a non-decision. A engineer told that a question could be asked has no answer to give but *yes*.
+**Two failures are forbidden here and only one of them is obvious.** Announcing the occasion and stopping leaves the project uninitiated until a second instruction arrives. It also spends a turn on a non-decision. An engineer told that a question could be asked has no answer to give but *yes*.
 The subtler one is **announcing and then asking in the same response**. The prompt arrives, so nothing is blocked. The engineer still has to read an explanation of why they are being asked before reaching the question. The prompt states what it needs. A preamble in front of it is the
 agent reasoning where the engineer wanted a choice.
 
 This is the same reasoning the `design-by-efferent` never-ask-to-start-test-first rule applies to
 its own settled default: asking whether to ask confirms what is already decided. It is also the shape the announce-waytide-at-session-start rule requires of the response that opens the initialization rule. The tool call and nothing else — for the same reason, that a line of the agent's narration stands where the thing itself should be.
 
-**Say "ask", not "put".** *Put* in the sense of *pose* is archaic, and a engineer meets the everyday sense first, where it says nothing about what will happen. The same objection the present-every-prompt rule makes to *put this question again* in an option description. It holds in
+**Say "ask", not "put".** *Put* in the sense of *pose* is archaic, and an engineer meets the everyday sense first, where it says nothing about what will happen. The same objection the present-every-prompt rule makes to *put this question again* in an option description. It holds in
 speech to the engineer as well as in an option's wording. This rule's own headings still read
 *put*, which is the older idiom and is being left rather than conformed.
 
@@ -112,7 +112,7 @@ speech to the engineer as well as in an option's wording. This rule's own headin
 
 **The wording is fixed because the engineer meeting this choice cannot yet know what it
 decides.** It is put at a project's start, before any of this system's material has been worked with. So a mode named alone — *formal, intuitive, or OODA* — reads as a choice about how the system will **behave**. It reads as how strict the system is, how much ceremony it imposes, and what it will require.
-Every one of those readings is wrong, and a engineer holding one of them chooses on grounds that
+Every one of those readings is wrong, and an engineer holding one of them chooses on grounds that
 do not exist. Saying outright that behavior and functioning are unaffected removes the wrong question before it is asked, and naming what the mode **does** settle. The process vocabulary, and the directories planning records are stored in — leaves the engineer weighing the thing actually in front of them.
 
 **It does not restate the case for the modes**, which is the argument above about a word being a
@@ -210,7 +210,7 @@ plans-convention, design-document-format, and plan-document-format rules govern 
 
 **Why a mode that changes no obligation is worth having.** A word is not a label applied to a
 thought after the fact — it is the thought's working surface, so choosing a word chooses a
-concept. A engineer writing an *aspiration* is doing something different from one writing a
+concept. An engineer writing an *aspiration* is doing something different from one writing a
 *design*, and the difference is in them rather than in the document.
 
 **Why:** the words a project plans in are load-bearing, so which pair it uses is a binding
@@ -326,3 +326,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:13:41 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

@@ -34,7 +34,7 @@ with these options:
 > **Unattended** — The agent decides and generates through.
 
 **Neither the question nor an option names a hinge.** The words are fixed for that reason. The
-choice is put at a feature's or an experiment's **start**. A engineer meeting this system has
+choice is put at a feature's or an experiment's **start**. An engineer meeting this system has
 not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole
 of what the choice settles.
 
@@ -51,7 +51,7 @@ reaches the first one, where the engineer sees an actuation rather than a defini
   the working-location choice. It is a lifecycle fact: what was chosen, when, and by whom.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
-**An unattended cycle is not written as though a engineer was consulted.** A loop record's
+**An unattended cycle is not written as though an engineer was consulted.** A loop record's
 cycle ordinarily carries a hinge, the **options** put at the gate, and the **decision or chat**
 that resolved it. Under unattended work the last two did not happen. So:
 
@@ -133,3 +133,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

@@ -8,12 +8,12 @@ the engineer:
    cycle.
 
 The two answer the hinge's question. The hinge asks *how does this implementation come about*. These are
-two ways of arriving at the same place, one directly and one through the cycle. That is what makes the second a genuine **candidate** rather than a sequencing step. A engineer may
+two ways of arriving at the same place, one directly and one through the cycle. That is what makes the second a genuine **candidate** rather than a sequencing step. An engineer may
 prefer it, and preferring it is a design judgment about this unit. It is not a procedure
 applied to every one.
 
 **This is where the choice is made, and the only place.** A red is not offered at a separate
-hinge preceding the implementation. One gate asks, so a engineer who declines is not asked
+hinge preceding the implementation. One gate asks, so an engineer who declines is not asked
 again by another mechanism.
 
 **The containment constraint governs the red, unchanged.** A deliberate red is permitted **only
@@ -31,7 +31,7 @@ the-design-of-a-test-waits-at-the-hinges-including-coverage rule. So the second 
 only where it is actually available, rather than being offered and then refused.
 
 **Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing. What
-that rejects is the **unchosen** case. A engineer selecting the cycle at a gate, for this unit,
+that rejects is the **unchosen** case. An engineer selecting the cycle at a gate, for this unit,
 has made a design judgment, which is the opposite of ceremony. The loop stopped, a person
 weighed two real alternatives, and the choice was theirs. The rule and this one do not conflict,
 and dbe-as-design-tool says so in its own words.
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

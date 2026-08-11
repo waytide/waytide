@@ -9,7 +9,7 @@ the top of the feature context. It asserts each outcome of that one actuation in
 nested context. See the tdd-test-structure rule. An exceptional path cannot share that
 actuation. The actuation is inside an `assert_raises` and produces no result to observe.
 The outcomes of the normal-path actuation are not established when it runs. Two
-actuations in one file are two arrangements sitting side by side, each inert to the other.
+actuations in one file are two sets of controls sitting side by side, each inert to the other.
 
 **Naming follows the existing file conventions.** Where a feature has a normal path and
 one or more exceptional paths, the case set is larger than one. So the feature takes a
@@ -22,7 +22,7 @@ condition is then also promoted to a `context` inside that file, with the test n
 **What belongs in an exceptional-path file is that one exceptional case.** The normal path
 is proven in its own file and is not re-proven here. Where such a file's controls include values that also appear on the normal path, they are there to make the failure **discriminating**. So the raised error can be told from a different failure of the same class — not to establish the normal path a second time.
 
-**Why:** a file holds one arrangement and one actuation. Mixing a raising actuation
+**Why:** a file holds one set of controls and one actuation. Mixing a raising actuation
 with a non-raising one puts two of each in the same file, where neither reads as the
 subject. Separating them also makes a feature's failure modes findable by filename, rather
 than by reading each file for a nested `assert_raises`. It keeps a normal-path file from
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

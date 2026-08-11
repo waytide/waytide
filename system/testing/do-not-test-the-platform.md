@@ -14,8 +14,7 @@ evaluation). Having *decided* that `#empty?` stays transparent to Ruby
 test would merely assert that `String#empty?` returns true — i.e. test Ruby. So: no test. The
 resolution is the *decision* (transparent), not a test.
 
-**The contrast — what IS ours.** The moment a unit adds a policy, that policy is the
-library's and must be tested, because it is a **decision** rather than the platform's behavior.
+**The contrast — what IS ours.** The moment a unit adds a policy, that policy is the library's. It must be tested. It is a **decision** rather than the platform's behavior.
 `Upload#call`'s guard raises `Upload::Error` on an empty file — `raise Error, "File
 is empty" if file.empty?`. So does a coercion that normalizes the file, and a suppressed warning.
 Those have their regressions prevented. The bare `file.empty?` forwarding underneath them is not.
@@ -39,3 +38,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

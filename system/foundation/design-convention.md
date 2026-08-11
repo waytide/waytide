@@ -13,7 +13,7 @@
 
 ## A question that counters a settled resolution is the design expanding
 
-**A engineer asking something that runs against what a design settled has expanded the design.**
+**An engineer asking something that runs against what a design settled has expanded the design.**
 That is what an incremental process is: direction is set from where the work stood, and the next
 question is the work moving. A settled resolution records where it was pointed at a moment. It is
 not a boundary the next question has to clear.
@@ -71,3 +71,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

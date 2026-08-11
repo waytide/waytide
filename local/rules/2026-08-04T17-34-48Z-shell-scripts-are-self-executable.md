@@ -3,7 +3,7 @@
 Every `.sh` file in this repository is **runnable as itself** — `./report-direct-commits.sh`,
 never `sh report-direct-commits.sh`. Two things together make it so, and each is required:
 the bit and the shebang, below. **One script is documented with an `sh` prefix even so**, because
-the copy a engineer runs is not the file this repository holds. The delivery section states when
+the copy an engineer runs is not the file this repository holds. The delivery section states when
 that applies and why the bit is set on it regardless.
 
 - **The executable bit is set**, and it is set at the moment the file is created rather than
@@ -19,7 +19,7 @@ covered alike:
 - **The tools at the root** — `report-direct-commits.sh` and
   `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains
   Waytide, in this repository. **`install-all.sh` sits beside them and is not one**: a consuming
-  project fetches it, which is what makes it the one script here a engineer runs from somewhere
+  project fetches it, which is what makes it the one script here an engineer runs from somewhere
   other than a clone of this repository. That is the whole reason the delivery section below
   exists.
 - **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`,
@@ -47,7 +47,7 @@ That is how a script written for `sh` gets run by something else, and fails some
 middle.
 
 **A script's own documentation depends on it.** Every script in this repository opens with a
-**usage line** — the command a engineer types, in the script's own header. That line is a claim
+**usage line** — the command an engineer types, in the script's own header. That line is a claim
 about how the file is invoked, and it is false for a script that is not executable. So the
 convention is not cosmetic tidiness. It is the thing that keeps each script's header true.
 
@@ -87,7 +87,7 @@ wiring breaks.
 committed `100755` exactly like the rest, and nothing below relaxes that. What varies is only the
 **usage line**, and it varies because the bit does not survive every delivery.
 
-- **`git clone` and `git subtree` carry the file's mode.** A script that reaches a engineer either
+- **`git clone` and `git subtree` carry the file's mode.** A script that reaches an engineer either
   way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the
   path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this
   case — only the `curl`-fetched one is not.
@@ -151,3 +151,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

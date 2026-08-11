@@ -112,7 +112,7 @@ names two words, and each of these names one.
 ### Finer distinctions
 
 - **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
-  parliamentary one, and the shell reading is the one a engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
+  parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
 
 ---
 
@@ -127,3 +127,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

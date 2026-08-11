@@ -27,7 +27,7 @@ context "..." do
 end
 ```
 
-**Why:** The test block should read as a pure statement of the asserted truth, a single relation among named values. It should not read as a computation mixed with a check. Naming every operand (in the context, where the arranging happens) documents what each value is, gives each an inspection point, and cleanly separates *arrange* (the context) from *assert* (the test block). An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *the two* operands.
+**Why:** The test block should read as a pure statement of the asserted truth, a single relation among named values. It should not read as a computation mixed with a check. Every operand is named in the context, where the controls are established. That documents what each value is, and gives each an inspection point. It cleanly separates *control*, the context, from *observe*, the test block. An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *the two* operands.
 
 **The three parts govern a `test` block, and a precondition is not one.** A **precondition**. A bare `assert` or `refute` that is not a test, documenting a factor that decides the test's outcome where the script does not express it. It reads its predicate **inline**, with no explaining variable, and is the one stated exception to the parts above. The reasons here do not reach it. It has a single operand, so nothing is buried inside a nested expression to be parsed inside-out. A name bound for it would only restate the predicate. See the precondition rule.
 
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

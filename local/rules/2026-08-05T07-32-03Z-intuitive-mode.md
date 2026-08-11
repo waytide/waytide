@@ -25,7 +25,7 @@ and each names the two directories.
 
 **Why a mode that changes no obligation is worth having.** A word is not a label applied to a
 thought after the fact. It is the thought's working surface, so choosing a word chooses a
-concept. A engineer writing an *aspiration* is doing something different from one writing a
+concept. An engineer writing an *aspiration* is doing something different from one writing a
 *design*, and the difference is in them rather than in the document.
 
 **Why:** the words a project plans in are load-bearing. So which pair it uses is a binding
@@ -48,3 +48,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

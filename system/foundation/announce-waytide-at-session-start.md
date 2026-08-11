@@ -64,7 +64,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
   one, since a line where several segments are emphasized emphasizes nothing.
 
   **The Waytide segment is one word and carries no package count.** It did carry one until
-  2026-07-28. The count told a engineer nothing they act on. It changed only when a package
+  2026-07-28. The count told an engineer nothing they act on. It changed only when a package
   was installed or removed, and it competed for width with the segments that do change. What
   the line is for here is the standing fact that the system is in force. Presence is still
   read from disk: at least one directory carrying a `README.md`, the same test for a package the
@@ -87,7 +87,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
   is, it is the file most easily lost. Before this segment existed the line reported `uncommitted changes` over a tree where nothing had been modified at all. That was true on the axis the segment names, and still misleading: it sent the engineer looking for an edit that was not there.
 
   **An untracked file raises the two segments, deliberately.** `uncommitted changes` names the
-  **axis** — work that is not in the history — and an untracked file is on it. Narrowing that segment to tracked modifications would make the two of them a partition and cost the axis. A engineer scanning for whether anything at all is uncommitted would have to read two segments to answer one question. The overlap is the price of keeping one segment that
+  **axis** — work that is not in the history — and an untracked file is on it. Narrowing that segment to tracked modifications would make the two of them a partition and cost the axis. An engineer scanning for whether anything at all is uncommitted would have to read two segments to answer one question. The overlap is the price of keeping one segment that
   answers it alone.
 
   **The unpushed commits segment** is the next state along the same axis. It is work that is
@@ -144,16 +144,16 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
   that first message should be.
 
   **The command names the read outright, and carries no emphasis markup.** `load waytide`
-  says what it does. So a engineer who has never seen this system can act on it without
-  being told what the word stands for. The line also states the two facts a engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
+  says what it does. So an engineer who has never seen this system can act on it without
+  being told what the word stands for. The line also states the two facts an engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
 
   **The caveat says a few moments, not a moment.** It read `a moment` until 2026-07-28. A moment describes an interval
   short enough to wait through without noticing it, and the read is not that. It opens every rule
-  file in every installed package, which is a wait a engineer sees. Understating it makes the notice's one caveat the part of the line least
+  file in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least
   worth trusting. The plural says the length the wait actually has while staying informal,
   which is the register the rest of the line is in.
 
-  **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where a engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it. The order of the
+  **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it. The order of the
   two is the whole of that change. The two sentences are still present, and the first sentence
   still leads. Standing the command on its own line came later, and finishes the same work.
   The order put it last, and the break leaves nothing beside it.
@@ -243,7 +243,7 @@ The two are wired by a committed `.claude/settings.json` that `install.sh` place
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **What this forbids is the notice**, not everything the agent prints at the start of a session. Two things it prints are not the notice and duplicate nothing the harness emits: the **mark**, at the head of the read, and the **deferred queue**, once the read is done. See the initialization-rule and the print-the-deferred-queue-after-the-rule-read rule. The two are bounded to the read and neither recurs, which is the reason each sits there rather than in this notice — a segment here renders every session and would stop being read.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes `code/ruby` (a package) from `code/` (a grouping directory). Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
-- **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one a engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
+- **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
 - **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git
 cannot re-include a file inside an excluded directory, so a negation added under a
 `.claude/` rule does nothing. The rule has to become `.claude/*` plus
@@ -311,3 +311,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:21:45 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT

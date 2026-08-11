@@ -60,7 +60,7 @@ persisted, dated artifact, kept after the feature concludes.
 impossible to say what is in progress and what concluded. Recording the lifecycle in one
 file per feature makes each legible. Keeping the record after the feature concludes
 preserves how it was built, rather than only what it produced. Keeping it separate from the
-loop record costs a second file per feature, and buys a correct package dependency. That
+loop record trades a second file per feature for a correct package dependency. That
 is the more expensive of the two to get wrong.
 
 **How to apply:** when a feature is started, add a record here. It states its intent, its
@@ -99,3 +99,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
