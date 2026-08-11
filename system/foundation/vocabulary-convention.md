@@ -99,14 +99,19 @@ domain-less term or substitution in `language`. Put a term a **project** settles
 has one to write. Give a package a vocabulary only when its domain
 has specialized words. When a word appears in two vocabularies, the more specific one decides, and
 the entry says whether it narrows the general term or replaces it. Keep substitutions and
-discontinuations under separate headings. Related: the `language` package's `vocabulary.md` and its
-waytide-keeps-its-word-where-the-ste-word-means-something-else rule (the level above this one), its
-language-is-precise-here rule (the premise every vocabulary follows from), the rules-convention,
-the file-names rule (why the project's file takes no prefix), and the
-announce-waytide-at-session-start rule (the read instruction that names it).
+discontinuations under separate headings.
+
+Related:
+
+- the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
+- its language-is-precise-here rule — the premise every vocabulary follows from
+- the rules-convention
+- the file-names rule — why the project's file takes no prefix
+- the announce-waytide-at-session-start rule — the read instruction that names it
 
 ---
 
 Authored by Scott Bellware on Sun Aug 9 2026 at 2:19:00 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

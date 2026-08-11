@@ -14,7 +14,14 @@
 
 **Why:** a forecast recorded before the work is what turns work into an experiment — the gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch. Multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
-**How to apply:** when a question is worth a deliberate try, add a record here. It states the question, names the upstream/experiment/base branches and the working location chosen at the start, and commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations. Add the canonical `**State:**` line when the record reaches one of the words — **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, or **Suspended** — and update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-flight state. On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch. Related: the experiment-lifecycle rule (the lifecycle), the observations-convention (working hypotheses not yet binding), the plans-convention, and the decision-log rule.
+**How to apply:** when a question is worth a deliberate try, add a record here. It states the question, names the upstream/experiment/base branches and the working location chosen at the start, and commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations. Add the canonical `**State:**` line when the record reaches one of the words — **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, or **Suspended** — and update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-flight state. On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch.
+
+Related:
+
+- the experiment-lifecycle rule — the lifecycle
+- the observations-convention — working hypotheses not yet binding
+- the plans-convention
+- the decision-log rule
 
 ---
 
@@ -35,3 +42,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 1:50:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 2:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

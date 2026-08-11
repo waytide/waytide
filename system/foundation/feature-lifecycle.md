@@ -148,11 +148,15 @@ add no gate at the merge. Fix a post-merge failure from there. On the current br
 no merge, no branch to delete, and nothing to return to — completion is the intent being
 built, and abandonment is a revert. Otherwise leave the user on the upstream branch in the
 main working tree, confirm before deleting any branch — removing the worktree first, under one
-confirmation — and record every confirmation in the feature record. Related: the features-convention (the record), the
-experiment-lifecycle rule (the capability this mirrors, and where it
-deliberately differs), the announce-waytide-at-session-start rule (which reports features
-that have not concluded), the design-by-efferent hinge-cycle and loop-records rules (which
-govern the feature's design), and the `git` run-suite-before-commit rule.
+confirmation — and record every confirmation in the feature record.
+
+Related:
+
+- the features-convention — the record
+- the experiment-lifecycle rule — the capability this mirrors, and where it deliberately differs
+- the announce-waytide-at-session-start rule — which reports features that have not concluded
+- the design-by-efferent hinge-cycle and loop-records rules — which govern the feature's design
+- the `git` run-suite-before-commit rule
 
 ---
 
@@ -176,3 +180,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

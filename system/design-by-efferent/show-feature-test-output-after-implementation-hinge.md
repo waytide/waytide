@@ -6,9 +6,17 @@ Run the feature's tests with verbose output so the context tree, `comment`/`deta
 
 **Why:** the implementation hinge is where solubility is judged, and solubility is judged against behavior, not code. Showing the *feature's* output — all its outcomes together — keeps the growing efferent contract in view as it accumulates, so the human deliberates the new outcome in the context of the ones already established rather than in isolation. Surfacing it automatically keeps the loop's load-bearing artifact present without the human asking each turn.
 
-**How to apply:** after writing an accepted implementation and running the suite, run the current feature's test file(s) with verbose output and include that output in the turn that reports the implementation, then hand over the solubility gate. This sharpens the show-the-test-after-implementing rule — that rule shows the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge. Related: the hinge-cycle rule, the human-in-the-loop rule, the show-the-test-after-implementing rule, and the one-outcome-at-a-time rule.
+**How to apply:** after writing an accepted implementation and running the suite, run the current feature's test file(s) with verbose output and include that output in the turn that reports the implementation, then hand over the solubility gate. This sharpens the show-the-test-after-implementing rule — that rule shows the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
+
+Related:
+
+- the hinge-cycle rule
+- the human-in-the-loop rule
+- the show-the-test-after-implementing rule
+- the one-outcome-at-a-time rule
 
 ---
 
 Authored by Scott Bellware on Mon Jun 29 2026 at 9 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

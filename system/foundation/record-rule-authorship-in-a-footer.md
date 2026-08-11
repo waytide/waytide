@@ -27,7 +27,13 @@ Changed by <other name> on <datetime>
 
 **Why in the file, not just git history:** a package is installed into a consuming project by `git subtree`, which does not carry the composite repo's per-file history into that project. So `git blame` / `git log` there cannot show who authored a rule. An in-file footer travels with the file, so authorship is legible wherever the rule is read — which is where review and accountability need it.
 
-**How to apply:** when authoring a new rule, end it with a `---` divider and an `Authored by <name> on <local datetime>` line. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer, its time written to seconds. Related: the a-time-value-carries-minutes-and-seconds rule (the time's resolution), the rules-convention (the rule format), and the file-names rule (the UTC filename prefix this contrasts with).
+**How to apply:** when authoring a new rule, end it with a `---` divider and an `Authored by <name> on <local datetime>` line. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer, its time written to seconds.
+
+Related:
+
+- the a-time-value-carries-minutes-and-seconds rule — the time's resolution
+- the rules-convention — the rule format
+- the file-names rule — the UTC filename prefix this contrasts with
 
 ---
 
@@ -35,3 +41,4 @@ Authored by Scott Bellware on Wed Jul 22 2026 at 7 PM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 11:53:08 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

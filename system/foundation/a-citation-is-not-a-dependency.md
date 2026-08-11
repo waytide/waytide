@@ -45,13 +45,18 @@ rule could still be applied with that package absent. If it could, cite it plain
 nothing. If it could not, declare the dependency in the package README's `Includes` line and
 its dependency graph, and add it to `install-dependencies.sh`. Do not declare a dependency
 because a citation is frequent, because the packages are usually installed together, or
-because the rule reads better with its sibling present. Related: the rules-convention
-(the rule format and where rules live), the features-convention (the refused dependency
-worked through in full), the status-report-format rule (the model citation, written for the
-cited package's absence), and each package's README (where a dependency is declared).
+because the rule reads better with its sibling present.
+
+Related:
+
+- the rules-convention — the rule format and where rules live
+- the features-convention — the refused dependency worked through in full
+- the status-report-format rule — the model citation, written for the cited package's absence
+- each package's README — where a dependency is declared
 
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 10:42:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

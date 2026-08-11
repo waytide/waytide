@@ -148,7 +148,16 @@ names two words. A discontinuation names one, because the concept went rather th
 
 **Why:** The terminology is the conveyable output of this work — it is how the approach is taught to other engineers. Scattering it over observations and a digest left no authoritative source and risked drift. One binding glossary keeps usage consistent and avoids the overloaded or academic words this method rejects (e.g. discriminator, intrinsic, "given", "non-hinge"). Each term was chosen for solubility: plain, positive where possible, and free of programming collisions. Two competing "the name" declarations would drift, so DBE is the single canonical name.
 
-**How to apply:** Use these words, with these meanings, wherever you write about DBE. Prefer them over synonyms. Do not reintroduce a discontinued term. Related: the DBE-as-design-tool, first-turn, human-in-the-loop, hinge-cycle, and "TDD designs, coverage prevents" rules. The `language` package's solubility rule and its name-literally standard.
+**How to apply:** Use these words, with these meanings, wherever you write about DBE. Prefer them over synonyms. Do not reintroduce a discontinued term.
+
+Related:
+
+- the DBE-as-design-tool
+- first-turn
+- human-in-the-loop
+- hinge-cycle
+- "TDD designs
+- coverage prevents" rules. The `language` package's solubility rule and its name-literally standard
 
 ---
 
@@ -169,3 +178,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

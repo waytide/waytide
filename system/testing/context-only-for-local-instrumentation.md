@@ -44,13 +44,17 @@ explaining variable, adds an outcome-local `comment`/`detail`, or is a leading
 `When …` condition. Only then enclose it in a `context`. When flattening an
 over-nested test, flatten **only** when there is no code between the context and
 the `test` (the context holds nothing but the test) **and** the context is not a
-leading `When …` condition. Related: the
-test-block-is-assertion-only rule, the test-structure rule
-(the per-outcome context is for outcomes that *derive* locally), and the
-test-name-is-prefix rule.
+leading `When …` condition.
+
+Related:
+
+- the test-block-is-assertion-only rule
+- the test-structure rule — the per-outcome context is for outcomes that *derive* locally
+- the test-name-is-prefix rule
 
 ---
 
 Authored by Scott Bellware on Tue Jun 30 2026 at 12 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

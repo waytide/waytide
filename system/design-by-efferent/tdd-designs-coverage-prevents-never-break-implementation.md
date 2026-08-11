@@ -34,10 +34,15 @@ misplaced ritual.
 **How to apply:** when the behavior already exists and you are adding coverage,
 write the test, run it, accept that it is verified, and leave the implementation untouched.
 Reserve the failing-test-first cycle for design, where a test drives new behavior into
-existence. Related: the companion rule "the design of a test waits at the hinges" (they still
-apply when writing coverage), the the-implementation-hinge-offers-the-red-green-refactor-cycle rule (which offers a
-*contained* red as a candidate while designing new behavior), the DBE-as-design-tool rule, the
-no-green-on-arrival rule, and the hinge-cycle rule.
+existence.
+
+Related:
+
+- the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
+- the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
+- the DBE-as-design-tool rule
+- the no-green-on-arrival rule
+- the hinge-cycle rule
 
 ---
 
@@ -46,3 +51,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 6:37:11 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -111,12 +111,15 @@ default, in the words fixed above — *Who decides?*, with *You decide. The agen
 it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
 as a list before generating, and write it in Steve.** Write each cycle
 as its hinge and the decision with its reasoning, and write no Options or Decision / chat line.
-Do not describe unattended work as suspending DBE — what is suspended is the waits. Related:
-the loop-records rule (the record's shape and the "none — no gate" form this is distinct
-from), the dbe-human-in-the-loop rule (why attention is placed at the hinges), the hinge-cycle
-rule (the hinges that run either way), the never-ask-to-start-test-first rule (which forbids
-asking about the method's substance, where this asks about its cadence), and foundation's
-feature-lifecycle and experiment-lifecycle rules (the starts where the choice is put).
+Do not describe unattended work as suspending DBE — what is suspended is the waits.
+
+Related:
+
+- the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
+- the dbe-human-in-the-loop rule — why attention is placed at the hinges
+- the hinge-cycle rule — the hinges that run either way
+- the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
+- foundation's feature-lifecycle and experiment-lifecycle rules — the starts where the choice is put
 
 ---
 
@@ -130,3 +133,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

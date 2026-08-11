@@ -48,9 +48,13 @@ teaches the method by example, and exposes where gates were skipped.
 **How to apply:** when a feature's loop is worth preserving, add a file under
 `waytide/local/loops/` in the format above, recording each cycle's hinge → options →
 decision/chat. Mark retroactive reconstructions as backfills. Keep the one-line
-decision-log entries separate and intact. Related: the DBE vocabulary (loop, hinge,
-gate, deliberation), the hinge-cycle rule, and foundation's file-name prefix and
-decision-log conventions.
+decision-log entries separate and intact.
+
+Related:
+
+- the DBE vocabulary — loop, hinge, gate, deliberation
+- the hinge-cycle rule
+- foundation's file-name prefix and decision-log conventions
 
 ---
 
@@ -65,3 +69,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

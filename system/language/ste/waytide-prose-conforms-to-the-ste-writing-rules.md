@@ -65,9 +65,13 @@ number.
 **How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary,
 then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep
 a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use,
-add it to the table and add the phrase that met it. Related: the
-waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory, the `language` and
-`testing` vocabularies, and the specification at `waytide/local/reference/`.
+add it to the table and add the phrase that met it.
+
+Related:
+
+- the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
+- the `language` and `testing` vocabularies
+- the specification at `waytide/local/reference/`
 
 ---
 
@@ -75,3 +79,4 @@ Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

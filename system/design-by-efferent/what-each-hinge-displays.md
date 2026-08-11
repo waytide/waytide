@@ -20,7 +20,15 @@ Three principles generate the table.
 
 **Why:** each hinge is a distinct deliberation, and what is on screen decides what can be deliberated. Too little and the human is asked to judge something in isolation that has no meaning in isolation. The load-bearing linkage (do *these* controls, fed into *this* actuation, produce a result *this* observation reads, and does the whole thing exercise the outcome?) then has to be reconstructed mentally. Too much and the hinge's own concern is buried in material already settled. The anchor principle fixes the first failure. The show-once principle fixes the second.
 
-**How to apply:** render each hinge per the table. At hinge 1, the actuation within its full `context` nesting. At hinge 2, the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block. At hinge 3, the control declarations, then the actuation, then the observation — the complete test body with the `context` blocks omitted. At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output, and do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it. Related: the hinge-cycle rule (the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label), the first-turn rule (the three test hinges produce turn one), the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules (what accompanies the implementation at hinge 4), the folder-mirroring rule, and the test-block-is-assertion-only rule.
+**How to apply:** render each hinge per the table. At hinge 1, the actuation within its full `context` nesting. At hinge 2, the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block. At hinge 3, the control declarations, then the actuation, then the observation — the complete test body with the `context` blocks omitted. At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output, and do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
+
+Related:
+
+- the hinge-cycle rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
+- the first-turn rule — the three test hinges produce turn one
+- the show-the-test-after-implementing and show-feature-test-output-after-implementation-hinge rules — what accompanies the implementation at hinge 4
+- the folder-mirroring rule
+- the test-block-is-assertion-only rule
 
 ---
 
@@ -28,3 +36,4 @@ Authored by Scott Bellware on Thu Jul 16 2026 at 8 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 8:21:33 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

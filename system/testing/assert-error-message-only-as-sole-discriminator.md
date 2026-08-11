@@ -33,11 +33,16 @@ from more than one site along this actuation's execution?*
 **Why:** this keeps error tests about error *correctness* (was the right failure
 raised under the right condition), not error *presentation*. It is the same line the
 import-define-audit drew — library-specific error classes are "self-evidently the right
-failure and need no message" — made into a precise, testable criterion. Related: the
-"TDD designs, coverage prevents" rule and the prevent substitution (in this package's vocabulary).
+failure and need no message" — made into a precise, testable criterion.
+
+Related:
+
+- the "TDD designs
+- coverage prevents" rule and the prevent substitution — in this package's vocabulary
 
 ---
 
 Authored by Scott Bellware on Fri Jul 3 2026 at 11 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

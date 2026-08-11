@@ -22,9 +22,12 @@ Those have their regressions prevented. The bare `file.empty?` forwarding undern
 
 **Why:** tests exist to prevent a regression in the library's design and decisions. Testing the platform
 adds noise, couples the suite to language internals, and gives false confidence that
-"we" are covered when nothing of ours ran. Related: the "TDD designs, coverage prevents"
-rule and the assert-error-message-only-as-sole-discriminator rule (each is about testing
-what actually discriminates *our* behavior).
+"we" are covered when nothing of ours ran.
+
+Related:
+
+- the "TDD designs
+- coverage prevents" rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
 
 ---
 
@@ -33,3 +36,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

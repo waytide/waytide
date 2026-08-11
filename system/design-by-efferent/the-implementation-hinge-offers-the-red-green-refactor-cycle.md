@@ -70,13 +70,15 @@ candidates through the selection UI: the working implementation, and the red/gre
 cycle. Where the cycle is chosen, write the red only if its cause reaches no stable test, run
 the suite, then green, then refactor. Do not offer the cycle when covering behavior that already
 exists. Do not present a failing implementation as an option merely to reach the two-option
-floor. Related: the hinge-cycle rule (the five hinges, of which this is the fourth), the
-dbe-as-design-tool rule (which rejects the cycle as choreography, not as a choice), the
-present-every-prompt rule (the two-option floor this must not be used to satisfy), the
-tdd-designs-coverage-prevents-never-break-implementation and
-the-design-of-a-test-waits-at-the-hinges-including-coverage rules (the coverage case where the cycle is
-unavailable), and the no-green-on-arrival-tests rule (the no-op implementation hinge, where
-there is nothing to drive).
+floor.
+
+Related:
+
+- the hinge-cycle rule — the five hinges, of which this is the fourth
+- the dbe-as-design-tool rule — which rejects the cycle as choreography, not as a choice
+- the present-every-prompt rule — the two-option floor this must not be used to satisfy
+- the tdd-designs-coverage-prevents-never-break-implementation and the-design-of-a-test-waits-at-the-hinges-including-coverage rules — the coverage case where the cycle is unavailable
+- the no-green-on-arrival-tests rule — the no-op implementation hinge, where there is nothing to drive
 
 ---
 
@@ -85,3 +87,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -16,10 +16,19 @@ The loop, by turn:
 
 **Why:** Design judgment stays with the human (see the DBE-as-design-tool rule), and the only places it applies are the hinges — here, the actuation and the resulting solubility. Concentrating human attention there — and removing it from pass/fail theater and test mechanics — spends the human's judgment where it has leverage and lets the AI generate inside the cradle without ceremony. The AI's failure mode is regressing toward the average of poorly-designed code, which announces itself first as an awkward actuation. A wait at that hinge catches it at the interface.
 
-**How to apply:** Run the loop above. Keep turns small (one actuation, one outcome) so the cradle stays legible while the human deliberates. Hand the human the actuation to edit or approve. Let the AI fill everything else. Do not ask the human to confirm a failing or passing test. Stop when solubility is satisfied. Related: the DBE-as-design-tool rule, the first-turn rule, the hinge-cycle rule (the two original hinges grown to five), the test-structure rule, and the DBE vocabulary.
+**How to apply:** Run the loop above. Keep turns small (one actuation, one outcome) so the cradle stays legible while the human deliberates. Hand the human the actuation to edit or approve. Let the AI fill everything else. Do not ask the human to confirm a failing or passing test. Stop when solubility is satisfied.
+
+Related:
+
+- the DBE-as-design-tool rule
+- the first-turn rule
+- the hinge-cycle rule — the two original hinges grown to five
+- the test-structure rule
+- the DBE vocabulary
 
 ---
 
 Authored by Scott Bellware on Sat Jun 20 2026 at 11 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

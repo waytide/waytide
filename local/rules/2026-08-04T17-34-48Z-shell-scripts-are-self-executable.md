@@ -131,9 +131,10 @@ wherever its install is documented. Where the script
 is run by the harness rather than by a person, record its invocation and say what runs it. When
 reviewing a script someone added, check the mode before anything else — it is the one defect that
 will not show up until another machine runs it.
-Related: the `git` package's run-suite-before-commit rule (the other thing confirmed before a
-commit), and the foundation README's account of which scripts are authoring tools and which are
-carried to a consuming project.
+Related:
+
+- the `git` package's run-suite-before-commit rule — the other thing confirmed before a commit
+- the foundation README's account of which scripts are authoring tools and which are carried to a consuming project
 
 ---
 
@@ -145,3 +146,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 1:35:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

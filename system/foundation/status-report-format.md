@@ -14,7 +14,12 @@ Keep each part tight. Read current state before printing — do not report stale
 
 **Why:** a status report is a recurring request with a known shape. Fixing the format makes the report repeatable and complete, and steers reading toward the in-repo sources of truth rather than recollection.
 
-**How to apply:** on a status-report request, render the parts above from current files (the project's sequencing artifact, `waytide/local/deferred/`, `waytide/local/log/`, git). Confirm the suite count and the two-level context tree by running the suite rather than asserting them, and take the two levels from **the run's output** rather than from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source and as its real value in a run, and an unnamed test appears in the source and emits no line. Related: the test-report and test-tree commands in the testing package, which derive the same tree the same way (the test-tree rule states the reasons in full).
+**How to apply:** on a status-report request, render the parts above from current files (the project's sequencing artifact, `waytide/local/deferred/`, `waytide/local/log/`, git). Confirm the suite count and the two-level context tree by running the suite rather than asserting them, and take the two levels from **the run's output** rather than from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source and as its real value in a run, and an unnamed test appears in the source and emits no line.
+
+Related:
+
+- the test-report and test-tree commands in the testing package
+- which derive the same tree the same way — the test-tree rule states the reasons in full
 
 ---
 
@@ -30,3 +35,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

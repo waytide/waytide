@@ -61,10 +61,13 @@ of them for convenience. Where a tool must reach them, have it read a per-machin
 file under `~/.config/` and commit the tool without the list. Where a name is there because a
 decision was about that project, leave it — the rule is about naming a project *as a consumer*.
 Leave historical records as written, and treat a name already in one as the disclosure rule's
-concern rather than this one's. Related: the
-disclosure-is-the-one-reason-to-edit-a-historical-record rule (a name already recorded), the
-a-citation-is-not-a-dependency rule (the other place this package draws a line about what a
-reference obliges), and the rules-convention.
+concern rather than this one's.
+
+Related:
+
+- the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded
+- the a-citation-is-not-a-dependency rule — the other place this package draws a line about what a reference obliges
+- the rules-convention
 
 ---
 
@@ -72,3 +75,4 @@ Authored by Scott Bellware on Tue Aug 4 2026 at 10:16:51 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

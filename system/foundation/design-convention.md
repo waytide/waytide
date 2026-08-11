@@ -42,7 +42,14 @@ leaves a design that no longer describes the work.
 
 **Why:** deciding direction and executing it are separate acts, and the direction must stay stable while the build proceeds against it. A dedicated home for designs — distinct from the plans that realize them — keeps the settled shape and its dated resolutions readable on their own, and gives every plan one authoritative source to point at.
 
-**How to apply:** before sequencing a build, settle its direction in a design here, dating each resolution as it is settled and marking what is out of scope. When the engineer asks something that runs against a settled resolution, answer it — the question is the design expanding, not a conflict to clear first. Put a selection asking whether the design has expanded where the answer changes what it says. Never refuse to proceed until the design is amended. Record the change as a new dated **Settled** entry, leaving the superseded one as written, and say what changed after the fact. Point the realizing plan back at it. In an intuitive-mode project do all of that in `waytide/local/aspiration/`, calling the artifact an aspiration, and in an OODA-mode project in `waytide/local/orientation/`, calling it an orientation. Nothing else differs. Related: the plans-convention, the design-document-format and package-dependency-heading rules, the a-project-works-in-a-mode-chosen-at-the-start rule (the mode that decides which directory this is), and the decision-log rule.
+**How to apply:** before sequencing a build, settle its direction in a design here, dating each resolution as it is settled and marking what is out of scope. When the engineer asks something that runs against a settled resolution, answer it — the question is the design expanding, not a conflict to clear first. Put a selection asking whether the design has expanded where the answer changes what it says. Never refuse to proceed until the design is amended. Record the change as a new dated **Settled** entry, leaving the superseded one as written, and say what changed after the fact. Point the realizing plan back at it. In an intuitive-mode project do all of that in `waytide/local/aspiration/`, calling the artifact an aspiration, and in an OODA-mode project in `waytide/local/orientation/`, calling it an orientation. Nothing else differs.
+
+Related:
+
+- the plans-convention
+- the design-document-format and package-dependency-heading rules
+- the a-project-works-in-a-mode-chosen-at-the-start rule — the mode that decides which directory this is
+- the decision-log rule
 
 ---
 
@@ -62,3 +69,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

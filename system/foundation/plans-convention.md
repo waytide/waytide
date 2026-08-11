@@ -12,7 +12,14 @@
 
 **Why:** design and execution are distinct concerns — one decides what the shape should be, the other decides the order it gets built in. Keeping plans in their own directory, each pointing at the design it realizes, keeps the settled direction stable while the incremental build proceeds against it, and preserves the build history without cluttering the design.
 
-**How to apply:** when a settled design is ready to build, add a plan here that names its source design and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history. In an intuitive-mode project do all of that in `waytide/local/intention/`, calling the artifact an intention and pointing it at its source aspiration, and in an OODA-mode project in `waytide/local/action/`, calling it an action and pointing it at its source orientation. Nothing else differs. Related: the design-convention, the plan-document-format and plans-no-code-samples rules, the a-project-works-in-a-mode-chosen-at-the-start rule (the mode that decides which directory this is), and the decision-log rule.
+**How to apply:** when a settled design is ready to build, add a plan here that names its source design and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history. In an intuitive-mode project do all of that in `waytide/local/intention/`, calling the artifact an intention and pointing it at its source aspiration, and in an OODA-mode project in `waytide/local/action/`, calling it an action and pointing it at its source orientation. Nothing else differs.
+
+Related:
+
+- the design-convention
+- the plan-document-format and plans-no-code-samples rules
+- the a-project-works-in-a-mode-chosen-at-the-start rule — the mode that decides which directory this is
+- the decision-log rule
 
 ---
 
@@ -28,3 +35,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:32:50 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

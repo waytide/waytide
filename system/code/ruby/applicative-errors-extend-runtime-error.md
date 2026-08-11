@@ -47,13 +47,16 @@ chain of intermediate classes that exist only to group.
 **How to apply:** define an applicative error as `class Error < RuntimeError`. Do not
 extend `StandardError`, and do not insert a base class between the error and
 `RuntimeError` for organization. Where a library's errors form a real family, root the
-family in one class that extends `RuntimeError` directly. Related: the `testing` package's
-assert-error-message-only-as-sole-discriminator rule (which turns on error classes being
-self-evidently the right failure) and the lib-report-format rule (whose **error taxonomy**
-section reports the applicative error classes and which operations raise which).
+family in one class that extends `RuntimeError` directly.
+
+Related:
+
+- the `testing` package's assert-error-message-only-as-sole-discriminator rule — which turns on error classes being self-evidently the right failure
+- the lib-report-format rule — whose **error taxonomy** section reports the applicative error classes and which operations raise which
 
 ---
 
 Authored by Scott Bellware on Mon Jul 27 2026 at 1:26:45 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -56,9 +56,12 @@ project's to say stops being said. Naming the engineer as the authority keeps an
 either exposing something on the grounds that a record is immutable, or scrubbing a record on a
 guess about what is sensitive.
 
-**How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it. Related: the deferred-convention and the reconcile entry in this package's
-vocabulary (where the standing rule is stated), and the work-sessions-convention (the title
-format, an instance of the standing rule).
+**How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it.
+
+Related:
+
+- the deferred-convention and the reconcile entry in this package's vocabulary — where the standing rule is stated
+- the work-sessions-convention — the title format, an instance of the standing rule
 
 ---
 
@@ -66,3 +69,4 @@ Authored by Scott Bellware on Tue Aug 4 2026 at 10:12:44 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -14,7 +14,13 @@ reasoning does not reach it. See the attended-or-unattended-is-chosen-at-the-sta
 
 **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges — the actuation and the solubility verdict — not on whether to follow the method itself (see the human-in-the-loop and DBE-as-design-tool rules). Re-asking the standing default is ceremony, the same failure DBE discontinues.
 
-**How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task choice if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so. Related: the human-in-the-loop rule, the DBE-as-design-tool rule, and the attended-or-unattended-is-chosen-at-the-start rule (the cadence question this does not forbid).
+**How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task choice if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
+
+Related:
+
+- the human-in-the-loop rule
+- the DBE-as-design-tool rule
+- the attended-or-unattended-is-chosen-at-the-start rule — the cadence question this does not forbid
 
 ---
 
@@ -26,3 +32,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

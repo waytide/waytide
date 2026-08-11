@@ -9,7 +9,13 @@ Every working-state artifact under `waytide/` that is a document with a body end
 
 **Why:** a working-state artifact is a document meant to be read on its own. A narrative, a design, an experiment record. Its provenance — who wrote it, when, and who changed it since — is part of what a reader needs. So it belongs in the file rather than only in version-control history the reader would have to go query. This is a different justification from the rule-file footer's (which recovers history that subtree strips). Stating it once, here, keeps every working-state convention from repeating it. The decision log is exempt because its one-line-per-file shape already carries its provenance in the filename, and a footer would break that shape.
 
-**How to apply:** when writing or changing an experiment, design, plan, observation, deferred item, loop record, or work session record, end it with a provenance footer. The format is the record-rule-authorship-in-a-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/log/` entry. Related: the record-rule-authorship-in-a-footer rule (the footer's format and the rule-file case), the decision-log-convention (the exempt one-line log), and the artifact conventions that reference this one (experiments-convention, design-convention, plans-convention, observations-convention, deferred-convention, work-sessions-convention, and DBE's loop-records).
+**How to apply:** when writing or changing an experiment, design, plan, observation, deferred item, loop record, or work session record, end it with a provenance footer. The format is the record-rule-authorship-in-a-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/log/` entry.
+
+Related:
+
+- the record-rule-authorship-in-a-footer rule — the footer's format and the rule-file case
+- the decision-log-convention — the exempt one-line log
+- the artifact conventions that reference this one — experiments-convention, design-convention, plans-convention, observations-convention, deferred-convention, work-sessions-convention, and DBE's loop-records
 
 ---
 
@@ -19,3 +25,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

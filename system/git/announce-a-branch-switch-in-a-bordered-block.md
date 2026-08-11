@@ -58,12 +58,15 @@ block that cannot be scrolled past removes the class of error rather than one in
 
 **How to apply:** print the block on every branch switch, before reporting anything else about the
 work. Fill all three fields. Keep the reason to what the switch was for, not what the work is.
-Print no block for a worktree, a merge, or a commit. Related: the `foundation`
-experiment-lifecycle and feature-lifecycle rules (which require the working tree to end on the
-upstream branch, and which the block makes checkable), and the run-suite-before-commit rule (the
-other thing confirmed before work is recorded).
+Print no block for a worktree, a merge, or a commit.
+
+Related:
+
+- the `foundation` experiment-lifecycle and feature-lifecycle rules — which require the working tree to end on the upstream branch, and which the block makes checkable
+- the run-suite-before-commit rule — the other thing confirmed before work is recorded
 
 ---
 
 Authored by Scott Bellware on Sat Aug 8 2026 at 12:23:07 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -17,7 +17,12 @@ Every time you prompt the engineer to make a choice, a decision, or an answer �
 
 **Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text escape. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a choice from being buried inside prose. The two-option floor is a forcing function: it pushes toward finding the real decision rather than presenting a single proposal for approval, which puts the engineer in the position of ratifying an answer rather than producing one. The `Explain` option answers the failure the rest of the rule cannot reach — a prompt that is well-formed, correctly presented, and **not understood**. Without it the engineer's recourse is the free-text box, which asks them to compose a request at the moment they are least equipped to, and the agent's only signal is a question going unanswered. Making it an option rather than a judgment call is the point: the agent is the party that cannot tell which of its own questions are unclear.
 
-**How to apply:** whenever you would ask the engineer to decide or answer. A design choice, a "which approach", a confirmation to proceed or commit, a clarification between interpretations — use the selection UI, one option per genuine choice, plus `Explain`, never adding your own escape option. Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants. When `Explain` is selected, answer with a summary first and a normal level of explanation beneath it, then display the same selection prompt again, unchanged. And word that option's own description *…then display this selection prompt again*, never *put this question again*. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose. Related: the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules (the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal), and its vocabulary (where **origination** and **mean-bias** are defined).
+**How to apply:** whenever you would ask the engineer to decide or answer. A design choice, a "which approach", a confirmation to proceed or commit, a clarification between interpretations — use the selection UI, one option per genuine choice, plus `Explain`, never adding your own escape option. Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants. When `Explain` is selected, answer with a summary first and a normal level of explanation beneath it, then display the same selection prompt again, unchanged. And word that option's own description *…then display this selection prompt again*, never *put this question again*. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose.
+
+Related:
+
+- the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
+- its vocabulary — where **origination** and **mean-bias** are defined
 
 ---
 
@@ -28,3 +33,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

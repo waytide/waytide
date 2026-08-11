@@ -40,10 +40,13 @@ to a person. Together they settle it. Offering the candidates rather than asking
 **How to apply:** at a release, read the current version, present patch, minor, and major as
 options through the selection UI with the resulting version and the claim each makes, and let
 the engineer choose. Do not include the generation. Do not propose one and ask for
-confirmation. Related: the version-scheme rule (what the segments mean and why the generation
-is excluded), the `foundation` present-every-prompt-through-askuserquestion rule (why
-every prompt goes through the selection UI), and the `git` subject-first-commit-messages rule
-(the commit that records the change, `Package version is increased from X to Y`).
+confirmation.
+
+Related:
+
+- the version-scheme rule — what the segments mean and why the generation is excluded
+- the `foundation` present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
+- the `git` subject-first-commit-messages rule — the commit that records the change, `Package version is increased from X to Y`
 
 ---
 
@@ -53,3 +56,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

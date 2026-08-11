@@ -80,13 +80,16 @@ exactly when the queue is worth seeing. Putting it after the read rather than in
 **How to apply:** after reading the rule files at the start of a session, read `waytide/local/deferred/` and print one row per item — title, date from the filename prefix. A one-line summary — ordered by the items' `**Priority:**` ranks with unranked items last, and with the count stated. Where no item is ranked, order by filename prefix and
 mark nothing. Where the queue is empty, print a
 line saying so. Then wait for the engineer's request. Do not print a Waytide installation
-notice, which remains the harness's and is prohibited to the agent. Related: the
-deferred-convention (the queue's format and its resolution step), the
-next-deferred-item-command rule (the on-demand way into the queue), the status-report-format
-rule (whose deferred table is a rendered table with a `kind` column, this one being neither),
-the rules-convention (the read this follows), the
-initialization-rule (the read's opening bookend), and the
-announce-waytide-at-session-start rule (the notice this is not).
+notice, which remains the harness's and is prohibited to the agent.
+
+Related:
+
+- the deferred-convention — the queue's format and its resolution step
+- the next-deferred-item-command rule — the on-demand way into the queue
+- the status-report-format rule — whose deferred table is a rendered table with a `kind` column, this one being neither
+- the rules-convention — the read this follows
+- the initialization-rule — the read's opening bookend
+- the announce-waytide-at-session-start rule — the notice this is not
 
 ---
 
@@ -100,3 +103,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

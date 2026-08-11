@@ -13,7 +13,13 @@ A design doc (`waytide/local/design/*.md`) is titled `# <Title> — Design` and 
 
 **Why:** a design is the stable reference a plan realizes and a reader returns to. A common frame — summary, motivation, substance, dated resolutions, explicit exclusions — lets a reader locate the settled shape and know what is fixed versus open without reconstructing it. Dating the settled resolutions makes the design's own history legible.
 
-**How to apply:** when writing a design, open with a summary or premise and the motivation. Define the vocabulary it introduces. Develop the substance in named or numbered sections. Close with dated **Settled** resolutions and an **Out of Scope / Deferred** section. A design may show interface shape — signatures, structure, the model — but not implementation bodies. The how emerges in the build. Write an aspiration or an orientation exactly the same way, titled `— Aspiration` or `— Orientation`. Related: the foundation design-convention (what the directory is), the a-project-works-in-a-mode-chosen-at-the-start rule (which of the two directories a project uses), and the package-dependency-heading rule.
+**How to apply:** when writing a design, open with a summary or premise and the motivation. Define the vocabulary it introduces. Develop the substance in named or numbered sections. Close with dated **Settled** resolutions and an **Out of Scope / Deferred** section. A design may show interface shape — signatures, structure, the model — but not implementation bodies. The how emerges in the build. Write an aspiration or an orientation exactly the same way, titled `— Aspiration` or `— Orientation`.
+
+Related:
+
+- the foundation design-convention — what the directory is
+- the a-project-works-in-a-mode-chosen-at-the-start rule — which of the two directories a project uses
+- the package-dependency-heading rule
 
 ---
 
@@ -26,3 +32,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:44:24 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

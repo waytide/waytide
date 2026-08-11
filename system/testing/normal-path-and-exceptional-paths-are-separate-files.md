@@ -29,13 +29,16 @@ than by reading each file for a nested `assert_raises`, and keeps a normal-path 
 accumulating exceptional cases at its end as conditions are added.
 
 **How to apply:** when a feature has the two a normal path and an exceptional path, give the feature a folder and write each in its own file. The normal path named for the feature, each exceptional path named for its condition. Keep the normal path's proof in its own
-file. Do not add a second, raising actuation to a normal-path file. Related: the
-tdd-test-structure rule (actuate once at the top), the single-case-test-named-for-feature
-rule (when a folder is warranted and how files are named), the
-error-test-named-fails-condition-is-context rule (the condition context and the `Fails`
-name), the context-only-for-local-instrumentation rule, and the `language` package's
-vocabulary, where the **normal path** term and its exceptional-case counterpart are
-settled.
+file. Do not add a second, raising actuation to a normal-path file.
+
+Related:
+
+- the tdd-test-structure rule — actuate once at the top
+- the single-case-test-named-for-feature rule — when a folder is warranted and how files are named
+- the error-test-named-fails-condition-is-context rule — the condition context and the `Fails` name
+- the context-only-for-local-instrumentation rule
+- the `language` package's vocabulary
+- where the **normal path** term and its exceptional-case counterpart are settled
 
 ---
 
@@ -44,3 +47,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 5:04:19 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:23:44 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

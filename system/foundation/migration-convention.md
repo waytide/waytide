@@ -38,10 +38,14 @@ it does not survive the session.
 the source and destination, the increments in order, and what is true while the move is under
 way. Record what happened against it as the work proceeds, and **keep the record** once the
 content has gone. Do not use the project's sequencing artifact for a move that crosses out of the
-repository, and do not delete a migration record on completion. Related: the plans-convention
-(the plan that sequences work *within* this repository), the design-convention (a migration may
-realize a design, or may be mechanical enough to need none), the file-names rule (the filename
-prefix), and the working-state-artifacts-carry-a-provenance-footer rule.
+repository, and do not delete a migration record on completion.
+
+Related:
+
+- the plans-convention — the plan that sequences work *within* this repository
+- the design-convention — a migration may realize a design, or may be mechanical enough to need none
+- the file-names rule — the filename prefix
+- the working-state-artifacts-carry-a-provenance-footer rule
 
 ---
 
@@ -51,3 +55,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 10:57:02 AM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -10,7 +10,12 @@
 
 **Why:** discovery produces valuable thinking before it is ready to be binding. A place for non-binding hypotheses keeps that thinking without prematurely imposing it as a rule. Preferring an observation when in doubt makes the cheap move (promote later) the default over the costly one (retract a premature rule).
 
-**How to apply:** record an in-progress hypothesis or unratified method here with a `**Status:**` line, not as a rule. Promote it to `waytide/local/rules/` only once it stabilizes, leaving the observation as the discovery record. Related: the rules-convention and the decision-log rule.
+**How to apply:** record an in-progress hypothesis or unratified method here with a `**Status:**` line, not as a rule. Promote it to `waytide/local/rules/` only once it stabilizes, leaving the observation as the discovery record.
+
+Related:
+
+- the rules-convention
+- the decision-log rule
 
 ---
 
@@ -19,3 +24,4 @@ Changed by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 4:34:12 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

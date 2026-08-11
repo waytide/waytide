@@ -140,13 +140,15 @@ test for a factor in a derived value. Do not wrap it in a `test` block, do not n
 bind its operand, and do not write it as a `comment` instead — an unchecked statement of a
 deciding factor is the thing this replaces. Where an actuation's completion is the thing being
 established rather than the ground a later observation stands on, that is a test and belongs
-in a `test` block. Related: the controls-not-factories-fixtures-arrange rule
-and the `control_` test-variable prefix rule (the controls whose values a precondition most
-often documents), the test-block-is-assertion-only rule (the explaining-variable discipline
-this is a stated exception to), the tdd-test-structure rule (the control → actuate → observe
-shape a precondition sits within), the context-only-for-local-instrumentation rule (the other
-thing a context holds beside a test), and the do-not-test-the-platform rule (the boundary a
-precondition is not to be confused with).
+in a `test` block.
+
+Related:
+
+- the controls-not-factories-fixtures-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
+- the test-block-is-assertion-only rule — the explaining-variable discipline this is a stated exception to
+- the tdd-test-structure rule — the control → actuate → observe shape a precondition sits within
+- the context-only-for-local-instrumentation rule — the other thing a context holds beside a test
+- the do-not-test-the-platform rule — the boundary a precondition is not to be confused with
 
 ---
 
@@ -156,3 +158,4 @@ Changed by Scott Bellware on Sat Aug 1 2026 at 5:08:21 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

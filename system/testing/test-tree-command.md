@@ -10,10 +10,17 @@ The problem it solves: each test file re-declares the same outer contexts (the c
 
 **Why:** the de-duped tree is the readable, whole-suite view — it shows the feature/outcome structure at a glance without the per-file repetition, and (via the expanded dynamic names) surfaces loop-generated cases.
 
-**How to apply:** on a "test tree" request, run the project's durable tree script and present its output. Related: the status-report (in `foundation`) and test-report commands, which include a shallower two-level context tree, and — for a Ruby project — the `code/ruby` rule that settles the script.
+**How to apply:** on a "test tree" request, run the project's durable tree script and present its output.
+
+Related:
+
+- the status-report (in `foundation`) and test-report commands
+- which include a shallower two-level context tree
+- — for a Ruby project — the `code/ruby` rule that settles the script
 
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 8 AM PT
 Changed by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

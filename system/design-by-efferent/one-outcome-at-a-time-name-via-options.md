@@ -8,10 +8,20 @@ The loop advances **one outcome at a time** and **stops at every gate** for the 
 
 **Why:** Batch generation moves fast but bypasses the gates that are the whole point of the loop — each skipped gate is a place the human's judgment didn't get to act, and mistakes hide in the pile. Naming is a hinge like the actuation (the outcome-context name is a small contract on what the test establishes), so responsibility transfers there the same way, through options plus the escape, rather than through an AI fait accompli.
 
-**How to apply:** Build one outcome's test at a time. After each, stop at its gate (actuation, solubility, naming) and wait. Never write several test files at once. To finish an unnamed test, present candidate names as options through the selection UI, then apply the chosen (or dictated) name. Related: the actuation-gate-options, human-in-the-loop, first-turn, hinge-cycle, and present-every-prompt rules, and the testing package's test-naming rules.
+**How to apply:** Build one outcome's test at a time. After each, stop at its gate (actuation, solubility, naming) and wait. Never write several test files at once. To finish an unnamed test, present candidate names as options through the selection UI, then apply the chosen (or dictated) name.
+
+Related:
+
+- the actuation-gate-options
+- human-in-the-loop
+- first-turn
+- hinge-cycle
+- present-every-prompt rules
+- the testing package's test-naming rules
 
 ---
 
 Authored by Scott Bellware on Sat Jun 27 2026 at 3 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:05:45 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

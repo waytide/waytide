@@ -67,10 +67,14 @@ still arranged around its absence.
 `**Suspended:**`, and `**Reconciliations:**` lines, and write the reason and what would bring it
 back. Log the suspension. To restore, reverse each reconciliation, move the file back to its
 `**Origin:**`, remove the return-address lines, and log that too. Do not delete what can be suspended, and do
-not suspend what was never in use — that is not a reversal of anything. Related: the
-rules-convention (removing a rule, and the reconciliation a suspension must record), the
-deferred-convention (the other queue, which deletes on resolution rather than keeping),
-the decision-log rule, and the file-names rule (the ISO-8601-UTC prefix a suspended file keeps).
+not suspend what was never in use — that is not a reversal of anything.
+
+Related:
+
+- the rules-convention — removing a rule, and the reconciliation a suspension must record
+- the deferred-convention — the other queue, which deletes on resolution rather than keeping
+- the decision-log rule
+- the file-names rule — the ISO-8601-UTC prefix a suspended file keeps
 
 ---
 
@@ -82,3 +86,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

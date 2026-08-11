@@ -28,8 +28,14 @@ implementation to introduce a test).
 **How to apply:** design a coverage test through the hinges as usual — actuation,
 controls, observation, naming — with a wait at each for the human. Treat the
 implementation hinge as a confirmation step (run, show verified), sending any
-awkwardness back to the test, not the implementation. Related: the hinge-cycle rule,
-the what-each-hinge-displays rule, and the companion "TDD designs, coverage prevents" rule.
+awkwardness back to the test, not the implementation.
+
+Related:
+
+- the hinge-cycle rule
+- the what-each-hinge-displays rule
+- the companion "TDD designs
+- coverage prevents" rule
 
 ---
 
@@ -37,3 +43,4 @@ Authored by Scott Bellware on Wed Jul 1 2026 at 6 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

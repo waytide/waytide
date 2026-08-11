@@ -18,10 +18,15 @@ whose identity, not content, is what the test turns on). Consistent with the
 **How to apply:** Write `control_file = "some file"` (and `"some other
 file"`, etc.) for placeholder string values. Reserve specific string content
 only when the test actually depends on it. Non-string placeholder values (e.g. a
-number) are not covered — they have no "some" form. Related: the `control_`
-test-variable prefix rule and the controls-not-fixtures conventions.
+number) are not covered — they have no "some" form.
+
+Related:
+
+- the `control_` test-variable prefix rule
+- the controls-not-fixtures conventions
 
 ---
 
 Authored by Scott Bellware on Mon Jun 29 2026 at 2 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -42,11 +42,11 @@ scale a person actually works at for the cost of a few characters.
 a working-state artifact, a log entry, or any other file — write the seconds. When
 specifying a new datetime format, specify it to seconds. Leave date-only conventions
 as they are, and do not revise a datetime already recorded at a coarser resolution.
-Related: the record-rule-authorship-in-a-footer rule (the human-readable local
-datetime this corrects), the file-names-use-iso8601-utc-prefix rule (the
-machine-sortable UTC filename prefix), and the
-working-state-artifacts-carry-a-provenance-footer rule (the artifacts that carry a
-footer).
+Related:
+
+- the record-rule-authorship-in-a-footer rule — the human-readable local datetime this corrects
+- the file-names-use-iso8601-utc-prefix rule — the machine-sortable UTC filename prefix
+- the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
 
 ---
 
@@ -54,3 +54,4 @@ Authored by Scott Bellware on Sun Jul 26 2026 at 11:53:08 AM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 12:41:09 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

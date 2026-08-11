@@ -316,13 +316,16 @@ either. In a rule that merely mentions one of the artifacts, write **the directi
 **the sequencing artifact**, keeping the trailing class noun. Do not shorten either to a bare
 `direction` or `sequencing`, which would be a third planning vocabulary. Write **an
 intuitive-mode project**, never **an intuitive project**. Do not switch a project's mode after
-the start. Related: the design-convention and
-plans-convention (the directories, each named in its own), the design-document-format and
-plan-document-format rules (the shapes, identical in every mode), the rules-convention (where a
-local rule lives and what it looks like), the file-names rule (the datetime prefix), the
-`language` package's language-is-precise-here rule and this package's rules-establish-a-mindset rule
-(why a vocabulary change is a real change), and the present-every-prompt-through-askuserquestion
-rule (why the choice is put through the selection interface).
+the start.
+
+Related:
+
+- the design-convention and plans-convention — the directories, each named in its own
+- the design-document-format and plan-document-format rules — the shapes, identical in every mode
+- the rules-convention — where a local rule lives and what it looks like
+- the file-names rule — the datetime prefix
+- the `language` package's language-is-precise-here rule and this package's rules-establish-a-mindset rule — why a vocabulary change is a real change
+- the present-every-prompt-through-askuserquestion rule — why the choice is put through the selection interface
 
 ---
 
@@ -344,3 +347,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

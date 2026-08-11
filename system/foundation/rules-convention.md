@@ -16,7 +16,14 @@ The project's **binding** rules — naming conventions, terminology, plan-writin
 
 **Why:** the rules are the project's durable, in-repo conventions, committed alongside the code and read fresh each session rather than recalled — so they stay authoritative and current. One rule per file keeps each convention individually readable, referenceable, and revisable. Splitting the installed packages (`waytide/system/`) from the project's own rules (`waytide/local/rules/`) keeps installed content distinct from the project's own work, so refreshing a package never touches a local rule.
 
-**How to apply:** read the rule files under `waytide/system/` and `waytide/local/rules/` at session start, along with `waytide/local/vocabulary.md` where the project has one, and hold to them. When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md` rather than as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule). Related: the file-names rule, the vocabulary-convention (the project's own vocabulary and where it sits), the rules-establish-a-mindset rule, and the decision-log rule.
+**How to apply:** read the rule files under `waytide/system/` and `waytide/local/rules/` at session start, along with `waytide/local/vocabulary.md` where the project has one, and hold to them. When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md` rather than as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
+
+Related:
+
+- the file-names rule
+- the vocabulary-convention — the project's own vocabulary and where it sits
+- the rules-establish-a-mindset rule
+- the decision-log rule
 
 ---
 
@@ -32,3 +39,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
 Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

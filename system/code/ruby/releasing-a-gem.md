@@ -44,11 +44,13 @@ the ordinary one: the general part is substantial on its own, so separating it c
 
 **How to apply:** record a gem's version in the gemspec's `s.version` and nowhere else. Choose
 the next version by the `versioning` package's rules, put through the selection interface.
-Build with `gem build <name>.gemspec` and publish with `gem push <name>-<version>.gem`. Related:
-the `versioning` package's version-scheme and the-next-version-is-chosen-by-the-engineer rules
-(what the version means and who chooses it), the `git` subject-first-commit-messages rule (the
-commit that records the change), and the running-the-test-suite rule in this package (the
-suite that is verified before the release commit).
+Build with `gem build <name>.gemspec` and publish with `gem push <name>-<version>.gem`.
+
+Related:
+
+- the `versioning` package's version-scheme and the-next-version-is-chosen-by-the-engineer rules — what the version means and who chooses it
+- the `git` subject-first-commit-messages rule — the commit that records the change
+- the running-the-test-suite rule in this package — the suite that is verified before the release commit
 
 ---
 
@@ -56,3 +58,4 @@ Authored by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 10:04:18 AM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

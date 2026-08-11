@@ -35,14 +35,18 @@ so separating it costs nothing and leaves each part where it belongs.
 
 **How to apply:** run a Ruby project's suite with `ruby test/automated.rb` and treat
 `0 failed, 0 aborted` as the verified result. Keep the tree script at `test/automated/tree.rb`,
-excluded from the default run, parsing the run's output rather than the source. Related: the
-`git` run-suite-before-commit rule (when the run happens relative to the commit decision), the
-`testing` test-tree-command rule (what the tree is and where it is derived from), the `testing`
-test-report-format rule and the `foundation` status-report-format rule (the shallower two-level
-tree), and the lib-report-format rule in this package (the sibling command rule).
+excluded from the default run, parsing the run's output rather than the source.
+
+Related:
+
+- the `git` run-suite-before-commit rule — when the run happens relative to the commit decision
+- the `testing` test-tree-command rule — what the tree is and where it is derived from
+- the `testing` test-report-format rule and the `foundation` status-report-format rule — the shallower two-level tree
+- the lib-report-format rule in this package — the sibling command rule
 
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 10:47:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

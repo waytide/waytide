@@ -8,7 +8,13 @@ Rule folders — `terminology/`, `methodology/`, `git/`, `test-writing/`, `code/
 
 **Why:** Read as local conventions, these rules look like an arbitrary list of do-this-not-that. Read for purpose, they are one stance expressed through many levers. Naming the purpose keeps them coherent, prevents contradictory rules from accreting in other folders, and gives the right test for judging a rule: a rule that establishes a stance is judged by the mindset it produces, not by surface conformance. A rule that is technically obeyed while the intended stance is absent has failed.
 
-**How to apply:** When writing or evaluating a rule, ask first *"what stance does this establish?"*, not only *"what does it standardize?"*. File it by the surface it acts on (its folder), but state its purpose. The mindset — in the rule's body, and cross-reference sibling rules that install the same stance through a different lever even when they live in other folders. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat folder membership as the whole of a rule's meaning. Related: the subject-first commit-message rule in the `git` package, the `language` package's rules as a set, and its `name-literally-not-by-analogy` and `no-slang` rules in particular.
+**How to apply:** When writing or evaluating a rule, ask first *"what stance does this establish?"*, not only *"what does it standardize?"*. File it by the surface it acts on (its folder), but state its purpose. The mindset — in the rule's body, and cross-reference sibling rules that install the same stance through a different lever even when they live in other folders. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat folder membership as the whole of a rule's meaning.
+
+Related:
+
+- the subject-first commit-message rule in the `git` package
+- the `language` package's rules as a set
+- its `name-literally-not-by-analogy` and `no-slang` rules in particular
 
 ---
 
@@ -18,3 +24,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

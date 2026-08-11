@@ -63,10 +63,14 @@ is the more expensive of the two to get wrong.
 branch topology, and the working location chosen at the start, and no state line — absence
 is the in-flight state. Add the line when the record reaches one of the four words, update
 it as the state changes after that, record each confirmation the lifecycle requires, and name
-the feature's loop record. Keep the record after the feature concludes. Related: the
-feature-lifecycle rule (the lifecycle), the experiments-convention (the
-capability this mirrors, and where it deliberately differs), the design-by-efferent
-loop-records rule (the design record for the same feature), and the decision-log rule.
+the feature's loop record. Keep the record after the feature concludes.
+
+Related:
+
+- the feature-lifecycle rule — the lifecycle
+- the experiments-convention — the capability this mirrors, and where it deliberately differs
+- the design-by-efferent loop-records rule — the design record for the same feature
+- the decision-log rule
 
 ---
 
@@ -86,3 +90,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 2:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

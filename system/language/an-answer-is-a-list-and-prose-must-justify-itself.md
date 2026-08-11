@@ -112,11 +112,13 @@ other, and leave it unordered where they do not. Write prose only where the answ
 reach for it because an explanation was requested or because the reasoning is connected — the first
 is not a justification and the second is served by numbering. Where the answer left something out,
 end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the
-answer says all it has. Related: the communicate-plainly-name-the-thing rule (which governs the
-words inside the list and reaches conversation the same way this does), the
-language-is-precise-here premise, and `foundation`'s
-present-every-prompt-through-askuserquestion rule (the selection interface, which is where a
-**question** goes — this rule governs an **answer**, and the two do not overlap).
+answer says all it has.
+
+Related:
+
+- the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does
+- the language-is-precise-here premise
+- `foundation`'s present-every-prompt-through-askuserquestion rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
 
 ---
 
@@ -127,3 +129,4 @@ Changed by Scott Bellware on Fri Aug 7 2026 at 1:28:11 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT

@@ -41,10 +41,14 @@ carried, unambiguously, by the filename.
 `Mon Jan 1 2026 18:06` in the author's local time, at the moment the record is written —
 `date "+%a %b %-d %Y %H:%M"`. Do not add a timezone abbreviation, AM/PM, or seconds, and do
 not write a date range. Keep the filename's UTC prefix and the footer's local
-`at <hour> <zone>` form as they are. Related: the file-names rule (the UTC filename
-prefix), record-rule-authorship-in-a-footer (the footer's format), the
-work-sessions-convention (the work session record's dated title), and
-working-state-artifacts-carry-a-provenance-footer.
+`at <hour> <zone>` form as they are.
+
+Related:
+
+- the file-names rule — the UTC filename prefix
+- record-rule-authorship-in-a-footer — the footer's format
+- the work-sessions-convention — the work session record's dated title
+- working-state-artifacts-carry-a-provenance-footer
 
 ---
 
@@ -54,3 +58,4 @@ Changed by Scott Bellware on Thu Jul 30 2026 at 10:27:32 AM PT
 Changed by Scott Bellware on Mon Aug 3 2026 at 2:41:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
