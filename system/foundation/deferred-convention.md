@@ -1,6 +1,6 @@
 # `waytide/local/deferred/` — postponed design changes, a queue not a record
 
-`waytide/local/deferred/` holds design changes that have been identified but intentionally **postponed until the current task is finished** — work that shouldn't interrupt the task in flight but must not be lost.
+Some work should not interrupt the task in progress, and must not be lost. `waytide/local/deferred/` holds it, **postponed until the current task is finished**.
 
 - **When to use:** a design or convention change surfaces mid-task that is real and worth doing, but acting on it now would derail the current work. Register it here and keep going.
 - **Format:** the same frontmatter-free markdown as rules and observations — a `# <title>` stating the change, then prose. Include a `**Waits for:**` line naming what must finish before the item is actionable, plus short `**Why:**` and `**How to apply:**` lines. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
@@ -12,7 +12,7 @@
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 - **Resolution:** when the task the item waits for is done, act on the item, then **delete the file** — the change itself is put into code or rules, and an `waytide/local/log/` entry records that it was carried out. Deferred items are a queue, not a permanent record.
 - **An item's own content is point-in-time and is not maintained.** What an item says was true when
-  it was written. It names the work that was in flight, the rules as they stood, and the artifacts
+  it was written. It names the work that was in progress, the rules as they stood, and the artifacts
   that existed. **A reference inside an item that time has overtaken is not a defect and is not
   chased.** An item that waits for an experiment does not stop being correct when that experiment is
   superseded, because it records what it was waiting for. This is the same standing every other
@@ -26,7 +26,7 @@
 - **Recording one:** add the file. A matching `waytide/local/log/` entry is optional for the deferral itself but required when the item is resolved.
 - **The queue is printed at the start of every session**, as a list of rows, immediately after the rules are read — see the print-the-deferred-queue-after-the-rule-read rule. That is what keeps a parked item from being lost by being unread. This convention's job is only that the item is written down and eventually resolved.
 
-**Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately. A parked queue keeps it without derailing the task in flight. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
+**Why:** a real improvement that surfaces mid-task is lost if not captured and disruptive if acted on immediately. A parked queue keeps it without derailing the task in progress. Deleting on resolution keeps the queue honest — what remains is exactly the outstanding work, not a history.
 
 **How to apply:** when a worthwhile change surfaces mid-task, register it here with a `**Waits for:**` line. Continue the task. Leave an item's own content as written — a reference in it that time has overtaken is not a defect. When the wait ends, carry it out. Search for what cites the item, and correct the live artifacts among them. Then delete the file, and log that it was done. Leave historical records as written.
 
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:42:20 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

@@ -45,9 +45,11 @@ without their having to infer it from another rule's aside.
 **How to apply:** when a rule you are writing names another package's rule, ask one question. Could
 your rule still be applied with that package absent? If it could, cite it plainly and declare
 nothing. If it could not, declare the dependency in the package README's `Includes` line and
-its dependency graph. Add it to `install-dependencies.sh`. Do not declare a dependency
-because a citation is frequent, because the packages are usually installed together, or
-because the rule reads better with its sibling present.
+its dependency graph. Add it to `install-dependencies.sh`. Do not declare a dependency for any of these reasons:
+
+- a citation is frequent
+- the packages are usually installed together
+- the rule reads better with its sibling present
 
 Related:
 
@@ -66,3 +68,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

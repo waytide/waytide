@@ -1,6 +1,6 @@
 # Drop an outcome whose test is green-on-arrival — it drives no design
 
-In DBE, a test earns its place by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. An outcome whose test passes the moment it is written drives nothing. That is "green-on-arrival". The behavior already exists, so the test only *confirms* an affordance rather than *designing* one. Drop it.
+In DBE, a test justifies itself by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. An outcome whose test passes the moment it is written drives nothing. That is "green-on-arrival". The behavior already exists, so the test only *confirms* an affordance rather than *designing* one. Drop it.
 
 **The tell is a no-op implementation hinge.** In the hinge cycle, the implementation hinge may degenerate to "nothing to write — the existing code already satisfies this". The outcome is then not a genuine design step. That degeneration is the signal to drop the outcome, not to add a confirming test.
 
@@ -23,3 +23,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

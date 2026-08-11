@@ -30,9 +30,7 @@ The implementation hinge is degenerate in that case. See the
 the-design-of-a-test-waits-at-the-hinges-including-coverage rule. So the second candidate is offered
 only where it is actually available, rather than being offered and then refused.
 
-**Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by
-rejecting red-green-refactor **as choreography** — as ritual performed because the form calls
-for it, with a pre-implementation failure treated as a checkpoint that teaches nothing. What
+**Choosing the cycle is not performing choreography.** The dbe-as-design-tool rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing. What
 that rejects is the **unchosen** case. A engineer selecting the cycle at a gate, for this unit,
 has made a design judgment, which is the opposite of ceremony. The loop stopped, a person
 weighed two real alternatives, and the choice was theirs. The rule and this one do not conflict,
@@ -86,3 +84,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

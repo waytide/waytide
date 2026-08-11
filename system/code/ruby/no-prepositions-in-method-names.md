@@ -4,7 +4,7 @@ Do not put a preposition in a method name (`import_from`, `define_in`, `set_to`,
 
 **The rubric argument (why "some" is not allowed):** a preposition refers to the argument, and a method's arguments are intrinsic to it. So any rationale that licenses a preposition in *one* method name licenses it in *every* method name that takes an argument — i.e. nearly all of them. A consistent rubric therefore has two stable points: prepositions in *all* names, or in *none*. "Some" is incoherent. We take *none*.
 
-**Why:** Reaching for the preposition is a **bias toward the mean** — the average Ruby idiom — not a choice that earns its keep. The literal action is the whole meaning of the name. The preposition is ceremony.
+**Why:** Reaching for the preposition is a **bias toward the mean** — the average Ruby idiom — not a choice that states anything. The literal action is the whole meaning of the name. The preposition is ceremony.
 
 **Scope — method names only.** This governs **method/initializer names**, not prose or terminology. Prose deliberately *does* use prepositional phrasing where it carries meaning — e.g. inputs are described as **"sent to"** a method (the "sent to" entry in the Word Substitutions rule, in `language`). That is a description of a relationship, not an identifier. The preposition is load-bearing there and absent here. (The relation verb is the bare **"mediates"** — see the no-slang rule in `language` — so it is not an example of load-bearing prepositional prose.)
 
@@ -21,3 +21,4 @@ Authored by Scott Bellware on Sat Jun 27 2026 at 11 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

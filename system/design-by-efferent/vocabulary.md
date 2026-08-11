@@ -82,7 +82,7 @@ The two marks of a hinge — **subtle** and **load-bearing** — are independent
 - It **spreads** — everything built on it inherits the mistake.
 - It **sticks** — once things rest on it, undoing it means undoing them too.
 
-Together these give the **asymmetry that justifies the gate**: a load-bearing choice is **cheap to fix now** (before anything rests on it) and **costly to fix later** (after). The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
+Together these give the **asymmetry that justifies the gate**. A load-bearing choice is **cheap to fix now**, before anything rests on it, and **costly to fix later**. The human's judgment has the most leverage *before* the weight is added — which is exactly why the loop waits there and not afterward.
 
 **How to recognize it:** ask what happens if this choice is wrong. *How far does the damage spread, and how expensive is it to reverse once we have built on it?* Wide spread + expensive reversal → load-bearing. Local + cheap to change → not.
 
@@ -180,3 +180,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

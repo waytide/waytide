@@ -28,9 +28,7 @@ Three reasons, and each would be sufficient on its own:
 ## What it does not reach
 
 **A project named because a decision was about it.** The test is *why* the name is there, not
-whether the named project happens to consume this one. A project that is part of this project at
-large, or a reference project the method is shown through, is named because something was
-decided about it. That is ordinary, and removing such a name would cost the record its subject.
+whether the named project happens to consume this one. A project that is part of this project at large may be named. So may a reference project the method is shown through. Each is named because something was decided about it. That is ordinary, and removing such a name would cost the record its subject.
 Waytide's own two are `website`, which is part of Waytide at large, and `constant`, the worked
 example the method is shown through. Neither is named as a consumer.
 
@@ -46,7 +44,7 @@ refresh over them. What it reads is **per-machine configuration outside the repo
 `~/.config/`. So the constraint holds without depending on a `.gitignore` staying correct. And
 the list is what it actually is: one engineer's machine, not a fact about the project.
 
-The tool itself is committed and names no consumer. It reads the configuration. That split is
+The tool itself is committed and names no consumer. It reads the configuration. That separation is
 what lets the tooling be shared while the list stays local.
 
 **Why:** the pull toward a consumer list is real. It is the obvious way to answer *who needs
@@ -59,8 +57,7 @@ that has an available substitute, rather than something that has none.
 
 **How to apply:** do not name a downstream consumer in the project's files. Do not add a list
 of them for convenience. Where a tool must reach them, have it read a per-machine configuration
-file under `~/.config/`. Commit the tool without the list. Where a name is there because a
-decision was about that project, leave it — the rule is about naming a project *as a consumer*.
+file under `~/.config/`. Commit the tool without the list. A decision may have been about that project, and its name is there for that. Leave it. The rule is about naming a project *as a consumer*.
 Leave historical records as written. Treat a name already in one as the disclosure rule's
 concern rather than this one's.
 
@@ -79,3 +76,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

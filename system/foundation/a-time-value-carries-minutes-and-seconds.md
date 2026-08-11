@@ -21,9 +21,7 @@ adds none. It applies when a time is written.
 
 **A record's title is the one exception.** A dated record title is written
 `Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the record-title-date-format
-rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate. A title occurs
-**once** per file, so that collision cannot arise there — and the seconds-precise UTC
-instant for the same moment is already carried by the record's filename. The exception is
+rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate. The record's filename already carries the seconds-precise UTC instant for the same moment. A title occurs **once** per file, so that collision cannot arise there. The exception is
 bounded to titles and reaches no other written time.
 
 **A recorded datetime is never revised to a resolution it never had.** The minutes
@@ -57,3 +55,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:42:20 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

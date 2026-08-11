@@ -16,7 +16,7 @@ def self.build(retries=nil, verify: nil)
 end
 ```
 
-**Why:** It is **more robust** — an inline default only applies when the argument is *omitted*, so an explicitly-passed `nil` slips past it (`build(nil)` would leave `retries` as `nil` and then fail). The `||=` form coerces an explicit `nil` to the default too, so the omitted and explicit-`nil` calls behave the same. It also keeps defaulting **uniform and visible in the body**. Every default is normalized in one place the reader scans, rather than scattered into the parameter list. This is the convention `Controls::HTTP::Response.example` already follows (`status: nil` / `location: nil`, then `status ||= 201`, `location ||= "some location"`). The rule makes it explicit and project-wide.
+**Why:** It is **more robust**. An inline default only applies when the argument is *omitted*, so an explicitly-passed `nil` slips past it. `build(nil)` leaves `retries` as `nil`, which then fails. The `||=` form coerces an explicit `nil` to the default too, so the omitted and explicit-`nil` calls behave the same. It also keeps defaulting **uniform and visible in the body**. Every default is normalized in one place the reader scans, rather than scattered into the parameter list. This is the convention `Controls::HTTP::Response.example` already follows (`status: nil` / `location: nil`, then `status ||= 201`, `location ||= "some location"`). The rule makes it explicit and project-wide.
 
 **How to apply:** Give every optional parameter a `nil` default in the signature, positional or keyword. Assign its real default with `||=` at the top of the body. Note `flag ||= false` for a boolean default normalizes only `nil → false` (a `true` passes through). That is intended and keeps the body's defaulting uniform even when the default is falsy. Keep the assignments free of inlined method calls per the no-inline-method-call-arguments rule (constants and literals as the default are fine). Related: the no-inline-method-call-arguments rule.
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

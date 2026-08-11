@@ -94,9 +94,7 @@ choose without a stated order. The cost is not hypothetical. `actuation` is defi
 happens to carry. Naming the order once removes that from every future case.
 
 **How to apply:** put a term in the vocabulary of the package whose domain it belongs to. Put a
-domain-less term or substitution in `language`. Put a term a **project** settles for itself in
-`waytide/local/vocabulary.md`, with no datetime prefix, and write no such file until the project
-has one to write. Give a package a vocabulary only when its domain
+domain-less term or substitution in `language`. A **project** settles a term for itself. Put it in `waytide/local/vocabulary.md`, with no datetime prefix. Write no such file until there is a term to write. Give a package a vocabulary only when its domain
 has specialized words. When a word appears in two vocabularies, the more specific one decides. The
 entry says whether it narrows the general term or replaces it. Keep substitutions and
 discontinuations under separate headings.
@@ -116,3 +114,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

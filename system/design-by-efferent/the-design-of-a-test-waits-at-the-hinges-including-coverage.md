@@ -1,9 +1,6 @@
 # The design of a *test* waits at the hinges — they apply to coverage too, with the implementation hinge degenerate
 
-The five hinges (actuation, observation, controls, implementation, naming) are where
-**design decisions** wait, and *designing a test* is itself a design act — independent of
-whether behavior is being designed (DBE) or existing behavior is being covered
-(testing). So the hinges are in play when writing coverage, not only when designing.
+The five hinges are actuation, observation, controls, implementation, and naming. They are where **design decisions** wait, and *designing a test* is itself a design act. That holds whether behavior is being designed (DBE) or existing behavior is being covered (testing). So the hinges are in play when writing coverage, not only when designing.
 
 When adding coverage for behavior that already exists, all five are in play:
 
@@ -20,7 +17,7 @@ When adding coverage for behavior that already exists, all five are in play:
 
 **Why:** the hinges are the mechanism for handing each design decision to the human
 at its gate. A coverage test has genuine design decisions — especially its controls
-and observations — so it earns the same wait. What separates coverage from design is
+and observations — so it takes the same wait. What separates coverage from design is
 **not** the absence of hinges. It is that no behavior is being designed and no red
 is driven. See the companion rule: TDD designs, coverage prevents, and an
 implementation is never broken to introduce a test.
@@ -45,3 +42,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

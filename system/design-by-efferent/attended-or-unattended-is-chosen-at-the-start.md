@@ -14,8 +14,7 @@ implementation, the actuation designed from the use site, the generation steered
 **solubility**. Every hinge is still determined. What changes is who decides it. The method is
 untouched. Only the stopping is.
 
-**The choice is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero. Unattended is **big-batch**: no attention is spent until the end, and a wrong turn is
-found with everything built on top of it, so rework is the price. Which is cheaper depends on
+**The choice is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero. Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the price. Which is cheaper depends on
 how load-bearing the work is, and on how likely the first pass is to be right. That is a judgment
 about *this* piece of work.
 
@@ -84,8 +83,7 @@ an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
 **Write the plan in Steve.** That is Simplified Technical English Vector: the STE dictionary and
 the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon.
-One idea in each item. A plan written in the raw standard could not name a `hinge`, an `actuation`,
-a `cradle`, or `solubility`, because the STE dictionary does not approve them. See the `language`
+One idea in each item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language`
 package's ste rules.
 
 **This is not a plan document.** `foundation`'s plans-convention governs a plan in
@@ -100,9 +98,7 @@ method exists to discontinue, arriving by a different route. Making the cadence 
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
 in the two modes is what stops the choice from being a way out of the method. Unattended work is
 still designed from the efferent side, still cradled by a test written first, and still judged
-by solubility. And recording the mode honestly is what keeps the loop record worth reading — a
-record that showed options put to a engineer who was not there would be worse than no record,
-because it would be believed.
+by solubility. A record that showed options put to an engineer who was not there would be worse than no record. It would be believed, and recording the mode honestly is what prevents that.
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended**
 through the selection UI. Ask it alongside the working location. Attended is the
@@ -136,3 +132,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:35:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

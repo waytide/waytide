@@ -2,13 +2,9 @@
 
 Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?", or otherwise put the test-first decision to the human. There is nothing to deliberate at that point. The answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
 
-**What this does not cover: the human's level of participation.** Test-first is the method's **substance** —
-that design is driven from the efferent side, the test written before the implementation — and
-it is never put to the engineer, because the answer is always yes. **Attended or unattended**
+**What this does not cover: the human's level of participation.** Test-first is the method's **substance**. Design is driven from the efferent side, and the test is written before the implementation. It is never put to the engineer. The answer is always yes. **Attended or unattended**
 is a different question: it asks how often the loop **stops**, not what it builds. DBE is in
-effect either way, so nothing about the method is being confirmed or declined. What is chosen
-is a batch size, and the trade has two real sides — small batches spend attention continuously
-and keep rework near zero, big batches spend none until the end and pay in rework. A question
+effect either way, so nothing about the method is being confirmed or declined. What is chosen is a batch size. The trade has two real sides. Small batches spend attention continuously and keep rework near zero, and big batches spend none until the end and pay in rework. A question
 with a genuinely situational answer is a decision rather than a settled default, so this rule's
 reasoning does not reach it. See the attended-or-unattended-is-chosen-at-the-start rule.
 
@@ -34,3 +30,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

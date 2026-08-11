@@ -4,7 +4,7 @@ The `waytide/` [artifact system](https://github.com/waytide/waytide) that every 
 
 All agent artifacts for a project live under a single top-level `waytide/` folder. So
 they are committed to git alongside the code, and read at the start of each session
-rather than recalled. It holds two directories, splitting what came from outside from
+rather than recalled. It holds two directories, separating what came from outside from
 what is the project's own. **`waytide/system/`** holds the installed packages, never edited
 in place. **`waytide/local/`** holds everything the project writes. Foundation defines
 the four core artifact directories and how to work with them. Each has its own rule in
@@ -202,3 +202,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

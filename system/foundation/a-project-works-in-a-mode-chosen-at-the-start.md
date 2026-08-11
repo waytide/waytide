@@ -154,7 +154,7 @@ rule that says only *write the file* is followed exactly as far as it is written
   which is the trail every other decision in the project leaves.
 - **The commit** carries the two. An uncommitted mode rule is a mode that exists on one machine. The project's own convention is invisible to everyone who clones it, and to every check that reads it. That is the same failure an uncommitted executable bit produces on a script.
 
-**This lands at the least convenient moment, which is why it is stated.** A mode is chosen at the start, when a project is new and often has nothing else in it. The mode rule and its log entry are frequently the project's first substantive commit rather than an addition to work already in flight.
+**This lands at the least convenient moment, which is why it is stated.** A mode is chosen at the start, when a project is new and often has nothing else in it. The mode rule and its log entry are frequently the project's first substantive commit rather than an addition to work already in progress.
 
 - **A rule is written whichever mode is chosen.** Formal is the default, not the silent case.
 - **An absent mode rule means the question has never been asked** — not that the project is
@@ -325,3 +325,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:13:41 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

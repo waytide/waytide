@@ -128,7 +128,7 @@ experiment's.
   reporting features that have not concluded.
 
 **Why:** a feature that starts and stops without a declared state leaves the project unable
-to say what is in flight and what concluded. That is the same gap the experiment lifecycle
+to say what is in progress and what concluded. That is the same gap the experiment lifecycle
 closed, in the far more common case. Mirroring the experiment's structure gives feature work a
 beginning, a recorded place, and an end without inventing a second vocabulary for the same
 facts. The four departures are what keep it honest. An experiment's forecast, verdict
@@ -182,3 +182,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

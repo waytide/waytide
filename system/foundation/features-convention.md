@@ -22,7 +22,7 @@ persisted, dated artifact, kept after the feature concludes.
   record reaches one of those words**, and updated as the state changes after that — not
   when the feature is started, because none of the four describes a record that has just
   been created. That line is the **only** authoritative statement of
-  the state. **Absence is the in-flight state**, so a feature still being built carries no
+  the state. **Absence is the in-progress state**, so a feature still being built carries no
   line at all — do not add one to say so, and do not invent a word for it. That the state
   is legible at a glance and readable mechanically is what the line is for. The session-start notice reads this line to report features
   that have not concluded (see the announce-waytide-at-session-start rule).
@@ -57,7 +57,7 @@ persisted, dated artifact, kept after the feature concludes.
   rule.
 
 **Why:** a feature currently starts and stops without a declared state, which makes it
-impossible to say what is in flight and what concluded. Recording the lifecycle in one
+impossible to say what is in progress and what concluded. Recording the lifecycle in one
 file per feature makes each legible. Keeping the record after the feature concludes
 preserves how it was built, rather than only what it produced. Keeping it separate from the
 loop record costs a second file per feature, and buys a correct package dependency. That
@@ -65,7 +65,7 @@ is the more expensive of the two to get wrong.
 
 **How to apply:** when a feature is started, add a record here. It states its intent, its
 branch topology, and the working location chosen at the start. It carries no state line, since
-absence is the in-flight state. Add the line when the record reaches one of the four words. Update
+absence is the in-progress state. Add the line when the record reaches one of the four words. Update
 it as the state changes after that. Record each confirmation the lifecycle requires, and name
 the feature's loop record. Keep the record after the feature concludes.
 
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT

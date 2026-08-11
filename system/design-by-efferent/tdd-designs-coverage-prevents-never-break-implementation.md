@@ -25,10 +25,7 @@ muddies the distinction between designing with tests and preventing regression w
 There is no red to manufacture when covering behavior that already exists.
 
 **Why:** TDD's red→green belongs to design. Force-fitting it onto a
-coverage / final-inspection process is a category error. Keeping the two distinct
-keeps design honest (tests as design proofs) and coverage honest (tests as regression
-prevention), and stops shipped implementations from being deformed to satisfy a
-misplaced ritual.
+coverage / final-inspection process is a category error. Keeping the two distinct keeps design honest and coverage honest. Design tests are proofs, and coverage tests are regression prevention. It also stops shipped implementations from being deformed to satisfy a misplaced ritual.
 
 **How to apply:** when the behavior already exists and you are adding coverage,
 write the test and run it. Accept that it is verified, and leave the implementation untouched.
@@ -52,3 +49,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
