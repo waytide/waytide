@@ -53,8 +53,8 @@ Committed before the survey is run. Each item carries the agent's confidence.
 ### The survey — 2026-08-10
 
 > **The counts in this section are wrong, and they are left as they were claimed.** The
-> corrected figures and the three defects that produced them are in *The measurement was wrong
-> three times* below. A reader should take the classes from here and the numbers from there.
+> corrected figures and the four defects that produced them are in *The measurement was wrong
+> four times* below. A reader should take the classes from here and the numbers from there.
 
 **107 rule files under `system/`, 3,184 sentences.** Code fences, table rows, and provenance
 footers are excluded from the counts. A sentence is a run ending in `.`, `!`, or `?` and holding
@@ -229,10 +229,10 @@ statements that no longer argues.
 **Neither is decided here.** The engineer has not ruled on either, and this section records what
 was proposed rather than what was settled.
 
-## The measurement was wrong three times — 2026-08-10
+## The measurement was wrong four times — 2026-08-10
 
 **Each defect was found only when a sample of the counted sentences was read**, and each
-correction lowered the count. The order matters, because none of the three was visible from the
+correction lowered the count. The order matters, because none of the four was visible from the
 totals.
 
 1. **Provenance footers and headings were counted as prose.** A footer of fourteen `Changed by`
@@ -244,7 +244,12 @@ totals.
 3. **A sentence ending `.**` was never split at all.** Waytide's prose leads a great many
    paragraphs with a bold claim ending in `.**`, and the splitter needed `[.!?]` followed by
    whitespace. Every such pair counted as one sentence of both their lengths. This was the
-   largest of the three.
+   largest of the four.
+4. **A closing quotation mark after the terminal period blocked the split.** The splitter
+   allowed `*`, a backtick, and `)` after `[.!?]`, and not `"`. A sentence that ends inside a
+   quotation ran into the next one. This was found last, with sixty-one sentences left, when two
+   of them were read and each was already three sentences on the page.
+
 
 **The corrected figures, against what the survey claimed:**
 
@@ -255,8 +260,15 @@ totals.
 | Over 40 words | 359 | 237 |
 | Semicolons | 373 | 401 — the claim excluded table cells |
 
+The fourth defect was found after the table above was written, and it lowers the over-25 figure
+again by an amount not counted, since by then most of the corpus had been composed.
+
+**The finding holds for the fourth as it did for the first three.** Each correction was made from
+the last failure, and each time the next defect was of a kind the correction did not cover. This
+is the same shape as the transformations below.
+
 **The finding this produces, and it is the experiment's most transferable one.** A count of a
-corpus is not evidence until a sample of what it counted has been read. Three separate defects
+corpus is not evidence until a sample of what it counted has been read. Four separate defects
 survived because the totals looked plausible, and each was exposed the moment a sample was put on
 the page. The survey was run, recorded, and acted on before any of them was found.
 
@@ -302,6 +314,30 @@ them, which is the assurance that had just failed.
 sampled. That is not a guarantee — the reading is still the only check — but it fails one sentence
 at a time instead of eight hundred at once.
 
+## The sentence-length conformance is done, except what is reserved for the engineer — 2026-08-10
+
+**Every over-limit sentence that is mine to compose is now within its limit.** The work ran from
+615 over-limit sentences to none of that kind. Each was read, composed, and read again, in groups
+of one to a dozen files, with a commit per group naming the count.
+
+**Forty-three remain, and they are the engineer's to rule on.** Two classes were reserved at the
+start of the unattended run, on the grounds that composing them changes the argument rather than
+the sentence:
+
+- a sentence that turns on a subordinate clause — *because*, *unless*, *until*, *so that*,
+  *whereas*, *provided that*, *even though*, *on the grounds* — where breaking the sentence
+  breaks the reasoning it carries
+- a sentence holding two or more parentheticals, where the choice is which parenthetical becomes
+  a sentence of its own and which is cut
+
+**Two limits were applied, not one.** STE Rule 6.3 puts descriptive prose at 25 words and Rule 5.1
+puts procedural prose at 20. A sentence counts as procedural where it sits under a **How to
+apply** heading, or opens with an imperative verb.
+
+**No transformation was run.** The rewriting was a literal string replacement per sentence, from a
+composed replacement, and each replacement was read in the diff before the commit. That is what
+the previous section's finding required.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
@@ -309,3 +345,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 2:27:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 5:12:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:09 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:01:18 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 11:47:12 PM PT
