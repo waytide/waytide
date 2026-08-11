@@ -517,6 +517,105 @@ the precision of these figures. 78 recorded against thousands used is not a reco
 exists, is correctly described in every vocabulary preamble, and is applied to the terms the project
 coined rather than to the vocabulary it works in.
 
+## The reservation candidates — 2026-08-11
+
+**This table is named *the reservation candidates*.** It lists every word the corpus works in that
+is a candidate for a Waytide vocabulary entry. Each was counted across its inflections and looked up
+in the dictionary one at a time. Refer to it by that name.
+
+### Absent from the dictionary — admissible only as a declared technical noun
+
+STE Rule 1.1 permits an absent word only as a technical noun or a technical verb, and Rule 1.8
+requires it to be approved in the subject field. A `vocabulary.md` is that approval. The category is
+19, computer science, information and communication technology, and the assignment is the project's
+to make rather than the dictionary's.
+
+| Word | Uses | Declared |
+|---|---|---|
+| `rule` | 446 | — |
+| `project` | 230 | — |
+| `package` | 209 | — |
+| `line` | 158 | — |
+| `word` | 145 | — |
+| `engineer` | 134 | **declared** |
+| `term` | 97 | — |
+| `commit` | 92 | — |
+| `directory` | 87 | — |
+| `outcome` | 86 | — |
+| `session` | 80 | — |
+| `context` | 72 | — |
+| `artifact` | 72 | — |
+| `repository` | 70 | — |
+| `plan` | 66 | — |
+| `vocabulary` | 59 | — |
+| `notice` | 59 | — |
+| `experiment` | 59 | — |
+| `default` | 58 | — |
+| `path` | 57 | — |
+| `gate` | 57 | **declared** |
+| `convention` | 57 | — |
+| `script` | 55 | — |
+| `prose` | 51 | — |
+| `command` | 50 | — |
+| `segment` | 48 | — |
+| `behavior` | 42 | — |
+| `suite` | 40 | — |
+| `class` | 34 | — |
+| `version` | 32 | — |
+| `assertion` | 26 | **declared** |
+| `section` | 25 | — |
+| `argument` | 21 | — |
+| `harness` | 18 | — |
+| `parameter` | 17 | — |
+| `format` | 17 | — |
+| `worktree` | 15 | — |
+| `merge` | 15 | — |
+| `mixin` | 9 | — |
+| `constructor` | 4 | — |
+| `module` | 2 | — |
+
+### Not approved, with a stated alternative — reserved deliberately, or rewritten
+
+Here the dictionary names a replacement. Keeping the word is a divergence and has to say so, the
+way `conform` and `convey` already do in the `language` vocabulary.
+
+| Word | Uses | The dictionary says |
+|---|---|---|
+| `file` | 237 | `file (v)` → **REMOVE (v)**. The noun is unlisted, so the noun is absent |
+| `design` | 143 | `design (v)` → **HAVE (v)**. Declared already, and the note is missing |
+| `run` | 114 | `run (v)` → **OPERATE (v)** |
+| `state` | 99 | `state (n)` → **CONDITION (n)**, and `state (v)` → **TELL (v)** |
+| `feature` | 96 | `feature (v)` → **HAVE (v)**. The noun is unlisted |
+| `implementation` | 88 | `implementation (n)` → **DO (v)** |
+| `option` | 76 | `option (n)` → **ALTERNATIVE (n)** |
+| `branch` | 65 | `branch (v)` → **DIVIDE (v)**. The noun is unlisted |
+| `variable` | 33 | `variable (adj)` → **CHANGE (v)**. The noun is unlisted |
+| `log` | 32 | `log (v)` → **RECORD (v)** |
+| `prompt` | 17 | `prompt (adj)` → **IMMEDIATELY (adv)**. The noun and the verb are unlisted |
+
+### Approved, and nothing is owed
+
+`name` 384 and declared, `test` 251 as a noun, `record` 202, `agent` 92, `report` 64, `method` 49,
+`loop` 48 and declared, `upstream` 22, `release` 15. Two carry a refused verb beside the approved
+noun: `test (v)` gives **TEST (n)**, and `loop (v)` gives **LOOP (n)**.
+
+### What the table shows
+
+**The largest group is absent rather than refused.** 41 candidates have no dictionary entry at all.
+Rule 1.6 permits every one of them as a technical noun, and three are declared.
+
+**Several are refused only in a part of speech Waytide does not use.** `file`, `feature`, `branch`,
+`variable`, and `prompt` are refused as verbs or adjectives. Waytide uses the nouns, which are
+unlisted, so they are absent rather than refused, and are reservable. A raw count cannot see that
+distinction, and STE Rule 1.2 is where it lives.
+
+**`design` is the one declared word carrying an unstated divergence.** It sits in the `language`
+vocabulary with no STE note, and `design (v)` is refused with **HAVE (v)**. Waytide uses the noun
+and the verb.
+
+**Two limits.** The counts are lemma-grouped by hand, so a form not grouped is not in them. And the
+category-19 assignment is the project's judgment, which Rule 1.8 makes the project's to make.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
@@ -528,3 +627,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:47:12 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:22:40 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:40:05 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:18:44 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:34:12 AM PT
