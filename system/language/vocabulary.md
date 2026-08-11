@@ -68,7 +68,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
 | **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below |
 | **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below |
-| **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in |
+| **efferent** | "caller" (caller-side, caller-first, caller's-eye) | the use-site perspective — designing a unit from the outside in — see below |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit — the first efferent reference — see below |
 | **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below |
 | **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard — see below |
@@ -83,6 +83,9 @@ General, domain-less word substitutions. Each puts the literal term in place of 
   the table carries two rows rather than one. **Neither is a discontinuation** — a discontinuation
   names one word and drops it, and each of these names a word to write instead.
 - **mediates.** The canonical form is the bare verb — *`X` mediates `Y`*, not *`X` mediates for `Y`*. "wrap"/"wrapper" reads as a generic decorator and hides the relationship. "mediates" names it exactly — the object stands between a user and the thing it fronts, providing access to it.
+- **efferent** replaces "caller" in the *perspective* sense, which is caller-side, caller-first,
+  and caller's-eye. The concrete party that invokes a method is a **caller**, and no substitution
+  reaches it. A method has callers, and a design has an efferent view.
 - **obsolete** is the fallback, not the goal. Reach for the exact word when there is one:
   - a reference whose target moved is **unresolvable**
   - a rule no longer in force is **discontinued** or **superseded**
@@ -129,3 +132,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 3:22:51 AM PT
