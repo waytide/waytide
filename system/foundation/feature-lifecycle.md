@@ -1,10 +1,10 @@
 # A feature's working location is chosen at the start, and it ends completed, abandoned, superseded, or suspended
 
-A feature is a bounded unit of main-line work with a lifecycle: it is worked in a location
-chosen when it begins, is designed through the five hinges, and reaches one of four declared
-states. The feature record tracks that lifecycle. A feature is built to an **intent**, not
-a question — nothing is being tested — which is what separates it from an experiment and
-what accounts for every place this rule departs from the experiment's.
+A feature is a bounded unit of main-line work with a lifecycle. It is worked in a location
+chosen when it begins. It is designed through the five hinges, and it reaches one of four
+declared states. The feature record tracks that lifecycle. A feature is built to an **intent** rather than a question, and nothing is being tested. That is
+what separates it from an experiment. It accounts for every place this rule departs from the
+experiment's.
 
 - **A branch is usual but not required.** Where a feature takes a branch it is named
   `feature/<subject>`, where `<subject>` is a short dash-separated, lower-case name of *what
@@ -128,27 +128,27 @@ what accounts for every place this rule departs from the experiment's.
   reporting features that have not concluded.
 
 **Why:** a feature that starts and stops without a declared state leaves the project unable
-to say what is in flight and what concluded — the same gap the experiment lifecycle closed,
-in the far more common case. Mirroring the experiment's structure gives feature work a
+to say what is in flight and what concluded. That is the same gap the experiment lifecycle
+closed, in the far more common case. Mirroring the experiment's structure gives feature work a
 beginning, a recorded place, and an end without inventing a second vocabulary for the same
-facts. The four departures are what keep it honest: an experiment's forecast, verdict
-states, merge gate, and affirmation all exist to answer a **question**, and a feature does
+facts. The four departures are what keep it honest. An experiment's forecast, verdict
+states, merge gate, and affirmation all exist to answer a **question**. A feature does
 not ask one. Copying them would establish ceremony where the justification does not
 reach — the failure the design method exists to discontinue.
 
-**How to apply:** put the working location to the user at every start — branch only,
-branch and worktree, then the current branch last — and record the choice. Where a branch is taken,
+**How to apply:** ask the working location at every start, and record the choice. The options are
+branch only, branch and worktree, and then the current branch last. Where a branch is taken,
 name it `feature/<subject>` and record the upstream branch, the feature branch, and the base.
 On the current branch, record that and the branch it is being built on. Place a worktree as a
 sibling of the repository directory named
 `<repository-name>-feature-<subject>`. Design the feature through the hinges. End it in a
-state: **completed** on integration, **abandoned** if dropped, **superseded** if replaced
-(cross-referencing the two records), or **suspended** if paused. Verify before integrating and
+state. It is **completed** on integration, **abandoned** if dropped, **superseded** if replaced,
+or **suspended** if paused. Supersession cross-references the two records. Verify before integrating and
 add no gate at the merge. Fix a post-merge failure from there. On the current branch there is
-no merge, no branch to delete, and nothing to return to — completion is the intent being
+no merge, no branch to delete, and nothing to return to. Completion is the intent being
 built, and abandonment is a revert. Otherwise leave the user on the upstream branch in the
-main working tree, confirm before deleting any branch — removing the worktree first, under one
-confirmation — and record every confirmation in the feature record.
+main working tree. Confirm before deleting any branch, removing the worktree first under one
+confirmation. Record every confirmation in the feature record.
 
 Related:
 
@@ -181,3 +181,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT

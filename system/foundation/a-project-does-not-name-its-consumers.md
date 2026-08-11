@@ -1,6 +1,6 @@
 # A project does not name its downstream consumers in its own files
 
-A project's own files do not name the projects that **consume** it — not the installed packages
+A project's own files do not name the projects that **consume** it. Not the installed packages
 under `waytide/system/`, not the project's own working state under `waytide/local/`, and not the
 code or documentation beside them. This holds for a library, a package, a rule system, or
 anything else other projects install.
@@ -35,32 +35,33 @@ Waytide's own two are `website`, which is part of Waytide at large, and `constan
 example the method is shown through. Neither is named as a consumer.
 
 **A historical record that already names one.** A record states what was true when it was
-written and is not revised to suit a later convention. The one exception is disclosure, and it is the disclosure rule that governs it. The correction removes the name and keeps every claim true by stating it at a lower resolution, and the engineer is the authority on what counts. This rule
+written and is not revised to suit a later convention. The one exception is disclosure, and it is the disclosure rule that governs it. The correction removes the name and keeps every claim true by
+stating it at a lower resolution. The engineer is the authority on what counts. This rule
 governs what is **written from now on**. It does not license going back through the records.
 
 ## Where the operational need goes instead
 
 A tool sometimes genuinely has to reach the consuming projects — to survey them, or to drive a
 refresh over them. What it reads is **per-machine configuration outside the repository**, under
-`~/.config/`, so the constraint holds without depending on a `.gitignore` staying correct, and so
+`~/.config/`. So the constraint holds without depending on a `.gitignore` staying correct. And
 the list is what it actually is: one engineer's machine, not a fact about the project.
 
 The tool itself is committed and names no consumer. It reads the configuration. That split is
 what lets the tooling be shared while the list stays local.
 
-**Why:** the pull toward a consumer list is real — it is the obvious way to answer *who needs
-this change* — and each of the three reasons above defeats it separately. The one
+**Why:** the pull toward a consumer list is real. It is the obvious way to answer *who needs
+this change*. Each of the three reasons above defeats it separately. The one
 that is easiest to miss is the third. A list of consumers reads as internal bookkeeping right up
 until the repository is public. At that point it is a list of other people's projects, published by
 someone who was not thinking about publishing. Putting the operational answer in per-machine
-configuration keeps the capability without any of the three costs, so the rule forbids something
-that has an available substitute rather than something that has none.
+configuration keeps the capability without any of the three costs. So the rule forbids something
+that has an available substitute, rather than something that has none.
 
-**How to apply:** do not name a downstream consumer in the project's files, and do not add a list
+**How to apply:** do not name a downstream consumer in the project's files. Do not add a list
 of them for convenience. Where a tool must reach them, have it read a per-machine configuration
-file under `~/.config/` and commit the tool without the list. Where a name is there because a
+file under `~/.config/`. Commit the tool without the list. Where a name is there because a
 decision was about that project, leave it — the rule is about naming a project *as a consumer*.
-Leave historical records as written, and treat a name already in one as the disclosure rule's
+Leave historical records as written. Treat a name already in one as the disclosure rule's
 concern rather than this one's.
 
 Related:
@@ -77,3 +78,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
