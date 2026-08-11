@@ -6,7 +6,9 @@ beside the controls and the actuation rather than inside a `test` block.
 **Its purpose is to clarify the deciding factors.** A test's outcome is determined by
 conditions and factors that are frequently **not clearly expressed in the test script** —
 most often the **controls**. A control is named for itself, not for the properties of the value it produces. `Controls::Account::Sequence.example` says nothing about which positions
-that account has already processed. The definition that would say so lives in another file. The factor that actually decides the outcome is therefore absent from the script the
+that account has already processed.
+
+The definition that would say so lives in another file. The factor that actually decides the outcome is therefore absent from the script the
 reader is reading. **A precondition puts it there.**
 
 ```ruby
@@ -53,7 +55,9 @@ A consequence follows from the same gap, and it is worth naming because it is th
 form of the problem. **Where a deciding factor is invisible, a test can pass without
 exercising what it names.** A value is already present before the actuation set it. A connection
 is already open. A search finds nothing, so the assertion is made against nothing and passes
-vacuously. Documenting the factor closes that too. But the criterion is the legibility of the
+vacuously.
+
+Documenting the factor closes that too. But the criterion is the legibility of the
 deciding factors, not only the risk of a vacuous pass.
 
 ```ruby
@@ -74,7 +78,9 @@ end
 carries the condition, read as a sentence at the point it is written:
 `refute(session.connected?)` is *the session is not connected*.
 `assert(account.processed?(deposit.metadata.global_position))` is *the account has processed
-that position*. **This is a deliberate exception to the test-block-is-assertion-only rule**,
+that position*.
+
+**This is a deliberate exception to the test-block-is-assertion-only rule**,
 which requires every operand inside a `test` block to be bound to an explaining variable
 first. Neither of that rule's reasons reaches a precondition: it has one operand, so nothing is buried in a nested expression to be parsed inside-out. A name bound for it would only restate the predicate — `connected = session.connected?` in front of `refute(connected)` adds a line and no information. **A precondition carries no name because its expression is the
 name.**
@@ -129,20 +135,32 @@ else in the script says so, and every outcome below depends on it.
 **Why:** a test script is read to learn what its outcome depends on. The controls convention deliberately
 puts the construction of example values behind a name. So the factors that decide the outcome are
 frequently the ones least visible at the test. A test whose deciding factors are invisible cannot be read. The reader sees an outcome asserted and no account of what produced it. In its worst form it passes without exercising what it
-names, and reports prevention that is not there. Writing the factor as an assertion rather than
+names, and reports prevention that is not there.
+
+Writing the factor as an assertion rather than
 a comment is what makes the clarification trustworthy. A comment claims, and an assertion is
-checked. So the documentation and the fact cannot drift apart in silence. Keeping it a bare assertion rather than a named test is what keeps the two legible as different things. A named
+checked. So the documentation and the fact cannot drift apart in silence.
+
+Keeping it a bare assertion rather than a named test is what keeps the two legible as different things. A named
 test claims the unit behaves a certain way. A precondition claims only that the ground the
 test stands on is the ground it appears to.
 
 **How to apply:** when writing or reading a test, ask what determines its outcome. Ask whether
 the script shows it. Look first at the controls, whose values are named rather than
-described. Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
+described.
+
+Where a deciding factor is not expressed, write a bare `assert` or `refute` stating
 it. Where the factor is that an actuation completes, write a bare `assert_raises` or
-`refute_raises` instead. Read its predicate inline, with no explaining variable. Place it
-immediately before what it qualifies. That is the actuation for a factor in the controls or a prior state. It is the test for a factor in a derived value. Do
+`refute_raises` instead. Read its predicate inline, with no explaining variable.
+
+Place it
+immediately before what it qualifies. That is the actuation for a factor in the controls or a prior state. It is the test for a factor in a derived value.
+
+Do
 not wrap it in a `test` block, do not name it, and do not bind its operand. Do not write it as a
-`comment` instead. An unchecked statement of a deciding factor is the thing this replaces. An actuation's completion may be the thing being established, rather than the ground a later observation stands on. That is a test. It belongs
+`comment` instead. An unchecked statement of a deciding factor is the thing this replaces.
+
+An actuation's completion may be the thing being established, rather than the ground a later observation stands on. That is a test. It belongs
 in a `test` block.
 
 Related:

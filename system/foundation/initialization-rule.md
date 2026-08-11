@@ -40,7 +40,9 @@ Then **one blank line**, then the block:
 
 **Each gap is one blank line, and a larger one is not available.** There are two — after the
 license line, and after the loading line. With no gap at all the notice reads as a caption
-attached to what follows, or as its first line, so a separation is needed. A wider one cannot be
+attached to what follows, or as its first line, so a separation is needed.
+
+A wider one cannot be
 had. The agent's output is **rendered as markdown**, and markdown collapses any run of blank lines
 between blocks into a single paragraph break. Writing two or three produces exactly what writing
 one produces. Specifying a count that cannot be observed would be a rule nothing can comply
@@ -55,12 +57,14 @@ figure's spacing. The notice is ordinary prose and reads as prose. That differen
 greeting, no account of what is about to be read, no name for the block itself.
 
 **The loading line says what the wait is.** Everything printed here appears at the head of
-the response that then opens every rule file in every installed package. That is a wait a
+the response that then opens every rule file in every installed package. That is a wait an
 engineer sees. The line names it rather than leaving a pause unexplained. It is the only one of the
 three that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is
-read **after** they have, while the wait is happening. The first informs a decision. The second
+read **after** they have, while the wait is happening.
+
+The first informs a decision. The second
 explains a pause. Duplication that has cost this system elsewhere was one fact stated twice for
 one reader. This is one fact stated to a reader in two different positions, and removing either
 leaves that position uncovered.
@@ -99,7 +103,9 @@ The notice sits there for the same reason. It is the one moment in a session whe
 is announced as itself rather than being used. A copyright notice belongs on the work at the
 point the work is presented.
 
-**How to apply:** read this file ahead of every other rule file. At the head of the response carrying the rest of the read, print the copyright notice. Put the license line on the next line. Then one blank line, then the loading line, then one blank line, then the block. Print all of it verbatim and in that order. Print no other words with any of them. Print them once per session and
+**How to apply:** read this file ahead of every other rule file. At the head of the response carrying the rest of the read, print the copyright notice. Put the license line on the next line. Then one blank line, then the loading line, then one blank line, then the block.
+
+Print all of it verbatim and in that order. Print no other words with any of them. Print them once per session and
 never again. There is no condition under which they are withheld.
 
 ---

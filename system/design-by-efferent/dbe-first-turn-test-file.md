@@ -32,13 +32,19 @@ end
 
 The assertion is made against an **explaining variable** — a named local whose name states what is being asserted — not against an inline expression. That variable holds the result of actuating the concern. Actuate first, bind the result, then assert it.
 
-**Naming the outcome is deferred to the end.** The **shell of the cradle** is the actuation and its unnamed assert. Once it is implemented, the test is left unnamed through the rest of the feature's development. Only **at the end** does the work come back and **name the test**. The outcome `context` each observation establishes is added then. That is the "one inner `context` per outcome" structure of the test-structure rule. In practice this closing step is the seam where the next feature begins. So a feature in progress carries bare unnamed asserts, and a feature left behind carries named outcome contexts. The first gate deliberately withholds that naming, so its hinge stays the shape of the actuation and the truth of the one observation. It is not about how outcomes are named or carved up.
+**Naming the outcome is deferred to the end.** The **shell of the cradle** is the actuation and its unnamed assert. Once it is implemented, the test is left unnamed through the rest of the feature's development. Only **at the end** does the work come back and **name the test**. The outcome `context` each observation establishes is added then. That is the "one inner `context` per outcome" structure of the test-structure rule.
 
-**Why:** The first turn is where the unit is designed from the efferent side. The actuation is the first efferent reference, and writing it before any implementation forces the interface outside-in. See the DBE-as-design-tool rule. Keeping the first gate to the actuation and a single unnamed assert keeps that gate's hinge undiluted. It is the actuation's shape and the observed truth, with no premature commitment to an outcome taxonomy. Asserting against an explaining variable keeps the test reading as a statement of the concern rather than a mechanical check. Binding it to the actuation result keeps the efferent view in the frame.
+In practice this closing step is the seam where the next feature begins. So a feature in progress carries bare unnamed asserts, and a feature left behind carries named outcome contexts. The first gate deliberately withholds that naming, so its hinge stays the shape of the actuation and the truth of the one observation. It is not about how outcomes are named or carved up.
+
+**Why:** The first turn is where the unit is designed from the efferent side. The actuation is the first efferent reference, and writing it before any implementation forces the interface outside-in. See the DBE-as-design-tool rule.
+
+Keeping the first gate to the actuation and a single unnamed assert keeps that gate's hinge undiluted. It is the actuation's shape and the observed truth, with no premature commitment to an outcome taxonomy. Asserting against an explaining variable keeps the test reading as a statement of the concern rather than a mechanical check. Binding it to the actuation result keeps the efferent view in the frame.
 
 **How to apply:** When beginning a feature, write only the test file this turn. Nest one `context` per folder segment. Actuate the unit under test and bind the result to an explaining variable. Write one bare unnamed `test` block asserting that variable. Do not name an inner outcome context yet. Do not write the implementation, and do not pause to run the inevitably-failing test.
 
-**Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close. Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept. Settle the three test hinges first, then assemble and show the file.
+**Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close.
+
+Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept. Settle the three test hinges first, then assemble and show the file.
 
 Related:
 

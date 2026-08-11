@@ -11,10 +11,16 @@ started and held for its duration:
 **DBE is in effect either way, and that is what makes this a cadence rather than a switch.**
 Unattended is not DBE off. The **cradle** still holds — the efferent test written before the
 implementation, the actuation designed from the use site, the generation steered toward
-**solubility**. Every hinge is still determined. What changes is who decides it. The method is
+**solubility**. Every hinge is still determined.
+
+What changes is who decides it. The method is
 untouched. Only the stopping is.
 
-**The choice is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero. Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the price. Which is cheaper depends on
+**The choice is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero.
+
+Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the price.
+
+Which is cheaper depends on
 how load-bearing the work is, and on how likely the first pass is to be right. That is a judgment
 about *this* piece of work.
 
@@ -94,17 +100,27 @@ before the agent generates, and it is not written to a file.
 **Why:** the engineer's attention is the scarce thing the whole method is arranged around. The
 arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
 negligible that assumption is wrong, and five waits buy nothing. That is the ceremony this
-method exists to discontinue, arriving by a different route. Making the cadence a choice puts the
+method exists to discontinue, arriving by a different route.
+
+Making the cadence a choice puts the
 trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force
 in the two modes is what stops the choice from being a way out of the method. Unattended work is
 still designed from the efferent side, still cradled by a test written first, and still judged
-by solubility. A record that showed options put to an engineer who was not there would be worse than no record. It would be believed, and recording the mode honestly is what prevents that.
+by solubility.
+
+A record that showed options put to an engineer who was not there would be worse than no record. It would be believed, and recording the mode honestly is what prevents that.
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended**
 through the selection UI. Ask it alongside the working location. Attended is the
-default. Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.*
-and *The agent decides and generates through.* Name no hinge in the question or in an option. Record the choice as a confirmation in the feature or experiment record. Declare
-it at the top of the loop record. Run the hinges either way. **When unattended, present the plan
+default.
+
+Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.*
+and *The agent decides and generates through.* Name no hinge in the question or in an option.
+
+Record the choice as a confirmation in the feature or experiment record. Declare
+it at the top of the loop record. Run the hinges either way.
+
+**When unattended, present the plan
 as a list before generating, and write it in Steve.** Write each cycle
 as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 Do not describe unattended work as suspending DBE — what is suspended is the waits.

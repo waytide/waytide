@@ -6,7 +6,9 @@ All agent artifacts for a project live under a single top-level `waytide/` folde
 they are committed to git alongside the code, and read at the start of each session
 rather than recalled. It holds two directories, separating what came from outside from
 what is the project's own. **`waytide/system/`** holds the installed packages, never edited
-in place. **`waytide/local/`** holds everything the project writes. Foundation defines
+in place. **`waytide/local/`** holds everything the project writes.
+
+Foundation defines
 the four core artifact directories and how to work with them. Each has its own rule in
 this package:
 
@@ -37,9 +39,11 @@ summary) and **next deferred item**.
 **Every prompt to the engineer goes through the selection interface**
 (`present-every-prompt-through-askuserquestion`) — any choice, decision, or answer, never a prose
 question. The harness supplies the free-text escape, so the agent adds none of its own. It does
-add an **`Explain`** option, which is the opposite half of that escape. The escape is how a
+add an **`Explain`** option, which is the opposite half of that escape. The escape is how an
 engineer answers outside the options. `Explain` is how they ask what the question means
-before answering. The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put choices through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
+before answering.
+
+The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put choices through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
 
 Beyond the four core directories, foundation defines the **work-artifact** directories for
 planning and running changes:
@@ -109,7 +113,9 @@ artifacts are a **design** and a **plan**, in `waytide/local/design/` and `wayti
 Intuitive's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
 `waytide/local/intention/`. OODA's are an **orientation** and an **action**, in
 `waytide/local/orientation/` and `waytide/local/action/`, drawn from the loop the
-`design-by-efferent` package already builds on. **The conventions and document formats are
+`design-by-efferent` package already builds on.
+
+**The conventions and document formats are
 identical in every mode.** The mode changes the vocabulary and the directory and no obligation,
 because the words a project plans in are load-bearing. The chosen mode is recorded as a local rule
 named `formal-mode`, `intuitive-mode`, or `ooda-mode`, written whichever mode is chosen. The
@@ -146,15 +152,21 @@ foundation  →  (nothing — the base every other package builds on)
 
 So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh`, `report-direct-commits.sh`, and `report-planning-directories-named-in-part.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
 
-**`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide. The authoring tools run **against the packages**. This one runs **beside projects**, which is a third position the earlier classification had no slot for. It detects nothing about a project's condition, reaches no network, and takes no action on what it finds. It also names no consuming project in its own source: the list is in the registry, outside any repository, per the `a-project-does-not-name-its-consumers` rule.
+**`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide.
+
+The authoring tools run **against the packages**. This one runs **beside projects**, which is a third position the earlier classification had no slot for. It detects nothing about a project's condition, reaches no network, and takes no action on what it finds. It also names no consuming project in its own source: the list is in the registry, outside any repository, per the `a-project-does-not-name-its-consumers` rule.
 
 **Being installed into every project means a copy per project, and one registry.** Each copy reads the same file and reports the same set, so an engineer runs whichever copy is nearest rather than the right one.
 
 **It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others. It would be the first Waytide package that is a **tool** rather than a set of rules.
 
-**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own**. A rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules. So the drift is only visible from inside the project, and only the project's engineer can correct it. It reads the defined mode names out of the installed rule rather than carrying a list. So a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
+**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own**. A rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules. So the drift is only visible from inside the project, and only the project's engineer can correct it.
 
-**`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach. So a refresh updates the packages beneath it and leaves it behind. The script used to print a reminder saying so. On 2026-08-06 every consuming project's bootstrap was found stale anyway, which is what a reminder is worth. It now compares the section against what the installed installer generates, at the moment the drift is created. Where the comparison cannot be made — no `AGENTS.md`, or an installer predating the `bootstrap` subcommand it asks for. It says the check did not happen rather than reporting agreement, and it never invokes an installer that would treat the request as an install.
+It reads the defined mode names out of the installed rule rather than carrying a list. So a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
+
+**`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach. So a refresh updates the packages beneath it and leaves it behind.
+
+The script used to print a reminder saying so. On 2026-08-06 every consuming project's bootstrap was found stale anyway, which is what a reminder is worth. It now compares the section against what the installed installer generates, at the moment the drift is created. The comparison cannot always be made. There may be no `AGENTS.md`, or an installer predating the `bootstrap` subcommand it asks for. It then says the check did not happen rather than reporting agreement, and it never invokes an installer that would treat the request as an install.
 
 Foundation carries an **`install.sh`**, which also has to activate the system. Run it from your project root:
 

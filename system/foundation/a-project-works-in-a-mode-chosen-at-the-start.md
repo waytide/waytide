@@ -14,7 +14,9 @@ The pairing is on a near/far axis: a design, an aspiration, and an orientation a
 are we going toward*. A plan, an intention, and an action all answer *what are we going to do*.
 
 **Write *an intuitive-mode project*, never *an intuitive project*.** In this field *intuitive*
-means **easy to use**, and a reader meets that sense first. The compound **intuitive mode** does not collide with it. The noun it qualifies is a way of working rather than a thing to be used. But **an intuitive project** reads as *a project that is easy to understand*, which is a claim this rule never makes. The collision lands on the noun phrase alone, so the whole of the remedy
+means **easy to use**, and a reader meets that sense first. The compound **intuitive mode** does not collide with it. The noun it qualifies is a way of working rather than a thing to be used.
+
+But **an intuitive project** reads as *a project that is easy to understand*, which is a claim this rule never makes. The collision lands on the noun phrase alone, so the whole of the remedy
 is to keep *mode* in it. Named for the finding that established it: the intuitive-mode experiment,
 affirmed 2026-08-05.
 
@@ -39,17 +41,23 @@ is what produces the expectation of four.
 human's phase and Act is the agent's. The planning artifacts are not divided that way. The pairing is on the **near/far** axis every mode shares — what are we going toward, and what are we going to do. It is not on who performs the phase.
 
 **Here the two words are concrete, not covering.** *An orientation* and *an action* are this mode's
-working words, exactly as *a design* is formal mode's. They are unrelated to the covering terms, **the direction artifact** and **the sequencing artifact**. Those name the class in all three modes and are not any mode's vocabulary. The distinction was settled by the OODA terminology experiment, refuted 2026-08-05. It established that a covering term is judged on abstraction. A term carrying one method's framing is less abstract than one that does not.
+working words, exactly as *a design* is formal mode's. They are unrelated to the covering terms, **the direction artifact** and **the sequencing artifact**. Those name the class in all three modes and are not any mode's vocabulary.
+
+The distinction was settled by the OODA terminology experiment, refuted 2026-08-05. It established that a covering term is judged on abstraction. A term carrying one method's framing is less abstract than one that does not.
 
 ## The conventions are the same in every mode
 
-**The mode changes the vocabulary and the directory. It changes no obligation.** An aspiration and an orientation are each written exactly as a design is. They take the same spine, the same dated **Settled** resolutions, and the same **Out of Scope / Deferred** tail. An intention and an action are each written exactly as a plan is. They take the same elements in the same order, and the same behavior-stated checkbox tasks. An intention is **superseded** by a later intention, and an action by a later action, precisely as a plan is. Their tasks are completed or not completed exactly as a plan's are.
+**The mode changes the vocabulary and the directory. It changes no obligation.** An aspiration and an orientation are each written exactly as a design is. They take the same spine, the same dated **Settled** resolutions, and the same **Out of Scope / Deferred** tail.
+
+An intention and an action are each written exactly as a plan is. They take the same elements in the same order, and the same behavior-stated checkbox tasks. An intention is **superseded** by a later intention, and an action by a later action, precisely as a plan is. Their tasks are completed or not completed exactly as a plan's are.
 
 So there are no separate conventions and no separate document formats. The design-convention,
 plans-convention, design-document-format, and plan-document-format rules govern every mode.
 
 **Why a mode that changes no obligation is worth having.** Because a word is not a label applied to a thought after the fact. It is the thought's working surface, and choosing a word chooses a concept. That is the `language` package's premise, and the rules-establish-a-mindset rule states
-the same thing from the other side. A large share of what a rule does is establish a **stance**,
+the same thing from the other side.
+
+A large share of what a rule does is establish a **stance**,
 and vocabulary is the most direct lever on a mental model. An engineer writing an *aspiration* is doing something different from an engineer writing a *design*. The difference is in them rather than in the document. The mode is that lever, applied at the scale of a whole project
 rather than a single term.
 
@@ -71,7 +79,9 @@ any mode's directory, and it does not name every pair either.
 write a deferred item. The trailing class noun is what keeps a covering term from becoming a word
 the work is **done in**.
 
-**So neither term is shortened to a bare noun.** *Direction* and *sequencing* alone would be sayable — *"I'm writing the direction"*. A sayable, mode-neutral name for the artifact is a **fourth planning vocabulary**, available in every mode. Adopting it would erase the difference this rule exists to create. The mode would survive as a directory name while ceasing to be a stance. The phrases read clumsily in a sentence about doing the work. That is the property being kept, not a cost being tolerated. A rule says *the direction artifact* **about** the work, and an engineer says *aspiration* or *design* **while** doing it.
+**So neither term is shortened to a bare noun.** *Direction* and *sequencing* alone would be sayable — *"I'm writing the direction"*. A sayable, mode-neutral name for the artifact is a **fourth planning vocabulary**, available in every mode. Adopting it would erase the difference this rule exists to create. The mode would survive as a directory name while ceasing to be a stance.
+
+The phrases read clumsily in a sentence about doing the work. That is the property being kept, not a cost being tolerated. A rule says *the direction artifact* **about** the work, and an engineer says *aspiration* or *design* **while** doing it.
 
 **Why generalize rather than name every mode everywhere.** Two reasons, and the second is the
 stronger:
@@ -94,6 +104,7 @@ with **formal as the default**.
 offer to ask and does not wait for a further instruction before asking.
 
 **Two failures are forbidden here and only one of them is obvious.** Announcing the occasion and stopping leaves the project uninitiated until a second instruction arrives. It also spends a turn on a non-decision. An engineer told that a question could be asked has no answer to give but *yes*.
+
 The subtler one is **announcing and then asking in the same response**. The prompt arrives, so nothing is blocked. The engineer still has to read an explanation of why they are being asked before reaching the question. The prompt states what it needs. A preamble in front of it is the
 agent reasoning where the engineer wanted a choice.
 
@@ -112,8 +123,9 @@ speech to the engineer as well as in an option's wording. This rule's own headin
 
 **The wording is fixed because the engineer meeting this choice cannot yet know what it
 decides.** It is put at a project's start, before any of this system's material has been worked with. So a mode named alone — *formal, intuitive, or OODA* — reads as a choice about how the system will **behave**. It reads as how strict the system is, how much ceremony it imposes, and what it will require.
+
 Every one of those readings is wrong, and an engineer holding one of them chooses on grounds that
-do not exist. Saying outright that behavior and functioning are unaffected removes the wrong question before it is asked, and naming what the mode **does** settle. The process vocabulary, and the directories planning records are stored in — leaves the engineer weighing the thing actually in front of them.
+do not exist. Saying outright that behavior and functioning are unaffected removes the wrong question before it is asked. Naming what the mode **does** settle leaves the engineer weighing the thing actually in front of them. What it settles is the process vocabulary, and the directories planning records are stored in.
 
 **It does not restate the case for the modes**, which is the argument above about a word being a
 thought's working surface. That is what the `Explain` option is for. The question says what the
@@ -173,7 +185,9 @@ date and its provenance footer.
 
 **Only the first paragraph binds.** A local rule is a **dated snapshot**. The file-names rule calls it a dated decision in that project's history. So the explanation below
 the binding claim states the system as it stood at that project's start. It is not obliged to
-track this rule afterward. That is safe precisely because the binding part **cannot go stale**. It says which
+track this rule afterward.
+
+That is safe precisely because the binding part **cannot go stale**. It says which
 mode *this project* is in, and a project's mode does not change. Only the restated system
 substance could drift, and it binds nothing, so a drift is a stale explanation rather than two
 binding rules in conflict.
@@ -279,16 +293,24 @@ from silently reverting a project to a mode it is not in. The same stance the re
 
 **How to apply:** at a project's start, ask **formal, intuitive, or OODA** through the selection
 interface. Formal is the default. Ask it in the words fixed above. The behavior and functioning of
-Waytide are unaffected. The mode sets the process vocabulary and the planning directories. Each option names its mode's two artifacts and their directories. Write the chosen mode into
+Waytide are unaffected. The mode sets the process vocabulary and the planning directories. Each option names its mode's two artifacts and their directories.
+
+Write the chosen mode into
 `waytide/local/rules/` as a `formal-mode`, `intuitive-mode`, or `ooda-mode` rule with its datetime
 prefix. Write a matching one-line `waytide/local/log/` entry naming the mode chosen. Commit
-the two. Where
+the two.
+
+Where
 no mode rule is present, display the selection prompt at once. The response carries the prompt
 and nothing else. Add no preamble, no report of the absence, and no citation of this rule. The absence is
-a question never asked, not a default, and finding it is the occasion to ask. Check the
+a question never asked, not a default, and finding it is the occasion to ask.
+
+Check the
 planning directories against the rule and surface any contradiction rather than assuming a mode.
 Work the directories the mode names, applying the same conventions and document formats in
-either. In a rule that merely mentions one of the artifacts, write **the direction artifact** or
+either.
+
+In a rule that merely mentions one of the artifacts, write **the direction artifact** or
 **the sequencing artifact**. Keep the trailing class noun. Do not shorten either to a bare
 `direction` or `sequencing`, which would be a third planning vocabulary. Write **an
 intuitive-mode project**, never **an intuitive project**. Do not switch a project's mode after

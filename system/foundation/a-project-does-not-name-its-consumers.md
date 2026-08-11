@@ -28,13 +28,17 @@ Three reasons, and each would be sufficient on its own:
 ## What it does not reach
 
 **A project named because a decision was about it.** The test is *why* the name is there, not
-whether the named project happens to consume this one. A project that is part of this project at large may be named. So may a reference project the method is shown through. Each is named because something was decided about it. That is ordinary, and removing such a name would cost the record its subject.
+whether the named project happens to consume this one. A project that is part of this project at large may be named. So may a reference project the method is shown through. Each is named because something was decided about it.
+
+That is ordinary, and removing such a name would cost the record its subject.
 Waytide's own two are `website`, which is part of Waytide at large, and `constant`, the worked
 example the method is shown through. Neither is named as a consumer.
 
 **A historical record that already names one.** A record states what was true when it was
 written and is not revised to suit a later convention. The one exception is disclosure, and it is the disclosure rule that governs it. The correction removes the name and keeps every claim true by
-stating it at a lower resolution. The engineer is the authority on what counts. This rule
+stating it at a lower resolution.
+
+The engineer is the authority on what counts. This rule
 governs what is **written from now on**. It does not license going back through the records.
 
 ## Where the operational need goes instead
@@ -49,7 +53,9 @@ what lets the tooling be shared while the list stays local.
 
 **Why:** the pull toward a consumer list is real. It is the obvious way to answer *who needs
 this change*. Each of the three reasons above defeats it separately. The one
-that is easiest to miss is the third. A list of consumers reads as internal bookkeeping right up
+that is easiest to miss is the third.
+
+A list of consumers reads as internal bookkeeping right up
 until the repository is public. At that point it is a list of other people's projects, published by
 someone who was not thinking about publishing. Putting the operational answer in per-machine
 configuration keeps the capability without any of the three costs. So the rule forbids something
@@ -57,7 +63,9 @@ that has an available substitute, rather than something that has none.
 
 **How to apply:** do not name a downstream consumer in the project's files. Do not add a list
 of them for convenience. Where a tool must reach them, have it read a per-machine configuration
-file under `~/.config/`. Commit the tool without the list. A decision may have been about that project, and its name is there for that. Leave it. The rule is about naming a project *as a consumer*.
+file under `~/.config/`. Commit the tool without the list.
+
+A decision may have been about that project, and its name is there for that. Leave it. The rule is about naming a project *as a consumer*.
 Leave historical records as written. Treat a name already in one as the disclosure rule's
 concern rather than this one's.
 
