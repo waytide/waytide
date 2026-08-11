@@ -3,7 +3,7 @@
 `waytide/local/loops/` holds **loop records** — one file per feature documenting the
 cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary).
 The decision log captures *what* was decided, one line per decision. A loop
-record captures *how*. It is the deliberation history of a feature: the hinges
+record captures *how*. It is the deliberation history of a feature. That is the hinges
 the AI determined, the options it put to the engineer, and the decisions the
 engineer made or the chat that replaced them.
 
@@ -37,17 +37,17 @@ displace (the log stays one line per decision).
 
 **Live vs. backfill:** a loop record written *while* doing the work is the
 default. A record reconstructed **retroactively from memory** must be marked at
-the top as a **Backfill** (it is reconstructed after the fact, not captured live,
-so it is necessarily lossier and may miss cycles or detail).
+  the top as a **Backfill**. It is reconstructed after the fact rather than captured live,
+  so it is necessarily lossier and may miss cycles or detail.
 
-**Why:** the deliberation — the hinges and the reasoning over the options — is the
-conveyable substance of this method, and it evaporates if only the final code and
+**Why:** the deliberation is the conveyable substance of this method. That is the hinges and
+the reasoning over the options. It evaporates if only the final code and
 one-line decisions survive. A per-feature narrative of the loop's cycles keeps it,
 teaches the method by example, and exposes where gates were skipped.
 
 **How to apply:** when a feature's loop is worth preserving, add a file under
-`waytide/local/loops/` in the format above, recording each cycle's hinge → options →
-decision/chat. Mark retroactive reconstructions as backfills. Keep the one-line
+`waytide/local/loops/` in the format above. Record each cycle's hinge, options, and
+decision or chat. Mark retroactive reconstructions as backfills. Keep the one-line
 decision-log entries separate and intact.
 
 Related:
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT

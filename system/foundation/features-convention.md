@@ -58,15 +58,15 @@ persisted, dated artifact, kept after the feature concludes.
 
 **Why:** a feature currently starts and stops without a declared state, which makes it
 impossible to say what is in flight and what concluded. Recording the lifecycle in one
-file per feature makes each legible, and keeping the record after the feature concludes
-preserves how it was built rather than only what it produced. Keeping it separate from the
-loop record costs a second file per feature and buys a correct package dependency, which
+file per feature makes each legible. Keeping the record after the feature concludes
+preserves how it was built, rather than only what it produced. Keeping it separate from the
+loop record costs a second file per feature, and buys a correct package dependency. That
 is the more expensive of the two to get wrong.
 
-**How to apply:** when a feature is started, add a record here stating its intent, its
-branch topology, and the working location chosen at the start, and no state line — absence
-is the in-flight state. Add the line when the record reaches one of the four words, update
-it as the state changes after that, record each confirmation the lifecycle requires, and name
+**How to apply:** when a feature is started, add a record here. It states its intent, its
+branch topology, and the working location chosen at the start. It carries no state line, since
+absence is the in-flight state. Add the line when the record reaches one of the four words, and update
+it as the state changes after that. Record each confirmation the lifecycle requires, and name
 the feature's loop record. Keep the record after the feature concludes.
 
 Related:
@@ -96,3 +96,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT

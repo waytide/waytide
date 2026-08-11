@@ -1,6 +1,6 @@
 # `waytide/local/experiments/` — recorded experiments that test a question
 
-`waytide/local/experiments/` holds **experiment records**: deliberate work that tests a stated question or hypothesis about the code — or the way of working — with a forecast made before the work and the observed outcome after. An experiment record is a **persisted, dated artifact**, not throwaway scratch.
+`waytide/local/experiments/` holds **experiment records**. Each is deliberate work that tests a stated question or hypothesis about the code, or about the way of working. It carries a forecast made before the work, and the observed outcome after. An experiment record is a **persisted, dated artifact**, not throwaway scratch.
 
 - **When to use:** you want to *learn* something the code alone won't tell you — whether an approach helps, where a process actually needs human attention, how a proposal behaves under real work. Frame it as a question and pursue it deliberately.
 - **The default is one branch, worked to a verdict.** An experiment is normally a single line of work on its own branch, continued until the question is **resolved** — no run structure, no numbering. Most experiments are exactly this.
@@ -23,9 +23,9 @@
 - **Format:** the same frontmatter-free markdown as rules — a `# Experiment — <name>` title (add `, Run N` only when the experiment actually has multiple runs), then prose and tables. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
 
-**Why:** a forecast recorded before the work is what turns work into an experiment — the gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch. Multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
+**Why:** a forecast recorded before the work is what turns work into an experiment. The gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch. Multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
-**How to apply:** when a question is worth a deliberate try, add a record here. It states the question, names the upstream/experiment/base branches and the working location chosen at the start, and commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations. Add the canonical `**State:**` line when the record reaches one of the words — **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, or **Suspended** — and update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-flight state. On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch.
+**How to apply:** when a question is worth a deliberate try, add a record here. It states the question. It names the upstream, experiment, and base branches, and the working location chosen at the start. It commits a forecast before the work. It then captures the observed outcome, findings, and misses against that forecast. Work it on one branch to a verdict. Reach for runs only when deliberately comparing a varied factor. Record the user confirmations. Add the canonical `**State:**` line when the record reaches one of the words. Those are **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, **Superseded**, and **Suspended**. Update it as the state changes after that. Leave a record still being worked without the line, since absence is the in-flight state. On affirmation, copy the experiment's log into `waytide/local/log/`. Keep it even after — it is evidence, not scratch.
 
 Related:
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:38:08 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
