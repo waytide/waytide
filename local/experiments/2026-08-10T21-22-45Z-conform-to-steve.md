@@ -374,6 +374,9 @@ eleven days after the transformation was reverted, and every instance was found 
 
 ## The class was mislabelled, and its population was never enumerated — 2026-08-11
 
+> **The enumeration was run later the same day.** See *The corpus is enumerated against the
+> dictionary* below.
+
 **The thirteen words the survey reported are a guess-list, not a population.** The survey named the
 words it *predicted* would be offenders and counted those. Nothing enumerated the corpus against
 the dictionary. So the figure this experiment has been publishing is not a measurement of the class. It is a
@@ -446,6 +449,74 @@ not evidence until the standard is read, and here the standard was in the reposi
 rules being measured.** The experiment spent two days measuring a corpus against a specification it
 never opened.
 
+## "choice" gives way to "selection" and "decision" — 2026-08-11
+
+**`choice (n)` is not approved, and the dictionary's stated alternative is `SELECTION (n)`**, whose
+approved meaning is *the action or result of choosing*. The corpus already used **selection** for
+the mechanism and **decision** for the matter settled, in 31 sentences and throughout. STE Rule
+1.11 forbids different technical nouns for the same item, so carrying `choice` beside them was not
+available even as a reservation.
+
+**Eighty uses were replaced, each read on its own.** **selection** where the engineer picks at a
+prompt or where a record states what they picked. **decision** where the sentence means the matter
+being settled.
+
+**Three sites took neither word, and reading found all three.** *One option per genuine choice*
+means one option per genuine **candidate**, which is the same rule's own term two lines above.
+Three sites read *the selection UI, whose built-in free-text selection*, which is the word twice in
+one phrase, and took **free-text answer** instead. One came out as *The two selections branch*,
+where the subject is the two working locations, and now names them.
+
+**One replacement pushed a sentence to 21 words against a 20-word limit.** The re-measurement caught
+it.
+
+## The corpus is enumerated against the dictionary — 2026-08-11
+
+**This is the enumeration the experiment kept saying had never been run.** The dictionary was
+parsed for its approved and not-approved entries, and the corpus's prose was reduced to distinct
+word forms.
+
+| | forms |
+|---|---|
+| Distinct word forms in the prose | 3,651 |
+| Approved in the dictionary | 383 |
+| Not approved, with a stated alternative | 433 |
+| Absent from the dictionary | 2,880 |
+| — an inflection of a dictionary entry | 678 |
+| — no entry under any stem | 2,202 |
+
+**The vocabularies record 78 terms.** Of the 433 not-approved forms, **25** are declared. Of the
+2,880 absent forms, **52** are declared. The recording mechanism reaches about **2%** of the words
+that need it.
+
+**What is declared is the coined vocabulary, not the working vocabulary.** `actuation` at 93 uses
+and `hinge` at 92 are declared. The most-used undeclared not-approved words are ordinary ones:
+`test` 208, `file` 167, `work` 131, `design` 114, `implementation` 87, `run` 67, `feature` 64,
+`branch` 63, `list` 55, `state` 53. Each is a technical noun of the subject field in the ordinary
+sense, and none is recorded as one.
+
+**So the claim each vocabulary makes about itself is narrower than it reads.** STE Rule 1.8 requires
+a technical noun to be approved in the company, industry, or subject field, and every Waytide
+vocabulary says *this file is that approval*. That holds for the 78 terms it names. For the rest of
+the corpus's technical vocabulary, Rule 1.6's permission is not being claimed at all.
+
+**Three limits on these figures, and they are stated because the last seven counts were wrong.**
+
+1. **The dictionary lists base forms.** `designed`, `designing`, and `implementations` do not match
+   `design` or `implementation`, so the absent column is inflated. 678 of the 2,880 are inflections
+   of an entry. The remaining 2,202 include Waytide's coinages, proper nouns, and file-name words
+   such as `waytide` and `askuserquestion`.
+2. **71 entries appear in both columns under different parts of speech.** `USE (v)` is approved and
+   `use (n)` is not. The parse conflates them, so the approved and not-approved split cannot be
+   trusted per word without checking the part of speech at each use. That is STE Rule 1.2, and it
+   needs a lookup per occurrence.
+3. **Everything inside an inline code span is excluded**, which is where most identifiers live.
+
+**The finding.** The answer to whether Waytide records its technical vocabulary does not depend on
+the precision of these figures. 78 recorded against thousands used is not a record. The mechanism
+exists, is correctly described in every vocabulary preamble, and is applied to the terms the project
+coined rather than to the vocabulary it works in.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
@@ -456,3 +527,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:47:12 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:22:40 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:40:05 AM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 5:18:44 AM PT
