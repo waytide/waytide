@@ -32,7 +32,7 @@ Examples:
 
 ## Default with `.nil?`, not `||=`, when the parameter carries a settable value that may be legitimately falsy
 
-`||=` is the right tool **only when `nil` and the real default are the sole falsy possibilities**. They are the sole possibilities for a retry count, `retries ||= 3`. They are also the sole possibilities for a boolean flag, `verify ||= false`, which intentionally normalizes only `nil → false`. But an optional parameter may carry a **value the method will store or set as-is**, and that value may legitimately be `false`, `nil`, or another falsy object. There `||=` is **wrong**. It clobbers a caller's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
+`||=` is the right tool **only when `nil` and the real default are the sole falsy possibilities**. They are the sole possibilities for a retry count, `retries ||= 3`. They are also the sole possibilities for a boolean flag, `verify ||= false`, which intentionally normalizes only `nil → false`. But an optional parameter may carry a **value the method will store or set as-is**. That value may legitimately be `false`, `nil`, or another falsy object. There `||=` is **wrong**. It clobbers a caller's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
 
 ```ruby
 # Yes — only a truly-omitted value is defaulted; a settable false/nil literal passes through
@@ -46,7 +46,7 @@ end
 
 **Why:** `||=` conflates "omitted" with "any falsy value." That conflation is harmless, and even desirable, for flags and selectors. There the falsy default *is* the meaning. It is a defect for a payload the method records verbatim, because it silently rewrites a caller's intended `false`/`nil`. Robustness (the whole point of defaulting in the body) means honoring an explicit falsy value, which only the `.nil?` test does.
 
-**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. If the method stores or forwards it as a value the caller could legitimately want falsy, default it with `if param.nil?`. An equivalent `nil`-only test serves. Related: the build/new-strict rule (`build` normalizes, and a settable payload is normalized only for the omitted case).
+**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. The method may store or forward it as a value the caller could legitimately want falsy. Default it with `if param.nil?`. An equivalent `nil`-only test serves. Related: the build/new-strict rule (`build` normalizes, and a settable payload is normalized only for the omitted case).
 
 ---
 
@@ -54,3 +54,4 @@ Authored by Scott Bellware on Sun Jun 28 2026 at 9 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT

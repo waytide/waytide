@@ -20,15 +20,15 @@ dependencies may still name any other package's rules. The claim says what must 
 alongside it. It says nothing about what its rules may refer to.
 
 **The model citation** is foundation's own status-report-format rule. It names the
-`testing` package and is written for its absence: *"If the project has **not** adopted the
-testing conventions, degrade this section."* The rule works either way. So `testing` is cited
+`testing` package and is written for its absence. Its words are *"If the project has **not**
+adopted the testing conventions, degrade this section."* The rule works either way. So `testing` is cited
 and not declared.
 
 **The refused dependency** is the features-convention rule. It cites
 `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in
 `waytide/local/loops/`. Doing so *"would invert the package graph, and would make the
 feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is
-two things at once: a citation of another package, and the reason a dependency was not taken.
+two things at once. It is a citation of another package, and the reason a dependency was not taken.
 
 **Why:** the alternative reading is not available, and the package graph shows it. Six of the
 seven packages name packages they do not declare. `foundation`, the base every other
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
