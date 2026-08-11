@@ -6,7 +6,7 @@ test-block-is-assertion-only rule). Naming an outcome does **not** require a
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable derived for it**, or a
 **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading
-`When …` condition**, which is a condition promoted to a context, per the assert-raises
+`When …` condition**. That is a condition promoted to a context, per the assert-raises
 rule. The context exists to hold that local setup alongside the bare test, or to
 name the condition.
 
@@ -39,15 +39,15 @@ end
 ```
 
 **Why:** a context should *mean something*, namely "there is local instrumentation
-here." A bare `test` inside a `context "name"` whose only content is the
-assertion wastes the context. The name could sit on the `test`. Reserving
+here." A bare `test` inside a `context "name"` wastes the context, where its only content is the
+assertion. The name could sit on the `test`. Reserving
 contexts for outcomes that actually derive a local variable or add local
 narration keeps the structure honest and flatter.
 
 **How to apply:** name the `test` directly unless the outcome derives its own
 explaining variable, adds an outcome-local `comment`/`detail`, or is a leading
 `When …` condition. Only then enclose it in a `context`. When flattening an over-nested test, flatten **only** where there is no code between the context and
-the `test`, so the context holds nothing but the test. The context must **also** not be a
+the `test`. The context then holds nothing but the test. The context must **also** not be a
 leading `When …` condition.
 
 Related:
@@ -63,3 +63,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT

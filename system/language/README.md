@@ -1,6 +1,6 @@
 # Waytide — language
 
-How language is used: precisely. A word is not a label applied to a thought after the fact — it is the thought's working surface, so choosing a word chooses a concept. The words are load-bearing, and they are chosen deliberately.
+How language is used: precisely. A word is not a label applied to a thought after the fact. It is the thought's working surface, so choosing a word chooses a concept. The words are load-bearing, and they are chosen deliberately.
 
 **The premise**
 
@@ -29,7 +29,7 @@ language  →  foundation
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
 
 ```
 git subtree add  --prefix waytide/system/language https://github.com/waytide/language.git master --squash
@@ -47,8 +47,9 @@ git subtree pull --prefix waytide/system/language https://github.com/waytide/lan
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
