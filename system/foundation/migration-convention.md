@@ -27,18 +27,19 @@ this repository for another, or arriving from one, is planned and recorded here.
   a-time-value-carries-minutes-and-seconds rule.
 
 **Why:** a transition across a repository boundary is the operation most likely to lose content
-and least likely to be recoverable when it does. It is ordered — content has to arrive before it can be depended on, and stop being authoritative in one place before it becomes authoritative in another. And the state in between is a state no single repository fully describes. Planning it
-in the repository the content is leaving puts the plan where the content still is, and keeping
-the record afterward leaves a trail from the place a reader will look first. Without a named
-home, such a plan goes in with the project's sequencing artifacts, where it reads as ordinary
-build work, or into a chat where
+and least likely to be recoverable when it does. It is ordered. Content has to arrive before it
+can be depended on. It has to stop being authoritative in one place before it becomes
+authoritative in another. And the state in between is a state no single repository fully describes. Planning it
+in the repository the content is leaving puts the plan where the content still is. Keeping
+the record afterward leaves a trail from the place a reader will look first. Without a named home, such a plan goes in with the project's sequencing artifacts, where it
+reads as ordinary build work. Or it goes into a chat, where
 it does not survive the session.
 
-**How to apply:** before moving content across a repository boundary, write a record here naming
-the source and destination, the increments in order, and what is true while the move is under
-way. Record what happened against it as the work proceeds, and **keep the record** once the
+**How to apply:** before moving content across a repository boundary, write a record here. It
+names the source and destination, the increments in order, and what is true while the move is
+under way. Record what happened against it as the work proceeds, and **keep the record** once the
 content has gone. Do not use the project's sequencing artifact for a move that crosses out of the
-repository, and do not delete a migration record on completion.
+repository. Do not delete a migration record on completion.
 
 Related:
 
@@ -56,3 +57,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
