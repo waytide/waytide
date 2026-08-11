@@ -82,6 +82,11 @@ The longest sentence is **481 words**, in `announce-waytide-at-session-start`.
 
 ### Words the STE dictionary disputes
 
+> **This table was produced from the agent's recollection of the dictionary, not from the
+> dictionary, and its counts are wrong for the reason the section *The Rule 1.3 population was
+> never enumerated* below gives. The dictionary was in this repository the whole time. Take the
+> classes from here and nothing else.**
+
 **Counted by pattern, so each class states whether it needs a check per use.** The dictionary
 disapproves the **verb** in several of these where Waytide uses the **noun**, and a raw count
 cannot tell them apart.
@@ -229,10 +234,10 @@ statements that no longer argues.
 **Neither is decided here.** The engineer has not ruled on either, and this section records what
 was proposed rather than what was settled.
 
-## The measurement was wrong four times — 2026-08-10
+## The measurement was wrong seven times — 2026-08-10
 
 **Each defect was found only when a sample of the counted sentences was read**, and each
-correction lowered the count. The order matters, because none of the four was visible from the
+correction changed the count. The order matters, because none of the seven was visible from the
 totals.
 
 1. **Provenance footers and headings were counted as prose.** A footer of fourteen `Changed by`
@@ -244,11 +249,20 @@ totals.
 3. **A sentence ending `.**` was never split at all.** Waytide's prose leads a great many
    paragraphs with a bold claim ending in `.**`, and the splitter needed `[.!?]` followed by
    whitespace. Every such pair counted as one sentence of both their lengths. This was the
-   largest of the four.
+   largest of the first four.
 4. **A closing quotation mark after the terminal period blocked the split.** The splitter
    allowed `*`, a backtick, and `)` after `[.!?]`, and not `"`. A sentence that ends inside a
    quotation ran into the next one. This was found last, with sixty-one sentences left, when two
-   of them were read and each was already three sentences on the page.
+      of them were read and each was already three sentences on the page.
+5. **A numbered list counted as a paragraph.** The list filter skipped a block of `-` bullets and
+   not a block of `1.` items, so six numbered lists were reported as over-length paragraphs.
+6. **The splitter broke inside an inline code span.** A `?` inside backticks ended a sentence, so
+   `` `empty?` `` and `` `?` `` each split one sentence into two.
+7. **An `e.g.` or a `vs.` split a sentence.** This was the costly one. It hid **ten sentences that
+   were over the limit all along**, and they were invisible to every count this experiment
+   published. They were never in the 615, never in the 43 reserved for the engineer, and never in
+   the survey. Correcting it **raised** the count, where the first four lowered it.
+
 
 
 **The corrected figures, against what the survey claimed:**
@@ -338,6 +352,81 @@ apply** heading, or opens with an imperative verb.
 composed replacement, and each replacement was read in the diff before the commit. That is what
 the previous section's finding required.
 
+## Every paragraph conforms, and the bold-led form is recorded — 2026-08-11
+
+**The 137 over-length paragraphs are broken where the argument turns.** A continuation paragraph
+carries no bold lead, on the engineer's ruling, because it is still supporting the claim above it.
+The absence of a lead is what marks it as continuation.
+
+**That form was in no rule.** It is followed in hundreds of paragraphs and was never written down.
+`rules-convention` now carries it: a paragraph leads with its claim in bold, the sentences after
+it support that claim, and where the support runs past six sentences the next paragraph carries no
+lead.
+
+**No sentence was cut.** Cutting a restating sentence was available for a paragraph one or two
+over, and reading the 82 in that range produced no candidate. Each was an argument with a turn in
+it, and each took a break.
+
+**Four more sentences damaged by the reverted coordination pass were found and repaired.** Each was
+a subject severed from its predicate, and each was found while reading a paragraph for an unrelated
+reason. That makes the finding sharper rather than weaker: the damage was still being discovered
+eleven days after the transformation was reverted, and every instance was found by reading.
+
+## The Rule 1.3 population was never enumerated — 2026-08-11
+
+**The thirteen words the survey reported are a guess-list, not a population.** The survey named the
+words it *predicted* would be offenders and counted those. Nothing enumerated the corpus against
+the dictionary. So the figure this experiment has been publishing for STE Rule 1.3 — approved words
+used in meanings the dictionary does not approve — is not a measurement of the class. It is a
+measurement of a hypothesis about the class.
+
+**The per-word counts are wrong in the same way the sentence counts were.** The pattern was
+`\b<word>\w*\b`, which misses every inflection that changes the stem. `decide\w*` never matched
+`deciding` or `decision`. The survey reported `decide` at 32. The word family is 75 forms, and a
+full survey of every inflection found 154.
+
+**The scale is knowable and was never taken.** The dictionary gives **875 approved words and 1,274
+that are not approved**. The corpus uses **3,653 distinct word forms** across 46,570 tokens, and
+**641 of those forms are used ten or more times**. Every form is one of three things, and which one
+is a lookup per form: approved and used with its approved meaning, absent and therefore admissible
+under STE Rule 1.1, or not approved and needing its stated alternative.
+
+**The dictionary has been in this repository since 2026-08-08.** It is
+`local/reference/ASD-STE100-issue-9-dictionary.txt`, added two days before this experiment started,
+beside the writing rules. The two `system/language/ste/` rules cite it by path. **The agent read
+those rules at session start and then asserted four times that the standard was not in the
+repository**, and every dictionary claim in this record — the disputed-words table, the
+`STE: not approved` notes in the vocabularies, the replacements quoted in this experiment's prose —
+was written from recollection while the text sat one directory away.
+
+**The six entries at issue, now read rather than recalled:**
+
+| Entry | The dictionary says |
+|---|---|
+| `ask (v)` | not approved — **TELL (v)**, and **SPEAK (v)** for the other sense |
+| `choose (v)` | not approved — **SELECT (v)** |
+| `choice (n)` | not approved — **SELECTION (n)** |
+| `decide (v)` | not approved — **SELECT (v)** |
+| `option (n)` | not approved — **ALTERNATIVE (n)** |
+| `SELECT (v)` | approved, *to make a choice* |
+
+The recollection was right on five and wrong on one. `choice` was called absent, at low confidence,
+and it is a not-approved entry with a stated alternative. So the corpus's 55 uses of `choice` are in
+the class rather than out of it.
+
+**A survey by sense, of the three words, before the dictionary was found.** Of 382 occurrences of
+`ask`, `decide`, and `choose`, roughly 120 are the senses a substitution reaches. The rest are
+`decision` and `choice` as nouns, *deciding factor* as a term of art the precondition rule is named
+for, settled states such as *not yet decided*, eight occurrences inside rule filenames, and three
+citations of Boyd's OODA phase. That survey stands. What changes is that `choice` is now inside the
+class rather than outside it.
+
+**The finding, and it is the first finding's sharper form.** *A count of a corpus is not evidence
+until a sample of what it counted has been read.* This adds: **a claim about an external standard is
+not evidence until the standard is read, and here the standard was in the repository, cited by the
+rules being measured.** The experiment spent two days measuring a corpus against a specification it
+never opened.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 2:22:45 PM PT
@@ -346,3 +435,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 5:12:24 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:09 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:01:18 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:47:12 PM PT
+Changed by Scott Bellware on Tue Aug 11 2026 at 4:22:40 AM PT
