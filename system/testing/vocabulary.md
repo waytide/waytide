@@ -24,8 +24,11 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
-- **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules.
-- **precondition** — a bare `assert` or `refute` that is **not** a test. It is written to **document a factor that decides the test's outcome** where the test script does not express it. That factor is most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule.
+- **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules. **STE: absent as a plural. `CONTROL (n)` is approved, meaning
+something that controls, which is the singular sense this narrows. Technical noun, STE category 7,
+mathematical, scientific, engineering terms, and formulas.**
+- **precondition** — a bare `assert` or `refute` that is **not** a test. It is written to **document a factor that decides the test's outcome** where the test script does not express it. That factor is most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule. **STE: absent. Technical noun, STE category 7,
+mathematical, scientific, engineering terms, and formulas.**
 
 ## Substitutions
 
@@ -33,8 +36,8 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 
 | Say | Don't say | What it names |
 |---|---|---|
-| **verified** | "green" | passing tests, and the report that tests pass — see below |
-| **prevent** | "guard" / "protect" | what a test does to a regression — see below |
+| **verified** | "green" | passing tests, and the report that tests pass — see below. **STE: absent. `verify (v)` is not approved and gives MAKE SURE (v). Technical verb, STE category 2b, computer processes and applications, user interface and application processes, where the dictionary's own list gives `validate`. `verified` is its past participle used as an adjective, which STE Rule 1.13 permits** |
+| **prevent** | "guard" / "protect" | what a test does to a regression — see below. **STE: `PREVENT (v)` is approved, and used with its approved meaning** |
 
 ### Finer distinctions
 
@@ -53,3 +56,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 7:22:16 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 10:22:47 AM PT
