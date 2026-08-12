@@ -9,8 +9,8 @@ technical noun already takes its meaning from the vocabulary that claims it.
 noun, since Rules 1.5 and 1.6 reach only a word the dictionary omits or refuses. Its meaning stays
 the dictionary's, and STE Rule 1.3 requires that meaning and no other.
 
-**A word claimed in an ETE category takes the meaning its entry gives.** That holds whether the STE
-dictionary omits the word, refuses it, or approves it with a different meaning. **This contradicts
+**A word claimed in an ETE category takes the meaning its entry into the ETE gives it.** That holds
+whether the STE dictionary omits the word, refuses it, or approves it with a different meaning. **This contradicts
 STE Rule 1.3.**
 
 **Three words are claimed this way today.** `LOOP (n)` is approved as *a circular shape made in a
@@ -52,3 +52,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Wed Aug 12 2026 at 8:47:52 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 9:06:40 AM PT
