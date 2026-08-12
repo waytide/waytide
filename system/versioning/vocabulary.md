@@ -7,10 +7,12 @@ notes, prose, and dialogue.
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning.
-- **Reserved** by Waytide as a technical noun or a technical verb, under STE Rules 1.5 through 1.13
-  in category 19, Computer science, information and communication technology. This is the case for
-  a word this project coined, and for a word the STE dictionary disputes. STE Rule 1.8 requires a
-  technical noun to be approved in the subject field, and this file is that approval.
+- **Reserved** by Waytide as a technical noun, under STE Rule 1.5 where the dictionary omits the
+  word and under STE Rule 1.6 where the dictionary lists it and refuses it, or as a technical verb
+  under STE Rule 1.12, in category 19, Computer science, information and communication technology.
+  This is the case for a word this project coined, and for a word the STE dictionary disputes. STE
+  Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
+  approval.
 - **Approved with a meaning Waytide does not use**, which STE Rule 1.3 forbids.
 
 **A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
@@ -39,3 +41,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:23:03 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 7:22:16 AM PT
