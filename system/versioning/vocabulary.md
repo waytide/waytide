@@ -3,17 +3,22 @@
 The versioning package's vocabulary. One term, and it is the one the package exists to introduce. Everything else in a version number is semantic versioning, which is defined elsewhere and is not restated here. Binding — use this term with this meaning in rules, release
 notes, prose, and dialogue.
 
-**Every word here is one of three things.** This holds for the terms below, and for the **Say**
+**Every word here is one of two things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
-- **Approved** in the STE dictionary, and used with its approved meaning.
-- **Reserved** by Waytide as a technical noun, under STE Rule 1.5 where the dictionary omits the
-  word and under STE Rule 1.6 where the dictionary lists it and refuses it, or as a technical verb
-  under STE Rule 1.12, in category 19, Computer science, information and communication technology.
-  This is the case for a word this project coined, and for a word the STE dictionary disputes. STE
+- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is owed,
+  and the entry fixes the word against a neighbouring one rather than asking for permission.
+- **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE
+  noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE
+  Rule 1.6 where it lists and refuses it. An STE verb category is reserved under STE Rule 1.12. An
+  ETE category is reserved under the ete-declares-a-noun-category-and-a-verb-category rule. STE
   Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
   approval.
-- **Approved with a meaning Waytide does not use**, which STE Rule 1.3 forbids.
+
+**A reserved word's entry states what the STE dictionary says about it.** The word is absent from
+the dictionary. Or the dictionary refuses it and gives an alternative. Or the dictionary approves it
+with a meaning Waytide does not use. The last of the three is governed by the
+ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
 **A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
 package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
@@ -42,3 +47,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:50:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 7:22:16 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
