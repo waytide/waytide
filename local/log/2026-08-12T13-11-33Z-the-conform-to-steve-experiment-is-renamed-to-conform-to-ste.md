@@ -1,0 +1,1 @@
+# The Conform to STEve experiment is renamed to Conform to STE — the record file, its title, and the branch take the new name, and the work it did was measured against ASD-STE100's own dictionary and writing rules rather than against STEve, which is the name the record now carries
