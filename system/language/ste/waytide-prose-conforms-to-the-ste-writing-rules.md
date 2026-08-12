@@ -4,9 +4,9 @@ ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, i
 records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks
 most, and it grows as more are found in use.
 
-**This rule is part of Simplified Technical English Vector, or STEve** — Waytide's implementation
+**This rule is part of Eventide Technical English, or ETE** — Waytide's implementation
 of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-something-else rule beside
-it, which states what STEve is and the order its two parts decide in.
+it, which states what ETE is and the order its two parts decide in.
 
 **A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The
 standard decides second. In the two phrases worked below below, Waytide's vocabulary caught the word before
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT

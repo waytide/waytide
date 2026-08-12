@@ -87,7 +87,7 @@ before the work costs one reading and can move the whole path.
 list where the steps are independent. This is the `language` package's
 an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
-**Write the plan in Steve.** That is Simplified Technical English Vector: the STE dictionary and
+**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and
 the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon.
 One idea in each item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language`
 package's ste rules.
@@ -121,7 +121,7 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 it at the top of the loop record. Run the hinges either way.
 
 **When unattended, present the plan
-as a list before generating, and write it in Steve.** Write each cycle
+as a list before generating, and write it in ETE.** Write each cycle
 as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 Do not describe unattended work as suspending DBE — what is suspended is the waits.
 
@@ -151,3 +151,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
