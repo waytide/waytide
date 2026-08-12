@@ -48,8 +48,7 @@ A rule that is
 names none. So naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
 only reads, and exits non-zero when it finds something.
 
-After committing a change here, re-publish the affected package by splitting its
-directory and pushing to the component repo's `master`. A `git subtree split`'s
+A release re-publishes the affected package by splitting its directory and pushing to the component repo's `master`. Publish on a release, from the upstream branch, never from an experiment branch or a feature branch. A `git subtree split`'s
 output history depends on the prefix path. So a package whose directory path is
 unchanged fast-forwards, and a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
 
