@@ -1,0 +1,1 @@
+# The Conform to STE experiment is renamed to ETE — the record file, its title, and the branch take the new name, and the experiment that began as a conformance survey of Waytide's prose has become the design of Eventide Technical English itself, with its own two categories, its two overrides of the standard, and the disposition it takes toward ordinary vocabulary
