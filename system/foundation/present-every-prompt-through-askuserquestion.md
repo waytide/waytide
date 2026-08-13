@@ -32,7 +32,7 @@ When `Explain` is selected, answer with a summary first and a normal level of ex
 Related:
 
 - the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
-- its vocabulary — where **origination** and **mean-bias** are defined
+- its vocabulary — where **mean-bias** is defined
 
 ---
 
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT

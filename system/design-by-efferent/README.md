@@ -28,7 +28,7 @@ The one-liner:
   - The actuation is the anchor at every downstream hinge.
   - The contexts are shown once, at hinge 1.
   - The **implementation** is on screen before the loop moves on from hinge 4.
-- The actuation gate offers candidate actuations as options, with a mandatory origination escape. A candidate varies what the **use site states** — an omitted argument is one, and a chained construction or a varied receiver is not.
+- The actuation gate offers candidate actuations as options, with a mandatory free-text option. A candidate varies what the **use site states** — an omitted argument is one, and a chained construction or a varied receiver is not.
 - Advance one outcome at a time and stop at every gate. Never batch-generate test files.
 
 **After the implementation hinge**
@@ -78,3 +78,4 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT

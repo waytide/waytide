@@ -2,7 +2,7 @@
 
 Name a concept by describing, literally, what it is. Reject three kinds of name, all of which force the reader to memorize an arbitrary mapping back to the actual idea:
 
-1. **Real-world analogies / metaphors** (e.g. "the menu problem," "menu trap"). A metaphor is *itself* jargon: the reader must learn and carry the mapping (menu = the AI's option list, dish = option, cooking = originating). That is more to memorize, not less. Vividness does not redeem it.
+1. **Real-world analogies / metaphors** (e.g. "the menu problem," "menu trap"). A metaphor is *itself* jargon: the reader must learn and carry the mapping (menu = the AI's option list, dish = option, cooking = producing an answer). That is more to memorize, not less. Vividness does not redeem it.
 2. **Opaque codes** (e.g. "A1 / A2"). A code carries no meaning. The reader must look up a key.
 3. **Academic jargon** (e.g. "irreducible," "intrinsic," "recall / precision," "anchoring"). Off-axis, imported, and preachy to a working-engineer audience.
 
@@ -27,3 +27,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT

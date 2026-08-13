@@ -11,7 +11,7 @@ here and nowhere else. An entry names its category and its part of speech, since
 
 **Design method terms.** Terms that name the parts of a design method and the decisions it turns
 on. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`,
-`solubility`, `mean-bias`, `origination`.
+`solubility`, `mean-bias`.
 
 **Engineering, process, and method.** Terms that name how engineering work is conducted, recorded,
 and set aside, and the acts that conduct it. Examples: `deferred`, `suspended`, `out of scope`,
@@ -74,3 +74,4 @@ Related:
 Authored by Scott Bellware on Wed Aug 12 2026 at 8:47:52 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
