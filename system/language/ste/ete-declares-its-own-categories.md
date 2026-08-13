@@ -9,17 +9,14 @@ examples, and Rule 1.5 states that outright.
 here and nowhere else. An entry names its category and its part of speech, since STE Rules 1.7 and
 1.13 turn on which one a word is reserved as.
 
-**Design method terms.** Terms that name the parts of a design method and the decisions it turns
-on. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`,
-`solubility`, `mean-bias`.
+**Engineering, design, process, and method.** Terms that name how engineering work is conducted,
+recorded, and set aside, the acts that conduct it, and the parts of a design method. Examples:
+`hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`, `solubility`,
+`subtle`, `load-bearing`, `mean-bias`, `deferred`, `suspended`, `out of scope`, `responsibility`,
+`transfer`, `reconcile`.
 
-**Engineering, process, and method.** Terms that name how engineering work is conducted, recorded,
-and set aside, and the acts that conduct it. Examples: `deferred`, `suspended`, `out of scope`,
-`responsibility`, `transfer`, `reconcile`.
-
-**The line between the two.** A design method term is a part of the method itself, and the method
-defines it. An engineering, process, and method term is about the practice the method sits inside.
-Reach for STE category 7 before either, since it covers concepts, design, and methodologies.
+**Reach for STE category 7 before this one**, since it covers concepts, design, calculations, and
+methodologies.
 
 **Evented systems and autonomous components.** Terms that name the parts of a message-based system,
 the components that run on their own, and what they do. Examples: `projection`, `entity`, `event`,
@@ -28,6 +25,10 @@ the components that run on their own, and what they do. Examples: `projection`, 
 **Agent artifacts.** Terms that name the files an agent and an engineer write and read as they
 work, and what is done to them. Examples: `working-state artifact`, `experiment record`, `feature
 record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
+
+**Human-computer interaction (HCI).** Terms that name how a person and a machine work together,
+and what each of them does. Examples: `attended`, `unattended`, `free-text option`, `selection
+prompt`, `harness`.
 
 **Deliberation and speech.** Words whose object is a judgment or a statement rather than a thing.
 Examples: `ask`, `decide`, `choose`, `settle`, `state`, `present`, `observe`, `govern`,
@@ -75,3 +76,4 @@ Authored by Scott Bellware on Wed Aug 12 2026 at 8:47:52 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT

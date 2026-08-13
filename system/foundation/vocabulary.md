@@ -38,8 +38,8 @@ it back*.
   worked and then its file is **deleted**, leaving a decision-log entry as the durable trace. A
   deferred item is *waiting its turn* — the project still intends to do it. It carries a
   `**Waits for:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
-  rule is the deferred-convention. **STE: absent. Technical noun, ETE engineering, process, and
-  method.**
+  rule is the deferred-convention. **STE: absent. Technical noun, ETE engineering, design, process,
+  and method.**
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
   rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
   `waytide/local/suspended/`, intact, carrying its **return address** so the suspension can be
@@ -50,8 +50,8 @@ it back*.
 - **out of scope** — what a **design deliberately excludes**. It is neither queued nor set
   aside. It is a boundary the design draws around itself, recorded in its trailing **Out of
   Scope / Deferred** section so a reader knows the omission was chosen rather than overlooked.
-  Its rule is the design-convention. **STE: absent. Technical noun, ETE engineering, process, and
-  method.**
+  Its rule is the design-convention. **STE: absent. Technical noun, ETE engineering, design, process,
+  and method.**
 
 The distinguishing question: **deferred** is *not yet*, **suspended** is *no longer*, **out of
 scope** is *not here*.
@@ -71,7 +71,7 @@ scope** is *not here*.
   design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
   reconciled **against** the records rather than **regenerated from** them: it is a source of
   truth a plan points back at, so rebuilding it from downstream work would invert the direction
-  of authority. **STE: absent. Technical verb, ETE engineering, process, and method.**
+  of authority. **STE: absent. Technical verb, ETE engineering, design, process, and method.**
 - **working-state artifact** — a file holding the project's **own work** rather than an
   installed rule. It is everything under `waytide/local/` except `rules/`: log entries, deferred
   items, observations, designs, plans, work session records, loop records, feature records,
@@ -91,14 +91,14 @@ scope** is *not here*.
   **transfers responsibility to the agent** once they make the decision. It names the point a
   collaborative workflow changes hands, which is not the mechanism that carries it — a `gate` is
   the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives
-  `MOVE (v)`**, which says nothing about who is answerable next. **Technical verb, ETE engineering,
-  process, and method.**
+  `MOVE (v)`**, which says nothing about who is answerable next. **Technical verb, ETE engineering, design, process,
+  and method.**
   - **It is never written as a noun.** STE Rule 1.13 forbids a technical verb used as one, so
     there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to
     the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb
     form, and this one is a verb and takes no noun form.
 - **responsibility** — what transfers: answerability for the next act in the work. **STE: absent.
-  Technical noun, ETE engineering, process, and method.**
+  Technical noun, ETE engineering, design, process, and method.**
 
 ## Substitutions
 
@@ -144,3 +144,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 7:22:16 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT
