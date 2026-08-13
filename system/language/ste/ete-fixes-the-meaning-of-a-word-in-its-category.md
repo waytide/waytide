@@ -43,7 +43,7 @@ neither does. Quote the approved meaning in the entry, and state why it does not
 
 Related:
 
-- the ete-declares-a-noun-category-and-a-verb-category rule — the first departure, and the only
+- the ete-declares-its-own-categories rule — the first departure, and the only
   other one
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts
   decide in
@@ -54,3 +54,4 @@ Related:
 Authored by Scott Bellware on Wed Aug 12 2026 at 8:47:52 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:06:40 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT

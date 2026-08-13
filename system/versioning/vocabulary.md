@@ -11,7 +11,7 @@ column of any substitutions table in this file.
 - **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE
   noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE
   Rule 1.6 where it lists and refuses it. An STE verb category is reserved under STE Rule 1.12. An
-  ETE category is reserved under the ete-declares-a-noun-category-and-a-verb-category rule. STE
+  ETE category is reserved under the ete-declares-its-own-categories rule. STE
   Rule 1.8 requires a technical noun to be approved in the subject field, and this file is that
   approval.
 
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 7:22:16 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 10:22:47 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT

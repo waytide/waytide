@@ -1,20 +1,37 @@
-# ETE declares a noun category and a verb category of its own
+# ETE declares categories of its own
 
 **STE's category lists are closed and its word lists are open.** Rule 1.5 says a technical noun is
 usable *if you can include it in one or more of these twenty-two categories*. Rule 1.12 says the
 same of a technical verb and *these four categories*. The words inside each category are only
 examples, and Rule 1.5 states that outright.
 
-**ETE adds one category of each kind.** They are declared here and nowhere else.
+**ETE adds five categories, and each holds technical nouns and technical verbs.** They are declared
+here and nowhere else. An entry names its category and its part of speech, since STE Rules 1.7 and
+1.13 turn on which one a word is reserved as.
 
-**Design method terms**, a technical noun category. Terms that name the parts of a design method,
-the decisions it turns on, and the artifacts it produces. Examples: `hinge`, `gate`, `cradle`,
-`cycle`, `loop`, `actuation`, `observation`, `controls`, `precondition`, `solubility`, `mean-bias`,
-`origination`, `deferred item`, `work session record`.
+**Design method terms.** Terms that name the parts of a design method and the decisions it turns
+on. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`,
+`solubility`, `mean-bias`, `origination`.
 
-**Deliberation and speech**, a technical verb category. Verbs whose object is a judgment or a
-statement rather than a thing. Examples: `ask`, `decide`, `choose`, `settle`, `state`, `present`,
-`observe`, `govern`, `establish`, `explain`.
+**Engineering, process, and method.** Terms that name how engineering work is conducted, recorded,
+and set aside, and the acts that conduct it. Examples: `deferred`, `suspended`, `out of scope`,
+`responsibility`, `transfer`, `reconcile`.
+
+**The line between the two.** A design method term is a part of the method itself, and the method
+defines it. An engineering, process, and method term is about the practice the method sits inside.
+Reach for STE category 7 before either, since it covers concepts, design, and methodologies.
+
+**Evented systems and autonomous components.** Terms that name the parts of a message-based system,
+the components that run on their own, and what they do. Examples: `projection`, `entity`, `event`,
+`stream`, `consumer`, `handler`, `message`, `autonomous component`.
+
+**Agent artifacts.** Terms that name the files an agent and an engineer write and read as they
+work, and what is done to them. Examples: `working-state artifact`, `experiment record`, `feature
+record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
+
+**Deliberation and speech.** Words whose object is a judgment or a statement rather than a thing.
+Examples: `ask`, `decide`, `choose`, `settle`, `state`, `present`, `observe`, `govern`,
+`establish`, `explain`.
 
 **This contradicts STE Rule 1.5 and STE Rule 1.12**, each of which closes its list of categories.
 It contradicts nothing else. A word admitted to an ETE category is reserved, used, and bound
@@ -41,7 +58,7 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 would be a departure that grows, and the growth would go unrecorded.
 
 **How to apply:** reserve a word in an STE category where one holds it. Where none does, reserve it
-in the ETE design-method category or the ETE deliberation-and-speech category. Name the category in
+in an ETE category. Name the category in
 the word's vocabulary entry. State what the STE dictionary says about the word in the same entry.
 
 Related:
@@ -56,3 +73,4 @@ Related:
 
 Authored by Scott Bellware on Wed Aug 12 2026 at 8:47:52 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT

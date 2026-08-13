@@ -133,7 +133,7 @@ per-machine configuration under `~/.config/`, outside the repository.
 foundation defines the artifacts they all write into. It states **deferred**, **suspended**, and
 **out of scope** beside each other: *not yet*, *no longer*, *not here*. They are confused
 most where nothing distinguishes them, and defines **projection**, **reconcile**,
-**working-state artifact**, and **recognizable-content line**. Its one substitution is **work
+**working-state artifact**, and **plain text data attribute line**. Its one substitution is **work
 session record**, never bare "session record".
 
 This package includes no others — everything else includes it. It cites several, which is
@@ -220,3 +220,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT

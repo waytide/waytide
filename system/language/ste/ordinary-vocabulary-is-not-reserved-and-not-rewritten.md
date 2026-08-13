@@ -39,10 +39,11 @@ it is ordinary vocabulary, and record no entry for it.
 
 Related:
 
-- the ete-declares-a-noun-category-and-a-verb-category rule — where a term is reserved
+- the ete-declares-its-own-categories rule — where a term is reserved
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the foundation vocabulary-convention — which vocabulary a term is written in
 
 ---
 
 Authored by Scott Bellware on Wed Aug 12 2026 at 9:58:22 AM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
