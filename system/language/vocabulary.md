@@ -73,6 +73,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
 | **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost. **STE: `EFFECT (n)` is approved, and used with its approved meaning. `effect (v)` is not approved and gives DO (v), and Waytide does not use the verb** |
 | **examine** | "decode" | working through or inspecting something to understand it. **STE: `EXAMINE (v)` is approved, and used with its approved meaning** |
+| **evaluate** / **evaluated** | "score" / "scored" | judging a thing against a criterion and reaching a verdict — a forecast item against what happened, a result against what it claims — see below. **STE: `evaluate (v)` is not approved. The STE dictionary gives EXAMINE (v), and MAKE AN ANALYSIS for its own example *Evaluate the test results*. Technical verb, ETE deliberation and speech** |
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work. **STE: `START (n)` and `START (v)` are approved, and used with their approved meanings** |
 | **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. |
 | **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. **STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), whose approved meaning is the action or result of choosing.** |
@@ -99,6 +100,15 @@ General, domain-less word substitutions. Each puts the literal term in place of 
   use before the figure was noticed. The two senses share one word and nothing else, which is why
   the table carries two rows rather than one. **Neither is a discontinuation** — a discontinuation
   names one word and drops it, and each of these names a word to write instead.
+- **evaluate** and **examine** are both in this table and do different work. Examining is
+  inspecting a thing to understand it. Evaluating is setting it beside a criterion and reaching a
+  verdict. A forecast item is examined by reading it and evaluated by putting it against what
+  happened.
+- **`score` carries an approved meaning Waytide does not use**, which is the most expensive case a
+  substitution meets. `scored (adj)` is not approved, and the STE dictionary's `SCORE (TN)` is a
+  groove or a scratch in a surface — *if the bearing race is scored, replace it*. A reader who
+  meets the word believes they know it. So the substitution is not only a preference for the
+  better word. It removes a false reading the dictionary itself supplies.
 - **mediates.** The canonical form is the bare verb — *`X` mediates `Y`*, not *`X` mediates for `Y`*. "wrap"/"wrapper" reads as a generic decorator and hides the relationship. "mediates" names it exactly — the object stands between a user and the thing it fronts, providing access to it.
 - **efferent** replaces the patois in every sense. The perspective is efferent, and so is the unit
   doing the using. A method has efferents, and a design has an efferent view.
@@ -165,3 +175,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 11:53:50 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:19:04 PM PT
