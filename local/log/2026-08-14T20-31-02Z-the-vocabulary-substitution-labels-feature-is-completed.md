@@ -1,0 +1,1 @@
+# The Vocabulary substitution labels feature is completed — the substitutions table is headed `| Use | Don't use | Meaning |` in the five vocabularies that carry one, and the prose naming the columns is conformed in all six; the five tables were read back intact, carrying 38 rows between them, and no row's content was touched

@@ -3,7 +3,7 @@
 The versioning package's vocabulary. One term, and it is the one the package exists to introduce. Everything else in a version number is semantic versioning, which is defined elsewhere and is not restated here. Binding — use this term with this meaning in rules, release
 notes, prose, and dialogue.
 
-**Every word here is one of two things.** This holds for the terms below, and for the **Say**
+**Every word here is one of two things.** This holds for the terms below, and for the **Use**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
@@ -25,7 +25,7 @@ ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensi
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note
 names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
-and a term names something in the subject field. A **substitution's Say word** with no STE note is
+and a term names something in the subject field. A **substitution's Use word** with no STE note is
 **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
 ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
 waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
