@@ -51,7 +51,7 @@ end
 ```
 
 **Why:** separating a strict initializer from a forgiving constructor keeps `new`
-simple and predictable (just records state) while giving callers a lenient,
+simple and predictable (just records state) while giving efferents a lenient,
 normalized entry point. Normalization lives in one place (`build`), not scattered
 through the call sites, so it can't be forgotten by a path that bypasses the
 constructor.
@@ -63,7 +63,7 @@ rule (the general stance this is one case of).
 
 ## The supertype factory constructs a subtype via `new` directly
 
-The "construct through `build`" instruction governs **callers outside the family**.
+The "construct through `build`" instruction governs **efferents outside the family**.
 Inside the family, the abstract supertype `Upload::Result` **is** a factory of
 its subtypes `Success` and `Rejected`. Its own factory code invokes a subtype's `new` **directly**, rather than the subtype's `build`. By then it already holds the input in the strict, normalized form `new` expects.
 
@@ -75,13 +75,13 @@ it holds strict values in hand, as `Success.new(status, location)`. Routing thro
 **The boundary:** this is an **intra-family privilege**, not a general license to
 skip `build`. It applies only to (a) code *within* the family constructing (b) its
 *own* subtypes from (c) an input already in strict form. Any path that still needs
-normalization must go through `build`. **External callers always use
+normalization must go through `build`. **External efferents always use
 `Result.build`** — they never call `Success.new` / `Rejected.new`.
 
 **Why:** the supertype-as-factory relationship makes `new` a legitimate internal
 seam *for the family itself*, the way a class may use its own private constructor.
-The strict/forgiving split prevents callers from `new`'s strictness. Family code
-that has already satisfied that strictness is the factory, not a caller in that
+The strict/forgiving split prevents efferents from `new`'s strictness. Family code
+that has already satisfied that strictness is the factory, not an efferent in that
 sense. Forcing it back through `build` would run determination logic whose outcome
 is already known.
 
@@ -103,3 +103,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT

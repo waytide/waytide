@@ -36,7 +36,7 @@ Examples:
 
 `||=` is the right tool **only when `nil` and the real default are the sole falsy possibilities**. They are the sole possibilities for a retry count, `retries ||= 3`. They are also the sole possibilities for a boolean flag, `verify ||= false`, which intentionally normalizes only `nil → false`.
 
-But an optional parameter may carry a **value the method will store or set as-is**. That value may legitimately be `false`, `nil`, or another falsy object. There `||=` is **wrong**. It clobbers a caller's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
+But an optional parameter may carry a **value the method will store or set as-is**. That value may legitimately be `false`, `nil`, or another falsy object. There `||=` is **wrong**. It clobbers an efferent's deliberate falsy value. Default such a parameter explicitly on `nil` instead:
 
 ```ruby
 # Yes — only a truly-omitted value is defaulted; a settable false/nil literal passes through
@@ -46,13 +46,13 @@ def self.build(response, location=nil)
 end
 ```
 
-`Upload::Result.build` is the example. Its `location` becomes the value recorded on the result. A caller may legitimately build a result whose location is `false`, meaning the response reported no location. `location ||= response.location` would replace that `false` with the response's. `location = response.location if location.nil?` defaults only the genuinely-omitted case.
+`Upload::Result.build` is the example. Its `location` becomes the value recorded on the result. An efferent may legitimately build a result whose location is `false`, meaning the response reported no location. `location ||= response.location` would replace that `false` with the response's. `location = response.location if location.nil?` defaults only the genuinely-omitted case.
 
-This is not a violation of the `||=` convention — it is the convention's boundary. The distinction: `||=` when the parameter is a **selector/flag** (its own falsy default is the only falsy meaning). `if .nil?` when the parameter is a **settable payload** (falsy is a real value the caller may intend).
+This is not a violation of the `||=` convention — it is the convention's boundary. The distinction: `||=` when the parameter is a **selector/flag** (its own falsy default is the only falsy meaning). `if .nil?` when the parameter is a **settable payload** (falsy is a real value the efferent may intend).
 
-**Why:** `||=` conflates "omitted" with "any falsy value." That conflation is harmless, and even desirable, for flags and selectors. There the falsy default *is* the meaning. It is a defect for a payload the method records verbatim, because it silently rewrites a caller's intended `false`/`nil`. Robustness (the whole point of defaulting in the body) means honoring an explicit falsy value, which only the `.nil?` test does.
+**Why:** `||=` conflates "omitted" with "any falsy value." That conflation is harmless, and even desirable, for flags and selectors. There the falsy default *is* the meaning. It is a defect for a payload the method records verbatim, because it silently rewrites an efferent's intended `false`/`nil`. Robustness (the whole point of defaulting in the body) means honoring an explicit falsy value, which only the `.nil?` test does.
 
-**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. The method may store or forward it as a value the caller could legitimately want falsy. Default it with `if param.nil?`. An equivalent `nil`-only test serves. Related: the build/new-strict rule (`build` normalizes, and a settable payload is normalized only for the omitted case).
+**How to apply:** ask what the parameter *is*. If it selects behavior or defaults to its own falsy value, use `||=`. The method may store or forward it as a value the efferent could legitimately want falsy. Default it with `if param.nil?`. An equivalent `nil`-only test serves. Related: the build/new-strict rule (`build` normalizes, and a settable payload is normalized only for the omitted case).
 
 ---
 
@@ -62,3 +62,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT

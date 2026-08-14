@@ -1,6 +1,6 @@
 # Waytide — design-by-efferent
 
-**Design By Efferent** (DBE). Human-in-the-loop, efferent-first design method. An updated TDD variant with accommodations for AI. Tests are the vehicle and design is the point. The **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface outside-in.
+**Design By Efferent** (DBE). Human-in-the-loop, efferent-first design method. An updated TDD variant with accommodations for AI. Tests are the vehicle and design is the point. The **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface to be designed from the use site.
 
 The one-liner:
 
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
