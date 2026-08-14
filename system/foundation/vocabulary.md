@@ -106,6 +106,20 @@ scope** is *not here*.
     form, and this one is a verb and takes no noun form.
 - **responsibility** — what transfers: answerability for the next act in the work. **STE: absent from the STE dictionary.
   Technical noun, ETE engineering, design, process, and method.**
+- **free-text option** — the answer the **selection interface** supplies beside the options, where
+  the engineer answers outside the option set. **The harness provides it, so the agent adds none
+  of its own.** It is what keeps a closed list from foreclosing the answer only the engineer can
+  produce, and it is present at every prompt without exception. Its rule is the
+  present-every-prompt-through-askuserquestion rule.
+  - **It is not the `Explain` option**, which asks what the question **means** rather than
+    answering it. The two serve opposite halves of the moment responsibility transfers, and
+    `Explain` costs one of the four option slots where this one costs none.
+  - **An option that names an answer inside the question is not this.** A prompt asking for a time
+    may offer *Enter the time*, and that is a candidate rather than a way out of the option set.
+    See the `diary` package's ask-for-entry-time-or-omit-it rule.
+  - **STE: absent from the STE dictionary as a compound. `option (n)` is not approved and gives
+    ALTERNATIVE (n), `FREE (adj)` is approved in an unrelated sense, and `text` is absent.
+    Technical noun, ETE human-computer interaction.**
 
 ## Substitutions
 
@@ -115,18 +129,17 @@ write the **Use** term.
 | Use | Don't use | Meaning |
 |---|---|---|
 | **work session record** | "session record" | the record of a stretch of work — see below |
-| **free-text option** | "escape" | the answer the selection interface supplies beside the options, where the engineer answers outside the option set — see below. **STE: absent from the STE dictionary as a compound. `option (n)` is not approved and gives ALTERNATIVE (n), `FREE (adj)` is approved in an unrelated sense, and `text` is absent. Technical noun, ETE human-computer interaction** |
+| **free-text option** | "escape" | the answer the selection interface supplies beside the options — see above for the term, and below for why the figure fails |
 
 ### Finer distinctions
 
-- **free-text option** — the harness supplies it, and the agent adds none of its own. See the
-  present-every-prompt-through-askuserquestion rule. **`escape` is a figure**, and what it pictures
-  is a closed room. The option set is not closed, since the free-text option is always there, so
-  the word dramatized an ordinary part of the interface as a way out of a trap. **STE: `escape (v)`
-  is not approved and gives DEFLATE (v)**, as in *let the air escape from the tire*. The
-  `language` package's ete-declares-its-own-categories rule already named `free-text option` among
-  its human-computer-interaction examples, and a category is not a standing permission, so this
-  entry is what reserves the word.
+- **free-text option** — **`escape` is a figure**, and what it pictures is a closed room. The
+  option set is not closed, since the free-text option is always there, so the word dramatized an
+  ordinary part of the interface as a way out of a trap. **STE: `escape (v)` is not approved and
+  gives DEFLATE (v)**, as in *let the air escape from the tire*. The `language` package's
+  ete-declares-its-own-categories rule already named `free-text option` among its
+  human-computer-interaction examples, and a category is not a standing permission, so the term
+  above is what reserves the word.
 - **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
   parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
 
@@ -168,3 +181,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:38:29 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:08:25 PM PT
