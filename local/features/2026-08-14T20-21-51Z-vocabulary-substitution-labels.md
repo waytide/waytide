@@ -96,9 +96,13 @@ predates this feature, and conforming it is not what the feature is for.
 
 - **Working location** — branch only, at the start.
 - **Participation** — attended, at the start.
+- **Branch deletion** — confirmed through the selection interface on 2026-08-14, after the merge to
+  `master` and after `master` was pushed. The branch was never pushed, so there was no remote
+  branch to remove. No worktree was created, so none was removed.
 
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 1:21:51 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:31:02 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:32:55 PM PT
