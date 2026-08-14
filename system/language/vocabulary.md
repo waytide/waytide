@@ -56,31 +56,31 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 | Say | Don't say | What it names |
 |---|---|---|
-| **normal path** | "happy path" | the ordinary, non-error course through a method or feature. The raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path" |
+| **normal path** | "happy path" | the ordinary, non-error course through a method or feature. The raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path". **STE: `normal (adj)` is not approved and gives USUAL (adj), and `path` is absent. Technical noun, ETE engineering, design, process, and method** |
 | **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention. **STE: not approved.** The STE dictionary gives AGREE, which does not carry it |
 | **convey** (or plainly "pass … through") | "thread" | a value passed through layers of methods / APIs. **STE: not approved.** The STE dictionary gives MOVE |
-| **increment** | "cut" | a bounded slice of scope delivered as a step — and see below for the word's other sense |
-| **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base — see below |
-| **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies |
-| **scenario** | "arm" | one variant or case a method or feature handles |
+| **increment** | "cut" | a bounded slice of scope delivered as a step — and see below for the word's other sense. **STE: `INCREMENT (n)` is approved, meaning one of a sequence, which names a step in a series rather than a slice of scope. Technical noun, ETE engineering, design, process, and method, with its meaning fixed here** |
+| **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base — see below. **STE: `create (v)` is not approved and gives MAKE (v), which does not carry branching from a base. Technical verb, ETE engineering, design, process, and method** |
+| **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies. **STE: `INSTALL (v)` is approved, and used with its approved meaning** |
+| **scenario** | "arm" | one variant or case a method or feature handles. **STE: absent. Technical noun, ETE engineering, design, process, and method** |
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
-| **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost |
-| **examine** | "decode" | working through or inspecting something to understand it |
-| **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work |
-| **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having |
+| **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost. **STE: `EFFECT (n)` is approved, and used with its approved meaning. `effect (v)` is not approved and gives DO (v), and Waytide does not use the verb** |
+| **examine** | "decode" | working through or inspecting something to understand it. **STE: `EXAMINE (v)` is approved, and used with its approved meaning** |
+| **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work. **STE: `START (n)` and `START (v)` are approved, and used with their approved meanings** |
+| **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. **STE: absent, and `justify` is absent too. Technical adjective, ETE deliberation and speech** |
 | **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. **STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), whose approved meaning is the action or result of choosing.** |
-| **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not |
-| **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes |
-| **name** | "slug" | the descriptive part of a filename |
+| **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not. **STE: `progress` is not approved as a noun or a verb, and gives CONTINUE (v), which names carrying on rather than a state. Technical adjective, ETE engineering, design, process, and method** |
+| **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. **STE: `dash` is absent, and `case (n)` is not approved and gives CONDITION (n). Technical adjective, ETE engineering, design, process, and method** |
+| **name** | "slug" | the descriptive part of a filename. **STE: `NAME (n)` is approved, and used with its approved meaning** |
 | **discontinue** | "retire" | taking a word or a rule out of use. **STE: not approved.** The STE dictionary gives STOP, whose approved meanings are terminal, and a discontinued word did not end |
-| **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to |
-| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below |
-| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below |
-| **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below |
+| **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to. **STE: absent. Technical noun, STE category 11, professional roles, individuals, groups, organizations, and geopolitical entities** |
+| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below. **STE: absent, and `mediate` is absent too. Technical verb, ETE engineering, design, process, and method** |
+| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below. **STE: absent. Technical adjective, ETE engineering, design, process, and method** |
+| **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below. **STE: `SEND (v)` is approved, meaning to cause a thing to go to a place, and Waytide means a value reaching a method. Technical verb, ETE engineering, design, process, and method, with its meaning fixed here** |
 | **efferent** | "caller" | the use-site perspective, and the unit doing the using — see below |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit — the first efferent reference — see below |
-| **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below |
-| **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard — see below |
+| **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below. **STE: `ACTIVATE (v)` is approved, and used with its approved meaning** |
+| **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard — see below. **STE: this row fixes a citation form rather than reserving a word, so no category applies** |
 
 ### Finer distinctions
 
@@ -151,3 +151,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:31:07 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 10:12:33 AM PT
