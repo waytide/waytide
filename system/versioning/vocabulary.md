@@ -20,8 +20,12 @@ the dictionary. Or the dictionary refuses it and gives an alternative. Or the di
 with a meaning Waytide does not use. The last of the three is governed by the
 ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
-**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
-package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note
+names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
+and a term names something in the subject field. A **substitution's Say word** with no STE note is
+**ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
+ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
@@ -34,7 +38,7 @@ package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
   It is not derived from a change and cannot be computed from a diff. Nothing about a
   code change ever obliges a generation bump, and a generation bump does not, by itself, say
-  anything about compatibility. **STE: absent. `generation` is absent from the STE dictionary, and
+  anything about compatibility. **STE: absent from the STE dictionary. `generation` is absent from the STE dictionary, and
   `product (n)` is listed with the guidance to be accurate. Technical noun, STE category 7,
   mathematical, scientific, engineering terms, and formulas.**
 
@@ -54,3 +58,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 10:22:47 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT

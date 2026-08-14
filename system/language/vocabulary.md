@@ -19,16 +19,20 @@ the dictionary. Or the dictionary refuses it and gives an alternative. Or the di
 with a meaning Waytide does not use. The last of the three is governed by the
 ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
-**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
-package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note
+names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
+and a term names something in the subject field. A **substitution's Say word** with no STE note is
+**ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
+ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 The *principles* that govern word selection stay as rules — `name-literally-not-by-analogy`, `no-slang`, `communicate-plainly-name-the-thing`, `language-is-precise-here`. This file holds the settled lexicon those principles produce.
 
 ## Terms
 
-- **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive, and the ideal is immediate comprehension with minimal interpretive work. That is knowledge at a glance. The design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule. It is glossed here only as the vocabulary reference. **STE: absent. Technical noun, ETE engineering, design, process, and method.**
-- **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. **`caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view.** A general design-vocabulary term. **STE: absent. Technical noun, ETE engineering, design, process, and method.**
-- **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in ETE` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The rules are in `waytide/system/language/ste/`. **STE: absent from the dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.**
+- **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive, and the ideal is immediate comprehension with minimal interpretive work. That is knowledge at a glance. The design-quality a unit is judged against, and the quality the name-literally test serves. It is a **load-bearing methodological principle, not merely a term** — its full treatment is the standalone `solubility` rule. It is glossed here only as the vocabulary reference. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.**
+- **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. **`caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view.** A general design-vocabulary term. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.**
+- **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ste/` rules state. **`Say it in ETE` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The rules are in `waytide/system/language/ste/`. **STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.**
 - **actuation** — the invocation of a unit from its use site. **STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site. Technical noun, ETE engineering, design, process, and method.**
 
 
@@ -62,21 +66,21 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **increment** | "cut" | a bounded slice of scope delivered as a step — and see below for the word's other sense. **STE: `INCREMENT (n)` is approved, meaning one of a sequence, which names a step in a series rather than a slice of scope. Technical noun, ETE engineering, design, process, and method, with its meaning fixed here** |
 | **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base — see below. **STE: `create (v)` is not approved and gives MAKE (v), which does not carry branching from a base. Technical verb, ETE engineering, design, process, and method** |
 | **install packages** / "the installed bundle" | "vendor" | a plain installation of gem/package dependencies. **STE: `INSTALL (v)` is approved, and used with its approved meaning** |
-| **scenario** | "arm" | one variant or case a method or feature handles. **STE: absent. Technical noun, ETE engineering, design, process, and method** |
+| **scenario** | "arm" | one variant or case a method or feature handles. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method** |
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up — and see below for "land" in other uses |
 | **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost. **STE: `EFFECT (n)` is approved, and used with its approved meaning. `effect (v)` is not approved and gives DO (v), and Waytide does not use the verb** |
 | **examine** | "decode" | working through or inspecting something to understand it. **STE: `EXAMINE (v)` is approved, and used with its approved meaning** |
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work. **STE: `START (n)` and `START (v)` are approved, and used with their approved meanings** |
-| **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. **STE: absent, and `justify` is absent too. Technical adjective, ETE deliberation and speech** |
+| **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. |
 | **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. **STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), whose approved meaning is the action or result of choosing.** |
-| **required** | "owed" | what a rule asks of a thing. The figure is a debt, and a rule is not a creditor. **STE: `required` is absent, and `require (v)` is not approved and gives NECESSARY (adj), which states a condition rather than what a rule asks. Technical adjective, ETE engineering, design, process, and method** |
+| **required** | "owed" | what a rule asks of a thing. The figure is a debt, and a rule is not a creditor. |
 | **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not. **STE: `progress` is not approved as a noun or a verb, and gives CONTINUE (v), which names carrying on rather than a state. Technical adjective, ETE engineering, design, process, and method** |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. **STE: `dash` is absent, and `case (n)` is not approved and gives CONDITION (n). Technical adjective, ETE engineering, design, process, and method** |
 | **name** | "slug" | the descriptive part of a filename. **STE: `NAME (n)` is approved, and used with its approved meaning** |
 | **discontinue** | "retire" | taking a word or a rule out of use. **STE: not approved.** The STE dictionary gives STOP, whose approved meanings are terminal, and a discontinued word did not end |
-| **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to. **STE: absent. Technical noun, STE category 11, professional roles, individuals, groups, organizations, and geopolitical entities** |
-| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below. **STE: absent, and `mediate` is absent too. Technical verb, ETE engineering, design, process, and method** |
-| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below. **STE: absent. Technical adjective, ETE engineering, design, process, and method** |
+| **engineer** | "developer" | the person the work is done with and for — at the loop, at a hinge, and as the reader the terminology is conveyed to. **STE: absent from the STE dictionary. Technical noun, STE category 11, professional roles, individuals, groups, organizations, and geopolitical entities** |
+| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself — see below. **STE: absent from the STE dictionary, and `mediate` is absent too. Technical verb, ETE engineering, design, process, and method** |
+| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use — see below. **STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method** |
 | **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer — see below. **STE: `SEND (v)` is approved, meaning to cause a thing to go to a place, and Waytide means a value reaching a method. Technical verb, ETE engineering, design, process, and method, with its meaning fixed here** |
 | **efferent** | "caller" | the use-site perspective, and the unit doing the using — see below |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit — the first efferent reference — see below |
@@ -154,3 +158,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:31:07 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:12:33 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT

@@ -19,15 +19,19 @@ the dictionary. Or the dictionary refuses it and gives an alternative. Or the di
 with a meaning Waytide does not use. The last of the three is governed by the
 ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
-**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
-package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note
+names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
+and a term names something in the subject field. A **substitution's Say word** with no STE note is
+**ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
+ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
-- **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules. **STE: absent as a plural. `CONTROL (n)` is approved, meaning
+- **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules. **STE: absent from the STE dictionary as a plural. `CONTROL (n)` is approved, meaning
 something that controls, which is the singular sense this narrows. Technical noun, STE category 7,
 mathematical, scientific, engineering terms, and formulas.**
-- **precondition** — a bare `assert` or `refute` that is **not** a test. It is written to **document a factor that decides the test's outcome** where the test script does not express it. That factor is most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule. **STE: absent. Technical noun, STE category 7,
+- **precondition** — a bare `assert` or `refute` that is **not** a test. It is written to **document a factor that decides the test's outcome** where the test script does not express it. That factor is most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. Its rule is the package's precondition rule. **STE: absent from the STE dictionary. Technical noun, STE category 7,
 mathematical, scientific, engineering terms, and formulas.**
 
 ## Substitutions
@@ -36,7 +40,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't say** 
 
 | Say | Don't say | What it names |
 |---|---|---|
-| **verified** | "green" | passing tests, and the report that tests pass — see below. **STE: absent. `verify (v)` is not approved and gives MAKE SURE (v). Technical verb, STE category 2b, computer processes and applications, user interface and application processes, where the dictionary's own list gives `validate`. `verified` is its past participle used as an adjective, which STE Rule 1.13 permits** |
+| **verified** | "green" | passing tests, and the report that tests pass — see below. **STE: absent from the STE dictionary. `verify (v)` is not approved and gives MAKE SURE (v). Technical verb, STE category 2b, computer processes and applications, user interface and application processes, where the dictionary's own list gives `validate`. `verified` is its past participle used as an adjective, which STE Rule 1.13 permits** |
 | **prevent** | "guard" / "protect" | what a test does to a regression — see below. **STE: `PREVENT (v)` is approved, and used with its approved meaning** |
 
 ### Finer distinctions
@@ -59,3 +63,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 10:22:47 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT

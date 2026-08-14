@@ -22,8 +22,12 @@ the dictionary. Or the dictionary refuses it and gives an alternative. Or the di
 with a meaning Waytide does not use. The last of the three is governed by the
 ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
-**A word with no STE note is absent from the STE dictionary and is reserved.** See the `language`
-package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note
+names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
+and a term names something in the subject field. A **substitution's Say word** with no STE note is
+**ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
+ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
+waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
@@ -38,7 +42,7 @@ it back*.
   worked and then its file is **deleted**, leaving a decision-log entry as the durable trace. A
   deferred item is *waiting its turn* — the project still intends to do it. It carries a
   `**Waits for:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
-  rule is the deferred-convention. **STE: absent. Technical noun, ETE engineering, design, process,
+  rule is the deferred-convention. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process,
   and method.**
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
   rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
@@ -50,7 +54,7 @@ it back*.
 - **out of scope** — what a **design deliberately excludes**. It is neither queued nor set
   aside. It is a boundary the design draws around itself, recorded in its trailing **Out of
   Scope / Deferred** section so a reader knows the omission was chosen rather than overlooked.
-  Its rule is the design-convention. **STE: absent. Technical noun, ETE engineering, design, process,
+  Its rule is the design-convention. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process,
   and method.**
 
 The distinguishing question: **deferred** is *not yet*, **suspended** is *no longer*, **out of
@@ -64,27 +68,27 @@ scope** is *not here*.
   consolidation: where the impulse is to merge, rewrite, or tidy a record into something more
   readable, a projection gives the readability and leaves the record as written. A projection is
   regenerated, never maintained — which is why the record it derives from is **not back-edited**
-  to suit it. **STE: absent. Technical noun, ETE evented systems and autonomous components.**
+  to suit it. **STE: absent from the STE dictionary. Technical noun, ETE evented systems and autonomous components.**
 - **reconcile** — to correct the **live, forward-looking** artifacts that cite something which
   has changed, moved, or been deleted. Reconciling is directed at what points *at* a thing, not
   at the thing itself, and it is confined to artifacts read as current: an observation, a
   design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
   reconciled **against** the records rather than **regenerated from** them: it is a source of
   truth a plan points back at, so rebuilding it from downstream work would invert the direction
-  of authority. **STE: absent. Technical verb, ETE engineering, design, process, and method.**
+  of authority. **STE: absent from the STE dictionary. Technical verb, ETE engineering, design, process, and method.**
 - **working-state artifact** — a file holding the project's **own work** rather than an
   installed rule. It is everything under `waytide/local/` except `rules/`: log entries, deferred
   items, observations, designs, plans, work session records, loop records, feature records,
   experiments, migration records, and suspended things. The class exists because a single set of
   obligations falls on all of them: the ISO-8601-UTC filename prefix, and the
-  `Authored by … / Changed by …` provenance footer. **STE: absent. Technical noun, ETE agent
+  `Authored by … / Changed by …` provenance footer. **STE: absent from the STE dictionary. Technical noun, ETE agent
   artifacts.**
 - **plain text data attribute line** — a **bold label, a colon, and a value**, optionally as a list
   item — `- **Priority:** 3`, `**State:** active`, `**Origin:** waytide/system/…`. It is the
   system's one protocol for content that is read **mechanically** as well as by a person:
   `session-start.sh` parses these lines. One form in the system rather than a new one per
   directory. Frontmatter is permitted and would serve equally. It is not used where this form
-  already fits. **STE: absent. Technical noun, STE category 15, official documents, parts of
+  already fits. **STE: absent from the STE dictionary. Technical noun, STE category 15, official documents, parts of
   documentation, standards, and guidelines.**
 - **transfer** — a **technical verb**: to move responsibility for the next act from one party to
   the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer
@@ -97,7 +101,7 @@ scope** is *not here*.
     there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to
     the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb
     form, and this one is a verb and takes no noun form.
-- **responsibility** — what transfers: answerability for the next act in the work. **STE: absent.
+- **responsibility** — what transfers: answerability for the next act in the work. **STE: absent from the STE dictionary.
   Technical noun, ETE engineering, design, process, and method.**
 
 ## Substitutions
@@ -146,3 +150,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
