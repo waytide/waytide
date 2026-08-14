@@ -21,7 +21,7 @@ with a meaning Waytide does not use. The last of the three is governed by the
 ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
 **The sequence for reserving a word is the a-word-is-reserved-in-six-steps rule**, in the
-`language` package's `ste/` directory.
+`language` package's `ete/` directory.
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note
 names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
@@ -63,3 +63,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT

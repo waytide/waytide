@@ -15,7 +15,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 - **an-answer-is-a-list-and-prose-must-justify-itself**. An answer to the engineer is a list, and each item states a fact rather than narrating — no describing a decision, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its items are parallel. Where an expansion would add something, the answer ends by offering one.
 
 **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical
-English — is in `ste/`. Five rules:
+English — is in `ete/`. Five rules:
 
 - **waytide-prose-conforms-to-the-ste-writing-rules**. Waytide's prose is written to the STE writing
   rules, which fix sentence length, paragraph length, active voice, and the rest.
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:14:52 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
