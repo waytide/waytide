@@ -1,0 +1,1 @@
+# The ETE experiment is merged to master and its branch is deleted, local and remote, on the engineer's confirmation through the selection UI — the merge carries seventy-seven commits, master measures zero sentences and zero paragraphs over the STE limits, and the seven component repositories stay behind, since publishing follows a release and no version has been decided
