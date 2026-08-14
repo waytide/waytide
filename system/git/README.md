@@ -5,7 +5,7 @@ Commit conventions for a project's git history, and the one branch operation the
 The rules in this package govern how commits are made and worded:
 
 - **No Claude co-author trailer**. Commits appear as authored by the user
-  only; omit any `Co-Authored-By: Claude …` attribution.
+  only. Omit any `Co-Authored-By: Claude …` attribution.
 - **Run the suite before considering a commit**. A passing test suite is a
   precondition of the commit decision, not a step taken after deciding to
   commit, so history stays verified at every commit.
@@ -30,7 +30,7 @@ git  →  (nothing — standalone)
 
 ## Installing into a project
 
-Install with `git subtree` — it puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
 
 ```
 git subtree add  --prefix waytide/system/git https://github.com/waytide/git.git master --squash
@@ -48,4 +48,4 @@ git subtree pull --prefix waytide/system/git https://github.com/waytide/git.git 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License** — source-available and free to use, and not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.

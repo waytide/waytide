@@ -4,19 +4,25 @@ ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, i
 records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks
 most, and it grows as more are found in use.
 
-**This rule is part of Simplified Technical English Vector, or STEve** — Waytide's implementation
+**This rule is part of Eventide Technical English, or ETE** — Waytide's implementation
 of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-something-else rule beside
-it, which states what STEve is and the order its two parts decide in.
+it, which states what ETE is and the order its two parts decide in.
+
+**Three rules beside those two carry ETE's departures from the standard.** The
+ete-declares-its-own-categories rule adds five categories of Waytide's own. The
+ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its
+entry gives. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary
+words alone. Each names the STE rule it contradicts.
 
 **A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The
-standard decides second. In both worked phrases below, Waytide's vocabulary caught the word before
+standard decides second. In the two phrases worked below, Waytide's vocabulary caught the word before
 the standard did.
 
 ## The writing rules
 
 | The rule | What it requires |
 |---|---|
-| STE Rule 1.3 | Use an approved word only with its approved meaning |
+| STE Rule 1.3 | Use an approved word only with its approved meaning. The ete-fixes-the-meaning-of-a-word-in-its-category rule overrides this for a word reserved in an ETE category |
 | STE Rule 3.6 | Use the active voice. In descriptive writing the passive is permitted only where the agent is unknown |
 | STE Rule 4.2 | Do not omit words. Its own words: *Each sentence must have all its parts* |
 | STE Rule 8.1 | Do not use the semicolon. The standard's reason is that a semicolon lets you write very long sentences |
@@ -40,15 +46,15 @@ Before: `` `gate` is a technical noun; its verb form is `wait`, swept across 20 
 
 After: `` `gate` is a technical noun. Its verb form is `wait`. Twenty files conform to this. ``
 
-### `Both checks green`
+### `The two checks green`
 
 - **`green`** — the `testing` vocabulary substitutes `verified`. The word is also absent from the
   dictionary.
-- **`Both`** — `both (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
+- **`The two`** — `the two (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in
   `ATTACH THE TWO ENDS`.
 - **No verb** — against STE Rule 4.2.
 
-Before: `Both checks green`
+Before: `The two checks green`
 
 After: `The two checks are verified.` Or, to say what happened rather than name a state:
 `The two checks found no defect.`
@@ -65,12 +71,26 @@ number.
 **How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary,
 then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep
 a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use,
-add it to the table and add the phrase that met it. Related: the
-waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory, the `language` and
-`testing` vocabularies, and the specification at `waytide/local/reference/`.
+add it to the table and add the phrase that met it.
+
+Related:
+
+- the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
+- the a-word-is-reserved-in-six-steps rule — the sequence for reserving a word
+- the ete-declares-its-own-categories rule — the categories a reserved word is named in
+- the ete-fixes-the-meaning-of-a-word-in-its-category rule — which overrides STE Rule 1.3 above
+- the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
+- the `language` and `testing` vocabularies
+- the specification at `waytide/local/reference/`
 
 ---
 
 Authored by Scott Bellware on Sat Aug 8 2026 at 8:11:28 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:50:31 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
+Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT

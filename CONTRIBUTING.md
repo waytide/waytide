@@ -6,14 +6,11 @@ How the packages are authored and published. If you only want to *use* a package
 
 **This composite repo is where all authoring happens.** It holds every package as a
 directory under `system/` (`system/foundation`, `system/testing`, …) under one shared
-history. Add or refine a rule here. Because
-the packages live together, a change spanning several packages is one atomic
-commit, and the whole rule set can be read, grepped, and consolidated in one
-place. This is the source of truth.
+history. Add or refine a rule here. A change spanning
+several packages is one atomic commit, since the packages live together. The
+whole rule set can be read, grepped, and consolidated in one place. This is the source of truth.
 
-**Each package also has its own repository** in the `waytide` org — `foundation`,
-`testing`, `git`, and so on (the `code/` namespace flattens to `code-` in the repo
-name, e.g. `waytide/code-ruby`). Each holds a single package's files at its
+**Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. The `code/` namespace flattens to `code-` in the repo name, as in `waytide/code-ruby`. Each holds a single package's files at its
 root. These are how a consuming project installs a package.
 
 The component repositories are **generated from this composite repo, not edited
@@ -21,47 +18,47 @@ directly.** Publishing a package is a `git subtree split` that extracts one
 package's slice of the composite repo history and pushes it to that package's
 repository. Sync runs one way only: composite repo → component repositories.
 
-**The component repositories are downstream-only.** They only ever receive; they
-are never an authoring source. Do not commit directly to a component repository —
-its `master` is regenerated from this composite repo's history by `git subtree
-split`, so a direct commit is not in that history and is lost or made to conflict
-on the next release. All changes are made in the composite repo.
+**The component repositories are downstream-only.** They only ever receive. They
+are never an authoring source. Do not commit directly to a component repository.
+
+Its `master` is regenerated from this composite repo's history by `git subtree split`. So a direct commit is not in that history. It is lost, or made to conflict, on the next release. All changes are made in the composite repo.
 
 ## Authoring
 
-Author in the composite repo. You never edit a component repository directly. A
-release re-splits the changed packages out to their repositories and pushes them —
-the split is deterministic, so unchanged history keeps its commits and only new
-work is added.
+Author in the composite repo. You never edit a component repository directly. A release re-splits the changed packages out to their repositories and pushes them. The split is deterministic, so unchanged history keeps its commits and only new work is added.
 
 ## Publishing a package
 
 **Before publishing, check for direct commits.** Run `./report-direct-commits.sh` from
 the repository root. It reads each component repo's `master` and reports any commit whose
-message this repository's history does not contain — that is, a commit made directly to the
-component repo rather than produced by a split. It fetches and pushes nothing, and exits
+message this repository's history does not contain. That is a commit made directly to the
+component repo rather than produced by a split.
+
+It fetches and pushes nothing, and exits
 non-zero when it finds something. Two such commits went unnoticed for days before the check
-existed, found only when a publish was attempted; nothing else announces them.
+existed, found only when a publish was attempted. Nothing else announces them.
 
 **Check for planning directories named in part too.** Run
 `./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
-under `system/` naming some but not all of a planning artifact's directories — a rule naming
-`plans/` and `intention/` but not `action/`, or naming `design/` alone. A rule that is
-*about* one of those artifacts names every mode's directory and one that merely mentions it
-names none, so naming only some of them is a defect either way, and it is one that reviews,
-publishes, and installs cleanly while being wrong in every project whose mode it omits. It
+under `system/` naming some but not all of a planning artifact's directories. An instance is a
+rule naming `plans/` and `intention/` but not `action/`, or naming `design/` alone.
+
+A rule that is
+*about* one of those artifacts names every mode's directory, and one that merely mentions it
+names none. So naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
 only reads, and exits non-zero when it finds something.
 
-After committing a change here, re-publish the affected package by splitting its
-directory and pushing to the component repo's `master`. A `git subtree split`'s
-output history depends on the prefix path, so a package whose directory path is
-unchanged fast-forwards, while a package whose path moved does not — its next
-publish is a path-change case handled like the `vocabulary`→`language` rename.
+A release re-publishes the affected package by splitting its directory and pushing to the component repo's `master`. Publish on a release, from the upstream branch, never from an experiment branch or a feature branch. A `git subtree split`'s
+output history depends on the prefix path. So a package whose directory path is
+unchanged fast-forwards, and a package whose path moved does not. Its next publish is a path-change case handled like the `vocabulary`→`language` rename.
+
 **The composite's package directory is `system/`, reached
-by a series of renames — root → `rules/` (2026-07-20) → `packages/` → `framework/`
-(2026-07-22) → `system/` (2026-07-27) — each a force-reset, since a `git subtree split`'s
+by a series of renames** — root → `rules/` (2026-07-20) → `packages/` → `framework/`
+(2026-07-22) → `system/` (2026-07-27). Each was a force-reset, since a `git subtree split`'s
 history depends on the prefix path. The earlier names are kept here as the record of what
-the component repos previously tracked; do not restate them as `system/`. The component
+the component repos previously tracked. Do not restate them as `system/`.
+
+The component
 repos now track the `system/<package>` split, and ordinary publishes fast-forward again —
 no further reset is due unless a path moves once more.** For such an unchanged-path publish, the
 deterministic split fast-forwards — guard for it before pushing:
@@ -92,8 +89,8 @@ git push https://github.com/waytide/<package>.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
-`report-direct-commits.sh` handles the repository before its first publish on its own — it
-reports `no master … — skipped` and carries on — so it needs no change when a package is added.
+`report-direct-commits.sh` handles the repository before its first publish on its own. It
+reports `no master … — skipped` and carries on, so it needs no change when a package is added.
 `install-all.sh` does: its package list is hardcoded, where the direct-commit check discovers
 packages by finding READMEs.
 
@@ -110,13 +107,11 @@ is there. The remedy, in order:
    pushing anything.
 4. **Then force-push.** A commit made directly to a component repo can never become an
    ancestor of a split, so no amount of adopting makes the publish fast-forward. Forcing is
-   correct once the content is safely in the composite, and only then — the commit object is
-   replaced, and its content survives because step 2 put it here.
+   correct once the content is safely in the composite, and only then. Step 2 put the content
+   here, so replacing the commit object does not lose it.
 
-The one-time distribution that first created the component repositories is recorded in the
-**Phase B runbook and checklist**, which are **suspended** under `local/suspended/` — superseded
-by this document, and carrying a package map that no longer matches the packages. They are the
-only record of how a repository rename and a mass re-publish after a path change were done; see
+The one-time distribution that first created the component repositories is recorded in the **Phase B runbook and checklist**. Those are **suspended** under `local/suspended/`, superseded by this document. They carry a package map that no longer matches the packages. They are the
+only record of how a repository rename and a mass re-publish after a path change were done. See
 the suspended-convention for restoring them.
 
 ## Push-back (fallback only)
@@ -137,8 +132,5 @@ to lose it. Two ways to capture it, preferred first:
    git subtree push --prefix waytide/system/testing https://github.com/waytide/testing.git master
    ```
 
-   This puts your commits on the component repo. It is a **fallback**: `subtree
-   push` reconciles history awkwardly, and the change still has to be brought into
-   the composite repo by hand (the component repo is downstream — the next
-   composite split would otherwise overwrite it). Author in the composite whenever
+   This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and the change still has to be brought into the composite repo by hand. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever
    you can.
