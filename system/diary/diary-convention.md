@@ -18,9 +18,10 @@ their username. See the identity-resolution-contract rule.
 file, so a day with three entries is three files, in the order they were written.
 
 **An entry takes a datetime prefix in the writer's local time.** The form is
-`YYYY-MM-DDTHH-MM-SSZ-<name>.md`, and the name is dash-separated and lower-case. The trailing
-`Z` is a literal token of the form rather than a claim of UTC. The directory listing is then an
-index. Each entry says when it was written and what it is about, in order.
+`YYYY-MM-DDTHH-MM-SS-<name>.md`, and the name is dash-separated and lower-case. It carries no
+trailing `Z`, which in ISO 8601 designates UTC and would be false on a local-time stamp. The
+directory listing is then an index. Each entry says when it was written and what it is about, in
+order.
 
 **This departs from the foundation package's file-names rule, which requires UTC.** That rule
 normalizes a dated artifact to UTC because a project's contributors are globally distributed,
@@ -91,3 +92,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:56:57 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
