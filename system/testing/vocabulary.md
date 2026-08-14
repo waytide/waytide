@@ -2,7 +2,7 @@
 
 The testing package's vocabulary: the terms it defines and the word substitutions it enforces, for controls-based test-writing. Binding — use these terms and swaps in tests, rules, prose, and dialogue.
 
-**Every word here is one of two things.** This holds for the terms below, and for the **Say**
+**Every word here is one of two things.** This holds for the terms below, and for the **Use**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
@@ -24,7 +24,7 @@ ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensi
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note
 names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
-and a term names something in the subject field. A **substitution's Say word** with no STE note is
+and a term names something in the subject field. A **substitution's Use word** with no STE note is
 **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
 ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
 waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
@@ -39,9 +39,9 @@ mathematical, scientific, engineering terms, and formulas.**
 
 ## Substitutions
 
-Test-domain word substitutions. When the impulse is a word in the **Don't say** column, write the **Say** term.
+Test-domain word substitutions. When the impulse is a word in the **Don't use** column, write the **Use** term.
 
-| Say | Don't say | What it names |
+| Use | Don't use | Meaning |
 |---|---|---|
 | **verified** | "green" | passing tests, and the report that tests pass — see below. **STE: absent from the STE dictionary. `verify (v)` is not approved and gives MAKE SURE (v). Technical verb, STE category 2b, computer processes and applications, user interface and application processes, where the dictionary's own list gives `validate`. `verified` is its past participle used as an adjective, which STE Rule 1.13 permits** |
 | **prevent** | "guard" / "protect" | what a test does to a regression — see below. **STE: `PREVENT (v)` is approved, and used with its approved meaning** |
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT

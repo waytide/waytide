@@ -2,7 +2,7 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
-**Every word here is one of two things.** This holds for the terms below, and for the **Say**
+**Every word here is one of two things.** This holds for the terms below, and for the **Use**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
@@ -24,7 +24,7 @@ ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensi
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note
 names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
-and a term names something in the subject field. A **substitution's Say word** with no STE note is
+and a term names something in the subject field. A **substitution's Use word** with no STE note is
 **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
 ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
 waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
@@ -59,9 +59,9 @@ terms. The line is whether Waytide says what the word means.
 
 ## Substitutions
 
-General, domain-less word substitutions. Each puts the literal term in place of a slang, imported-jargon, or figurative one. Each puts the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't say** column, write the **Say** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
+General, domain-less word substitutions. Each puts the literal term in place of a slang, imported-jargon, or figurative one. Each puts the unambiguous term in place of one that leaves a reader to guess which system it belongs to. When the impulse is a word in the **Don't use** column, write the **Use** term. (Domain-specific swaps live in their own package's vocabulary — `verified`/`prevent` in `testing`.)
 
-| Say | Don't say | What it names |
+| Use | Don't use | Meaning |
 |---|---|---|
 | **normal path** | "happy path" | the ordinary, non-error course through a method or feature. The raising cases are "error cases" / "exceptional cases", and the course through one is the **exceptional path** — never "sad path", and never "exception path". **STE: `normal (adj)` is not approved and gives USUAL (adj), and `path` is absent. Technical noun, ETE engineering, design, process, and method** |
 | **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention. **STE: not approved.** The STE dictionary gives AGREE, which does not carry it |
@@ -133,7 +133,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 - **land** is a figure in more than one use. As a question — "does that land?" — say a direct question ("is that right?"), per the row above. It is also a figure as an effect taking hold, or a change being deployed: "what landed", "the change landed", "it landed on master". Say **what changed**, **what was affected**, or **took effect**.
 
-**Applying it:** when the impulse is a **Don't say** word, write the **Say** term. That holds in names, prose, comments, commit messages, logs, loop records, and dialogue. When a new substitution is settled, add a row here.
+**Applying it:** when the impulse is a **Don't use** word, write the **Use** term. That holds in names, prose, comments, commit messages, logs, loop records, and dialogue. When a new substitution is settled, add a row here.
 
 ---
 
@@ -176,3 +176,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 11:53:50 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:19:04 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT

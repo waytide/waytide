@@ -4,7 +4,7 @@ The diary package's vocabulary. Three terms, and one substitution that keeps the
 records the agent writes. Binding — use these terms with these meanings in rules, entries, prose,
 and dialogue.
 
-**Every word here is one of two things.** This holds for the terms below, and for the **Say**
+**Every word here is one of two things.** This holds for the terms below, and for the **Use**
 column of any substitutions table in this file.
 
 - **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
@@ -26,7 +26,7 @@ ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensi
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note
 names a term absent from the STE dictionary, and reserves it. A definition exists to name a term,
-and a term names something in the subject field. A **substitution's Say word** with no STE note is
+and a term names something in the subject field. A **substitution's Use word** with no STE note is
 **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's
 ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its
 waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
@@ -61,7 +61,7 @@ waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Substitutions
 
-| Say | Don't say | What it names |
+| Use | Don't use | Meaning |
 | --- | --- | --- |
 | **diary** | "journal", "personal log", "personal journal" | the writer's record — see above. **journal** carries the write-ahead sense used in filesystems and databases, where a journal is what a system writes before it commits. That reading is the wrong one for a record a person writes, and it is a reading many readers of this system reach for first. **log** is taken by the decision log, which is the agent's record and the diary's opposite. **personal journal** and **personal log** each need a qualifier to hold the two apart, and a term that needs a qualifier is the wrong term |
 
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:11:21 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
