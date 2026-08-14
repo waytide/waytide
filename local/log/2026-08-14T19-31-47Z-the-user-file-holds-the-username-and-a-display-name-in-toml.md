@@ -1,0 +1,1 @@
+# `~/.config/waytide/user` holds a required `username` and an optional `display-name`, in TOML, matching `consuming-projects.toml` and `writers.toml` in the same namespace — the project-local `.current-user` keeps its bare one-line username, so the two files no longer share a reader

@@ -1,0 +1,1 @@
+# A project's `writers.toml` overrides the display name alone, and never declares the active writer, who is declared only in `~/.config/waytide/user` — a display name resolves from the project's file first, then from the user file where its `username` is the resolved one, then from the username itself, so the project file may omit a writer whose name the user file already gives

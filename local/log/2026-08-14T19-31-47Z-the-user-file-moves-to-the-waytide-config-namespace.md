@@ -1,0 +1,1 @@
+# The machine-level identity file moves from `~/.config/identity/user` to `~/.config/waytide/user`, keeping the name `user` — the file is Waytide's and only Waytide reads it, so claiming the top-level `identity` namespace on every machine was presumptuous, and `~/.config/waytide/` already holds `consuming-projects.toml`

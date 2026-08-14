@@ -9,8 +9,10 @@ record are all the agent's work, read by the writer. The diary runs the other wa
 writer keeps it, and the agent reads it.
 
 **`waytide/local/diary/` holds the writers' directories and the writers file.** That file is
-`writers.toml`, and it gives each writer's display name. It is optional, and a writer absent
-from it shows as their username. See the identity-resolution-contract rule.
+`writers.toml`, and it overrides a writer's display name for this project. It is optional, and
+it may omit the active writer, whose name and username are declared in
+`~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as
+their username. See the identity-resolution-contract rule.
 
 **One file is one entry.** A day usually holds one, and it can hold several. Each is a separate
 file, so a day with three entries is three files, in the order they were written.
@@ -88,3 +90,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:11:21 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:56:57 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT

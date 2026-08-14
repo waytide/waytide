@@ -12,8 +12,8 @@ thinking carried across their own sessions. The agent reads the diary of the wri
 session this is.
 
 **Two things under `waytide/local/diary/` are not entries, and are not read.** `writers.toml`
-gives each writer's display name, and a writer's `TIMELINE.md` is generated from their own
-entries. Neither carries anything an entry does not.
+overrides a writer's display name for this project, and a writer's `TIMELINE.md` is generated
+from their own entries. Neither carries anything an entry does not.
 
 **Read it oldest first.** An entry answers the entries before it, and the writer's thinking
 moves. Read in order, the later entry corrects the earlier one. Read out of order, the earlier
@@ -67,3 +67,4 @@ Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:58:46 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
