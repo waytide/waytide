@@ -154,7 +154,7 @@ A word not to write, and the word to write instead. When the impulse is a word i
 | **wait** | "gate", as a verb | what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form. **STE: `WAIT (v)` is approved, and used with its approved meaning** |
 | **the human's level of participation** | "gating cadence" | whether the human is in the loop. Attended is in the loop, and unattended is out of it. Attended and unattended cause a cadence and are not one. **STE: `level` is approved with a meaning Waytide does not use.** `LEVEL (n)` is *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved |
 
-## Discontinued terms (do not use)
+## Discontinuations
 
 A word removed from use with nothing in its place. **This is not a substitution.** A substitution
 names two words. A discontinuation names one, because the concept went rather than the name.
@@ -213,3 +213,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:38:29 PM PT

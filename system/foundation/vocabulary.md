@@ -116,6 +116,11 @@ write the **Use** term.
 |---|---|---|
 | **work session record** | "session record" | the record of a stretch of work — see below |
 
+### Finer distinctions
+
+- **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
+  parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
+
 ## Discontinuations
 
 A word taken out of use with **nothing in its place**. This is not a substitution — a substitution
@@ -128,11 +133,6 @@ names two words, and each of these names one.
   actuation gate does*. This is the case STE Rule 9.1 names: use a different sentence
   construction where a word-for-word replacement is not sufficient. It is the first one
   Waytide has recorded.
-
-### Finer distinctions
-
-- **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
-  parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
 
 ---
 
@@ -157,3 +157,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:38:29 PM PT
