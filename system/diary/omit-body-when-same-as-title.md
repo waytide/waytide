@@ -1,9 +1,25 @@
-# When an entry's body says the same thing as its title, use the title alone
+# Where an entry's body says the same thing as its title, keep the title alone
 
-If the body of an experience log entry would be identical or nearly identical to its `# title`, omit the body. The entry is then just the title heading (plus a `**Tags:**` line if it has one) — no redundant prose.
+Where the body of a diary entry would be identical or nearly identical to its `# <title>`, omit
+the body. The entry is then the title heading, the datetime line, and a `**Tags:**` line where
+it has one. No prose repeats what the title already says.
 
-This is the title/body counterpart to the existing rule that omits the `**Summary:**` line when it would duplicate the body. Together: don't repeat the same sentence across title, summary, and body.
+This is the title-and-body counterpart of the diary-entries rule, which omits the
+`**Summary:**` line where it would duplicate the body. Together they keep one sentence from
+appearing in the title, the summary, and the body alike.
 
-**Why:** Avoids redundancy; a one-line entry whose title already says everything doesn't need the same words again below it.
+**Why:** it avoids redundancy. A one-line entry whose title already says everything does not
+need the same words again below it.
 
-**How to apply:** After drafting an entry, compare title and body. If the body adds no new facts, detail, or framing beyond the title, drop the body and keep the title only.
+**How to apply:** after drafting an entry, compare the title and the body. Where the body adds
+no fact, no detail, and no framing beyond the title, drop the body and keep the title.
+
+Related:
+
+- the diary-entries rule — the `**Summary:**` line omitted on the same ground
+- the datetime-stamp-line rule — the line that stays whatever else is dropped
+
+---
+
+Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT

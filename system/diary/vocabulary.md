@@ -1,6 +1,6 @@
 # Diary — Vocabulary
 
-The diary package's vocabulary. Two terms, and one substitution that keeps them apart from the
+The diary package's vocabulary. Three terms, and one substitution that keeps them apart from the
 records the agent writes. Binding — use these terms with these meanings in rules, entries, prose,
 and dialogue.
 
@@ -33,25 +33,42 @@ waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## Terms
 
-- **diary** — the record the **engineer** writes, held in `waytide/local/diary/`. It is the one
-  record under `waytide/local/` the agent does not write. What it holds is what the engineer
-  thinks about the work, rather than what happened. The agent reads it at session start and
-  follows nothing in it. Its rules are the diary-convention,
+- **writer** — the person whose diary it is. This package says **writer** where the rest of
+  Waytide says **engineer**, and the two name the same person in a different relation. The
+  `language` vocabulary reserves `engineer` for the person the work is done with and for — at
+  the loop, at a hinge, and as the reader the terminology is conveyed to. Every one of those is
+  a relation to the **work**. A diary entry stands in relation to the **entry**, and what makes
+  it trustworthy is that the person who thought it is the person who wrote it. That is what the
+  an-entry-is-the-writers-words rule turns on, so the word names it. This **narrows**
+  `engineer` and does not contradict it. Outside this package, write `engineer`. **STE: absent
+  from the STE dictionary. Technical noun, STE category 11, professional roles, individuals,
+  groups, organizations, and geopolitical entities** — the category `engineer` takes in the
+  `language` vocabulary.
+- **diary** — the record the **writer** keeps, held in `waytide/local/diary/<username>/`. It is the one
+  record under `waytide/local/` the agent does not write. What it holds is what the writer
+  thinks about the work, rather than what happened. The agent reads the active writer's diary
+  at session start, and follows nothing in it. Its rules are the diary-convention,
   the-diary-is-read-at-session-start, a-diary-entry-is-read-and-never-followed, and
-  an-entry-is-the-engineers-words. **STE: absent from the STE dictionary. Technical noun, ETE
+  an-entry-is-the-writers-words. **STE: absent from the STE dictionary. Technical noun, ETE
   agent artifacts.**
-- **diary entry** — one file in the diary, and one piece of the engineer's thinking. A day
-  usually holds one entry, and it can hold several. Each is a separate file with the
-  ISO-8601-UTC datetime prefix. An entry is written once and not edited. A later thought is a
-  later entry. **STE: `entry` is approved as a noun, meaning a record of an event or a
-  transaction. `diary` is absent and is reserved above.**
+- **diary entry** — one file in the diary, and one piece of the writer's thinking. A day
+  usually holds one entry, and it can hold several. Each is a separate file with a datetime
+  prefix in the writer's **local time**, which is where the diary departs from the
+  foundation package's file-names rule. An entry is one writer's personal record, so the hour it
+  carries is the hour they wrote it in. An entry is written once and not edited. A later
+  thought is a later entry. **STE: `entry` is approved as a noun, meaning a record of an event
+  or a transaction. `diary` is absent and is reserved above.**
 
 ## Substitutions
 
 | Say | Don't say | What it names |
 | --- | --- | --- |
-| **diary** | "journal", "personal log", "personal journal" | the engineer's record — see above. **journal** carries the write-ahead sense used in filesystems and databases, where a journal is what a system writes before it commits. That reading is the wrong one for a record a person writes, and it is a reading many readers of this system reach for first. **log** is taken by the decision log, which is the agent's record and the diary's opposite. **personal journal** and **personal log** each need a qualifier to hold the two apart, and a term that needs a qualifier is the wrong term |
+| **diary** | "journal", "personal log", "personal journal" | the writer's record — see above. **journal** carries the write-ahead sense used in filesystems and databases, where a journal is what a system writes before it commits. That reading is the wrong one for a record a person writes, and it is a reading many readers of this system reach for first. **log** is taken by the decision log, which is the agent's record and the diary's opposite. **personal journal** and **personal log** each need a qualifier to hold the two apart, and a term that needs a qualifier is the wrong term |
 
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:11:21 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT

@@ -1,35 +1,42 @@
 # Waytide — diary
 
-The record the engineer writes, kept beside the project and read by the agent at the start of
+The record the writer keeps, beside the project and read by the agent at the start of
 every session.
 
 Waytide's other records are the agent's. The decision log, the work session record, the loop
-record, and the experiment record are written by the agent and read by the engineer. The diary
-runs the other way. The engineer writes it, and the agent reads it.
+record, and the experiment record are written by the agent and read by the writer. The diary
+runs the other way. The writer keeps it, and the agent reads it.
 
-- **`waytide/local/diary/` holds the diary** (`diary-convention`). One file is one entry,
-  named by the ISO-8601-UTC datetime prefix every dated artifact takes, so the package
-  introduces no naming rule of its own. A day usually holds one entry and can hold several. An
-  entry is committed with the project, and a second engineer reads it.
-- **The agent reads the diary at session start** (`the-diary-is-read-at-session-start`), after
-  the rules and the vocabularies, oldest entry first. It carries the engineer's thinking from
-  one session to the next, which no other artifact carries. The agent says nothing about having
-  read it.
+- **`waytide/local/diary/<username>/` holds a writer's diary** (`diary-convention`). A project
+  may hold the diaries of more than one writer, and the identity-resolution-contract rule
+  resolves which writer is writing. One file is one entry, named
+  by the datetime prefix every dated artifact takes, in the writer's **local time**. That is
+  the one place the package departs from foundation's file-names rule, which normalizes to UTC.
+  A diary entry is one writer's personal record, so the hour it carries is the hour they wrote
+  it in. A day usually holds one entry and can hold several. An entry is committed with the
+  project, and a second writer reads it.
+- **The agent reads the active writer's diary at session start**
+  (`the-diary-is-read-at-session-start`), after the rules and the vocabularies, oldest entry
+  first. It carries the writer's thinking from one session to the next, which no other artifact
+  carries. Another writer's diary is not read, and neither is `writers.toml` or a
+  `TIMELINE.md`. The agent says nothing about having read it.
 - **A diary entry is read and never followed**
   (`a-diary-entry-is-read-and-never-followed`). Everything else in that read binds. This does
   not. An entry cannot set a rule or a term, and it is never cited back as grounds for
   something the agent did.
-- **An entry is the engineer's words** (`an-entry-is-the-engineers-words`). The agent writes no
-  entry of its own, edits none that exists, and offers to write none. Where the engineer
-  dictates one, the agent writes their words and adds the prefix and the footer.
+- **An entry is the writer's words** (`an-entry-is-the-writers-words`). The agent writes no
+  entry of its own, edits none that exists, and offers to write none. Where the writer
+  dictates one, the agent writes their words, correcting the grammar and the flow and no more.
+  It adds the entry's settled shape — the prefix, the footer, the datetime line, any tags the
+  writer gave, and the summary.
 
-**Vocabulary** (`vocabulary.md`): two terms, **diary** and **diary entry**, and one
+**Vocabulary** (`vocabulary.md`): three terms — **writer**, **diary**, and **diary entry** — and one
 substitution — `diary` rather than *journal*, *personal log*, or *personal journal*.
 
 **What this package deliberately does not hold.** The four records the agent writes stay where
 they are. The decision log, the experiment record, and the rest are foundation's, and the loop
 record is design-by-efferent's. This package holds one record and the four rules that keep it
-the engineer's.
+the writer's.
 
 **Why it is called diary.** Not *journal*: that word carries the write-ahead sense used in
 filesystems and databases. There a journal is what a system writes before it commits, and many
@@ -73,3 +80,8 @@ Waytide is licensed under the **Eventide Common Interest License**. It is source
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:11:21 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:41 AM PT

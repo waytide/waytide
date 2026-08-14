@@ -1,19 +1,60 @@
-# Experience log entries live in the project root, one file per entry
+# Diary entries live in `waytide/local/diary/<username>/`, one file per entry
 
-The experience log — the substantive purpose of this project — is kept as one markdown file per entry in the **active user's log directory**: `users/<slug>/`, where `<slug>` is the active user resolved per [[identity-resolution-contract]] (e.g. `users/scott-bellware/`). This is a multi-user repo — each user's entries live under their own `users/<slug>/` directory. This is distinct from `agent/log/`, which holds repo-wide agent decision bookkeeping shared across all users.
+The diary is kept as one markdown file per entry, in the writer's own diary directory
+`waytide/local/diary/<username>/`. The `<username>` is the active writer, resolved by the
+identity-resolution-contract rule — `waytide/local/diary/scott-bellware/`, for example. A
+project may hold the diaries of more than one writer, and each writer's entries live under
+their own directory. This is distinct from `waytide/local/log/`, the decision log the agent
+writes, which is one record for the whole project.
 
-Filename: `YYYY-MM-DDTHH-MM-SSZ-<kebab-slug>.md`, with the timestamp computed in **local time** via `date +%Y-%m-%dT%H-%M-%SZ` (ISO 8601 with colons replaced by hyphens for cross-platform filename safety). Never use UTC for these entries — local time is the user's explicit preference. The trailing `Z` is a literal filename token, kept for format consistency, not a UTC assertion.
+Filename: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`, with the timestamp computed in **local time** by
+`date +%Y-%m-%dT%H-%M-%SZ`. The colons of ISO 8601 are written as dashes for filename safety.
+Never use UTC for these entries, which is the writer's stated preference. The trailing `Z` is a
+literal token of the form, kept for consistency, and not a claim of UTC.
 
-This local-time rule is specific to the experience log entries only. The agent bookkeeping logs — `agent/log/` (decision log) and `agent/rules/` — keep using **UTC** as documented in `CLAUDE.md`. Don't conflate the two.
+**The local time reaches the diary entries alone.** The agent's own records keep UTC, as the
+foundation package's file-names rule requires. Do not conflate the two.
 
-**Entry format** (the user's chosen defaults):
+**Entry format:**
 
-- **Voice:** first-person ("I raised the concern..."), the user's perspective.
-- **Editing:** lightly cleaned up — preserve the user's words, meaning, and emphasis; fix grammar and flow; do not invent facts or embellish.
-- **Structure:** hybrid. `# <title>`, then a bold `**Summary:**` one-line gist, then the narrative prose. The summary is what shows first in Quick Look preview, so make it a real standalone takeaway, not a restatement of the title. **Omit the summary entirely when it would be identical or nearly identical to the body** (e.g. very short entries) — in that case the entry is just title + prose, to avoid redundancy.
+- **Voice:** first person, the writer's perspective — *I raised the concern …*.
+- **Editing:** lightly cleaned up. Preserve the writer's words, their meaning, and their
+  emphasis. Correct the grammar and the flow. Invent no fact, and embellish nothing.
+- **Structure:** a `# <title>`, then a bold `**Summary:**` one-line gist, then the narrative
+  prose. The summary is what shows first in a Quick Look preview, so make it a standalone
+  takeaway rather than a restatement of the title. **Omit the summary where it would be
+  identical or nearly identical to the body**, as it is on a very short entry. The entry is
+  then the title and the prose, with nothing repeated.
 
-**Why:** A consistent, sortable naming scheme keeps a long-running log easy to skim, sort chronologically, and reference. Keeping each user's entries under `users/<slug>/` separates per-user content from the shared agent tooling under `agent/` and from other users' entries. The hybrid summary pays off on Quick Look spacebar preview (raw-text `.md` preview is set up via the Syntax Highlight extension).
+**Dating default:** an entry is about **today** unless the writer signals otherwise. The writer
+need not write *today*, and the absence of any time reference means the current local date and
+time. Where the writer refers to a different time, by an explicit date or by a phrase such as
+*last Tuesday's meeting* or *back in April*, date and stamp the entry to that time instead.
+Opening with *Today* is permitted and also means today.
 
-**Dating default:** entries are about **today** unless the user signals otherwise. The user does not need to write "Today" — absence of any time reference means today (current local date/time). If the user references a different time (an explicit date, or phrasing like "last Tuesday's meeting" / "back in April"), date and stamp the entry to that time instead. Starting with "Today" is allowed and also means today.
+**Why:** a consistent, sortable naming scheme keeps a long-running diary easy to skim, to sort
+chronologically, and to reference. Keeping each writer's entries under
+`waytide/local/diary/<username>/` separates one writer's record from another's. It separates
+all of them from the records the agent writes. The summary pays off in a Quick Look preview,
+which is where a reader meets the entry before opening it.
 
-**How to apply:** When the user dictates an event or experience to log, resolve the active user's `<slug>` ([[identity-resolution-contract]]) and create a new file in `users/<slug>/` with the local-time-stamped filename, a `# <title>` heading, a `**Summary:**` line, then the first-person narrative. Sync the filename timestamp to when the entry is written (or to the referenced past time, if the entry is not about today).
+**How to apply:** when the writer dictates an event or an experience, resolve the active
+`<username>` by the identity-resolution-contract rule. Create a new file in
+`waytide/local/diary/<username>/` with the local-time filename stamp, a `# <title>` heading, a
+`**Summary:**` line, and then the first-person narrative. Set the filename stamp to when the
+entry is written, or to the referenced past time where the entry is not about today.
+
+Related:
+
+- the identity-resolution-contract rule — how `<username>` is resolved
+- the diary-convention — the directory, the provenance footer, and what one entry is
+- the datetime-stamp-line rule — the datetime line under the title
+- the diary-category-tags rule — the `**Tags:**` line
+- the omit-body-when-same-as-title rule — the body dropped where the title says it already
+- the ask-for-entry-time-or-omit-it rule — where the writer gives no time
+- the foundation package's file-names rule — the UTC normalization this departs from
+
+---
+
+Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
