@@ -5,7 +5,7 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 **Every word here is one of two things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
-- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is owed,
+- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
   and the entry fixes the word against a neighbouring one rather than asking for permission.
 - **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE
   noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE
@@ -201,3 +201,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:31:07 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT

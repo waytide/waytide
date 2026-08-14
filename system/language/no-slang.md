@@ -10,6 +10,7 @@ Each discontinued figurative term has a literal replacement, and each is its own
 - **arm → scenario**
 - **cut → increment**
 - **in flight → in progress**
+- **owed → required**
 - **choice → selection** (what is picked at a prompt) or **decision** (the matter settled)
 - **earns its keep / earns its place → justified / justifiable**
 
@@ -34,3 +35,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT

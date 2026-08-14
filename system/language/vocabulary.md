@@ -5,7 +5,7 @@ The language package's vocabulary: the terms it defines and the word substitutio
 **Every word here is one of two things.** This holds for the terms below, and for the **Say**
 column of any substitutions table in this file.
 
-- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is owed,
+- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required,
   and the entry fixes the word against a neighbouring one rather than asking for permission.
 - **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE
   noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE
@@ -69,6 +69,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **start** | "pick up" | beginning work on something — a task, a deferred item, or other queued work. **STE: `START (n)` and `START (v)` are approved, and used with their approved meanings** |
 | **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. **STE: absent, and `justify` is absent too. Technical adjective, ETE deliberation and speech** |
 | **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. **STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), whose approved meaning is the action or result of choosing.** |
+| **required** | "owed" | what a rule asks of a thing. The figure is a debt, and a rule is not a creditor. **STE: `required` is absent, and `require (v)` is not approved and gives NECESSARY (adj), which states a condition rather than what a rule asks. Technical adjective, ETE engineering, design, process, and method** |
 | **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not. **STE: `progress` is not approved as a noun or a verb, and gives CONTINUE (v), which names carrying on rather than a state. Technical adjective, ETE engineering, design, process, and method** |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. **STE: `dash` is absent, and `case (n)` is not approved and gives CONDITION (n). Technical adjective, ETE engineering, design, process, and method** |
 | **name** | "slug" | the descriptive part of a filename. **STE: `NAME (n)` is approved, and used with its approved meaning** |
@@ -152,3 +153,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:31:07 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:12:33 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
