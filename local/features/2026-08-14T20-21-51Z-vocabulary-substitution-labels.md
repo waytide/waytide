@@ -26,6 +26,7 @@ not use)`. That is a separate feature.
 
 ## Setup
 
+- **State:** Completed
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/vocabulary-substitution-labels`
 - **Base:** `4e586a2b9dfac8295a8e0b6e8bc53aea85ef07d2`
@@ -77,6 +78,20 @@ written — per the one-outcome-at-a-time-name-via-options rule.
 
 **The implementation hinge reduces to conforming the five files** once the naming is settled.
 
+## Verification
+
+**There is no test suite in this repository**, so the run-suite-before-commit precondition had
+nothing to run. What the feature changed is prose in six rule files, and what could break is a
+markdown table.
+
+**Each of the five tables was read back after the change** — the header row, the separator beneath
+it, and the rows under that. All five are intact, carrying 38 substitution rows between them. No
+row's content was touched.
+
+**One cosmetic difference is left as found.** The `diary` table's separator is written
+`| --- | --- | --- |` where the other four write `|---|---|---|`. It renders identically, it
+predates this feature, and conforming it is not what the feature is for.
+
 ## Confirmations
 
 - **Working location** — branch only, at the start.
@@ -86,3 +101,4 @@ written — per the one-outcome-at-a-time-name-via-options rule.
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 1:21:51 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:31:02 PM PT
