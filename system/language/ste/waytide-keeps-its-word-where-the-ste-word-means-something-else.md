@@ -10,6 +10,13 @@ is the instruction to write that way.** It is not the same request as `say it in
 **This rule states the sequence.** The STE dictionary decides first. Waytide keeps its own word
 where the STE dictionary's approved word means something else.
 
+**Three rules beside this one carry ETE's departures from the standard.** The
+ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rule 1.5
+and STE Rule 1.12. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word
+take the meaning its entry gives, against STE Rule 1.3. The
+ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone, against
+STE Rule 1.1.
+
 ## The two answers the STE dictionary can give
 
 The STE dictionary marks a word as approved or as not approved, or it does not list the word at all.
@@ -18,7 +25,9 @@ For a word that is not approved, the STE dictionary names an approved alternativ
 - **Use the alternative** where it carries the meaning. `initiate` becomes `start`, `impact`
   becomes `effect`, and `protect` becomes `prevent`.
 - **Keep Waytide's word** where the approved word means something else. Reserve it as a technical
-  noun or a technical verb. Record it in the package's `vocabulary.md`.
+  noun or a technical verb, in a category the entry names. Record it in the package's
+  `vocabulary.md`. Where the approved word carries a different meaning, the
+  ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
 - **A word the STE dictionary does not list is not a defect.** STE Rule 1.1 permits an absent word as
   a technical noun or a technical verb. `efferent`, `cradle`, and `solubility` are all absent.
 
@@ -50,12 +59,16 @@ a worse word out of deference.
 
 **How to apply:** write to the STE dictionary. Where the STE dictionary names an alternative, use it. Where
 the approved word means something else, keep Waytide's word. Reserve it in the package's
-`vocabulary.md`, and record what the STE dictionary says about it.
+`vocabulary.md`, in a category the entry names. Record what the STE dictionary says about it.
 
 Related:
 
-- the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory. The `language` package's `vocabulary.md` and its language-is-precise-here rule. The specification at `waytide/local/reference/`
-- which is the authority this rule defers to
+- the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
+- the ete-declares-its-own-categories rule — the categories a reserved word is named in
+- the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
+- the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
+- the `language` package's `vocabulary.md` and its language-is-precise-here rule
+- the specification at `waytide/local/reference/`, which is the authority this rule defers to
 
 ---
 
@@ -68,3 +81,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT

@@ -8,15 +8,21 @@ most, and it grows as more are found in use.
 of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-something-else rule beside
 it, which states what ETE is and the order its two parts decide in.
 
+**Three rules beside those two carry ETE's departures from the standard.** The
+ete-declares-its-own-categories rule adds five categories of Waytide's own. The
+ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its
+entry gives. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary
+words alone. Each names the STE rule it contradicts.
+
 **A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The
-standard decides second. In the two phrases worked below below, Waytide's vocabulary caught the word before
+standard decides second. In the two phrases worked below, Waytide's vocabulary caught the word before
 the standard did.
 
 ## The writing rules
 
 | The rule | What it requires |
 |---|---|
-| STE Rule 1.3 | Use an approved word only with its approved meaning |
+| STE Rule 1.3 | Use an approved word only with its approved meaning. The ete-fixes-the-meaning-of-a-word-in-its-category rule overrides this for a word reserved in an ETE category |
 | STE Rule 3.6 | Use the active voice. In descriptive writing the passive is permitted only where the agent is unknown |
 | STE Rule 4.2 | Do not omit words. Its own words: *Each sentence must have all its parts* |
 | STE Rule 8.1 | Do not use the semicolon. The standard's reason is that a semicolon lets you write very long sentences |
@@ -70,6 +76,9 @@ add it to the table and add the phrase that met it.
 Related:
 
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
+- the ete-declares-its-own-categories rule — the categories a reserved word is named in
+- the ete-fixes-the-meaning-of-a-word-in-its-category rule — which overrides STE Rule 1.3 above
+- the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
 - the `language` and `testing` vocabularies
 - the specification at `waytide/local/reference/`
 
@@ -81,3 +90,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 2:01:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
