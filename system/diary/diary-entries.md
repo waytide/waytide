@@ -42,9 +42,9 @@ writer refers to a different time, by an explicit date or by a phrase such as *l
 meeting* or *back in April*, date and stamp the entry to that time instead. Opening with *Today*
 is a signal, and it means today.
 
-**Where the writer signals nothing at all, the ask-for-entry-time-or-omit-it rule governs**, and
-this rule defers to it. That case is not a default here. The writer is asked whether the entry
-carries the current date with the current time, or the current date alone.
+**This rule settles the date alone.** The **time** is the ask-for-entry-time-or-omit-it rule's,
+and that ask fires wherever the writer gave no time — including where they gave a day, since
+*yesterday* and *today* fix the day and say nothing about the hour.
 
 **Why:** a consistent, sortable naming scheme keeps a long-running diary easy to skim, to sort
 chronologically, and to reference. Keeping each writer's entries under
@@ -56,8 +56,9 @@ which is where a reader meets the entry before opening it.
 `<username>` by the identity-resolution-contract rule. Create a new file in
 `waytide/local/diary/<username>/` with the local-time filename stamp, a `# <title>` heading, a
 `**Summary:**` line, and then the first-person narrative. Set the filename stamp to the referenced
-past time where the entry is not about today. Where the writer signalled no time at all, ask by
-the ask-for-entry-time-or-omit-it rule and stamp the file to their answer.
+past time where the entry is not about today. Where the writer gave no time, ask by the
+ask-for-entry-time-or-omit-it rule and stamp the file to their answer. A day they named is not a
+time.
 
 Related:
 
@@ -77,3 +78,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:05:44 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:01:46 PM PT
