@@ -3,6 +3,14 @@
 **Each step is stated in some rule, and the sequence is stated here.** A writer who reserves a word
 without the sequence reconstructs it, or picks a category by feel.
 
+**The instruction that starts the sequence is "Waytide reserves the word, X".** It names the word
+and asks for all six steps. So the sequence does not have to be spelled out each time a term is
+settled.
+
+**The verb is `reserves`, and never `claims`.** STE Rules 1.5, 1.6, and 1.12 permit a project to add
+its own technical nouns and technical verbs. A reservation is made under those rules. A claim
+asserts a right that no rule granted, so it names the wrong act.
+
 **1. Look the word up in the STE dictionary.** Three outcomes. The word is approved, with the one
 meaning it may carry. The word is not approved, and the dictionary names the approved word that
 replaces it. The word is absent from the STE dictionary. This step is mechanical.
@@ -32,6 +40,11 @@ about the word, and the category.
 selection UI. Bring the lookup in step 1 already done, and the candidate categories named. Steps 4
 and 5 are judgment, and step 1 is not.
 
+**The phrase reserves the word. It does not order a sweep.** A reservation settles what a word
+means in Waytide's prose from that point. Replacing some other word with it, wherever that other
+word already stands, is a separate instruction and is asked for separately. Conform no existing
+prose until it is.
+
 **Why:** the six steps were settled one at a time, in three rules that each state their own part.
 A writer reserving a word had to read all three and infer the order. That is how a category gets
 picked by feel, and how the ETE categories become where every hard word goes.
@@ -40,9 +53,13 @@ The order is not arbitrary. Step 2 comes before step 3 because an ordinary word 
 part-of-speech decision. Step 4 comes before step 5 because an ETE category is a departure from
 the standard. A departure is taken only where the standard has nothing.
 
-**How to apply:** run the six steps in order for every word reserved. Do not skip step 2, which is
-the one that keeps the ETE categories from absorbing the ordinary vocabulary. Do not reach step 5
-until an STE category has been tried and refused.
+**How to apply:** run the six steps in order for every word reserved. Start them on the words
+*Waytide reserves the word, X*, and write `reserves` rather than `claims` for the act. Do not skip
+step 2, which is the one that keeps the ETE categories from absorbing the ordinary vocabulary. Do
+not reach step 5 until an STE category has been tried and refused.
+
+Reserve the word and stop there. Conform existing prose to it only where that is asked for
+separately.
 
 Related:
 
@@ -59,3 +76,4 @@ Related:
 
 Authored by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 12:11:32 PM PT

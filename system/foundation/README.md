@@ -101,6 +101,19 @@ citation becomes a dependency only where the citing rule **will not work** witho
 package. Motivation is not the test, and a "standalone" claim is about what must be installed
 rather than about what a rule's prose may name.
 
+**A project's durable context lives in its committed artifacts, never in an agent memory store**
+(`project-context-lives-in-the-committed-artifacts`). The premise is the rules-convention's — the
+conventions are read fresh each session rather than recalled, and a store is recall. It reaches
+project context alone. A fact about the engineer rather than the project is machine-scoped, and
+per-machine configuration under `~/.config/` is where the
+`a-project-does-not-name-its-consumers` rule already sends one.
+
+**A preference the engineer expresses is asked about at once**
+(`ask-at-once-when-a-preference-is-expressed`), through the selection interface, offering a rule,
+an observation, or neither. The two rules are only sound together: the first forbids holding a
+preference, and the second is what keeps forbidding it from costing anything. A preference is not
+a rule until it is written, and every restatement of one is evidence that nothing carried it.
+
 **A historical record is edited for one reason only** — that it discloses what should not have
 been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
 removes the disclosure and keeps every claim true by stating it at a lower resolution. It never
@@ -221,3 +234,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 11:33:53 AM PT

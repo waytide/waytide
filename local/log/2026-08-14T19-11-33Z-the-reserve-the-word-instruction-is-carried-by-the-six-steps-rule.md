@@ -1,0 +1,1 @@
+# The `a-word-is-reserved-in-six-steps` rule carries the instruction that starts the sequence, `Waytide reserves the word, X`, the verb `reserves` rather than `claims`, since STE Rules 1.5, 1.6, and 1.12 are what permit the act, and the boundary that the phrase reserves the word and does not order a sweep of the prose
