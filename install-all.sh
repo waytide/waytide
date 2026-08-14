@@ -102,6 +102,7 @@ add code/ruby           code-ruby
 add git                 git
 add versioning          versioning
 add design-by-efferent  design-by-efferent
+add diary               diary
 
 # Activate the system: place the project-root AGENTS.md. Foundation is
 # installed above, so run its AGENTS.md-only mode (it won't re-add itself).

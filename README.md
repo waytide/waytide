@@ -34,6 +34,9 @@ below (each has its own repository).
 - **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen:
   semver, optionally prefixed by a product generation number. Not how a package is
   built or published.
+- **[diary](https://github.com/waytide/diary)**. The one record the engineer writes rather than the
+  agent. Read at session start, and followed in nothing. Contributes the `diary/` artifact
+  directory.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs
 them. A standalone package has none. Each arrow below points from a package to the
@@ -44,6 +47,7 @@ design-by-efferent  →  foundation, language, testing
 testing             →  foundation, language
 code/ruby           →  foundation, language
 language            →  foundation
+diary               →  foundation
 
 foundation          →  (nothing — the base every other package builds on)
 git                 →  (nothing — standalone)
@@ -73,6 +77,7 @@ git subtree add --prefix waytide/system/code/ruby           https://github.com/w
 git subtree add --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
 git subtree add --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree add --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
+git subtree add --prefix waytide/system/diary                https://github.com/waytide/diary.git                master --squash
 ```
 
 Refresh any package later using `git subtree pull`:
@@ -85,6 +90,7 @@ git subtree pull --prefix waytide/system/code/ruby           https://github.com/
 git subtree pull --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
 git subtree pull --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree pull --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
+git subtree pull --prefix waytide/system/diary                https://github.com/waytide/diary.git                master --squash
 ```
 
 Or do it all at once with [`install-all.sh`](install-all.sh), which installs and refreshes every package. Fetch it and run it from your project root:
