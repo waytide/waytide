@@ -10,7 +10,7 @@ the month with no leading zero, the four-digit year, the literal word `at`, and 
 
 The datetime is derived from the entry's filename stamp, which is **local time**. See the
 diary-entries rule. Parse the filename's `YYYY-MM-DDTHH-MM-SS` as local time, and convert no
-time zone. The trailing `Z` in the filename is a literal token rather than a claim of UTC.
+time zone. The filename carries no zone designator, so nothing in it has to be discounted.
 
 The structure of a full entry is therefore the `# <title>`, then the datetime line, then the
 optional `**Tags:**` line, then the optional `**Summary:**` line, and then the body. The body
@@ -34,3 +34,4 @@ Related:
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
