@@ -64,6 +64,7 @@ the word's vocabulary entry. State what the STE dictionary says about the word i
 
 Related:
 
+- the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the second departure, and the only
   other one
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts
@@ -77,3 +78,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT

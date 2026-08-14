@@ -76,6 +76,7 @@ add it to the table and add the phrase that met it.
 Related:
 
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
+- the a-word-is-reserved-in-six-steps rule — the sequence for reserving a word
 - the ete-declares-its-own-categories rule — the categories a reserved word is named in
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — which overrides STE Rule 1.3 above
 - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
@@ -91,3 +92,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT

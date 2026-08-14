@@ -39,6 +39,7 @@ it is ordinary vocabulary, and record no entry for it.
 
 Related:
 
+- the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops
 - the ete-declares-its-own-categories rule — where a term is reserved
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the foundation vocabulary-convention — which vocabulary a term is written in
@@ -47,3 +48,4 @@ Related:
 
 Authored by Scott Bellware on Wed Aug 12 2026 at 9:58:22 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT

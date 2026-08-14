@@ -64,6 +64,7 @@ the approved word means something else, keep Waytide's word. Reserve it in the p
 Related:
 
 - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
+- the a-word-is-reserved-in-six-steps rule — the sequence this rule's step sits in
 - the ete-declares-its-own-categories rule — the categories a reserved word is named in
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
@@ -82,3 +83,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT

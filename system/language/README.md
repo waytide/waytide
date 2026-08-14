@@ -22,6 +22,9 @@ English — is in `ste/`. Five rules:
 - **waytide-keeps-its-word-where-the-ste-word-means-something-else**. The order the two parts decide
   in. The STE dictionary decides first, and Waytide keeps its own word where the approved word means
   something else.
+- **a-word-is-reserved-in-six-steps**. The sequence a writer runs to reserve a word: look it up,
+  ask what it names, decide noun or verb, try an STE category, fall to an ETE category, write the
+  entry.
 - **ete-declares-its-own-categories**. ETE adds five technical noun and verb categories to the
   standard's twenty-two and four. This contradicts STE Rule 1.5 and STE Rule 1.12, each of which
   closes its list.
@@ -73,3 +76,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:14:52 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
