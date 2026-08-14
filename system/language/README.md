@@ -14,6 +14,23 @@ How language is used: precisely. A word is not a label applied to a thought afte
 - **expand-abbreviations-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses). Don't use unexplained shorthand.
 - **an-answer-is-a-list-and-prose-must-justify-itself**. An answer to the engineer is a list, and each item states a fact rather than narrating — no describing a decision, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its items are parallel. Where an expansion would add something, the answer ends by offering one.
 
+**Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical
+English — is in `ste/`. Five rules:
+
+- **waytide-prose-conforms-to-the-ste-writing-rules**. Waytide's prose is written to the STE writing
+  rules, which fix sentence length, paragraph length, active voice, and the rest.
+- **waytide-keeps-its-word-where-the-ste-word-means-something-else**. The order the two parts decide
+  in. The STE dictionary decides first, and Waytide keeps its own word where the approved word means
+  something else.
+- **ete-declares-its-own-categories**. ETE adds five technical noun and verb categories to the
+  standard's twenty-two and four. This contradicts STE Rule 1.5 and STE Rule 1.12, each of which
+  closes its list.
+- **ete-fixes-the-meaning-of-a-word-in-its-category**. A word reserved in an ETE category takes the
+  meaning its entry into the ETE gives it, whether the dictionary omits the word, refuses it, or
+  approves it with a different meaning. This contradicts STE Rule 1.3.
+- **ordinary-vocabulary-is-not-reserved-and-not-rewritten**. ETE conforms its terminology and does
+  not conform its ordinary vocabulary. This contradicts STE Rule 1.1.
+
 **Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
 - **terms** — `solubility` (how readily a unit dissolves into the reader's understanding — the design-quality criterion, and a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
@@ -55,3 +72,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 12:14:52 PM PT
