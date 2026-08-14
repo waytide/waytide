@@ -26,6 +26,11 @@ foundation package's file-names rule requires. Do not conflate the two.
   identical or nearly identical to the body**, as it is on a very short entry. The entry is
   then the title and the prose, with nothing repeated.
 
+**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by
+this rule and by the datetime-stamp-line, diary-category-tags, omit-body-when-same-as-title, and
+ask-for-entry-time-or-omit-it rules. Nothing else follows from it. Nothing beside the entry file
+is written, and no index is maintained — see the timeline-view rule.
+
 **Dating default:** an entry is about **today** unless the writer signals otherwise. The writer
 need not write *today*, and the absence of any time reference means the current local date and
 time. Where the writer refers to a different time, by an explicit date or by a phrase such as
@@ -52,9 +57,11 @@ Related:
 - the diary-category-tags rule — the `**Tags:**` line
 - the omit-body-when-same-as-title rule — the body dropped where the title says it already
 - the ask-for-entry-time-or-omit-it rule — where the writer gives no time
+- the timeline-view rule — the on-demand listing of the entries this writes
 - the foundation package's file-names rule — the UTC normalization this departs from
 
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT

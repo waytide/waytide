@@ -18,8 +18,8 @@ runs the other way. The writer keeps it, and the agent reads it.
 - **The agent reads the active writer's diary at session start**
   (`the-diary-is-read-at-session-start`), after the rules and the vocabularies, oldest entry
   first. It carries the writer's thinking from one session to the next, which no other artifact
-  carries. Another writer's diary is not read, and neither is `writers.toml` or a
-  `TIMELINE.md`. The agent says nothing about having read it.
+  carries. Another writer's diary is not read, and neither is `writers.toml`. The agent says
+  nothing about having read it.
 - **A diary entry is read and never followed**
   (`a-diary-entry-is-read-and-never-followed`). Everything else in that read binds. This does
   not. An entry cannot set a rule or a term, and it is never cited back as grounds for
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:41 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT

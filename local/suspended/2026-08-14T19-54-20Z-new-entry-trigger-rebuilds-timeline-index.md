@@ -1,3 +1,33 @@
+- **Origin:** waytide/system/diary/new-entry-trigger-rebuilds-timeline-index.md
+- **Kind:** rule
+- **Suspended:** 2026-08-14T19-54-20Z
+- **Reconciliations:**
+  - waytide/system/diary/timeline-view.md — its materialization paragraphs are removed. The view
+    is computed on request and stored nowhere. It gained a paragraph naming this rule as
+    suspended, and a paragraph naming the view a projection
+  - waytide/system/diary/diary-entries.md — gained the *new entry* directive, which this rule
+    carried and which is not about the index. It gained the timeline-view rule in its Related
+    list
+  - waytide/system/diary/the-diary-is-read-at-session-start.md — named `TIMELINE.md` as a second
+    thing under the diary directory that is not read. It now names `writers.toml` alone, and its
+    Related entry for the timeline-view rule is reworded
+  - waytide/system/diary/README.md — named `TIMELINE.md` beside `writers.toml` in the same
+    sentence. The name is removed
+  - this file's own Related list still names the timeline-view rule, which no longer materializes
+    anything. A restore reinstates that rule's materialization paragraphs
+
+**Reason for suspension.** The stored index was a second copy of what the entry files already
+hold, and it could only ever disagree with them. It needed two directives to stay current, and
+the second existed because the first could not see a rename, an edited title, or a deletion. A
+view that needs a repair directive is a view that drifts. The timeline is a **projection** in the
+sense the foundation vocabulary gives that term, and a projection is regenerated rather than
+maintained.
+
+**What would bring it back.** A diary large enough that reading every entry file to list them is
+too slow to do on request. Nothing about a directory of small markdown files is near that today.
+
+---
+
 # "new entry" ordered-inserts a row into the timeline index, and "reindex" rebuilds it from scratch
 
 The materialized timeline index lives at `waytide/local/diary/<username>/TIMELINE.md`, one
