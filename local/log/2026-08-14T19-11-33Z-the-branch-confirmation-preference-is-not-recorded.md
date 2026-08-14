@@ -1,0 +1,1 @@
+# The confirm-before-committing-to-an-experiment-branch preference is recorded neither as a rule nor as an observation — asked through the selection interface under the `ask-at-once-when-a-preference-is-expressed` rule, and declined

@@ -36,6 +36,12 @@ The `local/` directory holds this project's own working state. That is `log/`,
 `deferred/`, `aspiration/`, `intention/`, `work-sessions/`, and `experiments/`. They are worked
 with as their conventions describe, not read as binding rules at session start.
 
+**`local/diary/` is the exception, and it is read.** The `diary` package's
+the-diary-is-read-at-session-start rule directs the read, after the rules and the vocabularies,
+oldest entry first. It binds nothing — see that package's a-diary-entry-is-read-and-never-followed
+rule. The directory does not exist here yet, and its absence is ordinary, for the same reason
+`local/rules/` was named before it held anything.
+
 **This repository drops the `waytide/` wrapper that a consuming project has.** There,
 the two directories sit under it — `waytide/system/` for the installed packages and
 `waytide/local/` for the project's own work. Here they are at the root, `system/` and `local/`, for the same reason the packages are. This *is* Waytide, so wrapping it in
