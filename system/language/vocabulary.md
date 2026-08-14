@@ -37,25 +37,7 @@ The *principles* that govern word selection stay as rules — `name-literally-no
 - **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. **`caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view.** A general design-vocabulary term. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.**
 - **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ete/` rules state. **`Say it in ETE` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The rules are in `waytide/system/language/ete/`. **STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.**
 - **actuation** — the invocation of a unit from its use site. **STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site. Technical noun, ETE engineering, design, process, and method.**
-
-
-## Words from the design vocabulary
-
-Words Waytide takes from the established vocabulary of **structural design and software design**,
-because the extant term already says the thing exactly. **Waytide does not define these.** It uses
-them in their own sense, and reserves them where the STE dictionary disputes them.
-
-**This is what the language-is-precise-here rule asks for.** That rule holds that the precise word
-is the one that already means exactly this. It is as often an established technical term
-as a plain one. A word here is one of those, kept rather than coined.
-
-- **preserve** — to keep something that already exists, rather than putting it there or serving it.
-  A rule preserves a mindset. Clarity is preserved. **STE: not approved.** The STE dictionary gives
-  PRESERVATION, a technical noun for a maintenance procedure, which does not carry this.
-
-**A term Waytide defines belongs above, not here.** `load-bearing` comes from structural
-engineering and `cradle` from a physical object, and `design-by-efferent` defines the two, so the two are
-terms. The line is whether Waytide says what the word means.
+- **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. **Waytide did not coin it.** It is the word structural design and software design already use, kept because the extant term says the thing exactly, which is what the language-is-precise-here rule asks for. **STE: not approved. The STE dictionary gives PRESERVATION, a technical noun for a maintenance procedure, which does not carry this. Technical verb, ETE engineering, design, process, and method.**
 
 ## Substitutions
 
@@ -177,3 +159,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 11:53:50 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:19:04 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT

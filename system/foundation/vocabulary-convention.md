@@ -16,17 +16,18 @@ missing. `git`, `code`, and `code/ruby` have none. Five packages do.
   "sweep". `verified` rather than "green".
 - **Discontinuations** — a word removed from use with nothing in its place. `discriminator` went
   because the concept went, not because another word replaced it.
-- **Words from the design vocabulary** — a word taken from the established vocabulary of structural
-  design and software design, because the extant term already says the thing exactly. `preserve`.
-  **A vocabulary does not define these.** It records that the project uses them in their own sense,
-  and reserves them where the STE dictionary disputes them.
 
 **A substitution and a discontinuation are different acts.** A substitution names two words. A
 discontinuation names one. Do not file one under the other's heading.
 
-**A term and a word from the design vocabulary differ in one test: does the vocabulary say what the
-word means?** `load-bearing` comes from structural engineering, and `design-by-efferent` defines it,
-so it is a term. `preserve` is used in its own sense and is defined nowhere, so it is not.
+**A term Waytide did not coin is still a term.** `load-bearing` comes from structural engineering,
+`cradle` from a physical object, and `preserve` from the vocabulary of design. Each is a term,
+because the vocabulary says what it means. Where the word was taken rather than coined, the entry
+says so in its own prose. That is an **origin** and not a kind of entry.
+
+A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry, and that entry
+carried a definition, which was the test that was to have kept it out. See the suspended
+words-from-the-design-vocabulary section.
 
 ## Which vocabulary decides
 
@@ -120,3 +121,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT
