@@ -16,7 +16,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 **Its vocabulary** — the terms the package defines and the substitutions it enforces — lives in `vocabulary.md`:
 
-- **terms** — `solubility` (how readily a unit dissolves into use — the design-quality criterion, and a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
+- **terms** — `solubility` (how readily a unit dissolves into the reader's understanding — the design-quality criterion, and a methodological principle with its own rule), and the general design-vocabulary terms `efferent` (the use-site perspective) and `actuation` (the invocation of a unit), which `design-by-efferent` specializes.
 - **the substitutions**. The general, domain-less word swaps — the literal term in place of each slang or figure (happy path → normal path, wrap → mediates, caller → efferent, the call → actuation. The rest), a table with notes for the few that need them. Domain-specific swaps live with their domain (`verified`/`prevent` in `testing`, and the hinge/cradle/loop lexicon in `design-by-efferent`).
 
 Every package keeps its terminology this way — its terms and substitutions in its own `vocabulary.md`, the model `design-by-efferent` established. A package with no terminology of its own keeps no `vocabulary.md`. The file is written where a package has terms whose ordinary meaning misleads or words it swaps, not to complete a set. The *principles* that govern word selection stay as the rules above.
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT

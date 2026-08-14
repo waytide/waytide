@@ -23,7 +23,7 @@ is not obliged to hold one that the work does not call for.
 
 **The order is settled. The set is not.** A worker scanning a plan finds Goals before Tasks in every plan that has the two, which is what makes the shape learnable. That is not the same as fixing which elements a plan may hold. A plan whose work has an element these do not name should carry it, rather than omit it to fit.
 
-**Why:** a plan is scanned by a worker executing it task by task. So a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over generation that the plans-no-code-samples rule keeps.
+**Why:** a plan is scanned by a worker executing it task by task. So a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over code generation that the plans-no-code-samples rule keeps.
 
 **How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear. State each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document.
 
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT

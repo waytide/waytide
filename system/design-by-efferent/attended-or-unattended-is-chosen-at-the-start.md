@@ -10,7 +10,7 @@ started and held for its duration:
 
 **DBE is in effect either way, and that is what makes this a cadence rather than a switch.**
 Unattended is not DBE off. The **cradle** still holds — the efferent test written before the
-implementation, the actuation designed from the use site, the generation steered toward
+implementation, the actuation designed from the use site, the code generation steered toward
 **solubility**. Every hinge is still determined.
 
 What changes is who decides it. The method is
@@ -152,3 +152,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT

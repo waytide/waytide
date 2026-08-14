@@ -9,7 +9,7 @@ The one-liner:
 **The vocabulary**. `vocabulary.md` is the method's lexicon: loop, hinge, gate, deliberation, mechanical, subtle, cradle, efferent, actuation, observation, load-bearing, and the DBE name itself. It carries the distributed-OODA framing (the human owns Orient, and the AI owns Observe and Act) and the discontinued terms. Read it first — the rules below use its words with its meanings.
 
 **The method**
-- DBE is a design tool, not a testing ritual — the test is a **cradle** for generation, not a pass/fail gate.
+- DBE is a design tool, not a testing ritual — the test is a **cradle** for code generation, not a pass/fail gate.
 - Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar.
 - First turn: the first gate is the actuation and an unnamed assert. Naming is deferred to the feature's close.
 - Never ask whether to start test-first — it is the standing default.
@@ -79,3 +79,4 @@ Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
+Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
