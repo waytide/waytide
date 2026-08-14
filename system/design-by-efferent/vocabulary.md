@@ -58,13 +58,13 @@ waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 ## The two results the gates rest on
 
-Every gate's form — options plus a mandatory escape — follows from two results, and the rules refer to them by these names:
+Every gate's form — options plus a mandatory free-text option — follows from two results, and the rules refer to them by these names:
 
 **Make the human produce the answer, not approve one.** A single proposal put up for approval ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. Judging is not producing: the human ratifies, and their judgment is pulled toward the average rather than exercised above it. Offering several genuine alternatives keeps the human comparing real candidates, and producing an answer instead of ratifying one. So a gate presents alternatives, never a fait accompli.
 
 **The best options are ones the AI can't produce.** The option set is the AI's own, drawn from the average. The best answer is often one only the human can produce.
 
-A closed list tempts the human to pick from it instead of producing their own. So every gate keeps an escape open — the human dictating outright, or a chat to work the answer out. The escape is mandatory, at every gate, without exception. It is what keeps the human above the AI's mean when the right answer is not on the list.
+A closed list tempts the human to pick from it instead of producing their own. So every gate keeps the free-text option there — the human dictating outright, or a chat to work the answer out. It is mandatory, at every gate, without exception. It is what keeps the human above the AI's mean when the right answer is not on the list.
 
 The first result says *why there are options*. The second says *why the options are never enough*.
 
@@ -214,3 +214,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:38:29 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT

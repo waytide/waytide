@@ -2,9 +2,9 @@
 
 Every time you prompt the engineer to make a selection, a decision, or an answer, present it through the interactive **selection UI**. That is the `AskUserQuestion` tool. That holds for **any** prompt. Never use a prose question or a hand-typed list. Each genuine candidate is an option.
 
-**Do not add an escape option of your own.** The selection UI auto-supplies a free-text **"Other"** answer. That built-in escape *is* how the engineer answers outside the option set. The best answer is often one only they can produce, and a closed list must never foreclose it. Adding your own "Chat about this" duplicates it.
+**Do not add a free-text option of your own.** The selection UI auto-supplies one, the **"Other"** answer. That built-in option *is* how the engineer answers outside the option set. The best answer is often one only they can produce, and a closed list must never foreclose it. Adding your own "Chat about this" duplicates it.
 
-**Offer an `Explain` option.** It is not an escape and does not duplicate the free-text answer: the built-in escape is how an engineer **answers** outside the options. This is how they ask what the question **means** before answering at all. An engineer who does not understand the options cannot produce a better one. So the two serve opposite halves of the moment responsibility transfers to them.
+**Offer an `Explain` option.** It is not a free-text option and does not duplicate the built-in one: that is how an engineer **answers** outside the options. This is how they ask what the question **means** before answering at all. An engineer who does not understand the options cannot produce a better one. So the two serve opposite halves of the moment responsibility transfers to them.
 
 - **What it does.** Selecting it is as if the engineer had asked for the question to be explained. It is answered with **a summary at the top followed by a normal level of explanation**. It is not a restatement of the options, and not the same framing a second time.
 - **The selection prompt is then displayed again, unchanged.** The explanation does not replace the decision. The same options are presented after it, so the engineer decides with the explanation in hand.
@@ -17,13 +17,13 @@ Every time you prompt the engineer to make a selection, a decision, or an answer
 
 A genuine decision almost always has a real second candidate once examined. Surface it. The built-in "Other" then carries the answer the options do not contain, so the engineer is never boxed into the set.
 
-**Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text escape. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a decision from being buried inside prose. The two-option floor is a forcing function. It pushes toward finding the real decision rather than presenting a single proposal for approval. A single proposal puts the engineer in the position of ratifying an answer rather than producing one.
+**Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text option. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a decision from being buried inside prose. The two-option floor is a forcing function. It pushes toward finding the real decision rather than presenting a single proposal for approval. A single proposal puts the engineer in the position of ratifying an answer rather than producing one.
 
 The `Explain` option answers the failure the rest of the rule cannot reach — a prompt that is well-formed, correctly presented, and **not understood**. Without it the engineer's recourse is the free-text box, which asks them to compose a request at the moment they are least equipped to. The agent's only signal is then a question going unanswered.
 
 Making it an option rather than a judgment call is the point. The agent is the party that cannot tell which of its own questions are unclear.
 
-**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine candidate, plus `Explain`. Never add your own escape option.
+**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine candidate, plus `Explain`. Never add a free-text option of your own.
 
 Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants.
 
@@ -50,3 +50,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT

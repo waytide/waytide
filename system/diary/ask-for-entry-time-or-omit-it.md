@@ -20,11 +20,10 @@ answer decides only whether the entry carries a time and what it is.
 is not the entry's time, and naming it `Now` would say it is. The ask then carries **No time**,
 **Enter the time**, and **Explain**.
 
-**`Enter the time` is not an escape option, and adding it does not break the present-every-prompt
-rule.** That rule forbids an agent-supplied escape because the harness already gives a free-text
-answer for what the options do not contain. This question asks for a time, so a specific time is
-an answer **within** the question rather than outside it. The free-text answer remains for
-anything else.
+**`Enter the time` is not a free-text option, and adding it does not break the present-every-prompt
+rule.** That rule forbids an agent-supplied free-text option because the harness already gives one
+for what the options do not contain. This question asks for a time, so a specific time is
+an answer **within** the question rather than outside it. The harness's free-text option remains for anything else.
 
 **A date-only entry sorts to the start of its day**, which matches the filename sort, where `-`
 precedes `T`.
@@ -57,7 +56,7 @@ Related:
 - the diary-entries rule — the dating default that settles the date, and the filename stamp
 - the datetime-stamp-line rule — the in-content line that drops the time with it
 - the foundation package's present-every-prompt-through-askuserquestion rule — the interface, the
-  `Explain` option, and the escape this rule's third option is not
+  `Explain` option, and the free-text option this rule's third option is not
 
 ---
 
@@ -66,3 +65,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:05:44 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:01:46 PM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT

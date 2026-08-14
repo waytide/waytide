@@ -38,8 +38,8 @@ summary) and **next deferred item**.
 
 **Every prompt to the engineer goes through the selection interface**
 (`present-every-prompt-through-askuserquestion`) — any selection, decision, or answer, never a prose
-question. The harness supplies the free-text escape, so the agent adds none of its own. It does
-add an **`Explain`** option, which is the opposite half of that escape. The escape is how an
+question. The harness supplies the free-text option, so the agent adds none of its own. It does
+add an **`Explain`** option, which is the opposite half of it. The free-text option is how an
 engineer answers outside the options. `Explain` is how they ask what the question means
 before answering.
 
@@ -235,3 +235,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 11:33:53 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
