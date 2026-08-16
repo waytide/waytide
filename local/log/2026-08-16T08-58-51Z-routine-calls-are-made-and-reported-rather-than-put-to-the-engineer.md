@@ -1,0 +1,1 @@
+# A routine call is made and reported with its basis rather than put to the engineer, and a selection prompt is reserved for an irreversible act or for two readings that produce genuinely different artifacts — settled on the evidence that four of seven prompts in one session were abandoned, and that reports carried the reasoning already written into the rule
