@@ -1,5 +1,21 @@
 # Subagents Under Waytide — Aspiration
 
+- **Origin:** local/aspiration/2026-08-03T01-02-22Z-subagents-under-waytide.md
+- **Kind:** aspiration
+- **Suspended:** 2026-08-16T09-14-14Z
+- **Reconciliations:**
+  - none — the one artifact naming this aspiration is a work session record, and a historical
+    record is left as written
+
+**Why it was set aside:** no authoring work has been delegated to a subagent since this was
+written, and no rule in any package governs subagents. The constraint it settles has never met
+real work, so the direction is dormant rather than dropped.
+
+**What would bring it back:** authoring work being considered for delegation to a subagent. The
+first question this aspiration asks — whether a subagent is governed by the rules at all — is
+still unanswered, and this aspiration holds that it must be answered before anything is
+delegated.
+
 ## Premise
 
 Claude Code can dispatch **subagents** — separate agents with their own context window, each
@@ -95,3 +111,4 @@ the **mechanical** complement, never for a hinge.
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 6:02:22 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:14:14 AM PT

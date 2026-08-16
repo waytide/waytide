@@ -1,0 +1,1 @@
+# `Realized` is no longer the only reversible state word — `Deferred` is taken back the moment the work is taken up, so the design-convention now names two of its five as reversible, and both describe a direction rather than a verdict

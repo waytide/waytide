@@ -1,5 +1,7 @@
 # A Generalized Description of Waytide — Aspiration
 
+- **State:** Deferred
+
 ## Premise
 
 **Waytide has one description of itself, general enough to serve both the README and the
@@ -71,3 +73,4 @@ this description is that projection, or something the projection is produced fro
 ---
 
 Authored by Scott Bellware on Mon Aug 10 2026 at 1:54:51 PM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT

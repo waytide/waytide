@@ -1,0 +1,1 @@
+# `Deferred` is added as a fifth state word to the direction artifact and the sequencing artifact, reusing the vocabulary's own term for *not yet* — it means direction kept with no date and nobody working toward it, it is taken back when the work is taken up, and a `Deferred` artifact is not a deferred item and does not move into `local/deferred/`

@@ -1,5 +1,7 @@
 # The consuming-project orchestrator — Aspiration
 
+- **State:** Realized
+
 ## Summary
 
 `read-consuming-projects.sh`, a committed script in the `foundation` package that **discovers the
@@ -262,3 +264,4 @@ Changed by Scott Bellware on Thu Aug 6 2026 at 2:23:04 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:36:13 PM PT
 Changed by Scott Bellware on Fri Aug 7 2026 at 1:45:20 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:15:18 AM PT

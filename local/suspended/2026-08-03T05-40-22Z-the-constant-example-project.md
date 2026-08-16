@@ -1,5 +1,25 @@
 # The Constant Example Project — Aspiration
 
+- **Origin:** local/aspiration/2026-08-03T05-40-22Z-the-constant-example-project.md
+- **Kind:** aspiration
+- **Suspended:** 2026-08-16T09-15-18Z
+- **Reconciliations:**
+  - none made. The one live artifact naming this aspiration is a work session record, and a
+    historical record is left as written
+  - the suspended Upload example project design names this one in its own `**Reconciliations:**`
+    block, and that block records what was done when *it* was suspended rather than pointing at
+    what governs now. It is left as written for the same reason
+
+**Why it was set aside:** the direction it settles is that `constant` serves as the example by
+having been built under Waytide rather than built to demonstrate it. That remains true of
+`constant` and is no longer direction this project is working toward, so it sits here rather
+than among the aspirations still in play.
+
+**What would bring it back:** a decision about which project the method is shown through — a
+different project taking the role, or the example project becoming something this repository
+actively works on again. Restoring it puts the file back at its `**Origin:**` and removes these
+lines.
+
 ## Summary
 
 **`constant` is the example project.** It is a real Eventide library — the published gem
@@ -157,3 +177,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 10:48:30 PM PT
 Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT
 Changed by Scott Bellware on Tue Aug 4 2026 at 9:52:06 AM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:15:18 AM PT

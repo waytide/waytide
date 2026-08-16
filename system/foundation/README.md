@@ -79,18 +79,27 @@ rules carry it, and they were the `plan` package until it was included here on 2
 - **An implementation plan's common elements read in a settled order** — a canonical `**State:**`
   line where it has one, Goals, Source designs, Work sequences, Superseded plans, Architecture,
   Process notes, Tasks, among others the work calls for. The order is settled. The set is not
-  (`plan-document-format`). The state is **Implemented**, **Superseded**, **Abandoned**, or
-  **Suspended**, and absence means the work is sequenced and not yet implemented
+  (`plan-document-format`). The state is **Implemented**, **Deferred**, **Superseded**,
+  **Abandoned**, or **Suspended**, and absence means the work is sequenced and not yet implemented
   (`plans-convention`). **Implemented** is not taken back, where the direction artifact's
-  **Realized** is: a plan that would expand is superseded by a later one instead.
+  **Realized** is: a plan that would expand is superseded by a later one instead. **Deferred** is
+  taken back in both, the moment the work is taken up.
 - **A design doc shares a common spine** — a canonical `**State:**` line where it has one, summary
   or premise, motivation, substantive sections, dated **Settled** resolutions, and an **Out of
-  Scope / Deferred** tail (`design-document-format`). The state is **Realized**, **Superseded**,
-  **Abandoned**, or **Suspended**, and absence means the direction is settled and not yet realized
-  (`design-convention`). **Realized** is the one state word in the system that is taken back, since
-  a realized design that expands is waiting on the work again.
+  Scope / Deferred** tail (`design-document-format`). The state is **Realized**, **Deferred**,
+  **Superseded**, **Abandoned**, or **Suspended**, and absence means the direction is settled and
+  not yet realized (`design-convention`). **Realized** and **Deferred** are the two state words in
+  the system that are taken back — a realized design that expands is waiting on the work again,
+  and a deferred one loses the line the moment the work is taken up. **Deferred** reuses the
+  vocabulary's own word for *not yet*, and a `Deferred` artifact does not move into
+  `waytide/local/deferred/`.
 - **Plans contain no code samples**, and avoid committing to method or file names that are not
   yet decided (`plans-no-code-samples`).
+- **Each artifact pairs with a log entry** — on creation, on each **Settled** resolution, and on
+  each change of state (`direction-and-sequencing-artifacts-take-a-log-entry`). A completed task
+  takes none, and neither does prose that settles nothing. It closes an asymmetry: four other
+  conventions already stated their own pairing, and these two rested on the decision log's
+  when-in-doubt clause.
 - **A design section documenting a package dependency is titled "Package Dependency"**, never a
   bare "Dependency", which is overloaded (`package-dependency-heading`).
 
@@ -256,3 +265,5 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 9:08:02 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:32:17 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 1:04:10 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:04:53 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT

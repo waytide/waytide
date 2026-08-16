@@ -1,5 +1,7 @@
 # The Feature Capability — Aspiration
 
+- **State:** Realized
+
 ## Summary
 
 Feature work gets a lifecycle mirroring the experiment capability's: its own branch, a
@@ -192,3 +194,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 10:36:12 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:04:53 AM PT

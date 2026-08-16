@@ -1,5 +1,7 @@
 # The Feature Capability — Intention
 
+- **State:** Implemented
+
 ## Goal
 
 Give feature work the lifecycle the design settles: its own branch, a working location
@@ -124,3 +126,4 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
 Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:48:36 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT

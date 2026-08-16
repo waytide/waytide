@@ -1,0 +1,1 @@
+# A direction artifact and a sequencing artifact each take a log entry — on creation, on each settled resolution, and on a change of state, with a completed task and prose that settles nothing taking none — closing the asymmetry where four conventions stated their own pairing and these two rested on the decision log's when-in-doubt clause

@@ -1,0 +1,1 @@
+# The generalized-description aspiration is marked `Deferred` — it is a marker to return to indefinitely, and the word was added for it, absence having been unable to distinguish a marker from direction merely waiting on the work

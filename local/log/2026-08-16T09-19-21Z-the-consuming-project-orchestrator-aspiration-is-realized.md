@@ -1,0 +1,1 @@
+# The consuming-project orchestrator aspiration is marked `Realized` — `read-consuming-projects.sh` ships in `foundation`, its 2026-08-04 no-status resolution having been reopened rather than superseded and left open
