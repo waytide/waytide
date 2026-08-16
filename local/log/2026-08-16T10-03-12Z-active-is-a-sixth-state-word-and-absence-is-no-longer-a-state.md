@@ -1,0 +1,1 @@
+# `Active` is added as a sixth state word to the direction artifact and the sequencing artifact, and absence stops being a state for them — every design and every plan now carries a `**State:**` line from the moment it is written, and one without a line is a defect rather than a record in progress

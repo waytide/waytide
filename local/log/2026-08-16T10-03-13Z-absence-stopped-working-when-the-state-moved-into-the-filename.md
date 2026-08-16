@@ -1,0 +1,1 @@
+# Absence stopped carrying the in-progress state when the state moved into the filename — a missing suffix and an oversight look the same in a directory listing, which is the one view the suffix exists to serve, where a missing line inside a file is visible in the place it would sit

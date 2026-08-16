@@ -1,0 +1,1 @@
+# The state suffix is in the filename and not in the file's contents — it was appended to the contents for ten minutes on 2026-08-16, which put the same value twice inside one artifact for no reader who was asking for it there

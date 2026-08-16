@@ -7,8 +7,8 @@
 See the a-project-works-in-a-mode-chosen-at-the-start rule. The rule is written in the formal mode's terms because formal is the default. Read *plan* as *intention* or *action*, and `plans/` as the directory your mode names.
 
 - **Relationship to design:** a plan **realizes** an `waytide/local/design/` doc — it names its **Source design** and sequences the build the design settled. Under intuitive mode an intention realizes an aspiration, in `waytide/local/aspiration/`. Under OODA mode an action realizes an orientation, in `waytide/local/orientation/`. Design settles *direction*. The plan settles *order*. A plan may exist without a separate design doc for small work, but when a design exists the plan points back to it.
-- **The state sits on a canonical `**State:**` line**, at the top of the record above the goals, carrying one of the four state words and nothing else — `- **State:** Implemented`. It is the **plain text data attribute** form the system already uses (see this package's vocabulary). **It is added when the record reaches one of those words**, not when the plan is written. **Absence means the work is sequenced and not yet implemented**, so a plan being worked carries no line at all. Do not add one to say so, and do not invent a word for it.
-- **The five states.** **Implemented** — the sequenced work was built. **Deferred** — kept deliberately, with no date and nobody working toward it. **Superseded** — a later plan replaced it. **Abandoned** — dropped before the sequence was built. **Suspended** — paused, not ended. They mirror the direction artifact's five, with **Implemented** standing where **Realized** does. A direction is *realized* by being taken up, and a sequence is *implemented* by being built.
+- **The state sits on a canonical `**State:**` line**, at the top of the record above the goals, carrying one of the six state words and nothing else — `- **State:** Implemented`. It is the **plain text data attribute** form the system already uses (see this package's vocabulary). **Every plan carries one, from the moment it is written.** A new plan is **Active**. Absence was the in-progress state until 2026-08-16, and it stopped working when the state moved into the filename, where a missing suffix is indistinguishable from an oversight. A plan with no state line is now a defect. **The filename also ends with that word in upper case** — see the a-record-ends-with-its-state-in-upper-case rule.
+- **The six states.** **Active** — sequenced work the project is working on, and the state every plan starts in. **Implemented** — the sequenced work was built. **Deferred** — kept deliberately, with no date and nobody working toward it. **Superseded** — a later plan replaced it. **Abandoned** — dropped before the sequence was built. **Suspended** — paused, not ended. They mirror the direction artifact's six, with **Implemented** standing where **Realized** does. A direction is *realized* by being taken up, and a sequence is *implemented* by being built.
 - **`Deferred` carries the vocabulary's own word** — *not yet, the project still intends to do it* — and is taken back when the work is taken up, returning the record to absence. A `Deferred` plan is **not** a deferred item and is not moved into `waytide/local/deferred/`. See the design-convention rule, which settles the word for both artifacts.
 - **The line does not restate the checkboxes.** The tasks say which increments are done. The line says what became of the plan, which the tasks cannot express: a plan may be **Abandoned** or **Superseded** with tasks still unchecked, and every task checked is not the same claim as the plan having concluded.
 - **Implemented is not taken back**, where **Deferred** is. This is where the sequencing artifact departs from the direction artifact. A design that expands loses its **Realized** line, because a countering question expands it (see the design-convention rule). A plan does not expand — it is **superseded** rather than rewritten, per the supersession below. So new work is a later plan, and the implemented one stays implemented.
@@ -22,7 +22,7 @@ See the a-project-works-in-a-mode-chosen-at-the-start rule. The rule is written 
 
 **How to apply:** when a settled design is ready to build, add a plan here. It names its source design, and sequences the work as behavior-stated tasks. Supersede rather than rewrite when direction changes, keeping completed tasks as history.
 
-Leave a new plan without a `**State:**` line, since absence is the sequenced-and-not-yet-implemented state. Add the line when the plan is **Implemented**, **Deferred**, **Superseded**, **Abandoned**, or **Suspended**. Do not take **Implemented** back — a plan that would expand is superseded by a later one instead. Take **Deferred** back when the work is taken up, returning the record to absence. Do not report a plan's state in the session-start notice.
+Give a new plan a `**State:**` line reading **Active**. Change it as the plan reaches **Implemented**, **Deferred**, **Superseded**, **Abandoned**, or **Suspended**. Do not take **Implemented** back — a plan that would expand is superseded by a later one instead. Return **Deferred** to **Active** when the work is taken up. Never leave a plan without a line. Do not report a plan's state in the session-start notice.
 
 In an intuitive-mode project do all of that in `waytide/local/intention/`. Call the artifact an intention, and point it at its source aspiration. In an OODA-mode project do it in `waytide/local/action/`, calling it an action and pointing it at its source orientation. Nothing else differs.
 
@@ -30,6 +30,7 @@ Related:
 
 - the design-convention — the direction artifact's four states, whose **Realized** this mirrors, and the one state word in the system that is taken back
 - the direction-and-sequencing-artifacts-take-a-log-entry rule — when this artifact pairs with a log entry, and why a completed task does not
+- the a-record-ends-with-its-state-in-upper-case rule — the upper-case suffix the state line also takes
 - the experiments-convention and features-convention — the other canonical `**State:**` lines
 - the plan-document-format and plans-no-code-samples rules
 - the a-project-works-in-a-mode-chosen-at-the-start rule — the mode that decides which directory this is
@@ -56,3 +57,6 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:32:17 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:04:53 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT

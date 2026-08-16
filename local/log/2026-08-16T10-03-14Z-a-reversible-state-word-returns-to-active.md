@@ -1,0 +1,1 @@
+# A reversible state word now returns to `Active` rather than to no line — `Realized` when a design expands and `Deferred` when the work is taken up — which is the second job `Active` does and the reason a reversal has somewhere to land

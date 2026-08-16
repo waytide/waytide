@@ -1,0 +1,1 @@
+# The state suffix is the one stated exception to the file-names rule's dash-separated lower-case name — the upper case is what separates the state from the subject, so `…-ooda-terminology-REFUTED.md` does not read as a record about refuted OODA terminology

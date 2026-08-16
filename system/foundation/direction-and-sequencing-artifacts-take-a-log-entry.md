@@ -5,10 +5,11 @@ artifact** — a plan, an intention, or an action — each pair with a one-line 
 `waytide/local/log/`. The entry is written at three moments, and at no others.
 
 - **On creation.** That direction is settled at all, or that a settled direction is now being
-  sequenced, is itself a decision.
+  sequenced, is itself a decision. The record is written **Active**, and the entry records the
+  artifact rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit a direction artifact records
   decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Realized**, **Deferred**,
+- **On a change of state.** The canonical `**State:**` line reaching **Active**, **Realized**, **Deferred**,
   **Superseded**, **Abandoned**, or **Suspended** — and **Implemented** in Realized's place for a
   sequencing artifact — is a decision. So is either reversible word being taken back: **Realized**
   when a design expands, and **Deferred** when the work is taken up.
@@ -79,3 +80,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 16 2026 at 2:04:53 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT

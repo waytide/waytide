@@ -18,7 +18,7 @@ feature onward. That is the intent, not a side effect.
 
 ## Source design
 
-`waytide/local/design/2026-07-27T07-09-02Z-the-feature-capability.md` — settled 2026-07-26 and
+`waytide/local/design/2026-07-27T07-09-02Z-the-feature-capability-REALIZED.md` — settled 2026-07-26 and
 2026-07-27.
 
 ## Architecture
@@ -127,3 +127,5 @@ Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 3:48:36 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT

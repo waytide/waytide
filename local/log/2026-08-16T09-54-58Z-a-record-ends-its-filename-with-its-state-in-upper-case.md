@@ -1,0 +1,1 @@
+# A record carrying a canonical `**State:**` line ends its **filename** with that state word in upper case, after a dash — so a directory listing answers which records concluded, in a file tree, a shell, or an editor sidebar, none of which opens a file to show a line near its top

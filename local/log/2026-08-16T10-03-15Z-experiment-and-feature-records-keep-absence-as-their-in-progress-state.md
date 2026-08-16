@@ -1,0 +1,1 @@
+# An experiment record and a feature record keep absence as their in-progress state and take no suffix while open — the session-start notice reports them, so a name carrying no suffix is answered elsewhere, which is the asymmetry with the two records nothing reports
