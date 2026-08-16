@@ -73,6 +73,8 @@ option, a next step, or a reason something else cannot happen yet. Wait for the 
 Related:
 
 - `CONTRIBUTING.md` — the publish procedure itself
+- the foundation downstream-work-is-never-offered rule — the same never-offer instruction for the
+  act on the other side of a publish, refreshing the projects that installed the package
 - the foundation experiment-lifecycle rule — the affirmation a publish waits on, and its
   instruction that the agent never raises the end of an experiment
 - the foundation feature-lifecycle rule — the completion a publish waits on, and why a feature has
@@ -85,3 +87,4 @@ Related:
 Authored by Scott Bellware on Wed Aug 12 2026 at 10:52:06 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 6:14:22 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:44:35 PM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT

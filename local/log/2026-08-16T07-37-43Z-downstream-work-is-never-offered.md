@@ -1,0 +1,1 @@
+# Work in a downstream project is never offered and its pending state is not reported — a foundation rule, reaching reporting as well as asking, since a trailing line naming what is unrefreshed or unpushed is a prompt whatever its grammar

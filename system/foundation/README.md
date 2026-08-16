@@ -121,6 +121,13 @@ an observation, or neither. The two rules are only sound together: the first for
 preference, and the second is what keeps forbidding it from costing anything. A preference is not
 a rule until it is written, and every restatement of one is evidence that nothing carried it.
 
+**Work in a downstream project is never offered, and its pending state is not reported**
+(`downstream-work-is-never-offered`). A package change leaves every consuming project holding the
+previous version, and closing that gap is the engineer's instruction to give. The rule reaches
+**reporting** as well as asking, because that is where it fails: a trailing line naming what is
+unrefreshed or unpushed is a prompt whatever its grammar. Doing the work when asked, reporting it
+once done, and answering a question about downstream state are each unaffected.
+
 **A historical record is edited for one reason only** — that it discloses what should not have
 been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
 removes the disclosure and keeps every claim true by stating it at a lower resolution. It never
@@ -245,3 +252,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 11:33:53 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 9:08:02 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:32:17 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
