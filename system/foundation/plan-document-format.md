@@ -9,6 +9,7 @@ elements of planning the work actually has. These are the ones that recur, and w
 appear they appear in this order. A plan is not wrong for holding an element not named here. It
 is not obliged to hold one that the work does not call for.
 
+- **`**State:**`** — the canonical state line, where the plan has reached one of the four state words. It sits above the goals, and a plan being worked carries none. See the plans-convention rule, which fixes the words and what absence means.
 - **Goals** — what the plan achieves. Plural where the work has more than one.
 - **Source designs** — pointers to the direction artifacts the plan realizes. Plural: a
   plan may realize more than one. Omitted when there is no separate direction artifact.
@@ -25,7 +26,7 @@ is not obliged to hold one that the work does not call for.
 
 **Why:** a plan is scanned by a worker executing it task by task. So a predictable order and behavior-stated tasks let them find the next increment and its intent without re-reading. Stating behavior rather than code keeps the interactive, incremental control over code generation that the plans-no-code-samples rule keeps.
 
-**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear. State each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document.
+**How to apply:** when writing a plan, carry the elements the work has, ordered as above where they appear. State each task as a behavior with a single checkbox. Add an element the work calls for rather than forcing it into one of these. Point **Source design** at the design being realized, and keep code out of the document. Write no `**State:**` line on a new plan, and place one above the goals where the plan has reached one of the four words.
 
 Do not restate the commit conventions or the project's stack. The first is the `git` package's and the second does not vary by plan. Write an intention or an action exactly the same way, titled `— Intention` or `— Action`.
 
@@ -55,3 +56,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 12:32:17 AM PT

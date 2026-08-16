@@ -6,6 +6,8 @@
 
 - **Relationship to the sequencing artifact:** a design settles direction. The project's sequencing artifact **realizes** it — a plan, an intention, or an action, whichever the mode names. The design is the stable reference it points back to (its **Source design**).
 - **Two kinds:** a **feature/component design** (the structure, file layout, construction, and API of a unit of work) and a **methodology design** (a way of working, argued from a premise). The two live here. They share a spine, not a fixed section list.
+- **The state sits on a canonical `**State:**` line**, at the top of the record above the summary or premise, carrying one of the four state words and nothing else — `- **State:** Realized`. It is the **plain text data attribute** form the system already uses (see this package's vocabulary). **It is added when the record reaches one of those words**, not when the design is written, because none of the four describes direction that has just been settled. That line is the only authoritative statement of the state, and the same words run through a design's prose freely. **Absence means the direction is settled and not yet realized**, so a design still waiting on the work carries no line at all. Do not add one to say so, and do not invent a word for it.
+- **The four states.** **Realized** — the direction was built. **Superseded** — another design replaced it, and the two records name the counterpart. **Abandoned** — dropped without being built. **Suspended** — paused, not ended. They are derived from what becomes of a **direction**, so the experiment's verdict words have nothing to say here: a design is not proven or disproven, and the feature's *Completed* names an intent being finished rather than a direction being taken up.
 - **Settled resolutions:** a design records **Settled** decisions with the date they were settled, so a reader knows what is fixed versus still open. A trailing **Out of Scope / Deferred** section marks what the design deliberately leaves out.
 - **Format:** the same frontmatter-free markdown as rules. The *document shape* (its sections) is the design-document-format rule. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
@@ -40,9 +42,42 @@ say what it is still right about.
 **Say what changed after the fact.** Reporting an amendment is not gatekeeping. Withholding it
 leaves a design that no longer describes the work.
 
+## Realized is the one state word that is taken back
+
+**A realized design keeps governing.** It does not conclude the way an experiment or a feature
+does. It stays the stable reference the sequencing artifact points back at, and the section above
+is why: a question that counters a settled resolution expands the design rather than closing it.
+
+**So the line is removed when the design expands with direction that is not yet built.** The
+record returns to carrying no line, which means what it always means — settled, and not yet
+realized. It takes **Realized** again when the new direction is built.
+
+**The other three are not taken back.** A superseded design stays superseded, an abandoned one
+abandoned. A suspended one resumes, which is a resumption rather than a reversal, and it then
+carries whichever word the direction has reached.
+
+**This is the one place a Waytide state word is reversible**, and it is worth naming as such. An
+experiment's verdict and a feature's conclusion each judge something finished. A direction is not
+finished by being taken up once.
+
+## The session-start notice does not read this line
+
+**The notice reports open experiments and features, and it is not extended to designs.** It reads
+each record's `**State:**` line under `waytide/local/experiments/` and `waytide/local/features/`
+(see the announce-waytide-at-session-start rule). Nothing reads this one.
+
+**A design with no line is the ordinary resting state**, not an alarm. A project accrues settled
+direction faster than it builds it, and a notice line naming every unrealized design would be
+present in every session for the life of the project. That is the failure the deferred queue was
+kept out of the notice to avoid — a line that is always present is read once and never again.
+
+**What the line is for is the record itself**, read when a reader asks what became of a direction.
+
 **Why:** deciding direction and executing it are separate acts, and the direction must stay stable while the build proceeds against it. A dedicated home for designs, distinct from the plans that realize them, keeps the settled shape and its dated resolutions readable on their own. It gives every plan one authoritative source to point at.
 
 **How to apply:** before sequencing a build, settle its direction in a design here. Date each resolution as it is settled, and mark what is out of scope. When the engineer asks something that runs against a settled resolution, answer it. The question is the design expanding, not a conflict to clear first.
+
+Leave a newly written design without a `**State:**` line, since absence is the settled-and-not-yet-realized state. Add the line when the direction is **Realized**, **Superseded**, **Abandoned**, or **Suspended**. Remove it again where a realized design expands with direction that is not yet built, and restore **Realized** when that direction is built. Do not report a design's state in the session-start notice.
 
 Put a selection asking whether the design has expanded where the answer changes what it says. Never refuse to proceed until the design is amended. Record the change as a new dated **Settled** entry, leaving the superseded one as written. Say what changed after the fact. Point the realizing plan back at it.
 
@@ -51,6 +86,8 @@ In an intuitive-mode project do all of that in `waytide/local/aspiration/`, call
 Related:
 
 - the plans-convention
+- the experiments-convention and features-convention — the two other canonical `**State:**` lines, whose words judge a question and an intent rather than a direction
+- the announce-waytide-at-session-start rule — the notice that reads those two lines and not this one
 - the design-document-format and package-dependency-heading rules
 - the a-project-works-in-a-mode-chosen-at-the-start rule — the mode that decides which directory this is
 - the decision-log rule
@@ -77,3 +114,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Fri Aug 14 2026 at 9:08:02 PM PT

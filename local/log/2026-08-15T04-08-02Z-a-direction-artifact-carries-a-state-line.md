@@ -1,0 +1,1 @@
+# A design, an aspiration, and an orientation each carry a canonical `**State:**` line — Realized, Superseded, Abandoned, or Suspended, with absence meaning settled and not yet realized, and Realized alone being taken back when the direction expands

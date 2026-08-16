@@ -1,0 +1,1 @@
+# A plan, an intention, and an action each carry a canonical `**State:**` line — Implemented, Superseded, Abandoned, or Suspended, with absence meaning sequenced and not yet implemented, and Implemented never taken back because a plan is superseded rather than expanded
