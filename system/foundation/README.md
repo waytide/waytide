@@ -107,6 +107,11 @@ rules carry it, and they were the `plan` package until it was included here on 2
   takes none, and neither does prose that settles nothing. It closes an asymmetry: four other
   conventions already stated their own pairing, and these two rested on the decision log's
   when-in-doubt clause.
+- **An experiment record and a feature record each pair with a log entry** too
+  (`experiment-and-feature-records-take-a-log-entry`), on creation and on each change of state. The
+  concluding entry is a **summary marker** where the work merged and **carries the substance**
+  where it did not — a refuted experiment's branch is deleted unmerged, so a record that lived only
+  there is unreachable, which a file deleted from `master` never is.
 - **A design section documenting a package dependency is titled "Package Dependency"**, never a
   bare "Dependency", which is overloaded (`package-dependency-heading`).
 
@@ -277,3 +282,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT

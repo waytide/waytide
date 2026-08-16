@@ -1,0 +1,1 @@
+# A concluding log entry is a **summary marker** where the work merged and **carries the substance** — the question or intent, the verdict or outcome, and the findings — where it did not, because an unmerged branch is deleted on confirmation and a record that lived only there is unreachable, which a file deleted from `master` never is

@@ -57,6 +57,10 @@ persisted, dated artifact, kept after the feature concludes.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like
   every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer
   rule.
+- **Log entry:** pair the record with a one-line `waytide/local/log/` entry on creation and on
+  each change of the `**State:**` line. At the conclusion the entry is a **summary marker** where
+  the feature integrated, and it **carries the substance** — the intent, the outcome, and what
+  was found — where it did not. See the experiment-and-feature-records-take-a-log-entry rule.
 
 **Why:** a feature currently starts and stops without a declared state, which makes it
 impossible to say what is in progress and what concluded. Recording the lifecycle in one
@@ -77,6 +81,7 @@ Related:
 
 - the feature-lifecycle rule — the lifecycle
 - the a-record-ends-with-its-state-in-upper-case rule — the upper-case suffix the state line also takes
+- the experiment-and-feature-records-take-a-log-entry rule — the log entry this record pairs with, and what its concluding entry carries
 - the experiments-convention — the capability this mirrors, and where it deliberately differs
 - the design-by-efferent loop-records rule — the design record for the same feature
 - the decision-log rule
@@ -109,3 +114,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT

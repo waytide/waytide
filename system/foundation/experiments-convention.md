@@ -22,6 +22,7 @@
 - **Runs are optional, not the default.** Split an experiment into **runs** only when you deliberately hold the question fixed and **vary one factor to compare** (e.g. an "AI-proposes" baseline versus an "originate-blind" run). Then each run is its own branch from the **same base**, carries its **own forecast**, and is titled `Run 1`, `Run 2`, …. A run is a deliberate variation, not a retry.
 - **Format:** the same frontmatter-free markdown as rules — a `# Experiment — <name>` title (add `, Run N` only when the experiment actually has multiple runs), then prose and tables. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact — see the working-state-artifacts-carry-a-provenance-footer rule.
+- **Log entry:** pair the record with a one-line `waytide/local/log/` entry on creation and on each change of the `**State:**` line. At the conclusion the entry is a **summary marker** where the branch merged, and it **carries the substance** — the question, the verdict, and the findings — where it did not, since an unmerged branch is deleted and a record that lived only there is unreachable. See the experiment-and-feature-records-take-a-log-entry rule.
 
 **Why:** a forecast recorded before the work is what turns work into an experiment. The gap between forecast and outcome is the finding, and it is only trustworthy if the forecast was committed in advance. Persisting the record (rather than discarding it as scratch) converts a one-off observation into evidence that can be cited and refined. Most questions resolve in a single branch. Multiple runs are the exception, reserved for when comparing a changed factor is worth the extra structure.
 
@@ -37,6 +38,7 @@ Related:
 
 - the experiment-lifecycle rule — the lifecycle
 - the a-record-ends-with-its-state-in-upper-case rule — the upper-case suffix the state line also takes
+- the experiment-and-feature-records-take-a-log-entry rule — the log entry this record pairs with, and what its concluding entry carries
 - the observations-convention — working hypotheses not yet binding
 - the plans-convention
 - the decision-log rule
@@ -68,3 +70,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT

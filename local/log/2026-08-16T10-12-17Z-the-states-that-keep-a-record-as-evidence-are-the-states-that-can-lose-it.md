@@ -1,0 +1,1 @@
+# The experiment states that keep the record as evidence — refuted, inconclusive, abandoned, superseded — are exactly the states whose branch is never merged, so the convention's claim that the findings survive as evidence rested on the record having reached `master` by some route the rules did not require
