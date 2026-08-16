@@ -41,7 +41,9 @@ summary) and **next deferred item**.
 question. The harness supplies the free-text option, so the agent adds none of its own. It does
 add an **`Explain`** option, which is the opposite half of it. The free-text option is how an
 engineer answers outside the options. `Explain` is how they ask what the question means
-before answering.
+before answering. **On the re-displayed prompt it reads `Explain briefly` and answers with the
+summary alone.** An engineer reaching for it a second time did not get what they needed at a
+normal length, so answering at that length again repeats the attempt that failed.
 
 The rule lives here rather than in `design-by-efferent`, where it was written, because it governs **every** prompt. `foundation`'s own lifecycles put decisions through the interface, and so does the standalone `versioning` package. So a project installing `foundation` alone must receive the rule along with the instruction to follow it.
 
@@ -253,3 +255,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 9:08:02 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:32:17 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
+Changed by Scott Bellware on Sun Aug 16 2026 at 1:04:10 AM PT

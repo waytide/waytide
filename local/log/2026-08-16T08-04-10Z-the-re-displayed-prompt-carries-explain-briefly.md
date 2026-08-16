@@ -1,0 +1,1 @@
+# A selection prompt re-displayed after `Explain` carries `Explain briefly` in its place, answered with the summary alone — an engineer reaching for it a second time did not get what they needed at a normal length, and no third variant is added
