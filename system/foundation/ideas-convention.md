@@ -102,9 +102,11 @@ Related:
 - the direction-and-sequencing-artifacts-take-a-log-entry rule — the log entry, whose name carries concepts this rule does not
 - the observations-convention — an observation, which is an idea and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
-- `waytide/local/suspended/` in the Waytide repository — the decommissioned mode mechanism this replaces
+- the a-suspension-is-a-log-entry rule — the other `Suspended`, which is an act on something the
+  project did rather than a state on something it wanted
 
 ---
 
 Authored by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

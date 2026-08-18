@@ -49,10 +49,11 @@ it back*.
   which means parked indefinitely; an idea may carry both. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process,
   and method.**
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
-  rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
-  `waytide/local/suspended/`, intact, carrying its **return address** so the suspension can be
-  reversed. A suspended thing is *not waiting its turn* — the project has stopped, and the
-  resumption note states what would change that. Its rule is the suspended-convention. **STE:
+  rule that became ceremony, a procedure nobody runs. The thing is **removed**, with a log entry
+  tagged `[suspended]` naming what it cost and what else changed. A suspended thing is *not
+  waiting its turn* — the project has stopped, and the entry states why. Its rule is the
+  a-suspension-is-a-log-entry rule. It moved into `waytide/local/suspended/` with a return address
+  until 2026-08-18, when that directory was removed unrestored. **STE:
   absent. `suspend (v)` is not approved and gives HANG (v), which is physical. Technical noun, ETE
   engineering, process, and method.**
 - **out of scope** — what a **design deliberately excludes**. It is neither queued nor set
@@ -188,3 +189,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

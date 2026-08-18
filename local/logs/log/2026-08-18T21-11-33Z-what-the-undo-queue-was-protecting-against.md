@@ -1,0 +1,1 @@
+# What the undo queue was protecting against is a stopped thing coming back different, reconstructed from memory and argument — the log entry protects against that at a fraction of the cost, by naming what was stopped, why, and what else changed

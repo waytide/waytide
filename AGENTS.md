@@ -33,7 +33,7 @@ In a consuming project `install.sh` places the equivalent `.claude/settings.json
 is committed like this file.
 
 The `local/` directory holds this project's own working state. That is `logs/`,
-`ideas/`, `implementations/`, `migration/`, and `suspended/`. They are worked
+`ideas/`, `implementations/`, and `migration/`. They are worked
 with as their conventions describe, not read as binding rules at session start.
 **`logs/` groups the running records** — `logs/log/`, `logs/loops/`, and
 `logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

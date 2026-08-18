@@ -59,8 +59,6 @@ planning and running changes:
 - `waytide/local/migration/` — execution plans for transitions of content **across a repository
   boundary**, kept after the content has gone so the trail of where it went stays in the
   repository it left
-- `waytide/local/suspended/` — an **undo queue** for what the project stopped doing. The thing
-  itself moves, carrying the return address needed to put it back
 
 **An implementation carries a full branch lifecycle**, in the `implementations-convention` and
 `implementation-lifecycle` rules — its own branch, a working location chosen at the start, a
@@ -124,7 +122,7 @@ foundation creates.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/logs/loops/`). Foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`ideas`/`implementations`/`logs`/`migration`/`suspended` work-artifact directories.
+`ideas`/`implementations`/`logs`/`migration` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule. A rule may name another package's rule freely. That
@@ -297,3 +295,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

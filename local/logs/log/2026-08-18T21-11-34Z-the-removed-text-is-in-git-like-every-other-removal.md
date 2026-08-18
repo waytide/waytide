@@ -1,0 +1,1 @@
+# The removed text is in git, reachable by path from `master`'s history, which is the ordinary case this system relies on everywhere else — the queue's premise was that a suspended file is different, and eleven unrestored items say it is not

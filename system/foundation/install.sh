@@ -34,8 +34,8 @@ repo="https://github.com/waytide/foundation.git"
 # on 2026-08-18. One directory replaces it, and the convention naming it is not yet written, so
 # there is still nothing here for the bootstrap to assert.
 #
-# The list is illustrative rather than exhaustive — it omits `migration/` and
-# `suspended/` too — and its claim is that these are working state rather than rules,
+# The list is illustrative rather than exhaustive — it omits `migration/` too — and
+# its claim is that these are working state rather than rules,
 # which survives without naming every one. Do not add the planning directories back.
 bootstrap() {
   cat <<'EOF'
@@ -71,7 +71,7 @@ the working directory, branch, and any uncommitted, untracked, or unpushed work.
 is this project's own. `waytide/system/` is installed and never edited in place.
 `waytide/local/` is everything this project writes: `rules/` and `vocabulary.md`
 alongside the working state — `logs/` (holding `log/`, `loops/`, and
-`work-sessions/`), `ideas/`, `implementations/`, `migration/`, and `suspended/` — each worked with as
+`work-sessions/`), `ideas/`, `implementations/`, and `migration/` — each worked with as
 its convention describes, and only `rules/` and `vocabulary.md` read as binding at
 session start.
 EOF

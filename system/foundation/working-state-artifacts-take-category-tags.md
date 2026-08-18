@@ -23,8 +23,13 @@ and a value. See this package's vocabulary.
 
 ## The one exception — the decision log
 
-**A `waytide/local/logs/log/` entry takes no tags.** A log entry is deliberately one line, a
-`# <title>` with no body and no template, and a `**Tags:**` line would break that shape.
+**A `waytide/local/logs/log/` entry takes no `**Tags:**` line.** A log entry is deliberately one
+line, a `# <title>` with no body and no template, and a `**Tags:**` line would break that shape.
+
+**One tag reaches it anyway, inside the title: `[suspended]`.** A bracketed word leading the title
+line does not break the one-line shape, so the exemption above holds as written and this is its
+single exception. See the a-suspension-is-a-log-entry rule, which is where the tag is defined and
+the only place a log entry is tagged.
 
 **This is the same exception, for the same reason, as the provenance footer's.** The
 working-state-artifacts-carry-a-provenance-footer rule exempts the log on exactly this ground.
@@ -92,3 +97,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

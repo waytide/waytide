@@ -35,7 +35,7 @@ changed. This project's `The aspirations stand against …` entries are that cas
 
 **Four conventions already name their own log entry, and two did not.** The
 observations-convention, the rules-convention, the deferred-queue-convention, and the
-suspended-convention each state the pairing inline. The two planning conventions required the
+a-suspension-is-a-log-entry rule each state the pairing inline. The two planning conventions required the
 artifact, its dated resolutions, and its footer, and named no entry. Those conventions were
 decommissioned on 2026-08-18 with the mode mechanism, and this obligation outlived them.
 
@@ -71,8 +71,9 @@ naming what it was read against.
 Related:
 
 - the decision-log-convention — the entry's form, and the general trigger this makes specific
-- the decommissioned mode mechanism in `waytide/local/suspended/` — the two conventions this obligation was written against, and the state words they carried
-- the observations-convention, rules-convention, deferred-queue-convention, and suspended-convention — the four that already state their own pairing
+- the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act state words they carried
+- the observations-convention, rules-convention, deferred-queue-convention, and
+  a-suspension-is-a-log-entry — the four that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
 
@@ -84,3 +85,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT

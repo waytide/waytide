@@ -104,9 +104,12 @@ is there. The remedy, in order:
    correct once the content is safely in the composite, and only then. Step 2 put the content
    here, so replacing the commit object does not lose it.
 
-The one-time distribution that first created the component repositories is recorded in the **Phase B runbook and checklist**. Those are **suspended** under `local/suspended/`, superseded by this document. They carry a package map that no longer matches the packages. They are the
-only record of how a repository rename and a mass re-publish after a path change were done. See
-the suspended-convention for restoring them.
+The one-time distribution that first created the component repositories was recorded in the
+**Phase B runbook and checklist**. Those were suspended on 2026-08-03, superseded by this
+document, and removed on 2026-08-18 with the suspension mechanism itself. They carried a package
+map that no longer matched the packages. They were the only record of how a repository rename and
+a mass re-publish after a path change were done, and git holds them — see the log entry
+`2026-08-03T05-30-10Z-the-phase-b-runbook-and-checklist-are-suspended`.
 
 ## Push-back (fallback only)
 

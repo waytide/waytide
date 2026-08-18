@@ -1,0 +1,1 @@
+# `Suspended` the idea state and `[suspended]` the log tag are different acts — the state marks something the project only wanted and is kept where it is, and the tag marks something the project did and removed

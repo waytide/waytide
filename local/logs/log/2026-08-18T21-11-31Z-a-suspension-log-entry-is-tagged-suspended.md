@@ -1,0 +1,1 @@
+# A suspension log entry is tagged `[suspended]`, leading the title line — the tag rule's exemption of the decision log holds as written, since a bracketed word inside a one-line title does not break the shape a `**Tags:**` line would

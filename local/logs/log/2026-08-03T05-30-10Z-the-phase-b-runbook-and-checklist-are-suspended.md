@@ -1,1 +1,1 @@
-# The phase-B runbook and checklist are suspended — superseded by CONTRIBUTING.md's publish primitive, and carrying a package map that lists docs and omits plan and versioning — the first use of local/suspended/
+# [suspended] The phase-B runbook and checklist are suspended — superseded by CONTRIBUTING.md's publish primitive, and carrying a package map that lists docs and omits plan and versioning — the first use of local/suspended/
