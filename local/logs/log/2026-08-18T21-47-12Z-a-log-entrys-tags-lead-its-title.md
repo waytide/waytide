@@ -1,0 +1,1 @@
+# A log entry's tags lead its title, which is the ordinary placement for a one-line record rather than an exception — the decision log holds 727 entries whose titles run to a median of 245 characters, so a trailing tag is a tag nobody sees

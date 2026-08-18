@@ -31,7 +31,7 @@ seconds. Place the line under the title, above any `**Tags:**` or `**Summary:**`
 Related:
 
 - the journal-entries rule — the filename stamp this is derived from, and its local time
-- the `foundation` package's working-state-artifacts-take-category-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
+- the `foundation` package's a-record-takes-category-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
 - the omit-body-when-same-as-title rule — the body this line stands above
 
 ---
@@ -42,3 +42,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

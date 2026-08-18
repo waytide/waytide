@@ -7,7 +7,7 @@ concludes.
 
 **Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a
 **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the
-ordinary square-bracket tags (see the working-state-artifacts-take-category-tags rule), and they
+ordinary square-bracket tags (see the a-record-takes-category-tags rule), and they
 are **reserved**: the lifecycle turns on which one a record carries.
 
 **That one difference accounts for every other.** A question is forecast and reaches a verdict. An
@@ -121,7 +121,7 @@ state changes. Record each confirmation the lifecycle requires.
 Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
-- the working-state-artifacts-take-category-tags rule — the tags, and what a reserved tag is
+- the a-record-takes-category-tags rule — the tags, and what a reserved tag is
 - the a-record-ends-with-its-state-in-upper-case rule — why an open record takes no suffix
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
@@ -131,3 +131,4 @@ Related:
 
 Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

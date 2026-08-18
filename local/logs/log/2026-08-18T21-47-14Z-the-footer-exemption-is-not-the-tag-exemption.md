@@ -1,0 +1,1 @@
+# The footer exemption is not the tag exemption and does not follow it — a provenance footer is lines a one-line entry has nowhere to put, and a tag is not, so the two stopped being the same case when the tag gained a placement that fits

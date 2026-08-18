@@ -1,0 +1,1 @@
+# A record's shape picks the tag placement and never prohibits tagging — a `**Tags:**` line where the record has a head, the tags leading the `# <title>` where the record is one line, a `[tag]` prefix on a list item

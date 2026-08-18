@@ -6,7 +6,7 @@ aspiration, an intention, an orientation, an action, a specification, and an obs
 
 **What each one is, is a tag.** An aspiration is an idea tagged `[aspiration]`. The tags are the
 ordinary square-bracket tags every working-state artifact takes (see the
-working-state-artifacts-take-category-tags rule), and the set is open — a project writes the tag
+a-record-takes-category-tags rule), and the set is open — a project writes the tag
 it needs.
 
 **One tag is reserved and is read mechanically: `[deferred]`.** It marks work postponed until the
@@ -96,7 +96,7 @@ have.
 
 Related:
 
-- the working-state-artifacts-take-category-tags rule — the tags that say what an idea is
+- the a-record-takes-category-tags rule — the tags that say what an idea is
 - the deferred-queue-convention — the one reserved tag, and the queue it makes
 - the a-record-ends-with-its-state-in-upper-case rule — the filename suffix
 - the direction-and-sequencing-artifacts-take-a-log-entry rule — the log entry, whose name carries concepts this rule does not
@@ -110,3 +110,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

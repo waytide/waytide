@@ -48,7 +48,7 @@ datetime line, then the writer's prose. An entry takes a `**Tags:**` line where 
 categorized, and a `**Summary:**` line where the summary says something the body does not. An
 entry is thinking rather than a report, so it carries no state line and no section beyond
 those. The datetime-stamp-line, omit-body-when-same-as-title, and journal-entries rules each state one
-part of that shape, and the `foundation` package's working-state-artifacts-take-category-tags
+part of that shape, and the `foundation` package's a-record-takes-category-tags
 rule states the tag protocol, which is no longer the journal's own.
 
 **An entry carries the provenance footer**, like every other working-state artifact. See the
@@ -144,3 +144,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:18:34 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:29:06 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

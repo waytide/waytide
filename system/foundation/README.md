@@ -150,14 +150,17 @@ previous version, and closing that gap is the engineer's instruction to give. Th
 unrefreshed or unpushed is a prompt whatever its grammar. Doing the work when asked, reporting it
 once done, and answering a question about downstream state are each unaffected.
 
-**A working-state artifact takes square-bracket category tags**
-(`working-state-artifacts-take-category-tags`) — a `**Tags:**` line for the whole artifact, or a
-`[tag]` prefixing one list item. Freeform and lower-case, with no controlled vocabulary and
+**Any record takes square-bracket category tags** (`a-record-takes-category-tags`) — a
+`**Tags:**` line at the head where the record has one, tags leading the `# <title>` where the
+record is a single line, or a `[tag]` prefixing one list item. **The protocol is universal: no
+record is excluded and no rule excludes one.** A record's shape picks the placement, and that is
+never a prohibition. Freeform and lower-case, with no controlled vocabulary and
 nothing derived from a **freeform** tag, which is what separates one from the `**State:**` line
 beside it. A **reserved** tag is one a rule names and states what follows from — the reserved set
 is small, each member findable in a rule, and the freeform space untouched around it.
-The decision log is the one exception, exempted for its one-line shape exactly as the provenance
-footer exempts it. The protocol was the `journal` package's until 2026-08-18, and it was lifted here
+The decision log was exempted until 2026-08-18, when the exemption was removed and its entries
+gained the title-line placement — `[suspended]` is the first tag they carry. The protocol was the
+`journal` package's until 2026-08-18, and it was lifted here
 because nothing in it was ever about journals.
 
 **A historical record is edited for one reason only** — that it discloses what should not have
@@ -296,3 +299,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

@@ -1,0 +1,1 @@
+# The tag protocol is universal and excludes no record — the decision log's exemption is removed, and the rule is renamed `a-record-takes-category-tags` from `working-state-artifacts-take-category-tags`, since the scope is every record of every kind rather than the working-state artifacts alone

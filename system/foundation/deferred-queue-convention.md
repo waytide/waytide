@@ -98,7 +98,7 @@ Related:
 - the print-the-deferred-queue-after-the-rule-read rule — the queue printed at the start of every
   session
 - the next-deferred-item-command rule — the on-demand way into the queue
-- the working-state-artifacts-take-category-tags rule — the tags, and what a reserved tag is
+- the a-record-takes-category-tags rule — the tags, and what a reserved tag is
 - the a-suspension-is-a-log-entry rule — the other reserved tag, which marks a log entry rather
   than an idea
 - the decision-log-convention — the entry a resolution writes
@@ -107,3 +107,4 @@ Related:
 
 Authored by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

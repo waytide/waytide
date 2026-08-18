@@ -1,0 +1,1 @@
+# A `**Tags:**` line was never the thing worth prohibiting — the old exemption protected the log's one-line shape, and a bracketed word inside the title costs that shape nothing, so what remained of the exemption was a prohibition with no reason under it

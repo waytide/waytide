@@ -26,11 +26,13 @@ history, which is the ordinary case this system relies on everywhere else.
 
 **`[suspended]` leads the title line** — `# [suspended] The no-stored-recap rule is suspended, …`.
 
-**This is the one tag a log entry takes.** The working-state-artifacts-take-category-tags rule
-exempts the decision log, because a `**Tags:**` line would break the one-line shape. A bracketed
-word inside the title does not break it, so the exemption holds as written and this is the single
-exception to it. It leads rather than trails because the log is scanned as a directory of
-filenames and first words, and a tag at the end of a long title is a tag nobody sees.
+**That is where a one-line record's tags go**, and it is the ordinary placement rather than an
+exception. The a-record-takes-category-tags rule gives three placements and lets a record's shape
+pick one: a `**Tags:**` line where the record has a head, the title line where it does not, a
+prefix on a list item. A log entry is one line, so it takes the second.
+
+**A log entry may carry other tags beside this one.** Nothing here reserves the position, and
+nothing excludes any record from tagging.
 
 **`[suspended]` is a reserved tag.** What it marks is fixed here, and the set of suspensions is
 read from it.
@@ -56,8 +58,8 @@ and is not removed.
 
 Related:
 
-- the working-state-artifacts-take-category-tags rule — the tag protocol, and the log exemption
-  this is the one exception to
+- the a-record-takes-category-tags rule — the universal tag protocol, and where a one-line
+  record's tags go
 - the decision-log-convention — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the ideas-convention — the `Suspended` **state**, which is what an idea takes instead
@@ -66,3 +68,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

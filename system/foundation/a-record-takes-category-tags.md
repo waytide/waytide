@@ -1,12 +1,34 @@
-# A working-state artifact takes square-bracket category tags
+# A record takes square-bracket category tags
 
-Any working-state artifact under `waytide/local/` may be categorized with **square-bracket
-tags**, as in `[idea]`. A tag applies to the **whole artifact** or to **one list item**.
+**Any record may be categorized with square-bracket tags**, as in `[idea]`. This is the system's
+one tagging protocol, and it is universal: no record is excluded from it, and no rule excludes
+one. A tag applies to the **whole record** or to **one list item**.
 
-- **Whole artifact:** the tag goes on a dedicated `**Tags:**` line among the canonical lines at
-  the head of the record, **after `**State:**` where there is one**. Several tags are separated
-  by spaces — `**Tags:** [idea] [decision]`.
-- **List item:** the tag prefixes that item's text — `- [idea] My great idea is thus`.
+**Universal means every record, of every kind, anywhere.** A working-state artifact under
+`waytide/local/`, a decision log entry, a rule file under `waytide/system/` or
+`waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
+
+## Where the tag goes
+
+**A tag has three placements, and a record's own shape decides which.**
+
+- **A record with a head** — the tag goes on a dedicated `**Tags:**` line among the canonical
+  lines at the head, **after `**State:**` where there is one**. Several tags are separated by
+  spaces — `**Tags:** [idea] [decision]`.
+- **A one-line record** — the tags lead the title, inside the `# <title>` itself:
+  `# [suspended] The no-stored-recap rule is suspended, …`. The decision log is the case. Its
+  convention fixes an entry at one line, so a `**Tags:**` line would break a shape that rule
+  settles. The tags go in the line the record has.
+- **A list item** — the tag prefixes that item's text — `- [idea] My great idea is thus`.
+
+**Leading rather than trailing, in the title case.** A directory of one-line records is scanned
+by filename and opening words. This project's decision log holds 727 entries whose titles run to
+a median of 245 characters, 69% of them past 200. A tag at the end of such a title is a tag
+nobody sees.
+
+**The placement is a consequence of shape, and never a prohibition.** No record is barred from
+tags for being short, one-line, generated, or historical. Where a `**Tags:**` line does not fit,
+the title line does.
 
 **The form is lower-case, in square brackets.** A multiword tag is dash-separated and lower-case,
 as `[legal-matter]` is.
@@ -15,26 +37,13 @@ as `[legal-matter]` is.
 Nothing validates one, nothing enumerates the set, and a tag used once is as legitimate as a tag
 used a hundred times.
 
-**Tags are optional at every level.** An artifact that is not categorized carries no `**Tags:**`
-line, and a list that is not categorized carries no prefixes. Absence claims nothing.
+**Tags are optional at every level.** A record that is not categorized carries no `**Tags:**`
+line and no leading tag, and a list that is not categorized carries no prefixes. Absence claims
+nothing. **Optional is not the same as excluded** — every record may be tagged, and none must
+be.
 
 **It is the plain text data attribute form** the system already uses — a bold label, a colon,
 and a value. See this package's vocabulary.
-
-## The one exception — the decision log
-
-**A `waytide/local/logs/log/` entry takes no `**Tags:**` line.** A log entry is deliberately one
-line, a `# <title>` with no body and no template, and a `**Tags:**` line would break that shape.
-
-**One tag reaches it anyway, inside the title: `[suspended]`.** A bracketed word leading the title
-line does not break the one-line shape, so the exemption above holds as written and this is its
-single exception. See the a-suspension-is-a-log-entry rule, which is where the tag is defined and
-the only place a log entry is tagged.
-
-**This is the same exception, for the same reason, as the provenance footer's.** The
-working-state-artifacts-carry-a-provenance-footer rule exempts the log on exactly this ground.
-Where one obligation over the working-state artifacts exempts the log for its one-line shape, the
-next one does too.
 
 ## A reserved tag and a freeform tag
 
@@ -74,11 +83,11 @@ tagging the same thing `[idea]` and `[ideas]` have categorized nothing together.
 rather than solved, because solving it costs the property the tags exist for.
 
 **How to apply:** where a categorization is worth marking, add a `**Tags:**` line at the head of
-the artifact, after `**State:**` where there is one. Prefix a list item with `[tag]` to mark that
-item alone.
+the record, after `**State:**` where there is one. Where the record is one line, lead its title
+with the tags instead. Prefix a list item with `[tag]` to mark that item alone.
 
 Write tags lower-case and dash-separated in square brackets. Introduce a freeform tag as it is
-needed. Add none to a `waytide/local/logs/log/` entry, and derive nothing from a freeform tag.
+needed, and derive nothing from one. Exclude no record from tagging.
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag,
 it is freeform.
@@ -86,8 +95,10 @@ it is freeform.
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
-- the working-state-artifacts-carry-a-provenance-footer rule — the same obligation shape, and the same log exception
-- the decision-log-convention — the one-line entry this exempts
+- the decision-log-convention — the one-line entry whose shape puts its tags in the title
+- the a-suspension-is-a-log-entry rule — `[suspended]`, the reserved tag the log carries
+- the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does
+  exempt the log; a footer is lines the entry has nowhere to put, where a tag is not
 - this package's vocabulary — the plain text data attribute line
 
 ---
@@ -98,3 +109,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

@@ -39,7 +39,7 @@ entry's filename.
 
 **The tag protocol is no longer this package's.** A journal entry takes square-bracket category
 tags, and so does every other working-state artifact — the rule moved to `foundation` on
-2026-08-18 as `working-state-artifacts-take-category-tags`. What stays here is where a journal
+2026-08-18 as `a-record-takes-category-tags`. What stays here is where a journal
 entry's `**Tags:**` line sits, which is under the datetime line and above the summary.
 
 **Vocabulary** (`vocabulary.md`): three terms — **writer**, **journal**, and **journal entry** —
@@ -105,3 +105,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:18:34 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
