@@ -71,7 +71,7 @@ the working directory, branch, and any uncommitted, untracked, or unpushed work.
 is this project's own. `waytide/system/` is installed and never edited in place.
 `waytide/local/` is everything this project writes: `rules/` and `vocabulary.md`
 alongside the working state — `logs/` (holding `log/`, `loops/`, and
-`work-sessions/`, and `migration/`), `ideas/`, and `implementations/` — each worked with as
+`work-sessions/`), `ideas/`, `implementations/`, and `migration/` — each worked with as
 its convention describes, and only `rules/` and `vocabulary.md` read as binding at
 session start.
 EOF
@@ -303,7 +303,7 @@ migrate_work_sessions() {
 # present and the new one is absent. Anything else is reported and left alone. Plain mv
 # rather than git mv, for records that were never committed.
 migrate_logs() {
-  for name in log loops work-sessions migration; do
+  for name in log loops work-sessions; do
     old_dir="waytide/local/$name"
     new_dir="waytide/local/logs/$name"
 

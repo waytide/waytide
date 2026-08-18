@@ -1,6 +1,6 @@
-# `waytide/local/logs/migration/` — execution plans for transitions of content between repository boundaries
+# `waytide/local/migration/` — execution plans for transitions of content between repository boundaries
 
-`waytide/local/logs/migration/` holds **migration records**: the execution plans for moving content
+`waytide/local/migration/` holds **migration records**: the execution plans for moving content
 **across a repository boundary**, and the record of how the move actually went. Content leaving
 this repository for another, or arriving from one, is planned and recorded here.
 
@@ -48,6 +48,9 @@ Related:
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled idea or be mechanical enough to need none
 - the file-names rule — the filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule
+- the logs-directory rule — the running records, which a migration record is not: it is one
+  document rather than entries that accrue, it is revised while the migration runs, and it is
+  written to be executed rather than to account for what happened
 
 ---
 
@@ -62,3 +65,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT

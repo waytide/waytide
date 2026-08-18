@@ -1,0 +1,1 @@
+# `waytide/local/migration/` moves back out of `logs/` the same day it moved in — a migration record is one document rather than entries that accrue, it is revised while the migration runs, and it is prospective, so it fails all three parts of what puts a record under `logs/`

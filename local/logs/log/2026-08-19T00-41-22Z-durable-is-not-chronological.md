@@ -1,0 +1,1 @@
+# Durable is not chronological — a migration record is kept after the content has gone, and being kept is what made it look like a running record, but the three records under `logs/` are retrospective accounts and it is a plan

@@ -1,0 +1,1 @@
+# An exception written for one member of a set is the tell that the membership is wrong — the paragraph arguing that a migration record 'has to cross over' was the argument for the move and is the evidence against it

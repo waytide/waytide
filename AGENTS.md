@@ -33,11 +33,10 @@ In a consuming project `install.sh` places the equivalent `.claude/settings.json
 is committed like this file.
 
 The `local/` directory holds this project's own working state. That is `logs/`,
-`ideas/` and `implementations/`. They are worked
+`ideas/`, `implementations/`, and `migration/`. They are worked
 with as their conventions describe, not read as binding rules at session start.
 **`logs/` groups the running records** — `logs/log/`, `logs/loops/`, and
-`logs/work-sessions/`, and `logs/migration/` — which sat directly under `local/` until
-2026-08-18. **The deferred
+`logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred
 queue is no longer a directory** — it is every idea tagged `[deferred]`, and it is still printed
 at the start of every session.
 
@@ -53,7 +52,7 @@ the two directories sit under it — `waytide/system/` for the installed package
 its own name says nothing. Every rule states the consuming-project path. Read
 `waytide/system/` as `system/` and `waytide/local/` as `local/` when applying one here.
 
-`local/logs/migration/` is now defined by a rule, foundation's migration-convention. That rule makes it
+`local/migration/` is now defined by a rule, foundation's migration-convention. That rule makes it
 the place every Waytide project writes execution plans for transitions of content across a
 repository boundary. What it holds *here* is one such transition: the design and execution
 records of migrating `constant`'s rules into the Waytide packages. **Its files predate the
@@ -80,3 +79,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT

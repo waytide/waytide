@@ -27,9 +27,8 @@ this package:
 - **`waytide/local/logs/`**. The **running records**, grouped (`logs-directory`) — records that
   accrue chronologically and are never revised, as against the directories that state what is
   currently true. It holds **`logs/log/`**, the decision log, one file per decision with a
-  one-line title; **`logs/loops/`**, contributed by `design-by-efferent`;
-  **`logs/work-sessions/`**; and **`logs/migration/`**. The four sat directly under
-  `waytide/local/` until 2026-08-18.
+  one-line title; **`logs/loops/`**, contributed by `design-by-efferent`; and
+  **`logs/work-sessions/`**. The three sat directly under `waytide/local/` until 2026-08-18.
 
 Three conventions govern all of them: the **ISO-8601-UTC filename prefix**
 (`file-names`) that makes every artifact sort chronologically and declare its
@@ -57,7 +56,7 @@ planning and running changes:
 
 - `waytide/local/ideas/` — the project's planning records, whatever its tags name them
 - `waytide/local/implementations/` — the lifecycle record of an experiment or a feature
-- `waytide/local/logs/migration/` — execution plans for transitions of content **across a repository
+- `waytide/local/migration/` — execution plans for transitions of content **across a repository
   boundary**, kept after the content has gone so the trail of where it went stays in the
   repository it left
 
@@ -123,7 +122,7 @@ foundation creates.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/logs/loops/`). Foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`ideas`/`implementations`/`logs` work-artifact directories.
+`ideas`/`implementations`/`logs`/`migration` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule. A rule may name another package's rule freely. That
@@ -304,3 +303,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
