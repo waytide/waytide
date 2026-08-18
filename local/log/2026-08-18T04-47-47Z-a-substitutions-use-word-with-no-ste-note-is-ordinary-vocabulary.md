@@ -1,0 +1,1 @@
+# The **cost** row carries no STE note, which by the vocabulary's own preamble marks it ordinary vocabulary rather than a reserved term — the six-steps sequence is not run for a word that names nothing in the subject field, and no dictionary lookup is asserted that was not made

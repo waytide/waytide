@@ -1,0 +1,1 @@
+# Four rules are conformed to **cost** — `attended-or-unattended-is-chosen-at-the-start`, `never-ask-to-start-test-first`, `announce-waytide-at-session-start`, and `deferred-convention` — the whole of what carried the figure, so one corrected phrase does not leave three standing

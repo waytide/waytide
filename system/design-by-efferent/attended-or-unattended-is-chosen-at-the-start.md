@@ -18,7 +18,7 @@ untouched. Only the stopping is.
 
 **The decision is batch size.** Attended is **small-batch**. The engineer's attention is spent continuously, and a wrong turn is caught at the hinge where it was taken. So rework stays near zero.
 
-Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the price.
+Unattended is **big-batch**: no attention is spent until the end. A wrong turn is found with everything built on top of it. Rework is the cost.
 
 Which is cheaper depends on
 how load-bearing the work is, and on how likely the first pass is to be right. That is a judgment
@@ -123,7 +123,6 @@ it at the top of the loop record. Run the hinges either way.
 **When unattended, present the plan
 as a list before generating, and write it in ETE.** Write each cycle
 as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
-Do not describe unattended work as suspending DBE — what is suspended is the waits.
 
 Related:
 
@@ -153,3 +152,5 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 9:41:07 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT

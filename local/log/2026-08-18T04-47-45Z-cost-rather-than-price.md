@@ -1,0 +1,1 @@
+# **cost** rather than "price" — the figure is a bargain struck, which adds a seller and an agreed sum to a sentence that has neither, where a cost is simply what the thing takes; recorded as a `language` substitution beside **justified** for "earns its keep" and **required** for "owed", which are the same transaction family

@@ -60,6 +60,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having. The figure is a lodger paying rent, and it says nothing about why the thing is worth having. |
 | **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. **STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), whose approved meaning is the action or result of choosing.** |
 | **required** | "owed" | what a rule asks of a thing. The figure is a debt, and a rule is not a creditor. |
+| **cost** | "price" | what a trade gives up, where the giving up is real and stated — see below for how this sits with the **effect** row above. The figure in "price" is a bargain struck, which adds a seller and an agreed sum to a sentence that has neither |
 | **in progress** | "in flight" | work that has been started and has not concluded. The figurative sense is an aircraft between takeoff and landing, and it says nothing the literal phrase does not. **STE: `progress` is not approved as a noun or a verb, and gives CONTINUE (v), which names carrying on rather than a state. Technical adjective, ETE engineering, design, process, and method** |
 | **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. **STE: `dash` is absent, and `case (n)` is not approved and gives CONDITION (n). Technical adjective, ETE engineering, design, process, and method** |
 | **name** | "slug" | the descriptive part of a filename. **STE: `NAME (n)` is approved, and used with its approved meaning** |
@@ -75,6 +76,12 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 ### Finer distinctions
 
+- **cost** and **effect** are not in conflict, and the difference is whether a cost is being
+  claimed. **effect** replaces *what it costs* where a change's result is being named and nothing
+  establishes it as a loss — the row above it exists because presuming a cost is the error there.
+  **cost** is the right word where something is genuinely given up and the giving up is the point,
+  as it is in a stated trade. Ask whether the sentence is naming a result or naming what a choice
+  gave up.
 - **cut** is figurative in two senses, and each has its own substitution. As a **slice of scope**,
   say **increment** — the row above. As **making a branch**, say **created** or **branched from**:
   *this branch was created from `master`*, never *this branch was cut from `master`*. The
@@ -160,3 +167,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 11:53:50 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:19:04 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 9:47:45 PM PT
