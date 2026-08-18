@@ -73,26 +73,16 @@ user-declared affirmation. A feature does none of those, ends
 completed/abandoned/superseded (or suspended), and is simply verified before it
 integrates.
 
-**How plans and designs *read*** is foundation's concern too, meaning their sections. Four
-rules carry it, and they were the `plan` package until it was included here on 2026-08-03:
+**How the planning records *read*** was foundation's concern through four rules — two conventions
+and two document formats — and **all four were decommissioned on 2026-08-18** with the mode
+mechanism. See `waytide/local/suspended/` in this repository for the record of what they held.
 
-- **An implementation plan's common elements read in a settled order** — a canonical `**State:**`
-  line where it has one, Goals, Source designs, Work sequences, Superseded plans, Architecture,
-  Process notes, Tasks, among others the work calls for. The order is settled. The set is not
-  (`plan-document-format`). The state is **Active**, **Implemented**, **Deferred**,
-  **Superseded**, **Abandoned**, or **Suspended**, and every plan carries one — a new plan is
-  **Active** (`plans-convention`). **Implemented** is not taken back, where the direction artifact's
-  **Realized** is: a plan that would expand is superseded by a later one instead. **Deferred** is
-  taken back in both, the moment the work is taken up.
-- **A design doc shares a common spine** — a canonical `**State:**` line where it has one, summary
-  or premise, motivation, substantive sections, dated **Settled** resolutions, and an **Out of
-  Scope / Deferred** tail (`design-document-format`). The state is **Active**, **Realized**, **Deferred**,
-  **Superseded**, **Abandoned**, or **Suspended**, and every design carries one — a new design is
-  **Active** (`design-convention`). **Realized** and **Deferred** are the two state words in
-  the system that are taken back, each returning to **Active**, — a realized design that expands is waiting on the work again,
-  and a deferred one loses the line the moment the work is taken up. **Deferred** reuses the
-  vocabulary's own word for *not yet*, and a `Deferred` artifact does not move into
-  `waytide/local/deferred/`.
+**A convention and a document format for the idea are not yet written.** What they carry over is
+settled in the one-ideas-directory aspiration: one directory, the kind as a tag, the state words
+and their reversibility, dated **Settled** resolutions, an **Out of Scope / Deferred** tail,
+behavior-stated checkbox tasks, supersession, and that a settled idea is reconciled rather than
+regenerated from the work downstream of it.
+
 - **Plans contain no code samples**, and avoid committing to method or file names that are not
   yet decided (`plans-no-code-samples`).
 - **A record carrying a state line ends its filename with that state in upper case**
@@ -151,26 +141,30 @@ previous version, and closing that gap is the engineer's instruction to give. Th
 unrefreshed or unpushed is a prompt whatever its grammar. Doing the work when asked, reporting it
 once done, and answering a question about downstream state are each unaffected.
 
+**A working-state artifact takes square-bracket category tags**
+(`working-state-artifacts-take-category-tags`) — a `**Tags:**` line for the whole artifact, or a
+`[tag]` prefixing one list item. Freeform and lower-case, with no controlled vocabulary and
+nothing derived from a **freeform** tag, which is what separates one from the `**State:**` line
+beside it. A **reserved** tag is one a rule names and states what follows from — the reserved set
+is small, each member findable in a rule, and the freeform space untouched around it.
+The decision log is the one exception, exempted for its one-line shape exactly as the provenance
+footer exempts it. The protocol was the `diary` package's until 2026-08-18, and it was lifted here
+because nothing in it was ever about diaries.
+
 **A historical record is edited for one reason only** — that it discloses what should not have
 been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
 removes the disclosure and keeps every claim true by stating it at a lower resolution. It never
 makes the record say something that did not happen. The engineer is the authority on what
 counts, and the git history is not reached by the edit.
 
-**A project works in one of three modes**, chosen at its start through the selection
-interface (`a-project-works-in-a-mode-chosen-at-the-start`). Formal is the default and its planning
-artifacts are a **design** and a **plan**, in `waytide/local/design/` and `waytide/local/plans/`.
-Intuitive's are an **aspiration** and an **intention**, in `waytide/local/aspiration/` and
-`waytide/local/intention/`. OODA's are an **orientation** and an **action**, in
-`waytide/local/orientation/` and `waytide/local/action/`, drawn from the loop the
-`design-by-efferent` package already builds on.
+**The mode mechanism was decommissioned on 2026-08-18.** A project worked in one of three modes —
+formal, intuitive, or OODA — chosen at its start, and the mode decided what the two planning
+artifacts were called and where they lived. Six directories existed for one kind of work.
 
-**The conventions and document formats are
-identical in every mode.** The mode changes the vocabulary and the directory and no obligation,
-because the words a project plans in are load-bearing. The chosen mode is recorded as a local rule
-named `formal-mode`, `intuitive-mode`, or `ooda-mode`, written whichever mode is chosen. The
-planning directories are checked against it, so a deleted rule cannot silently revert a project. It
-does not change after the start.
+**One directory replaces it, `waytide/local/ideas/`, and the kind is a tag.** A design is an idea
+and an idea is a design. An aspiration is an idea tagged `[aspiration]`, and the kind set is open.
+The mode may now change mid-stream, which the mechanism forbade, because its two unanswered
+questions were both questions about directories.
 
 **A project does not name its downstream consumers** in its own files
 (`a-project-does-not-name-its-consumers`) — not in the installed packages, not in its own working
@@ -200,7 +194,7 @@ foundation  →  (nothing — the base every other package builds on)
 - **`git subtree` can only place files inside a package directory.** So a tool a consuming project runs has to live in some package. There is nowhere else for it to be delivered.
 - **It has to be a package that is always there.** Foundation is the only one — every other package includes it, so a project running Waytide at all has foundation.
 
-So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh`, `report-direct-commits.sh`, and `report-planning-directories-named-in-part.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
+So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
 
 **`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide.
 
@@ -210,9 +204,9 @@ The authoring tools run **against the packages**. This one runs **beside project
 
 **It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others. It would be the first Waytide package that is a **tool** rather than a set of rules.
 
-**`report-unrecognized-mode.sh`** reports a mode rule in `waytide/local/rules/` naming a mode the installed `a-project-works-in-a-mode-chosen-at-the-start` rule no longer defines. It is packaged rather than kept with the authoring tools because the file it checks is **the project's own**. A rename upstream reaches the packages and stops, since no refresh may rewrite a project's rules. So the drift is only visible from inside the project, and only the project's engineer can correct it.
-
-It reads the defined mode names out of the installed rule rather than carrying a list. So a mode added upstream needs no change to the script. Every consuming project on one machine was found in exactly this state on 2026-08-06, a mode having been renamed the day before.
+**`report-unrecognized-mode.sh` was decommissioned on 2026-08-18**, with the mode mechanism whose
+rule it read. It reported a mode rule in `waytide/local/rules/` naming a mode the installed rule no
+longer defined, and there is no such rule to read.
 
 **`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach. So a refresh updates the packages beneath it and leaves it behind.
 
@@ -283,3 +277,6 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT

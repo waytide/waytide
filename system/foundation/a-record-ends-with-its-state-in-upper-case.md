@@ -72,7 +72,7 @@ experiment or feature record carrying no state line, and add none to any file's 
 
 Related:
 
-- the experiments-convention, features-convention, design-convention, and plans-convention — the four records that carry a state line, and the words each fixes
+- the experiments-convention and features-convention — two of the records that carry a state line, and the words each fixes. The idea's convention is not yet written, the mode mechanism having been decommissioned on 2026-08-18
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the rules-convention — referencing by name rather than path, and the reconciliation a rename obliges
 - the direction-and-sequencing-artifacts-take-a-log-entry rule — the log entry a state change also takes
@@ -82,3 +82,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT

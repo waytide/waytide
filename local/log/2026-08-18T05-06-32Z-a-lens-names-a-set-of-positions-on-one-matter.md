@@ -1,0 +1,1 @@
+# A **lens** names a set of positions on one matter — a perspective it is looked at through, whose positions may be entirely ad hoc — recorded as an observation rather than a rule because the term cannot yet be reserved and the schema addition it suggests is speculative

@@ -1,0 +1,1 @@
+# Nothing governs a planning record between the mode mechanism's decommissioning and the ideas convention being written — the state words, the tags, the provenance footer, the filename prefix, and the log-entry obligation all still apply, and what is absent is the directory, the document shape, and supersession

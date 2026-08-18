@@ -38,15 +38,9 @@ It fetches and pushes nothing, and exits
 non-zero when it finds something. Two such commits went unnoticed for days before the check
 existed, found only when a publish was attempted. Nothing else announces them.
 
-**Check for planning directories named in part too.** Run
-`./report-planning-directories-named-in-part.sh` from the repository root. It reports any file
-under `system/` naming some but not all of a planning artifact's directories. An instance is a
-rule naming `plans/` and `intention/` but not `action/`, or naming `design/` alone.
-
-A rule that is
-*about* one of those artifacts names every mode's directory, and one that merely mentions it
-names none. So naming only some of them is a defect either way. It is one that reviews, publishes, and installs cleanly while being wrong in every project whose mode it omits. It
-only reads, and exits non-zero when it finds something.
+**The planning-directories check was decommissioned on 2026-08-18**, with the mode mechanism it
+existed for. It reported a file naming some but not all of a mode's planning directories, and one
+directory leaves that defect no way to arise.
 
 After the work merges to the upstream branch, re-publish the affected package by splitting its directory and pushing to the component repo's `master`. Publish from the upstream branch, never from an experiment branch or a feature branch. A `git subtree split`'s
 output history depends on the prefix path. So a package whose directory path is

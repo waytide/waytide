@@ -1,0 +1,1 @@
+# The mode may be changed mid-stream, reversing the `a-project-works-in-a-mode-chosen-at-the-start` rule's holding that it is fixed — the two questions that rule declined to answer were both about directories, and one directory leaves them nothing to act on

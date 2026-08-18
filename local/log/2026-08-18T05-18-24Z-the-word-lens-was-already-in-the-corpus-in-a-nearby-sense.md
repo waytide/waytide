@@ -1,0 +1,1 @@
+# The word `lens` was already in the corpus in a nearby sense — `lib-report-format` and `test-report-format` each classify "along the lenses below", meaning ways of looking at a body of material for a report — so a term reserving it would have had to displace its own near-synonym inside the same system

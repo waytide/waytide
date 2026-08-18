@@ -1,0 +1,1 @@
+# `kind` is not an attribute in an idea's schema — not a field, and not a named category of tag either — since calling `[aspiration]` *a kind tag* would make `kind` a schema concept by the back door, which is what writing the tag rather than a field was for; `**Kind:**` in the suspended-convention is a suspended thing's attribute and is untouched

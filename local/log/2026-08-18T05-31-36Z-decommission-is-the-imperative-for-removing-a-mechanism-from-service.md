@@ -1,0 +1,1 @@
+# **Decommissioning** is recording what a mechanism was and then removing it from active service, and **decommission** is the imperative — it differs from suspending a thing, where a file moves with its own return address, because a mechanism spans several files that cannot each carry the whole

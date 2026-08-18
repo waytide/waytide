@@ -1,0 +1,1 @@
+# The design-convention's reasoning is kept as conceptual — that a settled idea is reconciled and never regenerated from the work downstream, and is a source of truth another points back at, stops being a claim about a class called *design* and becomes a claim about how any two ideas stand to each other

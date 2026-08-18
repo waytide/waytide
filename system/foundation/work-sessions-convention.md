@@ -25,7 +25,7 @@ when it was written. Retitling it would edit a historical record to suit a later
 
 ## Reconcile the settled direction once the record is written
 
-**This section says *design* throughout for readability, and means the project's direction artifact.** That is a design under formal mode, and an aspiration under intuitive. See the a-project-works-in-a-mode-chosen-at-the-start rule. Nothing in it depends on which.
+**This section says *design* throughout for readability, and means whichever settled idea the work session bears on.** A design is an idea, and an idea is a design — the kind is a tag rather than a class. Nothing in this section depends on which kind it carries.
 
 **After the record is written, put the design to the engineer through the AskUserQuestion selection UI.** Does what this work session produced change the design, or has the design fallen behind it? Three genuine options — **update the design**, **the design stands**, or **no design bears on this work session**.
 
@@ -49,8 +49,6 @@ Once the record is written, put the **design reconciliation** through the same U
 
 Related:
 
-- the plans-convention
-- design-convention
 - experiments-convention — the sibling artifact conventions
 - the record-rule-authorship-in-a-footer rule — the footer's format
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
@@ -87,3 +85,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT

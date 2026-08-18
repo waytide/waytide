@@ -1,0 +1,1 @@
+# Four of the system's ten canonical data-attribute lines are lenses and six are not — a lens field's value comes from a set of positions (`**State:**`, `**Kind:**`, `**Status:**`, `**Priority:**`), where the others carry a value (`**Tags:**`, `**Summary:**`, `**Waits for:**`, `**Origin:**`, `**Suspended:**`, `**Reconciliations:**`)

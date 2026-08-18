@@ -62,7 +62,7 @@ fi
 # The authoring source holds the packages at system/, with no waytide/ wrapper; a consuming
 # project holds them at waytide/system/. Installing here would add a second, installed copy of
 # every package beside the ones being written, and place a consuming project's bootstrap over
-# this repository's own. The same refusal is in refresh-packages.sh and report-unrecognized-mode.sh.
+# this repository's own. The same refusal is in refresh-packages.sh.
 if [ -d system/foundation ] && [ ! -d waytide/system ]; then
   echo "This is the Waytide authoring source, where the packages are written rather than" >&2
   echo "installed. Installing here would put a second copy of every package under waytide/," >&2

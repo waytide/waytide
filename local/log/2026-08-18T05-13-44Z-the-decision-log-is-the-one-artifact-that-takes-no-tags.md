@@ -1,0 +1,1 @@
+# The decision log is the one working-state artifact that takes no tags, exempted for its one-line shape — the same exception on the same ground the `working-state-artifacts-carry-a-provenance-footer` rule already makes

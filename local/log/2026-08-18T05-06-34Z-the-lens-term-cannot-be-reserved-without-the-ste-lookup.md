@@ -1,0 +1,1 @@
+# The term `lens` cannot be reserved yet — the `a-word-is-reserved-in-six-steps` rule's first step is an STE dictionary lookup nobody has made, its category is the engineer's decision through the selection interface, and `lens` is a figure the `name-literally-not-by-analogy` rule would have to be argued past as `hinge` and `cradle` were

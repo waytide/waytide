@@ -1,0 +1,1 @@
+# A **reserved** tag is distinguished from a **freeform** tag in the `working-state-artifacts-take-category-tags` rule — a rule reserves a tag by naming it and stating what follows, nothing is derived from a freeform one, and the kind tags are the first reserved set, which the rule's earlier claim that nothing is derived from any tag could not accommodate

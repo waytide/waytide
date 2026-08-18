@@ -1,0 +1,1 @@
+# An idea record carries its own kind — design, plan, aspiration, intention, orientation, or action — which is what makes one directory of mixed kinds readable; the document-format rules' title already carries it, and whether that is sufficient is left open

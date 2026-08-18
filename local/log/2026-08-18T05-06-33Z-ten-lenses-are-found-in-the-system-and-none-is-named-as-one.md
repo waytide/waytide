@@ -1,0 +1,1 @@
+# Ten lenses are found in the system and none is named as an instance of a kind — attended/unattended, subtle/load-bearing, deferred/suspended/out-of-scope, experiment/feature, the two state-word sets, the modes, rule/observation, historical/live, and merged/unmerged — so each is argued from scratch where it is introduced

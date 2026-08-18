@@ -1,0 +1,1 @@
+# An idea's kind is written as a tag — an aspiration is an idea tagged `[aspiration]`, a design one tagged `[design]`, and the same for `[plan]`, `[intention]`, `[orientation]`, and `[action]` — so the kind needs no new mechanism beyond the tag protocol

@@ -1,0 +1,1 @@
+# The `lens` idea is set aside as a likely dead end the day it was proposed — the observation is kept as the discovery record, the survey of ten position sets in the system stands on its own, and nothing in `waytide/system/` was ever changed for it

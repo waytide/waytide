@@ -40,7 +40,6 @@ Related:
 - the a-record-ends-with-its-state-in-upper-case rule — the upper-case suffix the state line also takes
 - the experiment-and-feature-records-take-a-log-entry rule — the log entry this record pairs with, and what its concluding entry carries
 - the observations-convention — working hypotheses not yet binding
-- the plans-convention
 - the decision-log rule
 
 ---
@@ -71,3 +70,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT

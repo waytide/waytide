@@ -1,0 +1,1 @@
+# Nothing is derived from a tag — no filename suffix, no report, no check — because a tag carries no fixed set of positions, which is what separates a `**Tags:**` line from the `**State:**`, `**Kind:**`, `**Status:**`, and `**Priority:**` lines beside it

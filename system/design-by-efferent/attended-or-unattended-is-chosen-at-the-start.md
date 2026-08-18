@@ -92,10 +92,9 @@ the STE writing rules, with Waytide's reserved terms. Short sentences. Active vo
 One idea in each item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language`
 package's ste rules.
 
-**This is not a plan document.** `foundation`'s plans-convention governs a plan in
-`waytide/local/plans/`, an intention in `waytide/local/intention/`, or an action in
-`waytide/local/action/`, whichever the project's mode names. This plan is presented in the response,
-before the agent generates, and it is not written to a file.
+**This is not a planning record.** `foundation` governs the project's planning records, which are
+written to a directory and kept. This plan is presented in the response, before the agent
+generates, and it is not written to a file.
 
 **Why:** the engineer's attention is the scarce thing the whole method is arranged around. The
 arrangement assumes it is always worth spending at a hinge. For work whose rework cost is
@@ -154,3 +153,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:41:07 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT

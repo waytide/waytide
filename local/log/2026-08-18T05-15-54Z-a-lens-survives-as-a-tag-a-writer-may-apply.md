@@ -1,0 +1,1 @@
+# A lens survives as a tag a writer may apply, including `[direction]` and `[sequencing]` — expanding the resolution that dropped them, which dropped the **structural pairing** of paired directories and the covering terms rules used to avoid naming one, and not the perspective itself

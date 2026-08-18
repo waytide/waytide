@@ -1,0 +1,1 @@
+# A **lens** describes the schema metaphorically and is never written into it — the `**Lens:**` line first proposed was wrong twice, putting the axis name in every record when the field name is the axis, and treating a lens as something a record carries rather than as a way of describing what a field already does

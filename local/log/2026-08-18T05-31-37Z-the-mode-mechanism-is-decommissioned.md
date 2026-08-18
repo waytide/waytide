@@ -1,0 +1,1 @@
+# The mode mechanism is decommissioned — five `foundation` rules moved to `local/suspended/` with a record of what the mechanism was, thirteen citing files reconciled, and two scripts decommissioned with it

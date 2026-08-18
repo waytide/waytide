@@ -1,0 +1,1 @@
+# The realizes relationship survives the dropping of direction and sequencing, because the corpus needs it — the work-sessions-convention's reconciliation prompt, a live observation, and a live record's `## Source design` section all rest on one idea being a source of truth the other points back at, reconciled rather than regenerated

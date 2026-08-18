@@ -1,0 +1,1 @@
+# The kind tags are an open set — an idea can be a specification, tagged `[specification]`, a seventh beyond the six the modes name, and a project coins a kind as it needs one exactly as it coins any other tag

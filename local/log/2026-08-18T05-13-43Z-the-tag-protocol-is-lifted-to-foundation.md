@@ -1,0 +1,1 @@
+# The square-bracket tag protocol is lifted from the `diary` package to `foundation` as `working-state-artifacts-take-category-tags`, and applies to every working-state artifact — nothing in it was ever about diaries, and the `diary-category-tags` rule is removed with its three citations reconciled

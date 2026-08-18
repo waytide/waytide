@@ -1,0 +1,1 @@
+# Carrying reserved and freeform tags in one `**Tags:**` line costs the line meaning one thing — a reader cannot tell from it whether a rule turns on a given tag — and that is accepted as the price of one mechanism rather than a `**Kind:**` line beside `**Tags:**` splitting one act across two fields

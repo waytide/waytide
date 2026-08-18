@@ -1,0 +1,1 @@
+# Sequencing and hierarchy, where either applies, are expressed as tags — a tag says what role an idea plays, and where one idea is read against another in particular the record says so in its own prose, so no schema field carries a pointer between records

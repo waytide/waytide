@@ -1,0 +1,1 @@
+# Direction and sequencing are dropped as concepts, and the covering terms *the direction artifact* and *the sequencing artifact* go with them — their stated purpose was letting a rule mention an artifact without naming a mode's directory, which one directory removes
