@@ -5,7 +5,7 @@ style** shapes it by **replacing part of the system prompt**. The two aim at the
 different mechanisms, and Waytide has never examined the second.
 
 **State:** Open
-**Tags:** [deferred] [delivery]
+**Tags:** [deferred]
 
 - **Waits for:** the STE experiment concluding. That experiment is changing what the rules say and
   how they are written, and this question is about how rules reach the agent at all. Working both
