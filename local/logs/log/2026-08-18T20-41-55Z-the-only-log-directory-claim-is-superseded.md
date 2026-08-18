@@ -1,0 +1,1 @@
+# The only-log-directory decision of 2026-07-27 is superseded — `waytide/local/logs/` now holds three, and the claim it made was that a project keeps one place for decisions rather than one place for running records

@@ -4,7 +4,7 @@ The journal is kept as one markdown file per entry, in the writer's own journal 
 `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the
 identity-resolution-contract rule — `waytide/local/journal/scott-bellware/`, for example. A
 project may hold the journals of more than one writer, and each writer's entries live under
-their own directory. This is distinct from `waytide/local/log/`, the decision log the agent
+their own directory. This is distinct from `waytide/local/logs/log/`, the decision log the agent
 writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by
@@ -102,3 +102,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:01:46 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

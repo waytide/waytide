@@ -2,7 +2,7 @@
 
 A **direction artifact** — a design, an aspiration, or an orientation — and a **sequencing
 artifact** — a plan, an intention, or an action — each pair with a one-line entry in
-`waytide/local/log/`. The entry is written at three moments, and at no others.
+`waytide/local/logs/log/`. The entry is written at three moments, and at no others.
 
 - **On creation.** That direction is settled at all, or that a settled direction is now being
   sequenced, is itself a decision. The record is written **Active**, and the entry records the
@@ -61,7 +61,7 @@ completed task and every reworded paragraph would stop being skimmable, which is
 a one-line-per-decision record is for.
 
 **How to apply:** when a direction artifact or a sequencing artifact is created, write a matching
-one-line entry in `waytide/local/log/`. Write one for each `Settled` resolution added afterward,
+one-line entry in `waytide/local/logs/log/`. Write one for each `Settled` resolution added afterward,
 and one for each change of the `**State:**` line.
 
 Write none for a completed task, and none for
@@ -83,3 +83,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

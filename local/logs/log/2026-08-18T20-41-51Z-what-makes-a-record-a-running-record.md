@@ -1,0 +1,1 @@
+# What makes a record belong under `logs/` is that it accrues chronologically and is never revised — a reader reaches one by date, and nothing there states what is currently true, which is what separates it from an idea, an implementation record, or a suspension

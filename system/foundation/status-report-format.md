@@ -14,7 +14,7 @@ Keep each part tight. Read current state before printing — do not report stale
 
 **Why:** a status report is a recurring request with a known shape. Fixing the format makes the report repeatable and complete, and steers reading toward the in-repo sources of truth rather than recollection.
 
-**How to apply:** on a status-report request, render the parts above from current files. Those are the project's ideas, `waytide/local/log/`, and git. Confirm the suite count and the two-level context tree by running the suite rather than asserting them. Take the two levels from **the run's output**, not from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source, and as its real value in a run. An unnamed test appears in the source and emits no line.
+**How to apply:** on a status-report request, render the parts above from current files. Those are the project's ideas, `waytide/local/logs/log/`, and git. Confirm the suite count and the two-level context tree by running the suite rather than asserting them. Take the two levels from **the run's output**, not from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source, and as its real value in a run. An unnamed test appears in the source and emits no line.
 
 Related:
 
@@ -39,3 +39,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

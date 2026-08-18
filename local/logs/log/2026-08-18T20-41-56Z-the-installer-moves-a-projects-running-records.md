@@ -1,0 +1,1 @@
+# The installer moves a project's running records into `logs/`, chained after the `sessions/` rename so a project holding the pre-2026-07-30 name reaches `logs/work-sessions/` in two steps — a rule names a directory and cannot move a project's own files

@@ -24,7 +24,11 @@ this package:
   (`deferred-queue-convention`), postponed until the current task finishes. It is **printed as a
   list of rows at the start of every session**, immediately after the rules are read, so a parked
   item is not lost by going unread (`print-the-deferred-queue-after-the-rule-read`).
-- **`waytide/local/log/`**. The decision log: one file per decision, a one-line title.
+- **`waytide/local/logs/`**. The **running records**, grouped (`logs-directory`) — records that
+  accrue chronologically and are never revised, as against the directories that state what is
+  currently true. It holds **`logs/log/`**, the decision log, one file per decision with a
+  one-line title; **`logs/loops/`**, contributed by `design-by-efferent`; and
+  **`logs/work-sessions/`**. The three sat directly under `waytide/local/` until 2026-08-18.
 
 Three conventions govern all of them: the **ISO-8601-UTC filename prefix**
 (`file-names`) that makes every artifact sort chronologically and declare its
@@ -52,7 +56,6 @@ planning and running changes:
 
 - `waytide/local/ideas/` — the project's planning records, whatever its tags name them
 - `waytide/local/implementations/` — the lifecycle record of an experiment or a feature
-- `waytide/local/work-sessions/` — the narrative record of a work session
 - `waytide/local/migration/` — execution plans for transitions of content **across a repository
   boundary**, kept after the content has gone so the trail of where it went stays in the
   repository it left
@@ -119,9 +122,9 @@ foundation itself governs. Every rule in that package was addressed to directori
 foundation creates.
 
 Other packages may contribute their own artifact directories (for example,
-design-by-efferent contributes `waytide/local/loops/`). Foundation owns
+design-by-efferent contributes `waytide/local/logs/loops/`). Foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`ideas`/`implementations`/`work-sessions`/`migration`/`suspended` work-artifact directories.
+`ideas`/`implementations`/`logs`/`migration`/`suspended` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule. A rule may name another package's rule freely. That
@@ -230,7 +233,7 @@ Foundation carries an **`install.sh`**, which also has to activate the system. R
 
 It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/`, `waytide/local/rules/`, and `waytide/local/vocabulary.md` at the start of every session. That root file is what actually activates the system. `git subtree` can only put files under `waytide/`, never at the project root. Without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending. It never edits your file silently.
 
-It also **renames `waytide/local/work-sessions/` if your project still holds it under its old name**, `waytide/local/sessions/`. This is the one place the installer touches your project's own working state. It moves the directory only when the old name is present and the new one is absent. Where the two exist it reports them and changes nothing, leaving the merge to you.
+It also **renames `waytide/local/logs/work-sessions/` if your project still holds it under its old name**, `waytide/local/sessions/`. This is the one place the installer touches your project's own working state. It moves the directory only when the old name is present and the new one is absent. Where the two exist it reports them and changes nothing, leaving the merge to you.
 
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 
@@ -293,3 +296,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

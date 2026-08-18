@@ -22,8 +22,8 @@ one arrives as though it still stood.
 journal is the ordinary case, and so is a writer who keeps none where other writers do. Its
 absence is not a defect and is not reported.
 
-**The other working directories are not read this way.** `log/`, `ideas/`,
-`implementations/`, `loops/`, `work-sessions/`, `migration/`, and `suspended/`
+**The other working directories are not read this way.** `logs/`, `ideas/`,
+`implementations/`, `migration/`, and `suspended/`
 are worked with as their own conventions describe. The journal is the one that is read whole, at
 the start, without being asked for.
 
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

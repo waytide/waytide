@@ -1,0 +1,1 @@
+# The running records are grouped under `waytide/local/logs/` — the decision log, the loop records, and the work session records move there from directly under `waytide/local/`, where they sat beside the directories that state what is currently true

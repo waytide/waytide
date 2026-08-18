@@ -81,12 +81,12 @@ deliberate variation, not a retry. A feature has no question to hold fixed.
 
 ## It is the lifecycle record, not the design record
 
-**The same work's design belongs in a loop record** under `waytide/local/loops/` — each cycle's
+**The same work's design belongs in a loop record** under `waytide/local/logs/loops/` — each cycle's
 hinge, the options put to the engineer, and the decision. The two divide by concern and each names
 the other.
 
 **They are separate files because of the package graph, and that is a refused dependency.**
-`waytide/local/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather
+`waytide/local/logs/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather
 than the reverse. A foundation rule requiring fields in that directory would invert the graph, and
 would make the implementation lifecycle unavailable to a project that installs `foundation` alone.
 Naming the loop record in prose is a **citation** and costs nothing. See the
@@ -130,3 +130,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

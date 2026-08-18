@@ -1,0 +1,1 @@
+# Foundation names `logs/loops/` without depending on it — `design-by-efferent` contributes that directory and includes `foundation`, so naming the parent is a citation that requires nothing of what sits inside, and a project installing `foundation` alone is missing nothing

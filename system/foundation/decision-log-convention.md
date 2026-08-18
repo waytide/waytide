@@ -1,6 +1,6 @@
-# `waytide/local/log/` — one file per decision, a one-line title
+# `waytide/local/logs/log/` — one file per decision, a one-line title
 
-Record decisions made during sessions as one file per decision in `waytide/local/log/`.
+Record decisions made during sessions as one file per decision in `waytide/local/logs/log/`.
 
 - **Trigger:** detect — write an entry whenever a real decision is made (the user picks among alternatives, accepts or rejects an approach, or sets a rule that will guide future work). Don't wait to be asked. When in doubt, log it. Over-logging is cheaper than under-logging here.
 - **Filename:** the ISO-8601-UTC prefix convention (see the file-names rule), computed with `date -u +%Y-%m-%dT%H-%M-%SZ`. Contributors are globally distributed, so UTC is mandatory — never local time.
@@ -10,13 +10,14 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 **Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A one-line-per-decision log, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
 
-**How to apply:** when a decision is made, write a titled one-line entry under `waytide/local/log/`, with a UTC filename. Commit it with the change, or with a `Log:` prefix.
+**How to apply:** when a decision is made, write a titled one-line entry under `waytide/local/logs/log/`, with a UTC filename. Commit it with the change, or with a `Log:` prefix.
 
 Related:
 
 - the file-names rule — the shared filename convention
 - the rules-convention — a new rule pairs with a log entry
 - the observations and deferred rules — their recording and resolution steps log too
+- the logs-directory rule — the running records this sits among
 
 ---
 
@@ -28,3 +29,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 11:33:53 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

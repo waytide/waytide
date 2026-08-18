@@ -143,7 +143,7 @@ write the **Use** term.
   human-computer-interaction examples, and a category is not a standing permission, so the term
   above is what reserves the word.
 - **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a
-  parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/work-sessions/`.
+  parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/logs/work-sessions/`.
 
 ## Discontinuations
 
@@ -187,3 +187,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:08:25 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

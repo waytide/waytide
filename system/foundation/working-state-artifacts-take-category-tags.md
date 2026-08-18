@@ -23,7 +23,7 @@ and a value. See this package's vocabulary.
 
 ## The one exception — the decision log
 
-**A `waytide/local/log/` entry takes no tags.** A log entry is deliberately one line, a
+**A `waytide/local/logs/log/` entry takes no tags.** A log entry is deliberately one line, a
 `# <title>` with no body and no template, and a `**Tags:**` line would break that shape.
 
 **This is the same exception, for the same reason, as the provenance footer's.** The
@@ -73,7 +73,7 @@ the artifact, after `**State:**` where there is one. Prefix a list item with `[t
 item alone.
 
 Write tags lower-case and dash-separated in square brackets. Introduce a freeform tag as it is
-needed. Add none to a `waytide/local/log/` entry, and derive nothing from a freeform tag.
+needed. Add none to a `waytide/local/logs/log/` entry, and derive nothing from a freeform tag.
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag,
 it is freeform.
@@ -91,3 +91,4 @@ Authored by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

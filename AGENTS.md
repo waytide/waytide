@@ -32,9 +32,11 @@ silenced.
 In a consuming project `install.sh` places the equivalent `.claude/settings.json`. Here in the source it
 is committed like this file.
 
-The `local/` directory holds this project's own working state. That is `log/`,
-`ideas/`, `implementations/`, `work-sessions/`, `migration/`, and `suspended/`. They are worked
-with as their conventions describe, not read as binding rules at session start. **The deferred
+The `local/` directory holds this project's own working state. That is `logs/`,
+`ideas/`, `implementations/`, `migration/`, and `suspended/`. They are worked
+with as their conventions describe, not read as binding rules at session start.
+**`logs/` groups the running records** — `logs/log/`, `logs/loops/`, and
+`logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred
 queue is no longer a directory** — it is every idea tagged `[deferred]`, and it is still printed
 at the start of every session.
 
@@ -74,3 +76,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

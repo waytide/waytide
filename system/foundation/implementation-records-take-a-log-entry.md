@@ -1,6 +1,6 @@
 # An implementation record takes a log entry — and what the concluding entry carries depends on whether the work reached `master`
 
-An **implementation record** pairs with a one-line entry in `waytide/local/log/`, on creation and
+An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and
 on each change of the canonical `**State:**` line.
 
 **The concluding entry takes one of two forms**, and which one is not a matter of taste. It is
@@ -87,3 +87,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
