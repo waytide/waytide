@@ -1,0 +1,1 @@
+# The session-start notice reports one open set — the concluded words are the union of the two kinds', and `Suspended` is deliberately absent from them, since a suspended implementation is paused rather than concluded and is still reported

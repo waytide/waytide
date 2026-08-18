@@ -1,0 +1,1 @@
+# The four rules the implementations rules replace are experiments-convention, experiment-lifecycle, features-convention, and feature-lifecycle — the first pair held the directory and the record shape, the second pair the branch, the working location, the declared end, and the confirmations

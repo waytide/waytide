@@ -1,5 +1,7 @@
 # Experiment — Use ASD-STE100 Simplified Technical English
 
+**Tags:** [experiment]
+
 ## Superseded on 2026-08-08
 
 **The STE Spec experiment superseded this one.** This experiment asked what the specification
@@ -28,6 +30,7 @@ history. The branch was deleted on 2026-08-08 and was never pushed.
 ## Setup
 
 - **State:** Superseded
+- **Tags:** [experiment]
 - **Superseded by:** `2026-08-08T06-26-51Z-ste-spec.md`, the STE Spec experiment, on 2026-08-08
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/simplified-technical-english`, deleted on 2026-08-08
@@ -135,3 +138,5 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 10:42:59 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

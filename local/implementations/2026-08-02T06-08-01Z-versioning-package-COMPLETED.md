@@ -1,5 +1,7 @@
 # Feature — The versioning package
 
+**Tags:** [feature]
+
 ## Intent
 
 Add a `versioning` package holding what a version **means** and how the next one is chosen:
@@ -15,6 +17,7 @@ cannot install `constant` until it is released.
 ## Setup
 
 - **State:** Completed
+- **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Working location:** the current branch, `master`. Chosen at initiation on 2026-08-02
   through the selection interface — the first feature to take that option since the
@@ -116,3 +119,5 @@ Authored by Scott Bellware on Sat Aug 1 2026 at 11:08:01 PM PT
 Changed by Scott Bellware on Sat Aug 1 2026 at 11:09:47 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

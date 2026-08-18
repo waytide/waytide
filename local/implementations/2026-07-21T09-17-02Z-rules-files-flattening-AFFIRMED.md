@@ -1,5 +1,7 @@
 # Experiment — Can the rules files be flattened?
 
+**Tags:** [experiment]
+
 ## Question
 
 The suspicion under test: **the rules files could be flattened** — the per-package
@@ -10,6 +12,7 @@ subdirectory. Is that feasible, and at what cost?
 ## Setup
 
 - **State:** Affirmed
+- **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/rules-files-flattening`
 - **Base:** `4764a6ca713c6857f460179a4040ac71af21a9c1` (master HEAD at start)
@@ -264,3 +267,5 @@ Authored by Scott Bellware on Tue Jul 21 2026 at 2 AM PT
 Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

@@ -9,13 +9,13 @@ package.
 
 **A merge to some other branch does not release the hold.** An experiment's upstream branch is not
 always `master`, and a feature's is not either. Each may merge into another topic branch, and the
-foundation experiment-lifecycle and feature-lifecycle rules each say so. That merge concludes the
+foundation implementation-lifecycle rule says so. That merge concludes the
 work against its own upstream. It does not put the content on `master`, so it licenses no publish.
 The publish waits for `master`, however many merges that takes.
 
 **The work also has to have concluded.** An experiment is **affirmed**, which the engineer
 declares. A feature is **completed**. A feature has no affirmation, being built to an intent rather
-than to a question, which the foundation feature-lifecycle rule states. Reaching `master` and
+than to a question, which the foundation implementation-lifecycle rule states. Reaching `master` and
 reaching a concluded state are two conditions, and a publish waits for the two.
 
 ## The publish is never offered
@@ -29,7 +29,7 @@ until it is published* states a true fact and points at the publish. It makes th
 as an obstacle. Do not write what the work is blocked on where the block is that the work has not
 concluded.
 
-**This is the publishing case of the foundation experiment-lifecycle rule's instruction** that the
+**This is the publishing case of the foundation implementation-lifecycle rule's instruction** that the
 agent never raises the end of an experiment. An offer to publish reaches the same place by a longer
 route. A publish requires a merge, and a merge requires the ending.
 
@@ -75,9 +75,8 @@ Related:
 - `CONTRIBUTING.md` — the publish procedure itself
 - the foundation downstream-work-is-never-offered rule — the same never-offer instruction for the
   act on the other side of a publish, refreshing the projects that installed the package
-- the foundation experiment-lifecycle rule — the affirmation a publish waits on, and its
-  instruction that the agent never raises the end of an experiment
-- the foundation feature-lifecycle rule — the completion a publish waits on, and why a feature has
+- the foundation implementation-lifecycle rule — the affirmation and the completion a publish waits
+  on, its instruction that the agent never raises the end of an experiment, and why a feature has
   no affirmation
 - the versioning package's the-next-version-is-chosen-by-the-engineer rule — which governs a
   consuming project that versions its packages, and not this one
@@ -88,3 +87,4 @@ Authored by Scott Bellware on Wed Aug 12 2026 at 10:52:06 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 6:14:22 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:44:35 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT

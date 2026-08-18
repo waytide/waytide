@@ -51,8 +51,7 @@ Beyond the four core directories, foundation defines the **work-artifact** direc
 planning and running changes:
 
 - `waytide/local/ideas/` — the project's planning records, whatever its tags name them
-- `waytide/local/experiments/` — recorded experiments that test a question
-- `waytide/local/features/` — the lifecycle record of a feature
+- `waytide/local/implementations/` — the lifecycle record of an experiment or a feature
 - `waytide/local/work-sessions/` — the narrative record of a work session
 - `waytide/local/migration/` — execution plans for transitions of content **across a repository
   boundary**, kept after the content has gone so the trail of where it went stays in the
@@ -60,14 +59,17 @@ planning and running changes:
 - `waytide/local/suspended/` — an **undo queue** for what the project stopped doing. The thing
   itself moves, carrying the return address needed to put it back
 
-**Experiments and features each carry a full branch lifecycle**, in the
-`experiment-lifecycle` and `feature-lifecycle` rules. That is their own branch, a
-working location chosen at the start, declared end states, and recorded confirmations. They differ where an experiment's question does
-not carry over to a feature's intent. An experiment forecasts and reaches a verdict, which is
-affirmed, refuted, inconclusive, abandoned, or superseded. It merges through a test gate on
-user-declared affirmation. A feature does none of those, ends
-completed/abandoned/superseded (or suspended), and is simply verified before it
-integrates.
+**An implementation carries a full branch lifecycle**, in the `implementations-convention` and
+`implementation-lifecycle` rules — its own branch, a working location chosen at the start, a
+declared end, and recorded confirmations. **Two kinds, and a tag says which.** An `[experiment]` is
+built to a **question** and a `[feature]` to an **intent**, and that one difference accounts for
+every other: an experiment forecasts, reaches a verdict of affirmed, refuted, or inconclusive,
+merges through a test gate on the engineer's affirmation, and is watched for drift. A feature does
+none of those, ends **completed**, is simply verified before it integrates, and is the only kind
+that may be built on the current branch.
+
+The four rules that stated this as two lifecycles were consolidated on 2026-08-18. They agreed on
+almost everything and had already drifted in their wording of the same clauses.
 
 **The project's ideas** live in `waytide/local/ideas/`, one file per idea (`ideas-convention`).
 A design is an idea, and so is a plan, an aspiration, an intention, an orientation, an action, a
@@ -103,8 +105,8 @@ idea that was neither had nowhere to sit.
   takes none, and neither does prose that settles nothing. It closes an asymmetry: four other
   conventions already stated their own pairing, and these two rested on the decision log's
   when-in-doubt clause.
-- **An experiment record and a feature record each pair with a log entry** too
-  (`experiment-and-feature-records-take-a-log-entry`), on creation and on each change of state. The
+- **An implementation record pairs with a log entry** too
+  (`implementation-records-take-a-log-entry`), on creation and on each change of state. The
   concluding entry is a **summary marker** where the work merged and **carries the substance**
   where it did not — a refuted experiment's branch is deleted unmerged, so a record that lived only
   there is unreachable, which a file deleted from `master` never is.
@@ -119,7 +121,7 @@ foundation creates.
 Other packages may contribute their own artifact directories (for example,
 design-by-efferent contributes `waytide/local/loops/`). Foundation owns
 `rules`/`observations`/`deferred`/`log` and the
-`plans`/`design`/`experiments`/`features`/`work-sessions`/`migration`/`suspended` work-artifact directories.
+`ideas`/`implementations`/`work-sessions`/`migration`/`suspended` work-artifact directories.
 
 Foundation also settles **what a package dependency is**, in the
 `a-citation-is-not-a-dependency` rule. A rule may name another package's rule freely. That
@@ -288,3 +290,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT

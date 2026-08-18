@@ -1,0 +1,1 @@
+# Experiments and features are one kind of record, called an implementation — the two lifecycles agreed on nearly everything and had already drifted in their wording of the same clauses, so they are one convention and one lifecycle, in `waytide/local/implementations/`

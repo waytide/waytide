@@ -1,5 +1,7 @@
 # Experiment — Diary test
 
+**Tags:** [experiment]
+
 ## Question
 
 **Does the diary work?**
@@ -31,6 +33,7 @@ actually be followed, and what they get wrong when someone tries.
 ## Setup
 
 - **State:** Affirmed
+- **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/diary-test`
 - **Base:** `e88385d9966cc7e97569ed3511a1f048fdb3630a`
@@ -243,3 +246,5 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:13:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:15:06 PM
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

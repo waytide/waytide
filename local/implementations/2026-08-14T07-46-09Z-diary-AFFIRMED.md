@@ -1,5 +1,7 @@
 # Experiment — Diary
 
+**Tags:** [experiment]
+
 ## Question
 
 **Is a diary a good fit for Waytide?**
@@ -19,6 +21,7 @@ diary is not a record of a decision, and it is not evidence. It is thinking, kep
 ## Setup
 
 - **State:** Affirmed
+- **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/diary`
 - **Base:** `f0db163d9cb279a50c2d4c2c1c64ab73ce42dc7f`
@@ -224,3 +227,5 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:31:00 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:46:07 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

@@ -1,0 +1,1 @@
+# The refused dependency moves with the convention — a foundation rule requiring fields in `waytide/local/loops/` would invert the package graph, since `design-by-efferent` includes `foundation`, so the loop record is named in prose and the a-citation-is-not-a-dependency rule's worked example resolves again

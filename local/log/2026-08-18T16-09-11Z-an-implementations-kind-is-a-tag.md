@@ -1,0 +1,1 @@
+# An implementation's kind is a tag — `[experiment]` or `[feature]`, under the ordinary square-bracket protocol, so the kind is a word in the record rather than a directory it sits in and a rule set it is read against

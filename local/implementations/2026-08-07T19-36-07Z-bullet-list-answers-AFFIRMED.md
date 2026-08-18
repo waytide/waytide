@@ -1,5 +1,7 @@
 # Experiment — Bullet list answers
 
+**Tags:** [experiment]
+
 ## Question
 
 **Should bullet lists be the required form for an agent's answers, with prose reserved for named
@@ -9,6 +11,7 @@ preference is a **rule**, and if so what it may require without breaking the ans
 ## Setup
 
 - **State:** Affirmed
+- **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/bullet-list-answers`
 - **Base:** `5422551fed1310b7460f24fcae65f90933e1db17`
@@ -153,3 +156,5 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 12:44:33 AM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

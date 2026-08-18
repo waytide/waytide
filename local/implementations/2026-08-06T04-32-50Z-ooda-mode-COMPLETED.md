@@ -1,5 +1,7 @@
 # Feature — The OODA mode
 
+**Tags:** [feature]
+
 ## Intent
 
 Add a **third project mode**, **OODA**, alongside formal and intuitive. Its planning artifacts are
@@ -23,6 +25,7 @@ artifacts as every existing planning directory is.
 ## Setup
 
 - **State:** Completed
+- **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/ooda-mode`
 - **Base:** `e46f95d74e2652d52c755bbcb3e7c3f92f2e0f38`, from `master`
@@ -107,3 +110,5 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 9:46:25 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

@@ -69,10 +69,9 @@ fi
 notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
   "$system" "$count" "$noun" "$list")
 
-# Report work that has not reached a concluded state — experiments and features
-# alike. Neither is ever left silently open (the experiment-lifecycle
-# and feature-lifecycle rules), but nothing otherwise brings an open
-# one to attention: the working directories under waytide/ are not read at session
+# Report work that has not reached a concluded state. An implementation is never
+# left silently open (the implementation-lifecycle rule), but nothing otherwise
+# brings an open one to attention: the working directories under waytide/ are not read at session
 # start, and work done in a worktree leaves no trace in the main working tree at
 # all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
@@ -155,29 +154,23 @@ else
   own=
 fi
 
-experiments=
-features=
+implementations=
 
 if [ -n "$own" ]; then
-  experiments=$(
-    report_open "$own/experiments" experiment experiments \
-      Affirmed Refuted Inconclusive Abandoned Superseded
-  )
-
-  features=$(
-    report_open "$own/features" feature features \
-      Completed Abandoned Superseded
+  # One directory, one call. The concluded words are the union of the two kinds':
+  # an experiment reaches a verdict, a feature reaches Completed, and both may be
+  # abandoned or superseded. Suspended is deliberately absent — a suspended
+  # implementation is paused rather than concluded, and is still reported.
+  implementations=$(
+    report_open "$own/implementations" implementation implementations \
+      Affirmed Refuted Inconclusive Completed Abandoned Superseded
   )
 fi
 
 # A literal backslash-n, so the JSON string carries a line break the harness
 # renders — not an actual newline, which would be invalid inside a JSON string.
-if [ -n "$experiments" ]; then
-  notice="${notice}\\n${experiments}"
-fi
-
-if [ -n "$features" ]; then
-  notice="${notice}\\n${features}"
+if [ -n "$implementations" ]; then
+  notice="${notice}\\n${implementations}"
 fi
 
 # The load-command line, always present. The notice states what is installed; this states

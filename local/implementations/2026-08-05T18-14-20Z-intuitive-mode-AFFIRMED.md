@@ -1,5 +1,7 @@
 # Experiment — Intuitive mode
 
+**Tags:** [experiment]
+
 ## Question
 
 Does **intuitive** name the human-centric project mode better than **creative** does?
@@ -7,6 +9,7 @@ Does **intuitive** name the human-centric project mode better than **creative** 
 ## Setup
 
 - **State:** Affirmed
+- **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/intuitive-mode`
 - **Base:** `e887bd71dd4fb4b388563e65622fbaa026bf8778`, from `master`
@@ -177,3 +180,5 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 12:13:51 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

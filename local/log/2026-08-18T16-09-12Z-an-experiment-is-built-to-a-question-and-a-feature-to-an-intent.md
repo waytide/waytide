@@ -1,0 +1,1 @@
+# An experiment is built to a question and a feature to an intent, and that one difference accounts for every other — the forecast, the verdict, the affirmation gate, and the drift watch all follow from having a question, and a feature has none of them because it has none

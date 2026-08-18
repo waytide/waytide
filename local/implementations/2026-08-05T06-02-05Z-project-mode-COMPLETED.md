@@ -1,5 +1,7 @@
 # Feature — The project mode: formal or creative
 
+**Tags:** [feature]
+
 ## Intent
 
 Give a Waytide project a **mode**, chosen at its initiation through the selection interface and
@@ -17,6 +19,7 @@ process-centric counterparts, and that is the point rather than an imprecision.
 ## Setup
 
 - **State:** Completed
+- **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Feature branch:** `feature/project-mode`
 - **Base:** `04f6b94b72e4ee762f55ecd698f6cfb2714b2f62`, from `master`
@@ -149,3 +152,5 @@ Changed by Scott Bellware on Sat Aug 8 2026 at 8:20:44 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 5:57:58 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:09:20 AM PT

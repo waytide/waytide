@@ -40,10 +40,10 @@ back:
   rules-convention. Those edits are part of the command, and a restore that does not reverse
   them leaves the thing back in place and uncited.
 
-**This is the plain text data attribute form the system already uses.** The experiments-convention
-and features-convention define a canonical `**State:**` line that `session-start.sh` reads
-mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. It is a
-bold label, a colon, and a value, optionally as a list item. That is one protocol in the system,
+**This is the plain text data attribute form the system already uses.** The
+implementations-convention defines a canonical `**State:**` line that `session-start.sh` reads
+mechanically, and the deferred queue carries `**Waits for:**` and `**Priority:**` the same way. It
+is a bold label, a colon, and a value, optionally as a list item. That is one protocol in the system,
 rather than a second one for this directory. Frontmatter is allowed and would also serve. It is not
 used here because there is no reason to introduce a second form where the existing one fits.
 
@@ -95,3 +95,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT

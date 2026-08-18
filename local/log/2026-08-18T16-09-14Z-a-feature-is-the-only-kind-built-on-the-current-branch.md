@@ -1,0 +1,1 @@
+# A feature is the only kind that may be built on the current branch — an experiment takes its own branch unconditionally, because a refuted experiment's branch is deleted and work sharing it would go with it
