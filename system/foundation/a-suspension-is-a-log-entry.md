@@ -10,7 +10,7 @@ is a different act with a different record.
 
 ## What the entry carries
 
-**One line, like every log entry**, stating what was suspended and **why** — what it cost, and
+**A title stating what was suspended and why**, like every log entry — what it cost, and
 what it stopped buying. The reason is the substance, because it is what a later reader is deciding
 against.
 
@@ -22,17 +22,23 @@ than of its first step.
 **The file is removed in the same commit.** Git holds the text, reachable by path from `master`'s
 history, which is the ordinary case this system relies on everywhere else.
 
-## The tag goes in the title
+## The tag
 
-**`[suspended]` leads the title line** — `# [suspended] The no-stored-recap rule is suspended, …`.
+**The entry carries `**Tags:** [suspended]` under its title**, separated by a blank line:
 
-**That is where a one-line record's tags go**, and it is the ordinary placement rather than an
-exception. The a-record-takes-category-tags rule gives three placements and lets a record's shape
-pick one: a `**Tags:**` line where the record has a head, the title line where it does not, a
-prefix on a list item. A log entry is one line, so it takes the second.
+```
+# The no-stored-recap rule is suspended, its one sentence folded into the log convention
 
-**A log entry may carry other tags beside this one.** Nothing here reserves the position, and
-nothing excludes any record from tagging.
+**Tags:** [suspended]
+```
+
+**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no
+record and offers no second shape, so a log entry's tags sit where an idea's and an
+implementation record's do. A leading-tag form was written on 2026-08-18 and superseded the same
+day.
+
+**A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing
+excludes any record from tagging.
 
 **`[suspended]` is a reserved tag.** What it marks is fixed here, and the set of suspensions is
 read from it.
@@ -58,8 +64,7 @@ and is not removed.
 
 Related:
 
-- the a-record-takes-category-tags rule — the universal tag protocol, and where a one-line
-  record's tags go
+- the a-record-takes-category-tags rule — the universal tag protocol, and its one form
 - the decision-log-convention — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the ideas-convention — the `Suspended` **state**, which is what an idea takes instead
@@ -69,3 +74,4 @@ Related:
 
 Authored by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT

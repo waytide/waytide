@@ -1,1 +1,3 @@
-# [suspended] The Constant example project aspiration is suspended into `local/suspended/` — its direction remains true of `constant` and is no longer direction this project works toward, so it sits beside the Upload example project design it replaced
+# The Constant example project aspiration is suspended into `local/suspended/` — its direction remains true of `constant` and is no longer direction this project works toward, so it sits beside the Upload example project design it replaced
+
+**Tags:** [suspended]

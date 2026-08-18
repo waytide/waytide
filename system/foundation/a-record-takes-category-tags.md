@@ -10,25 +10,25 @@ one. A tag applies to the **whole record** or to **one list item**.
 
 ## Where the tag goes
 
-**A tag has three placements, and a record's own shape decides which.**
+**There is one form, and every record uses it.**
 
-- **A record with a head** — the tag goes on a dedicated `**Tags:**` line among the canonical
-  lines at the head, **after `**State:**` where there is one**. Several tags are separated by
-  spaces — `**Tags:** [idea] [decision]`.
-- **A one-line record** — the tags lead the title, inside the `# <title>` itself:
-  `# [suspended] The no-stored-recap rule is suspended, …`. The decision log is the case. Its
-  convention fixes an entry at one line, so a `**Tags:**` line would break a shape that rule
-  settles. The tags go in the line the record has.
-- **A list item** — the tag prefixes that item's text — `- [idea] My great idea is thus`.
+- **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at
+  the head, **after `**State:**` where there is one**. Several tags are separated by spaces —
+  `**Tags:** [idea] [decision]`.
+- **One list item** — the tag prefixes that item's text — `- [idea] My great idea is thus`.
 
-**Leading rather than trailing, in the title case.** A directory of one-line records is scanned
-by filename and opening words. This project's decision log holds 727 entries whose titles run to
-a median of 245 characters, 69% of them past 200. A tag at the end of such a title is a tag
-nobody sees.
+**A record with no head gains one.** A decision log entry is a title and nothing else, so a
+`**Tags:**` line under its title is the entry's whole head. The decision-log-convention states
+that shape, and a tagged entry is two lines rather than one.
 
-**The placement is a consequence of shape, and never a prohibition.** No record is barred from
-tags for being short, one-line, generated, or historical. Where a `**Tags:**` line does not fit,
-the title line does.
+**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line
+record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning
+that a short record had nowhere else to put them. It is discontinued. A second form buys a line
+saved and costs every reader and every search two shapes to know, and the tag is no longer in the
+field the rest of the system reads it from.
+
+**No record is excluded, and none is excluded by its shape.** Short, one-line, generated, or
+historical, a record that carries tags carries them on a `**Tags:**` line.
 
 **The form is lower-case, in square brackets.** A multiword tag is dash-separated and lower-case,
 as `[legal-matter]` is.
@@ -83,8 +83,7 @@ tagging the same thing `[idea]` and `[ideas]` have categorized nothing together.
 rather than solved, because solving it costs the property the tags exist for.
 
 **How to apply:** where a categorization is worth marking, add a `**Tags:**` line at the head of
-the record, after `**State:**` where there is one. Where the record is one line, lead its title
-with the tags instead. Prefix a list item with `[tag]` to mark that item alone.
+the record, after `**State:**` where there is one. Prefix a list item with `[tag]` to mark that item alone.
 
 Write tags lower-case and dash-separated in square brackets. Introduce a freeform tag as it is
 needed, and derive nothing from one. Exclude no record from tagging.
@@ -95,7 +94,7 @@ it is freeform.
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
-- the decision-log-convention — the one-line entry whose shape puts its tags in the title
+- the decision-log-convention — the entry that gains a `**Tags:**` line under its title
 - the a-suspension-is-a-log-entry rule — `[suspended]`, the reserved tag the log carries
 - the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does
   exempt the log; a footer is lines the entry has nowhere to put, where a tag is not
@@ -110,3 +109,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT

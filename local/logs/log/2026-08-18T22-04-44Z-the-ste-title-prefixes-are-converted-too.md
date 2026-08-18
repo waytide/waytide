@@ -1,0 +1,1 @@
+# Four log entries carried an ad-hoc `[STE]` title prefix from 2026-08-08, predating the tag protocol — they convert to `**Tags:** [ste]`, lower-cased, since the protocol fixes tags as lower-case and the leading form is discontinued

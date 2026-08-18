@@ -1,0 +1,1 @@
+# One form beats a line saved — a second placement bought a line on a tagged log entry and cost every reader and every search two shapes to know, with the tag out of the field the rest of the system reads it from

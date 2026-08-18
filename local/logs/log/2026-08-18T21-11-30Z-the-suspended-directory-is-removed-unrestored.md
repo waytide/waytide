@@ -1,1 +1,3 @@
-# [suspended] `waytide/local/suspended/` is removed — the undo queue ran from 2026-08-03 to 2026-08-18, accumulated eleven items, and not one was restored; the log entry alone is what a suspension leaves, and the suspended-convention goes with the directory
+# `waytide/local/suspended/` is removed — the undo queue ran from 2026-08-03 to 2026-08-18, accumulated eleven items, and not one was restored; the log entry alone is what a suspension leaves, and the suspended-convention goes with the directory
+
+**Tags:** [suspended]
