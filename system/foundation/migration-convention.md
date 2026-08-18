@@ -1,6 +1,6 @@
-# `waytide/local/migration/` — execution plans for transitions of content between repository boundaries
+# `waytide/local/logs/migration/` — execution plans for transitions of content between repository boundaries
 
-`waytide/local/migration/` holds **migration records**: the execution plans for moving content
+`waytide/local/logs/migration/` holds **migration records**: the execution plans for moving content
 **across a repository boundary**, and the record of how the move actually went. Content leaving
 this repository for another, or arriving from one, is planned and recorded here.
 
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT

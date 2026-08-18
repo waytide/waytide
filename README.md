@@ -26,7 +26,7 @@ below (each has its own repository).
 - **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method
   (DBE): hinges and gates, the actuation-first cycle, and the method's own
   `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI.
-  Contributes the `loops/` artifact directory.
+  Contributes the `logs/loops/` artifact directory.
 - **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test
   structure and naming, assertion form.
 - **[code/ruby](https://github.com/waytide/code-ruby)**. Prescriptive Ruby style.

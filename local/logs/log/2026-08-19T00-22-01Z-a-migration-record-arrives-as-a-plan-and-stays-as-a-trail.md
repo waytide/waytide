@@ -1,0 +1,1 @@
+# A migration record arrives as a plan and stays as a trail, which is the one member of `logs/` that has to cross over — it states what is to happen while the transition runs, and is kept unrevised afterward as the record of where the content went, which is the whole reason it is kept

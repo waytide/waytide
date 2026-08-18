@@ -1,0 +1,1 @@
+# `waytide/local/migration/` moves under `waytide/local/logs/` — it is the fourth running record, and `waytide/local/` now holds only `logs/`, `ideas/`, and `implementations/` beside `rules/` and `vocabulary.md`
