@@ -69,15 +69,25 @@ user-declared affirmation. A feature does none of those, ends
 completed/abandoned/superseded (or suspended), and is simply verified before it
 integrates.
 
-**How the planning records *read*** was foundation's concern through four rules — two conventions
-and two document formats — and **all four were decommissioned on 2026-08-18** with the mode
-mechanism. See `waytide/local/suspended/` in this repository for the record of what they held.
+**The project's ideas** live in `waytide/local/ideas/`, one file per idea (`ideas-convention`).
+A design is an idea, and so is a plan, an aspiration, an intention, an orientation, an action, a
+specification, and an observation — what each one *is*, is a tag, and the tag set is open.
 
-**A convention and a document format for the idea are not yet written.** What they carry over is
-settled in the one-ideas-directory aspiration: one directory, the kind as a tag, the state words
-and their reversibility, dated **Settled** resolutions, an **Out of Scope / Deferred** tail,
-behavior-stated checkbox tasks, supersession, and that a settled idea is reconciled rather than
-regenerated from the work downstream of it.
+- **The shape is thin.** A title, a `**State:**` line, a `**Tags:**` line, and whatever the idea
+  has to say. A footer, a log entry, the ISO-8601-UTC prefix, and the state suffix. Nothing else
+  is required, because an idea that settles nothing has no resolutions and an idea that sequences
+  nothing has no tasks.
+- **Eight states**, one set for every idea: **Open**, **Active**, **Realized**, **Deferred**,
+  **Suspended**, **Superseded**, **Abandoned**, and **Lapsed**. `Open` and `Active` are the two
+  starting words. `Lapsed` and `Abandoned` differ in who acted — lapsing is what happens when
+  nobody decides and the work moves past the idea.
+- **Supersede rather than rewrite**, and amend by dated addition, so an idea reads as a history of
+  thinking rather than as whatever is current. A settled idea is reconciled, never regenerated
+  from the work downstream of it.
+
+It replaces four rules — two conventions and two document formats — decommissioned with the mode
+mechanism on 2026-08-18. Those fixed a spine for a design and an element order for a plan, and an
+idea that was neither had nowhere to sit.
 
 - **Plans contain no code samples**, and avoid committing to method or file names that are not
   yet decided (`plans-no-code-samples`).
@@ -277,3 +287,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT

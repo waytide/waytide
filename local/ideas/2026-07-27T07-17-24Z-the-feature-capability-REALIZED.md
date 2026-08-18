@@ -1,6 +1,6 @@
 # The Feature Capability — Intention
 
-- **State:** Implemented
+- **State:** Realized
 - **Tags:** [intention]
 
 ## Goal
@@ -131,3 +131,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT

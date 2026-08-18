@@ -1,0 +1,1 @@
+# An idea carries no required spine — dated `Settled` resolutions where it settles things, checkbox tasks where it sequences work, and neither where it does neither, because a shape imposed on thinking is ceremony wherever the thinking does not have it

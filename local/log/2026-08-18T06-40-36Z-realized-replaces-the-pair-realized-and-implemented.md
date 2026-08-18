@@ -1,0 +1,1 @@
+# `Realized` replaces the pair `Realized` and `Implemented` — the pair distinguished a direction taken up from a sequence built, and that distinction went with the direction-and-sequencing pairing, so one word is what remains of it
