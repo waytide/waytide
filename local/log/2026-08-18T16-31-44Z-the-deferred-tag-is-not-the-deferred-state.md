@@ -1,0 +1,1 @@
+# The `[deferred]` tag is not the `Deferred` state — the tag means queued and the state means parked indefinitely, and an idea may carry both; the tag is what the queue is read from, and it is independent of every state

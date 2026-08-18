@@ -1,0 +1,1 @@
+# The deferred queue is a tag, not a directory — `waytide/local/deferred/` is consolidated into `waytide/local/ideas/`, and the queue is every idea tagged `[deferred]`, since a separate directory was never what made it a queue

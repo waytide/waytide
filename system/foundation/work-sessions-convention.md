@@ -49,7 +49,7 @@ Once the record is written, put the **design reconciliation** through the same U
 
 Related:
 
-- experiments-convention — the sibling artifact conventions
+- the implementations-convention and the ideas-convention — the sibling artifact conventions
 - the record-rule-authorship-in-a-footer rule — the footer's format
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log rule
@@ -87,3 +87,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

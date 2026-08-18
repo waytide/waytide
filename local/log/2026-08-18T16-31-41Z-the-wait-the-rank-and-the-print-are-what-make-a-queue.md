@@ -1,0 +1,1 @@
+# The wait, the rank, and the print at session start are what make a queue, and each is carried by the item itself — so one directory holds the project's thinking whatever its status, and a tag says which of it is waiting its turn

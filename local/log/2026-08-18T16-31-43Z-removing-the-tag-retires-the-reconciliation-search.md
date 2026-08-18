@@ -1,0 +1,1 @@
+# Removing the tag retires the reconciliation search — the old convention searched every artifact citing an item before deleting its file, because deletion left the citations pointing at nothing; a kept record resolves, and its state line says what became of it

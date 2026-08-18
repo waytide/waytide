@@ -40,12 +40,13 @@ waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 them beside each other.** They differ in *what is set aside*, *where it goes*, and *what brings
 it back*.
 
-- **deferred** — a **design change** identified mid-task and postponed until the current task
-  finishes. It goes into `waytide/local/deferred/` as a **queue, not a record**: an item is
-  worked and then its file is **deleted**, leaving a decision-log entry as the durable trace. A
+- **deferred** — work identified mid-task and postponed until the current task finishes. It is
+  an **idea tagged `[deferred]`** in `waytide/local/ideas/`, and the **tag is the queue**: the tag
+  comes off when the item is worked, and the record itself is kept with its state changed. A
   deferred item is *waiting its turn* — the project still intends to do it. It carries a
   `**Waits for:**` line saying what must finish first, and may carry a `**Priority:**` rank. Its
-  rule is the deferred-convention. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process,
+  rule is the deferred-queue-convention. **`[deferred]` the tag is not `Deferred` the state**,
+  which means parked indefinitely; an idea may carry both. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process,
   and method.**
 - **suspended** — something the project **stopped doing** and set aside rather than deleted: a
   rule that became ceremony, a procedure nobody runs. The thing **itself moves** into
@@ -75,8 +76,8 @@ scope** is *not here*.
   to suit it. **STE: absent from the STE dictionary. Technical noun, ETE evented systems and autonomous components.**
 - **reconcile** — to correct the **live, forward-looking** artifacts that cite something which
   has changed, moved, or been deleted. Reconciling is directed at what points *at* a thing, not
-  at the thing itself, and it is confined to artifacts read as current: an observation, a
-  design, a plan, another deferred item. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
+  at the thing itself, and it is confined to artifacts read as current: an observation, an idea,
+  another deferred item, an implementation record. **Historical records are left as written**, the one exception being a record that discloses what should not have been disclosed. See the disclosure rule. A design is
   reconciled **against** the records rather than **regenerated from** them: it is a source of
   truth a plan points back at, so rebuilding it from downstream work would invert the direction
   of authority. **STE: absent from the STE dictionary. Technical verb, ETE engineering, design, process, and method.**
@@ -184,3 +185,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:38:29 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:08:25 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

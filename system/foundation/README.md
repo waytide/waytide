@@ -20,10 +20,10 @@ this package:
   (`vocabulary-convention`). One file, no datetime prefix, and optional.
 - **`waytide/local/ideas/`**. Working hypotheses and rule-candidates still under
   discovery. Not yet binding.
-- **`waytide/local/deferred/`**. Design changes postponed until the current task finishes.
-  A queue, not a permanent record. It is **printed as a list of rows at the start of every
-  session**, immediately after the rules are read, so a parked item is not lost by going
-  unread (`print-the-deferred-queue-after-the-rule-read`).
+- **The deferred queue** is not a directory. It is every idea tagged `[deferred]`
+  (`deferred-queue-convention`), postponed until the current task finishes. It is **printed as a
+  list of rows at the start of every session**, immediately after the rules are read, so a parked
+  item is not lost by going unread (`print-the-deferred-queue-after-the-rule-read`).
 - **`waytide/local/log/`**. The decision log: one file per decision, a one-line title.
 
 Three conventions govern all of them: the **ISO-8601-UTC filename prefix**
@@ -291,3 +291,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

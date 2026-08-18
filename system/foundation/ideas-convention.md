@@ -9,6 +9,11 @@ ordinary square-bracket tags every working-state artifact takes (see the
 working-state-artifacts-take-category-tags rule), and the set is open — a project writes the tag
 it needs.
 
+**One tag is reserved and is read mechanically: `[deferred]`.** It marks work postponed until the
+current task finishes, and the ideas carrying it are the deferred queue, printed at the start of
+every session. It is independent of the state, and it is not the `Deferred` state. See the
+deferred-queue-convention.
+
 ## The shape
 
 - **One file per idea**, named by the ISO-8601-UTC prefix (see the file-names rule), ending with
@@ -35,7 +40,8 @@ Every idea carries a `**State:**` line, from the moment it is written:
   a direction.
 - **Active** — settled, and the work is expected. Where an idea starts when it settles something.
 - **Realized** — what the idea describes exists.
-- **Deferred** — kept deliberately, with no date and nobody working toward it.
+- **Deferred** — kept deliberately, with no date and nobody working toward it. **This is not the
+  `[deferred]` tag**, which means queued rather than parked.
 - **Suspended** — paused, not ended.
 - **Superseded** — another idea replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
@@ -91,6 +97,7 @@ have.
 Related:
 
 - the working-state-artifacts-take-category-tags rule — the tags that say what an idea is
+- the deferred-queue-convention — the one reserved tag, and the queue it makes
 - the a-record-ends-with-its-state-in-upper-case rule — the filename suffix
 - the direction-and-sequencing-artifacts-take-a-log-entry rule — the log entry, whose name carries concepts this rule does not
 - the observations-convention — an observation, which is an idea and carries the promotion path to a rule
@@ -100,3 +107,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

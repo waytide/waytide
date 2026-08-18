@@ -33,8 +33,10 @@ In a consuming project `install.sh` places the equivalent `.claude/settings.json
 is committed like this file.
 
 The `local/` directory holds this project's own working state. That is `log/`,
-`deferred/`, `aspiration/`, `intention/`, `work-sessions/`, and `experiments/`. They are worked
-with as their conventions describe, not read as binding rules at session start.
+`ideas/`, `implementations/`, `work-sessions/`, `migration/`, and `suspended/`. They are worked
+with as their conventions describe, not read as binding rules at session start. **The deferred
+queue is no longer a directory** — it is every idea tagged `[deferred]`, and it is still printed
+at the start of every session.
 
 **`local/diary/` is the exception, and it is read.** The `diary` package's
 the-diary-is-read-at-session-start rule directs the read, after the rules and the vocabularies,
@@ -70,3 +72,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

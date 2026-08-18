@@ -26,7 +26,7 @@ record, and what state it then carries is not settled.
 
 **`Lapsed` and `Abandoned` differ in who acted.** Abandoning is a decision — the record was
 dropped. Lapsing is what happens when nobody decides anything and the work moves past the record.
-The corpus already used the sense: the deferred-convention says a reference *time has overtaken*
+The corpus already used the sense: the deferred-queue-convention says a reference *time has overtaken*
 is not a defect and is not chased.
 
 - **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method/definition the user hasn't ratified as a convention. When in doubt between a rule and an observation, prefer an observation — promoting later is cheap, retracting a premature rule is not.
@@ -57,3 +57,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:32:18 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

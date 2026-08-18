@@ -70,8 +70,8 @@ the working directory, branch, and any uncommitted, untracked, or unpushed work.
 `waytide/` holds exactly two directories, splitting what came from outside from what
 is this project's own. `waytide/system/` is installed and never edited in place.
 `waytide/local/` is everything this project writes: `rules/` and `vocabulary.md`
-alongside the working state — `log/`, `deferred/`, `observations/`, `work-sessions/`,
-`loops/`, `experiments/`, and the project's planning directories — each worked with as
+alongside the working state — `log/`, `ideas/`, `work-sessions/`,
+`loops/`, `implementations/`, `migration/`, and `suspended/` — each worked with as
 its convention describes, and only `rules/` and `vocabulary.md` read as binding at
 session start.
 EOF

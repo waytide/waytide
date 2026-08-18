@@ -75,7 +75,8 @@ not suspend what was never in use, since that is not a reversal of anything.
 Related:
 
 - the rules-convention — removing a rule, and the reconciliation a suspension must record
-- the deferred-convention — the other queue, which deletes on resolution rather than keeping
+- the deferred-queue-convention — the other queue, which tags the record in place rather than
+  moving it
 - the decision-log rule
 - the file-names rule — the ISO-8601-UTC prefix a suspended file keeps
 
@@ -96,3 +97,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT

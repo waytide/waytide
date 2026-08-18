@@ -4,6 +4,9 @@ Waytide shapes the agent through **rules read at the start of a session**. A Cla
 style** shapes it by **replacing part of the system prompt**. The two aim at the same thing by
 different mechanisms, and Waytide has never examined the second.
 
+**State:** Open
+**Tags:** [deferred] [delivery]
+
 - **Waits for:** the STE experiment concluding. That experiment is changing what the rules say and
   how they are written, and this question is about how rules reach the agent at all. Working both
   at once would confuse a change in the words with a change in the delivery.
@@ -51,3 +54,4 @@ delivery as it stands, and the rules-convention.
 ---
 
 Authored by Scott Bellware on Sun Aug 9 2026 at 6:42:21 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
