@@ -1,0 +1,1 @@
+# Only flush prose lines are joined in the STE reference files — an indented line is columnar layout the extraction preserved with spaces, and the dictionary is 97% of it, so joining one would destroy the table it draws

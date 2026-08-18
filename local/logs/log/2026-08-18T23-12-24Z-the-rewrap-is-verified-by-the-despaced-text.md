@@ -1,0 +1,1 @@
+# The rewrap is verified by comparing the text with all whitespace removed, before and against after — a join adds a space or nothing, so an identical despaced stream proves no word was lost, reordered, or altered

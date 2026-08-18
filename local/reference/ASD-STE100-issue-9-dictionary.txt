@@ -1,31 +1,18 @@
-This file is Part 2 of ASD-STE100 Issue 9, dated 2025-01-15, as published — the
-dictionary, with every Issue 9 change already applied by ASD. It is ASD's text,
-unaltered, and not a summary, an extract, or a re-arrangement of it.
+This file is Part 2 of ASD-STE100 Issue 9, dated 2025-01-15, as published — the dictionary, with every Issue 9 change already applied by ASD. It is ASD's text, unaltered, and not a summary, an extract, or a re-arrangement of it.
 
-Part 1, the writing rules, is in ASD-STE100-issue-9-writing-rules.txt beside this file.
-The two were one file until 2026-08-09.
+Part 1, the writing rules, is in ASD-STE100-issue-9-writing-rules.txt beside this file. The two were one file until 2026-08-09.
 
-The dictionary gives 875 approved words and 1274 words that are not approved. An
-approved word is in capitals with its approved meaning. A word that is not approved is
-in lower case with the approved alternatives that replace it. A word that is absent is
-permitted only as a technical noun or a technical verb, by STE Rule 1.1. Technical
-nouns are marked (TN) and technical verbs (TV).
+The dictionary gives 875 approved words and 1274 words that are not approved. An approved word is in capitals with its approved meaning. A word that is not approved is in lower case with the approved alternatives that replace it. A word that is absent is permitted only as a technical noun or a technical verb, by STE Rule 1.1. Technical nouns are marked (TN) and technical verbs (TV).
 
-ASD's own copyright notices are reproduced below, before the dictionary, because this
-file carries ASD's text and must carry its notice with it.
+ASD's own copyright notices are reproduced below, before the dictionary, because this file carries ASD's text and must carry its notice with it.
 
-This note is the only text in this file that ASD did not write. Everything after the
-line of dashes is the specification.
+This note is the only text in this file that ASD did not write. Everything after the line of dashes is the specification.
 
 --------------------------------------------------------------------------------
 
                                    Copyright notices
 Copyright
-The information in this document is the property of the Aerospace, Security and Defence Industries
-Association of Europe (ASD). Transmittal, receipt, or possession of the information does not
-express license or imply any rights to use, sell, or manufacture from this information and no
-reproduction or publication of it, in whole or in part, shall be made without the written authority of
-an officer of ASD.
+The information in this document is the property of the Aerospace, Security and Defence Industries Association of Europe (ASD). Transmittal, receipt, or possession of the information does not express license or imply any rights to use, sell, or manufacture from this information and no reproduction or publication of it, in whole or in part, shall be made without the written authority of an officer of ASD.
 
 The copyright for this document, in whole or in part, is fully owned by:
 
@@ -35,13 +22,11 @@ The copyright for this document, in whole or in part, is fully owned by:
                        © ASD, 2005, 2007, 2010, 2013, 2017, 2021, 2025
              (previously AECMA, 1986, 1987, 1988, 1989, 1995, 1998, 2001, 2004)
 
-ASD-STE100 Simplified Technical English is a European Union (EU) registered trademark owned
-by ASD
+ASD-STE100 Simplified Technical English is a European Union (EU) registered trademark owned by ASD
                        ® ASD, 2006 (004901195), 2018 (017966390)
 
 Special usage rights
-Irrevocable permission to use, reproduce or publish this document or any subsequent modification
-or revision thereof, in whole or in part, free of charge, is hereby given to these organizations and
+Irrevocable permission to use, reproduce or publish this document or any subsequent modification or revision thereof, in whole or in part, free of charge, is hereby given to these organizations and
 institutions:
 1.     National Associations who are members of ASD, and all their member companies
 2.     Members of Aerospace Industries Association of America (AIA) and Canada (AIAC)
@@ -54,11 +39,7 @@ institutions:
 8.     Universities and research institutes for educational purposes.
 
 Disclaimer of liability
-The purpose of this document, including its writing rules, dictionary entries, and all their related
-examples, is solely to offer recommendations and definitions intended to assist in technical
-communication. This document is not intended to create legal obligations or confer legal rights. No
-part of this document should be interpreted as having legal significance or implications, regardless
-of the context in which it is used.
+The purpose of this document, including its writing rules, dictionary entries, and all their related examples, is solely to offer recommendations and definitions intended to assist in technical communication. This document is not intended to create legal obligations or confer legal rights. No part of this document should be interpreted as having legal significance or implications, regardless of the context in which it is used.
 
 
 --------------------------------------------------------------------------------
@@ -71,19 +52,9 @@ of the context in which it is used.
 
                                         Introduction
 General
-The dictionary gives the words that are approved in STE (875 approved words) and the examples
-that show how to use each approved word correctly. The approved words in the dictionary are the
-most frequent words that you use in technical writing.
-The dictionary also includes a selection of words that are not approved (1274 words). For each
-word that is not approved, there are one or more alternatives that are approved in STE. For each
-alternative, there is an example that shows how to use the alternative to communicate the same
-information correctly (with a word-for-word replacement or a different sentence construction).
-The dictionary does not include technical nouns or technical verbs. But some of them are referred
-to as alternatives to words that are not approved. In the dictionary, the identification for technical
-nouns is (TN) and the identification for technical verbs is (TV). A dictionary entry does not include
-antonyms (opposite meanings) for the applicable listed word.
-The dictionary uses American English spelling as defined in the Merriam-Webster’s dictionary, and
-the punctuation in the examples obeys American English rules.
+The dictionary gives the words that are approved in STE (875 approved words) and the examples that show how to use each approved word correctly. The approved words in the dictionary are the most frequent words that you use in technical writing.
+The dictionary also includes a selection of words that are not approved (1274 words). For each word that is not approved, there are one or more alternatives that are approved in STE. For each alternative, there is an example that shows how to use the alternative to communicate the same information correctly (with a word-for-word replacement or a different sentence construction). The dictionary does not include technical nouns or technical verbs. But some of them are referred to as alternatives to words that are not approved. In the dictionary, the identification for technical nouns is (TN) and the identification for technical verbs is (TV). A dictionary entry does not include antonyms (opposite meanings) for the applicable listed word.
+The dictionary uses American English spelling as defined in the Merriam-Webster’s dictionary, and the punctuation in the examples obeys American English rules.
 
 Guide to the dictionary
 The dictionary has four columns that give this information:
@@ -124,9 +95,7 @@ AID (n)                 Help that is given          IF YOU GET THIS
                                                     MEDICAL AID
                                                     IMMEDIATELY.
 
-A word in lowercase letters shows that you cannot use this word because it is not approved in
-STE. To replace this word in a text, you must use a different word or a different sentence
-construction.
+A word in lowercase letters shows that you cannot use this word because it is not approved in STE. To replace this word in a text, you must use a different word or a different sentence construction.
 Examples:
 Word                    Approved meaning/           STE EXAMPLE               Non-STE example
 (part of speech)        ALTERNATIVES
@@ -136,8 +105,7 @@ main (adj)              PRIMARY (adj)              THE PRIMARY CAUSE          Th
                                                    THE FLUID.
 build (v)               ASSEMBLE (v)               ASSEMBLE THE UNIT.         Build the unit.
 
-The part of speech for each word is given in parentheses with its recognized abbreviation. Use an
-approved word only as the specified part of speech. Refer to part 1, section 1.
+The part of speech for each word is given in parentheses with its recognized abbreviation. Use an approved word only as the specified part of speech. Refer to part 1, section 1.
 In the dictionary, there are eight parts of speech as follows:
    1. noun (n): A word that is the name of a person, place, object, idea, quality, or activity.
 
@@ -190,9 +158,7 @@ Verbs in the dictionary can be:
                              ASD STE100 Simplified Technical English
 
 Regular verbs
-Verbs that obey a constant pattern to make the simple past tense and the past participle form.
-Usually, regular verbs add “-ed” to the base verb form to make the simple past tense and the past
-participle form.
+Verbs that obey a constant pattern to make the simple past tense and the past participle form. Usually, regular verbs add “-ed” to the base verb form to make the simple past tense and the past participle form.
 Do not use the past participle form if it is not in the dictionary.
 Example:
 Word                     Approved meaning/            STE EXAMPLE            Non-STE example
@@ -269,9 +235,7 @@ WILL (v)             Auxiliary modal verb that WARNINGS AND
 
                             ASD STE100 Simplified Technical English
 
-Adjectives: Adjectives are given in their base form, with their comparative and superlative forms
-in parentheses. Adjectives that make their comparative and superlative forms with “more” and
-“most” do not have these forms in the dictionary, because “more” and “most” are approved words.
+Adjectives: Adjectives are given in their base form, with their comparative and superlative forms in parentheses. Adjectives that make their comparative and superlative forms with “more” and “most” do not have these forms in the dictionary, because “more” and “most” are approved words.
 Example:
 Word                    Approved meaning/         STE EXAMPLE                Non-STE example
 (part of speech)        ALTERNATIVES
@@ -293,10 +257,7 @@ briskly (adv)           QUICKLY (adv)             RUB THE SURFACE            Rub
 
  Column 2: Approved meaning/ALTERNATIVES
 Approved words
-This column gives the approved meaning (or definition) of an approved word in STE. The text in
-these definitions is not in STE. If a meaning is not given in the dictionary, you cannot use the word
-with a meaning that is not approved. Thus, you must use a different word that has the meaning that
-you want.
+This column gives the approved meaning (or definition) of an approved word in STE. The text in these definitions is not in STE. If a meaning is not given in the dictionary, you cannot use the word with a meaning that is not approved. Thus, you must use a different word that has the meaning that you want.
 Example:
 Word                   Approved meaning/           STE EXAMPLE               Non-STE example
 (part of speech)       ALTERNATIVES
@@ -306,9 +267,7 @@ BEHIND (prep)          In a position at the rear   THE PUMP IS
                                                    MOTOR.
 
 Words that are not approved in the dictionary
-For words that are not approved in the dictionary, this column gives approved alternatives that you
-can use to replace the words that are not approved. These alternatives are in uppercase letters
-and are only suggestions to help you.
+For words that are not approved in the dictionary, this column gives approved alternatives that you can use to replace the words that are not approved. These alternatives are in uppercase letters and are only suggestions to help you.
 Example:
 Word                   Approved meaning/           STE EXAMPLE               Non-STE example
 (part of speech)       ALTERNATIVES
@@ -320,9 +279,7 @@ addition (n)           ADD (v)                     TO GET THE                Adj
 
                            ASD STE100 Simplified Technical English
 
-It is possible that the approved alternative for a word that is not approved has a different part of
-speech. Usually, the first approved alternative has the same part of speech as the word that is not
-approved.
+It is possible that the approved alternative for a word that is not approved has a different part of speech. Usually, the first approved alternative has the same part of speech as the word that is not approved.
 Example:
 Word                   Approved meaning/          STE EXAMPLE                 Non-STE example
 (part of speech)       ALTERNATIVES
@@ -340,9 +297,7 @@ maintain (v)           KEEP (v)                   KEEP THE FLUID              Ma
                                                   THE WATER SUPPLY  supply system.
                                                   SYSTEM.
 
-The first column in the dictionary does not include technical nouns or technical verbs. But the
-second column can include technical nouns or technical verbs as alternatives to words that are not
-approved. Then, the abbreviations TN and TV in parentheses identify these alternatives.
+The first column in the dictionary does not include technical nouns or technical verbs. But the second column can include technical nouns or technical verbs as alternatives to words that are not approved. Then, the abbreviations TN and TV in parentheses identify these alternatives.
 
 Example:
 Word                   Approved meaning/          STE EXAMPLE                 Non-STE example
@@ -350,8 +305,7 @@ Word                   Approved meaning/          STE EXAMPLE                 No
 uncovered (v)          COVER (TN)                 DO NOT PUT A COVER Leave the container
                                                   ON THE CONTAINER.  uncovered.
 
-The approved alternative for a word that is not approved can also be a phrase. These alternatives
-do not include the parts of speech in parentheses.
+The approved alternative for a word that is not approved can also be a phrase. These alternatives do not include the parts of speech in parentheses.
 Example:
 Word                   Approved meaning/          STE EXAMPLE                 Non-STE example
 (part of speech)       ALTERNATIVES
@@ -360,14 +314,11 @@ simultaneously         AT THE SAME TIME           DO THESE TWO                Do
                                                   TIME.
 
 Help
-For some words, there is a graphic symbol and related text that tells you to use a different
-approved alternative or a different sentence construction. This graphic symbol and its related text is
-referred to as “help.”
+For some words, there is a graphic symbol and related text that tells you to use a different approved alternative or a different sentence construction. This graphic symbol and its related text is referred to as “help.”
 There are four categories of help. Refer to the examples that follow.
 Examples:
 Category 1
-This category of help includes recommendations that give you more information or instructions
-about how to use the approved word correctly.
+This category of help includes recommendations that give you more information or instructions about how to use the approved word correctly.
 
 Word                   Approved meaning/          STE EXAMPLE                 Non-STE example
 (part of speech)       ALTERNATIVES
@@ -389,10 +340,7 @@ PUSHED                    of the force            BOTTOM OF THE
                            ASD STE100 Simplified Technical English
 
 Category 2
-This category of help tells you that some approved words, for example ABOUT (prep), have a
-restricted meaning. Thus, you must use the approved alternatives for other meanings. When the
-help refers to restricted meanings of approved words, the dictionary gives STE and non-STE
-examples in columns 3 and 4.
+This category of help tells you that some approved words, for example ABOUT (prep), have a restricted meaning. Thus, you must use the approved alternatives for other meanings. When the help refers to restricted meanings of approved words, the dictionary gives STE and non-STE examples in columns 3 and 4.
 
 Word                   Approved meaning/            STE EXAMPLE               Non-STE example
 (part of speech)       ALTERNATIVES
@@ -411,9 +359,7 @@ ABOUT (prep)           Concerned with               FOR DATA ABOUT THE
                                                     AROUND ITS AXIS.          axis.
 
 Category 3
-This category of help tells you to be careful with the words that are approved for only one context.
-For example, the word SWALLOW (v) is only applicable to safety instructions. You must not use it
-in other contexts.
+This category of help tells you to be careful with the words that are approved for only one context. For example, the word SWALLOW (v) is only applicable to safety instructions. You must not use it in other contexts.
 
 Word                   Approved meaning/            STE EXAMPLE               Non-STE example
 (part of speech)       ALTERNATIVES
@@ -426,8 +372,7 @@ SWALLOWED                                           GET MEDICAL AID
                               only.
 
 Category 4
-This category of help gives you important information about the applicable listed words (also those
-that are not approved).
+This category of help gives you important information about the applicable listed words (also those that are not approved).
 
 Word                   Approved meaning/          STE EXAMPLE                Non-STE example
 (part of speech)       ALTERNATIVES
@@ -461,13 +406,8 @@ This column shows you:
       - How to use the approved alternative (usually a word-for-word replacement)
       - How to keep the same meaning with a different sentence construction.
 The wording in the STE examples gives recommendations. The STE example shows only one
-method to write a text with the approved word or to use alternatives for a word that is not approved.
-You can frequently use different sentence constructions with other approved words and keep the
-same meaning.
-Many of the given examples come from the subject field of aircraft maintenance. If you replace the
-terms in the sentence with other applicable terms, you can use these examples for other subject
-fields or domains. If you work in a different subject field or domain, you can send a change form
-with your examples for a possible inclusion in the dictionary.
+method to write a text with the approved word or to use alternatives for a word that is not approved. You can frequently use different sentence constructions with other approved words and keep the same meaning.
+Many of the given examples come from the subject field of aircraft maintenance. If you replace the terms in the sentence with other applicable terms, you can use these examples for other subject fields or domains. If you work in a different subject field or domain, you can send a change form with your examples for a possible inclusion in the dictionary.
 
 Examples:
 Word                   Approved meaning/           STE EXAMPLE             Non-STE example
@@ -486,14 +426,9 @@ manufacture (v)        MAKE (v)                    YOU CAN MAKE THE        The c
                                                    LOCALLY.
 
  Column 4: Non-STE example
-This column gives examples that show you how the word that is not approved in STE is used in
-standard technical English. The examples also help you to understand how you can use the
-approved alternatives or different sentence constructions to give the same information.
-In a non-STE example, it is possible that you will find more than one word that is not approved or a
-construction that is not permitted. Thus, the STE example shows you how to replace these words
-or use a construction that is permitted in STE.
-For approved words, column 4 is empty, unless there is help related to other meanings or restricted
-meanings. You can see that for ABOVE (prep), column 4 gives a non-STE example.
+This column gives examples that show you how the word that is not approved in STE is used in standard technical English. The examples also help you to understand how you can use the approved alternatives or different sentence constructions to give the same information.
+In a non-STE example, it is possible that you will find more than one word that is not approved or a construction that is not permitted. Thus, the STE example shows you how to replace these words or use a construction that is permitted in STE.
+For approved words, column 4 is empty, unless there is help related to other meanings or restricted meanings. You can see that for ABOVE (prep), column 4 gives a non-STE example.
 Examples:
 Word                   Approved meaning/             STE EXAMPLE             Non-STE example
 (part of speech)       ALTERNATIVES
@@ -523,12 +458,10 @@ ABOVE (prep)           In (or to) a position         LIFT THE CYLINDER
 How to select words correctly
 STE is a controlled natural language with a restricted dictionary.
 
-As a result, it is not possible to use all the words that you want. If you are not sure about a word
-that you want to use, refer to this flowchart.
+As a result, it is not possible to use all the words that you want. If you are not sure about a word that you want to use, refer to this flowchart.
 
 List of recurring errors
-The table that follows gives you a list of the most frequently recurring errors that writers make when
-they use STE. If a word is not approved in the dictionary, do not use it.
+The table that follows gives you a list of the most frequently recurring errors that writers make when they use STE. If a word is not approved in the dictionary, do not use it.
 
  Non-STE                                       STE
  acceptable (adj)                              PERMITTED (adj)
@@ -578,8 +511,7 @@ List of recurring errors (continued)
  using (v)                           USE (v), WITH (prep)
 
 List of approved verbs
-The table that follows gives you the list of the approved verbs in the dictionary. Use this list as a
-quick-reference tool to find the approved verbs.
+The table that follows gives you the list of the approved verbs in the dictionary. Use this list as a quick-reference tool to find the approved verbs.
  A                  CONTROL             GO                  O                   SMELL
  ABSORB             CORRECT             GO OFF              OBEY                SMOKE
  ACCEPT             COUNT               GROUND              OCCUR               SOAK
@@ -736,8 +668,7 @@ absolutely (adv)   FULLY (adv)               MAKE SURE THAT THE Ensure the latch
                                              ENGAGED.
 ABSORB (v),        1.   To take up or into   ABSORB THE FLUID
 ABSORBS,                                     WITH A CLEAN CLOTH.
-ABSORBED,
-ABSORBED
+ABSORBED, ABSORBED
                    2. To decrease the        THE SHOCK MOUNT
                       effect of              ABSORBS THE
                                              VIBRATION.
@@ -767,8 +698,7 @@ accelerate (v)     INCREASE (v)                A HIGHER               Evaporatio
                                                COMPOUND.
 ACCEPT (v),        To make a decision that ACCEPT THE RELAY IF
 ACCEPTS,           something is satisfactory IT IS SERVICEABLE.
-ACCEPTED,
-ACCEPTED
+ACCEPTED, ACCEPTED
 acceptable (adj)   PERMITTED (adj)             A VALUE OF 2 mm IS     A value of 2 mm is
                                                PERMITTED.             acceptable.
                    SATISFACTORY (adj)          IF THE CONDITION OF    Replace the cap if its
@@ -1346,8 +1276,7 @@ application (n)     APPLY (v)                   APPLY THE SEALANT     The applic
                                                                       spatula.
 APPLY (v),          1. To put or spread         APPLY THE SEALING
 APPLIES,               something on             COMPOUND.
-APPLIED,
-APPLIED
+APPLIED, APPLIED
                     2. To use something         APPLY A FORCE OF
                        (for example,            100 N ON THE END OF
                        pressure, force,         THE LEVER.
@@ -1397,8 +1326,7 @@ arise (v)          OCCUR (v)                   SHOCK LOADING OF     Shock loadin
                                                ENGINE.
 ARM (v),           1.   To install             ARM THE AIRCRAFT.
 ARMS,                   armaments
-ARMED,
-ARMED
+ARMED, ARMED
                    2.   To prepare for      SET THE SWITCH TO
                         automatic operation “CLOSE” TO ARM THE
                                             CIRCUIT.
@@ -2046,8 +1974,7 @@ bump (v)           HIT (v)                   THE FUELING HOSE      The fueling h
                                              EDGE OF THE TANK.
 BURN (v),          1.   To cause or undergo THE TURBINE BURNS
 BURNS,                  combustion          FUEL.
-BURNED,
-BURNED
+BURNED, BURNED
                                              THE SEALANT BURNS
                                              AT 109 DEG. F.
                    2.   To cause injury or   HOT SURFACES CAN
@@ -2310,8 +2237,7 @@ characteristic (n)   PROPERTY (n)            THE PROPERTIES OF      The characte
                                              QUALITIES.
 CHARGE (v),          To accumulate or add    CHARGE THE
 CHARGES,             electrical energy       BATTERY.
-CHARGED,
-CHARGED
+CHARGED, CHARGED
                                              MAKE SURE THAT THE
                                              BATTERY CHARGES.
                             For other
@@ -2407,8 +2333,7 @@ CLEAN (adj)          That does not include     MAKE SURE THAT THE
                      dirt or unwanted material AREA IS CLEAN.
 CLEAN (v),           To remove dirt or         CLEAN THE GASKET
 CLEANS,              unwanted materials        CONTACT SURFACE.
-CLEANED,
-CLEANED
+CLEANED, CLEANED
 cleanliness (n)      CLEAN (adj)               CONDITIONS FOR A      A satisfactory bond
                                                SATISFACTORY BOND     depends on the
                                                ARE:                  cleanliness of the
@@ -2611,8 +2536,7 @@ COMMUNICATION       The exchange of           COMMUNICATION
                     sounds
 COMPARE (v),        To examine for            COMPARE THE TWO
 COMPARES,           differences               VALUES.
-COMPARED,
-COMPARED
+COMPARED, COMPARED
 comparison (n)      COMPARE (v)               COMPARE THE TWO      Make a comparison of
                                               INDICATIONS.         the two readings.
 COMPATIBLE (adj) That can operate             THIS SOFTWARE IS
@@ -2648,8 +2572,7 @@ complete (adj)      FULL (adj)                EXTEND AND         Extend and retr
                                               COMPLETED.
 COMPLETE (v),       To bring to an end        COMPLETE THE
 COMPLETES,                                    FUNCTIONAL TEST.
-COMPLETED,
-COMPLETED
+COMPLETED, COMPLETED
 COMPLETED (adj)     Successfully brought to   SEND THE
                     an end                    COMPLETED REPORT
                                               TO THE SUPERVISOR
@@ -2985,8 +2908,7 @@ CORRECT (adj)      That agrees with all that   MAKE SURE THAT THE
                    maximum                     CORRECT.
 CORRECT (v),       To make correct             CORRECT THE
 CORRECTS,                                      TENSION.
-CORRECTED,
-CORRECTED
+CORRECTED, CORRECTED
 
 Word               Approved meaning/
 (part of speech)   ALTERNATIVES            STE EXAMPLE             Non-STE example
@@ -3253,8 +3175,7 @@ DEDICATED (adj)    That is used only for one A DEDICATED TOOL IS
                                              UNIT.
 DE-ENERGIZE (v),   To remove electrical        DE-ENERGIZE THE AC
 DE-ENERGIZES,      power from                  AND DC BUSBARS.
-DE-ENERGIZED,
-DE-ENERGIZED
+DE-ENERGIZED, DE-ENERGIZED
 DEEP (adj)         That has a specified        MAKE SURE THAT THE
 (DEEPER,           depth                       HOLE IS 20 mm DEEP.
 DEEPEST)
@@ -3306,9 +3227,7 @@ deformed (adj)     DAMAGED (adj)             THE COVER ON THE       The cover on
                                              TUBES HAVE NO      are not deformed.
                                              DEFORMATION.
 DEFUEL (v),        To remove fuel            DEFUEL THE TANK.
-DEFUELS,
-DEFUELED,
-DEFUELED
+DEFUELS, DEFUELED, DEFUELED
 defueling (n)      DEFUEL (v)                DEFUEL ONLY IN AN  Only do the defueling in
                                              OPEN AREA THAT HAS an open area that is
                                              A GOOD AIRFLOW.    well-ventilated.
@@ -3624,14 +3543,12 @@ disappear (v)      VIEW (n)                    THE HORIZONTAL BAR The horizontal
                                                                   window.
 DISARM (v),        1. To remove                DISARM THE
 DISARMS,              armaments                AIRCRAFT.
-DISARMED,
-DISARMED
+DISARMED, DISARMED
                    2. To prevent automatic DISARM THE LIFT
                       operation            DUMPER.
 DISASSEMBLE (v), To take an assembly           DISASSEMBLE THE
 DISASSEMBLES,    apart                         VALVE ASSEMBLY.
-DISASSEMBLED,
-DISASSEMBLED
+DISASSEMBLED, DISASSEMBLED
 DISCARD (v),       To not use again            REMOVE THE
 DISCARDS,                                      O-RINGS AND
 DISCARDED,                                     DISCARD THEM.
@@ -3816,8 +3733,7 @@ drag (v)           PULL (v)                   PULL THE WIRES        Drag the wir
                                               CONDUIT.
 DRAIN (v),         To remove liquid           DRAIN THE SYSTEM
 DRAINS,                                       FULLY.
-DRAINED,
-DRAINED
+DRAINED, DRAINED
 draw (v)           MAKE (v)                   MAKE A LINE ON THE    Draw a line on the blade.
                                               BLADE.
                    PULL (v)                   PULL THE WIRE OUT     Draw the wire out of the
@@ -4147,16 +4063,14 @@ end (v)            STOP (v)                  STOP THE TEST.         End the test
                                              THE SENSOR.       sensor.
 ENERGIZE (v),      To supply electrical      ENERGIZE THE AC
 ENERGIZES,         power to                  AND DC BUSBARS.
-ENERGIZED,
-ENERGIZED
+ENERGIZED, ENERGIZED
 enforce (v)        OBEY (v)                  ALL PERSONNEL          Safety precautions must
                                              MUST OBEY THE          be enforced.
                                              SAFETY
                                              PRECAUTIONS.
 ENGAGE (v),        To correctly align and    ENGAGE THE CLUTCH.
 ENGAGES,           come together
-ENGAGED,
-ENGAGED
+ENGAGED, ENGAGED
                                              MAKE SURE THAT THE
                                              CLUTCH ENGAGES.
 engagement (n)     ENGAGE (v)                MAKE SURE THAT THE Make sure there is full
@@ -4244,8 +4158,7 @@ EQUIVALENT (n)      Something that has the   USE CLEANING
                                              EQUIVALENT.
 ERASE (v),          To remove data from a    ERASE THE TAPE.
 ERASES,             medium
-ERASED,
-ERASED
+ERASED, ERASED
 
 Word               Approved meaning/
 (part of speech)   ALTERNATIVES               STE EXAMPLE           Non-STE example
@@ -5026,8 +4939,7 @@ FLOW (n)           A continuous movement        AN ARROW ON THE
                                                 THE FLOW.
 FLOW (v),          To move as a fluid           THE OIL MUST FLOW
 FLOWS,             moves                        OUT OF THE VALVE.
-FLOWED,
-FLOWED
+FLOWED, FLOWED
                                                 WHEN THE VALVE
                                                 OPENS, AIR FLOWS
                                                 INTO THE INLET.
@@ -5836,8 +5748,7 @@ hinge (v)          TURN (v)                      THE PANELS TURN ON Panels hinge
                                                  TWO NYLON STRAPS. nylon straps.
 HIT (v),           To touch suddenly and         DO NOT HIT THE
 HITS,              with much force               CARTRIDGE.
-HIT,
-HIT
+HIT, HIT
 hitch (v)          CONNECT (v)                   CONNECT THE           Hitch the towing arm to
                                                  TOWING ARM TO THE     the nosewheel.
                                                  NOSEWHEEL.
@@ -5847,8 +5758,7 @@ hold (n)           HOLD (v)                      MAKE SURE THAT        Make sure
                                                  TIGHTLY.
 HOLD (v),          1.   To continue to have      HOLD THE ROD
 HOLDS,                  in the hand or grip      TIGHTLY.
-HELD,
-HELD
+HELD, HELD
                    2.   To continue to have      HOLD THE AIRSPEED
                         in a specified           INDICATION AT THE
                         location, position, or   SAME VALUE FOR
@@ -6635,8 +6545,7 @@ key (v)            REFER (v)                THE ILLUSTRATION      The illustrati
                                             SHAFT.
 KILL (v),          To cause death           HIGH VOLTAGES CAN
 KILLS,                                      KILL YOU.
-KILLED,
-KILLED
+KILLED, KILLED
 kind (n)           TYPE (n)                 YOU CAN USE TWO       Two kinds of sealing
                                             TYPES OF SEALING      compound can be used.
                                             COMPOUND.
@@ -6835,8 +6744,7 @@ LIFE (n)           The time during which       THE LIFE OF THE
                                                IS 3 YEARS.
 LIFT (v),          To move something up        LIFT THE COVER
 LIFTS,                                         CAREFULLY.
-LIFTED,
-LIFTED
+LIFTED, LIFTED
 LIGHT (adj)        That has a small mass,      APPLY A LIGHT
 (LIGHTER,          weight, or force            FORCE ON THE
 LIGHTEST)                                      RUDDER PEDALS.
@@ -6906,8 +6814,7 @@ list (v)           RECORD (v)                   RECORD THE TEST        List the 
                                                 SEQUENCE.
 LISTEN (v),        To use your ears to hear LISTEN FOR THE
 LISTENS,           or find                  SIGNAL.
-LISTENED,
-LISTENED
+LISTENED, LISTENED
 
 Word                      Approved meaning/
 (part of speech)          ALTERNATIVES              STE EXAMPLE              Non-STE example
@@ -7007,8 +6914,7 @@ LONGITUDINALLY In a longitudinal direction MOVE THE STAND
 (adv)                                      LONGITUDINALLY.
 LOOK (v),          To use your eyes to see     LOOK THROUGH THE
 LOOKS,             or find                     INSPECTION WINDOW.
-LOOKED,
-LOOKED
+LOOKED, LOOKED
 LOOP (n)           A circular shape made in MAKE A LOOP OF
                    a flexible material      WIRE AROUND THE
                                             UNIT.
@@ -8049,8 +7955,7 @@ pack (v)           PUT (v)                       PUT THE ASSEMBLY        Pack th
                                                  WITH GREASE.            groove.
 PAINT (v),         To apply paint to             PAINT ALL THE
 PAINTS,            something                     SURFACES.
-PAINTED,
-PAINTED
+PAINTED, PAINTED
 PAIR (n)           Two objects that are the      MEASURE THE
                    same or almost the            DISTANCE BETWEEN
                    same, and/or that you         EACH PAIR OF AXLES.
@@ -8456,8 +8361,7 @@ Word               Approved meaning/
 (part of speech)   ALTERNATIVES              STE EXAMPLE             Non-STE example
 PREPARE (v),       To make or become          PREPARE THE TUBE
 PREPARES,          ready                      FOR THE LEAK TEST.
-PREPARED,
-PREPARED
+PREPARED, PREPARED
                                               PREPARE FOR THE
                                               ELECTRICAL BONDING
                                               PROCEDURE.
@@ -8492,8 +8396,7 @@ PRESSURIZATION     The procedure that        CONTINUE THE
                    the pressure              FOR 10 MINUTES.
 PRESSURIZE (v),    To supply pressure        PRESSURIZE THE
 PRESSURIZES,                                 CHAMBER TO 150 psi.
-PRESSURIZED,
-PRESSURIZED
+PRESSURIZED, PRESSURIZED
 
 Word                 Approved meaning/
 (part of speech)     ALTERNATIVES                STE EXAMPLE             Non-STE example
@@ -9161,9 +9064,7 @@ REFLECTION (n)     Something that occurs     A CLEAN SURFACE
                    against a surface which   REFLECTION.
                    sends it back
 REFUEL (v),        To supply with fuel       REFUEL THE VEHICLE.
-REFUELS,
-REFUELED,
-REFUELED
+REFUELS, REFUELED, REFUELED
 register (v)       SHOW (v)                  ADJUST THE “SET +40” Adjust the “SET +40”
                                              CONTROL UNTIL THE control until the pointer
                                              POINTER SHOWS +40. registers +40.
@@ -9299,8 +9200,7 @@ REPAIR (n)         The act of repairing or   AFTER THE REPAIR,
                                              SURFACES.
 REPAIR (v),        To make an item           REPAIR THE
 REPAIRS,           serviceable               DEFECTIVE WIRING.
-REPAIRED,
-REPAIRED
+REPAIRED, REPAIRED
 repairable (adj)   REPAIR (v)                IT IS POSSIBLE TO     This damage is
                                              REPAIR THIS           repairable.
                                              DAMAGE.
@@ -9469,8 +9369,7 @@ retouch (v)         APPLY (v)                     APPLY ENAMEL ON    Retouch the
 RETRACT (v),                                      RETRACT THE
                     1.   To pull in(to)
 RETRACTS,                                         LANDING GEAR.
-RETRACTED,
-RETRACTED
+RETRACTED, RETRACTED
                     2.   To move in(to)           THE NOSE LANDING
                                                   GEAR RETRACTS
                                                   INTO THE FUSELAGE.
@@ -9737,8 +9636,7 @@ SEAL (n)           Something that prevents APPLY SEALANT TO
                    access or leaks         THE FILLET SEALS.
 SEAL (v),          To prevent access or     SEAL THE OPENINGS
 SEALS,             leaks                    WITH POLYETHYLENE.
-SEALED,
-SEALED
+SEALED, SEALED
 search (v)         EXAMINE (v)              EXAMINE THE           Search the surface for
                                             SURFACE FOR           cracks.
                                             CRACKS.
@@ -10381,8 +10279,7 @@ spark (v)          SPARK (n)                  WHEN YOU USE         Wear goggles 
                                               GOGGLES.
 SPEAK (v),         To use a voice to make     SPEAK INTO THE
 SPEAKS,            words                      MICROPHONE.
-SPOKE,
-SPOKEN
+SPOKE, SPOKEN
 SPECIAL (adj)      For a specified function   TIGHTEN THE
                                               SPECIAL NUT.
 
@@ -11009,8 +10906,7 @@ talk (v)               SPEAK (v)                    SPEAK INTO THE         Talk 
                                                     MICROPHONE.            microphone.
 TAP (v),               To hit lightly and quickly   TAP THE BOLT WITH A
 TAPS,                                               MALLET.
-TAPPED,
-TAPPED
+TAPPED, TAPPED
 
 Word               Approved meaning/
 (part of speech)   ALTERNATIVES               STE EXAMPLE            Non-STE example
@@ -11226,8 +11122,7 @@ TIGHTEST)
                                                 THE LOCKWIRE.
 TIGHTEN (v),        To cause to be tight        TIGHTEN THE
 TIGHTENS,                                       SCREWS.
-TIGHTENED,
-TIGHTENED
+TIGHTENED, TIGHTENED
 TIGHTLY (adv)       In a tight manner           HOLD THE CYLINDER
                                                 TIGHTLY.
 till (conj)         UNTIL (conj)                MOVE THE LEVER        Move the lever till it hits
@@ -11319,8 +11214,7 @@ top off (v)        FILL (v)                    FILL THE HYDRAULIC     Top off th
                                                NECESSARY.
 TORQUE (v),        To tighten to a specified   TORQUE THE PLUG
 TORQUES,           torque                      TO 6 Nm.
-TORQUED,
-TORQUED
+TORQUED, TORQUED
 TOTAL (adj)        All of                      THE TOTAL QUANTITY
                                                OF FUEL IN THE
                                                CENTER TANK IS
@@ -11457,15 +11351,13 @@ Word               Approved meaning/
 (part of speech)   ALTERNATIVES              STE EXAMPLE           Non-STE example
 TRY (v),           To make an effort to do   TRY TO MOVE THE
 TRIES,             something                 CONTROL COLUMN.
-TRIED,
-TRIED
+TRIED, TRIED
 tuck (v)           PUT (v)                   PUT THE HEADSTRAP     Tuck the headstrap into
                                              INTO THE FACE         the face piece.
                                              PIECE.
 TUNE (v),          To adjust equipment to    TUNE ADF 1 TO A
 TUNES,             the best performance      KNOWN FREQUENCY.
-TUNED,
-TUNED
+TUNED, TUNED
 TURN (n)           One full cycle of         LET THE PRESSURE
                    movement around an        BECOME STABLE
                    axis                      AFTER EACH TURN OF
@@ -11846,8 +11738,7 @@ use (n)            OPERATION (n)            WHEN THE MOTOR IS     Keep your hand
                                             GLOVES.               during this task.
 USE (v),           To make something do     IN THIS STEP, USE
 USES,              its specified function   AUXILIARY SCREWS.
-USED,
-USED
+USED, USED
                                             USE A SPECIAL
                                             CONTAINER FOR
                                             STORAGE.
@@ -12236,8 +12127,7 @@ WILL (v)             Auxiliary modal verb that WARNINGS AND
                                                CORRECTLY.
 WIND (v),           To move around and        WIND THE TAPE ON
 WINDS,              around an object          THE REEL.
-WOUND,
-WOUND
+WOUND, WOUND
 windy (adj)         WIND (TN)                 WHEN THERE ARE     Take special precautions
                                               STRONG WINDS,      in very windy conditions.
                                               OBEY THESE SPECIAL

@@ -1,0 +1,1 @@
+# A short line ending in a colon or a question mark is a heading and is never joined into the paragraph above it — `Examples:` and `What is passive voice?` sit between paragraphs with no blank line to separate them

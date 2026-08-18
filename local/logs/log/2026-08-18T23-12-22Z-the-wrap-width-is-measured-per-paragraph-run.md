@@ -1,0 +1,1 @@
+# The wrap width is measured per contiguous prose run rather than per file — the preamble wraps near 85 characters and the body near 100, since the source was a proportional font, so one global width both over-joins and under-joins
