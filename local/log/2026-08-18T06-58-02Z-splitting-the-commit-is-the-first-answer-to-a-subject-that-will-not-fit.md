@@ -1,0 +1,1 @@
+# Splitting the commit is the first answer to a subject that will not fit and moving detail to the body is the second — abbreviating into shorthand is neither, since the `language` rules hold in a commit message as they do everywhere

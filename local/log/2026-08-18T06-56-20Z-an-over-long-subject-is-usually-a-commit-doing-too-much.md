@@ -1,0 +1,1 @@
+# An over-long commit subject is usually a commit doing too much, which is the argument a width limit would rest on rather than display truncation — this repository's longest subject ran to 203 characters and named four separate deferred items

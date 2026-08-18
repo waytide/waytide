@@ -1,0 +1,1 @@
+# Truncation is not a general escape from the subject width limit — it is available where the subject is not the agent's to rewrite, and everywhere else a subject that will not fit is a commit to split

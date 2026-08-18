@@ -1,0 +1,1 @@
+# A commit message's subject stops at 50 characters and its body wraps at 72, adopted as the `commit-message-widths` rule — 50 is a display budget and 72 a wrapping budget, and they are different conventions rather than one

@@ -1,0 +1,1 @@
+# The *no 50-character limit* policy is discontinued from `subject-first-commit-messages`, with nothing in its place — the rule is now silent on the subject's length, stating no limit and denying none

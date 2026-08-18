@@ -1,0 +1,1 @@
+# Truncating is not shortening — the writer's words are not rewritten, reordered, or paraphrased, the entry holds them in full, and the ellipsis says the commit subject is a rendering that stops at the line's end

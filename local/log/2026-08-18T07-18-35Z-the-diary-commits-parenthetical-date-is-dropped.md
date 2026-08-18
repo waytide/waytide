@@ -1,0 +1,1 @@
+# The diary commit's parenthetical date is dropped and the `commit-message-parenthetical-date-format` rule is decommissioned — the date sat at the tail where truncation takes it first, so it was carried at the subject's expense and no reader saw it in a listing

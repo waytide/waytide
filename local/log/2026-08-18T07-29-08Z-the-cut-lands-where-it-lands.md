@@ -1,0 +1,1 @@
+# The diary commit subject cuts at the 50th character and may land mid-word — retreating to the last space would lose up to another dozen characters of the writer's words to tidiness, and the ellipsis already tells a reader the line continues elsewhere

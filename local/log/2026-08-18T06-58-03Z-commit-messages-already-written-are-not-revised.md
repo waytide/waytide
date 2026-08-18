@@ -1,0 +1,1 @@
+# Commit messages already written are not revised to the new widths — 734 subjects stand as written, 218 of them over 72 characters, along with 3,092 body lines, because a commit message is a historical record

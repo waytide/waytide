@@ -1,0 +1,1 @@
+# A diary commit subject that exceeds 50 characters is truncated at the 50th with an ellipsis — the widths rule's two remedies are unavailable, since an entry is one commit with nothing to split and its subject is the writer's words
