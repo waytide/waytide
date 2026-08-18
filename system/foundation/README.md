@@ -18,7 +18,7 @@ this package:
 - **`waytide/local/vocabulary.md`**. The project's own vocabulary, read with the rules and
   binding like them. Its terms and substitutions decide over every package's
   (`vocabulary-convention`). One file, no datetime prefix, and optional.
-- **`waytide/local/observations/`**. Working hypotheses and rule-candidates still under
+- **`waytide/local/ideas/`**. Working hypotheses and rule-candidates still under
   discovery. Not yet binding.
 - **`waytide/local/deferred/`**. Design changes postponed until the current task finishes.
   A queue, not a permanent record. It is **printed as a list of rows at the start of every
@@ -50,8 +50,7 @@ The rule lives here rather than in `design-by-efferent`, where it was written, b
 Beyond the four core directories, foundation defines the **work-artifact** directories for
 planning and running changes:
 
-- `waytide/local/plans/` — implementation plans that sequence a settled design
-- `waytide/local/design/` — design docs that settle direction first
+- `waytide/local/ideas/` — the project's planning records, whatever its tags name them
 - `waytide/local/experiments/` — recorded experiments that test a question
 - `waytide/local/features/` — the lifecycle record of a feature
 - `waytide/local/work-sessions/` — the narrative record of a work session
@@ -60,9 +59,6 @@ planning and running changes:
   repository it left
 - `waytide/local/suspended/` — an **undo queue** for what the project stopped doing. The thing
   itself moves, carrying the return address needed to put it back
-
-Under the other modes, `waytide/local/intention/` and `waytide/local/aspiration/`, or
-`waytide/local/action/` and `waytide/local/orientation/`, stand in for the first two.
 
 **Experiments and features each carry a full branch lifecycle**, in the
 `experiment-lifecycle` and `feature-lifecycle` rules. That is their own branch, a
@@ -280,3 +276,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT

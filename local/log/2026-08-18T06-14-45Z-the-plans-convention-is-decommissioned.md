@@ -1,0 +1,1 @@
+# The `plans-convention` rule is decommissioned — it held the sequencing artifact's directory, supersession, behavior-stated checkbox tasks, its state words, and the `Source design` the plan pointed back at

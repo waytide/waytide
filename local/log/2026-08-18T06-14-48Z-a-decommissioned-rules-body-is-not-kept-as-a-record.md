@@ -1,0 +1,1 @@
+# A decommissioned rule's body is not kept as a record — the log entry naming what it held is the durable trace and git holds the text, which reverses the conversion to idea records made minutes earlier

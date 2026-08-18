@@ -1,0 +1,1 @@
+# An observation's `**State:**` line holds prose where every other idea's holds one word from a settled set, so the `a-record-ends-with-its-state-in-upper-case` rule has no word to render and gives an observation no filename suffix — the two uses of the label are not yet reconciled

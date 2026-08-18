@@ -1,0 +1,1 @@
+# This project's planning records are moved to `waytide/local/ideas/` — five aspirations tagged `[aspiration]` and one intention tagged `[intention]`, with the `Source design` pointers reconciled to the new paths, and `local/aspiration/` and `local/intention/` are gone

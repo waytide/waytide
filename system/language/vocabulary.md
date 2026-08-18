@@ -38,6 +38,10 @@ The *principles* that govern word selection stay as rules — `name-literally-no
 - **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ete/` rules state. **`Say it in ETE` is the instruction to write that way**, and it differs from `say it in STE`, which asks for the raw standard — that one forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved. The rules are in `waytide/system/language/ete/`. **STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.**
 - **actuation** — the invocation of a unit from its use site. **STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site. Technical noun, ETE engineering, design, process, and method.**
 - **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. **Waytide did not coin it.** It is the word structural design and software design already use, kept because the extant term says the thing exactly, which is what the language-is-precise-here rule asks for. **STE: not approved. The STE dictionary gives PRESERVATION, a technical noun for a maintenance procedure, which does not carry this. Technical verb, ETE engineering, design, process, and method.**
+- **moot** — no longer bearing on anything, because circumstances moved rather than because a
+  judgment was reached. A moot question is one whose answer would change nothing now. It is the
+  adjective for the condition the state word **Lapsed** names in a record. **STE: absent from the
+  STE dictionary. Technical adjective, ETE engineering, design, process, and method.**
 
 ## Substitutions
 
@@ -168,3 +172,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:19:04 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:47:45 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:32:18 PM PT

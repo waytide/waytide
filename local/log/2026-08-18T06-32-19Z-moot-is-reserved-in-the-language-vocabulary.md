@@ -1,0 +1,1 @@
+# `moot` is reserved in the `language` vocabulary as a technical adjective — no longer bearing on anything because circumstances moved rather than because a judgment was reached, the adjective for the condition `Lapsed` names in a record; absent from the STE dictionary, so the reservation displaces no approved word

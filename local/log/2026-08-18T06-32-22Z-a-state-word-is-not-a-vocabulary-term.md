@@ -1,0 +1,1 @@
+# A state word is not a vocabulary term — `Realized`, `Implemented`, `Affirmed`, `Completed`, and `Lapsed` carry no entry in any package vocabulary, and the conventions that fix each set are where their meanings live

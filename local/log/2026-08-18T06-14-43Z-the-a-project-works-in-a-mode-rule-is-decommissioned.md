@@ -1,0 +1,1 @@
+# The `a-project-works-in-a-mode-chosen-at-the-start` rule is decommissioned — it held the three modes, their six planning directories, the fixed-at-the-start holding, the mode rule written into `local/rules/`, and the corroboration check against the directories

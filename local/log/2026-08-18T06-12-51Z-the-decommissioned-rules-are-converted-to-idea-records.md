@@ -1,0 +1,1 @@
+# The five decommissioned rules are converted to idea records in `waytide/local/ideas/`, each carrying `**State:** Superseded` and `**Tags:** [decommissioned] [rule]` — the first use of the ideas directory, and the first records written under the settled direction

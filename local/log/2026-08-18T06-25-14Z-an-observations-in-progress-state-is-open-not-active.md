@@ -1,0 +1,1 @@
+# An observation's in-progress state word is `Open`, not `Active` — `Active` says a direction is settled and being worked toward, which grants an observation a permanency the convention deliberately withholds, where `Open` says unsettled and still being worked out and says nothing about what the record may become

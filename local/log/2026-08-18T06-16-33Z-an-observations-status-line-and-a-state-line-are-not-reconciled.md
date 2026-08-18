@@ -1,0 +1,1 @@
+# An observation's `**Status:**` line and an idea's `**State:**` line are not reconciled — status says how settled the thinking is and what would promote it, state says what became of a record, and whether an observation carries both or one absorbs the other is unsettled

@@ -1,0 +1,1 @@
+# Two `foundation` rules naming the old planning directories are reconciled — `plans-no-code-samples` governs a planning record in `waytide/local/ideas/` whatever its tags name it, and the README's directory list names one planning directory rather than six

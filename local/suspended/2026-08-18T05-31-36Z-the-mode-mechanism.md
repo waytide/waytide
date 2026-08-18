@@ -1,6 +1,7 @@
 # The mode mechanism — decommissioned
 
 - **Origin:** `waytide/system/foundation/`, five rules, listed under **What was decommissioned**
+- **Bodies:** not kept — each rule has a `waytide/local/log/` entry naming what it held, and git holds the text
 - **Kind:** mechanism
 - **Decommissioned:** 2026-08-18T05-31-36Z
 - **Reconciliations:** recorded under **What was reconciled**, below
@@ -57,13 +58,25 @@ those directories and not all of them.
 
 ## What was decommissioned
 
-Five rules, moved from `waytide/system/foundation/` into this directory:
+Five rules, removed from `waytide/system/foundation/`. **Their bodies are not kept as records.**
+Each has a one-line entry in `waytide/local/log/` naming what it held, and the text is in git:
 
-- `a-project-works-in-a-mode-chosen-at-the-start.md` — the mechanism itself
-- `design-convention.md` — the direction artifact's directory and obligations
-- `plans-convention.md` — the sequencing artifact's directory and obligations
-- `design-document-format.md` — the direction artifact's shape
-- `plan-document-format.md` — the sequencing artifact's shape
+- `a-project-works-in-a-mode-chosen-at-the-start` — the three modes, their six directories, the
+  fixed-at-the-start holding, the mode rule in `local/rules/`, and the corroboration check
+- `design-convention` — the direction artifact's directory, its dated `Settled` resolutions and
+  `Out of Scope / Deferred` tail, its state words, the design-expands clause, and
+  reconciled-not-regenerated
+- `plans-convention` — the sequencing artifact's directory, supersession, behavior-stated
+  checkbox tasks, its state words, and the `Source design`
+- `design-document-format` — the direction artifact's spine
+- `plan-document-format` — the sequencing artifact's elements in their settled order
+
+**They were briefly converted to idea records on 2026-08-18 and that was reversed the same
+minute.** A decommissioned rule's body is not a record the project keeps. The log entry is the
+durable trace, which is the answer this system gives everywhere else a thing is removed.
+
+**The two scripts stay in this directory.** A shell script is not a record. They are suspended,
+and a restore puts them back where they came from.
 
 ## What replaces it
 
@@ -135,9 +148,13 @@ The mechanism's own claim was that the mode changes no obligation, so a restorat
 motivated by the discipline of the constraint rather than by anything a rule could not otherwise
 express.
 
-**Restoring it** means moving the five rules back to `waytide/system/foundation/`, removing this
-record's lines, and reversing each entry under **What was reconciled**.
+**Restoring it** means recovering the five rules from git — they were last in
+`waytide/system/foundation/` at the commit before this record was written — putting them back
+there, moving the two scripts back to their origins, removing this record, and reversing each
+entry under **What was reconciled**.
 
 ---
 
 Authored by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:12:51 PM PT
+Changed by Scott Bellware on Mon Aug 17 2026 at 11:14:43 PM PT

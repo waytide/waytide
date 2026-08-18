@@ -1,0 +1,1 @@
+# The `design-document-format` rule is decommissioned — it held the direction artifact's spine: the state line, summary or premise, background and motivation, vocabulary, substantive sections, dated `Settled` resolutions, and the `Out of Scope / Deferred` tail

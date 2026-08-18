@@ -1,0 +1,1 @@
+# Step two of the six-steps sequence stops an ordinary word before its dictionary status matters — `overtake`, `fade`, and `dormant` name nothing in the subject field and were never reservation candidates, where `lapse`, `moot`, and `obsolete` do terminological work; listing all six as though absence from the dictionary made them candidates was a framing error

@@ -1,0 +1,1 @@
+# The `design-convention` rule is decommissioned — it held the direction artifact's directory, its dated `Settled` resolutions and `Out of Scope / Deferred` tail, its state words, the design-expands clause, and that a design is reconciled and never regenerated

@@ -1,0 +1,1 @@
+# `Lapsed` is a state word for an idea that lost its relevance over time — it differs from `Abandoned` in who acted, since abandoning is a decision and lapsing is what happens when nobody decides and the work moves past the record, a sense the corpus already carried in the deferred-convention's *a reference time has overtaken*

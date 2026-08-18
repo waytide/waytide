@@ -1,0 +1,1 @@
+# A decommissioned rule becomes an idea rather than staying suspended — what it holds is thinking about how the work could be arranged, which is what an idea is, where suspension is for a thing the project may put back as it was

@@ -1,0 +1,1 @@
+# The `plan-document-format` rule is decommissioned — it held the sequencing artifact's elements in their settled order: the state line, Goals, Source designs, Work sequences, Superseded plans, Architecture, Process notes, and Tasks

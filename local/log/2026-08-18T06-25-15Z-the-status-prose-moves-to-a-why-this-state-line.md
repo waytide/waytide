@@ -1,0 +1,1 @@
+# The prose the `**Status:**` line carried moves to a `**Why this state:**` line beneath the state word — it says how settled the thinking is and what would promote it, which is the part a reader wants and a single state word cannot hold

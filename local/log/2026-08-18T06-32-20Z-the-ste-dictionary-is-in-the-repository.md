@@ -1,0 +1,1 @@
+# The STE dictionary is in this repository at `local/reference/ASD-STE100-issue-9-dictionary.txt`, so the `a-word-is-reserved-in-six-steps` rule's first step can be performed rather than deferred — it was deferred all session on the belief that no lookup was available

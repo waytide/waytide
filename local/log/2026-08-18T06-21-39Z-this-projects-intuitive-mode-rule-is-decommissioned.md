@@ -1,0 +1,1 @@
+# This project's `intuitive-mode` local rule is decommissioned — it bound the project to an aspiration in `local/aspiration/` and an intention in `local/intention/`, held that a project's mode does not change after initiation, and restated the three modes and their six directories; those directories no longer exist and it was read at the start of every session
