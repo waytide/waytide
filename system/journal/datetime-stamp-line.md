@@ -1,6 +1,6 @@
-# A diary entry carries a human-readable datetime line under its title
+# A journal entry carries a human-readable datetime line under its title
 
-Every diary entry carries a datetime stamp in its content, on its own line directly under the
+Every journal entry carries a datetime stamp in its content, on its own line directly under the
 `# <title>` heading. It sits above the `**Tags:**` line where there is one, above the
 `**Summary:**` line where there is one, and above the body.
 
@@ -9,7 +9,7 @@ the month with no leading zero, the four-digit year, the literal word `at`, and 
 `HH:MM`. An example is `Mon Jun 1 2026 at 13:40`.
 
 The datetime is derived from the entry's filename stamp, which is **local time**. See the
-diary-entries rule. Parse the filename's `YYYY-MM-DDTHH-MM` as local time, and its
+journal-entries rule. Parse the filename's `YYYY-MM-DDTHH-MM` as local time, and its
 `YYYY-MM-DDTHH-MM-SS` form where the writer gave seconds. Convert no time zone. The filename
 carries no zone designator, so nothing in it has to be discounted.
 
@@ -30,7 +30,7 @@ seconds. Place the line under the title, above any `**Tags:**` or `**Summary:**`
 
 Related:
 
-- the diary-entries rule — the filename stamp this is derived from, and its local time
+- the journal-entries rule — the filename stamp this is derived from, and its local time
 - the `foundation` package's working-state-artifacts-take-category-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
 - the omit-body-when-same-as-title rule — the body this line stands above
 
@@ -41,3 +41,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

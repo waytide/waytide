@@ -156,8 +156,8 @@ nothing derived from a **freeform** tag, which is what separates one from the `*
 beside it. A **reserved** tag is one a rule names and states what follows from — the reserved set
 is small, each member findable in a rule, and the freeform space untouched around it.
 The decision log is the one exception, exempted for its one-line shape exactly as the provenance
-footer exempts it. The protocol was the `diary` package's until 2026-08-18, and it was lifted here
-because nothing in it was ever about diaries.
+footer exempts it. The protocol was the `journal` package's until 2026-08-18, and it was lifted here
+because nothing in it was ever about journals.
 
 **A historical record is edited for one reason only** — that it discloses what should not have
 been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
@@ -292,3 +292,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

@@ -1,17 +1,20 @@
-- **Origin:** waytide/system/diary/new-entry-trigger-rebuilds-timeline-index.md
+- **Origin:** waytide/system/journal/new-entry-trigger-rebuilds-timeline-index.md
 - **Kind:** rule
 - **Suspended:** 2026-08-14T19-54-20Z
+- **Renamed:** 2026-08-18 — the `diary` package became `journal`. Every path and rule name
+  below is rewritten to match, so the return address resolves. The record is a live undo
+  queue entry, not a historical one
 - **Reconciliations:**
-  - waytide/system/diary/timeline-view.md — its materialization paragraphs are removed. The view
+  - waytide/system/journal/timeline-view.md — its materialization paragraphs are removed. The view
     is computed on request and stored nowhere. It gained a paragraph naming this rule as
     suspended, and a paragraph naming the view a projection
-  - waytide/system/diary/diary-entries.md — gained the *new entry* directive, which this rule
+  - waytide/system/journal/journal-entries.md — gained the *new entry* directive, which this rule
     carried and which is not about the index. It gained the timeline-view rule in its Related
     list
-  - waytide/system/diary/the-diary-is-read-at-session-start.md — named `TIMELINE.md` as a second
-    thing under the diary directory that is not read. It now names `writers.toml` alone, and its
+  - waytide/system/journal/the-journal-is-read-at-session-start.md — named `TIMELINE.md` as a second
+    thing under the journal directory that is not read. It now names `writers.toml` alone, and its
     Related entry for the timeline-view rule is reworded
-  - waytide/system/diary/README.md — named `TIMELINE.md` beside `writers.toml` in the same
+  - waytide/system/journal/README.md — named `TIMELINE.md` beside `writers.toml` in the same
     sentence. The name is removed
   - this file's own Related list still names the timeline-view rule, which no longer materializes
     anything. A restore reinstates that rule's materialization paragraphs
@@ -23,14 +26,14 @@ view that needs a repair directive is a view that drifts. The timeline is a **pr
 sense the foundation vocabulary gives that term, and a projection is regenerated rather than
 maintained.
 
-**What would bring it back.** A diary large enough that reading every entry file to list them is
+**What would bring it back.** A journal large enough that reading every entry file to list them is
 too slow to do on request. Nothing about a directory of small markdown files is near that today.
 
 ---
 
 # "new entry" ordered-inserts a row into the timeline index, and "reindex" rebuilds it from scratch
 
-The materialized timeline index lives at `waytide/local/diary/<username>/TIMELINE.md`, one
+The materialized timeline index lives at `waytide/local/journal/<username>/TIMELINE.md`, one
 index per writer, in that writer's directory, where `<username>` is resolved by the
 identity-resolution-contract rule. It holds one bullet per entry, `- **<datetime>** — <title>`,
 oldest first. It is generated and never hand-edited. **The stored file holds the bullets
@@ -40,8 +43,8 @@ single-line insertion with nothing else to recompute.
 
 Two directives maintain it.
 
-**"new entry"** — where the writer directs with the phrase *new entry*, create the diary entry
-by the entry rules. Those are the diary-entries, datetime-stamp-line, and
+**"new entry"** — where the writer directs with the phrase *new entry*, create the journal entry
+by the entry rules. Those are the journal-entries, datetime-stamp-line, and
 ask-for-entry-time-or-omit-it rules. Then **ordered-insert** its row into `TIMELINE.md`. Take
 the new entry's datetime from its filename stamp, find the first existing bullet later than it,
 and insert the new bullet immediately above it. A date-only entry sorts to the start of its
@@ -54,8 +57,8 @@ entry, which is a rename, an edited title, a stripped time, or a deletion. A rei
 those.
 
 **"reindex"** — where the writer asks to reindex, **fully regenerate** the active writer's
-`waytide/local/diary/<username>/TIMELINE.md` from scratch. Read every `20*.md` entry file in
-`waytide/local/diary/<username>/`, sort them chronologically oldest first, and overwrite the
+`waytide/local/journal/<username>/TIMELINE.md` from scratch. Read every `20*.md` entry file in
+`waytide/local/journal/<username>/`, sort them chronologically oldest first, and overwrite the
 file. This is the rebuild that heals any rename, edit, or deletion of an existing entry. Use it
 after any hand-edit to the entry files.
 
@@ -69,7 +72,7 @@ explicit full rebuild. For a pure addition the two produce identical output, and
 for the cases where they diverge.
 
 **How to apply:** resolve the active `<username>` by the identity-resolution-contract rule
-first. On *new entry*, write the entry file under `waytide/local/diary/<username>/`, then
+first. On *new entry*, write the entry file under `waytide/local/journal/<username>/`, then
 ordered-insert its bullet into that directory's `TIMELINE.md`, and commit the two together. On
 *reindex*, regenerate that `TIMELINE.md` from all the `20*.md` files in the directory.
 
@@ -77,9 +80,10 @@ Related:
 
 - the timeline-view rule — the view this index materializes, and the computed count it omits
 - the identity-resolution-contract rule — how `<username>` is resolved
-- the diary-entries rule — the entry this inserts a row for
+- the journal-entries rule — the entry this inserts a row for
 
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

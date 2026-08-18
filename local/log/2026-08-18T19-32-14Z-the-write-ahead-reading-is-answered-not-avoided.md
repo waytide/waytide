@@ -1,0 +1,1 @@
+# The write-ahead reading of `journal` is answered rather than avoided — it was the whole case for `diary` on 2026-08-14, and what settles it is the directory the word sits in, since `waytide/local/journal/<username>/` names a person and no write-ahead log is kept per user

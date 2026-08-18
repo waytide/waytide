@@ -1,10 +1,13 @@
-- **Origin:** waytide/system/diary/no-stored-recap-regenerate-on-demand.md
+- **Origin:** waytide/system/journal/no-stored-recap-regenerate-on-demand.md
 - **Kind:** rule
 - **Suspended:** 2026-08-14T18-32-29Z
+- **Renamed:** 2026-08-18 — the `diary` package became `journal`. Every path and rule name
+  below is rewritten to match, so the return address resolves. The record is a live undo
+  queue entry, not a historical one
 - **Reconciliations:**
   - waytide/system/foundation/decision-log-convention.md — gained the one sentence this rule
     said that nothing else did, that a summary is never written to a file
-  - waytide/system/diary/no-repo-auto-memory.md — cited this rule in its Related list. That
+  - waytide/system/journal/no-repo-auto-memory.md — cited this rule in its Related list. That
     rule was itself rewritten and moved to
     waytide/system/foundation/project-context-lives-in-the-committed-artifacts.md, and the
     citation did not survive the rewrite
@@ -48,3 +51,4 @@ Related:
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

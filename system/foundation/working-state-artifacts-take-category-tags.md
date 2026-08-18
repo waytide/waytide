@@ -80,7 +80,7 @@ it is freeform.
 
 Related:
 
-- the `diary` package's diary-convention and datetime-stamp-line rules — where a diary entry's `**Tags:**` line sits, which is under the datetime line and above the summary
+- the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
 - the working-state-artifacts-carry-a-provenance-footer rule — the same obligation shape, and the same log exception
 - the decision-log-convention — the one-line entry this exempts
 - this package's vocabulary — the plain text data attribute line
@@ -90,3 +90,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

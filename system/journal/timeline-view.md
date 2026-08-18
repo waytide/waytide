@@ -1,7 +1,7 @@
-# Timeline view: on request, list every diary entry chronologically, each row led by its datetime
+# Timeline view: on request, list every journal entry chronologically, each row led by its datetime
 
 Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every
-diary entry in the active writer's diary directory, `waytide/local/diary/<username>/`. Those
+journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those
 are the `20*.md` files there, and `<username>` is resolved by the identity-resolution-contract
 rule. List them in chronological order, oldest first.
 
@@ -25,7 +25,7 @@ existed because the first could not see a rename, an edited title, or a deletion
 needs a repair directive is a view that drifts, and the entries are what a reader would then have
 to check it against. See the suspended new-entry-trigger-rebuilds-timeline-index rule.
 
-**The entry files are the record, and reading them is cheap.** A diary directory is one small
+**The entry files are the record, and reading them is cheap.** A journal directory is one small
 markdown file per entry. Nothing about listing them wants a cache.
 
 **Why:** the timeline says nothing the entries do not. It is an ordering and a rendering of
@@ -34,14 +34,14 @@ disagree with the first. Computing it on request means it is correct by construc
 cannot be stale.
 
 **How to apply:** resolve the active `<username>` by the identity-resolution-contract rule.
-Read the `20*.md` files in `waytide/local/diary/<username>/`, sort them by their datetime line,
+Read the `20*.md` files in `waytide/local/journal/<username>/`, sort them by their datetime line,
 emit the bullets, and append the computed count and date span. Write nothing to a file.
 
 Related:
 
 - the identity-resolution-contract rule — how `<username>` is resolved
 - the datetime-stamp-line rule — the line each bullet is led by
-- the diary-entries rule — the entries this reads, and the *new entry* directive that writes one
+- the journal-entries rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term
 
 ---
@@ -49,3 +49,4 @@ Related:
 Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

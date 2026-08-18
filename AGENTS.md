@@ -38,11 +38,11 @@ with as their conventions describe, not read as binding rules at session start. 
 queue is no longer a directory** — it is every idea tagged `[deferred]`, and it is still printed
 at the start of every session.
 
-**`local/diary/` is the exception, and it is read.** The `diary` package's
-the-diary-is-read-at-session-start rule directs the read, after the rules and the vocabularies,
-oldest entry first. It binds nothing — see that package's a-diary-entry-is-read-and-never-followed
-rule. The directory does not exist here yet, and its absence is ordinary, for the same reason
-`local/rules/` was named before it held anything.
+**`local/journal/` is the exception, and it is read.** The `journal` package's
+the-journal-is-read-at-session-start rule directs the read, after the rules and the vocabularies,
+oldest entry first. It binds nothing — see that package's a-journal-entry-is-read-and-never-followed
+rule. It was `local/diary/` until 2026-08-18, and the package that governs it was `diary`. Records
+already written keep that word, since a rename does not reach a historical record.
 
 **This repository drops the `waytide/` wrapper that a consuming project has.** There,
 the two directories sit under it — `waytide/system/` for the installed packages and
@@ -73,3 +73,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

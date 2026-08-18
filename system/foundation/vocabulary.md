@@ -118,7 +118,7 @@ scope** is *not here*.
     `Explain` costs one of the four option slots where this one costs none.
   - **An option that names an answer inside the question is not this.** A prompt asking for a time
     may offer *Enter the time*, and that is a candidate rather than a way out of the option set.
-    See the `diary` package's ask-for-entry-time-or-omit-it rule.
+    See the `journal` package's ask-for-entry-time-or-omit-it rule.
   - **STE: absent from the STE dictionary as a compound. `option (n)` is not approved and gives
     ALTERNATIVE (n), `FREE (adj)` is approved in an unrelated sense, and `text` is absent.
     Technical noun, ETE human-computer interaction.**
@@ -186,3 +186,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:08:25 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT

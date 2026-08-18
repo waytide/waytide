@@ -1,6 +1,6 @@
 # Where an entry carries no time, ask for one through the selection interface
 
-When creating a diary entry, where the writer has not given a **time**, ask them through the
+When creating a journal entry, where the writer has not given a **time**, ask them through the
 selection interface. Do not choose a default, and do not invent or guess a placeholder time.
 
 **A date settles nothing about the time.** *Yesterday*, *today*, *last Tuesday*, and an explicit
@@ -19,7 +19,7 @@ answer decides only whether the entry carries a time and what it is.
 
 **`Now` is held to the minute, like every other answer.** It reads a clock that has a seconds
 value, and the stamp drops it. Seconds reach a filename only where the writer states them, so no
-answer here produces a resolution the writer did not give. See the diary-entries rule.
+answer here produces a resolution the writer did not give. See the journal-entries rule.
 
 **`Now` is offered only for an entry about today.** For a back-dated entry the current clock time
 is not the entry's time, and naming it `Now` would say it is. The ask then carries **No time**,
@@ -34,11 +34,11 @@ an answer **within** the question rather than outside it. The harness's free-tex
 precedes `T`.
 
 **The date is settled before the ask, and the ask does not revisit it.** Where the writer referred
-to a day, the entry takes that day. Where they referred to none, it takes today. The diary-entries
+to a day, the entry takes that day. Where they referred to none, it takes today. The journal-entries
 rule's dating default governs that, and this rule governs the time alone.
 
 **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact. Asking keeps the
-diary accurate.
+journal accurate.
 
 The trigger is the **time** rather than the whole datetime because a day-granular
 phrase is the ordinary way a person refers to when something happened. *Yesterday* is a complete
@@ -57,11 +57,11 @@ Stamp the filename to the minute under **Now**, and under a time the writer stat
 Write seconds only where the writer stated seconds.
 
 Name the file and write the datetime line to match the answer. Settle the date first by the
-diary-entries rule's dating default, and do not put the date to the writer.
+journal-entries rule's dating default, and do not put the date to the writer.
 
 Related:
 
-- the diary-entries rule — the dating default that settles the date, and the filename stamp
+- the journal-entries rule — the dating default that settles the date, and the filename stamp
 - the datetime-stamp-line rule — the in-content line that drops the time with it
 - the foundation package's present-every-prompt-through-askuserquestion rule — the interface, the
   `Explain` option, and the free-text option this rule's third option is not
@@ -75,3 +75,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:01:46 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
