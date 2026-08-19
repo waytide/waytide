@@ -72,6 +72,21 @@ above are now `local/aspiration/` and `local/intention/`. The observation is lef
 otherwise — it is a discovery record, and what it observed was true of the directories under
 the names they had.
 
+## Amended 2026-08-18 — a deferred item is no longer deleted on resolution
+
+**The title's second clause is no longer true, and it stands as written.** A deferred item was
+deleted when it was resolved, leaving a decision log entry as the durable trace. That was dropped
+on 2026-08-18: the item is an idea tagged `[deferred]`, the tag comes off when the work is done,
+and the record is kept with its state changed to `Realized`, `Abandoned`, or `Lapsed`.
+
+**What the change was for.** Deletion required searching every artifact that cited an item before
+removing it, because removal left the citations pointing at nothing. A kept record still resolves,
+and its state line says what became of it, so the search is retired rather than moved.
+
+**The first clause is untouched.** Whether deferred items preempt the settled direction is the
+observation's actual subject, and nothing on 2026-08-18 bears on it. See the
+deferred-queue-convention.
+
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 11:18:29 PM PT
@@ -80,3 +95,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 11:16:34 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT

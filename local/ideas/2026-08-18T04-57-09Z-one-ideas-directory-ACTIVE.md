@@ -172,6 +172,22 @@ written with, since a record states what it stated when it was written.
   `local/rules/` now holds two rules.
 - **Whether `ideas` is the settled name.** It is the word this aspiration is written in.
 
+## Settled 2026-08-18 — the directory absorbed two more, and the mechanism it argued against is gone
+
+**`deferred/` and `observations/` joined the six.** This idea settled that `ideas/` replaces
+`design/`, `plans/`, `aspiration/`, `intention/`, `orientation/`, and `action/`. Two more followed
+on the same reasoning: an observation is an idea tagged `[observation]`, and a deferred item is an
+idea tagged `[deferred]`. Neither was named here, and neither needed a separate argument — what
+varies between them is a word, and a word is carried by a tag.
+
+**The mode mechanism was decommissioned rather than amended.** This idea's premise was that a mode
+may change mid-stream because the pair is written into the record. The mechanism was removed from
+active service instead, so the premise is satisfied by the mode no longer existing.
+
+**What is deliberately not folded in.** `implementations/` holds a record with a branch lifecycle,
+and `logs/` holds the records that accrue chronologically. An idea is thinking, and neither of
+those is. The three-directory arrangement is the resting point, not one directory for everything.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 17 2026 at 9:57:09 PM PT
@@ -184,3 +200,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:32:18 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT

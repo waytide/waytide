@@ -84,6 +84,17 @@ observation's concern is a term spanning three artifacts that differ in what the
 they are written. Whether `migration/` falls inside the proposed term is the point where the two
 questions meet, and it is unsettled in both.
 
+## Amended 2026-08-18 — the three artifacts are one record type
+
+**The span this observation names has closed.** The artifacts it found scattered across two
+packages are all ideas now, in `waytide/local/ideas/`, distinguished by tag rather than by
+directory and rule set. The observation's question — what to call the activity they share — is
+answered by there being one record and one word for it.
+
+**What the observation was right about survives the consolidation.** That the artifacts shared an
+activity nothing named is why one directory works. The question was a symptom of the split, and
+removing the split removed it.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 6:43:29 PM PT
@@ -92,3 +103,4 @@ Changed by Scott Bellware on Wed Aug 5 2026 at 1:12:40 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT

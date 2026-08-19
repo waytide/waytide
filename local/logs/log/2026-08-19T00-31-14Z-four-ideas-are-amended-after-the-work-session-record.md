@@ -1,0 +1,1 @@
+# Four ideas are amended by dated addition after the work session record — one-ideas-directory gains the two directories it absorbed, deferred-items-preempt records that deletion was dropped, planning-spans-three-artifacts records that the span has closed, and a-citation-is-not-a-dependency records that its worked example moved and gained a second instance

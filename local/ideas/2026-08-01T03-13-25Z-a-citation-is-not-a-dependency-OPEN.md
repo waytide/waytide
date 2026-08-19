@@ -80,6 +80,19 @@ dependency edge. The rule is `system/foundation/a-citation-is-not-a-dependency.m
 the test, the two worked examples above, and the graph-cycle argument for why the alternative
 reading is unavailable.
 
+## Amended 2026-08-18 — the worked example moved
+
+**The refused dependency this observation turns on is now stated in the implementations-convention.**
+It lived in `features-convention`, which was replaced when experiments and features became one
+record type. The argument is unchanged: `waytide/local/logs/loops/` is contributed by
+`design-by-efferent`, which includes `foundation`, so a foundation rule requiring fields in that
+directory would invert the package graph.
+
+**A second instance arrived the same day.** The `logs-directory` rule names `logs/loops/` as one of
+the running records while requiring nothing of what sits inside it, reading nothing there, and
+deriving nothing from it. That is the same shape at the level of a directory rather than a field,
+and it is the first case where the citation is a **path** rather than a rule name.
+
 ---
 
 Authored by Scott Bellware on Fri Jul 31 2026 at 8:13:25 PM PT
@@ -87,3 +100,4 @@ Changed by Scott Bellware on Fri Jul 31 2026 at 10:42:45 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT
