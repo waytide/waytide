@@ -1,0 +1,1 @@
+# The work-sessions-convention's list of durable records is reconciled — it named `waytide/local/experiments/` and a sequencing artifact in a planning directory, neither of which exists since the consolidations
