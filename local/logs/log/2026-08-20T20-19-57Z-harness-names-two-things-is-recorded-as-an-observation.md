@@ -1,0 +1,1 @@
+# That `harness` names both the program the agent runs inside and, in the 2026-08-03 self-description, Waytide itself — and that no vocabulary reserves it despite 28 uses as a term — is recorded as an observation rather than a rule, since which sense survives and which vocabulary holds the entry are both undecided
