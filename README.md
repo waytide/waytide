@@ -48,12 +48,14 @@ Waytide offers a project four things: conventions that bind, directories the wor
 ## Packages
 
 - **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the
-  `rules`/`observations`/`deferred`/`log` directories and how to work with them,
-  the one-line decision-log format, the ISO-8601-UTC filename convention, and how
-  plans and designs read. Everything includes it.
+  `rules/` and `vocabulary.md` that bind, and the `ideas/`, `logs/`, `implementations/`, and
+  `migration/` directories the work is recorded in. The one-line decision-log format, the
+  ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle.
+  Everything includes it.
 - **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a
-  word selection is a design decision. Name concepts literally, drop slang, and one
-  rule per substitution.
+  word selection is a design decision. Name concepts literally, drop slang, and keep the
+  settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English,
+  Waytide's implementation of ASD-STE100.
 - **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method
   (DBE): hinges and gates, the actuation-first cycle, and the method's own
   `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI.
@@ -61,7 +63,8 @@ Waytide offers a project four things: conventions that bind, directories the wor
 - **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test
   structure and naming, assertion form.
 - **[code/ruby](https://github.com/waytide/code-ruby)**. Prescriptive Ruby style.
-- **[git](https://github.com/waytide/git)**. Commit conventions.
+- **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the
+  agent announces.
 - **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen:
   semver, optionally prefixed by a product generation number. Not how a package is
   built or published.
@@ -108,7 +111,7 @@ git subtree add --prefix waytide/system/code/ruby           https://github.com/w
 git subtree add --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
 git subtree add --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree add --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
-git subtree add --prefix waytide/system/journal            https://github.com/waytide/journal.git            master --squash
+git subtree add --prefix waytide/system/journal             https://github.com/waytide/journal.git             master --squash
 ```
 
 Refresh any package later using `git subtree pull`:
@@ -121,7 +124,7 @@ git subtree pull --prefix waytide/system/code/ruby           https://github.com/
 git subtree pull --prefix waytide/system/git                 https://github.com/waytide/git.git                 master --squash
 git subtree pull --prefix waytide/system/versioning          https://github.com/waytide/versioning.git          master --squash
 git subtree pull --prefix waytide/system/design-by-efferent  https://github.com/waytide/design-by-efferent.git  master --squash
-git subtree pull --prefix waytide/system/journal            https://github.com/waytide/journal.git            master --squash
+git subtree pull --prefix waytide/system/journal             https://github.com/waytide/journal.git             master --squash
 ```
 
 Or do it all at once with [`install-all.sh`](install-all.sh), which installs and refreshes every package. Fetch it and run it from your project root:
@@ -136,7 +139,9 @@ script reaches a project by `git subtree`, which does preserve the mode.
 
 ## Project-local rules
 
-Rules specific to a single project live under a `local/` directory that mirrors the package categories, such as `local/language`, `local/testing`, and `local/code/ruby`. It is never split or pushed, so a project-specific rule cannot leak upstream.
+A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own vocabulary decides over every package's.
+
+`waytide/local/` is never split or pushed, so a project-specific rule cannot leak upstream.
 
 ## Origins
 
