@@ -1,18 +1,49 @@
-# Waytide
+# Waytide: Human-Agent Relations
 
-**By [the Eventide Project](https://eventide-project.org).**
+By [the Eventide Project](https://eventide-project.org)
 
-Reusable agent directives — the rules an AI coding agent reads at the start of a
-session — organized into installable **packages**. A package is the unit of
-reuse: a project adopts whole packages, never individual rules.
+## Waytide is an agent harness and a human ally
 
-Waytide grew out of the design practice the Eventide Project uses in its own work.
-The rules were extracted from its [Constant](https://github.com/eventide-project/constant)
-project and generalized and consolidated into these packages.
+The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options.
 
-**This composite repository is not itself installed into a project.** It is the
-authoring source. A consuming project installs the individual component packages
-below (each has its own repository).
+Waytide offers a project four things: conventions that bind, directories the work records itself in, a design method with the engineer at its decision points, and the machinery that installs and activates all of it. 112 rule files and 6 vocabularies across 8 packages.
+
+## Conventions that bind, read fresh each session
+
+- **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
+- **Files, not memory.** Committed with the code. They are reviewable, diffable, and versioned. Project context lives in committed artifacts. Agent memory store is forbidden to stand in for committed artifacts.
+- Extensible locally. local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
+- **Installed as packages.** A project takes packages, rather than single rules. `git subtree add` installs; refresh-packages.sh pulls and reports which rule files changed.
+
+## The work records itself
+
+- **ideas/** — designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
+- **logs/** — the decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
+- **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
+- **journal/** — the one record the engineer writes and the agent only reads. Read at session start, binding in nothing.
+- **migration/** — execution plans for content crossing a repository boundary, kept after it has gone.
+
+## A design method, and the engineer at its decision points
+
+- **Design By Efferent.** The actuation written before any implementation, so the interface is designed from the use site.
+- **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar.
+- **Five checkpoints:** actuation, test, setup, implementation, and final naming and polish.
+- **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go in a new direction, rather than just rubber stamping one offered by the agent.
+- **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every task. The methodology is respected either way. Only the amount of unchecked work changes.
+
+## Domain conventions
+
+- **Language.** Words treated as design decisions, literal naming, no slang, and Eventide Technical English (ETE) extended from the [ASD-STE100](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf).
+- **Testing.** Controls rather than fixtures, actuate once and assert each outcome, preconditions, naming.
+- **Git.** Subject-first messages, suite before the commit decision, no Claude co-author trailer, an announced branch switch.
+- **Versioning.** What each digit in a version number means, and the next version decision options presented to the engineer.
+
+## Machinery
+
+- **Activation.** install.sh places the AGENTS.md bootstrap and .claude/settings.json. A SessionStart hook carries the read instruction and prints what is installed. A status line keeps the system's presence on screen.
+- **The deferred queue.** Printed at startup, so parked work is not lost by going unread.
+- **Commands.** Status report, test report, test tree, lib report, next deferred item, timeline.
+- **12 scripts.** Installed with the packages or held at the authoring root.
 
 ## Packages
 
@@ -106,6 +137,15 @@ script reaches a project by `git subtree`, which does preserve the mode.
 ## Project-local rules
 
 Rules specific to a single project live under a `local/` directory that mirrors the package categories, such as `local/language`, `local/testing`, and `local/code/ruby`. It is never split or pushed, so a project-specific rule cannot leak upstream.
+
+## Origins
+
+Waytide grew out of the design practice the Eventide Project uses in its own work.
+The rules were extracted from its [Constant](https://github.com/eventide-project/constant)
+project and generalized and consolidated into these packages.
+
+**This composite repository is not itself installed into a project.** It is the
+authoring source. A consuming project installs the individual component packages, each with its own repository.
 
 ## License
 
