@@ -15,14 +15,6 @@ Waytide offers a project four things: conventions that bind, directories the wor
 - Extensible locally. local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
 - **Installed as packages.** A project takes packages, rather than single rules. `git subtree add` installs; refresh-packages.sh pulls and reports which rule files changed.
 
-## The work records itself
-
-- **ideas/** — designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
-- **logs/** — the decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
-- **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
-- **journal/** — the one record the engineer writes and the agent only reads. Read at session start, binding in nothing.
-- **migration/** — execution plans for content crossing a repository boundary, kept after it has gone.
-
 ## A design method, and the engineer at its decision points
 
 - **Design By Efferent.** The actuation written before any implementation, so the interface is designed from the use site.
@@ -30,6 +22,14 @@ Waytide offers a project four things: conventions that bind, directories the wor
 - **Five checkpoints:** actuation, test, setup, implementation, and final naming and polish.
 - **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go in a new direction, rather than just rubber stamping one offered by the agent.
 - **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every task. The methodology is respected either way. Only the amount of unchecked work changes.
+
+## The work records itself
+
+- **ideas/** — Designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
+- **logs/** — The decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
+- **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
+- **journal/** — The one record the engineer writes and the agent only reads. Read at session start, binding in nothing.
+- **migration/** — Execution plans for content moving to or from another repository.
 
 ## Domain conventions
 
