@@ -47,34 +47,16 @@ Waytide offers a project four things: conventions that bind, directories the wor
 
 ## Packages
 
-- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the
-  `rules/` and `vocabulary.md` that bind, and the `ideas/`, `logs/`, `implementations/`, and
-  `migration/` directories the work is recorded in. The one-line decision-log format, the
-  ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle.
-  Everything includes it.
-- **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a
-  word selection is a design decision. Name concepts literally, drop slang, and keep the
-  settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English,
-  Waytide's implementation of ASD-STE100.
-- **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method
-  (DBE): hinges and gates, the actuation-first cycle, and the method's own
-  `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI.
-  Contributes the `logs/loops/` artifact directory.
-- **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test
-  structure and naming, assertion form.
+- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `ideas/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line decision-log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
+- **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Waytide's implementation of ASD-STE100.
+- **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method (DBE): hinges and gates, the actuation-first cycle, and the method's own `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI. Contributes the `logs/loops/` artifact directory.
+- **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test structure and naming, assertion form.
 - **[code/ruby](https://github.com/waytide/code-ruby)**. Prescriptive Ruby style.
-- **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the
-  agent announces.
-- **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen:
-  semver, optionally prefixed by a product generation number. Not how a package is
-  built or published.
-- **[journal](https://github.com/waytide/journal)**. The one record the engineer writes rather than the
-  agent. Read at session start, and followed in nothing. Contributes the `journal/` artifact
-  directory.
+- **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the agent announces.
+- **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen: semver, optionally prefixed by a product generation number. Not how a package is built or published.
+- **[journal](https://github.com/waytide/journal)**. The one record the engineer writes rather than the agent. Read at session start, and followed in nothing. Contributes the `journal/` artifact directory.
 
-A package that has dependencies carries an `install-dependencies.sh` that installs
-them. A standalone package has none. Each arrow below points from a package to the
-packages it depends on (`→` reads "includes"):
+A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 
 ```
 design-by-efferent  →  foundation, language, testing
@@ -134,8 +116,7 @@ curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
 sh install-all.sh
 ```
 
-`sh install-all.sh`, not `./install-all.sh`. The file is committed executable. But `curl` transfers content and not file metadata, so the copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other
-script reaches a project by `git subtree`, which does preserve the mode.
+`sh install-all.sh`, not `./install-all.sh`. The file is committed executable. But `curl` transfers content and not file metadata, so the copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other script reaches a project by `git subtree`, which does preserve the mode.
 
 ## Project-local rules
 
@@ -145,12 +126,9 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 
 ## Origins
 
-Waytide grew out of the design practice the Eventide Project uses in its own work.
-The rules were extracted from its [Constant](https://github.com/eventide-project/constant)
-project and generalized and consolidated into these packages.
+Waytide grew out of the design practice the Eventide Project uses in its own work. The rules were extracted from its [Constant](https://github.com/eventide-project/constant) project and generalized and consolidated into these packages.
 
-**This composite repository is not itself installed into a project.** It is the
-authoring source. A consuming project installs the individual component packages, each with its own repository.
+**This composite repository is not itself installed into a project.** It is the authoring source. A consuming project installs the individual component packages, each with its own repository.
 
 ## License
 
