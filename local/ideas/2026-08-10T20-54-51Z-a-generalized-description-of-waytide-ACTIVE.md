@@ -1,6 +1,6 @@
 # A Generalized Description of Waytide — Aspiration
 
-- **State:** Deferred
+- **State:** Active
 - **Tags:** [aspiration]
 
 ## Premise
@@ -56,12 +56,43 @@ this description is that projection, or something the projection is produced fro
 
 - **2026-08-10** — **Waytide has one generalized description of itself, serving both the README
   and the website.** Nothing beyond this is settled.
+- **2026-08-20** — **The description is settled, and it stands beside a category line.** The
+  category line is **Waytide: Human-Agent Relations**, which the
+  an-optional-allusion-passes-the-name-literally-test observation already cleared. The
+  description reads:
+
+  > The conventions a project and its agent both work by — committed with the code, read into
+  > force at every session's start. The decisions that bear weight stay with the engineer. The
+  > agent generates the rest, and the work writes its own record back beside the code. Installed
+  > as packages.
+
+  Three candidates were weighed, differing in what the opening clause claims — the division of
+  labor, written-down-against-recalled, and the two halves committed to disk. The first was
+  taken.
 
 ## Out of Scope / Deferred
 
 - **Which reading of "generalized" is taken**, and therefore whether the artifact is one text or
   one source.
-- **What the description says.** Its content is not drafted here.
+- **What the description says.** Its content is not drafted here. **2026-08-20 — this no longer
+  holds.** The content is settled above, and the README's opening sentence, quoted in Background
+  & Motivation, is superseded by it.
+
+  **2026-08-20, later the same day — the README pass ran, and it did not use the settled
+  wording.** The sentence quoted in Background & Motivation is gone from the file. In its place
+  the README leads with *The engineer decides. The agent generates. Where there is ambiguity, the
+  agent gives the engineer options.*
+
+  **That is the settled content in a plainer register, not a different settlement.** The
+  division of labor is what the settled description claims and what the README states. The
+  register differs deliberately: a README is met by a reader holding none of Waytide's
+  vocabulary, and `communicate-plainly-name-the-thing` forbids leading with a compressed term as
+  though the reader already shares it. The README's `checkpoint`, `test`, `setup`, `escape
+  hatch`, and `status` are plain-language stand-ins on the same ground.
+
+  **So the two readings of "generalized" above are no longer equally open.** One text rendered in
+  both places is not what happened. Whether the arrangement is one source with two renderings, or
+  two texts that will drift, is not settled and is the live question this aspiration now carries.
 - **Where it lives**, and whether it is the projection the self-explanation aspiration names or an
   input to it. Production and presentation are the `website` project's, by that aspiration's own
   settlement.
@@ -78,3 +109,5 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:19:18 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:44:25 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
+Changed by Scott Bellware on Thu Aug 20 2026 at 1:11:54 PM PT
+Changed by Scott Bellware on Thu Aug 20 2026 at 3:35:12 PM PT

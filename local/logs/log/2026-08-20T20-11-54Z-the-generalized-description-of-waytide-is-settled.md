@@ -1,0 +1,1 @@
+# Waytide's generalized description is settled — a category line, "Waytide: Human-Agent Relations", and a description line leading with the division of labor: the conventions both parties work by, the decisions that bear weight staying with the engineer, the agent generating the rest, and the work writing its record back beside the code
