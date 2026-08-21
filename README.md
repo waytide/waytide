@@ -1,6 +1,6 @@
 # Waytide: Human-Agent Relations
 
-By [the Eventide Project](https://eventide-project.org)
+By [The Eventide Project](https://eventide-project.org)
 
 ## An agent harness and a human ally
 
