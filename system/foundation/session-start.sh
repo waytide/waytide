@@ -77,7 +77,7 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
 #
 # The state is read from the record's canonical "**State:** <state>" line. The state
 # words also appear throughout a record's prose, so only that line is authoritative;
-# a record without one is still in flight.
+# a record without one is still in progress.
 #
 # Prints "<n> <noun> open: <name> (<note>), ..." or nothing. Arguments: the
 # directory, the singular noun, the plural noun, then the concluded state words.
