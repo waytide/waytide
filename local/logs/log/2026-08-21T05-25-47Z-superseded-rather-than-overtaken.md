@@ -1,0 +1,1 @@
+# `superseded` is written rather than "overtaken", recorded as a substitution in this project's first `local/vocabulary.md` — both words are absent from the STE dictionary, the Use word is ordinary vocabulary and takes no ETE category, and the overlap with the `Superseded` state word is accepted because the `**State:**` line is the only authoritative statement of a state
