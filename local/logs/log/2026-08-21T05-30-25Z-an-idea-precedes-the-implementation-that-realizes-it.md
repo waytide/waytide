@@ -1,0 +1,1 @@
+# That the process works when an idea is recorded first and a feature or experiment follows it — immediately or indefinitely, at the engineer's choice — is recorded as an observation rather than a rule, since whether an implementation must name the idea it realizes, and whether its conclusion moves that idea to `Realized`, are both undecided
