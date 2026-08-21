@@ -2,7 +2,7 @@
 
 By [The Eventide Project](https://eventide-project.org)
 
-## Agent harness and human ally
+## Agent harness and engineer ally
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to dictate the answer.
 
@@ -12,7 +12,8 @@ Waytide offers a project four things: conventions that bind, work that records i
 
 - **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
 - **Files, not memory.** Committed with the code. They are reviewable, diffable, and versioned. Project context lives in committed artifacts. Agent memory store is forbidden to stand in for committed artifacts.
-- Extensible locally. local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
+- **Work that records itself.** Comprehensive logging and recording of the engineer's decisions and the agent's actions.
+- **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
 - **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing packages, refreshing them, and reporting on changes.
 
 ## A design method with the engineer at its decision points
