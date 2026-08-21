@@ -1,10 +1,14 @@
-# Feature — Language-Specific Distribution
+# Feature — Tool-Specific Distribution
 
 ## Intent
 
-**A language-named package leaves Waytide's default distribution, and a distribution of its own
+**A tool-named package leaves Waytide's default distribution, and a distribution of its own
 installs it along with the rest.** `code/ruby` is the case that exists. What is built here is the
 mechanism, and Ruby is the first thing carried by it.
+
+**Renamed on 2026-08-21**, from *Language-Specific Distribution*. The axis is a tool rather than a
+language — see *The grouping is `tool/`, not a language*. The creation log entry names the branch
+this was started on, and it is left as written.
 
 The idea this realizes is *The Ruby package leaves the default distribution, and a `waytide-ruby`
 distribution installs it with the rest*, in `local/ideas/`. That idea is **Open**, and it is open
@@ -17,7 +21,8 @@ and they are decided in the loop.**
 ## Setup
 
 - **Upstream branch:** `master`
-- **Implementation branch:** `feature/language-specific-distribution`
+- **Implementation branch:** `feature/tool-specific-distribution`, renamed from
+  `feature/language-specific-distribution` on 2026-08-21
 - **Base:** `39765f84322fb09610a2437c334ee3d25b1d3e3a`, from `master`
 - **Working location:** branch only. This working tree switches back to `master` at the
   conclusion.
@@ -52,3 +57,4 @@ specifics and each is written to work without it.
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:27:43 PM PT
+Changed by Scott Bellware on Thu Aug 20 2026 at 10:58:07 PM PT
