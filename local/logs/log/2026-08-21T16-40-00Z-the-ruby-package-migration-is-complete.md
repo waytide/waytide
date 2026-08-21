@@ -1,0 +1,1 @@
+# All eight increments of the Ruby package migration are done — the seven packages are republished from `master`, `waytide/code-ruby` carries a README naming `tools-ruby-lang` and is archived with a description saying so, and the distribution test's second outcome passes for the first time

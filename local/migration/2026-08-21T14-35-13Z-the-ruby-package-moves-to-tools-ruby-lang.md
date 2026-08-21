@@ -70,7 +70,7 @@ left to be inferred.
 
 ## Record of what happened
 
-**2026-08-21 — increments 1 through 7 ran. Increment 8 has not.**
+**2026-08-21 — all eight increments ran. The migration is complete.**
 
 - **1 and 2 ran together**, and the destination README merged with the one already there. The 12
   rule files came across unchanged: they reference each other by name rather than by path, so
@@ -90,12 +90,24 @@ left to be inferred.
   `tools-ruby-lang` so that `refresh-packages.sh` still derives a repository from a directory by
   flattening the path. The record was repointed before increment 1 ran.
 
-**Increment 8 waits, and so does the publish.** `waytide/code-ruby` still holds what the composite
-last published to it, and is still installable. The local rule a-package-is-published-from-master
-holds the publish until this work reaches `master`, and archiving before that would strand anyone
-mid-move — which is why the ordering put it last.
+- **8 ran last**, after the feature merged to `master` and the seven packages were published.
+  `waytide/code-ruby` carries a README naming `tools-ruby-lang` and how a project moves to it, and
+  it is archived. Its description says the same — set on the second attempt, since archiving
+  makes a repository read-only and the first edit was refused. The description is set before the
+  archive, not after.
+- **That README is a direct commit to a component repository**, which `CONTRIBUTING.md` forbids.
+  The prohibition exists because a direct commit is not in the composite's history and is lost or
+  made to conflict on the next release. There is no next release: nothing splits into that
+  repository again, and it was archived immediately after. `report-direct-commits.sh` does not
+  reach it either, since it discovers packages by their `README.md` under `system/` and there is
+  no `system/code/` any more.
+
+**The test's second outcome passes now.** It read the published `master` and found the seven
+packages plus `tools/ruby-lang`. It had failed since it was written, on the ordering this record
+describes.
 
 ---
 
 Authored by Scott Bellware on Fri Aug 21 2026 at 7:35:13 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:51 AM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:27:01 AM PT
