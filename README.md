@@ -1,12 +1,12 @@
 # Waytide: Human-Agent Relations
 
-By [the Eventide Project](https://eventide-project.org)
+By [The Eventide Project](https://eventide-project.org)
 
 ## An agent harness and a human ally
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to dictate the answer.
 
-Waytide offers a project four things: conventions that bind, work that records itself, a design method with the engineer at its decision points, and the machinery that installs and activates all of it. 112 rule files and 6 vocabularies across 8 packages.
+Waytide offers a project four things: conventions that bind, work that records itself, a design method with the engineer at its decision points, and the machinery that installs and activates all of it. 101 rule files and 6 vocabularies across 7 packages, and one more package published from a repository of its own.
 
 ## Conventions that bind, read fresh each session
 
@@ -17,7 +17,7 @@ Waytide offers a project four things: conventions that bind, work that records i
 
 ## A design method with the engineer at its decision points
 
-- **Design By Efferent.** The actuation written before any implementation, so the interface is shaped from the use site.
+- **Design By Efferent.** The actuation written before any implementation, so the interface is shaped from the use site. An updated TDD variant with accommodations for AI.
 - **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar, unless you want to. Running the red, green, refactor cycle is a choice the implementation checkpoint offers, not a ritual it performs.
 - **Five checkpoints:** actuation, test, setup, implementation, and final naming and polish.
 - **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go in their own direction, rather than just rubber stamping the agent.
@@ -49,7 +49,7 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 - **Activation.** install.sh places the AGENTS.md bootstrap and .claude/settings.json. A SessionStart hook carries the read instruction and prints what is installed. A status line keeps the system's presence on screen.
 - **The deferred queue.** Printed at startup, so parked work is not lost by going unread.
 - **Commands.** Status report, test report, test tree, lib report, next deferred item, timeline.
-- **12 scripts.** Installed with the packages or held at the authoring root.
+- **11 scripts.** Installed with the packages or held at the authoring root.
 
 ## Install Waytide
 
@@ -83,14 +83,14 @@ The file is committed as an executable, but `curl` transfers content and not fil
 - **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the agent announces.
 - **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen: semver, optionally prefixed by a product generation number. Not how a package is built or published.
 - **[journal](https://github.com/waytide/journal)**. The one record the engineer writes rather than the agent. Read at session start, and followed in nothing. Contributes the `journal/` artifact directory.
-- **[code/ruby](https://github.com/waytide/code-ruby)**. Prescriptive Ruby style.
+- **[tools/ruby-lang](https://github.com/waytide/tools-ruby-lang)**. Prescriptive Ruby style, the suite entry point, and gem release mechanics. **Authored in its own repository rather than here**, and its dependency is every package above, so installing it installs all of Waytide.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 
 ```
+tools/ruby-lang     →  every package below
 design-by-efferent  →  foundation, language, testing
 testing             →  foundation, language
-code/ruby           →  foundation, language
 language            →  foundation
 journal             →  foundation
 

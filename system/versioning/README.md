@@ -23,7 +23,7 @@ and only one of them is versioning:
   package — `Package version is increased from 1.1.1 to 1.2.0`, in the subject-first rule.
 - **The mechanics** — where the version is recorded, and how the package is built and
   published — belong to the technology the package is distributed with. For a Ruby gem that is
-  the `code/ruby` package: the gemspec's `s.version`, `gem build`, `gem push`.
+  the `tools/ruby-lang` package: the gemspec's `s.version`, `gem build`, `gem push`.
 - **This package has no knowledge of any of that**, even though every package versioned under
   it today is a Ruby gem. What a version means does not change with the packaging technology,
   and a rule that mixed the two would be unusable by a project that packages differently.

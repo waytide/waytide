@@ -1,0 +1,1 @@
+# The Language-Specific Distribution feature is started on `feature/language-specific-distribution`, based on `39765f8` from `master`, built branch only and attended — it realizes the Ruby-leaves-the-default-distribution idea, whose open mechanism question is decided at the hinges rather than ahead of them
