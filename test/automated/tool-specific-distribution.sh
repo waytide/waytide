@@ -49,7 +49,7 @@ control_ruby_project="$tmp/ruby"
 git init --quiet "$control_ruby_project"
 git -C "$control_ruby_project" commit --quiet --allow-empty -m "Repository is initialized"
 
-# The default distribution ---------------------------------------------------
+# The default distribution installs seven packages ------------------------------
 
 cp "$repository/install-all.sh" "$control_base_project/install-all.sh"
 
@@ -77,7 +77,7 @@ if [ "$base_packages" != "$base_expected" ]; then
   exit 1
 fi
 
-# The Ruby distribution ------------------------------------------------------
+# The Ruby distribution installs those seven and the Ruby package ---------------
 
 (
   cd "$control_ruby_project"

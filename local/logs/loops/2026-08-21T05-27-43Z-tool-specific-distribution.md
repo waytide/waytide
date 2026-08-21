@@ -1,8 +1,8 @@
 # Loop record — Tool-Specific Distribution
 
 The feature that takes a tool-named package out of Waytide's default distribution and ships it
-through a distribution of its own. `code/ruby` is the case that exists. Ten cycles so far, three of
-them the named hinges and seven of them structural decisions the hinges surfaced. Nothing is built
+through a distribution of its own. `code/ruby` is the case that exists. Fourteen cycles, five of them
+the named hinges and nine of them structural decisions the hinges surfaced. Nothing is built
 in this repository yet. The fifth cycle re-cradled the work, the sixth sent it out to another
 repository, and the ninth found that the repository is the Ruby package rather than a
 distribution.
@@ -131,19 +131,62 @@ The loop waits at every hinge.
 - **Decision** — `waytide/tools-ruby-lang`. Nothing in any script changes, and the repository was
   an hour old with no consumers, so the rename cost only the raw URLs in its own files.
 
+## Cycle 11 — The manufactured hinge, and its withdrawal
+
+- **Hinge** — how `install.sh`'s hardcoded `base_url` becomes reachable by a test. Three
+  candidates were put: a second override variable, deriving it from `WAYTIDE_ORIGIN`, and a path
+  argument.
+- **Chat** — the engineer asked why the URL needs to vary. It does not. The test's problem is
+  ordering: it asserts a state `master` does not hold yet, and that resolves when the work merges.
+  An overridden URL would have tested an actuation nobody runs, and the `refresh-packages.sh`
+  precedent I cited is a different case — that script reaches many repositories from one composed
+  base, and this one reaches a single file at a known address.
+- **Decision** — the hinge is withdrawn. No candidate was taken.
+
+## Cycle 12 — What becomes of the test
+
+- **Hinge** — given the cradle cannot run until this is published, whether the test exists here at
+  all.
+- **Options** — write it now and first run it after the publish. No test in this repository, the
+  implementation hinge degenerate. Test the composite alone, dropping the both-sets cradle.
+- **Decision** — write it now, exercising the real addresses, failing until published.
+
+## Cycle 13 — Implementation
+
+- **Hinge** — the fourth of the five, reached at last. The behavior already existed: the migration
+  ran ahead of its driving test, so there was nothing to bring into being.
+- **What the run found** — two defects, both in the test rather than the implementation, which is
+  where the-design-of-a-test-waits-at-the-hinges-including-coverage says awkwardness goes. A bare
+  clone copies every branch, so each control repository's `master` was this repository's `master`
+  and the installer fetched the whole composite under a package's name. And a bare `test` under
+  `set -e` reported nothing at all on failure.
+- **Decision** — the split is pushed into an empty bare repository as its `master`, and each
+  assertion prints what it found against what it expected.
+
+## Cycle 14 — Naming
+
+- **Hinge** — the fifth, settled at the close. There is no `context` in a shell test, so what names
+  an outcome is its section.
+- **Options** — by what each half installs, by the actuation each runs, or by what a failure would
+  mean.
+- **Decision** — by what each installs. *The default distribution installs seven packages*, and
+  *The Ruby distribution installs those seven and the Ruby package*.
+
 ## Outcome
 
-**`waytide/tools-ruby-lang` exists, is public, and carries `install.sh`, `README.md`, and a
-`LICENSE`.** Its raw install URL resolves, and `install.sh` places the package at
-`waytide/system/tools/ruby-lang/` from that repository.
+**The five hinges are complete.** `waytide/tools-ruby-lang` holds the Ruby package and its two
+installers. The composite installs seven packages, `system/code/` is gone, and the README,
+CONTRIBUTING, seven rule files and four scripts are reconciled. The test is written and one of its
+two outcomes passes.
 
-**The rules have not moved yet.** The migration record is written and no increment has run, so
-`system/code/ruby/` is still here and still authoritative.
+**The other fails, and is meant to.** It reads the published `master`, which still carries the
+eight-package installer. It first passes after this work merges and the packages are republished.
 
-**SSH to GitHub was rate-limited throughout cycles 6 and 10**, after the eight-package publish
-earlier in the session. The repository was created, cloned, renamed, and pushed over HTTPS — the
-fallback kept when the addresses moved to SSH.
+**Increment 8 of the migration is not done.** `waytide/code-ruby` still holds what the composite
+last published to it and is still installable. Archiving it waits for the publish, which waits for
+`master`.
 
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 11:09:44 PM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:10:48 AM PT

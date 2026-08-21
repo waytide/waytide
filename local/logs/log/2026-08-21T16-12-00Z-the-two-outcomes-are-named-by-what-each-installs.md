@@ -1,0 +1,1 @@
+# The distribution test's two outcomes are named by what each half installs rather than by the actuation each runs or by what a failure would mean — the naming hinge, settled at the feature's close, where a shell test has a section rather than a `context`

@@ -39,6 +39,20 @@ nothing to predict and nothing to compare a prediction against. See the implemen
   in the words the attended-or-unattended-is-chosen-at-the-start rule fixes. The engineer selected
   attended, which is the default. The loop waits at every hinge.
 
+## Where it stands
+
+**The five hinges are complete and the work is built.** What it reaches, below, was named at the
+start from the idea's own account. What actually changed is in the migration record *The Ruby
+package moves to `tools-ruby-lang`* and in the loop record's fourteen cycles.
+
+**The intent widened during the work, and the record says so rather than being rewritten.** It was
+written as a package leaving the default distribution. On 2026-08-21 the engineer directed that the
+Ruby rules leave the composite entirely and that the `tool/` idea be taken on here, so the package
+also moved repositories and changed its installed path to `tools/ruby-lang`.
+
+**No `**State:**` line yet.** The work is not concluded: increment 8 of the migration and the
+publish both wait for `master`.
+
 ## What this reaches
 
 Named at the start from the idea's own account, and not a plan. What is actually changed is
@@ -58,3 +72,4 @@ specifics and each is written to work without it.
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:27:43 PM PT
 Changed by Scott Bellware on Thu Aug 20 2026 at 10:58:07 PM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:11:01 AM PT
