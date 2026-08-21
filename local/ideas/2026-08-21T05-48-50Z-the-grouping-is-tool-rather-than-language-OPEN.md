@@ -41,8 +41,9 @@ names what varies between members, which is what a grouping directory is for.
   composite renames each took.
 - **`install-all.sh`**, whose `add code/ruby code-ruby` line carries both names.
 - **The root `README.md`** and `system/code/ruby/README.md`.
-- **The Language-Specific Distribution feature**, in flight on
-  `feature/language-specific-distribution`. Its subject name takes the axis this idea rejects.
+- **The Tool-Specific Distribution feature**, in progress on `feature/tool-specific-distribution`.
+  **2026-08-21 — it was started as Language-Specific Distribution and renamed the same day**, on
+  this idea's axis. So the feature carries the axis while the grouping directory does not yet.
 
 ## Its relationship to the distribution idea
 
@@ -63,8 +64,10 @@ member of the group would be.
   groupings is two things to place a new package into.
 - **Whether the published `code-ruby` repository is renamed, redirected, or left.** A consuming
   project installed it under that name, and a rename reaches every one of them.
-- **Whether the in-flight feature is renamed**, or concluded under its current subject and the
-  axis change taken separately.
+- ~~**Whether the feature in progress is renamed**, or concluded under its current subject and the
+  axis change taken separately.~~ **2026-08-21 — settled. It was renamed**, so the axis is adopted
+  in a feature's name before it is adopted in a directory. What the three remaining questions
+  decide is whether the directory follows.
 
 Related:
 
@@ -77,3 +80,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:48:50 PM PT
+Changed by Scott Bellware on Thu Aug 20 2026 at 11:00:46 PM PT
