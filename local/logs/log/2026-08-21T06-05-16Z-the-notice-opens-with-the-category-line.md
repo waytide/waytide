@@ -1,0 +1,1 @@
+# Opening the session-start notice with `Waytide: Human-Agent Relations` is recorded as an idea, Open because the argument against it is the system's own — a line that never changes is read once and then stops being read, which is the reason the mark and the deferred queue each sit somewhere other than the notice
