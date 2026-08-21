@@ -1,0 +1,1 @@
+# The Tool-Specific Distribution feature is Completed, merged into `master` — the Ruby package is authored in `waytide/tools-ruby-lang` and installs at `waytide/system/tools/ruby-lang/`, the composite installs seven packages, and the record travels with the merge so this entry is a summary marker rather than the substance

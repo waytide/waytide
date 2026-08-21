@@ -16,6 +16,7 @@ on the mechanism rather than the direction: whether the distribution is a packag
 script beside `install-all.sh`, or a repository carrying only an installer. **Those are hinges,
 and they are decided in the loop.**
 
+- **State:** Completed
 - **Tags:** [feature]
 
 ## Setup
@@ -50,8 +51,12 @@ written as a package leaving the default distribution. On 2026-08-21 the enginee
 Ruby rules leave the composite entirely and that the `tool/` idea be taken on here, so the package
 also moved repositories and changed its installed path to `tools/ruby-lang`.
 
-**No `**State:**` line yet.** The work is not concluded: increment 8 of the migration and the
-publish both wait for `master`.
+**2026-08-21 — Completed.** The branch merged into `master`, which is a feature's ordinary
+conclusion. `master` was merged in first and the test run against the combined state, so the
+combination was exercised before `master` saw it.
+
+**One migration increment is outstanding at the conclusion**, and that is deliberate rather than
+an oversight. The migration record's ordering puts it last, and it is the engineer's to run.
 
 ## What this reaches
 
@@ -73,3 +78,4 @@ specifics and each is written to work without it.
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:27:43 PM PT
 Changed by Scott Bellware on Thu Aug 20 2026 at 10:58:07 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 9:11:01 AM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:19:51 AM PT
