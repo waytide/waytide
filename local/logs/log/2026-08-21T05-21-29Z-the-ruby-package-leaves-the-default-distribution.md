@@ -1,0 +1,1 @@
+# Removing `code/ruby` from the default distribution, and shipping it through a `waytide-ruby` that installs it along with the rest of Waytide, is recorded as an idea — Open rather than Active, because what a distribution is and whether `waytide-ruby` is a package, a script, or a repository are each undecided
