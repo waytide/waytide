@@ -105,7 +105,6 @@ add() {
 add foundation          foundation
 add language            language
 add testing             testing
-add code/ruby           code-ruby
 add git                 git
 add versioning          versioning
 add design-by-efferent  design-by-efferent

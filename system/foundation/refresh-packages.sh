@@ -49,7 +49,7 @@ fi
 
 # A package is a directory carrying a README.md — the same test the session-start
 # notice uses.
-# Depth 2 finds a top-level package, depth 3 a grouped one such as code/ruby.
+# Depth 2 finds a top-level package, depth 3 a grouped one such as tools/ruby-lang.
 installed=$(
   cd waytide/system &&
     find . -mindepth 2 -maxdepth 3 -name README.md |
@@ -91,7 +91,7 @@ unchanged=
 failed=
 
 for package in $packages; do
-  # code/ruby is nested here and publishes to the flat repository name code-ruby.
+  # tools/ruby-lang is nested and publishes to the flat repository name tools-ruby-lang.
   repository=$(printf '%s' "$package" | tr '/' '-')
   url="$origin/$repository.git"
   prefix="waytide/system/$package"

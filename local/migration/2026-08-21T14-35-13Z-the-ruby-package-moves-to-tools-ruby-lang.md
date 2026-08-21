@@ -70,8 +70,32 @@ left to be inferred.
 
 ## Record of what happened
 
-To be filled in as the increments run.
+**2026-08-21 — increments 1 through 7 ran. Increment 8 has not.**
+
+- **1 and 2 ran together**, and the destination README merged with the one already there. The 12
+  rule files came across unchanged: they reference each other by name rather than by path, so
+  nothing in them needed correcting.
+- **2 departed from the plan.** The plan said `install-dependencies.sh` would be rewritten to
+  install the seven. It names none of them. Every other one names a few, and writing all seven out
+  would put the package set in a second place — which is the defect this feature exists against. It
+  fetches and runs the composite's installer instead, so the set is asserted once, upstream.
+- **3 was already done**, by the repository rename that preceded the migration.
+- **4 and 5 ran.** `install-all.sh` installs seven, and `system/code/` is removed.
+- **6 and 7 ran together.** The counts, the package list, and the dependency graph in the root
+  README; the two `CONTRIBUTING.md` passages, one of which now states the authored-elsewhere
+  exception outright; seven rule files that named the package; and the four scripts whose comments
+  used `code/ruby` as their worked example of a grouped package.
+- **A repository name changed under the plan.** The record was written naming `waytide-ruby`. The
+  installed location was then settled as `tools/ruby-lang`, and the repository renamed
+  `tools-ruby-lang` so that `refresh-packages.sh` still derives a repository from a directory by
+  flattening the path. The record was repointed before increment 1 ran.
+
+**Increment 8 waits, and so does the publish.** `waytide/code-ruby` still holds what the composite
+last published to it, and is still installable. The local rule a-package-is-published-from-master
+holds the publish until this work reaches `master`, and archiving before that would strand anyone
+mid-move — which is why the ordering put it last.
 
 ---
 
 Authored by Scott Bellware on Fri Aug 21 2026 at 7:35:13 AM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:51 AM PT

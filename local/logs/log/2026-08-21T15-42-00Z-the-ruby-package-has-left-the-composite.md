@@ -1,0 +1,1 @@
+# Increments 1 through 7 of the Ruby package migration are done — the rules are in `waytide/tools-ruby-lang`, `system/code/` is removed, the default distribution is seven packages, and the README, CONTRIBUTING, seven rule files and four scripts are reconciled; increment 8, archiving `waytide/code-ruby`, waits with the publish for `master`
