@@ -13,7 +13,7 @@ Waytide offers a project four things: conventions that bind, work that records i
 - **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
 - **Files, not memory.** Committed with the code. They are reviewable, diffable, and versioned. Project context lives in committed artifacts. Agent memory store is forbidden to stand in for committed artifacts.
 - Extensible locally. local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
-- **Installed as packages.** A project takes packages, rather than single rules. `git subtree add` installs; refresh-packages.sh pulls and reports which rule files changed.
+- **Installed as packages.** A consuming project installs packages, rather than single rules, with tools for installing packages, refreshing them, and reporting on changes.
 
 ## A design method with the engineer at its decision points
 
