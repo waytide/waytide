@@ -83,7 +83,7 @@ The file is committed as an executable, but `curl` transfers content and not fil
 - **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the agent announces.
 - **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen: semver, optionally prefixed by a product generation number. Not how a package is built or published.
 - **[journal](https://github.com/waytide/journal)**. The one record the engineer writes rather than the agent. Read at session start, and followed in nothing. Contributes the `journal/` artifact directory.
-- **[tools/ruby-lang](https://github.com/waytide/tools-ruby-lang)**. Prescriptive Ruby style, the suite entry point, and gem release mechanics. **Authored in its own repository rather than here**, and its dependency is every package above, so installing it installs all of Waytide.
+- **[tools/ruby-lang](https://github.com/waytide/waytide-ruby)**. Prescriptive Ruby style, the suite entry point, and gem release mechanics. **Authored in its own repository rather than here**, and its dependency is every package above, so installing it installs all of Waytide.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 

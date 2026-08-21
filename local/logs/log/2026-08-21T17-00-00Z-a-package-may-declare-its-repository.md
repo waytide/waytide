@@ -1,0 +1,1 @@
+# A package may declare its repository on a `**Repository:**` line in its README, which `refresh-packages.sh` reads instead of flattening the installed path — added so the Ruby package can be published from the colloquial `waytide/waytide-ruby` while installing at `waytide/system/tools/ruby-lang/`; every other package carries no such line and the derivation is unchanged

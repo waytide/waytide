@@ -255,6 +255,10 @@ installed, one command refreshes every installed package:
 waytide/system/foundation/refresh-packages.sh
 ```
 
+**A package's repository is its installed path with the slashes flattened to dashes**, so a nested `group/name` publishes to `group-name`. **A package may declare a different one**, on a `**Repository:**` line in its `README.md` — the plain text data attribute form the rest of the system reads. `refresh-packages.sh` reads that line where it is present and derives the name where it is not, which is every package but one.
+
+The declaration exists because a repository name is met by people as well as by scripts. The Ruby package installs at `waytide/system/tools/ruby-lang/` and is published from `waytide/waytide-ruby`, which the flattening does not produce.
+
 It reports each package that moved and the rule files that changed in it. Those
 files are binding, and a silent refresh would be a change of behavior nobody saw. Name
 packages to refresh only those (`… refresh-packages.sh testing git`). Set
@@ -306,3 +310,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:36:21 AM PT

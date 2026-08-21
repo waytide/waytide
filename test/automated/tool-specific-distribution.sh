@@ -81,7 +81,7 @@ fi
 
 (
   cd "$control_ruby_project"
-  curl -sSfL -O https://raw.githubusercontent.com/waytide/tools-ruby-lang/master/install.sh
+  curl -sSfL -O https://raw.githubusercontent.com/waytide/waytide-ruby/master/install.sh
   WAYTIDE_ORIGIN=https://github.com/waytide sh install.sh >/dev/null 2>&1
 )
 

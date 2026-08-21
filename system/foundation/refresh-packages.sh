@@ -91,8 +91,25 @@ unchanged=
 failed=
 
 for package in $packages; do
-  # tools/ruby-lang is nested and publishes to the flat repository name tools-ruby-lang.
-  repository=$(printf '%s' "$package" | tr '/' '-')
+  # A package's repository is its installed path with the slashes flattened to dashes, so a
+  # nested package/name publishes to package-name. That is the rule, and it holds unless the
+  # package says otherwise.
+  #
+  # A package says otherwise with a "**Repository:** <name>" line in its README — the plain
+  # text data attribute form the rest of the system reads (see foundation's vocabulary). It
+  # exists because a repository name is met by people as well as by scripts, and a project may
+  # want a colloquial one that its path does not produce. Where the line is absent, which is
+  # the ordinary case, the name is derived.
+  repository=$(
+    sed -n 's|^[[:space:]]*\*\*Repository:\*\*[[:space:]]*\([A-Za-z0-9._-]*\).*|\1|p' \
+      "waytide/system/$package/README.md" 2>/dev/null |
+      head -1
+  )
+
+  if [ -z "$repository" ]; then
+    repository=$(printf '%s' "$package" | tr '/' '-')
+  fi
+
   url="$origin/$repository.git"
   prefix="waytide/system/$package"
 

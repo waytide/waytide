@@ -102,6 +102,16 @@ left to be inferred.
   reach it either, since it discovers packages by their `README.md` under `system/` and there is
   no `system/code/` any more.
 
+**2026-08-21, after the migration closed — the repository is renamed `waytide-ruby`.** The
+installed path is unchanged. The engineer wanted the colloquial name, which the flattening rule
+does not produce from `tools/ruby-lang`.
+
+So a package may now **declare** its repository, on a `**Repository:**` line in its `README.md`,
+and `refresh-packages.sh` reads that instead of deriving the name. Where the line is absent, which
+is every other package, the derivation is unchanged. GitHub redirects the freed name, so nothing
+would have broken today — depending on that would have rested the naming rule on a redirect until
+the name was reused.
+
 **The test's second outcome passes now.** It read the published `master` and found the seven
 packages plus `tools/ruby-lang`. It had failed since it was written, on the ordering this record
 describes.
@@ -111,3 +121,4 @@ describes.
 Authored by Scott Bellware on Fri Aug 21 2026 at 7:35:13 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:51 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 9:27:01 AM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 9:36:21 AM PT
