@@ -1,0 +1,1 @@
+# That the grouping directory names a **tool** rather than a language — `tool/ruby` rather than the current `code/ruby` — is recorded as an idea, Open because what `tool` covers, whether `code/` is renamed or `tool/` added beside it, and what becomes of the published `code-ruby` repository are each undecided; a path change forces a non-fast-forward publish
