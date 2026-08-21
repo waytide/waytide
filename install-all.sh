@@ -15,6 +15,13 @@
 # inside a package by `git subtree`, which preserves the mode, and is invoked as itself.
 set -e
 
+# The origin the packages are fetched from. Override it to work over HTTPS where no SSH
+# key is registered:
+#
+#   WAYTIDE_ORIGIN=https://github.com/waytide <this script>
+#
+origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+
 # Waytide is installed with `git subtree`, so there has to be a repository to install into.
 # Rather than refusing outright, offer to make one — a developer running this in a directory
 # they mean to be a project is one `git init` away from what the script needs, and that is a
@@ -86,7 +93,7 @@ fi
 
 add() {
   prefix="waytide/system/$1"
-  repo="https://github.com/waytide/$2.git"
+  repo="$origin/$2.git"
 
   if [ ! -d "$prefix" ]; then
     git subtree add --prefix "$prefix" "$repo" master --squash

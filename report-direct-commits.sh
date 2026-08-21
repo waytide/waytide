@@ -16,6 +16,13 @@
 
 set -e
 
+# The origin the packages are fetched from. Override it to work over HTTPS where no SSH
+# key is registered:
+#
+#   WAYTIDE_ORIGIN=https://github.com/waytide <this script>
+#
+origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+
 if [ ! -d system/foundation ]; then
   echo "Run this from the composite repository root." >&2
   exit 1
@@ -41,7 +48,7 @@ found=0
 
 for package in $packages; do
   repository=$(printf '%s' "$package" | tr '/' '-')
-  url="https://github.com/waytide/$repository.git"
+  url="$origin/$repository.git"
 
   head=$(git ls-remote "$url" master 2>/dev/null | cut -f1)
   if [ -z "$head" ]; then

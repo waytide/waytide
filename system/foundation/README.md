@@ -240,9 +240,11 @@ It also **renames `waytide/local/logs/work-sessions/` if your project still hold
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 
 ```
-git subtree add  --prefix waytide/system/foundation https://github.com/waytide/foundation.git master --squash
-git subtree pull --prefix waytide/system/foundation https://github.com/waytide/foundation.git master --squash
+git subtree add  --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree pull --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
 ```
+
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/foundation.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
 
 This package has no dependencies. (The composite `install-all.sh` installs every package and runs this same bootstrap for you.)
 
@@ -260,7 +262,7 @@ packages to refresh only those (`… refresh-packages.sh testing git`). Set
 can still be pulled directly:
 
 ```
-git subtree pull --prefix waytide/system/foundation https://github.com/waytide/foundation.git master --squash
+git subtree pull --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
 ```
 
 

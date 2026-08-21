@@ -61,9 +61,9 @@ deterministic split fast-forwards — guard for it before pushing:
 git subtree split --prefix=system/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
-  "$(git ls-remote https://github.com/waytide/testing.git master | cut -f1)" \
+  "$(git ls-remote git@github.com:waytide/testing.git master | cut -f1)" \
   publish-tmp && \
-git push https://github.com/waytide/testing.git publish-tmp:master
+git push git@github.com:waytide/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -79,7 +79,7 @@ gh repo create waytide/<package> --public \
   -d "Waytide <package>. <What it governs>. By the Eventide Project."
 
 git subtree split --prefix=system/<package> -b publish-tmp
-git push https://github.com/waytide/<package>.git publish-tmp:master
+git push git@github.com:waytide/<package>.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -126,7 +126,7 @@ to lose it. Two ways to capture it, preferred first:
    `waytide/system/testing/`, then:
 
    ```
-   git subtree push --prefix waytide/system/testing https://github.com/waytide/testing.git master
+   git subtree push --prefix waytide/system/testing git@github.com:waytide/testing.git master
    ```
 
    This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and the change still has to be brought into the composite repo by hand. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever
