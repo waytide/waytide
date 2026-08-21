@@ -72,14 +72,34 @@ permanent statement of identity is a second thing that stops being read.
 - **Whether the status line changes with it**, or keeps its one-word segment.
 - **Whether a blank line follows it**, which would make the notice four parts rather than three.
 
+## 2026-08-21 — the other surface took the pair
+
+**The engineer instructed that the rule read's head carry the category line and the description**,
+and the initialization-rule was changed that day. It now prints `Waytide: Human-Agent Relations`,
+the italicized `Agent harness and engineer ally` beneath it, then the copyright and the license. The
+copyright line dropped its own leading `Waytide —`, which the title above it now carries.
+
+**That surface answers the permanent-line argument where the notice does not.** It already printed
+a copyright and a license that never change, once per session, at the one moment the system is
+announced as itself. The notice reports what is installed and what is open, and its content moves,
+which is what has kept it worth reading.
+
+**So this proposal is not carried out by that change, and one of its arguments is now stronger.**
+The identity pair is stated once per session already. A second statement of it, on the surface
+that renders before every session and reports moving facts, is the second permanent thing this
+idea's own argument warns about. What stays open is unchanged: whether the notice takes it at all,
+whether it would replace the install line's leading `Waytide`, and what the status line does.
+
 Related:
 
 - the announce-waytide-at-session-start rule — the notice's shape, why it carries no mark, and the
   permanent-line argument
 - the print-the-deferred-queue-after-the-rule-read rule — where that argument is stated again
-- the initialization-rule — the agent-printed head of the read, which is closed to additions
+- the initialization-rule — the agent-printed head of the read, which carries the pair as of
+  2026-08-21
 - *A Generalized Description of Waytide* — where the category line is settled
 
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 11:05:16 PM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT

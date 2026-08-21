@@ -58,9 +58,25 @@ drift looks like rather than a boundary being observed.
 **What is not settled:** whether one word governs; whether *human* and *developer* mark a real
 distinction worth stating; and what becomes of *engineer*, which nothing appears to defend.
 
+## 2026-08-21 — the counts are stale and *engineer* is no longer the straggler
+
+**The `language` vocabulary reserves `engineer` and substitutes it in place of *developer*.** That
+entry postdates this record, so the table above counts a corpus that has since moved. *Engineer*
+was nine occurrences and residue when this was written. It is now the reserved word for the person
+the work is done with and for.
+
+**The formulation moved with it the same day.** *An agent harness and a human ally* became *an
+agent harness and an engineer ally*, restoring the form recorded on 2026-08-03 before that day's
+revision. So the phrase that surfaced this record no longer reads the way it did.
+
+**None of the three questions above is thereby settled.** DBE still says **human** throughout, and
+its use is a defined term paired with **AI**. What has changed is that *developer* is now the word
+nothing defends, where *engineer* was. The counts want re-running before this is promoted.
+
 ---
 
 Authored by Scott Bellware on Sun Aug 2 2026 at 7:44:20 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT

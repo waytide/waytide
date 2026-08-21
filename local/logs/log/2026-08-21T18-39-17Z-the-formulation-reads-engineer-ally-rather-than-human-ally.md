@@ -1,0 +1,1 @@
+# The formulation reads "an agent harness and an engineer ally", reversing the 2026-08-03 revision to "human ally" — the language vocabulary has since reserved engineer for the person the work is done with and for
