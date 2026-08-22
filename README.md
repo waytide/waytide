@@ -16,7 +16,7 @@ Waytide offers a project four things: conventions that bind, work that records i
 - **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
 - **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing packages, refreshing them, and reporting on changes.
 
-## A design method with the engineer at its decision points
+## A design method with the engineer steering at decision points
 
 - **Design By Efferent.** The actuation written before any implementation, so the interface is shaped from the use site. An updated TDD variant with accommodations for AI.
 - **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar — unless you want to. Running the red, green, refactor cycle is a choice the implementation checkpoint offers, not a ritual it performs.
