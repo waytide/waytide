@@ -18,7 +18,7 @@ Waytide offers a project four things: conventions that bind, work that records i
 
 ## A design method with the engineer steering at decision points
 
-- **Design By Efferent.** The actuation written before any implementation, so the interface is shaped from the use site. An updated TDD variant with accommodations for AI.
+- **Design By Efferent.** The call written before any implementation, so the interface is shaped from the use site. An updated TDD variant with accommodations for AI.
 - **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar — unless you want to. Running the red, green, refactor cycle is a choice the implementation checkpoint offers, not a ritual it performs.
 - **Five checkpoints:** actuation, test, setup, implementation, and final naming and polish.
 - **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go in their own direction, rather than just rubber stamping the agent.
