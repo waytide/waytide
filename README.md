@@ -59,21 +59,21 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 Install all of Waytide's packages at once with:
 
 ```
-curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
-sh install-all.sh
+curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
+sh install
 ```
 
 Or fetch it and run it from your project root:
 
-[`install-all.sh`](install-all.sh), which installs and refreshes every package.
+[`install`](install), which installs and refreshes packages. With no arguments it installs the default set. `sh install content` installs a package set, and `sh install foundation git` installs packages by name.
 
 ### Warning
 
 Execute the install script using `sh`:
 
-`sh install-all.sh`
+`sh install`
 
-The script fetches the packages over SSH. Where no SSH key is registered, run it as `WAYTIDE_ORIGIN=https://github.com/waytide sh install-all.sh`.
+The script fetches the packages over SSH. Where no SSH key is registered, run it as `WAYTIDE_ORIGIN=https://github.com/waytide sh install`.
 
 The file is committed as an executable, but `curl` transfers content and not file metadata. The copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other script reaches a project by `git subtree`, which does preserve the mode.
 

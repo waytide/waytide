@@ -1,7 +1,12 @@
 # A shell script is self-executable — the executable bit is set and the file opens with a shebang
 
-Every `.sh` file in this repository is **runnable as itself** — `./report-direct-commits.sh`,
-never `sh report-direct-commits.sh`. Two things together make it so, and each is required:
+Every shell script in this repository is **runnable as itself** — `./report-direct-commits.sh`,
+never `sh report-direct-commits.sh`.
+
+**A script is not required to carry `.sh`, and one does not.** `install` dropped it on
+2026-08-23. A script is a command, and `./install` reads as one where `./install.sh` reads as a
+file being run. What this rule asks for is the bit and the shebang, and neither depends on the
+name. Where the text below says `.sh`, read it as *shell script*. Two things together make it so, and each is required:
 the bit and the shebang, below. **One script is documented with an `sh` prefix even so**, because
 the copy an engineer runs is not the file this repository holds. The delivery section states when
 that applies and why the bit is set on it regardless.
@@ -18,7 +23,7 @@ covered alike:
 
 - **The tools at the root** — `report-direct-commits.sh` and
   `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains
-  Waytide, in this repository. **`install-all.sh` sits beside them and is not one**: a consuming
+  Waytide, in this repository. **`install` sits beside them and is not one**: a consuming
   project fetches it, which is what makes it the one script here an engineer runs from somewhere
   other than a clone of this repository. That is the whole reason the delivery section below
   exists.
@@ -84,7 +89,7 @@ wiring breaks.
 
 ## The bit is always set. The usage line follows how the script is delivered
 
-**Every `.sh` file here carries the bit, without exception.** A script fetched with `curl` is
+**Every shell script here carries the bit, without exception.** A script fetched with `curl` is
 committed `100755` exactly like the rest, and nothing below relaxes that. What varies is only the
 **usage line**, and it varies because the bit does not survive every delivery.
 
@@ -97,9 +102,9 @@ committed `100755` exactly like the rest, and nothing below relaxes that. What v
   the copy is **never** executable, whatever the original's mode. A script delivered this way takes
   a usage line of **`sh name.sh`**, in its own header and everywhere its install is documented.
 
-**`install-all.sh` is the only script in that second case**, being the one a project fetches before
-it has anything installed to deliver it. Its usage line is `sh install-all.sh`, and the root
-`README.md` matches.
+**`install` is the only script in that second case**, being the one a project fetches before it
+has anything installed to deliver it. Its usage line is `sh install`, and the root `README.md`
+matches. It was `install-all.sh` until 2026-08-23.
 
 **Why the bit stays set on a script nobody can receive it from.** Two reasons. It is correct in
 this repository, where the file is cloned like any other and is run as itself by whoever maintains
@@ -125,9 +130,10 @@ not one yet. It is a file that a reader has to know something extra about before
 it. Committing the bit is what makes that knowledge unnecessary for everyone who clones, rather
 than something each person reconstructs. The cost is remembering `chmod +x` once, at creation.
 
-**How to apply:** when adding a `.sh` file, open it with `#!/bin/sh` and set its executable bit
+**How to apply:** when adding a shell script, open it with `#!/bin/sh` and set its executable bit
 before committing it. Confirm with `git ls-files -s` that the mode is `100755`. Set the bit on
-every script, including one fetched with `curl`.
+every script, including one fetched with `curl`. A `.sh` extension is optional and its absence
+changes nothing this rule asks for.
 
 Give it a usage line in its header, naming the command that runs it. Write the command from the
 directory it is typed in. Write `./name.sh` for a script at this repository's root. Write the path form
@@ -158,3 +164,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:51:09 AM PT
