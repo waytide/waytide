@@ -29,14 +29,19 @@ file is opened. See the a-project-declares-its-package-set rule for where the re
 it carries.
 
 ```
-package set: content
 *design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
 *tools/ruby-lang*, **versioning**
+package set: content
 (5 active of 8 installed)
 ```
 
-**The three lines carry no gap between them.** They are one stanza: what the set is, what the
-project holds, and how much of it is in force.
+**The three lines carry no gap between them.** They are one stanza: what the project holds, what
+the set is called, and how much of it is in force.
+
+**The list leads and the set's name follows it.** The packages are what the engineer is looking
+for and the name is what accounts for them, so the name reads as a caption under the thing it
+explains rather than as a heading over a list nobody has seen yet. It sits above the count for the
+same reason: the count is arithmetic on the list and closes the stanza.
 
 **The set is named in the engineer's own wording** — `package set: content` — rather than in a
 restatement of it. It is what they type to declare one, and the line that reports it says the same
@@ -201,3 +206,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:44:10 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:49:30 AM PT

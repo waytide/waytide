@@ -1,0 +1,1 @@
+# The package set stanza is reordered so the list of packages leads, the set's name follows it as a caption, and the count closes it — the name accounting for a list the reader has already seen rather than heading one they have not
