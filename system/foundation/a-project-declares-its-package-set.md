@@ -65,7 +65,7 @@ harness displays as plain text, and the startup content is the agent's own text,
 markdown — so the emphasis below is available in the one place and not in the other.
 
 **Every installed package is listed and none is hidden.** The active ones are bold and the
-deactivated ones are italic, with a legend following: **on** in bold and *off* in italic. The
+deactivated ones are italic, and a count line follows: `(5 active of 8 installed)`. The
 hidden-record rule does not reach this, because nothing here is withheld.
 
 **Where no set is declared, nothing about a set is printed.** No line saying there is none.
@@ -88,7 +88,8 @@ agent's in-the-moment judgment about what to bother with.
 
 **How to apply:** at session start, read the most recent `*-package-set.md` under
 `waytide/local/`. Read every installed package's rules as always, and follow only the active ones.
-Print the packages after the category line, active bold and deactivated italic, with the legend.
+Print the packages after the category line, active bold and deactivated italic, with the count
+line under them.
 Where the engineer declares a set during a session, write the record, then say that a restart is
 needed before the deactivated rules stop applying.
 
@@ -102,3 +103,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 3:04:00 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:36:20 AM PT

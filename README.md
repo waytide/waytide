@@ -114,7 +114,7 @@ The most recent such record is the one that holds, and declaring again writes a 
 
 **A set declared during a session takes effect at the next one.** The rules are already in the agent's context by then and there is no unread, so the agent says that a restart is needed rather than letting the declaration look as though it did nothing.
 
-The whole list is printed at the head of the session, under the title — the active packages in bold and the deactivated ones in italic, with a two-word legend under them.
+The whole list is printed at the head of the session, under the title — the active packages in bold and the deactivated ones in italic, with a count of how many of the installed packages are active. The formulation *Agent harness and ally* closes the load, after every file is read.
 
 ## Packages
 

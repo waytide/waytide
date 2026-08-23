@@ -1,19 +1,24 @@
 # Initialization
 
-Print the things below, verbatim and in this order. Four are always printed and the fifth is
+Print the things below, verbatim and in this order. Four are always printed and one more is
 printed only where the project has declared a package set. Print them **once per session, at the
 head of the response that carries the rule read**. They go above any account of the read, and
 above every tool call the read makes.
 
+**One line is printed at the other end** — the formulation, which closes the load rather than
+opening it. It is the last section of this rule.
+
 **This rule file is opened ahead of every other**, which is what puts them in hand.
 
-First the title and the description, on consecutive lines with no gap between them. The
-description is italicized and the title is not:
+First the title, on its own:
 
 ```
 Waytide: Human-Agent Relations
-*Agent harness and ally*
 ```
+
+**It stands alone.** The formulation sat under it until 2026-08-23 and now closes the load. A
+title with nothing under it is a title, and what the system is gets said once the system is
+actually there.
 
 **Then the package set, where one is declared**, after one blank line. It goes here rather than
 lower because it says what this session is running, and that belongs beside what the system is
@@ -26,25 +31,30 @@ it carries.
 
 ```
 package set: content
-
-**design-by-efferent**, **foundation**, **git**, **journal**, **language**, *testing*,
-**versioning**
-
-**on**  *off*
+*design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
+*tools/ruby-lang*, **versioning**
+(5 active of 8 installed)
 ```
+
+**The three lines carry no gap between them.** They are one stanza: what the set is, what the
+project holds, and how much of it is in force.
 
 **The set is named in the engineer's own wording** — `package set: content` — rather than in a
 restatement of it. It is what they type to declare one, and the line that reports it says the same
 thing back.
 
-**Every installed package is listed, active in bold and deactivated in italic**, in the order the
-notice lists them. None is omitted and none is replaced by a count: the engineer is being told what
-the project holds and which half of it is in force, and a count of the deactivated ones would
-answer neither question.
+**Every installed package is listed, in the order the session-start notice lists them.** The
+active ones are bold and the deactivated ones are italic. None is omitted and none is replaced by
+a count: the engineer is being told what the project holds and which half of it is in force.
 
-**The legend follows on its own line** and carries no words but the two. It is there because bold
-and italic are a convention the reader has not agreed to, and two words fix it at the cost of one
-line.
+**The count line says how many, which the emphasis does not.** Eight names in mixed weight are
+read one at a time, and the count is read at once. It also states the total, which nothing else on
+the line does.
+
+**A legend is not printed, and the count is why.** The list carried `**on**  *off*` under it
+briefly on 2026-08-23. With the count naming five active and exactly five names in bold, the
+convention discloses itself by arithmetic, and a legend would spend a line saying what the reader
+has already worked out.
 
 Then **one blank line**, then the copyright notice and the license line, on consecutive lines
 with no gap between them:
@@ -80,8 +90,8 @@ Then **one blank line**, then the block:
 ```
 
 **Each gap is one blank line, and a larger one is not available.** There are three — after the
-description, after the license line, and after the loading line — and a fourth after the package
-set where one is printed. With no gap at all a block reads
+title, after the license line, and after the loading line — and a fourth after the package set
+where one is printed. With no gap at all a block reads
 as a caption attached to what follows, or as its first line, so a separation is needed.
 
 A wider one cannot be
@@ -97,12 +107,13 @@ figure's spacing. The notice is ordinary prose and reads as prose. That differen
 
 **These are the whole of what is printed there.** Nothing else accompanies them — no greeting, no
 account of what is about to be read, no name for the block itself. The package set is the one item
-that is not always present, and its absence is the ordinary case rather than an omission.
+at the head that is not always present, and its absence is the ordinary case rather than an
+omission.
 
 **The loading line says what the wait is.** Everything printed here appears at the head of
 the response that then opens every rule file in every installed package. That is a wait an
-engineer sees. The line names it rather than leaving a pause unexplained. It is the only one of the
-four that is about the moment rather than about the work.
+engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at
+the head that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is
 read **after** they have, while the wait is happening.
@@ -121,11 +132,12 @@ announce-waytide-at-session-start rule permits unchanged. That rule requires the
 this file to carry no prose, so that *what this rule carries* comes first. The title is part of
 what this rule carries.
 
-**The title is the category line and the line under it is the formulation.**
+**The title is the category line, and the formulation is printed at the other end of the load.**
 *Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03, and *Agent
-harness and ally* is the formulation, first settled the same day and shortened on 2026-08-23. The root `README.md` leads
-with the two, and this display prints the same pair, so the system says one thing about itself
-wherever it is met.
+harness and ally* is the formulation, first settled the same day and shortened on 2026-08-23. The
+root `README.md` leads with the two together. This display prints the same pair with the load
+between them, so the system still says one thing about itself wherever it is met — it says the
+halves at two moments.
 
 **The formulation is not the generalized description**, which is the four-sentence paragraph
 *A Generalized Description of Waytide* settled on 2026-08-20. That paragraph says what Waytide
@@ -149,8 +161,10 @@ to see it. Three revisions of the qualifier are what argue it can be left to the
 surrounding prose had nothing to attach itself to. The title now stands above it and names the
 work outright, so the copyright line carries the owner and the year alone.
 
-**The description is italicized and the title is not.** The two are a name and a gloss on it,
-and the emphasis is what separates them where no blank line does. Italics are available here
+**The formulation is italicized and the title is not.** They were a name and a gloss on
+consecutive lines until 2026-08-23, and the emphasis was what separated them where no blank line
+did. Separated now by the whole load, the italics do different work: they mark the line as the
+system speaking about itself rather than reporting anything. Italics are available here
 because the agent's output is rendered as markdown. They are **not** available on the
 session-start notice, which the harness renders literally — the announce-waytide-at-session-start
 rule records what that cost when the notice's own markup reached the engineer as asterisks.
@@ -167,8 +181,8 @@ files into other people's repositories, the terms are the question a reader actu
 
 **The gap falls after the license line, never between it and the copyright.** It separates the
 whole statement, the copyright and the terms together, from what follows. It does not split the
-statement in two. The gap above the copyright does the same work for the title and the
-description, which are one statement in the same way.
+statement in two. The gap above the copyright does the same work for whatever precedes it, the
+title or the package set stanza.
 
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**.
 A copy of that file sits at this repository's root and in every package directory. So it travels
@@ -178,6 +192,27 @@ license is read. The printed line does not carry terms and is not the place to p
 **The year is the year of the notice, not of the session.** It is written into this rule and is
 printed verbatim, so it does not track the clock and is not computed. It changes when the rule
 changes.
+
+## The formulation closes the load
+
+**Print the formulation last, after every file is read.** It is the final thing printed in the
+load — after the rules, after the vocabularies, after the journal, and after the deferred queue.
+Nothing follows it, and the session waits for the engineer from there.
+
+```
+*Agent harness and ally*
+```
+
+**It sat under the title until 2026-08-23**, and the engineer moved it here. What the move buys is
+that the claim is made when it can be met. Printed at the head it introduces a system that has read
+nothing yet; printed at the close it is said by a system that is loaded and can act as what the
+line calls it.
+
+**It carries no gap rule of its own**, being the last line rather than a line between two others.
+It follows whatever the deferred queue leaves, separated as one block from another.
+
+**It is printed once**, like everything else this rule carries. A session that reads the rules
+again does not print it again.
 
 **Why:** the block stands for the system being brought into force in this session. So it is
 printed at the moment the rule files are opened, the one moment only the agent is present for.
@@ -216,3 +251,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
