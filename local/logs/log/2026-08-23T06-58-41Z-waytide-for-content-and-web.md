@@ -1,0 +1,1 @@
+# Waytide for content and web is recorded as an idea — conventions for content aimed at the web, education materials, slide decks and articles, with Hugo and Hextra as the first attempt — Open because whether content conventions and Hugo conventions are one package or two is undecided, and that is the same mixing the `tools/` rename corrected in `code/ruby`
