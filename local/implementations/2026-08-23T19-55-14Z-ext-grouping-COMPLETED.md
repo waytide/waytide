@@ -8,6 +8,7 @@ external — something Waytide did not write and does not govern — and an exte
 that adds to Waytide for one stack or one kind of project. The grouping holds both, and no
 narrower word does.
 
+- **State:** Completed
 - **Tags:** [feature]
 
 ## Setup
@@ -88,3 +89,4 @@ The migration record carries the order.
 ---
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:55:14 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:09:22 PM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:41:07 PM PT

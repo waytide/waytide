@@ -69,7 +69,13 @@ package, installed at `waytide/system/tools/ruby-lang` and moving to `waytide/sy
   distribution test cannot pass.
 - **The increments ran out of order, and the record says so rather than being rewritten.** The
   repair is a live break and did not wait for its place in the sequence.
+- **2026-08-23 — increment 3 is done.** `3f79edf..3852ac7` is on `waytide/waytide-ruby`'s
+  `master`. The 404 is closed and a fresh install places the package at
+  `waytide/system/ext/ruby-lang`. The suite is verified from this point: three files, 0 failed,
+  0 aborted.
+- **2026-08-23 — increment 1 is merged**, and increment 2 follows it.
 
 ---
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:09:22 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:31:50 PM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:41:07 PM PT
