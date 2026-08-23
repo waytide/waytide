@@ -33,7 +33,7 @@ It came out of the design practice the Eventide Project uses in its own work, ex
 • *The work records itself* — decisions, ideas, and implementations accumulate beside the code
 • *Design By Efferent* — the call written before any implementation, so the interface is shaped from the use site
 • *Gates, not ceremony* — the loop stops only where a decision is subtle and load-bearing
-• *Five checkpoints* — the call, the way to prove the call's effects, the conditions necessary to prove it, the implementation of it, and following clarifications and evolutions
+• *Five checkpoints* — the call, the way to prove the call's effects, the conditions necessary to prove it, the implementation of it, and following clarifications and evolutions. The agent provides reasonable assumptions and options, or the engineer takes the helm
 
 A Ruby project gets all of it in one command:
 
@@ -67,3 +67,4 @@ Authored by Scott Bellware on Sun Aug 23 2026 at 12:33:17 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:37:33 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:47:14 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:48:11 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 12:50:22 AM PT
