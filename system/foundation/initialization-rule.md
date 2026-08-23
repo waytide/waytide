@@ -24,6 +24,18 @@ lower because it says what this session is running, and that belongs beside what
 called rather than after the license. Where no set is declared, nothing about a set is printed and
 this item is absent entirely — no line saying there is none.
 
+**The declared set `default` prints nothing, where nothing is deactivated.** `default` is the set a
+project gets by asking for no set at all, so a stanza reporting it says what the absence of a
+stanza already says, at the cost of four lines in a display printed every session.
+
+**It prints where `default` leaves something deactivated.** A project can hold a package that
+`default` does not name — `tools/ruby-lang` is one — and there the set is not the whole of what is
+installed. The condition is that nothing is off, not that the name is `default`, and a suppressed
+stanza must never be the reason a deactivated package goes unmentioned.
+
+**A named set other than `default` prints even where nothing is deactivated.** Its name is
+information about the project that the count cannot supply.
+
 The declaration is supplied by the read instruction, which is what reaches the agent before any
 file is opened. See the a-project-declares-its-package-set rule for where the record lives and what
 it carries.
@@ -207,3 +219,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:44:10 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:49:30 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:56:40 AM PT

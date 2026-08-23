@@ -14,20 +14,22 @@ scope.
 about which rules apply here. That is the point of declaring it: the mechanism runs against a
 configuration where a mistake in it cannot deactivate anything.
 
-## What it is for
+## It prints nothing, and that is the rule rather than an accident
 
-**It exercises the print path, which nothing else does.** The declaration record, the read of it by
-`session-start.sh`, the instruction carried to the agent, and the stanza printed at the head of
-the load are a path no test reaches — a script can observe the instruction and cannot observe
-whether a session renders it.
+**A declaration of `default` with nothing deactivated prints no stanza.** So this record changes
+nothing an engineer sees, which is what a declaration of `default` is supposed to do.
 
-**So this record is the control.** A session opening on it prints
-`(7 active of 7 installed)` above the copyright, or it does not, and the answer is in front of
-the engineer either way.
+**It was written to exercise the print path**, which no test reaches — a script can observe the
+instruction `session-start.sh` carries and cannot observe whether a session renders it. Hours
+later the engineer settled that `default` prints nothing, and this record stopped being able to
+show that. **The record says so rather than being rewritten as though it had another purpose.**
 
-**It is kept rather than removed once read.** A project that declares its set is the ordinary
-state the mechanism is built for, and this project declaring the set it actually runs is true
-rather than a fixture.
+**What it still proves is the read.** `session-start.sh` finds this file, parses its three lines,
+and carries the set to the agent — that much is observable from a terminal and is confirmed.
+
+**It is kept.** This project does run every package it publishes, so the declaration states a fact,
+and the mechanism holding a real record in the project where it was built is worth more than a
+tidy `local/`.
 
 Related:
 

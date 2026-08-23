@@ -71,6 +71,11 @@ because nothing here is withheld.
 
 **Where no set is declared, nothing about a set is printed.** No line saying there is none.
 
+**A declaration of `default` prints nothing either, where nothing is deactivated.** `default` is
+what a project gets by asking for no set, so reporting it says what silence already says. It does
+print where `default` leaves a package deactivated, which happens when the project holds one
+`default` does not name.
+
 ## A set declared in a running session takes effect at the next one
 
 **Declaring a set does not unload what is already read.** Every installed package's rules are in
@@ -106,3 +111,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 23 2026 at 3:04:00 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:36:20 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:49:30 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:56:40 AM PT
