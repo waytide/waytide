@@ -1,0 +1,1 @@
+# The status line is settled not to carry the active package set, since the notice states it once at the start and the set does not change within a session, unlike the branch and the uncommitted work the status line exists to report

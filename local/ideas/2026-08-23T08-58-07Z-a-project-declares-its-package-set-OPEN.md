@@ -90,6 +90,15 @@ attribute line the system already reads mechanically, the same shape as `**State
   governs which rules are read, and that is not stated where the read is announced, is a
   configuration the engineer has to go and look up.
 
+- **2026-08-23 — the status line does not carry the set.** The notice states it once at the start
+  and that is where it is stated. The status line keeps what it keeps: the working directory, the
+  branch, and any uncommitted, untracked, or unpushed work.
+
+  **What the status line carries changes.** A branch is switched, work goes uncommitted and then
+  is committed, and a push clears what was unpushed. The set does not change within a session —
+  the resolution above says a declaration made mid-session does not take effect until a restart —
+  so a line that reports it every turn reports the same value every turn.
+
 ## What is not settled
 
 - **What deactivation does at the next session start**, now that the resolution above sequences
@@ -98,7 +107,8 @@ attribute line the system already reads mechanically, the same shape as `**State
 - **Where the declaration is written**, and whether that place is a new kind of file under
   `waytide/local/`.
 - **What reads it.** `session-start.sh` builds the read instruction and would have to name only the
-  active packages. That it prints the set is settled above; whether the status line does is not.
+  active packages. That the notice prints the set is settled above, and that the status line does
+  not is settled with it.
 - **What the notice's count counts** once a set is declared. It says `N packages` today, and
   installed and active are then two different numbers.
 - **What `refresh-packages.sh` does with a deactivated package.** Refreshing what is not read is
@@ -125,3 +135,4 @@ Authored by Scott Bellware on Sun Aug 23 2026 at 1:58:07 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:02:23 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:04:11 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:11:38 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 2:14:52 AM PT
