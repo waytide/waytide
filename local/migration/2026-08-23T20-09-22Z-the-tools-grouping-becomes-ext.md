@@ -24,9 +24,19 @@ package, installed at `waytide/system/tools/ruby-lang` and moving to `waytide/sy
 3. **`waytide/waytide-ruby`'s `install.sh` takes the new prefix.** One line:
    `prefix="waytide/system/ext/ruby-lang"`. From this point a fresh install places the package
    under `ext/`.
-4. **Each project holding the package moves its directory.** `git mv waytide/system/tools/ruby-lang
-   waytide/system/ext/ruby-lang`, then remove the empty `waytide/system/tools/`, and commit. A
-   later `git subtree pull` names the new prefix.
+4. **Each project holding the package re-adds it at the new prefix.** Remove
+   `waytide/system/tools/ruby-lang`, commit, then
+   `git subtree add --prefix waytide/system/ext/ruby-lang git@github.com:waytide/waytide-ruby.git
+   master --squash`.
+
+   **A `git mv` is not enough, and this step said so only after it failed.** Git records a subtree
+   by its prefix, written into a commit message as `git-subtree-dir`. Moving the directory moves
+   the files and leaves that record naming the old path, so a pull at the new prefix reports
+   `can't squash-merge: … was never added`. Re-adding is what writes the record.
+
+   **A project declaring a package set names the package in that declaration**, and the path in it
+   moves too. The declaration is rewritten as a **new** record rather than edited, per the
+   a-project-declares-its-package-set rule.
 
 ## What is true in between
 
@@ -73,9 +83,21 @@ package, installed at `waytide/system/tools/ruby-lang` and moving to `waytide/sy
   `master`. The 404 is closed and a fresh install places the package at
   `waytide/system/ext/ruby-lang`. The suite is verified from this point: three files, 0 failed,
   0 aborted.
-- **2026-08-23 — increment 1 is merged**, and increment 2 follows it.
+- **2026-08-23 — increment 1 is merged** as `720b2a8..d0758a5`, and the suite is verified on the
+  merged result.
+- **2026-08-23 — increment 2 is done.** Four packages changed and were published:
+  `design-by-efferent`, `foundation`, `testing`, and `versioning`. Each was a fast-forward, and
+  `report-direct-commits.sh` found nothing before the split.
+- **2026-08-23 — increment 4 is done in four projects**, and it exposed the defect in the step as
+  written. The `git mv` was committed first, the refresh then failed on the subtree metadata, and
+  the package was removed and re-added at the new prefix. Each project now refreshes `ext/ruby-lang`
+  cleanly. The step above is corrected to say re-add rather than move.
+- **2026-08-23 — one project's package-set declaration was rewritten.** Its `**Inactive:**` line
+  named `tools/ruby-lang`. A new declaration names `ext/ruby-lang`, the set is otherwise unchanged,
+  and the earlier record stands as what was declared at the time.
 
 ---
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:09:22 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:31:50 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:41:07 PM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:47:33 PM PT
