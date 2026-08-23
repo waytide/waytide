@@ -80,7 +80,9 @@ attribute line the system already reads mechanically, the same shape as `**State
 
 ## What is not settled
 
-- **What deactivation does**, of the three readings above.
+- **What deactivation does at the next session start**, now that the resolution above sequences
+  the readings rather than choosing between them. Not read saves the read; read and not applied
+  saves nothing and is what the local rule does by hand today.
 - **Where the declaration is written**, and whether that place is a new kind of file under
   `waytide/local/`.
 - **What reads it.** `session-start.sh` builds the read instruction and would have to name only the
@@ -107,3 +109,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:58:07 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:02:23 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 2:04:11 AM PT
