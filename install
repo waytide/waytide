@@ -1,18 +1,24 @@
 #!/bin/sh
-# Install (or refresh) every Waytide package into a consuming project, then
+# Install (or refresh) Waytide packages into a consuming project, then
 # activate the system by placing the project-root AGENTS.md, a CLAUDE.md that
 # imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a .claude/settings.json
 # whose SessionStart hook and status line print the session-start notice.
 # Fetch it into the root of the consuming project and run it from there:
 #
-#   curl -O https://raw.githubusercontent.com/waytide/waytide/master/install-all.sh
-#   sh install-all.sh
+#   curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
+#   sh install                          the default set
+#   sh install content                  a package set
+#   sh install foundation git           packages by name
 #
-# `sh install-all.sh`, not `./install-all.sh`, and this is the one script here written that
-# way. It is committed executable like every other, but it is also the only one delivered by
-# `curl`, which transfers content and not file metadata — so the copy a developer runs is
-# never executable, whatever mode the original carries. Every other script reaches a project
-# inside a package by `git subtree`, which preserves the mode, and is invoked as itself.
+# `sh install`, not `./install`, and this is the one script here written that way. It is
+# committed executable like every other, but it is also the only one delivered by `curl`,
+# which transfers content and not file metadata — so the copy a developer runs is never
+# executable, whatever mode the original carries. Every other script reaches a project inside
+# a package by `git subtree`, which preserves the mode, and is invoked as itself.
+#
+# It carries no `.sh`. A script is a command, and `./install` reads as one where
+# `./install.sh` reads as a file being run. It was `install-all.sh` until 2026-08-23, when it
+# stopped installing all of anything and started installing a named list.
 set -e
 
 # The origin the packages are fetched from. Override it to work over HTTPS where no SSH
@@ -102,13 +108,59 @@ add() {
   git subtree pull --prefix "$prefix" "$repo" master --squash
 }
 
-add foundation          foundation
-add language            language
-add testing             testing
-add git                 git
-add versioning          versioning
-add design-by-efferent  design-by-efferent
-add journal             journal
+# A package set is a named list of packages. `default` is the set a project gets when it names
+# nothing, and it is one named set among others rather than a special case in the code.
+#
+# A set is written here, which is the only place a script can read one today. Where a set should
+# live so that a person reads it too is not settled — see the idea *A content project is a named
+# package set*.
+set_packages() {
+  case $1 in
+    default)
+      printf '%s' "foundation language testing git versioning design-by-efferent journal"
+      ;;
+    content)
+      printf '%s' "foundation language git versioning journal"
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+# The repository a package publishes to is its installed path with the slashes flattened to
+# dashes, so a nested group/name gives group-name. A package may declare a different one, and
+# refresh-packages.sh reads that declaration — an installer cannot, since the package is not
+# there yet to be read. So a package whose repository is not its flattened path is named here.
+package_repository() {
+  case $1 in
+    ext/ruby-lang|tools/ruby-lang)
+      printf '%s' "waytide-ruby"
+      ;;
+    *)
+      printf '%s' "$1" | tr '/' '-'
+      ;;
+  esac
+}
+
+# The arguments are a list of names, and a name is a package set or a package. With no arguments
+# the list is the one name `default`.
+if [ $# -eq 0 ]; then
+  set -- default
+fi
+
+requested=
+for name in "$@"; do
+  if members=$(set_packages "$name"); then
+    requested="${requested}${requested:+ }${members}"
+  else
+    requested="${requested}${requested:+ }${name}"
+  fi
+done
+
+for package in $requested; do
+  add "$package" "$(package_repository "$package")"
+done
 
 # Activate the system: place the project-root AGENTS.md. Foundation is
 # installed above, so run its AGENTS.md-only mode (it won't re-add itself).

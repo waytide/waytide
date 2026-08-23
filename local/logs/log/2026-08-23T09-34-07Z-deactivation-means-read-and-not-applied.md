@@ -1,0 +1,1 @@
+# Deactivation is settled to mean read and not applied rather than not read, which keeps the session-start read whole and unconditional, dissolves the conflict the idea was recorded as having with the rule that makes it so, and gives up the only saving the alternative offered

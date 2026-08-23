@@ -51,11 +51,11 @@ git -C "$control_ruby_project" commit --quiet --allow-empty -m "Repository is in
 
 # The default distribution installs seven packages ------------------------------
 
-cp "$repository/install-all.sh" "$control_base_project/install-all.sh"
+cp "$repository/install" "$control_base_project/install"
 
 (
   cd "$control_base_project"
-  WAYTIDE_ORIGIN="$control_origin" sh install-all.sh >/dev/null 2>&1
+  WAYTIDE_ORIGIN="$control_origin" sh install >/dev/null 2>&1
 )
 
 base_packages=$(cd "$control_base_project/waytide/system" && ls)

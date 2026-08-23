@@ -1,0 +1,1 @@
+# The declaration file name is settled to hyphen-join whatever the declaration names, so the ordinary single-set case reads as the engineer wrote it and a listing says what a project runs without anything being opened

@@ -1,0 +1,1 @@
+# The composite declares the default package set, which changes nothing about which rules apply here and is declared for that reason — it exercises the record, the read, the instruction, and the printed stanza against a configuration where a mistake in the mechanism cannot deactivate anything

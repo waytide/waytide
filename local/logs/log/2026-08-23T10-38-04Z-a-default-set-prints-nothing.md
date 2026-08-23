@@ -1,0 +1,1 @@
+# A declared package set of default prints no stanza where nothing is deactivated, since default is what a project gets by asking for no set and a stanza reporting it says what silence already says — but it does print where default leaves a package deactivated, so a suppressed stanza is never the reason a deactivated package goes unmentioned

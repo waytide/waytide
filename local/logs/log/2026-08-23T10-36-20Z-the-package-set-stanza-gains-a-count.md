@@ -1,0 +1,1 @@
+# The package set print becomes a three-line stanza with no gaps — the set in the engineer's wording, every installed package with the active ones bold and the deactivated ones italic, and a count of how many are active of how many installed — the count replacing the two-word legend, which the arithmetic makes unnecessary

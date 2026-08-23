@@ -1,0 +1,1 @@
+# That the Design By Efferent package should be a `tools/` package is recorded as an idea — it would answer the parked content-project question by taking DBE out of the default distribution, and it exposes that the grouping is named for being a tool while what it collects is being specific to something not every project uses, which reaches `testing` by the same reasoning

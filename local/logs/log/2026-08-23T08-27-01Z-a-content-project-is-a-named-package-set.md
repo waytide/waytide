@@ -1,0 +1,1 @@
+# That Waytide should recognize a named set of packages called "content project" is recorded as an idea — it introduces a concept the system has no word for, since nothing today names a set of packages, and it splits into a set written down, which is buildable now, and a set installed by name, which waits on the install-takes-a-package-set idea

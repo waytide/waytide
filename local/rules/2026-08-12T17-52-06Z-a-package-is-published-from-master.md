@@ -36,6 +36,17 @@ route. A publish requires a merge, and a merge requires the ending.
 **Report what is settled and what is open, and stop there.** The engineer signals when the work is
 done.
 
+**What the never-offer instruction reaches is the agent's own text**, and it cannot reach more than
+that. The harness has a channel of its own — the grey suggestion the tab key completes — which
+predicts the engineer's next message from the conversation. On 2026-08-23 it suggested publishing a
+package while a feature branch was open, drawn from the engineer's own earlier messages in the same
+session, at a moment when the rule forbids the agent from raising it.
+
+**That is not a violation and it is not a loophole.** No rule here binds the harness, and the
+instruction is not weakened by a channel it was never able to govern. It is recorded so a later
+reader does not take the suggestion for the agent's offer, and does not conclude from it that the
+instruction failed.
+
 ## The exception is rare and it is confirmed
 
 Where an experiment's own question is about publishing, put the exception through the selection UI
@@ -88,3 +99,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 6:14:22 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:44:35 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:42:05 AM PT

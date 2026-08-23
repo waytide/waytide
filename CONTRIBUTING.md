@@ -88,8 +88,8 @@ git branch -D publish-tmp
 
 `report-direct-commits.sh` handles the repository before its first publish on its own. It
 reports `no master … — skipped` and carries on, so it needs no change when a package is added.
-`install-all.sh` does: its package list is hardcoded, where the direct-commit check discovers
-packages by finding READMEs.
+`install` does: its package sets are written into the script, where the direct-commit check
+discovers packages by finding READMEs.
 
 **If a push is rejected, stop — do not force yet.** A rejection means the component repo
 diverged, which the downstream-only rule forbids but does not prevent. Do not discard what

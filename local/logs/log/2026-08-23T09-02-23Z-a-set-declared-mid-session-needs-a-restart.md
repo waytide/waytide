@@ -1,0 +1,1 @@
+# Setting a package set in a running session is settled to leave what is already read in force, and the engineer is told at that moment that Claude has to be restarted for the omitted packages' rules to go — which resolves two of the three readings of deactivation into the before and after of a restart rather than rivals

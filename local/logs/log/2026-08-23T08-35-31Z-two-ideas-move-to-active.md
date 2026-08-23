@@ -1,0 +1,1 @@
+# *A content project is a named package set* and *The install takes a package set on the command line* both move from Open to Active, settled and being built by the Content and Web feature, whose intent widened the same day from content conventions to the package set mechanism as well
