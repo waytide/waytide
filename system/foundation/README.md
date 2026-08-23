@@ -196,7 +196,9 @@ per-machine configuration under `~/.config/`, outside the repository.
 foundation defines the artifacts they all write into. It states **deferred**, **suspended**, and
 **out of scope** beside each other: *not yet*, *no longer*, *not here*. They are confused
 most where nothing distinguishes them, and defines **projection**, **reconcile**,
-**working-state artifact**, and **plain text data attribute line**. Its one substitution is **work
+**working-state artifact**, **plain text data attribute line**, **distributable rule**, and
+**local rule**. The last two name how a rule travels and whose it is, and neither is `system
+rule`, which names where it sits. Its one substitution is **work
 session record**, never bare "session record".
 
 This package includes no others — everything else includes it. It cites several, which is
