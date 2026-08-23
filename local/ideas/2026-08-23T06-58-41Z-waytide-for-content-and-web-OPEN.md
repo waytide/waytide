@@ -61,6 +61,16 @@ under the grouping. Neither is settled here.
 - **Whether the `website` project is the first consumer or the first author.** It is where the
   material is, and it is a sibling repository rather than part of this one.
 
+## The feature started for it was renamed away from it
+
+**2026-08-23 — *Feature — Content and Web* became *Feature — Package Sets*.** It was started to
+realize this idea and produced two commits against it before a mechanism the system lacked took the
+work. Nothing in it touches Hugo, Hextra, or what a content package holds.
+
+**So this idea is not realized and awaits a feature of its own.** What it gained from the detour is
+that the configuration it wants is now declarable: a content project can hold every package and run
+five.
+
 Related:
 
 - *The grouping is `tool/`, not a language* — the grouping this would join, and the question it
@@ -73,3 +83,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sat Aug 22 2026 at 11:58:41 PM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:58:40 AM PT
