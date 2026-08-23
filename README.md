@@ -11,7 +11,7 @@ Waytide offers a project four things: conventions that bind, work that records i
 ## Conventions that bind, read fresh each session
 
 - **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
-- **Files, not memory.** Committed with the code. They are reviewable, diffable, and versioned. Project context lives in committed artifacts. Agent memory store is forbidden to stand in for committed artifacts.
+- **Files, not memory.** Memory is written to disk, in the project's own `waytide/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is forbidden to stand in for a committed artifact.
 - **Work that records itself.** Comprehensive logging and recording of the engineer's decisions and the agent's actions.
 - **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
 - **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing packages, refreshing them, and reporting on changes.
@@ -25,6 +25,8 @@ Waytide offers a project four things: conventions that bind, work that records i
 - **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every task. The methodology is respected either way. Only the amount of unchecked work changes.
 
 ## The work records itself
+
+**These directories are the memory.** They sit under `waytide/local/`, they are committed with the code, and they are read at the start of a session rather than recalled.
 
 - **ideas/** — Designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
 - **logs/** — The decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
