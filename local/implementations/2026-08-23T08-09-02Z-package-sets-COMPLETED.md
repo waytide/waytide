@@ -6,6 +6,7 @@
 written down, installable by that name, and declarable by a project that already holds more
 packages than it wants active. `content` is the first set.
 
+- **State:** Completed
 - **Tags:** [feature]
 
 **It was started as *Content and Web* and renamed on 2026-08-23.** See below. The record keeps its
@@ -103,3 +104,4 @@ Authored by Scott Bellware on Sun Aug 23 2026 at 1:09:02 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:36:15 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:22:10 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:58:40 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:52:47 AM PT
