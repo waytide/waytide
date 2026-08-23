@@ -1,0 +1,1 @@
+# That a content project should not start with Design By Efferent active, and may not need it installed, is recorded as a deferred idea waiting on the content package's shape — the two remedies differ, since a subset install is the packaging question already recorded while an inactive installed package has no mechanism at all, the session-start read being unconditional

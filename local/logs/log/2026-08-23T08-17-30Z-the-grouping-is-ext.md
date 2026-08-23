@@ -1,0 +1,1 @@
+# That the `tools/` grouping should be called `ext/`, standing for external as well as extension, is recorded as an idea — the two meanings point the same way and name what the grouping actually collects, dissolving the admission question rather than answering it, at the cost of a third rename of the directory and an abbreviation where the system has used whole words
