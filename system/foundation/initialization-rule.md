@@ -77,7 +77,7 @@ with no gap between them:
 
 ```
 Copyright © 2026 Scott Bellware
-Licensed under the Eventide Common Interest License
+*Eventide Common Interest License*
 ```
 
 Then **one blank line**, then the loading line:
@@ -179,6 +179,16 @@ sits with them rather than against them.
 **The license line sits directly under the copyright, with no blank line between them.** The two are one statement about the work. Who owns it, and on what terms it may be used — and a bare copyright answers only the first while raising the second. For a work distributed by copying its
 files into other people's repositories, the terms are the question a reader actually has.
 
+**The line is the license's name alone, set in italics.** It read `Licensed under the Eventide
+Common Interest License` until 2026-08-23. The three leading words say what the name's position
+under the copyright already says, and the name is what a reader looks for. A title, an owner, and a
+license name are three names, and the italics are what hold the third apart from the second rather
+than reading as a continuation of it.
+
+**Italics rather than a colour.** The startup content is the agent's own text, rendered as markdown,
+and markdown carries emphasis and no colour instruction. So a lighter weight is what is available on
+this surface, and it is the same constraint the blank lines below are subject to.
+
 **The gap falls after the license line, never between it and the copyright.** It separates the
 whole statement, the copyright and the terms together, from what follows. It does not split the
 statement in two. The gap above the copyright does the same work for whatever precedes it, the
@@ -220,3 +230,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:44:10 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:49:30 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:56:40 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:46:13 AM PT
