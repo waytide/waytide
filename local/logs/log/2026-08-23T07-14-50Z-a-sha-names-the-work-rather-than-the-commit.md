@@ -1,0 +1,1 @@
+# A `git` package rule settles that a commit named by its SHA is a reference to the work it carries — the idea, the implementation, the rule, or the change to the code — rather than to the commit's own mechanics; the message, the file list, and the log entry are the answer only when the question is about the commit itself or when the commit's whole content is a git operation
