@@ -127,7 +127,7 @@ The whole list is printed at the head of the session, under the title — the ac
 A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 
 ```
-tools/ruby-lang     →  every package below
+ext/ruby-lang       →  every package below
 design-by-efferent  →  foundation, language, testing
 testing             →  foundation, language
 language            →  foundation
@@ -161,17 +161,17 @@ git subtree pull \
   --squash
 ```
 
-## Tool-specific packages
+## Extensions and externals
 
 Most of Waytide is about how the work is done, whatever a project is built with. Some of it is not. Prescriptive Ruby style, the command that runs a Ruby suite, and the mechanics of releasing a gem are about **a tool a project uses**, and they are inert in a project that does not use it.
 
-Those live in **`tools/`**, one package per tool. A tool-specific package is not part of the default distribution — a project takes the one it needs, and takes nothing for the tools it does not use.
+Those live in **`ext/`**, one package per subject. Such a package is not part of the default distribution — a project takes the one it needs, and takes nothing for the tools it does not use.
 
-**`tools/ruby-lang` is the only one published so far**, from [waytide/waytide-ruby](https://github.com/waytide/waytide-ruby). Its dependency is every package above, so installing it installs all of Waytide.
+**`ext/ruby-lang` is the only one published so far**, from [waytide/waytide-ruby](https://github.com/waytide/waytide-ruby). Its dependency is every package above, so installing it installs all of Waytide.
 
-**More are to come.** What the grouping admits is not settled: a language, a test framework, a package manager, and a build system are each a tool by some reading, and a grouping that admits everything groups nothing. That question is open, and `tools/ruby-lang` is the case it will be settled against.
+**More are to come.** The name says what the grouping admits. An **external** is something Waytide did not write and does not govern, and an **extension** is something that adds to Waytide for one stack or one kind of project. A language, a test framework, a package manager, and a build system are each one or the other, and `ext/` admits them without a reading having to be argued for each. The grouping was `tools/` until 2026-08-23, where every member had to be called a tool.
 
-**A tool-specific package is authored in its own repository**, rather than here and split out. It holds rules for something this composite has no other reason to know about, and nothing splits into it.
+**Such a package is authored in its own repository**, rather than here and split out. It holds rules for something this composite has no other reason to know about, and nothing splits into it.
 
 ## Origins
 

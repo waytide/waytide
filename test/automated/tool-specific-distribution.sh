@@ -88,12 +88,12 @@ fi
 ruby_packages=$(cd "$control_ruby_project/waytide/system" && ls)
 
 ruby_expected="design-by-efferent
+ext
 foundation
 git
 journal
 language
 testing
-tools
 versioning"
 
 if [ "$ruby_packages" != "$ruby_expected" ]; then
@@ -105,10 +105,10 @@ if [ "$ruby_packages" != "$ruby_expected" ]; then
   exit 1
 fi
 
-ruby_package=$(cd "$control_ruby_project/waytide/system/tools" && ls)
+ruby_package=$(cd "$control_ruby_project/waytide/system/ext" && ls)
 
 if [ "$ruby_package" != "ruby-lang" ]; then
-  echo "waytide/system/tools/ holds: $ruby_package"
+  echo "waytide/system/ext/ holds: $ruby_package"
   echo "Expected: ruby-lang"
   echo "1 failed, 0 aborted"
   exit 1

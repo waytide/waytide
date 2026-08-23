@@ -10,10 +10,10 @@ history. Add or refine a rule here. A change spanning
 several packages is one atomic commit, since the packages live together. The
 whole rule set can be read, grepped, and consolidated in one place. This is the source of truth.
 
-**Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. A grouped package's repository is its installed path with the slash flattened to a dash, as `tools/ruby-lang` gives `waytide/tools-ruby-lang`. Each holds a single package's files at its
+**Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. A grouped package's repository is its installed path with the slash flattened to a dash, so a grouped `ext/some-tool` gives `waytide/ext-some-tool`. A package may declare a different one, and the Ruby package does. Each holds a single package's files at its
 root. These are how a consuming project installs a package.
 
-**One package is not authored here.** `tools/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `waytide/tools-ruby-lang` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
+**One package is not authored here.** `ext/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `waytide/waytide-ruby` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
 
 The component repositories are **generated from this composite repo, not edited
 directly.** Publishing a package is a `git subtree split` that extracts one
@@ -71,7 +71,7 @@ git branch -D publish-tmp
 
 No package in this composite is nested today. A grouped one would split from its nested
 path — `--prefix system/<group>/<name>` — into the flattened repo name, which is what
-`tools/ruby-lang` did before it moved out.
+`ext/ruby-lang` did before it moved out.
 
 **A new package's first publish** has no `master` to fast-forward from, so the guard does not
 apply — the push creates the branch. Create the repository, give it a description in the form

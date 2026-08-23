@@ -134,7 +134,7 @@ set_packages() {
 # there yet to be read. So a package whose repository is not its flattened path is named here.
 package_repository() {
   case $1 in
-    ext/ruby-lang|tools/ruby-lang)
+    ext/ruby-lang)
       printf '%s' "waytide-ruby"
       ;;
     *)
