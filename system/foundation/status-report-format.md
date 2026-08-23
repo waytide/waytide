@@ -13,12 +13,13 @@ When the user asks for a **status report** (or "project status"), produce a repo
 ## A hidden record is counted rather than listed
 
 **A hidden record is one a report states the number of and does not otherwise show.** It is
-omitted from the table or the passage it would ordinarily sit in, and a line there says how many
-were held back and what kind they are.
+omitted from the table or the passage it would ordinarily sit in, and a line there gives the count
+and the kind. **The line says no more than that** — no *not listed*, no *withheld*, no explanation.
+A count standing alone already says the records exist and are not shown.
 
 ```
-3 suspended items not listed
-12 suspension log entries not listed
+3 suspended items
+12 suspension log entries
 ```
 
 **This reaches a brief as well as the report.** The fixed status report above is one surface. Any

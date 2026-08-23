@@ -170,7 +170,9 @@ written the same day and superseded within it. The protocol was the
 because nothing in it was ever about journals.
 
 **A list of records presented on request is a table** (`a-record-list-is-a-table`) — the handle
-first with no heading, the title next, and one column for the fact that was asked about. It reaches
+first with no heading, then the commit that created the record and the last to touch it, then the
+title, then one column for the fact that was asked about. A record showing the same SHA twice has
+not been touched since it was written. It reaches
 any record, and it does **not** reach the session-start deferred queue print, which its own rule
 fixes as rows because that one carries a one-line summary. Where a field runs to a sentence, rows
 are the form. The two are not in competition: they answer to the length of what is in them.
@@ -327,3 +329,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 9:36:21 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:23:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:59:23 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:01:04 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:07:00 AM PT

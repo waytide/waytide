@@ -1,0 +1,1 @@
+# A record table carries two standing SHA columns after the handle — the commit that created the record and the last to touch it — so a record showing the same SHA twice is one never amended since it was written; a list of commits takes neither, the handle already being the SHA

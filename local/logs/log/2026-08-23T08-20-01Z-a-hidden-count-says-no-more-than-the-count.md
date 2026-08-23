@@ -1,0 +1,1 @@
+# A hidden record's count line gives the number and the kind and no more — no *not listed*, no *withheld*, no explanation, since a count standing alone already says the records exist and are not shown
