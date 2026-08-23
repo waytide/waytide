@@ -36,7 +36,7 @@ trap 'rm -f "$composite_messages"' EXIT
 git log --all --format=%s | sort -u > "$composite_messages"
 
 # A package is a directory carrying a README.md — the same test the session-start
-# notice uses. The nested `tools/ruby-lang` publishes to the flat repo name `tools-ruby-lang`.
+# notice uses. A nested `ext/<name>` publishes to the flat repo name `ext-<name>`.
 packages=$(
   cd system || exit 1
   find . -mindepth 2 -maxdepth 3 -name README.md |

@@ -1,11 +1,16 @@
 # The grouping is `ext/`, for external and extension both
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [aspiration]
 
 **Why this state:** the name answers the admission question that two earlier ideas left open, and
 it costs a third rename of the same directory and an abbreviation where the system has used whole
 words. It is promoted to `Active` once those are weighed.
+
+**2026-08-23 — settled, and the state is `Active`.** The engineer settled the name outright. The
+two costs above were weighed and taken. It supersedes *The grouping is `tool/`, not a language*.
+The work is the feature *The `ext/` Grouping* and the migration record *The `tools/` grouping
+becomes `ext/`*. It reaches `Realized` when the migration's last increment is done.
 
 ## Premise
 
@@ -76,3 +81,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:17:30 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:14:38 PM PT

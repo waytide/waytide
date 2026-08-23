@@ -1,11 +1,16 @@
 # The grouping is `tool/`, not a language
 
-- **State:** Open
+- **State:** Superseded
 - **Tags:** [aspiration]
 
 **Why this state:** the axis is proposed and the extent is not settled. What `tool` covers, whether
 the existing `code/` directory is renamed to it, and what becomes of the published `code-ruby`
 repository are each open. It is promoted to `Active` once those are decided.
+
+**2026-08-23 — superseded by *The grouping is `ext/`, for external and extension both*.** The
+engineer settled `ext/`. What this idea left open was the extent — what counts as a tool — and the
+later idea answers it by naming the grouping for what it admits rather than for what its members
+are. The wording above is what was thought on 2026-08-20 and is not rewritten.
 
 ## Premise
 
@@ -81,3 +86,4 @@ Related:
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:48:50 PM PT
 Changed by Scott Bellware on Thu Aug 20 2026 at 11:00:46 PM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:14:38 PM PT
