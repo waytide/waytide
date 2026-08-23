@@ -1,0 +1,1 @@
+# The declaration is settled to take a list of names in the grammar install already takes, where a name is a set or a package, which admits a configuration nobody named and makes the repeatability a name buys available rather than compelled

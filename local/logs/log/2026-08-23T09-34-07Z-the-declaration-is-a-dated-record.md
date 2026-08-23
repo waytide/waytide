@@ -1,0 +1,1 @@
+# The package set declaration is settled to be a dated record at waytide/local/, named for the time and the names it carries, with the most recent file holding, so declaring a set writes a file rather than editing one and the earlier declarations are the history of what the project ran

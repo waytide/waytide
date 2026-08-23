@@ -1,0 +1,1 @@
+# The notice is settled to say package set: content in the engineer's own wording, list every package with the active ones emphasized and a legend following, and since markdown is unavailable on that channel the emphasis is attempted with ANSI escapes and tested before anything else is built

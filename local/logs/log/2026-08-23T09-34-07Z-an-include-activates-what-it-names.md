@@ -1,0 +1,1 @@
+# An include is settled to decide over the declaration, so naming design-by-efferent activates testing, on the grounds that an include states a fact about the package rather than a preference and install already behaves that way
