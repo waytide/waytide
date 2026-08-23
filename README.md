@@ -2,7 +2,7 @@
 
 By [The Eventide Project](https://eventide-project.org)
 
-## Agent harness and engineer ally
+## Agent harness and ally
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to dictate the answer.
 

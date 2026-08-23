@@ -12,7 +12,7 @@ description is italicized and the title is not:
 
 ```
 Waytide: Human-Agent Relations
-*Agent harness and engineer ally*
+*Agent harness and ally*
 ```
 
 **Then the package set, where one is declared**, after one blank line. It goes here rather than
@@ -123,22 +123,26 @@ what this rule carries.
 
 **The title is the category line and the line under it is the formulation.**
 *Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03, and *Agent
-harness and engineer ally* is the formulation settled the same day. The root `README.md` leads
+harness and ally* is the formulation, first settled the same day and shortened on 2026-08-23. The root `README.md` leads
 with the two, and this display prints the same pair, so the system says one thing about itself
 wherever it is met.
 
 **The formulation is not the generalized description**, which is the four-sentence paragraph
 *A Generalized Description of Waytide* settled on 2026-08-20. That paragraph says what Waytide
-does. This line says what Waytide is to the two parties, in six words, and it is short enough to
+does. This line says what Waytide is to the two parties, in four words, and it is short enough to
 stand under a title. This rule attributed the line to that aspiration until 2026-08-21, which
 named the wrong record.
 
-**It reads *engineer* rather than *human*, as of 2026-08-21.** *Engineer ally* was recorded
-first on 2026-08-03 and revised to *human ally* the same day, because *human* pairs with *agent*
-as a kind of entity rather than a role. The `language` vocabulary has since reserved **engineer**
-for the person the work is done with and for, substituting it in place of *developer*. So the
-word the formulation now carries is the one the vocabulary settles, and the earlier form is
-restored rather than invented.
+**The ally is named without a qualifier, as of 2026-08-23.** The word in front of it took three
+revisions: *engineer ally* on 2026-08-03, *human ally* the same day because *human* pairs with
+*agent* as a kind of entity rather than a role, and *engineer ally* again on 2026-08-21 once the
+`language` vocabulary reserved **engineer** for the person the work is done with and for.
+
+**Dropping it settles the question rather than answering it a fourth time.** *Ally* stands as a
+bare noun beside *harness*, which is also bare, and the line no longer has to name which word for
+the non-agent party is the right one. What it gives up is that the pairing is no longer stated —
+the harness is the agent's and the ally is the engineer's, and the shortened line leaves a reader
+to see it. Three revisions of the qualifier are what argue it can be left to them.
 
 **They name the work, which is why the copyright line no longer does.** That line read
 `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no
@@ -211,3 +215,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT

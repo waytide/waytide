@@ -1,0 +1,1 @@
+# The formulation shortens to "Agent harness and ally", dropping the word in front of ally that had taken three revisions — engineer, then human, then engineer again — which settles that question rather than answering it a fourth time, at the cost of no longer stating which party each half belongs to
