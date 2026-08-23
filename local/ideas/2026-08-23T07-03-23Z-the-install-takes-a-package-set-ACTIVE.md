@@ -1,12 +1,10 @@
 # The install takes a package set on the command line
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [aspiration]
 
-**Why this state:** the defect is named and the replacement is a sketch. What the argument list
-means — a replacement for the default set, an addition to it, or a set that resolves dependencies
-transitively — is undecided, and it decides the rest. It is promoted to `Active` once that is
-settled.
+**Why this state:** settled on 2026-08-23 and being built by the Content and Web feature. The
+argument list is a list of names, and a name is a package set or a package.
 
 ## Premise
 
@@ -58,11 +56,18 @@ installer and names what it wants. `tools/ruby-lang`'s `install.sh` becomes
 tool package. `install-dependencies.sh` then declares what the package actually needs rather than
 everything.
 
+## Settled
+
+- **2026-08-23 — the argument is a list of names, and a name is a package set or a package.**
+  `install-all.sh content`, `install-all.sh foundation language git`, and
+  `install-all.sh content ext/ruby-lang` are one form. A **package set** is a named list of
+  packages, written down and installable by that name. See *A content project is a named package
+  set*, where the class was settled.
+
 ## What is not settled
 
-- **What the argument list means.** A replacement for the default set, an addition to it, or a
-  request that resolves dependencies transitively — `install-all.sh testing` pulling `foundation`
-  and `language` because `testing` includes them.
+- **Whether a named package or set pulls what it includes.** `install-all.sh testing` reaching
+  `foundation` and `language` because `testing` includes them, or naming only what was asked for.
 - **How a package is named on the command line.** `tools/ruby-lang` is the installed path,
   `tools-ruby-lang` is what the flattening would give, and `waytide-ruby` is the repository. The
   `**Repository:**` declaration made those three differ.
@@ -85,3 +90,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:03:23 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:36:00 AM PT

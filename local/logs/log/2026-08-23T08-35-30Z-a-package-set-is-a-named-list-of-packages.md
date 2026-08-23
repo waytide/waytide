@@ -1,0 +1,1 @@
+# A **package set** is a named list of packages, written down and installable by that name, and `content` is the first one — `install-all.sh` takes a list of names where a name is a package set or a package, so `install-all.sh content`, `install-all.sh foundation language git`, and `install-all.sh content ext/ruby-lang` are one form

@@ -1,11 +1,10 @@
 # A content project is a named set of packages
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [aspiration]
 
-**Why this state:** the direction is stated and the mechanism is not. A named set can be **written
-down** today and **installed by name** only after the install question settles, and those are two
-different artifacts. It is promoted to `Active` once it is decided which of the two is meant.
+**Why this state:** settled on 2026-08-23 and being built. What remains open is the membership of
+the `content` set rather than the mechanism.
 
 ## Premise
 
@@ -51,6 +50,18 @@ own. Nothing today can install a subset at all.
 **The two are not alternatives so much as an order.** The written set is what the installer would
 read. Writing it first costs nothing that the mechanism would have to undo.
 
+## Settled
+
+- **2026-08-23 — the class is a `package set`.** `content` is a package set. The word claims
+  nothing about who takes the set or why, so a set that is not a kind of project still fits.
+  `profile` and `project kind` were the alternatives weighed.
+- **2026-08-23 — both levels are built.** The set is written down **and** installable by name.
+  They are an order rather than a choice: the written set is what the installer reads.
+- **2026-08-23 — the install takes a list of names, and a name is a set or a package.**
+  `install-all.sh content`, `install-all.sh foundation language git`, and
+  `install-all.sh content ext/ruby-lang` are the same form. This settles *The install takes a
+  package set on the command line*, which asked what the argument list means.
+
 ## What is not settled
 
 - **Which of the two levels is meant**, and whether the written one is built by the feature now
@@ -78,3 +89,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:27:01 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:35:46 AM PT
