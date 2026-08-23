@@ -1,0 +1,1 @@
+# The Waytide announcement draft is written to `local/announcement-draft.md`, directly in `local/` for now and with no datetime prefix — no convention covers content, which is the gap *Waytide for content and web* names, and the file moves when that idea settles where content lives
