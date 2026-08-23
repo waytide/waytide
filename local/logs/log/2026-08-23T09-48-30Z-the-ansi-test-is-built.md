@@ -1,0 +1,1 @@
+# The ANSI test is built as a second SessionStart hook rather than as a change to the real notice, so a mistake cannot break session start anywhere, with an automated companion proving the emitted JSON parses and carries real escape bytes — which rules out the false negative where a broken notice never arrives and reads to the engineer as a stripped one

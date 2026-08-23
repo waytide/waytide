@@ -6,6 +6,10 @@
           {
             "type": "command",
             "command": "system/foundation/session-start.sh"
+          },
+          {
+            "type": "command",
+            "command": "test/manual/ansi-in-the-notice.sh"
           }
         ]
       }
