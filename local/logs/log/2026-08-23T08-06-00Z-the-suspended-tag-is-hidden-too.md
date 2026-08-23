@@ -1,0 +1,1 @@
+# A record carrying the `[suspended]` tag is hidden alongside a record whose `**State:**` line reads `Suspended`, and hiding reaches a brief as much as the fixed status report — the state marks something the project wanted and set aside, the tag marks something it did and stopped, and the two are different records taking the same treatment

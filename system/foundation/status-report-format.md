@@ -12,17 +12,32 @@ When the user asks for a **status report** (or "project status"), produce a repo
 
 ## A hidden record is counted rather than listed
 
-**A hidden record is one the report states the number of and does not otherwise show.** It is
-omitted from the table it would ordinarily sit in, and a line beneath that table says how many
+**A hidden record is one a report states the number of and does not otherwise show.** It is
+omitted from the table or the passage it would ordinarily sit in, and a line there says how many
 were held back and what kind they are.
 
 ```
 3 suspended items not listed
+12 suspension log entries not listed
 ```
 
-**A record whose `**State:**` line reads `Suspended` is hidden.** That is the first and today the
-only kind. A suspended thing is paused rather than ended, so it is neither current work nor
-concluded work, and a report that lists it among current work overstates what is live.
+**This reaches a brief as well as the report.** The fixed status report above is one surface. Any
+summary of the project's state is another — including the *Recent flows of work* brief in part 4,
+and any ad-hoc account of where things stand. A record hidden from one is hidden from all of them.
+
+**Two kinds are hidden today.**
+
+- **A record whose `**State:**` line reads `Suspended`.** A suspended thing is paused rather than
+  ended, so it is neither current work nor concluded work, and listing it among current work
+  overstates what is live.
+- **A record carrying the `[suspended]` tag.** That is a log entry recording that the project
+  stopped doing something, per the a-suspension-is-a-log-entry rule. A run of them would otherwise
+  fill a brief of recent direction with what the project stopped rather than what it did.
+
+**The two are different records and take the same treatment.** The state marks something the
+project **wanted** and set aside. The tag marks something the project **did** and stopped. That
+rule holds them apart deliberately, and nothing here merges them — they are hidden for the same
+reason and by the same means.
 
 **A later rule may name another kind**, and it becomes hidden by saying so. What this rule fixes
 is the treatment rather than the membership: counted, not listed, and named by kind in the count.
@@ -72,3 +87,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:59:23 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 1:01:04 AM PT
