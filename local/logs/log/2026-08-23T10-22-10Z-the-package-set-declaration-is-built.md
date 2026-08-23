@@ -1,0 +1,1 @@
+# A project can declare which of its installed packages are active — a dated record at waytide/local/ carrying what was declared, what it resolved to, and what was inactive at the time, with the most recent holding, read by session-start.sh and carried to the agent rather than into the notice

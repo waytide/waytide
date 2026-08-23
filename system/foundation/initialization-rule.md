@@ -1,6 +1,7 @@
 # Initialization
 
-Print the four things below, verbatim and in this order. Print them **once per session, at the
+Print the things below, verbatim and in this order. Four are always printed and the fifth is
+printed only where the project has declared a package set. Print them **once per session, at the
 head of the response that carries the rule read**. They go above any account of the read, and
 above every tool call the read makes.
 
@@ -13,6 +14,37 @@ description is italicized and the title is not:
 Waytide: Human-Agent Relations
 *Agent harness and engineer ally*
 ```
+
+**Then the package set, where one is declared**, after one blank line. It goes here rather than
+lower because it says what this session is running, and that belongs beside what the system is
+called rather than after the license. Where no set is declared, nothing about a set is printed and
+this item is absent entirely — no line saying there is none.
+
+The declaration is supplied by the read instruction, which is what reaches the agent before any
+file is opened. See the a-project-declares-its-package-set rule for where the record lives and what
+it carries.
+
+```
+package set: content
+
+**design-by-efferent**, **foundation**, **git**, **journal**, **language**, *testing*,
+**versioning**
+
+**on**  *off*
+```
+
+**The set is named in the engineer's own wording** — `package set: content` — rather than in a
+restatement of it. It is what they type to declare one, and the line that reports it says the same
+thing back.
+
+**Every installed package is listed, active in bold and deactivated in italic**, in the order the
+notice lists them. None is omitted and none is replaced by a count: the engineer is being told what
+the project holds and which half of it is in force, and a count of the deactivated ones would
+answer neither question.
+
+**The legend follows on its own line** and carries no words but the two. It is there because bold
+and italic are a convention the reader has not agreed to, and two words fix it at the cost of one
+line.
 
 Then **one blank line**, then the copyright notice and the license line, on consecutive lines
 with no gap between them:
@@ -48,7 +80,8 @@ Then **one blank line**, then the block:
 ```
 
 **Each gap is one blank line, and a larger one is not available.** There are three — after the
-description, after the license line, and after the loading line. With no gap at all a block reads
+description, after the license line, and after the loading line — and a fourth after the package
+set where one is printed. With no gap at all a block reads
 as a caption attached to what follows, or as its first line, so a separation is needed.
 
 A wider one cannot be
@@ -62,8 +95,9 @@ figure's spacing. The notice is ordinary prose and reads as prose. That differen
 
 **A wider gap is achievable only by giving something up**, and neither cost is worth it. Putting the notice inside the fence with the block would set it in monospace and make it part of the figure. Separating them with lines carrying an invisible character would put marks in the output whose purpose no reader could see.
 
-**These four are the whole of what is printed there.** Nothing else accompanies them — no
-greeting, no account of what is about to be read, no name for the block itself.
+**These are the whole of what is printed there.** Nothing else accompanies them — no greeting, no
+account of what is about to be read, no name for the block itself. The package set is the one item
+that is not always present, and its absence is the ordinary case rather than an omission.
 
 **The loading line says what the wait is.** Everything printed here appears at the head of
 the response that then opens every rule file in every installed package. That is a wait an
@@ -176,3 +210,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT

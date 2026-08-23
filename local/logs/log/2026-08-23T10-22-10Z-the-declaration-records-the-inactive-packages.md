@@ -1,0 +1,1 @@
+# The declaration is settled to record the inactive packages beside the resolved active ones, so the record states the whole state it was made against and a reader sees what was set aside without having to know what was installed that day

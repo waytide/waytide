@@ -76,7 +76,26 @@ governing this work, they are settled as the work reaches them.
   tool package**, and on 2026-08-23 it forced the question rather than waiting on it: the install
   mechanism is built here.
 
+## What is built
+
+- **`install` takes a list of names**, a name being a package set or a package, with `default` a
+  set like any other rather than a code branch. Proved by `test/automated/package-sets.sh`.
+- **A project declares which installed packages are active**, by the a-project-declares-its-package-set
+  rule. `session-start.sh` reads the most recent declaration and carries it to the agent, and the
+  initialization-rule prints it after the category line. Proved by
+  `test/automated/package-set-declaration.sh`.
+
+**The ANSI test was built and removed unrun.** The listing was to have gone in the hook's notice,
+which is plain text, so whether ANSI escapes render there had to be established before the form
+could be settled. The engineer then placed the listing in the startup content the agent prints,
+which renders markdown, and the question stopped being asked. It is `ef7d1e1`, and what it proved
+before it went is that the JSON encoding is sound.
+
+**What remains is the content conventions themselves** — Hugo, Hextra, and what a content package
+holds. The set mechanism was the detour that the intent widened to include.
+
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:09:02 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:36:15 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:22:10 AM PT

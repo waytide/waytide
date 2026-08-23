@@ -1,0 +1,1 @@
+# The initialization-rule gains a fifth item, printed only where a set is declared, placing the set and the full package list with bold and italic emphasis directly after the category line, and its absence is the ordinary case rather than an omission
