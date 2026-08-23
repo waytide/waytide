@@ -1,0 +1,90 @@
+# A project declares its package set, and the packages outside it deactivate
+
+- **State:** Open
+- **Tags:** [aspiration]
+
+**Why this state:** it supplies a mechanism the system has never had — an installed package that is
+not active — and it runs against the unconditional session-start read, which is load-bearing and
+was made unconditional for a stated reason. It is promoted to `Active` once what deactivation does
+is settled and the read question is answered.
+
+## Premise
+
+**As the engineer stated it:** from within a running package set, I would set it with `package
+set: content`. And then the proper deactivations would happen.
+
+## It is the second remedy, arriving with a mechanism
+
+*A content project does not start with Design By Efferent active* named two remedies and said one
+had none:
+
+- **Not installed** — the subset case, which `install content` now does.
+- **Not active** — which *Waytide has no concept of a dormant package* and which this supplies.
+
+**The two are different acts and both are wanted.** A project starting fresh installs the set it
+needs. A project that already holds every package declares the set it runs, and nothing is
+uninstalled. The website is the second case today: it holds eight packages and wants five active.
+
+## What deactivation does is the first question
+
+**Three readings, and they cost different things.**
+
+- **The rules are not read.** The natural reading, and the only one that saves the read itself.
+  The initialization rule admits that cost — *Loading Waytide will take a few moments*.
+- **The rules are read and not applied.** What the local rule of 2026-08-23 does for
+  Design By Efferent by hand. Cheaper to build and it saves nothing.
+- **The package is removed.** That is uninstalling, and it is the other remedy rather than this
+  one.
+
+## It runs against the unconditional read
+
+**`announce-waytide-at-session-start` makes the read unconditional deliberately.** Its stated
+reason is a session that judged the read not worth it, then went on to edit rules, write a work
+session record, and publish two packages against rules never read.
+
+**A declared set is not that failure.** What that rule refuses is an **in-the-moment judgment** by
+the agent about whether to read. A package set is a **recorded project decision**, committed,
+reviewable, and read before anything else. The two are different acts and only one of them is
+made by whoever is in a hurry.
+
+**That distinction has to be written into the rule**, or the change reads as the thing the rule
+exists to stop.
+
+## Where the declaration lives has no obvious home
+
+**A project-level configuration line has nowhere to go.** `waytide/local/` holds `rules/`, the
+`vocabulary.md`, and the working directories. A declaration is none of those — it is not a rule,
+not a term, and not a record of work.
+
+**The form is settled even if the place is not.** `**Package set:** content` is the plain text data
+attribute line the system already reads mechanically, the same shape as `**State:**` and
+`**Repository:**`.
+
+## What is not settled
+
+- **What deactivation does**, of the three readings above.
+- **Where the declaration is written**, and whether that place is a new kind of file under
+  `waytide/local/`.
+- **What reads it.** `session-start.sh` builds the read instruction and would have to name only the
+  active packages. The notice and the status line would presumably report the set.
+- **What `refresh-packages.sh` does with a deactivated package.** Refreshing what is not read is
+  arguably right — it stays current for the day it is reactivated — and arguably waste.
+- **Whether a package can be activated singly**, outside any set, and whether a set is the only
+  granularity.
+- **What happens to a package a set omits but another package includes.** `design-by-efferent`
+  includes `testing`; if a set names `design-by-efferent` and not `testing`, the include decides
+  or the set does.
+
+Related:
+
+- *A content project is a named package set* — where the set and its name were settled
+- *The install takes a package set on the command line* — the first remedy, built
+- *A content project does not start with Design By Efferent active* — where the missing mechanism
+  was named
+- the `announce-waytide-at-session-start` rule — the unconditional read this changes
+- the local rule *Design By Efferent does not govern content work* — the hand-built stand-in this
+  would retire
+
+---
+
+Authored by Scott Bellware on Sun Aug 23 2026 at 1:58:07 AM PT
