@@ -1,0 +1,1 @@
+# The formulation "Agent harness and ally" is removed from the startup print and from the README's second heading, hours after being moved to the end of the load, leaving the title standing alone and the display carrying a name, a configuration, an ownership statement, and a wait — nothing that argues for the system to a reader already using it

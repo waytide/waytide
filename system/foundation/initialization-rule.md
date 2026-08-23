@@ -5,9 +5,6 @@ printed only where the project has declared a package set. Print them **once per
 head of the response that carries the rule read**. They go above any account of the read, and
 above every tool call the read makes.
 
-**One line is printed at the other end** — the formulation, which closes the load rather than
-opening it. It is the last section of this rule.
-
 **This rule file is opened ahead of every other**, which is what puts them in hand.
 
 First the title, on its own:
@@ -16,9 +13,11 @@ First the title, on its own:
 Waytide: Human-Agent Relations
 ```
 
-**It stands alone.** The formulation sat under it until 2026-08-23 and now closes the load. A
-title with nothing under it is a title, and what the system is gets said once the system is
-actually there.
+**It stands alone.** The formulation *Agent harness and ally* sat under it until 2026-08-23, when
+it was removed — first to the end of the load and then from the display altogether. Nothing
+replaces it, and nothing is to be put back under the title. What the system is belongs to the
+`README.md`, which a reader reaches deliberately. This display is read every session by someone who
+has read it before.
 
 **Then the package set, where one is declared**, after one blank line. It goes here rather than
 lower because it says what this session is running, and that belongs beside what the system is
@@ -132,42 +131,26 @@ announce-waytide-at-session-start rule permits unchanged. That rule requires the
 this file to carry no prose, so that *what this rule carries* comes first. The title is part of
 what this rule carries.
 
-**The title is the category line, and the formulation is printed at the other end of the load.**
-*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03, and *Agent
-harness and ally* is the formulation, first settled the same day and shortened on 2026-08-23. The
-root `README.md` leads with the two together. This display prints the same pair with the load
-between them, so the system still says one thing about itself wherever it is met — it says the
-halves at two moments.
+**The title is the category line.** *Waytide: Human-Agent Relations* was settled as the category
+line on 2026-08-03. It is what this display prints and what the root `README.md` leads with, so
+the system names itself the same way wherever it is met.
 
-**The formulation is not the generalized description**, which is the four-sentence paragraph
-*A Generalized Description of Waytide* settled on 2026-08-20. That paragraph says what Waytide
-does. This line says what Waytide is to the two parties, in four words, and it is short enough to
-stand under a title. This rule attributed the line to that aspiration until 2026-08-21, which
-named the wrong record.
+**Neither the formulation nor the generalized description is printed here.** The four-sentence
+paragraph *A Generalized Description of Waytide*, settled on 2026-08-20, says what Waytide does,
+and the formulation said what it is to the two parties. Both live in the `README.md`. This display
+carries a name, a configuration, an ownership statement, and a wait — and nothing that argues for
+the system to a reader who is already using it.
 
-**The ally is named without a qualifier, as of 2026-08-23.** The word in front of it took three
-revisions: *engineer ally* on 2026-08-03, *human ally* the same day because *human* pairs with
-*agent* as a kind of entity rather than a role, and *engineer ally* again on 2026-08-21 once the
-`language` vocabulary reserved **engineer** for the person the work is done with and for.
-
-**Dropping it settles the question rather than answering it a fourth time.** *Ally* stands as a
-bare noun beside *harness*, which is also bare, and the line no longer has to name which word for
-the non-agent party is the right one. What it gives up is that the pairing is no longer stated —
-the harness is the agent's and the ally is the engineer's, and the shortened line leaves a reader
-to see it. Three revisions of the qualifier are what argue it can be left to them.
-
-**They name the work, which is why the copyright line no longer does.** That line read
+**The title names the work, which is why the copyright line no longer does.** That line read
 `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no
 surrounding prose had nothing to attach itself to. The title now stands above it and names the
 work outright, so the copyright line carries the owner and the year alone.
 
-**The formulation is italicized and the title is not.** They were a name and a gloss on
-consecutive lines until 2026-08-23, and the emphasis was what separated them where no blank line
-did. Separated now by the whole load, the italics do different work: they mark the line as the
-system speaking about itself rather than reporting anything. Italics are available here
-because the agent's output is rendered as markdown. They are **not** available on the
-session-start notice, which the harness renders literally — the announce-waytide-at-session-start
-rule records what that cost when the notice's own markup reached the engineer as asterisks.
+**Emphasis is available here and not on the session-start notice.** The bold and italic in the
+package set stanza work because the agent's output is rendered as markdown. They are **not**
+available on the notice, which the harness renders literally — the announce-waytide-at-session-start
+rule records what that cost when the notice's own markup reached the engineer as asterisks. Nothing
+printed here is to be copied there without that in mind.
 
 **This surface is where a standing statement belongs, and the notice is not.** A line that never
 changes stops being read, which is this system's own argument against a permanent segment on the
@@ -193,41 +176,6 @@ license is read. The printed line does not carry terms and is not the place to p
 printed verbatim, so it does not track the clock and is not computed. It changes when the rule
 changes.
 
-## The formulation closes the load
-
-**Print the formulation last, after every file is read.** It is the final thing printed in the
-load — after the rules, after the vocabularies, after the journal, and after the deferred queue.
-Nothing follows it, and the session waits for the engineer from there.
-
-```
-*Agent harness and ally*
-```
-
-**It sat under the title until 2026-08-23**, and the engineer moved it here. What the move buys is
-that the claim is made when it can be met. Printed at the head it introduces a system that has read
-nothing yet; printed at the close it is said by a system that is loaded and can act as what the
-line calls it.
-
-**It carries no gap rule of its own**, being the last line rather than a line between two others.
-It follows whatever the deferred queue leaves, separated as one block from another.
-
-**It is printed once**, like everything else this rule carries. A session that reads the rules
-again does not print it again.
-
-**Why:** the block stands for the system being brought into force in this session. So it is
-printed at the moment the rule files are opened, the one moment only the agent is present for.
-The notice sits there for the same reason. It is the one moment in a session where the system
-is announced as itself rather than being used. A copyright notice belongs on the work at the
-point the work is presented, and so does the work's own name and what it is for.
-
-**How to apply:** read this file ahead of every other rule file. At the head of the response
-carrying the rest of the read, print the title. Put the italicized description on the next line.
-Then one blank line, then the copyright notice, then the license line on the next line. Then one
-blank line, then the loading line, then one blank line, then the block.
-
-Print all of it verbatim and in that order. Print no other words with any of them. Print them once per session and
-never again. There is no condition under which they are withheld.
-
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
@@ -252,3 +200,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 3:44:10 AM PT
