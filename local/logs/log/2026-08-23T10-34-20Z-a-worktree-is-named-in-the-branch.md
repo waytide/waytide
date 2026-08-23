@@ -1,0 +1,1 @@
+# A branch whose work has a worktree carries a worktree/ segment in its name, and adding a worktree to work already under way renames the branch — an exception to the clause keeping the upstream target out of a name, and one made deliberately because the existence of a worktree is asked about in git branch, where the record that would otherwise answer it is not
