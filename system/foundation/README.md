@@ -38,7 +38,10 @@ includes a time of day. Third is **purpose-over-category** (`rules-establish-a-m
 A rule's folder names the surface it acts on, not the purpose it serves.
 
 Foundation also provides project-wide commands: **status report** (a whole-project
-summary) and **next deferred item**.
+summary) and **next deferred item**. **A status report counts a hidden record rather than listing
+it** (`status-report-format`) — a record whose `**State:**` line reads `Suspended` is the first and
+today the only kind. The count is what makes it askable for: a record dropped entirely leaves a
+reader believing they have seen everything.
 
 **Every prompt to the engineer goes through the selection interface**
 (`present-every-prompt-through-askuserquestion`) — any selection, decision, or answer, never a prose
@@ -320,3 +323,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 9:36:21 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:23:26 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 12:59:23 AM PT

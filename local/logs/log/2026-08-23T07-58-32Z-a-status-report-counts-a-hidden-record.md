@@ -1,0 +1,1 @@
+# A status report counts a hidden record rather than listing it — a record whose `**State:**` line reads `Suspended` is the first and today the only kind, a later rule may name another, and the count is what makes the record askable for, since one dropped entirely leaves a reader believing they have seen everything
