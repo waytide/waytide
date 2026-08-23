@@ -1,0 +1,1 @@
+# The session-start notice is settled to print the active package set where one is available, printing nothing about a set where none is declared, which keeps the ordinary case as it is and makes the declaration visible at the place the read is announced rather than as a configuration the engineer has to look up

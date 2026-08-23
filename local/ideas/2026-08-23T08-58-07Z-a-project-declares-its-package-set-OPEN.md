@@ -78,6 +78,18 @@ attribute line the system already reads mechanically, the same shape as `**State
   what deactivation means before and after a restart, and the record above treats them as rivals
   wrongly.
 
+- **2026-08-23 — the session-start notice prints the active package set when one is available.**
+  The notice reports the set the project runs, beside what it already reports. Where no set is
+  declared it prints nothing about one, which is every project today and stays the ordinary case.
+
+  **It is the harness that prints it**, not the agent. `session-start.sh` reads the directories
+  present and emits the notice, and the announce-waytide-at-session-start rule reserves that line
+  to the harness. So this is a change to that script.
+
+  **It is what makes the declaration visible without being asked for.** A project decision that
+  governs which rules are read, and that is not stated where the read is announced, is a
+  configuration the engineer has to go and look up.
+
 ## What is not settled
 
 - **What deactivation does at the next session start**, now that the resolution above sequences
@@ -86,7 +98,9 @@ attribute line the system already reads mechanically, the same shape as `**State
 - **Where the declaration is written**, and whether that place is a new kind of file under
   `waytide/local/`.
 - **What reads it.** `session-start.sh` builds the read instruction and would have to name only the
-  active packages. The notice and the status line would presumably report the set.
+  active packages. That it prints the set is settled above; whether the status line does is not.
+- **What the notice's count counts** once a set is declared. It says `N packages` today, and
+  installed and active are then two different numbers.
 - **What `refresh-packages.sh` does with a deactivated package.** Refreshing what is not read is
   arguably right — it stays current for the day it is reactivated — and arguably waste.
 - **Whether a package can be activated singly**, outside any set, and whether a set is the only
@@ -110,3 +124,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:58:07 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:02:23 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:04:11 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 2:11:38 AM PT
