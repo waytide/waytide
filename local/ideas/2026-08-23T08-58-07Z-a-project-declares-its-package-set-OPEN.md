@@ -60,6 +60,24 @@ not a term, and not a record of work.
 attribute line the system already reads mechanically, the same shape as `**State:**` and
 `**Repository:**`.
 
+## Settled
+
+- **2026-08-23 — setting a package set in a running session does not unload what is already
+  read, and the engineer is told so.** The rules of every installed package are in the agent's
+  context by the time the set is declared, and there is no unread. The agent says that the
+  omitted packages' rules stay in force for this session and that Claude has to be restarted for
+  them to go.
+
+  **It is said at the moment the set is declared**, not left for the engineer to discover when a
+  deactivated rule is followed anyway. A mechanism whose effect is delayed and does not say so
+  reads as a mechanism that did not work.
+
+  **This makes two of the three readings of deactivation right at different moments.** Within the
+  session the most that can happen is *read and not applied*. At the next session start the
+  declaration can mean *not read*. So the two are not competing answers to one question — they are
+  what deactivation means before and after a restart, and the record above treats them as rivals
+  wrongly.
+
 ## What is not settled
 
 - **What deactivation does**, of the three readings above.
@@ -88,3 +106,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:58:07 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 2:02:23 AM PT
