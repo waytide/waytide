@@ -1,0 +1,1 @@
+# The README gains a definition of a package set with both sets and their members named, and a section on declaring one in a project that already holds more packages than it wants active — the two gaps left when the install command's own documentation was brought current

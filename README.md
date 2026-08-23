@@ -50,6 +50,7 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 ## Machinery
 
 - **Activation.** install.sh places the AGENTS.md bootstrap and .claude/settings.json. A SessionStart hook carries the read instruction and prints what is installed. A status line keeps the system's presence on screen.
+- **Package sets.** A named list of packages, installable by name. A project that holds more than it wants can declare the set it runs, and the rest deactivate without being uninstalled.
 - **The deferred queue.** Printed at startup, so parked work is not lost by going unread.
 - **Commands.** Status report, test report, test tree, lib report, next deferred item, timeline.
 - **11 scripts.** Installed with the packages or held at the authoring root.
@@ -65,7 +66,7 @@ sh install
 
 Or fetch it and run it from your project root:
 
-[`install`](install), which installs and refreshes packages. With no arguments it installs the default set. `sh install content` installs a package set, and `sh install foundation git` installs packages by name.
+[`install`](install), which installs and refreshes packages. It takes a list of names, and a name is a package set or a package. With no arguments it installs the default set.
 
 ### Warning
 
@@ -76,6 +77,44 @@ Execute the install script using `sh`:
 The script fetches the packages over SSH. Where no SSH key is registered, run it as `WAYTIDE_ORIGIN=https://github.com/waytide sh install`.
 
 The file is committed as an executable, but `curl` transfers content and not file metadata. The copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other script reaches a project by `git subtree`, which does preserve the mode.
+
+### Package sets
+
+A **package set** is a named list of packages, so a configuration that is wanted more than once is asked for by name rather than assembled again. Two exist:
+
+- **`default`** — `foundation`, `language`, `testing`, `git`, `versioning`, `design-by-efferent`, `journal`. Everything except the tool-specific packages. This is what no arguments installs.
+- **`content`** — `foundation`, `language`, `git`, `versioning`, `journal`. For a project whose product is prose or pages: articles, lessons, slide decks, a site. It leaves out `design-by-efferent`, whose five hinges are a design method for a unit of code, and `testing` with it.
+
+```
+sh install                 # the default set
+sh install content         # a package set
+sh install foundation git  # packages by name
+sh install content journal # a set and a package together
+```
+
+A set's members are installed as ordinary packages. Nothing records which set asked for them, and a project that installed `content` is indistinguishable afterward from one that named those five packages itself.
+
+## Running fewer packages than you installed
+
+Installing a subset is one way to run a package set. The other is to **declare one in a project that already holds more packages than it wants active**, which uninstalls nothing. A project that installed everything and later wants five packages does not have to take three back out.
+
+A project declares it by writing a record under `waytide/local/`, named for the moment it was made and for what it names:
+
+```
+waytide/local/2026-08-23T09-30-00Z-content-package-set.md
+
+- **Package set:** content
+- **Packages:** foundation, git, journal, language, versioning
+- **Inactive:** design-by-efferent, testing
+```
+
+The most recent such record is the one that holds, and declaring again writes a new one rather than editing it, so the earlier records are the history of what the project ran. Where no record exists, every installed package is active — which is every project until it says otherwise.
+
+**Every installed package is still read at session start.** The declaration governs which rules are **applied**, not which are read: a rule that is read and withheld can be cited, weighed, and reactivated within the session, and one that was never read cannot. The session-start read stays unconditional.
+
+**A set declared during a session takes effect at the next one.** The rules are already in the agent's context by then and there is no unread, so the agent says that a restart is needed rather than letting the declaration look as though it did nothing.
+
+The whole list is printed at the head of the session, under the title — the active packages in bold and the deactivated ones in italic, with a two-word legend under them.
 
 ## Packages
 
