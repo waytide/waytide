@@ -8,8 +8,10 @@ implementations, logs, migration, the journal, the rules, and the vocabulary, an
 is none of them. That gap is what *Waytide for content and web* names, and this file moves when
 that idea settles where content lives.
 
-**It takes no datetime prefix**, for the same reason `local/vocabulary.md` takes none. There is one
-draft rather than a series, and it is named for what it is. A second draft would change that.
+**It takes the ISO-8601-UTC datetime prefix**, like every other dated artifact under `local/`. A
+draft is a dated thing rather than a structural one — a later draft is a later file, and the two sort
+in the order they were written. That is what separates it from `local/vocabulary.md`, which
+accretes and is named for what it is.
 
 ## The draft
 
@@ -61,3 +63,4 @@ what someone would search for.
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:33:17 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 12:37:33 AM PT

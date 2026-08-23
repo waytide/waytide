@@ -1,0 +1,1 @@
+# The announcement draft takes the ISO-8601-UTC datetime prefix — a draft is a dated artifact rather than a structural one, so a later draft is a later file and the two sort in the order they were written, which is what separates it from `local/vocabulary.md`
