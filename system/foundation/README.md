@@ -164,6 +164,12 @@ written the same day and superseded within it. The protocol was the
 `journal` package's until 2026-08-18, and it was lifted here
 because nothing in it was ever about journals.
 
+**A list of records presented on request is a table** (`a-record-list-is-a-table`) — the handle
+first with no heading, the title next, and one column for the fact that was asked about. It reaches
+any record, and it does **not** reach the session-start deferred queue print, which its own rule
+fixes as rows because that one carries a one-line summary. Where a field runs to a sentence, rows
+are the form. The two are not in competition: they answer to the length of what is in them.
+
 **A historical record is edited for one reason only** — that it discloses what should not have
 been disclosed (`disclosure-is-the-one-reason-to-edit-a-historical-record`). The correction
 removes the disclosure and keeps every claim true by stating it at a lower resolution. It never
@@ -311,3 +317,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 9:36:21 AM PT
+Changed by Scott Bellware on Sun Aug 23 2026 at 12:23:26 AM PT

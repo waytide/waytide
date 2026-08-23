@@ -1,0 +1,1 @@
+# A `foundation` rule settles that a list of records presented on request is a table — the handle first with no heading, the title next, and one column for the fact asked about — reaching any record but not the session-start deferred queue print, whose own rule fixes it as rows because that one carries a one-line summary
