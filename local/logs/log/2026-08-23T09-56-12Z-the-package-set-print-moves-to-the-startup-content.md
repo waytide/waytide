@@ -1,0 +1,1 @@
+# The package set listing moves from the hook's notice to the startup content the agent prints after the category line, where markdown renders and the emphasis the engineer asked for is directly available — which retires the ANSI test unrun, since the question it was built to answer was a property of the channel it has left
