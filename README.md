@@ -4,9 +4,9 @@ By [The Eventide Project](https://eventide-project.org)
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
-Waytide offers a project four things: conventions that bind, work that records itself, a design method with the engineer steering at decision points, and the machinery that installs and activates all of it. 101 rule files and 6 vocabularies across 7 packages, plus tool-specific extensions.
+Waytide offers a project four things: rules that direct the agent's behavior, work that records itself, a design method with the engineer steering at decision points, and the machinery that installs and activates all of it. 101 rule files and 6 vocabularies across 7 packages, plus tool-specific extensions.
 
-## Conventions that bind, read fresh each session
+## Rules that direct the agent's behavior. The entire rule set is read and loaded by the agent at session start
 
 - **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
 - **Files, not memory.** Memory is written to disk, in the project's own `waytide/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is forbidden to stand in for a committed artifact.
