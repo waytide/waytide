@@ -35,7 +35,7 @@ Waytide offers a project five things: rules that direct the agent's behavior, wo
 
 ## Project-local rules
 
-A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own local rules and vocabulary overrules those in the base system.
+A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own local rules and vocabulary overrule those in the base system.
 
 ## Domain conventions
 
