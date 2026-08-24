@@ -87,9 +87,34 @@ read says so once, says nothing, or says it per package decides whether a plane 
 **The cost, stated plainly.** Eight network round trips inside a read that already takes a few
 moments. Whether that is measured before this is built is itself unsettled.
 
-**Whether it runs in this repository at all.** This is the authoring source: its packages are the
-originals rather than installed subtrees, and there is nothing upstream of them to be behind. The
-check is a consuming project's, and the composite would have to recognize that it is not one.
+**Whether it runs in this repository at all — settled 2026-08-24. It does.** The engineer's words:
+*a good, representative exercise of the implementation*.
+
+**What it checks here is inverted, and that is what makes it representative rather than a special
+case.** This is the authoring source, so its packages are the originals and can never be **behind**.
+What they can be is **ahead** — unpublished, with the component repository holding an older split.
+The comparison is the same one either way: take the package, take the remote head, and say which
+side is in front.
+
+**The routine already exists, run by hand.** A publish splits each package, compares the split
+against `git ls-remote`, and reports up to date, behind by N and fast-forwarding, or diverged. That
+was run four times on 2026-08-24. Building the check here mechanizes a thing this repository already
+does at the moment it matters, which is why it exercises the implementation rather than simulating
+one.
+
+**Three differences to expect, and each is a decision rather than an obstacle.**
+
+- **The split is the expensive half.** A consuming project reads a squash commit message for its
+  last-pulled SHA. The composite has to run `git subtree split` per package to have anything to
+  compare, which is real work inside a read.
+- **What is offered differs.** *Update now* has no meaning here. *Publish now* is the counterpart,
+  and it is governed by the local a-package-is-published-from-master rule — which forbids offering
+  a publish while an experiment or a feature is open, and forbids naming one as a precondition.
+  **So the composite may be able to report and not to ask**, which is the reverse of the consuming
+  project's case.
+- **Ahead is the ordinary state here** and behind is the alarm. Every commit to a package leaves it
+  ahead until someone publishes, so a check that speaks up whenever a package is ahead would speak
+  up constantly. What threshold is worth reporting is open.
 
 **How much of the unconditional read this touches.** Less than the first version of this record
 claimed. The announce-waytide-at-session-start rule makes the read unconditional because a session
@@ -117,3 +142,4 @@ Related:
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 2:37:14 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:44:02 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 2:52:38 PM PT

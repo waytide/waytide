@@ -1,0 +1,1 @@
+# The composite runs the package currency check too, as a representative exercise of the implementation — its packages can only be ahead rather than behind, and publish rather than update is the counterpart act
