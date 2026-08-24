@@ -20,7 +20,7 @@ Waytide offers a project five things: rules that direct the agent's behavior, wo
 - **Design By Efferent.** The design process anchored in proof. The call written before any implementation, shaping the interface by its intended use. An updated TDD variant with accommodations for AI.
 - **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar — unless you want to. Running the red, green, refactor cycle is a choice the implementation checkpoint offers, not a ritual it performs.
 - **Five checkpoints:** The "hinges", in DBE parlance. The call, the way to prove the call's effects, the conditions necessary for proving it, the implementation of the feature, and any follow-up clarifications or evolutions. The agent provides reasonable assumptions and options, or the engineer takes the helm.
-- **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go their own way  rather than just rubber stamp the agent.
+- **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go their own way rather than just rubber stamp the agent.
 - **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every iteration, or to check in at every hinge to allow the engineer to decide the key points. The methodology is respected either way. Only the amount of unchecked work changes.
 
 ## The work records itself
