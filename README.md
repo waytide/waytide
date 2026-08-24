@@ -4,23 +4,24 @@ By [The Eventide Project](https://eventide-project.org)
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
-Waytide offers a project four things: rules that direct the agent's behavior, work that records itself, a design method with the engineer steering at decision points, and the machinery that installs and activates all of it. 101 rule files and 6 vocabularies across 7 packages, plus tool-specific extensions.
+Waytide offers a project four things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
 
-## Rules that direct the agent's behavior. The entire rule set is read and loaded by the agent at session start
+## Rules that direct the agent's behavior
 
-- **One rule per file, in prose, each with its reasoning and its application stated.** Read at session start and followed, overriding default agent behavior where they conflict.
-- **Files, not memory.** Memory is written to disk, in the project's own `waytide/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is forbidden to stand in for a committed artifact.
+- **Rules loaded fresh at startup.** The entire rule set is read and loaded by the agent at session start, rather than the agent only applying what it remembers.
+- **Files, not memory.** Memory is written to disk, in the project's own `waytide/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is fed by the committed artifacts.
+- **One rule per file, written in prose.** A rule is in one file and written in prose. They're readable and understandable, and easy to find and identify in your project's directories.
 - **Work that records itself.** Comprehensive logging and recording of the engineer's decisions and the agent's actions.
 - **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
-- **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing packages, refreshing them, and reporting on changes.
+- **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing and refreshing packages, and reporting on changes.
 
-## A design method with the engineer steering at decision points
+## A design method with the engineer in control at decision points
 
-- **Design By Efferent.** The call written before any implementation, so the interface is shaped from the use site. An updated TDD variant with accommodations for AI.
+- **Design By Efferent.** The design process anchored in proof. The call written before any implementation, shaping the interface by its intended use. An updated TDD variant with accommodations for AI.
 - **Gates, not ceremony.** The loop waits only where a decision is subtle and load-bearing. No pause at a red or green bar — unless you want to. Running the red, green, refactor cycle is a choice the implementation checkpoint offers, not a ritual it performs.
-- **Five checkpoints:** the call, the way to prove the call's effects, the conditions necessary to prove it, the implementation of it, and following clarifications and evolutions. The agent provides reasonable assumptions and options, or the engineer takes the helm.
-- **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go their own way, rather than just rubber stamp the agent.
-- **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every task. The methodology is respected either way. Only the amount of unchecked work changes.
+- **Five checkpoints:** The "hinges", in DBE parlance. The call, the way to prove the call's effects, the conditions necessary for proving it, the implementation of the feature, and any follow-up clarifications or evolutions. The agent provides reasonable assumptions and options, or the engineer takes the helm.
+- **Options, never a single proposal.** Every checkpoint is a gate that presents possible solutions. A free-text escape hatch at every decision lets the engineer go their own way  rather than just rubber stamp the agent.
+- **Attended or unattended.** The engineer chooses whether to let the agent run free at the start of every iteration, or to check in at every hinge to allow the engineer to decide the key points. The methodology is respected either way. Only the amount of unchecked work changes.
 
 ## The work records itself
 
@@ -30,19 +31,17 @@ Waytide offers a project four things: rules that direct the agent's behavior, wo
 - **logs/** — The decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
 - **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
 - **journal/** — The engineer's periodic record, written by the engineer in their own words. The agent only reads these records. Read at session start, but not binding.
-- **migration/** — Execution plans for content moving to or from another repository.
+- **migration/** — Execution plans for rules and content moving to or from another repository, or to shape existing artifacts to changes to the Waytide system, or even a project's own local rules.
 
 ## Project-local rules
 
-A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own vocabulary decides over every package's.
-
-`waytide/local/` is never split or pushed, so a project-specific rule cannot leak upstream.
+A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own local rules and vocabulary overrules those in the base system.
 
 ## Domain conventions
 
 - **Language.** Words treated as design decisions, literal naming, no slang, and Eventide Technical English (ETE) extended from the [ASD-STE100](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf).
 - **Testing.** Controls rather than fixtures, actuate once and assert each outcome, preconditions, naming.
-- **Git.** Subject-first messages, suite before the commit decision, no Claude co-author trailer, an announced branch switch.
+- **Git.** Subject-first messages, test suite before the commit decision, no Claude co-author trailer, an announced branch switch.
 - **Versioning.** What each digit in a version number means, and the next version decision options presented to the engineer.
 
 ## Machinery
@@ -55,6 +54,8 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 
 ## Install Waytide
 
+Waytide's packages are installed using `git subtree`. Each package is its own subtree, which allows the packages to be refreshed from the source.
+
 Install all of Waytide's packages at once with:
 
 ```
@@ -62,9 +63,7 @@ curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
 sh install
 ```
 
-Or fetch it and run it from your project root:
-
-[`install`](install), which installs and refreshes packages. It takes a list of names, and a name is a package set or a package. With no arguments it installs the default set.
+The `install` script installs and refreshes packages. It takes a list of names. A name is either the name of a package set or a package. With no arguments it installs the default set.
 
 ### Warning
 
@@ -106,13 +105,13 @@ waytide/local/2026-08-23T09-30-00Z-content-package-set.md
 - **Inactive:** design-by-efferent, testing
 ```
 
-The most recent such record is the one that holds, and declaring again writes a new one rather than editing it, so the earlier records are the history of what the project ran. Where no record exists, every installed package is active — which is every project until it says otherwise.
+Multiple package set files can be recorded over time. The most recent one controls. The earlier records are the history of what the project ran previously. Where no record exists, every installed package is active.
 
 **Every installed package is still read at session start.** The declaration governs which rules are **applied**, not which are read: a rule that is read and withheld can be cited, weighed, and reactivated within the session, and one that was never read cannot. The session-start read stays unconditional.
 
 **A set declared during a session takes effect at the next one.** The rules are already in the agent's context by then and there is no unread, so the agent says that a restart is needed rather than letting the declaration look as though it did nothing.
 
-The whole list is printed at the head of the session, under the title — the active packages in bold and the deactivated ones in italic, with a count of how many of the installed packages are active.
+The list of installed packages is printed at the start of a session, under the title — the active packages in bold and the deactivated ones in italic, with a count of how many of the installed packages are active.
 
 ## Packages
 
@@ -127,7 +126,6 @@ The whole list is printed at the head of the session, under the title — the ac
 A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 
 ```
-ext/ruby-lang       →  every package below
 design-by-efferent  →  foundation, language, testing
 testing             →  foundation, language
 language            →  foundation
@@ -136,6 +134,8 @@ journal             →  foundation
 foundation          →  (nothing — the base every other package builds on)
 git                 →  (nothing — standalone)
 versioning          →  (nothing — standalone)
+
+ext/ruby-lang       →  every package above
 ```
 
 ## Using a specific package in a project
@@ -163,15 +163,13 @@ git subtree pull \
 
 ## Extensions and externals
 
-Most of Waytide is about how the work is done, whatever a project is built with. Some of it is not. Prescriptive Ruby style, the command that runs a Ruby suite, and the mechanics of releasing a gem are about **a tool a project uses**, and they are inert in a project that does not use it.
+Most of Waytide is about how the work is done, whatever a project is built with. Some of it is not. For example, programming language-specific style, the command that runs a test suite, and the mechanics of releasing a package are about **a tool a project uses**, and they are inert in a project that does not use it.
 
-Those live in **`ext/`**, one package per subject. Such a package is not part of the default distribution — a project takes the one it needs, and takes nothing for the tools it does not use.
+Those live in **`ext/`**, one package per subject. Such a package is not part of the default distribution — a project takes what it needs, and takes nothing from the tools it does not use.
 
-**`ext/ruby-lang` is the only one published so far**, from [waytide/waytide-ruby](https://github.com/waytide/waytide-ruby). Its dependency is every package above, so installing it installs all of Waytide.
+**More are to come.** An **external** is something Waytide did not write and does not govern, and an **extension** is something that adds to Waytide. A language, a test framework, a package manager, and a build system are each one or the other, and their directories are in `ext/`.
 
-**More are to come.** The name says what the grouping admits. An **external** is something Waytide did not write and does not govern, and an **extension** is something that adds to Waytide for one stack or one kind of project. A language, a test framework, a package manager, and a build system are each one or the other, and `ext/` admits them without a reading having to be argued for each. The grouping was `tools/` until 2026-08-23, where every member had to be called a tool.
-
-**Such a package is authored in its own repository**, rather than here and split out. It holds rules for something this composite has no other reason to know about, and nothing splits into it.
+**Such a package is authored in its own repository**, rather than here and then split out. It holds rules for something this composite has no other reason to know about, and nothing spills into it.
 
 ## Origins
 
