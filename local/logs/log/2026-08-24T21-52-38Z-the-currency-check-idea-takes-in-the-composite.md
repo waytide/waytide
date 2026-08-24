@@ -1,0 +1,1 @@
+# The currency-check idea takes in the composite — the check is to run here too, as a representative exercise of the implementation, this repository's packages being able only to be ahead rather than behind, with publish rather than update the counterpart act

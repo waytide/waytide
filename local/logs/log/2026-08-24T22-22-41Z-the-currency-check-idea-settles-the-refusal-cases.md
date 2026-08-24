@@ -1,0 +1,1 @@
+# The currency-check idea settles its refusal cases — an unclean working tree or an unreachable remote is to be reported with no update offered, so the second prompt does not fire, and every package ahead of its component repository is to be reported, since the check is to run once at load

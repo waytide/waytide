@@ -1,0 +1,1 @@
+# The currency-check idea settles its first prompt — it is to ask whether to check for updates at all, offering yes for this session, no for this session, or never, the last writing a record under local/ that future sessions read

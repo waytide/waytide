@@ -1,1 +1,0 @@
-# The package currency check belongs to the rule set read at the engineer's first prompt, not to the session-start hook — the agent has a turn and the selection interface there, and the read already announces its wait

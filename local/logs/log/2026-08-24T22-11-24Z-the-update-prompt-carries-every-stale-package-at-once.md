@@ -1,1 +1,0 @@
-# The currency check's second prompt carries every stale package at once — update all, decide one at a time, or update none — and the gate sits after the startup content and before the packages are read

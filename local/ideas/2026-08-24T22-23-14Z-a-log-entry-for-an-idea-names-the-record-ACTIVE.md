@@ -14,7 +14,7 @@ system does not.
 
 ## The corpus carries the two forms
 
-**The recent entries assert the content.** Five were written on 2026-08-24 for the
+**The recent entries assert the content.** Six were written on 2026-08-24 for the
 a-package-checks-whether-it-is-current-when-it-loads idea, which is `Open`:
 
 - *The package currency check belongs to the rule set read at the engineer's first prompt, not to
@@ -75,6 +75,10 @@ reader has nothing to weigh it against.
 **They are historical records.** The disclosure-is-the-one-reason-to-edit-a-historical-record rule
 governs, and nothing here is a disclosure. This reaches what is written from now on.
 
+**2026-08-24 — this no longer holds, and the engineer reversed it within the hour.** They directed
+that the entries creating the wrong understanding be corrected. The section above keeps its wording,
+per the amend-by-dated-addition practice, and the resolution below states what replaced it.
+
 ## Settled
 
 - **2026-08-24 — an entry pertaining to an idea names the record and what happened to it.** That is
@@ -82,6 +86,14 @@ governs, and nothing here is a disclosure. This reaches what is written from now
   it is attributed to the record rather than stated as the system's behavior.
 - **2026-08-24 — an entry never states an unbuilt direction in the indicative mood.** This reaches
   the commit subject the entry travels in.
+- **2026-08-24 — the six entries that assert unbuilt behavior are corrected**, on the engineer's
+  instruction. Each title is rewritten to name the record and what happened to it, and each file is
+  renamed to match, since a filename asserts the same claim in the listing the log is scanned by.
+  The correction changes no fact — what each entry recorded is what it still records, in a mood that
+  marks it as proposed.
+- **2026-08-24 — the correction does not extend past those six.** The rest of the log is read and
+  found sound: an entry reading indicatively elsewhere reports a rule that is in force, a feature
+  that merged, or something that happened.
 
 ## Out of Scope / Deferred
 
@@ -97,7 +109,10 @@ governs, and nothing here is a disclosure. This reaches what is written from now
 - **No conforming pass follows.** Recording this settles what is written from now on, per the
   `language` package's a-word-is-reserved-in-six-steps rule's statement that a conforming pass is
   asked for separately.
+  - **2026-08-24 — the engineer asked for one separately, which is what that rule anticipates.** It
+    was bounded to the six entries and is done. Nothing standing was conformed beyond them.
 
 ---
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 3:23:14 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:29:33 PM PT

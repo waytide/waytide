@@ -1,0 +1,1 @@
+# The currency-check idea is corrected to place the check in the rule set read at the engineer's first prompt rather than in the session-start hook — the agent has a turn and the selection interface there, and the read already announces its wait

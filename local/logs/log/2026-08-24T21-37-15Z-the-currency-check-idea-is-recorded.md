@@ -1,0 +1,1 @@
+# That a package should check whether it is current with its upstream when it loads, and that a stale one is put to the engineer, is recorded as an aspiration — Open, since where the check runs and whether an offer may sit ahead of the unconditional read are unsettled

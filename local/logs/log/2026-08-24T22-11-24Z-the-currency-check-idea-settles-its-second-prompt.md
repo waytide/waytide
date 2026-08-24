@@ -1,0 +1,1 @@
+# The currency-check idea settles its second prompt — it is to carry every stale package at once, offering update all, decide one at a time, or update none, with the gate sitting after the startup content and before the packages are read

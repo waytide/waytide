@@ -1,0 +1,1 @@
+# The six currency-check log entries are corrected on the engineer's instruction — each title now names the record and what happened to it, each file is renamed to match, and the a-log-entry-for-an-idea-names-the-record aspiration is amended by dated addition, its not-revised section and its no-conforming-pass item both reversed within the hour of being written
