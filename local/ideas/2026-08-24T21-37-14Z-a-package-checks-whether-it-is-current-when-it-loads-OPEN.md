@@ -83,14 +83,38 @@ recent `*-package-set.md` and carries what it says to the agent on `additionalCo
 route carries *do not ask*, which puts the one thing a hook is good at — reading a file before the
 session — in front of the one thing it cannot do.
 
-**What the first prompt does not settle:** what happens **after** a check finds a stale package.
-Whether each one is put separately, whether they are put together, and what the answers are, are
-open. The eight-prompts-in-one-read shape is narrowed by this gate and not removed by it.
+**The second prompt is settled — 2026-08-24.** Where the check finds stale packages, **all of them
+are put in one prompt** rather than one prompt each. It carries three candidates:
 
-**Where the prompt sits in the read is open.** The startup content prints at the head, and the
-packages are read after it. A gate between the two stops the read in its middle, at the engineer's
-first prompt, before any rule is in hand. That may be the only place it can go and it is not yet
-argued for.
+- **Update all**, and the option **lists the packages** it would update.
+- **Decide one at a time**, which opens a sequence of yes-or-no prompts, one per stale package.
+- **Update none of them.**
+
+**Three candidates and `Explain` is four again**, and the per-package prompts under *decide one at a
+time* are yes, no, and `Explain`.
+
+**This is the attended-or-unattended trade, reached by another route.** *Update all* is big-batch and
+spends no attention. *Decide one at a time* is small-batch and spends it per package. Which is
+cheaper depends on how much the engineer wants to see, and the decision is theirs — the same shape
+the attended-or-unattended-is-chosen-at-the-start rule already puts at a feature's start.
+
+**So the eight-prompts-in-one-read shape is gone as a default.** One prompt is the ordinary path, and
+eight happen only where the engineer asks for them.
+
+**The prompt fires only where there is something to decide.** A check that finds nothing stale
+produces no second prompt and the read proceeds. A prompt with no pending decision is the furniture
+the corpus names, and this avoids it by construction.
+
+**The placement is settled — 2026-08-24. The prompt goes after the startup content and before the
+packages are read.**
+
+**So the read spans more than one response**, which it did not before. The startup content prints at
+the head of the first, the gate ends it, and the check, any update, the package read, and the
+deferred-queue print follow in the responses after the engineer answers.
+
+**The initialization rule's wording assumes one response** — *at the head of the response that
+carries the rule read*. It still holds, since the startup content heads the first of them, but the
+rule was written when the read was one turn and would want reading against this.
 
 **A prompt on every session is the failure this design already answers.** The corpus says it twice —
 a line always present is read once and never again, and a selection prompt where no decision is
@@ -106,9 +130,10 @@ that state, or offers it and fails, is open.
 they asked to be a read. That is a larger act than the offer's wording suggests, and the offer
 should say so.
 
-**What happens to a package already read.** The read is ordered, foundation first. A package updated
-at position six leaves the five before it read at whatever version they were, which is correct where
-they were current and is a silent inconsistency where they were stale and declined.
+**What happens to a package already read — answered 2026-08-24 by the placement.** The gate sits
+**before** the packages, so every package is checked and any update applied while nothing has been
+read. There is no package read at an older version than one updated after it, and the ordering
+problem this recorded does not arise.
 
 **Whether declining is remembered.** An engineer who says *later* wants to be asked again at some
 point and not at the next prompt. Nothing in the system records a declined offer today, and the
@@ -177,3 +202,4 @@ Authored by Scott Bellware on Mon Aug 24 2026 at 2:37:14 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:44:02 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:52:38 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:01:55 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:11:24 PM PT
