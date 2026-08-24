@@ -3,7 +3,7 @@
 #
 # Usage:
 #
-#   test/automated/package-set-declaration.sh
+#   test/interactive/package-set-declaration.sh
 #
 # Run from the repository root.
 #

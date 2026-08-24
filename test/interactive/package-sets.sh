@@ -3,7 +3,7 @@
 #
 # Usage:
 #
-#   test/automated/package-sets.sh
+#   test/interactive/package-sets.sh
 #
 # Run from the repository root.
 #

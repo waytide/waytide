@@ -4,7 +4,7 @@
 #
 # Usage:
 #
-#   test/automated/tool-specific-distribution.sh
+#   test/interactive/tool-specific-distribution.sh
 #
 # Run from the repository root.
 #
