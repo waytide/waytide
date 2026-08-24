@@ -1,6 +1,6 @@
 # The grouping is `ext/`, for external and extension both
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 **Why this state:** the name answers the admission question that two earlier ideas left open, and
@@ -11,6 +11,17 @@ words. It is promoted to `Active` once those are weighed.
 two costs above were weighed and taken. It supersedes *The grouping is `tool/`, not a language*.
 The work is the feature *The `ext/` Grouping* and the migration record *The `tools/` grouping
 becomes `ext/`*. It reaches `Realized` when the migration's last increment is done.
+
+**2026-08-24 — realized.** The grouping is `ext/`. The feature merged to `master`, four packages
+were published, `waytide/waytide-ruby` installs at `waytide/system/ext/ruby-lang`, and the four
+projects that held the package re-added it there. `tools/` names nothing live.
+
+**Two of the four unsettled items below are answered by the work, and two are not.** *Whether the
+rename happens now or waits* — it happened, with `ext/` holding one member. *What a consuming
+project does* — it removes the directory and re-adds the subtree at the new prefix, which the
+migration record states after a `git mv` proved insufficient. **Whether the abbreviation is
+accepted** and **whether both meanings are stated anywhere** are open still. The name is in use
+and neither question was settled by using it.
 
 ## Premise
 
@@ -82,3 +93,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:17:30 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:14:38 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 12:41:20 PM PT
