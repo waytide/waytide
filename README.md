@@ -2,7 +2,7 @@
 
 By [The Eventide Project](https://eventide-project.org)
 
-The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to dictate the answer.
+The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
 Waytide offers a project four things: conventions that bind, work that records itself, a design method with the engineer steering at decision points, and the machinery that installs and activates all of it. 101 rule files and 6 vocabularies across 7 packages, plus tool-specific extensions.
 
