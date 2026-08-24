@@ -58,11 +58,44 @@ installed path flattened to dashes, or the name a package declares on its `**Rep
 
 ## What is not settled
 
-**What the engineer is offered, and how many times.** *Update now and read what arrives* is one
-answer. *Read what is installed and refresh later* is another. *Do not ask again for this package*
-may be a third. **Per package or once for all of them** is a separate decision: eight installed
-packages could mean eight prompts inside a single read, which is the shape most likely to make the
-whole thing unwelcome.
+**The first prompt is settled — 2026-08-24.** It asks **whether to check for updates at all**, and
+it carries three candidates:
+
+- **Yes**, for this session.
+- **No**, for this session.
+- **Never** — don't ask again, for this and all future sessions.
+
+**Three candidates and `Explain` is exactly four**, which is the selection interface's cap. A fourth
+candidate would not fit, which is one reason *never* and *don't ask again* are one option with two
+phrasings rather than two options.
+
+**The gate sits ahead of the network rather than ahead of the read.** Declining costs nothing — no
+`ls-remote`, no split, no wait. That answers the round-trip cost recorded above: it is paid only on
+*yes*.
+
+**`Never` writes a file under `waytide/local/`** that directs future sessions to skip the check. The
+a-project-declares-its-package-set rule is the precedent for its shape: a dated record, plain text
+data attribute lines, and a new record rather than an edit when the decision changes. So *never* is
+reversible by declaring again, like every other decision recorded that way.
+
+**The hook can read that file even though it cannot ask.** `session-start.sh` already finds the most
+recent `*-package-set.md` and carries what it says to the agent on `additionalContext`. The same
+route carries *do not ask*, which puts the one thing a hook is good at — reading a file before the
+session — in front of the one thing it cannot do.
+
+**What the first prompt does not settle:** what happens **after** a check finds a stale package.
+Whether each one is put separately, whether they are put together, and what the answers are, are
+open. The eight-prompts-in-one-read shape is narrowed by this gate and not removed by it.
+
+**Where the prompt sits in the read is open.** The startup content prints at the head, and the
+packages are read after it. A gate between the two stops the read in its middle, at the engineer's
+first prompt, before any rule is in hand. That may be the only place it can go and it is not yet
+argued for.
+
+**A prompt on every session is the failure this design already answers.** The corpus says it twice —
+a line always present is read once and never again, and a selection prompt where no decision is
+pending doubles the turns and becomes furniture. **`Never` is what keeps this from becoming that**,
+and it is worth stating that the option is load-bearing rather than a convenience.
 
 **A subtree pull needs a clean working tree**, which `refresh-packages.sh` states. An engineer at
 the start of a session frequently has uncommitted work, so *update now* would fail for the ordinary
@@ -143,3 +176,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 24 2026 at 2:37:14 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:44:02 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:52:38 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:01:55 PM PT
