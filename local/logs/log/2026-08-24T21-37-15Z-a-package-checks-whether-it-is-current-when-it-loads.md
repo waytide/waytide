@@ -1,0 +1,1 @@
+# A package checks whether it is current with its upstream when it loads, and a stale one is put to the engineer — recorded Open, since where the check runs and whether an offer may sit ahead of the unconditional read are unsettled
