@@ -121,10 +121,20 @@ a line always present is read once and never again, and a selection prompt where
 pending doubles the turns and becomes furniture. **`Never` is what keeps this from becoming that**,
 and it is worth stating that the option is load-bearing rather than a convenience.
 
-**A subtree pull needs a clean working tree**, which `refresh-packages.sh` states. An engineer at
-the start of a session frequently has uncommitted work, so *update now* would fail for the ordinary
-case rather than the exception. Whether the check reports staleness without offering the update in
-that state, or offers it and fails, is open.
+**A subtree pull needs a clean working tree — settled 2026-08-24. Where the tree is not clean, say
+so and do not offer the update.** `refresh-packages.sh` states the requirement, and an engineer at
+the start of a session frequently has uncommitted work, so this is the ordinary case rather than the
+exception.
+
+**Which means the second prompt does not fire at all there.** Take *update all* and *decide one at a
+time* away and nothing is left to decide. A prompt carrying one candidate is a prompt with no
+pending decision, which is the furniture the corpus refuses. **So the read reports what it found and
+carries on.** Telling and asking are different acts, and only the first is available when nothing can
+be done.
+
+**The check still runs.** Knowing which packages are stale is worth having even where the update
+cannot happen now, since it is what makes committing and refreshing an informed act rather than a
+guess.
 
 **A refresh writes merge commits**, so accepting writes to the engineer's repository during what
 they asked to be a read. That is a larger act than the offer's wording suggests, and the offer
@@ -139,8 +149,18 @@ problem this recorded does not arise.
 point and not at the next prompt. Nothing in the system records a declined offer today, and the
 ask-at-once rule's *not asked twice in the same session* is the nearest precedent.
 
-**What an unreachable remote does.** Offline, or behind a firewall, every check fails. Whether the
-read says so once, says nothing, or says it per package decides whether a plane journey is workable.
+**An unreachable remote — settled 2026-08-24, the same way. Say so, and do not offer the update.**
+Offline or behind a firewall, the comparison cannot be made, so there is nothing to offer and the
+read reports and carries on.
+
+**The two failures are known at different moments, and that is the one asymmetry.** The working
+tree's state is knowable before any network call, so an unclean tree is known before the check
+starts. A remote's reachability is discovered **during** the check, one package at a time.
+
+**So a partial failure is possible**, and the reading taken here is that a package whose remote could
+not be reached is reported as unchecked, while a package that was checked and is stale is still
+offered. That follows from the check being per package. It is a judgment rather than something the
+engineer stated, and it is marked as one.
 
 **The cost, stated plainly.** Eight network round trips inside a read that already takes a few
 moments. Whether that is measured before this is built is itself unsettled.
@@ -170,9 +190,22 @@ one.
   a publish while an experiment or a feature is open, and forbids naming one as a precondition.
   **So the composite may be able to report and not to ask**, which is the reverse of the consuming
   project's case.
-- **Ahead is the ordinary state here** and behind is the alarm. Every commit to a package leaves it
-  ahead until someone publishes, so a check that speaks up whenever a package is ahead would speak
-  up constantly. What threshold is worth reporting is open.
+- **Every package that is ahead is reported — settled 2026-08-24.** The engineer's reason: it
+  happens once, at the loading of Waytide. Every commit to a package leaves it ahead until someone
+  publishes, so *ahead* is the ordinary state here — but a report paid once per session is cheap
+  enough that no threshold is worth inventing. This is the status line's argument in reverse: that
+  line refuses the network because it renders every turn, and this runs once.
+
+- **Reporting every one collides with the local publish rule, and the collision is recorded rather
+  than resolved.** The a-package-is-published-from-master rule forbids offering a publish while an
+  experiment or a feature is open — *not as a next step, not in a state summary, not as an option
+  among others* — and the `foundation` downstream-work-is-never-offered rule says a line reporting
+  what is not done is a prompt whatever its grammar.
+
+  **A line saying `foundation` is ahead of its component repository states a fact about two refs and
+  names no act.** Whether that is inside what those rules forbid is a question for the build. The
+  engineer has settled that every one is reported, and this records what that runs into rather than
+  leaving it to be met later.
 
 **How much of the unconditional read this touches.** Less than the first version of this record
 claimed. The announce-waytide-at-session-start rule makes the read unconditional because a session
@@ -203,3 +236,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 2:44:02 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 2:52:38 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:01:55 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:11:24 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:22:41 PM PT

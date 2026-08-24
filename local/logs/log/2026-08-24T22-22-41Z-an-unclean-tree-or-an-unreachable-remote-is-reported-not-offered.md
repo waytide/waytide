@@ -1,0 +1,1 @@
+# An unclean working tree or an unreachable remote is reported and the update is not offered, so the second prompt does not fire — and every package ahead of its component repository is reported, since the check runs once at load
