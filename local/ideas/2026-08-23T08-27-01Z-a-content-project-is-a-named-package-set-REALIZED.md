@@ -1,10 +1,20 @@
 # A content project is a named set of packages
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 **Why this state:** settled on 2026-08-23 and being built. What remains open is the membership of
 the `content` set rather than the mechanism.
+
+**2026-08-24 — realized.** `content` exists as a named set, `install` places it, and the website
+declares it — foundation, git, journal, language, and versioning active, with design-by-efferent,
+testing, and `ext/ruby-lang` deactivated.
+
+**One thing this asked for is not built, and it is recorded rather than folded in.** A set is
+written only inside `install`, where a script reads it and a person does not. The feature record
+*Package Sets* names it under *What is not built*. The set is named and installable, which is what
+this idea's title asks for, so the residue is where a definition lives rather than whether one
+exists.
 
 ## Premise
 
@@ -90,3 +100,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:27:01 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:35:46 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 12:51:37 PM PT

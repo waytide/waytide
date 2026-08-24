@@ -1,11 +1,18 @@
 # A project declares its package set, and the packages outside it deactivate
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 **Why this state:** the two questions that held it `Open` are answered. What deactivation does is
 settled, and the answer dissolves the conflict with the unconditional session-start read rather
 than requiring that rule to change.
+
+**2026-08-24 — realized.** A project declares a set in a dated record under `waytide/local/`,
+`session-start.sh` reads the most recent one and carries it to the agent, and the
+initialization-rule prints it after the category line. The rule is
+`a-project-declares-its-package-set`, and it is proved by
+`test/automated/package-set-declaration.sh`. Two projects hold a declaration: this composite
+declares `default`, and the website declares `content` with three packages deactivated.
 
 ## Premise
 
@@ -185,3 +192,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 2:04:11 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:11:38 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:14:52 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 2:34:07 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 12:51:37 PM PT

@@ -1,10 +1,15 @@
 # The install takes a package set on the command line
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 **Why this state:** settled on 2026-08-23 and being built by the Content and Web feature. The
 argument list is a list of names, and a name is a package set or a package.
+
+**2026-08-24 — realized.** `install` takes a list of names, a name being a package set or a
+package, and `default` is a set like any other rather than a code branch. It is proved by
+`test/automated/package-sets.sh`, which runs offline against splits of this repository. The work
+is the feature *Package Sets*, which was started as *Content and Web* and renamed.
 
 ## Premise
 
@@ -91,3 +96,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:03:23 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:36:00 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 12:51:37 PM PT
