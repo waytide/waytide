@@ -108,7 +108,10 @@ idea that was neither had nowhere to sit.
   the file.
 - **Each artifact pairs with a log entry** — on creation, on each **Settled** resolution, and on
   each change of state (`direction-and-sequencing-artifacts-take-a-log-entry`). A completed task
-  takes none, and neither does prose that settles nothing. It closes an asymmetry: four other
+  takes none, and neither does prose that settles nothing. **The entry names the record and what
+  happened to it**, and never states an unbuilt direction in the indicative mood — the grammar the
+  `git` package asks for is right for a change to the software and wrong for a record that only
+  settles one. That reaches the commit subject the entry travels in. It closes an asymmetry: four other
   conventions already stated their own pairing, and these two rested on the decision log's
   when-in-doubt clause.
 - **An implementation record pairs with a log entry** too
@@ -331,3 +334,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 12:59:23 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:01:04 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:07:00 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:38:02 PM PT

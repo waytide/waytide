@@ -1,6 +1,6 @@
 # A log entry for an idea names the record and what happened to it, and never asserts the idea's content as fact
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 ## Premise
@@ -91,6 +91,13 @@ per the amend-by-dated-addition practice, and the resolution below states what r
   renamed to match, since a filename asserts the same claim in the listing the log is scanned by.
   The correction changes no fact — what each entry recorded is what it still records, in a mood that
   marks it as proposed.
+- **2026-08-24 — the direction-and-sequencing-artifacts-take-a-log-entry rule carries it**, gaining
+  a *What the entry says* section, a paragraph in its `**Why:**`, an instruction in its
+  `**How to apply:**`, and the `git` grammar rules in its `Related:` list. Its title gains a clause,
+  and its filename is unchanged. The alternative, a rule of its own, was put to the engineer and
+  declined.
+- **2026-08-24 — the record is Realized**, the rule that carries the obligation now existing. The
+  three remaining Out of Scope items are excluded by decision rather than left undone.
 - **2026-08-24 — the correction does not extend past those six.** The rest of the log is read and
   found sound: an entry reading indicatively elsewhere reports a rule that is in force, a feature
   that merged, or something that happened.
@@ -100,6 +107,9 @@ per the amend-by-dated-addition practice, and the resolution below states what r
 - **Which rule carries it.** Amending the direction-and-sequencing-artifacts-take-a-log-entry rule
   is the candidate, since it already states the artifact-not-the-word requirement. A rule of its own
   is the alternative. This is undecided.
+  - **2026-08-24 — decided, and this item leaves the tail.** The engineer selected the amendment,
+    accepting the stated cost: the rule now says more than its name does, and its name is left
+    alone rather than renamed, since a rename reaches every citation of it.
 - **No wording template is fixed.** The earlier entries show a form that works. Fixing one would be
   the over-prescription the plans-no-code-samples rule warns against, and the form is not the part
   that failed.
@@ -116,3 +126,4 @@ per the amend-by-dated-addition practice, and the resolution below states what r
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 3:23:14 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:29:33 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 3:38:02 PM PT

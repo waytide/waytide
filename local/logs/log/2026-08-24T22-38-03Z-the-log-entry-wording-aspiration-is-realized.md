@@ -1,0 +1,1 @@
+# The a-log-entry-for-an-idea-names-the-record aspiration is realized — the direction-and-sequencing-artifacts-take-a-log-entry rule now carries what the entry says, and the record is renamed to REALIZED
