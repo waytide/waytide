@@ -169,7 +169,7 @@ Those live in **`ext/`**, one package per subject. Such a package is not part of
 
 **More are to come.** An **external** is something Waytide did not write and does not govern, and an **extension** is something that adds to Waytide. A language, a test framework, a package manager, and a build system are each one or the other, and their directories are in `ext/`.
 
-**Such a package is authored in its own repository**, rather than here and then split out. It holds rules for something this composite has no other reason to know about, and nothing spills into it.
+**Such a package is authored in its own repository**, rather than here and then split out. It holds rules for something this composite has no other reason to know about.
 
 ## Origins
 
