@@ -4,7 +4,7 @@ By [The Eventide Project](https://eventide-project.org)
 
 The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
-Waytide offers a project four things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
+Waytide offers a project five things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
 
 ## Rules that direct the agent's behavior
 
