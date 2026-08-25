@@ -1,7 +1,7 @@
 # A log entry for an idea names the record and what happened to it, and never asserts the idea's content as fact
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 ## Premise
 

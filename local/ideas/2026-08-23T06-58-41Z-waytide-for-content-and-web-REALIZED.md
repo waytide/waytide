@@ -1,7 +1,7 @@
 # Waytide for content and web
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** what the idea describes exists. The engineer declared it done on 2026-08-24.
 

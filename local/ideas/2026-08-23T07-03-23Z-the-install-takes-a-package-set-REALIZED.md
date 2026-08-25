@@ -1,7 +1,7 @@
 # The install takes a package set on the command line
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** settled on 2026-08-23 and being built by the Content and Web feature. The
 argument list is a list of names, and a name is a package set or a package.

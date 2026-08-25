@@ -1,6 +1,6 @@
 # One Ideas Directory — Aspiration
 
-- **State:** Stated
+- **State:** Realized
 - **Tags:** [aspiration]
 
 ## Premise

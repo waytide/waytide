@@ -1,7 +1,7 @@
 # The Ruby package leaves the default distribution, and a `waytide-ruby` distribution installs it with the rest
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** what the idea describes exists. The engineer declared it implemented on
 2026-08-24.

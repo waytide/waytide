@@ -1,7 +1,7 @@
 # A content project is a named set of packages
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** settled on 2026-08-23 and being built. What remains open is the membership of
 the `content` set rather than the mechanism.

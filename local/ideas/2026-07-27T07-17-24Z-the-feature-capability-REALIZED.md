@@ -1,7 +1,7 @@
 # The Feature Capability — Intention
 
 - **State:** Realized
-- **Tags:** [intention]
+- **Tags:** [plan]
 
 ## Goal
 

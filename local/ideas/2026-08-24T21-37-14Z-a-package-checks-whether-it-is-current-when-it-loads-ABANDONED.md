@@ -1,7 +1,7 @@
 # A package checks whether it is current with its upstream when it loads, and a stale one is put to the engineer
 
 - **State:** Abandoned
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** the engineer dropped it on 2026-08-24. Abandoning is a decision, which is what
 separates it from a record that lapsed because the work moved past it.

@@ -1,7 +1,7 @@
 # A project declares its package set, and the packages outside it deactivate
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** the two questions that held it `Open` are answered. What deactivation does is
 settled, and the answer dissolves the conflict with the unconditional session-start read rather

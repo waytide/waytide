@@ -1,7 +1,7 @@
 # The session-start notice opens with `Waytide: Human-Agent Relations`
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** what the idea was for exists, on the other surface. The engineer settled on
 2026-08-24 that the category line reaching the rule read's head satisfies the intent, and that the

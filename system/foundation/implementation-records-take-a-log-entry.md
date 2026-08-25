@@ -43,7 +43,7 @@ Related:
 
 - the implementations-convention — the record, the two kinds, and the state words each takes
 - the implementation-lifecycle rule — the merge, and the branch deletion that makes an unmerged record unreachable
-- the direction-and-sequencing-artifacts-take-a-log-entry rule — the same shape for an idea, which is never on a branch that is deleted and so has no equivalent fork
+- the an-idea-takes-a-log-entry rule — the same shape for an idea, which is never on a branch that is deleted and so has no equivalent fork
 - the decision-log-convention — the entry's form, and the general trigger this makes specific
 
 ---

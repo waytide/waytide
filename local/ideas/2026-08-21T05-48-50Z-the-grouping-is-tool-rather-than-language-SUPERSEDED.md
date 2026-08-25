@@ -1,7 +1,7 @@
 # The grouping is `tool/`, not a language
 
 - **State:** Superseded
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** the axis is proposed and the extent is not settled. What `tool` covers, whether
 the existing `code/` directory is renamed to it, and what becomes of the published `code-ruby`

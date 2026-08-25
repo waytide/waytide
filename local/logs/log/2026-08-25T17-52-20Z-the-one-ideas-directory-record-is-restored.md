@@ -1,0 +1,1 @@
+# The One Ideas Directory record is restored to Realized after the observations pass wrongly conformed it to Stated — the pass filtered on the string [observation] appearing anywhere in a file rather than on the Tags line, and that record names the tag in its prose; one file was affected, the damage was one state word and a rename, and no content was lost

@@ -1,7 +1,7 @@
 # Design By Efferent is an `ext/` package
 
 - **State:** Abandoned
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** abandoned by the engineer's decision on 2026-08-25.
 

@@ -1,7 +1,7 @@
 # The grouping is `ext/`, for external and extension both
 
 - **State:** Realized
-- **Tags:** [aspiration]
+- **Tags:** [design]
 
 **Why this state:** the name answers the admission question that two earlier ideas left open, and
 it costs a third rename of the same directory and an abbreviation where the system has used whole

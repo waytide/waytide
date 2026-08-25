@@ -1,0 +1,1 @@
+# The seventeen ideas carrying a mode-vocabulary tag are retagged by what each record calls itself — the five whose titles read — Aspiration and the one reading — Intention were named that deliberately under the mode and keep their kind as [aspiration] and [plan], and the eleven that never claimed a kind become [design], the tag having been put on them by default
