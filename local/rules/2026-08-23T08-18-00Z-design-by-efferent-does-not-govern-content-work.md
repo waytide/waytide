@@ -23,12 +23,19 @@ it loading, and it does not remove anything.
 
 ## This rule is an interim and names what would retire it
 
-**Two ideas would make it unnecessary**, and neither is settled:
+**Two ideas would make it unnecessary**, and both are now settled:
 
 - *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content
-  project does not install it, and nothing has to say it does not govern.
+  project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**,
+  the engineer being undecided whether the core of Waytide should be without the method.
 - *A content project does not start with Design By Efferent active* — the parked question this
-  rule answers by hand.
+  rule answers by hand. **Realized 2026-08-25** by the `content` package set and the package-set
+  declaration.
+
+**Neither settlement retires this rule, and the reason is which project each reaches.** They settle
+what a **content project** installs and activates. This rule governs content work **in this
+repository**, where the `default` set holds design-by-efferent and it is active. The retirement
+condition below was written loosely, and this is what it missed.
 
 **So this rule expects to be removed rather than kept.** When one of those settles, it is
 suspended by the a-suspension-is-a-log-entry rule like anything else the project stops doing.
@@ -73,3 +80,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:18:00 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT

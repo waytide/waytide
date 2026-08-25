@@ -1,14 +1,39 @@
 # A content project does not start with Design By Efferent active, and may not need it installed
 
-- **State:** Open
-- **Tags:** [deferred]
+- **State:** Realized
 
-**Waits for:** the content package's shape — one package or two — which the Content and Web
-feature's first hinge decides. What a content project installs presumes there is something for it
-to install.
+**Why this state:** what the item describes exists. A content project declaring the `content`
+package set gets Design By Efferent neither installed nor active.
 
-**Why this state:** the engineer named it and parked it. Two remedies are stated and they are not
-the same remedy, and the system has a mechanism for one of them and none for the other.
+**The `[deferred]` tag is removed and the record is kept**, per the deferred-queue-convention. The
+tag was the queue membership, and the queue is what carries outstanding work. **The record carried
+no kind tag beside it**, so the `**Tags:**` line goes rather than being given a kind the engineer
+never named.
+
+**It waited on the content package's shape**, which *Waytide for content and web* answered as
+neither of the two candidates the wait named — a named set of existing packages.
+
+## Settled
+
+- **2026-08-25 — both remedies exist, and neither arrived by the route this record expected.**
+  **Not installed** is the `content` package set, which is `foundation`, `language`, `git`,
+  `versioning`, and `journal`. **Not active** is the package-set declaration, which deactivates
+  what an active set does not name.
+- **2026-08-25 — the concern this record raised about inventing a dormant package was answered
+  directly.** It asked whether that was worth doing, given the unconditional read is load-bearing.
+  Deactivation is defined as **read and not applied** rather than not read, so the read stays
+  whole and a deactivated package's rules can still be cited and reactivated within a session.
+- **2026-08-25 — the body below is left as written.** Its claims that nothing does a subset install
+  and that Waytide has no concept of an inactive package were true when it was written. An item's
+  content is point-in-time and is not chased.
+
+## What this does not settle
+
+- **Whether the division into code-specific and content-neutral packages holds**, and where `git`
+  and `versioning` fall.
+- **Whether DBE is genuinely inapplicable to content, or only looks it.** That is the question the
+  engineer named on 2026-08-25 when they abandoned *Design By Efferent is an `ext/` package* —
+  whether the core of Waytide should be without it. Nothing here answers it.
 
 ## Premise
 
@@ -69,3 +94,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:13:30 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT
