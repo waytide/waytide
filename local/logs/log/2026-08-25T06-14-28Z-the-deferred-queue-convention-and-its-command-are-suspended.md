@@ -1,0 +1,3 @@
+# The deferred-queue-convention and the next-deferred-item-command are suspended — the queue predates the evolution of `ideas/`, and with its session-start print already gone the command was the last thing reading it; `**Waits for:**` and `**Priority:**` become two optional lines any idea may carry, no tag is reserved for them, and the ideas-convention, foundation's vocabulary, the a-suspension-is-a-log-entry, observations-convention, direction-and-sequencing, working-state-artifacts, rules-convention and status-report-format rules, foundation's README, the root README, and AGENTS.md each drop what rested on the queue
+
+**Tags:** [suspended]

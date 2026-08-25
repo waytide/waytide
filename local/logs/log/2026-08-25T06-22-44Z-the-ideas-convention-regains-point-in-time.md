@@ -1,0 +1,1 @@
+# The ideas-convention regains the point-in-time section that was lost when the deferred-queue-convention was suspended minutes earlier — an idea's content was true when it was written, and a reference time has overtaken is not a defect and is not chased, which the observations-convention had already been reconciled to cite
