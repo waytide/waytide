@@ -1,11 +1,24 @@
 # The Ruby package leaves the default distribution, and a `waytide-ruby` distribution installs it with the rest
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [aspiration]
 
-**Why this state:** the premise is stated as a direction and the mechanism is not settled. What a
-**distribution** is, and whether `waytide-ruby` is a package, a script, or a repository of its own,
-each lead to a different artifact. It is promoted to `Active` once those are decided.
+**Why this state:** what the idea describes exists. The engineer declared it implemented on
+2026-08-24.
+
+## Settled
+
+- **2026-08-24 — the idea is realized.** The Ruby package left the composite on 2026-08-21 through
+  the Tool-Specific Distribution feature, and the record was not updated at the time.
+- **2026-08-24 — `waytide-ruby` is a repository of its own**, which was the third of the three
+  candidates. The package is authored there directly rather than split out of this composite, and
+  it installs at `waytide/system/ext/ruby-lang/` under a `**Repository:**` declaration, since the
+  flattening rule would give a different name.
+- **2026-08-24 — it composes rather than duplicates.** Its dependency is every package this
+  composite holds, which is what makes installing it enough for a Ruby project. No second copy of
+  the default list was written.
+- **2026-08-24 — the grouping is `ext/` rather than `code/` or `tools/`**, renamed after this
+  record was written. The paths below say `code/` because that is what they said at the time.
 
 ## Premise
 
@@ -87,3 +100,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:21:29 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:19:07 PM PT

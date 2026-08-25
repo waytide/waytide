@@ -1,12 +1,23 @@
 # A package checks whether it is current with its upstream when it loads, and a stale one is put to the engineer
 
-- **State:** Open
+- **State:** Abandoned
 - **Tags:** [aspiration]
 
-**Why this state:** the direction is proposed and the mechanism is not settled. What the check
-compares, what the engineer is offered, whether the ask is per package or once for all of them, and
-what a stale package costs an engineer who declines are each open. It is promoted to `Active` once
-those are decided.
+**Why this state:** the engineer dropped it on 2026-08-24. Abandoning is a decision, which is what
+separates it from a record that lapsed because the work moved past it.
+
+**No reason is recorded, because none was stated.** A reason is what a later reader reconsidering
+this would decide against, and inventing one would put the agent's reading in place of the
+engineer's.
+
+**Everything below is left as written.** The direction, the five decisions taken on the day it was
+recorded, and the correction that moved the check from the session-start hook to the rule set read
+are the record of what was thought. A dropped record is not a draft.
+
+**Its earlier state, and what held it there:** it was `Open` — the direction proposed and the
+mechanism unsettled. What the check compares, what the engineer is offered, whether the ask is per
+package or once for all of them, and what a stale package costs an engineer who declines were each
+open.
 
 **2026-08-24 — the first version of this record placed the check in the session-start hook, and
 that was wrong.** The engineer stated that it belongs to **the rule set read that happens at the
@@ -237,3 +248,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 2:52:38 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:01:55 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:11:24 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:22:41 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:28:30 PM PT

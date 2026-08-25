@@ -1,0 +1,1 @@
+# The One Ideas Directory aspiration is realized — waytide/local/ideas/ is the one planning directory, every kind of record lives there under a Tags line with an open set, the ideas-convention in foundation carries it, and the mode mechanism it argued against was decommissioned on 2026-08-18

@@ -1,0 +1,1 @@
+# The Design By Efferent is an ext/ package idea settles the package's name — it is to be ext/design-by-efferent rather than ext/dbe, the language package's expand-abbreviations-on-first-use rule being the standing reason a name is not compressed to its initials

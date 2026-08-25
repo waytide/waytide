@@ -1,7 +1,23 @@
 # A Generalized Description of Waytide — Aspiration
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
+
+## Settled
+
+- **2026-08-25 — the idea is realized.** The engineer declared it done. The root `README.md` opens
+  with the category line `Waytide: Human-Agent Relations`, the attribution, the three-sentence
+  stance beginning *The engineer decides. The agent generates.*, and the paragraph naming the five
+  things Waytide offers a project. The README pass, which was the work outstanding when this record
+  returned to `Active` on 2026-08-20, is done.
+- **2026-08-25 — the arrangement is one description on the README, and the website's rendering
+  stays with the other aspiration.** This record held the direction that there is **one**
+  description. Where it is produced from and how each surface renders it was always the
+  *Waytide's Self-Explanation* aspiration's, by that record's own settlement, and that aspiration
+  is still `Active`.
+- **2026-08-25 — the README's register is settled elsewhere and is not this record's.** The local
+  rule *The `README.md` is figurative for the uninitiated*, written 2026-08-24, governs how the
+  description is written for a reader who holds none of Waytide's terms.
 
 ## Premise
 
@@ -111,3 +127,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 2:54:58 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Thu Aug 20 2026 at 1:11:54 PM PT
 Changed by Scott Bellware on Thu Aug 20 2026 at 3:35:12 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:24:55 PM PT

@@ -1,0 +1,1 @@
+# The Design By Efferent is an ext/ package idea settles that ext/ admits a method — placing DBE there decides it, the grouping stating what a thing is to the project rather than what kind of thing it is, so a method qualifies on the same ground a language's conventions do

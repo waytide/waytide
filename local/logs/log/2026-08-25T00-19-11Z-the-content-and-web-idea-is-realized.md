@@ -1,0 +1,1 @@
+# The Waytide for content and web idea is realized through the Package Sets feature rather than through a new package — its first question, one content package or two, was answered by a third shape it did not consider, a named set of existing packages, and no Hugo or Hextra conventions package exists

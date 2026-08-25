@@ -1,0 +1,1 @@
+# The A package checks whether it is current with its upstream when it loads idea is abandoned — dropped by the engineer's decision, with no reason stated and none invented, and the record kept as written along with the six log entries of the day it was recorded

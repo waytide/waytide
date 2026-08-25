@@ -1,11 +1,21 @@
 # Waytide for content and web
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [aspiration]
 
-**Why this state:** the direction is stated and the shape is not. Whether content conventions and
-Hugo conventions are one package or two is the first question, and it decides everything after it.
-It is promoted to `Active` once that is settled.
+**Why this state:** what the idea describes exists. The engineer declared it done on 2026-08-24.
+
+## Settled
+
+- **2026-08-24 — the idea is realized**, through the Package Sets feature rather than through a new
+  package. `content` is a named set of packages `install` places — `foundation`, `language`, `git`,
+  `versioning`, and `journal` — and the website declares it.
+- **2026-08-24 — the first question was answered by neither of its two candidates.** It asked
+  whether content conventions and Hugo conventions are one package or two. The answer was a
+  **set** of existing packages, which is a third shape the record did not consider: a content
+  project is served by naming which of Waytide's packages apply to it.
+- **2026-08-24 — no Hugo or Hextra conventions package exists.** The tool half of the first
+  question is not built, and the realization did not require it.
 
 ## Premise
 
@@ -84,3 +94,4 @@ Related:
 
 Authored by Scott Bellware on Sat Aug 22 2026 at 11:58:41 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:58:40 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:19:07 PM PT

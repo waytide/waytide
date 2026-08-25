@@ -1,0 +1,1 @@
+# The session-start notice opens with the category line idea is realized by the rule read's head rather than by the notice — the engineer settled that Waytide: Human-Agent Relations reaching the read's head on 2026-08-21 satisfies the intent, session-start.sh is unchanged and stays unchanged, and the record's three sub-questions are moot rather than answered

@@ -1,12 +1,26 @@
 # The session-start notice opens with `Waytide: Human-Agent Relations`
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [aspiration]
 
-**Why this state:** the proposal is stated and one argument against it is the system's own. It is
-promoted once it is decided whether a line that never changes belongs on a surface that renders
-every session. It proposes a change to the announce-waytide-at-session-start rule and to
-`session-start.sh`, and neither is made here.
+**Why this state:** what the idea was for exists, on the other surface. The engineer settled on
+2026-08-24 that the category line reaching the rule read's head satisfies the intent, and that the
+notice itself was never the point.
+
+## Settled
+
+- **2026-08-24 — the idea is realized by the rule read's head**, which has printed
+  `Waytide: Human-Agent Relations` since 2026-08-21. **This overrides the 2026-08-21 addition
+  below**, which held that the change did not carry the proposal. That section keeps its wording.
+- **2026-08-24 — the notice is unchanged and stays unchanged.** `session-start.sh` still opens it
+  with the install line, and no change to it or to the announce-waytide-at-session-start rule
+  follows from this record. The three sub-questions below are moot rather than answered — nothing
+  replaces the install line's leading `Waytide`, the status line keeps its one-word segment, and no
+  blank line is added.
+- **2026-08-24 — the permanent-line argument is what decided it.** The identity is stated once per
+  session, at the one moment the system is announced as itself. Stating it again on the surface
+  that renders before every session is the second permanent thing this record's own argument warns
+  about.
 
 ## Premise
 
@@ -64,7 +78,7 @@ permanent statement of identity is a second thing that stops being read.
 
 **`Waytide` would open two consecutive lines.** The install line already begins with the word.
 
-## What is not settled
+## What was not settled, and is now moot
 
 - **Whether it is added at all**, against the permanent-line argument above.
 - **Whether it replaces something rather than adding.** The install line's leading `Waytide` is
@@ -103,3 +117,4 @@ Related:
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 11:05:16 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:22:18 PM PT

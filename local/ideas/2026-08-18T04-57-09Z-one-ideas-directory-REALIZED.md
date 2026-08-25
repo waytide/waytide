@@ -1,6 +1,6 @@
 # One Ideas Directory — Aspiration
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [aspiration]
 
 ## Premise
@@ -188,6 +188,22 @@ active service instead, so the premise is satisfied by the mode no longer existi
 and `logs/` holds the records that accrue chronologically. An idea is thinking, and neither of
 those is. The three-directory arrangement is the resting point, not one directory for everything.
 
+## Settled 2026-08-25 — the aspiration is realized
+
+**The engineer declared it implemented.** `waytide/local/ideas/` is the one planning directory, and
+every kind of record this aspiration named lives there under a `**Tags:**` line — `[aspiration]`,
+`[observation]`, `[deferred]`, and the rest. The set is open, as this record asked.
+
+**The ideas-convention carries it**, written in `foundation` on 2026-08-17. It fixes the thin shape
+— a title, a `**State:**` line, a `**Tags:**` line, and whatever the idea has to say — and the eight
+states every idea takes.
+
+**The mode mechanism it argued against is gone**, decommissioned 2026-08-18. Six directories
+existed for one kind of work, and a mode could not change mid-stream because a change stranded every
+existing record. Neither is true now, which is the whole of what this aspiration was for.
+
+**What was Out of Scope stays out of scope**, excluded by decision rather than left undone.
+
 ---
 
 Authored by Scott Bellware on Mon Aug 17 2026 at 9:57:09 PM PT
@@ -201,3 +217,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:32:18 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:27:28 PM PT

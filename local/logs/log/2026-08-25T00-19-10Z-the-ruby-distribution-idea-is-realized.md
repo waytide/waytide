@@ -1,0 +1,1 @@
+# The Ruby package leaves the default distribution idea is realized — the package left the composite on 2026-08-21 through the Tool-Specific Distribution feature and the record was not updated at the time, waytide-ruby being the third of its three candidates, a repository of its own that composes by declaring every composite package as its dependency

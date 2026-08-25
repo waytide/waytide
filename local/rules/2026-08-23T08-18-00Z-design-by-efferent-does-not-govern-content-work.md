@@ -25,7 +25,7 @@ it loading, and it does not remove anything.
 
 **Two ideas would make it unnecessary**, and neither is settled:
 
-- *Design By Efferent is a `tools/` package* — if DBE leaves the default distribution, a content
+- *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content
   project does not install it, and nothing has to say it does not govern.
 - *A content project does not start with Design By Efferent active* — the parked question this
   rule answers by hand.
@@ -72,3 +72,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:18:00 AM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
