@@ -1,9 +1,7 @@
 # Planning spans three artifacts across two packages, and nothing names the activity they share
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, surfaced by asking whether "implementation plan" covers all of planning. **One of its two questions is answered:** the `plan` package was folded into `foundation` on 2026-08-03, so the package-boundary question below is settled — there is no `plan` package, and all three planning artifacts are governed by `foundation`. What remains open is whether the **activity** wants a name, and the artifact-naming question the observation records last. It records a structure the system has and does not describe. It proposes no change — the three may be correctly separate. It is promoted once it is decided whether the activity wants a name, and whether the `plan` package's boundary is right.
 
 **The question that surfaced it:** does "implementation plan" cover all the elements of
 planning? It does not, on two counts.

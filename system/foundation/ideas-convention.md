@@ -43,7 +43,10 @@ Every idea carries a `**State:**` line, from the moment it is written:
 - **Suspended** — paused, not ended.
 - **Superseded** — another idea replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
+- **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
 - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the idea.
+
+**`Stated` is the third starting word and the only terminal one**, and an observation takes it alone. Every other idea takes one of the two below.
 
 **`Open` and `Active` are the two starting words**, and which one an idea takes says what kind of record it is being written as. Absence is not a state, and an idea without a line is a defect.
 
@@ -87,3 +90,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
+Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT

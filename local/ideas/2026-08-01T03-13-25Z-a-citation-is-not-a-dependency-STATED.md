@@ -1,9 +1,7 @@
 # A citation is not a dependency — the criterion is availability, and the system already practices it
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** **promoted** on Fri Jul 31 2026 — this is now the discovery record, not a working hypothesis. The criterion was ratified as the `foundation` rule `a-citation-is-not-a-dependency`: a citation is not a dependency unless the citing rule will not work without the cited package. The borderline below was decided with it — a `code/ruby` tree-script rule **works** without `testing` and merely lacks motivation, so it is a citation and `code/ruby` takes no dependency edge. No package's declared dependencies changed.
 
 **The survey.** Every package but one references packages it does not declare:
 

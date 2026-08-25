@@ -1,9 +1,7 @@
 # A lens names a set of positions on one matter, and the system is full of them
 
-- **State:** Lapsed
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** **set aside 2026-08-18 as a likely dead end**, on the engineer's judgment, the same day it was written. It is kept as the discovery record rather than deleted, which is what an observation is for. Nothing in `waytide/system/` was ever changed for it.
 
 **What was found is still true and is why the record is kept.** Ten sets of positions exist in the
 system and none is named as an instance of a kind. That survey stands whether or not `lens` is the

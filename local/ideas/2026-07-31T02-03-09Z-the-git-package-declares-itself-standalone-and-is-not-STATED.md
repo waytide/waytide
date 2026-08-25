@@ -1,9 +1,7 @@
 # The `git` package declares itself standalone and is not
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, produced by the test-output-display investigation. It records what the files say; it settles nothing. It is promoted once the decision is made about where a test runner belongs and whether `git`'s standalone claim is corrected or its cross-package references are removed.
 
 `system/git/README.md` states: *"This is a standalone package: it includes no other
 packages."* The package's rules do not hold to that, in two separate ways.

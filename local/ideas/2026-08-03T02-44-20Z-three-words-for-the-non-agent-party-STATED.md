@@ -1,9 +1,7 @@
 # Three words name the non-agent party, split by package and never reconciled
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, surfaced while settling the phrase "an agent harness and a human ally". It records a terminology split the `language` rules would ordinarily catch and that has not been raised. It proposes no change. It is promoted once it is decided whether one word governs, which one, and whether the split is a defect or a distinction worth keeping.
 
 **The count**, across the eight packages:
 

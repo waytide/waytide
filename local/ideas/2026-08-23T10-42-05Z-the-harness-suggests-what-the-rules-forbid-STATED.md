@@ -1,12 +1,7 @@
 # The harness suggests what the rules forbid the agent to offer
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** it records a channel the rules cannot reach, found by observation rather than
-by reasoning about the system. It proposes no change, because no change available here would have
-any effect on it. It is promoted once it is decided whether anything is worth doing about a channel
-the project does not control.
 
 ## What was observed
 

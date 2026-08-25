@@ -1,12 +1,7 @@
 # An experiment works on an existing implementation and a feature is a new one — a prediction, not a rule
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, and the engineer stated it as a
-prediction rather than as a rule. It proposes no change to the implementations-convention. It is
-promoted once it is decided whether the tendency is worth stating anywhere, and whether it holds
-against the cases below that run the other way.
 
 **As the engineer stated it:** a way to think of experiments and features is that experiments work
 on existing implementations, and features are new implementations. This isn't a rule, though. It's

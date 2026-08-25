@@ -1,9 +1,7 @@
 # "The developer chooses" is a cross-cutting stance that no rule names
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery. It records that a stance already present across four packages and seventeen rules is stated as a stance in none of them, and that naming it may be a rule in its own right. It proposes no change yet. It is promoted once it is decided whether the stance is named, where such a rule lives, and whether naming it changes anything or only makes it findable.
 
 **The observation, as the developer put it:** the choose-your-own-adventure property "could even
 turn out to be a rule that creates an overall personality trait that gives this property to

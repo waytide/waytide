@@ -1,13 +1,7 @@
 # `harness` names two things in the same domain, and no vocabulary reserves it
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, surfaced while examining whether
-*agent harness* describes Waytide. It records a term collision and a missing vocabulary entry,
-each of which the `language` rules would ordinarily catch. It proposes no change. It is promoted
-once it is decided whether `harness` takes an entry, in which vocabulary, and whether the
-self-description sense is abandoned outright or distinguished.
 
 ## The two referents
 

@@ -1,9 +1,7 @@
 # The three context-tree rules disagree on whether the tree comes from the source or from a run
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, produced by the test-output-display investigation. It records a contradiction between three rules currently in force; it settles nothing. It is promoted once it is decided which derivation is correct and the other rules are conformed to it.
 
 Three rules produce a context tree from the same suite, and each says something different
 about where the tree comes from.

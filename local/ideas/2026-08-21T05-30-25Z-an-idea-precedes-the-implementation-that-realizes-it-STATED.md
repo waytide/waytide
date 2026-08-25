@@ -1,11 +1,7 @@
 # An idea is recorded first, and a feature or experiment follows it at the engineer's pace
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery. It records a sequence the engineer finds
-works well. It proposes no change. It is promoted once it is decided whether the relation between
-an idea and the implementation that realizes it is carried in the records, and if so how.
 
 **The observation, as the engineer stated it:** the process with Waytide works well when it is
 

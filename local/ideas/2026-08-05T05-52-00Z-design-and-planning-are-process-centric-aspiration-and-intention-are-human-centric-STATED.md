@@ -1,9 +1,7 @@
 # Design and planning are process-centric; aspiration and intention are their human-centric corollaries, and a project could choose which mode it works under
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, raised by the developer on 2026-08-04. It proposes a **mode chosen at a project's initiation**, and it is not yet established that the two modes differ in more than vocabulary — which is the whole question. It is promoted once that is settled, and once the doubling cost below is answered. Nothing in the system changes on the strength of this note.
 
 ## The pairing
 

@@ -1,9 +1,7 @@
 # An allusion the reader need not catch passes the name-literally test, and the rule does not say so
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, surfaced by naming *"Waytide: Human-Agent Relations"*. It records a case the name-literally-not-by-analogy rule does not distinguish and its own test already admits. It proposes no change. It is promoted once it is decided whether the rule should state the distinction, and whether an optional allusion is a thing to permit or merely a thing not forbidden.
 
 **The case.** *Human-Agent Relations* alludes to C-3PO's self-introduction, *"I am C-3PO,
 human-cyborg relations."* For a technical reader the allusion is most of its appeal. It is also

@@ -33,7 +33,7 @@ The four rules that stated this as two lifecycles were consolidated on 2026-08-1
 **The project's ideas** live in `waytide/local/ideas/`, one file per idea (`ideas-convention`). A design is an idea, and so is a plan, an aspiration, an intention, an orientation, an action, a specification, and an observation — what each one *is*, is a tag, and the tag set is open.
 
 - **The shape is thin.** A title, a `**State:**` line, a `**Tags:**` line, and whatever the idea has to say. A footer, a log entry, the ISO-8601-UTC prefix, and the state suffix. Nothing else is required, because an idea that settles nothing has no resolutions and an idea that sequences nothing has no tasks.
-- **Eight states**, one set for every idea: **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, and **Lapsed**. `Open` and `Active` are the two starting words. `Lapsed` and `Abandoned` differ in who acted — lapsing is what happens when nobody decides and the work moves past the idea.
+- **Nine states**, one set for every idea: **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, **Lapsed**, and **Stated**. **`Stated` is an observation's, and an observation's alone** — it is the one state that never changes, because an observation has no lifecycle (`observations-convention`). It is written when the observation is, and it stays. `Open` and `Active` are the two starting words. `Lapsed` and `Abandoned` differ in who acted — lapsing is what happens when nobody decides and the work moves past the idea.
 - **Supersede rather than rewrite**, and amend by dated addition, so an idea reads as a history of thinking rather than as whatever is current. A settled idea is reconciled, never regenerated from the work downstream of it.
 
 It replaces four rules — two conventions and two document formats — decommissioned with the mode mechanism on 2026-08-18. Those fixed a spine for a design and an element order for a plan, and an idea that was neither had nowhere to sit.
@@ -194,3 +194,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 9:37:58 AM PT
+Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT

@@ -1,9 +1,7 @@
 # The verbose feature output required at every implementation hinge is unbounded, and it grows monotonically
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, produced by the test-output-display investigation. It records the shape of the problem, not a proposed bound. It is promoted once it is decided whether a bound is stated, what it is, and what the rule says when output would exceed it.
 
 `show-feature-test-output-after-implementation-hinge` requires, at **every** implementation
 hinge, the **whole feature's** tests — *"every outcome built so far for the unit under

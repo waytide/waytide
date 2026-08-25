@@ -1,9 +1,7 @@
 # The `test-tree` script is mandated by a rule and shipped by nothing, and `testing` as framed cannot ship it
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, produced by the test-output-display investigation. It records the gap and the constraint on closing it; it settles nothing. It is promoted once it is decided which package ships the script, or that none does and the rule is reworded.
 
 `test-tree-command`'s How-to-apply reads: *"on a 'test tree' request, **run the durable tree
 script** and present its output."* The rule body says such a script *"makes the command

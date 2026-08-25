@@ -1,9 +1,7 @@
 # Deferred items preempt design and plans, and a deferred item is deleted on resolution
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery. It records a pattern in how this repository actually accumulates work, and a consequence of the deferred convention that follows from it. It proposes no change. It is promoted once it is decided whether design and plan are meant to carry this work, whether the deferred convention should preserve what a resolved item held, or whether the pattern is correct as it stands and only the conventions overstate design's role.
 
 **The observation, as stated by the developer:** the design of a system is often not kept up to
 date as the work goes on, and both design and plan tend to be preempted by the entries into

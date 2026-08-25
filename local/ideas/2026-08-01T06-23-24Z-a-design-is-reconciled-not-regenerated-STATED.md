@@ -1,9 +1,7 @@
 # A design is reconciled against the records, not regenerated from them
 
-- **State:** Open
+- **State:** Stated
 - **Tags:** [observation]
-
-**Why this state:** a working hypothesis under discovery, following from [[2026-08-01T06-18-29Z-deferred-items-preempt-design-and-plans]]. It answers whether a design can be kept current the way a session record is assembled, and proposes reconciliation instead. It is promoted once it is decided whether reconciliation is adopted, and — the open question below — whether the moment to reconcile can be detected rather than remembered.
 
 **The question:** can `local/design/` be periodically updated from the other record types, the
 way a work-session record is reconstituted from the pertinent input records?
