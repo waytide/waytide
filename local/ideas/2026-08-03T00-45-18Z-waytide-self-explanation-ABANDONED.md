@@ -1,7 +1,18 @@
 # Waytide's Self-Explanation — Aspiration
 
-- **State:** Active
+- **State:** Abandoned
 - **Tags:** [aspiration]
+
+**2026-08-25 — abandoned by the engineer's decision.** No reason is recorded, because none was
+stated. The Self-Explanation feature, started the same day to realize the interactive-chat half of
+this aspiration, was abandoned with it — see
+`local/implementations/2026-08-25T00-36-18Z-self-explanation-ABANDONED.md`.
+
+**What this leaves standing elsewhere.** The `website` project's design holds production and
+presentation, including the two surfaces and the projection, by this record's own 2026-08-03
+settlement. Abandoning this record decides nothing about that one.
+
+**Everything below is left as written.** A dropped record is not a draft.
 
 ## Premise
 
@@ -99,3 +110,4 @@ Changed by Scott Bellware on Sun Aug 2 2026 at 11:52:17 PM PT
 Changed by Scott Bellware on Wed Aug 5 2026 at 12:32:03 AM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 3:03:12 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:47:27 PM PT
