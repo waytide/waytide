@@ -1,0 +1,1 @@
+# The fifty-one implementation, work session, loop, and migration records are unwrapped, which completes the prose-is-not-hard-wrapped pass over local/ — the decision log needed nothing, its entries being one-line titles, and the journal is left alone since an-entry-is-the-writers-words bars the agent from editing an entry that is already there
