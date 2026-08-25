@@ -1,11 +1,22 @@
 # Design By Efferent is an `ext/` package
 
-- **State:** Active
+- **State:** Abandoned
 - **Tags:** [aspiration]
 
-**Why this state:** the two questions that held it `Open` are answered. The engineer settled that
-the grouping admits a method and that the package is `ext/design-by-efferent`, which is the
-promotion condition this record stated for itself.
+**Why this state:** abandoned by the engineer's decision on 2026-08-25.
+
+**As the engineer stated the reason:** they are undecided whether the core of Waytide should be
+without Design By Efferent. The move presumes that answer, and the answer is not settled.
+
+**The record reached `Active` before it was dropped.** The two questions that held it `Open` were
+answered — the grouping admits a method, and the package is `ext/design-by-efferent` — which was
+the promotion condition this record stated for itself. Those resolutions stand as written below.
+What they settled was **how** the move would be made rather than **whether** it should be, and the
+second question is the one that stopped it.
+
+**A feature was started to carry it out and was abandoned with it.** Nothing it produced reached
+`master`, by the engineer's instruction. The decision log entry written on 2026-08-25 carries the
+substance, because no record of the work is on `master` to be read.
 
 ## Settled
 
@@ -75,3 +86,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:16:27 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:17:55 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 10:31:30 PM PT

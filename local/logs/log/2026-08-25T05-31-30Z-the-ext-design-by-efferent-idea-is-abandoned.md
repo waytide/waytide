@@ -1,0 +1,1 @@
+# The Design By Efferent is an ext/ package idea is abandoned — the engineer is undecided whether the core of Waytide should be without Design By Efferent, which the move presumes, and its two settled resolutions stand as written since they fixed how the move would be made rather than whether it should be
