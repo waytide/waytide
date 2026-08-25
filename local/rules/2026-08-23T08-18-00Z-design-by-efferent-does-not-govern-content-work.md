@@ -14,12 +14,14 @@
 
 **Two ideas would make it unnecessary**, and both are now settled:
 
-- *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**, the engineer being undecided whether the core of Waytide should be without the method.
+- *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**, the engineer being undecided whether the core of Waytide should be without the method. **That question was settled later the same day: the core keeps the method.** So this idea will not retire the rule, and the abandonment is now a decision rather than a deferral.
 - *A content project does not start with Design By Efferent active* — the parked question this rule answers by hand. **Realized 2026-08-25** by the `content` package set and the package-set declaration.
 
 **Neither settlement retires this rule, and the reason is which project each reaches.** They settle what a **content project** installs and activates. This rule governs content work **in this repository**, where the `default` set holds design-by-efferent and it is active. The retirement condition below was written loosely, and this is what it missed.
 
-**So this rule expects to be removed rather than kept.** When one of those settles, it is suspended by the a-suspension-is-a-log-entry rule like anything else the project stops doing.
+**So this rule is kept rather than removed, which reverses what it expected of itself.** It was written as an interim standing in for a mechanism that did not exist. The mechanism now exists — a project declares a package set and what the set does not name deactivates — and this repository does not use it for the method, because the core keeps it. The rule is what holds design-by-efferent off content work here, and nothing else does.
+
+**It is still an interim, and what would retire it has changed.** Not either of the two ideas above. It retires if this repository ever declares a set that leaves the method out, or if the core question is revisited and answered the other way.
 
 ## What it asserts about precedence, and the gap under it
 

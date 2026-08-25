@@ -10,6 +10,8 @@ Foundation defines the four core artifact directories and how to work with them.
 - **`waytide/local/vocabulary.md`**. The project's own vocabulary, read with the rules and binding like them. Its terms and substitutions decide over every package's (`vocabulary-convention`). One file, no datetime prefix, and optional.
 - **`waytide/local/ideas/`**. Working hypotheses and rule-candidates still under discovery. Not yet binding.
 - **Work postponed mid-task is an ordinary idea** carrying a `**Waits for:**` line, and it may carry a `**Priority:**` rank (`ideas-convention`). It was a **deferred queue** with a convention, a reserved tag, a session-start print, and a command until 2026-08-25, when all four were suspended — what made it a queue was the print and the command, and the two lines are what remained.
+**The log records the reasoning for an abandonment, and never conveys that something was done when it was not** (`the-log-never-says-undone-work-was-done`). When work is abandoned its branch goes, which leaves the log as the only durable trace and makes it tempting to pour the branch into it. What belongs there is the decision to stop and the reason given for it. What does not is the plan, the increments, or the design that was never built. **A careful tense is not enough** — every sentence can be conditional, every claim true, and the entry still leaves a reader believing the project worked something out.
+
 - **`waytide/local/logs/`**. The **running records**, grouped (`logs-directory`) — records that accrue chronologically and are never revised, as against the directories that state what is currently true. It holds **`logs/log/`**, the decision log, one file per decision with a one-line title; **`logs/loops/`**, contributed by `design-by-efferent`; and **`logs/work-sessions/`**. The three sat directly under `waytide/local/` until 2026-08-18.
 
 Three conventions govern all of them: the **ISO-8601-UTC filename prefix** (`file-names`) that makes every artifact sort chronologically and declare its timezone. **a time value carries minutes and seconds** (`a-time-value-carries-minutes-and-seconds`), wherever a datetime written into a file includes a time of day. Third is **purpose-over-category** (`rules-establish-a-mindset`). A rule's folder names the surface it acts on, not the purpose it serves.
@@ -196,3 +198,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 9:37:58 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
+Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT

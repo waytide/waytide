@@ -8,6 +8,8 @@
 **As the engineer stated the reason:** they are undecided whether the core of Waytide should be
 without Design By Efferent. The move presumes that answer, and the answer is not settled.
 
+**2026-08-25 — the question is settled, and against the move.** **As the engineer stated it:** it should not be without Design By Efferent, at least for now; the decision stands, but it may be revisited in the future. So the abandonment is a decision rather than a deferral. Revisiting the core question is what would reopen this, and nothing else waits on it.
+
 **The record reached `Active` before it was dropped.** The two questions that held it `Open` were
 answered — the grouping admits a method, and the package is `ext/design-by-efferent` — which was
 the promotion condition this record stated for itself. Those resolutions stand as written below.
@@ -87,3 +89,4 @@ Authored by Scott Bellware on Sun Aug 23 2026 at 1:16:27 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:17:55 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 10:31:30 PM PT
+Changed by Scott Bellware on Tue Aug 25 2026 at 10:54:07 AM PT
