@@ -44,6 +44,10 @@ survive.
 - **2026-08-25 — the working location was put through the selection interface and the engineer
   chose branch only.** The options were branch only, branch and worktree, and the current branch,
   offered last as a feature's alone.
+- **2026-08-25 — the branch was deleted on the engineer's instruction.** There was no worktree to
+  remove first, and no selection prompt was put: the instruction to delete is itself the
+  confirmation the lifecycle asks for, and re-displaying it would ask the engineer to approve their
+  own direction. The branch held no commits and pointed at `434cc4d`, so the deletion was lossless.
 - **2026-08-25 — no attended-or-unattended selection was put, and that is deliberate.** The
   product is a rule file, which is prose, and the local rule *Design By Efferent does not govern
   content work* directs that the five hinges are not put, no loop record is opened, and the
@@ -89,3 +93,4 @@ Authored by Scott Bellware on Mon Aug 24 2026 at 5:36:18 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:41:34 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:44:16 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:47:27 PM PT
+Changed by Scott Bellware on Mon Aug 24 2026 at 5:55:24 PM PT
