@@ -2,7 +2,9 @@
 
 By [The Eventide Project](https://eventide-project.org)
 
-The engineer decides. The agent generates. Where there is ambiguity, the agent gives the engineer options, including the option to take control.
+The engineer decides. The agent generates.
+
+Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
 Waytide offers a project five things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
 
@@ -48,8 +50,7 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 
 - **Activation.** install.sh places the AGENTS.md bootstrap and .claude/settings.json. A SessionStart hook carries the read instruction and prints what is installed. A status line keeps the system's presence on screen.
 - **Package sets.** A named list of packages, installable by name. A project that holds more than it wants can declare the set it runs, and the rest deactivate without being uninstalled.
-- **The deferred queue.** Printed at startup, so parked work is not lost by going unread.
-- **Commands.** Status report, test report, test tree, lib report, next deferred item, timeline.
+- **Commands.** Status report, test report, test tree, lib report, timeline.
 - **11 scripts.** Installed with the packages or held at the authoring root.
 
 ## Install Waytide
