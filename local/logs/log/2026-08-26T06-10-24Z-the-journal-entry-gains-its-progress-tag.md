@@ -1,0 +1,1 @@
+# The journal entry of 2026-08-25 13:36 gains its [progress] tag — the writer directed the tag before the entry was first committed, and the agent's staging missed it, so the tag lands as a change to a committed entry rather than as part of its first form; the entry carries no Changed by line, which is why this is logged, per an-entry-is-the-writers-words

@@ -2,6 +2,8 @@
 
 Tue Aug 25 2026 at 13:36
 
+**Tags:** [progress]
+
 Modes are eliminated. External packages have a mechanism. Vocabulary entries are more focused. Many incremental improvements.
 
 Pursuing simplifications.
