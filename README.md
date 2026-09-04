@@ -64,7 +64,7 @@ curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
 sh install
 ```
 
-The `install` script installs and refreshes packages. It takes a list of names. A name is either the name of a package set or a package. With no arguments it installs the default set.
+The `install` script installs and refreshes packages. It optionally takes a list of names that contains either the names of packages, or a named _package set_. With no arguments it installs the default set of packages.
 
 ### Warning
 
