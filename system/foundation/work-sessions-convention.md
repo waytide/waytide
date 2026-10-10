@@ -53,6 +53,7 @@ Related:
 - the decision-log rule
 - the observations rule
 - the logs-directory rule — the running records this sits among
+- the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw
 
 ---
 
@@ -89,3 +90,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 5:26:42 PM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
