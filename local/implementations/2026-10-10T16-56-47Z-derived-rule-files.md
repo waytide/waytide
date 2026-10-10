@@ -50,7 +50,7 @@
 **What the method rests on.**
 
 - **The transcript format is Claude Code's working state, not a documented interface.** An update could change it and break the extraction.
-- **The extraction is a small script on this branch.** It is code, so Design By Efferent governs it unless the engineer treats it as a disposable measurement tool.
+- **The extraction is `measure-session-start-read.sh`, at the root of this branch.** The engineer chose to treat it as a disposable measurement tool on 2026-10-10, so it was written directly and is not tested. Its figures for session `b3cce9f3` — 47.1 seconds and 15 tool calls, from 16:24:45.787 to 16:25:32.916 UTC — match the transcript's entries read by hand.
 - **Duration depends on the model and on server load.** The sessions compared run on the same model and close together in time.
 
 ## Forecast
@@ -89,9 +89,21 @@ Nothing yet.
 
 **That change alters the read this experiment measures.** The agent no longer opens the initialization-rule first or prints the display. So the starting point is measured with the read as it now stands, and the derived read is compared against that measurement rather than against any read taken before 2026-10-10.
 
+### Earlier reads — 2026-10-10
+
+**Four reads taken before the startup display change, measured by the tool.** They are not the starting point, since the read instruction has changed since. They show the spread the forecast expected.
+
+| session | model | duration | tool calls |
+|---|---|---|---|
+| `68b0d608`, Aug 28 | `claude-opus-5` | 116.9 s | 25 |
+| `ab7f9d8c`, Oct 7 | `claude-opus-5-5` | 40.4 s | 18 |
+| `f9c2fd39`, Oct 7 | `claude-opus-5-5` | 48.8 s | 21 |
+| `b3cce9f3`, Oct 10 | `claude-opus-5-5` | 47.1 s | 15 |
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:59:24 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:03:25 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:26:18 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 10:56:59 AM PT
