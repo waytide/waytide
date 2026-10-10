@@ -10,6 +10,7 @@
 
 ## Setup
 
+- **State:** Suspended
 - **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/derived-rule-files`
@@ -71,12 +72,20 @@ Committed before the work. Each item carries the agent's confidence.
 |---|---|---|
 | Working location | Branch only | Sat Oct 10 2026 at 9:56:47 AM PT |
 | Participation | Attended | Sat Oct 10 2026 at 9:56:47 AM PT |
+| Drift — work on `master` while open on branch only | Suspend | Sat Oct 10 2026 at 10:03:25 AM PT |
 
 ## What actually happened
 
 Nothing yet.
 
+### Suspended — 2026-10-10
+
+**The experiment is suspended so work can be done on `master` first.** The engineer switched to `master` while the experiment was open on branch only, and selected suspension over adding a worktree. The branch `experiment/derived-rule-files` is kept, and nothing on it is deleted. No step of the experiment had run: the starting point's tool calls and duration were not yet measured, and no generator was written.
+
+**The record's two later commits from the branch were applied to `master`** — the base and the measurement method — so the record here is whole. They touch this record and nothing else.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:59:24 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 10:03:25 AM PT
