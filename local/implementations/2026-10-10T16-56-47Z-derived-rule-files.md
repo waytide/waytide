@@ -34,6 +34,25 @@
 
 **Not yet measured:** the number of tool calls and the time from the start of the read to the first response. These are taken before the derived read is compared against them.
 
+## Measurement method
+
+**The read is measured from Claude Code's own session transcripts.** Each session writes one, and every entry carries a timestamp, so the tool calls and the duration are counted rather than timed by hand.
+
+1. **A fresh session is opened in this repository and given `load waytide` and nothing else.** The hook carries the read instruction, and the agent reads.
+2. **The session's transcript is found.** Claude Code writes each session to `~/.claude/projects/-Users-sbellware-projects-waytide-waytide/<session-id>.jsonl`, one entry per line — the engineer's message, an assistant step, or a tool result.
+3. **Three numbers are taken.**
+   - **Duration** — from the `load waytide` entry to the last assistant entry before the engineer's next message.
+   - **Tool calls** — the `tool_use` blocks in that span.
+   - **Characters read** — the size of the files the read covers, taken from the files rather than the transcript.
+4. **It is repeated over three to five sessions**, and the median and the spread are recorded. The agent's grouping of the reads varies between sessions, and forecast item 2 expects that variance to be as large as the saving.
+5. **The derived read is measured the same way**, so the two sides are compared by one method.
+
+**What the method rests on.**
+
+- **The transcript format is Claude Code's working state, not a documented interface.** An update could change it and break the extraction.
+- **The extraction is a small script on this branch.** It is code, so Design By Efferent governs it unless the engineer treats it as a disposable measurement tool.
+- **Duration depends on the model and on server load.** The sessions compared run on the same model and close together in time.
+
 ## Forecast
 
 Committed before the work. Each item carries the agent's confidence.
@@ -60,3 +79,4 @@ Nothing yet.
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:59:24 AM PT
