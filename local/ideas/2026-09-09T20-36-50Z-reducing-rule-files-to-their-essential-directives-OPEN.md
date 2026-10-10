@@ -41,7 +41,21 @@ So a reduction that keeps only the directive is a reduction that discards the re
 
 **So the wait the engineer sees is the first read of a session**, along with any read after a clear or a compaction. That is the duration this idea would shorten. On 2026-10-10 the read covered 667,009 characters across 126 files.
 
+## An implementation plan for a faster read — added 2026-10-10
+
+**The plan measures first, builds the two mechanical changes next, and shrinks what is read only after the questions above are settled.** The mechanical changes are a packaged script for the read and an experiment with the `additionalContext` channel. Each step after the first is measured against the starting point.
+
+- [ ] **The starting point is measured.** The read's size, the number of tool calls it takes, and the time from the start of the read to the first response are recorded. The size on 2026-10-10 was 667,009 characters.
+- [ ] **A feature: one packaged script prints every rule, in a fixed order.** The script lives in `foundation`. It prints foundation first, then the other packages, then the local rules and the project vocabulary. The read instruction `session-start.sh` carries directs the agent to it, so the agent no longer decides how to group the reads. The announce-waytide-at-session-start rule's description of the instruction is reconciled. This is code, so Design By Efferent governs it. This repository holds only interactive tests, so the check is a session in which the tool calls are counted.
+- [ ] **An experiment: the rules arrive through the `additionalContext` channel.** The question is whether `session-start.sh` can deliver the script's output to the agent before its first response, with no read at all. The forecast is written before the work, and covers the channel's size limit and whether the rules arrive in time. This step uses the script as its source, so it follows it. If it is affirmed, two rules change. The announce-waytide-at-session-start rule keeps that channel to the read instruction. The initialization-rule places its display at the head of the read's response. If it is refuted, the script stands alone as the improvement.
+- [ ] **The open questions above are settled by the engineer.** They are the questions listed under *What is not yet settled*, and three more. Whether the record-rule-authorship-in-a-footer rule reaches the copy that is read, since its reason is subtree-published copies. Whether a package `README.md` counts as a rule file for the read. Which parts are given up: the footers, the README files, or the dated history clauses.
+- [ ] **What is read is shrunk by the answer.** A derived version is a feature: a generator, and a check that regenerates the derived version and compares it, so the agent never follows a stale copy. The source files are left as written. Shortening the files themselves is content work, which Design By Efferent does not govern in this repository. History clauses removed from rules go to the decision log, where most of them already sit. Extending the vocabulary-entry ban on history to rules is a rule change of its own. Either way, the read instruction from the packaged-script step is pointed at the result.
+- [ ] **The read is measured again** against the starting point, and the result is recorded here by dated addition.
+
+**Out of scope.** Not reading deactivated packages, and reading on demand, are both left out. Each reverses a decision the a-project-declares-its-package-set rule and the announce-waytide-at-session-start rule already settled. Claude Code's fast mode is a setting the engineer turns on, not work to build.
+
 ---
 
 Authored by Scott Bellware on Wed Sep 9 2026 at 1:36:50 PM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:38:18 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:50:23 AM PT
