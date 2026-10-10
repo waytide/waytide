@@ -29,6 +29,19 @@ So a reduction that keeps only the directive is a reduction that discards the re
 - Whether the reader whose need decides is the agent at session start or the engineer revising a rule. The two want different things from the same file.
 - Whether the cost being reduced is the read's duration, the context it occupies, or the reader's attention.
 
+## When the read occurs — added 2026-10-10
+
+**The rules are read once per session, not once per request.** The text from that read stays in the conversation context for the rest of the session.
+
+**Each request still sends the whole context to the model, and the rule text is part of it.** Claude Code caches the unchanged opening part of the context, so processing it again on later requests is fast and costs less.
+
+**The hook fires on every kind of session start.** `.claude/settings.json` registers the `SessionStart` hook with no matcher. Claude Code starts a session on startup, on resume, on `/clear`, and on context compaction, and each of these sends the read instruction again.
+
+**Compaction replaces the rules with a summary.** The hook firing again is what brings the read instruction back after that.
+
+**So the wait the engineer sees is the first read of a session**, along with any read after a clear or a compaction. That is the duration this idea would shorten. On 2026-10-10 the read covered 667,009 characters across 126 files.
+
 ---
 
 Authored by Scott Bellware on Wed Sep 9 2026 at 1:36:50 PM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:38:18 AM PT
