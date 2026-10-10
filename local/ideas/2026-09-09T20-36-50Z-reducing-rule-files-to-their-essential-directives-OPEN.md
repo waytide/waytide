@@ -97,9 +97,26 @@ So a reduction that keeps only the directive is a reduction that discards the re
 - **Derived files in a subdirectory, with the full rules left at the root.** The source stays where every reader finds it today, and the read's path changes in every consuming project.
 - **One derived file per package rather than one per rule.** It reduces the number of files read. It gives up the one-rule-per-file shape that lets a rule be named and found by its file.
 
+## The plan, reordered to reach the derived files earlier — added 2026-10-10
+
+**As the engineer stated it:** I want to get to the derived files experiment earlier in the process.
+
+**This order replaces the order of the implementation plan above, which is left as written.** The derived files become an experiment run right after the starting point is measured, rather than a feature built after the open questions are settled. Its findings are then evidence for settling them, where the earlier plan settled them by judgment first.
+
+- [ ] **The starting point is measured.** The read's size, its tool calls, and the time from the start of the read to the first response are recorded.
+- [ ] **An experiment: a session reads derived files.** The question is whether a session that reads derived files reads faster and still honors the rules. A first cut of what a derived file carries is taken without settling the open question. It drops the footer and the dated history clauses, and keeps the directive, the `**Why:**` passage, and the worked instances. The read leaves out the `README.md` files. The forecast is written before the work, and covers the read's size and duration and where adherence might slip. The experiment builds the source and derived layout above on its own branch, with a first generator, which is code that Design By Efferent governs. Adherence is judged by running the same representative requests against the full rules and against the derived files, and comparing what each session does.
+- [ ] **The open questions are settled by the engineer, with the experiment's findings in hand.** That is the questions under *What is not yet settled*, and the three the earlier plan added: the footer rule's reach, whether a README is a rule file, and which parts are given up.
+- [ ] **A feature: one packaged script prints every rule, in a fixed order.** Where the derived files are affirmed, the script prints them rather than the full rules. Moving the script after the experiment means it is built once, against the files it will actually print.
+- [ ] **An experiment: the rules arrive through the `additionalContext` channel.** Unchanged from the earlier plan. It uses the script's output as its source, so it still follows the script.
+- [ ] **What is read is shrunk by the answer.** Where the derived files are affirmed, they become a feature: the generator is finished and the check that regenerates and compares them is added. Where they are refuted, the files themselves are shortened, which is content work. Either way, the read instruction is pointed at the result.
+- [ ] **The read is measured again** against the starting point, and the result is recorded here by dated addition.
+
+**What moving the experiment earlier costs.** The first cut of a derived file is chosen before the questions are settled, so the experiment tests one answer rather than the question. A refuted first cut may say that cut was wrong rather than that derived files are. The forecast names the cut so the finding can say which.
+
 ---
 
 Authored by Scott Bellware on Wed Sep 9 2026 at 1:36:50 PM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:38:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:50:23 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:52:32 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:05 AM PT
