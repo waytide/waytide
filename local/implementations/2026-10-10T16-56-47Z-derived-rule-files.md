@@ -13,7 +13,7 @@
 - **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/derived-rule-files`
-- **Base:** recorded once the branch is created.
+- **Base:** `f53081153fde6596327cbb909f2c5d042da57ca7`, from `master`
 - **Working location:** branch only, chosen at the start.
 - **Participation:** attended, chosen at the start.
 - **Rests on:** the reducing-rule-files-to-their-essential-directives idea — its section on a package structure with source and derived rules, and its reordered plan.
