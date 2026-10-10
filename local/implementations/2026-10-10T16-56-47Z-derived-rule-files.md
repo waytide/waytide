@@ -10,7 +10,6 @@
 
 ## Setup
 
-- **State:** Suspended
 - **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/derived-rule-files`
@@ -84,8 +83,15 @@ Nothing yet.
 
 **The record's two later commits from the branch were applied to `master`** — the base and the measurement method — so the record here is whole. They touch this record and nothing else.
 
+### Resumed — 2026-10-10
+
+**The experiment is resumed on its branch, and its `**State:**` line is removed**, which is how an experiment under way is recorded. `master` was merged into the branch first, in `52c5b1c`. That brought in the startup display change, `7778142`.
+
+**That change alters the read this experiment measures.** The agent no longer opens the initialization-rule first or prints the display. So the starting point is measured with the read as it now stands, and the derived read is compared against that measurement rather than against any read taken before 2026-10-10.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:59:24 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:03:25 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 10:26:18 AM PT
