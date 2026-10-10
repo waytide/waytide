@@ -113,6 +113,22 @@ So a reduction that keeps only the directive is a reduction that discards the re
 
 **What moving the experiment earlier costs.** The first cut of a derived file is chosen before the questions are settled, so the experiment tests one answer rather than the question. A refuted first cut may say that cut was wrong rather than that derived files are. The forecast names the cut so the finding can say which.
 
+## The `additionalContext` experiment moves to the end of the plan — added 2026-10-10
+
+**As the engineer stated it:** reading into additional context will be the last step of the plan, since it is ultimately optional and the framework will have the same functionality without that elaboration.
+
+**This order replaces the order in the section above, which is left as written.** The `additionalContext` experiment moves from fifth to last, after the read is measured again. Nothing else moves.
+
+- [ ] **The starting point is measured.**
+- [ ] **An experiment: a session reads derived files.**
+- [ ] **The open questions are settled by the engineer, with the experiment's findings in hand.**
+- [ ] **A feature: one packaged script prints every rule, in a fixed order.**
+- [ ] **What is read is shrunk by the answer.**
+- [ ] **The read is measured again** against the starting point, and the result is recorded here by dated addition.
+- [ ] **Optionally, an experiment: the rules arrive through the `additionalContext` channel.** Every step above it is complete without it. Its forecast and its result are measured against the second measurement rather than the starting point, so what it adds is read separately from what the rest of the plan achieved.
+
+**Each step carries the content the section above gives it.** Only the order and the optional standing of the last step are new here.
+
 ---
 
 Authored by Scott Bellware on Wed Sep 9 2026 at 1:36:50 PM PT
@@ -120,3 +136,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:38:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:50:23 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:52:32 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:05 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:48 AM PT
