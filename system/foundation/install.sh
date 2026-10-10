@@ -173,7 +173,8 @@ place_claude_md() {
   fi
 }
 
-# The .claude/settings.json content that makes the harness print the session-start notice.
+# The .claude/settings.json content that makes the harness print the session-start notice and,
+# on load waytide, the startup display.
 settings_json() {
   cat <<'EOF'
 {
@@ -187,6 +188,16 @@ settings_json() {
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "waytide/system/foundation/startup-display.sh"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
@@ -194,6 +205,23 @@ settings_json() {
     "command": "waytide/system/foundation/statusline.sh"
   }
 }
+EOF
+}
+
+# The one key a settings.json wired before the startup display existed is missing. It goes
+# inside the file's "hooks" object, beside "SessionStart".
+display_hook_json() {
+  cat <<'EOF'
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "waytide/system/foundation/startup-display.sh"
+          }
+        ]
+      }
+    ]
 EOF
 }
 
@@ -240,8 +268,21 @@ warn_ignored_settings_json() {
 # that adopting the status line replaces whatever status line they had configured.
 # Idempotent.
 place_settings_json() {
-  if [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json; then
-    echo ".claude/settings.json already runs the Waytide session-start notice — left unchanged."
+  if [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json &&
+     grep -q 'foundation/startup-display.sh' .claude/settings.json; then
+    echo ".claude/settings.json already runs the Waytide session-start notice and startup display — left unchanged."
+  elif [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json; then
+    # Wired before the startup display existed. The agent no longer prints the display, so
+    # without this key the project shows none. The file is still not modified, for the reason
+    # given above.
+    echo ".claude/settings.json runs the Waytide session-start notice but not the startup display."
+    echo
+    echo "Without it, load waytide prints no display: the agent no longer prints one. Merge this"
+    echo "key into the 'hooks' object of your file yourself, beside 'SessionStart':"
+    echo
+    echo "----------------------------------------------------------------------"
+    display_hook_json
+    echo "----------------------------------------------------------------------"
   elif [ ! -f .claude/settings.json ]; then
     # No settings file yet — creating one takes nothing away, so do it directly.
     mkdir -p .claude

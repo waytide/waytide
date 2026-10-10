@@ -85,12 +85,12 @@ foundation  →  (nothing — the base every other package builds on)
 
 ## Installing into a project
 
-**Foundation carries the tooling a consuming project runs**, and it is the only package that does. Two facts settle that, and they decide all five of its scripts rather than only the installer:
+**Foundation carries the tooling a consuming project runs**, and it is the only package that does. Two facts settle that, and they decide all six of its scripts rather than only the installer:
 
 - **`git subtree` can only place files inside a package directory.** So a tool a consuming project runs has to live in some package. There is nowhere else for it to be delivered.
 - **It has to be a package that is always there.** Foundation is the only one — every other package includes it, so a project running Waytide at all has foundation.
 
-So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
+So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
 
 **`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide.
 
@@ -200,3 +200,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 9:37:58 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
