@@ -10,7 +10,7 @@ Every shell script in this repository is **runnable as itself** — `./report-di
 **This reaches every shell script Waytide ships**, which is what makes it a rule about the system rather than about one repository's tidiness. Two kinds of script are authored here and they are covered alike:
 
 - **The tools at the root** — `report-direct-commits.sh` and `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains Waytide, in this repository. **`install` sits beside them and is not one**: a consuming project fetches it, which is what makes it the one script here an engineer runs from somewhere other than a clone of this repository. That is the whole reason the delivery section below exists.
-- **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`, `refresh-packages.sh`, `session-start.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and `read-consuming-projects.sh`. These are **installed into every consuming project** and run there, so a missing executable bit committed here arrives broken on every machine that installs the package. That is the case where the cost is not local, and it is the reason the rule is worth having rather than assuming.
+- **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and `read-consuming-projects.sh`. These are **installed into every consuming project** and run there, so a missing executable bit committed here arrives broken on every machine that installs the package. That is the case where the cost is not local, and it is the reason the rule is worth having rather than assuming.
 
 **What it does not reach is a script a consuming project writes for itself.** This is a local rule of this repository, so it binds what is authored here and travels no further. A consuming project wanting the same convention adopts it as its own local rule. It could instead be a `foundation` rule, and so bind every project that installs Waytide. That was asked on 2026-08-06 and declined. The scripts Waytide ships are all authored here, so the rule already covers everything Waytide is responsible for.
 
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:27:51 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:51:09 AM PT
+Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
