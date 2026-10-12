@@ -28,6 +28,10 @@
 
 **The layout** is the one the idea describes: derived files at the package root under each rule's name, the full rules in a source subdirectory. The source subdirectory's name is not settled.
 
+**Narrowed 2026-10-12: the first cut drops the footer only.** The engineer chose to keep the dated history clauses in this cut. Removing a footer is mechanical, and removing a history clause is not, so the cut's results come from the footers and the README files alone, and no directive can be lost from its read. The history clauses become a second cut, measured and judged the same way once this one is. Its generator lists every sentence it drops, for the engineer to check for directives.
+
+**The source subdirectory is `source/`**, chosen by the engineer on 2026-10-12.
+
 ## Starting point
 
 **Measured 2026-10-10:** 667,009 characters across 126 files, of which provenance footers are 74,524 and package `README.md` files are 59,006.
@@ -80,6 +84,8 @@ Committed before the work. Each item carries the agent's confidence.
 6. **Where adherence slips, it slips on a prohibition whose force came from the account of what it replaced** — the alternative that was tried and failed. The announce-waytide-at-session-start rule's no-quotation-marks and no-opt-out passages are the predicted cases. *Low confidence.*
 7. **The README files cost nothing to leave out**, because each summarizes rules the read already carries. *Moderate confidence.*
 
+**Added 2026-10-12, after the first cut was narrowed.** The items above stand as committed. Item 1 was forecast for a cut that also drops the history clauses, so it is judged against the second cut. Item 4 is likewise tested by the second cut. The first cut's read is about 533,000 characters, the starting point less the footers and the README files. At the starting point's spread, a read about a fifth smaller saves some 6 seconds at the median, which five sessions may not separate from the variance.
+
 ## Confirmations
 
 | Confirmation | Decision | When |
@@ -87,6 +93,8 @@ Committed before the work. Each item carries the agent's confidence.
 | Working location | Branch only | Sat Oct 10 2026 at 9:56:47 AM PT |
 | Participation | Attended | Sat Oct 10 2026 at 9:56:47 AM PT |
 | Drift — work on `master` while open on branch only | Suspend | Sat Oct 10 2026 at 10:03:25 AM PT |
+| Source subdirectory name | `source/` | Mon Oct 12 2026 at 12:02:30 PM PT |
+| History clauses in the first cut | Kept — footers only, history clauses a second cut | Mon Oct 12 2026 at 12:02:30 PM PT |
 
 ## What actually happened
 
@@ -123,3 +131,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 10:03:25 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:26:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:56:59 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 11:58:56 AM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 12:02:30 PM PT
