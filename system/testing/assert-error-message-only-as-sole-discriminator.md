@@ -17,11 +17,3 @@ Related:
 
 - the "TDD designs
 - coverage prevents" rule and the prevent substitution — in this package's vocabulary
-
----
-
-Authored by Scott Bellware on Fri Jul 3 2026 at 11 AM PT
-Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT

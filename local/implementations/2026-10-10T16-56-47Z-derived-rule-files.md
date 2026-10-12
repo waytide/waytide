@@ -95,6 +95,12 @@ Committed before the work. Each item carries the agent's confidence.
 | Drift — work on `master` while open on branch only | Suspend | Sat Oct 10 2026 at 10:03:25 AM PT |
 | Source subdirectory name | `source/` | Mon Oct 12 2026 at 12:02:30 PM PT |
 | History clauses in the first cut | Kept — footers only, history clauses a second cut | Mon Oct 12 2026 at 12:02:30 PM PT |
+| The generator's name | `compile`, for now | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Actuation | `(cd "$repository" && ./compile.sh)` — no argument | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Controls | The repository's own source rules, copied into a control repository | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Observation | Each compiled rule is the start of its source, and the rest of the source is footer lines only | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Implementation | Written directly | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Naming | Is its source rule without the footer | Mon Oct 12 2026 at 12:47:12 PM PT |
 
 ## What actually happened
 
@@ -123,6 +129,20 @@ Nothing yet.
 | `f9c2fd39`, Oct 7 | `claude-opus-5-5` | 48.8 s | 21 |
 | `b3cce9f3`, Oct 10 | `claude-opus-5-5` | 47.1 s | 15 |
 
+### The compiler — 2026-10-12
+
+**The generator is `compile.sh`, at the repository root, beside `report-direct-commits.sh`.** The engineer named it `compile`, at least for now, over `derive`, `extract`, and `generate`. It takes no argument, and compiles every package under the `system/` of the repository it runs in.
+
+**Each package's rules are moved into `source/`**, 108 in all, with `git mv` so their history follows them. `README.md` and `vocabulary.md` stay at the package root. `language/ete/` becomes `language/source/ete/`, and its compiled rules return to `language/ete/`.
+
+**The compiled rule is the source rule with the footer removed.** The compiler cuts from the end only: the `Authored by` and `Changed by` lines, the `---` divider, and the blank lines around them. A survey of the footers found 118 rule files of one standard shape, the six README files of another, and one rule — record-rule-authorship-in-a-footer — whose body carries example footers in fenced blocks. Cutting from the end keeps those.
+
+**Its test is `test/automated/compile.sh`, built from the repository's own rules rather than a literal control.** The engineer chose the real rules as the control. For that reason the observation reads each compiled rule as the start of its source, with only footer lines beyond it, not the absence of footer lines anywhere. The test was shown to fail against three broken compilers: one that copies the source, one that cuts at the first `---`, and one that writes empty files.
+
+**Two defects in the test were found in passing.** An empty alternative in a `grep -E` pattern is an error on macOS, and the error made the check pass, so the first run was green for the wrong reason. `head -n 0` is an error on macOS too. Both were corrected before the commit.
+
+**The read is not yet pointed at the compiled rules.** Until it is, a session on this branch reads both the source and the compiled rules.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -132,3 +152,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 10:26:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:56:59 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 11:58:56 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:02:30 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 12:47:12 PM PT

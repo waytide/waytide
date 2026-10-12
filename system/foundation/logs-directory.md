@@ -32,9 +32,3 @@ Related:
 - the migration-convention — the record that is not one of these, and why
 - the a-citation-is-not-a-dependency rule — why naming `logs/loops/` here is not a dependency
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
-
----
-
-Authored by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT

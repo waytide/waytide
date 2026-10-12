@@ -118,34 +118,3 @@ The first informs a decision. The second explains a pause. Duplication that has 
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**. A copy of that file sits at this repository's root and in every package directory. So it travels into each component repository and into every project that installs a package. That is where the license is read. The printed line does not carry terms and is not the place to put them.
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is printed verbatim, so it does not track the clock and is not computed. It changes when the rule changes.
-
----
-
-Authored by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:08:06 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:30:57 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 4:53:15 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 4:57:42 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 4:59:06 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 5:06:41 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 5:08:51 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 5:11:06 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 6:05:55 PM PT
-Changed by Scott Bellware on Fri Aug 7 2026 at 10:51:50 AM PT
-Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
-Changed by Scott Bellware on Fri Aug 21 2026 at 11:25:15 AM PT
-Changed by Scott Bellware on Fri Aug 21 2026 at 11:39:17 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:09:40 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 4:22:15 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:00 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:44:10 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:49:30 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:56:40 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 3:46:13 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
-Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT

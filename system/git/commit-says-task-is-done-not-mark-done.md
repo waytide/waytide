@@ -15,10 +15,3 @@ Related:
 
 - the no-slang terminology rule
 - the decision-log-format conventions
-
----
-
-Authored by Scott Bellware on Mon Jun 29 2026 at 11 AM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
