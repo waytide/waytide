@@ -32,7 +32,22 @@
 
 **Measured 2026-10-10:** 667,009 characters across 126 files, of which provenance footers are 74,524 and package `README.md` files are 59,006.
 
-**Not yet measured:** the number of tool calls and the time from the start of the read to the first response. These are taken before the derived read is compared against them.
+**Measured 2026-10-12, after the startup display change:** 667,402 characters across 126 files, by the same count. The 393 added are the rules reconciled to that change.
+
+**Measured 2026-10-12:** the read's duration and tool calls, over five fresh sessions on `claude-opus-5-5`, run one after another between 18:53 and 18:58 UTC on this branch at `7105e2e`.
+
+| session | start (UTC) | duration | tool calls |
+|---|---|---|---|
+| `575d2bc6` | 18:53:49 | 32.4 s | 13 |
+| `0a584d79` | 18:54:48 | 36.3 s | 10 |
+| `3cc93dd4` | 18:55:39 | 29.5 s | 10 |
+| `1797e07f` | 18:56:27 | 20.5 s | 8 |
+| `d18d0e73` | 18:57:11 | 45.1 s | 12 |
+
+- **Median:** 32.4 seconds and 10 tool calls.
+- **Range:** 20.5 to 45.1 seconds, and 8 to 13 tool calls.
+- **One session is left out.** In `d69c4f94` the command was typed `laod waytide`, so the startup display hook did not run, and the read was not started by the measured command.
+- **The spread is large against the saving forecast.** The longest read takes more than twice as long as the shortest, which bears on forecast item 2.
 
 ## Measurement method
 
@@ -107,3 +122,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:59:24 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:03:25 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:26:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:56:59 AM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 11:58:56 AM PT
