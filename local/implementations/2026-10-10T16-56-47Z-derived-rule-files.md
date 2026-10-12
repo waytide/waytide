@@ -101,6 +101,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Observation | Each compiled rule is the start of its source, and the rest of the source is footer lines only | Mon Oct 12 2026 at 12:47:12 PM PT |
 | Implementation | Written directly | Mon Oct 12 2026 at 12:47:12 PM PT |
 | Naming | Is its source rule without the footer | Mon Oct 12 2026 at 12:47:12 PM PT |
+| Statements of the read changed | The four that direct it, the deployed bootstrap included | Mon Oct 12 2026 at 1:00:17 PM PT |
 
 ## What actually happened
 
@@ -143,6 +144,21 @@ Nothing yet.
 
 **The read is not yet pointed at the compiled rules.** Until it is, a session on this branch reads both the source and the compiled rules.
 
+### The read is pointed at the compiled rules — 2026-10-12
+
+**Every statement that directs the read now leaves out each package's `source/` directory and `README.md`.** There are four:
+
+- the instruction `session-start.sh` carries
+- `AGENTS.md`, this repository's hand-maintained bootstrap
+- the rules-convention's line directing the read, compiled again after the edit
+- the bootstrap `install.sh` writes into a consuming project's `AGENTS.md`, and its account of that bootstrap
+
+**The engineer included `install.sh` so the branch behaves in a deployed project as it does here.** The compiled rules and `session-start.sh` reach a consuming project inside the packages, but that project's `AGENTS.md` comes from `install.sh`. Left unchanged, it would tell a deployed session to read every rule file while the hook told it otherwise. The change was checked in a temporary repository, with `install.sh bootstrap` and with `install.sh agents-md` against an existing `AGENTS.md`. The installer was not run in this repository.
+
+**Two rules still describe the read as every rule file**, and are left until the result is known: the initialization-rule's account of the loading line, and the announce-waytide-at-session-start rule. They describe the read and direct nothing.
+
+**The compiled read is 550,582 characters across 119 files, by the starting point's count**, against 667,402. The 116,820 removed are the README files, 59,090, and the compiled rules' footers. It is larger than the forecast's 533,000 because that figure took every footer in the read, and about 11,400 of it is in files that are not compiled: the vocabularies and the local rules. The README footers were also counted in both the footer and the README figures.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -153,3 +169,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 10:56:59 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 11:58:56 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:02:30 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:47:12 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT

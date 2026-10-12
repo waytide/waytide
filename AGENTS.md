@@ -2,7 +2,7 @@
 
 This is the **Waytide authoring source**. It is the composite repo where every package is developed under one shared history, then published to its own component repo by `git subtree split`. See `CONTRIBUTING.md`. Its layout differs from a project that *installs* the packages. So this file is hand-maintained for the composite, and does not match the one the installer generates.
 
-**At the start of a session, read every rule file under `system/` and under `local/rules/`. Read `local/vocabulary.md` too, which is this project's own vocabulary. Follow them.** That file does not exist here yet, and its absence is ordinary. It is named unconditionally for the same reason `local/rules/` is. `local/rules/` was empty here until 2026-08-04, and was named unconditionally anyway, because the read instruction and the binding rule name it without a condition. That is why its first rule needed no change to this file beyond this sentence.
+**At the start of a session, read every rule file under `system/` and under `local/rules/`, except each package's `source/` directory and `README.md`. Read `local/vocabulary.md` too, which is this project's own vocabulary. Follow them.** That file does not exist here yet, and its absence is ordinary. It is named unconditionally for the same reason `local/rules/` is. `local/rules/` was empty here until 2026-08-04, and was named unconditionally anyway, because the read instruction and the binding rule name it without a condition. That is why its first rule needed no change to this file beyond this sentence.
 
 The rule packages live at the top level of `system/`: `system/foundation/`, `system/language/`, and so on. Each package's `vocabulary.md` glossary is included where it has one, and its terms are binding and cannot be applied unread. Not every package has one, and its absence is not a defect.
 
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
