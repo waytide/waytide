@@ -159,6 +159,31 @@ Nothing yet.
 
 **The compiled read is 550,582 characters across 119 files, by the starting point's count**, against 667,402. The 116,820 removed are the README files, 59,090, and the compiled rules' footers. It is larger than the forecast's 533,000 because that figure took every footer in the read, and about 11,400 of it is in files that are not compiled: the vocabularies and the local rules. The README footers were also counted in both the footer and the README figures.
 
+### The compiled read is measured — 2026-10-12
+
+**Five fresh sessions on `claude-opus-5-5`, run one after another between 00:36 and 00:40 UTC on 2026-10-13, on this branch at `21316ac`.** Each was started with `claude --model claude-opus-5-5 "load waytide"`, so the command could not be mistyped.
+
+| session | start (UTC) | duration | tool calls |
+|---|---|---|---|
+| `ecd566ed` | 00:36:32 | 25.7 s | 8 |
+| `d7601df5` | 00:37:05 | 47.2 s | 20 |
+| `285718c5` | 00:38:07 | 29.6 s | 10 |
+| `dace18d9` | 00:38:43 | 30.9 s | 8 |
+| `1dce8ac9` | 00:39:22 | 26.8 s | 8 |
+
+| | starting point | compiled read |
+|---|---|---|
+| characters | 667,402 | 550,582 |
+| median duration | 32.4 s | 29.6 s |
+| duration range | 20.5–45.1 s | 25.7–47.2 s |
+| median tool calls | 10 | 8 |
+| tool call range | 8–13 | 8–20 |
+
+- **No session opened a source rule or a README.** Each transcript's tool calls were checked. Every mention of `source/` or `README.md` was an exclusion in a `find` or a `grep -v`.
+- **The startup display printed in all five.**
+- **The median fell 2.8 seconds, about 9%, against a read 17.5% smaller.** The two ranges overlap almost entirely, so five sessions do not separate the change from the variance between sessions. This is what the forecast's addendum of 2026-10-12 expected for this cut.
+- **The outlier, `d7601df5`, is in how the agent grouped its reads, not in what it read.** It printed the foundation rules in several batches whose output Claude Code saved to files, then opened those files, and then wrote the other packages to its scratchpad and opened those. That is 20 tool calls against 8 in three of the other sessions.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -170,3 +195,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 11:58:56 AM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:02:30 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:47:12 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 5:40:40 PM PT
