@@ -102,6 +102,8 @@ Committed before the work. Each item carries the agent's confidence.
 | Implementation | Written directly | Mon Oct 12 2026 at 12:47:12 PM PT |
 | Naming | Is its source rule without the footer | Mon Oct 12 2026 at 12:47:12 PM PT |
 | Statements of the read changed | The four that direct it, the deployed bootstrap included | Mon Oct 12 2026 at 1:00:17 PM PT |
+| README-only directives | Adherence sessions | Mon Oct 12 2026 at 5:53:01 PM PT |
+| The second cut | Built and reviewed, no duration sessions | Mon Oct 12 2026 at 9:09:53 PM PT |
 
 ## What actually happened
 
@@ -269,6 +271,16 @@ Nothing yet.
 
 **Found in passing: `report-direct-commits.sh` ignores the `**Repository:**` line.** It derives each repository name from the path alone, at line 50, so a package that declares another name is reported as having no `master` and skipped. Confirmed by reading the script. It is a defect on `master` as well, and outside this experiment.
 
+### The history clauses are surveyed — 2026-10-12
+
+**The compiled rules carry 56 sentences with a date, 8,357 characters, 1.5% of the compiled read.** They were counted outside fenced blocks, splitting each paragraph at sentence ends. "Until" leads 26 of them, and "on" 14.
+
+- **Forecast item 1 is refuted by the files alone.** It put the read with the footers, the README files, and the history clauses removed at 450,000 to 520,000 characters. Removing the dated sentences takes the compiled read to about 542,000. The forecast assumed the history clauses were far larger than the dated ones are.
+- **Forecast item 4's example is among them:** "Every commit written before 2026-08-18 stands as written" is a directive carrying a date.
+- **Most of the history in the rules carries no date** — the accounts of what a rule replaced and of alternatives tried. A cut by date does not reach it.
+
+**The engineer chose to build the dated cut and review what it drops, without duration sessions.** A 17.5% smaller read moved the median by under 3 seconds, within the variance, so a 1.5% cut would measure noise. The review tests forecast item 4.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -284,3 +296,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 5:40:40 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:53:01 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:07:51 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:20:35 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 9:09:53 PM PT
