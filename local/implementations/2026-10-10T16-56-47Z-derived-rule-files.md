@@ -223,6 +223,36 @@ Nothing yet.
 
 **What the result can and cannot say.** The same answer from the two reads means the directive is inferred from the rules or found on demand, so leaving the README out costs nothing for it. A difference is evidence that the README carried something the read needs. One session per side shows a difference but cannot show it is reliable, and a direct question is not the situation a directive was written for: an agent asked where to fix a file may reason to the answer where an agent mid-task would edit it.
 
+### A second round of reads — 2026-10-12
+
+**Twelve sessions were run with `load waytide` alone, six with each read, and no request followed the read.** The adherence requests were not given, so they answer nothing about adherence. They are a second round of the read's measurement, and the first in which the two reads ran back to back: the full read from `../waytide-full` at `7105e2e` between 00:58 and 01:03 UTC on 2026-10-13, then the compiled read from this branch at `aaac29c` between 01:03 and 01:07 UTC.
+
+| | full read | compiled read |
+|---|---|---|
+| median duration | 31.5 s | 28.9 s |
+| duration range | 26.1–42.8 s | 24.2–39.1 s |
+| median tool calls | 10 | 9 |
+| tool call range | 8–16 | 7–15 |
+
+| session | read | duration | tool calls |
+|---|---|---|---|
+| `f32cc5ec` | full | 42.8 s | 14 |
+| `0f27aa0a` | full | 35.6 s | 16 |
+| `ed2ac794` | full | 26.1 s | 9 |
+| `87315241` | full | 26.1 s | 8 |
+| `d902ef8f` | full | 33.7 s | 10 |
+| `fb425f71` | full | 29.2 s | 10 |
+| `8b58e217` | compiled | 30.3 s | 10 |
+| `37a2be70` | compiled | 39.1 s | 15 |
+| `d3d2d032` | compiled | 27.5 s | 9 |
+| `716214cf` | compiled | 27.9 s | 9 |
+| `0ff558a0` | compiled | 24.2 s | 7 |
+| `a7ec9f05` | compiled | 29.9 s | 8 |
+
+- **The second round repeats the first.** The compiled read's median is 2.6 seconds lower, against 2.8 in the first round.
+- **Over both rounds, eleven sessions a side,** the medians are 32.4 seconds and 10 tool calls for the full read, and 29.6 seconds and 9 tool calls for the compiled read.
+- **The ranges still overlap almost entirely.** Two rounds in the same direction make a real but small saving more likely, and do not establish one.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -236,3 +266,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 12:47:12 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:40:40 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:53:01 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 6:07:51 PM PT
