@@ -253,6 +253,22 @@ Nothing yet.
 - **Over both rounds, eleven sessions a side,** the medians are 32.4 seconds and 10 tool calls for the full read, and 29.6 seconds and 9 tool calls for the compiled read.
 - **The ranges still overlap almost entirely.** Two rounds in the same direction make a real but small saving more likely, and do not establish one.
 
+### The adherence sessions — 2026-10-12
+
+**The two reads gave the same answer to each request.** Leaving the README files out changed no answer.
+
+| request | full read | compiled read |
+|---|---|---|
+| Where a mistake in an installed rule is fixed | Met: in the authoring source, then published and refreshed. The installed copy is "never edited in place". No tool calls. (`8e906388`) | Met: the same answer, in the same words. Two tool calls, to check this branch's layout, and it added that on this branch the edit goes in `source/`. (`98e652e9`) |
+| A package's repository name | Met: `tools-ruby-lang`, and a `**Repository:**` line in the README for another. Found by reading `refresh-packages.sh`, not the README. One tool call. (`2e5fea22`) | Met: the same, found in `CONTRIBUTING.md`, `install`, and `refresh-packages.sh`. Three tool calls. It went further, naming the installer's own table and a gap in `report-direct-commits.sh`. (`ce482602`) |
+| A gem build and publish rule in `versioning` | Partly met: it said the rule belongs where the Ruby stack is settled, `ext/ruby-lang`, then drafted it for `versioning` anyway. (`bafc1db8`) | Partly met: the same objection, on the same grounds, then the same draft. (`f774783b`) |
+
+- **Neither session found an answer in a README.** The full read had the README files in its read, and still found the repository rule in `refresh-packages.sh`, and the versioning boundary in the version-scheme rule's pointer to `ext/ruby-lang` and in the run-suite-before-commit rule.
+- **The versioning boundary was half-honored by both reads.** Each objected and then complied. That is a gap in the rules, not in the read: no rule states that release mechanics stay out of `versioning`, and the README that says so did not change the outcome.
+- **Forecast item 7 holds for these three directives**, within what one session a side can show.
+
+**Found in passing: `report-direct-commits.sh` ignores the `**Repository:**` line.** It derives each repository name from the path alone, at line 50, so a package that declares another name is reported as having no `master` and skipped. Confirmed by reading the script. It is a defect on `master` as well, and outside this experiment.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -267,3 +283,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:40:40 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:53:01 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:07:51 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 6:20:35 PM PT
