@@ -184,6 +184,45 @@ Nothing yet.
 - **The median fell 2.8 seconds, about 9%, against a read 17.5% smaller.** The two ranges overlap almost entirely, so five sessions do not separate the change from the variance between sessions. This is what the forecast's addendum of 2026-10-12 expected for this cut.
 - **The outlier, `d7601df5`, is in how the agent grouped its reads, not in what it read.** It printed the foundation rules in several batches whose output Claude Code saved to files, then opened those files, and then wrote the other packages to its scratchpad and opened those. That is 20 tool calls against 8 in three of the other sessions.
 
+### The README files are checked against the rules — 2026-10-12
+
+**Each package's `README.md` was read against its rules and vocabulary for anything no rule states**, to test forecast item 7 without sessions. Three agents ran the check, one for foundation, one for git, language, testing and versioning, and one for design-by-efferent and journal.
+
+**Forecast item 7 holds except for four directives that only a README states:**
+
+- **foundation:** `waytide/system/` is "never edited in place". The rules-convention says where a package rule is edited, so the prohibition can be inferred, but no rule states it.
+- **foundation:** a package's repository is its installed path with the slashes turned to dashes, and a package declares a different one on a `**Repository:**` line in its README. It concerns whoever creates or publishes a package.
+- **versioning:** building and publishing belong to the distribution technology's package, not to `versioning`. Nothing else states it.
+- **design-by-efferent:** read `vocabulary.md` before the rules. Only the order is at stake, since the vocabulary is still read.
+
+**The language README's statement of where a package's terms go is not lost.** Foundation's vocabulary-convention carries it.
+
+**Two README statements contradict their rules, and leaving them out removes the contradiction.** The language README says the precise word "is very often the plainest one", where the language-is-precise-here rule says precision "is not plainness either". The testing README says the package is "not tied to a specific test-framework API", where its rules use TestBench.
+
+**The rest is for people:** install steps, dependency diagrams, history, and the license, with several stale passages, such as the foundation README's account of the retired `deferred/` directory.
+
+**Two rules read a README as data rather than as reading:** the `Includes` line, by the a-citation-is-not-a-dependency and a-project-declares-its-package-set rules. `session-start.sh` computes the package set itself and hands it to the agent, so the session-start read does not need the README for it.
+
+**The vocabulary-first directive was not followed in any of the ten sessions measured, with or without the README.** In all ten, the design-by-efferent rules were read before its vocabulary, including the three starting-point sessions whose read included that README.
+
+### Adherence sessions for the README-only directives — committed before they run, 2026-10-12
+
+**The engineer chose sessions over recording the gaps alone.** Each of the three remaining directives is put as a request to a fresh session with each read, and the answers are compared.
+
+- **The full read** is the starting point, `7105e2e`, in a worktree at `../waytide-full`, detached. The experiment branch is not switched and `master` is not touched.
+- **The compiled read** is this branch.
+- **Each session** is started with `claude --model claude-opus-5-5 "load waytide"`, and given one request once the read finishes. Each request ends "Answer only; change nothing."
+- **Six sessions**, one per request per read, so no answer is shaped by an earlier one.
+- **The transcripts are graded against the expectations below**, and where the agent found its answer is noted — for example, whether it opened a README or `refresh-packages.sh`.
+
+| request | expected answer |
+|---|---|
+| In a project that installs Waytide, I found a mistake in `waytide/system/git/commit-message-widths.md`. Where do I fix it? Answer only; change nothing. | In the authoring source, then published and refreshed into the project. The installed copy is not edited in place. |
+| I'm adding a package at `system/tools/ruby-lang`. What will its component repository be called, and how would I give it a different name? Answer only; change nothing. | `tools-ruby-lang`. A different name is declared on a `**Repository:**` line in the package's README. |
+| Add a rule to the versioning package for building and publishing a Ruby gem with `gem build` and `gem push`. Answer only; change nothing. | The steps do not belong in `versioning`. They belong to the Ruby distribution package. |
+
+**What the result can and cannot say.** The same answer from the two reads means the directive is inferred from the rules or found on demand, so leaving the README out costs nothing for it. A difference is evidence that the README carried something the read needs. One session per side shows a difference but cannot show it is reliable, and a direct question is not the situation a directive was written for: an agent asked where to fix a file may reason to the answer where an agent mid-task would edit it.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -196,3 +235,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 12:02:30 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 12:47:12 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 5:40:40 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 5:53:01 PM PT
