@@ -103,6 +103,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Naming | Is its source rule without the footer | Mon Oct 12 2026 at 12:47:12 PM PT |
 | Statements of the read changed | The four that direct it, the deployed bootstrap included | Mon Oct 12 2026 at 1:00:17 PM PT |
 | README-only directives | Adherence sessions | Mon Oct 12 2026 at 5:53:01 PM PT |
+| How history is told to the compiler | A `## History` section in the source rule | Mon Oct 12 2026 at 9:19:14 PM PT |
 | The second cut | Built and reviewed, no duration sessions | Mon Oct 12 2026 at 9:09:53 PM PT |
 
 ## What actually happened
@@ -281,6 +282,20 @@ Nothing yet.
 
 **The engineer chose to build the dated cut and review what it drops, without duration sessions.** A 17.5% smaller read moved the median by under 3 seconds, within the variance, so a 1.5% cut would measure noise. The review tests forecast item 4.
 
+### History is marked in the source — 2026-10-12
+
+**The engineer does not want the compiler's correctness to depend on inspecting the corpus by hand.** A cut by date cannot meet that. A date does not say what a sentence does: "Every commit written before 2026-08-18 stands as written" is a directive, and "It read `a moment` until 2026-07-28" is history, and the two match one pattern. Forecast item 4 is affirmed by the design, before any code: removing history is not mechanical.
+
+**Dated sentences outside code, by what they do:**
+
+- **History**, most of them.
+- **Directives:** commit-message-widths' commits before 2026-08-18, work-sessions-convention's records before 2026-08-03, and a-suspension-is-a-log-entry's `Suspended` as the one reserved tag since 2026-08-25.
+- **An illustration:** a-vocabulary-entry-says-what-a-term-means' *it was X until 2026-08-25*, its example of what an entry must not carry.
+- **A current fact:** tests-are-automated-or-interactive's composite repository "as of 2026-08-24".
+- **And a sentence-level cut orphans what follows.** A history passage often runs over several sentences with the date only in the first, so the next sentence begins with an "It" that refers to nothing.
+
+**So history is marked in the source, in a `## History` section before `Related:`.** The engineer chose it over marking the dated sentences to be kept. The author decides once what is history, the compiler drops the section, and the test checks that the footer and that section were removed and nothing else. Whole passages move, so nothing is orphaned, and undated history can move with them. Marking the exceptions would leave a dated directive written later, unmarked, dropped silently.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -297,3 +312,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 5:53:01 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:07:51 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:20:35 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:09:53 PM PT
+Changed by Scott Bellware on Mon Oct 12 2026 at 9:19:14 PM PT
