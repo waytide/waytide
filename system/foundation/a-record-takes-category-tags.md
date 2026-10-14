@@ -13,7 +13,7 @@
 
 **A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
 
-**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them. It is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
+The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 
 **No record is excluded, and none is excluded by its shape.** Short, one-line, generated, or historical, a record that carries tags carries them on a `**Tags:**` line.
 
@@ -56,14 +56,3 @@ Related:
 - the a-suspension-is-a-log-entry rule — `[suspended]`, the reserved tag the log carries
 - the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does exempt the log; a footer is lines the entry has nowhere to put, where a tag is not
 - this package's vocabulary — the plain text data attribute line
-
----
-
-Authored by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT

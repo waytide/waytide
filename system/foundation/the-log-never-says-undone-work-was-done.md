@@ -34,7 +34,3 @@ Related:
 - the implementation-records-take-a-log-entry rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
 - the an-idea-takes-a-log-entry rule — the same prohibition for an idea, stated as the mood an entry is written in
 - the implementation-lifecycle rule — the branch deletion that leaves the log as the only durable trace
-
----
-
-Authored by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT

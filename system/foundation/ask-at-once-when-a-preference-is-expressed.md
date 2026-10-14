@@ -39,9 +39,3 @@ Related:
 - the rules-convention — the rule and its log entry
 - the observations-convention — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written
-
----
-
-Authored by Scott Bellware on Fri Aug 14 2026 at 11:32:29 AM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT

@@ -35,8 +35,3 @@ Related:
 - the context-only-for-local-instrumentation rule — when a context is warranted at all
 - the predicate-context-name rule — a deeper context naming an implementation element
 - the `language` package's name-literally-not-by-analogy rule and its solubility rule
-
----
-
-Authored by Scott Bellware on Fri Aug 28 2026 at 10:13:18 AM PT
-Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT

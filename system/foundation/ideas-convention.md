@@ -8,9 +8,7 @@
 
 **The tag describes and decides nothing.** No rule reads a kind tag, no report groups by one, and no filename derives from one. What the record *is* is in the record.
 
-**This is the last of the mode vocabulary, and it is gone with it.** A project once worked in one of three modes, and the mode fixed what a planning record was called — a design, an aspiration, or an orientation in one; a plan, an intention, or an action in another. The mechanism was decommissioned on 2026-08-18 and the six words outlived it as a tag set that still read as exhaustive.
-
-**No tag is reserved here, and none is read mechanically.** `[deferred]` marked work postponed until the current task finishes, and the ideas carrying it were a queue with a rule of its own. That convention was suspended on 2026-08-25 — what made it a queue was a session-start print and a command, and both are gone. The tag is freeform like any other, and what it used to carry is the two lines below.
+**No tag is reserved here, and none is read mechanically.** The `[deferred]` tag is freeform like any other, and what it used to carry is the two lines below.
 
 ## Two optional lines any idea may carry
 
@@ -58,8 +56,6 @@ Every idea carries a `**State:**` line, from the moment it is written:
 
 **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
 
-**One word covers what two used to.** `Realized` replaces the pair `Realized` and `Implemented`, which distinguished a direction taken up from a sequence built. That distinction went with the mode vocabulary, and one word is what remains of it.
-
 ## Supersession
 
 **A later idea may supersede an earlier one.** The earlier takes `**State:** Superseded` and the two name each other in their prose. What the earlier one settled stays as written — a superseded idea is a record of what was thought, not a draft.
@@ -86,15 +82,3 @@ Related:
 - the observations-convention — an observation, which is an idea and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
 - the a-suspension-is-a-log-entry rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
-
----
-
-Authored by Scott Bellware on Mon Aug 17 2026 at 11:40:35 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
-Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
-Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
-Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
-Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
-Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT

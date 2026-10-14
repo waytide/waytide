@@ -37,7 +37,3 @@ Related:
 - the `foundation` ideas-convention — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
 - the `git` run-suite-before-commit rule — the run this narrows the membership of
-
----
-
-Authored by Scott Bellware on Mon Aug 24 2026 at 12:59:35 PM PT

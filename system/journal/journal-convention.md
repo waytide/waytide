@@ -30,7 +30,7 @@
 
 **It carried a parenthetical date until 2026-08-18**, in the form `Diary entry: <subject> (Tue Jun 16 2026)` — the words it read then, when this package was named `diary`. The prefix cost 13 characters and the date 17 more, against a subject line the `git` package's commit-message-widths rule caps at 50. That left 20 characters for what the entry was about, and the date sat at the tail where truncation takes it first — so it was carried at the subject's expense and no reader saw it in a listing. The entry's filename holds the same date.
 
-**`Journal:` rather than `Journal entry:`** for the same budget. It costs 9 characters where the longer form costs 15, and it says the same thing to a reader scanning a log. The prefix was `Diary:` for the few hours between the date being dropped and the package being renamed, both on 2026-08-18.
+**`Journal:` rather than `Journal entry:`** for the same budget. It costs 9 characters where the longer form costs 15, and it says the same thing to a reader scanning a log.
 
 **A subject that still exceeds 50 characters is truncated at the 50th, with an ellipsis.** The `git` package's commit-message-widths rule caps a subject there, and its two remedies are unavailable here: an entry is one commit, so there is nothing to split, and the subject is the writer's words, which the an-entry-is-the-writers-words rule bars the agent from shortening.
 
@@ -61,20 +61,3 @@ Related:
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
 - the foundation package's decision-log rule — the agent's record, and the one this is not
 - the journal-entries rule — the local-time stamp stated at the entry
-
----
-
-Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 10:11:21 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 10:56:57 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 1:10:10 PM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 12:18:34 AM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 12:29:06 AM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
-Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT

@@ -52,7 +52,8 @@ This project's Waytide system and working conventions live under `waytide/`,
 committed alongside the code and read at the start of each session.
 
 **At the start of a session, read every rule file under `waytide/system/` and
-`waytide/local/rules/`, and `waytide/local/vocabulary.md`, and follow them.**
+`waytide/local/rules/`, except each package's `source/` directory and `README.md`,
+and `waytide/local/vocabulary.md`, and follow them.**
 
 `waytide/system/` holds the installed system packages —
 `waytide/system/foundation/`, `waytide/system/language/`, and so on, including
@@ -100,7 +101,8 @@ place_agents_md() {
     echo "You already have an AGENTS.md at the project root."
     echo
     echo "Appending the Waytide bootstrap will add a section that tells the agent,"
-    echo "at the start of every session, to read every rule file under waytide/system/ and waytide/local/rules/,"
+    echo "at the start of every session, to read every rule file under waytide/system/ and waytide/local/rules/"
+    echo "(except each package's source/ directory and README.md),"
     echo "and waytide/local/vocabulary.md, and follow"
     echo "it. Those rules then OVERRIDE the agent's default behavior where they conflict"
     echo "(your explicit instructions still win). Your existing AGENTS.md content is left"

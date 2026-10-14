@@ -77,9 +77,3 @@ Related:
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
 - the ideas-convention — the other record that carries a state, and which has no in-progress absence
-
----
-
-Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT

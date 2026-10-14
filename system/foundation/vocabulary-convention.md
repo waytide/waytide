@@ -14,8 +14,6 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 **A term Waytide did not coin is still a term.** `load-bearing` comes from structural engineering, `cradle` from a physical object, and `preserve` from the vocabulary of design. Each is a term, because the vocabulary says what it means. Where the word was taken rather than coined, the entry says so in its own prose. That is an **origin** and not a kind of entry.
 
-A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry, and that entry carried a definition, which was the test that was to have kept it out. See the suspended words-from-the-design-vocabulary section.
-
 ## Which vocabulary decides
 
 **Five hold terms, and a word can appear in more than one.** They decide in this order, from the one that decides first:
@@ -36,8 +34,6 @@ A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry
 **It is optional, and its absence is not a defect** — the same standing a package's `vocabulary.md` has. Most projects never write one.
 
 **It is not a rule, and it does not live in `rules/`.** A rule states an obligation and takes the datetime prefix, because it is a dated decision in the project's history. A vocabulary accretes and is named for what it is. Putting it inside `rules/` would make the one directory hold two kinds of file under two naming conventions. Keeping it beside `rules/` avoids that.
-
-**What it cost to place it there.** The read instruction previously named `waytide/local/rules/` and said *read only that one directory beside the packages*. So a binding file anywhere else under `waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached `session-start.sh`, the announce-waytide-at-session-start rule, the rules-convention, the file-names rule, and the bootstrap `install.sh` generates. That cost was taken deliberately, for the reason above: the alternative put a glossary in the rules directory and named it like a decision.
 
 **Most of the time the levels do not meet.** The `language` vocabulary holds the substitutions that belong to no domain, and it says so. A domain-specific substitution belongs in its own package. So two vocabularies rarely name the same word, and the order settles the case where they do.
 
@@ -62,16 +58,3 @@ Related:
 - the rules-convention
 - the file-names rule — why the project's file takes no prefix
 - the announce-waytide-at-session-start rule — the read instruction that names it
-
----
-
-Authored by Scott Bellware on Sun Aug 9 2026 at 2:19:00 PM PT
-Changed by Scott Bellware on Sun Aug 9 2026 at 6:56:40 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
-Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT
-Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
-Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT

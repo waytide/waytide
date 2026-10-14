@@ -24,7 +24,7 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 To load them now, type: load waytide.
 ```
 
-  **The notice carries no mark.** Waytide's mark led it, immediately above the install line, from 2026-08-05 until 2026-08-06. It is now printed by a hook of its own when the engineer types `load waytide`. See the initialization-rule.
+  **The notice carries no mark.** The mark is now printed by a hook of its own when the engineer types `load waytide`. See the initialization-rule.
 
   A mark stands for the system being brought into force, and a hook runs before the session. So this was the one surface that could only ever show it at a moment when nothing was being loaded. The mismatch was already written into the notice's own wording, which says **installed** and never *loaded* for exactly that reason.
 
@@ -45,7 +45,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
   **The repository's name leads the line, in bold.** It is the first orientation the line gives — which repository this is. Every segment after it annotates that: the branch, the uncommitted and unpushed work, and the system in force. Bold separates the subject from its annotations, so the line is read at a glance rather than parsed left to right. It is a terminal escape sequence, which the harness passes through. Only the repository name takes one, since a line where several segments are emphasized emphasizes nothing.
 
-  **The Waytide segment is one word and carries no package count.** It did carry one until 2026-07-28. The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
+  **The Waytide segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
 
   Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the status-report-format rule).
 
@@ -89,7 +89,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   **The command names the read outright, and carries no emphasis markup.** `load waytide` says what it does. So an engineer who has never seen this system can act on it without being told what the word stands for. The line also states the two facts an engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
 
-  **The caveat says a few moments, not a moment.** It read `a moment` until 2026-07-28. A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every rule file in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
+  **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every compiled rule in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
 
   **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
 
@@ -120,6 +120,8 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   It is named **whether or not the directory exists**, and the instruction says its absence is ordinary rather than an error. A conditional instruction would vary its text by project, which is a second thing to keep true. The binding rule and the bootstrap name it without a condition, and this now matches them.
 
+  **Within the packages it names the compiled rules: each package's `source/` directory and its `README.md` are left out.** The source rules are the same rules with their footers and History sections, and a README summarizes rules the read already carries.
+
   **It names `local/rules/` and `local/vocabulary.md`, and nothing else beside the packages.** The working directories beside them are worked with as their own conventions describe and are **not** read as binding rules at session start. The instruction says so outright, naming each of them, because an instruction naming `local/` rather than the two would reverse that settled distinction.
 
 **The vocabulary is a file rather than a directory, and it joined the read on 2026-08-10.** A project's own terms and substitutions decide over every package's, so they are binding and cannot be applied unread. The same reason each package's `vocabulary.md` is named. It is named **whether or not it exists**, like `local/rules/`, and its absence is ordinary. Where it sits, and why beside `rules/` rather than inside it, is the vocabulary-convention rule's.
@@ -128,9 +130,9 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   **Neither copy was wrong to exist — the second one was.** A reader wanting the list reads the script, which is what actually reaches the agent. A reader wanting to know what the instruction is *for* reads this rule. Describing a list and reproducing it are different jobs, and only the first belongs here.
 
-**The instruction ends the read with the wait for the engineer's request.** It carried a deferred-queue print from 2026-08-01 until 2026-08-25, when that print was suspended. The clause is removed rather than left naming a rule that no longer exists, and it named `local/deferred/` — a directory removed on 2026-08-18 — for the last week of its life.
+**The instruction ends the read with the wait for the engineer's request.**
 
-**It tells the agent not to print the startup display, because the harness prints it.** The instruction named `foundation/initialization-rule.md` as the first file to open, and asked the agent to print what that rule carries at the head of the read, until 2026-10-10. Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the initialization-rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
+**It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the initialization-rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
 
   **The line says the rules are loaded. The notice's first line still says installed.** They are different claims about different things. The first line reports what a pre-session hook can observe — that the packages are on disk and the configuration is live. This line describes what the session does next, and offers the command that does it now. It reports no read as having happened.
 
@@ -143,9 +145,9 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 - **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git cannot re-include a file inside an excluded directory, so a negation added under a `.claude/` rule does nothing. The rule has to become `.claude/*` plus `!.claude/settings.json`, which keeps each engineer's personal `.claude/settings.local.json` ignored.
 - **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the decision with the engineer.
 
-**There is no opt-out.** A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed. An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
+**There is no opt-out.** An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
 
-The notice, the status line, and the printed copyright and license are each there for one reason. A system read at the start of every session should say so. The variable was the one sanctioned way to have it in force and say nothing.
+The notice, the status line, and the printed copyright and license are each there for one reason. A system read at the start of every session should say so. The `WAYTIDE_QUIET` variable was the one sanctioned way to have it in force and say nothing.
 
 What it never silenced was the read instruction itself — quieting a display must not disable the mechanism that carries the rules. That guarantee is unaffected by its removal, since nothing about the read ever depended on it.
 
@@ -179,55 +181,3 @@ Related:
 - the rules-convention — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
 - the status-report-format rule — the on-demand report that answers in detail what is installed
-
----
-
-Authored by Scott Bellware on Wed Jul 22 2026 at 10 PM PT
-Changed by Scott Bellware on Thu Jul 23 2026 at 2 PM PT
-Changed by Scott Bellware on Thu Jul 23 2026 at 3 PM PT
-Changed by Scott Bellware on Sun Jul 26 2026 at 10:12:41 PM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 12:29:18 AM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 2:07:00 PM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 2:30:44 PM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 5:10:17 PM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 10:29:09 PM PT
-Changed by Scott Bellware on Mon Jul 27 2026 at 11:53:12 PM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 12:39:47 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 12:49:26 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 12:57:27 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 1:04:39 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 1:24:32 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 11:23:01 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 11:33:06 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 11:35:39 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 11:39:45 AM PT
-Changed by Scott Bellware on Tue Jul 28 2026 at 11:50:41 AM PT
-Changed by Scott Bellware on Thu Jul 30 2026 at 11:48:52 AM PT
-Changed by Scott Bellware on Thu Jul 30 2026 at 11:56:04 AM PT
-Changed by Scott Bellware on Sat Aug 1 2026 at 4:10:02 PM PT
-Changed by Scott Bellware on Sat Aug 1 2026 at 4:27:36 PM PT
-Changed by Scott Bellware on Sun Aug 2 2026 at 8:13:27 PM PT
-Changed by Scott Bellware on Sun Aug 2 2026 at 8:23:08 PM PT
-Changed by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 10:15:04 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 10:35:57 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:08:06 PM PT
-Changed by Scott Bellware on Wed Aug 5 2026 at 11:44:36 PM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 12:21:42 AM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 11:56:57 AM PT
-Changed by Scott Bellware on Thu Aug 6 2026 at 6:05:55 PM PT
-Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 1:24:07 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 10:08:33 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 10:21:45 PM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
-Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
-Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
-Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT

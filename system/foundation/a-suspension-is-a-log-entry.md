@@ -22,7 +22,7 @@
 **Tags:** [suspended]
 ```
 
-**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an idea's and an implementation record's do. A leading-tag form was written on 2026-08-18 and superseded the same day.
+**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an idea's and an implementation record's do.
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
@@ -42,10 +42,3 @@ Related:
 - the decision-log-convention — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the ideas-convention — the `Suspended` **state**, which is what an idea takes instead
-
----
-
-Authored by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
-Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT

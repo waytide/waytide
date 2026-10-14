@@ -22,17 +22,3 @@ Related:
 
 - the name-literally-not-by-analogy rule
 - the individual substitution rules — mediates, conform, scenario, increment, and the plain-phrasing rule
-
----
-
-Authored by Scott Bellware on Thu Jul 16 2026 at 7 PM PT
-Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
-Changed by Scott Bellware on Sat Aug 8 2026 at 2:52:56 PM PT
-Changed by Scott Bellware on Sat Aug 8 2026 at 8:06:54 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
-Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
-Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
-Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
