@@ -87,7 +87,7 @@ Then **one blank line**, then the block:
 
 **These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one item that is not always present, and its absence is the ordinary case rather than an omission.
 
-**The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows opens every rule file in every installed package. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
+**The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows opens every compiled rule in every installed package. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is read **after** they have, while the wait is happening.
 

@@ -379,6 +379,10 @@ Nothing yet.
 
 **What the verdicts say together.** Compiled rules shrink the read without a loss of adherence that the sessions could find, and the shrinking does not make the read measurably faster. What varies the duration is how the agent groups its reading — one session took 20 tool calls where most took 8 to 10 — more than how much it reads.
 
+### The two rules that describe the read are corrected — 2026-10-14
+
+**The initialization-rule and the announce-waytide-at-session-start rule now describe the read as opening every compiled rule**, rather than every rule file. They were left as written on 2026-10-12 until the result was known, and corrected at the engineer's request. The announce-waytide-at-session-start rule also says the instruction leaves out each package's `source/` directory and `README.md`, and why. Both were compiled again.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -401,3 +405,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:26:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:29:57 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:34:17 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:38:23 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT

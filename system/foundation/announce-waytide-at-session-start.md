@@ -89,7 +89,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   **The command names the read outright, and carries no emphasis markup.** `load waytide` says what it does. So an engineer who has never seen this system can act on it without being told what the word stands for. The line also states the two facts an engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
 
-  **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every rule file in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
+  **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every compiled rule in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
 
   **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
 
@@ -119,6 +119,8 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
   It is the path this rule calls primary, the file route being the one it was written to stop depending on. A project's own rules are the half no package supplies and no refresh restores.
 
   It is named **whether or not the directory exists**, and the instruction says its absence is ordinary rather than an error. A conditional instruction would vary its text by project, which is a second thing to keep true. The binding rule and the bootstrap name it without a condition, and this now matches them.
+
+  **Within the packages it names the compiled rules: each package's `source/` directory and its `README.md` are left out.** The source rules are the same rules with their footers and History sections, and a README summarizes rules the read already carries.
 
   **It names `local/rules/` and `local/vocabulary.md`, and nothing else beside the packages.** The working directories beside them are worked with as their own conventions describe and are **not** read as binding rules at session start. The instruction says so outright, naming each of them, because an instruction naming `local/` rather than the two would reverse that settled distinction.
 
