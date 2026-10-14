@@ -118,17 +118,3 @@ The first informs a decision. The second explains a pause. Duplication that has 
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**. A copy of that file sits at this repository's root and in every package directory. So it travels into each component repository and into every project that installs a package. That is where the license is read. The printed line does not carry terms and is not the place to put them.
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is printed verbatim, so it does not track the clock and is not computed. It changes when the rule changes.
-
-## History
-
-The agent printed the four until 2026-10-10, at the head of the response that carried the rule read.
-
-The formulation *Agent harness and ally* sat under the title until 2026-08-23, when it was removed — first to the end of the load and then from the display altogether.
-
-The package set stood between the title and the copyright until 2026-10-10, because it says what this session is running.
-
-The list carried `**on**  *off*` under it briefly on 2026-08-23.
-
-*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03.
-
-The copyright line read `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no surrounding prose had nothing to attach itself to.

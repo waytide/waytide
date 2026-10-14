@@ -43,12 +43,29 @@ for source_rule in $source_rules; do
 
   [ -f "$compiled_rule" ] || fail "Is its source rule without the footer" "no compiled rule for:" "$name"
 
-  compiled_length=$(wc -l < "$compiled_rule")
-  removed=$(tail -n +$((compiled_length + 1)) "$source_rule")
+  # The source rule as it reads with its History section left out, which the other outcome reads.
+  source_without_history=$(awk '/^## History$/ { history = 1 } /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
 
-  awk -v compiled_length="$compiled_length" 'NR <= compiled_length' "$source_rule" | cmp -s - "$compiled_rule" || fail "Is its source rule without the footer" "not the start of its source:" "$name"
+  compiled_length=$(wc -l < "$compiled_rule")
+  removed=$(printf '%s\n' "$source_without_history" | tail -n +$((compiled_length + 1)))
+
+  printf '%s\n' "$source_without_history" | awk -v compiled_length="$compiled_length" 'NR <= compiled_length' | cmp -s - "$compiled_rule" || fail "Is its source rule without the footer" "not the start of its source:" "$name"
   printf '%s\n' "$removed" | grep -q '^Authored by ' || fail "Is its source rule without the footer" "footer not removed:" "$name"
   ! printf '%s\n' "$removed" | grep -v -q -E '^(---|Authored by .*|Changed by .*)?$' || fail "Is its source rule without the footer" "more than the footer removed:" "$name" "removed:" "$removed"
+done
+
+# Removes only the History section -------------------------------------------
+
+for source_rule in $source_rules; do
+  compiled_rule=$(printf '%s' "$source_rule" | sed 's|/source/|/|')
+  name=${source_rule#"$repository"/}
+
+  ! grep -q -x '## History' "$compiled_rule" || fail "Removes only the History section" "History section not removed:" "$name"
+
+  history=$(awk '/^## History$/ { history = 1 } /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
+  outside=$(diff "$source_rule" "$compiled_rule" | sed -n 's/^< //p' | grep -v '^$' | grep -v -E '^(---|Authored by .*|Changed by .*)$' | grep -v -x -F -e "$history" || true)
+
+  [ -z "$outside" ] || fail "Removes only the History section" "removed outside the History section:" "$name" "$outside"
 done
 
 echo "0 failed, 0 aborted"

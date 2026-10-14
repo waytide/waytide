@@ -36,10 +36,6 @@ What the queue was really protecting against is a thing coming back different, r
 
 Do not keep a copy of the removed thing. Do not tag an idea's log entry this way — an idea set aside carries `**State:** Suspended` and is not removed.
 
-## History
-
-A leading-tag form was written on 2026-08-18 and superseded the same day.
-
 Related:
 
 - the a-record-takes-category-tags rule — the universal tag protocol, and its one form

@@ -26,10 +26,6 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a running record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
-## History
-
-A migration record was moved here on 2026-08-18 and moved back out the same day.
-
 Related:
 
 - the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s loop-records rule — the three records this groups

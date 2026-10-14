@@ -51,12 +51,6 @@ A **project** settles a term for itself. Put it in `waytide/local/vocabulary.md`
 
 Give a package a vocabulary only when its domain has specialized words. When a word appears in two vocabularies, the more specific one decides. The entry says whether it narrows the general term or replaces it. Keep substitutions and discontinuations under separate headings.
 
-## History
-
-A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry, and that entry carried a definition, which was the test that was to have kept it out. See the suspended words-from-the-design-vocabulary section.
-
-**What it cost to place it there.** The read instruction previously named `waytide/local/rules/` and said *read only that one directory beside the packages*. So a binding file anywhere else under `waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached `session-start.sh`, the announce-waytide-at-session-start rule, the rules-convention, the file-names rule, and the bootstrap `install.sh` generates. That cost was taken deliberately, for the reason above: the alternative put a glossary in the rules directory and named it like a decision.
-
 Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one

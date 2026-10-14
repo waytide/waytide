@@ -6,8 +6,10 @@
 #   ./compile.sh
 #
 # A source rule is the authority and the only copy edited. Its compiled rule sits at the
-# package root under the same name, and is regenerated, never edited. This cut removes the
-# provenance footer: the --- divider and the Authored by and Changed by lines below it.
+# package root under the same name, and is regenerated, never edited. The compiled rule
+# leaves out the rule's History section, from its "## History" line to the "Related:" line
+# or the footer, and the provenance footer: the --- divider and the Authored by and Changed by
+# lines below it.
 set -e
 
 for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
@@ -15,9 +17,11 @@ for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
   mkdir -p "$(dirname "$compiled_rule")"
 
   awk '
-    { line[NR] = $0 }
+    /^## History$/ { history = 1 }
+    history && /^(Related:|---$)/ { history = 0 }
+    !history { line[++count] = $0 }
     END {
-      end = NR
+      end = count
       while (end > 0 && line[end] ~ /^((Authored|Changed) by .*)?$/) end--
       if (end > 0 && line[end] == "---") end--
       while (end > 0 && line[end] == "") end--

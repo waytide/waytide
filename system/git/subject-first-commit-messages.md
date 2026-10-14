@@ -18,10 +18,6 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 **How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb, because a verb puts the engineer's work ahead of the software. That is imperative and past tense alike.
 
-## History
-
-This rule carried a *no 50-character limit* policy until 2026-08-18, licensing a first line as long as it needed. That policy is discontinued and the cap replaced it the same day.
-
 Related:
 
 - the commit-says-task-is-done-not-mark-done rule

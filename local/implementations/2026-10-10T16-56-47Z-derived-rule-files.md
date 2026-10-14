@@ -104,6 +104,10 @@ Committed before the work. Each item carries the agent's confidence.
 | Statements of the read changed | The four that direct it, the deployed bootstrap included | Mon Oct 12 2026 at 1:00:17 PM PT |
 | README-only directives | Adherence sessions | Mon Oct 12 2026 at 5:53:01 PM PT |
 | How history is told to the compiler | A `## History` section in the source rule | Mon Oct 12 2026 at 9:19:14 PM PT |
+| Second outcome — observation | Two outcomes, each with its own check | Wed Oct 14 2026 at 1:26:07 PM PT |
+| Second outcome — controls | The repository's own source rules | Wed Oct 14 2026 at 1:26:07 PM PT |
+| Second outcome — implementation | Written directly | Wed Oct 14 2026 at 1:26:07 PM PT |
+| Second outcome — naming | Removes only the History section | Wed Oct 14 2026 at 1:26:07 PM PT |
 | The second cut | Built and reviewed, no duration sessions | Mon Oct 12 2026 at 9:09:53 PM PT |
 
 ## What actually happened
@@ -315,6 +319,23 @@ Nothing yet.
 
 **Found in passing: tests-are-automated-or-interactive contradicts itself.** It places the composite "in that second state as of 2026-08-24", with no automated suite, and then says the first automated test arrived on 2026-10-10. The second sentence was added on 2026-10-10 without the first being revised. It is a defect on `master` as well.
 
+### The compiler leaves out the History section — 2026-10-14
+
+**The compiled rule leaves out the History section as well as the footer.** The section runs from a `## History` line to the `Related:` line or the footer's `---`. The compiler skips it as it reads, then trims the footer from what is left.
+
+**The test has two outcomes, each with its own check, chosen by the engineer over one combined check.**
+
+- **Is its source rule without the footer** now reads each compiled rule against its source with the History section left out.
+- **Removes only the History section** reads that no compiled rule keeps a `## History` line, and that every line removed lies in the section or the footer.
+
+**The test was shown to fail against three broken compilers:** the previous one, which keeps History; one that cuts from `## History` to the end of the file; and one that drops the heading and keeps the section.
+
+**The section first ran to the end of a rule with no `Related:`.** For initialization-rule that took in the footer, and the footer check found no footer removed. The section now ends at the footer's `---` too, in the test and in the compiler alike; the compiled output is the same.
+
+**The compiled read is 547,006 characters across 119 files**, 3,576 fewer than with the footers alone: the 4,218 characters of history, less the convention line the rules-convention gained.
+
+**The compiler's correctness is established by the test alone.** History is marked in the source, so no reading of the output is needed — which is what the engineer asked for.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -333,3 +354,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 6:20:35 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:09:53 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:19:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:16:20 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:26:07 PM PT

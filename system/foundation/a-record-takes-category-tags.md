@@ -49,10 +49,6 @@ Write tags lower-case and dash-separated in square brackets. Introduce a freefor
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag, it is freeform.
 
-## History
-
-**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them.
-
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary

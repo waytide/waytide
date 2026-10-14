@@ -52,10 +52,6 @@ One file per entry rather than one per day follows the convention every other da
 
 **How to apply:** resolve the active writer, and write an entry as a new file in `waytide/local/journal/<username>/`. Give it the datetime prefix in the writer's local time, to the minute, and a name saying what it is about. Carry seconds only where the writer gave seconds. Do not convert the time to UTC. End it with an `Authored by` line. Do not edit an entry once it is written. Write a later entry instead.
 
-## History
-
-The prefix was `Diary:` for the few hours between the date being dropped and the package being renamed, both on 2026-08-18.
-
 Related:
 
 - the-journal-is-read-at-session-start — when the agent reads it

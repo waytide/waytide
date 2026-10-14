@@ -173,20 +173,6 @@ Write the notice as plain text, with no markdown markup, since the harness rende
 
 Keep the engineer's own segments separated by the middle dot. Set the trailing Waytide segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
 
-## History
-
-Waytide's mark led the notice, immediately above the install line, from 2026-08-05 until 2026-08-06.
-
-The Waytide segment did carry a package count until 2026-07-28.
-
-The caveat read `a moment` until 2026-07-28.
-
-The instruction carried a deferred-queue print from 2026-08-01 until 2026-08-25, when that print was suspended. The clause is removed rather than left naming a rule that no longer exists, and it named `local/deferred/` — a directory removed on 2026-08-18 — for the last week of its life.
-
-The instruction named `foundation/initialization-rule.md` as the first file to open, and asked the agent to print what that rule carries at the head of the read, until 2026-10-10.
-
-A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed.
-
 Related:
 
 - the initialization-rule — the startup display, which this notice does not carry and the agent does not print

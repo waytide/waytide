@@ -98,10 +98,6 @@ Take the display name from the project's `writers.toml` where it holds one for t
 
 Never read git for identity. Never invent a username, and never compute a display name from one. Never take a username from `writers.toml`. Fail loudly where no username resolves.
 
-## History
-
-**The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
-
 Related:
 
 - the journal-convention — the per-writer directories `writers.toml` sits beside
