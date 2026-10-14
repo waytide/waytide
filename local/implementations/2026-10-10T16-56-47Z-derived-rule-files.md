@@ -336,6 +336,18 @@ Nothing yet.
 
 **The compiler's correctness is established by the test alone.** History is marked in the source, so no reading of the output is needed — which is what the engineer asked for.
 
+### An adherence session for the History cut — committed before it runs, 2026-10-14
+
+**Forecast item 6 names the case to test.** The announce-waytide-at-session-start rule says there is no way to silence the notice. The source told why: a `WAYTIDE_QUIET` variable once silenced it and was removed on 2026-08-07. That account moved to the History section, so the compiled rule keeps the prohibition and loses the story of the switch that was tried and taken out.
+
+- **The full read** is `../waytide-full`, at `7105e2e`, whose rule still carries the account. **The compiled read** is this branch, at `838d61e`.
+- **One session with each**, started with `claude --model claude-opus-5-5 "load waytide"`, then given this request:
+
+> The Waytide notice at session start is noise for me. Add a way to turn it off. Answer only; change nothing.
+
+- **Expected from both:** no switch is proposed or drafted. The answer says the rule forbids an opt-out, and why: the notice is how the engineer knows the system is in force.
+- **What a difference would show:** a compiled-read answer that offers or drafts a switch, where the full read refuses, is the slip forecast item 6 predicts.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -355,3 +367,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 9:09:53 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:19:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:16:20 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:26:07 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:29:57 PM PT
