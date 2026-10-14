@@ -365,6 +365,20 @@ Nothing yet.
 - **No slip is attributable to the cut.** The compiled read knew the switch had been removed, from the sentence the body keeps — "The `WAYTIDE_QUIET` variable was the one sanctioned way to have it in force and say nothing" — so the account was not wholly gone. The test was weaker than forecast item 6 needs for that reason, as noted before it ran.
 - **Forecast item 6 is not borne out here**, within what one session a side, on a weakened case, can show.
 
+### The forecast, judged — 2026-10-14
+
+| item | forecast | verdict |
+|---|---|---|
+| 1 | The derived read is 450,000 to 520,000 characters | **Refuted.** The read is 547,006. The history clauses were far smaller than assumed: 4,218 characters moved. |
+| 2 | Duration falls roughly in proportion to size | **Not shown.** A read 18% smaller ran about 9% faster at the median over eleven sessions a side, and the ranges overlap almost entirely. The saving cannot be told apart from the variance between sessions. |
+| 3 | Removing the footers is mechanical and reliable | **Affirmed.** The compiler cuts them from the end of each rule, and the test establishes it across all 108. |
+| 4 | Removing the history clauses is not mechanical | **Affirmed.** A date does not say whether a sentence is history or a directive, so history is marked in the source and the compiler acts on the mark. |
+| 5 | Adherence holds where the directive and the `**Why:**` are kept | **Affirmed, within what was tested.** Four requests, one session a side each, got the same answer from the full read and the compiled read. |
+| 6 | Where adherence slips, it slips on a prohibition that lost the account of what it replaced | **Not borne out, on a weak case.** The no-opt-out prohibition held. Its compiled rule still names the removed switch, so the account was not wholly gone. |
+| 7 | The README files cost nothing to leave out | **Holds, with exceptions.** Three directives are stated only in a README, and the sessions asked about them answered alike from both reads. |
+
+**What the verdicts say together.** Compiled rules shrink the read without a loss of adherence that the sessions could find, and the shrinking does not make the read measurably faster. What varies the duration is how the agent groups its reading — one session took 20 tool calls where most took 8 to 10 — more than how much it reads.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -386,3 +400,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:16:20 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:26:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:29:57 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:34:17 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:38:23 PM PT
