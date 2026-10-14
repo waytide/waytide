@@ -383,6 +383,12 @@ Nothing yet.
 
 **The initialization-rule and the announce-waytide-at-session-start rule now describe the read as opening every compiled rule**, rather than every rule file. They were left as written on 2026-10-12 until the result was known, and corrected at the engineer's request. The announce-waytide-at-session-start rule also says the instruction leaves out each package's `source/` directory and `README.md`, and why. Both were compiled again.
 
+### The worktree and the measurement tool are removed — 2026-10-14
+
+**The `../waytide-full` worktree is removed**, at the engineer's request. It held the starting point, `7105e2e`, detached, for the sessions that compared the two reads, and it had no changes of its own.
+
+**`measure-session-start-read.sh` is removed from the branch root**, also at the engineer's request. It was a disposable tool, and every figure it produced is recorded above. It remains in the history at `7105e2e` should the read be measured again.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -406,3 +412,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:29:57 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:34:17 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:38:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:40:35 PM PT
