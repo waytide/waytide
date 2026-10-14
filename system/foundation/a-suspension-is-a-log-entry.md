@@ -22,7 +22,7 @@
 **Tags:** [suspended]
 ```
 
-**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an idea's and an implementation record's do. A leading-tag form was written on 2026-08-18 and superseded the same day.
+**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an idea's and an implementation record's do.
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
@@ -35,6 +35,10 @@ What the queue was really protecting against is a thing coming back different, r
 **How to apply:** when something the project does is no longer justified, remove it, reconcile what cites it, and write one log entry tagged `[suspended]` saying what was stopped, why, and what else changed. Commit the removal and the entry together.
 
 Do not keep a copy of the removed thing. Do not tag an idea's log entry this way — an idea set aside carries `**State:** Suspended` and is not removed.
+
+## History
+
+A leading-tag form was written on 2026-08-18 and superseded the same day.
 
 Related:
 

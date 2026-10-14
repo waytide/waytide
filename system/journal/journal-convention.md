@@ -30,7 +30,7 @@
 
 **It carried a parenthetical date until 2026-08-18**, in the form `Diary entry: <subject> (Tue Jun 16 2026)` — the words it read then, when this package was named `diary`. The prefix cost 13 characters and the date 17 more, against a subject line the `git` package's commit-message-widths rule caps at 50. That left 20 characters for what the entry was about, and the date sat at the tail where truncation takes it first — so it was carried at the subject's expense and no reader saw it in a listing. The entry's filename holds the same date.
 
-**`Journal:` rather than `Journal entry:`** for the same budget. It costs 9 characters where the longer form costs 15, and it says the same thing to a reader scanning a log. The prefix was `Diary:` for the few hours between the date being dropped and the package being renamed, both on 2026-08-18.
+**`Journal:` rather than `Journal entry:`** for the same budget. It costs 9 characters where the longer form costs 15, and it says the same thing to a reader scanning a log.
 
 **A subject that still exceeds 50 characters is truncated at the 50th, with an ellipsis.** The `git` package's commit-message-widths rule caps a subject there, and its two remedies are unavailable here: an entry is one commit, so there is nothing to split, and the subject is the writer's words, which the an-entry-is-the-writers-words rule bars the agent from shortening.
 
@@ -51,6 +51,10 @@ Journal: Idea
 One file per entry rather than one per day follows the convention every other dated artifact already uses. It also makes the listing readable: an entry named for what it is about can be found without opening it. The local-time stamp is the one place the journal departs from that convention, and the reason is above.
 
 **How to apply:** resolve the active writer, and write an entry as a new file in `waytide/local/journal/<username>/`. Give it the datetime prefix in the writer's local time, to the minute, and a name saying what it is about. Carry seconds only where the writer gave seconds. Do not convert the time to UTC. End it with an `Authored by` line. Do not edit an entry once it is written. Write a later entry instead.
+
+## History
+
+The prefix was `Diary:` for the few hours between the date being dropped and the package being renamed, both on 2026-08-18.
 
 Related:
 

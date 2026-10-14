@@ -296,6 +296,25 @@ Nothing yet.
 
 **So history is marked in the source, in a `## History` section before `Related:`.** The engineer chose it over marking the dated sentences to be kept. The author decides once what is history, the compiler drops the section, and the test checks that the footer and that section were removed and nothing else. Whole passages move, so nothing is orphaned, and undated history can move with them. Marking the exceptions would leave a dated directive written later, unmarked, dropped silently.
 
+### History is moved into History sections — 2026-10-14
+
+**The engineer chose to move all plain history, dated or not, with the agent making every call.** The rule for a call: a passage moves only when it is plainly history and the directive reads whole without it, and anything in doubt stays. A wrong call can then only leave history in the read, never take a directive out of it. Six agents worked the packages in parallel to one brief, and the convention went into the rules-convention first: a rule's history goes in a `## History` section before `Related:`.
+
+**4,218 characters moved, from 10 of the 108 rules, about 0.8% of the compiled read.**
+
+| package | rules edited | rules read |
+|---|---|---|
+| foundation | 7 | 39 |
+| journal | 2 | 10 |
+| git | 1 | 7 |
+| design-by-efferent, language, testing, versioning | 0 | 52 |
+
+- **Most dated passages stayed, as reasoning or directive.** The agents left in place every passage whose account of a past form is the reason a directive holds — the announce-waytide-at-session-start rule's account of the bold command, the foil request, and the hyphen among them — and every dated directive.
+- **The edits are moves.** A word count of each edited rule against its last commit shows nothing removed but a leading "It", "That", or "So", each replaced by what it named so the passage reads on its own in its new place. One paragraph in ideas-convention was left as a bare bold lead, and its lead was joined to its passage in the History section.
+- **Undated history turned out to be scarce.** The design-by-efferent, language, and testing agents found none they judged plain.
+
+**Found in passing: tests-are-automated-or-interactive contradicts itself.** It places the composite "in that second state as of 2026-08-24", with no automated suite, and then says the first automated test arrived on 2026-10-10. The second sentence was added on 2026-10-10 without the first being revised. It is a defect on `master` as well.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -313,3 +332,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 6:07:51 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 6:20:35 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:09:53 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 9:19:14 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:16:20 PM PT

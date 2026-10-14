@@ -2,7 +2,7 @@
 
 The things below are printed once per session, verbatim and in this order. Four are always printed and one more is printed only where the project has declared a package set.
 
-**The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. The agent printed them until 2026-10-10, at the head of the response that carried the rule read. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, where they are not shown. Nothing reported either failure. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, where they are not shown. Nothing reported either failure. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one item the agent still prints**, at the head of the response that carries the rule read, because it is the one item that needs markdown. See below.
 
@@ -16,9 +16,9 @@ First the title, on its own:
 Waytide: Human-Agent Relations
 ```
 
-**It stands alone.** The formulation *Agent harness and ally* sat under it until 2026-08-23, when it was removed — first to the end of the load and then from the display altogether. Nothing replaces it, and nothing is to be put back under the title. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
+**It stands alone.** Nothing replaces the formulation, and nothing is to be put back under the title. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
 
-**Then the package set, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. It stood between the title and the copyright until 2026-10-10, because it says what this session is running. The display and the stanza now come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this item is absent entirely — no line saying there is none.
+**Then the package set, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza now come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this item is absent entirely — no line saying there is none.
 
 **The declared set `default` prints nothing, where nothing is deactivated.** `default` is the set a project gets by asking for no set at all, so a stanza reporting it says what the absence of a stanza already says, at the cost of four lines in a display printed every session.
 
@@ -45,7 +45,7 @@ package set: content
 
 **The count line says how many, which the emphasis does not.** Eight names in mixed weight are read one at a time, and the count is read at once. It also states the total, which nothing else on the line does.
 
-**A legend is not printed, and the count is why.** The list carried `**on**  *off*` under it briefly on 2026-08-23. With the count naming five active and exactly five names in bold, the convention discloses itself by arithmetic, and a legend would spend a line saying what the reader has already worked out.
+**A legend is not printed, and the count is why.** With the count naming five active and exactly five names in bold, the convention discloses itself by arithmetic, and a legend would spend a line saying what the reader has already worked out.
 
 Then **one blank line**, then the copyright notice and the license line, on consecutive lines with no gap between them:
 
@@ -97,11 +97,11 @@ The first informs a decision. The second explains a pause. Duplication that has 
 
 **The title leads.** It is the first line of the display, and the display is printed before the agent's response begins, so nothing the agent writes can stand ahead of it.
 
-**The title is the category line.** *Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03. It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
+**The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
 **Neither the formulation nor the generalized description is printed here.** The four-sentence paragraph *A Generalized Description of Waytide*, settled on 2026-08-20, says what Waytide does, and the formulation said what it is to the two parties. Both live in the `README.md`. This display carries a name, a configuration, an ownership statement, and a wait — and nothing that argues for the system to a reader who is already using it.
 
-**The title names the work, which is why the copyright line no longer does.** That line read `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no surrounding prose had nothing to attach itself to. The title now stands above it and names the work outright, so the copyright line carries the owner and the year alone.
+**The title names the work, which is why the copyright line no longer does.** The title now stands above it and names the work outright, so the copyright line carries the owner and the year alone.
 
 **Emphasis is available on the package set stanza and nowhere else in this display.** The stanza's bold and italic work because the agent prints it, and the agent's output is rendered as markdown. The display the harness prints is plain text, as the session-start notice is — the announce-waytide-at-session-start rule records what that cost when the notice's own markup reached the engineer as asterisks.
 
@@ -118,3 +118,17 @@ The first informs a decision. The second explains a pause. Duplication that has 
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**. A copy of that file sits at this repository's root and in every package directory. So it travels into each component repository and into every project that installs a package. That is where the license is read. The printed line does not carry terms and is not the place to put them.
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is printed verbatim, so it does not track the clock and is not computed. It changes when the rule changes.
+
+## History
+
+The agent printed the four until 2026-10-10, at the head of the response that carried the rule read.
+
+The formulation *Agent harness and ally* sat under the title until 2026-08-23, when it was removed — first to the end of the load and then from the display altogether.
+
+The package set stood between the title and the copyright until 2026-10-10, because it says what this session is running.
+
+The list carried `**on**  *off*` under it briefly on 2026-08-23.
+
+*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03.
+
+The copyright line read `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no surrounding prose had nothing to attach itself to.

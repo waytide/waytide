@@ -50,8 +50,6 @@ display-name = "Scott Bellware"
 
 **`.current-user` is unchanged, and it is not TOML.** It holds the username only, on one line. Trim surrounding whitespace and a trailing newline on read, and allow `#` comment lines. It selects a writer for one checkout and carries no presentation.
 
-**So the two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
-
 ## The display name resolves in this order (first match wins)
 
 1. **The project's `writers.toml`**, where it holds an entry for the resolved username.
@@ -99,6 +97,10 @@ Separating the two values is what keeps the hierarchy small. Who is writing is o
 Take the display name from the project's `writers.toml` where it holds one for that username. Take it from the user file where that file's `username` is the resolved one. Fall back to the username itself.
 
 Never read git for identity. Never invent a username, and never compute a display name from one. Never take a username from `writers.toml`. Fail loudly where no username resolves.
+
+## History
+
+**The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
 
 Related:
 

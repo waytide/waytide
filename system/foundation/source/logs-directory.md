@@ -8,7 +8,7 @@
 
 **What makes a record belong here is that it accrues chronologically and is never revised.** Each is a running account of something that happened, entry after entry, in the order it happened. A reader reaches one by date. Nothing here is a statement of what is currently true, which is what separates these from an idea, an implementation record, or a migration record.
 
-**A migration record is not one of these, and the distinction is the sharpest test of the rule.** It was moved here on 2026-08-18 and moved back out the same day. It is one document rather than entries that accrue, it is revised while the migration runs, and it is **prospective** — a sequence of steps written to be executed. The three records above are retrospective accounts of what happened. That a migration record is *kept* afterward makes it durable, not chronological, and durability is not what this directory is for.
+**A migration record is not one of these, and the distinction is the sharpest test of the rule.** It is one document rather than entries that accrue, it is revised while the migration runs, and it is **prospective** — a sequence of steps written to be executed. The three records above are retrospective accounts of what happened. That a migration record is *kept* afterward makes it durable, not chronological, and durability is not what this directory is for.
 
 **The three keep their own names and their own conventions.** This rule groups them and settles nothing else. `log` stays `log` rather than becoming `decisions`, because every rule that says *write a log entry* means that directory and a rename would reach all of them for nothing.
 
@@ -26,6 +26,10 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a running record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
+## History
+
+A migration record was moved here on 2026-08-18 and moved back out the same day.
+
 Related:
 
 - the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s loop-records rule — the three records this groups
@@ -38,3 +42,4 @@ Related:
 Authored by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT

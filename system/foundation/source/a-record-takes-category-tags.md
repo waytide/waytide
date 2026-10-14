@@ -13,7 +13,7 @@
 
 **A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
 
-**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them. It is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
+The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 
 **No record is excluded, and none is excluded by its shape.** Short, one-line, generated, or historical, a record that carries tags carries them on a `**Tags:**` line.
 
@@ -49,6 +49,10 @@ Write tags lower-case and dash-separated in square brackets. Introduce a freefor
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag, it is freeform.
 
+## History
+
+**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them.
+
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
@@ -67,3 +71,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
