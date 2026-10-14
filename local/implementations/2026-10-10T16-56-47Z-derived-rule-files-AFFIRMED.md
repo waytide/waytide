@@ -18,6 +18,12 @@
 - **Participation:** attended, chosen at the start.
 - **Rests on:** the reducing-rule-files-to-their-essential-directives idea — its section on a package structure with source and derived rules, and its reordered plan.
 
+## State
+
+- **State:** Affirmed
+
+**Affirmed by the engineer on 2026-10-14, as a success.** Compiled rules shrink the session-start read by 18% with no loss of adherence the sessions could find. They do not make it measurably faster. The branch merges into `master`, which the engineer confirmed with the parts no test covers named: the read instruction in four places, the History sections, and the `source/` layout.
+
 ## The first cut
 
 **A derived file drops** the provenance footer and the dated history clauses.
@@ -108,6 +114,9 @@ Committed before the work. Each item carries the agent's confidence.
 | Second outcome — controls | The repository's own source rules | Wed Oct 14 2026 at 1:26:07 PM PT |
 | Second outcome — implementation | Written directly | Wed Oct 14 2026 at 1:26:07 PM PT |
 | Second outcome — naming | Removes only the History section | Wed Oct 14 2026 at 1:26:07 PM PT |
+| Affirmation | Affirmed, as a success | Wed Oct 14 2026 at 1:42:23 PM PT |
+| Merge, with the untested parts named | Merge into `master` | Wed Oct 14 2026 at 1:42:23 PM PT |
+| Branch deletion | Delete `experiment/derived-rule-files` after the merge | Wed Oct 14 2026 at 1:42:23 PM PT |
 | The second cut | Built and reviewed, no duration sessions | Mon Oct 12 2026 at 9:09:53 PM PT |
 
 ## What actually happened
@@ -413,3 +422,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:34:17 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:38:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:40:35 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:42:23 PM PT
