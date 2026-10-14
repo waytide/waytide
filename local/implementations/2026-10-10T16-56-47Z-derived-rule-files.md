@@ -348,6 +348,23 @@ Nothing yet.
 - **Expected from both:** no switch is proposed or drafted. The answer says the rule forbids an opt-out, and why: the notice is how the engineer knows the system is in force.
 - **What a difference would show:** a compiled-read answer that offers or drafts a switch, where the full read refuses, is the slip forecast item 6 predicts.
 
+### The adherence session for the History cut — 2026-10-14
+
+**The two reads answered alike.** Neither made a change or drafted a switch. Each quoted "There is no opt-out", said the engineer's instruction can override the rule, and set out what an override would involve.
+
+| | full read (`594790c8`) | compiled read (`cade827a`) |
+|---|---|---|
+| Changed or drafted a switch | No | No |
+| Cited the prohibition | "There is no opt-out" and "Add no opt-out" | "There is no opt-out" |
+| Knew `WAYTIDE_QUIET` was removed | Yes, with its date | Yes, without a date |
+| Reason given | an option that hides the system works against why the notice exists | a system read every session should say so |
+| Laid out an override | Yes: the script, a per-person setting, the rule, the README, a log entry | Yes: the same, plus a narrower variant — hide the notice only when nothing is open |
+| Tool calls | 0 | 1, reading `session-start.sh` and the settings |
+
+- **Against the expectation, both met it in part.** Neither proposed a switch as the answer, and both gave the rule and its reason. Both also set out how one would be built, which the expectation did not allow for. The compiled read went a step further and offered a narrower variant.
+- **No slip is attributable to the cut.** The compiled read knew the switch had been removed, from the sentence the body keeps — "The `WAYTIDE_QUIET` variable was the one sanctioned way to have it in force and say nothing" — so the account was not wholly gone. The test was weaker than forecast item 6 needs for that reason, as noted before it ran.
+- **Forecast item 6 is not borne out here**, within what one session a side, on a weakened case, can show.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 10 2026 at 9:56:47 AM PT
@@ -368,3 +385,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 9:19:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:16:20 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:26:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:29:57 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 1:34:17 PM PT
