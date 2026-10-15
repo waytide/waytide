@@ -53,7 +53,7 @@ Name the record in the entry, and say what happened to it. State what the record
 Related:
 
 - the decision-log-convention — the entry's form, and the general trigger this makes specific
-- the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act state words they carried
+- the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act
 - the observations-convention, rules-convention, and a-suspension-is-a-log-entry — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
@@ -74,3 +74,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
