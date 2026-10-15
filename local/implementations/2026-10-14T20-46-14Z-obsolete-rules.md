@@ -42,6 +42,7 @@ Committed before the work. Each item carries the agent's confidence.
 |---|---|---|
 | Working location | Branch only | Wed Oct 14 2026 at 1:46:14 PM PT |
 | Participation | Attended | Wed Oct 14 2026 at 1:46:14 PM PT |
+| Remove show-the-test-after-implementing | Remove | Wed Oct 14 2026 at 8:55:19 PM PT |
 
 ## What actually happened
 
@@ -70,7 +71,12 @@ Committed before the work. Each item carries the agent's confidence.
 
 **What the survey says of the forecast so far.** Item 1 holds: five candidates, fewer than ten. Item 2 does not: no candidate governs a retired mechanism; the retired mechanisms survive only as passages, and the candidates divide between foundation and design-by-efferent. Item 3 holds for four of the five: every candidate but package-dependency-heading is cited by another rule. Item 4 holds: the two impertinent candidates are the two the agents were least sure of.
 
+### The candidates, decided one at a time — 2026-10-14
+
+**show-the-test-after-implementing is removed**, by the engineer's decision. Its directive is carried whole by what-each-hinge-displays, and its "solubility gate" belongs to the two-gate loop the five hinges replaced. Four rules cited it. what-each-hinge-displays and show-feature-test-output-after-implementation-hinge now cite the remaining rule in its place, hinge-cycle drops it from `Related:`, and git's run-suite-before-commit points to what-each-hinge-displays instead. No script, README, or bootstrap named it. The compiled read loses 1,722 characters.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:49:11 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:19 PM PT

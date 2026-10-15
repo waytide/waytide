@@ -67,4 +67,3 @@ Related:
 - the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
 - the actuation-gate-options-or-chat rule — the same mechanism at the first gate
 - the one-outcome-at-a-time rule
-- the show-the-test-after-implementing rule

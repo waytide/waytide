@@ -11,7 +11,7 @@ After making any code change, run the full test suite and confirm it passes **be
 Related:
 
 - the human-in-the-loop TDD rule
-- the show-the-test-after-implementing rule
+- the what-each-hinge-displays rule — the implementation, the test, and its output shown at the implementation hinge
 - — for a Ruby project — the `tools/ruby-lang` rule naming the suite's entry point and its verified output
 
 ---
@@ -24,3 +24,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
