@@ -43,6 +43,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Working location | Branch only | Wed Oct 14 2026 at 1:46:14 PM PT |
 | Participation | Attended | Wed Oct 14 2026 at 1:46:14 PM PT |
 | Remove show-the-test-after-implementing | Remove | Wed Oct 14 2026 at 8:55:19 PM PT |
+| rules-establish-a-mindset-purpose-over-category | Keep — not a candidate | Wed Oct 14 2026 at 9:01:00 PM PT |
 
 ## What actually happened
 
@@ -75,8 +76,11 @@ Committed before the work. Each item carries the agent's confidence.
 
 **show-the-test-after-implementing is removed**, by the engineer's decision. Its directive is carried whole by what-each-hinge-displays, and its "solubility gate" belongs to the two-gate loop the five hinges replaced. Four rules cited it. what-each-hinge-displays and show-feature-test-output-after-implementation-hinge now cite the remaining rule in its place, hinge-cycle drops it from `Related:`, and git's run-suite-before-commit points to what-each-hinge-displays instead. No script, README, or bootstrap named it. The compiled read loses 1,722 characters.
 
+**rules-establish-a-mindset-purpose-over-category is kept, and is not a candidate.** Only its framing is stale: it is written around rule folders — `terminology/`, `methodology/`, `test-writing/`, `code/` — that packages replaced. Its claim and its four directives stand, and the rules-convention's bullet carries only part of them. By the experiment's own definition, a rule that stands with a stale passage is not removed. The framing is noted with the other stale passages.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:49:11 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:19 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:01:00 PM PT
