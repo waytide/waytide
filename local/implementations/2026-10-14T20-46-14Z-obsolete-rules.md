@@ -102,6 +102,17 @@ Committed before the work. Each item carries the agent's confidence.
 
 **The larger finding is the stale passages.** About 40 rules carry one, against two whole rules acted on. They are listed in the survey section above.
 
+### The deferred-queue passages, read again — 2026-10-14
+
+**The survey overstated them.** The engineer asked whether the deferred queue is not now handled by the ideas. It is: the foundation vocabulary keeps *deferred* for an ordinary idea carrying a `**Waits for:**` line. The survey counted every use of the word as a reference to the retired queue. Read in its present meaning, the seven divide three ways.
+
+- **Accurate as written:** project-context-lives-in-the-committed-artifacts ("Postponed work is a deferred item"), status-report-format (deferred items are not reported from memory), and communicate-plainly-name-the-thing.
+- **Redundant in form:** working-state-artifacts-carry-a-provenance-footer and file-names-use-iso8601-utc-prefix list deferred items beside ideas as though they were a separate artifact. The entry duplicates one already present and directs nothing wrong.
+- **Stale:** decision-log-convention's `Related:` names "the observations and deferred rules", and no deferred rule exists.
+- **History, not a reference:** commit-message-widths' illustration of a commit naming "four separate deferred items".
+
+The survey section above is left as written; this corrects it.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -111,3 +122,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:01:00 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:04:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:06:08 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:54 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:19:34 PM PT
