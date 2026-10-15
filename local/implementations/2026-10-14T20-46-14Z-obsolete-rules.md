@@ -60,6 +60,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 10 — vocabulary counts | Correct | Thu Oct 15 2026 at 1:17:16 PM PT |
 | Passage 11 — the footer's time form | Correct | Thu Oct 15 2026 at 1:19:52 PM PT |
 | Passage 12 — shortened rule names | Leave — not stale | Thu Oct 15 2026 at 4:45:47 PM PT |
+| Passage 13 — the Word Substitutions rule | Correct | Thu Oct 15 2026 at 4:46:47 PM PT |
 
 ## What actually happened
 
@@ -158,6 +159,8 @@ The survey section above is left as written; this corrects it.
 
 **12. Shortened rule names in citations — left, as not stale.** The survey counted citations such as "the file-names rule" and "the first-turn rule" as names that match no file. Each is the start or an evident part of the rule's file name, the form the corpus uses throughout, and leads to the right rule. Citations naming a rule that does not exist at all are taken separately.
 
+**13. control-prefix-test-vars and test-name-is-prefix — corrected.** Both pointed to "the 'sent to' entry in the Word Substitutions rule". No such rule exists: substitutions are a table in the `language` vocabulary, and "sent to" is a row of it. Both now name the `language` vocabulary.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -181,3 +184,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:45:47 PM PT
+Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
