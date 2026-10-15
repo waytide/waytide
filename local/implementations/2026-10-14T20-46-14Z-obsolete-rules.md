@@ -52,6 +52,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 2 — experiment and feature record | Correct | Wed Oct 14 2026 at 10:29:41 PM PT |
 | Passage 3 — the only reserved tag | Correct, dropping 'the only one' | Wed Oct 14 2026 at 10:30:23 PM PT |
 | Passage 4 — the ideas rule names no entry | Correct | Wed Oct 14 2026 at 10:32:07 PM PT |
+| Passage 5 — state changes that take an entry | Correct | Wed Oct 14 2026 at 10:32:53 PM PT |
 
 ## What actually happened
 
@@ -134,6 +135,8 @@ The survey section above is left as written; this corrects it.
 
 **4. an-idea-takes-a-log-entry — corrected.** It said the ideas-convention names no log entry, which was why this rule was written. The ideas-convention now names it and points here. The sentence and its bold lead now say so.
 
+**5. an-idea-takes-a-log-entry — corrected.** Its list of state changes that take an entry left out Open and Suspended, and named only Realized and Deferred as taken back. It now lists every state word the ideas-convention defines, and Realized, Deferred, and Open as the words taken back.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -149,3 +152,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:29:41 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT

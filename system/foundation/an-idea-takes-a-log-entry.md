@@ -6,7 +6,7 @@ An **idea** in `waytide/local/ideas/` pairs with a one-line entry in `waytide/lo
 
 - **On creation.** That the idea was recorded at all is itself a decision, and the entry records the idea rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit an idea records decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Active**, **Realized**, **Deferred**, **Superseded**, **Abandoned**, or **Lapsed** is a decision. So is either reversible word being taken back: **Realized** when an idea expands, and **Deferred** when the work is taken up. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
+- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, or **Open**, as the ideas-convention sets out. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
 
 ## What the entry says
 
