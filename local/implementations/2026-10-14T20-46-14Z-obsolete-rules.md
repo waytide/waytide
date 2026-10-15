@@ -56,6 +56,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 6 — garbled Related line | Correct | Wed Oct 14 2026 at 10:33:23 PM PT |
 | Passage 7 — the notice's open-work line | Correct | Wed Oct 14 2026 at 10:34:47 PM PT |
 | Passage 8 — sixteen records on master | Correct | Wed Oct 14 2026 at 10:35:39 PM PT |
+| Passage 9 — the deferred rule | Correct | Wed Oct 14 2026 at 10:38:41 PM PT |
 
 ## What actually happened
 
@@ -146,6 +147,8 @@ The survey section above is left as written; this corrects it.
 
 **8. implementation-records-take-a-log-entry — corrected.** It said every one of the project's sixteen implementation records was on `master`. There are 22, and this experiment's record has been on its branch alone. The sentence is dropped; the paragraph keeps its point that the rule does not rely on that practice. The survey's other finding in this group, that the announce-waytide-at-session-start rule says the status line reports the system active, was checked and is accurate: it describes what the segment means, not text it prints.
 
+**9. decision-log-convention — corrected.** Its `Related:` list named "the observations and deferred rules", and the deferred rule went with the queue on 2026-08-25. The entry now names the observations-convention, and a new entry names the an-idea-takes-a-log-entry rule, which covers deferred work now that it is an idea.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -165,3 +168,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
