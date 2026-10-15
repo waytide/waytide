@@ -49,6 +49,7 @@ Committed before the work. Each item carries the agent's confidence.
 | a-citation-is-not-a-dependency | Move to `local/rules/` | Wed Oct 14 2026 at 9:08:54 PM PT |
 | Scope widened to stale passages, decided one at a time | Widen | Wed Oct 14 2026 at 10:25:35 PM PT |
 | Passage 1 — words taken back | Correct | Wed Oct 14 2026 at 10:28:48 PM PT |
+| Passage 2 — experiment and feature record | Correct | Wed Oct 14 2026 at 10:29:41 PM PT |
 
 ## What actually happened
 
@@ -125,6 +126,8 @@ The survey section above is left as written; this corrects it.
 
 **1. a-record-ends-with-its-state-in-upper-case — corrected.** It named Realized and Deferred as the words taken back and renamed a reopened idea to `ACTIVE`. The ideas-convention takes back Realized, Deferred, and Open, returning the idea to Active or to Open. The rule now follows it: the file is renamed to the state the idea returns to.
 
+**2. a-record-ends-with-its-state-in-upper-case — corrected.** It named "an experiment record, a feature record", two kinds merged into the implementation record. It now says an implementation record, whether an experiment or a feature, in its three places.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -137,3 +140,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:19:34 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:29:41 PM PT
