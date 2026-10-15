@@ -55,6 +55,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 5 — state changes that take an entry | Correct | Wed Oct 14 2026 at 10:32:53 PM PT |
 | Passage 6 — garbled Related line | Correct | Wed Oct 14 2026 at 10:33:23 PM PT |
 | Passage 7 — the notice's open-work line | Correct | Wed Oct 14 2026 at 10:34:47 PM PT |
+| Passage 8 — sixteen records on master | Correct | Wed Oct 14 2026 at 10:35:39 PM PT |
 
 ## What actually happened
 
@@ -143,6 +144,8 @@ The survey section above is left as written; this corrects it.
 
 **7. announce-waytide-at-session-start — corrected.** Its example notice showed an experiments line and a features line, from before the two became one kind of record. The script prints one line, "N implementations open: …". The example and the sentences around it now show that line.
 
+**8. implementation-records-take-a-log-entry — corrected.** It said every one of the project's sixteen implementation records was on `master`. There are 22, and this experiment's record has been on its branch alone. The sentence is dropped; the paragraph keeps its point that the rule does not rely on that practice. The survey's other finding in this group, that the announce-waytide-at-session-start rule says the status line reports the system active, was checked and is accurate: it describes what the segment means, not text it prints.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -161,3 +164,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
