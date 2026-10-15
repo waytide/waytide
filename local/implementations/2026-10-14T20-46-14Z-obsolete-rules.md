@@ -47,6 +47,7 @@ Committed before the work. Each item carries the agent's confidence.
 | package-dependency-heading | Keep — not a candidate | Wed Oct 14 2026 at 9:04:54 PM PT |
 | dbe-human-in-the-loop | Keep — not a candidate | Wed Oct 14 2026 at 9:06:08 PM PT |
 | a-citation-is-not-a-dependency | Move to `local/rules/` | Wed Oct 14 2026 at 9:08:54 PM PT |
+| Scope widened to stale passages, decided one at a time | Widen | Wed Oct 14 2026 at 10:25:35 PM PT |
 
 ## What actually happened
 
@@ -113,6 +114,12 @@ Committed before the work. Each item carries the agent's confidence.
 
 The survey section above is left as written; this corrects it.
 
+### The question is widened to passages — 2026-10-14
+
+**The engineer judged the whole-rule limit too literal.** The limit was the agent's, written into the question when the record was created; the engineer's words asked for stale, obsolete, impertinent, and history-only rules, and the stale content found sits almost entirely in passages. The experiment now covers the stale passages the survey found.
+
+**They are decided one at a time, by the engineer, without reviewing diffs.** Each is put with what it is, why it matters, what changes, and what effect the change has.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -123,3 +130,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:04:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:06:08 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:19:34 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:25:35 PM PT
