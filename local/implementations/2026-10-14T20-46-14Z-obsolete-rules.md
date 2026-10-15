@@ -48,6 +48,7 @@ Committed before the work. Each item carries the agent's confidence.
 | dbe-human-in-the-loop | Keep — not a candidate | Wed Oct 14 2026 at 9:06:08 PM PT |
 | a-citation-is-not-a-dependency | Move to `local/rules/` | Wed Oct 14 2026 at 9:08:54 PM PT |
 | Scope widened to stale passages, decided one at a time | Widen | Wed Oct 14 2026 at 10:25:35 PM PT |
+| Passage 1 — words taken back | Correct | Wed Oct 14 2026 at 10:28:48 PM PT |
 
 ## What actually happened
 
@@ -120,6 +121,10 @@ The survey section above is left as written; this corrects it.
 
 **They are decided one at a time, by the engineer, without reviewing diffs.** Each is put with what it is, why it matters, what changes, and what effect the change has.
 
+### The passages, decided one at a time — 2026-10-14
+
+**1. a-record-ends-with-its-state-in-upper-case — corrected.** It named Realized and Deferred as the words taken back and renamed a reopened idea to `ACTIVE`. The ideas-convention takes back Realized, Deferred, and Open, returning the idea to Active or to Open. The rule now follows it: the file is renamed to the state the idea returns to.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -131,3 +136,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:06:08 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:19:34 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:25:35 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT

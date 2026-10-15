@@ -26,7 +26,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **The name is derived from the line and changes only when it changes.** Where the two disagree the line is right, and the name is stale.
 
-**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized** when a design expands, **Deferred** when the work is taken up — renames it to **ACTIVE**.
+**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, or **Open**, as the ideas-convention sets out — renames it to the state the idea returns to, **ACTIVE** or **OPEN**.
 
 **A renamed file breaks a path recorded elsewhere.** That is the cost the rules-convention names when it says to reference a rule by its name rather than its path. Here the mitigation is the same as everywhere: historical records are left as written and a reader who follows an unresolvable path uses git, and **live** artifacts that cite the record are reconciled at the rename.
 
@@ -36,7 +36,7 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 **How to apply:** when a record reaches a state word, write the `**State:**` line and rename the file so its name ends with that word in upper case, after a dash.
 
-When the state changes, rename it again. When a reversible state word is taken back, rename it to **ACTIVE**. Reconcile the live artifacts that cite the old name, and leave historical records as written. Give no suffix to an experiment or feature record carrying no state line, and add none to any file's contents.
+When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Reconcile the live artifacts that cite the old name, and leave historical records as written. Give no suffix to an experiment or feature record carrying no state line, and add none to any file's contents.
 
 Related:
 
