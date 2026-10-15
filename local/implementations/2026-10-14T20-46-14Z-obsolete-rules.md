@@ -44,6 +44,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Participation | Attended | Wed Oct 14 2026 at 1:46:14 PM PT |
 | Remove show-the-test-after-implementing | Remove | Wed Oct 14 2026 at 8:55:19 PM PT |
 | rules-establish-a-mindset-purpose-over-category | Keep — not a candidate | Wed Oct 14 2026 at 9:01:00 PM PT |
+| package-dependency-heading | Keep — not a candidate | Wed Oct 14 2026 at 9:04:54 PM PT |
 
 ## What actually happened
 
@@ -78,9 +79,12 @@ Committed before the work. Each item carries the agent's confidence.
 
 **rules-establish-a-mindset-purpose-over-category is kept, and is not a candidate.** Only its framing is stale: it is written around rule folders — `terminology/`, `methodology/`, `test-writing/`, `code/` — that packages replaced. Its claim and its four directives stand, and the rules-convention's bullet carries only part of them. By the experiment's own definition, a rule that stands with a stale passage is not removed. The framing is noted with the other stale passages.
 
+**package-dependency-heading is kept, and is not a candidate.** The survey judged it impertinent, governing a kind of document Waytide no longer defines, and the agent repeated that when presenting it. The engineer asked whether a design tag did not exist. It does: a design is an idea tagged `[design]`, per the ideas-convention, and this repository holds eleven. The rule therefore governs something that exists. Its "design doc" wording is a stale passage — its sibling plans-no-code-samples was reconciled to ideas and it was not — and is noted with the others. None of the eleven `[design]` ideas yet has a package-dependency section.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:49:11 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:19 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:01:00 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:04:54 PM PT
