@@ -58,6 +58,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 8 — sixteen records on master | Correct | Wed Oct 14 2026 at 10:35:39 PM PT |
 | Passage 9 — the deferred rule | Correct | Wed Oct 14 2026 at 10:38:41 PM PT |
 | Passage 10 — vocabulary counts | Correct | Thu Oct 15 2026 at 1:17:16 PM PT |
+| Passage 11 — the footer's time form | Correct | Thu Oct 15 2026 at 1:19:52 PM PT |
 
 ## What actually happened
 
@@ -152,6 +153,8 @@ The survey section above is left as written; this corrects it.
 
 **10. vocabulary-convention — corrected.** It said five packages carry a vocabulary, where six do: design-by-efferent, foundation, journal, language, testing, and versioning. It said "Five hold terms" above a list of four levels. And its `**Why:**` said five vocabularies bind the same prose. The first is now six, the second four levels, and the third "several", so it does not drift again.
 
+**11. record-title-date-format — corrected.** Explaining how a title's date differs from the footer's, it showed the footer at hour resolution, `at 11 AM PT`, and told the writer to keep the footer's `at <hour> <zone>` form. Footers have carried minutes and seconds since 2026-08-10. The three mentions now show the footer's time to the second. Nothing about a title's date changes.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -173,3 +176,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
+Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
