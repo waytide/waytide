@@ -12,12 +12,11 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 To load them now, type: load waytide.
 ```
 
-  Between the install line and the closing ask, the notice reports **experiments and features that have not concluded**. Each takes a further line, when there are any:
+  Between the install line and the closing ask, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
-1 feature open: upload-retries (suspended)
+3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
 
@@ -30,7 +29,7 @@ To load them now, type: load waytide.
 
   **The move took a hazard with it.** The mark's backslashes had to be doubled here. The notice is interpolated into a JSON string by `printf` with no escaping, and a lone backslash begins a JSON escape sequence. `\_` is not a valid one, the harness fails to parse the output, and **the notice disappears with no error at all**. That constraint is now off the art entirely. It still governs everything else this hook emits, and the load line's no-quotation-marks rule below is the same hazard arriving through a different character.
 
-  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every experiment has concluded the second line is absent entirely, so the notice grows only when there is something open.
+  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
 
   **Why the notice carries it.** The lifecycle requires that an experiment never be left silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
 

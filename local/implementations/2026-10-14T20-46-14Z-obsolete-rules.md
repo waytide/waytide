@@ -54,6 +54,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 4 — the ideas rule names no entry | Correct | Wed Oct 14 2026 at 10:32:07 PM PT |
 | Passage 5 — state changes that take an entry | Correct | Wed Oct 14 2026 at 10:32:53 PM PT |
 | Passage 6 — garbled Related line | Correct | Wed Oct 14 2026 at 10:33:23 PM PT |
+| Passage 7 — the notice's open-work line | Correct | Wed Oct 14 2026 at 10:34:47 PM PT |
 
 ## What actually happened
 
@@ -140,6 +141,8 @@ The survey section above is left as written; this corrects it.
 
 **6. an-idea-takes-a-log-entry — corrected.** A `Related:` line ended with words left from an earlier edit, "state words they carried". They are removed.
 
+**7. announce-waytide-at-session-start — corrected.** Its example notice showed an experiments line and a features line, from before the two became one kind of record. The script prints one line, "N implementations open: …". The example and the sentences around it now show that line.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -157,3 +160,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
