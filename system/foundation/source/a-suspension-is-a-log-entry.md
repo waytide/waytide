@@ -26,7 +26,7 @@
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
-**`[suspended]` is a reserved tag, and since 2026-08-25 it is the only one.** What it marks is fixed here, and the set of suspensions is read from it.
+**`[suspended]` is a reserved tag.** What it marks is fixed here, and the set of suspensions is read from it.
 
 **Why:** an undo queue held the suspended thing itself under `waytide/local/suspended/`, with a return address and a list of reconciliations to reverse. It ran from 2026-08-03 to 2026-08-18 and accumulated eleven items. **Not one was restored.** The mechanism was built for a reversal that never happened, and its cost was paid on every suspension: a file to place, four canonical lines to write, and a growing directory that a reader had to be told the purpose of.
 
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT

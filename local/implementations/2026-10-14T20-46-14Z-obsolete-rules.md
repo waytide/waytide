@@ -50,6 +50,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Scope widened to stale passages, decided one at a time | Widen | Wed Oct 14 2026 at 10:25:35 PM PT |
 | Passage 1 — words taken back | Correct | Wed Oct 14 2026 at 10:28:48 PM PT |
 | Passage 2 — experiment and feature record | Correct | Wed Oct 14 2026 at 10:29:41 PM PT |
+| Passage 3 — the only reserved tag | Correct, dropping 'the only one' | Wed Oct 14 2026 at 10:30:23 PM PT |
 
 ## What actually happened
 
@@ -128,6 +129,8 @@ The survey section above is left as written; this corrects it.
 
 **2. a-record-ends-with-its-state-in-upper-case — corrected.** It named "an experiment record, a feature record", two kinds merged into the implementation record. It now says an implementation record, whether an experiment or a feature, in its three places.
 
+**3. a-suspension-is-a-log-entry — corrected.** It called `[suspended]` the only reserved tag, where the implementations-convention reserves `[experiment]` and `[feature]` and the observations rule makes `[observation]` decide what a record is. It now says only that `[suspended]` is a reserved tag.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -141,3 +144,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:19:34 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:29:41 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
