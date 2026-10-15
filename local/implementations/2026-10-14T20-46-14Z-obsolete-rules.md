@@ -51,6 +51,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 1 — words taken back | Correct | Wed Oct 14 2026 at 10:28:48 PM PT |
 | Passage 2 — experiment and feature record | Correct | Wed Oct 14 2026 at 10:29:41 PM PT |
 | Passage 3 — the only reserved tag | Correct, dropping 'the only one' | Wed Oct 14 2026 at 10:30:23 PM PT |
+| Passage 4 — the ideas rule names no entry | Correct | Wed Oct 14 2026 at 10:32:07 PM PT |
 
 ## What actually happened
 
@@ -131,6 +132,8 @@ The survey section above is left as written; this corrects it.
 
 **3. a-suspension-is-a-log-entry — corrected.** It called `[suspended]` the only reserved tag, where the implementations-convention reserves `[experiment]` and `[feature]` and the observations rule makes `[observation]` decide what a record is. It now says only that `[suspended]` is a reserved tag.
 
+**4. an-idea-takes-a-log-entry — corrected.** It said the ideas-convention names no log entry, which was why this rule was written. The ideas-convention now names it and points here. The sentence and its bold lead now say so.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -145,3 +148,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:29:41 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT

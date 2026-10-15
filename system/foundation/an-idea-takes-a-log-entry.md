@@ -32,7 +32,7 @@ An **idea** in `waytide/local/ideas/` pairs with a one-line entry in `waytide/lo
 
 ## Why the obligation is stated here rather than in each convention
 
-**Three conventions already name their own log entry, and the ideas-convention does not.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule each state the pairing inline. The ideas-convention requires the record, its dated resolutions, and its footer, and names no entry.
+**Three conventions state their own log entry in full, and the ideas-convention points here.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule each state the pairing inline. The ideas-convention requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
 
 **What reached the log anyway was the decision-log-convention's general trigger** — write an entry whenever a real decision is made, and when in doubt, log it. That is enough to produce the entries and not enough to make them reliable, since it rests on each writer reaching the same judgment about what counts.
 
