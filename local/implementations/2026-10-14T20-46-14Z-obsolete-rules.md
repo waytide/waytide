@@ -57,6 +57,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 7 — the notice's open-work line | Correct | Wed Oct 14 2026 at 10:34:47 PM PT |
 | Passage 8 — sixteen records on master | Correct | Wed Oct 14 2026 at 10:35:39 PM PT |
 | Passage 9 — the deferred rule | Correct | Wed Oct 14 2026 at 10:38:41 PM PT |
+| Passage 10 — vocabulary counts | Correct | Thu Oct 15 2026 at 1:17:16 PM PT |
 
 ## What actually happened
 
@@ -149,6 +150,8 @@ The survey section above is left as written; this corrects it.
 
 **9. decision-log-convention — corrected.** Its `Related:` list named "the observations and deferred rules", and the deferred rule went with the queue on 2026-08-25. The entry now names the observations-convention, and a new entry names the an-idea-takes-a-log-entry rule, which covers deferred work now that it is an idea.
 
+**10. vocabulary-convention — corrected.** It said five packages carry a vocabulary, where six do: design-by-efferent, foundation, journal, language, testing, and versioning. It said "Five hold terms" above a list of four levels. And its `**Why:**` said five vocabularies bind the same prose. The first is now six, the second four levels, and the third "several", so it does not drift again.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -169,3 +172,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
+Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT

@@ -2,7 +2,7 @@
 
 A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces. It is binding. Use its terms and its substitutions in code, tests, rules, designs, commits, records, and dialogue.
 
-**A package gets a vocabulary only when it has a specialized vocabulary for its domain.** A package whose subject is written in ordinary words has none. The absence is correct rather than missing. `git` and `ext/ruby-lang` have none. Five packages do.
+**A package gets a vocabulary only when it has a specialized vocabulary for its domain.** A package whose subject is written in ordinary words has none. The absence is correct rather than missing. `git` and `ext/ruby-lang` have none. Six packages do.
 
 ## What a vocabulary holds
 
@@ -16,7 +16,7 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 ## Which vocabulary decides
 
-**Five hold terms, and a word can appear in more than one.** They decide in this order, from the one that decides first:
+**Four levels hold terms, and a word can appear in more than one.** They decide in this order, from the one that decides first:
 
 1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
 2. **The `language` package's vocabulary** — the terms and substitutions that belong to no domain.
@@ -43,7 +43,7 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 **Say which is happening.** Where a package narrows a term, its entry names the general term it narrows. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason. A reader must not have to work out which case an entry is.
 
-**Why:** five vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order. The cost is not hypothetical. `actuation` is defined in `language` and in `design-by-efferent`, and which one governs rests today on a sentence one of them happens to carry. Naming the order once removes that from every future case.
+**Why:** several vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order. The cost is not hypothetical. `actuation` is defined in `language` and in `design-by-efferent`, and which one governs rests today on a sentence one of them happens to carry. Naming the order once removes that from every future case.
 
 **How to apply:** put a term in the vocabulary of the package whose domain it belongs to. Put a domain-less term or substitution in `language`.
 
@@ -78,3 +78,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 1:47:50 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
