@@ -18,6 +18,8 @@ Keeping the line at *works* rather than *is motivated* also keeps the declaratio
 
 This criterion was practiced before it was written. Every declaration in the system already conforms to it. Stating it here is what makes it available to a rule's author without their having to infer it from another rule's aside.
 
+**It is a local rule of the Waytide authoring source, not a `foundation` rule.** It governs writing packages, and the packages are written here. It moved from `foundation` on 2026-10-14, so that a project which installs `foundation` and writes no package does not read it. A `foundation` rule does not cite it, since a citation of this repository's local rule points at nothing in any other project.
+
 **How to apply:** when a rule you are writing names another package's rule, ask one question. Could your rule still be applied with that package absent? If it could, cite it plainly and declare nothing. If it could not, declare the dependency in the package README's `Includes` line and its dependency graph. Add it to `install-dependencies.sh`. Do not declare a dependency for any of these reasons:
 
 - a citation is frequent
@@ -45,3 +47,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT

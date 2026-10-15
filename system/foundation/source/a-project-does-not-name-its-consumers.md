@@ -39,7 +39,6 @@ A decision may have been about that project, and its name is there for that. Lea
 Related:
 
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded
-- the a-citation-is-not-a-dependency rule — the other place this package draws a line about what a reference obliges
 - the rules-convention
 
 ---
@@ -52,3 +51,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT

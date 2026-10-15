@@ -46,6 +46,7 @@ Committed before the work. Each item carries the agent's confidence.
 | rules-establish-a-mindset-purpose-over-category | Keep — not a candidate | Wed Oct 14 2026 at 9:01:00 PM PT |
 | package-dependency-heading | Keep — not a candidate | Wed Oct 14 2026 at 9:04:54 PM PT |
 | dbe-human-in-the-loop | Keep — not a candidate | Wed Oct 14 2026 at 9:06:08 PM PT |
+| a-citation-is-not-a-dependency | Move to `local/rules/` | Wed Oct 14 2026 at 9:08:54 PM PT |
 
 ## What actually happened
 
@@ -84,6 +85,23 @@ Committed before the work. Each item carries the agent's confidence.
 
 **dbe-human-in-the-loop is kept, and is not a candidate.** Its directives are live in every session and stated nowhere else as plainly: never make the engineer wait at a red or green bar, never ask for a pass or fail to be confirmed, exit on solubility rather than coverage, keep turns small, and the division of labor. What is stale is its two-hinge framing, and its step 2, which has the whole test file written before the actuation is deliberated, where hinge-cycle and the first-turn rule settle the three test hinges first. Both are noted as stale passages.
 
+**a-citation-is-not-a-dependency moves from `foundation` to a local rule of this repository**, `local/rules/2026-10-15T04-08-35Z-a-citation-is-not-a-dependency.md`, by the engineer's decision. It governs writing packages, which happens here: every package but `ext/ruby-lang` is written in this repository, and `waytide-ruby`, where that one is written, installs no Waytide. As a local rule it is read in every session here and shipped nowhere. A `foundation` rule cannot cite it, since the citation would point at nothing in another project, so logs-directory and implementations-convention keep their reasoning in their own words without the reference, a-project-does-not-name-its-consumers drops it from `Related:`, and the foundation README loses its paragraph on it. The moved rule keeps its footer and gains a paragraph saying why it is local. A project that installs `foundation` reads 3,992 characters less; this repository's read is unchanged, since it reads its local rules.
+
+### The outcome — 2026-10-14
+
+**One rule removed, one moved, three kept.** Of the five candidates, show-the-test-after-implementing was removed and a-citation-is-not-a-dependency moved to `local/rules/`. rules-establish-a-mindset-purpose-over-category, package-dependency-heading, and dbe-human-in-the-loop are kept as not candidates: each still carries a live directive, and what was stale in each is a passage. The engineer asked, of package-dependency-heading, whether a design tag did not exist; it does, and the survey's judgment of that rule as governing a retired kind of document was wrong.
+
+**On the forecast, so far:**
+
+- **Item 1 holds:** fewer than ten whole rules qualified — five candidates, and two acted on.
+- **Item 2 is refuted:** no candidate governed a retired mechanism.
+- **Item 3 holds:** every rule acted on was cited by others — four citations for the removed rule, three and the README for the moved one.
+- **Item 4 holds:** whether a rule was impertinent was the engineer's judgment each time, and the survey's impertinence calls were the two it was least sure of.
+- **Item 5 holds:** the compiled read shrinks by 1,722 characters here, and by 5,714 in a project that installs the packages.
+- **Item 6 is refuted:** no candidate was read by a script.
+
+**The larger finding is the stale passages.** About 40 rules carry one, against two whole rules acted on. They are listed in the survey section above.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -92,3 +110,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:19 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:01:00 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:04:54 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:06:08 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:54 PM PT

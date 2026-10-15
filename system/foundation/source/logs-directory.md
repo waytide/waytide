@@ -18,7 +18,7 @@
 
 ## The grouping crosses a package boundary, and does not invert it
 
-**`logs/loops/` is contributed by `design-by-efferent`**, which includes `foundation` rather than the reverse. Foundation names the parent directory here, and that is a **citation** — it requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it. A project installing `foundation` alone has `logs/log/` and no `logs/loops/`, and nothing is missing. See the a-citation-is-not-a-dependency rule.
+**`logs/loops/` is contributed by `design-by-efferent`**, which includes `foundation` rather than the reverse. Foundation names the parent directory here, and that is a **citation** — it requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it. A project installing `foundation` alone has `logs/log/` and no `logs/loops/`, and nothing is missing.
 
 **Why:** the three were siblings of `ideas/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
@@ -34,7 +34,6 @@ Related:
 
 - the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s loop-records rule — the three records this groups
 - the migration-convention — the record that is not one of these, and why
-- the a-citation-is-not-a-dependency rule — why naming `logs/loops/` here is not a dependency
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
 
 ---
@@ -43,3 +42,4 @@ Authored by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
