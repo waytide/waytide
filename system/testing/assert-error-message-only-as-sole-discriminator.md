@@ -11,7 +11,7 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 - **No → class + condition suffice. Assert no message.** The empty-file guard's lone `Upload::Error` (one `raise` site on the empty-file path). A response check that always raises from a single line — the class and the condition already pin it.
 - **Yes → the message is the discriminator. Assert it (exact content).** A multi-part `Upload#call` posts each part in turn, so `Upload::Error` can be raised at the **head** part (an earlier part the server rejects) *or* the **tail** part (the final rejected part) — same class, different sites in one execution. The message (which part, which response) is what confirms the failure is the intended one. Likewise a two-step upload: the same `Upload::Error` can come from the initial post's "rejected" site *or* the finalize step's "rejected" site — only the message tells them apart.
 
-**Why:** this keeps error tests about error *correctness* (was the right failure raised under the right condition), not error *presentation*. It is the same line the import-define-audit drew, made into a precise, testable criterion. That line is that library-specific error classes are "self-evidently the right failure and need no message".
+**Why:** this keeps error tests about error *correctness* (was the right failure raised under the right condition), not error *presentation*. It makes a precise, testable criterion of the line that library-specific error classes are "self-evidently the right failure and need no message".
 
 Related:
 

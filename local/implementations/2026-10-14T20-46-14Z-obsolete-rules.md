@@ -62,6 +62,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 12 — shortened rule names | Leave — not stale | Thu Oct 15 2026 at 4:45:47 PM PT |
 | Passage 13 — the Word Substitutions rule | Correct | Thu Oct 15 2026 at 4:46:47 PM PT |
 | Passage 14 — the assert-raises rule | Correct | Thu Oct 15 2026 at 4:49:18 PM PT |
+| Passage 15 — the import-define-audit | Correct | Thu Oct 15 2026 at 10:15:17 PM PT |
 
 ## What actually happened
 
@@ -164,6 +165,8 @@ The survey section above is left as written; this corrects it.
 
 **14. context-only-for-local-instrumentation — corrected.** It cited "the assert-raises rule", a name no rule has. The rule meant is error-test-named-fails-condition-is-context, which promotes an error test's condition to a `When …` context. The citation now names it.
 
+**15. assert-error-message-only-as-sole-discriminator — corrected.** Its `**Why:**` cited "the import-define-audit", a review in the `constant` project that no Waytide rule or record holds. The reference is dropped and the line it stood for is stated directly.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -189,3 +192,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:45:47 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
+Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
