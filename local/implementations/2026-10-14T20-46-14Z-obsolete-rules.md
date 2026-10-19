@@ -64,6 +64,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 14 — the assert-raises rule | Correct | Thu Oct 15 2026 at 4:49:18 PM PT |
 | Passage 15 — the import-define-audit | Correct | Thu Oct 15 2026 at 10:15:17 PM PT |
 | Passage 16 — a suspended rule that no longer exists | Correct | Thu Oct 15 2026 at 10:16:13 PM PT |
+| Passage 17 — decision-log-format conventions | Correct | Mon Oct 19 2026 at 3:35:00 PM PT |
 
 ## What actually happened
 
@@ -170,6 +171,8 @@ The survey section above is left as written; this corrects it.
 
 **16. timeline-view — corrected.** It pointed to "the suspended new-entry-trigger-rebuilds-timeline-index rule". That rule left with the suspension directory on 2026-08-18, and nothing holds it. The pointer is dropped; the account of the stored index it was attached to stays, as the reason for the rule.
 
+**17. commit-says-task-is-done-not-mark-done — corrected.** Its `Related:` list named "the decision-log-format conventions", which no rule is. It now names the decision-log-convention.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -197,3 +200,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
+Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
