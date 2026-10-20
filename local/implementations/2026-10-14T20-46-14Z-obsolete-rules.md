@@ -74,6 +74,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 24 — word counts | Date them | Tue Oct 20 2026 at 11:55:11 AM PT |
 | Passage 25 — three words reserved | Drop the count, keep one example | Tue Oct 20 2026 at 12:11:48 PM PT |
 | Passage 26 — experiment and feature record in ETE | Correct | Tue Oct 20 2026 at 12:12:36 PM PT |
+| Passage 27 — plans and deferred items | Leave — not stale | Tue Oct 20 2026 at 12:14:38 PM PT |
 
 ## What actually happened
 
@@ -200,6 +201,8 @@ The survey section above is left as written; this corrects it.
 
 **26. ete-declares-its-own-categories — corrected.** Its examples of agent-artifact terms named `experiment record` and `feature record`, which became the one implementation record. The examples now name `implementation record`.
 
+**27. communicate-plainly-name-the-thing — left, as not stale.** The agent proposed replacing "plans, deferred items" in its list of durable artifacts, calling both retired kinds of file. The engineer asked what was wrong with plans. Nothing: a plan is an idea tagged `[plan]`, and deferred work is an idea carrying a `**Waits for:**` line, so the list names real things in words a reader knows. The second reading of the deferred-queue passages had already judged it accurate.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -237,3 +240,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:14:38 PM PT
