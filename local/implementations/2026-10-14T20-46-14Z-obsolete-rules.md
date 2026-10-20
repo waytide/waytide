@@ -65,6 +65,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 15 — the import-define-audit | Correct | Thu Oct 15 2026 at 10:15:17 PM PT |
 | Passage 16 — a suspended rule that no longer exists | Correct | Thu Oct 15 2026 at 10:16:13 PM PT |
 | Passage 17 — decision-log-format conventions | Correct | Mon Oct 19 2026 at 3:35:00 PM PT |
+| Passage 18 — tools/ruby-lang | Correct | Tue Oct 20 2026 at 11:18:37 AM PT |
 
 ## What actually happened
 
@@ -173,6 +174,8 @@ The survey section above is left as written; this corrects it.
 
 **17. commit-says-task-is-done-not-mark-done — corrected.** Its `Related:` list named "the decision-log-format conventions", which no rule is. It now names the decision-log-convention.
 
+**18. run-suite-before-commit — corrected.** It pointed a Ruby project to the `tools/ruby-lang` package twice. The grouping became `ext/` on 2026-08-23, and every other rule says `ext/ruby-lang`. Both mentions now do.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -201,3 +204,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
 Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
