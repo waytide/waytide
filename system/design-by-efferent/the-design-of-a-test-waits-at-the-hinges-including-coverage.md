@@ -18,5 +18,4 @@ Related:
 
 - the hinge-cycle rule
 - the what-each-hinge-displays rule
-- the companion "TDD designs
-- coverage prevents" rule
+- the companion tdd-designs-coverage-prevents-never-break-implementation rule

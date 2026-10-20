@@ -16,5 +16,4 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 Related:
 
-- the "TDD designs
-- coverage prevents" rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
+- the tdd-designs-coverage-prevents-never-break-implementation rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior

@@ -15,5 +15,4 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 
 Related:
 
-- the "TDD designs
-- coverage prevents" rule and the prevent substitution — in this package's vocabulary
+- the tdd-designs-coverage-prevents-never-break-implementation rule, and the prevent substitution — in this package's vocabulary
