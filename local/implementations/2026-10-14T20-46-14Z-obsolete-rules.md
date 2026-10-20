@@ -68,6 +68,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 18 — tools/ruby-lang | Correct | Tue Oct 20 2026 at 11:18:37 AM PT |
 | Passage 19 — ~/.claude/CLAUDE.md | Correct | Tue Oct 20 2026 at 11:19:33 AM PT |
 | Passage 20 — version-scheme's Ruby pointer | Correct | Tue Oct 20 2026 at 11:20:41 AM PT |
+| Passage 21 — the footer rule's lists | Correct | Tue Oct 20 2026 at 11:22:01 AM PT |
 
 ## What actually happened
 
@@ -182,6 +183,8 @@ The survey section above is left as written; this corrects it.
 
 **20. version-scheme — corrected.** Its `Related:` entry reached the Ruby package through that package's running-the-test-suite rule, which says nothing about versions. The package's releasing-a-gem rule is the one that places the version, in the gemspec's `s.version`. The entry now names it. That rule also covers building and pushing a gem, which both reads in the README adherence sessions drafted for `versioning` without finding it.
 
+**21. working-state-artifacts-carry-a-provenance-footer — corrected.** Its two lists of the records that carry a footer named experiments, designs, plans, observations, and deferred items as separate kinds. Experiments and features are one implementation record, and features were missing; designs, plans, observations, and deferred work are all ideas, and ideas were not named. Both lists now name implementation records and ideas.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -213,3 +216,4 @@ Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:19:33 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:22:01 AM PT
