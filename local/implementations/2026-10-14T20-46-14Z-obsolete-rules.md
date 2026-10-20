@@ -78,6 +78,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 28 — the individual substitution rules | Correct | Tue Oct 20 2026 at 12:16:02 PM PT |
 | Passage 29 — the composite's test state | Correct | Tue Oct 20 2026 at 12:25:33 PM PT |
 | Passage 30 — arrange | Correct | Tue Oct 20 2026 at 12:26:52 PM PT |
+| Passage 31 — the solubility gate | Correct | Tue Oct 20 2026 at 12:27:37 PM PT |
 
 ## What actually happened
 
@@ -212,6 +213,8 @@ The survey section above is left as written; this corrects it.
 
 **30. tdd-test-structure and dbe-first-turn-test-file — corrected.** Both used "arrange" for a test's setup, which the testing package's controls-not-factories-fixtures-arrange rule forbids in favor of the control of the test. tdd-test-structure's bold lead now reads "Set up the controls and actuate once", and the three instructions say "State the inputs". Two other uses of "arranged" mean organized rather than test setup, and are left.
 
+**31. show-feature-test-output-after-implementation-hinge — corrected.** Its last step was "hand over the solubility gate", a gate of the two-gate loop. The five hinges judge solubility at the implementation hinge, on the implementation and its output. The step now says the engineer judges solubility on what is shown.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -253,3 +256,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:14:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:25:33 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:27:37 PM PT
