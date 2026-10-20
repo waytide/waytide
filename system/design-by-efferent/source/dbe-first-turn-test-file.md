@@ -4,7 +4,7 @@ Start a feature by writing a test file, not implementation. The first turn produ
 
 What the first gate puts down is small and fixed:
 
-1. **The actuation** — the invocation of the unit under test, the first efferent reference, bound to an explaining variable. Arrange any inputs just above it (via controls or literals).
+1. **The actuation** — the invocation of the unit under test, the first efferent reference, bound to an explaining variable. State any inputs just above it (via controls or literals).
 2. **An unnamed assert** — a single bare `test` block asserting that explaining variable (or the variable against a control value). No inner outcome `context`, and so no outcome to name yet.
 
 The file is still nested to mirror its folder path, per the folder-mirroring rule. There is an outer `context` per path segment. The actuation and the unnamed `test` block sit inside the innermost of those.
@@ -65,3 +65,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:37:36 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT

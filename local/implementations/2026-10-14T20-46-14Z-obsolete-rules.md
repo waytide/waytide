@@ -77,6 +77,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 27 — plans and deferred items | Leave — not stale | Tue Oct 20 2026 at 12:14:38 PM PT |
 | Passage 28 — the individual substitution rules | Correct | Tue Oct 20 2026 at 12:16:02 PM PT |
 | Passage 29 — the composite's test state | Correct | Tue Oct 20 2026 at 12:25:33 PM PT |
+| Passage 30 — arrange | Correct | Tue Oct 20 2026 at 12:26:52 PM PT |
 
 ## What actually happened
 
@@ -209,6 +210,8 @@ The survey section above is left as written; this corrects it.
 
 **29. tests-are-automated-or-interactive — corrected.** Its example put this repository in the no-automated-suite state "as of 2026-08-24", then said its first automated test arrived on 2026-10-10. It holds two automated tests now. The example reads as past, from 2026-08-24 to 2026-10-10, and its three tests are named interactive, since they are no longer all the tests there are.
 
+**30. tdd-test-structure and dbe-first-turn-test-file — corrected.** Both used "arrange" for a test's setup, which the testing package's controls-not-factories-fixtures-arrange rule forbids in favor of the control of the test. tdd-test-structure's bold lead now reads "Set up the controls and actuate once", and the three instructions say "State the inputs". Two other uses of "arranged" mean organized rather than test setup, and are left.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -249,3 +252,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:14:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:25:33 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
