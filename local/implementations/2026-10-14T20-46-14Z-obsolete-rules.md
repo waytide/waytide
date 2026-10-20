@@ -66,6 +66,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 16 — a suspended rule that no longer exists | Correct | Thu Oct 15 2026 at 10:16:13 PM PT |
 | Passage 17 — decision-log-format conventions | Correct | Mon Oct 19 2026 at 3:35:00 PM PT |
 | Passage 18 — tools/ruby-lang | Correct | Tue Oct 20 2026 at 11:18:37 AM PT |
+| Passage 19 — ~/.claude/CLAUDE.md | Correct | Tue Oct 20 2026 at 11:19:33 AM PT |
 
 ## What actually happened
 
@@ -176,6 +177,8 @@ The survey section above is left as written; this corrects it.
 
 **18. run-suite-before-commit — corrected.** It pointed a Ruby project to the `tools/ruby-lang` package twice. The grouping became `ext/` on 2026-08-23, and every other rule says `ext/ruby-lang`. Both mentions now do.
 
+**19. no-claude-coauthor — corrected.** It said the instruction was "also recorded in `~/.claude/CLAUDE.md`". That file does not exist on the engineer's machine, and a package rule naming one person's home-directory file makes the same claim on every machine it is installed on. The parenthesis is dropped.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -205,3 +208,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
 Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:19:33 AM PT
