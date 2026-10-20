@@ -72,6 +72,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 22 — deferred items in the file-names rule | Correct | Tue Oct 20 2026 at 11:23:55 AM PT |
 | Passage 23 — the removed unclaimed-words check | Correct | Tue Oct 20 2026 at 11:51:09 AM PT |
 | Passage 24 — word counts | Date them | Tue Oct 20 2026 at 11:55:11 AM PT |
+| Passage 25 — three words reserved | Drop the count, keep one example | Tue Oct 20 2026 at 12:11:48 PM PT |
 
 ## What actually happened
 
@@ -194,6 +195,8 @@ The survey section above is left as written; this corrects it.
 
 **24. ordinary-vocabulary-is-not-reserved-and-not-rewritten — corrected.** Its opening counted, as a present fact, how often the rule files use seven words STE refuses — `as` 411 times, `every` 221. The counts have drifted with every edit since. They are now stated as of when the rule was written, which stays true.
 
+**25. ete-fixes-the-meaning-of-a-word-in-its-category — corrected.** It said three words are reserved this way — loop, mechanical, and level. The vocabularies reserve seven: those three, and cycle, local, increment, and send. The engineer asked whether the rule needs a count at all, since a count must be corrected each time the list grows. It does not: the count and the list are dropped, loop stays as the one example, and the vocabularies are the list. Its `**Why:**` said "these three words" and now says "such a word". The survey's further claim, that no vocabulary marks `level`, was wrong; the design-by-efferent vocabulary does.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -229,3 +232,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:22:01 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
