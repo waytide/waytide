@@ -67,6 +67,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 17 — decision-log-format conventions | Correct | Mon Oct 19 2026 at 3:35:00 PM PT |
 | Passage 18 — tools/ruby-lang | Correct | Tue Oct 20 2026 at 11:18:37 AM PT |
 | Passage 19 — ~/.claude/CLAUDE.md | Correct | Tue Oct 20 2026 at 11:19:33 AM PT |
+| Passage 20 — version-scheme's Ruby pointer | Correct | Tue Oct 20 2026 at 11:20:41 AM PT |
 
 ## What actually happened
 
@@ -179,6 +180,8 @@ The survey section above is left as written; this corrects it.
 
 **19. no-claude-coauthor — corrected.** It said the instruction was "also recorded in `~/.claude/CLAUDE.md`". That file does not exist on the engineer's machine, and a package rule naming one person's home-directory file makes the same claim on every machine it is installed on. The parenthesis is dropped.
 
+**20. version-scheme — corrected.** Its `Related:` entry reached the Ruby package through that package's running-the-test-suite rule, which says nothing about versions. The package's releasing-a-gem rule is the one that places the version, in the gemspec's `s.version`. The entry now names it. That rule also covers building and pushing a gem, which both reads in the README adherence sessions drafted for `versioning` without finding it.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -209,3 +212,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
 Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:19:33 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
