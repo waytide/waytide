@@ -83,6 +83,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 33 — damaged text | Correct | Tue Oct 20 2026 at 12:38:31 PM PT |
 | Passage 34 — split Related entries | Correct | Tue Oct 20 2026 at 12:39:25 PM PT |
 | Passage 35 — folder framing | Correct | Tue Oct 20 2026 at 12:49:37 PM PT |
+| Passage 36 — design doc | Correct | Tue Oct 20 2026 at 12:50:38 PM PT |
 
 ## What actually happened
 
@@ -227,6 +228,8 @@ The survey section above is left as written; this corrects it.
 
 **35. rules-establish-a-mindset-purpose-over-category, and the rules-convention's summary of it — corrected.** Both were written around rule folders — `terminology/`, `methodology/`, `test-writing/`, `code/` — that packages replaced, and the rule placed the commit rule under `methodology/`. Every mention of a folder now names a package, and the commit rule sits in the `git` package. The claim and the four directives are unchanged.
 
+**36. package-dependency-heading — corrected.** It governed "a design doc", the wording from before designs became ideas, which its sibling plans-no-code-samples had already left behind. It now names a design as an idea tagged `[design]`. The heading it requires is unchanged.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -273,3 +276,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:28:14 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
