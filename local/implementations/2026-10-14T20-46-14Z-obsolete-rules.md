@@ -80,6 +80,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 30 — arrange | Correct | Tue Oct 20 2026 at 12:26:52 PM PT |
 | Passage 31 — the solubility gate | Correct | Tue Oct 20 2026 at 12:27:37 PM PT |
 | Passage 32 — the three-stop list | Correct | Tue Oct 20 2026 at 12:28:14 PM PT |
+| Passage 33 — damaged text | Correct | Tue Oct 20 2026 at 12:38:31 PM PT |
 
 ## What actually happened
 
@@ -218,6 +219,8 @@ The survey section above is left as written; this corrects it.
 
 **32. one-outcome-at-a-time-name-via-options — corrected.** It listed an outcome's stops as "actuation, solubility, naming", the two-gate loop's list, which leaves out the observation and controls hinges. It now points to the hinge-cycle rule's five rather than listing them, so the two cannot drift apart. Its "stop and wait" makes no exception for unattended work; that is a conflict between rules rather than a stale passage, and is noted, not decided.
 
+**33. tdd-designs-coverage-prevents-never-break-implementation — corrected.** A word substitution had left three phrases garbled: "preventing a regression in existing behavior against regression", "regression regression prevention", and "the a regression". The doubled words are removed. The rule's meaning is unchanged.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -261,3 +264,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:25:33 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:27:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:28:14 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
