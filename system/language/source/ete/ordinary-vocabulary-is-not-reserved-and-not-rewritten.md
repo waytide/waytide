@@ -10,8 +10,6 @@
 
 **The line between the two is what a word names.** A word that names something in the subject field is terminology, and it is reserved or it is rewritten. A word that does the sentence's grammatical work, or joins two statements, or qualifies one, is ordinary vocabulary. `branch` is terminology. `under` is not.
 
-**The divergence stays visible.** The unclaimed-words check reports every refused word the prose uses, and it does not sort them by this line, because no check can. A reader reads the report and sees both.
-
 **Why:** the terminology is the conveyable output of this work, and it is what a reader has to learn to use the method. A term that misleads costs the reader the concept. `every` written where the dictionary gives ALL costs nothing, and the reader is not misled by either.
 
 The trade is not close. Conforming the terminology is bounded work with a real return. Conforming the ordinary vocabulary is unbounded work, and its return is a claim of conformance rather than a reader who understands more.
@@ -31,3 +29,4 @@ Authored by Scott Bellware on Wed Aug 12 2026 at 9:58:22 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT

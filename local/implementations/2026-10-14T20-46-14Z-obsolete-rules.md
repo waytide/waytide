@@ -70,6 +70,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 20 — version-scheme's Ruby pointer | Correct | Tue Oct 20 2026 at 11:20:41 AM PT |
 | Passage 21 — the footer rule's lists | Correct | Tue Oct 20 2026 at 11:22:01 AM PT |
 | Passage 22 — deferred items in the file-names rule | Correct | Tue Oct 20 2026 at 11:23:55 AM PT |
+| Passage 23 — the removed unclaimed-words check | Correct | Tue Oct 20 2026 at 11:51:09 AM PT |
 
 ## What actually happened
 
@@ -188,6 +189,8 @@ The survey section above is left as written; this corrects it.
 
 **22. file-names-use-iso8601-utc-prefix — corrected.** It compared a local rule to "the project's log and deferred items". Deferred items have not been files of their own since 2026-08-25; deferred work is an idea. The comparison now names the log and ideas.
 
+**23. ordinary-vocabulary-is-not-reserved-and-not-rewritten — corrected.** A paragraph said the divergence from STE stays visible because the unclaimed-words check reports every refused word. The check, `report-unreserved-words.sh`, was removed on 2026-08-13. The paragraph is dropped; the rule's own statement that it contradicts STE Rule 1.1 is what keeps the divergence visible.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -221,3 +224,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:19:33 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:22:01 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
