@@ -76,6 +76,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 26 — experiment and feature record in ETE | Correct | Tue Oct 20 2026 at 12:12:36 PM PT |
 | Passage 27 — plans and deferred items | Leave — not stale | Tue Oct 20 2026 at 12:14:38 PM PT |
 | Passage 28 — the individual substitution rules | Correct | Tue Oct 20 2026 at 12:16:02 PM PT |
+| Passage 29 — the composite's test state | Correct | Tue Oct 20 2026 at 12:25:33 PM PT |
 
 ## What actually happened
 
@@ -206,6 +207,8 @@ The survey section above is left as written; this corrects it.
 
 **28. no-slang — corrected.** It said each slang replacement is its own rule, and twice pointed to "the individual substitution rules". None exists: each replacement is a row of the `language` vocabulary's table. All three now point there.
 
+**29. tests-are-automated-or-interactive — corrected.** Its example put this repository in the no-automated-suite state "as of 2026-08-24", then said its first automated test arrived on 2026-10-10. It holds two automated tests now. The example reads as past, from 2026-08-24 to 2026-10-10, and its three tests are named interactive, since they are no longer all the tests there are.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -245,3 +248,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:14:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:25:33 PM PT
