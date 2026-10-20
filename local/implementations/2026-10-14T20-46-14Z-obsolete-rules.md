@@ -71,6 +71,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 21 — the footer rule's lists | Correct | Tue Oct 20 2026 at 11:22:01 AM PT |
 | Passage 22 — deferred items in the file-names rule | Correct | Tue Oct 20 2026 at 11:23:55 AM PT |
 | Passage 23 — the removed unclaimed-words check | Correct | Tue Oct 20 2026 at 11:51:09 AM PT |
+| Passage 24 — word counts | Date them | Tue Oct 20 2026 at 11:55:11 AM PT |
 
 ## What actually happened
 
@@ -191,6 +192,8 @@ The survey section above is left as written; this corrects it.
 
 **23. ordinary-vocabulary-is-not-reserved-and-not-rewritten — corrected.** A paragraph said the divergence from STE stays visible because the unclaimed-words check reports every refused word. The check, `report-unreserved-words.sh`, was removed on 2026-08-13. The paragraph is dropped; the rule's own statement that it contradicts STE Rule 1.1 is what keeps the divergence visible.
 
+**24. ordinary-vocabulary-is-not-reserved-and-not-rewritten — corrected.** Its opening counted, as a present fact, how often the rule files use seven words STE refuses — `as` 411 times, `every` 221. The counts have drifted with every edit since. They are now stated as of when the rule was written, which stays true.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -225,3 +228,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:22:01 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT

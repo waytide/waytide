@@ -1,6 +1,6 @@
 # Ordinary vocabulary is not reserved and not rewritten
 
-**The STE dictionary refuses hundreds of the words any English prose runs on.** Waytide's own rule files use `as` 411 times, `every` 221, `never` 133, `under` 126, `would` 121, `already` 105, and `may` 86. The dictionary gives BECAUSE, ALL, DO NOT, BELOW, CAN, IN PROGRESS, and CAN for them.
+**The STE dictionary refuses hundreds of the words any English prose runs on.** When this rule was written, Waytide's own rule files used `as` 411 times, `every` 221, `never` 133, `under` 126, `would` 121, `already` 105, and `may` 86. The dictionary gives BECAUSE, ALL, DO NOT, BELOW, CAN, IN PROGRESS, and CAN for them.
 
 **None of them is a technical noun or a technical verb, in any category.** A technical noun names a thing in a subject field, and a technical verb names an action performed in one. `every` names nothing. `under` names nothing. No category holds them, and ETE's two do not either.
 
@@ -30,3 +30,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
