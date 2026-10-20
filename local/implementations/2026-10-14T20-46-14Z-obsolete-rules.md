@@ -73,6 +73,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 23 — the removed unclaimed-words check | Correct | Tue Oct 20 2026 at 11:51:09 AM PT |
 | Passage 24 — word counts | Date them | Tue Oct 20 2026 at 11:55:11 AM PT |
 | Passage 25 — three words reserved | Drop the count, keep one example | Tue Oct 20 2026 at 12:11:48 PM PT |
+| Passage 26 — experiment and feature record in ETE | Correct | Tue Oct 20 2026 at 12:12:36 PM PT |
 
 ## What actually happened
 
@@ -197,6 +198,8 @@ The survey section above is left as written; this corrects it.
 
 **25. ete-fixes-the-meaning-of-a-word-in-its-category — corrected.** It said three words are reserved this way — loop, mechanical, and level. The vocabularies reserve seven: those three, and cycle, local, increment, and send. The engineer asked whether the rule needs a count at all, since a count must be corrected each time the list grows. It does not: the count and the list are dropped, loop stays as the one example, and the vocabularies are the list. Its `**Why:**` said "these three words" and now says "such a word". The survey's further claim, that no vocabulary marks `level`, was wrong; the design-by-efferent vocabulary does.
 
+**26. ete-declares-its-own-categories — corrected.** Its examples of agent-artifact terms named `experiment record` and `feature record`, which became the one implementation record. The examples now name `implementation record`.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -233,3 +236,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT
