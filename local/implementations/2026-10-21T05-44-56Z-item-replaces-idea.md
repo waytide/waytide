@@ -36,7 +36,7 @@
 | Implementation | Written directly | Wed Oct 21 2026 at 1:04:27 PM PT |
 | Naming | Moves ideas to items | Wed Oct 21 2026 at 1:04:27 PM PT |
 | `[idea]` | A kind tag for an item of no other kind, new items included | Wed Oct 21 2026 at 2:39:48 PM PT |
-| This repository's no-kind items | Tag three; leave the content-project item | Wed Oct 21 2026 at 2:39:48 PM PT |
+| This repository's no-kind items | Tag three; leave the content-project item, then tag it too | Wed Oct 21 2026 at 2:39:48 PM PT |
 
 ## What actually happened
 
@@ -82,6 +82,8 @@
 
 **The migration does not yet tag what it moves.** That is code, and goes through the hinges.
 
+**The engineer then tagged the fourth as well.** *A content project does not start with Design By Efferent active* is tagged `[idea]`, with a dated note in it saying the engineer named its kind, and its earlier note against an unnamed kind left as written. All four of this repository's items of no other kind carry `[idea]`.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
@@ -90,3 +92,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:38:14 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:27 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:46 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:39:48 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:40:05 PM PT
