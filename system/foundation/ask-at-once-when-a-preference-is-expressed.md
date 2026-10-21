@@ -17,7 +17,7 @@
 Each is genuine, and the selection carries all three:
 
 - **A rule**, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry the rules-convention requires.
-- **An observation**, in `waytide/local/ideas/`, where the thinking has not stabilized. The observations-convention prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
+- **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The observations-convention prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
 - **Neither**, where the engineer does not want it recorded. It is a real answer, and it is taken without argument.
 
 **A preference the engineer declined to record is not asked about again in the same session.** The answer was given.

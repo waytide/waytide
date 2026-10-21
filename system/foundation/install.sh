@@ -79,7 +79,7 @@ the working directory, branch, and any uncommitted, untracked, or unpushed work.
 is this project's own. `waytide/system/` is installed and never edited in place.
 `waytide/local/` is everything this project writes: `rules/` and `vocabulary.md`
 alongside the working state — `logs/` (holding `log/`, `loops/`, and
-`work-sessions/`), `ideas/`, `implementations/`, and `migration/` — each worked with as
+`work-sessions/`), `items/`, `implementations/`, and `migration/` — each worked with as
 its convention describes, and only `rules/` and `vocabulary.md` read as binding at
 session start.
 EOF

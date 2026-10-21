@@ -50,7 +50,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
   **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A hyphen also joins words. So it read as punctuation inside the sentence of segments. It did not read as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
 
-  The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other. That is what makes the trailing segment read as an annotation on the line rather than another item in it.
+  The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other. That is what makes the trailing segment read as an annotation on the line rather than another segment in it.
 
   **The uncommitted changes segment** appears only when the working tree has something not committed. That is a modified tracked file, a staged change, or an untracked file that is not ignored. All three are uncommitted, and the untracked case is the point rather than noise. A file left untracked is usually one that should be added or ignored. Absence is the clean signal, as it is for the notice's open experiments and features. It is words rather than a mark on the branch — `master*` is the conventional form and means nothing until a reader is taught it.
 

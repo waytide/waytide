@@ -14,7 +14,7 @@ Read `system/foundation/` first. It defines the system. The rules override defau
 
 In a consuming project `install.sh` places the equivalent `.claude/settings.json`. Here in the source it is committed like this file.
 
-The `local/` directory holds this project's own working state. That is `logs/`, `ideas/`, `implementations/`, and `migration/`. They are worked with as their conventions describe, not read as binding rules at session start. **`logs/` groups the running records** — `logs/log/`, `logs/loops/`, and `logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred queue is gone** — work postponed mid-task is an ordinary idea carrying a `**Waits for:**` line, and the queue's convention, its reserved tag, its session-start print, and its command were all suspended on 2026-08-25.
+The `local/` directory holds this project's own working state. That is `logs/`, `items/`, `implementations/`, and `migration/`. They are worked with as their conventions describe, not read as binding rules at session start. **`logs/` groups the running records** — `logs/log/`, `logs/loops/`, and `logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred queue is gone** — work postponed mid-task is an ordinary item carrying a `**Waits for:**` line, and the queue's convention, its reserved tag, its session-start print, and its command were all suspended on 2026-08-25.
 
 **`local/journal/` is the exception, and it is read.** The `journal` package's the-journal-is-read-at-session-start rule directs the read, after the rules and the vocabularies, oldest entry first. It binds nothing — see that package's a-journal-entry-is-read-and-never-followed rule. It was `local/diary/` until 2026-08-18, and the package that governs it was `diary`. Records already written keep that word, since a rename does not reach a historical record.
 
@@ -38,3 +38,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

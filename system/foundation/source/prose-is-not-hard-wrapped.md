@@ -8,7 +8,7 @@
 
 **A structural element is not prose and keeps its own line.** A heading, a list item, a table row, a blockquote line, a horizontal rule, and every line inside a fenced code block.
 
-**A list item is one line**, however long. A continuation is folded into the item rather than left hanging under it.
+**A list item is one line**, however long. A continuation is folded into the list item rather than left hanging under it.
 
 **The provenance footer's lines are each their own line.** `Authored by …` and every `Changed by …` beneath it. They are a running history rather than a paragraph, and joining them would read as one sentence and lose the record.
 
@@ -35,3 +35,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Tue Aug 25 2026 at 9:37:58 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

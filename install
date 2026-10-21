@@ -112,7 +112,7 @@ add() {
 # nothing, and it is one named set among others rather than a special case in the code.
 #
 # A set is written here, which is the only place a script can read one today. Where a set should
-# live so that a person reads it too is not settled — see the idea *A content project is a named
+# live so that a person reads it too is not settled — see the item *A content project is a named
 # package set*.
 set_packages() {
   case $1 in

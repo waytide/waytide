@@ -6,7 +6,7 @@
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s loop-records rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
-**What makes a record belong here is that it accrues chronologically and is never revised.** Each is a running account of something that happened, entry after entry, in the order it happened. A reader reaches one by date. Nothing here is a statement of what is currently true, which is what separates these from an idea, an implementation record, or a migration record.
+**What makes a record belong here is that it accrues chronologically and is never revised.** Each is a running account of something that happened, entry after entry, in the order it happened. A reader reaches one by date. Nothing here is a statement of what is currently true, which is what separates these from an item, an implementation record, or a migration record.
 
 **A migration record is not one of these, and the distinction is the sharpest test of the rule.** It is one document rather than entries that accrue, it is revised while the migration runs, and it is **prospective** — a sequence of steps written to be executed. The three records above are retrospective accounts of what happened. That a migration record is *kept* afterward makes it durable, not chronological, and durability is not what this directory is for.
 
@@ -20,7 +20,7 @@
 
 **`logs/loops/` is contributed by `design-by-efferent`**, which includes `foundation` rather than the reverse. Foundation names the parent directory here, and that is a **citation** — it requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it. A project installing `foundation` alone has `logs/log/` and no `logs/loops/`, and nothing is missing.
 
-**Why:** the three were siblings of `ideas/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
+**Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
 The grouping also gives a later running record somewhere obvious to go. `log` was the only log directory until 2026-08-18, and a second one had no place that named it as the same kind of thing.
 
@@ -43,3 +43,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

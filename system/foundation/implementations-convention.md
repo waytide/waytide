@@ -27,7 +27,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is added when the record reaches one of the words, not when the work starts. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
 
-**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an idea**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-ends-with-its-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
+**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-ends-with-its-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
 
 **The concluding words both kinds take:**
 
@@ -76,4 +76,4 @@ Related:
 - the a-record-ends-with-its-state-in-upper-case rule — why an open record takes no suffix
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
-- the ideas-convention — the other record that carries a state, and which has no in-progress absence
+- the items-convention — the other record that carries a state, and which has no in-progress absence

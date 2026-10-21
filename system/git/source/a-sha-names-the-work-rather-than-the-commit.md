@@ -1,8 +1,8 @@
 # A commit named by its SHA is a reference to the work it carries, not to the commit
 
-**When the engineer names a commit by its SHA, they are asking about the substance the commit carries.** That is the idea, the implementation, the rule, or the change to the code. They are not asking about the commit's own mechanics — its message, its file list, its diff statistics, or the log entry that travelled with it.
+**When the engineer names a commit by its SHA, they are asking about the substance the commit carries.** That is the item, the implementation, the rule, or the change to the code. They are not asking about the commit's own mechanics — its message, its file list, its diff statistics, or the log entry that travelled with it.
 
-**Answer from what the commit added or changed.** Where it carries an idea, an implementation record, or a rule, read that file and answer from its content. Where it changes code, answer from what the code now does. The SHA is the handle nearest to hand for a piece of work, and it is used because it is unambiguous rather than because the commit object is the subject.
+**Answer from what the commit added or changed.** Where it carries an item, an implementation record, or a rule, read that file and answer from its content. Where it changes code, answer from what the code now does. The SHA is the handle nearest to hand for a piece of work, and it is used because it is unambiguous rather than because the commit object is the subject.
 
 ## What the mechanics are, and when they are the answer
 
@@ -31,3 +31,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:14:50 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

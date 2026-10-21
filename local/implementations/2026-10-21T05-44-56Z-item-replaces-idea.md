@@ -6,7 +6,7 @@
 
 **As the engineer stated it:** Instead of "idea", use "item".
 
-**The record kind now called an idea is called an item.** That is the word in the rules and vocabularies, the directory `waytide/local/ideas/`, and the scripts that read it. It realizes the idea *"Item" replaces "idea"*, `local/ideas/2026-10-21T05-24-46Z-item-replaces-idea-OPEN.md`.
+**The record kind now called an idea is called an item.** That is the word in the rules and vocabularies, the directory `waytide/local/ideas/`, and the scripts that read it. It realizes the idea *"Item" replaces "idea"*, `local/items/2026-10-21T05-24-46Z-item-replaces-idea-OPEN.md`.
 
 ## Setup
 
@@ -41,7 +41,22 @@
 
 **The directory becomes `items/`, and the installer migrates it**, as `migrate_work_sessions` and `migrate_logs` already do, and kept as those are. The engineer asked whether a migration stays in the installer for all time. It does: nothing states when one is removed, and both existing migrations still run on every install and refresh. A condition for removing migrations was offered — once every project in the consuming-projects registry has migrated — and not taken. A migration record is written, as the migration-convention requires of a change that crosses a repository boundary.
 
+### The content half — 2026-10-21
+
+**The word, the directory, and the two rules are renamed.** `local/ideas/` is `local/items/`, with `git mv`. The ideas-convention is the items-convention and an-idea-takes-a-log-entry is an-item-takes-a-log-entry, also with `git mv`, and their old compiled copies are removed. Every source rule, vocabulary, README, local rule, `AGENTS.md`, and the read instruction in `session-start.sh` and the bootstrap in `install.sh` say *item*.
+
+**Seven uses of *idea* are kept, because they are not the record.** Three are the ordinary sense — "the actual idea", "its own idea of what identity is", and "One idea in each list item". One is a writer's commit subject quoted in the journal-convention, `Journal: Idea`. Three are freeform tag examples in a-record-takes-category-tags, `[idea]` and `[ideas]`, which the rule uses to show tags that carry no fixed meaning.
+
+**The list sense of *item* is written "list item" in full**, in nine places across five rules and the `language` README. **Six general-sense uses are reworded**, since a bare *item* now means the record: the initialization-rule's "item" of the display becomes a "part", a status-line "item" becomes a "segment", git's "a task or item" becomes "a task or a piece of work", "a new item" becomes "something new", and the undo queue's "eleven items" become "eleven entries". *Deferred item*, *suspended items*, and *forecast item* are kept: the first two now name the record exactly, and the third is qualified.
+
+**STE already approves `ITEM (n)`**, as *a thing that is determined or specified*. So *item* is a word ETE fixes the meaning of, and the foundation vocabulary's new entry quotes STE's meaning and states Waytide's, per the ete-fixes-the-meaning-of-a-word-in-its-category rule. The entry also says a bare *item* means the record and the list sense is written in full.
+
+**Historical records are left as written**, among them the log entries and the concluded implementation records that cite `local/ideas/` paths. Of the live records, only this one cited a path, and it is repointed.
+
+**The installer's migration of a consuming project's `ideas/` is not yet written.** That is code, and Design By Efferent governs it.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 10:50:30 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:38:14 AM PT

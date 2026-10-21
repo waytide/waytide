@@ -6,7 +6,7 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 - **State the change, don't narrate the work.** "Widget reconciliation is corrected" — not "Fix widget reconciliation" and not "Fixed widget reconciliation".
 - **"is corrected"** for a defect. **"is clarified"** for a refactor or readability change.
-- **Omit the verb for a new item.** "Widget tests", not "Widget tests are added".
+- **Omit the verb for something new.** "Widget tests", not "Widget tests are added".
 - **Rename form:** "Widget, rather than sprocket".
 - **Package version form:** "Package version is increased from 1.1.1 to 1.2.0" — the message states the current version and the next one, so the log line carries the transition without a reader reaching for the package specification. "Increased" holds even when a trailing segment resets, as it does here: what is increased is the version, not each segment.
 

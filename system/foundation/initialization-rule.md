@@ -4,7 +4,7 @@ The things below are printed once per session, verbatim and in this order. Four 
 
 **The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
-**The package set is the one item the agent still prints**, at the head of the response that carries the rule read, because it is the one item that needs markdown. See below.
+**The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
 **The script reads the four from this file's fenced blocks, by position.** The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this file changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
@@ -18,7 +18,7 @@ Waytide: Human-Agent Relations
 
 **It stands alone.** Nothing is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
 
-**Then the package set, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this item is absent entirely — no line saying there is none.
+**Then the package set, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this part is absent entirely — no line saying there is none.
 
 **The declared set `default` prints nothing, where nothing is deactivated.** `default` is the set a project gets by asking for no set at all, so a stanza reporting it says what the absence of a stanza already says, at the cost of four lines in a display printed every session.
 
@@ -83,9 +83,9 @@ Then **one blank line**, then the block:
 
 **The harness renders the display as plain text, so the lines print exactly as the blocks hold them.** A blank line is a blank line, and the figure keeps its spacing without a fence. One line is kept because one is what separates.
 
-**The fences in this file are what the script reads, not what is printed.** They mark where each printed item begins and ends. They also keep the figure's spacing when this rule is read as markdown.
+**The fences in this file are what the script reads, not what is printed.** They mark where each printed part begins and ends. They also keep the figure's spacing when this rule is read as markdown.
 
-**These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one item that is not always present, and its absence is the ordinary case rather than an omission.
+**These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one part that is not always present, and its absence is the ordinary case rather than an omission.
 
 **The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows opens every compiled rule in every installed package. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
 
