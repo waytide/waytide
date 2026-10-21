@@ -377,8 +377,9 @@ migrate_logs() {
 # the new directory but cannot move a project's own files, so the installer does it.
 #
 # The same narrow semantics as the migrations above: it moves only when the old directory
-# is present and the new one absent. Anything else is reported and left alone. Plain mv
-# rather than git mv, for records that were never committed.
+# is present and the new one absent, and anything else is reported and left alone. Plain mv
+# rather than git mv, for records that were never committed. Each moved record of no other
+# kind is then tagged [idea].
 migrate_items() {
   old_dir="waytide/local/ideas"
   new_dir="waytide/local/items"
@@ -392,6 +393,27 @@ migrate_items() {
   fi
 
   mv "$old_dir" "$new_dir"
+
+  # An item of no other kind takes [idea], per the items-convention: added to its Tags line, or
+  # a Tags line added under its State line where it has none. A record of a kind is untouched.
+  for record in "$new_dir"/*.md; do
+    [ -f "$record" ] || continue
+    awk '
+      /\*\*Tags:\*\*/ && !tagged {
+        tagged = 1
+        if ($0 !~ /\[(idea|design|plan|aspiration|observation)\]/) sub(/\*\*Tags:\*\* */, "**Tags:** [idea] ")
+      }
+      { line[NR] = $0 }
+      /\*\*State:\*\*/ && !state { state = NR }
+      END {
+        for (i = 1; i <= NR; i++) {
+          print line[i]
+          if (i == state && !tagged) print "- **Tags:** [idea]"
+        }
+      }
+    ' "$record" > "$record.tmp" && mv "$record.tmp" "$record"
+  done
+
   echo "Moved $old_dir/ to $new_dir/ — the record kind is now called an item."
   echo "Commit the move."
 }

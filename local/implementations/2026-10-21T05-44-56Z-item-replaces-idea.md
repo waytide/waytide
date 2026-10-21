@@ -37,6 +37,10 @@
 | Naming | Moves ideas to items | Wed Oct 21 2026 at 1:04:27 PM PT |
 | `[idea]` | A kind tag for an item of no other kind, new items included | Wed Oct 21 2026 at 2:39:48 PM PT |
 | This repository's no-kind items | Tag three; leave the content-project item, then tag it too | Wed Oct 21 2026 at 2:39:48 PM PT |
+| Tagging — observation | Each moved file, whole, against its expected text | Wed Oct 21 2026 at 2:50:55 PM PT |
+| Tagging — controls | No Tags line; a non-kind tag; a kind | Wed Oct 21 2026 at 2:50:55 PM PT |
+| Tagging — implementation | Written directly | Wed Oct 21 2026 at 2:50:55 PM PT |
+| Tagging — naming | Tags an item without a kind as an idea | Wed Oct 21 2026 at 2:50:55 PM PT |
 
 ## What actually happened
 
@@ -84,6 +88,12 @@
 
 **The engineer then tagged the fourth as well.** *A content project does not start with Design By Efferent active* is tagged `[idea]`, with a dated note in it saying the engineer named its kind, and its earlier note against an unnamed kind left as written. All four of this repository's items of no other kind carry `[idea]`.
 
+### The migration tags what it moves — 2026-10-21
+
+**`migrate_items` tags each moved record of no other kind `[idea]`**, after the move: added to the front of its Tags line, or a Tags line added under its State line where it has none. A record of a kind — `[design]`, `[plan]`, `[aspiration]`, `[observation]`, or already `[idea]` — is written back unchanged, and a record with neither line is left as it is.
+
+**A second outcome of the same test, through the hinges.** The actuation stood. Observation: each moved file, whole, against its expected text, chosen after the engineer asked to see the control records and what the test would observe. Controls: three literal records — one with no Tags line, one tagged only `[deferred]`, and one tagged `[design]`. Implementation: written directly. Naming: *Tags an item without a kind as an idea*, the engineer's own wording. The test failed before the implementation, passes after it, and fails again with the kind check removed.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
@@ -93,3 +103,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:27 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:46 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:39:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:40:05 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:50:55 PM PT
