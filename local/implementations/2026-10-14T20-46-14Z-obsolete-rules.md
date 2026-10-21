@@ -88,6 +88,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 38 — the first-turn rule | Correct | Tue Oct 20 2026 at 8:35:02 PM PT |
 | Passage 39 — stop and wait under unattended work | Correct, one outcome at a time in both modes | Tue Oct 20 2026 at 8:37:04 PM PT |
 | Passage 40 — a misattributed argument | Correct | Tue Oct 20 2026 at 8:45:35 PM PT |
+| Passage 41 — a broken sentence | Correct | Tue Oct 20 2026 at 8:46:11 PM PT |
 
 ## What actually happened
 
@@ -242,6 +243,8 @@ The survey section above is left as written; this corrects it.
 
 **40. hinge-cycle — corrected.** It attributed the argument that a line repeated unchanged stops being read to the announce-waytide-at-session-start rule. That rule does not make it; the initialization-rule does. The citation now names the initialization-rule.
 
+**41. announce-waytide-at-session-start — corrected.** A sentence on the installer's `.claude/` warning had been broken by an earlier edit: "checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it." It now reads as two whole sentences, and was checked against `install.sh`, which warns only when the file is ignored and not tracked. Found while checking passage 40.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -293,3 +296,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:45:35 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
