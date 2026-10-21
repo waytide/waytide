@@ -15,6 +15,12 @@
 
 **What is removed is a whole rule.** A stale passage inside a rule that otherwise stands is a different question, and is noted where it is found rather than fixed here.
 
+## State
+
+- **State:** Affirmed
+
+**Affirmed by the engineer on 2026-10-20.** The rules lost what was stale in them — one rule removed, one moved to `local/rules/`, and every stale passage the survey found corrected or judged not stale — and what remains states the system as it is. No session tested adherence after the passage edits; most correct a reference rather than an instruction, and the three that change what an agent does at the hinges were stated by the engineer. The branch merges into `master`, which the engineer confirmed with the untested parts named.
+
 ## Setup
 
 - **Tags:** [experiment]
@@ -102,6 +108,9 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 50 — the shell-scripts rule's lists | Correct | Tue Oct 20 2026 at 9:46:42 PM PT |
 | Passage 51 — the content-work rule's contradictions | Correct | Tue Oct 20 2026 at 9:53:26 PM PT |
 | Passage 52 — the citation rule's quotation and count | Correct | Tue Oct 20 2026 at 9:56:57 PM PT |
+| Affirmation | Affirmed | Tue Oct 20 2026 at 10:03:15 PM PT |
+| Merge, with the untested parts named | Merge into `master` | Tue Oct 20 2026 at 10:03:15 PM PT |
+| Branch deletion | Delete `experiment/obsolete-rules` after the merge | Tue Oct 20 2026 at 10:03:15 PM PT |
 
 ## What actually happened
 
@@ -302,6 +311,19 @@ The survey section above is left as written; this corrects it.
 
 **The README files were not part of this work.** Their stale passages — the foundation README's retired directories, the language README's contradiction of language-is-precise-here — are recorded in the derived-rule-files experiment and untouched.
 
+### The forecast, judged at the conclusion — 2026-10-20
+
+**The earlier judgment covered the whole rules. This one adds the passages.**
+
+| item | forecast | verdict |
+|---|---|---|
+| 1 | Fewer than ten whole rules qualify | **Affirmed.** Five were candidates, and two were acted on. |
+| 2 | The candidates concentrate around retired mechanisms | **Refuted.** The retired mechanisms survived only as passages, and those passages were where most of the stale content was. |
+| 3 | Every rule removed is cited by another rule | **Affirmed** for both rules acted on. |
+| 4 | Stale and obsolete can be shown from the files; impertinent cannot | **Affirmed, with a qualification.** Impertinence was the engineer's judgment each time. Staleness could usually be shown from the files, but the survey misjudged it four times, each caught when the passage was put to the engineer. |
+| 5 | The compiled read shrinks by less than 10% | **Affirmed.** In this repository the read is 549,050 characters across 119 files, against 549,216 across 120 at the base — the passage edits roughly offset each other, and the moved rule is still read here as a local rule. A project that installs the packages reads about 5,700 fewer. |
+| 6 | A rule judged obsolete is still read by a script | **Refuted.** None was. |
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -368,3 +390,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:57:18 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 10:03:15 PM PT
