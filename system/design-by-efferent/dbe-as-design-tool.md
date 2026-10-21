@@ -21,6 +21,5 @@ Related:
 - the DBE vocabulary — cradle, efferent, solubility
 - the human-in-the-loop rule
 - the first-turn rule
-- the "TDD designs
-- coverage prevents" rule
+- the tdd-designs-coverage-prevents-never-break-implementation rule
 - the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — the chosen cycle this does not reject

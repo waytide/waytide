@@ -4,7 +4,7 @@ A test file is built in layers. There is a feature context, a shared control-and
 
 **Outer `context` names the feature.** Everything for the feature lives inside it.
 
-**Arrange and actuate once, at the top of the outer context.** Arrange inputs just above the actuation — built through controls (`Controls::File.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it. The variables read as the scenario.
+**Set up the controls and actuate once, at the top of the outer context.** State the inputs just above the actuation — built through controls (`Controls::File.example()`) or stated as literals. Then actuate the unit under test a **single time** and bind its result to an explaining variable. The actuation is written from the efferent side — as use would express it. The variables read as the scenario.
 
 ```ruby
 file = Controls::File.example()
@@ -36,7 +36,7 @@ The pattern, abstracted:
 
 **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place. It lets each outcome be read, named, and diagnosed on its own. Explaining variables and layered narration keep the test reading as a statement of the concern rather than a mechanical check. This is the structure the DBE first-turn rule grows into in subsequent turns.
 
-**How to apply:** Arrange inputs and actuate the unit under test once, at the top of the outer feature context. Bind the result to an explaining variable. Narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome. Derive an explaining variable, and assert it in a single `test` block. Never assert an inline expression.
+**How to apply:** State the inputs and actuate the unit under test once, at the top of the outer feature context. Bind the result to an explaining variable. Narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome. Derive an explaining variable, and assert it in a single `test` block. Never assert an inline expression.
 
 Related:
 

@@ -10,7 +10,7 @@
 
 **Evented systems and autonomous components.** Terms that name the parts of a message-based system, the components that run on their own, and what they do. Examples: `projection`, `entity`, `event`, `stream`, `consumer`, `handler`, `message`, `autonomous component`.
 
-**Agent artifacts.** Terms that name the files an agent and an engineer write and read as they work, and what is done to them. Examples: `working-state artifact`, `experiment record`, `feature record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
+**Agent artifacts.** Terms that name the files an agent and an engineer write and read as they work, and what is done to them. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
 
 **Human-computer interaction (HCI).** Terms that name how a person and a machine work together, and what each of them does. Examples: `attended`, `unattended`, `free-text option`, `selection prompt`, `harness`.
 
@@ -46,3 +46,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 2:04:52 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT

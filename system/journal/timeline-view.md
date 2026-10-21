@@ -8,7 +8,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 **It is a projection**, in the sense the foundation package's vocabulary gives that term. It reads the entries without destroying them, and it is regenerated rather than maintained. That term already settles what happens to a derived artifact somebody keeps: it goes stale the moment it is not updated.
 
-**A stored index was kept until 2026-08-14, and it was maintained by two directives.** One ordered-inserted a row when an entry was written. The other rebuilt the file from scratch, and it existed because the first could not see a rename, an edited title, or a deletion. A view that needs a repair directive is a view that drifts, and the entries are what a reader would then have to check it against. See the suspended new-entry-trigger-rebuilds-timeline-index rule.
+**A stored index was kept until 2026-08-14, and it was maintained by two directives.** One ordered-inserted a row when an entry was written. The other rebuilt the file from scratch, and it existed because the first could not see a rename, an edited title, or a deletion. A view that needs a repair directive is a view that drifts, and the entries are what a reader would then have to check it against.
 
 **The entry files are the record, and reading them is cheap.** A journal directory is one small markdown file per entry. Nothing about listing them wants a cache.
 

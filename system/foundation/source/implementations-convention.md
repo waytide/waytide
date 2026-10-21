@@ -55,7 +55,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **The same work's design belongs in a loop record** under `waytide/local/logs/loops/` — each cycle's hinge, the options put to the engineer, and the decision. The two divide by concern and each names the other.
 
-**They are separate files because of the package graph, and that is a refused dependency.** `waytide/local/logs/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather than the reverse. A foundation rule requiring fields in that directory would invert the graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone. Naming the loop record in prose is a **citation** and costs nothing. See the a-citation-is-not-a-dependency rule, which works this case through in full.
+**They are separate files because of the package graph, and that is a refused dependency.** `waytide/local/logs/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather than the reverse. A foundation rule requiring fields in that directory would invert the graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone. Naming the loop record in prose is a **citation** and costs nothing.
 
 ## Format
 
@@ -83,3 +83,4 @@ Related:
 Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT

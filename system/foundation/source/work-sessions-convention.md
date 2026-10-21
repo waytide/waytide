@@ -37,13 +37,17 @@ Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records w
 
 A narrative work session record preserves that arc as a communicable whole. It points to the durable records rather than restating them. So it stays a route through the records rather than a second source of truth. The format lives here, with the directory convention, the same way the experiment and loop-record formats live with theirs.
 
-It was written here rather than in the `plan` package on one ground. A work session record is a record of the *past*, while a plan and a design look forward. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives. It is still the reason a work session record is not shaped like a plan.
+**A work session record is not shaped like a plan.** It records the *past*, while a plan and a design look forward.
 
 **How to apply:** at a substantial work session's close, write a work session record here. It narrates the work session chronologically per the shape above. It defines the settled vocabulary, and points to the durable records it produced. It ends with a provenance footer in the record-rule-authorship-in-a-footer format.
 
 When *you* raise the question of recording, rather than being told to, put it through the AskUserQuestion selection UI. It carries the three options, each naming a **work session record**: a new one, appending the previous one, or none. Let the engineer's selection decide.
 
 Once the record is written, put the **design reconciliation** through the same UI. The options are to update the design, that the design stands, or that no design bears on this session. Surface what diverges, and leave the verdict to the engineer.
+
+## History
+
+The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
 
 Related:
 
@@ -91,3 +95,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 5:26:42 PM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT

@@ -14,4 +14,4 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 Related:
 
 - the no-slang terminology rule
-- the decision-log-format conventions
+- the decision-log-convention

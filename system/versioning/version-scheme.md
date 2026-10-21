@@ -31,4 +31,4 @@ Related:
 
 - the the-next-version-is-chosen-by-the-engineer rule — who makes the decision and how it is put
 - the `git` subject-first-commit-messages rule — the commit that records a version change
-- the `ext/ruby-lang` running-the-test-suite rule's package for where a Ruby project records its version
+- the `ext/ruby-lang` releasing-a-gem rule — where a Ruby project records its version

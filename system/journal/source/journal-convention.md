@@ -1,6 +1,6 @@
 # `waytide/local/journal/<username>/` — the record the writer keeps
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The identity-resolution-contract rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The decision log, the work session record, the loop record, and the experiment record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The identity-resolution-contract rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The decision log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 **The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the decision log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
@@ -83,3 +83,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT

@@ -54,7 +54,7 @@ with these options:
 
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
-**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ste rules.
+**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
 
 **This is not a planning record.** `foundation` governs the project's planning records, which are written to a directory and kept. This plan is presented in the response, before the agent generates, and it is not written to a file.
 
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 9:41:07 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT

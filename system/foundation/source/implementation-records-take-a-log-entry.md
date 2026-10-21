@@ -17,7 +17,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 **So the states that keep the record as evidence are exactly the states that can lose it.** The implementations-convention says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
 
-**A record committed to `master` while the work is on a branch is the ordinary practice here**, and it is what has kept this from biting. Every one of this project's sixteen implementation records is on `master` today. Practice is not the rule, and this rule does not rely on it: the entry carries the substance whenever the branch did not merge, whether or not the record happens to have reached `master` by another route.
+**A record committed to `master` while the work is on a branch is the ordinary practice here**, and it is what has kept this from biting. Practice is not the rule, and this rule does not rely on it: the entry carries the substance whenever the branch did not merge, whether or not the record happens to have reached `master` by another route.
 
 ## What is already required, and not restated
 
@@ -54,3 +54,4 @@ Authored by Scott Bellware on Sun Aug 16 2026 at 3:12:15 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT

@@ -51,8 +51,6 @@ They live here because foundation defines the artifacts they format. Held separa
 
 Other packages may contribute their own artifact directories (for example, design-by-efferent contributes `waytide/local/logs/loops/`). Foundation owns `rules`/`observations`/`deferred`/`log` and the `ideas`/`implementations`/`logs`/`migration` work-artifact directories.
 
-Foundation also settles **what a package dependency is**, in the `a-citation-is-not-a-dependency` rule. A rule may name another package's rule freely. That citation becomes a dependency only where the citing rule **will not work** without the cited package. Motivation is not the test, and a "standalone" claim is about what must be installed rather than about what a rule's prose may name.
-
 **A project's durable context lives in its committed artifacts, never in an agent memory store** (`project-context-lives-in-the-committed-artifacts`). The premise is the rules-convention's — the conventions are read fresh each session rather than recalled, and a store is recall. It reaches project context alone. A fact about the engineer rather than the project is machine-scoped, and per-machine configuration under `~/.config/` is where the `a-project-does-not-name-its-consumers` rule already sends one.
 
 **A preference the engineer expresses is asked about at once** (`ask-at-once-when-a-preference-is-expressed`), through the selection interface, offering a rule, an observation, or neither. The two rules are only sound together: the first forbids holding a preference, and the second is what keeps forbidding it from costing anything. A preference is not a rule until it is written, and every restatement of one is evidence that nothing carried it.
@@ -201,3 +199,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT

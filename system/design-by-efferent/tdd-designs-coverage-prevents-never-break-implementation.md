@@ -3,9 +3,9 @@
 Tests serve two different purposes in two different processes, and conflating them causes unnatural changes:
 
 - **TDD is a design activity.** The failing-test-then-implement cycle is an instrument for *designing* behavior — tests used as **proofs for design**. The red is what drives the implementation into existence. This is the genus DBE belongs to, and the reason the methodology's name says *Design*.
-- **Adding test coverage is a separate activity** — **preventing a regression in existing behavior against regression**. It happens *past* the point TDD is concerned with: the behavior is already designed and correct. Here tests are **regression regression prevention**, not design proofs. It is a testing / final-inspection process, not TDD.
+- **Adding test coverage is a separate activity** — **preventing a regression in existing behavior**. It happens *past* the point TDD is concerned with: the behavior is already designed and correct. Here tests are **regression prevention**, not design proofs. It is a testing / final-inspection process, not TDD.
 
-**When adding coverage, green-on-arrival is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — the a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the no-green-on-arrival stance is a design concern that does not apply here.
+**When adding coverage, green-on-arrival is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the no-green-on-arrival stance is a design concern that does not apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to introduce a test.** Do not do it to "see it go red first." That inverts the relationship, making correct code fail a ritual. It forces unnatural changes to shipped code, and muddies the distinction between designing with tests and preventing regression with tests. There is no red to manufacture when covering behavior that already exists.
 

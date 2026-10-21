@@ -6,7 +6,7 @@ An **idea** in `waytide/local/ideas/` pairs with a one-line entry in `waytide/lo
 
 - **On creation.** That the idea was recorded at all is itself a decision, and the entry records the idea rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit an idea records decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Active**, **Realized**, **Deferred**, **Superseded**, **Abandoned**, or **Lapsed** is a decision. So is either reversible word being taken back: **Realized** when an idea expands, and **Deferred** when the work is taken up. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
+- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, or **Open**, as the ideas-convention sets out. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
 
 ## What the entry says
 
@@ -32,7 +32,7 @@ An **idea** in `waytide/local/ideas/` pairs with a one-line entry in `waytide/lo
 
 ## Why the obligation is stated here rather than in each convention
 
-**Three conventions already name their own log entry, and the ideas-convention does not.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule each state the pairing inline. The ideas-convention requires the record, its dated resolutions, and its footer, and names no entry.
+**Three conventions state their own log entry in full, and the ideas-convention points here.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule each state the pairing inline. The ideas-convention requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
 
 **What reached the log anyway was the decision-log-convention's general trigger** — write an entry whenever a real decision is made, and when in doubt, log it. That is enough to produce the entries and not enough to make them reliable, since it rests on each writer reaching the same judgment about what counts.
 
@@ -53,7 +53,7 @@ Name the record in the entry, and say what happened to it. State what the record
 Related:
 
 - the decision-log-convention — the entry's form, and the general trigger this makes specific
-- the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act state words they carried
+- the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act
 - the observations-convention, rules-convention, and a-suspension-is-a-log-entry — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
@@ -72,3 +72,6 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 3:38:02 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:07 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT

@@ -4,4 +4,4 @@ Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by 
 
 **Why:** User preference — they don't want AI co-authorship attribution in their commit history.
 
-**How to apply:** When writing commit messages, omit the `Co-Authored-By: Claude …` trailer that Claude Code adds by default. Applies to every project (also recorded in `~/.claude/CLAUDE.md`).
+**How to apply:** When writing commit messages, omit the `Co-Authored-By: Claude …` trailer that Claude Code adds by default. Applies to every project.

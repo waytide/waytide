@@ -12,12 +12,11 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 To load them now, type: load waytide.
 ```
 
-  Between the install line and the closing ask, the notice reports **experiments and features that have not concluded**. Each takes a further line, when there are any:
+  Between the install line and the closing ask, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-2 experiments open: shipped-test-tree-script (suspended), gate-forecasting (no state recorded)
-1 feature open: upload-retries (suspended)
+3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
 
@@ -30,7 +29,7 @@ To load them now, type: load waytide.
 
   **The move took a hazard with it.** The mark's backslashes had to be doubled here. The notice is interpolated into a JSON string by `printf` with no escaping, and a lone backslash begins a JSON escape sequence. `\_` is not a valid one, the harness fails to parse the output, and **the notice disappears with no error at all**. That constraint is now off the art entirely. It still governs everything else this hook emits, and the load line's no-quotation-marks rule below is the same hazard arriving through a different character.
 
-  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every experiment has concluded the second line is absent entirely, so the notice grows only when there is something open.
+  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
 
   **Why the notice carries it.** The lifecycle requires that an experiment never be left silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
 
@@ -142,7 +141,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
 - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
-- **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git cannot re-include a file inside an excluded directory, so a negation added under a `.claude/` rule does nothing. The rule has to become `.claude/*` plus `!.claude/settings.json`, which keeps each engineer's personal `.claude/settings.local.json` ignored.
+- **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path. When it is, and the file is not already tracked, it prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git cannot re-include a file inside an excluded directory, so a negation added under a `.claude/` rule does nothing. The rule has to become `.claude/*` plus `!.claude/settings.json`, which keeps each engineer's personal `.claude/settings.local.json` ignored.
 - **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the decision with the engineer.
 
 **There is no opt-out.** An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
@@ -249,3 +248,5 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
+Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
