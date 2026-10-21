@@ -2,9 +2,9 @@
 
 `waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
 
-**A tag may describe an item, and nothing about it is strict.** A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`. The tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-takes-category-tags rule), the set is open, and an item may carry several or none at all.
+**A tag may describe an item, and nothing about it is strict.** A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, and an observation `[observation]`. **An item of none of those kinds is tagged `[idea]`.** The tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-takes-category-tags rule), the set is open, and an item may carry several or none at all.
 
-**No kind tag is assigned by default, and `[aspiration]` least of all.** It is written where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the line. An item that nobody called anything carries no kind tag, and that is not an omission.
+**`[idea]` is the kind an item takes when it is no other, and no other kind tag is assigned by default — `[aspiration]` least of all.** `[aspiration]` is written where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the line. A tag that marks something other than the kind, such as `[deferred]` or `[vocabulary]`, does not stand in for one, so an item carrying only such tags is also tagged `[idea]`.
 
 **The tag describes and decides nothing.** No rule reads a kind tag, no report groups by one, and no filename derives from one. What the record *is* is in the record.
 

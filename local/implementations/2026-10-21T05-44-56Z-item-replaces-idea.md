@@ -35,6 +35,8 @@
 | Controls | This repository's installer, in a bare directory | Wed Oct 21 2026 at 1:04:27 PM PT |
 | Implementation | Written directly | Wed Oct 21 2026 at 1:04:27 PM PT |
 | Naming | Moves ideas to items | Wed Oct 21 2026 at 1:04:27 PM PT |
+| `[idea]` | A kind tag for an item of no other kind, new items included | Wed Oct 21 2026 at 2:39:48 PM PT |
+| This repository's no-kind items | Tag three; leave the content-project item | Wed Oct 21 2026 at 2:39:48 PM PT |
 
 ## What actually happened
 
@@ -70,6 +72,16 @@
 
 **No migration record is written, correcting the decision above.** The agent said the migration-convention requires one of a change that crosses a repository boundary. This change does not cross one: each project's directory is renamed inside that project, and no content leaves a repository. The convention's record is for a move such as a package leaving for its own repository. The two earlier directory migrations, to `work-sessions/` and to `logs/`, wrote none either.
 
+### `[idea]` is a kind tag — 2026-10-21
+
+**As the engineer stated it:** In consuming projects, idea items should be tagged [idea].
+
+**`[idea]` is the kind an item takes when it is no other**, beside `[design]`, `[plan]`, `[aspiration]`, and `[observation]`. The engineer chose that new items take it too, not only records moved from a project's `ideas/`, and that it marks only an item of no other kind. A tag that marks something other than the kind — `[deferred]`, `[vocabulary]` — does not stand in for one. The items-convention says so, replacing its sentence that an item nobody called anything carries no kind tag.
+
+**Three of this repository's items are tagged `[idea]`**: *Explore Claude Code output styles*, *Reducing rule files to their essential directives*, and *"Item" replaces "idea"*. **The fourth with no kind, *A content project does not start with Design By Efferent active*, is left untagged**, by the engineer's choice: it records a decision that it carries no kind the engineer never named.
+
+**The migration does not yet tag what it moves.** That is code, and goes through the hinges.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
@@ -77,3 +89,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 10:50:30 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:38:14 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:27 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:46 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:39:48 PM PT

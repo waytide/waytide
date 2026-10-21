@@ -1,7 +1,7 @@
 # "Item" replaces "idea"
 
 - **State:** Open
-- **Tags:** [vocabulary]
+- **Tags:** [idea] [vocabulary]
 
 **As the engineer stated it:** Instead of "idea", use "item".
 
@@ -14,3 +14,4 @@
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:24:46 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:38:56 PM PT
