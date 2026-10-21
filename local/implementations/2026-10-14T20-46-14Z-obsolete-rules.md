@@ -87,6 +87,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 37 — step 2 | Correct, with the unattended exception | Tue Oct 20 2026 at 8:34:03 PM PT |
 | Passage 38 — the first-turn rule | Correct | Tue Oct 20 2026 at 8:35:02 PM PT |
 | Passage 39 — stop and wait under unattended work | Correct, one outcome at a time in both modes | Tue Oct 20 2026 at 8:37:04 PM PT |
+| Passage 40 — a misattributed argument | Correct | Tue Oct 20 2026 at 8:45:35 PM PT |
 
 ## What actually happened
 
@@ -239,6 +240,8 @@ The survey section above is left as written; this corrects it.
 
 **39. one-outcome-at-a-time-name-via-options — corrected.** Its "stop and wait" made no exception for unattended work, the conflict noted at passage 32. It now says the agent does not stop under unattended work, and that one outcome at a time and never several test files at once hold in both modes.
 
+**40. hinge-cycle — corrected.** It attributed the argument that a line repeated unchanged stops being read to the announce-waytide-at-session-start rule. That rule does not make it; the initialization-rule does. The citation now names the initialization-rule.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -289,3 +292,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:45:35 PM PT
