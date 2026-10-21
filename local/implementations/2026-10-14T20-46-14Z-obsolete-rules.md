@@ -99,6 +99,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 47 — the experiment record in the journal | Correct | Tue Oct 20 2026 at 9:37:19 PM PT |
 | Passage 48 — the identity contract | Leave — not stale | Tue Oct 20 2026 at 9:41:29 PM PT |
 | Passage 49 — a rule listed twice | Correct | Tue Oct 20 2026 at 9:45:41 PM PT |
+| Passage 50 — the shell-scripts rule's lists | Correct | Tue Oct 20 2026 at 9:46:42 PM PT |
 
 ## What actually happened
 
@@ -275,6 +276,8 @@ The survey section above is left as written; this corrects it.
 
 **49. an-entry-is-the-writers-words — corrected.** Its `Related:` list named the journal-convention twice, for two reasons. The two items are one, carrying both.
 
+**50. shell-scripts-are-self-executable (local) — corrected.** Its lists named two removed scripts, `report-planning-directories-named-in-part.sh` and `report-unrecognized-mode.sh`, and left out `compile.sh`, the four `install-dependencies.sh`, the tests in `test/`, and `startup-display.sh` among the harness-run scripts. Its counts had drifted: ten path-form scripts where there are fifteen, twelve of thirteen where it is seventeen of eighteen. The lists now name the current scripts, and the counts are replaced by descriptions that do not drift. All eighteen scripts were checked: each is `100755` and opens with `#!/bin/sh`.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -337,3 +340,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:41:29 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT

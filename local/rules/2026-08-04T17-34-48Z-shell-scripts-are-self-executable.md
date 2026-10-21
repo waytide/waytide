@@ -7,10 +7,11 @@ Every shell script in this repository is **runnable as itself** — `./report-di
 - **The executable bit is set**, and it is set at the moment the file is created rather than the moment someone notices. Git records the bit in the file's mode, so the check is `git ls-files -s` reporting **`100755`** rather than `100644`.
 - **The file opens with a shebang** naming the interpreter — `#!/bin/sh` for every script here. Without it the bit alone leaves the interpreter to the invoking shell.
 
-**This reaches every shell script Waytide ships**, which is what makes it a rule about the system rather than about one repository's tidiness. Two kinds of script are authored here and they are covered alike:
+**This reaches every shell script Waytide ships**, which is what makes it a rule about the system rather than about one repository's tidiness. Three kinds of script are authored here and they are covered alike:
 
-- **The tools at the root** — `report-direct-commits.sh` and `report-planning-directories-named-in-part.sh` are authoring tools, run by whoever maintains Waytide, in this repository. **`install` sits beside them and is not one**: a consuming project fetches it, which is what makes it the one script here an engineer runs from somewhere other than a clone of this repository. That is the whole reason the delivery section below exists.
-- **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, `report-unrecognized-mode.sh`, and `read-consuming-projects.sh`. These are **installed into every consuming project** and run there, so a missing executable bit committed here arrives broken on every machine that installs the package. That is the case where the cost is not local, and it is the reason the rule is worth having rather than assuming.
+- **The tools at the root** — `report-direct-commits.sh` and `compile.sh` are authoring tools, run by whoever maintains Waytide, in this repository. **`install` sits beside them and is not one**: a consuming project fetches it, which is what makes it the one script here an engineer runs from somewhere other than a clone of this repository. That is the whole reason the delivery section below exists.
+- **The scripts inside the packages**, and `foundation`'s in particular — `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, and `read-consuming-projects.sh`, and each `install-dependencies.sh` a package carries. These are **installed into every consuming project** and run there, so a missing executable bit committed here arrives broken on every machine that installs the package. That is the case where the cost is not local, and it is the reason the rule is worth having rather than assuming.
+- **The tests in `test/`** — `test/automated/` and `test/interactive/`, run from this repository's root.
 
 **What it does not reach is a script a consuming project writes for itself.** This is a local rule of this repository, so it binds what is authored here and travels no further. A consuming project wanting the same convention adopts it as its own local rule. It could instead be a `foundation` rule, and so bind every project that installs Waytide. That was asked on 2026-08-06 and declined. The scripts Waytide ships are all authored here, so the rule already covers everything Waytide is responsible for.
 
@@ -26,21 +27,21 @@ Every shell script in this repository is **runnable as itself** — `./report-di
 
 Three forms are in use, and which one is correct is not a matter of taste:
 
-- **`./name.sh`** — for a script that sits in the directory the command is typed in. Two scripts take this form, the two authoring tools at this repository's root.
-- **The path form** — the script's location written from the directory the command is typed in, as in `waytide/system/foundation/refresh-packages.sh`. A packaged script is run from a consuming project's **root** and lives several directories below it, so `./name.sh` there names a file that is not present and the command fails. Ten scripts take this form.
+- **`./name.sh`** — for a script that sits in the directory the command is typed in. The authoring tools at this repository's root take this form.
+- **The path form** — the script's location written from the directory the command is typed in, as in `waytide/system/foundation/refresh-packages.sh`. A packaged script is run from a consuming project's **root** and lives several directories below it, so `./name.sh` there names a file that is not present and the command fails. The packaged scripts and the tests take this form.
 - **`sh name.sh`** — the `curl` case above, and the only form that names an interpreter.
 
 **`./` is not what makes a script self-executing, which is what the rule had confused.** The executable bit and the shebang are, and they are what the two requirements at the top of this rule ask for. The `./` prefix contributes nothing to it. It exists to tell the shell that the argument is a **path** rather than a name to look up on `PATH`.
 
 Any string containing a slash already says that. So `waytide/system/foundation/refresh-packages.sh` is exactly as self-executing as `./report-direct-commits.sh`. Neither names an interpreter, and `./` is simply what a path looks like when the file is in the current directory.
 
-**A script nobody types carries an Invocation block instead.** `session-start.sh` and `statusline.sh` are wired into `.claude/settings.json` by `install.sh` and run by the harness, so a usage line would name a command no engineer issues. Each records its invocation anyway, and says why: a script whose invocation is not written down is one nobody can reproduce when the wiring breaks.
+**A script nobody types carries an Invocation block instead.** `session-start.sh`, `startup-display.sh`, and `statusline.sh` are wired into `.claude/settings.json` by `install.sh` and run by the harness, so a usage line would name a command no engineer issues. Each records its invocation anyway, and says why: a script whose invocation is not written down is one nobody can reproduce when the wiring breaks.
 
 ## The bit is always set. The usage line follows how the script is delivered
 
 **Every shell script here carries the bit, without exception.** A script fetched with `curl` is committed `100755` exactly like the rest, and nothing below relaxes that. What varies is only the **usage line**, and it varies because the bit does not survive every delivery.
 
-- **`git clone` and `git subtree` carry the file's mode.** A script that reaches an engineer either way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the path form, whichever the section above gives it. Twelve of the thirteen scripts here are in this case — only the `curl`-fetched one is not.
+- **`git clone` and `git subtree` carry the file's mode.** A script that reaches an engineer either way arrives executable and is invoked as itself, naming no interpreter — as `./name.sh` or in the path form, whichever the section above gives it. Every script here but the `curl`-fetched one is in this case.
 - **`curl` carries content and not file metadata.** An HTTP response body is bytes. The mode is a filesystem attribute and is not in it, so `curl` writes a new file at the default permissions and the copy is **never** executable, whatever the original's mode. A script delivered this way takes a usage line of **`sh name.sh`**, in its own header and everywhere its install is documented.
 
 **`install` is the only script in that second case**, being the one a project fetches before it has anything installed to deliver it. Its usage line is `sh install`, and the root `README.md` matches. It was `install-all.sh` until 2026-08-23.
@@ -81,3 +82,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:51:09 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
