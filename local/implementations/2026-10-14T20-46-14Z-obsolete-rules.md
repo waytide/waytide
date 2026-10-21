@@ -94,6 +94,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 43 — ste rules | Correct | Tue Oct 20 2026 at 9:00:33 PM PT |
 | dbe-as-design-tool — a doubled citation | Leave — not stale | Tue Oct 20 2026 at 9:00:46 PM PT |
 | Passage 44 — the plan package | Correct | Tue Oct 20 2026 at 9:03:38 PM PT |
+| Passage 45 — the initialization-rule's body | Flatten, effect unchanged | Tue Oct 20 2026 at 9:27:32 PM PT |
 
 ## What actually happened
 
@@ -260,6 +261,8 @@ The survey section above is left as written; this corrects it.
 
 **44. work-sessions-convention — corrected.** A paragraph tangled the history of the retired `plan` package with a reason that still holds. The reason stays in the body — a work session record looks back while a plan and a design look forward, so it is not shaped like a plan — and the history moves to a new `## History` section.
 
+**45. initialization-rule — flattened, on the engineer's direction.** Asked whether the rule functions without its dates, and then to flatten it so its effect and outcome stay the same. Every past-tense or dated clause in the body is restated as a present directive or reason, and each account of what changed went to the `## History` section: the later-model failure, the 2026-10-10 confirmation of plain-text rendering, the generalized description's settling, the license line's earlier wording, and why its italics were first used. Ten passages were restated; none of the five fenced blocks was touched, so the startup display test still passes, and every instruction stands.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -317,3 +320,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:46 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
