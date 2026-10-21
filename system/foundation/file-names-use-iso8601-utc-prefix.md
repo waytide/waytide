@@ -2,7 +2,7 @@
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
-- The **working-state** directories: the running records under `logs/` — the decision log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `ideas/`, `implementations/`, and `migration/`.
+- The **working-state** directories: the running records under `logs/` — the decision log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
 - A consuming project's **own local rules** — the rules that project adds to its `waytide/local/rules/`. A local rule is a dated decision in that project's history.
 
 The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-separated, lower-case name and `.md`.
@@ -13,7 +13,7 @@ The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-sep
 
 **System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
 
-That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix. A project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and ideas.
+That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix. A project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and items.
 
 **Package structural files** — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer) — take no prefix either. They are named by what they are.
 

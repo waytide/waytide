@@ -1,6 +1,7 @@
 # A content project does not start with Design By Efferent active, and may not need it installed
 
 - **State:** Realized
+- **Tags:** [idea]
 
 **Why this state:** what the item describes exists. A content project declaring the `content` package set gets Design By Efferent neither installed nor active.
 
@@ -52,7 +53,10 @@ Related:
 - *The install takes a package set on the command line* — the subset remedy, recorded from the packaging side
 - the `announce-waytide-at-session-start` rule — the unconditional read a dormant package would have to work against
 
+**2026-10-21 — tagged `[idea]`.** The engineer named its kind when `[idea]` became the kind tag of an item that is no other. The record had carried no kind because none had been named, and the note above saying so stands as written.
+
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:13:30 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:40:05 PM PT

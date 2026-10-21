@@ -10,7 +10,7 @@
 
 **Where the directory is not there, read nothing and say nothing.** A project that keeps no journal is the ordinary case, and so is a writer who keeps none where other writers do. Its absence is not a defect and is not reported.
 
-**The other working directories are not read this way.** `logs/`, `ideas/`, `implementations/`, and `migration/` are worked with as their own conventions describe. The journal is the one that is read whole, at the start, without being asked for.
+**The other working directories are not read this way.** `logs/`, `items/`, `implementations/`, and `migration/` are worked with as their own conventions describe. The journal is the one that is read whole, at the start, without being asked for.
 
 **Say nothing about having read it.** No summary, no count of entries, no line naming what the writer was last thinking about. The writer wrote it and knows what is in it. A report back would be the agent returning a person's own words to them.
 

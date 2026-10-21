@@ -9,7 +9,7 @@
 **There is one form, and every record uses it.**
 
 - **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at the head, **after `**State:**` where there is one**. Several tags are separated by spaces — `**Tags:** [idea] [decision]`.
-- **One list item** — the tag prefixes that item's text — `- [idea] My great idea is thus`.
+- **One list item** — the tag prefixes that list item's text — `- [idea] My great idea is thus`.
 
 **A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
 
@@ -39,7 +39,7 @@ The leading-tag form is discontinued. A second form buys a line saved and costs 
 
 **What it costs:** the `**Tags:**` line no longer means one thing. A reader who sees a tag cannot tell from the line alone whether a rule turns on it, and finding out means knowing which rules reserve tags. That is the price of one mechanism instead of two, and it is accepted rather than hidden.
 
-**Why:** categorization that costs nothing is categorization that gets done. A square-bracket tag is visible in a raw-text preview, found by an ordinary text search, and imposes no taxonomy anyone has to maintain. The alternative — a controlled vocabulary — has to be agreed before the first tag is written, and the writer who wants to mark something as an idea at that moment does not have it.
+**Why:** categorization that costs nothing is categorization that gets done. A square-bracket tag is visible in a raw-text preview, found by an ordinary text search, and imposes no taxonomy anyone has to maintain. The alternative — a controlled vocabulary — has to be agreed before the first tag is written, and the writer who wants to mark something as an item at that moment does not have it.
 
 **Freeform is the whole of the value here, and it is also the whole of the limit.** Two writers tagging the same thing `[idea]` and `[ideas]` have categorized nothing together. That is accepted rather than solved, because solving it costs the property the tags exist for.
 
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

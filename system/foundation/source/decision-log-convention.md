@@ -17,7 +17,7 @@ Related:
 - the file-names rule — the shared filename convention
 - the rules-convention — a new rule pairs with a log entry
 - the observations-convention — its recording step logs too
-- the an-idea-takes-a-log-entry rule — an idea, deferred work included, logs on creation and on each change of state
+- the an-item-takes-a-log-entry rule — an item, deferred work included, logs on creation and on each change of state
 - the logs-directory rule — the running records this sits among
 - the a-record-takes-category-tags rule — the `**Tags:**` line an entry carries, in the one form
 
@@ -36,3 +36,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
