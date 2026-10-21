@@ -6,7 +6,13 @@
 
 **As the engineer stated it:** Instead of "idea", use "item".
 
-**The record kind now called an idea is called an item.** That is the word in the rules and vocabularies, the directory `waytide/local/ideas/`, and the scripts that read it. It realizes the idea *"Item" replaces "idea"*, `local/items/2026-10-21T05-24-46Z-item-replaces-idea-OPEN.md`.
+**The record kind now called an idea is called an item.** That is the word in the rules and vocabularies, the directory `waytide/local/ideas/`, and the scripts that read it. It realizes the idea *"Item" replaces "idea"*, `local/items/2026-10-21T05-24-46Z-item-replaces-idea-REALIZED.md`.
+
+## State
+
+- **State:** Completed
+
+**Completed on 2026-10-21, at the engineer's direction.** The record kind is called an item throughout, the directory is `items/`, `[idea]` is the kind tag of an item of no other kind, and the installer carries a consuming project across both. The automated suite passes, and the branch integrates into `master`.
 
 ## Setup
 
@@ -41,6 +47,8 @@
 | Tagging — controls | No Tags line; a non-kind tag; a kind | Wed Oct 21 2026 at 2:50:55 PM PT |
 | Tagging — implementation | Written directly | Wed Oct 21 2026 at 2:50:55 PM PT |
 | Tagging — naming | Tags an item without a kind as an idea | Wed Oct 21 2026 at 2:50:55 PM PT |
+| Completion | Completed | Wed Oct 21 2026 at 2:57:01 PM PT |
+| Branch deletion | Delete `feature/item-replaces-idea` after the merge | Wed Oct 21 2026 at 2:57:01 PM PT |
 
 ## What actually happened
 
@@ -104,3 +112,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:46 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:39:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:40:05 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:50:55 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:01 PM PT
