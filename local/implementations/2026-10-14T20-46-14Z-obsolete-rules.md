@@ -93,6 +93,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 42, revised — a lone candidate | Explain beside it; never search to reach two | Tue Oct 20 2026 at 8:54:56 PM PT |
 | Passage 43 — ste rules | Correct | Tue Oct 20 2026 at 9:00:33 PM PT |
 | dbe-as-design-tool — a doubled citation | Leave — not stale | Tue Oct 20 2026 at 9:00:46 PM PT |
+| Passage 44 — the plan package | Correct | Tue Oct 20 2026 at 9:03:38 PM PT |
 
 ## What actually happened
 
@@ -257,6 +258,8 @@ The survey section above is left as written; this corrects it.
 
 **dbe-as-design-tool — left, as not stale.** The survey reported its citation of the-implementation-hinge-offers-the-red-green-refactor-cycle as doubled. It is one mention in the body and one in `Related:`, and "the the-…" is the corpus's form for a rule whose name begins with *the*.
 
+**44. work-sessions-convention — corrected.** A paragraph tangled the history of the retired `plan` package with a reason that still holds. The reason stays in the body — a work session record looks back while a plan and a design look forward, so it is not shaped like a plan — and the history moves to a new `## History` section.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -313,3 +316,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:46 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT

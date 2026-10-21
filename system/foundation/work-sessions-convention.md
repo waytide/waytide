@@ -37,7 +37,7 @@ Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records w
 
 A narrative work session record preserves that arc as a communicable whole. It points to the durable records rather than restating them. So it stays a route through the records rather than a second source of truth. The format lives here, with the directory convention, the same way the experiment and loop-record formats live with theirs.
 
-It was written here rather than in the `plan` package on one ground. A work session record is a record of the *past*, while a plan and a design look forward. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives. It is still the reason a work session record is not shaped like a plan.
+**A work session record is not shaped like a plan.** It records the *past*, while a plan and a design look forward.
 
 **How to apply:** at a substantial work session's close, write a work session record here. It narrates the work session chronologically per the shape above. It defines the settled vocabulary, and points to the durable records it produced. It ends with a provenance footer in the record-rule-authorship-in-a-footer format.
 
