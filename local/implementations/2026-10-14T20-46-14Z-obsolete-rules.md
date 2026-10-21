@@ -92,6 +92,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 42 — a lone candidate | Look for a real second decision first; Explain where none exists | Tue Oct 20 2026 at 8:49:17 PM PT |
 | Passage 42, revised — a lone candidate | Explain beside it; never search to reach two | Tue Oct 20 2026 at 8:54:56 PM PT |
 | Passage 43 — ste rules | Correct | Tue Oct 20 2026 at 9:00:33 PM PT |
+| dbe-as-design-tool — a doubled citation | Leave — not stale | Tue Oct 20 2026 at 9:00:46 PM PT |
 
 ## What actually happened
 
@@ -254,6 +255,8 @@ The survey section above is left as written; this corrects it.
 
 **43. attended-or-unattended-is-chosen-at-the-start — corrected.** It pointed to "the `language` package's ste rules", their name before they became the ETE rules in `language/ete/`. It now names them and their directory.
 
+**dbe-as-design-tool — left, as not stale.** The survey reported its citation of the-implementation-hinge-offers-the-red-green-refactor-cycle as doubled. It is one mention in the body and one in `Related:`, and "the the-…" is the corpus's form for a rule whose name begins with *the*.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -309,3 +312,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:46 PM PT
