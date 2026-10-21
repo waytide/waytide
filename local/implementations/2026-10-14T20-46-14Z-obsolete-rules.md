@@ -95,6 +95,7 @@ Committed before the work. Each item carries the agent's confidence.
 | dbe-as-design-tool — a doubled citation | Leave — not stale | Tue Oct 20 2026 at 9:00:46 PM PT |
 | Passage 44 — the plan package | Correct | Tue Oct 20 2026 at 9:03:38 PM PT |
 | Passage 45 — the initialization-rule's body | Flatten, effect unchanged | Tue Oct 20 2026 at 9:27:32 PM PT |
+| Passage 46 — an entry's layout | Correct | Tue Oct 20 2026 at 9:36:02 PM PT |
 
 ## What actually happened
 
@@ -263,6 +264,8 @@ The survey section above is left as written; this corrects it.
 
 **45. initialization-rule — flattened, on the engineer's direction.** Asked whether the rule functions without its dates, and then to flatten it so its effect and outcome stay the same. Every past-tense or dated clause in the body is restated as a present directive or reason, and each account of what changed went to the `## History` section: the later-model failure, the 2026-10-10 confirmation of plain-text rendering, the generalized description's settling, the license line's earlier wording, and why its italics were first used. Ten passages were restated; none of the five fenced blocks was touched, so the startup display test still passes, and every instruction stands.
 
+**46. journal-entries — corrected.** Its Structure line and its `**How to apply:**` gave an entry as a title, a summary, and prose, leaving out the datetime line and the `**Tags:**` line that datetime-stamp-line places under the title, and that every entry carries. Both now state the full layout, and the Structure line cites datetime-stamp-line.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -321,3 +324,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:46 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
