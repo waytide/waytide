@@ -34,7 +34,7 @@
 
 **Why:** the numbers are the ones git's own tooling is built around, so a message written to them is read as it was written wherever it is read. The subject limit does a second job the display argument does not reach: it makes a commit that has grown past one subject say so while it is still being written, which is the cheapest moment to split it.
 
-Wrapping the body by hand rather than leaving it to the terminal keeps a paragraph looking the same to every reader.
+Wrapping the body in the message itself rather than leaving it to the terminal keeps a paragraph looking the same to every reader.
 
 **How to apply:** write a subject of at most 50 characters and wrap the body at 72. Where the subject will not fit, split the commit first and move detail to the body second. Do not abbreviate into shorthand, and do not revise a commit message already written.
 

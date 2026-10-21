@@ -15,7 +15,7 @@
 **Two items would make it unnecessary**, and both are now settled:
 
 - *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**, the engineer being undecided whether the core of Waytide should be without the method. **That question was settled later the same day: the core keeps the method.** So this item will not retire the rule, and the abandonment is now a decision rather than a deferral.
-- *A content project does not start with Design By Efferent active* — the parked question this rule answers by hand. **Realized 2026-08-25** by the `content` package set and the package-set declaration.
+- *A content project does not start with Design By Efferent active* — the parked question this rule answers with a rule rather than a mechanism. **Realized 2026-08-25** by the `content` package set and the package-set declaration.
 
 **Neither settlement retires this rule, and the reason is which project each reaches.** They settle what a **content project** installs and activates. This rule governs content work **in this repository**, where the `default` set holds design-by-efferent and it is active. The retirement condition below was written loosely, and this is what it missed.
 
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT

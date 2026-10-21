@@ -9,7 +9,7 @@ A project's own files do not name the projects that **consume** it. Not the inst
 Three reasons, and each would be sufficient on its own:
 
 - **It inverts the dependency direction.** A package is depended *upon*. It does not depend on who depends on it. A package that knows its consumers has a reference running the wrong way, and every argument that keeps a package unaware of its use sites applies here unchanged.
-- **A maintained list drifts, and its drift is silent.** A consumer added today is absent from the list until someone remembers, and nothing detects the omission. That is the same drifting corpus this system argues against wherever it appears — a record kept by hand beside a fact that changes without it.
+- **A maintained list drifts, and its drift is silent.** A consumer added today is absent from the list until someone remembers, and nothing detects the omission. That is the same drifting corpus this system argues against wherever it appears — a record someone has to keep current beside a fact that changes without it.
 - **The consumers are frequently not the project's to name.** A repository is public, and an installed rule is read on other people's machines. Another party's project, client, or repository named in passing is disclosed to everyone who reads the file, whatever the file was for. This is the disclosure concern, arriving through a list nobody thought of as a disclosure.
 
 ## What it does not reach
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT

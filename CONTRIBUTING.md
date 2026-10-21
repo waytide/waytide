@@ -83,4 +83,4 @@ The one exception: you spot a fix while deep in a consuming project and don't wa
    git subtree push --prefix waytide/system/testing git@github.com:waytide/testing.git master
    ```
 
-   This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and the change still has to be brought into the composite repo by hand. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever you can.
+   This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and you still have to bring the change into the composite repo yourself. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever you can.
