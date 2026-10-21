@@ -90,6 +90,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 40 — a misattributed argument | Correct | Tue Oct 20 2026 at 8:45:35 PM PT |
 | Passage 41 — a broken sentence | Correct | Tue Oct 20 2026 at 8:46:11 PM PT |
 | Passage 42 — a lone candidate | Look for a real second decision first; Explain where none exists | Tue Oct 20 2026 at 8:49:17 PM PT |
+| Passage 42, revised — a lone candidate | Explain beside it; never search to reach two | Tue Oct 20 2026 at 8:54:56 PM PT |
 
 ## What actually happened
 
@@ -248,6 +249,8 @@ The survey section above is left as written; this corrects it.
 
 **42. A lone candidate at a hinge — settled by the engineer.** hinge-cycle and actuation-gate-options-or-chat said to present a lone candidate as the only option. present-every-prompt-through-askuserquestion said the selection UI takes at least two and to find the real underlying second decision. The agent had been filling the second place with `Explain`, which no rule named. The engineer chose to look for a real second decision first, with `Explain` filling the place where none exists. All three rules now say so.
 
+**42, revised — the engineer reversed the first choice.** On reflection the engineer said the agent should not invent an option where there is none, or it risks presenting an absurdity as a viable choice, and asked whether the agent can really determine that no other option exists. It cannot: it can judge whether a candidate it produced is genuine, not that no better one exists, which is why every prompt carries the free-text answer. The three rules now say: present the genuine candidates found, pair a lone one with `Explain`, never invent an option to reach two, and never claim the lone candidate is the only possibility. The prompt rule's "look harder for the real underlying decision" and "almost always has a real second candidate" are removed, since each presses toward the invention.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -301,3 +304,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:45:35 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT

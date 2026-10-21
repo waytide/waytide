@@ -40,7 +40,7 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 
 **An option is the artifact, not a label for it.** The option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)` — the line that would be written, shown as it would be written. A gloss may follow it where the difference between two candidates is not visible in the code alone. **A label standing in place of the artifact is not an option.** `Accept — assert the returned count against 3` asks the engineer to approve a description of a thing rather than to read the thing. The engineer is judging a design, and the design is in the characters.
 
-**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, so the agent first looks for the real underlying second decision, per the present-every-prompt rule. Where none exists, `Explain` fills the second place.
+**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, and `Explain` fills the second place, per the present-every-prompt rule. The agent does not search for a second candidate to reach two.
 
 **What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the actuation-gate-options-or-chat rule, which states the same mechanism at the first gate.
 
@@ -52,7 +52,7 @@ The controls are a hinge in their own right. A non-discriminating example assert
 
 **How to apply:** Give the brief account of the five hinges once, ahead of the first one, and not again. Then run the five in order (naming deferred to the feature's close).
 
-At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way, beside `Explain` where no real second candidate exists. Always offer the free-text option.
+At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way, beside `Explain`. Always offer the free-text option.
 
 What goes on screen at each hinge is the what-each-hinge-displays rule. That is the actuation as the anchor, and the contexts shown once.
 
