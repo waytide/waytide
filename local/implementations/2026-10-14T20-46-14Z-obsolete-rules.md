@@ -284,6 +284,24 @@ The survey section above is left as written; this corrects it.
 
 **52. a-citation-is-not-a-dependency (local) — corrected.** It quoted the implementations-convention as saying "the feature lifecycle", where the convention now says "the implementation lifecycle". And it said `foundation` cites all six other packages in eleven rules; a recount finds five of the six, not versioning, in thirteen. The quotation is corrected, and the count is replaced by the fact the argument needs — foundation cites most of them, design-by-efferent among them.
 
+### The passages, concluded — 2026-10-20
+
+**Every stale passage the survey found has been decided.** Most were corrected; five were left as not stale on examination — shortened rule names, the plain-naming rule's list of artifacts, dbe-as-design-tool's citation, identity-resolution-contract's two claims, and commit-message-widths' illustration of a commit naming deferred items, which is history rather than a reference. Passage 42 was decided twice: the engineer reversed the first choice, so that no option is invented to reach two.
+
+**What the passages were, by kind:**
+
+- **Names that no longer exist** — rules, scripts, packages, a directory, and record kinds merged into others. The largest group.
+- **Counts that drift** — of vocabularies, records, words, reserved terms, and scripts. Where a count was not the point, it was replaced by a description that does not drift, at the engineer's prompting on passage 25.
+- **Rules that contradict another rule, or themselves** — the reserved tag, the log-entry rule on the ideas rule, the composite's test state, "arrange", the two-gate loop's stops, the whole test file before the hinges, a lone candidate at a hinge, and the content-work rule's retirement condition.
+- **Damaged text** — doubled words, a sentence broken in two, and a rule's name split across list items.
+- **History in a body** — the work-sessions rule's account of the `plan` package, and the initialization-rule, which the engineer had flattened so its body states only present directives and reasons.
+
+**Two decisions changed what the rules require, not only what they say.** The engineer stated that the whole test file is never produced at an early hinge unless the work is unattended (passages 37 and 38), and that the agent never invents an option to reach two, pairing a lone candidate with `Explain` instead (passage 42).
+
+**The survey's own errors were found along the way:** it judged package-dependency-heading obsolete when `[design]` ideas exist; it counted the word *deferred* as the retired queue throughout; it reported `level` as unmarked in any vocabulary, and dbe-as-design-tool's citation as doubled. Each was caught in presenting the passage to the engineer.
+
+**The README files were not part of this work.** Their stale passages — the foundation README's retired directories, the language README's contradiction of language-is-precise-here — are recorded in the derived-rule-files experiment and untouched.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -349,3 +367,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:57:18 PM PT
