@@ -26,7 +26,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **The name is derived from the line and changes only when it changes.** Where the two disagree the line is right, and the name is stale.
 
-**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, or **Open**, as the items-convention sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
+**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the items-convention sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
 
 **A renamed file breaks a path recorded elsewhere.** That is the cost the rules-convention names when it says to reference a rule by its name rather than its path. Here the mitigation is the same as everywhere: historical records are left as written and a reader who follows an unresolvable path uses git, and **live** artifacts that cite the record are reconciled at the rename.
 

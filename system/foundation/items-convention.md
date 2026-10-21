@@ -56,6 +56,16 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
 
+## A work item
+
+**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** The tag is reserved: this rule names it and says what follows.
+
+- **Done** — the work is done. It takes the place of `Realized`, which a work item does not take, and neither does `Lapsed`.
+- **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
+- **`Done` is taken back** to `Active` when the work reopens, as `Realized` is for any other item.
+
+**Why:** a work item describes something to do rather than something to exist, so *realized* misstates its end. *Done* says what happened to it.
+
 ## Supersession
 
 **A later item may supersede an earlier one.** The earlier takes `**State:** Superseded` and the two name each other in their prose. What the earlier one settled stays as written — a superseded item is a record of what was thought, not a draft.
