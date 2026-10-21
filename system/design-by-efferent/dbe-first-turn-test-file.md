@@ -1,6 +1,6 @@
 # DBE, first turn: the first gate is the actuation and an unnamed assert
 
-Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more, and it stops at the **first gate**, where responsibility first transfers to the human.
+Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more. It begins at the **first gate**, where responsibility first transfers to the human, and the file is assembled once the three test hinges are accepted — not before them, unless the engineer chose unattended work at the start.
 
 What the first gate puts down is small and fixed:
 
@@ -40,11 +40,11 @@ In practice this closing step is the seam where the next feature begins. So a fe
 
 Keeping the first gate to the actuation and a single unnamed assert keeps that gate's hinge undiluted. It is the actuation's shape and the observed truth, with no premature commitment to an outcome taxonomy. Asserting against an explaining variable keeps the test reading as a statement of the concern rather than a mechanical check. Binding it to the actuation result keeps the efferent view in the frame.
 
-**How to apply:** When beginning a feature, write only the test file this turn. Nest one `context` per folder segment. Actuate the unit under test and bind the result to an explaining variable. Write one bare unnamed `test` block asserting that variable. Do not name an inner outcome context yet. Do not write the implementation, and do not pause to run the inevitably-failing test.
+**How to apply:** When beginning a feature, settle the actuation, the observation, and the controls, then write only the test file this turn. Nest one `context` per folder segment. Actuate the unit under test and bind the result to an explaining variable. Write one bare unnamed `test` block asserting that variable. Do not name an inner outcome context yet. Do not write the implementation, and do not pause to run the inevitably-failing test.
 
 **Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close.
 
-Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept. Settle the three test hinges first, then assemble and show the file.
+Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-at-the-start rule). Settle the three test hinges first, then assemble and show the file.
 
 Related:
 

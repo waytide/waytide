@@ -85,6 +85,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 35 — folder framing | Correct | Tue Oct 20 2026 at 12:49:37 PM PT |
 | Passage 36 — design doc | Correct | Tue Oct 20 2026 at 12:50:38 PM PT |
 | Passage 37 — step 2 | Correct, with the unattended exception | Tue Oct 20 2026 at 8:34:03 PM PT |
+| Passage 38 — the first-turn rule | Correct | Tue Oct 20 2026 at 8:35:02 PM PT |
 
 ## What actually happened
 
@@ -233,6 +234,8 @@ The survey section above is left as written; this corrects it.
 
 **37. dbe-human-in-the-loop — corrected, on the engineer's direction.** Its step 2 had the agent write the whole test file in turn one and the human then deliberate the actuation, where hinge-cycle and the first-turn rule settle the actuation, the observation, and the controls one at a time and assemble the file after. The engineer stated the rule: the whole test file is never produced at an early hinge unless the engineer opted for unattended work. Step 2 now says so, and names the attended-or-unattended rule for the exception.
 
+**38. dbe-first-turn-test-file — corrected.** Its opening said the first turn produces the test file and stops at the first gate, and its `**How to apply:**` said to write only the test file, both reading as the file before the hinges. Its own later sentence said to settle the three test hinges first. The opening and `**How to apply:**` now say the file is assembled once the three are accepted, and the exception the engineer stated for passage 37, unattended work, is written in.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -281,3 +284,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
