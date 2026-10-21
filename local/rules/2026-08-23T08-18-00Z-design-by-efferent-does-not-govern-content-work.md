@@ -6,7 +6,7 @@
 
 ## Why a rule and not a mechanism
 
-**Waytide has no dormant state for an installed package.** Every rule file under `waytide/system/` is read at the start of every session, and the announce-waytide-at-session-start rule makes that read unconditional deliberately. There is nothing to switch off, so a rule saying the package does not apply is what stands in for the mechanism that does not exist.
+**A project can switch a package off by declaring a set that leaves it out**, per the a-project-declares-its-package-set rule. This repository keeps design-by-efferent active, since the core keeps the method, so this rule is what holds it off content work here.
 
 **The package is still read.** This rule stops it being applied to content work. It does not stop it loading, and it does not remove anything.
 
@@ -35,7 +35,7 @@ The method's spine is not code-specific: the engineer decides where a decision b
 
 **How to apply:** when the work is content, write it. Do not put the five hinges to the engineer, do not open a loop record, and do not ask attended or unattended.
 
-Where a piece of work is both — a rule that governs content, a script that builds a site — DBE governs the code half and this rule reaches the prose. When either idea above settles, suspend this rule and log it.
+Where a piece of work is both — a rule that governs content, a script that builds a site — DBE governs the code half and this rule reaches the prose. Suspend this rule and log it if this repository declares a set that leaves the method out, or if the core question is answered the other way.
 
 Related:
 
@@ -49,3 +49,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 23 2026 at 1:18:00 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 5:12:39 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT

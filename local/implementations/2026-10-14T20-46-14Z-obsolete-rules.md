@@ -100,6 +100,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 48 — the identity contract | Leave — not stale | Tue Oct 20 2026 at 9:41:29 PM PT |
 | Passage 49 — a rule listed twice | Correct | Tue Oct 20 2026 at 9:45:41 PM PT |
 | Passage 50 — the shell-scripts rule's lists | Correct | Tue Oct 20 2026 at 9:46:42 PM PT |
+| Passage 51 — the content-work rule's contradictions | Correct | Tue Oct 20 2026 at 9:53:26 PM PT |
 
 ## What actually happened
 
@@ -278,6 +279,8 @@ The survey section above is left as written; this corrects it.
 
 **50. shell-scripts-are-self-executable (local) — corrected.** Its lists named two removed scripts, `report-planning-directories-named-in-part.sh` and `report-unrecognized-mode.sh`, and left out `compile.sh`, the four `install-dependencies.sh`, the tests in `test/`, and `startup-display.sh` among the harness-run scripts. Its counts had drifted: ten path-form scripts where there are fifteen, twelve of thirteen where it is seventeen of eighteen. The lists now name the current scripts, and the counts are replaced by descriptions that do not drift. All eighteen scripts were checked: each is `100755` and opens with `#!/bin/sh`.
 
+**51. design-by-efferent-does-not-govern-content-work (local) — corrected.** It said Waytide has no dormant state for a package and nothing to switch off, where package sets now deactivate what they do not name, as the rule's own later section says. And its `**How to apply:**` said to suspend it when either of two ideas settled; both have, and the rule says neither retires it. The first now says a project can switch a package off and this repository keeps the method active; the second names the two conditions the rule gives elsewhere for its retirement. The rule stays in force as applied.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -341,3 +344,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:41:29 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
