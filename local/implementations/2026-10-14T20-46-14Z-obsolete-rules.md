@@ -96,6 +96,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 44 — the plan package | Correct | Tue Oct 20 2026 at 9:03:38 PM PT |
 | Passage 45 — the initialization-rule's body | Flatten, effect unchanged | Tue Oct 20 2026 at 9:27:32 PM PT |
 | Passage 46 — an entry's layout | Correct | Tue Oct 20 2026 at 9:36:02 PM PT |
+| Passage 47 — the experiment record in the journal | Correct | Tue Oct 20 2026 at 9:37:19 PM PT |
 
 ## What actually happened
 
@@ -266,6 +267,8 @@ The survey section above is left as written; this corrects it.
 
 **46. journal-entries — corrected.** Its Structure line and its `**How to apply:**` gave an entry as a title, a summary, and prose, leaving out the datetime line and the `**Tags:**` line that datetime-stamp-line places under the title, and that every entry carries. Both now state the full layout, and the Structure line cites datetime-stamp-line.
 
+**47. journal-convention — corrected.** Its list of the agent's records named "the experiment record", which became the implementation record, covering features as well. It now names the implementation record.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -325,3 +328,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:46 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
