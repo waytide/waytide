@@ -129,6 +129,14 @@ So a reduction that keeps only the directive is a reduction that discards the re
 
 **Each step carries the content the section above gives it.** Only the order and the optional standing of the last step are new here.
 
+## Flattening, and a test for "essential" — added 2026-10-20
+
+**As the engineer stated it:** Attempt to "flatten" the rules, and reduce them to their essential content. The rule should have the same effect and outcome as before any changes are made.
+
+- **Flattening is what was done to the initialization-rule on 2026-10-20**, in the obsolete-rules experiment. Its body was restated as present directives and reasons, and every account of what changed went to its `## History` section, so the compiled read no longer carries it. The startup display and its test were unchanged.
+- **The statement gives "essential" a test**, which the section above calls the challenge: what a rule keeps is what its effect and outcome need. A passage the rule's behavior does not depend on is not essential, and a passage it does depend on is, however it reads.
+- **The test is about behavior, so it is judged by behavior.** The derived-rule-files experiment judged adherence by putting the same requests to sessions reading each version of a rule and comparing what they did. That is the method this test asks for.
+
 ---
 
 Authored by Scott Bellware on Wed Sep 9 2026 at 1:36:50 PM PT
@@ -137,3 +145,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:50:23 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:52:32 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:05 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:48 AM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 10:36:44 PM PT
