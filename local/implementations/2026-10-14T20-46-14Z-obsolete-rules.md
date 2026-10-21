@@ -101,6 +101,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 49 — a rule listed twice | Correct | Tue Oct 20 2026 at 9:45:41 PM PT |
 | Passage 50 — the shell-scripts rule's lists | Correct | Tue Oct 20 2026 at 9:46:42 PM PT |
 | Passage 51 — the content-work rule's contradictions | Correct | Tue Oct 20 2026 at 9:53:26 PM PT |
+| Passage 52 — the citation rule's quotation and count | Correct | Tue Oct 20 2026 at 9:56:57 PM PT |
 
 ## What actually happened
 
@@ -281,6 +282,8 @@ The survey section above is left as written; this corrects it.
 
 **51. design-by-efferent-does-not-govern-content-work (local) — corrected.** It said Waytide has no dormant state for a package and nothing to switch off, where package sets now deactivate what they do not name, as the rule's own later section says. And its `**How to apply:**` said to suspend it when either of two ideas settled; both have, and the rule says neither retires it. The first now says a project can switch a package off and this repository keeps the method active; the second names the two conditions the rule gives elsewhere for its retirement. The rule stays in force as applied.
 
+**52. a-citation-is-not-a-dependency (local) — corrected.** It quoted the implementations-convention as saying "the feature lifecycle", where the convention now says "the implementation lifecycle". And it said `foundation` cites all six other packages in eleven rules; a recount finds five of the six, not versioning, in thirteen. The quotation is corrected, and the count is replaced by the fact the argument needs — foundation cites most of them, design-by-efferent among them.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -345,3 +348,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:41:29 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT

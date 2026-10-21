@@ -10,9 +10,9 @@ A rule may **name** another package's rule — for orientation, for contrast, or
 
 **The model citation** is foundation's own status-report-format rule. It names the `testing` package and is written for its absence. Its words are *"If the project has **not** adopted the testing conventions, degrade this section."* The rule works either way. So `testing` is cited and not declared.
 
-**The refused dependency** is the implementations-convention. It cites `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in `waytide/local/logs/loops/`. Its words are *"would invert the package graph, and would make the feature lifecycle unavailable to a project that installs `foundation` alone."* That rule is two things at once. It is a citation of another package, and the reason a dependency was not taken.
+**The refused dependency** is the implementations-convention. It cites `design-by-efferent`'s loop-records rule and deliberately stops short of requiring anything in `waytide/local/logs/loops/`. Its words are *"would invert the package graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone."* That rule is two things at once. It is a citation of another package, and the reason a dependency was not taken.
 
-**Why:** the alternative reading is not available, and the package graph shows it. Six of the seven packages name packages they do not declare. `foundation`, the base every other package builds on, cites all six of them in eleven rules. If a citation were a dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct, and the only workable line between them is whether the rule functions alone.
+**Why:** the alternative reading is not available, and the package graph shows it. Six of the seven packages name packages they do not declare. `foundation`, the base every other package builds on, cites most of them, design-by-efferent among them. If a citation were a dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct, and the only workable line between them is whether the rule functions alone.
 
 Keeping the line at *works* rather than *is motivated* also keeps the declarations meaningful. A declared dependency obliges an install. Declaring one that is merely helpful would make every install drag in the whole system and reduce the graph to noise.
 
@@ -48,3 +48,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT
