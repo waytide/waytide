@@ -17,7 +17,7 @@ Every time you prompt the engineer to make a selection, a decision, or an answer
 
 **The UI requires at least two options. Do not manufacture cosmetic options to reach the floor.** When the shape looks pinned, look harder for the **real underlying decision** the engineer should make. That is an interface-contract decision, such as a keyword required against defaulting. It is also a return-type decision, or an identity-against-value decision.
 
-A genuine decision almost always has a real second candidate once examined. Surface it. The built-in "Other" then carries the answer the options do not contain, so the engineer is never boxed into the set.
+A genuine decision almost always has a real second candidate once examined. Surface it. **Where none exists, the second option is `Explain`** — an account of the lone candidate — and never a cosmetic variant. The built-in "Other" then carries the answer the options do not contain, so the engineer is never boxed into the set.
 
 **Why:** the selection UI is what makes responsibility transfer legibly and the same way every time, and it already supplies the free-text option. Routing *all* prompts through it keeps the engineer's decision points consistent and easy to act on, and stops a decision from being buried inside prose. The two-option floor is a forcing function. It pushes toward finding the real decision rather than presenting a single proposal for approval. A single proposal puts the engineer in the position of ratifying an answer rather than producing one.
 
@@ -27,7 +27,7 @@ Making it an option rather than a judgment call is the point. The agent is the p
 
 **How to apply:** whenever you would ask the engineer to decide or answer. That covers a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine candidate, plus `Explain`. Never add a free-text option of your own.
 
-Find at least two genuine candidates by surfacing the real underlying decision. Never pad with cosmetic variants.
+Find at least two genuine candidates by surfacing the real underlying decision. Where there is only one, put `Explain` beside it. Never pad with cosmetic variants.
 
 When `Explain` is selected, answer with a summary first and a normal level of explanation beneath it. Then display the same selection prompt again, with `Explain` replaced by `Explain briefly` and every other option unchanged.
 

@@ -36,7 +36,7 @@ Offer them through the selection UI, which supplies the free-text option. Do not
 
 If the human chooses one, adopt it as the cradle. If the human writes their own instead, take that actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
 
-**When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the free-text option still there.
+**When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the free-text option still there. Look first for the real underlying second decision; where none exists, `Explain` is the second option, as the present-every-prompt rule sets out.
 
 **Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the hinge-cycle rule.
 

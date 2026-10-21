@@ -89,6 +89,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 39 — stop and wait under unattended work | Correct, one outcome at a time in both modes | Tue Oct 20 2026 at 8:37:04 PM PT |
 | Passage 40 — a misattributed argument | Correct | Tue Oct 20 2026 at 8:45:35 PM PT |
 | Passage 41 — a broken sentence | Correct | Tue Oct 20 2026 at 8:46:11 PM PT |
+| Passage 42 — a lone candidate | Look for a real second decision first; Explain where none exists | Tue Oct 20 2026 at 8:49:17 PM PT |
 
 ## What actually happened
 
@@ -245,6 +246,8 @@ The survey section above is left as written; this corrects it.
 
 **41. announce-waytide-at-session-start — corrected.** A sentence on the installer's `.claude/` warning had been broken by an earlier edit: "checks whether git is set to ignore that path and. When it is, and the file is not already tracked — prints how to correct it." It now reads as two whole sentences, and was checked against `install.sh`, which warns only when the file is ignored and not tracked. Found while checking passage 40.
 
+**42. A lone candidate at a hinge — settled by the engineer.** hinge-cycle and actuation-gate-options-or-chat said to present a lone candidate as the only option. present-every-prompt-through-askuserquestion said the selection UI takes at least two and to find the real underlying second decision. The agent had been filling the second place with `Explain`, which no rule named. The engineer chose to look for a real second decision first, with `Explain` filling the place where none exists. All three rules now say so.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -297,3 +300,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:45:35 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
