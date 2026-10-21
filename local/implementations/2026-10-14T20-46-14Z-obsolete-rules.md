@@ -98,6 +98,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 46 — an entry's layout | Correct | Tue Oct 20 2026 at 9:36:02 PM PT |
 | Passage 47 — the experiment record in the journal | Correct | Tue Oct 20 2026 at 9:37:19 PM PT |
 | Passage 48 — the identity contract | Leave — not stale | Tue Oct 20 2026 at 9:41:29 PM PT |
+| Passage 49 — a rule listed twice | Correct | Tue Oct 20 2026 at 9:45:41 PM PT |
 
 ## What actually happened
 
@@ -272,6 +273,8 @@ The survey section above is left as written; this corrects it.
 
 **48. identity-resolution-contract — left, as not stale.** The survey flagged "the binding contract every Waytide tool follows", since only the journal resolves a writer, and ".current-user — a gitignored file", since this repository has no `.gitignore`. Each states a requirement rather than reporting a state: on any tool that resolves a writer, and on a `.current-user` file wherever one is made. Neither is false.
 
+**49. an-entry-is-the-writers-words — corrected.** Its `Related:` list named the journal-convention twice, for two reasons. The two items are one, carrying both.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -333,3 +336,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:41:29 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
