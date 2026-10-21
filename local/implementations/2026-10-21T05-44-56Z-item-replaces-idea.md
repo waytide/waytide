@@ -68,9 +68,12 @@
 
 **At the naming hinge the agent offered three names that said the same thing**, against the rule settled in the obsolete-rules experiment's passage 42. The engineer did not understand the difference, because there was none. The hinge was put again with the one candidate and `Explain`.
 
+**No migration record is written, correcting the decision above.** The agent said the migration-convention requires one of a change that crosses a repository boundary. This change does not cross one: each project's directory is renamed inside that project, and no content leaves a repository. The convention's record is for a move such as a package leaving for its own repository. The two earlier directory migrations, to `work-sessions/` and to `logs/`, wrote none either.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 10:50:30 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:38:14 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:27 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:46 PM PT
