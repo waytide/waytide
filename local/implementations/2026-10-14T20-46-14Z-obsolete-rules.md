@@ -84,6 +84,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 34 — split Related entries | Correct | Tue Oct 20 2026 at 12:39:25 PM PT |
 | Passage 35 — folder framing | Correct | Tue Oct 20 2026 at 12:49:37 PM PT |
 | Passage 36 — design doc | Correct | Tue Oct 20 2026 at 12:50:38 PM PT |
+| Passage 37 — step 2 | Correct, with the unattended exception | Tue Oct 20 2026 at 8:34:03 PM PT |
 
 ## What actually happened
 
@@ -230,6 +231,8 @@ The survey section above is left as written; this corrects it.
 
 **36. package-dependency-heading — corrected.** It governed "a design doc", the wording from before designs became ideas, which its sibling plans-no-code-samples had already left behind. It now names a design as an idea tagged `[design]`. The heading it requires is unchanged.
 
+**37. dbe-human-in-the-loop — corrected, on the engineer's direction.** Its step 2 had the agent write the whole test file in turn one and the human then deliberate the actuation, where hinge-cycle and the first-turn rule settle the actuation, the observation, and the controls one at a time and assemble the file after. The engineer stated the rule: the whole test file is never produced at an early hinge unless the engineer opted for unattended work. Step 2 now says so, and names the attended-or-unattended rule for the exception.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -277,3 +280,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
