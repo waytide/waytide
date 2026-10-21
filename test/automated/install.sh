@@ -54,17 +54,6 @@ Some text.
 ITEM
 }
 
-control_other_tag_expected_text() {
-  cat <<'ITEM'
-# Some other item
-
-- **State:** Open
-- **Tags:** [idea] [deferred]
-
-Some text.
-ITEM
-}
-
 control_design_text() {
   cat <<'ITEM'
 # Some design
@@ -97,14 +86,14 @@ ideas_dir="$project/waytide/local/ideas"
 [ -f "$item" ] || fail "Moves ideas to items" "not in items/:" "$control_no_kind_name"
 [ ! -e "$ideas_dir" ] || fail "Moves ideas to items" "ideas/ is still present"
 
-# Tags an item without a kind as an idea ----------------------------------
+# Tags an item without a tag as an idea -----------------------------------
 
 no_kind_item=$(cat "$project/waytide/local/items/$control_no_kind_name")
 other_tag_item=$(cat "$project/waytide/local/items/$control_other_tag_name")
 design_item=$(cat "$project/waytide/local/items/$control_design_name")
 
-[ "$no_kind_item" = "$(control_no_kind_expected_text)" ] || fail "Tags an item without a kind as an idea" "found:" "$no_kind_item"
-[ "$other_tag_item" = "$(control_other_tag_expected_text)" ] || fail "Tags an item without a kind as an idea" "found:" "$other_tag_item"
-[ "$design_item" = "$(control_design_text)" ] || fail "Tags an item without a kind as an idea" "found:" "$design_item"
+[ "$no_kind_item" = "$(control_no_kind_expected_text)" ] || fail "Tags an item without a tag as an idea" "found:" "$no_kind_item"
+[ "$other_tag_item" = "$(control_other_tag_text)" ] || fail "Tags an item without a tag as an idea" "found:" "$other_tag_item"
+[ "$design_item" = "$(control_design_text)" ] || fail "Tags an item without a tag as an idea" "found:" "$design_item"
 
 echo "0 failed, 0 aborted"

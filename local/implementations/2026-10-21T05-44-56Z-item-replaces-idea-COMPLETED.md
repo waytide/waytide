@@ -102,6 +102,14 @@
 
 **A second outcome of the same test, through the hinges.** The actuation stood. Observation: each moved file, whole, against its expected text, chosen after the engineer asked to see the control records and what the test would observe. Controls: three literal records — one with no Tags line, one tagged only `[deferred]`, and one tagged `[design]`. Implementation: written directly. Naming: *Tags an item without a kind as an idea*, the engineer's own wording. The test failed before the implementation, passes after it, and fails again with the kind check removed.
 
+### Amended after completion — 2026-10-21
+
+**An already-tagged item is not given `[idea]`.** The engineer examined what the migration would do in the registered consuming projects, which found eleven `[work-item]` records in Employment and RCC that would have become `[idea] [work-item]`, and stated: when an item already has a tag, do not add `[idea]`. The items-convention now gives `[idea]` only to an item that carries no tag at all, and `migrate_items` adds a Tags line of `[idea]` only to a moved record that has none, leaving any record with a Tags line untouched. The test's `[deferred]` control is expected back unchanged, and its outcome is renamed *Tags an item without a tag as an idea*. The change was made on `master`, at the engineer's direction.
+
+**This repository's four items keep their tags as they are**, by the engineer's choice, including the two that carry `[idea]` beside another tag.
+
+**Two statements above are wrong, and are corrected here.** This record says both earlier migrations "still run on every install and refresh", and the agent said the same of this one. A refresh does not run `install.sh`, so no migration runs on a refresh. A refresh reports a project's `AGENTS.md` as stale when the bootstrap has changed, as it has, and its instruction — delete the Waytide section and run `install.sh agents-md` — is the step that runs the migrations.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
@@ -113,3 +121,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 2:39:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:40:05 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:50:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:01 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 4:09:40 PM PT
