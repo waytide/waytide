@@ -30,6 +30,11 @@
 | Participation | Attended | Tue Oct 20 2026 at 10:44:56 PM PT |
 | "Item" against "list item" | Item for the record; list item written in full | Tue Oct 20 2026 at 10:50:30 PM PT |
 | The directory | Rename to `items/`; the installer migrates it, and keeps the migration | Tue Oct 20 2026 at 10:50:30 PM PT |
+| Actuation | `(cd "$project" && sh "$installer" agents-md)` | Wed Oct 21 2026 at 1:04:27 PM PT |
+| Observation | The record is in items/, and ideas/ is gone | Wed Oct 21 2026 at 1:04:27 PM PT |
+| Controls | This repository's installer, in a bare directory | Wed Oct 21 2026 at 1:04:27 PM PT |
+| Implementation | Written directly | Wed Oct 21 2026 at 1:04:27 PM PT |
+| Naming | Moves ideas to items | Wed Oct 21 2026 at 1:04:27 PM PT |
 
 ## What actually happened
 
@@ -55,8 +60,17 @@
 
 **The installer's migration of a consuming project's `ideas/` is not yet written.** That is code, and Design By Efferent governs it.
 
+### The code half — 2026-10-21
+
+**`install.sh` gains `migrate_items`**, which renames a project's `waytide/local/ideas/` to `waytide/local/items/`. It follows `migrate_work_sessions` and `migrate_logs` in its semantics — a move only when the old directory is present and the new one absent, anything else reported and left alone, and a plain `mv` — and runs after them.
+
+**Its test is `test/automated/install.sh`**, designed through the hinges. Actuation: the installer run in a project with `agents-md`, which fetches nothing, so the test is automated and runs offline. Observation: the control record is in `items/`, and `ideas/` is gone. Controls: this repository's installer, run by absolute path in a temporary directory holding one literal record. Implementation: written directly. Naming: *Moves ideas to items*. Before the implementation the test failed with "not in items/"; after it, the suite passes.
+
+**At the naming hinge the agent offered three names that said the same thing**, against the rule settled in the obsolete-rules experiment's passage 42. The engineer did not understand the difference, because there was none. The hinge was put again with the one candidate and `Explain`.
+
 ---
 
 Authored by Scott Bellware on Tue Oct 20 2026 at 10:44:56 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 10:50:30 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:38:14 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 1:04:27 PM PT

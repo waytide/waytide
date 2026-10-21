@@ -372,6 +372,30 @@ migrate_logs() {
   done
 }
 
+# Rename a project's waytide/local/ideas/ to waytide/local/items/. The record kind was
+# called an idea until 2026-10-21, and the directory was named for it. A rule change names
+# the new directory but cannot move a project's own files, so the installer does it.
+#
+# The same narrow semantics as the migrations above: it moves only when the old directory
+# is present and the new one absent. Anything else is reported and left alone. Plain mv
+# rather than git mv, for records that were never committed.
+migrate_items() {
+  old_dir="waytide/local/ideas"
+  new_dir="waytide/local/items"
+
+  [ -d "$old_dir" ] || return 0
+
+  if [ -d "$new_dir" ]; then
+    echo "Both $old_dir/ and $new_dir/ are present — neither is touched."
+    echo "$old_dir/ is the old name. Move its records into $new_dir/ and remove it."
+    return 0
+  fi
+
+  mv "$old_dir" "$new_dir"
+  echo "Moved $old_dir/ to $new_dir/ — the record kind is now called an item."
+  echo "Commit the move."
+}
+
 # 0. Print the bootstrap section and stop. Nothing is installed and nothing is placed,
 #    so this is safe to run anywhere, including from the authoring source. It exists so
 #    refresh-packages.sh can compare a project's AGENTS.md against the current text
@@ -400,3 +424,4 @@ place_settings_json
 #    cannot reach.
 migrate_work_sessions
 migrate_logs
+migrate_items
