@@ -97,6 +97,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Passage 45 — the initialization-rule's body | Flatten, effect unchanged | Tue Oct 20 2026 at 9:27:32 PM PT |
 | Passage 46 — an entry's layout | Correct | Tue Oct 20 2026 at 9:36:02 PM PT |
 | Passage 47 — the experiment record in the journal | Correct | Tue Oct 20 2026 at 9:37:19 PM PT |
+| Passage 48 — the identity contract | Leave — not stale | Tue Oct 20 2026 at 9:41:29 PM PT |
 
 ## What actually happened
 
@@ -269,6 +270,8 @@ The survey section above is left as written; this corrects it.
 
 **47. journal-convention — corrected.** Its list of the agent's records named "the experiment record", which became the implementation record, covering features as well. It now names the implementation record.
 
+**48. identity-resolution-contract — left, as not stale.** The survey flagged "the binding contract every Waytide tool follows", since only the journal resolves a writer, and ".current-user — a gitignored file", since this repository has no `.gitignore`. Each states a requirement rather than reporting a state: on any tool that resolves a writer, and on a `.current-user` file wherever one is made. Neither is false.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:46:14 PM PT
@@ -329,3 +332,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
+Changed by Scott Bellware on Tue Oct 20 2026 at 9:41:29 PM PT
