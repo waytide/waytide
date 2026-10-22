@@ -733,6 +733,36 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The check found its material loss in a rule compressed with the two lessons applied.** Short sentences and kept small directives did not prevent it. The loss was a section heading in the source, "A set declared in a running session takes effect at the next one". Its body spoke only of deactivation, and the compression kept the body and lost the heading.
 
+### A method for compressing and checking the rest of the corpus unattended — proposed, 2026-10-22
+
+**The engineer asked whether the rest of the rules can be compressed and directive-checked unattended. They can**, except for the decisions that are the engineer's, and at a scale that takes multi-agent orchestration. 98 of the 106 rules remain.
+
+**The method, for each rule:**
+
+1. **Compress.** A fresh agent is given the source and the lessons so far. It keeps every directive, including small ones and ones stated only in a heading. It writes sentences of 25 words or fewer, averaging about 15, and does not pack directives with dashes or semicolons. It keeps quoted interface text and examples word for word. It flags a contradiction in the source rather than resolving it, and never edits the source.
+2. **List.** A second fresh agent, which never sees the compression, lists the source's directives, headings included.
+3. **Check.** Two fresh checkers judge each directive kept, less precise, or lost.
+4. **Resolve.** A resolver settles disagreements by reading both versions, and judges each less precise directive material or immaterial, with its reasoning recorded.
+5. **Repair.** For each lost or materially less precise directive, a repair agent adds the smallest clause that restores it, and only those directives are checked again. After two rounds that do not close the gap, the rule goes to the engineer.
+6. **Measure.** Compression, change, solubility, clarity score, and sentence lengths are recorded. A rule whose clarity falls below its source's is flagged.
+7. **Commit.** Each rule's Compressed section is written into its source, compiled, and tested, one rule per commit on the phase branch.
+
+**What returns to the engineer:** one review list with every contradiction found in a source, every rule whose repair did not close, and every materiality judgment the resolver marked as close. None of these is decided unattended.
+
+**Recording:** one results table in this record, with a row per rule. The word-for-word lists and verdicts go in one appendix file beside the record, which is already over 2,000 lines. There is one log entry per batch. **Batches** run one package at a time, smallest rules first.
+
+**Two things to settle first.** The experiment was started attended, and the rule holds that choice for its duration, so working this stretch unattended changes it partway through. That is the move the batch-size item describes, and it is the engineer's to make. The scale also needs the engineer's explicit opt-in to an orchestrated workflow.
+
+**The scale is not a technical blocker.** Its costs:
+
+- **Usage:** about 200,000 tokens a rule at five agents of 33,000 to 45,000 each, so about 20 million for the 98.
+- **A setting:** this session's guideline is under 10 agents per workflow, which the engineer can raise or remove.
+- **Time:** at most 20 agents at once, about four rules in parallel, so on the order of an hour or two.
+- **Review load**, probably the real cost. #11, #15, and #13 each produced an item for the engineer, which at that rate could be a few dozen across the corpus.
+- **Compounding**, since a flaw in the guidance would repeat across every rule before anyone saw it. Batches limit that to one package.
+
+**The agent recommends one batch of small rules first**, such as the `git` or `testing` package. That measures the cost per rule, the failure rate, and the size of the review list before committing to the rest. **What it still cannot show** is that sessions behave the same: the method checks text against text, with the same model throughout.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3849,3 +3879,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:16 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:06:22 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:00 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:19 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:19:41 PM PT
