@@ -222,7 +222,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - **The Waytide segment is one word, with no package count.** Presence is read from disk, by the same README test the notice uses. The detail is the status report's (see the status-report-format rule).
 - **`uncommitted changes`** appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored. It is words, not a mark like `master*`.
 - **`untracked files`** names the case whose remedy differs: add or ignore, not commit. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
-- **`unpushed commits`** carries no count and never reaches the network. It compares against the remote-tracking ref, so it reflects the last fetch. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
+- **`unpushed commits`** carries no count and never reaches the network. It compares against the remote-tracking ref, so it reflects the last fetch. A branch with no upstream reports nothing, since unpushed is relative to an upstream. An upstream missing by accident is a different fact, and is deliberately not folded into this segment.
 
 **The startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`. It prints the title, the copyright and license, the loading line, and the figure, read from the initialization-rule, once, on that command only. The agent does not print it.
 
@@ -318,3 +318,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT

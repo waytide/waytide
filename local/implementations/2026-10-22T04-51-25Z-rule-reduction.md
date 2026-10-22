@@ -517,6 +517,12 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **What it establishes.** The check found what the simulation could not. Directive 28 governs a change to the status-line script, not a session's behavior, and none of the simulation's scenarios came near it. The other six weakenings are losses of exactness that leave the behavior the same. Restoring directive 28 in the compressed version would meet the criterion, within what this check shows. The limits remain: one listing agent's reading of the source, the checkers' judgments, and the agent's judgment of what is material.
 
+### Directive 28 is restored in the compressed #15 — 2026-10-22
+
+**At the engineer's direction, the compressed #15 restores directive 28.** The `unpushed commits` line now ends: "A branch with no upstream reports nothing, since unpushed is relative to an upstream. An upstream missing by accident is a different fact, and is deliberately not folded into this segment."
+
+That was the one material weakening the directive check found. With it restored, no directive is lost and no remaining weakening is judged material, so **the compressed #15 has the same effect as its source, within what the check shows.** The limits recorded with the check stand. Its compression is now 0.70, from 27,559 characters to 8,222, and its change 0.91.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2987,3 +2993,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:01:34 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:02:14 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:04:07 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:05:24 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
