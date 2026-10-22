@@ -36,6 +36,8 @@ An answer to the engineer is a **list**. Prose is not forbidden, and it is not t
 
 **A numbered list asserts sequence.** So reasoning whose steps rest on each other is written `1.`, `2.`, `3.` — the dependence is carried by the form rather than escaping it.
 
+**A list whose entries the engineer may refer back to is numbered too, as handles rather than as a sequence.** That is a list of options, findings, candidates, or things to decide. The engineer can then name one by its number, *#2*, and the number says which entry is meant and nothing about its order.
+
 **This is why dependent reasoning is not an exception.** The problem was never prose against lists. It was one kind of list used where another was meant.
 
 ## After a list answer, the engineer is offered an expansion
@@ -61,7 +63,7 @@ For more detail than bullet points, ask for an expanded answer.
 
 **How to apply:** answer in a list. State facts in it. Remove any list item that describes a decision or explains an unasked-for reason. Remove any list item that characterizes the work, or reports what the agent did to be sure.
 
-Test each survivor by whether it could be false. Number the list where its list items depend on each other, and leave it unordered where they do not.
+Test each survivor by whether it could be false. Number the list where its list items depend on each other, or where the engineer may refer back to them, and leave it unordered otherwise.
 
 Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left something out, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the answer says all it has.
 
@@ -88,3 +90,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:35:39 PM PT
