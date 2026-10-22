@@ -619,6 +619,22 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the directive check runs on #2**, the last of the five compressed rules, by the method used for the other four, with the prompts' file paths changed to `check2`. The criterion is the same, and the compressed #2 departs from its source on purpose nowhere.
 
+### The directive check on #2 — results, 2026-10-22
+
+**Every directive is kept, so the compressed #2 has the same effect as its source, within what the check shows.** The two checkers agreed on all 8 directives: 8 kept, none weakened, none lost.
+
+**All five compressed rules now meet the directive check's criterion.** #2, #7, and #12 met it as first compressed. #15 met it after directive 28 was restored, and #11 after directives 14 and 17 were. The check found three directives lost or materially weakened among the 198 it listed across the five rules. The simulation found none of them.
+
+| # | rule | directives | kept | weakened | lost | restored |
+|---|---|---|---|---|---|---|
+| 2 | show-feature-test-output-after-implementation-hinge | 8 | 8 | 0 | 0 | none |
+| 7 | waytide-keeps-its-word-where-the-ste-word-means-something-else | 20 | 19 | 1 | 0 | none |
+| 12 | an-item-takes-a-log-entry | 19 | 18 | 1 | 0 | none |
+| 15 | announce-waytide-at-session-start | 76 | 69 | 7 | 0 | 28 |
+| 11 | items-convention | 75 | 49 | 23 | 3 | 14, 17 |
+
+**The losses grew with the rule's size.** The two largest rules account for all three, and the three smallest lost nothing. #11's count of weakened directives also includes its intended resolution.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3427,6 +3443,45 @@ The listing and checking prompts are those of the check on #15, with the file pa
     19. kept — "The STE dictionary decides first." together with "Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary and 53 writing rules."
     20. kept — "record what the STE dictionary says about it."
 
+## Appendix — the directive check on #2
+
+The listing and checking prompts are those of the check on #15, with the file paths changed to `check2`.
+
+### The 8 directives, as the listing agent gave them
+
+    1. Every time an implementation hinge is satisfied (the just-accepted implementation is written and the suite is run), show the test output for the current feature.
+    2. Show the current feature's test output without being asked.
+    3. Do not show only the single outcome's test at an implementation hinge.
+    4. At an implementation hinge, run and display the whole feature's tests, meaning every outcome built so far for the unit under development.
+    5. Run the feature's tests with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail are visible.
+    6. Show the feature's test output in the same turn as reporting the implementation.
+    7. After writing an accepted implementation, run the suite before running the current feature's test files.
+    8. The feature's full test output is required at every implementation hinge, in addition to the implementation and the just-satisfied test that the what-each-hinge-displays rule requires.
+
+### Checker A, word for word
+
+    1. kept: "After each implementation hinge, show the whole feature's test output" and "Once the accepted implementation is written and the suite has run"
+    2. kept: "unasked"
+    3. kept: "every outcome built so far for the unit, not only the new one"
+    4. kept: "run every test file of the current feature — every outcome built so far for the unit"
+    5. kept: "with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show"
+    6. kept: "Put the output in the turn that reports the implementation."
+    7. kept: "Once the accepted implementation is written and the suite has run, run every test file of the current feature"
+    8. kept: "The what-each-hinge-displays rule shows the implementation and the new outcome's test, and this rule adds the feature's full output." (Together with "After each implementation hinge, show the whole feature's test output", this makes the output required at every hinge.)
+
+### Checker B, word for word
+
+    All 8 directives are kept in the shorter version. None are weakened or lost.
+
+    1. kept — "After each implementation hinge, show the whole feature's test output" and "Once the accepted implementation is written and the suite has run"
+    2. kept — "unasked"
+    3. kept — "every outcome built so far for the unit, not only the new one"
+    4. kept — "run every test file of the current feature — every outcome built so far for the unit"
+    5. kept — "with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show"
+    6. kept — "Put the output in the turn that reports the implementation."
+    7. kept — "Once the accepted implementation is written and the suite has run, run every test file of the current feature"
+    8. kept — "The what-each-hinge-displays rule shows the implementation and the new outcome's test, and this rule adds the feature's full output." The obligation comes from the imperative heading, "After each implementation hinge, show the whole feature's test output", since this sentence itself only describes. "new outcome's test" stands for "just-satisfied test".
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3483,3 +3538,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:37:06 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:39:20 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:40:28 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:01:57 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:02:58 PM PT
