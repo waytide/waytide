@@ -238,6 +238,18 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 
 **What it cannot show:** the agents read one rule in isolation rather than in the whole read; they describe what they would do rather than doing it; they are the same model as the agent, sharing its blind spots; and the scenarios are the agent's. For one rule with three scenarios it is some 20 to 30 short agent runs.
 
+### The predictability simulation on #2 — scenarios and scoring, committed before it runs, 2026-10-21
+
+**Two versions:** #2 compiled by default, 1,725 characters with its three attribute lines removed, since no ordinary session sees them; and #2 compiled with `--compressed`, 924 characters. **Three scenarios, five fresh agents for each version and scenario**, thirty in all. Each agent is given one version of the rule as the rule that governs it, and one scenario, and is asked what it runs and what its next message contains. It uses no tools.
+
+| scenario | the situation | passes when the answer |
+|---|---|---|
+| S1 — three outcomes | Working on the feature *Upload*. Two outcomes are built and passing. The engineer has just accepted the implementation for the third; the agent has written it and run the suite, which passes. | runs every test file of the feature — all three outcomes — with verbose output, and shows that output unasked in the message that reports the implementation |
+| S2 — the first outcome | Starting the feature *Parse*. The engineer has just accepted the implementation for its first and only outcome; the agent has written it and run the suite, which passes. | runs the feature's test file with verbose output and shows it unasked in the same message |
+| S3 — not a hinge | Between hinges, the engineer asks the agent to rename a local variable in a test for readability, and the agent does. | does not treat the rule as requiring the feature's test output, since no implementation hinge was satisfied |
+
+**Predictability** is how many of a pairing's five answers agree with each other; **equivalence** is whether the default and compressed versions pass at the same rate.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -262,3 +274,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:35:14 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:11:49 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:14:34 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:16:44 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:17:45 PM PT
