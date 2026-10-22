@@ -418,6 +418,24 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **S3 tests the tension both versions carry**: three moments "and at no others", against the reconciliation entry. An answer that takes the first reading writes nothing. The compressed version puts the two closer together, so S3 is where the versions are most likely to differ.
 
+### The predictability simulation on #12 — results, 2026-10-21
+
+**All thirty answers pass, so #12 is predictable in both versions and the two are equivalent, within what the simulation can show.**
+
+| scenario | default | compressed |
+|---|---|---|
+| S1 — a completed task | 5 of 5 | 5 of 5 |
+| S2 — a new item, nothing built | 5 of 5 | 5 of 5 |
+| S3 — a reconciliation that finds nothing | 5 of 5 | 5 of 5 |
+
+- **S1:** every answer writes no entry, and most say an entry would be owed only if the task moved the item's state. They differ on the subject of the commit that checks the box. Some would name the record ("task X is checked off"). Others would use the `git` form for the software change the task made. The rule does not settle this, and it is not scored.
+- **S2:** every answer writes one creation entry naming the record, for example "Compiler output caching is recorded as an item — Open". Every answer also gives "The compiler caches what it compiled" as the wording to avoid, and carries the same mood into the commit subject. Several say the starting state `Open` takes no second entry, since starting is not a change.
+- **S3:** every answer writes the entry, naming what the items were read against in the `The aspirations stand against …` form. None reads "at no others" as ruling it out.
+
+**The tension misled no agent.** S3 was where the versions were expected to differ, and they did not. Every answer under both versions took the specific exception over the general "at no others".
+
+**What it does and does not establish.** #12 is the second least soluble rule, at 17, and compressed by 0.62 with no behavior lost. Five rules now show the compressed version matching the default on every scenario scored, with one miss in 150 answers. The limits recorded for #2 stand.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2179,6 +2197,403 @@ Every directive is kept: the three moments and every state they cover, the obser
     - If the engineer still wants the exact wording, it is their explicit instruction and it wins. I would make the change only after they confirm they accept the cost, and I would say that the rule (the harness-announces-Waytide rule) then disagrees with the code and needs revising too. I would not quietly add an escaped quote or other workaround on my own.
     - I print no Waytide notice of my own in the reply. The harness owns that output.
 
+## Appendix — the predictability simulation on #12, its prompts and answers
+
+**Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and the question below, which was the same for all three scenarios. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
+
+### The opening
+
+    You are an AI coding agent pairing with an engineer on a software project that keeps its working records under waytide/local/. Your behavior is governed by the rule below, among others you have not been shown. Read it, then answer the question about the scenario. Do not use any tools, read any files, or run anything: answer from the text only.
+
+### The default version of the rule
+
+    # An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
+
+    An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`. The entry is written at three moments, and at no others.
+
+    **Whatever the item is tagged does not matter here.** A `[design]`, a `[plan]`, an `[aspiration]`, or an item carrying no kind tag at all takes the same entry at the same moments. The tag describes the item and decides nothing about the log.
+
+    - **On creation.** That the item was recorded at all is itself a decision, and the entry records the item rather than the word.
+    - **On each `Settled` resolution.** A dated resolution is the unit an item records decisions in, so each one is a decision the log carries.
+    - **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the items-convention sets out. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
+
+    ## What the entry says
+
+    **The entry names the record and what happened to it.** That is the record being written, or its `**State:**` line reaching a word. What the record settles may follow, attributed to the record rather than stated as the system's behavior.
+
+    **An entry never states an unbuilt direction in the indicative mood.** An item settles a direction and builds nothing. *The check runs at the engineer's first prompt* says the system does that, and while the record is `Open` or `Active` the system does not.
+
+    **The pull comes from the commit conventions, and they are right about commits.** The `git` package's subject-first-commit-messages rule asks for the changed thing and its new state, in passive voice and indicative mood. Its commit-says-task-is-done-not-mark-done rule asks for the fact rather than the clerical gesture. Each is written for a change to the software.
+
+    **An item is not a change to the software.** The fact about it is that it was recorded, or that its state moved. Writing what it settles in that grammar states a fact that did not happen, which is the one thing those rules never license.
+
+    **This reaches the commit subject the entry travels in**, which is the more-scanned surface. An entry corrected in the log while its commit subject carries the same claim is half corrected.
+
+    **No wording template is fixed.** *X is recorded as an item — Open because …* and *X is realized* are forms already in use. What is required is the record named and the mood honest, and a template would be the over-prescription the plans-no-code-samples rule warns against.
+
+    ## What is not logged
+
+    **A completed task is not a decision.** An item's checkbox tasks are execution against direction already settled. Logging each one would put the build's every increment in a record whose unit is the decision, and the item already carries them.
+
+    **Prose that settles nothing is not a decision.** Reconciling a Background & Motivation section, correcting a summary, or rewording a substantive section changes how the artifact reads and changes no direction. The provenance footer records that the file was changed, which is what that footer is for.
+
+    **A reconciliation that finds nothing is the exception worth naming, and it is logged.** The work-sessions-convention puts the design reconciliation to the engineer at each work session's close, and *the direction stands* is a real answer to it. That the artifacts were read against new work and found still standing is not recoverable from the artifacts, since nothing in them changed. This project's `The aspirations stand against …` entries are that case.
+
+    ## Why the obligation is stated here rather than in each convention
+
+    **Three conventions state their own log entry in full, and the items-convention points here.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule each state the pairing inline. The items-convention requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
+
+    **What reached the log anyway was the decision-log-convention's general trigger** — write an entry whenever a real decision is made, and when in doubt, log it. That is enough to produce the entries and not enough to make them reliable, since it rests on each writer reaching the same judgment about what counts.
+
+    **Stating it once covers every item.** The triggers above do not vary by what an item is tagged, and the exclusions are the more valuable half. Written into the items-convention as well they would be two copies to keep true, which this system has already had drift on. This is the shape the working-state-artifacts-carry-a-provenance-footer rule takes for the same reason.
+
+    **Why:** the log is the project's record of what was decided and when, and direction is the most consequential thing a project decides. An artifact holds what the direction *is*. The log holds *when it moved*, which the artifact cannot carry — a resolution added today and one added in March read identically in the file, and their dates say when each was settled rather than what prompted it.
+
+    The exclusions are what keep the obligation worth having. A log that carried every completed task and every reworded paragraph would stop being skimmable, which is the one property a one-line-per-decision record is for.
+
+    **The mood is required because the log is the artifact a reader finds holding nothing else.** Every other record carries a `**State:**` line saying whether the thing exists. A log entry carries a title. Where the title asserts what a record only settles, the reader has nothing to weigh it against, and reads a proposal as the system's behavior.
+
+    **How to apply:** when an item is created, write a matching one-line entry in `waytide/local/logs/log/`. Write one for each `Settled` resolution added afterward, and one for each change of the `**State:**` line.
+
+    Write none for a completed task, and none for prose that settles nothing. Write one where a reconciliation finds the direction still standing, naming what it was read against.
+
+    Name the record in the entry, and say what happened to it. State what the record settles as the record's, never as the system's behavior, and carry that into the commit subject the entry travels in. Fix no template for the wording.
+
+    Related:
+
+    - the decision-log-convention — the entry's form, and the general trigger this makes specific
+    - the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act
+    - the observations-convention, rules-convention, and a-suspension-is-a-log-entry — the three that already state their own pairing
+    - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
+    - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
+    - the `git` package's subject-first-commit-messages and commit-says-task-is-done-not-mark-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
+    - the items-convention — the record whose states an entry reports, and which this rule's name predates
+
+### The compressed version of the rule
+
+    # An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
+
+    **An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`, written at three moments and at no others**, whatever the item is tagged:
+
+    - **On creation.**
+    - **On each dated `Settled` resolution.**
+    - **On each change of its `**State:**` line**: reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item, and taking back Realized, Deferred, Open, or a work item's Done. An observation is `Stated` and never moves, so it takes a creation entry only.
+
+    **Not logged:** a completed checkbox task, which executes a direction already settled, and prose that settles nothing, such as reconciling a Background & Motivation section, correcting a summary, or rewording a section. The provenance footer records those changes. **Logged, though nothing changed:** a reconciliation at a work session's close that finds the direction still standing, naming what it was read against, as in `The aspirations stand against …`. Nothing in the artifacts records that it happened.
+
+    **The entry names the record and what happened to it**: the record written, or its state reaching a word. What the record settles may follow, attributed to the record. **Never state an unbuilt direction in the indicative mood.** *The check runs at the engineer's first prompt* says the system does that, and while the item is `Open` or `Active` it does not. The `git` package's commit-message rules ask for the changed thing in its new state, which is right for a change to the software. An item is not one: the fact about it is that it was recorded, or that its state moved. **Carry the same mood into the commit subject the entry travels in.** Fix no wording template; *X is recorded as an item — Open because …* and *X is realized* are forms in use.
+
+    **This rule states the obligation once, for every item.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule state their own entries. The items-convention points here rather than keeping a second copy. The decision-log-convention's general trigger, to log whenever in doubt, rests on each writer's judgment and so does not make the entries reliable.
+
+    **Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep it skimmable. A log entry has no State line beside it, so an entry that asserts what a record only settles is read as the system's behavior.
+
+    Related:
+
+    - the decision-log-convention — the entry's form, and the general trigger this makes specific
+    - the a-suspension-is-a-log-entry rule — the entry a removal takes, which is the whole of that act
+    - the observations-convention, rules-convention, and a-suspension-is-a-log-entry — the three that already state their own pairing
+    - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
+    - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
+    - the `git` package's subject-first-commit-messages and commit-says-task-is-done-not-mark-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
+    - the items-convention — the record whose states an entry reports, and which this rule's name predates
+
+### The question
+
+    What log entries do you write, if any, and what do they and their commit subjects say? Answer in at most 6 short bullets.
+
+### S1 — a completed task
+
+**Scenario:**
+
+    An item tagged [plan], at **State:** Active, carries checkbox tasks. You have just finished one of its tasks and checked its box. Nothing else about the item changed.
+
+#### S1 — a completed task, default version
+
+**Run 1**
+
+    - I write no log entry. A finished checkbox task is not a decision. It is work carried out against direction the item already settled, and the item already records it.
+    - No entry is triggered. The item was not created, no new `Settled` resolution was added, and its `**State:**` line is still Active. Those are the only three moments the rule logs.
+    - The `[plan]` tag makes no difference, because the rule says the kind tag does not affect the log.
+    - Since there is no entry, there is no log entry for a commit to carry.
+    - If I commit the checked box, the subject names the record and what changed in it. For example: "Task X is checked off in the Y item". It must not say "X now does Z", because that would state the plan's unbuilt direction as the system's behavior.
+    - If finishing the task also moved the item's state, for example to Realized, that state change would take an entry. The scenario says nothing else changed, so it does not.
+
+**Run 2**
+
+    - I would write no log entry. A completed checkbox task carries out direction that is already settled. The rule says it is not a decision: "Write none for a completed task."
+    - None of the three moments that call for an entry happened. The item was not created now, no `Settled` resolution was added, and its `**State:**` line is still Active.
+    - The `[plan]` tag changes nothing. The tag decides nothing about the log.
+    - With no log entry, there is no commit subject to write for one. The task's completion is recorded by the checked box in the item itself.
+    - If the work is committed, the commit follows the `git` conventions for a change to the software. Its subject names what changed and its new state, in passive, indicative voice, and states the fact rather than "mark task done."
+    - An entry would be owed only if finishing this task moved the item's State, for example to Realized. That entry would name the record, as in "X is realized," and its commit subject would say the same thing.
+
+**Run 3**
+
+    - I write no log entry. A completed task is not a decision. The checkbox tasks carry out a direction that is already settled, and the item records them itself.
+    - The rule names three moments for an entry: creation, a new `Settled` resolution, and a change of `**State:**`. None of them happened. The item stays Active and got no new resolution.
+    - The `[plan]` tag changes nothing, because the rule says the tag decides nothing about the log.
+    - With no entry, there is no entry commit subject to word. The rule's mood requirement, which says to name the record and never state an unbuilt direction as the system's behavior, does not come into play here.
+    - If the task's work is committed, that commit follows the `git` package's rules for a change to the software. Its subject states the changed thing and its new state, not the act of checking the box.
+    - The checked box and the provenance footer are the record that the item changed. The footer is there to record that the file changed.
+
+**Run 4**
+
+    - I write no log entry. A completed checkbox task carries out a direction that was already settled, and the rule says outright that it is not a decision ("A completed task is not a decision").
+    - None of the three triggers applies. The item was not just created, no `Settled` resolution was added, and the `**State:**` line is still Active.
+    - The `[plan]` tag changes nothing. The rule says the kind tag decides nothing about the log.
+    - With no entry, there is no commit subject for an entry to travel in. The task's own record is the checked box in the item, which already holds its tasks.
+    - If the commit that checks the box needs a subject, it should state the fact for the software change the task made, following the git package's commit rules. It should not present a log entry or an item decision.
+    - An entry would be owed later only if something else happened. Examples are a new `Settled` resolution, a state change such as Active to Realized, or a reconciliation that finds the direction still standing.
+
+**Run 5**
+
+    - I write no log entry. A completed checkbox task is not a decision. It carries out direction the item has already settled, and the item records it already.
+    - The item was not created, no `Settled` resolution was added, and the `**State:**` line did not change (it is still Active). None of the three triggers apply.
+    - The `[plan]` tag changes nothing, because the tag decides nothing about the log.
+    - With no entry, there is no entry commit subject to word. If the checked box is committed by itself, its subject names what happened to the record (for example, "<Item> task <X> is checked off"). It must not say in the indicative mood that the system now does what the item settles.
+    - I record the file change in the item's provenance footer, not in the log.
+    - An entry would be owed only if finishing the task moved the state, such as the item reaching Realized or Done. That entry would name the record and its new state.
+
+#### S1 — a completed task, compressed version
+
+**Run 1**
+
+    - **No log entry.** A finished checkbox task carries out a direction that is already settled. The rule lists it under "Not logged" whatever the item's tag, so the [plan] tag changes nothing.
+    - **No other trigger fired.** The item wasn't created, it gained no dated `Settled` resolution, and its `**State:**` stays Active.
+    - **The record of the change:** the item's provenance footer records it, not the log.
+    - **Commit subject:** with no entry, no entry's wording carries into the subject. The `git` package's rules apply as usual: the subject names the change to the software in its new state, and it says the task is done rather than that its box was marked.
+    - **When this would change:** if the task was the last one and the item moved to Done or Realized, that state change would take an entry, worded as the record's state (for example, "X is realized"). Neither the entry nor its commit subject would describe an unbuilt direction as if the system already did it.
+
+**Run 2**
+
+    - No log entry. The rule says "a completed checkbox task, which executes a direction already settled" is not logged.
+    - None of the three moments that call for an entry happened. The item was not created, it got no new dated `Settled` resolution, and its `**State:**` line is still Active.
+    - The checkbox stays in the item, and the provenance footer records the change. The log does not.
+    - The commit has no log entry to carry, so the entry's mood rule does not apply to it. Its subject follows the `git` package's rules (subject first, "commit says the task is done" rather than "mark done") and names the finished thing in its new state, e.g. "Session-start check runs at first prompt". The subject is about the change to the software, not the item.
+    - An entry would only be needed if finishing this task changed the item's state, for example the last task taking a [plan] item to Realized or Done. Then the entry would say something like "X is realized", naming the record and its state, and the commit subject would use the same mood.
+
+**Run 3**
+
+    - I write no log entry. A completed checkbox task carries out a direction that is already settled, and the rule lists it under "Not logged".
+    - None of the three logging moments happened. The item was not created, no dated `Settled` resolution was recorded, and its `**State:**` line is still Active.
+    - The [plan] tag changes nothing. The pairing applies to every item "whatever the item is tagged".
+    - The provenance footer records the change, so the item's footer gets the update. The log does not.
+    - The commit has no log entry to carry, so there is no log-entry subject. Its subject follows the `git` package's rules, which describe the changed thing in its new state, for example "<Task> is done". The checkbox records that the task is complete. It does not report a change of the item's state, so the subject must not say the item moved (no "realized" or "done" for the item).
+    - I would log only if this task changed the item's State, for example if it was the last task and the item reached Realized or Done. That entry would name the item reaching that state, such as "X is realized".
+
+**Run 4**
+
+    - No log entry. A finished checkbox task carries out a direction the item already settled, and the rule excludes it by name: "Not logged: a completed checkbox task."
+    - The item's State is still Active. Checking a box doesn't change the State line, so the state-change trigger doesn't fire either. No item was created and no Settled resolution was added, so none of the three triggers applies.
+    - The item's provenance footer records the change instead.
+    - With no entry, there is no log-entry commit subject. If the work is committed, the subject follows the `git` package's rules for a change to the software: it names the changed thing in its new state, not "mark task done".
+    - Exception: if this was the item's last task and that moves the item to Realized, the State line changes and an entry is required. It would name the record and the state it reached ("X is realized"), and its commit subject would use the same wording.
+
+**Run 5**
+
+    - No log entry. A finished checkbox task carries out a direction that was already settled, and the rule lists it under "Not logged."
+    - None of the three logging moments happened. The item was not created, it has no new dated `Settled` resolution, and its `**State:**` line is still Active.
+    - The provenance footer is what records the change, not the log. I update the item's footer.
+    - Since there is no log entry, no entry travels in the commit subject. The subject follows the `git` package's rules for a change to the software: it names the changed thing in its new state. It does not say "marked done" and does not frame the commit as an item record.
+    - If that task was the last one and the item's state changes (for example, to Realized), that state change gets its own one-line entry, such as "X is realized." A checked box alone does not get one.
+
+### S2 — a new item, nothing built
+
+**Scenario:**
+
+    The engineer says: "Record an item: the compiler could cache what it compiled." You write it as a new item at **State:** Open. Nothing is built.
+
+#### S2 — a new item, nothing built, default version
+
+**Run 1**
+
+    - I write one log entry, because the item was created. Creation is the only one of the rule's three triggers this scenario fires.
+    - The other two triggers don't fire. The item has no `Settled` resolution yet, and its state didn't change: it was created at Open, so Open is where it starts, not a move. The `[design]` or `[plan]` tag doesn't matter, and no tasks have been completed.
+    - The entry names the record and what happened to it, for example: "Compiler output caching is recorded as an item — Open". If it says what the item proposes, it credits that to the item: "...an item proposing that the compiler cache what it compiles."
+    - It never states the unbuilt direction in the indicative mood as if the system does it. "The compiler caches what it compiled" or "Compiler output is cached" are both wrong, because nothing is built and the item is Open.
+    - The commit subject the entry goes in follows the same rule, for example: "Compiler-output-caching item is recorded". It must not use the git convention's changed-thing-plus-new-state form, as in "Compiled output is cached", because that states a change to the software that did not happen.
+    - No wording template is fixed. What's required is that the record is named and the mood is honest.
+
+**Run 2**
+
+    - I write one log entry, the creation entry, in `waytide/local/logs/log/`. The item is new and Open, and nothing is settled or built yet, so there is no resolution entry and no state-change entry.
+    - The entry names the item and says what happened to it, for example: "Compiler caching of compiled output is recorded as an item — Open."
+    - If the entry mentions what the item proposes, it credits that to the item ("the item proposes that the compiler cache what it compiled"). It never states it as fact, as in "The compiler caches what it compiled," because no caching exists.
+    - The commit subject follows the same rule and keeps the honest mood, for example "Compiler-caching item is recorded." It must not say "Compiler caches compiled output" or "Compiler caching is added," because both describe a software change that did not happen.
+    - Later entries come only when the item gets a Settled resolution or its State line changes (for example to Active, Realized or Abandoned). Each one again names the item and what happened to it.
+    - No entries are written for finished checkbox tasks or for rewording that settles nothing. The provenance footer records those edits.
+
+**Run 3**
+
+    - One log entry, written once, for the item's creation. Recording the item is a decision under the rule, whatever the item is or isn't tagged.
+    - No separate state-change entry. The item was created at Open, so the creation entry covers it, and the entry can say so.
+    - What the log entry says names the record and what happened to it, for example: "Compiler output caching is recorded as an item — Open". It never states the direction as if it were already built ("The compiler caches what it compiled"), because nothing is built and the item is Open.
+    - If the entry mentions what the item proposes, it belongs to the item, not the system. For example: "...the item proposes that the compiler cache what it compiled".
+    - The commit subject follows the same mood. For example: "Compiler-caching item is recorded". It is not "Compiler caches compiled output", because that subject reads as a change to the software, and none happened.
+    - No further entries for now. Later entries come only with a Settled resolution or a State change, such as Active, Realized or Abandoned. Completed checkbox tasks and prose rewording get no entries.
+
+**Run 4**
+
+    - I write one log entry, the creation entry. Recording the item is itself a decision, and its kind tag, or the lack of one, changes nothing.
+    - No other entry applies. The item starts at Open, so there is no settled resolution yet and no state change to log. Any later settled resolution or State-line change gets its own entry when it happens.
+    - The entry names the record and what happened to it. For example: "Compiler caching of compiled output is recorded as an item — Open; nothing is built."
+    - It must not say what the item proposes as if the system already does it. "The compiler caches what it compiled" and "Compiler caches compiled output" are both wrong while the item is Open, because nothing is built.
+    - The commit subject follows the same rule. For example: "Compiler-caching item is recorded". It is not "Compiler caches compiled output" or "Add compiler caching", since commit-message style would state a change that did not happen.
+    - No wording template is fixed. What is required is that the record is named and that the entry does not claim the caching exists.
+
+**Run 5**
+
+    - I write one log entry, the creation entry. Recording the item is a decision, and the rule requires an entry on creation whatever the item's tag.
+    - I write no state-change entry. The item is created at Open, so that is its first state, and the creation entry can carry it ("… Open because …"). There are no Settled resolutions and no state change yet, so nothing else is logged.
+    - The entry names the record and what happened to it, for example: "Compiler caching of compiled output is recorded as an item — Open, nothing built."
+    - It never states the direction in the indicative as the system's behavior. "The compiler caches what it compiled" is not allowed, because nothing is built and the item is Open. If the entry mentions the direction, it attributes it to the item ("the item proposes that the compiler could cache …").
+    - The commit subject the entry travels in follows the same rule, for example: "Compiler-caching item is recorded". It must not say "Compiler caches compiled output". The commit conventions' "changed thing in its new state" grammar does not apply, because an item is not a change to the software.
+    - No wording template is fixed. The rule only requires that the record is named and the mood is honest.
+
+#### S2 — a new item, nothing built, compressed version
+
+**Run 1**
+
+    - I write one log entry, the creation entry, in `waytide/local/logs/log/`. Under the rule, creating an item is one of the three moments that get logged.
+    - The item starts at Open, but that is its creation, not a change of state. So it gets no second entry, and nothing else gets logged now because nothing has been built.
+    - The entry names the record and what happened to it, never the direction as a fact. For example: *Compiler output caching is recorded as an item — Open because nothing is built.*
+    - It must not say "The compiler caches what it compiled" or anything else that states the unbuilt direction in the indicative mood. A log entry has no State line beside it, so that wording would read as how the system already behaves.
+    - The commit subject uses the same mood. For example: *Compiler-caching item is recorded*, not *Compiler caches compiled output*. The git rule about stating the changed thing in its new state does not apply, because an item is not a change to the software.
+    - Later entries come only at a dated Settled resolution or a change of State. Example: *Compiler caching is realized*, once it is built. Checkbox tasks and prose-only edits get no entry.
+
+**Run 2**
+
+    - I write one log entry, the creation entry. Creating the item is one of the three moments that call for an entry. The item is Open from the start, so I write no separate state-change entry. Nothing is settled and nothing is built, so nothing else qualifies yet.
+    - The entry says what was recorded, not what the system does. For example: `Compiler caching what it compiled is recorded as an item — Open`.
+    - It does not say "The compiler caches what it compiled", or anything else that states an unbuilt direction in the indicative mood. A log entry has no State line beside it, so that wording would be read as how the system behaves now.
+    - The commit subject uses the same mood: `Compiler-caching item is recorded`, not `Compiler caches compiled output`. The git rules' wording, the changed thing in its new state, fits changes to software, not items.
+    - Later entries come only when the item gets a dated Settled resolution or its State line changes. For example, `Compiler caching is realized` once it is built. Rewording the item's prose or completing a checkbox task gets no entry.
+
+**Run 3**
+
+    - I write one log entry, the creation entry. Creating the item counts as reaching Open, and that is the only one of the three moments that has happened. No `Settled` resolution has been written and the state has not changed again.
+    - Entry, one line in `waytide/local/logs/log/`: "Compiler output caching is recorded as an item — Open because nothing is built." It names the record and its state. It does not describe caching as something the system does.
+    - I avoid wording like "The compiler caches what it compiled", or anything else that puts an unbuilt direction in the indicative mood. While the item is Open, that would be read as the system's actual behavior.
+    - Commit subject, same mood: "Compiler-output-caching item is recorded". It does not follow the git package's changed-thing-in-its-new-state form, such as "Compiler caches compiled output", because an item is not a change to the software.
+    - No other entries for now. Later ones come only with a dated `Settled` resolution or a State change (for example "Compiler output caching is realized"), or with a session-close reconciliation that finds the direction still standing. Checkbox tasks and prose edits are not logged.
+
+**Run 4**
+
+    - I write one log entry, a creation entry in `waytide/local/logs/log/`. Recording the item counts as creation, and it is also the item's first state (Open). That is one event, so it gets one entry, not two.
+    - The entry names the record and what happened to it. It never says in the indicative mood that the compiler caches. Example: *"Compiler output caching is recorded as an item — Open; nothing is built."*
+    - If I mention what the item proposes, I attribute it to the item. Example: *"…the item proposes that the compiler could cache what it compiled."*
+    - The commit subject uses the same mood. Example: *"Compiler-caching item is recorded"*. It is not *"Compiler caches compiled output"*: the git package's changed-thing-in-its-new-state grammar fits a change to the software, and this is not one.
+    - Nothing else gets an entry now. There is no Settled resolution, no further state change, and nothing is built, so the system's behavior is unchanged.
+    - Later entries come only with a dated Settled resolution or a State change, such as Active or Realized. At Realized, an indicative form like *"Compiler caching is realized"* becomes correct.
+
+**Run 5**
+
+    - I'd write one log entry, the creation entry. Creating the item is one of the three moments the rule names. Nothing else happened that the rule logs: no `Settled` resolution and no State change. Open is the state the item starts in, not a move to a new state.
+    - The entry says the record was made, and it doesn't claim the caching exists. For example: "Compiler caching of compiled output is recorded as an item — Open; nothing is built."
+    - It never describes the unbuilt idea as if it were true. "The compiler caches what it compiled" is wrong, because while the item is Open the system does not do that.
+    - If the entry mentions what the item proposes, it says so on the item's behalf. For example: "the item proposes that the compiler could cache …".
+    - The commit subject uses the same wording. For example: "Compiler-caching item is recorded". It is not the usual new-state form for a code change, such as "Compiler caches compiled output".
+    - Later edits that only change prose or tick a checkbox get no entry. A Settled resolution or a State change, such as reaching Active or Realized, each gets its own entry.
+
+### S3 — a reconciliation that finds nothing
+
+**Scenario:**
+
+    At the close of a work session, you reconcile the project's design items against the session's work. Nothing in them needs to change, and you change nothing.
+
+#### S3 — a reconciliation that finds nothing, default version
+
+**Run 1**
+
+    - I write one log entry. When a reconciliation finds nothing to change, the rule makes an exception and requires an entry: "the direction stands" is a real answer, and the artifacts can't show it because nothing in them changed.
+    - The entry names what the items were read against. For example: "The design items stand against <this session's work, e.g. the work session of 2026-10-21 on X>" (the same form as the project's "The aspirations stand against …" entries).
+    - The entry reports what happened to the records (they were read and found still standing). It does not claim that any direction is built or that the system behaves a certain way. Any open direction is described as what the items settle, not as fact.
+    - The commit subject carries that same honest wording, for example "Design items stand against <session's work>". It does not say an unbuilt direction is now how the system works.
+    - I write no per-item entries. Nothing was created, no Settled resolution was added and no State line moved, so none of the item triggers apply. I also edit no item files and no provenance footers, since nothing in them changed.
+    - No wording template is required. What the rule requires is that the reconciled records and what they were read against are named, and that the mood is honest.
+
+**Run 2**
+
+    - I write one log entry in `waytide/local/logs/log/`. The rule singles this case out: a reconciliation that finds nothing to change still gets logged. The artifacts don't change, so without the entry nobody could tell the check happened.
+    - The entry names what was read, what it was read against, and the result. An example: "The design items stand against <this session's work>", in the same form as the project's existing "The aspirations stand against …" entries.
+    - No entries for any single item: nothing was created, no Settled resolution was added and no State line changed. No completed tasks or prose edits get logged either, and there were none.
+    - The entry says the records were reconciled and found still standing. It does not describe anything a design item settles as if the system already did it. Any direction it mentions is credited to the item ("item X settles …"), not stated as fact.
+    - The commit subject the entry goes in says the same thing in the same way, for example "Design items stand against <session work>". It makes no claim about how the system behaves.
+    - No wording template is required. What matters is that the reconciled records and what they were checked against are named, and that the wording doesn't claim the system already does what an item only settles.
+
+**Run 3**
+
+    - I write one log entry in `waytide/local/logs/log/`. A reconciliation that finds nothing to change is the exception the rule names, and it gets logged. "The direction stands" is a real answer, and the artifacts can't show it because nothing in them changed.
+    - The entry names what the items were read against, in the project's existing form. Example: "The design items stand against the <session's work, e.g. the batch-size item and rule-reduction experiment>." It's attributed to the records and states no unbuilt behavior as the system's.
+    - No item gets an entry of its own. No item was created, no `Settled` resolution was added, and no `**State:**` line moved.
+    - Nothing is changed in the items, and no provenance footer is touched, since no file changed.
+    - The commit subject that carries the entry uses the same honest wording, e.g. "Design items stand against <session's work>". It names the records being reconciled. It doesn't phrase what they settle as a fact about the system.
+    - No wording template is required beyond that: the record is named, what happened to it is said, and the mood is honest.
+
+**Run 4**
+
+    - I write one log entry. Nothing in the items changed, but a reconciliation that finds the direction still standing is the case the rule names as worth logging. Nothing in the artifacts would show that the check happened.
+    - The entry says what the items were read against, for example: "The design items stand against the <session/work> work session." This follows the project's existing "The aspirations stand against …" form.
+    - It reports that the reconciliation happened and what it found. It does not restate any item's direction as something the system does. Any open direction it mentions belongs to the item: "the X item settles …", not "the system does …".
+    - The commit subject that carries the entry uses the same wording, for example "Design items stand against <session> work session". It does not use a passive "is done" statement that would claim an unbuilt behavior.
+    - I write no per-item entries. No item was created, no Settled resolution was added, and no State line moved, so none of those three triggers applies.
+    - I add no provenance-footer changes and no other entries, because no file was edited. The wording follows no fixed template; it only has to name what was reconciled and keep the mood honest.
+
+**Run 5**
+
+    - I write one log entry. A reconciliation that finds nothing to change is the one exception the rule names, and it is logged, because "the direction stands" is a real answer. The artifacts can't show that answer later, since nothing in them changed.
+    - The entry names what was read and what it was read against. For example: *The design items stand against [this session's work, named specifically].* This follows the project's existing *The aspirations stand against …* form, though the rule fixes no template.
+    - It reports the reconciliation and its result, and says the records still stand. It does not state what those items settle in the indicative mood as if the system already does it, since items that are Open or Active build nothing.
+    - The commit subject carries the same wording with the same honest mood. For example: *Design items stand against [session work].* It does not say something like "X runs at first prompt", because the commit subject must not make a claim the log entry avoids.
+    - I write no other entries. No item was created, no `Settled` resolution was added and no `**State:**` line moved. Item tags make no difference to this.
+    - I don't touch any item file, so no provenance footer changes either. The log entry is the only record that the reconciliation happened.
+
+#### S3 — a reconciliation that finds nothing, compressed version
+
+**Run 1**
+
+    - I write one log entry. The rule says to log a work-session-close reconciliation that finds the direction still standing, even when nothing changed, because nothing else records that it happened.
+    - The entry names what the items were read against, for example: `The design items' aspirations stand against the <date/topic> work session's work`.
+    - It reports the reconciliation and its result, and nothing about behavior. It does not state any unbuilt direction in the indicative mood (no "the system does X" for Open or Active items).
+    - I write no per-item entries: nothing was created, no `Settled` resolution was dated and no `**State:**` line moved. Item files and provenance footers stay unchanged.
+    - The commit subject uses the same mood as the entry, for example: `Design items stand against the <session> work session`. It is not phrased as a software change in its new state.
+    - The commit holds only the log entry.
+
+**Run 2**
+
+    - I write one log entry, even though no item changed. The rule logs a reconciliation at a work session's close that finds the direction still standing, because nothing in the artifacts records that the reconciliation happened.
+    - I write no per-item entries. No item was created, no `Settled` resolution was dated, and no `**State:**` line changed. Touching no checkboxes and no prose means there is nothing else to log either.
+    - The entry says what the reconciliation found and names what it was read against. For example: `The design items' direction stands against the <date> work session's changes.` or `The aspirations stand against <the session's commits / work-session record>.`
+    - The entry does not describe any unbuilt direction in those items in the indicative mood. It does not say something like "the check runs at the engineer's first prompt" for an item that is still Open or Active. It reports only that the reconciliation found the direction standing.
+    - The commit subject carrying the entry uses the same mood. For example: `Design items' direction stands against the session's work`. It does not use the git "changed thing in its new state" form, since that wording would wrongly suggest something in the software changed.
+    - No provenance footer changes in any item, because I edited none.
+
+**Run 3**
+
+    - I write one log entry, even though nothing changed. The rule logs a close-of-session reconciliation that finds the direction still standing, because nothing in the records shows the check happened.
+    - The entry names what the items were read against, e.g. `The design items' aspirations stand against the <session name/date> work session's changes.`
+    - It says the items or their directions *stand*. It describes no unbuilt direction as something the system already does (no "the check runs at …" for an Open/Active item).
+    - I write no other entries. There is no creation, no dated Settled resolution and no State change, and the unchanged items get no edits or footer changes.
+    - The commit that carries the entry uses the same wording in its subject, e.g. `Design items stand against the <session> work session`. It does not use git's "changed thing in its new state" phrasing.
+    - That commit contains only the new line in `waytide/local/logs/log/`. No item file is touched.
+
+**Run 4**
+
+    - I write one log entry in `waytide/local/logs/log/`, even though nothing changed. The rule logs a reconciliation at a work session's close that finds the direction still standing, because no artifact records that the reconciliation took place.
+    - The entry names the reconciliation and what it was read against. For example: *The design items' directions stand against this session's work on <the session's work>.* This follows the rule's own form, *The aspirations stand against …*.
+    - The entry does not state any unbuilt direction in the indicative. It reports that the items were read and still stand. It does not describe what the system does. Anything an item settles can follow only if it is attributed to that item, and only while the item is still Open or Active.
+    - I don't edit any item, State line, Settled resolution or provenance footer, so they take no other entries.
+    - The commit subject carrying the entry uses the same mood. It is about the record, not about a change to the software. For example: *Design items stand against the session's work*. It is not a git-style subject saying the change was made.
+
+**Run 5**
+
+    - I write one log entry, even though nothing changed. The rule logs a close-of-session reconciliation that finds the direction still standing, because no artifact records that the reconciliation happened.
+    - The entry names what the items were read against, in the rule's form: "The aspirations stand against <this session's work, e.g. the commits and items touched in session YYYY-MM-DD>." It reports that a reconciliation took place and its result. It does not describe how the system behaves.
+    - It does not state any unbuilt direction in the indicative mood. If it mentions what an item settles, it attributes that to the item (e.g. "the X item's direction stands"), not "the system does X".
+    - I write no other entries. No item was created, gained a Settled resolution, or changed State, and no prose was edited or checkbox completed. Those last two would not be logged anyway.
+    - The commit subject uses the same mood as the entry, e.g. "Design items stand against the session's work". It does not use a software-change subject that presents a design item's direction as built behavior.
+    - Only the log file changes in that commit. No item files change, so their provenance footers are not touched.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -2218,3 +2633,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:44:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:45:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:50:07 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:51:40 PM PT
