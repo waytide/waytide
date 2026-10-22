@@ -763,6 +763,27 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The agent recommends one batch of small rules first**, such as the `git` or `testing` package. That measures the cost per rule, the failure rate, and the size of the review list before committing to the rest. **What it still cannot show** is that sessions behave the same: the method checks text against text, with the same model throughout.
 
+### The `git` package is recommended as the first unattended batch — 2026-10-22
+
+**The engineer asked which package to start with. The agent recommends `git`**, the smallest pilot that still measures something.
+
+| package | rules | average size | already compressed |
+|---|---|---|---|
+| git | 7 | 2,379 | 0 |
+| versioning | 2 | 3,472 | 0 |
+| testing | 20 | 2,812 | 0 |
+| language | 14 | 3,283 | 1 |
+| design-by-efferent | 15 | 4,037 | 1 |
+| journal | 10 | 4,355 | 0 |
+| foundation | 38 | 5,572 | 5 |
+
+1. **`git` has the smallest rules on average, and seven of them**, enough for a first measure of the failure rate and the review list. At about 200,000 tokens a rule, the batch is about 1.5 million.
+2. **`versioning` has two rules**, too few to measure a failure rate.
+3. **`testing` is the natural second batch**, with rules nearly as small and 20 of them, which tests the pilot's pass rate at scale.
+4. **`foundation` goes last.** Its rules are the largest and hold the system's core conventions. Losses grew with a rule's size, and every material loss the check has found so far is in a foundation rule.
+
+**Whether the user will run out of tokens could not be answered from the session**, which cannot see the plan's limits or its usage. The engineer can check with `/usage` and `/cost`. The pilot's cost against those, read before and after, gives the real cost per rule.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3880,3 +3901,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 2:06:22 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:00 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:19 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:19:41 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:22:11 PM PT
