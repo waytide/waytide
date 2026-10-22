@@ -293,6 +293,24 @@ Every directive is kept: the file shape and log entry, the kind tags, `[idea]` f
 
 **S3 tests the contradiction the source carries, and was sharpened before any agent ran**: as first written, the engineer decided to drop the item, which makes any item `Abandoned` and so tested nothing. The source says a tag decides nothing, and its work-item section says `[work-item]` decides which states an item takes. An answer that takes the first reading may let a work item lapse. The compressed version resolves the contradiction, so S3 is where the two versions are most likely to differ.
 
+### The predictability simulation on #11 — results, 2026-10-21
+
+**Twenty-nine of the thirty answers pass. The one miss is a file-name separator that neither version states, so the two versions are equivalent, within what the simulation can show.**
+
+| scenario | default | compressed |
+|---|---|---|
+| S1 — a new thought | 5 of 5 | 4 of 5 |
+| S2 — a work item finished | 5 of 5 | 5 of 5 |
+| S3 — a work item that lost its relevance | 5 of 5 | 5 of 5 |
+
+- **S1:** all ten answers write one item with `**State:** Open` and `**Tags:** [idea]`, plus a log entry. Nine of the file names end `-OPEN`. One compressed answer ends `.OPEN`, which fails the criterion as written. Neither version gives the separator. Both defer it to the a-record-ends-with-its-state-in-upper-case rule, which the agents were not shown, so the miss does not come from compression. The answers also differ on the prefix: most write `T23-40-00Z`, but one default answer writes `T23:40:00Z` and another `T23:40Z`. Each says the exact form belongs to the file-names rule.
+- **S2:** all ten answers set `Done`, rename to `-DONE`, leave the tags alone, and write a log entry. Several say outright that a work item does not take `Realized`. Under both versions, the answers differ on the provenance footer, which some would update and some would leave. One would add a dated note that the meeting is booked, and two more would add one if it were useful.
+- **S3:** none of the ten answers sets `Lapsed`. Eight conclude `Abandoned`, rename to `-ABANDONED`, and write a log entry, treating the engineer's request to close the item as the decision that `Abandoned` needs. Five of the eight would tell the engineer about the mismatch. The other two, one from each version, ask the engineer to confirm before changing anything, which the scoring allows.
+
+**The contradiction misled no agent.** S3 was where the versions were expected to differ, and they did not. Every default answer read `[work-item]` as deciding the states, despite the source saying a tag decides nothing. The agents took the specific statement over the general one. Resolving the contradiction made the compressed text correct, but did not change behavior on this scenario.
+
+**What it does and does not establish.** #11 is the least soluble rule, at 11, and compressed by 0.61, more than #2's 0.54. Its behavior is kept: the compressed answers matched the default answers on everything the scoring tests. The simulation measures predictability and equivalence, not how much a rule compresses. Its bearing on forecast item 8 is only that the larger compression of the less soluble rule cost no behavior. The limits recorded for #2 stand: one rule in isolation, answers rather than actions, the same model as the agent, and the agent's own scenarios.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
