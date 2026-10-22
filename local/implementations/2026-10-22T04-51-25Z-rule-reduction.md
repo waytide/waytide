@@ -601,7 +601,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The one weakened directive, agreed:** 12, not to write an item in the commit-message grammar. The compressed version says why that grammar does not fit an item, and forbids it only through the mood. That is immaterial: the same S2 answers each rejected the commit grammar for a new item.
 
-**#12 is the first of the three checked rules to meet the criterion without a restoration.** Its compression was the agent's tightest relative to its directives, with 19 of them in 2,429 characters, and the simulation tested three of the four places where it differs from the source.
+**#12 is the first of the three checked rules to meet the criterion without a restoration.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
