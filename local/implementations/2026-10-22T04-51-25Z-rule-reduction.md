@@ -607,6 +607,14 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the directive check runs on #7**, by the method used for #15, #11, and #12, with the prompts' file paths changed to `check7`. The criterion is the same, and the compressed #7 departs from its source on purpose nowhere.
 
+### The directive check on #7 — results, 2026-10-22
+
+**No directive is lost, and the one weakened is judged immaterial, so the compressed #7 has the same effect as its source, within what the check shows.** The two checkers agreed on all 20 directives: 19 kept, 1 weakened, none lost.
+
+**The weakened directive is 18, that a writer must not choose a worse word out of deference to the STE dictionary.** The checkers found it only in the compressed version's Why, stated as an effect rather than a prohibition. The source states it the same way: "keeps a writer from choosing a worse word out of deference" is a sentence in the source's own Why paragraph. The listing agent turned a reason into a directive. In both versions the deference is to the dictionary, which is that paragraph's subject. Nothing is lost relative to the source.
+
+**#7 is the second checked rule to meet the criterion without a restoration**, after #12. It compressed least of the five, by 0.27, which left the least room to drop anything.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3340,6 +3348,81 @@ The listing and checking prompts are those of the check on #15, with the file pa
     18. kept: "naming what it was read against, as in `The aspirations stand against …`"
     19. kept: "The items-convention points here rather than keeping a second copy." This is stated as a fact rather than as a prohibition.
 
+## Appendix — the directive check on #7
+
+The listing and checking prompts are those of the check on #15, with the file paths changed to `check7`.
+
+### The 20 directives, as the listing agent gave them
+
+    1. Waytide's prose must be written in ASD-STE100 Simplified Technical English.
+    2. ETE (Eventide Technical English) must apply the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the order this rule states.
+    3. `Say it in ETE` is the instruction to write in ETE.
+    4. `Say it in STE` asks for the raw standard, and it forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved.
+    5. The STE dictionary decides first.
+    6. Waytide keeps its own word where the STE dictionary's approved word means something else.
+    7. ETE may add five categories of its own, against STE Rule 1.5 and STE Rule 1.12 (as the ete-declares-its-own-categories rule states).
+    8. A reserved word may take the meaning its entry gives, against STE Rule 1.3 (as the ete-fixes-the-meaning-of-a-word-in-its-category rule states).
+    9. Ordinary words must be left alone, against STE Rule 1.1 (as the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule states).
+    10. Where the STE dictionary marks a word as not approved and its approved alternative carries the meaning, use the alternative (for example, `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`).
+    11. A Waytide word kept where the approved word means something else must be reserved as a technical noun or a technical verb, in a category the entry names.
+    12. A Waytide word kept where the approved word means something else must be recorded in the package's `vocabulary.md`.
+    13. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+    14. A word the STE dictionary does not list is not a defect, and it may be used as a technical noun or a technical verb (STE Rule 1.1).
+    15. `conform` is reserved, and it is used in place of `sweep`, `SCAN`, and `AGREE` for the meaning "to bring code or prose into line with a convention."
+    16. The record of a reserved term must say which case it is in: absent from the STE dictionary, or not approved by it.
+    17. A substitution (replacing a word Waytide rejects) and a reservation (keeping a word STE rejects) must be treated as different acts.
+    18. A writer must not choose a worse word out of deference to the STE dictionary.
+    19. Write to the STE dictionary.
+    20. The record of a reserved word must state what the STE dictionary says about it.
+
+### Checker A, word for word
+
+    1. kept: "Waytide writes its prose in ASD-STE100 Simplified Technical English"
+    2. kept: "ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states"
+    3. kept: "`Say it in ETE` asks for that."
+    4. kept: "`Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved"
+    5. kept: "The STE dictionary decides first."
+    6. kept: "Keep Waytide's word where the approved word means something else."
+    7. kept: "The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12."
+    8. kept: "The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3."
+    9. kept: "The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1."
+    10. kept: "Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`."
+    11. kept: "Reserve it as a technical noun or a technical verb, in a category its entry names"
+    12. kept: "in the package's `vocabulary.md`"
+    13. kept: "Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs."
+    14. kept: "A word the dictionary does not list is not a defect. STE Rule 1.1 permits it as a technical noun or a technical verb"
+    15. kept: "The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention. Neither `SCAN` nor `AGREE` ... carries that meaning, so `conform` is reserved and wins."
+    16. kept: "So the record says which case a reserved term is in."
+    17. kept: "A substitution replaces a word Waytide rejects, and a reservation keeps a word STE rejects. They are different acts"
+    18. weakened: "keeps a writer from choosing a worse word out of deference". Missing: it appears only in the Why, as the effect of the rule rather than as a prohibition, and it does not say the deference is to the STE dictionary.
+    19. kept: "Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary" / "The STE dictionary decides first."
+    20. kept: "record what the STE dictionary says about it"
+
+### Checker B, word for word
+
+    I judged all 20 directives against the shorter version: 19 are kept, 1 is weakened (number 18) and none are lost.
+
+    1. kept — "Waytide writes its prose in ASD-STE100 Simplified Technical English"
+    2. kept — "ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states."
+    3. kept — "`Say it in ETE` asks for that."
+    4. kept — "`Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved."
+    5. kept — "The STE dictionary decides first."
+    6. kept — "Keep Waytide's word where the approved word means something else."
+    7. kept — "The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12."
+    8. kept — "The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3."
+    9. kept — "The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1."
+    10. kept — "Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`."
+    11. kept — "Reserve it as a technical noun or a technical verb, in a category its entry names"
+    12. kept — "in the package's `vocabulary.md`"
+    13. kept — "Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs."
+    14. kept — "A word the dictionary does not list is not a defect. STE Rule 1.1 permits it as a technical noun or a technical verb"
+    15. kept — "The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins."
+    16. kept — "So the record says which case a reserved term is in."
+    17. kept — "A substitution replaces a word Waytide rejects, and a reservation keeps a word STE rejects. They are different acts"
+    18. weakened — "keeps a writer from choosing a worse word out of deference." Missing: this sentence is a reason under "Why:", not a prohibition, and it does not say the deference is to the STE dictionary.
+    19. kept — "The STE dictionary decides first." together with "Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary and 53 writing rules."
+    20. kept — "record what the STE dictionary says about it."
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3394,3 +3477,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:35:52 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:37:06 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:39:20 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:40:28 PM PT
