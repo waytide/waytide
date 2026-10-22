@@ -454,6 +454,24 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **The agent's compression packed sentences.** It roughly evened out the five rules' solubility, to between 32 and 62, without improving clarity in general. The simulation found no change in behavior for any of them.
 
+### Whether a compressed rule has the same effect as its source is not yet established — 2026-10-22
+
+**The engineer named the question to determine: is the effect of a compressed rule the same as that of its source rule?** The evidence so far does not answer it. The simulation shows that the effect is the same on the behaviors the agent chose to test, and all five rules pass that. It has four limits:
+
+1. **No room to differ.** Both versions scored perfectly on every scenario, except one #11 miss whose cause both versions share. A test where everything passes cannot show a difference that is there.
+2. **Small coverage.** Each rule has three scenarios. #15 has dozens of directives, and three scenarios reach only a few. A directive the compression weakened or dropped goes undetected unless a scenario lands on it.
+3. **One author.** The agent wrote both the compression and the scenarios. It tested what it knew it had kept, so the gaps in the compression and the gaps in the test are likely to coincide.
+4. **Distance from real use.** Each agent read one rule alone, described what it would do rather than doing it, and was the same model as the agent.
+
+**What would answer it**, each step closing one of the limits:
+
+1. **Check every directive.** A separate agent, one that has not seen the compression, lists the source's directives one by one. It then checks each against the compressed text: kept, weakened, or lost. This finds what was dropped without needing a scenario that lands on it.
+2. **Separate the authors.** The engineer, or an agent given only the source, writes the scenarios, at least one for each directive.
+3. **Make the scenarios hard.** Include cases where the source version fails some of the time, so a difference has room to show.
+4. **Test in real sessions.** Compile with `--compressed` in a worktree, run real sessions under the whole read, and compare their actions with source-version sessions on the same tasks.
+
+**The agent recommended starting with the directive check**, the cheapest and most direct test of the same effect, **on #15**, where the most text came out.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2653,3 +2671,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:50:07 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:51:40 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:55:09 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:01:34 AM PT
