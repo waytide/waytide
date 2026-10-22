@@ -406,6 +406,18 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **#12 compressed by 0.62**, at solubility 17. That is close to #11's 0.61 at 11 and below #15's 0.71 at 24.
 
+### The predictability simulation on #12 — scenarios and scoring, committed before it runs, 2026-10-21
+
+**Two versions:** #12 compiled by default, 7,527 characters without its attribute lines, and #12 compiled with `--compressed`, 3,503 characters. **Three scenarios, five fresh agents for each version and scenario**, in the form the earlier simulations used.
+
+| scenario | the situation | passes when the answer |
+|---|---|---|
+| S1 — a completed task | An item tagged `[plan]`, at `Active`, carries checkbox tasks. The agent finishes one and checks its box, and nothing else about the item changes. | writes no log entry |
+| S2 — a new item, nothing built | The engineer says "Record an item: the compiler could cache what it compiled." The agent writes it as a new item at `Open`. | writes one entry, and its entry and commit subject name the record, and neither states the caching as what the compiler does |
+| S3 — a reconciliation that finds nothing | At a work session's close the agent reconciles the design items against the session's work, and nothing needs to change. | writes a log entry that the direction stands, naming what the items were read against |
+
+**S3 tests the tension both versions carry**: three moments "and at no others", against the reconciliation entry. An answer that takes the first reading writes nothing. The compressed version puts the two closer together, so S3 is where the versions are most likely to differ.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2205,3 +2217,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:44:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:45:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:50:07 PM PT
