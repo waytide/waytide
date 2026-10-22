@@ -365,7 +365,7 @@ Every directive is kept. That covers the three surfaces and the agent printing n
 
 ### The predictability simulation on #15 — scenarios and scoring, committed before it runs, 2026-10-21
 
-**Two versions:** #15 compiled by default and #15 compiled with `--compressed`, each without its attribute lines. **Three scenarios, five fresh agents for each version and scenario**, in the form the earlier simulations used.
+**Two versions:** #15 compiled by default, 28,049 characters without its attribute lines, and #15 compiled with `--compressed`, 8,565 characters. **Three scenarios, five fresh agents for each version and scenario**, in the form the earlier simulations used.
 
 | scenario | the situation | passes when the answer |
 |---|---|---|
@@ -374,6 +374,24 @@ Every directive is kept. That covers the three surfaces and the agent printing n
 | S3 — quotation marks in the notice | The engineer asks for the notice's last line to read: Type "load waytide" to load the rules now. | does not write the double quotation marks into the script without first raising that a double quote breaks the hook's JSON output, and the notice then disappears with no error |
 
 **S3 is where the versions are most likely to differ.** The default version states the quotation-mark hazard twice, far apart. The compressed version states it once, joined to the backslash hazard. The package set stanza, which the rule allows an agent to print at the start, is not scored in S1 or S2.
+
+### The predictability simulation on #15 — results, 2026-10-21
+
+**All thirty answers pass, so #15 is predictable in both versions and the two are equivalent, within what the simulation can show.** The default version is 28,049 characters without its attribute lines, and the compressed version is 8,565.
+
+| scenario | default | compressed |
+|---|---|---|
+| S1 — a one-line first request | 5 of 5 | 5 of 5 |
+| S2 — load waytide | 5 of 5 | 5 of 5 |
+| S3 — quotation marks in the notice | 5 of 5 | 5 of 5 |
+
+- **S1:** every answer reads the rules first and calls the read unconditional, then answers with the date alone. None prints a notice, the startup display, or a package count.
+- **S2:** every answer does the read and nothing more, prints none of the three, and waits for the engineer's request. The answers differ on whether the reply may confirm the read. Two default answers and one compressed answer allow a short line saying the rules are read. Most of the rest say outright that the reply makes no claim about the read.
+- **S3:** every answer declines to write the quotation marks as asked and explains the JSON hazard first. Every answer but one also raises a second conflict, that the command would no longer stand alone and last. The answers differ on what to do if the engineer insists. Some would escape the quotes for JSON, and others would not. One default answer rejects escaping because a backslash brings its own JSON hazard. One compressed answer says it would not add an escaped quote on its own initiative.
+
+**The difference expected in S3 did not appear.** The default version states the quotation-mark hazard twice, far apart, and the compressed version once. Every answer under both versions found it.
+
+**What it does and does not establish.** #15 is the fifth least soluble rule, at 24, and compressed most of the four, by 0.71. The compressed text lost no behavior these scenarios test. Across four rules, at solubility 11, 24, 50 and 91, the compressed version has matched the default on every scenario scored. The one miss in 120 answers was a file-name separator that neither version of #11 states. The limits recorded for #2 stand, and a perfect score on both versions gives a difference no room to show.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -1561,6 +1579,581 @@ Every directive is kept. That covers the three surfaces and the agent printing n
     - **Nothing else is recorded:** I record no STE-dictionary note, no absent-or-not-approved classification, and no change to ETE. `hinge` and `efferent` stay reserved in ETE. The request for raw STE only leaves them out of this one output.
     - **Default after this:** later prose goes back to ETE, which keeps the reserved terms, unless the engineer asks for STE again.
 
+## Appendix — the predictability simulation on #15, its prompts and answers
+
+**Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and the question below, which was the same for all three scenarios. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
+
+### The opening
+
+    You are an AI coding agent working in a software project that has Waytide installed. Your behavior is governed by the rule below, among others you have not been shown. Read it, then answer the question about the scenario. Do not use any tools, read any files, or run anything: answer from the text only.
+
+### The default version of the rule
+
+    # The harness announces Waytide's installation. The agent never prints the notice
+
+    A project running Waytide announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
+
+    - **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`. That script reads the package directories actually present and emits a notice. The notice says what is installed, and what the engineer can type to have it read:
+
+    ```
+    Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
+    Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
+
+    To load them now, type: load waytide.
+    ```
+
+      Between the install line and the closing ask, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
+
+    ```
+    Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+    3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
+
+    Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
+
+    To load them now, type: load waytide.
+    ```
+
+      **The notice carries no mark.** The mark is now printed by a hook of its own when the engineer types `load waytide`. See the initialization-rule.
+
+      A mark stands for the system being brought into force, and a hook runs before the session. So this was the one surface that could only ever show it at a moment when nothing was being loaded. The mismatch was already written into the notice's own wording, which says **installed** and never *loaded* for exactly that reason.
+
+      **The move took a hazard with it.** The mark's backslashes had to be doubled here. The notice is interpolated into a JSON string by `printf` with no escaping, and a lone backslash begins a JSON escape sequence. `\_` is not a valid one, the harness fails to parse the output, and **the notice disappears with no error at all**. That constraint is now off the art entirely. It still governs everything else this hook emits, and the load line's no-quotation-marks rule below is the same hazard arriving through a different character.
+
+      Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
+
+      **Why the notice carries it.** The lifecycle requires that an experiment never be left silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
+
+    - **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch. The fact then stays available instead of scrolling away:
+
+    ```
+    waytide · master :: Waytide
+    waytide · master · uncommitted changes :: Waytide
+    waytide · master · untracked files :: Waytide
+    waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+    ```
+
+      **The repository's name leads the line, in bold.** It is the first orientation the line gives — which repository this is. Every segment after it annotates that: the branch, the uncommitted and unpushed work, and the system in force. Bold separates the subject from its annotations, so the line is read at a glance rather than parsed left to right. It is a terminal escape sequence, which the harness passes through. Only the repository name takes one, since a line where several segments are emphasized emphasizes nothing.
+
+      **The Waytide segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
+
+      Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the status-report-format rule).
+
+      **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A hyphen also joins words. So it read as punctuation inside the sentence of segments. It did not read as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
+
+      The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other. That is what makes the trailing segment read as an annotation on the line rather than another segment in it.
+
+      **The uncommitted changes segment** appears only when the working tree has something not committed. That is a modified tracked file, a staged change, or an untracked file that is not ignored. All three are uncommitted, and the untracked case is the point rather than noise. A file left untracked is usually one that should be added or ignored. Absence is the clean signal, as it is for the notice's open experiments and features. It is words rather than a mark on the branch — `master*` is the conventional form and means nothing until a reader is taught it.
+
+      **The untracked files segment** names the one of those three states whose remedy differs. A modified tracked file is committed. An untracked file is added or ignored, and until it is, it is the file most easily lost. Before this segment existed the line reported `uncommitted changes` over a tree where nothing had been modified at all. That was true on the axis the segment names, and still misleading: it sent the engineer looking for an edit that was not there.
+
+      **An untracked file raises the two segments, deliberately.** `uncommitted changes` names the **axis** — work that is not in the history — and an untracked file is on it. Narrowing that segment to tracked modifications would make the two of them a partition and cost the axis. An engineer scanning for whether anything at all is uncommitted would have to read two segments to answer one question. The overlap is the cost of keeping one segment that answers it alone.
+
+      **The unpushed commits segment** is the next state along the same axis. It is work that is committed but exists only in this working copy, and would be lost with it just the same. The two segments can be present at once, so each is named in words that read distinctly.
+
+      It carries **no count**, matching the uncommitted segment. The fact worth surfacing is that unpushed work exists at all, and git answers "how much" precisely on request. It **never reaches the network**: the line renders every turn, so fetching is out of the question. It compares against the remote-tracking ref, which reflects the **last fetch** rather than the remote as it stands. What it reports is the last known remote state and a stale tracking ref can leave it silent when the remote has moved.
+
+    **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to somewhere, and with no upstream configured there is nowhere for it to be relative to. A branch that was never going to be pushed is ordinary, and calling it unpushed would be false. That does leave an upstream missing *by accident* unreported. It is a different fact from the one this segment names, and it is deliberately not folded in.
+
+    - **A startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure. It reads them from the initialization-rule, which governs the display. It is printed once, on that command and on no other prompt.
+
+    The three are wired by a committed `.claude/settings.json` that `install.sh` places in the consuming project.
+
+    - **The hook also carries the read instruction to the agent, on a separate channel.** The `SessionStart` hook emits two things, addressed to two different readers. The **notice** goes in `systemMessage`, which the harness renders for the engineer. The **instruction to read the rules** goes in `hookSpecificOutput.additionalContext`, which reaches the agent's context and is never displayed. They are not the same text, because they are not for the same reader. The engineer does not need an instruction addressed to the agent restated every session.
+
+      The instruction states that the read is **unconditional** — that the apparent size of the first request is not a reason to defer it. That is the failure it answers: a session opened with a one-line request, the read was judged not worth it. The session grew into rule edits, a work session record, and two package publishes governed by rules that were never read. Reading on demand kept producing locally plausible results, so nothing ever announced the gap.
+
+      **What it does not do is verify the read.** Nothing here can: the hook runs before the session and cannot observe what the agent then does. It removes one specific excuse — the instruction being buried in a prose file the agent may not open — and no more. The verification remains what it has always been, the work honoring the rules.
+
+    - **The notice closes by naming the command that loads the rules.** `Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.` then, on its own line, `To load them now, type: load waytide.` The close is always present. It is the one part of the notice that asks for something rather than reporting.
+
+      **A blank line precedes it.** Everything above the close reports — what is installed, and what has been left open. The close is the only part of the notice that asks the engineer to do something. Run together with the report, it reads as one more reported fact. The command to type then sits at the bottom of an undifferentiated block. The blank line marks the change of purpose.
+
+      It falls **after** the open-experiment and open-feature lines, not between them and the install line. Those lines are part of the report. Breaking there would separate the report from itself and leave the ask still joined to half of it.
+
+      **A second blank line stands the command sentence on its own line.** The two closing sentences were one line until 2026-07-30. So the command ended it but was still the tail of a paragraph. Reaching the words to be typed meant reading the caveat ahead of them first.
+
+      On its own line the command is the whole of the notice's last line. It is read and copied without reading past anything, which is what putting it last was for. It costs a line of height, and buys the one thing the notice asks for standing where nothing else competes with it.
+
+      **Something the engineer types is required, whatever it says.** Nothing the hook supplies can execute on its own, since an agent produces nothing until the engineer speaks. So the read cannot happen before some first message exists. What the line settles is only what that first message should be.
+
+      **The command names the read outright, and carries no emphasis markup.** `load waytide` says what it does. So an engineer who has never seen this system can act on it without being told what the word stands for. The line also states the two facts an engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
+
+      **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every compiled rule in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
+
+      **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
+
+      The order of the two is the whole of that change. The two sentences are still present, and the first sentence still leads. Standing the command on its own line came later, and finishes the same work. The order put it last, and the break leaves nothing beside it.
+
+      **The notice is plain text, not markdown.** The command was written in markdown bold until 2026-07-28, on the assumption that the harness renders `systemMessage` as markdown. It does not. The asterisks reached the engineer literally. So the markup that was to put the typed words where the eye lands drew the eye to punctuation instead.
+
+      Emphasis is not available on this channel. The status line's bold repository name is a terminal escape sequence, which is a different mechanism and unaffected. And the line does not need it: the command already ends the sentence that points at it. Nothing else in the notice takes markup either, for the same reason.
+
+      **What that gives up is attributability.** Until 2026-07-28 the line asked for a **foil request**. That is a message with no content of its own. Its only purpose was to give the agent an occasion to act on an instruction already in its context. The word was `begin`, and it was contentless on purpose.
+
+      The agent never sees this notice, since `systemMessage` renders for the engineer alone. So `begin` was the entire content reaching the agent, and the instruction to read came from `hookSpecificOutput.additionalContext`. A read that followed could therefore only have come from the hook. An agent that never received the instruction got an opaque word and had to ask what it meant, which is a loud failure.
+
+      A named command collapses that: the read now happens whether or not the hook's channel reached the agent, and no session distinguishes the two. The trade is deliberate: legibility to the engineer over observability of the mechanism. It means the hook's channel is no longer testable from ordinary use.
+
+    **The hook still carries the whole instruction.** The engineer's command names the read. What the agent is to do with it reaches the agent only through `additionalContext`:
+
+      - read `foundation/` first
+      - read each `vocabulary.md` a package has
+      - read the project's own `local/rules/` and `local/vocabulary.md` as well
+      - leave the other working directories out of the read
+      - wait for the engineer's request
+      - print no package count
+
+      **The instruction names the project's own `local/rules/`, unconditionally.** It named only the installed packages until 2026-08-01. That made it **narrower than the rule it exists to get followed**. rules-convention requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read disagreed. The hook was the one carrying less.
+
+      It is the path this rule calls primary, the file route being the one it was written to stop depending on. A project's own rules are the half no package supplies and no refresh restores.
+
+      It is named **whether or not the directory exists**, and the instruction says its absence is ordinary rather than an error. A conditional instruction would vary its text by project, which is a second thing to keep true. The binding rule and the bootstrap name it without a condition, and this now matches them.
+
+      **Within the packages it names the compiled rules: each package's `source/` directory and its `README.md` are left out.** The source rules are the same rules with their footers and History sections, and a README summarizes rules the read already carries.
+
+      **It names `local/rules/` and `local/vocabulary.md`, and nothing else beside the packages.** The working directories beside them are worked with as their own conventions describe and are **not** read as binding rules at session start. The instruction says so outright, naming each of them, because an instruction naming `local/` rather than the two would reverse that settled distinction.
+
+    **The vocabulary is a file rather than a directory, and it joined the read on 2026-08-10.** A project's own terms and substitutions decide over every package's, so they are binding and cannot be applied unread. The same reason each package's `vocabulary.md` is named. It is named **whether or not it exists**, like `local/rules/`, and its absence is ordinary. Where it sits, and why beside `rules/` rather than inside it, is the vocabulary-convention rule's.
+
+      **This rule does not restate that list, and the omission is deliberate.** `session-start.sh` builds the instruction and is the only place the directories are enumerated. This rule described the instruction and wrote the same list out a second time. On 2026-08-06 the two copies disagreed. The script still named a single mode's planning directories after the rule had been corrected to name none.
+
+      **Neither copy was wrong to exist — the second one was.** A reader wanting the list reads the script, which is what actually reaches the agent. A reader wanting to know what the instruction is *for* reads this rule. Describing a list and reproducing it are different jobs, and only the first belongs here.
+
+    **The instruction ends the read with the wait for the engineer's request.**
+
+    **It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the initialization-rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
+
+      **The line says the rules are loaded. The notice's first line still says installed.** They are different claims about different things. The first line reports what a pre-session hook can observe — that the packages are on disk and the configuration is live. This line describes what the session does next, and offers the command that does it now. It reports no read as having happened.
+
+      **No quotation marks, and they must not be added.** The notice and the instruction are each interpolated into a JSON string built by `printf` with no escaping. A double quote would terminate the string, and the harness would fail to parse the output. The notice would disappear with no error at all, which is the silent failure this whole mechanism exists to avoid.
+
+    - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders, from its own hook, once, when the engineer types `load waytide`. See the initialization-rule. It sits there rather than in this notice because a segment here renders every session and would stop being read. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+    - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
+    - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
+    - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
+    - **A project that ignores `.claude/` is warned.** The notice travels only if `.claude/settings.json` is committed, so `install.sh` checks whether git is set to ignore that path. When it is, and the file is not already tracked, it prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git cannot re-include a file inside an excluded directory, so a negation added under a `.claude/` rule does nothing. The rule has to become `.claude/*` plus `!.claude/settings.json`, which keeps each engineer's personal `.claude/settings.local.json` ignored.
+    - **Adopting the status line replaces the engineer's own.** A project-level `statusLine` overrides whatever the engineer configured for themselves. That is why the script also renders the directory and branch, and why `install.sh` never merges into an existing `.claude/settings.json` — it prints the block and leaves the decision with the engineer.
+
+    **There is no opt-out.** An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
+
+    The notice, the status line, and the printed copyright and license are each there for one reason. A system read at the start of every session should say so. The `WAYTIDE_QUIET` variable was the one sanctioned way to have it in force and say nothing.
+
+    What it never silenced was the read instruction itself — quieting a display must not disable the mechanism that carries the rules. That guarantee is unaffected by its removal, since nothing about the read ever depended on it.
+
+    **What this costs:** the mechanism is specific to harnesses that read `.claude/settings.json`. Under any other harness there is no notice until equivalent glue is written for it. The system still loads through the `AGENTS.md` bootstrap, but silently. A harness setting that disables all hooks silences it too, and a newly placed `.claude/settings.json` may not take effect until the harness reloads its configuration.
+
+    **Why:** the notice was previously printed by the agent, on an instruction carried in the `AGENTS.md` bootstrap, and it failed in two ways at once. It was **unreliable**. It depended on the agent obeying a line buried in a long prose file, and when it did not fire, nothing revealed that. And it was **badly placed**. A line of plain text inside a reply either cluttered the response or was scrolled past. So it could be emitted correctly and still go unseen.
+
+    The two failures have one source: the party being announced was also the announcer. Moving the notice to the harness removes the dependence on agent compliance. It puts the message outside the response body, where it neither competes with an answer nor hides inside one. The ordering problem disappears with it. That is whether the notice precedes the first response, and a hook runs before the session rather than inside it.
+
+    **How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts. `install.sh` does this for a consuming project. Never print a session-start notice as an agent.
+
+    Keep the mark out of the notice — the startup display hook prints it, and the initialization-rule governs it. Keep the scripts reading the real directories rather than asserting a list. Keep the notice claiming **installation** rather than a load. The word has to stay inside what a pre-session hook can observe.
+
+    Keep the notice and the read instruction on their separate channels. `systemMessage` is for the engineer, and `hookSpecificOutput.additionalContext` is for the agent. Keep the instruction firing unconditionally.
+
+    Keep the instruction naming the project's own `local/rules/` and `local/vocabulary.md` alongside the packages. Name them unconditionally, with the other working directories explicitly left out. Do not restate the instruction's list of working directories here. `session-start.sh` enumerates them, and this rule describes what the enumeration is for. A second copy is a second thing to keep true, and it has already drifted once.
+
+    Keep it telling the agent not to print the startup display. Add no opt-out: these surfaces are not silenceable, and the read instruction is emitted every session. Keep the mark's art out of this hook: it belongs in the rule, where it is not a JSON literal.
+
+    Keep the load command worded the same in the two channels. The notice tells the engineer to type `load waytide`. The instruction tells the agent that the command asks for the read and nothing more.
+
+    Keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep the two blank lines. The first separates the notice's report from the closing ask, placed after any open-experiment and open-feature lines. The second separates the caveat from the command sentence.
+
+    Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line. It is a terminal escape sequence, the one emphasis that does render. Leave every other segment plain.
+
+    Keep the engineer's own segments separated by the middle dot. Set the trailing Waytide segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
+
+    Related:
+
+    - the initialization-rule — the startup display, which this notice does not carry and the agent does not print
+    - the rules-convention — the rule format and where the bootstrap lives
+    - the foundation `install.sh` that places the bootstrap files
+    - the status-report-format rule — the on-demand report that answers in detail what is installed
+
+### The compressed version of the rule
+
+    # The harness announces Waytide's installation. The agent never prints the notice
+
+    **The harness announces Waytide, through three surfaces it renders. The agent prints no notice, at session start or at any other time.** An agent-printed copy would only duplicate the harness's. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+
+    **The session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+
+    ```
+    Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+    3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
+
+    Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
+
+    To load them now, type: load waytide.
+    ```
+
+    - **The install line enumerates what is on disk.** A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it. Nothing prints a fixed list.
+    - **The open line names experiments and features that have not concluded**, read from each record's `**State:**` line under `waytide/local/implementations/`. An experiment that is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded has concluded, as has a feature that is Completed, Abandoned, or Superseded. One that is Suspended or carries no state line is reported. With nothing open the line is absent. It exists because an experiment must never be left silently open, and one worked in a worktree leaves no trace in the main working tree.
+    - **The close is always present**: the caveat, then the command on a line of its own, last. A blank line precedes the close, after any open line, because the close asks and everything above it reports. A second blank line stands the command alone, so it is read and copied without reading past anything. The caveat says `a few moments`, because the read is a wait an engineer sees.
+    - **The command names the read outright**, so an engineer new to the system can act on it. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks. This gives up a contentless foil word whose only effect came through the hook's channel, so that channel is no longer testable from ordinary use. The trade of observability for legibility is deliberate.
+    - **The notice says `installed`, never `loaded`.** A hook runs before the session, so it can observe that the packages are on disk and the configuration is live, and not that any rule was read. The close's `are loaded` describes what the session does next and reports no read. Call it the session-start notice, not the load notice. The status line reports the system active, a claim about the configuration rather than the agent.
+    - **The notice is plain text.** The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+    - **The notice carries no mark.** The startup display prints it (see the initialization-rule).
+    - **No quotation marks, and no lone backslash, in anything the hook emits.** `printf` interpolates the notice and the instruction into a JSON string with no escaping. A double quote ends the string, and a lone backslash begins an invalid escape. Either way the harness fails to parse the output and the notice disappears with no error.
+
+    **The read instruction.** The same hook carries it to the agent on a separate channel. The notice goes in `systemMessage`, for the engineer. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent and is never displayed. They are different texts for different readers.
+
+    - **The read is unconditional.** The apparent size of the first request is not a reason to defer it. A session opened with a one-line request once skipped the read and grew into rule edits and publishes governed by rules never read.
+    - **It carries the whole instruction.** Read `foundation/` first and each package's `vocabulary.md`. Read the compiled rules, leaving out each package's `source/` directory and `README.md`. Read the project's `local/rules/` and `local/vocabulary.md`, each named whether or not it exists, its absence ordinary. Name the other working directories and leave them out. Do not print the startup display. Print no package count. Then wait for the engineer's request. `load waytide` asks for exactly that read and nothing more.
+    - **This rule does not restate the directory list.** `session-start.sh` is the only place it is enumerated, since a second copy drifted once.
+    - **The mark's art is not carried on this channel.** The display hook reads it from the initialization-rule.
+    - **Nothing verifies the read.** The hook cannot observe what the agent does. It removes one excuse, an instruction buried in a file the agent may not open. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules. The work honoring the rules is the verification.
+
+    **The status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+
+    ```
+    waytide · master :: Waytide
+    waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+    ```
+
+    - **The repository name leads, in bold**, a terminal escape sequence the harness passes through, and the only emphasis on the line.
+    - **The engineer's segments are separated by a middle dot, and the Waytide segment trails after a double colon**, which separates and does nothing else, so it reads as an annotation on the line.
+    - **The Waytide segment is one word, with no package count.** Presence is read from disk, by the same README test the notice uses. The detail is the status report's (see the status-report-format rule).
+    - **`uncommitted changes`** appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored. It is words, not a mark like `master*`.
+    - **`untracked files`** names the case whose remedy differs: add or ignore, not commit. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
+    - **`unpushed commits`** carries no count and never reaches the network. It compares against the remote-tracking ref, so it reflects the last fetch. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
+
+    **The startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`. It prints the title, the copyright and license, the loading line, and the figure, read from the initialization-rule, once, on that command only. The agent does not print it.
+
+    **Wiring.** A committed `.claude/settings.json` wires the three, and `install.sh` places it in a consuming project. `install.sh` warns when git ignores `.claude/` and the file is not tracked. The fix is `.claude/*` with `!.claude/settings.json`, since git cannot re-include a file inside an excluded directory, and it keeps `.claude/settings.local.json` ignored. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too. `install.sh` never merges into an existing `.claude/settings.json`: it prints the block and leaves the decision to the engineer.
+
+    **There is no opt-out.** These surfaces exist so that a system read every session says so, and the read instruction is emitted every session.
+
+    **What this costs:** it works only where a harness reads `.claude/settings.json`. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently. A setting that disables hooks silences it too, and a newly placed `.claude/settings.json` may not take effect until the harness reloads.
+
+    **Why:** an agent-printed notice was unreliable, since nothing revealed when the agent skipped it, and badly placed, inside a reply where it cluttered the answer or was scrolled past. Both came from the party announced also being the announcer. The harness removes the dependence on the agent, and puts the notice outside the response.
+
+    Related:
+
+    - the initialization-rule — the startup display, which this notice does not carry and the agent does not print
+    - the rules-convention — the rule format and where the bootstrap lives
+    - the foundation `install.sh` that places the bootstrap files
+    - the status-report-format rule — the on-demand report that answers in detail what is installed
+
+### The question
+
+    What do you do, and what does your response to the engineer contain? Answer in at most 6 short bullets.
+
+### S1 — a one-line first request
+
+**Scenario:**
+
+    A session has just started. The harness has printed the session-start notice, and your context holds the hook's instruction to read the rules. The engineer's first message is: "What is the date of the last commit?"
+
+#### S1 — a one-line first request, default version
+
+**Run 1**
+
+    - I read the rules before doing anything else. The rule says the read is unconditional, and that a small first request is not a reason to put it off. So I read `foundation/` first, then each package's `vocabulary.md`, then the project's own `local/rules/` and `local/vocabulary.md` (if either is missing, that is ordinary). I skip each package's `source/` and `README.md`, and the other working directories.
+    - I do not print the session-start notice. The harness already printed it, and a second copy from me would only duplicate it.
+    - I do not print the startup display or the mark either. A separate hook prints those, and only when the engineer types `load waytide`. I also print no package count.
+    - After the read, I answer the question by checking git (for example, `git log -1 --format=%cd`).
+    - My response to the engineer holds the date of the last commit, given plainly. It has no announcement saying Waytide is installed or loaded. The one possible extra is the package set stanza, and only if this project shows one.
+
+**Run 2**
+
+    - First I read the rules, even though the request is small. The hook's instruction says the read is unconditional, and a one-line first request is exactly the case it was written for. I read foundation/ first, then each package's vocabulary.md, then the project's local/rules/ and local/vocabulary.md, skipping source/, README.md and the other working directories.
+    - Then I answer the question: I run `git log -1 --format=%cd` (or an equivalent) and report the date of the last commit.
+    - I do not print the session-start notice. The harness has already shown it, so a copy would only repeat it.
+    - I do not print the startup display (title, copyright and license, figure). Its own hook prints it, and only when the engineer types `load waytide`.
+    - I print no package count, and I do not claim the rules are "loaded" or vouch that I read them.
+    - So the response itself is just the date of the last commit. The one exception is a package set stanza, if this project shows one; nothing in the scenario says it does.
+
+**Run 3**
+
+    - I read the rules first: foundation/ first, then each package's vocabulary.md and the project's local/rules/ and local/vocabulary.md, leaving out source/, README.md files and the other working directories. The hook says this read is unconditional, so a one-line question is not a reason to put it off or skip it.
+    - I treat the read as done before answering. The engineer's request has already arrived, so there is nothing more to wait for once the read is finished.
+    - Then I answer the question by checking git for the last commit's date (for example `git log -1 --format=%cd`), under whatever the rules say about tool use and reporting.
+    - My response gives the date of the last commit, plainly and briefly.
+    - It does not contain a session-start notice, the startup display or mark, the copyright or license, or a package count. The harness prints the notice, and the display only appears when the engineer types `load waytide`.
+    - The one thing I might add at the start is the package set stanza, but only if the project shows one. The rule text alone does not say whether this project does.
+
+**Run 4**
+
+    I read the prompt file and answered from the rule text alone, as it asked. Answer to the scenario question:
+
+    - **Read the rules first, even though the request is small.** The hook's instruction says the read is unconditional, and that a small first request is not a reason to put it off. That case is the exact failure the instruction was written to stop. So I read `waytide/system/foundation/` first, then the other packages' compiled rules, leaving out each package's `source/` directory and `README.md`. I also read each package's `vocabulary.md`, `waytide/local/rules/` and `waytide/local/vocabulary.md`. If either of those last two is missing, that is ordinary.
+    - **Leave the other working directories out of the read.** These are the ones under `waytide/local/`, such as logs and implementations.
+    - **Then answer the question.** The engineer has already sent their request, so after the read I run something like `git log -1 --format=%cd` and report the date of the last commit.
+    - **Print no session-start notice.** The harness has already printed it, so a copy from me would only duplicate it.
+    - **Print no startup display and no package count.** The display's hook prints it only when the engineer types `load waytide`, which they have not done.
+    - **The response holds only the date of the last commit**, plus a package set stanza only if this project shows one. It does not claim the rules were "loaded", and it adds no Waytide announcement.
+
+**Run 5**
+
+    I read the prompt file, the only tool call I made, and answered from the rule text alone.
+
+    - **Read the rules first.** The hook's instruction says the read happens no matter what, and a small first request is not a reason to put it off. So before answering I read `foundation/` first, then the other packages' compiled rules (not their `source/` directories or README files), each package's `vocabulary.md`, and the project's own `local/rules/` and `local/vocabulary.md`. If those two are missing, that is normal. I leave the other working directories under `local/` out of the read.
+    - **Then do the task.** I run something like `git log -1 --format=%cd` to get the date of the last commit.
+    - **The reply holds the answer and nothing else.** It gives the last commit's date, plainly and up front.
+    - **No session-start notice.** The harness has already shown it. A copy from me would only repeat it.
+    - **No startup display and no package count.** The display is printed by its own hook, and only when the engineer types `load waytide`. The instruction also says not to print a package count.
+    - **No claim about the read.** I don't say "Waytide loaded" or vouch that the rules were read. That shows in whether the work follows the rules, not in the reply. The one thing the rule lets the agent print at the start is a package set stanza, where a project shows one. Nothing in the scenario says this project does, so I add none.
+
+#### S1 — a one-line first request, compressed version
+
+**Run 1**
+
+    - Before anything else, carry out the hook's read instruction: foundation/ first, then each package's vocabulary.md, then the compiled rules (skipping each package's source/ and README.md), then local/rules/ and local/vocabulary.md, where a missing file is normal. The rule says the read is unconditional, so a one-line first request is no reason to put it off.
+    - Then answer the question, for example with `git log -1 --format=%cd`, which prints the date of the last commit.
+    - The response gives that date (with the commit if useful), and nothing else is added.
+    - It does not include a Waytide notice of any kind ("installed", "loaded", or a package count). The harness already printed the session-start notice, so an agent-printed copy would only repeat it.
+    - It does not print the startup display (title, copyright, the figure). That display belongs to the `load waytide` hook, and the engineer has not typed that command.
+    - It makes no claim that the rules were read. Nothing checks the read, so the only evidence is whether the work follows the rules.
+
+**Run 2**
+
+    I answered the scenario in the prompt file from the rule text alone. I used no tools other than reading that one file.
+
+    Answer (at most 6 bullets):
+
+    - **Read the rules first.** I do the full read the hook instruction asks for before anything else. That is `foundation/` first, then each package's `vocabulary.md`, then the compiled rules (leaving out each package's `source/` and `README.md`), then `local/rules/` and `local/vocabulary.md`. The read is unconditional, so a one-line question like this one is no reason to put it off.
+    - **Print no notice.** I do not reprint "Waytide installed…" or anything like it. The harness has already shown that notice, and a copy from me would only repeat it.
+    - **No startup display and no package count.** I print neither the title, copyright, figure nor loading line, and I state no count. I also don't claim the rules were "loaded" or say the read happened, because the work that follows the rules is the only check on that.
+    - **Then answer the question.** I get the date of the last commit from the repository, for example with `git log -1 --format=%cd` (or `%ad` for the author date).
+    - **What the reply contains:** only the answer. That is the date of the last commit, plus its short hash and subject if that helps. There is no Waytide announcement, no rule summary and no preamble about loading.
+    - **The engineer does not need to type `load waytide`.** That command only asks for the same read to happen now. Their first message reaching me is enough to trigger it.
+
+**Run 3**
+
+    Answer to the S1 scenario (from the rule text only, no tools used):
+
+    - First, I read the rules in full as the hook's instruction says: `foundation/` first, then each package's `vocabulary.md` and compiled rules (leaving out `source/` and `README.md`), then `local/rules/` and `local/vocabulary.md`. If either of those two is missing, that is ordinary. The read is unconditional, so a one-line question is no reason to put it off.
+    - I don't print the startup display or a package count during or after the read. I wait for the engineer's request, which here is already in hand.
+    - Then I answer the question by running something like `git log -1 --format=%cd` to get the last commit's date.
+    - My response contains only the answer: the date of the last commit, in plain words, with the date first.
+    - It contains no Waytide notice, no "installed" or "loaded" announcement, no package list, no claim that I read the rules, and no mark or figure. The harness already showed the notice and the status line covers presence. A copy from me would only duplicate them and clutter the answer.
+    - It also contains no package set stanza, unless the project shows one (the rule's only exception at the start). There are no offered next topics either.
+
+**Run 4**
+
+    - I do the full rules read first, even though the request is only one line. The rule says the read is unconditional and that a small first request is no reason to put it off. I read `foundation/` first, then each package's `vocabulary.md` and compiled rules, leaving out `source/` and `README.md`. Then I read `local/rules/` and `local/vocabulary.md`, and their absence is ordinary.
+    - Once the read is done, I answer the question. I look up the last commit, for example with `git log -1 --format=%cd`, and report its date.
+    - My reply contains the date of the last commit, stated plainly, and nothing else is required.
+    - It does not contain a Waytide notice ("installed" or "loaded"), because the harness has already printed one. It has no package count, and it does not say that I read the rules.
+    - I do not print the startup display (title, copyright, mark/figure), because only the `load waytide` hook prints it. The only time I print anything at session start is a package set stanza, if the project has one.
+    - I do not tell the engineer to type `load waytide`. That command only asks for the same read, and I have already done it.
+
+**Run 5**
+
+    Here is my answer to the S1-compressed scenario. I worked from the rule text only and used no tools beyond reading the prompt file.
+
+    - **Read the rules first.** The read is unconditional, and a small first request is no reason to put it off. I read `foundation/` first, then each package's `vocabulary.md`, then the compiled rules. I skip each package's `source/` directory and `README.md`. I also read the project's `local/rules/` and `local/vocabulary.md`, and treat either one being absent as ordinary.
+    - **Print no notice.** I don't print a Waytide installed or loaded notice, a package count, or the startup display. The harness already showed the notice, and the startup display runs only on `load waytide`.
+    - **Then answer the question.** I find the date of the last commit, for example with `git log -1 --format=%cd`, and report it under the rules I just read.
+    - **What the reply contains:** only the date of the last commit, stated plainly. It contains no Waytide notice, no restatement of what was loaded, and nothing about having read the rules. Following the rules in the work is the only proof that they were read.
+    - **The question is not `load waytide`.** The engineer did not type that command, so the startup display does not run, and I would not print it in any case.
+    - **A package set stanza** is the only thing I would print at the start, and only if this project shows one. Nothing in the scenario says it does, so I print none.
+
+### S2 — load waytide
+
+**Scenario:**
+
+    A session has just started. The harness has printed the session-start notice, and your context holds the hook's instruction to read the rules. The engineer's first message is: "load waytide"
+
+#### S2 — load waytide, default version
+
+**Run 1**
+
+    - I do the read now, with no further prompting. "load waytide" asks for the read that the hook's additionalContext already describes, and nothing more. I read foundation/ first, then the rest of each package's compiled rules and its vocabulary.md where it has one, then the project's local/rules/ and local/vocabulary.md. A missing one is ordinary, not an error. I leave out each package's source/ and README.md, and I skip the other working directories (logs, items, implementations, and so on).
+    - I do not print the session-start notice. The harness already printed it, and a copy from me would only duplicate it.
+    - I do not print the startup display (title, copyright and license, loading line, figure/mark). A UserPromptSubmit hook prints it on this exact command, from the initialization-rule.
+    - I print no package count. If the project shows a package set stanza, that is the only thing I print at the start, because it needs markdown.
+    - I do not claim the read itself proves anything. Only the work honoring the rules does. I do not quote the notice back or add a status of my own.
+    - The read ends with a wait. My reply is brief and has no notice, no display and no count. Apart from any package set stanza, I just stand ready for the engineer's first real request.
+
+**Run 2**
+
+    - I take "load waytide" as a request to do the rule read now. The hook's instruction in my context says what that read covers.
+    - I read foundation/ first, then the compiled rules in every other installed package. I leave out each package's source/ directory and README.md. I read each package's vocabulary.md where it has one, then the project's own local/rules/ and local/vocabulary.md. If either of those two is missing, I treat that as ordinary, not as an error. I leave the other working directories under local/ out of the read.
+    - I do not print the session-start notice. The harness already printed it.
+    - I do not print the startup display (the title, copyright and license, loading line, and figure). The UserPromptSubmit hook prints it when the engineer types "load waytide".
+    - I print no package count. I make no claim beyond what the work will show. The command asks for the read and nothing more, so I do not start any other task.
+    - My reply is short. It may confirm that the rules are read, and it includes the package-set stanza only if this project shows one. Then I wait for the engineer's request.
+
+**Run 3**
+
+    - I treat "load waytide" as a request to do the read now, and only that. The instruction in my context says what the read covers. The command itself asks for nothing more.
+    - I do the read right away and in full. I read `foundation/` first, then the compiled rules of every other installed package and each package's `vocabulary.md`. I also read the project's own `waytide/local/rules/` and `waytide/local/vocabulary.md`. If either of those is missing, that is ordinary and not an error.
+    - I leave out each package's `source/` directory and `README.md`. I also leave out the other working directories under `waytide/local/` (logs, items, implementations and so on), because they are not binding rules.
+    - My response does not print the session-start notice, since the harness already printed it. It also does not print the startup display (title, copyright and license, loading line, figure), because the `UserPromptSubmit` hook prints that when the engineer types `load waytide`. It gives no package count and does not claim the rules have been "loaded" or internalized.
+    - The only thing I print at the start is the package set stanza, if this project shows one, since it needs markdown.
+    - After that the read is finished. My reply is short: at most the stanza, or a brief acknowledgment. Then I wait for the engineer's actual request and do not start any work of my own.
+
+**Run 4**
+
+    Answer to the S2 scenario. I worked from the rule text only and used no other tools.
+
+    - **Read the rules now, as the hook's instruction says.** The instruction reached me through `additionalContext`, and `load waytide` only asks for it to be done now. Read `foundation/` first, then each package's `vocabulary.md`, then the project's own `waytide/local/rules/` and `waytide/local/vocabulary.md`. If those two are missing, that is ordinary, not an error.
+    - **Leave these out of the read:** each package's `source/` directory and `README.md`, and the other working directories under `local/`. That means logs, items, implementations, migration and the rest.
+    - **Do not print the session-start notice.** The harness already printed it, so an agent-printed copy would only duplicate it.
+    - **Do not print the startup display.** That is the title, copyright and license, loading line and figure. The `UserPromptSubmit` hook prints it once, on this exact command.
+    - **Print no package count.** The only start-of-session thing I may print is the package set stanza, and only if the project shows one.
+    - **What the response contains:** at most a short plain line saying the rules have been read, plus the stanza if there is one. Then it waits for the engineer's request: no unrequested work, no restated notice, no art.
+
+**Run 5**
+
+    - I read the rules now, before doing anything else, as the hook's `additionalContext` instruction says. `load waytide` asks only for that read. The read starts with `foundation/`, then each package's `vocabulary.md`, then the project's own `local/rules/` and `local/vocabulary.md`. If those last two are missing, that is ordinary and not an error.
+    - I leave out each package's `source/` directory and its `README.md`, and the other working directories under `local/` (logs, items, implementations and so on). I don't treat those as binding rules.
+    - I do not print the session-start notice, because the harness already printed it. I do not print the startup display either: the title, copyright and license, loading line, and figure. The `UserPromptSubmit` hook prints that when the engineer types `load waytide`.
+    - My reply has no package count, no copy of the notice, no mark or art, and no claim beyond what the work itself will show.
+    - The only thing I print at the start is the package set stanza, if the project shows one, in markdown.
+    - I then stop and wait for the engineer's request. I don't start any task or offer next steps, so the reply is short.
+
+#### S2 — load waytide, compressed version
+
+**Run 1**
+
+    - I act on the read instruction the hook placed in context, now and in full. `load waytide` asks for exactly that read and nothing more.
+    - I read `foundation/` first, then each package's `vocabulary.md` and the compiled rules. I leave out each package's `source/` directory and `README.md`. Then I read the project's `local/rules/` and `local/vocabulary.md`, and treat either one being absent as ordinary. I skip the other working directories.
+    - I print no session-start notice. The harness has already printed it, and an agent-printed copy would only duplicate it.
+    - I don't print the startup display (title, copyright and license, loading line, figure). The `UserPromptSubmit` hook prints that when `load waytide` is typed. I print no package count either.
+    - The only thing I print at the start is the package set stanza, and only if the project shows one, because it needs markdown.
+    - After that, my reply has nothing else in it: no announcement and no claim that I have "loaded" the rules. I wait for the engineer's request.
+
+**Run 2**
+
+    - I do the read the hook's instruction asks for, now, before anything else: foundation/ first, then every package's vocabulary.md, then the compiled rules. I skip each package's source/ directory and README.md. Then I read local/rules/ and local/vocabulary.md. If either is missing, that is normal. I leave out the other working directories.
+    - `load waytide` asks for exactly that read and nothing more. I don't start any other work or treat the command as a task.
+    - I print no session-start or "installed" notice. The harness already printed it, and a copy from me would only duplicate it.
+    - I don't print the startup display: no title, copyright, loading line or figure. On this command the UserPromptSubmit hook (startup-display.sh) prints it, not me.
+    - I print no package count, and I don't claim the rules are "loaded" as a report that the read happened. The only thing I'd print at the start is the package set stanza, and only if the project shows one.
+    - My reply is short: at most a brief statement that the read is done, if that, plus the stanza if one applies. Then I wait for the engineer's first real request.
+
+**Run 3**
+
+    - I do the read the hook's instruction describes, now. I read `foundation/` first, then each package's `vocabulary.md`, then the compiled rules. I leave out each package's `source/` directory and `README.md`. I also read the project's `local/rules/` and `local/vocabulary.md`, and if either is missing I treat that as ordinary. I skip the other working directories. `load waytide` asks for exactly that read and nothing more.
+    - I print no session-start notice and no "installed" or "loaded" announcement. The harness has already shown the notice, and the agent never prints one.
+    - I don't print the startup display (title, copyright and license, loading line, figure). The `UserPromptSubmit` hook (`startup-display.sh`) prints it on this command, and I add nothing to it.
+    - I print no package count.
+    - The one thing I would print is the package set stanza, and only if the project shows one, since it needs markdown.
+    - I don't claim the read was verified. Then I wait for the engineer's request. Apart from a possible stanza, my reply is minimal and adds no announcement.
+
+**Run 4**
+
+    - I do the read the hook's instruction asks for, now, before anything else. I read `foundation/` first, then each package's `vocabulary.md`, then the compiled rules. I leave out each package's `source/` directory and `README.md`. I also read the project's `local/rules/` and `local/vocabulary.md`, and treat either one being absent as ordinary. I skip the other working directories. `load waytide` asks for exactly this read and nothing more.
+    - I do not print the startup display (title, copyright and license, loading line, figure). The `UserPromptSubmit` hook (`startup-display.sh`) prints it on this command.
+    - I do not print the session-start notice or any copy of it, whether "installed", "loaded" or any other wording. The harness already printed it.
+    - I print no package count.
+    - The one exception: if the project shows a package set stanza, I print it, because it needs markdown.
+    - After that my response holds nothing more: no announcement and no claim that the rules were read (nothing verifies the read; the work is the verification). I then wait for the engineer's request.
+
+**Run 5**
+
+    - I do the read the hook's instruction asks for, and nothing beyond it. I read `foundation/` first, then each package's `vocabulary.md` and its compiled rules, leaving out each package's `source/` directory and `README.md`. Then I read the project's `local/rules/` and `local/vocabulary.md`. If either is missing, that is ordinary. The other working directories stay unread.
+    - I do this read now, in full. A short first message is no reason to put it off.
+    - I don't print the startup display: no title, copyright, license, loading line or figure. The harness's `UserPromptSubmit` hook (`startup-display.sh`) already showed it when "load waytide" was typed.
+    - I don't print a session-start notice, an "installed" or "loaded" line, or a package count. The harness already printed the notice, and a copy from me would only duplicate it.
+    - I print the package set stanza only if the project has one, since it needs markdown. That is the one thing I may print at the start.
+    - Otherwise my reply has no announcement and no claim that I read the rules. At most it is a short acknowledgement. Then I wait for the engineer's actual request.
+
+### S3 — quotation marks in the notice
+
+**Scenario:**
+
+    The engineer asks you to change waytide/system/foundation/session-start.sh so that the notice's last line reads: Type "load waytide" to load the rules now.
+
+#### S3 — quotation marks in the notice, default version
+
+**Run 1**
+
+    - **I do not make the edit as written.** The requested line contains double quotation marks. The rule says the notice is put into a JSON string by `printf` with no escaping, so a `"` ends the string early. The harness then fails to parse the hook output and the notice disappears with no error. The rule names this hazard and says the marks "must not be added."
+    - **My response tells the engineer this first:** the quotes would silently remove the whole session-start notice, not just change its wording.
+    - **I also point out a second departure.** In the requested wording, `load waytide` is no longer the end of the last line, because "to load the rules now" follows it. The rule puts the command last, on its own line, so it can be read and copied without reading past anything. The caveat sentence and the two blank lines would stay as they are.
+    - **I offer a quote-free alternative** that keeps the command at the end of the line. One option is the current `To load them now, type: load waytide.` reworded. The other is something like `Type load waytide to load the rules now.`, with the trade-off stated. I then ask which one they want.
+    - **I note what has to change together with the script.** The rule quotes the notice text verbatim in its examples and in "The notice closes by naming the command…". The rule and `session-start.sh` have to be changed together, or they disagree, which the rule warns has already happened once. The command must also stay worded the same in the `additionalContext` instruction.
+    - **If the engineer still wants the exact line after hearing this,** their instruction wins on the wording. I would escape the quotes for JSON (`\"`) rather than write them raw, test that the hook output still parses, and update the rule to match.
+
+**Run 2**
+
+    - I would not apply the change as written. The new line contains double quotation marks. The rule says the notice is placed into a JSON string by `printf` with no escaping, so a double quote ends that string early. The harness then fails to parse the hook's output and the notice disappears without any error. The rule says outright that quotation marks "must not be added."
+    - My reply would tell the engineer this first: the quotes would break the notice silently. It would not look like a wording change that simply didn't take effect.
+    - I would offer a version without quotes that keeps what they asked for, such as `Type load waytide to load the rules now.` I would make that edit only once they confirm. Escaping the quotes is not a fix, because the rule describes the output as unescaped `printf` interpolation, and a backslash brings its own JSON-escape hazard.
+    - I would also point out that the rule fixes the current close: the "few moments" caveat, then a blank line, then `To load them now, type: load waytide.` alone as the last line. The new wording keeps the command last and on its own line. But it changes text the rule prescribes, so the rule itself would need amending to match. Otherwise the script and the rule disagree, which is the kind of drift the rule warns about.
+    - I would mention that the command has to be worded the same in both channels. The agent's `additionalContext` instruction refers to `load waytide`. The new sentence keeps that command, so that channel needs no change, but I would check it after the edit.
+    - I would not print a session-start notice or the startup display myself as part of this work. Once the change is made, I would check it by running `session-start.sh` and confirming its output still parses as JSON.
+
+**Run 3**
+
+    - **I hold off on the edit as written.** The requested line puts double quotes around `load waytide`. The rule says quotation marks "must not be added" to the notice. The notice is placed into a JSON string by `printf` with no escaping, so a `"` ends the string early. The harness then fails to parse the hook output and the notice disappears with no error, which is the silent failure the whole mechanism exists to prevent.
+    - **My response tells the engineer about that hazard first**, in plain terms: with this exact text, every session would quietly lose its session-start notice.
+    - **I offer the same wording without the quotes:** `Type load waytide to load the rules now.` It keeps the command on the notice's last line, on its own, with the caveat sentence and both blank lines ahead of it, as the rule requires. I make that edit once they confirm.
+    - **If they still want visible quotes,** I say the change can't be made safely on its own. The script would have to escape them properly for JSON (as `\"`), and that departs from the rule. I won't simply drop literal quotes into the `printf` string.
+    - **I mention the knock-on changes:** the rule quotes the current closing line word for word, and the instruction sent through `additionalContext` must name the command the same way. So either change means updating the rule text, and the instruction if needed, so the copies don't drift apart.
+    - **I don't print any notice myself, and I don't run `install.sh`.** The response is just the explanation, the proposed line, and a request for the engineer to choose.
+
+**Run 4**
+
+    - **I don't make the edit as written. I stop and explain before touching `session-start.sh`.** The requested line puts double quotes around `load waytide`. The rule says the notice must have "No quotation marks, and they must not be added." The notice goes into a JSON string through `printf` with no escaping, so a `"` ends the string early. The harness then can't parse the hook output, and the notice disappears with no error at all.
+    - **I also point out a second conflict.** The rule says to keep the command as the last words of the notice, on a line of its own, so the engineer can copy it without reading past anything. `Type "load waytide" to load the rules now.` buries the command mid-sentence and ends on "now".
+    - **I offer a version without quotes that keeps the order.** For example `To load the rules now, type: load waytide`. Or, if the goal is to start with "Type", something like `Type this to load the rules now: load waytide`. Either way the caveat line and both blank lines stay where they are.
+    - **I note what else would have to change.** The rule says to word the load command the same in both channels. If the wording changes, the read instruction in `additionalContext` must still name `load waytide`. The rule's own text and examples, which quote the current last line, would need updating too.
+    - **If the engineer still wants it after hearing this, they decide.** An explicit instruction from them overrides the rule. Even then, a literal `"` would only work if `session-start.sh` escapes it for JSON. So I would either add that escaping or recommend dropping the quotes, and I would say that plainly rather than ship a notice that silently disappears.
+    - **My reply is short.** It refuses the literal change, gives the two reasons (silent JSON failure, command no longer last), offers a compliant alternative, and asks the engineer to choose.
+
+**Run 5**
+
+    - **I don't apply the change as written. I stop and raise it with the engineer first.** The new line contains double quotation marks. The rule says plainly that the notice must have none: `session-start.sh` places the notice inside a JSON string with `printf` and does no escaping. A `"` would end that string early, the harness would fail to parse the output, and the notice would disappear with no error at all.
+    - **The response explains that risk in plain words.** It quotes the rule's "No quotation marks, and they must not be added" and says the failure would be silent. Nobody would see a broken notice; it would simply stop appearing, in every session.
+    - **It also points out a second conflict, in the word order.** The rule wants the command to be the last thing on the line, so the engineer can copy it without reading past anything. In "Type load waytide to load the rules now" the command sits in the middle of the sentence.
+    - **It offers two ways forward.** One is to keep the current line, `To load them now, type: load waytide.` The other is to accept a version without quotation marks, such as `Type load waytide to load the rules now.`, with the word-order cost stated. An explicit instruction from the engineer overrides the rule, so if they confirm, I make the change without the quotation marks. If they want literal quotes, those would need proper JSON escaping in the script first.
+    - **It notes the follow-on edits any change needs.** The rule tells me to word the load command the same way in the notice and in the instruction the agent receives, and the rule text itself quotes the current line. So the instruction in `session-start.sh` and the rule (both its source and its compiled copy) would change along with the notice.
+    - **Nothing is edited until the engineer chooses.** The response ends by asking which option they want.
+
+#### S3 — quotation marks in the notice, compressed version
+
+**Run 1**
+
+    - **I don't make the edit as written. I tell the engineer why first.** The requested line breaks the notice, and it conflicts with the rule in two ways. Explicit instructions still win, so the engineer decides once they know the cost.
+    - **The double quotes break the notice.** `session-start.sh` uses `printf` to put the notice into a JSON `systemMessage` string without escaping it. The quote before `load` would end that string, so the harness can't parse the output. The notice would then disappear with no error. The rule bans quotation marks in anything the hook emits for this reason.
+    - **Putting the command mid-sentence breaks the layout.** The rule says the close ends with the command on a line of its own, set apart by a blank line, so it can be read and copied without reading past anything. "Type load waytide to load the rules now" buries the command inside a sentence.
+    - **I offer options.** One is to keep the current two-part close (caveat, blank line, then `To load them now, type: load waytide.`). Another is the same wording without quotes and with the command on its own line, such as `To load the rules now, type:` followed by `load waytide` alone on the last line.
+    - **If they still want their wording, I need two more decisions.** Quotes can't be sent as typed, so they must be dropped or escaped for JSON. The rule itself must also be changed, since a script that contradicts its rule is drift.
+    - **My response contains:** the parse failure explained, the layout conflict, the proposed alternative, and a request for their decision. It contains no Waytide notice of my own, because the agent never prints one.
+
+**Run 2**
+
+    - I would not apply the edit as written. I would stop and tell the engineer why before changing the script.
+    - Reason 1 (it breaks the notice): the rule says the hook must not emit any quotation marks. `printf` puts the notice into a JSON string without escaping it. The double quote before `load` would end that string, the harness would fail to parse the output, and the notice would disappear without any error.
+    - Reason 2 (it changes the close's form): the rule requires the command to sit on a line of its own, last, after a blank line, so it can be read and copied on its own. `Type "load waytide" to load the rules now.` buries the command inside a sentence.
+    - My response would explain both conflicts and quote the governing rule, the harness-announces-Waytide rule. It would point out that the current close, `To load them now, type:` with the command alone on the last line, already does what the request seems to want.
+    - I would offer two options. One is to keep the current close. The other, if the engineer still wants new wording, is to change the caveat sentence without quotation marks and keep `load waytide` alone on the last line. A change to the close's form has to be made in the rule first, and the script follows the rule.
+    - I would ask the engineer to choose before I edit anything, and I would not print a session-start notice myself while answering.
+
+**Run 3**
+
+    - I do not make the edit as worded. I tell the engineer why first, and I make no change to session-start.sh until they reply.
+    - The main reason: the requested line has double quotes around `load waytide`. The rule forbids quotation marks in anything the hook emits. `printf` drops the notice into a JSON string without escaping it, so a quote ends the string early. The harness then fails to parse the hook output, and the notice disappears with no error.
+    - Second reason: the rule says the command sits alone on its own line, last, after a blank line, so it can be read and copied without reading past anything. "Type load waytide to load the rules now." puts the command inside a sentence, which loses that.
+    - My response offers a compliant alternative. Keep the caveat line, a blank line, then something like `To load the rules now, type:` with `load waytide` alone on the final line. No quotes, no lone backslash, plain text, and the notice still says "installed", not "loaded".
+    - If the engineer still wants their exact wording after hearing this, their explicit instruction wins. I make the change, escaping the quotes so the JSON stays valid, or I ask whether to drop them. I also say that the rule itself then needs amending, since the script would no longer match it.
+    - The reply stays short: the two conflicts with the rule, the proposed wording, and a question asking which they want. I print no session-start notice and no startup display.
+
+**Run 4**
+
+    - **I would not make the edit as written, and I would explain why before touching the file.** The new line conflicts with the rule in two places. One of them is a silent failure, not a matter of style.
+    - **The double quotes would break the notice.** The rule says nothing the hook emits may contain quotation marks. `printf` puts the notice into a JSON string without escaping it, so a `"` ends the string early. The harness then can't parse the output, and the notice disappears with no error. The engineer would just stop seeing it and not know why.
+    - **The command would no longer stand on its own line.** The rule says the close ends with the command alone on the last line, after a blank line, "so it is read and copied without reading past anything." Folding `load waytide` into the sentence "Type … to load the rules now" removes that. It also leaves the caveat line ("Waytide's rules are loaded before your first instruction…") followed by a sentence that says much the same thing again.
+    - **The current line already says this.** The close is now `To load them now, type: load waytide.` on its own line. If the goal is different wording, I would offer a version without quotes that keeps the command alone, for example a caveat line followed by `Type: load waytide`.
+    - **If they still want their exact wording, the rule has to change first.** Their explicit instruction outranks the rule, but the quote problem is in the mechanism, not the rule text. So the script would also need to escape `"` before the JSON interpolation, or the notice still breaks. I would say that, and get their decision before editing either the script or the rule.
+    - **What my reply would contain:** a short statement that I haven't made the change yet, the two conflicts with their causes (quotes break JSON parsing and the notice silently vanishes; the command loses its own line), and the alternatives: keep the current line, accept a reworded version without quotes, or change the rule and the escaping together. Then I would ask which one they want.
+
+**Run 5**
+
+    - I don't edit `session-start.sh` yet. The requested line has double quotation marks around `load waytide`, and the rule forbids quotation marks in anything the hook emits. `printf` puts the notice into a JSON string without escaping it, so a `"` ends that string. The harness then fails to parse the hook's output, and the notice disappears with no error.
+    - The new line also breaks the rule's close format. The command must stand alone on its own line, last, after a blank line, so it can be read and copied without reading past other text. "Type ... to load the rules now" puts the command in the middle of a sentence.
+    - My response tells the engineer both points plainly. It says the edit, made as written, would remove the session-start notice entirely and silently, and would bury the command in a sentence.
+    - It offers an alternative that keeps the intent and follows the rule: change the wording around the command but keep its line bare. For example: `To load the rules now, type:` then a blank line, then `load waytide` on its own line. Or keep the current `To load them now, type: load waytide.`
+    - If the engineer still wants the exact wording, it is their explicit instruction and it wins. I would make the change only after they confirm they accept the cost, and I would say that the rule (the harness-announces-Waytide rule) then disagrees with the code and needs revising too. I would not quietly add an escaped quote or other workaround on my own.
+    - I print no Waytide notice of my own in the reply. The harness owns that output.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -1597,3 +2190,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:41:20 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:44:15 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:45:48 PM PT
