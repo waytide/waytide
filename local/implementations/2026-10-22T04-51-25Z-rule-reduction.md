@@ -130,6 +130,8 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Solubility runs the other way, corrected by the engineer: higher is easier to process.** A rule's measured solubility is 1 − its combined score, so it runs as the clarity score does and as the word does in the `language` solubility rule. The five candidates' `**Solubility:**` lines now carry it — items-convention 0.11, an-item-takes-a-log-entry 0.17, a-project-declares-its-package-set 0.20, implementation-lifecycle 0.21, and announce-waytide-at-session-start 0.24 — and forecast item 8 is restated to match: the lower a rule's solubility, the lower its compressibility. The term still names only a rule's measured score.
 
+**Solubility is scaled to 0–100, at the engineer's direction: (1 − the combined score) × 100, as a whole number.** items-convention is 11, an-item-takes-a-log-entry 17, a-project-declares-its-package-set 20, implementation-lifecycle 21, and announce-waytide-at-session-start 24. Computed from the unrounded scores, each rounds to the same whole number as the two-decimal value times 100.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -145,3 +147,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:17:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:03 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT

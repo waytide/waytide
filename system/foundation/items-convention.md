@@ -1,6 +1,6 @@
 # `waytide/local/items/` — the project's items, one file per item
 
-- **Solubility:** 0.11
+- **Solubility:** 11
 - **Original rank:** 1 of 106
 - **Unclarity:** 0.82
 
