@@ -36,7 +36,7 @@ Committed before the work. Each item carries the agent's confidence.
 2. **Sessions answer representative requests the same from the flattened read as from today's**, as the derived-rule-files experiment found for footers and history. *Moderate confidence.*
 3. **For a few rules, what is essential is the engineer's judgment rather than the agent's**, as passage 45 of the obsolete-rules experiment was. *Moderate confidence.*
 
-8. **Added 2026-10-21, before any rule was flattened — the engineer's hypothesis: the higher a rule's solubility score, the lower its compressibility.** A rule harder to understand is one the agent can interpret less, and so restate less economically. **Compressibility** is the share of a rule's characters removed when it is restated with the same effect and outcome: a rule flattened from 8,935 characters to 6,000 has a compressibility of 0.33. *The engineer's suspicion, stated as a forecast.*
+8. **Added 2026-10-21, before any rule was flattened — the engineer's hypothesis: the lower a rule's solubility score, the lower its compressibility.** A rule harder to understand is one the agent can interpret less, and so restate less economically. **Compressibility** is the share of a rule's characters removed when it is restated with the same effect and outcome: a rule flattened from 8,935 characters to 6,000 has a compressibility of 0.33. *The engineer's suspicion, stated as a forecast.*
    - **The agent's competing expectation: the reverse.** A rule hard to follow because it is verbose, repetitive, or carries history may have the most to remove, and so compress the most. *Low confidence, as the engineer's is untested too.* Measuring each subject rule's compressibility beside its solubility score tells the two apart.
 
 **Phase 2 — packaged-script**
@@ -128,6 +128,8 @@ Committed before the work. Each item carries the agent's confidence.
 
 **"Solubility" now names the combined score, for a rule's measured score only**, at the engineer's direction. It runs as the combined score does: higher is larger and less clear together, so harder to process. The engineer chose that direction knowing it reverses the word's meaning in the `language` package's solubility rule, where higher solubility is easier understanding, and kept that meaning — and design-by-efferent's — everywhere else. The five candidates' `**Solubility:**` lines, which had carried the inverse of their rank, now carry the combined score: items-convention 0.89, an-item-takes-a-log-entry 0.83, a-project-declares-its-package-set 0.80, implementation-lifecycle 0.79, and announce-waytide-at-session-start 0.76.
 
+**Solubility runs the other way, corrected by the engineer: higher is easier to process.** A rule's measured solubility is 1 − its combined score, so it runs as the clarity score does and as the word does in the `language` solubility rule. The five candidates' `**Solubility:**` lines now carry it — items-convention 0.11, an-item-takes-a-log-entry 0.17, a-project-declares-its-package-set 0.20, implementation-lifecycle 0.21, and announce-waytide-at-session-start 0.24 — and forecast item 8 is restated to match: the lower a rule's solubility, the lower its compressibility. The term still names only a rule's measured score.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -142,3 +144,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:16:14 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:17:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:03 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT

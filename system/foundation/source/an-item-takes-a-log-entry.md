@@ -1,6 +1,6 @@
 # An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
 
-- **Solubility:** 0.83
+- **Solubility:** 0.17
 - **Original rank:** 2 of 106
 - **Unclarity:** 0.77
 
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
