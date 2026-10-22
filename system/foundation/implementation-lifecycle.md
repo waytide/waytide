@@ -14,6 +14,15 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **The worktree segment is an exception to the upstream clause, and it is one deliberately.** The upstream target is kept out of the name because a name that goes stale misleads, and a worktree can be added or removed the same way. What separates them is where each fact is asked about. An upstream target is asked about when the work is merged, and the record is open at that moment. The existence of a worktree is asked about in `git branch`, where the record is not. So the one that has no other answer at the point of asking is the one the name carries — and the rename is what keeps it from becoming the stale name the other clause refuses.
 
+## An experiment in phases
+
+**An experiment may run in phases**, each a question of its own that serves the experiment's. The record names the phases and their order at the start, and states a forecast for each before its work.
+
+- **A phase's branch is the experiment's branch name, a dot, and the phase's name** — `experiment/rule-reduction.flattening`. A slash cannot join them: git refuses a branch named beneath another branch's name, so `experiment/rule-reduction/flattening` cannot exist beside `experiment/rule-reduction`. The `worktree/` segment, where the experiment has one, carries into each phase's name.
+- **A phase branches from the experiment's branch and concludes into it.** It is affirmed, refuted, or inconclusive on the engineer's declaration, as an experiment is, and an affirmed phase merges back into the experiment's branch. The experiment's record carries each phase's verdict and findings.
+- **The experiment concludes after its phases**, and only then merges to its upstream branch. A phase never merges anywhere else.
+- **One phase runs at a time, in the order the record names**, each starting from the experiment's branch as the phases before it left it.
+
 ## The working location, chosen at the start
 
 **Put it through the selection interface at every start, with no standing default.** The trade is situational: work that resolves in a sitting favours branch only, and work that has to coexist with other work favours a worktree.
