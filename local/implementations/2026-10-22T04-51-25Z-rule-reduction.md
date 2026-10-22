@@ -36,6 +36,9 @@ Committed before the work. Each item carries the agent's confidence.
 2. **Sessions answer representative requests the same from the flattened read as from today's**, as the derived-rule-files experiment found for footers and history. *Moderate confidence.*
 3. **For a few rules, what is essential is the engineer's judgment rather than the agent's**, as passage 45 of the obsolete-rules experiment was. *Moderate confidence.*
 
+8. **Added 2026-10-21, before any rule was flattened — the engineer's hypothesis: the higher a rule's solubility score, the lower its compressibility.** A rule harder to understand is one the agent can interpret less, and so restate less economically. **Compressibility** is the share of a rule's characters removed when it is restated with the same effect and outcome: a rule flattened from 8,935 characters to 6,000 has a compressibility of 0.33. *The engineer's suspicion, stated as a forecast.*
+   - **The agent's competing expectation: the reverse.** A rule hard to follow because it is verbose, repetitive, or carries history may have the most to remove, and so compress the most. *Low confidence, as the engineer's is untested too.* Measuring each subject rule's compressibility beside its solubility score tells the two apart.
+
 **Phase 2 — packaged-script**
 
 4. **The read falls to one to three tool calls, and its median duration falls well below the variance measured so far — under 20 seconds.** *Moderate confidence.*
@@ -138,3 +141,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:14:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:16:14 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:17:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:03 PM PT
