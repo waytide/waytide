@@ -67,8 +67,23 @@ Committed before the work. Each item carries the agent's confidence.
 
 **The phase goes one rule at a time, on rules the engineer chooses.** The engineer will give the specifications for which rules form the subject set. Each rule in it is flattened and put to the engineer on its own, rather than the set being flattened by agents and reviewed afterward.
 
+### Candidates for the subject set — 2026-10-21
+
+**The engineer asked which rules combine significant volume with a lack of clarity.** All 108 compiled rules were ranked by size and by six measures of how hard a rule is to follow: average sentence length, the share of sentences over 25 words — STE's limit for descriptive text — past-tense and history words, dashes used as asides, citations of other rules, and negations. The median rule is 3,500 characters at 17 words a sentence. The top candidates were then read.
+
+| rule | characters | what makes it hard to follow |
+|---|---|---|
+| items-convention | 8,935 | It contradicts itself: "No tag is reserved here" and "The tag describes and decides nothing", where `[work-item]` is now a reserved tag that decides a work item's states and `[idea]` is assigned by rule. It carries history in its body. The highest combined score. |
+| announce-waytide-at-session-start | 27,994 | Size above all — three times the next rule and eight times the median. Its sentences are short, and much of it is accounts of earlier forms and failures, kept in the body in the derived-rule-files history move because each carries a reason. |
+| an-item-takes-a-log-entry | 7,493 | More argument than instruction: its directives are in its first third, and the rest argues why the rule exists. |
+| a-project-declares-its-package-set | 6,156 | Long sentences: 49% are over 25 words, the highest of any rule. Its structure is clear. |
+| implementation-lifecycle | 13,855 | Size, and long sentences — 30% over 25 words — with the new phases section added. |
+
+**The agent recommended items-convention**, as the clearest case of both, part of whose unclarity came from additions made on 2026-10-21, **and announce-waytide-at-session-start**, where volume dominates and flattening would show its size effect most. The subject set is the engineer's to specify.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:56:47 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:58:18 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:00:55 PM PT

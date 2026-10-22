@@ -1,0 +1,1 @@
+# Five rules are found to combine size with a lack of clarity — items-convention, announce-waytide-at-session-start, an-item-takes-a-log-entry, a-project-declares-its-package-set, and implementation-lifecycle — as candidates for the flattening phase's subject set
