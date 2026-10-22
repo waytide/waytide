@@ -700,6 +700,17 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the directive check runs on #13**, by the method used for the other compressed rules, with the prompts' file paths changed to `check13`. It is the first check whose prompt uses the verdict **less precise**. The criterion is the same. The compressed #13 departs from its source on purpose nowhere.
 
+### #14 is compressed — 2026-10-22
+
+**#14, implementation-lifecycle, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before `Related:`. Against its body, as the others were measured:
+
+- **compression 0.43**: 13,389 characters to 7,676
+- **change 0.63**: of 2,190 words, 820 stay in place
+
+**It is compressed in short sentences, keeping the small directives**, as #13 was. The three option texts of the working-location gate stay word for word, since they are what the engineer is shown. A reading against the source before committing put back four small directives the first draft had left out. They were to record both start choices, to conclude by the location as it then stands, that the current branch has nothing to return from, and that a forgotten feature is reported by the notice. What went is mostly the argument: why the worktree segment is an exception, why the current branch is offered last, and why the drift watch is only a practice.
+
+**Its solubility rises from 21 to 42, and its clarity score from 0.42 to 0.76**, against the same 105 rules. Its sentences average 15.1 words, down from 20.3, and 7% are over 25 words, down from 30%. The simulation and the directive check have not been run on it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3686,3 +3697,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:41:01 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:16 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:06:22 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:00 PM PT
