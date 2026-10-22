@@ -1,5 +1,7 @@
 # The harness announces Waytide's installation. The agent never prints the notice
 
+**Solubility:** 2
+
 A project running Waytide announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
 
 - **A session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`. That script reads the package directories actually present and emits a notice. The notice says what is installed, and what the engineer can type to have it read:
@@ -251,3 +253,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:34:47 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT

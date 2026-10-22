@@ -1,5 +1,7 @@
 # An implementation runs on a branch, from a working location chosen at the start, to a declared end
 
+**Solubility:** 5
+
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
 **Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the implementations-convention). Every clause below that names one kind names it because of that difference, and no other clause varies.

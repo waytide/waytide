@@ -81,9 +81,12 @@ Committed before the work. Each item carries the agent's confidence.
 
 **The agent recommended items-convention**, as the clearest case of both, part of whose unclarity came from additions made on 2026-10-21, **and announce-waytide-at-session-start**, where volume dominates and flattening would show its size effect most. The subject set is the engineer's to specify.
 
+**Each candidate carries a `**Solubility:**` attribute**, at the engineer's direction: the inverse of its rank in the table above, so the least soluble is 1. items-convention is 1, announce-waytide-at-session-start 2, an-item-takes-a-log-entry 3, a-project-declares-its-package-set 4, and implementation-lifecycle 5. The line sits under each source rule's title, and the compiler carries it into the compiled rule.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:56:47 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:58:18 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:00:55 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
