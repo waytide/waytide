@@ -696,6 +696,10 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The checking prompt for future checks uses the new words, and the sections above are updated to them**, at the engineer's direction, since "weakened" was misleading. The appendices keep "weakened" where they quote the prompt the agents were given and the agents' answers word for word.
 
+### The directive check on #13 — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the directive check runs on #13**, by the method used for the other compressed rules, with the prompts' file paths changed to `check13`. It is the first check whose prompt uses the verdict **less precise**. The criterion is the same. The compressed #13 departs from its source on purpose nowhere.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3681,3 +3685,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:36:12 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:41:01 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:16 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 2:06:22 PM PT
