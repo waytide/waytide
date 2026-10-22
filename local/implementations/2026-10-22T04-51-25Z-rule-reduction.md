@@ -488,6 +488,35 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **The harness flagged the listing as instruction-shaped**, because it names `.claude/settings.json`. That is the rule's subject, and the list is used as data, not acted on.
 
+### The directive check on #15 — results, 2026-10-22
+
+**No directive is lost, but one is materially weakened, so by the criterion committed before the check, the compressed #15 does not have the same effect as its source.** The two checkers agreed on 74 of the 76 directives.
+
+| | checker A | checker B | resolved |
+|---|---|---|---|
+| kept | 68 | 70 | 69 |
+| weakened | 8 | 6 | 7 |
+| lost | 0 | 0 | 0 |
+
+**The two disagreements, resolved by reading both versions:**
+
+- **74, no opt-out:** weakened. The source says "Add no opt-out", an imperative, and names the removed `WAYTIDE_QUIET`. The compressed version says "There is no opt-out", with the reason. Stated as a rule's bold line, with its reason, it still opposes adding one.
+- **75, quieting must not disable the read instruction:** kept. The compressed version says the read instruction "is emitted every session", and nothing that is emitted every session can be quieted.
+
+**The seven weakened directives, and whether each matters:**
+
+| # | the directive | what the compressed version lacks | material |
+|---|---|---|---|
+| 20 | `uncommitted changes` appears only when there is uncommitted work | "only" | no: "appears when", with the clean example line, says the same |
+| 24 | `unpushed commits` appears when committed work exists only in this working copy | the trigger | no: the segment's name and its comparison against the remote-tracking ref carry it |
+| 25 | segments shown together are named in words that read distinctly | the general requirement | no for the segments that exist. It would matter only to a new segment |
+| 28 | an upstream missing by accident is not folded into `unpushed commits` | the decision, and its reason | **yes**: an agent asked to report a missing upstream has nothing telling it the segment was deliberately kept to one fact |
+| 58 | beside the packages, the read names `local/rules/` and `local/vocabulary.md` and nothing else, never `local/` as a whole | "nothing else", and the ban on naming `local/` | no: "Name the other working directories and leave them out" excludes both |
+| 71 | `install.sh` checks whether `.claude/settings.json` is ignored, and prints how to correct it | that it prints the correction, and the exact path checked | no, narrowly: the fix is stated beside the warning, and the source's own heading states the check as "a project that ignores `.claude/`" |
+| 74 | add no opt-out | the imperative, and the removed `WAYTIDE_QUIET` | no, as resolved above |
+
+**What it establishes.** The check found what the simulation could not. Directive 28 governs a change to the status-line script, not a session's behavior, and none of the simulation's scenarios came near it. The other six weakenings are losses of exactness that leave the behavior the same. Restoring directive 28 in the compressed version would meet the criterion, within what this check shows. The limits remain: one listing agent's reading of the source, the checkers' judgments, and the agent's judgment of what is material.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2741,6 +2770,178 @@ Every directive is kept: the three moments and every state they cover, the obser
     75. Quieting a display must not disable the mechanism that carries the read instruction.
     76. In `.claude/settings.json`, the `SessionStart` hook points at `session-start.sh` and the `statusLine` points at `statusline.sh`, the two foundation scripts.
 
+### The checking prompt
+
+    Read the file /private/tmp/claude-501/check15/directives.md, a numbered list of the directives in a rule. Then read the file /private/tmp/claude-501/check15/compressed.md, a shorter version of the same rule.
+
+    For each directive in the list, judge whether the shorter version carries it:
+
+    - **kept** — the shorter version states it, or states something that requires the same behavior
+    - **weakened** — the shorter version states part of it, or states it less strictly, or makes it ambiguous
+    - **lost** — the shorter version does not state it and nothing in it requires it
+
+    Answer with one line per directive, in the list's order: its number, the verdict, and, for kept or weakened, the words in the shorter version that carry it, quoted. For weakened or lost, add what is missing in a few words. Judge only from the two files. Use no tool except reading those two files.
+
+### Checker A, word for word
+
+    1 kept: "The agent prints no notice, at session start or at any other time."
+    2 kept: "The agent does not print it." (the startup display)
+    3 kept: "The one thing the agent prints at the start is the package set stanza, where a project shows one"
+    4 kept: "A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice"
+    5 kept: the example notice ("Waytide installed at waytide/system/ ..." / "To load them now, type: load waytide.") and "The command names the read outright"
+    6 kept: "The open line names experiments and features that have not concluded" and "A blank line precedes the close, after any open line"
+    7 kept: "The notice carries no mark. The startup display prints it", together with "When the engineer types `load waytide`, a `UserPromptSubmit` hook runs ... startup-display.sh"
+    8 kept: "No quotation marks, and no lone backslash, in anything the hook emits. `printf` interpolates ... with no escaping ... a lone backslash begins an invalid escape."
+    9 kept: "read from each record's `**State:**` line under `waytide/local/implementations/`"
+    10 kept: "An experiment that is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded has concluded, as has a feature that is Completed, Abandoned, or Superseded."
+    11 kept: "One that is Suspended or carries no state line is reported."
+    12 kept: "With nothing open the line is absent."
+    13 kept: "keeps the system's presence on screen all session" and "the script renders the directory and branch too"
+    14 kept: "The repository name leads, in bold, a terminal escape sequence"
+    15 kept: "the only emphasis on the line"
+    16 kept: "The Waytide segment is one word, with no package count."
+    17 kept: "Presence is read from disk, by the same README test the notice uses."
+    18 kept: "the Waytide segment trails after a double colon"
+    19 kept: "The engineer's segments are separated by a middle dot"
+    20 weakened: "`uncommitted changes` appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored." Missing: "only when". The rule gives the trigger but does not say the segment is absent otherwise. The clean example line implies it but does not state it.
+    21 kept: "It is words, not a mark like `master*`."
+    22 kept: "`untracked files` names the case ... An untracked file raises both segments"
+    23 kept: "An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted."
+    24 weakened: "`unpushed commits` ... compares against the remote-tracking ref". Missing: the condition that makes the segment appear (committed work that exists only in this working copy) is never stated.
+    25 weakened: "`untracked files` names the case whose remedy differs". Missing: the general requirement that segments shown together have names that read distinctly. Only the fixed names themselves carry it.
+    26 kept: "`unpushed commits` carries no count"
+    27 kept: "never reaches the network. It compares against the remote-tracking ref, so it reflects the last fetch."
+    28 weakened: "A branch with no upstream reports nothing, since unpushed is relative to an upstream." Missing: that an upstream missing by accident is not folded into the segment.
+    29 kept: "When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`. It prints the title, the copyright and license, the loading line, and the figure"
+    30 kept: "read from the initialization-rule"
+    31 kept: "once, on that command only"
+    32 kept: "A committed `.claude/settings.json` wires the three, and `install.sh` places it in a consuming project."
+    33 kept: "The notice goes in `systemMessage`, for the engineer. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent"
+    34 kept: "They are different texts for different readers."
+    35 kept: "It carries the whole instruction." and "`load waytide` asks for exactly that read and nothing more."
+    36 kept: "The read is unconditional. The apparent size of the first request is not a reason to defer it."
+    37 kept: "the read instruction is emitted every session" and "The read is unconditional."
+    38 kept: the example notice's last two lines: "Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments." and "To load them now, type: load waytide."
+    39 kept: "The close is always present"
+    40 kept: "A blank line precedes the close"
+    41 kept: "after any open line"
+    42 kept: "A second blank line stands the command alone"
+    43 kept: "the caveat, then the command on a line of its own, last"
+    44 kept: "The command names the read outright" and "type: load waytide"
+    45 kept: "The caveat says `a few moments`"
+    46 kept: "The notice is plain text. The harness renders `systemMessage` literally"
+    47 kept: "The close's `are loaded` describes what the session does next and reports no read."
+    48 kept: "No quotation marks ... in anything the hook emits."
+    49 kept: "Read `foundation/` first"
+    50 kept: "and each package's `vocabulary.md`"
+    51 kept: "Read the project's `local/rules/` and `local/vocabulary.md`"
+    52 kept: "Name the other working directories and leave them out."
+    53 kept: "Print no package count."
+    54 kept: "Then wait for the engineer's request."
+    55 kept: "each named whether or not it exists, its absence ordinary"
+    56 kept: "each named whether or not it exists, its absence ordinary"
+    57 kept: "Read the compiled rules, leaving out each package's `source/` directory and `README.md`."
+    58 weakened: "Read the project's `local/rules/` and `local/vocabulary.md`". Missing: "and nothing else", and the ban on naming `local/` as a whole in place of the two.
+    59 kept: "This rule does not restate the directory list. `session-start.sh` is the only place it is enumerated"
+    60 kept: "Do not print the startup display." The hook that prints it is described under "The startup display", which ends "The agent does not print it."
+    61 kept: "The mark's art is not carried on this channel. The display hook reads it from the initialization-rule."
+    62 kept: "To load them now, type: load waytide." and "`load waytide` asks for exactly that read and nothing more."
+    63 kept: "The install line enumerates what is on disk." and "Presence is read from disk"
+    64 kept: "A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it."
+    65 kept: "Nothing prints a fixed list."
+    66 kept: "it can observe that the packages are on disk and the configuration is live, and not that any rule was read"
+    67 kept: "Instructing is not vouching: the notice still reports nothing about whether the agent read the rules."
+    68 kept: "The notice says `installed`, never `loaded`."
+    69 kept: "Call it the session-start notice, not the load notice."
+    70 kept: "The status line reports the system active, a claim about the configuration rather than the agent."
+    71 weakened: "`install.sh` warns when git ignores `.claude/` and the file is not tracked." Missing: that it prints how to correct it. The check is also stated against `.claude/` rather than `.claude/settings.json`.
+    72 kept: "The fix is `.claude/*` with `!.claude/settings.json`, since git cannot re-include a file inside an excluded directory"
+    73 kept: "`install.sh` never merges into an existing `.claude/settings.json`: it prints the block and leaves the decision to the engineer."
+    74 weakened: "There is no opt-out." Missing: that none may be added (the removed `WAYTIDE_QUIET` is the example), and the explicit statement that the surfaces cannot be silenced.
+    75 weakened: "the read instruction is emitted every session". Missing: the explicit constraint that quieting a display must not disable the mechanism that carries the read instruction.
+    76 kept: "A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`", "`waytide/system/foundation/statusline.sh` keeps the system's presence", and "A committed `.claude/settings.json` wires the three"
+
+### Checker B, word for word
+
+    1 kept: "The agent prints no notice, at session start or at any other time."
+    2 kept: "The agent does not print it." / "Do not print the startup display."
+    3 kept: "The one thing the agent prints at the start is the package set stanza, where a project shows one"
+    4 kept: "A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice"
+    5 kept: "The install line enumerates what is on disk" / "The command names the read outright" (with the example notice)
+    6 kept: "The open line names experiments and features that have not concluded" / "A blank line precedes the close, after any open line" (one line, placed between install line and close in the example)
+    7 kept: "The notice carries no mark. The startup display prints it" / "When the engineer types `load waytide`, a `UserPromptSubmit` hook runs ... startup-display.sh"
+    8 kept: "no lone backslash, in anything the hook emits. `printf` interpolates ... with no escaping ... a lone backslash begins an invalid escape"
+    9 kept: "read from each record's `**State:**` line under `waytide/local/implementations/`"
+    10 kept: "An experiment that is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded has concluded, as has a feature that is Completed, Abandoned, or Superseded" (with "names experiments and features that have not concluded")
+    11 kept: "One that is Suspended or carries no state line is reported."
+    12 kept: "With nothing open the line is absent."
+    13 kept: "keeps the system's presence on screen all session" / "the script renders the directory and branch too"
+    14 kept: "The repository name leads, in bold, a terminal escape sequence"
+    15 kept: "the only emphasis on the line"
+    16 kept: "The Waytide segment is one word, with no package count."
+    17 kept: "Presence is read from disk, by the same README test the notice uses."
+    18 kept: "the Waytide segment trails after a double colon"
+    19 kept: "The engineer's segments are separated by a middle dot"
+    20 weakened: "`uncommitted changes` appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored" — missing "only when"; says when it appears, not that it appears in no other case.
+    21 kept: "It is words, not a mark like `master*`."
+    22 kept: "An untracked file raises both segments"
+    23 kept: "An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted."
+    24 weakened: "`unpushed commits` ... compares against the remote-tracking ref" — the trigger (committed work that exists only in this working copy) is never stated.
+    25 weakened: segment names given in the example ("uncommitted changes · untracked files · unpushed commits") — the requirement that co-present segments be named distinctly is not stated.
+    26 kept: "`unpushed commits` carries no count"
+    27 kept: "never reaches the network. It compares against the remote-tracking ref"
+    28 weakened: "A branch with no upstream reports nothing" — missing that an upstream missing by accident is not folded into the segment.
+    29 kept: "When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`. It prints the title, the copyright and license, the loading line, and the figure"
+    30 kept: "read from the initialization-rule" / "the initialization-rule — the startup display"
+    31 kept: "once, on that command only"
+    32 kept: "A committed `.claude/settings.json` wires the three, and `install.sh` places it in a consuming project."
+    33 kept: "The notice goes in `systemMessage`, for the engineer. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent"
+    34 kept: "They are different texts for different readers."
+    35 kept: "It carries the whole instruction." / "`load waytide` asks for exactly that read and nothing more."
+    36 kept: "The read is unconditional. The apparent size of the first request is not a reason to defer it."
+    37 kept: "The read is unconditional." / "the read instruction is emitted every session"
+    38 kept: (example) "Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments." ... "To load them now, type: load waytide." — wording appears only in the example, not stated as required text.
+    39 kept: "The close is always present"
+    40 kept: "A blank line precedes the close"
+    41 kept: "after any open line"
+    42 kept: "A second blank line stands the command alone"
+    43 kept: "the caveat, then the command on a line of its own, last"
+    44 kept: "The command names the read outright" / "type: load waytide"
+    45 kept: "The caveat says `a few moments`"
+    46 kept: "The notice is plain text. The harness renders `systemMessage` literally"
+    47 kept: "The close's `are loaded` describes what the session does next and reports no read."
+    48 kept: "No quotation marks ... in anything the hook emits."
+    49 kept: "Read `foundation/` first"
+    50 kept: "and each package's `vocabulary.md`"
+    51 kept: "Read the project's `local/rules/` and `local/vocabulary.md`"
+    52 kept: "Name the other working directories and leave them out."
+    53 kept: "Print no package count."
+    54 kept: "Then wait for the engineer's request."
+    55 kept: "each named whether or not it exists, its absence ordinary"
+    56 kept: "each named whether or not it exists, its absence ordinary"
+    57 kept: "Read the compiled rules, leaving out each package's `source/` directory and `README.md`."
+    58 weakened: "Read the project's `local/rules/` and `local/vocabulary.md`" / "Name the other working directories and leave them out" — missing "nothing else" and the ban on naming `local/` as a whole in their place.
+    59 kept: "This rule does not restate the directory list. `session-start.sh` is the only place it is enumerated"
+    60 kept: "Do not print the startup display." (with "The harness announces Waytide, through three surfaces it renders")
+    61 kept: "The mark's art is not carried on this channel. The display hook reads it from the initialization-rule." — the "not a JSON literal" reason is dropped.
+    62 kept: "To load them now, type: load waytide." / "`load waytide` asks for exactly that read and nothing more."
+    63 kept: "The install line enumerates what is on disk." / "Nothing prints a fixed list." — the authoring-source `system/` variant is not mentioned.
+    64 kept: "A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it."
+    65 kept: "Nothing prints a fixed list."
+    66 kept: "it can observe that the packages are on disk and the configuration is live, and not that any rule was read"
+    67 kept: "Instructing is not vouching: the notice still reports nothing about whether the agent read the rules."
+    68 kept: "The notice says `installed`, never `loaded`."
+    69 kept: "Call it the session-start notice, not the load notice."
+    70 kept: "The status line reports the system active, a claim about the configuration rather than the agent."
+    71 weakened: "`install.sh` warns when git ignores `.claude/` and the file is not tracked." — does not say install.sh prints how to correct it; the check is stated against `.claude/`, not `.claude/settings.json`.
+    72 kept: "The fix is `.claude/*` with `!.claude/settings.json`, since git cannot re-include a file inside an excluded directory"
+    73 kept: "`install.sh` never merges into an existing `.claude/settings.json`: it prints the block and leaves the decision to the engineer."
+    74 kept: "There is no opt-out." — the explicit ban on adding one (e.g. `WAYTIDE_QUIET`) is implied, not stated.
+    75 kept: "the read instruction is emitted every session"
+    76 kept: "A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`" / "A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too" — the statusLine-to-statusline.sh mapping is implied rather than stated.
+
+    Tally: 70 kept, 6 weakened (20, 24, 25, 28, 58, 71), 0 lost.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -2785,3 +2986,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:55:09 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:01:34 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:02:14 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:04:07 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:05:24 AM PT
