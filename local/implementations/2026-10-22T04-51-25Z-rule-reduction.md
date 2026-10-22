@@ -87,6 +87,16 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Each candidate also carries its `**Unclarity:**` score**, the mean of its six clarity measures' ranks among the 106 rules, from 0 to 1: items-convention 0.82, an-item-takes-a-log-entry 0.77, a-project-declares-its-package-set 0.76, implementation-lifecycle 0.58, and announce-waytide-at-session-start 0.52. **The engineer directed that it be recorded as unclarity and displayed as a clarity score, 1 − unclarity**, so items-convention shows as 0.18 and announce-waytide-at-session-start as 0.48.
 
+**The candidates, with every measure, as shown to the engineer on 2026-10-21.** Size is each compiled rule before its attribute lines were added. The clarity score is 1 − unclarity. The combined score is the mean of the size rank and the unclarity, each 0 to 1 among the 106 rules, where higher is larger and less clear together.
+
+| rule | size, characters | Solubility | Original rank | clarity score | combined score |
+|---|---|---|---|---|---|
+| items-convention | 8,935 | 1 | 1 of 106 | 0.18 | 0.89 |
+| announce-waytide-at-session-start | 27,994 | 2 | 10 of 106 | 0.48 | 0.76 |
+| an-item-takes-a-log-entry | 7,493 | 3 | 2 of 106 | 0.23 | 0.83 |
+| a-project-declares-its-package-set | 6,156 | 4 | 5 of 106 | 0.24 | 0.80 |
+| implementation-lifecycle | 13,855 | 5 | 6 of 106 | 0.42 | 0.79 |
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -96,3 +106,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:00:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:14:16 PM PT
