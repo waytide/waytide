@@ -11,6 +11,21 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 **How to apply:** A commit records that a task or a piece of work is finished. Phrase the subject and the body as the task *being* done. Say "Task N is done", or "X is complete". Never phrase it as "mark ... done/complete". Applies to the commit subject and body. The same plain-statement preference extends to prose addressed to the user.
 
+## Compressed
+
+**A commit message never uses "mark ... done" or "mark ... complete".** State the accomplishment as a fact about the work. Do not phrase it as bookkeeping on a checkbox. Write **"Task 9 is done"**, not "mark Task 9 done" or "mark Task 9 as complete".
+
+| Don't | Do |
+|---|---|
+| `Log: mark Task 9 done (green-on-arrival)` | `Log: Task 9 is done (green-on-arrival)` |
+| `mark the predicate task complete` | `the predicate task is done` |
+
+**Phrase finished work as the task being done.** Say "Task N is done" or "X is complete". This applies to the commit subject and the commit body.
+
+**Prose addressed to the user follows the same preference.** State the plain fact. Do not describe the act of marking it.
+
+**Why:** The commit records the state of the work, not the clerical act of ticking a box.
+
 Related:
 
 - the no-slang terminology rule
@@ -24,3 +39,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:26 PM PT
