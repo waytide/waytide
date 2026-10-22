@@ -334,6 +334,22 @@ Every directive is kept: the standard and what ETE adds to it, `say it in ETE` a
 
 **S2 is where the versions are most likely to differ.** The default version asks for the record of what the STE dictionary says in its How to apply paragraph and for the record of which case a term is in in its own section. The compressed version puts both in the sequence and in one sentence of its section on absent and not approved.
 
+### The predictability simulation on #7 — results, 2026-10-21
+
+**All thirty answers pass, so #7 is predictable in both versions and the two are equivalent, within what the simulation can show.**
+
+| scenario | default | compressed |
+|---|---|---|
+| S1 — an alternative that carries the meaning | 5 of 5 | 5 of 5 |
+| S2 — an alternative that means something else | 5 of 5 | 5 of 5 |
+| S3 — say it in STE | 5 of 5 | 5 of 5 |
+
+- **S1:** every answer writes `help`, reserves nothing, and records nothing. Every answer also changes "in choosing" to "choose", which the rule does not ask for. Several attribute it to the STE writing rules.
+- **S2:** every answer keeps `tide`, reserves it as a technical noun in the package's `vocabulary.md`, and records that the STE dictionary does not approve it and gives `CYCLE`. Every answer also records the case as a disagreement rather than a gap. The default answers name the case from its own section, and the compressed answers from the one sentence that carries it. So the difference expected here did not appear.
+- **S3:** every answer removes `hinge` and `efferent` and keeps the ordinary words. Most decline to guess what `hinge` means, since neither version defines it. They would read its `vocabulary.md` entry or ask the engineer, under both versions. One default answer leaves `[hinge]` in its draft as a marked placeholder, to be replaced from the entry, and says outright that the word comes out. It is scored as a pass.
+
+**What it does and does not establish.** #7 is at the median, solubility 50, and compressed least of the three, by 0.27, with no behavior lost. With #2 and #11, three rules now show the compressed version matching the default on every scenario scored. A perfect score gives a difference no room to show, so these results say compression kept behavior. They cannot say whether it improved it. The limits recorded for #2 stand.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -1131,6 +1147,395 @@ Every directive is kept: the standard and what ETE adds to it, `say it in ETE` a
     - **Other record:** yes, one log entry for the state change, which the rule requires at every change of state (the an-item-takes-a-log-entry rule). No other files are written. A Priority line, if the item had one, would mean renumbering the ranked items below it, but the scenario gives it none.
     - **What I tell the engineer:** I would say plainly that Lapsed fits the facts but is not allowed for a work item, so I'm recording it as Abandoned on their say-so.
 
+## Appendix — the predictability simulation on #7, its prompts and answers
+
+**Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and the question below, which was the same for all three scenarios. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
+
+### The opening
+
+    You are an AI agent writing prose for a software project whose rules are written in Waytide's own technical English. Your behavior is governed by the rule below, among others you have not been shown. Read it, then answer the question about the scenario. Do not use any tools, read any files, or run anything: answer from the text only.
+
+### The default version of the rule
+
+    # Waytide keeps its own word where the STE dictionary's approved word means something else
+
+    Waytide writes its prose in ASD-STE100 Simplified Technical English. The standard gives an approved dictionary and 53 writing rules. It also permits a project to add its own technical nouns and technical verbs. STE Rules 1.5 through 1.13 govern that.
+
+    **The rules in this directory are Eventide Technical English, or ETE.** That is Waytide's implementation of the standard. The STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the order this rule states. **`Say it in ETE` is the instruction to write that way.** It is not the same request as `say it in STE`. That one asks for the raw standard, and forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved.
+
+    **This rule states the sequence.** The STE dictionary decides first. Waytide keeps its own word where the STE dictionary's approved word means something else.
+
+    **Three rules beside this one carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rule 1.5 and STE Rule 1.12. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives, against STE Rule 1.3. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone, against STE Rule 1.1.
+
+    ## The two answers the STE dictionary can give
+
+    The STE dictionary marks a word as approved or as not approved, or it does not list the word at all. For a word that is not approved, the STE dictionary names an approved alternative.
+
+    - **Use the alternative** where it carries the meaning. `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
+    - **Keep Waytide's word** where the approved word means something else. Reserve it as a technical noun or a technical verb, in a category the entry names. Record it in the package's `vocabulary.md`. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+    - **A word the STE dictionary does not list is not a defect.** STE Rule 1.1 permits an absent word as a technical noun or a technical verb. `efferent`, `cradle`, and `solubility` are all absent.
+
+    **The worked instance is `sweep`.** The STE dictionary replaces `sweep (v)` with `SCAN`, as in `MAKE A SCAN OF THE …`. The `language` vocabulary discontinues `sweep` for **`conform`**. Neither `SCAN` nor `AGREE`, which the STE dictionary gives for `conform`, carries the meaning. The meaning is to bring code or prose into line with a convention. So `conform` is reserved and it wins.
+
+    ## An absent word and a word that is not approved cost different things
+
+    **Absent is a gap.** The standard never considered the word. This is the ordinary case for a term Waytide coined for a concept the standard has no word for.
+
+    **Not approved is a disagreement.** The standard considered the word and named something else. A reservation there rejects a stated decision, so the record says which case a reserved term is in.
+
+    `reserve` is absent. `discontinue` is not approved, and the STE dictionary gives `STOP`.
+
+    ## A substitution is not a reservation
+
+    The two are different acts. A **substitution** replaces a word Waytide rejects. A **reservation** keeps a word STE rejects. `conform` is the two, which is why it reads as one thing.
+
+    **Why:** the standard and Waytide's vocabulary disagree in a small number of places. Each disagreement is settled the same way every time it is met, unless a rule settles it once. The dictionary is right about the ordinary word. It is not right about a term Waytide coined for a concept the standard never addressed. Naming which decides, and when, keeps a writer from choosing a worse word out of deference.
+
+    **How to apply:** write to the STE dictionary. Where the STE dictionary names an alternative, use it. Where the approved word means something else, keep Waytide's word. Reserve it in the package's `vocabulary.md`, in a category the entry names. Record what the STE dictionary says about it.
+
+    Related:
+
+    - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
+    - the a-word-is-reserved-in-six-steps rule — the sequence this rule's step sits in
+    - the ete-declares-its-own-categories rule — the categories a reserved word is named in
+    - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
+    - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
+    - the `language` package's `vocabulary.md` and its language-is-precise-here rule
+    - the specification at `waytide/local/reference/`, which is the authority this rule defers to
+
+### The compressed version of the rule
+
+    # Waytide keeps its own word where the STE dictionary's approved word means something else
+
+    **ETE.** Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary and 53 writing rules. STE Rules 1.5 through 1.13 let a project add its own technical nouns and technical verbs. The rules in this directory are Eventide Technical English, or ETE, Waytide's implementation of the standard. ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states. `Say it in ETE` asks for that. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved.
+
+    **The sequence.** The STE dictionary decides first. For a word it does not approve, it names an approved alternative.
+
+    - **Use the alternative** where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
+    - **Keep Waytide's word** where the approved word means something else. Reserve it as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`, and record what the STE dictionary says about it. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+    - **A word the dictionary does not list is not a defect.** STE Rule 1.1 permits it as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+
+    **The worked instance is `sweep`.** The STE dictionary replaces `sweep (v)` with `SCAN`. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins. A substitution replaces a word Waytide rejects, and a reservation keeps a word STE rejects. They are different acts, and `conform` is both.
+
+    **Absent and not approved differ.** An absent word is a gap: the standard never considered it, as with most terms Waytide coined. A word that is not approved is a disagreement: the standard considered it and named something else, and a reservation rejects that decision. So the record says which case a reserved term is in. `reserve` is absent. `discontinue` is not approved, and the dictionary gives `STOP`.
+
+    **Three rules beside this one carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
+
+    **Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
+
+    Related:
+
+    - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
+    - the a-word-is-reserved-in-six-steps rule — the sequence this rule's step sits in
+    - the ete-declares-its-own-categories rule — the categories a reserved word is named in
+    - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
+    - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
+    - the `language` package's `vocabulary.md` and its language-is-precise-here rule
+    - the specification at `waytide/local/reference/`, which is the authority this rule defers to
+
+### The question
+
+    What do you write, and do you write or record anything else? Answer in at most 6 short bullets.
+
+### S1 — an alternative that carries the meaning
+
+**Scenario:**
+
+    You are writing this sentence for a rule: "The agent assists the engineer in choosing a name." The STE dictionary marks `assist (v)` as not approved and gives `HELP (v)`.
+
+#### S1 — an alternative that carries the meaning, default version
+
+**Run 1**
+
+    - Write: "The agent helps the engineer choose a name."
+    - `HELP` means the same thing as `assist` here, so I use the STE alternative. This is the "use the alternative" case, like `initiate` becoming `start`.
+    - I also changed "in choosing" to "choose". The STE writing rules limit the `-ing` form, and "help ... choose" is the plainer structure.
+    - I write and record nothing else. This is a substitution, not a reservation, so `assist` gets no entry in the package's `vocabulary.md`, no category, and no note about what the STE dictionary says about it.
+    - I would reserve `assist` only if `HELP` meant something different, and it does not.
+
+**Run 2**
+
+    - I write: "The agent helps the engineer choose a name."
+    - Reason: the STE dictionary names `HELP` as the alternative for `assist`, and `help` carries the meaning. The rule says "Use the alternative where it carries the meaning."
+    - I do not keep `assist`. The approved word does not mean something else here, so a reservation has no basis.
+    - I record nothing in any `vocabulary.md`. Reserving a word and recording what STE says about it apply only to a word Waytide keeps against the dictionary.
+    - I also change "in choosing" to "choose", so the sentence uses the verb's plain form. That is a writing-rule matter, not a vocabulary one.
+    - Nothing else is written or recorded. Using an approved alternative is the ordinary case under this rule. It is not a reservation, and it is not a Waytide substitution that would need a record.
+
+**Run 3**
+
+    - I write: "The agent helps the engineer choose a name."
+    - The STE dictionary marks `assist (v)` as not approved and gives `HELP (v)`. `help` means the same thing here, so the rule says to use the alternative.
+    - This is the "use the alternative" case, like `initiate` becoming `start`. It is not the case where Waytide keeps its own word, because the approved word does not mean something else.
+    - I do not reserve `assist`, and I add no entry to the package's `vocabulary.md`. The rule records only reserved words, and a word replaced by its approved alternative is not reserved.
+    - I also change "in choosing" to "choose". This follows the STE writing rules against the `-ing` form, which the related waytide-prose-conforms-to-the-ste-writing-rules rule governs. The rule I was shown does not state this itself.
+    - Nothing else is written or recorded.
+
+**Run 4**
+
+    - Write: "The agent helps the engineer choose a name."
+    - The reason: `HELP` means the same thing as `assist` here, so the rule says to use the alternative. This is the ordinary case, like `initiate` becoming `start`.
+    - Do not keep `assist`. A word is kept and reserved only where the approved word means something else, and here it does not.
+    - Record nothing in the package's `vocabulary.md`. Swapping in the approved word is not a reservation, so there is no entry, no category and no note about what the STE dictionary says.
+    - Do not add a note that a gap or a disagreement was settled. That record is only for reserved terms.
+    - I also changed "in choosing" to "choose", the simpler form of the verb.
+
+**Run 5**
+
+    - I write: "The agent helps the engineer choose a name."
+    - `HELP` means what `assist` means here, so the rule's first case applies: use the STE dictionary's approved alternative.
+    - I make no reservation. `assist` is not a term Waytide coined, and the approved word does not mean something else, so there is no reason to keep it.
+    - I record nothing in any package's `vocabulary.md`. A substitution that follows the dictionary is not a reservation, so no record is needed.
+    - I also change "in choosing" to "choose". This makes the sentence simpler and keeps the verb active, as the STE writing rules prefer.
+
+#### S1 — an alternative that carries the meaning, compressed version
+
+**Run 1**
+
+    - I write: "The agent helps the engineer choose a name."
+    - The STE dictionary decides first. `assist (v)` is not approved, and its approved alternative `HELP (v)` has the same meaning here, so the alternative is used. This is the same kind of case as `initiate` → `start`.
+    - I also change "in choosing" to "choose", so the sentence uses the plain verb form after `help`.
+    - I do not reserve `assist`. A word is kept and reserved only when the approved word means something else, and `help` does not.
+    - I write nothing in any `vocabulary.md` and record nothing about what the dictionary says. Only a reserved term needs that record, and there is none here.
+    - This is not a substitution either, because Waytide did not reject `assist`. The standard's own alternative is used, and no other record is needed.
+
+**Run 2**
+
+    - I write: "The agent helps the engineer choose a name."
+    - `HELP` means the same thing as `assist` here, so the rule's first branch applies: use the alternative. This is the same kind of case as `initiate` becoming `start`.
+    - `assist` does not qualify for the "keep Waytide's word" branch. Waytide did not coin it for a concept the standard never addressed, and the approved word does not mean something else.
+    - I also changed "in choosing" to "choose". That is a simpler verb form, and it comes from the STE writing rules, not from this rule.
+    - I record nothing else. There is no reservation, no `vocabulary.md` entry, no category, and no note of what the STE dictionary says, because those are required only when Waytide keeps its own word.
+    - No substitution is recorded either. Waytide did not reject `assist`; the STE dictionary did, and its decision stands.
+
+**Run 3**
+
+    - I write: "The agent helps the engineer choose a name."
+    - The STE dictionary does not approve `assist (v)` and gives `HELP (v)`. `help` carries the same meaning here, so the rule's first branch applies and I use the alternative.
+    - I also change "in choosing" to "choose", because "helps X choose" is the plainer form and keeps the verb simple.
+    - I reserve nothing. A reservation is only for a word whose approved alternative means something else, and `help` does not.
+    - So I add no entry to any package's `vocabulary.md`, and I record nothing about what the dictionary says. That record is part of a reservation, and there is none here.
+    - This is not a substitution in Waytide's sense either, since that replaces a word Waytide rejects. Here I only follow the dictionary, and nothing else is written or recorded.
+
+**Run 4**
+
+    - I write: "The agent helps the engineer choose a name."
+    - `HELP` means the same thing as `assist` here, so the rule's first step applies: use the alternative, as with `initiate` becoming `start`.
+    - I also drop "in choosing" and write "choose". The -ing construction is not needed, and "helps ... choose" is the plain STE form.
+    - I do not reserve `assist`. A reservation is only for a word whose approved alternative means something else, and `HELP` does not.
+    - I write nothing in any package's `vocabulary.md` and record nothing about what the STE dictionary says. That record goes with a reservation, and there is none.
+    - This is not a gap case either: `assist` is listed in the dictionary and not approved, so STE Rule 1.1's permission for a word the dictionary does not list does not apply.
+
+**Run 5**
+
+    - I write: "The agent helps the engineer choose a name."
+    - `assist` becomes `help`. The approved alternative `HELP (v)` has the same meaning here, so the rule's first branch applies: use the alternative. This is the same kind of change as `initiate` to `start`.
+    - I do not keep `assist`. Waytide never made it a term for its own concept, and `help` does not mean something different. So nothing makes a reservation necessary.
+    - I do not write anything to the package's `vocabulary.md`. That means no reservation, no category, and no note of what the STE dictionary says. That note is needed only when a word is reserved.
+    - I record nothing else. Replacing a word that STE does not approve with the word it gives is ordinary writing. It is not a substitution against a word Waytide rejects, and it is not a disagreement with the dictionary that needs a record.
+    - I also change "assists ... in choosing" to "helps ... choose", because the simpler verb form follows the STE writing rules.
+
+### S2 — an alternative that means something else
+
+**Scenario:**
+
+    Waytide needs a name for one complete pass of an agent reading the rules and then following them. You want to call it a `tide (n)`. The STE dictionary marks `tide` as not approved and gives `CYCLE (n)`, which in STE is a sequence of operations that repeats on equipment.
+
+#### S2 — an alternative that means something else, default version
+
+**Run 1**
+
+    - I write `tide`. `CYCLE` does not carry the meaning: in STE it is a sequence of operations that repeats on equipment, and the thing to name is one complete pass of an agent that reads the rules and then follows them. So Waytide keeps its own word.
+    - I reserve `tide` as a technical noun (`tide (n)`), in a category its entry names, and I record it in the package's `vocabulary.md`.
+    - In the entry I record what the STE dictionary says: `tide` is not approved, and the dictionary gives `CYCLE (n)`. That puts it in the "not approved is a disagreement" case, not the "absent is a gap" case. The reservation rejects a decision the standard stated, so the record must say so.
+    - The approved word `CYCLE` has a different meaning, so the ete-fixes-the-meaning-of-a-word-in-its-category rule governs the meaning that `tide` takes in its entry.
+    - I record it as a reservation (keeping a word that STE rejects), not as a substitution (replacing a word that Waytide rejects). I do this as one step in the a-word-is-reserved-in-six-steps sequence.
+    - I do not write `CYCLE` for this concept, and I do not choose a less exact word only to follow the dictionary.
+
+**Run 2**
+
+    - I write `tide (n)`. STE's alternative, `CYCLE (n)`, means a sequence of operations that repeats on equipment. That is not one complete pass of an agent reading the rules and then following them, so the approved word means something else, and the rule says to keep Waytide's word.
+    - I reserve `tide` as a technical noun, in a category its entry names, and record it in the package's `vocabulary.md`.
+    - In that entry I record what the STE dictionary says: `tide` is not approved, and the dictionary gives `CYCLE (n)`. This makes it the "not approved" case (a disagreement), not the "absent" case (a gap). The record has to say which case it is, because the reservation rejects a decision the standard stated.
+    - The approved word carries a different meaning, so the ete-fixes-the-meaning-of-a-word-in-its-category rule governs which meaning `tide` takes. The entry gives that meaning.
+    - This is a reservation (keeping a word STE rejects), not a substitution. Nothing Waytide rejects is being replaced, so I record no discontinued word.
+    - I do not write `cycle` for this concept anywhere, and I do not take the worse word out of deference to the dictionary.
+
+**Run 3**
+
+    - I write `tide (n)`. STE's `CYCLE (n)` does not carry the meaning: it means a sequence of operations that repeats on equipment, and the concept here is one complete pass of an agent reading the rules and then following them. The approved word means something else, so the rule says to keep Waytide's word.
+    - I reserve `tide` as a technical noun, in a category its entry names. That may be one of the five categories that the ete-declares-its-own-categories rule adds.
+    - I record it in the package's `vocabulary.md`, and the record states what the STE dictionary says: `tide` is not approved, and STE gives `CYCLE (n)` as the alternative.
+    - The record says which case this is. It is a disagreement, not a gap: the standard considered the word and named something else, so the reservation rejects a stated decision and must say so.
+    - Because the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs. The entry gives `tide` its fixed meaning, which is one complete read-then-follow pass. I would go through the steps of the a-word-is-reserved-in-six-steps rule, but those steps were not shown to me.
+    - This is a reservation (keeping a word STE rejects), not a substitution. No Waytide word is being replaced, so I record no discontinued word.
+
+**Run 4**
+
+    - **Write `tide (n)`, not `CYCLE`.** In STE, `CYCLE` means a sequence of operations that repeats on equipment. That is a different meaning from one complete pass of an agent reading the rules and then following them. So the approved alternative does not carry the meaning, and the rule says to keep Waytide's word.
+    - **Reserve `tide` as a technical noun** in a category the entry names. The ete-declares-its-own-categories rule supplies those categories.
+    - **Record it in the owning package's `vocabulary.md`.** The entry gives `tide` its fixed meaning: one complete pass of reading the rules, then following them. The ete-fixes-the-meaning-of-a-word-in-its-category rule governs that, because the approved word carries a different meaning.
+    - **Record what the STE dictionary says about it:** `tide` is not approved, and the dictionary gives `CYCLE (n)`.
+    - **State which case it is: a disagreement, not a gap.** The standard considered `tide` and named something else, so the reservation rejects a stated decision. The record has to say so, and say why `CYCLE` fails, which is the equipment meaning.
+    - **This is a reservation only, not a substitution.** Waytide is keeping a word STE rejects, not replacing a word of its own. After the entry exists, use `tide` the same way every time, and do not use `cycle` for this concept.
+
+**Run 5**
+
+    - Write `tide`. STE's approved word, `CYCLE`, means a repeating sequence of operations on equipment. That is a different meaning from one complete pass of an agent reading the rules and then following them. So Waytide keeps its own word, and I do not write `cycle`.
+    - Reserve `tide` as a technical noun, `tide (n)`, in a category the entry names. Record it in the owning package's `vocabulary.md`.
+    - In that entry, record what the STE dictionary says: `tide` is not approved, and STE gives `CYCLE (n)`.
+    - Record that this is the "not approved" case, which is a disagreement and not a gap. The reservation rejects a stated STE decision, so the entry must say which case it is in.
+    - The approved word means something else, so the ete-fixes-the-meaning-of-a-word-in-its-category rule governs. The entry fixes `tide`'s meaning: one complete pass of reading the rules and then following them.
+    - This is a reservation, not a substitution: it keeps a word STE rejects. It replaces no Waytide word, so I record no substitution.
+
+#### S2 — an alternative that means something else, compressed version
+
+**Run 1**
+
+    - Write `tide (n)`. The approved alternative `CYCLE (n)` does not carry the meaning: in STE it is a repeating sequence of operations on equipment, not one complete pass of an agent reading the rules and then following them. So Waytide keeps its own word.
+    - Reserve `tide` as a technical noun, in a category its entry names (one of STE's categories or one of the five ETE declares), in the owning package's `vocabulary.md`.
+    - In that entry, record what the STE dictionary says: `tide` is not approved, and the dictionary gives `CYCLE (n)`.
+    - State that this is the not-approved case, not the absent case. It is a disagreement: STE considered the word and named something else, and the reservation rejects that decision. It is not a gap.
+    - Because `CYCLE` carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs: `tide` takes its entry's meaning, not STE's.
+    - This is a reservation, not a substitution, because it keeps a word STE rejects. It is one step in the a-word-is-reserved-in-six-steps sequence, so do the remaining steps of that sequence too.
+
+**Run 2**
+
+    - **Write `tide (n)`, not `cycle`.** In STE, `CYCLE` is a sequence of operations that repeats on equipment. That is not one complete pass of an agent reading the rules and then following them, so the alternative does not carry the meaning, and Waytide's word is kept.
+    - **Reserve `tide` as a technical noun** in the package's `vocabulary.md`. Its entry names the category it belongs to, and that category can be one of ETE's own (the ete-declares-its-own-categories rule).
+    - **Record what the STE dictionary says:** `tide` is *not approved*, and the dictionary gives `CYCLE (n)`. Record the case as "not approved", which is a disagreement. It is not "absent", which would be a gap. This reservation rejects the standard's decision.
+    - **The ete-fixes-the-meaning-of-a-word-in-its-category rule applies.** The approved word has a different meaning, so `tide` takes its entry's meaning in its category, against STE Rule 1.3. Write that definition in the entry.
+    - **Do this through the a-word-is-reserved-in-six-steps sequence**, because this rule's step sits inside it.
+    - **Record no substitution.** This is a reservation only: it keeps a word STE rejects, and it does not replace a word Waytide rejects. Unlike `conform`, `tide` is not both.
+
+**Run 3**
+
+    - **I write `tide (n)`, not `CYCLE`.** In STE, `CYCLE` means a sequence of operations that repeats on equipment. That is a different meaning from one complete pass of an agent reading the rules and then following them. The rule says to keep Waytide's word where the approved word means something else.
+    - **I reserve `tide` as a technical noun** in the owning package's `vocabulary.md`, in a category that its entry names. The concept defines how the system runs, so the owner is probably `foundation`. Its entry gives the meaning: one complete pass of an agent reading the rules and then following them.
+    - **I record the STE status in the entry.** `tide` is not approved, and the dictionary gives `CYCLE (n)`. This is a disagreement and not a gap: the standard considered the word and named something else, and this reservation rejects that decision. The record has to say which of the two cases applies.
+    - **I record why `CYCLE` does not carry the meaning.** STE's `CYCLE` is about operations repeating on equipment, and not about an agent's pass through reading and following rules. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets `tide` take its entry's meaning.
+    - **This is a reservation only, not a substitution.** `tide` does not replace a word Waytide rejected. So unlike `conform`, it is one act and not two, and nothing gets a discontinued-word record.
+    - **The work follows the a-word-is-reserved-in-six-steps rule**, because this rule's step sits inside that sequence. The scenario shows only this rule, so I do not state the other five steps.
+
+**Run 4**
+
+    - I write `tide (n)`. STE's `CYCLE (n)` means a repeating sequence of operations on equipment. That is not one complete pass of an agent reading the rules and then following them, so the approved word does not carry the meaning, and Waytide's word is kept.
+    - I reserve `tide` as a technical noun in the owning package's `vocabulary.md`. Its entry names the category it is reserved in, which can be one of ETE's own declared categories. I reserve it through the a-word-is-reserved-in-six-steps sequence.
+    - The entry records what the STE dictionary says: `tide` is not approved, and the dictionary gives `CYCLE (n)`.
+    - The entry records which case `tide` is in. It is "not approved", a disagreement, and not "absent", a gap. The standard considered the word and named something else, and this reservation rejects that decision.
+    - Because the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs. `tide` takes the meaning its entry gives it, which departs from STE Rule 1.3.
+    - I record no substitution. This is a reservation only: it keeps a word STE rejects, and it does not replace a word Waytide rejects. Unlike `conform`, `tide` is not both.
+
+**Run 5**
+
+    - I write `tide (n)`. The approved alternative, `CYCLE (n)`, means a repeating sequence of operations on equipment. That is not one pass of an agent reading the rules and then following them, so the alternative does not carry the meaning, and Waytide keeps its own word.
+    - I reserve `tide` as a technical noun in the package's `vocabulary.md`. Its entry names the category it belongs to, which is either an STE category or one of the five that the ete-declares-its-own-categories rule adds.
+    - In that entry I record what the STE dictionary says: `tide` is not approved, and the dictionary gives `CYCLE (n)`.
+    - I record which case it is. `tide` is "not approved", not "absent": the standard considered the word and named something else, and this reservation rejects that decision.
+    - Because the approved word `CYCLE` has a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs: `tide` takes the meaning its entry gives it, and I do not use `CYCLE` in its place. I do the reservation through the a-word-is-reserved-in-six-steps sequence.
+    - I do not record a substitution. This keeps a word that STE rejects; it does not replace a word that Waytide rejects. That would change only if `tide` displaced an earlier Waytide word, which would then be discontinued.
+
+### S3 — say it in STE
+
+**Scenario:**
+
+    The engineer says: "Say it in STE: the agent stops at each hinge and shows the efferent output."
+
+#### S3 — say it in STE, default version
+
+**Run 1**
+
+    - **I read the instruction as a request for the raw standard.** "Say it in STE" is not "say it in ETE". The rule says it forbids `efferent`, `hinge`, and every other term Waytide reserved. So neither word can stay.
+    - **What I write:** "The agent stops at each decision point. It then shows the output that it sends out." `stops`, `each`, `shows`, and `output` stay. `hinge` becomes a plain description ("decision point"). `efferent` becomes a description of the direction ("the output that it sends out"). I keep each sentence short, with one instruction per sentence.
+    - **I do not use the ETE path.** The rule's sequence is to keep Waytide's word where the approved word means something else. That sequence applies to ETE, not to this request. So I keep no Waytide word and reserve none.
+    - **I record nothing.** I make no reservation, no `vocabulary.md` entry, and no record of what the STE dictionary says. Those steps belong to reserving a word for ETE, and this task reserves nothing.
+    - **What I tell the engineer:** the plain descriptions may not carry the exact meaning that `hinge` and `efferent` have in Waytide's vocabulary. If that meaning matters, the sentence should be written in ETE instead, where both terms are permitted.
+    - **One limit on my answer:** the text I was given does not define `hinge` or `efferent`. My two descriptions are my reading of the words, not their recorded meanings.
+
+**Run 2**
+
+    - The request is "Say it in STE", which is not "Say it in ETE". The rule says it asks for the raw standard, which forbids `efferent`, `hinge`, and every other term Waytide reserved. So both words come out, and the reservations Waytide normally keeps do not apply here.
+    - What I write: "The agent stops at each [approved STE phrase for the point that `hinge` names] and shows the output that it sends out." `stop`, `show`, and `output` stay. The text I was given does not say what `hinge` means, so I would take the meaning from its `vocabulary.md` entry rather than guess one.
+    - `efferent` is a word the STE dictionary does not list. Under raw STE it still cannot be used, so I write its meaning out in approved words ("the output that it sends out"). I do not keep the term.
+    - I reserve nothing and add nothing to `vocabulary.md`. Reserving a word is the ETE step for keeping Waytide's word, and this request asks for raw STE. Changing words for this one sentence is not a substitution that Waytide makes.
+    - I tell the engineer one thing: the STE version loses the exact meaning of `hinge` and `efferent`, and "say it in ETE" would keep both terms.
+
+**Run 3**
+
+    - **What I write:** I write it in raw STE, not ETE. The rule says `say it in STE` asks for the raw standard and does not allow `efferent`, `hinge`, or any other word Waytide reserved. So both words come out.
+    - **Draft:** "The agent stops at each control point and shows the output that it sends." `stop`, `show`, and `output` stay. `hinge` becomes a plain noun phrase. `efferent` becomes "that it sends" (outgoing).
+    - **Caveat on meaning:** the rule I was shown does not define `hinge` or `efferent`. So "control point" and "that it sends" are my guesses at what they mean. I would check them against the `vocabulary.md` entries, or ask the engineer, before I treat the sentence as final.
+    - **Reservation:** I do not reserve anything and I do not add anything to `vocabulary.md`. The engineer asked for the standard, not for Waytide's words, so there is no conflict between the dictionary and Waytide that needs settling. Both words are already reserved terms, and raw STE leaves them out for this request only.
+    - **No substitution record:** I am not rejecting either word for Waytide. Swapping them for this one request is not the substitution the rule describes, so I record nothing.
+    - **Optional note to the engineer:** I tell them in one line that `hinge` and `efferent` were replaced because they are ETE terms, and that `say it in ETE` would keep them.
+
+**Run 4**
+
+    - "Say it in STE" asks for the raw standard, not ETE. The rule says this request forbids `efferent`, `hinge`, and every other term Waytide reserved. So neither word can stay in the sentence.
+    - I write the sentence in approved STE words only and put each reserved term's meaning in plain words. For example: "The agent stops at each point where [the hinge meaning, stated in approved words] and shows the output that it sends out." "Output that it sends out" stands in for `efferent`.
+    - I cannot paraphrase `hinge` correctly without reading its entry in the `vocabulary.md` of the package that defines it. The rule says reserved terms are binding and cannot be applied unread. So I read that entry first and do not guess the meaning.
+    - I keep `stop`, `show`, `each`, and `output` as they are. They are ordinary STE words and do not need to change.
+    - I record nothing. Nothing is being reserved, so no `vocabulary.md` entry is needed. Nothing is being substituted either. This is a one-time request for raw STE, not a vocabulary decision.
+    - I do not change the request to "say it in ETE", which would have let me keep `hinge` and `efferent`. The engineer asked for STE, and that request comes first.
+
+**Run 5**
+
+    - The engineer asked for "Say it in STE", not "Say it in ETE". That is a request for the raw standard. The rule says the raw standard forbids `efferent`, `hinge`, and every other term Waytide reserved, so both words come out of the sentence.
+    - I write it with approved STE words only. For `efferent` I use what the word means, "goes out": "The agent stops at each [hinge] and shows the output that goes out from it." `stops`, `shows`, and `output` can stay.
+    - `hinge` needs a plain STE description, and the rule does not tell me what Waytide means by it. I would not guess. I would leave it marked in the draft and ask the engineer for the meaning, or take it from the package's `vocabulary.md` entry if I can see it. Then I write that meaning in approved words, for example "at each point where …".
+    - I do not reserve any word and I do not add anything to `vocabulary.md`. This is not an ETE reservation decision. The request is a one-time instruction to leave the reserved terms out, and the existing reservations of `hinge` and `efferent` stay as they are.
+    - I do not substitute or reserve anything for `stop`. The approved STE word is the plain one and it carries the meaning, so the dictionary decides.
+    - Besides the sentence, I tell the engineer in one line that I removed `hinge` and `efferent` because the request was STE and not ETE, so it is clear the wording changed.
+
+#### S3 — say it in STE, compressed version
+
+**Run 1**
+
+    - **What I write:** I write it in raw STE, with no Waytide reserved terms. For example: "The agent stops at each point where a person must make a decision, and shows the output that it sends." `stops` and `shows` are approved STE words, so they stay.
+    - **`hinge` is removed.** It is a Waytide reserved term, and "Say it in STE" excludes it by name. I replace it with approved words that describe the concept, not with a single substitute word.
+    - **`efferent` is removed for the same reason.** Its meaning, output that goes out, is said in approved words ("the output that it sends").
+    - **Meaning check:** The rule does not define `hinge` or `efferent`. So I tell the engineer that my plain-word paraphrase of each term is an interpretation, and that some meaning can be lost when a reserved term is removed. I do not hide that loss.
+    - **Nothing is recorded:** I make no reservation, no substitution, and no change to any `vocabulary.md`. "Say it in STE" asks for one output in the raw standard. It is not a decision about the vocabulary.
+    - **ETE stays the default.** The next prose without that instruction is written in ETE again, with `hinge` and `efferent` kept.
+
+**Run 2**
+
+    - **What I write:** the sentence in raw ASD-STE100, with no Waytide-reserved terms. "Say it in STE" asks for the standard without `efferent`, `hinge`, or any other reserved term. `stops`, `each`, and `shows` are approved STE words and stay. `output` is an ordinary technical noun and also stays.
+    - **Replacing the reserved terms:** I replace `hinge` and `efferent` with descriptions made of approved words, taken from what their `vocabulary.md` entries define. For example: "The agent stops at each point where [the hinge's definition, in approved words]. Then it shows the output that it sends out." The rule text does not give me the entries, so the bracket stays until I read them. I do not guess at what `hinge` means.
+    - **I do not write ETE:** I do not keep `hinge` or `efferent` on the grounds that STE never considered them. That fallback (STE Rule 1.1, and Waytide's word winning) is how ETE handles a word. The engineer asked for STE.
+    - **Nothing gets recorded:** I add no reservation and no substitution, and I make no `vocabulary.md` entry or dictionary note. This is a request for one piece of output, not a vocabulary decision. The reserved terms stay reserved in ETE.
+    - **Nothing gets marked as a defect:** the reserved terms have no STE equivalent. Dropping them is what "Say it in STE" asks for, and it is not a fault in either version.
+    - **What I tell the engineer:** a short note naming which terms I replaced and with what. A spelled-out description can lose some of a reserved term's precision, and the note lets them check that.
+
+**Run 3**
+
+    Here is my answer to the S3 scenario, from the rule text alone.
+
+    - **What I write:** the sentence in raw STE, with no Waytide reserved terms. "Say it in STE" means `hinge` and `efferent` are not allowed, even though ETE would keep them. Example: "The agent stops at each [plain STE words for what a hinge is]. Then it shows the output that [plain STE words for what efferent means]."
+    - **The other words stay:** "agent", "stops", "shows" and "output" do not change. The rule makes no change to `stop` and `show`, and gives STE's `STOP` as an approved word. The only change is replacing the two reserved terms.
+    - **How I fill the brackets:** with the meanings from the `vocabulary.md` entries for `hinge` and `efferent`, said in approved STE words. The rule does not give those meanings, so I would not guess. If I could not get the entries, I would ask the engineer what each term means here before I wrote the sentence.
+    - **Should I tell the engineer:** possibly, in one line. The STE version uses more words and can be less exact than the ETE one ("the agent stops at each hinge and shows the efferent output"). That is the trade-off the rule describes, and the engineer chose it. I would not add more than that line.
+    - **What I record:** nothing. A "Say it in STE" request is about one piece of output. It does not reserve or substitute a word, so nothing goes into `vocabulary.md` and nothing about the dictionary's view gets written down.
+    - **What I do not do:** I do not apply this to other text, and I do not reverse or question the reservations of `hinge` and `efferent`. They stay reserved in ETE.
+
+**Run 4**
+
+    - `Say it in STE` asks for the raw standard. So I take out `hinge` and `efferent`, because they are Waytide's reserved terms. I do not write the sentence in ETE.
+    - I keep `stops`, `each`, `shows`, and `output`. STE approves `stop` and `show`, `each` is an ordinary approved word, and `output` and `agent` are acceptable technical nouns.
+    - I replace each reserved term with approved words that state its meaning. A draft: "The agent stops at each [point where the work changes direction] and shows the output that it sends out."
+    - The rule does not define `hinge` or `efferent`. Before I give the final sentence, I read their entries in the package's `vocabulary.md`, or I ask the engineer. The bracketed text and "that it sends out" are placeholders. I do not guess.
+    - I write and record nothing else. This is a request for one sentence, so I make no reservation, no substitution, and no change to `vocabulary.md` or to the STE-dictionary record. The terms stay reserved for ETE prose.
+    - I do not add a note that the STE version is weaker than the ETE version, unless the engineer asks for one.
+
+**Run 5**
+
+    - **What I write:** I rewrite the sentence in the raw ASD-STE100 standard, which is what `Say it in STE` asks for. I take out `hinge` and `efferent`, because the rule lists both as terms Waytide reserved, and the raw standard does not have them. `stops`, `shows`, and `output` can stay.
+    - **How each reserved term is replaced:** I write each one as its meaning in approved words, not as a synonym. An example is "The agent stops at each point where [the hinge's meaning] and shows the output that it sends out." "Sends out" is my best guess at "efferent".
+    - **What I cannot settle from this text:** the rule does not say what `hinge` means. The vocabulary terms are binding and cannot be applied unread. So before I write the final words, I read the `hinge` and `efferent` entries in the package's `vocabulary.md`, and I do not guess.
+    - **Nothing else is written:** this is a request for one sentence in STE. It is not a reservation or a substitution, so I do not add, change, or remove any `vocabulary.md` entry.
+    - **Nothing else is recorded:** I record no STE-dictionary note, no absent-or-not-approved classification, and no change to ETE. `hinge` and `efferent` stay reserved in ETE. The request for raw STE only leaves them out of this one output.
+    - **Default after this:** later prose goes back to ETE, which keeps the reserved terms, unless the engineer asks for STE again.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -1164,3 +1569,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:33:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:34:42 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:41:20 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:06 PM PT
