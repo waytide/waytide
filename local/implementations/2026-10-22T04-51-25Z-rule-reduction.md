@@ -711,6 +711,28 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **Its solubility rises from 21 to 42, and its clarity score from 0.42 to 0.76**, against the same 105 rules. Its sentences average 15.1 words, down from 20.3, and 7% are over 25 words, down from 30%. The simulation and the directive check have not been run on it.
 
+### The directive check on #13 — results, 2026-10-22
+
+**No directive is lost, but one is materially less precise, so by the criterion the compressed #13 does not yet have the same effect as its source.** The two checkers agreed on 36 of the 37 directives.
+
+| | checker A | checker B | resolved |
+|---|---|---|---|
+| kept | 33 | 34 | 34 |
+| less precise | 4 | 3 | 3 |
+| lost | 0 | 0 | 0 |
+
+**The one disagreement, resolved by reading both versions:** 36, follow only the active packages' rules, is kept. "The declaration decides which rules are applied, not which are read" carries it.
+
+**The three less precise directives, and whether each matters:**
+
+| # | the directive | what the compressed version lacks | material |
+|---|---|---|---|
+| 15 | `**Packages:**` is authoritative: the active list is the whole of what is active | "the whole of what is active" | no: the next sentence carries its consequence, that a package installed later stays inactive |
+| 33 | a set declared during a session takes effect at the next session | the general statement | **yes**: the compressed version covers only deactivation, so an agent could start applying a package the new set activates in the same session |
+| 35 | at session start, read the most recent `*-package-set.md` under `waytide/local/` | the instruction to read it, and the file pattern | no: "the record with the latest prefix holds" and the record's path carry it |
+
+**The check found its material loss in a rule compressed with the two lessons applied.** Short sentences and kept small directives did not prevent it. The loss was a section heading in the source, "A set declared in a running session takes effect at the next one". Its body spoke only of deactivation, and the compression kept the body and lost the heading.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3632,6 +3654,134 @@ The checking prompt is that of the check on #15, with the file paths changed to 
     18 — kept — "and name what it was read against, as in `The aspirations stand against …`."
     19 — kept — "The items-convention points here and keeps no second copy."
 
+## Appendix — the directive check on #13
+
+The listing and checking prompts are those of the check on #15, with the file paths changed to `check13` and the middle verdict named less precise.
+
+### The 37 directives, as the listing agent gave them
+
+    1. A project may declare a package set, and the packages outside the declared set are deactivated.
+    2. The package-set declaration is a record at `waytide/local/`, and its file name gives the moment it was made and what it names, e.g. `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`.
+    3. Where a package-set declaration names more than one name, its file name joins those names with hyphens.
+    4. Where no package-set declaration exists, every installed package is active.
+    5. Where no package-set declaration exists, that state is not reported.
+    6. Declaring a package set writes a new record and does not edit an existing one.
+    7. Of the package-set records, the one with the latest time prefix is the one that holds.
+    8. Reverting the package set is done with a new declaration like any other, naming `default`.
+    9. The package-set declaration is read from three plain text data attribute lines: `**Package set:**`, `**Packages:**`, and `**Inactive:**`.
+    10. A package-set record that is missing the `**Package set:**` line or the `**Packages:**` line is not a declaration.
+    11. The `**Package set:**` line records what the engineer declared, which may be a set name, a list of package names, or a mixture of the two.
+    12. Each name in a package-set declaration is either a package set or a package, the same grammar `install` takes.
+    13. The `**Packages:**` line records what the declaration resolved to, captured when the declaration is made and not computed at every session start.
+    14. The `**Inactive:**` line records the packages that were installed and not active when the declaration was made, and it is recorded, not inferred.
+    15. The `**Packages:**` line is authoritative: the active list is the whole of what is active.
+    16. A package installed after the declaration appears in neither the `**Packages:**` line nor the `**Inactive:**` line, and it is inactive until the set is declared again.
+    17. Where an active package's README includes another package, the included package is active whether or not the declaration named it.
+    18. A deactivated package's rules are read at session start exactly as an active package's are. The declaration governs whether they are applied, not whether they are read.
+    19. No package-set declaration narrows the announce-waytide-at-session-start rule's unconditional read.
+    20. The read of a deactivated package is not skipped, so that a rule read and withheld can still be cited, weighed, and reactivated within the session.
+    21. `refresh-packages.sh` refreshes a deactivated package like any other, because a package that is read must not be stale.
+    22. The agent prints the active packages at the head of the response that carries the rule read.
+    23. The packages are not printed in the session-start notice or in the startup display.
+    24. The printed list includes every installed package and hides none.
+    25. In the printed list, the active packages are bold.
+    26. In the printed list, the deactivated packages are italic.
+    27. The set's name follows the printed list, in the form `package set: content`.
+    28. A count line closes the printed list, in the form `(5 active of 8 installed)`.
+    29. The hidden-record convention of the status-report-format rule is not applied to the printed package list.
+    30. Where no set is declared, nothing about a set is printed, including no line saying there is none.
+    31. A declaration of `default` prints nothing where nothing is deactivated.
+    32. A declaration of `default` does print the list where it leaves a package deactivated, which happens when the project holds a package that `default` does not name.
+    33. Declaring a set during a session does not unload rules already read. A newly declared set takes effect at the next session.
+    34. When a set is declared during a session, say that the deactivated packages' rules stay in force for this session and that Claude has to be restarted for them to stop applying.
+    35. At session start, read the most recent `*-package-set.md` under `waytide/local/`.
+    36. Follow only the rules of the active packages.
+    37. Where the engineer declares a set during a session, write the record first, then say that a restart is needed.
+
+### Checker A, word for word
+
+    Of the 37 directives, 33 are kept, 4 are less precise and none are lost. The four are 15, 33, 35 and 36.
+
+    1. kept — "A project may declare a package set, and the packages outside it are deactivated."
+    2. kept — "A declaration is a record under `waytide/local/`. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`"
+    3. kept — "the declared names, hyphen-joined"
+    4. kept — "Where no set is declared, every installed package is active"
+    5. kept — "and nothing reports it"
+    6. kept — "A new declaration writes a new record and edits none."
+    7. kept — "The record with the latest prefix holds"
+    8. kept — "Reverting is a declaration naming `default`."
+    9. kept — "Three lines carry it" (the code block shows `**Package set:**`, `**Packages:**`, `**Inactive:**`), with "the plain text data attribute line" under Related
+    10. kept — "a record without the first two is not a declaration"
+    11. kept — "`**Package set:**` is what the engineer declared: a set name, package names, or both"
+    12. kept — "a set name, package names, or both, in the grammar `install` takes"
+    13. kept — "`**Packages:**` is what that resolved to, recorded when declared rather than computed at session start"
+    14. kept — "`**Inactive:**` is what was installed and not active then. It is recorded, not inferred"
+    15. less precise — "It is authoritative." Missing: it never says the active list is the whole of what is active.
+    16. kept — "A package installed later is in neither line, so it stays inactive until a new declaration takes it up."
+    17. kept — "Where an active package's README includes another package, that package is active, named or not."
+    18. kept — "A deactivated package's rules are read at session start like an active package's. The declaration decides which rules are applied, not which are read"
+    19. kept — "it does not narrow the unconditional read", with Related "the announce-waytide-at-session-start rule — the unconditional read this leaves whole"
+    20. kept — "Every package is still read." / "A rule that is read and withheld can be cited, weighed, and reactivated within the session."
+    21. kept — "`refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale."
+    22. kept — "The agent prints the packages at the head of the response that carries the read"
+    23. kept — "The session-start notice and the startup display print none of it."
+    24. kept — "List every installed package and hide none"
+    25. kept — "with active ones bold"
+    26. kept — "and deactivated ones italic"
+    27. kept — "Follow the list with the set's name, `package set: content`"
+    28. kept — "close with a count line, `(5 active of 8 installed)`"
+    29. kept — "The hidden-record rule does not apply", with Related "the status-report-format rule — the hidden-record convention this deliberately does not use"
+    30. kept — "Where no set is declared, print nothing about a set, not even a line saying so."
+    31. kept — "A declaration of `default` prints nothing where it deactivates nothing."
+    32. kept — "It does print where the project holds a package that `default` does not name."
+    33. less precise — "A declaration does not unload rules already read." Missing: it never says a new set takes effect at the next session. The restart wording only implies it.
+    34. kept — "Then say that the deactivated packages' rules stay in force for this session, and that Claude must be restarted for them to stop applying."
+    35. less precise — "The record with the latest prefix holds". Missing: no instruction to read that record at session start, and no `*-package-set.md` file pattern.
+    36. less precise — "The declaration decides which rules are applied" / "A rule that is read and withheld". Missing: no direct directive to follow only the active packages' rules.
+    37. kept — "When the engineer declares a set, write the record. Then say that … Claude must be restarted"
+
+### Checker B, word for word
+
+    Of the 37 directives, 34 are kept, 3 are less precise (15, 33, 35) and none are lost. I read only the two files the prompt names.
+
+    1. kept — "A project may declare a package set, and the packages outside it are deactivated."
+    2. kept — "A declaration is a record under `waytide/local/`. Its name is the ISO-8601-UTC prefix and the declared names ... `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`"
+    3. kept — "the declared names, hyphen-joined"
+    4. kept — "Where no set is declared, every installed package is active"
+    5. kept — "and nothing reports it"
+    6. kept — "A new declaration writes a new record and edits none."
+    7. kept — "The record with the latest prefix holds"
+    8. kept — "Reverting is a declaration naming `default`."
+    9. kept — "Three lines carry it" (followed by the three lines shown), together with "the plain text data attribute line, as `**State:**` and `**Repository:**` already use it"
+    10. kept — "a record without the first two is not a declaration"
+    11. kept — "`**Package set:**` is what the engineer declared: a set name, package names, or both"
+    12. kept — "a set name, package names, or both, in the grammar `install` takes"
+    13. kept — "`**Packages:**` is what that resolved to, recorded when declared rather than computed at session start"
+    14. kept — "`**Inactive:**` is what was installed and not active then. It is recorded, not inferred"
+    15. less precise — "It is authoritative." Missing: the active list is the whole of what is active.
+    16. kept — "A package installed later is in neither line, so it stays inactive until a new declaration takes it up."
+    17. kept — "Where an active package's README includes another package, that package is active, named or not."
+    18. kept — "A deactivated package's rules are read at session start like an active package's. The declaration decides which rules are applied, not which are read"
+    19. kept — "it does not narrow the unconditional read", with Related: "the announce-waytide-at-session-start rule — the unconditional read this leaves whole"
+    20. kept — "Every package is still read." / "A rule that is read and withheld can be cited, weighed, and reactivated within the session."
+    21. kept — "`refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale."
+    22. kept — "The agent prints the packages at the head of the response that carries the read"
+    23. kept — "The session-start notice and the startup display print none of it."
+    24. kept — "List every installed package and hide none"
+    25. kept — "with active ones bold"
+    26. kept — "and deactivated ones italic"
+    27. kept — "Follow the list with the set's name, `package set: content`"
+    28. kept — "close with a count line, `(5 active of 8 installed)`"
+    29. kept — "The hidden-record rule does not apply", with Related: "the status-report-format rule — the hidden-record convention this deliberately does not use"
+    30. kept — "Where no set is declared, print nothing about a set, not even a line saying so."
+    31. kept — "A declaration of `default` prints nothing where it deactivates nothing."
+    32. kept — "It does print where the project holds a package that `default` does not name."
+    33. less precise — "A declaration does not unload rules already read." Missing: the new set as a whole takes effect only at the next session. The restart sentence covers only deactivated rules staying in force, not packages the new set newly activates.
+    34. kept — "say that the deactivated packages' rules stay in force for this session, and that Claude must be restarted for them to stop applying"
+    35. less precise — "The record with the latest prefix holds" Missing: the explicit instruction to read the most recent `*-package-set.md` under `waytide/local/` at session start.
+    36. kept — "The declaration decides which rules are applied" / "A rule that is read and withheld"
+    37. kept — "When the engineer declares a set, write the record. Then say that ... Claude must be restarted"
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3698,3 +3848,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:41:01 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:16 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:06:22 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:00 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:19 PM PT
