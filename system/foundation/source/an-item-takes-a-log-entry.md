@@ -59,7 +59,7 @@ Name the record in the entry, and say what happened to it. State what the record
 **An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.** The entry is written at three moments, and at no others. The item's tag makes no difference.
 
 - **On creation.**
-- **On each dated `Settled` resolution.**
+- **On each dated `Settled` resolution added after the item is created.**
 - **On each change of its `**State:**` line.** That is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item. It is also the line taking back Realized, Deferred, Open, or a work item's Done. An observation is `Stated` and never moves, so it takes a creation entry only.
 
 **Some changes are not logged.** A completed checkbox task is not logged, because it carries out a direction already settled. Prose that settles nothing is not logged either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section. The provenance footer records those changes.
@@ -112,3 +112,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
