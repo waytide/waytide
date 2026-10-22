@@ -577,7 +577,7 @@ Neither loss changes a behavior the simulation tested, and each could be restore
 
 **At the engineer's direction, the compressed #11 restores the two directives the check found lost outside the intended resolution.** Its Tags paragraph now reads, in part: "The set is open, `[deferred]` is freeform like any other, and an item may carry several. A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`, below. Otherwise, what an item is, the item itself says, not its tag."
 
-With both restored, no directive outside the intended resolution is lost, and no weakening is judged material. So **the compressed #11 has the same effect as its source, within what the check shows**, apart from the resolution the engineer chose. The limits recorded with the check stand. Its compression is now 0.6, from 8,278 characters to 3,343, and its change 0.83.
+With both restored, no directive outside the intended resolution is lost, and no weakening is judged material. So **the compressed #11 has the same effect as its source, within what the check shows**, apart from the resolution the engineer chose. The limits recorded with the check stand. Its compression is now 0.60, from 8,278 characters to 3,343, and its change 0.83.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
