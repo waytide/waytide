@@ -667,6 +667,25 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the directive check runs again on #2 and #12**, against their rewritten compressed versions. Their sources are unchanged, so each check reuses the directive list made for the first check: 8 for #2, 19 for #12. Two fresh checkers per rule judge each directive against the rewritten text, by the same prompt and criterion as before, and disagreements are resolved by reading both versions.
 
+### The directive check on the rewritten #2 and #12 — results, 2026-10-22
+
+**Both rewritten versions meet the criterion, so the rewrites keep each rule's effect, within what the check shows.** The checkers agreed on every directive of both rules.
+
+| # | directives | kept | weakened | lost |
+|---|---|---|---|---|
+| 2 | 8 | 8 | 0 | 0 |
+| 12 | 19 | 16 | 3 | 0 |
+
+**#2 keeps all 8**, as its first compressed version did.
+
+**#12's three weakened directives are judged immaterial.** In the first check these three were split between the checkers and resolved as kept. Here both checkers judged them weakened, so the verdict stands as weakened.
+
+- **4, the creation entry records the item, not the word:** "the item's tag makes no difference" carries it.
+- **5, an entry for each Settled resolution added after creation:** the rewritten version drops "added after". A reader could log a resolution already in the item when it was written, beside its creation entry. That is one extra entry, and a log that takes one more line is still correct.
+- **13, the commit subject states what the record settles as the record's:** "carry the same mood" carries the part that changes behavior. In the simulation's S2, every answer under the first compressed version, which had the same sentence, kept the subject in the record's mood.
+
+**Directive 12, the one the first check found weakened, is now kept.** The rewrite states it outright: "do not use that form for it".
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3514,6 +3533,80 @@ The listing and checking prompts are those of the check on #15, with the file pa
     7. kept — "Once the accepted implementation is written and the suite has run, run every test file of the current feature"
     8. kept — "The what-each-hinge-displays rule shows the implementation and the new outcome's test, and this rule adds the feature's full output." The obligation comes from the imperative heading, "After each implementation hinge, show the whole feature's test output", since this sentence itself only describes. "new outcome's test" stands for "just-satisfied test".
 
+## Appendix — the directive check on the rewritten #2 and #12
+
+The checking prompt is that of the check on #15, with the file paths changed to `check2b` and `check12b`. The directive lists are those of the first checks on #2 and #12.
+
+### #2, checker A, word for word
+
+    All 8 directives are carried by the shorter version: 8 kept, 0 weakened, 0 lost.
+
+    1. kept: "After each implementation hinge, show the whole feature's test output" and "First, write the accepted implementation and run the suite."
+    2. kept: "show the whole feature's test output, unasked."
+    3. kept: "every outcome built so far for the unit, not only the new one."
+    4. kept: "Then run every test file of the current feature. That is every outcome built so far for the unit"
+    5. kept: "Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show."
+    6. kept: "Put the output in the turn that reports the implementation."
+    7. kept: "First, write the accepted implementation and run the suite. Then run every test file of the current feature."
+    8. kept: "The what-each-hinge-displays rule shows the implementation and the new outcome's test. This rule adds the feature's full output." together with "After each implementation hinge, show the whole feature's test output".
+
+### #2, checker B, word for word
+
+    1. kept. "After each implementation hinge, show the whole feature's test output" together with "First, write the accepted implementation and run the suite."
+    2. kept. "unasked"
+    3. kept. "every outcome built so far for the unit, not only the new one"
+    4. kept. "Then run every test file of the current feature. That is every outcome built so far for the unit, not only the new one."
+    5. kept. "Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show."
+    6. kept. "Put the output in the turn that reports the implementation."
+    7. kept. "First, write the accepted implementation and run the suite. Then run every test file of the current feature."
+    8. kept. "The what-each-hinge-displays rule shows the implementation and the new outcome's test. This rule adds the feature's full output."
+
+### #12, checker A, word for word
+
+    The shorter version keeps 16 of the 19 directives and weakens 3 (4, 5 and 13). None are lost.
+
+    1. kept — "An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`."
+    2. kept — "The entry is written at three moments, and at no others."
+    3. kept — "The item's tag makes no difference." The four tags are not listed, but the statement covers them all.
+    4. weakened — "On creation." / "The entry names the record and what happened to it." Missing: the explicit "records the item itself, not the word" contrast.
+    5. weakened — "On each dated `Settled` resolution." Missing: the qualifier "added after it was created". Without it, a resolution present at creation could be read as needing its own entry.
+    6. kept — "That is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item."
+    7. kept — "It is also the line taking back Realized, Deferred, Open, or a work item's Done." Only the pointer to the items-convention is dropped.
+    8. kept — "An observation is `Stated` and never moves, so it takes a creation entry only."
+    9. kept — "The entry names the record and what happened to it. The record was written, or its state reached a word."
+    10. kept — "What the record settles may follow, attributed to the record." The "never as the system's behavior" half is carried by "Never state an unbuilt direction in the indicative mood" and the Why paragraph.
+    11. kept — "Never state an unbuilt direction in the indicative mood. *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not."
+    12. kept — "That form is right for a change to the software. An item is not a change to the software, so do not use that form for it. The fact about an item is that it was recorded, or that its state moved."
+    13. weakened — "Carry the same mood into the commit subject the entry travels in." Missing: the explicit requirement that what the record settles is stated as the record's, never as the system's behavior. "Mood" is narrower than that requirement.
+    14. kept — "Fix no wording template." The "record named, mood honest" requirement is carried by the "names the record" and indicative-mood statements.
+    15. kept — "A completed checkbox task is not logged."
+    16. kept — "Prose that settles nothing is not logged either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section."
+    17. kept — "At a work session's close, a reconciliation may find the direction still standing. Log it"
+    18. kept — "and name what it was read against, as in `The aspirations stand against …`."
+    19. kept — "The items-convention points here and keeps no second copy."
+
+### #12, checker B, word for word
+
+    1 — kept — "An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`."
+    2 — kept — "The entry is written at three moments, and at no others." plus the three bullets "On creation." / "On each dated `Settled` resolution." / "On each change of its `**State:**` line."
+    3 — kept — "The item's tag makes no difference." (it does not list the tags, but it covers all of them)
+    4 — weakened — "On creation." and "The entry names the record … The record was written". Missing: the explicit point that the creation entry records the item itself, not the word.
+    5 — weakened — "On each dated `Settled` resolution." Missing: "added after it was created". Without it, a resolution already present at creation could seem to need its own entry as well.
+    6 — kept — "That is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item."
+    7 — kept — "It is also the line taking back Realized, Deferred, Open, or a work item's Done." (the pointer "as the items-convention sets out" is dropped, but the behavior is the same)
+    8 — kept — "An observation is `Stated` and never moves, so it takes a creation entry only."
+    9 — kept — "The entry names the record and what happened to it. The record was written, or its state reached a word."
+    10 — kept — "What the record settles may follow, attributed to the record." together with "an entry that asserts what a record only settles is read as the system's behavior."
+    11 — kept — "Never state an unbuilt direction in the indicative mood. *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not."
+    12 — kept — "The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software. An item is not a change to the software, so do not use that form for it. The fact about an item is that it was recorded, or that its state moved." (it does not name the grammar's passive voice and indicative mood, but it rules out the form)
+    13 — weakened — "Carry the same mood into the commit subject the entry travels in." Missing: the subject must also state what the record settles as the record's, not as the system's behavior. Only the mood is carried over.
+    14 — kept — "Fix no wording template." The requirement that remains (name the record, honest mood) is stated elsewhere in "The entry names the record…" and "Never state an unbuilt direction in the indicative mood."
+    15 — kept — "A completed checkbox task is not logged"
+    16 — kept — "Prose that settles nothing is not logged either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section." ("substantive" is dropped from the last example, a minor change)
+    17 — kept — "At a work session's close, a reconciliation may find the direction still standing. Log it"
+    18 — kept — "and name what it was read against, as in `The aspirations stand against …`."
+    19 — kept — "The items-convention points here and keeps no second copy."
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3574,3 +3667,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:02:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:07:12 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:47 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:35:17 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:36:12 PM PT
