@@ -54,11 +54,17 @@ Committed before the work. Each item carries the agent's confidence.
 | Branch names | the base, then a dot and the phase | Wed Oct 21 2026 at 9:51:25 PM PT |
 | Working location | Branch and worktree | Wed Oct 21 2026 at 9:51:25 PM PT |
 | Participation | Attended | Wed Oct 21 2026 at 9:51:25 PM PT |
+| Phase 1 started | flattening | Wed Oct 21 2026 at 9:56:47 PM PT |
 
 ## What actually happened
 
-Nothing yet.
+### Phase 1 — flattening, started — 2026-10-21
+
+**The phase branch is `experiment/worktree/rule-reduction.flattening`**, created in the worktree from the experiment's branch at `0e84fcd`. The experiment's branch was first brought level with `master`, which had gained the participation-as-batch-size item and nothing touching the rules.
+
+**The record is kept on the experiment's branches from here.** The copy on `master` stays as the experiment's start recorded it, so the two do not diverge into a conflict when the experiment merges.
 
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:56:47 PM PT
