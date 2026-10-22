@@ -472,6 +472,16 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **The agent recommended starting with the directive check**, the cheapest and most direct test of the same effect, **on #15**, where the most text came out.
 
+### The directive check on #15 — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the directive check starts with #15**, testing whether its compressed version carries every directive of its source.
+
+1. **Listing.** A fresh agent that has not seen the compressed version reads #15 compiled by default and lists every directive in it, numbered, one per line. That includes directives stated only in passing or inside explanations.
+2. **Checking.** Two further fresh agents, working separately, each read the list and the compressed version. They judge each directive kept, weakened, or lost, and quote the words in the compressed version that carry it.
+3. **Resolving.** Where the two checkers agree, their verdict stands. Where they disagree, the agent reads both versions and records which verdict holds and why.
+
+**The compressed version has the same effect as the source, within what this check shows, if no directive is lost and every weakened one is judged immaterial.** A directive judged lost or materially weakened is a defect in the compression, and is recorded as one. No agent involved has seen the simulation's scenarios.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2672,3 +2682,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:50:07 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:51:40 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:55:09 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:01:34 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:02:14 AM PT
