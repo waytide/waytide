@@ -350,6 +350,19 @@ Every directive is kept: the standard and what ETE adds to it, `say it in ETE` a
 
 **What it does and does not establish.** #7 is at the median, solubility 50, and compressed least of the three, by 0.27, with no behavior lost. With #2 and #11, three rules now show the compressed version matching the default on every scenario scored. A perfect score gives a difference no room to show, so these results say compression kept behavior. They cannot say whether it improved it. The limits recorded for #2 stand.
 
+### #15 is compressed — 2026-10-21
+
+**#15, announce-waytide-at-session-start, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before its History section. Against its body, as the others were measured:
+
+- **compression 0.71**: 27,559 characters to 8,117
+- **change 0.91**: of 4,528 words, 393 stay in place
+
+Every directive is kept. That covers the three surfaces and the agent printing none of them, the notice's lines, its close and its wording, the JSON hazard, the read instruction and what it carries, the status line's segments and separators, the startup display, the wiring and its warnings, the absence of an opt-out, and the cost. What went is mostly the history the body still told inline: what each part was until a date, and why it changed. The body also repeated itself in a long How to apply section.
+
+**One claim is carried over without being resolved.** The source says the status line reports the system *active*. The line it shows reads `:: Waytide`, which does not use that word. The compressed version keeps the claim as written.
+
+**#15 compressed most of the four.** At solubility 24 it compressed 0.71, against #11's 0.61 at 11, #7's 0.27 at 50, and #2's 0.54 at 91.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -1570,3 +1583,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:34:42 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:41:20 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:06 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT

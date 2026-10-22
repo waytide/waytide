@@ -178,6 +178,62 @@ Write the notice as plain text, with no markdown markup, since the harness rende
 
 Keep the engineer's own segments separated by the middle dot. Set the trailing Waytide segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
 
+## Compressed
+
+**The harness announces Waytide, through three surfaces it renders. The agent prints no notice, at session start or at any other time.** An agent-printed copy would only duplicate the harness's. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+
+**The session-start notice.** A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+
+```
+Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
+
+Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
+
+To load them now, type: load waytide.
+```
+
+- **The install line enumerates what is on disk.** A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it. Nothing prints a fixed list.
+- **The open line names experiments and features that have not concluded**, read from each record's `**State:**` line under `waytide/local/implementations/`. An experiment that is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded has concluded, as has a feature that is Completed, Abandoned, or Superseded. One that is Suspended or carries no state line is reported. With nothing open the line is absent. It exists because an experiment must never be left silently open, and one worked in a worktree leaves no trace in the main working tree.
+- **The close is always present**: the caveat, then the command on a line of its own, last. A blank line precedes the close, after any open line, because the close asks and everything above it reports. A second blank line stands the command alone, so it is read and copied without reading past anything. The caveat says `a few moments`, because the read is a wait an engineer sees.
+- **The command names the read outright**, so an engineer new to the system can act on it. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks. This gives up a contentless foil word whose only effect came through the hook's channel, so that channel is no longer testable from ordinary use. The trade of observability for legibility is deliberate.
+- **The notice says `installed`, never `loaded`.** A hook runs before the session, so it can observe that the packages are on disk and the configuration is live, and not that any rule was read. The close's `are loaded` describes what the session does next and reports no read. Call it the session-start notice, not the load notice. The status line reports the system active, a claim about the configuration rather than the agent.
+- **The notice is plain text.** The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+- **The notice carries no mark.** The startup display prints it (see the initialization-rule).
+- **No quotation marks, and no lone backslash, in anything the hook emits.** `printf` interpolates the notice and the instruction into a JSON string with no escaping. A double quote ends the string, and a lone backslash begins an invalid escape. Either way the harness fails to parse the output and the notice disappears with no error.
+
+**The read instruction.** The same hook carries it to the agent on a separate channel. The notice goes in `systemMessage`, for the engineer. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent and is never displayed. They are different texts for different readers.
+
+- **The read is unconditional.** The apparent size of the first request is not a reason to defer it. A session opened with a one-line request once skipped the read and grew into rule edits and publishes governed by rules never read.
+- **It carries the whole instruction.** Read `foundation/` first and each package's `vocabulary.md`. Read the compiled rules, leaving out each package's `source/` directory and `README.md`. Read the project's `local/rules/` and `local/vocabulary.md`, each named whether or not it exists, its absence ordinary. Name the other working directories and leave them out. Do not print the startup display. Print no package count. Then wait for the engineer's request. `load waytide` asks for exactly that read and nothing more.
+- **This rule does not restate the directory list.** `session-start.sh` is the only place it is enumerated, since a second copy drifted once.
+- **The mark's art is not carried on this channel.** The display hook reads it from the initialization-rule.
+- **Nothing verifies the read.** The hook cannot observe what the agent does. It removes one excuse, an instruction buried in a file the agent may not open. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules. The work honoring the rules is the verification.
+
+**The status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+
+```
+waytide · master :: Waytide
+waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+```
+
+- **The repository name leads, in bold**, a terminal escape sequence the harness passes through, and the only emphasis on the line.
+- **The engineer's segments are separated by a middle dot, and the Waytide segment trails after a double colon**, which separates and does nothing else, so it reads as an annotation on the line.
+- **The Waytide segment is one word, with no package count.** Presence is read from disk, by the same README test the notice uses. The detail is the status report's (see the status-report-format rule).
+- **`uncommitted changes`** appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored. It is words, not a mark like `master*`.
+- **`untracked files`** names the case whose remedy differs: add or ignore, not commit. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
+- **`unpushed commits`** carries no count and never reaches the network. It compares against the remote-tracking ref, so it reflects the last fetch. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
+
+**The startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`. It prints the title, the copyright and license, the loading line, and the figure, read from the initialization-rule, once, on that command only. The agent does not print it.
+
+**Wiring.** A committed `.claude/settings.json` wires the three, and `install.sh` places it in a consuming project. `install.sh` warns when git ignores `.claude/` and the file is not tracked. The fix is `.claude/*` with `!.claude/settings.json`, since git cannot re-include a file inside an excluded directory, and it keeps `.claude/settings.local.json` ignored. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too. `install.sh` never merges into an existing `.claude/settings.json`: it prints the block and leaves the decision to the engineer.
+
+**There is no opt-out.** These surfaces exist so that a system read every session says so, and the read instruction is emitted every session.
+
+**What this costs:** it works only where a harness reads `.claude/settings.json`. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently. A setting that disables hooks silences it too, and a newly placed `.claude/settings.json` may not take effect until the harness reloads.
+
+**Why:** an agent-printed notice was unreliable, since nothing revealed when the agent skipped it, and badly placed, inside a reply where it cluttered the answer or was scrolled past. Both came from the party announced also being the announcer. The harness removes the dependence on the agent, and puts the notice outside the response.
+
 ## History
 
 Waytide's mark led the notice, immediately above the install line, from 2026-08-05 until 2026-08-06.
@@ -261,3 +317,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
