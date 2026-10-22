@@ -521,7 +521,7 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **At the engineer's direction, the compressed #15 restores directive 28.** The `unpushed commits` line now ends: "A branch with no upstream reports nothing, since unpushed is relative to an upstream. An upstream missing by accident is a different fact, and is deliberately not folded into this segment."
 
-That was the one material weakening the directive check found. With it restored, no directive is lost and no remaining weakening is judged material, so **the compressed #15 has the same effect as its source, within what the check shows.** The limits recorded with the check stand. Its compression is now 0.70, from 27,559 characters to 8,222, and its change 0.91.
+That was the one material weakening the directive check found. With it restored, no directive is lost and no remaining weakening is judged material, so **the compressed #15 has the same effect as its source, within what the check shows.** The limits recorded with the check stand. Its compression is now 0.70, from 27,559 characters to 8,220, and its change 0.91.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
