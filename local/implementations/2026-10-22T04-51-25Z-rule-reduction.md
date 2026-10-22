@@ -223,6 +223,12 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 
 **Through the hinges.** Actuation: `(cd "$repository" && ./compile.sh --compressed)`, a flag. Observation: each compiled rule, whole, against its expected text. Controls: two literal rules, one with Compressed and History sections and an attribute line, one with neither, each with its expected text written in the test. Implementation: written directly. Naming, the engineer's wording: *Compiles the compressed text when switched*, and the widened default outcome *Removes the History and Compressed sections*.
 
+**The compiler switches the read between the two texts, with three limits.** The engineer asked whether there is now a tool that runs the source text or the compressed text at will. `./compile.sh --compressed` writes the compressed text into each compiled rule that has one, and a session started afterward reads it; `./compile.sh` puts the default back.
+
+1. **Only #2 has a compressed version**, so today the switch changes one rule.
+2. **The switch changes committed files.** The compiled rules are tracked, so after `--compressed` the working tree shows #2's compiled rule as modified, and nothing stops it being committed. The compile-before-publish rule catches it before a publish, and nothing catches it before an ordinary commit.
+3. **The two versions are not held side by side.** Comparing them means compiling one way, running sessions, then compiling the other way in the same directory — where the derived-rule-files comparison held the full read in a worktree of its own.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -245,3 +251,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:31:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:35:14 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:11:49 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:14:34 PM PT
