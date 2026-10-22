@@ -663,6 +663,10 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The checks covered the earlier wording.** The simulation and the directive check passed on the first compressed versions, and neither has been run on these.
 
+### The directive check on the rewritten #2 and #12 — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the directive check runs again on #2 and #12**, against their rewritten compressed versions. Their sources are unchanged, so each check reuses the directive list made for the first check: 8 for #2, 19 for #12. Two fresh checkers per rule judge each directive against the rewritten text, by the same prompt and criterion as before, and disagreements are resolved by reading both versions.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3569,3 +3573,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:01:57 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:02:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:07:12 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:47 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:35:17 PM PT
