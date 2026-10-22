@@ -21,7 +21,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
 
 - **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
-- **The directive check run on #15:** its one material weakening, the missing-upstream decision, was restored.
+- **The directive check run on #15:** its one material loss of precision, the missing-upstream decision, was restored.
 - **The directive check run on #11:** two directives were found lost outside the intended resolution, and are not restored.
 
 **Whether a compressed rule has the same effect as its source remains open.**
@@ -471,13 +471,13 @@ Every directive is kept: the three moments and every state they cover, the obser
 **The engineer named the question to determine: is the effect of a compressed rule the same as that of its source rule?** The evidence so far does not answer it. The simulation shows that the effect is the same on the behaviors the agent chose to test, and all five rules pass that. It has four limits:
 
 1. **No room to differ.** Both versions scored perfectly on every scenario, except one #11 miss whose cause both versions share. A test where everything passes cannot show a difference that is there.
-2. **Small coverage.** Each rule has three scenarios. #15 has dozens of directives, and three scenarios reach only a few. A directive the compression weakened or dropped goes undetected unless a scenario lands on it.
+2. **Small coverage.** Each rule has three scenarios. #15 has dozens of directives, and three scenarios reach only a few. A directive the compression made less precise or dropped goes undetected unless a scenario lands on it.
 3. **One author.** The agent wrote both the compression and the scenarios. It tested what it knew it had kept, so the gaps in the compression and the gaps in the test are likely to coincide.
 4. **Distance from real use.** Each agent read one rule alone, described what it would do rather than doing it, and was the same model as the agent.
 
 **What would answer it**, each step closing one of the limits:
 
-1. **Check every directive.** A separate agent, one that has not seen the compression, lists the source's directives one by one. It then checks each against the compressed text: kept, weakened, or lost. This finds what was dropped without needing a scenario that lands on it.
+1. **Check every directive.** A separate agent, one that has not seen the compression, lists the source's directives one by one. It then checks each against the compressed text: kept, less precise, or lost. This finds what was dropped without needing a scenario that lands on it.
 2. **Separate the authors.** The engineer, or an agent given only the source, writes the scenarios, at least one for each directive.
 3. **Make the scenarios hard.** Include cases where the source version fails some of the time, so a difference has room to show.
 4. **Test in real sessions.** Compile with `--compressed` in a worktree, run real sessions under the whole read, and compare their actions with source-version sessions on the same tasks.
@@ -489,10 +489,10 @@ Every directive is kept: the three moments and every state they cover, the obser
 **At the engineer's direction, the directive check starts with #15**, testing whether its compressed version carries every directive of its source.
 
 1. **Listing.** A fresh agent that has not seen the compressed version reads #15 compiled by default and lists every directive in it, numbered, one per line. That includes directives stated only in passing or inside explanations.
-2. **Checking.** Two further fresh agents, working separately, each read the list and the compressed version. They judge each directive kept, weakened, or lost, and quote the words in the compressed version that carry it.
+2. **Checking.** Two further fresh agents, working separately, each read the list and the compressed version. They judge each directive kept, less precise, or lost, and quote the words in the compressed version that carry it.
 3. **Resolving.** Where the two checkers agree, their verdict stands. Where they disagree, the agent reads both versions and records which verdict holds and why.
 
-**The compressed version has the same effect as the source, within what this check shows, if no directive is lost and every weakened one is judged immaterial.** A directive judged lost or materially weakened is a defect in the compression, and is recorded as one. No agent involved has seen the simulation's scenarios.
+**The compressed version has the same effect as the source, within what this check shows, if no directive is lost and every less precise one is judged immaterial.** A directive judged lost or materially less precise is a defect in the compression, and is recorded as one. No agent involved has seen the simulation's scenarios.
 
 ### The directive check on #15 — the source's directives are listed, 2026-10-22
 
@@ -502,20 +502,20 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 ### The directive check on #15 — results, 2026-10-22
 
-**No directive is lost, but one is materially weakened, so by the criterion committed before the check, the compressed #15 does not have the same effect as its source.** The two checkers agreed on 74 of the 76 directives.
+**No directive is lost, but one is materially less precise, so by the criterion committed before the check, the compressed #15 does not have the same effect as its source.** The two checkers agreed on 74 of the 76 directives.
 
 | | checker A | checker B | resolved |
 |---|---|---|---|
 | kept | 68 | 70 | 69 |
-| weakened | 8 | 6 | 7 |
+| less precise | 8 | 6 | 7 |
 | lost | 0 | 0 | 0 |
 
 **The two disagreements, resolved by reading both versions:**
 
-- **74, no opt-out:** weakened. The source says "Add no opt-out", an imperative, and names the removed `WAYTIDE_QUIET`. The compressed version says "There is no opt-out", with the reason. Stated as a rule's bold line, with its reason, it still opposes adding one.
+- **74, no opt-out:** less precise. The source says "Add no opt-out", an imperative, and names the removed `WAYTIDE_QUIET`. The compressed version says "There is no opt-out", with the reason. Stated as a rule's bold line, with its reason, it still opposes adding one.
 - **75, quieting must not disable the read instruction:** kept. The compressed version says the read instruction "is emitted every session", and nothing that is emitted every session can be quieted.
 
-**The seven weakened directives, and whether each matters:**
+**The seven less precise directives, and whether each matters:**
 
 | # | the directive | what the compressed version lacks | material |
 |---|---|---|---|
@@ -527,40 +527,40 @@ Every directive is kept: the three moments and every state they cover, the obser
 | 71 | `install.sh` checks whether `.claude/settings.json` is ignored, and prints how to correct it | that it prints the correction, and the exact path checked | no, narrowly: the fix is stated beside the warning, and the source's own heading states the check as "a project that ignores `.claude/`" |
 | 74 | add no opt-out | the imperative, and the removed `WAYTIDE_QUIET` | no, as resolved above |
 
-**What it establishes.** The check found what the simulation could not. Directive 28 governs a change to the status-line script, not a session's behavior, and none of the simulation's scenarios came near it. The other six weakenings are losses of exactness that leave the behavior the same. Restoring directive 28 in the compressed version would meet the criterion, within what this check shows. The limits remain: one listing agent's reading of the source, the checkers' judgments, and the agent's judgment of what is material.
+**What it establishes.** The check found what the simulation could not. Directive 28 governs a change to the status-line script, not a session's behavior, and none of the simulation's scenarios came near it. The other six losses of precision leave the behavior the same. Restoring directive 28 in the compressed version would meet the criterion, within what this check shows. The limits remain: one listing agent's reading of the source, the checkers' judgments, and the agent's judgment of what is material.
 
 ### Directive 28 is restored in the compressed #15 — 2026-10-22
 
 **At the engineer's direction, the compressed #15 restores directive 28.** The `unpushed commits` line now ends: "A branch with no upstream reports nothing, since unpushed is relative to an upstream. An upstream missing by accident is a different fact, and is deliberately not folded into this segment."
 
-That was the one material weakening the directive check found. With it restored, no directive is lost and no remaining weakening is judged material, so **the compressed #15 has the same effect as its source, within what the check shows.** The limits recorded with the check stand. Its compression is now 0.70, from 27,559 characters to 8,220, and its change 0.91.
+That was the one material loss of precision the directive check found. With it restored, no directive is lost and no remaining loss of precision is judged material, so **the compressed #15 has the same effect as its source, within what the check shows.** The limits recorded with the check stand. Its compression is now 0.70, from 27,559 characters to 8,220, and its change 0.91.
 
 ### The directive check on #11 — method, committed before it runs, 2026-10-22
 
 **At the engineer's direction, the directive check runs on #11**, by the method used for #15: one fresh agent lists the source's directives, two fresh agents check each against the compressed version separately, and the agent resolves where they disagree. The prompts are #15's, with only the file paths changed.
 
-**The compressed #11 departs from its source on purpose in one place.** It resolves the contradiction about reserved tags, by the engineer's choice. The source says "No tag is reserved here" and "The tag describes and decides nothing". The compressed version says a kind tag decides nothing except `[observation]` and `[work-item]`. A directive the check finds weakened or lost there is the intended resolution, not a defect. It is recorded as such.
+**The compressed #11 departs from its source on purpose in one place.** It resolves the contradiction about reserved tags, by the engineer's choice. The source says "No tag is reserved here" and "The tag describes and decides nothing". The compressed version says a kind tag decides nothing except `[observation]` and `[work-item]`. A directive the check finds less precise or lost there is the intended resolution, not a defect. It is recorded as such.
 
-**The criterion is #15's:** the compressed version has the same effect as its source, within what the check shows, if no directive is lost and every weakened one is judged immaterial, leaving aside the intended resolution.
+**The criterion is #15's:** the compressed version has the same effect as its source, within what the check shows, if no directive is lost and every less precise one is judged immaterial, leaving aside the intended resolution.
 
 ### The directive check on #11 — results, 2026-10-22
 
-**Three directives are lost and twenty-three weakened. One loss is the intended resolution, and two are outside it, so by the committed criterion the compressed #11 does not have the same effect as its source.** No weakened directive is judged material. The two checkers agreed on 69 of the 75.
+**Three directives are lost and twenty-three less precise. One loss is the intended resolution, and two are outside it, so by the committed criterion the compressed #11 does not have the same effect as its source.** No less precise directive is judged material. The two checkers agreed on 69 of the 75.
 
 | | checker A | checker B | resolved |
 |---|---|---|---|
 | kept | 49 | 49 | 49 |
-| weakened | 21 | 23 | 23 |
+| less precise | 21 | 23 | 23 |
 | lost | 5 | 3 | 3 |
 
 **The six disagreements, resolved by reading both versions:**
 
-- **12, no report groups items by kind tag:** weakened. "Decides nothing about it" does not cover grouping.
+- **12, no report groups items by kind tag:** less precise. "Decides nothing about it" does not cover grouping.
 - **13, no filename derives from a kind tag:** kept. The compressed version fixes the whole name, prefix and state, which leaves nothing for a tag to supply.
-- **19, the form `- **Priority:** 3`:** weakened. The compressed version gives `**Priority:** N`, without the list bullet. Nothing reads the line mechanically.
-- **43, add no spine the thinking does not have:** weakened. "Nothing else is required" permits less, and does not forbid more. The prohibition survives only in the Why line.
+- **19, the form `- **Priority:** 3`:** less precise. The compressed version gives `**Priority:** N`, without the list bullet. Nothing reads the line mechanically.
+- **43, add no spine the thinking does not have:** less precise. "Nothing else is required" permits less, and does not forbid more. The prohibition survives only in the Why line.
 - **57, an item without a State line is a defect:** kept. "Every item carries a state", with the State line in the required shape.
-- **66, the two name each other in their prose:** weakened, by the loss of "in their prose".
+- **66, the two name each other in their prose:** less precise, by the loss of "in their prose".
 
 **The intended resolution accounts for directives 2, 11, 15, 16, and 60**, and for part of 14. These are "nothing about an item's tags is strict", "no rule reads a kind tag", "no tag is reserved", "no tag is read mechanically", and `[work-item]` being reserved. The compressed version replaces them with its one sentence: a kind tag decides nothing except `[observation]` and `[work-item]`.
 
@@ -571,26 +571,26 @@ That was the one material weakening the directive check found. With it restored,
 
 Neither loss changes a behavior the simulation tested, and each could be restored in one clause.
 
-**The weakened directives outside the resolution are losses of exactness that leave behavior the same.** Examples: "no date" from `Deferred`; "or none at all" from carrying several tags; that the states not listed as taken back are not taken back; and that a renumbering's cost is accepted. One is the closest to mattering, 8: that `[idea]` is the only kind tag assigned by default. "Tag an item by its kind" could invite an agent to judge a kind on its own. The simulation's S1 tested exactly that, and all five compressed answers tagged `[idea]`.
+**The less precise directives outside the resolution are losses of exactness that leave behavior the same.** Examples: "no date" from `Deferred`; "or none at all" from carrying several tags; that the states not listed as taken back are not taken back; and that a renumbering's cost is accepted. One is the closest to mattering, 8: that `[idea]` is the only kind tag assigned by default. "Tag an item by its kind" could invite an agent to judge a kind on its own. The simulation's S1 tested exactly that, and all five compressed answers tagged `[idea]`.
 
 ### Directives 14 and 17 are restored in the compressed #11 — 2026-10-22
 
 **At the engineer's direction, the compressed #11 restores the two directives the check found lost outside the intended resolution.** Its Tags paragraph now reads, in part: "The set is open, `[deferred]` is freeform like any other, and an item may carry several. A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`, below. Otherwise, what an item is, the item itself says, not its tag."
 
-With both restored, no directive outside the intended resolution is lost, and no weakening is judged material. So **the compressed #11 has the same effect as its source, within what the check shows**, apart from the resolution the engineer chose. The limits recorded with the check stand. Its compression is now 0.60, from 8,278 characters to 3,343, and its change 0.83.
+With both restored, no directive outside the intended resolution is lost, and no loss of precision is judged material. So **the compressed #11 has the same effect as its source, within what the check shows**, apart from the resolution the engineer chose. The limits recorded with the check stand. Its compression is now 0.60, from 8,278 characters to 3,343, and its change 0.83.
 
 ### The directive check on #12 — method, committed before it runs, 2026-10-22
 
-**At the engineer's direction, the directive check runs on #12**, by the method used for #15 and #11, with the prompts' file paths changed to `check12`. The criterion is the same. The compressed version has the same effect as its source, within what the check shows, if no directive is lost and every weakened one is judged immaterial. The compressed #12 departs from its source on purpose nowhere. Like its source, it keeps the tension between "at no others" and the reconciliation entry.
+**At the engineer's direction, the directive check runs on #12**, by the method used for #15 and #11, with the prompts' file paths changed to `check12`. The criterion is the same. The compressed version has the same effect as its source, within what the check shows, if no directive is lost and every less precise one is judged immaterial. The compressed #12 departs from its source on purpose nowhere. Like its source, it keeps the tension between "at no others" and the reconciliation entry.
 
 ### The directive check on #12 — results, 2026-10-22
 
-**No directive is lost, and the one weakened is judged immaterial, so the compressed #12 has the same effect as its source, within what the check shows.** The two checkers agreed on 16 of the 19 directives.
+**No directive is lost, and the one less precise directive is judged immaterial, so the compressed #12 has the same effect as its source, within what the check shows.** The two checkers agreed on 16 of the 19 directives.
 
 | | checker A | checker B | resolved |
 |---|---|---|---|
 | kept | 17 | 16 | 18 |
-| weakened | 2 | 3 | 1 |
+| less precise | 2 | 3 | 1 |
 | lost | 0 | 0 | 0 |
 
 **The three disagreements, resolved by reading both versions:**
@@ -599,7 +599,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 - **5, an entry for each Settled resolution:** kept. The items-convention dates every Settled resolution, so "each dated `Settled` resolution" narrows nothing.
 - **13, the commit subject follows the entry's rule:** kept. "Carry the same mood into the commit subject" carries what the source's sentence does. The simulation's S2 tested it, and all five compressed answers kept the subject in the record's mood.
 
-**The one weakened directive, agreed:** 12, not to write an item in the commit-message grammar. The compressed version says why that grammar does not fit an item, and forbids it only through the mood. That is immaterial: the same S2 answers each rejected the commit grammar for a new item.
+**The one less precise directive, agreed:** 12, not to write an item in the commit-message grammar. The compressed version says why that grammar does not fit an item, and forbids it only through the mood. That is immaterial: the same S2 answers each rejected the commit grammar for a new item.
 
 **#12 is the first of the three checked rules to meet the criterion without a restoration.**
 
@@ -609,9 +609,9 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 ### The directive check on #7 — results, 2026-10-22
 
-**No directive is lost, and the one weakened is judged immaterial, so the compressed #7 has the same effect as its source, within what the check shows.** The two checkers agreed on all 20 directives: 19 kept, 1 weakened, none lost.
+**No directive is lost, and the one less precise directive is judged immaterial, so the compressed #7 has the same effect as its source, within what the check shows.** The two checkers agreed on all 20 directives: 19 kept, 1 less precise, none lost.
 
-**The weakened directive is 18, that a writer must not choose a worse word out of deference to the STE dictionary.** The checkers found it only in the compressed version's Why, stated as an effect rather than a prohibition. The source states it the same way: "keeps a writer from choosing a worse word out of deference" is a sentence in the source's own Why paragraph. The listing agent turned a reason into a directive. In both versions the deference is to the dictionary, which is that paragraph's subject. Nothing is lost relative to the source.
+**The less precise directive is 18, that a writer must not choose a worse word out of deference to the STE dictionary.** The checkers found it only in the compressed version's Why, stated as an effect rather than a prohibition. The source states it the same way: "keeps a writer from choosing a worse word out of deference" is a sentence in the source's own Why paragraph. The listing agent turned a reason into a directive. In both versions the deference is to the dictionary, which is that paragraph's subject. Nothing is lost relative to the source.
 
 **#7 is the second checked rule to meet the criterion without a restoration**, after #12. It compressed least of the five, by 0.27, which left the least room to drop anything.
 
@@ -621,11 +621,11 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 ### The directive check on #2 — results, 2026-10-22
 
-**Every directive is kept, so the compressed #2 has the same effect as its source, within what the check shows.** The two checkers agreed on all 8 directives: 8 kept, none weakened, none lost.
+**Every directive is kept, so the compressed #2 has the same effect as its source, within what the check shows.** The two checkers agreed on all 8 directives: 8 kept, none less precise, none lost.
 
-**All five compressed rules now meet the directive check's criterion.** #2, #7, and #12 met it as first compressed. #15 met it after directive 28 was restored, and #11 after directives 14 and 17 were. The check found three directives lost or materially weakened among the 198 it listed across the five rules. The simulation found none of them.
+**All five compressed rules now meet the directive check's criterion.** #2, #7, and #12 met it as first compressed. #15 met it after directive 28 was restored, and #11 after directives 14 and 17 were. The check found three directives lost or materially less precise among the 198 it listed across the five rules. The simulation found none of them.
 
-| # | rule | directives | kept | weakened | lost | restored |
+| # | rule | directives | kept | less precise | lost | restored |
 |---|---|---|---|---|---|---|
 | 2 | show-feature-test-output-after-implementation-hinge | 8 | 8 | 0 | 0 | none |
 | 7 | waytide-keeps-its-word-where-the-ste-word-means-something-else | 20 | 19 | 1 | 0 | none |
@@ -633,7 +633,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 | 15 | announce-waytide-at-session-start | 76 | 69 | 7 | 0 | 28 |
 | 11 | items-convention | 75 | 49 | 23 | 3 | 14, 17 |
 
-**The losses grew with the rule's size.** The two largest rules account for all three, and the three smallest lost nothing. #11's count of weakened directives also includes its intended resolution.
+**The losses grew with the rule's size.** The two largest rules account for all three, and the three smallest lost nothing. #11's count of less precise directives also includes its intended resolution.
 
 ### #13 is compressed — 2026-10-22
 
@@ -648,7 +648,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 ### #2 and #12 are rewritten in short sentences — 2026-10-22
 
-**At the engineer's direction, the compressed #2 and #12 are rewritten in short sentences**, as #13 was compressed. Their compressed versions packed several directives into each sentence, joined by dashes and semicolons. Each rewrite keeps every directive and splits the sentences. #12's rewrite also states outright the one directive its check found weakened: "do not use that form" for an item.
+**At the engineer's direction, the compressed #2 and #12 are rewritten in short sentences**, as #13 was compressed. Their compressed versions packed several directives into each sentence, joined by dashes and semicolons. Each rewrite keeps every directive and splits the sentences. #12's rewrite also states outright the one directive its check found less precise: "do not use that form" for an item.
 
 | # | | solubility | clarity score | size | average words | over 25 words |
 |---|---|---|---|---|---|---|
@@ -671,30 +671,30 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **Both rewritten versions meet the criterion, so the rewrites keep each rule's effect, within what the check shows.** The checkers agreed on every directive of both rules.
 
-| # | directives | kept | weakened | lost |
+| # | directives | kept | less precise | lost |
 |---|---|---|---|---|
 | 2 | 8 | 8 | 0 | 0 |
 | 12 | 19 | 16 | 3 | 0 |
 
 **#2 keeps all 8**, as its first compressed version did.
 
-**#12's three weakened directives are judged immaterial.** In the first check these three were split between the checkers and resolved as kept. Here both checkers judged them weakened, so the verdict stands as weakened.
+**#12's three less precise directives are judged immaterial.** In the first check these three were split between the checkers and resolved as kept. Here both checkers judged them less precise, so the verdict stands as less precise.
 
 - **4, the creation entry records the item, not the word:** "the item's tag makes no difference" carries it.
 - **5, an entry for each Settled resolution added after creation:** the rewritten version drops "added after". A reader could log a resolution already in the item when it was written, beside its creation entry. That is one extra entry, and a log that takes one more line is still correct.
 - **13, the commit subject states what the record settles as the record's:** "carry the same mood" carries the part that changes behavior. In the simulation's S2, every answer under the first compressed version, which had the same sentence, kept the subject in the record's mood.
 
-**Directive 12, the one the first check found weakened, is now kept.** The rewrite states it outright: "do not use that form for it".
+**Directive 12, the one the first check found less precise, is now kept.** The rewrite states it outright: "do not use that form for it".
 
 ### Directive 5 is restored in the rewritten #12 — 2026-10-22
 
-**At the engineer's direction, the rewritten #12 restores "added after" in directive 5.** The bullet now reads "On each dated `Settled` resolution added after the item is created." A resolution already in an item when it is written is then logged by the creation entry alone, as the source has it. Directive 5 is kept, leaving 4 and 13 as #12's only weakened directives, both immaterial. Compression is now 0.58, from 6,443 characters to 2,687, and change 0.80.
+**At the engineer's direction, the rewritten #12 restores "added after" in directive 5.** The bullet now reads "On each dated `Settled` resolution added after the item is created." A resolution already in an item when it is written is then logged by the creation entry alone, as the source has it. Directive 5 is kept, leaving 4 and 13 as #12's only less precise directives, both immaterial. Compression is now 0.58, from 6,443 characters to 2,687, and change 0.80.
 
 ### "Weakened" becomes a loss of precision — 2026-10-22
 
 **At the engineer's direction, the directive check's middle verdict is renamed.** A directive the compressed text carries less exactly than its source has lost **precision**, and its verdict is **less precise**. The three verdicts are now kept, less precise, and lost. Whether a loss of precision changes what an agent does remains a separate judgment, material or immaterial.
 
-**The checking prompt for future checks uses the new words.** The sections above keep "weakened", as they were written when that was the word.
+**The checking prompt for future checks uses the new words, and the sections above are updated to them**, at the engineer's direction, since "weakened" was misleading. The appendices keep "weakened" where they quote the prompt the agents were given and the agents' answers word for word.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -3680,3 +3680,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:35:17 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:36:12 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:41:01 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:16 PM PT
