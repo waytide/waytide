@@ -41,6 +41,43 @@ BRANCH SWITCHED
 
 **How to apply:** print the block on every branch switch, before reporting anything else about the work. Fill all three fields. Keep the reason to what the switch was for, not what the work is. Print no block for a worktree, a merge, or a commit.
 
+## Compressed
+
+When the agent switches branches, it prints this block. The block has a border of `=` characters above and below:
+
+```
+========================================
+BRANCH SWITCHED
+
+  from    master
+  to      experiment/ste-spec
+  reason  the vocabulary comparison is
+          recorded on this branch
+========================================
+```
+
+**Print it on every switch.** That includes a switch the engineer asked for. It includes a switch made to reach a file. It includes a switch back to the branch the session started on.
+
+**Print it before reporting anything else about the work.**
+
+## The three fields
+
+1. **from** — the branch the working tree was on.
+2. **to** — the branch the working tree is on now.
+3. **reason** — why the agent switched, in one line or two.
+
+**Fill all three fields.** The reason states what the switch was for, not what the work is.
+
+**The border is the requirement, not decoration.** Any unmissable form satisfies this rule. `=` characters above and below are the settled form.
+
+## What this does not cover
+
+- **Creating a branch** is a switch when the working tree moves to it. `git switch -c` prints the block, with `from` naming the base.
+- **A worktree** adds a working directory rather than moving this one. No block is printed. The implementation-lifecycle rule governs that case.
+- **A merge, a commit, or a push** does not move the working tree. No block is printed.
+
+**Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
+
 Related:
 
 - the `foundation` implementation-lifecycle rule — which require the working tree to end on the upstream branch, and which the block makes checkable
@@ -53,3 +90,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:14 PM PT
