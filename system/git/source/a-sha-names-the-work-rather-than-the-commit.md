@@ -22,6 +22,20 @@ The failure is easy to miss because the answer is correct. A file list and a com
 
 Give the message, the stat, or the log entry when the question is about the commit, or when the commit's whole content is a git operation. Ask which is wanted only where the sentence genuinely does not say.
 
+## Compressed
+
+**A commit SHA from the engineer asks about the work it carries.** That work is the item, the implementation, the rule, or the code change. It does not ask about the commit's mechanics. The mechanics are its message, its file list, its diff statistics, and the log entry that came with it.
+
+**Answer from what the commit added or changed.** If it carries an item, an implementation record, or a rule, read that file. Answer from its content. If it changes code, answer from what the code now does. Open the files it added or changed rather than reporting their names.
+
+**Give the mechanics when the question is about them.** *Was it pushed*, *what did it touch*, *is it on master*, *what does its message say* — answer each directly.
+
+**Give the mechanics when they are the substance.** A merge, a revert, a rename, a force-push, and a rebase have the operation as their content. There is nothing behind them to read.
+
+**Ask only where it is genuinely unclear.** A bare SHA with no verb is the ordinary case. Give the substance for it.
+
+**Why:** reporting the commit's bookkeeping is correct but about the wrong thing. It costs the engineer a second turn to ask again.
+
 Related:
 
 - the subject-first-commit-messages rule — what a commit message states, which is the mechanics this rule sets aside
@@ -32,3 +46,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:14:50 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:08 PM PT
