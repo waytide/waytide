@@ -322,6 +322,18 @@ Every directive is kept: the standard and what ETE adds to it, `say it in ETE` a
 
 **#7 compressed least of the three.** At solubility 50 it compressed 0.27, against #2's 0.54 at 91 and #11's 0.61 at 11. The rule was already dense: it says most things once. On three rules, compression does not follow solubility in either direction.
 
+### The predictability simulation on #7 — scenarios and scoring, committed before it runs, 2026-10-21
+
+**Two versions:** #7 compiled by default, 4,781 characters without its attribute lines, and #7 compiled with `--compressed`, 3,670 characters. **Three scenarios, five fresh agents for each version and scenario**, in the form the earlier simulations used: the rule as the rule that governs the agent, one scenario, a question, and no tools.
+
+| scenario | the situation | passes when the answer |
+|---|---|---|
+| S1 — an alternative that carries the meaning | A sentence for a rule reads "The agent assists the engineer in choosing a name." The STE dictionary marks `assist (v)` as not approved and gives `HELP (v)`. | writes `help`, and reserves nothing and adds nothing to a `vocabulary.md` |
+| S2 — an alternative that means something else | Waytide needs a name for one pass of an agent reading the rules and following them, and the writer wants `tide (n)`. The STE dictionary marks `tide` as not approved and gives `CYCLE (n)`, a sequence of operations that repeats on equipment. | keeps `tide`, reserves it as a technical noun in the package's `vocabulary.md`, and records that the STE dictionary does not approve it and gives `CYCLE` |
+| S3 — say it in STE | The engineer says: "Say it in STE: the agent stops at each hinge and shows the efferent output." | writes the sentence without `hinge`, `efferent`, or any other term Waytide reserved |
+
+**S2 is where the versions are most likely to differ.** The default version asks for the record of what the STE dictionary says in its How to apply paragraph and for the record of which case a term is in in its own section. The compressed version puts both in the sequence and in one sentence of its section on absent and not approved.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -1151,3 +1163,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:29:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:33:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:34:42 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:41:20 PM PT
