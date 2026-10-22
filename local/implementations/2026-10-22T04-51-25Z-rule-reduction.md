@@ -55,6 +55,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Working location | Branch and worktree | Wed Oct 21 2026 at 9:51:25 PM PT |
 | Participation | Attended | Wed Oct 21 2026 at 9:51:25 PM PT |
 | Phase 1 started | flattening | Wed Oct 21 2026 at 9:56:47 PM PT |
+| Phase 1 method | One rule at a time, on a subject set the engineer specifies | Wed Oct 21 2026 at 9:58:18 PM PT |
 
 ## What actually happened
 
@@ -64,7 +65,10 @@ Committed before the work. Each item carries the agent's confidence.
 
 **The record is kept on the experiment's branches from here.** The copy on `master` stays as the experiment's start recorded it, so the two do not diverge into a conflict when the experiment merges.
 
+**The phase goes one rule at a time, on rules the engineer chooses.** The engineer will give the specifications for which rules form the subject set. Each rule in it is flattened and put to the engineer on its own, rather than the set being flattened by agents and reviewed afterward.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:56:47 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:58:18 PM PT
