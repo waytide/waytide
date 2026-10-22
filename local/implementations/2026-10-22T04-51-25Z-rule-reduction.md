@@ -635,6 +635,17 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The losses grew with the rule's size.** The two largest rules account for all three, and the three smallest lost nothing. #11's count of weakened directives also includes its intended resolution.
 
+### #13 is compressed — 2026-10-22
+
+**#13, a-project-declares-its-package-set, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before `Related:`. Against its body, as the others were measured:
+
+- **compression 0.44**: 5,743 characters to 3,242
+- **change 0.78**: of 962 words, 216 stay in place
+
+**It is compressed with the two lessons the earlier five gave.** Every directive is kept, the small ones included, since the directive check found that small ones are what goes missing. The sentences stay short, since packing them lowered #2's clarity: 33 sentences, 15.0 words on average, one over 25.
+
+**Its solubility rises from 20 to 57, and its clarity score from 0.24 to 0.70**, scored against the same 105 rules as the others. It is the first compressed rule to gain clarity as well as losing size. What went is mostly the argument: why `**Packages:**` is recorded rather than computed, why the read costs what it always cost, and why a delayed effect is announced.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3539,3 +3550,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:39:20 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:40:28 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:01:57 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:02:58 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:07:12 PM PT

@@ -58,6 +58,36 @@
 
 **How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Read every installed package's rules as always, and follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying.
 
+## Compressed
+
+**Declaring a set.** A project may declare a package set, and the packages outside it are deactivated. Where no set is declared, every installed package is active, and nothing reports it.
+
+**The record.** A declaration is a record under `waytide/local/`. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`. A new declaration writes a new record and edits none. The record with the latest prefix holds, and the earlier ones are history. Reverting is a declaration naming `default`.
+
+**Three lines carry it**, and a record without the first two is not a declaration:
+
+```
+- **Package set:** content
+- **Packages:** foundation, git, journal, language, versioning
+- **Inactive:** design-by-efferent, testing
+```
+
+- **`**Package set:**`** is what the engineer declared: a set name, package names, or both, in the grammar `install` takes.
+- **`**Packages:**`** is what that resolved to, recorded when declared rather than computed at session start. It is authoritative. A package installed later is in neither line, so it stays inactive until a new declaration takes it up.
+- **`**Inactive:**`** is what was installed and not active then. It is recorded, not inferred, so the record states the whole state it was made against.
+
+**An include activates what it names.** Where an active package's README includes another package, that package is active, named or not. An include states a dependency, and `install` already treats it so.
+
+**Every package is still read.** A deactivated package's rules are read at session start like an active package's. The declaration decides which rules are applied, not which are read, and it does not narrow the unconditional read. A rule that is read and withheld can be cited, weighed, and reactivated within the session. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale.
+
+**What is printed.** The agent prints the packages at the head of the response that carries the read, because that text renders markdown. The session-start notice and the startup display print none of it. List every installed package and hide none, with active ones bold and deactivated ones italic. Follow the list with the set's name, `package set: content`, and close with a count line, `(5 active of 8 installed)`. The hidden-record rule does not apply, because nothing is withheld.
+
+**When nothing is printed.** Where no set is declared, print nothing about a set, not even a line saying so. A declaration of `default` prints nothing where it deactivates nothing. It does print where the project holds a package that `default` does not name.
+
+**Declaring during a session.** A declaration does not unload rules already read. When the engineer declares a set, write the record. Then say that the deactivated packages' rules stay in force for this session, and that Claude must be restarted for them to stop applying.
+
+**Why:** a project does not need every convention the system carries. Before this, the remedies were to leave a package uninstalled or to write a local rule against it. A declaration is a recorded project decision, committed, dated, and reviewable, not the agent's judgment in the moment.
+
 Related:
 
 - the announce-waytide-at-session-start rule — the unconditional read this leaves whole
@@ -78,3 +108,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:06:54 PM PT
