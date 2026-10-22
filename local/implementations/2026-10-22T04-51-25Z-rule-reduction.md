@@ -229,6 +229,15 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 2. **The switch changes committed files.** The compiled rules are tracked, so after `--compressed` the working tree shows #2's compiled rule as modified, and nothing stops it being committed. The compile-before-publish rule catches it before a publish, and nothing catches it before an ordinary commit.
 3. **The two versions are not held side by side.** Comparing them means compiling one way, running sessions, then compiling the other way in the same directory — where the derived-rule-files comparison held the full read in a worktree of its own.
 
+**A rule's predictability can be simulated with fresh agents**, the engineer having asked whether the agent can simulate the evaluation of a rule to determine whether it is predictable. The agent cannot run a real session, and can start agents that know nothing of the session:
+
+1. **Scenarios are written first**: the situations the rule governs, each with the behavior the rule requires.
+2. **Each fresh agent is given one version of the rule** — source or compressed — and one scenario, and asked what it does next.
+3. **Each pairing runs several times**, five agents a version a scenario for instance.
+4. **The answers are scored** against the required behavior, for **predictability** — whether the runs of one version agree — and **equivalence** — whether the two versions produce the same behavior.
+
+**What it cannot show:** the agents read one rule in isolation rather than in the whole read; they describe what they would do rather than doing it; they are the same model as the agent, sharing its blind spots; and the scenarios are the agent's. For one rule with three scenarios it is some 20 to 30 short agent runs.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -252,3 +261,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:35:14 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:11:49 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:14:34 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:16:44 PM PT
