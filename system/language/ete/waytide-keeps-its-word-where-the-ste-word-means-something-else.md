@@ -1,5 +1,9 @@
 # Waytide keeps its own word where the STE dictionary's approved word means something else
 
+- **Solubility:** 50
+- **Original rank:** 55 of 106
+- **Unclarity:** 0.23
+
 Waytide writes its prose in ASD-STE100 Simplified Technical English. The standard gives an approved dictionary and 53 writing rules. It also permits a project to add its own technical nouns and technical verbs. STE Rules 1.5 through 1.13 govern that.
 
 **The rules in this directory are Eventide Technical English, or ETE.** That is Waytide's implementation of the standard. The STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the order this rule states. **`Say it in ETE` is the instruction to write that way.** It is not the same request as `say it in STE`. That one asks for the raw standard, and forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved.

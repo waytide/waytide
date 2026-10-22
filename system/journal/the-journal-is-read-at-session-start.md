@@ -1,5 +1,9 @@
 # The journal is read at the start of a session, with the rules
 
+- **Solubility:** 49
+- **Original rank:** 53 of 106
+- **Unclarity:** 0.51
+
 **Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the identity-resolution-contract rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
 
 **Another writer's journal is not read.** A project may hold several, and each is one writer's thinking carried across their own sessions. The agent reads the journal of the writer whose session this is.

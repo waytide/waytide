@@ -1,5 +1,9 @@
 # A single-case feature is one test file named for the feature, not a folder of case files
 
+- **Solubility:** 88
+- **Original rank:** 104 of 106
+- **Unclarity:** 0.15
+
 When a feature has only **one** case, its test is a **single file named for the feature**. It is `test/automated/upload/status.rb`, directly under the feature context `context "Upload" do; context "Status" do`. Do **not** put it in a folder under a case-discriminating filename (`status/present.rb`).
 
 The folder-with-case-files form is reserved for features with **multiple** cases. It is `rejected/empty.rb` with `rejected/refused.rb`, or `result/located.rb` with `result/unlocated.rb`. Each filename names the case it distinguishes, such as `empty` and `refused`. A case name like `empty` is justified only when there is a sibling case (`refused`) to contrast against. With one case there is nothing to discriminate, so the case name is noise and the file takes the feature's own name.
@@ -23,3 +27,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT

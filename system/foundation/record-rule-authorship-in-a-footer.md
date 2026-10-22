@@ -1,5 +1,9 @@
 # Record a rule's authorship in a provenance footer
 
+- **Solubility:** 50
+- **Original rank:** 54 of 106
+- **Unclarity:** 0.70
+
 Every rule file ends with a **provenance footer** — who authored it and when, and who has changed it since. In a project with multiple contributors, this makes a rule's authorship traceable at the rule itself, not only in version-control history.
 
 The footer sits at the end of the file, after the rule's content, below a `---` divider:

@@ -1,5 +1,9 @@
 # Working-state artifacts carry a provenance footer
 
+- **Solubility:** 49
+- **Original rank:** 52 of 106
+- **Unclarity:** 0.52
+
 Every working-state artifact under `waytide/` that is a document with a body ends with a **provenance footer**. That is the `Authored by … / Changed by …` block, in the record-rule-authorship-in-a-footer format, with a local human-readable datetime. This covers **implementation records (experiments and features), items (designs, plans, observations, and deferred work among them), loop records, and work session records**.
 
 - **Same footer, different reason than the rule files.** The rule-file footer exists because `git subtree` strips the composite's per-file history when a package is installed into a consuming project, so `git blame` can't show a rule's author there. That reason does **not** apply to a working-state artifact: it lives in the project's own `waytide/` tree, is never shipped by subtree, and keeps its git history intact. The footer is here for a different reason. **The file should be useful on its own.** These artifacts are written to be read as self-contained documents, so a reader should not have to leave the file and query the git log to learn who wrote it and when.

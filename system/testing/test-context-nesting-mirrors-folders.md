@@ -1,5 +1,9 @@
 # Test context nesting mirrors the folder hierarchy
 
+- **Solubility:** 87
+- **Original rank:** 102 of 106
+- **Unclarity:** 0.16
+
 A test file's context nesting mirrors the hierarchy of its folder path. Each directory segment under `test/automated/` becomes a context, mirroring the test organization's hierarchy. The scenario contexts nest inside those, and the test blocks inside those.
 
 A test at `test/automated/upload/rejected/empty.rb` opens `context "Upload"` → `context "Rejected"` → the outcome context — mirroring `upload/rejected/`. A test at `test/automated/upload/retried.rb` does the same: `"Upload"` → `"Retried"`.

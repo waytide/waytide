@@ -1,5 +1,9 @@
 # After any implementation hinge, show the test output for the current feature
 
+- **Solubility:** 91
+- **Original rank:** 105 of 106
+- **Unclarity:** 0.06
+
 Every time an implementation hinge is satisfied, **show the test output for the current feature**, without being asked. The hinge is satisfied when the just-accepted implementation is written and the suite is run. Do not show only the single outcome's test. Run and display the **whole feature's** tests, meaning every outcome built so far for the unit under development. The human then sees the feature's accumulated behavior at each implementation step.
 
 Run the feature's tests with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail are visible. Show that output in the same turn as reporting the implementation.

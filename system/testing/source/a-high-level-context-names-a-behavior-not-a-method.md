@@ -1,5 +1,9 @@
 # A high-level context names a behavior, never a method
 
+- **Solubility:** 50
+- **Original rank:** 56 of 106
+- **Unclarity:** 0.37
+
 A test's high-level context is expressed in terms of a **behavior**. A method name is an implementation, so it does not name one. `context "Call"` takes the name of the method `call` and states nothing about what the unit does. What the reader wants there is the behavior the unit is being read for.
 
 ## The requirement is firm at the top and relaxes with depth
@@ -40,3 +44,4 @@ Related:
 
 Authored by Scott Bellware on Fri Aug 28 2026 at 10:13:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT

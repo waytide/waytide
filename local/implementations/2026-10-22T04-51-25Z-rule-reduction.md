@@ -145,6 +145,32 @@ Committed before the work. Each item carries the agent's confidence.
 
 **"Compressibility" is renamed "compression"**, at the engineer's direction. The measure is unchanged: the share of a rule's characters removed when it is restated with the same effect and outcome. The log entries that used the earlier word keep it, as historical records.
 
+### Comparison rules — 2026-10-21
+
+**At the engineer's direction, the five most soluble rules and the five nearest the corpus's median solubility, 49.5, carry the same three attributes as the candidates**, measured on the same compiled rules. They give the candidates, the least soluble, something to be compared against.
+
+**The five most soluble**
+
+| rule | size, characters | Original rank | clarity score | solubility |
+|---|---|---|---|---|
+| control-prefix-test-vars | 731 | 106 of 106 | 1.00 | 99 |
+| show-feature-test-output-after-implementation-hinge | 1,764 | 105 of 106 | 0.94 | 91 |
+| plans-no-code-samples | 1,292 | 103 of 106 | 0.82 | 88 |
+| single-case-test-named-for-feature | 1,549 | 104 of 106 | 0.85 | 88 |
+| test-context-nesting-mirrors-folders | 1,658 | 102 of 106 | 0.84 | 87 |
+
+**Five near the median**
+
+| rule | size, characters | Original rank | clarity score | solubility |
+|---|---|---|---|---|
+| record-rule-authorship-in-a-footer | 2,656 | 54 of 106 | 0.30 | 50 |
+| waytide-keeps-its-word-where-the-ste-word-means-something-else | 4,771 | 55 of 106 | 0.77 | 50 |
+| working-state-artifacts-carry-a-provenance-footer | 3,480 | 52 of 106 | 0.48 | 49 |
+| the-journal-is-read-at-session-start | 3,506 | 53 of 106 | 0.49 | 49 |
+| a-high-level-context-names-a-behavior-not-a-method | 3,849 | 56 of 106 | 0.63 | 50 |
+
+**Two of the median five are median for opposite reasons.** waytide-keeps-its-word-where-the-ste-word-means-something-else is large and clear, with a clarity score of 0.77; record-rule-authorship-in-a-footer is small and unclear, at 0.30. The same solubility can hide two different rules, which is the combined score's mixing of size and clarity at work.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -164,3 +190,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:54 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:30:09 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:31:16 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
