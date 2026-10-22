@@ -646,6 +646,23 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **Its solubility rises from 20 to 57, and its clarity score from 0.24 to 0.70**, scored against the same 105 rules as the others. That is the largest gain in clarity of the six compressed rules, ahead of #11's, from 0.18 to 0.55. What went is mostly the argument: why `**Packages:**` is recorded rather than computed, why the read costs what it always cost, and why a delayed effect is announced.
 
+### #2 and #12 are rewritten in short sentences — 2026-10-22
+
+**At the engineer's direction, the compressed #2 and #12 are rewritten in short sentences**, as #13 was compressed. Their compressed versions packed several directives into each sentence, joined by dashes and semicolons. Each rewrite keeps every directive and splits the sentences. #12's rewrite also states outright the one directive its check found weakened: "do not use that form" for an item.
+
+| # | | solubility | clarity score | size | average words | over 25 words |
+|---|---|---|---|---|---|---|
+| 2 | source | 91 | 0.94 | 1,764 | 14.5 | 0.06 |
+| 2 | first compressed | 62 | 0.28 | 920 | 31.8 | 0.25 |
+| 2 | rewritten | 93 | 0.89 | 918 | 13.9 | 0.11 |
+| 12 | source | 17 | 0.23 | 7,493 | 21.3 | 0.25 |
+| 12 | first compressed | 35 | 0.20 | 3,479 | 23.6 | 0.28 |
+| 12 | rewritten | 44 | 0.47 | 3,705 | 16.2 | 0.10 |
+
+**#2 regains nearly all the clarity it lost**, from 0.28 to 0.89, at the same size, and its solubility rises above its source's. **#12's clarity score doubles**, from 0.20 to 0.47, for 226 more characters. Against the bodies, compression is now 0.55 for #2 and 0.59 for #12.
+
+**The checks covered the earlier wording.** The simulation and the directive check passed on the first compressed versions, and neither has been run on these.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3551,3 +3568,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:40:28 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:01:57 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:02:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:07:12 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:47 PM PT
