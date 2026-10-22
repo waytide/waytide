@@ -690,6 +690,12 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the rewritten #12 restores "added after" in directive 5.** The bullet now reads "On each dated `Settled` resolution added after the item is created." A resolution already in an item when it is written is then logged by the creation entry alone, as the source has it. Directive 5 is kept, leaving 4 and 13 as #12's only weakened directives, both immaterial. Compression is now 0.58, from 6,443 characters to 2,687, and change 0.80.
 
+### "Weakened" becomes a loss of precision — 2026-10-22
+
+**At the engineer's direction, the directive check's middle verdict is renamed.** A directive the compressed text carries less exactly than its source has lost **precision**, and its verdict is **less precise**. The three verdicts are now kept, less precise, and lost. Whether a loss of precision changes what an agent does remains a separate judgment, material or immaterial.
+
+**The checking prompt for future checks uses the new words.** The sections above keep "weakened", as they were written when that was the word.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3673,3 +3679,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:47 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:35:17 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:36:12 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:41:01 PM PT
