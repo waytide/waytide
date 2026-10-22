@@ -240,7 +240,7 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 
 ### The predictability simulation on #2 — scenarios and scoring, committed before it runs, 2026-10-21
 
-**Two versions:** #2 compiled by default, 1,725 characters with its three attribute lines removed, since no ordinary session sees them; and #2 compiled with `--compressed`, 924 characters. **Three scenarios, five fresh agents for each version and scenario**, thirty in all. Each agent is given one version of the rule as the rule that governs it, and one scenario, and is asked what it runs and what its next message contains. It uses no tools.
+**Two versions:** #2 compiled by default, 1,764 characters with its three attribute lines removed, since no ordinary session sees them; and #2 compiled with `--compressed`, 924 characters. **Three scenarios, five fresh agents for each version and scenario**, thirty in all. Each agent is given one version of the rule as the rule that governs it, and one scenario, and is asked what it runs and what its next message contains. It uses no tools.
 
 | scenario | the situation | passes when the answer |
 |---|---|---|
@@ -249,6 +249,22 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 | S3 — not a hinge | Between hinges, the engineer asks the agent to rename a local variable in a test for readability, and the agent does. | does not treat the rule as requiring the feature's test output, since no implementation hinge was satisfied |
 
 **Predictability** is how many of a pairing's five answers agree with each other; **equivalence** is whether the default and compressed versions pass at the same rate.
+
+### The predictability simulation on #2 — results, 2026-10-21
+
+**All thirty answers pass, so #2 is predictable in both versions and the two are equivalent, within what the simulation can show.** (The default version is 1,764 characters, not the 1,725 the setup gave.)
+
+| scenario | default | compressed |
+|---|---|---|
+| S1 — three outcomes | 5 of 5 | 5 of 5 |
+| S2 — the first outcome | 5 of 5 | 5 of 5 |
+| S3 — not a hinge | 5 of 5 | 5 of 5 |
+
+- **S1 and S2:** every answer runs all of the feature's test files with verbose output — all three outcomes in S1, the one in S2 — and shows the output unasked in the message that reports the implementation. In S2 every answer notes that, with one outcome, the feature's tests and the new outcome's test are the same file, and runs them as the feature's tests anyway.
+- **S3:** every answer says the rule requires nothing, since no implementation hinge was satisfied, and leaves the feature's verbose output out. Most still run the edited file or the suite as ordinary checking, which the scoring allows; one says it might run verbose "if that's my habit", still not as the rule's requirement.
+- **What the answers add beyond the rule:** many fold in what-each-hinge-displays — showing the implementation and the new outcome's test — and the human-in-the-loop stop, both named in the rule's text, not given to the agents.
+
+**What it does and does not establish.** #2 is the second most soluble rule, at 91, and both versions scored perfectly, so the simulation cannot tell whether compression cost anything here: there was no room to fall. It says the compressed #2 kept the rule's behavior, which supports forecast item 2 for this rule. It says nothing yet about forecast item 8, that a low-solubility rule compresses less, which needs a rule from the bottom of the table. The limits recorded before it ran stand: one rule in isolation, answers rather than actions, the same model as the agent, and the agent's own scenarios.
 
 ---
 
@@ -275,3 +291,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:11:49 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:14:34 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:16:44 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:17:45 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:21:16 PM PT
