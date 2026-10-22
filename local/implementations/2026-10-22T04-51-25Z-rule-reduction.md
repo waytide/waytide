@@ -21,7 +21,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 - **Tags:** [experiment]
 - **Upstream branch:** `master`
 - **Experiment branch:** `experiment/worktree/rule-reduction`
-- **Base:** `241a95ba4f87d8a79e277e90cb2c5799e82c3ef8`, from `master`
+- **Base:** `5979ee0`, from `master` — the commit that records this experiment
 - **Working location:** branch and worktree, chosen at the start. The worktree is `/Users/sbellware/projects/waytide/waytide-experiment-worktree-rule-reduction`, and this working tree stays on `master`.
 - **Participation:** attended, chosen at the start.
 - **The first phased experiment.** The implementation-lifecycle rule gained its account of phases for it, in `241a95b`.
