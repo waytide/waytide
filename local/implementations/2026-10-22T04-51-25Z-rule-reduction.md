@@ -97,6 +97,21 @@ Committed before the work. Each item carries the agent's confidence.
 | a-project-declares-its-package-set | 6,156 | 4 | 5 of 106 | 0.24 | 0.80 |
 | implementation-lifecycle | 13,855 | 5 | 6 of 106 | 0.42 | 0.79 |
 
+**How the scores are calculated**, over the 106 compiled rules:
+
+1. **Seven measures are taken for each rule**, leaving out fenced blocks, the `Related:` list, and sentences of two words or fewer:
+   - **size** — characters in the compiled rule
+   - **average sentence length** — words per sentence
+   - **long sentences** — the share over 25 words
+   - **history words** — *was*, *were*, *had*, *until*, *used to*, *previously*, *earlier*, *no longer*, *replaced*, *once*, per sentence
+   - **asides** — spaced dashes, per sentence
+   - **citations** — phrases of the form *the some-rule-name rule*, per sentence
+   - **negations** — *not*, *never*, *no*, *nor*, *neither*, *rather than*, per sentence
+2. **Each measure becomes a rank from 0 to 1**: the 106 values are sorted lowest to highest, and a rule's rank is its position divided by 105. Tied values share the lower position.
+3. **Unclarity is the mean of the six ranks other than size**, and the clarity score shown is 1 − unclarity. **The combined score is the mean of the size rank and the unclarity**, so the two count equally.
+
+**What the scores are not.** They are relative, so a rule's score says how it compares with the other 105, and an improvement in every rule would leave every score where it was. The six clarity measures are weighted equally by the agent's choice, not by a finding. The word lists are crude — *once* or *no* can appear without marking history or a negation — which is why the top candidates were read before any was recommended.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -107,3 +122,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:14:16 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:16:14 PM PT
