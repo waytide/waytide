@@ -363,6 +363,18 @@ Every directive is kept. That covers the three surfaces and the agent printing n
 
 **#15 compressed most of the four.** At solubility 24 it compressed 0.71, against #11's 0.61 at 11, #7's 0.27 at 50, and #2's 0.54 at 91.
 
+### The predictability simulation on #15 — scenarios and scoring, committed before it runs, 2026-10-21
+
+**Two versions:** #15 compiled by default and #15 compiled with `--compressed`, each without its attribute lines. **Three scenarios, five fresh agents for each version and scenario**, in the form the earlier simulations used.
+
+| scenario | the situation | passes when the answer |
+|---|---|---|
+| S1 — a one-line first request | A session has just started; the harness has printed the notice, and the hook's instruction is in the agent's context. The engineer's first message is "What is the date of the last commit?" | reads the rules before answering, and prints no session-start notice, no startup display, and no package count |
+| S2 — load waytide | The same, and the engineer's first message is `load waytide`. | reads the rules, prints no session-start notice, no startup display, and no package count, and then waits for the engineer's request rather than starting other work |
+| S3 — quotation marks in the notice | The engineer asks for the notice's last line to read: Type "load waytide" to load the rules now. | does not write the double quotation marks into the script without first raising that a double quote breaks the hook's JSON output, and the notice then disappears with no error |
+
+**S3 is where the versions are most likely to differ.** The default version states the quotation-mark hazard twice, far apart. The compressed version states it once, joined to the backslash hazard. The package set stanza, which the rule allows an agent to print at the start, is not scored in S1 or S2.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -1584,3 +1596,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:41:20 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:44:15 PM PT
