@@ -37,6 +37,7 @@ Committed before the work. Each item carries the agent's confidence.
 3. **For a few rules, what is essential is the engineer's judgment rather than the agent's**, as passage 45 of the obsolete-rules experiment was. *Moderate confidence.*
 
 8. **Added 2026-10-21, before any rule was flattened — the engineer's hypothesis: the lower a rule's solubility score, the lower its compressibility.** A rule harder to understand is one the agent can interpret less, and so restate less economically. **Compressibility** is the share of a rule's characters removed when it is restated with the same effect and outcome: a rule flattened from 8,935 characters to 6,000 has a compressibility of 0.33. *The engineer's suspicion, stated as a forecast.*
+   - **Extended by the engineer, still before any rule was flattened: a lower-solubility rule also comes out less changed.** The agent has less effect on a rule it cannot understand, and more on one it understands well enough to word more economically. So two things are measured for each flattened rule: its **compressibility**, the share of characters removed, and its **change**, the share of its words removed, added, or replaced, from a word-level comparison of before and after. The hypothesis predicts both are lower where solubility is lower.
    - **The agent's competing expectation: the reverse.** A rule hard to follow because it is verbose, repetitive, or carries history may have the most to remove, and so compress the most. *Low confidence, as the engineer's is untested too.* Measuring each subject rule's compressibility beside its solubility score tells the two apart.
 
 **Phase 2 — packaged-script**
@@ -159,3 +160,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:03 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:54 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:30:09 PM PT
