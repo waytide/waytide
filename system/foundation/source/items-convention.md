@@ -88,6 +88,35 @@ Keeping the shape thin is the other half. The rules this replaces fixed a spine 
 
 Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
 
+## Compressed
+
+**Items.** `waytide/local/items/` holds the project's items, one file per item: the thinking that settles what the work should be and how it should go.
+
+**The shape.** Name the file with the ISO-8601-UTC prefix, ending in its state in upper case. Write frontmatter-free markdown: a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say, and a provenance footer. Write a log entry when the item is created and at each change of its state. Put no code samples in it. Nothing else is required — record decisions as dated **Settled** resolutions, mark what is left out in an **Out of Scope / Deferred** tail, and give checkbox tasks stating behavior, each only where the item does that.
+
+**Tags.** Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`. Tag an item with no tag at all `[idea]`, and give `[idea]` to no item that already carries a tag. Write `[aspiration]` only where an aspiration was asked for. The set is open, and an item may carry several. A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`, below.
+
+**Two optional lines, and most items carry neither.** `**Waits for:**` states what must finish before the item is actionable, and nothing more. `**Priority:** N` ranks it from 1 to N, contiguous, one item to a number, and rank 1 is worked next among the actionable items; ranking an item renumbers those below it. A rank does not clear a wait. Nothing derives from either line.
+
+**An item's content is point-in-time.** A reference in it that time has overtaken is not a defect and is not chased.
+
+**States.** Every item carries a state. Start it **Open** where its thinking is unsettled, and **Active** where it settles something. An observation starts and stays **Stated**.
+
+- **Realized** — what it describes exists.
+- **Deferred** — kept deliberately, with no one working toward it. An item merely waiting its turn carries `**Waits for:**` instead.
+- **Suspended** — paused, not ended.
+- **Superseded** — a later item replaced it, and the two name each other.
+- **Abandoned** — dropped by decision.
+- **Lapsed** — it lost its relevance with no one deciding.
+
+`Realized`, `Deferred`, and `Open` are taken back to `Active` or `Open` when the work resumes. At each change, rename the file and write the log entry.
+
+**A work item**, tagged `[work-item]`, is a piece of work to be done. It takes `Open`, `Active`, `Deferred`, and `Suspended`, and concludes `Done`, `Abandoned`, or `Superseded` — never `Realized` or `Lapsed`. `Done` is taken back to `Active` when the work reopens.
+
+**Changing an item.** Supersede it rather than rewrite it: what a superseded item settled stays as written. Amend it by dated addition, keeping an outdated resolution's date and wording. Answer a question that runs against what an item settled, and record the change, rather than refusing until the item is amended. Reconcile a settled item against later work, and never regenerate it from that work.
+
+**Why:** one class of record, because its earlier kinds differed only in a word, which a tag carries; and a thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
+
 ## History
 
 **This is the last of the mode vocabulary, and it is gone with it.** A project once worked in one of three modes, and the mode fixed what a planning record was called — a design, an aspiration, or an orientation in one; a plan, an intention, or an action in another. The mechanism was decommissioned on 2026-08-18 and the six words outlived it as a tag set that still read as exhaustive.
@@ -127,3 +156,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT

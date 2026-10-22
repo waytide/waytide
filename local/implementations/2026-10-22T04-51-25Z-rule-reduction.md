@@ -266,6 +266,20 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 
 **What it does and does not establish.** #2 is the second most soluble rule, at 91, and both versions scored perfectly, so the simulation cannot tell whether compression cost anything here: there was no room to fall. It says the compressed #2 kept the rule's behavior, which supports forecast item 2 for this rule. It says nothing yet about forecast item 8, that a low-solubility rule compresses less, which needs a rule from the bottom of the table. The limits recorded before it ran stand: one rule in isolation, answers rather than actions, the same model as the agent, and the agent's own scenarios.
 
+
+### #11 is compressed — 2026-10-21
+
+**#11, items-convention, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before its History section. Against its body, as #2's was measured:
+
+- **compression 0.61**: 8,278 characters to 3,239
+- **change 0.83**: of 1,439 words, 251 stay in place
+
+Every directive is kept: the file shape and log entry, the kind tags, `[idea]` for an untagged item and the `[aspiration]` caution, the two optional lines, point-in-time content, the nine states and which start and which are taken back, the work item's states, and supersession, dated amendment, answering rather than refusing, and reconciling rather than regenerating. What went is restatement, the justification of renumbering, and the account of the rules it replaced.
+
+**The compression resolves a contradiction the source carries**, by the engineer's choice. The source says "No tag is reserved here" and "The tag describes and decides nothing", while `[work-item]` is reserved and decides a work item's states and `[observation]` makes an item an observation. The compressed version says a kind tag decides nothing except `[observation]` and `[work-item]`. The source is left as it is.
+
+**Early bearing on forecast item 8.** #11, at solubility 11, compressed more — 0.61 — than #2, at 91 — 0.54. That runs against the engineer's hypothesis and toward the agent's competing expectation, on two rules, and #11's compression includes resolving a contradiction as well as restating.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -647,3 +661,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:16:44 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:17:45 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:21:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:25:08 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
