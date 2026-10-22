@@ -21,7 +21,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. The record's full account of phase 1 is on the phase branch. Phase 1 had reached this point:
 
 - **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
-- **The directive check run on #15:** its one material weakening, the missing-upstream decision, was restored.
+- **The directive check run on #15:** its one material loss of precision, the missing-upstream decision, was restored.
 - **The directive check run on #11:** two directives were found lost outside the intended resolution, and are not restored.
 
 **Whether a compressed rule has the same effect as its source remains open.**
@@ -76,3 +76,4 @@ Nothing yet.
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 10:58:15 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:31 PM PT
