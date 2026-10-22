@@ -531,6 +531,36 @@ That was the one material weakening the directive check found. With it restored,
 
 **The criterion is #15's:** the compressed version has the same effect as its source, within what the check shows, if no directive is lost and every weakened one is judged immaterial, leaving aside the intended resolution.
 
+### The directive check on #11 — results, 2026-10-22
+
+**Three directives are lost and twenty-three weakened. One loss is the intended resolution, and two are outside it, so by the committed criterion the compressed #11 does not have the same effect as its source.** No weakened directive is judged material. The two checkers agreed on 69 of the 75.
+
+| | checker A | checker B | resolved |
+|---|---|---|---|
+| kept | 49 | 49 | 49 |
+| weakened | 21 | 23 | 23 |
+| lost | 5 | 3 | 3 |
+
+**The six disagreements, resolved by reading both versions:**
+
+- **12, no report groups items by kind tag:** weakened. "Decides nothing about it" does not cover grouping.
+- **13, no filename derives from a kind tag:** kept. The compressed version fixes the whole name, prefix and state, which leaves nothing for a tag to supply.
+- **19, the form `- **Priority:** 3`:** weakened. The compressed version gives `**Priority:** N`, without the list bullet. Nothing reads the line mechanically.
+- **43, add no spine the thinking does not have:** weakened. "Nothing else is required" permits less, and does not forbid more. The prohibition survives only in the Why line.
+- **57, an item without a State line is a defect:** kept. "Every item carries a state", with the State line in the required shape.
+- **66, the two name each other in their prose:** weakened, by the loss of "in their prose".
+
+**The intended resolution accounts for directives 2, 11, 15, 16, and 60**, and for part of 14. These are "nothing about an item's tags is strict", "no rule reads a kind tag", "no tag is reserved", "no tag is read mechanically", and `[work-item]` being reserved. The compressed version replaces them with its one sentence: a kind tag decides nothing except `[observation]` and `[work-item]`.
+
+**The two losses outside it:**
+
+- **14, what an item is is stated in the item, not left to its tag.** The resolution reverses this for an observation, whose tag now makes it one. For every other item the directive still holds, and the compressed version does not say it.
+- **17, `[deferred]` is freeform like any other tag.** The compressed version names exactly two tags that decide anything, so `[deferred]` is freeform by implication. The tag once marked the deferred queue, though, and the source names it so that no one reads it as still meaningful.
+
+Neither loss changes a behavior the simulation tested, and each could be restored in one clause.
+
+**The weakened directives outside the resolution are losses of exactness that leave behavior the same.** Examples: "no date" from `Deferred`; "or none at all" from carrying several tags; that the states not listed as taken back are not taken back; and that a renumbering's cost is accepted. One is the closest to mattering, 8: that `[idea]` is the only kind tag assigned by default. "Tag an item by its kind" could invite an agent to judge a kind on its own. The simulation's S1 tested exactly that, and all five compressed answers tagged `[idea]`.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2956,6 +2986,244 @@ That was the one material weakening the directive check found. With it restored,
 
     Tally: 70 kept, 6 weakened (20, 24, 25, 28, 58, 71), 0 lost.
 
+## Appendix — the directive check on #11
+
+The listing and checking prompts are those of the check on #15, with the file paths changed to `check11`.
+
+### The 75 directives, as the listing agent gave them
+
+    1. The project's items are held in `waytide/local/items/`, and a record there is an item and nothing else.
+    2. A tag may describe an item, and nothing about an item's tags is strict.
+    3. A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, and an observation `[observation]`.
+    4. An item that carries no tag at all is tagged `[idea]`.
+    5. An item's tags are the ordinary square-bracket tags every working-state artifact takes.
+    6. The set of item tags is open.
+    7. An item may carry several tags or none at all.
+    8. `[idea]` is the only kind tag assigned by default to an item; no other kind tag is assigned by default, `[aspiration]` least of all.
+    9. `[aspiration]` is written only where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the tag line.
+    10. An item that already carries a tag is not given `[idea]` as well, whatever that tag is (`[deferred]`, `[work-item]`, or a project's own).
+    11. No rule reads an item's kind tag.
+    12. No report groups items by kind tag.
+    13. No item filename derives from a kind tag.
+    14. What an item record is must be stated in the record itself, not left to its tag.
+    15. No tag is reserved among items.
+    16. No item tag is read mechanically.
+    17. The `[deferred]` tag is freeform like any other tag.
+    18. An item's `**Waits for:**` line states what must finish before the item is actionable, and does nothing else; it does not say what to work next.
+    19. An item's `**Priority:**` line holds a rank, in the form `- **Priority:** 3`.
+    20. Item priority ranks are 1 through N, contiguous, with one item per number.
+    21. Among the items that are actionable, the item ranked 1 is worked next.
+    22. An item that is waiting may still be ranked.
+    23. An item's rank does not clear its wait.
+    24. The `**Waits for:**` and `**Priority:**` lines are both optional on an item.
+    25. An unranked item is not a defect.
+    26. Putting an item at a given rank renumbers every item below it, changing their files, and that cost is accepted.
+    27. An item's content is point-in-time: what it says was true when it was written.
+    28. A reference inside an item that time has overtaken is not a defect and is not chased.
+    29. Nothing derives from an item's `**Waits for:**` or `**Priority:**` line; they are the item's own content, read by whoever reads the item.
+    30. Each item is one file.
+    31. An item's filename starts with the ISO-8601-UTC prefix.
+    32. An item's filename ends with its state in upper case.
+    33. An item is frontmatter-free markdown.
+    34. An item is laid out as a `# <title>`, then the `**State:**` line, then a `**Tags:**` line saying what it is, then whatever the item has to say.
+    35. An item file ends with a provenance footer.
+    36. An item takes a paired log entry on creation and on each change of state.
+    37. An item contains no code samples.
+    38. Nothing else is required of an item's shape.
+    39. An item that settles things records them as dated **Settled** resolutions.
+    40. An item that settles things marks what it deliberately leaves out in an **Out of Scope / Deferred** tail.
+    41. An item that sequences work carries checkbox tasks stating behavior.
+    42. An item that neither settles things nor sequences work carries neither resolutions nor tasks.
+    43. No spine is added to an item that its thinking does not have.
+    44. Every item carries a `**State:**` line from the moment it is written.
+    45. An item's state is `Open` when its thinking is not settled.
+    46. An item's state is `Active` when it is settled and the work is expected.
+    47. An item's state is `Realized` when what it describes exists.
+    48. An item's state is `Deferred` when it is kept deliberately, with no date and nobody working toward it.
+    49. An item that is merely waiting its turn is not `Deferred`; it carries a `**Waits for:**` line and whatever state its thinking has reached.
+    50. An item's state is `Suspended` when it is paused, not ended.
+    51. An item's state is `Superseded` when another item replaced it, and the two name each other.
+    52. An item's state is `Abandoned` when it was dropped by decision.
+    53. An item's state is `Lapsed` when it lost its relevance over time because nobody decided and the work moved past it.
+    54. `Stated` is the state of an observation and of an observation only; an observation carries it from the moment it is written and for good, and it never changes.
+    55. An observation takes `Stated` as its starting state, and every other item starts as either `Open` or `Active`.
+    56. An item starts `Open` where its thinking is unsettled (a hypothesis rather than a direction), and `Active` where it settles something.
+    57. An item without a `**State:**` line is a defect; absence is not a state.
+    58. `Realized`, `Deferred`, and `Open` are taken back, each returning to `Active` or `Open` when the work resumes; the other states are not taken back.
+    59. An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.
+    60. The `[work-item]` tag is reserved, with its meaning set by the items rule.
+    61. A work item takes `Done` when the work is done, in place of `Realized`; a work item takes neither `Realized` nor `Lapsed`.
+    62. Before it concludes, a work item takes the item states `Open`, `Active`, `Deferred`, and `Suspended`.
+    63. A work item's `Done` is taken back to `Active` when the work reopens.
+    64. A later item may supersede an earlier one.
+    65. A superseded item takes `**State:** Superseded`.
+    66. A superseding item and the item it supersedes name each other in their prose.
+    67. What a superseded item settled stays as written.
+    68. An item is superseded rather than rewritten.
+    69. An item is amended by a dated addition rather than a rewrite.
+    70. A resolution in an item that no longer holds keeps its date and its wording, and a later resolution states what changed.
+    71. When a question runs against something an item settled, the agent answers it and records the change in the item.
+    72. The agent does not refuse a question that runs against a settled item until the item is amended.
+    73. A settled item is reconciled, never regenerated.
+    74. Where one item names another as the thing it realizes, the named item is the source of truth and is not rebuilt from the work downstream of it.
+    75. When an item's state changes, the file is renamed to match the new state.
+
+### Checker A, word for word
+
+    1 weakened — "`waytide/local/items/` holds the project's items, one file per item" — missing that a record there is an item and nothing else.
+    2 weakened — "A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`" — the exceptions contradict "nothing about an item's tags is strict".
+    3 kept — "Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`."
+    4 kept — "Tag an item with no tag at all `[idea]`"
+    5 weakened — "the a-record-takes-category-tags rule — the tags that say what an item is" — given only as a Related pointer. It does not say these are the ordinary square-bracket tags every working-state artifact takes.
+    6 kept — "The set is open"
+    7 weakened — "an item may carry several" — missing "or none at all".
+    8 weakened — "Write `[aspiration]` only where an aspiration was asked for" — does not say that `[idea]` is the only default kind tag. "Tag an item by its kind" could be read as assigning kind tags by default.
+    9 kept — "Write `[aspiration]` only where an aspiration was asked for."
+    10 kept — "give `[idea]` to no item that already carries a tag"
+    11 weakened — "decides nothing about it, except `[observation]` ... and `[work-item]`" — the exceptions let a rule read those kind tags.
+    12 lost — no ban on reports grouping items by kind tag.
+    13 lost — no ban on filenames derived from a kind tag.
+    14 lost — does not require the record itself to state what it is rather than leaving it to its tag.
+    15 lost — does not say no tag is reserved. It treats `[observation]` and `[work-item]` as tags that decide something.
+    16 weakened — "decides nothing about it, except ..." — the exceptions allow mechanical reading. There is no general "not read mechanically".
+    17 lost — `[deferred]` being freeform is not stated.
+    18 kept — "`**Waits for:**` states what must finish before the item is actionable, and nothing more."
+    19 weakened — "`**Priority:** N` ranks it" — the exact form `- **Priority:** 3` (a list bullet with a number) is not given.
+    20 kept — "ranks it from 1 to N, contiguous, one item to a number"
+    21 kept — "rank 1 is worked next among the actionable items"
+    22 kept — "A rank does not clear a wait."
+    23 kept — "A rank does not clear a wait."
+    24 kept — "Two optional lines, and most items carry neither."
+    25 kept — "Two optional lines, and most items carry neither."
+    26 weakened — "ranking an item renumbers those below it" — missing that their files change and that the cost is accepted.
+    27 kept — "An item's content is point-in-time."
+    28 kept — "A reference in it that time has overtaken is not a defect and is not chased."
+    29 kept — "Nothing derives from either line."
+    30 kept — "one file per item"
+    31 kept — "Name the file with the ISO-8601-UTC prefix"
+    32 kept — "ending in its state in upper case"
+    33 kept — "Write frontmatter-free markdown"
+    34 weakened — "a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say" — the order is only implied, and it does not say the Tags line states what the item is.
+    35 kept — "and a provenance footer"
+    36 kept — "Write a log entry when the item is created and at each change of its state."
+    37 kept — "Put no code samples in it."
+    38 kept — "Nothing else is required"
+    39 kept — "record decisions as dated **Settled** resolutions ... each only where the item does that"
+    40 kept — "mark what is left out in an **Out of Scope / Deferred** tail ... each only where the item does that"
+    41 kept — "give checkbox tasks stating behavior, each only where the item does that"
+    42 kept — "each only where the item does that"
+    43 kept — "each only where the item does that" / "a shape imposed on thinking is ceremony where the thinking does not have it"
+    44 weakened — "Every item carries a state." — missing "from the moment it is written", and it says "a state", not a `**State:**` line.
+    45 weakened — "Start it **Open** where its thinking is unsettled" — given only as a starting state. Open is not defined as a state in general.
+    46 weakened — "**Active** where it settles something" — given only as a starting state, and missing "the work is expected".
+    47 kept — "**Realized** — what it describes exists."
+    48 weakened — "kept deliberately, with no one working toward it" — missing "no date".
+    49 kept — "An item merely waiting its turn carries `**Waits for:**` instead."
+    50 kept — "**Suspended** — paused, not ended."
+    51 kept — "**Superseded** — a later item replaced it, and the two name each other."
+    52 kept — "**Abandoned** — dropped by decision."
+    53 weakened — "it lost its relevance with no one deciding" — missing "over time" and "the work moved past it".
+    54 weakened — "An observation starts and stays **Stated**." — does not say Stated belongs to observations only.
+    55 kept — "Start it **Open** where its thinking is unsettled, and **Active** where it settles something. An observation starts and stays **Stated**."
+    56 kept — "Start it **Open** where its thinking is unsettled, and **Active** where it settles something."
+    57 kept — "Every item carries a state." together with the required "`**State:**` line" in the shape.
+    58 weakened — "`Realized`, `Deferred`, and `Open` are taken back to `Active` or `Open` when the work resumes." — missing that the other states are not taken back.
+    59 kept — "**A work item**, tagged `[work-item]`, is a piece of work to be done ... concludes `Done`, `Abandoned`, or `Superseded`"
+    60 weakened — "except ... `[work-item]`, below" — does not say outright that the tag is reserved, or that its meaning is set by this rule.
+    61 kept — "concludes `Done`, `Abandoned`, or `Superseded` — never `Realized` or `Lapsed`"
+    62 kept — "It takes `Open`, `Active`, `Deferred`, and `Suspended`, and concludes ..."
+    63 kept — "`Done` is taken back to `Active` when the work reopens."
+    64 kept — "Supersede it rather than rewrite it"
+    65 kept — "**Superseded** — a later item replaced it"
+    66 weakened — "the two name each other" — missing "in their prose".
+    67 kept — "what a superseded item settled stays as written"
+    68 kept — "Supersede it rather than rewrite it"
+    69 kept — "Amend it by dated addition"
+    70 weakened — "keeping an outdated resolution's date and wording" — missing that a later resolution states what changed.
+    71 kept — "Answer a question that runs against what an item settled, and record the change"
+    72 kept — "rather than refusing until the item is amended"
+    73 kept — "Reconcile a settled item against later work, and never regenerate it from that work."
+    74 weakened — "never regenerate it from that work" — missing that an item another item names as what it realizes is the source of truth.
+    75 kept — "At each change, rename the file"
+
+### Checker B, word for word
+
+    1. weakened: "holds the project's items". Missing: a record there is an item and nothing else (only hinted in the Why line, "one class of record").
+    2. weakened: "A kind tag describes the item and decides nothing about it, except `[observation]` ... and `[work-item]`". Missing: nothing about tags is strict. The shorter version makes two exceptions.
+    3. kept: "Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`"
+    4. kept: "Tag an item with no tag at all `[idea]`"
+    5. weakened: "the a-record-takes-category-tags rule — the tags that say what an item is" (appears only in Related). Missing: the statement that these are the ordinary square-bracket tags of working-state artifacts.
+    6. kept: "The set is open"
+    7. weakened: "an item may carry several". Missing: "or none at all".
+    8. weakened: "Tag an item with no tag at all `[idea]`"; "Write `[aspiration]` only where an aspiration was asked for". Missing: no other kind tag is assigned by default.
+    9. kept: "Write `[aspiration]` only where an aspiration was asked for"
+    10. kept: "give `[idea]` to no item that already carries a tag"
+    11. weakened: "decides nothing about it, except `[observation]`, which makes it an observation". Missing: no rule reads a kind tag. The exception contradicts it.
+    12. weakened: "decides nothing about it". Missing: reports do not group items by kind tag.
+    13. weakened: "decides nothing about it". Missing: filenames do not derive from a kind tag.
+    14. lost. Missing: the record itself states what it is, not its tag. The shorter version has just "a `**Tags:**` line".
+    15. lost. Missing: no tag is reserved. The shorter version treats `[work-item]` and `[observation]` as exceptions.
+    16. weakened: "decides nothing about it, except ...". Missing: no tag is read mechanically, with no exceptions.
+    17. lost. Missing: `[deferred]` is freeform.
+    18. kept: "`**Waits for:**` states what must finish before the item is actionable, and nothing more"
+    19. kept: "`**Priority:** N` ranks it"
+    20. kept: "from 1 to N, contiguous, one item to a number"
+    21. kept: "rank 1 is worked next among the actionable items"
+    22. kept: "A rank does not clear a wait"
+    23. kept: "A rank does not clear a wait"
+    24. kept: "Two optional lines, and most items carry neither"
+    25. kept: "Two optional lines, and most items carry neither"
+    26. weakened: "ranking an item renumbers those below it". Missing: it changes their files, and that cost is accepted.
+    27. kept: "An item's content is point-in-time"
+    28. kept: "A reference in it that time has overtaken is not a defect and is not chased"
+    29. kept: "Nothing derives from either line"
+    30. kept: "one file per item"
+    31. kept: "Name the file with the ISO-8601-UTC prefix"
+    32. kept: "ending in its state in upper case"
+    33. kept: "Write frontmatter-free markdown"
+    34. weakened: "a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say". Missing: the order is strict, and the Tags line says what the item is.
+    35. kept: "and a provenance footer"
+    36. kept: "Write a log entry when the item is created and at each change of its state"
+    37. kept: "Put no code samples in it"
+    38. kept: "Nothing else is required"
+    39. kept: "record decisions as dated **Settled** resolutions ... each only where the item does that"
+    40. kept: "mark what is left out in an **Out of Scope / Deferred** tail ... each only where the item does that"
+    41. kept: "give checkbox tasks stating behavior ... each only where the item does that"
+    42. kept: "each only where the item does that"
+    43. weakened: "each only where the item does that"; "a shape imposed on thinking is ceremony where the thinking does not have it" (rationale only). Missing: a general prohibition on adding spine beyond the three named.
+    44. weakened: "Every item carries a state"; "a `**State:**` line". Missing: "from the moment it is written".
+    45. weakened: "Start it **Open** where its thinking is unsettled". Missing: Open as the ongoing state of unsettled thinking, not only the starting state.
+    46. weakened: "**Active** where it settles something". Missing: "the work is expected".
+    47. kept: "**Realized** — what it describes exists"
+    48. weakened: "kept deliberately, with no one working toward it". Missing: "no date".
+    49. kept: "An item merely waiting its turn carries `**Waits for:**` instead"
+    50. kept: "**Suspended** — paused, not ended"
+    51. kept: "**Superseded** — a later item replaced it, and the two name each other"
+    52. kept: "**Abandoned** — dropped by decision"
+    53. weakened: "it lost its relevance with no one deciding". Missing: "over time", "the work moved past it".
+    54. weakened: "An observation starts and stays **Stated**". Missing: Stated belongs to observations only, and it never changes.
+    55. kept: "Start it **Open** ... and **Active** ... An observation starts and stays **Stated**"
+    56. kept: "Start it **Open** where its thinking is unsettled, and **Active** where it settles something"
+    57. weakened: "Every item carries a state". Missing: a missing State line is a defect, and absence is not a state.
+    58. weakened: "`Realized`, `Deferred`, and `Open` are taken back to `Active` or `Open` when the work resumes". Missing: the other states are not taken back.
+    59. kept: "tagged `[work-item]`, is a piece of work to be done ... concludes `Done`, `Abandoned`, or `Superseded`"
+    60. weakened: "except ... `[work-item]`, below". Missing: an explicit statement that the tag is reserved with its meaning set here.
+    61. kept: "concludes `Done` ... — never `Realized` or `Lapsed`"
+    62. kept: "It takes `Open`, `Active`, `Deferred`, and `Suspended`"
+    63. kept: "`Done` is taken back to `Active` when the work reopens"
+    64. kept: "Supersede it rather than rewrite it"; "a later item replaced it"
+    65. kept: "**Superseded** — a later item replaced it"
+    66. kept: "the two name each other"
+    67. kept: "what a superseded item settled stays as written"
+    68. kept: "Supersede it rather than rewrite it"
+    69. kept: "Amend it by dated addition"
+    70. weakened: "keeping an outdated resolution's date and wording". Missing: a later resolution states what changed.
+    71. kept: "Answer a question that runs against what an item settled, and record the change"
+    72. kept: "rather than refusing until the item is amended"
+    73. kept: "Reconcile a settled item against later work, and never regenerate it from that work"
+    74. weakened: "never regenerate it from that work". Missing: the named item is the source of truth, and the realizes relationship.
+    75. kept: "At each change, rename the file"
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3003,3 +3271,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:04:07 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:05:24 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:09:41 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:12:28 AM PT
