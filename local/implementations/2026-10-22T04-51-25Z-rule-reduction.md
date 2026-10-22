@@ -782,7 +782,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 3. **`testing` is the natural second batch**, with rules nearly as small and 20 of them, which tests the pilot's pass rate at scale.
 4. **`foundation` goes last.** Its rules are the largest and hold the system's core conventions. Losses grew with a rule's size, and every material loss the check has found so far is in a foundation rule.
 
-**Whether the user will run out of tokens could not be answered from the session**, which cannot see the plan's limits or its usage. The engineer can check with `/usage` and `/cost`. The pilot's cost against those, read before and after, gives the real cost per rule.
+**Whether the engineer will run out of tokens could not be answered from the session**, which cannot see the plan's limits or its usage. The engineer can check with `/usage` and `/cost`. The pilot's cost against those, read before and after, gives the real cost per rule.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
