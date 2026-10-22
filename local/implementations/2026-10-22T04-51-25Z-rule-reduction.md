@@ -482,6 +482,12 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **The compressed version has the same effect as the source, within what this check shows, if no directive is lost and every weakened one is judged immaterial.** A directive judged lost or materially weakened is a defect in the compression, and is recorded as one. No agent involved has seen the simulation's scenarios.
 
+### The directive check on #15 — the source's directives are listed, 2026-10-22
+
+**The listing agent found 76 directives in #15's source**, compiled by default. They cover the agent printing nothing, the session-start notice and its lines, the open-implementations line, the status line's segments, the startup display, the wiring, the two channels, the read instruction and what it names, the notice's claim and its wording, the install checks, and the absence of an opt-out. The list is recorded word for word in the appendix to the check. Two checkers now judge each directive against the compressed version, working separately.
+
+**The harness flagged the listing as instruction-shaped**, because it names `.claude/settings.json`. That is the rule's subject, and the list is used as data, not acted on.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2640,6 +2646,101 @@ Every directive is kept: the three moments and every state they cover, the obser
     - The commit subject uses the same mood as the entry, e.g. "Design items stand against the session's work". It does not use a software-change subject that presents a design item's direction as built behavior.
     - Only the log file changes in that commit. No item files change, so their provenance footers are not touched.
 
+## Appendix — the directive check on #15
+
+### The listing prompt
+
+    Read the file /private/tmp/claude-501/check15/source.md. It is a rule that governs an AI coding agent and the scripts of the project it works in.
+
+    List every directive the rule contains. A directive is any statement of what must, must not, or may be done, or of what something must be, say, contain, or leave out. Include the directives stated only in passing, inside explanations, and in the How to apply section.
+
+    - Number them, one directive per line.
+    - Make each self-contained, so it can be understood without the rule. Keep the rule's own wording where you can.
+    - Do not merge two directives into one line, and do not split one into two.
+    - Leave out history and justification, except where a reason itself constrains what is done.
+    - Where the rule states the same directive more than once, list it once.
+
+    Use no tool except reading that one file. Answer with the numbered list only.
+
+### The 76 directives, as the listing agent gave them
+
+    1. The agent never prints a session-start notice: not at session start, not before the first response, not at all.
+    2. The agent does not print the startup display.
+    3. The one thing the agent prints at the start is the package set stanza, where a project shows one.
+    4. A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories actually present and emits the session-start notice.
+    5. The session-start notice says what is installed and what the engineer can type to have it read.
+    6. Between the install line and the closing ask, the notice reports experiments and features that have not concluded, together on one further line, when there are any.
+    7. The session-start notice carries no mark; the mark is printed by a hook of its own when the engineer types `load waytide`.
+    8. Everything the `SessionStart` hook emits must be valid inside a JSON string built by `printf` with no escaping: a lone backslash must not appear, since it begins an invalid JSON escape sequence.
+    9. Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line.
+    10. An experiment whose state is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded, and a feature that is Completed, Abandoned, or Superseded, are not reported in the notice.
+    11. An implementation that is Suspended, or whose record carries no state line, is reported in the notice.
+    12. When every implementation has concluded, the open-implementations line is absent from the notice entirely.
+    13. `waytide/system/foundation/statusline.sh` keeps the system's presence in the status line for the whole session, alongside the working directory and git branch, which the script renders itself.
+    14. The repository's name leads the status line, in bold, using a terminal escape sequence.
+    15. Only the repository name is bold in the status line; every other segment is plain.
+    16. The status line's Waytide segment is one word and carries no package count.
+    17. The status line reads Waytide's presence from disk: at least one directory carrying a `README.md`, the same test for a package that the notice uses.
+    18. The Waytide segment trails the status line after a double colon (`::`).
+    19. The engineer's own status-line segments are separated by the middle dot (`·`).
+    20. The `uncommitted changes` segment appears only when the working tree has something not committed: a modified tracked file, a staged change, or an untracked file that is not ignored.
+    21. The uncommitted state is stated in words, not as a mark on the branch name (such as `master*`).
+    22. An `untracked files` segment appears when the working tree has an untracked file that is not ignored.
+    23. An untracked file raises both the `uncommitted changes` segment and the `untracked files` segment. The `uncommitted changes` segment must not be narrowed to tracked modifications only.
+    24. An `unpushed commits` segment appears when there is committed work that exists only in this working copy.
+    25. Status-line segments that can be present at once are each named in words that read distinctly.
+    26. The `unpushed commits` segment carries no count.
+    27. The `unpushed commits` check never reaches the network and never fetches. It compares against the remote-tracking ref.
+    28. A branch with no upstream reports nothing in the `unpushed commits` segment, and an upstream missing by accident is not folded into that segment.
+    29. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure.
+    30. The startup display hook reads its content from the initialization-rule, which governs the display.
+    31. The startup display is printed once, on the `load waytide` command and on no other prompt.
+    32. The session-start notice, the status line, and the startup display are wired by a committed `.claude/settings.json`, which `install.sh` places in the consuming project.
+    33. The session-start notice goes in `systemMessage`, for the engineer. The instruction to read the rules goes in `hookSpecificOutput.additionalContext`, for the agent. The two are kept on these separate channels.
+    34. The notice and the read instruction are not the same text.
+    35. The hook carries the whole read instruction. What the agent is to do reaches it only through `additionalContext`; the engineer's command only names the read.
+    36. The read instruction states that the read is unconditional, and that the apparent size of the first request is not a reason to defer it.
+    37. The read instruction is emitted, and fires, unconditionally in every session.
+    38. The notice closes with `Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.` followed, on its own line, by `To load them now, type: load waytide.`
+    39. The notice's close is always present.
+    40. A blank line precedes the notice's close, separating the report from the closing ask.
+    41. The close's blank line falls after any open-experiment and open-feature lines, not between them and the install line.
+    42. A second blank line separates the loading caveat from the command sentence, so the command sentence stands on its own line.
+    43. The command sentence is the notice's last sentence, with the loading caveat ahead of it.
+    44. The command the notice asks for is `load waytide`, which names the read outright.
+    45. The loading caveat says "a few moments", not "a moment".
+    46. The notice is written as plain text with no markdown or other emphasis markup, since the harness renders `systemMessage` literally.
+    47. The notice's closing line says the rules are loaded as a description of what the session does next, and reports no read as having happened.
+    48. The notice and the read instruction contain no quotation marks, and none may be added.
+    49. The read instruction tells the agent to read `foundation/` first.
+    50. The read instruction tells the agent to read each `vocabulary.md` a package has.
+    51. The read instruction tells the agent to read the project's own `local/rules/` and `local/vocabulary.md` alongside the packages.
+    52. The read instruction tells the agent to leave the other working directories out of the read, naming each of them explicitly.
+    53. The read instruction tells the agent to print no package count.
+    54. The read instruction ends the read with the wait for the engineer's request.
+    55. The read instruction names `local/rules/` unconditionally, whether or not the directory exists, and says its absence is ordinary rather than an error.
+    56. The read instruction names `local/vocabulary.md` unconditionally, whether or not it exists, and says its absence is ordinary.
+    57. Within the packages, the read instruction names only the compiled rules: each package's `source/` directory and its `README.md` are left out.
+    58. Besides the packages, the read instruction names `local/rules/` and `local/vocabulary.md` and nothing else. It must not name `local/` as a whole in place of the two.
+    59. This rule does not restate the read instruction's list of working directories. `session-start.sh` is the only place they are enumerated.
+    60. The read instruction tells the agent not to print the startup display, because the harness prints it.
+    61. The startup display's art is not carried on the `SessionStart` hook's channel. It belongs in the initialization-rule, where it is not a JSON literal, and the display hook reads it from there.
+    62. The load command is worded the same in the two channels: the notice tells the engineer to type `load waytide`, and the read instruction tells the agent that the command asks for the read and nothing more.
+    63. The scripts enumerate what is actually on disk, listing the package directories under `waytide/system/` (or `system/` in the authoring source), rather than asserting a list.
+    64. A directory carrying a `README.md` is a package, which distinguishes a grouped package from the grouping directory above it.
+    65. Nothing prints a fixed list of packages.
+    66. The notice claims only that the system is installed and its configuration is live. It says nothing about whether the rules were read or internalized.
+    67. Carrying the read instruction does not widen the notice's claim: the hook reports nothing about whether the agent read the rules.
+    68. The notice says "installed", never "loaded".
+    69. The notice is called the "session-start notice", not "the load notice".
+    70. The status line reports the system as active, which is a claim about the configuration rather than about the agent.
+    71. `install.sh` checks whether git is set to ignore `.claude/settings.json`. When it is, and the file is not already tracked, `install.sh` prints how to correct it.
+    72. The correction for an ignored `.claude/` is to replace the `.claude/` ignore rule with `.claude/*` plus `!.claude/settings.json`, not to add a negation under a `.claude/` rule.
+    73. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block and leaves the decision with the engineer.
+    74. There is no opt-out: the surfaces are not silenceable, and none may be added (such as the removed `WAYTIDE_QUIET` variable).
+    75. Quieting a display must not disable the mechanism that carries the read instruction.
+    76. In `.claude/settings.json`, the `SessionStart` hook points at `session-start.sh` and the `statusLine` points at `statusline.sh`, the two foundation scripts.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -2683,3 +2784,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:51:40 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:55:09 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:01:34 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:02:14 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:04:07 AM PT
