@@ -579,6 +579,10 @@ Neither loss changes a behavior the simulation tested, and each could be restore
 
 With both restored, no directive outside the intended resolution is lost, and no weakening is judged material. So **the compressed #11 has the same effect as its source, within what the check shows**, apart from the resolution the engineer chose. The limits recorded with the check stand. Its compression is now 0.60, from 8,278 characters to 3,343, and its change 0.83.
 
+### The directive check on #12 — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the directive check runs on #12**, by the method used for #15 and #11, with the prompts' file paths changed to `check12`. The criterion is the same. The compressed version has the same effect as its source, within what the check shows, if no directive is lost and every weakened one is judged immaterial. The compressed #12 departs from its source on purpose nowhere. Like its source, it keeps the tension between "at no others" and the reconciliation entry.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3293,3 +3297,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:12:28 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 10:58:15 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:35:52 PM PT
