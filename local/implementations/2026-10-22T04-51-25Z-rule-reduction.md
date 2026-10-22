@@ -132,6 +132,16 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Solubility is scaled to 0–100, at the engineer's direction: (1 − the combined score) × 100, as a whole number.** items-convention is 11, an-item-takes-a-log-entry 17, a-project-declares-its-package-set 20, implementation-lifecycle 21, and announce-waytide-at-session-start 24. Computed from the unrounded scores, each rounds to the same whole number as the two-decimal value times 100.
 
+**The candidates as they now stand**, solubility being (1 − the combined score) × 100, where higher is easier to process:
+
+| rule | size, characters | Original rank | clarity score | solubility |
+|---|---|---|---|---|
+| items-convention | 8,935 | 1 of 106 | 0.18 | 11 |
+| an-item-takes-a-log-entry | 7,493 | 2 of 106 | 0.23 | 17 |
+| a-project-declares-its-package-set | 6,156 | 5 of 106 | 0.24 | 20 |
+| implementation-lifecycle | 13,855 | 6 of 106 | 0.42 | 21 |
+| announce-waytide-at-session-start | 27,994 | 10 of 106 | 0.48 | 24 |
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -148,3 +158,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:03 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:54 PM PT
