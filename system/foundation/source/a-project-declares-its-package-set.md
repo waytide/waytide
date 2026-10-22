@@ -2,6 +2,7 @@
 
 - **Solubility:** 4
 - **Original rank:** 5 of 106
+- **Unclarity:** 0.76
 
 **A project may declare a package set, and the packages outside it are deactivated.** The declaration is a record at `waytide/local/`, named for the moment it was made and for what it names: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`. Where more than one name is declared, the file name hyphen-joins them.
 
@@ -73,3 +74,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 3:56:40 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT

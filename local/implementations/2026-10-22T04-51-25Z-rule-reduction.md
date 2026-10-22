@@ -85,6 +85,8 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Each candidate also carries its `**Original rank:**`**, its position in the measured ranking of all 106 rules before the candidates were read: items-convention 1, an-item-takes-a-log-entry 2, a-project-declares-its-package-set 5, implementation-lifecycle 6, and announce-waytide-at-session-start 10. Reading moved announce-waytide-at-session-start up the candidate list for its size, which is why the two orders differ. The agent first gave the count as 108; it is 106, two rules having left `foundation` in the obsolete-rules experiment.
 
+**Each candidate also carries its `**Unclarity:**` score**, the mean of its six clarity measures' ranks among the 106 rules, from 0 to 1: items-convention 0.82, an-item-takes-a-log-entry 0.77, a-project-declares-its-package-set 0.76, implementation-lifecycle 0.58, and announce-waytide-at-session-start 0.52. **The engineer directed that it be recorded as unclarity and displayed as a clarity score, 1 − unclarity**, so items-convention shows as 0.18 and announce-waytide-at-session-start as 0.48.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -93,3 +95,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:58:18 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:00:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT

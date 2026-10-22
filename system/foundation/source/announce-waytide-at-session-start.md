@@ -2,6 +2,7 @@
 
 - **Solubility:** 2
 - **Original rank:** 10 of 106
+- **Unclarity:** 0.52
 
 A project running Waytide announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
 
@@ -256,3 +257,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:46:11 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT

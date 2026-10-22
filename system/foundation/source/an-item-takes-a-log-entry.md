@@ -2,6 +2,7 @@
 
 - **Solubility:** 3
 - **Original rank:** 2 of 106
+- **Unclarity:** 0.77
 
 An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`. The entry is written at three moments, and at no others.
 
@@ -82,3 +83,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT

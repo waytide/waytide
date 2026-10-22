@@ -2,6 +2,7 @@
 
 - **Solubility:** 5
 - **Original rank:** 6 of 106
+- **Unclarity:** 0.58
 
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
@@ -118,3 +119,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:20 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:50:42 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
