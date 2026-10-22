@@ -1,0 +1,1 @@
+# Experiment phases are considered for the rule-reduction item: the model already allows a parent experiment with a child experiment per phase, or the phases as experiments in sequence, and whether phase becomes part of the model is undecided
