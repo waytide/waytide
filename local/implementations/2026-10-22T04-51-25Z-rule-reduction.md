@@ -790,6 +790,14 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **It does not convert cleanly into a cost per rule**, because the session also carries a long main conversation. The `git` pilot is the clean measure: `/cost` or `/usage` read before and after it, with the difference divided by its seven rules.
 
+### The `git` batch — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the `git` package is compressed and directive-checked by the unattended method**, as its first batch. Its seven rules run in parallel. For each rule, a fresh agent compresses it by the written guidance, while a separate fresh agent, which never sees the compression, lists its directives. Two fresh checkers then judge each directive against the compression. The agent resolves disagreements, judges materiality, and repairs each lost or materially less precise directive with the smallest clause. Two fresh checkers then check only the repaired directives again. A rule whose repair does not close after two rounds, a contradiction found in a source, and a close materiality judgment go to the engineer's review list.
+
+**The guidance** gives the compressing agent the lessons so far. It keeps every directive, the small ones and those stated only in a heading included. It writes sentences of 25 words or fewer, averaging about 15, without packing. It keeps quoted forms word for word, and reports a contradiction rather than resolving it.
+
+**The engineer's participation for this batch is unattended**, a change from the attended setting the experiment started with, made by the engineer's direction to proceed by this method. It is the move the batch-size item describes.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3909,3 +3917,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:19 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:19:41 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:22:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:11 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:58 PM PT
