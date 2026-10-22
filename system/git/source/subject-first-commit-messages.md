@@ -18,6 +18,24 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 **How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb, because a verb puts the engineer's work ahead of the software. That is imperative and past tense alike.
 
+## Compressed
+
+The subject of a commit message is **the software**, never the engineer. The log records changes to the software and their effects. It is not an account of what the engineer did. The first line leads with the thing that changed and its new state. State it as a fact, in passive voice and indicative mood.
+
+- **State the change, don't narrate the work.** "Widget reconciliation is corrected" — not "Fix widget reconciliation" and not "Fixed widget reconciliation".
+- **"is corrected"** for a defect. **"is clarified"** for a refactor or readability change.
+- **Omit the verb for something new.** "Widget tests", not "Widget tests are added".
+- **Rename form:** "Widget, rather than sprocket".
+- **Package version form:** "Package version is increased from 1.1.1 to 1.2.0". State both the current version and the next one. "Increased" holds even when a trailing segment resets.
+
+**Never lead with a verb.** That covers the imperative ("Fix…") and the past tense ("Fixed…") alike. Name the software that changed, then its new state.
+
+**The subject's length is the commit-message-widths rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
+
+**Split the commit when the subject will not fit.** Do not drop the software subject and lead with a verb instead.
+
+**Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
+
 ## History
 
 This rule carried a *no 50-character limit* policy until 2026-08-18, licensing a first line as long as it needed. That policy is discontinued and the cap replaced it the same day.
@@ -45,3 +63,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:58:01 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:44 PM PT
