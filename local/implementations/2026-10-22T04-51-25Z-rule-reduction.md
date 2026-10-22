@@ -798,6 +798,41 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The engineer's participation for this batch is unattended**, a change from the attended setting the experiment started with, made by the engineer's direction to proceed by this method. It is the move the batch-size item describes.
 
+### The `git` batch — results, 2026-10-22
+
+**All seven `git` rules are compressed, and all seven meet the directive check's criterion with no repair.** Across the batch's 80 directives, 75 are kept, 4 are less precise, and none is lost. The agent judged all four losses of precision immaterial.
+
+| rule | directives | kept | less precise | lost | compression | change | solubility | clarity score |
+|---|---|---|---|---|---|---|---|---|
+| a-sha-names-the-work-rather-than-the-commit | 9 | 8 | 1 | 0 | 0.52 | 0.68 | 48 → 79 | 0.35 → 0.67 |
+| announce-a-branch-switch-in-a-bordered-block | 20 | 19 | 1 | 0 | 0.46 | 0.62 | 65 → 80 | 0.74 → 0.75 |
+| commit-message-widths | 15 | 15 | 0 | 0 | 0.39 | 0.57 | 33 → 72 | 0.35 → 0.76 |
+| commit-says-task-is-done-not-mark-done | 8 | 8 | 0 | 0 | 0.23 | 0.61 | 86 → 85 | 0.76 → 0.73 |
+| no-claude-coauthor | 3 | 2 | 1 | 0 | 0.07 | 0.60 | 82 → 86 | 0.64 → 0.73 |
+| run-suite-before-commit | 10 | 9 | 1 | 0 | 0.17 | 0.42 | 75 → 89 | 0.66 → 0.87 |
+| subject-first-commit-messages | 15 | 15 | 0 | 0 | 0.39 | 0.56 | 58 → 81 | 0.45 → 0.72 |
+
+**The four losses of precision, judged immaterial:**
+
+- **a-sha-names, 8:** "Ask only where it is genuinely unclear" no longer says the question is substance or mechanics. Asking is still implied, and the bare SHA is still answered with substance. This is marked a close call.
+- **announce-a-branch-switch, 12:** the announcement must not read as another line of a report. "The border is the requirement" and "any unmissable form" carry it.
+- **no-claude-coauthor, 2:** "The commit is authored by the user only" is singular, but "any commit you create" in the line above covers every commit.
+- **run-suite-before-commit, 6:** "the bar" in the Why is not defined. The directives above it say the suite must pass.
+
+**The one disagreement** was subject-first-commit-messages 11, whether "increased" holds when a trailing segment resets. One checker found it less precise, because the reason was dropped. It is resolved as kept, since the behavior is stated.
+
+**Solubility rises in six of the seven rules, and the clarity score in five.** The one exception is commit-says-task-is-done-not-mark-done, already at 86, which moves to 85. The guidance's short sentences held across the batch.
+
+**The engineer's review list:**
+
+1. **announce-a-branch-switch-in-a-bordered-block, a contradiction in the source.** It requires the block's `=` border, and also says "any unmissable form satisfies this rule". Separately, its How to apply line leaves out a push, which its own list of cases includes. The compressed version keeps both statements and follows the fuller list.
+2. **commit-message-widths, a tension in the source.** It calls a journal entry "the one record" that truncates, and also states truncation more generally, "where the subject is not the agent's to rewrite". The compressed version keeps both.
+3. **a-sha-names-the-work-rather-than-the-commit, directive 8**, the close call above.
+
+**Cost:** 35 agents, about 33,000 tokens each, about 1.15 million in all, or about 165,000 per rule. That is below the 200,000 estimated. It leaves out the main session's own turns.
+
+**One slip in the batch's commits:** the first six subjects ran past the 50-character limit the commit-message-widths rule sets. They were rewritten before anything was pushed.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3918,3 +3953,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:19:41 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:22:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:58 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:28:16 PM PT
