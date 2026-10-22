@@ -16,6 +16,18 @@ One at a time, in this order, each on its own branch from the experiment's.
 2. **packaged-script** — `experiment/worktree/rule-reduction.packaged-script`. Does one packaged script that prints every rule in a fixed order shorten the session-start read?
 3. **additional-context** — `experiment/worktree/rule-reduction.additional-context`. Can the session-start hook deliver the rules to the agent before its first response, with no read at all?
 
+## State
+
+- **State:** Suspended
+
+**Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. The record's full account of phase 1 is on the phase branch. Phase 1 had reached this point:
+
+- **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
+- **The directive check run on #15:** its one material weakening, the missing-upstream decision, was restored.
+- **The directive check run on #11:** two directives were found lost outside the intended resolution, and are not restored.
+
+**Whether a compressed rule has the same effect as its source remains open.**
+
 ## Setup
 
 - **Tags:** [experiment]
@@ -62,3 +74,4 @@ Nothing yet.
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
