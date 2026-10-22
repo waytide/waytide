@@ -18,8 +18,6 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 ## State
 
-- **State:** Suspended
-
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
 
 - **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
@@ -27,6 +25,8 @@ One at a time, in this order, each on its own branch from the experiment's.
 - **The directive check run on #11:** two directives were found lost outside the intended resolution, and are not restored.
 
 **Whether a compressed rule has the same effect as its source remains open.**
+
+**Resumed by the engineer on 2026-10-22.** The State line is removed, since absence is the in-progress state, and work continues on the phase branch in the worktree.
 
 ## Setup
 
@@ -3285,3 +3285,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:09:41 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:12:28 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 10:58:15 AM PT
