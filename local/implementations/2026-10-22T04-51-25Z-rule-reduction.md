@@ -436,6 +436,24 @@ Every directive is kept: the three moments and every state they cover, the obser
 
 **What it does and does not establish.** #12 is the second least soluble rule, at 17, and compressed by 0.62 with no behavior lost. Five rules now show the compressed version matching the default on every scenario scored, with one miss in 150 answers. The limits recorded for #2 stand.
 
+### The compressed versions' solubility differs from the sources' — 2026-10-21
+
+**The engineer asked whether the compressed versions have the same solubility as their sources. They do not.** Each compressed version, compiled with `--compressed`, was scored against the same 105 other rules as the original ranking, one rule at a time. Scored the same way, each source reproduces its recorded solubility.
+
+| # | rule | source solubility | compressed solubility | source clarity score | compressed clarity score | source size | compressed size |
+|---|---|---|---|---|---|---|---|
+| 2 | show-feature-test-output-after-implementation-hinge | 91 | 62 | 0.94 | 0.28 | 1,764 | 920 |
+| 7 | waytide-keeps-its-word-where-the-ste-word-means-something-else | 50 | 51 | 0.77 | 0.58 | 4,771 | 3,662 |
+| 15 | announce-waytide-at-session-start | 24 | 32 | 0.48 | 0.58 | 27,994 | 8,552 |
+| 12 | an-item-takes-a-log-entry | 17 | 35 | 0.23 | 0.20 | 7,493 | 3,479 |
+| 11 | items-convention | 11 | 46 | 0.18 | 0.55 | 8,935 | 3,896 |
+
+1. **The four least soluble rules became more soluble**, #11 the most, from 11 to 46. Most of the gain comes from size. Only #11 and #15 also gained clarity. #12 lost some, because its compressed sentences are longer: 23.6 words on average, against 21.3.
+2. **#2, the most soluble, became less soluble**, from 91 to 62. The compression packed it into long sentences: 31.8 words on average against 14.5, with 25% of its sentences over 25 words against 6%. Its clarity score fell from 0.94 to 0.28.
+3. **#7 stayed level** in solubility, 50 to 51. Its clarity score fell from 0.77 to 0.58, also from longer sentences.
+
+**The agent's compression packed sentences.** It roughly evened out the five rules' solubility, to between 32 and 62, without improving clarity in general. The simulation found no change in behavior for any of them.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2634,3 +2652,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:45:48 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:50:07 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:51:40 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:55:09 PM PT
