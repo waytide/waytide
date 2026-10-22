@@ -38,6 +38,24 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 
 **How to apply:** write to the STE dictionary. Where the STE dictionary names an alternative, use it. Where the approved word means something else, keep Waytide's word. Reserve it in the package's `vocabulary.md`, in a category the entry names. Record what the STE dictionary says about it.
 
+## Compressed
+
+**ETE.** Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary and 53 writing rules. STE Rules 1.5 through 1.13 let a project add its own technical nouns and technical verbs. The rules in this directory are Eventide Technical English, or ETE, Waytide's implementation of the standard. ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states. `Say it in ETE` asks for that. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved.
+
+**The sequence.** The STE dictionary decides first. For a word it does not approve, it names an approved alternative.
+
+- **Use the alternative** where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
+- **Keep Waytide's word** where the approved word means something else. Reserve it as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`, and record what the STE dictionary says about it. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+- **A word the dictionary does not list is not a defect.** STE Rule 1.1 permits it as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+
+**The worked instance is `sweep`.** The STE dictionary replaces `sweep (v)` with `SCAN`. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins. A substitution replaces a word Waytide rejects, and a reservation keeps a word STE rejects. They are different acts, and `conform` is both.
+
+**Absent and not approved differ.** An absent word is a gap: the standard never considered it, as with most terms Waytide coined. A word that is not approved is a disagreement: the standard considered it and named something else, and a reservation rejects that decision. So the record says which case a reserved term is in. `reserve` is absent. `discontinue` is not approved, and the dictionary gives `STOP`.
+
+**Three rules beside this one carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
+
+**Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
+
 Related:
 
 - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
@@ -63,3 +81,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT

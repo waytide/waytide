@@ -311,6 +311,17 @@ Every directive is kept: the file shape and log entry, the kind tags, `[idea]` f
 
 **What it does and does not establish.** #11 is the least soluble rule, at 11, and compressed by 0.61, more than #2's 0.54. Its behavior is kept: the compressed answers matched the default answers on everything the scoring tests. The simulation measures predictability and equivalence, not how much a rule compresses. Its bearing on forecast item 8 is only that the larger compression of the less soluble rule cost no behavior. The limits recorded for #2 stand: one rule in isolation, answers rather than actions, the same model as the agent, and the agent's own scenarios.
 
+### #7 is compressed — 2026-10-21
+
+**#7, waytide-keeps-its-word-where-the-ste-word-means-something-else, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before `Related:`. Against its body, as #2's and #11's were measured:
+
+- **compression 0.27**: 4,052 characters to 2,943
+- **change 0.56**: of 649 words, 285 stay in place
+
+Every directive is kept: the standard and what ETE adds to it, `say it in ETE` against `say it in STE`, the sequence, the three answers the dictionary can give, the `sweep` instance, substitution against reservation, absent against not approved and the record of which, and the three rules that carry the departures. What went is restatement, chiefly a How to apply paragraph that repeats the sequence. The source has no contradiction to resolve.
+
+**#7 compressed least of the three.** At solubility 50 it compressed 0.27, against #2's 0.54 at 91 and #11's 0.61 at 11. The rule was already dense: it says most things once. On three rules, compression does not follow solubility in either direction.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -1139,3 +1150,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:29:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:33:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:34:42 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
