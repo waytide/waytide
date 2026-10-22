@@ -20,6 +20,7 @@ Related:
 - the an-item-takes-a-log-entry rule — an item, deferred work included, logs on creation and on each change of state
 - the logs-directory rule — the running records this sits among
 - the a-record-takes-category-tags rule — the `**Tags:**` line an entry carries, in the one form
+- the a-decision-the-engineer-made-is-tagged-decision rule — `[decision]`, the tag an engineer's decision carries
 
 ---
 
@@ -37,3 +38,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
