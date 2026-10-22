@@ -784,6 +784,12 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **Whether the engineer will run out of tokens could not be answered from the session**, which cannot see the plan's limits or its usage. The engineer can check with `/usage` and `/cost`. The pilot's cost against those, read before and after, gives the real cost per rule.
 
+### What the session's reported cost means — 2026-10-22
+
+**The engineer asked what `Total cost: $256.92` in the cost statistics means.** It is what the session's token usage so far would cost at Anthropic's API prices, the agent's own turns and, as far as the agent knows, the subagents it started. Whether it is paid depends on how Claude Code is signed in. Under a Claude subscription, it is an estimate, and the usage counts against the plan's limits instead, which `/usage` shows. Under an API key, it is roughly what the session has cost, billed to the account.
+
+**It does not convert cleanly into a cost per rule**, because the session also carries a long main conversation. The `git` pilot is the clean measure: `/cost` or `/usage` read before and after it, with the difference divided by its seven rules.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3902,3 +3908,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:00 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:09:19 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:19:41 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:22:11 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:11 PM PT
