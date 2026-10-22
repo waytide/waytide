@@ -583,6 +583,26 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the directive check runs on #12**, by the method used for #15 and #11, with the prompts' file paths changed to `check12`. The criterion is the same. The compressed version has the same effect as its source, within what the check shows, if no directive is lost and every weakened one is judged immaterial. The compressed #12 departs from its source on purpose nowhere. Like its source, it keeps the tension between "at no others" and the reconciliation entry.
 
+### The directive check on #12 — results, 2026-10-22
+
+**No directive is lost, and the one weakened is judged immaterial, so the compressed #12 has the same effect as its source, within what the check shows.** The two checkers agreed on 16 of the 19 directives.
+
+| | checker A | checker B | resolved |
+|---|---|---|---|
+| kept | 17 | 16 | 18 |
+| weakened | 2 | 3 | 1 |
+| lost | 0 | 0 | 0 |
+
+**The three disagreements, resolved by reading both versions:**
+
+- **4, the creation entry records the item, not the word:** kept. "The word" is the item's kind. The compressed version carries the point in "whatever the item is tagged", and its entry "names the record".
+- **5, an entry for each Settled resolution:** kept. The items-convention dates every Settled resolution, so "each dated `Settled` resolution" narrows nothing.
+- **13, the commit subject follows the entry's rule:** kept. "Carry the same mood into the commit subject" carries what the source's sentence does. The simulation's S2 tested it, and all five compressed answers kept the subject in the record's mood.
+
+**The one weakened directive, agreed:** 12, not to write an item in the commit-message grammar. The compressed version says why that grammar does not fit an item, and forbids it only through the mood. That is immaterial: the same S2 answers each rejected the commit grammar for a new item.
+
+**#12 is the first of the three checked rules to meet the criterion without a restoration.** Its compression was the agent's tightest relative to its directives, with 19 of them in 2,429 characters, and the simulation tested three of the four places where it differs from the source.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3246,6 +3266,76 @@ The listing and checking prompts are those of the check on #15, with the file pa
     74. weakened: "never regenerate it from that work". Missing: the named item is the source of truth, and the realizes relationship.
     75. kept: "At each change, rename the file"
 
+## Appendix — the directive check on #12
+
+The listing and checking prompts are those of the check on #15, with the file paths changed to `check12`.
+
+### The 19 directives, as the listing agent gave them
+
+    1. Each item in `waytide/local/items/` must have a matching one-line entry in `waytide/local/logs/log/`.
+    2. An item's log entry is written only at three moments: when the item is created, at each `Settled` resolution, and at each change of state. It is written at no other time.
+    3. An item's tag (`[design]`, `[plan]`, `[aspiration]`, or no kind tag) must not change which log entries it gets or when. Every item gets the same entries at the same moments.
+    4. When an item is created, write a one-line log entry that records the item itself, not the word.
+    5. Write a log entry for each `Settled` resolution added to an item after it was created.
+    6. Write a log entry each time an item's canonical `**State:**` line reaches Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, Lapsed, or (for a work item) Done.
+    7. Write a log entry when a reversible state word (Realized, Deferred, Open, or a work item's Done) is taken back, as the items-convention sets out.
+    8. An observation is `Stated` and its state never moves, so it gets a creation entry and no other log entry.
+    9. A log entry for an item must name the record and say what happened to it, meaning the record was written or its `**State:**` line reached a word.
+    10. A log entry may go on to say what the record settles, but only as the record's, never as the system's behavior.
+    11. A log entry must never state an unbuilt direction in the indicative mood, for example "The check runs at the engineer's first prompt" while the record is `Open` or `Active`.
+    12. For an item, do not write what the item settles in the commit-message grammar (passive voice, indicative mood, the changed thing and its new state). That grammar is for changes to the software, and the only fact about an item is that it was recorded or that its state moved.
+    13. The commit subject that carries a log entry must follow the same rule as the entry: what the record settles is stated as the record's, never as the system's behavior.
+    14. Do not fix a wording template for item log entries. What is required is that the record is named and the mood is honest.
+    15. Do not write a log entry for a completed checkbox task on an item.
+    16. Do not write a log entry for prose that settles nothing, such as reconciling a Background & Motivation section, correcting a summary, or rewording a substantive section.
+    17. When a reconciliation finds the direction still standing (for example, the design reconciliation at a work session's close answered "the direction stands"), write a log entry for it.
+    18. A log entry for a reconciliation that finds the direction still standing must name what the direction was read against.
+    19. The items-convention must not restate this log-entry obligation. It names the entry only by pointing to this rule.
+
+### Checker A, word for word
+
+    1. kept: "An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`"
+    2. kept: "written at three moments and at no others" and the three bullets "On creation.", "On each dated `Settled` resolution.", "On each change of its `**State:**` line"
+    3. kept: "whatever the item is tagged". The tag names are not listed, but the wording covers every tag.
+    4. weakened: "On creation." and "The entry names the record and what happened to it". Missing: the explicit contrast that the entry records the item itself, "not the word".
+    5. kept: "On each dated `Settled` resolution."
+    6. kept: "reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item"
+    7. kept: "taking back Realized, Deferred, Open, or a work item's Done". Only the pointer "as the items-convention sets out" is dropped.
+    8. kept: "An observation is `Stated` and never moves, so it takes a creation entry only."
+    9. kept: "The entry names the record and what happened to it: the record written, or its state reaching a word."
+    10. kept: "What the record settles may follow, attributed to the record." together with "Never state an unbuilt direction in the indicative mood."
+    11. kept: "Never state an unbuilt direction in the indicative mood. *The check runs at the engineer's first prompt* says the system does that, and while the item is `Open` or `Active` it does not."
+    12. weakened: "The `git` package's commit-message rules ask for the changed thing in its new state, which is right for a change to the software. An item is not one: the fact about it is that it was recorded, or that its state moved." Missing: an explicit prohibition, which is only implied, and the grammar's named elements (passive voice, indicative mood).
+    13. kept: "Carry the same mood into the commit subject the entry travels in."
+    14. kept: "Fix no wording template". The requirement that the record is named and the mood is honest is carried by "The entry names the record" and "Never state an unbuilt direction in the indicative mood."
+    15. kept: "Not logged: a completed checkbox task"
+    16. kept: "prose that settles nothing, such as reconciling a Background & Motivation section, correcting a summary, or rewording a section"
+    17. kept: "Logged, though nothing changed: a reconciliation at a work session's close that finds the direction still standing"
+    18. kept: "naming what it was read against, as in `The aspirations stand against …`"
+    19. kept: "The items-convention points here rather than keeping a second copy." This is stated as a fact, not as a "must not".
+
+### Checker B, word for word
+
+    1. kept: "An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`"
+    2. kept: "written at three moments and at no others", with the three moments listed
+    3. kept: "whatever the item is tagged"
+    4. kept: "On creation." and "The entry names the record and what happened to it: the record written"
+    5. weakened: "On each dated `Settled` resolution." The word "dated" may narrow which resolutions count, and the text does not say the resolution has to be added after the item was created.
+    6. kept: "reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item"
+    7. kept: "taking back Realized, Deferred, Open, or a work item's Done". It drops the pointer to the items-convention ("as the items-convention sets out").
+    8. kept: "An observation is `Stated` and never moves, so it takes a creation entry only."
+    9. kept: "The entry names the record and what happened to it: the record written, or its state reaching a word."
+    10. kept: "What the record settles may follow, attributed to the record." The "never as the system's behavior" part is carried by "Never state an unbuilt direction in the indicative mood" and by "an entry that asserts what a record only settles is read as the system's behavior".
+    11. kept: "Never state an unbuilt direction in the indicative mood. *The check runs at the engineer's first prompt* says the system does that, and while the item is `Open` or `Active` it does not."
+    12. weakened: "The `git` package's commit-message rules ask for the changed thing in its new state, which is right for a change to the software. An item is not one: the fact about it is that it was recorded, or that its state moved." This explains why the grammar does not fit an item but does not forbid using it. It also does not name the grammar's parts (passive voice, indicative mood).
+    13. weakened: "Carry the same mood into the commit subject the entry travels in." It carries only the mood. The requirement that what the record settles be stated as the record's in the subject is not stated outright.
+    14. kept: "Fix no wording template". The requirement that the record is named and the mood is honest is carried by "The entry names the record" and "Never state an unbuilt direction in the indicative mood".
+    15. kept: "Not logged: a completed checkbox task"
+    16. kept: "prose that settles nothing, such as reconciling a Background & Motivation section, correcting a summary, or rewording a section"
+    17. kept: "Logged, though nothing changed: a reconciliation at a work session's close that finds the direction still standing"
+    18. kept: "naming what it was read against, as in `The aspirations stand against …`"
+    19. kept: "The items-convention points here rather than keeping a second copy." This is stated as a fact rather than as a prohibition.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -3298,3 +3388,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 10:58:15 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:35:52 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 12:37:06 PM PT
