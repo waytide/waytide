@@ -644,7 +644,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **It is compressed with the two lessons the earlier five gave.** Every directive is kept, the small ones included, since the directive check found that small ones are what goes missing. The sentences stay short, since packing them lowered #2's clarity: 33 sentences, 15.0 words on average, one over 25.
 
-**Its solubility rises from 20 to 57, and its clarity score from 0.24 to 0.70**, scored against the same 105 rules as the others. It is the first compressed rule to gain clarity as well as losing size. What went is mostly the argument: why `**Packages:**` is recorded rather than computed, why the read costs what it always cost, and why a delayed effect is announced.
+**Its solubility rises from 20 to 57, and its clarity score from 0.24 to 0.70**, scored against the same 105 rules as the others. That is the largest gain in clarity of the six compressed rules, ahead of #11's, from 0.18 to 0.55. What went is mostly the argument: why `**Packages:**` is recorded rather than computed, why the read costs what it always cost, and why a delayed effect is announced.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
