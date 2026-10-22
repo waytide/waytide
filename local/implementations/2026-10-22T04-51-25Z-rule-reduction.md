@@ -393,6 +393,19 @@ Every directive is kept. That covers the three surfaces and the agent printing n
 
 **What it does and does not establish.** #15 is the fifth least soluble rule, at 24, and compressed most of the four, by 0.71. The compressed text lost no behavior these scenarios test. Across four rules, at solubility 11, 24, 50 and 91, the compressed version has matched the default on every scenario scored. The one miss in 120 answers was a file-name separator that neither version of #11 states. The limits recorded for #2 stand, and a perfect score on both versions gives a difference no room to show.
 
+### #12 is compressed — 2026-10-21
+
+**#12, an-item-takes-a-log-entry, is compressed**, at the engineer's direction, and its compressed version is appended in a `## Compressed` section before `Related:`. Against its body, as the others were measured:
+
+- **compression 0.62**: 6,443 characters to 2,429
+- **change 0.80**: of 1,052 words, 214 stay in place
+
+Every directive is kept: the three moments and every state they cover, the observation's single entry, the two exclusions, the reconciliation exception, the entry naming the record, the mood and its reach into the commit subject, no template, and the obligation stated once. What went is the argument: why each moment is a decision, why the commit conventions pull the other way, and how the rule came to exist.
+
+**One tension is carried over without being resolved.** The source says the entry is written at three moments "and at no others", and then logs a reconciliation that finds the direction standing, which is none of the three. The compressed version keeps both, as the source does.
+
+**#12 compressed by 0.62**, at solubility 17. That is close to #11's 0.61 at 11 and below #15's 0.71 at 24.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -2191,3 +2204,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:44:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:45:48 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
