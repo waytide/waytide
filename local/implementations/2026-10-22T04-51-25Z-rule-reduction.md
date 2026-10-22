@@ -171,6 +171,40 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Two of the median five are median for opposite reasons.** waytide-keeps-its-word-where-the-ste-word-means-something-else is large and clear, with a clarity score of 0.77; record-rule-authorship-in-a-footer is small and unclear, at 0.30. The same solubility can hide two different rules, which is the combined score's mixing of size and clarity at work.
 
+### The fifteen measured rules, in three tables — 2026-10-21
+
+Numbered across the three, as shown to the engineer. Size is characters before the attribute lines were added. Original rank runs from least soluble, 1, to most soluble, 106.
+
+**Most soluble**
+
+| # | rule | size | Original rank | clarity score | solubility |
+|---|---|---|---|---|---|
+| 1 | control-prefix-test-vars | 731 | 106 of 106 | 1.00 | 99 |
+| 2 | show-feature-test-output-after-implementation-hinge | 1,764 | 105 of 106 | 0.94 | 91 |
+| 3 | plans-no-code-samples | 1,292 | 103 of 106 | 0.82 | 88 |
+| 4 | single-case-test-named-for-feature | 1,549 | 104 of 106 | 0.85 | 88 |
+| 5 | test-context-nesting-mirrors-folders | 1,658 | 102 of 106 | 0.84 | 87 |
+
+**Average solubility, near the median of 49.5**
+
+| # | rule | size | Original rank | clarity score | solubility |
+|---|---|---|---|---|---|
+| 6 | record-rule-authorship-in-a-footer | 2,656 | 54 of 106 | 0.30 | 50 |
+| 7 | waytide-keeps-its-word-where-the-ste-word-means-something-else | 4,771 | 55 of 106 | 0.77 | 50 |
+| 8 | a-high-level-context-names-a-behavior-not-a-method | 3,849 | 56 of 106 | 0.63 | 50 |
+| 9 | working-state-artifacts-carry-a-provenance-footer | 3,480 | 52 of 106 | 0.48 | 49 |
+| 10 | the-journal-is-read-at-session-start | 3,506 | 53 of 106 | 0.49 | 49 |
+
+**Least soluble**
+
+| # | rule | size | Original rank | clarity score | solubility |
+|---|---|---|---|---|---|
+| 11 | items-convention | 8,935 | 1 of 106 | 0.18 | 11 |
+| 12 | an-item-takes-a-log-entry | 7,493 | 2 of 106 | 0.23 | 17 |
+| 13 | a-project-declares-its-package-set | 6,156 | 5 of 106 | 0.24 | 20 |
+| 14 | implementation-lifecycle | 13,855 | 6 of 106 | 0.42 | 21 |
+| 15 | announce-waytide-at-session-start | 27,994 | 10 of 106 | 0.48 | 24 |
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -191,3 +225,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:54 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:30:09 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:31:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:35:14 PM PT
