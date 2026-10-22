@@ -615,6 +615,10 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **#7 is the second checked rule to meet the criterion without a restoration**, after #12. It compressed least of the five, by 0.27, which left the least room to drop anything.
 
+### The directive check on #2 — method, committed before it runs, 2026-10-22
+
+**At the engineer's direction, the directive check runs on #2**, the last of the five compressed rules, by the method used for the other four, with the prompts' file paths changed to `check2`. The criterion is the same, and the compressed #2 departs from its source on purpose nowhere.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3478,3 +3482,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:35:52 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:37:06 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:39:20 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:40:28 PM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 1:01:57 PM PT
