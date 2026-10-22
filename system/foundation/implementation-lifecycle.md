@@ -1,6 +1,6 @@
 # An implementation runs on a branch, from a working location chosen at the start, to a declared end
 
-- **Solubility:** 5
+- **Solubility:** 0.79
 - **Original rank:** 6 of 106
 - **Unclarity:** 0.58
 

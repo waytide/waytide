@@ -1,6 +1,6 @@
 # A project declares which of its installed packages are active
 
-- **Solubility:** 4
+- **Solubility:** 0.80
 - **Original rank:** 5 of 106
 - **Unclarity:** 0.76
 

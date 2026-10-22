@@ -1,6 +1,6 @@
 # The harness announces Waytide's installation. The agent never prints the notice
 
-- **Solubility:** 2
+- **Solubility:** 0.76
 - **Original rank:** 10 of 106
 - **Unclarity:** 0.52
 
@@ -258,3 +258,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:12:31 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
