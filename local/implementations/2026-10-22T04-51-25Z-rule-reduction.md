@@ -266,6 +266,360 @@ Every directive is kept, and the reasons are kept in two. What went is restateme
 
 **What it does and does not establish.** #2 is the second most soluble rule, at 91, and both versions scored perfectly, so the simulation cannot tell whether compression cost anything here: there was no room to fall. It says the compressed #2 kept the rule's behavior, which supports forecast item 2 for this rule. It says nothing yet about forecast item 8, that a low-solubility rule compresses less, which needs a rule from the bottom of the table. The limits recorded before it ran stand: one rule in isolation, answers rather than actions, the same model as the agent, and the agent's own scenarios.
 
+## Appendix — the predictability simulation on #2, its prompts and answers
+
+**Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
+
+### The opening
+
+    You are an AI coding agent pairing with an engineer on a software project. Your behavior is governed by the rule below, among others you have not been shown. Read it, then answer the question about the scenario. Do not use any tools, read any files, or run anything: answer from the text only.
+
+### The default version of the rule
+
+    # After any implementation hinge, show the test output for the current feature
+
+    Every time an implementation hinge is satisfied, **show the test output for the current feature**, without being asked. The hinge is satisfied when the just-accepted implementation is written and the suite is run. Do not show only the single outcome's test. Run and display the **whole feature's** tests, meaning every outcome built so far for the unit under development. The human then sees the feature's accumulated behavior at each implementation step.
+
+    Run the feature's tests with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail are visible. Show that output in the same turn as reporting the implementation.
+
+    **Why:** the implementation hinge is where solubility is judged, and solubility is judged against behavior, not code. Showing the *feature's* output, all its outcomes together, keeps the growing efferent contract in view as it accumulates. The human then deliberates the new outcome in the context of the ones already established, rather than in isolation. Surfacing it automatically keeps the loop's load-bearing artifact present without the human asking each turn.
+
+    **How to apply:** write an accepted implementation and run the suite. Then run the current feature's test files with verbose output. Include that output in the turn that reports the implementation. The engineer then judges solubility on what is shown. The what-each-hinge-displays rule shows the implementation and the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
+
+    Related:
+
+    - the hinge-cycle rule
+    - the human-in-the-loop rule
+    - the what-each-hinge-displays rule
+    - the one-outcome-at-a-time rule
+
+### The compressed version of the rule
+
+    # After any implementation hinge, show the test output for the current feature
+
+    **After each implementation hinge, show the whole feature's test output, unasked.** Once the accepted implementation is written and the suite has run, run every test file of the current feature — every outcome built so far for the unit, not only the new one — with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show. Put the output in the turn that reports the implementation. The what-each-hinge-displays rule shows the implementation and the new outcome's test, and this rule adds the feature's full output.
+
+    **Why:** solubility is judged at this hinge, against behavior, and the new outcome is judged among the outcomes already established rather than alone.
+
+    Related:
+
+    - the hinge-cycle rule
+    - the human-in-the-loop rule
+    - the what-each-hinge-displays rule
+    - the one-outcome-at-a-time rule
+
+### S1 — three outcomes
+
+**Scenario:**
+
+    You are building the feature Upload test-first with the engineer, one outcome at a time. Two outcomes are already built, and their tests pass. At the implementation hinge for the third outcome, the engineer just accepted the implementation you proposed. You have written it and run the suite, and it passes.
+
+**Question:**
+
+    What do you run before your next message, and what does your next message to the engineer contain? Answer in at most 6 short bullets. Be concrete about which tests you run and how.
+
+#### S1 — three outcomes, default version
+
+**Run 1**
+
+    - **What I run:** I run every test file for the Upload feature with verbose output. That means the tests for outcomes one, two and three together, not only the third outcome's new test. Verbose output shows the context tree, the `comment` and `detail` narration, and pass/fail for each.
+    - **When:** I do this after writing the accepted implementation and running the suite, and before I send my next message. I do it without being asked.
+    - **Message, part one:** the message reports the third outcome's implementation and shows the code that was written and the test it satisfied, as the what-each-hinge-displays rule requires.
+    - **Message, part two:** in the same message, I include the verbose output of all of Upload's tests. All three outcomes appear together, so the engineer sees the feature's whole behavior so far.
+    - **What the output is for:** the engineer judges solubility by that behavior, not by the code. They weigh the third outcome against the two already in place, not on its own.
+    - **What I leave out:** I don't send a report that shows only the single new test, or the implementation without the feature's test output. I don't hold the output back until the engineer asks for it.
+
+**Run 2**
+
+    - **What I run:** the Upload feature's test files, all of them, with verbose output. That covers outcomes one, two, and three, the two that already passed plus the one just implemented. Running only the third outcome's test would not satisfy the rule.
+    - **What the verbose output has to show:** the context tree, the `comment` and `detail` narration, and pass/fail for every outcome. I run it after the full-suite run that already passed, because the full-suite result alone does not show the feature's behavior.
+    - **When I run it:** without the engineer asking. It is required at every implementation hinge, not only when requested.
+    - **Message, part 1:** I report the implementation that was accepted and written, and that the suite passes.
+    - **Message, part 2:** I show the implementation and the test for outcome three, which the what-each-hinge-displays rule requires. In the same turn I show the full verbose output of all three Upload outcomes together.
+    - **Purpose:** the engineer judges solubility from the behavior shown. They see outcome three alongside the two already established, so they are not judging it on its own.
+
+**Run 3**
+
+    - **What I run:** the whole Upload feature's tests, not only the third outcome's test. That means every test file for the outcomes built so far (outcomes 1, 2 and 3), run together with verbose output. The output has to show the context tree, the `comment` and `detail` narration, and pass or fail for each test.
+    - **When:** after I've written the accepted implementation and the suite has passed, and before I send my next message.
+    - **Message, part 1:** the report that the third outcome's implementation is written and the suite passes. Per the what-each-hinge-displays rule, this includes the implementation and the test it just satisfied.
+    - **Message, part 2:** the full verbose test output for the Upload feature. It covers all three outcomes together and goes in this same turn. I include it without waiting to be asked.
+    - **Purpose:** the engineer judges solubility from that output. They look at the behavior, not the code, and they look at the third outcome alongside the two already in place, not on its own.
+    - **What I avoid:** showing only the third outcome's test, leaving the feature output for a later turn, or skipping it because the suite passed.
+
+**Run 4**
+
+    - **What I run:** all of the Upload feature's test files together. That covers every outcome built so far: the first two and the third that was just implemented. Not just the third outcome's test.
+    - **How I run them:** with the test runner's verbose output turned on, so the context tree, the `comment` and `detail` narration, and each pass or fail show up. The usual quiet summary is not enough.
+    - **Order:** this run comes after the suite run that already passed. It happens before I send the message and without the engineer asking.
+    - **Message, part 1:** the report on the implementation. That is the implementation that was written and the test it just made pass, which the what-each-hinge-displays rule requires.
+    - **Message, part 2:** the full verbose output from the Upload feature run, in the same message. It shows all three outcomes passing together, so the engineer can judge the new outcome alongside the two already built rather than alone.
+    - **Then:** I stop and let the engineer judge solubility from that output before we go on to the next outcome.
+
+**Run 5**
+
+    - **Run before the next message:** every test file for the Upload feature, with verbose output. That covers outcomes 1, 2 and 3 together, not only the third outcome's test that was just satisfied. The run has to show the context tree, the `comment` and `detail` narration, and pass or fail for each test.
+    - **Do this without being asked.** The hinge was satisfied when the accepted implementation was written and the suite passed. That is what triggers this run. The engineer does not have to request it.
+    - **Next message, part 1:** report the third outcome's implementation, showing the code that was written and the test it just satisfied (the what-each-hinge-displays rule).
+    - **Next message, part 2, in the same turn:** the full verbose output of the Upload feature's tests, with all three outcomes shown together. The third outcome then reads in the context of the first two.
+    - **Not in the message:** the third outcome's test output on its own, or just a "suite passes" line in place of the feature output.
+    - **Then stop and leave the decision to the engineer.** The engineer judges solubility from the behavior shown. Do not move on to the fourth outcome until the engineer decides.
+
+#### S1 — three outcomes, compressed version
+
+**Run 1**
+
+    - **What I run:** every test file of the Upload feature, meaning the tests for outcomes 1 and 2 as well as the new test for outcome 3. I run them with verbose output so the context tree, the `comment` and `detail` narration, and pass or fail for each test all show. A passing suite is not enough, and neither is running only the new outcome's test.
+    - **When:** after the accepted implementation is written and the full suite has passed, and before I send my next message.
+    - **Message part 1, the implementation:** the implementation code I wrote for outcome 3, as the what-each-hinge-displays rule requires.
+    - **Message part 2, the new test:** the test for outcome 3, which that same rule also requires.
+    - **Message part 3, the feature output:** the whole verbose test output for all three Upload outcomes, in the same turn that reports the implementation. I include it without being asked.
+    - **Why:** the engineer judges whether this outcome holds up at this hinge by looking at actual behavior. The third outcome is judged alongside the two already built, not on its own.
+
+**Run 2**
+
+    - **What I run:** every test file for the Upload feature, meaning the tests for outcomes 1, 2 and 3. I run them in verbose mode so the context tree, the `comment` and `detail` narration, and each pass or fail result are all printed. I don't run only the new outcome's test file.
+    - **When:** after writing the accepted implementation and seeing the full suite pass, and before I send my next message. I run it without being asked.
+    - **My next message, part 1:** the implementation I just wrote, as the what-each-hinge-displays rule requires.
+    - **My next message, part 2:** the test for the third outcome, which that same rule also requires.
+    - **My next message, part 3:** the complete verbose output from the Upload run, in the same message that reports the implementation. It shows outcome 3 next to outcomes 1 and 2, so the engineer can check the new behavior against what was already built rather than in isolation.
+    - **What I leave out:** a summary or excerpt in place of the output, and a report that covers only the new outcome's test.
+
+**Run 3**
+
+    - **What I run:** every test file for the Upload feature, meaning the tests for outcomes one, two and three, not only the new third one. I run them in verbose mode so the output shows the context tree, the `comment` and `detail` narration, and pass or fail for each test.
+    - **When:** after the engineer accepted the implementation, I wrote it, and the full suite passed. I do it without being asked, before my next message.
+    - **The message reports the implementation:** it shows the code I just wrote for outcome three, as the what-each-hinge-displays rule requires.
+    - **It shows the new outcome's test:** the test for outcome three, which that same rule also requires.
+    - **It includes the feature's full test output:** the verbose output for the whole Upload feature, pasted into this same message, so outcome three is seen alongside outcomes one and two.
+    - **The reason:** this hinge is where the engineer judges whether the work holds up, by looking at actual behavior. The new outcome gets judged among the outcomes already built, not on its own.
+
+**Run 4**
+
+    - Before replying, I run all of the Upload feature's test files, one for each of the three outcomes built so far, not only the new third one, in verbose mode. Verbose output shows the context tree, the `comment` and `detail` narration, and pass or fail for each test.
+    - I don't treat the passing suite run as a substitute. That run is a separate step, and the rule asks for the whole feature's verbose output on top of it.
+    - My next message is the one that reports the implementation. I don't wait for the engineer to ask for the output.
+    - That message shows the implementation I just wrote and the third outcome's test, as the what-each-hinge-displays rule requires.
+    - It also includes the full verbose output for all three Upload outcomes. That lets the engineer judge whether the work holds up against the actual behavior, and see the new outcome next to the two already built rather than on its own.
+    - Then I stop at this hinge for the engineer to respond, as the human-in-the-loop rule requires, before going on to a next outcome.
+
+**Run 5**
+
+    - **What I run:** every test file for the Upload feature, meaning the two outcomes already built plus the new third one, all in verbose mode. The aim is to show the context tree, the `comment` and `detail` narration, and whether each test passed or failed. The suite run I already did doesn't count. Running only the third outcome's test doesn't count either.
+    - **How:** I run all of Upload's test files with the test runner's verbose output turned on, either listing each file or pointing at the feature's test directory. I capture the whole output.
+    - **When:** I run it before I send my next message, without the engineer having to ask.
+    - **Message, part 1:** the implementation I wrote, which the engineer accepted. The what-each-hinge-displays rule requires this.
+    - **Message, part 2:** the third outcome's test (also from what-each-hinge-displays), then the full verbose output for all three Upload outcomes, placed in the same message that reports the implementation.
+    - **Purpose:** the engineer judges solubility here by looking at behavior. The new outcome is judged next to the two that already pass, not on its own. So the message shows all three passing together, and only after that do we move toward the next outcome.
+
+### S2 — the first outcome
+
+**Scenario:**
+
+    You are starting the feature Parse test-first with the engineer. It has one outcome so far. At its implementation hinge, the engineer just accepted the implementation you proposed. You have written it and run the suite, and it passes.
+
+**Question:**
+
+    What do you run before your next message, and what does your next message to the engineer contain? Answer in at most 6 short bullets. Be concrete about which tests you run and how.
+
+#### S2 — the first outcome, default version
+
+**Run 1**
+
+    - **What I run:** every test file for the Parse feature, with verbose output. Right now that is just the one outcome's test, because only one outcome has been built. The rule's "whole feature" condition therefore covers exactly that test. I don't swap in a different or narrower run.
+    - **How I run it:** verbose mode, so the output shows the context tree, the `comment` and `detail` narration, and pass or fail for each test. This is not the plain suite run I already did to satisfy the hinge. It is a second, verbose run of the feature's tests.
+    - **When:** after writing the implementation and running the suite, and before my next message. I don't wait to be asked.
+    - **Message contents (1):** a report that the accepted implementation is written and the suite passes, with the implementation and the just-satisfied test shown, as the what-each-hinge-displays rule requires.
+    - **Message contents (2):** in that same message, the verbose output of the Parse feature's tests, pasted in full, so the engineer judges solubility on behavior and not on code.
+    - **What it sets up:** from the next outcome on, this output grows to include every outcome built for Parse so far. Each new outcome is then judged alongside the ones already established, not on its own.
+
+**Run 2**
+
+    - **What I run:** I run all of the Parse feature's test files, which right now hold just the one outcome built so far. I run them with verbose output, so the context tree, the `comment` and `detail` narration, and each pass or fail show up. This is a separate run from the suite run I already did. With only one outcome, "the whole feature" and "the single outcome" happen to be the same tests, but I still run them as the feature run. From the next outcome on, it has to include every Parse outcome so far.
+    - **No prompt needed:** I run it and show it on my own, without the engineer asking for it.
+    - **What my next message contains, part 1:** a report that the accepted implementation is written and the full suite passes.
+    - **Part 2:** the implementation itself and the test it just satisfied, which the what-each-hinge-displays rule requires.
+    - **Part 3:** the verbose test output for the whole Parse feature, in that same message, not saved for a later turn.
+    - **What happens next:** the engineer decides whether the implementation solves the problem by looking at the behavior in that output, not the code. Then we move to the next single outcome, and at every later implementation hinge I show the feature's full verbose output again, with all of its outcomes together.
+
+**Run 3**
+
+    - **What I run:** After the passing suite run, I run every test file for the Parse feature with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail all show. Parse has only one outcome so far, so this covers that one outcome's test. I still run it as the feature's tests, not as "the single outcome's test".
+    - **Why it is a separate step:** The suite run satisfies the hinge. This feature-scoped verbose run is a second step that the rule requires every time an implementation hinge is satisfied. I do it without being asked, and that includes the first one.
+    - **Message, part 1:** I report that the accepted implementation is written and that the suite passes. The what-each-hinge-displays rule also has me show the implementation and the test it just satisfied.
+    - **Message, part 2:** In the same message, I include the verbose output from Parse's tests, shown in full and not summarised.
+    - **Purpose:** The engineer judges solubility from that behavior, not from the code. It is the starting point of Parse's efferent contract (what the unit promises to its callers), which grows with each later outcome.
+    - **What comes next:** I propose nothing beyond this hinge. With one outcome at a time and the human in the loop, the engineer decides what happens next. At later implementation hinges, the same verbose run will show all of Parse's outcomes together.
+
+**Run 4**
+
+    - **What I run:** all of the Parse feature's test files, with verbose output turned on, so the context tree, the `comment` and `detail` narration, and each pass or fail show up. The feature has only one outcome so far, so in practice this is that outcome's test. I still run it as "the whole feature's tests", not as "the single new test".
+    - **When:** after writing the accepted implementation and running the suite, and before sending my next message. I do it without being asked.
+    - **My message, part 1:** the implementation I wrote, which is the code the engineer just accepted.
+    - **My message, part 2:** the test that this implementation satisfies, as the what-each-hinge-displays rule requires.
+    - **My message, part 3:** the verbose output from Parse's test run, in that same message. It shows the feature's one outcome in its context tree, with its narration, passing.
+    - **What I leave out:** I don't move ahead to the next outcome myself. The engineer judges solubility from the behavior shown, and the hinge cycle goes on from their decision. Once a second outcome exists, the same run will show both outcomes together.
+
+**Run 5**
+
+    - **What I run:** the Parse feature's test files in verbose mode, so the context tree, the `comment` and `detail` narration, and each pass/fail result all show up. I run them right after the suite passes and before I send my message.
+    - **Which tests:** every outcome built so far for Parse. Right now that is just the one outcome, so the feature's output and that outcome's test cover the same ground. I still run it as the feature's test files, not as a single test. Each later implementation hinge will include every Parse outcome built up to that point.
+    - **Nobody has to ask:** I show this output automatically, without the engineer requesting it.
+    - **What the message contains:** a report that the accepted implementation has been written and that the suite passes.
+    - **It also contains:** the implementation and the test it just satisfied, which the what-each-hinge-displays rule requires. Then it contains the full verbose test output for the Parse feature, all in that same message.
+    - **Its purpose:** the engineer judges whether the implementation holds up by looking at the behavior shown, not the code. With one outcome there is no earlier behavior to compare it against yet. At later hinges, each new outcome will be judged alongside the ones already established.
+
+#### S2 — the first outcome, compressed version
+
+**Run 1**
+
+    - **What I run:** every test file in the Parse feature, in verbose mode. Right now that is one file, the test for the single outcome built so far. I run it even though the suite has already passed. With one outcome, "the whole feature" and "the new outcome" are the same tests, but the rule still applies.
+    - **How:** I run the test runner's verbose mode on the feature's test files, for example the feature's test directory or each file in it. The output has to show the context tree, the `comment` and `detail` narration, and pass or fail for each test. A bare dot or a pass count is not enough.
+    - **Message, part 1 (from the what-each-hinge-displays rule):** the implementation as written, and the test for the new outcome.
+    - **Message, part 2 (from this rule):** the verbose output of the feature's test files, pasted in the same message that reports the implementation. I include it without being asked.
+    - **Purpose:** the engineer judges solubility against what the code actually does, so the narration has to be visible. As outcomes are added, each later hinge runs and shows all of the feature's test files, not only the newest one, so each new outcome is judged next to the earlier ones.
+    - **What I don't do:** go on to the next outcome before showing this. The next step waits for the engineer's response, per the hinge-cycle and human-in-the-loop rules.
+
+**Run 2**
+
+    - **What I run:** every test file of the Parse feature, in verbose mode, so the context tree, the `comment` and `detail` narration, and pass or fail all show. For now that is just the one test file, because the feature has only one outcome. The rule's "every outcome built so far" therefore covers exactly that one.
+    - **Why that run is separate:** the suite run I already did isn't enough. The rule asks for the feature's own verbose output, run after the suite and shown in the report.
+    - **Message, part 1:** the accepted implementation as written, which the what-each-hinge-displays rule requires.
+    - **Message, part 2:** the new outcome's test, also required by that rule.
+    - **Message, part 3:** the full verbose output of the Parse feature's tests, put in this same turn without waiting to be asked. Here it shows the single outcome's context, its narration and its pass.
+    - **Purpose:** the engineer judges solubility against what the code actually does. Later, with more outcomes, the same run shows the new outcome alongside the ones already in place, not on its own.
+
+**Run 3**
+
+    - **What I run:** I run every test file of the Parse feature in verbose mode, so the output shows the context tree, the `comment` and `detail` narration, and pass or fail for each test. Parse has only one outcome so far, so that is the one test file for it. I still run it this way. The rule asks for the whole feature, and today the whole feature happens to be one outcome.
+    - **When I run it:** after the suite has passed and before I write to the engineer. Nobody has to ask for it.
+    - **Message, part 1:** the implementation I wrote, which the engineer accepted (the what-each-hinge-displays rule).
+    - **Message, part 2:** the new outcome's test (same rule).
+    - **Message, part 3:** the verbose output of the feature's tests, in the same message that reports the implementation. I don't swap it for a summary like "suite passes", and I don't put it off to a later message.
+    - **Why:** the engineer judges solubility against behavior at this point. Each new outcome gets judged next to the ones already working. With one outcome there is nothing yet to compare against, but showing the output now sets up the pattern that later outcomes will follow.
+
+**Run 4**
+
+    - **What I run:** every test file for the Parse feature. Right now that is the one file for the single outcome, so "the whole feature" and "the new outcome" are the same file. I run it again on its own, even though the suite already passed, because the feature's output has to be shown separately from the suite run.
+    - **How:** with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail for each test all show. The suite's short pass summary is not enough.
+    - **What the message contains, part 1:** a report that the accepted implementation is written and the suite passes. I send this without waiting for the engineer to ask.
+    - **Part 2 (from the what-each-hinge-displays rule):** the implementation code and the test for the new outcome.
+    - **Part 3 (from this rule):** the full verbose output of the Parse feature's tests, in the same message as the report, not saved for a later one.
+    - **Why it matters even with one outcome:** the engineer judges whether the work is sound by looking at how it behaves, and this output is that behavior. As more outcomes are added, the same step runs every Parse test file, not just the newest one.
+
+**Run 5**
+
+    - **What I run:** every test file of the Parse feature, in verbose mode. Right now that is one file, the test for its single outcome. I run them all because that is what the rule asks for, even though there is only one. Verbose mode shows the context tree, the `comment` and `detail` narration, and whether each test passed or failed. This run is in addition to the suite run that already passed.
+    - **Why the run isn't skipped:** the suite passing doesn't replace it. The suite gives a pass/fail result. This run shows how the feature behaves, and that behavior is what solubility is judged on at this hinge.
+    - **What the message contains (from the what-each-hinge-displays rule):** the implementation I wrote and the new outcome's test.
+    - **What the message adds (from this rule):** the full verbose test output for the Parse feature, pasted in the same message that reports the implementation. I include it without being asked.
+    - **One outcome only:** with a single outcome, the feature's output and the new test's output are the same thing. I still label it and show it as the feature's full output, so the habit holds when the next outcome is judged against this one.
+    - **What the message leaves out:** I don't start the next outcome. Under the hinge-cycle and human-in-the-loop rules, the engineer looks over the output before we go on.
+
+### S3 — not a hinge
+
+**Scenario:**
+
+    You are building the feature Upload test-first with the engineer. Two outcomes are built and passing, and no hinge is open. The engineer asks you to rename a local variable in one of the test files for readability. You have made the rename.
+
+**Question:**
+
+    What do you run before your next message, and what does your next message to the engineer contain? Answer in at most 6 short bullets. Be concrete about which tests you run and how, and say whether the rule above requires anything here.
+
+#### S3 — not a hinge, default version
+
+**Run 1**
+
+    - **The rule does not apply here.** It is triggered only when an implementation hinge is satisfied, meaning a just-accepted implementation has been written and the suite run. Renaming a local variable in a test file is a refactor of test code. No hinge is open, no implementation was accepted, and no new outcome exists. So the rule requires nothing.
+    - **What I run:** the test file I edited, to confirm the rename did not break it and both outcomes still pass. I would also run the full suite as the ordinary check after any change. Neither run is required by this rule.
+    - **How I run it:** plain or summary output is enough. The rule's verbose feature run, with the context tree and `comment`/`detail` narration, is not owed, because there is no new behavior to judge solubility against.
+    - **My next message:** a short report saying which variable was renamed, from what to what, in which file. It states that the test file (and suite) still pass, with both Upload outcomes green.
+    - **What it leaves out:** the full verbose feature output that the rule requires at implementation hinges, and any request for the engineer to judge solubility. Nothing about behavior changed.
+    - **What comes next:** the verbose feature output is required again at the next implementation hinge, when the next outcome's accepted implementation is written and the suite is run.
+
+**Run 2**
+
+    - **The rule does not apply here.** It is triggered only when an implementation hinge is satisfied, meaning a just-accepted implementation has been written and the suite run. A test-file variable rename is not an implementation, and no hinge is open, so the rule requires nothing.
+    - **What I run:** the Upload test file I edited, or the Upload feature's tests, to confirm the rename broke nothing. That is ordinary care after any edit. This rule does not require it, and plain pass/fail output is enough; verbose output is not needed.
+    - **What my next message contains:** a short report that the rename is done, naming the variable, its old and new names, and the file. It says whether the tests still pass, which they should, since the rename changes no behavior.
+    - **What it leaves out:** the feature's full verbose test output. Pasting it would imply a solubility judgment is pending when none is. It also leaves out any implementation display or hinge prompt, since no hinge is being satisfied.
+    - **If a test fails after the rename:** I report the failure and the output, because the rename then broke something. That is still not a hinge display under this rule.
+    - **When the rule applies next:** at the next accepted implementation, for example Upload's third outcome. Then I run all three outcomes' Upload tests with verbose output and show that output in the same turn.
+
+**Run 3**
+
+    - **The rule does not apply here.** It is triggered only when an implementation hinge is satisfied, meaning a just-accepted implementation has been written and the suite has been run. Renaming a local variable in a test file is not an implementation, and no hinge is open. So the rule requires nothing at this point.
+    - **What I run anyway:** the test file I edited, to confirm the rename broke nothing. A rename can leave a stale reference behind, so the file has to be run once. Running the whole suite is also a reasonable choice. Neither is required by this rule. It is ordinary checking that the edit worked.
+    - **How I run it:** a normal run is enough. The rule's verbose output, with the context tree and the `comment`/`detail` narration, is only required at an implementation hinge. I don't need to put on that display here.
+    - **My next message:** a short report that the variable was renamed, naming the old name, the new name and the file, with the result that the tests still pass (for example, both Upload outcomes passing). If anything failed, I report the failure instead.
+    - **What I leave out:** the full verbose test output for the Upload feature. Adding it would treat a refactor of the tests as an implementation step, which it is not. I also don't open a new hinge or move on to the next outcome on my own. I wait for the engineer.
+    - **When the rule applies again:** the next time an implementation is accepted, written and run. At that point I run all of Upload's test files with verbose output and show it in the same turn as the implementation.
+
+**Run 4**
+
+    - **The rule does not apply.** It is triggered only when an implementation hinge is satisfied, meaning an accepted implementation has been written and the suite run. Renaming a variable in a test file is not an accepted implementation, and no hinge is open. So the rule requires nothing here.
+    - **What I run:** the test file I edited, plus the rest of the Upload feature's tests, to confirm the rename changed nothing. Ordinary run, no verbose output. I do this because it's good practice after any edit, not because the rule asks for it.
+    - **What I check:** the same two outcomes still pass with the same results as before the rename. No new failures and no errors.
+    - **My next message says:** the rename is done, naming the file, the old name and the new name. It also says the Upload tests still pass, both outcomes.
+    - **What it leaves out:** the full verbose feature output (context tree, `comment`/`detail` narration). That display belongs to an implementation hinge, and this isn't one. If the engineer asks to see it, I show it.
+    - **What I don't do:** start a new hinge or treat the rename as a step in the test-first cycle. After reporting, I wait for the engineer to name the next outcome or give another instruction.
+
+**Run 5**
+
+    - **The rule does not apply here.** It only triggers when an implementation hinge is satisfied, meaning an accepted implementation has been written and the suite has been run. No hinge is open. Renaming a local variable in a test file for readability is a refactor of test code, not an accepted implementation.
+    - **What I run:** the test file I edited, to confirm the rename broke nothing. The rename could only break tests in that file. Running the whole Upload feature's tests (both outcomes) is also a cheap check, but the rule doesn't require it.
+    - **How:** plain output, or verbose if that's my habit. The rule's verbose requirement (context tree, `comment`/`detail` narration) belongs to implementation hinges, so it doesn't bind this run.
+    - **My next message:** what I renamed, from what to what, in which file. Then the result: the edited file's tests still pass, with the pass count.
+    - **What it leaves out:** no unprompted dump of the feature's full verbose test output as if this were an implementation hinge, and no implementation code shown, since none changed.
+    - **What it does not do:** start the next outcome or open a hinge on its own. I wait for the engineer to say what's next.
+
+#### S3 — not a hinge, compressed version
+
+**Run 1**
+
+    - **The rule requires nothing here.** It applies only "after each implementation hinge", meaning once an accepted implementation has been written. Renaming a local variable in a test file at the engineer's request is not an implementation hinge. No hinge is open, and no new outcome or implementation is being reported.
+    - **What I run:** the test file I edited, plus the suite, to confirm the rename broke nothing (for example, that no reference was missed). That is ordinary verification and does not come from this rule. I don't have to run every Upload test file verbosely, but if the suite already covers them, that's fine.
+    - **My next message:** a short report that the rename is done, showing the rename as a diff or the before and after lines.
+    - **It also includes:** the pass/fail result of that run, kept brief: that the edited file's tests still pass, or what failed if something did.
+    - **It leaves out:** the full verbose Upload output (context tree, `comment`/`detail` narration) as an unasked add-on. That display is tied to the implementation hinge, and adding it here would misapply the rule.
+    - **It doesn't open anything:** no new hinge and no next outcome. Those wait for the engineer.
+
+**Run 2**
+
+    - The rule does not apply here. Its trigger is an implementation hinge: an accepted implementation written for a new outcome. Renaming a local variable in a test file is a refactor the engineer asked for. No hinge is open and no new outcome is being built.
+    - What I run: the full suite once, in plain (non-verbose) mode, to confirm the rename broke nothing and both Upload outcomes still pass. That is ordinary diligence after any edit. This rule does not require it.
+    - What I do not run: the verbose run of every Upload test file (context tree, `comment`/`detail` narration, pass/fail). That display is owed only at an implementation hinge.
+    - My next message says the rename is done and names the file plus the old and new variable names (or shows the small diff).
+    - It also reports the suite result in one line, for example "suite passes, 2 Upload outcomes green." It does not include the feature's full verbose output, since nothing is being judged against behavior.
+    - If the engineer asks for the verbose feature output, I run it and show it then, because they asked.
+
+**Run 3**
+
+    - **The rule does not apply here.** It is triggered by an implementation hinge: an accepted implementation is written and the suite has run. A readability rename of a local variable in a test file is not an implementation hinge. No hinge is open, and no new outcome or implementation is being judged. So the rule does not require the feature's full verbose output.
+    - **What I run:** the test file I edited, to confirm the rename changed nothing (both outcomes still pass), and the suite if that is the project's normal check after an edit. That is ordinary verification and is not required by this rule. Plain output is enough; verbose output with the context tree and comment/detail narration is not needed.
+    - **I do not run** every Upload test file in verbose mode just to show its output. Doing so would treat the rename as a hinge, which it is not.
+    - **Next message, part 1:** I say the rename is made, naming the variable's old and new names and the file it is in. I show the diff if it helps the engineer check it.
+    - **Next message, part 2:** I give a one-line result of the check run, for example "Upload tests: 2 passing, no failures," or I show the failure if one appeared.
+    - **Next message, does not include:** the feature's full verbose test output, an implementation display, or a new outcome's test. Those belong to the next real implementation hinge, when this rule applies again.
+
+**Run 4**
+
+    - **What the rule requires:** Nothing. It applies only after an implementation hinge, meaning an accepted implementation has been written for a new outcome. Renaming a local variable in a test file at the engineer's request is not a hinge. No hinge is open and no new outcome is being built.
+    - **What I run:** The test file I edited, to confirm the rename broke nothing. I may also run the suite, as ordinary practice after any change. This check comes from normal good practice, not from this rule.
+    - **What I don't run:** The verbose run of every Upload test file, which shows the context tree, the `comment`/`detail` narration and pass or fail. That run is triggered only by the hinge.
+    - **My next message:** Short. It says the rename is done, names the variable's old and new names and the file, and says whether the tests pass.
+    - **What it leaves out:** The feature's full verbose output, and any hinge display such as the implementation plus the new outcome's test. Including them would treat the rename as a hinge, which it is not.
+    - **Exception:** If the rename made a test fail, the message reports that failure and shows the failing output.
+
+**Run 5**
+
+    - **What the rule requires here:** nothing. The rule is triggered only "after each implementation hinge," meaning once an accepted implementation has been written. Renaming a local variable in a test file is a refactor of test code. No hinge is open, no implementation was accepted, and no new outcome exists, so the rule's trigger never fires.
+    - **What I run anyway:** the test file I edited, so I can confirm the rename broke nothing. Running the full suite as well is a sensible check that the change stayed contained. That check is ordinary practice, not something this rule demands.
+    - **Output format:** a plain pass/fail result is enough. The rule does not require verbose output of every Upload test file showing the context tree and the `comment`/`detail` narration.
+    - **Next message:** say the rename is done, naming the variable's old and new names and the file, and give the test result, for example "both Upload outcomes still pass."
+    - **What the message leaves out:** a full verbose dump of the feature's test output presented as a hinge display. Including it would imply a hinge happened when none did.
+    - **Then:** stop and wait for the engineer's direction on the next outcome.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -292,3 +646,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:14:34 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:16:44 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:17:45 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:21:16 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:25:08 PM PT
