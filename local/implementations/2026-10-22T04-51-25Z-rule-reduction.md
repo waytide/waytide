@@ -665,6 +665,449 @@ Every directive is kept: the file shape and log entry, the kind tags, `[idea]` f
     - **What the message leaves out:** a full verbose dump of the feature's test output presented as a hinge display. Including it would imply a hinge happened when none did.
     - **Then:** stop and wait for the engineer's direction on the next outcome.
 
+## Appendix — the predictability simulation on #11, its prompts and answers
+
+**Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and the question below, which was the same for all three scenarios. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
+
+### The opening
+
+    You are an AI coding agent pairing with an engineer on a software project that keeps its working records under waytide/local/. Your behavior is governed by the rule below, among others you have not been shown. Read it, then answer the question about the scenario. Do not use any tools, read any files, or run anything: answer from the text only.
+
+### The default version of the rule
+
+    # `waytide/local/items/` — the project's items, one file per item
+
+    `waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
+
+    **A tag may describe an item, and nothing about it is strict.** A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, and an observation `[observation]`. **An item that carries no tag at all is tagged `[idea]`.** The tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-takes-category-tags rule), the set is open, and an item may carry several or none at all.
+
+    **`[idea]` is the tag an untagged item takes, and no other kind tag is assigned by default — `[aspiration]` least of all.** `[aspiration]` is written where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the line. An item that already carries a tag is not given `[idea]` as well, whatever the tag — `[deferred]`, `[work-item]`, or a project's own.
+
+    **The tag describes and decides nothing.** No rule reads a kind tag, no report groups by one, and no filename derives from one. What the record *is* is in the record.
+
+    **No tag is reserved here, and none is read mechanically.** The `[deferred]` tag is freeform like any other, and what it used to carry is the two lines below.
+
+    ## Two optional lines any item may carry
+
+    **`**Waits for:**` states what must finish before the item is actionable.** That is the whole of what it does. It does not say what to work next.
+
+    **`**Priority:**` holds a rank** — `- **Priority:** 3`. Ranks are 1 through N, contiguous, one item per number, and rank 1 is worked next among the items that are actionable.
+
+    **Rank is not the wait.** An item that is waiting may still be ranked, and a rank does not clear a wait.
+
+    **Both are optional and most items carry neither.** An item is frequently written at the moment its material is at hand, which is exactly when a ranking decision is what is being put off. An unranked item is not a defect.
+
+    **Renumbering on insert is the cost, and it is accepted.** Putting an item at a given rank moves every item below it, so a change of priority changes several files. That is the cost of each item stating its own position in a form that reads as the order the engineer gave.
+
+    **An item's content is point-in-time.** What an item says was true when it was written — the work that was in progress, the rules as they stood, the artifacts that existed. **A reference inside an item that time has overtaken is not a defect and is not chased.** An item waiting on an experiment does not stop being correct when that experiment is superseded, because it records what it was waiting for.
+
+    **Nothing derives from either line.** They were a queue's mechanism until 2026-08-25 and are now an item's own content, read by whoever reads the item.
+
+    ## The shape
+
+    - **One file per item**, named by the ISO-8601-UTC prefix (see the file-names rule), ending with its state in upper case (see the a-record-ends-with-its-state-in-upper-case rule).
+    - **Frontmatter-free markdown.** A `# <title>`, then the `**State:**` line, then the `**Tags:**` line, then whatever the item has to say.
+    - **A provenance footer** ends the file (see the working-state-artifacts-carry-a-provenance-footer rule).
+    - **A log entry** pairs with it on creation and on each change of state (see the an-item-takes-a-log-entry rule).
+    - **No code samples** (see the plans-no-code-samples rule).
+
+    **Nothing else is required.** An item that settles things records them as dated **Settled** resolutions and marks what it deliberately leaves out in an **Out of Scope / Deferred** tail. An item that sequences work carries checkbox tasks stating behavior. An item that does neither carries neither. **The four rules this replaces fixed a spine.** This one does not: an item is thinking, and a shape imposed on thinking is ceremony wherever the thinking does not have it.
+
+    ## The states
+
+    Every item carries a `**State:**` line, from the moment it is written:
+
+    - **Open** — the thinking is not settled. Where an item starts when it is a hypothesis rather than a direction.
+    - **Active** — settled, and the work is expected. Where an item starts when it settles something.
+    - **Realized** — what the item describes exists.
+    - **Deferred** — kept deliberately, with no date and nobody working toward it. **An item that is merely waiting its turn is not this** — it carries a `**Waits for:**` line and whatever state its thinking has reached.
+    - **Suspended** — paused, not ended.
+    - **Superseded** — another item replaced it, and the two name each other.
+    - **Abandoned** — dropped, by decision.
+    - **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
+    - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
+
+    **`Stated` is the third starting word and the only terminal one**, and an observation takes it alone. Every other item takes one of the two below.
+
+    **`Open` and `Active` are the two starting words**, and which one an item takes says what kind of record it is being written as. Absence is not a state, and an item without a line is a defect.
+
+    **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
+
+    ## A work item
+
+    **An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** The tag is reserved: this rule names it and says what follows.
+
+    - **Done** — the work is done. It takes the place of `Realized`, which a work item does not take, and neither does `Lapsed`.
+    - **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
+    - **`Done` is taken back** to `Active` when the work reopens, as `Realized` is for any other item.
+
+    **Why:** a work item describes something to do rather than something to exist, so *realized* misstates its end. *Done* says what happened to it.
+
+    ## Supersession
+
+    **A later item may supersede an earlier one.** The earlier takes `**State:** Superseded` and the two name each other in their prose. What the earlier one settled stays as written — a superseded item is a record of what was thought, not a draft.
+
+    **An item is amended by a dated addition rather than a rewrite.** A resolution that no longer holds keeps its date and its wording, and a later one states what changed. So an item reads as a history of thinking rather than as whatever is current.
+
+    **A question that runs against something an item settled has expanded the item.** The agent answers it and records the change. It does not refuse until the item is amended, which would stop the work to keep a record of it.
+
+    **A settled item is reconciled, never regenerated.** Where one item names another as the thing it realizes, the named one is a source of truth. Rebuilding it from the work downstream would invert that and would treat the implementation as correct every time.
+
+    **Why:** one directory and one class of record, because the six that came before it differed in what they were called and in nothing a rule depended on. What varies between them is a word, and a word is carried by a tag.
+
+    Keeping the shape thin is the other half. The rules this replaces fixed a spine for a design and an element order for a plan, and an item that is neither had nowhere to sit. What every item genuinely shares is a state, a tag, a footer, a log entry, and a name.
+
+    **How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open** where the thinking is unsettled and **Active** where it settles something.
+
+    Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
+
+    Related:
+
+    - the a-record-takes-category-tags rule — the tags that say what an item is
+    - the a-record-ends-with-its-state-in-upper-case rule — the filename suffix
+    - the an-item-takes-a-log-entry rule — the log entry an item takes
+    - the observations-convention — an observation, which is an item and carries the promotion path to a rule
+    - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
+    - the a-suspension-is-a-log-entry rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
+
+### The compressed version of the rule
+
+    # `waytide/local/items/` — the project's items, one file per item
+
+    **Items.** `waytide/local/items/` holds the project's items, one file per item: the thinking that settles what the work should be and how it should go.
+
+    **The shape.** Name the file with the ISO-8601-UTC prefix, ending in its state in upper case. Write frontmatter-free markdown: a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say, and a provenance footer. Write a log entry when the item is created and at each change of its state. Put no code samples in it. Nothing else is required — record decisions as dated **Settled** resolutions, mark what is left out in an **Out of Scope / Deferred** tail, and give checkbox tasks stating behavior, each only where the item does that.
+
+    **Tags.** Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`. Tag an item with no tag at all `[idea]`, and give `[idea]` to no item that already carries a tag. Write `[aspiration]` only where an aspiration was asked for. The set is open, and an item may carry several. A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`, below.
+
+    **Two optional lines, and most items carry neither.** `**Waits for:**` states what must finish before the item is actionable, and nothing more. `**Priority:** N` ranks it from 1 to N, contiguous, one item to a number, and rank 1 is worked next among the actionable items; ranking an item renumbers those below it. A rank does not clear a wait. Nothing derives from either line.
+
+    **An item's content is point-in-time.** A reference in it that time has overtaken is not a defect and is not chased.
+
+    **States.** Every item carries a state. Start it **Open** where its thinking is unsettled, and **Active** where it settles something. An observation starts and stays **Stated**.
+
+    - **Realized** — what it describes exists.
+    - **Deferred** — kept deliberately, with no one working toward it. An item merely waiting its turn carries `**Waits for:**` instead.
+    - **Suspended** — paused, not ended.
+    - **Superseded** — a later item replaced it, and the two name each other.
+    - **Abandoned** — dropped by decision.
+    - **Lapsed** — it lost its relevance with no one deciding.
+
+    `Realized`, `Deferred`, and `Open` are taken back to `Active` or `Open` when the work resumes. At each change, rename the file and write the log entry.
+
+    **A work item**, tagged `[work-item]`, is a piece of work to be done. It takes `Open`, `Active`, `Deferred`, and `Suspended`, and concludes `Done`, `Abandoned`, or `Superseded` — never `Realized` or `Lapsed`. `Done` is taken back to `Active` when the work reopens.
+
+    **Changing an item.** Supersede it rather than rewrite it: what a superseded item settled stays as written. Amend it by dated addition, keeping an outdated resolution's date and wording. Answer a question that runs against what an item settled, and record the change, rather than refusing until the item is amended. Reconcile a settled item against later work, and never regenerate it from that work.
+
+    **Why:** one class of record, because its earlier kinds differed only in a word, which a tag carries; and a thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
+
+    Related:
+
+    - the a-record-takes-category-tags rule — the tags that say what an item is
+    - the a-record-ends-with-its-state-in-upper-case rule — the filename suffix
+    - the an-item-takes-a-log-entry rule — the log entry an item takes
+    - the observations-convention — an observation, which is an item and carries the promotion path to a rule
+    - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
+    - the a-suspension-is-a-log-entry rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
+
+### The question
+
+    What files do you write, change, or rename, and what are their names, State lines, and Tags lines? Do you write any other record? Answer in at most 6 short bullets.
+
+### S1 — a new thought
+
+**Scenario:**
+
+    The engineer says: "Idea: the compiler could cache what it compiled." Nothing else is said about it. It is Tue Oct 21 2026, 23:40 UTC.
+
+#### S1 — a new thought, default version
+
+**Run 1**
+
+    - **Write one new file:** `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. The name has an ISO-8601-UTC prefix and ends with the state in upper case. The rule shown doesn't give the exact prefix format, so the separators here are an assumption; the file-names rule has the exact form.
+    - **State line:** `**State:** Open`. The idea is a hypothesis, not a settled direction, so it starts Open rather than Active.
+    - **Tags line:** `**Tags:** [idea]`. The engineer called it an idea and gave no other kind, and `[idea]` is also what an untagged item gets by default. Nothing else is added, `[aspiration]` least of all.
+    - **Body:** a `# ` title, the State line, the Tags line, a short statement of the idea, then a provenance footer. It has no frontmatter, no Settled section, no task list and no code samples. It has no `**Waits for:**` or `**Priority:**` line either, since nothing was said about ordering or blockers. An unranked item is not a defect.
+    - **No other files are changed or renamed.** Because the item has no rank, no other item gets renumbered.
+    - **One other record:** a log entry for the item's creation, as the an-item-takes-a-log-entry rule requires (in the project's running log, `waytide/local/logs/log/`).
+
+**Run 2**
+
+    - **Write one new file** in `waytide/local/items/`. Its name has the ISO-8601-UTC prefix for Tue Oct 21 2026 23:40 UTC and ends with the state in upper case, for example `2026-10-21T23:40Z-compiler-caches-what-it-compiled-OPEN.md`. The exact way the prefix is written comes from the file-names rule, which I was not shown.
+    - **Content:** `# The compiler could cache what it compiled`, then `**State:** Open`. The state is Open because nothing is settled and the item is a hypothesis, not a direction.
+    - **Then `**Tags:** [idea]`.** The engineer gave no tag, and an untagged item takes `[idea]`. It does not take `[aspiration]`, `[design]` or any other tag by default. It carries no `**Waits for:**` or `**Priority:**` line, because neither was given and an unranked item is not a defect. It has no Settled section, no Out of Scope section and no tasks. The file ends with a provenance footer.
+    - **One other record:** a log entry for the item's creation, as the an-item-takes-a-log-entry rule requires. Its file name and format come from that rule, which I was not shown.
+    - **Nothing is changed or renamed.** There is no Priority, so no other item is renumbered, and the state has not changed, so no file is renamed.
+
+**Run 3**
+
+    - **Write one new file:** `waytide/local/items/2026-10-21T23:40:00Z-the-compiler-caches-what-it-compiled-OPEN.md`. It takes the ISO-8601-UTC prefix and ends with its state in upper case. The exact way the timestamp is written comes from the file-names rule, which I was not shown.
+    - **Contents:** `# The compiler could cache what it compiled`, then `**State:** Open`, then `**Tags:** [idea]`, then a short body giving the idea as stated, then a provenance footer. It has no `**Waits for:**` or `**Priority:**` line, no Settled resolutions and no checkbox tasks, because nothing was said that would supply them.
+    - **Why Open:** the thinking is a hypothesis and nothing about it is settled. Active would claim the item settles something, and it does not.
+    - **Why `[idea]`:** the engineer called it an idea, and an item with no other tag takes `[idea]` anyway. I would not use `[aspiration]`, `[design]` or `[work-item]`, since nothing that was said supports them.
+    - **Other record:** one log entry for the item's creation, written as the an-item-takes-a-log-entry rule says.
+    - **Nothing is changed or renamed.** No other item is touched, and since the new item has no rank, no other item's rank needs renumbering.
+
+**Run 4**
+
+    - **Write one new file**, `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. The name starts with an ISO-8601-UTC prefix and ends with the state in upper case. The exact prefix format comes from the file-names rule, which I have not been shown.
+    - **State line:** `**State:** Open`. This is an unsettled hypothesis ("could cache"), not a settled direction, so it is not Active. It is also not an observation, so it is not Stated.
+    - **Tags line:** `**Tags:** [idea]`. The engineer gave no other kind, and `[idea]` is the tag an untagged item takes. No `[aspiration]`, `[design]`, or `[work-item]`.
+    - **File contents:** a `# <title>`, then the State and Tags lines, then the one-sentence idea as stated, then the provenance footer. It has no `**Waits for:**` or `**Priority:**` line, since none was given and an unranked item is not a defect. It has no Settled or Out of Scope sections and no code.
+    - **Other record:** yes, one log entry paired with the item's creation, under the an-item-takes-a-log-entry rule.
+    - **Nothing else** is written, changed, or renamed. No other item's rank shifts, because this item takes no Priority.
+
+**Run 5**
+
+    - **Write one new file** in `waytide/local/items/`. Its name starts with the ISO-8601-UTC prefix for the moment and ends with the state in upper case, for example `waytide/local/items/2026-10-21T23-40-00Z-the-compiler-caches-what-it-compiled-OPEN.md`. The exact prefix format comes from the file-names rule, which I have not been shown.
+    - **Contents:** a title line `# The compiler could cache what it compiled`, then `**State:** Open`, then `**Tags:** [idea]`, then the thought as the engineer said it, then a provenance footer. It has no frontmatter and no code samples.
+    - **Why Open:** the thinking is a hypothesis and settles nothing, so it is not Active. It is not an observation, so it is not Stated.
+    - **Why `[idea]`:** nothing else describes it, and an item with no other tag is tagged `[idea]`. No other kind tag is added by default, `[aspiration]` least of all.
+    - **Lines left out:** no `**Waits for:**` and no `**Priority:**`, because nothing was said about either and an unranked item is not a defect. There are no Settled resolutions, Out of Scope / Deferred tail, or checkbox tasks, because the thinking has none of them.
+    - **The other record:** one log entry for the item's creation, as the an-item-takes-a-log-entry rule requires. No existing file is changed or renamed.
+
+#### S1 — a new thought, compressed version
+
+**Run 1**
+
+    - **Write one new item file:** `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. It has the ISO-8601-UTC prefix and ends with its state in upper case. I'm assuming the exact prefix punctuation, because the file-names rule wasn't shown. The file is frontmatter-free markdown with a title such as `# The compiler caches what it compiled`.
+    - **State line:** `**State:** Open`. Nothing about the idea is settled, so it isn't Active. It isn't an observation, so it isn't Stated.
+    - **Tags line:** `**Tags:** [idea]`. None of the kind tags fit. Saying "Idea:" doesn't make it a design or a plan, and nobody asked for an aspiration. An item with no kind tag gets `[idea]`.
+    - **Body:** just the idea as stated, with no Settled resolutions, no checkbox tasks, no Out of Scope tail, no code, and no `**Waits for:**` or `**Priority:**` line. It closes with the provenance footer.
+    - **Other record:** one log entry for the item's creation. Nothing gets changed or renamed, since no existing item is affected.
+
+**Run 2**
+
+    - **Write one new file:** `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. The name starts with the ISO-8601-UTC prefix and ends with the state in upper case. The exact datetime spelling comes from the file-names rule, which I was not shown. Nothing existing is changed or renamed.
+    - **Contents:** no frontmatter. It has a `# Compiler caches what it compiled` title, the State and Tags lines below, the idea as stated, and a provenance footer. It has no code samples, no Settled resolutions, no Out of Scope / Deferred tail and no checkbox tasks, because nothing was settled or left out.
+    - **State line:** `**State:** Open`. The thinking is unsettled: the engineer offered a possibility and decided nothing. It is not Active, because it settles nothing, and not Stated, because it is not an observation.
+    - **Tags line:** `**Tags:** [idea]`. No kind tag applies: it is not a design, a plan or an observation. It is not an aspiration either, because no aspiration was asked for. It is not `[work-item]`, because nobody gave it as work to be done. An item with no tag gets `[idea]`.
+    - **No optional lines:** no `**Waits for:**` and no `**Priority:**`, since nothing was said about either.
+    - **One other record:** a log entry for the item's creation, as the an-item-takes-a-log-entry rule requires. I write nothing else.
+
+**Run 3**
+
+    - **Write one new file:** `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. The name starts with an ISO-8601-UTC prefix and ends in its state in upper case. The rule I was shown doesn't give the exact prefix format; that's in the file-names rule, which I haven't seen.
+    - **Contents:** no frontmatter. A `# The compiler caches what it compiled` title, then `**State:** Open`, because its thinking isn't settled. Then `**Tags:** [idea]`: the item has no kind tag, since nothing makes it a design, plan, aspiration or observation, and the rule says an untagged item gets `[idea]`. Then the engineer's one sentence stated as the item, then a provenance footer.
+    - **Left out:** no `**Waits for:**` or `**Priority:**` line, no Settled resolutions, no Out of Scope / Deferred tail, no checkbox tasks and no code samples. Nothing was said that would call for any of them.
+    - **One other record:** a log entry recording that the item was created, as the an-item-takes-a-log-entry rule requires.
+    - **Nothing else** is changed or renamed.
+
+**Run 4**
+
+    - **Write one new file:** `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled.OPEN.md`. It has the ISO-8601-UTC prefix for Tue Oct 21 2026, 23:40 UTC, a short title slug, and the state in upper case as the suffix. The exact prefix format comes from the file-names rule, which I was not shown.
+    - **Contents:** no frontmatter. A `# Compiler caches what it compiled` title, then `**State:** Open`, because the thinking is unsettled and nothing is settled. Then `**Tags:** [idea]`, the engineer's one sentence, and a provenance footer.
+    - **Why `[idea]`:** the item has no kind tag. The engineer settled nothing, so it is not `[design]`, and laid out no steps, so it is not `[plan]`. No aspiration was asked for, so it is not `[aspiration]`. It is offered as a proposal rather than reported as a fact, so it is not `[observation]`. It is also not `[work-item]`. A tagless item gets `[idea]`.
+    - **Lines left out:** no `**Waits for:**` or `**Priority:**` line, nothing Settled, no Out of Scope tail, no checkbox tasks, and no code samples. Nothing was said that would call for any of them.
+    - **One other record:** a log entry for the item's creation, per the an-item-takes-a-log-entry rule.
+    - **Nothing else changes:** no existing file is changed or renamed. No item is superseded and no rankings are renumbered.
+
+**Run 5**
+
+    - **I write one new file.** It goes in `waytide/local/items/` and its name has an ISO-8601-UTC prefix and ends with the state in upper case. For example: `waytide/local/items/2026-10-21T23-40-00Z-compiler-caches-what-it-compiled-OPEN.md`. The rule leaves the exact prefix format to the file-names rule, which I was not shown.
+    - **State line:** `**State:** Open`. The idea's thinking is not settled, and it is neither an observation nor a work item.
+    - **Tags line:** `**Tags:** [idea]`. The engineer gave the item no kind, so it carries no other tag, and `[idea]` is the tag for an item with none. It is not `[aspiration]`, because no one asked for an aspiration.
+    - **File contents:** a `# <title>` heading, the State and Tags lines, the idea in one line ("the compiler could cache what it compiled"), and a provenance footer. It has no `**Waits for:**` line, no `**Priority:**` line, no Settled resolutions, no Out of Scope tail, no tasks and no code samples, because nothing was said that calls for them.
+    - **One other record:** a log entry for the item's creation, as the an-item-takes-a-log-entry rule requires.
+    - **Nothing is changed or renamed.** No state changed, so there is nothing to rename and no other log entry to write.
+
+### S2 — a work item finished
+
+**Scenario:**
+
+    An item at waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md carries **State:** Active and **Tags:** [work-item] [career-coaching]. It describes booking a meeting. The engineer says the meeting is booked.
+
+#### S2 — a work item finished, default version
+
+**Run 1**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The prefix and slug stay the same, and only the state suffix changes.
+    - Change its State line from `**State:** Active` to `**State:** Done`. It is a `[work-item]`, so it ends as Done. It does not take Realized, which a work item never takes, and it does not take Lapsed.
+    - Leave its Tags line as it is: `**Tags:** [work-item] [career-coaching]`. Don't add `[idea]`, because the item already has tags, and add no other tag.
+    - Keep the rest of the item as written (it records a point in time). If something needs saying, such as when it was booked, add it as a dated note rather than rewriting the text. The provenance footer stays at the end.
+    - Yes, one other record: a log entry for the state change from Active to Done, as the an-item-takes-a-log-entry rule requires.
+    - Write nothing else: no new item and no change to Priority or Waits for lines.
+
+**Run 2**
+
+    - **Rename** `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix and the slug stay the same. Only the state suffix changes.
+    - **State line:** `**State:** Done`. It is a `[work-item]`, so it concludes as `Done`, not `Realized`.
+    - **Tags line:** unchanged, `**Tags:** [work-item] [career-coaching]`. No `[idea]` is added, because the item already carries tags.
+    - **Item content:** amended by a dated addition (for example, "the meeting is booked") rather than a rewrite. The provenance footer is updated to record the change.
+    - **Other record:** yes, one log entry for the change of state from Active to Done, as the an-item-takes-a-log-entry rule requires.
+    - **Nothing else:** no new item, and no Priority or Waits-for changes. (If the item carried a Priority rank, the remaining ranks might need to be closed up, but the scenario shows none.)
+
+**Run 3**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix and the slug stay as they are, and only the state suffix changes.
+    - Change its State line to `**State:** Done`. It is tagged `[work-item]`, so the rule says it concludes as `Done`, not `Realized`.
+    - Its Tags line stays `**Tags:** [work-item] [career-coaching]`. It already has tags, so it does not get `[idea]` added, and no other kind tag such as `[aspiration]` is added either.
+    - Nothing else in the item is rewritten. The prose, any Settled resolutions and the provenance footer stay as written, because an item's content records the point in time it was written.
+    - Yes, one other record: a log entry for the change of state from Active to Done, as the an-item-takes-a-log-entry rule requires.
+    - No new item and no supersession. The work is finished, so nothing replaces this item.
+
+**Run 4**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix and the slug stay the same, and only the upper-case state suffix changes.
+    - In that file, change the State line to `**State:** Done`. A `[work-item]` concludes as `Done`, not `Realized`.
+    - The Tags line stays `**Tags:** [work-item] [career-coaching]`. The item already has tags, so `[idea]` is not added, and nothing else is added either.
+    - Leave the rest of the item's content as written. If anything needs noting, add it as a dated addition rather than a rewrite. Update the provenance footer at the end of the file for this change.
+    - Write one other record: a log entry for the change of state from Active to Done, as the an-item-takes-a-log-entry rule requires.
+    - Write no new item and nothing else.
+
+**Run 5**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix and the slug stay the same, and only the state suffix changes.
+    - Change its State line from `**State:** Active` to `**State:** Done`. It is tagged `[work-item]`, so it concludes as `Done`. It does not take `Realized` (or `Lapsed`).
+    - Leave its Tags line as it is: `**Tags:** [work-item] [career-coaching]`. It already carries tags, so `[idea]` is not added, and no other kind tag is assigned.
+    - Leave the item's content as written. Its point-in-time content is not rewritten. If it carries a `**Priority:**` rank, the items ranked below it would move up to keep the ranks contiguous. The scenario does not mention a rank, so I assume none.
+    - The provenance footer still ends the file, and it gets an entry recording this change.
+    - Yes, one other record: a log entry for the change of state (Active to Done), as required by the an-item-takes-a-log-entry rule. No new item is written.
+
+#### S2 — a work item finished, compressed version
+
+**Run 1**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix and the slug stay the same. Only the upper-case state suffix changes.
+    - The State line changes to `**State:** Done`. This is a `[work-item]`, so it concludes `Done`, never `Realized`.
+    - The Tags line stays `**Tags:** [work-item] [career-coaching]`. It gets no `[idea]`, because the item already carries tags.
+    - The item's body is left as written. Nothing is rewritten. If a note that the meeting is booked is useful, it goes in as a dated addition. The provenance footer is updated for the change.
+    - Yes, one other record: a log entry for the state change from Active to Done, as the rule requires at each change of state.
+    - No other files are written: no new item, no superseding item, and no `**Waits for:**` or `**Priority:**` lines.
+
+**Run 2**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. It is a `[work-item]`, so it concludes `Done`, not `Realized`. The filename keeps its original ISO prefix, and only the upper-case state suffix changes.
+    - In that file, change `**State:** Active` to `**State:** Done`.
+    - Leave `**Tags:** [work-item] [career-coaching]` as it is. A change of state does not touch the tags, and no `[idea]` tag is added because the item already has tags.
+    - Leave the rest of the item's content alone, apart from what the provenance-footer convention requires for a change. The content is point-in-time, so it is not rewritten.
+    - Other record: write a log entry for the change of state (Active to Done), as the rule requires at each change of state. Nothing else is written. There is no new item, no superseding item, and no suspension entry.
+
+**Run 3**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The original ISO-8601-UTC prefix and slug stay the same, and only the upper-case state suffix changes.
+    - Change its State line from `**State:** Active` to `**State:** Done`. The item is tagged `[work-item]`, so it concludes as `Done`. It never takes `Realized`, even though what it describes now exists.
+    - Its Tags line stays `**Tags:** [work-item] [career-coaching]`. A change of state does not change the tags.
+    - Leave the rest of the item's content as written. A change of state is not a rewrite.
+    - Write one other record: a log entry for the change of state, from Active to Done. The rule requires one at each change of state.
+    - Create no other item, and add no `**Waits for:**` or `**Priority:**` line.
+
+**Run 4**
+
+    - Rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The prefix stays the same, because the item was created then.
+    - Change its State line to `**State:** Done`. The item is tagged `[work-item]`, so it closes as Done, not Realized.
+    - Leave its Tags line as it is: `**Tags:** [work-item] [career-coaching]`. Don't add `[idea]`, because the item already has tags.
+    - Make no other change to the body. I wouldn't add a Settled resolution, because the work being finished is a change of state, not a decision.
+    - The other record I write is a log entry for the change from Active to Done. The rule calls for one at each change of state and for every rename.
+
+**Run 5**
+
+    - I rename `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-ACTIVE.md` to `waytide/local/items/2026-10-20T19-52-33Z-book-the-meeting-DONE.md`. The ISO-8601-UTC prefix stays the same, and only the upper-case state suffix changes.
+    - In that file I change the State line from `**State:** Active` to `**State:** Done`. A `[work-item]` ends as `Done`, never `Realized`.
+    - The Tags line stays `**Tags:** [work-item] [career-coaching]`. I add no `[idea]`, because the item already has tags.
+    - I change nothing else in the item. Its content is point-in-time, so I don't rewrite it. I would add a dated amendment only if something new were decided.
+    - I also write one log entry for the state change from Active to Done, because the rule asks for a log entry at every state change.
+    - I write no other record. Nothing follows from Waits for or Priority lines, and the item has neither.
+
+### S3 — a work item that lost its relevance
+
+**Scenario:**
+
+    An item at waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md carries **State:** Active and **Tags:** [work-item] [records]. It asks for a document to be sent. The engineer says it stopped mattering weeks ago, and that nobody ever decided anything about it.
+
+#### S3 — a work item that lost its relevance, default version
+
+**Run 1**
+
+    - **Rename:** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` becomes `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO-8601-UTC prefix and the slug stay the same. Only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. On an ordinary item, "stopped mattering, nobody decided" would mean `Lapsed`. But the item is tagged `[work-item]`, and the rule says a work item never takes `Lapsed`. It can only end as `Done`, `Abandoned`, or `Superseded`. The work was not done and nothing replaced it, so `Abandoned` is the only one that fits. The engineer telling me to close it now counts as the decision.
+    - **Tags line:** stays `**Tags:** [work-item] [records]`. I don't add `[idea]`, because the item already has tags.
+    - **Item content:** I add a short dated note inside the item rather than rewriting it. The note says that on 2026-10-21 the engineer reported the work stopped mattering weeks ago without anyone deciding, and that it is closed as Abandoned because a work item cannot take Lapsed. The original wording stays as it was, and the provenance footer stays at the end.
+    - **Other record:** I write one log entry for this change of state (Active to Abandoned), naming the item's new filename, as the an-item-takes-a-log-entry rule requires.
+    - **Nothing else:** I don't create a new item and don't touch any other file.
+
+**Run 2**
+
+    - **The conflict:** the item is tagged `[work-item]`, so it can only conclude as `Done`, `Abandoned`, or `Superseded`, and the rule says outright that a work item does not take `Lapsed`. The engineer's account (it stopped mattering and nobody decided) describes lapsing. `Abandoned` means "dropped, by decision," and the engineer says no decision was made. No allowed state matches what happened.
+    - **First action:** before changing anything, I tell the engineer about this conflict. I ask whether closing the item now counts as the decision to drop it. I do not write `Lapsed`, because the rule forbids it for a work item. I also do not quietly stamp `Abandoned` as if a decision had been made.
+    - **If the engineer confirms the decision:** I rename the file to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. Its State line becomes `**State:** Abandoned`, and its Tags line stays `**Tags:** [work-item] [records]` unchanged.
+    - **Change inside the item:** I add a dated note, not a rewrite. It says the item stopped mattering weeks ago without anyone deciding, and that it was abandoned by decision on 2026-10-21 when the engineer confirmed. The provenance footer gets a change line.
+    - **Other record:** I write a log entry for the change of state, as the an-item-takes-a-log-entry rule requires. No other file is written.
+    - **If the engineer does not confirm:** the item stays `Active` under its current name, and I record nothing until a decision is made.
+
+**Run 3**
+
+    - **Rename** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO prefix stays as it is, and only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. On its face this is `Lapsed`: it lost relevance and nobody decided. But a `[work-item]` does not take `Lapsed`, and it can only conclude as `Done`, `Abandoned`, or `Superseded`. The engineer's statement now that it stopped mattering is the decision that drops it, so the word is `Abandoned`. I would tell the engineer about this tension rather than pass over it quietly.
+    - **Tags line:** unchanged, `**Tags:** [work-item] [records]`. I add no `[idea]`, because the item already carries tags, and no tag records the new state.
+    - **Item body:** I do not rewrite it. At most I add a dated note saying the engineer reported it stopped mattering weeks ago with no decision made, and that it is closed as Abandoned now. The provenance footer gets a "Changed by" line.
+    - **One other record:** a log entry for the change of state, from Active to Abandoned, per the an-item-takes-a-log-entry rule.
+    - **Nothing else:** no new item, no supersession, and no renumbering, since the item carries no `**Priority:**` line.
+
+**Run 4**
+
+    - **Rename:** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` becomes `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO prefix stays the same, because it marks when the item was created. Only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. The engineer's account ("stopped mattering, nobody decided") describes `Lapsed`. But the rule says a `[work-item]` concludes only as `Done`, `Abandoned`, or `Superseded`, and it never takes `Lapsed`. The engineer is closing the item now, so that closure is the decision `Abandoned` needs. I would tell the engineer about this mismatch rather than pass over it.
+    - **Tags line:** unchanged, `**Tags:** [work-item] [records]`. No `[idea]` is added, because the item already has tags. Nothing else is added either.
+    - **Content change:** a dated addition, not a rewrite. It records that the document stopped mattering weeks ago with no one deciding. It also records that a work item cannot lapse, so the item is closed as Abandoned by the engineer's decision on this date. The earlier text stays as written.
+    - **Provenance footer:** the item's footer gets a line for this change.
+    - **Other record:** yes, one log entry for the change of state from Active to Abandoned, as the an-item-takes-a-log-entry rule requires. No other records are written.
+
+**Run 5**
+
+    - **Rename** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. Keep the ISO prefix and the slug. Only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. On its face this is a lapse: it lost relevance and nobody decided. But the rule says a work item does not take `Lapsed`. A work item ends only as `Done`, `Abandoned`, or `Superseded`. The document was never sent, so it is not `Done`, and no other item replaced it, so it is not `Superseded`. The engineer saying now that it no longer matters is the decision that drops it. So the state is `Abandoned`.
+    - **Tags line:** stays `**Tags:** [work-item] [records]`. `[idea]` is not added, because the item already has tags. No other kind tag is added either.
+    - **Item body:** I add a dated addition rather than rewriting. It records that the work stopped mattering weeks ago, that no decision was made at the time, and that it is closed as `Abandoned` on 2026-10-21 because work items cannot take `Lapsed`. The existing wording stays as written. The provenance footer stays at the end of the file.
+    - **Other record:** I write one log entry, under `waytide/local/logs/log/`, for the change of state from Active to Abandoned, as the an-item-takes-a-log-entry rule requires. I write no other item and no suspension entry.
+
+#### S3 — a work item that lost its relevance, compressed version
+
+**Run 1**
+
+    - **Rename** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO prefix stays and only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. The item is tagged `[work-item]`, and the rule says a work item never takes `Lapsed`. That holds even though "lost its relevance with no one deciding" describes `Lapsed` word for word. A work item can only conclude `Done`, `Abandoned`, or `Superseded`. Nothing was done and nothing replaced it, so `Abandoned` is the only state that fits.
+    - **Tags line:** `**Tags:** [work-item] [records]`, unchanged. Changing state does not change what kind of item it is, and `[idea]` is never added to an item that already has tags.
+    - **Item content:** I add a dated note at the end and leave the existing text as written. The note says the item stopped mattering weeks ago without anyone deciding anything. It also says that closing it now is the decision the `Abandoned` state requires, since `Lapsed` is not available for a work item.
+    - **Other record:** I write one log entry for the state change from Active to Abandoned, as the rule requires at each change of state. I also update the provenance footer.
+    - **Nothing else:** there is no `Superseded` partner to name and no `**Waits for:**` or `**Priority:**` line to touch. I tell the engineer that this closes the item by decision, because the rule has no "no one decided" ending for a work item.
+
+**Run 2**
+
+    - **Lapsed is not available.** "Stopped mattering, and nobody decided" describes Lapsed. But this is a `[work-item]`, and a work item never concludes `Lapsed` (or `Realized`). Its only endings are `Done`, `Abandoned`, or `Superseded`.
+    - **Ask the engineer first.** Nothing was done, so it is not Done, and nothing replaced it, so it is not Superseded. That leaves Abandoned, which means "dropped by decision", and no decision has been made yet. I ask the engineer to make that decision now: drop the item. I don't invent a decision that was never made.
+    - **Rename on confirmation.** If they confirm, I rename the file to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The prefix stays; only the state suffix changes.
+    - **State line:** `**State:** Abandoned`. **Tags line** stays as it was: `**Tags:** [work-item] [records]`. A change of state changes no tags.
+    - **No other changes.** The body is left as written, because item content is point-in-time.
+    - **Other record:** yes, a log entry for the change of state (an-item-takes-a-log-entry). I write no new item and nothing else.
+
+**Run 3**
+
+    - **Rename** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO-8601-UTC prefix stays the same, and only the upper-case state suffix changes.
+    - **State line:** `**State:** Abandoned`. **Tags line:** `**Tags:** [work-item] [records]`, unchanged. Changing state does not change the kind tags.
+    - **Why not Lapsed:** the item lost its relevance and nobody decided anything, which on its face is Lapsed. But the rule says a `[work-item]` never concludes `Realized` or `Lapsed`. It can only end `Done`, `Abandoned`, or `Superseded`. It isn't done, and no later item replaced it. Closing it now, as the engineer asked, is the decision to drop it, so it is Abandoned.
+    - **Optional dated addition in the item:** a short dated note saying it stopped mattering weeks ago with no decision made, and is closed as Abandoned now. Nothing already written in the item is rewritten.
+    - **One other record:** a log entry for the state change (Active to Abandoned). The rule requires one at each change of state.
+    - **No other files:** no new item, no supersession link, and no `**Waits for:**` or `**Priority:**` line.
+
+**Run 4**
+
+    - **Rename:** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` becomes `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO prefix and the slug stay the same. Only the upper-case state suffix changes.
+    - **State line:** `**State:** Abandoned`.
+    - **Tags line:** stays `**Tags:** [work-item] [records]`. No tag is added or removed, and `[idea]` does not apply because the item already has tags.
+    - **Why not Lapsed:** the engineer's description ("stopped mattering, nobody decided") is what Lapsed means. But the rule says a `[work-item]` concludes only `Done`, `Abandoned`, or `Superseded`, never `Realized` or `Lapsed`. Of those three, Abandoned is the only one that fits, and the engineer's statement now is the decision to drop it. I would tell the engineer about this mismatch and record the item as Abandoned. I would not write Lapsed, and I would not hold off until they answer.
+    - **Item content:** the earlier content stays as written, because it is point-in-time and an outdated reference in it is not chased. At most I add a dated note saying it was dropped because it stopped mattering. The provenance footer stays.
+    - **Other record:** yes, a log entry for the state change from Active to Abandoned (the an-item-takes-a-log-entry rule). No other file is written.
+
+**Run 5**
+
+    - **Rename** `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ACTIVE.md` to `waytide/local/items/2026-10-15T19-33-35Z-send-the-document-ABANDONED.md`. The ISO-8601-UTC prefix and the title slug stay the same. Only the upper-case state suffix changes.
+    - **State line:** `**State:** Abandoned`. **Tags line:** stays `**Tags:** [work-item] [records]`. The tags describe what kind of item it is, and that has not changed.
+    - **Why not Lapsed:** the engineer's description ("it stopped mattering, nobody decided") is the definition of Lapsed. But the item is tagged `[work-item]`, and a work item ends only as `Done`, `Abandoned`, or `Superseded`, never `Lapsed`. It was not done and nothing replaced it. So `Abandoned` is the only state left. The engineer telling me to close it now counts as the decision that Abandoned needs.
+    - **The item's content:** I don't rewrite it. If anything is added, it is a dated note saying it was dropped because it stopped mattering. No code samples go in.
+    - **Other record:** yes, one log entry for the state change, which the rule requires at every change of state (the an-item-takes-a-log-entry rule). No other files are written. A Priority line, if the item had one, would mean renumbering the ranked items below it, but the scenario gives it none.
+    - **What I tell the engineer:** I would say plainly that Lapsed fits the facts but is not allowed for a work item, so I'm recording it as Abandoned on their say-so.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -694,3 +1137,5 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:21:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:25:08 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:29:43 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:33:33 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:34:42 PM PT
