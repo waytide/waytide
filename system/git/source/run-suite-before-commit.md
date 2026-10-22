@@ -8,6 +8,16 @@ After making any code change, run the full test suite and confirm it passes **be
 
 **How to apply:** Edit → run the full suite → confirm it reports nothing failed → only then consider committing. If anything is failing or aborted, fix it (or stop) before the commit question arises. For a single-file change you may run the one file first for speed, but run the full suite before commit.
 
+## Compressed
+
+**Run the full suite after any code change.** Confirm it passes **before** considering whether to commit. The suite run is a precondition of the commit decision. It is not a step taken after deciding to commit. A failing or incomplete suite means there is nothing to weigh. Do not reach the question of committing until the suite passes.
+
+**How the suite is run is the project's stack's concern, not this rule's.** The command and its passing output differ by language and test framework. They are settled where a stack is settled. For a Ruby project that is the `ext/ruby-lang` package's rule on running the suite. This rule fixes only *when* the run happens relative to the commit decision. That holds for any stack.
+
+**How to apply:** Edit → run the full suite → confirm it reports nothing failed → only then consider committing. If anything is failing or aborted, fix it, or stop, before the commit question arises. For a single-file change you may run that one file first for speed. Run the full suite before commit anyway.
+
+**Why:** Committing is the point of no easy return. Running the suite before deliberating keeps a failing change from becoming a commit candidate. It keeps every commit in the history verified. The commit waits on the bar, not on the human's attention.
+
 Related:
 
 - the human-in-the-loop TDD rule
@@ -26,3 +36,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:38 PM PT
