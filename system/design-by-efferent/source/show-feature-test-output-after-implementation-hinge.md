@@ -12,6 +12,12 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 **How to apply:** write an accepted implementation and run the suite. Then run the current feature's test files with verbose output. Include that output in the turn that reports the implementation. The engineer then judges solubility on what is shown. The what-each-hinge-displays rule shows the implementation and the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
 
+## Compressed
+
+**After each implementation hinge, show the whole feature's test output, unasked.** Once the accepted implementation is written and the suite has run, run every test file of the current feature — every outcome built so far for the unit, not only the new one — with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show. Put the output in the turn that reports the implementation. The what-each-hinge-displays rule shows the implementation and the new outcome's test, and this rule adds the feature's full output.
+
+**Why:** solubility is judged at this hinge, against behavior, and the new outcome is judged among the outcomes already established rather than alone.
+
 Related:
 
 - the hinge-cycle rule
@@ -29,3 +35,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:27:37 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:38:48 PM PT

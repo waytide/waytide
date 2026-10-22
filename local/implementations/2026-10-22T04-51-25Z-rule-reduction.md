@@ -60,6 +60,11 @@ Committed before the work. Each item carries the agent's confidence.
 | Participation | Attended | Wed Oct 21 2026 at 9:51:25 PM PT |
 | Phase 1 started | flattening | Wed Oct 21 2026 at 9:56:47 PM PT |
 | Phase 1 method | One rule at a time, on a subject set the engineer specifies | Wed Oct 21 2026 at 9:58:18 PM PT |
+| Compressed text — actuation | `./compile.sh --compressed` | Wed Oct 21 2026 at 11:11:49 PM PT |
+| Compressed text — observation | Each compiled rule, whole, against its expected text | Wed Oct 21 2026 at 11:11:49 PM PT |
+| Compressed text — controls | Two literal control rules | Wed Oct 21 2026 at 11:11:49 PM PT |
+| Compressed text — implementation | Written directly | Wed Oct 21 2026 at 11:11:49 PM PT |
+| Compressed text — naming | Compiles the compressed text when switched; Removes the History and Compressed sections | Wed Oct 21 2026 at 11:11:49 PM PT |
 
 ## What actually happened
 
@@ -205,6 +210,19 @@ Numbered across the three, as shown to the engineer. Size is characters before t
 | 14 | implementation-lifecycle | 13,855 | 6 of 106 | 0.42 | 21 |
 | 15 | announce-waytide-at-session-start | 27,994 | 10 of 106 | 0.48 | 24 |
 
+### #2 is compressed, and the compiler can compile the compressed text — 2026-10-21
+
+**#2, show-feature-test-output-after-implementation-hinge, is compressed**, at the engineer's direction, and the compressed version is appended to its source in a `## Compressed` section before `Related:`. Against the rule's body — its prose without the title, the attribute lines, `Related:`, and the footer — it measures:
+
+- **compression 0.54**: 1,551 characters to 707
+- **change 0.78**: of 233 words, 52 stay in place, and the rest are removed or reworded
+
+Every directive is kept, and the reasons are kept in two. What went is restatement: the original says several things twice.
+
+**The compiler compiles the uncompressed text by default, and the compressed text when switched**, at the engineer's direction. `./compile.sh` leaves a Compressed section out, as it does a History section. `./compile.sh --compressed` compiles a rule that has one to its title, the compressed text, and its `Related:` list, and a rule with none as it does by default. Compressed, #2 compiles to 924 characters, against about 1,850. Across every other rule the new default compile is identical to the old one.
+
+**Through the hinges.** Actuation: `(cd "$repository" && ./compile.sh --compressed)`, a flag. Observation: each compiled rule, whole, against its expected text. Controls: two literal rules, one with Compressed and History sections and an attribute line, one with neither, each with its expected text written in the test. Implementation: written directly. Naming, the engineer's wording: *Compiles the compressed text when switched*, and the widened default outcome *Removes the History and Compressed sections*.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -226,3 +244,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:30:09 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:31:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:35:14 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:11:49 PM PT

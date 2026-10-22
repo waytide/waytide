@@ -3,29 +3,81 @@
 #
 # Run from the repository root:
 #
-#   ./compile.sh
+#   ./compile.sh                 compile each rule's uncompressed text
+#   ./compile.sh --compressed    compile each rule's compressed text, where it has one
 #
 # A source rule is the authority and the only copy edited. Its compiled rule sits at the
-# package root under the same name, and is regenerated, never edited. The compiled rule
-# leaves out the rule's History section, from its "## History" line to the "Related:" line
-# or the footer, and the provenance footer: the --- divider and the Authored by and Changed by
-# lines below it.
+# package root under the same name, and is regenerated, never edited. By default the compiled
+# rule is the source rule without its Compressed section, its History section, and its
+# provenance footer: the --- divider and the Authored by and Changed by lines below it. Each
+# section runs from its "## Compressed" or "## History" line to the next of the two, the
+# "Related:" line, or the footer.
+#
+# Told --compressed, a rule that has a Compressed section compiles to its title, the compressed
+# text, and its Related list. A rule that has none compiles as it does by default.
 set -e
+
+compressed=0
+[ "$1" = "--compressed" ] && compressed=1
 
 for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
   compiled_rule=$(printf '%s' "$source_rule" | sed 's|/source/|/|')
   mkdir -p "$(dirname "$compiled_rule")"
 
-  awk '
-    /^## History$/ { history = 1 }
-    history && /^(Related:|---$)/ { history = 0 }
-    !history { line[++count] = $0 }
+  awk -v compressed="$compressed" '
+    function add(text) { out[++count] = text }
+
+    # The lines of one part, without its heading and the blank lines at its start and end.
+    function add_part(name, skip_heading,    i, first, last) {
+      first = 0
+      for (i = 1; i < footer; i++) {
+        if (kind[i] != name) continue
+        if (skip_heading && line[i] ~ /^## /) continue
+        if (!first && line[i] == "") continue
+        if (!first) first = i
+        last = i
+      }
+      if (!first) return
+      while (last > first && line[last] == "") last--
+      if (count > 0) add("")
+      for (i = first; i <= last; i++) {
+        if (kind[i] != name) continue
+        if (skip_heading && line[i] ~ /^## /) continue
+        add(line[i])
+      }
+    }
+
+    { line[NR] = $0 }
+
     END {
-      end = count
-      while (end > 0 && line[end] ~ /^((Authored|Changed) by .*)?$/) end--
-      if (end > 0 && line[end] == "---") end--
-      while (end > 0 && line[end] == "") end--
-      for (i = 1; i <= end; i++) print line[i]
+      # The footer: the --- divider and the Authored by and Changed by lines below it.
+      footer = NR + 1
+      for (i = NR; i > 0 && line[i] ~ /^((Authored|Changed) by .*)?$/; i--) footer = i
+      if (i > 0 && line[i] == "---") footer = i
+
+      # Each line before the footer is the title, the body, a Compressed or History section,
+      # or the Related list.
+      part = "title"
+      for (i = 1; i < footer; i++) {
+        if (i > 1 && part == "title") part = "body"
+        if (line[i] == "## Compressed") { part = "compressed"; has_compressed = 1 }
+        else if (line[i] == "## History") part = "history"
+        else if (line[i] ~ /^Related:/) part = "related"
+        kind[i] = part
+      }
+
+      count = 0
+      if (compressed && has_compressed) {
+        add(line[1])
+        add_part("compressed", 1)
+        add_part("related", 0)
+      } else {
+        for (i = 1; i < footer; i++)
+          if (kind[i] == "title" || kind[i] == "body" || kind[i] == "related") add(line[i])
+      }
+
+      while (count > 0 && out[count] == "") count--
+      for (i = 1; i <= count; i++) print out[i]
     }
   ' "$source_rule" > "$compiled_rule"
 done

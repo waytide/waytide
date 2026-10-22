@@ -44,7 +44,7 @@ for source_rule in $source_rules; do
   [ -f "$compiled_rule" ] || fail "Is its source rule without the footer" "no compiled rule for:" "$name"
 
   # The source rule as it reads with its History section left out, which the other outcome reads.
-  source_without_history=$(awk '/^## History$/ { history = 1 } /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
+  source_without_history=$(awk '/^## (History|Compressed)$/ { history = 1 } /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
 
   compiled_length=$(wc -l < "$compiled_rule")
   removed=$(printf '%s\n' "$source_without_history" | tail -n +$((compiled_length + 1)))
@@ -54,18 +54,108 @@ for source_rule in $source_rules; do
   ! printf '%s\n' "$removed" | grep -v -q -E '^(---|Authored by .*|Changed by .*)?$' || fail "Is its source rule without the footer" "more than the footer removed:" "$name" "removed:" "$removed"
 done
 
-# Removes only the History section -------------------------------------------
+# Removes the History and Compressed sections -------------------------------
 
 for source_rule in $source_rules; do
   compiled_rule=$(printf '%s' "$source_rule" | sed 's|/source/|/|')
   name=${source_rule#"$repository"/}
 
-  ! grep -q -x '## History' "$compiled_rule" || fail "Removes only the History section" "History section not removed:" "$name"
+  ! grep -q -x -E '## (History|Compressed)' "$compiled_rule" || fail "Removes the History and Compressed sections" "History section not removed:" "$name"
 
-  history=$(awk '/^## History$/ { history = 1 } /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
+  history=$(awk '/^## (History|Compressed)$/ { history = 1 } /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
   outside=$(diff "$source_rule" "$compiled_rule" | sed -n 's/^< //p' | grep -v '^$' | grep -v -E '^(---|Authored by .*|Changed by .*)$' | grep -v -x -F -e "$history" || true)
 
-  [ -z "$outside" ] || fail "Removes only the History section" "removed outside the History section:" "$name" "$outside"
+  [ -z "$outside" ] || fail "Removes the History and Compressed sections" "removed outside the History section:" "$name" "$outside"
 done
+
+# Controls — the compressed text -------------------------------------------
+
+# Two literal rules, each read from a function rather than a heredoc inside $(…): macOS /bin/sh
+# joins a line ending in a backslash to the next one there.
+control_compressed_rule_text() {
+  cat <<'RULE'
+# Some rule
+
+- **Solubility:** 50
+
+Some body.
+
+## Compressed
+
+Some compressed text.
+
+## History
+
+Some history.
+
+Related:
+
+- some rule
+
+---
+
+Authored by Some One on Mon Jan 1 2026 at 1:00:00 PM PT
+RULE
+}
+
+control_compressed_expected_text() {
+  cat <<'RULE'
+# Some rule
+
+Some compressed text.
+
+Related:
+
+- some rule
+RULE
+}
+
+control_uncompressed_rule_text() {
+  cat <<'RULE'
+# Some other rule
+
+Some other body.
+
+Related:
+
+- some rule
+
+---
+
+Authored by Some One on Mon Jan 1 2026 at 1:00:00 PM PT
+RULE
+}
+
+control_uncompressed_expected_text() {
+  cat <<'RULE'
+# Some other rule
+
+Some other body.
+
+Related:
+
+- some rule
+RULE
+}
+
+compressed_repository=$(mktemp -d)
+trap 'rm -rf "$repository" "$compressed_repository"' EXIT
+
+mkdir -p "$compressed_repository/system/some-package/source"
+control_compressed_rule_text > "$compressed_repository/system/some-package/source/some-rule.md"
+control_uncompressed_rule_text > "$compressed_repository/system/some-package/source/some-other-rule.md"
+cp compile.sh "$compressed_repository/"
+
+# Actuation — the compressed text -------------------------------------------
+
+(cd "$compressed_repository" && ./compile.sh --compressed)
+
+# Compiles the compressed text when switched --------------------------------
+
+compressed_rule=$(cat "$compressed_repository/system/some-package/some-rule.md")
+uncompressed_rule=$(cat "$compressed_repository/system/some-package/some-other-rule.md")
+
+[ "$compressed_rule" = "$(control_compressed_expected_text)" ] || fail "Compiles the compressed text when switched" "found:" "$compressed_rule"
+[ "$uncompressed_rule" = "$(control_uncompressed_expected_text)" ] || fail "Compiles the compressed text when switched" "found:" "$uncompressed_rule"
 
 echo "0 failed, 0 aborted"
