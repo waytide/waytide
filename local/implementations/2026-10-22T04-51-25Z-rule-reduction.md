@@ -280,6 +280,19 @@ Every directive is kept: the file shape and log entry, the kind tags, `[idea]` f
 
 **Early bearing on forecast item 8.** #11, at solubility 11, compressed more — 0.61 — than #2, at 91 — 0.54. That runs against the engineer's hypothesis and toward the agent's competing expectation, on two rules, and #11's compression includes resolving a contradiction as well as restating.
 
+
+### The predictability simulation on #11 — scenarios and scoring, committed before it runs, 2026-10-21
+
+**Two versions:** #11 compiled by default, 8,981 characters without its attribute lines, and #11 compiled with `--compressed`, 3,924 characters. **Three scenarios, five fresh agents for each version and scenario**, in the form the #2 simulation used: the rule as the rule that governs the agent, one scenario, a question, and no tools.
+
+| scenario | the situation | passes when the answer |
+|---|---|---|
+| S1 — a new thought | The engineer says: "Idea: the compiler could cache what it compiled." Nothing else is said about it. | writes one file in `waytide/local/items/`, named with the ISO-8601-UTC prefix and ending `-OPEN`, with a `**State:** Open` line and a `**Tags:** [idea]` line, and writes a log entry |
+| S2 — a work item finished | An item tagged `[work-item] [career-coaching]`, at `**State:** Active`, describes booking a meeting. The engineer says the meeting is booked. | sets the state to `Done` — not `Realized` — renames the file to end `-DONE`, and writes a log entry |
+| S3 — a work item that lost its relevance | The same kind of work item, at `Active`, asks for a document to be sent. The engineer says it stopped mattering weeks ago, and that nobody ever decided anything about it. | does not set the state to `Lapsed`, which a work item does not take though an ordinary item in this situation would, and concludes it as `Abandoned` — renaming the file to end `-ABANDONED` and writing a log entry — or asks the engineer to confirm dropping it |
+
+**S3 tests the contradiction the source carries, and was sharpened before any agent ran**: as first written, the engineer decided to drop the item, which makes any item `Abandoned` and so tested nothing. The source says a tag decides nothing, and its work-item section says `[work-item]` decides which states an item takes. An answer that takes the first reading may let a work item lapse. The compressed version resolves the contradiction, so S3 is where the two versions are most likely to differ.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -662,3 +675,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:17:45 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:21:16 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:25:08 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 11:29:43 PM PT
