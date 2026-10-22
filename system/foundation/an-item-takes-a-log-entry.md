@@ -1,6 +1,7 @@
 # An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
 
-**Solubility:** 3
+- **Solubility:** 3
+- **Original rank:** 2 of 106
 
 An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`. The entry is written at three moments, and at no others.
 

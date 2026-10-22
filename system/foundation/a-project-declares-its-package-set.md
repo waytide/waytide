@@ -1,6 +1,7 @@
 # A project declares which of its installed packages are active
 
-**Solubility:** 4
+- **Solubility:** 4
+- **Original rank:** 5 of 106
 
 **A project may declare a package set, and the packages outside it are deactivated.** The declaration is a record at `waytide/local/`, named for the moment it was made and for what it names: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`. Where more than one name is declared, the file name hyphen-joins them.
 

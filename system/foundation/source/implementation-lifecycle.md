@@ -1,6 +1,7 @@
 # An implementation runs on a branch, from a working location chosen at the start, to a declared end
 
-**Solubility:** 5
+- **Solubility:** 5
+- **Original rank:** 6 of 106
 
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
@@ -116,3 +117,4 @@ Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:20 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:50:42 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT

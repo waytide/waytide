@@ -1,6 +1,7 @@
 # The harness announces Waytide's installation. The agent never prints the notice
 
-**Solubility:** 2
+- **Solubility:** 2
+- **Original rank:** 10 of 106
 
 A project running Waytide announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
 

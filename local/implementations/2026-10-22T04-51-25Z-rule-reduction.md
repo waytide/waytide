@@ -69,7 +69,7 @@ Committed before the work. Each item carries the agent's confidence.
 
 ### Candidates for the subject set — 2026-10-21
 
-**The engineer asked which rules combine significant volume with a lack of clarity.** All 108 compiled rules were ranked by size and by six measures of how hard a rule is to follow: average sentence length, the share of sentences over 25 words — STE's limit for descriptive text — past-tense and history words, dashes used as asides, citations of other rules, and negations. The median rule is 3,500 characters at 17 words a sentence. The top candidates were then read.
+**The engineer asked which rules combine significant volume with a lack of clarity.** All 106 compiled rules were ranked by size and by six measures of how hard a rule is to follow: average sentence length, the share of sentences over 25 words — STE's limit for descriptive text — past-tense and history words, dashes used as asides, citations of other rules, and negations. The median rule is 3,500 characters at 17 words a sentence. The top candidates were then read.
 
 | rule | characters | what makes it hard to follow |
 |---|---|---|
@@ -83,6 +83,8 @@ Committed before the work. Each item carries the agent's confidence.
 
 **Each candidate carries a `**Solubility:**` attribute**, at the engineer's direction: the inverse of its rank in the table above, so the least soluble is 1. items-convention is 1, announce-waytide-at-session-start 2, an-item-takes-a-log-entry 3, a-project-declares-its-package-set 4, and implementation-lifecycle 5. The line sits under each source rule's title, and the compiler carries it into the compiled rule.
 
+**Each candidate also carries its `**Original rank:**`**, its position in the measured ranking of all 106 rules before the candidates were read: items-convention 1, an-item-takes-a-log-entry 2, a-project-declares-its-package-set 5, implementation-lifecycle 6, and announce-waytide-at-session-start 10. Reading moved announce-waytide-at-session-start up the candidate list for its size, which is why the two orders differ. The agent first gave the count as 108; it is 106, two rules having left `foundation` in the obsolete-rules experiment.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
@@ -90,3 +92,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:56:47 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:58:18 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:00:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:03:13 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 10:04:38 PM PT

@@ -1,6 +1,7 @@
 # `waytide/local/items/` — the project's items, one file per item
 
-**Solubility:** 1
+- **Solubility:** 1
+- **Original rank:** 1 of 106
 
 `waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
 
