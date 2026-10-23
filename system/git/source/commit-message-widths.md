@@ -18,7 +18,7 @@
 
 **A journal entry is the one record where neither remedy is available**, and it truncates instead. An entry is one commit, so there is nothing to split, and its subject is the writer's words, which the `journal` package bars the agent from shortening. Its commit subject is cut at the 50th character with an ellipsis, which marks the cut rather than hiding it. See that package's journal-convention.
 
-**Truncation is not a general escape.** It is available where the subject is not the agent's to rewrite. Everywhere else a subject that will not fit is a commit to split.
+**Truncation is not a general escape.** It is available for a journal entry alone. Everywhere else a subject that will not fit is a commit to split.
 
 ## What still governs the subject
 
@@ -38,6 +38,10 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 **How to apply:** write a subject of at most 50 characters and wrap the body at 72. Where the subject will not fit, split the commit first and move detail to the body second. Do not abbreviate into shorthand, and do not revise a commit message already written.
 
+## History
+
+Until 2026-10-23 the rule made truncation available wherever the subject was not the agent's to rewrite, which could reach beyond a journal entry.
+
 Related:
 
 - the subject-first-commit-messages rule — what the subject says, which this constrains the width of
@@ -51,3 +55,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:18:34 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:29:06 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 3:56:43 PM PT
