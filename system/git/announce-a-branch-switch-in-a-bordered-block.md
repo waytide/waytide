@@ -29,7 +29,7 @@ BRANCH SWITCHED
 
 **The failure this answers is a silent switch.** The agent switches, works, and reports the work. The report is accurate and says nothing about where the work went. The engineer finds out when a file is missing from the branch they expected it on.
 
-**The border is the requirement, not the decoration.** Ordinary output scrolls. A bordered block does not read as another line of a report. Any unmissable form satisfies this rule. `=` characters above and below are the settled one.
+**The border is the requirement, not the decoration.** Ordinary output scrolls. A bordered block does not read as another line of a report. Only `=` characters above and below satisfy this rule.
 
 ## What this does not cover
 
@@ -39,7 +39,7 @@ BRANCH SWITCHED
 
 **Why:** an agent reports what it did, and not where it stood. So a branch switch is the one operation whose effect is invisible in every later report. The engineer's own record of this session is the case. The agent switched to a parent experiment branch to edit a file, and stayed there after committing. The next instruction was read against a branch neither party had named. A block that cannot be scrolled past removes the class of error rather than one instance of it.
 
-**How to apply:** print the block on every branch switch, before reporting anything else about the work. Fill all three fields. Keep the reason to what the switch was for, not what the work is. Print no block for a worktree, a merge, or a commit.
+**How to apply:** print the block on every branch switch, before reporting anything else about the work. Fill all three fields. Keep the reason to what the switch was for, not what the work is. Print no block for a worktree, a merge, a commit, or a push.
 
 Related:
 
