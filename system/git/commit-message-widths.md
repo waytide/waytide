@@ -18,7 +18,7 @@
 
 **A journal entry is the one record where neither remedy is available**, and it truncates instead. An entry is one commit, so there is nothing to split, and its subject is the writer's words, which the `journal` package bars the agent from shortening. Its commit subject is cut at the 50th character with an ellipsis, which marks the cut rather than hiding it. See that package's journal-convention.
 
-**Truncation is not a general escape.** It is available where the subject is not the agent's to rewrite. Everywhere else a subject that will not fit is a commit to split.
+**Truncation is not a general escape.** It is available for a journal entry alone. Everywhere else a subject that will not fit is a commit to split.
 
 ## What still governs the subject
 
