@@ -72,7 +72,7 @@ BRANCH SWITCHED
 
 **Fill all three fields.** The reason states what the switch was for, not what the work is.
 
-**The border is the requirement, not decoration.** Any unmissable form satisfies this rule. `=` characters above and below are the settled form.
+**The border is the requirement, not decoration.** Only `=` characters above and below satisfy this rule.
 
 ## What this does not cover
 
@@ -96,3 +96,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:14 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:12:54 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 2:13:21 PM PT
