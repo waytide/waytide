@@ -12,6 +12,21 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 
 **How to apply:** When writing or revising a plan, describe each step's intent and expected outcome in prose only. Write no code, and invent no method or file names where those are not yet decided. When it's time to implement, generate code only on the user's explicit instruction, in the increments they choose.
 
+## Compressed
+
+1. An item in `waytide/local/items/` that sequences work must never contain code samples, whatever its tags name it.
+2. Such a plan contains no code blocks.
+3. It contains no literal method bodies.
+4. It contains no "write this content" snippets.
+5. Describe each step's intent and expected outcome in prose only.
+6. Avoid over-prescription. Do not commit up front to specific method names, file names, or other implementation details not yet known or decided.
+7. State the goal and the behavior only at the altitude that is genuinely settled.
+8. Leave the rest open rather than inventing names to fill the plan.
+9. This applies when writing a plan and when revising one.
+10. At implementation time, generate code only on the user's explicit instruction.
+11. Generate it in the increments the user chooses.
+12. **Why:** The user directs code generation interactively. Code samples and premature naming lock in decisions early and remove that incremental control.
+
 ---
 
 Authored by Scott Bellware on Fri Jun 5 2026 at 10 AM PT
@@ -26,3 +41,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
