@@ -12,6 +12,17 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 - Put the must-read before the may-read.
 - Cut words that carry no information.
 
+## Compressed
+
+1. Open a response with a short summary: the conclusion, decision, or state.
+2. Put the supporting detail below the summary.
+3. Order the response so the reader can tell what must be read from what may be read. Put the must-read before the may-read.
+4. The summary carries the essential. The details are for whoever wants them.
+5. Be economical, and do not pad. Length is not thoroughness.
+6. Cut words that carry no information. Say what informs the reader, and stop.
+7. Prefer a short answer that can be expanded on request over a long one that pre-empts every question.
+8. **Why:** the reader's attention is scarce. Summary-first lets the reader grasp the point at once and choose whether to read on.
+
 Related:
 
 - the communicate-plainly-name-the-thing rule
@@ -22,3 +33,4 @@ Related:
 Authored by Scott Bellware on Wed Jul 22 2026 at 10 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
