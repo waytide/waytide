@@ -19,15 +19,19 @@ Produce these sections, in order:
 
 6. **Context hierarchy, two levels deep** — each distinct top-level context with its distinct second-level contexts nested beneath, rendered as an indented tree (`├─`/`└─`). See the status-report rule (in `foundation`) for the rendering. Stop at two levels.
 
-**This section alone is derived from a suite run, not from the source**. The sections above are source analysis, and this one is not, for the reasons the test-tree rule gives. A dynamic `context <expr> do` reads as a placeholder in the source and as its expanded real value in a run. A bare unnamed `test do` appears in the source and emits no line at all. A tree read off the declarations is wrong in the two cases.
+**This section, like the others, is read from the test files, not from a suite run.** The hierarchy is the `context "…"` declarations as written. A dynamic `context <expr> do` shows as its expression, and a bare unnamed `test do` adds no context line. A report on what a run produced is the test-tree command's, not this one's.
 
 Keep each section tight.
 
 **Why:** a suite has a discoverable structure worth surfacing on demand. Fixing the report's shape makes it repeatable and steers reading to the test files rather than recollection.
 
-**How to apply:** on a test-report request, read the automated suite and render the sections from current state. Confirm membership by reading the files (actuation placement, assertion kind, loop fan-out) rather than asserting it. Derive the **hierarchy** differently from the rest. Run the suite and take the first two levels from its output, never from the `context "…"` declarations.
+**How to apply:** on a test-report request, read the automated suite and render every section from the current files, the hierarchy included. Confirm membership by reading the files (actuation placement, assertion kind, loop fan-out) rather than asserting it. Do not run the suite for this report.
 
-Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree` command. That one produces the same tree at full depth, and states why it comes from a run. Neither report is written to a file.
+Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree` command. That one produces the tree of a run at full depth, and states why it comes from a run. Neither report is written to a file.
+
+## History
+
+Until 2026-10-24 the context hierarchy alone was derived from a suite run, not from the source, while the opening said to re-derive everything from the current files. A test report is a report on the test files, so the hierarchy is now read from them as well.
 
 ---
 
@@ -41,3 +45,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:58:40 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:44:52 AM PT
