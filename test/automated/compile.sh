@@ -43,8 +43,9 @@ for source_rule in $source_rules; do
 
   [ -f "$compiled_rule" ] || fail "Is its source rule without the footer" "no compiled rule for:" "$name"
 
-  # The source rule as it reads with its History section left out, which the other outcome reads.
-  source_without_history=$(awk '/^## (History|Compressed)$/ { history = 1 } /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
+  # The source rule as it reads with its History section left out, which the other outcome reads. A
+  # --- inside a fenced block is an example, not the footer's divider, so it ends no section.
+  source_without_history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
 
   compiled_length=$(wc -l < "$compiled_rule")
   removed=$(printf '%s\n' "$source_without_history" | tail -n +$((compiled_length + 1)))
@@ -62,7 +63,7 @@ for source_rule in $source_rules; do
 
   ! grep -q -x -E '## (History|Compressed)' "$compiled_rule" || fail "Removes the History and Compressed sections" "History section not removed:" "$name"
 
-  history=$(awk '/^## (History|Compressed)$/ { history = 1 } /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
+  history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
   outside=$(diff "$source_rule" "$compiled_rule" | sed -n 's/^< //p' | grep -v '^$' | grep -v -E '^(---|Authored by .*|Changed by .*)$' | grep -v -x -F -e "$history" || true)
 
   [ -z "$outside" ] || fail "Removes the History and Compressed sections" "removed outside the History section:" "$name" "$outside"
