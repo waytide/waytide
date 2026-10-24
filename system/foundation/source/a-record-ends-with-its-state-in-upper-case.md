@@ -38,6 +38,44 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Reconcile the live artifacts that cite the old name, and leave historical records as written. Give no suffix to an implementation record carrying no state line, and add none to any file's contents.
 
+## Compressed
+
+1. Where a record carries a canonical `**State:**` line, its filename ends with that state word in upper case.
+2. The state word is appended to the name with a dash, before the extension.
+
+```
+2026-07-27T07-09-02Z-the-feature-capability-REALIZED.md
+2026-08-05T19-37-06Z-ooda-terminology-REFUTED.md
+2026-08-06T04-32-50Z-ooda-mode-COMPLETED.md
+```
+
+3. This reaches every record that carries a state line: an implementation record, whether experiment or feature, and an item.
+4. Each convention fixes its own state words. This rule fixes only where the word is rendered.
+5. A record with no state line takes no suffix. Only an implementation record can lack one.
+6. An item always carries a suffix. Absence is not a state for an item.
+7. An observation's suffix is always `-STATED`.
+8. The file's contents are unchanged. Add no suffix to any file's contents.
+9. The state inside the file is the `**State:**` line and nothing else.
+10. The file still ends with its provenance footer.
+
+## Upper case, and the exception it takes
+
+1. The suffix is the stated exception to the file-names rule's dash-separated, lower-case name.
+2. The upper case marks the state as not part of the record's subject. `…-ooda-terminology-REFUTED.md`, not `…-ooda-terminology-refuted.md`.
+3. The dash is the ordinary separator. Nothing else about the name changes.
+4. The ISO-8601-UTC prefix is untouched, so the directory still sorts chronologically.
+
+## The `**State:**` line stays the only authoritative statement
+
+1. The name is derived from the line. It changes only when the line changes.
+2. Where name and line disagree, the line is right and the name is stale.
+3. A state change renames the file, using `git mv`.
+4. When a reversible word is taken back, rename the file to the state the record returns to, **ACTIVE** or **OPEN**.
+5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the items-convention sets out.
+6. At a rename, reconcile the live artifacts that cite the old name.
+7. Leave historical records as written. A reader following an unresolvable path uses git.
+8. **Why:** a record's state is most often wanted from a directory listing, without opening the record. The mutating filename is the cost, so the suffix is confined to records carrying a state line.
+
 Related:
 
 - the implementations-convention — the record whose state line is absent while the work is under way, and the words each kind takes
@@ -57,3 +95,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:28:48 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:29:41 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
