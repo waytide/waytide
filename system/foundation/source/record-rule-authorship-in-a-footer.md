@@ -33,6 +33,43 @@ Changed by <other name> on <datetime>
 
 **How to apply:** when authoring a new rule, end it with a `---` divider. Add an `Authored by <name> on <local datetime>` line. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer. Write its time to seconds.
 
+## Compressed
+
+1. Every rule file ends with a provenance footer. It records who authored the rule and when, and who has changed it since.
+2. The footer sits at the end of the file, after the rule's content, below a `---` divider:
+
+```
+---
+
+Authored by <name> on <datetime>
+```
+
+3. Each change appends a line. The footer is a running history, never rewritten:
+
+```
+---
+
+Authored by <name> on <datetime>
+Changed by <name> on <datetime>
+Changed by <other name> on <datetime>
+```
+
+4. The datetime is human-readable local time, formatted `Mon Jan 1 2026 at 3:45:12 PM PT`.
+5. It gives day-of-week, month, day, year, then the time with AM/PM and a timezone abbreviation.
+6. The time is in the author's local time.
+7. The time carries minutes and seconds, per the a-time-value-carries-minutes-and-seconds rule.
+8. The footer does not use the ISO-8601-UTC filename-prefix form.
+9. The Authored line names the original author and when the rule was first written.
+10. A Changed line is appended each time the rule is edited, oldest first.
+11. Never rewrite or remove an earlier line.
+12. Earlier lines keep the form they were written in. Lines written at hour resolution stay at hour resolution.
+13. Only new lines take the full time. Both forms may coexist in one footer.
+14. The name is the contributor's name, as in their git identity.
+15. When authoring a new rule, end it with a `---` divider.
+16. Below the divider, add an `Authored by <name> on <local datetime>` line.
+17. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer.
+18. **Why:** Packages are installed by `git subtree`, which does not carry per-file history. The footer keeps authorship visible wherever the rule is read.
+
 Related:
 
 - the a-time-value-carries-minutes-and-seconds rule — the time's resolution
@@ -48,3 +85,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 8:18:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
