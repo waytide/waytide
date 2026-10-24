@@ -103,6 +103,103 @@ Do not wrap it in a `test` block, do not name it, and do not bind its operand. D
 
 An actuation's completion may be the thing being established, rather than the ground a later observation stands on. That is a test. It belongs in a `test` block.
 
+## Compressed
+
+1. A precondition is an `assert` or `refute` that is not a test.
+2. It sits in a context beside the controls and the actuation, not inside a `test` block.
+3. Its purpose is to state the factors that decide a test's outcome when the test script does not clearly express them.
+4. Those factors are most often in the controls. A control is named for itself, not for the properties of the value it produces.
+5. `Controls::Account::Sequence.example` says nothing about which positions that account has already processed. The definition that would say so is in another file.
+
+```ruby
+handler = Handlers::Commands::Transactions.new
+
+deposit = Controls::Commands::Deposit.example
+
+account = Controls::Account::Sequence.example
+
+assert(account.processed?(deposit.metadata.global_position))
+
+handler.store.add(account.id, account)
+
+handler.(deposit)
+
+test "Deposited Event is not Written" do
+  assert(deposited.nil?)
+end
+```
+
+6. Here no event is written because the account has already processed that global position. The precondition states that factor where it is needed.
+7. Write the deciding factor as an assertion, not as a comment. An assertion states the factor and also verifies it, so it cannot silently become false.
+8. A precondition qualifies the test. It does not prevent a regression, and it observes nothing about the unit under test.
+9. When a precondition fails, the test's result is meaningless, not wrong. The unit may be correct, but the test did not exercise what it claims to.
+10. To decide whether one is warranted, ask what determines the outcome and whether the script shows it.
+11. Where a deciding factor is legible on the page, do not add a precondition.
+12. Where the factor sits inside a control, in a prior state, or in a derivation the reader cannot see, write a precondition that surfaces it.
+13. Where a deciding factor is invisible, a test can pass without exercising what it names. Examples: a value already present, a connection already open, a search that finds nothing.
+14. The criterion is whether the deciding factors are legible, not only the risk of a vacuous pass.
+
+```ruby
+context "Database Connection" do
+  session = MessageStore::Postgres::Session.build
+
+  refute(session.connected?)
+
+  test "Connects on first use" do
+    refute_raises do
+      session.execute('SELECT 1;')
+    end
+  end
+end
+```
+
+15. Write the predicate inline, with no explaining variable. The assertion's own expression carries the condition and reads as a sentence.
+16. `refute(session.connected?)` reads as *the session is not connected*. `assert(account.processed?(deposit.metadata.global_position))` reads as *the account has processed that position*.
+17. This is a deliberate exception to the test-block-is-assertion-only rule, which requires every operand inside a `test` block to be bound to an explaining variable.
+18. That rule does not apply because a precondition has one operand, and a bound name would only restate the predicate.
+19. Do not write `connected = session.connected?` in front of `refute(connected)`. A precondition carries no name, because its expression is the name.
+20. Where the deciding factor is that an actuation completes, use `assert_raises` or `refute_raises` with a block. The block is the precondition's expression.
+21. In that block, bind nothing and name nothing. Write the actuation in place, not behind a variable.
+22. Place the precondition immediately before what it qualifies.
+23. Place it before the actuation when it documents a factor in the controls or in a prior state.
+24. Place it before the test when it documents a factor in a value derived from the result.
+
+```ruby
+deposit_message = write.one_message do |written|
+  written.instance_of?(Messages::Commands::Deposit)
+end
+
+refute(deposit_message.nil?)
+
+test "Deposit message follows previous message" do
+  assert(deposit_message.follows?(previous_message))
+end
+```
+
+25. A precondition may assert over the controls, a prior state, a derivation, or the actuation's completion where the controls decide it.
+26. It never asserts over the unit's behavior as an outcome. It is not coverage, and a passing one establishes nothing about the unit.
+27. It falls outside what the do-not-test-the-platform rule weighs and outside what a coverage test is for.
+28. Whether an assertion is a precondition or a test depends on its purpose, not on what it is written over.
+29. `refute_raises` around an actuation is a precondition when the controls would ordinarily make the actuation fail, the setup averts that, and the script does not show it.
+30. It is a test when whether the unit raises is the thing being established. Put that in a `test` block.
+
+```ruby
+control_destination = Controls::Constant.example(
+  name: "Destination",
+  inner_constants: [control_excluded_constant_name]
+)
+
+refute_raises do
+  Constant::Import.(control_source, control_destination, except: control_excluded_constant_name)
+end
+```
+
+31. Here the destination owns the excluded name, so without `except:` the import is refused. Nothing else in the script says so.
+32. When writing or reading a test, look at the controls first, because their values are named rather than described.
+33. Do not wrap a precondition in a `test` block. Do not name it, and do not bind its operand.
+34. Do not write a deciding factor as a `comment` in place of a precondition.
+35. **Why:** The controls convention hides how example values are built, so the factors that decide an outcome are often the least visible ones. A test with invisible deciding factors cannot be read, and it can pass without exercising what it names. An assertion is checked where a comment is not. Keeping a precondition a bare assertion, not a named test, keeps it distinct from a claim about how the unit behaves.
+
 Related:
 
 - the controls-not-factories-fixtures-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
@@ -124,3 +221,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:34:58 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
