@@ -12,6 +12,33 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 
 **How to apply:** Build one outcome's test at a time. After each, stop at each of its hinges (see the hinge-cycle rule) and wait. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-at-the-start rule). Never write several test files at once, in either mode. To finish an unnamed test, present candidate names as options through the selection UI. Then apply the name chosen or dictated.
 
+## Compressed
+
+1. The loop advances one outcome at a time.
+2. The loop stops at every gate for the human.
+3. Do not run ahead.
+4. Do not batch-generate multiple test files in one pass.
+5. Generate one outcome's test, then stop at its gate.
+6. Proceed only on the human's go.
+7. Finishing the work means naming the test.
+8. A test left with an empty, unnamed outcome context is unfinished.
+9. The closing step ascribes the test's name.
+10. Name one test at a time.
+11. At the naming gate, present a list of candidate outcome-context names.
+12. Include the free-text option among the candidates.
+13. The free-text option is mandatory.
+14. The free-text option lets the human input a name directly or discuss it.
+15. Responsibility transfers at the naming gate exactly as at the actuation gate (see the actuation-gate-options rule).
+16. Present alternatives, not a single pick.
+17. Make the human produce the answer, not approve one.
+18. Build one outcome's test at a time.
+19. After each test, stop at each of its hinges (see the hinge-cycle rule) and wait.
+20. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-at-the-start rule).
+21. Never write several test files at once, in either mode.
+22. To finish an unnamed test, present candidate names as options through the selection UI.
+23. Then apply the name the human chose or dictated.
+24. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
+
 Related:
 
 - the actuation-gate-options
@@ -35,3 +62,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:28:14 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
