@@ -18,6 +18,29 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 
 **How to apply:** don't reach for a figurative or slang term when a literal one states the thing directly. Use the literal replacement (see its entry in the `language` vocabulary). When a historical record *quotes* a decision, it keeps the original word, since rewriting it would erase the record. Only live, forward-looking prose conforms.
 
+## Compressed
+
+1. Names, prose, comments, and commit messages use literal, non-slang terms.
+2. Conversation with the user uses literal, non-slang terms too.
+3. The standard governs phrasing addressed to the human, not only what goes into the codebase.
+4. Do not use a figurative or slang term when a literal one states the thing directly.
+5. Each discontinued figurative term has a literal replacement, and each replacement is an entry in the `language` vocabulary.
+6. Use the literal replacement, as its entry in the `language` vocabulary defines it.
+7. Replace **wrap / wrapper** with **mediates**.
+8. Replace **sweep** with **conform**.
+9. Replace **"does that land?"** with plain phrasing, such as "is that right?".
+10. Replace **arm** with **scenario**.
+11. Replace **cut** with **increment**.
+12. Replace **in flight** with **in progress**.
+13. Replace **owed** with **required**.
+14. Replace **choice** with **selection** for what is picked at a prompt.
+15. Replace **choice** with **decision** for the matter settled.
+16. Replace **earns its keep / earns its place** with **justified / justifiable**.
+17. A historical record that quotes a decision keeps the original word.
+18. Only live, forward-looking prose conforms.
+19. This rule governs phrasing in prose and conversation. The name-literally-not-by-analogy rule governs naming a concept.
+20. **Why:** slang and figurative terms are imprecise and carry unwanted associations. "wrap/wrapper" reads as a generic decorator and hides the accessor relationship that "mediates" names exactly.
+
 Related:
 
 - the name-literally-not-by-analogy rule
@@ -37,3 +60,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
