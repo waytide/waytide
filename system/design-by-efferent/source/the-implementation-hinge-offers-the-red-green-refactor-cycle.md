@@ -31,6 +31,60 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 **How to apply:** at the implementation hinge for a unit's **first** implementation, offer the two candidates through the selection UI. They are the working implementation, and the red/green/refactor cycle. Where the cycle is chosen, write the red only if its cause reaches no stable test. Run the suite, then green, then refactor. Do not offer the cycle when covering behavior that already exists. Do not present a failing implementation as an option merely to reach the two-option floor.
 
+## Compressed
+
+1. At the implementation hinge, the fourth of the five, put two candidates to the engineer.
+2. The first candidate is **a working implementation**: code that satisfies the test, written directly.
+3. The second candidate is **an implementation that lets the test fail**, followed by the complete **red, green, refactor** cycle.
+4. Both candidates answer the hinge's question: *how does this implementation come about*.
+5. Treat the cycle as a design judgment about this unit, not a procedure applied to every unit.
+6. This hinge is the only place the red decision is made.
+7. Do not offer a red at a separate hinge before the implementation.
+8. Do not ask again, by any other mechanism, an engineer who declined the cycle.
+
+## The containment constraint governs the red, unchanged
+
+1. A deliberate red is permitted only where its cause reaches no other stable test.
+2. No existing, passing test may fail because of the red.
+3. A red that breaks working tests is breakage, even when the cycle was chosen at a gate.
+4. Before writing a deliberate red, know that its failure is local to the new test.
+5. Run the full suite after writing the red.
+6. If a stable test failed, back the red out and reach a passing implementation directly.
+
+## The cycle is for the first implementation of a unit
+
+1. Offer the cycle only for new behavior being designed.
+2. Do not offer the cycle when covering behavior that already exists.
+3. When covering, the implementation hinge is degenerate. See the the-design-of-a-test-waits-at-the-hinges-including-coverage rule.
+4. Never offer the cycle and then refuse it; offer it only where it is available.
+
+## Choosing the cycle is not performing choreography
+
+1. The dbe-as-design-tool rule rejects only the unchosen cycle, performed as ritual.
+2. An engineer selecting the cycle at a gate for this unit has made a design judgment, which that rule permits.
+
+## Refactor is part of the cycle
+
+1. The cycle has three parts: red, green, and refactor.
+2. Red proves the test discriminates.
+3. Green makes the test pass.
+4. Refactor improves the design, with the test holding the behavior still.
+5. Never offer the cycle without refactor.
+
+## The second candidate is real
+
+1. The cycle counts as a real second candidate under the present-every-prompt two-option floor.
+2. Do not present a failing implementation as an option merely to reach the two-option floor.
+3. Where the hinge has a real second implementation, surface that option.
+4. The cycle is not a substitute for searching for another implementation.
+
+## How to apply
+
+1. At the implementation hinge for a unit's first implementation, offer the two candidates through the selection UI.
+2. Where the cycle is chosen, write the red only if its cause reaches no stable test.
+3. Then run the suite, then green, then refactor.
+4. **Why:** whether to drive an implementation through a failing test is a subtle, load-bearing judgment about that unit. Offering it as a candidate lets the engineer compare real alternatives rather than ratify one proposal.
+
 Related:
 
 - the hinge-cycle rule — the five hinges, of which this is the fourth
@@ -52,3 +106,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
