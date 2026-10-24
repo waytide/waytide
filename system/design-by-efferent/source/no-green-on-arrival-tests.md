@@ -10,6 +10,20 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 **This is a design concern and does not reach coverage.** The activity may be preventing a regression in existing behavior rather than designing new behavior. Green-on-arrival is then inevitable and correct. See the "TDD designs, coverage prevents" rule.
 
+## Compressed
+
+1. A test justifies itself in DBE by driving an implementation that did not exist.
+2. A test that passes the moment it is written is "green-on-arrival". It only confirms an existing affordance and designs nothing.
+3. Drop an outcome whose test is green-on-arrival.
+4. The tell is a no-op implementation hinge in the hinge cycle: "nothing to write — the existing code already satisfies this".
+5. A no-op implementation hinge signals dropping the outcome. Do not add a confirming test in its place.
+6. Behavior may already be present when its own outcome comes up. It came from a default value, a conveyed keyword, or a prevention written for an earlier outcome. Notice that the implementation ran ahead of its test. Do not manufacture a test after the fact to cover it.
+7. Locking such behavior to prevent a public-contract regression is a deliberate, separate decision the human makes.
+8. That locking is not the default, and it is not a DBE design step.
+9. This rule covers design only. It does not reach coverage work.
+10. When the activity is preventing regression in existing behavior, green-on-arrival is inevitable and correct. See the "TDD designs, coverage prevents" rule.
+11. **Why:** DBE is a design tool, not a coverage tool: exit on solubility, not coverage. A green-on-arrival test dilutes the suite's signal by reading as a driven outcome. It usually means the implementation ran ahead of its test, through a default value, a conveyed keyword, or an incidental prevention.
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -27,3 +41,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
