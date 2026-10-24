@@ -8,6 +8,18 @@ This parallels the constant-name convention, where example names are `"SomeModul
 
 **How to apply:** Write `control_file = "some file"` (and `"some other file"`, etc.) for placeholder string values. Reserve specific string content only when the test actually depends on it. Non-string placeholder values (e.g. a number) are not covered — they have no "some" form.
 
+## Compressed
+
+1. A control may hold a string value: a literal used as test input, not a constant name.
+2. The string value starts with "some", as in `control_file = "some file"`, not `"a file"`.
+3. "some" marks the value as an arbitrary placeholder whose content does not matter.
+4. A bare string value is lowercase: `"some file"`, `"some other file"`.
+5. This differs from example constant names, which are capitalized: `"SomeModule"`, `"SomeOtherModule"`.
+6. Write `control_file = "some file"` for a placeholder string value. Write each further placeholder in the "some other …" form, as in `"some other file"`.
+7. Use specific string content only when the test actually depends on it.
+8. Non-string placeholder values, such as a number, are not covered, because they have no "some" form.
+9. **Why:** "some" signals that any value would do. That matches the `control_` prefix's intent, where the test turns on the value's identity, not its content.
+
 Related:
 
 - the `control_` test-variable prefix rule
@@ -19,3 +31,4 @@ Authored by Scott Bellware on Mon Jun 29 2026 at 2 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
