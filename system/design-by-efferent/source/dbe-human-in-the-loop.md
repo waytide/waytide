@@ -20,6 +20,51 @@ The loop, by turn:
 
 **How to apply:** Run the loop above. Keep turns small (one actuation, one outcome) so the cradle stays legible while the human deliberates. Hand the human the actuation to edit or approve. Let the AI fill everything else. Do not ask the human to confirm a failing or passing test. Stop when solubility is satisfied.
 
+## Compressed
+
+1. In DBE, place the human's attention only at the hinges, where design judgment lives.
+2. A hinge is a subtle, load-bearing decision the design turns on (see the DBE vocabulary).
+3. The original pair of hinges is setting the cradle (the efferent shape of the actuation) and judging solubility (the result).
+4. The loop waits at the hinges so the human can deliberate them.
+5. The agent does all code generation between hinges straight through.
+6. Never make the human wait at a red or green bar.
+7. Never deliberate the pass/fail bar.
+8. The AI generates. The human deliberates.
+9. The human owns the efferent design, meaning what the actuation looks like.
+10. The human owns the solubility verdict on what comes back.
+11. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
+
+## The loop, by turn
+
+1. **Human sets the cradle, the actuation.** The actuation is the contract and the highest-leverage hinge.
+2. The AI may propose the actuation.
+3. The human holds edit and veto power specifically on the actuation.
+4. When the efferent shape is uncertain, the AI asks rather than averaging toward common code.
+5. **The three test hinges produce turn one.** Put the actuation, the observation, and the controls to the human in turn, per the hinge-cycle rule.
+6. Assemble the test file once all three are accepted.
+7. Never produce the whole test file at an earlier hinge.
+8. The exception is when the engineer chose unattended work at the start. Then the agent decides each hinge and generates through (see the attended-or-unattended-is-chosen-at-the-start rule).
+9. The human deliberates whether the actuation reads as soluble use, not the test mechanics.
+10. If it does not, fix the cradle now, before any implementation exists.
+11. **AI generates the implementation inside the cradle, straight through.**
+12. The AI runs the test to confirm, as verification, not as the green half of a ceremony.
+13. The human deliberates the unit's solubility.
+14. If the unit only works by forcing an awkward actuation, fix the cradle, not the implementation.
+15. **Loop by outcome.** Name the next distinct outcome of the same single actuation.
+16. The AI adds an inner `context` and extends the implementation just enough.
+17. The human deliberates solubility again.
+18. **Exit on solubility, not coverage.** Stop when the unit has dissolved into the reader's understanding, not at an assertion count.
+
+## How to apply
+
+1. Run the loop above.
+2. Keep turns small: one actuation, one outcome, so the cradle stays legible during deliberation.
+3. Hand the human the actuation to edit or approve.
+4. Let the AI fill everything else.
+5. Do not ask the human to confirm a failing or passing test.
+6. Stop when solubility is satisfied.
+7. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -38,3 +83,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
