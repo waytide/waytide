@@ -10,13 +10,17 @@
 
 **This is the most expensive reservation ETE makes, and the entry carries the cost.** A reader who meets an unknown word knows they do not know it. A reader who meets `loop` believes they know it, because the dictionary told them, and nothing in the sentence says otherwise. So the entry quotes the approved meaning and states why it does not serve.
 
-**Recast the sentence instead where the approved meaning serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
+**Recast the sentence instead where a different word serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
 
 **Why:** the alternative for such a word is a recast, and it costs the term rather than the sentence. The DBE cycle is *the loop* throughout the method, in the loop record, in the loop rules, and in the distributed OODA account. Renaming it to reach an approved word would trade a settled term for conformance on one word.
 
 The reservation is bounded by being stated. A reader who wants to know where Waytide's meanings depart from the dictionary's reads the entries that carry this note. The list is finite, because each one had to be written.
 
 **How to apply:** use the STE dictionary's approved meaning where it serves. Recast the sentence under STE Rule 9.1 where a different word serves. Reserve the word in an ETE category only where neither does. Quote the approved meaning in the entry, and state why it does not carry Waytide's.
+
+## History
+
+Until 2026-10-24 the bold heading read *Recast the sentence instead where the approved meaning serves*, which put the recast where How to apply puts using the approved meaning. The heading now names the recast's own condition, where a different word serves.
 
 Related:
 
@@ -32,3 +36,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:27 PM PT
