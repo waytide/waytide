@@ -14,6 +14,22 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 **Why:** tests exist to prevent a regression in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence that "we" are covered when nothing of ours ran.
 
+## Compressed
+
+1. Test the library's own behavior and decisions, not the language or system it sits on.
+2. A unit is a transparent pass-through on a path only when it adds no branch, guard, normalization, or policy there and just forwards to a platform primitive.
+3. On such a path, the unit's behavior is the platform's, so a test there tests the platform, not the library.
+4. The signal: you can state the expected behavior only through the primitive's guarantee ("`String#empty?` returns true for an empty string").
+5. When that signal holds and the unit adds nothing of its own on that path, nothing of ours is at risk, so write no test.
+6. Example: `Upload#empty?(file)` is `file.empty?`, which forwards to the string primitive and adds no branch, guard, or normalization.
+7. Its emptiness behavior is therefore `String#empty?`'s exactly: true for `""` and false for any other content.
+8. Once `#empty?` has been decided to stay transparent to Ruby, there is no library emptiness behavior, and an "empty string is empty" test would only test Ruby.
+9. The resolution is the decision to stay transparent, not a test.
+10. When a unit adds a policy, that policy is the library's own decision, and it must be tested.
+11. Example policies that must be tested: `Upload#call`'s guard `raise Error, "File is empty" if file.empty?`, which raises `Upload::Error` on an empty file, a coercion that normalizes the file, and a suppressed warning.
+12. The bare `file.empty?` forwarding underneath those policies is not tested.
+13. **Why:** Tests exist to prevent regressions in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence when none of our code ran.
+
 Related:
 
 - the tdd-designs-coverage-prevents-never-break-implementation rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
@@ -31,3 +47,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
