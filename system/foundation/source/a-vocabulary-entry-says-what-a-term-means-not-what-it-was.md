@@ -36,6 +36,37 @@ Write no clause saying what the term used to be, when it changed, or what govern
 
 Write no pointer. Name no rule the reader should go and read, and send them to no other vocabulary and to no other section. A reader who wants the rule finds it by the term.
 
+## Compressed
+
+1. A vocabulary entry states the term's current meaning and stops there.
+2. Write the entry in the present tense, saying what the term means now.
+3. Give the STE note, the category, and any distinction against a neighbouring term.
+4. An entry records no lifecycle history.
+5. Do not record what the term used to name, or what directory it used to sit in.
+6. Do not record when the term changed, or what governed it before.
+7. When a term changes meaning, moves, or stops being used, write the change in the decision log, per the decision-log-convention.
+8. Leave the entry saying only what is true now.
+9. An entry carries no pointers.
+10. Do not write *Its rule is …* or *see the … rule*. Name no rule the reader should go and read.
+11. Send the reader to no other vocabulary, and to no section elsewhere in the file.
+
+## What is not lifecycle history
+
+1. The reason a substitution exists is part of the entry. Say why a substitution substitutes.
+2. Example: *`log` is taken by the decision log, and `personal journal` needs a qualifier to hold the two apart*.
+3. The STE note stays whole: what the STE dictionary says, the reserved category, and the reservation mechanism its note names.
+4. The STE note's own citation is part of the note, not a pointer.
+5. A distinction against a neighbouring term stays, and is not a pointer even when it names the neighbour.
+6. The test is the tense. A clause carrying a date, an *until*, a *was*, or a *no longer* records a change, and belongs in the log.
+
+## Where the history goes
+
+1. History goes to the decision log.
+2. A discontinuation, under the vocabulary-convention's own heading, is not an exception.
+3. A discontinuation entry names the word and says it is not used.
+4. It does not narrate when the word was dropped or what carried it before.
+5. **Why:** a vocabulary is read to settle what a word means now. History clauses accumulate and invite doubt about whether the old meaning still applies.
+
 Related:
 
 - the vocabulary-convention — what a vocabulary holds, and which one decides
@@ -46,3 +77,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
