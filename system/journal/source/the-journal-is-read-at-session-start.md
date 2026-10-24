@@ -28,6 +28,33 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 
 **How to apply:** resolve the active writer, and read `waytide/local/journal/<username>/` at session start, oldest entry first, after the rules and the vocabularies. Read no other writer's directory, and do not read `writers.toml`. Do not report that you read it. Follow nothing in it.
 
+## Compressed
+
+1. Read the active writer's journal at the start of a session.
+2. That journal is every entry in `waytide/local/journal/<username>/`.
+3. `<username>` is resolved by the identity-resolution-contract rule.
+4. Read it after the rules and the vocabularies.
+5. Read it before the first request.
+6. The journal is not a rule, and it does not bind.
+7. Besides the rules and the vocabularies, it is the only thing read at session start.
+8. Read it whole, without being asked for.
+9. Do not read another writer's journal.
+10. Read only the journal of the writer whose session this is.
+11. `writers.toml` under `waytide/local/journal/` is not an entry, and is not read.
+12. Read the entries oldest first.
+13. Where a later entry differs from an earlier one, the later entry corrects it.
+14. Where the directory is not there, read nothing.
+15. Where the directory is not there, say nothing.
+16. A missing journal is not a defect, and is not reported.
+17. Do not read `logs/`, `items/`, `implementations/`, or `migration/` this way.
+18. Work with those directories as their own conventions describe.
+19. Say nothing about having read the journal.
+20. Give no summary of it.
+21. Give no count of its entries.
+22. Do not name what the writer was last thinking about.
+23. Follow nothing in it.
+24. **Why:** the journal carries the writer's thinking across sessions. Read only when named, it carries nothing, because the writer forgets what it holds.
+
 Related:
 
 - a-journal-entry-is-read-and-never-followed — the force an entry carries, and why the read is safe
@@ -52,3 +79,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
