@@ -20,6 +20,27 @@ A metaphor carries baggage the author never intended and the reader cannot unsee
 
 When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
 
+## Compressed
+
+1. Use language very precisely. Words are load-bearing, not decoration.
+2. Choose words deliberately, hold to them, and change them only on purpose.
+3. Choosing a word chooses the concept that the work is then done with.
+4. Name concepts literally, and drop slang. These are the two disciplines that make this precision achievable.
+5. Precision is not formality, and it is not plainness either.
+6. The precise word is the one that already means exactly this.
+7. Do not bury the extant technical term under a vaguer everyday word or a colloquialism. Examples: "wrap" over "mediates," "green" over "verified," and "happy path" over "normal path."
+8. Recover the established term the everyday word has displaced.
+9. Do not use dramatic jargon, meaning an impressive or academic term reached for to signal sophistication. Do not use a metaphor whose baggage the reader cannot unsee. Do not use an overdramatic word that distorts judgment. Do not use a loose synonym that merges two concepts the design keeps apart.
+10. Lean neither toward the plain nor toward the technical.
+11. Hold the term that says the thing exactly. It is as often an established technical term as a plain one.
+12. Treat the selection of a word as a design decision, with the same deliberation as any other.
+13. When two words are available, choose the one that *is* the thing, not the one that sounds better.
+14. When a word is wrong, change it. When a word is changed, change it everywhere the concept appears.
+15. Do not let a term mean one thing in one place and another thing elsewhere.
+16. When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor.
+17. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
+18. **Why:** The terminology is how the approach is taught and how people stay oriented to the same concepts. Imprecise words do quiet damage. Metaphors carry unintended baggage, overdramatic words distort judgment, and loose synonyms merge concepts the design keeps apart.
+
 Related:
 
 - the name-literally-not-by-analogy rule and the no-slang rule — the two disciplines
@@ -36,3 +57,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
