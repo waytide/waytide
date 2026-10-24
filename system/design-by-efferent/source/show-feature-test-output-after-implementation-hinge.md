@@ -14,9 +14,14 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 ## Compressed
 
-**After each implementation hinge, show the whole feature's test output, unasked.** First, write the accepted implementation and run the suite. Then run every test file of the current feature. That is every outcome built so far for the unit, not only the new one. Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show. Put the output in the turn that reports the implementation. The what-each-hinge-displays rule shows the implementation and the new outcome's test. This rule adds the feature's full output.
-
-**Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
+1. After each implementation hinge, show the whole feature's test output without being asked.
+2. First, write the accepted implementation and run the suite.
+3. Then run every test file of the current feature.
+4. The feature's tests are every outcome built so far for the unit, not only the new one.
+5. Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show.
+6. Put the output in the turn that reports the implementation.
+7. The what-each-hinge-displays rule shows the implementation and the new outcome's test. This rule adds the feature's full output.
+8. **Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
 
 
 Related:
@@ -38,3 +43,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:27:37 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:38:48 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:34 PM PT
