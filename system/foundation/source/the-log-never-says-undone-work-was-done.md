@@ -28,6 +28,30 @@ The failure it prevents is specific and hard to see from inside. Every sentence 
 
 Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the decision-log-convention.
 
+## Compressed
+
+1. A decision log entry never conveys that something was done when it was not done.
+2. This prohibition holds whatever the entry is about.
+3. The log on `master` never conveys that work from an abandoned branch landed on `master`.
+
+## What an abandonment entry carries
+
+1. When work is abandoned, write the entry as the decision to stop and the reasoning given for it.
+2. Where no reason was given, the entry says so.
+3. Write no reason that was not given. An agent's reading of why the engineer stopped is not the engineer's reason.
+4. Say plainly that nothing merged.
+5. Say plainly where the work was.
+6. Do not carry the unfinished work: not the unexecuted plan, the unrun increments, or the unbuilt design.
+7. Where an entry needs more than a line, it takes a body, as the decision-log-convention describes.
+
+## Why the mood is not enough
+
+1. Careful tense is necessary but not sufficient.
+2. An entry written entirely in conditional mood, such as *It would have taken the package to `ext/`*, still must not record unexecuted planning.
+3. The test is the entry's subject, not its grammar.
+4. Reasoning for stopping belongs in the log. Work that stopped does not.
+5. **Why:** A reader consults the log, with no branch to compare against, to learn what the project decided. Recording unexecuted work makes it read as settled knowledge the project holds.
+
 Related:
 
 - the decision-log-convention — the entry's shape, and when it takes a body
@@ -39,3 +63,4 @@ Related:
 
 Authored by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
