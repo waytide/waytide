@@ -41,6 +41,49 @@ At the conclusion, ask whether the work merged. Where it did, write a summary ma
 
 Write no entry for a confirmation the record already holds, and none for a turn of the work.
 
+## Compressed
+
+## An implementation record takes a log entry
+
+1. An implementation record pairs with a one-line entry in `waytide/local/logs/log/`.
+2. Write the entry when the record is created.
+3. Write another entry on each change of the canonical `**State:**` line.
+
+## The concluding entry depends on whether the work reached `master`
+
+1. The concluding entry takes one of two forms. Which one is not a matter of taste.
+2. The form is decided by whether the record itself is on `master`.
+3. Merged work means an affirmed experiment merged into its upstream branch, or a completed feature integrated. An affirmed experiment merges, and a completed feature integrates.
+4. For merged work, the entry is a summary marker. It names the record and its state, and stops there.
+5. Unmerged work means a refuted, inconclusive, abandoned, or superseded experiment, or an abandoned or superseded feature. That work is never merged, and its branch is deleted only on confirmation. Its record is kept, marked with its state, as evidence.
+6. For unmerged work, the entry carries the finding, and only where there is one.
+7. For an unmerged experiment that reached a verdict, the entry states the question, the verdict, and what was found.
+8. For abandoned work, the entry states the intent, that it was abandoned, and the reasoning given for stopping.
+9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-never-says-undone-work-was-done).
+10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
+11. Do not rely on the practice of committing the record to `master` while the work is on a branch.
+
+## What is already required, and not restated
+
+1. An affirmed experiment still copies its own log into the decision log, as implementation-lifecycle requires.
+2. The summary marker sits beside those copied entries. It does not replace them.
+3. A completed feature has no affirmation and no log copy. Its marker is the whole of what its conclusion writes.
+
+## What is not logged
+
+1. Write no log entry for a confirmation the lifecycle records.
+2. Those confirmations are the working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion. They are recorded in the record.
+3. Write no log entry for a turn of the work.
+4. The hinges, the cycles, and the runs belong to the loop record and the implementation record.
+
+## How to apply
+
+1. At the conclusion, ask whether the work merged.
+2. Where it merged, write a summary marker naming the record and its state.
+3. Where it did not, write the question or the intent, the verdict or the outcome, and the findings, so `master` holds them without the record.
+
+**Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The decision log answers what this project has decided, for a reader who holds nothing.
+
 Related:
 
 - the implementations-convention — the record, the two kinds, and the state words each takes
@@ -56,3 +99,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
