@@ -996,6 +996,15 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, the compiler no longer removes headings that are part of a rule's compressed text.** It drops only the `## Compressed` heading itself. The fix ran unattended through the five hinges, and its loop record is `local/logs/loops/…-compressed-headings.md`. A new outcome, *Keeps the headings in the compressed text*, failed before the change and passes after. Every test passes. The compressed read of the real rules now keeps their headings: 7 in #14, 8 in #13, and 3 in commit-message-widths.
 
+### The `testing` batch — method, committed before it runs, 2026-10-24
+
+**The `testing` package is the second unattended batch**, its 20 rules compressed straight into numbered lists. The method is the `git` batch's, with two changes the work since has settled.
+
+1. **The compression guidance writes numbered points.** It asks for one directive per point, keeps headings that set scope or carry a directive, and makes a directive stated only in a heading a point of its own as well.
+2. **The checkers are given each rule's Related list with its compressed text**, so a directive that lives in that list is not read as lost.
+
+The criterion, the resolution of disagreements, the repair of each lost or materially less precise directive by its smallest clause, the re-check of repairs, and the review list for the engineer are as before.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4130,3 +4139,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:30:37 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:35:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:40:13 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:45:59 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:47:19 PM PT
