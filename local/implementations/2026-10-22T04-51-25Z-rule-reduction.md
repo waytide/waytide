@@ -1218,10 +1218,13 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 ### The `language` and `journal` batch's review list — 2026-10-24
 
-**The engineer is going through the three review items one at a time.**
+**The engineer went through the three review items one at a time.**
 
 1. **a-journal-entry-is-read-and-never-followed: a journal entry is not treated as an instruction.** How to apply had said that where an entry reads like an instruction, the agent asks the writer what they want. Asking because of an entry is still treating it as one. How to apply now says that such an entry is still a judgment the writer holds, and that the agent acts on what the writer asks, never on an entry. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch. There, compressed point 13 takes the new wording, so the point numbers stay.
 2. **journal-convention: the ban on editing an entry names its two exceptions.** How to apply had said, without exception, not to edit an entry once it is written, while the Footer section named disclosure and a change the writer directs. How to apply now names both. The fix is made the same way as item 1. On the phase branch, How to apply's point 7 takes the new wording.
+3. **ete-fixes-the-meaning-of-a-word-in-its-category: the recast is for where a different word serves.** The bold heading had read *Recast the sentence instead where the approved meaning serves*, which put the recast where How to apply puts using the approved meaning. The heading now names the recast's own condition. The fix is made the same way as items 1 and 2, and compressed point 13 takes the new wording. This removes the conflict that made the re-check judge this rule's directive 6 less precise. It is not re-checked by agents.
+
+**All three review items are resolved.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4370,3 +4373,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:49 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:43:07 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:07:24 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:18:10 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:51 PM PT

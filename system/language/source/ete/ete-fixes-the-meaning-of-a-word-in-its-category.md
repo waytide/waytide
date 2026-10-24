@@ -10,7 +10,7 @@
 
 **This is the most expensive reservation ETE makes, and the entry carries the cost.** A reader who meets an unknown word knows they do not know it. A reader who meets `loop` believes they know it, because the dictionary told them, and nothing in the sentence says otherwise. So the entry quotes the approved meaning and states why it does not serve.
 
-**Recast the sentence instead where the approved meaning serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
+**Recast the sentence instead where a different word serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
 
 **Why:** the alternative for such a word is a recast, and it costs the term rather than the sentence. The DBE cycle is *the loop* throughout the method, in the loop record, in the loop rules, and in the distributed OODA account. Renaming it to reach an approved word would trade a settled term for conformance on one word.
 
@@ -32,7 +32,7 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 10. This is the most expensive reservation ETE makes, and the entry carries the cost.
 11. The entry quotes the approved meaning.
 12. The entry states why the approved meaning does not carry Waytide's.
-13. Recast the sentence instead where the approved meaning serves.
+13. Recast the sentence instead where a different word serves.
 14. STE Rule 9.1 covers the case where a word-for-word replacement will not do.
 15. This reservation is the last resort, not the first.
 16. An entry that does not argue against the approved meaning has not made the reservation.
@@ -40,6 +40,10 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
 19. Reserve the word in an ETE category only where neither serves.
 20. **Why:** a reader who meets an approved word believes they know it, and nothing in the sentence says otherwise. The other choice, a recast, would cost a settled term such as *the loop* in exchange for conformance on one word.
+
+## History
+
+Until 2026-10-24 the bold heading read *Recast the sentence instead where the approved meaning serves*, which put the recast where How to apply puts using the approved meaning. The heading now names the recast's own condition, where a different word serves.
 
 Related:
 
@@ -56,3 +60,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:47 PM PT

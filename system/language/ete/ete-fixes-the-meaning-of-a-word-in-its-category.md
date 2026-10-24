@@ -10,7 +10,7 @@
 
 **This is the most expensive reservation ETE makes, and the entry carries the cost.** A reader who meets an unknown word knows they do not know it. A reader who meets `loop` believes they know it, because the dictionary told them, and nothing in the sentence says otherwise. So the entry quotes the approved meaning and states why it does not serve.
 
-**Recast the sentence instead where the approved meaning serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
+**Recast the sentence instead where a different word serves.** STE Rule 9.1 covers the case where a word-for-word replacement will not do. This reservation is the last resort rather than the first, and an entry that does not argue against the approved meaning has not made it.
 
 **Why:** the alternative for such a word is a recast, and it costs the term rather than the sentence. The DBE cycle is *the loop* throughout the method, in the loop record, in the loop rules, and in the distributed OODA account. Renaming it to reach an approved word would trade a settled term for conformance on one word.
 
