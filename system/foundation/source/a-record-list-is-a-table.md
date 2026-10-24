@@ -39,6 +39,44 @@ Rows are the better form where a field is long, and that is the whole of the exc
 
 Keep every column short. Where a field runs to a sentence, use rows instead.
 
+## Compressed
+
+1. When the engineer asks for a list of records, render it as a table.
+2. This applies to any record type. That includes items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
+3. The first column is the record's handle and has no heading.
+4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
+5. Every column after the handle has a heading.
+6. Two SHA columns come right after the handle: the commit that created the record, then the last commit to touch it.
+7. These two SHA columns are always present. They are not chosen per request.
+8. After the SHA columns comes the title. Then comes one column for the fact asked about.
+
+```
+|              | created   | changed   | item                              | state  |
+|--------------|-----------|-----------|-----------------------------------|--------|
+| `2026-08-10` | `f0b7769` | `e137863` | A Generalized Description         | Active |
+| `2026-08-23` | `376e64a` | `376e64a` | Waytide for content and web       | Open   |
+```
+
+9. A record that was never amended shows the same SHA in both columns. This is intended, since it shows the record has not been touched since it was written.
+10. Choose the last column to fit the question.
+11. A list of items or implementations takes the state as its last column.
+12. A list of commits asked about for their subject widths takes the width.
+13. Do not add a column nobody asked for.
+14. A list of commits takes no SHA columns.
+
+## Keep every column short
+
+1. Keep every column short.
+2. Do not put a field that runs to a sentence in a table. Present rows instead.
+3. Where a record's summary is wanted, present rows instead of a table. This is part of the rule, not a failure of it.
+
+## What this does not reach
+
+1. The status report's tables are already tables under the status-report-format rule, and this rule agrees with it.
+2. This rule does not govern an answer that is not a list of records.
+3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
+4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
+
 Related:
 
 - the status-report-format rule — whose tables this agrees with
@@ -53,3 +91,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:07:00 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
