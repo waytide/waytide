@@ -901,6 +901,30 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The question the decision leaves open** is the one the scoring of numbered lists raised. How an agent follows each format is unmeasured, and only real sessions would measure it.
 
+### Compiled rules as numbered lists — 2026-10-23
+
+**The engineer asked whether compiled rules formatted as numbered lists would affect solubility or slow the read.** Each checked rule's directive list, written as a numbered list under the rule's title, was scored against the same 105 rules as the others.
+
+| rule | solubility: source | prose | numbered list | size: prose | numbered list |
+|---|---|---|---|---|---|
+| announce-waytide-at-session-start | 24 | 32 | 38 | 8,552 | 9,505 |
+| items-convention | 11 | 46 | 42 | 3,896 | 6,403 |
+| an-item-takes-a-log-entry | 17 | 35 | 50 | 3,479 | 2,952 |
+| waytide-keeps-its-word-where-the-ste-word-means-something-else | 50 | 51 | 64 | 3,662 | 2,458 |
+| show-feature-test-output-after-implementation-hinge | 91 | 62 | 85 | 920 | 1,037 |
+| a-project-declares-its-package-set | 20 | 57 | 41 | 3,655 | 4,207 |
+| a-sha-names-the-work-rather-than-the-commit | 48 | 80 | 67 | 1,255 | 1,401 |
+| announce-a-branch-switch-in-a-bordered-block | 65 | 81 | 85 | 1,620 | 1,688 |
+| commit-message-widths | 33 | 71 | 73 | 2,491 | 1,817 |
+| commit-says-task-is-done-not-mark-done | 86 | 85 | 74 | 880 | 1,111 |
+| no-claude-coauthor | 82 | 86 | 96 | 454 | 423 |
+| run-suite-before-commit | 75 | 89 | 82 | 1,357 | 1,119 |
+| subject-first-commit-messages | 58 | 82 | 87 | 1,461 | 1,365 |
+
+1. **Solubility has no consistent effect.** The list scores higher than the prose for 7 rules and lower for 6. The score follows sentence length and wording, and a list changes neither consistently. The prose for #2 and #12 is their first compressed version, before the short-sentence rewrites.
+2. **The read slows where a list repeats context.** Its length follows size. A list is about the prose's size overall, but grows wherever each item restates its context. items-convention's list is 64% larger than its prose, because each item repeats "an item's" or "the State line".
+3. **Its limits:** each list is a listing agent's restatement made for checking, not a format designed for reading. And neither the score nor the size says whether an agent follows a list as well as prose.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4026,3 +4050,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:02:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:14:12 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:16:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:19:09 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:20:30 PM PT
