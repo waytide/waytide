@@ -846,6 +846,28 @@ With both restored, no directive outside the intended resolution is lost, and no
 - **The compiler drops headings inside a compressed text.** Compiled with `--compressed`, a rule loses every `## ` line in its Compressed section, not only the `## Compressed` heading. commit-message-widths loses three sub-headings and announce-a-branch-switch-in-a-bordered-block two, though the text beneath them stays. The defect is in `compile.sh`, and it is recorded rather than fixed, since a change to the compiler goes through the hinges with the engineer.
 - **The rule's name and wording are obscure, in the engineer's judgment.** In talk of commit messages and committing, a commit is to be called a commit and never "a SHA", which is only its identifier. The rule's own name and wording use "a SHA" that way, and are not changed here.
 
+### Headings, and writing their context into each point — 2026-10-23
+
+**The engineer asked whether compiled texts suffer from a lack of clarity.** Mostly they do not.
+
+- **The default compile** removes only the History and Compressed sections and the footer, so a session reads the rule's body unchanged.
+- **The compressed compile** raised the clarity score in 11 of the 14 compressed rules, through shorter sentences.
+- **The dropped sub-headings** are the one loss, and the score does not see it, since it counts only sentences. In the compiled branch-switch rule, the loss of "What this does not cover" leaves its bullets reading as further cases rather than as exceptions. Its first bullet, "Creating a branch is a switch…", no longer reads as a boundary case.
+
+**Whether a heading improves clarity depends on whether it changes how the lines beneath it are read.**
+
+1. **A heading that sets scope helps.** "What this does not cover" makes its bullets exceptions, and "When the subject will not fit" makes what follows conditional.
+2. **A heading that only labels helps little.** "The three fields" sits above a list that is plainly three fields.
+3. **A heading can carry a directive alone**, as #13's lost directive did: "A set declared in a running session takes effect at the next one".
+4. **A bold lead can do a heading's work**, and the compiler keeps it. The first seven compressed rules used none, and all passed the directive check.
+
+**The engineer framed a heading as a category of content that adds context: a normalization by hierarchy.** Writing the heading's context into each point de-normalizes it, with the trade-off normalization predicts.
+
+- **The gains.** Each point stands alone when quoted, compiled without its heading, read out of order, or checked one directive at a time. The two structural losses so far would not have happened. The trade also suits a store read every session and edited rarely, and text that the directive check already breaks into self-contained directives.
+- **The costs.** The scope phrase repeats, which works against compression. A change to the category's wording must reach every point, and the points can drift apart, which this system already counts as a second thing to keep true. And a reader no longer sees at a glance that the points form one set, nor whether it is complete.
+
+**The agent recommends de-normalizing selectively.** Write a heading's context into each point only where it changes the point's meaning: exceptions, conditions, and limits of scope. Keep a short bold lead above the group so the grouping still shows, and leave label-only headings as they are. For example, "**No block for a worktree**: a worktree adds a working directory rather than moving this one."
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3968,3 +3990,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:28:16 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:02:09 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:14:12 PM PT
