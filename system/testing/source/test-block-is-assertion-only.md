@@ -37,6 +37,49 @@ The reasons here do not reach it. It has a single operand, so nothing is buried 
 
 **How to apply:** In the enclosing `context`, declare the controls. Bind the actuation to an explaining variable, and bind any compared-against or expected value to its own explaining variable. The `test` block contains exactly one `assert`, comparing those variables — no value-producing method call inside it. The comparison operator (`==`, etc.) is the assertion's predicate, not an inlined value-producing call, so it stays. A precondition is outside all of this and reads inline.
 
+## Compressed
+
+1. Never inline a method call in an assertion.
+2. Assign every value the assertion examines to an explaining variable first. This includes the actuation result and whatever it is compared against.
+3. The assertion references only those explaining variables and the comparison itself.
+4. A `test` block contains only the assertion: exactly one `assert`.
+5. A `test` block contains no controls setup, no actuation, no variable assignment, and no value-producing method calls.
+6. Declare explaining variables in the enclosing `context` block.
+7. When a test introduces explaining variables, encase its `test` block in a `context` block that declares them.
+8. In the enclosing `context`, declare the controls.
+9. In the enclosing `context`, bind the actuation to an explaining variable.
+10. In the enclosing `context`, bind any compared-against or expected value to its own explaining variable.
+11. The comparison operator (`==`, etc.) is the assertion's predicate, not an inlined value-producing call, so it stays in the assertion.
+
+```ruby
+# No — method call inlined in the assertion
+test do
+  assert(result == Upload::Result.build(control_response))
+end
+
+# Yes — operands are explaining variables declared in the context; test asserts only
+context "..." do
+  control_response = Controls::HTTP::Response.example
+  control_file = Controls::File.example
+
+  upload = Controls::Upload.example
+  result = upload.(control_file)
+  expected_result = Upload::Result.build(control_response)
+
+  test do
+    assert(result == expected_result)
+  end
+end
+```
+
+## The three parts govern a `test` block, and a precondition is not one
+
+1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition.
+2. A precondition is a bare `assert` or `refute` that is not a test. It documents a factor that decides the test's outcome where the script does not express it.
+3. A precondition reads its predicate inline, with no explaining variable.
+4. The precondition is the one stated exception to these parts.
+5. **Why:** A test block should read as a single relation among named values, not a computation mixed with a check. Naming operands in the context documents each value, gives it an inspection point, and separates control from observation.
+
 Related:
 
 - the DBE first-turn rule
@@ -55,3 +98,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
