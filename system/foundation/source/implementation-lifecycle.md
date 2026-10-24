@@ -107,23 +107,48 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 ## Compressed
 
-**An implementation runs on its own branch, through the five hinges, to a declared state.** It is never left silently open. Its tag decides the parts that differ. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the implementations-convention). A clause below names a kind only because of that difference.
+1. An implementation runs on its own branch, through the five hinges, to a declared state.
+2. It is never left silently open.
+3. Its tag decides the parts that differ.
+4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the implementations-convention).
+5. A clause below names a kind only because of that difference.
 
-**The branch.**
+## The branch
 
-- **Name it `experiment/<subject>` or `feature/<subject>`**, matching the tag. The subject is short, lower-case, and dash-separated, and names literally what is tested or built. Add `-run-<n>` only where an experiment has more than one run.
-- **With a worktree, the name carries `worktree/`**: `experiment/worktree/<subject>`, `feature/worktree/<subject>`. A branch checked out in a worktree cannot be checked out in the main working tree, and `git branch` is where that question comes up.
-- **Adding a worktree to work under way renames the branch.** The rename is confirmed, and the record carries it.
-- **Keep the upstream branch out of the name**, since a branch can outlive its upstream target. The record names it. A worktree is the one fact the name carries, because `git branch` has no other answer for it, and the rename keeps that fact current.
-- **Record the base as its commit SHA and the ref it came from**, and make no git tag for it. A later run branches from the recorded commit.
+1. Name it `experiment/<subject>` or `feature/<subject>`, matching the tag.
+2. The subject is short, lower-case, and dash-separated, and names literally what is tested or built.
+3. Add `-run-<n>` only where an experiment has more than one run.
+4. With a worktree, the name carries `worktree/`: `experiment/worktree/<subject>`, `feature/worktree/<subject>`.
+5. A branch checked out in a worktree cannot be checked out in the main working tree, and `git branch` is where that question comes up.
+6. Adding a worktree to work under way renames the branch.
+7. The rename is confirmed, and the record carries it.
+8. Keep the upstream branch out of the name, since a branch can outlive its upstream target. The record names it.
+9. A worktree is the one fact the name carries, because `git branch` has no other answer for it.
+10. The rename keeps that fact current.
+11. Record the base as its commit SHA and the ref it came from.
+12. Make no git tag for the base.
+13. A later run branches from the recorded commit.
 
-**Phases.** An experiment may run in phases, each a question that serves the experiment's. The record names the phases and their order at the start, and states each phase's forecast before its work.
+## Phases
 
-- **A phase's branch is the experiment's branch, a dot, and the phase's name**: `experiment/rule-reduction.flattening`. Git refuses a slash here, because no branch can sit beneath another branch's name. A `worktree/` segment carries into each phase's name.
-- **A phase branches from the experiment's branch and concludes into it.** The engineer declares it affirmed, refuted, or inconclusive. An affirmed phase merges back into the experiment's branch, and the record carries each phase's verdict and findings.
-- **One phase runs at a time, in the record's order**, each from the experiment's branch as the earlier phases left it. A phase merges nowhere else. The experiment concludes after its phases, and only then merges to its upstream branch.
+1. An experiment may run in phases, each a question that serves the experiment's.
+2. The record names the phases and their order at the start.
+3. The record states each phase's forecast before its work.
+4. A phase's branch is the experiment's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`.
+5. Git refuses a slash here, because no branch can sit beneath another branch's name.
+6. A `worktree/` segment carries into each phase's name.
+7. A phase branches from the experiment's branch and concludes into it.
+8. A phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+9. An affirmed phase merges back into the experiment's branch.
+10. The record carries each phase's verdict and findings.
+11. One phase runs at a time, in the record's order, each from the experiment's branch as the earlier phases left it.
+12. A phase merges nowhere else.
+13. The experiment concludes after its phases, and only then merges to its upstream branch.
 
-**The working location.** Put it through the selection interface at every start, with no default. Each option states what it creates:
+## The working location
+
+1. Put the working location through the selection interface at every start, with no default.
+2. Each option states what it creates:
 
 > **Branch only** — Create the branch and switch this working tree to it. At the conclusion this
 > working tree switches back.
@@ -135,28 +160,83 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 > **The current branch** — Build it where the working tree already is, creating nothing. There is
 > no branch to switch back to and nothing to merge.
 
-- **Offer the current branch for a feature only, and offer it last.** An experiment's changes must not reach the main line before it is affirmed, and its branch is what keeps them out. A feature is the main line. A first option reads as recommended, and the current branch gives up isolation. On it, partial work sits where others read, and abandoning means reverting.
-- **Place a worktree beside the repository directory**, named `<repository-name>-<branch, its slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`. A worktree inside would show as untracked content in the work's own `git status`.
-- **Create with `git switch -c <branch>` or `git worktree add -b <branch> <path>`.** Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
-- **Change the location only by adding a worktree**, on one of two triggers. Other work arrives that the engineer means to work alongside, or the work is escalated, needing more isolation than it was taken for. Confirm the addition, add a line to the record, and keep the original. The conclusion follows the location as it then stands. Never collapse a worktree back.
+3. Offer the current branch for a feature only.
+4. An experiment's changes must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
+5. A feature is the main line.
+6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
+7. On the current branch, partial work sits where others read, and abandoning means reverting.
+8. Place a worktree beside the repository directory, named `<repository-name>-<branch, its slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
+9. A worktree inside the repository would show as untracked content in the work's own `git status`.
+10. Create with `git switch -c <branch>` or `git worktree add -b <branch> <path>`.
+11. Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
+12. Change the location only by adding a worktree.
+13. Add one on one of two triggers: other work arrives that the engineer means to work alongside.
+14. Or the work is escalated, needing more isolation than it was taken for.
+15. Confirm the addition.
+16. Add a line to the record, and keep the original.
+17. The conclusion follows the location as it then stands.
+18. Never collapse a worktree back.
 
-**Participation.** Put attended or unattended through the selection interface beside the working location. Attended is the default. Each choice is made once and held for the work's duration. Record both choices. DBE is in effect either way, and only the stopping changes (see the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule).
+## Participation
 
-**The end.** Every implementation ends in a declared state, or is suspended, which pauses it. The words are the implementations-convention's.
+1. Put attended or unattended through the selection interface beside the working location.
+2. Attended is the default.
+3. Each choice is made once and held for the work's duration.
+4. Record both choices.
+5. DBE is in effect either way, and only the stopping changes (see the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule).
 
-- **An `[experiment]` is affirmed only on the engineer's explicit declaration.** Its log is then copied into the project decision log. Where it produced implementation, its branch merges to the upstream branch, after the tests and, where no test covers the work, after specific confirmation. An observation-only experiment's affirmation is the log copy alone.
-- **A `[feature]` merges with no gate**, because run-suite-before-commit verified every commit. The merged result can still break the suite, and that is fixed from there. A feature has no affirmation.
-- **Refuted, inconclusive, abandoned, and superseded work keeps its record and does not merge.**
-- **Supersession runs through suspension.** The superseded implementation stays Suspended, its branch kept, until the engineer concludes it as superseded. The two records name each other.
-- **A child supersedes its parent by preserving it.** The child merges the parent first, taking every commit the parent made after the child branched. The parent is then parked Superseded, the records name each other, the child takes the parent's upstream, and the parent branch is deleted on confirmation. This is the one supersession that merges the superseded branch.
-- **Conclude in the main working tree, on the upstream branch.** Under branch only, the working tree switches back. Under a worktree, end the session in the main working tree, never in the removed directory. On the current branch there is nothing to return from.
-- **Branch deletion takes one confirmation from the engineer**, through the selection interface, and the worktree is removed first. Git refuses to delete a branch checked out in a worktree. Suspension deletes no branch and removes no worktree.
+## The end
 
-**The agent never raises the end of an `[experiment]`.** Do not offer to conclude, affirm, refute, or merge one: not as a next step, an option, or a precondition. The precondition is the form that slips through, as in *this cannot be published until it merges*. Report what is settled and what is open, and stop. An experiment's length is the engineer's judgment, not readable from the work done. A `[feature]` is not covered, because its completion is ordinary.
+1. Every implementation ends in a declared state, or is suspended, which pauses it.
+2. The words are the implementations-convention's.
+3. An `[experiment]` is affirmed only on the engineer's explicit declaration.
+4. On affirmation, its log is copied into the project decision log.
+5. Where it produced implementation, its branch merges to the upstream branch, after the tests.
+6. Where no test covers the work, the merge also waits for specific confirmation.
+7. An observation-only experiment's affirmation is the log copy alone.
+8. A `[feature]` merges with no gate, because run-suite-before-commit verified every commit.
+9. The merged result can still break the suite, and that is fixed from there.
+10. A feature has no affirmation.
+11. Refuted, inconclusive, abandoned, and superseded work keeps its record.
+12. Refuted, inconclusive, abandoned, and superseded work does not merge.
+13. Supersession runs through suspension.
+14. The superseded implementation stays Suspended, its branch kept, until the engineer concludes it as superseded.
+15. The two records name each other.
+16. A child supersedes its parent by preserving it.
+17. The child merges the parent first, taking every commit the parent made after the child branched.
+18. The parent is then parked Superseded, and the records name each other.
+19. The child takes the parent's upstream.
+20. The parent branch is deleted only on confirmation.
+21. This is the one supersession that merges the superseded branch.
+22. Conclude in the main working tree, on the upstream branch.
+23. Under branch only, the working tree switches back.
+24. Under a worktree, end the session in the main working tree, never in the removed directory.
+25. On the current branch there is nothing to return from.
+26. Branch deletion takes one confirmation from the engineer, through the selection interface.
+27. Remove the worktree first, since git refuses to delete a branch checked out in a worktree.
+28. Suspension deletes no branch and removes no worktree.
 
-**Drift.** While an `[experiment]` is open under branch only, watch for main-sequence work starting, and surface it. Offer two recourses through the selection interface: suspend the experiment, or add a worktree. Neither ends it, and the engineer's intent decides. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question. It is a practice, not a guarantee. Under a worktree there is nothing to watch, and the session-start notice reports every implementation not concluded. A `[feature]` has no watch, since starting other work during one is ordinary. A forgotten feature is reported by the same notice.
+## The agent never raises the end of an `[experiment]`
 
-**Why:** an experiment and a feature share one lifecycle, and differ only where a question differs from an intent. Stated once, with six clauses conditioned on the tag, the difference shows directly.
+1. Do not offer to conclude, affirm, refute, or merge one: not as a next step, an option, or a precondition.
+2. The precondition is the form that slips through, as in *this cannot be published until it merges*.
+3. Report what is settled and what is open, and stop.
+4. An experiment's length is the engineer's judgment, not readable from the work done.
+5. A `[feature]` is not covered, because its completion is ordinary.
+
+## Drift
+
+1. While an `[experiment]` is open under branch only, watch for main-sequence work starting, and surface it.
+2. Offer two recourses through the selection interface: suspend the experiment, or add a worktree.
+3. Neither recourse ends the experiment, and the engineer's intent decides.
+4. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question.
+5. The watch is a practice, not a guarantee.
+6. Under a worktree there is nothing to watch.
+7. The session-start notice reports every implementation not concluded.
+8. A `[feature]` has no watch, since starting other work during one is ordinary.
+9. A forgotten feature is reported by the same notice.
+10. **Why:** an experiment and a feature share one lifecycle, and differ only where a question differs from an intent. Stated once, with six clauses conditioned on the tag, the difference shows directly.
+
 
 Related:
 
@@ -177,3 +257,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 2:08:32 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:57 PM PT
