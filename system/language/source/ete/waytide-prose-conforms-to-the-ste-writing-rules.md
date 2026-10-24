@@ -50,6 +50,62 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 
 **How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary, then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use, add it to the table and add the phrase that met it.
 
+## Compressed
+
+1. ASD-STE100 holds 53 writing rules in nine sections.
+2. These rules bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers.
+3. This rule holds the STE rules Waytide breaks most.
+4. When another STE rule is found broken in use, add it to the table. Record beside it the phrase that broke it.
+5. This rule is part of Eventide Technical English, or ETE. ETE is Waytide's implementation of the standard.
+6. The waytide-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Waytide's vocabulary decides first, and the standard second.
+7. Three rules carry ETE's departures from the standard. Each names the STE rule it contradicts.
+8. The ete-declares-its-own-categories rule adds five categories of Waytide's own.
+9. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives.
+10. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone.
+11. Check a phrase against Waytide's vocabulary first.
+12. Then check it against the STE dictionary.
+13. Then check it against the writing rules below.
+
+## The writing rules
+
+| The rule | What it requires |
+|---|---|
+| STE Rule 1.3 | Use an approved word only with its approved meaning. The ete-fixes-the-meaning-of-a-word-in-its-category rule overrides this for a word reserved in an ETE category |
+| STE Rule 3.6 | Use the active voice. In descriptive writing the passive is permitted only where the agent is unknown |
+| STE Rule 4.2 | Do not omit words. Its own words: *Each sentence must have all its parts* |
+| STE Rule 8.1 | Do not use the semicolon. The standard's reason is that a semicolon lets you write very long sentences |
+| STE Rules 5.1 and 6.3 | A procedural sentence takes 20 words or fewer. A descriptive sentence takes 25 or fewer |
+| STE Rule 6.6 | A descriptive paragraph takes six sentences or fewer |
+
+## Two worked phrases
+
+1. The agent wrote each of these phrases. Each broke Waytide's vocabulary before it broke the standard.
+
+### `swept across 20 files`
+
+1. **`swept`**: the `language` vocabulary discontinues `sweep` for `conform`. The STE dictionary replaces `sweep (v)` with `SCAN`, which does not carry the meaning either.
+2. **`across`**: `ACROSS (prep)` is approved only as *from one side to the other*. STE Rule 1.3 forbids other meanings. Where `across` would mean *throughout*, write `in`, as in `in 20 files`.
+3. **`was swept`**: this is the passive with a known agent, against STE Rule 3.6.
+4. **The semicolon** in the sentence that held it is against STE Rule 8.1.
+
+Before: `` `gate` is a technical noun; its verb form is `wait`, swept across 20 files. ``
+
+After: `` `gate` is a technical noun. Its verb form is `wait`. Twenty files conform to this. ``
+
+### `The two checks green`
+
+1. **`green`**: the `testing` vocabulary substitutes `verified`. The word is also absent from the STE dictionary.
+2. **`The two`**: `the two (adj)` is not approved. The STE dictionary gives `THE TWO (TN)`, as in `ATTACH THE TWO ENDS`.
+3. **No verb**: this is against STE Rule 4.2.
+
+Before: `The two checks green`
+
+After: `The two checks are verified.` Or, to say what happened rather than name a state: `The two checks found no defect.`
+
+4. **`checks` survives.** `CHECK (n)` is approved, as in `DO A CHECK OF THE …`.
+5. Only `check (v)` is not approved. The STE dictionary gives `MAKE SURE` for it.
+6. **Why:** the STE dictionary reaches one word at a time, and the writing rules reach every sentence. A writer who reads only the dictionary still writes long passive sentences. Each rule is recorded beside the phrase that met it, so a rule is findable by the shape of the mistake.
+
 Related:
 
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
@@ -71,3 +127,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 6:24:18 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
