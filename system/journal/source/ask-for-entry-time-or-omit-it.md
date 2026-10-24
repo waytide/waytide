@@ -33,6 +33,43 @@ Stamp the filename to the minute under **Now**, and under a time the writer stat
 
 Name the file and write the datetime line to match the answer. Settle the date first by the journal-entries rule's dating default, and do not put the date to the writer.
 
+## Compressed
+
+1. When creating a journal entry where the writer has not given a **time**, ask them through the selection interface.
+2. Do not choose a default time.
+3. Do not invent or guess a placeholder time.
+4. A date does not settle the time. *Yesterday*, *today*, *last Tuesday*, and an explicit date each fix only the day.
+5. The ask fires for each of those date references.
+6. The answer decides only whether the entry carries a time and what it is.
+7. Settle the date before the ask, by the journal-entries rule's dating default.
+8. Where the writer referred to a day, the entry takes that day. Where they referred to none, it takes today.
+9. The ask does not revisit the date. Do not put the date to the writer.
+10. This rule governs the time alone.
+
+## The ask carries these options
+
+1. **No time.** The filename drops the `T HH-MM` block and becomes `YYYY-MM-DD-<name>.md`.
+2. Under **No time**, the datetime line drops the `at HH:MM` and reads `Ddd Mon D YYYY`.
+3. **Now**, with the current time in the label, as in `Now (2:01 PM)`.
+4. Under **Now**, the filename takes the `YYYY-MM-DDTHH-MM` prefix.
+5. Under **Now**, the datetime line reads `Ddd Mon D YYYY at HH:MM`.
+6. **Enter the time.** The writer gives the value.
+7. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix.
+8. Every other entered value stops at the minute.
+9. **Explain**, per the foundation package's present-every-prompt-through-askuserquestion rule.
+
+## Applying the answer
+
+1. Offer **Now** only for an entry about today.
+2. For a back-dated entry, offer only **No time**, **Enter the time**, and **Explain**.
+3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
+4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
+5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt rule.
+6. The harness's own free-text option remains for anything else.
+7. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
+8. Name the file and write the datetime line to match the answer.
+9. **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact.
+
 Related:
 
 - the journal-entries rule — the dating default that settles the date, and the filename stamp
@@ -49,3 +86,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:01:46 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
