@@ -34,6 +34,41 @@ end
 
 When flattening an over-nested test, flatten **only** where there is no code between the context and the `test`. The context then holds nothing but the test. The context must **also** not be a leading `When …` condition.
 
+## Compressed
+
+1. A `test` block holds exactly one assertion and nothing else, per the test-block-is-assertion-only rule.
+2. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
+3. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
+4. Local instrumentation means an explaining variable of the outcome's own.
+5. Local instrumentation also means a `comment` or `detail` specific to that outcome.
+6. Also use a named `context` where it is a leading `When …` condition, promoted to a context per the error-test-named-fails-condition-is-context rule.
+7. The `When` exception covers only a leading `When …`.
+8. A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test.
+9. An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"` and `"Located when the response carries a location"`.
+10. Such a name flattens to a directly named test, as in `test "Created when the file is accepted" do …`.
+11. When the outcome is a single assertion over values already in scope, name the `test` directly and use no context.
+12. Values already in scope are the shared controls and actuation at the top of the feature context.
+
+```ruby
+# No local setup needed → named test, no context
+test "Is the location the response carries" do
+  assert(location == control_location)
+end
+
+# Local explaining variable / detail needed → context holds it
+context "Status" do
+  status = result.status
+  detail status.inspect
+  test do
+    assert(status == 201)
+  end
+end
+```
+
+13. When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test.
+14. Do not flatten a context that is a leading `When …` condition.
+15. **Why:** a context should mean "there is local instrumentation here." A context holding only a bare test adds a nesting level that carries no information, and the name belongs on the test.
+
 Related:
 
 - the test-block-is-assertion-only rule
@@ -50,3 +85,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
