@@ -10,6 +10,24 @@ The word is used as a general quality of a design. It is judged **by the reader*
 
 **How to apply:** use "solubility" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
 
+## Compressed
+
+1. "Solubility" is the design-quality term for how readily a unit dissolves smoothly into the reader's cognition and understanding.
+2. Solubility is cognitive.
+3. The ideal is immediate comprehension with minimal interpretive work, which is knowledge at a glance.
+4. A soluble unit is as simple as it should be and no simpler.
+5. It has maximum simplicity and minimal necessary complexity, found rather than presumed.
+6. The word names a general quality of a design.
+7. Solubility is judged by the reader, not by the writer who made the unit.
+8. A unit understood only after the reader reconstructs the writer's reasoning is not soluble, however tidy it reads to the writer.
+9. Say "soluble" or "solubility" for this quality.
+10. It is not a synonym for "simple", "clean", or "elegant".
+11. A unit can be simple and still cost the reader interpretive work.
+12. "Clean" and "elegant" describe how the code reads to someone who already understands it.
+13. Use "solubility" wherever the concern is how readily a unit is understood: in prose, rules, designs, commits, and dialogue.
+14. Judge it from the reader by asking what interpretive work the unit costs them. Aim design work at solubility, and use it as the criterion when a design is judged.
+15. **Why:** The quality needs one settled name so it can be aimed at, taught, and used as a criterion when a design is judged, not left to unstated taste.
+
 Related:
 
 - the name-literally-not-by-analogy rule — which uses solubility as its criterion
@@ -22,3 +40,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
