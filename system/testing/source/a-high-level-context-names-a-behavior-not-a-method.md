@@ -32,6 +32,35 @@ The relaxation with depth follows from the same reason. A deep context is read w
 
 Prefer a behavior at every level. Where a deeper context describes an implementation element, it may name that element.
 
+## Compressed
+
+1. A test's high-level context names a behavior.
+2. A high-level context does not name a method. A method name is an implementation.
+3. A high-level context does not name a class's internal structure.
+4. `context "Call"` names the method `call` and states nothing about what the unit does.
+
+## The requirement is firm at the top and relaxes with depth
+
+1. The requirement applies more firmly at higher contexts and more permissively at deeper ones.
+2. The higher a context sits, the more firmly it names a behavior.
+3. The unit's own context and the contexts directly under it must not name a method.
+4. A deeper context may name an implementation element when it describes one part of how the behavior is carried out.
+5. The predicate-context-name rule is that case. `context "Defined Predicate"` sits inside the behavior it qualifies.
+6. No fixed level marks the change. The writer judges where a context has begun to describe the implementation.
+7. Prefer a behavior at every level.
+8. A deep context that can name a behavior still names one.
+
+## Where the root test sits
+
+1. A unit's root test has no second-level context.
+2. The root test sits directly under the unit's own context.
+3. The root test's outcome context carries the name of the unit's central behavior.
+4. Each subsequent test takes a second-level context named for the behavior it covers.
+5. Contexts mirror the file path under `test/automated/`, per the test-context-nesting-mirrors-folders rule. Do not drop a context and keep its path segment.
+6. A root test lives at `test/automated/<unit>.rb`.
+7. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
+8. **Why:** a context is read first and decides what the reader takes the test to be about. A method name sends the reader to the source, and goes stale silently if the method is renamed. A deep context is read with the behavior above it in hand, so naming an implementation element costs nothing.
+
 Related:
 
 - the test-context-nesting-mirrors-folders rule — the path the contexts mirror
@@ -45,3 +74,4 @@ Related:
 Authored by Scott Bellware on Fri Aug 28 2026 at 10:13:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
