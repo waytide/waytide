@@ -26,6 +26,30 @@ Offering the candidates rather than asking for a version outright is what keeps 
 
 **How to apply:** at a release, read the current version. Present patch, minor, and major as options through the selection UI, with the resulting version and the claim each makes. Let the engineer choose. Do not include the generation. Do not propose one and ask for confirmation.
 
+## Compressed
+
+1. At a release, the agent does not select the next version.
+2. The agent presents the candidates through the **AskUserQuestion** selection UI.
+3. Present one option per segment that could be increased.
+4. Each option shows the version that would result.
+5. The engineer chooses.
+6. For a package at `2.2.3.1`, the options are:
+
+```
+Patch  → 2.2.3.2   behavior corrected, interface unchanged
+Minor  → 2.2.4.0   capability added, existing use unaffected
+Major  → 2.3.0.0   existing use may not survive
+```
+
+7. At a release, read the current version first.
+8. Offer patch, minor, and major as the options.
+9. The generation is not among the candidates. It is not a release-time decision. See the version-scheme rule.
+10. Each option states the compatibility claim it makes, not only the number.
+11. The resulting version is shown too, since it is what will be written and committed.
+12. Offer candidates rather than asking the engineer for a version outright.
+13. Do not propose a version and ask for confirmation. The decision is put at a gate.
+14. **Why:** Which segment increases is a claim about other people's code, not derivable from the diff. A published version cannot be taken back, only superseded.
+
 Related:
 
 - the version-scheme rule — what the segments mean and why the generation is excluded
@@ -44,3 +68,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
