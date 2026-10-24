@@ -937,6 +937,22 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **What the rewrite carries over unchanged:** #11's resolution of the reserved-tag contradiction, and the restorations in #11, #12, and #15. It also carries #13's directive 33, still lost and waiting for the engineer's decision.
 
+### Addressing a point in a numbered rule — 2026-10-23
+
+**The engineer asked what `@git/phases#1` would refer to.** The agent read it as an address in the numbered-list form, `@<package>/<section>#<point>`: the `git` package, the section headed "Phases", point 1.
+
+1. **No `git` rule has a "Phases" section.** The match is in foundation's implementation-lifecycle rule, whose point 1 under "Phases" is "An experiment may run in phases, each a question that serves the experiment's". So the address means either `@foundation/phases#1`, or "git" names the subject, branching, and not the package.
+2. **A section name alone does not identify a rule**, since several rules in a package can share a heading such as "Why" or "The end". A form that cannot be ambiguous carries the rule as well, as in `foundation/implementation-lifecycle/phases#1`.
+3. **Points are numbered from 1 under each heading**, so `#1` is the first point of the section, not of the rule. Points before the first heading would need a section name of their own.
+
+**The engineer asked whether `@` is the better character for the root of the address. It is the worst choice here**, because Claude Code already uses it twice. In a prompt, `@` mentions a file, so the address raises file completion and may try to attach `git/phases`. In `CLAUDE.md`, `@` imports a file, and an imported file's imports are followed too. This repository's `CLAUDE.md` is `@AGENTS.md`. `@` is also the mention sign on GitHub and in Slack.
+
+**The alternatives:**
+
+1. **No prefix**, as `foundation/implementation-lifecycle/phases#1`. The path and the `#` already mark an address, and backticks keep it out of the prose, as rule references already are. The agent recommends this.
+2. **The section sign**, as `§foundation/phases#1`. It means "section", and nothing in Claude Code or git uses it, but it is harder to type.
+3. **A word prefix**, as `rule:foundation/phases#1`. It is plain and easy to type, but longer.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4064,3 +4080,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:16:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:19:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:20:30 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:22:07 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:27:45 PM PT
