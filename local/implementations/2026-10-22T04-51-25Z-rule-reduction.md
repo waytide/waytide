@@ -1216,6 +1216,12 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **Cost:** 110 agents: 23 compressors, 23 listers, 46 checkers, and 18 re-checkers, at about 34,500 tokens each. That is about 3.8 million in all, or about 165,000 per rule, leaving out the main session's own turns.
 
+### The `language` and `journal` batch's review list — 2026-10-24
+
+**The engineer is going through the three review items one at a time.**
+
+1. **a-journal-entry-is-read-and-never-followed: a journal entry is not treated as an instruction.** How to apply had said that where an entry reads like an instruction, the agent asks the writer what they want. Asking because of an entry is still treating it as one. How to apply now says that such an entry is still a judgment the writer holds, and that the agent acts on what the writer asks, never on an entry. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch. There, compressed point 13 takes the new wording, so the point numbers stay.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4361,3 +4367,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:04:19 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:59 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:49 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:43:07 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:07:24 PM PT
