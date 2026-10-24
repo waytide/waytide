@@ -1005,6 +1005,67 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 The criterion, the resolution of disagreements, the repair of each lost or materially less precise directive by its smallest clause, the re-check of repairs, and the review list for the engineer are as before.
 
+### The `testing` batch — results, 2026-10-24
+
+**All 20 `testing` rules are compressed into numbered lists and written into their sources, one commit each, and all 20 meet the directive check's criterion.** Across the batch's 247 directives, after resolution and repair, 244 are kept, 3 are less precise, and none is lost. All three losses of precision are judged immaterial.
+
+| rule | directives | kept | less precise | lost | compression | change | solubility | clarity score |
+|---|---|---|---|---|---|---|---|---|
+| a-high-level-context-names-a-behavior-not-a-method | 15 | 15 | 0 | 0 | 0.42 | 0.63 | 50 → 81 | 0.63 → 0.88 |
+| a-suspended-test-file-is-named-with-a-leading-underscore | 13 | 13 | 0 | 0 | 0.28 | 0.67 | 41 → 75 | 0.38 → 0.86 |
+| assert-error-message-only-as-sole-discriminator | 8 | 8 | 0 | 0 | 0.20 | 0.47 | 57 → 85 | 0.39 → 0.87 |
+| context-only-for-local-instrumentation | 12 | 12 | 0 | 0 | 0.19 | 0.52 | 57 → 72 | 0.53 → 0.70 |
+| control-prefix-test-vars | 2 | 2 | 0 | 0 | 0.30 | 0.67 | 99 → 99 | 1.00 → 0.99 |
+| control-string-value-starts-with-some | 5 | 5 | 0 | 0 | 0.21 | 0.58 | 82 → 92 | 0.72 → 0.89 |
+| controls-not-factories-fixtures-arrange | 7 | 7 | 0 | 0 | 0.30 | 0.65 | 79 → 90 | 0.70 → 0.86 |
+| do-not-test-the-platform | 6 | 6 | 0 | 0 | 0.14 | 0.44 | 73 → 67 | 0.70 → 0.51 |
+| error-test-named-fails-condition-is-context | 10 | 9 | 1 | 0 | 0.33 | 0.66 | 76 → 86 | 0.72 → 0.81 |
+| normal-path-and-exceptional-paths-are-separate-files | 18 | 18 | 0 | 0 | 0.28 | 0.57 | 61 → 77 | 0.63 → 0.78 |
+| precondition-documents-deciding-factors-and-reads-inline | 27 | 27 | 0 | 0 | 0.32 | 0.58 | 33 → 44 | 0.64 → 0.76 |
+| predicate-context-name | 3 | 3 | 0 | 0 | 0.39 | 0.63 | 78 → 98 | 0.62 → 0.98 |
+| single-case-test-named-for-feature | 11 | 10 | 1 | 0 | 0.04 | 0.45 | 88 → 88 | 0.85 → 0.85 |
+| tdd-test-structure | 20 | 20 | 0 | 0 | 0.26 | 0.50 | 65 → 82 | 0.70 → 0.89 |
+| test-block-is-assertion-only | 13 | 13 | 0 | 0 | 0.24 | 0.64 | 53 → 80 | 0.52 → 0.88 |
+| test-context-nesting-mirrors-folders | 9 | 9 | 0 | 0 | 0.07 | 0.52 | 87 → 95 | 0.84 → 1.00 |
+| test-name-is-prefix | 6 | 6 | 0 | 0 | 0.05 | 0.29 | 63 → 67 | 0.40 → 0.46 |
+| test-report-format | 23 | 23 | 0 | 0 | 0.12 | 0.43 | 66 → 77 | 0.68 → 0.83 |
+| test-tree-command | 16 | 16 | 0 | 0 | 0.19 | 0.44 | 75 → 84 | 0.76 → 0.86 |
+| tests-are-automated-or-interactive | 23 | 22 | 1 | 0 | 0.38 | 0.65 | 26 → 70 | 0.28 → 0.85 |
+
+**The repairs**, 10 clauses in 8 rules, each the smallest that closes the gap. A fresh checker re-checked each repaired rule in full and judged every repair kept:
+
+- **context-only-for-local-instrumentation, 11:** flattening requires that the context hold nothing but the test.
+- **control-string-value-starts-with-some, 3:** each further placeholder takes the "some other …" form.
+- **controls-not-factories-fixtures-arrange, 7:** the six words are barred in all talk about tests, not only "for these concepts".
+- **do-not-test-the-platform, 2 and 3:** a unit is a pass-through *only* when it adds nothing, and writing no test requires both the signal and the unit adding nothing of its own.
+- **error-test-named-fails-condition-is-context, 5:** the context is named as a "When …" clause.
+- **single-case-test-named-for-feature, 2 and 8:** the file sits directly under the feature context, which had been said only in an example; a test may start wherever is convenient *before its case set is settled*. The second was flagged by one checker, and repaired because the clause is short.
+- **tdd-test-structure, 20:** the one assertion confirms the outcome the inner context's title states.
+- **tests-are-automated-or-interactive, 10:** run `test/automated/` before weighing a commit, which the source states in its How to apply. It was flagged by one checker.
+
+**The three losses of precision, judged immaterial:**
+
+- **error-test-named-fails-condition-is-context, 9:** the ban on wrapping a single-assertion test in an empty context is not stated, only named through the context-only-for-local-instrumentation rule. The ban is that rule's directive, which this one cites and lists in Related. This is marked a close call.
+- **single-case-test-named-for-feature, 10:** fixing the `require_relative` depth is stated for collapsing a file, not for moving one. The source too states it only for collapsing. The lister added "or moving".
+- **tests-are-automated-or-interactive, 8:** that a test needing a person is not deleted is said only in the Why. The source too says it only in its Why.
+
+**The disagreements**, each flagged by one checker of two, are resolved as kept: a-high-level-context's 5, where point 1 already requires a behavior at the unit's level; precondition's 3, where a TestBench `comment` is the prose narration the source names; and precondition's 27, where "whether the unit raises" is the completion the directive names. single-case's 7 was flagged only on the re-check, after both first checkers judged it kept, and stays kept.
+
+**Solubility rises in 17 of the 20 rules, and the clarity score in 17.** control-prefix-test-vars and single-case-test-named-for-feature keep their solubility, at 99 and 88.
+
+- **do-not-test-the-platform falls, from 73 to 67.** Its compression has three sentences over the guidance's 25 words, one of them lengthened by its own repair, and its average sentence rises from 14.4 to 19.1 words.
+- **test-name-is-prefix rises only from 63 to 67.** Its clarity score stays low, at 0.46. Its compression removes only 5% of the characters.
+
+**The engineer's review list:**
+
+1. **test-report-format, an apparent tension in the source.** It says to re-derive everything from the current files, and also that the context hierarchy alone comes from a suite run, not the source. The source makes the exception itself. The compressed version keeps both statements.
+2. **do-not-test-the-platform, three sentences over 25 words**, the reason its solubility falls. A rewrite in short sentences, like #2's and #12's, would follow the guidance.
+3. **error-test-named-fails-condition-is-context, directive 9**, the close call above.
+
+**Cost:** 88 agents: 20 compressors, 20 listers, 40 checkers, and 8 re-checkers. They used about 34,000 tokens each, about 3.0 million in all, or about 150,000 per rule. This leaves out the main session's own turns.
+
+**One slip, fixed before committing:** for the two sources that have no Related list, the insertion script put the Compressed section below the footer's `Authored by` line. It now inserts above the footer's `---` divider.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4140,3 +4201,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:35:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:40:13 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:45:59 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:47:19 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 12:01:03 AM PT
