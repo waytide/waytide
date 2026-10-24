@@ -14,6 +14,34 @@ The structure of a full entry is therefore the `# <title>`, then the datetime li
 
 **How to apply:** when creating an entry, compute the datetime line from the local-time filename stamp with `date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"`, and collapse any double space. Use `"%Y-%m-%d %H:%M:%S"` as the parse format where the stamp carries seconds. Place the line under the title, above any `**Tags:**` or `**Summary:**` line.
 
+## Compressed
+
+1. Every journal entry carries a datetime stamp line in its content.
+2. The line sits on its own line, directly under the `# <title>` heading.
+3. It sits above the `**Tags:**` line, where there is one.
+4. It sits above the `**Summary:**` line, where there is one.
+5. It sits above the body.
+6. Format: `Ddd Mon D YYYY at HH:MM`. An example is `Mon Jun 1 2026 at 13:40`.
+7. The fields are the abbreviated weekday, then the abbreviated month, then the day of the month with no leading zero.
+8. Next come the four-digit year, the literal word `at`, and the 24-hour `HH:MM`.
+9. Derive the datetime from the entry's filename stamp, which is local time, per the journal-entries rule.
+10. Parse the filename's `YYYY-MM-DDTHH-MM` as local time.
+11. Parse its `YYYY-MM-DDTHH-MM-SS` form as local time, where the writer gave seconds.
+12. Convert no time zone.
+13. The line reads to the minute, whichever form the stamp takes.
+14. Parse a stamp that carries seconds to the second, and render it without the seconds.
+15. A full entry is the `# <title>`, the datetime line, the optional `**Tags:**` line, the optional `**Summary:**` line, then the body.
+16. Omit the body where it would duplicate the title.
+17. When creating an entry, compute the line from the local-time filename stamp with this command:
+
+```
+date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
+```
+
+18. Collapse any double space in the output.
+19. Where the stamp carries seconds, use `"%Y-%m-%d %H:%M:%S"` as the parse format.
+20. **Why:** the entry's date and time show in readable form, in the content and in a Quick Look preview, so the reader does not have to decode the filename stamp.
+
 Related:
 
 - the journal-entries rule — the filename stamp this is derived from, and its local time
@@ -29,3 +57,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
