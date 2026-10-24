@@ -51,6 +51,59 @@ A **project** settles a term for itself. Put it in `waytide/local/vocabulary.md`
 
 Give a package a vocabulary only when its domain has specialized words. When a word appears in two vocabularies, the more specific one decides. The entry says whether it narrows the general term or replaces it. Keep substitutions and discontinuations under separate headings.
 
+## Compressed
+
+1. A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces.
+2. It is binding.
+3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue.
+4. Give a package a vocabulary only when its domain has specialized words.
+5. A package whose subject is written in ordinary words has no vocabulary. The absence is correct, not missing.
+6. `git` and `ext/ruby-lang` have none. Six packages do.
+7. Put a term in the vocabulary of the package whose domain it belongs to.
+8. Put a domain-less term or substitution in `language`. Put a domain-specific substitution in its own package's vocabulary.
+
+## What a vocabulary holds
+
+1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
+2. A term is a glossary entry, and it says what the concept is.
+3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
+4. **Discontinuations** name a word removed from use with nothing in its place. `discriminator` went because the concept went.
+5. A substitution names two words. A discontinuation names one.
+6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
+7. A word Waytide did not coin is still a term, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+8. Where a word was taken rather than coined, the entry says so in its own prose.
+9. That statement is an **origin**, not a kind of entry.
+
+## Which vocabulary decides
+
+1. Four levels hold terms, and a word can appear in more than one.
+2. They decide in this order, from the one that decides first:
+   1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
+   2. **The `language` package's vocabulary**: the terms and substitutions that belong to no domain. The `language` vocabulary says so itself.
+   3. **An individual package's vocabulary**: the terms and substitutions of one domain.
+   4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
+3. When a word appears in two vocabularies, the more specific one decides.
+
+## A project's own vocabulary is `waytide/local/vocabulary.md`
+
+1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
+2. It has the same shape as a package's `vocabulary.md`.
+3. It takes no datetime prefix. It is a structural file, not a dated decision. See the file-names rule.
+4. It is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
+5. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
+6. It is optional, and its absence is not a defect.
+7. Write no such file until there is a term to write.
+8. It is not a rule. Do not put it in `rules/`.
+
+## Specialization is not conflict
+
+1. A package can narrow a general term rather than contradict it. The narrower entry rests on the general one and does not displace it.
+2. Example: `language` defines `actuation` as the invocation of a unit from its use site. `design-by-efferent` adds that the actuation is written before any implementation.
+3. Where a package narrows a term, its entry names the general term it narrows.
+4. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
+5. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
+6. **Why:** several vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order.
+
 ## History
 
 A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry, and that entry carried a definition, which was the test that was to have kept it out. See the suspended words-from-the-design-vocabulary section.
@@ -79,3 +132,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
