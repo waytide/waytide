@@ -16,6 +16,29 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 
 **How to apply:** Write the efferent test first. Treat it as a cradle for code generation rather than a pass/fail gate. Do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward. Hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general.
 
+## Compressed
+
+1. Design By Efferent is a design tool.
+2. Do not perform red-green-refactor as choreography.
+3. A test written before its implementation will trivially fail. Do not stop to observe that failure.
+4. Do not treat the red bar as a checkpoint.
+5. What is rejected is the unchosen cycle, the one performed because the form calls for it.
+6. An engineer may choose the red/green/refactor cycle at the implementation hinge, for a particular unit. See the the-implementation-hinge-offers-the-red-green-refactor-cycle rule.
+7. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt.
+8. A cycle the engineer chose after weighing two real alternatives is not choreography. Only the engineer's choice makes the cycle legitimate.
+9. Approach every unit from the efferent side first. The test is the first efferent reference.
+10. Author the actuation before the implementation exists, so the unit's interface is designed from the use site.
+11. Aim for the unit's greatest **solubility**: how readily it dissolves into the reader's understanding.
+12. Seek minimal necessary complexity, found rather than presumed.
+13. Treat the efferent test as a **cradle**. It holds the implementation in position without gripping it rigid.
+14. Generate code within the dictates of the efferent view, free to move inside those bounds.
+15. The test is not an after-the-fact filter or pass/fail gate, and not a point to halt at.
+16. Keep the cradle in context while building, and generate straight through inside it, steering toward solubility. The human sets the cradle.
+17. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
+18. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
+19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
+20. **Why:** The red-green-refactor ceremony existed only to put human attention in the loop, so ritual repetition wastes effort and teaches nothing. Tests are the vehicle; design is the point.
+
 Related:
 
 - the DBE vocabulary — cradle, efferent, solubility
@@ -40,3 +63,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
