@@ -19,6 +19,27 @@ This is a different justification from the rule-file footer's (which recovers hi
 
 **How to apply:** end a provenance footer on every one of these: an implementation record, whether an experiment or a feature; an item, whatever it is tagged; a loop record; and a work session record. The format is the record-rule-authorship-in-a-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/logs/log/` entry.
 
+## Compressed
+
+1. Every working-state artifact under `waytide/` that is a document with a body ends with a **provenance footer**.
+2. The footer is the `Authored by … / Changed by …` block, in the record-rule-authorship-in-a-footer format, with a local human-readable datetime.
+3. The footer goes on every implementation record, whether an experiment or a feature.
+4. It goes on every item, whatever it is tagged, including designs, plans, observations, and deferred work.
+5. It goes on every loop record and every work session record.
+6. Write `Authored by <name> on <local datetime>` for the original author, on creation.
+7. Append a `Changed by <name> on <local datetime>` line for each later change, oldest first.
+8. Never rewrite an existing footer line.
+9. The datetime is the artifact's true authoring time.
+10. For a dated artifact, its ISO-8601-UTC filename prefix is the authoritative creation time.
+11. A later git add-date from a migration is a false trail. Do not use it as the authoring time.
+
+## The one exception — the decision log
+
+1. Do not add a footer to a `waytide/local/logs/log/` entry.
+2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the decision-log-convention.
+3. A log entry records who and when by its ISO-8601-UTC filename and its commit history, not by an in-file footer.
+4. **Why:** a working-state artifact is meant to be read on its own, so its provenance belongs in the file, not only in git history. This differs from the rule-file footer, which recovers history that `git subtree` strips. The decision log is exempt because its filename already carries its provenance, and a footer would break its one-line shape and its no-reformat rule. This rule states the justification once, and the working-state conventions do not repeat it.
+
 Related:
 
 - the record-rule-authorship-in-a-footer rule — the footer's format and the rule-file case
@@ -44,3 +65,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:22:01 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
