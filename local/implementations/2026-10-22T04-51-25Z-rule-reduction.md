@@ -1232,6 +1232,91 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **The phase branch first takes `master`'s commit that added the `[decision]` tag**, as `78e71b7`. That commit adds the a-decision-the-engineer-made-is-tagged-decision rule and edits the decision-log-convention and a-record-takes-category-tags rules. Without it, the batch would compress text `master` has since changed. The new rule has no row at commit `770c7eb`, so its solubility before compression is scored the same way, against the 105 rules there.
 
+### The `foundation` batch — results, 2026-10-24
+
+**All 34 rules are compressed into numbered lists and written into their sources, one commit each, and all 34 meet the directive check's criterion.** Across the batch's 713 directives, after resolution and repair, 712 are kept, 1 is less precise, and none is lost. Four directives the first checks found lost were repaired. The one loss of precision is judged immaterial.
+
+| rule | directives | kept | less precise | lost | compression | change | solubility | clarity score |
+|---|---|---|---|---|---|---|---|---|
+| a-decision-the-engineer-made-is-tagged-decision | 8 | 8 | 0 | 0 | 0.15 | 0.37 | 72* → 93 | 0.62 → 1.00 |
+| a-project-does-not-name-its-consumers | 16 | 16 | 0 | 0 | 0.56 | 0.73 | 43 → 83 | 0.60 → 0.86 |
+| a-record-ends-with-its-state-in-upper-case | 22 | 22 | 0 | 0 | 0.44 | 0.69 | 32 → 75 | 0.38 → 0.89 |
+| a-record-list-is-a-table | 14 | 14 | 0 | 0 | 0.26 | 0.56 | 37 → 69 | 0.33 → 0.75 |
+| a-record-takes-category-tags | 29 | 29 | 0 | 0 | 0.30 | 0.53 | 28 → 60 | 0.37 → 0.90 |
+| a-suspension-is-a-log-entry | 15 | 15 | 0 | 0 | 0.26 | 0.52 | 39 → 70 | 0.31 → 0.76 |
+| a-time-value-carries-minutes-and-seconds | 14 | 14 | 0 | 0 | 0.48 | 0.72 | 30 → 78 | 0.26 → 0.77 |
+| a-vocabulary-entry-says-what-a-term-means-not-what-it-was | 16 | 16 | 0 | 0 | 0.48 | 0.72 | 34 → 70 | 0.36 → 0.67 |
+| ask-at-once-when-a-preference-is-expressed | 15 | 15 | 0 | 0 | 0.34 | 0.60 | 40 → 69 | 0.34 → 0.67 |
+| decision-log-convention | 30 | 30 | 0 | 0 | 0.29 | 0.60 | 34 → 65 | 0.26 → 0.70 |
+| disclosure-is-the-one-reason-to-edit-a-historical-record | 16 | 16 | 0 | 0 | 0.28 | 0.60 | 43 → 64 | 0.49 → 0.68 |
+| downstream-work-is-never-offered | 17 | 17 | 0 | 0 | 0.30 | 0.53 | 34 → 66 | 0.29 → 0.68 |
+| file-names-use-iso8601-utc-prefix | 13 | 13 | 0 | 0 | 0.30 | 0.60 | 48 → 79 | 0.44 → 0.83 |
+| implementation-records-take-a-log-entry | 20 | 20 | 0 | 0 | 0.35 | 0.67 | 25 → 62 | 0.28 → 0.80 |
+| implementations-convention | 54 | 54 | 0 | 0 | 0.12 | 0.48 | 22 → 46 | 0.32 → 0.78 |
+| initialization-rule | 56 | 55 | 1 | 0 | 0.44 | 0.74 | 18 → 53 | 0.35 → 0.90 |
+| logs-directory | 14 | 14 | 0 | 0 | 0.19 | 0.55 | 40 → 73 | 0.27 → 0.82 |
+| migration-convention | 14 | 14 | 0 | 0 | 0.34 | 0.63 | 33 → 68 | 0.33 → 0.76 |
+| observations-convention | 21 | 21 | 0 | 0 | 0.34 | 0.56 | 22 → 61 | 0.22 → 0.70 |
+| package-dependency-heading | 4 | 4 | 0 | 0 | 0.29 | 0.58 | 80 → 99 | 0.63 → 1.00 |
+| plans-no-code-samples | 10 | 10 | 0 | 0 | 0.22 | 0.59 | 88 → 92 | 0.82 → 0.87 |
+| present-every-prompt-through-askuserquestion | 28 | 28 | 0 | 0 | 0.56 | 0.78 | 33 → 69 | 0.54 → 0.85 |
+| project-context-lives-in-the-committed-artifacts | 19 | 19 | 0 | 0 | 0.42 | 0.66 | 44 → 68 | 0.41 → 0.61 |
+| prose-is-not-hard-wrapped | 9 | 9 | 0 | 0 | 0.55 | 0.75 | 63 → 92 | 0.59 → 0.93 |
+| record-rule-authorship-in-a-footer | 12 | 12 | 0 | 0 | 0.29 | 0.51 | 50 → 79 | 0.30 → 0.75 |
+| record-title-date-format | 19 | 19 | 0 | 0 | 0.41 | 0.71 | 53 → 75 | 0.49 → 0.67 |
+| rules-convention | 49 | 49 | 0 | 0 | 0.09 | 0.49 | 26 → 50 | 0.38 → 0.81 |
+| rules-establish-a-mindset-purpose-over-category | 12 | 12 | 0 | 0 | 0.15 | 0.62 | 61 → 78 | 0.54 → 0.81 |
+| status-report-format | 32 | 32 | 0 | 0 | 0.10 | 0.41 | 28 → 51 | 0.40 → 0.83 |
+| the-log-never-says-undone-work-was-done | 12 | 12 | 0 | 0 | 0.55 | 0.79 | 39 → 75 | 0.29 → 0.67 |
+| vocabulary-convention | 32 | 32 | 0 | 0 | 0.29 | 0.50 | 40 → 54 | 0.62 → 0.79 |
+| when-the-work-diverges-from-the-plan-the-work-is-definitive | 15 | 15 | 0 | 0 | 0.24 | 0.48 | 55 → 83 | 0.37 → 0.84 |
+| work-sessions-convention | 38 | 38 | 0 | 0 | 0.33 | 0.61 | 18 → 45 | 0.32 → 0.75 |
+| working-state-artifacts-carry-a-provenance-footer | 18 | 18 | 0 | 0 | 0.42 | 0.64 | 49 → 80 | 0.48 → 0.81 |
+
+The new rule's solubility before compression, marked `*`, is scored as a 106th row against the 105 rules at commit `770c7eb`, as the method says.
+
+**The repairs**, 51 clauses in 25 rules, each a further sentence in an existing point or a word restored to one, so no point is renumbered. A fresh checker re-checked each repaired rule in full. The ones that closed a loss or a material gap:
+
+- **implementation-records-take-a-log-entry:** a refuted, inconclusive, abandoned, or superseded record is kept, marked with its state, as evidence. Both checkers found it lost. Unmerged work is never merged and its branch is deleted only on confirmation, where the compression had only defined the two categories.
+- **initialization-rule:** the loading line names the wait after `load waytide`, while every compiled rule is opened. Both checkers found it lost. Any standing statement that never changes belongs on the display, and the year changes *only* when the rule changes.
+- **working-state-artifacts-carry-a-provenance-footer:** the rule states the justification once, and the working-state conventions do not repeat it. Both checkers found it lost.
+- **rules-convention:** an item is never deleted; its state changes and its record is kept. Both checkers found it lost. A rule is renamed when its name stops saying what it says. Every rule is one per file, and a removed rule leaves *every* Related list.
+- **when-the-work-diverges-from-the-plan-the-work-is-definitive:** the compression had turned the source's "should not necessarily need to be updated" into "Do not update the plan", a prohibition the rule's own "removes an obligation, not a permission" denies. Point 2 now says the plan *need not* be updated.
+- **present-every-prompt-through-askuserquestion:** a closed list must never foreclose an answer only the engineer can produce. `Explain` is placed among the supplied options; the compression's "Do not choose where `Explain` appears" forbade more than the source does.
+- **a-record-takes-category-tags:** a record gains a head *when it is tagged*; the leading-tag form is defined and barred; a `**Tags:**` line is added wherever a categorization is worth marking.
+- **decision-log-convention:** an entry takes a body *only* where its reasoning will not fit a title, and the log is treated as append-only.
+- **disclosure-is-the-one-reason-to-edit-a-historical-record:** no record is scrubbed on a guess, and the engineer is told that the git history and component repositories still hold the removed content.
+- **a-time-value-carries-minutes-and-seconds:** the defect is defined, and a new datetime format goes to seconds only where it includes a time of day.
+- **vocabulary-convention:** an uncoined word is a term unconditionally, a domain-specific substitution goes in its own package, and an entry says whether it narrows or replaces.
+- the rest restore a word or a scope: *as a consumer* and the disclosure rule's reach (a-project-does-not-name-its-consumers), *`[decision]`* (a-decision-the-engineer-made), *present rows* (a-record-list-is-a-table), *costs more than it is worth* (a-suspension), *only when the engineer asks* (downstream-work), *the confirmations of* (implementations-convention), *only* (logs-directory, and its file-names prefix), *the rule and the observation* (observations-convention), *over-prescription* and *known* (plans-no-code-samples), *vocabulary entries too* (prose-is-not-hard-wrapped), *any other timezone marker* (record-title-date-format), *hidden for the same reason* (status-report-format), *plainly* (the-log-never-says-undone-work-was-done), and the arc and the format's place (work-sessions-convention).
+
+Two compressors' answers carried text that is not rule content. logs-directory's opened with the compressor's account of what it dropped, and rules-convention's carried a stray `CONTRACTIONS` line. Both were removed before the text was written into the source.
+
+**The one loss of precision, judged immaterial:**
+
+- **initialization-rule, 40:** the loading line repeats the session-start notice's caveat, and the compressed text does not quote the notice's own wording, *Loading the rules will take a few moments*. The directive stands.
+
+The re-checks raised seven further single-judge objections. Each was resolved as kept by reading the source, which says the same thing in the same place: decision-log-convention's four Related-list pointers, disclosure's "Only the naming goes", vocabulary-convention's statement of the STE level, when-the-work-diverges' "by dated addition", and a-decision-the-engineer-made's "may be stated … or made". initialization-rule's "to a reader already using it" is the source's own qualifier.
+
+**Solubility and the clarity score rise in all 34 rules.** The largest solubility gains are a-time-value-carries-minutes-and-seconds (30 → 78), a-record-ends-with-its-state-in-upper-case (32 → 75), and a-project-does-not-name-its-consumers (43 → 83). Five sentences remain over 25 words. Four are the compressors' own: two Why sentences, a setup list, and a list of three quoted options. One came from a repair, the restored "costs more than it is worth" in a-suspension-is-a-log-entry.
+
+**The compile test is changed on the phase branch.** Its section reader ended a Compressed section at any `---` line, so record-rule-authorship-in-a-footer, whose compressed text shows the footer in a fenced block, failed it. The test now passes over a `---` inside a fenced block. The compiler already found the footer from the end of the file and needed no change.
+
+**The engineer's review list**, tensions the compressors reported in the sources, each kept in the compressed text as the source has it:
+
+1. **decision-log-convention:** an entry takes a body where its reasoning will not fit a title, yet "An untagged entry is one line", and How to apply says "write a titled one-line entry".
+2. **a-time-value-carries-minutes-and-seconds:** How to apply says to write seconds whenever a datetime includes a time of day, and names no exceptions. The body names two, record titles and journal filename stamps.
+3. **implementation-records-take-a-log-entry:** one statement makes the record's location on `master` the test for the concluding form, and another makes the merge the test. The abandoned-work entry gives the intent and the reasoning for stopping, while How to apply says every unmerged case writes "the findings".
+4. **migration-convention:** its Related entry says the record "is written to be executed rather than to account for what happened". The body says to record what actually happened against the plan.
+5. **implementations-convention:** *Suspended* is listed among the concluding words, but defined as "paused, not ended". Whether a suspended record takes the filename's state suffix is left open.
+6. **observations-convention:** a promotion is noted "in the two files", one of which is the observation, while the observation "stays exactly as it is".
+7. **present-every-prompt-through-askuserquestion:** every genuine candidate is presented, yet where there are four, the fourth is dropped to keep `Explain`.
+8. **initialization-rule:** the five parts print "in this order" with the package set second, after the title. Yet the agent prints the set after the harness's display, and "Nothing is printed under" the title.
+9. **rules-convention:** `waytide/system/` and `waytide/local/rules/` "hold only rules", yet each package under `waytide/system/` has a `README.md` and a `source/` directory.
+10. **work-sessions-convention:** the prompt "always says 'work session'", but How to apply gives the third reconciliation option as "no design bears on this session".
+
+**Cost:** 161 agents: 34 compressors, 34 listers, 68 checkers, and 25 re-checkers, at about 35,000 tokens each. That is about 5.6 million in all, or about 166,000 per rule, leaving out the main session's own turns.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4381,3 +4466,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:07:24 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:51 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:24:14 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:54:37 PM PT
