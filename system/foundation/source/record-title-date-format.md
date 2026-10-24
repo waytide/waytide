@@ -20,6 +20,30 @@ Minute-precise 24-hour time is the shortest rendering that separates records wri
 
 **How to apply:** when writing a record whose title takes a date, render it `Mon Jan 1 2026 18:06`. Use the author's local time, at the moment the record is written. The command is `date "+%a %b %-d %Y %H:%M"`. Do not add a timezone abbreviation, AM/PM, or seconds, and do not write a date range. Keep the filename's UTC prefix and the footer's local time to the second as they are.
 
+## Compressed
+
+1. A working-state record's title may carry a date, as the work session record's `# Work Session — <name> (<date>)` does.
+2. In any record whose title is dated, write the date in this form:
+
+```
+Mon Jan 1 2026 18:06
+```
+
+3. The order is day-of-week, month, day, year, then 24-hour hours and minutes.
+4. Do not write `at`, AM/PM, or seconds.
+5. Do not add a timezone abbreviation or any other timezone marker.
+6. The time is the author's local time.
+7. The date is the record's authoring time. It is the same instant as its ISO-8601-UTC filename prefix, rendered in local time.
+8. For a record covering work over more than one day, the title still names the single moment the record was written.
+9. Do not write a date range.
+10. Render the date with the command `date "+%a %b %-d %Y %H:%M"`.
+11. This title form is distinct from the other two record date formats. Each format is used only where it is specified.
+12. The filename prefix stays machine-sortable UTC to the second, such as `2026-07-24T18-16-22Z-…`, per the file-names rule.
+13. The provenance footer stays local time to the second with a zone abbreviation, such as `Fri Jul 24 2026 at 11:58:56 AM PT`, per record-rule-authorship-in-a-footer.
+14. The title is the one exception to the a-time-value-carries-minutes-and-seconds rule. Every other datetime written into a file carries seconds.
+15. The exception is narrow and covers only the title's date.
+16. **Why:** A title is read first and is how a record is referred to, so its date must be compact yet distinguish records written hours apart. A title appears once per file, so nothing collides with it, and the filename already carries the exact UTC instant.
+
 Related:
 
 - the file-names rule — the UTC filename prefix
@@ -41,3 +65,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
