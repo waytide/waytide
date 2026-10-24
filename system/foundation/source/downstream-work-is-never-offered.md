@@ -30,6 +30,43 @@ An agent that names the pending state presses toward a change across repositorie
 
 Carry out any of that when the engineer asks for it, and report what happened once it is done. Answer a question about downstream state fully when one is put. Raise none of it on your own initiative.
 
+## Compressed
+
+1. A package change leaves every project that installed it on the previous version.
+2. Do not offer to close that gap.
+3. Do not report it.
+4. This holds for a next step, a summary of what was done, an option among others, and a reason something else is incomplete.
+5. It covers every act that moves a downstream project: a refresh, an install, a commit, a push, a regenerated bootstrap.
+6. It covers the projects a machine registry names, and any other repository that consumes this one.
+
+## A pending state named is the same offer
+
+1. A trailing line reporting what is not done is a prompt, whatever its grammar.
+2. *The other three projects still hold their commits unpushed* is forbidden. It asks for a push.
+3. *The root `AGENTS.md` is stale in all four* is forbidden. It asks for a regeneration.
+4. A sentence counts as a prompt even when it contains no question.
+5. The precondition form is also forbidden, e.g. *That cannot take effect anywhere until the projects refresh*.
+6. Do not write what a thing is blocked on when the block is only that the engineer has not asked for the next act.
+
+## What this does not forbid
+
+1. Doing the work, when the engineer asks for it.
+2. Do it with no preamble weighing whether the instruction was wise.
+3. Reporting what was done, after doing it.
+4. A report of work carried out is a result. A report of work not carried out is a prompt.
+5. To tell them apart, ask whether the sentence describes something that happened.
+6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
+7. Raising downstream state unbidden stays forbidden.
+8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the announce-waytide-at-session-start rule.
+
+## How to apply
+
+1. After changing a package, report what changed and stop.
+2. Name no downstream project as outstanding, unrefreshed, uninstalled, unpushed, or stale.
+3. Carry out downstream work only when the engineer asks, and report what happened once it is done.
+4. Raise none of it on your own initiative.
+5. **Why:** the engineer decides when other repositories move, and a package change does not reveal that decision. A report is where this fails, because an agent told not to ask still closes its summary with what it did not do.
+
 Related:
 
 - the implementation-lifecycle rule — the agent never raising the end of an experiment, the same failure through a different act
@@ -40,3 +77,4 @@ Related:
 
 Authored by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
