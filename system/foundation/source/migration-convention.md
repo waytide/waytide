@@ -15,6 +15,34 @@ Planning it in the repository the content is leaving puts the plan where the con
 
 **How to apply:** before moving content across a repository boundary, write a record here. It names the source and destination, the increments in order, and what is true while the move is under way. Record what happened against it as the work proceeds, and **keep the record** once the content has gone. Do not use an ordinary item for a move that crosses out of the repository. Do not delete a migration record on completion.
 
+## Compressed
+
+1. `waytide/local/migration/` holds migration records.
+2. A migration record is the execution plan for moving content across a repository boundary, and the record of how the move actually went.
+3. Plan and record here any content leaving this repository for another, or arriving from one.
+4. Use it when content ends up under a different repository's root.
+5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
+6. Further examples: one repository split into several, several merged into one, or existing conventions migrated into an installed system.
+7. Do not use an ordinary item for a move that crosses out of the repository.
+8. An item sequences a build inside this repository, against something this repository settled.
+9. A migration plan sequences work whose increments land in two repositories.
+10. Its order matters because content is unavailable or duplicated in between.
+11. The plan is not finished when this repository's part is done.
+12. A migration may realize a settled item, or be mechanical enough to need none.
+13. A migration record is one document, not entries that accrue like the running records under `logs/`.
+14. Revise the record while the migration runs.
+15. Write it before moving the content.
+16. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
+17. State the source and destination repositories outright.
+18. State the increments in order.
+19. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
+20. Record what actually happened against the plan as the work proceeds.
+21. Keep the record after the content has gone. Do not delete it on completion.
+22. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
+23. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
+24. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
+25. **Why:** a move across a repository boundary is ordered, and is the operation most likely to lose content unrecoverably. The kept record leaves the trail of where content went, and why, in the repository a reader looks in first.
+
 Related:
 
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled item or be mechanical enough to need none
@@ -38,3 +66,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
