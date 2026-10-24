@@ -98,6 +98,121 @@ Take the display name from the project's `writers.toml` where it holds one for t
 
 Never read git for identity. Never invent a username, and never compute a display name from one. Never take a username from `writers.toml`. Fail loudly where no username resolves.
 
+## Compressed
+
+1. This contract fixes how every Waytide tool determines who is writing now.
+2. Each tool names its own environment variable at the first level. The journal's variable is `JOURNAL_WRITER`.
+3. The two levels below the variable are common to all tools.
+4. The chain is fixed, not any one tool's variable. A tool built independently must still agree with it.
+
+## What identity is
+
+1. A writer has a username, and may have a display name.
+2. The username is a filesystem-safe id, such as `scott-bellware`. It is the primary key.
+3. The display name, such as `Scott Bellware`, is presentation, and it is optional.
+4. A writer with no display name shows as their username, verbatim.
+5. Never compute a display name from a username, as `o-brien`, `van-der-berg`, and `mcdonald` show. Fall back to the username itself, not a prettified form.
+6. Identity never comes from git.
+7. The username and the display name resolve separately.
+8. The username comes from the chain below and from nowhere else.
+9. A file that carries a display name never selects the writer.
+
+## Resolution order for the username (first match wins)
+
+1. **`JOURNAL_WRITER` environment variable**: the ephemeral, per-process override, for CI and one-offs like `JOURNAL_WRITER=jane-doe <cmd>`.
+2. **Project-local `.current-user`**: a gitignored file in the project root. It overrides the global default for this checkout only, and is rarely needed.
+3. **`~/.config/waytide/user`**: the normal case. It is set once per machine.
+4. All Waytide tools read this one shared file. There is no per-tool file.
+5. **Error**: if none resolve, fail loudly, e.g. "no identity configured; set ~/.config/waytide/user or JOURNAL_WRITER".
+6. Never guess a username.
+7. The active writer is declared in the user file, never in a project.
+8. A project's `writers.toml` records display names and selects nobody.
+9. A project holding no entry for the active writer is ordinary, not a gap.
+
+## The user file's location is platform-resolved
+
+1. The tail is always `waytide/user`. Only the base directory varies.
+2. If `$XDG_CONFIG_HOME` is set, use `$XDG_CONFIG_HOME/waytide/user`, on any OS.
+3. Otherwise, on Linux, use `~/.config/waytide/user`.
+4. On macOS, use `~/.config/waytide/user`, not `~/Library/Application Support`.
+5. On Windows, use `%APPDATA%\waytide\user`.
+6. Tools agree on this resolution rule, not on a raw path string.
+7. The namespace is `waytide`, because the file belongs to Waytide. It is not `identity/`.
+
+## The user file's format
+
+1. The file is TOML, with a required `username` key and an optional `display-name` key.
+
+```toml
+# ~/.config/waytide/user
+
+username = "scott-bellware"
+display-name = "Scott Bellware"
+```
+
+2. This file is the only place the active writer is declared.
+3. A file carrying only the username is complete.
+4. Such a writer shows as their username, unless a project's `writers.toml` names them.
+5. The file is named `user`, with no extension.
+6. `.current-user` is not TOML. It holds only the username, on one line.
+7. On reading `.current-user`, trim surrounding whitespace and a trailing newline.
+8. `.current-user` may contain `#` comment lines.
+9. `.current-user` selects a writer for one checkout and carries no presentation.
+
+## The display name resolves in this order (first match wins)
+
+1. **The project's `writers.toml`**, where it holds an entry for the resolved username.
+2. **`~/.config/waytide/user`**, where that file's `username` is the resolved username.
+3. **The username itself**, verbatim.
+4. The project's entry wins, and that is the whole hierarchy. It overrides the display name and no other value.
+5. The user file's display name applies only to the user file's username.
+6. If `JOURNAL_WRITER` or `.current-user` resolves a different writer, the user file's display name does not apply.
+7. That writer's name then comes from `writers.toml`, or from their username.
+
+## Per-project registry
+
+1. Each project is its own space of writers. It may commit a `writers.toml` giving display names.
+2. The file lives at `waytide/local/journal/writers.toml`, beside the journal's per-writer directories.
+3. It records a display name and nothing else.
+4. It refuses nobody, selects nobody, and declares no identity.
+5. It may omit the active writer.
+6. Write an entry only where the project needs a name different from the user file's.
+7. The file is optional. A project without one works.
+8. Without the file, each writer shows as their user file's name, or as their username.
+9. The shape is one TOML table per username, with the username as the table header.
+10. TOML's refusal of a duplicate table is the only check the file gets. Nothing else validates it.
+
+```toml
+# The writers this project shows under a name their own
+# ~/.config/waytide/user does not give. A writer absent from this
+# file shows as that name, or as their username.
+
+[scott-bellware]
+display-name = "Scott Bellware"
+
+[jane-doe]
+display-name = "Jane Doe"
+```
+
+11. A writer's table may carry that writer's own settings in further keys.
+12. The contract reads `display-name` and ignores every other key.
+13. Nothing refuses an unknown username. A mistyped `JOURNAL_WRITER` resolves to a nonexistent writer.
+14. A journal directory is then created for that writer, not refused.
+15. The fourth level still fails loudly where no username resolves at all.
+
+## How to apply
+
+1. When implementing identity in any Waytide tool, resolve the active username through the chain above.
+2. Read the user file at `~/.config/waytide/user`, resolving its base directory by platform.
+3. Parse the user file as TOML and take its `username`.
+4. Take the display name from the project's `writers.toml` where it holds one for that username.
+5. Otherwise take it from the user file, where that file's `username` is the resolved one.
+6. Otherwise fall back to the username itself.
+7. Never read git for identity.
+8. Never invent a username.
+9. Never take a username from `writers.toml`.
+10. **Why:** the writer is one person across many tools and projects. So identity is set once per machine, with project and process overrides for exceptions. Only the display name is overridable per project, so no project can declare who is writing.
+
 ## History
 
 **The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
@@ -118,3 +233,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:56:57 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
