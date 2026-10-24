@@ -18,6 +18,29 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 
 **How to apply:** use the STE dictionary's approved meaning where it serves. Recast the sentence under STE Rule 9.1 where a different word serves. Reserve the word in an ETE category only where neither does. Quote the approved meaning in the entry, and state why it does not carry Waytide's.
 
+## Compressed
+
+1. The STE dictionary carries no technical nouns. STE Rule 1.8 sends the reader to the company glossary for them.
+2. A technical noun takes its meaning from the vocabulary that reserves it.
+3. Rules 1.5 and 1.6 reach only a word the dictionary omits or refuses. So an approved word cannot be reserved as a technical noun under them.
+4. STE Rule 1.3 requires an approved word to keep the dictionary's meaning and no other.
+5. A word reserved in an ETE category takes the meaning its ETE entry gives it.
+6. This holds whether the STE dictionary omits the word, refuses it, or approves it with a different meaning.
+7. This contradicts STE Rule 1.3.
+8. Mark each word reserved with a meaning different from its approved meaning in its package's vocabulary.
+9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Waytide's loop is the DBE cycle.
+10. This is the most expensive reservation ETE makes, and the entry carries the cost.
+11. The entry quotes the approved meaning.
+12. The entry states why the approved meaning does not carry Waytide's.
+13. Recast the sentence instead where the approved meaning serves.
+14. STE Rule 9.1 covers the case where a word-for-word replacement will not do.
+15. This reservation is the last resort, not the first.
+16. An entry that does not argue against the approved meaning has not made the reservation.
+17. Use the STE dictionary's approved meaning where it serves.
+18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
+19. Reserve the word in an ETE category only where neither serves.
+20. **Why:** a reader who meets an approved word believes they know it, and nothing in the sentence says otherwise. The other choice, a recast, would cost a settled term such as *the loop* in exchange for conformance on one word.
+
 Related:
 
 - the ete-declares-its-own-categories rule — the first departure, and the only other one
@@ -32,3 +55,4 @@ Changed by Scott Bellware on Wed Aug 12 2026 at 9:24:38 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 12:14:07 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
