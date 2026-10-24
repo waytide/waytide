@@ -42,6 +42,51 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the hinge-cycle rule.
 
+## Compressed
+
+1. At the actuation gate, the first gate where the cradle is set, do not commit a single actuation and proceed.
+2. Present the human a small set of candidate actuations as options to choose among.
+3. The human either chooses the option that reads as the more soluble use, or takes the free-text option.
+4. The free-text option lets the human dictate the actuation outright, or open a chat to work out what it should be.
+5. The free-text option is mandatory and always present. It covers the case where the right shape is not among the options.
+6. Never offer a single proposed actuation for approval, such as "here's my actuation — approve?".
+7. Offer several genuine options, so the human compares real candidate shapes for solubility rather than ratifying one.
+8. Never box the human into the AI's option set.
+
+## A candidate varies what the use site states
+
+1. Two actuations are distinct candidates when a reader at the use site sees different words.
+2. Where the use site reads the same either way, the two are one candidate. Offering both pads the gate.
+3. An omitted argument is a candidate. `upload.(file)` beside `upload.(file, retries: 3)` is a real pair.
+4. The first makes the retry policy the object's own. The second makes every use site state the count.
+5. An absent parameter is an interface decision, not the lack of one. Do not discard the shorter shape as the other with something missing.
+6. A chained construction is not an actuation. `Upload.build(retries: 3).(file)` constructs and actuates in one expression.
+7. The actuation in it is `upload.(file)`, with the constructed object bound to an explaining variable on its own line.
+8. Do not offer a construction here. Construction belongs to the controls hinge.
+9. A varied receiver is not a candidate. `Upload.(file, retries: 3)` beside `upload.(file, retries: 3)` is one shape reached two ways.
+10. This hinge does not ask which interface carries the operation.
+11. To apply the test, hold the receiver constant and ask what the use site states.
+
+## How to apply
+
+1. At the first gate, generate a few genuinely distinct candidate actuations.
+2. Make them different efferent shapes, not cosmetic variants.
+3. Present each as it would read at the use site.
+4. Keep a shape that omits an argument.
+5. Drop a chained construction and a varied receiver.
+6. Offer the candidates through the selection UI, which supplies the free-text option. See the present-every-prompt rule.
+7. Do not add a free-text option of your own.
+8. If the human chooses a candidate, adopt it as the cradle.
+9. If the human writes their own instead, take that actuation or enter a dialogue.
+10. Settle the actuation before writing the test file.
+11. Do not proceed to the test body until the actuation is settled.
+12. When a hinge has no genuinely distinct candidates, do not manufacture them.
+13. Present the one candidate as the option, in the same form every other option takes, with the free-text option still there.
+14. `Explain` is the second option, as the present-every-prompt rule sets out. Do not seek another candidate to reach two.
+15. Do not replace the single candidate with an `Accept` label. The option is the artifact. See the hinge-cycle rule.
+16. This mechanism applies at every hinge of the cycle: actuation, observation, controls, implementation, and naming.
+17. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
+
 Related:
 
 - the hinge-cycle
@@ -70,3 +115,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
