@@ -992,6 +992,10 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The compiled lists still lose their headings.** `./compile.sh --compressed` drops every `## ` line in a Compressed section, and seven of the 14 lists have headings. #14 alone has seven. The compiler fix is now needed before a compressed read keeps its structure.
 
+### The compressed compile keeps its headings — 2026-10-24
+
+**At the engineer's direction, the compiler no longer removes headings that are part of a rule's compressed text.** It drops only the `## Compressed` heading itself. The fix ran unattended through the five hinges, and its loop record is `local/logs/loops/…-compressed-headings.md`. A new outcome, *Keeps the headings in the compressed text*, failed before the change and passes after. Every test passes. The compressed read of the real rules now keeps their headings: 7 in #14, 8 in #13, and 3 in commit-message-widths.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4125,3 +4129,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:29:36 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:30:37 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:35:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:40:13 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:45:59 PM PT
