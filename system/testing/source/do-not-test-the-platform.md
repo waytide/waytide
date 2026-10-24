@@ -17,17 +17,17 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 ## Compressed
 
 1. Test the library's own behavior and decisions, not the language or system it sits on.
-2. A unit is a transparent pass-through on a path only when it adds no branch, guard, normalization, or policy there and just forwards to a platform primitive.
+2. A unit is a transparent pass-through on a path only when it just forwards to a platform primitive. It adds no branch, guard, normalization, or policy there.
 3. On such a path, the unit's behavior is the platform's, so a test there tests the platform, not the library.
 4. The signal: you can state the expected behavior only through the primitive's guarantee ("`String#empty?` returns true for an empty string").
 5. When that signal holds and the unit adds nothing of its own on that path, nothing of ours is at risk, so write no test.
 6. Example: `Upload#empty?(file)` is `file.empty?`, which forwards to the string primitive and adds no branch, guard, or normalization.
 7. Its emptiness behavior is therefore `String#empty?`'s exactly: true for `""` and false for any other content.
-8. Once `#empty?` has been decided to stay transparent to Ruby, there is no library emptiness behavior, and an "empty string is empty" test would only test Ruby.
-9. The resolution is the decision to stay transparent, not a test.
+8. Once `#empty?` has been decided to stay transparent to Ruby, there is no library emptiness behavior. An "empty string is empty" test would only test Ruby.
+9. When a unit has been decided to stay transparent to the platform, the resolution is that decision, not a test.
 10. When a unit adds a policy, that policy is the library's own decision, and it must be tested.
-11. Example policies that must be tested: `Upload#call`'s guard `raise Error, "File is empty" if file.empty?`, which raises `Upload::Error` on an empty file, a coercion that normalizes the file, and a suppressed warning.
-12. The bare `file.empty?` forwarding underneath those policies is not tested.
+11. Example policies that must be tested: `Upload#call`'s guard `raise Error, "File is empty" if file.empty?`, which raises `Upload::Error` on an empty file. Others are a coercion that normalizes the file, and a suppressed warning.
+12. Do not test the bare forwarding to the primitive underneath a tested policy, such as the `file.empty?` beneath those policies.
 13. **Why:** Tests exist to prevent regressions in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence when none of our code ran.
 
 Related:
@@ -48,3 +48,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:46:46 AM PT

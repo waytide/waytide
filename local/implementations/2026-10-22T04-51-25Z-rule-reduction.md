@@ -1066,6 +1066,13 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **One slip, fixed before committing:** for the two sources that have no Related list, the insertion script put the Compressed section below the footer's `Authored by` line. It now inserts above the footer's `---` divider.
 
+### The `testing` batch's review list — 2026-10-24
+
+**The engineer is going through the three review items one at a time.**
+
+1. **test-report-format: a test report is a report on the test files, so its context hierarchy is read from them too, not from a suite run.** A report on what a run produced is the test-tree command's. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch with the compressed text following it. The compressed points keep their numbers. They are not re-checked by agents, since the directive list predates the change.
+2. **do-not-test-the-platform: its three sentences over 25 words are split, two short sentences to a point, so the point numbers stay.** Two fresh checkers then found directive 6 less precise, and one directive 4: each was stated only through the `#empty?` example. Points 9 and 12 now state each one in general terms, and a fresh re-check judged all six directives kept. Solubility goes from 67 to 75, against the source's 73, and the clarity score from 0.51 to 0.70, the source's own. No sentence is over 25 words, and the average is 17.1.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4202,3 +4209,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:40:13 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:45:59 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:47:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 12:01:03 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:47:55 AM PT
