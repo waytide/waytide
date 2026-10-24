@@ -56,25 +56,35 @@ Name the record in the entry, and say what happened to it. State what the record
 
 ## Compressed
 
-**An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.** The entry is written at three moments, and at no others. The item's tag makes no difference.
-
-- **On creation.**
-- **On each dated `Settled` resolution added after the item is created.**
-- **On each change of its `**State:**` line.** That is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item. It is also the line taking back Realized, Deferred, Open, or a work item's Done. An observation is `Stated` and never moves, so it takes a creation entry only.
-
-**Some changes are not logged.** A completed checkbox task is not logged, because it carries out a direction already settled. Prose that settles nothing is not logged either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section. The provenance footer records those changes.
-
-**One reconciliation is logged, though nothing changed.** At a work session's close, a reconciliation may find the direction still standing. Log it, and name what it was read against, as in `The aspirations stand against …`. Nothing in the artifacts records that it happened.
-
-**The entry names the record and what happened to it.** The record was written, or its state reached a word. What the record settles may follow, attributed to the record.
-
-**Never state an unbuilt direction in the indicative mood.** *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software. An item is not a change to the software, so do not use that form for it. The fact about an item is that it was recorded, or that its state moved. **Carry the same mood into the commit subject the entry travels in.**
-
-**Fix no wording template.** *X is recorded as an item, Open because …* and *X is realized* are forms in use.
-
-**This rule states the obligation once, for every item.** The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule state their own entries. The items-convention points here and keeps no second copy. The decision-log-convention's general trigger is to log whenever in doubt. That trigger rests on each writer's judgment, so it does not make the entries reliable.
-
-**Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep the log skimmable. A log entry has no State line beside it. So an entry that asserts what a record only settles is read as the system's behavior.
+1. An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.
+2. Write the entry at three moments, and at no others.
+3. The item's tag makes no difference.
+4. Write the entry on the item's creation.
+5. Write the entry on each dated `Settled` resolution added after the item is created.
+6. Write the entry on each change of the item's `**State:**` line.
+7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item.
+8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
+9. An observation is `Stated` and never moves, so it takes a creation entry only.
+10. Do not log a completed checkbox task, because it carries out a direction already settled.
+11. Do not log prose that settles nothing either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section.
+12. The provenance footer records those unlogged changes.
+13. Log one reconciliation, though nothing changed: a reconciliation at a work session's close that finds the direction still standing.
+14. Name what that reconciliation was read against, as in `The aspirations stand against …`.
+15. Log it because nothing in the artifacts records that it happened.
+16. The entry names the record and what happened to it: the record was written, or its state reached a word.
+17. What the record settles may follow, attributed to the record.
+18. Never state an unbuilt direction in the indicative mood.
+19. *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not.
+20. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software.
+21. An item is not a change to the software, so do not use that form for it.
+22. The fact about an item is that it was recorded, or that its state moved.
+23. Carry the same mood into the commit subject the entry travels in.
+24. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
+25. This rule states the obligation once, for every item.
+26. The observations-convention, the rules-convention, and the a-suspension-is-a-log-entry rule state their own entries.
+27. The items-convention points here and keeps no second copy.
+28. The decision-log-convention's general trigger is to log whenever in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
+29. **Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep the log skimmable. A log entry has no State line beside it, so an entry asserting what a record only settles is read as the system's behavior.
 
 
 Related:
@@ -113,3 +123,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:49:53 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:49 PM PT
