@@ -955,7 +955,7 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 ### A point's address begins with a colon — 2026-10-23
 
-**The engineer decided that an address for a point in a numbered rule begins with `:`, which stands for "rule:".** An example is `:foundation/implementation-lifecycle/phases#1`. Nothing in Claude Code, git, or `CLAUDE.md` gives a leading colon a meaning. A colon closes a word prefix like "rule:", so it reads as that prefix shortened.
+**The engineer decided that an address for a point in a numbered rule takes the prefix `rule:`, and that `:` alone is an alias for it.** So `rule:foundation/implementation-lifecycle/phases#1` and `:foundation/implementation-lifecycle/phases#1` are the same address. Nothing in Claude Code, git, or `CLAUDE.md` gives either form a meaning.
 
 **Still open:** whether the address carries the rule's name always, or only where a section name does not identify the rule within its package.
 
