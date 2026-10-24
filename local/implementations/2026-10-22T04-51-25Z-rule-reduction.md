@@ -969,6 +969,30 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **At the engineer's direction, #13 restores directive 33**, the material loss its directive check found. Its numbered rewrite gains a first point under "Declaring during a session": "A set declared during a session takes effect at the next session." The source said this only in a section heading, and the earlier compression kept the body and lost the heading. The rewrite is written into the source with the others, once the batch's checks are resolved.
 
+### The 14 compressed rules as numbered lists — results, 2026-10-24
+
+**All 14 compressed rules are rewritten as numbered lists and written into their sources, one commit each.** Each was checked twice against its directive list. After the repairs below, each meets the criterion, apart from the changes the engineer decided.
+
+**The changes the engineer decided**, which the checks flag because the directive lists predate them, are four:
+
+- the `=` border required, in announce-a-branch-switch-in-a-bordered-block
+- truncation for a journal entry alone, in commit-message-widths
+- the reserved-tag resolution, in #11
+- the source not restating "any unmissable form satisfies"
+
+**The repairs**, each the smallest clause, were checked again by two fresh checkers who judged each one kept:
+
+- **#11:** tags are the ordinary square-bracket tags; no report groups items by kind tag, and no filename derives from one; an item that neither settles things nor sequences work carries neither resolutions nor tasks. The first three the rewrite had lost. The last two were found lost in the first check too, and judged then as covered.
+- **#14:** a phase is affirmed, refuted, or inconclusive only on the engineer's declaration; the parent branch is deleted only on confirmation; an experiment's changes must not reach the branch it deviates from, which the rewrite had called "the main line".
+- **#15:** segments that can show together are named in words that read distinctly.
+- **#13:** directive 33, by the engineer's decision: a set declared during a session takes effect at the next session.
+
+**The less precise directives judged immaterial** are mostly losses of a qualifier the point beside them carries, as before. The largest share is #14's, at 11 of its 86 directives, the first check that rule has had.
+
+**One flaw in the check:** the checkers were given each rule's body without its Related list, so a directive that lives in that list read as lost. #11's directive 5, which points to the tag rule, is the case. The re-checks included the list.
+
+**The compiled lists still lose their headings.** `./compile.sh --compressed` drops every `## ` line in a Compressed section, and seven of the 14 lists have headings. #14 alone has seven. The compiler fix is now needed before a compressed read keeps its structure.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4101,3 +4125,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:28:28 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:29:36 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:30:37 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:35:54 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:40:13 PM PT
