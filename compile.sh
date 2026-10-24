@@ -27,12 +27,13 @@ for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
   awk -v compressed="$compressed" '
     function add(text) { out[++count] = text }
 
-    # The lines of one part, without its heading and the blank lines at its start and end.
+    # The lines of one part, without its own heading and the blank lines at its start and end. The
+    # headings within the part are its content, and are kept.
     function add_part(name, skip_heading,    i, first, last) {
       first = 0
       for (i = 1; i < footer; i++) {
         if (kind[i] != name) continue
-        if (skip_heading && line[i] ~ /^## /) continue
+        if (skip_heading && line[i] == "## Compressed") continue
         if (!first && line[i] == "") continue
         if (!first) first = i
         last = i
@@ -42,7 +43,7 @@ for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
       if (count > 0) add("")
       for (i = first; i <= last; i++) {
         if (kind[i] != name) continue
-        if (skip_heading && line[i] ~ /^## /) continue
+        if (skip_heading && line[i] == "## Compressed") continue
         add(line[i])
       }
     }

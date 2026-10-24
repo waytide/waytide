@@ -158,4 +158,67 @@ uncompressed_rule=$(cat "$compressed_repository/system/some-package/some-other-r
 [ "$compressed_rule" = "$(control_compressed_expected_text)" ] || fail "Compiles the compressed text when switched" "found:" "$compressed_rule"
 [ "$uncompressed_rule" = "$(control_uncompressed_expected_text)" ] || fail "Compiles the compressed text when switched" "found:" "$uncompressed_rule"
 
+# Controls — headings in the compressed text -------------------------------
+
+control_headings_rule_text() {
+  cat <<'RULE'
+# Some rule
+
+Some body.
+
+## Compressed
+
+Some compressed text.
+
+## Some section
+
+Some sectioned text.
+
+## History
+
+Some history.
+
+Related:
+
+- some rule
+
+---
+
+Authored by Some One on Mon Jan 1 2026 at 1:00:00 PM PT
+RULE
+}
+
+control_headings_expected_text() {
+  cat <<'RULE'
+# Some rule
+
+Some compressed text.
+
+## Some section
+
+Some sectioned text.
+
+Related:
+
+- some rule
+RULE
+}
+
+headings_repository=$(mktemp -d)
+trap 'rm -rf "$repository" "$compressed_repository" "$headings_repository"' EXIT
+
+mkdir -p "$headings_repository/system/some-package/source"
+control_headings_rule_text > "$headings_repository/system/some-package/source/some-rule.md"
+cp compile.sh "$headings_repository/"
+
+# Actuation — headings in the compressed text --------------------------------
+
+(cd "$headings_repository" && ./compile.sh --compressed)
+
+# Keeps the headings in the compressed text ----------------------------------
+
+headings_rule=$(cat "$headings_repository/system/some-package/some-rule.md")
+
+[ "$headings_rule" = "$(control_headings_expected_text)" ] || fail "Keeps the headings in the compressed text" "found:" "$headings_rule"
+
 echo "0 failed, 0 aborted"
