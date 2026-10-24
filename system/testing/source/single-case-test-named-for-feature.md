@@ -12,6 +12,21 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 **How to apply:** start a feature's test wherever is convenient. Once the case set is settled, and there is one case, collapse to `<feature>.rb` named for the feature. Fix the `require_relative` depth accordingly. If more than one, use `<feature>/<case>.rb` with each file named for its case.
 
+## Compressed
+
+1. When a feature has only one case, its test is a single file named for the feature.
+2. The file sits directly under the feature context. Example: `test/automated/upload/status.rb`, under `context "Upload" do; context "Status" do`.
+3. Do not put a single-case test in a folder under a case-discriminating filename (`status/present.rb`).
+4. The folder-with-case-files form is reserved for features with multiple cases.
+5. Examples: `rejected/empty.rb` with `rejected/refused.rb`, or `result/located.rb` with `result/unlocated.rb`.
+6. In the folder form, each filename names the case it distinguishes, such as `empty` and `refused`.
+7. A case name like `empty` is justified only when a sibling case (`refused`) exists to contrast against.
+8. You may start a feature's test wherever is convenient, before its case set is settled.
+9. Once the case set is settled and there is one case, collapse to `<feature>.rb`, named for the feature.
+10. When collapsing, fix the `require_relative` depth to match.
+11. Once the case set is settled and there is more than one case, use `<feature>/<case>.rb`, each file named for its case.
+12. **Why:** a filename should carry meaning. A sole case-named file like `present` implies a contrast that does not exist, and misdescribes the feature as multi-case.
+
 Related:
 
 - the test-context-nesting-mirrors-folders rule
@@ -28,3 +43,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
