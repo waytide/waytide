@@ -1,6 +1,6 @@
 # Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop
 
-`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The decision log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them.
+`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The decision log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line decision log, which a loop record must not displace (the log stays one line per decision).
 
@@ -20,15 +20,15 @@
 
 **Why:** the deliberation is the conveyable substance of this method. That is the hinges and the reasoning over the options. It evaporates if only the final code and one-line decisions survive. A per-feature narrative of the loop's cycles keeps it, teaches the method by example, and exposes where gates were skipped.
 
-**How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Mark retroactive reconstructions as backfills. Keep the one-line decision-log entries separate and intact.
+**How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line decision-log entries separate and intact.
 
 ## Compressed
 
 1. `waytide/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
 2. The loop is the distributed OODA cycle, as defined in the DBE vocabulary.
 3. A loop record captures how a feature was decided. The decision log captures what was decided.
-4. A loop record holds the hinges the AI determined and the options it put to the engineer.
-5. It also holds the engineer's decisions, or the chat that replaced them.
+4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
+5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
 6. A loop record must not displace the decision log.
 7. The decision log stays one line per decision.
 
@@ -58,9 +58,13 @@
 ## How to apply
 
 1. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above.
-2. Record each cycle's hinge, options, and decision or chat.
+2. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning.
 3. Keep the one-line decision-log entries separate and intact.
 4. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
+
+## History
+
+Until 2026-10-24 the opening and How to apply described every cycle as recording options and the engineer's decision or chat, without exception. The unattended exception, which came after the rule was written, was stated only in the Format section. The opening and How to apply now carry it too.
 
 Related:
 
@@ -88,3 +92,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:55 AM PT

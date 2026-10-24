@@ -1139,6 +1139,7 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 **The engineer is going through the three review items one at a time.**
 
 1. **one-outcome-at-a-time-name-via-options: the loop stops at every gate except under unattended work, which came after the rule was introduced.** The rule's How to apply already carried the exception. The opening and the title now carry it too. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch. There, compressed points 2 and 6 now say "in attended work" and that unattended work does not stop at the gates. The point numbers are unchanged. They are not re-checked by agents, since the directive list predates the change.
+2. **loop-records: a cycle records options and the engineer's decision only in attended work.** The unattended exception, which came after the rule was written, was stated only in the Format section. The opening and How to apply now carry it too. The fix is made the same way as item 1. On the phase branch, compressed points 4 and 5 and How to apply's point 2 now name the unattended case.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4281,3 +4282,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:07 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:39:24 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:45:01 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:04:19 AM PT
