@@ -925,6 +925,18 @@ With both restored, no directive outside the intended resolution is lost, and no
 2. **The read slows where a list repeats context.** Its length follows size. A list is about the prose's size overall, but grows wherever each item restates its context. items-convention's list is 64% larger than its prose, because each item repeats "an item's" or "the State line".
 3. **Its limits:** each list is a listing agent's restatement made for checking, not a format designed for reading. And neither the score nor the size says whether an agent follows a list as well as prose.
 
+### Compressed texts are written as numbered lists of points — 2026-10-23
+
+**The engineer decided that compiled rules are written as numbered lists of points**, and settled three choices.
+
+1. **The form is the compressed text.** Each rule's Compressed section is written as numbered points, and `./compile.sh --compressed` compiles it as it stands. The sources stay prose, the default compile is unchanged, and the compiler stays a mechanical transform of text.
+2. **One directive per point.** Each point states one thing to do, not to do, or that holds. Headings that set scope stay above their points, numbered from 1 under each, and the Why is the last point. No heading's context is restated in its points.
+3. **The 14 rules already compressed are rewritten and checked again**, so every compressed rule is in one format. They are #2, #7, #11, #12, #13, #14, and #15, and the seven `git` rules.
+
+**The method for the rewrite.** A fresh agent per rule rewrites its current compressed text as numbered points, with the same content. It is given the source only to read the meaning, not to take content from. Two fresh checkers then judge each rule's points against the directive list made for its first check. #14 has no list yet, so a fresh agent makes one from its source. The checkers read the Compressed section itself, not the compiled output, because the compiler still drops sub-headings. The compiler fix is still needed for the compiled lists to keep their headings.
+
+**What the rewrite carries over unchanged:** #11's resolution of the reserved-tag contradiction, and the restorations in #11, #12, and #15. It also carries #13's directive 33, still lost and waiting for the engineer's decision.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4051,3 +4063,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:14:12 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:16:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:19:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:20:30 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:22:07 PM PT
