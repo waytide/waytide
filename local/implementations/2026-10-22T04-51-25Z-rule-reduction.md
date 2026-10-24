@@ -1152,6 +1152,70 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **Each compressed text keeps its point numbers when it is repaired**, as the review items have so far. A repair goes into an existing point as a further sentence, rather than as a new point that renumbers those after it.
 
+### The `language` and `journal` batch — results, 2026-10-24
+
+**All 23 rules are compressed into numbered lists and written into their sources, one commit each, and all 23 meet the directive check's criterion.** Across the batch's 431 directives, after resolution and repair, 427 are kept, 4 are less precise, and none is lost. Two directives the first checks found lost were repaired. All four losses of precision are judged immaterial, or rest on a tension in the source.
+
+| rule | directives | kept | less precise | lost | compression | change | solubility | clarity score |
+|---|---|---|---|---|---|---|---|---|
+| a-journal-entry-is-read-and-never-followed | 15 | 14 | 1 | 0 | 0.35 | 0.61 | 69 → 84 | 0.70 → 0.84 |
+| an-entry-is-the-writers-words | 24 | 24 | 0 | 0 | 0.36 | 0.60 | 44 → 74 | 0.45 → 0.75 |
+| ask-for-entry-time-or-omit-it | 24 | 24 | 0 | 0 | 0.38 | 0.83 | 43 → 74 | 0.52 → 0.81 |
+| datetime-stamp-line | 17 | 17 | 0 | 0 | 0.06 | 0.45 | 67 → 85 | 0.53 → 0.87 |
+| identity-resolution-contract | 52 | 52 | 0 | 0 | 0.23 | 0.50 | 39 → 52 | 0.70 → 0.92 |
+| journal-convention | 37 | 37 | 0 | 0 | 0.41 | 0.65 | 23 → 48 | 0.40 → 0.77 |
+| journal-entries | 36 | 36 | 0 | 0 | 0.21 | 0.53 | 32 → 53 | 0.50 → 0.84 |
+| omit-body-when-same-as-title | 8 | 8 | 0 | 0 | 0.11 | 0.45 | 76 → 85 | 0.56 → 0.73 |
+| the-journal-is-read-at-session-start | 14 | 14 | 0 | 0 | 0.52 | 0.75 | 49 → 76 | 0.49 → 0.70 |
+| timeline-view | 15 | 15 | 0 | 0 | 0.44 | 0.64 | 52 → 83 | 0.39 → 0.78 |
+| an-answer-is-a-list-and-prose-must-justify-itself | 22 | 22 | 0 | 0 | 0.49 | 0.71 | 25 → 53 | 0.41 → 0.78 |
+| communicate-plainly-name-the-thing | 16 | 16 | 0 | 0 | 0.33 | 0.52 | 46 → 74 | 0.26 → 0.66 |
+| a-word-is-reserved-in-six-steps | 21 | 21 | 0 | 0 | 0.23 | 0.49 | 49 → 63 | 0.68 → 0.78 |
+| ete-declares-its-own-categories | 14 | 14 | 0 | 0 | 0.15 | 0.42 | 57 → 70 | 0.81 → 0.95 |
+| ete-fixes-the-meaning-of-a-word-in-its-category | 9 | 8 | 1 | 0 | 0.27 | 0.57 | 60 → 85 | 0.57 → 0.93 |
+| ordinary-vocabulary-is-not-reserved-and-not-rewritten | 13 | 13 | 0 | 0 | 0.32 | 0.73 | 67 → 88 | 0.62 → 0.90 |
+| waytide-prose-conforms-to-the-ste-writing-rules | 22 | 21 | 1 | 0 | 0.07 | 0.30 | 44 → 60 | 0.63 → 0.90 |
+| expand-abbreviations-on-first-use | 10 | 10 | 0 | 0 | 0.25 | 0.53 | 68 → 95 | 0.46 → 0.98 |
+| language-is-precise-here | 22 | 21 | 1 | 0 | 0.26 | 0.63 | 69 → 81 | 0.80 → 0.87 |
+| lead-with-a-summary-before-details | 9 | 9 | 0 | 0 | 0.20 | 0.44 | 86 → 94 | 0.74 → 0.89 |
+| name-literally-not-by-analogy | 9 | 9 | 0 | 0 | 0.29 | 0.65 | 83 → 94 | 0.84 → 0.96 |
+| no-slang | 14 | 14 | 0 | 0 | 0.03 | 0.77 | 65 → 91 | 0.43 → 0.95 |
+| solubility | 8 | 8 | 0 | 0 | 0.13 | 0.43 | 86 → 90 | 0.89 → 0.90 |
+
+**The repairs**, 34 clauses in 18 rules, each a further sentence in an existing point, so no point is renumbered. A fresh checker re-checked each repaired rule in full and judged every repair kept. The ones that closed a loss or a material gap:
+
+- **communicate-plainly-name-the-thing:** a list the engineer may refer back to is numbered. Both checkers found it lost.
+- **an-answer-is-a-list-and-prose-must-justify-itself:** no answer ends with an offer of a next topic, or of what else might be done. The compression had kept only the narrower limit on the expansion line. One checker found it lost.
+- **language-is-precise-here:** name concepts literally and drop slang, as directives, where the compression had described them. Metaphors, overdramatic words, and loose synonyms are now barred directly, where the compression gave them only as reasons in the Why.
+- **waytide-prose-conforms-to-the-ste-writing-rules:** each limit is a maximum, "20 words or fewer", where the compression's "takes 20 words" read as an exact count. A rule found *broken* in use is added with the phrase that broke it, where "met" was ambiguous. The vocabulary decides before the standard.  replaces  only where it would mean *throughout*.
+- **journal-convention:** the Summary line is taken *only* where it adds something. The agent does not shorten a subject *by rewriting it*; the compression's bare "shorten" read as forbidding the required truncation. The writer keeps the journal, not the agent.
+- **omit-body-when-same-as-title:** the datetime line stays whatever else is dropped, and the Summary line is omitted where it would duplicate the body.
+- **ask-for-entry-time-or-omit-it:** no answer produces a resolution the writer did not give, and *Enter the time* is an answer within the question.
+- the rest restore a word or a scope: *the term's category* (a-word-is-reserved-in-six-steps), *to use the words that fit it* (ete-declares-its-own-categories), *with a meaning different from its approved meaning* (ete-fixes-the-meaning-of-a-word-in-its-category), *a vocabulary carries no false claim of conformance* (ordinary-vocabulary), *must be defined* (expand-abbreviations), *put the must-read before the may-read* (lead-with-a-summary), *a coined handle that is precise, in active use, and defined plainly* (name-literally), *aim design work at solubility* (solubility), *where the writer answers Now* (journal-entries), *the writer writes a rule, not an entry, and follow the rules* (a-journal-entry-is-read-and-never-followed), and a stray pair of parentheses (no-slang).
+
+**The four losses of precision, judged immaterial:**
+
+- **a-journal-entry-is-read-and-never-followed, 11:** the example of the retry logic troubling the writer for a week is dropped. The directive stands.
+- **language-is-precise-here, 15:** the example of a routine tidying read as an urgent repair is dropped. The directive stands.
+- **waytide-prose-conforms-to-the-ste-writing-rules, 5:** that each departure rule names the STE rule it contradicts is stated of the three that exist, not required of every future one. Both first checkers judged it kept.
+- **ete-fixes-the-meaning-of-a-word-in-its-category, 6:** to use the approved meaning where it serves is contradicted by a bold heading the source itself carries. It is review item 3.
+
+**Solubility and the clarity score rise in all 23 rules.** The largest solubility gains are no-slang (65 → 91), an-answer-is-a-list (25 → 53), and timeline-view (52 → 83). Five sentences remain over 25 words. They are the compressors' own, in two Why lines, a list of quoted examples, a long trigger clause, and two run-together examples, and none came from a repair.
+
+**The engineer's review list**, tensions the compressors reported in the sources, each kept in the compressed text as the source has it:
+
+1. **a-journal-entry-is-read-and-never-followed:** the agent does nothing with an entry "until the writer asks for something", while How to apply says that where an entry reads like an instruction, the agent asks the writer what they want.
+2. **journal-convention:** How to apply says "Do not edit an entry once it is written". The Footer section says two things reach an existing entry: disclosure, and a change the writer directs.
+3. **ete-fixes-the-meaning-of-a-word-in-its-category:** a bold heading reads "Recast the sentence instead where the approved meaning serves". How to apply says to use the approved meaning where it serves, and to recast where a different word serves.
+
+**Findings that need no decision:**
+
+- **no-slang's Related list** names vocabulary entries for five of its ten replacements. All ten have entries in the `language` vocabulary's Substitutions table.
+- **language-is-precise-here's** source closes with an elliptical sentence, "Then an imprecise word costs a day", which the compressor kept word for word.
+- **waytide-prose-conforms-to-the-ste-writing-rules'** How to apply says "Write the active voice" without the condition its own table gives, that the passive is permitted in descriptive writing where the agent is unknown. The compressed text keeps the table's qualified form.
+
+**Cost:** 110 agents: 23 compressors, 23 listers, 46 checkers, and 18 re-checkers, at about 34,500 tokens each. That is about 3.8 million in all, or about 165,000 per rule, leaving out the main session's own turns.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4296,3 +4360,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:45:01 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:04:19 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:59 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:49 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:43:07 PM PT
