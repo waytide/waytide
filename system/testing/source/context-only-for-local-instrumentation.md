@@ -1,12 +1,20 @@
-# Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly
+# Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly, and warn of a context that holds only a test
 
 A `test` block holds **exactly one assertion** and nothing else (per the test-block-is-assertion-only rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the error-test-named-fails-condition-is-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
-**The `When` exception is narrow — a *leading* `When …` only.** A context named `"When the file is empty"` stays a context (with `test "Fails"` inside), even though it holds nothing but the test. But an **outcome name that merely contains "when"** — e.g. `"Created when the file is accepted"`, `"Located when the response carries a location"` — is *not* a condition context. It is an outcome name, and it flattens to a directly-named `test "Created when the file is accepted" do …`.
+**The `When` exception is narrow — a *leading* `When …` only.** A context named `"When the file is empty"` stays a context (with `test "Fails"` inside), even though it holds nothing but the test. But an **outcome name that merely contains "when"** — e.g. `"Created when the file is accepted"`, `"Located when the response carries a location"` — is *not* a condition context. It is an outcome name, and it is written as a directly-named `test "Created when the file is accepted" do …`.
 
 The outcome may be a **single assertion over values already in scope**, meaning the shared controls and actuation at the top of the feature context. There, **name the `test` directly and use no context**. A context that only holds a bare test adds a nesting level that carries no information. The name belongs on the test itself.
+
+**This is how the tests the agent writes are shaped. It is not a ban on a context that holds only a test.** It is a preference, and another engineer may hold a different one. So where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead:
+
+- **The warning names the file and the context**, and says that the context holds only a test, whose name could sit on the test.
+- **It offers two choices:** flatten the context, or suppress these warnings from then on. Several such contexts found in one turn take one warning.
+- **A suppression is a local rule.** On the engineer's choice, the agent writes `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`, saying that this project gives no warning of a context that holds only a test. Local rules are read at every session start, so the suppression holds from then on. Deleting the file restores the warnings.
+- **Where that local rule exists, give no warning.** The tests the agent writes still take the shape this rule describes.
+- **A leading `When …` condition context is never warned of**, since it is not a context that holds only a test in this rule's sense.
 
 ```ruby
 # No local setup needed → named test, no context
@@ -24,15 +32,15 @@ context "Status" do
 end
 ```
 
-**Why:** a context should *mean something*, namely "there is local instrumentation here." A bare `test` inside a `context "name"` wastes the context, where its only content is the assertion. The name could sit on the `test`. Reserving contexts for outcomes that actually use a local variable or add local narration keeps the structure honest and flatter.
+**Why:** a context should *mean something*, namely "there is local instrumentation here." A bare `test` inside a `context "name"` wastes the context, where its only content is the assertion. The name could sit on the `test`. Reserving contexts for outcomes that actually use a local variable or add local narration keeps the structure honest and flatter. That is a preference about structure, not a defect in the test, so the context another engineer wrote is theirs to keep, and the warning leaves the choice with them.
 
-**How to apply:** name the `test` directly. Use a `context` only where the outcome:
+**How to apply:** when writing a test, name the `test` directly. Use a `context` only where the outcome:
 
 - uses its own explaining variable
 - adds an outcome-local `comment` or `detail`
 - is a leading `When …` condition
 
-When flattening an over-nested test, flatten **only** where there is no code between the context and the `test`. The context then holds nothing but the test. The context must **also** not be a leading `When …` condition.
+On finding a context that holds only a test, warn as above, unless the local rule suppresses it. Flatten only on the engineer's choice. When flattening an over-nested test, flatten **only** where there is no code between the context and the `test`. The context then holds nothing but the test. The context must **also** not be a leading `When …` condition.
 
 ## Compressed
 
@@ -45,7 +53,7 @@ When flattening an over-nested test, flatten **only** where there is no code bet
 7. The `When` exception covers only a leading `When …`.
 8. A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test.
 9. An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"` and `"Located when the response carries a location"`.
-10. Such a name flattens to a directly named test, as in `test "Created when the file is accepted" do …`.
+10. Such a name is written as a directly named test, as in `test "Created when the file is accepted" do …`.
 11. When the outcome is a single assertion over values already in scope, name the `test` directly and use no context.
 12. Values already in scope are the shared controls and actuation at the top of the feature context.
 
@@ -67,7 +75,21 @@ end
 
 13. When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test.
 14. Do not flatten a context that is a leading `When …` condition.
-15. **Why:** a context should mean "there is local instrumentation here." A context holding only a bare test adds a nesting level that carries no information, and the name belongs on the test.
+15. This is how the tests the agent writes are shaped. It is not a ban on a context that holds only a test.
+16. Where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead.
+17. The warning names the file and the context. It says that the context holds only a test, whose name could sit on the test.
+18. The warning offers two choices: flatten the context, or suppress these warnings from then on.
+19. Several such contexts found in one turn take one warning.
+20. Flatten only on the engineer's choice.
+21. On the choice to suppress, write `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`. It says that this project gives no warning of a context that holds only a test.
+22. Local rules are read at every session start, so the suppression holds from then on. Deleting the file restores the warnings.
+23. Where that local rule exists, give no warning. The tests the agent writes still take this rule's shape.
+24. A leading `When …` condition context is never warned of.
+25. **Why:** a context should mean "there is local instrumentation here." A context holding only a bare test adds a nesting level that carries no information, and the name belongs on the test. That is a preference, not a defect, so another engineer's context is theirs to keep, and the warning leaves the choice with them.
+
+## History
+
+Until 2026-10-24 the rule was a ban: a context that held only a test was not to be written, and an over-nested test was flattened. The engineer decided that naming the test directly is a preference, not to be imposed on other engineers, so such a context now draws a warning that can be suppressed.
 
 Related:
 
@@ -86,3 +108,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT

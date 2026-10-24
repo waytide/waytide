@@ -1068,10 +1068,17 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 ### The `testing` batch's review list — 2026-10-24
 
-**The engineer is going through the three review items one at a time.**
+**The engineer went through the three review items one at a time.**
 
 1. **test-report-format: a test report is a report on the test files, so its context hierarchy is read from them too, not from a suite run.** A report on what a run produced is the test-tree command's. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch with the compressed text following it. The compressed points keep their numbers. They are not re-checked by agents, since the directive list predates the change.
 2. **do-not-test-the-platform: its three sentences over 25 words are split, two short sentences to a point, so the point numbers stay.** Two fresh checkers then found directive 6 less precise, and one directive 4: each was stated only through the `#empty?` example. Points 9 and 12 now state each one in general terms, and a fresh re-check judged all six directives kept. Solubility goes from 67 to 75, against the source's 73, and the clarity score from 0.51 to 0.70, the source's own. No sentence is over 25 words, and the average is 17.1.
+3. **error-test-named-fails-condition-is-context, directive 9: naming the test directly is the engineer's preference, so the context-only-for-local-instrumentation rule no longer bans a context that holds only a test.** It warns of one instead, naming the file and the context, and offers to flatten it or to suppress these warnings. A suppression is a local rule the agent writes, `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`, so it holds from the next session on and is undone by deleting the file. A leading `When …` context is never warned of. The tests the agent writes keep the directly named shape. The error-test rule then has no ban to be the exception to. Its point 8 now says what the other rule warns of, and that the rule never warns of a leading `When …` context. Both rules change on `master` with History sections, and the change is copied to the phase branch. A fresh lister listed each changed rule's directives, since the old lists predate the change, and two fresh checkers checked each:
+   - **context-only-for-local-instrumentation:** all 19 directives kept by both checkers.
+   - **error-test-named-fails-condition-is-context:** directive 9 was less precise to both checkers and directive 5 to one. Point 8 now states what the other rule warns of, and point 5 says to lift the clause into an *enclosing* context and to name the test "Fails" or "Doesn't fail". On the re-check, both are kept. The re-check's remaining flags are resolved:
+     - Directive 6 lost its "may", and gets it back.
+     - Directive 9 was read as exempting only an error test's `When …` context. The source exempts every leading `When …` context, so the compressed text stands.
+
+**All three review items are resolved.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4210,3 +4217,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:45:59 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:47:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 12:01:03 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:47:55 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT

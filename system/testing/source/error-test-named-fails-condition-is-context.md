@@ -16,7 +16,7 @@ end
 
 Naming an error test for its behavior rather than a value comparison is fully consistent with the "Is"-naming rule. That rule reserves "Is" for value-equals. "Fails" is a plain outcome name, not an "Is" case.
 
-**Relation to the context rule:** the context-only-for-local-instrumentation rule says don't enclose a single-assertion test in a context that holds nothing. An error test is the deliberate exception: the enclosing context isn't empty. It carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail".
+**Relation to the context rule:** an error test always takes an enclosing context, because the context carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail". So the context-only-for-local-instrumentation rule, which warns of a context that holds only a test, never warns of a leading `When …` context.
 
 **How to apply:** name any `assert_raises` test "Fails". Name the non-raising assertion "Doesn't fail". Put it inside a `context` named for the condition, the "when …".
 
@@ -26,7 +26,7 @@ Naming an error test for its behavior rather than a value comparison is fully co
 2. When a test asserts that the actuation does not raise, name the `test` block "Doesn't fail".
 3. Do not put the condition under which the actuation fails, or doesn't, in the test name.
 4. Promote that condition to a `context` that encloses the test and names the condition as a "When …" clause.
-5. A test name that wants the word "when" signals a condition. Lift that "when" clause into the `context`.
+5. A test name that wants the word "when" signals a condition. Lift that "when" clause into an enclosing `context`, and name the test "Fails" or "Doesn't fail".
 
 ```ruby
 context "When the name is not defined" do
@@ -36,10 +36,14 @@ context "When the name is not defined" do
 end
 ```
 
-6. Several conditions over the same actuation sit as sibling `When …` contexts, each with its own `test "Fails"`.
+6. Several conditions over the same actuation may sit as sibling `When …` contexts, each with its own `test "Fails"`.
 7. "Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals.
-8. An error test is the deliberate exception to the context-only-for-local-instrumentation rule. Its enclosing context is not empty, because it carries the condition.
+8. An error test always takes an enclosing context, because the context carries the condition. The context-only-for-local-instrumentation rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
 9. **Why:** an error outcome states "under condition X, the actuation fails." The scenario belongs in a context and the observed fact in the test. "Fails" names the behavior directly and keeps test names uniform.
+
+## History
+
+Until 2026-10-24 an error test's context was called the deliberate exception to the context-only-for-local-instrumentation rule's ban on a context that holds only a test. That rule now warns rather than bans, and does not warn of a leading `When …` context, so there is no exception to make.
 
 Related:
 
@@ -56,3 +60,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT

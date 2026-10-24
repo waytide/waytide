@@ -1783,6 +1783,127 @@ The prompt for the same rule. The checker's `compressed.md` holds the rule's tit
     22. kept: "Run-suite-before-commit is then satisfied vacuously, not violated."
     23. kept: "This rule applies in full in a project that does not install the `git` package."
 
+## Review item 3 — the two changed rules, checked again
+
+### context-only-for-local-instrumentation — the directives, as a fresh listing agent gave them
+
+    1. A `test` block holds exactly one assertion and nothing else.
+    2. A test may carry its own name (`test "Outcome name" do … end`); naming an outcome does not require a `context` block.
+    3. Use a named `context` to enclose a `test` when that outcome needs local instrumentation: an explaining variable of its own, or a `comment` or `detail` specific to it.
+    4. Use a named `context` to enclose a `test` where the context is a leading `When …` condition, meaning a condition promoted to a context.
+    5. The `When` exception applies only to a leading `When …`. A context named for a leading `When …` condition (e.g. `"When the file is empty"`, with `test "Fails"` inside) stays a context even when it holds nothing but the test.
+    6. An outcome name that only contains "when" (e.g. `"Created when the file is accepted"`) is not a condition context. Write it as a directly named test, e.g. `test "Created when the file is accepted" do …`.
+    7. Where the outcome is a single assertion over values already in scope (the shared controls and actuation at the top of the feature context), name the `test` directly and use no context.
+    8. Where the agent finds a context that holds only a test, in a test it reads or is asked to change, it does not flatten that context on its own; it warns the engineer instead.
+    9. The warning names the file and the context, and says that the context holds only a test whose name could sit on the test.
+    10. The warning offers two choices: flatten the context, or suppress these warnings from then on.
+    11. Several contexts that hold only a test, found in one turn, take one warning.
+    12. If the engineer chooses suppression, the agent writes a local rule at `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`, saying that this project gives no warning of a context that holds only a test.
+    13. Where that local suppression rule exists, give no warning of a context that holds only a test.
+    14. Even where the suppression rule exists, the tests the agent writes still take the shape this rule describes.
+    15. A leading `When …` condition context is never warned of.
+    16. When writing a test, name the `test` directly. Use a `context` only where the outcome uses its own explaining variable, adds an outcome-local `comment` or `detail`, or is a leading `When …` condition.
+    17. Flatten a context that holds only a test only on the engineer's choice.
+    18. When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so that the context holds nothing but the test.
+    19. When flattening an over-nested test, the context must also not be a leading `When …` condition.
+
+### context-only-for-local-instrumentation — checker A
+
+    All 19 directives are kept in the shorter version. None is less precise and none is lost.
+
+    1. kept: "A `test` block holds exactly one assertion and nothing else"
+    2. kept: "Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`"
+    3. kept: "Enclose a test in a named `context` only when the outcome needs local instrumentation" / "Local instrumentation means an explaining variable of the outcome's own" / "Local instrumentation also means a `comment` or `detail` specific to that outcome"
+    4. kept: "Also use a named `context` where it is a leading `When …` condition, promoted to a context"
+    5. kept: "The `When` exception covers only a leading `When …`" / "A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test"
+    6. kept: "An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"`" / "Such a name is written as a directly named test, as in `test "Created when the file is accepted" do …`"
+    7. kept: "When the outcome is a single assertion over values already in scope, name the `test` directly and use no context" / "Values already in scope are the shared controls and actuation at the top of the feature context"
+    8. kept: "Where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead."
+    9. kept: "The warning names the file and the context. It says that the context holds only a test, whose name could sit on the test."
+    10. kept: "The warning offers two choices: flatten the context, or suppress these warnings from then on."
+    11. kept: "Several such contexts found in one turn take one warning."
+    12. kept: "On the choice to suppress, write `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`. It says that this project gives no warning of a context that holds only a test."
+    13. kept: "Where that local rule exists, give no warning."
+    14. kept: "The tests the agent writes still take this rule's shape."
+    15. kept: "A leading `When …` condition context is never warned of."
+    16. kept: "Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly." / "Also use a named `context` where it is a leading `When …` condition" / "This is how the tests the agent writes are shaped."
+    17. kept: "Flatten only on the engineer's choice."
+    18. kept: "When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test."
+    19. kept: "Do not flatten a context that is a leading `When …` condition."
+
+### context-only-for-local-instrumentation — checker B
+
+    The shorter version keeps all 19 directives. None is less precise and none is lost.
+
+    1. kept — "A `test` block holds exactly one assertion and nothing else"
+    2. kept — "Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`"
+    3. kept — "Enclose a test in a named `context` only when the outcome needs local instrumentation" / "Local instrumentation means an explaining variable of the outcome's own" / "Local instrumentation also means a `comment` or `detail` specific to that outcome"
+    4. kept — "Also use a named `context` where it is a leading `When …` condition, promoted to a context"
+    5. kept — "The `When` exception covers only a leading `When …`" / "A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test"
+    6. kept — "An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"`" / "Such a name is written as a directly named test, as in `test "Created when the file is accepted" do …`"
+    7. kept — "When the outcome is a single assertion over values already in scope, name the `test` directly and use no context" / "Values already in scope are the shared controls and actuation at the top of the feature context"
+    8. kept — "Where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead."
+    9. kept — "The warning names the file and the context. It says that the context holds only a test, whose name could sit on the test."
+    10. kept — "The warning offers two choices: flatten the context, or suppress these warnings from then on."
+    11. kept — "Several such contexts found in one turn take one warning."
+    12. kept — "On the choice to suppress, write `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`. It says that this project gives no warning of a context that holds only a test."
+    13. kept — "Where that local rule exists, give no warning."
+    14. kept — "The tests the agent writes still take this rule's shape."
+    15. kept — "A leading `When …` condition context is never warned of."
+    16. kept — "Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly." with the definitions in items 4–6 ("an explaining variable of the outcome's own", "a `comment` or `detail` specific to that outcome", "a leading `When …` condition")
+    17. kept — "Flatten only on the engineer's choice."
+    18. kept — "When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test."
+    19. kept — "Do not flatten a context that is a leading `When …` condition."
+
+### error-test-named-fails-condition-is-context — the directives, as a fresh listing agent gave them
+
+    1. When a test's assertion is that the actuation raises an error (an `assert_raises`), name the `test` block "Fails".
+    2. When a test's assertion is that the actuation does not raise an error, name the `test` block "Doesn't fail".
+    3. Do not put the condition under which the actuation fails (or doesn't fail) in the name of a "Fails" or "Doesn't fail" test.
+    4. Promote the condition under which the actuation fails (or doesn't fail) to a `context` that encloses the test and is named for that condition, the "when …" (e.g. `context "When the name is not defined"`).
+    5. When a `test` name seems to want the word "when", treat the "when" clause as a condition: lift it into a `context`, and name the `test` "Fails" or "Doesn't fail".
+    6. Several conditions over the same actuation may sit as sibling `When …` contexts, each with its own `test "Fails"`.
+    7. "Is" in a test name is reserved for value-equals tests. An error test named "Fails" is a plain outcome name, not an "Is" case, and does not break the "Is"-naming rule.
+    8. An error test always takes an enclosing context that carries its condition.
+    9. The context-only-for-local-instrumentation rule, which warns of a context that holds only a test, never warns of a leading `When …` context that encloses an error test.
+
+### error-test-named-fails-condition-is-context — checker A
+
+    1 — kept — "When a test asserts that the actuation raises an error (an `assert_raises`), name the `test` block "Fails"."
+    2 — kept — "When a test asserts that the actuation does not raise, name the `test` block "Doesn't fail"."
+    3 — kept — "Do not put the condition under which the actuation fails, or doesn't, in the test name."
+    4 — kept — "Promote that condition to a `context` that encloses the test and names the condition as a "When …" clause." (the example `context "When the name is not defined"` is kept in the code block)
+    5 — less precise — "A test name that wants the word "when" signals a condition. Lift that "when" clause into the `context`." Missing: the instruction to then name the test "Fails" or "Doesn't fail". Also "the `context`" assumes a context already exists rather than saying to create one.
+    6 — kept — "Several conditions over the same actuation sit as sibling `When …` contexts, each with its own `test "Fails"`." Note: the original's "may" (a permission) is now a plain statement, which reads as slightly stronger.
+    7 — kept — ""Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals."
+    8 — kept — "An error test always takes an enclosing context, because the context carries the condition."
+    9 — less precise — "So the context-only-for-local-instrumentation rule never warns of a leading `When …` context." Missing: the qualifier "that encloses an error test", so as written it exempts any leading `When …` context. Also missing what that rule warns of (a context that holds only a test).
+
+### error-test-named-fails-condition-is-context — checker B
+
+    1. kept: "When a test asserts that the actuation raises an error (an `assert_raises`), name the `test` block "Fails"."
+    2. kept: "When a test asserts that the actuation does not raise, name the `test` block "Doesn't fail"."
+    3. kept: "Do not put the condition under which the actuation fails, or doesn't, in the test name."
+    4. kept: "Promote that condition to a `context` that encloses the test and names the condition as a "When …" clause." The example `context "When the name is not defined"` also carries it.
+    5. kept: "A test name that wants the word "when" signals a condition. Lift that "when" clause into the `context`." Item 5 does not repeat the instruction to name the test "Fails" or "Doesn't fail", but items 1 and 2 already require that.
+    6. kept: "Several conditions over the same actuation sit as sibling `When …` contexts, each with its own `test "Fails"`."
+    7. kept: ""Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals."
+    8. kept: "An error test always takes an enclosing context, because the context carries the condition."
+    9. less precise: "So the context-only-for-local-instrumentation rule never warns of a leading `When …` context." Missing: the limit to a context "that encloses an error test", so the exemption now reads as covering any leading When context. Also missing: what that rule warns of, a context that holds only a test.
+
+### error-test-named-fails-condition-is-context — the re-check, after the repairs
+
+    1. kept: "When a test asserts that the actuation raises an error (an `assert_raises`), name the `test` block "Fails"."
+    2. kept: "When a test asserts that the actuation does not raise, name the `test` block "Doesn't fail"."
+    3. kept: "Do not put the condition under which the actuation fails, or doesn't, in the test name."
+    4. kept: "Promote that condition to a `context` that encloses the test and names the condition as a "When …" clause", plus the example `context "When the name is not defined"`.
+    5. kept: "A test name that wants the word "when" signals a condition. Lift that "when" clause into an enclosing `context`, and name the test "Fails" or "Doesn't fail"."
+    6. less precise: "Several conditions over the same actuation sit as sibling `When …` contexts, each with its own `test "Fails"`." Missing: the original says "may sit", which is a permission. Without "may", the line can be read as a requirement.
+    7. kept: ""Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals."
+    8. kept: "An error test always takes an enclosing context, because the context carries the condition."
+    9. less precise: "It never warns of a leading `When …` context, such as an error test's." Missing: the original limits the exemption to a leading `When …` context that encloses an error test. The shorter version reads as exempting every leading `When …` context, with the error test given only as one example.
+
 ---
 
 Authored by Scott Bellware on Sat Oct 24 2026 at 12:00:23 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT
