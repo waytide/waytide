@@ -35,6 +35,45 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 
 **How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it.
 
+## Compressed
+
+1. A historical record states what was true when it was written.
+2. Historical records include decision-log entries, work session records, experiment records, feature records, and completed migration records.
+3. Do not revise a historical record to suit a later convention.
+4. Do not rename, reformat, or correct a since-replaced term in a historical record.
+5. Do not revise it for any other reason a reader might want it to read differently.
+6. The one exception is disclosure.
+7. Where a record names something that should not have been disclosed, correct it.
+
+## What counts
+
+1. The test is whether the content is the project's to publish, not whether it is wrong.
+2. Another party's project, client, or repository, named only incidentally, is not the project's to publish.
+3. A path, hostname, or machine layout describing someone's environment rather than the work is not the project's to publish.
+4. A credential, key, or token is not the project's to publish, and is a security matter first.
+5. Anything the engineer says should not be there is not the project's to publish.
+6. The engineer, not the agent, is the authority on what should not be there. Do not scrub a record on a guess.
+7. Judge a record's reach as beyond its repository, since repositories are public and rules are installed on other people's machines.
+
+## Reduce resolution rather than falsify
+
+1. Reduce resolution rather than falsify.
+2. Remove the disclosure and keep the record true.
+3. Remove only the naming.
+4. A record that reached three projects still reads as having reached three.
+5. *"Each of the three projects holding it"* is less specific than three names and is not less accurate.
+6. Never make the record say something that did not happen.
+7. Never delete an increment that ran, change a count, or reattribute work.
+8. Where the removal leaves a reader unable to follow what happened, state in the record what class of thing was removed and why.
+
+## What this does not reach
+
+1. The correction does not reach the git history or any component repository the content was published to.
+2. Rewriting that history is the engineer's decision, not a consequence of this rule.
+3. When a correction is made, tell the engineer what the edit did and did not accomplish. Say that the git history and any component repository still hold the removed content.
+4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
+5. **Why:** a record is left as written because it is evidence, but that does not extend to content the project had no standing to publish. Naming the engineer as the authority keeps an agent from either exposing something because records are immutable or scrubbing a record on a guess.
+
 Related:
 
 - the rules-convention and the reconcile entry in this package's vocabulary — where the standing rule is stated
@@ -52,3 +91,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
