@@ -23,6 +23,34 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 **How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
 
+## Compressed
+
+## What takes the prefix
+1. A dated artifact takes the datetime prefix. A dated artifact is something a project accrues over time, ordered by when it was made.
+2. The running records under `logs/` take it: the decision log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/`.
+3. The work-artifact directories `items/`, `implementations/`, and `migration/` take it.
+4. A consuming project's own local rules, the ones it adds to its `waytide/local/rules/`, take it. A local rule is a dated decision in that project's history.
+5. Prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime.
+6. Prefix every local rule a project adds the same way.
+
+## Format
+1. The prefix is an ISO 8601 datetime normalized to UTC. A dash-separated, lower-case name and `.md` follow it.
+2. **Format:** `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+3. Join the date and time with `T`. The trailing `Z` marks UTC.
+4. Write the time's colons as dashes, for filesystem safety, as in `2026-07-01T20-40-00Z-some-name.md`.
+5. The name is dash-separated and lower-case.
+6. The state suffix is the one exception to the lower case.
+7. A record carrying a canonical `**State:**` line ends its name with that state word in upper case, after a dash: `2026-08-05T19-37-06Z-ooda-terminology-REFUTED.md`.
+8. The suffix changes nothing else about the name, and leaves the prefix untouched.
+9. The a-record-ends-with-its-state-in-upper-case rule fixes the suffix.
+
+## What takes no prefix
+1. System rules do not take the prefix.
+2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
+3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
+4. A project's own `waytide/local/vocabulary.md` takes no prefix. It is a structural file, not a dated entry. See the vocabulary-convention rule.
+5. **Why:** The dated artifacts are a chronological record. One UTC-normalized, lexically-sortable prefix orders them in every directory, keeps their order within a day, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable conventions, each named for what it says.
+
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 1 PM PT
@@ -40,3 +68,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
