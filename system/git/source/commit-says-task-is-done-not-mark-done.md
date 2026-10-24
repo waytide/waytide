@@ -13,18 +13,22 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 ## Compressed
 
-**A commit message never uses "mark ... done" or "mark ... complete".** State the accomplishment as a fact about the work. Do not phrase it as bookkeeping on a checkbox. Write **"Task 9 is done"**, not "mark Task 9 done" or "mark Task 9 as complete".
+1. A commit message never uses "mark ... done" or "mark ... complete".
+2. State the accomplishment as a fact about the work.
+3. Do not phrase it as bookkeeping on a checkbox.
+4. Write **"Task 9 is done"**, not "mark Task 9 done" or "mark Task 9 as complete".
 
 | Don't | Do |
 |---|---|
 | `Log: mark Task 9 done (green-on-arrival)` | `Log: Task 9 is done (green-on-arrival)` |
 | `mark the predicate task complete` | `the predicate task is done` |
 
-**Phrase finished work as the task being done.** Say "Task N is done" or "X is complete". This applies to the commit subject and the commit body.
+5. Phrase finished work as the task being done. Say "Task N is done" or "X is complete".
+6. This applies to the commit subject and the commit body.
+7. Prose addressed to the user follows the same preference.
+8. In prose addressed to the user, state the plain fact. Do not describe the act of marking it.
+9. **Why:** The commit records the state of the work, not the clerical act of ticking a box.
 
-**Prose addressed to the user follows the same preference.** State the plain fact. Do not describe the act of marking it.
-
-**Why:** The commit records the state of the work, not the clerical act of ticking a box.
 
 Related:
 
@@ -40,3 +44,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:26 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:20 PM PT
