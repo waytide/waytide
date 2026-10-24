@@ -12,6 +12,19 @@ So a test reads **control → actuate → observe** (the assertion is only *how*
 
 **How to apply:** in prose, comments, docs, and dialogue, say **controls** for the helpers and the example values. Call the pre-actuation setup the **control** of the test. Never "factory"/"factories", "fixture(s)", "arrange", or "arrangement". The noun form imports what the verb does.
 
+## Compressed
+
+1. The known, deterministic inputs a test is built from are all **controls**.
+2. Helpers that build example values are **controls**, never "factories".
+3. The example values they produce, and any literal known inputs, are **controls** or control values, never "fixtures".
+4. The setup phase, which establishes the known inputs before the actuation, is the **control** of the test.
+5. Never call the setup phase "arrange" or "arrangement". The noun form carries the same meaning as the verb.
+6. A test reads **control → actuate → observe**. The assertion is only *how* the outcome is observed.
+7. Apply this in prose, comments, docs, and dialogue.
+8. In talk about tests, never say "factory", "factories", "fixture", "fixtures", "arrange", or "arrangement".
+9. Where a test framework has its own `Fixture` context object, the known input values are still controls, not fixtures.
+10. **Why:** "controls" is the established vocabulary of controls-based testing. The other terms are imported jargon that a reader has to map back onto the one concept.
+
 Related:
 
 - the `control_` test-variable prefix rule
@@ -25,3 +38,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
