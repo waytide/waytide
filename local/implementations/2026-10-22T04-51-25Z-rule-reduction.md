@@ -1226,6 +1226,12 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **All three review items are resolved.**
 
+### The `foundation` batch — method, committed before it runs, 2026-10-24
+
+**At the engineer's direction, the `foundation` package is the fifth and last unattended batch of phase 1**, 34 rules: the 33 not yet compressed, and the a-decision-the-engineer-made-is-tagged-decision rule. The method is the `language` and `journal` batch's, unchanged. Repairs go into an existing point as a further sentence, so no point is renumbered.
+
+**The phase branch first takes `master`'s commit that added the `[decision]` tag**, as `78e71b7`. That commit adds the a-decision-the-engineer-made-is-tagged-decision rule and edits the decision-log-convention and a-record-takes-category-tags rules. Without it, the batch would compress text `master` has since changed. The new rule has no row at commit `770c7eb`, so its solubility before compression is scored the same way, against the 105 rules there.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4374,3 +4380,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:43:07 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:07:24 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:51 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:24:14 PM PT
