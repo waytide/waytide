@@ -32,6 +32,48 @@ Too much and the hinge's own concern is buried in material already settled. The 
 
 At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output. Do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
 
+## Compressed
+
+1. Each hinge shows the human a specific amount of the test on screen.
+2. The hinge-cycle rule owns the sequence of hinges and the acceptance mechanism. This rule owns what is displayed at each hinge.
+3. Render each hinge per this table:
+
+| Hinge | Displays |
+|---|---|
+| 1 — **actuation** | the actuation, inside its nested folder-mirroring `context` blocks |
+| 2 — **observation** | the actuation + the observation — no contexts |
+| 3 — **controls** | the controls + the actuation + the observation — the full test body, no contexts |
+| 4 — **implementation** | at the gate, the candidates. Once one is accepted, **the implementation itself**, then the feature's test output |
+| 5 — **naming** | the candidate names, and the test whose outcome they name |
+
+## The actuation is the anchor at every downstream hinge
+
+1. Show the actuation at every hinge after the first, because what each one decides has no meaning apart from it.
+2. The actuation shown at hinges 2 and 3 is context. It is not re-decided there.
+
+## The contexts are shown once, where they are decided, and elided after
+
+1. Hinge 1 establishes the outcome's structural placement: which class or feature contexts it nests under, mirroring the test's folder path.
+2. Show the full `context` nesting at hinge 1, so the human judges where the outcome lives before anything else is built.
+3. Do not repeat the contexts at the hinges after the first.
+4. The full nesting returns when the turn-one test file is assembled and shown, after the three test hinges.
+
+## The implementation is shown before the loop moves on from its hinge
+
+1. Hinge 4 is where solubility is judged. An awkward implementation signals that the actuation is wrong.
+2. Do not show the run alone at hinge 4. Showing only the run withholds the code the solubility judgment is made on.
+3. Once a candidate is accepted, show the implementation first, ahead of the test and the feature's output.
+4. Show the test and the feature's output with the implementation, per the show-feature-test-output-after-implementation-hinge rule.
+5. Do not advance to naming before the implementation is on screen.
+
+## How to apply
+
+1. At hinge 1, show the actuation within its full `context` nesting.
+2. At hinge 2, show the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block.
+3. At hinge 3, show the control declarations, then the actuation, then the observation. This is the complete test body, with the `context` blocks omitted.
+4. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
+5. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
+
 Related:
 
 - the hinge-cycle rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
@@ -51,3 +93,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:43:08 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
