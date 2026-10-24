@@ -868,6 +868,27 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The agent recommends de-normalizing selectively.** Write a heading's context into each point only where it changes the point's meaning: exceptions, conditions, and limits of scope. Keep a short bold lead above the group so the grouping still shows, and leave label-only headings as they are. For example, "**No block for a worktree**: a worktree adds a working directory rather than moving this one."
 
+### Compiled rules as a TOML structure of directives — 2026-10-23
+
+**The engineer asked what a compiled format of TOML rule directives would do to the session-start read.** The read would be no smaller. What changes is what it gives the agent: discrete, self-contained directives in place of prose that carries reasons. That helps checking and costs judgment.
+
+**The size is measured, near enough.** The directive lists the checks produced are close to what a TOML file would hold. Across the 13 checked rules they total about 34,500 characters, against about 33,800 for the compressed prose, and TOML's keys, quotes, and brackets would add perhaps 10 to 20%. The read would be the size of the compressed prose or somewhat larger, and far smaller than the full sources.
+
+**What it gains:**
+
+1. **Context travels with each directive.** Fields such as `applies_when`, `except`, or `scope` write a heading's context into every directive by design. A lost heading and a directive that lives only in a heading become impossible.
+2. **The directive check becomes nearly free**, since the compiled file is the directive list.
+3. **Directives become addressable.** Each takes an ID, so it can be cited, compared across versions, filtered by package set, or validated by a script.
+
+**What it costs:**
+
+1. **Reasons drop out unless they are kept as a field.** Waytide's rules carry their Why on purpose, and a rule that establishes a mindset works by its reasoning, not by listed conditions. An agent reading only directives applies them more literally, and generalizes less well to cases they do not name. The simulations tested only named cases, so none of them would catch this.
+2. **The rules read as a checklist.** Prose says what matters more and how directives relate. A flat list of equal entries loses that, unless priority and relations become fields too.
+3. **Compiling stops being mechanical.** `compile.sh` transforms text deterministically. Turning prose into TOML directives takes a model, the listing step, so the compiled rules could differ between compiles. The alternative is sources written in the structure, and then they stop being prose the engineer reads and edits.
+4. **The language rules still apply.** Each directive is still a sentence the STE and ETE rules govern, and the vocabularies still have to be read for the terms to mean anything.
+
+**On balance, TOML would make the read easier to verify and harder to generalize from.** The agent recommends a middle form that keeps most of the gain. It is compiled prose built from self-contained directives, each with its scope written in, and a short reason kept where one changes behavior.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3991,3 +4012,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:28:16 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:02:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:14:12 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:16:38 PM PT
