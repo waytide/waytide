@@ -1134,6 +1134,12 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **Cost:** 72 agents: 16 compressors, 16 listers, 32 checkers, and 8 re-checkers, at about 34,000 tokens each. That is about 2.5 million in all, or about 155,000 per rule, leaving out the main session's own turns. The listers ran alongside the compressors, since they read only the source.
 
+### The `design-by-efferent` and `versioning` batch's review list — 2026-10-24
+
+**The engineer is going through the three review items one at a time.**
+
+1. **one-outcome-at-a-time-name-via-options: the loop stops at every gate except under unattended work, which came after the rule was introduced.** The rule's How to apply already carried the exception. The opening and the title now carry it too. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch. There, compressed points 2 and 6 now say "in attended work" and that unattended work does not stop at the gates. The point numbers are unchanged. They are not re-checked by agents, since the directive list predates the change.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4274,3 +4280,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 1:47:55 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:07 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:39:24 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:45:01 AM PT

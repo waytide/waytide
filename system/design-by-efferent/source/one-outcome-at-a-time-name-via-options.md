@@ -1,6 +1,6 @@
-# Advance one outcome at a time, stop at every gate, and name via options
+# Advance one outcome at a time, stop at every gate in attended work, and name via options
 
-The loop advances **one outcome at a time** and **stops at every gate** for the human. It does not run ahead. In particular, do **not batch-generate multiple test files** in one pass. A batch skips the gates where the human's judgment belongs, and accumulates unreviewed, pending mistakes. Generate one outcome's test, stop at its gate, and proceed only on the human's go.
+The loop advances **one outcome at a time** and, in attended work, **stops at every gate** for the human. It does not run ahead. In particular, do **not batch-generate multiple test files** in one pass. A batch skips the gates where the human's judgment belongs, and accumulates unreviewed, pending mistakes. Generate one outcome's test, stop at its gate, and proceed only on the human's go. **Under unattended work the loop does not stop at the gates**, since the agent decides each hinge itself. It still advances one outcome at a time.
 
 **Finishing the work means naming the test.** A test left with an empty (unnamed) outcome context is unfinished. The closing step ascribes its name. Do this one test at a time.
 
@@ -15,11 +15,11 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 ## Compressed
 
 1. The loop advances one outcome at a time.
-2. The loop stops at every gate for the human.
+2. In attended work, the loop stops at every gate for the human.
 3. Do not run ahead.
 4. Do not batch-generate multiple test files in one pass.
 5. Generate one outcome's test, then stop at its gate.
-6. Proceed only on the human's go.
+6. Proceed only on the human's go. Under unattended work, the loop does not stop at the gates. It still advances one outcome at a time.
 7. Finishing the work means naming the test.
 8. A test left with an empty, unnamed outcome context is unfinished.
 9. The closing step ascribes the test's name.
@@ -38,6 +38,10 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 22. To finish an unnamed test, present candidate names as options through the selection UI.
 23. Then apply the name the human chose or dictated.
 24. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
+
+## History
+
+Until 2026-10-24 the opening said, without qualification, that the loop stops at every gate and proceeds only on the human's go. The rule predates unattended work, whose exception was added only to How to apply. The opening and the title now carry it too.
 
 Related:
 
@@ -63,3 +67,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:28:14 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:44:47 AM PT
