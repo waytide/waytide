@@ -12,6 +12,56 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 **How to apply:** when a decision is made, write a titled one-line entry under `waytide/local/logs/log/`, with a UTC filename. Commit it with the change, or with a `Log:` prefix.
 
+## Compressed
+
+1. Record each decision made during a session as its own file in `waytide/local/logs/log/`.
+2. Write one file per decision.
+3. Give each entry a one-line title.
+
+## Trigger
+
+1. Write an entry whenever a real decision is made.
+2. A real decision is the user picking among alternatives, accepting or rejecting an approach, or setting a rule that will guide future work.
+3. Do not wait to be asked.
+4. When in doubt, log it.
+
+## Filename
+
+1. Use the ISO-8601-UTC prefix convention of the file-names rule.
+2. Compute the prefix with `date -u +%Y-%m-%dT%H-%M-%SZ`.
+3. Use UTC, never local time.
+
+## Content
+
+1. Start the entry with a `# <title>` that states the decision.
+2. Keep the title informative enough to skim.
+3. One line is the ordinary case.
+4. An entry takes a body only where it carries reasoning that will not fit a title.
+5. An abandonment takes a body, giving the reason the work stopped.
+6. A body is prose under the title, with no template.
+7. A body never holds the work that did not happen, per the the-log-never-says-undone-work-was-done rule.
+8. An entry that carries tags takes a `**Tags:**` line under the title, separated by a blank line, per the a-record-takes-category-tags rule.
+9. An untagged entry is one line.
+10. A log entry takes no provenance footer.
+11. It is exempt from the working-state-artifacts-carry-a-provenance-footer rule, since its filename and commit already carry author and time.
+
+## Commit
+
+1. Commit a log entry in the same commit as the change it describes, or separately with a `Log:` prefix.
+2. Do not hold entries uncommitted.
+
+## Consolidation
+
+1. Never consolidate the log on your own initiative.
+2. Do not combine, merge, rewrite, or reformat log files. Treat the log as an append-only record of what was decided and when.
+3. Do not propose doing so.
+4. Consolidate only on the user's explicit command, and only after it is confirmed with the project's stakeholders.
+5. For a readable overview, generate a summary of the log at read time instead.
+6. Never write that summary to a file.
+7. Give it in the response instead.
+
+8. **Why:** a project's decisions are easy to lose and expensive to reconstruct. A one-line-per-decision log, append-only and committed with the code, keeps a complete, skimmable, durable record.
+
 Related:
 
 - the file-names rule — the shared filename convention
@@ -39,3 +89,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
