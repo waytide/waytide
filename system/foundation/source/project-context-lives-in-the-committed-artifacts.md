@@ -24,6 +24,33 @@ The cost of forbidding it is real and is bounded to one case. That is the prefer
 
 Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, ask about it at once rather than holding it.
 
+## Compressed
+
+1. Write every piece of context meant to survive a session into `waytide/`.
+2. The rules bind that context, the working directories hold it, and git carries it.
+3. An agent memory store is not one of those places.
+4. Do not hold in a store anything that belongs in one of those places.
+5. A binding convention is a rule in `waytide/local/rules/`.
+6. A decision is a one-line entry in `waytide/local/logs/log/`.
+7. Thinking that has not stabilized is an observation in `waytide/local/items/`.
+8. The project's planning goes in an item.
+9. Postponed work is a deferred item.
+10. What the project stopped doing is suspended.
+11. Each artifact follows its own convention.
+12. A note on how the project's code is arranged belongs in an artifact. So does what was decided last week, or which approach was rejected.
+13. Do not create an agent memory store.
+
+## What it does not reach
+
+1. A fact about the engineer rather than the project is outside this rule.
+2. How the engineer wants to be answered, and what they want never offered, are such facts.
+3. A machine-scoped fact goes to per-machine configuration under `~/.config/`, outside any repository, per the a-project-does-not-name-its-consumers rule.
+4. A preference not yet settled as a rule is outside this rule.
+5. Ask about such a preference at once, per the ask-at-once-when-a-preference-is-expressed rule, rather than holding it.
+6. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
+7. Harness working state is not project context and is no substitute for an artifact.
+8. **Why:** conventions are committed with the code and read fresh each session, not recalled. A memory store is recall: unreviewed, undiffable, invisible to all but its writer, and it drifts silently.
+
 Related:
 
 - the ask-at-once-when-a-preference-is-expressed rule — what makes forbidding the store safe
@@ -41,3 +68,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
