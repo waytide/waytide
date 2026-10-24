@@ -6,9 +6,20 @@ A design — an item tagged `[design]` — may have a section that documents a d
 
 **How to apply:** When writing a section of a design about depending on a gem/library/package, use the heading "Package Dependency". Reserve plain "Dependency" for cases that are genuinely about something other than a package.
 
+## Compressed
+
+1. A design is an item tagged `[design]`.
+2. A design may have a section documenting a dependency on a package.
+3. A package means a gem, a library, or another installable package.
+4. Title that section **Package Dependency**.
+5. Do not title it just "Dependency".
+6. Use plain "Dependency" only for sections about something other than a package.
+7. **Why:** "Dependency" is overloaded. It can mean a code-level dependency, a runtime relationship, or an injected collaborator. "Package Dependency" names exactly what the section covers.
+
 ---
 
 Authored by Scott Bellware on Fri Jun 12 2026 at 10 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
