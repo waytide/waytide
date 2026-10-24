@@ -40,21 +40,40 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 
 ## Compressed
 
-**ETE.** Waytide writes its prose in ASD-STE100 Simplified Technical English: an approved dictionary and 53 writing rules. STE Rules 1.5 through 1.13 let a project add its own technical nouns and technical verbs. The rules in this directory are Eventide Technical English, or ETE, Waytide's implementation of the standard. ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states. `Say it in ETE` asks for that. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved.
+1. Waytide writes its prose in ASD-STE100 Simplified Technical English, which has an approved dictionary and 53 writing rules.
+2. STE Rules 1.5 through 1.13 let a project add its own technical nouns and technical verbs.
+3. The rules in this directory are Eventide Technical English, or ETE, which is Waytide's implementation of the standard.
+4. ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states.
+5. `Say it in ETE` asks for ETE.
+6. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved.
+7. The STE dictionary decides first.
+8. For a word the STE dictionary does not approve, it names an approved alternative.
+9. Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
+10. Keep Waytide's word where the approved word means something else.
+11. Reserve that word as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`.
+12. Record what the STE dictionary says about the reserved word.
+13. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+14. A word the dictionary does not list is not a defect.
+15. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+16. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
+17. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention.
+18. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
+19. A substitution replaces a word Waytide rejects.
+20. A reservation keeps a word STE rejects.
+21. A substitution and a reservation are different acts, and `conform` is both.
+22. An absent word and a word that is not approved differ.
+23. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
+24. A word that is not approved is a disagreement: the standard considered it and named something else.
+25. A reservation of a word that is not approved rejects the standard's decision.
+26. So the record says which case a reserved term is in.
+27. `reserve` is absent.
+28. `discontinue` is not approved, and the dictionary gives `STOP`.
+29. Three rules beside this one carry ETE's departures from the standard.
+30. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
+31. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
+32. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
+33. **Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
 
-**The sequence.** The STE dictionary decides first. For a word it does not approve, it names an approved alternative.
-
-- **Use the alternative** where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
-- **Keep Waytide's word** where the approved word means something else. Reserve it as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`, and record what the STE dictionary says about it. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
-- **A word the dictionary does not list is not a defect.** STE Rule 1.1 permits it as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
-
-**The worked instance is `sweep`.** The STE dictionary replaces `sweep (v)` with `SCAN`. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins. A substitution replaces a word Waytide rejects, and a reservation keeps a word STE rejects. They are different acts, and `conform` is both.
-
-**Absent and not approved differ.** An absent word is a gap: the standard never considered it, as with most terms Waytide coined. A word that is not approved is a disagreement: the standard considered it and named something else, and a reservation rejects that decision. So the record says which case a reserved term is in. `reserve` is absent. `discontinue` is not approved, and the dictionary gives `STOP`.
-
-**Three rules beside this one carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
-
-**Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
 
 Related:
 
@@ -82,3 +101,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:39 PM PT
