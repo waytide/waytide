@@ -60,11 +60,24 @@
 
 ## Compressed
 
-**Declaring a set.** A project may declare a package set, and the packages outside it are deactivated. Where no set is declared, every installed package is active, and nothing reports it.
+## Declaring a set
 
-**The record.** A declaration is a record under `waytide/local/`. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`. A new declaration writes a new record and edits none. The record with the latest prefix holds, and the earlier ones are history. Reverting is a declaration naming `default`.
+1. A project may declare a package set.
+2. The packages outside a declared set are deactivated.
+3. Where no set is declared, every installed package is active, and nothing reports it.
 
-**Three lines carry it**, and a record without the first two is not a declaration:
+## The record
+
+1. A declaration is a record under `waytide/local/`.
+2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`.
+3. A new declaration writes a new record.
+4. A new declaration edits no existing record.
+5. The record with the latest prefix holds, and the earlier ones are history.
+6. Reverting is a declaration naming `default`.
+
+## Three lines carry it
+
+1. A record without the first two lines is not a declaration.
 
 ```
 - **Package set:** content
@@ -72,21 +85,51 @@
 - **Inactive:** design-by-efferent, testing
 ```
 
-- **`**Package set:**`** is what the engineer declared: a set name, package names, or both, in the grammar `install` takes.
-- **`**Packages:**`** is what that resolved to, recorded when declared rather than computed at session start. It is authoritative. A package installed later is in neither line, so it stays inactive until a new declaration takes it up.
-- **`**Inactive:**`** is what was installed and not active then. It is recorded, not inferred, so the record states the whole state it was made against.
+2. `**Package set:**` is what the engineer declared: a set name, package names, or both, in the grammar `install` takes.
+3. `**Packages:**` is what that resolved to, recorded when declared rather than computed at session start.
+4. `**Packages:**` is authoritative.
+5. A package installed later is in neither line, so it stays inactive until a new declaration takes it up.
+6. `**Inactive:**` is what was installed and not active then.
+7. `**Inactive:**` is recorded, not inferred, so the record states the whole state it was made against.
 
-**An include activates what it names.** Where an active package's README includes another package, that package is active, named or not. An include states a dependency, and `install` already treats it so.
+## An include activates what it names
 
-**Every package is still read.** A deactivated package's rules are read at session start like an active package's. The declaration decides which rules are applied, not which are read, and it does not narrow the unconditional read. A rule that is read and withheld can be cited, weighed, and reactivated within the session. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale.
+1. Where an active package's README includes another package, that package is active, named or not.
+2. An include states a dependency, and `install` already treats it so.
 
-**What is printed.** The agent prints the packages at the head of the response that carries the read, because that text renders markdown. The session-start notice and the startup display print none of it. List every installed package and hide none, with active ones bold and deactivated ones italic. Follow the list with the set's name, `package set: content`, and close with a count line, `(5 active of 8 installed)`. The hidden-record rule does not apply, because nothing is withheld.
+## Every package is still read
 
-**When nothing is printed.** Where no set is declared, print nothing about a set, not even a line saying so. A declaration of `default` prints nothing where it deactivates nothing. It does print where the project holds a package that `default` does not name.
+1. A deactivated package's rules are read at session start like an active package's.
+2. The declaration decides which rules are applied, not which are read.
+3. The declaration does not narrow the unconditional read.
+4. A rule that is read and withheld can be cited, weighed, and reactivated within the session.
+5. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale.
 
-**Declaring during a session.** A declaration does not unload rules already read. When the engineer declares a set, write the record. Then say that the deactivated packages' rules stay in force for this session, and that Claude must be restarted for them to stop applying.
+## What is printed
 
-**Why:** a project does not need every convention the system carries. Before this, the remedies were to leave a package uninstalled or to write a local rule against it. A declaration is a recorded project decision, committed, dated, and reviewable, not the agent's judgment in the moment.
+1. Print the packages at the head of the response that carries the read, because that text renders markdown.
+2. The session-start notice and the startup display print none of it.
+3. List every installed package, and hide none.
+4. Show active packages in bold and deactivated packages in italic.
+5. Follow the list with the set's name: `package set: content`.
+6. Close with a count line: `(5 active of 8 installed)`.
+7. The hidden-record rule does not apply, because nothing is withheld.
+
+## When nothing is printed
+
+1. Where no set is declared, print nothing about a set, not even a line saying so.
+2. A declaration of `default` prints nothing where it deactivates nothing.
+3. A declaration of `default` does print where the project holds a package that `default` does not name.
+
+## Declaring during a session
+
+1. A set declared during a session takes effect at the next session.
+2. A declaration does not unload rules already read.
+3. When the engineer declares a set, write the record.
+4. Then say that the deactivated packages' rules stay in force for this session.
+5. Also say that Claude must be restarted for those rules to stop applying.
+6. **Why:** a project does not need every convention the system carries. Before this, the remedies were to leave a package uninstalled or to write a local rule against it. A declaration is a recorded project decision, committed, dated, and reviewable, not the agent's judgment in the moment.
+
 
 Related:
 
@@ -109,3 +152,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:23:01 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:06:54 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:53 PM PT
