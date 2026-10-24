@@ -24,17 +24,21 @@ Give the message, the stat, or the log entry when the question is about the comm
 
 ## Compressed
 
-**A commit SHA from the engineer asks about the work it carries.** That work is the item, the implementation, the rule, or the code change. It does not ask about the commit's mechanics. The mechanics are its message, its file list, its diff statistics, and the log entry that came with it.
+1. A commit SHA from the engineer asks about the work the commit carries.
+2. That work is the item, the implementation, the rule, or the code change.
+3. The SHA does not ask about the commit's mechanics.
+4. The mechanics are the commit's message, its file list, its diff statistics, and the log entry that came with it.
+5. Answer from what the commit added or changed.
+6. If the commit carries an item, an implementation record, or a rule, read that file. Answer from its content.
+7. If the commit changes code, answer from what the code now does.
+8. Open the files the commit added or changed, rather than reporting their names.
+9. Give the mechanics when the question is about them. Answer each of *Was it pushed*, *what did it touch*, *is it on master*, and *what does its message say* directly.
+10. Give the mechanics when they are the substance. A merge, a revert, a rename, a force-push, and a rebase have the operation as their content.
+11. There is nothing behind those operations to read.
+12. Ask only where it is genuinely unclear.
+13. A bare SHA with no verb is the ordinary case. Give the substance for it.
+14. **Why:** Reporting the commit's bookkeeping is correct, but it is about the wrong thing. It costs the engineer a second turn to ask again.
 
-**Answer from what the commit added or changed.** If it carries an item, an implementation record, or a rule, read that file. Answer from its content. If it changes code, answer from what the code now does. Open the files it added or changed rather than reporting their names.
-
-**Give the mechanics when the question is about them.** *Was it pushed*, *what did it touch*, *is it on master*, *what does its message say* — answer each directly.
-
-**Give the mechanics when they are the substance.** A merge, a revert, a rename, a force-push, and a rebase have the operation as their content. There is nothing behind them to read.
-
-**Ask only where it is genuinely unclear.** A bare SHA with no verb is the ordinary case. Give the substance for it.
-
-**Why:** reporting the commit's bookkeeping is correct but about the wrong thing. It costs the engineer a second turn to ask again.
 
 Related:
 
@@ -47,3 +51,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:14:50 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:08 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:06 PM PT
