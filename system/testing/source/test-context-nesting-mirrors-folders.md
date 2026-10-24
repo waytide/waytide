@@ -18,6 +18,24 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload R
 - the contexts that pertain to the scenario
 - the test blocks, each with an optional context scoping a local variable or a comment
 
+## Compressed
+
+1. A test file's context nesting mirrors the hierarchy of its folder path.
+2. Each directory segment under `test/automated/` becomes a context.
+3. Scenario contexts nest inside the folder contexts.
+4. Test blocks nest inside the scenario contexts.
+5. A test at `test/automated/upload/rejected/empty.rb` opens `context "Upload"` → `context "Rejected"` → the outcome context.
+6. A test at `test/automated/upload/retried.rb` opens `"Upload"` → `"Retried"`.
+7. Do **not** flatten the hierarchy into a single combined context, such as `"Upload Rejected"`.
+8. Leaf files within a feature folder, such as `rejected/empty.rb` and `rejected/refused.rb`, are distinct cases of the same feature.
+9. Those leaf files share the folder-mirrored context nesting.
+10. Leaf files are distinguished by their outcome-context titles.
+11. Do not add an extra per-file context layer.
+12. Nest the file's contexts in this order: one `context` per folder segment, then the scenario contexts, then the test blocks.
+13. Each test block may have an optional context that scopes a local variable or a comment.
+14. Keep the suite consistent with the existing `upload/` tests.
+15. **Why:** the test output and the file tree read as the same structure, with each outcome placed under its path segments and its scenario.
+
 Related:
 
 - the test-structure rule
@@ -34,3 +52,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
