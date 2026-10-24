@@ -69,6 +69,94 @@ Four rules stating one lifecycle twice is four places to keep true, and the two 
 
 Leave the state line off while the work is under way. Add it when the record reaches a word, and update it as the state changes. Record each confirmation the lifecycle requires.
 
+## Compressed
+
+1. `waytide/local/implementations/` holds implementation records, one file per implementation.
+2. A record carries how the implementation began, where it is being worked, and what became of it.
+3. An implementation is a bounded unit of work with a lifecycle.
+4. The record is a persisted, dated artifact, kept after the implementation concludes.
+5. An experiment is tagged `[experiment]` and is built to a question.
+6. A feature is tagged `[feature]` and is built to an intent.
+7. These are ordinary square-bracket tags (see the a-record-takes-category-tags rule).
+8. Both tags are reserved. The lifecycle turns on which one a record carries.
+9. A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict.
+10. Every difference between the two kinds follows from that one difference, and from nothing else.
+
+## The record
+
+1. Open with the **Question** or the **Intent**.
+2. Then give the setup: a `**State:**` line, the upstream branch it merges into, the implementation branch, its base, and the working location chosen at the start.
+3. The upstream branch is `master` or another topic branch.
+4. The setup also includes a `**Tags:**` line carrying `[experiment]` or `[feature]`.
+5. An `[experiment]` states a forecast of what is expected to happen, before the work.
+6. As the work proceeds, an experiment records what actually happened against the forecast.
+7. An experiment then records the findings and any post-hoc misses.
+8. A `[feature]` states no forecast, no comparison against one, and no findings or misses.
+9. Both kinds record the confirmations the lifecycle required, so the work's authority is auditable.
+10. Both record these confirmations: the working-location selection at the start, and the attended-or-unattended selection at the start.
+11. Both also record these: adding a worktree to work already under way, and branch deletion with worktree removal.
+12. An experiment also records the confirmations of the affirmation declaration, concluding a superseded experiment, and merging untested code.
+
+## The state
+
+1. The state sits on a canonical `**State:**` line carrying one word and nothing else, for example `- **State:** Suspended`.
+2. Add the line when the record reaches one of the state words, not when the work starts.
+3. That line is the only authoritative statement of the state.
+4. The state words may appear freely in the record's prose. Nothing else in the file is read as the state.
+5. Absence of the line is the in-progress state. Work still under way carries no line.
+6. Do not add a line to say the work is in progress.
+7. Do not invent a state word.
+8. Unlike an item, an implementation carries no state from the moment it is written. The session-start notice reports an open implementation.
+9. An open record takes no filename suffix (see the a-record-ends-with-its-state-in-upper-case rule).
+10. The concluding words both kinds take are these.
+    - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
+    - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
+    - **Suspended**: paused, not ended.
+11. The words only an `[experiment]` takes are these, since each judges a question.
+    - **Affirmed**: the question held. The user declares it.
+    - **Refuted**: the question was disproven.
+    - **Inconclusive**: it ran and gave no clear verdict either way.
+12. The word only a `[feature]` takes is this.
+    - **Completed**: integrated into the upstream branch. It is the ordinary conclusion.
+13. A feature takes no verdict word, and an experiment takes no `Completed`. Neither is an oversight.
+
+## Runs
+
+1. Runs are optional.
+2. Only an experiment has runs. A feature has none.
+3. Split an implementation into runs only when the question is held fixed and one factor is varied to compare.
+4. Each run is its own branch from the same base.
+5. Each run carries its own forecast.
+6. Runs are titled `Run 1`, `Run 2`, and so on.
+7. A run is a deliberate variation, not a retry.
+
+## It is the lifecycle record, not the design record
+
+1. The same work's design belongs in a loop record under `waytide/local/logs/loops/`.
+2. A loop record holds each cycle's hinge, the options put to the engineer, and the decision.
+3. The implementation record and the loop record divide by concern. Each names the other.
+4. Keep them as separate files. `waytide/local/logs/loops/` belongs to `design-by-efferent`, which includes `foundation`, not the reverse.
+5. A foundation rule must not require fields in that directory. That dependency is refused.
+6. Naming the loop record in prose is a citation and is permitted. It is the only reference permitted.
+
+## Format
+
+1. Use the same frontmatter-free markdown as rules: a title, then prose and tables.
+2. The title is `# Experiment — <name>` or `# Feature — <name>`.
+3. The kind reads in the title and is stated as data in the `**Tags:**` line.
+4. The lifecycle reads the tag, not the title.
+5. A record whose title and tag name different kinds is defective.
+6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
+7. Once the record concludes, the filename also takes the state suffix.
+8. End the file with the provenance footer.
+9. Pair the record with a log entry (see the implementation-records-take-a-log-entry rule).
+
+## How to apply
+
+1. Record every implementation here, tagged `[experiment]` or `[feature]`.
+2. Update the state line as the state changes.
+3. **Why:** experiments and features share one lifecycle, and differ only by question against intent, which the tag states. One convention avoids wording drifting between duplicate rules.
+
 Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
@@ -85,3 +173,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
