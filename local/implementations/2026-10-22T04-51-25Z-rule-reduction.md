@@ -889,6 +889,18 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **On balance, TOML would make the read easier to verify and harder to generalize from.** The agent recommends a middle form that keeps most of the gain. It is compiled prose built from self-contained directives, each with its scope written in, and a short reason kept where one changes behavior.
 
+### No de-normalizing — 2026-10-23
+
+**The engineer decided against de-normalizing.** A heading's context is not written into each point beneath it. The selective de-normalizing recommended above is set aside, along with the self-contained-directive form recommended as a middle course.
+
+**What follows from it:**
+
+1. **Headings that set scope or carry a directive stay headings**, in the source and in the compressed text.
+2. **The compiler's dropped sub-headings must be fixed**, since compressed texts now keep their headings. It is a code change, and it goes through the hinges with the engineer.
+3. **The compression guidance gains a line** for the batches still to run: keep a heading that sets scope or carries a directive, and do not restate a heading's context in each point.
+
+**The question the decision leaves open** is the one the scoring of numbered lists raised. How an agent follows each format is unmeasured, and only real sessions would measure it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4013,3 +4025,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:28:16 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:02:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:14:12 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:16:38 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:19:09 PM PT
