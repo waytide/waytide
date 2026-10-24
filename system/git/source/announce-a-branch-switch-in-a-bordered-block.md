@@ -47,7 +47,8 @@ Until 2026-10-23 the rule said that any unmissable form satisfied it, with `=` c
 
 ## Compressed
 
-When the agent switches branches, it prints this block. The block has a border of `=` characters above and below:
+1. When the agent switches branches, it prints this block.
+2. The block has a border of `=` characters above and below:
 
 ```
 ========================================
@@ -60,27 +61,33 @@ BRANCH SWITCHED
 ========================================
 ```
 
-**Print it on every switch.** That includes a switch the engineer asked for. It includes a switch made to reach a file. It includes a switch back to the branch the session started on.
-
-**Print it before reporting anything else about the work.**
+3. Print it on every switch.
+4. Print it when the engineer asked for the switch.
+5. Print it when the switch was made to reach a file.
+6. Print it when the switch goes back to the branch the session started on.
+7. Print it before reporting anything else about the work.
 
 ## The three fields
 
-1. **from** — the branch the working tree was on.
-2. **to** — the branch the working tree is on now.
-3. **reason** — why the agent switched, in one line or two.
-
-**Fill all three fields.** The reason states what the switch was for, not what the work is.
-
-**The border is the requirement, not decoration.** Only `=` characters above and below satisfy this rule.
+1. **from** is the branch the working tree was on.
+2. **to** is the branch the working tree is on now.
+3. **reason** is why the agent switched, in one line or two.
+4. Fill all three fields.
+5. The reason states what the switch was for, not what the work is.
+6. The border is the requirement, not decoration.
+7. Only `=` characters above and below satisfy this rule.
 
 ## What this does not cover
 
-- **Creating a branch** is a switch when the working tree moves to it. `git switch -c` prints the block, with `from` naming the base.
-- **A worktree** adds a working directory rather than moving this one. No block is printed. The implementation-lifecycle rule governs that case.
-- **A merge, a commit, or a push** does not move the working tree. No block is printed.
+1. Creating a branch is a switch when the working tree moves to it.
+2. `git switch -c` prints the block, with `from` naming the base.
+3. A worktree adds a working directory rather than moving this one.
+4. Print no block for a worktree.
+5. The implementation-lifecycle rule governs the worktree case.
+6. A merge, a commit, or a push does not move the working tree.
+7. Print no block for a merge, a commit, or a push.
+8. **Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
 
-**Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
 
 Related:
 
@@ -97,3 +104,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:14 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:12:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:13:21 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:11 PM PT
