@@ -22,6 +22,88 @@ The project's **binding** rules are read at the start of every session and follo
 
 When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
 
+## Compressed
+
+## Where binding rules live
+
+1. The project's binding rules are read at the start of every session and followed.
+2. Binding rules include naming conventions, terminology, plan-writing norms, commit conventions, and the like.
+3. Binding rules live in two directories, separated by source.
+4. **`waytide/system/`** holds the installed system packages, each in its own subdirectory (`waytide/system/foundation/`, `waytide/system/language/`, …).
+5. Packages are installed with `git subtree` and refreshed by pulling.
+6. A package's `vocabulary.md` glossary is part of its rules. Its terms are binding and cannot be applied unread.
+7. **`waytide/local/rules/`** holds the project's own local rules, one per file. Every rule, system or local, is kept one per file.
+8. Local rules are the project's own conventions, not installed from a package.
+
+## Reading the rules
+
+1. Read every rule file under `waytide/system/` and `waytide/local/rules/` at the start of a session, and follow them.
+2. Do not read a package's `source/` directory or its `README.md`.
+3. A package's `source/` holds the full rules that its compiled rules are compiled from.
+4. Edit a rule in `source/`.
+5. The compiled rules at the package root are what is read.
+6. The rules override default behavior where they conflict.
+7. Explicit user instructions still win over the rules.
+8. Read `waytide/system/foundation/` first. It defines the system.
+9. Read `waytide/local/vocabulary.md` with the rules. It binds.
+10. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
+11. Its terms decide over every package's terms.
+12. It is not a rule and does not live in `rules/`.
+13. The vocabulary-convention rule settles where it sits and why.
+14. It may not exist, and neither may `rules/`. Either absence is ordinary.
+
+## Rules and work artifacts
+
+1. Rules are kept separate from work artifacts.
+2. `waytide/system/` and `waytide/local/rules/` hold only rules.
+3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
+4. Work with working state as its own conventions describe.
+5. Do not read working state as binding rules at session start.
+6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is read at session start and is the one thing there that binds.
+
+## Purpose of a rule
+
+1. A rule's package names the surface it acts on, not the purpose it serves. A rule's purpose is not confined to its category.
+2. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
+
+## Format
+
+1. A rule is frontmatter-free markdown.
+2. It has a `# <title>` stating the rule, then the rule in prose, then short `**Why:**` and `**How to apply:**` lines.
+3. Name a system package rule with a dash-separated, lower-case name.
+4. Give a project's own local rule in `waytide/local/rules/` the ISO-8601-UTC datetime prefix in its file name. See the file-names rule.
+5. Put a rule's history in a `## History` section, placed before `Related:`.
+6. History is what the rule used to say, when it changed, what it was named, and where it sat.
+7. The compiler leaves `## History` out of the compiled rule. The full rule in `source/` keeps it.
+8. Reasoning the directive depends on is not history, even where it tells what failed before. Keep it in the body, where the `**Why:**` passage is.
+9. A paragraph leads with its claim in bold. The sentences after it support that claim.
+10. Where the support runs past six sentences, the next paragraph carries no bold lead. The absence marks it as continuation, not a new claim.
+11. The six-sentence limit is STE Rule 6.6. See the language package's waytide-prose-conforms-to-the-ste-writing-rules rule.
+
+## Recording a new local rule
+
+1. When the user states a rule, or a decision sets a rule for future work, add it as a new file in `waytide/local/rules/`.
+2. Add a matching one-line entry to `waytide/local/logs/log/`.
+3. Edit a rule that belongs to a system package in that package and re-publish it. Do not add it to `waytide/local/rules/`.
+4. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule.
+5. Prefer an observation over a rule when the thinking has not stabilized. See the observations rule.
+
+## Referencing a rule
+
+1. Reference a rule by its name, never by its file path.
+2. Write "the tdd-test-structure rule", not `waytide/system/testing/tdd-test-structure.md`.
+3. Rename a rule when its name stops saying what it says. Its filename changes with it, so a recorded path then points at nothing.
+
+## Removing a rule
+
+1. Search for what cites the rule, and reconcile the live artifacts that cite it.
+2. Then remove the rule and log the removal.
+3. Where the rule is stopped rather than superseded, tag its log entry `[suspended]`.
+4. In a `[suspended]` entry, name what the rule cost and what else changed. See the a-suspension-is-a-log-entry rule.
+5. Drop a removed rule from every `Related:` list. Do not mark it, such as with `(deleted)`.
+6. The log entry is the durable trace of the removal. An item is never deleted. Its state changes and its record is kept.
+7. **Why:** the rules are the project's durable, in-repo conventions, committed with the code and read fresh each session, so they stay authoritative and current. One rule per file keeps each convention readable, referenceable, and revisable. Separating installed packages from local rules means refreshing a package never touches a local rule.
+
 Related:
 
 - the file-names rule
@@ -57,3 +139,4 @@ Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
