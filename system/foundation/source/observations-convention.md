@@ -38,6 +38,55 @@ Giving an observation the **eight states every other item takes** was the cost o
 
 Write a later observation where the thinking moves, and leave the earlier one as written. Promote it by writing the rule elsewhere, and change nothing about the observation when you do.
 
+## Compressed
+
+Lines 1–6 below are the opening statements, which come before any section heading.
+
+1. `waytide/local/items/` holds working hypotheses, definitions, and methods that are not yet binding.
+2. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized.
+3. They are not read as binding at session start, the way rules are.
+4. An observation lives in `waytide/local/items/`.
+5. An observation is tagged `[observation]`.
+6. The tag is what makes a record an observation.
+
+## `Stated` is an observation's only state, and it never changes
+
+1. An observation carries `**State:** Stated` from the moment it is written.
+2. It keeps that state for the rest of its life.
+3. Its filename ends `-STATED`.
+4. It carries no `**Why this state:**` line.
+5. An observation has no lifecycle.
+6. It is never realized, abandoned, lapsed, superseded, or suspended.
+7. An observation that no longer holds is not retracted.
+8. A later observation states the later thinking.
+9. The earlier observation stays as what was thought at the time.
+10. Promotion is not a state change.
+11. When an observation stabilizes into a binding convention, write the rule in `waytide/local/rules/`.
+12. When the rule is written, the observation stays exactly as it is, as the discovery record.
+13. The items-convention needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
+
+## The shape
+
+1. **When to use:** use an observation for material worth keeping that is still under active discovery.
+2. Also use one for a method or definition the engineer has not ratified as a convention.
+3. When in doubt between a rule and an observation, prefer an observation.
+4. **Format:** use the same frontmatter-free markdown as rules.
+5. The file starts with a `# <title>`, then a `**State:** Stated` line.
+6. Next comes a `**Tags:**` line carrying `[observation]`, then the content in prose.
+7. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
+8. The filename ends `-STATED`.
+9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
+10. **Promotion:** write the rule in `waytide/local/rules/`.
+11. Note the promotion in the two files, the rule and the observation.
+12. Add a `waytide/local/logs/log/` entry for the promotion.
+13. Leave the observation as written.
+14. **Recording one:** add the file.
+15. Add a matching one-line entry to `waytide/local/logs/log/`.
+16. The entry notes that it was recorded as an observation, and why it is not yet a rule.
+17. Never change an observation's state.
+18. Where the thinking moves, write a later observation and leave the earlier one as written.
+19. **Why:** discovery produces valuable thinking before it is ready to bind. A place for non-binding hypotheses keeps that thinking without imposing it early as a rule.
+
 Related:
 
 - the items-convention — the eight states an observation does not take, and the state requirement it satisfies
@@ -63,3 +112,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
