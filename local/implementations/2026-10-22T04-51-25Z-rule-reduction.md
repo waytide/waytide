@@ -1136,10 +1136,13 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 ### The `design-by-efferent` and `versioning` batch's review list — 2026-10-24
 
-**The engineer is going through the three review items one at a time.**
+**The engineer went through the three review items one at a time.**
 
 1. **one-outcome-at-a-time-name-via-options: the loop stops at every gate except under unattended work, which came after the rule was introduced.** The rule's How to apply already carried the exception. The opening and the title now carry it too. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch. There, compressed points 2 and 6 now say "in attended work" and that unattended work does not stop at the gates. The point numbers are unchanged. They are not re-checked by agents, since the directive list predates the change.
 2. **loop-records: a cycle records options and the engineer's decision only in attended work.** The unattended exception, which came after the rule was written, was stated only in the Format section. The opening and How to apply now carry it too. The fix is made the same way as item 1. On the phase branch, compressed points 4 and 5 and How to apply's point 2 now name the unattended case.
+3. **dbe-human-in-the-loop: the focus on the actuation is emphasis, not exclusion, and test mechanics are the testing framework and the ceremonies of using it.** The actuation, observation, and controls, as well as the naming of things, are the test's content, not its mechanics. Turn two now says so, and keeps its fine point on the actuation, the highest-leverage hinge. The Why named the hinges as the actuation and the resulting solubility alone, from when those were the only two. It now names the hinges of the hinge-cycle rule, with that pair as the original and the highest-leverage. The fix is made the same way as items 1 and 2. On the phase branch, compressed point 9 of the loop takes the definition as a second sentence, so the point numbers stay. The compressed Why already said "only at the hinges" without listing them.
+
+**All three review items are resolved.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4283,3 +4286,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:07 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:39:24 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:45:01 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:04:19 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:59 PM PT

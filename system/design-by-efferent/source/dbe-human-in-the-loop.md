@@ -11,12 +11,12 @@ Division of labor: the human owns the efferent design — what the actuation loo
 The loop, by turn:
 
 1. **Human sets the cradle — the actuation.** The actuation is the contract and the highest-leverage hinge. The AI may propose it, but the human holds edit and veto power *specifically on the actuation*. When the efferent shape is uncertain, the AI asks rather than averaging toward common code.
-2. **The three test hinges produce turn one.** The actuation, the observation, and the controls are each put to the human in turn, per the hinge-cycle rule, and the test file is assembled once all three are accepted. **The whole test file is never produced at an earlier hinge**, unless the engineer chose unattended work at the start, where the agent decides each hinge and generates through (see the attended-or-unattended-is-chosen-at-the-start rule). The human deliberates whether the actuation reads as soluble use, not the test mechanics. Fix the cradle now if not. It is cheapest before any implementation exists.
+2. **The three test hinges produce turn one.** The actuation, the observation, and the controls are each put to the human in turn, per the hinge-cycle rule, and the test file is assembled once all three are accepted. **The whole test file is never produced at an earlier hinge**, unless the engineer chose unattended work at the start, where the agent decides each hinge and generates through (see the attended-or-unattended-is-chosen-at-the-start rule). The human deliberates whether the actuation reads as soluble use, not the test mechanics: the testing framework and the ceremonies of using it. The actuation, observation, and controls, as well as the naming of things, are the test's content, not its mechanics. Fix the cradle now if not. It is cheapest before any implementation exists.
 3. **AI generates the implementation inside the cradle, straight through**, and runs the test to *confirm* (verification, not the green half of a ceremony). The human deliberates the unit's solubility. If it only works by forcing an awkward actuation, the fix goes to the cradle, not the implementation.
 4. **Loop by outcome.** Name the next distinct outcome of the same single actuation. The AI adds an inner `context` and extends the implementation just enough. The human deliberates solubility again.
 5. **Exit on solubility, not coverage.** The stopping criterion is that the unit has dissolved into the reader's understanding, not an assertion count.
 
-**Why:** Design judgment stays with the human, as the DBE-as-design-tool rule has it. The only places it applies are the hinges, which here are the actuation and the resulting solubility. Concentrating human attention there, and removing it from pass/fail theater and test mechanics, spends the human's judgment where it has leverage. It lets the AI generate inside the cradle without ceremony. The AI's failure mode is regressing toward the average of poorly-designed code, which announces itself first as an awkward actuation. A wait at that hinge catches it at the interface.
+**Why:** Design judgment stays with the human, as the DBE-as-design-tool rule has it. The only places it applies are the hinges of the hinge-cycle rule. The actuation and the resulting solubility are the original pair and carry the most leverage. Concentrating human attention there, and removing it from pass/fail theater and test mechanics, spends the human's judgment where it has leverage. It lets the AI generate inside the cradle without ceremony. The AI's failure mode is regressing toward the average of poorly-designed code, which announces itself first as an awkward actuation. A wait at that hinge catches it at the interface.
 
 **How to apply:** Run the loop above. Keep turns small (one actuation, one outcome) so the cradle stays legible while the human deliberates. Hand the human the actuation to edit or approve. Let the AI fill everything else. Do not ask the human to confirm a failing or passing test. Stop when solubility is satisfied.
 
@@ -44,7 +44,7 @@ The loop, by turn:
 6. Assemble the test file once all three are accepted.
 7. Never produce the whole test file at an earlier hinge.
 8. The exception is when the engineer chose unattended work at the start. Then the agent decides each hinge and generates through (see the attended-or-unattended-is-chosen-at-the-start rule).
-9. The human deliberates whether the actuation reads as soluble use, not the test mechanics.
+9. The human deliberates whether the actuation reads as soluble use, not the test mechanics: the testing framework and the ceremonies of using it. The actuation, observation, and controls, as well as the naming of things, are the test's content, not its mechanics.
 10. If it does not, fix the cradle now, before any implementation exists.
 11. **AI generates the implementation inside the cradle, straight through.**
 12. The AI runs the test to confirm, as verification, not as the green half of a ceremony.
@@ -65,6 +65,10 @@ The loop, by turn:
 6. Stop when solubility is satisfied.
 7. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
 
+## History
+
+Until 2026-10-24 the Why named the hinges as the actuation and the resulting solubility alone, from when those were the only two, and turn two left "test mechanics" undefined. The engineer set out that mechanics are the testing framework and the ceremonies of using it, while the actuation, observation, controls, and naming are the test's content. The rule now says so, and the Why names the hinges of the hinge-cycle rule.
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -84,3 +88,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:41 PM PT
