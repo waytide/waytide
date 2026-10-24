@@ -32,6 +32,38 @@ Interrupting is the cost, and it is one selection. Deferring the ask to the end 
 
 Do not ask about an instruction that governs only the artifact at hand. Do not ask a second time about a preference the engineer has declined to record.
 
+## Compressed
+
+1. When the engineer states a preference about how the work is done, interrupt the work and ask whether to record it.
+2. Ask through the selection interface, per the present-every-prompt-through-askuserquestion rule.
+3. Do not carry the preference silently.
+4. Do not wait for the task to finish before asking.
+5. A preference does not count as a rule until it is written down.
+
+## What counts
+
+1. A statement about how the work is done, rather than about the artifact in front of you, is a preference.
+2. *Answer in lists*, *never offer to conclude an experiment*, and *say writer rather than user* are each a preference.
+3. A statement about this one artifact is an instruction.
+4. Carry out an instruction. Do not ask about it.
+5. *Make that sentence shorter* is an instruction.
+6. The test is whether the statement would still hold next week.
+7. If it would still hold, it is a candidate for a rule.
+8. If it would not, it is an instruction, and nothing is asked.
+
+## The three candidates
+
+1. The selection offers all three candidates as real options.
+2. **A rule** goes in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry that the rules-convention requires.
+3. **An observation** goes in `waytide/local/items/`, for when the thinking has not settled.
+4. Per the observations-convention, prefer an observation when in doubt.
+5. **Neither** applies when the engineer does not want the preference recorded.
+6. Accept "neither" without argument.
+7. If the engineer declines to record a preference, do not ask about it again in the same session.
+8. Record the engineer's own words, not a paraphrase.
+9. Capture the words when they are said. Do not write the rule later from memory.
+10. **Why:** The project-context-lives-in-the-committed-artifacts rule forbids holding a preference in an agent memory store. So the path to a written rule must be short enough that nothing needs holding. Asking at once keeps it short. If the ask waits until the end of the task, the engineer's wording is lost.
+
 Related:
 
 - the project-context-lives-in-the-committed-artifacts rule — the store this replaces, and which depends on this one
@@ -46,3 +78,4 @@ Authored by Scott Bellware on Fri Aug 14 2026 at 11:32:29 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
