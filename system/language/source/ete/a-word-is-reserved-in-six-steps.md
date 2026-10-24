@@ -30,6 +30,40 @@ The order is not arbitrary. Step 2 comes before step 3 because an ordinary word 
 
 Reserve the word and stop there. Conform existing prose to it only where that is asked for separately.
 
+## Compressed
+
+1. Reserve a word by following these six steps in order, every time a word is reserved.
+2. The instruction that starts the sequence is "Waytide reserves the word, X". It names the word and asks for all six steps.
+3. The sequence does not have to be spelled out each time a term is settled.
+4. Write the verb as `reserves`, and never `claims`.
+5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.
+6. Step 1: look the word up in the STE dictionary. This step is mechanical.
+7. The lookup has three outcomes. The word is approved, with the one meaning it may carry.
+8. Or the word is not approved, and the dictionary names the approved word that replaces it.
+9. Or the word is absent from the STE dictionary.
+10. Step 2: ask what the word names. Do not skip this step.
+11. A word that names something in the subject field is terminology. Continue the sequence.
+12. A word that qualifies, joins two statements, or does grammatical work is ordinary vocabulary. Stop and write no entry, per the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule.
+13. Step 3: decide noun or verb.
+14. A word used both ways takes a category for each. These are two decisions, not one.
+15. STE Rule 1.7 forbids a technical noun used as a verb. STE Rule 1.13 forbids a technical verb used as a noun.
+16. Step 4: try an STE category first. STE Rule 1.5 gives twenty-two noun categories, and STE Rule 1.12 gives four verb categories.
+17. Waytide's terms land in noun categories 7, 11, 15, and 19, and verb category 2.
+18. Step 5: use an ETE category only where no STE category holds the word.
+19. Do not reach step 5 until an STE category has been tried and refused.
+20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
+21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation vocabulary-convention.
+22. The entry gives the definition, what the STE dictionary says about the word, and the category.
+23. The engineer decides the term's category, because a term is a design decision.
+24. Put the category to the engineer through the selection UI.
+25. Bring the step 1 lookup already done, and name the candidate categories.
+26. Steps 4 and 5 are judgment. Step 1 is not.
+27. The phrase reserves the word and does not order a sweep.
+28. A reservation settles what the word means in Waytide's prose from that point on.
+29. Replacing another word with the reserved word where it already stands is a separate instruction, asked for separately.
+30. Do not conform existing prose until that separate instruction is given.
+31. **Why:** without the stated sequence, a writer picks a category by feel, and the ETE categories absorb every hard word. An ETE category is a departure from the standard, taken only where the standard has nothing.
+
 Related:
 
 - the ete-declares-its-own-categories rule — the five ETE categories, and the reach-for-STE-first instruction
@@ -44,3 +78,4 @@ Related:
 Authored by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:11:32 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
