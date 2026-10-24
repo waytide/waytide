@@ -12,6 +12,27 @@ A rule's package — `language`, `testing`, `git`, and the others — names the 
 
 State its purpose, the mindset, in the rule's body. Cross-reference sibling rules that establish the same stance through a different lever, even where they live in other packages. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat package membership as the whole of a rule's meaning.
 
+## Compressed
+
+1. A rule's package names the surface it acts on, such as words, commits, tests, or code. It does not name the purpose the rule serves.
+2. Many rules exist to establish a mental stance, a way of thinking about the code and the work, rather than to standardize a mechanic.
+3. Purpose is not confined to category. Rules in different packages can serve the same purpose.
+4. A rule's real justification is often not visible from its package.
+5. Terminology rules are the purest case. Each is an X-not-Y substitution (controls-not-factories, name-literally-not-by-analogy) that swaps a word to swap the concept it installs.
+6. Terminology rules do not change what the code does.
+7. The same purpose recurs under other packages through other levers. The `git` subject-first commit-message rule is a mindset rule reached through grammar (passive voice, indicative mood).
+8. That rule states what changed about the code, not what the engineer did, because centering the engineer reinforces anthropocentrism.
+9. A rule's reach can exceed the artifact. The no-slang rule extends to conversation with the user, because the mindset it preserves lives in the person.
+10. When writing or evaluating a rule, first ask *"what stance does this establish?"*. Do not ask only *"what does it standardize?"*.
+11. Place a rule in a package by the surface it acts on.
+12. State the rule's purpose, the mindset, in its body.
+13. Cross-reference sibling rules that establish the same stance through a different lever, including rules in other packages.
+14. When two rules seem to conflict, reconcile them at the level of purpose, not surface.
+15. Do not treat package membership as the whole of a rule's meaning.
+16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
+17. A rule that is technically obeyed while the intended stance is absent has failed.
+18. **Why:** Read as local conventions, these rules look like an arbitrary do-this-not-that list. Naming their purpose keeps them coherent and prevents contradictory rules from accreting in other packages.
+
 Related:
 
 - the subject-first commit-message rule in the `git` package
@@ -30,3 +51,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
