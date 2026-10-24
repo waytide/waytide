@@ -35,6 +35,38 @@ When `Explain briefly` is selected, answer with the summary alone and display th
 
 Word each option's own description *…then display this selection prompt again*, never *put this question again*, and say the brief one's length in its description. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose.
 
+## Compressed
+
+1. Every time you prompt the engineer for a selection, a decision, or an answer, present it through the selection UI, the `AskUserQuestion` tool.
+2. This holds for any prompt.
+3. Never use a prose question or a hand-typed list.
+4. Each genuine candidate is an option.
+5. Do not add a free-text option of your own, such as "Chat about this".
+6. The UI's built-in **"Other"** answer is how the engineer answers outside the option set. A closed list must never foreclose an answer only the engineer can produce.
+7. Offer an `Explain` option on every prompt, not only where you judge the question hard.
+8. `Explain` is not a free-text option. It lets the engineer ask what the question means before answering.
+9. When `Explain` is selected, answer with a summary at the top, followed by a normal level of explanation.
+10. That explanation must not restate the options or repeat the same framing.
+11. Then display the same selection prompt again, with every other option unchanged.
+12. On that second display, `Explain` is replaced by **`Explain briefly`**.
+13. When `Explain briefly` is selected, answer with the summary alone: the shortest statement of what the question decides, with nothing under it.
+14. Then display the prompt again, still carrying `Explain briefly`.
+15. Do not invent a further variant. The option does not change again, however many times it is selected.
+16. Word `Explain`'s description as *…then display this selection prompt again*.
+17. Never word a description as *put this question again*.
+18. `Explain briefly`'s description states its length: *…in a sentence or two, then display this selection prompt again*.
+19. `Explain` takes one of the UI's four option slots, which leaves three for genuine candidates.
+20. Where there are four genuine candidates, drop the fourth rather than `Explain`.
+21. Place `Explain` among the supplied options. Its position relative to the built-in free-text answer is not yours to choose, since the harness renders that answer last.
+22. The UI requires at least two options. Do not invent an option to reach that floor.
+23. Present every genuine candidate you find.
+24. Where you find only one, the second option is `Explain`, an account of that candidate.
+25. Do not search for options just to fill the second place.
+26. Do not say that a lone candidate is the only possibility.
+27. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
+28. Use plain prose only for statements, reports, and explanations that do not ask the engineer to choose.
+29. **Why:** The selection UI makes responsibility transfer legibly and consistently, and it already supplies free text. The two-option floor pushes toward the real decision rather than a single proposal for approval. `Explain` handles a well-formed prompt the engineer does not understand. It must be an option because you cannot tell which of your own questions are unclear.
+
 Related:
 
 - the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
@@ -60,3 +92,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 1:04:10 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
