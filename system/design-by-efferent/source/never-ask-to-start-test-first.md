@@ -12,6 +12,29 @@ A question with a genuinely situational answer is a decision rather than a settl
 
 **How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task selection if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
 
+## Compressed
+
+1. Test-first is the standing default for starting any task.
+2. Do not ask "shall I start it test-first?".
+3. Do not otherwise put the test-first decision to the human.
+4. The answer is always yes unless told otherwise.
+5. If the human wants a task started another way, they will give a different instruction.
+6. When the next task is clear, begin it test-first without asking.
+7. You may offer the next-task selection if useful.
+8. Never frame the next-task selection as a test-first/not question.
+9. Deviate from test-first only on an explicit instruction to do so.
+
+## What this does not cover: the human's level of participation
+
+1. Test-first is the method's substance: design is driven from the efferent side, and the test is written before the implementation.
+2. Test-first is never put to the engineer.
+3. Attended or unattended is a different question. It asks how often the loop stops, not what it builds.
+4. DBE is in effect either way. The attended-or-unattended choice is a batch size. It neither confirms nor declines the method.
+5. Small batches spend attention continuously and keep rework near zero. Big batches spend none until the end and take rework instead.
+6. A question with a genuinely situational answer is a decision, not a settled default. This rule does not forbid asking it.
+7. See the attended-or-unattended-is-chosen-at-the-start rule.
+8. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
+
 Related:
 
 - the human-in-the-loop rule
@@ -34,3 +57,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
