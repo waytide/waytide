@@ -1144,6 +1144,14 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **All three review items are resolved.**
 
+### The `language` and `journal` batch — method, committed before it runs, 2026-10-24
+
+**At the engineer's direction, the `language` package and the `journal` package are the fourth unattended batch**, 23 rules in all. That is language's 13 rules not yet compressed, six of them under `ete/`, and journal's 10. The method is the `testing` batch's, unchanged, with the listers run alongside the compressors as in the `design-by-efferent` batch.
+
+**language comes before foundation because other rules point to it.** Its ETE rules set the writing standard, the one an unattended plan is written in. journal governs only `local/journal/`, and it is small enough to run alongside it. foundation stays last.
+
+**Each compressed text keeps its point numbers when it is repaired**, as the review items have so far. A repair goes into an existing point as a further sentence, rather than as a new point that renumbers those after it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4287,3 +4295,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:39:24 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:45:01 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:04:19 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:59 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:49 PM PT
