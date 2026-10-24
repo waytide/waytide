@@ -36,6 +36,33 @@ A list of consumers reads as internal bookkeeping right up until the repository 
 
 A decision may have been about that project, and its name is there for that. Leave it. The rule is about naming a project *as a consumer*. Leave historical records as written. Treat a name already in one as the disclosure rule's concern rather than this one's.
 
+## Compressed
+
+1. A project's own files do not name the projects that consume it.
+2. This covers the installed packages under `waytide/system/`, the working state under `waytide/local/`, and the code and documentation beside them.
+3. It holds for a library, a package, a rule system, or anything else other projects install.
+4. A consumer is a project named only because it installed this one. That is the whole test.
+5. Do not add a list of consumers for convenience.
+
+## What it does not reach
+
+1. The test is why the name is there, not whether the named project consumes this one.
+2. A project named because a decision was about it may be named. Leave its name.
+3. A project that is part of this project at large may be named, such as Waytide's `website`.
+4. A reference project the method is shown through may be named, such as Waytide's `constant`.
+5. Leave a historical record that already names a consumer as written. It is not revised to suit a later convention.
+6. The one exception is disclosure, governed by the disclosure rule, not this one. A consumer's name already in a record is that rule's concern.
+7. That correction removes the name and keeps every claim true by stating it at a lower resolution.
+8. The engineer is the authority on what counts as a consumer.
+9. This rule governs what is written from now on. It does not license going back through the records.
+
+## Where the operational need goes instead
+
+1. Where a tool must reach the consuming projects, such as to survey or refresh them, it reads per-machine configuration outside the repository.
+2. That configuration lives under `~/.config/`, not in a gitignored file inside the repository.
+3. Commit the tool. It names no consumer and only reads the configuration.
+4. **Why:** a consumer list inverts the dependency direction, drifts silently, and discloses other parties' projects once the repository is public. Per-machine configuration keeps the capability without those costs.
+
 Related:
 
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded
@@ -53,3 +80,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:40:54 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
