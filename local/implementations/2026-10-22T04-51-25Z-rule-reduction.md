@@ -953,6 +953,12 @@ With both restored, no directive outside the intended resolution is lost, and no
 2. **The section sign**, as `§foundation/phases#1`. It means "section", and nothing in Claude Code or git uses it, but it is harder to type.
 3. **A word prefix**, as `rule:foundation/phases#1`. It is plain and easy to type, but longer.
 
+### A point's address begins with a colon — 2026-10-23
+
+**The engineer decided that an address for a point in a numbered rule begins with `:`, which stands for "rule:".** An example is `:foundation/implementation-lifecycle/phases#1`. Nothing in Claude Code, git, or `CLAUDE.md` gives a leading colon a meaning. A colon closes a word prefix like "rule:", so it reads as that prefix shortened.
+
+**Still open:** whether the address carries the rule's name always, or only where a section name does not identify the rule within its package.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4081,3 +4087,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:19:09 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:20:30 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:22:07 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:27:45 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:28:28 PM PT
