@@ -14,6 +14,29 @@ When adding coverage for behavior that already exists, all five are in play:
 
 **How to apply:** design a coverage test through the hinges as usual. They are actuation, controls, observation, and naming, with a wait at each for the human. Treat the implementation hinge as a confirmation step: run it, and show it verified. Send any awkwardness back to the test, not to the implementation.
 
+## Compressed
+
+1. The five hinges are actuation, observation, controls, implementation, and naming.
+2. Designing a test is a design act, so the design of a test waits at the hinges.
+3. This holds both when designing behavior (DBE) and when covering existing behavior (testing).
+4. The hinges apply when writing coverage, not only when designing.
+5. When adding coverage for existing behavior, all five hinges are in play.
+6. Wait for the human at each hinge.
+
+## Hinges when adding coverage
+
+1. **Actuation**: confirm the actuation's shape.
+2. **Controls**: decide how to construct the situation the test needs. An example is an inherited-only constant set up through an `include` relationship.
+3. **Observation**: decide what to read about the behavior's effect, and how to read it.
+4. **Naming**: settle the outcome contexts at the close.
+5. **Implementation**: this hinge is in play but degenerate. There is no new code to write and no red to drive.
+6. At the implementation hinge, run the test against the existing implementation and confirm that it passes.
+7. Show the implementation hinge as verified.
+8. Solubility is still judged at the implementation hinge.
+9. If the test reads awkwardly against clean code, fix the test's control, actuation, or observation.
+10. Never change the implementation to resolve that awkwardness. Never break an implementation to introduce a test.
+11. **Why:** The hinges hand each design decision to the human at its gate. A coverage test has real design decisions, especially in its controls and observations. Coverage differs from design only in that no behavior is designed and no red is driven. The hinges are present in both.
+
 Related:
 
 - the hinge-cycle rule
@@ -31,3 +54,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
