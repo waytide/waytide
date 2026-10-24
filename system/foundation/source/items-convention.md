@@ -90,32 +90,70 @@ Change the state as the item reaches another word, renaming the file with it, an
 
 ## Compressed
 
-**Items.** `waytide/local/items/` holds the project's items, one file per item: the thinking that settles what the work should be and how it should go.
+1. `waytide/local/items/` holds the project's items, one file per item.
+2. An item is the thinking that settles what the work should be and how it should go.
+3. Name the file with the ISO-8601-UTC prefix, ending in its state in upper case.
+4. Write the item as frontmatter-free markdown.
+5. Give it a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say, and a provenance footer.
+6. Write a log entry when the item is created and at each change of its state.
+7. Put no code samples in an item.
+8. Nothing else is required.
+9. Where an item records decisions, record them as dated **Settled** resolutions.
+10. Where an item leaves something out, mark it in an **Out of Scope / Deferred** tail.
+11. Where an item gives tasks, give checkbox tasks stating behavior.
+12. An item that neither settles things nor sequences work carries neither resolutions nor tasks.
+13. Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`.
+14. Tag an item that has no tag at all `[idea]`.
+15. Give `[idea]` to no item that already carries a tag.
+16. Write `[aspiration]` only where an aspiration was asked for.
+17. The tag set is open.
+18. `[deferred]` is freeform like any other tag.
+19. An item may carry several tags.
+20. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-takes-category-tags rule).
+21. A kind tag describes the item and decides nothing about it, with two exceptions.
+22. `[observation]` is one exception: it makes the item an observation.
+23. `[work-item]` is the other exception, described below.
+24. Otherwise, what an item is, the item itself says, not its tag.
+25. No report groups items by kind tag, and no filename derives from one.
+26. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
+27. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
+28. `**Priority:** N` ranks the item from 1 to N, contiguous, one item to a number.
+29. Rank 1 is worked next among the actionable items.
+30. Ranking an item renumbers those below it.
+31. A rank does not clear a wait.
+32. Nothing derives from either line.
+33. An item's content is point-in-time.
+34. A reference in an item that time has overtaken is not a defect.
+35. Do not chase such a reference.
+36. Every item carries a state.
+37. Start an item **Open** where its thinking is unsettled.
+38. Start an item **Active** where it settles something.
+39. An observation starts and stays **Stated**.
+40. **Realized** — what it describes exists.
+41. **Deferred** — kept deliberately, with no one working toward it.
+42. An item merely waiting its turn carries `**Waits for:**` instead of **Deferred**.
+43. **Suspended** — paused, not ended.
+44. **Superseded** — a later item replaced it, and the two name each other.
+45. **Abandoned** — dropped by decision.
+46. **Lapsed** — it lost its relevance with no one deciding.
+47. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes.
+48. At each change of state, rename the file.
+49. At each change of state, write the log entry.
+50. A work item, tagged `[work-item]`, is a piece of work to be done.
+51. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
+52. A work item concludes `Done`, `Abandoned`, or `Superseded`.
+53. A work item never takes `Realized` or `Lapsed`.
+54. Take `Done` back to `Active` when the work reopens.
+55. Supersede an item rather than rewrite it.
+56. What a superseded item settled stays as written.
+57. Amend an item by dated addition.
+58. When amending, keep an outdated resolution's date and wording.
+59. Answer a question that runs against what an item settled, and record the change.
+60. Do not refuse to answer until the item is amended.
+61. Reconcile a settled item against later work.
+62. Never regenerate a settled item from later work.
+63. **Why:** One class of record, because its earlier kinds differed only in a word, which a tag carries. A thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
 
-**The shape.** Name the file with the ISO-8601-UTC prefix, ending in its state in upper case. Write frontmatter-free markdown: a `# <title>`, a `**State:**` line, a `**Tags:**` line, whatever the item has to say, and a provenance footer. Write a log entry when the item is created and at each change of its state. Put no code samples in it. Nothing else is required — record decisions as dated **Settled** resolutions, mark what is left out in an **Out of Scope / Deferred** tail, and give checkbox tasks stating behavior, each only where the item does that.
-
-**Tags.** Tag an item by its kind: `[design]`, `[plan]`, `[aspiration]`, `[observation]`. Tag an item with no tag at all `[idea]`, and give `[idea]` to no item that already carries a tag. Write `[aspiration]` only where an aspiration was asked for. The set is open, `[deferred]` is freeform like any other, and an item may carry several. A kind tag describes the item and decides nothing about it, except `[observation]`, which makes it an observation, and `[work-item]`, below. Otherwise, what an item is, the item itself says, not its tag.
-
-**Two optional lines, and most items carry neither.** `**Waits for:**` states what must finish before the item is actionable, and nothing more. `**Priority:** N` ranks it from 1 to N, contiguous, one item to a number, and rank 1 is worked next among the actionable items; ranking an item renumbers those below it. A rank does not clear a wait. Nothing derives from either line.
-
-**An item's content is point-in-time.** A reference in it that time has overtaken is not a defect and is not chased.
-
-**States.** Every item carries a state. Start it **Open** where its thinking is unsettled, and **Active** where it settles something. An observation starts and stays **Stated**.
-
-- **Realized** — what it describes exists.
-- **Deferred** — kept deliberately, with no one working toward it. An item merely waiting its turn carries `**Waits for:**` instead.
-- **Suspended** — paused, not ended.
-- **Superseded** — a later item replaced it, and the two name each other.
-- **Abandoned** — dropped by decision.
-- **Lapsed** — it lost its relevance with no one deciding.
-
-`Realized`, `Deferred`, and `Open` are taken back to `Active` or `Open` when the work resumes. At each change, rename the file and write the log entry.
-
-**A work item**, tagged `[work-item]`, is a piece of work to be done. It takes `Open`, `Active`, `Deferred`, and `Suspended`, and concludes `Done`, `Abandoned`, or `Superseded` — never `Realized` or `Lapsed`. `Done` is taken back to `Active` when the work reopens.
-
-**Changing an item.** Supersede it rather than rewrite it: what a superseded item settled stays as written. Amend it by dated addition, keeping an outdated resolution's date and wording. Answer a question that runs against what an item settled, and record the change, rather than refusing until the item is amended. Reconcile a settled item against later work, and never regenerate it from that work.
-
-**Why:** one class of record, because its earlier kinds differed only in a word, which a tag carries; and a thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
 
 ## History
 
@@ -158,3 +196,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:25:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:44 PM PT
