@@ -72,6 +72,61 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 **When unattended, present the plan as a list before generating, and write it in ETE.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
+## Compressed
+
+1. Work designed through DBE runs in one of two modes: attended or unattended.
+2. Choose the mode when a feature or an experiment is started. Hold it for the work's whole duration.
+3. **Attended** is human-in-the-loop. The loop waits at every hinge, and the engineer deliberates each one.
+4. Attended is the default.
+5. **Unattended**: the loop does not wait. The agent determines and decides each hinge, generating through to the end of the work.
+6. DBE is in effect in both modes. Unattended is not DBE off.
+7. The cradle still holds under unattended work. The efferent test is written before the implementation.
+8. The actuation is still designed from the use site. Code generation is still steered toward solubility.
+9. Every hinge is still determined and run in both modes. Only who decides it changes, and whether the loop stops.
+10. Attended is small-batch: a wrong turn is caught at its hinge. Unattended is big-batch: a wrong turn is found with everything built on it.
+11. The choice is a judgment about this piece of work: how load-bearing it is, and how likely the first pass is to be right.
+12. Ask the mode at the start, through the selection UI, beside the working-location selection.
+13. Put both decisions at the same gate. Do not add a separate gate.
+14. The option set shows that attended is the default.
+15. Ask the question in these exact words:
+
+> Who decides?
+
+with these options:
+
+> **Attended** — You decide. The agent automates. (the default)
+>
+> **Unattended** — The agent decides and generates through.
+
+16. These words are fixed.
+17. Name no hinge in the question or in any option.
+18. Name the hinges when the loop reaches the first one, not before.
+19. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+20. That confirmation records what was chosen, when, and by whom.
+21. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+22. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+23. Under unattended work, each cycle records its hinge, and what was decided and why.
+24. The "why" is the reasoning the agent actually applied.
+25. Under unattended work, write no Options line and no Decision / chat line.
+26. Do not write an unattended cycle as though an engineer was consulted.
+27. Do not mark unattended hinges with the loop-records form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+
+## Unattended presents a plan before it generates
+
+1. Under unattended work, present a plan before generating.
+2. Attended work needs no plan.
+3. The plan is a list.
+4. Use an ordered list where each step rests on the one above it.
+5. Use a bullet list where the steps are independent.
+6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
+7. ETE is the STE dictionary and writing rules, plus Waytide's reserved terms such as `hinge`, `actuation`, `cradle`, and `solubility`.
+8. Use short sentences and active voice in the plan.
+9. Use no semicolon in the plan.
+10. Put one idea in each list item.
+11. Present the plan in the response.
+12. Do not write the plan to a file. It is not a `foundation` planning record.
+13. **Why:** the engineer's attention is scarce. For work with negligible rework cost, waits at each hinge buy nothing. The person who knows the work's worth should choose the cadence. Keeping DBE in force stops the choice being a way out of the method. A record showing options put to an absent engineer would be believed, so the mode is recorded honestly. The plan is the one cheap moment of attention before big-batch work.
+
 Related:
 
 - the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
@@ -106,3 +161,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:31:36 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
