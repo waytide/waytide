@@ -22,6 +22,46 @@
 
 **How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Mark retroactive reconstructions as backfills. Keep the one-line decision-log entries separate and intact.
 
+## Compressed
+
+1. `waytide/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
+2. The loop is the distributed OODA cycle, as defined in the DBE vocabulary.
+3. A loop record captures how a feature was decided. The decision log captures what was decided.
+4. A loop record holds the hinges the AI determined and the options it put to the engineer.
+5. It also holds the engineer's decisions, or the chat that replaced them.
+6. A loop record must not displace the decision log.
+7. The decision log stays one line per decision.
+
+## Format
+
+1. Name the file per the ISO 8601 UTC datetime prefix convention: `YYYY-MM-DDTHH-MM-SSZ-<feature-name>.md`.
+2. Begin with a `# Loop record — <feature>` title and a one-paragraph summary of the feature.
+3. Declare the mode at the top, as **attended** or **unattended**, per the attended-or-unattended-is-chosen-at-the-start rule.
+4. State the mode once.
+5. Write one section per cycle, in order.
+6. Each cycle records a **Hinge**: the subtle, load-bearing decision the AI determined.
+7. Each cycle records **Options**: the candidates put to the engineer at the gate.
+8. When a hinge was handled without stopping, write Options explicitly as "none — no gate".
+9. Each cycle records **Decision / chat**: what the engineer chose, or the chat that ensued and how it resolved.
+10. Record the substance of the chat, not just its outcome.
+11. Under an unattended mode, a cycle carries its hinge and the decision with its reasoning.
+12. Under an unattended mode, write no Options line and no Decision / chat line.
+13. The "none — no gate" form marks a skipped gate in an attended run. Do not use it in an unattended run.
+14. Include an **Outcome** line: the resulting code or behavior, the suite state, and the commit.
+15. End the file with a provenance footer (`Authored by … / Changed by …`), per foundation's working-state-artifacts-carry-a-provenance-footer rule.
+
+## Live vs. backfill
+
+1. Writing a loop record while doing the work is the default.
+2. Mark a record reconstructed retroactively from memory as a **Backfill**, at the top.
+
+## How to apply
+
+1. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above.
+2. Record each cycle's hinge, options, and decision or chat.
+3. Keep the one-line decision-log entries separate and intact.
+4. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
@@ -47,3 +87,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:53:55 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
