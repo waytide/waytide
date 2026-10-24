@@ -13,6 +13,21 @@ Tests serve two different purposes in two different processes, and conflating th
 
 **How to apply:** when the behavior already exists and you are adding coverage, write the test and run it. Accept that it is verified, and leave the implementation untouched. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
 
+## Compressed
+
+1. TDD is a design activity. Its failing-test-then-implement cycle designs behavior, and its tests are proofs for design.
+2. In TDD, the red drives the implementation into existence.
+3. Adding test coverage is a separate activity. It prevents regression in existing behavior that is already designed and correct.
+4. Coverage tests are regression prevention, not design proofs. Adding coverage is a testing or final-inspection process, not TDD.
+5. When adding coverage, a test passing on arrival is inevitable and correct. Do not treat it as a defect to work around.
+6. The no-green-on-arrival stance is a design concern. It does not apply to adding coverage.
+7. Never break, mutate, or otherwise invalidate a working implementation to introduce a test.
+8. Do not break working code to "see it go red first." There is no red to manufacture when covering existing behavior.
+9. When the behavior already exists and you are adding coverage, write the test and run it.
+10. Accept the passing coverage test as verification, and leave the implementation untouched.
+11. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
+12. **Why:** Forcing TDD's red-to-green onto coverage is a category error. It deforms shipped implementations to satisfy a misplaced ritual, and it blurs design tests with regression tests.
+
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
@@ -33,3 +48,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
