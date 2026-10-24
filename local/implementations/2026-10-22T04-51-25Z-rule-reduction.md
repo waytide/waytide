@@ -973,12 +973,11 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **All 14 compressed rules are rewritten as numbered lists and written into their sources, one commit each.** Each was checked twice against its directive list. After the repairs below, each meets the criterion, apart from the changes the engineer decided.
 
-**The changes the engineer decided**, which the checks flag because the directive lists predate them, are four:
+**The changes the engineer decided**, which the checks flag because the directive lists predate them, are three:
 
 - the `=` border required, in announce-a-branch-switch-in-a-bordered-block
 - truncation for a journal entry alone, in commit-message-widths
 - the reserved-tag resolution, in #11
-- the source not restating "any unmissable form satisfies"
 
 **The repairs**, each the smallest clause, were checked again by two fresh checkers who judged each one kept:
 
