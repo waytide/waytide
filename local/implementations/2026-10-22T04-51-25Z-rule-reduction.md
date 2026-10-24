@@ -957,7 +957,9 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **The engineer decided that an address for a point in a numbered rule takes the prefix `rule:`, and that `:` alone is an alias for it.** So `rule:foundation/implementation-lifecycle/phases#1` and `:foundation/implementation-lifecycle/phases#1` are the same address. Nothing in Claude Code, git, or `CLAUDE.md` gives either form a meaning.
 
-**Still open:** whether the address carries the rule's name always, or only where a section name does not identify the rule within its package.
+**The address always carries the rule's name**, as the engineer confirmed, so it is `rule:<package>/<rule>/<section>#<point>`. A section name unique today stops being unique once another rule in the package takes the same heading, and every short address written by then becomes ambiguous unnoticed. Headings such as "The end", "The record", and "Why" already recur, and a form that always carries the rule needs no check of the package before it is written.
+
+**Still open:** a point's number goes stale as well. A point inserted above it renumbers it, so `#3` can come to name another directive. Carrying the rule does not cure that.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4088,3 +4090,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:20:30 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:22:07 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:27:45 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:28:28 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:29:36 PM PT
