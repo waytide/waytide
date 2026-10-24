@@ -12,6 +12,24 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 
 **How to apply:** Default to plain description over a fresh metaphor or coined term. When a short handle is genuinely needed, make it the most literal short handle available. Coined handles such as *hinge* and *cradle* are kept, because they are precise, in active use, and defined plainly elsewhere. Do not mint new metaphors by default.
 
+## Compressed
+
+1. Name a concept by describing literally what it is.
+2. Reject any name that makes the reader memorize an arbitrary mapping back to the actual idea.
+3. Reject real-world analogies and metaphors, e.g. "the menu problem," "menu trap."
+4. A metaphor is itself jargon, because the reader must learn and carry its mapping.
+5. A vivid metaphor still fails.
+6. Reject opaque codes, e.g. "A1 / A2." A code carries no meaning and needs a lookup key.
+7. Reject academic jargon, e.g. "irreducible," "intrinsic," "recall / precision," "anchoring."
+8. Test every candidate name by asking: *can the reader understand it without being taught a mapping?*
+9. A name fails if the reader must memorize "X stands for Y."
+10. A literal description ("unreachable options") passes.
+11. Default to plain description over a fresh metaphor or coined term.
+12. When a short handle is genuinely needed, use the most literal short handle available.
+13. Keep a coined handle that is precise, in active use, and defined plainly elsewhere, such as *hinge* and *cradle*.
+14. Do not mint new metaphors by default.
+15. **Why:** The terminology is how this work is taught to other engineers. A literal name is the explanation itself, so the reader pays nothing to understand it each time. This is the solubility test applied to a name.
+
 Related:
 
 - the solubility rule — the quality this test serves
@@ -29,3 +47,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
