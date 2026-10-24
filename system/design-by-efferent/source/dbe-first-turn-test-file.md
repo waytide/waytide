@@ -46,6 +46,62 @@ Keeping the first gate to the actuation and a single unnamed assert keeps that g
 
 Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-at-the-start rule). Settle the three test hinges first, then assemble and show the file.
 
+## Compressed
+
+1. Start a feature by writing a test file, not implementation.
+2. The first turn produces that test file and nothing more.
+3. The first turn begins at the first gate, where responsibility first transfers to the human.
+4. The first gate puts down only the actuation and an unnamed assert.
+5. The actuation is the invocation of the unit under test, the first efferent reference, bound to an explaining variable.
+6. State any inputs just above the actuation, via controls or literals.
+7. The unnamed assert is a single bare `test` block asserting the explaining variable, or the variable against a control value.
+8. Write no inner outcome `context` yet, so no outcome is named.
+9. Nest the file to mirror its folder path, per the folder-mirroring rule, with one outer `context` per path segment.
+10. Place the actuation and the unnamed `test` block inside the innermost `context`.
+
+```ruby
+context "Constant" do
+  context "Module" do
+    context "Namespace" do
+      control_value = Controls::Constant.example
+
+      constant = Constant::Module.new(control_value)
+
+      namespace = constant.namespace
+      control_namespace_constant = Constant::Module.new(Object)
+
+      comment "Namespace: #{namespace.inspect}"
+
+      test do
+        assert(namespace == control_namespace_constant)
+      end
+    end
+  end
+end
+```
+
+11. Assert against an explaining variable, a named local whose name states what is asserted, not against an inline expression.
+12. The explaining variable holds the result of actuating the concern.
+13. Actuate first, bind the result, then assert it.
+14. The shell of the cradle is the actuation and its unnamed assert.
+15. Once the shell is implemented, leave the test unnamed through the rest of the feature's development.
+16. Name the test only at the end of the feature.
+17. Add the outcome `context` each observation establishes at that time, giving the test-structure rule's "one inner `context` per outcome" structure.
+18. This naming step is the seam where the next feature begins.
+19. A feature in progress carries bare unnamed asserts. A finished feature carries named outcome contexts.
+20. The first gate's hinge is the actuation's shape and the truth of the one observation, not how outcomes are named or divided.
+21. Before writing the file, settle the actuation, the observation, and the controls.
+22. Do not write the implementation in the first turn.
+23. Do not pause to run the inevitably-failing test.
+24. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
+25. The implementation is the fourth hinge.
+26. The naming is the fifth hinge, at the feature's close.
+27. Propose each hinge and get it accepted before the next, per the hinge-cycle rule.
+28. Do not present the whole test file for a single accept.
+29. Settle the three test hinges first, then assemble and show the file.
+30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-at-the-start rule.
+31. **Why:** Writing the actuation before any implementation designs the interface from the use site, per the DBE-as-design-tool rule. Limiting the first gate to the actuation and one unnamed assert avoids committing early to an outcome taxonomy. The explaining variable makes the test read as a statement of the concern and keeps the efferent view in frame.
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -67,3 +123,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
