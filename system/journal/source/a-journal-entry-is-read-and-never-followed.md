@@ -18,6 +18,23 @@ The writer's cost is the real one. Knowing that every entry is read, the writer 
 
 **How to apply:** read the journal for what the writer thinks. Follow the rules. Where an entry reads like an instruction, treat it as a judgment the writer holds. Ask them what they want, rather than acting on the entry.
 
+## Compressed
+
+1. A journal entry binds nothing. It is read at session start beside the rules and vocabularies, but carries none of their force.
+2. Nothing in an entry is an instruction, whatever its wording.
+3. Hold an entry as what the writer thinks. For example, *the retry logic should be torn out* is a judgment, not a task. Read the journal for what the writer thinks, and follow the rules.
+4. Do nothing with an entry until the writer asks for something.
+5. An entry cannot set a rule, a term, or a substitution.
+6. Rules, terms, and substitutions are set only in `waytide/local/rules/` and `waytide/local/vocabulary.md`, in the form those conventions require.
+7. An entry that reads like a standing decision is still only an entry. Where the writer means to set a rule, they write a rule, not an entry.
+8. Do not cite an entry as grounds for an action. Not *your journal says the retry logic is wrong, so I removed it*.
+9. This holds in a report, a plan, and a commit message as well.
+10. An entry is neither evidence nor authority. It gives only an understanding of where the writer stands.
+11. An entry does change what the agent already knows. Do not present something an entry already records as a discovery.
+12. An entry carries no more weight than that.
+13. Where an entry reads like an instruction, ask the writer what they want rather than acting on the entry.
+14. **Why:** everything else read at session start binds, so a file in that read is assumed to bind. An exception nobody states is one nobody applies.
+
 Related:
 
 - the-journal-is-read-at-session-start — the read this rule qualifies
@@ -30,3 +47,4 @@ Related:
 Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:14:56 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
