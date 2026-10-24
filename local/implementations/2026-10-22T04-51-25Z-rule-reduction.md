@@ -1080,6 +1080,12 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **All three review items are resolved.**
 
+### The `design-by-efferent` and `versioning` batch — method, committed before it runs, 2026-10-24
+
+**At the engineer's direction, the `design-by-efferent` package and the `versioning` package are the third unattended batch**, 16 rules in all. They are design-by-efferent's 14 rules not yet compressed, and versioning's 2. The method is the `testing` batch's unchanged: compressing straight into numbered lists, by the same guidance, and giving each rule's Related list to the checkers. The criterion, the resolution of disagreements, the repair of each lost or materially less precise directive by its smallest clause, the re-check of repairs, and the review list for the engineer are as before.
+
+**design-by-efferent comes right after `testing` because the two refer to each other most.** The hinge cycle writes and runs the tests the `testing` rules shape. A design-by-efferent rule that still treats a context holding only a test as banned, which the `testing` review settled is a warning, goes on the review list.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4218,3 +4224,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:47:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 12:01:03 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:47:55 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:07 AM PT
