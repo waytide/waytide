@@ -28,6 +28,36 @@ The other four records survive being the agent's work because they report what h
 
 Change no entry that exists on your own reading. Where the writer directs a change to one, make exactly the change they named, leave everything else as written, and log it.
 
+## Compressed
+
+1. Do not write a journal entry on your own initiative.
+2. Do not write one because you have read what the session was about.
+3. Do not write one because a stretch of work seems worth recording. The agent has four other records for that.
+4. Where the writer dictates an entry, write down their words, in their order.
+5. Preserve the writer's meaning and emphasis.
+6. Correct the grammar and the flow, and go no further.
+7. Invent no fact, and embellish nothing.
+8. Add the entry's settled shape and nothing else.
+9. Add the datetime prefix and the `Authored by` line the journal-convention requires.
+10. Add the datetime line under the title.
+11. Add a `**Tags:**` line only where the writer gave tags.
+12. Add the `**Summary:**` line the journal-entries rule asks for.
+13. The summary states the entry's gist in the writer's own terms, not the agent's reading of what it means.
+14. Drop the summary where it would repeat the body.
+15. Do not edit an existing entry on your own reading.
+16. This holds for correcting a fact, fixing a spelling, or reconciling the entry with something that has since changed.
+17. Only two things may change an existing entry, and neither is the agent's initiative.
+18. The first is a change the writer directs to their own entry. Carry it out.
+19. Make exactly the change directed, and nothing beside it.
+20. Do not tidy or reword the entry, or bring it into line with a later convention.
+21. Leave everything the writer did not name as they wrote it.
+22. Log the directed change in the decision log, saying what was directed and what changed.
+23. Put no `Changed by` line on the entry. The journal-convention limits its footer to `Authored by`.
+24. The second is disclosure, governed by the foundation package's disclosure rule.
+25. Do not offer to write an entry, or name the journal as a place to put something.
+26. Where the writer wants an entry, they say so.
+27. **Why:** the journal holds the writer's judgment. An agent-written entry would read as the writer's, making the record untrustworthy at the one thing it is for.
+
 Related:
 
 - the journal-convention — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
@@ -43,3 +73,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
