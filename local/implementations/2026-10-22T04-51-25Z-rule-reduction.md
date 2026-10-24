@@ -1086,6 +1086,54 @@ The criterion, the resolution of disagreements, the repair of each lost or mater
 
 **design-by-efferent comes right after `testing` because the two refer to each other most.** The hinge cycle writes and runs the tests the `testing` rules shape. A design-by-efferent rule that still treats a context holding only a test as banned, which the `testing` review settled is a warning, goes on the review list.
 
+### The `design-by-efferent` and `versioning` batch — results, 2026-10-24
+
+**All 16 rules are compressed into numbered lists and written into their sources, one commit each, and all 16 meet the directive check's criterion.** Across the batch's 311 directives, after resolution and repair, 310 are kept, 1 is less precise, and none is lost. The one loss of precision is judged immaterial.
+
+| rule | directives | kept | less precise | lost | compression | change | solubility | clarity score |
+|---|---|---|---|---|---|---|---|---|
+| actuation-gate-options-or-chat | 25 | 25 | 0 | 0 | 0.37 | 0.54 | 30 → 56 | 0.43 → 0.76 |
+| attended-or-unattended-is-chosen-at-the-start | 38 | 38 | 0 | 0 | 0.48 | 0.72 | 36 → 59 | 0.62 → 0.86 |
+| dbe-as-design-tool | 16 | 15 | 1 | 0 | 0.28 | 0.51 | 59 → 79 | 0.65 → 0.84 |
+| dbe-first-turn-test-file | 24 | 24 | 0 | 0 | 0.19 | 0.52 | 44 → 59 | 0.61 → 0.76 |
+| dbe-human-in-the-loop | 28 | 28 | 0 | 0 | 0.13 | 0.38 | 50 → 66 | 0.59 → 0.79 |
+| hinge-cycle | 33 | 33 | 0 | 0 | 0.18 | 0.64 | 30 → 42 | 0.54 → 0.72 |
+| loop-records | 23 | 23 | 0 | 0 | 0.22 | 0.57 | 45 → 64 | 0.45 → 0.68 |
+| never-ask-to-start-test-first | 12 | 12 | 0 | 0 | 0.13 | 0.43 | 77 → 78 | 0.71 → 0.70 |
+| no-green-on-arrival-tests | 6 | 6 | 0 | 0 | 0.22 | 0.64 | 68 → 81 | 0.58 → 0.75 |
+| one-outcome-at-a-time-name-via-options | 21 | 21 | 0 | 0 | 0.19 | 0.51 | 72 → 80 | 0.68 → 0.77 |
+| tdd-designs-coverage-prevents-never-break-implementation | 13 | 13 | 0 | 0 | 0.36 | 0.64 | 68 → 85 | 0.65 → 0.86 |
+| the-design-of-a-test-waits-at-the-hinges-including-coverage | 14 | 14 | 0 | 0 | 0.14 | 0.57 | 71 → 89 | 0.63 → 0.93 |
+| the-implementation-hinge-offers-the-red-green-refactor-cycle | 16 | 16 | 0 | 0 | 0.36 | 0.64 | 40 → 62 | 0.61 → 0.82 |
+| what-each-hinge-displays | 13 | 13 | 0 | 0 | 0.29 | 0.52 | 36 → 52 | 0.43 → 0.52 |
+| the-next-version-is-chosen-by-the-engineer | 10 | 10 | 0 | 0 | 0.55 | 0.75 | 58 → 85 | 0.58 → 0.80 |
+| version-scheme | 19 | 19 | 0 | 0 | 0.44 | 0.70 | 52 → 84 | 0.66 → 0.93 |
+
+**The repairs**, 16 clauses in 8 rules, each the smallest that closes the gap. A fresh checker re-checked each repaired rule in full and judged every repair kept:
+
+- **attended-or-unattended-is-chosen-at-the-start, 22 and 7:** the mode is declared once, at the top of every loop record, and never inferred cycle by cycle; the compression had scoped this to unattended work. Every hinge is still *run* in both modes, not only determined.
+- **dbe-as-design-tool, 5, 12, 14 and 15:** only the engineer's choice makes the red/green/refactor cycle legitimate; do not copy poorly designed code; design judgment is left with the human, as a directive with its meaning, where the compression had it only in the Why; the human sets the cradle.
+- **never-ask-to-start-test-first, 10 and 7:** offering the next-task selection is a permission, "you may"; the mode choice neither confirms nor declines the method.
+- **no-green-on-arrival-tests, 4:** the trigger, behavior already present when its own outcome comes up, and the instruction to notice that the implementation ran ahead of its test.
+- **the-design-of-a-test-waits-at-the-hinges-including-coverage, 14:** an implementation is never broken to introduce a test.
+- **what-each-hinge-displays, 7 and 8:** the actuation is shown, and the contexts left out, at every hinge after the first, not only at the observation and controls hinges.
+- **version-scheme, 3, 11 and 14:** the generation is a declaration, not a compatibility claim. The compressor had written "a declaration that this is the same product", which the source does not say. Whoever decides the product line decides it. Declaring a new line is a separate act, on its own occasion.
+- **the-next-version-is-chosen-by-the-engineer, 9:** candidates are offered rather than asking for a version outright, not only rather than having one typed. It was flagged by one checker.
+
+**The one loss of precision, judged immaterial:** dbe-as-design-tool's 16, designing each unit from the efferent side *inward*. The re-check flagged it after both first checkers judged it kept. "Approach every unit from the efferent side first" carries the direction.
+
+**Solubility rises in all 16 rules, and the clarity score in 15.** never-ask-to-start-test-first moves from 77 to 78, and its clarity score from 0.71 to 0.70.
+
+**The engineer's review list**, three tensions the compressors reported in the sources, each kept in the compressed text as the source has it:
+
+1. **one-outcome-at-a-time-name-via-options:** the loop "stops at every gate for the human" and proceeds "only on the human's go", without qualification, while its How to apply says that under unattended work the agent decides each hinge and does not stop.
+2. **loop-records:** How to apply says to record each cycle's "hinge, options, and decision or chat", with no exception. Its Format section says an unattended cycle has no Options line and no Decision / chat line.
+3. **dbe-human-in-the-loop:** turn one puts the observation and the controls to the human as hinges, while the same turn says the human deliberates "not the test mechanics", and the Why speaks of removing attention from test mechanics.
+
+**No design-by-efferent rule treats a context that holds only a test as banned**, which the `testing` review settled is a warning. None of the 16 mentions it.
+
+**Cost:** 72 agents: 16 compressors, 16 listers, 32 checkers, and 8 re-checkers, at about 34,000 tokens each. That is about 2.5 million in all, or about 155,000 per rule, leaving out the main session's own turns. The listers ran alongside the compressors, since they read only the source.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4225,3 +4273,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 12:01:03 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:47:55 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:59:18 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:34:07 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:39:24 AM PT
