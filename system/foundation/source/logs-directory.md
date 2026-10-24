@@ -26,6 +26,37 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a running record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
+## Compressed
+
+1. `waytide/local/logs/` holds the project's running records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
+2. `waytide/local/logs/log/` holds the decision log, one file per decision, with a one-line title (`decision-log-convention`).
+3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s loop-records rule).
+4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`work-sessions-convention`).
+5. Write a decision entry to `waytide/local/logs/log/`.
+6. Write a loop record to `waytide/local/logs/loops/`.
+7. Write a work session record to `waytide/local/logs/work-sessions/`.
+8. A record belongs here only when it accrues chronologically and is never revised.
+9. Each record here is a running account, entry after entry, in the order things happened, and it is reached by date.
+10. Nothing here states what is currently true. Items, implementation records, and migration records do not belong here.
+11. A migration record does not belong here. It is one document, revised while the migration runs, and prospective: steps written to be executed.
+12. Keeping a record afterward makes it durable, not chronological. Durability does not qualify a record for this directory.
+13. The three records keep their own names and their own conventions. This rule only groups them.
+14. `log` stays `log`. Do not rename it to `decisions`, because every rule that says *write a log entry* means that directory.
+
+## A fourth running record goes here
+
+1. Put a running record this rule does not name under `waytide/local/logs/` too.
+2. The convention that adds it names its directory under `waytide/local/logs/`.
+3. That is all this rule asks of a later convention.
+
+## The grouping crosses a package boundary, and does not invert it
+
+1. `logs/loops/` is contributed by `design-by-efferent`, which includes `foundation`, not the reverse.
+2. Foundation's naming of the parent directory is only a citation.
+3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
+4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
+5. **Why:** Grouping the records puts the difference between a chronological account and a statement of current state into the path. It also gives a later running record an obvious place.
+
 ## History
 
 A migration record was moved here on 2026-08-18 and moved back out the same day.
@@ -44,3 +75,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
