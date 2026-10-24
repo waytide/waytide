@@ -119,6 +119,108 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is printed verbatim, so it does not track the clock and is not computed. It changes when the rule changes.
 
+## Compressed
+
+1. Five parts are printed once per session, verbatim and in this order. Four are always printed. The package set is printed only where the project has declared one.
+2. The harness prints the four always-printed parts. The agent prints none of them.
+3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
+4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
+5. The agent prints the package set, at the head of the response that carries the rule read.
+6. The script reads the four from this file's fenced blocks, by position.
+7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
+8. The second fenced block is the package-set example, which the script skips.
+9. Adding, removing, or reordering a fenced block in this file changes what is printed.
+10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
+11. The fences mark where each printed part begins and ends. They are not printed.
+12. First the title, on its own:
+
+```
+Waytide: Human-Agent Relations
+```
+
+13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
+14. The title stands alone. Nothing is printed under it.
+15. The title is the category line. The root `README.md` leads with the same line.
+16. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
+17. The display carries nothing that argues for the system to a reader already using it.
+18. Then the package set, where one is declared. The agent prints it after the harness has printed the display.
+19. The stanza follows the display rather than sitting inside it.
+20. Where no set is declared, this part is absent entirely. No line says there is none.
+21. The declared set `default` prints nothing where nothing is deactivated.
+22. The `default` set prints where it leaves an installed package deactivated, such as `ext/ruby-lang`.
+23. The condition is that nothing is off, not that the name is `default`.
+24. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
+25. A named set other than `default` prints even where nothing is deactivated.
+26. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-its-package-set rule says where the record lives and what it carries.
+27. The stanza takes this form:
+
+```
+*design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
+*ext/ruby-lang*, **versioning**
+package set: content
+(5 active of 8 installed)
+```
+
+28. The stanza's lines carry no gap between them.
+29. The package list leads. The set's name follows it, above the count. The count closes the stanza.
+30. The set is named in the engineer's own wording, as in `package set: content`, not in a restatement of it.
+31. Every installed package is listed, in the order the session-start notice lists them.
+32. Active packages are bold. Deactivated packages are italic.
+33. No package is omitted, and none is replaced by a count.
+34. The count line states how many are active and the installed total.
+35. No legend is printed.
+36. Emphasis is available on the package set stanza and nowhere else in the display.
+37. The harness display is plain text, where markup reaches the engineer as literal asterisks.
+38. Then one blank line, then the copyright notice and the license line, on consecutive lines with no gap between them:
+
+```
+Copyright © 2026 Scott Bellware
+*Eventide Common Interest License*
+```
+
+39. The copyright and license belong on this display, not on the session-start notice. Any standing statement that never changes belongs here, not as a permanent segment of the notice.
+40. The copyright line carries the owner and the year alone. It does not name the work.
+41. The license line is the license's name alone, set in italics. It takes no leading words such as *Licensed under the*.
+42. The block keeps the license line in italics. `startup-display.sh` removes the asterisks from a line wrapped in them, so it prints without them.
+43. The gap falls after the license line, never between it and the copyright.
+44. The printed license line points to the license. It does not carry the terms, and is not the place to put them.
+45. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
+46. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
+47. The year is not computed. It changes only when the rule changes.
+48. Then one blank line, then the loading line:
+
+```
+Loading Waytide will take a few moments.
+```
+
+49. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response opens every compiled rule in every installed package.
+50. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
+51. Then one blank line, then the block:
+
+```
+     __      /
+    /  \    /
+   |    |  /
+    \__/  /
+      | =/=
+     _|_/
+    / |
+     / \
+    /   \
+   /    /
+===========
+    | |
+  __|_|__
+ (o)   (o)
+```
+
+52. Each gap is one blank line. There are three: after the title, after the license line, and after the loading line.
+53. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
+54. A blank line prints as a blank line. The figure keeps its spacing without a fence.
+55. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
+56. The package set's absence is the ordinary case, not an omission.
+57. **Why:** An agent can skip a display it is told to print, or write it into its thinking, and nothing reports either. A harness-printed display does not depend on the agent. The package set alone needs markdown, so the agent prints it.
+
 ## History
 
 The agent printed the four until 2026-10-10, at the head of the response that carried the rule read. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, and nothing reported either failure. That the harness renders blank lines and the figure's spacing exactly was confirmed in a session on 2026-10-10.
@@ -169,3 +271,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
