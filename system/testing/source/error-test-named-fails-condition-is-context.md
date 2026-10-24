@@ -20,6 +20,27 @@ Naming an error test for its behavior rather than a value comparison is fully co
 
 **How to apply:** name any `assert_raises` test "Fails". Name the non-raising assertion "Doesn't fail". Put it inside a `context` named for the condition, the "when …".
 
+## Compressed
+
+1. When a test asserts that the actuation raises an error (an `assert_raises`), name the `test` block "Fails".
+2. When a test asserts that the actuation does not raise, name the `test` block "Doesn't fail".
+3. Do not put the condition under which the actuation fails, or doesn't, in the test name.
+4. Promote that condition to a `context` that encloses the test and names the condition as a "When …" clause.
+5. A test name that wants the word "when" signals a condition. Lift that "when" clause into the `context`.
+
+```ruby
+context "When the name is not defined" do
+  test "Fails" do
+    assert_raises(SomeError) { actuation }
+  end
+end
+```
+
+6. Several conditions over the same actuation sit as sibling `When …` contexts, each with its own `test "Fails"`.
+7. "Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals.
+8. An error test is the deliberate exception to the context-only-for-local-instrumentation rule. Its enclosing context is not empty, because it carries the condition.
+9. **Why:** an error outcome states "under condition X, the actuation fails." The scenario belongs in a context and the observed fact in the test. "Fails" names the behavior directly and keeps test names uniform.
+
 Related:
 
 - the test-name-is-prefix rule
@@ -34,3 +55,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
