@@ -833,6 +833,19 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **One slip in the batch's commits:** the first six subjects ran past the 50-character limit the commit-message-widths rule sets. They were rewritten before anything was pushed.
 
+### The `git` batch's review list is resolved — 2026-10-23
+
+**The engineer went through the three review items one at a time.**
+
+1. **announce-a-branch-switch-in-a-bordered-block: the `=` border is required.** "Any unmissable form satisfies this rule" is removed, and How to apply now names a push among the cases that print no block. The fix is made in the live rule on `master`, with the earlier wording in its History, and copied to the phase branch with the compressed text following it.
+2. **commit-message-widths: truncation is for a journal entry alone.** Every other subject that will not fit is a commit to split, a subject the engineer dictates included. The engineer confirmed that a journal entry's truncated commit subject, as in `Journal: I simplified Waytide's description, move…`, is correct. The fix is made the same way as item 1.
+3. **a-sha-names-the-work-rather-than-the-commit, directive 8: left as it is.** The compressed version keeps "Ask only where it is genuinely unclear", without saying what to ask. Its loss of precision stays judged immaterial.
+
+**Two findings came out of the review.**
+
+- **The compiler drops headings inside a compressed text.** Compiled with `--compressed`, a rule loses every `## ` line in its Compressed section, not only the `## Compressed` heading. commit-message-widths loses three sub-headings and announce-a-branch-switch-in-a-bordered-block two, though the text beneath them stays. The defect is in `compile.sh`, and it is recorded rather than fixed, since a change to the compiler goes through the hinges with the engineer.
+- **The rule's name and wording are obscure, in the engineer's judgment.** In talk of commit messages and committing, a commit is to be called a commit and never "a SHA", which is only its identifier. The rule's own name and wording use "a SHA" that way, and are not changed here.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -3954,3 +3967,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:22:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:11 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:23:58 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:28:16 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:02:09 PM PT
