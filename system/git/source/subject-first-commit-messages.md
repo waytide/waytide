@@ -20,21 +20,25 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 ## Compressed
 
-The subject of a commit message is **the software**, never the engineer. The log records changes to the software and their effects. It is not an account of what the engineer did. The first line leads with the thing that changed and its new state. State it as a fact, in passive voice and indicative mood.
+1. The subject of a commit message is **the software**, never the engineer.
+2. The log records changes to the software and their effects. It is not an account of what the engineer did.
+3. The first line leads with the thing that changed and its new state.
+4. State it as a fact, in passive voice and indicative mood.
+5. **State the change, don't narrate the work.** "Widget reconciliation is corrected" — not "Fix widget reconciliation" and not "Fixed widget reconciliation".
+6. Use **"is corrected"** for a defect.
+7. Use **"is clarified"** for a refactor or readability change.
+8. **Omit the verb for something new.** "Widget tests", not "Widget tests are added".
+9. **Rename form:** "Widget, rather than sprocket".
+10. **Package version form:** "Package version is increased from 1.1.1 to 1.2.0".
+11. State both the current version and the next one.
+12. "Increased" holds even when a trailing segment resets.
+13. **Never lead with a verb.** That covers the imperative ("Fix…") and the past tense ("Fixed…") alike.
+14. Name the software that changed, then its new state.
+15. **The subject's length is the commit-message-widths rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
+16. **Split the commit when the subject will not fit.**
+17. Do not drop the software subject and lead with a verb instead.
+18. **Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
 
-- **State the change, don't narrate the work.** "Widget reconciliation is corrected" — not "Fix widget reconciliation" and not "Fixed widget reconciliation".
-- **"is corrected"** for a defect. **"is clarified"** for a refactor or readability change.
-- **Omit the verb for something new.** "Widget tests", not "Widget tests are added".
-- **Rename form:** "Widget, rather than sprocket".
-- **Package version form:** "Package version is increased from 1.1.1 to 1.2.0". State both the current version and the next one. "Increased" holds even when a trailing segment resets.
-
-**Never lead with a verb.** That covers the imperative ("Fix…") and the past tense ("Fixed…") alike. Name the software that changed, then its new state.
-
-**The subject's length is the commit-message-widths rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
-
-**Split the commit when the subject will not fit.** Do not drop the software subject and lead with a verb instead.
-
-**Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
 
 ## History
 
@@ -64,3 +68,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:44 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:35 PM PT
