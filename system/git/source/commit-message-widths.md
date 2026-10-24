@@ -40,43 +40,46 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 ## Compressed
 
-- **The subject line is at most 50 characters.**
-- **The body is wrapped at 72 characters.**
-
-**The two numbers are separate budgets, not one convention.**
-
-- **50 is a display budget.** `git log --oneline` and hosted commit lists truncate near there.
-- **72 is a wrapping budget.** `git log` indents the body four spaces, so 72 fits an 80-column terminal.
-
-**Wrap the body in the message itself.** Do not leave wrapping to the terminal.
+1. The subject line is at most 50 characters.
+2. The body is wrapped at 72 characters.
+3. The two numbers are separate budgets, not one convention.
+4. 50 is a display budget. `git log --oneline` and hosted commit lists truncate near there.
+5. 72 is a wrapping budget. `git log` indents the body four spaces, so 72 fits an 80-column terminal.
+6. Wrap the body in the message itself. Do not leave wrapping to the terminal.
 
 ## When the subject will not fit
 
-**Split the commit, or move the detail to the body.** Try them in that order.
-
-**A subject that will not fit usually means the commit does too much.** Treat that as the main reason to split.
-
-**Do not abbreviate a subject into something a reader must decode.** Use plain words, not contractions. The `language` package's rules hold in commit messages too.
-
-**The body has no limit on what it says.** Its only constraint is line width.
-
-**A journal entry is the one record where neither remedy is available, and it truncates instead.** An entry is one commit, so there is nothing to split. Its subject is the writer's words, which the `journal` package bars the agent from shortening. Cut its commit subject at the 50th character with an ellipsis. See that package's journal-convention.
-
-**Truncation is not a general escape.** It is available for a journal entry alone. Everywhere else, a subject that will not fit is a commit to split.
+1. Split the commit, or move the detail to the body. Try them in that order.
+2. A subject that will not fit usually means the commit does too much. Treat that as the main reason to split.
+3. Do not abbreviate a subject into something a reader must decode.
+4. Use plain words, not contractions.
+5. The `language` package's rules hold in commit messages too.
+6. The body has no limit on what it says. Its only constraint is line width.
+7. A journal entry is the one record where neither remedy is available. It truncates instead.
+8. An entry is one commit, so there is nothing to split.
+9. An entry's subject is the writer's words, which the `journal` package bars the agent from shortening.
+10. Cut a journal entry's commit subject at the 50th character with an ellipsis. See that package's journal-convention.
+11. Truncation is not a general escape. It is available for a journal entry alone.
+12. Everywhere else, a subject that will not fit is a commit to split.
 
 ## What still governs the subject
 
-**The subject-first-commit-messages rule is unchanged.** The subject is the software, never the engineer. It is a fact stated in passive voice and indicative mood. The commit-says-task-is-done-not-mark-done rule is unchanged too.
-
-**Those rules push length up, and that is accepted.** Write the subject within the budget. Do not drop the subject and lead with a verb to save space.
-
-**A prefix spends the budget.** The journal's commit prefix is `Journal:`, which costs 9 characters. It carries no date. See the `journal` package's journal-convention.
+1. The subject-first-commit-messages rule is unchanged.
+2. The subject is the software, never the engineer.
+3. The subject is a fact stated in passive voice and indicative mood.
+4. The commit-says-task-is-done-not-mark-done rule is unchanged too.
+5. Those rules push length up, and that is accepted.
+6. Write the subject within the budget.
+7. Do not drop the subject and lead with a verb to save space.
+8. A prefix spends the budget.
+9. The journal's commit prefix is `Journal:`, which costs 9 characters. It carries no date. See the `journal` package's journal-convention.
 
 ## The history is not rewritten
 
-**Every commit written before 2026-08-18 stands as written.** Do not revise a commit message already written to suit a later convention.
+1. Every commit written before 2026-08-18 stands as written.
+2. Do not revise a commit message already written to suit a later convention.
+3. **Why:** git's tooling is built around these numbers, so messages written to them read as written everywhere. The subject limit also exposes an oversized commit while it is being written, when splitting is cheapest.
 
-**Why:** git's tooling is built around these numbers, so messages written to them read as written everywhere. The subject limit also exposes an oversized commit while it is being written, when splitting is cheapest.
 
 ## History
 
@@ -97,3 +100,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:20 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 3:56:43 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:15 PM PT
