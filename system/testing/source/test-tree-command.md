@@ -14,6 +14,28 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 
 **How to apply:** on a "test tree" request, run the project's durable tree script and present its output.
 
+## Compressed
+
+1. When the user gives the command **"test tree"**, run the automated suite.
+2. Print its structure as a **single normalized tree**.
+3. The tree is the whole suite's `context`/`test` hierarchy.
+4. Merge **duplicate outer context headings**, so each context path appears **once**.
+5. Each outer context appears once, with each sub-feature once beneath it.
+6. Show individual tests as leaves with a `•` prefix.
+7. Put the pass/fail summary line at the end.
+8. **Produce the tree from the run's output, not the source.**
+9. Run the suite with narration output suppressed, capture the output, and parse that output.
+10. Merge every file's `context`/`test` hierarchy into one tree keyed by name, so identical paths de-duplicate.
+11. A dynamic `context <expr> do` shows its **expanded real value**, not the source placeholder.
+12. A bare unnamed `test do` produces no line, so its enclosing context becomes the leaf.
+13. Use a durable script, so the command is reproducible in every session, rather than rebuilding a parser each time.
+14. **Which script, and where it lives, is the project's stack's concern.**
+15. The script runs the project's suite, suppresses that runner's narration, and parses that framework's output.
+16. For a Ruby project, the `ext/ruby-lang` package's rule on running the suite settles the script.
+17. This rule fixes only what the tree is and where it is derived from.
+18. On a "test tree" request, run the project's durable tree script and present its output.
+19. **Why:** the de-duped tree is the readable, whole-suite view of feature and outcome structure, without per-file repetition. Expanded dynamic names also surface loop-generated cases.
+
 Related:
 
 - the status-report (in `foundation`) and test-report commands
@@ -32,3 +54,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
