@@ -16,6 +16,24 @@ The trade is not close. Conforming the terminology is bounded work with a real r
 
 **How to apply:** ask what a refused word names. Reserve it in a category where it names something in the subject field. Rewrite the prose where an approved word says the same thing. Leave it where it is ordinary vocabulary, and record no entry for it.
 
+## Compressed
+
+1. ETE conforms its terminology to the STE dictionary. It does not conform its ordinary vocabulary.
+2. This departs from STE Rule 1.1, which admits only approved words, technical nouns, and technical verbs.
+3. What a word names decides which side of the line it falls on.
+4. A word that names something in the subject field is terminology. It is either reserved or rewritten.
+5. A word that does a sentence's grammatical work, joins two statements, or qualifies one is ordinary vocabulary.
+6. Example: `branch` is terminology. `under` is not.
+7. Words such as `as`, `every`, `never`, `under`, `would`, `already`, and `may` are ordinary vocabulary. They are not technical nouns or verbs in any category.
+8. Do not reserve an ordinary-vocabulary word. Reserving it puts a false claim of conformance in a vocabulary. A vocabulary carries no false claim of conformance.
+9. Do not rewrite prose to replace an ordinary-vocabulary word.
+10. To apply this rule, ask what a refused word names.
+11. Reserve the word in a category where it names something in the subject field.
+12. Rewrite the prose where an approved word says the same thing.
+13. Leave the word in place where it is ordinary vocabulary.
+14. Record no entry for an ordinary-vocabulary word.
+15. **Why:** the terminology is what a reader has to learn to use the method, and a misleading term costs the reader the concept. Conforming ordinary vocabulary is unbounded work that only buys a claim of conformance.
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops
@@ -31,3 +49,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
