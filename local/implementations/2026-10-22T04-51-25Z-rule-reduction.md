@@ -961,6 +961,10 @@ With both restored, no directive outside the intended resolution is lost, and no
 
 **Still open:** a point's number goes stale as well. A point inserted above it renumbers it, so `#3` can come to name another directive. Carrying the rule does not cure that.
 
+**The engineer asked whether `:` can set off a tab-completion selection.** In Claude Code it does not, so far as the agent knows. Its prompt gives meaning to `/` for commands, `@` for files, `!` for shell mode, and `#` at the start of a message for memory, and none to `:`. A later version could add one, so typing `:foundation/` in the prompt once would confirm it.
+
+**Elsewhere it can.** GitHub, Slack, and Discord read `:` followed by letters as the start of an emoji code, so `:fo` opens an emoji picker, and Tab or Enter can replace the text with an emoji. There, `rule:` avoids it, since a word before the colon starts no code. So does an address in backticks, since those tools expand no emoji code inside a code span, though the picker may still open while typing.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4091,3 +4095,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:22:07 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:27:45 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:28:28 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:29:36 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:30:37 PM PT
