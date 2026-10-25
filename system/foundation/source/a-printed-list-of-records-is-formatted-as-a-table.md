@@ -1,4 +1,4 @@
-# A list of records presented on request is a table
+# A printed list of records is formatted as a table
 
 **When the engineer asks for a list of records, render it as a table.** That reaches any record — items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
 
@@ -77,6 +77,10 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
 4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A list of records presented on request is a table".
+
 Related:
 
 - the status-report-format rule — whose tables this agrees with
@@ -92,3 +96,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:04:26 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT

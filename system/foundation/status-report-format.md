@@ -44,6 +44,6 @@ Related:
 
 - the items-convention — the `Suspended` state a hidden record carries
 - the a-suspension-is-a-log-entry rule — the `[suspended]` **tag**, which marks a log entry and is a different act from an item carrying the state
-- the a-record-list-is-a-table rule — the form the report's tables take
+- the a-printed-list-of-records-is-formatted-as-a-table rule — the form the report's tables take
 - the test-report and test-tree commands in the testing package
 - which derive the same tree the same way — the test-tree rule states the reasons in full

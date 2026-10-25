@@ -1,4 +1,4 @@
-# A list of records presented on request is a table
+# A printed list of records is formatted as a table
 
 **When the engineer asks for a list of records, render it as a table.** That reaches any record — items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
 
