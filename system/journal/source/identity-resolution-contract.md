@@ -221,7 +221,7 @@ Related:
 
 - the journal-convention — the per-writer directories `writers.toml` sits beside
 - the journal-entries rule — where `<username>` names the directory an entry is written in
-- the `foundation` package's a-project-does-not-name-its-consumers rule — the same `~/.config/` placement, taken for the same machine-scoped reason
+- the `foundation` package's a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the same `~/.config/` placement, taken for the same machine-scoped reason
 
 ---
 
@@ -234,3 +234,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:00 PM PT

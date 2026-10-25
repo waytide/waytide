@@ -27,7 +27,7 @@
 #
 #   ~/.config/waytide/consuming-projects.toml
 #
-# That placement is the foundation rule a-project-does-not-name-its-consumers: a
+# That placement is the foundation rule a-project-does-not-name-its-downstream-consumers-in-its-own-files: a
 # project does not name the projects that consume it, so this script is
 # committed and the list it reads is not.
 
