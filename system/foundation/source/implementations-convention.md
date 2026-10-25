@@ -29,7 +29,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-ends-with-its-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
 
-**The concluding words both kinds take:**
+**The state words both kinds take:**
 
 - **Abandoned** — dropped before concluding. Not merged, and the record is kept.
 - **Superseded** — replaced by another implementation. The two records name the counterpart.
@@ -59,7 +59,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## Format
 
-The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record concludes, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the implementation-records-take-a-log-entry rule).
+The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record carries a state line, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the implementation-records-take-a-log-entry rule).
 
 **Why:** an experiment and a feature had two conventions and two lifecycles that agreed on almost everything. Both are bounded work on a branch, with a working location chosen at the start, a declared end, and recorded confirmations. What they did not share follows from one difference — a question against an intent — which a tag states and the lifecycle reads.
 
@@ -108,7 +108,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 7. Do not invent a state word.
 8. Unlike an item, an implementation carries no state from the moment it is written. The session-start notice reports an open implementation.
 9. An open record takes no filename suffix (see the a-record-ends-with-its-state-in-upper-case rule).
-10. The concluding words both kinds take are these.
+10. The state words both kinds take are these.
     - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
     - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
     - **Suspended**: paused, not ended.
@@ -147,7 +147,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 4. The lifecycle reads the tag, not the title.
 5. A record whose title and tag name different kinds is defective.
 6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
-7. Once the record concludes, the filename also takes the state suffix.
+7. Once the record carries a state line, the filename also takes the state suffix.
 8. End the file with the provenance footer.
 9. Pair the record with a log entry (see the implementation-records-take-a-log-entry rule).
 
@@ -156,6 +156,10 @@ Leave the state line off while the work is under way. Add it when the record rea
 1. Record every implementation here, tagged `[experiment]` or `[feature]`.
 2. Update the state line as the state changes.
 3. **Why:** experiments and features share one lifecycle, and differ only by question against intent, which the tag states. One convention avoids wording drifting between duplicate rules.
+
+## History
+
+Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the concluding words both kinds take", though Suspended is defined as paused, not ended, and the filename took its state suffix "once the record concludes". That left open whether a suspended record takes the suffix, which the a-record-ends-with-its-state-in-upper-case rule gives to any record carrying a state line. The engineer settled that Suspended is a state and not a conclusion, and that the suffix follows the state line.
 
 Related:
 
@@ -174,3 +178,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 2:38:37 PM PT
