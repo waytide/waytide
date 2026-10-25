@@ -33,7 +33,7 @@ Until Sun Oct 25 2026 this rule was named single-case-test-named-for-feature and
 
 Related:
 
-- the test-context-nesting-mirrors-folders rule
+- the test-context-nesting-mirrors-the-folder-hierarchy rule
 - the test-structure rule
 - the test-name "Is" rule
 
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT

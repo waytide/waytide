@@ -24,7 +24,7 @@ Until Sun Oct 25 2026 this rule was named predicate-context-name and titled "A p
 
 Related:
 
-- the test-context-nesting-mirrors-folders rule
+- the test-context-nesting-mirrors-the-folder-hierarchy rule
 - the test-name-is-prefix rule
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule
 
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:55 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT

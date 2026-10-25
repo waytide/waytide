@@ -20,7 +20,7 @@ A test's high-level context is expressed in terms of a **behavior**. A method na
 
 **The root test needs no second-level context at all.** A unit's basic test establishes the unit's central behavior, and there is nothing to distinguish it from. So it sits directly under the unit's own context, and its outcome context carries the behavior's name. Subsequent tests, which cover other behaviors, take a second level and name it for the behavior they cover.
 
-**The file path follows, because the contexts mirror it.** The test-context-nesting-mirrors-folders rule makes each path segment under `test/automated/` a context, so dropping a context and leaving the segment puts the two out of step. A root test lives at `test/automated/<unit>.rb` and a subsequent behavior at `test/automated/<unit>/<behavior>.rb`.
+**The file path follows, because the contexts mirror it.** The test-context-nesting-mirrors-the-folder-hierarchy rule makes each path segment under `test/automated/` a context, so dropping a context and leaving the segment puts the two out of step. A root test lives at `test/automated/<unit>.rb` and a subsequent behavior at `test/automated/<unit>/<behavior>.rb`.
 
 **Why:** a context is read before anything under it, and it decides what the reader takes the test to be about. A method name sends them to the source to find out what the method does, which is the interpretive work solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is the absence of. A behavior name says it on the page.
 
@@ -56,7 +56,7 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 2. The root test sits directly under the unit's own context.
 3. The root test's outcome context carries the name of the unit's central behavior.
 4. Each subsequent test takes a second-level context named for the behavior it covers.
-5. Contexts mirror the file path under `test/automated/`, per the test-context-nesting-mirrors-folders rule. Do not drop a context and keep its path segment.
+5. Contexts mirror the file path under `test/automated/`, per the test-context-nesting-mirrors-the-folder-hierarchy rule. Do not drop a context and keep its path segment.
 6. A root test lives at `test/automated/<unit>.rb`.
 7. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
 8. **Why:** a context is read first and decides what the reader takes the test to be about. A method name sends the reader to the source, and goes stale silently if the method is renamed. A deep context is read with the behavior above it in hand, so naming an implementation element costs nothing.
@@ -67,7 +67,7 @@ Until Sun Oct 25 2026 this rule was named a-high-level-context-names-a-behavior-
 
 Related:
 
-- the test-context-nesting-mirrors-folders rule — the path the contexts mirror
+- the test-context-nesting-mirrors-the-folder-hierarchy rule — the path the contexts mirror
 - the a-single-case-feature-is-one-test-file-named-for-the-feature rule — the file named for the feature rather than for a case
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — when a context is warranted at all
 - the a-predicate-methods-test-context-is-named-for-the-predicate rule — a deeper context naming an implementation element
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:55 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT

@@ -14,6 +14,6 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 Related:
 
-- the test-context-nesting-mirrors-folders rule
+- the test-context-nesting-mirrors-the-folder-hierarchy rule
 - the test-structure rule
 - the test-name "Is" rule

@@ -10,6 +10,6 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 
 Related:
 
-- the test-context-nesting-mirrors-folders rule
+- the test-context-nesting-mirrors-the-folder-hierarchy rule
 - the test-name-is-prefix rule
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule
