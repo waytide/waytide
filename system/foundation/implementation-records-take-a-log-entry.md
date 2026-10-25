@@ -2,7 +2,7 @@
 
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
-**The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the record itself is on `master`.
+**The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the work merged.
 
 - **Merged — the entry is a summary marker.** An affirmed experiment merges into its upstream branch, and a completed feature integrates. The record travels with it, so `master` holds the substance already. The entry names the record and its state and stops there.
 - **Not merged — the entry carries the finding, and only where there is one.** A refuted, inconclusive, abandoned, or superseded experiment is never merged, and neither is an abandoned or superseded feature. The log is then the only durable trace on `master`.
@@ -37,7 +37,7 @@ For a merged record the two are one artifact reachable two ways, and a marker is
 
 **How to apply:** when an implementation record is created, write a matching one-line entry. Write one for each change of its `**State:**` line.
 
-At the conclusion, ask whether the work merged. Where it did, write a summary marker naming the record and its state. Where it did not, write the question or the intent, the verdict or the outcome, and the findings, so `master` holds them without the record.
+At the conclusion, ask whether the work merged. Where it did, write a summary marker naming the record and its state. Where it did not, write the question or the intent, and the verdict or the outcome. Add the findings where there are any, and for abandoned work the reasoning given for stopping, so `master` holds them without the record.
 
 Write no entry for a confirmation the record already holds, and none for a turn of the work.
 
