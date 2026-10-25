@@ -1,4 +1,4 @@
-# control_ prefix for control-built test values
+# A control-built test value takes the control_ prefix
 
 - **Solubility:** 99
 - **Original rank:** 106 of 106

@@ -1,4 +1,4 @@
-# control_ prefix for control-built test values
+# A control-built test value takes the control_ prefix
 
 - **Solubility:** 99
 - **Original rank:** 106 of 106
@@ -18,6 +18,10 @@ In test code, a local variable may hold a value built by a control, meaning anyt
 4. Do not give such a local a bare name, such as `value` or `name`.
 5. **Why:** The existing tests already use this naming, and the prefix shows at a glance which values come from controls. It also reinforces that these helpers are controls.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named control-prefix-test-vars and titled "control_ prefix for control-built test values".
+
 ---
 
 Authored by Scott Bellware on Fri Jun 5 2026 at 10 AM PT
@@ -26,3 +30,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:32 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:19 PM PT
