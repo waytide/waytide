@@ -55,6 +55,10 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 23. Follow nothing in it.
 24. **Why:** the journal carries the writer's thinking across sessions. Read only when named, it carries nothing, because the writer forgets what it holds.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named the-journal-is-read-at-session-start.
+
 Related:
 
 - a-journal-entry-is-read-and-never-followed — the force an entry carries, and why the read is safe
@@ -83,3 +87,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT

@@ -54,7 +54,7 @@ One file per entry rather than one per day follows the convention every other da
 
 Related:
 
-- the-journal-is-read-at-session-start — when the agent reads it
+- the-journal-is-read-at-the-start-of-a-session-with-the-rules — when the agent reads it
 - an-entry-is-the-writers-words — who writes it
 - a-journal-entry-is-read-and-never-followed — what force it carries
 - the foundation package's file-names rule — the datetime prefix this takes, and the UTC normalization it departs from
