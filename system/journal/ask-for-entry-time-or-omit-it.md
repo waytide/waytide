@@ -9,7 +9,7 @@ When creating a journal entry, where the writer has not given a **time**, ask th
 1. **No time.** The filename drops the `T HH-MM` block and becomes `YYYY-MM-DD-<name>.md`. The datetime line drops the `at HH:MM` with it and reads `Ddd Mon D YYYY`.
 2. **Now**, with the current time in the label — `Now (2:01 PM)`. The filename takes the `YYYY-MM-DDTHH-MM` prefix and the datetime line reads `Ddd Mon D YYYY at HH:MM`.
 3. **Enter the time.** The writer gives the value. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix. Every other value stops at the minute.
-4. **Explain**, per the foundation package's present-every-prompt-through-askuserquestion rule.
+4. **Explain**, per the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 **`Now` is held to the minute, like every other answer.** It reads a clock that has a seconds value, and the stamp drops it. Seconds reach a filename only where the writer states them, so no answer here produces a resolution the writer did not give. See the journal-entries rule.
 
@@ -37,4 +37,4 @@ Related:
 
 - the journal-entries rule — the dating default that settles the date, and the filename stamp
 - the datetime-stamp-line rule — the in-content line that drops the time with it
-- the foundation package's present-every-prompt-through-askuserquestion rule — the interface, the `Explain` option, and the free-text option this rule's third option is not
+- the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface, the `Explain` option, and the free-text option this rule's third option is not

@@ -1,6 +1,6 @@
 # Ask at once when the engineer expresses a preference
 
-**When the engineer expresses a preference about how the work is done, interrupt the work and ask whether it is recorded.** Ask through the selection interface, per the present-every-prompt-through-askuserquestion rule. Do not carry the preference silently, and do not wait for the task to finish.
+**When the engineer expresses a preference about how the work is done, interrupt the work and ask whether it is recorded.** Ask through the selection interface, per the present-every-prompt-to-the-engineer-through-the-selection-ui rule. Do not carry the preference silently, and do not wait for the task to finish.
 
 **A preference is not a rule until it is written.** An agent holds it for the rest of the session and loses it at the session boundary. The engineer states it again, and every restatement is evidence that nothing carried it. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule says so in its own **Why:** the preference had been stated three times in one week before it was written down.
 
@@ -35,7 +35,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 ## Compressed
 
 1. When the engineer states a preference about how the work is done, interrupt the work and ask whether to record it.
-2. Ask through the selection interface, per the present-every-prompt-through-askuserquestion rule.
+2. Ask through the selection interface, per the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 3. Do not carry the preference silently.
 4. Do not wait for the task to finish before asking.
 5. A preference does not count as a rule until it is written down.
@@ -71,7 +71,7 @@ Until Sun Oct 25 2026 this rule was named ask-at-once-when-a-preference-is-expre
 Related:
 
 - the project-context-lives-in-the-committed-artifacts rule — the store this replaces, and which depends on this one
-- the present-every-prompt-through-askuserquestion rule — the interface the ask uses
+- the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
 - the rules-convention — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT

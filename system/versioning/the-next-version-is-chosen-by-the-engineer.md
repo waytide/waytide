@@ -29,5 +29,5 @@ Offering the candidates rather than asking for a version outright is what keeps 
 Related:
 
 - the version-scheme rule — what the segments mean and why the generation is excluded
-- the `foundation` present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
+- the `foundation` present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the `git` subject-first-commit-messages rule — the commit that records the change, `Package version is increased from X to Y`

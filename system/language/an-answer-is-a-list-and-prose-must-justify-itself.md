@@ -71,4 +71,4 @@ Related:
 
 - the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does
 - the language-is-precise-here premise
-- `foundation`'s present-every-prompt-through-askuserquestion rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
+- `foundation`'s present-every-prompt-to-the-engineer-through-the-selection-ui rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap

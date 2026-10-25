@@ -71,7 +71,7 @@ Related:
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the dictionary and Waytide's vocabulary decide in
 - the foundation vocabulary-convention — which vocabulary the entry is written in
-- the foundation present-every-prompt-through-askuserquestion rule — how the decision is put
+- the foundation present-every-prompt-to-the-engineer-through-the-selection-ui rule — how the decision is put
 
 ---
 
@@ -79,3 +79,4 @@ Authored by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:11:32 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT

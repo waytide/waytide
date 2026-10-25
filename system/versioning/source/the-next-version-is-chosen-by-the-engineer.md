@@ -53,7 +53,7 @@ Major  → 2.3.0.0   existing use may not survive
 Related:
 
 - the version-scheme rule — what the segments mean and why the generation is excluded
-- the `foundation` present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
+- the `foundation` present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the `git` subject-first-commit-messages rule — the commit that records the change, `Package version is increased from X to Y`
 
 ---
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:43:08 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT

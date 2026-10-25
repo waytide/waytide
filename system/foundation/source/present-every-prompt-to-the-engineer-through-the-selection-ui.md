@@ -71,6 +71,8 @@ Word each option's own description *…then display this selection prompt again*
 
 Until 2026-10-25 the rule said that where a prompt has four genuine candidates, the fourth is dropped to keep `Explain`, while it also said to present every genuine candidate the agent finds. The engineer settled that where there are more than three, the question says so and points to `Explain`, whose answer gives every candidate, and that a candidate beyond the third is chosen through the "Other" answer.
 
+Until Sun Oct 25 2026 this rule was named present-every-prompt-through-askuserquestion.
+
 Related:
 
 - the `design-by-efferent` package's the-hinge-cycle-runs-from-actuation-to-naming and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
@@ -100,3 +102,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:27:43 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT

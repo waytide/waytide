@@ -49,7 +49,7 @@ Related:
 
 - the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-rule-authorship-in-a-footer rule — the footer's format
-- the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
+- the present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the decision-log rule
 - the observations rule
 - the the-logs-directory-groups-the-running-records rule — the running records this sits among

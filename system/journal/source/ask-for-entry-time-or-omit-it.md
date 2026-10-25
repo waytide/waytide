@@ -9,7 +9,7 @@ When creating a journal entry, where the writer has not given a **time**, ask th
 1. **No time.** The filename drops the `T HH-MM` block and becomes `YYYY-MM-DD-<name>.md`. The datetime line drops the `at HH:MM` with it and reads `Ddd Mon D YYYY`.
 2. **Now**, with the current time in the label — `Now (2:01 PM)`. The filename takes the `YYYY-MM-DDTHH-MM` prefix and the datetime line reads `Ddd Mon D YYYY at HH:MM`.
 3. **Enter the time.** The writer gives the value. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix. Every other value stops at the minute.
-4. **Explain**, per the foundation package's present-every-prompt-through-askuserquestion rule.
+4. **Explain**, per the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 **`Now` is held to the minute, like every other answer.** It reads a clock that has a seconds value, and the stamp drops it. Seconds reach a filename only where the writer states them, so no answer here produces a resolution the writer did not give. See the journal-entries rule.
 
@@ -56,7 +56,7 @@ Name the file and write the datetime line to match the answer. Settle the date f
 6. **Enter the time.** The writer gives the value.
 7. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix.
 8. Every other entered value stops at the minute.
-9. **Explain**, per the foundation package's present-every-prompt-through-askuserquestion rule.
+9. **Explain**, per the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 ## Applying the answer
 
@@ -74,7 +74,7 @@ Related:
 
 - the journal-entries rule — the dating default that settles the date, and the filename stamp
 - the datetime-stamp-line rule — the in-content line that drops the time with it
-- the foundation package's present-every-prompt-through-askuserquestion rule — the interface, the `Explain` option, and the free-text option this rule's third option is not
+- the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface, the `Explain` option, and the free-text option this rule's third option is not
 
 ---
 
@@ -87,3 +87,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT

@@ -37,4 +37,4 @@ Related:
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the dictionary and Waytide's vocabulary decide in
 - the foundation vocabulary-convention — which vocabulary the entry is written in
-- the foundation present-every-prompt-through-askuserquestion rule — how the decision is put
+- the foundation present-every-prompt-to-the-engineer-through-the-selection-ui rule — how the decision is put

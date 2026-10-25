@@ -127,7 +127,7 @@ Related:
 
 - the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does
 - the language-is-precise-here premise
-- `foundation`'s present-every-prompt-through-askuserquestion rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
+- `foundation`'s present-every-prompt-to-the-engineer-through-the-selection-ui rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
 
 ---
 
@@ -148,3 +148,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:35:39 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
