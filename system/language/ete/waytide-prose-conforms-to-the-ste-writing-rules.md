@@ -1,4 +1,4 @@
-# Waytide's prose conforms to the STE writing rules
+# Waytide prose conforms to the STE writing rules
 
 ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks most, and it grows as more are found in use.
 

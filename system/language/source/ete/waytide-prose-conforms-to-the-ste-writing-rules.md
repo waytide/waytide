@@ -1,4 +1,4 @@
-# Waytide's prose conforms to the STE writing rules
+# Waytide prose conforms to the STE writing rules
 
 ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks most, and it grows as more are found in use.
 
@@ -106,6 +106,10 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 5. Only `check (v)` is not approved. The STE dictionary gives `MAKE SURE` for it.
 6. **Why:** the STE dictionary reaches one word at a time, and the writing rules reach every sentence. A writer who reads only the dictionary still writes long passive sentences. Each rule is recorded beside the phrase that met it, so a rule is findable by the shape of the mistake.
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "Waytide's prose conforms to the STE writing rules".
+
 Related:
 
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
@@ -128,3 +132,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:34:11 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:22 PM PT
