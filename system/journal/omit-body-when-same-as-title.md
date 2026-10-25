@@ -11,4 +11,4 @@ This is the title-and-body counterpart of the journal-entries rule, which omits 
 Related:
 
 - the journal-entries rule — the `**Summary:**` line omitted on the same ground
-- the datetime-stamp-line rule — the line that stays whatever else is dropped
+- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped

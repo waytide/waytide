@@ -18,9 +18,9 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 - **Voice:** first person, the writer's perspective — *I raised the concern …*.
 - **Editing:** lightly cleaned up. Preserve the writer's words, their meaning, and their emphasis. Correct the grammar and the flow. Invent no fact, and embellish nothing.
-- **Structure:** a `# <title>`, then the datetime line, then the optional `**Tags:**` line, then a bold `**Summary:**` one-line gist, then the narrative prose. See the datetime-stamp-line rule. The summary is what shows first in a Quick Look preview, so make it a standalone takeaway rather than a restatement of the title. **Omit the summary where it would be identical or nearly identical to the body**, as it is on a very short entry. The entry is then the title and the prose, with nothing repeated.
+- **Structure:** a `# <title>`, then the datetime line, then the optional `**Tags:**` line, then a bold `**Summary:**` one-line gist, then the narrative prose. See the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule. The summary is what shows first in a Quick Look preview, so make it a standalone takeaway rather than a restatement of the title. **Omit the summary where it would be identical or nearly identical to the body**, as it is on a very short entry. The entry is then the title and the prose, with nothing repeated.
 
-**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by this rule, by the datetime-stamp-line, omit-body-when-same-as-title, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the timeline-view rule.
+**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by this rule, by the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, omit-body-when-same-as-title, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the timeline-view rule.
 
 **Dating default:** an entry is about **today** unless the writer signals otherwise. Where the writer refers to a different time, by an explicit date or by a phrase such as *last Tuesday's meeting* or *back in April*, date and stamp the entry to that time instead. Opening with *Today* is a signal, and it means today.
 
@@ -66,7 +66,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 5. Invent no fact, and embellish nothing.
 6. **Structure:** write a `# <title>`, then the datetime line, then the optional `**Tags:**` line.
 7. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
-8. Write the datetime line by the datetime-stamp-line rule.
+8. Write the datetime line by the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule.
 9. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
 10. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
 11. The entry is then the title and the prose, with nothing repeated.
@@ -74,7 +74,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 ## The directive *new entry*
 
 1. Where the writer opens with *new entry*, write the entry by this rule.
-2. Also apply the datetime-stamp-line, omit-body-when-same-as-title, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules.
+2. Also apply the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, omit-body-when-same-as-title, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules.
 3. Also apply the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule.
 4. Nothing else follows from the directive.
 5. Write nothing beside the entry file.
@@ -106,7 +106,7 @@ Related:
 
 - the identity-resolution-contract rule — how `<username>` is resolved
 - the journal-convention — the directory, the provenance footer, and what one entry is
-- the datetime-stamp-line rule — the datetime line under the title
+- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the datetime line under the title
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line and the tag protocol
 - the omit-body-when-same-as-title rule — the body dropped where the title says it already
 - the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule — where the writer gives no time
@@ -130,3 +130,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:20 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT

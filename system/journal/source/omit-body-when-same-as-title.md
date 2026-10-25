@@ -20,7 +20,7 @@ This is the title-and-body counterpart of the journal-entries rule, which omits 
 Related:
 
 - the journal-entries rule — the `**Summary:**` line omitted on the same ground
-- the datetime-stamp-line rule — the line that stays whatever else is dropped
+- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped
 
 ---
 
@@ -28,3 +28,4 @@ Authored by Scott Bellware on Fri Aug 14 2026 at 9:55:45 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT

@@ -38,7 +38,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 Related:
 
 - the identity-resolution-contract rule — how `<username>` is resolved
-- the datetime-stamp-line rule — the line each bullet is led by
+- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
 - the journal-entries rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term
 
@@ -50,3 +50,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 12:54:20 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT

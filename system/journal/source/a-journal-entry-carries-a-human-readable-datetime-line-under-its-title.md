@@ -42,6 +42,10 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 19. Where the stamp carries seconds, use `"%Y-%m-%d %H:%M:%S"` as the parse format.
 20. **Why:** the entry's date and time show in readable form, in the content and in a Quick Look preview, so the reader does not have to decode the filename stamp.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named datetime-stamp-line.
+
 Related:
 
 - the journal-entries rule — the filename stamp this is derived from, and its local time
@@ -59,3 +63,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
