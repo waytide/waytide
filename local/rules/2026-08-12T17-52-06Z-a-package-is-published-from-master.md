@@ -28,7 +28,7 @@ Where an experiment's own question is about publishing, put the exception throug
 
 **The never-offer instruction does not reach that case.** An experiment whose question is about publishing has publishing as its subject, so raising it is the work rather than an offer. What is forbidden is raising it where the experiment is about something else.
 
-**Waytide carries no version numbers**, and this rule asks for none. The `versioning` package's the-next-version-is-chosen-by-the-engineer rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
+**Waytide carries no version numbers**, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
 
 **Why:** an experiment can be refuted, and its branch is deleted on confirmation. A feature can be abandoned. A publish is neither reversible nor confirmable after the fact, since a component repository's `master` is what a consuming project pulls.
 
@@ -45,7 +45,7 @@ Related:
 - `CONTRIBUTING.md` — the publish procedure itself
 - the foundation work-in-a-downstream-project-is-never-offered-and-its-pending-state-is-not-reported rule — the same never-offer instruction for the act on the other side of a publish, refreshing the projects that installed the package
 - the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of an experiment, and why a feature has no affirmation
-- the versioning package's the-next-version-is-chosen-by-the-engineer rule — which governs a consuming project that versions its packages, and not this one
+- the versioning package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule — which governs a consuming project that versions its packages, and not this one
 
 ---
 
@@ -57,3 +57,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:42:05 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT

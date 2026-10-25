@@ -3,7 +3,7 @@
 What a version means, and how the next one is chosen. Not how a package is built or published — that is the concern of whatever technology the package is distributed with.
 
 - **A version is semver, optionally prefixed by a product generation number** (`version-scheme`). The three trailing segments answer *what does a user of this have to do* — nothing, nothing but read, or change their code. The leading segment, where a project carries one, answers *is this the same product*, which is a **declaration** rather than a reading of the change, and is never increased at a release.
-- **The next version is put to the engineer, never decided by the agent** (`the-next-version-is-chosen-by-the-engineer`). Patch, minor, and major are offered through the selection interface, each showing the resulting version and the claim it makes. The decision is a promise about other people's code, and a published version cannot be taken back.
+- **The next version is put to the engineer, never decided by the agent** (`the-next-version-is-put-to-the-engineer-never-decided-by-the-agent`). Patch, minor, and major are offered through the selection interface, each showing the resulting version and the claim it makes. The decision is a promise about other people's code, and a published version cannot be taken back.
 
 **Vocabulary** (`vocabulary.md`): one term, **product generation** — the leading segment of a four-segment version, a product-management declaration rather than a compatibility claim.
 

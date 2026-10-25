@@ -50,6 +50,10 @@ Major  → 2.3.0.0   existing use may not survive
 13. Do not propose a version and ask for confirmation. The decision is put at a gate.
 14. **Why:** Which segment increases is a claim about other people's code, not derivable from the diff. A published version cannot be taken back, only superseded.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named the-next-version-is-chosen-by-the-engineer.
+
 Related:
 
 - the version-scheme rule — what the segments mean and why the generation is excluded
@@ -71,3 +75,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
