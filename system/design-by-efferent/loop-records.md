@@ -7,7 +7,7 @@
 **Format:**
 - Filename per the ISO 8601 UTC datetime prefix convention: `YYYY-MM-DDTHH-MM-SSZ-<feature-name>.md`.
 - A `# Loop record — <feature>` title and a one-paragraph summary of the feature.
-- **The mode, declared at the top** — **attended** or **unattended** (see the attended-or-unattended-is-chosen-at-the-start rule). It is stated once, because it changes how every cycle below is read.
+- **The mode, declared at the top** — **attended** or **unattended** (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). It is stated once, because it changes how every cycle below is read.
 - One section per **cycle**, in order. Each cycle records:
   - **Hinge** — the subtle, load-bearing decision the AI determined.
   - **Options** — the candidates put to the engineer at the gate (or "none — no gate", explicitly, when a hinge was handled without stopping. Surfacing a skipped gate is part of the record's value).

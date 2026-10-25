@@ -1,4 +1,4 @@
-# Attended or unattended is chosen when the work is started. DBE is in effect either way
+# Attended or unattended is chosen when the work is started
 
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is started and held for its duration:
 
@@ -127,6 +127,10 @@ with these options:
 12. Do not write the plan to a file. It is not a `foundation` planning record.
 13. **Why:** the engineer's attention is scarce. For work with negligible rework cost, waits at each hinge buy nothing. The person who knows the work's worth should choose the cadence. Keeping DBE in force stops the choice being a way out of the method. A record showing options put to an absent engineer would be believed, so the mode is recorded honestly. The plan is the one cheap moment of attention before big-batch work.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
+
 Related:
 
 - the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
@@ -162,3 +166,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT

@@ -1,4 +1,4 @@
-# Attended or unattended is chosen when the work is started. DBE is in effect either way
+# Attended or unattended is chosen when the work is started
 
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is started and held for its duration:
 

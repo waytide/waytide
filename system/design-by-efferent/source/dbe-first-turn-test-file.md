@@ -44,7 +44,7 @@ Keeping the first gate to the actuation and a single unnamed assert keeps that g
 
 **Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close.
 
-Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-at-the-start rule). Settle the three test hinges first, then assemble and show the file.
+Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
 
 ## Compressed
 
@@ -99,7 +99,7 @@ end
 27. Propose each hinge and get it accepted before the next, per the hinge-cycle rule.
 28. Do not present the whole test file for a single accept.
 29. Settle the three test hinges first, then assemble and show the file.
-30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-at-the-start rule.
+30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 31. **Why:** Writing the actuation before any implementation designs the interface from the use site, per the DBE-as-design-tool rule. Limiting the first gate to the actuation and one unnamed assert avoids committing early to an outcome taxonomy. The explaining variable makes the test read as a statement of the concern and keeps the efferent view in frame.
 
 Related:
@@ -124,3 +124,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
