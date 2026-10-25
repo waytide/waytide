@@ -85,6 +85,8 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 Until 2026-10-23 the rule made truncation available wherever the subject was not the agent's to rewrite, which could reach beyond a journal entry.
 
+Until Sun Oct 25 2026 this rule was named commit-message-widths.
+
 Related:
 
 - the subject-first-commit-messages rule — what the subject says, which this constrains the width of
@@ -101,3 +103,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:20 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 3:56:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT

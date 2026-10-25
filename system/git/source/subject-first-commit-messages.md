@@ -10,7 +10,7 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 - **Rename form:** "Widget, rather than sprocket".
 - **Package version form:** "Package version is increased from 1.1.1 to 1.2.0" — the message states the current version and the next one, so the log line carries the transition without a reader reaching for the package specification. "Increased" holds even when a trailing segment resets, as it does here: what is increased is the version, not each segment.
 
-**The subject's length is the commit-message-widths rule's**, which caps it at 50 characters and wraps the body at 72.
+**The subject's length is the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule's**, which caps it at 50 characters and wraps the body at 72.
 
 **The two rules pull against each other, and that is the point.** Naming the software and then its new state costs words a leading verb would not. Where the subject will not fit, the answer is to split the commit rather than to drop the subject and lead with a verb.
 
@@ -34,7 +34,7 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 12. "Increased" holds even when a trailing segment resets.
 13. **Never lead with a verb.** That covers the imperative ("Fix…") and the past tense ("Fixed…") alike.
 14. Name the software that changed, then its new state.
-15. **The subject's length is the commit-message-widths rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
+15. **The subject's length is the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
 16. **Split the commit when the subject will not fit.**
 17. Do not drop the software subject and lead with a verb instead.
 18. **Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
@@ -48,7 +48,7 @@ Related:
 
 - the commit-says-task-is-done-not-mark-done rule
 - the no-Claude-coauthor rule
-- the commit-message-widths rule — the subject's 50 characters and the body's 72
+- the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule — the subject's 50 characters and the body's 72
 - the run-suite-before-commit rule
 
 ---
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:44 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:35 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
