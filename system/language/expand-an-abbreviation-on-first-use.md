@@ -14,4 +14,4 @@ Related:
 
 - `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens
 - `no-slang`
-- the `language-is-precise-here` premise
+- the `language-is-used-precisely-here-and-words-are-load-bearing` premise

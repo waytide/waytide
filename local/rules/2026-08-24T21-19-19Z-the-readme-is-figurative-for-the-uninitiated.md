@@ -26,7 +26,7 @@
 
 **Not a false statement.** A figure stands in for a precise term. It does not stand in for a different fact. *An agent memory store is fed by the committed artifacts* is not a figure for the a-projects-durable-context-lives-in-its-committed-artifacts rule's *do not create one* — it says something else, and this rule does not cover it.
 
-**Not slang in place of an available plain word.** The exception is for the figure that **explains**. A word reached for because it sounds better is the thing the language-is-precise-here rule calls dramatic jargon, and it obscures for the uninitiated reader as much as for anyone.
+**Not slang in place of an available plain word.** The exception is for the figure that **explains**. A word reached for because it sounds better is the thing the language-is-used-precisely-here-and-words-are-load-bearing rule calls dramatic jargon, and it obscures for the uninitiated reader as much as for anyone.
 
 **Why:** the terminology is the conveyable output of this work, and a reader who does not have it yet cannot be conveyed to in it. A README written strictly to the vocabulary would define its terms before it could describe anything, which puts the cost of the whole glossary in front of the first paragraph. The reader has not decided to pay it, and that decision is what the README is for.
 
@@ -41,7 +41,7 @@ Hold every other artifact to the `language` package unchanged.
 Related:
 
 - the `language` no-slang rule — which reaches prose and conversation, and which this takes an exception to
-- its language-is-precise-here rule — dramatic jargon, which is not licensed here
+- its language-is-used-precisely-here-and-words-are-load-bearing rule — dramatic jargon, which is not licensed here
 - its waytide-prose-conforms-to-the-ste-writing-rules rule — the standard the README is excused from
 - the `foundation` vocabulary — `free-text option` rather than *escape*, the worked case
 - the `foundation` ask-at-once-when-the-engineer-expresses-a-preference rule — the ask this rule came from
@@ -51,3 +51,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 24 2026 at 2:19:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:54 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT

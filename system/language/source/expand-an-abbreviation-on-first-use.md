@@ -32,7 +32,7 @@ Related:
 
 - `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens
 - `no-slang`
-- the `language-is-precise-here` premise
+- the `language-is-used-precisely-here-and-words-are-load-bearing` premise
 
 ---
 
@@ -43,3 +43,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:27 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT

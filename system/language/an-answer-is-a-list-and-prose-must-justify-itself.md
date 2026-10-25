@@ -70,5 +70,5 @@ Write prose only where the answer is a sentence or two. Do not reach for it beca
 Related:
 
 - the communicate-plainly-and-name-the-actual-thing rule — which governs the words inside the list and reaches conversation the same way this does
-- the language-is-precise-here premise
+- the language-is-used-precisely-here-and-words-are-load-bearing premise
 - `foundation`'s present-every-prompt-to-the-engineer-through-the-selection-ui rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap

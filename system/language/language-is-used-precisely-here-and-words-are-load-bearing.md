@@ -1,4 +1,4 @@
-# Language is used precisely here — words are load-bearing, not decoration
+# Language is used precisely here, and words are load-bearing
 
 Under this model, the use of language is **very precise**. A word is not a label applied to a thought after the fact. It is the thought's working surface. Choosing a word chooses a concept, and the concept is what the work is then done with. So the words are load-bearing, and they are chosen deliberately, held to, and changed only on purpose.
 

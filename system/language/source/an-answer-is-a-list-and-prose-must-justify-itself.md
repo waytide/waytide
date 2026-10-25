@@ -130,7 +130,7 @@ Until Sun Oct 25 2026 this rule was titled "An answer is a list. Prose must just
 Related:
 
 - the communicate-plainly-and-name-the-actual-thing rule — which governs the words inside the list and reaches conversation the same way this does
-- the language-is-precise-here premise
+- the language-is-used-precisely-here-and-words-are-load-bearing premise
 - `foundation`'s present-every-prompt-to-the-engineer-through-the-selection-ui rule — the selection interface, which is where a **question** goes — this rule governs an **answer**, and the two do not overlap
 
 ---
@@ -155,3 +155,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT

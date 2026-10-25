@@ -26,7 +26,7 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 Related:
 
 - the communicate-plainly-and-name-the-actual-thing rule
-- the language-is-precise-here rule
+- the language-is-used-precisely-here-and-words-are-load-bearing rule
 
 ---
 
@@ -35,3 +35,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT

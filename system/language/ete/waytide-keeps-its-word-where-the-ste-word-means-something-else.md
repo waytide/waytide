@@ -45,5 +45,5 @@ Related:
 - the ete-declares-its-own-categories rule — the categories a reserved word is named in
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
-- the `language` package's `vocabulary.md` and its language-is-precise-here rule
+- the `language` package's `vocabulary.md` and its language-is-used-precisely-here-and-words-are-load-bearing rule
 - the specification at `waytide/local/reference/`, which is the authority this rule defers to

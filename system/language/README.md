@@ -4,7 +4,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 **The premise**
 
-- **language-is-precise-here**. Words are load-bearing, not decoration. The selection of a word is a design decision. Precision is not formality: the most precise word is very often the plainest one. Everything below follows from this.
+- **language-is-used-precisely-here-and-words-are-load-bearing**. Words are load-bearing, not decoration. The selection of a word is a design decision. Precision is not formality: the most precise word is very often the plainest one. Everything below follows from this.
 
 **The four disciplines that make it achievable**
 

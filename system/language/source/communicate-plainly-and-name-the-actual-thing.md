@@ -1,6 +1,6 @@
 # Communicate plainly, and name the actual thing
 
-Speak and write to the user in plain language, using the **actual names of things**. Do not hide meaning behind invented labels or compressed jargon offered as if it were already shared. This is a principle rule beneath the `language-is-precise-here` premise, alongside `name-literally` and `no-slang`.
+Speak and write to the user in plain language, using the **actual names of things**. Do not hide meaning behind invented labels or compressed jargon offered as if it were already shared. This is a principle rule beneath the `language-is-used-precisely-here-and-words-are-load-bearing` premise, alongside `name-literally` and `no-slang`.
 
 - **No invented labels.** Don't coin numbered or abstract stand-ins ("tier 1", "phase A2", "the T3 bucket") for things that have real names. Say the thing itself — "the notes copied into a project when it installs a package," not "the distributed tier."
 - **No symbolic back-references.** Don't point back to an earlier list item by its number or position ("#2", "option 3", "the second one", "the latter"). The reader has to scroll back and count to recover what you meant. Name the thing again each time — "the show-the-test merge," not "#2" — even at the cost of a little repetition. Repetition the reader can follow beats a shorthand they must decode. **The engineer may use the number**, since a list they may refer back to is numbered for them (see the an-answer-is-a-list-and-prose-must-justify-itself rule). When they write *#2*, name what #2 is before acting on it, so the reference is confirmed rather than assumed.
@@ -37,7 +37,7 @@ Until Sun Oct 25 2026 this rule was named communicate-plainly-name-the-thing and
 
 Related:
 
-- the `language-is-precise-here` premise this serves
+- the `language-is-used-precisely-here-and-words-are-load-bearing` premise this serves
 - its sibling principle rules `name-literally` (name a thing for what it is) and `no-slang`
 - foundation's `rules-establish-a-mindset` — a rule establishes a stance
 
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:35:39 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
