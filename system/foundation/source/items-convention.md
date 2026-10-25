@@ -170,7 +170,7 @@ Related:
 - the an-item-takes-a-log-entry rule — the log entry an item takes
 - the observations-convention — an observation, which is an item and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
-- the a-suspension-is-a-log-entry rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
 
 ---
 
@@ -199,3 +199,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT

@@ -1,4 +1,4 @@
-# A suspension is a log entry tagged `[suspended]`, and nothing is moved anywhere
+# A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
 **When the project stops doing something, log it and tag the entry `[suspended]`.** That is the whole of the act. There is no directory the thing moves to, and nothing is kept beside the entry.
 
@@ -82,6 +82,8 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 
 A leading-tag form was written on 2026-08-18 and superseded the same day.
 
+Until Sun Oct 25 2026 this rule was named a-suspension-is-a-log-entry and titled "A suspension is a log entry tagged `[suspended]`, and nothing is moved anywhere".
+
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
@@ -100,3 +102,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT

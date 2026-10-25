@@ -42,7 +42,7 @@ Related:
 - the `design-by-efferent` package's the-hinge-cycle-runs-from-actuation-to-naming and attended-or-unattended-is-chosen-when-the-work-is-started rules — what this suspends for content work
 - the `foundation` announce-waytide-at-session-start rule — the unconditional read that leaves no package dormant
 - the rules-convention and vocabulary-convention — the precedence this asserts and the gap it names
-- the a-suspension-is-a-log-entry rule — how this rule ends
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — how this rule ends
 
 ---
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:05 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT

@@ -28,4 +28,4 @@ Related:
 
 - the decision-log-convention — the entry's form
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
-- the a-suspension-is-a-log-entry rule — `[suspended]`, the other reserved tag the log carries
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other reserved tag the log carries

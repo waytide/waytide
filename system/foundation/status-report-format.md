@@ -24,7 +24,7 @@ When the user asks for a **status report** (or "project status"), produce a repo
 **Two kinds are hidden today.**
 
 - **A record whose `**State:**` line reads `Suspended`.** A suspended thing is paused rather than ended, so it is neither current work nor concluded work, and listing it among current work overstates what is live.
-- **A record carrying the `[suspended]` tag.** That is a log entry recording that the project stopped doing something, per the a-suspension-is-a-log-entry rule. A run of them would otherwise fill a brief of recent direction with what the project stopped rather than what it did.
+- **A record carrying the `[suspended]` tag.** That is a log entry recording that the project stopped doing something, per the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule. A run of them would otherwise fill a brief of recent direction with what the project stopped rather than what it did.
 
 **The two are different records and take the same treatment.** The state marks something the project **wanted** and set aside. The tag marks something the project **did** and stopped. That rule holds them apart deliberately, and nothing here merges them — they are hidden for the same reason and by the same means.
 
@@ -43,7 +43,7 @@ Keep each part tight. Read current state before printing — do not report stale
 Related:
 
 - the items-convention — the `Suspended` state a hidden record carries
-- the a-suspension-is-a-log-entry rule — the `[suspended]` **tag**, which marks a log entry and is a different act from an item carrying the state
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the `[suspended]` **tag**, which marks a log entry and is a different act from an item carrying the state
 - the a-printed-list-of-records-is-formatted-as-a-table rule — the form the report's tables take
 - the test-report and test-tree commands in the testing package
 - which derive the same tree the same way — the test-tree rule states the reasons in full

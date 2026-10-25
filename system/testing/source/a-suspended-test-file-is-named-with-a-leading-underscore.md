@@ -8,7 +8,7 @@
 
 **This is the `Suspended` state's sense — paused, not ended.** The file is kept, and it is expected to run again.
 
-**It is not a suspension in the `foundation` a-suspension-is-a-log-entry rule's sense.** That rule governs something the project **did** and stopped: the thing is **removed**, and a log entry tagged `[suspended]` says what it cost and what else changed. A test file marked this way is removed from nothing.
+**It is not a suspension in the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule's sense.** That rule governs something the project **did** and stopped: the thing is **removed**, and a log entry tagged `[suspended]` says what it cost and what else changed. A test file marked this way is removed from nothing.
 
 **So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the decision log's own trigger reaches it like any other.
 
@@ -46,7 +46,7 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 
 1. This is the `Suspended` state's sense: paused, not ended.
 2. The file is kept, and it is expected to run again.
-3. It is not a suspension in the sense of the `foundation` a-suspension-is-a-log-entry rule. That rule governs something done, stopped, and removed.
+3. It is not a suspension in the sense of the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule. That rule governs something done, stopped, and removed.
 4. A suspended test is removed from nothing.
 5. Do not tag a log entry `[suspended]` for a suspended test, since nothing was removed.
 6. Suspending a test is an ordinary decision. The decision log's own trigger applies to it like any other.
@@ -67,7 +67,7 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 Related:
 
 - the tests-are-automated-or-interactive rule — the other thing that decides what a run contains
-- the `foundation` a-suspension-is-a-log-entry rule — the other sense of the word, which this is not
+- the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other sense of the word, which this is not
 - the `foundation` items-convention — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
 - the `git` run-suite-before-commit rule — the run this narrows the membership of
@@ -77,3 +77,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 24 2026 at 12:59:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT

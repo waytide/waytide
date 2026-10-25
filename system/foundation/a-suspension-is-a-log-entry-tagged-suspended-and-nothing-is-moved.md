@@ -1,4 +1,4 @@
-# A suspension is a log entry tagged `[suspended]`, and nothing is moved anywhere
+# A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
 **When the project stops doing something, log it and tag the entry `[suspended]`.** That is the whole of the act. There is no directory the thing moves to, and nothing is kept beside the entry.
 

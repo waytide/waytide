@@ -53,7 +53,7 @@ Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
 - the decision-log-convention — the entry that gains a `**Tags:**` line under its title
-- the a-suspension-is-a-log-entry rule — `[suspended]`, a reserved tag the log carries
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, a reserved tag the log carries
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the other reserved tag the log carries
 - the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does exempt the log; a footer is lines the entry has nowhere to put, where a tag is not
 - this package's vocabulary — the plain text data attribute line
