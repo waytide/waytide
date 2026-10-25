@@ -134,7 +134,7 @@ Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-th
 Related:
 
 - the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
-- the dbe-human-in-the-loop rule — why attention is placed at the hinges
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — why attention is placed at the hinges
 - the hinge-cycle rule — the hinges that run either way
 - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
 - foundation's implementation-lifecycle rule — the starts where the decision is put
@@ -167,3 +167,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:00:33 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:29 PM PT

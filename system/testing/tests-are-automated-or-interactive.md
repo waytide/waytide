@@ -43,5 +43,5 @@ Related:
 
 - the a-suspended-test-file-is-named-with-a-leading-underscore rule — the other thing that decides what a run contains
 - the `git` run-suite-before-commit rule — the pre-commit run this fixes the membership of. It is a citation rather than a dependency: this rule states what the directories are and who runs each, and it applies whole in a project that does not install the `git` package
-- the `design-by-efferent` dbe-human-in-the-loop rule — where the engineer's attention is spent, and the reason it is not spent by a machine's schedule
+- the `design-by-efferent` the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — where the engineer's attention is spent, and the reason it is not spent by a machine's schedule
 - the `language` an-answer-is-a-list-and-prose-must-justify-itself rule — the form the run report takes

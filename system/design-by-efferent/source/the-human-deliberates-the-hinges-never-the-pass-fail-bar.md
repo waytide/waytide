@@ -1,4 +1,4 @@
-# Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar
+# The human deliberates the hinges, never the pass/fail bar
 
 In DBE, place the human's attention only where design judgment lives — at the **hinges**. A hinge is a decision the design turns on, subtle and load-bearing (see the DBE vocabulary). Two hinges are the original pair: **setting the cradle** (the efferent shape of the actuation) and **judging solubility** (the result).
 
@@ -69,6 +69,8 @@ The loop, by turn:
 
 Until 2026-10-24 the Why named the hinges as the actuation and the resulting solubility alone, from when those were the only two, and turn two left "test mechanics" undefined. The engineer set out that mechanics are the testing framework and the ceremonies of using it, while the actuation, observation, controls, and naming are the test's content. The rule now says so, and the Why names the hinges of the hinge-cycle rule.
 
+Until Sun Oct 25 2026 this rule was named dbe-human-in-the-loop and titled "Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar".
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -90,3 +92,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:34:03 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:32:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:29 PM PT

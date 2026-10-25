@@ -1,4 +1,4 @@
-# Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar
+# The human deliberates the hinges, never the pass/fail bar
 
 In DBE, place the human's attention only where design judgment lives — at the **hinges**. A hinge is a decision the design turns on, subtle and load-bearing (see the DBE vocabulary). Two hinges are the original pair: **setting the cradle** (the efferent shape of the actuation) and **judging solubility** (the result).
 
