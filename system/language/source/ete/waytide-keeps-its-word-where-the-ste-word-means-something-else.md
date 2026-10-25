@@ -1,4 +1,4 @@
-# Waytide keeps its own word where the STE dictionary's approved word means something else
+# Waytide keeps its word where the STE word means something else
 
 - **Solubility:** 50
 - **Original rank:** 55 of 106
@@ -75,6 +75,10 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 33. **Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
 
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "Waytide keeps its own word where the STE dictionary's approved word means something else".
+
 Related:
 
 - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory
@@ -102,3 +106,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:17 PM PT

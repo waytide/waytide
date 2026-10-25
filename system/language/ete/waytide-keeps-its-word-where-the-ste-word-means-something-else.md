@@ -1,4 +1,4 @@
-# Waytide keeps its own word where the STE dictionary's approved word means something else
+# Waytide keeps its word where the STE word means something else
 
 - **Solubility:** 50
 - **Original rank:** 55 of 106
