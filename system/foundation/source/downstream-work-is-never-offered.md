@@ -18,7 +18,7 @@ A change to a package leaves every project that installed it holding the previou
 
 **Answering a question about downstream state.** *Are the consuming projects up to date* is a question, and it is answered plainly and in full. What is forbidden is raising it unbidden.
 
-**The session-start notice.** It reports the open experiments and features of the project the session is in, it is emitted by the harness rather than the agent, and it names no other repository. See the announce-waytide-at-session-start rule.
+**The session-start notice.** It reports the open experiments and features of the project the session is in, it is emitted by the harness rather than the agent, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
 
 **Why:** the engineer decides when other repositories move, and that decision is not readable from what a package change was. A refresh writes merge commits into repositories they may not be working in this week, against rules that will be read at the start of every session there. The engineer is weighing that. The agent is weighing a diff it has just produced.
 
@@ -57,7 +57,7 @@ Carry out any of that when the engineer asks for it, and report what happened on
 5. To tell them apart, ask whether the sentence describes something that happened.
 6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
 7. Raising downstream state unbidden stays forbidden.
-8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the announce-waytide-at-session-start rule.
+8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
 
 ## How to apply
 
@@ -70,7 +70,7 @@ Carry out any of that when the engineer asks for it, and report what happened on
 Related:
 
 - the implementation-lifecycle rule — the agent never raising the end of an experiment, the same failure through a different act
-- the announce-waytide-at-session-start rule — the notice, which is the harness's and reports only the project the session is in
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice, which is the harness's and reports only the project the session is in
 - this package's README — the refresh procedure itself, which is run on the engineer's instruction
 
 ---
@@ -78,3 +78,4 @@ Related:
 Authored by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT

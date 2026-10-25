@@ -2,7 +2,7 @@
 # Render the status line, carrying a persistent Waytide installation indicator.
 #
 # Run by the harness as its statusLine command — see the
-# announce-waytide-at-session-start rule. Where the SessionStart notice marks
+# the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule. Where the SessionStart notice marks
 # the moment the system loaded, this keeps the fact on screen for the whole
 # session, outside the conversation.
 #

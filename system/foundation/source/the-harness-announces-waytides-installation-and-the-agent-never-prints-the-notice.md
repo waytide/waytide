@@ -1,4 +1,4 @@
-# The harness announces Waytide's installation. The agent never prints the notice
+# The harness announces Waytide's installation, and the agent never prints the notice
 
 - **Solubility:** 24
 - **Original rank:** 10 of 106
@@ -324,6 +324,8 @@ The instruction named `foundation/initialization-rule.md` as the first file to o
 
 A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the agent prints at the head of the read, until 2026-08-07. It was removed.
 
+Until Sun Oct 25 2026 this rule was named announce-waytide-at-session-start and titled "The harness announces Waytide's installation. The agent never prints the notice".
+
 Related:
 
 - the initialization-rule — the startup display, which this notice does not carry and the agent does not print
@@ -396,3 +398,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:02 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT

@@ -18,7 +18,7 @@ A change to a package leaves every project that installed it holding the previou
 
 **Answering a question about downstream state.** *Are the consuming projects up to date* is a question, and it is answered plainly and in full. What is forbidden is raising it unbidden.
 
-**The session-start notice.** It reports the open experiments and features of the project the session is in, it is emitted by the harness rather than the agent, and it names no other repository. See the announce-waytide-at-session-start rule.
+**The session-start notice.** It reports the open experiments and features of the project the session is in, it is emitted by the harness rather than the agent, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
 
 **Why:** the engineer decides when other repositories move, and that decision is not readable from what a package change was. A refresh writes merge commits into repositories they may not be working in this week, against rules that will be read at the start of every session there. The engineer is weighing that. The agent is weighing a diff it has just produced.
 
@@ -33,5 +33,5 @@ Carry out any of that when the engineer asks for it, and report what happened on
 Related:
 
 - the implementation-lifecycle rule — the agent never raising the end of an experiment, the same failure through a different act
-- the announce-waytide-at-session-start rule — the notice, which is the harness's and reports only the project the session is in
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice, which is the harness's and reports only the project the session is in
 - this package's README — the refresh procedure itself, which is run on the engineer's instruction

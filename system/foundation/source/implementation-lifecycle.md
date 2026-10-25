@@ -242,7 +242,7 @@ Related:
 
 - the implementations-convention — the record, the tags, and the state words
 - the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-runs-from-actuation-to-naming rules
-- the announce-waytide-at-session-start rule — the notice reporting what has not concluded
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
 - the `git` run-suite-before-commit and announce-a-branch-switch-in-a-bordered-block rules
 
 ---
@@ -260,3 +260,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 2:08:32 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT

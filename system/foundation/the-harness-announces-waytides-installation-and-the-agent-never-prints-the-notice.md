@@ -1,4 +1,4 @@
-# The harness announces Waytide's installation. The agent never prints the notice
+# The harness announces Waytide's installation, and the agent never prints the notice
 
 - **Solubility:** 24
 - **Original rank:** 10 of 106

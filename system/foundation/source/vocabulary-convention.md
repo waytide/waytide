@@ -116,7 +116,7 @@ Related:
 - its language-is-precise-here rule — the premise every vocabulary follows from
 - the rules-convention
 - the file-names rule — why the project's file takes no prefix
-- the announce-waytide-at-session-start rule — the read instruction that names it
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
 
 ---
 
@@ -133,3 +133,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT

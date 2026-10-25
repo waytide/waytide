@@ -32,7 +32,7 @@
 
 ## Every package is still read
 
-**A deactivated package's rules are read at session start exactly as an active package's are.** The declaration governs whether they are applied, not whether they are read. The announce-waytide-at-session-start rule's unconditional read stands whole and is not narrowed by any declaration.
+**A deactivated package's rules are read at session start exactly as an active package's are.** The declaration governs whether they are applied, not whether they are read. The the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule's unconditional read stands whole and is not narrowed by any declaration.
 
 **So the read costs what it always cost.** Skipping the read of a deactivated package would save that cost and is deliberately not done: a rule that is read and withheld can be cited, weighed, and reactivated within the session, and one that was never read cannot.
 
@@ -137,7 +137,7 @@ Until Sun Oct 25 2026 this rule was named a-project-declares-its-package-set and
 
 Related:
 
-- the announce-waytide-at-session-start rule — the unconditional read this leaves whole
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read this leaves whole
 - the initialization-rule — where the printed block is defined
 - the status-report-format rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
@@ -158,3 +158,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:06:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT

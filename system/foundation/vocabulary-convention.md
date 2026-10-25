@@ -57,4 +57,4 @@ Related:
 - its language-is-precise-here rule — the premise every vocabulary follows from
 - the rules-convention
 - the file-names rule — why the project's file takes no prefix
-- the announce-waytide-at-session-start rule — the read instruction that names it
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
