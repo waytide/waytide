@@ -4,7 +4,7 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 
 **What a run contains**
 - `test/` holds `automated/`, `interactive/`, or both. Only the automated tests run before a commit — an interactive test is the engineer's to run, and a report says which of the two ran (`tests-are-automated-or-interactive`).
-- A test file whose name begins with an underscore is **suspended** and is not run. The mark is a rename, the file is kept, and the pattern does not exclude it on its own (`a-suspended-test-file-is-named-with-a-leading-underscore`).
+- A test file whose name begins with an underscore is **suspended** and is not run. The mark is a rename, the file is kept, and the pattern does not exclude it on its own (`a-test-file-named-with-a-leading-underscore-is-suspended`).
 
 **Structure and naming**
 - Actuate the concern once at the top. Assert each outcome in its own nested context (`tdd-test-structure`).

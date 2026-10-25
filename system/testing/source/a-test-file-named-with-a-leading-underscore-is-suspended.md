@@ -1,4 +1,4 @@
-# A test file whose name begins with an underscore is suspended, and the suite does not run it
+# A test file named with a leading underscore is suspended
 
 **A leading underscore on a test file's name means the file is suspended.** `_upload.rb` is suspended and `upload.rb` is not. **A suite run does not run a suspended file.**
 
@@ -30,6 +30,44 @@ When running a suite, skip every file whose name begins with an underscore, and 
 
 Do not delete a test to get it out of the suite, and do not leave a failing one in. Do not tag a log entry `[suspended]` for one, since nothing was removed.
 
+## Compressed
+
+1. A leading underscore on a test file's name means the file is suspended.
+2. `_upload.rb` is suspended and `upload.rb` is not.
+3. A suite run does not run a suspended file.
+4. To suspend a test, rename its file with a leading underscore. Suspending is a rename and nothing else.
+5. The file stays where it is.
+6. Change nothing inside the file.
+7. To take the test back into the suite, remove the underscore.
+8. Do not delete a test to get it out of the suite.
+9. Do not leave a failing test in the suite.
+
+## Suspended here means paused, not stopped
+
+1. This is the `Suspended` state's sense: paused, not ended.
+2. The file is kept, and it is expected to run again.
+3. It is not a suspension in the sense of the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule. That rule governs something done, stopped, and removed.
+4. A suspended test is removed from nothing.
+5. Do not tag a log entry `[suspended]` for a suspended test, since nothing was removed.
+6. Suspending a test is an ordinary decision. The decision log's own trigger applies to it like any other.
+
+## The mark is in the filename because that is what a suite reads
+
+1. The suspension mark goes in the filename, not inside the file.
+2. A suite selects its files by name, by expanding a pattern over the test directory.
+3. The underscore does not exclude itself. Expect this failure.
+4. A shell glob skips a leading dot but not a leading underscore. `*.rb` returns `_upload.rb` along with the rest.
+5. A language's own test-file discovery usually does not skip the underscore either.
+6. Whatever runs the suite excludes files whose names begin with an underscore.
+7. Write that exclusion explicitly, because the pattern does not do it.
+8. Do not use a dot-prefixed name for suspension. It would hide the file from directory listings and editor file trees.
+9. A suspended test should stay visible and be passed over.
+10. **Why:** Deleting a test that cannot pass loses the work and the intent. Leaving it in makes every run report an expected failure, which hides the next real one. Renaming keeps the file visible and out of the report. A suspended test is not counted in the pass count, and that cost is accepted because the name shows in the directory listing.
+
+## History
+
+Until Sun Oct 25 2026 this rule was named a-suspended-test-file-is-named-with-a-leading-underscore and titled "A test file whose name begins with an underscore is suspended, and the suite does not run it".
+
 Related:
 
 - the tests-are-automated-or-interactive rule — the other thing that decides what a run contains
@@ -37,3 +75,13 @@ Related:
 - the `foundation` the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
 - the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the run this narrows the membership of
+
+---
+
+Authored by Scott Bellware on Mon Aug 24 2026 at 12:59:35 PM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:03 PM PT
