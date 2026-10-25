@@ -1356,6 +1356,112 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 
 **After five rules, the engineer changed the increment to unattended.** The five showed the standard: a title is kept close to its wording, and changed only where it is unclear, so the agent can apply it. The agent retitles the remaining 92, renames each to the name its title derives, and updates every live citation, one commit per rule. Historical records keep the names they were written with. The engineer then reviews a table of every change.
 
+### Phase 1 — the rule names, results, 2026-10-25
+
+**All 97 rules whose name did not derive from their title now carry a clarified title and the name it derives**, one commit each, with every live citation updated and the tests passing after each. Five were decided by the engineer one at a time, and 92 by the agent unattended, to the standard those five set: keep a title close to its wording, and change it only where it is unclear. Six were retitled so that the name stays as it was. Each rule's History records its former name and title. Historical records keep the names they were written with.
+
+| | old name | title | new name |
+|---|---|---|---|
+| 1 | a-decision-the-engineer-made-is-tagged-decision | A log entry recording an engineer's decision is tagged `[decision]` | a-log-entry-recording-an-engineers-decision-is-tagged-decision |
+| 2 | a-project-does-not-name-its-consumers | A project does not name its downstream consumers in its own files | a-project-does-not-name-its-downstream-consumers-in-its-own-files |
+| 3 | a-project-declares-its-package-set | A project declares which installed packages are active | a-project-declares-which-installed-packages-are-active |
+| 4 | a-record-ends-with-its-state-in-upper-case | A record carrying a state line ends its filename with the state in upper case | a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case |
+| 5 | a-record-list-is-a-table | A printed list of records is formatted as a table | a-printed-list-of-records-is-formatted-as-a-table |
+| 6 | actuation-gate-options-or-chat | The actuation gate offers candidate actuations as options | the-actuation-gate-offers-candidate-actuations-as-options |
+| 7 | attended-or-unattended-is-chosen-at-the-start | Attended or unattended is chosen when the work is started | attended-or-unattended-is-chosen-when-the-work-is-started |
+| 8 | dbe-as-design-tool | DBE is a design tool, not a testing ritual | dbe-is-a-design-tool-not-a-testing-ritual |
+| 9 | dbe-first-turn-test-file | The first DBE gate is the actuation and an unnamed assert | the-first-dbe-gate-is-the-actuation-and-an-unnamed-assert |
+| 10 | dbe-human-in-the-loop | The human deliberates the hinges, never the pass/fail bar | the-human-deliberates-the-hinges-never-the-pass-fail-bar |
+| 11 | hinge-cycle | The hinge cycle runs from actuation to naming | the-hinge-cycle-runs-from-actuation-to-naming |
+| 12 | loop-records | A loop record holds the cycles through the loop, one file per feature | a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature |
+| 13 | never-ask-to-start-test-first | Never ask whether to start a task test-first | never-ask-whether-to-start-a-task-test-first |
+| 14 | no-green-on-arrival-tests | Drop an outcome whose test is green on arrival | drop-an-outcome-whose-test-is-green-on-arrival |
+| 15 | one-outcome-at-a-time-name-via-options | Advance one outcome at a time, stop at every gate in attended work, and name via options | advance-one-outcome-at-a-time-stop-at-every-gate-in-attended-work-and-name-via-options |
+| 16 | show-feature-test-output-after-implementation-hinge | After any implementation hinge, show the test output for the current feature | after-any-implementation-hinge-show-the-test-output-for-the-current-feature |
+| 17 | tdd-designs-coverage-prevents-never-break-implementation | TDD designs behavior, coverage prevents regression, and neither breaks an implementation | tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation |
+| 18 | the-design-of-a-test-waits-at-the-hinges-including-coverage | The design of a test waits at the hinges, coverage included | the-design-of-a-test-waits-at-the-hinges-coverage-included |
+| 19 | the-implementation-hinge-offers-the-red-green-refactor-cycle | The implementation hinge offers the working implementation or the red-green-refactor cycle | the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle |
+| 20 | what-each-hinge-displays | Each hinge displays the actuation as its anchor, and the contexts once | each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once |
+| 21 | a-record-takes-category-tags | A record may be categorized with square-bracket tags | a-record-may-be-categorized-with-square-bracket-tags |
+| 22 | a-suspension-is-a-log-entry | A suspension is a log entry tagged `[suspended]`, and nothing is moved | a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved |
+| 23 | a-vocabulary-entry-says-what-a-term-means-not-what-it-was | A vocabulary entry says what a term means, not what it was or where to read more | a-vocabulary-entry-says-what-a-term-means-not-what-it-was-or-where-to-read-more |
+| 24 | an-item-takes-a-log-entry | An item takes a log entry on creation, on each settled resolution, and on a change of state | an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state |
+| 25 | announce-waytide-at-session-start | The harness announces Waytide's installation, and the agent never prints the notice | the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice |
+| 26 | ask-at-once-when-a-preference-is-expressed | Ask at once when the engineer expresses a preference | ask-at-once-when-the-engineer-expresses-a-preference |
+| 27 | decision-log-convention | The log holds one file per decision, with a one-line title | the-log-holds-one-file-per-decision-with-a-one-line-title |
+| 28 | downstream-work-is-never-offered | Work in a downstream project is never offered, and its pending state is not reported | work-in-a-downstream-project-is-never-offered-and-its-pending-state-is-not-reported |
+| 29 | file-names-use-iso8601-utc-prefix | Dated artifacts take an ISO 8601 UTC datetime prefix, and system rules do not | dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not |
+| 30 | implementation-lifecycle | An implementation runs on a branch to a declared end | an-implementation-runs-on-a-branch-to-a-declared-end |
+| 31 | implementation-records-take-a-log-entry | An implementation record takes a log entry, and the last one depends on the merge | an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge |
+| 32 | implementations-convention | The implementations directory records each implementation's lifecycle | the-implementations-directory-records-each-implementations-lifecycle |
+| 33 | initialization-rule | The startup display prints once per session | the-startup-display-prints-once-per-session |
+| 34 | items-convention | The items directory holds the project's items, one file per item | the-items-directory-holds-the-projects-items-one-file-per-item |
+| 35 | logs-directory | The logs directory groups the running records | the-logs-directory-groups-the-running-records |
+| 36 | migration-convention | The migration directory holds the plans for moving content across a repository boundary | the-migration-directory-holds-the-plans-for-moving-content-across-a-repository-boundary |
+| 37 | observations-convention | An observation is a working hypothesis whose one state, Stated, never changes | an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes |
+| 38 | package-dependency-heading | A design section documenting a package dependency is titled "Package Dependency" | a-design-section-documenting-a-package-dependency-is-titled-package-dependency |
+| 39 | plans-no-code-samples | An item that sequences work contains no code samples | an-item-that-sequences-work-contains-no-code-samples |
+| 40 | present-every-prompt-through-askuserquestion | Present every prompt to the engineer through the selection UI | present-every-prompt-to-the-engineer-through-the-selection-ui |
+| 41 | project-context-lives-in-the-committed-artifacts | A project's durable context lives in its committed artifacts | a-projects-durable-context-lives-in-its-committed-artifacts |
+| 42 | prose-is-not-hard-wrapped | A paragraph is one line, and the reader's editor wraps it | a-paragraph-is-one-line-and-the-readers-editor-wraps-it |
+| 43 | record-rule-authorship-in-a-footer | Record a rule's authorship in a provenance footer | record-a-rules-authorship-in-a-provenance-footer |
+| 44 | record-title-date-format | A date in a record's title takes the day, the date, and the 24-hour time | a-date-in-a-records-title-takes-the-day-the-date-and-the-24-hour-time |
+| 45 | rules-convention | Binding rules live in the installed packages and the project's own rules directory | binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory |
+| 46 | rules-establish-a-mindset-purpose-over-category | A rule's purpose is not confined to its category | a-rules-purpose-is-not-confined-to-its-category |
+| 47 | status-report-format | A status report prints a fixed whole-project report | a-status-report-prints-a-fixed-whole-project-report |
+| 48 | the-log-never-says-undone-work-was-done | The log records why work was abandoned, and never says undone work was done | the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done |
+| 49 | vocabulary-convention | A package's vocabulary holds its terms, and the most specific one decides | a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides |
+| 50 | work-sessions-convention | A work session record is the narrative of one work session | a-work-session-record-is-the-narrative-of-one-work-session |
+| 51 | a-sha-names-the-work-rather-than-the-commit | A commit's SHA refers to the work the commit carries | a-commits-sha-refers-to-the-work-the-commit-carries |
+| 52 | commit-message-widths | A commit message's subject stops at 50 characters and its body wraps at 72 | a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 |
+| 53 | commit-says-task-is-done-not-mark-done | A commit message states that a task is done, never that it is marked done | a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done |
+| 54 | no-claude-coauthor | A commit carries no Claude co-author trailer | a-commit-carries-no-claude-co-author-trailer |
+| 55 | run-suite-before-commit | Run the test suite after changes, before considering whether to commit | run-the-test-suite-after-changes-before-considering-whether-to-commit |
+| 56 | subject-first-commit-messages | Write subject-first commit messages | write-subject-first-commit-messages |
+| 57 | ask-for-entry-time-or-omit-it | Where an entry carries no time, ask for one through the selection interface | where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface |
+| 58 | datetime-stamp-line | A journal entry carries a human-readable datetime line under its title | a-journal-entry-carries-a-human-readable-datetime-line-under-its-title |
+| 59 | identity-resolution-contract | The writer's identity resolves through a fixed override chain | the-writers-identity-resolves-through-a-fixed-override-chain |
+| 60 | journal-convention | The journal is the record the writer keeps | the-journal-is-the-record-the-writer-keeps |
+| 61 | journal-entries | Journal entries live in the writer's journal directory, one file per entry | journal-entries-live-in-the-writers-journal-directory-one-file-per-entry |
+| 62 | omit-body-when-same-as-title | Where an entry's body says the same thing as its title, keep the title alone | where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone |
+| 63 | the-journal-is-read-at-session-start | The journal is read at the start of a session, with the rules | the-journal-is-read-at-the-start-of-a-session-with-the-rules |
+| 64 | timeline-view | A timeline view lists every journal entry by its datetime | a-timeline-view-lists-every-journal-entry-by-its-datetime |
+| 65 | an-answer-is-a-list-and-prose-must-justify-itself | An answer is a list, and prose must justify itself | unchanged |
+| 66 | communicate-plainly-name-the-thing | Communicate plainly, and name the actual thing | communicate-plainly-and-name-the-actual-thing |
+| 67 | ete-declares-its-own-categories | ETE declares its own categories | unchanged |
+| 68 | waytide-keeps-its-word-where-the-ste-word-means-something-else | Waytide keeps its word where the STE word means something else | unchanged |
+| 69 | waytide-prose-conforms-to-the-ste-writing-rules | Waytide prose conforms to the STE writing rules | unchanged |
+| 70 | expand-abbreviations-on-first-use | Expand an abbreviation on first use | expand-an-abbreviation-on-first-use |
+| 71 | language-is-precise-here | Language is used precisely here, and words are load-bearing | language-is-used-precisely-here-and-words-are-load-bearing |
+| 72 | lead-with-a-summary-before-details | Lead with a summary, then the details | lead-with-a-summary-then-the-details |
+| 73 | name-literally-not-by-analogy | Name concepts literally, not by analogy, code, or jargon | name-concepts-literally-not-by-analogy-code-or-jargon |
+| 74 | no-slang | No slang | unchanged |
+| 75 | solubility | Solubility is how readily a unit dissolves into the reader's understanding | solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding |
+| 76 | a-high-level-context-names-a-behavior-not-a-method | A high-level context names a behavior, never a method | a-high-level-context-names-a-behavior-never-a-method |
+| 77 | a-suspended-test-file-is-named-with-a-leading-underscore | A test file named with a leading underscore is suspended | a-test-file-named-with-a-leading-underscore-is-suspended |
+| 78 | assert-error-message-only-as-sole-discriminator | Assert an error message only when it alone confirms the error | assert-an-error-message-only-when-it-alone-confirms-the-error |
+| 79 | context-only-for-local-instrumentation | A test takes a context only when its outcome needs local instrumentation | a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation |
+| 80 | control-prefix-test-vars | A control-built test value takes the control_ prefix | a-control-built-test-value-takes-the-control-prefix |
+| 81 | control-string-value-starts-with-some | A control's string value starts with "some" | a-controls-string-value-starts-with-some |
+| 82 | controls-not-factories-fixtures-arrange | Test values are controls, never factories, fixtures, or arrange | test-values-are-controls-never-factories-fixtures-or-arrange |
+| 83 | do-not-test-the-platform | Do not test the platform | unchanged |
+| 84 | error-test-named-fails-condition-is-context | An error test is named Fails, and its condition is a context | an-error-test-is-named-fails-and-its-condition-is-a-context |
+| 85 | normal-path-and-exceptional-paths-are-separate-files | A feature's normal path and its exceptional paths are separate test files | a-features-normal-path-and-its-exceptional-paths-are-separate-test-files |
+| 86 | precondition-documents-deciding-factors-and-reads-inline | A precondition names a test's deciding factors and reads inline | a-precondition-names-a-tests-deciding-factors-and-reads-inline |
+| 87 | predicate-context-name | A predicate method's test context is named for the predicate | a-predicate-methods-test-context-is-named-for-the-predicate |
+| 88 | single-case-test-named-for-feature | A single-case feature is one test file named for the feature | a-single-case-feature-is-one-test-file-named-for-the-feature |
+| 89 | tdd-test-structure | A test actuates its concern once, and asserts each outcome in its own context | a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context |
+| 90 | test-block-is-assertion-only | A test block holds only the assertion | a-test-block-holds-only-the-assertion |
+| 91 | test-context-nesting-mirrors-folders | Test context nesting mirrors the folder hierarchy | test-context-nesting-mirrors-the-folder-hierarchy |
+| 92 | test-name-is-prefix | Start a test name with "Is" only for a value-equals-comparator assertion | start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion |
+| 93 | test-report-format | A test report classifies the suite and prints its context hierarchy | a-test-report-classifies-the-suite-and-prints-its-context-hierarchy |
+| 94 | test-tree-command | The test tree command prints the suite's context tree | the-test-tree-command-prints-the-suites-context-tree |
+| 95 | tests-are-automated-or-interactive | Tests are automated or interactive, and only the automated run before a commit | tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit |
+| 96 | the-next-version-is-chosen-by-the-engineer | The next version is put to the engineer, never decided by the agent | the-next-version-is-put-to-the-engineer-never-decided-by-the-agent |
+| 97 | version-scheme | A version is semver, optionally prefixed by a product generation number | a-version-is-semver-optionally-prefixed-by-a-product-generation-number |
+
+The engineer reviews this table and sends back any title to change.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4513,3 +4619,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:08:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:19:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:28:43 PM PT
