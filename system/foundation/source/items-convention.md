@@ -32,7 +32,7 @@
 
 ## The shape
 
-- **One file per item**, named by the ISO-8601-UTC prefix (see the file-names rule), ending with its state in upper case (see the a-record-ends-with-its-state-in-upper-case rule).
+- **One file per item**, named by the ISO-8601-UTC prefix (see the file-names rule), ending with its state in upper case (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
 - **Frontmatter-free markdown.** A `# <title>`, then the `**State:**` line, then the `**Tags:**` line, then whatever the item has to say.
 - **A provenance footer** ends the file (see the working-state-artifacts-carry-a-provenance-footer rule).
 - **A log entry** pairs with it on creation and on each change of state (see the an-item-takes-a-log-entry rule).
@@ -166,7 +166,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 Related:
 
 - the a-record-takes-category-tags rule — the tags that say what an item is
-- the a-record-ends-with-its-state-in-upper-case rule — the filename suffix
+- the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix
 - the an-item-takes-a-log-entry rule — the log entry an item takes
 - the observations-convention — an observation, which is an item and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
@@ -197,3 +197,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:27:15 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 11:27:49 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 11:13:06 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:44 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT

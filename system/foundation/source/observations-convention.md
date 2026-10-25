@@ -95,7 +95,7 @@ Related:
 
 - the items-convention — the eight states an observation does not take, and the state requirement it satisfies
 - the rules-convention — where a promoted observation's rule goes
-- the a-record-ends-with-its-state-in-upper-case rule — the `-STATED` filename suffix
+- the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
 - the decision-log-convention — the entry that records one
 
 ---
@@ -118,3 +118,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:23:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT

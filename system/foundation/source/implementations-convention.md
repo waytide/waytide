@@ -27,7 +27,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is added when the record reaches one of the words, not when the work starts. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
 
-**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-ends-with-its-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
+**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
 
 **The state words both kinds take:**
 
@@ -107,7 +107,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 6. Do not add a line to say the work is in progress.
 7. Do not invent a state word.
 8. Unlike an item, an implementation carries no state from the moment it is written. The session-start notice reports an open implementation.
-9. An open record takes no filename suffix (see the a-record-ends-with-its-state-in-upper-case rule).
+9. An open record takes no filename suffix (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
 10. The state words both kinds take are these.
     - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
     - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
@@ -165,7 +165,7 @@ Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
 - the a-record-takes-category-tags rule — the tags, and what a reserved tag is
-- the a-record-ends-with-its-state-in-upper-case rule — why an open record takes no suffix
+- the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
 - the items-convention — the other record that carries a state, and which has no in-progress absence
@@ -179,3 +179,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:38:37 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
