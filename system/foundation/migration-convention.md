@@ -20,4 +20,4 @@ Related:
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled item or be mechanical enough to need none
 - the file-names rule — the filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule
-- the logs-directory rule — the running records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs
+- the the-logs-directory-groups-the-running-records rule — the running records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs

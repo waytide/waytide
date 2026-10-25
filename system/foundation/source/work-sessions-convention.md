@@ -118,7 +118,7 @@ Related:
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log rule
 - the observations rule
-- the logs-directory rule — the running records this sits among
+- the the-logs-directory-groups-the-running-records rule — the running records this sits among
 - the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw
 
 ---
@@ -163,3 +163,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:57:38 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT

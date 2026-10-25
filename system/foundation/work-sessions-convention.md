@@ -52,5 +52,5 @@ Related:
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log rule
 - the observations rule
-- the logs-directory rule — the running records this sits among
+- the the-logs-directory-groups-the-running-records rule — the running records this sits among
 - the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw

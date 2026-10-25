@@ -73,7 +73,7 @@ Related:
 - the DBE vocabulary — loop, hinge, gate, deliberation
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
 - foundation's file-name prefix and decision-log conventions
-- `foundation`'s logs-directory rule — the running records this sits among, which names this directory without requiring anything of it
+- `foundation`'s the-logs-directory-groups-the-running-records rule — the running records this sits among, which names this directory without requiring anything of it
 
 ---
 
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:55 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT

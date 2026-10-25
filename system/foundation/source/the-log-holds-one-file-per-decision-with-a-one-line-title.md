@@ -74,7 +74,7 @@ Related:
 - the rules-convention — a new rule pairs with a log entry
 - the observations-convention — its recording step logs too
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
-- the logs-directory rule — the running records this sits among
+- the the-logs-directory-groups-the-running-records rule — the running records this sits among
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line an entry carries, in the one form
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the tag an engineer's decision carries
 
@@ -101,3 +101,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:11:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
