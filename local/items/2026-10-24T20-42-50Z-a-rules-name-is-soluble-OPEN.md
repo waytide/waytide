@@ -9,10 +9,11 @@
 
 **Not yet settled:**
 - what makes a name soluble, and how it would be judged
-- whether the rule's title, as well as its name, is in scope
 - how a rename reaches the citations in other rules and the copies already installed in consuming projects
 
 **Added 2026-10-25: the engineer made clarifying the rule names an increment of the rule-reduction experiment's flattening phase.** The work is done on the phase branch `experiment/worktree/rule-reduction.flattening`, beside the compressed rule texts, and the experiment record tracks it there.
+
+**Added 2026-10-25: titles are in scope, since a rule's name is derived from its title.** The engineer settled it. A rule's title is the `# ` heading on its first line, and its name is the file name every citation uses. So the work clarifies the title, and the name follows from it, rather than the name being clarified on its own.
 
 ## History
 
@@ -22,3 +23,4 @@ As the engineer first stated it: "Idea: Make the rule names soluble"
 
 Authored by Scott Bellware on Sat Oct 24 2026 at 1:42:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
