@@ -2,7 +2,7 @@
 
 A `test` block holds **exactly one assertion** and nothing else (per the test-block-is-assertion-only rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
-Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the error-test-named-fails-condition-is-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
+Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
 **The `When` exception is narrow — a *leading* `When …` only.** A context named `"When the file is empty"` stays a context (with `test "Fails"` inside), even though it holds nothing but the test. But an **outcome name that merely contains "when"** — e.g. `"Created when the file is accepted"`, `"Located when the response carries a location"` — is *not* a condition context. It is an outcome name, and it is written as a directly-named `test "Created when the file is accepted" do …`.
 

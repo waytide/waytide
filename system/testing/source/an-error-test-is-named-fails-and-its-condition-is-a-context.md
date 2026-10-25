@@ -1,4 +1,4 @@
-# An error test is named "Fails" (or "Doesn't fail"). Its condition is promoted to a context
+# An error test is named Fails, and its condition is a context
 
 When a test's assertion is that the actuation raises an error (an `assert_raises`), the `test` block's name is **"Fails"** — the actuation fails. The complementary assertion, that the actuation does **not** raise, is named **"Doesn't fail"**. The **condition** under which the actuation fails (or doesn't) is **not** part of the test name. It is promoted to a **`context`** that encloses the test and names that condition.
 
@@ -45,6 +45,8 @@ end
 
 Until 2026-10-24 an error test's context was called the deliberate exception to the context-only-for-local-instrumentation rule's ban on a context that holds only a test. That rule now warns rather than bans, and does not warn of a leading `When …` context, so there is no exception to make.
 
+Until Sun Oct 25 2026 this rule was named error-test-named-fails-condition-is-context and titled "An error test is named "Fails" (or "Doesn't fail"). Its condition is promoted to a context".
+
 Related:
 
 - the test-name-is-prefix rule
@@ -62,3 +64,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT

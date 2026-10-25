@@ -6,7 +6,7 @@ The mechanical reason is the actuation. A test file actuates the concern **once*
 
 An exceptional path cannot share that actuation. The actuation is inside an `assert_raises` and produces no result to observe. The outcomes of the normal-path actuation are not established when it runs. Two actuations in one file are two sets of controls sitting side by side, each inert to the other.
 
-**Naming follows the existing file conventions.** Where a feature has a normal path and one or more exceptional paths, the case set is larger than one. So the feature takes a folder, and each file is named for the case it distinguishes — see the single-case-test-named-for-feature rule. The normal-path file is named for the feature, and each exceptional-path file for the condition under which the actuation fails. The condition is then also promoted to a `context` inside that file, with the test named `Fails` (see the error-test-named-fails-condition-is-context rule).
+**Naming follows the existing file conventions.** Where a feature has a normal path and one or more exceptional paths, the case set is larger than one. So the feature takes a folder, and each file is named for the case it distinguishes — see the single-case-test-named-for-feature rule. The normal-path file is named for the feature, and each exceptional-path file for the condition under which the actuation fails. The condition is then also promoted to a `context` inside that file, with the test named `Fails` (see the an-error-test-is-named-fails-and-its-condition-is-a-context rule).
 
 **What belongs in an exceptional-path file is that one exceptional case.** The normal path is proven in its own file and is not re-proven here. Where such a file's controls include values that also appear on the normal path, they are there to make the failure **discriminating**. So the raised error can be told from a different failure of the same class — not to establish the normal path a second time.
 
@@ -28,7 +28,7 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 10. The normal-path file is named for the feature.
 11. Each exceptional-path file is named for the condition under which the actuation fails.
 12. That condition is also promoted to a `context` inside the exceptional-path file.
-13. The test in that context is named `Fails`. See the error-test-named-fails-condition-is-context rule.
+13. The test in that context is named `Fails`. See the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
 14. An exceptional-path file holds only its one exceptional case.
 15. An exceptional-path file does not re-prove the normal path.
 16. Controls in an exceptional-path file that also appear on the normal path serve only to make the failure discriminating.
@@ -40,7 +40,7 @@ Related:
 
 - the tdd-test-structure rule — actuate once at the top
 - the single-case-test-named-for-feature rule — when a folder is warranted and how files are named
-- the error-test-named-fails-condition-is-context rule — the condition context and the `Fails` name
+- the an-error-test-is-named-fails-and-its-condition-is-a-context rule — the condition context and the `Fails` name
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
 - the `language` package's vocabulary
 - where the **normal path** term and its exceptional-case counterpart are settled
@@ -60,3 +60,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT

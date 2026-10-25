@@ -2,7 +2,7 @@
 
 A `test` block holds **exactly one assertion** and nothing else (per the test-block-is-assertion-only rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
-Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the error-test-named-fails-condition-is-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
+Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
 **The `When` exception is narrow — a *leading* `When …` only.** A context named `"When the file is empty"` stays a context (with `test "Fails"` inside), even though it holds nothing but the test. But an **outcome name that merely contains "when"** — e.g. `"Created when the file is accepted"`, `"Located when the response carries a location"` — is *not* a condition context. It is an outcome name, and it is written as a directly-named `test "Created when the file is accepted" do …`.
 
@@ -49,7 +49,7 @@ On finding a context that holds only a test, warn as above, unless the local rul
 3. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
 4. Local instrumentation means an explaining variable of the outcome's own.
 5. Local instrumentation also means a `comment` or `detail` specific to that outcome.
-6. Also use a named `context` where it is a leading `When …` condition, promoted to a context per the error-test-named-fails-condition-is-context rule.
+6. Also use a named `context` where it is a leading `When …` condition, promoted to a context per the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
 7. The `When` exception covers only a leading `When …`.
 8. A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test.
 9. An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"` and `"Located when the response carries a location"`.
@@ -112,3 +112,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 4:49:18 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT

@@ -1,4 +1,4 @@
-# An error test is named "Fails" (or "Doesn't fail"). Its condition is promoted to a context
+# An error test is named Fails, and its condition is a context
 
 When a test's assertion is that the actuation raises an error (an `assert_raises`), the `test` block's name is **"Fails"** — the actuation fails. The complementary assertion, that the actuation does **not** raise, is named **"Doesn't fail"**. The **condition** under which the actuation fails (or doesn't) is **not** part of the test name. It is promoted to a **`context`** that encloses the test and names that condition.
 
