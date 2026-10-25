@@ -1,4 +1,4 @@
-# A rule's purpose is not confined to its category — many rules establish a mindset
+# A rule's purpose is not confined to its category
 
 A rule's package — `language`, `testing`, `git`, and the others — names the **surface** a rule acts on (words, commits, tests, code), not the **purpose** it serves. A large share of rules exist to establish a **mental stance**, which is a way of thinking about the code and the work. They do not exist to standardize a mechanic. Purpose is not confined to category. Two rules in different packages can be doing the same work, and a rule's real justification is often not visible from its package.
 
@@ -33,6 +33,10 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 18. **Why:** Read as local conventions, these rules look like an arbitrary do-this-not-that list. Naming their purpose keeps them coherent and prevents contradictory rules from accreting in other packages.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named rules-establish-a-mindset-purpose-over-category and titled "A rule's purpose is not confined to its category — many rules establish a mindset".
+
 Related:
 
 - the subject-first commit-message rule in the `git` package
@@ -52,3 +56,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:50:46 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:20 PM PT
