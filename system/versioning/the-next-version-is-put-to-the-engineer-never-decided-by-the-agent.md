@@ -10,7 +10,7 @@ Minor  → 2.2.4.0   capability added, existing use unaffected
 Major  → 2.3.0.0   existing use may not survive
 ```
 
-**The generation is not among the candidates.** It is a declaration about the product line rather than a reading of the change. So it is not a release-time decision at all. See the version-scheme rule.
+**The generation is not among the candidates.** It is a declaration about the product line rather than a reading of the change. So it is not a release-time decision at all. See the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule.
 
 **Why the agent does not decide.** Which segment increases is a claim about what the change means **to the people using the package**. It says whether their code still works, whether they have to read anything, and whether they have to change anything. That is not derivable from the diff.
 
@@ -28,6 +28,6 @@ Offering the candidates rather than asking for a version outright is what keeps 
 
 Related:
 
-- the version-scheme rule — what the segments mean and why the generation is excluded
+- the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule — what the segments mean and why the generation is excluded
 - the `foundation` present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the `git` write-subject-first-commit-messages rule — the commit that records the change, `Package version is increased from X to Y`

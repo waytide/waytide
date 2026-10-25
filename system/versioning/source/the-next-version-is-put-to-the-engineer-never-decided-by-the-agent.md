@@ -10,7 +10,7 @@ Minor  → 2.2.4.0   capability added, existing use unaffected
 Major  → 2.3.0.0   existing use may not survive
 ```
 
-**The generation is not among the candidates.** It is a declaration about the product line rather than a reading of the change. So it is not a release-time decision at all. See the version-scheme rule.
+**The generation is not among the candidates.** It is a declaration about the product line rather than a reading of the change. So it is not a release-time decision at all. See the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule.
 
 **Why the agent does not decide.** Which segment increases is a claim about what the change means **to the people using the package**. It says whether their code still works, whether they have to read anything, and whether they have to change anything. That is not derivable from the diff.
 
@@ -43,7 +43,7 @@ Major  → 2.3.0.0   existing use may not survive
 
 7. At a release, read the current version first.
 8. Offer patch, minor, and major as the options.
-9. The generation is not among the candidates. It is not a release-time decision. See the version-scheme rule.
+9. The generation is not among the candidates. It is not a release-time decision. See the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule.
 10. Each option states the compatibility claim it makes, not only the number.
 11. The resulting version is shown too, since it is what will be written and committed.
 12. Offer candidates rather than asking the engineer for a version outright.
@@ -56,7 +56,7 @@ Until Sun Oct 25 2026 this rule was named the-next-version-is-chosen-by-the-engi
 
 Related:
 
-- the version-scheme rule — what the segments mean and why the generation is excluded
+- the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule — what the segments mean and why the generation is excluded
 - the `foundation` present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the `git` write-subject-first-commit-messages rule — the commit that records the change, `Package version is increased from X to Y`
 
@@ -76,3 +76,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:48 PM PT

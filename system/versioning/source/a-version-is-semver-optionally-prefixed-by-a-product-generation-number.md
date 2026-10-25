@@ -56,6 +56,10 @@ Stated that way, the segment a change increases is **read off what the change do
 19. A project without a generation never acquires one at a release.
 20. **Why:** semver answers the upgrade-compatibility question and is kept unchanged. The generation states a product change that no analysis of a change can produce. Keeping it separate stops it reading as a compatibility break.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named version-scheme.
+
 Related:
 
 - the the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule — who makes the decision and how it is put
@@ -78,3 +82,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:48 PM PT
