@@ -1,4 +1,4 @@
-# A date in a record's title is written `Mon Jan 1 2026 18:06`
+# A date in a record's title takes the day, the date, and the 24-hour time
 
 A working-state record's **title** may carry a date, as the work session record's `# Work Session — <name> (<date>)` does. In that record and any other whose title is dated, the date is written as:
 

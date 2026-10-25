@@ -1,4 +1,4 @@
-# A date in a record's title is written `Mon Jan 1 2026 18:06`
+# A date in a record's title takes the day, the date, and the 24-hour time
 
 A working-state record's **title** may carry a date, as the work session record's `# Work Session — <name> (<date>)` does. In that record and any other whose title is dated, the date is written as:
 
@@ -44,6 +44,10 @@ Mon Jan 1 2026 18:06
 15. The exception is narrow and covers only the title's date.
 16. **Why:** A title is read first and is how a record is referred to, so its date must be compact yet distinguish records written hours apart. A title appears once per file, so nothing collides with it, and the filename already carries the exact UTC instant.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named record-title-date-format and titled "A date in a record's title is written `Mon Jan 1 2026 18:06`".
+
 Related:
 
 - the file-names rule — the UTC filename prefix
@@ -67,3 +71,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:10 PM PT
