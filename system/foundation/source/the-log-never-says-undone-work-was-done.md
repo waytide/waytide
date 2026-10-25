@@ -57,7 +57,7 @@ Related:
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's shape, and when it takes a body
 - the implementation-records-take-a-log-entry rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same prohibition for an item, stated as the mood an entry is written in
-- the implementation-lifecycle rule — the branch deletion that leaves the log as the only durable trace
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the branch deletion that leaves the log as the only durable trace
 
 ---
 
@@ -66,3 +66,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

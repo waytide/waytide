@@ -70,7 +70,7 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
   "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state. An implementation is never
-# left silently open (the implementation-lifecycle rule), but nothing otherwise
+# left silently open (the an-implementation-runs-on-a-branch-to-a-declared-end rule), but nothing otherwise
 # brings an open one to attention: the working directories under waytide/ are not read at session
 # start, and work done in a worktree leaves no trace in the main working tree at
 # all — it stays on the upstream branch, so even the branch name gives nothing away.

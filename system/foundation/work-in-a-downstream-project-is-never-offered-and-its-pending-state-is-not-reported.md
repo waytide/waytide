@@ -22,7 +22,7 @@ A change to a package leaves every project that installed it holding the previou
 
 **Why:** the engineer decides when other repositories move, and that decision is not readable from what a package change was. A refresh writes merge commits into repositories they may not be working in this week, against rules that will be read at the start of every session there. The engineer is weighing that. The agent is weighing a diff it has just produced.
 
-An agent that names the pending state presses toward a change across repositories at the moment its own view of the work is narrowest. That is the same failure the implementation-lifecycle rule bars when it forbids the agent raising the end of an experiment, reached through a different act.
+An agent that names the pending state presses toward a change across repositories at the moment its own view of the work is narrowest. That is the same failure the an-implementation-runs-on-a-branch-to-a-declared-end rule bars when it forbids the agent raising the end of an experiment, reached through a different act.
 
 **A report is the place this fails**, rather than a question, which is why the rule reaches reporting at all. An agent instructed not to ask will still close its summary with the state of everything it did not do. The engineer then answers a prompt nobody phrased as one.
 
@@ -32,6 +32,6 @@ Carry out any of that when the engineer asks for it, and report what happened on
 
 Related:
 
-- the implementation-lifecycle rule — the agent never raising the end of an experiment, the same failure through a different act
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the agent never raising the end of an experiment, the same failure through a different act
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice, which is the harness's and reports only the project the session is in
 - this package's README — the refresh procedure itself, which is run on the engineer's instruction

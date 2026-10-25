@@ -1,4 +1,4 @@
-# An implementation runs on a branch, from a working location chosen at the start, to a declared end
+# An implementation runs on a branch to a declared end
 
 - **Solubility:** 21
 - **Original rank:** 6 of 106

@@ -34,7 +34,7 @@ BRANCH SWITCHED
 ## What this does not cover
 
 - **Creating a branch** is a switch when the working tree moves to it. `git switch -c` prints the block, with `from` naming the base.
-- **A worktree** adds a working directory rather than moving this one. No switch occurs here, so no block is printed. The implementation-lifecycle rule governs that case.
+- **A worktree** adds a working directory rather than moving this one. No switch occurs here, so no block is printed. The an-implementation-runs-on-a-branch-to-a-declared-end rule governs that case.
 - **A merge, a commit, or a push** does not move the working tree. No block.
 
 **Why:** an agent reports what it did, and not where it stood. So a branch switch is the one operation whose effect is invisible in every later report. The engineer's own record of this session is the case. The agent switched to a parent experiment branch to edit a file, and stayed there after committing. The next instruction was read against a branch neither party had named. A block that cannot be scrolled past removes the class of error rather than one instance of it.
@@ -83,7 +83,7 @@ BRANCH SWITCHED
 2. `git switch -c` prints the block, with `from` naming the base.
 3. A worktree adds a working directory rather than moving this one.
 4. Print no block for a worktree.
-5. The implementation-lifecycle rule governs the worktree case.
+5. The an-implementation-runs-on-a-branch-to-a-declared-end rule governs the worktree case.
 6. A merge, a commit, or a push does not move the working tree.
 7. Print no block for a merge, a commit, or a push.
 8. **Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
@@ -91,7 +91,7 @@ BRANCH SWITCHED
 
 Related:
 
-- the `foundation` implementation-lifecycle rule — which require the working tree to end on the upstream branch, and which the block makes checkable
+- the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
 - the run-suite-before-commit rule — the other thing confirmed before work is recorded
 
 ---
@@ -105,3 +105,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:14 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:12:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:13:21 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:11 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

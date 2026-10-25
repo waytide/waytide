@@ -13,7 +13,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 **A deleted file and an unmerged branch are not the same case.** A file removed from `master` sits in `master`'s own history, and a reader reaches it with `git log --` and a path. That is the ordinary case this system relies on everywhere it says a reader uses git.
 
-**An unmerged branch is deleted on confirmation**, which the implementation-lifecycle rule requires before the branch goes. A record that existed only there is reachable afterward from a reflog entry or a dangling object, on one machine, until it is garbage collected. That is not a record.
+**An unmerged branch is deleted on confirmation**, which the an-implementation-runs-on-a-branch-to-a-declared-end rule requires before the branch goes. A record that existed only there is reachable afterward from a reflog entry or a dangling object, on one machine, until it is garbage collected. That is not a record.
 
 **So the states that keep the record as evidence are exactly the states that can lose it.** The implementations-convention says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
 
@@ -21,7 +21,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 ## What is already required, and not restated
 
-**An affirmed experiment copies its own log into the decision log.** The implementation-lifecycle rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
+**An affirmed experiment copies its own log into the decision log.** The an-implementation-runs-on-a-branch-to-a-declared-end rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
 
 **A feature has no affirmation and no log copy.** It is built to an intent rather than a question, so a completed feature's marker is the whole of what its conclusion writes.
 
@@ -65,7 +65,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 ## What is already required, and not restated
 
-1. An affirmed experiment still copies its own log into the decision log, as implementation-lifecycle requires.
+1. An affirmed experiment still copies its own log into the decision log, as an-implementation-runs-on-a-branch-to-a-declared-end requires.
 2. The summary marker sits beside those copied entries. It does not replace them.
 3. A completed feature has no affirmation and no log copy. Its marker is the whole of what its conclusion writes.
 
@@ -91,7 +91,7 @@ Until 2026-10-25 the concluding entry's form was said to be decided by whether t
 Related:
 
 - the implementations-convention — the record, the two kinds, and the state words each takes
-- the implementation-lifecycle rule — the merge, and the branch deletion that makes an unmerged record unreachable
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the merge, and the branch deletion that makes an unmerged record unreachable
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form, and the general trigger this makes specific
 
@@ -107,3 +107,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:27:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

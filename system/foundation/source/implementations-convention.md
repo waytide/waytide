@@ -163,7 +163,7 @@ Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the conclu
 
 Related:
 
-- the implementation-lifecycle rule — the lifecycle this records
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags, and what a reserved tag is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
@@ -183,3 +183,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

@@ -1,4 +1,4 @@
-# An implementation runs on a branch, from a working location chosen at the start, to a declared end
+# An implementation runs on a branch to a declared end
 
 - **Solubility:** 21
 - **Original rank:** 6 of 106
@@ -238,6 +238,10 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 10. **Why:** an experiment and a feature share one lifecycle, and differ only where a question differs from an intent. Stated once, with six clauses conditioned on the tag, the difference shows directly.
 
 
+## History
+
+Until Sun Oct 25 2026 this rule was named implementation-lifecycle and titled "An implementation runs on a branch, from a working location chosen at the start, to a declared end".
+
 Related:
 
 - the implementations-convention — the record, the tags, and the state words
@@ -261,3 +265,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

@@ -4,9 +4,9 @@
 
 **So an experiment never publishes and a feature never publishes.** Neither is `master`.
 
-**A merge to some other branch does not release the hold.** An experiment's upstream branch is not always `master`, and a feature's is not either. Each may merge into another topic branch, and the foundation implementation-lifecycle rule says so. That merge concludes the work against its own upstream. It does not put the content on `master`, so it licenses no publish. The publish waits for `master`, however many merges that takes.
+**A merge to some other branch does not release the hold.** An experiment's upstream branch is not always `master`, and a feature's is not either. Each may merge into another topic branch, and the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule says so. That merge concludes the work against its own upstream. It does not put the content on `master`, so it licenses no publish. The publish waits for `master`, however many merges that takes.
 
-**The work also has to have concluded.** An experiment is **affirmed**, which the engineer declares. A feature is **completed**. A feature has no affirmation, being built to an intent rather than to a question, which the foundation implementation-lifecycle rule states. Reaching `master` and reaching a concluded state are two conditions, and a publish waits for the two.
+**The work also has to have concluded.** An experiment is **affirmed**, which the engineer declares. A feature is **completed**. A feature has no affirmation, being built to an intent rather than to a question, which the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule states. Reaching `master` and reaching a concluded state are two conditions, and a publish waits for the two.
 
 ## The publish is never offered
 
@@ -14,7 +14,7 @@
 
 **A publish named as a precondition is the same offer.** *This package cannot be installed anywhere until it is published* states a true fact and points at the publish. It makes the open state read as an obstacle. Do not write what the work is blocked on where the block is that the work has not concluded.
 
-**This is the publishing case of the foundation implementation-lifecycle rule's instruction** that the agent never raises the end of an experiment. An offer to publish reaches the same place by a longer route. A publish requires a merge, and a merge requires the ending.
+**This is the publishing case of the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule's instruction** that the agent never raises the end of an experiment. An offer to publish reaches the same place by a longer route. A publish requires a merge, and a merge requires the ending.
 
 **Report what is settled and what is open, and stop there.** The engineer signals when the work is done.
 
@@ -44,7 +44,7 @@ Related:
 
 - `CONTRIBUTING.md` — the publish procedure itself
 - the foundation work-in-a-downstream-project-is-never-offered-and-its-pending-state-is-not-reported rule — the same never-offer instruction for the act on the other side of a publish, refreshing the projects that installed the package
-- the foundation implementation-lifecycle rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of an experiment, and why a feature has no affirmation
+- the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of an experiment, and why a feature has no affirmation
 - the versioning package's the-next-version-is-chosen-by-the-engineer rule — which governs a consuming project that versions its packages, and not this one
 
 ---
@@ -56,3 +56,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:42:05 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT

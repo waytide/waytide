@@ -71,7 +71,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 
 Related:
 
-- the implementation-lifecycle rule — the lifecycle this records
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags, and what a reserved tag is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
