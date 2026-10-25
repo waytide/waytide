@@ -24,7 +24,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 **This reaches the commit subject the entry travels in**, which is the more-scanned surface. An entry corrected in the log while its commit subject carries the same claim is half corrected.
 
-**No wording template is fixed.** *X is recorded as an item — Open because …* and *X is realized* are forms already in use. What is required is the record named and the mood honest, and a template would be the over-prescription the plans-no-code-samples rule warns against.
+**No wording template is fixed.** *X is recorded as an item — Open because …* and *X is realized* are forms already in use. What is required is the record named and the mood honest, and a template would be the over-prescription the an-item-that-sequences-work-contains-no-code-samples rule warns against.
 
 ## What is not logged
 
@@ -133,3 +133,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
