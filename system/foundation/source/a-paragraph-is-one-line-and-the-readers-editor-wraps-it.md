@@ -1,4 +1,4 @@
-# A prose line is not hard-wrapped — a paragraph is one line, and the reader's editor wraps it
+# A paragraph is one line, and the reader's editor wraps it
 
 **A paragraph is written as a single line.** No newline is inserted to hold a column width. The reader's editor soft-wraps it to whatever width they have chosen, which is the width they can actually read at.
 
@@ -26,8 +26,36 @@
 
 Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, and the contents of a fenced code block on their own lines. Fold a list item's continuation into the item. Leave each line of the provenance footer alone.
 
+## Compressed
+
+1. Write each paragraph as a single line. This holds for vocabulary entries too.
+2. Insert no newline to hold a column width.
+3. Leave wrapping to the reader's editor, which soft-wraps to the width the reader has chosen.
+4. Re-wrap nothing after an edit.
+
+## What still stands on its own line
+
+1. A structural element is not prose and keeps its own line.
+2. Structural elements are a heading, a list item, a table row, a blockquote line, a horizontal rule, and every line inside a fenced code block.
+3. A list item is one line, however long.
+4. Fold a list item's continuation into the item rather than leaving it hanging under it.
+5. Each line of the provenance footer stays its own line: `Authored by …` and every `Changed by …` beneath it.
+6. Do not join the footer lines. They are a running history, and joining them would lose the record.
+7. **Why:** the reader should set the width they read at, and a hard wrap gives that decision to the writer. Rendered markdown looks the same either way. A hard wrap makes a one-word edit reflow the whole paragraph in the diff.
+
+## History
+
+Until Sun Oct 25 2026 this rule was named prose-is-not-hard-wrapped and titled "A prose line is not hard-wrapped — a paragraph is one line, and the reader's editor wraps it".
+
 Related:
 
 - the rules-convention — the rule format this governs the lines of
 - the vocabulary-convention — the vocabularies, whose entries are prose the same way
 - the record-rule-authorship-in-a-footer rule — the footer whose lines are exempt
+
+---
+
+Authored by Scott Bellware on Tue Aug 25 2026 at 9:37:58 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:59 PM PT
