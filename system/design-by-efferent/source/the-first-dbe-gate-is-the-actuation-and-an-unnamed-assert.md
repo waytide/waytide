@@ -111,7 +111,7 @@ Related:
 - the DBE-as-design-tool rule
 - the test-structure rule — the grown form
 - the folder-mirroring rule
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the actuation-gate options-or-chat rule
 - the `control_` test-variable prefix rule
 
@@ -131,3 +131,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT

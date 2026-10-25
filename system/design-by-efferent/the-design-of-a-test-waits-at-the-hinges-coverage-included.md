@@ -17,5 +17,5 @@ When adding coverage for behavior that already exists, all five are in play:
 Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the companion tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule

@@ -31,7 +31,7 @@ After making any code change, run the full test suite and confirm it passes **be
 Related:
 
 - the human-in-the-loop TDD rule
-- the what-each-hinge-displays rule — the implementation, the test, and its output shown at the implementation hinge
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule — the implementation, the test, and its output shown at the implementation hinge
 - — for a Ruby project — the `ext/ruby-lang` rule naming the suite's entry point and its verified output
 
 ---
@@ -48,3 +48,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT

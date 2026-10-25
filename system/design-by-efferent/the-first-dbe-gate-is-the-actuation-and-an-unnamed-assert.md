@@ -51,6 +51,6 @@ Related:
 - the DBE-as-design-tool rule
 - the test-structure rule — the grown form
 - the folder-mirroring rule
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the actuation-gate options-or-chat rule
 - the `control_` test-variable prefix rule

@@ -1,4 +1,4 @@
-# What each hinge displays: the actuation is the anchor, the contexts are shown once
+# Each hinge displays the actuation as its anchor, and the contexts once
 
 Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-runs-from-actuation-to-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 

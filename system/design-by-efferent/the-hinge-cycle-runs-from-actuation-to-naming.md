@@ -54,7 +54,7 @@ The controls are a hinge in their own right. A non-discriminating example assert
 
 At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way, beside `Explain`. Always offer the free-text option.
 
-What goes on screen at each hinge is the what-each-hinge-displays rule. That is the actuation as the anchor, and the contexts shown once.
+What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 
 Assemble and show the turn-one test after the three test hinges. Propose the implementation, then (on acceptance) write it and show the test + run result for the fourth. At the feature's close, settle the **naming** hinge — add each outcome's `context` via options, one outcome at a time.
 
@@ -62,7 +62,7 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 
 Related:
 
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the first-turn rule — the three test hinges produce turn one
 - the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
 - the the-actuation-gate-offers-candidate-actuations-as-options rule — the same mechanism at the first gate

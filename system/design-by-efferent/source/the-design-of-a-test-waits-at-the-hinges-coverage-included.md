@@ -44,7 +44,7 @@ Until Sun Oct 25 2026 this rule was named the-design-of-a-test-waits-at-the-hing
 Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the companion tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
 
 ---
@@ -62,3 +62,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT

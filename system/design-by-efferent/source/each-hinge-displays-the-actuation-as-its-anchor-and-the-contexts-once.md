@@ -1,4 +1,4 @@
-# What each hinge displays: the actuation is the anchor, the contexts are shown once
+# Each hinge displays the actuation as its anchor, and the contexts once
 
 Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-runs-from-actuation-to-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 
@@ -74,6 +74,10 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 4. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
 5. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named what-each-hinge-displays and titled "What each hinge displays: the actuation is the anchor, the contexts are shown once".
+
 Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
@@ -96,3 +100,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT

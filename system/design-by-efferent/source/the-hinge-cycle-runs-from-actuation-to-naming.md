@@ -54,7 +54,7 @@ The controls are a hinge in their own right. A non-discriminating example assert
 
 At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way, beside `Explain`. Always offer the free-text option.
 
-What goes on screen at each hinge is the what-each-hinge-displays rule. That is the actuation as the anchor, and the contexts shown once.
+What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 
 Assemble and show the turn-one test after the three test hinges. Propose the implementation, then (on acceptance) write it and show the test + run result for the fourth. At the feature's close, settle the **naming** hinge — add each outcome's `context` via options, one outcome at a time.
 
@@ -99,7 +99,7 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 35. Do not search for a second candidate to reach two.
 36. Do not manufacture a second candidate to avoid the appearance of a foregone conclusion.
 37. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
-38. What goes on screen at each hinge is the what-each-hinge-displays rule. That is the actuation as the anchor, and the contexts shown once.
+38. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 39. **Why:** Each hinge is a real design decision with its own failure mode. Bundling them collapses separate deliberations into one judgment on a fait accompli, the mean-bias failure. Separate hinges keep the human producing the answer, not ratifying it. The free-text option keeps a lone candidate from foreclosing an answer only the human can produce. The controls need their own hinge. A non-discriminating example asserts nothing, and a top-level constant cannot distinguish a full name from a final segment. A mis-describing name is a design error in its own right.
 
 ## The five are named before the first one is put
@@ -134,7 +134,7 @@ Until Sun Oct 25 2026 this rule was named hinge-cycle and titled "The initial-im
 
 Related:
 
-- the what-each-hinge-displays rule
+- the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the first-turn rule — the three test hinges produce turn one
 - the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
 - the the-actuation-gate-offers-candidate-actuations-as-options rule — the same mechanism at the first gate
@@ -165,3 +165,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
