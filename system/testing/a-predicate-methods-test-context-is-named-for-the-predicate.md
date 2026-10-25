@@ -11,5 +11,5 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule
-- the test-name-is-prefix rule
+- the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule

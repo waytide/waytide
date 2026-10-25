@@ -25,7 +25,7 @@ Until Sun Oct 25 2026 this rule was named predicate-context-name and titled "A p
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule
-- the test-name-is-prefix rule
+- the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule
 
 ---
@@ -38,3 +38,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:55 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT

@@ -49,7 +49,7 @@ Until Sun Oct 25 2026 this rule was named error-test-named-fails-condition-is-co
 
 Related:
 
-- the test-name-is-prefix rule
+- the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
 
 ---
@@ -65,3 +65,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT

@@ -22,5 +22,5 @@ Naming an error test for its behavior rather than a value comparison is fully co
 
 Related:
 
-- the test-name-is-prefix rule
+- the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule

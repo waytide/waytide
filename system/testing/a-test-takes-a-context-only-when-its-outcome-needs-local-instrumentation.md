@@ -46,4 +46,4 @@ Related:
 
 - the a-test-block-holds-only-the-assertion rule
 - the test-structure rule — the per-outcome context is for outcomes that instrument locally
-- the test-name-is-prefix rule
+- the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
