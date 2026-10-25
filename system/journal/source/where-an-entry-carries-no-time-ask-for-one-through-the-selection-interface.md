@@ -70,6 +70,10 @@ Name the file and write the datetime line to match the answer. Settle the date f
 8. Name the file and write the datetime line to match the answer.
 9. **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named ask-for-entry-time-or-omit-it.
+
 Related:
 
 - the journal-entries rule — the dating default that settles the date, and the filename stamp
@@ -88,3 +92,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:20 PM PT
