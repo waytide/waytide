@@ -24,6 +24,6 @@ Give the message, the stat, or the log entry when the question is about the comm
 
 Related:
 
-- the subject-first-commit-messages rule — what a commit message states, which is the mechanics this rule sets aside
+- the write-subject-first-commit-messages rule — what a commit message states, which is the mechanics this rule sets aside
 - the `foundation` the-log-holds-one-file-per-decision-with-a-one-line-title — the log entry that travels with a change, and which is not what a SHA reference asks for
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the answer's form, where this rule governs its subject

@@ -11,7 +11,7 @@ The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-sep
 
 **The state suffix is the one exception to the lower case.** A record carrying a canonical `**State:**` line ends its name with that state word in **upper case**, after a dash — `2026-08-05T19-37-06Z-ooda-terminology-REFUTED.md`. The case is what separates the state from the subject, so the name does not read as a record *about* something refuted. See the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule, which fixes the suffix and states what it costs. Nothing else about the name changes, and the prefix is untouched.
 
-**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
+**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
 
 That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix. A project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and items.
 
@@ -46,7 +46,7 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 ## What takes no prefix
 1. System rules do not take the prefix.
-2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
+2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
 4. A project's own `waytide/local/vocabulary.md` takes no prefix. It is a structural file, not a dated entry. See the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule.
 5. **Why:** The dated artifacts are a chronological record. One UTC-normalized, lexically-sortable prefix orders them in every directory, keeps their order within a day, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable conventions, each named for what it says.
@@ -76,3 +76,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT

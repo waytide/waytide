@@ -18,7 +18,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 **An entry never states an unbuilt direction in the indicative mood.** An item settles a direction and builds nothing. *The check runs at the engineer's first prompt* says the system does that, and while the record is `Open` or `Active` the system does not.
 
-**The pull comes from the commit conventions, and they are right about commits.** The `git` package's subject-first-commit-messages rule asks for the changed thing and its new state, in passive voice and indicative mood. Its a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule asks for the fact rather than the clerical gesture. Each is written for a change to the software.
+**The pull comes from the commit conventions, and they are right about commits.** The `git` package's write-subject-first-commit-messages rule asks for the changed thing and its new state, in passive voice and indicative mood. Its a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule asks for the fact rather than the clerical gesture. Each is written for a change to the software.
 
 **An item is not a change to the software.** The fact about it is that it was recorded, or that its state moved. Writing what it settles in that grammar states a fact that did not happen, which is the one thing those rules never license.
 
@@ -98,7 +98,7 @@ Related:
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory, and a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the a-work-session-record-is-the-narrative-of-one-work-session — the reconciliation prompt whose *the direction stands* answer is logged
-- the `git` package's subject-first-commit-messages and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
+- the `git` package's write-subject-first-commit-messages and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
 - the the-items-directory-holds-the-projects-items-one-file-per-item — the record whose states an entry reports, and which this rule's name predates
 
 ---
@@ -137,3 +137,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT

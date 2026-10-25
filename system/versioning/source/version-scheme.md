@@ -59,7 +59,7 @@ Stated that way, the segment a change increases is **read off what the change do
 Related:
 
 - the the-next-version-is-chosen-by-the-engineer rule — who makes the decision and how it is put
-- the `git` subject-first-commit-messages rule — the commit that records a version change
+- the `git` write-subject-first-commit-messages rule — the commit that records a version change
 - the `ext/ruby-lang` releasing-a-gem rule — where a Ruby project records its version
 
 ---
@@ -76,3 +76,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:20:41 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT

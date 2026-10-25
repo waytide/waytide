@@ -11,7 +11,7 @@ The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-sep
 
 **The state suffix is the one exception to the lower case.** A record carrying a canonical `**State:**` line ends its name with that state word in **upper case**, after a dash — `2026-08-05T19-37-06Z-ooda-terminology-REFUTED.md`. The case is what separates the state from the subject, so the name does not read as a record *about* something refuted. See the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule, which fixes the suffix and states what it costs. Nothing else about the name changes, and the prefix is untouched.
 
-**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
+**System rules do not take the prefix.** A rule in a distributed package (`foundation`, `language`, `testing`, …) is named by a dash-separated, lower-case name alone — `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`. A system rule is a curated, durable convention identified by *what it says*, not by when it was written. A datetime on it is noise and buries the rule's name.
 
 That is the distinction between the two kinds of rule: a **system rule** ships in a package and is timeless, so no prefix. A project's **own local rule** is a dated entry in that project's record, so it takes the prefix, like the project's log and items.
 

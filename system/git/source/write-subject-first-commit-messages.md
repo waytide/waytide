@@ -44,6 +44,8 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 This rule carried a *no 50-character limit* policy until 2026-08-18, licensing a first line as long as it needed. That policy is discontinued and the cap replaced it the same day.
 
+Until Sun Oct 25 2026 this rule was named subject-first-commit-messages.
+
 Related:
 
 - the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule
@@ -72,3 +74,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
