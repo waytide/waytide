@@ -12,7 +12,7 @@ Every time you prompt the engineer to make a selection, a decision, or an answer
 - **The second explanation is shorter rather than longer, and that is the point.** An engineer who selects `Explain` and then reaches for it again did not get what they needed from a normal-length explanation. Answering at that length repeats the attempt that already failed. The summary alone is a different cut at the question rather than more of the same. It is also the part the first explanation led with, so the engineer is given the one piece they may have read past.
 - **Say that in the option's own description**, which is the sentence the engineer actually reads: *…then display this selection prompt again*. Not **put this question again** — *put* in the sense of *pose* is archaic, and an engineer meets the everyday sense first, where it says nothing about what will happen. **Display** names the act plainly, and **selection prompt** names the thing being displayed rather than leaving *question* to be resolved against the explanation that just preceded it. **`Explain briefly`'s description says its own length** — *…in a sentence or two, then display this selection prompt again* — so the engineer knows they are asking for something shorter rather than the same answer a second time.
 - **It is offered on every prompt**, not only where the agent judges the question hard. That judgment is exactly what fails: an agent that could tell which of its questions were unclear would have written them clearly.
-- **It costs one of the four option slots.** The selection UI takes at most four, so a prompt carrying `Explain` has three for genuine candidates. Most prompts have two or three, so it rarely binds. Where one genuinely has four, drop the fourth rather than the `Explain` — an engineer who cannot read the question cannot weigh a fourth candidate either.
+- **It costs one of the four option slots.** The selection UI takes at most four, so a prompt carrying `Explain` has three for genuine candidates. Most prompts have two or three, so it rarely binds. **Where there are more than three, the question says so, and directs the engineer to `Explain` to see them all.** The first display carries three candidates and `Explain`, and the rest are not shown on it. The `Explain` answer gives every candidate. The prompt is then displayed again with the same three and `Explain briefly`, and a candidate beyond the third is chosen by naming it in the built-in **"Other"** answer.
 - **Where it appears is not the agent's to choose.** The harness renders the built-in free-text answer last, so `Explain` sits among the supplied options rather than beneath it.
 
 **The UI requires at least two options. Do not invent an option to reach the floor.** Present every genuine candidate the agent finds. Where it finds one, the second option is `Explain` — an account of that candidate.
@@ -25,7 +25,7 @@ The `Explain` option answers the failure the rest of the rule cannot reach — a
 
 Making it an option rather than a judgment call is the point. The agent is the party that cannot tell which of its own questions are unclear.
 
-**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine candidate, plus `Explain`. Never add a free-text option of your own.
+**How to apply:** whenever you would ask the engineer to decide or answer. That covers a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations. Use the selection UI, one option per genuine candidate up to three, plus `Explain`. Never add a free-text option of your own.
 
 Present the genuine candidates you find. Where there is one, put `Explain` beside it. Never invent an option to reach two, and never claim the one you found is the only one.
 
@@ -56,7 +56,7 @@ Word each option's own description *…then display this selection prompt again*
 17. Never word a description as *put this question again*.
 18. `Explain briefly`'s description states its length: *…in a sentence or two, then display this selection prompt again*.
 19. `Explain` takes one of the UI's four option slots, which leaves three for genuine candidates.
-20. Where there are four genuine candidates, drop the fourth rather than `Explain`.
+20. Where there are more than three genuine candidates, the question says so and directs the engineer to `Explain` to see them all. The first display carries three and `Explain`. The `Explain` answer gives every candidate. The prompt then shows the same three and `Explain briefly`, and a candidate beyond the third is chosen through the built-in "Other" answer.
 21. Place `Explain` among the supplied options. Its position relative to the built-in free-text answer is not yours to choose, since the harness renders that answer last.
 22. The UI requires at least two options. Do not invent an option to reach that floor.
 23. Present every genuine candidate you find.
@@ -66,6 +66,10 @@ Word each option's own description *…then display this selection prompt again*
 27. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
 28. Use plain prose only for statements, reports, and explanations that do not ask the engineer to choose.
 29. **Why:** The selection UI makes responsibility transfer legibly and consistently, and it already supplies free text. The two-option floor pushes toward the real decision rather than a single proposal for approval. `Explain` handles a well-formed prompt the engineer does not understand. It must be an option because you cannot tell which of your own questions are unclear.
+
+## History
+
+Until 2026-10-25 the rule said that where a prompt has four genuine candidates, the fourth is dropped to keep `Explain`, while it also said to present every genuine candidate the agent finds. The engineer settled that where there are more than three, the question says so and points to `Explain`, whose answer gives every candidate, and that a candidate beyond the third is chosen through the "Other" answer.
 
 Related:
 
@@ -93,3 +97,4 @@ Changed by Scott Bellware on Sun Aug 16 2026 at 1:04:10 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:27:43 PM PT
