@@ -84,7 +84,7 @@ Related:
 - the first-turn rule — the three test hinges produce turn one
 - the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule — the feature's test output that accompanies the implementation at hinge 4
 - the folder-mirroring rule
-- the test-block-is-assertion-only rule
+- the a-test-block-holds-only-the-assertion rule
 
 ---
 
@@ -102,3 +102,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT

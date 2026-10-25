@@ -1,6 +1,6 @@
 # A test takes a context only when its outcome needs local instrumentation
 
-A `test` block holds **exactly one assertion** and nothing else (per the test-block-is-assertion-only rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
+A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
@@ -44,7 +44,7 @@ On finding a context that holds only a test, warn as above, unless the local rul
 
 ## Compressed
 
-1. A `test` block holds exactly one assertion and nothing else, per the test-block-is-assertion-only rule.
+1. A `test` block holds exactly one assertion and nothing else, per the a-test-block-holds-only-the-assertion rule.
 2. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
 3. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
 4. Local instrumentation means an explaining variable of the outcome's own.
@@ -95,7 +95,7 @@ Until Sun Oct 25 2026 this rule was named context-only-for-local-instrumentation
 
 Related:
 
-- the test-block-is-assertion-only rule
+- the a-test-block-holds-only-the-assertion rule
 - the test-structure rule — the per-outcome context is for outcomes that instrument locally
 - the test-name-is-prefix rule
 
@@ -113,3 +113,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT

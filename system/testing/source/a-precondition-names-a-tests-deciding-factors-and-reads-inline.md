@@ -52,7 +52,7 @@ end
 
 **The predicate reads inline — no explaining variable.** The assertion's own expression carries the condition, read as a sentence at the point it is written: `refute(session.connected?)` is *the session is not connected*. `assert(account.processed?(deposit.metadata.global_position))` is *the account has processed that position*.
 
-**This is a deliberate exception to the test-block-is-assertion-only rule**, which requires every operand inside a `test` block to be bound to an explaining variable first. Neither of that rule's reasons reaches a precondition: it has one operand, so nothing is buried in a nested expression to be parsed inside-out. A name bound for it would only restate the predicate — `connected = session.connected?` in front of `refute(connected)` adds a line and no information. **A precondition carries no name because its expression is the name.**
+**This is a deliberate exception to the a-test-block-holds-only-the-assertion rule**, which requires every operand inside a `test` block to be bound to an explaining variable first. Neither of that rule's reasons reaches a precondition: it has one operand, so nothing is buried in a nested expression to be parsed inside-out. A name bound for it would only restate the predicate — `connected = session.connected?` in front of `refute(connected)` adds a line and no information. **A precondition carries no name because its expression is the name.**
 
 **A block is an expression.** Where the deciding factor is that an actuation completes, `assert_raises` and `refute_raises` take a block, and that block is the precondition's expression. The discipline is unchanged: nothing is bound, nothing is named, and the actuation is written in place rather than behind a variable.
 
@@ -155,7 +155,7 @@ end
 
 15. Write the predicate inline, with no explaining variable. The assertion's own expression carries the condition and reads as a sentence.
 16. `refute(session.connected?)` reads as *the session is not connected*. `assert(account.processed?(deposit.metadata.global_position))` reads as *the account has processed that position*.
-17. This is a deliberate exception to the test-block-is-assertion-only rule, which requires every operand inside a `test` block to be bound to an explaining variable.
+17. This is a deliberate exception to the a-test-block-holds-only-the-assertion rule, which requires every operand inside a `test` block to be bound to an explaining variable.
 18. That rule does not apply because a precondition has one operand, and a bound name would only restate the predicate.
 19. Do not write `connected = session.connected?` in front of `refute(connected)`. A precondition carries no name, because its expression is the name.
 20. Where the deciding factor is that an actuation completes, use `assert_raises` or `refute_raises` with a block. The block is the precondition's expression.
@@ -207,7 +207,7 @@ Until Sun Oct 25 2026 this rule was named precondition-documents-deciding-factor
 Related:
 
 - the test-values-are-controls-never-factories-fixtures-or-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
-- the test-block-is-assertion-only rule — the explaining-variable discipline this is a stated exception to
+- the a-test-block-holds-only-the-assertion rule — the explaining-variable discipline this is a stated exception to
 - the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — the control → actuate → observe shape a precondition sits within
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — the other thing a context holds beside a test
 - the do-not-test-the-platform rule — the boundary a precondition is not to be confused with
@@ -230,3 +230,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT

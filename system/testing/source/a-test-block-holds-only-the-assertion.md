@@ -1,4 +1,4 @@
-# A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context
+# A test block holds only the assertion
 
 Three bound parts:
 
@@ -80,6 +80,10 @@ end
 4. The precondition is the one stated exception to these parts.
 5. **Why:** A test block should read as a single relation among named values, not a computation mixed with a check. Naming operands in the context documents each value, gives it an inspection point, and separates control from observation.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named test-block-is-assertion-only and titled "A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context".
+
 Related:
 
 - the DBE first-turn rule
@@ -99,3 +103,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
