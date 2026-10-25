@@ -12,6 +12,8 @@
 - whether the rule's title, as well as its name, is in scope
 - how a rename reaches the citations in other rules and the copies already installed in consuming projects
 
+**Added 2026-10-25: the engineer made clarifying the rule names an increment of the rule-reduction experiment's flattening phase.** The work is done on the phase branch `experiment/worktree/rule-reduction.flattening`, beside the compressed rule texts, and the experiment record tracks it there.
+
 ## History
 
 As the engineer first stated it: "Idea: Make the rule names soluble"
@@ -19,3 +21,4 @@ As the engineer first stated it: "Idea: Make the rule names soluble"
 ---
 
 Authored by Scott Bellware on Sat Oct 24 2026 at 1:42:50 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
