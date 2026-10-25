@@ -1,4 +1,4 @@
-# "test tree" command: run the suite and print a normalized, de-duped context tree
+# The test tree command prints the suite's context tree
 
 When the user gives the command **"test tree"**, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
 
@@ -36,6 +36,10 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 18. On a "test tree" request, run the project's durable tree script and present its output.
 19. **Why:** the de-duped tree is the readable, whole-suite view of feature and outcome structure, without per-file repetition. Expanded dynamic names also surface loop-generated cases.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named test-tree-command and titled ""test tree" command: run the suite and print a normalized, de-duped context tree".
+
 Related:
 
 - the status-report (in `foundation`) and test-report commands
@@ -55,3 +59,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:32 PM PT

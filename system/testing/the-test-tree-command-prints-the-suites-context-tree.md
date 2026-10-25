@@ -1,4 +1,4 @@
-# "test tree" command: run the suite and print a normalized, de-duped context tree
+# The test tree command prints the suite's context tree
 
 When the user gives the command **"test tree"**, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
 
