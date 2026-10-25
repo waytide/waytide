@@ -16,6 +16,6 @@ When adding coverage for behavior that already exists, all five are in play:
 
 Related:
 
-- the hinge-cycle rule
+- the the-hinge-cycle-runs-from-actuation-to-naming rule
 - the what-each-hinge-displays rule
 - the companion tdd-designs-coverage-prevents-never-break-implementation rule

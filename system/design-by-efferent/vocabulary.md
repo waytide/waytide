@@ -137,7 +137,7 @@ Related:
 - the DBE-as-design-tool
 - first-turn
 - human-in-the-loop
-- hinge-cycle
+- the-hinge-cycle-runs-from-actuation-to-naming
 - "TDD designs
 - coverage prevents" rules. The `language` package's solubility rule and its name-literally standard
 

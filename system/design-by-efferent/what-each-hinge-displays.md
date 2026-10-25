@@ -1,6 +1,6 @@
 # What each hinge displays: the actuation is the anchor, the contexts are shown once
 
-Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The hinge-cycle rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
+Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-runs-from-actuation-to-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 
 | Hinge | Displays |
 |---|---|
@@ -34,7 +34,7 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 
 Related:
 
-- the hinge-cycle rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
+- the the-hinge-cycle-runs-from-actuation-to-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
 - the first-turn rule — the three test hinges produce turn one
 - the show-feature-test-output-after-implementation-hinge rule — the feature's test output that accompanies the implementation at hinge 4
 - the folder-mirroring rule

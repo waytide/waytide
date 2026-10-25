@@ -38,13 +38,13 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 **When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the free-text option still there. `Explain` is the second option, as the present-every-prompt rule sets out, and no candidate is sought to reach two.
 
-**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the hinge-cycle rule.
+**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the the-hinge-cycle-runs-from-actuation-to-naming rule.
 
-This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the hinge-cycle rule.
+This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the the-hinge-cycle-runs-from-actuation-to-naming rule.
 
 Related:
 
-- the hinge-cycle
+- the the-hinge-cycle-runs-from-actuation-to-naming
 - human-in-the-loop
 - first-turn
 - DBE-as-design-tool

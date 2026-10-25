@@ -76,6 +76,6 @@ Related:
 
 - the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
 - the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — why attention is placed at the hinges
-- the hinge-cycle rule — the hinges that run either way
+- the the-hinge-cycle-runs-from-actuation-to-naming rule — the hinges that run either way
 - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
 - foundation's implementation-lifecycle rule — the starts where the decision is put

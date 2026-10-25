@@ -26,7 +26,7 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 Related:
 
-- the hinge-cycle rule
+- the the-hinge-cycle-runs-from-actuation-to-naming rule
 - the human-in-the-loop rule
 - the what-each-hinge-displays rule
 - the one-outcome-at-a-time rule
@@ -44,3 +44,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:38:48 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:34 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT

@@ -33,7 +33,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 Related:
 
-- the hinge-cycle rule — the five hinges, of which this is the fourth
+- the the-hinge-cycle-runs-from-actuation-to-naming rule — the five hinges, of which this is the fourth
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
 - the tdd-designs-coverage-prevents-never-break-implementation and the-design-of-a-test-waits-at-the-hinges-including-coverage rules — the coverage case where the cycle is unavailable

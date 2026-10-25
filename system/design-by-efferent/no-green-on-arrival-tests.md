@@ -15,5 +15,5 @@ Related:
 - the DBE-as-design-tool rule
 - the human-in-the-loop rule — exit on solubility
 - the one-outcome-at-a-time rule
-- the hinge-cycle rule — the implementation hinge
+- the the-hinge-cycle-runs-from-actuation-to-naming rule — the implementation hinge
 - the testing package's vocabulary — verified, not green

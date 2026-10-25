@@ -108,6 +108,6 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 Related:
 
 - the implementations-convention — the record, the tags, and the state words
-- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and hinge-cycle rules
+- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-runs-from-actuation-to-naming rules
 - the announce-waytide-at-session-start rule — the notice reporting what has not concluded
 - the `git` run-suite-before-commit and announce-a-branch-switch-in-a-bordered-block rules

@@ -69,7 +69,7 @@ Until 2026-10-24 the opening and How to apply described every cycle as recording
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
-- the hinge-cycle rule
+- the the-hinge-cycle-runs-from-actuation-to-naming rule
 - foundation's file-name prefix and decision-log conventions
 - `foundation`'s logs-directory rule — the running records this sits among, which names this directory without requiring anything of it
 
@@ -94,3 +94,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:55 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT

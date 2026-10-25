@@ -44,7 +44,7 @@ Keeping the first gate to the actuation and a single unnamed assert keeps that g
 
 **Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close.
 
-Each is proposed and accepted before the next, per the hinge-cycle rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
+Each is proposed and accepted before the next, per the the-hinge-cycle-runs-from-actuation-to-naming rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
 
 Related:
 
