@@ -1,4 +1,4 @@
-# The design of a *test* waits at the hinges — they apply to coverage too, with the implementation hinge degenerate
+# The design of a test waits at the hinges, coverage included
 
 The five hinges are actuation, observation, controls, implementation, and naming. They are where **design decisions** wait, and *designing a test* is itself a design act. That holds whether behavior is being designed (DBE) or existing behavior is being covered (testing). So the hinges are in play when writing coverage, not only when designing.
 

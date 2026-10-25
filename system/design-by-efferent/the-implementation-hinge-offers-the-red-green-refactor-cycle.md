@@ -11,7 +11,7 @@ The two answer the hinge's question. The hinge asks *how does this implementatio
 
 **The containment constraint governs the red, unchanged.** A deliberate red is permitted **only where its cause reaches no other stable test** — no existing, passing test may fail because of it. A red whose cause breaks working tests is breakage, not a driven test, and choosing the cycle at a gate does not make it otherwise. Before writing a deliberate red, know that its failure is local to the new test. Run the full suite after it. If a stable test failed, back it out and reach a passing implementation directly.
 
-**The cycle is for the first implementation of a unit** — new behavior being designed. It is not available when **covering** behavior that already exists. There is no red to manufacture there without breaking working code, which the tdd-designs-coverage-prevents rule forbids outright. The implementation hinge is degenerate in that case. See the the-design-of-a-test-waits-at-the-hinges-including-coverage rule. So the second candidate is offered only where it is actually available, rather than being offered and then refused.
+**The cycle is for the first implementation of a unit** — new behavior being designed. It is not available when **covering** behavior that already exists. There is no red to manufacture there without breaking working code, which the tdd-designs-coverage-prevents rule forbids outright. The implementation hinge is degenerate in that case. See the the-design-of-a-test-waits-at-the-hinges-coverage-included rule. So the second candidate is offered only where it is actually available, rather than being offered and then refused.
 
 **Choosing the cycle is not performing choreography.** The dbe-is-a-design-tool-not-a-testing-ritual rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing.
 
@@ -36,5 +36,5 @@ Related:
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the five hinges, of which this is the fourth
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
-- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation and the-design-of-a-test-waits-at-the-hinges-including-coverage rules — the coverage case where the cycle is unavailable
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation and the-design-of-a-test-waits-at-the-hinges-coverage-included rules — the coverage case where the cycle is unavailable
 - the drop-an-outcome-whose-test-is-green-on-arrival rule — the no-op implementation hinge, where there is nothing to drive
