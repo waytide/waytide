@@ -36,6 +36,10 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 18. Do not add a second, raising actuation to a normal-path file.
 19. **Why:** a file holds one set of controls and one actuation. Separate files make failure modes findable by filename, and keep normal-path files from accumulating exceptional cases.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named normal-path-and-exceptional-paths-are-separate-files.
+
 Related:
 
 - the tdd-test-structure rule — actuate once at the top
@@ -61,3 +65,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:45 PM PT
