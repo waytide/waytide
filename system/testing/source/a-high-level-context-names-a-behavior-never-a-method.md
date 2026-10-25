@@ -61,6 +61,10 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 7. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
 8. **Why:** a context is read first and decides what the reader takes the test to be about. A method name sends the reader to the source, and goes stale silently if the method is renamed. A deep context is read with the behavior above it in hand, so naming an implementation element costs nothing.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named a-high-level-context-names-a-behavior-not-a-method.
+
 Related:
 
 - the test-context-nesting-mirrors-folders rule — the path the contexts mirror
@@ -77,3 +81,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT

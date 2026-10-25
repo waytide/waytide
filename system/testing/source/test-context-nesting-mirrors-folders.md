@@ -41,7 +41,7 @@ Related:
 - the test-structure rule
 - the test-name "Is" rule
 - the `control_` test-variable prefix rule
-- the a-high-level-context-names-a-behavior-not-a-method rule — what the contexts the folders produce are named for
+- the a-high-level-context-names-a-behavior-never-a-method rule — what the contexts the folders produce are named for
 
 ---
 
@@ -53,3 +53,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT

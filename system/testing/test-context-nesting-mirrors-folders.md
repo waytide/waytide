@@ -23,4 +23,4 @@ Related:
 - the test-structure rule
 - the test-name "Is" rule
 - the `control_` test-variable prefix rule
-- the a-high-level-context-names-a-behavior-not-a-method rule — what the contexts the folders produce are named for
+- the a-high-level-context-names-a-behavior-never-a-method rule — what the contexts the folders produce are named for
