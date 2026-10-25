@@ -43,6 +43,8 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 
 Until 2026-10-24 the opening said, without qualification, that the loop stops at every gate and proceeds only on the human's go. The rule predates unattended work, whose exception was added only to How to apply. The opening and the title now carry it too.
 
+Until Sun Oct 25 2026 this rule was named one-outcome-at-a-time-name-via-options.
+
 Related:
 
 - the actuation-gate-options
@@ -70,3 +72,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:44:47 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:49 PM PT
