@@ -25,7 +25,7 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 
 Related:
 
-- the communicate-plainly-name-the-thing rule
+- the communicate-plainly-and-name-the-actual-thing rule
 - the language-is-precise-here rule
 
 ---
@@ -34,3 +34,4 @@ Authored by Scott Bellware on Wed Jul 22 2026 at 10 AM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT

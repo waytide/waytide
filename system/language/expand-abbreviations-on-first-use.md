@@ -12,6 +12,6 @@ Do not use an abbreviation the reader may not already know without spelling it o
 
 Related:
 
-- `communicate-plainly-name-the-thing` — the broader plain-communication rule this sharpens
+- `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens
 - `no-slang`
 - the `language-is-precise-here` premise

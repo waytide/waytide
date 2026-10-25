@@ -26,7 +26,7 @@ Do not use an abbreviation the reader may not already know without spelling it o
 
 Related:
 
-- `communicate-plainly-name-the-thing` — the broader plain-communication rule this sharpens
+- `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens
 - `no-slang`
 - the `language-is-precise-here` premise
 
@@ -37,3 +37,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT

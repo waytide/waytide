@@ -13,7 +13,7 @@ The language package's vocabulary: the terms it defines and the word substitutio
 
 **Silence means different things in the two kinds of entry.** A **definition** with no STE note names a term absent from the STE dictionary, and reserves it. A definition exists to name a term, and a term names something in the subject field. A **substitution's Use word** with no STE note is **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
 
-The *principles* that govern word selection stay as rules — `name-literally-not-by-analogy`, `no-slang`, `communicate-plainly-name-the-thing`, `language-is-precise-here`. This file holds the settled lexicon those principles produce.
+The *principles* that govern word selection stay as rules — `name-literally-not-by-analogy`, `no-slang`, `communicate-plainly-and-name-the-actual-thing`, `language-is-precise-here`. This file holds the settled lexicon those principles produce.
 
 ## Terms
 
