@@ -1,6 +1,6 @@
 # The journal is the record the writer keeps
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The decision log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing, and the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The decision log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 **The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the decision log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
@@ -10,13 +10,13 @@
 
 **An entry takes a datetime prefix in the writer's local time.** The form is `YYYY-MM-DDTHH-MM-<name>.md`, and the name is dash-separated and lower-case. It carries no trailing `Z`, which in ISO 8601 designates UTC and would be false on a local-time stamp. The directory listing is then an index. Each entry says when it was written and what it is about, in order.
 
-**The stamp stops at the minute unless the writer gave seconds**, in which case it takes the `YYYY-MM-DDTHH-MM-SS` form. The journal-entries rule states the condition and why the journal departs from the foundation package's a-time-value-carries-minutes-and-seconds rule here.
+**The stamp stops at the minute unless the writer gave seconds**, in which case it takes the `YYYY-MM-DDTHH-MM-SS` form. The journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the condition and why the journal departs from the foundation package's a-time-value-carries-minutes-and-seconds rule here.
 
 **This departs from the foundation package's file-names rule, which requires UTC.** That rule normalizes a dated artifact to UTC because a project's contributors are globally distributed, and the artifacts are the project's. A journal entry is not. It is one writer's personal record, and the hour it carries is the hour they wrote it in.
 
 **An entry written at 23:40 on a Tuesday reads as that Tuesday, wherever the writer was.** Normalizing it would move some entries onto a date the writer did not live through. A personal record is read back against the day the person remembers, so the local hour is the one that has to survive.
 
-**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, omit-body-when-same-as-title, and journal-entries rules each state one part of that shape, and the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol, which is no longer the journal's own.
+**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, omit-body-when-same-as-title, and journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rules each state one part of that shape, and the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol, which is no longer the journal's own.
 
 **An entry carries the provenance footer**, like every other working-state artifact. See the foundation package's working-state-artifacts-carry-a-provenance-footer rule. The footer names who wrote it, which is what a journal kept by more than one writer needs.
 
@@ -60,4 +60,4 @@ Related:
 - the foundation package's file-names rule — the datetime prefix this takes, and the UTC normalization it departs from
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
 - the foundation package's decision-log rule — the agent's record, and the one this is not
-- the journal-entries rule — the local-time stamp stated at the entry
+- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the local-time stamp stated at the entry

@@ -222,7 +222,7 @@ Until Sun Oct 25 2026 this rule was named identity-resolution-contract and title
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps — the per-writer directories `writers.toml` sits beside
-- the journal-entries rule — where `<username>` names the directory an entry is written in
+- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — where `<username>` names the directory an entry is written in
 - the `foundation` package's a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the same `~/.config/` placement, taken for the same machine-scoped reason
 
 ---
@@ -239,3 +239,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:00 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT

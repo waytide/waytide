@@ -4,7 +4,7 @@
 
 **Where the writer dictates an entry, write down what they said.** Write their words, in their order. Preserve their meaning and their emphasis. Correct the grammar and the flow, and go no further than that. Invent no fact, and embellish nothing.
 
-**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
+**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
 
 **Do not edit an entry that is already there.** Not to correct a fact, not to fix a spelling, and not to reconcile it with something that has since changed. An entry is a historical record.
 

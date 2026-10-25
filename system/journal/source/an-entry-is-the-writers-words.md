@@ -4,7 +4,7 @@
 
 **Where the writer dictates an entry, write down what they said.** Write their words, in their order. Preserve their meaning and their emphasis. Correct the grammar and the flow, and go no further than that. Invent no fact, and embellish nothing.
 
-**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
+**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
 
 **Do not edit an entry that is already there.** Not to correct a fact, not to fix a spelling, and not to reconcile it with something that has since changed. An entry is a historical record.
 
@@ -41,7 +41,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 9. Add the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires.
 10. Add the datetime line under the title.
 11. Add a `**Tags:**` line only where the writer gave tags.
-12. Add the `**Summary:**` line the journal-entries rule asks for.
+12. Add the `**Summary:**` line the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule asks for.
 13. The summary states the entry's gist in the writer's own terms, not the agent's reading of what it means.
 14. Drop the summary where it would repeat the body.
 15. Do not edit an existing entry on your own reading.
@@ -75,3 +75,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT

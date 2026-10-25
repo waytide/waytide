@@ -101,5 +101,5 @@ Never read git for identity. Never invent a username, and never compute a displa
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps — the per-writer directories `writers.toml` sits beside
-- the journal-entries rule — where `<username>` names the directory an entry is written in
+- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — where `<username>` names the directory an entry is written in
 - the `foundation` package's a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the same `~/.config/` placement, taken for the same machine-scoped reason

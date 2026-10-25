@@ -20,5 +20,5 @@ Related:
 
 - the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
 - the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
-- the journal-entries rule — the entries this reads, and the *new entry* directive that writes one
+- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term

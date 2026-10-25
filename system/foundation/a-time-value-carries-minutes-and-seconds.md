@@ -15,7 +15,7 @@ The two datetime conventions in this package satisfy it:
 
 The record's filename already carries the seconds-precise UTC instant for the same moment. A title occurs **once** per file, so that collision cannot arise there. The exception is bounded to titles and reaches no other written time.
 
-**A journal entry's filename stamp is the second.** It stops at the minute, and carries seconds only where the writer stated seconds (see the `journal` package's journal-entries rule). The same collision argument applies, since a journal is one file per entry rather than a running history inside one. What that rule adds is a second ground: the entry's own time is the writer's to state, and a clock's seconds are not a value they gave.
+**A journal entry's filename stamp is the second.** It stops at the minute, and carries seconds only where the writer stated seconds (see the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule). The same collision argument applies, since a journal is one file per entry rather than a running history inside one. What that rule adds is a second ground: the entry's own time is the writer's to state, and a clock's seconds are not a value they gave.
 
 **Both exceptions are named here, and a third is not assumed.** Each is stated in the rule that takes it, and each argues from what this rule's defect does not reach. A format wanting a third states its own case the same way.
 
@@ -32,4 +32,4 @@ Related:
 - the record-a-rules-authorship-in-a-provenance-footer rule — the human-readable local datetime this corrects
 - the dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not rule — the machine-sortable UTC filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
-- the `journal` package's journal-entries rule — the second exception, and its own grounds for it
+- the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the second exception, and its own grounds for it
