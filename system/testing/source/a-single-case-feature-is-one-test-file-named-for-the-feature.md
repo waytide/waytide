@@ -1,4 +1,4 @@
-# A single-case feature is one test file named for the feature, not a folder of case files
+# A single-case feature is one test file named for the feature
 
 - **Solubility:** 88
 - **Original rank:** 104 of 106
@@ -27,6 +27,10 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 11. Once the case set is settled and there is more than one case, use `<feature>/<case>.rb`, each file named for its case.
 12. **Why:** a filename should carry meaning. A sole case-named file like `present` implies a contrast that does not exist, and misdescribes the feature as multi-case.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named single-case-test-named-for-feature and titled "A single-case feature is one test file named for the feature, not a folder of case files".
+
 Related:
 
 - the test-context-nesting-mirrors-folders rule
@@ -44,3 +48,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 4:06:18 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT

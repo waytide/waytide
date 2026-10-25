@@ -68,7 +68,7 @@ Until Sun Oct 25 2026 this rule was named a-high-level-context-names-a-behavior-
 Related:
 
 - the test-context-nesting-mirrors-folders rule — the path the contexts mirror
-- the single-case-test-named-for-feature rule — the file named for the feature rather than for a case
+- the a-single-case-feature-is-one-test-file-named-for-the-feature rule — the file named for the feature rather than for a case
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — when a context is warranted at all
 - the a-predicate-methods-test-context-is-named-for-the-predicate rule — a deeper context naming an implementation element
 - the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule
@@ -84,3 +84,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:55 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT

@@ -1,4 +1,4 @@
-# A single-case feature is one test file named for the feature, not a folder of case files
+# A single-case feature is one test file named for the feature
 
 - **Solubility:** 88
 - **Original rank:** 104 of 106
