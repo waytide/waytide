@@ -1,4 +1,4 @@
-# `waytide/local/migration/` — execution plans for transitions of content between repository boundaries
+# The migration directory holds the plans for moving content across a repository boundary
 
 `waytide/local/migration/` holds **migration records**: the execution plans for moving content **across a repository boundary**, and the record of how the move actually went. Content leaving this repository for another, or arriving from one, is planned and recorded here.
 

@@ -1,4 +1,4 @@
-# `waytide/local/migration/` — execution plans for transitions of content between repository boundaries
+# The migration directory holds the plans for moving content across a repository boundary
 
 `waytide/local/migration/` holds **migration records**: the execution plans for moving content **across a repository boundary**, and the record of how the move actually went. Content leaving this repository for another, or arriving from one, is planned and recorded here.
 
@@ -47,6 +47,8 @@ Planning it in the repository the content is leaving puts the plan where the con
 
 Until 2026-10-25 the Related entry for the logs-directory rule said a migration record "is written to be executed rather than to account for what happened", while the body says the record also holds how the move actually went. The engineer settled that the record is written ahead of the move and then records what happened against the plan.
 
+Until Sun Oct 25 2026 this rule was named migration-convention and titled "`waytide/local/migration/` — execution plans for transitions of content between repository boundaries".
+
 Related:
 
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled item or be mechanical enough to need none
@@ -73,3 +75,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:36:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:25 PM PT

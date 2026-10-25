@@ -66,7 +66,7 @@ Until Sun Oct 25 2026 this rule was named logs-directory and titled "`waytide/lo
 Related:
 
 - the the-log-holds-one-file-per-decision-with-a-one-line-title, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
-- the migration-convention — the record that is not one of these, and why
+- the the-migration-directory-holds-the-plans-for-moving-content-across-a-repository-boundary — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
 
 ---
@@ -81,3 +81,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:25 PM PT

@@ -29,5 +29,5 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 Related:
 
 - the the-log-holds-one-file-per-decision-with-a-one-line-title, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
-- the migration-convention — the record that is not one of these, and why
+- the the-migration-directory-holds-the-plans-for-moving-content-across-a-repository-boundary — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
