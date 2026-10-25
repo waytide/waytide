@@ -20,7 +20,7 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 - **Editing:** lightly cleaned up. Preserve the writer's words, their meaning, and their emphasis. Correct the grammar and the flow. Invent no fact, and embellish nothing.
 - **Structure:** a `# <title>`, then the datetime line, then the optional `**Tags:**` line, then a bold `**Summary:**` one-line gist, then the narrative prose. See the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule. The summary is what shows first in a Quick Look preview, so make it a standalone takeaway rather than a restatement of the title. **Omit the summary where it would be identical or nearly identical to the body**, as it is on a very short entry. The entry is then the title and the prose, with nothing repeated.
 
-**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by this rule, by the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the timeline-view rule.
+**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by this rule, by the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the a-timeline-view-lists-every-journal-entry-by-its-datetime rule.
 
 **Dating default:** an entry is about **today** unless the writer signals otherwise. Where the writer refers to a different time, by an explicit date or by a phrase such as *last Tuesday's meeting* or *back in April*, date and stamp the entry to that time instead. Opening with *Today* is a signal, and it means today.
 
@@ -78,7 +78,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 3. Also apply the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule.
 4. Nothing else follows from the directive.
 5. Write nothing beside the entry file.
-6. Maintain no index. See the timeline-view rule.
+6. Maintain no index. See the a-timeline-view-lists-every-journal-entry-by-its-datetime rule.
 
 ## Dating
 
@@ -114,7 +114,7 @@ Related:
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line and the tag protocol
 - the where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rule — the body dropped where the title says it already
 - the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule — where the writer gives no time
-- the timeline-view rule — the on-demand listing of the entries this writes
+- the a-timeline-view-lists-every-journal-entry-by-its-datetime rule — the on-demand listing of the entries this writes
 - the foundation package's file-names rule — the UTC normalization this departs from
 
 ---
@@ -139,3 +139,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
