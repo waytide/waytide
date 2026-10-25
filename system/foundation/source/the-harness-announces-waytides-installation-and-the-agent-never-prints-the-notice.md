@@ -27,7 +27,7 @@ Waytide's rules are loaded before your first instruction will be processed. Load
 To load them now, type: load waytide.
 ```
 
-  **The notice carries no mark.** The mark is now printed by a hook of its own when the engineer types `load waytide`. See the initialization-rule.
+  **The notice carries no mark.** The mark is now printed by a hook of its own when the engineer types `load waytide`. See the the-startup-display-prints-once-per-session.
 
   A mark stands for the system being brought into force, and a hook runs before the session. So this was the one surface that could only ever show it at a moment when nothing was being loaded. The mismatch was already written into the notice's own wording, which says **installed** and never *loaded* for exactly that reason.
 
@@ -68,7 +68,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to somewhere, and with no upstream configured there is nowhere for it to be relative to. A branch that was never going to be pushed is ordinary, and calling it unpushed would be false. That does leave an upstream missing *by accident* unreported. It is a different fact from the one this segment names, and it is deliberately not folded in.
 
-- **A startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure. It reads them from the initialization-rule, which governs the display. It is printed once, on that command and on no other prompt.
+- **A startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure. It reads them from the the-startup-display-prints-once-per-session, which governs the display. It is printed once, on that command and on no other prompt.
 
 The three are wired by a committed `.claude/settings.json` that `install.sh` places in the consuming project.
 
@@ -135,13 +135,13 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
 **The instruction ends the read with the wait for the engineer's request.**
 
-**It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the initialization-rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
+**It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the the-startup-display-prints-once-per-session). The **art is not carried on this channel either**. The display hook reads it from that rule.
 
   **The line says the rules are loaded. The notice's first line still says installed.** They are different claims about different things. The first line reports what a pre-session hook can observe — that the packages are on disk and the configuration is live. This line describes what the session does next, and offers the command that does it now. It reports no read as having happened.
 
   **No quotation marks, and they must not be added.** The notice and the instruction are each interpolated into a JSON string built by `printf` with no escaping. A double quote would terminate the string, and the harness would fail to parse the output. The notice would disappear with no error at all, which is the silent failure this whole mechanism exists to avoid.
 
-- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders, from its own hook, once, when the engineer types `load waytide`. See the initialization-rule. It sits there rather than in this notice because a segment here renders every session and would stop being read. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders, from its own hook, once, when the engineer types `load waytide`. See the the-startup-display-prints-once-per-session. It sits there rather than in this notice because a segment here renders every session and would stop being read. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
 - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
@@ -162,7 +162,7 @@ The two failures have one source: the party being announced was also the announc
 
 **How to apply:** wire the notice through `.claude/settings.json`, pointing the `SessionStart` hook and `statusLine` at the two foundation scripts. `install.sh` does this for a consuming project. Never print a session-start notice as an agent.
 
-Keep the mark out of the notice — the startup display hook prints it, and the initialization-rule governs it. Keep the scripts reading the real directories rather than asserting a list. Keep the notice claiming **installation** rather than a load. The word has to stay inside what a pre-session hook can observe.
+Keep the mark out of the notice — the startup display hook prints it, and the the-startup-display-prints-once-per-session governs it. Keep the scripts reading the real directories rather than asserting a list. Keep the notice claiming **installation** rather than a load. The word has to stay inside what a pre-session hook can observe.
 
 Keep the notice and the read instruction on their separate channels. `systemMessage` is for the engineer, and `hookSpecificOutput.additionalContext` is for the agent. Keep the instruction firing unconditionally.
 
@@ -221,7 +221,7 @@ To load them now, type: load waytide.
 22. Call it the session-start notice, not the load notice.
 23. The status line reports the system active, a claim about the configuration rather than the agent.
 24. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
-25. The notice carries no mark. The startup display prints it (see the initialization-rule).
+25. The notice carries no mark. The startup display prints it (see the the-startup-display-prints-once-per-session).
 26. Put no quotation marks, and no lone backslash, in anything the hook emits.
 27. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
 28. A double quote ends the string, and a lone backslash begins an invalid escape.
@@ -247,7 +247,7 @@ To load them now, type: load waytide.
 16. `load waytide` asks for exactly that read and nothing more.
 17. This rule does not restate the directory list.
 18. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-19. The mark's art is not carried on this channel. The display hook reads it from the initialization-rule.
+19. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session.
 20. Nothing verifies the read. The hook cannot observe what the agent does.
 21. The instruction removes one excuse: an instruction buried in a file the agent may not open.
 22. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
@@ -282,7 +282,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 ## The startup display
 
 1. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`.
-2. It prints the title, the copyright and license, the loading line, and the figure, read from the initialization-rule.
+2. It prints the title, the copyright and license, the loading line, and the figure, read from the the-startup-display-prints-once-per-session.
 3. It prints them once, on that command only.
 4. The agent does not print it.
 
@@ -328,7 +328,7 @@ Until Sun Oct 25 2026 this rule was named announce-waytide-at-session-start and 
 
 Related:
 
-- the initialization-rule — the startup display, which this notice does not carry and the agent does not print
+- the the-startup-display-prints-once-per-session — the startup display, which this notice does not carry and the agent does not print
 - the rules-convention — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
 - the status-report-format rule — the on-demand report that answers in detail what is installed
@@ -400,3 +400,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:02 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT

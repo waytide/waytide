@@ -1,4 +1,4 @@
-# Initialization
+# The startup display prints once per session
 
 The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
@@ -239,6 +239,8 @@ The copyright line read `Waytide — Copyright © 2026 Scott Bellware` until 202
 
 Until 2026-10-25 the rule said its parts print "in this order" and described the package set second, between the title and the copyright, while saying the agent prints the set after the harness's display. The title section said "Nothing is printed under it". The engineer settled that the order covers the harness's four parts, that the package set keeps its place in this file and prints after them, and that what the title excludes is a subtitle or description. The sections stay where they are, because the script reads the display's parts from this file's fenced blocks by position.
 
+Until Sun Oct 25 2026 this rule was named initialization-rule and titled "Initialization".
+
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
@@ -276,3 +278,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:30:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT

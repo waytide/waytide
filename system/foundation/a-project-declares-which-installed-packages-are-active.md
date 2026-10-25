@@ -61,6 +61,6 @@
 Related:
 
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read this leaves whole
-- the initialization-rule — where the printed block is defined
+- the the-startup-display-prints-once-per-session — where the printed block is defined
 - the status-report-format rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it

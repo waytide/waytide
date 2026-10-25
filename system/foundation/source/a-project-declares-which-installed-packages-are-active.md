@@ -138,7 +138,7 @@ Until Sun Oct 25 2026 this rule was named a-project-declares-its-package-set and
 Related:
 
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read this leaves whole
-- the initialization-rule — where the printed block is defined
+- the the-startup-display-prints-once-per-session — where the printed block is defined
 - the status-report-format rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
 
@@ -159,3 +159,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:06:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT

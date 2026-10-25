@@ -5,7 +5,7 @@
 # prompt as JSON on standard input, and renders the systemMessage this prints as its own
 # message, so the display does not depend on the agent following an instruction.
 #
-# The display is read from the initialization-rule's fenced blocks — the title, the copyright
+# The display is read from the the-startup-display-prints-once-per-session's fenced blocks — the title, the copyright
 # and license, the loading line, and the figure — so the rule stays the one copy of it. The
 # package-set example block is skipped: the agent prints the package set, in markdown.
 #
@@ -32,7 +32,7 @@ else
   exit 0
 fi
 
-rule=$system/foundation/initialization-rule.md
+rule=$system/foundation/the-startup-display-prints-once-per-session.md
 [ -f "$rule" ] || exit 0
 
 # Only the exact command. The closing quote is what makes the match exact.

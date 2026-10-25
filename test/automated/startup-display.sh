@@ -50,10 +50,10 @@ control_display=$(control_display_text)
 
 output=$(printf '{"prompt":"load waytide"}' | system/foundation/startup-display.sh)
 
-# Is the initialization-rule's display, as plain text ---------------------------
+# Is the the-startup-display-prints-once-per-session's display, as plain text ---------------------------
 
 display=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
 
-[ "$display" = "$control_display" ] || fail "Is the initialization-rule's display, as plain text" "found:" "$display"
+[ "$display" = "$control_display" ] || fail "Is the the-startup-display-prints-once-per-session's display, as plain text" "found:" "$display"
 
 echo "0 failed, 0 aborted"

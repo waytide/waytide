@@ -1,4 +1,4 @@
-# Initialization
+# The startup display prints once per session
 
 The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
