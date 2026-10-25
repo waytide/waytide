@@ -20,6 +20,10 @@ This parallels the constant-name convention, where example names are `"SomeModul
 8. Non-string placeholder values, such as a number, are not covered, because they have no "some" form.
 9. **Why:** "some" signals that any value would do. That matches the `control_` prefix's intent, where the test turns on the value's identity, not its content.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named control-string-value-starts-with-some.
+
 Related:
 
 - the `control_` test-variable prefix rule
@@ -32,3 +36,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:24 PM PT
