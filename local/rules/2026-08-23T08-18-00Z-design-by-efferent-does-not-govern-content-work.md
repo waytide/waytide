@@ -6,7 +6,7 @@
 
 ## Why a rule and not a mechanism
 
-**A project can switch a package off by declaring a set that leaves it out**, per the a-project-declares-its-package-set rule. This repository keeps design-by-efferent active, since the core keeps the method, so this rule is what holds it off content work here.
+**A project can switch a package off by declaring a set that leaves it out**, per the a-project-declares-which-installed-packages-are-active rule. This repository keeps design-by-efferent active, since the core keeps the method, so this rule is what holds it off content work here.
 
 **The package is still read.** This rule stops it being applied to content work. It does not stop it loading, and it does not remove anything.
 
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Mon Aug 24 2026 at 11:00:05 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:53:26 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:05 PM PT

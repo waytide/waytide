@@ -252,7 +252,7 @@ instruction=$(printf 'Waytide is installed at %s/. Before your first substantive
 
 # The package set, where the project has declared one. It goes to the agent and not into the
 # notice: the notice is displayed as plain text, and what is printed about a set is emphasized —
-# see the a-project-declares-its-package-set rule, which puts it at the head of the agent's
+# see the a-project-declares-which-installed-packages-are-active rule, which puts it at the head of the agent's
 # response that carries the read, where markdown renders.
 #
 # The record with the latest time prefix is the one that holds, which a plain sort gives, because
@@ -292,7 +292,7 @@ if [ -n "$declaration" ]; then
       inactive="none"
     fi
 
-    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. Read every installed package'\''s rules as instructed above, deactivated ones included — the declaration governs which rules are applied and not which are read. Follow the active packages'\'' rules and withhold the deactivated ones. Print the package set at the head of the response that carries the read, per the a-project-declares-its-package-set rule.' \
+    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. Read every installed package'\''s rules as instructed above, deactivated ones included — the declaration governs which rules are applied and not which are read. Follow the active packages'\'' rules and withhold the deactivated ones. Print the package set at the head of the response that carries the read, per the a-project-declares-which-installed-packages-are-active rule.' \
       "$declared" "$active" "$inactive")
 
     instruction="${instruction}${set_instruction}"

@@ -26,7 +26,7 @@ Waytide: Human-Agent Relations
 
 **A named set other than `default` prints even where nothing is deactivated.** Its name is information about the project that the count cannot supply.
 
-The declaration is supplied by the read instruction, which is what reaches the agent before any file is opened. See the a-project-declares-its-package-set rule for where the record lives and what it carries.
+The declaration is supplied by the read instruction, which is what reaches the agent before any file is opened. See the a-project-declares-which-installed-packages-are-active rule for where the record lives and what it carries.
 
 ```
 *design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,

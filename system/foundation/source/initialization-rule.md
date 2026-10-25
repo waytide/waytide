@@ -26,7 +26,7 @@ Waytide: Human-Agent Relations
 
 **A named set other than `default` prints even where nothing is deactivated.** Its name is information about the project that the count cannot supply.
 
-The declaration is supplied by the read instruction, which is what reaches the agent before any file is opened. See the a-project-declares-its-package-set rule for where the record lives and what it carries.
+The declaration is supplied by the read instruction, which is what reaches the agent before any file is opened. See the a-project-declares-which-installed-packages-are-active rule for where the record lives and what it carries.
 
 ```
 *design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
@@ -151,7 +151,7 @@ Waytide: Human-Agent Relations
 23. The condition is that nothing is off, not that the name is `default`.
 24. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
 25. A named set other than `default` prints even where nothing is deactivated.
-26. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-its-package-set rule says where the record lives and what it carries.
+26. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-which-installed-packages-are-active rule says where the record lives and what it carries.
 27. The stanza takes this form:
 
 ```
@@ -275,3 +275,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:30:04 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
