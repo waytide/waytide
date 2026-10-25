@@ -1,4 +1,4 @@
-# An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
+# An item takes a log entry on creation, on each settled resolution, and on a change of state
 
 - **Solubility:** 17
 - **Original rank:** 2 of 106

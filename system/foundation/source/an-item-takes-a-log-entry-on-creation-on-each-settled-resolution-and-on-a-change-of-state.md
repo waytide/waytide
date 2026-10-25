@@ -1,4 +1,4 @@
-# An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles
+# An item takes a log entry on creation, on each settled resolution, and on a change of state
 
 - **Solubility:** 17
 - **Original rank:** 2 of 106
@@ -87,6 +87,10 @@ Name the record in the entry, and say what happened to it. State what the record
 29. **Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep the log skimmable. A log entry has no State line beside it, so an entry asserting what a record only settles is read as the system's behavior.
 
 
+## History
+
+Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles".
+
 Related:
 
 - the decision-log-convention — the entry's form, and the general trigger this makes specific
@@ -125,3 +129,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:39:29 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:49 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT

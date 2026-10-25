@@ -44,4 +44,4 @@ Related:
 - the items-convention — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the rules-convention — referencing by name rather than path, and the reconciliation a rename obliges
-- the an-item-takes-a-log-entry rule — the log entry a state change also takes
+- the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes
