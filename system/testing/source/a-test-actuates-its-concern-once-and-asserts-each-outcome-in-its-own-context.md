@@ -1,4 +1,4 @@
-# Test structure: actuate the concern once at the top, assert each outcome in its own nested context
+# A test actuates its concern once, and asserts each outcome in its own context
 
 A test file is built in layers. There is a feature context, a shared control-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
 
@@ -83,6 +83,10 @@ end
 22. Each `test` block holds one assertion, and that assertion confirms the outcome its inner context's title states.
 23. **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place. Each outcome can then be read, named, and diagnosed on its own.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named tdd-test-structure and titled "Test structure: actuate the concern once at the top, assert each outcome in its own nested context".
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -99,3 +103,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT

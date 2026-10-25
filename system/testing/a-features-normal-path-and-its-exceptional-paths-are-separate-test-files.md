@@ -2,7 +2,7 @@
 
 A feature's **normal path** is the ordinary, non-raising course through it. Its test and the test of each **exceptional path** live in **separate files**. A feature with one normal path and one exceptional path is two files, not one file with two contexts.
 
-The mechanical reason is the actuation. A test file actuates the concern **once**, at the top of the feature context. It asserts each outcome of that one actuation in its own nested context. See the tdd-test-structure rule.
+The mechanical reason is the actuation. A test file actuates the concern **once**, at the top of the feature context. It asserts each outcome of that one actuation in its own nested context. See the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule.
 
 An exceptional path cannot share that actuation. The actuation is inside an `assert_raises` and produces no result to observe. The outcomes of the normal-path actuation are not established when it runs. Two actuations in one file are two sets of controls sitting side by side, each inert to the other.
 
@@ -16,7 +16,7 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 
 Related:
 
-- the tdd-test-structure rule — actuate once at the top
+- the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — actuate once at the top
 - the a-single-case-feature-is-one-test-file-named-for-the-feature rule — when a folder is warranted and how files are named
 - the an-error-test-is-named-fails-and-its-condition-is-a-context rule — the condition context and the `Fails` name
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule

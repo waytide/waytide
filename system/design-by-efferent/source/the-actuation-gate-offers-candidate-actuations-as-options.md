@@ -99,7 +99,7 @@ Related:
 - DBE-as-design-tool
 - present-every-prompt rules
 - the DBE vocabulary
-- the `testing` package's tdd-test-structure rule — where the actuation is bound to an explaining variable
+- the `testing` package's a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — where the actuation is bound to an explaining variable
 - the `ext/ruby-lang` package's no-inline-method-call-arguments rule — the same discipline in the library source
 
 ---
@@ -123,3 +123,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT

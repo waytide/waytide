@@ -7,7 +7,7 @@ Controls-based test-writing conventions. Not tied to a specific test-framework A
 - A test file whose name begins with an underscore is **suspended** and is not run. The mark is a rename, the file is kept, and the pattern does not exclude it on its own (`a-test-file-named-with-a-leading-underscore-is-suspended`).
 
 **Structure and naming**
-- Actuate the concern once at the top. Assert each outcome in its own nested context (`tdd-test-structure`).
+- Actuate the concern once at the top. Assert each outcome in its own nested context (`a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context`).
 - Context nesting mirrors the folder hierarchy. A single-case feature is one file named for the feature.
 - A high-level context names a **behavior**, never a method. The requirement is firm at the top and relaxes with depth, so a deeper context that describes an implementation element may name it. A unit's root test takes no second-level context and lives at `test/automated/<unit>.rb`.
 - A feature's normal path and each of its exceptional paths are **separate files** — an exceptional path cannot share the normal path's single actuation.

@@ -50,5 +50,5 @@ Related:
 - DBE-as-design-tool
 - present-every-prompt rules
 - the DBE vocabulary
-- the `testing` package's tdd-test-structure rule — where the actuation is bound to an explaining variable
+- the `testing` package's a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — where the actuation is bound to an explaining variable
 - the `ext/ruby-lang` package's no-inline-method-call-arguments rule — the same discipline in the library source

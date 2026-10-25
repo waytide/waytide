@@ -1,4 +1,4 @@
-# Test structure: actuate the concern once at the top, assert each outcome in its own nested context
+# A test actuates its concern once, and asserts each outcome in its own context
 
 A test file is built in layers. There is a feature context, a shared control-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
 
