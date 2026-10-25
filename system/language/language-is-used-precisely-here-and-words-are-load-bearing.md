@@ -23,5 +23,5 @@ When a precise word is missing, name the concept literally rather than reaching 
 Related:
 
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule and the no-slang rule — the two disciplines
-- the solubility rule — the quality a good name has
+- the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule — the quality a good name has
 - the substitutions in this package's vocabulary — each one an instance

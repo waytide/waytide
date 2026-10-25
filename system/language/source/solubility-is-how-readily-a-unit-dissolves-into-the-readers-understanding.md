@@ -1,14 +1,14 @@
-# Solubility: how readily a unit dissolves into the reader's understanding
+# Solubility is how readily a unit dissolves into the reader's understanding
 
 **Solubility** is the design-quality term for how readily a unit **dissolves and disappears smoothly into the reader's cognition and understanding**. **It is cognitive.** The ideal is immediate comprehension with minimal interpretive work, which is knowledge at a glance. A soluble unit is as simple as it should be and no simpler: maximum simplicity, minimal necessary complexity, found rather than presumed.
 
 The word is used as a general quality of a design. It is judged **by the reader**, not by the writer who made the unit. A unit that is understood only after the reader reconstructs the writer's reasoning is not soluble, however tidy it reads to the writer.
 
-**Say "soluble" / "solubility"** for this quality. It is not a synonym for "simple", "clean", or "elegant". A unit can be simple and still cost the reader interpretive work. Clean and elegant describe how the code reads to someone who already understands it.
+**Say "soluble" / "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding"** for this quality. It is not a synonym for "simple", "clean", or "elegant". A unit can be simple and still cost the reader interpretive work. Clean and elegant describe how the code reads to someone who already understands it.
 
 **Why:** the quality needs one settled name so it can be aimed at, taught, and judged. "Dissolves into understanding" is the literal description the name is built from. The reader needs no mapping to a metaphor or an imported academic term. This is the name-literally standard applied to the term itself. Naming it makes it available as a target of design work, and as a criterion at the moment a design is judged. It is not left to unstated taste.
 
-**How to apply:** use "solubility" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
+**How to apply:** use "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
 
 ## Compressed
 
@@ -20,18 +20,22 @@ The word is used as a general quality of a design. It is judged **by the reader*
 6. The word names a general quality of a design.
 7. Solubility is judged by the reader, not by the writer who made the unit.
 8. A unit understood only after the reader reconstructs the writer's reasoning is not soluble, however tidy it reads to the writer.
-9. Say "soluble" or "solubility" for this quality.
+9. Say "soluble" or "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding" for this quality.
 10. It is not a synonym for "simple", "clean", or "elegant".
 11. A unit can be simple and still cost the reader interpretive work.
 12. "Clean" and "elegant" describe how the code reads to someone who already understands it.
-13. Use "solubility" wherever the concern is how readily a unit is understood: in prose, rules, designs, commits, and dialogue.
-14. Judge it from the reader by asking what interpretive work the unit costs them. Aim design work at solubility, and use it as the criterion when a design is judged.
+13. Use "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding" wherever the concern is how readily a unit is understood: in prose, rules, designs, commits, and dialogue.
+14. Judge it from the reader by asking what interpretive work the unit costs them. Aim design work at solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding, and use it as the criterion when a design is judged.
 15. **Why:** The quality needs one settled name so it can be aimed at, taught, and used as a criterion when a design is judged, not left to unstated taste.
+
+## History
+
+Until Sun Oct 25 2026 this rule was named solubility and titled "Solubility: how readily a unit dissolves into the reader's understanding".
 
 Related:
 
-- the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility as its criterion
-- the `design-by-efferent` package's vocabulary — the term's role inside a specific method, where solubility is the focus of the actuation hinge
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding as its criterion
+- the `design-by-efferent` package's vocabulary — the term's role inside a specific method, where solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is the focus of the actuation hinge
 
 ---
 
@@ -42,3 +46,5 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT

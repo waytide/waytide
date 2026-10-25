@@ -8,12 +8,12 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 
 **The test:** for any candidate name, ask — *can the reader understand it without being taught a mapping?* If they must memorize "X stands for Y," it fails. A literal description ("unreachable options") passes. An analogy ("the menu problem") fails even when vivid.
 
-**Why:** The terminology is the conveyable output of this work — how it is taught to other engineers. Every analogy, code, or academic term is a toll the reader pays on each encounter. A literal name is free at the point of use: the name *is* the explanation. This is the concrete "no metaphors, no codes, no academic words" test for **solubility**, applied to a name (see the solubility rule). A name is soluble when it dissolves into the reader's understanding, and they are taught no mapping first.
+**Why:** The terminology is the conveyable output of this work — how it is taught to other engineers. Every analogy, code, or academic term is a toll the reader pays on each encounter. A literal name is free at the point of use: the name *is* the explanation. This is the concrete "no metaphors, no codes, no academic words" test for **solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding**, applied to a name (see the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule). A name is soluble when it dissolves into the reader's understanding, and they are taught no mapping first.
 
 **How to apply:** Default to plain description over a fresh metaphor or coined term. When a short handle is genuinely needed, make it the most literal short handle available. Coined handles such as *hinge* and *cradle* are kept, because they are precise, in active use, and defined plainly elsewhere. Do not mint new metaphors by default.
 
 Related:
 
-- the solubility rule — the quality this test serves
+- the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule — the quality this test serves
 - the no-slang rule
 - the DBE vocabulary — where those coined handles are defined

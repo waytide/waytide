@@ -18,7 +18,7 @@ The STE dictionary marks a word as approved or as not approved, or it does not l
 
 - **Use the alternative** where it carries the meaning. `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
 - **Keep Waytide's word** where the approved word means something else. Reserve it as a technical noun or a technical verb, in a category the entry names. Record it in the package's `vocabulary.md`. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
-- **A word the STE dictionary does not list is not a defect.** STE Rule 1.1 permits an absent word as a technical noun or a technical verb. `efferent`, `cradle`, and `solubility` are all absent.
+- **A word the STE dictionary does not list is not a defect.** STE Rule 1.1 permits an absent word as a technical noun or a technical verb. `efferent`, `cradle`, and `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding` are all absent.
 
 **The worked instance is `sweep`.** The STE dictionary replaces `sweep (v)` with `SCAN`, as in `MAKE A SCAN OF THE …`. The `language` vocabulary discontinues `sweep` for **`conform`**. Neither `SCAN` nor `AGREE`, which the STE dictionary gives for `conform`, carries the meaning. The meaning is to bring code or prose into line with a convention. So `conform` is reserved and it wins.
 
@@ -54,7 +54,7 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 12. Record what the STE dictionary says about the reserved word.
 13. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
 14. A word the dictionary does not list is not a defect.
-15. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+15. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`.
 16. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
 17. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention.
 18. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
@@ -108,3 +108,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:40:50 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT

@@ -8,9 +8,9 @@ Every time an implementation hinge is satisfied, **show the test output for the 
 
 Run the feature's tests with verbose output, so the context tree, the `comment` and `detail` narration, and pass/fail are visible. Show that output in the same turn as reporting the implementation.
 
-**Why:** the implementation hinge is where solubility is judged, and solubility is judged against behavior, not code. Showing the *feature's* output, all its outcomes together, keeps the growing efferent contract in view as it accumulates. The human then deliberates the new outcome in the context of the ones already established, rather than in isolation. Surfacing it automatically keeps the loop's load-bearing artifact present without the human asking each turn.
+**Why:** the implementation hinge is where solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is judged, and solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is judged against behavior, not code. Showing the *feature's* output, all its outcomes together, keeps the growing efferent contract in view as it accumulates. The human then deliberates the new outcome in the context of the ones already established, rather than in isolation. Surfacing it automatically keeps the loop's load-bearing artifact present without the human asking each turn.
 
-**How to apply:** write an accepted implementation and run the suite. Then run the current feature's test files with verbose output. Include that output in the turn that reports the implementation. The engineer then judges solubility on what is shown. The each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule shows the implementation and the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
+**How to apply:** write an accepted implementation and run the suite. Then run the current feature's test files with verbose output. Include that output in the turn that reports the implementation. The engineer then judges solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding on what is shown. The each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule shows the implementation and the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
 
 ## Compressed
 
@@ -21,7 +21,7 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 5. Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show.
 6. Put the output in the turn that reports the implementation.
 7. The each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule shows the implementation and the new outcome's test. This rule adds the feature's full output.
-8. **Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
+8. **Why:** solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
 
 
 ## History
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT

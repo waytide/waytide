@@ -8,7 +8,7 @@ Test-first is the standing default for starting any task. Do not ask "shall I st
 
 A question with a genuinely situational answer is a decision rather than a settled default, so this rule's reasoning does not reach it. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 
-**Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges, which are the actuation and the solubility verdict. It does not belong on whether to follow the method itself. See the human-in-the-loop and DBE-as-design-tool rules. Re-asking the standing default is ceremony, the same failure DBE discontinues.
+**Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges, which are the actuation and the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding verdict. It does not belong on whether to follow the method itself. See the human-in-the-loop and DBE-as-design-tool rules. Re-asking the standing default is ceremony, the same failure DBE discontinues.
 
 **How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task selection if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
 
@@ -33,7 +33,7 @@ A question with a genuinely situational answer is a decision rather than a settl
 5. Small batches spend attention continuously and keep rework near zero. Big batches spend none until the end and take rework instead.
 6. A question with a genuinely situational answer is a decision, not a settled default. This rule does not forbid asking it.
 7. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
-8. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
+8. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding verdict. Re-asking the standing default is ceremony.
 
 ## History
 
@@ -64,3 +64,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:41 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT

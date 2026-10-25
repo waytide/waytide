@@ -44,7 +44,7 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 
 **What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
 
-**Why:** Each of the five is a real design hinge with its own failure mode. The implementation is where solubility is judged. An awkward implementation reveals a bad cradle, and the fix then goes to the cradle rather than the code. The naming is where a name that mis-describes what the observation establishes is a design error in its own right. The outcome taxonomy is a design artifact, settled deliberately rather than a label applied after the fact.
+**Why:** Each of the five is a real design hinge with its own failure mode. The implementation is where solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is judged. An awkward implementation reveals a bad cradle, and the fix then goes to the cradle rather than the code. The naming is where a name that mis-describes what the observation establishes is a design error in its own right. The outcome taxonomy is a design artifact, settled deliberately rather than a label applied after the fact.
 
 Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them keeps the human producing an answer at every hinge, where the above-the-mean decision is introduced rather than ratified. Each carries a mandatory free-text option. The observation and the controls especially had been smuggled in under the actuation's gate.
 
@@ -64,6 +64,6 @@ Related:
 
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the first-turn rule — the three test hinges produce turn one
-- the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
+- the human-in-the-loop rule — actuation and solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding were the original two hinges. The implementation hinge is that solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding judgment made an explicit acceptance
 - the the-actuation-gate-offers-candidate-actuations-as-options rule — the same mechanism at the first gate
 - the one-outcome-at-a-time rule

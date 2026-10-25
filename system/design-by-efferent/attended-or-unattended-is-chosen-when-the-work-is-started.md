@@ -5,7 +5,7 @@ Work designed through DBE runs in one of two modes, chosen when a feature or an 
 - **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the engineer deliberates each one. **This is the default.**
 - **Unattended** — the loop does not wait. The agent determines each hinge and decides it, generating through to the end of the work.
 
-**DBE is in effect either way, and that is what makes this a cadence rather than a switch.** Unattended is not DBE off. The **cradle** still holds — the efferent test written before the implementation, the actuation designed from the use site, the code generation steered toward **solubility**. Every hinge is still determined.
+**DBE is in effect either way, and that is what makes this a cadence rather than a switch.** Unattended is not DBE off. The **cradle** still holds — the efferent test written before the implementation, the actuation designed from the use site, the code generation steered toward **solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding**. Every hinge is still determined.
 
 What changes is who decides it. The method is untouched. Only the stopping is.
 
@@ -54,13 +54,13 @@ with these options:
 
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
-**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
+**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
 
 **This is not a planning record.** `foundation` governs the project's planning records, which are written to a directory and kept. This plan is presented in the response, before the agent generates, and it is not written to a file.
 
 **Why:** the engineer's attention is the scarce thing the whole method is arranged around. The arrangement assumes it is always worth spending at a hinge. For work whose rework cost is negligible that assumption is wrong, and five waits buy nothing. That is the ceremony this method exists to discontinue, arriving by a different route.
 
-Making the cadence a decision puts the trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force in the two modes is what stops the decision from being a way out of the method. Unattended work is still designed from the efferent side, still cradled by a test written first, and still judged by solubility.
+Making the cadence a decision puts the trade where it belongs, with the person who knows what the work is worth. Keeping DBE in force in the two modes is what stops the decision from being a way out of the method. Unattended work is still designed from the efferent side, still cradled by a test written first, and still judged by solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding.
 
 A record that showed options put to an engineer who was not there would be worse than no record. It would be believed, and recording the mode honestly is what prevents that.
 

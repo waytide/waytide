@@ -22,7 +22,7 @@ A test's high-level context is expressed in terms of a **behavior**. A method na
 
 **The file path follows, because the contexts mirror it.** The test-context-nesting-mirrors-folders rule makes each path segment under `test/automated/` a context, so dropping a context and leaving the segment puts the two out of step. A root test lives at `test/automated/<unit>.rb` and a subsequent behavior at `test/automated/<unit>/<behavior>.rb`.
 
-**Why:** a context is read before anything under it, and it decides what the reader takes the test to be about. A method name sends them to the source to find out what the method does, which is the interpretive work solubility is the absence of. A behavior name says it on the page.
+**Why:** a context is read before anything under it, and it decides what the reader takes the test to be about. A method name sends them to the source to find out what the method does, which is the interpretive work solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is the absence of. A behavior name says it on the page.
 
 The method name also fixes the test to an implementation detail. Renaming the method would leave the context describing something that no longer exists, and the test would still pass while saying the wrong thing.
 
@@ -67,7 +67,7 @@ Related:
 - the single-case-test-named-for-feature rule — the file named for the feature rather than for a case
 - the context-only-for-local-instrumentation rule — when a context is warranted at all
 - the predicate-context-name rule — a deeper context naming an implementation element
-- the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility rule
+- the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule
 
 ---
 
@@ -76,3 +76,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT

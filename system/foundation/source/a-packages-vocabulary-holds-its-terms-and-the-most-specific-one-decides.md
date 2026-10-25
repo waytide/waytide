@@ -6,7 +6,7 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 ## What a vocabulary holds
 
-- **Terms** — the concepts the package defines. `solubility`, `efferent`, `hinge`, `precondition`. A term is a glossary entry, and it says what the concept is.
+- **Terms** — the concepts the package defines. `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`, `efferent`, `hinge`, `precondition`. A term is a glossary entry, and it says what the concept is.
 - **Substitutions** — a word not to write, and the word to write instead. `conform` rather than "sweep". `verified` rather than "green".
 - **Discontinuations** — a word removed from use with nothing in its place. `discriminator` went because the concept went, not because another word replaced it.
 
@@ -64,7 +64,7 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 
 ## What a vocabulary holds
 
-1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
+1. **Terms** are the concepts the package defines, such as `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`, `efferent`, `hinge`, `precondition`.
 2. A term is a glossary entry, and it says what the concept is.
 3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
 4. **Discontinuations** name a word removed from use with nothing in its place. `discriminator` went because the concept went.
@@ -139,3 +139,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
