@@ -82,6 +82,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Rule names — renames | Citations in other rules are updated; installed copies take the new names on refresh | Sun Oct 25 2026 at 4:05:29 PM PT |
 | Rule names — clarity | What makes a rule's content clear | Sun Oct 25 2026 at 4:06:30 PM PT |
 | Rule names — participation | Attended | Sun Oct 25 2026 at 4:08:50 PM PT |
+| Rule names — participation, after five rules | Unattended, with a review list | Sun Oct 25 2026 at 4:19:33 PM PT |
 
 ## What actually happened
 
@@ -1352,6 +1353,8 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 **A title is clear by the same thing that makes a rule's content clear**, the engineer settled. It is held to solubility and judged the same way. Nothing about the increment is now left unsettled.
 
 **The engineer chose attended work for the increment.** Each rule's title is put to the engineer one at a time, with its derived name, and the rename and its citations are made on the phase branch. 97 of the 107 rules have a name that is not the one their title derives. The order is by package, `foundation` first, since it defines the system, and alphabetical within a package.
+
+**After five rules, the engineer changed the increment to unattended.** The five showed the standard: a title is kept close to its wording, and changed only where it is unclear, so the agent can apply it. The agent retitles the remaining 92, renames each to the name its title derives, and updates every live citation, one commit per rule. Historical records keep the names they were written with. The engineer then reviews a table of every change.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4509,3 +4512,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:08:50 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:19:33 PM PT
