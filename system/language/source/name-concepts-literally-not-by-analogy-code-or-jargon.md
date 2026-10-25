@@ -1,4 +1,4 @@
-# Name concepts with direct literal descriptions — no analogies, codes, or academic jargon
+# Name concepts literally, not by analogy, code, or jargon
 
 Name a concept by describing, literally, what it is. Reject three kinds of name, all of which force the reader to memorize an arbitrary mapping back to the actual idea:
 
@@ -30,6 +30,10 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 14. Do not mint new metaphors by default.
 15. **Why:** The terminology is how this work is taught to other engineers. A literal name is the explanation itself, so the reader pays nothing to understand it each time. This is the solubility test applied to a name.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named name-literally-not-by-analogy and titled "Name concepts with direct literal descriptions — no analogies, codes, or academic jargon".
+
 Related:
 
 - the solubility rule — the quality this test serves
@@ -48,3 +52,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Wed Aug 12 2026 at 1:12:44 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT

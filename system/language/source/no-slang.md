@@ -14,7 +14,7 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 - **choice → selection** (what is picked at a prompt) or **decision** (the matter settled)
 - **earns its keep / earns its place → justified / justifiable**
 
-**Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly. "sweep" is loose where "conform" states the actual intent. Literal naming is the house style. This is the prose-and-process counterpart of the name-literally-not-by-analogy rule (that rule governs *naming a concept*, and this one governs *phrasing* in prose and conversation).
+**Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly. "sweep" is loose where "conform" states the actual intent. Literal naming is the house style. This is the prose-and-process counterpart of the name-concepts-literally-not-by-analogy-code-or-jargon rule (that rule governs *naming a concept*, and this one governs *phrasing* in prose and conversation).
 
 **How to apply:** don't reach for a figurative or slang term when a literal one states the thing directly. Use the literal replacement (see its entry in the `language` vocabulary). When a historical record *quotes* a decision, it keeps the original word, since rewriting it would erase the record. Only live, forward-looking prose conforms.
 
@@ -38,12 +38,12 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 16. Replace **earns its keep / earns its place** with **justified / justifiable**.
 17. A historical record that quotes a decision keeps the original word.
 18. Only live, forward-looking prose conforms.
-19. This rule governs phrasing in prose and conversation. The name-literally-not-by-analogy rule governs naming a concept.
+19. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
 20. **Why:** slang and figurative terms are imprecise and carry unwanted associations. "wrap/wrapper" reads as a generic decorator and hides the accessor relationship that "mediates" names exactly.
 
 Related:
 
-- the name-literally-not-by-analogy rule
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule
 - the `language` vocabulary — the entries for mediates, conform, scenario, increment, and plain phrasing
 
 ---
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT

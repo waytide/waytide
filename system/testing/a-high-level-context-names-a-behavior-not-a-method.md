@@ -38,4 +38,4 @@ Related:
 - the single-case-test-named-for-feature rule — the file named for the feature rather than for a case
 - the context-only-for-local-instrumentation rule — when a context is warranted at all
 - the predicate-context-name rule — a deeper context naming an implementation element
-- the `language` package's name-literally-not-by-analogy rule and its solubility rule
+- the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility rule

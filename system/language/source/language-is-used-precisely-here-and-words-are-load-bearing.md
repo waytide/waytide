@@ -47,7 +47,7 @@ Until Sun Oct 25 2026 this rule was named language-is-precise-here and titled "L
 
 Related:
 
-- the name-literally-not-by-analogy rule and the no-slang rule — the two disciplines
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule and the no-slang rule — the two disciplines
 - the solubility rule — the quality a good name has
 - the substitutions in this package's vocabulary — each one an instance
 
@@ -63,3 +63,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT

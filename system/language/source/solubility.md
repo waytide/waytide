@@ -30,7 +30,7 @@ The word is used as a general quality of a design. It is judged **by the reader*
 
 Related:
 
-- the name-literally-not-by-analogy rule — which uses solubility as its criterion
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility as its criterion
 - the `design-by-efferent` package's vocabulary — the term's role inside a specific method, where solubility is the focus of the actuation hinge
 
 ---
@@ -41,3 +41,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:52:35 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT

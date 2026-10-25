@@ -14,11 +14,11 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 - **choice → selection** (what is picked at a prompt) or **decision** (the matter settled)
 - **earns its keep / earns its place → justified / justifiable**
 
-**Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly. "sweep" is loose where "conform" states the actual intent. Literal naming is the house style. This is the prose-and-process counterpart of the name-literally-not-by-analogy rule (that rule governs *naming a concept*, and this one governs *phrasing* in prose and conversation).
+**Why:** slang and figurative terms are imprecise and import baggage — "wrap/wrapper" reads as a generic decorator and hides the accessor relationship "mediates" names exactly. "sweep" is loose where "conform" states the actual intent. Literal naming is the house style. This is the prose-and-process counterpart of the name-concepts-literally-not-by-analogy-code-or-jargon rule (that rule governs *naming a concept*, and this one governs *phrasing* in prose and conversation).
 
 **How to apply:** don't reach for a figurative or slang term when a literal one states the thing directly. Use the literal replacement (see its entry in the `language` vocabulary). When a historical record *quotes* a decision, it keeps the original word, since rewriting it would erase the record. Only live, forward-looking prose conforms.
 
 Related:
 
-- the name-literally-not-by-analogy rule
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule
 - the `language` vocabulary — the entries for mediates, conform, scenario, increment, and plain phrasing

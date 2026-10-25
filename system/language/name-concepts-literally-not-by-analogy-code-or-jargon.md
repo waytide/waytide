@@ -1,4 +1,4 @@
-# Name concepts with direct literal descriptions — no analogies, codes, or academic jargon
+# Name concepts literally, not by analogy, code, or jargon
 
 Name a concept by describing, literally, what it is. Reject three kinds of name, all of which force the reader to memorize an arbitrary mapping back to the actual idea:
 

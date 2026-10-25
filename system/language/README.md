@@ -8,7 +8,7 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 **The four disciplines that make it achievable**
 
-- **name-literally-not-by-analogy**. Name a concept by describing what it literally is. No analogies, opaque codes, or academic jargon.
+- **name-concepts-literally-not-by-analogy-code-or-jargon**. Name a concept by describing what it literally is. No analogies, opaque codes, or academic jargon.
 - **no-slang**. Use literal, non-figurative terms in prose and in conversation, not only in the code.
 - **communicate-plainly-and-name-the-actual-thing**. In explanation and conversation, use plain words and the real names of things. No invented labels ("tier 1") or compressed jargon offered as if already shared.
 - **expand-an-abbreviation-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses). Don't use unexplained shorthand.
