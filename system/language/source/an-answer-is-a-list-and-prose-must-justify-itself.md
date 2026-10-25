@@ -1,4 +1,4 @@
-# An answer is a list. Prose must justify itself
+# An answer is a list, and prose must justify itself
 
 An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default. It is written where one of the conditions below applies. Those conditions are the whole of what justifies it.
 
@@ -123,6 +123,10 @@ For more detail than bullet points, ask for an expanded answer.
 10. Either stricter form may be adopted if the judgment proves unreliable in use.
 11. **Why:** An agent writes prose without deciding to, and prose hides padding, comment, and unnamed back-references. A list puts each claim on its own line, so an empty claim shows. Putting the burden on prose, rather than stating a preference, keeps the rule in force across sessions.
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "An answer is a list. Prose must justify itself".
+
 Related:
 
 - the communicate-plainly-name-the-thing rule — which governs the words inside the list and reaches conversation the same way this does
@@ -149,3 +153,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:35:39 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:01 PM PT

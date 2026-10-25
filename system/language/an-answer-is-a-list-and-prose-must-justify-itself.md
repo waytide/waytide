@@ -1,4 +1,4 @@
-# An answer is a list. Prose must justify itself
+# An answer is a list, and prose must justify itself
 
 An answer to the engineer is a **list**. Prose is not forbidden, and it is not the default. It is written where one of the conditions below applies. Those conditions are the whole of what justifies it.
 
