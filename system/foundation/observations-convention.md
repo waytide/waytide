@@ -43,4 +43,4 @@ Related:
 - the items-convention — the eight states an observation does not take, and the state requirement it satisfies
 - the rules-convention — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
-- the decision-log-convention — the entry that records one
+- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry that records one

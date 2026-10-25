@@ -2,7 +2,7 @@
 
 **A project keeps more than one running record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`decision-log-convention`).
+- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`the-log-holds-one-file-per-decision-with-a-one-line-title`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
@@ -28,6 +28,6 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 
 Related:
 
-- the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
+- the the-log-holds-one-file-per-decision-with-a-one-line-title, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
 - the migration-convention — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes

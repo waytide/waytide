@@ -87,7 +87,7 @@ Until Sun Oct 25 2026 this rule was named a-suspension-is-a-log-entry and titled
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
-- the decision-log-convention — the entry's form
+- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the items-convention — the `Suspended` **state**, which is what an item takes instead
 
@@ -103,3 +103,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT

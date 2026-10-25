@@ -26,11 +26,11 @@ The failure it prevents is specific and hard to see from inside. Every sentence 
 
 **How to apply:** when work is abandoned, write the log entry as the decision to stop and the reasoning given for it. Say plainly that nothing merged and where the work was.
 
-Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the decision-log-convention.
+Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the the-log-holds-one-file-per-decision-with-a-one-line-title.
 
 Related:
 
-- the decision-log-convention — the entry's shape, and when it takes a body
+- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's shape, and when it takes a body
 - the implementation-records-take-a-log-entry rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same prohibition for an item, stated as the mood an entry is written in
 - the implementation-lifecycle rule — the branch deletion that leaves the log as the only durable trace

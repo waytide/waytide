@@ -33,7 +33,7 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 Related:
 
 - the no-slang terminology rule
-- the decision-log-convention
+- the the-log-holds-one-file-per-decision-with-a-one-line-title
 
 ---
 
@@ -45,3 +45,4 @@ Changed by Scott Bellware on Mon Oct 19 2026 at 3:35:00 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:26 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:20 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT

@@ -2,7 +2,7 @@
 
 **A project keeps more than one running record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`decision-log-convention`).
+- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`the-log-holds-one-file-per-decision-with-a-one-line-title`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
@@ -29,7 +29,7 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 ## Compressed
 
 1. `waytide/local/logs/` holds the project's running records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
-2. `waytide/local/logs/log/` holds the decision log, one file per decision, with a one-line title (`decision-log-convention`).
+2. `waytide/local/logs/log/` holds the decision log, one file per decision, with a one-line title (`the-log-holds-one-file-per-decision-with-a-one-line-title`).
 3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`work-sessions-convention`).
 5. Write a decision entry to `waytide/local/logs/log/`.
@@ -63,7 +63,7 @@ A migration record was moved here on 2026-08-18 and moved back out the same day.
 
 Related:
 
-- the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
+- the the-log-holds-one-file-per-decision-with-a-one-line-title, the work-sessions-convention, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
 - the migration-convention — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
 
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
