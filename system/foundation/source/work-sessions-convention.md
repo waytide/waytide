@@ -5,7 +5,7 @@
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
 - **It is not the source of truth.** The durable records are: the binding rules (`waytide/system/`, `waytide/local/rules/`), the project's items (`waytide/local/items/`), the decision log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`). The work session record **points to** them throughout. They are authoritative, and the work session record is the narrative that ties them together and preserves the reasoning behind each fork.
 - **When it is written.** At the close of a work session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the work session has accumulated such work and proposes recording it. A trivial work session needs no record. The work session record is not a per-session obligation.
-- **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **The prompt always says "work session"** — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
+- **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **Every prompt this convention puts says "work session"**, this one and the design reconciliation alike — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
 - **Naming.** A work session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
 ## The shape of a work session record
@@ -43,7 +43,7 @@ A narrative work session record preserves that arc as a communicable whole. It p
 
 When *you* raise the question of recording, rather than being told to, put it through the AskUserQuestion selection UI. It carries the three options, each naming a **work session record**: a new one, appending the previous one, or none. Let the engineer's selection decide.
 
-Once the record is written, put the **design reconciliation** through the same UI. The options are to update the design, that the design stands, or that no design bears on this session. Surface what diverges, and leave the verdict to the engineer.
+Once the record is written, put the **design reconciliation** through the same UI. The options are to update the design, that the design stands, or that no design bears on this work session. Surface what diverges, and leave the verdict to the engineer.
 
 ## Compressed
 
@@ -64,7 +64,7 @@ Once the record is written, put the **design reconciliation** through the same U
 15. When the agent raises the question of recording, it asks through the **AskUserQuestion** selection UI. It does not ask in free-text prose.
 16. The prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
 17. The engineer's selection decides.
-18. The prompt always says "work session", never the shortened "session".
+18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
 19. A direct instruction from the engineer to write or append a record needs no prompt.
 20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
@@ -108,6 +108,8 @@ Once the record is written, put the **design reconciliation** through the same U
 ## History
 
 The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
+
+Until 2026-10-25 the statement that the prompt always says "work session" sat in the recording prompt's bullet alone, and How to apply worded the design reconciliation's third option as "no design bears on this session". The engineer settled that every prompt this convention puts says "work session", and How to apply now says it too.
 
 Related:
 
@@ -158,3 +160,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:18:53 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:57:38 PM PT
