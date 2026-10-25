@@ -25,7 +25,13 @@ The record's filename already carries the seconds-precise UTC instant for the sa
 
 That reads as an error rather than as provenance, so the entry went unwritten instead of being recorded. A format that cannot express its own instances is a defect rather than merely a coarse decision. Minutes and seconds remove it at every scale a person actually works at, for the cost of a few characters.
 
-**How to apply:** when writing a datetime that includes a time of day, write the seconds. That holds for a rule, a working-state artifact, a log entry, and any other file. When specifying a new datetime format, specify it to seconds. Leave date-only conventions as they are, and do not revise a datetime already recorded at a coarser resolution. Related:
+**How to apply:** when writing a datetime that includes a time of day, write the seconds, except where this rule names an exception. That holds for a rule, a working-state artifact, a log entry, and any other file. When specifying a new datetime format, specify it to seconds. Leave date-only conventions as they are, and do not revise a datetime already recorded at a coarser resolution.
+
+## History
+
+Until 2026-10-25 How to apply said to write the seconds in every datetime that includes a time of day, naming no exception, while the body names two: a dated record title and a journal entry's filename stamp. The engineer settled that How to apply points to the exceptions the rule names, without listing them. The `Related:` label had also run into the end of How to apply's paragraph, and now stands on its own line.
+
+Related:
 
 - the record-rule-authorship-in-a-footer rule — the human-readable local datetime this corrects
 - the file-names-use-iso8601-utc-prefix rule — the machine-sortable UTC filename prefix
@@ -45,3 +51,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 2:13:03 PM PT

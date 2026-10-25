@@ -25,7 +25,9 @@ The record's filename already carries the seconds-precise UTC instant for the sa
 
 That reads as an error rather than as provenance, so the entry went unwritten instead of being recorded. A format that cannot express its own instances is a defect rather than merely a coarse decision. Minutes and seconds remove it at every scale a person actually works at, for the cost of a few characters.
 
-**How to apply:** when writing a datetime that includes a time of day, write the seconds. That holds for a rule, a working-state artifact, a log entry, and any other file. When specifying a new datetime format, specify it to seconds. Leave date-only conventions as they are, and do not revise a datetime already recorded at a coarser resolution. Related:
+**How to apply:** when writing a datetime that includes a time of day, write the seconds, except where this rule names an exception. That holds for a rule, a working-state artifact, a log entry, and any other file. When specifying a new datetime format, specify it to seconds. Leave date-only conventions as they are, and do not revise a datetime already recorded at a coarser resolution.
+
+Related:
 
 - the record-rule-authorship-in-a-footer rule — the human-readable local datetime this corrects
 - the file-names-use-iso8601-utc-prefix rule — the machine-sortable UTC filename prefix
