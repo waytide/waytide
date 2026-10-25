@@ -34,4 +34,4 @@ Related:
 - the journal-convention — where the journal lives and what one entry is
 - the identity-resolution-contract rule — how the active writer is resolved
 - the timeline-view rule — the on-demand listing, which writes no file for this read to pass over
-- the foundation package's rules-convention — the session-start read this joins
+- the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the session-start read this joins

@@ -71,7 +71,7 @@ Until Sun Oct 25 2026 this rule was named decision-log-convention and titled "`w
 Related:
 
 - the file-names rule — the shared filename convention
-- the rules-convention — a new rule pairs with a log entry
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — a new rule pairs with a log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — its recording step logs too
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-groups-the-running-records rule — the running records this sits among
@@ -103,3 +103,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT

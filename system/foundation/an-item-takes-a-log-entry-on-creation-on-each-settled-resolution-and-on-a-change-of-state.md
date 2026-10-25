@@ -36,7 +36,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 ## Why the obligation is stated here rather than in each convention
 
-**Three conventions state their own log entry in full, and the the-items-directory-holds-the-projects-items-one-file-per-item points here.** The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, the rules-convention, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule each state the pairing inline. The the-items-directory-holds-the-projects-items-one-file-per-item requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
+**Three conventions state their own log entry in full, and the the-items-directory-holds-the-projects-items-one-file-per-item points here.** The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule each state the pairing inline. The the-items-directory-holds-the-projects-items-one-file-per-item requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
 
 **What reached the log anyway was the the-log-holds-one-file-per-decision-with-a-one-line-title's general trigger** — write an entry whenever a real decision is made, and when in doubt, log it. That is enough to produce the entries and not enough to make them reliable, since it rests on each writer reaching the same judgment about what counts.
 
@@ -58,7 +58,7 @@ Related:
 
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form, and the general trigger this makes specific
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the entry a removal takes, which is the whole of that act
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, rules-convention, and a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved — the three that already state their own pairing
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory, and a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the work-sessions-convention — the reconciliation prompt whose *the direction stands* answer is logged
 - the `git` package's subject-first-commit-messages and commit-says-task-is-done-not-mark-done rules — the grammar that is right for a change to the software and wrong for a record that settles one

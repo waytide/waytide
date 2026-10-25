@@ -1,4 +1,4 @@
-# Binding rules live in `waytide/system/` (installed) and `waytide/local/rules/` (the project's own)
+# Binding rules live in the installed packages and the project's own rules directory
 
 The project's **binding** rules are read at the start of every session and followed. Those are naming conventions, terminology, plan-writing norms, commit conventions, and the like. They live in two directories, separated by source:
 
@@ -108,6 +108,8 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 
 Until 2026-10-25 the rule said `waytide/system/` and `waytide/local/rules/` "hold only rules", while each package under `waytide/system/` also holds its `README.md`, its `source/` directory, a license, and scripts. The engineer settled that `waytide/system/` holds the rules and what packages them, and that neither directory holds working state.
 
+Until Sun Oct 25 2026 this rule was named rules-convention and titled "Binding rules live in `waytide/system/` (installed) and `waytide/local/rules/` (the project's own)".
+
 Related:
 
 - the file-names rule
@@ -146,3 +148,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:50:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT

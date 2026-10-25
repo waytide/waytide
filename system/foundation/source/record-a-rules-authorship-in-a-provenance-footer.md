@@ -77,7 +77,7 @@ Until Sun Oct 25 2026 this rule was named record-rule-authorship-in-a-footer.
 Related:
 
 - the a-time-value-carries-minutes-and-seconds rule — the time's resolution
-- the rules-convention — the rule format
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format
 - the file-names rule — the UTC filename prefix this contrasts with
 
 ---
@@ -91,3 +91,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:56:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT

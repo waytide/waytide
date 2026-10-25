@@ -117,7 +117,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
   - wait for the engineer's request
   - print no package count
 
-  **The instruction names the project's own `local/rules/`, unconditionally.** It named only the installed packages until 2026-08-01. That made it **narrower than the rule it exists to get followed**. rules-convention requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read disagreed. The hook was the one carrying less.
+  **The instruction names the project's own `local/rules/`, unconditionally.** It named only the installed packages until 2026-08-01. That made it **narrower than the rule it exists to get followed**. binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read disagreed. The hook was the one carrying less.
 
   It is the path this rule calls primary, the file route being the one it was written to stop depending on. A project's own rules are the half no package supplies and no refresh restores.
 
@@ -329,7 +329,7 @@ Until Sun Oct 25 2026 this rule was named announce-waytide-at-session-start and 
 Related:
 
 - the the-startup-display-prints-once-per-session — the startup display, which this notice does not carry and the agent does not print
-- the rules-convention — the rule format and where the bootstrap lives
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
 - the status-report-format rule — the on-demand report that answers in detail what is installed
 
@@ -401,3 +401,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:02 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT

@@ -12,7 +12,7 @@
 
 **Why:** everything else read at session start binds, so the default reading of a file in that read is that it must be followed. The journal is the exception, and an exception nobody states is one nobody applies.
 
-Left unstated, the journal becomes a rules directory with none of the rules-convention's form. A passing thought and a settled decision look alike on the page. There is no `**Why:**` line, no `**How to apply:**` line, and no name saying what the rule says. A rule written that way cannot be found, cited, revised, or removed.
+Left unstated, the journal becomes a rules directory with none of the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory's form. A passing thought and a settled decision look alike on the page. There is no `**Why:**` line, no `**How to apply:**` line, and no name saying what the rule says. A rule written that way cannot be found, cited, revised, or removed.
 
 The writer's cost is the real one. Knowing that every entry is read, the writer writes for a reader. What keeps that cost bounded is this rule. An entry that can change nothing is one that can be written without weighing its effect.
 
@@ -22,5 +22,5 @@ Related:
 
 - the-journal-is-read-at-session-start — the read this rule qualifies
 - the journal-convention — where the journal lives and what one entry is
-- the foundation package's rules-convention — the form a binding rule takes, and where one lives
+- the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the form a binding rule takes, and where one lives
 - the foundation package's vocabulary-convention — where a term is settled

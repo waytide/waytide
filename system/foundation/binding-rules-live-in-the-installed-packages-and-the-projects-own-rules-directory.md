@@ -1,4 +1,4 @@
-# Binding rules live in `waytide/system/` (installed) and `waytide/local/rules/` (the project's own)
+# Binding rules live in the installed packages and the project's own rules directory
 
 The project's **binding** rules are read at the start of every session and followed. Those are naming conventions, terminology, plan-writing norms, commit conventions, and the like. They live in two directories, separated by source:
 

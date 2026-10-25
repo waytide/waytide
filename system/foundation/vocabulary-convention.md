@@ -55,6 +55,6 @@ Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
 - its language-is-precise-here rule — the premise every vocabulary follows from
-- the rules-convention
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory
 - the file-names rule — why the project's file takes no prefix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it

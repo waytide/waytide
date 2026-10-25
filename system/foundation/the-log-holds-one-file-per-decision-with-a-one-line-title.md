@@ -15,7 +15,7 @@ Record decisions made during sessions as one file per decision in `waytide/local
 Related:
 
 - the file-names rule — the shared filename convention
-- the rules-convention — a new rule pairs with a log entry
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — a new rule pairs with a log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — its recording step logs too
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-groups-the-running-records rule — the running records this sits among

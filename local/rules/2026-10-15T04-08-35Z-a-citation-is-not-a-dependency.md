@@ -28,7 +28,7 @@ This criterion was practiced before it was written. Every declaration in the sys
 
 Related:
 
-- the rules-convention — the rule format and where rules live
+- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format and where rules live
 - the the-implementations-directory-records-each-implementations-lifecycle — the refused dependency it declines
 - the status-report-format rule — the model citation, written for the cited package's absence
 - each package's README — where a dependency is declared
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
