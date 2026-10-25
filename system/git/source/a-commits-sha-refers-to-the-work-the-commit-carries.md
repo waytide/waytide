@@ -1,4 +1,4 @@
-# A commit named by its SHA is a reference to the work it carries, not to the commit
+# A commit's SHA refers to the work the commit carries
 
 **When the engineer names a commit by its SHA, they are asking about the substance the commit carries.** That is the item, the implementation, the rule, or the change to the code. They are not asking about the commit's own mechanics — its message, its file list, its diff statistics, or the log entry that travelled with it.
 
@@ -22,8 +22,39 @@ The failure is easy to miss because the answer is correct. A file list and a com
 
 Give the message, the stat, or the log entry when the question is about the commit, or when the commit's whole content is a git operation. Ask which is wanted only where the sentence genuinely does not say.
 
+## Compressed
+
+1. A commit SHA from the engineer asks about the work the commit carries.
+2. That work is the item, the implementation, the rule, or the code change.
+3. The SHA does not ask about the commit's mechanics.
+4. The mechanics are the commit's message, its file list, its diff statistics, and the log entry that came with it.
+5. Answer from what the commit added or changed.
+6. If the commit carries an item, an implementation record, or a rule, read that file. Answer from its content.
+7. If the commit changes code, answer from what the code now does.
+8. Open the files the commit added or changed, rather than reporting their names.
+9. Give the mechanics when the question is about them. Answer each of *Was it pushed*, *what did it touch*, *is it on master*, and *what does its message say* directly.
+10. Give the mechanics when they are the substance. A merge, a revert, a rename, a force-push, and a rebase have the operation as their content.
+11. There is nothing behind those operations to read.
+12. Ask only where it is genuinely unclear.
+13. A bare SHA with no verb is the ordinary case. Give the substance for it.
+14. **Why:** Reporting the commit's bookkeeping is correct, but it is about the wrong thing. It costs the engineer a second turn to ask again.
+
+
+## History
+
+Until Sun Oct 25 2026 this rule was named a-sha-names-the-work-rather-than-the-commit and titled "A commit named by its SHA is a reference to the work it carries, not to the commit".
+
 Related:
 
 - the subject-first-commit-messages rule — what a commit message states, which is the mechanics this rule sets aside
 - the `foundation` the-log-holds-one-file-per-decision-with-a-one-line-title — the log entry that travels with a change, and which is not what a SHA reference asks for
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the answer's form, where this rule governs its subject
+
+---
+
+Authored by Scott Bellware on Sun Aug 23 2026 at 12:14:50 AM PT
+Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:08 PM PT
+Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:06 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:46 PM PT

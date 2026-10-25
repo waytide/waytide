@@ -85,7 +85,7 @@ Related:
 
 - the a-status-report-prints-a-fixed-whole-project-report rule — whose tables this agrees with
 - the file-names rule — the prefix the handle column carries
-- the `git` package's a-sha-names-the-work-rather-than-the-commit rule — what a SHA in those columns refers to when the engineer names one back
+- the `git` package's a-commits-sha-refers-to-the-work-the-commit-carries rule — what a SHA in those columns refers to when the engineer names one back
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the answer's form, which this does not displace
 
 ---
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:46 PM PT
