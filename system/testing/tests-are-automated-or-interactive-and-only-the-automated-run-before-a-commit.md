@@ -1,4 +1,4 @@
-# `test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit
+# Tests are automated or interactive, and only the automated run before a commit
 
 **A project's tests sit under `test/`, in one of two directories**, and a project may hold either or both:
 

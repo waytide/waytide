@@ -1,4 +1,4 @@
-# `test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit
+# Tests are automated or interactive, and only the automated run before a commit
 
 **A project's tests sit under `test/`, in one of two directories**, and a project may hold either or both:
 
@@ -78,6 +78,10 @@ Where a project has no automated suite, run nothing and report nothing missing.
 6. Run-suite-before-commit is then satisfied vacuously, not violated.
 7. **Why:** Keeping the tests in separate directories keeps the automated suite mechanically true, so it either passes or fails. It also gives the tests that need a person a place to live, so they are not deleted for not fitting. The engineer's attention is the scarce resource, so a test that spends it runs only when the engineer says so.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named tests-are-automated-or-interactive and titled "`test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit".
+
 Related:
 
 - the a-test-file-named-with-a-leading-underscore-is-suspended rule — the other thing that decides what a run contains
@@ -94,3 +98,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:37 PM PT

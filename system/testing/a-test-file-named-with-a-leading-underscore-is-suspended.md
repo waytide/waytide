@@ -32,7 +32,7 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 
 Related:
 
-- the tests-are-automated-or-interactive rule — the other thing that decides what a run contains
+- the tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit rule — the other thing that decides what a run contains
 - the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other sense of the word, which this is not
 - the `foundation` the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
