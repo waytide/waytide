@@ -59,7 +59,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## Format
 
-The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record carries a state line, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the implementation-records-take-a-log-entry rule).
+The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record carries a state line, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge rule).
 
 **Why:** an experiment and a feature had two conventions and two lifecycles that agreed on almost everything. Both are bounded work on a branch, with a working location chosen at the start, a declared end, and recorded confirmations. What they did not share follows from one difference — a question against an intent — which a tag states and the lifecycle reads.
 
@@ -149,7 +149,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
 7. Once the record carries a state line, the filename also takes the state suffix.
 8. End the file with the provenance footer.
-9. Pair the record with a log entry (see the implementation-records-take-a-log-entry rule).
+9. Pair the record with a log entry (see the an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge rule).
 
 ## How to apply
 
@@ -184,3 +184,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT

@@ -1,4 +1,4 @@
-# An implementation record takes a log entry — and what the concluding entry carries depends on whether the work reached `master`
+# An implementation record takes a log entry, and the last one depends on the merge
 
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
@@ -88,6 +88,8 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 Until 2026-10-25 the concluding entry's form was said to be decided by whether the record itself is on `master`, while a later paragraph and How to apply made the merge the test. How to apply also told every unmerged case to write the findings, which abandoned work does not have, and left out the reasoning for stopping. The engineer settled that the merge is the test, and that the findings are written where there are any, with the reasoning for stopping for abandoned work.
 
+Until Sun Oct 25 2026 this rule was named implementation-records-take-a-log-entry and titled "An implementation record takes a log entry — and what the concluding entry carries depends on whether the work reached `master`".
+
 Related:
 
 - the implementations-convention — the record, the two kinds, and the state words each takes
@@ -108,3 +110,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 2:27:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
