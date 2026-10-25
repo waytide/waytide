@@ -1,4 +1,4 @@
-# Drop an outcome whose test is green-on-arrival — it drives no design
+# Drop an outcome whose test is green on arrival
 
 In DBE, a test justifies itself by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. An outcome whose test passes the moment it is written drives nothing. That is "green-on-arrival". The behavior already exists, so the test only *confirms* an affordance rather than *designing* one. Drop it.
 

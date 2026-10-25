@@ -91,7 +91,7 @@ Related:
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
 - the tdd-designs-coverage-prevents-never-break-implementation and the-design-of-a-test-waits-at-the-hinges-including-coverage rules — the coverage case where the cycle is unavailable
-- the no-green-on-arrival-tests rule — the no-op implementation hinge, where there is nothing to drive
+- the drop-an-outcome-whose-test-is-green-on-arrival rule — the no-op implementation hinge, where there is nothing to drive
 
 ---
 
@@ -109,3 +109,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:45 PM PT
