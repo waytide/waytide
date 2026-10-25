@@ -4,7 +4,7 @@ Design By Efferent is a design tool. Do not perform red-green-refactor as choreo
 
 A test written before its implementation exists is trivially going to fail. That failure teaches nothing — do not stop to observe it, and do not treat the red bar as a checkpoint. The point of the test was never the failure.
 
-**What this rejects is the *unchosen* cycle, performed because the form calls for it.** An engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt. See the the-implementation-hinge-offers-the-red-green-refactor-cycle rule. That is not choreography — the loop stopped, a person weighed two real alternatives, and the decision was theirs. Choreography is the cycle nobody decided to run.
+**What this rejects is the *unchosen* cycle, performed because the form calls for it.** An engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt. See the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule. That is not choreography — the loop stopped, a person weighed two real alternatives, and the decision was theirs. Choreography is the cycle nobody decided to run.
 
 The point is the cradle. Approach every unit from the efferent side first — the test is the first efferent reference. Authoring the actuation before the implementation exists forces the unit's interface to be designed from the use site. What the efferent view discovers is the unit's **solubility**: how readily it dissolves into the reader's understanding. The target is the greatest simplicity possible — maximum solubility, minimal necessary complexity, found rather than presumed.
 
@@ -23,7 +23,7 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 3. A test written before its implementation will trivially fail. Do not stop to observe that failure.
 4. Do not treat the red bar as a checkpoint.
 5. What is rejected is the unchosen cycle, the one performed because the form calls for it.
-6. An engineer may choose the red/green/refactor cycle at the implementation hinge, for a particular unit. See the the-implementation-hinge-offers-the-red-green-refactor-cycle rule.
+6. An engineer may choose the red/green/refactor cycle at the implementation hinge, for a particular unit. See the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule.
 7. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt.
 8. A cycle the engineer chose after weighing two real alternatives is not choreography. Only the engineer's choice makes the cycle legitimate.
 9. Approach every unit from the efferent side first. The test is the first efferent reference.
@@ -49,7 +49,7 @@ Related:
 - the human-in-the-loop rule
 - the first-turn rule
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
-- the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — the chosen cycle this does not reject
+- the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — the chosen cycle this does not reject
 
 ---
 
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT

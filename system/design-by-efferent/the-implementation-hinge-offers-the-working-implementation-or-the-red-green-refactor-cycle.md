@@ -1,4 +1,4 @@
-# The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle
+# The implementation hinge offers the working implementation or the red-green-refactor cycle
 
 At the **implementation hinge** — the fourth of the five — the agent puts two candidates to the engineer:
 

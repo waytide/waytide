@@ -1,4 +1,4 @@
-# The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle
+# The implementation hinge offers the working implementation or the red-green-refactor cycle
 
 At the **implementation hinge** — the fourth of the five — the agent puts two candidates to the engineer:
 
@@ -85,6 +85,10 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 3. Then run the suite, then green, then refactor.
 4. **Why:** whether to drive an implementation through a failing test is a subtle, load-bearing judgment about that unit. Offering it as a candidate lets the engineer compare real alternatives rather than ratify one proposal.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named the-implementation-hinge-offers-the-red-green-refactor-cycle and titled "The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle".
+
 Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the five hinges, of which this is the fourth
@@ -112,3 +116,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:45 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT

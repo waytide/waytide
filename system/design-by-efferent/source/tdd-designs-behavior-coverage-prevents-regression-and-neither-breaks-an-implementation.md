@@ -35,7 +35,7 @@ Until Sun Oct 25 2026 this rule was named tdd-designs-coverage-prevents-never-br
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
-- the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
+- the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
 - the no-green-on-arrival rule
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
