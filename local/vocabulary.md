@@ -1,6 +1,6 @@
 # Waytide — Vocabulary
 
-This project's own vocabulary: the terms it settles for itself and the word substitutions it enforces. Binding — use these terms and swaps in rules, artifacts, prose, and dialogue. **Its terms and substitutions decide over every package's**, per the `foundation` vocabulary-convention.
+This project's own vocabulary: the terms it settles for itself and the word substitutions it enforces. Binding — use these terms and swaps in rules, artifacts, prose, and dialogue. **Its terms and substitutions decide over every package's**, per the `foundation` a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
 
 **Every word here is one of two things.** This holds for the terms below, and for the **Use** column of any substitutions table in this file.
 

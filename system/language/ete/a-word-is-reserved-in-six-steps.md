@@ -16,7 +16,7 @@
 
 **5. Fall to an ETE category only where no STE category holds the word.** There are five, and the ete-declares-its-own-categories rule declares them. That rule also states this step in its own words: reach for an STE category first.
 
-**6. Write the entry** in the vocabulary of the package whose domain the term belongs to, per the foundation vocabulary-convention. The entry gives the definition, what the STE dictionary says about the word, and the category.
+**6. Write the entry** in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides. The entry gives the definition, what the STE dictionary says about the word, and the category.
 
 **A term is a design decision, so the engineer decides it.** Put the category to them through the selection UI. Bring the lookup in step 1 already done, and the candidate categories named. Steps 4 and 5 are judgment, and step 1 is not.
 
@@ -36,5 +36,5 @@ Related:
 - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — where step 2 stops
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the dictionary and Waytide's vocabulary decide in
-- the foundation vocabulary-convention — which vocabulary the entry is written in
+- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary the entry is written in
 - the foundation present-every-prompt-to-the-engineer-through-the-selection-ui rule — how the decision is put

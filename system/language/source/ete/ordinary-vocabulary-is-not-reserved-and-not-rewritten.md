@@ -39,7 +39,7 @@ Related:
 - the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops
 - the ete-declares-its-own-categories rule — where a term is reserved
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
-- the foundation vocabulary-convention — which vocabulary a term is written in
+- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in
 
 ---
 
@@ -50,3 +50,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT

@@ -22,4 +22,4 @@ Related:
 
 - the ete-declares-its-own-categories rule — the first departure, and the only other one
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts decide in
-- the foundation vocabulary-convention — which vocabulary a term is written in
+- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in

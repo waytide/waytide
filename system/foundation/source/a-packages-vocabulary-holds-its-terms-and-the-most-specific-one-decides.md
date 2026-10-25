@@ -1,4 +1,4 @@
-# `vocabulary.md` — what a package's vocabulary is, which package has one, and which one decides
+# A package's vocabulary holds its terms, and the most specific one decides
 
 A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces. It is binding. Use its terms and its substitutions in code, tests, rules, designs, commits, records, and dialogue.
 
@@ -110,6 +110,8 @@ A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry
 
 **What it cost to place it there.** The read instruction previously named `waytide/local/rules/` and said *read only that one directory beside the packages*. So a binding file anywhere else under `waytide/local/` would have gone unread. Placing the vocabulary beside `rules/` therefore reached `session-start.sh`, the announce-waytide-at-session-start rule, the rules-convention, the file-names rule, and the bootstrap `install.sh` generates. That cost was taken deliberately, for the reason above: the alternative put a glossary in the rules directory and named it like a decision.
 
+Until Sun Oct 25 2026 this rule was named vocabulary-convention and titled "`vocabulary.md` — what a package's vocabulary is, which package has one, and which one decides".
+
 Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
@@ -135,3 +137,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 1:17:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT

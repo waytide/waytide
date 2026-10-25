@@ -21,4 +21,4 @@ Related:
 - the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops
 - the ete-declares-its-own-categories rule — where a term is reserved
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
-- the foundation vocabulary-convention — which vocabulary a term is written in
+- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in

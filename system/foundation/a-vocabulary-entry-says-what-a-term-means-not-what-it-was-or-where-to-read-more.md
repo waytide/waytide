@@ -24,7 +24,7 @@
 
 **The decision log.** A term that changes meaning, moves, or stops being used is a decision, and the the-log-holds-one-file-per-decision-with-a-one-line-title already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
 
-**A discontinuation is not an exception.** The vocabulary-convention gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
+**A discontinuation is not an exception.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
 
 **Why:** a vocabulary is read to settle what a word means right now. A reader meets it mid-sentence, with a word in hand and a question about that word. History answers a question they did not ask, and it grows: every change adds a clause, and no clause is ever removed, so the entry drifts from being a definition toward being a record of its own edits.
 
@@ -38,7 +38,7 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 
 Related:
 
-- the vocabulary-convention — what a vocabulary holds, and which one decides
+- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — what a vocabulary holds, and which one decides
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — where the history goes instead
 - the `language` package's a-word-is-reserved-in-six-steps rule — the sequence that produces an entry, whose sixth step this constrains
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — the log entry, which is a historical record and is left as written

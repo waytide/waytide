@@ -49,7 +49,7 @@ Related:
 
 - the ete-declares-its-own-categories rule — the first departure, and the only other one
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts decide in
-- the foundation vocabulary-convention — which vocabulary a term is written in
+- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in
 
 ---
 
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:11:48 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:47 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT

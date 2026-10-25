@@ -23,4 +23,4 @@ Related:
 - the-journal-is-read-at-session-start — the read this rule qualifies
 - the journal-convention — where the journal lives and what one entry is
 - the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the form a binding rule takes, and where one lives
-- the foundation package's vocabulary-convention — where a term is settled
+- the foundation package's a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — where a term is settled

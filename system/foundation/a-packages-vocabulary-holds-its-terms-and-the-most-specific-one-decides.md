@@ -1,4 +1,4 @@
-# `vocabulary.md` — what a package's vocabulary is, which package has one, and which one decides
+# A package's vocabulary holds its terms, and the most specific one decides
 
 A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces. It is binding. Use its terms and its substitutions in code, tests, rules, designs, commits, records, and dialogue.
 

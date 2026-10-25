@@ -29,5 +29,5 @@ Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, 
 Related:
 
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format this governs the lines of
-- the vocabulary-convention — the vocabularies, whose entries are prose the same way
+- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the vocabularies, whose entries are prose the same way
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer whose lines are exempt
