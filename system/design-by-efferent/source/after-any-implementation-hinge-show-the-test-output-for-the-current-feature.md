@@ -24,6 +24,10 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 8. **Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
 
 
+## History
+
+Until Sun Oct 25 2026 this rule was named show-feature-test-output-after-implementation-hinge.
+
 Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
@@ -45,3 +49,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:38:48 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:27:16 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:38:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT

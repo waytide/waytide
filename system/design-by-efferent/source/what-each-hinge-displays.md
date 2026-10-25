@@ -22,7 +22,7 @@ It is *also* a function of what the observation then reads about the result. So 
 
 **The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived, and withholds the thing the judgment is made on. The engineer would then be asked for a solubility verdict on an artifact they have not seen.
 
-The implementation leads, because it is what the hinge is about. The test and the feature's output are shown with it. See the show-feature-test-output-after-implementation-hinge rule.
+The implementation leads, because it is what the hinge is about. The test and the feature's output are shown with it. See the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 
 **Why:** each hinge is a distinct deliberation, and what is on screen decides what can be deliberated. Too little and the human is asked to judge something in isolation that has no meaning in isolation. The load-bearing linkage (do *these* controls, fed into *this* actuation, produce a result *this* observation reads, and does the whole thing exercise the outcome?) then has to be reconstructed mentally.
 
@@ -63,7 +63,7 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 1. Hinge 4 is where solubility is judged. An awkward implementation signals that the actuation is wrong.
 2. Do not show the run alone at hinge 4. Showing only the run withholds the code the solubility judgment is made on.
 3. Once a candidate is accepted, show the implementation first, ahead of the test and the feature's output.
-4. Show the test and the feature's output with the implementation, per the show-feature-test-output-after-implementation-hinge rule.
+4. Show the test and the feature's output with the implementation, per the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 5. Do not advance to naming before the implementation is on screen.
 
 ## How to apply
@@ -78,7 +78,7 @@ Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
 - the first-turn rule — the three test hinges produce turn one
-- the show-feature-test-output-after-implementation-hinge rule — the feature's test output that accompanies the implementation at hinge 4
+- the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule — the feature's test output that accompanies the implementation at hinge 4
 - the folder-mirroring rule
 - the test-block-is-assertion-only rule
 
@@ -95,3 +95,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 8:55:06 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
