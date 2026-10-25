@@ -62,7 +62,7 @@ Give it a usage line in its header, naming the command that runs it. Write the c
 
 Where the script is run by the harness rather than by a person, record its invocation. Say what runs it. When reviewing a script someone added, check the mode before anything else. It is the one defect that will not show up until another machine runs it. Related:
 
-- the `git` package's run-suite-before-commit rule — the other thing confirmed before a commit
+- the `git` package's run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before a commit
 - the foundation README's account of which scripts are authoring tools and which are carried to a consuming project
 
 ---
@@ -83,3 +83,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:51:09 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT

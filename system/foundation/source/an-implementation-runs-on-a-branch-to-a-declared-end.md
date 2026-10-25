@@ -65,7 +65,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project decision log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
-**A `[feature]` is verified before integrating, and nothing gates the merge.** `run-suite-before-commit` already achieves it, every commit on the branch having been verified. The merged result is a combination neither branch ran, so a feature whose commits all passed can still break the suite on integration. That is ordinary and is fixed from there. There is no affirmation step, because a feature has no finding to promote.
+**A `[feature]` is verified before integrating, and nothing gates the merge.** `run-the-test-suite-after-changes-before-considering-whether-to-commit` already achieves it, every commit on the branch having been verified. The merged result is a combination neither branch ran, so a feature whose commits all passed can still break the suite on integration. That is ordinary and is fixed from there. There is no affirmation step, because a feature has no finding to promote.
 
 **Refuted, inconclusive, abandoned, and superseded keep the record and do not merge.** The record is maintained and marked, so the attempt and its findings survive as evidence.
 
@@ -194,7 +194,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 5. Where it produced implementation, its branch merges to the upstream branch, after the tests.
 6. Where no test covers the work, the merge also waits for specific confirmation.
 7. An observation-only experiment's affirmation is the log copy alone.
-8. A `[feature]` merges with no gate, because run-suite-before-commit verified every commit.
+8. A `[feature]` merges with no gate, because run-the-test-suite-after-changes-before-considering-whether-to-commit verified every commit.
 9. The merged result can still break the suite, and that is fixed from there.
 10. A feature has no affirmation.
 11. Refuted, inconclusive, abandoned, and superseded work keeps its record.
@@ -247,7 +247,7 @@ Related:
 - the the-implementations-directory-records-each-implementations-lifecycle — the record, the tags, and the state words
 - the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-runs-from-actuation-to-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
-- the `git` run-suite-before-commit and announce-a-branch-switch-in-a-bordered-block rules
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
 
 ---
 
@@ -267,3 +267,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT

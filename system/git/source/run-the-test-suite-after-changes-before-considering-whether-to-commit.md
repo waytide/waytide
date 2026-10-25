@@ -28,6 +28,10 @@ After making any code change, run the full test suite and confirm it passes **be
 16. **Why:** Committing is the point of no easy return. Running the suite before deliberating keeps a failing change from becoming a commit candidate. It keeps every commit in the history verified. The commit waits on the bar, not on the human's attention.
 
 
+## History
+
+Until Sun Oct 25 2026 this rule was named run-suite-before-commit.
+
 Related:
 
 - the human-in-the-loop TDD rule
@@ -49,3 +53,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:18:37 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT

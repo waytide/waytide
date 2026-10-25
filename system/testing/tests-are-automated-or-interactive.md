@@ -5,7 +5,7 @@
 - **`test/automated/`** — tests a machine runs and a machine judges. This is the **suite** every other rule in this package means.
 - **`test/interactive/`** — tests the **engineer** runs, human-in-the-loop. A person drives the run and a person judges what came back.
 
-**Only `test/automated/` runs before a commit.** The `git` package's run-suite-before-commit rule makes a passing suite a precondition of the commit decision, and the suite it means is the automated one.
+**Only `test/automated/` runs before a commit.** The `git` package's run-the-test-suite-after-changes-before-considering-whether-to-commit rule makes a passing suite a precondition of the commit decision, and the suite it means is the automated one.
 
 ## An interactive test is the engineer's to run
 
@@ -25,7 +25,7 @@
 
 **A project with no `test/interactive/` is the ordinary case**, and nothing is missing.
 
-**A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and run-suite-before-commit is satisfied vacuously rather than violated.
+**A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and run-the-test-suite-after-changes-before-considering-whether-to-commit is satisfied vacuously rather than violated.
 
 **Waytide's own composite repository was in that second state** from 2026-08-24 to 2026-10-10. Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. It had no automated suite at all until 2026-10-10, when `test/automated/startup-display.sh` became its first automated test. That test runs a hook script on a fixed input and compares the output, with no network access and no person in the run.
 
@@ -42,6 +42,6 @@ Where a project has no automated suite, run nothing and report nothing missing.
 Related:
 
 - the a-suspended-test-file-is-named-with-a-leading-underscore rule — the other thing that decides what a run contains
-- the `git` run-suite-before-commit rule — the pre-commit run this fixes the membership of. It is a citation rather than a dependency: this rule states what the directories are and who runs each, and it applies whole in a project that does not install the `git` package
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the pre-commit run this fixes the membership of. It is a citation rather than a dependency: this rule states what the directories are and who runs each, and it applies whole in a project that does not install the `git` package
 - the `design-by-efferent` the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — where the engineer's attention is spent, and the reason it is not spent by a machine's schedule
 - the `language` an-answer-is-a-list-and-prose-must-justify-itself rule — the form the run report takes

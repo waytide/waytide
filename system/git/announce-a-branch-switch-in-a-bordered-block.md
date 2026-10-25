@@ -44,4 +44,4 @@ BRANCH SWITCHED
 Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
-- the run-suite-before-commit rule — the other thing confirmed before work is recorded
+- the run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before work is recorded

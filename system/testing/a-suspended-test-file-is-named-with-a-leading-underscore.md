@@ -36,4 +36,4 @@ Related:
 - the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other sense of the word, which this is not
 - the `foundation` the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
-- the `git` run-suite-before-commit rule — the run this narrows the membership of
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the run this narrows the membership of

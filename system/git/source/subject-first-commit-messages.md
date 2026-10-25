@@ -49,7 +49,7 @@ Related:
 - the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule
 - the no-Claude-coauthor rule
 - the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule — the subject's 50 characters and the body's 72
-- the run-suite-before-commit rule
+- the run-the-test-suite-after-changes-before-considering-whether-to-commit rule
 
 ---
 
@@ -71,3 +71,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:44 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT

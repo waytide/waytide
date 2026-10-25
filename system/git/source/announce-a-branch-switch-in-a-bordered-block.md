@@ -92,7 +92,7 @@ BRANCH SWITCHED
 Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
-- the run-suite-before-commit rule — the other thing confirmed before work is recorded
+- the run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before work is recorded
 
 ---
 
@@ -106,3 +106,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 2:12:54 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 2:13:21 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
