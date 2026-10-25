@@ -12,7 +12,7 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 
 **The engineer's own decision to amend.** They may amend a plan for their own reasons at any time, by dated addition. This rule removes an obligation rather than a permission.
 
-**Which side is stale.** The work-sessions-convention already states that either side may be stale, that a design can be right about a direction the work drifted from, and that only the engineer can say which. This rule settles the ordinary case and leaves that judgment where it is.
+**Which side is stale.** The a-work-session-record-is-the-narrative-of-one-work-session already states that either side may be stale, that a design can be right about a direction the work drifted from, and that only the engineer can say which. This rule settles the ordinary case and leaves that judgment where it is.
 
 **Why:** a plan edited to match the work stops being a plan. It becomes a second record of what was built, beside the records that already carry that, and its value as a statement of intent is spent. It also becomes unfalsifiable — a plan that always agrees with the work can never be found to have been wrong, so nothing is learned from having written it.
 
@@ -20,6 +20,6 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 
 Related:
 
-- the work-sessions-convention — the design reconciliation this settles the ordinary answer to
+- the a-work-session-record-is-the-narrative-of-one-work-session — the design reconciliation this settles the ordinary answer to
 - the the-items-directory-holds-the-projects-items-one-file-per-item — amendment by dated addition, and supersession rather than rewriting
 - this package's vocabulary — the reconcile term, and a design being reconciled against rather than regenerated from the work downstream of it

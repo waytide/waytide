@@ -77,7 +77,7 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 Related:
 
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory and the reconcile entry in this package's vocabulary — where the standing rule is stated
-- the work-sessions-convention — the title format, an instance of the standing rule
+- the a-work-session-record-is-the-narrative-of-one-work-session — the title format, an instance of the standing rule
 
 ---
 
@@ -93,3 +93,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT

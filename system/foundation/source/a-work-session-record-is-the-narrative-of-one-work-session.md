@@ -1,4 +1,4 @@
-# `waytide/local/logs/work-sessions/` — the narrative record of a work session
+# A work session record is the narrative of one work session
 
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
@@ -111,6 +111,8 @@ The rule was written in `foundation` rather than in the `plan` package on that g
 
 Until 2026-10-25 the statement that the prompt always says "work session" sat in the recording prompt's bullet alone, and How to apply worded the design reconciliation's third option as "no design bears on this session". The engineer settled that every prompt this convention puts says "work session", and How to apply now says it too.
 
+Until Sun Oct 25 2026 this rule was named work-sessions-convention and titled "`waytide/local/logs/work-sessions/` — the narrative record of a work session".
+
 Related:
 
 - the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
@@ -166,3 +168,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT

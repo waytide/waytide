@@ -52,7 +52,7 @@ Related:
 
 - the file-names rule — the UTC filename prefix
 - record-a-rules-authorship-in-a-provenance-footer — the footer's format
-- the work-sessions-convention — the work session record's dated title
+- the a-work-session-record-is-the-narrative-of-one-work-session — the work session record's dated title
 - working-state-artifacts-carry-a-provenance-footer
 
 ---
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 1:19:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:10 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
