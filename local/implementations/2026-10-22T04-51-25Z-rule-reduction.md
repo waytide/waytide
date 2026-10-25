@@ -80,6 +80,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Phase 1 increment added | Clarify the rule names | Sun Oct 25 2026 at 4:01:50 PM PT |
 | Rule names — scope | Titles too, since the name is derived from the title | Sun Oct 25 2026 at 4:04:18 PM PT |
 | Rule names — renames | Citations in other rules are updated; installed copies take the new names on refresh | Sun Oct 25 2026 at 4:05:29 PM PT |
+| Rule names — clarity | What makes a rule's content clear | Sun Oct 25 2026 at 4:06:30 PM PT |
 
 ## What actually happened
 
@@ -1346,6 +1347,8 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 **Titles are in scope, the engineer settled the same day, since a rule's name is derived from its title.** The increment clarifies each title, and the name follows from it.
 
 **A rename updates the citations in other rules, and the installed copies need nothing**, the engineer settled. A consuming project holds the old names only until it is refreshed. What stays open is what makes a title clear, and how that is judged.
+
+**A title is clear by the same thing that makes a rule's content clear**, the engineer settled. It is held to solubility and judged the same way. Nothing about the increment is now left unsettled.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4501,3 +4504,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 3:58:02 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
