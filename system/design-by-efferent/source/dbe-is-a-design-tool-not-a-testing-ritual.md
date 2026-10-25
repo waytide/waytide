@@ -48,7 +48,7 @@ Related:
 - the DBE vocabulary — cradle, efferent, solubility
 - the human-in-the-loop rule
 - the first-turn rule
-- the tdd-designs-coverage-prevents-never-break-implementation rule
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
 - the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — the chosen cycle this does not reject
 
 ---
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT

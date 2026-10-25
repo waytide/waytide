@@ -1,4 +1,4 @@
-# TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test
+# TDD designs behavior, coverage prevents regression, and neither breaks an implementation
 
 Tests serve two different purposes in two different processes, and conflating them causes unnatural changes:
 

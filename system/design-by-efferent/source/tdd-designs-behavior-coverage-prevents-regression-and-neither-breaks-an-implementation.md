@@ -1,4 +1,4 @@
-# TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test
+# TDD designs behavior, coverage prevents regression, and neither breaks an implementation
 
 Tests serve two different purposes in two different processes, and conflating them causes unnatural changes:
 
@@ -28,6 +28,10 @@ Tests serve two different purposes in two different processes, and conflating th
 11. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
 12. **Why:** Forcing TDD's red-to-green onto coverage is a category error. It deforms shipped implementations to satisfy a misplaced ritual, and it blurs design tests with regression tests.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named tdd-designs-coverage-prevents-never-break-implementation and titled "TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test".
+
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
@@ -50,3 +54,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:38:31 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT

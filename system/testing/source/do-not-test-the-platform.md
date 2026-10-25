@@ -32,7 +32,7 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 Related:
 
-- the tdd-designs-coverage-prevents-never-break-implementation rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
 
 ---
 
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:46:46 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT

@@ -35,7 +35,7 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 
 Related:
 
-- the tdd-designs-coverage-prevents-never-break-implementation rule, and the prevent substitution — in this package's vocabulary
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule, and the prevent substitution — in this package's vocabulary
 
 ---
 
@@ -47,3 +47,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:54:59 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT

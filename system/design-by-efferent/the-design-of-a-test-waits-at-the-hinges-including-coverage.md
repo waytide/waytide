@@ -18,4 +18,4 @@ Related:
 
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
 - the what-each-hinge-displays rule
-- the companion tdd-designs-coverage-prevents-never-break-implementation rule
+- the companion tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
