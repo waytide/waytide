@@ -1,4 +1,4 @@
-# Don't test the platform — a transparent pass-through has nothing of ours to pin
+# Do not test the platform
 
 Test the library's **own** behavior and decisions, not the language or system it sits on. When a unit is a **transparent pass-through** to a platform primitive. It may add no branch, guard, normalization, or policy of its own on that path, and just forward to the primitive. Then its behavior on that path **is** the platform's. A test there tests the platform, not the library.
 

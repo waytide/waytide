@@ -1,4 +1,4 @@
-# Don't test the platform — a transparent pass-through has nothing of ours to pin
+# Do not test the platform
 
 Test the library's **own** behavior and decisions, not the language or system it sits on. When a unit is a **transparent pass-through** to a platform primitive. It may add no branch, guard, normalization, or policy of its own on that path, and just forward to the primitive. Then its behavior on that path **is** the platform's. A test there tests the platform, not the library.
 
@@ -30,6 +30,10 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 12. Do not test the bare forwarding to the primitive underneath a tested policy, such as the `file.empty?` beneath those policies.
 13. **Why:** Tests exist to prevent regressions in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence when none of our code ran.
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "Don't test the platform — a transparent pass-through has nothing of ours to pin".
+
 Related:
 
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the assert-an-error-message-only-when-it-alone-confirms-the-error rule — each is about testing what actually discriminates *our* behavior
@@ -51,3 +55,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:46:46 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:09 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:35 PM PT
