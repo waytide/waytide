@@ -1,4 +1,4 @@
-# Expand an abbreviation on first use, or don't use it
+# Expand an abbreviation on first use
 
 Do not use an abbreviation the reader may not already know without spelling it out. On its own, "HITL" or "DBE" tells the reader nothing until they have seen what it stands for.
 

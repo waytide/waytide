@@ -1,4 +1,4 @@
-# Expand an abbreviation on first use, or don't use it
+# Expand an abbreviation on first use
 
 Do not use an abbreviation the reader may not already know without spelling it out. On its own, "HITL" or "DBE" tells the reader nothing until they have seen what it stands for.
 
@@ -24,6 +24,10 @@ Do not use an abbreviation the reader may not already know without spelling it o
 10. Use a project abbreviation freely only after its definition, such as the design-by-efferent vocabulary.
 11. **Why:** an unexplained abbreviation forces the reader to guess or look it up. It saves the writer a few letters and costs the reader the meaning.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named expand-abbreviations-on-first-use and titled "Expand an abbreviation on first use, or don't use it".
+
 Related:
 
 - `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens
@@ -38,3 +42,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:27 PM PT
