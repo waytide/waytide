@@ -50,7 +50,7 @@ Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the filename stamp this is derived from, and its local time
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
-- the omit-body-when-same-as-title rule — the body this line stands above
+- the where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rule — the body this line stands above
 
 ---
 
@@ -65,3 +65,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT

@@ -17,6 +17,10 @@ This is the title-and-body counterpart of the journal-entries-live-in-the-writer
 5. Where the body adds no fact, no detail, and no framing beyond the title, drop the body and keep the title.
 6. **Why:** it avoids redundancy. A one-line entry whose title already says everything does not need the same words again below it.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named omit-body-when-same-as-title.
+
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground
@@ -30,3 +34,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
