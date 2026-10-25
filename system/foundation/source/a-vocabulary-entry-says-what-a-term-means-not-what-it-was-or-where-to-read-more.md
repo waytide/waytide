@@ -1,4 +1,4 @@
-# A vocabulary entry says what a term means — never what it used to be, and never where to read more
+# A vocabulary entry says what a term means, not what it was or where to read more
 
 **A vocabulary entry states the term's current meaning and stops there.** Two things are barred.
 
@@ -67,6 +67,10 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 4. It does not narrate when the word was dropped or what carried it before.
 5. **Why:** a vocabulary is read to settle what a word means now. History clauses accumulate and invite doubt about whether the old meaning still applies.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named a-vocabulary-entry-says-what-a-term-means-not-what-it-was and titled "A vocabulary entry says what a term means — never what it used to be, and never where to read more".
+
 Related:
 
 - the vocabulary-convention — what a vocabulary holds, and which one decides
@@ -78,3 +82,4 @@ Related:
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:21 PM PT

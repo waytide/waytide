@@ -1,4 +1,4 @@
-# A vocabulary entry says what a term means — never what it used to be, and never where to read more
+# A vocabulary entry says what a term means, not what it was or where to read more
 
 **A vocabulary entry states the term's current meaning and stops there.** Two things are barred.
 
