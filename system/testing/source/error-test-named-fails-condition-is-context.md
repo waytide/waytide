@@ -16,7 +16,7 @@ end
 
 Naming an error test for its behavior rather than a value comparison is fully consistent with the "Is"-naming rule. That rule reserves "Is" for value-equals. "Fails" is a plain outcome name, not an "Is" case.
 
-**Relation to the context rule:** an error test always takes an enclosing context, because the context carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail". So the context-only-for-local-instrumentation rule, which warns of a context that holds only a test, never warns of a leading `When …` context.
+**Relation to the context rule:** an error test always takes an enclosing context, because the context carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail". So the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule, which warns of a context that holds only a test, never warns of a leading `When …` context.
 
 **How to apply:** name any `assert_raises` test "Fails". Name the non-raising assertion "Doesn't fail". Put it inside a `context` named for the condition, the "when …".
 
@@ -38,7 +38,7 @@ end
 
 6. Several conditions over the same actuation may sit as sibling `When …` contexts, each with its own `test "Fails"`.
 7. "Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals.
-8. An error test always takes an enclosing context, because the context carries the condition. The context-only-for-local-instrumentation rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
+8. An error test always takes an enclosing context, because the context carries the condition. The a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
 9. **Why:** an error outcome states "under condition X, the actuation fails." The scenario belongs in a context and the observed fact in the test. "Fails" names the behavior directly and keeps test names uniform.
 
 ## History
@@ -48,7 +48,7 @@ Until 2026-10-24 an error test's context was called the deliberate exception to 
 Related:
 
 - the test-name-is-prefix rule
-- the context-only-for-local-instrumentation rule
+- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
 
 ---
 
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:56:34 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT

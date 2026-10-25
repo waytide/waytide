@@ -41,7 +41,7 @@ Related:
 - the tdd-test-structure rule — actuate once at the top
 - the single-case-test-named-for-feature rule — when a folder is warranted and how files are named
 - the error-test-named-fails-condition-is-context rule — the condition context and the `Fails` name
-- the context-only-for-local-instrumentation rule
+- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
 - the `language` package's vocabulary
 - where the **normal path** term and its exceptional-case counterpart are settled
 
@@ -59,3 +59,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:48:55 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT

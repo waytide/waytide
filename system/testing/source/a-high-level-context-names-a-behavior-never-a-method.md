@@ -69,7 +69,7 @@ Related:
 
 - the test-context-nesting-mirrors-folders rule — the path the contexts mirror
 - the single-case-test-named-for-feature rule — the file named for the feature rather than for a case
-- the context-only-for-local-instrumentation rule — when a context is warranted at all
+- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — when a context is warranted at all
 - the predicate-context-name rule — a deeper context naming an implementation element
 - the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule
 
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT

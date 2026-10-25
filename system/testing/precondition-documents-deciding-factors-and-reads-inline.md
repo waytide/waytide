@@ -108,5 +108,5 @@ Related:
 - the controls-not-factories-fixtures-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
 - the test-block-is-assertion-only rule — the explaining-variable discipline this is a stated exception to
 - the tdd-test-structure rule — the control → actuate → observe shape a precondition sits within
-- the context-only-for-local-instrumentation rule — the other thing a context holds beside a test
+- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — the other thing a context holds beside a test
 - the do-not-test-the-platform rule — the boundary a precondition is not to be confused with

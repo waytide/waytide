@@ -1,4 +1,4 @@
-# Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly, and warn of a context that holds only a test
+# A test takes a context only when its outcome needs local instrumentation
 
 A `test` block holds **exactly one assertion** and nothing else (per the test-block-is-assertion-only rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
