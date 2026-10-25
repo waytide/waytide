@@ -33,7 +33,7 @@ To load them now, type: load waytide.
 
   **The move took a hazard with it.** The mark's backslashes had to be doubled here. The notice is interpolated into a JSON string by `printf` with no escaping, and a lone backslash begins a JSON escape sequence. `\_` is not a valid one, the harness fails to parse the output, and **the notice disappears with no error at all**. That constraint is now off the art entirely. It still governs everything else this hook emits, and the load line's no-quotation-marks rule below is the same hazard arriving through a different character.
 
-  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the implementations-convention). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
+  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the the-implementations-directory-records-each-implementations-lifecycle). An experiment whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Abandoned**, or **Superseded** has concluded, as has a feature that is **Completed**, **Abandoned**, or **Superseded**. Those are not reported. **Suspended** and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
 
   **Why the notice carries it.** The lifecycle requires that an experiment never be left silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
 
@@ -399,3 +399,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 11:43:56 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 12:07:42 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:02 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT

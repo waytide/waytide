@@ -15,7 +15,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 **An unmerged branch is deleted on confirmation**, which the an-implementation-runs-on-a-branch-to-a-declared-end rule requires before the branch goes. A record that existed only there is reachable afterward from a reflog entry or a dangling object, on one machine, until it is garbage collected. That is not a record.
 
-**So the states that keep the record as evidence are exactly the states that can lose it.** The implementations-convention says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
+**So the states that keep the record as evidence are exactly the states that can lose it.** The the-implementations-directory-records-each-implementations-lifecycle says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
 
 **A record committed to `master` while the work is on a branch is the ordinary practice here**, and it is what has kept this from biting. Practice is not the rule, and this rule does not rely on it: the entry carries the substance whenever the branch did not merge, whether or not the record happens to have reached `master` by another route.
 
@@ -43,7 +43,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 Related:
 
-- the implementations-convention — the record, the two kinds, and the state words each takes
+- the the-implementations-directory-records-each-implementations-lifecycle — the record, the two kinds, and the state words each takes
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the merge, and the branch deletion that makes an unmerged record unreachable
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form, and the general trigger this makes specific

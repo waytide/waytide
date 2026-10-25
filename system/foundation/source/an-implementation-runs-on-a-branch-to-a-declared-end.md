@@ -6,7 +6,7 @@
 
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
-**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the implementations-convention). Every clause below that names one kind names it because of that difference, and no other clause varies.
+**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the the-implementations-directory-records-each-implementations-lifecycle). Every clause below that names one kind names it because of that difference, and no other clause varies.
 
 ## The branch
 
@@ -61,7 +61,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The end
 
-**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the implementations-convention's.
+**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-records-each-implementations-lifecycle's.
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project decision log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
@@ -110,7 +110,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 1. An implementation runs on its own branch, through the five hinges, to a declared state.
 2. It is never left silently open.
 3. Its tag decides the parts that differ.
-4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the implementations-convention).
+4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the the-implementations-directory-records-each-implementations-lifecycle).
 5. A clause below names a kind only because of that difference.
 
 ## The branch
@@ -188,7 +188,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 ## The end
 
 1. Every implementation ends in a declared state, or is suspended, which pauses it.
-2. The words are the implementations-convention's.
+2. The words are the the-implementations-directory-records-each-implementations-lifecycle's.
 3. An `[experiment]` is affirmed only on the engineer's explicit declaration.
 4. On affirmation, its log is copied into the project decision log.
 5. Where it produced implementation, its branch merges to the upstream branch, after the tests.
@@ -244,7 +244,7 @@ Until Sun Oct 25 2026 this rule was named implementation-lifecycle and titled "A
 
 Related:
 
-- the implementations-convention — the record, the tags, and the state words
+- the the-implementations-directory-records-each-implementations-lifecycle — the record, the tags, and the state words
 - the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-runs-from-actuation-to-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
 - the `git` run-suite-before-commit and announce-a-branch-switch-in-a-bordered-block rules
@@ -266,3 +266,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT

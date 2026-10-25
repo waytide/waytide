@@ -10,7 +10,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **It reaches every record that carries a state line** — an implementation record, whether an experiment or a feature, and an item. Each convention fixes its own words, and this rule fixes only where the word is rendered.
 
-**A record with no state line takes no suffix**, which now reaches an implementation record alone. Absence is the in-progress state in the implementations-convention, and the session-start notice is what reports them as open, so a name carrying no suffix is answered elsewhere.
+**A record with no state line takes no suffix**, which now reaches an implementation record alone. Absence is the in-progress state in the the-implementations-directory-records-each-implementations-lifecycle, and the session-start notice is what reports them as open, so a name carrying no suffix is answered elsewhere.
 
 **An item always carries a suffix.** Absence stopped being a state for it on 2026-08-16, when **Active** was added — precisely because this rule moved the state into the filename, where a missing suffix and an oversight look the same. That asymmetry is deliberate: the record nothing reports is the one that must say so in its own name. **An observation's suffix is always `-STATED`**, since that is its one state.
 
@@ -82,7 +82,7 @@ Until Sun Oct 25 2026 this rule was named a-record-ends-with-its-state-in-upper-
 
 Related:
 
-- the implementations-convention — the record whose state line is absent while the work is under way, and the words each kind takes
+- the the-implementations-directory-records-each-implementations-lifecycle — the record whose state line is absent while the work is under way, and the words each kind takes
 - the items-convention — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the rules-convention — referencing by name rather than path, and the reconciliation a rename obliges
@@ -102,3 +102,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT

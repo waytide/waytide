@@ -1,4 +1,4 @@
-# `waytide/local/implementations/` — the record of an implementation's lifecycle
+# The implementations directory records each implementation's lifecycle
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
@@ -161,6 +161,8 @@ Leave the state line off while the work is under way. Add it when the record rea
 
 Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the concluding words both kinds take", though Suspended is defined as paused, not ended, and the filename took its state suffix "once the record concludes". That left open whether a suspended record takes the suffix, which the a-record-ends-with-its-state-in-upper-case rule gives to any record carrying a state line. The engineer settled that Suspended is a state and not a conclusion, and that the suffix follows the state line.
 
+Until Sun Oct 25 2026 this rule was named implementations-convention and titled "`waytide/local/implementations/` — the record of an implementation's lifecycle".
+
 Related:
 
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
@@ -185,3 +187,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
