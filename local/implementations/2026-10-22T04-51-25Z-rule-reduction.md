@@ -79,6 +79,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Compressed text — naming | Compiles the compressed text when switched; Removes the History and Compressed sections | Wed Oct 21 2026 at 11:11:49 PM PT |
 | Phase 1 increment added | Clarify the rule names | Sun Oct 25 2026 at 4:01:50 PM PT |
 | Rule names — scope | Titles too, since the name is derived from the title | Sun Oct 25 2026 at 4:04:18 PM PT |
+| Rule names — renames | Citations in other rules are updated; installed copies take the new names on refresh | Sun Oct 25 2026 at 4:05:29 PM PT |
 
 ## What actually happened
 
@@ -1343,6 +1344,8 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 **The method is not yet set.** Open are what makes a name clear and how it is judged, whether a rule's title is in scope beside its name, and how a rename reaches the citations in other rules and the copies installed in consuming projects.
 
 **Titles are in scope, the engineer settled the same day, since a rule's name is derived from its title.** The increment clarifies each title, and the name follows from it.
+
+**A rename updates the citations in other rules, and the installed copies need nothing**, the engineer settled. A consuming project holds the old names only until it is refreshed. What stays open is what makes a title clear, and how that is judged.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4497,3 +4500,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:54:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:58:02 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
