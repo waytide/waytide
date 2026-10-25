@@ -1,4 +1,4 @@
-# Assert error-message content only when it is the sole way to confirm the correct error
+# Assert an error message only when it alone confirms the error
 
 Assert an error's **message content** only in one case. That is where the message is the **only** way for the test to determine that the **correct error was raised under the expected conditions**. Otherwise, do not assert the message.
 
@@ -33,6 +33,10 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 7. Example of yes: a two-step upload can raise `Upload::Error` from the initial post's "rejected" site or the finalize step's "rejected" site.
 8. **Why:** error tests stay about error correctness, not presentation. This gives a precise, testable criterion for when library-specific error classes are "self-evidently the right failure and need no message".
 
+## History
+
+Until Sun Oct 25 2026 this rule was named assert-error-message-only-as-sole-discriminator and titled "Assert error-message content only when it is the sole way to confirm the correct error".
+
 Related:
 
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule, and the prevent substitution — in this package's vocabulary
@@ -48,3 +52,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 10:15:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:09 PM PT

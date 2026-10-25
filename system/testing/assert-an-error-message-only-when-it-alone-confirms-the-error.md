@@ -1,4 +1,4 @@
-# Assert error-message content only when it is the sole way to confirm the correct error
+# Assert an error message only when it alone confirms the error
 
 Assert an error's **message content** only in one case. That is where the message is the **only** way for the test to determine that the **correct error was raised under the expected conditions**. Otherwise, do not assert the message.
 

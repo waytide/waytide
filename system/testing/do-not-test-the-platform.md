@@ -16,4 +16,4 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 Related:
 
-- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the assert-error-message-only-as-sole-discriminator rule — each is about testing what actually discriminates *our* behavior
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the assert-an-error-message-only-when-it-alone-confirms-the-error rule — each is about testing what actually discriminates *our* behavior
