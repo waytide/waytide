@@ -56,7 +56,7 @@ Related:
 - the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe
 - the rules-convention — the read-fresh premise, and where a binding convention goes
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — where a decision goes
-- the observations-convention — where thinking goes before it binds
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — where thinking goes before it binds
 - the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the machine-scoped fact, and where it goes instead
 
 ---
@@ -72,3 +72,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:00 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT

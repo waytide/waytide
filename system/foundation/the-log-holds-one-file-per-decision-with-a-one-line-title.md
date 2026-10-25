@@ -16,7 +16,7 @@ Related:
 
 - the file-names rule — the shared filename convention
 - the rules-convention — a new rule pairs with a log entry
-- the observations-convention — its recording step logs too
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — its recording step logs too
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-groups-the-running-records rule — the running records this sits among
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line an entry carries, in the one form

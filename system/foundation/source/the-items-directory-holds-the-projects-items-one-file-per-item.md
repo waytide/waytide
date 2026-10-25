@@ -51,7 +51,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Suspended** — paused, not ended.
 - **Superseded** — another item replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
-- **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
+- **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes.
 - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
 
 **`Stated` is the third starting word and the only terminal one**, and an observation takes it alone. Every other item takes one of the two below.
@@ -170,7 +170,7 @@ Related:
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry an item takes
-- the observations-convention — an observation, which is an item and carries the promotion path to a rule
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — an observation, which is an item and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and plans-no-code-samples rules
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
 
@@ -204,3 +204,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT

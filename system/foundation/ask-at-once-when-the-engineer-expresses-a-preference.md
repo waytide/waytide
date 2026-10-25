@@ -17,7 +17,7 @@
 Each is genuine, and the selection carries all three:
 
 - **A rule**, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry the rules-convention requires.
-- **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The observations-convention prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
+- **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
 - **Neither**, where the engineer does not want it recorded. It is a real answer, and it is taken without argument.
 
 **A preference the engineer declined to record is not asked about again in the same session.** The answer was given.
@@ -37,5 +37,5 @@ Related:
 - the project-context-lives-in-the-committed-artifacts rule — the store this replaces, and which depends on this one
 - the present-every-prompt-through-askuserquestion rule — the interface the ask uses
 - the rules-convention — the rule and its log entry
-- the observations-convention — the softer landing, preferred where there is doubt
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written

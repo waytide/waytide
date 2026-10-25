@@ -17,7 +17,7 @@
 Each is genuine, and the selection carries all three:
 
 - **A rule**, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry the rules-convention requires.
-- **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The observations-convention prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
+- **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
 - **Neither**, where the engineer does not want it recorded. It is a real answer, and it is taken without argument.
 
 **A preference the engineer declined to record is not asked about again in the same session.** The answer was given.
@@ -56,7 +56,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 1. The selection offers all three candidates as real options.
 2. **A rule** goes in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry that the rules-convention requires.
 3. **An observation** goes in `waytide/local/items/`, for when the thinking has not settled.
-4. Per the observations-convention, prefer an observation when in doubt.
+4. Per the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, prefer an observation when in doubt.
 5. **Neither** applies when the engineer does not want the preference recorded.
 6. Accept "neither" without argument.
 7. If the engineer declines to record a preference, do not ask about it again in the same session.
@@ -73,7 +73,7 @@ Related:
 - the project-context-lives-in-the-committed-artifacts rule — the store this replaces, and which depends on this one
 - the present-every-prompt-through-askuserquestion rule — the interface the ask uses
 - the rules-convention — the rule and its log entry
-- the observations-convention — the softer landing, preferred where there is doubt
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written
 
 ---
@@ -84,3 +84,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
