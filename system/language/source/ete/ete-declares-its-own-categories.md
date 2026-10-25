@@ -1,4 +1,4 @@
-# ETE declares categories of its own
+# ETE declares its own categories
 
 **STE's category lists are closed and its word lists are open.** Rule 1.5 says a technical noun is usable *if you can include it in one or more of these twenty-two categories*. Rule 1.12 says the same of a technical verb and *these four categories*. The words inside each category are only examples, and Rule 1.5 states that outright.
 
@@ -82,6 +82,10 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 10. An ETE category is not a standing permission to use the words that fit it.
 11. **Why:** STE's categories are complete for aerospace maintenance, but they miss some of the method's nouns and every verb whose object is a judgment. Adding the categories is one departure, stated once. Separate exemptions would keep growing, and that growth would go unrecorded.
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "ETE declares categories of its own".
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit
@@ -101,3 +105,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:12:36 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:12 PM PT

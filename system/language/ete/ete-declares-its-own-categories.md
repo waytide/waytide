@@ -1,4 +1,4 @@
-# ETE declares categories of its own
+# ETE declares its own categories
 
 **STE's category lists are closed and its word lists are open.** Rule 1.5 says a technical noun is usable *if you can include it in one or more of these twenty-two categories*. Rule 1.12 says the same of a technical verb and *these four categories*. The words inside each category are only examples, and Rule 1.5 states that outright.
 
