@@ -1,4 +1,4 @@
-# Controls — never "factories", "fixtures", or "arrange"
+# Test values are controls, never factories, fixtures, or arrange
 
 The known, deterministic inputs a test is built from are all **controls**. Those are the helpers that build example values, the example values themselves, and the pre-actuation setup phase where they are established. Hold to the one term for all three:
 

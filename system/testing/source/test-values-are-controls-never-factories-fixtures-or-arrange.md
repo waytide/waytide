@@ -1,4 +1,4 @@
-# Controls — never "factories", "fixtures", or "arrange"
+# Test values are controls, never factories, fixtures, or arrange
 
 The known, deterministic inputs a test is built from are all **controls**. Those are the helpers that build example values, the example values themselves, and the pre-actuation setup phase where they are established. Hold to the one term for all three:
 
@@ -25,6 +25,10 @@ So a test reads **control → actuate → observe** (the assertion is only *how*
 9. Where a test framework has its own `Fixture` context object, the known input values are still controls, not fixtures.
 10. **Why:** "controls" is the established vocabulary of controls-based testing. The other terms are imported jargon that a reader has to map back onto the one concept.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named controls-not-factories-fixtures-arrange and titled "Controls — never "factories", "fixtures", or "arrange"".
+
 Related:
 
 - the `control_` test-variable prefix rule
@@ -40,3 +44,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:29 PM PT

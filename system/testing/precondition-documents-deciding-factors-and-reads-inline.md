@@ -105,7 +105,7 @@ An actuation's completion may be the thing being established, rather than the gr
 
 Related:
 
-- the controls-not-factories-fixtures-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
+- the test-values-are-controls-never-factories-fixtures-or-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents
 - the test-block-is-assertion-only rule — the explaining-variable discipline this is a stated exception to
 - the tdd-test-structure rule — the control → actuate → observe shape a precondition sits within
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — the other thing a context holds beside a test
