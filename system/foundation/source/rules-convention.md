@@ -7,7 +7,7 @@ The project's **binding** rules are read at the start of every session and follo
 
 - **Read every rule file under `waytide/system/` and `waytide/local/rules/` at the start of a session and follow them, except each package's `source/` directory and `README.md`.** A package's `source/` holds the full rules its compiled rules are compiled from, and is where a rule is edited. The compiled rules at the package root are what is read. They override default behavior where they conflict. Explicit user instructions still win. Read `waytide/system/foundation/` first — it defines the system.
 - **One file beside `rules/` is read with them and binds: `waytide/local/vocabulary.md`**, the project's own vocabulary. It is binding and its terms cannot be applied unread, exactly as a package's `vocabulary.md` is, and its terms decide over every package's. It is not a rule and does not live in `rules/`. The vocabulary-convention rule settles where it sits and why. Like `rules/`, it may not exist, and its absence is ordinary.
-- **Rules are kept separate from work artifacts.** `waytide/system/` and `waytide/local/rules/` hold only rules. The project's working state lives beside `rules/` under `waytide/local/` — `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/` — worked with as their own conventions describe, not read as binding rules at session start. `waytide/local/vocabulary.md` sits beside them and is not working state: it is read at session start, and it is the one thing there that binds.
+- **Rules are kept separate from work artifacts.** `waytide/local/rules/` holds only rules. `waytide/system/` holds the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state. The project's working state lives beside `rules/` under `waytide/local/` — `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/` — worked with as their own conventions describe, not read as binding rules at session start. `waytide/local/vocabulary.md` sits beside them and is not working state: it is read at session start, and it is the one thing there that binds.
 - **A rule's purpose is not confined to its category.** A rule's package names the *surface* it acts on, not the purpose it serves. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
 - **Format:** frontmatter-free markdown — a `# <title>` stating the rule, the rule in prose, then short `**Why:**` and `**How to apply:**` lines. A **system package** rule is named by a dash-separated, lower-case name. A project's **own local rule** in `waytide/local/rules/` takes the ISO-8601-UTC datetime prefix (see the file-names rule).
 - **A rule's history goes in a `## History` section, placed before `Related:`.** History is what the rule used to say, when it changed, what it was named, and where it sat. The compiler leaves the section out of the compiled rule, so the session-start read does not carry it, and the full rule in `source/` keeps it. Reasoning the directive depends on is not history, even where it tells what failed before: it stays in the body, where the `**Why:**` passage is.
@@ -55,7 +55,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 ## Rules and work artifacts
 
 1. Rules are kept separate from work artifacts.
-2. `waytide/system/` and `waytide/local/rules/` hold only rules.
+2. `waytide/local/rules/` holds only rules. `waytide/system/` holds the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state.
 3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
 4. Work with working state as its own conventions describe.
 5. Do not read working state as binding rules at session start.
@@ -104,6 +104,10 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 6. The log entry is the durable trace of the removal. An item is never deleted. Its state changes and its record is kept.
 7. **Why:** the rules are the project's durable, in-repo conventions, committed with the code and read fresh each session, so they stay authoritative and current. One rule per file keeps each convention readable, referenceable, and revisable. Separating installed packages from local rules means refreshing a package never touches a local rule.
 
+## History
+
+Until 2026-10-25 the rule said `waytide/system/` and `waytide/local/rules/` "hold only rules", while each package under `waytide/system/` also holds its `README.md`, its `source/` directory, a license, and scripts. The engineer settled that `waytide/system/` holds the rules and what packages them, and that neither directory holds working state.
+
 Related:
 
 - the file-names rule
@@ -140,3 +144,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:50:44 PM PT
