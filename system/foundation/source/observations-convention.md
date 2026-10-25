@@ -16,7 +16,7 @@
 
 **An observation that no longer holds is not retracted.** A later observation states the later thinking, and the earlier one stays as what was thought at the time.
 
-**Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/` and the observation stays exactly as it is, as the discovery record. Nothing about the observation changes when the rule appears.
+**Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/`, and that rule is the observation's result. The observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. Nothing else about the observation changes: what it says stays as written, as the discovery record, and its state stays `Stated`.
 
 **So the items-convention needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
@@ -25,7 +25,7 @@
 - **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method or definition the engineer has not ratified as a convention. When in doubt between a rule and an observation, prefer an observation — promoting later is cheap, retracting a premature rule is not.
 - **Format:** the same frontmatter-free markdown as rules — a `# <title>`, a `**State:** Stated` line, a `**Tags:**` line carrying `[observation]`, then the content in prose. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule) and ends `-STATED`.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
-- **Promotion:** write the rule in `waytide/local/rules/`, note the promotion in the two files, and add a `waytide/local/logs/log/` entry for it. Leave the observation as written.
+- **Promotion:** write the rule in `waytide/local/rules/`, naming the observation it came from. Add the `**Promoted to:**` line to the observation, and add a `waytide/local/logs/log/` entry for the promotion. Leave the rest of the observation as written.
 - **Recording one:** add the file, and add a matching one-line entry to `waytide/local/logs/log/` noting it was recorded as an observation, and why it is not yet a rule.
 
 **Why:** discovery produces valuable thinking before it is ready to be binding, and a place for non-binding hypotheses keeps that thinking without prematurely imposing it as a rule.
@@ -36,7 +36,11 @@ Giving an observation the **eight states every other item takes** was the cost o
 
 **How to apply:** record an in-progress hypothesis or unratified method here, tagged `[observation]`, with `**State:** Stated` and a filename ending `-STATED`. Write no `**Why this state:**` line. Never change the state.
 
-Write a later observation where the thinking moves, and leave the earlier one as written. Promote it by writing the rule elsewhere, and change nothing about the observation when you do.
+Write a later observation where the thinking moves, and leave the earlier one as written. Promote it by writing the rule elsewhere, and add to the observation only the line naming that rule.
+
+## History
+
+Until 2026-10-25 the Promotion step said to "note the promotion in the two files", the rule and the observation, while the same step said to leave the observation as written and the body said nothing about the observation changes when the rule appears. The engineer settled that the rule is the observation's result, and that the observation names it in one added line.
 
 Related:
 
@@ -63,3 +67,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:27:24 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:23:16 PM PT
