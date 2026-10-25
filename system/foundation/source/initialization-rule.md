@@ -1,6 +1,6 @@
 # Initialization
 
-The things below are printed once per session, verbatim and in this order. Four are always printed and one more is printed only where the project has declared a package set.
+The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
 **The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
@@ -16,9 +16,9 @@ First the title, on its own:
 Waytide: Human-Agent Relations
 ```
 
-**It stands alone.** Nothing is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
+**It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
 
-**Then the package set, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this part is absent entirely — no line saying there is none.
+**The package set is described here, and prints after the display, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this part is absent entirely — no line saying there is none.
 
 **The declared set `default` prints nothing, where nothing is deactivated.** `default` is the set a project gets by asking for no set at all, so a stanza reporting it says what the absence of a stanza already says, at the cost of four lines in a display printed every session.
 
@@ -121,7 +121,7 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 ## Compressed
 
-1. Five parts are printed once per session, verbatim and in this order. Four are always printed. The package set is printed only where the project has declared one.
+1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
 2. The harness prints the four always-printed parts. The agent prints none of them.
 3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
 4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
@@ -139,11 +139,11 @@ Waytide: Human-Agent Relations
 ```
 
 13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-14. The title stands alone. Nothing is printed under it.
+14. The title stands alone. No subtitle or description is printed under it.
 15. The title is the category line. The root `README.md` leads with the same line.
 16. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
 17. The display carries nothing that argues for the system to a reader already using it.
-18. Then the package set, where one is declared. The agent prints it after the harness has printed the display.
+18. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
 19. The stanza follows the display rather than sitting inside it.
 20. Where no set is declared, this part is absent entirely. No line says there is none.
 21. The declared set `default` prints nothing where nothing is deactivated.
@@ -237,6 +237,8 @@ The license line read `Licensed under the Eventide Common Interest License` unti
 
 The copyright line read `Waytide — Copyright © 2026 Scott Bellware` until 2026-08-21, because a notice printed with no surrounding prose had nothing to attach itself to.
 
+Until 2026-10-25 the rule said its parts print "in this order" and described the package set second, between the title and the copyright, while saying the agent prints the set after the harness's display. The title section said "Nothing is printed under it". The engineer settled that the order covers the harness's four parts, that the package set keeps its place in this file and prints after them, and that what the title excludes is a subtitle or description. The sections stay where they are, because the script reads the display's parts from this file's fenced blocks by position.
+
 ---
 
 Authored by Scott Bellware on Wed Aug 5 2026 at 10:47:28 PM PT
@@ -272,3 +274,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:30:04 PM PT
