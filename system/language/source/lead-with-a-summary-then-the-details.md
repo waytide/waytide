@@ -23,6 +23,10 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 7. Prefer a short answer that can be expanded on request over a long one that pre-empts every question.
 8. **Why:** the reader's attention is scarce. Summary-first lets the reader grasp the point at once and choose whether to read on.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named lead-with-a-summary-before-details.
+
 Related:
 
 - the communicate-plainly-and-name-the-actual-thing rule
@@ -36,3 +40,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:37 PM PT
