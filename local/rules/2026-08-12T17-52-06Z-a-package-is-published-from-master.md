@@ -43,7 +43,7 @@ Never offer a publish while an experiment or a feature is open. Never name one a
 Related:
 
 - `CONTRIBUTING.md` — the publish procedure itself
-- the foundation downstream-work-is-never-offered rule — the same never-offer instruction for the act on the other side of a publish, refreshing the projects that installed the package
+- the foundation work-in-a-downstream-project-is-never-offered-and-its-pending-state-is-not-reported rule — the same never-offer instruction for the act on the other side of a publish, refreshing the projects that installed the package
 - the foundation implementation-lifecycle rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of an experiment, and why a feature has no affirmation
 - the versioning package's the-next-version-is-chosen-by-the-engineer rule — which governs a consuming project that versions its packages, and not this one
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 12:44:35 PM PT
 Changed by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:42:05 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT

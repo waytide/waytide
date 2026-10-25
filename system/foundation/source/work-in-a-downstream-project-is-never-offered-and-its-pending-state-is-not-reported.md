@@ -67,6 +67,10 @@ Carry out any of that when the engineer asks for it, and report what happened on
 4. Raise none of it on your own initiative.
 5. **Why:** the engineer decides when other repositories move, and a package change does not reveal that decision. A report is where this fails, because an agent told not to ask still closes its summary with what it did not do.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named downstream-work-is-never-offered.
+
 Related:
 
 - the implementation-lifecycle rule — the agent never raising the end of an experiment, the same failure through a different act
@@ -79,3 +83,4 @@ Authored by Scott Bellware on Sun Aug 16 2026 at 12:37:43 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT
