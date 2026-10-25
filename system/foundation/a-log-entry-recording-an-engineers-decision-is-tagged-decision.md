@@ -1,4 +1,4 @@
-# A log entry recording a decision the engineer made is tagged `[decision]`
+# A log entry recording an engineer's decision is tagged `[decision]`
 
 **When the engineer makes a decision, the log entry that records it carries `**Tags:** [decision]`.** The tag says who decided.
 

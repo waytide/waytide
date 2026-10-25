@@ -1,4 +1,4 @@
-# A log entry recording a decision the engineer made is tagged `[decision]`
+# A log entry recording an engineer's decision is tagged `[decision]`
 
 **When the engineer makes a decision, the log entry that records it carries `**Tags:** [decision]`.** The tag says who decided.
 
@@ -51,6 +51,10 @@
 6. The set of the engineer's decisions is read from this tag.
 7. **Why:** the log carries agent acts and engineer decisions in the same form. An engineer's decision is changed by the engineer, while an agent's act is corrected against its rule, so one search must find the engineer's decisions.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named a-decision-the-engineer-made-is-tagged-decision and titled "A log entry recording a decision the engineer made is tagged `[decision]`".
+
 Related:
 
 - the decision-log-convention — the entry's form
@@ -61,3 +65,4 @@ Related:
 
 Authored by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:11:46 PM PT
