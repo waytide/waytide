@@ -1317,6 +1317,23 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 
 **Cost:** 161 agents: 34 compressors, 34 listers, 68 checkers, and 25 re-checkers, at about 35,000 tokens each. That is about 5.6 million in all, or about 166,000 per rule, leaving out the main session's own turns.
 
+### The `foundation` batch's review list — 2026-10-25
+
+**The engineer went through the ten review items one at a time.** Each fix is made in the live rule on `master`, with the earlier wording in its History and a log entry tagged `[decision]`, and copied to the phase branch. There, the compressed text takes the same wording in its existing points, so no point is renumbered, and both branches compile to the same rule.
+
+1. **decision-log-convention: bodies stay, and one line is the ordinary case.** "An untagged entry is one line" now reads "An untagged entry with no body is one line". How to apply says to write a titled entry, one line in the ordinary case, with a body where its reasoning will not fit the title. Compressed point 9 takes the new wording.
+2. **a-time-value-carries-minutes-and-seconds: How to apply points to the exceptions.** It now says to write the seconds "except where this rule names an exception", without listing them. Compressed point 18 takes the same clause. The `Related:` label had run into the end of How to apply's paragraph, so the compiler did not see the rule's Related list. It now stands on its own line.
+3. **implementation-records-take-a-log-entry: the merge is the test.** The concluding entry's form "is decided by whether the work merged". How to apply now writes the findings where there are any, and for abandoned work the reasoning given for stopping. Compressed points 2 and 3 take the new wording.
+4. **migration-convention: the record is written ahead, then updated.** The Related entry now says a migration record is written ahead of the move to be executed, then records what happened against the plan as the move runs. No compressed point carried the clause.
+5. **implementations-convention: Suspended is a state, not a conclusion.** The heading is now "The state words both kinds take", and the filename takes its state suffix once the record carries a state line, as the a-record-ends-with-its-state-in-upper-case rule says. Compressed points 7 and 10 take the new wording.
+6. **observations-convention: a promoted observation names its result.** The engineer's reason is that the rule is the result of the observation evolving into it. On promotion the observation takes one added line, `**Promoted to:** the <name> rule`, and nothing else about it changes. Compressed points 11, 12, and 13 take the new wording.
+7. **present-every-prompt-through-askuserquestion: no candidate is dropped.** Where there are more than three, the question says so and points to `Explain`, whose answer gives every candidate. The prompt is displayed again with the same three and `Explain briefly`, and a candidate beyond the third is chosen through the "Other" answer. Compressed point 20 takes the new wording.
+8. **initialization-rule: the package set prints after the display.** The order covers the harness's four parts. The package-set section keeps its place in the file, because the script reads the display's parts from the fenced blocks by position, and it opens by saying it prints after them. What the title excludes is a subtitle or description. Compressed points 1, 14, and 18 take the new wording.
+9. **rules-convention: `waytide/system/` holds the rules and what packages them.** `waytide/local/rules/` holds only rules. `waytide/system/` holds each package's rules, `README.md`, `source/`, `LICENSE`, vocabulary, and scripts. Neither holds working state. Compressed point 2 takes the new wording.
+10. **work-sessions-convention: every prompt says "work session".** The statement now covers the recording prompt and the design reconciliation alike, and How to apply's third reconciliation option reads "no design bears on this work session". Compressed point 18 takes the new wording.
+
+**All ten review items are resolved.** The engineer also recorded three new items on `master` during the review: the ideas that the chat option reads "Return to chat" and that a journal entry may be private, and the work item that the log is called the log rather than the decision log.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4467,3 +4484,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:20:51 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:24:14 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:54:37 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 3:58:02 PM PT
