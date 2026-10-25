@@ -1,4 +1,4 @@
-# No slang — use literal, non-figurative terms
+# No slang
 
 Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase. The mindset it preserves lives in the person. So it reaches conversation, and not just the artifact.
 
@@ -41,6 +41,10 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 19. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
 20. **Why:** slang and figurative terms are imprecise and carry unwanted associations. "wrap/wrapper" reads as a generic decorator and hides the accessor relationship that "mediates" names exactly.
 
+## History
+
+Until Sun Oct 25 2026 this rule was titled "No slang — use literal, non-figurative terms".
+
 Related:
 
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule
@@ -62,3 +66,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 10:31:52 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:48 PM PT

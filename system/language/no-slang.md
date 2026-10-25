@@ -1,4 +1,4 @@
-# No slang — use literal, non-figurative terms
+# No slang
 
 Names, prose, comments, commit messages — **and conversation with the user** — use literal, non-slang terms. The no-slang standard governs phrasing addressed *to* the human, not only what goes into the codebase. The mindset it preserves lives in the person. So it reaches conversation, and not just the artifact.
 
