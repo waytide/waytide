@@ -1,4 +1,4 @@
-# Commit messages: never say "mark ... done" — state the fact ("Task 9 is done")
+# A commit message states that a task is done, never that it is marked done
 
 A commit message must not use the phrasing "mark ... done" (or "mark ... complete"). State the accomplishment as a fact about the work, not as an act of bookkeeping on a checkbox. For example, write **"Task 9 is done"** — not "mark Task 9 done" / "mark Task 9 as complete".
 

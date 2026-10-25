@@ -22,7 +22,7 @@
 
 ## What still governs the subject
 
-**The subject-first-commit-messages rule is unchanged.** The subject is the software and never the engineer, stated as a fact in passive voice and indicative mood. The commit-says-task-is-done-not-mark-done rule is unchanged too.
+**The subject-first-commit-messages rule is unchanged.** The subject is the software and never the engineer, stated as a fact in passive voice and indicative mood. The a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule is unchanged too.
 
 **Those rules push length up, and that tension is real.** Naming the software and then its new state costs words that a leading verb would not. It is accepted: the limit is a budget the subject is written within, not a licence to drop the subject and lead with a verb.
 
@@ -67,7 +67,7 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 1. The subject-first-commit-messages rule is unchanged.
 2. The subject is the software, never the engineer.
 3. The subject is a fact stated in passive voice and indicative mood.
-4. The commit-says-task-is-done-not-mark-done rule is unchanged too.
+4. The a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule is unchanged too.
 5. Those rules push length up, and that is accepted.
 6. Write the subject within the budget.
 7. Do not drop the subject and lead with a verb to save space.
@@ -90,7 +90,7 @@ Until Sun Oct 25 2026 this rule was named commit-message-widths.
 Related:
 
 - the subject-first-commit-messages rule — what the subject says, which this constrains the width of
-- the commit-says-task-is-done-not-mark-done rule — the other rule shaping the subject
+- the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule — the other rule shaping the subject
 - the `journal` package's journal-convention — the worked case of a prefix spending the budget
 
 ---
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:20 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 3:56:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT

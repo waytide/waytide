@@ -46,7 +46,7 @@ This rule carried a *no 50-character limit* policy until 2026-08-18, licensing a
 
 Related:
 
-- the commit-says-task-is-done-not-mark-done rule
+- the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule
 - the no-Claude-coauthor rule
 - the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule — the subject's 50 characters and the body's 72
 - the run-suite-before-commit rule
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:44 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
