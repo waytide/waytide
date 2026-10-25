@@ -1,4 +1,4 @@
-# "Status report" prints a fixed whole-project report
+# A status report prints a fixed whole-project report
 
 When the user asks for a **status report** (or "project status"), produce a report with these parts, in order:
 
@@ -111,6 +111,10 @@ Keep each part tight. Read current state before printing — do not report stale
 8. An unnamed test appears in the source and emits no line.
 9. **Why:** a status report is a recurring request with a known shape. A fixed format makes it repeatable and complete, and steers reading toward in-repo sources of truth rather than recollection.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named status-report-format and titled ""Status report" prints a fixed whole-project report".
+
 Related:
 
 - the the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state a hidden record carries
@@ -148,3 +152,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT

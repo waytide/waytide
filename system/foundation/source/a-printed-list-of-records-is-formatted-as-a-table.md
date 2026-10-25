@@ -27,7 +27,7 @@
 
 ## What this does not reach
 
-**The status report's tables are already tables**, and the status-report-format rule says so. The two rules agree.
+**The status report's tables are already tables**, and the a-status-report-prints-a-fixed-whole-project-report rule says so. The two rules agree.
 
 **An answer that is not a list of records.** The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs how a **set of records** is presented, and the two do not overlap: a table is a list, rendered for a reader who is looking for one row.
 
@@ -72,7 +72,7 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 
 ## What this does not reach
 
-1. The status report's tables are already tables under the status-report-format rule, and this rule agrees with it.
+1. The status report's tables are already tables under the a-status-report-prints-a-fixed-whole-project-report rule, and this rule agrees with it.
 2. This rule does not govern an answer that is not a list of records.
 3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
 4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
@@ -83,7 +83,7 @@ Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A
 
 Related:
 
-- the status-report-format rule — whose tables this agrees with
+- the a-status-report-prints-a-fixed-whole-project-report rule — whose tables this agrees with
 - the file-names rule — the prefix the handle column carries
 - the `git` package's a-sha-names-the-work-rather-than-the-commit rule — what a SHA in those columns refers to when the engineer names one back
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the answer's form, which this does not displace
@@ -97,3 +97,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT

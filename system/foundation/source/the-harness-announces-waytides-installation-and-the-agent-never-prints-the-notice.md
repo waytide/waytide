@@ -50,7 +50,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
   **The Waytide segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
 
-  Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the status-report-format rule).
+  Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the a-status-report-prints-a-fixed-whole-project-report rule).
 
   **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A hyphen also joins words. So it read as punctuation inside the sentence of segments. It did not read as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
 
@@ -268,7 +268,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
 6. The Waytide segment is one word, with no package count.
 7. Presence is read from disk, by the same README test the notice uses.
-8. The detail is the status report's (see the status-report-format rule).
+8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
 9. `uncommitted changes` appears when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
 10. It is words, not a mark like `master*`.
 11. `untracked files` names the case whose remedy differs: add or ignore, not commit.
@@ -331,7 +331,7 @@ Related:
 - the the-startup-display-prints-once-per-session — the startup display, which this notice does not carry and the agent does not print
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
-- the status-report-format rule — the on-demand report that answers in detail what is installed
+- the a-status-report-prints-a-fixed-whole-project-report rule — the on-demand report that answers in detail what is installed
 
 ---
 
@@ -402,3 +402,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT

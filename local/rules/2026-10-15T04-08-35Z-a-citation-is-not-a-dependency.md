@@ -8,7 +8,7 @@ A rule may **name** another package's rule — for orientation, for contrast, or
 
 **A "standalone" claim is about installation, not about prose.** A package that declares no dependencies may still name any other package's rules. The claim says what must be installed alongside it. It says nothing about what its rules may refer to.
 
-**The model citation** is foundation's own status-report-format rule. It names the `testing` package and is written for its absence. Its words are *"If the project has **not** adopted the testing conventions, degrade this section."* The rule works either way. So `testing` is cited and not declared.
+**The model citation** is foundation's own a-status-report-prints-a-fixed-whole-project-report rule. It names the `testing` package and is written for its absence. Its words are *"If the project has **not** adopted the testing conventions, degrade this section."* The rule works either way. So `testing` is cited and not declared.
 
 **The refused dependency** is the the-implementations-directory-records-each-implementations-lifecycle. It cites `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule and deliberately stops short of requiring anything in `waytide/local/logs/loops/`. Its words are *"would invert the package graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone."* That rule is two things at once. It is a citation of another package, and the reason a dependency was not taken.
 
@@ -30,7 +30,7 @@ Related:
 
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format and where rules live
 - the the-implementations-directory-records-each-implementations-lifecycle — the refused dependency it declines
-- the status-report-format rule — the model citation, written for the cited package's absence
+- the a-status-report-prints-a-fixed-whole-project-report rule — the model citation, written for the cited package's absence
 - each package's README — where a dependency is declared
 
 ---
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:56:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT

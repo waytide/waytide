@@ -1,4 +1,4 @@
-# "Status report" prints a fixed whole-project report
+# A status report prints a fixed whole-project report
 
 When the user asks for a **status report** (or "project status"), produce a report with these parts, in order:
 

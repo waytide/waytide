@@ -50,7 +50,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
   **The Waytide segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
 
-  Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the status-report-format rule).
+  Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the a-status-report-prints-a-fixed-whole-project-report rule).
 
   **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A hyphen also joins words. So it read as punctuation inside the sentence of segments. It did not read as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
 
@@ -183,4 +183,4 @@ Related:
 - the the-startup-display-prints-once-per-session — the startup display, which this notice does not carry and the agent does not print
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
-- the status-report-format rule — the on-demand report that answers in detail what is installed
+- the a-status-report-prints-a-fixed-whole-project-report rule — the on-demand report that answers in detail what is installed

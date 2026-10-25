@@ -27,7 +27,7 @@
 
 ## What this does not reach
 
-**The status report's tables are already tables**, and the status-report-format rule says so. The two rules agree.
+**The status report's tables are already tables**, and the a-status-report-prints-a-fixed-whole-project-report rule says so. The two rules agree.
 
 **An answer that is not a list of records.** The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs how a **set of records** is presented, and the two do not overlap: a table is a list, rendered for a reader who is looking for one row.
 
@@ -41,7 +41,7 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 
 Related:
 
-- the status-report-format rule — whose tables this agrees with
+- the a-status-report-prints-a-fixed-whole-project-report rule — whose tables this agrees with
 - the file-names rule — the prefix the handle column carries
 - the `git` package's a-sha-names-the-work-rather-than-the-commit rule — what a SHA in those columns refers to when the engineer names one back
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the answer's form, which this does not displace
