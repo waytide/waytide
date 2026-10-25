@@ -7,7 +7,7 @@ The rule governs the **resolution** of the time and nothing else. Which fields p
 The two datetime conventions in this package satisfy it:
 
 - The **ISO-8601-UTC filename prefix** — `2026-07-01T20-40-00Z-some-name.md` — already carried seconds (see the file-names rule).
-- The **provenance footer** — `Mon Jan 1 2026 at 3:45:12 PM PT` — carries them because this rule requires it (see the record-rule-authorship-in-a-footer rule).
+- The **provenance footer** — `Mon Jan 1 2026 at 3:45:12 PM PT` — carries them because this rule requires it (see the record-a-rules-authorship-in-a-provenance-footer rule).
 
 **A date alone is not a time.** A convention may record only a date, as a design's **Settled** resolutions do. There is no time of day to resolve there, and this rule adds none. It applies when a time is written.
 
@@ -29,7 +29,7 @@ That reads as an error rather than as provenance, so the entry went unwritten in
 
 Related:
 
-- the record-rule-authorship-in-a-footer rule — the human-readable local datetime this corrects
+- the record-a-rules-authorship-in-a-provenance-footer rule — the human-readable local datetime this corrects
 - the dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not rule — the machine-sortable UTC filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
 - the `journal` package's journal-entries rule — the second exception, and its own grounds for it

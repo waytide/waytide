@@ -19,7 +19,7 @@ Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records w
 - **Glossary** — the terms settled during the work session, each with its literal definition.
 - **Where the durable records live** — pointers to the rules, observations, log entries, experiments, and code the work session produced.
 - Optionally, a **reflective closing note** on the work session itself.
-- A **provenance footer** — like every working-state artifact, a work session record ends with the `Authored by … / Changed by …` footer, so the file stands on its own. See the working-state-artifacts-carry-a-provenance-footer rule (the shared convention and its reason) and record-rule-authorship-in-a-footer (the format).
+- A **provenance footer** — like every working-state artifact, a work session record ends with the `Authored by … / Changed by …` footer, so the file stands on its own. See the working-state-artifacts-carry-a-provenance-footer rule (the shared convention and its reason) and record-a-rules-authorship-in-a-provenance-footer (the format).
 
 ## Reconcile the settled direction once the record is written
 
@@ -39,7 +39,7 @@ A narrative work session record preserves that arc as a communicable whole. It p
 
 **A work session record is not shaped like a plan.** It records the *past*, while a plan and a design look forward.
 
-**How to apply:** at a substantial work session's close, write a work session record here. It narrates the work session chronologically per the shape above. It defines the settled vocabulary, and points to the durable records it produced. It ends with a provenance footer in the record-rule-authorship-in-a-footer format.
+**How to apply:** at a substantial work session's close, write a work session record here. It narrates the work session chronologically per the shape above. It defines the settled vocabulary, and points to the durable records it produced. It ends with a provenance footer in the record-a-rules-authorship-in-a-provenance-footer format.
 
 When *you* raise the question of recording, rather than being told to, put it through the AskUserQuestion selection UI. It carries the three options, each naming a **work session record**: a new one, appending the previous one, or none. Let the engineer's selection decide.
 
@@ -48,7 +48,7 @@ Once the record is written, put the **design reconciliation** through the same U
 Related:
 
 - the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
-- the record-rule-authorship-in-a-footer rule — the footer's format
+- the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the decision-log rule
 - the observations rule

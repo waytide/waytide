@@ -30,4 +30,4 @@ Related:
 
 - the rules-convention — the rule format this governs the lines of
 - the vocabulary-convention — the vocabularies, whose entries are prose the same way
-- the record-rule-authorship-in-a-footer rule — the footer whose lines are exempt
+- the record-a-rules-authorship-in-a-provenance-footer rule — the footer whose lines are exempt
