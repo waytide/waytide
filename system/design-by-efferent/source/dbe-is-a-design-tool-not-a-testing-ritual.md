@@ -39,6 +39,10 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
 20. **Why:** The red-green-refactor ceremony existed only to put human attention in the loop, so ritual repetition wastes effort and teaches nothing. Tests are the vehicle; design is the point.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named dbe-as-design-tool.
+
 Related:
 
 - the DBE vocabulary — cradle, efferent, solubility
@@ -64,3 +68,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 9:04:18 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:21 PM PT
