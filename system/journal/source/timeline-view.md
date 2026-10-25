@@ -1,6 +1,6 @@
 # Timeline view: on request, list every journal entry chronologically, each row led by its datetime
 
-Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the identity-resolution-contract rule. List them in chronological order, oldest first.
+Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule. List them in chronological order, oldest first.
 
 Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>` is the human-readable datetime line under the entry's title, as `Wed Jun 17 2026 at 18:28` is. The `<title>` is the entry's `# ` heading with the leading `# ` removed. End with a one-line count and date span, as *15 entries, spanning Jun 15–17, 2026*. Output the list alone, with no preamble.
 
@@ -14,13 +14,13 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 **Why:** the timeline says nothing the entries do not. It is an ordering and a rendering of material that is already on disk, so a second copy of it buys a reader nothing and can only disagree with the first. Computing it on request means it is correct by construction, and it cannot be stale.
 
-**How to apply:** resolve the active `<username>` by the identity-resolution-contract rule. Read the `20*.md` files in `waytide/local/journal/<username>/`, sort them by their datetime line, emit the bullets, and append the computed count and date span. Write nothing to a file.
+**How to apply:** resolve the active `<username>` by the the-writers-identity-resolves-through-a-fixed-override-chain rule. Read the `20*.md` files in `waytide/local/journal/<username>/`, sort them by their datetime line, emit the bullets, and append the computed count and date span. Write nothing to a file.
 
 ## Compressed
 
 1. When the writer asks for the timeline, such as *show the timeline* or *list the entries*, list every journal entry in the active writer's journal directory.
 2. The directory is `waytide/local/journal/<username>/`.
-3. Resolve `<username>` by the identity-resolution-contract rule.
+3. Resolve `<username>` by the the-writers-identity-resolves-through-a-fixed-override-chain rule.
 4. The entries are the `20*.md` files in that directory.
 5. Sort the entries by their datetime line, oldest first.
 6. Format each entry as a single bullet: `- **<datetime>** — <title>`.
@@ -37,7 +37,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 Related:
 
-- the identity-resolution-contract rule — how `<username>` is resolved
+- the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
 - the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
 - the journal-entries rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 10:16:13 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT

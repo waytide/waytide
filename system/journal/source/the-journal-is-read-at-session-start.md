@@ -4,7 +4,7 @@
 - **Original rank:** 53 of 106
 - **Unclarity:** 0.51
 
-**Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the identity-resolution-contract rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
+**Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
 
 **Another writer's journal is not read.** A project may hold several, and each is one writer's thinking carried across their own sessions. The agent reads the journal of the writer whose session this is.
 
@@ -32,7 +32,7 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 
 1. Read the active writer's journal at the start of a session.
 2. That journal is every entry in `waytide/local/journal/<username>/`.
-3. `<username>` is resolved by the identity-resolution-contract rule.
+3. `<username>` is resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule.
 4. Read it after the rules and the vocabularies.
 5. Read it before the first request.
 6. The journal is not a rule, and it does not bind.
@@ -59,7 +59,7 @@ Related:
 
 - a-journal-entry-is-read-and-never-followed — the force an entry carries, and why the read is safe
 - the journal-convention — where the journal lives and what one entry is
-- the identity-resolution-contract rule — how the active writer is resolved
+- the the-writers-identity-resolves-through-a-fixed-override-chain rule — how the active writer is resolved
 - the timeline-view rule — the on-demand listing, which writes no file for this read to pass over
 - the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the session-start read this joins
 
@@ -81,3 +81,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
