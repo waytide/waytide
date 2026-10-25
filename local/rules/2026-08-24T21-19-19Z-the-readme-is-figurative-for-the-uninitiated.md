@@ -24,7 +24,7 @@
 
 ## What is not licensed
 
-**Not a false statement.** A figure stands in for a precise term. It does not stand in for a different fact. *An agent memory store is fed by the committed artifacts* is not a figure for the project-context-lives-in-the-committed-artifacts rule's *do not create one* — it says something else, and this rule does not cover it.
+**Not a false statement.** A figure stands in for a precise term. It does not stand in for a different fact. *An agent memory store is fed by the committed artifacts* is not a figure for the a-projects-durable-context-lives-in-its-committed-artifacts rule's *do not create one* — it says something else, and this rule does not cover it.
 
 **Not slang in place of an available plain word.** The exception is for the figure that **explains**. A word reached for because it sounds better is the thing the language-is-precise-here rule calls dramatic jargon, and it obscures for the uninitiated reader as much as for anyone.
 
@@ -50,3 +50,4 @@ Related:
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 2:19:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:54 PM PT
