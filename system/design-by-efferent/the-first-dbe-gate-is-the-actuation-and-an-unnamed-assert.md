@@ -1,4 +1,4 @@
-# DBE, first turn: the first gate is the actuation and an unnamed assert
+# The first DBE gate is the actuation and an unnamed assert
 
 Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more. It begins at the **first gate**, where responsibility first transfers to the human, and the file is assembled once the three test hinges are accepted — not before them, unless the engineer chose unattended work at the start.
 

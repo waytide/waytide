@@ -1,4 +1,4 @@
-# DBE, first turn: the first gate is the actuation and an unnamed assert
+# The first DBE gate is the actuation and an unnamed assert
 
 Start a feature by writing a test file, not implementation. The first turn produces that file and nothing more. It begins at the **first gate**, where responsibility first transfers to the human, and the file is assembled once the three test hinges are accepted — not before them, unless the engineer chose unattended work at the start.
 
@@ -102,6 +102,10 @@ end
 30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 31. **Why:** Writing the actuation before any implementation designs the interface from the use site, per the DBE-as-design-tool rule. Limiting the first gate to the actuation and one unnamed assert avoids committing early to an outcome taxonomy. The explaining variable makes the test read as a statement of the concern and keeps the efferent view in frame.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named dbe-first-turn-test-file and titled "DBE, first turn: the first gate is the actuation and an unnamed assert".
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -125,3 +129,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:35:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:25 PM PT
