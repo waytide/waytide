@@ -34,7 +34,7 @@ Until 2026-10-25 How to apply said to write the seconds in every datetime that i
 Related:
 
 - the record-rule-authorship-in-a-footer rule — the human-readable local datetime this corrects
-- the file-names-use-iso8601-utc-prefix rule — the machine-sortable UTC filename prefix
+- the dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not rule — the machine-sortable UTC filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
 - the `journal` package's journal-entries rule — the second exception, and its own grounds for it
 
@@ -75,3 +75,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:54:56 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:13:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:48 PM PT
