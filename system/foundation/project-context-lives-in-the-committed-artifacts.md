@@ -10,7 +10,7 @@
 
 **A fact about the engineer rather than the project.** How they want to be answered, and what they want the agent never to offer, are not project context. They hold across every project on the machine, and the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule already sends a machine-scoped fact to per-machine configuration under `~/.config/`, outside any repository.
 
-**A preference that has not yet been settled as a rule.** That is the ask-at-once-when-a-preference-is-expressed rule's concern, and it is what keeps this one from costing anything. The pipeline from a preference to a written rule is short enough that nothing has to be held while it waits.
+**A preference that has not yet been settled as a rule.** That is the ask-at-once-when-the-engineer-expresses-a-preference rule's concern, and it is what keeps this one from costing anything. The pipeline from a preference to a written rule is short enough that nothing has to be held while it waits.
 
 **The harness's own working state.** A cache, a transcript, an index of the repository. None of it is the project's context and none of it is a substitute for an artifact.
 
@@ -26,7 +26,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 
 Related:
 
-- the ask-at-once-when-a-preference-is-expressed rule — what makes forbidding the store safe
+- the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe
 - the rules-convention — the read-fresh premise, and where a binding convention goes
 - the decision-log-convention — where a decision goes
 - the observations-convention — where thinking goes before it binds

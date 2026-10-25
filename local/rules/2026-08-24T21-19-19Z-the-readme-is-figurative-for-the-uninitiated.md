@@ -44,8 +44,9 @@ Related:
 - its language-is-precise-here rule — dramatic jargon, which is not licensed here
 - its waytide-prose-conforms-to-the-ste-writing-rules rule — the standard the README is excused from
 - the `foundation` vocabulary — `free-text option` rather than *escape*, the worked case
-- the `foundation` ask-at-once-when-a-preference-is-expressed rule — the ask this rule came from
+- the `foundation` ask-at-once-when-the-engineer-expresses-a-preference rule — the ask this rule came from
 
 ---
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 2:19:19 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT

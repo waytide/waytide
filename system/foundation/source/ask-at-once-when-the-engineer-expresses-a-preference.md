@@ -64,6 +64,10 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 9. Capture the words when they are said. Do not write the rule later from memory.
 10. **Why:** The project-context-lives-in-the-committed-artifacts rule forbids holding a preference in an agent memory store. So the path to a written rule must be short enough that nothing needs holding. Asking at once keeps it short. If the ask waits until the end of the task, the engineer's wording is lost.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named ask-at-once-when-a-preference-is-expressed.
+
 Related:
 
 - the project-context-lives-in-the-committed-artifacts rule — the store this replaces, and which depends on this one
@@ -79,3 +83,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
