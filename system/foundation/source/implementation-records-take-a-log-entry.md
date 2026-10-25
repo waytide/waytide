@@ -2,7 +2,7 @@
 
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
-**The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the record itself is on `master`.
+**The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the work merged.
 
 - **Merged — the entry is a summary marker.** An affirmed experiment merges into its upstream branch, and a completed feature integrates. The record travels with it, so `master` holds the substance already. The entry names the record and its state and stops there.
 - **Not merged — the entry carries the finding, and only where there is one.** A refuted, inconclusive, abandoned, or superseded experiment is never merged, and neither is an abandoned or superseded feature. The log is then the only durable trace on `master`.
@@ -37,9 +37,13 @@ For a merged record the two are one artifact reachable two ways, and a marker is
 
 **How to apply:** when an implementation record is created, write a matching one-line entry. Write one for each change of its `**State:**` line.
 
-At the conclusion, ask whether the work merged. Where it did, write a summary marker naming the record and its state. Where it did not, write the question or the intent, the verdict or the outcome, and the findings, so `master` holds them without the record.
+At the conclusion, ask whether the work merged. Where it did, write a summary marker naming the record and its state. Where it did not, write the question or the intent, and the verdict or the outcome. Add the findings where there are any, and for abandoned work the reasoning given for stopping, so `master` holds them without the record.
 
 Write no entry for a confirmation the record already holds, and none for a turn of the work.
+
+## History
+
+Until 2026-10-25 the concluding entry's form was said to be decided by whether the record itself is on `master`, while a later paragraph and How to apply made the merge the test. How to apply also told every unmerged case to write the findings, which abandoned work does not have, and left out the reasoning for stopping. The engineer settled that the merge is the test, and that the findings are written where there are any, with the reasoning for stopping for abandoned work.
 
 Related:
 
@@ -56,3 +60,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 2:26:56 PM PT
