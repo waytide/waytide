@@ -44,7 +44,7 @@ with these options:
 - Each cycle records its **hinge** and **what was decided and why** — the reasoning the agent actually applied.
 - There is **no Options line and no Decision / chat line**. Writing them would be a false record of a deliberation that never occurred.
 
-**This is not the same as a hinge with no gate in an attended run.** The loop-records rule has a form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**. Under unattended work every hinge has no gate, by decision. Marking each one that way would report a run of failures where there was a declared mode. The mode declaration is what distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
+**This is not the same as a hinge with no gate in an attended run.** The a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule has a form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**. Under unattended work every hinge has no gate, by decision. Marking each one that way would report a run of failures where there was a declared mode. The mode declaration is what distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
 ## Unattended presents a plan before it generates
 
@@ -74,7 +74,7 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 Related:
 
-- the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
+- the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the record's shape and the "none — no gate" form this is distinct from
 - the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — why attention is placed at the hinges
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the hinges that run either way
 - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence

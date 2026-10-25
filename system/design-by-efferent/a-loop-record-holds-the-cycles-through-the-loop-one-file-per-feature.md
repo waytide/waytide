@@ -1,4 +1,4 @@
-# Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop
+# A loop record holds the cycles through the loop, one file per feature
 
 `waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The decision log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 

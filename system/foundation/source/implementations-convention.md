@@ -167,7 +167,7 @@ Related:
 - the a-record-takes-category-tags rule — the tags, and what a reserved tag is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
-- the design-by-efferent loop-records rule — the design record for the same work, which names this one
+- the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
 - the items-convention — the other record that carries a state, and which has no in-progress absence
 
 ---
@@ -180,3 +180,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:38:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT

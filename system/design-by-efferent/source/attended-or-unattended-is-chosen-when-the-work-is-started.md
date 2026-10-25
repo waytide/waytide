@@ -44,7 +44,7 @@ with these options:
 - Each cycle records its **hinge** and **what was decided and why** — the reasoning the agent actually applied.
 - There is **no Options line and no Decision / chat line**. Writing them would be a false record of a deliberation that never occurred.
 
-**This is not the same as a hinge with no gate in an attended run.** The loop-records rule has a form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**. Under unattended work every hinge has no gate, by decision. Marking each one that way would report a run of failures where there was a declared mode. The mode declaration is what distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
+**This is not the same as a hinge with no gate in an attended run.** The a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule has a form for that — *"none — no gate"* — and it exists to **surface a skipped gate as a defect**. Under unattended work every hinge has no gate, by decision. Marking each one that way would report a run of failures where there was a declared mode. The mode declaration is what distinguishes them, and it is why it goes at the top rather than being inferred cycle by cycle.
 
 ## Unattended presents a plan before it generates
 
@@ -109,7 +109,7 @@ with these options:
 24. The "why" is the reasoning the agent actually applied.
 25. Under unattended work, write no Options line and no Decision / chat line.
 26. Do not write an unattended cycle as though an engineer was consulted.
-27. Do not mark unattended hinges with the loop-records form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
@@ -133,7 +133,7 @@ Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-th
 
 Related:
 
-- the loop-records rule — the record's shape and the "none — no gate" form this is distinct from
+- the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the record's shape and the "none — no gate" form this is distinct from
 - the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — why attention is placed at the hinges
 - the the-hinge-cycle-runs-from-actuation-to-naming rule — the hinges that run either way
 - the never-ask-to-start-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
@@ -169,3 +169,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT

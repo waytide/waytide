@@ -1,4 +1,4 @@
-# Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop
+# A loop record holds the cycles through the loop, one file per feature
 
 `waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The decision log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
@@ -66,6 +66,8 @@
 
 Until 2026-10-24 the opening and How to apply described every cycle as recording options and the engineer's decision or chat, without exception. The unattended exception, which came after the rule was written, was stated only in the Format section. The opening and How to apply now carry it too.
 
+Until Sun Oct 25 2026 this rule was named loop-records and titled "Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop".
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
@@ -95,3 +97,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:55 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
