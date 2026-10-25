@@ -1,4 +1,4 @@
-# `waytide/local/items/` — the project's items, one file per item
+# The items directory holds the project's items, one file per item
 
 - **Solubility:** 11
 - **Original rank:** 1 of 106
@@ -163,6 +163,8 @@ Change the state as the item reaches another word, renaming the file with it, an
 
 **One word covers what two used to.** `Realized` replaces the pair `Realized` and `Implemented`, which distinguished a direction taken up from a sequence built. That distinction went with the mode vocabulary, and one word is what remains of it.
 
+Until Sun Oct 25 2026 this rule was named items-convention and titled "`waytide/local/items/` — the project's items, one file per item".
+
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
@@ -201,3 +203,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT

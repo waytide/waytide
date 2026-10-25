@@ -1,4 +1,4 @@
-# `waytide/local/items/` — the project's items, one file per item
+# The items directory holds the project's items, one file per item
 
 - **Solubility:** 11
 - **Original rank:** 1 of 106

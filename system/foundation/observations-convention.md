@@ -18,7 +18,7 @@
 
 **Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/`, and that rule is the observation's result. The observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. Nothing else about the observation changes: what it says stays as written, as the discovery record, and its state stays `Stated`.
 
-**So the items-convention needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
+**So the the-items-directory-holds-the-projects-items-one-file-per-item needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
 ## The shape
 
@@ -40,7 +40,7 @@ Write a later observation where the thinking moves, and leave the earlier one as
 
 Related:
 
-- the items-convention — the eight states an observation does not take, and the state requirement it satisfies
+- the the-items-directory-holds-the-projects-items-one-file-per-item — the eight states an observation does not take, and the state requirement it satisfies
 - the rules-convention — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry that records one

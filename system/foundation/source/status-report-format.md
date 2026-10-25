@@ -113,7 +113,7 @@ Keep each part tight. Read current state before printing — do not report stale
 
 Related:
 
-- the items-convention — the `Suspended` state a hidden record carries
+- the the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state a hidden record carries
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the `[suspended]` **tag**, which marks a log entry and is a different act from an item carrying the state
 - the a-printed-list-of-records-is-formatted-as-a-table rule — the form the report's tables take
 - the test-report and test-tree commands in the testing package
@@ -147,3 +147,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT

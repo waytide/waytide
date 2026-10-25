@@ -113,7 +113,7 @@ Until 2026-10-25 the statement that the prompt always says "work session" sat in
 
 Related:
 
-- the the-implementations-directory-records-each-implementations-lifecycle and the items-convention — the sibling artifact conventions
+- the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-rule-authorship-in-a-footer rule — the footer's format
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log rule
@@ -162,3 +162,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:57:38 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT

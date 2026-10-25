@@ -394,7 +394,7 @@ migrate_items() {
 
   mv "$old_dir" "$new_dir"
 
-  # An item that carries no tag takes [idea], per the items-convention: a Tags line is added under
+  # An item that carries no tag takes [idea], per the the-items-directory-holds-the-projects-items-one-file-per-item: a Tags line is added under
   # its State line. A record that already has a Tags line is untouched.
   for record in "$new_dir"/*.md; do
     [ -f "$record" ] || continue

@@ -47,7 +47,7 @@ Once the record is written, put the **design reconciliation** through the same U
 
 Related:
 
-- the the-implementations-directory-records-each-implementations-lifecycle and the items-convention — the sibling artifact conventions
+- the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-rule-authorship-in-a-footer rule — the footer's format
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log rule

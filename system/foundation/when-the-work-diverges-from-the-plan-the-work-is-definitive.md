@@ -21,5 +21,5 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 Related:
 
 - the work-sessions-convention — the design reconciliation this settles the ordinary answer to
-- the items-convention — amendment by dated addition, and supersession rather than rewriting
+- the the-items-directory-holds-the-projects-items-one-file-per-item — amendment by dated addition, and supersession rather than rewriting
 - this package's vocabulary — the reconcile term, and a design being reconciled against rather than regenerated from the work downstream of it

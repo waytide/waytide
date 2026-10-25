@@ -18,7 +18,7 @@
 
 **Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/`, and that rule is the observation's result. The observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. Nothing else about the observation changes: what it says stays as written, as the discovery record, and its state stays `Stated`.
 
-**So the items-convention needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
+**So the the-items-directory-holds-the-projects-items-one-file-per-item needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
 ## The shape
 
@@ -63,7 +63,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 10. Promotion is not a state change.
 11. When an observation stabilizes into a binding convention, write the rule in `waytide/local/rules/`.
 12. When the rule is written, the observation takes one added line naming it, `**Promoted to:** the <name> rule`, its result. Everything else stays as it is, as the discovery record.
-13. The items-convention needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
+13. The the-items-directory-holds-the-projects-items-one-file-per-item needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
 ## The shape
 
@@ -93,7 +93,7 @@ Until 2026-10-25 the Promotion step said to "note the promotion in the two files
 
 Related:
 
-- the items-convention — the eight states an observation does not take, and the state requirement it satisfies
+- the the-items-directory-holds-the-projects-items-one-file-per-item — the eight states an observation does not take, and the state requirement it satisfies
 - the rules-convention — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry that records one
@@ -120,3 +120,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:23:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
