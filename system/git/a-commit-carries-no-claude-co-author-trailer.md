@@ -1,4 +1,4 @@
-# No Claude co-author trailer in commits
+# A commit carries no Claude co-author trailer
 
 Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by Claude/Anthropic" attribution) to any commit you create. The commit should appear as authored by the user only.
 
