@@ -7,7 +7,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 - **Merged — the entry is a summary marker.** An affirmed experiment merges into its upstream branch, and a completed feature integrates. The record travels with it, so `master` holds the substance already. The entry names the record and its state and stops there.
 - **Not merged — the entry carries the finding, and only where there is one.** A refuted, inconclusive, abandoned, or superseded experiment is never merged, and neither is an abandoned or superseded feature. The log is then the only durable trace on `master`.
   - **An experiment reached a verdict, and the verdict is the finding.** The entry states the question, the verdict, and what was found. That is knowledge the project has, produced by the run, and it survives the branch.
-  - **Abandoned work reached no verdict — it stopped.** The entry states the intent, that it was abandoned, and the reasoning given for stopping. It does **not** reproduce the plan, the increments, or the design the work produced. See the the-log-never-says-undone-work-was-done rule, which states why a careful tense is not enough.
+  - **Abandoned work reached no verdict — it stopped.** The entry states the intent, that it was abandoned, and the reasoning given for stopping. It does **not** reproduce the plan, the increments, or the design the work produced. See the the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule, which states why a careful tense is not enough.
 
 ## Why an unmerged record is not covered by git
 
@@ -59,7 +59,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 6. For unmerged work, the entry carries the finding, and only where there is one.
 7. For an unmerged experiment that reached a verdict, the entry states the question, the verdict, and what was found.
 8. For abandoned work, the entry states the intent, that it was abandoned, and the reasoning given for stopping.
-9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-never-says-undone-work-was-done).
+9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done).
 10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
 11. Do not rely on the practice of committing the record to `master` while the work is on a branch.
 
@@ -112,3 +112,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT

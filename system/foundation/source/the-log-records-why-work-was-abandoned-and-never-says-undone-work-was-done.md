@@ -1,4 +1,4 @@
-# The log records the reasoning for an abandonment, and never conveys that something was done when it was not
+# The log records why work was abandoned, and never says undone work was done
 
 **A decision log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
@@ -52,6 +52,10 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 4. Reasoning for stopping belongs in the log. Work that stopped does not.
 5. **Why:** A reader consults the log, with no branch to compare against, to learn what the project decided. Recording unexecuted work makes it read as settled knowledge the project holds.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named the-log-never-says-undone-work-was-done and titled "The log records the reasoning for an abandonment, and never conveys that something was done when it was not".
+
 Related:
 
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's shape, and when it takes a body
@@ -68,3 +72,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT

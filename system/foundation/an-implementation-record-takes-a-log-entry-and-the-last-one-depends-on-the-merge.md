@@ -7,7 +7,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 - **Merged — the entry is a summary marker.** An affirmed experiment merges into its upstream branch, and a completed feature integrates. The record travels with it, so `master` holds the substance already. The entry names the record and its state and stops there.
 - **Not merged — the entry carries the finding, and only where there is one.** A refuted, inconclusive, abandoned, or superseded experiment is never merged, and neither is an abandoned or superseded feature. The log is then the only durable trace on `master`.
   - **An experiment reached a verdict, and the verdict is the finding.** The entry states the question, the verdict, and what was found. That is knowledge the project has, produced by the run, and it survives the branch.
-  - **Abandoned work reached no verdict — it stopped.** The entry states the intent, that it was abandoned, and the reasoning given for stopping. It does **not** reproduce the plan, the increments, or the design the work produced. See the the-log-never-says-undone-work-was-done rule, which states why a careful tense is not enough.
+  - **Abandoned work reached no verdict — it stopped.** The entry states the intent, that it was abandoned, and the reasoning given for stopping. It does **not** reproduce the plan, the increments, or the design the work produced. See the the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule, which states why a careful tense is not enough.
 
 ## Why an unmerged record is not covered by git
 

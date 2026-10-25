@@ -1,4 +1,4 @@
-# The log records the reasoning for an abandonment, and never conveys that something was done when it was not
+# The log records why work was abandoned, and never says undone work was done
 
 **A decision log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
