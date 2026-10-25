@@ -106,7 +106,7 @@ Until Sun Oct 25 2026 this rule was named a-record-takes-category-tags and title
 
 Related:
 
-- the `journal` package's journal-convention and a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
+- the `journal` package's the-journal-is-the-record-the-writer-keeps and a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
 - the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry that gains a `**Tags:**` line under its title
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, a reserved tag the log carries
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the other reserved tag the log carries
@@ -132,3 +132,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT

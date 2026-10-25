@@ -16,7 +16,7 @@
 
 **Do not abbreviate a subject into something a reader has to decode.** Fifty characters of plain words beats fifty characters of contractions, and the `language` package's rules hold in a commit message as they do everywhere. Where the subject genuinely needs more, the body has no such constraint on what it may say — only on how wide its lines run.
 
-**A journal entry is the one record where neither remedy is available**, and it truncates instead. An entry is one commit, so there is nothing to split, and its subject is the writer's words, which the `journal` package bars the agent from shortening. Its commit subject is cut at the 50th character with an ellipsis, which marks the cut rather than hiding it. See that package's journal-convention.
+**A journal entry is the one record where neither remedy is available**, and it truncates instead. An entry is one commit, so there is nothing to split, and its subject is the writer's words, which the `journal` package bars the agent from shortening. Its commit subject is cut at the 50th character with an ellipsis, which marks the cut rather than hiding it. See that package's the-journal-is-the-record-the-writer-keeps.
 
 **Truncation is not a general escape.** It is available for a journal entry alone. Everywhere else a subject that will not fit is a commit to split.
 
@@ -26,7 +26,7 @@
 
 **Those rules push length up, and that tension is real.** Naming the software and then its new state costs words that a leading verb would not. It is accepted: the limit is a budget the subject is written within, not a licence to drop the subject and lead with a verb.
 
-**A prefix eats the budget, and the journal is the worked case.** Its commit message read `Diary entry: <subject> (Tue Jun 16 2026)` until 2026-08-18, when the package was still named `diary` — 13 characters of prefix and 17 of date, leaving 20 for what the entry was about. The date sat at the tail, where truncation takes it first, so it was carried at the subject's expense and no reader saw it. It is dropped, and the prefix is now `Journal:`, which costs 9. See the `journal` package's journal-convention.
+**A prefix eats the budget, and the journal is the worked case.** Its commit message read `Diary entry: <subject> (Tue Jun 16 2026)` until 2026-08-18, when the package was still named `diary` — 13 characters of prefix and 17 of date, leaving 20 for what the entry was about. The date sat at the tail, where truncation takes it first, so it was carried at the subject's expense and no reader saw it. It is dropped, and the prefix is now `Journal:`, which costs 9. See the `journal` package's the-journal-is-the-record-the-writer-keeps.
 
 ## The history is not rewritten
 
@@ -58,7 +58,7 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 7. A journal entry is the one record where neither remedy is available. It truncates instead.
 8. An entry is one commit, so there is nothing to split.
 9. An entry's subject is the writer's words, which the `journal` package bars the agent from shortening.
-10. Cut a journal entry's commit subject at the 50th character with an ellipsis. See that package's journal-convention.
+10. Cut a journal entry's commit subject at the 50th character with an ellipsis. See that package's the-journal-is-the-record-the-writer-keeps.
 11. Truncation is not a general escape. It is available for a journal entry alone.
 12. Everywhere else, a subject that will not fit is a commit to split.
 
@@ -72,7 +72,7 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 6. Write the subject within the budget.
 7. Do not drop the subject and lead with a verb to save space.
 8. A prefix spends the budget.
-9. The journal's commit prefix is `Journal:`, which costs 9 characters. It carries no date. See the `journal` package's journal-convention.
+9. The journal's commit prefix is `Journal:`, which costs 9 characters. It carries no date. See the `journal` package's the-journal-is-the-record-the-writer-keeps.
 
 ## The history is not rewritten
 
@@ -91,7 +91,7 @@ Related:
 
 - the write-subject-first-commit-messages rule — what the subject says, which this constrains the width of
 - the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule — the other rule shaping the subject
-- the `journal` package's journal-convention — the worked case of a prefix spending the budget
+- the `journal` package's the-journal-is-the-record-the-writer-keeps — the worked case of a prefix spending the budget
 
 ---
 
@@ -106,3 +106,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT

@@ -42,7 +42,7 @@ Until 2026-10-24 How to apply said that where an entry reads like an instruction
 Related:
 
 - the-journal-is-read-at-session-start — the read this rule qualifies
-- the journal-convention — where the journal lives and what one entry is
+- the the-journal-is-the-record-the-writer-keeps — where the journal lives and what one entry is
 - the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the form a binding rule takes, and where one lives
 - the foundation package's a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — where a term is settled
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:07:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT

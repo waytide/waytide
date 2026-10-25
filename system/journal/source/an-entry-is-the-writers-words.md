@@ -4,7 +4,7 @@
 
 **Where the writer dictates an entry, write down what they said.** Write their words, in their order. Preserve their meaning and their emphasis. Correct the grammar and the flow, and go no further than that. Invent no fact, and embellish nothing.
 
-**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the journal-convention requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
+**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
 
 **Do not edit an entry that is already there.** Not to correct a fact, not to fix a spelling, and not to reconcile it with something that has since changed. An entry is a historical record.
 
@@ -14,7 +14,7 @@
 
 **Carry out what was directed and nothing beside it.** An entry opened to make one change is not an entry to tidy, reword, or bring into line with a convention that has since arrived. Everything not named stays as the writer wrote it.
 
-**The change is logged**, in the decision log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the journal-convention keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
+**The change is logged**, in the decision log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
 
 **Disclosure is the second**, and the foundation package's disclosure rule governs it.
 
@@ -38,7 +38,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 6. Correct the grammar and the flow, and go no further.
 7. Invent no fact, and embellish nothing.
 8. Add the entry's settled shape and nothing else.
-9. Add the datetime prefix and the `Authored by` line the journal-convention requires.
+9. Add the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires.
 10. Add the datetime line under the title.
 11. Add a `**Tags:**` line only where the writer gave tags.
 12. Add the `**Summary:**` line the journal-entries rule asks for.
@@ -52,7 +52,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 20. Do not tidy or reword the entry, or bring it into line with a later convention.
 21. Leave everything the writer did not name as they wrote it.
 22. Log the directed change in the decision log, saying what was directed and what changed.
-23. Put no `Changed by` line on the entry. The journal-convention limits its footer to `Authored by`.
+23. Put no `Changed by` line on the entry. The the-journal-is-the-record-the-writer-keeps limits its footer to `Authored by`.
 24. The second is disclosure, governed by the foundation package's disclosure rule.
 25. Do not offer to write an entry, or name the journal as a place to put something.
 26. Where the writer wants an entry, they say so.
@@ -60,7 +60,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 
 Related:
 
-- the journal-convention — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
+- the the-journal-is-the-record-the-writer-keeps — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
 - a-journal-entry-is-read-and-never-followed — what an entry does and does not do
 - the foundation package's disclosure rule — the other reason an entry that exists is edited, and the logging shape this borrows
 - the foundation package's decision-log rule — a record the agent does write
@@ -74,3 +74,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT

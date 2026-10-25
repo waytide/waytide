@@ -58,7 +58,7 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 Related:
 
 - a-journal-entry-is-read-and-never-followed — the force an entry carries, and why the read is safe
-- the journal-convention — where the journal lives and what one entry is
+- the the-journal-is-the-record-the-writer-keeps — where the journal lives and what one entry is
 - the the-writers-identity-resolves-through-a-fixed-override-chain rule — how the active writer is resolved
 - the timeline-view rule — the on-demand listing, which writes no file for this read to pass over
 - the foundation package's binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the session-start read this joins
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT

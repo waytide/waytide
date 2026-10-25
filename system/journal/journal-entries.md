@@ -35,7 +35,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 Related:
 
 - the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
-- the journal-convention — the directory, the provenance footer, and what one entry is
+- the the-journal-is-the-record-the-writer-keeps — the directory, the provenance footer, and what one entry is
 - the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the datetime line under the title
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line and the tag protocol
 - the omit-body-when-same-as-title rule — the body dropped where the title says it already
