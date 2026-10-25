@@ -1,4 +1,4 @@
-# The actuation gate: offer candidate actuations as options. The human selects one or writes their own
+# The actuation gate offers candidate actuations as options
 
 At the actuation gate — the first gate, where the cradle is set — the AI does not commit a single actuation and proceed. It presents the human a small set of **candidate actuations** as options to choose among. The human then either:
 
@@ -87,6 +87,10 @@ This mechanism is the candidates as options, with the free-text option. It appli
 16. This mechanism applies at every hinge of the cycle: actuation, observation, controls, implementation, and naming.
 17. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
 
+## History
+
+Until Sun Oct 25 2026 this rule was named actuation-gate-options-or-chat and titled "The actuation gate: offer candidate actuations as options. The human selects one or writes their own".
+
 Related:
 
 - the hinge-cycle
@@ -116,3 +120,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT

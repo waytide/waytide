@@ -1,4 +1,4 @@
-# The actuation gate: offer candidate actuations as options. The human selects one or writes their own
+# The actuation gate offers candidate actuations as options
 
 At the actuation gate — the first gate, where the cradle is set — the AI does not commit a single actuation and proceed. It presents the human a small set of **candidate actuations** as options to choose among. The human then either:
 

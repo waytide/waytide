@@ -37,5 +37,5 @@ Word each option's own description *…then display this selection prompt again*
 
 Related:
 
-- the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
+- the `design-by-efferent` package's hinge-cycle and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
 - its vocabulary — where **mean-bias** is defined

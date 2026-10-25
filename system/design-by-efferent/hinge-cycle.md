@@ -42,7 +42,7 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 
 **So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, and `Explain` fills the second place, per the present-every-prompt rule. The agent does not search for a second candidate to reach two.
 
-**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the actuation-gate-options-or-chat rule, which states the same mechanism at the first gate.
+**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
 
 **Why:** Each of the five is a real design hinge with its own failure mode. The implementation is where solubility is judged. An awkward implementation reveals a bad cradle, and the fix then goes to the cradle rather than the code. The naming is where a name that mis-describes what the observation establishes is a design error in its own right. The outcome taxonomy is a design artifact, settled deliberately rather than a label applied after the fact.
 
@@ -65,5 +65,5 @@ Related:
 - the what-each-hinge-displays rule
 - the first-turn rule — the three test hinges produce turn one
 - the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
-- the actuation-gate-options-or-chat rule — the same mechanism at the first gate
+- the the-actuation-gate-offers-candidate-actuations-as-options rule — the same mechanism at the first gate
 - the one-outcome-at-a-time rule

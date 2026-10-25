@@ -73,7 +73,7 @@ Until 2026-10-25 the rule said that where a prompt has four genuine candidates, 
 
 Related:
 
-- the `design-by-efferent` package's hinge-cycle and actuation-gate-options-or-chat rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
+- the `design-by-efferent` package's hinge-cycle and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
 - its vocabulary — where **mean-bias** is defined
 
 ---
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 8:49:17 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:54:56 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:27:43 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
