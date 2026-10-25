@@ -1,4 +1,4 @@
-# "Test report" classifies the suite and prints the two-level context hierarchy
+# A test report classifies the suite and prints its context hierarchy
 
 When the user asks for a **test report**, classify the automated suite along the lenses below, then print the context hierarchy two levels deep. **Re-derive everything from the current files** — read the tests and recompute membership and counts. Do not report stale buckets from memory. The lenses are the frame. The specific buckets are whatever the current suite yields.
 
