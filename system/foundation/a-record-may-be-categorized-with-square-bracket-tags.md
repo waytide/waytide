@@ -1,4 +1,4 @@
-# A record takes square-bracket category tags
+# A record may be categorized with square-bracket tags
 
 **Any record may be categorized with square-bracket tags**, as in `[idea]`. This is the system's one tagging protocol, and it is universal: no record is excluded from it, and no rule excludes one. A tag applies to the **whole record** or to **one list item**.
 
@@ -49,59 +49,6 @@ Write tags lower-case and dash-separated in square brackets. Introduce a freefor
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag, it is freeform.
 
-## Compressed
-
-1. Any record may be categorized with square-bracket tags, as in `[idea]`. Add a `**Tags:**` line wherever a categorization is worth marking.
-2. This is the system's one tagging protocol.
-3. The protocol is universal. No record is excluded from it, and no rule excludes one.
-4. Universal means every record, of every kind, anywhere.
-5. Examples are a working-state artifact under `waytide/local/`, a decision log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, and a README.
-6. A tag applies to the whole record or to one list item.
-
-## Where the tag goes
-
-1. There is one form, and every record uses it.
-2. For the whole record, tags go on a dedicated `**Tags:**` line among the canonical lines at the head.
-3. The `**Tags:**` line goes after `**State:**` where there is one.
-4. Several tags are separated by spaces, as in `**Tags:** [idea] [decision]`.
-5. For one list item, the tag prefixes that item's text, as in `- [idea] My great idea is thus`.
-6. A record with no head gains one when it is tagged.
-7. A decision log entry is only a title, so a `**Tags:**` line under its title is its whole head. A tagged entry is two lines.
-8. The leading-tag form is discontinued. That form put a tag before the title or text in place of a `**Tags:**` line. Do not use it.
-9. No record is excluded by its shape. A short, one-line, generated, or historical record carries its tags on a `**Tags:**` line.
-10. Tags are lower-case, in square brackets.
-11. A multiword tag is dash-separated and lower-case, as in `[legal-matter]`.
-12. There is no controlled vocabulary. Tags are freeform and introduced as needed.
-13. Nothing validates a tag, and nothing enumerates the set.
-14. A tag used once is as legitimate as a tag used a hundred times.
-15. Tags are optional at every level.
-16. A record that is not categorized carries no `**Tags:**` line and no leading tag.
-17. A list that is not categorized carries no tag prefixes on its items.
-18. The absence of tags claims nothing.
-19. Optional is not excluded. Every record may be tagged, and none must be.
-20. The `**Tags:**` line is the plain text data attribute form: a bold label, a colon, and a value. See this package's vocabulary.
-
-## A reserved tag and a freeform tag
-
-1. Most tags are freeform, and a few are reserved.
-2. A freeform tag means only that the writer put it there.
-3. A reserved tag is one whose meaning a rule settles, and something follows from it.
-4. A rule reserves a tag by naming it and saying what follows. Nothing else reserves a tag.
-5. A tag that no rule names is freeform.
-6. Nothing is derived from a freeform tag: no filename suffix, no report, no check.
-7. A rule that wants a set of positions reserves the tags that carry them, or names a new line.
-8. The reserved set stays small, and each member is named in a rule a reader can find.
-9. The freeform space around reserved tags is left untouched.
-10. A writer needs to know a tag is reserved only when using it for what the rule says.
-11. Reserved and freeform tags sit in the same `**Tags:**` line. Do not put reserved words on a second line beside it.
-12. The cost is accepted: a reader cannot tell from the line alone whether a rule turns on a tag.
-13. Freeform tags that differ, like `[idea]` and `[ideas]`, do not categorize together. This is accepted rather than solved.
-14. **Why:** categorization that costs nothing gets done. A square-bracket tag shows in a raw-text preview and is found by plain text search. It also needs no taxonomy that someone has to maintain.
-
-## History
-
-**A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them.
-
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
@@ -110,19 +57,3 @@ Related:
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the other reserved tag the log carries
 - the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does exempt the log; a footer is lines the entry has nowhere to put, where a tag is not
 - this package's vocabulary — the plain text data attribute line
-
----
-
-Authored by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 10:15:53 PM PT
-Changed by Scott Bellware on Mon Aug 17 2026 at 10:39:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:11:33 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
-Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
-Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
-Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
-Changed by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
-Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
-Changed by Scott Bellware on Sun Oct 25 2026 at 4:11:46 PM PT

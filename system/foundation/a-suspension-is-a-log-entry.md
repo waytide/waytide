@@ -22,7 +22,7 @@
 **Tags:** [suspended]
 ```
 
-**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an item's and an implementation record's do.
+**That is the one form every record uses.** The a-record-may-be-categorized-with-square-bracket-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an item's and an implementation record's do.
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
@@ -38,7 +38,7 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 
 Related:
 
-- the a-record-takes-category-tags rule — the universal tag protocol, and its one form
+- the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
 - the decision-log-convention — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the items-convention — the `Suspended` **state**, which is what an item takes instead

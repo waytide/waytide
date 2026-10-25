@@ -17,5 +17,5 @@ The structure of a full entry is therefore the `# <title>`, then the datetime li
 Related:
 
 - the journal-entries rule — the filename stamp this is derived from, and its local time
-- the `foundation` package's a-record-takes-category-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
+- the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
 - the omit-body-when-same-as-title rule — the body this line stands above

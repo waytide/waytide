@@ -2,7 +2,7 @@
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
-**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-takes-category-tags rule), and they are **reserved**: the lifecycle turns on which one a record carries.
+**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule), and they are **reserved**: the lifecycle turns on which one a record carries.
 
 **That one difference accounts for every other.** A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict. Everything the two kinds do differently follows from it, and nothing else does.
 
@@ -77,7 +77,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 4. The record is a persisted, dated artifact, kept after the implementation concludes.
 5. An experiment is tagged `[experiment]` and is built to a question.
 6. A feature is tagged `[feature]` and is built to an intent.
-7. These are ordinary square-bracket tags (see the a-record-takes-category-tags rule).
+7. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
 8. Both tags are reserved. The lifecycle turns on which one a record carries.
 9. A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict.
 10. Every difference between the two kinds follows from that one difference, and from nothing else.
@@ -164,7 +164,7 @@ Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the conclu
 Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
-- the a-record-takes-category-tags rule — the tags, and what a reserved tag is
+- the a-record-may-be-categorized-with-square-bracket-tags rule — the tags, and what a reserved tag is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
@@ -181,3 +181,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:38:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:14:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT

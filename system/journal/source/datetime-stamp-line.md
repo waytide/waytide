@@ -45,7 +45,7 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 Related:
 
 - the journal-entries rule — the filename stamp this is derived from, and its local time
-- the `foundation` package's a-record-takes-category-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
+- the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
 - the omit-body-when-same-as-title rule — the body this line stands above
 
 ---
@@ -58,3 +58,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 10:13:43 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT

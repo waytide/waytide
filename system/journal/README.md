@@ -11,7 +11,7 @@ Waytide's other records are the agent's. The decision log, the work session reco
 
 **A journal entry is committed as `Journal: <subject>`**, with nothing following the subject. It carried a parenthetical date until 2026-08-18, and the prefix was `Journal entry:` — together 30 characters of a 50-character subject line, leaving 20 for the entry itself. The date is in the entry's filename.
 
-**The tag protocol is no longer this package's.** A journal entry takes square-bracket category tags, and so does every other working-state artifact — the rule moved to `foundation` on 2026-08-18 as `a-record-takes-category-tags`. What stays here is where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary.
+**The tag protocol is no longer this package's.** A journal entry takes square-bracket category tags, and so does every other working-state artifact — the rule moved to `foundation` on 2026-08-18 as `a-record-may-be-categorized-with-square-bracket-tags`. What stays here is where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary.
 
 **Vocabulary** (`vocabulary.md`): three terms — **writer**, **journal**, and **journal entry** — and one substitution — `journal` rather than *diary*, *personal log*, or *personal journal*.
 

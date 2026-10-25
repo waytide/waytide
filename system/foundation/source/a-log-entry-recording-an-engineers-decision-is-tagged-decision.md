@@ -58,7 +58,7 @@ Until Sun Oct 25 2026 this rule was named a-decision-the-engineer-made-is-tagged
 Related:
 
 - the decision-log-convention — the entry's form
-- the a-record-takes-category-tags rule — the tag protocol, and what a reserved tag is
+- the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
 - the a-suspension-is-a-log-entry rule — `[suspended]`, the other reserved tag the log carries
 
 ---
@@ -66,3 +66,4 @@ Related:
 Authored by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:11:46 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT

@@ -22,7 +22,7 @@
 **Tags:** [suspended]
 ```
 
-**That is the one form every record uses.** The a-record-takes-category-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an item's and an implementation record's do.
+**That is the one form every record uses.** The a-record-may-be-categorized-with-square-bracket-tags rule excludes no record and offers no second shape, so a log entry's tags sit where an item's and an implementation record's do.
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
@@ -63,7 +63,7 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 **Tags:** [suspended]
 ```
 
-2. This is the one form every record uses, per the a-record-takes-category-tags rule. A log entry's tags sit where an item's and an implementation record's do.
+2. This is the one form every record uses, per the a-record-may-be-categorized-with-square-bracket-tags rule. A log entry's tags sit where an item's and an implementation record's do.
 3. A log entry may carry other tags beside this one.
 4. `[suspended]` is a reserved tag. What it marks is fixed here.
 5. The set of suspensions is read from this tag.
@@ -84,7 +84,7 @@ A leading-tag form was written on 2026-08-18 and superseded the same day.
 
 Related:
 
-- the a-record-takes-category-tags rule — the universal tag protocol, and its one form
+- the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
 - the decision-log-convention — the entry's form
 - the rules-convention — removing a rule, and the reconciliation the entry names
 - the items-convention — the `Suspended` **state**, which is what an item takes instead
@@ -99,3 +99,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:30:23 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT

@@ -16,7 +16,7 @@
 
 **An entry written at 23:40 on a Tuesday reads as that Tuesday, wherever the writer was.** Normalizing it would move some entries onto a date the writer did not live through. A personal record is read back against the day the person remembers, so the local hour is the one that has to survive.
 
-**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The datetime-stamp-line, omit-body-when-same-as-title, and journal-entries rules each state one part of that shape, and the `foundation` package's a-record-takes-category-tags rule states the tag protocol, which is no longer the journal's own.
+**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The datetime-stamp-line, omit-body-when-same-as-title, and journal-entries rules each state one part of that shape, and the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol, which is no longer the journal's own.
 
 **An entry carries the provenance footer**, like every other working-state artifact. See the foundation package's working-state-artifacts-carry-a-provenance-footer rule. The footer names who wrote it, which is what a journal kept by more than one writer needs.
 
@@ -92,7 +92,7 @@ One file per entry rather than one per day follows the convention every other da
 4. An entry takes a `**Summary:**` line only where the summary says something the body does not.
 5. An entry carries no state line and no section beyond those.
 6. The datetime-stamp-line, omit-body-when-same-as-title, and journal-entries rules each state one part of that shape.
-7. The foundation package's a-record-takes-category-tags rule states the tag protocol.
+7. The foundation package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol.
 
 ## Footer
 
@@ -169,3 +169,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:37:19 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:18:06 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
