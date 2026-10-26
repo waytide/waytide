@@ -25,12 +25,13 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## The state
 
-**The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is added when the record reaches one of the words, not when the work starts. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
+**The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is written with the record, and changes as the record reaches another word. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
 
-**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-ends-with-its-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
+**`Active` is the in-progress state**, as it is for an item. A record is written when its work starts, so it carries `Active` from the moment it is written. Absence is not a state, and a record without a line is a defect.
 
 **The state words both kinds take:**
 
+- **Active** — the work is in progress.
 - **Abandoned** — dropped before concluding. Not merged, and the record is kept.
 - **Superseded** — replaced by another implementation. The two records name the counterpart.
 - **Suspended** — paused, not ended.
@@ -59,7 +60,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## Format
 
-The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record carries a state line, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the implementation-records-take-a-log-entry rule).
+The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and the state suffix. End the file with the provenance footer, and pair it with a log entry (see the implementation-records-take-a-log-entry rule).
 
 **Why:** an experiment and a feature had two conventions and two lifecycles that agreed on almost everything. Both are bounded work on a branch, with a working location chosen at the start, a declared end, and recorded confirmations. What they did not share follows from one difference — a question against an intent — which a tag states and the lifecycle reads.
 
@@ -67,9 +68,11 @@ Four rules stating one lifecycle twice is four places to keep true, and the two 
 
 **How to apply:** record every implementation here, tagged `[experiment]` or `[feature]`. Open with the question or the intent, then the branch topology and the working location. Forecast before the work where it is an experiment, and record what happened against the forecast.
 
-Leave the state line off while the work is under way. Add it when the record reaches a word, and update it as the state changes. Record each confirmation the lifecycle requires.
+Write the state line as `Active` when the record is written, and update it as the state changes. Record each confirmation the lifecycle requires.
 
 ## History
+
+Until 2026-10-26 the absence of a state line was an implementation's in-progress state. The line was added when the record reached a word, and an open record took no filename suffix. The engineer settled that implementations take the Active state, as items do, which makes the in-progress state a word on the line and in the filename.
 
 Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the concluding words both kinds take", though Suspended is defined as paused, not ended, and the filename took its state suffix "once the record concludes". That left open whether a suspended record takes the suffix, which the a-record-ends-with-its-state-in-upper-case rule gives to any record carrying a state line. The engineer settled that Suspended is a state and not a conclusion, and that the suffix follows the state line.
 
@@ -77,10 +80,10 @@ Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
 - the a-record-takes-category-tags rule — the tags, and what a reserved tag is
-- the a-record-ends-with-its-state-in-upper-case rule — why an open record takes no suffix
+- the a-record-ends-with-its-state-in-upper-case rule — the filename suffix the state line gives
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
-- the items-convention — the other record that carries a state, and which has no in-progress absence
+- the items-convention — the other record that carries a state, and whose in-progress state is also Active
 
 ---
 
@@ -90,3 +93,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:38:37 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT

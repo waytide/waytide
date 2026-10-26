@@ -40,8 +40,8 @@
 
 Every item carries a `**State:**` line, from the moment it is written:
 
-- **Open** — the thinking is not settled. Where an item starts when it is a hypothesis rather than a direction.
-- **Active** — settled, and the work is expected. Where an item starts when it settles something.
+- **Open** — the work has not started, whether the thinking is settled or not. Where every item but an observation starts.
+- **Active** — the work is in progress. An item becomes Active when its work starts.
 - **Realized** — what the item describes exists.
 - **Deferred** — kept deliberately, with no date and nobody working toward it. **An item that is merely waiting its turn is not this** — it carries a `**Waits for:**` line and whatever state its thinking has reached.
 - **Suspended** — paused, not ended.
@@ -50,9 +50,9 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
 - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
 
-**`Stated` is the third starting word and the only terminal one**, and an observation takes it alone. Every other item takes one of the two below.
+**`Stated` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
 
-**`Open` and `Active` are the two starting words**, and which one an item takes says what kind of record it is being written as. Absence is not a state, and an item without a line is a defect.
+**`Open` is the starting word for every other item**, whether its thinking is settled or not. **`Active` is the in-progress state**, and an item reaches it when its work starts. **As the engineer stated it:** Active is the in-progress state. Absence is not a state, and an item without a line is a defect.
 
 **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
 
@@ -80,7 +80,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 Keeping the shape thin is the other half. The rules this replaces fixed a spine for a design and an element order for a plan, and an item that is neither had nowhere to sit. What every item genuinely shares is a state, a tag, a footer, a log entry, and a name.
 
-**How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open** where the thinking is unsettled and **Active** where it settles something.
+**How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open**, and make it **Active** when its work starts.
 
 Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
 

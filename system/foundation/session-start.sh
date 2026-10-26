@@ -76,8 +76,9 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
 # all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
 # The state is read from the record's canonical "**State:** <state>" line. The state
-# words also appear throughout a record's prose, so only that line is authoritative;
-# a record without one is still in progress.
+# words also appear throughout a record's prose, so only that line is authoritative.
+# Active is the in-progress state. A record without a line is reported too, since it
+# has not concluded.
 #
 # Prints "<n> <noun> open: <name> (<note>), ..." or nothing. Arguments: the
 # directory, the singular noun, the plural noun, then the concluded state words.
@@ -114,6 +115,9 @@ report_open() {
     [ -z "$concluded" ] || continue
 
     case "$state" in
+      Active)
+        note=active
+        ;;
       Suspended)
         note=suspended
         ;;
