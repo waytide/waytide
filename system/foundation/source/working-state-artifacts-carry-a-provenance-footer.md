@@ -48,7 +48,7 @@ Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format and the rule-file case
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the exempt one-line log
-- the artifact conventions that reference this one — the-implementations-directory-records-each-implementations-lifecycle, the-items-directory-holds-the-projects-items-one-file-per-item, an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, a-work-session-record-is-the-narrative-of-one-work-session, and DBE's a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature
+- the artifact conventions that reference this one — the-implementations-directory-holds-one-record-per-implementation, the-items-directory-holds-the-projects-items-one-file-per-item, an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, a-work-session-record-is-the-narrative-of-one-work-session, and DBE's a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature
 
 ---
 
@@ -79,3 +79,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT

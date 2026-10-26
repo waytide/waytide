@@ -1,4 +1,4 @@
-# The implementations directory records each implementation's lifecycle
+# The implementations directory holds one record per implementation
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 

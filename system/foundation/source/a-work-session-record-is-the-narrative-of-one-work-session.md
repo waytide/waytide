@@ -117,7 +117,7 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Related:
 
-- the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
+- the the-implementations-directory-holds-one-record-per-implementation and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
@@ -172,3 +172,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT

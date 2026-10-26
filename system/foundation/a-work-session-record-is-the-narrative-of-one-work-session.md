@@ -47,7 +47,7 @@ Once the record is written, put the **design reconciliation** through the same U
 
 Related:
 
-- the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
+- the the-implementations-directory-holds-one-record-per-implementation and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
