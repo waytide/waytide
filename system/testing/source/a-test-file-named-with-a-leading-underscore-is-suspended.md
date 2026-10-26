@@ -74,7 +74,7 @@ Related:
 
 - the tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit rule — the other thing that decides what a run contains
 - the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other sense of the word, which this is not
-- the `foundation` the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` state, whose sense this takes
+- the `foundation` the-items-directory-holds-one-file-per-item — the `Suspended` state, whose sense this takes
 - the `foundation` vocabulary — *deferred*, *suspended*, and *out of scope*, stated beside each other
 - the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the run this narrows the membership of
 
@@ -89,3 +89,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:37 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT

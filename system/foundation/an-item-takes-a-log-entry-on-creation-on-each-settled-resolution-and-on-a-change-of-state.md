@@ -10,7 +10,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 - **On creation.** That the item was recorded at all is itself a decision, and the entry records the item rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit an item records decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-the-projects-items-one-file-per-item sets out. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
+- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item sets out. **An observation is `Stated` and never moves**, so it takes a creation entry and no other.
 
 ## What the entry says
 
@@ -36,11 +36,11 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 ## Why the obligation is stated here rather than in each convention
 
-**Three conventions state their own log entry in full, and the the-items-directory-holds-the-projects-items-one-file-per-item points here.** The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule each state the pairing inline. The the-items-directory-holds-the-projects-items-one-file-per-item requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
+**Three conventions state their own log entry in full, and the the-items-directory-holds-one-file-per-item points here.** The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule each state the pairing inline. The the-items-directory-holds-one-file-per-item requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
 
 **What reached the log anyway was the the-log-holds-one-file-per-entry-with-a-one-line-title's general trigger** — write an entry whenever a real decision is made, and when in doubt, log it. That is enough to produce the entries and not enough to make them reliable, since it rests on each writer reaching the same judgment about what counts.
 
-**Stating it once covers every item.** The triggers above do not vary by what an item is tagged, and the exclusions are the more valuable half. Written into the the-items-directory-holds-the-projects-items-one-file-per-item as well they would be two copies to keep true, which this system has already had drift on. This is the shape the working-state-artifacts-carry-a-provenance-footer rule takes for the same reason.
+**Stating it once covers every item.** The triggers above do not vary by what an item is tagged, and the exclusions are the more valuable half. Written into the the-items-directory-holds-one-file-per-item as well they would be two copies to keep true, which this system has already had drift on. This is the shape the working-state-artifacts-carry-a-provenance-footer rule takes for the same reason.
 
 **Why:** the log is the project's record of what was decided and when, and direction is the most consequential thing a project decides. An artifact holds what the direction *is*. The log holds *when it moved*, which the artifact cannot carry — a resolution added today and one added in March read identically in the file, and their dates say when each was settled rather than what prompted it.
 
@@ -62,4 +62,4 @@ Related:
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the a-work-session-record-is-the-narrative-of-one-work-session — the reconciliation prompt whose *the direction stands* answer is logged
 - the `git` package's write-subject-first-commit-messages and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
-- the the-items-directory-holds-the-projects-items-one-file-per-item — the record whose states an entry reports, and which this rule's name predates
+- the the-items-directory-holds-one-file-per-item — the record whose states an entry reports, and which this rule's name predates

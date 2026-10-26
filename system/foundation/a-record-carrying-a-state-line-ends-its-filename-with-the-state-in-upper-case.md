@@ -26,7 +26,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **The name is derived from the line and changes only when it changes.** Where the two disagree the line is right, and the name is stale.
 
-**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-the-projects-items-one-file-per-item sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
+**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
 
 **A renamed file breaks a path recorded elsewhere.** That is the cost the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory names when it says to reference a rule by its name rather than its path. Here the mitigation is the same as everywhere: historical records are left as written and a reader who follows an unresolvable path uses git, and **live** artifacts that cite the record are reconciled at the rename.
 
@@ -41,7 +41,7 @@ When the state changes, rename it again. When a reversible state word is taken b
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record whose state line is absent while the work is under way, and the words each kind takes
-- the the-items-directory-holds-the-projects-items-one-file-per-item — the other record that carries a state line, and which carries one from the moment it is written
+- the the-items-directory-holds-one-file-per-item — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — referencing by name rather than path, and the reconciliation a rename obliges
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes

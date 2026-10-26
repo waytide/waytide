@@ -89,7 +89,7 @@ Related:
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — removing a rule, and the reconciliation the entry names
-- the the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` **state**, which is what an item takes instead
+- the the-items-directory-holds-one-file-per-item — the `Suspended` **state**, which is what an item takes instead
 
 ---
 
@@ -107,3 +107,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT

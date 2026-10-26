@@ -49,7 +49,7 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 Related:
 
 - the a-work-session-record-is-the-narrative-of-one-work-session — the design reconciliation this settles the ordinary answer to
-- the the-items-directory-holds-the-projects-items-one-file-per-item — amendment by dated addition, and supersession rather than rewriting
+- the the-items-directory-holds-one-file-per-item — amendment by dated addition, and supersession rather than rewriting
 - this package's vocabulary — the reconcile term, and a design being reconciled against rather than regenerated from the work downstream of it
 
 ---
@@ -60,3 +60,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
