@@ -1,6 +1,6 @@
 # A printed list of records is formatted as a table
 
-**When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. That reaches any record — items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
+**When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
 
 **The first column is the record's handle and carries no heading.** That is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit. The columns after it are headed.
 
@@ -35,13 +35,13 @@
 
 Rows are the better form where a field is long, and that is the whole of the exception. The two forms are not in competition — they answer to the length of what is in them.
 
-**How to apply:** on a request for a list of records, render a table where every field is short, and rows where a field runs to a sentence. In a table, put the handle first with no heading, then the creating commit and the last commit to touch it, then the title, then one column for the fact that was asked about. Give a list of commits no SHA columns.
+**How to apply:** on a request for a list of records, render a table where every field is short, and rows where a field runs to a sentence. Do not call a list a table unless it is formatted as columns. In a table, put the handle first with no heading, then the creating commit and the last commit to touch it, then the title, then one column for the fact that was asked about. Give a list of commits no SHA columns.
 
 Keep every column short. Where a field runs to a sentence, use rows instead.
 
 ## Compressed
 
-1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with no columns.
+1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
 3. The first column is the record's handle and has no heading.
 4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
@@ -83,6 +83,8 @@ Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A
 
 Until 2026-10-25 the rule opened by saying to render a list of records as a table, and gave rows, the form for a field that runs to a sentence, only in a later section. The engineer settled that the opening and How to apply say which form a printed list takes, and when.
 
+The engineer also settled the same day that a list is not called a table unless it is formatted as columns.
+
 Related:
 
 - the a-status-report-prints-a-fixed-whole-project-report rule — whose tables this agrees with
@@ -102,3 +104,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:16:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:20 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:44 PM PT
