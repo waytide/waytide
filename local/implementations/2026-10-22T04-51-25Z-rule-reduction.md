@@ -6,7 +6,7 @@
 
 **Can the rules a session reads be reduced — in their content, in how they are read, and in how they arrive — and sessions still behave the same?**
 
-It realizes the item *Reducing rule files to their essential directives*, `local/items/2026-09-09T20-36-50Z-reducing-rule-files-to-their-essential-directives-OPEN.md`, and its plan.
+It realizes the item *Reducing rule files to their essential directives*, `local/items/2026-09-09T20-36-50Z-reducing-rule-files-to-their-essential-directives-ACTIVE.md`, and its plan.
 
 ## Phases
 
@@ -4644,3 +4644,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:19:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:28:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:00:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:07:22 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
