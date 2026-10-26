@@ -12,7 +12,7 @@ It realizes the item *Reducing rule files to their essential directives*, `local
 
 One at a time, in this order, each on its own branch from the experiment's.
 
-1. **flattening** — `experiment/worktree/rule-reduction.flattening`. Can each rule be flattened to its essential content — present directives and their reasons — and sessions behave the same? *Same effect and outcome* is the engineer's test for what is essential.
+1. **compression** — `experiment/worktree/rule-reduction.compression`. Named flattening until 2026-10-26. Can each rule be flattened to its essential content — present directives and their reasons — and sessions behave the same? *Same effect and outcome* is the engineer's test for what is essential.
 2. **packaged-script** — `experiment/worktree/rule-reduction.packaged-script`. Does one packaged script that prints every rule in a fixed order shorten the session-start read?
 3. **additional-context** — `experiment/worktree/rule-reduction.additional-context`. Can the session-start hook deliver the rules to the agent before its first response, with no read at all?
 
@@ -83,6 +83,7 @@ Committed before the work. Each item carries the agent's confidence.
 | Rule names — clarity | What makes a rule's content clear | Sun Oct 25 2026 at 4:06:30 PM PT |
 | Rule names — participation | Attended | Sun Oct 25 2026 at 4:08:50 PM PT |
 | Rule names — participation, after five rules | Unattended, with a review list | Sun Oct 25 2026 at 4:19:33 PM PT |
+| Phase 1 renamed | compression, formerly flattening | Mon Oct 26 2026 at 3:07:22 PM PT |
 
 ## What actually happened
 
@@ -1476,6 +1477,12 @@ The engineer reviews this table and sends back any title to change.
 8. **Each record carries many obligations.** A state change on an item is a rename, a new state line, a log entry, a footer line, and a reconciliation of the live paths that cite the old name. Inserting a priority rank renumbers every item below it. The improvement named is to drop the filename state suffix and read the state lines with a listing script. That costs the state shown in an ordinary directory listing, which is why the suffix exists.
 9. **Every prompt costs extra turns.** `Explain` takes one of four option slots. The ask-at-once rule interrupts the work for each preference. Attended work puts five prompts per outcome, even for a small unit. The improvement named is to record the engineer's words at the moment a preference is stated, and ask about recording it at the task's end.
 10. **Nothing re-reads the rules after the context is compacted.** The rules then survive only as a summary. The `SessionStart` hook runs after compaction, but its instruction asks for the full read again. The improvement named is the compact compiled form of the first finding, which would make a re-read cheap.
+
+### Phase 1 is renamed compression — 2026-10-26
+
+**The engineer renamed phase 1 from flattening to compression.** In the engineer's words: it's not just a flattening. The phase has compressed every rule's text and clarified every rule's name, and flattening names only the first of those.
+
+**The phase branch is renamed to match**, from `experiment/worktree/rule-reduction.flattening` to `experiment/worktree/rule-reduction.compression`, with `git branch -m` in the worktree. The worktree's directory is named for the experiment, not the phase, so it is unchanged. The Phases list carries the new name. The sections above that name the phase flattening are left as written, since each records what was true when it was written.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -4636,3 +4643,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:08:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:19:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:28:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:00:56 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:07:22 PM PT
