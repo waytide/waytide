@@ -53,6 +53,8 @@ Until 2026-10-25 the statement that the prompt always says "work session" sat in
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the implementations-convention and the items-convention — the sibling artifact conventions
@@ -60,7 +62,7 @@ Related:
 - the present-every-prompt-through-askuserquestion rule — why every prompt goes through the selection UI
 - the decision-log-convention rule
 - the observations rule
-- the logs-directory rule — the running records this sits among
+- the logs-directory rule — the contemporaneous, historical records this sits among
 - the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw
 
 ---
@@ -103,3 +105,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:03:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:57:38 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

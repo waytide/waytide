@@ -16,13 +16,15 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 Until 2026-10-25 the Content line said "An untagged entry is one line", and How to apply said to write "a titled one-line entry". Both read as barring the body the same line allows where reasoning will not fit a title, which an abandonment takes. The engineer settled that bodies stay and one line is the ordinary case.
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the file-names rule — the shared filename convention
 - the rules-convention — a new rule pairs with a log entry
 - the observations-convention — its recording step logs too
 - the an-item-takes-a-log-entry rule — an item, deferred work included, logs on creation and on each change of state
-- the logs-directory rule — the running records this sits among
+- the logs-directory rule — the contemporaneous, historical records this sits among
 - the a-record-takes-category-tags rule — the `**Tags:**` line an entry carries, in the one form
 - the a-decision-the-engineer-made-is-tagged-decision rule — `[decision]`, the tag an engineer's decision carries
 
@@ -44,3 +46,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:38:41 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:00:23 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

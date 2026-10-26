@@ -28,12 +28,14 @@ Until 2026-10-24 the opening and How to apply described every cycle as recording
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
 - the hinge-cycle rule
 - foundation's file-name prefix and log conventions
-- `foundation`'s logs-directory rule — the running records this sits among, which names this directory without requiring anything of it
+- `foundation`'s logs-directory rule — the contemporaneous, historical records this sits among, which names this directory without requiring anything of it
 
 ---
 
@@ -55,3 +57,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:19 AM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

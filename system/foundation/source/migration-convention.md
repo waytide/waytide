@@ -19,12 +19,14 @@ Planning it in the repository the content is leaving puts the plan where the con
 
 Until 2026-10-25 the Related entry for the logs-directory rule said a migration record "is written to be executed rather than to account for what happened", while the body says the record also holds how the move actually went. The engineer settled that the record is written ahead of the move and then records what happened against the plan.
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled item or be mechanical enough to need none
 - the file-names rule — the filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule
-- the logs-directory rule — the running records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs
+- the logs-directory rule — the contemporaneous, historical records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs
 
 ---
 
@@ -43,3 +45,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:36:54 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

@@ -27,4 +27,4 @@ Related:
 - the DBE vocabulary — loop, hinge, gate, deliberation
 - the hinge-cycle rule
 - foundation's file-name prefix and log conventions
-- `foundation`'s logs-directory rule — the running records this sits among, which names this directory without requiring anything of it
+- `foundation`'s logs-directory rule — the contemporaneous, historical records this sits among, which names this directory without requiring anything of it

@@ -340,7 +340,7 @@ migrate_work_sessions() {
   echo "Commit the rename."
 }
 
-# Move a project's running records under waytide/local/logs/. The log, the loop
+# Move a project's contemporaneous, historical records under waytide/local/logs/. The log, the loop
 # records, and the work session records sat directly under waytide/local/ until
 # 2026-08-18, beside the directories that state what is currently true. The
 # logs-directory rule groups them, and a rule cannot move a project's own files.
@@ -367,7 +367,7 @@ migrate_logs() {
 
     mkdir -p waytide/local/logs
     mv "$old_dir" "$new_dir"
-    echo "Moved $old_dir/ to $new_dir/ — the running records are grouped under logs/."
+    echo "Moved $old_dir/ to $new_dir/ — the contemporaneous, historical records are grouped under logs/."
     echo "Commit the move."
   done
 }

@@ -1,6 +1,6 @@
-# `waytide/local/logs/` — the running records, grouped
+# `waytide/local/logs/` — the contemporaneous, historical records, grouped
 
-**A project keeps more than one running record, and they sit together.** `waytide/local/logs/` holds them:
+**A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
 - **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`decision-log-convention`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s loop-records rule).
@@ -12,7 +12,7 @@
 
 **The three keep their own names and their own conventions.** This rule groups them and settles nothing else. `log` stays `log` rather than becoming `decisions`, because every rule that says *write a log entry* means that directory and a rename would reach all of them for nothing.
 
-## A fourth running record goes here
+## A fourth contemporaneous, historical record goes here
 
 **A convention that adds one names its directory under `waytide/local/logs/`.** That is the whole of what this rule asks of a later convention.
 
@@ -22,15 +22,17 @@
 
 **Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
-The grouping also gives a later running record somewhere obvious to go. `log` was the only log directory until 2026-08-18, and a second one had no place that named it as the same kind of thing.
+The grouping also gives a later contemporaneous, historical record somewhere obvious to go. `log` was the only log directory until 2026-08-18, and a second one had no place that named it as the same kind of thing.
 
-**How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a running record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
+**How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
 ## History
 
 A migration record was moved here on 2026-08-18 and moved back out the same day.
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
 
 Related:
 
@@ -47,3 +49,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
