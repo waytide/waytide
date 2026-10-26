@@ -1,4 +1,4 @@
-# Drop an outcome whose test is green on arrival
+# A test of behavior that already exists is coverage, not design
 
 In DBE, a test justifies itself by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. An outcome whose test passes the moment it is written drives nothing. That is "green-on-arrival". The behavior already exists, so the test only *confirms* an affordance rather than *designing* one. Drop it.
 
@@ -28,6 +28,8 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 Until Sun Oct 25 2026 this rule was named no-green-on-arrival-tests and titled "Drop an outcome whose test is green-on-arrival — it drives no design".
 
+Until Mon Oct 26 2026 this rule was named drop-an-outcome-whose-test-is-green-on-arrival and titled "Drop an outcome whose test is green on arrival".
+
 Related:
 
 - the DBE-as-design-tool rule
@@ -50,3 +52,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:45 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT

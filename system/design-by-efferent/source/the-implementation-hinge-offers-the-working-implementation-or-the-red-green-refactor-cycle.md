@@ -95,7 +95,7 @@ Related:
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation and the-design-of-a-test-waits-at-the-hinges-coverage-included rules — the coverage case where the cycle is unavailable
-- the drop-an-outcome-whose-test-is-green-on-arrival rule — the no-op implementation hinge, where there is nothing to drive
+- the a-test-of-behavior-that-already-exists-is-coverage-not-design rule — the no-op implementation hinge, where there is nothing to drive
 
 ---
 
@@ -118,3 +118,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT
