@@ -20,7 +20,7 @@ It is *also* a function of what the observation then reads about the result. So 
 
 **The contexts are shown once, where they are decided, and elided after.** The actuation hinge is where the outcome's **structural placement** is established — which class/feature contexts it nests under, mirroring the test's folder path. Seeing the nesting at hinge 1 lets the human judge *where* the outcome lives before anything else is built. Once settled there, the contexts are fixed, and repeating them at the observation and controls hinges buries each hinge's actual concern in noise. The full nesting returns when the turn-one test file is assembled and shown after the three test hinges.
 
-**The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived, and withholds the thing the judgment is made on. The engineer would then be asked for a solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding verdict on an artifact they have not seen.
+**The implementation is shown before the loop moves on from its hinge.** The implementation hinge is where **solubility** is judged, and an awkward implementation is the tell that the actuation is wrong. That tell is in the code. Showing the run alone reports that the behavior arrived, and withholds the thing the judgment is made on. The engineer would then be asked for a solubility verdict on an artifact they have not seen.
 
 The implementation leads, because it is what the hinge is about. The test and the feature's output are shown with it. See the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 
@@ -60,8 +60,8 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 
 ## The implementation is shown before the loop moves on from its hinge
 
-1. Hinge 4 is where solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is judged. An awkward implementation signals that the actuation is wrong.
-2. Do not show the run alone at hinge 4. Showing only the run withholds the code the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding judgment is made on.
+1. Hinge 4 is where solubility is judged. An awkward implementation signals that the actuation is wrong.
+2. Do not show the run alone at hinge 4. Showing only the run withholds the code the solubility judgment is made on.
 3. Once a candidate is accepted, show the implementation first, ahead of the test and the feature's output.
 4. Show the test and the feature's output with the implementation, per the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 5. Do not advance to naming before the implementation is on screen.

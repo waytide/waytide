@@ -9,7 +9,7 @@ This is how the highest-leverage hinge is handed over for deliberation, that hin
 
 The form is deliberate. It is the operationalization of the two results the gates rest on (see the DBE vocabulary):
 
-- **Make the human produce the answer, not approve one — so present alternatives, not a fait accompli.** A single proposed actuation ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. It exerts mean-bias and lowers the human toward the average. Offering several genuine options keeps the human producing an answer — comparing real candidate shapes for solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding — rather than ratifying.
+- **Make the human produce the answer, not approve one — so present alternatives, not a fait accompli.** A single proposed actuation ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. It exerts mean-bias and lowers the human toward the average. Offering several genuine options keeps the human producing an answer — comparing real candidate shapes for solubility — rather than ratifying.
 - **The best options are ones the AI can't produce — so the free-text option is mandatory.** The option set is the AI's own, drawn from the average. The best actuation is often one only the human can produce, and showing a closed list tempts the human to pick from it instead of producing their own. The free-text option is what keeps the human above the AI's mean — never boxed into the AI's option set.
 
 ## A candidate varies what the use site states
@@ -50,7 +50,7 @@ This mechanism is the candidates as options, with the free-text option. It appli
 4. The free-text option lets the human dictate the actuation outright, or open a chat to work out what it should be.
 5. The free-text option is mandatory and always present. It covers the case where the right shape is not among the options.
 6. Never offer a single proposed actuation for approval, such as "here's my actuation — approve?".
-7. Offer several genuine options, so the human compares real candidate shapes for solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rather than ratifying one.
+7. Offer several genuine options, so the human compares real candidate shapes for solubility rather than ratifying one.
 8. Never box the human into the AI's option set.
 
 ## A candidate varies what the use site states

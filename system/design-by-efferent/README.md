@@ -10,13 +10,13 @@ The one-liner:
 
 **The method**
 - DBE is a design tool, not a testing ritual — the test is a **cradle** for code generation, not a pass/fail gate.
-- Human-in-the-loop: deliberate the hinges (the actuation and solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding), never the pass/fail bar.
+- Human-in-the-loop: deliberate the hinges (the actuation and solubility), never the pass/fail bar.
 - First turn: the first gate is the actuation and an unnamed assert. Naming is deferred to the feature's close.
 - Never ask whether to start test-first — it is the standing default.
 
 **Attended or unattended**
 - The human's level of participation is chosen at a feature's or experiment's start, beside the working location. Attended is the default. The question is **Who decides?**, and neither it nor an option names a hinge — the engineer has not met one yet.
-- DBE is in effect either way — the cradle, the efferent-first actuation, and the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding standard all hold. Only the stopping changes.
+- DBE is in effect either way — the cradle, the efferent-first actuation, and the solubility standard all hold. Only the stopping changes.
 - An unattended cycle is recorded with its hinge and the decision's reasoning, and no options or decision line, since neither happened.
 
 **The hinge cycle**
@@ -32,7 +32,7 @@ The one-liner:
 - Advance one outcome at a time and stop at every gate. Never batch-generate test files.
 
 **After the implementation hinge**
-- Always show the implementation, the just-satisfied test, and the current feature's full test output, without being asked. The implementation leads, because the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding verdict is made on it.
+- Always show the implementation, the just-satisfied test, and the current feature's full test output, without being asked. The implementation leads, because the solubility verdict is made on it.
 
 **Design vs. coverage**
 - TDD designs behavior. Adding coverage prevents its regression — distinct activities. Never break a working implementation to introduce a test.

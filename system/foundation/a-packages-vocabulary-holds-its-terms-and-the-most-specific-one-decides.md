@@ -6,7 +6,7 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 ## What a vocabulary holds
 
-- **Terms** — the concepts the package defines. `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`, `efferent`, `hinge`, `precondition`. A term is a glossary entry, and it says what the concept is.
+- **Terms** — the concepts the package defines. `solubility`, `efferent`, `hinge`, `precondition`. A term is a glossary entry, and it says what the concept is.
 - **Substitutions** — a word not to write, and the word to write instead. `conform` rather than "sweep". `verified` rather than "green".
 - **Discontinuations** — a word removed from use with nothing in its place. `discriminator` went because the concept went, not because another word replaced it.
 

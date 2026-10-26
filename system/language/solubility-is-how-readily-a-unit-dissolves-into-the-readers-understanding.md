@@ -4,13 +4,13 @@
 
 The word is used as a general quality of a design. It is judged **by the reader**, not by the writer who made the unit. A unit that is understood only after the reader reconstructs the writer's reasoning is not soluble, however tidy it reads to the writer.
 
-**Say "soluble" / "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding"** for this quality. It is not a synonym for "simple", "clean", or "elegant". A unit can be simple and still cost the reader interpretive work. Clean and elegant describe how the code reads to someone who already understands it.
+**Say "soluble" / "solubility"** for this quality. It is not a synonym for "simple", "clean", or "elegant". A unit can be simple and still cost the reader interpretive work. Clean and elegant describe how the code reads to someone who already understands it.
 
 **Why:** the quality needs one settled name so it can be aimed at, taught, and judged. "Dissolves into understanding" is the literal description the name is built from. The reader needs no mapping to a metaphor or an imported academic term. This is the name-literally standard applied to the term itself. Naming it makes it available as a target of design work, and as a criterion at the moment a design is judged. It is not left to unstated taste.
 
-**How to apply:** use "solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
+**How to apply:** use "solubility" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
 
 Related:
 
-- the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding as its criterion
-- the `design-by-efferent` package's vocabulary — the term's role inside a specific method, where solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding is the focus of the actuation hinge
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility as its criterion
+- the `design-by-efferent` package's vocabulary — the term's role inside a specific method, where solubility is the focus of the actuation hinge

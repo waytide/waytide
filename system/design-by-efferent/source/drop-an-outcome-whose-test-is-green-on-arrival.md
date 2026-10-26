@@ -4,7 +4,7 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 **The tell is a no-op implementation hinge.** In the hinge cycle, the implementation hinge may degenerate to "nothing to write — the existing code already satisfies this". The outcome is then not a genuine design step. That degeneration is the signal to drop the outcome, not to add a confirming test.
 
-**Why:** DBE is a design tool, not a coverage tool (see the DBE-as-design-tool and human-in-the-loop rules: *exit on solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding, not coverage*). A green-on-arrival test designs nothing and dilutes the suite's signal — it reads as a driven outcome when it isn't. Such a test usually appears because the implementation ran **ahead** of its driving test. The cause is a default value, a conveyed keyword, or a prevention written incidentally while satisfying an earlier outcome. So the behavior was already present when its "own" outcome came up. The discipline is to notice that and not manufacture a test to cover it after the fact.
+**Why:** DBE is a design tool, not a coverage tool (see the DBE-as-design-tool and human-in-the-loop rules: *exit on solubility, not coverage*). A green-on-arrival test designs nothing and dilutes the suite's signal — it reads as a driven outcome when it isn't. Such a test usually appears because the implementation ran **ahead** of its driving test. The cause is a default value, a conveyed keyword, or a prevention written incidentally while satisfying an earlier outcome. So the behavior was already present when its "own" outcome came up. The discipline is to notice that and not manufacture a test to cover it after the fact.
 
 **How to apply:** an outcome's implementation hinge may be a no-op, meaning the test would be green-on-arrival. Drop the outcome rather than keeping the confirming test. The behavior may genuinely need locking to prevent a public-contract regression. That is a deliberate, separate decision the human makes. It is not the default, and it is not a DBE design step.
 
@@ -22,7 +22,7 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 8. That locking is not the default, and it is not a DBE design step.
 9. This rule covers design only. It does not reach coverage work.
 10. When the activity is preventing regression in existing behavior, green-on-arrival is inevitable and correct. See the "TDD designs, coverage prevents" rule.
-11. **Why:** DBE is a design tool, not a coverage tool: exit on solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding, not coverage. A green-on-arrival test dilutes the suite's signal by reading as a driven outcome. It usually means the implementation ran ahead of its test, through a default value, a conveyed keyword, or an incidental prevention.
+11. **Why:** DBE is a design tool, not a coverage tool: exit on solubility, not coverage. A green-on-arrival test dilutes the suite's signal by reading as a driven outcome. It usually means the implementation ran ahead of its test, through a default value, a conveyed keyword, or an incidental prevention.
 
 ## History
 
@@ -31,7 +31,7 @@ Until Sun Oct 25 2026 this rule was named no-green-on-arrival-tests and titled "
 Related:
 
 - the DBE-as-design-tool rule
-- the human-in-the-loop rule — exit on solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding
+- the human-in-the-loop rule — exit on solubility
 - the one-outcome-at-a-time rule
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the implementation hinge
 - the testing package's vocabulary — verified, not green

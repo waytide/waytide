@@ -4,7 +4,7 @@
 
 **ETE adds five categories, and each holds technical nouns and technical verbs.** They are declared here and nowhere else. An entry names its category and its part of speech, since STE Rules 1.7 and 1.13 turn on which one a word is reserved as.
 
-**Engineering, design, process, and method.** Terms that name how engineering work is conducted, recorded, and set aside, the acts that conduct it, and the parts of a design method. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`, `solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding`, `subtle`, `load-bearing`, `mean-bias`, `deferred`, `suspended`, `out of scope`, `responsibility`, `transfer`, `reconcile`.
+**Engineering, design, process, and method.** Terms that name how engineering work is conducted, recorded, and set aside, the acts that conduct it, and the parts of a design method. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`, `solubility`, `subtle`, `load-bearing`, `mean-bias`, `deferred`, `suspended`, `out of scope`, `responsibility`, `transfer`, `reconcile`.
 
 **Reach for STE category 7 before this one**, since it covers concepts, design, calculations, and methodologies.
 
