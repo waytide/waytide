@@ -57,7 +57,7 @@ Until Sun Oct 25 2026 this rule was named a-decision-the-engineer-made-is-tagged
 
 Related:
 
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other reserved tag the log carries
 
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:11:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

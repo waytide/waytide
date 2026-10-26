@@ -11,7 +11,7 @@
 - **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at the head, **after `**State:**` where there is one**. Several tags are separated by spaces — `**Tags:** [idea] [decision]`.
 - **One list item** — the tag prefixes that list item's text — `- [idea] My great idea is thus`.
 
-**A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The the-log-holds-one-file-per-decision-with-a-one-line-title states that shape, and a tagged entry is two lines rather than one.
+**A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The the-log-holds-one-file-per-entry-with-a-one-line-title states that shape, and a tagged entry is two lines rather than one.
 
 The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 
@@ -52,7 +52,7 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 Related:
 
 - the `journal` package's the-journal-is-the-record-the-writer-keeps and a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry that gains a `**Tags:**` line under its title
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry that gains a `**Tags:**` line under its title
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, a reserved tag the log carries
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the other reserved tag the log carries
 - the working-state-artifacts-carry-a-provenance-footer rule — a separate obligation, which does exempt the log; a footer is lines the entry has nowhere to put, where a tag is not

@@ -39,6 +39,6 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — removing a rule, and the reconciliation the entry names
 - the the-items-directory-holds-the-projects-items-one-file-per-item — the `Suspended` **state**, which is what an item takes instead

@@ -1,4 +1,4 @@
-# The log holds one file per decision, with a one-line title
+# The log holds one file per entry, with a one-line title
 
 Record decisions made during sessions as one file per decision in `waytide/local/logs/log/`.
 

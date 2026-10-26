@@ -9,7 +9,7 @@ Every working-state artifact under `waytide/` that is a document with a body end
 - **Same footer, different reason than the rule files.** The rule-file footer exists because `git subtree` strips the composite's per-file history when a package is installed into a consuming project, so `git blame` can't show a rule's author there. That reason does **not** apply to a working-state artifact: it lives in the project's own `waytide/` tree, is never shipped by subtree, and keeps its git history intact. The footer is here for a different reason. **The file should be useful on its own.** These artifacts are written to be read as self-contained documents, so a reader should not have to leave the file and query the git log to learn who wrote it and when.
 - **The format is the record-a-rules-authorship-in-a-provenance-footer format.** `Authored by <name> on <local datetime>` for the original author, a `Changed by <name> on <local datetime>` line appended for each later change — oldest first, never rewritten. The datetime is the artifact's true authoring time. For a dated artifact whose ISO-8601-UTC filename prefix records when it was created, that prefix is the authoritative time (a later git add-date from a migration is a false trail).
 
-**The one exception — the decision log.** `waytide/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-decision-with-a-one-line-title.
+**The one exception — the decision log.** `waytide/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title.
 
 Its authoring time is already in its ISO-8601-UTC filename and its commit. A footer would contradict that shape and the log's no-reformat rule. The log records who and when by its filename and commit history, not by an in-file footer.
 
@@ -36,14 +36,14 @@ This is a different justification from the rule-file footer's (which recovers hi
 ## The one exception — the decision log
 
 1. Do not add a footer to a `waytide/local/logs/log/` entry.
-2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-decision-with-a-one-line-title.
+2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title.
 3. A log entry records who and when by its ISO-8601-UTC filename and its commit history, not by an in-file footer.
 4. **Why:** a working-state artifact is meant to be read on its own, so its provenance belongs in the file, not only in git history. This differs from the rule-file footer, which recovers history that `git subtree` strips. The decision log is exempt because its filename already carries its provenance, and a footer would break its one-line shape and its no-reformat rule. This rule states the justification once, and the working-state conventions do not repeat it.
 
 Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format and the rule-file case
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the exempt one-line log
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the exempt one-line log
 - the artifact conventions that reference this one — the-implementations-directory-records-each-implementations-lifecycle, the-items-directory-holds-the-projects-items-one-file-per-item, an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, a-work-session-record-is-the-narrative-of-one-work-session, and DBE's a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature
 
 ---
@@ -73,3 +73,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

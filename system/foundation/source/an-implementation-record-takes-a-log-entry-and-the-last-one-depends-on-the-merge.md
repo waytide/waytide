@@ -95,7 +95,7 @@ Related:
 - the the-implementations-directory-records-each-implementations-lifecycle — the record, the two kinds, and the state words each takes
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the merge, and the branch deletion that makes an unmerged record unreachable
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's form, and the general trigger this makes specific
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form, and the general trigger this makes specific
 
 ---
 
@@ -113,3 +113,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

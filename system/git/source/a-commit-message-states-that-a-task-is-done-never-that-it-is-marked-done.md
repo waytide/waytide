@@ -37,7 +37,7 @@ Until Sun Oct 25 2026 this rule was named commit-says-task-is-done-not-mark-done
 Related:
 
 - the no-slang terminology rule
-- the the-log-holds-one-file-per-decision-with-a-one-line-title
+- the the-log-holds-one-file-per-entry-with-a-one-line-title
 
 ---
 
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:26 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

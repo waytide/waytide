@@ -22,7 +22,7 @@
 
 ## Where the history goes
 
-**The decision log.** A term that changes meaning, moves, or stops being used is a decision, and the the-log-holds-one-file-per-decision-with-a-one-line-title already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
+**The decision log.** A term that changes meaning, moves, or stops being used is a decision, and the the-log-holds-one-file-per-entry-with-a-one-line-title already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
 
 **A discontinuation is not an exception.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
 
@@ -44,7 +44,7 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 4. An entry records no lifecycle history.
 5. Do not record what the term used to name, or what directory it used to sit in.
 6. Do not record when the term changed, or what governed it before.
-7. When a term changes meaning, moves, or stops being used, write the change in the decision log, per the the-log-holds-one-file-per-decision-with-a-one-line-title.
+7. When a term changes meaning, moves, or stops being used, write the change in the decision log, per the the-log-holds-one-file-per-entry-with-a-one-line-title.
 8. Leave the entry saying only what is true now.
 9. An entry carries no pointers.
 10. Do not write *Its rule is …* or *see the … rule*. Name no rule the reader should go and read.
@@ -74,7 +74,7 @@ Until Sun Oct 25 2026 this rule was named a-vocabulary-entry-says-what-a-term-me
 Related:
 
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — what a vocabulary holds, and which one decides
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — where the history goes instead
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — where the history goes instead
 - the `language` package's a-word-is-reserved-in-six-steps rule — the sequence that produces an entry, whose sixth step this constrains
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — the log entry, which is a historical record and is left as written
 
@@ -85,3 +85,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:21 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

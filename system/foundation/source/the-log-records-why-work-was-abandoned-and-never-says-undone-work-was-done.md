@@ -26,7 +26,7 @@ The failure it prevents is specific and hard to see from inside. Every sentence 
 
 **How to apply:** when work is abandoned, write the log entry as the decision to stop and the reasoning given for it. Say plainly that nothing merged and where the work was.
 
-Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the the-log-holds-one-file-per-decision-with-a-one-line-title.
+Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the the-log-holds-one-file-per-entry-with-a-one-line-title.
 
 ## Compressed
 
@@ -42,7 +42,7 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 4. Say plainly that nothing merged.
 5. Say plainly where the work was.
 6. Do not carry the unfinished work: not the unexecuted plan, the unrun increments, or the unbuilt design.
-7. Where an entry needs more than a line, it takes a body, as the the-log-holds-one-file-per-decision-with-a-one-line-title describes.
+7. Where an entry needs more than a line, it takes a body, as the the-log-holds-one-file-per-entry-with-a-one-line-title describes.
 
 ## Why the mood is not enough
 
@@ -58,7 +58,7 @@ Until Sun Oct 25 2026 this rule was named the-log-never-says-undone-work-was-don
 
 Related:
 
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — the entry's shape, and when it takes a body
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's shape, and when it takes a body
 - the an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same prohibition for an item, stated as the mood an entry is written in
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the branch deletion that leaves the log as the only durable trace
@@ -73,3 +73,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

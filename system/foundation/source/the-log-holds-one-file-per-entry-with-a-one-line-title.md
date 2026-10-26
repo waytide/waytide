@@ -1,4 +1,4 @@
-# The log holds one file per decision, with a one-line title
+# The log holds one file per entry, with a one-line title
 
 Record decisions made during sessions as one file per decision in `waytide/local/logs/log/`.
 
@@ -68,6 +68,8 @@ Until 2026-10-25 the Content line said "An untagged entry is one line", and How 
 
 Until Sun Oct 25 2026 this rule was named decision-log-convention and titled "`waytide/local/logs/log/` — one file per decision, a one-line title".
 
+Until Mon Oct 26 2026 this rule was named the-log-holds-one-file-per-decision-with-a-one-line-title and titled "The log holds one file per decision, with a one-line title".
+
 Related:
 
 - the file-names rule — the shared filename convention
@@ -105,3 +107,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

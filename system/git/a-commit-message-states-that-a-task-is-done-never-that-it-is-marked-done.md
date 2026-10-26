@@ -14,4 +14,4 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 Related:
 
 - the no-slang terminology rule
-- the the-log-holds-one-file-per-decision-with-a-one-line-title
+- the the-log-holds-one-file-per-entry-with-a-one-line-title

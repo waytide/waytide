@@ -2,7 +2,7 @@
 
 **A project keeps more than one running record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`the-log-holds-one-file-per-decision-with-a-one-line-title`).
+- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`a-work-session-record-is-the-narrative-of-one-work-session`).
 
@@ -29,7 +29,7 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 ## Compressed
 
 1. `waytide/local/logs/` holds the project's running records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
-2. `waytide/local/logs/log/` holds the decision log, one file per decision, with a one-line title (`the-log-holds-one-file-per-decision-with-a-one-line-title`).
+2. `waytide/local/logs/log/` holds the decision log, one file per decision, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
 3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`a-work-session-record-is-the-narrative-of-one-work-session`).
 5. Write a decision entry to `waytide/local/logs/log/`.
@@ -65,7 +65,7 @@ Until Sun Oct 25 2026 this rule was named logs-directory and titled "`waytide/lo
 
 Related:
 
-- the the-log-holds-one-file-per-decision-with-a-one-line-title, the a-work-session-record-is-the-narrative-of-one-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
+- the the-log-holds-one-file-per-entry-with-a-one-line-title, the a-work-session-record-is-the-narrative-of-one-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
 - the the-migration-directory-holds-the-plans-for-moving-content-across-a-repository-boundary — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
 
@@ -83,3 +83,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT

@@ -28,6 +28,6 @@ Related:
 
 - the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the read-fresh premise, and where a binding convention goes
-- the the-log-holds-one-file-per-decision-with-a-one-line-title — where a decision goes
+- the the-log-holds-one-file-per-entry-with-a-one-line-title — where a decision goes
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — where thinking goes before it binds
 - the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the machine-scoped fact, and where it goes instead
