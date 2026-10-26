@@ -5,7 +5,7 @@ Tests serve two different purposes in two different processes, and conflating th
 - **TDD is a design activity.** The failing-test-then-implement cycle is an instrument for *designing* behavior — tests used as **proofs for design**. The red is what drives the implementation into existence. This is the genus DBE belongs to, and the reason the methodology's name says *Design*.
 - **Adding test coverage is a separate activity** — **preventing a regression in existing behavior**. It happens *past* the point TDD is concerned with: the behavior is already designed and correct. Here tests are **regression prevention**, not design proofs. It is a testing / final-inspection process, not TDD.
 
-**When adding coverage, green-on-arrival is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the no-green-on-arrival stance is a design concern that does not apply here.
+**When adding coverage, a test that passes when first run is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the stance that such a test is coverage rather than design is a DBE concern that does not apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to introduce a test.** Do not do it to "see it go red first." That inverts the relationship, making correct code fail a ritual. It forces unnatural changes to shipped code, and muddies the distinction between designing with tests and preventing regression with tests. There is no red to manufacture when covering behavior that already exists.
 
@@ -18,5 +18,5 @@ Related:
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
 - the the-implementation-hinge-offers-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
-- the no-green-on-arrival rule
+- the no-green-on-arrival-tests rule
 - the hinge-cycle rule
