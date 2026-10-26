@@ -41,6 +41,6 @@ Write a later observation where the thinking moves, and leave the earlier one as
 Related:
 
 - the the-items-directory-holds-one-file-per-item — the eight states an observation does not take, and the state requirement it satisfies
-- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — where a promoted observation's rule goes
+- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry that records one

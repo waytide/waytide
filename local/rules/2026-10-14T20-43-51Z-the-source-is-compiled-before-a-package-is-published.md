@@ -14,9 +14,10 @@ Related:
 
 - the a-package-is-published-from-master rule — the publish this precedes, and when a publish may happen at all
 - `CONTRIBUTING.md` — the publish procedure, which carries this step
-- the foundation binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — the source and compiled rules, and the History section the compiler leaves out
+- the foundation a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the source and compiled rules, and the History section the compiler leaves out
 
 ---
 
 Authored by Scott Bellware on Wed Oct 14 2026 at 1:43:51 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT

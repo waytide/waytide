@@ -116,7 +116,7 @@ Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
 - its language-is-used-precisely-here-and-words-are-load-bearing rule — the premise every vocabulary follows from
-- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory
+- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory
 - the file-names rule — why the project's file takes no prefix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
 
@@ -140,3 +140,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT

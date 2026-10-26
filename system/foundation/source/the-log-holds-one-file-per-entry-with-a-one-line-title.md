@@ -75,7 +75,7 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 Related:
 
 - the file-names rule — the shared filename convention
-- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory — a new rule pairs with a log entry
+- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — a new rule pairs with a log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — its recording step logs too
 - the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-holds-the-contemporaneous-historical-records rule — the contemporaneous, historical records this sits among
@@ -112,3 +112,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT

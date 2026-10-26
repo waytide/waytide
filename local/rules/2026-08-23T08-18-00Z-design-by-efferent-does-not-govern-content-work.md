@@ -25,7 +25,7 @@
 
 ## What it asserts about precedence, and the gap under it
 
-**A local rule overrides a package rule in this project where the two conflict.** The binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory says both are read and both are followed, and it settles what happens when a rule conflicts with **default agent behavior**. It does not say what happens when a local rule conflicts with a package's.
+**A local rule overrides a package rule in this project where the two conflict.** The a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory says both are read and both are followed, and it settles what happens when a rule conflicts with **default agent behavior**. It does not say what happens when a local rule conflicts with a package's.
 
 **The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides settles the same question for vocabularies** — a project's own decides over every package's — and no rule does it for rules. This rule asserts the parallel for itself rather than waiting for one, and names the gap so the assertion is visible rather than assumed.
 
@@ -41,7 +41,7 @@ Related:
 
 - the `design-by-efferent` package's the-hinge-cycle-runs-from-actuation-to-naming and attended-or-unattended-is-chosen-when-the-work-is-started rules — what this suspends for content work
 - the `foundation` the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read that leaves no package dormant
-- the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory and a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the precedence this asserts and the gap it names
+- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory and a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the precedence this asserts and the gap it names
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — how this rule ends
 
 ---
@@ -59,3 +59,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
