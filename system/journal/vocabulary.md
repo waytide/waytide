@@ -23,7 +23,7 @@ The journal package's vocabulary. Three terms, and one substitution that keeps t
 
 | Use | Don't use | Meaning |
 | --- | --- | --- |
-| **journal** | "diary", "personal log", "personal journal" | the writer's record — see above. **log** is taken by the decision log, which is the agent's record and the journal's opposite. **personal journal** and **personal log** each need a qualifier to hold the two apart, and a term that needs a qualifier is the wrong term |
+| **journal** | "diary", "personal log", "personal journal" | the writer's record — see above. **log** is taken by the project's log, which is the agent's record and the journal's opposite. **personal journal** and **personal log** each need a qualifier to hold the two apart, and a term that needs a qualifier is the wrong term |
 
 **The write-ahead reading is real and is answered rather than avoided.** In filesystems and databases a journal is what a system writes before it commits, and that is a reading many readers of this system reach for first. What settles the reading is the package and the directory the word sits in, not the word alone: `waytide/local/journal/<username>/` names a person, and no write-ahead log is kept per user.
 

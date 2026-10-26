@@ -1,6 +1,6 @@
 # Journal entries live in `waytide/local/journal/<username>/`, one file per entry
 
-The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the identity-resolution-contract rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the decision log the agent writes, which is one record for the whole project.
+The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the identity-resolution-contract rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by `date +%Y-%m-%dT%H-%M`. The colons of ISO 8601 are written as dashes for filename safety. Never use UTC for these entries, which is the writer's stated preference.
 

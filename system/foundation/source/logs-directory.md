@@ -2,7 +2,7 @@
 
 **A project keeps more than one running record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the decision log, one file per decision, a one-line title (`decision-log-convention`).
+- **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`decision-log-convention`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s loop-records rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
@@ -30,6 +30,8 @@ The grouping also gives a later running record somewhere obvious to go. `log` wa
 
 A migration record was moved here on 2026-08-18 and moved back out the same day.
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s loop-records rule — the three records this groups
@@ -44,3 +46,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

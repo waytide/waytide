@@ -21,17 +21,17 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 ## What is already required, and not restated
 
-**An affirmed experiment copies its own log into the decision log.** The implementation-lifecycle rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
+**An affirmed experiment copies its own log into the project's log.** The implementation-lifecycle rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
 
 **A feature has no affirmation and no log copy.** It is built to an intent rather than a question, so a completed feature's marker is the whole of what its conclusion writes.
 
 ## What is not logged
 
-**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a decision log.
+**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a log.
 
 **A turn of the work is not a decision.** The hinges, the cycles, and the runs belong to the loop record and the implementation record.
 
-**Why:** the decision log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
+**Why:** the log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
 
 For a merged record the two are one artifact reachable two ways, and a marker is enough. For an unmerged one they are not, and the difference between a marker and the substance is the difference between a trace and a record.
 

@@ -2,7 +2,7 @@
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
-- The **working-state** directories: the running records under `logs/` — the decision log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
+- The **working-state** directories: the running records under `logs/` — the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
 - A consuming project's **own local rules** — the rules that project adds to its `waytide/local/rules/`. A local rule is a dated decision in that project's history.
 
 The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-separated, lower-case name and `.md`.
@@ -23,6 +23,10 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 **How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 1 PM PT
@@ -40,3 +44,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:22:08 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:23:55 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

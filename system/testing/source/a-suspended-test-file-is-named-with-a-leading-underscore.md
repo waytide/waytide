@@ -10,7 +10,7 @@
 
 **It is not a suspension in the `foundation` a-suspension-is-a-log-entry rule's sense.** That rule governs something the project **did** and stopped: the thing is **removed**, and a log entry tagged `[suspended]` says what it cost and what else changed. A test file marked this way is removed from nothing.
 
-**So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the decision log's own trigger reaches it like any other.
+**So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the log's own trigger reaches it like any other.
 
 ## The mark is in the filename because that is what a suite reads
 
@@ -30,6 +30,10 @@ When running a suite, skip every file whose name begins with an underscore, and 
 
 Do not delete a test to get it out of the suite, and do not leave a failing one in. Do not tag a log entry `[suspended]` for one, since nothing was removed.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the tests-are-automated-or-interactive rule — the other thing that decides what a run contains
@@ -42,3 +46,4 @@ Related:
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 12:59:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

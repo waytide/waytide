@@ -2,7 +2,7 @@
 
 **A vocabulary entry states the term's current meaning and stops there.** Two things are barred.
 
-**It records no lifecycle history.** Not what the term used to name, what directory it used to sit in, when it changed, or what governed it before. That belongs to the decision log.
+**It records no lifecycle history.** Not what the term used to name, what directory it used to sit in, when it changed, or what governed it before. That belongs to the log.
 
 **As the engineer stated it:** vocabulary entries should not record the lifecycle history of an entry.
 
@@ -12,7 +12,7 @@
 
 ## What is not lifecycle history
 
-**The reason a substitution exists is the substitution.** *`log` is taken by the decision log, and `personal journal` needs a qualifier to hold the two apart* says why one word is written and another is not. A substitution names two words, and saying why is what the entry is for.
+**The reason a substitution exists is the substitution.** *`log` is taken by the project's log, and `personal journal` needs a qualifier to hold the two apart* says why one word is written and another is not. A substitution names two words, and saying why is what the entry is for.
 
 **The STE note stays whole.** What the STE dictionary says about a word, the category it is reserved in, and the reservation mechanism its note names are facts about the term as it stands. The note's own citation is part of the note rather than a pointer out of the entry.
 
@@ -22,7 +22,7 @@
 
 ## Where the history goes
 
-**The decision log.** A term that changes meaning, moves, or stops being used is a decision, and the decision-log-convention already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
+**The log.** A term that changes meaning, moves, or stops being used is a decision, and the decision-log-convention already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
 
 **A discontinuation is not an exception.** The vocabulary-convention gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
 
@@ -32,9 +32,13 @@ The cost is not only length. An entry carrying *it was X until 2026-08-25* invit
 
 **How to apply:** write a vocabulary entry in the present tense, saying what the term means now. Give the STE note, the category, and any distinction against a neighbouring term. Say why a substitution substitutes.
 
-Write no clause saying what the term used to be, when it changed, or what governed it before. When a term changes, write the change in the decision log and leave the entry saying only what is true.
+Write no clause saying what the term used to be, when it changed, or what governed it before. When a term changes, write the change in the log and leave the entry saying only what is true.
 
 Write no pointer. Name no rule the reader should go and read, and send them to no other vocabulary and to no other section. A reader who wants the rule finds it by the term.
+
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Related:
 
@@ -46,3 +50,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

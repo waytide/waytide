@@ -1,6 +1,6 @@
 # Disclosure is the one reason to edit a historical record
 
-A historical record states what was true when it was written, and is **not** revised to suit a later convention. That is a decision-log entry, a work session record, an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against renaming, reformatting, and correcting a term the project has since replaced. It holds against every other reason a reader might want a record to read differently.
+A historical record states what was true when it was written, and is **not** revised to suit a later convention. That is a log entry, a work session record, an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against renaming, reformatting, and correcting a term the project has since replaced. It holds against every other reason a reader might want a record to read differently.
 
 **It does not hold against disclosure.** Where a record names something that should not have been disclosed, it is corrected. A record is not a commitment to keep publishing something that should not have been published in the first place.
 
@@ -35,6 +35,10 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 
 **How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the rules-convention and the reconcile entry in this package's vocabulary — where the standing rule is stated
@@ -52,3 +56,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 11:41:53 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

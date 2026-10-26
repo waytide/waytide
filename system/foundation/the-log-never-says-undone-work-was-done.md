@@ -1,8 +1,8 @@
 # The log records the reasoning for an abandonment, and never conveys that something was done when it was not
 
-**A decision log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
+**A log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
-**As the engineer stated it:** if work is abandoned, the decision log can record any reasoning given for the abandonment, but the decision log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
+**As the engineer stated it:** if work is abandoned, the log can record any reasoning given for the abandonment, but the log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
 
 ## What an abandonment entry carries
 

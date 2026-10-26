@@ -26,12 +26,14 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 
 Until 2026-10-25 the rule said `waytide/system/` and `waytide/local/rules/` "hold only rules", while each package under `waytide/system/` also holds its `README.md`, its `source/` directory, a license, and scripts. The engineer settled that `waytide/system/` holds the rules and what packages them, and that neither directory holds working state.
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the file-names rule
 - the vocabulary-convention — the project's own vocabulary and where it sits
 - the rules-establish-a-mindset rule
-- the decision-log rule
+- the decision-log-convention rule
 
 ---
 
@@ -62,3 +64,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:49:37 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:50:44 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

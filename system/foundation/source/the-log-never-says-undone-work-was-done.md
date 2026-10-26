@@ -1,8 +1,8 @@
 # The log records the reasoning for an abandonment, and never conveys that something was done when it was not
 
-**A decision log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
+**A log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
-**As the engineer stated it:** if work is abandoned, the decision log can record any reasoning given for the abandonment, but the decision log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
+**As the engineer stated it:** if work is abandoned, the log can record any reasoning given for the abandonment, but the log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
 
 ## What an abandonment entry carries
 
@@ -28,6 +28,10 @@ The failure it prevents is specific and hard to see from inside. Every sentence 
 
 Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the decision-log-convention.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the decision-log-convention — the entry's shape, and when it takes a body
@@ -39,3 +43,4 @@ Related:
 
 Authored by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

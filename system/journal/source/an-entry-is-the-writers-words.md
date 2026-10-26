@@ -14,7 +14,7 @@
 
 **Carry out what was directed and nothing beside it.** An entry opened to make one change is not an entry to tidy, reword, or bring into line with a convention that has since arrived. Everything not named stays as the writer wrote it.
 
-**The change is logged**, in the decision log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the journal-convention keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
+**The change is logged**, in the log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the journal-convention keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
 
 **Disclosure is the second**, and the foundation package's disclosure rule governs it.
 
@@ -28,12 +28,16 @@ The other four records survive being the agent's work because they report what h
 
 Change no entry that exists on your own reading. Where the writer directs a change to one, make exactly the change they named, leave everything else as written, and log it.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the journal-convention — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
 - a-journal-entry-is-read-and-never-followed — what an entry does and does not do
 - the foundation package's disclosure rule — the other reason an entry that exists is edited, and the logging shape this borrows
-- the foundation package's decision-log rule — a record the agent does write
+- the foundation package's log rule — a record the agent does write
 
 ---
 
@@ -43,3 +47,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:44:17 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 11:29:39 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

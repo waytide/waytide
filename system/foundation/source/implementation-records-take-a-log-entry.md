@@ -21,17 +21,17 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 ## What is already required, and not restated
 
-**An affirmed experiment copies its own log into the decision log.** The implementation-lifecycle rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
+**An affirmed experiment copies its own log into the project's log.** The implementation-lifecycle rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
 
 **A feature has no affirmation and no log copy.** It is built to an intent rather than a question, so a completed feature's marker is the whole of what its conclusion writes.
 
 ## What is not logged
 
-**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a decision log.
+**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a log.
 
 **A turn of the work is not a decision.** The hinges, the cycles, and the runs belong to the loop record and the implementation record.
 
-**Why:** the decision log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
+**Why:** the log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
 
 For a merged record the two are one artifact reachable two ways, and a marker is enough. For an unmerged one they are not, and the difference between a marker and the substance is the difference between a trace and a record.
 
@@ -44,6 +44,8 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 ## History
 
 Until 2026-10-25 the concluding entry's form was said to be decided by whether the record itself is on `master`, while a later paragraph and How to apply made the merge the test. How to apply also told every unmerged case to write the findings, which abandoned work does not have, and left out the reasoning for stopping. The engineer settled that the merge is the test, and that the findings are written where there are any, with the reasoning for stopping for abandoned work.
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Related:
 
@@ -61,3 +63,4 @@ Changed by Scott Bellware on Tue Aug 25 2026 at 10:59:12 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:35:39 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:26:56 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

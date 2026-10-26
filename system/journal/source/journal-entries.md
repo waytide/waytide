@@ -1,6 +1,6 @@
 # Journal entries live in `waytide/local/journal/<username>/`, one file per entry
 
-The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the identity-resolution-contract rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the decision log the agent writes, which is one record for the whole project.
+The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the identity-resolution-contract rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by `date +%Y-%m-%dT%H-%M`. The colons of ISO 8601 are written as dashes for filename safety. Never use UTC for these entries, which is the writer's stated preference.
 
@@ -32,6 +32,10 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 Stamp to the minute. Write seconds only where the writer stated seconds, and drop the clock's seconds under **Now**.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the identity-resolution-contract rule — how `<username>` is resolved
@@ -57,3 +61,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

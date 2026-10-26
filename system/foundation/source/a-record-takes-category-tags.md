@@ -2,7 +2,7 @@
 
 **Any record may be categorized with square-bracket tags**, as in `[idea]`. This is the system's one tagging protocol, and it is universal: no record is excluded from it, and no rule excludes one. A tag applies to the **whole record** or to **one list item**.
 
-**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a decision log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
+**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
 
 ## Where the tag goes
 
@@ -11,7 +11,7 @@
 - **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at the head, **after `**State:**` where there is one**. Several tags are separated by spaces — `**Tags:** [idea] [decision]`.
 - **One list item** — the tag prefixes that list item's text — `- [idea] My great idea is thus`.
 
-**A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
+**A record with no head gains one.** A log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
 
 The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 
@@ -53,6 +53,8 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 
 **A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them.
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the `journal` package's journal-convention and datetime-stamp-line rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
@@ -75,3 +77,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 3:04:41 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:53:03 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

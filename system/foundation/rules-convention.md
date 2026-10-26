@@ -27,4 +27,4 @@ Related:
 - the file-names rule
 - the vocabulary-convention — the project's own vocabulary and where it sits
 - the rules-establish-a-mindset rule
-- the decision-log rule
+- the decision-log-convention rule

@@ -2,7 +2,7 @@
 
 **Any record may be categorized with square-bracket tags**, as in `[idea]`. This is the system's one tagging protocol, and it is universal: no record is excluded from it, and no rule excludes one. A tag applies to the **whole record** or to **one list item**.
 
-**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a decision log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
+**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
 
 ## Where the tag goes
 
@@ -11,7 +11,7 @@
 - **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at the head, **after `**State:**` where there is one**. Several tags are separated by spaces — `**Tags:** [idea] [decision]`.
 - **One list item** — the tag prefixes that list item's text — `- [idea] My great idea is thus`.
 
-**A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
+**A record with no head gains one.** A log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The decision-log-convention states that shape, and a tagged entry is two lines rather than one.
 
 The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 

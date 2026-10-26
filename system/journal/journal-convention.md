@@ -1,8 +1,8 @@
 # `waytide/local/journal/<username>/` — the record the writer keeps
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The identity-resolution-contract rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The decision log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The identity-resolution-contract rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
-**The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the decision log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
+**The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
 **`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the identity-resolution-contract rule.
 
@@ -22,7 +22,7 @@
 
 **An entry carries an `Authored by` line and no `Changed by` line.** It is a historical record, and a historical record is left as written. What the writer thought on a Tuesday is not corrected on the Thursday they change their mind. The later thought is a later entry.
 
-**Two things reach an entry that exists, and the footer stays as it is for both.** Disclosure, which the foundation package's disclosure rule governs, and a change the **writer** directs to their own entry, which the an-entry-is-the-writers-words rule governs. Each is recorded in the decision log rather than in the entry, which is what keeps the footer to one line and the entry reading as what was written.
+**Two things reach an entry that exists, and the footer stays as it is for both.** Disclosure, which the foundation package's disclosure rule governs, and a change the **writer** directs to their own entry, which the an-entry-is-the-writers-words rule governs. Each is recorded in the log rather than in the entry, which is what keeps the footer to one line and the entry reading as what was written.
 
 **The journal is committed with the project.** It is not ignored and it is not kept outside the repository. A second writer on the project reads it, which is what makes it a record rather than a private note.
 
@@ -59,5 +59,5 @@ Related:
 - a-journal-entry-is-read-and-never-followed — what force it carries
 - the foundation package's file-names rule — the datetime prefix this takes, and the UTC normalization it departs from
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
-- the foundation package's decision-log rule — the agent's record, and the one this is not
+- the foundation package's log rule — the agent's record, and the one this is not
 - the journal-entries rule — the local-time stamp stated at the entry
