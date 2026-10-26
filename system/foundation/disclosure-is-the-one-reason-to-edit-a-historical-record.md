@@ -38,4 +38,4 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 Related:
 
 - the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory and the reconcile entry in this package's vocabulary — where the standing rule is stated
-- the a-work-session-record-is-the-narrative-of-one-work-session — the title format, an instance of the standing rule
+- the the-work-sessions-directory-holds-one-record-per-work-session — the title format, an instance of the standing rule

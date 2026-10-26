@@ -24,5 +24,5 @@ Related:
 
 - the file-names rule — the UTC filename prefix
 - record-a-rules-authorship-in-a-provenance-footer — the footer's format
-- the a-work-session-record-is-the-narrative-of-one-work-session — the work session record's dated title
+- the the-work-sessions-directory-holds-one-record-per-work-session — the work session record's dated title
 - working-state-artifacts-carry-a-provenance-footer

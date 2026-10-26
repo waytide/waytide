@@ -4,7 +4,7 @@
 
 - **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
-- **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`a-work-session-record-is-the-narrative-of-one-work-session`).
+- **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
 
 **What makes a record belong here is that it accrues chronologically and is never revised.** Each is a running account of something that happened, entry after entry, in the order it happened. A reader reaches one by date. Nothing here is a statement of what is currently true, which is what separates these from an item, an implementation record, or a migration record.
 
@@ -31,7 +31,7 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 1. `waytide/local/logs/` holds the project's contemporaneous, historical records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
 2. `waytide/local/logs/log/` holds the log, one file per decision, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
 3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
-4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`a-work-session-record-is-the-narrative-of-one-work-session`).
+4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
 5. Write a decision entry to `waytide/local/logs/log/`.
 6. Write a loop record to `waytide/local/logs/loops/`.
 7. Write a work session record to `waytide/local/logs/work-sessions/`.
@@ -71,7 +71,7 @@ Until Mon Oct 26 2026 this rule was named the-logs-directory-groups-the-running-
 
 Related:
 
-- the the-log-holds-one-file-per-entry-with-a-one-line-title, the a-work-session-record-is-the-narrative-of-one-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
+- the the-log-holds-one-file-per-entry-with-a-one-line-title, the the-work-sessions-directory-holds-one-record-per-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
 - the the-migration-directory-holds-the-plans-for-moving-or-restructuring-content — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes
 
@@ -94,3 +94,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:16:22 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT

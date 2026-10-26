@@ -1,4 +1,4 @@
-# A work session record is the narrative of one work session
+# The work-sessions directory holds one record per work session
 
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
@@ -117,6 +117,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
 
+Until Mon Oct 26 2026 this rule was named a-work-session-record-is-the-narrative-of-one-work-session and titled "A work session record is the narrative of one work session".
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation and the the-items-directory-holds-one-file-per-item — the sibling artifact conventions
@@ -178,3 +180,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
