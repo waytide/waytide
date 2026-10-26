@@ -16,6 +16,10 @@
 - how an entry is marked private, such as by a reserved tag, and whether it can later be made shared
 - how this sits with the journal-convention's statement that the journal is a record rather than a private note
 
+## Settled
+
+- **2026-10-26** — A private entry lives in `~/.local/share/waytide/journal/`, outside the project's repository. That directory is a git repository of its own, synced to a private remote. XDG puts data a program keeps for the user under `~/.local/share/`, and settings under `~/.config/`. An entry is data, and `~/.config/waytide/` holds per-machine settings that should not be synced with it. In a project with many people, the presence of private entries in its repository would itself be a disclosure, even with their contents and names encrypted, so they are kept out of it.
+
 ## History
 
 As the engineer first stated it: "Idea: Private journal entries"
@@ -23,3 +27,4 @@ As the engineer first stated it: "Idea: Private journal entries"
 ---
 
 Authored by Scott Bellware on Sun Oct 25 2026 at 3:18:21 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:00:13 PM PT
