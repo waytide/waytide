@@ -1,8 +1,8 @@
 # The journal is the record the writer keeps
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing, and the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The decision log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing, and the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
-**The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the decision log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
+**The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
 **`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the the-writers-identity-resolves-through-a-fixed-override-chain rule.
 
@@ -22,7 +22,7 @@
 
 **An entry carries an `Authored by` line and no `Changed by` line.** It is a historical record, and a historical record is left as written. What the writer thought on a Tuesday is not corrected on the Thursday they change their mind. The later thought is a later entry.
 
-**Two things reach an entry that exists, and the footer stays as it is for both.** Disclosure, which the foundation package's disclosure rule governs, and a change the **writer** directs to their own entry, which the an-entry-is-the-writers-words rule governs. Each is recorded in the decision log rather than in the entry, which is what keeps the footer to one line and the entry reading as what was written.
+**Two things reach an entry that exists, and the footer stays as it is for both.** Disclosure, which the foundation package's disclosure rule governs, and a change the **writer** directs to their own entry, which the an-entry-is-the-writers-words rule governs. Each is recorded in the log rather than in the entry, which is what keeps the footer to one line and the entry reading as what was written.
 
 **The journal is committed with the project.** It is not ignored and it is not kept outside the repository. A second writer on the project reads it, which is what makes it a record rather than a private note.
 
@@ -60,7 +60,7 @@ One file per entry rather than one per day follows the convention every other da
 4. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing.
 5. The journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry.
 6. The package and directory were named `diary` until 2026-08-18. The rename reaches every rule name, path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix.
-7. Records written before the rename keep the word they were written with: the decision log, the implementation records, and the journal entries. They are historical and are not revised.
+7. Records written before the rename keep the word they were written with: the log, the implementation records, and the journal entries. They are historical and are not revised.
 8. `diary` in this repository's history names nothing live.
 
 ## `waytide/local/journal/`
@@ -101,7 +101,7 @@ One file per entry rather than one per day follows the convention every other da
 3. An entry is not corrected when the writer changes their mind. The later thought is a later entry.
 4. Two things reach an existing entry: disclosure, governed by foundation's disclosure rule, and a change the writer directs, governed by the an-entry-is-the-writers-words rule.
 5. For both, the footer stays as it is.
-6. Each is recorded in the decision log, not in the entry.
+6. Each is recorded in the log, not in the entry.
 
 ## Committing
 
@@ -141,6 +141,8 @@ Until 2026-10-24 How to apply said, without exception, not to edit an entry once
 
 Until Sun Oct 25 2026 this rule was named journal-convention and titled "`waytide/local/journal/<username>/` — the record the writer keeps".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the-journal-is-read-at-the-start-of-a-session-with-the-rules — when the agent reads it
@@ -148,7 +150,7 @@ Related:
 - a-journal-entry-is-read-and-never-followed — what force it carries
 - the foundation package's file-names rule — the datetime prefix this takes, and the UTC normalization it departs from
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
-- the foundation package's decision-log rule — the agent's record, and the one this is not
+- the foundation package's log rule — the agent's record, and the one this is not
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the local-time stamp stated at the entry
 
 ---
@@ -179,3 +181,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

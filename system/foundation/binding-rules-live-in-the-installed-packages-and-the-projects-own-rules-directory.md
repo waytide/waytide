@@ -27,4 +27,4 @@ Related:
 - the file-names rule
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the project's own vocabulary and where it sits
 - the rules-establish-a-mindset rule
-- the decision-log rule
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule

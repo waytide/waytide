@@ -1,6 +1,6 @@
 # A printed list of records is formatted as a table or as a list of rows
 
-**When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
+**When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 
 **The first column is the record's handle and carries no heading.** That is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit. The columns after it are headed.
 
@@ -42,7 +42,7 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 ## Compressed
 
 1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with no columns. A list is called a table only where it is formatted as columns.
-2. This applies to any record type. That includes items, implementation records, decision log entries, loop records, work session records, migration records, journal entries, and commits.
+2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 3. The first column is the record's handle and has no heading.
 4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
 5. Every column after the handle has a heading.
@@ -85,6 +85,8 @@ Until 2026-10-25 the rule opened by saying to render a list of records as a tabl
 
 The engineer also settled the same day that a list is not called a table unless it is formatted as columns.
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the a-status-report-prints-a-fixed-whole-project-report rule — whose tables this agrees with
@@ -106,3 +108,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

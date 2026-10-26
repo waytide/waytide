@@ -30,7 +30,7 @@ Waytide offers a project five things: rules that direct the agent's behavior, wo
 **These directories are the memory.** They sit under `waytide/local/`, they are committed with the code, and they are read at the start of a session rather than recalled.
 
 - **items/** — Designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
-- **logs/** — The decision log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
+- **logs/** — The log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
 - **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
 - **journal/** — The engineer's periodic record, written by the engineer in their own words. The agent only reads these records. Read at session start, but not binding.
 - **migration/** — Execution plans for rules and content moving to or from another repository, or to shape existing artifacts to changes to the Waytide system, or even a project's own local rules.
@@ -116,7 +116,7 @@ The list of installed packages is printed at the start of a session, under the t
 
 ## Packages
 
-- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line decision-log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
+- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
 - **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Waytide's implementation of ASD-STE100.
 - **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method (DBE): hinges and gates, the actuation-first cycle, and the method's own `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI. Contributes the `logs/loops/` artifact directory.
 - **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test structure and naming, assertion form.

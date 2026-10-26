@@ -3,7 +3,7 @@
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
-- **It is not the source of truth.** The durable records are: the binding rules (`waytide/system/`, `waytide/local/rules/`), the project's items (`waytide/local/items/`), the decision log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`). The work session record **points to** them throughout. They are authoritative, and the work session record is the narrative that ties them together and preserves the reasoning behind each fork.
+- **It is not the source of truth.** The durable records are: the binding rules (`waytide/system/`, `waytide/local/rules/`), the project's items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`). The work session record **points to** them throughout. They are authoritative, and the work session record is the narrative that ties them together and preserves the reasoning behind each fork.
 - **When it is written.** At the close of a work session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the work session has accumulated such work and proposes recording it. A trivial work session needs no record. The work session record is not a per-session obligation.
 - **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **Every prompt this convention puts says "work session"**, this one and the design reconciliation alike — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
 - **Naming.** A work session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
@@ -55,7 +55,7 @@ Once the record is written, put the **design reconciliation** through the same U
 6. It defines settled vocabulary as that vocabulary arises.
 7. It is written for a person to read. Its job is orientation and reasoning, not truth-of-record.
 8. It is not the source of truth. The durable records are authoritative.
-9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the decision log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
+9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
 10. The record points to the durable records throughout. It does not restate them.
 11. The record keeps the reasoning behind each fork in the work. It ties the durable records together as a narrative and keeps the arc.
 12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
@@ -113,12 +113,14 @@ Until 2026-10-25 the statement that the prompt always says "work session" sat in
 
 Until Sun Oct 25 2026 this rule was named work-sessions-convention and titled "`waytide/local/logs/work-sessions/` — the narrative record of a work session".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the the-implementations-directory-records-each-implementations-lifecycle and the the-items-directory-holds-the-projects-items-one-file-per-item — the sibling artifact conventions
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — why every prompt goes through the selection UI
-- the decision-log rule
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 - the observations rule
 - the the-logs-directory-groups-the-running-records rule — the running records this sits among
 - the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw
@@ -169,3 +171,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

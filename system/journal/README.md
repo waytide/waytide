@@ -2,7 +2,7 @@
 
 The record the writer keeps, beside the project and read by the agent at the start of every session.
 
-Waytide's other records are the agent's. The decision log, the work session record, the loop record, and the experiment record are written by the agent and read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+Waytide's other records are the agent's. The log, the work session record, the loop record, and the experiment record are written by the agent and read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 - **`waytide/local/journal/<username>/` holds a writer's journal** (`the-journal-is-the-record-the-writer-keeps`). A project may hold the journals of more than one writer, and the the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing. One file is one entry, named by the datetime prefix every dated artifact takes, in the writer's **local time**. That is the one place the package departs from foundation's file-names rule, which normalizes to UTC. A journal entry is one writer's personal record, so the hour it carries is the hour they wrote it in. The stamp stops at the **minute**, and carries seconds only where the writer states seconds, which departs from foundation's a-time-value-carries-minutes-and-seconds rule for reasons the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule gives. A day usually holds one entry and can hold several. An entry is committed with the project, and a second writer reads it.
 - **The agent reads the active writer's journal at session start** (`the-journal-is-read-at-the-start-of-a-session-with-the-rules`), after the rules and the vocabularies, oldest entry first. It carries the writer's thinking from one session to the next, which no other artifact carries. Another writer's journal is not read, and neither is `writers.toml`. The agent says nothing about having read it.
@@ -15,9 +15,9 @@ Waytide's other records are the agent's. The decision log, the work session reco
 
 **Vocabulary** (`vocabulary.md`): three terms — **writer**, **journal**, and **journal entry** — and one substitution — `journal` rather than *diary*, *personal log*, or *personal journal*.
 
-**What this package deliberately does not hold.** The four records the agent writes stay where they are. The decision log, the experiment record, and the rest are foundation's, and the loop record is design-by-efferent's. This package holds one record and the four rules that keep it the writer's.
+**What this package deliberately does not hold.** The four records the agent writes stay where they are. The log, the experiment record, and the rest are foundation's, and the loop record is design-by-efferent's. This package holds one record and the four rules that keep it the writer's.
 
-**Why it is called journal.** Not *log*: the decision log has it, and the decision log is this record's opposite. Not *personal journal* or *personal log*: each needs a qualifier to hold it apart from the agent's records, and a term that needs a qualifier is the wrong term. Not *diary*, which held this record from 2026-08-14 until 2026-08-18.
+**Why it is called journal.** Not *log*: the log has it, and the log is this record's opposite. Not *personal journal* or *personal log*: each needs a qualifier to hold it apart from the agent's records, and a term that needs a qualifier is the wrong term. Not *diary*, which held this record from 2026-08-14 until 2026-08-18.
 
 **The write-ahead reading was the case against *journal*, and it is answered.** In filesystems and databases a journal is what a system writes before it commits, and many readers reach for that reading first. What settles it is the directory the word sits in rather than the word alone — `waytide/local/journal/<username>/` names a person, and no write-ahead log is kept per user.
 

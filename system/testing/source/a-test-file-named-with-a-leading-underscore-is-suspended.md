@@ -10,7 +10,7 @@
 
 **It is not a suspension in the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule's sense.** That rule governs something the project **did** and stopped: the thing is **removed**, and a log entry tagged `[suspended]` says what it cost and what else changed. A test file marked this way is removed from nothing.
 
-**So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the decision log's own trigger reaches it like any other.
+**So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the log's own trigger reaches it like any other.
 
 ## The mark is in the filename because that is what a suite reads
 
@@ -49,7 +49,7 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 3. It is not a suspension in the sense of the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule. That rule governs something done, stopped, and removed.
 4. A suspended test is removed from nothing.
 5. Do not tag a log entry `[suspended]` for a suspended test, since nothing was removed.
-6. Suspending a test is an ordinary decision. The decision log's own trigger applies to it like any other.
+6. Suspending a test is an ordinary decision. The log's own trigger applies to it like any other.
 
 ## The mark is in the filename because that is what a suite reads
 
@@ -67,6 +67,8 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-suspended-test-file-is-named-with-a-leading-underscore and titled "A test file whose name begins with an underscore is suspended, and the suite does not run it".
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Related:
 
@@ -86,3 +88,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:37 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

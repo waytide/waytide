@@ -21,17 +21,17 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 ## What is already required, and not restated
 
-**An affirmed experiment copies its own log into the decision log.** The an-implementation-runs-on-a-branch-to-a-declared-end rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
+**An affirmed experiment copies its own log into the project's log.** The an-implementation-runs-on-a-branch-to-a-declared-end rule requires it, and that copy is the findings. The summary marker sits beside those entries rather than replacing them.
 
 **A feature has no affirmation and no log copy.** It is built to an intent rather than a question, so a completed feature's marker is the whole of what its conclusion writes.
 
 ## What is not logged
 
-**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a decision log.
+**A confirmation the lifecycle records is not a log entry.** The working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion are recorded **in the record**, which is where the run's authority is audited. Logging each would move an audit trail into a log.
 
 **A turn of the work is not a decision.** The hinges, the cycles, and the runs belong to the loop record and the implementation record.
 
-**Why:** the decision log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
+**Why:** the log is what a reader finds without knowing an experiment ever happened. A record answers *what was tried and what came of it* to someone already holding it. The log answers *what has this project decided* to someone holding nothing.
 
 For a merged record the two are one artifact reachable two ways, and a marker is enough. For an unmerged one they are not, and the difference between a marker and the substance is the difference between a trace and a record.
 
@@ -65,7 +65,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 ## What is already required, and not restated
 
-1. An affirmed experiment still copies its own log into the decision log, as an-implementation-runs-on-a-branch-to-a-declared-end requires.
+1. An affirmed experiment still copies its own log into the project's log, as an-implementation-runs-on-a-branch-to-a-declared-end requires.
 2. The summary marker sits beside those copied entries. It does not replace them.
 3. A completed feature has no affirmation and no log copy. Its marker is the whole of what its conclusion writes.
 
@@ -82,13 +82,15 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 2. Where it merged, write a summary marker naming the record and its state.
 3. Where it did not, write the question or the intent, and the verdict or the outcome. Add the findings where there are any, and for abandoned work the reasoning given for stopping, so `master` holds them without the record.
 
-**Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The decision log answers what this project has decided, for a reader who holds nothing.
+**Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The log answers what this project has decided, for a reader who holds nothing.
 
 ## History
 
 Until 2026-10-25 the concluding entry's form was said to be decided by whether the record itself is on `master`, while a later paragraph and How to apply made the merge the test. How to apply also told every unmerged case to write the findings, which abandoned work does not have, and left out the reasoning for stopping. The engineer settled that the merge is the test, and that the findings are written where there are any, with the reasoning for stopping for abandoned work.
 
 Until Sun Oct 25 2026 this rule was named implementation-records-take-a-log-entry and titled "An implementation record takes a log entry — and what the concluding entry carries depends on whether the work reached `master`".
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Related:
 
@@ -114,3 +116,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:03 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

@@ -63,7 +63,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-records-each-implementations-lifecycle's.
 
-**An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project decision log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
+**An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
 **A `[feature]` is verified before integrating, and nothing gates the merge.** `run-the-test-suite-after-changes-before-considering-whether-to-commit` already achieves it, every commit on the branch having been verified. The merged result is a combination neither branch ran, so a feature whose commits all passed can still break the suite on integration. That is ordinary and is fixed from there. There is no affirmation step, because a feature has no finding to promote.
 
@@ -101,7 +101,7 @@ Stating the shared lifecycle once and conditioning six clauses on a tag is small
 
 **How to apply:** branch for every implementation, named for its tag. Record the upstream branch, the branch, and the base. Ask the working location and the participation level at the start, through the selection interface, and record both. Offer the current branch only for a feature, and offer it last.
 
-Follow DBE inside. End in a declared state. Copy an affirmed experiment's log into the decision log and merge where it produced implementation. Verify a feature before integrating and add no gate at the merge.
+Follow DBE inside. End in a declared state. Copy an affirmed experiment's log into the project's log and merge where it produced implementation. Verify a feature before integrating and add no gate at the merge.
 
 Raise no ending for an experiment. Leave the engineer on the upstream branch in the main working tree. Confirm before deleting any branch, removing the worktree first under one confirmation.
 

@@ -1,6 +1,6 @@
 # Disclosure is the one reason to edit a historical record
 
-A historical record states what was true when it was written, and is **not** revised to suit a later convention. That is a decision-log entry, a work session record, an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against renaming, reformatting, and correcting a term the project has since replaced. It holds against every other reason a reader might want a record to read differently.
+A historical record states what was true when it was written, and is **not** revised to suit a later convention. That is a log entry, a work session record, an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against renaming, reformatting, and correcting a term the project has since replaced. It holds against every other reason a reader might want a record to read differently.
 
 **It does not hold against disclosure.** Where a record names something that should not have been disclosed, it is corrected. A record is not a commitment to keep publishing something that should not have been published in the first place.
 
@@ -38,7 +38,7 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 ## Compressed
 
 1. A historical record states what was true when it was written.
-2. Historical records include decision-log entries, work session records, experiment records, feature records, and completed migration records.
+2. Historical records include log entries, work session records, experiment records, feature records, and completed migration records.
 3. Do not revise a historical record to suit a later convention.
 4. Do not rename, reformat, or correct a since-replaced term in a historical record.
 5. Do not revise it for any other reason a reader might want it to read differently.
@@ -74,6 +74,10 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
 5. **Why:** a record is left as written because it is evidence, but that does not extend to content the project had no standing to publish. Naming the engineer as the authority keeps an agent from either exposing something because records are immutable or scrubbing a record on a guess.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory and the reconcile entry in this package's vocabulary — where the standing rule is stated
@@ -94,3 +98,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:24:07 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

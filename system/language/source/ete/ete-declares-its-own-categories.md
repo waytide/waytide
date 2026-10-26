@@ -10,7 +10,7 @@
 
 **Evented systems and autonomous components.** Terms that name the parts of a message-based system, the components that run on their own, and what they do. Examples: `projection`, `entity`, `event`, `stream`, `consumer`, `handler`, `message`, `autonomous component`.
 
-**Agent artifacts.** Terms that name the files an agent and an engineer write and read as they work, and what is done to them. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
+**Agent artifacts.** Terms that name the files an agent and an engineer write and read as they work, and what is done to them. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `log entry`, `rule file`, `vocabulary`.
 
 **Human-computer interaction (HCI).** Terms that name how a person and a machine work together, and what each of them does. Examples: `attended`, `unattended`, `free-text option`, `selection prompt`, `harness`.
 
@@ -56,7 +56,7 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 
 1. This category holds terms that name the files an agent and an engineer write and read as they work.
 2. It also holds terms for what is done to those files.
-3. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `decision log entry`, `rule file`, `vocabulary`.
+3. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `log entry`, `rule file`, `vocabulary`.
 
 ## Human-computer interaction (HCI)
 
@@ -86,6 +86,8 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 
 Until Sun Oct 25 2026 this rule was titled "ETE declares categories of its own".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit
@@ -107,3 +109,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

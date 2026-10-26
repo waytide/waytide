@@ -14,7 +14,7 @@
 
 **Carry out what was directed and nothing beside it.** An entry opened to make one change is not an entry to tidy, reword, or bring into line with a convention that has since arrived. Everything not named stays as the writer wrote it.
 
-**The change is logged**, in the decision log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
+**The change is logged**, in the log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
 
 **Disclosure is the second**, and the foundation package's disclosure rule governs it.
 
@@ -33,4 +33,4 @@ Related:
 - the the-journal-is-the-record-the-writer-keeps — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
 - a-journal-entry-is-read-and-never-followed — what an entry does and does not do
 - the foundation package's disclosure rule — the other reason an entry that exists is edited, and the logging shape this borrows
-- the foundation package's decision-log rule — a record the agent does write
+- the foundation package's log rule — a record the agent does write

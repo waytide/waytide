@@ -14,7 +14,7 @@
 
 **Carry out what was directed and nothing beside it.** An entry opened to make one change is not an entry to tidy, reword, or bring into line with a convention that has since arrived. Everything not named stays as the writer wrote it.
 
-**The change is logged**, in the decision log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
+**The change is logged**, in the log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
 
 **Disclosure is the second**, and the foundation package's disclosure rule governs it.
 
@@ -51,19 +51,23 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 19. Make exactly the change directed, and nothing beside it.
 20. Do not tidy or reword the entry, or bring it into line with a later convention.
 21. Leave everything the writer did not name as they wrote it.
-22. Log the directed change in the decision log, saying what was directed and what changed.
+22. Log the directed change in the log, saying what was directed and what changed.
 23. Put no `Changed by` line on the entry. The the-journal-is-the-record-the-writer-keeps limits its footer to `Authored by`.
 24. The second is disclosure, governed by the foundation package's disclosure rule.
 25. Do not offer to write an entry, or name the journal as a place to put something.
 26. Where the writer wants an entry, they say so.
 27. **Why:** the journal holds the writer's judgment. An agent-written entry would read as the writer's, making the record untrustworthy at the one thing it is for.
 
+## History
+
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
 - a-journal-entry-is-read-and-never-followed — what an entry does and does not do
 - the foundation package's disclosure rule — the other reason an entry that exists is edited, and the logging shape this borrows
-- the foundation package's decision-log rule — a record the agent does write
+- the foundation package's log rule — a record the agent does write
 
 ---
 
@@ -76,3 +80,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 9:45:41 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

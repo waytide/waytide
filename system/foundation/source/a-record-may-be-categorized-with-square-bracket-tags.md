@@ -2,7 +2,7 @@
 
 **Any record may be categorized with square-bracket tags**, as in `[idea]`. This is the system's one tagging protocol, and it is universal: no record is excluded from it, and no rule excludes one. A tag applies to the **whole record** or to **one list item**.
 
-**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a decision log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
+**Universal means every record, of every kind, anywhere.** A working-state artifact under `waytide/local/`, a log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, a README. Where a record exists, it may carry tags.
 
 ## Where the tag goes
 
@@ -11,7 +11,7 @@
 - **The whole record** — the tags go on a dedicated `**Tags:**` line among the canonical lines at the head, **after `**State:**` where there is one**. Several tags are separated by spaces — `**Tags:** [idea] [decision]`.
 - **One list item** — the tag prefixes that list item's text — `- [idea] My great idea is thus`.
 
-**A record with no head gains one.** A decision log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The the-log-holds-one-file-per-entry-with-a-one-line-title states that shape, and a tagged entry is two lines rather than one.
+**A record with no head gains one.** A log entry is a title and nothing else, so a `**Tags:**` line under its title is the entry's whole head. The the-log-holds-one-file-per-entry-with-a-one-line-title states that shape, and a tagged entry is two lines rather than one.
 
 The leading-tag form is discontinued. A second form buys a line saved and costs every reader and every search two shapes to know, and the tag is no longer in the field the rest of the system reads it from.
 
@@ -55,7 +55,7 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 2. This is the system's one tagging protocol.
 3. The protocol is universal. No record is excluded from it, and no rule excludes one.
 4. Universal means every record, of every kind, anywhere.
-5. Examples are a working-state artifact under `waytide/local/`, a decision log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, and a README.
+5. Examples are a working-state artifact under `waytide/local/`, a log entry, a rule file under `waytide/system/` or `waytide/local/rules/`, a journal entry, and a README.
 6. A tag applies to the whole record or to one list item.
 
 ## Where the tag goes
@@ -66,7 +66,7 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 4. Several tags are separated by spaces, as in `**Tags:** [idea] [decision]`.
 5. For one list item, the tag prefixes that item's text, as in `- [idea] My great idea is thus`.
 6. A record with no head gains one when it is tagged.
-7. A decision log entry is only a title, so a `**Tags:**` line under its title is its whole head. A tagged entry is two lines.
+7. A log entry is only a title, so a `**Tags:**` line under its title is its whole head. A tagged entry is two lines.
 8. The leading-tag form is discontinued. That form put a tag before the title or text in place of a `**Tags:**` line. Do not use it.
 9. No record is excluded by its shape. A short, one-line, generated, or historical record carries its tags on a `**Tags:**` line.
 10. Tags are lower-case, in square brackets.
@@ -104,6 +104,8 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 
 Until Sun Oct 25 2026 this rule was named a-record-takes-category-tags and titled "A record takes square-bracket category tags".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the `journal` package's the-journal-is-the-record-the-writer-keeps and a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
@@ -134,3 +136,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

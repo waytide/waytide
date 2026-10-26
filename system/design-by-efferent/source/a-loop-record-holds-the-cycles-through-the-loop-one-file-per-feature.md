@@ -1,8 +1,8 @@
 # A loop record holds the cycles through the loop, one file per feature
 
-`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The decision log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
+`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
-**Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line decision log, which a loop record must not displace (the log stays one line per decision).
+**Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line log, which a loop record must not displace (the log stays one line per entry).
 
 **Format:**
 - Filename per the ISO 8601 UTC datetime prefix convention: `YYYY-MM-DDTHH-MM-SSZ-<feature-name>.md`.
@@ -20,17 +20,17 @@
 
 **Why:** the deliberation is the conveyable substance of this method. That is the hinges and the reasoning over the options. It evaporates if only the final code and one-line decisions survive. A per-feature narrative of the loop's cycles keeps it, teaches the method by example, and exposes where gates were skipped.
 
-**How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line decision-log entries separate and intact.
+**How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line log entries separate and intact.
 
 ## Compressed
 
 1. `waytide/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
 2. The loop is the distributed OODA cycle, as defined in the DBE vocabulary.
-3. A loop record captures how a feature was decided. The decision log captures what was decided.
+3. A loop record captures how a feature was decided. The log captures what was decided.
 4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
 5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
-6. A loop record must not displace the decision log.
-7. The decision log stays one line per decision.
+6. A loop record must not displace the log.
+7. The log stays one line per decision.
 
 ## Format
 
@@ -59,7 +59,7 @@
 
 1. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above.
 2. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning.
-3. Keep the one-line decision-log entries separate and intact.
+3. Keep the one-line log entries separate and intact.
 4. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
 
 ## History
@@ -68,11 +68,13 @@ Until 2026-10-24 the opening and How to apply described every cycle as recording
 
 Until Sun Oct 25 2026 this rule was named loop-records and titled "Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
 - the the-hinge-cycle-runs-from-actuation-to-naming rule
-- foundation's file-name prefix and decision-log conventions
+- foundation's file-name prefix and log conventions
 - `foundation`'s the-logs-directory-groups-the-running-records rule — the running records this sits among, which names this directory without requiring anything of it
 
 ---
@@ -99,3 +101,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

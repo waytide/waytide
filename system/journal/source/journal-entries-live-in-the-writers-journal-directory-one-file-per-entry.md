@@ -1,6 +1,6 @@
 # Journal entries live in the writer's journal directory, one file per entry
 
-The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the decision log the agent writes, which is one record for the whole project.
+The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by `date +%Y-%m-%dT%H-%M`. The colons of ISO 8601 are written as dashes for filename safety. Never use UTC for these entries, which is the writer's stated preference.
 
@@ -38,7 +38,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 2. Put each entry in the writer's own directory, `waytide/local/journal/<username>/`.
 3. Resolve `<username>` as the active writer by the the-writers-identity-resolves-through-a-fixed-override-chain rule, for example `waytide/local/journal/scott-bellware/`.
 4. A project may hold several writers' journals. Each writer's entries live under their own directory.
-5. The journal is distinct from `waytide/local/logs/log/`, the agent's single project-wide decision log.
+5. The journal is distinct from `waytide/local/logs/log/`, the agent's single project-wide log.
 
 ## Filename
 
@@ -106,6 +106,8 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 
 Until Sun Oct 25 2026 this rule was named journal-entries and titled "Journal entries live in `waytide/local/journal/<username>/`, one file per entry".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
@@ -140,3 +142,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

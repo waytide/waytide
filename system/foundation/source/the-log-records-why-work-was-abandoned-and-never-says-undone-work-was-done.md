@@ -1,8 +1,8 @@
 # The log records why work was abandoned, and never says undone work was done
 
-**A decision log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
+**A log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
-**As the engineer stated it:** if work is abandoned, the decision log can record any reasoning given for the abandonment, but the decision log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
+**As the engineer stated it:** if work is abandoned, the log can record any reasoning given for the abandonment, but the log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.
 
 ## What an abandonment entry carries
 
@@ -30,7 +30,7 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 
 ## Compressed
 
-1. A decision log entry never conveys that something was done when it was not done.
+1. A log entry never conveys that something was done when it was not done.
 2. This prohibition holds whatever the entry is about.
 3. The log on `master` never conveys that work from an abandoned branch landed on `master`.
 
@@ -56,6 +56,8 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 
 Until Sun Oct 25 2026 this rule was named the-log-never-says-undone-work-was-done and titled "The log records the reasoning for an abandonment, and never conveys that something was done when it was not".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's shape, and when it takes a body
@@ -74,3 +76,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT

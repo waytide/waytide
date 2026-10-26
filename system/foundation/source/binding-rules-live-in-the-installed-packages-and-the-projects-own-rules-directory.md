@@ -110,12 +110,14 @@ Until 2026-10-25 the rule said `waytide/system/` and `waytide/local/rules/` "hol
 
 Until Sun Oct 25 2026 this rule was named rules-convention and titled "Binding rules live in `waytide/system/` (installed) and `waytide/local/rules/` (the project's own)".
 
+Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
 Related:
 
 - the file-names rule
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the project's own vocabulary and where it sits
 - the rules-establish-a-mindset rule
-- the decision-log rule
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 
 ---
 
@@ -151,3 +153,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
