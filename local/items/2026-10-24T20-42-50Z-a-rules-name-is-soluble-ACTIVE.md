@@ -1,6 +1,6 @@
 # A rule's name is soluble
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **A rule's name should dissolve readily into the reader's understanding, the way the rule's text is meant to.** The name is the file name and the slug every citation uses, such as *the a-sha-names-the-work-rather-than-the-commit rule*. Many names are hard to read cold. That one the engineer called "really obscure language" on 2026-10-23. Others are `dbe-as-design-tool`, `tdd-designs-coverage-prevents-never-break-implementation` and `context-only-for-local-instrumentation`. Each is compressed past the point of saying what the rule asks.
@@ -26,3 +26,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:31:23 PM PT
