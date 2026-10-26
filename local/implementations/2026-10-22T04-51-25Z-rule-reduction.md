@@ -1462,6 +1462,21 @@ The re-checks raised seven further single-judge objections. Each was resolved as
 
 The engineer reviews this table and sends back any title to change.
 
+### Waytide's inefficiencies, as the agent found them — 2026-10-26
+
+**The engineer asked what Waytide's inefficiencies are and how each could be improved, and directed that the answer be added to this phase.** The agent answered from the session-start read on `master` at `8146f2c`: about 560 KB of compiled markdown. The answer is the agent's reading and nothing in it is settled. Each finding was then checked on this phase branch at `9c5a10c`, whose compiled read is 538,299 characters in 113 files, and each still holds there.
+
+1. **The session-start read is large, and most of it is reasoning.** A rule carries its directive, a long `**Why:**`, and often a section on what it does not reach. The compiler strips only `## History`. The improvement is a shorter compiled form for the session-start read, with each rule's directive and How to apply and one line of purpose, and the reasoning kept in `source/`. This is this phase's own question.
+2. **History stands in compiled rule bodies, where the compiler cannot drop it.** On the phase branch, 25 compiled files carry an *until 2026-* clause. Among them are the rules on the session-start notice, the state suffix, the items directory, the logs directory, the identity chain, journal entries, and commit-message widths. The improvement is to move those clauses into `## History`, as the rules-convention requires.
+3. **The same boilerplate is copied into seven vocabularies.** The paragraphs on what every word is, what a reserved word's entry states, and what silence means stand nearly word for word in six package vocabularies and in `local/vocabulary.md`. The improvement is to state them once in the vocabulary-convention.
+4. **Some instructions are stated in several rules.** The never-offer instruction is in three rules. The options, `Explain`, and two-option-floor mechanics are in three. The precondition exception is in two. The attended or unattended account is in five. The improvement is to state each once and cite it by name elsewhere.
+5. **Some live references point at what no longer exists.** `local/vocabulary.md` cites the ideas-convention twice, and that convention is now the items convention. The design-by-efferent vocabulary's `Related:` list splits "TDD designs, coverage prevents" across two list items. The improvement is to reconcile them.
+6. **The hook and the initialization rule disagree about the package set.** The read instruction says to print the package set. The rule says a `default` set with nothing deactivated prints nothing, so each session's agent settles the conflict itself. The improvement is for `session-start.sh` to leave out that sentence where the set is `default` and nothing is deactivated.
+7. **The read takes many tool calls, and nothing guarantees it is complete.** Each session's agent finds its own way to open about 110 files. The improvement is a bundle file that `compile.sh` writes, which is the question phase 2 holds.
+8. **Each record carries many obligations.** A state change on an item is a rename, a new state line, a log entry, a footer line, and a reconciliation of the live paths that cite the old name. Inserting a priority rank renumbers every item below it. The improvement named is to drop the filename state suffix and read the state lines with a listing script. That costs the state shown in an ordinary directory listing, which is why the suffix exists.
+9. **Every prompt costs extra turns.** `Explain` takes one of four option slots. The ask-at-once rule interrupts the work for each preference. Attended work puts five prompts per outcome, even for a small unit. The improvement named is to record the engineer's words at the moment a preference is stated, and ask about recording it at the task's end.
+10. **Nothing re-reads the rules after the context is compacted.** The rules then survive only as a summary. The `SessionStart` hook runs after compaction, but its instruction asks for the full read again. The improvement named is the compact compiled form of the first finding, which would make a re-read cheap.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4620,3 +4635,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:08:50 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:19:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:28:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:00:56 PM PT
