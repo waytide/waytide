@@ -5,7 +5,7 @@ Tests serve two different purposes in two different processes, and conflating th
 - **TDD is a design activity.** The failing-test-then-implement cycle is an instrument for *designing* behavior — tests used as **proofs for design**. The red is what drives the implementation into existence. This is the genus DBE belongs to, and the reason the methodology's name says *Design*.
 - **Adding test coverage is a separate activity** — **preventing a regression in existing behavior**. It happens *past* the point TDD is concerned with: the behavior is already designed and correct. Here tests are **regression prevention**, not design proofs. It is a testing / final-inspection process, not TDD.
 
-**When adding coverage, green-on-arrival is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the no-green-on-arrival stance is a design concern that does not apply here.
+**When adding coverage, a test that passes when first run is inevitable and correct.** The behavior already exists, so the test passes immediately. That *is the point* — a regression in that behavior is now prevented. It is the nature of coverage, not a defect to engineer around, and the stance that such a test is coverage rather than design is a DBE concern that does not apply here.
 
 **Never break, mutate, or otherwise invalidate a working implementation to introduce a test.** Do not do it to "see it go red first." That inverts the relationship, making correct code fail a ritual. It forces unnatural changes to shipped code, and muddies the distinction between designing with tests and preventing regression with tests. There is no red to manufacture when covering behavior that already exists.
 
@@ -20,7 +20,7 @@ Tests serve two different purposes in two different processes, and conflating th
 3. Adding test coverage is a separate activity. It prevents regression in existing behavior that is already designed and correct.
 4. Coverage tests are regression prevention, not design proofs. Adding coverage is a testing or final-inspection process, not TDD.
 5. When adding coverage, a test passing on arrival is inevitable and correct. Do not treat it as a defect to work around.
-6. The no-green-on-arrival stance is a design concern. It does not apply to adding coverage.
+6. The stance that such a test is coverage rather than design is a DBE concern. It does not apply to adding coverage.
 7. Never break, mutate, or otherwise invalidate a working implementation to introduce a test.
 8. Do not break working code to "see it go red first." There is no red to manufacture when covering existing behavior.
 9. When the behavior already exists and you are adding coverage, write the test and run it.
@@ -32,12 +32,14 @@ Tests serve two different purposes in two different processes, and conflating th
 
 Until Sun Oct 25 2026 this rule was named tdd-designs-coverage-prevents-never-break-implementation and titled "TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test".
 
+Until Mon Oct 26 2026 this rule called a test that passes when first run "green-on-arrival". The engineer settled on the literal phrase.
+
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
 - the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
-- the no-green-on-arrival rule
+- the a-test-of-behavior-that-already-exists-is-coverage-not-design rule
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 
 ---
@@ -57,3 +59,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT

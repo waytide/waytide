@@ -4,7 +4,7 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 | Don't | Do |
 |---|---|
-| `Log: mark Task 9 done (green-on-arrival)` | `Log: Task 9 is done (green-on-arrival)` |
+| `Log: mark Task 9 done (already passing)` | `Log: Task 9 is done (already passing)` |
 | `mark the predicate task complete` | `the predicate task is done` |
 
 **Why:** "Mark ... done" describes the act of ticking a box. The commit should describe the state of the work — the task *is* done. The fact is what matters and what reads well in the log, not the clerical gesture of marking it.
@@ -20,7 +20,7 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 | Don't | Do |
 |---|---|
-| `Log: mark Task 9 done (green-on-arrival)` | `Log: Task 9 is done (green-on-arrival)` |
+| `Log: mark Task 9 done (already passing)` | `Log: Task 9 is done (already passing)` |
 | `mark the predicate task complete` | `the predicate task is done` |
 
 5. Phrase finished work as the task being done. Say "Task N is done" or "X is complete".
@@ -33,6 +33,8 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 ## History
 
 Until Sun Oct 25 2026 this rule was named commit-says-task-is-done-not-mark-done and titled "Commit messages: never say "mark ... done" — state the fact ("Task 9 is done")".
+
+Until Mon Oct 26 2026 this rule's example commit carried "(green-on-arrival)", a term since replaced by a literal phrase.
 
 Related:
 
@@ -52,3 +54,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT

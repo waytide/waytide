@@ -4,7 +4,7 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 | Don't | Do |
 |---|---|
-| `Log: mark Task 9 done (green-on-arrival)` | `Log: Task 9 is done (green-on-arrival)` |
+| `Log: mark Task 9 done (already passing)` | `Log: Task 9 is done (already passing)` |
 | `mark the predicate task complete` | `the predicate task is done` |
 
 **Why:** "Mark ... done" describes the act of ticking a box. The commit should describe the state of the work — the task *is* done. The fact is what matters and what reads well in the log, not the clerical gesture of marking it.
