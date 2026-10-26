@@ -1,4 +1,4 @@
-# A predicate method's test context is named for the predicate
+# A predicate method's test context is its name followed by the word "Predicate"
 
 The `context` for a predicate method — a `?`-suffixed, boolean-returning method — is named by the method's name (without the `?`) followed by **"Predicate"**. So `defined?` → `context "Defined Predicate"`, not `context "Defined?"`.
 

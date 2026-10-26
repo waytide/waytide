@@ -12,7 +12,7 @@ A test's high-level context is expressed in terms of a **behavior**. A method na
 
 **The higher a context sits, the more firmly it names a behavior.** The unit's own context and the contexts directly under it are what a reader meets first, and they decide what the reader takes the test to be about. A method name there is the case this rule exists to stop.
 
-**A deeper context may name an implementation element.** Further down, a context is frequently about one part of how the behavior is carried out, and naming that part is the plain description of it. The a-predicate-methods-test-context-is-named-for-the-predicate rule is that case — `context "Defined Predicate"` sits inside the behavior it qualifies.
+**A deeper context may name an implementation element.** Further down, a context is frequently about one part of how the behavior is carried out, and naming that part is the plain description of it. The a-predicate-methods-test-context-is-its-name-followed-by-the-word-predicate rule is that case — `context "Defined Predicate"` sits inside the behavior it qualifies.
 
 **No fixed level marks the change.** The ideal is a behavior at every level, and the writer judges where a context has begun to describe the implementation. A deep context that can name a behavior still names one.
 
@@ -37,5 +37,5 @@ Related:
 - the test-context-nesting-mirrors-the-folder-hierarchy rule — the path the contexts mirror
 - the a-single-case-feature-is-one-test-file-named-for-the-feature rule — the file named for the feature rather than for a case
 - the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule — when a context is warranted at all
-- the a-predicate-methods-test-context-is-named-for-the-predicate rule — a deeper context naming an implementation element
+- the a-predicate-methods-test-context-is-its-name-followed-by-the-word-predicate rule — a deeper context naming an implementation element
 - the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule
