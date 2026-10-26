@@ -1,6 +1,6 @@
 # Each hinge displays the actuation as its anchor, and the contexts once
 
-Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-runs-from-actuation-to-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
+Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 
 | Hinge | Displays |
 |---|---|
@@ -35,7 +35,7 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 ## Compressed
 
 1. Each hinge shows the human a specific amount of the test on screen.
-2. The the-hinge-cycle-runs-from-actuation-to-naming rule owns the sequence of hinges and the acceptance mechanism. This rule owns what is displayed at each hinge.
+2. The the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule owns the sequence of hinges and the acceptance mechanism. This rule owns what is displayed at each hinge.
 3. Render each hinge per this table:
 
 | Hinge | Displays |
@@ -80,7 +80,7 @@ Until Sun Oct 25 2026 this rule was named what-each-hinge-displays and titled "W
 
 Related:
 
-- the the-hinge-cycle-runs-from-actuation-to-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label
 - the first-turn rule — the three test hinges produce turn one
 - the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule — the feature's test output that accompanies the implementation at hinge 4
 - the folder-mirroring rule
@@ -103,3 +103,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

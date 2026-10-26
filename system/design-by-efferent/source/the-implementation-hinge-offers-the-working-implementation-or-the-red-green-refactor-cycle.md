@@ -91,7 +91,7 @@ Until Sun Oct 25 2026 this rule was named the-implementation-hinge-offers-the-re
 
 Related:
 
-- the the-hinge-cycle-runs-from-actuation-to-naming rule — the five hinges, of which this is the fourth
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the five hinges, of which this is the fourth
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation and the-design-of-a-test-waits-at-the-hinges-coverage-included rules — the coverage case where the cycle is unavailable
@@ -117,3 +117,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:45 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

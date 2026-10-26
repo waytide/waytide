@@ -19,4 +19,4 @@ Related:
 - the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
 - the no-green-on-arrival rule
-- the the-hinge-cycle-runs-from-actuation-to-naming rule
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule

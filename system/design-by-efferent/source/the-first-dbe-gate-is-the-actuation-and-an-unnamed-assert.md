@@ -44,7 +44,7 @@ Keeping the first gate to the actuation and a single unnamed assert keeps that g
 
 **Acceptance is separate gates, not one.** The *content* of turn one is as above. The human accepts it in separate hinges: **actuation, then observation, then controls**. The implementation is the fourth hinge, and the naming is the fifth, at the feature's close.
 
-Each is proposed and accepted before the next, per the the-hinge-cycle-runs-from-actuation-to-naming rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
+Each is proposed and accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
 
 ## Compressed
 
@@ -96,7 +96,7 @@ end
 24. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
 25. The implementation is the fourth hinge.
 26. The naming is the fifth hinge, at the feature's close.
-27. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-runs-from-actuation-to-naming rule.
+27. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 28. Do not present the whole test file for a single accept.
 29. Settle the three test hinges first, then assemble and show the file.
 30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
@@ -132,3 +132,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

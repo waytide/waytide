@@ -75,7 +75,7 @@ Until Sun Oct 25 2026 this rule was named present-every-prompt-through-askuserqu
 
 Related:
 
-- the `design-by-efferent` package's the-hinge-cycle-runs-from-actuation-to-naming and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
+- the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
 - its vocabulary — where **mean-bias** is defined
 
 ---
@@ -103,3 +103,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 3:27:43 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

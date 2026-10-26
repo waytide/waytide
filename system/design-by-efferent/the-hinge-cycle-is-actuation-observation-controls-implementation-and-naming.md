@@ -1,4 +1,4 @@
-# The hinge cycle runs from actuation to naming
+# The hinge cycle is actuation, observation, controls, implementation, and naming
 
 Building the initial implementation of an outcome runs a cycle of **five hinges**. Each is handed to the human separately, and accepted before moving to the next:
 

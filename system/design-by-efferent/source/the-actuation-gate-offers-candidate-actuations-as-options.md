@@ -38,9 +38,9 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 **When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the free-text option still there. `Explain` is the second option, as the present-every-prompt rule sets out, and no candidate is sought to reach two.
 
-**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the the-hinge-cycle-runs-from-actuation-to-naming rule.
+**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
-This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the the-hinge-cycle-runs-from-actuation-to-naming rule.
+This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
 ## Compressed
 
@@ -83,7 +83,7 @@ This mechanism is the candidates as options, with the free-text option. It appli
 12. When a hinge has no genuinely distinct candidates, do not manufacture them.
 13. Present the one candidate as the option, in the same form every other option takes, with the free-text option still there.
 14. `Explain` is the second option, as the present-every-prompt rule sets out. Do not seek another candidate to reach two.
-15. Do not replace the single candidate with an `Accept` label. The option is the artifact. See the the-hinge-cycle-runs-from-actuation-to-naming rule.
+15. Do not replace the single candidate with an `Accept` label. The option is the artifact. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 16. This mechanism applies at every hinge of the cycle: actuation, observation, controls, implementation, and naming.
 17. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
 
@@ -93,7 +93,7 @@ Until Sun Oct 25 2026 this rule was named actuation-gate-options-or-chat and tit
 
 Related:
 
-- the the-hinge-cycle-runs-from-actuation-to-naming
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
 - human-in-the-loop
 - first-turn
 - DBE-as-design-tool
@@ -124,3 +124,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

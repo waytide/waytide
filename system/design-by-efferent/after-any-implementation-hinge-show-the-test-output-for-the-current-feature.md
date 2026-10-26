@@ -14,7 +14,7 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 Related:
 
-- the the-hinge-cycle-runs-from-actuation-to-naming rule
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - the human-in-the-loop rule
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the one-outcome-at-a-time rule

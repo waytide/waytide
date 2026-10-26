@@ -108,6 +108,6 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record, the tags, and the state words
-- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-runs-from-actuation-to-naming rules
+- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
 - the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules

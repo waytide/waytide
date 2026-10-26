@@ -10,7 +10,7 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 
 **Why:** Batch code generation moves fast, but it bypasses the gates that are the whole point of the loop. Each skipped gate is a place the human's judgment did not get to act, and mistakes hide in the pile. Naming is a hinge like the actuation, since the outcome-context name is a small contract on what the test establishes. So responsibility transfers there the same way, through options plus the free-text option, rather than through an AI fait accompli.
 
-**How to apply:** Build one outcome's test at a time. After each, stop at each of its hinges (see the the-hinge-cycle-runs-from-actuation-to-naming rule) and wait. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Never write several test files at once, in either mode. To finish an unnamed test, present candidate names as options through the selection UI. Then apply the name chosen or dictated.
+**How to apply:** Build one outcome's test at a time. After each, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Never write several test files at once, in either mode. To finish an unnamed test, present candidate names as options through the selection UI. Then apply the name chosen or dictated.
 
 ## Compressed
 
@@ -32,7 +32,7 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 16. Present alternatives, not a single pick.
 17. Make the human produce the answer, not approve one.
 18. Build one outcome's test at a time.
-19. After each test, stop at each of its hinges (see the the-hinge-cycle-runs-from-actuation-to-naming rule) and wait.
+19. After each test, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait.
 20. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule).
 21. Never write several test files at once, in either mode.
 22. To finish an unnamed test, present candidate names as options through the selection UI.
@@ -50,7 +50,7 @@ Related:
 - the actuation-gate-options
 - human-in-the-loop
 - first-turn
-- the-hinge-cycle-runs-from-actuation-to-naming
+- the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
 - present-every-prompt rules
 - the testing package's test-naming rules
 
@@ -73,3 +73,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:44:47 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:49 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

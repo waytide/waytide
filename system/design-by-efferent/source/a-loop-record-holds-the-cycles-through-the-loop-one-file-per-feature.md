@@ -75,7 +75,7 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
-- the the-hinge-cycle-runs-from-actuation-to-naming rule
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - foundation's file-name prefix and log conventions
 - `foundation`'s the-logs-directory-holds-the-contemporaneous-historical-records rule — the contemporaneous, historical records this sits among, which names this directory without requiring anything of it
 
@@ -106,3 +106,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

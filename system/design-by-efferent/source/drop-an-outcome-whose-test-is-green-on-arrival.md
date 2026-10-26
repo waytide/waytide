@@ -33,7 +33,7 @@ Related:
 - the DBE-as-design-tool rule
 - the human-in-the-loop rule — exit on solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding
 - the one-outcome-at-a-time rule
-- the the-hinge-cycle-runs-from-actuation-to-naming rule — the implementation hinge
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the implementation hinge
 - the testing package's vocabulary — verified, not green
 
 ---
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:45 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

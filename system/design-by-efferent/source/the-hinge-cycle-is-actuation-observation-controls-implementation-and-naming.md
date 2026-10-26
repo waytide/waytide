@@ -1,4 +1,4 @@
-# The hinge cycle runs from actuation to naming
+# The hinge cycle is actuation, observation, controls, implementation, and naming
 
 Building the initial implementation of an outcome runs a cycle of **five hinges**. Each is handed to the human separately, and accepted before moving to the next:
 
@@ -132,6 +132,8 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 
 Until Sun Oct 25 2026 this rule was named hinge-cycle and titled "The initial-implementation hinge cycle: actuation → observation → controls → implementation → naming".
 
+Until Mon Oct 26 2026 this rule was named the-hinge-cycle-runs-from-actuation-to-naming and titled "The hinge cycle runs from actuation to naming".
+
 Related:
 
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
@@ -168,3 +170,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

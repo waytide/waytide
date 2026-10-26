@@ -135,7 +135,7 @@ Related:
 
 - the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the record's shape and the "none — no gate" form this is distinct from
 - the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — why attention is placed at the hinges
-- the the-hinge-cycle-runs-from-actuation-to-naming rule — the hinges that run either way
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the hinges that run either way
 - the never-ask-whether-to-start-a-task-test-first rule — which forbids asking about the method's substance, where this asks about its cadence
 - foundation's an-implementation-runs-on-a-branch-to-a-declared-end rule — the starts where the decision is put
 
@@ -173,3 +173,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:37 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT

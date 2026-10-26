@@ -30,7 +30,7 @@ Until Sun Oct 25 2026 this rule was named show-feature-test-output-after-impleme
 
 Related:
 
-- the the-hinge-cycle-runs-from-actuation-to-naming rule
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - the human-in-the-loop rule
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the one-outcome-at-a-time rule
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
