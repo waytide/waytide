@@ -1,4 +1,4 @@
-# Never ask whether to start a task test-first
+# Test-first is the default, so never ask whether to start a task that way
 
 Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?", or otherwise put the test-first decision to the human. There is nothing to deliberate at that point. The answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
 

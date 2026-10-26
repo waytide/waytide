@@ -1,4 +1,4 @@
-# Never ask whether to start a task test-first
+# Test-first is the default, so never ask whether to start a task that way
 
 Test-first is the standing default for starting any task. Do not ask "shall I start it test-first?", or otherwise put the test-first decision to the human. There is nothing to deliberate at that point. The answer is always yes unless told otherwise. If the human wants a task started some other way, they will give a different instruction.
 
@@ -39,6 +39,8 @@ A question with a genuinely situational answer is a decision rather than a settl
 
 Until Sun Oct 25 2026 this rule was named never-ask-to-start-test-first and titled "Never ask whether to start a task test-first — test-first is the default".
 
+Until Mon Oct 26 2026 this rule was named never-ask-whether-to-start-a-task-test-first and titled "Never ask whether to start a task test-first".
+
 Related:
 
 - the human-in-the-loop rule
@@ -65,3 +67,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:38:25 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
