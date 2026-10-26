@@ -29,7 +29,7 @@ Planning it in the repository the content is leaving puts the plan where the con
 10. Its order matters because content is unavailable or duplicated in between.
 11. The plan is not finished when this repository's part is done.
 12. A migration may realize a settled item, or be mechanical enough to need none.
-13. A migration record is one document, not entries that accrue like the running records under `logs/`.
+13. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
 14. Revise the record while the migration runs.
 15. Write it before moving the content.
 16. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
@@ -49,12 +49,14 @@ Until 2026-10-25 the Related entry for the logs-directory rule said a migration 
 
 Until Sun Oct 25 2026 this rule was named migration-convention and titled "`waytide/local/migration/` — execution plans for transitions of content between repository boundaries".
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the project's planning records — a migration sequences work that crosses *out of* this repository, where those sequence work within it, and a migration may realize a settled item or be mechanical enough to need none
 - the file-names rule — the filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule
-- the the-logs-directory-groups-the-running-records rule — the running records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs
+- the the-logs-directory-groups-the-running-records rule — the contemporaneous, historical records, which a migration record is not: it is one document rather than entries that accrue, it is revised while the migration runs, and it is written ahead of the move to be executed, then records what happened against the plan as the move runs
 
 ---
 
@@ -76,3 +78,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:36:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:19 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:25 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

@@ -6,7 +6,7 @@ When the user asks for a **status report** (or "project status"), produce a repo
 
 1. **Task table** — the tasks those records carry, as a table: number, task, status (done / next / pending), and a terse note. Mark the next task. Include any out-of-sequence extras already built.
 2. **Waiting work table** — the items carrying a `**Waits for:**` line: name, date, what it waits for, one-line gist. These are off the task line until the wait ends. Order them by their `**Priority:**` rank where they carry one. **A hidden record is not listed here** — see below.
-3. **Waytide-directory orientation** — a basic map of `waytide/`: `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`) and `waytide/local/rules/` holds the project's own local rules — each binding, each read at session start. Alongside `rules/` under `waytide/local/`, the running records under `logs/` (`log/`, `loops/`, `work-sessions/`), and the work-artifact directories `items/`, `implementations/`, and `migration/`. How to work with it: rules are enforceable conventions, and the log is title-only ISO-8601-UTC decision entries. A rule typically pairs with a log entry. An item holds the task checklist where it sequences work, and a `**Waits for:**` line marks work that is not yet actionable.
+3. **Waytide-directory orientation** — a basic map of `waytide/`: `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`) and `waytide/local/rules/` holds the project's own local rules — each binding, each read at session start. Alongside `rules/` under `waytide/local/`, the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), and the work-artifact directories `items/`, `implementations/`, and `migration/`. How to work with it: rules are enforceable conventions, and the log is title-only ISO-8601-UTC decision entries. A rule typically pairs with a log entry. An item holds the task checklist where it sequences work, and a `**Waits for:**` line marks work that is not yet actionable.
 4. **Recent flows of work** — a brief of the recent direction, drawn from the latest log/commit entries (a few lines, not an exhaustive list).
 5. **Test suite** — **convention-aware of the testing package.** If the project has adopted the testing conventions, run the suite and report the count and pass/fail line. Report the suite's **context tree two levels deep, rendered hierarchically**. Each distinct **top-level context** is a tree root, with its distinct **second-level contexts** indented as its branches. Use an indented tree, such as a fenced block with `├─`/`└─` branches. Stop at two levels — do not descend into per-assertion contexts. If the project has **not** adopted the testing conventions, degrade this section. Report whatever suite the project has, with its count and pass/fail, or note that there is none.
 
@@ -56,7 +56,7 @@ Keep each part tight. Read current state before printing — do not report stale
 12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
 13. The map shows that `waytide/local/rules/` holds the project's own local rules.
 14. The map states that both are binding and both are read at session start.
-15. The map shows the running records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
+15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
 16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`.
 17. The orientation says how to work with the directory. Rules are enforceable conventions.
 18. The log is title-only ISO-8601-UTC decision entries.
@@ -115,6 +115,8 @@ Keep each part tight. Read current state before printing — do not report stale
 
 Until Sun Oct 25 2026 this rule was named status-report-format and titled ""Status report" prints a fixed whole-project report".
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 Related:
 
 - the the-items-directory-holds-one-file-per-item — the `Suspended` state a hidden record carries
@@ -155,3 +157,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT

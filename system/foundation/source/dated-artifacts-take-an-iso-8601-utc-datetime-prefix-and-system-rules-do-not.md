@@ -2,7 +2,7 @@
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
-- The **working-state** directories: the running records under `logs/` — the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
+- The **working-state** directories: the contemporaneous, historical records under `logs/` — the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
 - A consuming project's **own local rules** — the rules that project adds to its `waytide/local/rules/`. A local rule is a dated decision in that project's history.
 
 The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-separated, lower-case name and `.md`.
@@ -27,7 +27,7 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 ## What takes the prefix
 1. A dated artifact takes the datetime prefix. A dated artifact is something a project accrues over time, ordered by when it was made.
-2. The running records under `logs/` take it: the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/`.
+2. The contemporaneous, historical records under `logs/` take it: the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/`.
 3. The work-artifact directories `items/`, `implementations/`, and `migration/` take it.
 4. A consuming project's own local rules, the ones it adds to its `waytide/local/rules/`, take it. A local rule is a dated decision in that project's history.
 5. Prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime.
@@ -57,6 +57,8 @@ Until Sun Oct 25 2026 this rule was named file-names-use-iso8601-utc-prefix and 
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 1 PM PT
@@ -80,3 +82,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
