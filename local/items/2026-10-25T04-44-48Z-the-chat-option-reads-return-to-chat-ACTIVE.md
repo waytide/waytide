@@ -1,6 +1,6 @@
 # The chat option reads "Return to chat"
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **The selection prompt's option for leaving the prompt should read "Return to chat", not "Chat about this".** The option takes the engineer out of the selection and back to the conversation, and the new label says that. "Chat about this" names a topic, *this*, that the engineer may not mean to discuss. The engineer met it on 2026-10-24, when a prompt about which log entry to write offered it.
@@ -18,3 +18,4 @@ As the engineer first stated it: "Idea: Change the \"Chat about this\" option to
 ---
 
 Authored by Scott Bellware on Sat Oct 24 2026 at 9:44:48 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:33:53 PM PT
