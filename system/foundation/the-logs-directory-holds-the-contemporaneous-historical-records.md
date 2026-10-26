@@ -1,4 +1,4 @@
-# The logs directory groups the contemporaneous, historical records
+# The logs directory holds the contemporaneous, historical records
 
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 

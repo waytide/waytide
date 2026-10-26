@@ -343,7 +343,7 @@ migrate_work_sessions() {
 # Move a project's contemporaneous, historical records under waytide/local/logs/. The log, the loop
 # records, and the work session records sat directly under waytide/local/ until
 # 2026-08-18, beside the directories that state what is currently true. The
-# the-logs-directory-groups-the-running-records rule groups them, and a rule cannot move a project's own files.
+# the-logs-directory-holds-the-contemporaneous-historical-records rule groups them, and a rule cannot move a project's own files.
 #
 # This runs after migrate_work_sessions, so a project still holding the pre-2026-07-30
 # name reaches waytide/local/logs/work-sessions/ in two steps rather than needing a

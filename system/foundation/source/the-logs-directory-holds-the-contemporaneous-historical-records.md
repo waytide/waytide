@@ -1,4 +1,4 @@
-# The logs directory groups the contemporaneous, historical records
+# The logs directory holds the contemporaneous, historical records
 
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
@@ -67,6 +67,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
 
+Until Mon Oct 26 2026 this rule was named the-logs-directory-groups-the-running-records and titled "The logs directory groups the running records".
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title, the a-work-session-record-is-the-narrative-of-one-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
@@ -90,3 +92,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
