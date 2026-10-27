@@ -1,6 +1,6 @@
 # The phrase for a test of behavior that already exists
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **A literal phrase is wanted for a test that passes without any implementation being written, because the behavior it checks already exists.** It replaces "green-on-arrival", which is figurative. The phrase now in the rules, "passes when first run", is not right either, the engineer said on 2026-10-26. It stands in the a-test-of-behavior-that-already-exists-is-coverage-not-design rule and the "TDD designs, coverage prevents" rule until one of the options is chosen.
@@ -22,6 +22,8 @@
 
 **The chosen phrase goes in the testing vocabulary.** The engineer settled it on 2026-10-26. It is a testing term, so the vocabulary convention places it there, and the language package's six steps govern its reservation.
 
+**Settled on 2026-10-27: the phrase is *uncontested*.** The engineer chose it. It is reserved in the `testing` vocabulary as a technical adjective in ETE's engineering, design, process, and method category, with its explanation in the entry: the test passes without any implementation being written to meet it, because the behavior already exists. It replaces "passes when first run" in the coverage-not-design rule and the "TDD designs, coverage prevents" rule, each of which states the meaning where it first uses the word.
+
 ## History
 
 As the engineer first stated it: "Start recording options. Passes as first written"
@@ -36,3 +38,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:19:35 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:21:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:24:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:24:29 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:00:16 PM PT
