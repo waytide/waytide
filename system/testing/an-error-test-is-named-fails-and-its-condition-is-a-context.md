@@ -16,11 +16,11 @@ end
 
 Naming an error test for its behavior rather than a value comparison is fully consistent with the "Is"-naming rule. That rule reserves "Is" for value-equals. "Fails" is a plain outcome name, not an "Is" case.
 
-**Relation to the context rule:** an error test always takes an enclosing context, because the context carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail". So the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule, which warns of a context that holds only a test, never warns of a leading `When …` context.
+**Relation to the context rule:** an error test always takes an enclosing context, because the context carries the **condition**, which is real information. It is the only place the condition can live, since the test name is fixed as "Fails" or "Doesn't fail". So the a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule, which warns of a context that holds only a test, never warns of a leading `When …` context.
 
 **How to apply:** name any `assert_raises` test "Fails". Name the non-raising assertion "Doesn't fail". Put it inside a `context` named for the condition, the "when …".
 
 Related:
 
 - the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
-- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
+- the a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule

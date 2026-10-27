@@ -1,4 +1,4 @@
-# A test takes a context only when its outcome needs local instrumentation
+# A context block is used for a test block only when the test's outcome needs local instrumentation or local variables
 
 A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
@@ -93,6 +93,8 @@ Until 2026-10-24 the rule was a ban: a context that held only a test was not to 
 
 Until Sun Oct 25 2026 this rule was named context-only-for-local-instrumentation and titled "Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly, and warn of a context that holds only a test".
 
+Until Mon Oct 26 2026 this rule was named a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation and titled "A test takes a context only when its outcome needs local instrumentation".
+
 Related:
 
 - the a-test-block-holds-only-the-assertion rule
@@ -115,3 +117,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT

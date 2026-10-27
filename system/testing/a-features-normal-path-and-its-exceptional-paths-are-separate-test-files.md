@@ -19,6 +19,6 @@ Related:
 - the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — actuate once at the top
 - the a-single-case-feature-is-one-test-file-named-for-the-feature rule — when a folder is warranted and how files are named
 - the an-error-test-is-named-fails-and-its-condition-is-a-context rule — the condition context and the `Fails` name
-- the a-test-takes-a-context-only-when-its-outcome-needs-local-instrumentation rule
+- the a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule
 - the `language` package's vocabulary
 - where the **normal path** term and its exceptional-case counterpart are settled
