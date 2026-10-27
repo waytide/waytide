@@ -14,7 +14,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **An item always carries a suffix.** Absence stopped being a state for it on 2026-08-16, when **Active** was added — precisely because this rule moved the state into the filename, where a missing suffix and an oversight look the same. That asymmetry is deliberate: the record nothing reports is the one that must say so in its own name. **An observation's suffix is always `-STATED`**, since that is its one state.
 
-**The file's contents are unchanged.** The state is the `**State:**` line and nothing else, and the file still ends with its provenance footer. The suffix was appended to the contents until 2026-08-16, which put the same value in two places inside one artifact for no reader who was asking for it there.
+**The file's contents are unchanged.** The state is the `**State:**` line and nothing else, and the file still ends with its provenance footer. A suffix in the contents would put the same value in two places inside one artifact, for no reader who is asking for it there.
 
 ## Upper case, and the exception it takes
 
@@ -80,6 +80,8 @@ When the state changes, rename it again. When a reversible state word is taken b
 
 Until Sun Oct 25 2026 this rule was named a-record-ends-with-its-state-in-upper-case and titled "A record carrying a state line ends its filename with that state in upper case".
 
+Until 2026-08-16 the suffix was also appended to the file's contents.
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record whose state line is absent while the work is under way, and the words each kind takes
@@ -110,3 +112,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT

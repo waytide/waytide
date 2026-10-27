@@ -22,7 +22,7 @@
 
 **Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
-The grouping also gives a later contemporaneous, historical record somewhere obvious to go. `log` was the only log directory until 2026-08-18, and a second one had no place that named it as the same kind of thing.
+The grouping also gives a later contemporaneous, historical record somewhere obvious to go, in a place that names it as the same kind of thing as the others.
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
@@ -69,6 +69,8 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 
 Until Mon Oct 26 2026 this rule was named the-logs-directory-groups-the-running-records and titled "The logs directory groups the running records".
 
+Until 2026-08-18 `log/` was the only log directory.
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title, the the-work-sessions-directory-holds-one-record-per-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
@@ -95,3 +97,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:16:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT

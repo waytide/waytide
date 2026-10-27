@@ -10,7 +10,7 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 **This departs from the foundation package's a-time-value-carries-minutes-and-seconds rule**, which specifies a new datetime format to seconds. That rule answers a running history inside **one file**, whose entries collide at a coarse resolution. The later entry then goes unwritten rather than looking like a duplicate of the one above it. A journal is one file per entry, so that collision cannot arise. What the coarser stamp costs is two entries written in the same minute, which sort against each other by name rather than by moment.
 
-**The form carries no trailing `Z`.** In ISO 8601 that character designates UTC, and this stamp is local time. It was kept until 2026-08-14, on the reasoning that it is a literal token of the form rather than a claim about a zone. A reader meets the filename and not the rule that says so, so every entry asserted something false and the correction sat somewhere they would never look. The foundation package's file-names rule keeps its `Z`, because its stamps are UTC and the character is true there.
+**The form carries no trailing `Z`.** In ISO 8601 that character designates UTC, and this stamp is local time. Keeping it as a literal token of the form, rather than as a claim about a zone, would not help. A reader meets the filename and not the rule that says so, so every entry would assert something false, and the correction would sit somewhere they never look. The foundation package's file-names rule keeps its `Z`, because its stamps are UTC and the character is true there.
 
 **The local time reaches the journal entries alone.** The agent's own records keep UTC, as the foundation package's file-names rule requires. Do not conflate the two.
 
@@ -110,6 +110,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule was named journal-entries-live-in-the-writers-journal-directory-one-file-per-entry and titled "Journal entries live in the writer's journal directory, one file per entry".
 
+Until 2026-08-14 the stamp kept a trailing `Z`, on the reasoning that it was a literal token of the form.
+
 Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved
@@ -148,3 +150,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT

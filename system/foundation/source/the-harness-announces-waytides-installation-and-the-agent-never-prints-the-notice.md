@@ -52,7 +52,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
   Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the a-status-report-prints-a-fixed-whole-project-report rule).
 
-  **The Waytide segment trails after a double colon.** It was a hyphen until 2026-07-28. A hyphen also joins words. So it read as punctuation inside the sentence of segments. It did not read as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
+  **The Waytide segment trails after a double colon.** A hyphen would also join words. So it would read as punctuation inside the sentence of segments, not as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
 
   The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other. That is what makes the trailing segment read as an annotation on the line rather than another segment in it.
 
@@ -84,7 +84,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   It falls **after** the open-experiment and open-feature lines, not between them and the install line. Those lines are part of the report. Breaking there would separate the report from itself and leave the ask still joined to half of it.
 
-  **A second blank line stands the command sentence on its own line.** The two closing sentences were one line until 2026-07-30. So the command ended it but was still the tail of a paragraph. Reaching the words to be typed meant reading the caveat ahead of them first.
+  **A second blank line stands the command sentence on its own line.** On one line with the caveat, the command would end the line but still be the tail of a paragraph, and reaching the words to be typed would mean reading the caveat ahead of them first.
 
   On its own line the command is the whole of the notice's last line. It is read and copied without reading past anything, which is what putting it last was for. It costs a line of height, and buys the one thing the notice asks for standing where nothing else competes with it.
 
@@ -94,17 +94,17 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every compiled rule in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
 
-  **The command sentence comes last.** Until 2026-07-28 the two closing sentences ran the other way — the command, then the caveat that loading takes a moment. So the close ended on its cost, and the words to be typed sat in the middle of it. Swapping them puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
+  **The command sentence comes last.** In the other order — the command, then the caveat that loading takes a moment — the close would end on its cost, with the words to be typed in the middle of it. This order puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
 
-  The order of the two is the whole of that change. The two sentences are still present, and the first sentence still leads. Standing the command on its own line came later, and finishes the same work. The order put it last, and the break leaves nothing beside it.
+  The order of the two does this. Standing the command on its own line finishes the same work. The order puts it last, and the break leaves nothing beside it.
 
-  **The notice is plain text, not markdown.** The command was written in markdown bold until 2026-07-28, on the assumption that the harness renders `systemMessage` as markdown. It does not. The asterisks reached the engineer literally. So the markup that was to put the typed words where the eye lands drew the eye to punctuation instead.
+  **The notice is plain text, not markdown.** The harness does not render `systemMessage` as markdown, so asterisks reach the engineer literally. Markup meant to put the typed words where the eye lands would draw the eye to punctuation instead.
 
   Emphasis is not available on this channel. The status line's bold repository name is a terminal escape sequence, which is a different mechanism and unaffected. And the line does not need it: the command already ends the sentence that points at it. Nothing else in the notice takes markup either, for the same reason.
 
-  **What that gives up is attributability.** Until 2026-07-28 the line asked for a **foil request**. That is a message with no content of its own. Its only purpose was to give the agent an occasion to act on an instruction already in its context. The word was `begin`, and it was contentless on purpose.
+  **What that gives up is attributability.** The alternative is a **foil request**: a message with no content of its own, such as `begin`, whose only purpose is to give the agent an occasion to act on an instruction already in its context. It is contentless on purpose.
 
-  The agent never sees this notice, since `systemMessage` renders for the engineer alone. So `begin` was the entire content reaching the agent, and the instruction to read came from `hookSpecificOutput.additionalContext`. A read that followed could therefore only have come from the hook. An agent that never received the instruction got an opaque word and had to ask what it meant, which is a loud failure.
+  The agent never sees this notice, since `systemMessage` renders for the engineer alone. So `begin` would be the entire content reaching the agent, and the instruction to read would come from `hookSpecificOutput.additionalContext`. A read that followed could only have come from the hook. An agent that never received the instruction would get an opaque word and have to ask what it meant, which is a loud failure.
 
   A named command collapses that: the read now happens whether or not the hook's channel reached the agent, and no session distinguishes the two. The trade is deliberate: legibility to the engineer over observability of the mechanism. It means the hook's channel is no longer testable from ordinary use.
 
@@ -117,7 +117,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
   - wait for the engineer's request
   - print no package count
 
-  **The instruction names the project's own `local/rules/`, unconditionally.** It named only the installed packages until 2026-08-01. That made it **narrower than the rule it exists to get followed**. a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read disagreed. The hook was the one carrying less.
+  **The instruction names the project's own `local/rules/`, unconditionally.** Naming only the installed packages would make it **narrower than the rule it exists to get followed**. a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read would disagree, with the hook carrying less.
 
   It is the path this rule calls primary, the file route being the one it was written to stop depending on. A project's own rules are the half no package supplies and no refresh restores.
 
@@ -326,6 +326,8 @@ A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the a
 
 Until Sun Oct 25 2026 this rule was named announce-waytide-at-session-start and titled "The harness announces Waytide's installation. The agent never prints the notice".
 
+Until 2026-07-28 the Waytide segment trailed after a hyphen, the two closing sentences ran the command first and the caveat second, the command was written in markdown bold, and the notice asked for a foil request, the word `begin`, rather than a named command. Until 2026-07-30 the two closing sentences were one line. Until 2026-08-01 the read instruction named only the installed packages, and not the project's own `local/rules/`.
+
 Related:
 
 - the the-startup-display-prints-once-per-session — the startup display, which this notice does not carry and the agent does not print
@@ -407,3 +409,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT

@@ -8,7 +8,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 **It is a projection**, in the sense the foundation package's vocabulary gives that term. It reads the entries without destroying them, and it is regenerated rather than maintained. That term already settles what happens to a derived artifact somebody keeps: it goes stale the moment it is not updated.
 
-**A stored index was kept until 2026-08-14, and it was maintained by two directives.** One ordered-inserted a row when an entry was written. The other rebuilt the file from scratch, and it existed because the first could not see a rename, an edited title, or a deletion. A view that needs a repair directive is a view that drifts, and the entries are what a reader would then have to check it against.
+**A stored index would need two directives to maintain it.** One would insert a row in order when an entry is written. The other would rebuild the file from scratch, because the first cannot see a rename, an edited title, or a deletion. A view that needs a repair directive is a view that drifts, and the entries are what a reader would then have to check it against.
 
 **The entry files are the record, and reading them is cheap.** A journal directory is one small markdown file per entry. Nothing about listing them wants a cache.
 
@@ -39,6 +39,8 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 Until Sun Oct 25 2026 this rule was named timeline-view and titled "Timeline view: on request, list every journal entry chronologically, each row led by its datetime".
 
+Until 2026-08-14 a stored index of the journal was kept, maintained by two directives: one inserted a row as an entry was written, and one rebuilt the file.
+
 Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved
@@ -61,3 +63,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT

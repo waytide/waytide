@@ -26,7 +26,7 @@
 
 **Those rules push length up, and that tension is real.** Naming the software and then its new state costs words that a leading verb would not. It is accepted: the limit is a budget the subject is written within, not a licence to drop the subject and lead with a verb.
 
-**A prefix eats the budget, and the journal is the worked case.** Its commit message read `Diary entry: <subject> (Tue Jun 16 2026)` until 2026-08-18, when the package was still named `diary` — 13 characters of prefix and 17 of date, leaving 20 for what the entry was about. The date sat at the tail, where truncation takes it first, so it was carried at the subject's expense and no reader saw it. It is dropped, and the prefix is now `Journal:`, which costs 9. See the `journal` package's the-journal-is-the-record-the-writer-keeps.
+**A prefix eats the budget, and the journal is the worked case.** A prefix of 13 characters and a date of 17 leave 20 of the 50 for what an entry is about. A date at the tail is where truncation takes it first, so it is carried at the subject's expense and no reader sees it. The journal's prefix is `Journal:`, which costs 9, and its subject carries no date. See the `journal` package's the-journal-is-the-record-the-writer-keeps.
 
 ## The history is not rewritten
 

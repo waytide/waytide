@@ -31,7 +31,7 @@ The tail is always `waytide/user`; only the base directory varies:
 
 Tools agree on this **resolution rule**, not a raw path string.
 
-**`waytide` is the namespace because the file is Waytide's.** It sat under `identity/` until 2026-08-14, on the reasoning that the file holds identity and is reusable beyond one tool. That took a top-level name on every machine Waytide is installed on, for a file only Waytide reads. A tool outside Waytide has its own idea of what identity is and no reason to accept this one's. The namespace now says what the file belongs to, and `~/.config/waytide/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
+**`waytide` is the namespace because the file is Waytide's.** An `identity/` namespace, on the reasoning that the file holds identity and is reusable beyond one tool, would take a top-level name on every machine Waytide is installed on, for a file only Waytide reads. A tool outside Waytide has its own idea of what identity is and no reason to accept this one's. The namespace says what the file belongs to, and `~/.config/waytide/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
 
 ## The user file's format
 
@@ -221,6 +221,8 @@ Until Sun Oct 25 2026 this rule was named identity-resolution-contract and title
 
 Until Mon Oct 26 2026 this rule was named the-writers-identity-resolves-through-a-fixed-override-chain and titled "The writer's identity resolves through a fixed override chain".
 
+Until 2026-08-14 the user file sat under `identity/`.
+
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps — the per-writer directories `writers.toml` sits beside
@@ -244,3 +246,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT

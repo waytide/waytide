@@ -28,7 +28,7 @@
 
 **An item's content is point-in-time.** What an item says was true when it was written — the work that was in progress, the rules as they stood, the artifacts that existed. **A reference inside an item that time has overtaken is not a defect and is not chased.** An item waiting on an experiment does not stop being correct when that experiment is superseded, because it records what it was waiting for.
 
-**Nothing derives from either line.** They were a queue's mechanism until 2026-08-25 and are now an item's own content, read by whoever reads the item.
+**Nothing derives from either line.** They are an item's own content, read by whoever reads the item.
 
 ## The shape
 
@@ -167,6 +167,8 @@ Until Sun Oct 25 2026 this rule was named items-convention and titled "`waytide/
 
 Until Mon Oct 26 2026 this rule was named the-items-directory-holds-the-projects-items-one-file-per-item and titled "The items directory holds the project's items, one file per item".
 
+Until 2026-08-25 the `**Waits for:**` and `**Priority:**` lines were the deferred queue's mechanism.
+
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
@@ -210,3 +212,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT

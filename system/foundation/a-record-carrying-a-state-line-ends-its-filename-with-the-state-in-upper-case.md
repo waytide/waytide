@@ -14,7 +14,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **An item always carries a suffix.** Absence stopped being a state for it on 2026-08-16, when **Active** was added — precisely because this rule moved the state into the filename, where a missing suffix and an oversight look the same. That asymmetry is deliberate: the record nothing reports is the one that must say so in its own name. **An observation's suffix is always `-STATED`**, since that is its one state.
 
-**The file's contents are unchanged.** The state is the `**State:**` line and nothing else, and the file still ends with its provenance footer. The suffix was appended to the contents until 2026-08-16, which put the same value in two places inside one artifact for no reader who was asking for it there.
+**The file's contents are unchanged.** The state is the `**State:**` line and nothing else, and the file still ends with its provenance footer. A suffix in the contents would put the same value in two places inside one artifact, for no reader who is asking for it there.
 
 ## Upper case, and the exception it takes
 

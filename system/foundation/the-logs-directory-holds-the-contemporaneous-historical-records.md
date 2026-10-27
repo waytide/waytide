@@ -22,7 +22,7 @@
 
 **Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
-The grouping also gives a later contemporaneous, historical record somewhere obvious to go. `log` was the only log directory until 2026-08-18, and a second one had no place that named it as the same kind of thing.
+The grouping also gives a later contemporaneous, historical record somewhere obvious to go, in a place that names it as the same kind of thing as the others.
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 

@@ -28,7 +28,7 @@
 
 **An item's content is point-in-time.** What an item says was true when it was written — the work that was in progress, the rules as they stood, the artifacts that existed. **A reference inside an item that time has overtaken is not a defect and is not chased.** An item waiting on an experiment does not stop being correct when that experiment is superseded, because it records what it was waiting for.
 
-**Nothing derives from either line.** They were a queue's mechanism until 2026-08-25 and are now an item's own content, read by whoever reads the item.
+**Nothing derives from either line.** They are an item's own content, read by whoever reads the item.
 
 ## The shape
 
