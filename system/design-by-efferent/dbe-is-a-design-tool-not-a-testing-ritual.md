@@ -4,7 +4,7 @@ Design By Efferent is a design tool. Do not perform red-green-refactor as choreo
 
 A test written before its implementation exists is trivially going to fail. That failure teaches nothing — do not stop to observe it, and do not treat the red bar as a checkpoint. The point of the test was never the failure.
 
-**What this rejects is the *unchosen* cycle, performed because the form calls for it.** An engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt. See the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule. That is not choreography — the loop stopped, a person weighed two real alternatives, and the decision was theirs. Choreography is the cycle nobody decided to run.
+**What this rejects is the *unchosen* cycle, performed because the form calls for it.** An engineer may **choose** the red/green/refactor cycle at the implementation hinge, for a particular unit. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt. See the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule. That is not choreography — the loop stopped, a person weighed two real alternatives, and the decision was theirs. Choreography is the cycle nobody decided to run.
 
 The point is the cradle. Approach every unit from the efferent side first — the test is the first efferent reference. Authoring the actuation before the implementation exists forces the unit's interface to be designed from the use site. What the efferent view discovers is the unit's **solubility**: how readily it dissolves into the reader's understanding. The target is the greatest simplicity possible — maximum solubility, minimal necessary complexity, found rather than presumed.
 
@@ -22,4 +22,4 @@ Related:
 - the human-in-the-loop rule
 - the first-turn rule
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
-- the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — the chosen cycle this does not reject
+- the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule — the chosen cycle this does not reject

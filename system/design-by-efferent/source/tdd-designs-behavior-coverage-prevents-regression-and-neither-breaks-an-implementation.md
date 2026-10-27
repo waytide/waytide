@@ -37,7 +37,7 @@ Until Mon Oct 26 2026 this rule called a test that passes when first run "green-
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
-- the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
+- the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
 - the a-test-of-behavior-that-already-exists-is-coverage-not-design rule
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
@@ -60,3 +60,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT

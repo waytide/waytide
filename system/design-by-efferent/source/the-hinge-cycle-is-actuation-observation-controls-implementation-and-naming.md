@@ -5,7 +5,7 @@ Building the initial implementation of an outcome runs a cycle of **five hinges*
 1. **Actuation** — the invocation of the unit under test (its efferent shape: name, arguments, arity, return).
 2. **Observation** — what is asserted about the result (value-equality vs. identity vs. a raised error, and what the explaining variable is compared against). **What the test reads is the side effect the actuation produces.** A returned value is one such effect, and it is a **case rather than the rule**. An actuation that returns nothing still produces an effect somewhere. An actuation that returns a value frequently produces others beside it. So the hinge asks **which effect the test reads, and how it reads it**, rather than assuming the return.
 3. **Controls** — the example constants the test is built from (which control form, nested vs. top-level, what inner constants, Array vs. Hash seeding, literals vs. controls).
-4. **Implementation** — the code that satisfies the test. This hinge always has two candidates: the working implementation written directly, or the **red/green/refactor cycle** (see the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule).
+4. **Implementation** — the code that satisfies the test. This hinge always has two candidates: the working implementation written directly, or the **red/green/refactor cycle** (see the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule).
 5. **Naming** — the outcome `context` that names what the observation establishes (the test's name).
 
 The first three concern the test (turn one). The fourth is the implementation (turn two). Only after the actuation, observation, and controls are accepted does the AI assemble and show the turn-one test file (per the first-turn rule). Then it proposes the implementation as the fourth hinge. Once that is accepted it writes it, runs the suite, and shows the test with its result.
@@ -71,7 +71,7 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 7. The observation hinge asks which effect the test reads, and how it reads it. It does not assume the return.
 8. **Controls** are the example constants the test is built from. That covers control form, nested vs. top-level, inner constants, Array vs. Hash seeding, and literals vs. controls.
 9. **Implementation** is the code that satisfies the test.
-10. The implementation hinge always has two candidates. One is the working implementation written directly. The other is the red/green/refactor cycle (see the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule).
+10. The implementation hinge always has two candidates. One is the working implementation written directly. The other is the red/green/refactor cycle (see the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule).
 11. **Naming** is the outcome `context` that names what the observation establishes (the test's name).
 12. The first three hinges concern the test (turn one). The fourth is the implementation (turn two).
 13. Assemble and show the turn-one test file only after the actuation, observation, and controls are accepted, per the first-turn rule.
@@ -171,3 +171,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT

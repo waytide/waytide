@@ -16,7 +16,7 @@ Tests serve two different purposes in two different processes, and conflating th
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage
-- the the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle rule — which offers a *contained* red as a candidate while designing new behavior
+- the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule — which offers a *contained* red as a candidate while designing new behavior
 - the DBE-as-design-tool rule
 - the a-test-of-behavior-that-already-exists-is-coverage-not-design rule
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule

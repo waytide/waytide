@@ -1,4 +1,4 @@
-# The implementation hinge offers the working implementation or the red-green-refactor cycle
+# At the implementation hinge, the engineer chooses a direct implementation or red-green-refactor
 
 At the **implementation hinge** — the fourth of the five — the agent puts two candidates to the engineer:
 
@@ -89,6 +89,8 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 Until Sun Oct 25 2026 this rule was named the-implementation-hinge-offers-the-red-green-refactor-cycle and titled "The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle".
 
+Until Mon Oct 26 2026 this rule was named the-implementation-hinge-offers-the-working-implementation-or-the-red-green-refactor-cycle and titled "The implementation hinge offers the working implementation or the red-green-refactor cycle".
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the five hinges, of which this is the fourth
@@ -119,3 +121,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
