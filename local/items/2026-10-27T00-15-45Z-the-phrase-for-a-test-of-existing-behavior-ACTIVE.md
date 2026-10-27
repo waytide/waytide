@@ -20,6 +20,8 @@
 
 **"Uncontested" needs its explanation stated wherever it is used.** The engineer took it from a no-bid contract, which is awarded without a competing bid. A draft of the explanation: *an uncontested test passes without any implementation being written to meet it, because the behavior it checks already exists. In DBE, a test is contested when it fails until code is written to satisfy it.* The word is figurative, so it would be reserved with that meaning rather than used unexplained.
 
+**The chosen phrase goes in the testing vocabulary.** The engineer settled it on 2026-10-26. It is a testing term, so the vocabulary convention places it there, and the language package's six steps govern its reservation.
+
 ## History
 
 As the engineer first stated it: "Start recording options. Passes as first written"
@@ -33,3 +35,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:19:35 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:21:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:24:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:24:29 PM PT
