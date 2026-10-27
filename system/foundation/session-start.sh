@@ -129,9 +129,12 @@ report_open() {
         ;;
     esac
 
+    # The name is the filename without its datetime prefix and without its state suffix,
+    # which an open record carries as -ACTIVE or -SUSPENDED.
     name=$(
       basename "$record" .md |
-        sed 's|^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}Z-||'
+        sed -e 's|^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}Z-||' \
+          -e 's|-[A-Z][A-Z]*$||'
     )
 
     open_count=$((open_count + 1))
