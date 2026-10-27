@@ -125,12 +125,12 @@ A word removed from use with nothing in its place. **This is not a substitution.
 
 Related:
 
-- the DBE-as-design-tool
-- first-turn
-- human-in-the-loop
-- hinge-cycle
-- "TDD designs
-- coverage prevents" rules. The `language` package's solubility rule and its name-literally standard
+- the dbe-as-design-tool rule
+- the dbe-first-turn-test-file rule
+- the dbe-human-in-the-loop rule
+- the hinge-cycle rule
+- the tdd-designs-coverage-prevents-never-break-implementation rule
+- the `language` package's solubility rule and its name-literally-not-by-analogy rule
 
 ---
 
