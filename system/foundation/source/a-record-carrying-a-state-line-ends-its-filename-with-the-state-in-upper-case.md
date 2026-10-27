@@ -28,7 +28,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
 
-**A renamed file breaks a path recorded elsewhere.** That is the cost the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory names when it says to reference a rule by its name rather than its path. Here the mitigation is the same as everywhere: historical records are left as written and a reader who follows an unresolvable path uses git, and **live** artifacts that cite the record are reconciled at the rename.
+**A reference to a record omits its state suffix, so a state change breaks no reference.** The reference keeps the rest of the filename, the ISO-8601-UTC prefix and the name, as in `2026-10-24T20-42-50Z-a-rules-name-is-soluble`. That part does not change with the state, so a reference written before a state change still names the record after it. A reader finds the file by that prefix and name. The reference is not a path that opens directly, which is the cost of its staying true.
 
 **Why:** a record's state is the thing most often wanted without reading the record, and a directory listing is where it is asked for. `local/implementations/` answers *which of these concluded* at a glance, in a file tree, in a shell, and in any editor's sidebar — none of which opens a file to show a line near its top.
 
@@ -36,7 +36,7 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 **How to apply:** when a record reaches a state word, write the `**State:**` line and rename the file so its name ends with that word in upper case, after a dash.
 
-When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Reconcile the live artifacts that cite the old name, and leave historical records as written. Give no suffix to an implementation record carrying no state line, and add none to any file's contents.
+When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Write a reference to such a record without its state suffix or its extension, so no reference needs reconciling at a rename. Leave historical records as written. Give no suffix to an implementation record carrying no state line, and add none to any file's contents.
 
 ## Compressed
 
@@ -72,7 +72,7 @@ When the state changes, rename it again. When a reversible state word is taken b
 3. A state change renames the file, using `git mv`.
 4. When a reversible word is taken back, rename the file to the state the record returns to, **ACTIVE** or **OPEN**.
 5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the the-items-directory-holds-one-file-per-item sets out.
-6. At a rename, reconcile the live artifacts that cite the old name.
+6. A reference to a record omits its state suffix and extension, and keeps the prefix and name. A rename then breaks no reference.
 7. Leave historical records as written. A reader following an unresolvable path uses git.
 8. **Why:** a record's state is most often wanted from a directory listing, without opening the record. The mutating filename is the cost, so the suffix is confined to records carrying a state line.
 
@@ -82,12 +82,14 @@ Until Sun Oct 25 2026 this rule was named a-record-ends-with-its-state-in-upper-
 
 Until 2026-08-16 the suffix was also appended to the file's contents.
 
+Until Tue Oct 27 2026 live artifacts that cited a record by its full filename were reconciled at each rename. The engineer settled that a reference omits the state suffix and keeps the rest of the filename, so a state change breaks no reference.
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record whose state line is absent while the work is under way, and the words each kind takes
 - the the-items-directory-holds-one-file-per-item — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — referencing by name rather than path, and the reconciliation a rename obliges
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — referencing by name rather than path, the same remedy for a rule that a suffix-free reference is for a record
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes
 
 ---
@@ -113,3 +115,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:35:25 AM PT
