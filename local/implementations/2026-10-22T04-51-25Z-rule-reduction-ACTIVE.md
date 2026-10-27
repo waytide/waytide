@@ -1643,6 +1643,12 @@ The figures are characters.
 
 **Its limits:** answers rather than actions, the same model as the agent, scenarios the agent wrote, and one request per session rather than a session's run of them.
 
+### The session comparison — a change to the method, before any answer is scored, 2026-10-27
+
+**The first 19 answers are discarded, and every pairing runs again.** Agents joined the rule files into scratch files with ordinary names in a shared scratchpad, and agents running at the same time overwrote one another's. Several agents reported reading part of the wrong read. The two reads themselves were checked afterward against their sources and are intact.
+
+**Each read is now one file, `RULES.md`**, holding its rule files in the read's order, each headed by its path: 521,465 bytes for master and 424,541 for the compressed read. An agent reads it with the Read tool alone, in ranges of 300 lines, and writes nothing but its answer. Nothing else in the method changes.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4814,3 +4820,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:24:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:28:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:57:22 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 4:00:48 PM PT
