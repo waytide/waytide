@@ -35,7 +35,7 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule — the path the contexts mirror
-- the a-single-case-feature-is-one-test-file-named-for-the-feature rule — the file named for the feature rather than for a case
+- the a-feature-with-one-case-has-one-test-file-named-for-the-feature rule — the file named for the feature rather than for a case
 - the a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule — when a context is warranted at all
 - the a-predicate-methods-test-context-is-its-name-followed-by-the-word-predicate rule — a deeper context naming an implementation element
 - the `language` package's name-concepts-literally-not-by-analogy-code-or-jargon rule and its solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule

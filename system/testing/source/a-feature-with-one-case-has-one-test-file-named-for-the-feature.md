@@ -1,4 +1,4 @@
-# A single-case feature is one test file named for the feature
+# A feature with one case has one test file, named for the feature
 
 - **Solubility:** 88
 - **Original rank:** 104 of 106
@@ -31,6 +31,8 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 Until Sun Oct 25 2026 this rule was named single-case-test-named-for-feature and titled "A single-case feature is one test file named for the feature, not a folder of case files".
 
+Until Mon Oct 26 2026 this rule was named a-single-case-feature-is-one-test-file-named-for-the-feature and titled "A single-case feature is one test file named for the feature".
+
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule
@@ -50,3 +52,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
