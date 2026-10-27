@@ -1484,6 +1484,54 @@ The engineer reviews this table and sends back any title to change.
 
 **The phase branch is renamed to match**, from `experiment/worktree/rule-reduction.flattening` to `experiment/worktree/rule-reduction.compression`, with `git branch -m` in the worktree. The worktree's directory is named for the experiment, not the phase, so it is unchanged. The Phases list carries the new name. The sections above that name the phase flattening are left as written, since each records what was true when it was written.
 
+### Phase 1 — the rule names, the engineer's review, 2026-10-26
+
+**The engineer reviewed the titles the agent had flagged, and 29 of the 97 changed.** The review took the titles one at a time, in groups: the directory-path titles reworded as statements, the titles reworded to fit a name, the titles that dropped a detail or a clause, and the longest names. Each change is a rename on the phase branch, one commit each, with its citations updated and the tests passing. Each rule's History records its former name and title. The rest of the 97 stand as the first pass left them, including #33, #49, #60, #9, and #7, which the engineer kept.
+
+| # | title after the first pass | title after the review |
+|---|---|---|
+| 5 | A printed list of records is formatted as a table | A printed list of records is formatted as a table or as a list of rows |
+| 11 | The hinge cycle runs from actuation to naming | The hinge cycle is actuation, observation, controls, implementation, and naming |
+| 13 | Never ask whether to start a task test-first | Test-first is the default, so never ask whether to start a task that way |
+| 14 | Drop an outcome whose test is green on arrival | A test of behavior that already exists is coverage, not design |
+| 15 | Advance one outcome at a time, stop at every gate in attended work, and name via options | Advance one outcome at a time, and stop at every gate in attended work |
+| 19 | The implementation hinge offers the working implementation or the red-green-refactor cycle | At the implementation hinge, the engineer chooses a direct implementation or red-green-refactor |
+| 24 | An item takes a log entry on creation, on each settled resolution, and on a change of state | A log entry is written for an item on creation, on each settled resolution, and on a change of state |
+| 27 | The log holds one file per decision, with a one-line title | The log holds one file per entry, with a one-line title |
+| 29 | Dated artifacts take an ISO 8601 UTC datetime prefix, and system rules do not | Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not |
+| 31 | An implementation record takes a log entry, and the last one depends on the merge | A log entry is written for an implementation record, and the concluding entry depends on whether the work merged |
+| 32 | The implementations directory records each implementation's lifecycle | The implementations directory holds one record per implementation |
+| 34 | The items directory holds the project's items, one file per item | The items directory holds one file per item |
+| 35 | The logs directory groups the running records | The logs directory holds the contemporaneous, historical records |
+| 36 | The migration directory holds the plans for moving content across a repository boundary | The migration directory holds the plans for moving or restructuring content |
+| 41 | A project's durable context lives in its committed artifacts | A project's durable context is recorded in its committed artifacts, never in an agent memory store |
+| 44 | A date in a record's title takes the day, the date, and the 24-hour time | A date in a record's title is written as the day, the date, and the 24-hour time |
+| 45 | Binding rules live in the installed packages and the project's own rules directory | A project's binding rules are recorded in its packages and its local rules directory |
+| 46 | A rule's purpose is not confined to its category | Rules may establish a mindset rather than a mechanic |
+| 50 | A work session record is the narrative of one work session | The work-sessions directory holds one record per work session |
+| 54 | A commit carries no Claude co-author trailer | Claude is not credited as a co-author of a commit |
+| 58 | A journal entry carries a human-readable datetime line under its title | A journal entry has a human-readable datetime line under its title |
+| 59 | The writer's identity resolves through a fixed override chain | The writer's username is read from the environment, then the project, then the user's config file |
+| 61 | Journal entries live in the writer's journal directory, one file per entry | Journal entries are recorded in the writer's journal directory, one file per entry |
+| 79 | A test takes a context only when its outcome needs local instrumentation | A context block is used for a test block only when the test's outcome needs local instrumentation or local variables |
+| 80 | A control-built test value takes the control_ prefix | A control-built test value is prefixed with control_ |
+| 86 | A precondition names a test's deciding factors and reads inline | A precondition documents the factors that decide a test's outcome, and its predicate reads inline |
+| 87 | A predicate method's test context is named for the predicate | A predicate method's test context is its name followed by the word "Predicate" |
+| 88 | A single-case feature is one test file named for the feature | A feature with one case has one test file, named for the feature |
+| 90 | A test block holds only the assertion | A test block holds only the assertion, and its values are declared in the enclosing context |
+
+**The review set a standard for wording as well as titles.** "Takes" and "carries", in the sense of what a thing has or is given, read as slang, and every title using them was reworded. "Lives in" became "is recorded in" for the same reason. A rule's title says what the rule says, and the name derives from it, so where a rule's body widened, its title widened with it, as for #5 and #36.
+
+**The review changed live rules on `master` as well, each first there, with its History and a log entry tagged `[decision]`, and then on the phase branch:**
+
+- **The log is called the log, not the decision log**, in 23 live files, since its entries record more than decisions. The work item that asked for it is Done.
+- **The records under `logs/` are the contemporaneous, historical records**, not the running records, in 10 live files.
+- **A printed list of records is a table where every field is short, and a list of rows where a field runs to a sentence**, and a list is called a table only where it is formatted as columns.
+- **A migration is a structural change**, which includes restructuring content within one repository as well as moving it across repositories.
+- **A test of behavior that already exists is coverage, not design.** Coverage has value and is a concern of testing rather than of DBE, and the agent may suggest an increase to it. "Green-on-arrival" is replaced by the literal "passes when first run" until a phrase is chosen. The `master` item *The phrase for a test of behavior that already exists* collects the options.
+
+**The first pass carried a defect, found and fixed during the review.** Renaming the solubility rule replaced the word *solubility* itself, wherever it stood alone in a live file, with the rule's new name: 112 occurrences in 34 files. The word is restored, and only the nine citations of the rule keep the name. The rename helper now updates a single-word name only where it is cited as a rule.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4645,3 +4693,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:28:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:00:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:07:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:49:41 PM PT
