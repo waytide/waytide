@@ -1,6 +1,6 @@
 # The phrase for a test of behavior that already exists
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **A literal phrase is wanted for a test that passes without any implementation being written, because the behavior it checks already exists.** It replaces "green-on-arrival", which is figurative. The phrase now in the rules, "passes when first run", is not right either, the engineer said on 2026-10-26. It stands in the a-test-of-behavior-that-already-exists-is-coverage-not-design rule and the "TDD designs, coverage prevents" rule until one of the options is chosen.
@@ -32,3 +32,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:19:35 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:21:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:24:08 PM PT
