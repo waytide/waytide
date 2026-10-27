@@ -1532,6 +1532,12 @@ The engineer reviews this table and sends back any title to change.
 
 **The first pass carried a defect, found and fixed during the review.** Renaming the solubility rule replaced the word *solubility* itself, wherever it stood alone in a live file, with the rule's new name: 112 occurrences in 34 files. The word is restored, and only the nine citations of the rule keep the name. The rename helper now updates a single-word name only where it is cited as a rule.
 
+### The re-check of compressed texts changed since their check — method, committed before it runs, 2026-10-27
+
+**At the engineer's direction, 35 rules' compressed texts are checked again**, because each changed after its directive check. Eleven were rewritten, or had points added or removed, by the changes of 2026-10-26 and 2026-10-27. Twenty-four had a point or two changed by a review fix after their batch's re-check. Texts changed only by a term swap — *the log*, *contemporaneous, historical records*, the restored *solubility* — are left out, as are the rules compressed one at a time before the batch method, which the engineer reviewed in attended work.
+
+**The method is the batches' check, run fresh.** A fresh lister lists each rule's directives from its current source, with the Compressed section and the footer left out. A fresh checker judges each directive kept, less precise, or lost against the compressed text, which is the title, the numbered body, and the Related list. A loss or a material loss of precision is repaired with the smallest clause, in source and compressed text alike, and a repaired rule is checked again.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4694,3 +4700,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:00:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:07:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:49:41 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:54:42 PM PT
