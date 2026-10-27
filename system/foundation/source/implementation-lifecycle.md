@@ -61,6 +61,8 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
+**An `[experiment]` that will merge brings what master needs to conform to it.** Before it merges, its branch holds every rule its practice needs, and every other change master needs to conform to what it developed. A practice the experiment introduced reaches master already governed, not as work left over for after the merge.
+
 **A `[feature]` is verified before integrating, and nothing gates the merge.** `run-suite-before-commit` already achieves it, every commit on the branch having been verified. The merged result is a combination neither branch ran, so a feature whose commits all passed can still break the suite on integration. That is ordinary and is fixed from there. There is no affirmation step, because a feature has no finding to promote.
 
 **Refuted, inconclusive, abandoned, and superseded keep the record and do not merge.** The record is maintained and marked, so the attempt and its findings survive as evidence.
@@ -95,7 +97,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 Stating the shared lifecycle once and conditioning six clauses on a tag is smaller than stating it twice, and it makes the asymmetry legible instead of leaving a reader to diff two rules to find it.
 
-**How to apply:** branch for every implementation, named for its tag. Record the upstream branch, the branch, and the base. Ask the working location and the participation level at the start, through the selection interface, and record both. Offer the current branch only for a feature, and offer it last.
+**How to apply:** branch for every implementation, named for its tag. Record the upstream branch, the branch, and the base. Ask the working location and the participation level at the start, through the selection interface, and record both. Offer the current branch only for a feature, and offer it last. Before an experiment merges, write on its branch the rules and changes master needs to conform to it.
 
 Follow DBE inside. End in a declared state. Copy an affirmed experiment's log into the project's log and merge where it produced implementation. Verify a feature before integrating and add no gate at the merge.
 
@@ -121,3 +123,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:20 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:50:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
