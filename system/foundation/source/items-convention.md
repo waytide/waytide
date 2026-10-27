@@ -56,6 +56,8 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
 
+**An item whose work is done on an experiment's branch concludes when the work is done**, as `Realized`, or as `Done` for a work item. It does not wait for the experiment to merge. The item names the branch the work is on.
+
 ## A work item
 
 **An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** The tag is reserved: this rule names it and says what follows.
@@ -80,7 +82,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 Keeping the shape thin is the other half. The rules this replaces fixed a spine for a design and an element order for a plan, and an item that is neither had nowhere to sit. What every item genuinely shares is a state, a tag, a footer, a log entry, and a name.
 
-**How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open**, and make it **Active** when its work starts.
+**How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open**, and make it **Active** when its work starts. Conclude an item whose work is done on an experiment's branch when the work is done, not when the experiment merges.
 
 Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
 
@@ -123,3 +125,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 4:05:21 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT

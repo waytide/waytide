@@ -1,6 +1,6 @@
 # A rule's name is soluble
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **A rule's name should dissolve readily into the reader's understanding, the way the rule's text is meant to.** The name is the file name and the slug every citation uses, such as *the a-sha-names-the-work-rather-than-the-commit rule*. Many names are hard to read cold. That one the engineer called "really obscure language" on 2026-10-23. Others are `dbe-as-design-tool`, `tdd-designs-coverage-prevents-never-break-implementation` and `context-only-for-local-instrumentation`. Each is compressed past the point of saying what the rule asks.
@@ -17,9 +17,13 @@
 
 **Added 2026-10-26: the work is done on the phase branch, and the item is not concluded until the experiment merges.** The engineer settled it. All 97 rules whose name did not derive from their title are renamed on `experiment/worktree/rule-reduction.compression`, and the engineer has reviewed the titles. The renames reach `master` only when the experiment merges, and the item concludes then.
 
+**Realized on 2026-10-27, on the rule-reduction experiment's phase branch, `experiment/worktree/rule-reduction.compression`.** The engineer settled that an item whose work is done on an experiment's branch concludes when the work is done, not when the experiment merges, and the items-convention now says so.
+
 ## History
 
 As the engineer first stated it: "Idea: Make the rule names soluble"
+
+From Mon Oct 26 2026 until Tue Oct 27 2026 this item was to stay Active until the experiment merged. The engineer settled that an item concludes when its work is done.
 
 ---
 
@@ -30,3 +34,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:31:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:52:48 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT
