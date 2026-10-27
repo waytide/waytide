@@ -4,7 +4,7 @@
 - **Original rank:** 53 of 106
 - **Unclarity:** 0.51
 
-**Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
+**Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
 
 **Another writer's journal is not read.** A project may hold several, and each is one writer's thinking carried across their own sessions. The agent reads the journal of the writer whose session this is.
 
@@ -32,7 +32,7 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 
 1. Read the active writer's journal at the start of a session.
 2. That journal is every entry in `waytide/local/journal/<username>/`.
-3. `<username>` is resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule.
+3. `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 4. Read it after the rules and the vocabularies.
 5. Read it before the first request.
 6. The journal is not a rule, and it does not bind.
@@ -63,7 +63,7 @@ Related:
 
 - a-journal-entry-is-read-and-never-followed — the force an entry carries, and why the read is safe
 - the the-journal-is-the-record-the-writer-keeps — where the journal lives and what one entry is
-- the the-writers-identity-resolves-through-a-fixed-override-chain rule — how the active writer is resolved
+- the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how the active writer is resolved
 - the a-timeline-view-lists-every-journal-entry-by-its-datetime rule — the on-demand listing, which writes no file for this read to pass over
 - the foundation package's a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the session-start read this joins
 
@@ -90,3 +90,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT

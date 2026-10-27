@@ -1,4 +1,4 @@
-# The writer's identity resolves through a fixed override chain
+# The writer's username is read from the environment, then the project, then the user's config file
 
 This is the binding contract every Waytide tool follows to determine **who is writing now**. Each tool names its own variable at the first level, and the journal's is `JOURNAL_WRITER`. The two levels below it are common to all of them. An identity set once on a machine then resolves the same person in each. What this rule fixes is the chain rather than any one tool's variable, so a tool built independently of this one agrees with it.
 
@@ -219,6 +219,8 @@ display-name = "Jane Doe"
 
 Until Sun Oct 25 2026 this rule was named identity-resolution-contract and titled "The writer's identity resolves through a fixed override chain ending at `~/.config/waytide/user`, and the display name alone is overridden per project".
 
+Until Mon Oct 26 2026 this rule was named the-writers-identity-resolves-through-a-fixed-override-chain and titled "The writer's identity resolves through a fixed override chain".
+
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps — the per-writer directories `writers.toml` sits beside
@@ -240,3 +242,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:00 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT

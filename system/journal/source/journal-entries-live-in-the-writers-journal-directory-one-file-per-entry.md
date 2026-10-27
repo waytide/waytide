@@ -1,6 +1,6 @@
 # Journal entries live in the writer's journal directory, one file per entry
 
-The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-identity-resolves-through-a-fixed-override-chain rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
+The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by `date +%Y-%m-%dT%H-%M`. The colons of ISO 8601 are written as dashes for filename safety. Never use UTC for these entries, which is the writer's stated preference.
 
@@ -28,7 +28,7 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 **Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, to sort chronologically, and to reference. Keeping each writer's entries under `waytide/local/journal/<username>/` separates one writer's record from another's. It separates all of them from the records the agent writes. The summary pays off in a Quick Look preview, which is where a reader meets the entry before opening it.
 
-**How to apply:** when the writer dictates an event or an experience, resolve the active `<username>` by the the-writers-identity-resolves-through-a-fixed-override-chain rule. Create a new file in `waytide/local/journal/<username>/` with the local-time filename stamp, a `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, a `**Summary:**` line, and then the first-person narrative. Set the filename stamp to the referenced past time where the entry is not about today. Where the writer gave no time, ask by the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule and stamp the file to their answer. A day they named is not a time.
+**How to apply:** when the writer dictates an event or an experience, resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Create a new file in `waytide/local/journal/<username>/` with the local-time filename stamp, a `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, a `**Summary:**` line, and then the first-person narrative. Set the filename stamp to the referenced past time where the entry is not about today. Where the writer gave no time, ask by the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule and stamp the file to their answer. A day they named is not a time.
 
 Stamp to the minute. Write seconds only where the writer stated seconds, and drop the clock's seconds under **Now**.
 
@@ -36,7 +36,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 
 1. Keep the journal as one markdown file per entry.
 2. Put each entry in the writer's own directory, `waytide/local/journal/<username>/`.
-3. Resolve `<username>` as the active writer by the the-writers-identity-resolves-through-a-fixed-override-chain rule, for example `waytide/local/journal/scott-bellware/`.
+3. Resolve `<username>` as the active writer by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule, for example `waytide/local/journal/scott-bellware/`.
 4. A project may hold several writers' journals. Each writer's entries live under their own directory.
 5. The journal is distinct from `waytide/local/logs/log/`, the agent's single project-wide log.
 
@@ -93,7 +93,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 
 ## How to apply
 
-1. When the writer dictates an event or experience, resolve `<username>` by the the-writers-identity-resolves-through-a-fixed-override-chain rule.
+1. When the writer dictates an event or experience, resolve `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 2. Create a new file in `waytide/local/journal/<username>/` with the local-time filename stamp.
 3. Write the `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, and a `**Summary:**` line.
 4. Then write the first-person narrative.
@@ -110,7 +110,7 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Related:
 
-- the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
+- the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved
 - the the-journal-is-the-record-the-writer-keeps — the directory, the provenance footer, and what one entry is
 - the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the datetime line under the title
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line and the tag protocol
@@ -144,3 +144,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT

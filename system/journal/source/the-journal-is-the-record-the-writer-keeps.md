@@ -1,10 +1,10 @@
 # The journal is the record the writer keeps
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing, and the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing, and the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 **The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
-**`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the the-writers-identity-resolves-through-a-fixed-override-chain rule.
+**`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 
 **One file is one entry.** A day usually holds one, and it can hold several. Each is a separate file, so a day with three entries is three files, in the order they were written.
 
@@ -57,7 +57,7 @@ One file per entry rather than one per day follows the convention every other da
 1. `waytide/local/journal/<username>/` holds a writer's journal.
 2. The journal is the one record in `waytide/local/` that the writer keeps, not the agent. The agent reads it.
 3. A project may hold several writers' journals. Each writer's entries sit under a directory named for their username.
-4. The the-writers-identity-resolves-through-a-fixed-override-chain rule resolves which writer is writing.
+4. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing.
 5. The journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry.
 6. The package and directory were named `diary` until 2026-08-18. The rename reaches every rule name, path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix.
 7. Records written before the rename keep the word they were written with: the log, the implementation records, and the journal entries. They are historical and are not revised.
@@ -183,3 +183,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
