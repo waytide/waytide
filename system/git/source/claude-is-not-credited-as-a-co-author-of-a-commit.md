@@ -1,4 +1,4 @@
-# A commit carries no Claude co-author trailer
+# Claude is not credited as a co-author of a commit
 
 Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by Claude/Anthropic" attribution) to any commit you create. The commit should appear as authored by the user only.
 
@@ -20,6 +20,8 @@ Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by 
 
 Until Sun Oct 25 2026 this rule was named no-claude-coauthor and titled "No Claude co-author trailer in commits".
 
+Until Mon Oct 26 2026 this rule was named a-commit-carries-no-claude-co-author-trailer and titled "A commit carries no Claude co-author trailer".
+
 ---
 
 Authored by Scott Bellware on Fri Jun 5 2026 at 10 AM PT
@@ -27,3 +29,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:19:33 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 3:27:23 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:03 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:14:43 PM PT
