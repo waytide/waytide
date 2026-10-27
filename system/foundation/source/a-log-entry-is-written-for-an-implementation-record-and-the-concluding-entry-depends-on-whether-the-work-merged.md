@@ -1,4 +1,4 @@
-# An implementation record takes a log entry, and the last one depends on the merge
+# A log entry is written for an implementation record, and the concluding entry depends on whether the work merged
 
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
@@ -92,6 +92,8 @@ Until Sun Oct 25 2026 this rule was named implementation-records-take-a-log-entr
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule was named an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge and titled "An implementation record takes a log entry, and the last one depends on the merge".
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record, the two kinds, and the state words each takes
@@ -119,3 +121,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT

@@ -1,4 +1,4 @@
-# An implementation record takes a log entry, and the last one depends on the merge
+# A log entry is written for an implementation record, and the concluding entry depends on whether the work merged
 
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 

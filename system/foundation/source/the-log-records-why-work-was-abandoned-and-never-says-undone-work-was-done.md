@@ -61,7 +61,7 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's shape, and when it takes a body
-- the an-implementation-record-takes-a-log-entry-and-the-last-one-depends-on-the-merge rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
+- the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule — the substance an unmerged **experiment's verdict** carries, which this holds apart from abandoned work
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same prohibition for an item, stated as the mood an entry is written in
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the branch deletion that leaves the log as the only durable trace
 
@@ -78,3 +78,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
