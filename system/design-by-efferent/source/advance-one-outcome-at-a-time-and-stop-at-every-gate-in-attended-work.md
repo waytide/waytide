@@ -1,4 +1,4 @@
-# Advance one outcome at a time, stop at every gate in attended work, and name via options
+# Advance one outcome at a time, and stop at every gate in attended work
 
 The loop advances **one outcome at a time** and, in attended work, **stops at every gate** for the human. It does not run ahead. In particular, do **not batch-generate multiple test files** in one pass. A batch skips the gates where the human's judgment belongs, and accumulates unreviewed, pending mistakes. Generate one outcome's test, stop at its gate, and proceed only on the human's go. **Under unattended work the loop does not stop at the gates**, since the agent decides each hinge itself. It still advances one outcome at a time.
 
@@ -45,6 +45,8 @@ Until 2026-10-24 the opening said, without qualification, that the loop stops at
 
 Until Sun Oct 25 2026 this rule was named one-outcome-at-a-time-name-via-options.
 
+Until Mon Oct 26 2026 this rule was named advance-one-outcome-at-a-time-stop-at-every-gate-in-attended-work-and-name-via-options and titled "Advance one outcome at a time, stop at every gate in attended work, and name via options".
+
 Related:
 
 - the actuation-gate-options
@@ -74,3 +76,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:49 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:26:49 PM PT
