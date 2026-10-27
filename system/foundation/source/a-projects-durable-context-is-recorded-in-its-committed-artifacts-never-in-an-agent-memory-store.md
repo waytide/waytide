@@ -10,7 +10,7 @@
 
 **A fact about the engineer rather than the project.** How they want to be answered, and what they want the agent never to offer, are not project context. They hold across every project on the machine, and the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule already sends a machine-scoped fact to per-machine configuration under `~/.config/`, outside any repository.
 
-**A preference that has not yet been settled as a rule.** That is the ask-at-once-when-the-engineer-expresses-a-preference rule's concern, and it is what keeps this one from costing anything. The pipeline from a preference to a written rule is short enough that nothing has to be held while it waits.
+**A preference that has not yet been settled as a rule.** That is the record-a-preference-at-once-and-ask-about-it-at-the-tasks-end rule's concern, and it is what keeps this one from costing anything. Its words are written at once as an observation, so nothing has to be held while the question of what becomes of it waits.
 
 **The harness's own working state.** A cache, a transcript, an index of the repository. None of it is the project's context and none of it is a substitute for an artifact.
 
@@ -22,7 +22,7 @@ The cost of forbidding it is real and is bounded to one case. That is the prefer
 
 **How to apply:** write durable project context into the artifact whose convention covers it. A rule, a log entry, an observation, an item, or a suspended thing. Do not hold it in an agent memory store, and do not create one.
 
-Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, ask about it at once rather than holding it.
+Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, write it at once as an observation rather than holding it.
 
 ## Compressed
 
@@ -46,7 +46,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 2. How the engineer wants to be answered, and what they want never offered, are such facts.
 3. A machine-scoped fact goes to per-machine configuration under `~/.config/`, outside any repository, per the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule.
 4. A preference not yet settled as a rule is outside this rule.
-5. Ask about such a preference at once, per the ask-at-once-when-the-engineer-expresses-a-preference rule, rather than holding it.
+5. Ask about such a preference at once, per the record-a-preference-at-once-and-ask-about-it-at-the-tasks-end rule, rather than holding it.
 6. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 7. Harness working state is not project context and is no substitute for an artifact.
 8. **Why:** conventions are committed with the code and read fresh each session, not recalled. A memory store is recall: unreviewed, undiffable, invisible to all but its writer, and it drifts silently.
@@ -57,9 +57,11 @@ Until Sun Oct 25 2026 this rule was named project-context-lives-in-the-committed
 
 Until Mon Oct 26 2026 this rule was named a-projects-durable-context-lives-in-its-committed-artifacts and titled "A project's durable context lives in its committed artifacts".
 
+Until Tue Oct 27 2026 this rule said a preference not yet a rule was asked about at once. The record-a-preference-at-once-and-ask-about-it-at-the-tasks-end rule now has its words written at once as an observation.
+
 Related:
 
-- the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe
+- the record-a-preference-at-once-and-ask-about-it-at-the-tasks-end rule — what makes forbidding the store safe
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the read-fresh premise, and where a binding convention goes
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — where a decision goes
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — where thinking goes before it binds
@@ -85,3 +87,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:33:49 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:34:10 PM PT

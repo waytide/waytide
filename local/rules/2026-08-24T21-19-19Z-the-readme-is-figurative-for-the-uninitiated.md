@@ -44,7 +44,7 @@ Related:
 - its language-is-used-precisely-here-and-words-are-load-bearing rule — dramatic jargon, which is not licensed here
 - its waytide-prose-conforms-to-the-ste-writing-rules rule — the standard the README is excused from
 - the `foundation` vocabulary — `free-text option` rather than *escape*, the worked case
-- the `foundation` ask-at-once-when-the-engineer-expresses-a-preference rule — the ask this rule came from
+- the `foundation` record-a-preference-at-once-and-ask-about-it-at-the-tasks-end rule — the ask this rule came from
 
 ---
 
@@ -53,3 +53,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:34 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:33:49 PM PT
