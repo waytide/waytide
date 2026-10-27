@@ -14,6 +14,21 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 **A term Waytide did not coin is still a term.** `load-bearing` comes from structural engineering, `cradle` from a physical object, and `preserve` from the vocabulary of design. Each is a term, because the vocabulary says what it means. Where the word was taken rather than coined, the entry says so in its own prose. That is an **origin** and not a kind of entry.
 
+## Every word in a vocabulary is approved or reserved
+
+**Every word in a vocabulary is one of two things.** This holds for its terms, and for the **Use** column of any substitutions table in it.
+
+- **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required, and the entry fixes the word against a neighbouring one rather than asking for permission.
+- **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE Rule 1.6 where it lists and refuses it. An STE verb category is reserved under STE Rule 1.12. An ETE category is reserved under the ete-declares-its-own-categories rule. STE Rule 1.8 requires a technical noun to be approved in the subject field, and the vocabulary that holds it is that approval.
+
+**A reserved word's entry states what the STE dictionary says about it.** The word is absent from the dictionary. Or the dictionary refuses it and gives an alternative. Or the dictionary approves it with a meaning Waytide does not use. The last of the three is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
+
+**The sequence for reserving a word is the a-word-is-reserved-in-six-steps rule**, in the `language` package's `ete/` directory.
+
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note names a term absent from the STE dictionary, and reserves it. A definition exists to name a term, and a term names something in the subject field. A **substitution's Use word** with no STE note is **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+
+**A vocabulary states this by citing this rule, not by repeating it.** One line at its head says that every word in it is approved or reserved, and points here.
+
 ## Which vocabulary decides
 
 **Four levels hold terms, and a word can appear in more than one.** They decide in this order, from the one that decides first:
@@ -74,6 +89,16 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 8. Where a word was taken rather than coined, the entry says so in its own prose.
 9. That statement is an **origin**, not a kind of entry.
 
+## Every word in a vocabulary is approved or reserved
+
+1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
+2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
+3. A reserved word is a technical noun or verb in a category its entry names: STE Rule 1.5, 1.6, or 1.12, or an ETE category. The vocabulary that holds it is the approval STE Rule 1.8 requires.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use.
+5. Reserve a word through the a-word-is-reserved-in-six-steps rule.
+6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, not reserved and not rewritten.
+7. A vocabulary cites this rule in one line at its head, and does not repeat it.
+
 ## Which vocabulary decides
 
 1. Four levels hold terms, and a word can appear in more than one.
@@ -112,6 +137,8 @@ A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry
 
 Until Sun Oct 25 2026 this rule was named vocabulary-convention and titled "`vocabulary.md` — what a package's vocabulary is, which package has one, and which one decides".
 
+Until Mon Oct 26 2026 the account of what every word in a vocabulary is stood in each vocabulary, nearly word for word, and not in this rule.
+
 Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
@@ -142,3 +169,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:09:15 PM PT
