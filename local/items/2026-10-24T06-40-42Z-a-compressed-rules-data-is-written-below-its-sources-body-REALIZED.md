@@ -1,6 +1,6 @@
 # A compressed rule's data is written below its source's body
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **When a compressed text is written into a source rule, the data about that compression is written into the source with it, below the rule's body.** Today the data lives only in the rule-reduction experiment's record and its appendices, not in the rule. That data covers the compression, the change, the solubility and clarity score before and after, the directive check's counts, the restorations, and when the text was written. A reader of the source rule would then see the facts about its compressed version where the version is.
@@ -14,13 +14,15 @@
 3. **The compiled rule carries only the latest value of each measure**, each with its date, in both compiled forms. The earlier event lines are history, and stay in the source alone.
 4. **A rule governs it.** The engineer settled that an experiment brings to master the rules its practice needs, so the rule-reduction experiment's phase branch carries a foundation rule for the whole of compression: the compressed text, the check, and the figures. Its sources carry the figures the experiment record holds.
 
-The item stays Active until the experiment merges, since master has neither the rule nor the sections until then.
+**Realized on 2026-10-27, on the rule-reduction experiment's phase branch.** The engineer settled that the item is concluded because the work is done, and need not wait for the experiment to merge.
 
 ## History
 
 For part of Tue Oct 27 2026 this item said that the compiler leaves the whole section out of both compiled forms. The engineer settled that the compiled rule carries the latest value of each measure, and that the earlier events are history.
 
 As the engineer first stated it: "Idea: The compiler data should be written into the source footer when the compiled text is written into it"
+
+For part of Tue Oct 27 2026 this item was to stay Active until the experiment merged. The engineer settled that it is concluded once the work is done.
 
 ---
 
@@ -29,3 +31,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:49:49 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:49 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:48:43 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:08:26 PM PT
