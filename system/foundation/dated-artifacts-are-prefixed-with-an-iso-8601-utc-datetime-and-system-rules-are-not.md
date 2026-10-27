@@ -1,4 +1,4 @@
-# Dated artifacts take an ISO 8601 UTC datetime prefix, and system rules do not
+# Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 

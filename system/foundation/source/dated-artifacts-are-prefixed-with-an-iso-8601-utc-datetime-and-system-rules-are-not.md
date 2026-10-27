@@ -1,4 +1,4 @@
-# Dated artifacts take an ISO 8601 UTC datetime prefix, and system rules do not
+# Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
@@ -59,6 +59,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
 
+Until Mon Oct 26 2026 this rule was named dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not and titled "Dated artifacts take an ISO 8601 UTC datetime prefix, and system rules do not".
+
 ---
 
 Authored by Scott Bellware on Wed Jul 1 2026 at 1 PM PT
@@ -83,3 +85,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT

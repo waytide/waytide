@@ -30,6 +30,6 @@ That reads as an error rather than as provenance, so the entry went unwritten in
 Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the human-readable local datetime this corrects
-- the dated-artifacts-take-an-iso-8601-utc-datetime-prefix-and-system-rules-do-not rule — the machine-sortable UTC filename prefix
+- the dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not rule — the machine-sortable UTC filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
 - the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the second exception, and its own grounds for it
