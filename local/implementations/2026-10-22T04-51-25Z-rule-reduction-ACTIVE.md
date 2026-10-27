@@ -1592,6 +1592,10 @@ The three later repairs are not re-checked again.
 
 **The engineer settled that finding #7, the read taking many tool calls with nothing to guarantee it is complete, belongs to phase 2, packaged-script.** Phase 1 does not take it up. Its improvement, a bundle file that `compile.sh` writes, is the question phase 2 holds.
 
+### Finding #10 is placed in phase 3 — 2026-10-27
+
+**The engineer settled that finding #10, nothing re-reading the rules after the context is compacted, belongs to phase 3, additional-context.** Phase 1 does not take it up. Every finding now has its place: #1 is phase 1's own question, #7 is phase 2's, #10 is phase 3's, and the rest are resolved.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4760,3 +4764,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:30:35 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:14:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:24:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:25:02 PM PT
