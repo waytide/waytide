@@ -72,6 +72,12 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 **When unattended, present the plan as a list before generating, and write it in ETE.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
+## Compression
+
+- Solubility 59, clarity 0.86 (2026-10-24)
+- Compression 0.48, change 0.72 (2026-10-24)
+- 38 directives, 38 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the record's shape and the "none — no gate" form this is distinct from

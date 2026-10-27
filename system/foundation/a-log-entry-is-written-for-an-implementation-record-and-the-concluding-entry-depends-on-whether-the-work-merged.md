@@ -41,6 +41,12 @@ At the conclusion, ask whether the work merged. Where it did, write a summary ma
 
 Write no entry for a confirmation the record already holds, and none for a turn of the work.
 
+## Compression
+
+- Solubility 62, clarity 0.80 (2026-10-24)
+- Compression 0.35, change 0.67 (2026-10-24)
+- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule — the record, the two kinds, and the state words each takes

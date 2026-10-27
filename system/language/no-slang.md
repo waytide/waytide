@@ -18,6 +18,12 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 
 **How to apply:** don't reach for a figurative or slang term when a literal one states the thing directly. Use the literal replacement (see its entry in the `language` vocabulary). When a historical record *quotes* a decision, it keeps the original word, since rewriting it would erase the record. Only live, forward-looking prose conforms.
 
+## Compression
+
+- Solubility 91, clarity 0.95 (2026-10-24)
+- Compression 0.03, change 0.77 (2026-10-24)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule

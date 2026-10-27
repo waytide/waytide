@@ -10,6 +10,12 @@ Do not use an abbreviation the reader may not already know without spelling it o
 
 **How to apply:** the first time an abbreviation appears, write the full term with the abbreviation in parentheses. Use the short form afterward. Skip the expansion only for abbreviations more widely known than their expansions. Applies to conversation with the user as much as to the files.
 
+## Compression
+
+- Solubility 95, clarity 0.98 (2026-10-24)
+- Compression 0.25, change 0.53 (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - `communicate-plainly-and-name-the-actual-thing` — the broader plain-communication rule this sharpens

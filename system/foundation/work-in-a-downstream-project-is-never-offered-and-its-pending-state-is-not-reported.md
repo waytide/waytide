@@ -30,6 +30,12 @@ An agent that names the pending state presses toward a change across repositorie
 
 Carry out any of that when the engineer asks for it, and report what happened once it is done. Answer a question about downstream state fully when one is put. Raise none of it on your own initiative.
 
+## Compression
+
+- Solubility 66, clarity 0.68 (2026-10-24)
+- Compression 0.30, change 0.53 (2026-10-24)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the agent never raising the end of an experiment, the same failure through a different act

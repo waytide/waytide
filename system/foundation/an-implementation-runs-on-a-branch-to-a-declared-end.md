@@ -107,6 +107,12 @@ Follow DBE inside. End in a declared state. Copy an affirmed experiment's log in
 
 Raise no ending for an experiment. Leave the engineer on the upstream branch in the main working tree. Confirm before deleting any branch, removing the worktree first under one confirmation.
 
+## Compression
+
+- Solubility 42, clarity 0.76 (2026-10-22)
+- Compression 0.43, change 0.63 (2026-10-22)
+- 88 directives, 75 kept, 12 less precise, 1 lost (2026-10-27)
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule — the record, the tags, and the state words

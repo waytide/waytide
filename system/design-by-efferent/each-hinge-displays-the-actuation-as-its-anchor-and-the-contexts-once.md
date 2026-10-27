@@ -32,6 +32,12 @@ Too much and the hinge's own concern is buried in material already settled. The 
 
 At hinge 4, show the implementation once a candidate is accepted, ahead of the test and the feature's output. Do not advance to naming before it is on screen. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
 
+## Compression
+
+- Solubility 52, clarity 0.52 (2026-10-24)
+- Compression 0.29, change 0.52 (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the sequence, the acceptance mechanism, and the requirement that an option be the artifact rather than a label

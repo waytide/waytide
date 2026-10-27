@@ -14,6 +14,12 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 **Why:** tests exist to prevent a regression in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence that "we" are covered when nothing of ours ran.
 
+## Compression
+
+- Solubility 75, clarity 0.70 (2026-10-24)
+- Compression 0.14, change 0.44 (2026-10-24)
+- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the assert-an-error-message-only-when-it-alone-confirms-the-error rule — each is about testing what actually discriminates *our* behavior

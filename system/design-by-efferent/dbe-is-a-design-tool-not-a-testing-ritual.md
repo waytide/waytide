@@ -16,6 +16,12 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 
 **How to apply:** Write the efferent test first. Treat it as a cradle for code generation rather than a pass/fail gate. Do not pause to watch the inevitable pre-implementation failure. Design each unit from the efferent side inward. Hold the test in context while generating the implementation, and steer toward maximum solubility. Condition on the project's high-solubility code, not on code in general.
 
+## Compression
+
+- Solubility 79, clarity 0.84 (2026-10-24)
+- Compression 0.28, change 0.51 (2026-10-24)
+- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the DBE vocabulary — cradle, efferent, solubility

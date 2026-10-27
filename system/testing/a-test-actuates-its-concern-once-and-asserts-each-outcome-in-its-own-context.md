@@ -38,6 +38,12 @@ The pattern, abstracted:
 
 **How to apply:** State the inputs and actuate the unit under test once, at the top of the outer feature context. Bind the result to an explaining variable. Narrate it with `comment`. For each outcome, add an inner `context` titled for that outcome. Derive an explaining variable, and assert it in a single `test` block. Never assert an inline expression.
 
+## Compression
+
+- Solubility 82, clarity 0.89 (2026-10-24)
+- Compression 0.26, change 0.50 (2026-10-24)
+- 20 directives, 20 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the DBE-as-design-tool rule

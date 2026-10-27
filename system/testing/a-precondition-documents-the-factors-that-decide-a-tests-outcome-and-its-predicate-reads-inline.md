@@ -103,6 +103,12 @@ Do not wrap it in a `test` block, do not name it, and do not bind its operand. D
 
 An actuation's completion may be the thing being established, rather than the ground a later observation stands on. That is a test. It belongs in a `test` block.
 
+## Compression
+
+- Solubility 44, clarity 0.76 (2026-10-24)
+- Compression 0.32, change 0.58 (2026-10-24)
+- 27 directives, 27 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-values-are-controls-never-factories-fixtures-or-arrange rule and the `control_` test-variable prefix rule — the controls whose values a precondition most often documents

@@ -52,6 +52,12 @@ One file per entry rather than one per day follows the convention every other da
 
 **How to apply:** resolve the active writer, and write an entry as a new file in `waytide/local/journal/<username>/`. Give it the datetime prefix in the writer's local time, to the minute, and a name saying what it is about. Carry seconds only where the writer gave seconds. Do not convert the time to UTC. End it with an `Authored by` line. Do not edit an entry once it is written, except for disclosure or a change the writer directs to their own entry. A later thought is a later entry.
 
+## Compression
+
+- Solubility 48, clarity 0.77 (2026-10-24)
+- Compression 0.41, change 0.65 (2026-10-24)
+- 39 directives, 39 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the-journal-is-read-at-the-start-of-a-session-with-the-rules rule — when the agent reads it

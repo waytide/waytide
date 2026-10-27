@@ -35,6 +35,12 @@ When `Explain briefly` is selected, answer with the summary alone and display th
 
 Word each option's own description *…then display this selection prompt again*, never *put this question again*, and say the brief one's length in its description. Reserve plain prose for statements, reports, and explanations that are **not** asking the engineer to choose.
 
+## Compression
+
+- Solubility 69, clarity 0.85 (2026-10-24)
+- Compression 0.56, change 0.78 (2026-10-24)
+- 31 directives, 30 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal

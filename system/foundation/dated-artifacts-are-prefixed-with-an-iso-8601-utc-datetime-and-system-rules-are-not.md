@@ -22,3 +22,9 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 **Why:** the dated artifacts are a chronological record. So one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory. It preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable set of conventions, so each is named for what it says.
 
 **How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
+
+## Compression
+
+- Solubility 79, clarity 0.83 (2026-10-24)
+- Compression 0.30, change 0.60 (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)

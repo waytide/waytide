@@ -22,6 +22,12 @@ The failure is easy to miss because the answer is correct. A file list and a com
 
 Give the message, the stat, or the log entry when the question is about the commit, or when the commit's whole content is a git operation. Ask which is wanted only where the sentence genuinely does not say.
 
+## Compression
+
+- Solubility 79, clarity 0.67 (2026-10-22)
+- Compression 0.52, change 0.68 (2026-10-22)
+- 9 directives, 8 kept, 1 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the write-subject-first-commit-messages rule — what a commit message states, which is the mechanics this rule sets aside

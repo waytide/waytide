@@ -35,6 +35,12 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 **A lone candidate is presented as every hinge presents one**, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
+## Compression
+
+- Solubility 56, clarity 0.76 (2026-10-24)
+- Compression 0.37, change 0.54 (2026-10-24)
+- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule

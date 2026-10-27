@@ -15,6 +15,12 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 
 **How to apply:** before moving content across a repository boundary, or restructuring where it lives, write a record here. It names the source and destination, the increments in order, and what is true while the move is under way. Record what happened against it as the work proceeds, and **keep the record** once the content has moved. Do not use an ordinary item for a migration. Do not delete a migration record on completion.
 
+## Compression
+
+- Solubility 68, clarity 0.76 (2026-10-24)
+- Compression 0.34, change 0.63 (2026-10-24)
+- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the project's planning records — a migration sequences a change to where existing content lives, where those sequence a build, and a migration may realize a settled item or be mechanical enough to need none

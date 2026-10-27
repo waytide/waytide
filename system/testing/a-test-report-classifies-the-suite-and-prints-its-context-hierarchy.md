@@ -28,3 +28,9 @@ Keep each section tight.
 **How to apply:** on a test-report request, read the automated suite and render every section from the current files, the hierarchy included. Confirm membership by reading the files (actuation placement, assertion kind, loop fan-out) rather than asserting it. Do not run the suite for this report.
 
 Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree` command. That one produces the tree of a run at full depth, and states why it comes from a run. Neither report is written to a file.
+
+## Compression
+
+- Solubility 77, clarity 0.83 (2026-10-24)
+- Compression 0.12, change 0.43 (2026-10-24)
+- 26 directives, 26 kept, 0 less precise, 0 lost (2026-10-27)

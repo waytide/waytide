@@ -67,6 +67,12 @@ Test each survivor by whether it could be false. Number the list where its list 
 
 Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left something out, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the answer says all it has.
 
+## Compression
+
+- Solubility 53, clarity 0.78 (2026-10-24)
+- Compression 0.49, change 0.71 (2026-10-24)
+- 22 directives, 22 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the communicate-plainly-and-name-the-actual-thing rule — which governs the words inside the list and reaches conversation the same way this does

@@ -35,6 +35,12 @@ Interrupting is the cost, and it is one selection. Deferring the ask to the end 
 
 Do not ask about an instruction that governs only the artifact at hand. Do not ask a second time about a preference the engineer has declined to record. Do not put a preference off: work the engineer wants deferred, they record as an idea.
 
+## Compression
+
+- Solubility 69, clarity 0.67 (2026-10-24)
+- Compression 0.34, change 0.60 (2026-10-24)
+- 22 directives, 9 kept, 12 less precise, 1 lost (2026-10-27)
+
 Related:
 
 - the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one

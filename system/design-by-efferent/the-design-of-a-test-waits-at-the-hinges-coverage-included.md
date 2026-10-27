@@ -14,6 +14,12 @@ When adding coverage for behavior that already exists, all five are in play:
 
 **How to apply:** design a coverage test through the hinges as usual. They are actuation, controls, observation, and naming, with a wait at each for the human. Treat the implementation hinge as a confirmation step: run it, and show it verified. Send any awkwardness back to the test, not to the implementation.
 
+## Compression
+
+- Solubility 89, clarity 0.93 (2026-10-24)
+- Compression 0.14, change 0.57 (2026-10-24)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule

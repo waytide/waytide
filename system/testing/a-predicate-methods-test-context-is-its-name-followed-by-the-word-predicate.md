@@ -8,6 +8,12 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 
 **How to apply:** When the unit under test is a predicate method `foo?`, name its feature `context` "Foo Predicate". Titlecase the name without the `?`, then append "Predicate".
 
+## Compression
+
+- Solubility 98, clarity 0.98 (2026-10-24)
+- Compression 0.39, change 0.63 (2026-10-24)
+- 3 directives, 3 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule

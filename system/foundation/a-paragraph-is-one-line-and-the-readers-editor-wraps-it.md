@@ -26,6 +26,12 @@
 
 Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, and the contents of a fenced code block on their own lines. Fold a list item's continuation into the item. Leave each line of the provenance footer alone.
 
+## Compression
+
+- Solubility 92, clarity 0.93 (2026-10-24)
+- Compression 0.55, change 0.75 (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule format this governs the lines of

@@ -20,6 +20,12 @@ Minute-precise 24-hour time is the shortest rendering that separates records wri
 
 **How to apply:** when writing a record whose title takes a date, render it `Mon Jan 1 2026 18:06`. Use the author's local time, at the moment the record is written. The command is `date "+%a %b %-d %Y %H:%M"`. Do not add a timezone abbreviation, AM/PM, or seconds, and do not write a date range. Keep the filename's UTC prefix and the footer's local time to the second as they are.
 
+## Compression
+
+- Solubility 75, clarity 0.67 (2026-10-24)
+- Compression 0.41, change 0.71 (2026-10-24)
+- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the file-names rule — the UTC filename prefix

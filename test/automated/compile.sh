@@ -47,10 +47,14 @@ for source_rule in $source_rules; do
   # --- inside a fenced block is an example, not the footer's divider, so it ends no section.
   source_without_history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed|Compression)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
 
-  compiled_length=$(wc -l < "$compiled_rule")
+  # The compiled rule without the latest measures the compiler writes from the Compression
+  # section, which the source does not hold in that form.
+  compiled_without_measures=$(awk '{ line[NR] = $0 } /^## Compression$/ && !start { start = NR } /^Related:/ && start && !end { end = NR } END { if (!start) { for (i = 1; i <= NR; i++) print line[i]; exit } last = end ? start - 1 : start - 2; for (i = 1; i <= last; i++) print line[i]; if (end) for (i = end; i <= NR; i++) print line[i] }' "$compiled_rule")
+
+  compiled_length=$(printf '%s\n' "$compiled_without_measures" | wc -l)
   removed=$(printf '%s\n' "$source_without_history" | tail -n +$((compiled_length + 1)))
 
-  printf '%s\n' "$source_without_history" | awk -v compiled_length="$compiled_length" 'NR <= compiled_length' | cmp -s - "$compiled_rule" || fail "Is its source rule without the footer" "not the start of its source:" "$name"
+  printf '%s\n' "$source_without_history" | awk -v compiled_length="$compiled_length" 'NR <= compiled_length' | { measures_file=$(mktemp); printf '%s\n' "$compiled_without_measures" > "$measures_file"; cmp -s - "$measures_file"; same=$?; rm -f "$measures_file"; [ "$same" -eq 0 ]; } || fail "Is its source rule without the footer" "not the start of its source:" "$name"
   printf '%s\n' "$removed" | grep -q '^Authored by ' || fail "Is its source rule without the footer" "footer not removed:" "$name"
   ! printf '%s\n' "$removed" | grep -v -q -E '^(---|Authored by .*|Changed by .*)?$' || fail "Is its source rule without the footer" "more than the footer removed:" "$name" "removed:" "$removed"
 done
@@ -61,7 +65,7 @@ for source_rule in $source_rules; do
   compiled_rule=$(printf '%s' "$source_rule" | sed 's|/source/|/|')
   name=${source_rule#"$repository"/}
 
-  ! grep -q -x -E '## (History|Compressed|Compression)' "$compiled_rule" || fail "Removes the History, Compressed, and Compression sections" "History section not removed:" "$name"
+  ! grep -q -x -E '## (History|Compressed)' "$compiled_rule" || fail "Removes the History, Compressed, and Compression sections" "History section not removed:" "$name"
 
   history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed|Compression)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
   outside=$(diff "$source_rule" "$compiled_rule" | sed -n 's/^< //p' | grep -v '^$' | grep -v -E '^(---|Authored by .*|Changed by .*)$' | grep -v -x -F -e "$history" || true)
@@ -87,7 +91,8 @@ Some compressed text.
 
 ## Compression
 
-- Some date, compressed: some figures
+- 2026-01-01, compressed: compression 0.10, change 0.20, solubility 10 → 20, clarity 0.30 → 0.40, 5 directives, 5 kept, 0 less precise, 0 lost
+- 2026-01-02, re-checked: 5 directives, 4 kept, 1 less precise, 0 lost, 1 repair
 
 ## History
 
@@ -108,6 +113,12 @@ control_compressed_expected_text() {
 # Some rule
 
 Some compressed text.
+
+## Compression
+
+- Solubility 20, clarity 0.40 (2026-01-01)
+- Compression 0.10, change 0.20 (2026-01-01)
+- 5 directives, 4 kept, 1 less precise, 0 lost (2026-01-02)
 
 Related:
 

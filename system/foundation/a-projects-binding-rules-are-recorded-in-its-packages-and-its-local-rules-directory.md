@@ -22,6 +22,12 @@ The project's **binding** rules are read at the start of every session and follo
 
 When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
 
+## Compression
+
+- Solubility 50, clarity 0.81 (2026-10-24)
+- Compression 0.09, change 0.49 (2026-10-24)
+- 49 directives, 47 kept, 2 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the file-names rule

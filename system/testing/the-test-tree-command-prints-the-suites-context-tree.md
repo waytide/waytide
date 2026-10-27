@@ -14,6 +14,12 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 
 **How to apply:** on a "test tree" request, run the project's durable tree script and present its output.
 
+## Compression
+
+- Solubility 84, clarity 0.86 (2026-10-24)
+- Compression 0.19, change 0.44 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the status-report (in `foundation`) and test-report commands

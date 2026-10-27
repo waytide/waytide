@@ -20,6 +20,12 @@ The loop, by turn:
 
 **How to apply:** Run the loop above. Keep turns small (one actuation, one outcome) so the cradle stays legible while the human deliberates. Hand the human the actuation to edit or approve. Let the AI fill everything else. Do not ask the human to confirm a failing or passing test. Stop when solubility is satisfied.
 
+## Compression
+
+- Solubility 66, clarity 0.79 (2026-10-24)
+- Compression 0.13, change 0.38 (2026-10-24)
+- 29 directives, 28 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the DBE-as-design-tool rule

@@ -32,6 +32,12 @@ The relaxation with depth follows from the same reason. A deep context is read w
 
 Prefer a behavior at every level. Where a deeper context describes an implementation element, it may name that element.
 
+## Compression
+
+- Solubility 81, clarity 0.88 (2026-10-24)
+- Compression 0.42, change 0.63 (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule — the path the contexts mirror

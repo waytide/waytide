@@ -41,6 +41,12 @@ BRANCH SWITCHED
 
 **How to apply:** print the block on every branch switch, before reporting anything else about the work. Fill all three fields. Keep the reason to what the switch was for, not what the work is. Print no block for a worktree, a merge, a commit, or a push.
 
+## Compression
+
+- Solubility 80, clarity 0.75 (2026-10-22)
+- Compression 0.46, change 0.62 (2026-10-22)
+- 20 directives, 19 kept, 1 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable

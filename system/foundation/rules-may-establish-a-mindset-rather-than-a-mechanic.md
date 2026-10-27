@@ -12,6 +12,12 @@ A rule's package — `language`, `testing`, `git`, and the others — names the 
 
 State its purpose, the mindset, in the rule's body. Cross-reference sibling rules that establish the same stance through a different lever, even where they live in other packages. When two rules seem to conflict, reconcile at the level of purpose, not surface. Do not treat package membership as the whole of a rule's meaning.
 
+## Compression
+
+- Solubility 78, clarity 0.81 (2026-10-24)
+- Compression 0.15, change 0.62 (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the subject-first commit-message rule in the `git` package

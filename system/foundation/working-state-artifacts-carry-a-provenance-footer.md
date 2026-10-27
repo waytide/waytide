@@ -19,6 +19,12 @@ This is a different justification from the rule-file footer's (which recovers hi
 
 **How to apply:** end a provenance footer on every one of these: an implementation record, whether an experiment or a feature; an item, whatever it is tagged; a loop record; and a work session record. The format is the record-a-rules-authorship-in-a-provenance-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/logs/log/` entry.
 
+## Compression
+
+- Solubility 80, clarity 0.81 (2026-10-24)
+- Compression 0.42, change 0.64 (2026-10-24)
+- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format and the rule-file case

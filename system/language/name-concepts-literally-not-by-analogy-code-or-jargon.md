@@ -12,6 +12,12 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 
 **How to apply:** Default to plain description over a fresh metaphor or coined term. When a short handle is genuinely needed, make it the most literal short handle available. Coined handles such as *hinge* and *cradle* are kept, because they are precise, in active use, and defined plainly elsewhere. Do not mint new metaphors by default.
 
+## Compression
+
+- Solubility 94, clarity 0.96 (2026-10-24)
+- Compression 0.29, change 0.65 (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule — the quality this test serves

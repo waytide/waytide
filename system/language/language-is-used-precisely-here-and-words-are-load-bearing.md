@@ -20,6 +20,12 @@ A metaphor carries baggage the author never intended and the reader cannot unsee
 
 When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
 
+## Compression
+
+- Solubility 81, clarity 0.87 (2026-10-24)
+- Compression 0.26, change 0.63 (2026-10-24)
+- 22 directives, 21 kept, 1 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule and the no-slang rule — the two disciplines

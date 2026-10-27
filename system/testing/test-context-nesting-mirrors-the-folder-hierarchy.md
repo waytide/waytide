@@ -18,6 +18,12 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload R
 - the contexts that pertain to the scenario
 - the test blocks, each with an optional context scoping a local variable or a comment
 
+## Compression
+
+- Solubility 95, clarity 1.00 (2026-10-24)
+- Compression 0.07, change 0.52 (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-structure rule

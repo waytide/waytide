@@ -33,6 +33,12 @@ Stamp the filename to the minute under **Now**, and under a time the writer stat
 
 Name the file and write the datetime line to match the answer. Settle the date first by the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule's dating default, and do not put the date to the writer.
 
+## Compression
+
+- Solubility 74, clarity 0.81 (2026-10-24)
+- Compression 0.38, change 0.83 (2026-10-24)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the dating default that settles the date, and the filename stamp

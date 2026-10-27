@@ -10,6 +10,12 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 
 **How to apply:** Build one outcome's test at a time. After each, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Never write several test files at once, in either mode. To finish an unnamed test, present candidate names as options through the selection UI. Then apply the name chosen or dictated.
 
+## Compression
+
+- Solubility 80, clarity 0.77 (2026-10-24)
+- Compression 0.19, change 0.51 (2026-10-24)
+- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the actuation-gate-options

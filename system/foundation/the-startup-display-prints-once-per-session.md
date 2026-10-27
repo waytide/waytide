@@ -118,3 +118,9 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 **What the printed line is for, and what it is not.** It **points**. The `LICENSE` file **states**. A copy of that file sits at this repository's root and in every package directory. So it travels into each component repository and into every project that installs a package. That is where the license is read. The printed line does not carry terms and is not the place to put them.
 
 **The year is the year of the notice, not of the session.** It is written into this rule and is printed verbatim, so it does not track the clock and is not computed. It changes when the rule changes.
+
+## Compression
+
+- Solubility 53, clarity 0.90 (2026-10-24)
+- Compression 0.44, change 0.74 (2026-10-24)
+- 53 directives, 51 kept, 2 less precise, 0 lost (2026-10-27)

@@ -54,6 +54,12 @@ Write none for a completed task, and none for prose that settles nothing. Write 
 
 Name the record in the entry, and say what happened to it. State what the record settles as the record's, never as the system's behavior, and carry that into the commit subject the entry travels in. Fix no template for the wording.
 
+## Compression
+
+- Solubility 44, clarity 0.47 (2026-10-22)
+- Compression 0.58, change 0.80 (2026-10-22)
+- 19 directives, 16 kept, 3 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form, and the general trigger this makes specific

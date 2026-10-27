@@ -38,6 +38,12 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Write a reference to such a record without its state suffix or its extension, so no reference needs reconciling at a rename. Leave historical records as written. Give no suffix to an implementation record carrying no state line, and add none to any file's contents.
 
+## Compression
+
+- Solubility 75, clarity 0.89 (2026-10-24)
+- Compression 0.44, change 0.69 (2026-10-24)
+- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule — the record whose state line is absent while the work is under way, and the words each kind takes

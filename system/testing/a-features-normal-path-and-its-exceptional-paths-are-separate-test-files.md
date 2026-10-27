@@ -14,6 +14,12 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 
 **How to apply:** when a feature has a normal path and an exceptional path, give the feature a folder. Write each in its own file. The normal path named for the feature, each exceptional path named for its condition. Keep the normal path's proof in its own file. Do not add a second, raising actuation to a normal-path file.
 
+## Compression
+
+- Solubility 77, clarity 0.78 (2026-10-24)
+- Compression 0.28, change 0.57 (2026-10-24)
+- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule — actuate once at the top

@@ -28,6 +28,12 @@ The other four records survive being the agent's work because they report what h
 
 Change no entry that exists on your own reading. Where the writer directs a change to one, make exactly the change they named, leave everything else as written, and log it.
 
+## Compression
+
+- Solubility 74, clarity 0.75 (2026-10-24)
+- Compression 0.36, change 0.60 (2026-10-24)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps rule — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log

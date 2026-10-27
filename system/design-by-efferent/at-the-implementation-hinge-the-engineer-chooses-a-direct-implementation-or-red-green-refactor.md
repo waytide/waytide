@@ -31,6 +31,12 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 **How to apply:** at the implementation hinge for a unit's **first** implementation, offer the two candidates through the selection UI. They are the working implementation, and the red/green/refactor cycle. Where the cycle is chosen, write the red only if its cause reaches no stable test. Run the suite, then green, then refactor. Do not offer the cycle when covering behavior that already exists. Do not present a failing implementation as an option merely to reach the two-option floor.
 
+## Compression
+
+- Solubility 62, clarity 0.82 (2026-10-24)
+- Compression 0.36, change 0.64 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the five hinges, of which this is the fourth

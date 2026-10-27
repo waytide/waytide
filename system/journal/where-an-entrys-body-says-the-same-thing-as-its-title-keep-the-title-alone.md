@@ -8,6 +8,12 @@ This is the title-and-body counterpart of the journal-entries-are-recorded-in-th
 
 **How to apply:** after drafting an entry, compare the title and the body. Where the body adds no fact, no detail, and no framing beyond the title, drop the body and keep the title.
 
+## Compression
+
+- Solubility 85, clarity 0.73 (2026-10-24)
+- Compression 0.11, change 0.45 (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground

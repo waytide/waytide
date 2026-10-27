@@ -39,6 +39,12 @@ Run `test/automated/` before weighing a commit, and run nothing from `test/inter
 
 Where a project has no automated suite, run nothing and report nothing missing.
 
+## Compression
+
+- Solubility 70, clarity 0.85 (2026-10-24)
+- Compression 0.38, change 0.65 (2026-10-24)
+- 23 directives, 22 kept, 1 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-test-file-named-with-a-leading-underscore-is-suspended rule — the other thing that decides what a run contains

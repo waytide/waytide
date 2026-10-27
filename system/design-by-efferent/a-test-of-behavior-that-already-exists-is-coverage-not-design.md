@@ -14,6 +14,12 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 **When the work is adding coverage, a test that passes when first run is expected and correct.** The activity is preventing a regression in existing behavior rather than designing new behavior. See the "TDD designs, coverage prevents" rule.
 
+## Compression
+
+- Solubility 81, clarity 0.75 (2026-10-24)
+- Compression 0.22, change 0.64 (2026-10-24)
+- 10 directives, 7 kept, 3 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the DBE-as-design-tool rule

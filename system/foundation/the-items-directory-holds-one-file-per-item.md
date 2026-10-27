@@ -88,6 +88,12 @@ Keeping the shape thin is the other half. The rules this replaces fixed a spine 
 
 Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
 
+## Compression
+
+- Solubility 46, clarity 0.55 (2026-10-21)
+- Compression 0.60, change 0.83 (2026-10-22)
+- 75 directives, 49 kept, 23 less precise, 3 lost (2026-10-22)
+
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is

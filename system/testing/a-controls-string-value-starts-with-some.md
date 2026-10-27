@@ -8,6 +8,12 @@ This parallels the constant-name convention, where example names are `"SomeModul
 
 **How to apply:** Write `control_file = "some file"` (and `"some other file"`, etc.) for placeholder string values. Reserve specific string content only when the test actually depends on it. Non-string placeholder values (e.g. a number) are not covered — they have no "some" form.
 
+## Compression
+
+- Solubility 92, clarity 0.89 (2026-10-24)
+- Compression 0.21, change 0.58 (2026-10-24)
+- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the `control_` test-variable prefix rule

@@ -66,6 +66,12 @@ A **project** settles a term for itself. Put it in `waytide/local/vocabulary.md`
 
 Give a package a vocabulary only when its domain has specialized words. When a word appears in two vocabularies, the more specific one decides. The entry says whether it narrows the general term or replaces it. Keep substitutions and discontinuations under separate headings.
 
+## Compression
+
+- Solubility 54, clarity 0.79 (2026-10-24)
+- Compression 0.29, change 0.50 (2026-10-24)
+- 35 directives, 31 kept, 3 less precise, 1 lost (2026-10-27)
+
 Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one

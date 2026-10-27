@@ -12,6 +12,12 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 **How to apply:** write an accepted implementation and run the suite. Then run the current feature's test files with verbose output. Include that output in the turn that reports the implementation. The engineer then judges solubility on what is shown. The each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule shows the implementation and the just-satisfied test. This one requires the **feature's full test output** at **every** implementation hinge.
 
+## Compression
+
+- Solubility 93, clarity 0.89 (2026-10-22)
+- Compression 0.55 (2026-10-22), change 0.78 (2026-10-21)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule

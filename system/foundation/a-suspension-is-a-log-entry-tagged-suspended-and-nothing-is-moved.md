@@ -36,6 +36,12 @@ What the queue was really protecting against is a thing coming back different, r
 
 Do not keep a copy of the removed thing. Do not tag an item's log entry this way — an item set aside carries `**State:** Suspended` and is not removed.
 
+## Compression
+
+- Solubility 70, clarity 0.76 (2026-10-24)
+- Compression 0.26, change 0.52 (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form

@@ -98,6 +98,12 @@ Take the display name from the project's `writers.toml` where it holds one for t
 
 Never read git for identity. Never invent a username, and never compute a display name from one. Never take a username from `writers.toml`. Fail loudly where no username resolves.
 
+## Compression
+
+- Solubility 52, clarity 0.92 (2026-10-24)
+- Compression 0.23, change 0.50 (2026-10-24)
+- 52 directives, 52 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-journal-is-the-record-the-writer-keeps rule — the per-writer directories `writers.toml` sits beside

@@ -30,6 +30,12 @@ When running a suite, skip every file whose name begins with an underscore, and 
 
 Do not delete a test to get it out of the suite, and do not leave a failing one in. Do not tag a log entry `[suspended]` for one, since nothing was removed.
 
+## Compression
+
+- Solubility 75, clarity 0.86 (2026-10-24)
+- Compression 0.28, change 0.67 (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit rule — the other thing that decides what a run contains

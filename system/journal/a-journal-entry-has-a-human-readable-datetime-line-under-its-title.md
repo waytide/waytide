@@ -14,6 +14,12 @@ The structure of a full entry is therefore the `# <title>`, then the datetime li
 
 **How to apply:** when creating an entry, compute the datetime line from the local-time filename stamp with `date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"`, and collapse any double space. Use `"%Y-%m-%d %H:%M:%S"` as the parse format where the stamp carries seconds. Place the line under the title, above any `**Tags:**` or `**Summary:**` line.
 
+## Compression
+
+- Solubility 85, clarity 0.87 (2026-10-24)
+- Compression 0.06, change 0.45 (2026-10-24)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the filename stamp this is derived from, and its local time

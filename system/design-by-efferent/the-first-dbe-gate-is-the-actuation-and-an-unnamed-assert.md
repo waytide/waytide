@@ -46,6 +46,12 @@ Keeping the first gate to the actuation and a single unnamed assert keeps that g
 
 Each is proposed and accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule. Do not present the whole test file for a single accept, unless the engineer chose unattended work at the start (see the attended-or-unattended-is-chosen-when-the-work-is-started rule). Settle the three test hinges first, then assemble and show the file.
 
+## Compression
+
+- Solubility 59, clarity 0.76 (2026-10-24)
+- Compression 0.19, change 0.52 (2026-10-24)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the DBE-as-design-tool rule

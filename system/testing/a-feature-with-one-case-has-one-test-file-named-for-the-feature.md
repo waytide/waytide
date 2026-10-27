@@ -12,6 +12,12 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 **How to apply:** start a feature's test wherever is convenient. Once the case set is settled, and there is one case, collapse to `<feature>.rb` named for the feature. Fix the `require_relative` depth accordingly. If more than one, use `<feature>/<case>.rb` with each file named for its case.
 
+## Compression
+
+- Solubility 88, clarity 0.85 (2026-10-24)
+- Compression 0.04, change 0.45 (2026-10-24)
+- 11 directives, 10 kept, 1 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-context-nesting-mirrors-the-folder-hierarchy rule

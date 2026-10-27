@@ -35,6 +35,12 @@ An assertion with an inlined `Upload::Result.build(...)` buries a value inside t
 
 **How to apply:** In the enclosing `context`, declare the controls. Bind the actuation to an explaining variable, and bind any compared-against or expected value to its own explaining variable. The `test` block contains exactly one `assert`, comparing those variables — no value-producing method call inside it. The comparison operator (`==`, etc.) is the assertion's predicate, not an inlined value-producing call, so it stays. A precondition is outside all of this and reads inline.
 
+## Compression
+
+- Solubility 80, clarity 0.88 (2026-10-24)
+- Compression 0.24, change 0.64 (2026-10-24)
+- 17 directives, 16 kept, 0 less precise, 1 lost (2026-10-27)
+
 Related:
 
 - the DBE first-turn rule

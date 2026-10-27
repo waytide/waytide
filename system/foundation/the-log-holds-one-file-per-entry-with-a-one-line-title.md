@@ -12,6 +12,12 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 **How to apply:** when a decision is made, write a titled entry under `waytide/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
 
+## Compression
+
+- Solubility 65, clarity 0.70 (2026-10-24)
+- Compression 0.29, change 0.60 (2026-10-24)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the file-names rule — the shared filename convention

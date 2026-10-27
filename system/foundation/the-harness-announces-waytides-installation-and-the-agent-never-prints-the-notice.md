@@ -178,6 +178,12 @@ Write the notice as plain text, with no markdown markup, since the harness rende
 
 Keep the engineer's own segments separated by the middle dot. Set the trailing Waytide segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
 
+## Compression
+
+- Solubility 32, clarity 0.58 (2026-10-21)
+- Compression 0.70, change 0.91 (2026-10-22)
+- 68 directives, 62 kept, 6 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-startup-display-prints-once-per-session rule — the startup display, which this notice does not carry and the agent does not print

@@ -12,6 +12,12 @@ Speak and write to the user in plain language, using the **actual names of thing
 
 **How to apply:** when explaining something, use the concrete name and a plain description. Bring in a shorthand only after its meaning is clear, and only if it is justified. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items.
 
+## Compression
+
+- Solubility 74, clarity 0.66 (2026-10-24)
+- Compression 0.33, change 0.52 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the `language-is-used-precisely-here-and-words-are-load-bearing` premise this serves

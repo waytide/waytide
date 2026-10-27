@@ -32,6 +32,12 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 Stamp to the minute. Write seconds only where the writer stated seconds, and drop the clock's seconds under **Now**.
 
+## Compression
+
+- Solubility 53, clarity 0.84 (2026-10-24)
+- Compression 0.21, change 0.53 (2026-10-24)
+- 31 directives, 31 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved

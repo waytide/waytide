@@ -42,6 +42,12 @@ end
 
 On finding a context that holds only a test, warn as above, unless the local rule suppresses it. Flatten only on the engineer's choice. When flattening an over-nested test, flatten **only** where there is no code between the context and the `test`. The context then holds nothing but the test. The context must **also** not be a leading `When …` condition.
 
+## Compression
+
+- Solubility 72, clarity 0.70 (2026-10-24)
+- Compression 0.19, change 0.52 (2026-10-24)
+- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule

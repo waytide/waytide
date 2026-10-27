@@ -35,6 +35,12 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 
 **How to apply:** leave historical records alone. Where one discloses what should not have been disclosed, correct it. Remove the disclosure. Keep every claim the record makes true by stating it at a lower resolution. Log the edit, and tell the engineer that the git history is not reached by it.
 
+## Compression
+
+- Solubility 64, clarity 0.68 (2026-10-24)
+- Compression 0.28, change 0.60 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule and the reconcile entry in this package's vocabulary — where the standing rule is stated

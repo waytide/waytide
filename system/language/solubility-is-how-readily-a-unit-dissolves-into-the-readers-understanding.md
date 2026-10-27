@@ -10,6 +10,12 @@ The word is used as a general quality of a design. It is judged **by the reader*
 
 **How to apply:** use "solubility" wherever the concern is how readily a unit is understood. That is in prose, rules, designs, commits, and dialogue. Judge it from the reader, and ask what interpretive work the unit costs them.
 
+## Compression
+
+- Solubility 90, clarity 0.90 (2026-10-24)
+- Compression 0.13, change 0.43 (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the name-concepts-literally-not-by-analogy-code-or-jargon rule — which uses solubility as its criterion

@@ -18,6 +18,12 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 **How to apply:** name the software that changed, then state its new state in passive, indicative voice, subject leading. Never lead with a verb, because a verb puts the engineer's work ahead of the software. That is imperative and past tense alike.
 
+## Compression
+
+- Solubility 81, clarity 0.72 (2026-10-22)
+- Compression 0.39, change 0.56 (2026-10-22)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rule

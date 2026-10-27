@@ -45,6 +45,12 @@ When *you* raise the question of recording, rather than being told to, put it th
 
 Once the record is written, put the **design reconciliation** through the same UI. The options are to update the design, that the design stands, or that no design bears on this work session. Surface what diverges, and leave the verdict to the engineer.
 
+## Compression
+
+- Solubility 45, clarity 0.75 (2026-10-24)
+- Compression 0.33, change 0.61 (2026-10-24)
+- 34 directives, 34 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule and the the-items-directory-holds-one-file-per-item rule — the sibling artifact conventions

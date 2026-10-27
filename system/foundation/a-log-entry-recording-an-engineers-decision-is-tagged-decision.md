@@ -24,6 +24,12 @@
 
 **How to apply:** when the engineer makes a decision, write its log entry with `**Tags:** [decision]` under the title. Do not tag an entry for an act the agent took under a rule.
 
+## Compression
+
+- Solubility 93, clarity 1.00 (2026-10-24)
+- Compression 0.15, change 0.37 (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form

@@ -13,6 +13,12 @@ Tests serve two different purposes in two different processes, and conflating th
 
 **How to apply:** when the behavior already exists and you are adding coverage, write the test and run it. Accept that it is verified, and leave the implementation untouched. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
 
+## Compression
+
+- Solubility 85, clarity 0.86 (2026-10-24)
+- Compression 0.36, change 0.64 (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the companion rule "the design of a test waits at the hinges" — they still apply when writing coverage

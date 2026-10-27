@@ -12,6 +12,12 @@ So a test reads **control → actuate → observe** (the assertion is only *how*
 
 **How to apply:** in prose, comments, docs, and dialogue, say **controls** for the helpers and the example values. Call the pre-actuation setup the **control** of the test. Never "factory"/"factories", "fixture(s)", "arrange", or "arrangement". The noun form imports what the verb does.
 
+## Compression
+
+- Solubility 90, clarity 0.86 (2026-10-24)
+- Compression 0.30, change 0.65 (2026-10-24)
+- 7 directives, 7 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the `control_` test-variable prefix rule

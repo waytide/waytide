@@ -36,6 +36,12 @@ A list of consumers reads as internal bookkeeping right up until the repository 
 
 A decision may have been about that project, and its name is there for that. Leave it. The rule is about naming a project *as a consumer*. Leave historical records as written. Treat a name already in one as the disclosure rule's concern rather than this one's.
 
+## Compression
+
+- Solubility 83, clarity 0.86 (2026-10-24)
+- Compression 0.56, change 0.73 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded

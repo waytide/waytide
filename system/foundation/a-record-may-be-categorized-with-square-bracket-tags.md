@@ -49,6 +49,12 @@ Write tags lower-case and dash-separated in square brackets. Introduce a freefor
 
 Reserve a tag by naming it in a rule and stating what follows from it. Where no rule names a tag, it is freeform.
 
+## Compression
+
+- Solubility 60, clarity 0.90 (2026-10-24)
+- Compression 0.30, change 0.53 (2026-10-24)
+- 29 directives, 29 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the `journal` package's the-journal-is-the-record-the-writer-keeps and a-journal-entry-has-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary

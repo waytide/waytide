@@ -69,6 +69,12 @@ Four rules stating one lifecycle twice is four places to keep true, and the two 
 
 Leave the state line off while the work is under way. Add it when the record reaches a word, and update it as the state changes. Record each confirmation the lifecycle requires.
 
+## Compression
+
+- Solubility 46, clarity 0.78 (2026-10-24)
+- Compression 0.12, change 0.48 (2026-10-24)
+- 58 directives, 58 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records

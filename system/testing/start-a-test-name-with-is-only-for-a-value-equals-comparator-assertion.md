@@ -18,6 +18,12 @@ Counter-examples, where "Is" is not used:
 
 **How to apply:** Before naming a context "Is …", look at its assertion. If it is `assert(a == b)` (or identity), "Is …" fits. Otherwise name the context for the outcome it establishes (the predicate, the presence, the exclusion, the behavior. A raised error is named "Fails" — see the error-test-naming rule).
 
+## Compression
+
+- Solubility 67, clarity 0.46 (2026-10-24)
+- Compression 0.05, change 0.29 (2026-10-24)
+- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the test-structure rule and the `control_` test-variable prefix rule — in this package

@@ -24,6 +24,12 @@ The cost of forbidding it is real and is bounded to one case. That is the prefer
 
 Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, ask about it at once rather than holding it.
 
+## Compression
+
+- Solubility 68, clarity 0.61 (2026-10-24)
+- Compression 0.42, change 0.66 (2026-10-24)
+- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe

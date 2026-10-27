@@ -27,6 +27,12 @@ Stated that way, the segment a change increases is **read off what the change do
 
 **How to apply:** version a package as `<major>.<minor>.<patch>`, prefixed by a `<generation>` where the project carries one. Hold to that form for the life of the project. Choose the segment to increase by asking what a user of the package must do. It is nothing, nothing but read, or change their code. Never increase the generation as part of a release. It moves only when a new product line has been declared.
 
+## Compression
+
+- Solubility 84, clarity 0.93 (2026-10-24)
+- Compression 0.44, change 0.70 (2026-10-24)
+- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule — who makes the decision and how it is put

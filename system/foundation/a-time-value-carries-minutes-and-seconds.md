@@ -27,6 +27,12 @@ That reads as an error rather than as provenance, so the entry went unwritten in
 
 **How to apply:** when writing a datetime that includes a time of day, write the seconds, except where this rule names an exception. That holds for a rule, a working-state artifact, a log entry, and any other file. When specifying a new datetime format, specify it to seconds. Leave date-only conventions as they are, and do not revise a datetime already recorded at a coarser resolution.
 
+## Compression
+
+- Solubility 78, clarity 0.77 (2026-10-24)
+- Compression 0.48, change 0.72 (2026-10-24)
+- 14 directives, 13 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the human-readable local datetime this corrects

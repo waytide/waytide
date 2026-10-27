@@ -20,6 +20,12 @@ Naming an error test for its behavior rather than a value comparison is fully co
 
 **How to apply:** name any `assert_raises` test "Fails". Name the non-raising assertion "Doesn't fail". Put it inside a `context` named for the condition, the "when …".
 
+## Compression
+
+- Solubility 86, clarity 0.81 (2026-10-24)
+- Compression 0.33, change 0.66 (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule

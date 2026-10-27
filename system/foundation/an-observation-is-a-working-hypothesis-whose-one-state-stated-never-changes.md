@@ -38,6 +38,12 @@ Giving an observation the **eight states every other item takes** was the cost o
 
 Write a later observation where the thinking moves, and leave the earlier one as written. Promote it by writing the rule elsewhere, and add to the observation only the line naming that rule.
 
+## Compression
+
+- Solubility 61, clarity 0.70 (2026-10-24)
+- Compression 0.34, change 0.56 (2026-10-24)
+- 22 directives, 21 kept, 1 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-items-directory-holds-one-file-per-item rule — the eight states an observation does not take, and the state requirement it satisfies

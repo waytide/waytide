@@ -13,6 +13,12 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 
 **Why:** this keeps error tests about error *correctness* (was the right failure raised under the right condition), not error *presentation*. It makes a precise, testable criterion of the line that library-specific error classes are "self-evidently the right failure and need no message".
 
+## Compression
+
+- Solubility 85, clarity 0.87 (2026-10-24)
+- Compression 0.20, change 0.47 (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule, and the prevent substitution — in this package's vocabulary

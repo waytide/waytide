@@ -8,6 +8,12 @@ After making any code change, run the full test suite and confirm it passes **be
 
 **How to apply:** Edit → run the full suite → confirm it reports nothing failed → only then consider committing. If anything is failing or aborted, fix it (or stop) before the commit question arises. For a single-file change you may run the one file first for speed, but run the full suite before commit.
 
+## Compression
+
+- Solubility 89, clarity 0.87 (2026-10-22)
+- Compression 0.17, change 0.42 (2026-10-22)
+- 10 directives, 9 kept, 1 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the human-in-the-loop TDD rule

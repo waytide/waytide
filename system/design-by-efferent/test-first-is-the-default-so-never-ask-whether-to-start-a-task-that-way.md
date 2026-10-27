@@ -12,6 +12,12 @@ A question with a genuinely situational answer is a decision rather than a settl
 
 **How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task selection if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
 
+## Compression
+
+- Solubility 78, clarity 0.70 (2026-10-24)
+- Compression 0.13, change 0.43 (2026-10-24)
+- 11 directives, 11 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the human-in-the-loop rule

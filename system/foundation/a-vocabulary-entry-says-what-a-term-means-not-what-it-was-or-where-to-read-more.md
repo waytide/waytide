@@ -36,6 +36,12 @@ Write no clause saying what the term used to be, when it changed, or what govern
 
 Write no pointer. Name no rule the reader should go and read, and send them to no other vocabulary and to no other section. A reader who wants the rule finds it by the term.
 
+## Compression
+
+- Solubility 70, clarity 0.67 (2026-10-24)
+- Compression 0.48, change 0.72 (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — what a vocabulary holds, and which one decides

@@ -16,6 +16,12 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 **How to apply:** resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read the `20*.md` files in `waytide/local/journal/<username>/`, sort them by their datetime line, emit the bullets, and append the computed count and date span. Write nothing to a file.
 
+## Compression
+
+- Solubility 83, clarity 0.78 (2026-10-24)
+- Compression 0.44, change 0.64 (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved

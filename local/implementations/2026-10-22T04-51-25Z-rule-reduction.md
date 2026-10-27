@@ -1576,6 +1576,14 @@ The three later repairs are not re-checked again.
 
 **The new rule was checked by its own method.** A fresh lister gave 41 directives, and a fresh checker judged 39 kept and 2 less precise. The two were repaired, and a fresh re-checker judged all 41 kept. Its compression is 0.18, its change 0.31, its solubility 34 → 56, and its clarity score 0.49 → 0.86, the before scored as a 106th row against the 105 rules at commit `770c7eb`.
 
+### The compiled rule carries only the latest measures — 2026-10-27
+
+**At the engineer's direction, a compiled rule carries the latest value of each measure, and the earlier events are history.** The source's `## Compression` section keeps every event line. The compiler now writes, in both compiled forms, a `## Compression` section above the `Related:` list, with the latest solubility and clarity score, the latest compression and change, and the latest directive counts, each with the date of the event that gave it. The engineer chose the latest value of each measure over the latest line alone, so a re-check that gives only counts does not hide the solubility an earlier event measured. The compile test covers it.
+
+**It adds 17,259 characters to the default compiled read, about 3%**, from 573,087 to 590,346, which counts against the forecast of the read's size. The compressed compiled read is 451,614 characters with the measures.
+
+**The compression rule is amended to match**, and checked by its own method. A fresh lister gave 45 directives, and a fresh checker judged 44 kept and 1 less precise. The one was repaired and re-checked. The re-checker found directive 41 less precise, *the same commit* not saying *as the change it records*. The source words it the same way, so it is left as it is. Its solubility is 34 → 53, and its clarity score 0.50 → 0.84.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4741,3 +4749,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:49:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:54:42 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:09:12 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:30:35 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:21 PM PT

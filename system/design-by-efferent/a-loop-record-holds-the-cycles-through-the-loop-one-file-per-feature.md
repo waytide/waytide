@@ -22,6 +22,12 @@
 
 **How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line log entries separate and intact.
 
+## Compression
+
+- Solubility 64, clarity 0.68 (2026-10-24)
+- Compression 0.22, change 0.57 (2026-10-24)
+- 22 directives, 22 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation

@@ -38,6 +38,12 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 **How to apply:** write a subject of at most 50 characters and wrap the body at 72. Where the subject will not fit, split the commit first and move detail to the body second. Do not abbreviate into shorthand, and do not revise a commit message already written.
 
+## Compression
+
+- Solubility 72, clarity 0.76 (2026-10-22)
+- Compression 0.39, change 0.57 (2026-10-22)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the write-subject-first-commit-messages rule — what the subject says, which this constrains the width of

@@ -18,6 +18,12 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 
 **How to apply:** when the work has gone past what the plan describes, leave the plan as written. Do not list the divergence as a reconciliation, and do not offer to bring the plan into line. Correct a plan where its direction is wrong, and amend one by dated addition where the engineer asks.
 
+## Compression
+
+- Solubility 83, clarity 0.84 (2026-10-24)
+- Compression 0.24, change 0.48 (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-work-sessions-directory-holds-one-record-per-work-session rule — the design reconciliation this settles the ordinary answer to

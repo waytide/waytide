@@ -8,7 +8,7 @@
 
 **A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
 
-**`./compile.sh` compiles the body, and `./compile.sh --compressed` compiles the compressed text.** Told `--compressed`, a rule with a Compressed section compiles to its title, the compressed text, and its `Related:` list. A rule with none compiles as it does by default. Neither form carries the `## Compressed` heading, the `## Compression` section, the `## History` section, or the provenance footer.
+**`./compile.sh` compiles the body, and `./compile.sh --compressed` compiles the compressed text.** Told `--compressed`, a rule with a Compressed section compiles to its title, the compressed text, and its `Related:` list. A rule with none compiles as it does by default. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer, and each carries the latest measures, as set out below.
 
 ## The check
 
@@ -42,11 +42,19 @@ Restorations, where a compression put back text it had dropped, are named on the
 
 The ranks are taken against the compiled rules at commit `770c7eb`, so that a figure written later is comparable with one written earlier. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 
-**The figures are written by the process that compresses, revises, or checks the text, in the same commit.** The compiler leaves the section out of the compiled rule, so the figures are not read at session start.
+**The figures are written by the process that compresses, revises, or checks the text, in the same commit.**
+
+**The compiled rule carries only the latest value of each measure**, each with the date of the event that gave it, in a `## Compression` section above its `Related:` list. The compiler writes it in both forms. The earlier events are the history of the measures, and they stay in the source alone, as a `## History` section does.
 
 **Why:** a compressed text is read in place of its source, so a directive it loses is lost to every session that reads it. The check is what shows that it carries what the source carries. Recording the figures in the source keeps the facts about a compressed text where the text is. A reader of the rule sees how it was compressed, how it changed, and when it was last checked, without the experiment record that produced it.
 
 **How to apply:** write a compressed text in the source's `## Compressed` section, as numbered lists. Have a fresh lister and a fresh checker check it against the body, repair each loss with the smallest clause, and check a repaired rule again. Add a line to the source's `## Compression` section for each compression, revision, and check, in the same commit as the change it records.
+
+## Compression
+
+- Solubility 53, clarity 0.84 (2026-10-27)
+- Compression 0.18, change 0.31 (2026-10-27)
+- 45 directives, 44 kept, 1 less precise, 0 lost (2026-10-27)
 
 Related:
 

@@ -58,6 +58,12 @@
 
 **How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Read every installed package's rules as always, and follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying.
 
+## Compression
+
+- Solubility 57, clarity 0.70 (2026-10-22)
+- Compression 0.44, change 0.78 (2026-10-22)
+- 37 directives, 34 kept, 3 less precise, 0 lost (2026-10-22)
+
 Related:
 
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read this leaves whole

@@ -26,6 +26,12 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 
 **How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
 
+## Compression
+
+- Solubility 73, clarity 0.82 (2026-10-24)
+- Compression 0.19, change 0.55 (2026-10-24)
+- 14 directives, 12 kept, 2 less precise, 0 lost (2026-10-27)
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule, the the-work-sessions-directory-holds-one-record-per-work-session rule, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups

@@ -33,6 +33,12 @@ Changed by <other name> on <datetime>
 
 **How to apply:** when authoring a new rule, end it with a `---` divider. Add an `Authored by <name> on <local datetime>` line. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer. Write its time to seconds.
 
+## Compression
+
+- Solubility 79, clarity 0.75 (2026-10-24)
+- Compression 0.29, change 0.51 (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-time-value-carries-minutes-and-seconds rule — the time's resolution

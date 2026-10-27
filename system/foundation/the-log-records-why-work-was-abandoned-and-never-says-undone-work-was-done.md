@@ -28,6 +28,12 @@ The failure it prevents is specific and hard to see from inside. Every sentence 
 
 Write no reason that was not given. Do not reproduce the plan, the increments, or the design the abandoned work produced. Where an entry needs more than a line, it takes a body — see the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 
+## Compression
+
+- Solubility 75, clarity 0.67 (2026-10-24)
+- Compression 0.55, change 0.79 (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's shape, and when it takes a body

@@ -11,3 +11,9 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 **Why:** The user wants to direct code generation at their command rather than have plans pre-bake implementation. Code samples and premature naming lock in decisions early and remove the interactive, incremental control the user wants over how the work is shaped.
 
 **How to apply:** When writing or revising a plan, describe each step's intent and expected outcome in prose only. Write no code, and invent no method or file names where those are not yet decided. When it's time to implement, generate code only on the user's explicit instruction, in the increments they choose.
+
+## Compression
+
+- Solubility 92, clarity 0.87 (2026-10-24)
+- Compression 0.22, change 0.59 (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)

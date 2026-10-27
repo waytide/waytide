@@ -26,6 +26,12 @@ Offering the candidates rather than asking for a version outright is what keeps 
 
 **How to apply:** at a release, read the current version. Present patch, minor, and major as options through the selection UI, with the resulting version and the claim each makes. Let the engineer choose. Do not include the generation. Do not propose one and ask for confirmation.
 
+## Compression
+
+- Solubility 85, clarity 0.80 (2026-10-24)
+- Compression 0.55, change 0.75 (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the a-version-is-semver-optionally-prefixed-by-a-product-generation-number rule — what the segments mean and why the generation is excluded

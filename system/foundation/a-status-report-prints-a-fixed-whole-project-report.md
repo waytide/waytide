@@ -40,6 +40,12 @@ Keep each part tight. Read current state before printing — do not report stale
 
 **How to apply:** on a status-report request, render the parts above from current files. Those are the project's items, `waytide/local/logs/log/`, and git. Confirm the suite count and the two-level context tree by running the suite rather than asserting them. Take the two levels from **the run's output**, not from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source, and as its real value in a run. An unnamed test appears in the source and emits no line.
 
+## Compression
+
+- Solubility 51, clarity 0.83 (2026-10-24)
+- Compression 0.10, change 0.41 (2026-10-24)
+- 32 directives, 32 kept, 0 less precise, 0 lost (2026-10-24)
+
 Related:
 
 - the the-items-directory-holds-one-file-per-item rule — the `Suspended` state a hidden record carries
