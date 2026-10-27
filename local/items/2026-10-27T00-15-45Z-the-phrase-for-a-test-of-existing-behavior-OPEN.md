@@ -8,6 +8,7 @@
 **The options recorded so far:**
 - passes as first written, the engineer's
 - passes by default, the engineer's
+- cannot fail, the engineer's
 - a test of existing behavior, the phrase the rule's title uses
 - a test the existing code already satisfies
 - a test that passes before any implementation is written
@@ -21,3 +22,4 @@ As the engineer first stated it: "Start recording options. Passes as first writt
 
 Authored by Scott Bellware on Mon Oct 26 2026 at 5:15:45 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:15:56 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:10 PM PT
