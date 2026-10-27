@@ -1596,6 +1596,25 @@ The three later repairs are not re-checked again.
 
 **The engineer settled that finding #10, nothing re-reading the rules after the context is compacted, belongs to phase 3, additional-context.** Phase 1 does not take it up. Every finding now has its place: #1 is phase 1's own question, #7 is phase 2's, #10 is phase 3's, and the rest are resolved.
 
+### Phase 1's read size against master — results, 2026-10-27
+
+**The compressed read is 17.7% smaller than master's read**, inside forecast 1's range of 10% to 25%. The read is what the session-start instruction names: every compiled `.md` under `system/` outside `source/` and other than a `README.md`, and every rule in `local/rules/`.
+
+| read | packages | files | local rules | total |
+|---|---|---|---|---|
+| master at `4330363` | 513,095 | 113 | 34,685 | 547,780 |
+| this branch at `0ef63d5`, compressed | 412,858 | 114 | 37,966 | 450,824 |
+| this branch at `0ef63d5`, uncompressed | 553,985 | 114 | 37,966 | 591,951 |
+
+The figures are characters.
+
+- **The saving is 96,956 characters.** The packages alone fall by 19.5%.
+- **The latest measures cost about 17,000 characters of it**, in 102 files. Without them the compressed read would be about 20.8% smaller than master's.
+- **The uncompressed read on this branch is 8.1% larger than master's.** It carries the latest measures, the compression rule, and the longer rule names. That is the read a project gets if it compiles without `--compressed`.
+- **The local rules grew by 3,281 characters**, from the longer rule names their citations now use.
+
+**This settles forecast 1 by size alone.** Forecast 2, that sessions behave the same from the compressed read, is what says whether the saving is worth having.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4765,3 +4784,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:14:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:24:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:25:02 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:28:21 PM PT
