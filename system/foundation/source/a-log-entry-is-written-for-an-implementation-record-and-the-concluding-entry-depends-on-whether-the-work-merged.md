@@ -59,7 +59,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 6. For unmerged work, the entry carries the finding, and only where there is one.
 7. For an unmerged experiment that reached a verdict, the entry states the question, the verdict, and what was found.
 8. For abandoned work, the entry states the intent, that it was abandoned, and the reasoning given for stopping.
-9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule).
+9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule).
 10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
 11. Do not rely on the practice of committing the record to `master` while the work is on a branch.
 
@@ -123,3 +123,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT

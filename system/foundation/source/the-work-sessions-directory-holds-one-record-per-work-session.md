@@ -19,7 +19,7 @@ Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records w
 - **Glossary** — the terms settled during the work session, each with its literal definition.
 - **Where the durable records live** — pointers to the rules, observations, log entries, experiments, and code the work session produced.
 - Optionally, a **reflective closing note** on the work session itself.
-- A **provenance footer** — like every working-state artifact, a work session record ends with the `Authored by … / Changed by …` footer, so the file stands on its own. See the working-state-artifacts-carry-a-provenance-footer rule (the shared convention and its reason) and record-a-rules-authorship-in-a-provenance-footer rule (the format).
+- A **provenance footer** — like every working-state artifact, a work session record ends with the `Authored by … / Changed by …` footer, so the file stands on its own. See the working-state-artifacts-carry-a-provenance-footer rule (the shared convention and its reason) and the record-a-rules-authorship-in-a-provenance-footer rule (the format).
 
 ## Reconcile the settled direction once the record is written
 
@@ -182,3 +182,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT

@@ -65,6 +65,8 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
+**An `[experiment]` that will merge brings what master needs to conform to it.** Before it merges, its branch holds every rule its practice needs, and every other change master needs to conform to what it developed. A practice the experiment introduced reaches master already governed, not as work left over for after the merge.
+
 **A `[feature]` is verified before integrating, and nothing gates the merge.** `run-the-test-suite-after-changes-before-considering-whether-to-commit` already achieves it, every commit on the branch having been verified. The merged result is a combination neither branch ran, so a feature whose commits all passed can still break the suite on integration. That is ordinary and is fixed from there. There is no affirmation step, because a feature has no finding to promote.
 
 **Refuted, inconclusive, abandoned, and superseded keep the record and do not merge.** The record is maintained and marked, so the attempt and its findings survive as evidence.
@@ -99,7 +101,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 Stating the shared lifecycle once and conditioning six clauses on a tag is smaller than stating it twice, and it makes the asymmetry legible instead of leaving a reader to diff two rules to find it.
 
-**How to apply:** branch for every implementation, named for its tag. Record the upstream branch, the branch, and the base. Ask the working location and the participation level at the start, through the selection interface, and record both. Offer the current branch only for a feature, and offer it last.
+**How to apply:** branch for every implementation, named for its tag. Record the upstream branch, the branch, and the base. Ask the working location and the participation level at the start, through the selection interface, and record both. Offer the current branch only for a feature, and offer it last. Before an experiment merges, write on its branch the rules and changes master needs to conform to it.
 
 Follow DBE inside. End in a declared state. Copy an affirmed experiment's log into the project's log and merge where it produced implementation. Verify a feature before integrating and add no gate at the merge.
 
@@ -194,27 +196,28 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 5. Where it produced implementation, its branch merges to the upstream branch, after the tests pass.
 6. Where no test covers the work, the merge also waits for specific confirmation.
 7. An observation-only experiment's affirmation is the log copy alone.
-8. A `[feature]` merges with no gate, because run-the-test-suite-after-changes-before-considering-whether-to-commit rule verified every commit.
-9. The merged result can still break the suite, and that is fixed from there.
-10. A feature has no affirmation.
-11. Refuted, inconclusive, abandoned, and superseded work keeps its record, marked with its state, so the attempt and its findings survive.
-12. Refuted, inconclusive, abandoned, and superseded work does not merge.
-13. Supersession runs through suspension.
-14. The superseded implementation stays Suspended, its branch kept, until the engineer concludes it as superseded.
-15. The two records name each other.
-16. A child supersedes its parent by preserving it.
-17. The child merges the parent first, taking every commit the parent made after the child branched.
-18. The parent is then parked Superseded, and the records name each other.
-19. The child takes the parent's upstream.
-20. The parent branch is deleted only on confirmation.
-21. This is the one supersession that merges the superseded branch.
-22. Conclude in the main working tree, on the upstream branch.
-23. Under branch only, the working tree switches back.
-24. Under a worktree, end the session in the main working tree, never in the removed directory.
-25. On the current branch there is nothing to return from.
-26. Branch deletion takes one confirmation from the engineer, through the selection interface. It covers the worktree removal too. Do not prompt twice.
-27. Remove the worktree first, since git refuses to delete a branch checked out in a worktree.
-28. Suspension deletes no branch and removes no worktree.
+8. An `[experiment]` that will merge brings what master needs to conform to it: every rule its practice needs, and every other change, on its branch before it merges.
+9. A `[feature]` merges with no gate, because every commit was verified under the run-the-test-suite-after-changes-before-considering-whether-to-commit rule.
+10. The merged result can still break the suite, and that is fixed from there.
+11. A feature has no affirmation.
+12. Refuted, inconclusive, abandoned, and superseded work keeps its record, marked with its state, so the attempt and its findings survive.
+13. Refuted, inconclusive, abandoned, and superseded work does not merge.
+14. Supersession runs through suspension.
+15. The superseded implementation stays Suspended, its branch kept, until the engineer concludes it as superseded.
+16. The two records name each other.
+17. A child supersedes its parent by preserving it.
+18. The child merges the parent first, taking every commit the parent made after the child branched.
+19. The parent is then parked Superseded, and the records name each other.
+20. The child takes the parent's upstream.
+21. The parent branch is deleted only on confirmation.
+22. This is the one supersession that merges the superseded branch.
+23. Conclude in the main working tree, on the upstream branch.
+24. Under branch only, the working tree switches back.
+25. Under a worktree, end the session in the main working tree, never in the removed directory.
+26. On the current branch there is nothing to return from.
+27. Branch deletion takes one confirmation from the engineer, through the selection interface. It covers the worktree removal too. Do not prompt twice.
+28. Remove the worktree first, since git refuses to delete a branch checked out in a worktree.
+29. Suspension deletes no branch and removes no worktree.
 
 ## The agent never raises the end of an `[experiment]`
 
@@ -249,9 +252,9 @@ Until Mon Oct 26 2026 this rule restated why attended or unattended sits at one 
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule — the record, the tags, and the state words
-- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
+- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
-- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule and announce-a-branch-switch-in-a-bordered-block rules
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
 
 ---
 
@@ -277,3 +280,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT

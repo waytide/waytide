@@ -58,8 +58,8 @@ Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form, and the general trigger this makes specific
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the entry a removal takes, which is the whole of that act
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule, a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the three that already state their own pairing
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule, a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
 - the the-work-sessions-directory-holds-one-record-per-work-session rule — the reconciliation prompt whose *the direction stands* answer is logged
-- the `git` package's write-subject-first-commit-messages rule and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
+- the `git` package's write-subject-first-commit-messages and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
 - the the-items-directory-holds-one-file-per-item rule — the record whose states an entry reports, and which this rule's name predates

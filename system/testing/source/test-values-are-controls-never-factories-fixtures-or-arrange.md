@@ -33,7 +33,7 @@ Related:
 
 - the `control_` test-variable prefix rule
 - the control-string-value rule
-- the name-concepts-literally-not-by-analogy-code-or-jargon rule and no-slang rules in `language`
+- the name-concepts-literally-not-by-analogy-code-or-jargon and no-slang rules in `language`
 
 ---
 
@@ -46,3 +46,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:29 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT

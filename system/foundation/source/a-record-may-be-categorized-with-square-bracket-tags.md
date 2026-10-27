@@ -108,7 +108,7 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Related:
 
-- the `journal` package's the-journal-is-the-record-the-writer-keeps rule and a-journal-entry-has-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
+- the `journal` package's the-journal-is-the-record-the-writer-keeps and a-journal-entry-has-a-human-readable-datetime-line-under-its-title rules — where a journal entry's `**Tags:**` line sits, which is under the datetime line and above the summary
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry that gains a `**Tags:**` line under its title
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, a reserved tag the log carries
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — `[decision]`, the other reserved tag the log carries
@@ -139,3 +139,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
