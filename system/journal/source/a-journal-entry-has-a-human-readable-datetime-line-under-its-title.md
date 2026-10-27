@@ -1,4 +1,4 @@
-# A journal entry carries a human-readable datetime line under its title
+# A journal entry has a human-readable datetime line under its title
 
 Every journal entry carries a datetime stamp in its content, on its own line directly under the `# <title>` heading. It sits above the `**Tags:**` line where there is one, above the `**Summary:**` line where there is one, and above the body.
 
@@ -46,6 +46,8 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 
 Until Sun Oct 25 2026 this rule was named datetime-stamp-line.
 
+Until Mon Oct 26 2026 this rule was named a-journal-entry-carries-a-human-readable-datetime-line-under-its-title and titled "A journal entry carries a human-readable datetime line under its title".
+
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the filename stamp this is derived from, and its local time
@@ -66,3 +68,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:13 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT

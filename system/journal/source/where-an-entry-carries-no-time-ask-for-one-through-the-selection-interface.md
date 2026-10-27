@@ -77,7 +77,7 @@ Until Sun Oct 25 2026 this rule was named ask-for-entry-time-or-omit-it.
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the dating default that settles the date, and the filename stamp
-- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the in-content line that drops the time with it
+- the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the in-content line that drops the time with it
 - the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface, the `Explain` option, and the free-text option this rule's third option is not
 
 ---
@@ -95,3 +95,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT

@@ -11,4 +11,4 @@ This is the title-and-body counterpart of the journal-entries-live-in-the-writer
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground
-- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped
+- the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped

@@ -42,7 +42,7 @@ Until Sun Oct 25 2026 this rule was named timeline-view and titled "Timeline vie
 Related:
 
 - the the-writers-identity-resolves-through-a-fixed-override-chain rule — how `<username>` is resolved
-- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
+- the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term
 
@@ -58,3 +58,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT

@@ -24,7 +24,7 @@ Until Sun Oct 25 2026 this rule was named omit-body-when-same-as-title.
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground
-- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped
+- the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped
 
 ---
 
@@ -35,3 +35,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT

@@ -36,5 +36,5 @@ Name the file and write the datetime line to match the answer. Settle the date f
 Related:
 
 - the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the dating default that settles the date, and the filename stamp
-- the a-journal-entry-carries-a-human-readable-datetime-line-under-its-title rule — the in-content line that drops the time with it
+- the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the in-content line that drops the time with it
 - the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface, the `Explain` option, and the free-text option this rule's third option is not

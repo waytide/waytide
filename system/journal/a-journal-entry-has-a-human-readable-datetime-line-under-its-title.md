@@ -1,4 +1,4 @@
-# A journal entry carries a human-readable datetime line under its title
+# A journal entry has a human-readable datetime line under its title
 
 Every journal entry carries a datetime stamp in its content, on its own line directly under the `# <title>` heading. It sits above the `**Tags:**` line where there is one, above the `**Summary:**` line where there is one, and above the body.
 
