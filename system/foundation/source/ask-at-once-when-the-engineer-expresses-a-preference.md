@@ -24,7 +24,7 @@ Each is genuine, and the selection carries all three:
 
 **The engineer's own words are what is recorded.** They are at hand at the moment they are said and are not at hand an hour later. An agent writing the rule from memory records its own reading of the preference rather than the preference.
 
-**Why:** the alternative to writing a preference down is holding it in an agent memory store, which the a-projects-durable-context-lives-in-its-committed-artifacts rule forbids. So the path from a preference to a written rule has to be short enough that nothing needs holding. Asking at once is what makes it short, and the two rules are only sound together.
+**Why:** the alternative to writing a preference down is holding it in an agent memory store, which the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule forbids. So the path from a preference to a written rule has to be short enough that nothing needs holding. Asking at once is what makes it short, and the two rules are only sound together.
 
 Interrupting is the cost, and it is one selection. Deferring the ask to the end of the task costs the wording, which is the part worth keeping.
 
@@ -62,7 +62,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 7. If the engineer declines to record a preference, do not ask about it again in the same session.
 8. Record the engineer's own words, not a paraphrase.
 9. Capture the words when they are said. Do not write the rule later from memory.
-10. **Why:** The a-projects-durable-context-lives-in-its-committed-artifacts rule forbids holding a preference in an agent memory store. So the path to a written rule must be short enough that nothing needs holding. Asking at once keeps it short. If the ask waits until the end of the task, the engineer's wording is lost.
+10. **Why:** The a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule forbids holding a preference in an agent memory store. So the path to a written rule must be short enough that nothing needs holding. Asking at once keeps it short. If the ask waits until the end of the task, the engineer's wording is lost.
 
 ## History
 
@@ -70,7 +70,7 @@ Until Sun Oct 25 2026 this rule was named ask-at-once-when-a-preference-is-expre
 
 Related:
 
-- the a-projects-durable-context-lives-in-its-committed-artifacts rule — the store this replaces, and which depends on this one
+- the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
 - the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
@@ -89,3 +89,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT

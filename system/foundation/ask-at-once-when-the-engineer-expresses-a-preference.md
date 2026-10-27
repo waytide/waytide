@@ -24,7 +24,7 @@ Each is genuine, and the selection carries all three:
 
 **The engineer's own words are what is recorded.** They are at hand at the moment they are said and are not at hand an hour later. An agent writing the rule from memory records its own reading of the preference rather than the preference.
 
-**Why:** the alternative to writing a preference down is holding it in an agent memory store, which the a-projects-durable-context-lives-in-its-committed-artifacts rule forbids. So the path from a preference to a written rule has to be short enough that nothing needs holding. Asking at once is what makes it short, and the two rules are only sound together.
+**Why:** the alternative to writing a preference down is holding it in an agent memory store, which the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule forbids. So the path from a preference to a written rule has to be short enough that nothing needs holding. Asking at once is what makes it short, and the two rules are only sound together.
 
 Interrupting is the cost, and it is one selection. Deferring the ask to the end of the task costs the wording, which is the part worth keeping.
 
@@ -34,7 +34,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 
 Related:
 
-- the a-projects-durable-context-lives-in-its-committed-artifacts rule — the store this replaces, and which depends on this one
+- the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
 - the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
