@@ -60,9 +60,9 @@ fi
 # read in — which is the one thing this notice cannot report. Installation and a live
 # configuration are what the script can actually observe, so they are what it claims.
 #
-# What the the-startup-display-prints-once-per-session carries is not here. It led this line from 2026-08-05 until
+# What the the-startup-display-prints-once-per-session rule carries is not here. It led this line from 2026-08-05 until
 # 2026-08-06, and it moved to the agent, which prints it at the head of the response that begins
-# the rule read — see the the-startup-display-prints-once-per-session. It stands for a loading, and this hook runs before
+# the rule read — see the the-startup-display-prints-once-per-session rule. It stands for a loading, and this hook runs before
 # the session, so it could only ever appear here at a moment when nothing was being loaded. The
 # move takes the doubled-backslash hazard with it: nothing of it is interpolated into JSON any
 # more.
@@ -76,8 +76,9 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
 # all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
 # The state is read from the record's canonical "**State:** <state>" line. The state
-# words also appear throughout a record's prose, so only that line is authoritative;
-# a record without one is still in progress.
+# words also appear throughout a record's prose, so only that line is authoritative.
+# Active is the in-progress state. A record without a line is reported too, since it
+# has not concluded.
 #
 # Prints "<n> <noun> open: <name> (<note>), ..." or nothing. Arguments: the
 # directory, the singular noun, the plural noun, then the concluded state words.
@@ -114,6 +115,9 @@ report_open() {
     [ -z "$concluded" ] || continue
 
     case "$state" in
+      Active)
+        note=active
+        ;;
       Suspended)
         note=suspended
         ;;
@@ -125,9 +129,12 @@ report_open() {
         ;;
     esac
 
+    # The name is the filename without its datetime prefix and without its state suffix,
+    # which an open record carries as -ACTIVE or -SUSPENDED.
     name=$(
       basename "$record" .md |
-        sed 's|^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}Z-||'
+        sed -e 's|^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}T[0-9]\{2\}-[0-9]\{2\}-[0-9]\{2\}Z-||' \
+          -e 's|-[A-Z][A-Z]*$||'
     )
 
     open_count=$((open_count + 1))
@@ -228,7 +235,7 @@ notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction 
 # the session and has no way to observe what the agent then does. It removes the excuse
 # of the instruction being buried in a file the agent may not open, and no more.
 # The local rules are named unconditionally, whether or not the directory is there. The
-# binding rule (a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory) and the AGENTS.md bootstrap both name it without a
+# binding rule (the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule) and the AGENTS.md bootstrap both name it without a
 # condition, and an instruction narrower than the rule it exists to get followed is the defect
 # being corrected. A project with no local rules yet is the ordinary case, not an error, and a
 # fixed instruction is one string rather than one per project layout.
@@ -243,11 +250,11 @@ own_rules=${own:-waytide/local}
 # summarizes rules the read already carries.
 #
 # The instruction does not ask the agent to print the startup display. The harness prints it, from
-# startup-display.sh, when the engineer types load waytide — see the the-startup-display-prints-once-per-session. The
-# agent printed it until 2026-10-10, on an instruction here naming the the-startup-display-prints-once-per-session as the
+# startup-display.sh, when the engineer types load waytide — see the the-startup-display-prints-once-per-session rule. The
+# agent printed it until 2026-10-10, on an instruction here naming the the-startup-display-prints-once-per-session rule as the
 # first file to open, and under a later model the display stopped reaching the engineer: it was
 # skipped, or written into the agent's thinking where it is not shown. Nothing reported either.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/, except each package'\''s source/ directory and README.md, and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread; not every package has one, and its absence is not a defect. Read the local rules this project adds as well, in %s/rules/, which are binding in the same way and which no package supplies; that directory may not exist yet, which is ordinary and not an error. Read this project'\''s own vocabulary too, the single file %s/vocabulary.md, whose terms and substitutions decide over every package'\''s; that file may not exist, which is ordinary and not an error. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-once-per-session describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with the command load waytide, which asks for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, read every rule file under %s/, except each package'\''s source/ directory and README.md, and follow them — %s/foundation/ first, since it defines the system, then the other packages, including each package vocabulary.md, whose terms are binding and cannot be applied unread; not every package has one, and its absence is not a defect. Read the local rules this project adds as well, in %s/rules/, which are binding in the same way and which no package supplies; that directory may not exist yet, which is ordinary and not an error. Read this project'\''s own vocabulary too, the single file %s/vocabulary.md, whose terms and substitutions decide over every package'\''s; that file may not exist, which is ordinary and not an error. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-once-per-session rule describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with the command load waytide, which asks for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
   "$system" "$system" "$system" "$own_rules" "$own_rules")
 
 # The package set, where the project has declared one. It goes to the agent and not into the

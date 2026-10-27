@@ -10,9 +10,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **It reaches every record that carries a state line** — an implementation record, whether an experiment or a feature, and an item. Each convention fixes its own words, and this rule fixes only where the word is rendered.
 
-**A record with no state line takes no suffix**, which now reaches an implementation record alone. Absence is the in-progress state in the the-implementations-directory-holds-one-record-per-implementation rule, and the session-start notice is what reports them as open, so a name carrying no suffix is answered elsewhere.
-
-**An item always carries a suffix.** Absence stopped being a state for it on 2026-08-16, when **Active** was added — precisely because this rule moved the state into the filename, where a missing suffix and an oversight look the same. That asymmetry is deliberate: the record nothing reports is the one that must say so in its own name. **An observation's suffix is always `-STATED`**, since that is its one state.
+**Every item and every implementation record carries a suffix.** Each carries a state line from the moment it is written, and the in-progress state of each is **Active**. A name with no suffix is a defect, because a missing suffix and an oversight look the same. **An observation's suffix is always `-STATED`**, since that is its one state.
 
 **The file's contents are unchanged.** The state is the `**State:**` line and nothing else, and the file still ends with its provenance footer. A suffix in the contents would put the same value in two places inside one artifact, for no reader who is asking for it there.
 
@@ -36,7 +34,7 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 **How to apply:** when a record reaches a state word, write the `**State:**` line and rename the file so its name ends with that word in upper case, after a dash.
 
-When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Write a reference to such a record without its state suffix or its extension, so no reference needs reconciling at a rename. Leave historical records as written. Give no suffix to an implementation record carrying no state line, and add none to any file's contents.
+When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Write a reference to such a record without its state suffix or its extension, so no reference needs reconciling at a rename. Leave historical records as written. Add no suffix to any file's contents.
 
 ## Compressed
 
@@ -51,8 +49,8 @@ When the state changes, rename it again. When a reversible state word is taken b
 
 3. This reaches every record that carries a state line: an implementation record, whether experiment or feature, and an item.
 4. Each convention fixes its own state words. This rule fixes only where the word is rendered.
-5. A record with no state line takes no suffix. Only an implementation record can lack one.
-6. An item always carries a suffix. Absence is not a state for an item.
+5. Every item and every implementation record carries a suffix. Each carries a state line from the moment it is written, and the in-progress state of each is **Active**.
+6. A name with no suffix is a defect.
 7. An observation's suffix is always `-STATED`.
 8. The file's contents are unchanged. Add no suffix to any file's contents.
 9. The state inside the file is the `**State:**` line and nothing else.
@@ -80,6 +78,7 @@ When the state changes, rename it again. When a reversible state word is taken b
 
 - 2026-10-24, compressed: compression 0.44, change 0.69, solubility 32 → 75, clarity 0.38 → 0.89, 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: every item and implementation record carries a suffix; checked: 24 directives, 23 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 
 ## History
 
@@ -89,9 +88,11 @@ Until 2026-08-16 the suffix was also appended to the file's contents.
 
 Until Tue Oct 27 2026 live artifacts that cited a record by its full filename were reconciled at each rename. The engineer settled that a reference omits the state suffix and keeps the rest of the filename, so a state change breaks no reference.
 
+Until 2026-10-26 an implementation record took no suffix while its work was under way, since the absence of a state line was its in-progress state. Items had stopped taking an absent state on 2026-08-16, when **Active** was added. The engineer settled that implementations take the Active state too, so every item and every implementation record now carries a suffix.
+
 Related:
 
-- the the-implementations-directory-holds-one-record-per-implementation rule — the record whose state line is absent while the work is under way, and the words each kind takes
+- the the-implementations-directory-holds-one-record-per-implementation rule — the record whose in-progress state is Active, and the words each kind takes
 - the the-items-directory-holds-one-file-per-item rule — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — referencing by name rather than path, the same remedy for a rule that a suffix-free reference is for a record
@@ -123,3 +124,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:35:25 AM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT

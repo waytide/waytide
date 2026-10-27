@@ -25,12 +25,13 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## The state
 
-**The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is added when the record reaches one of the words, not when the work starts. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
+**The state sits on a canonical `**State:**` line**, carrying one word and nothing else — `- **State:** Suspended`. It is written with the record, and changes as the record reaches another word. That line is the only authoritative statement of the state: the same words run through a record's prose freely, and nothing else in the file can be read as the state.
 
-**Absence is the in-progress state**, so work still under way carries no line. Do not add one to say so, and do not invent a word. **This is where an implementation differs from an item**, which carries a state from the moment it is written — the session-start notice reports an open implementation, so absence here is answered elsewhere. See the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule, which gives an open record no filename suffix for the same reason.
+**`Active` is the in-progress state**, as it is for an item. A record is written when its work starts, so it carries `Active` from the moment it is written. Absence is not a state, and a record without a line is a defect.
 
 **The state words both kinds take:**
 
+- **Active** — the work is in progress.
 - **Abandoned** — dropped before concluding. Not merged, and the record is kept.
 - **Superseded** — replaced by another implementation. The two records name the counterpart.
 - **Suspended** — paused, not ended.
@@ -59,7 +60,7 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## Format
 
-The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and, once the record carries a state line, the state suffix. End the file with the provenance footer, and pair it with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
+The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and the state suffix. End the file with the provenance footer, and pair it with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
 **Why:** an experiment and a feature had two conventions and two lifecycles that agreed on almost everything. Both are bounded work on a branch, with a working location chosen at the start, a declared end, and recorded confirmations. What they did not share follows from one difference — a question against an intent — which a tag states and the lifecycle reads.
 
@@ -67,7 +68,7 @@ Four rules stating one lifecycle twice is four places to keep true, and the two 
 
 **How to apply:** record every implementation here, tagged `[experiment]` or `[feature]`. Open with the question or the intent, then the branch topology and the working location. Forecast before the work where it is an experiment, and record what happened against the forecast.
 
-Leave the state line off while the work is under way. Add it when the record reaches a word, and update it as the state changes. Record each confirmation the lifecycle requires.
+Write the state line as `Active` when the record is written, and update it as the state changes. Record each confirmation the lifecycle requires.
 
 ## Compressed
 
@@ -100,15 +101,16 @@ Leave the state line off while the work is under way. Add it when the record rea
 ## The state
 
 1. The state sits on a canonical `**State:**` line carrying one word and nothing else, for example `- **State:** Suspended`.
-2. Add the line when the record reaches one of the state words, not when the work starts.
+2. Write the line with the record, as `Active`, and change it as the record reaches another word.
 3. That line is the only authoritative statement of the state.
 4. The state words may appear freely in the record's prose. Nothing else in the file is read as the state.
-5. Absence of the line is the in-progress state. Work still under way carries no line.
-6. Do not add a line to say the work is in progress.
+5. `Active` is the in-progress state, as it is for an item.
+6. A record without a line is a defect. Absence is not a state.
 7. Do not invent a state word.
-8. Unlike an item, an implementation carries no state from the moment it is written. The session-start notice reports an open implementation.
-9. An open record takes no filename suffix (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
+8. A record is written when its work starts, so it carries `Active` from the moment it is written.
+9. The filename carries the state suffix, `-ACTIVE` while the work is in progress (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
 10. The state words both kinds take are these.
+    - **Active**: the work is in progress.
     - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
     - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
     - **Suspended**: paused, not ended.
@@ -147,7 +149,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 4. The lifecycle reads the tag, not the title.
 5. A record whose title and tag name different kinds is defective.
 6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
-7. Once the record carries a state line, the filename also takes the state suffix.
+7. The filename also takes the state suffix.
 8. End the file with the provenance footer.
 9. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
@@ -162,6 +164,7 @@ Leave the state line off while the work is under way. Add it when the record rea
 - 2026-10-24, compressed: compression 0.12, change 0.48, solubility 22 → 46, clarity 0.32 → 0.78, 54 directives, 54 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-25, revised: points 7 and 10 take the new wording, that Suspended is a state; not checked
 - 2026-10-27, re-checked: 58 directives, 58 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: Active is the in-progress state; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -171,14 +174,16 @@ Until Sun Oct 25 2026 this rule was named implementations-convention and titled 
 
 Until Mon Oct 26 2026 this rule was named the-implementations-directory-records-each-implementations-lifecycle and titled "The implementations directory records each implementation's lifecycle".
 
+Until 2026-10-26 the absence of a state line was an implementation's in-progress state. The line was added when the record reached a word, and an open record took no filename suffix. The engineer settled that implementations take the Active state, as items do, which makes the in-progress state a word on the line and in the filename.
+
 Related:
 
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags, and what a reserved tag is
-- the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
+- the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix the state line gives
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
 - the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
-- the the-items-directory-holds-one-file-per-item rule — the other record that carries a state, and which has no in-progress absence
+- the the-items-directory-holds-one-file-per-item rule — the other record that carries a state, and whose in-progress state is also Active
 
 ---
 
@@ -202,3 +207,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
