@@ -1,6 +1,6 @@
 # A context block is used for a test block only when the test's outcome needs local instrumentation or local variables
 
-A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
+A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
@@ -44,7 +44,7 @@ On finding a context that holds only a test, warn as above, unless the local rul
 
 ## Compressed
 
-1. A `test` block holds exactly one assertion and nothing else, per the a-test-block-holds-only-the-assertion rule.
+1. A `test` block holds exactly one assertion and nothing else, per the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule.
 2. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
 3. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
 4. Local instrumentation means an explaining variable of the outcome's own.
@@ -97,7 +97,7 @@ Until Mon Oct 26 2026 this rule was named a-test-takes-a-context-only-when-its-o
 
 Related:
 
-- the a-test-block-holds-only-the-assertion rule
+- the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule
 - the test-structure rule — the per-outcome context is for outcomes that instrument locally
 - the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule
 
@@ -118,3 +118,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT

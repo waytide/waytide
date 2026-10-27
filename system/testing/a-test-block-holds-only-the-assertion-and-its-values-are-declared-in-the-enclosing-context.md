@@ -1,4 +1,4 @@
-# A test block holds only the assertion
+# A test block holds only the assertion, and its values are declared in the enclosing context
 
 Three bound parts:
 

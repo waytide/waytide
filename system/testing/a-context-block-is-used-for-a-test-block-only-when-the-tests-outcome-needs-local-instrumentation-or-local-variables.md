@@ -1,6 +1,6 @@
 # A context block is used for a test block only when the test's outcome needs local instrumentation or local variables
 
-A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
+A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
 
@@ -44,6 +44,6 @@ On finding a context that holds only a test, warn as above, unless the local rul
 
 Related:
 
-- the a-test-block-holds-only-the-assertion rule
+- the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule
 - the test-structure rule — the per-outcome context is for outcomes that instrument locally
 - the start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion rule

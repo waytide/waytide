@@ -1,4 +1,4 @@
-# A test block holds only the assertion
+# A test block holds only the assertion, and its values are declared in the enclosing context
 
 Three bound parts:
 
@@ -84,6 +84,8 @@ end
 
 Until Sun Oct 25 2026 this rule was named test-block-is-assertion-only and titled "A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context".
 
+Until Mon Oct 26 2026 this rule was named a-test-block-holds-only-the-assertion and titled "A test block holds only the assertion".
+
 Related:
 
 - the DBE first-turn rule
@@ -104,3 +106,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
