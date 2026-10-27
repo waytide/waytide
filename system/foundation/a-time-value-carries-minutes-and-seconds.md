@@ -11,7 +11,7 @@ The two datetime conventions in this package satisfy it:
 
 **A date alone is not a time.** A convention may record only a date, as a design's **Settled** resolutions do. There is no time of day to resolve there, and this rule adds none. It applies when a time is written.
 
-**A record's title is one of two exceptions.** A dated record title is written `Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the a-date-in-a-records-title-takes-the-day-the-date-and-the-24-hour-time rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate.
+**A record's title is one of two exceptions.** A dated record title is written `Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate.
 
 The record's filename already carries the seconds-precise UTC instant for the same moment. A title occurs **once** per file, so that collision cannot arise there. The exception is bounded to titles and reaches no other written time.
 

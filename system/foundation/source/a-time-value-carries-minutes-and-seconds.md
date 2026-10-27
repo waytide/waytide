@@ -11,7 +11,7 @@ The two datetime conventions in this package satisfy it:
 
 **A date alone is not a time.** A convention may record only a date, as a design's **Settled** resolutions do. There is no time of day to resolve there, and this rule adds none. It applies when a time is written.
 
-**A record's title is one of two exceptions.** A dated record title is written `Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the a-date-in-a-records-title-takes-the-day-the-date-and-the-24-hour-time rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate.
+**A record's title is one of two exceptions.** A dated record title is written `Mon Jan 1 2026 18:06` — 24-hour, minutes, no seconds (see the a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time rule). The defect this rule corrects is a **repeated line within one file**: a running history whose entries collide at the same resolution. A later one cannot be told from the one before it and goes unwritten rather than looking like a duplicate.
 
 The record's filename already carries the seconds-precise UTC instant for the same moment. A title occurs **once** per file, so that collision cannot arise there. The exception is bounded to titles and reaches no other written time.
 
@@ -48,7 +48,7 @@ Related:
 6. The provenance footer, `Mon Jan 1 2026 at 3:45:12 PM PT`, carries seconds because this rule requires it.
 7. A date alone is not a time. A date-only convention, such as a design's **Settled** resolutions, gets no time added.
 8. This rule applies only when a time is written.
-9. A record's title is the first exception. A dated record title is written `Mon Jan 1 2026 18:06`: 24-hour, minutes, no seconds (see the a-date-in-a-records-title-takes-the-day-the-date-and-the-24-hour-time rule).
+9. A record's title is the first exception. A dated record title is written `Mon Jan 1 2026 18:06`: 24-hour, minutes, no seconds (see the a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time rule).
 10. The title exception covers titles only. It reaches no other written time.
 11. A journal entry's filename stamp is the second exception. It stops at the minute (see the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule).
 12. A journal filename stamp carries seconds only where the writer stated seconds. Do not supply a clock's seconds.
@@ -80,3 +80,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:10 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:05:00 PM PT
