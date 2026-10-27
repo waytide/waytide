@@ -8,6 +8,7 @@ The testing package's vocabulary: the terms it defines and the word substitution
 
 - **controls** — the known, deterministic inputs a test is built from: the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them. A test reads **control → actuate → observe**. The conventions that hold the term in place — controls never "factories" / "fixtures" / "arrange", the `control_` variable prefix, and the "some" string value — are the package's control rules. **STE: absent from the STE dictionary as a plural. `CONTROL (n)` is approved, meaning something that controls, which is the singular sense this narrows. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.**
 - **precondition** — a bare `assert` or `refute` that is **not** a test. It is written to **document a factor that decides the test's outcome** where the test script does not express it. That factor is most often a property of a **control**, whose value is named rather than described. It documents by asserting, so the clarification is checked rather than merely claimed. It **qualifies** the test rather than preventing a regression: when a precondition fails, the test's result is *meaningless*, not wrong. It carries no name because its predicate reads inline as the name, and it sits immediately before what it qualifies. **STE: absent from the STE dictionary. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.**
+- **uncontested** — of a test: it passes without any implementation being written to meet it, because the behavior it checks already exists. A test is *contested* when it fails until code is written to satisfy it, which is how a DBE test drives a design. An uncontested test drives nothing, so it is coverage rather than design. The word is taken from a no-bid contract, which is awarded without a competing bid. Taxonomically such a test is a **confirming test**. **STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.**
 
 ## Substitutions
 
@@ -42,3 +43,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 11:18:04 AM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:00:02 PM PT
