@@ -1,4 +1,4 @@
-# A control-built test value takes the control_ prefix
+# A control-built test value is prefixed with control_
 
 - **Solubility:** 99
 - **Original rank:** 106 of 106
@@ -22,6 +22,8 @@ In test code, a local variable may hold a value built by a control, meaning anyt
 
 Until Sun Oct 25 2026 this rule was named control-prefix-test-vars and titled "control_ prefix for control-built test values".
 
+Until Mon Oct 26 2026 this rule was named a-control-built-test-value-takes-the-control-prefix and titled "A control-built test value takes the control_ prefix".
+
 ---
 
 Authored by Scott Bellware on Fri Jun 5 2026 at 10 AM PT
@@ -31,3 +33,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:32 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:19 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:15 PM PT
