@@ -15,6 +15,8 @@
 - a test that passes before any implementation is written
 - passes when first run, the phrase now in the rules, judged not right
 
+**"Confirming test" is the taxonomic term, and it is kept.** The engineer said on 2026-10-26 that, taxonomically, such a test is a confirming test, and that the term is not to be lost. It is not yet settled as the phrase for this purpose.
+
 ## History
 
 As the engineer first stated it: "Start recording options. Passes as first written"
@@ -25,3 +27,4 @@ Authored by Scott Bellware on Mon Oct 26 2026 at 5:15:45 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:15:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:16:24 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:19:35 PM PT
