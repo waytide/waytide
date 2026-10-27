@@ -4,7 +4,7 @@ Test-first is the standing default for starting any task. Do not ask "shall I st
 
 **What this does not cover: the human's level of participation.** Test-first is the method's **substance**. Design is driven from the efferent side, and the test is written before the implementation. It is never put to the engineer. The answer is always yes.
 
-**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds. DBE is in effect either way, so nothing about the method is being confirmed or declined. What is chosen is a batch size. The trade has two real sides. Small batches spend attention continuously and keep rework near zero, and big batches spend none until the end and take rework instead.
+**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds, and nothing about the method is being confirmed or declined.
 
 A question with a genuinely situational answer is a decision rather than a settled default, so this rule's reasoning does not reach it. See the attended-or-unattended-is-chosen-at-the-start rule.
 

@@ -7,10 +7,7 @@ At the actuation gate — the first gate, where the cradle is set — the AI doe
 
 This is how the highest-leverage hinge is handed over for deliberation, that hinge being the efferent shape of the actuation. The engineer compares concrete alternatives. The free-text option, always there, covers the case where the right shape is not among the options.
 
-The form is deliberate. It is the operationalization of the two results the gates rest on (see the DBE vocabulary):
-
-- **Make the human produce the answer, not approve one — so present alternatives, not a fait accompli.** A single proposed actuation ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. It exerts mean-bias and lowers the human toward the average. Offering several genuine options keeps the human producing an answer — comparing real candidate shapes for solubility — rather than ratifying.
-- **The best options are ones the AI can't produce — so the free-text option is mandatory.** The option set is the AI's own, drawn from the average. The best actuation is often one only the human can produce, and showing a closed list tempts the human to pick from it instead of producing their own. The free-text option is what keeps the human above the AI's mean — never boxed into the AI's option set.
+The form is deliberate. It is the form every hinge takes, and the hinge-cycle rule states it and the two results it rests on: the human produces the answer rather than approving one, and the free-text option is mandatory because the best answer is often one only the human can produce.
 
 ## A candidate varies what the use site states
 
@@ -36,11 +33,7 @@ Offer them through the selection UI, which supplies the free-text option. Do not
 
 If the human chooses one, adopt it as the cradle. If the human writes their own instead, take that actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
 
-**When a hinge has no genuinely distinct candidates, do not manufacture them.** Present the one candidate as the option, in the form every other option takes, with the free-text option still there. `Explain` is the second option, as the present-every-prompt rule sets out, and no candidate is sought to reach two.
-
-**Do not replace it with an `Accept` label.** The option is the artifact, and the single case changes nothing about that. See the hinge-cycle rule.
-
-This mechanism is the candidates as options, with the free-text option. It applies at **every** hinge of the cycle, not only the actuation: actuation, observation, controls, implementation, and naming. See the hinge-cycle rule.
+**A lone candidate is presented as every hinge presents one**, beside `Explain`, with no candidate manufactured to reach two. See the hinge-cycle rule.
 
 Related:
 

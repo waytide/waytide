@@ -53,7 +53,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The human's level of participation, chosen at the start
 
-**Attended or unattended, put through the selection interface beside the working location.** Both are decisions about how the work will be conducted, each made once and held for its duration, so they sit at one gate. Attended is the default. DBE is in effect either way — only the stopping changes. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule.
+**Attended or unattended, put through the selection interface beside the working location.** Attended is the default. See the design-by-efferent attended-or-unattended-is-chosen-at-the-start rule, which states why the two sit at one gate and what changes between them.
 
 ## The end
 
@@ -105,6 +105,8 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule restated why attended or unattended sits at one gate with the working location, and what changes between them. It now cites the attended-or-unattended-is-chosen-at-the-start rule.
+
 Related:
 
 - the implementations-convention — the record, the tags, and the state words
@@ -118,3 +120,4 @@ Authored by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 3:34:20 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:50:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT

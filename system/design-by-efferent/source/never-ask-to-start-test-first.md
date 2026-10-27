@@ -4,13 +4,17 @@ Test-first is the standing default for starting any task. Do not ask "shall I st
 
 **What this does not cover: the human's level of participation.** Test-first is the method's **substance**. Design is driven from the efferent side, and the test is written before the implementation. It is never put to the engineer. The answer is always yes.
 
-**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds. DBE is in effect either way, so nothing about the method is being confirmed or declined. What is chosen is a batch size. The trade has two real sides. Small batches spend attention continuously and keep rework near zero, and big batches spend none until the end and take rework instead.
+**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds, and nothing about the method is being confirmed or declined.
 
 A question with a genuinely situational answer is a decision rather than a settled default, so this rule's reasoning does not reach it. See the attended-or-unattended-is-chosen-at-the-start rule.
 
 **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges, which are the actuation and the solubility verdict. It does not belong on whether to follow the method itself. See the human-in-the-loop and DBE-as-design-tool rules. Re-asking the standing default is ceremony, the same failure DBE discontinues.
 
 **How to apply:** When the next task is clear, begin it test-first without asking. Offer the next-task selection if useful, but never frame it as a test-first/not question. Deviate from test-first only on an explicit instruction to do so.
+
+## History
+
+Until Mon Oct 26 2026 this rule restated the batch-size trade between attended and unattended work. The attended-or-unattended-is-chosen-at-the-start rule states it.
 
 Related:
 
@@ -34,3 +38,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 12:34:07 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 5:06:31 AM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:45:19 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT

@@ -31,11 +31,13 @@ end
 
 An assertion with an inlined `Upload::Result.build(...)` buries a value inside the predicate and forces the reader to parse it inside-out. This is the assertion-specific form of the no-inline-method-call-arguments rule, and it sharpens the DBE first-turn rule's "assert an explaining variable" to *the two* operands.
 
-**The three parts govern a `test` block, and a precondition is not one.** A **precondition**. A bare `assert` or `refute` that is not a test, documenting a factor that decides the test's outcome where the script does not express it. It reads its predicate **inline**, with no explaining variable, and is the one stated exception to the parts above.
-
-The reasons here do not reach it. It has a single operand, so nothing is buried inside a nested expression to be parsed inside-out. A name bound for it would only restate the predicate. See the precondition rule.
+**The three parts govern a `test` block, and a precondition is not one.** A precondition is the one stated exception to them. The precondition rule states what a precondition is, and why the reasons here do not reach it.
 
 **How to apply:** In the enclosing `context`, declare the controls. Bind the actuation to an explaining variable, and bind any compared-against or expected value to its own explaining variable. The `test` block contains exactly one `assert`, comparing those variables — no value-producing method call inside it. The comparison operator (`==`, etc.) is the assertion's predicate, not an inlined value-producing call, so it stays. A precondition is outside all of this and reads inline.
+
+## History
+
+Until Mon Oct 26 2026 this rule restated what a precondition is and why it is exempt. The precondition rule states both, and this rule now cites it.
 
 Related:
 
@@ -55,3 +57,4 @@ Changed by Scott Bellware on Mon Aug 10 2026 at 9:29:23 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:57:57 PM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT

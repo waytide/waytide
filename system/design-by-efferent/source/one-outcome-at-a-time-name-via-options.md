@@ -4,9 +4,7 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 
 **Finishing the work means naming the test.** A test left with an empty (unnamed) outcome context is unfinished. The closing step ascribes its name. Do this one test at a time.
 
-**The naming gate offers candidate names, and the free-text option among them.** Responsibility transfers there exactly as it does at the actuation gate (see the actuation-gate-options rule). Present a list of candidate outcome-context names. The free-text option lets the human input a name directly or discuss it.
-
-The rationale carries over from the actuation gate: present alternatives, not a single pick. Make the human produce the answer, not approve one. The free-text option is mandatory. The best name may be one only the human can produce.
+**The naming gate offers candidate outcome-context names, as every hinge offers its candidates.** See the hinge-cycle rule for the mechanism and its reasons.
 
 **Why:** Batch code generation moves fast, but it bypasses the gates that are the whole point of the loop. Each skipped gate is a place the human's judgment did not get to act, and mistakes hide in the pile. Naming is a hinge like the actuation, since the outcome-context name is a small contract on what the test establishes. So responsibility transfers there the same way, through options plus the free-text option, rather than through an AI fait accompli.
 
@@ -15,6 +13,8 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 ## History
 
 Until 2026-10-24 the opening said, without qualification, that the loop stops at every gate and proceeds only on the human's go. The rule predates unattended work, whose exception was added only to How to apply. The opening and the title now carry it too.
+
+Until Mon Oct 26 2026 this rule restated, for the naming gate, the mechanism every hinge follows and its reasons. It now cites the hinge-cycle rule.
 
 Related:
 
@@ -40,3 +40,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:28:14 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 8:37:04 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:44:33 AM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT
