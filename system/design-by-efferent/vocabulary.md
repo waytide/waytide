@@ -125,12 +125,12 @@ A word removed from use with nothing in its place. **This is not a substitution.
 
 Related:
 
-- the DBE-as-design-tool
-- first-turn
-- human-in-the-loop
-- the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
-- "TDD designs
-- coverage prevents" rules. The `language` package's solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule and its name-literally standard
+- the dbe-is-a-design-tool-not-a-testing-ritual rule
+- the the-first-dbe-gate-is-the-actuation-and-an-unnamed-assert rule
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
+- the `language` package's solubility-is-how-readily-a-unit-dissolves-into-the-readers-understanding rule and its name-concepts-literally-not-by-analogy-code-or-jargon rule
 
 ---
 
