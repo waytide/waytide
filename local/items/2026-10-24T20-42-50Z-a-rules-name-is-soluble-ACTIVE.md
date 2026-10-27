@@ -15,6 +15,8 @@
 
 **Added 2026-10-25: a title is clear by the same thing that makes a rule's content clear.** The engineer settled it. A title is held to solubility, as the rule's text is, and judged the same way: by what it costs a reader to understand. Nothing about the increment is now left unsettled.
 
+**Added 2026-10-26: the work is done on the phase branch, and the item is not concluded until the experiment merges.** The engineer settled it. All 97 rules whose name did not derive from their title are renamed on `experiment/worktree/rule-reduction.compression`, and the engineer has reviewed the titles. The renames reach `master` only when the experiment merges, and the item concludes then.
+
 ## History
 
 As the engineer first stated it: "Idea: Make the rule names soluble"
@@ -27,3 +29,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:31:23 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:52:48 PM PT
