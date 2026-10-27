@@ -28,6 +28,10 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 **Resumed by the engineer on 2026-10-22.** The State line is removed, since absence is the in-progress state, and work continues on the phase branch in the worktree.
 
+- **State:** Active
+
+**The line is added on 2026-10-27.** Active became an implementation's in-progress state on 2026-10-26, and the record had not taken it.
+
 ## Setup
 
 - **Tags:** [experiment]
@@ -77,3 +81,4 @@ Authored by Scott Bellware on Wed Oct 21 2026 at 9:51:25 PM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 9:28:49 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 10:58:15 AM PT
 Changed by Scott Bellware on Thu Oct 22 2026 at 1:42:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:14:00 PM PT
