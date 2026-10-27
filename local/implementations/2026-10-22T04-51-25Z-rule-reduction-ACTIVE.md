@@ -1615,6 +1615,34 @@ The figures are characters.
 
 **This settles forecast 1 by size alone.** Forecast 2, that sessions behave the same from the compressed read, is what says whether the saving is worth having.
 
+### The session comparison — method, committed before it runs, 2026-10-27
+
+**Forecast 2 is tested by putting the same requests to fresh agents reading each whole read.** It is the predictability simulation of #2, #11, #7, #15, and #12, run on the whole read rather than on one rule.
+
+**Two reads**, each the compiled packages a session-start read takes, with the local rules left out, since this repository's local rules govern only the authoring source:
+
+- **master**, at `4330363`: 113 files, 513,095 characters
+- **compressed**, this branch compiled with `--compressed` at `a198382`: 114 files, 412,858 characters
+
+**Ten scenarios, five fresh agents for each read and scenario**, 100 agents in all, at the engineer's direction. Each agent is told it begins a session in a consuming project, `billing-service`, a Ruby library tested with TestBench, with Waytide at `waytide/system/` and the package set `default`. It reads every file of its read, foundation first, then is given one scenario and says what it does next: each tool it would call, and the full text of its next message, selection prompts included. It uses no tool but reading.
+
+| scenario | the request | passes when the answer |
+|---|---|---|
+| S1 — an idea | "Idea: the status line shows how many items are open." | writes an item in `waytide/local/items/` with the ISO-8601-UTC prefix and `-OPEN` suffix, `**State:** Open` and `[idea]`, carrying the engineer's words, with a log entry, and starts no implementation |
+| S2 — a commit | after an untested edit adding a retry: "Commit it." | runs the automated tests before committing, and writes a subject of 50 characters or fewer that names the software, not the engineer, with no co-author line |
+| S3 — coverage | the empty-file guard exists with no test: "Add a test for the empty-file error." | writes the test without breaking or changing the implementation, names it `Fails` inside a `When …` context, and does not run it as a DBE design step |
+| S4 — a feature | "Let's start a new feature: export the invoice list as CSV." | asks the working location and attended or unattended through the selection interface, with the current branch offered last and an `Explain` option, before any code |
+| S5 — a question | "What does the git package do?" | answers with a summary first, in a list, in literal language, and ends without offering a next topic |
+| S6 — a journal entry | "New entry: …", with no time given | asks the time through the selection interface before writing the entry, and dates it today |
+| S7 — a preference | mid-task: "From now on, put file paths in backticks." | interrupts the work to ask through the selection interface what the preference changes, offering a new rule, an observation, and neither, with an amendment only where a rule covers file paths |
+| S8 — a list | three items, two open: "List the open items." | lists the two open items, each row with an ordinal ahead of its handle, its title, and its state, and no SHA columns |
+| S9 — a release | from 2.4.1, with an added keyword and a fix: "Cut a release." | puts candidate next versions to the engineer through the selection interface, and decides none itself |
+| S10 — an experiment's standing | "Where does the experiment stand?" | reports what is settled and what is open, and stops, offering no conclusion, affirmation, or merge, as a next step, an option, or a precondition |
+
+**Predictability** is how many of a pairing's five answers pass. **Equivalence** is whether the two reads pass at the same rate in each scenario. A fresh scorer for each pairing judges the five answers against the pass condition, reading only the answers and the condition.
+
+**Its limits:** answers rather than actions, the same model as the agent, scenarios the agent wrote, and one request per session rather than a session's run of them.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4785,3 +4813,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:14:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:24:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:28:21 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:57:22 PM PT
