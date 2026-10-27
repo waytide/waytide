@@ -1,4 +1,4 @@
-# An item takes a log entry on creation, on each settled resolution, and on a change of state
+# A log entry is written for an item on creation, on each settled resolution, and on a change of state
 
 - **Solubility:** 17
 - **Original rank:** 2 of 106

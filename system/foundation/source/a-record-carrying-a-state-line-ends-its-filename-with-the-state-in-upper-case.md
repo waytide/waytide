@@ -86,7 +86,7 @@ Related:
 - the the-items-directory-holds-one-file-per-item — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — referencing by name rather than path, and the reconciliation a rename obliges
-- the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes
+- the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes
 
 ---
 
@@ -108,3 +108,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT

@@ -45,5 +45,5 @@ Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record, the two kinds, and the state words each takes
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the merge, and the branch deletion that makes an unmerged record unreachable
-- the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
+- the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form, and the general trigger this makes specific

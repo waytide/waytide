@@ -1,4 +1,4 @@
-# An item takes a log entry on creation, on each settled resolution, and on a change of state
+# A log entry is written for an item on creation, on each settled resolution, and on a change of state
 
 - **Solubility:** 17
 - **Original rank:** 2 of 106
@@ -91,6 +91,8 @@ Name the record in the entry, and say what happened to it. State what the record
 
 Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles".
 
+Until Mon Oct 26 2026 this rule was named an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state and titled "An item takes a log entry on creation, on each settled resolution, and on a change of state".
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form, and the general trigger this makes specific
@@ -142,3 +144,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT

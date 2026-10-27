@@ -35,7 +35,7 @@
 - **One file per item**, named by the ISO-8601-UTC prefix (see the file-names rule), ending with its state in upper case (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
 - **Frontmatter-free markdown.** A `# <title>`, then the `**State:**` line, then the `**Tags:**` line, then whatever the item has to say.
 - **A provenance footer** ends the file (see the working-state-artifacts-carry-a-provenance-footer rule).
-- **A log entry** pairs with it on creation and on each change of state (see the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule).
+- **A log entry** pairs with it on creation and on each change of state (see the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule).
 - **No code samples** (see the an-item-that-sequences-work-contains-no-code-samples rule).
 
 **Nothing else is required.** An item that settles things records them as dated **Settled** resolutions and marks what it deliberately leaves out in an **Out of Scope / Deferred** tail. An item that sequences work carries checkbox tasks stating behavior. An item that does neither carries neither. **The four rules this replaces fixed a spine.** This one does not: an item is thinking, and a shape imposed on thinking is ceremony wherever the thinking does not have it.
@@ -171,7 +171,7 @@ Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix
-- the an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry an item takes
+- the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry an item takes
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — an observation, which is an item and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and an-item-that-sequences-work-contains-no-code-samples rules
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
@@ -209,3 +209,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
