@@ -51,6 +51,10 @@
 6. The set of the engineer's decisions is read from this tag.
 7. **Why:** the log carries agent acts and engineer decisions in the same form. An engineer's decision is changed by the engineer, while an agent's act is corrected against its rule, so one search must find the engineer's decisions.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.15, change 0.37, solubility 72 → 93, clarity 0.62 → 1.00, 8 directives, 8 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-decision-the-engineer-made-is-tagged-decision and titled "A log entry recording a decision the engineer made is tagged `[decision]`".
@@ -71,3 +75,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

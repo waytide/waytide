@@ -45,7 +45,7 @@ for source_rule in $source_rules; do
 
   # The source rule as it reads with its History section left out, which the other outcome reads. A
   # --- inside a fenced block is an example, not the footer's divider, so it ends no section.
-  source_without_history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
+  source_without_history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed|Compression)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } !history' "$source_rule")
 
   compiled_length=$(wc -l < "$compiled_rule")
   removed=$(printf '%s\n' "$source_without_history" | tail -n +$((compiled_length + 1)))
@@ -55,18 +55,18 @@ for source_rule in $source_rules; do
   ! printf '%s\n' "$removed" | grep -v -q -E '^(---|Authored by .*|Changed by .*)?$' || fail "Is its source rule without the footer" "more than the footer removed:" "$name" "removed:" "$removed"
 done
 
-# Removes the History and Compressed sections -------------------------------
+# Removes the History, Compressed, and Compression sections -------------------------------
 
 for source_rule in $source_rules; do
   compiled_rule=$(printf '%s' "$source_rule" | sed 's|/source/|/|')
   name=${source_rule#"$repository"/}
 
-  ! grep -q -x -E '## (History|Compressed)' "$compiled_rule" || fail "Removes the History and Compressed sections" "History section not removed:" "$name"
+  ! grep -q -x -E '## (History|Compressed|Compression)' "$compiled_rule" || fail "Removes the History, Compressed, and Compression sections" "History section not removed:" "$name"
 
-  history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
+  history=$(awk '/^```/ { fenced = !fenced } /^## (History|Compressed|Compression)$/ { history = 1 } !fenced && /^(Related:|---$)/ { history = 0 } history' "$source_rule" | grep -v '^$' || true)
   outside=$(diff "$source_rule" "$compiled_rule" | sed -n 's/^< //p' | grep -v '^$' | grep -v -E '^(---|Authored by .*|Changed by .*)$' | grep -v -x -F -e "$history" || true)
 
-  [ -z "$outside" ] || fail "Removes the History and Compressed sections" "removed outside the History section:" "$name" "$outside"
+  [ -z "$outside" ] || fail "Removes the History, Compressed, and Compression sections" "removed outside the History section:" "$name" "$outside"
 done
 
 # Controls — the compressed text -------------------------------------------
@@ -84,6 +84,10 @@ Some body.
 ## Compressed
 
 Some compressed text.
+
+## Compression
+
+- Some date, compressed: some figures
 
 ## History
 

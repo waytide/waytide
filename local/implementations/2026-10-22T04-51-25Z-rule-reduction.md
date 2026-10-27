@@ -1563,6 +1563,19 @@ The three later repairs are not re-checked again.
 
 **Cost:** 87 agents: 35 listers, 35 checkers, and 17 re-checkers, each about 35,000 tokens, about 3.0 million in all. This leaves out the main session's own turns.
 
+### Compression gains its rule, and each rule file its figures — 2026-10-27
+
+**At the engineer's direction, the figures of each compressed text are recorded in its rule file, and a rule governs compression.** The engineer settled that an experiment brings to master the rules its practice needs before it merges, which the an-implementation-runs-on-a-branch-to-a-declared-end rule now states. No rule covered compression, so this branch gains one: the a-rules-compressed-text-is-written-in-its-source-checked-against-it-and-its-figures-recorded-below-the-body rule, in `foundation`. It covers the Compressed section, the two compiled forms, the directive check and its repairs, and the figures.
+
+**The figures go in a `## Compression` section below the Compressed section, one line per compression, revision, or check**, which the engineer chose from examples. A later event adds a line. The compiler now leaves the section out of both compiled forms, and the compile test covers it.
+
+**Each of the 101 rules now carries its section**, written from this record. Five fresh agents read the record's account of each batch and gave each rule's events with only the figures the record states. The 2026-10-27 re-check's counts come from its own verdicts. Two limits:
+
+- A batch's counts are the counts after its repairs, as the batch tables give them, with the number of repairs beside them.
+- A revision this record does not describe has no line. The rewrites of 2026-10-26 and 2026-10-27 were never measured, and their check is the re-check of 2026-10-27.
+
+**The new rule was checked by its own method.** A fresh lister gave 41 directives, and a fresh checker judged 39 kept and 2 less precise. The two were repaired, and a fresh re-checker judged all 41 kept. Its compression is 0.18, its change 0.31, its solubility 34 → 56, and its clarity score 0.49 → 0.86, the before scored as a 106th row against the 105 rules at commit `770c7eb`.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4727,3 +4740,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:49:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:54:42 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:09:12 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:30:35 PM PT

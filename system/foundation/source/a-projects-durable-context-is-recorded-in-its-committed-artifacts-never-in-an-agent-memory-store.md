@@ -51,6 +51,10 @@ Where a fact is about the engineer rather than the project, it is outside this r
 7. Harness working state is not project context and is no substitute for an artifact.
 8. **Why:** conventions are committed with the code and read fresh each session, not recalled. A memory store is recall: unreviewed, undiffable, invisible to all but its writer, and it drifts silently.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.42, change 0.66, solubility 44 → 68, clarity 0.41 → 0.61, 19 directives, 19 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named project-context-lives-in-the-committed-artifacts and titled "A project's durable context lives in its committed artifacts, never in an agent memory store".
@@ -94,3 +98,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 1:34:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

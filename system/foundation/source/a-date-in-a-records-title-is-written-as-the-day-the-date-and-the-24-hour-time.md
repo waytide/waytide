@@ -44,6 +44,10 @@ Mon Jan 1 2026 18:06
 15. The exception is narrow and covers only the title's date.
 16. **Why:** A title is read first and is how a record is referred to, so its date must be compact yet distinguish records written hours apart. A title appears once per file, so nothing collides with it, and the filename already carries the exact UTC instant.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.41, change 0.71, solubility 53 → 75, clarity 0.49 → 0.67, 19 directives, 19 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named record-title-date-format and titled "A date in a record's title is written `Mon Jan 1 2026 18:06`".
@@ -79,3 +83,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:05:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

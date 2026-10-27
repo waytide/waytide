@@ -89,6 +89,12 @@ BRANCH SWITCHED
 8. **Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.46, change 0.62, solubility 65 → 80, clarity 0.74 → 0.75, 20 directives, 19 kept, 1 less precise, 0 lost
+- 2026-10-23, revised: the `=` border required, and a push named among the cases that print no block; not checked
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
@@ -107,3 +113,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 2:13:21 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

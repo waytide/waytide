@@ -76,6 +76,11 @@ end
 2. A precondition is the one stated exception to these parts. The precondition rule states what it is, and why these reasons do not reach it.
 3. **Why:** A test block should read as a single relation among named values, not a computation mixed with a check. Naming operands in the context documents each value, gives it an inspection point, and separates control from observation.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.24, change 0.64, solubility 53 → 80, clarity 0.52 → 0.88, 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 17 directives, 16 kept, 0 less precise, 1 lost, 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named test-block-is-assertion-only and titled "A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context".
@@ -107,3 +112,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

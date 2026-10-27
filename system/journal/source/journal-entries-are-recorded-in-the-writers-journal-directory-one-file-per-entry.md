@@ -102,6 +102,11 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 7. A day the writer named is not a time.
 8. **Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, sort chronologically, and reference. Per-writer directories separate each writer's record from others' and from the agent's records.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.21, change 0.53, solubility 32 → 53, clarity 0.50 → 0.84, 36 directives, 36 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named journal-entries and titled "Journal entries live in `waytide/local/journal/<username>/`, one file per entry".
@@ -153,3 +158,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

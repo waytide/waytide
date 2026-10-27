@@ -1,0 +1,107 @@
+# A rule's compressed text is written in its source, checked against it, and its figures recorded below the body
+
+**A source rule may carry a compressed text: the rule restated with the same effect and outcome, in fewer words.** It is written in the source, in a `## Compressed` section below the body, and it shares the source's title and `Related:` list. The source's body stays the authority. The compressed text is a second rendering of it, and is never edited apart from it.
+
+## The compressed text
+
+**The compressed text is numbered lists.** Each point is one or two short sentences, carrying one directive or the reason for one. Headings within the section group the points, and each group's list numbers from 1. A reason is a point that leads with `**Why:**`. A fenced example the directives depend on is kept.
+
+**A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
+
+**`./compile.sh` compiles the body, and `./compile.sh --compressed` compiles the compressed text.** Told `--compressed`, a rule with a Compressed section compiles to its title, the compressed text, and its `Related:` list. A rule with none compiles as it does by default. Neither form carries the `## Compressed` heading, the `## Compression` section, the `## History` section, or the provenance footer.
+
+## The check
+
+**A compressed text stands only after it is checked against its source.** The check has two parts, each done by a fresh agent that has not seen the compression:
+
+1. A lister lists the source's directives from its body, without the Compressed section, the Compression section, and the footer.
+2. A checker judges each directive against the title, the compressed text, and the `Related:` list, as **kept**, **less precise**, or **lost**.
+
+**A lost directive, and a materially less precise one, is repaired with the smallest clause that closes the gap**, and the repaired rule is checked again in full. Where two checkers disagree on a directive, the source decides. A less precise directive left as it is, and why, is recorded.
+
+**A change to a compressed text after its check is checked again.** A change that only swaps one term for another the engineer settled is the exception.
+
+## The figures
+
+**Each compression, revision, and check of a compressed text is recorded in its source, in a `## Compression` section below the Compressed section.** One line records each event, and a later event adds a line. The earlier lines stay as written, so the section is the rule's history of compression.
+
+**A line gives the date, the event, and its figures:**
+
+- **compressed** — the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many directives, and how many of them kept, less precise, and lost
+- **revised** — the solubility and the clarity score before and after, and the directive counts of the check that followed
+- **re-checked** — the directive counts, and the number of repairs
+
+Restorations, where a compression put back text it had dropped, are named on the line of the event that made them. A figure that was not measured is left out, not estimated.
+
+**The measures:**
+
+- **Compression** is the share of the body's characters the compressed text removes.
+- **Change** is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
+- **Clarity score** is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: the average sentence length, the share of sentences over 25 words, and the history words, the asides, the citations, and the negations per sentence.
+- **Solubility** is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
+
+The ranks are taken against the compiled rules at commit `770c7eb`, so that a figure written later is comparable with one written earlier. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+
+**The figures are written by the process that compresses, revises, or checks the text, in the same commit.** The compiler leaves the section out of the compiled rule, so the figures are not read at session start.
+
+**Why:** a compressed text is read in place of its source, so a directive it loses is lost to every session that reads it. The check is what shows that it carries what the source carries. Recording the figures in the source keeps the facts about a compressed text where the text is. A reader of the rule sees how it was compressed, how it changed, and when it was last checked, without the experiment record that produced it.
+
+**How to apply:** write a compressed text in the source's `## Compressed` section, as numbered lists. Have a fresh lister and a fresh checker check it against the body, repair each loss with the smallest clause, and check a repaired rule again. Add a line to the source's `## Compression` section for each compression, revision, and check, in the same commit as the change it records.
+
+## Compressed
+
+1. A source rule may carry a compressed text: the rule restated with the same effect and outcome, in fewer words.
+2. Write it in a `## Compressed` section below the body. It shares the source's title and `Related:` list.
+3. The body stays the authority. Never edit the compressed text apart from it.
+
+## The compressed text
+
+1. Write the compressed text as numbered lists. Each point is one or two short sentences, carrying one directive or the reason for one.
+2. Headings within the section group the points, and each group's list numbers from 1.
+3. A reason is a point that leads with `**Why:**`. Keep a fenced example the directives depend on.
+4. A change to the body reaches the compressed text in the same commit.
+5. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
+6. `./compile.sh` compiles the body. `./compile.sh --compressed` compiles a rule with a Compressed section to its title, the compressed text, and its `Related:` list, and a rule with none as by default.
+7. Neither form carries the `## Compressed` heading, the `## Compression` section, the `## History` section, or the provenance footer.
+
+## The check
+
+1. A compressed text stands only after it is checked against its source. The check has two parts, each done by its own fresh agent that has not seen the compression.
+2. A lister lists the source's directives from its body, without the Compressed section, the Compression section, and the footer.
+3. A checker judges each directive against the title, the compressed text, and the `Related:` list, as kept, less precise, or lost.
+4. Repair a lost directive, and a materially less precise one, with the smallest clause that closes the gap. Check the repaired rule again in full.
+5. Where two checkers disagree on a directive, the source decides.
+6. Record a less precise directive left as it is, and why.
+7. Check a compressed text again after any change to it, except a swap of one term for another the engineer settled.
+
+## The figures
+
+1. Record each compression, revision, and check of a compressed text in a `## Compression` section below the Compressed section.
+2. One line records each event. A later event adds a line, and the earlier lines stay as written.
+3. A line gives the date, the event, and its figures.
+4. A **compressed** line gives the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
+5. A **revised** line gives the solubility and the clarity score before and after, and the directive counts of the check that followed.
+6. A **re-checked** line gives the directive counts and the number of repairs.
+7. Name restorations, where a compression put back text it had dropped, on the line of the event that made them.
+8. Leave out a figure that was not measured. Do not estimate it.
+9. Compression is the share of the body's characters the compressed text removes.
+10. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
+11. Clarity score is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
+12. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
+13. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+14. The process that compresses, revises, or checks the text writes the figures, in the same commit.
+15. The compiler leaves the section out of the compiled rule, so the figures are not read at session start.
+16. **Why:** a compressed text is read in place of its source, so a directive it loses is lost to every session that reads it. The check shows it carries what the source carries. The figures in the source keep the facts about a compressed text where the text is.
+
+## Compression
+
+- 2026-10-27, compressed: compression 0.18, change 0.31, solubility 34 → 56, clarity 0.49 → 0.86, 41 directives, 41 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
+Related:
+
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — a package's `source/` and its compiled rules
+- the an-implementation-runs-on-a-branch-to-a-declared-end rule — the rule-reduction experiment, which brings this rule to master when it merges
+
+---
+
+Authored by Scott Bellware on Tue Oct 27 2026 at 2:31:40 PM PT

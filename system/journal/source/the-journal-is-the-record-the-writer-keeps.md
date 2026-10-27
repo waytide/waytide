@@ -131,6 +131,12 @@ Journal: Idea
 7. Do not edit an entry once it is written, except for disclosure or a change the writer directs to their own entry. A later thought is a later entry.
 8. **Why:** what the writer thinks about the work is otherwise recorded nowhere and gets lost between sessions. A personal record is read against the day the writer remembers, so the local hour must survive.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.41, change 0.65, solubility 23 → 48, clarity 0.40 → 0.77, 37 directives, 37 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+- 2026-10-24, revised: How to apply's point 7 names the two exceptions to the ban on editing an entry; not checked
+- 2026-10-27, re-checked: 39 directives, 39 kept, 0 less precise, 0 lost
+
 ## History
 
 The prefix was `Diary:` for the few hours between the date being dropped and the package being renamed, both on 2026-08-18.
@@ -190,3 +196,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

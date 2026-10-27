@@ -28,6 +28,10 @@ The word is used as a general quality of a design. It is judged **by the reader*
 14. Judge it from the reader by asking what interpretive work the unit costs them. Aim design work at solubility, and use it as the criterion when a design is judged.
 15. **Why:** The quality needs one settled name so it can be aimed at, taught, and used as a criterion when a design is judged, not left to unstated taste.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.13, change 0.43, solubility 86 → 90, clarity 0.89 → 0.90, 8 directives, 8 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named solubility and titled "Solubility: how readily a unit dissolves into the reader's understanding".
@@ -48,3 +52,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

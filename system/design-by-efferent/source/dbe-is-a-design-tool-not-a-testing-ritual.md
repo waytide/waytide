@@ -39,6 +39,10 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
 20. **Why:** The red-green-refactor ceremony existed only to put human attention in the loop, so ritual repetition wastes effort and teaches nothing. Tests are the vehicle; design is the point.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.28, change 0.51, solubility 59 → 79, clarity 0.65 → 0.84, 16 directives, 15 kept, 1 less precise, 0 lost, after 4 repairs, re-checked kept; directive 16 less precise, judged immaterial
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named dbe-as-design-tool.
@@ -73,3 +77,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

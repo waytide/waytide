@@ -33,6 +33,10 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 7. Example of yes: a two-step upload can raise `Upload::Error` from the initial post's "rejected" site or the finalize step's "rejected" site.
 8. **Why:** error tests stay about error correctness, not presentation. This gives a precise, testable criterion for when library-specific error classes are "self-evidently the right failure and need no message".
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.20, change 0.47, solubility 57 → 85, clarity 0.39 → 0.87, 8 directives, 8 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named assert-error-message-only-as-sole-discriminator and titled "Assert error-message content only when it is the sole way to confirm the correct error".
@@ -53,3 +57,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:39:25 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:09 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

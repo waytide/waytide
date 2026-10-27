@@ -67,6 +67,12 @@ Word each option's own description *…then display this selection prompt again*
 28. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
 29. **Why:** The selection UI makes responsibility transfer legibly and consistently, and it already supplies free text. The two-option floor pushes toward the real decision rather than a single proposal for approval. `Explain` handles a well-formed prompt the engineer does not understand. It must be an option because you cannot tell which of your own questions are unclear.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.56, change 0.78, solubility 33 → 69, clarity 0.54 → 0.85, 28 directives, 28 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-25, revised: point 20 takes the new wording, that no candidate is dropped; not checked
+- 2026-10-27, re-checked: 31 directives, 30 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ## History
 
 Until 2026-10-25 the rule said that where a prompt has four genuine candidates, the fourth is dropped to keep `Explain`, while it also said to present every genuine candidate the agent finds. The engineer settled that where there are more than three, the question says so and points to `Explain`, whose answer gives every candidate, and that a candidate beyond the third is chosen through the "Other" answer.
@@ -106,3 +112,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

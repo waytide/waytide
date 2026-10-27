@@ -51,6 +51,10 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 4. A project's own `waytide/local/vocabulary.md` takes no prefix. It is a structural file, not a dated entry. See the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule.
 5. **Why:** The dated artifacts are a chronological record. One UTC-normalized, lexically-sortable prefix orders them in every directory, keeps their order within a day, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable conventions, each named for what it says.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.30, change 0.60, solubility 48 → 79, clarity 0.44 → 0.83, 13 directives, 13 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named file-names-use-iso8601-utc-prefix and titled "Dated artifacts in `waytide/` take an ISO 8601 UTC datetime prefix. System rules do not".
@@ -86,3 +90,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

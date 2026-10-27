@@ -123,6 +123,10 @@ For more detail than bullet points, ask for an expanded answer.
 10. Either stricter form may be adopted if the judgment proves unreliable in use.
 11. **Why:** An agent writes prose without deciding to, and prose hides padding, comment, and unnamed back-references. A list puts each claim on its own line, so an empty claim shows. Putting the burden on prose, rather than stating a preference, keeps the rule in force across sessions.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.49, change 0.71, solubility 25 → 53, clarity 0.41 → 0.78, 22 directives, 22 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was titled "An answer is a list. Prose must justify itself".
@@ -157,3 +161,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

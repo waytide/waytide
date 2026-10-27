@@ -127,6 +127,10 @@ with these options:
 12. Do not write the plan to a file. It is not a `foundation` planning record.
 13. **Why:** the engineer's attention is scarce. For work with negligible rework cost, waits at each hinge buy nothing. The person who knows the work's worth should choose the cadence. Keeping DBE in force stops the choice being a way out of the method. A record showing options put to an absent engineer would be believed, so the mode is recorded honestly. The plan is the one cheap moment of attention before big-batch work.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
@@ -176,3 +180,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

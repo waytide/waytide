@@ -60,6 +60,12 @@ Related:
 18. This applies to rules, working-state artifacts, log entries, and any other file, except where this rule names an exception.
 19. **Why:** a timestamp is useful only while its resolution is finer than the rate of what it records. At hour resolution, footer edits in the same hour produced identical lines, so they went unwritten.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.48, change 0.72, solubility 30 → 78, clarity 0.26 → 0.77, 14 directives, 14 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-25, revised: point 18 takes "except where this rule names an exception"; not checked
+- 2026-10-27, re-checked: 14 directives, 13 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ---
 
 Authored by Scott Bellware on Sun Jul 26 2026 at 11:53:08 AM PT
@@ -83,3 +89,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:05:00 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -70,6 +70,10 @@ Changed by <other name> on <datetime>
 17. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer.
 18. **Why:** Packages are installed by `git subtree`, which does not carry per-file history. The footer keeps authorship visible wherever the rule is read.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.51, solubility 50 → 79, clarity 0.30 → 0.75, 12 directives, 12 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named record-rule-authorship-in-a-footer.
@@ -95,3 +99,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

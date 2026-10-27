@@ -8,10 +8,10 @@
 #
 # A source rule is the authority and the only copy edited. Its compiled rule sits at the
 # package root under the same name, and is regenerated, never edited. By default the compiled
-# rule is the source rule without its Compressed section, its History section, and its
-# provenance footer: the --- divider and the Authored by and Changed by lines below it. Each
-# section runs from its "## Compressed" or "## History" line to the next of the two, the
-# "Related:" line, or the footer.
+# rule is the source rule without its Compressed section, its Compression section, its History
+# section, and its provenance footer: the --- divider and the Authored by and Changed by lines
+# below it. Each section runs from its "## Compressed", "## Compression", or "## History" line
+# to the next of the three, the "Related:" line, or the footer.
 #
 # Told --compressed, a rule that has a Compressed section compiles to its title, the compressed
 # text, and its Related list. A rule that has none compiles as it does by default.
@@ -56,12 +56,13 @@ for source_rule in $(find system -path '*/source/*' -name '*.md' | sort); do
       for (i = NR; i > 0 && line[i] ~ /^((Authored|Changed) by .*)?$/; i--) footer = i
       if (i > 0 && line[i] == "---") footer = i
 
-      # Each line before the footer is the title, the body, a Compressed or History section,
+      # Each line before the footer is the title, the body, a Compressed, Compression, or History section,
       # or the Related list.
       part = "title"
       for (i = 1; i < footer; i++) {
         if (i > 1 && part == "title") part = "body"
         if (line[i] == "## Compressed") { part = "compressed"; has_compressed = 1 }
+        else if (line[i] == "## Compression") part = "compression"
         else if (line[i] == "## History") part = "history"
         else if (line[i] ~ /^Related:/) part = "related"
         kind[i] = part

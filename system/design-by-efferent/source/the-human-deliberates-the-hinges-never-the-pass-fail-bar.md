@@ -65,6 +65,12 @@ The loop, by turn:
 6. Stop when solubility is satisfied.
 7. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.13, change 0.38, solubility 50 → 66, clarity 0.59 → 0.79, 28 directives, 28 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: point 9 takes the definition of test mechanics; not checked
+- 2026-10-27, re-checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ## History
 
 Until 2026-10-24 the Why named the hinges as the actuation and the resulting solubility alone, from when those were the only two, and turn two left "test mechanics" undefined. The engineer set out that mechanics are the testing framework and the ceremonies of using it, while the actuation, observation, controls, and naming are the test's content. The rule now says so, and the Why names the hinges of the hinge-cycle rule.
@@ -97,3 +103,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

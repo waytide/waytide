@@ -36,6 +36,10 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 18. Do not add a second, raising actuation to a normal-path file.
 19. **Why:** a file holds one set of controls and one actuation. Separate files make failure modes findable by filename, and keep normal-path files from accumulating exceptional cases.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.28, change 0.57, solubility 61 → 77, clarity 0.63 → 0.78, 18 directives, 18 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named normal-path-and-exceptional-paths-are-separate-files.
@@ -70,3 +74,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

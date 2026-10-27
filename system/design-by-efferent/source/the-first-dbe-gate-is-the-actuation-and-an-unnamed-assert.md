@@ -102,6 +102,10 @@ end
 30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 31. **Why:** Writing the actuation before any implementation designs the interface from the use site, per the DBE-as-design-tool rule. Limiting the first gate to the actuation and one unnamed assert avoids committing early to an outcome taxonomy. The explaining variable makes the test read as a statement of the concern and keeps the efferent view in frame.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.19, change 0.52, solubility 44 → 59, clarity 0.61 → 0.76, 24 directives, 24 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named dbe-first-turn-test-file and titled "DBE, first turn: the first gate is the actuation and an unnamed assert".
@@ -133,3 +137,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

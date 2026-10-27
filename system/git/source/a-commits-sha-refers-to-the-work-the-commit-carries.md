@@ -40,6 +40,11 @@ Give the message, the stat, or the log entry when the question is about the comm
 14. **Why:** Reporting the commit's bookkeeping is correct, but it is about the wrong thing. It costs the engineer a second turn to ask again.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.52, change 0.68, solubility 48 → 79, clarity 0.35 → 0.67, 9 directives, 8 kept, 1 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-sha-names-the-work-rather-than-the-commit and titled "A commit named by its SHA is a reference to the work it carries, not to the commit".
@@ -61,3 +66,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:46 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -200,6 +200,10 @@ end
 34. Do not write a deciding factor as a `comment` in place of a precondition.
 35. **Why:** The controls convention hides how example values are built, so the factors that decide an outcome are often the least visible ones. A test with invisible deciding factors cannot be read, and it can pass without exercising what it names. An assertion is checked where a comment is not. Keeping a precondition a bare assertion, not a named test, keeps it distinct from a claim about how the unit behaves.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.32, change 0.58, solubility 33 → 44, clarity 0.64 → 0.76, 27 directives, 27 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named precondition-documents-deciding-factors-and-reads-inline and titled "A precondition documents the factors that decide a test's outcome, and its predicate reads inline".
@@ -236,3 +240,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:09:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

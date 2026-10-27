@@ -39,6 +39,10 @@ Counter-examples, where "Is" is not used:
 11. Name a context for a raised error "Fails", per the error-test-naming rule.
 12. **Why:** "Is X" reads as a claim of equality or identity. Using it for any other assertion promises a comparison the assertion does not make.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.05, change 0.29, solubility 63 → 67, clarity 0.40 → 0.46, 6 directives, 6 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named test-name-is-prefix.
@@ -58,3 +62,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:47:26 AM PT
 Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

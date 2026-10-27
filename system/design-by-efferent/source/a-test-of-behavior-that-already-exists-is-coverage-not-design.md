@@ -28,6 +28,11 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 10. When the work is adding coverage, a test that passes when first run is expected and correct. See the "TDD designs, coverage prevents" rule.
 11. **Why:** DBE is a design tool, not a coverage tool: exit on solubility, not coverage. A test that passes when first run, taken as a design step, reads as a driven outcome when it isn't.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.22, change 0.64, solubility 68 → 81, clarity 0.58 → 0.75, 6 directives, 6 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, re-checked: 10 directives, 7 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named no-green-on-arrival-tests and titled "Drop an outcome whose test is green-on-arrival — it drives no design".
@@ -61,3 +66,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

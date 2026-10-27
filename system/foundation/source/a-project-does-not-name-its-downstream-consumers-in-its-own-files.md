@@ -63,6 +63,10 @@ A decision may have been about that project, and its name is there for that. Lea
 3. Commit the tool. It names no consumer and only reads the configuration.
 4. **Why:** a consumer list inverts the dependency direction, drifts silently, and discloses other parties' projects once the repository is public. Per-machine configuration keeps the capability without those costs.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.56, change 0.73, solubility 43 → 83, clarity 0.60 → 0.86, 16 directives, 16 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-project-does-not-name-its-consumers.
@@ -90,3 +94,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

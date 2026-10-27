@@ -46,6 +46,10 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 5. Amend a plan by dated addition where the engineer asks.
 6. **Why:** a plan edited to match the work stops being a statement of intent. It becomes unfalsifiable, so nothing is learned from having written it.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.24, change 0.48, solubility 55 → 83, clarity 0.37 → 0.84, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 Related:
 
 - the the-work-sessions-directory-holds-one-record-per-work-session rule — the design reconciliation this settles the ordinary answer to
@@ -63,3 +67,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -57,6 +57,11 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
 5. **Why:** Grouping the records puts the difference between a chronological account and a statement of current state into the path. It also gives a later contemporaneous, historical record an obvious place.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.19, change 0.55, solubility 40 → 73, clarity 0.27 → 0.82, 14 directives, 14 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-27, re-checked: 14 directives, 12 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+
 ## History
 
 A migration record was moved here on 2026-08-18 and moved back out the same day.
@@ -99,3 +104,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:16:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

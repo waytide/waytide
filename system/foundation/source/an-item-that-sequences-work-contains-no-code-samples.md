@@ -27,6 +27,10 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 11. Generate it in the increments the user chooses.
 12. **Why:** The user directs code generation interactively. Code samples and premature naming lock in decisions early and remove that incremental control.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.22, change 0.59, solubility 88 → 92, clarity 0.82 → 0.87, 10 directives, 10 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named plans-no-code-samples.
@@ -47,3 +51,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

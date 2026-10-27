@@ -61,6 +61,12 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 9. The agent does not put off a preference, or the question about it, on its own.
 10. **Why:** holding a preference in an agent memory store is forbidden, so the path to a written rule must be short enough that nothing is held. Asking at once makes it short.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.34, change 0.60, solubility 40 → 69, clarity 0.34 → 0.67, 15 directives, 15 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: rewritten for preferences asked about at once, with an amendment among the candidates; not checked
+- 2026-10-27, re-checked: 22 directives, 9 kept, 12 less precise, 1 lost, 14 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named ask-at-once-when-a-preference-is-expressed.
@@ -104,3 +110,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 1:37:58 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

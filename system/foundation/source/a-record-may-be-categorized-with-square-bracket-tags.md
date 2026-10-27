@@ -98,6 +98,10 @@ Reserve a tag by naming it in a rule and stating what follows from it. Where no 
 13. Freeform tags that differ, like `[idea]` and `[ideas]`, do not categorize together. This is accepted rather than solved.
 14. **Why:** categorization that costs nothing gets done. A square-bracket tag shows in a raw-text preview and is found by plain text search. It also needs no taxonomy that someone has to maintain.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.30, change 0.53, solubility 28 → 60, clarity 0.37 → 0.90, 29 directives, 29 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+
 ## History
 
 **A leading-tag form was written on 2026-08-18 and superseded the same day.** It put a one-line record's tags inside its `# <title>` — `# [suspended] The rule is suspended, …` — on the reasoning that a short record had nowhere else to put them.
@@ -140,3 +144,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

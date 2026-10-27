@@ -155,6 +155,13 @@ Change the state as the item reaches another word, renaming the file with it, an
 63. **Why:** One class of record, because its earlier kinds differed only in a word, which a tag carries. A thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
 
 
+## Compression
+
+- 2026-10-21, compressed: compression 0.61, change 0.83, solubility 11 → 46, clarity 0.18 → 0.55
+- 2026-10-22, checked: 75 directives, 49 kept, 23 less precise, 3 lost, one of them the engineer's chosen resolution of the source's contradiction
+- 2026-10-22, revised: restored directives 14 and 17, compression 0.60, change 0.83
+- 2026-10-24, revised: written as a numbered list; checked twice, 3 repairs, re-checked kept
+
 ## History
 
 **This is the last of the mode vocabulary, and it is gone with it.** A project once worked in one of three modes, and the mode fixed what a planning record was called — a design, an aspiration, or an orientation in one; a plan, an intention, or an action in another. The mechanism was decommissioned on 2026-08-18 and the six words outlived it as a tag set that still read as exhaustive.
@@ -215,3 +222,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

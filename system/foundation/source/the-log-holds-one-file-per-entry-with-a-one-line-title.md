@@ -62,6 +62,12 @@ Record decisions made during sessions as one file per decision in `waytide/local
 
 8. **Why:** a project's decisions are easy to lose and expensive to reconstruct. A one-line-per-decision log, append-only and committed with the code, keeps a complete, skimmable, durable record.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.60, solubility 34 → 65, clarity 0.26 → 0.70, 30 directives, 30 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-25, revised: point 9 takes "An untagged entry with no body is one line"; not checked
+- 2026-10-27, re-checked: 24 directives, 24 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-25 the Content line said "An untagged entry is one line", and How to apply said to write "a titled one-line entry". Both read as barring the body the same line allows where reasoning will not fit a title, which an abandonment takes. The engineer settled that bodies stay and one line is the ordinary case.
@@ -116,3 +122,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -78,6 +78,10 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 6. Do not tag an item's log entry this way. An item set aside carries `**State:** Suspended` and is not removed.
 7. **Why:** a former undo queue under `waytide/local/suspended/` held eleven suspended things and none was restored. Its cost was paid on every suspension. The log entry guards against a thing returning reconstructed from memory, naming what was stopped, why, and what else changed, while git holds the text.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.26, change 0.52, solubility 39 → 70, clarity 0.31 → 0.76, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 A leading-tag form was written on 2026-08-18 and superseded the same day.
@@ -111,3 +115,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

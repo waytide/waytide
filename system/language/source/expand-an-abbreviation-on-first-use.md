@@ -24,6 +24,10 @@ Do not use an abbreviation the reader may not already know without spelling it o
 10. Use a project abbreviation freely only after its definition, such as the design-by-efferent vocabulary.
 11. **Why:** an unexplained abbreviation forces the reader to guess or look it up. It saves the writer a few letters and costs the reader the meaning.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.25, change 0.53, solubility 68 → 95, clarity 0.46 → 0.98, 10 directives, 10 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named expand-abbreviations-on-first-use and titled "Expand an abbreviation on first use, or don't use it".
@@ -44,3 +48,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:27 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

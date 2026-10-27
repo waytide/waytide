@@ -50,6 +50,10 @@ Major  → 2.3.0.0   existing use may not survive
 13. Do not propose a version and ask for confirmation. The decision is put at a gate.
 14. **Why:** Which segment increases is a claim about other people's code, not derivable from the diff. A published version cannot be taken back, only superseded.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.55, change 0.75, solubility 58 → 85, clarity 0.58 → 0.80, 10 directives, 10 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named the-next-version-is-chosen-by-the-engineer.
@@ -77,3 +81,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:48 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -33,6 +33,10 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 18. **Why:** Read as local conventions, these rules look like an arbitrary do-this-not-that list. Naming their purpose keeps them coherent and prevents contradictory rules from accreting in other packages.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.15, change 0.62, solubility 61 → 78, clarity 0.54 → 0.81, 12 directives, 12 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named rules-establish-a-mindset-purpose-over-category and titled "A rule's purpose is not confined to its category — many rules establish a mindset".
@@ -62,3 +66,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:19:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

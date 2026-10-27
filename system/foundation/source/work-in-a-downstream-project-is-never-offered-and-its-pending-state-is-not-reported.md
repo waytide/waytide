@@ -67,6 +67,10 @@ Carry out any of that when the engineer asks for it, and report what happened on
 4. Raise none of it on your own initiative.
 5. **Why:** the engineer decides when other repositories move, and a package change does not reveal that decision. A report is where this fails, because an agent told not to ask still closes its summary with what it did not do.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.30, change 0.53, solubility 34 → 66, clarity 0.29 → 0.68, 17 directives, 17 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named downstream-work-is-never-offered.
@@ -85,3 +89,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

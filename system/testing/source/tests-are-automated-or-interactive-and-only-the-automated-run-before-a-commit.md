@@ -78,6 +78,10 @@ Where a project has no automated suite, run nothing and report nothing missing.
 6. Run-suite-before-commit is then satisfied vacuously, not violated.
 7. **Why:** Keeping the tests in separate directories keeps the automated suite mechanically true, so it either passes or fails. It also gives the tests that need a person a place to live, so they are not deleted for not fitting. The engineer's attention is the scarce resource, so a test that spends it runs only when the engineer says so.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.38, change 0.65, solubility 26 → 70, clarity 0.28 → 0.85, 23 directives, 22 kept, 1 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named tests-are-automated-or-interactive and titled "`test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit".
@@ -104,3 +108,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:37 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

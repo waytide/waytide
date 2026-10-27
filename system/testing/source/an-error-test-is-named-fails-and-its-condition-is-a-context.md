@@ -41,6 +41,12 @@ end
 8. An error test always takes an enclosing context, because the context carries the condition. The a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
 9. **Why:** an error outcome states "under condition X, the actuation fails." The scenario belongs in a context and the observed fact in the test. "Fails" names the behavior directly and keeps test names uniform.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.33, change 0.66, solubility 76 → 86, clarity 0.72 → 0.81, 10 directives, 9 kept, 1 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-24, revised: points 5 and 8 restated; checked: 2 less precise, 2 repairs, re-checked kept, restored directive 6's "may"
+- 2026-10-27, re-checked: 9 directives, 9 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-24 an error test's context was called the deliberate exception to the context-only-for-local-instrumentation rule's ban on a context that holds only a test. That rule now warns rather than bans, and does not warn of a leading `When …` context, so there is no exception to make.
@@ -67,3 +73,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:40 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

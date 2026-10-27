@@ -84,6 +84,12 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 **Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The log answers what this project has decided, for a reader who holds nothing.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.35, change 0.67, solubility 25 → 62, clarity 0.28 → 0.80, 20 directives, 20 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-25, revised: points 2 and 3 take the new wording, that the merge decides the concluding entry; not checked
+- 2026-10-27, re-checked: 18 directives, 18 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-25 the concluding entry's form was said to be decided by whether the record itself is on `master`, while a later paragraph and How to apply made the merge the test. How to apply also told every unmerged case to write the findings, which abandoned work does not have, and left out the reasoning for stopping. The engineer settled that the merge is the test, and that the findings are written where there are any, with the reasoning for stopping for abandoned work.
@@ -124,3 +130,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

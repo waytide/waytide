@@ -213,6 +213,10 @@ display-name = "Jane Doe"
 9. Never take a username from `writers.toml`.
 10. **Why:** the writer is one person across many tools and projects. So identity is set once per machine, with project and process overrides for exceptions. Only the display name is overridable per project, so no project can declare who is writing.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.23, change 0.50, solubility 39 → 52, clarity 0.70 → 0.92, 52 directives, 52 kept, 0 less precise, 0 lost
+
 ## History
 
 **The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
@@ -248,3 +252,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

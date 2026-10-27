@@ -23,6 +23,10 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 7. Prefer a short answer that can be expanded on request over a long one that pre-empts every question.
 8. **Why:** the reader's attention is scarce. Summary-first lets the reader grasp the point at once and choose whether to read on.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.20, change 0.44, solubility 86 → 94, clarity 0.74 → 0.89, 9 directives, 9 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named lead-with-a-summary-before-details.
@@ -41,3 +45,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:37 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

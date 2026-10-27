@@ -36,6 +36,10 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 18. On a "test tree" request, run the project's durable tree script and present its output.
 19. **Why:** the de-duped tree is the readable, whole-suite view of feature and outcome structure, without per-file repetition. Expanded dynamic names also surface loop-generated cases.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.19, change 0.44, solubility 75 → 84, clarity 0.76 → 0.86, 16 directives, 16 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named test-tree-command and titled ""test tree" command: run the suite and print a normalized, de-duped context tree".
@@ -60,3 +64,4 @@ Changed by Scott Bellware on Fri Aug 21 2026 at 8:40:26 AM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:32 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

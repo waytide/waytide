@@ -32,6 +32,12 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 18. Then apply the name the human chose or dictated.
 19. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.19, change 0.51, solubility 72 → 80, clarity 0.68 → 0.77, 21 directives, 21 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: points 2 and 6 name attended and unattended work; not checked
+- 2026-10-27, re-checked: 16 directives, 15 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ## History
 
 Until 2026-10-24 the opening said, without qualification, that the loop stops at every gate and proceeds only on the human's go. The rule predates unattended work, whose exception was added only to How to apply. The opening and the title now carry it too.
@@ -74,3 +80,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:26:49 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

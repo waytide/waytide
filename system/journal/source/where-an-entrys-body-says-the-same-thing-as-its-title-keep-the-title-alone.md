@@ -17,6 +17,10 @@ This is the title-and-body counterpart of the journal-entries-are-recorded-in-th
 5. Where the body adds no fact, no detail, and no framing beyond the title, drop the body and keep the title.
 6. **Why:** it avoids redundancy. A one-line entry whose title already says everything does not need the same words again below it.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.11, change 0.45, solubility 76 → 85, clarity 0.56 → 0.73, 8 directives, 8 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named omit-body-when-same-as-title.
@@ -37,3 +41,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

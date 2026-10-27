@@ -18,6 +18,10 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 6. Keep the `?` out of a `context` label.
 7. **Why:** The context names the feature under test. "Predicate" is the exact term for a boolean-returning method. A `?` in a label reads as interrogative prose, not a feature name.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.39, change 0.63, solubility 78 → 98, clarity 0.62 → 0.98, 3 directives, 3 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named predicate-context-name and titled "A predicate method's test context is named "`<Name>` Predicate"".
@@ -42,3 +46,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:55 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:21:00 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

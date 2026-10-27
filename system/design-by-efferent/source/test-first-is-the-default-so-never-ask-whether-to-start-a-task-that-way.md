@@ -34,6 +34,11 @@ A question with a genuinely situational answer is a decision rather than a settl
 6. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 7. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.13, change 0.43, solubility 77 → 78, clarity 0.71 → 0.70, 12 directives, 12 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-27, re-checked: 11 directives, 11 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named never-ask-to-start-test-first and titled "Never ask whether to start a task test-first — test-first is the default".
@@ -70,3 +75,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

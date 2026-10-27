@@ -30,6 +30,12 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 12. Do not test the bare forwarding to the primitive underneath a tested policy, such as the `file.empty?` beneath those policies.
 13. **Why:** Tests exist to prevent regressions in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence when none of our code ran.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.14, change 0.44, solubility 73 → 67, clarity 0.70 → 0.51, 6 directives, 6 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-24, revised: sentences over 25 words split, solubility 67 → 75, clarity 0.51 → 0.70; checked: 6 directives, 4 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-27, re-checked: 6 directives, 6 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was titled "Don't test the platform — a transparent pass-through has nothing of ours to pin".
@@ -56,3 +62,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 1:46:46 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:35 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

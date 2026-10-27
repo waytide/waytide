@@ -87,6 +87,12 @@ Lines 1–6 below are the opening statements, which come before any section head
 18. Where the thinking moves, write a later observation and leave the earlier one as written.
 19. **Why:** discovery produces valuable thinking before it is ready to bind. A place for non-binding hypotheses keeps that thinking without imposing it early as a rule.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.34, change 0.56, solubility 22 → 61, clarity 0.22 → 0.70, 21 directives, 21 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-25, revised: points 11, 12, and 13 take the new wording, that a promoted observation names its result; not checked
+- 2026-10-27, re-checked: 22 directives, 21 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ## History
 
 Until 2026-10-25 the Promotion step said to "note the promotion in the two files", the rule and the observation, while the same step said to leave the observation as written and the body said nothing about the observation changes when the rule appears. The engineer settled that the rule is the observation's result, and that the observation names it in one added line.
@@ -130,3 +136,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

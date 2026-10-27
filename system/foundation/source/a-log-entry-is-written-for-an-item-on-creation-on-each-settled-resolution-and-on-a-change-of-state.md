@@ -87,6 +87,14 @@ Name the record in the entry, and say what happened to it. State what the record
 29. **Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep the log skimmable. A log entry has no State line beside it, so an entry asserting what a record only settles is read as the system's behavior.
 
 
+## Compression
+
+- 2026-10-21, compressed: compression 0.62, change 0.80, solubility 17 → 35, clarity 0.23 → 0.20
+- 2026-10-22, checked: 19 directives, 18 kept, 1 less precise, 0 lost
+- 2026-10-22, revised: rewritten in short sentences, compression 0.59, solubility 35 → 44, clarity 0.20 → 0.47; checked: 19 directives, 16 kept, 3 less precise, 0 lost
+- 2026-10-22, revised: restored directive 5, compression 0.58, change 0.80
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles".
@@ -148,3 +156,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

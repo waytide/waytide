@@ -28,6 +28,11 @@ Tests serve two different purposes in two different processes, and conflating th
 11. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
 12. **Why:** Forcing TDD's red-to-green onto coverage is a category error. It deforms shipped implementations to satisfy a misplaced ritual, and it blurs design tests with regression tests.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.36, change 0.64, solubility 68 → 85, clarity 0.65 → 0.86, 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 13 directives, 13 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named tdd-designs-coverage-prevents-never-break-implementation and titled "TDD designs behavior, and adding coverage prevents its regression — distinct activities, and an implementation is never broken to introduce a test".
@@ -61,3 +66,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

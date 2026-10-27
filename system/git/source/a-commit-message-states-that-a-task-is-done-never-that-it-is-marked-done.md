@@ -30,6 +30,12 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 9. **Why:** The commit records the state of the work, not the clerical act of ticking a box.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.23, change 0.61, solubility 86 → 85, clarity 0.76 → 0.73, 8 directives, 8 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-27, re-checked: 5 directives, 5 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named commit-says-task-is-done-not-mark-done and titled "Commit messages: never say "mark ... done" — state the fact ("Task 9 is done")".
@@ -56,3 +62,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

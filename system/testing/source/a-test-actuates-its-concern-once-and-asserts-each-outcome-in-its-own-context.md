@@ -83,6 +83,10 @@ end
 22. Each `test` block holds one assertion, and that assertion confirms the outcome its inner context's title states.
 23. **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place. Each outcome can then be read, named, and diagnosed on its own.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.26, change 0.50, solubility 65 → 82, clarity 0.70 → 0.89, 20 directives, 20 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named tdd-test-structure and titled "Test structure: actuate the concern once at the top, assert each outcome in its own nested context".
@@ -104,3 +108,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 1:12:44 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

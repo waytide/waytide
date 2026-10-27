@@ -241,6 +241,12 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 10. **Why:** an experiment and a feature share one lifecycle, and differ only where a question differs from an intent. Stated once, with six clauses conditioned on the tag, the difference shows directly.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.43, change 0.63, solubility 21 → 42, clarity 0.42 → 0.76
+- 2026-10-24, revised: written as a numbered list; checked: 86 directives, 75 kept, 11 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-27, re-checked: 88 directives, 75 kept, 12 less precise, 1 lost, 13 repairs, re-checked kept; directive 58 left less precise, since the point gives its reason and the run-the-test-suite-after-changes-before-considering-whether-to-commit rule states the directive
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named implementation-lifecycle and titled "An implementation runs on a branch, from a working location chosen at the start, to a declared end".
@@ -281,3 +287,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -70,6 +70,10 @@ Name the file and write the datetime line to match the answer. Settle the date f
 8. Name the file and write the datetime line to match the answer.
 9. **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.38, change 0.83, solubility 43 → 74, clarity 0.52 → 0.81, 24 directives, 24 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named ask-for-entry-time-or-omit-it.
@@ -97,3 +101,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -16,6 +16,11 @@ Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by 
 6. **Why:** The user does not want AI co-authorship attribution in their commit history.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.07, change 0.60, solubility 82 → 86, clarity 0.64 → 0.73, 3 directives, 2 kept, 1 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named no-claude-coauthor and titled "No Claude co-author trailer in commits".
@@ -30,3 +35,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:27:23 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:03 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:14:43 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

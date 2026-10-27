@@ -64,6 +64,10 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 9. A suspended test should stay visible and be passed over.
 10. **Why:** Deleting a test that cannot pass loses the work and the intent. Leaving it in makes every run report an expected failure, which hides the next real one. Renaming keeps the file visible and out of the report. A suspended test is not counted in the pass count, and that cost is accepted because the name shows in the directory listing.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.28, change 0.67, solubility 41 → 75, clarity 0.38 → 0.86, 13 directives, 13 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-suspended-test-file-is-named-with-a-leading-underscore and titled "A test file whose name begins with an underscore is suspended, and the suite does not run it".
@@ -91,3 +95,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:37 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

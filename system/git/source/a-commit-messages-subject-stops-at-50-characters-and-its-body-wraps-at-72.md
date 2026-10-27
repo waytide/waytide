@@ -81,6 +81,13 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 3. **Why:** git's tooling is built around these numbers, so messages written to them read as written everywhere. The subject limit also exposes an oversized commit while it is being written, when splitting is cheapest.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.39, change 0.57, solubility 33 → 72, clarity 0.35 → 0.76, 15 directives, 15 kept, 0 less precise, 0 lost
+- 2026-10-23, revised: truncation is for a journal entry alone; not checked
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-27, re-checked: 16 directives, 16 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-23 the rule made truncation available wherever the subject was not the agent's to rewrite, which could reach beyond a journal entry.
@@ -111,3 +118,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

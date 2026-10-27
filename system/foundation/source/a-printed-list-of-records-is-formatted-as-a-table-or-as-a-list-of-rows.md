@@ -99,6 +99,11 @@ A list of items takes the ordinal and no SHA columns:
 3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
 4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.26, change 0.56, solubility 37 → 69, clarity 0.33 → 0.75, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, re-checked: 24 directives, 21 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A list of records presented on request is a table".
@@ -135,3 +140,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:47:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

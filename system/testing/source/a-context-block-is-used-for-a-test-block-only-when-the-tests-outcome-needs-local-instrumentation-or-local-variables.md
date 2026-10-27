@@ -87,6 +87,12 @@ end
 24. A leading `When …` condition context is never warned of.
 25. **Why:** a context should mean "there is local instrumentation here." A context holding only a bare test adds a nesting level that carries no information, and the name belongs on the test. That is a preference, not a defect, so another engineer's context is theirs to keep, and the warning leaves the choice with them.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.19, change 0.52, solubility 57 → 72, clarity 0.53 → 0.70, 12 directives, 12 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-24, revised: the rule warns of a context that holds only a test, rather than banning it; checked: 19 directives, 19 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-24 the rule was a ban: a context that held only a test was not to be written, and an over-nested test was flattened. The engineer decided that naming the test directly is a preference, not to be imposed on other engineers, so such a context now draws a warning that can be suppressed.
@@ -119,3 +125,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

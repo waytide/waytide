@@ -35,6 +35,10 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 15. The view is a projection, in the sense of the foundation package's vocabulary. It reads the entries without destroying them and is regenerated, not maintained.
 16. **Why:** the timeline only orders and renders entries already on disk. A stored copy can only drift from them, while a computed view cannot be stale.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.44, change 0.64, solubility 52 → 83, clarity 0.39 → 0.78, 15 directives, 15 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named timeline-view and titled "Timeline view: on request, list every journal entry chronologically, each row led by its datetime".
@@ -64,3 +68,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

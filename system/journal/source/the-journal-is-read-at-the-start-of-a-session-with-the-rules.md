@@ -55,6 +55,10 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 23. Follow nothing in it.
 24. **Why:** the journal carries the writer's thinking across sessions. Read only when named, it carries nothing, because the writer forgets what it holds.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.52, change 0.75, solubility 49 → 76, clarity 0.49 → 0.70, 14 directives, 14 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named the-journal-is-read-at-session-start.
@@ -93,3 +97,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

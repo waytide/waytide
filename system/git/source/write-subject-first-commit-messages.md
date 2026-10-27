@@ -40,6 +40,11 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 18. **Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.39, change 0.56, solubility 58 → 81, clarity 0.45 → 0.72, 15 directives, 15 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 This rule carried a *no 50-character limit* policy until 2026-08-18, licensing a first line as long as it needed. That policy is discontinued and the cap replaced it the same day.
@@ -75,3 +80,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:52 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:14 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

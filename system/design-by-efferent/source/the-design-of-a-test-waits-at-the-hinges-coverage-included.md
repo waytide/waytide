@@ -37,6 +37,10 @@ When adding coverage for behavior that already exists, all five are in play:
 10. Never change the implementation to resolve that awkwardness. Never break an implementation to introduce a test.
 11. **Why:** The hinges hand each design decision to the human at its gate. A coverage test has real design decisions, especially in its controls and observations. Coverage differs from design only in that no behavior is designed and no red is driven. The hinges are present in both.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.14, change 0.57, solubility 71 → 89, clarity 0.63 → 0.93, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named the-design-of-a-test-waits-at-the-hinges-including-coverage and titled "The design of a *test* waits at the hinges — they apply to coverage too, with the implementation hinge degenerate".
@@ -64,3 +68,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

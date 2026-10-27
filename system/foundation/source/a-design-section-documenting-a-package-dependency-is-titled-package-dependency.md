@@ -16,6 +16,10 @@ A design — an item tagged `[design]` — may have a section that documents a d
 6. Use plain "Dependency" only for sections about something other than a package.
 7. **Why:** "Dependency" is overloaded. It can mean a code-level dependency, a runtime relationship, or an injected collaborator. "Package Dependency" names exactly what the section covers.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.58, solubility 80 → 99, clarity 0.63 → 1.00, 4 directives, 4 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named package-dependency-heading.
@@ -28,3 +32,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:50:38 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:37 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

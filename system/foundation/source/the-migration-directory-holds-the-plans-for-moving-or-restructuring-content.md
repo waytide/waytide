@@ -43,6 +43,11 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 24. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
 25. **Why:** a structural change is ordered, and is the operation most likely to lose content unrecoverably. The kept record leaves the trail of where content went, and why, where a reader looks first.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.34, change 0.63, solubility 33 → 68, clarity 0.33 → 0.76, 14 directives, 14 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 16 directives, 15 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+
 ## History
 
 Until 2026-10-25 the Related entry for the logs-directory rule said a migration record "is written to be executed rather than to account for what happened", while the body says the record also holds how the move actually went. The engineer settled that the record is written ahead of the move and then records what happened against the plan.
@@ -87,3 +92,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:16:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:18:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -131,6 +131,12 @@
 6. **Why:** a project does not need every convention the system carries. Before this, the remedies were to leave a package uninstalled or to write a local rule against it. A declaration is a recorded project decision, committed, dated, and reviewable, not the agent's judgment in the moment.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.44, change 0.78, solubility 20 → 57, clarity 0.24 → 0.70
+- 2026-10-22, checked: 37 directives, 34 kept, 3 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list, restored directive 33; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-project-declares-its-package-set and titled "A project declares which of its installed packages are active".
@@ -162,3 +168,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

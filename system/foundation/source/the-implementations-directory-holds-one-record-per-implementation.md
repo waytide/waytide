@@ -157,6 +157,12 @@ Leave the state line off while the work is under way. Add it when the record rea
 2. Update the state line as the state changes.
 3. **Why:** experiments and features share one lifecycle, and differ only by question against intent, which the tag states. One convention avoids wording drifting between duplicate rules.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.12, change 0.48, solubility 22 → 46, clarity 0.32 → 0.78, 54 directives, 54 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-25, revised: points 7 and 10 take the new wording, that Suspended is a state; not checked
+- 2026-10-27, re-checked: 58 directives, 58 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the concluding words both kinds take", though Suspended is defined as paused, not ended, and the filename took its state suffix "once the record concludes". That left open whether a suspended record takes the suffix, which the a-record-ends-with-its-state-in-upper-case rule gives to any record carrying a state line. The engineer settled that Suspended is a state and not a conclusion, and that the suffix follows the state line.
@@ -195,3 +201,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

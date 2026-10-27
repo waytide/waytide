@@ -36,6 +36,10 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload R
 14. Keep the suite consistent with the existing `upload/` tests.
 15. **Why:** the test output and the file tree read as the same structure, with each outcome placed under its path segments and its scenario.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.07, change 0.52, solubility 87 → 95, clarity 0.84 → 1.00, 9 directives, 9 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named test-context-nesting-mirrors-folders.
@@ -59,3 +63,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

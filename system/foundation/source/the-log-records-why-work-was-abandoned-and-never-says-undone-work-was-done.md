@@ -52,6 +52,10 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 4. Reasoning for stopping belongs in the log. Work that stopped does not.
 5. **Why:** A reader consults the log, with no branch to compare against, to learn what the project decided. Recording unexecuted work makes it read as settled knowledge the project holds.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.55, change 0.79, solubility 39 → 75, clarity 0.29 → 0.67, 12 directives, 12 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named the-log-never-says-undone-work-was-done and titled "The log records the reasoning for an abandonment, and never conveys that something was done when it was not".
@@ -80,3 +84,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

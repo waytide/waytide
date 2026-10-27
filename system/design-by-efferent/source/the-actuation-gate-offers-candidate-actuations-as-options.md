@@ -74,6 +74,11 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 12. A lone candidate is presented as every hinge presents one, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 13. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.37, change 0.54, solubility 30 → 56, clarity 0.43 → 0.76, 25 directives, 25 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 19 directives, 19 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named actuation-gate-options-or-chat and titled "The actuation gate: offer candidate actuations as options. The human selects one or writes their own".
@@ -116,3 +121,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

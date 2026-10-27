@@ -24,6 +24,13 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 8. **Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
 
 
+## Compression
+
+- 2026-10-21, compressed: compression 0.54, change 0.78, solubility 91 → 62, clarity 0.94 → 0.28
+- 2026-10-22, checked: 8 directives, 8 kept, 0 less precise, 0 lost
+- 2026-10-22, revised: rewritten in short sentences, compression 0.55, solubility 62 → 93, clarity 0.28 → 0.89; checked: 8 directives, 8 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named show-feature-test-output-after-implementation-hinge.
@@ -53,3 +60,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

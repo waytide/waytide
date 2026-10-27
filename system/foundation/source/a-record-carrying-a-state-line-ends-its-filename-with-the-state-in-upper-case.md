@@ -76,6 +76,11 @@ When the state changes, rename it again. When a reversible state word is taken b
 7. Leave historical records as written. A reader following an unresolvable path uses git.
 8. **Why:** a record's state is most often wanted from a directory listing, without opening the record. The mutating filename is the cost, so the suffix is confined to records carrying a state line.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.44, change 0.69, solubility 32 → 75, clarity 0.38 → 0.89, 22 directives, 22 kept, 0 less precise, 0 lost
+- 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-record-ends-with-its-state-in-upper-case and titled "A record carrying a state line ends its filename with that state in upper case".
@@ -117,3 +122,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:35:25 AM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -31,6 +31,10 @@ Speak and write to the user in plain language, using the **actual names of thing
 15. It also governs the codebase and the durable artifacts the user reads later: rules, logs, plans, and deferred items.
 16. **Why:** Invented labels and unexplained jargon hide meaning and force the reader to decode them. The point of communicating is to be understood.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.33, change 0.52, solubility 46 → 74, clarity 0.26 → 0.66, 16 directives, 16 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named communicate-plainly-name-the-thing and titled "Communicate plainly — name the actual thing, not invented jargon".
@@ -55,3 +59,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:35:39 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

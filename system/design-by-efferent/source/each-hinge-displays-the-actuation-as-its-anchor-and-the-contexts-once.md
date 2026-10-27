@@ -74,6 +74,10 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 4. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
 5. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.52, solubility 36 → 52, clarity 0.43 → 0.52, 13 directives, 13 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named what-each-hinge-displays and titled "What each hinge displays: the actuation is the anchor, the contexts are shown once".
@@ -105,3 +109,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

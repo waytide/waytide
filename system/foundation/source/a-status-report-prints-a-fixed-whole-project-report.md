@@ -111,6 +111,10 @@ Keep each part tight. Read current state before printing — do not report stale
 8. An unnamed test appears in the source and emits no line.
 9. **Why:** a status report is a recurring request with a known shape. A fixed format makes it repeatable and complete, and steers reading toward in-repo sources of truth rather than recollection.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.10, change 0.41, solubility 28 → 51, clarity 0.40 → 0.83, 32 directives, 32 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named status-report-format and titled ""Status report" prints a fixed whole-project report".
@@ -159,3 +163,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

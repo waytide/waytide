@@ -41,6 +41,10 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 19. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
 20. **Why:** slang and figurative terms are imprecise and carry unwanted associations. "wrap/wrapper" reads as a generic decorator and hides the accessor relationship that "mediates" names exactly.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.03, change 0.77, solubility 65 → 91, clarity 0.43 → 0.95, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was titled "No slang — use literal, non-figurative terms".
@@ -67,3 +71,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:16:02 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:48 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

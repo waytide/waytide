@@ -62,6 +62,12 @@
 3. Keep the one-line log entries separate and intact.
 4. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.22, change 0.57, solubility 45 → 64, clarity 0.45 → 0.68, 23 directives, 23 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: points 4 and 5 and How to apply's point 2 name the unattended case; not checked
+- 2026-10-27, re-checked: 22 directives, 22 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-24 the opening and How to apply described every cycle as recording options and the engineer's decision or chat, without exception. The unattended exception, which came after the rule was written, was stated only in the Format section. The opening and How to apply now carry it too.
@@ -107,3 +113,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

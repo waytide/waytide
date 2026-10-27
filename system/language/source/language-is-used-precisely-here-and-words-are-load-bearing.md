@@ -41,6 +41,10 @@ When a precise word is missing, name the concept literally rather than reaching 
 17. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
 18. **Why:** The terminology is how the approach is taught and how people stay oriented to the same concepts. Imprecise words do quiet damage. Metaphors carry unintended baggage, overdramatic words distort judgment, and loose synonyms merge concepts the design keeps apart.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.26, change 0.63, solubility 69 → 81, clarity 0.80 → 0.87, 22 directives, 21 kept, 1 less precise, 0 lost, after 2 repairs, re-checked kept; directive 15 less precise, judged immaterial
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named language-is-precise-here and titled "Language is used precisely here — words are load-bearing, not decoration".
@@ -65,3 +69,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -30,6 +30,10 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 14. Do not mint new metaphors by default.
 15. **Why:** The terminology is how this work is taught to other engineers. A literal name is the explanation itself, so the reader pays nothing to understand it each time. This is the solubility test applied to a name.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.65, solubility 83 → 94, clarity 0.84 → 0.96, 9 directives, 9 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named name-literally-not-by-analogy and titled "Name concepts with direct literal descriptions — no analogies, codes, or academic jargon".
@@ -54,3 +58,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 8:22:31 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

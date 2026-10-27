@@ -67,6 +67,10 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 4. It does not narrate when the word was dropped or what carried it before.
 5. **Why:** a vocabulary is read to settle what a word means now. History clauses accumulate and invite doubt about whether the old meaning still applies.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.48, change 0.72, solubility 34 → 70, clarity 0.36 → 0.67, 16 directives, 16 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-vocabulary-entry-says-what-a-term-means-not-what-it-was and titled "A vocabulary entry says what a term means — never what it used to be, and never where to read more".
@@ -90,3 +94,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

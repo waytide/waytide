@@ -85,6 +85,10 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 3. Then run the suite, then green, then refactor.
 4. **Why:** whether to drive an implementation through a failing test is a subtle, load-bearing judgment about that unit. Offering it as a candidate lets the engineer compare real alternatives rather than ratify one proposal.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.36, change 0.64, solubility 40 → 62, clarity 0.61 → 0.82, 16 directives, 16 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named the-implementation-hinge-offers-the-red-green-refactor-cycle and titled "The implementation hinge offers two candidates: the working implementation, or the red/green/refactor cycle".
@@ -124,3 +128,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

@@ -74,6 +74,10 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
 5. **Why:** a record is left as written because it is evidence, but that does not extend to content the project had no standing to publish. Naming the engineer as the authority keeps an agent from either exposing something because records are immutable or scrubbing a record on a guess.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.28, change 0.60, solubility 43 → 64, clarity 0.49 → 0.68, 16 directives, 16 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
@@ -103,3 +107,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

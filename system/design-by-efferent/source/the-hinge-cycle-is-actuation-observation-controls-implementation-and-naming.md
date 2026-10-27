@@ -128,6 +128,10 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 9. The participation decision names no hinge, on purpose.
 10. **Why:** Without the account, an engineer weighs the actuation as though it were the whole of what is being asked. Each question the account would answer then arrives at a later hinge, mid-decision. A passage repeated at every hinge stops being read.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.18, change 0.64, solubility 30 → 42, clarity 0.54 → 0.72, 33 directives, 33 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named hinge-cycle and titled "The initial-implementation hinge cycle: actuation → observation → controls → implementation → naming".
@@ -173,3 +177,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

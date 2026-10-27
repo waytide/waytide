@@ -27,6 +27,10 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 11. Once the case set is settled and there is more than one case, use `<feature>/<case>.rb`, each file named for its case.
 12. **Why:** a filename should carry meaning. A sole case-named file like `present` implies a contrast that does not exist, and misdescribes the feature as multi-case.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.04, change 0.45, solubility 88 → 88, clarity 0.85 → 0.85, 11 directives, 10 kept, 1 less precise, 0 lost, after 2 repairs, re-checked kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named single-case-test-named-for-feature and titled "A single-case feature is one test file named for the feature, not a folder of case files".
@@ -53,3 +57,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

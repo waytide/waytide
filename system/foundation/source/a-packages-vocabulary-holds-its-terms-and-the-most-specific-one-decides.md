@@ -129,6 +129,11 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 5. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
 6. **Why:** several vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.29, change 0.50, solubility 40 → 54, clarity 0.62 → 0.79, 32 directives, 32 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+- 2026-10-27, re-checked: 35 directives, 31 kept, 3 less precise, 1 lost, 4 repairs, re-checked kept
+
 ## History
 
 A fourth kind held such words from 2026-08-10 until 2026-08-14. It had one entry, and that entry carried a definition, which was the test that was to have kept it out. See the suspended words-from-the-design-vocabulary section.
@@ -171,3 +176,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:09:15 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

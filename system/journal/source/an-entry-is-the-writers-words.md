@@ -58,6 +58,10 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 26. Where the writer wants an entry, they say so.
 27. **Why:** the journal holds the writer's judgment. An agent-written entry would read as the writer's, making the record untrustworthy at the one thing it is for.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.36, change 0.60, solubility 44 → 74, clarity 0.45 → 0.75, 24 directives, 24 kept, 0 less precise, 0 lost
+
 ## History
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
@@ -83,3 +87,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

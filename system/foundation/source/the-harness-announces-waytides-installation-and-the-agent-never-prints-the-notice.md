@@ -310,6 +310,14 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 5. **Why:** An agent-printed notice was unreliable, since nothing revealed when the agent skipped it. It was also badly placed, inside a reply where it cluttered the answer or was scrolled past. Both came from the party announced also being the announcer. The harness removes the dependence on the agent, and puts the notice outside the response.
 
 
+## Compression
+
+- 2026-10-21, compressed: compression 0.71, change 0.91, solubility 24 → 32, clarity 0.48 → 0.58
+- 2026-10-22, checked: 76 directives, 69 kept, 7 less precise, 0 lost
+- 2026-10-22, revised: restored directive 28, compression 0.70, change 0.91
+- 2026-10-24, revised: written as a numbered list; checked twice, 1 repair, re-checked kept
+- 2026-10-27, re-checked: 68 directives, 62 kept, 6 less precise, 0 lost, 6 repairs, re-checked kept
+
 ## History
 
 Waytide's mark led the notice, immediately above the install line, from 2026-08-05 until 2026-08-06.
@@ -411,3 +419,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

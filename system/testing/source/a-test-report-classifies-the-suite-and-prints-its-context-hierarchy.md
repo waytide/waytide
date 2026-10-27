@@ -86,6 +86,12 @@ Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree`
 8. A report on what a run produced is the test-tree command's, not this one's.
 9. **Why:** a suite has a discoverable structure worth surfacing on demand. A fixed report shape makes it repeatable and steers reading to the test files rather than recollection.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.12, change 0.43, solubility 66 → 77, clarity 0.68 → 0.83, 23 directives, 23 kept, 0 less precise, 0 lost
+- 2026-10-24, revised: the context hierarchy is read from the test files, not from a suite run; not checked
+- 2026-10-27, re-checked: 26 directives, 26 kept, 0 less precise, 0 lost
+
 ## History
 
 Until 2026-10-24 the context hierarchy alone was derived from a suite run, not from the source, while the opening said to re-derive everything from the current files. A test report is a report on the test files, so the hierarchy is now read from them as well.
@@ -107,3 +113,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:32 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:45:29 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:27 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

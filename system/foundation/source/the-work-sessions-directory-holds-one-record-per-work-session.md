@@ -105,6 +105,12 @@ Once the record is written, put the **design reconciliation** through the same U
 14. Do not invent a divergence to justify the prompt.
 15. **Why:** durable records capture what was decided. A work session's reasoning, arc, forks, and settled vocabulary are easy to lose and costly to rebuild. The narrative keeps them, as a route through the records rather than a second source of truth.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.33, change 0.61, solubility 18 → 45, clarity 0.32 → 0.75, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-25, revised: point 18 takes the new wording, that every prompt says work session; not checked
+- 2026-10-27, re-checked: 34 directives, 34 kept, 0 less precise, 0 lost
+
 ## History
 
 The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
@@ -183,3 +189,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

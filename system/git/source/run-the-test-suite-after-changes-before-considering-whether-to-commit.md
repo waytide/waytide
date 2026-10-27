@@ -28,6 +28,11 @@ After making any code change, run the full test suite and confirm it passes **be
 16. **Why:** Committing is the point of no easy return. Running the suite before deliberating keeps a failing change from becoming a commit candidate. It keeps every commit in the history verified. The commit waits on the bar, not on the human's attention.
 
 
+## Compression
+
+- 2026-10-22, compressed: compression 0.17, change 0.42, solubility 75 → 89, clarity 0.66 → 0.87, 10 directives, 9 kept, 1 less precise, 0 lost
+- 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+
 ## History
 
 Until Sun Oct 25 2026 this rule was named run-suite-before-commit.
@@ -54,3 +59,4 @@ Changed by Scott Bellware on Thu Oct 22 2026 at 3:26:38 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT

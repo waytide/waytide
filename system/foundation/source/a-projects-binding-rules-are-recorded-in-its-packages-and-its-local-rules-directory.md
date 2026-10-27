@@ -104,6 +104,12 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 6. The log entry is the durable trace of the removal. An item is never deleted. Its state changes and its record is kept.
 7. **Why:** the rules are the project's durable, in-repo conventions, committed with the code and read fresh each session, so they stay authoritative and current. One rule per file keeps each convention readable, referenceable, and revisable. Separating installed packages from local rules means refreshing a package never touches a local rule.
 
+## Compression
+
+- 2026-10-24, compressed: compression 0.09, change 0.49, solubility 26 → 50, clarity 0.38 → 0.81, 49 directives, 49 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+- 2026-10-25, revised: point 2 takes the new wording, that the system directory holds the rules and what packages them; not checked
+- 2026-10-27, re-checked: 49 directives, 47 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+
 ## History
 
 Until 2026-10-25 the rule said `waytide/system/` and `waytide/local/rules/` "hold only rules", while each package under `waytide/system/` also holds its `README.md`, its `source/` directory, a license, and scripts. The engineer settled that `waytide/system/` holds the rules and what packages them, and that neither directory holds working state.
@@ -161,3 +167,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
