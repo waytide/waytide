@@ -10,7 +10,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **It reaches every record that carries a state line** — an implementation record, whether an experiment or a feature, and an item. Each convention fixes its own words, and this rule fixes only where the word is rendered.
 
-**A record with no state line takes no suffix**, which now reaches an implementation record alone. Absence is the in-progress state in the the-implementations-directory-holds-one-record-per-implementation, and the session-start notice is what reports them as open, so a name carrying no suffix is answered elsewhere.
+**A record with no state line takes no suffix**, which now reaches an implementation record alone. Absence is the in-progress state in the the-implementations-directory-holds-one-record-per-implementation rule, and the session-start notice is what reports them as open, so a name carrying no suffix is answered elsewhere.
 
 **An item always carries a suffix.** Absence stopped being a state for it on 2026-08-16, when **Active** was added — precisely because this rule moved the state into the filename, where a missing suffix and an oversight look the same. That asymmetry is deliberate: the record nothing reports is the one that must say so in its own name. **An observation's suffix is always `-STATED`**, since that is its one state.
 
@@ -26,7 +26,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **The name is derived from the line and changes only when it changes.** Where the two disagree the line is right, and the name is stale.
 
-**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
+**So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
 
 **A reference to a record omits its state suffix, so a state change breaks no reference.** The reference keeps the rest of the filename, the ISO-8601-UTC prefix and the name, as in `2026-10-24T20-42-50Z-a-rules-name-is-soluble`. That part does not change with the state, so a reference written before a state change still names the record after it. A reader finds the file by that prefix and name. The reference is not a path that opens directly, which is the cost of its staying true.
 
@@ -40,8 +40,8 @@ When the state changes, rename it again. When a reversible state word is taken b
 
 Related:
 
-- the the-implementations-directory-holds-one-record-per-implementation — the record whose state line is absent while the work is under way, and the words each kind takes
-- the the-items-directory-holds-one-file-per-item — the other record that carries a state line, and which carries one from the moment it is written
+- the the-implementations-directory-holds-one-record-per-implementation rule — the record whose state line is absent while the work is under way, and the words each kind takes
+- the the-items-directory-holds-one-file-per-item rule — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — referencing by name rather than path, the same remedy for a rule that a suffix-free reference is for a record
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry a state change also takes

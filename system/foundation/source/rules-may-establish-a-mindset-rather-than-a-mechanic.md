@@ -2,7 +2,7 @@
 
 A rule's package — `language`, `testing`, `git`, and the others — names the **surface** a rule acts on (words, commits, tests, code), not the **purpose** it serves. A large share of rules exist to establish a **mental stance**, which is a way of thinking about the code and the work. They do not exist to standardize a mechanic. Purpose is not confined to category. Two rules in different packages can be doing the same work, and a rule's real justification is often not visible from its package.
 
-- **Terminology is the purest case.** Every terminology rule is an X-not-Y substitution (controls-not-factories, name-concepts-literally-not-by-analogy-code-or-jargon). None change what the code *does*. Each swaps a word to swap the concept the word installs. Vocabulary is the most direct lever on a mental model.
+- **Terminology is the purest case.** Every terminology rule is an X-not-Y substitution (controls-not-factories, name-concepts-literally-not-by-analogy-code-or-jargon rule). None change what the code *does*. Each swaps a word to swap the concept the word installs. Vocabulary is the most direct lever on a mental model.
 - **The same purpose recurs under other categories, through other levers.** The subject-first commit-message rule sits in the `git` package, but its point — state what changed about the code, not what the engineer did, because centering the engineer reinforces anthropocentrism — is a mindset rule reached through a *grammar* lever (passive voice, indicative mood) rather than a vocabulary one.
 - **The reach can exceed the artifact.** The no-slang rule extends to conversation with the user, not only what goes into the codebase, because the mindset it preserves lives in the person, not the artifact.
 
@@ -18,7 +18,7 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 2. Many rules exist to establish a mental stance, a way of thinking about the code and the work, rather than to standardize a mechanic.
 3. Purpose is not confined to category. Rules in different packages can serve the same purpose.
 4. A rule's real justification is often not visible from its package.
-5. Terminology rules are the purest case. Each is an X-not-Y substitution (controls-not-factories, name-concepts-literally-not-by-analogy-code-or-jargon) that swaps a word to swap the concept it installs.
+5. Terminology rules are the purest case. Each is an X-not-Y substitution (controls-not-factories, name-concepts-literally-not-by-analogy-code-or-jargon rule) that swaps a word to swap the concept it installs.
 6. Terminology rules do not change what the code does.
 7. The same purpose recurs under other packages through other levers. The `git` subject-first commit-message rule is a mindset rule reached through grammar (passive voice, indicative mood).
 8. That rule states what changed about the code, not what the engineer did, because centering the engineer reinforces anthropocentrism.
@@ -61,3 +61,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:19:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

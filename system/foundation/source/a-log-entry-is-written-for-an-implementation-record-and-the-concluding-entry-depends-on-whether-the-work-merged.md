@@ -15,7 +15,7 @@ An **implementation record** pairs with a one-line entry in `waytide/local/logs/
 
 **An unmerged branch is deleted on confirmation**, which the an-implementation-runs-on-a-branch-to-a-declared-end rule requires before the branch goes. A record that existed only there is reachable afterward from a reflog entry or a dangling object, on one machine, until it is garbage collected. That is not a record.
 
-**So the states that keep the record as evidence are exactly the states that can lose it.** The the-implementations-directory-holds-one-record-per-implementation says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
+**So the states that keep the record as evidence are exactly the states that can lose it.** The the-implementations-directory-holds-one-record-per-implementation rule says a refuted, inconclusive, abandoned, or superseded record is *maintained, marked with the state, so the attempt and its findings survive as evidence*. That sentence assumes the record is somewhere a reader can find. Where the record never reached `master`, the log entry is what makes it true.
 
 **A record committed to `master` while the work is on a branch is the ordinary practice here**, and it is what has kept this from biting. Practice is not the rule, and this rule does not rely on it: the entry carries the substance whenever the branch did not merge, whether or not the record happens to have reached `master` by another route.
 
@@ -59,13 +59,13 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 6. For unmerged work, the entry carries the finding, and only where there is one.
 7. For an unmerged experiment that reached a verdict, the entry states the question, the verdict, and what was found.
 8. For abandoned work, the entry states the intent, that it was abandoned, and the reasoning given for stopping.
-9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done).
+9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule).
 10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
 11. Do not rely on the practice of committing the record to `master` while the work is on a branch.
 
 ## What is already required, and not restated
 
-1. An affirmed experiment still copies its own log into the project's log, as an-implementation-runs-on-a-branch-to-a-declared-end requires.
+1. An affirmed experiment still copies its own log into the project's log, as an-implementation-runs-on-a-branch-to-a-declared-end rule requires.
 2. The summary marker sits beside those copied entries. It does not replace them.
 3. A completed feature has no affirmation and no log copy. Its marker is the whole of what its conclusion writes.
 
@@ -96,10 +96,10 @@ Until Mon Oct 26 2026 this rule was named an-implementation-record-takes-a-log-e
 
 Related:
 
-- the the-implementations-directory-holds-one-record-per-implementation — the record, the two kinds, and the state words each takes
+- the the-implementations-directory-holds-one-record-per-implementation rule — the record, the two kinds, and the state words each takes
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the merge, and the branch deletion that makes an unmerged record unreachable
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the same shape for an item, which is never on a branch that is deleted and so has no equivalent fork
-- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form, and the general trigger this makes specific
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form, and the general trigger this makes specific
 
 ---
 
@@ -122,3 +122,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

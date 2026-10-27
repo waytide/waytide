@@ -8,7 +8,7 @@
 
 **A title stating what was suspended and why**, like every log entry — what it cost, and what it stopped buying. The reason is the substance, because it is what a later reader is deciding against.
 
-**Name what else changed.** Stopping something is never one file: removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory. The entry says so in its own clause. That is the record of the whole act rather than of its first step.
+**Name what else changed.** Stopping something is never one file: removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule. The entry says so in its own clause. That is the record of the whole act rather than of its first step.
 
 **The file is removed in the same commit.** Git holds the text, reachable by path from `master`'s history, which is the ordinary case this system relies on everywhere else.
 
@@ -49,7 +49,7 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 1. Like every log entry, the title states what was suspended and why.
 2. The why gives what it cost and what it stopped buying.
 3. The entry names, in its own clause, what else changed.
-4. For example, removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory.
+4. For example, removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule.
 5. The file is removed in the same commit as the entry.
 6. Git holds the removed text, reachable by path from `master`'s history.
 
@@ -87,9 +87,9 @@ Until Sun Oct 25 2026 this rule was named a-suspension-is-a-log-entry and titled
 Related:
 
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the universal tag protocol, and its one form
-- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — removing a rule, and the reconciliation the entry names
-- the the-items-directory-holds-one-file-per-item — the `Suspended` **state**, which is what an item takes instead
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — removing a rule, and the reconciliation the entry names
+- the the-items-directory-holds-one-file-per-item rule — the `Suspended` **state**, which is what an item takes instead
 
 ---
 
@@ -110,3 +110,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

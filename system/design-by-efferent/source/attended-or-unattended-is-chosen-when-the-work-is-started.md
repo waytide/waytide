@@ -109,7 +109,7 @@ with these options:
 24. The "why" is the reasoning the agent actually applied.
 25. Under unattended work, write no Options line and no Decision / chat line.
 26. Do not write an unattended cycle as though an engineer was consulted.
-27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
@@ -175,3 +175,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

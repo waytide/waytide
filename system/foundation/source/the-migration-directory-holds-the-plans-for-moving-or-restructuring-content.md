@@ -20,7 +20,7 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 1. `waytide/local/migration/` holds migration records.
 2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
 3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
-4. Use it when content ends up under a different root, or in a different structure.
+4. Plan a move here when content ends up under a different root, or in a different structure.
 5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
 6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
 7. Do not use an ordinary item for a migration.
@@ -86,3 +86,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:16:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:18:41 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

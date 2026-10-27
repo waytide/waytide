@@ -16,7 +16,7 @@
 
 **An entry written at 23:40 on a Tuesday reads as that Tuesday, wherever the writer was.** Normalizing it would move some entries onto a date the writer did not live through. A personal record is read back against the day the person remembers, so the local hour is the one that has to survive.
 
-**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rules each state one part of that shape, and the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol, which is no longer the journal's own.
+**Format:** frontmatter-free markdown. A `# <title>` naming what the entry is about, then the datetime line, then the writer's prose. An entry takes a `**Tags:**` line where it is categorized, and a `**Summary:**` line where the summary says something the body does not. An entry is thinking rather than a report, so it carries no state line and no section beyond those. The a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rule, and journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rules each state one part of that shape, and the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol, which is no longer the journal's own.
 
 **An entry carries the provenance footer**, like every other working-state artifact. See the foundation package's working-state-artifacts-carry-a-provenance-footer rule. The footer names who wrote it, which is what a journal kept by more than one writer needs.
 
@@ -91,7 +91,7 @@ One file per entry rather than one per day follows the convention every other da
 3. An entry takes a `**Tags:**` line where it is categorized.
 4. An entry takes a `**Summary:**` line only where the summary says something the body does not.
 5. An entry carries no state line and no section beyond those.
-6. The a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rules each state one part of that shape.
+6. The a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rule, and journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rules each state one part of that shape.
 7. The foundation package's a-record-may-be-categorized-with-square-bracket-tags rule states the tag protocol.
 
 ## Footer
@@ -147,9 +147,9 @@ Until 2026-08-18 the package and the directory were named `diary`. The rename re
 
 Related:
 
-- the-journal-is-read-at-the-start-of-a-session-with-the-rules — when the agent reads it
-- an-entry-is-the-writers-words — who writes it
-- a-journal-entry-is-read-and-never-followed — what force it carries
+- the-journal-is-read-at-the-start-of-a-session-with-the-rules rule — when the agent reads it
+- an-entry-is-the-writers-words rule — who writes it
+- a-journal-entry-is-read-and-never-followed rule — what force it carries
 - the foundation package's file-names rule — the datetime prefix this takes, and the UTC normalization it departs from
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
 - the foundation package's log rule — the agent's record, and the one this is not
@@ -188,3 +188,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

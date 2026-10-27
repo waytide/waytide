@@ -37,7 +37,7 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 Related:
 
-- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - human-in-the-loop
 - first-turn
 - DBE-as-design-tool

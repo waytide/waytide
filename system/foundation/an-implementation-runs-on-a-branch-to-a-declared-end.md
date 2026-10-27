@@ -6,7 +6,7 @@
 
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
-**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the the-implementations-directory-holds-one-record-per-implementation). Every clause below that names one kind names it because of that difference, and no other clause varies.
+**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the the-implementations-directory-holds-one-record-per-implementation rule). Every clause below that names one kind names it because of that difference, and no other clause varies.
 
 ## The branch
 
@@ -61,7 +61,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The end
 
-**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-holds-one-record-per-implementation's.
+**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-holds-one-record-per-implementation rule's.
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
@@ -107,7 +107,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 Related:
 
-- the the-implementations-directory-holds-one-record-per-implementation — the record, the tags, and the state words
-- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
+- the the-implementations-directory-holds-one-record-per-implementation rule — the record, the tags, and the state words
+- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
-- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule and announce-a-branch-switch-in-a-bordered-block rules

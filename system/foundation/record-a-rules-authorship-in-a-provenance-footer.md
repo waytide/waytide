@@ -36,5 +36,5 @@ Changed by <other name> on <datetime>
 Related:
 
 - the a-time-value-carries-minutes-and-seconds rule — the time's resolution
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule format
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule format
 - the file-names rule — the UTC filename prefix this contrasts with

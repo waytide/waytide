@@ -129,7 +129,7 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 6. The script reads the four from this file's fenced blocks, by position.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
 8. The second fenced block is the package-set example, which the script skips.
-9. Adding, removing, or reordering a fenced block in this file changes what is printed.
+9. Adding, removing, or reordering a fenced block in this file changes what is printed, so the rule's sections stay where they are.
 10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
 11. The fences mark where each printed part begins and ends. They are not printed.
 12. First the title, on its own:
@@ -167,7 +167,7 @@ package set: content
 31. Every installed package is listed, in the order the session-start notice lists them.
 32. Active packages are bold. Deactivated packages are italic.
 33. No package is omitted, and none is replaced by a count.
-34. The count line states how many are active and the installed total.
+34. The count line states how many are active and the installed total, in the form `(N active of M installed)`.
 35. No legend is printed.
 36. Emphasis is available on the package set stanza and nowhere else in the display.
 37. The harness display is plain text, where markup reaches the engineer as literal asterisks.
@@ -279,3 +279,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:30:04 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

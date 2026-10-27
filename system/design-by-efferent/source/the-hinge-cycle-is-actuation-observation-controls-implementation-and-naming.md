@@ -28,7 +28,7 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 > The first three build the test. The fourth writes the code. The fifth is settled at the close.
 > Everything between the hinges I generate without stopping.
 
-**It is given once**, when the loop starts on a piece of work — not at each cycle and not at each outcome. A passage repeated at every hinge stops being read, which is the failure the the-startup-display-prints-once-per-session names about a permanent line.
+**It is given once**, when the loop starts on a piece of work — not at each cycle and not at each outcome. A passage repeated at every hinge stops being read, which is the failure the the-startup-display-prints-once-per-session rule names about a permanent line.
 
 **It does not apply under unattended work**, where no hinge is put to the engineer at all. There the plan takes its place (see the attended-or-unattended-is-chosen-when-the-work-is-started rule).
 
@@ -172,3 +172,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

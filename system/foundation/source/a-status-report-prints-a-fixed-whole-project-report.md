@@ -119,7 +119,7 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 
 Related:
 
-- the the-items-directory-holds-one-file-per-item — the `Suspended` state a hidden record carries
+- the the-items-directory-holds-one-file-per-item rule — the `Suspended` state a hidden record carries
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the `[suspended]` **tag**, which marks a log entry and is a different act from an item carrying the state
 - the a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows rule — the form the report's tables take
 - the test-report and test-tree commands in the testing package
@@ -158,3 +158,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

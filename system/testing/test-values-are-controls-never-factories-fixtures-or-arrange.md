@@ -16,4 +16,4 @@ Related:
 
 - the `control_` test-variable prefix rule
 - the control-string-value rule
-- the name-concepts-literally-not-by-analogy-code-or-jargon and no-slang rules in `language`
+- the name-concepts-literally-not-by-analogy-code-or-jargon rule and no-slang rules in `language`

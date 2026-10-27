@@ -4,15 +4,15 @@ How language is used: precisely. A word is not a label applied to a thought afte
 
 **The premise**
 
-- **language-is-used-precisely-here-and-words-are-load-bearing**. Words are load-bearing, not decoration. The selection of a word is a design decision. Precision is not formality: the most precise word is very often the plainest one. Everything below follows from this.
+- **language-is-used-precisely-here-and-words-are-load-bearing rule**. Words are load-bearing, not decoration. The selection of a word is a design decision. Precision is not formality: the most precise word is very often the plainest one. Everything below follows from this.
 
 **The four disciplines that make it achievable**
 
-- **name-concepts-literally-not-by-analogy-code-or-jargon**. Name a concept by describing what it literally is. No analogies, opaque codes, or academic jargon.
-- **no-slang**. Use literal, non-figurative terms in prose and in conversation, not only in the code.
-- **communicate-plainly-and-name-the-actual-thing**. In explanation and conversation, use plain words and the real names of things. No invented labels ("tier 1") or compressed jargon offered as if already shared.
-- **expand-an-abbreviation-on-first-use**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses). Don't use unexplained shorthand.
-- **an-answer-is-a-list-and-prose-must-justify-itself**. An answer to the engineer is a list, and each list item states a fact rather than narrating — no describing a decision, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its list items are parallel. Where an expansion would add something, the answer ends by offering one.
+- **name-concepts-literally-not-by-analogy-code-or-jargon rule**. Name a concept by describing what it literally is. No analogies, opaque codes, or academic jargon.
+- **no-slang rule**. Use literal, non-figurative terms in prose and in conversation, not only in the code.
+- **communicate-plainly-and-name-the-actual-thing rule**. In explanation and conversation, use plain words and the real names of things. No invented labels ("tier 1") or compressed jargon offered as if already shared.
+- **expand-an-abbreviation-on-first-use rule**. Spell out an abbreviation the first time it appears (full term, abbreviation in parentheses). Don't use unexplained shorthand.
+- **an-answer-is-a-list-and-prose-must-justify-itself rule**. An answer to the engineer is a list, and each list item states a fact rather than narrating — no describing a decision, no unasked-for reason, no characterizing the work. Prose is written only where the answer is a sentence or two. Reasoning whose steps depend on each other takes a numbered list rather than prose, since an unordered list asserts its list items are parallel. Where an expansion would add something, the answer ends by offering one.
 
 **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English — is in `ete/`. Five rules:
 

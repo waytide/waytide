@@ -9,7 +9,7 @@ Every working-state artifact under `waytide/` that is a document with a body end
 - **Same footer, different reason than the rule files.** The rule-file footer exists because `git subtree` strips the composite's per-file history when a package is installed into a consuming project, so `git blame` can't show a rule's author there. That reason does **not** apply to a working-state artifact: it lives in the project's own `waytide/` tree, is never shipped by subtree, and keeps its git history intact. The footer is here for a different reason. **The file should be useful on its own.** These artifacts are written to be read as self-contained documents, so a reader should not have to leave the file and query the git log to learn who wrote it and when.
 - **The format is the record-a-rules-authorship-in-a-provenance-footer format.** `Authored by <name> on <local datetime>` for the original author, a `Changed by <name> on <local datetime>` line appended for each later change — oldest first, never rewritten. The datetime is the artifact's true authoring time. For a dated artifact whose ISO-8601-UTC filename prefix records when it was created, that prefix is the authoritative time (a later git add-date from a migration is a false trail).
 
-**The one exception — the log.** `waytide/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title.
+**The one exception — the log.** `waytide/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 
 Its authoring time is already in its ISO-8601-UTC filename and its commit. A footer would contradict that shape and the log's no-reformat rule. The log records who and when by its filename and commit history, not by an in-file footer.
 
@@ -22,5 +22,5 @@ This is a different justification from the rule-file footer's (which recovers hi
 Related:
 
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer's format and the rule-file case
-- the the-log-holds-one-file-per-entry-with-a-one-line-title — the exempt one-line log
-- the artifact conventions that reference this one — the-implementations-directory-holds-one-record-per-implementation, the-items-directory-holds-one-file-per-item, an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, the-work-sessions-directory-holds-one-record-per-work-session, and DBE's a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the exempt one-line log
+- the artifact conventions that reference this one — the-implementations-directory-holds-one-record-per-implementation rule, the-items-directory-holds-one-file-per-item rule, an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule, the-work-sessions-directory-holds-one-record-per-work-session rule, and DBE's a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule

@@ -26,6 +26,6 @@
 
 Related:
 
-- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry's form
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other reserved tag the log carries

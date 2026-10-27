@@ -60,7 +60,7 @@ The loop, by turn:
 1. Run the loop above.
 2. Keep turns small: one actuation, one outcome, so the cradle stays legible during deliberation.
 3. Hand the human the actuation to edit or approve.
-4. Let the AI fill everything else.
+4. Let the AI fill everything other than the actuation and the hinges.
 5. Do not ask the human to confirm a failing or passing test.
 6. Stop when solubility is satisfied.
 7. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
@@ -96,3 +96,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:29 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

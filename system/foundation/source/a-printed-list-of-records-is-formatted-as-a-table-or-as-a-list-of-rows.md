@@ -54,12 +54,12 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 
 ## Compressed
 
-1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with no columns. A list is called a table only where it is formatted as columns.
+1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with its fields in sequence and no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 3. The first column is the record's handle and has no heading.
 4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
 5. Every column after the handle has a heading.
-6. Two SHA columns come right after the handle: the commit that created the record, then the last commit to touch it. A list of items takes no SHA columns, and opens with an ordinal ahead of the handle, which the engineer refers to a row by.
+6. Two SHA columns come right after the handle: the commit that created the record, then the last commit to touch it. A list of items takes no SHA columns, and opens with an ordinal ahead of the handle, which the engineer refers to a row by. The ordinal counts from 1, in the order the rows are printed.
 7. These two SHA columns are always present. They are not chosen per request.
 8. After the SHA columns comes the title. Then comes one column for the fact asked about.
 
@@ -94,7 +94,7 @@ A list of items takes the ordinal and no SHA columns:
 
 ## What this does not reach
 
-1. The status report's tables are already tables under the a-status-report-prints-a-fixed-whole-project-report rule, and this rule agrees with it.
+1. This rule does not reach the status report's tables. They stay tables, under the a-status-report-prints-a-fixed-whole-project-report rule.
 2. This rule does not govern an answer that is not a list of records.
 3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
 4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
@@ -134,3 +134,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:14:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:47:00 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -80,8 +80,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Related:
 
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory and the reconcile entry in this package's vocabulary — where the standing rule is stated
-- the the-work-sessions-directory-holds-one-record-per-work-session — the title format, an instance of the standing rule
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule and the reconcile entry in this package's vocabulary — where the standing rule is stated
+- the the-work-sessions-directory-holds-one-record-per-work-session rule — the title format, an instance of the standing rule
 
 ---
 
@@ -102,3 +102,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

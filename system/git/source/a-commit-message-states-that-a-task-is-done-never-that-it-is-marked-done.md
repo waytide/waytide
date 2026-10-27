@@ -38,8 +38,8 @@ Until Mon Oct 26 2026 this rule's example commit carried "(green-on-arrival)", a
 
 Related:
 
-- the no-slang terminology rule
-- the the-log-holds-one-file-per-entry-with-a-one-line-title
+- the no-slang rule terminology rule
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 
 ---
 
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

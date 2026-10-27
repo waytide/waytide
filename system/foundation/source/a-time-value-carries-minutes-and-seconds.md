@@ -54,7 +54,7 @@ Related:
 12. A journal filename stamp carries seconds only where the writer stated seconds. Do not supply a clock's seconds.
 13. Only these two exceptions exist. Do not assume a third.
 14. A format that wants a further exception must state its own case in its own rule. It must argue from what this rule's defect does not reach. The defect is a repeated line within one file, whose entries collide at the same resolution.
-15. Never revise a recorded datetime to a resolution it never had. Supplying missing minutes or seconds would falsify the record.
+15. Never revise a recorded datetime to a resolution it never had, and do not supply minutes or seconds for a past event. Supplying missing minutes or seconds would falsify the record.
 16. This rule applies to new values only. Leave coarser values already written as they are.
 17. When specifying a new datetime format that includes a time of day, specify it to seconds.
 18. This applies to rules, working-state artifacts, log entries, and any other file, except where this rule names an exception.
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:05:00 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

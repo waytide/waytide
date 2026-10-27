@@ -39,4 +39,4 @@ A decision may have been about that project, and its name is there for that. Lea
 Related:
 
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule

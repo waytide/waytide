@@ -6,7 +6,7 @@
 
 An implementation is bounded work with a lifecycle. It runs on a branch created for it, it is designed through the five hinges, and it reaches one of a fixed set of declared states. It is never left silently open.
 
-**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the the-implementations-directory-holds-one-record-per-implementation). Every clause below that names one kind names it because of that difference, and no other clause varies.
+**Its tag decides the parts that differ.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent** (see the the-implementations-directory-holds-one-record-per-implementation rule). Every clause below that names one kind names it because of that difference, and no other clause varies.
 
 ## The branch
 
@@ -61,7 +61,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The end
 
-**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-holds-one-record-per-implementation's.
+**Every implementation ends in a declared state**, or is suspended, which is paused rather than ended. The words are the the-implementations-directory-holds-one-record-per-implementation rule's.
 
 **An `[experiment]` is affirmed only on the engineer's explicit declaration.** On affirmation its log is **copied into the project log**, so the durable record carries what it established. Where it produced implementation, the branch also merges to the upstream branch — waiting on the tests, and on specific confirmation where no test covers what was built. An observation-only experiment has nothing to merge, and affirmation is the log copy alone.
 
@@ -107,11 +107,11 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 ## Compressed
 
-1. An implementation runs on its own branch, through the five hinges, to a declared state.
+1. An implementation runs on its own branch, designed through the five hinges by DBE, to a declared state.
 2. It is never left silently open.
 3. Its tag decides the parts that differ.
-4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the the-implementations-directory-holds-one-record-per-implementation).
-5. A clause below names a kind only because of that difference.
+4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the the-implementations-directory-holds-one-record-per-implementation rule).
+5. A clause below names a kind only because of that difference. Every other clause holds for both.
 
 ## The branch
 
@@ -125,7 +125,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 8. Keep the upstream branch out of the name, since a branch can outlive its upstream target. The record names it.
 9. A worktree is the one fact the name carries, because `git branch` has no other answer for it.
 10. The rename keeps that fact current.
-11. Record the base as its commit SHA and the ref it came from.
+11. Record the branch, its upstream, and its base. Record the base as its commit SHA and the ref it came from.
 12. Make no git tag for the base.
 13. A later run branches from the recorded commit.
 
@@ -164,18 +164,19 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 4. An experiment's changes must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
 5. A feature is the main line.
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
-7. On the current branch, partial work sits where others read, and abandoning means reverting.
-8. Place a worktree beside the repository directory, named `<repository-name>-<branch, its slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
-9. A worktree inside the repository would show as untracked content in the work's own `git status`.
-10. Create with `git switch -c <branch>` or `git worktree add -b <branch> <path>`.
-11. Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
-12. Change the location only by adding a worktree.
-13. Add one on one of two triggers: other work arrives that the engineer means to work alongside.
-14. Or the work is escalated, needing more isolation than it was taken for.
-15. Confirm the addition.
-16. Add a line to the record, and keep the original.
-17. The conclusion follows the location as it then stands.
-18. Never collapse a worktree back.
+7. When offering it, state its cost plainly: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
+8. On the current branch, the record still carries the intent, the state, and the confirmations.
+9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
+10. A worktree inside the repository would show as untracked content in the work's own `git status`.
+11. Create a branch-only implementation with `git switch -c <branch>`, and a worktree implementation with `git worktree add -b <branch> <path>`, where `-b` is required.
+12. Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
+13. Change the location only by adding a worktree.
+14. Add one only on one of two triggers: other work arrives that the engineer means to work alongside.
+15. Or the work is escalated, needing more isolation than it was taken for.
+16. Confirm the addition.
+17. Add a line to the record, and keep the original.
+18. The conclusion follows the location as it then stands.
+19. Never collapse a worktree back.
 
 ## Participation
 
@@ -187,16 +188,16 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 ## The end
 
 1. Every implementation ends in a declared state, or is suspended, which pauses it.
-2. The words are the the-implementations-directory-holds-one-record-per-implementation's.
+2. The words are the the-implementations-directory-holds-one-record-per-implementation rule's.
 3. An `[experiment]` is affirmed only on the engineer's explicit declaration.
 4. On affirmation, its log is copied into the project log.
-5. Where it produced implementation, its branch merges to the upstream branch, after the tests.
+5. Where it produced implementation, its branch merges to the upstream branch, after the tests pass.
 6. Where no test covers the work, the merge also waits for specific confirmation.
 7. An observation-only experiment's affirmation is the log copy alone.
-8. A `[feature]` merges with no gate, because run-the-test-suite-after-changes-before-considering-whether-to-commit verified every commit.
+8. A `[feature]` merges with no gate, because run-the-test-suite-after-changes-before-considering-whether-to-commit rule verified every commit.
 9. The merged result can still break the suite, and that is fixed from there.
 10. A feature has no affirmation.
-11. Refuted, inconclusive, abandoned, and superseded work keeps its record.
+11. Refuted, inconclusive, abandoned, and superseded work keeps its record, marked with its state, so the attempt and its findings survive.
 12. Refuted, inconclusive, abandoned, and superseded work does not merge.
 13. Supersession runs through suspension.
 14. The superseded implementation stays Suspended, its branch kept, until the engineer concludes it as superseded.
@@ -211,7 +212,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 23. Under branch only, the working tree switches back.
 24. Under a worktree, end the session in the main working tree, never in the removed directory.
 25. On the current branch there is nothing to return from.
-26. Branch deletion takes one confirmation from the engineer, through the selection interface.
+26. Branch deletion takes one confirmation from the engineer, through the selection interface. It covers the worktree removal too. Do not prompt twice.
 27. Remove the worktree first, since git refuses to delete a branch checked out in a worktree.
 28. Suspension deletes no branch and removes no worktree.
 
@@ -226,7 +227,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 ## Drift
 
 1. While an `[experiment]` is open under branch only, watch for main-sequence work starting, and surface it.
-2. Offer two recourses through the selection interface: suspend the experiment, or add a worktree.
+2. Offer two recourses through the selection interface: suspend the experiment, where the intent is to stop working it for now, or add a worktree, where the intent is to keep working it alongside.
 3. Neither recourse ends the experiment, and the engineer's intent decides.
 4. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question.
 5. The watch is a practice, not a guarantee.
@@ -247,10 +248,10 @@ Until Mon Oct 26 2026 this rule restated why attended or unattended sits at one 
 
 Related:
 
-- the the-implementations-directory-holds-one-record-per-implementation — the record, the tags, and the state words
-- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
+- the the-implementations-directory-holds-one-record-per-implementation rule — the record, the tags, and the state words
+- the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
-- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
+- the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule and announce-a-branch-switch-in-a-bordered-block rules
 
 ---
 
@@ -275,3 +276,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -1538,6 +1538,31 @@ The engineer reviews this table and sends back any title to change.
 
 **The method is the batches' check, run fresh.** A fresh lister lists each rule's directives from its current source, with the Compressed section and the footer left out. A fresh checker judges each directive kept, less precise, or lost against the compressed text, which is the title, the numbered body, and the Related list. A loss or a material loss of precision is repaired with the smallest clause, in source and compressed text alike, and a repaired rule is checked again.
 
+### The re-check of compressed texts changed since their check — results, 2026-10-27
+
+**Of the 35 rules' 905 directives, the fresh checkers judged 849 kept, 52 less precise, and 4 lost.** Eighteen rules kept every directive. The losses were one in each of four rules:
+
+- **the package vocabulary:** that a reserved word with an approved meaning Waytide does not use is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule
+- **an implementation runs on a branch:** that under the current-branch option the record still carries the intent, the state, and the confirmations
+- **ask at once:** that each candidate is genuine, and that the selection carries only those that apply
+- **the test block:** that a precondition reads inline
+
+**Two rules held most of the less precise directives.** Ask at once had 12 of its 22, because the rewrite of 2026-10-27 kept the candidates' names and dropped their places and conditions. An implementation runs on a branch had 12 of its 88. The other 28 were one to three in each of 14 rules.
+
+**The repairs:** 55 clauses in 17 rules, each the smallest that closes the gap, made in the compressed text alone, since no source was found defective. They close the 4 losses and 51 of the less precise directives. The one left is the branch rule's 58, which states the feature's per-commit verification as the reason it merges with no gate. The directive itself belongs to the run-the-test-suite-after-changes-before-considering-whether-to-commit rule, which the point cites.
+
+**A fresh checker re-checked each repaired rule in full and judged every repair kept.** The re-checks flagged 8 other directives, each kept by its first checker:
+
+- Three are repaired: the journal-entry rule's 10, where *no more weight than that* had come to follow a different sentence; ask at once's 6, which now carries all three of the source's examples; and the branch rule's 41, whose triggers are now the only ones.
+- Four are resolved as kept, as disagreements between the two checkers: the observation rule's 3, which follows the source's own wording; the hinges rule's 15; the selection-UI rule's 24; and the harness rule's 59.
+- The branch rule's 58 stays, as above.
+
+The three later repairs are not re-checked again.
+
+**A defect of the renames, found by the re-check:** a rule that was named *X-convention* was cited without the word *rule*, as *the items-convention*. The rename turned each such citation into *the the-items-directory-holds-one-file-per-item*, which does not read as a rule's name. 378 citations across the phase branch now carry *rule*, as the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule requires. History sections are left as written. Master keeps its old names, where the citations read as they did.
+
+**Cost:** 87 agents: 35 listers, 35 checkers, and 17 re-checkers, each about 35,000 tokens, about 3.0 million in all. This leaves out the main session's own turns.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4701,3 +4726,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:07:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:49:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:54:42 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:09:12 PM PT

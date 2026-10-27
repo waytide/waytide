@@ -44,20 +44,22 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 
 ## What counts
 
-1. A statement about how the work is done, rather than about the artifact at hand, is a preference.
-2. A statement about this one artifact is an instruction. Carry it out, and do not ask about it.
-3. The test is whether it would still hold next week.
+1. A statement about how the work is done, rather than about the artifact at hand, is a preference. *Answer in lists*, *never offer to conclude an experiment*, and *say writer rather than user* are each one.
+2. A statement about this one artifact, such as *make that sentence shorter*, is an instruction. Carry it out, and do not ask about it.
+3. The test is whether it would still hold next week. Where it would, it is a candidate for a rule. Where it would not, it is an instruction and nothing is asked.
 
 ## The candidates
 
-1. An amendment to an existing rule, offered only where a rule covers the subject.
-2. A new rule, with its log entry.
-3. An observation, preferred where there is doubt.
-4. Neither, taken without argument.
-5. Do not ask a second time about a preference the engineer declined to record.
-6. Record the engineer's own words, not a paraphrase.
-7. Deferring is the engineer's choice. Work they want put off, they record as an idea.
-8. **Why:** holding a preference in an agent memory store is forbidden, so the path to a written rule must be short enough that nothing is held. Asking at once makes it short.
+1. Each candidate is genuine, and the selection carries only those that apply.
+2. An amendment to an existing rule, offered only where a rule covers the subject. It is made in that rule's source, with its History.
+3. A new rule in `waytide/local/rules/`, written with its `waytide/local/logs/log/` entry.
+4. An observation in `waytide/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
+5. Neither, where the engineer does not want the preference recorded. It is taken without argument.
+6. Do not ask again in the same session about a preference the engineer declined to record.
+7. Record the engineer's own words, not a paraphrase or the agent's reading of them from memory.
+8. Deferring is the engineer's choice, not the agent's. Work they want put off, a correction or anything else, they record as an idea.
+9. The agent does not put off a preference, or the question about it, on its own.
+10. **Why:** holding a preference in an agent memory store is forbidden, so the path to a written rule must be short enough that nothing is held. Asking at once makes it short.
 
 ## History
 
@@ -77,7 +79,7 @@ Related:
 
 - the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule and its log entry
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written
 
@@ -101,3 +103,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 1:34:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:37:58 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

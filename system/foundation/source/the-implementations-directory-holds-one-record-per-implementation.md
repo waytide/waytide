@@ -172,7 +172,7 @@ Related:
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — why an open record takes no suffix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
 - the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
-- the the-items-directory-holds-one-file-per-item — the other record that carries a state, and which has no in-progress absence
+- the the-items-directory-holds-one-file-per-item rule — the other record that carries a state, and which has no in-progress absence
 
 ---
 
@@ -194,3 +194,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:14 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:55:37 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

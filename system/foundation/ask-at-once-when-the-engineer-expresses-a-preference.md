@@ -39,6 +39,6 @@ Related:
 
 - the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule and its log entry
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written

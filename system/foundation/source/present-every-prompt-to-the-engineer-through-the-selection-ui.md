@@ -64,7 +64,7 @@ Word each option's own description *…then display this selection prompt again*
 25. Do not search for options just to fill the second place.
 26. Do not say that a lone candidate is the only possibility.
 27. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
-28. Use plain prose only for statements, reports, and explanations that do not ask the engineer to choose.
+28. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
 29. **Why:** The selection UI makes responsibility transfer legibly and consistently, and it already supplies free text. The two-option floor pushes toward the real decision rather than a single proposal for approval. `Explain` handles a well-formed prompt the engineer does not understand. It must be an option because you cannot tell which of your own questions are unclear.
 
 ## History
@@ -75,7 +75,7 @@ Until Sun Oct 25 2026 this rule was named present-every-prompt-through-askuserqu
 
 Related:
 
-- the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
+- the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule and the-actuation-gate-offers-candidate-actuations-as-options rules — the gates this is the mechanism for, and the fuller account of why a gate offers alternatives rather than a single proposal
 - its vocabulary — where **mean-bias** is defined
 
 ---
@@ -104,3 +104,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

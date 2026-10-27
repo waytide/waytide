@@ -18,7 +18,7 @@
 
 **Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/`, and that rule is the observation's result. The observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. Nothing else about the observation changes: what it says stays as written, as the discovery record, and its state stays `Stated`.
 
-**So the the-items-directory-holds-one-file-per-item needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
+**So the the-items-directory-holds-one-file-per-item rule needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
 ## The shape
 
@@ -62,8 +62,8 @@ Lines 1–6 below are the opening statements, which come before any section head
 9. The earlier observation stays as what was thought at the time.
 10. Promotion is not a state change.
 11. When an observation stabilizes into a binding convention, write the rule in `waytide/local/rules/`.
-12. When the rule is written, the observation takes one added line naming it, `**Promoted to:** the <name> rule`, its result. Everything else stays as it is, as the discovery record.
-13. The the-items-directory-holds-one-file-per-item needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
+12. When the rule is written, the observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. The rule is its result. Everything else stays as it is, as the discovery record.
+13. The the-items-directory-holds-one-file-per-item rule needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
 ## The shape
 
@@ -95,10 +95,10 @@ Until Sun Oct 25 2026 this rule was named observations-convention and titled "An
 
 Related:
 
-- the the-items-directory-holds-one-file-per-item — the eight states an observation does not take, and the state requirement it satisfies
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — where a promoted observation's rule goes
+- the the-items-directory-holds-one-file-per-item rule — the eight states an observation does not take, and the state requirement it satisfies
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
-- the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry that records one
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry that records one
 
 ---
 
@@ -129,3 +129,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -15,13 +15,13 @@ The two answer the hinge's question. The hinge asks *how does this implementatio
 
 **Choosing the cycle is not performing choreography.** The dbe-is-a-design-tool-not-a-testing-ritual rule opens by rejecting red-green-refactor **as choreography**. That is ritual performed because the form calls for it. The pre-implementation failure is treated as a checkpoint, and it teaches nothing.
 
-What that rejects is the **unchosen** case. An engineer selecting the cycle at a gate, for this unit, has made a design judgment, which is the opposite of ceremony. The loop stopped, a person weighed two real alternatives, and the decision was theirs. The rule and this one do not conflict, and dbe-is-a-design-tool-not-a-testing-ritual says so in its own words.
+What that rejects is the **unchosen** case. An engineer selecting the cycle at a gate, for this unit, has made a design judgment, which is the opposite of ceremony. The loop stopped, a person weighed two real alternatives, and the decision was theirs. The rule and this one do not conflict, and dbe-is-a-design-tool-not-a-testing-ritual rule says so in its own words.
 
 **Refactor is part of the cycle, and is why it is worth choosing.** The cycle has three parts:
 
 - **Red** proves the test discriminates.
 - **Green** makes it pass.
-- **Refactor is where the design is actually improved**, with the test holding the behavior still. A cycle offered without it would be the half that dbe-is-a-design-tool-not-a-testing-ritual calls a ritual — motion with no design in it.
+- **Refactor is where the design is actually improved**, with the test holding the behavior still. A cycle offered without it would be the half that dbe-is-a-design-tool-not-a-testing-ritual rule calls a ritual — motion with no design in it.
 
 **The second candidate is real, which is what the two-option floor requires.** The present-every-prompt rule forbids manufacturing cosmetic options to reach two. The implementation hinge frequently has one obvious implementation, which makes it the hinge most tempted to pad. This candidate is not padding: it is a different way of producing the implementation, chosen for reasons that apply to some units and not others.
 
@@ -36,5 +36,5 @@ Related:
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the five hinges, of which this is the fourth
 - the dbe-is-a-design-tool-not-a-testing-ritual rule — which rejects the cycle as choreography, not as a decision
 - the present-every-prompt rule — the two-option floor this must not be used to satisfy
-- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation and the-design-of-a-test-waits-at-the-hinges-coverage-included rules — the coverage case where the cycle is unavailable
+- the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule and the-design-of-a-test-waits-at-the-hinges-coverage-included rules — the coverage case where the cycle is unavailable
 - the a-test-of-behavior-that-already-exists-is-coverage-not-design rule — the no-op implementation hinge, where there is nothing to drive

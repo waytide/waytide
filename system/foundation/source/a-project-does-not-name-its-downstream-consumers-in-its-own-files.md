@@ -70,7 +70,7 @@ Until Sun Oct 25 2026 this rule was named a-project-does-not-name-its-consumers.
 Related:
 
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — a name already recorded
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule
 
 ---
 
@@ -89,3 +89,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:00 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

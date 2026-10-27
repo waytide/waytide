@@ -18,10 +18,10 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 1. A test justifies itself in DBE by driving an implementation that did not exist.
 2. A test that passes the first time it runs, because the behavior already exists, confirms the behavior and designs nothing.
-3. Such a test is coverage, not a DBE design step.
+3. Such a test is coverage, not a DBE design step. DBE does not take it as an outcome, and it is not part of the design loop.
 4. The tell is a no-op implementation hinge in the hinge cycle: "nothing to write — the existing code already satisfies this".
-5. At a no-op implementation hinge, do not take the outcome as a design step. Move to the next outcome.
-6. Behavior may already be present when its own outcome comes up. It came from a default value, a conveyed keyword, or a prevention written for an earlier outcome. Notice that the implementation ran ahead of its test.
+5. At a no-op implementation hinge, do not take the outcome as a design step. Move to the next outcome, rather than writing a test to confirm this one.
+6. Behavior may already be present when its own outcome comes up. It may have come from a default value, a conveyed keyword, or a prevention written incidentally. Notice that the implementation ran ahead of its test, and do not take a confirming test as design.
 7. Coverage has value. A test of existing behavior prevents a regression in it.
 8. Coverage is a concern of testing, not of DBE. Adding such a test is a decision about coverage, and it is the engineer's.
 9. The agent may suggest the test to the engineer as an increase to coverage, to accept or decline.
@@ -60,3 +60,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:30:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -55,7 +55,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 ## Rules and work artifacts
 
 1. Rules are kept separate from work artifacts.
-2. `waytide/local/rules/` holds only rules. `waytide/system/` holds the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state.
+2. `waytide/local/rules/` holds only rules. `waytide/system/` holds only the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state.
 3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
 4. Work with working state as its own conventions describe.
 5. Do not read working state as binding rules at session start.
@@ -99,7 +99,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 1. Search for what cites the rule, and reconcile the live artifacts that cite it.
 2. Then remove the rule and log the removal.
 3. Where the rule is stopped rather than superseded, tag its log entry `[suspended]`.
-4. In a `[suspended]` entry, name what the rule cost and what else changed. See the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
+4. In a `[suspended]` entry, name what the suspension cost and what else changed. See the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
 5. Drop a removed rule from every `Related:` list. Do not mark it, such as with `(deleted)`.
 6. The log entry is the durable trace of the removal. An item is never deleted. Its state changes and its record is kept.
 7. **Why:** the rules are the project's durable, in-repo conventions, committed with the code and read fresh each session, so they stay authoritative and current. One rule per file keeps each convention readable, referenceable, and revisable. Separating installed packages from local rules means refreshing a package never touches a local rule.
@@ -119,7 +119,7 @@ Until Mon Oct 26 2026 this rule was named a-projects-binding-rules-live-in-its-p
 Related:
 
 - the file-names rule
-- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the project's own vocabulary and where it sits
+- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the project's own vocabulary and where it sits
 - the rules-establish-a-mindset rule
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 
@@ -160,3 +160,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

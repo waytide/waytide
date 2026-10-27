@@ -82,7 +82,7 @@ Until Mon Oct 26 2026 this rule restated the mechanism every hinge follows: the 
 
 Related:
 
-- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
+- the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - human-in-the-loop
 - first-turn
 - DBE-as-design-tool
@@ -115,3 +115,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:36 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -72,7 +72,7 @@ end
 
 ## The three parts govern a `test` block, and a precondition is not one
 
-1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition.
+1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition, which reads inline.
 2. A precondition is the one stated exception to these parts. The precondition rule states what it is, and why these reasons do not reach it.
 3. **Why:** A test block should read as a single relation among named values, not a computation mixed with a check. Naming operands in the context documents each value, gives it an inspection point, and separates control from observation.
 
@@ -106,3 +106,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:11 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

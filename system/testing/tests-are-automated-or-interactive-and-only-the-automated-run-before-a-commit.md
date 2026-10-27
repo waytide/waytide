@@ -25,7 +25,7 @@
 
 **A project with no `test/interactive/` is the ordinary case**, and nothing is missing.
 
-**A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and run-the-test-suite-after-changes-before-considering-whether-to-commit is satisfied vacuously rather than violated.
+**A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and run-the-test-suite-after-changes-before-considering-whether-to-commit rule is satisfied vacuously rather than violated.
 
 **Waytide's own composite repository has both.** Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. Its automated tests, such as `test/automated/startup-display.sh`, run a script on a fixed input and compare the output, with no network access and no person in the run.
 

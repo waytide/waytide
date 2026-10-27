@@ -85,7 +85,7 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 4. **Discontinuations** name a word removed from use with nothing in its place. `discriminator` went because the concept went.
 5. A substitution names two words. A discontinuation names one.
 6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
-7. A word Waytide did not coin is still a term, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
 8. Where a word was taken rather than coined, the entry says so in its own prose.
 9. That statement is an **origin**, not a kind of entry.
 
@@ -94,10 +94,10 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
 2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
 3. A reserved word is a technical noun or verb in a category its entry names: STE Rule 1.5, 1.6, or 1.12, or an ETE category. The vocabulary that holds it is the approval STE Rule 1.8 requires.
-4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use.
-5. Reserve a word through the a-word-is-reserved-in-six-steps rule.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
 6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, not reserved and not rewritten.
-7. A vocabulary cites this rule in one line at its head, and does not repeat it.
+7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
 
 ## Which vocabulary decides
 
@@ -143,7 +143,7 @@ Related:
 
 - the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
 - its language-is-used-precisely-here-and-words-are-load-bearing rule — the premise every vocabulary follows from
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule
 - the file-names rule — why the project's file takes no prefix
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
 
@@ -170,3 +170,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:09:15 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

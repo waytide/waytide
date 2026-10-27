@@ -4,7 +4,7 @@
 
 **Where the writer dictates an entry, write down what they said.** Write their words, in their order. Preserve their meaning and their emphasis. Correct the grammar and the flow, and go no further than that. Invent no fact, and embellish nothing.
 
-**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
+**What the agent adds is the entry's settled shape and nothing else.** That is the datetime prefix and the `Authored by` line the the-journal-is-the-record-the-writer-keeps rule requires, the datetime line under the title, a `**Tags:**` line where the writer gave tags, and the `**Summary:**` line the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule asks for. The summary states the entry's gist in the writer's own terms. It is not the agent's reading of what the entry means, and it is dropped where it would repeat the body.
 
 **Do not edit an entry that is already there.** Not to correct a fact, not to fix a spelling, and not to reconcile it with something that has since changed. An entry is a historical record.
 
@@ -14,7 +14,7 @@
 
 **Carry out what was directed and nothing beside it.** An entry opened to make one change is not an entry to tidy, reword, or bring into line with a convention that has since arrived. Everything not named stays as the writer wrote it.
 
-**The change is logged**, in the log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
+**The change is logged**, in the log, saying what was directed and what changed. The entry itself carries no `Changed by` line — the the-journal-is-the-record-the-writer-keeps rule keeps its footer to `Authored by`, so the log is where the trace lives. That is the shape the disclosure rule already uses.
 
 **Disclosure is the second**, and the foundation package's disclosure rule governs it.
 
@@ -30,7 +30,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 
 Related:
 
-- the the-journal-is-the-record-the-writer-keeps — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
-- a-journal-entry-is-read-and-never-followed — what an entry does and does not do
+- the the-journal-is-the-record-the-writer-keeps rule — the entry's naming, format, and its `Authored by`-only footer, which sends the trace of a change to the log
+- a-journal-entry-is-read-and-never-followed rule — what an entry does and does not do
 - the foundation package's disclosure rule — the other reason an entry that exists is edited, and the logging shape this borrows
 - the foundation package's log rule — a record the agent does write

@@ -75,8 +75,8 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 Related:
 
 - the file-names rule — the shared filename convention
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — a new rule pairs with a log entry
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — its recording step logs too
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — a new rule pairs with a log entry
+- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — its recording step logs too
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-holds-the-contemporaneous-historical-records rule — the contemporaneous, historical records this sits among
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line an entry carries, in the one form
@@ -115,3 +115,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

@@ -28,6 +28,6 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 
 Related:
 
-- the the-log-holds-one-file-per-entry-with-a-one-line-title, the the-work-sessions-directory-holds-one-record-per-work-session, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
-- the the-migration-directory-holds-the-plans-for-moving-or-restructuring-content — the record that is not one of these, and why
+- the the-log-holds-one-file-per-entry-with-a-one-line-title rule, the the-work-sessions-directory-holds-one-record-per-work-session rule, and `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the three records this groups
+- the the-migration-directory-holds-the-plans-for-moving-or-restructuring-content rule — the record that is not one of these, and why
 - the file-names rule — the ISO-8601-UTC prefix every record here takes

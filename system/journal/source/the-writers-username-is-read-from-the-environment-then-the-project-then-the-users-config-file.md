@@ -225,7 +225,7 @@ Until 2026-08-14 the user file sat under `identity/`.
 
 Related:
 
-- the the-journal-is-the-record-the-writer-keeps — the per-writer directories `writers.toml` sits beside
+- the the-journal-is-the-record-the-writer-keeps rule — the per-writer directories `writers.toml` sits beside
 - the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — where `<username>` names the directory an entry is written in
 - the `foundation` package's a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the same `~/.config/` placement, taken for the same machine-scoped reason
 
@@ -247,3 +247,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT

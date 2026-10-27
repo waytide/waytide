@@ -15,6 +15,6 @@ Related:
 - the actuation-gate-options
 - human-in-the-loop
 - first-turn
-- the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming
+- the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
 - present-every-prompt rules
 - the testing package's test-naming rules
