@@ -57,7 +57,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The human's level of participation, chosen at the start
 
-**Attended or unattended, put through the selection interface beside the working location.** Both are decisions about how the work will be conducted, each made once and held for its duration, so they sit at one gate. Attended is the default. DBE is in effect either way — only the stopping changes. See the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule.
+**Attended or unattended, put through the selection interface beside the working location.** Attended is the default. See the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule, which states why the two sit at one gate and what changes between them.
 
 ## The end
 

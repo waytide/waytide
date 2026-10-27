@@ -4,9 +4,7 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 
 **Finishing the work means naming the test.** A test left with an empty (unnamed) outcome context is unfinished. The closing step ascribes its name. Do this one test at a time.
 
-**The naming gate offers candidate names, and the free-text option among them.** Responsibility transfers there exactly as it does at the actuation gate (see the actuation-gate-options rule). Present a list of candidate outcome-context names. The free-text option lets the human input a name directly or discuss it.
-
-The rationale carries over from the actuation gate: present alternatives, not a single pick. Make the human produce the answer, not approve one. The free-text option is mandatory. The best name may be one only the human can produce.
+**The naming gate offers candidate outcome-context names, as every hinge offers its candidates.** See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for the mechanism and its reasons.
 
 **Why:** Batch code generation moves fast, but it bypasses the gates that are the whole point of the loop. Each skipped gate is a place the human's judgment did not get to act, and mistakes hide in the pile. Naming is a hinge like the actuation, since the outcome-context name is a small contract on what the test establishes. So responsibility transfers there the same way, through options plus the free-text option, rather than through an AI fait accompli.
 
@@ -24,20 +22,15 @@ The rationale carries over from the actuation gate: present alternatives, not a 
 8. A test left with an empty, unnamed outcome context is unfinished.
 9. The closing step ascribes the test's name.
 10. Name one test at a time.
-11. At the naming gate, present a list of candidate outcome-context names.
-12. Include the free-text option among the candidates.
-13. The free-text option is mandatory.
-14. The free-text option lets the human input a name directly or discuss it.
-15. Responsibility transfers at the naming gate exactly as at the actuation gate (see the actuation-gate-options rule).
-16. Present alternatives, not a single pick.
-17. Make the human produce the answer, not approve one.
-18. Build one outcome's test at a time.
-19. After each test, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait.
-20. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule).
-21. Never write several test files at once, in either mode.
-22. To finish an unnamed test, present candidate names as options through the selection UI.
-23. Then apply the name the human chose or dictated.
-24. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
+11. At the naming gate, present candidate outcome-context names, as every hinge presents its candidates.
+12. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for the mechanism and its reasons.
+13. Build one outcome's test at a time.
+14. After each test, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait.
+15. Under unattended work, chosen at the start, the agent decides each hinge itself and does not stop (see the attended-or-unattended-is-chosen-when-the-work-is-started rule).
+16. Never write several test files at once, in either mode.
+17. To finish an unnamed test, present candidate names as options through the selection UI.
+18. Then apply the name the human chose or dictated.
+19. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
 
 ## History
 
@@ -46,6 +39,8 @@ Until 2026-10-24 the opening said, without qualification, that the loop stops at
 Until Sun Oct 25 2026 this rule was named one-outcome-at-a-time-name-via-options.
 
 Until Mon Oct 26 2026 this rule was named advance-one-outcome-at-a-time-stop-at-every-gate-in-attended-work-and-name-via-options and titled "Advance one outcome at a time, stop at every gate in attended work, and name via options".
+
+Until Mon Oct 26 2026 this rule restated, for the naming gate, the mechanism every hinge follows and its reasons. It now cites the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
 Related:
 
@@ -77,3 +72,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:33 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:49 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:26:49 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT

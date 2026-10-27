@@ -57,7 +57,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## The human's level of participation, chosen at the start
 
-**Attended or unattended, put through the selection interface beside the working location.** Both are decisions about how the work will be conducted, each made once and held for its duration, so they sit at one gate. Attended is the default. DBE is in effect either way — only the stopping changes. See the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule.
+**Attended or unattended, put through the selection interface beside the working location.** Attended is the default. See the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule, which states why the two sit at one gate and what changes between them.
 
 ## The end
 
@@ -181,9 +181,8 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 1. Put attended or unattended through the selection interface beside the working location.
 2. Attended is the default.
-3. Each choice is made once and held for the work's duration.
+3. The design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule states why the two sit at one gate, and what changes between them.
 4. Record both choices.
-5. DBE is in effect either way, and only the stopping changes (see the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule).
 
 ## The end
 
@@ -244,6 +243,8 @@ Until Sun Oct 25 2026 this rule was named implementation-lifecycle and titled "A
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule restated why attended or unattended sits at one gate with the working location, and what changes between them. It now cites the attended-or-unattended-is-chosen-when-the-work-is-started rule.
+
 Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation — the record, the tags, and the state words
@@ -273,3 +274,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT

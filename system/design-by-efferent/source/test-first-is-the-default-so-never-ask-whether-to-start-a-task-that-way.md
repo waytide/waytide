@@ -4,7 +4,7 @@ Test-first is the standing default for starting any task. Do not ask "shall I st
 
 **What this does not cover: the human's level of participation.** Test-first is the method's **substance**. Design is driven from the efferent side, and the test is written before the implementation. It is never put to the engineer. The answer is always yes.
 
-**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds. DBE is in effect either way, so nothing about the method is being confirmed or declined. What is chosen is a batch size. The trade has two real sides. Small batches spend attention continuously and keep rework near zero, and big batches spend none until the end and take rework instead.
+**Attended or unattended** is a different question: it asks how often the loop **stops**, not what it builds, and nothing about the method is being confirmed or declined.
 
 A question with a genuinely situational answer is a decision rather than a settled default, so this rule's reasoning does not reach it. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 
@@ -29,17 +29,18 @@ A question with a genuinely situational answer is a decision rather than a settl
 1. Test-first is the method's substance: design is driven from the efferent side, and the test is written before the implementation.
 2. Test-first is never put to the engineer.
 3. Attended or unattended is a different question. It asks how often the loop stops, not what it builds.
-4. DBE is in effect either way. The attended-or-unattended choice is a batch size. It neither confirms nor declines the method.
-5. Small batches spend attention continuously and keep rework near zero. Big batches spend none until the end and take rework instead.
-6. A question with a genuinely situational answer is a decision, not a settled default. This rule does not forbid asking it.
-7. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
-8. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
+4. The choice neither confirms nor declines the method.
+5. A question with a genuinely situational answer is a decision, not a settled default. This rule does not forbid asking it.
+6. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
+7. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named never-ask-to-start-test-first and titled "Never ask whether to start a task test-first — test-first is the default".
 
 Until Mon Oct 26 2026 this rule was named never-ask-whether-to-start-a-task-test-first and titled "Never ask whether to start a task test-first".
+
+Until Mon Oct 26 2026 this rule restated the batch-size trade between attended and unattended work. The attended-or-unattended-is-chosen-when-the-work-is-started rule states it.
 
 Related:
 
@@ -68,3 +69,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:17 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
