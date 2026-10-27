@@ -1588,6 +1588,10 @@ The three later repairs are not re-checked again.
 
 **The compression rule is amended to match**, and checked by its own method. A fresh lister gave 45 directives, and a fresh checker judged 44 kept and 1 less precise. The one was repaired and re-checked. The re-checker found directive 41 less precise, *the same commit* not saying *as the change it records*. The source words it the same way, so it is left as it is. Its solubility is 34 → 53, and its clarity score 0.50 → 0.84.
 
+### Finding #7 is placed in phase 2 — 2026-10-27
+
+**The engineer settled that finding #7, the read taking many tool calls with nothing to guarantee it is complete, belongs to phase 2, packaged-script.** Phase 1 does not take it up. Its improvement, a bundle file that `compile.sh` writes, is the question phase 2 holds.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4755,3 +4759,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:09:12 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:30:35 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:14:00 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:24:31 PM PT
