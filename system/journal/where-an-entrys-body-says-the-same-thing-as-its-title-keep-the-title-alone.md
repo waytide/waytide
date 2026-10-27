@@ -2,7 +2,7 @@
 
 Where the body of a journal entry would be identical or nearly identical to its `# <title>`, omit the body. The entry is then the title heading, the datetime line, and a `**Tags:**` line where it has one. No prose repeats what the title already says.
 
-This is the title-and-body counterpart of the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule, which omits the `**Summary:**` line where it would duplicate the body. Together they keep one sentence from appearing in the title, the summary, and the body alike.
+This is the title-and-body counterpart of the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule, which omits the `**Summary:**` line where it would duplicate the body. Together they keep one sentence from appearing in the title, the summary, and the body alike.
 
 **Why:** it avoids redundancy. A one-line entry whose title already says everything does not need the same words again below it.
 
@@ -10,5 +10,5 @@ This is the title-and-body counterpart of the journal-entries-live-in-the-writer
 
 Related:
 
-- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground
+- the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the `**Summary:**` line omitted on the same ground
 - the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the line that stays whatever else is dropped

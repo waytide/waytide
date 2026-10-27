@@ -15,7 +15,7 @@ The two datetime conventions in this package satisfy it:
 
 The record's filename already carries the seconds-precise UTC instant for the same moment. A title occurs **once** per file, so that collision cannot arise there. The exception is bounded to titles and reaches no other written time.
 
-**A journal entry's filename stamp is the second.** It stops at the minute, and carries seconds only where the writer stated seconds (see the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule). The same collision argument applies, since a journal is one file per entry rather than a running history inside one. What that rule adds is a second ground: the entry's own time is the writer's to state, and a clock's seconds are not a value they gave.
+**A journal entry's filename stamp is the second.** It stops at the minute, and carries seconds only where the writer stated seconds (see the `journal` package's journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule). The same collision argument applies, since a journal is one file per entry rather than a running history inside one. What that rule adds is a second ground: the entry's own time is the writer's to state, and a clock's seconds are not a value they gave.
 
 **Both exceptions are named here, and a third is not assumed.** Each is stated in the rule that takes it, and each argues from what this rule's defect does not reach. A format wanting a third states its own case the same way.
 
@@ -36,7 +36,7 @@ Related:
 - the record-a-rules-authorship-in-a-provenance-footer rule — the human-readable local datetime this corrects
 - the dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not rule — the machine-sortable UTC filename prefix
 - the working-state-artifacts-carry-a-provenance-footer rule — the artifacts that carry a footer
-- the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the second exception, and its own grounds for it
+- the `journal` package's journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the second exception, and its own grounds for it
 
 ## Compressed
 
@@ -50,7 +50,7 @@ Related:
 8. This rule applies only when a time is written.
 9. A record's title is the first exception. A dated record title is written `Mon Jan 1 2026 18:06`: 24-hour, minutes, no seconds (see the a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time rule).
 10. The title exception covers titles only. It reaches no other written time.
-11. A journal entry's filename stamp is the second exception. It stops at the minute (see the `journal` package's journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule).
+11. A journal entry's filename stamp is the second exception. It stops at the minute (see the `journal` package's journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule).
 12. A journal filename stamp carries seconds only where the writer stated seconds. Do not supply a clock's seconds.
 13. Only these two exceptions exist. Do not assume a third.
 14. A format that wants a further exception must state its own case in its own rule. It must argue from what this rule's defect does not reach. The defect is a repeated line within one file, whose entries collide at the same resolution.
@@ -81,3 +81,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:10 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:05:00 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT

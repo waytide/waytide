@@ -11,7 +11,7 @@ When creating a journal entry, where the writer has not given a **time**, ask th
 3. **Enter the time.** The writer gives the value. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix. Every other value stops at the minute.
 4. **Explain**, per the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
-**`Now` is held to the minute, like every other answer.** It reads a clock that has a seconds value, and the stamp drops it. Seconds reach a filename only where the writer states them, so no answer here produces a resolution the writer did not give. See the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule.
+**`Now` is held to the minute, like every other answer.** It reads a clock that has a seconds value, and the stamp drops it. Seconds reach a filename only where the writer states them, so no answer here produces a resolution the writer did not give. See the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule.
 
 **`Now` is offered only for an entry about today.** For a back-dated entry the current clock time is not the entry's time, and naming it `Now` would say it is. The ask then carries **No time**, **Enter the time**, and **Explain**.
 
@@ -19,7 +19,7 @@ When creating a journal entry, where the writer has not given a **time**, ask th
 
 **A date-only entry sorts to the start of its day**, which matches the filename sort, where `-` precedes `T`.
 
-**The date is settled before the ask, and the ask does not revisit it.** Where the writer referred to a day, the entry takes that day. Where they referred to none, it takes today. The journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule's dating default governs that, and this rule governs the time alone.
+**The date is settled before the ask, and the ask does not revisit it.** Where the writer referred to a day, the entry takes that day. Where they referred to none, it takes today. The journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule's dating default governs that, and this rule governs the time alone.
 
 **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact. Asking keeps the journal accurate.
 
@@ -31,7 +31,7 @@ Offering the date-only form as an answer is what makes it reachable. It was form
 
 Stamp the filename to the minute under **Now**, and under a time the writer stated to the minute. Write seconds only where the writer stated seconds.
 
-Name the file and write the datetime line to match the answer. Settle the date first by the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule's dating default, and do not put the date to the writer.
+Name the file and write the datetime line to match the answer. Settle the date first by the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule's dating default, and do not put the date to the writer.
 
 ## Compressed
 
@@ -41,7 +41,7 @@ Name the file and write the datetime line to match the answer. Settle the date f
 4. A date does not settle the time. *Yesterday*, *today*, *last Tuesday*, and an explicit date each fix only the day.
 5. The ask fires for each of those date references.
 6. The answer decides only whether the entry carries a time and what it is.
-7. Settle the date before the ask, by the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule's dating default.
+7. Settle the date before the ask, by the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule's dating default.
 8. Where the writer referred to a day, the entry takes that day. Where they referred to none, it takes today.
 9. The ask does not revisit the date. Do not put the date to the writer.
 10. This rule governs the time alone.
@@ -76,7 +76,7 @@ Until Sun Oct 25 2026 this rule was named ask-for-entry-time-or-omit-it.
 
 Related:
 
-- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the dating default that settles the date, and the filename stamp
+- the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the dating default that settles the date, and the filename stamp
 - the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the in-content line that drops the time with it
 - the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface, the `Explain` option, and the free-text option this rule's third option is not
 
@@ -96,3 +96,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT

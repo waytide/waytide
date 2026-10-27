@@ -1,4 +1,4 @@
-# Journal entries live in the writer's journal directory, one file per entry
+# Journal entries are recorded in the writer's journal directory, one file per entry
 
 The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
@@ -108,6 +108,8 @@ Until Sun Oct 25 2026 this rule was named journal-entries and titled "Journal en
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
+Until Mon Oct 26 2026 this rule was named journal-entries-live-in-the-writers-journal-directory-one-file-per-entry and titled "Journal entries live in the writer's journal directory, one file per entry".
+
 Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved
@@ -145,3 +147,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT

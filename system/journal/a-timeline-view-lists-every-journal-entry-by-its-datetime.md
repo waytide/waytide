@@ -20,5 +20,5 @@ Related:
 
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how `<username>` is resolved
 - the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — the line each bullet is led by
-- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the entries this reads, and the *new entry* directive that writes one
+- the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the entries this reads, and the *new entry* directive that writes one
 - the foundation package's vocabulary — the projection term

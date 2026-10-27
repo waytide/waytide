@@ -1,4 +1,4 @@
-# Journal entries live in the writer's journal directory, one file per entry
+# Journal entries are recorded in the writer's journal directory, one file per entry
 
 The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 

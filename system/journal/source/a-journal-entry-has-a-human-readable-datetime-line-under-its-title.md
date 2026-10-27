@@ -4,7 +4,7 @@ Every journal entry carries a datetime stamp in its content, on its own line dir
 
 Format: `Ddd Mon D YYYY at HH:MM` — the abbreviated weekday, the abbreviated month, the day of the month with no leading zero, the four-digit year, the literal word `at`, and the 24-hour `HH:MM`. An example is `Mon Jun 1 2026 at 13:40`.
 
-The datetime is derived from the entry's filename stamp, which is **local time**. See the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule. Parse the filename's `YYYY-MM-DDTHH-MM` as local time, and its `YYYY-MM-DDTHH-MM-SS` form where the writer gave seconds. Convert no time zone. The filename carries no zone designator, so nothing in it has to be discounted.
+The datetime is derived from the entry's filename stamp, which is **local time**. See the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule. Parse the filename's `YYYY-MM-DDTHH-MM` as local time, and its `YYYY-MM-DDTHH-MM-SS` form where the writer gave seconds. Convert no time zone. The filename carries no zone designator, so nothing in it has to be discounted.
 
 **The line reads to the minute whichever form the stamp takes.** A stamp carrying seconds is parsed to the second and rendered without them, because this line's format has no seconds field.
 
@@ -24,7 +24,7 @@ The structure of a full entry is therefore the `# <title>`, then the datetime li
 6. Format: `Ddd Mon D YYYY at HH:MM`. An example is `Mon Jun 1 2026 at 13:40`.
 7. The fields are the abbreviated weekday, then the abbreviated month, then the day of the month with no leading zero.
 8. Next come the four-digit year, the literal word `at`, and the 24-hour `HH:MM`.
-9. Derive the datetime from the entry's filename stamp, which is local time, per the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule.
+9. Derive the datetime from the entry's filename stamp, which is local time, per the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule.
 10. Parse the filename's `YYYY-MM-DDTHH-MM` as local time.
 11. Parse its `YYYY-MM-DDTHH-MM-SS` form as local time, where the writer gave seconds.
 12. Convert no time zone.
@@ -50,7 +50,7 @@ Until Mon Oct 26 2026 this rule was named a-journal-entry-carries-a-human-readab
 
 Related:
 
-- the journal-entries-live-in-the-writers-journal-directory-one-file-per-entry rule — the filename stamp this is derived from, and its local time
+- the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the filename stamp this is derived from, and its local time
 - the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line below it, and the tag protocol every artifact shares
 - the where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rule — the body this line stands above
 
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:25 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:41 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:46 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:12:53 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
