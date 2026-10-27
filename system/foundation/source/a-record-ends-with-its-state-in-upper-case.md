@@ -26,7 +26,7 @@ Where a record carries a canonical `**State:**` line, its **filename** ends with
 
 **So a state change renames the file.** A record reaching a new word is renamed with `git mv`, and a reversible word taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the items-convention sets out — renames it to the state the item returns to, **ACTIVE** or **OPEN**.
 
-**A renamed file breaks a path recorded elsewhere.** That is the cost the rules-convention names when it says to reference a rule by its name rather than its path. Here the mitigation is the same as everywhere: historical records are left as written and a reader who follows an unresolvable path uses git, and **live** artifacts that cite the record are reconciled at the rename.
+**A reference to a record omits its state suffix, so a state change breaks no reference.** The reference keeps the rest of the filename, the ISO-8601-UTC prefix and the name, as in `2026-10-24T20-42-50Z-a-rules-name-is-soluble`. That part does not change with the state, so a reference written before a state change still names the record after it. A reader finds the file by that prefix and name. The reference is not a path that opens directly, which is the cost of its staying true.
 
 **Why:** a record's state is the thing most often wanted without reading the record, and a directory listing is where it is asked for. `local/implementations/` answers *which of these concluded* at a glance, in a file tree, in a shell, and in any editor's sidebar — none of which opens a file to show a line near its top.
 
@@ -34,7 +34,7 @@ The cost is a filename that mutates over a record's life, which is real and is w
 
 **How to apply:** when a record reaches a state word, write the `**State:**` line and rename the file so its name ends with that word in upper case, after a dash.
 
-When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Reconcile the live artifacts that cite the old name, and leave historical records as written. Add no suffix to any file's contents.
+When the state changes, rename it again. When a reversible state word is taken back, rename it to the state the record returns to, **ACTIVE** or **OPEN**. Write a reference to such a record without its state suffix or its extension, so no reference needs reconciling at a rename. Leave historical records as written. Add no suffix to any file's contents.
 
 ## History
 
@@ -42,12 +42,14 @@ Until 2026-10-26 an implementation record took no suffix while its work was unde
 
 Until 2026-08-16 the suffix was also appended to the file's contents.
 
+Until Tue Oct 27 2026 live artifacts that cited a record by its full filename were reconciled at each rename. The engineer settled that a reference omits the state suffix and keeps the rest of the filename, so a state change breaks no reference.
+
 Related:
 
 - the implementations-convention — the record whose in-progress state is Active, and the words each kind takes
 - the items-convention — the other record that carries a state line, and which carries one from the moment it is written
 - the file-names rule — the ISO-8601-UTC prefix and the lower-case name this takes an exception to
-- the rules-convention — referencing by name rather than path, and the reconciliation a rename obliges
+- the rules-convention — referencing by name rather than path, the same remedy for a rule that a suffix-free reference is for a record
 - the an-item-takes-a-log-entry rule — the log entry a state change also takes
 
 ---
@@ -63,3 +65,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:34:26 AM PT
