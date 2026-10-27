@@ -165,6 +165,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-24, revised: written as a numbered list; checked twice, 3 repairs, re-checked kept
 - 2026-10-27, revised: Active is the in-progress state, and an item done on an experiment's branch concludes when the work is done; checked: 63 directives, 34 kept, 29 less precise, 0 lost, 25 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, 3 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
+- 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, every repair kept; 53, 56, and 61 are kept by the earlier checks
 
 ## History
 
