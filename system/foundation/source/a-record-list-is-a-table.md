@@ -4,24 +4,37 @@
 
 **The first column is the record's handle and carries no heading.** That is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit. The columns after it are headed.
 
-**Two SHA columns follow the handle: the commit that created the record, and the last to touch it.** They are standing columns rather than chosen ones.
+**A list of items opens with an ordinal**, a number from 1 in the order the rows are printed, ahead of the handle. The engineer refers to a row by that number.
+
+**Two SHA columns follow the handle: the commit that created the record, and the last to touch it.** They are standing columns rather than chosen ones, in every list but a list of items and a list of commits.
 
 ```
-|              | created   | changed   | item                              | state  |
-|--------------|-----------|-----------|-----------------------------------|--------|
-| `2026-08-10` | `f0b7769` | `e137863` | A Generalized Description         | Active |
-| `2026-08-23` | `376e64a` | `376e64a` | Waytide for content and web       | Open   |
+|              | created   | changed   | implementation              | state     |
+|--------------|-----------|-----------|-----------------------------|-----------|
+| `2026-08-25` | `159985b` | `ed7ec4a` | Feature — Self-Explanation  | Abandoned |
+| `2026-10-21` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
+```
+
+A list of items takes the ordinal and no SHA columns:
+
+```
+| # |              | item                        | state  |
+|---|--------------|-----------------------------|--------|
+| 1 | `2026-08-10` | A Generalized Description   | Active |
+| 2 | `2026-08-23` | Waytide for content and web | Open   |
 ```
 
 **A record never amended shows the same SHA twice, and that is the point.** The pair says whether a record has been touched since it was written. One that has not, and whose subject has moved since, is the stale case a reader is looking for.
 
 **The last column is chosen for the question.** A list of items or implementations takes the state. A list of commits asked about for their subject widths takes the width. A column nobody asked for is padding.
 
-**A list of commits takes no SHA columns**, because the handle is already the SHA and a commit has no creation distinct from itself.
+**A list of commits takes no SHA columns**, because the handle is already the SHA and a commit has no creation distinct from itself. **A list of items takes none either**, at the engineer's direction. Its rows are referred to by their ordinal.
 
 ## Keep every column short
 
 **A field that is a sentence does not belong in a table.** Column widths are fixed against the widest cell, so one long field narrows every other column and wraps every row. What was a scannable grid becomes prose in boxes.
+
+**Where the engineer asks for a table, render one, in rows and columns, whatever the length of its fields.** The request settles the form.
 
 **Where a record's summary is wanted, the answer is rows rather than a table.** That is not a failure of this rule. Rows are the form where a field runs to a sentence, and the two forms answer to the length of what is in them.
 
@@ -35,7 +48,7 @@
 
 Rows are the better form where a field is long, and that is the whole of the exception. The two forms are not in competition — they answer to the length of what is in them.
 
-**How to apply:** on a request for a list of records, render a table where every field is short, and rows where a field runs to a sentence. Do not call a list a table unless it is formatted as columns. In a table, put the handle first with no heading, then the creating commit and the last commit to touch it, then the title, then one column for the fact that was asked about. Give a list of commits no SHA columns.
+**How to apply:** on a request for a list of records, render a table where every field is short, and rows where a field runs to a sentence. Do not call a list a table unless it is formatted as columns. Where the engineer asks for a table, render one in rows and columns. In a table, put the handle first with no heading, then the creating commit and the last commit to touch it, then the title, then one column for the fact that was asked about. Give a list of commits no SHA columns. Give a list of items an ordinal ahead of the handle, and no SHA columns.
 
 Keep every column short. Where a field runs to a sentence, use rows instead.
 
@@ -46,6 +59,8 @@ Until 2026-10-25 the rule opened by saying to render a list of records as a tabl
 The engineer also settled the same day that a list is not called a table unless it is formatted as columns.
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
+Until Tue Oct 27 2026 a list of items took the two SHA columns and no ordinal, and a field that runs to a sentence sent a list to rows even where the engineer asked for a table. The engineer settled that a list of items takes an ordinal and no SHA columns, and that a table asked for is rendered in rows and columns.
 
 Related:
 
@@ -64,3 +79,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:44 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
