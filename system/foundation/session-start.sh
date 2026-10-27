@@ -292,8 +292,15 @@ if [ -n "$declaration" ]; then
       inactive="none"
     fi
 
-    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. Read every installed package'\''s rules as instructed above, deactivated ones included — the declaration governs which rules are applied and not which are read. Follow the active packages'\'' rules and withhold the deactivated ones. Print the package set at the head of the response that carries the read, per the a-project-declares-which-installed-packages-are-active rule.' \
+    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. Read every installed package'\''s rules as instructed above, deactivated ones included — the declaration governs which rules are applied and not which are read. Follow the active packages'\'' rules and withhold the deactivated ones.' \
       "$declared" "$active" "$inactive")
+
+    # The set is printed unless it is `default` with nothing deactivated, where the initialization
+    # rule has it print nothing. Telling the agent to print it there would leave each session to
+    # settle the conflict itself.
+    if [ "$declared" != "default" ] || [ "$inactive" != "none" ]; then
+      set_instruction="${set_instruction} Print the package set at the head of the response that carries the read, per the a-project-declares-which-installed-packages-are-active rule."
+    fi
 
     instruction="${instruction}${set_instruction}"
   fi
