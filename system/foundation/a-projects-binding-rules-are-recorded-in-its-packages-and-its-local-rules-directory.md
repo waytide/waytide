@@ -1,4 +1,4 @@
-# A project's binding rules live in its packages and its local rules directory
+# A project's binding rules are recorded in its packages and its local rules directory
 
 The project's **binding** rules are read at the start of every session and followed. Those are naming conventions, terminology, plan-writing norms, commit conventions, and the like. They live in two directories, separated by source:
 

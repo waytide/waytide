@@ -1,4 +1,4 @@
-# A project's binding rules live in its packages and its local rules directory
+# A project's binding rules are recorded in its packages and its local rules directory
 
 The project's **binding** rules are read at the start of every session and followed. Those are naming conventions, terminology, plan-writing norms, commit conventions, and the like. They live in two directories, separated by source:
 
@@ -114,6 +114,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule was named binding-rules-live-in-the-installed-packages-and-the-projects-own-rules-directory and titled "Binding rules live in the installed packages and the project's own rules directory".
 
+Until Mon Oct 26 2026 this rule was named a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory and titled "A project's binding rules live in its packages and its local rules directory".
+
 Related:
 
 - the file-names rule
@@ -157,3 +159,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

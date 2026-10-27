@@ -16,7 +16,7 @@
 
 Each is genuine, and the selection carries all three:
 
-- **A rule**, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory requires.
+- **A rule**, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory requires.
 - **An observation**, in `waytide/local/items/`, where the thinking has not stabilized. The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes prefers this where there is doubt. Promoting later is cheap, and retracting a premature rule is not.
 - **Neither**, where the engineer does not want it recorded. It is a real answer, and it is taken without argument.
 
@@ -28,7 +28,7 @@ Each is genuine, and the selection carries all three:
 
 Interrupting is the cost, and it is one selection. Deferring the ask to the end of the task costs the wording, which is the part worth keeping.
 
-**How to apply:** where the engineer states how the work should be done, stop and ask through the selection interface. Offer a rule, an observation, and neither. Record their words rather than a paraphrase, and write the log entry with the rule per the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory.
+**How to apply:** where the engineer states how the work should be done, stop and ask through the selection interface. Offer a rule, an observation, and neither. Record their words rather than a paraphrase, and write the log entry with the rule per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory.
 
 Do not ask about an instruction that governs only the artifact at hand. Do not ask a second time about a preference the engineer has declined to record.
 
@@ -54,7 +54,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 ## The three candidates
 
 1. The selection offers all three candidates as real options.
-2. **A rule** goes in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry that the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory requires.
+2. **A rule** goes in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry that the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory requires.
 3. **An observation** goes in `waytide/local/items/`, for when the thinking has not settled.
 4. Per the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes, prefer an observation when in doubt.
 5. **Neither** applies when the engineer does not want the preference recorded.
@@ -72,7 +72,7 @@ Related:
 
 - the a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store rule — the store this replaces, and which depends on this one
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the interface the ask uses
-- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the rule and its log entry
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule and its log entry
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — the softer landing, preferred where there is doubt
 - the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule — the preference stated three times before it was written
 
@@ -90,3 +90,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

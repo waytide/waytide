@@ -14,7 +14,7 @@
 
 **The harness's own working state.** A cache, a transcript, an index of the repository. None of it is the project's context and none of it is a substitute for an artifact.
 
-**Why:** the premise of the whole system is in the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory. The conventions are committed alongside the code and **read fresh each session rather than recalled**. A memory store is recall. It is unreviewed, undiffable, and invisible to everyone but the agent that wrote it.
+**Why:** the premise of the whole system is in the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory. The conventions are committed alongside the code and **read fresh each session rather than recalled**. A memory store is recall. It is unreviewed, undiffable, and invisible to everyone but the agent that wrote it.
 
 It drifts, and its drift is silent. A note written in June contradicts a rule written in August, and nothing detects it. That is the same failure the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule names about a hand-kept list, arriving through a different mechanism.
 
@@ -27,7 +27,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 Related:
 
 - the ask-at-once-when-the-engineer-expresses-a-preference rule — what makes forbidding the store safe
-- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the read-fresh premise, and where a binding convention goes
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the read-fresh premise, and where a binding convention goes
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — where a decision goes
 - the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes — where thinking goes before it binds
 - the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule — the machine-scoped fact, and where it goes instead

@@ -65,7 +65,7 @@ Related:
 - the the-journal-is-the-record-the-writer-keeps — where the journal lives and what one entry is
 - the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — how the active writer is resolved
 - the a-timeline-view-lists-every-journal-entry-by-its-datetime rule — the on-demand listing, which writes no file for this read to pass over
-- the foundation package's a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the session-start read this joins
+- the foundation package's a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the session-start read this joins
 
 ---
 
@@ -91,3 +91,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:21:02 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

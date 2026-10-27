@@ -96,7 +96,7 @@ Until Sun Oct 25 2026 this rule was named observations-convention and titled "An
 Related:
 
 - the the-items-directory-holds-one-file-per-item — the eight states an observation does not take, and the state requirement it satisfies
-- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — where a promoted observation's rule goes
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — where a promoted observation's rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-STATED` filename suffix
 - the the-log-holds-one-file-per-entry-with-a-one-line-title — the entry that records one
 
@@ -128,3 +128,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

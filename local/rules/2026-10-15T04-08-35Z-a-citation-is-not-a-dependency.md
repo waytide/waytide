@@ -28,7 +28,7 @@ This criterion was practiced before it was written. Every declaration in the sys
 
 Related:
 
-- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the rule format and where rules live
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule format and where rules live
 - the the-implementations-directory-holds-one-record-per-implementation — the refused dependency it declines
 - the a-status-report-prints-a-fixed-whole-project-report rule — the model citation, written for the cited package's absence
 - each package's README — where a dependency is declared
@@ -55,3 +55,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

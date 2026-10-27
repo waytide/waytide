@@ -12,7 +12,7 @@
 
 **Why:** everything else read at session start binds, so the default reading of a file in that read is that it must be followed. The journal is the exception, and an exception nobody states is one nobody applies.
 
-Left unstated, the journal becomes a rules directory with none of the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory's form. A passing thought and a settled decision look alike on the page. There is no `**Why:**` line, no `**How to apply:**` line, and no name saying what the rule says. A rule written that way cannot be found, cited, revised, or removed.
+Left unstated, the journal becomes a rules directory with none of the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory's form. A passing thought and a settled decision look alike on the page. There is no `**Why:**` line, no `**How to apply:**` line, and no name saying what the rule says. A rule written that way cannot be found, cited, revised, or removed.
 
 The writer's cost is the real one. Knowing that every entry is read, the writer writes for a reader. What keeps that cost bounded is this rule. An entry that can change nothing is one that can be written without weighing its effect.
 
@@ -43,7 +43,7 @@ Related:
 
 - the-journal-is-read-at-the-start-of-a-session-with-the-rules — the read this rule qualifies
 - the the-journal-is-the-record-the-writer-keeps — where the journal lives and what one entry is
-- the foundation package's a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the form a binding rule takes, and where one lives
+- the foundation package's a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the form a binding rule takes, and where one lives
 - the foundation package's a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — where a term is settled
 
 ---
@@ -58,3 +58,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:35 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:51 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT

@@ -28,6 +28,6 @@ Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, 
 
 Related:
 
-- the a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory — the rule format this governs the lines of
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory — the rule format this governs the lines of
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — the vocabularies, whose entries are prose the same way
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer whose lines are exempt
