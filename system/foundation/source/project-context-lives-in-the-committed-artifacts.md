@@ -10,7 +10,7 @@
 
 **A fact about the engineer rather than the project.** How they want to be answered, and what they want the agent never to offer, are not project context. They hold across every project on the machine, and the a-project-does-not-name-its-consumers rule already sends a machine-scoped fact to per-machine configuration under `~/.config/`, outside any repository.
 
-**A preference that has not yet been settled as a rule.** That is the ask-at-once-when-a-preference-is-expressed rule's concern, and it is what keeps this one from costing anything. Its words are written at once as an observation, so nothing has to be held while the question of what becomes of it waits.
+**A preference that has not yet been settled as a rule.** That is the ask-at-once-when-a-preference-is-expressed rule's concern, and it is what keeps this one from costing anything. The pipeline from a preference to a written rule is short enough that nothing has to be held while it waits.
 
 **The harness's own working state.** A cache, a transcript, an index of the repository. None of it is the project's context and none of it is a substitute for an artifact.
 
@@ -22,11 +22,13 @@ The cost of forbidding it is real and is bounded to one case. That is the prefer
 
 **How to apply:** write durable project context into the artifact whose convention covers it. A rule, a log entry, an observation, an item, or a suspended thing. Do not hold it in an agent memory store, and do not create one.
 
-Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, write it at once as an observation rather than holding it.
+Where a fact is about the engineer rather than the project, it is outside this rule. Where a preference is not yet a rule, ask about it at once rather than holding it.
 
 ## History
 
 Until Tue Oct 27 2026 this rule said a preference not yet a rule was asked about at once. The ask-at-once-when-a-preference-is-expressed rule now has its words written at once as an observation.
+
+The same day, Tue Oct 27 2026, the engineer settled that a preference is asked about at once after all, so the earlier wording is restored.
 
 Related:
 
@@ -46,3 +48,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 25 2026 at 10:52:18 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:33:27 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:15 PM PT
