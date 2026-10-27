@@ -104,7 +104,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 10. Where an item that settles things deliberately leaves something out, mark it in an **Out of Scope / Deferred** tail.
 11. An item that sequences work carries checkbox tasks stating behavior.
 12. An item that neither settles things nor sequences work carries neither resolutions nor tasks.
-13. A tag may describe an item by its kind, and nothing about an item's tags is strict: `[design]`, `[plan]`, `[aspiration]`, `[observation]`.
+13. A tag may describe an item by its kind, and nothing about an item's tags is strict: a design item `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, an observation `[observation]`.
 14. Tag an item that has no tag at all `[idea]`.
 15. Give `[idea]` to no item that already carries a tag.
 16. Assign no kind tag but `[idea]` by default. Write `[aspiration]` only where an aspiration was asked for.
@@ -133,11 +133,11 @@ Change the state as the item reaches another word, renaming the file with it, an
 39. An observation, and only an observation, starts and stays **Stated**.
 40. **Realized** — what it describes exists.
 41. **Deferred** — kept deliberately, with no date and no one working toward it.
-42. An item merely waiting its turn carries `**Waits for:**` instead of **Deferred**.
+42. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
 43. **Suspended** — paused, not ended.
 44. **Superseded** — a later item replaced it, and the two name each other.
 45. **Abandoned** — dropped by decision.
-46. **Lapsed** — it lost its relevance with no one deciding.
+46. **Lapsed** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**.
 47. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
 48. At each change of state, change the `**State:**` line and rename the file.
 49. At each change of state, write the log entry.
@@ -164,6 +164,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-22, revised: restored directives 14 and 17, compression 0.60, change 0.83
 - 2026-10-24, revised: written as a numbered list; checked twice, 3 repairs, re-checked kept
 - 2026-10-27, revised: Active is the in-progress state, and an item done on an experiment's branch concludes when the work is done; checked: 63 directives, 34 kept, 29 less precise, 0 lost, 25 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
+- 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, 3 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
 
 ## History
 
@@ -231,3 +232,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:19:11 PM PT

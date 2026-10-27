@@ -94,7 +94,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 
 - Solubility 46, clarity 0.55 (2026-10-21)
 - Compression 0.60, change 0.83 (2026-10-22)
-- 63 directives, 34 kept, 29 less precise, 0 lost (2026-10-27)
+- 63 directives, 56 kept, 7 less precise, 0 lost (2026-10-27)
 
 Related:
 
