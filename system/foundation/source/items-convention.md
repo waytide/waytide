@@ -24,7 +24,7 @@
 
 **An item's content is point-in-time.** What an item says was true when it was written — the work that was in progress, the rules as they stood, the artifacts that existed. **A reference inside an item that time has overtaken is not a defect and is not chased.** An item waiting on an experiment does not stop being correct when that experiment is superseded, because it records what it was waiting for.
 
-**Nothing derives from either line.** They were a queue's mechanism until 2026-08-25 and are now an item's own content, read by whoever reads the item.
+**Nothing derives from either line.** They are an item's own content, read by whoever reads the item.
 
 ## The shape
 
@@ -94,6 +94,8 @@ Until 2026-10-26 **Active** meant settled, with the work expected, and **Open** 
 
 **One word covers what two used to.** `Realized` replaces the pair `Realized` and `Implemented`, which distinguished a direction taken up from a sequence built. That distinction went with the mode vocabulary, and one word is what remains of it.
 
+Until 2026-08-25 the `**Waits for:**` and `**Priority:**` lines were the deferred queue's mechanism.
+
 Related:
 
 - the a-record-takes-category-tags rule — the tags that say what an item is
@@ -120,3 +122,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 2:38:56 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:05:21 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT

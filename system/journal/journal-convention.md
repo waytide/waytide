@@ -2,7 +2,7 @@
 
 **`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The identity-resolution-contract rule resolves which writer is writing, and the journal-entries rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
-**The package and the directory were named `diary` until 2026-08-18.** The rename reaches every rule name, every path, the `JOURNAL_WRITER` variable, and the `Journal:` commit prefix. Records already written keep the word they were written with — the log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
+**Records written while the package was named `diary` keep that word.** The log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
 **`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the identity-resolution-contract rule.
 
@@ -28,7 +28,7 @@
 
 **The commit message is `Journal: <subject>`.** The subject is the entry's, and nothing follows it.
 
-**It carried a parenthetical date until 2026-08-18**, in the form `Diary entry: <subject> (Tue Jun 16 2026)` — the words it read then, when this package was named `diary`. The prefix cost 13 characters and the date 17 more, against a subject line the `git` package's commit-message-widths rule caps at 50. That left 20 characters for what the entry was about, and the date sat at the tail where truncation takes it first — so it was carried at the subject's expense and no reader saw it in a listing. The entry's filename holds the same date.
+**It carries no date.** A date in the subject would cost 17 characters against a line the `git` package's commit-message-widths rule caps at 50, and it would sit at the tail, where truncation takes it first. So it would be carried at the subject's expense, and no reader would see it in a listing. The entry's filename holds the date.
 
 **`Journal:` rather than `Journal entry:`** for the same budget. It costs 9 characters where the longer form costs 15, and it says the same thing to a reader scanning a log.
 

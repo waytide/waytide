@@ -27,7 +27,7 @@
 
 **A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and run-suite-before-commit is satisfied vacuously rather than violated.
 
-**Waytide's own composite repository was in that second state** from 2026-08-24 to 2026-10-10. Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. It had no automated suite at all until 2026-10-10, when `test/automated/startup-display.sh` became its first automated test. That test runs a hook script on a fixed input and compares the output, with no network access and no person in the run.
+**Waytide's own composite repository has both.** Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. Its automated tests, such as `test/automated/startup-display.sh`, run a script on a fixed input and compare the output, with no network access and no person in the run.
 
 **Why:** a suite is trusted in proportion to what happens when it is red. A run that sometimes needs a person, sometimes reaches a network, and sometimes cannot be judged by its exit status is a run whose failures get explained rather than fixed. Separating the two by directory keeps the automated suite mechanically true — it passes or it does not — and gives the tests that genuinely need a person a place to be, rather than being deleted for not fitting.
 
@@ -38,6 +38,10 @@ The engineer's attention is the scarce thing, which is the same reason the `desi
 Run `test/automated/` before weighing a commit, and run nothing from `test/interactive/` unless the engineer asks. When reporting a run, say the automated tests passed rather than that the tests passed, and say the interactive tests were not run where the project has any.
 
 Where a project has no automated suite, run nothing and report nothing missing.
+
+## History
+
+From 2026-08-24 to 2026-10-10 Waytide's own composite repository had interactive tests and no automated suite, until `test/automated/startup-display.sh` became its first automated test.
 
 Related:
 
@@ -51,3 +55,4 @@ Related:
 Authored by Scott Bellware on Mon Aug 24 2026 at 12:59:35 PM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 12:25:33 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT

@@ -26,7 +26,7 @@
 
 **Those rules push length up, and that tension is real.** Naming the software and then its new state costs words that a leading verb would not. It is accepted: the limit is a budget the subject is written within, not a licence to drop the subject and lead with a verb.
 
-**A prefix eats the budget, and the journal is the worked case.** Its commit message read `Diary entry: <subject> (Tue Jun 16 2026)` until 2026-08-18, when the package was still named `diary` — 13 characters of prefix and 17 of date, leaving 20 for what the entry was about. The date sat at the tail, where truncation takes it first, so it was carried at the subject's expense and no reader saw it. It is dropped, and the prefix is now `Journal:`, which costs 9. See the `journal` package's journal-convention.
+**A prefix eats the budget, and the journal is the worked case.** A prefix of 13 characters and a date of 17 leave 20 of the 50 for what an entry is about. A date at the tail is where truncation takes it first, so it is carried at the subject's expense and no reader sees it. The journal's prefix is `Journal:`, which costs 9, and its subject carries no date. See the `journal` package's journal-convention.
 
 ## The history is not rewritten
 
@@ -42,6 +42,8 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 Until 2026-10-23 the rule made truncation available wherever the subject was not the agent's to rewrite, which could reach beyond a journal entry.
 
+Until 2026-08-18 the journal's commit message read `Diary entry: <subject> (Tue Jun 16 2026)`, which this rule gave as its worked case.
+
 Related:
 
 - the subject-first-commit-messages rule — what the subject says, which this constrains the width of
@@ -56,3 +58,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:29:06 AM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 3:56:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT

@@ -31,7 +31,7 @@ The tail is always `waytide/user`; only the base directory varies:
 
 Tools agree on this **resolution rule**, not a raw path string.
 
-**`waytide` is the namespace because the file is Waytide's.** It sat under `identity/` until 2026-08-14, on the reasoning that the file holds identity and is reusable beyond one tool. That took a top-level name on every machine Waytide is installed on, for a file only Waytide reads. A tool outside Waytide has its own idea of what identity is and no reason to accept this one's. The namespace now says what the file belongs to, and `~/.config/waytide/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
+**`waytide` is the namespace because the file is Waytide's.** An `identity/` namespace, on the reasoning that the file holds identity and is reusable beyond one tool, would take a top-level name on every machine Waytide is installed on, for a file only Waytide reads. A tool outside Waytide has its own idea of what identity is and no reason to accept this one's. The namespace says what the file belongs to, and `~/.config/waytide/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
 
 ## The user file's format
 
@@ -102,6 +102,8 @@ Never read git for identity. Never invent a username, and never compute a displa
 
 **The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
 
+Until 2026-08-14 the user file sat under `identity/`.
+
 Related:
 
 - the journal-convention — the per-writer directories `writers.toml` sits beside
@@ -118,3 +120,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:56:57 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 12:31:47 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 1:11:55 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT

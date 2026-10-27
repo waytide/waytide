@@ -10,7 +10,7 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 **This departs from the foundation package's a-time-value-carries-minutes-and-seconds rule**, which specifies a new datetime format to seconds. That rule answers a running history inside **one file**, whose entries collide at a coarse resolution. The later entry then goes unwritten rather than looking like a duplicate of the one above it. A journal is one file per entry, so that collision cannot arise. What the coarser stamp costs is two entries written in the same minute, which sort against each other by name rather than by moment.
 
-**The form carries no trailing `Z`.** In ISO 8601 that character designates UTC, and this stamp is local time. It was kept until 2026-08-14, on the reasoning that it is a literal token of the form rather than a claim about a zone. A reader meets the filename and not the rule that says so, so every entry asserted something false and the correction sat somewhere they would never look. The foundation package's file-names rule keeps its `Z`, because its stamps are UTC and the character is true there.
+**The form carries no trailing `Z`.** In ISO 8601 that character designates UTC, and this stamp is local time. Keeping it as a literal token of the form, rather than as a claim about a zone, would not help. A reader meets the filename and not the rule that says so, so every entry would assert something false, and the correction would sit somewhere they never look. The foundation package's file-names rule keeps its `Z`, because its stamps are UTC and the character is true there.
 
 **The local time reaches the journal entries alone.** The agent's own records keep UTC, as the foundation package's file-names rule requires. Do not conflate the two.
 
@@ -35,6 +35,8 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 ## History
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
+Until 2026-08-14 the stamp kept a trailing `Z`, on the reasoning that it was a literal token of the form.
 
 Related:
 
@@ -62,3 +64,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 2:47:19 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:36:02 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
