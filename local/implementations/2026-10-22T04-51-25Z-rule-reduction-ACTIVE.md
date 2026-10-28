@@ -1694,6 +1694,24 @@ The figures are characters.
 
 **So the engineer's judgment was needed mostly to settle what a rule means, not what it can lose.** Restating each rule briefly, and checking the restatement, made 29 rules' unclear or wrong passages visible. That is more than "a few": it is about a quarter of the rules.
 
+### Forecast 8, the engineer's hypothesis — results, 2026-10-27
+
+**The hypothesis does not hold. The reverse holds, moderately: the lower a rule's solubility, the more it compressed and the more it changed.** The hypothesis said a rule harder to understand would compress less and change less. The agent's competing expectation said it would compress more, because it has more to remove.
+
+The figures are from the first `compressed` line of each rule's `## Compression` section, for the 102 rules whose line gives the solubility before, the compression, and the change.
+
+| Rules by solubility before | Solubility | Mean compression | Mean change |
+|---|---|---|---|
+| Lowest third | 11–39 | 0.37 | 0.63 |
+| Middle third | 39–63 | 0.34 | 0.61 |
+| Highest third | 63–99 | 0.21 | 0.55 |
+
+**Rank correlation with solubility before:** compression −0.42, change −0.27.
+
+**Both parts of solubility point the same way.** Solubility combines a rule's size and its unclarity. Compression correlates with size at 0.40 and with the clarity score before at −0.30. Change correlates with them at 0.26 and −0.19. So a larger rule and a less clear rule each compressed more. The result is not only the effect of size.
+
+**Exceptions exist.** The after-any-implementation-hinge-show-the-test-output rule, at solubility 91, compressed by 0.54. The a-feature-with-one-case-has-one-test-file rule, at 88, compressed by 0.04.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4869,3 +4887,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 4:00:48 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:11:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
