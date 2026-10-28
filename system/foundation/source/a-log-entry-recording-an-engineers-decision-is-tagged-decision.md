@@ -49,12 +49,12 @@
 4. An engineer's decision to stop doing something is tagged `[decision] [suspended]`.
 5. What `[decision]` marks is fixed here.
 6. The set of the engineer's decisions is read from this tag.
-7. **Why:** the log carries agent acts and engineer decisions in the same form. An engineer's decision is changed by the engineer, while an agent's act is corrected against its rule, so one search must find the engineer's decisions.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.15, change 0.37, solubility 72 → 93, clarity 0.62 → 1.00, 8 directives, 8 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: `[decision]` is no longer called a reserved tag, a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 93 → 93, clarity 1.00 → 0.99; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

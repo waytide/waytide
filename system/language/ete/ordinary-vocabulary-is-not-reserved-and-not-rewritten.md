@@ -16,6 +16,10 @@ The trade is not close. Conforming the terminology is bounded work with a real r
 
 **How to apply:** ask what a refused word names. Reserve it in a category where it names something in the subject field. Rewrite the prose where an approved word says the same thing. Leave it where it is ordinary vocabulary, and record no entry for it.
 
+## Compression
+
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops

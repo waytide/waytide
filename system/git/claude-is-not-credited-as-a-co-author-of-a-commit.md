@@ -8,6 +8,6 @@ Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by 
 
 ## Compression
 
-- Solubility 86, clarity 0.73 (2026-10-22)
+- Solubility 95, clarity 0.91 (2026-10-28)
 - Compression 0.07, change 0.60 (2026-10-22)
-- 3 directives, 2 kept, 1 less precise, 0 lost (2026-10-22)
+- 4 directives, 4 kept, 0 less precise, 0 lost (2026-10-28)

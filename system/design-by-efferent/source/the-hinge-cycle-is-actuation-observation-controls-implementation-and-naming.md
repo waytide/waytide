@@ -100,7 +100,6 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 36. Do not manufacture a second candidate to avoid the appearance of a foregone conclusion.
 37. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
 38. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
-39. **Why:** Each hinge is a real design decision with its own failure mode. Bundling them collapses separate deliberations into one judgment on a fait accompli, the mean-bias failure. Separate hinges keep the human producing the answer, not ratifying it. The free-text option keeps a lone candidate from foreclosing an answer only the human can produce. The controls need their own hinge. A non-discriminating example asserts nothing, and a top-level constant cannot distinguish a full name from a final segment. A mis-describing name is a design error in its own right.
 
 ## The five are named before the first one is put
 
@@ -126,11 +125,11 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 7. Give the account after the participation decision, not before it.
 8. Place the account immediately ahead of the first hinge.
 9. The participation decision names no hinge, on purpose.
-10. **Why:** Without the account, an engineer weighs the actuation as though it were the whole of what is being asked. Each question the account would answer then arrives at a later hinge, mid-decision. A passage repeated at every hinge stops being read.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.18, change 0.64, solubility 30 → 42, clarity 0.54 → 0.72, 33 directives, 33 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 42 → 42, clarity 0.72 → 0.70; checked: 28 directives, 28 kept, 0 less precise, 0 lost
 
 ## History
 

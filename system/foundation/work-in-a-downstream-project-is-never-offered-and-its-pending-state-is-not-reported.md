@@ -32,7 +32,7 @@ Carry out any of that when the engineer asks for it, and report what happened on
 
 ## Compression
 
-- Solubility 62, clarity 0.68 (2026-10-28)
+- Solubility 67, clarity 0.70 (2026-10-28)
 - Compression 0.30, change 0.53 (2026-10-24)
 - 15 directives, 14 kept, 1 less precise, 0 lost (2026-10-28)
 

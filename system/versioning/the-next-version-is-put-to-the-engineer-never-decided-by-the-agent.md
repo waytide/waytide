@@ -28,9 +28,9 @@ Offering the candidates rather than asking for a version outright is what keeps 
 
 ## Compression
 
-- Solubility 85, clarity 0.80 (2026-10-24)
+- Solubility 84, clarity 0.81 (2026-10-28)
 - Compression 0.55, change 0.75 (2026-10-24)
-- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

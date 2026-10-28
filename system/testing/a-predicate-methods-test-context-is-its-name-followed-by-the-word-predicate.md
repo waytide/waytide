@@ -10,9 +10,9 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 
 ## Compression
 
-- Solubility 98, clarity 0.98 (2026-10-24)
+- Solubility 98, clarity 0.99 (2026-10-28)
 - Compression 0.39, change 0.63 (2026-10-24)
-- 3 directives, 3 kept, 0 less precise, 0 lost (2026-10-24)
+- 4 directives, 4 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

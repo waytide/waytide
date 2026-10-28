@@ -13,9 +13,9 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 ## Compression
 
-- Solubility 85, clarity 0.73 (2026-10-22)
+- Solubility 93, clarity 0.91 (2026-10-28)
 - Compression 0.23, change 0.61 (2026-10-22)
-- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-27)
+- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -37,12 +37,12 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 4. This rule removes an obligation, not a permission.
 5. Per the the-work-sessions-directory-holds-one-record-per-work-session rule, either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
 6. This rule settles the ordinary case and leaves that judgment with the engineer.
-7. **Why:** a plan edited to match the work stops being a statement of intent. It becomes unfalsifiable, so nothing is learned from having written it.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.24, change 0.48, solubility 55 → 83, clarity 0.37 → 0.84, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 83 → 75, clarity 0.84 → 0.72; checked: 12 directives, 8 kept, 4 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 75 → 76, clarity 0.72 → 0.70; checked: 10 directives, 9 kept, 1 less precise, 0 lost
 
 Related:
 

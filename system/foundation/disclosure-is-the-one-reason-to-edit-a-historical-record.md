@@ -37,9 +37,9 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 
 ## Compression
 
-- Solubility 64, clarity 0.68 (2026-10-24)
+- Solubility 65, clarity 0.70 (2026-10-28)
 - Compression 0.28, change 0.60 (2026-10-24)
-- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

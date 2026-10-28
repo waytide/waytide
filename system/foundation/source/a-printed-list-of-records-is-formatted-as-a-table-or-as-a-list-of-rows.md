@@ -97,13 +97,13 @@ A list of items takes the ordinal and no SHA columns:
 1. This rule does not reach the status report's tables. They stay tables, under the a-status-report-prints-a-fixed-whole-project-report rule.
 2. This rule does not govern an answer that is not a list of records.
 3. The `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule governs the form of an answer's list items. This rule governs only how a set of records is presented.
-4. **Why:** a record list is scanned, not read. A table puts each field in the same place on every row, so the reader can find one row or compare a field down a column. Rows are better only where a field is long.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.56, solubility 37 → 69, clarity 0.33 → 0.75, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, re-checked: 24 directives, 21 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-27, revised: the example tables show the full prefix as the handle; checked: 24 directives, 24 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 69 → 56, clarity 0.75 → 0.75; checked: 23 directives, 23 kept, 0 less precise, 0 lost
 
 ## History
 

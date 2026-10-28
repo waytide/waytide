@@ -100,11 +100,11 @@ end
 28. Do not present the whole test file for a single accept.
 29. Settle the three test hinges first, then assemble and show the file.
 30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
-31. **Why:** Writing the actuation before any implementation designs the interface from the use site, per the DBE-as-design-tool rule. Limiting the first gate to the actuation and one unnamed assert avoids committing early to an outcome taxonomy. The explaining variable makes the test read as a statement of the concern and keeps the efferent view in frame.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.19, change 0.52, solubility 44 → 59, clarity 0.61 → 0.76, 24 directives, 24 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 59 → 61, clarity 0.76 → 0.76; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 
 ## History
 

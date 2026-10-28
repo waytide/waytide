@@ -145,8 +145,6 @@ Change the state as the item reaches another word, renaming the file with it, an
 55. Do not refuse to answer until the item is amended.
 56. Reconcile a settled item against later work.
 57. Never regenerate a settled item from later work. Where one item names another as what it realizes, the named item is the source of truth.
-58. **Why:** One class of record, because its earlier kinds differed only in a word, which a tag carries. A thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
-
 
 ## Compression
 
@@ -158,6 +156,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, 3 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, every repair kept; 53, 56, and 61 are kept by the earlier checks
 - 2026-10-27, revised: the claim that no tag is reserved is removed, and a tag means what a rule about it says; checked: 71 directives, 69 kept, 2 less precise, 0 lost; 62 and 69 are kept by the earlier checks
+- 2026-10-28, revised: Why points removed, solubility 46 → 45, clarity 0.55 → 0.71; checked: 57 directives, 57 kept, 0 less precise, 0 lost
 
 ## History
 

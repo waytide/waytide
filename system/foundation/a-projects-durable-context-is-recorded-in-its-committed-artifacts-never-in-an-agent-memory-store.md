@@ -26,9 +26,9 @@ Where a fact is about the engineer rather than the project, it is outside this r
 
 ## Compression
 
-- Solubility 68, clarity 0.61 (2026-10-24)
+- Solubility 67, clarity 0.62 (2026-10-28)
 - Compression 0.42, change 0.66 (2026-10-24)
-- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

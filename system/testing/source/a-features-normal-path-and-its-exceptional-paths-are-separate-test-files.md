@@ -34,11 +34,11 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 16. Controls in an exceptional-path file that also appear on the normal path serve only to make the failure discriminating.
 17. Discriminating means the raised error can be told from a different failure of the same class.
 18. Do not add a second, raising actuation to a normal-path file.
-19. **Why:** a file holds one set of controls and one actuation. Separate files make failure modes findable by filename, and keep normal-path files from accumulating exceptional cases.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.28, change 0.57, solubility 61 → 77, clarity 0.63 → 0.78, 18 directives, 18 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 77 → 72, clarity 0.78 → 0.74; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

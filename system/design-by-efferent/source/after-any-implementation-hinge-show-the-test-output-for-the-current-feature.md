@@ -21,8 +21,6 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 5. Run them with verbose output, so the context tree, the `comment` and `detail` narration, and pass or fail show.
 6. Put the output in the turn that reports the implementation.
 7. The each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule shows the implementation and the new outcome's test. This rule adds the feature's full output.
-8. **Why:** solubility is judged at this hinge, against behavior. The new outcome is judged among the outcomes already established, not alone.
-
 
 ## Compression
 
@@ -30,6 +28,7 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 - 2026-10-22, checked: 8 directives, 8 kept, 0 less precise, 0 lost
 - 2026-10-22, revised: rewritten in short sentences, compression 0.55, solubility 62 → 93, clarity 0.28 → 0.89; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 93 → 88, clarity 0.89 → 0.82; checked: 8 directives, 7 kept, 1 less precise, 0 lost
 
 ## History
 

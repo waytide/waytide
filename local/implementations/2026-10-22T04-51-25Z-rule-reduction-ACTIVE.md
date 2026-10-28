@@ -1779,6 +1779,21 @@ Each rule's figures are on a `revised` line in its `## Compression` section.
 
 **What it does not establish.** The pass conditions for S12–S14 may be stricter than the rules. The present-every-prompt rule asks for real choices put to the engineer, and an agent that offers the requested act beside a better one follows it. The five new requests are therefore a test the rules themselves did not let either side pass, and they cannot separate the two reads.
 
+### The Why points are removed from the compressed texts — 2026-10-28
+
+**At the engineer's direction, the compression rule no longer keeps reasons, and the 109 Why points are removed from the 108 compressed texts.** The rule now says that a compressed text carries no reasons and that they stay in the body, which remains the authority. Where a reason itself constrains what is done, the compressed text states that constraint as a directive. The rule's own compressed text, its body, and its History say so.
+
+**The check:** 18 fresh listers and 18 fresh checkers, six rules to each, as the compression rule requires.
+
+1. **First check:** 1,934 directives, 1,901 kept, 31 less precise, 2 lost. One loss came from a removed reason that constrained what is done: the suite rule's *the commit waits on the suite passing, not on the human's attention*, which is restored as a directive. The other was a footer rule's purpose, which is a reason and not a constraint, and is left out.
+2. **A checking fault, not a text fault:** the build script cut the footer rule's compressed text at the `---` inside its fenced example, so the first checker saw a broken text. The script is fixed, and the rule is checked again: 10 directives, all kept.
+3. **Repairs:** 4 clauses in 3 rules. Besides the restored directive, the vocabulary rule's order is stated from the most general to the most specific, which decides, and the package-set rule says the latest declaration is read at session start. The 3 rules are checked again with no losses.
+4. **Left as they are:** 28 directives judged less precise. They are details such as rule numbers, examples, and scope words that earlier checks judged kept and that the Why removal did not touch. Where two checkers disagree, the source decides, and none changes what an agent does.
+
+**The figures:** the compressed read falls from 419,387 to 396,052 characters, 5.6%. The mean solubility is unchanged, 73.1 to 73.3: 49 rose and 36 fell.
+
+The six ETE rules had no `## Compression` section. Each now has one, opening with this revision.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4959,3 +4974,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:24:19 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 1:31:13 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 2:35:50 PM PT

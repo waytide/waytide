@@ -22,9 +22,9 @@ The loop, by turn:
 
 ## Compression
 
-- Solubility 61, clarity 0.76 (2026-10-28)
+- Solubility 64, clarity 0.76 (2026-10-28)
 - Compression 0.13, change 0.38 (2026-10-24)
-- 26 directives, 25 kept, 1 less precise, 0 lost (2026-10-28)
+- 24 directives, 23 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -80,7 +80,10 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 8. The same entry states what the STE dictionary says about the word.
 9. A word with no entry is not reserved.
 10. An ETE category is not a standing permission to use the words that fit it.
-11. **Why:** STE's categories are complete for aerospace maintenance, but they miss some of the method's nouns and every verb whose object is a judgment. Adding the categories is one departure, stated once. Separate exemptions would keep growing, and that growth would go unrecorded.
+
+## Compression
+
+- 2026-10-28, revised: Why points removed, solubility 76, clarity 1.00; checked: 11 directives, 11 kept, 0 less precise, 0 lost
 
 ## History
 

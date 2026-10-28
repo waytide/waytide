@@ -33,9 +33,9 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 ## Compression
 
-- Solubility 58, clarity 0.81 (2026-10-28)
+- Solubility 59, clarity 0.81 (2026-10-28)
 - Compression 0.36, change 0.64 (2026-10-24)
-- 19 directives, 16 kept, 2 less precise, 1 lost (2026-10-28)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

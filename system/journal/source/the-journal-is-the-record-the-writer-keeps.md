@@ -120,14 +120,13 @@ Journal: I finished the basic implementation of E…
 Journal: Idea
 ```
 
-9. **Why:** what the writer thinks about the work is otherwise recorded nowhere and gets lost between sessions. A personal record is read against the day the writer remembers, so the local hour must survive.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.41, change 0.65, solubility 23 → 48, clarity 0.40 → 0.77, 37 directives, 37 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-10-24, revised: How to apply's point 7 names the two exceptions to the ban on editing an entry; not checked
 - 2026-10-27, re-checked: 39 directives, 39 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 48 → 50, clarity 0.77 → 0.80; checked: 37 directives, 34 kept, 3 less precise, 0 lost, 5 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 50 → 50, clarity 0.80 → 0.79; checked: 37 directives, 35 kept, 2 less precise, 0 lost
 
 ## History
 

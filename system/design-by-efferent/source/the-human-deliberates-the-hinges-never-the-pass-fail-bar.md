@@ -56,7 +56,6 @@ The loop, by turn:
 17. The human deliberates solubility again.
 18. **Exit on solubility, not coverage.** Stop when the unit has dissolved into the reader's understanding, not at an assertion count.
 19. Keep turns small: one actuation, one outcome, so the cradle stays legible during deliberation.
-20. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
 
 ## Compression
 
@@ -64,6 +63,7 @@ The loop, by turn:
 - 2026-10-24, revised: point 9 takes the definition of test mechanics; not checked
 - 2026-10-27, re-checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 66 → 61, clarity 0.79 → 0.76; checked: 26 directives, 25 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 61 → 64, clarity 0.76 → 0.76; checked: 24 directives, 23 kept, 1 less precise, 0 lost
 
 ## History
 

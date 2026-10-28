@@ -15,11 +15,11 @@ This is the title-and-body counterpart of the journal-entries-are-recorded-in-th
 3. No prose repeats what the title already says. Omit the `**Summary:**` line where it would duplicate the body, as the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule directs.
 4. After drafting an entry, compare the title and the body.
 5. Where the body adds no fact, no detail, and no framing beyond the title, drop the body and keep the title.
-6. **Why:** it avoids redundancy. A one-line entry whose title already says everything does not need the same words again below it.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.11, change 0.45, solubility 76 → 85, clarity 0.56 → 0.73, 8 directives, 8 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 85 → 82, clarity 0.73 → 0.69; checked: 5 directives, 5 kept, 0 less precise, 0 lost
 
 ## History
 

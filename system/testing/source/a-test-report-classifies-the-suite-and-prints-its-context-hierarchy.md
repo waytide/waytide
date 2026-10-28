@@ -84,13 +84,13 @@ Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree`
 6. A dynamic `context <expr> do` shows as its expression.
 7. A bare unnamed `test do` adds no context line.
 8. A report on what a run produced is the test-tree command's, not this one's.
-9. **Why:** a suite has a discoverable structure worth surfacing on demand. A fixed report shape makes it repeatable and steers reading to the test files rather than recollection.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.12, change 0.43, solubility 66 → 77, clarity 0.68 → 0.83, 23 directives, 23 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: the context hierarchy is read from the test files, not from a suite run; not checked
 - 2026-10-27, re-checked: 26 directives, 26 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 77 → 79, clarity 0.83 → 0.84; checked: 26 directives, 26 kept, 0 less precise, 0 lost
 
 ## History
 

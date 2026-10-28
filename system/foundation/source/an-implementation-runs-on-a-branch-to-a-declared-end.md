@@ -238,14 +238,13 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 7. The session-start notice reports every implementation not concluded.
 8. A `[feature]` has no watch, since starting other work during one is ordinary.
 9. A forgotten feature is reported by the same notice.
-10. **Why:** an experiment and a feature share one lifecycle, and differ only where a question differs from an intent. Stated once, with six clauses conditioned on the tag, the difference shows directly.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.43, change 0.63, solubility 21 → 42, clarity 0.42 → 0.76
 - 2026-10-24, revised: written as a numbered list; checked: 86 directives, 75 kept, 11 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-27, re-checked: 88 directives, 75 kept, 12 less precise, 1 lost, 13 repairs, re-checked kept; directive 58 left less precise, since the point gives its reason and the run-the-test-suite-after-changes-before-considering-whether-to-commit rule states the directive
+- 2026-10-28, revised: Why points removed, solubility 42 → 41, clarity 0.76 → 0.79; checked: 85 directives, 84 kept, 1 less precise, 0 lost
 
 ## History
 

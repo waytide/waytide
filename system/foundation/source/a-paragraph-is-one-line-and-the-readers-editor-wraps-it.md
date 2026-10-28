@@ -41,11 +41,11 @@ Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, 
 4. Fold a list item's continuation into the item rather than leaving it hanging under it.
 5. Each line of the provenance footer stays its own line: `Authored by …` and every `Changed by …` beneath it.
 6. Do not join the footer lines. They are a running history, and joining them would lose the record.
-7. **Why:** the reader should set the width they read at, and a hard wrap gives that decision to the writer. Rendered markdown looks the same either way. A hard wrap makes a one-word edit reflow the whole paragraph in the diff.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.55, change 0.75, solubility 63 → 92, clarity 0.59 → 0.93, 9 directives, 9 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 92 → 94, clarity 0.93 → 0.97; checked: 12 directives, 12 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -44,9 +44,9 @@ On finding a context that holds only a test, warn as above, unless the local rul
 
 ## Compression
 
-- Solubility 72, clarity 0.70 (2026-10-24)
+- Solubility 63, clarity 0.81 (2026-10-28)
 - Compression 0.19, change 0.52 (2026-10-24)
-- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-27)
+- 22 directives, 22 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

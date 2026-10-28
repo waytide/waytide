@@ -20,9 +20,9 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 
 ## Compression
 
-- Solubility 91, clarity 0.95 (2026-10-24)
+- Solubility 93, clarity 0.99 (2026-10-28)
 - Compression 0.03, change 0.77 (2026-10-24)
-- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-24)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -16,9 +16,9 @@ When adding coverage for behavior that already exists, all five are in play:
 
 ## Compression
 
-- Solubility 89, clarity 0.93 (2026-10-24)
+- Solubility 91, clarity 0.98 (2026-10-28)
 - Compression 0.14, change 0.57 (2026-10-24)
-- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

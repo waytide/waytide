@@ -41,9 +41,9 @@ Where a project has no automated suite, run nothing and report nothing missing.
 
 ## Compression
 
-- Solubility 70, clarity 0.85 (2026-10-24)
+- Solubility 73, clarity 0.90 (2026-10-28)
 - Compression 0.38, change 0.65 (2026-10-24)
-- 23 directives, 22 kept, 1 less precise, 0 lost (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

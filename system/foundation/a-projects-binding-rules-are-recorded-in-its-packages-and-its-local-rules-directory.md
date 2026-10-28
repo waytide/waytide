@@ -24,9 +24,9 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 
 ## Compression
 
-- Solubility 50, clarity 0.81 (2026-10-24)
+- Solubility 47, clarity 0.79 (2026-10-28)
 - Compression 0.09, change 0.49 (2026-10-24)
-- 49 directives, 47 kept, 2 less precise, 0 lost (2026-10-27)
+- 44 directives, 44 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

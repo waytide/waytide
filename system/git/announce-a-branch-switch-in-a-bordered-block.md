@@ -43,9 +43,9 @@ BRANCH SWITCHED
 
 ## Compression
 
-- Solubility 80, clarity 0.75 (2026-10-22)
+- Solubility 84, clarity 0.86 (2026-10-28)
 - Compression 0.46, change 0.62 (2026-10-22)
-- 20 directives, 19 kept, 1 less precise, 0 lost (2026-10-22)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

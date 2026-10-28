@@ -199,12 +199,12 @@ display-name = "Jane Doe"
 13. Nothing refuses an unknown username. A mistyped `JOURNAL_WRITER` resolves to a nonexistent writer.
 14. A journal directory is then created for that writer, not refused.
 15. The fourth level still fails loudly where no username resolves at all.
-16. **Why:** the writer is one person across many tools and projects. So identity is set once per machine, with project and process overrides for exceptions. Only the display name is overridable per project, so no project can declare who is writing.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.23, change 0.50, solubility 39 → 52, clarity 0.70 → 0.92, 52 directives, 52 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 53, clarity 0.92 → 0.92; checked: 54 directives, 54 kept, 0 less precise, 0 lost, no repair
+- 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.92 → 0.93; checked: 49 directives, 49 kept, 0 less precise, 0 lost
 
 ## History
 

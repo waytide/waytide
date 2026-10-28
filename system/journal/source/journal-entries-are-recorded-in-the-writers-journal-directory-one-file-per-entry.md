@@ -91,13 +91,13 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 7. That ask fires wherever the writer gave no time, including where they gave only a day.
 8. *Yesterday* and *today* fix the day and say nothing about the hour.
 9. Stamp the file to the writer's answer to that ask.
-10. **Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, sort chronologically, and reference. Per-writer directories separate each writer's record from others' and from the agent's records.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.21, change 0.53, solubility 32 → 53, clarity 0.50 → 0.84, 36 directives, 36 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 53 → 53, clarity 0.84 → 0.86; checked: 33 directives, 32 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.86 → 0.85; checked: 38 directives, 38 kept, 0 less precise, 0 lost
 
 ## History
 

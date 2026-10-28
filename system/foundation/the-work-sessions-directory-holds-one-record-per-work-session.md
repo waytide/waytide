@@ -47,9 +47,9 @@ Once the record is written, put the **design reconciliation** through the same U
 
 ## Compression
 
-- Solubility 45, clarity 0.75 (2026-10-24)
+- Solubility 46, clarity 0.77 (2026-10-28)
 - Compression 0.33, change 0.61 (2026-10-24)
-- 34 directives, 34 kept, 0 less precise, 0 lost (2026-10-27)
+- 36 directives, 36 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

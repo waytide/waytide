@@ -16,9 +16,9 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 ## Compression
 
-- Solubility 75, clarity 0.70 (2026-10-24)
+- Solubility 77, clarity 0.71 (2026-10-28)
 - Compression 0.14, change 0.44 (2026-10-24)
-- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-27)
+- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

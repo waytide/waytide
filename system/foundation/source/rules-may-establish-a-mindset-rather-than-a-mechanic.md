@@ -31,11 +31,11 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 15. Do not treat package membership as the whole of a rule's meaning.
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
-18. **Why:** Read as local conventions, these rules look like an arbitrary do-this-not-that list. Naming their purpose keeps them coherent and prevents contradictory rules from accreting in other packages.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.15, change 0.62, solubility 61 → 78, clarity 0.54 → 0.81, 12 directives, 12 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 78 → 80, clarity 0.81 → 0.85; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 ## History
 

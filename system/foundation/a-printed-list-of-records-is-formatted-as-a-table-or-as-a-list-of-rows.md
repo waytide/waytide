@@ -54,9 +54,9 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 
 ## Compression
 
-- Solubility 69, clarity 0.75 (2026-10-24)
+- Solubility 56, clarity 0.75 (2026-10-28)
 - Compression 0.26, change 0.56 (2026-10-24)
-- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-27)
+- 23 directives, 23 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

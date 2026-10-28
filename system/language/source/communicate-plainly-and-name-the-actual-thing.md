@@ -52,7 +52,6 @@ Speak and write to the user in plain language, using the **actual names of thing
 13. If a sentence needs a glossary to parse, rewrite it.
 14. This rule governs phrasing addressed to the user, such as an explanation, a summary, or a status note.
 15. It also governs the codebase and the durable artifacts the user reads later: rules, logs, plans, and deferred items.
-16. **Why:** Invented labels and unexplained jargon hide meaning and force the reader to decode them. The point of communicating is to be understood.
 
 ## An explanation is short, shows an example, and gives only what the reader needs
 
@@ -68,6 +67,7 @@ Speak and write to the user in plain language, using the **actual names of thing
 
 - 2026-10-24, compressed: compression 0.33, change 0.52, solubility 46 → 74, clarity 0.26 → 0.66, 16 directives, 16 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: an explanation is short, shows an example, and gives only what the reader needs; checked: 22 directives, 19 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 74 → 71, clarity 0.66 → 0.78; checked: 18 directives, 18 kept, 0 less precise, 0 lost
 
 ## History
 

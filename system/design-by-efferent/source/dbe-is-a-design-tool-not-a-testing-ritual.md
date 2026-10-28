@@ -37,11 +37,11 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 17. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
 18. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
 19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
-20. **Why:** The red-green-refactor ceremony existed only to put human attention in the loop, so ritual repetition wastes effort and teaches nothing. Tests are the vehicle; design is the point.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.28, change 0.51, solubility 59 → 79, clarity 0.65 → 0.84, 16 directives, 15 kept, 1 less precise, 0 lost, after 4 repairs, re-checked kept; directive 16 less precise, judged immaterial
+- 2026-10-28, revised: Why points removed, solubility 79 → 78, clarity 0.84 → 0.83; checked: 15 directives, 14 kept, 1 less precise, 0 lost
 
 ## History
 

@@ -26,13 +26,13 @@ Tests serve two different purposes in two different processes, and conflating th
 9. When the behavior already exists and you are adding coverage, write the test and run it.
 10. Accept the passing coverage test as verification, and leave the implementation untouched.
 11. Reserve the failing-test-first cycle for design, where a test drives new behavior into existence.
-12. **Why:** Forcing TDD's red-to-green onto coverage is a category error. It deforms shipped implementations to satisfy a misplaced ritual, and it blurs design tests with regression tests.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.36, change 0.64, solubility 68 → 85, clarity 0.65 → 0.86, 13 directives, 13 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 13 directives, 13 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: *uncontested* replaces "passes when first run", a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 85 → 86, clarity 0.86 → 0.89; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

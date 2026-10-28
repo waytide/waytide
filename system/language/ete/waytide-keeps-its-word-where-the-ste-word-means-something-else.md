@@ -38,6 +38,10 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 
 **How to apply:** write to the STE dictionary. Where the STE dictionary names an alternative, use it. Where the approved word means something else, keep Waytide's word. Reserve it in the package's `vocabulary.md`, in a category the entry names. Record what the STE dictionary says about it.
 
+## Compression
+
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the waytide-prose-conforms-to-the-ste-writing-rules rule in this directory

@@ -14,9 +14,9 @@ So a test reads **control → actuate → observe** (the assertion is only *how*
 
 ## Compression
 
-- Solubility 90, clarity 0.86 (2026-10-24)
+- Solubility 91, clarity 0.89 (2026-10-28)
 - Compression 0.30, change 0.65 (2026-10-24)
-- 7 directives, 7 kept, 0 less precise, 0 lost (2026-10-24)
+- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

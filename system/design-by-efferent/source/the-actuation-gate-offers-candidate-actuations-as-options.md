@@ -62,13 +62,13 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 9. A varied receiver is not a candidate. `Upload.(file, retries: 3)` beside `upload.(file, retries: 3)` is one shape reached two ways.
 10. This hinge does not ask which interface carries the operation.
 11. To apply the test, hold the receiver constant and ask what the use site states.
-12. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.37, change 0.54, solubility 30 → 56, clarity 0.43 → 0.76, 25 directives, 25 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 19 directives, 19 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 56 → 61, clarity 0.76 → 0.77; checked: 20 directives, 17 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 61 → 64, clarity 0.77 → 0.77; checked: 19 directives, 19 kept, 0 less precise, 0 lost
 
 ## History
 

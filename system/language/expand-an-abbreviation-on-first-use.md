@@ -12,9 +12,9 @@ Do not use an abbreviation the reader may not already know without spelling it o
 
 ## Compression
 
-- Solubility 95, clarity 0.98 (2026-10-24)
+- Solubility 95, clarity 0.98 (2026-10-28)
 - Compression 0.25, change 0.53 (2026-10-24)
-- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

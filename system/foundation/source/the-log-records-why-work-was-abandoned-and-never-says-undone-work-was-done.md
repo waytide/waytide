@@ -50,11 +50,11 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 2. An entry written entirely in conditional mood, such as *It would have taken the package to `ext/`*, still must not record unexecuted planning.
 3. The test is the entry's subject, not its grammar.
 4. Reasoning for stopping belongs in the log. Work that stopped does not.
-5. **Why:** A reader consults the log, with no branch to compare against, to learn what the project decided. Recording unexecuted work makes it read as settled knowledge the project holds.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.55, change 0.79, solubility 39 → 75, clarity 0.29 → 0.67, 12 directives, 12 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 75 → 68, clarity 0.67 → 0.57; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

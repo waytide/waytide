@@ -109,12 +109,12 @@ Keep each part tight. Read current state before printing — do not report stale
 6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
 7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
 8. An unnamed test appears in the source and emits no line.
-9. **Why:** a status report is a recurring request with a known shape. A fixed format makes it repeatable and complete, and steers reading toward in-repo sources of truth rather than recollection.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.10, change 0.41, solubility 28 → 51, clarity 0.40 → 0.83, 32 directives, 32 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 51 → 51, clarity 0.83 → 0.83; checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 51 → 51, clarity 0.83 → 0.83; checked: 31 directives, 31 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -26,13 +26,13 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 8. Coverage is a concern of testing, not of DBE. Adding such a test is a decision about coverage, and it is the engineer's.
 9. The agent may suggest the test to the engineer as an increase to coverage, to accept or decline.
 10. When the work is adding coverage, an uncontested test is expected and correct. See the "TDD designs, coverage prevents" rule.
-11. **Why:** DBE is a design tool, not a coverage tool: exit on solubility, not coverage. An uncontested test, taken as a design step, reads as a driven outcome when it isn't.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.22, change 0.64, solubility 68 → 81, clarity 0.58 → 0.75, 6 directives, 6 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, re-checked: 10 directives, 7 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-27, revised: *uncontested* replaces "passes when first run", a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 81 → 82, clarity 0.75 → 0.81; checked: 10 directives, 9 kept, 1 less precise, 0 lost
 
 ## History
 

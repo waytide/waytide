@@ -28,11 +28,11 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 12. When a short handle is genuinely needed, use the most literal short handle available.
 13. Keep a coined handle that is precise, in active use, and defined plainly elsewhere, such as *hinge* and *cradle*.
 14. Do not mint new metaphors by default.
-15. **Why:** The terminology is how this work is taught to other engineers. A literal name is the explanation itself, so the reader pays nothing to understand it each time. This is the solubility test applied to a name.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.65, solubility 83 → 94, clarity 0.84 → 0.96, 9 directives, 9 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 94 → 95, clarity 0.96 → 0.99; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 ## History
 

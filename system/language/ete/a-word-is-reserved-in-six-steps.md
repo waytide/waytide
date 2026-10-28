@@ -30,6 +30,10 @@ The order is not arbitrary. Step 2 comes before step 3 because an ordinary word 
 
 Reserve the word and stop there. Conform existing prose to it only where that is asked for separately.
 
+## Compression
+
+- 19 directives, 18 kept, 1 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the ete-declares-its-own-categories rule — the five ETE categories, and the reach-for-STE-first instruction

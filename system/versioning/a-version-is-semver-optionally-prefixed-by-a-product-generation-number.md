@@ -29,9 +29,9 @@ Stated that way, the segment a change increases is **read off what the change do
 
 ## Compression
 
-- Solubility 84, clarity 0.93 (2026-10-24)
+- Solubility 84, clarity 0.93 (2026-10-28)
 - Compression 0.44, change 0.70 (2026-10-24)
-- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

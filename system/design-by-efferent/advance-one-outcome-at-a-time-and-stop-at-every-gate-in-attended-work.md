@@ -12,9 +12,9 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 
 ## Compression
 
-- Solubility 80, clarity 0.77 (2026-10-24)
+- Solubility 79, clarity 0.76 (2026-10-28)
 - Compression 0.19, change 0.51 (2026-10-24)
-- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-27)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

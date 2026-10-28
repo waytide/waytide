@@ -56,11 +56,11 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 24. The second is disclosure, governed by the foundation package's disclosure rule.
 25. Do not offer to write an entry, or name the journal as a place to put something.
 26. Where the writer wants an entry, they say so.
-27. **Why:** the journal holds the writer's judgment. An agent-written entry would read as the writer's, making the record untrustworthy at the one thing it is for.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.36, change 0.60, solubility 44 → 74, clarity 0.45 → 0.75, 24 directives, 24 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 74 → 70, clarity 0.75 → 0.71; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

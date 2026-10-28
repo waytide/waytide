@@ -38,9 +38,9 @@ A decision may have been about that project, and its name is there for that. Lea
 
 ## Compression
 
-- Solubility 83, clarity 0.86 (2026-10-24)
+- Solubility 84, clarity 0.89 (2026-10-28)
 - Compression 0.56, change 0.73 (2026-10-24)
-- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

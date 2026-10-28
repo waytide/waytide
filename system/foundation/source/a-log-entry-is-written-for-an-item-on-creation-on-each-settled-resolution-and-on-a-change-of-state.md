@@ -84,8 +84,6 @@ Name the record in the entry, and say what happened to it. State what the record
 26. The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
 27. The the-items-directory-holds-one-file-per-item rule points here and keeps no second copy.
 28. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
-29. **Why:** the log holds when direction moved, which an artifact cannot carry. The exclusions keep the log skimmable. A log entry has no State line beside it, so an entry asserting what a record only settles is read as the system's behavior.
-
 
 ## Compression
 
@@ -95,6 +93,7 @@ Name the record in the entry, and say what happened to it. State what the record
 - 2026-10-22, revised: restored directive 5, compression 0.58, change 0.80
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 44 → 51, clarity 0.47 → 0.70; checked: 20 directives, 18 kept, 2 less precise, 0 lost
 
 ## History
 

@@ -37,9 +37,9 @@ Speak and write to the user in plain language, using the **actual names of thing
 
 ## Compression
 
-- Solubility 74, clarity 0.66 (2026-10-24)
+- Solubility 71, clarity 0.78 (2026-10-28)
 - Compression 0.33, change 0.52 (2026-10-24)
-- 22 directives, 19 kept, 3 less precise, 0 lost (2026-10-27)
+- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

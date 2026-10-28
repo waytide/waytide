@@ -43,9 +43,9 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 ## Compression
 
-- Solubility 54, clarity 0.72 (2026-10-28)
+- Solubility 58, clarity 0.70 (2026-10-28)
 - Compression 0.35, change 0.67 (2026-10-24)
-- 14 directives, 13 kept, 1 less precise, 0 lost (2026-10-28)
+- 20 directives, 20 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -35,9 +35,9 @@ Name the file and write the datetime line to match the answer. Settle the date f
 
 ## Compression
 
-- Solubility 74, clarity 0.81 (2026-10-24)
+- Solubility 70, clarity 0.81 (2026-10-28)
 - Compression 0.38, change 0.83 (2026-10-24)
-- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -55,7 +55,6 @@
 
 1. Writing a loop record while doing the work is the default.
 2. Mark a record reconstructed retroactively from memory as a **Backfill**, at the top.
-3. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
 
 ## Compression
 
@@ -64,6 +63,7 @@
 - 2026-10-27, re-checked: 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 64 → 63, clarity 0.68 → 0.69; checked: 22 directives, 21 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 63 → 65, clarity 0.69 → 0.69; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 
 ## History
 

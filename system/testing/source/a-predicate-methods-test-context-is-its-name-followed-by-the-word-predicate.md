@@ -16,11 +16,11 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 4. `defined?` → `context "Defined Predicate"`, not `context "Defined?"`.
 5. Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", and `empty?` → "Empty Predicate".
 6. Keep the `?` out of a `context` label.
-7. **Why:** The context names the feature under test. "Predicate" is the exact term for a boolean-returning method. A `?` in a label reads as interrogative prose, not a feature name.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.39, change 0.63, solubility 78 → 98, clarity 0.62 → 0.98, 3 directives, 3 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 98 → 98, clarity 0.98 → 0.99; checked: 4 directives, 4 kept, 0 less precise, 0 lost
 
 ## History
 

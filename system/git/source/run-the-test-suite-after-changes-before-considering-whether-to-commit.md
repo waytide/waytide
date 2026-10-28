@@ -23,15 +23,15 @@ After making any code change, run the full test suite and confirm it passes **be
 11. This rule fixes only *when* the run happens relative to the commit decision. That holds for any stack.
 12. Apply it as: Edit → run the full suite → confirm it reports nothing failed → only then consider committing.
 13. If anything is failing or aborted, fix it, or stop, before the commit question arises.
-14. For a single-file change, you may run that one file first for speed.
+14. For a single-file change, you may run that one file's tests first for speed.
 15. Run the full suite before commit anyway.
-16. **Why:** Committing is the point of no easy return. Running the suite before deliberating keeps a failing change from becoming a commit candidate. It keeps every commit in the history verified. The commit waits on the bar, not on the human's attention.
-
+16. The commit waits on the suite passing, not on the human's attention.
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.17, change 0.42, solubility 75 → 89, clarity 0.66 → 0.87, 10 directives, 9 kept, 1 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 89 → 89, clarity 0.87 → 0.91; checked: 10 directives, 8 kept, 1 less precise, 1 lost, 2 repairs, re-checked kept
 
 ## History
 

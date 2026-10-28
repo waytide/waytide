@@ -40,9 +40,9 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 ## Compression
 
-- Solubility 72, clarity 0.76 (2026-10-22)
+- Solubility 78, clarity 0.95 (2026-10-28)
 - Compression 0.39, change 0.57 (2026-10-22)
-- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-27)
+- 17 directives, 16 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

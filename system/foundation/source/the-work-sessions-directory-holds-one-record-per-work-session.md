@@ -103,13 +103,13 @@ Once the record is written, put the **design reconciliation** through the same U
 12. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read the design against the records rather than rebuilding it.
 13. Where no design exists, or nothing in the work session bears on one, say so and move on.
 14. Do not invent a divergence to justify the prompt.
-15. **Why:** durable records capture what was decided. A work session's reasoning, arc, forks, and settled vocabulary are easy to lose and costly to rebuild. The narrative keeps them, as a route through the records rather than a second source of truth.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.33, change 0.61, solubility 18 → 45, clarity 0.32 → 0.75, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: point 18 takes the new wording, that every prompt says work session; not checked
 - 2026-10-27, re-checked: 34 directives, 34 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 45 → 46, clarity 0.75 → 0.77; checked: 36 directives, 36 kept, 0 less precise, 0 lost
 
 ## History
 

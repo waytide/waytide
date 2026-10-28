@@ -4,7 +4,9 @@
 
 ## The compressed text
 
-**The compressed text is numbered lists.** Each point is one or two short sentences, carrying one directive or the reason for one. Headings within the section group the points, and each group's list numbers from 1. A reason is a point that leads with `**Why:**`. A fenced example the directives depend on is kept.
+**The compressed text is numbered lists.** Each point is one or two short sentences, carrying one directive. Headings within the section group the points, and each group's list numbers from 1. A fenced example the directives depend on is kept.
+
+**The compressed text carries no reasons.** A rule's reasons stay in its body, which remains the authority. Where a reason itself constrains what is done, the compressed text states that constraint as a directive.
 
 **A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
 
@@ -52,9 +54,9 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 
 ## Compression
 
-- Solubility 53, clarity 0.84 (2026-10-27)
+- Solubility 55, clarity 0.84 (2026-10-28)
 - Compression 0.18, change 0.31 (2026-10-27)
-- 45 directives, 44 kept, 1 less precise, 0 lost (2026-10-27)
+- 46 directives, 46 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

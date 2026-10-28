@@ -20,9 +20,9 @@ Counter-examples, where "Is" is not used:
 
 ## Compression
 
-- Solubility 67, clarity 0.46 (2026-10-24)
+- Solubility 65, clarity 0.44 (2026-10-28)
 - Compression 0.05, change 0.29 (2026-10-24)
-- 6 directives, 6 kept, 0 less precise, 0 lost (2026-10-24)
+- 5 directives, 4 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

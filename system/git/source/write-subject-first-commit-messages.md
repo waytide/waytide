@@ -37,13 +37,12 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 15. **The subject's length is the a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule's.** That rule caps the subject at 50 characters and wraps the body at 72.
 16. **Split the commit when the subject will not fit.**
 17. Do not drop the software subject and lead with a verb instead.
-18. **Why:** the log records the software's history and is scanned, not read. Leading with the changed thing serves that and is easier to review.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.39, change 0.56, solubility 58 → 81, clarity 0.45 → 0.72, 15 directives, 15 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 81 → 79, clarity 0.72 → 0.75; checked: 13 directives, 13 kept, 0 less precise, 0 lost
 
 ## History
 

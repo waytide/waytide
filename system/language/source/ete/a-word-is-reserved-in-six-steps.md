@@ -62,7 +62,10 @@ Reserve the word and stop there. Conform existing prose to it only where that is
 28. A reservation settles what the word means in Waytide's prose from that point on.
 29. Replacing another word with the reserved word where it already stands is a separate instruction, asked for separately.
 30. Do not conform existing prose until that separate instruction is given.
-31. **Why:** without the stated sequence, a writer picks a category by feel, and the ETE categories absorb every hard word. An ETE category is a departure from the standard, taken only where the standard has nothing.
+
+## Compression
+
+- 2026-10-28, revised: Why points removed, solubility 65, clarity 0.77; checked: 19 directives, 18 kept, 1 less precise, 0 lost
 
 Related:
 

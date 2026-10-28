@@ -152,7 +152,6 @@ Write the state line as `Active` when the record is written, and update it as th
 7. The filename also takes the state suffix.
 8. End the file with the provenance footer.
 9. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
-10. **Why:** experiments and features share one lifecycle, and differ only by question against intent, which the tag states. One convention avoids wording drifting between duplicate rules.
 
 ## Compression
 
@@ -162,6 +161,7 @@ Write the state line as `Active` when the record is written, and update it as th
 - 2026-10-27, revised: Active is the in-progress state; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: `[experiment]` and `[feature]` are no longer called reserved tags, a term the engineer settled; not checked
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 46 → 46, clarity 0.78 → 0.79; checked: 55 directives, 54 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 46 → 46, clarity 0.79 → 0.79; checked: 41 directives, 41 kept, 0 less precise, 0 lost
 
 ## History
 

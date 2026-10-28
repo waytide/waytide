@@ -67,12 +67,12 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 3. Once a candidate is accepted, show the implementation first, ahead of the test and the feature's output.
 4. Show the test and the feature's output with the implementation, per the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 5. Do not advance to naming before the implementation is on screen.
-6. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.52, solubility 36 → 52, clarity 0.43 → 0.52, 13 directives, 13 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 47, clarity 0.52 → 0.50; checked: 18 directives, 17 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 47 → 50, clarity 0.50 → 0.47; checked: 14 directives, 14 kept, 0 less precise, 0 lost
 
 ## History
 

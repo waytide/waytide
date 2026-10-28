@@ -15,9 +15,9 @@ Tests serve two different purposes in two different processes, and conflating th
 
 ## Compression
 
-- Solubility 85, clarity 0.86 (2026-10-24)
+- Solubility 86, clarity 0.89 (2026-10-28)
 - Compression 0.36, change 0.64 (2026-10-24)
-- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-27)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

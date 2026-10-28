@@ -102,13 +102,13 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 4. In a `[suspended]` entry, name what the suspension cost and what else changed. See the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
 5. Drop a removed rule from every `Related:` list. Do not mark it, such as with `(deleted)`.
 6. The log entry is the durable trace of the removal. An item is never deleted. Its state changes and its record is kept.
-7. **Why:** the rules are the project's durable, in-repo conventions, committed with the code and read fresh each session, so they stay authoritative and current. One rule per file keeps each convention readable, referenceable, and revisable. Separating installed packages from local rules means refreshing a package never touches a local rule.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.09, change 0.49, solubility 26 → 50, clarity 0.38 → 0.81, 49 directives, 49 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-10-25, revised: point 2 takes the new wording, that the system directory holds the rules and what packages them; not checked
 - 2026-10-27, re-checked: 49 directives, 47 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 50 → 47, clarity 0.81 → 0.79; checked: 44 directives, 44 kept, 0 less precise, 0 lost
 
 ## History
 

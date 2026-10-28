@@ -22,9 +22,9 @@ Naming an error test for its behavior rather than a value comparison is fully co
 
 ## Compression
 
-- Solubility 86, clarity 0.81 (2026-10-24)
+- Solubility 89, clarity 0.90 (2026-10-28)
 - Compression 0.33, change 0.66 (2026-10-24)
-- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-27)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

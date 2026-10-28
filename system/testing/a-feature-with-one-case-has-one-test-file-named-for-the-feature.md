@@ -14,9 +14,9 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 ## Compression
 
-- Solubility 88, clarity 0.85 (2026-10-24)
+- Solubility 88, clarity 0.85 (2026-10-28)
 - Compression 0.04, change 0.45 (2026-10-24)
-- 11 directives, 10 kept, 1 less precise, 0 lost (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

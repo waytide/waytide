@@ -32,9 +32,9 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 
 ## Compression
 
-- Solubility 75, clarity 0.86 (2026-10-24)
+- Solubility 76, clarity 0.87 (2026-10-28)
 - Compression 0.28, change 0.67 (2026-10-24)
-- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

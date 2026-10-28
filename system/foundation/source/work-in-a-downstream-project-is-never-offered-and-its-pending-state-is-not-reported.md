@@ -61,12 +61,12 @@ Carry out any of that when the engineer asks for it, and report what happened on
 6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
 7. Raising downstream state unbidden stays forbidden.
 8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
-9. **Why:** the engineer decides when other repositories move, and a package change does not reveal that decision. A report is where this fails, because an agent told not to ask still closes its summary with what it did not do.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.30, change 0.53, solubility 34 → 66, clarity 0.29 → 0.68, 17 directives, 17 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 66 → 62, clarity 0.68 → 0.68; checked: 15 directives, 14 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 62 → 67, clarity 0.68 → 0.70; checked: 15 directives, 14 kept, 1 less precise, 0 lost
 
 ## History
 

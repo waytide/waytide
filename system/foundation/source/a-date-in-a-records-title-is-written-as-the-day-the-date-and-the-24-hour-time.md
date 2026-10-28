@@ -42,11 +42,11 @@ Mon Jan 1 2026 18:06
 13. The provenance footer stays local time to the second with a zone abbreviation, such as `Fri Jul 24 2026 at 11:58:56 AM PT`, per the record-a-rules-authorship-in-a-provenance-footer rule.
 14. The title is the one exception to the a-time-value-carries-minutes-and-seconds rule. Every other datetime written into a file carries seconds.
 15. The exception is narrow and covers only the title's date.
-16. **Why:** A title is read first and is how a record is referred to, so its date must be compact yet distinguish records written hours apart. A title appears once per file, so nothing collides with it, and the filename already carries the exact UTC instant.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.41, change 0.71, solubility 53 → 75, clarity 0.49 → 0.67, 19 directives, 19 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 75 → 76, clarity 0.67 → 0.69; checked: 13 directives, 13 kept, 0 less precise, 0 lost
 
 ## History
 

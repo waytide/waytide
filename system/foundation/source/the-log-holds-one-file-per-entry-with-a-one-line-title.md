@@ -60,14 +60,13 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 6. Never write that summary to a file.
 7. Give it in the response instead.
 
-8. **Why:** a project's decisions are easy to lose and expensive to reconstruct. A log of short entries, one file each, append-only and committed with the code, keeps a complete, skimmable, durable record.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.60, solubility 34 → 65, clarity 0.26 → 0.70, 30 directives, 30 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: point 9 takes "An untagged entry with no body is one line"; not checked
 - 2026-10-27, re-checked: 24 directives, 24 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 65 → 62, clarity 0.70 → 0.70; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 
 ## History
 

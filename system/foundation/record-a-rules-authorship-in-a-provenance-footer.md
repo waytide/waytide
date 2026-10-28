@@ -35,9 +35,9 @@ Changed by <other name> on <datetime>
 
 ## Compression
 
-- Solubility 79, clarity 0.75 (2026-10-24)
+- Solubility 79, clarity 0.76 (2026-10-28)
 - Compression 0.29, change 0.51 (2026-10-24)
-- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

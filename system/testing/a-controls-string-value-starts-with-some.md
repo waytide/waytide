@@ -10,9 +10,9 @@ This parallels the constant-name convention, where example names are `"SomeModul
 
 ## Compression
 
-- Solubility 92, clarity 0.89 (2026-10-24)
+- Solubility 92, clarity 0.88 (2026-10-28)
 - Compression 0.21, change 0.58 (2026-10-24)
-- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-24)
+- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

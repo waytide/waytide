@@ -37,9 +37,9 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 
 ## Compression
 
-- Solubility 69, clarity 0.67 (2026-10-24)
+- Solubility 72, clarity 0.80 (2026-10-28)
 - Compression 0.34, change 0.60 (2026-10-24)
-- 22 directives, 9 kept, 12 less precise, 1 lost (2026-10-27)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

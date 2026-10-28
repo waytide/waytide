@@ -78,8 +78,6 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 
 1. Every commit written before 2026-08-18 stands as written.
 2. Do not revise a commit message already written to suit a later convention.
-3. **Why:** git's tooling is built around these numbers, so messages written to them read as written everywhere. The subject limit also exposes an oversized commit while it is being written, when splitting is cheapest.
-
 
 ## Compression
 
@@ -87,6 +85,7 @@ Wrapping the body in the message itself rather than leaving it to the terminal k
 - 2026-10-23, revised: truncation is for a journal entry alone; not checked
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
 - 2026-10-27, re-checked: 16 directives, 16 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 72 → 78, clarity 0.76 → 0.95; checked: 17 directives, 16 kept, 1 less precise, 0 lost
 
 ## History
 

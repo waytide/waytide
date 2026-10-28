@@ -32,7 +32,10 @@ The trade is not close. Conforming the terminology is bounded work with a real r
 12. Rewrite the prose where an approved word says the same thing.
 13. Leave the word in place where it is ordinary vocabulary.
 14. Record no entry for an ordinary-vocabulary word.
-15. **Why:** the terminology is what a reader has to learn to use the method, and a misleading term costs the reader the concept. Conforming ordinary vocabulary is unbounded work that only buys a claim of conformance.
+
+## Compression
+
+- 2026-10-28, revised: Why points removed, solubility 89, clarity 0.90; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 Related:
 

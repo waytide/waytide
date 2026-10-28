@@ -39,7 +39,10 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 17. Use the STE dictionary's approved meaning where it serves.
 18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
 19. Reserve the word in an ETE category only where neither serves.
-20. **Why:** a reader who meets an approved word believes they know it, and nothing in the sentence says otherwise. The other choice, a recast, would cost a settled term such as *the loop* in exchange for conformance on one word.
+
+## Compression
+
+- 2026-10-28, revised: Why points removed, solubility 87, clarity 0.92; checked: 7 directives, 7 kept, 0 less precise, 0 lost
 
 ## History
 

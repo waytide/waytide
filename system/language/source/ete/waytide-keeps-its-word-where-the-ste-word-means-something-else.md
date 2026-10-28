@@ -72,8 +72,10 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 30. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
 31. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
 32. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
-33. **Why:** the dictionary is right about the ordinary word, and not about a term Waytide coined for a concept the standard never addressed. Settling once which decides, and when, keeps a writer from choosing a worse word out of deference.
 
+## Compression
+
+- 2026-10-28, revised: Why points removed, solubility 64, clarity 0.83; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

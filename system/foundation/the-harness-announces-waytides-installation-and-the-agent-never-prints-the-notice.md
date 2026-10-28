@@ -180,9 +180,9 @@ Keep the engineer's own segments separated by the middle dot. Set the trailing W
 
 ## Compression
 
-- Solubility 32, clarity 0.58 (2026-10-21)
+- Solubility 39, clarity 0.75 (2026-10-28)
 - Compression 0.70, change 0.91 (2026-10-22)
-- 72 directives, 70 kept, 2 less precise, 0 lost (2026-10-27)
+- 75 directives, 74 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

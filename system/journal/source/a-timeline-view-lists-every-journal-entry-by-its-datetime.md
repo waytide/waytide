@@ -33,11 +33,11 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 13. There is no `TIMELINE.md`, and none is written.
 14. Write nothing to a file.
 15. The view is a projection, in the sense of the foundation package's vocabulary. It reads the entries without destroying them and is regenerated, not maintained.
-16. **Why:** the timeline only orders and renders entries already on disk. A stored copy can only drift from them, while a computed view cannot be stale.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.44, change 0.64, solubility 52 → 83, clarity 0.39 → 0.78, 15 directives, 15 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 83 → 80, clarity 0.78 → 0.78; checked: 12 directives, 12 kept, 0 less precise, 0 lost
 
 ## History
 

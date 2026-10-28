@@ -198,11 +198,11 @@ end
 32. When writing or reading a test, look at the controls first, because their values are named rather than described.
 33. Do not wrap a precondition in a `test` block. Do not name it, and do not bind its operand.
 34. Do not write a deciding factor as a `comment` in place of a precondition.
-35. **Why:** The controls convention hides how example values are built, so the factors that decide an outcome are often the least visible ones. A test with invisible deciding factors cannot be read, and it can pass without exercising what it names. An assertion is checked where a comment is not. Keeping a precondition a bare assertion, not a named test, keeps it distinct from a claim about how the unit behaves.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.32, change 0.58, solubility 33 → 44, clarity 0.64 → 0.76, 27 directives, 27 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 44 → 45, clarity 0.76 → 0.76; checked: 17 directives, 17 kept, 0 less precise, 0 lost
 
 ## History
 

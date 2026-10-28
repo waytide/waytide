@@ -40,9 +40,9 @@ The pattern, abstracted:
 
 ## Compression
 
-- Solubility 82, clarity 0.89 (2026-10-24)
+- Solubility 84, clarity 0.91 (2026-10-28)
 - Compression 0.26, change 0.50 (2026-10-24)
-- 20 directives, 20 kept, 0 less precise, 0 lost (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -69,13 +69,13 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 3. A log entry may carry other tags beside this one.
 4. What `[suspended]` marks is fixed here.
 5. The set of suspensions is read from this tag.
-6. **Why:** a former undo queue under `waytide/local/suspended/` held eleven suspended things and none was restored. Its cost was paid on every suspension. The log entry guards against a thing returning reconstructed from memory, naming what was stopped, why, and what else changed, while git holds the text.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.52, solubility 39 → 70, clarity 0.31 → 0.76, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: `[suspended]` is no longer called a reserved tag, a term the engineer settled; not checked
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 70 → 67, clarity 0.76 → 0.73; checked: 20 directives, 17 kept, 3 less precise, 0 lost, 4 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 67 → 73, clarity 0.73 → 0.76; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -18,6 +18,10 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 
 **How to apply:** use the STE dictionary's approved meaning where it serves. Recast the sentence under STE Rule 9.1 where a different word serves. Reserve the word in an ETE category only where neither does. Quote the approved meaning in the entry, and state why it does not carry Waytide's.
 
+## Compression
+
+- 7 directives, 7 kept, 0 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the ete-declares-its-own-categories rule — the first departure, and the only other one

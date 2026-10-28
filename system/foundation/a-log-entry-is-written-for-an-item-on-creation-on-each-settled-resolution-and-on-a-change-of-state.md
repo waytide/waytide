@@ -56,9 +56,9 @@ Name the record in the entry, and say what happened to it. State what the record
 
 ## Compression
 
-- Solubility 44, clarity 0.47 (2026-10-22)
+- Solubility 51, clarity 0.70 (2026-10-28)
 - Compression 0.58, change 0.80 (2026-10-22)
-- 19 directives, 16 kept, 3 less precise, 0 lost (2026-10-22)
+- 20 directives, 18 kept, 2 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -80,12 +80,12 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 3. Where the hinge has a real second implementation, surface that option.
 4. The cycle is not a substitute for searching for another implementation.
 5. Do not manufacture cosmetic options to reach the two-option floor.
-6. **Why:** whether to drive an implementation through a failing test is a subtle, load-bearing judgment about that unit. Offering it as a candidate lets the engineer compare real alternatives rather than ratify one proposal.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.36, change 0.64, solubility 40 → 62, clarity 0.61 → 0.82, 16 directives, 16 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 62 → 58, clarity 0.82 → 0.81; checked: 19 directives, 16 kept, 2 less precise, 1 lost, 4 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 58 → 59, clarity 0.81 → 0.81; checked: 17 directives, 17 kept, 0 less precise, 0 lost
 
 ## History
 

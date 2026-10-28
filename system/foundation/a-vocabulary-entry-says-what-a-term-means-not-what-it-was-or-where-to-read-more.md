@@ -38,9 +38,9 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 
 ## Compression
 
-- Solubility 70, clarity 0.67 (2026-10-24)
+- Solubility 64, clarity 0.58 (2026-10-28)
 - Compression 0.48, change 0.72 (2026-10-24)
-- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

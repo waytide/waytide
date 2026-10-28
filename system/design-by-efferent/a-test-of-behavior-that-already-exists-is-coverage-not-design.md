@@ -16,9 +16,9 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 
 ## Compression
 
-- Solubility 81, clarity 0.75 (2026-10-24)
+- Solubility 82, clarity 0.81 (2026-10-28)
 - Compression 0.22, change 0.64 (2026-10-24)
-- 10 directives, 7 kept, 3 less precise, 0 lost (2026-10-27)
+- 10 directives, 9 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

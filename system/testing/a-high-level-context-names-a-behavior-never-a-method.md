@@ -34,9 +34,9 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 
 ## Compression
 
-- Solubility 81, clarity 0.88 (2026-10-24)
+- Solubility 78, clarity 0.87 (2026-10-28)
 - Compression 0.42, change 0.63 (2026-10-24)
-- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+- 14 directives, 13 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

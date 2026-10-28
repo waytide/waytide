@@ -72,13 +72,13 @@ When the state changes, rename it again. When a reversible state word is taken b
 5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out.
 6. A reference to a record omits its state suffix and extension, and keeps the prefix and name. A rename then breaks no reference.
 7. Leave historical records as written. A reader following an unresolvable path uses git.
-8. **Why:** a record's state is most often wanted from a directory listing, without opening the record. The mutating filename is the cost, so the suffix is confined to records carrying a state line.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.44, change 0.69, solubility 32 → 75, clarity 0.38 → 0.89, 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: every item and implementation record carries a suffix; checked: 24 directives, 23 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 75 → 71, clarity 0.89 → 0.87; checked: 23 directives, 22 kept, 1 less precise, 0 lost
 
 ## History
 

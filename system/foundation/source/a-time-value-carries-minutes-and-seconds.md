@@ -58,13 +58,13 @@ Related:
 16. This rule applies to new values only. Leave coarser values already written as they are.
 17. When specifying a new datetime format that includes a time of day, specify it to seconds.
 18. This applies to rules, working-state artifacts, log entries, and any other file, except where this rule names an exception.
-19. **Why:** a timestamp is useful only while its resolution is finer than the rate of what it records. At hour resolution, footer edits in the same hour produced identical lines, so they went unwritten.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 30 → 78, clarity 0.26 → 0.77, 14 directives, 14 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: point 18 takes "except where this rule names an exception"; not checked
 - 2026-10-27, re-checked: 14 directives, 13 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 78 → 69, clarity 0.77 → 0.75; checked: 14 directives, 14 kept, 0 less precise, 0 lost
 
 ---
 

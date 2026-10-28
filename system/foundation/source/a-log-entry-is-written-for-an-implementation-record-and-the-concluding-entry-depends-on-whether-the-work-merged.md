@@ -76,7 +76,6 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 2. Those confirmations are the working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion. They are recorded in the record.
 3. Write no log entry for a turn of the work.
 4. The hinges, the cycles, and the runs belong to the loop record and the implementation record.
-5. **Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The log answers what this project has decided, for a reader who holds nothing.
 
 ## Compression
 
@@ -84,6 +83,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 - 2026-10-25, revised: points 2 and 3 take the new wording, that the merge decides the concluding entry; not checked
 - 2026-10-27, re-checked: 18 directives, 18 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 62 → 54, clarity 0.80 → 0.72; checked: 14 directives, 13 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 54 → 58, clarity 0.72 → 0.70; checked: 20 directives, 20 kept, 0 less precise, 0 lost
 
 ## History
 
