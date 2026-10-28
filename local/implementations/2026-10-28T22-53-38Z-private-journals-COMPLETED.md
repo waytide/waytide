@@ -35,7 +35,7 @@
 | Working location | Branch and worktree, by the engineer's instruction | Wed Oct 28 2026 at 3:53:38 PM PT |
 | Participation | Attended | Wed Oct 28 2026 at 3:53:38 PM PT |
 | Vocabulary category | Shared journal and private journal reserved, ETE agent artifacts | Wed Oct 28 2026 at 4:36:21 PM PT |
-| Logging a directed change to a private entry | Not logged | Wed Oct 28 2026 at 4:43:00 PM PT |
+| Logging about private entries | Not logged, for anything about a private entry | Wed Oct 28 2026 at 4:43:41 PM PT |
 | Pending item changes | Committed on `master` before the branch, as `e10ab69` | Wed Oct 28 2026 at 3:53:38 PM PT |
 
 ---
