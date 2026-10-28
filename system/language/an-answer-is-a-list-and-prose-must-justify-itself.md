@@ -69,9 +69,9 @@ Write prose only where the answer is a sentence or two. Do not reach for it beca
 
 ## Compression
 
-- Solubility 53, clarity 0.78 (2026-10-24)
+- Solubility 54, clarity 0.78 (2026-10-28)
 - Compression 0.49, change 0.71 (2026-10-24)
-- 22 directives, 22 kept, 0 less precise, 0 lost (2026-10-24)
+- 22 directives, 22 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

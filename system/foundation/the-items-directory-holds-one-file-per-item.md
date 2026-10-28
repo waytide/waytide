@@ -88,9 +88,9 @@ Change the state as the item reaches another word, renaming the file with it, an
 
 ## Compression
 
-- Solubility 46, clarity 0.55 (2026-10-21)
+- Solubility 45, clarity 0.71 (2026-10-28)
 - Compression 0.60, change 0.83 (2026-10-22)
-- 71 directives, 69 kept, 2 less precise, 0 lost (2026-10-27)
+- 57 directives, 57 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

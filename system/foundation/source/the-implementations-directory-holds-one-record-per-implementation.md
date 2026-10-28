@@ -91,7 +91,7 @@ Write the state line as `Active` when the record is written, and update it as th
 4. The setup also includes a `**Tags:**` line carrying `[experiment]` or `[feature]`.
 5. An `[experiment]` states a forecast of what is expected to happen, before the work.
 6. As the work proceeds, an experiment records what actually happened against the forecast.
-7. An experiment then records the findings and any post-hoc misses.
+7. An experiment then records the findings and any post-hoc misses, including outcomes the forecast did not account for.
 8. A `[feature]` states no forecast, no comparison against one, and no findings or misses.
 9. Both kinds record the confirmations the lifecycle required, so the work's authority is auditable.
 10. Both record these confirmations: the working-location selection at the start, and the attended-or-unattended selection at the start.
@@ -153,12 +153,6 @@ Write the state line as `Active` when the record is written, and update it as th
 8. End the file with the provenance footer.
 9. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
-## How to apply
-
-1. Record every implementation here, tagged `[experiment]` or `[feature]`.
-2. Update the state line as the state changes.
-3. **Why:** experiments and features share one lifecycle, and differ only by question against intent, which the tag states. One convention avoids wording drifting between duplicate rules.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.12, change 0.48, solubility 22 → 46, clarity 0.32 → 0.78, 54 directives, 54 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
@@ -166,6 +160,8 @@ Write the state line as `Active` when the record is written, and update it as th
 - 2026-10-27, re-checked: 58 directives, 58 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: Active is the in-progress state; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: `[experiment]` and `[feature]` are no longer called reserved tags, a term the engineer settled; not checked
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 46 → 46, clarity 0.78 → 0.79; checked: 55 directives, 54 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 46 → 46, clarity 0.79 → 0.79; checked: 41 directives, 41 kept, 0 less precise, 0 lost
 
 ## History
 

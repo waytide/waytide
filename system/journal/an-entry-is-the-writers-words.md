@@ -30,9 +30,9 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 
 ## Compression
 
-- Solubility 74, clarity 0.75 (2026-10-24)
+- Solubility 70, clarity 0.71 (2026-10-28)
 - Compression 0.36, change 0.60 (2026-10-24)
-- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

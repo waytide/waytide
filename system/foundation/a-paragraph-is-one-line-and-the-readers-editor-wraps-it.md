@@ -28,9 +28,9 @@ Keep a heading, a list item, a table row, a blockquote line, a horizontal rule, 
 
 ## Compression
 
-- Solubility 92, clarity 0.93 (2026-10-24)
+- Solubility 94, clarity 0.97 (2026-10-28)
 - Compression 0.55, change 0.75 (2026-10-24)
-- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

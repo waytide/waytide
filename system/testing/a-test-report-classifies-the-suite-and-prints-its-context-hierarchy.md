@@ -31,6 +31,6 @@ Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree`
 
 ## Compression
 
-- Solubility 77, clarity 0.83 (2026-10-24)
+- Solubility 79, clarity 0.84 (2026-10-28)
 - Compression 0.12, change 0.43 (2026-10-24)
-- 26 directives, 26 kept, 0 less precise, 0 lost (2026-10-27)
+- 26 directives, 26 kept, 0 less precise, 0 lost (2026-10-28)

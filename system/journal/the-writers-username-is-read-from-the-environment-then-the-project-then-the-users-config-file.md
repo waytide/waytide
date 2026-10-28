@@ -100,9 +100,9 @@ Never read git for identity. Never invent a username, and never compute a displa
 
 ## Compression
 
-- Solubility 52, clarity 0.92 (2026-10-24)
+- Solubility 55, clarity 0.93 (2026-10-28)
 - Compression 0.23, change 0.50 (2026-10-24)
-- 52 directives, 52 kept, 0 less precise, 0 lost (2026-10-24)
+- 49 directives, 49 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

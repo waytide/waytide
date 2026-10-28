@@ -28,9 +28,9 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 
 ## Compression
 
-- Solubility 73, clarity 0.82 (2026-10-24)
+- Solubility 70, clarity 0.85 (2026-10-28)
 - Compression 0.19, change 0.55 (2026-10-24)
-- 14 directives, 12 kept, 2 less precise, 0 lost (2026-10-27)
+- 13 directives, 11 kept, 2 less precise, 0 lost (2026-10-28)
 
 Related:
 

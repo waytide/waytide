@@ -76,11 +76,11 @@ Where a project has no automated suite, run nothing and report nothing missing.
 4. Do not report the missing automated suite as a failure, or as anything missing.
 5. Weigh the commit decision on what the project does have.
 6. Run-suite-before-commit is then satisfied vacuously, not violated.
-7. **Why:** Keeping the tests in separate directories keeps the automated suite mechanically true, so it either passes or fails. It also gives the tests that need a person a place to live, so they are not deleted for not fitting. The engineer's attention is the scarce resource, so a test that spends it runs only when the engineer says so.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.38, change 0.65, solubility 26 → 70, clarity 0.28 → 0.85, 23 directives, 22 kept, 1 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 70 → 73, clarity 0.85 → 0.90; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -48,9 +48,9 @@ Each is proposed and accepted before the next, per the the-hinge-cycle-is-actuat
 
 ## Compression
 
-- Solubility 59, clarity 0.76 (2026-10-24)
+- Solubility 61, clarity 0.76 (2026-10-28)
 - Compression 0.19, change 0.52 (2026-10-24)
-- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-24)
+- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

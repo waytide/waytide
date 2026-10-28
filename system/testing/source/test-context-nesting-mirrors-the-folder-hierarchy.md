@@ -34,11 +34,11 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload R
 12. Nest the file's contexts in this order: one `context` per folder segment, then the scenario contexts, then the test blocks.
 13. Each test block may have an optional context that scopes a local variable or a comment.
 14. Keep the suite consistent with the existing `upload/` tests.
-15. **Why:** the test output and the file tree read as the same structure, with each outcome placed under its path segments and its scenario.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.07, change 0.52, solubility 87 → 95, clarity 0.84 → 1.00, 9 directives, 9 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 95 → 95, clarity 1.00 → 1.00; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

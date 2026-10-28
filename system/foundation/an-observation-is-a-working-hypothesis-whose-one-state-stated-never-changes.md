@@ -40,9 +40,9 @@ Write a later observation where the thinking moves, and leave the earlier one as
 
 ## Compression
 
-- Solubility 61, clarity 0.70 (2026-10-24)
+- Solubility 59, clarity 0.75 (2026-10-28)
 - Compression 0.34, change 0.56 (2026-10-24)
-- 22 directives, 21 kept, 1 less precise, 0 lost (2026-10-27)
+- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

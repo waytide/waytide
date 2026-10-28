@@ -10,9 +10,9 @@ This is the title-and-body counterpart of the journal-entries-are-recorded-in-th
 
 ## Compression
 
-- Solubility 85, clarity 0.73 (2026-10-24)
+- Solubility 82, clarity 0.69 (2026-10-28)
 - Compression 0.11, change 0.45 (2026-10-24)
-- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

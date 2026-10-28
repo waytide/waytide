@@ -49,11 +49,11 @@ Where a fact is about the engineer rather than the project, it is outside this r
 5. Ask about such a preference at once, per the ask-at-once-when-the-engineer-expresses-a-preference rule, rather than holding it.
 6. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 7. Harness working state is not project context and is no substitute for an artifact.
-8. **Why:** conventions are committed with the code and read fresh each session, not recalled. A memory store is recall: unreviewed, undiffable, invisible to all but its writer, and it drifts silently.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.42, change 0.66, solubility 44 → 68, clarity 0.41 → 0.61, 19 directives, 19 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 68 → 67, clarity 0.61 → 0.62; checked: 16 directives, 15 kept, 1 less precise, 0 lost
 
 ## History
 

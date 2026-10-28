@@ -22,9 +22,9 @@ When a precise word is missing, name the concept literally rather than reaching 
 
 ## Compression
 
-- Solubility 81, clarity 0.87 (2026-10-24)
+- Solubility 83, clarity 0.90 (2026-10-28)
 - Compression 0.26, change 0.63 (2026-10-24)
-- 22 directives, 21 kept, 1 less precise, 0 lost (2026-10-24)
+- 14 directives, 13 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

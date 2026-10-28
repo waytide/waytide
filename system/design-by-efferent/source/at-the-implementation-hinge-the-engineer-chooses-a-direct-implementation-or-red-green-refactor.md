@@ -33,7 +33,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 ## Compressed
 
-1. At the implementation hinge, the fourth of the five, put two candidates to the engineer.
+1. At the implementation hinge, the fourth of the five, put two candidates to the engineer through the selection UI.
 2. The first candidate is **a working implementation**: code that satisfies the test, written directly.
 3. The second candidate is **an implementation that lets the test fail**, followed by the complete **red, green, refactor** cycle.
 4. Both candidates answer the hinge's question: *how does this implementation come about*.
@@ -54,7 +54,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 ## The cycle is for the first implementation of a unit
 
 1. Offer the cycle only for new behavior being designed.
-2. Do not offer the cycle when covering behavior that already exists.
+2. Do not offer the cycle, or manufacture a red, when covering behavior that already exists. A red there breaks working code.
 3. When covering, the implementation hinge is degenerate. See the the-design-of-a-test-waits-at-the-hinges-coverage-included rule.
 4. Never offer the cycle and then refuse it; offer it only where it is available.
 
@@ -62,6 +62,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 
 1. The dbe-is-a-design-tool-not-a-testing-ritual rule rejects only the unchosen cycle, performed as ritual.
 2. An engineer selecting the cycle at a gate for this unit has made a design judgment, which that rule permits.
+3. Perform the cycle only where the engineer selected it at the gate for that unit, never as unchosen choreography.
 
 ## Refactor is part of the cycle
 
@@ -70,6 +71,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 3. Green makes the test pass.
 4. Refactor improves the design, with the test holding the behavior still.
 5. Never offer the cycle without refactor.
+6. Where the cycle is chosen, run it in order: the red, then the full suite, then green, then refactor.
 
 ## The second candidate is real
 
@@ -77,17 +79,13 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 2. Do not present a failing implementation as an option merely to reach the two-option floor.
 3. Where the hinge has a real second implementation, surface that option.
 4. The cycle is not a substitute for searching for another implementation.
-
-## How to apply
-
-1. At the implementation hinge for a unit's first implementation, offer the two candidates through the selection UI.
-2. Where the cycle is chosen, write the red only if its cause reaches no stable test.
-3. Then run the suite, then green, then refactor.
-4. **Why:** whether to drive an implementation through a failing test is a subtle, load-bearing judgment about that unit. Offering it as a candidate lets the engineer compare real alternatives rather than ratify one proposal.
+5. Do not manufacture cosmetic options to reach the two-option floor.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.36, change 0.64, solubility 40 → 62, clarity 0.61 → 0.82, 16 directives, 16 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 62 → 58, clarity 0.82 → 0.81; checked: 19 directives, 16 kept, 2 less precise, 1 lost, 4 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 58 → 59, clarity 0.81 → 0.81; checked: 17 directives, 17 kept, 0 less precise, 0 lost
 
 ## History
 

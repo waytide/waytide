@@ -121,11 +121,11 @@ For more detail than bullet points, ask for an expanded answer.
 8. Do not make the judgment stricter until there is proof that it needs to be.
 9. Two stricter forms are not adopted: appending the line to every list answer, or appending it above a length threshold.
 10. Either stricter form may be adopted if the judgment proves unreliable in use.
-11. **Why:** An agent writes prose without deciding to, and prose hides padding, comment, and unnamed back-references. A list puts each claim on its own line, so an empty claim shows. Putting the burden on prose, rather than stating a preference, keeps the rule in force across sessions.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.49, change 0.71, solubility 25 → 53, clarity 0.41 → 0.78, 22 directives, 22 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.78 → 0.78; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 
 ## History
 

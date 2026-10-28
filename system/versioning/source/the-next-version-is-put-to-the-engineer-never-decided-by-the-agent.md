@@ -48,11 +48,11 @@ Major  → 2.3.0.0   existing use may not survive
 11. The resulting version is shown too, since it is what will be written and committed.
 12. Offer candidates rather than asking the engineer for a version outright.
 13. Do not propose a version and ask for confirmation. The decision is put at a gate.
-14. **Why:** Which segment increases is a claim about other people's code, not derivable from the diff. A published version cannot be taken back, only superseded.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.55, change 0.75, solubility 58 → 85, clarity 0.58 → 0.80, 10 directives, 10 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 85 → 84, clarity 0.80 → 0.81; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 ## History
 

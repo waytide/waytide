@@ -219,13 +219,13 @@ Loading Waytide will take a few moments.
 54. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 55. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 56. The package set's absence is the ordinary case, not an omission.
-57. **Why:** An agent can skip a display it is told to print, or write it into its thinking, and nothing reports either. A harness-printed display does not depend on the agent. The package set alone needs markdown, so the agent prints it.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.44, change 0.74, solubility 18 → 53, clarity 0.35 → 0.90, 56 directives, 55 kept, 1 less precise, 0 lost, after 3 repairs, re-checked kept; directive 40 less precise, judged immaterial
 - 2026-10-25, revised: points 1, 14, and 18 take the new wording, that the package set prints after the display; not checked
 - 2026-10-27, re-checked: 53 directives, 51 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 53 → 52, clarity 0.90 → 0.90; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 
 ## History
 

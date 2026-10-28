@@ -14,9 +14,9 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 
 ## Compression
 
-- Solubility 65, clarity 0.70 (2026-10-24)
+- Solubility 62, clarity 0.70 (2026-10-28)
 - Compression 0.29, change 0.60 (2026-10-24)
-- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-27)
+- 21 directives, 21 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

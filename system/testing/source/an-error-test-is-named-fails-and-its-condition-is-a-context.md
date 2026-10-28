@@ -39,13 +39,13 @@ end
 6. Several conditions over the same actuation may sit as sibling `When …` contexts, each with its own `test "Fails"`.
 7. "Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals.
 8. An error test always takes an enclosing context, because the context carries the condition. The a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
-9. **Why:** an error outcome states "under condition X, the actuation fails." The scenario belongs in a context and the observed fact in the test. "Fails" names the behavior directly and keeps test names uniform.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.33, change 0.66, solubility 76 → 86, clarity 0.72 → 0.81, 10 directives, 9 kept, 1 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-24, revised: points 5 and 8 restated; checked: 2 less precise, 2 repairs, re-checked kept, restored directive 6's "may"
 - 2026-10-27, re-checked: 9 directives, 9 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 86 → 89, clarity 0.81 → 0.90; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -43,41 +43,32 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 4. The free-text option lets the human dictate the actuation outright, or open a chat to work out what it should be.
 5. The free-text option is mandatory and always present. It covers the case where the right shape is not among the options.
 6. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the two results it rests on.
+7. Present each candidate as it would read at the use site.
+8. Offer the candidates through the selection UI, which supplies the free-text option. Do not add a free-text option of your own. See the present-every-prompt rule.
+9. A chosen candidate becomes the cradle. Where the human writes their own instead, take that actuation or enter a dialogue.
+10. Settle the actuation before writing the test file. Do not proceed to the test body until it is settled.
+11. A lone candidate is presented as every hinge presents one, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
 ## A candidate varies what the use site states
 
-1. Two actuations are distinct candidates when a reader at the use site sees different words.
-2. Where the use site reads the same either way, the two are one candidate. Offering both pads the gate.
+1. Make the candidates genuinely distinct efferent shapes, not cosmetic variants. Two actuations are distinct candidates when a reader at the use site sees different words.
+2. Where the use site reads the same either way, the two are one candidate. Do not offer both. That pads the gate.
 3. An omitted argument is a candidate. `upload.(file)` beside `upload.(file, retries: 3)` is a real pair.
 4. The first makes the retry policy the object's own. The second makes every use site state the count.
 5. An absent parameter is an interface decision, not the lack of one. Do not discard the shorter shape as the other with something missing.
 6. A chained construction is not an actuation. `Upload.build(retries: 3).(file)` constructs and actuates in one expression.
-7. The actuation in it is `upload.(file)`, with the constructed object bound to an explaining variable on its own line.
+7. The actuation in it is `upload.(file)`, with the constructed object bound to an explaining variable on its own line, leaving no intermediate unbound.
 8. Do not offer a construction here. Construction belongs to the controls hinge.
 9. A varied receiver is not a candidate. `Upload.(file, retries: 3)` beside `upload.(file, retries: 3)` is one shape reached two ways.
 10. This hinge does not ask which interface carries the operation.
 11. To apply the test, hold the receiver constant and ask what the use site states.
 
-## How to apply
-
-1. At the first gate, generate a few genuinely distinct candidate actuations.
-2. Make them different efferent shapes, not cosmetic variants.
-3. Present each as it would read at the use site.
-4. Keep a shape that omits an argument.
-5. Drop a chained construction and a varied receiver.
-6. Offer the candidates through the selection UI, which supplies the free-text option. See the present-every-prompt rule.
-7. Do not add a free-text option of your own.
-8. If the human chooses a candidate, adopt it as the cradle.
-9. If the human writes their own instead, take that actuation or enter a dialogue.
-10. Settle the actuation before writing the test file.
-11. Do not proceed to the test body until the actuation is settled.
-12. A lone candidate is presented as every hinge presents one, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
-13. **Why:** The actuation is the highest-leverage hinge. Concrete alternatives make the human produce the answer, and the free-text option keeps the human above the AI's mean.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.37, change 0.54, solubility 30 → 56, clarity 0.43 → 0.76, 25 directives, 25 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 19 directives, 19 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 56 → 61, clarity 0.76 → 0.77; checked: 20 directives, 17 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 61 → 64, clarity 0.77 → 0.77; checked: 19 directives, 19 kept, 0 less precise, 0 lost
 
 ## History
 

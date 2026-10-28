@@ -72,11 +72,11 @@ Reducing resolution satisfies the two — the evidence survives, and what was no
 2. Rewriting that history is the engineer's decision, not a consequence of this rule.
 3. When a correction is made, tell the engineer what the edit did and did not accomplish. Say that the git history and any component repository still hold the removed content.
 4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
-5. **Why:** a record is left as written because it is evidence, but that does not extend to content the project had no standing to publish. Naming the engineer as the authority keeps an agent from either exposing something because records are immutable or scrubbing a record on a guess.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.28, change 0.60, solubility 43 → 64, clarity 0.49 → 0.68, 16 directives, 16 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 64 → 65, clarity 0.68 → 0.70; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

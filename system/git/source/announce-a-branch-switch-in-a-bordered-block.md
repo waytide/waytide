@@ -86,14 +86,13 @@ BRANCH SWITCHED
 5. The an-implementation-runs-on-a-branch-to-a-declared-end rule governs the worktree case.
 6. A merge, a commit, or a push does not move the working tree.
 7. Print no block for a merge, a commit, or a push.
-8. **Why:** a switch changes what every path means, and later reports never show where the work landed. A block that cannot be scrolled past prevents silent switches.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.46, change 0.62, solubility 65 → 80, clarity 0.74 → 0.75, 20 directives, 19 kept, 1 less precise, 0 lost
 - 2026-10-23, revised: the `=` border required, and a push named among the cases that print no block; not checked
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 80 → 84, clarity 0.75 → 0.86; checked: 13 directives, 13 kept, 0 less precise, 0 lost
 
 Related:
 

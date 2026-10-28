@@ -65,13 +65,13 @@ Word each option's own description *…then display this selection prompt again*
 26. Do not say that a lone candidate is the only possibility.
 27. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
 28. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
-29. **Why:** The selection UI makes responsibility transfer legibly and consistently, and it already supplies free text. The two-option floor pushes toward the real decision rather than a single proposal for approval. `Explain` handles a well-formed prompt the engineer does not understand. It must be an option because you cannot tell which of your own questions are unclear.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.56, change 0.78, solubility 33 → 69, clarity 0.54 → 0.85, 28 directives, 28 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: point 20 takes the new wording, that no candidate is dropped; not checked
 - 2026-10-27, re-checked: 31 directives, 30 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 69 → 69, clarity 0.85 → 0.90; checked: 27 directives, 27 kept, 0 less precise, 0 lost
 
 ## History
 

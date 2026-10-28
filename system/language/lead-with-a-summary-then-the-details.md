@@ -14,9 +14,9 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 
 ## Compression
 
-- Solubility 94, clarity 0.89 (2026-10-24)
+- Solubility 98, clarity 0.98 (2026-10-28)
 - Compression 0.20, change 0.44 (2026-10-24)
-- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

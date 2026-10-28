@@ -30,9 +30,9 @@ Write no reason that was not given. Do not reproduce the plan, the increments, o
 
 ## Compression
 
-- Solubility 75, clarity 0.67 (2026-10-24)
+- Solubility 68, clarity 0.57 (2026-10-28)
 - Compression 0.55, change 0.79 (2026-10-24)
-- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

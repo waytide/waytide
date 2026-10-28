@@ -34,11 +34,11 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 16. For a Ruby project, the `ext/ruby-lang` package's rule on running the suite settles the script.
 17. This rule fixes only what the tree is and where it is derived from.
 18. On a "test tree" request, run the project's durable tree script and present its output.
-19. **Why:** the de-duped tree is the readable, whole-suite view of feature and outcome structure, without per-file repetition. Expanded dynamic names also surface loop-generated cases.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.19, change 0.44, solubility 75 → 84, clarity 0.76 → 0.86, 16 directives, 16 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 84 → 84, clarity 0.86 → 0.85; checked: 13 directives, 13 kept, 0 less precise, 0 lost
 
 ## History
 

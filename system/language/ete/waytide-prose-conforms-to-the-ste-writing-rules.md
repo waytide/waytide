@@ -50,6 +50,10 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 
 **How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary, then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use, add it to the table and add the phrase that met it.
 
+## Compression
+
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory

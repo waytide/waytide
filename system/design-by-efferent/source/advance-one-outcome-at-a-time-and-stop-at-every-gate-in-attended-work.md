@@ -30,13 +30,13 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 16. Never write several test files at once, in either mode.
 17. To finish an unnamed test, present candidate names as options through the selection UI.
 18. Then apply the name the human chose or dictated.
-19. **Why:** Batching bypasses the gates where the human's judgment acts, and mistakes accumulate unreviewed. The outcome-context name is a small contract on what the test establishes, and the best name may be one only the human can produce.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.19, change 0.51, solubility 72 → 80, clarity 0.68 → 0.77, 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: points 2 and 6 name attended and unattended work; not checked
 - 2026-10-27, re-checked: 16 directives, 15 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 80 → 79, clarity 0.77 → 0.76; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
 

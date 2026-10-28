@@ -105,9 +105,9 @@ An actuation's completion may be the thing being established, rather than the gr
 
 ## Compression
 
-- Solubility 44, clarity 0.76 (2026-10-24)
+- Solubility 45, clarity 0.76 (2026-10-28)
 - Compression 0.32, change 0.58 (2026-10-24)
-- 27 directives, 27 kept, 0 less precise, 0 lost (2026-10-24)
+- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

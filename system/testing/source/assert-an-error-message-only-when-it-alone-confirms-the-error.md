@@ -22,7 +22,7 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 5. The message is the sole discriminator in only one situation: the same error class can be raised from multiple sites reachable in the same execution path.
 6. In that situation, the class cannot show which site raised. The error may come from the intended condition or from an incidental one elsewhere in the path.
 
-## How to apply
+## Deciding for each `assert_raises`
 
 1. For each `assert_raises`, ask: *can this exact error class be raised from more than one site along this actuation's execution?*
 2. If no, class and condition suffice. Assert no message.
@@ -31,11 +31,12 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 5. If yes, the message is the discriminator. Assert its exact content.
 6. Example of yes: a multi-part `Upload#call` can raise `Upload::Error` at the head part or the tail part. The message (which part, which response) confirms the intended failure.
 7. Example of yes: a two-step upload can raise `Upload::Error` from the initial post's "rejected" site or the finalize step's "rejected" site.
-8. **Why:** error tests stay about error correctness, not presentation. This gives a precise, testable criterion for when library-specific error classes are "self-evidently the right failure and need no message".
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.20, change 0.47, solubility 57 → 85, clarity 0.39 → 0.87, 8 directives, 8 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 85 → 82, clarity 0.87 → 0.87; checked: 5 directives, 5 kept, 0 less precise, 0 lost, no repair
+- 2026-10-28, revised: Why points removed, solubility 82 → 86, clarity 0.87 → 0.88; checked: 6 directives, 6 kept, 0 less precise, 0 lost
 
 ## History
 

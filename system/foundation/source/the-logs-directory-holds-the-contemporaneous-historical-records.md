@@ -55,13 +55,13 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 2. Foundation's naming of `logs/loops/` is only a citation.
 3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
-5. **Why:** Grouping the records puts the difference between a chronological account and a statement of current state into the path. It also gives a later contemporaneous, historical record an obvious place.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.19, change 0.55, solubility 40 → 73, clarity 0.27 → 0.82, 14 directives, 14 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-27, re-checked: 14 directives, 12 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 73 → 70, clarity 0.82 → 0.85; checked: 13 directives, 11 kept, 2 less precise, 0 lost
 
 ## History
 

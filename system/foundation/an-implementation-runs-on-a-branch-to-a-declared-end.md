@@ -109,9 +109,9 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 ## Compression
 
-- Solubility 42, clarity 0.76 (2026-10-22)
+- Solubility 41, clarity 0.79 (2026-10-28)
 - Compression 0.43, change 0.63 (2026-10-22)
-- 88 directives, 75 kept, 12 less precise, 1 lost (2026-10-27)
+- 85 directives, 84 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

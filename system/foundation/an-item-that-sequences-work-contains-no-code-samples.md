@@ -14,6 +14,6 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 
 ## Compression
 
-- Solubility 92, clarity 0.87 (2026-10-24)
+- Solubility 91, clarity 0.86 (2026-10-28)
 - Compression 0.22, change 0.59 (2026-10-24)
-- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)

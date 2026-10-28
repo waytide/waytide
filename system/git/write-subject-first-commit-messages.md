@@ -20,9 +20,9 @@ Engineers gravitate toward recounting their exploits — "Fixed the parser", "Ad
 
 ## Compression
 
-- Solubility 81, clarity 0.72 (2026-10-22)
+- Solubility 79, clarity 0.75 (2026-10-28)
 - Compression 0.39, change 0.56 (2026-10-22)
-- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-22)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

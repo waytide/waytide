@@ -74,7 +74,7 @@ One file per entry rather than one per day follows the convention every other da
 
 ## Entries
 
-1. One file is one entry.
+1. One file is one entry. To write one, resolve the active writer, then write the entry as a new file in `waytide/local/journal/<username>/`.
 2. A day can hold several entries, each a separate file, in the order written.
 3. An entry takes a datetime prefix in the writer's local time, of the form `YYYY-MM-DDTHH-MM-<name>.md`.
 4. The name is dash-separated and lower-case, and says what the entry is about.
@@ -98,8 +98,8 @@ One file per entry rather than one per day follows the convention every other da
 
 1. An entry carries the provenance footer, per foundation's working-state-artifacts-carry-a-provenance-footer rule.
 2. The footer carries an `Authored by` line and no `Changed by` line.
-3. An entry is not corrected when the writer changes their mind. The later thought is a later entry.
-4. Two things reach an existing entry: disclosure, governed by foundation's disclosure rule, and a change the writer directs, governed by the an-entry-is-the-writers-words rule.
+3. An entry is not edited once written, and is not corrected when the writer changes their mind. The later thought is a later entry.
+4. Only two things reach an existing entry: disclosure, governed by foundation's disclosure rule, and a change the writer directs to their own entry, governed by the an-entry-is-the-writers-words rule.
 5. For both, the footer stays as it is.
 6. Each is recorded in the log, not in the entry.
 
@@ -108,7 +108,7 @@ One file per entry rather than one per day follows the convention every other da
 1. The journal is committed with the project.
 2. It is not ignored and not kept outside the repository.
 3. The commit message is `Journal: <subject>`.
-4. The subject is the entry's, and nothing follows it.
+4. The subject is the entry's, and nothing follows it. It carries no date.
 5. A subject exceeding 50 characters is truncated at the 50th character, with an ellipsis.
 6. The agent does not split the entry across commits, or shorten the subject by rewriting it.
 7. Truncating does not rewrite, reorder, or paraphrase the words.
@@ -120,22 +120,13 @@ Journal: I finished the basic implementation of E…
 Journal: Idea
 ```
 
-## How to apply
-
-1. Resolve the active writer.
-2. Write an entry as a new file in `waytide/local/journal/<username>/`.
-3. Give it the local-time datetime prefix, to the minute, and a name saying what it is about.
-4. Carry seconds only where the writer gave seconds.
-5. Do not convert the time to UTC.
-6. End it with an `Authored by` line.
-7. Do not edit an entry once it is written, except for disclosure or a change the writer directs to their own entry. A later thought is a later entry.
-8. **Why:** what the writer thinks about the work is otherwise recorded nowhere and gets lost between sessions. A personal record is read against the day the writer remembers, so the local hour must survive.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.41, change 0.65, solubility 23 → 48, clarity 0.40 → 0.77, 37 directives, 37 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-10-24, revised: How to apply's point 7 names the two exceptions to the ban on editing an entry; not checked
 - 2026-10-27, re-checked: 39 directives, 39 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 48 → 50, clarity 0.77 → 0.80; checked: 37 directives, 34 kept, 3 less precise, 0 lost, 5 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 50 → 50, clarity 0.80 → 0.79; checked: 37 directives, 35 kept, 2 less precise, 0 lost
 
 ## History
 

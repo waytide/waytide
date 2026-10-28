@@ -16,9 +16,9 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 
 ## Compression
 
-- Solubility 84, clarity 0.86 (2026-10-24)
+- Solubility 84, clarity 0.85 (2026-10-28)
 - Compression 0.19, change 0.44 (2026-10-24)
-- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

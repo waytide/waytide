@@ -14,9 +14,9 @@ Name a concept by describing, literally, what it is. Reject three kinds of name,
 
 ## Compression
 
-- Solubility 94, clarity 0.96 (2026-10-24)
+- Solubility 95, clarity 0.99 (2026-10-28)
 - Compression 0.29, change 0.65 (2026-10-24)
-- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

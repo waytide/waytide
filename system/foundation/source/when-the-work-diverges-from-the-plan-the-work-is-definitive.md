@@ -27,28 +27,22 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 5. A divergence is not a pending reconciliation.
 6. Where the work has simply gone further than the plan foresaw, nothing is outstanding.
 7. Do not list such a plan as needing an update.
+8. Leave such a plan as written. Do not list the divergence as a reconciliation, and do not offer to bring the plan into line.
 
 ## What this does not reach
 
 1. Where the work shows the plan's intent is mistaken, not merely incomplete, correct the plan.
-2. The test is whether the plan still says what the work should be. It is not whether the plan says what the work turned out to be.
-3. The engineer may amend a plan for their own reasons at any time, by dated addition.
+2. The test of whether the plan's direction is wrong is whether the plan still says what the work should be. It is not whether the plan says what the work turned out to be.
+3. The engineer may amend a plan for their own reasons at any time. Amend it where the engineer asks. Every amendment, including a correction, is a dated addition.
 4. This rule removes an obligation, not a permission.
 5. Per the the-work-sessions-directory-holds-one-record-per-work-session rule, either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
 6. This rule settles the ordinary case and leaves that judgment with the engineer.
 
-## How to apply
-
-1. When the work has gone past what the plan describes, leave the plan as written.
-2. Do not list the divergence as a reconciliation.
-3. Do not offer to bring the plan into line.
-4. Correct a plan where its direction is wrong.
-5. Amend a plan by dated addition where the engineer asks.
-6. **Why:** a plan edited to match the work stops being a statement of intent. It becomes unfalsifiable, so nothing is learned from having written it.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.24, change 0.48, solubility 55 → 83, clarity 0.37 → 0.84, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 83 → 75, clarity 0.84 → 0.72; checked: 12 directives, 8 kept, 4 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 75 → 76, clarity 0.72 → 0.70; checked: 10 directives, 9 kept, 1 less precise, 0 lost
 
 Related:
 

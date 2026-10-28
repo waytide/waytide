@@ -16,9 +16,9 @@ The structure of a full entry is therefore the `# <title>`, then the datetime li
 
 ## Compression
 
-- Solubility 85, clarity 0.87 (2026-10-24)
+- Solubility 83, clarity 0.89 (2026-10-28)
 - Compression 0.06, change 0.45 (2026-10-24)
-- 17 directives, 17 kept, 0 less precise, 0 lost (2026-10-24)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

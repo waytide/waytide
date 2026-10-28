@@ -14,9 +14,9 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 
 ## Compression
 
-- Solubility 78, clarity 0.81 (2026-10-24)
+- Solubility 80, clarity 0.85 (2026-10-28)
 - Compression 0.15, change 0.62 (2026-10-24)
-- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-24)
+- 9 directives, 9 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

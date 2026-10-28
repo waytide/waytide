@@ -62,9 +62,9 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 
 ## Compression
 
-- Solubility 42, clarity 0.72 (2026-10-24)
+- Solubility 42, clarity 0.70 (2026-10-28)
 - Compression 0.18, change 0.64 (2026-10-24)
-- 33 directives, 33 kept, 0 less precise, 0 lost (2026-10-24)
+- 28 directives, 28 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

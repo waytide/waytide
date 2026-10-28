@@ -68,9 +68,9 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 
 ## Compression
 
-- Solubility 54, clarity 0.79 (2026-10-24)
+- Solubility 49, clarity 0.79 (2026-10-28)
 - Compression 0.29, change 0.50 (2026-10-24)
-- 35 directives, 31 kept, 3 less precise, 1 lost (2026-10-27)
+- 38 directives, 34 kept, 4 less precise, 0 lost (2026-10-28)
 
 Related:
 

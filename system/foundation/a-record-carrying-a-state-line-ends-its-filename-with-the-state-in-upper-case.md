@@ -38,9 +38,9 @@ When the state changes, rename it again. When a reversible state word is taken b
 
 ## Compression
 
-- Solubility 75, clarity 0.89 (2026-10-24)
+- Solubility 71, clarity 0.87 (2026-10-28)
 - Compression 0.44, change 0.69 (2026-10-24)
-- 24 directives, 23 kept, 1 less precise, 0 lost (2026-10-27)
+- 23 directives, 22 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

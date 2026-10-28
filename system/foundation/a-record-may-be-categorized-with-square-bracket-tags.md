@@ -14,9 +14,9 @@
 
 ## Compression
 
-- Solubility 94, clarity 1.00 (2026-10-27)
+- Solubility 95, clarity 1.00 (2026-10-28)
 - Compression 0.09, change 0.17 (2026-10-27)
-- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-27)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

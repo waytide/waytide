@@ -57,7 +57,7 @@ Keep each part tight. Read current state before printing — do not report stale
 13. The map shows that `waytide/local/rules/` holds the project's own local rules.
 14. The map states that both are binding and both are read at session start.
 15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
-16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`.
+16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
 17. The orientation says how to work with the directory. Rules are enforceable conventions.
 18. The log is title-only ISO-8601-UTC decision entries.
 19. A rule typically pairs with a log entry.
@@ -99,7 +99,7 @@ Keep each part tight. Read current state before printing — do not report stale
 15. *Include the suspended items*, *show what is hidden*, or a request for a suspended record by name each produce the full listing.
 16. Never simply drop a hidden record. The count is what separates hiding from omitting.
 
-## How to apply
+## The report is rendered from current state
 
 1. Keep each part tight.
 2. Read current state before printing.
@@ -109,11 +109,12 @@ Keep each part tight. Read current state before printing — do not report stale
 6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
 7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
 8. An unnamed test appears in the source and emits no line.
-9. **Why:** a status report is a recurring request with a known shape. A fixed format makes it repeatable and complete, and steers reading toward in-repo sources of truth rather than recollection.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.10, change 0.41, solubility 28 → 51, clarity 0.40 → 0.83, 32 directives, 32 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 51 → 51, clarity 0.83 → 0.83; checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 51 → 51, clarity 0.83 → 0.83; checked: 31 directives, 31 kept, 0 less precise, 0 lost
 
 ## History
 

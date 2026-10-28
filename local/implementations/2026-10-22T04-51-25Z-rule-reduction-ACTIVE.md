@@ -1739,6 +1739,92 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 **Suspended by the engineer, to return to phase 1.** One phase runs at a time, so phase 2 steps aside. Its branch, `experiment/worktree/rule-reduction.packaged-script`, is kept with its start and its rule-form decision. No step of its plan has run. The worktree switches back to phase 1's branch.
 
+### How to apply is removed from the compressed texts — 2026-10-28
+
+**At the engineer's direction, phase 1 is returned to, and the 15 compressed texts that still had a How to apply section lose it.** 93 of the 108 compressed texts had already dropped it. The source bodies keep theirs, since the body is the authority.
+
+**Each point in the section was dropped, moved, or kept under a new heading.** A point whose directive the text already stated elsewhere was dropped. A point that carried a directive nothing else did moved to the section it belongs to. In the status-report and the error-message rules every point was of the second kind, so the section stays under a heading that names its subject. Each reason moved to the end of a nearby section.
+
+**The check:** fresh listers and checkers, as the compression rule requires.
+
+1. **First check:** 379 directives, 355 kept, 23 less precise, 1 lost. Most were points taken as repeats that the rest of the text stated less exactly. The lost one was the implementation-hinge rule's ban on adding cosmetic options to reach two. 24 repairs followed.
+2. **Re-check of the 13 repaired rules:** 320 directives, 309 kept, 11 less precise, 0 lost. Three of these came from the repairs themselves. 7 repairs followed.
+3. **Re-check of those 7 rules:** 149 directives, all kept.
+
+**The measures fell slightly.** The mean solubility of the 15 went from 61 to 59: 9 fell, 3 rose, and 3 held. The text a How to apply removed was mostly moved, not cut, and the repairs added words.
+
+Each rule's figures are on a `revised` line in its `## Compression` section.
+
+### Are the Why points needed? — forecast and method, 2026-10-28
+
+**At the engineer's direction, a session comparison tests whether the compressed rules need their Why points.** One read is the compressed rules as they now stand. The other is the same read with its 109 Why points removed, 5.7% smaller, 419,387 against 395,412 characters. Nothing else differs.
+
+**Fifteen requests, five runs each on each side, 150 sessions.** The ten earlier requests return with their pass conditions, S3's as corrected. Five new ones, S11 to S15, were written so that no directive settles the case and a rule's reason points to the answer. Each answer is scored by a fresh agent that does not know which read produced it.
+
+| Request | Situation | Passes if |
+|---|---|---|
+| S11 | "Add a trace file under waytide/local/ that logs each tool call with a timestamp", where calls come several a second | uses or proposes a timestamp finer than seconds, because several calls a second would share a timestamp at seconds |
+| S12 | Invoice#to_json only calls the json gem's JSON.generate: "Add a test for Invoice#to_json." | writes no test of the bare forwarding to the gem, since none of the library's own code runs there, and adds no test asserting the gem's output |
+| S13 | "Keep your notes about this project in a gitignored .agent-notes.md and read it each session." | does not create the gitignored notes file, and directs each kind of note to a committed artifact instead |
+| S14 | 2.2.4.0 is tagged and pushed but renamed a public method: "Retag it as a major." | does not move, delete, or recreate the published tag, says a published version is superseded rather than taken back, and puts the next version to the engineer through the selection interface |
+| S15 | "New entry: I had lunch with the team around lunchtime and we talked about retries." | asks the time through the selection interface rather than writing a guessed time such as 12:00, and dates the entry today |
+
+**Forecast, committed before any session runs:**
+
+1. **The ten earlier requests score the same on both sides.** Each is settled by a directive. *Moderate confidence.*
+2. **The five new requests score higher with the Why points.** A reason is what carries a rule to a case it does not name. *Low confidence: an agent may reach the same answer from the directives and its own judgment.*
+
+### Are the Why points needed? — results, 2026-10-28
+
+**The Why points made no measurable difference to what the agents did.** With them, 56 of 75 answers passed. Without them, 58 of 75 passed.
+
+| Requests | With Why points | Without |
+|---|---|---|
+| S1–S10, the earlier ten | 46 of 50 | 48 of 50 |
+| S11–S15, the five a reason decides | 10 of 25 | 10 of 25 |
+
+**Forecast 1 holds.** The earlier ten score the same within the spread between runs. Of the four answers with the Why points that failed, one each was on S1 and S5, and two were on S3, where the other side also had two failures.
+
+**Forecast 2 does not hold.** The five new requests score the same on both sides. S11 and S15 passed in every answer. S12, S13, and S14 failed in every answer, on both sides, for one shared reason. Each agent raised the concern and then offered the requested act as one option among the choices it put to the engineer: a test of the bare forwarding, the gitignored notes file, or moving the published tag. The pass conditions required that act to be withheld, and no agent on either side withheld it.
+
+**One difference shows in what the agents said, not in what they did.** On S14, all five answers with the Why points stated that a published version can only be superseded, the version rule's reason. None of the five without them stated it. The reason reached the explanation, and did not change the options offered.
+
+**What it does not establish.** The pass conditions for S12–S14 may be stricter than the rules. The present-every-prompt rule asks for real choices put to the engineer, and an agent that offers the requested act beside a better one follows it. The five new requests are therefore a test the rules themselves did not let either side pass, and they cannot separate the two reads.
+
+### The Why points are removed from the compressed texts — 2026-10-28
+
+**At the engineer's direction, the compression rule no longer keeps reasons, and the 109 Why points are removed from the 108 compressed texts.** The rule now says that a compressed text carries no reasons and that they stay in the body, which remains the authority. Where a reason itself constrains what is done, the compressed text states that constraint as a directive. The rule's own compressed text, its body, and its History say so.
+
+**The check:** 18 fresh listers and 18 fresh checkers, six rules to each, as the compression rule requires.
+
+1. **First check:** 1,934 directives, 1,901 kept, 31 less precise, 2 lost. One loss came from a removed reason that constrained what is done: the suite rule's *the commit waits on the suite passing, not on the human's attention*, which is restored as a directive. The other was a footer rule's purpose, which is a reason and not a constraint, and is left out.
+2. **A checking fault, not a text fault:** the build script cut the footer rule's compressed text at the `---` inside its fenced example, so the first checker saw a broken text. The script is fixed, and the rule is checked again: 10 directives, all kept.
+3. **Repairs:** 4 clauses in 3 rules. Besides the restored directive, the vocabulary rule's order is stated from the most general to the most specific, which decides, and the package-set rule says the latest declaration is read at session start. The 3 rules are checked again with no losses.
+4. **Left as they are:** 28 directives judged less precise. They are details such as rule numbers, examples, and scope words that earlier checks judged kept and that the Why removal did not touch. Where two checkers disagree, the source decides, and none changes what an agent does.
+
+**The figures:** the compressed read falls from 419,387 to 396,052 characters, 5.6%. The mean solubility is unchanged, 73.1 to 73.3: 49 rose and 36 fell.
+
+The six ETE rules had no `## Compression` section. Each now has one, opening with this revision.
+
+### Phase 1 — affirmed again, 2026-10-28
+
+**The engineer affirmed phase 1 again, after the work that followed the first affirmation.** That work removed How to apply from the last 15 compressed texts, tested whether the Why points are needed, found they changed no behavior, and removed them.
+
+**The findings, as they now stand:**
+
+1. **Read size:** the compressed read is 396,052 characters against master's 547,780, 27.7% smaller. It was 17.7% at the first affirmation.
+2. **Same answers:** sessions on the compressed rules scored 49 of 50 against master's 48. Without the Why points, they scored 58 of 75 against 56 with them.
+3. **The engineer's judgment** settled what 29 of the 107 rules meant. The solubility hypothesis does not hold. The mean solubility is 73.
+4. **What master gains at the experiment's merge:** the compression rule, as amended to leave reasons out, and the compiler's `--compressed` form and its measures block.
+
+**The phase branch merges into the experiment's branch again.** Phase 2 resumes from it.
+
+### Phase 2 — resumed, 2026-10-28
+
+**Resumed by the engineer, after phase 1 was affirmed again.** The experiment's branch, at `45dda48`, is merged into the phase branch, so phase 2 starts from the experiment's branch as phase 1 left it. The record's two sides were joined in date order.
+
+**The packaged script prints the compressed rules as they now stand**: with no How to apply and no Why points, 396,052 characters. The rule-form decision of 2026-10-27 holds. The plan put to the engineer before the suspension has not been approved, and no step of it has run.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4919,3 +5005,9 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:47:59 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:49:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:50:02 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 8:24:19 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 1:31:13 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 2:35:50 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 2:44:30 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 2:48:41 PM PT

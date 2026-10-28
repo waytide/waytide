@@ -14,9 +14,9 @@ Run the feature's tests with verbose output, so the context tree, the `comment` 
 
 ## Compression
 
-- Solubility 93, clarity 0.89 (2026-10-22)
+- Solubility 88, clarity 0.82 (2026-10-28)
 - Compression 0.55 (2026-10-22), change 0.78 (2026-10-21)
-- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-22)
+- 8 directives, 7 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

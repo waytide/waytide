@@ -38,12 +38,12 @@ This is a different justification from the rule-file footer's (which recovers hi
 1. Do not add a footer to a `waytide/local/logs/log/` entry.
 2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 3. A log entry records who and when by its ISO-8601-UTC filename and its commit history, not by an in-file footer.
-4. **Why:** a working-state artifact is meant to be read on its own, so its provenance belongs in the file, not only in git history. This differs from the rule-file footer, which recovers history that `git subtree` strips. The log is exempt because its filename already carries its provenance, and a footer would break its one-line shape and its no-reformat rule. This rule states the justification once, and the working-state conventions do not repeat it.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.42, change 0.64, solubility 49 → 80, clarity 0.48 → 0.81, 18 directives, 18 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
+- 2026-10-28, revised: Why points removed, solubility 80 → 79, clarity 0.81 → 0.80; checked: 17 directives, 15 kept, 1 less precise, 1 lost
 
 ## History
 

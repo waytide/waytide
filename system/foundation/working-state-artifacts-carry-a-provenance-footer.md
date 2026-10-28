@@ -21,9 +21,9 @@ This is a different justification from the rule-file footer's (which recovers hi
 
 ## Compression
 
-- Solubility 80, clarity 0.81 (2026-10-24)
+- Solubility 79, clarity 0.80 (2026-10-28)
 - Compression 0.42, change 0.64 (2026-10-24)
-- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-24)
+- 17 directives, 15 kept, 1 less precise, 1 lost (2026-10-28)
 
 Related:
 

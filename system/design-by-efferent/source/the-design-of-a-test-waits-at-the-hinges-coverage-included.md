@@ -35,11 +35,11 @@ When adding coverage for behavior that already exists, all five are in play:
 8. Solubility is still judged at the implementation hinge.
 9. If the test reads awkwardly against clean code, fix the test's control, actuation, or observation.
 10. Never change the implementation to resolve that awkwardness. Never break an implementation to introduce a test.
-11. **Why:** The hinges hand each design decision to the human at its gate. A coverage test has real design decisions, especially in its controls and observations. Coverage differs from design only in that no behavior is designed and no red is driven. The hinges are present in both.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.14, change 0.57, solubility 71 → 89, clarity 0.63 → 0.93, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 89 → 91, clarity 0.93 → 0.98; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

@@ -72,7 +72,7 @@
 2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`.
 3. A new declaration writes a new record.
 4. A new declaration edits no existing record.
-5. The record with the latest prefix holds, and the earlier ones are history.
+5. At session start, read the record with the latest prefix. It holds, and the earlier ones are history.
 6. Reverting is a declaration naming `default`.
 
 ## Three lines carry it
@@ -128,14 +128,13 @@
 3. When the engineer declares a set, write the record.
 4. Then say that the deactivated packages' rules stay in force for this session.
 5. Also say that Claude must be restarted for those rules to stop applying.
-6. **Why:** a project does not need every convention the system carries. Before this, the remedies were to leave a package uninstalled or to write a local rule against it. A declaration is a recorded project decision, committed, dated, and reviewable, not the agent's judgment in the moment.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.44, change 0.78, solubility 20 → 57, clarity 0.24 → 0.70
 - 2026-10-22, checked: 37 directives, 34 kept, 3 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list, restored directive 33; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 57 → 62, clarity 0.70 → 0.86; checked: 34 directives, 32 kept, 2 less precise, 0 lost, 1 repair, re-checked with 0 lost
 
 ## History
 

@@ -60,9 +60,9 @@
 
 ## Compression
 
-- Solubility 57, clarity 0.70 (2026-10-22)
+- Solubility 62, clarity 0.86 (2026-10-28)
 - Compression 0.44, change 0.78 (2026-10-22)
-- 37 directives, 34 kept, 3 less precise, 0 lost (2026-10-22)
+- 34 directives, 32 kept, 2 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -39,11 +39,11 @@ When a precise word is missing, name the concept literally rather than reaching 
 15. Do not let a term mean one thing in one place and another thing elsewhere.
 16. When a precise word is missing, name the concept literally rather than reaching for the nearest metaphor.
 17. Expect this to feel like more effort than it is worth. Then an imprecise word costs a day.
-18. **Why:** The terminology is how the approach is taught and how people stay oriented to the same concepts. Imprecise words do quiet damage. Metaphors carry unintended baggage, overdramatic words distort judgment, and loose synonyms merge concepts the design keeps apart.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.63, solubility 69 → 81, clarity 0.80 → 0.87, 22 directives, 21 kept, 1 less precise, 0 lost, after 2 repairs, re-checked kept; directive 15 less precise, judged immaterial
+- 2026-10-28, revised: Why points removed, solubility 81 → 83, clarity 0.87 → 0.90; checked: 14 directives, 13 kept, 1 less precise, 0 lost
 
 ## History
 

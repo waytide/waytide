@@ -13,13 +13,12 @@ Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by 
 3. The commit is authored by the user only.
 4. Omit the trailer even though Claude Code adds it by default.
 5. This applies to every project.
-6. **Why:** The user does not want AI co-authorship attribution in their commit history.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.07, change 0.60, solubility 82 → 86, clarity 0.64 → 0.73, 3 directives, 2 kept, 1 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 86 → 95, clarity 0.73 → 0.91; checked: 4 directives, 4 kept, 0 less precise, 0 lost
 
 ## History
 

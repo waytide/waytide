@@ -30,6 +30,10 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 
 **How to apply:** reserve a word in an STE category where one holds it. Where none does, reserve it in an ETE category. Name the category in the word's vocabulary entry. State what the STE dictionary says about the word in the same entry.
 
+## Compression
+
+- 11 directives, 11 kept, 0 less precise, 0 lost (2026-10-28)
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit

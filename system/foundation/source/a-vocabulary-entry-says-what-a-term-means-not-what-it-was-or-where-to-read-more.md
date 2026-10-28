@@ -65,11 +65,11 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 2. A discontinuation, under the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule's own heading, is not an exception.
 3. A discontinuation entry names the word and says it is not used.
 4. It does not narrate when the word was dropped or what carried it before.
-5. **Why:** a vocabulary is read to settle what a word means now. History clauses accumulate and invite doubt about whether the old meaning still applies.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 34 → 70, clarity 0.36 → 0.67, 16 directives, 16 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 70 → 64, clarity 0.67 → 0.58; checked: 12 directives, 12 kept, 0 less precise, 0 lost
 
 ## History
 

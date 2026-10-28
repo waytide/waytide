@@ -18,9 +18,9 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 
 ## Compression
 
-- Solubility 79, clarity 0.84 (2026-10-24)
+- Solubility 78, clarity 0.83 (2026-10-28)
 - Compression 0.28, change 0.51 (2026-10-24)
-- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-24)
+- 15 directives, 14 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

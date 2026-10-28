@@ -25,6 +25,6 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 ## Compression
 
-- Solubility 79, clarity 0.83 (2026-10-24)
+- Solubility 79, clarity 0.83 (2026-10-28)
 - Compression 0.30, change 0.60 (2026-10-24)
-- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)
+- 10 directives, 10 kept, 0 less precise, 0 lost (2026-10-28)

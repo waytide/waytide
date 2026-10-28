@@ -38,9 +38,9 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 
 ## Compression
 
-- Solubility 70, clarity 0.76 (2026-10-24)
+- Solubility 73, clarity 0.76 (2026-10-28)
 - Compression 0.26, change 0.52 (2026-10-24)
-- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

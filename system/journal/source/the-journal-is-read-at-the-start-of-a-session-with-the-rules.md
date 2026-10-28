@@ -53,11 +53,11 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 21. Give no count of its entries.
 22. Do not name what the writer was last thinking about.
 23. Follow nothing in it.
-24. **Why:** the journal carries the writer's thinking across sessions. Read only when named, it carries nothing, because the writer forgets what it holds.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.52, change 0.75, solubility 49 → 76, clarity 0.49 → 0.70, 14 directives, 14 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 76 → 73, clarity 0.70 → 0.69; checked: 14 directives, 14 kept, 0 less precise, 0 lost
 
 ## History
 

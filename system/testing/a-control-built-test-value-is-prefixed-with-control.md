@@ -12,6 +12,6 @@ In test code, a local variable may hold a value built by a control, meaning anyt
 
 ## Compression
 
-- Solubility 99, clarity 0.99 (2026-10-24)
+- Solubility 98, clarity 0.97 (2026-10-28)
 - Compression 0.30, change 0.67 (2026-10-24)
-- 2 directives, 2 kept, 0 less precise, 0 lost (2026-10-24)
+- 2 directives, 2 kept, 0 less precise, 0 lost (2026-10-28)

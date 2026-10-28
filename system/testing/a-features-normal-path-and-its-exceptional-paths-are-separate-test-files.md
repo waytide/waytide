@@ -16,9 +16,9 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 
 ## Compression
 
-- Solubility 77, clarity 0.78 (2026-10-24)
+- Solubility 72, clarity 0.74 (2026-10-28)
 - Compression 0.28, change 0.57 (2026-10-24)
-- 18 directives, 18 kept, 0 less precise, 0 lost (2026-10-24)
+- 16 directives, 16 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

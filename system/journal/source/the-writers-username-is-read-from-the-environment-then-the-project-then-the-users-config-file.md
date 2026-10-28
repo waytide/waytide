@@ -200,22 +200,11 @@ display-name = "Jane Doe"
 14. A journal directory is then created for that writer, not refused.
 15. The fourth level still fails loudly where no username resolves at all.
 
-## How to apply
-
-1. When implementing identity in any Waytide tool, resolve the active username through the chain above.
-2. Read the user file at `~/.config/waytide/user`, resolving its base directory by platform.
-3. Parse the user file as TOML and take its `username`.
-4. Take the display name from the project's `writers.toml` where it holds one for that username.
-5. Otherwise take it from the user file, where that file's `username` is the resolved one.
-6. Otherwise fall back to the username itself.
-7. Never read git for identity.
-8. Never invent a username.
-9. Never take a username from `writers.toml`.
-10. **Why:** the writer is one person across many tools and projects. So identity is set once per machine, with project and process overrides for exceptions. Only the display name is overridable per project, so no project can declare who is writing.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.23, change 0.50, solubility 39 → 52, clarity 0.70 → 0.92, 52 directives, 52 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 53, clarity 0.92 → 0.92; checked: 54 directives, 54 kept, 0 less precise, 0 lost, no repair
+- 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.92 → 0.93; checked: 49 directives, 49 kept, 0 less precise, 0 lost
 
 ## History
 

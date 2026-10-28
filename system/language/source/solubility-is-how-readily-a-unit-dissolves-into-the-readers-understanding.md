@@ -26,11 +26,11 @@ The word is used as a general quality of a design. It is judged **by the reader*
 12. "Clean" and "elegant" describe how the code reads to someone who already understands it.
 13. Use "solubility" wherever the concern is how readily a unit is understood: in prose, rules, designs, commits, and dialogue.
 14. Judge it from the reader by asking what interpretive work the unit costs them. Aim design work at solubility, and use it as the criterion when a design is judged.
-15. **Why:** The quality needs one settled name so it can be aimed at, taught, and used as a criterion when a design is judged, not left to unstated taste.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.13, change 0.43, solubility 86 → 90, clarity 0.89 → 0.90, 8 directives, 8 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 90 → 92, clarity 0.90 → 0.95; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

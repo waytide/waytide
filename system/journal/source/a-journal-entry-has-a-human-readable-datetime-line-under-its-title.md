@@ -40,11 +40,11 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 
 18. Collapse any double space in the output.
 19. Where the stamp carries seconds, use `"%Y-%m-%d %H:%M:%S"` as the parse format.
-20. **Why:** the entry's date and time show in readable form, in the content and in a Quick Look preview, so the reader does not have to decode the filename stamp.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.06, change 0.45, solubility 67 → 85, clarity 0.53 → 0.87, 17 directives, 17 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 85 → 83, clarity 0.87 → 0.89; checked: 15 directives, 15 kept, 0 less precise, 0 lost
 
 ## History
 

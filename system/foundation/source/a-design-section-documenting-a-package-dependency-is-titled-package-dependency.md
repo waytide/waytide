@@ -14,11 +14,11 @@ A design — an item tagged `[design]` — may have a section that documents a d
 4. Title that section **Package Dependency**.
 5. Do not title it just "Dependency".
 6. Use plain "Dependency" only for sections about something other than a package.
-7. **Why:** "Dependency" is overloaded. It can mean a code-level dependency, a runtime relationship, or an injected collaborator. "Package Dependency" names exactly what the section covers.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.58, solubility 80 → 99, clarity 0.63 → 1.00, 4 directives, 4 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 99 → 99, clarity 1.00 → 1.00; checked: 2 directives, 2 kept, 0 less precise, 0 lost
 
 ## History
 

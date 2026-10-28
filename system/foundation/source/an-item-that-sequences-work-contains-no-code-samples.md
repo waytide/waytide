@@ -25,11 +25,11 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 9. This applies when writing a plan and when revising one.
 10. At implementation time, generate code only on the user's explicit instruction.
 11. Generate it in the increments the user chooses.
-12. **Why:** The user directs code generation interactively. Code samples and premature naming lock in decisions early and remove that incremental control.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.22, change 0.59, solubility 88 → 92, clarity 0.82 → 0.87, 10 directives, 10 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 92 → 91, clarity 0.87 → 0.86; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

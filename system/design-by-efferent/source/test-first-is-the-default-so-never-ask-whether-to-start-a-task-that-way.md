@@ -32,12 +32,12 @@ A question with a genuinely situational answer is a decision rather than a settl
 4. The choice neither confirms nor declines the method.
 5. A question with a genuinely situational answer is a decision, not a settled default. This rule does not forbid asking it.
 6. See the attended-or-unattended-is-chosen-when-the-work-is-started rule.
-7. **Why:** Asking confirms a settled default and spends a turn on a non-decision. The human's attention belongs at the hinges: the actuation and the solubility verdict. Re-asking the standing default is ceremony.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.13, change 0.43, solubility 77 → 78, clarity 0.71 → 0.70, 12 directives, 12 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-27, re-checked: 11 directives, 11 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 78 → 82, clarity 0.70 → 0.74; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

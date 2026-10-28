@@ -27,14 +27,13 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 6. This applies to the commit subject and the commit body.
 7. Prose addressed to the user follows the same preference.
 8. In prose addressed to the user, state the plain fact. Do not describe the act of marking it.
-9. **Why:** The commit records the state of the work, not the clerical act of ticking a box.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.23, change 0.61, solubility 86 → 85, clarity 0.76 → 0.73, 8 directives, 8 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
 - 2026-10-27, re-checked: 5 directives, 5 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 85 → 93, clarity 0.73 → 0.91; checked: 5 directives, 5 kept, 0 less precise, 0 lost
 
 ## History
 

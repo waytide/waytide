@@ -39,11 +39,11 @@ Each discontinued figurative term has a literal replacement, and each is an entr
 17. A historical record that quotes a decision keeps the original word.
 18. Only live, forward-looking prose conforms.
 19. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
-20. **Why:** slang and figurative terms are imprecise and carry unwanted associations. "wrap/wrapper" reads as a generic decorator and hides the accessor relationship that "mediates" names exactly.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.03, change 0.77, solubility 65 → 91, clarity 0.43 → 0.95, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 91 → 93, clarity 0.95 → 0.99; checked: 14 directives, 14 kept, 0 less precise, 0 lost
 
 ## History
 

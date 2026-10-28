@@ -18,11 +18,11 @@ This parallels the constant-name convention, where example names are `"SomeModul
 6. Write `control_file = "some file"` for a placeholder string value. Write each further placeholder in the "some other …" form, as in `"some other file"`.
 7. Use specific string content only when the test actually depends on it.
 8. Non-string placeholder values, such as a number, are not covered, because they have no "some" form.
-9. **Why:** "some" signals that any value would do. That matches the `control_` prefix's intent, where the test turns on the value's identity, not its content.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.21, change 0.58, solubility 82 → 92, clarity 0.72 → 0.89, 5 directives, 5 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 92 → 92, clarity 0.89 → 0.88; checked: 5 directives, 5 kept, 0 less precise, 0 lost
 
 ## History
 

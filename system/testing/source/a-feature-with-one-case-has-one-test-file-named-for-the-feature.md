@@ -25,11 +25,11 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 9. Once the case set is settled and there is one case, collapse to `<feature>.rb`, named for the feature.
 10. When collapsing, fix the `require_relative` depth to match.
 11. Once the case set is settled and there is more than one case, use `<feature>/<case>.rb`, each file named for its case.
-12. **Why:** a filename should carry meaning. A sole case-named file like `present` implies a contrast that does not exist, and misdescribes the feature as multi-case.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.04, change 0.45, solubility 88 → 88, clarity 0.85 → 0.85, 11 directives, 10 kept, 1 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 88 → 88, clarity 0.85 → 0.85; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 ## History
 

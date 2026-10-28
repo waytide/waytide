@@ -30,9 +30,9 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 
 ## Compression
 
-- Solubility 76, clarity 0.70 (2026-10-24)
+- Solubility 73, clarity 0.69 (2026-10-28)
 - Compression 0.52, change 0.75 (2026-10-24)
-- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-24)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

@@ -28,13 +28,13 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 10. When a unit adds a policy, that policy is the library's own decision, and it must be tested.
 11. Example policies that must be tested: `Upload#call`'s guard `raise Error, "File is empty" if file.empty?`, which raises `Upload::Error` on an empty file. Others are a coercion that normalizes the file, and a suppressed warning.
 12. Do not test the bare forwarding to the primitive underneath a tested policy, such as the `file.empty?` beneath those policies.
-13. **Why:** Tests exist to prevent regressions in the library's design and decisions. Testing the platform adds noise, couples the suite to language internals, and gives false confidence when none of our code ran.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.14, change 0.44, solubility 73 → 67, clarity 0.70 → 0.51, 6 directives, 6 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-24, revised: sentences over 25 words split, solubility 67 → 75, clarity 0.51 → 0.70; checked: 6 directives, 4 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-27, re-checked: 6 directives, 6 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 75 → 77, clarity 0.70 → 0.71; checked: 6 directives, 6 kept, 0 less precise, 0 lost
 
 ## History
 

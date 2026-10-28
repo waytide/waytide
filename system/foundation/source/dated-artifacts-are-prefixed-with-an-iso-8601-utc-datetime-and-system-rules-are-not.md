@@ -49,11 +49,11 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
 4. A project's own `waytide/local/vocabulary.md` takes no prefix. It is a structural file, not a dated entry. See the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule.
-5. **Why:** The dated artifacts are a chronological record. One UTC-normalized, lexically-sortable prefix orders them in every directory, keeps their order within a day, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable conventions, each named for what it says.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.30, change 0.60, solubility 48 → 79, clarity 0.44 → 0.83, 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 79 → 79, clarity 0.83 → 0.83; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

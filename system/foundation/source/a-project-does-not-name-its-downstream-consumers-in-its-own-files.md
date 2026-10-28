@@ -61,11 +61,11 @@ A decision may have been about that project, and its name is there for that. Lea
 1. Where a tool must reach the consuming projects, such as to survey or refresh them, it reads per-machine configuration outside the repository.
 2. That configuration lives under `~/.config/`, not in a gitignored file inside the repository.
 3. Commit the tool. It names no consumer and only reads the configuration.
-4. **Why:** a consumer list inverts the dependency direction, drifts silently, and discloses other parties' projects once the repository is public. Per-machine configuration keeps the capability without those costs.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.56, change 0.73, solubility 43 → 83, clarity 0.60 → 0.86, 16 directives, 16 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 83 → 84, clarity 0.86 → 0.89; checked: 17 directives, 17 kept, 0 less precise, 0 lost
 
 ## History
 

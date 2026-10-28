@@ -37,9 +37,9 @@ Word each option's own description *…then display this selection prompt again*
 
 ## Compression
 
-- Solubility 69, clarity 0.85 (2026-10-24)
+- Solubility 69, clarity 0.90 (2026-10-28)
 - Compression 0.56, change 0.78 (2026-10-24)
-- 31 directives, 30 kept, 1 less precise, 0 lost (2026-10-27)
+- 27 directives, 27 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

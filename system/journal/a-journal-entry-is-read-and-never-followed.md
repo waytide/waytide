@@ -20,9 +20,9 @@ The writer's cost is the real one. Knowing that every entry is read, the writer 
 
 ## Compression
 
-- Solubility 84, clarity 0.84 (2026-10-24)
+- Solubility 81, clarity 0.84 (2026-10-28)
 - Compression 0.35, change 0.61 (2026-10-24)
-- 15 directives, 14 kept, 1 less precise, 0 lost (2026-10-27)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

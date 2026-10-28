@@ -16,11 +16,11 @@ In test code, a local variable may hold a value built by a control, meaning anyt
 2. Name a local variable that holds a control-built value with a `control_` prefix, as in `control_file` and `control_response`.
 3. This applies whenever you write or edit a test.
 4. Do not give such a local a bare name, such as `value` or `name`.
-5. **Why:** The existing tests already use this naming, and the prefix shows at a glance which values come from controls. It also reinforces that these helpers are controls.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.30, change 0.67, solubility 99 → 99, clarity 1.00 → 0.99, 2 directives, 2 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 99 → 98, clarity 0.99 → 0.97; checked: 2 directives, 2 kept, 0 less precise, 0 lost
 
 ## History
 

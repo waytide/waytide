@@ -37,11 +37,11 @@ Counter-examples, where "Is" is not used:
 9. If the assertion is `assert(a == b)`, or an identity comparison, "Is …" fits.
 10. Otherwise, name the context for the outcome it establishes: the predicate, the presence, the exclusion, or the behavior.
 11. Name a context for a raised error "Fails", per the error-test-naming rule.
-12. **Why:** "Is X" reads as a claim of equality or identity. Using it for any other assertion promises a comparison the assertion does not make.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.05, change 0.29, solubility 63 → 67, clarity 0.40 → 0.46, 6 directives, 6 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 67 → 65, clarity 0.46 → 0.44; checked: 5 directives, 4 kept, 1 less precise, 0 lost
 
 ## History
 

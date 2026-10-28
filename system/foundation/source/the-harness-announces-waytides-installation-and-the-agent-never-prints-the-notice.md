@@ -307,8 +307,6 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 2. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently.
 3. A setting that disables hooks silences it too.
 4. A newly placed `.claude/settings.json` may not take effect until the harness reloads.
-5. **Why:** An agent-printed notice was unreliable, since nothing revealed when the agent skipped it. It was also badly placed, inside a reply where it cluttered the answer or was scrolled past. Both came from the party announced also being the announcer. The harness removes the dependence on the agent, and puts the notice outside the response.
-
 
 ## Compression
 
@@ -318,6 +316,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-10-24, revised: written as a numbered list; checked twice, 1 repair, re-checked kept
 - 2026-10-27, re-checked: 68 directives, 62 kept, 6 less precise, 0 lost, 6 repairs, re-checked kept
 - 2026-10-27, revised: an Active record is reported; checked: 72 directives, 70 kept, 2 less precise, 0 lost; directives 30 and 41 follow the source's wording
+- 2026-10-28, revised: Why points removed, solubility 32 → 39, clarity 0.58 → 0.75; checked: 75 directives, 74 kept, 1 less precise, 0 lost
 
 ## History
 

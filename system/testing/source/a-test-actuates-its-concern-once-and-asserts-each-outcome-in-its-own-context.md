@@ -81,11 +81,11 @@ end
 20. `comment` narrates scenario-wide values near the actuation.
 21. `detail` narrates a value local to one inner context.
 22. Each `test` block holds one assertion, and that assertion confirms the outcome its inner context's title states.
-23. **Why:** Actuating once and asserting each facet separately keeps the efferent view of the unit in one place. Each outcome can then be read, named, and diagnosed on its own.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.50, solubility 65 → 82, clarity 0.70 → 0.89, 20 directives, 20 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 82 → 84, clarity 0.89 → 0.91; checked: 15 directives, 15 kept, 0 less precise, 0 lost
 
 ## History
 

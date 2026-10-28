@@ -14,9 +14,9 @@ A question with a genuinely situational answer is a decision rather than a settl
 
 ## Compression
 
-- Solubility 78, clarity 0.70 (2026-10-24)
+- Solubility 82, clarity 0.74 (2026-10-28)
 - Compression 0.13, change 0.43 (2026-10-24)
-- 11 directives, 11 kept, 0 less precise, 0 lost (2026-10-27)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

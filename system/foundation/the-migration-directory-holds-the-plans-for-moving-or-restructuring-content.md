@@ -17,9 +17,9 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 
 ## Compression
 
-- Solubility 68, clarity 0.76 (2026-10-24)
+- Solubility 64, clarity 0.76 (2026-10-28)
 - Compression 0.34, change 0.63 (2026-10-24)
-- 16 directives, 15 kept, 1 less precise, 0 lost (2026-10-27)
+- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

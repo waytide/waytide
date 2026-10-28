@@ -85,13 +85,13 @@ end
 22. Local rules are read at every session start, so the suppression holds from then on. Deleting the file restores the warnings.
 23. Where that local rule exists, give no warning. The tests the agent writes still take this rule's shape.
 24. A leading `When …` condition context is never warned of.
-25. **Why:** a context should mean "there is local instrumentation here." A context holding only a bare test adds a nesting level that carries no information, and the name belongs on the test. That is a preference, not a defect, so another engineer's context is theirs to keep, and the warning leaves the choice with them.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.19, change 0.52, solubility 57 → 72, clarity 0.53 → 0.70, 12 directives, 12 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-24, revised: the rule warns of a context that holds only a test, rather than banning it; checked: 19 directives, 19 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 72 → 63, clarity 0.70 → 0.81; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 
 ## History
 

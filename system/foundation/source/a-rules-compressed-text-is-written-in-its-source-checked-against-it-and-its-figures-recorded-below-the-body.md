@@ -4,7 +4,9 @@
 
 ## The compressed text
 
-**The compressed text is numbered lists.** Each point is one or two short sentences, carrying one directive or the reason for one. Headings within the section group the points, and each group's list numbers from 1. A reason is a point that leads with `**Why:**`. A fenced example the directives depend on is kept.
+**The compressed text is numbered lists.** Each point is one or two short sentences, carrying one directive. Headings within the section group the points, and each group's list numbers from 1. A fenced example the directives depend on is kept.
+
+**The compressed text carries no reasons.** A rule's reasons stay in its body, which remains the authority. Where a reason itself constrains what is done, the compressed text states that constraint as a directive.
 
 **A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
 
@@ -58,13 +60,14 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 
 ## The compressed text
 
-1. Write the compressed text as numbered lists. Each point is one or two short sentences, carrying one directive or the reason for one.
+1. Write the compressed text as numbered lists. Each point is one or two short sentences, carrying one directive.
 2. Headings within the section group the points, and each group's list numbers from 1.
-3. A reason is a point that leads with `**Why:**`. Keep a fenced example the directives depend on.
-4. A change to the body reaches the compressed text in the same commit.
-5. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
-6. `./compile.sh` compiles the body. `./compile.sh --compressed` compiles a rule with a Compressed section to its title, the compressed text, and its `Related:` list, and a rule with none as by default.
-7. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer. Each carries the latest measures.
+3. Carry no reasons. They stay in the body. Where a reason constrains what is done, state that constraint as a directive.
+4. Keep a fenced example the directives depend on.
+5. A change to the body reaches the compressed text in the same commit.
+6. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
+7. `./compile.sh` compiles the body. `./compile.sh --compressed` compiles a rule with a Compressed section to its title, the compressed text, and its `Related:` list, and a rule with none as by default.
+8. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer. Each carries the latest measures.
 
 ## The check
 
@@ -93,16 +96,18 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 13. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 14. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 15. The compiled rule carries only the latest value of each measure, each with the date of the event that gave it, in a `## Compression` section above its `Related:` list. The compiler writes it in both forms. The earlier events are history, and stay in the source alone.
-16. **Why:** a compressed text is read in place of its source, so a directive it loses is lost to every session that reads it. The check shows it carries what the source carries. The figures in the source keep the facts about a compressed text where the text is.
 
 ## Compression
 
 - 2026-10-27, compressed: compression 0.18, change 0.31, solubility 34 → 56, clarity 0.49 → 0.86, 41 directives, 41 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-27, revised: the compiled rule carries the latest value of each measure, solubility 34 → 53, clarity 0.50 → 0.84; checked: 45 directives, 44 kept, 1 less precise, 0 lost, 1 repair, re-checked kept; directive 41 left as the source words it
+- 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.84 → 0.84; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 
 ## History
 
 Until Tue Oct 27 2026 the compiler left the whole Compression section out of the compiled rule. The engineer settled that the compiled rule carries the latest value of each measure, and that the earlier events are history.
+
+Until Wed Oct 28 2026 the compressed text carried each reason as a point leading with `**Why:**`. A session comparison found that the reasons changed no agent's behavior, and the engineer settled that the compressed text leaves them out.
 
 Related:
 

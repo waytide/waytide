@@ -68,11 +68,11 @@ Changed by <other name> on <datetime>
 15. When authoring a new rule, end it with a `---` divider.
 16. Below the divider, add an `Authored by <name> on <local datetime>` line.
 17. When changing an existing rule, append a `Changed by <name> on <local datetime>` line to its footer.
-18. **Why:** Packages are installed by `git subtree`, which does not carry per-file history. The footer keeps authorship visible wherever the rule is read.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.51, solubility 50 → 79, clarity 0.30 → 0.75, 12 directives, 12 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 79 → 79, clarity 0.75 → 0.76; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

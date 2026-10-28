@@ -121,6 +121,6 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 ## Compression
 
-- Solubility 53, clarity 0.90 (2026-10-24)
+- Solubility 52, clarity 0.90 (2026-10-28)
 - Compression 0.44, change 0.74 (2026-10-24)
-- 53 directives, 51 kept, 2 less precise, 0 lost (2026-10-27)
+- 46 directives, 46 kept, 0 less precise, 0 lost (2026-10-28)

@@ -22,11 +22,11 @@ Do not use an abbreviation the reader may not already know without spelling it o
 8. If the expansion is clearer than the short form, use the expansion alone.
 9. Project abbreviations count too. A name coined inside the project, such as DBE for design-by-efferent, must be defined where it is introduced.
 10. Use a project abbreviation freely only after its definition, such as the design-by-efferent vocabulary.
-11. **Why:** an unexplained abbreviation forces the reader to guess or look it up. It saves the writer a few letters and costs the reader the meaning.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.25, change 0.53, solubility 68 → 95, clarity 0.46 → 0.98, 10 directives, 10 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 95 → 95, clarity 0.98 → 0.98; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
 ## History
 

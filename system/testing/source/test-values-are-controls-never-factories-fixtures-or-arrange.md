@@ -23,11 +23,11 @@ So a test reads **control → actuate → observe** (the assertion is only *how*
 7. Apply this in prose, comments, docs, and dialogue.
 8. In talk about tests, never say "factory", "factories", "fixture", "fixtures", "arrange", or "arrangement".
 9. Where a test framework has its own `Fixture` context object, the known input values are still controls, not fixtures.
-10. **Why:** "controls" is the established vocabulary of controls-based testing. The other terms are imported jargon that a reader has to map back onto the one concept.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.30, change 0.65, solubility 79 → 90, clarity 0.70 → 0.86, 7 directives, 7 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 90 → 91, clarity 0.86 → 0.89; checked: 6 directives, 6 kept, 0 less precise, 0 lost
 
 ## History
 

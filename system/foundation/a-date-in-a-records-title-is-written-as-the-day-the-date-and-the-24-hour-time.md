@@ -22,9 +22,9 @@ Minute-precise 24-hour time is the shortest rendering that separates records wri
 
 ## Compression
 
-- Solubility 75, clarity 0.67 (2026-10-24)
+- Solubility 76, clarity 0.69 (2026-10-28)
 - Compression 0.41, change 0.71 (2026-10-24)
-- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-24)
+- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

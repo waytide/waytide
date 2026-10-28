@@ -62,11 +62,11 @@ Do not delete a test to get it out of the suite, and do not leave a failing one 
 7. Write that exclusion explicitly, because the pattern does not do it.
 8. Do not use a dot-prefixed name for suspension. It would hide the file from directory listings and editor file trees.
 9. A suspended test should stay visible and be passed over.
-10. **Why:** Deleting a test that cannot pass loses the work and the intent. Leaving it in makes every run report an expected failure, which hides the next real one. Renaming keeps the file visible and out of the report. A suspended test is not counted in the pass count, and that cost is accepted because the name shows in the directory listing.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.28, change 0.67, solubility 41 → 75, clarity 0.38 → 0.86, 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: Why points removed, solubility 75 → 76, clarity 0.86 → 0.87; checked: 14 directives, 14 kept, 0 less precise, 0 lost
 
 ## History
 

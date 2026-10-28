@@ -85,13 +85,13 @@ Lines 1–6 below are the opening statements, which come before any section head
 16. The entry notes that it was recorded as an observation, and why it is not yet a rule.
 17. Never change an observation's state.
 18. Where the thinking moves, write a later observation and leave the earlier one as written.
-19. **Why:** discovery produces valuable thinking before it is ready to bind. A place for non-binding hypotheses keeps that thinking without imposing it early as a rule.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.34, change 0.56, solubility 22 → 61, clarity 0.22 → 0.70, 21 directives, 21 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-25, revised: points 11, 12, and 13 take the new wording, that a promoted observation names its result; not checked
 - 2026-10-27, re-checked: 22 directives, 21 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 61 → 59, clarity 0.70 → 0.75; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 
 ## History
 

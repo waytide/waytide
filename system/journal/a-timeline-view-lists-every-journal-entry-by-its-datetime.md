@@ -18,9 +18,9 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 ## Compression
 
-- Solubility 83, clarity 0.78 (2026-10-24)
+- Solubility 80, clarity 0.78 (2026-10-28)
 - Compression 0.44, change 0.64 (2026-10-24)
-- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+- 12 directives, 12 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

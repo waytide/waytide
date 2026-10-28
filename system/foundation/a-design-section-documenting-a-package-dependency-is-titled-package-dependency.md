@@ -8,6 +8,6 @@ A design — an item tagged `[design]` — may have a section that documents a d
 
 ## Compression
 
-- Solubility 99, clarity 1.00 (2026-10-24)
+- Solubility 99, clarity 1.00 (2026-10-28)
 - Compression 0.29, change 0.58 (2026-10-24)
-- 4 directives, 4 kept, 0 less precise, 0 lost (2026-10-24)
+- 2 directives, 2 kept, 0 less precise, 0 lost (2026-10-28)

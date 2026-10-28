@@ -21,11 +21,11 @@ Be economical. Length is not thoroughness, and padding buries the signal. Say wh
 5. Be economical, and do not pad. Length is not thoroughness.
 6. Cut words that carry no information. Say what informs the reader, and stop.
 7. Prefer a short answer that can be expanded on request over a long one that pre-empts every question.
-8. **Why:** the reader's attention is scarce. Summary-first lets the reader grasp the point at once and choose whether to read on.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.20, change 0.44, solubility 86 → 94, clarity 0.74 → 0.89, 9 directives, 9 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 94 → 98, clarity 0.89 → 0.98; checked: 8 directives, 8 kept, 0 less precise, 0 lost
 
 ## History
 

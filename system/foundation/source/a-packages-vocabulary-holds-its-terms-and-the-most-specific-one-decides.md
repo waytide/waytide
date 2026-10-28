@@ -102,7 +102,7 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 ## Which vocabulary decides
 
 1. Four levels hold terms, and a word can appear in more than one.
-2. They decide in this order, from the one that decides first:
+2. They stand in this order, from the most general to the most specific, which decides:
    1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
    2. **The `language` package's vocabulary**: the terms and substitutions that belong to no domain. The `language` vocabulary says so itself.
    3. **An individual package's vocabulary**: the terms and substitutions of one domain.
@@ -127,12 +127,12 @@ Give a package a vocabulary only when its domain has specialized words. When a w
 3. Where a package narrows a term, its entry names the general term it narrows.
 4. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
 5. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
-6. **Why:** several vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.50, solubility 40 → 54, clarity 0.62 → 0.79, 32 directives, 32 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-10-27, re-checked: 35 directives, 31 kept, 3 less precise, 1 lost, 4 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 54 → 49, clarity 0.79 → 0.79; checked: 38 directives, 34 kept, 4 less precise, 0 lost, 1 repair, re-checked with 0 lost
 
 ## History
 

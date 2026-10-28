@@ -12,9 +12,9 @@ The word is used as a general quality of a design. It is judged **by the reader*
 
 ## Compression
 
-- Solubility 90, clarity 0.90 (2026-10-24)
+- Solubility 92, clarity 0.95 (2026-10-28)
 - Compression 0.13, change 0.43 (2026-10-24)
-- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

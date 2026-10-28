@@ -125,11 +125,11 @@ with these options:
 10. Put one idea in each list item.
 11. Present the plan in the response.
 12. Do not write the plan to a file. It is not a `foundation` planning record.
-13. **Why:** the engineer's attention is scarce. For work with negligible rework cost, waits at each hinge buy nothing. The person who knows the work's worth should choose the cadence. Keeping DBE in force stops the choice being a way out of the method. A record showing options put to an absent engineer would be believed, so the mode is recorded honestly. The plan is the one cheap moment of attention before big-batch work.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
 
 ## History
 

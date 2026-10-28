@@ -68,11 +68,11 @@ Name the file and write the datetime line to match the answer. Settle the date f
 6. The harness's own free-text option remains for anything else.
 7. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
 8. Name the file and write the datetime line to match the answer.
-9. **Why:** the writer owns the timestamp, and a guessed time is a fabricated fact.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.38, change 0.83, solubility 43 → 74, clarity 0.52 → 0.81, 24 directives, 24 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 74 → 70, clarity 0.81 → 0.81; checked: 24 directives, 24 kept, 0 less precise, 0 lost
 
 ## History
 

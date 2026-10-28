@@ -74,9 +74,9 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 ## Compression
 
-- Solubility 59, clarity 0.86 (2026-10-24)
+- Solubility 54, clarity 0.76 (2026-10-28)
 - Compression 0.48, change 0.72 (2026-10-24)
-- 38 directives, 38 kept, 0 less precise, 0 lost (2026-10-24)
+- 35 directives, 35 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

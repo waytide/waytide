@@ -74,12 +74,12 @@ end
 
 1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition, which reads inline.
 2. A precondition is the one stated exception to these parts. The precondition rule states what it is, and why these reasons do not reach it.
-3. **Why:** A test block should read as a single relation among named values, not a computation mixed with a check. Naming operands in the context documents each value, gives it an inspection point, and separates control from observation.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.24, change 0.64, solubility 53 → 80, clarity 0.52 → 0.88, 13 directives, 13 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 17 directives, 16 kept, 0 less precise, 1 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 80 → 82, clarity 0.88 → 0.89; checked: 10 directives, 10 kept, 0 less precise, 0 lost
 
 ## History
 

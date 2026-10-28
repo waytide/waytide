@@ -37,13 +37,12 @@ Give the message, the stat, or the log entry when the question is about the comm
 11. There is nothing behind those operations to read.
 12. Ask only where it is genuinely unclear.
 13. A bare SHA with no verb is the ordinary case. Give the substance for it.
-14. **Why:** Reporting the commit's bookkeeping is correct, but it is about the wrong thing. It costs the engineer a second turn to ask again.
-
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.52, change 0.68, solubility 48 → 79, clarity 0.35 → 0.67, 9 directives, 8 kept, 1 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-28, revised: Why points removed, solubility 79 → 89, clarity 0.67 → 0.92; checked: 9 directives, 8 kept, 1 less precise, 0 lost
 
 ## History
 

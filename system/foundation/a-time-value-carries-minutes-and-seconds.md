@@ -29,9 +29,9 @@ That reads as an error rather than as provenance, so the entry went unwritten in
 
 ## Compression
 
-- Solubility 78, clarity 0.77 (2026-10-24)
+- Solubility 69, clarity 0.75 (2026-10-28)
 - Compression 0.48, change 0.72 (2026-10-24)
-- 14 directives, 13 kept, 1 less precise, 0 lost (2026-10-27)
+- 14 directives, 14 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

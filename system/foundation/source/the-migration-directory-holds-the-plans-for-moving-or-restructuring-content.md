@@ -41,12 +41,12 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 22. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
 23. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
 24. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
-25. **Why:** a structural change is ordered, and is the operation most likely to lose content unrecoverably. The kept record leaves the trail of where content went, and why, where a reader looks first.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.34, change 0.63, solubility 33 → 68, clarity 0.33 → 0.76, 14 directives, 14 kept, 0 less precise, 0 lost
 - 2026-10-27, re-checked: 16 directives, 15 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 68 → 64, clarity 0.76 → 0.76; checked: 15 directives, 15 kept, 0 less precise, 0 lost
 
 ## History
 

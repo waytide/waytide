@@ -24,9 +24,9 @@ Give the message, the stat, or the log entry when the question is about the comm
 
 ## Compression
 
-- Solubility 79, clarity 0.67 (2026-10-22)
+- Solubility 89, clarity 0.92 (2026-10-28)
 - Compression 0.52, change 0.68 (2026-10-22)
-- 9 directives, 8 kept, 1 less precise, 0 lost (2026-10-22)
+- 9 directives, 8 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

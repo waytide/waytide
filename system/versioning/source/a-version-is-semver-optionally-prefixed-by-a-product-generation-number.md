@@ -54,11 +54,11 @@ Stated that way, the segment a change increases is **read off what the change do
 17. A project uses one form throughout its life.
 18. A project that carries a generation carries it in every version.
 19. A project without a generation never acquires one at a release.
-20. **Why:** semver answers the upgrade-compatibility question and is kept unchanged. The generation states a product change that no analysis of a change can produce. Keeping it separate stops it reading as a compatibility break.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.44, change 0.70, solubility 52 → 84, clarity 0.66 → 0.93, 19 directives, 19 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+- 2026-10-28, revised: Why points removed, solubility 84 → 84, clarity 0.93 → 0.93; checked: 16 directives, 15 kept, 1 less precise, 0 lost
 
 ## History
 
