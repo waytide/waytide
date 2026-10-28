@@ -2,7 +2,7 @@
 
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`decision-log-convention`).
+- **`waytide/local/logs/log/`** — the log, one file per entry, a one-line title (`decision-log-convention`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s loop-records rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
@@ -36,6 +36,8 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 
 Until 2026-08-18 `log/` was the only log directory.
 
+Until Tue Oct 27 2026 this rule said the log holds one file per decision. Not every entry records a decision, so the engineer settled that it holds one file per entry.
+
 Related:
 
 - the decision-log-convention, the work-sessions-convention, and `design-by-efferent`'s loop-records rule — the three records this groups
@@ -53,3 +55,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT

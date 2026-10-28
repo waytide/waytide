@@ -40,7 +40,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 **Why:** the log is the project's record of what was decided and when, and direction is the most consequential thing a project decides. An artifact holds what the direction *is*. The log holds *when it moved*, which the artifact cannot carry — a resolution added today and one added in March read identically in the file, and their dates say when each was settled rather than what prompted it.
 
-The exclusions are what keep the obligation worth having. A log that carried every completed task and every reworded paragraph would stop being skimmable, which is the one property a one-line-per-decision record is for.
+The exclusions are what keep the obligation worth having. A log that carried every completed task and every reworded paragraph would stop being skimmable, which is the one property a log of short entries is for.
 
 **The mood is required because the log is the artifact a reader finds holding nothing else.** Every other record carries a `**State:**` line saying whether the thing exists. A log entry carries a title. Where the title asserts what a record only settles, the reader has nothing to weigh it against, and reads a proposal as the system's behavior.
 
@@ -49,6 +49,10 @@ The exclusions are what keep the obligation worth having. A log that carried eve
 Write none for a completed task, and none for prose that settles nothing. Write one where a reconciliation finds the direction still standing, naming what it was read against.
 
 Name the record in the entry, and say what happened to it. State what the record settles as the record's, never as the system's behavior, and carry that into the commit subject the entry travels in. Fix no template for the wording.
+
+## History
+
+Until Tue Oct 27 2026 this rule described the log as "a one-line-per-decision record". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
 
 Related:
 
@@ -77,3 +81,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 10:32:53 PM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 10:33:23 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT

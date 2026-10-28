@@ -1,6 +1,6 @@
 # Loop records — `waytide/local/logs/loops/`: one file per feature recording the cycles through the loop
 
-`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
+`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one entry at a time. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line log, which a loop record must not displace (the log stays one line per entry).
 
@@ -30,6 +30,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
 
+Until Tue Oct 27 2026 this rule described the log as "one line per decision". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
+
 Related:
 
 - the DBE vocabulary — loop, hinge, gate, deliberation
@@ -58,3 +60,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 1:41:52 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:46:19 AM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT

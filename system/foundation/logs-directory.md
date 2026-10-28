@@ -2,7 +2,7 @@
 
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`decision-log-convention`).
+- **`waytide/local/logs/log/`** — the log, one file per entry, a one-line title (`decision-log-convention`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s loop-records rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`work-sessions-convention`).
 
