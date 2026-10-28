@@ -1874,6 +1874,25 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Rules that still describe per-rule compiled files**, to be brought in line if phase 2 is affirmed: the compression rule, the binding-rules rule, the harness-announces rule, the startup-display rule, and `CONTRIBUTING.md`.
 
+### Phase 2 — the read of the package files, measured 2026-10-28
+
+**Method:** as for the read before the script, at `9bcbf56`, with the seven package files in place of the 108 compiled rule files. The spend limit stopped four of the first five runs within a second; those four are discarded, and four more were run after it reset.
+
+| session | start (UTC) | duration | tool calls |
+|---|---|---|---|
+| `aefd7a1a` | 22:56:08 | 25.3 s | 18 |
+| `a889c8cb` | 23:36:53 | 42.2 s | 18 |
+| `ff8eef0c` | 23:37:36 | 59.4 s | 14 |
+| `a83fb748` | 23:38:36 | 47.4 s | 24 |
+| `67bf2ff9` | 23:39:23 | 44.8 s | 18 |
+
+- **Median:** 44.8 seconds and 18 tool calls, against 40.8 seconds and 16 before.
+- **Range:** 25.3 to 59.4 seconds, and 14 to 24 tool calls.
+
+**Forecast 6 does not hold.** The package files did not shorten the read. The agent opened each of the 13 files, seven rules files and six vocabularies, with a Read call of its own, and made further calls to find the files, read the local rules and the journal, and resolve the writer. Before, it had read many rule files in one `cat` call. Fewer files did not mean fewer calls.
+
+**The tool counts each call once.** A transcript repeats a tool call's entry as it streams, and the measuring tool counts distinct call ids, so the figures here and before are comparable.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5063,3 +5082,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 2:48:41 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:09:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:35:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:54 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 4:40:48 PM PT
