@@ -2,7 +2,7 @@
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
-**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-takes-category-tags rule), and they are **reserved**: the lifecycle turns on which one a record carries.
+**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-takes-category-tags rule), and the lifecycle turns on which one a record carries.
 
 **That one difference accounts for every other.** A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict. Everything the two kinds do differently follows from it, and nothing else does.
 
@@ -73,7 +73,7 @@ Write the state line as `Active` when the record is written, and update it as th
 Related:
 
 - the implementation-lifecycle rule — the lifecycle this records
-- the a-record-takes-category-tags rule — the tags, and what a reserved tag is
+- the a-record-takes-category-tags rule — how a tag is written
 - the a-record-ends-with-its-state-in-upper-case rule — the filename suffix the state line gives
 - the announce-waytide-at-session-start rule — the notice that reports an open implementation
 - the design-by-efferent loop-records rule — the design record for the same work, which names this one
