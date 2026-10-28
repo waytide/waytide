@@ -1735,6 +1735,10 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 **The engineer settled that the packaged script prints the compressed rules**, the form phase 1 affirmed, so phase 2 measures the read the experiment is heading toward. Phase 1's branch is kept.
 
+### Phase 2 — suspended, 2026-10-27
+
+**Suspended by the engineer, to return to phase 1.** One phase runs at a time, so phase 2 steps aside. Its branch, `experiment/worktree/rule-reduction.packaged-script`, is kept with its start and its rule-form decision. No step of its plan has run. The worktree switches back to phase 1's branch.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4914,3 +4918,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:47:59 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:49:00 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 11:50:02 PM PT
