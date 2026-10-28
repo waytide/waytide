@@ -9,19 +9,19 @@
 **Two SHA columns follow the handle: the commit that created the record, and the last to touch it.** They are standing columns rather than chosen ones, in every list but a list of items and a list of commits.
 
 ```
-|              | created   | changed   | implementation              | state     |
-|--------------|-----------|-----------|-----------------------------|-----------|
-| `2026-08-25` | `159985b` | `ed7ec4a` | Feature — Self-Explanation  | Abandoned |
-| `2026-10-21` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
+|                        | created   | changed   | implementation                   | state     |
+|------------------------|-----------|-----------|----------------------------------|-----------|
+| `2026-08-25T00-36-18Z` | `159985b` | `ed7ec4a` | Feature — Self-Explanation       | Abandoned |
+| `2026-10-21T05-44-56Z` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
 ```
 
 A list of items takes the ordinal and no SHA columns:
 
 ```
-| # |              | item                        | state  |
-|---|--------------|-----------------------------|--------|
-| 1 | `2026-08-10` | A Generalized Description   | Active |
-| 2 | `2026-08-23` | Waytide for content and web | Open   |
+| # |                        | item                        | state  |
+|---|------------------------|-----------------------------|--------|
+| 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
+| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
 ```
 
 **A record never amended shows the same SHA twice, and that is the point.** The pair says whether a record has been touched since it was written. One that has not, and whose subject has moved since, is the stale case a reader is looking for.
@@ -64,19 +64,19 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 8. After the SHA columns comes the title. Then comes one column for the fact asked about.
 
 ```
-|              | created   | changed   | implementation              | state     |
-|--------------|-----------|-----------|-----------------------------|-----------|
-| `2026-08-25` | `159985b` | `ed7ec4a` | Feature — Self-Explanation  | Abandoned |
-| `2026-10-21` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
+|                        | created   | changed   | implementation                   | state     |
+|------------------------|-----------|-----------|----------------------------------|-----------|
+| `2026-08-25T00-36-18Z` | `159985b` | `ed7ec4a` | Feature — Self-Explanation       | Abandoned |
+| `2026-10-21T05-44-56Z` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
 ```
 
 A list of items takes the ordinal and no SHA columns:
 
 ```
-| # |              | item                        | state  |
-|---|--------------|-----------------------------|--------|
-| 1 | `2026-08-10` | A Generalized Description   | Active |
-| 2 | `2026-08-23` | Waytide for content and web | Open   |
+| # |                        | item                        | state  |
+|---|------------------------|-----------------------------|--------|
+| 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
+| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
 ```
 
 9. A record that was never amended shows the same SHA in both columns. This is intended, since it shows the record has not been touched since it was written.
@@ -103,6 +103,7 @@ A list of items takes the ordinal and no SHA columns:
 
 - 2026-10-24, compressed: compression 0.26, change 0.56, solubility 37 → 69, clarity 0.33 → 0.75, 14 directives, 14 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, re-checked: 24 directives, 21 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
+- 2026-10-27, revised: the example tables show the full prefix as the handle; checked: 24 directives, 24 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -115,6 +116,8 @@ The engineer also settled the same day that a list is not called a table unless 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Until Tue Oct 27 2026 a list of items took the two SHA columns and no ordinal, and a field that runs to a sentence sent a list to rows even where the engineer asked for a table. The engineer settled that a list of items takes an ordinal and no SHA columns, and that a table asked for is rendered in rows and columns.
+
+Until Tue Oct 27 2026 the example tables showed the handle as the date alone, such as `2026-08-25`, while the text named the full ISO-8601-UTC prefix. An agent copied the example. The engineer settled that the handle is the full prefix, such as `2026-08-25T00-36-18Z`.
 
 Related:
 
@@ -141,3 +144,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:47:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 8:54:53 PM PT

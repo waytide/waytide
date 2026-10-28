@@ -9,19 +9,19 @@
 **Two SHA columns follow the handle: the commit that created the record, and the last to touch it.** They are standing columns rather than chosen ones, in every list but a list of items and a list of commits.
 
 ```
-|              | created   | changed   | implementation              | state     |
-|--------------|-----------|-----------|-----------------------------|-----------|
-| `2026-08-25` | `159985b` | `ed7ec4a` | Feature — Self-Explanation  | Abandoned |
-| `2026-10-21` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
+|                        | created   | changed   | implementation                   | state     |
+|------------------------|-----------|-----------|----------------------------------|-----------|
+| `2026-08-25T00-36-18Z` | `159985b` | `ed7ec4a` | Feature — Self-Explanation       | Abandoned |
+| `2026-10-21T05-44-56Z` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
 ```
 
 A list of items takes the ordinal and no SHA columns:
 
 ```
-| # |              | item                        | state  |
-|---|--------------|-----------------------------|--------|
-| 1 | `2026-08-10` | A Generalized Description   | Active |
-| 2 | `2026-08-23` | Waytide for content and web | Open   |
+| # |                        | item                        | state  |
+|---|------------------------|-----------------------------|--------|
+| 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
+| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
 ```
 
 **A record never amended shows the same SHA twice, and that is the point.** The pair says whether a record has been touched since it was written. One that has not, and whose subject has moved since, is the stale case a reader is looking for.
@@ -56,7 +56,7 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 
 - Solubility 69, clarity 0.75 (2026-10-24)
 - Compression 0.26, change 0.56 (2026-10-24)
-- 24 directives, 21 kept, 3 less precise, 0 lost (2026-10-27)
+- 24 directives, 24 kept, 0 less precise, 0 lost (2026-10-27)
 
 Related:
 
