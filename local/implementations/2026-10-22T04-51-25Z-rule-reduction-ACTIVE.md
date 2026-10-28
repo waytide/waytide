@@ -1844,6 +1844,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Against the derived-rule-files experiment's figures,** a median of 29.6 seconds and 9 tool calls on the compiled read, this read is slower and takes more calls, though it is smaller. The project has grown since, with local rules and a journal now in the read, and the agent's grouping of its reads varies.
 
+### Phase 2 — the question widens to one rules file per package, 2026-10-28
+
+**The engineer added to the phase, before its work: the rules are packaged into one file per package.** Each package's rules sit in a single file, and there are no individual rule files to read. The compiler writes the package files.
+
+**The loader that reads the package files prints each rule's title as it reads it, for the engineer.** The titles show what was loaded, so a missing package or rule can be seen. They are not for the agent, which already holds each title in the rule's text.
+
+**Forecast, added before the work:**
+
+6. **Reading one file per package, the read falls to two to four tool calls and well under the 40.8 seconds measured today.** About eight files replace about 110, and an agent can open several in one call. *Moderate confidence.*
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5031,3 +5041,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 2:35:50 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:44:30 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:48:41 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:09:58 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 3:35:58 PM PT
