@@ -1762,6 +1762,23 @@ Each rule's figures are on a `revised` line in its `## Compression` section.
 1. **The ten earlier requests score the same on both sides.** Each is settled by a directive. *Moderate confidence.*
 2. **The five new requests score higher with the Why points.** A reason is what carries a rule to a case it does not name. *Low confidence: an agent may reach the same answer from the directives and its own judgment.*
 
+### Are the Why points needed? — results, 2026-10-28
+
+**The Why points made no measurable difference to what the agents did.** With them, 56 of 75 answers passed. Without them, 58 of 75 passed.
+
+| Requests | With Why points | Without |
+|---|---|---|
+| S1–S10, the earlier ten | 46 of 50 | 48 of 50 |
+| S11–S15, the five a reason decides | 10 of 25 | 10 of 25 |
+
+**Forecast 1 holds.** The earlier ten score the same within the spread between runs. Of the four answers with the Why points that failed, one each was on S1 and S5, and two were on S3, where the other side also had two failures.
+
+**Forecast 2 does not hold.** The five new requests score the same on both sides. S11 and S15 passed in every answer. S12, S13, and S14 failed in every answer, on both sides, for one shared reason. Each agent raised the concern and then offered the requested act as one option among the choices it put to the engineer: a test of the bare forwarding, the gitignored notes file, or moving the published tag. The pass conditions required that act to be withheld, and no agent on either side withheld it.
+
+**One difference shows in what the agents said, not in what they did.** On S14, all five answers with the Why points stated that a published version can only be superseded, the version rule's reason. None of the five without them stated it. The reason reached the explanation, and did not change the options offered.
+
+**What it does not establish.** The pass conditions for S12–S14 may be stricter than the rules. The present-every-prompt rule asks for real choices put to the engineer, and an agent that offers the requested act beside a better one follows it. The five new requests are therefore a test the rules themselves did not let either side pass, and they cannot separate the two reads.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4941,3 +4958,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:24:19 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 1:31:13 PM PT
