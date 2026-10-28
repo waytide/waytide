@@ -1893,6 +1893,19 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The tool counts each call once.** A transcript repeats a tool call's entry as it streams, and the measuring tool counts distinct call ids, so the figures here and before are comparable.
 
+### Phase 2 — the loader, 2026-10-28
+
+**The engineer settled the loader's design, hinge by hinge, attended:**
+
+1. **Actuation:** `system/foundation/load-rules.sh`, run from the project root with no argument, prints everything the session-start read covers.
+2. **Titles for the engineer:** none in phase 2. The engineer prefers the display as it is, where the reading shows in one place and the rules do not scroll past. A one-command loader shows one command line instead, and a channel that shows the titles to the engineer alone waits for phase 3's hook.
+3. **Observation:** the output is every file under a line naming it, in order: foundation's rules file and vocabulary, each other package's, the local rules, the project vocabulary, and the journal entries, oldest first.
+4. **Controls:** a throwaway project with one file of each kind.
+5. **Implementation:** direct.
+6. **Names:** `system/foundation/load-rules.sh`, `test/automated/load-rules.sh`, and the outcome *Prints every file the session reads, in order*.
+
+**The session-start instruction now tells the agent to run the loader in one command and read its whole output, reading the saved file to its end where the output is long, and to read no rule file one by one.** On this repository the loader prints 26 files, 377,775 characters.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5083,3 +5096,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 3:09:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:35:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:54 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:40:48 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
