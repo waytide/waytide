@@ -32,7 +32,9 @@ else
   exit 0
 fi
 
-rule=$system/foundation/the-startup-display-prints-once-per-session.md
+# The source rule, since the compiled rules are one file per package. Only its body is read, up to
+# its Compressed section, whose fenced blocks would shift the count below.
+rule=$system/foundation/source/the-startup-display-prints-once-per-session.md
 [ -f "$rule" ] || exit 0
 
 # Only the exact command. The closing quote is what makes the match exact.
@@ -44,6 +46,7 @@ esac
 # Fenced blocks 1, 3, 4, and 5, with one blank line between them. Block 2 is the package-set
 # example, which the agent prints.
 display=$(awk '
+  /^## Compressed$/ { exit }
   /^```/ {
     if (inside) { inside = 0; next }
     inside = 1; block++

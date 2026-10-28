@@ -1854,6 +1854,26 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 6. **Reading one file per package, the read falls to two to four tool calls and well under the 40.8 seconds measured today.** About eight files replace about 110, and an agent can open several in one call. *Moderate confidence.*
 
+### Phase 2 — the compiler writes one rules file per package, 2026-10-28
+
+**The engineer settled the design, hinge by hinge, attended:**
+
+1. **Actuation:** plain `./compile.sh`, which writes the package files in place of the per-rule files.
+2. **Observation:** a sample package's `rules.md` is its two rules, in path order, and nothing else.
+3. **What each rule carries:** its title, a `Source:` line with the plain path of its source rule, and its compressed text. The compression figures and the `Related:` list are left out; they stay in the source.
+4. **Controls:** two sample rules, each with a body, a compressed text, and a footer, like a real rule.
+5. **Implementation:** direct.
+6. **Names:** `test/automated/package-rules-file.sh`, the outcome *Writes each rule's title, source, and compressed text*, and `system/<package>/rules.md`.
+
+**The result:** seven package files, 267,148 characters, replace the 108 compiled rule files, which are removed. The compiler no longer takes `--compressed`; it always writes the compressed text. The read the session start covers is now the seven package files, the six vocabularies, the local rules, and the journal.
+
+**Two consequences:**
+
+- The startup display took its figure from a compiled rule file. It now reads the source rule's body, up to its Compressed section.
+- The old compile test checked the per-rule files. At the engineer's direction it is removed, and the new test covers the compiler.
+
+**Rules that still describe per-rule compiled files**, to be brought in line if phase 2 is affirmed: the compression rule, the binding-rules rule, the harness-announces rule, the startup-display rule, and `CONTRIBUTING.md`.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5042,3 +5062,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 2:44:30 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:48:41 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:09:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:35:58 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:54 PM PT
