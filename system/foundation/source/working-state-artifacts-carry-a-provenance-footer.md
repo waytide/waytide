@@ -15,7 +15,7 @@ Its authoring time is already in its ISO-8601-UTC filename and its commit. A foo
 
 **Why:** a working-state artifact is a document meant to be read on its own. A narrative, a design, an experiment record. Its provenance — who wrote it, when, and who changed it since — is part of what a reader needs. So it belongs in the file rather than only in version-control history the reader would have to go query.
 
-This is a different justification from the rule-file footer's (which recovers history that subtree strips). Stating it once, here, keeps every working-state convention from repeating it. The log is exempt because its one-line-per-file shape already carries its provenance in the filename, and a footer would break that shape.
+This is a different justification from the rule-file footer's (which recovers history that subtree strips). Stating it once, here, keeps every working-state convention from repeating it. The log is exempt because its one-file-per-entry shape already carries its provenance in the filename, and a footer would break that shape.
 
 **How to apply:** end a provenance footer on every one of these: an implementation record, whether an experiment or a feature; an item, whatever it is tagged; a loop record; and a work session record. The format is the record-a-rules-authorship-in-a-provenance-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/logs/log/` entry.
 
@@ -43,10 +43,13 @@ This is a different justification from the rule-file footer's (which recovers hi
 ## Compression
 
 - 2026-10-24, compressed: compression 0.42, change 0.64, solubility 49 → 80, clarity 0.48 → 0.81, 18 directives, 18 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 
 ## History
 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
+
+Until Tue Oct 27 2026 this rule described the log as "its one-line-per-file shape". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
 
 Related:
 
@@ -88,3 +91,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT

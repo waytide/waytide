@@ -2,7 +2,7 @@
 
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the log, one file per decision, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
+- **`waytide/local/logs/log/`** — the log, one file per entry, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
 - **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
 - **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
 
@@ -61,6 +61,7 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 
 - 2026-10-24, compressed: compression 0.19, change 0.55, solubility 40 → 73, clarity 0.27 → 0.82, 14 directives, 14 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-27, re-checked: 14 directives, 12 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 
 ## History
 
@@ -75,6 +76,8 @@ Until Mon Oct 26 2026 this rule called the records under `logs/` "the running re
 Until Mon Oct 26 2026 this rule was named the-logs-directory-groups-the-running-records and titled "The logs directory groups the running records".
 
 Until 2026-08-18 `log/` was the only log directory.
+
+Until Tue Oct 27 2026 this rule said the log holds one file per decision. Not every entry records a decision, so the engineer settled that it holds one file per entry.
 
 Related:
 
@@ -105,3 +108,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT

@@ -1,6 +1,6 @@
 # The log holds one file per entry, with a one-line title
 
-Record decisions made during sessions as one file per decision in `waytide/local/logs/log/`.
+Record the log's entries made during sessions as one file per entry in `waytide/local/logs/log/`.
 
 - **Trigger:** detect — write an entry whenever a real decision is made (the user picks among alternatives, accepts or rejects an approach, or sets a rule that will guide future work). Don't wait to be asked. When in doubt, log it. Over-logging is cheaper than under-logging here.
 - **Filename:** the ISO-8601-UTC prefix convention (see the file-names rule), computed with `date -u +%Y-%m-%dT%H-%M-%SZ`. Contributors are globally distributed, so UTC is mandatory — never local time.
@@ -8,7 +8,7 @@ Record decisions made during sessions as one file per decision in `waytide/local
 - **Commit:** include log entries in the same commit as the change they describe, or commit them separately with a `Log:` prefix. Don't sit on them.
 - **The log is never consolidated on the agent's initiative.** Do not combine, merge, rewrite, or reformat log files, and do not propose doing so. The log is an append-only record of what was decided and when. Consolidating it destroys that granular history. Consolidation happens **only on the explicit command of the user, and even then only after it is confirmed with the project's stakeholders**. One file per decision is the record, not a draft to be tidied later. For a readable overview of the log, ask Claude for a **summary** — a projection generated at read-time — rather than consolidating the files. The summary reads the record without destroying it. **That summary is never written to a file.** A stored recap is a second copy of what the log and git already hold, it goes stale the moment it is not updated, and it is regenerated in the response instead.
 
-**Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A one-line-per-decision log, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
+**Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A log of short entries, one file each, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
 
 **How to apply:** when a decision is made, write a titled entry under `waytide/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
 

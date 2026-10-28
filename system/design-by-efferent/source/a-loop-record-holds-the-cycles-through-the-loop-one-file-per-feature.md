@@ -1,6 +1,6 @@
 # A loop record holds the cycles through the loop, one file per feature
 
-`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one line per decision. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
+`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one entry at a time. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line log, which a loop record must not displace (the log stays one line per entry).
 
@@ -30,7 +30,7 @@
 4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
 5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
 6. A loop record must not displace the log.
-7. The log stays one line per decision.
+7. The log stays one entry at a time.
 
 ## Format
 
@@ -67,6 +67,7 @@
 - 2026-10-24, compressed: compression 0.22, change 0.57, solubility 45 → 64, clarity 0.45 → 0.68, 23 directives, 23 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: points 4 and 5 and How to apply's point 2 name the unattended case; not checked
 - 2026-10-27, re-checked: 22 directives, 22 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 
 ## History
 
@@ -77,6 +78,8 @@ Until Sun Oct 25 2026 this rule was named loop-records and titled "Loop records 
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
+Until Tue Oct 27 2026 this rule described the log as "one line per decision". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
 
 Related:
 
@@ -114,3 +117,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT

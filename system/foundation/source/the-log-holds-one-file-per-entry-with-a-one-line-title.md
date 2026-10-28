@@ -1,6 +1,6 @@
 # The log holds one file per entry, with a one-line title
 
-Record decisions made during sessions as one file per decision in `waytide/local/logs/log/`.
+Record the log's entries made during sessions as one file per entry in `waytide/local/logs/log/`.
 
 - **Trigger:** detect — write an entry whenever a real decision is made (the user picks among alternatives, accepts or rejects an approach, or sets a rule that will guide future work). Don't wait to be asked. When in doubt, log it. Over-logging is cheaper than under-logging here.
 - **Filename:** the ISO-8601-UTC prefix convention (see the file-names rule), computed with `date -u +%Y-%m-%dT%H-%M-%SZ`. Contributors are globally distributed, so UTC is mandatory — never local time.
@@ -8,14 +8,14 @@ Record decisions made during sessions as one file per decision in `waytide/local
 - **Commit:** include log entries in the same commit as the change they describe, or commit them separately with a `Log:` prefix. Don't sit on them.
 - **The log is never consolidated on the agent's initiative.** Do not combine, merge, rewrite, or reformat log files, and do not propose doing so. The log is an append-only record of what was decided and when. Consolidating it destroys that granular history. Consolidation happens **only on the explicit command of the user, and even then only after it is confirmed with the project's stakeholders**. One file per decision is the record, not a draft to be tidied later. For a readable overview of the log, ask Claude for a **summary** — a projection generated at read-time — rather than consolidating the files. The summary reads the record without destroying it. **That summary is never written to a file.** A stored recap is a second copy of what the log and git already hold, it goes stale the moment it is not updated, and it is regenerated in the response instead.
 
-**Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A one-line-per-decision log, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
+**Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A log of short entries, one file each, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
 
 **How to apply:** when a decision is made, write a titled entry under `waytide/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
 
 ## Compressed
 
 1. Record each decision made during a session as its own file in `waytide/local/logs/log/`.
-2. Write one file per decision.
+2. Write one file per entry.
 3. Give each entry a one-line title.
 
 ## Trigger
@@ -60,13 +60,14 @@ Record decisions made during sessions as one file per decision in `waytide/local
 6. Never write that summary to a file.
 7. Give it in the response instead.
 
-8. **Why:** a project's decisions are easy to lose and expensive to reconstruct. A one-line-per-decision log, append-only and committed with the code, keeps a complete, skimmable, durable record.
+8. **Why:** a project's decisions are easy to lose and expensive to reconstruct. A log of short entries, one file each, append-only and committed with the code, keeps a complete, skimmable, durable record.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.60, solubility 34 → 65, clarity 0.26 → 0.70, 30 directives, 30 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: point 9 takes "An untagged entry with no body is one line"; not checked
 - 2026-10-27, re-checked: 24 directives, 24 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 
 ## History
 
@@ -77,6 +78,10 @@ Until Sun Oct 25 2026 this rule was named decision-log-convention and titled "`w
 Until Mon Oct 26 2026 this rule was named the-log-holds-one-file-per-decision-with-a-one-line-title and titled "The log holds one file per decision, with a one-line title".
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
+
+Until Tue Oct 27 2026 this rule described the log as "a one-line-per-decision log". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
+
+Until Tue Oct 27 2026 this rule said the log holds one file per decision. Not every entry records a decision, so the engineer settled that it holds one file per entry.
 
 Related:
 
@@ -123,3 +128,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:41:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT

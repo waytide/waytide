@@ -44,7 +44,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 **Why:** the log is the project's record of what was decided and when, and direction is the most consequential thing a project decides. An artifact holds what the direction *is*. The log holds *when it moved*, which the artifact cannot carry — a resolution added today and one added in March read identically in the file, and their dates say when each was settled rather than what prompted it.
 
-The exclusions are what keep the obligation worth having. A log that carried every completed task and every reworded paragraph would stop being skimmable, which is the one property a one-line-per-decision record is for.
+The exclusions are what keep the obligation worth having. A log that carried every completed task and every reworded paragraph would stop being skimmable, which is the one property a log of short entries is for.
 
 **The mood is required because the log is the artifact a reader finds holding nothing else.** Every other record carries a `**State:**` line saying whether the thing exists. A log entry carries a title. Where the title asserts what a record only settles, the reader has nothing to weigh it against, and reads a proposal as the system's behavior.
 
@@ -94,12 +94,15 @@ Name the record in the entry, and say what happened to it. State what the record
 - 2026-10-22, revised: rewritten in short sentences, compression 0.59, solubility 35 → 44, clarity 0.20 → 0.47; checked: 19 directives, 16 kept, 3 less precise, 0 lost
 - 2026-10-22, revised: restored directive 5, compression 0.58, change 0.80
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
+- 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles".
 
 Until Mon Oct 26 2026 this rule was named an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state and titled "An item takes a log entry on creation, on each settled resolution, and on a change of state".
+
+Until Tue Oct 27 2026 this rule described the log as "a one-line-per-decision record". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
 
 Related:
 
@@ -157,3 +160,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
