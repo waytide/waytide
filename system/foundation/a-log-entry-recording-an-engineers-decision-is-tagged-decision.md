@@ -18,7 +18,7 @@
 
 **An entry may carry other tags beside this one.** An engineer's decision to stop doing something is tagged `[decision] [suspended]`.
 
-**`[decision]` is a reserved tag.** What it marks is fixed here, and the set of the engineer's decisions is read from it.
+**What `[decision]` marks is fixed here**, and the set of the engineer's decisions is read from it.
 
 **Why:** the log carries the agent's acts and the engineer's decisions in the same form, one line each. A reader who reconsiders a direction needs to know which were the engineer's. A decision the engineer made is changed by the engineer, and an act of the agent is corrected against the rule it followed. With the tag, the engineer's decisions are a set that one search finds.
 
@@ -33,5 +33,5 @@
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form
-- the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
-- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other reserved tag the log carries
+- the a-record-may-be-categorized-with-square-bracket-tags rule — how a tag is written
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other tag the log reads

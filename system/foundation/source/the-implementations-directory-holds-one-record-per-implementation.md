@@ -2,7 +2,7 @@
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
-**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule), and they are **reserved**: the lifecycle turns on which one a record carries.
+**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule), and the lifecycle turns on which one a record carries.
 
 **That one difference accounts for every other.** A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict. Everything the two kinds do differently follows from it, and nothing else does.
 
@@ -79,7 +79,7 @@ Write the state line as `Active` when the record is written, and update it as th
 5. An experiment is tagged `[experiment]` and is built to a question.
 6. A feature is tagged `[feature]` and is built to an intent.
 7. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-8. Both tags are reserved. The lifecycle turns on which one a record carries.
+8. The lifecycle turns on which one a record carries.
 9. A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict.
 10. Every difference between the two kinds follows from that one difference, and from nothing else.
 
@@ -165,6 +165,7 @@ Write the state line as `Active` when the record is written, and update it as th
 - 2026-10-25, revised: points 7 and 10 take the new wording, that Suspended is a state; not checked
 - 2026-10-27, re-checked: 58 directives, 58 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: Active is the in-progress state; checked: 46 directives, 46 kept, 0 less precise, 0 lost
+- 2026-10-27, revised: `[experiment]` and `[feature]` are no longer called reserved tags, a term the engineer settled; not checked
 
 ## History
 
@@ -176,10 +177,12 @@ Until Mon Oct 26 2026 this rule was named the-implementations-directory-records-
 
 Until 2026-10-26 the absence of a state line was an implementation's in-progress state. The line was added when the record reached a word, and an open record took no filename suffix. The engineer settled that implementations take the Active state, as items do, which makes the in-progress state a word on the line and in the filename.
 
+Until Tue Oct 27 2026 this rule called `[experiment]` and `[feature]` reserved tags. The engineer settled that a tag means what a rule about it says, with no reserved category.
+
 Related:
 
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
-- the a-record-may-be-categorized-with-square-bracket-tags rule — the tags, and what a reserved tag is
+- the a-record-may-be-categorized-with-square-bracket-tags rule — how a tag is written
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix the state line gives
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
 - the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
@@ -209,3 +212,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT

@@ -18,7 +18,7 @@
 
 **An entry may carry other tags beside this one.** An engineer's decision to stop doing something is tagged `[decision] [suspended]`.
 
-**`[decision]` is a reserved tag.** What it marks is fixed here, and the set of the engineer's decisions is read from it.
+**What `[decision]` marks is fixed here**, and the set of the engineer's decisions is read from it.
 
 **Why:** the log carries the agent's acts and the engineer's decisions in the same form, one line each. A reader who reconsiders a direction needs to know which were the engineer's. A decision the engineer made is changed by the engineer, and an act of the agent is corrected against the rule it followed. With the tag, the engineer's decisions are a set that one search finds.
 
@@ -47,23 +47,26 @@
 
 3. An entry may carry other tags beside this one.
 4. An engineer's decision to stop doing something is tagged `[decision] [suspended]`.
-5. `[decision]` is a reserved tag. What it marks is fixed here.
+5. What `[decision]` marks is fixed here.
 6. The set of the engineer's decisions is read from this tag.
 7. **Why:** the log carries agent acts and engineer decisions in the same form. An engineer's decision is changed by the engineer, while an agent's act is corrected against its rule, so one search must find the engineer's decisions.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.15, change 0.37, solubility 72 → 93, clarity 0.62 → 1.00, 8 directives, 8 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, revised: `[decision]` is no longer called a reserved tag, a term the engineer settled; not checked
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-decision-the-engineer-made-is-tagged-decision and titled "A log entry recording a decision the engineer made is tagged `[decision]`".
 
+Until Tue Oct 27 2026 this rule called `[decision]` a reserved tag. The engineer settled that a tag means what a rule about it says, with no reserved category.
+
 Related:
 
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry's form
-- the a-record-may-be-categorized-with-square-bracket-tags rule — the tag protocol, and what a reserved tag is
-- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other reserved tag the log carries
+- the a-record-may-be-categorized-with-square-bracket-tags rule — how a tag is written
+- the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — `[suspended]`, the other tag the log reads
 
 ---
 
@@ -76,3 +79,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:39 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT

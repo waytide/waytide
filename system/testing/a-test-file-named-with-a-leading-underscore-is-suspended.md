@@ -10,7 +10,7 @@
 
 **It is not a suspension in the `foundation` a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule's sense.** That rule governs something the project **did** and stopped: the thing is **removed**, and a log entry tagged `[suspended]` says what it cost and what else changed. A test file marked this way is removed from nothing.
 
-**So a suspended test takes no `[suspended]` log entry.** The reserved tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the log's own trigger reaches it like any other.
+**So a suspended test takes no `[suspended]` log entry.** The `[suspended]` tag marks the removal act, and no removal happened. That the test was suspended is an ordinary decision, and the log's own trigger reaches it like any other.
 
 ## The mark is in the filename because that is what a suite reads
 

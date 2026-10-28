@@ -26,7 +26,7 @@
 
 **A log entry may carry other tags beside this one.** Nothing here reserves the line, and nothing excludes any record from tagging.
 
-**`[suspended]` is a reserved tag.** What it marks is fixed here, and the set of suspensions is read from it.
+**What `[suspended]` marks is fixed here**, and the set of suspensions is read from it.
 
 **Why:** an undo queue held the suspended thing itself under `waytide/local/suspended/`, with a return address and a list of reconciliations to reverse. It ran from 2026-08-03 to 2026-08-18 and accumulated eleven entries. **Not one was restored.** The mechanism was built for a reversal that never happened, and its cost was paid on every suspension: a file to place, four canonical lines to write, and a growing directory that a reader had to be told the purpose of.
 
@@ -65,7 +65,7 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 
 2. This is the one form every record uses, per the a-record-may-be-categorized-with-square-bracket-tags rule. A log entry's tags sit where an item's and an implementation record's do.
 3. A log entry may carry other tags beside this one.
-4. `[suspended]` is a reserved tag. What it marks is fixed here.
+4. What `[suspended]` marks is fixed here.
 5. The set of suspensions is read from this tag.
 
 ## How to apply
@@ -81,12 +81,15 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.52, solubility 39 → 70, clarity 0.31 → 0.76, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-10-27, revised: `[suspended]` is no longer called a reserved tag, a term the engineer settled; not checked
 
 ## History
 
 A leading-tag form was written on 2026-08-18 and superseded the same day.
 
 Until Sun Oct 25 2026 this rule was named a-suspension-is-a-log-entry and titled "A suspension is a log entry tagged `[suspended]`, and nothing is moved anywhere".
+
+Until Tue Oct 27 2026 this rule called `[suspended]` a reserved tag. The engineer settled that a tag means what a rule about it says, with no reserved category.
 
 Related:
 
@@ -116,3 +119,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
