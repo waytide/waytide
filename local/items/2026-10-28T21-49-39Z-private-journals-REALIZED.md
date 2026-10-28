@@ -1,6 +1,6 @@
 # Private journals
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **A writer may keep journal entries private, where every entry is now committed with the project and shared.** This restores the idea of `local/items/2026-10-25T22-18-21Z-a-journal-entry-may-be-private-ABANDONED.md`. That item stays abandoned, since an abandoned item is not taken back, and this one carries the idea forward.
@@ -41,3 +41,4 @@ Authored by Scott Bellware on Wed Oct 28 2026 at 2:49:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:21:16 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:45:50 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:51:08 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT

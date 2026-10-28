@@ -10,7 +10,9 @@
 
 ## State
 
-- **State:** Active
+- **State:** Completed
+
+**Completed on 2026-10-28, at the engineer's direction.** The `journal` package carries the private-journal-convention and the a-private-journal-is-read-only-on-command rule, and its vocabulary reserves shared journal and private journal. The automated suite passes, and the branch integrates into `master` as `4eef021`.
 
 ## Setup
 
@@ -32,8 +34,11 @@
 | Kind | Feature, taken by the agent from the item's settled intent rather than put as a question | Wed Oct 28 2026 at 3:53:38 PM PT |
 | Working location | Branch and worktree, by the engineer's instruction | Wed Oct 28 2026 at 3:53:38 PM PT |
 | Participation | Attended | Wed Oct 28 2026 at 3:53:38 PM PT |
+| Vocabulary category | Shared journal and private journal reserved, ETE agent artifacts | Wed Oct 28 2026 at 4:36:21 PM PT |
+| Logging a directed change to a private entry | Not logged | Wed Oct 28 2026 at 4:43:00 PM PT |
 | Pending item changes | Committed on `master` before the branch, as `e10ab69` | Wed Oct 28 2026 at 3:53:38 PM PT |
 
 ---
 
 Authored by Scott Bellware on Wed Oct 28 2026 at 3:53:38 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
