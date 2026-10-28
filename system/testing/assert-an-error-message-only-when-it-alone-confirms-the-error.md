@@ -15,9 +15,9 @@ In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup
 
 ## Compression
 
-- Solubility 85, clarity 0.87 (2026-10-24)
+- Solubility 82, clarity 0.87 (2026-10-28)
 - Compression 0.20, change 0.47 (2026-10-24)
-- 8 directives, 8 kept, 0 less precise, 0 lost (2026-10-24)
+- 5 directives, 5 kept, 0 less precise, 0 lost (2026-10-28)
 
 Related:
 

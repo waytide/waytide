@@ -64,7 +64,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 3. Preserve the writer's words, meaning, and emphasis.
 4. Correct the grammar and the flow.
 5. Invent no fact, and embellish nothing.
-6. **Structure:** write a `# <title>`, then the datetime line, then the optional `**Tags:**` line.
+6. **Structure:** write a `# <title>`, then the datetime line, then a `**Tags:**` line where the entry has tags.
 7. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
 8. Write the datetime line by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule.
 9. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
@@ -90,22 +90,14 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 6. The time belongs to the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule.
 7. That ask fires wherever the writer gave no time, including where they gave only a day.
 8. *Yesterday* and *today* fix the day and say nothing about the hour.
-
-## How to apply
-
-1. When the writer dictates an event or experience, resolve `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
-2. Create a new file in `waytide/local/journal/<username>/` with the local-time filename stamp.
-3. Write the `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, and a `**Summary:**` line.
-4. Then write the first-person narrative.
-5. Set the filename stamp to the referenced past time where the entry is not about today.
-6. Where the writer gave no time, ask by the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule. Stamp the file to their answer.
-7. A day the writer named is not a time.
-8. **Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, sort chronologically, and reference. Per-writer directories separate each writer's record from others' and from the agent's records.
+9. Stamp the file to the writer's answer to that ask.
+10. **Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, sort chronologically, and reference. Per-writer directories separate each writer's record from others' and from the agent's records.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.21, change 0.53, solubility 32 → 53, clarity 0.50 → 0.84, 36 directives, 36 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 53 → 53, clarity 0.84 → 0.86; checked: 33 directives, 32 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 
 ## History
 

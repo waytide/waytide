@@ -20,9 +20,9 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 
 ## Compression
 
-- Solubility 83, clarity 0.84 (2026-10-24)
+- Solubility 75, clarity 0.72 (2026-10-28)
 - Compression 0.24, change 0.48 (2026-10-24)
-- 15 directives, 15 kept, 0 less precise, 0 lost (2026-10-24)
+- 12 directives, 8 kept, 4 less precise, 0 lost (2026-10-28)
 
 Related:
 

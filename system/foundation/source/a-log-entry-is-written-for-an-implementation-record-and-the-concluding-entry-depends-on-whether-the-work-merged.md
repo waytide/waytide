@@ -62,6 +62,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule).
 10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
 11. Do not rely on the practice of committing the record to `master` while the work is on a branch.
+12. Write the findings, and for abandoned work the reasoning given for stopping, into the entry, so that `master` holds them without the record.
 
 ## What is already required, and not restated
 
@@ -75,20 +76,14 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 2. Those confirmations are the working-location selection, the attended-or-unattended selection, a worktree added mid-flight, and branch deletion. They are recorded in the record.
 3. Write no log entry for a turn of the work.
 4. The hinges, the cycles, and the runs belong to the loop record and the implementation record.
-
-## How to apply
-
-1. At the conclusion, ask whether the work merged.
-2. Where it merged, write a summary marker naming the record and its state.
-3. Where it did not, write the question or the intent, and the verdict or the outcome. Add the findings where there are any, and for abandoned work the reasoning given for stopping, so `master` holds them without the record.
-
-**Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The log answers what this project has decided, for a reader who holds nothing.
+5. **Why:** An unmerged branch is deleted on confirmation, so a record existing only there is lost. The log entry is then the only durable trace on `master`. The log answers what this project has decided, for a reader who holds nothing.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.35, change 0.67, solubility 25 → 62, clarity 0.28 → 0.80, 20 directives, 20 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-25, revised: points 2 and 3 take the new wording, that the merge decides the concluding entry; not checked
 - 2026-10-27, re-checked: 18 directives, 18 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 62 → 54, clarity 0.80 → 0.72; checked: 14 directives, 13 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
 
 ## History
 

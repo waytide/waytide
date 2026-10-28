@@ -33,6 +33,7 @@ The loop, by turn:
 9. The human owns the efferent design, meaning what the actuation looks like.
 10. The human owns the solubility verdict on what comes back.
 11. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
+12. Let the AI fill everything other than the actuation and the solubility verdict.
 
 ## The loop, by turn
 
@@ -54,22 +55,15 @@ The loop, by turn:
 16. The AI adds an inner `context` and extends the implementation just enough.
 17. The human deliberates solubility again.
 18. **Exit on solubility, not coverage.** Stop when the unit has dissolved into the reader's understanding, not at an assertion count.
-
-## How to apply
-
-1. Run the loop above.
-2. Keep turns small: one actuation, one outcome, so the cradle stays legible during deliberation.
-3. Hand the human the actuation to edit or approve.
-4. Let the AI fill everything other than the actuation and the hinges.
-5. Do not ask the human to confirm a failing or passing test.
-6. Stop when solubility is satisfied.
-7. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
+19. Keep turns small: one actuation, one outcome, so the cradle stays legible during deliberation.
+20. **Why:** Design judgment stays with the human, and applies only at the hinges. The AI's failure mode, regressing toward average poorly-designed code, first shows as an awkward actuation, so a wait there catches it at the interface.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.13, change 0.38, solubility 50 → 66, clarity 0.59 → 0.79, 28 directives, 28 kept, 0 less precise, 0 lost
 - 2026-10-24, revised: point 9 takes the definition of test mechanics; not checked
 - 2026-10-27, re-checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 66 → 61, clarity 0.79 → 0.76; checked: 26 directives, 25 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
 
 ## History
 

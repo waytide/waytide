@@ -42,9 +42,9 @@ Keep each part tight. Read current state before printing — do not report stale
 
 ## Compression
 
-- Solubility 51, clarity 0.83 (2026-10-24)
+- Solubility 51, clarity 0.83 (2026-10-28)
 - Compression 0.10, change 0.41 (2026-10-24)
-- 32 directives, 32 kept, 0 less precise, 0 lost (2026-10-24)
+- 29 directives, 28 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

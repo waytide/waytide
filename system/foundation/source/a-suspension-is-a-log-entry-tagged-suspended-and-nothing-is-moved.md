@@ -39,18 +39,20 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 ## Compressed
 
 1. When the project stops doing something, log it and tag the entry `[suspended]`. That is the whole act.
-2. Nothing moves to any directory. Nothing is kept beside the entry.
+2. Nothing moves to any directory. Nothing is kept beside the entry, and no copy is kept anywhere.
 3. Anything the project *did* can be suspended: a rule that became ceremony, a procedure nobody runs, a report nobody reads, a step that costs more than it is worth. Only what the project did is suspended this way.
 4. Something the project only wanted is not suspended this way.
 5. An item set aside takes `**State:** Suspended` and stays where it is. That is a different act with a different record.
+6. Do not tag an item's log entry `[suspended]`.
+7. When something the project does is no longer justified, remove it.
 
 ## What the entry carries
 
 1. Like every log entry, the title states what was suspended and why.
 2. The why gives what it cost and what it stopped buying.
-3. The entry names, in its own clause, what else changed.
+3. Reconcile whatever cites the removed thing. The entry names, in its own clause, what else changed.
 4. For example, removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule.
-5. The file is removed in the same commit as the entry.
+5. The suspended thing's file is removed in the same commit as the entry.
 6. Git holds the removed text, reachable by path from `master`'s history.
 
 ## The tag
@@ -67,21 +69,13 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 3. A log entry may carry other tags beside this one.
 4. What `[suspended]` marks is fixed here.
 5. The set of suspensions is read from this tag.
-
-## How to apply
-
-1. When something the project does is no longer justified, remove it.
-2. Reconcile what cites it.
-3. Write one log entry tagged `[suspended]`, saying what was stopped, why, and what else changed.
-4. Commit the removal and the entry together.
-5. Do not keep a copy of the removed thing.
-6. Do not tag an item's log entry this way. An item set aside carries `**State:** Suspended` and is not removed.
-7. **Why:** a former undo queue under `waytide/local/suspended/` held eleven suspended things and none was restored. Its cost was paid on every suspension. The log entry guards against a thing returning reconstructed from memory, naming what was stopped, why, and what else changed, while git holds the text.
+6. **Why:** a former undo queue under `waytide/local/suspended/` held eleven suspended things and none was restored. Its cost was paid on every suspension. The log entry guards against a thing returning reconstructed from memory, naming what was stopped, why, and what else changed, while git holds the text.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.26, change 0.52, solubility 39 → 70, clarity 0.31 → 0.76, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: `[suspended]` is no longer called a reserved tag, a term the engineer settled; not checked
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 70 → 67, clarity 0.76 → 0.73; checked: 20 directives, 17 kept, 3 less precise, 0 lost, 4 repairs, re-checked kept
 
 ## History
 

@@ -34,9 +34,9 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 
 ## Compression
 
-- Solubility 52, clarity 0.52 (2026-10-24)
+- Solubility 47, clarity 0.50 (2026-10-28)
 - Compression 0.29, change 0.52 (2026-10-24)
-- 13 directives, 13 kept, 0 less precise, 0 lost (2026-10-24)
+- 18 directives, 17 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

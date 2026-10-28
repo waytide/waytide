@@ -1727,6 +1727,22 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 **The phase branch merges into the experiment's branch.** Phase 2, packaged-script, branches from it next.
 
+### How to apply is removed from the compressed texts — 2026-10-28
+
+**At the engineer's direction, phase 1 is returned to, and the 15 compressed texts that still had a How to apply section lose it.** 93 of the 108 compressed texts had already dropped it. The source bodies keep theirs, since the body is the authority.
+
+**Each point in the section was dropped, moved, or kept under a new heading.** A point whose directive the text already stated elsewhere was dropped. A point that carried a directive nothing else did moved to the section it belongs to. In the status-report and the error-message rules every point was of the second kind, so the section stays under a heading that names its subject. Each reason moved to the end of a nearby section.
+
+**The check:** fresh listers and checkers, as the compression rule requires.
+
+1. **First check:** 379 directives, 355 kept, 23 less precise, 1 lost. Most were points taken as repeats that the rest of the text stated less exactly. The lost one was the implementation-hinge rule's ban on adding cosmetic options to reach two. 24 repairs followed.
+2. **Re-check of the 13 repaired rules:** 320 directives, 309 kept, 11 less precise, 0 lost. Three of these came from the repairs themselves. 7 repairs followed.
+3. **Re-check of those 7 rules:** 149 directives, all kept.
+
+**The measures fell slightly.** The mean solubility of the 15 went from 61 to 59: 9 fell, 3 rose, and 3 held. The text a How to apply removed was mostly moved, not cut, and the repairs added words.
+
+Each rule's figures are on a `revised` line in its `## Compression` section.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4904,3 +4920,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT

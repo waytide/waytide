@@ -72,9 +72,9 @@ Write the state line as `Active` when the record is written, and update it as th
 
 ## Compression
 
-- Solubility 46, clarity 0.78 (2026-10-24)
+- Solubility 46, clarity 0.79 (2026-10-28)
 - Compression 0.12, change 0.48 (2026-10-24)
-- 46 directives, 46 kept, 0 less precise, 0 lost (2026-10-27)
+- 55 directives, 54 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

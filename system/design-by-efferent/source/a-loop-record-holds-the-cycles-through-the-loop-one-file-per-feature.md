@@ -30,7 +30,8 @@
 4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
 5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
 6. A loop record must not displace the log.
-7. The log stays one entry at a time.
+7. The log stays one line per entry. Keep its entries separate and intact.
+8. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format below.
 
 ## Format
 
@@ -54,13 +55,7 @@
 
 1. Writing a loop record while doing the work is the default.
 2. Mark a record reconstructed retroactively from memory as a **Backfill**, at the top.
-
-## How to apply
-
-1. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above.
-2. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning.
-3. Keep the one-line log entries separate and intact.
-4. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
+3. **Why:** the deliberation, meaning the hinges and the reasoning over options, is lost if only code and one-line decisions survive. A per-feature narrative keeps it and exposes skipped gates.
 
 ## Compression
 
@@ -68,6 +63,7 @@
 - 2026-10-24, revised: points 4 and 5 and How to apply's point 2 name the unattended case; not checked
 - 2026-10-27, re-checked: 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 64 → 63, clarity 0.68 → 0.69; checked: 22 directives, 21 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 
 ## History
 

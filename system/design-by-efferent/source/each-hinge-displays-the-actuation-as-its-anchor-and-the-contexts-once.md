@@ -48,8 +48,10 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 
 ## The actuation is the anchor at every downstream hinge
 
-1. Show the actuation at every hinge after the first, because what each one decides has no meaning apart from it.
-2. The actuation shown at hinges 2 and 3 is context. It is not re-decided there.
+1. Show the actuation at hinges 2 and 3, because what each one decides has no meaning apart from it.
+2. The actuation shown at hinges 2 and 3 is context. It is not re-decided there. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
+3. At hinge 2, show the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block.
+4. At hinge 3, show the control declarations, then the actuation, then the observation. This is the complete test body, with the `context` blocks omitted.
 
 ## The contexts are shown once, where they are decided, and elided after
 
@@ -65,18 +67,12 @@ At hinge 4, show the implementation once a candidate is accepted, ahead of the t
 3. Once a candidate is accepted, show the implementation first, ahead of the test and the feature's output.
 4. Show the test and the feature's output with the implementation, per the after-any-implementation-hinge-show-the-test-output-for-the-current-feature rule.
 5. Do not advance to naming before the implementation is on screen.
-
-## How to apply
-
-1. At hinge 1, show the actuation within its full `context` nesting.
-2. At hinge 2, show the actuation bound to its explaining variable, then the observation's explaining variables and the `test` block.
-3. At hinge 3, show the control declarations, then the actuation, then the observation. This is the complete test body, with the `context` blocks omitted.
-4. Everything shown from an earlier hinge is context, not an invitation to re-decide it.
-5. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
+6. **Why:** what is on screen decides what can be deliberated at each hinge. Too little forces judging things meaningless in isolation, so the actuation anchors. Too much buries the hinge's concern, so contexts are shown once.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.52, solubility 36 → 52, clarity 0.43 → 0.52, 13 directives, 13 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
+- 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 47, clarity 0.52 → 0.50; checked: 18 directives, 17 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
 
 ## History
 

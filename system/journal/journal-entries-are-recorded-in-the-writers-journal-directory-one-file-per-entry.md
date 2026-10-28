@@ -34,9 +34,9 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 
 ## Compression
 
-- Solubility 53, clarity 0.84 (2026-10-24)
+- Solubility 53, clarity 0.86 (2026-10-28)
 - Compression 0.21, change 0.53 (2026-10-24)
-- 31 directives, 31 kept, 0 less precise, 0 lost (2026-10-27)
+- 33 directives, 32 kept, 1 less precise, 0 lost (2026-10-28)
 
 Related:
 

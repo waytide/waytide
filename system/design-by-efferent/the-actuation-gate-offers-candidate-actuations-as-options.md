@@ -37,9 +37,9 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 
 ## Compression
 
-- Solubility 56, clarity 0.76 (2026-10-24)
+- Solubility 61, clarity 0.77 (2026-10-28)
 - Compression 0.37, change 0.54 (2026-10-24)
-- 19 directives, 19 kept, 0 less precise, 0 lost (2026-10-27)
+- 20 directives, 17 kept, 3 less precise, 0 lost (2026-10-28)
 
 Related:
 
