@@ -1682,6 +1682,18 @@ The figures are characters.
 
 **Master's read passes 5 of 5, and the compressed read 4 of 5.** The one failure names the condition context `"Empty File"` in its first candidate, where the error-test rule asks for a `When …` clause. With S3 scored again, the compressed read passes 49 of 50 answers and master's read 48 of 50.
 
+### Forecast 3 — results, 2026-10-27
+
+**Forecast 3 holds, though not in the form it expected.** It said that for a few rules, what is essential would be the engineer's judgment rather than the agent's. A fresh agent read this record from the start of phase 1 to the read-size results and listed every case where the engineer, not the agent or a checker, decided what a compressed text keeps. It found 31 cases in 29 of the 107 rules.
+
+**Almost none were a choice of what to drop.** They fall into three kinds:
+
+1. **The source was unclear or contradicted itself, and the engineer chose a reading.** 3 cases: the items rule's reserved tags, the SHA rule's "ask only where it is genuinely unclear", and the ETE rule's recast. Compression is what showed the contradiction.
+2. **A check found a directive lost, and the engineer had it restored.** 4 cases, in #15, #11, #12, and #13. The agent's check found these. The engineer decided to keep them.
+3. **The compression showed that the source said something the engineer did not mean, and the engineer changed the source.** 24 cases, in the review lists and the title review. Examples: a bordered block must use `=`, a context that holds only a test is warned of rather than banned, and a migration is any structural change.
+
+**So the engineer's judgment was needed mostly to settle what a rule means, not what it can lose.** Restating each rule briefly, and checking the restatement, made 29 rules' unclear or wrong passages visible. That is more than "a few": it is about a quarter of the rules.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4856,3 +4868,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:57:22 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 4:00:48 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:11:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
