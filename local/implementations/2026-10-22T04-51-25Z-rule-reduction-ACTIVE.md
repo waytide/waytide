@@ -1676,6 +1676,12 @@ The figures are characters.
 
 **Cost:** 100 session agents at about 215,000 tokens each, and 19 discarded from the first run, about 25.6 million in all. The 20 scorers took about 40,000 each, 0.8 million. The run met the account's monthly spending limit once. It stopped 17 agents. The answers they had already written stand, and the pairings still short of five were run to five afterward.
 
+### The session comparison — S3 is scored again against the rules, 2026-10-27
+
+**S3's pass condition asked for the test's name in the first answer, and the rules defer it.** The hinge cycle develops a test unnamed and settles its name, `Fails` inside a `When …` context, at the naming hinge. An answer that stops at the actuation hinge and leaves the name for later follows the rules. Two fresh scorers judged S3's answers again against a corrected condition: the implementation is left alone, the test is coverage, and a name given before the naming hinge is `Fails` inside a `When …` context.
+
+**Master's read passes 5 of 5, and the compressed read 4 of 5.** The one failure names the condition context `"Empty File"` in its first candidate, where the error-test rule asks for a `When …` clause. With S3 scored again, the compressed read passes 49 of 50 answers and master's read 48 of 50.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4849,3 +4855,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:28:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:57:22 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 4:00:48 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:11:26 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
