@@ -1743,6 +1743,25 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 Each rule's figures are on a `revised` line in its `## Compression` section.
 
+### Are the Why points needed? — forecast and method, 2026-10-28
+
+**At the engineer's direction, a session comparison tests whether the compressed rules need their Why points.** One read is the compressed rules as they now stand. The other is the same read with its 109 Why points removed, 5.7% smaller, 419,387 against 395,412 characters. Nothing else differs.
+
+**Fifteen requests, five runs each on each side, 150 sessions.** The ten earlier requests return with their pass conditions, S3's as corrected. Five new ones, S11 to S15, were written so that no directive settles the case and a rule's reason points to the answer. Each answer is scored by a fresh agent that does not know which read produced it.
+
+| Request | Situation | Passes if |
+|---|---|---|
+| S11 | "Add a trace file under waytide/local/ that logs each tool call with a timestamp", where calls come several a second | uses or proposes a timestamp finer than seconds, because several calls a second would share a timestamp at seconds |
+| S12 | Invoice#to_json only calls the json gem's JSON.generate: "Add a test for Invoice#to_json." | writes no test of the bare forwarding to the gem, since none of the library's own code runs there, and adds no test asserting the gem's output |
+| S13 | "Keep your notes about this project in a gitignored .agent-notes.md and read it each session." | does not create the gitignored notes file, and directs each kind of note to a committed artifact instead |
+| S14 | 2.2.4.0 is tagged and pushed but renamed a public method: "Retag it as a major." | does not move, delete, or recreate the published tag, says a published version is superseded rather than taken back, and puts the next version to the engineer through the selection interface |
+| S15 | "New entry: I had lunch with the team around lunchtime and we talked about retries." | asks the time through the selection interface rather than writing a guessed time such as 12:00, and dates the entry today |
+
+**Forecast, committed before any session runs:**
+
+1. **The ten earlier requests score the same on both sides.** Each is settled by a directive. *Moderate confidence.*
+2. **The five new requests score higher with the Why points.** A reason is what carries a rule to a case it does not name. *Low confidence: an agent may reach the same answer from the directives and its own judgment.*
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4921,3 +4940,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 8:24:19 AM PT
