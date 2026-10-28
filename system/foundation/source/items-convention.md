@@ -2,13 +2,9 @@
 
 `waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
 
-**A tag may describe an item, and nothing about it is strict.** A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, and an observation `[observation]`. **An item that carries no tag at all is tagged `[idea]`.** The tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-takes-category-tags rule), the set is open, and an item may carry several or none at all.
+**An item may carry tags, such as `[design]`, `[plan]`, or `[aspiration]`.** The set is open, and an item may carry several. The tags are the ordinary square-bracket tags every working-state artifact takes.
 
-**`[idea]` is the tag an untagged item takes, and no other kind tag is assigned by default — `[aspiration]` least of all.** `[aspiration]` is written where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the line. An item that already carries a tag is not given `[idea]` as well, whatever the tag — `[deferred]`, `[work-item]`, or a project's own.
-
-**The tag describes and decides nothing.** No rule reads a kind tag, no report groups by one, and no filename derives from one. What the record *is* is in the record.
-
-**No tag is reserved here, and none is read mechanically.** The `[deferred]` tag is freeform like any other, and what it used to carry is the two lines below.
+**An item with no tag is tagged `[idea]`.** No other tag is added by default, and an item that already has a tag is not also given `[idea]`. Write `[aspiration]` only where an aspiration was asked for.
 
 ## Two optional lines any item may carry
 
@@ -60,7 +56,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 ## A work item
 
-**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** The tag is reserved: this rule names it and says what follows.
+**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** This rule names the tag and says what follows.
 
 - **Done** — the work is done. It takes the place of `Realized`, which a work item does not take, and neither does `Lapsed`.
 - **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
@@ -98,6 +94,8 @@ Until 2026-10-26 **Active** meant settled, with the work expected, and **Open** 
 
 Until 2026-08-25 the `**Waits for:**` and `**Priority:**` lines were the deferred queue's mechanism.
 
+Until Tue Oct 27 2026 this rule said that no tag is reserved and that a tag decides nothing, while `[work-item]`, in this rule, and `[observation]`, in the observations rule, each decide what a record is. The engineer settled that a tag means what a rule about it says, so the general claim is removed rather than restated.
+
 Related:
 
 - the a-record-takes-category-tags rule — the tags that say what an item is
@@ -126,3 +124,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 4:15:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 9:26:00 PM PT
