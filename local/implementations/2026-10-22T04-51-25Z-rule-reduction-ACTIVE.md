@@ -1649,6 +1649,33 @@ The figures are characters.
 
 **Each read is now one file, `RULES.md`**, holding its rule files in the read's order, each headed by its path: 521,465 bytes for master and 424,541 for the compressed read. An agent reads it with the Read tool alone, in ranges of 300 lines, and writes nothing but its answer. Nothing else in the method changes.
 
+### The session comparison — results, 2026-10-27
+
+**The compressed read answers the ten requests as master's read does: 48 of 50 answers pass on the compressed read, and 47 of 50 on master's.** Forecast 2 holds, within what the comparison can show. No scenario passes on master's read and falls short on the compressed one by more than one answer.
+
+| scenario | master | compressed |
+|---|---|---|
+| S1 — an idea | 5 of 5 | 5 of 5 |
+| S2 — a commit | 5 of 5 | 5 of 5 |
+| S3 — coverage | 4 of 5 | 3 of 5 |
+| S4 — a feature | 5 of 5 | 5 of 5 |
+| S5 — a question | 4 of 5 | 5 of 5 |
+| S6 — a journal entry | 5 of 5 | 5 of 5 |
+| S7 — a preference | 5 of 5 | 5 of 5 |
+| S8 — a list | 4 of 5 | 5 of 5 |
+| S9 — a release | 5 of 5 | 5 of 5 |
+| S10 — an experiment's standing | 5 of 5 | 5 of 5 |
+
+**The five failures:**
+
+- **S3 on both reads, three on the compressed read and one on master's.** Every answer kept the implementation untouched and treated the test as coverage. The failures put the actuation hinge to the engineer first and left the test's name and its `When …` context to a later hinge, or named the context for the outcome, `"Rejected"` or `"Empty File"`. The pass condition asked for the naming in the answer, which the hinge cycle defers, so these failures may be the condition's strictness as much as the read's. It is the one scenario that differs by two, and it is within noise for five answers.
+- **S5 on master's read:** one answer used an idiom, "not as the act of ticking a box".
+- **S8 on master's read:** one answer gave the date alone, `2026-10-02`, where the handle is the full prefix. The rule's own example table shows the date alone, which the agents noted.
+
+**The scorers were blind to the read.** Each pairing's answers were copied into a folder named by a code, and the scorer read only the five answers and the pass condition.
+
+**Cost:** 100 session agents at about 215,000 tokens each, and 19 discarded from the first run, about 25.6 million in all. The 20 scorers took about 40,000 each, 0.8 million. The run met the account's monthly spending limit once. It stopped 17 agents. The answers they had already written stand, and the pairings still short of five were run to five afterward.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4821,3 +4848,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:28:21 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:57:22 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 4:00:48 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 8:11:26 PM PT
