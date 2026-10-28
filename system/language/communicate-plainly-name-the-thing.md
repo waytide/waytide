@@ -8,9 +8,32 @@ Speak and write to the user in plain language, using the **actual names of thing
 - **Plain over impressive.** Prefer the plain word and the concrete description over the clever-sounding one. If a sentence needs a glossary to parse, rewrite it.
 - **Governs conversation, not only the code.** Like `no-slang`, this reaches phrasing addressed *to* the user — an explanation, a summary, a status note — not only what goes into the codebase. The clarity it preserves lives in being understood.
 
+## An explanation is short, shows an example, and gives only what the reader needs
+
+**Being clear is not enough as an instruction, because an explanation can try to be clear and still bury the point.** An explanation does four things:
+
+1. It states the problem in one plain sentence.
+2. It shows a real example value, rather than describing one.
+3. It says what happened in one sentence.
+4. It gives the choice or the next step, and stops.
+
+**It leaves out where things are and why they matter**, such as file names, line numbers, quotations, and background, unless the reader asks for them.
+
+**Not this:**
+
+> The printed-list rule contradicts itself about what the first column holds. This is the master version, `a-record-list-is-a-table.md`, and the phase branch has the same text. What the rule says, line 5: "The first column is the record's handle and carries no heading. That is the ISO-8601-UTC filename prefix…" What its two example tables show, lines 14–15 and 23–24: the date alone…
+
+**This:**
+
+> The list rule says the first column holds the full date and time, like `2026-10-02T14-10-05Z`. Its examples show just the date, like `2026-10-02`. One agent copied the example and failed, and the other nine followed the text.
+>
+> To fix it, either the examples change to show the date and time, or the text changes to say the date alone.
+
+**The engineer settled that the second is the level of clarity needed.**
+
 **Why:** invented labels and unexplained jargon feel precise but actually hide meaning — the reader has to work out what "tier 1" stands for. Naming the real thing costs a few words and saves the reader the decoding. The point of communicating is to be understood, not to sound authoritative.
 
-**How to apply:** when explaining something, use the concrete name and a plain description. Bring in a shorthand only after its meaning is clear, and only if it is justified. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items.
+**How to apply:** when explaining something, use the concrete name and a plain description. Bring in a shorthand only after its meaning is clear, and only if it is justified. Explain in short plain sentences: the problem, a real example, what happened, and the choice. Leave out locations, quotations, and background unless asked. This governs conversation with the user *and* the durable artifacts they read later — rules, logs, plans, deferred items.
 
 Related:
 
