@@ -22,7 +22,7 @@
 
 **A private entry follows the shared journal's rules for its filename, its datetime line, its summary, and its footer.** That is the journal-entries rule, the ask-for-entry-time-or-omit-it rule, the datetime-stamp-line rule, the omit-body-when-same-as-title rule, and the journal-convention's `Authored by` footer. The an-entry-is-the-writers-words rule holds too: the agent writes the writer's words and none of its own.
 
-**A change the writer directs to a private entry takes no log entry.** The an-entry-is-the-writers-words rule records such a change in the project's log, and the log is committed with the project. A log entry would show that the private entry exists, which is the one thing kept out of the repository. The change is made exactly as the writer named it, and nothing beside the entry records it.
+**Nothing about a private entry is logged.** Not its creation, not a change the writer directs to it, not its being read, and not its move to the shared journal. The project's log is committed with the project, so any log entry about a private entry would show that the entry exists, which is the one thing kept out of the repository. This holds where another rule asks for a log entry: the an-entry-is-the-writers-words rule records a directed change in the log, and for a private entry it is not recorded. A directed change is made exactly as the writer named it, and nothing beside the entry records it.
 
 **A private entry takes no commit.** It is not in the project's repository. Whether the private journal is under version control is the engineer's decision, and nothing here asks for it or forbids it.
 
@@ -44,7 +44,7 @@ Keeping the private journal outside the repository, rather than in an ignored fi
 
 **How to apply:** on `New private journal entry`, `New private entry`, or `Private note`, write the entry in `~/.local/share/waytide/journal/<project>/`, named for the project that holds the shared journal. Make the directory where it is absent. Give the entry the shared journal's filename, datetime line, summary, and footer, and ask for its time as a shared entry's time is asked for. Commit nothing.
 
-Make a change the writer directs to a private entry, and write no log entry for it.
+Make a change the writer directs to a private entry exactly as named. Write no log entry about a private entry, for any reason.
 
 Move a private entry to the shared journal only on the engineer's command, unchanged, and remove it from the private journal. Do not offer to move one.
 
