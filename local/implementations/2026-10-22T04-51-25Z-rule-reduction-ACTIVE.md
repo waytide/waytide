@@ -1825,6 +1825,25 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The packaged script prints the compressed rules as they now stand**: with no How to apply and no Why points, 396,052 characters. The rule-form decision of 2026-10-27 holds. The plan put to the engineer before the suspension has not been approved, and no step of it has run.
 
+### Phase 2 — the read as it stands, measured 2026-10-28
+
+**The engineer approved the plan.** Its first step measures the session-start read as it now stands: the compressed rules, opened file by file.
+
+**Method:** the derived-rule-files experiment's, with its tool, `measure-session-start-read.sh` from `7105e2e`. Five fresh sessions on `claude-opus-5-5`, run one after another in the experiment's worktree with `claude -p "load waytide"`, with Read, Glob, Grep, and Bash allowed. The compiled rules were compiled with `./compile.sh --compressed` for the runs and restored after.
+
+| session | start (UTC) | duration | tool calls |
+|---|---|---|---|
+| `8887b8ec` | 22:05:45 | 43.5 s | 19 |
+| `19b1b55d` | 22:06:51 | 40.8 s | 12 |
+| `4524a312` | 22:07:32 | 31.5 s | 16 |
+| `d0544754` | 22:08:04 | 58.6 s | 13 |
+| `a661670a` | 22:09:03 | 36.0 s | 21 |
+
+- **Median:** 40.8 seconds and 16 tool calls.
+- **Range:** 31.5 to 58.6 seconds, and 12 to 21 tool calls.
+
+**Against the derived-rule-files experiment's figures,** a median of 29.6 seconds and 9 tool calls on the compiled read, this read is slower and takes more calls, though it is smaller. The project has grown since, with local rules and a journal now in the read, and the agent's grouping of its reads varies.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5011,3 +5030,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 1:31:13 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:35:50 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:44:30 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:48:41 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 3:09:58 PM PT
