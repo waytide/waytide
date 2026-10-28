@@ -1712,6 +1712,21 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 **Exceptions exist.** The after-any-implementation-hinge-show-the-test-output rule, at solubility 91, compressed by 0.54. The a-feature-with-one-case-has-one-test-file rule, at 88, compressed by 0.04.
 
+### Phase 1 — verdict, 2026-10-27
+
+**Phase 1 is affirmed by the engineer.** Each rule can be restated as its essential content, its present directives and their reasons, and sessions behave the same.
+
+**Findings:**
+
+1. **Read size:** the compiled read is 17.7% smaller, 547,780 to 450,824 characters. Forecast 1 holds.
+2. **Same answers:** sessions that read the compressed rules scored 49 of 50, and sessions that read the full rules scored 48 of 50. Forecast 2 holds.
+3. **The engineer's judgment:** the engineer settled what 29 of the 107 rules meant, mostly by changing a source that compression showed was unclear or wrong. Forecast 3 holds, in more rules than "a few".
+4. **The engineer's hypothesis:** it does not hold. Rules with lower solubility compressed more and changed more.
+5. **Ease of processing:** the mean solubility rose from 51 to 73 and the mean clarity score from 0.52 to 0.80. 99 of 102 rules became easier to process.
+6. **What master gains at the experiment's merge:** the compression rule, and the compiler's `--compressed` form and its measures block.
+
+**The phase branch merges into the experiment's branch.** Phase 2, packaged-script, branches from it next.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4888,3 +4903,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 8:11:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
