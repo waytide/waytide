@@ -1794,6 +1794,19 @@ Each rule's figures are on a `revised` line in its `## Compression` section.
 
 The six ETE rules had no `## Compression` section. Each now has one, opening with this revision.
 
+### Phase 1 — affirmed again, 2026-10-28
+
+**The engineer affirmed phase 1 again, after the work that followed the first affirmation.** That work removed How to apply from the last 15 compressed texts, tested whether the Why points are needed, found they changed no behavior, and removed them.
+
+**The findings, as they now stand:**
+
+1. **Read size:** the compressed read is 396,052 characters against master's 547,780, 27.7% smaller. It was 17.7% at the first affirmation.
+2. **Same answers:** sessions on the compressed rules scored 49 of 50 against master's 48. Without the Why points, they scored 58 of 75 against 56 with them.
+3. **The engineer's judgment** settled what 29 of the 107 rules meant. The solubility hypothesis does not hold. The mean solubility is 73.
+4. **What master gains at the experiment's merge:** the compression rule, as amended to leave reasons out, and the compiler's `--compressed` form and its measures block.
+
+**The phase branch merges into the experiment's branch again.** Phase 2 resumes from it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4975,3 +4988,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 12:04:12 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:24:19 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 1:31:13 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 2:35:50 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 2:44:30 PM PT
