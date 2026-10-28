@@ -1727,6 +1727,12 @@ The figures are from the first `compressed` line of each rule's `## Compression`
 
 **The phase branch merges into the experiment's branch.** Phase 2, packaged-script, branches from it next.
 
+### Phase 2, packaged-script — started, 2026-10-27
+
+**Phase 2 starts on `experiment/worktree/rule-reduction.packaged-script`, branched from the experiment's branch at `198eb62`**, where phase 1 left it. It works in the experiment's worktree, which phase 1 used, and with the experiment's participation, attended.
+
+**Its question:** does one packaged script that prints every rule in a fixed order shorten the session-start read? Its forecasts, 4 and 5, were committed at the experiment's start. It takes up finding #7: the read takes many tool calls, and nothing guarantees it is complete.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -4904,3 +4910,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 8:59:39 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:34:17 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:36:52 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 11:44:55 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 11:47:59 PM PT
