@@ -6,13 +6,9 @@
 
 `waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
 
-**A tag may describe an item, and nothing about it is strict.** A design item is tagged `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, and an observation `[observation]`. **An item that carries no tag at all is tagged `[idea]`.** The tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule), the set is open, and an item may carry several or none at all.
+**An item may carry tags, such as `[design]`, `[plan]`, or `[aspiration]`.** The set is open, and an item may carry several. The tags are the ordinary square-bracket tags every working-state artifact takes.
 
-**`[idea]` is the tag an untagged item takes, and no other kind tag is assigned by default — `[aspiration]` least of all.** `[aspiration]` is written where an aspiration is what was asked for, and never as the dress a design item is put in because something had to go on the line. An item that already carries a tag is not given `[idea]` as well, whatever the tag — `[deferred]`, `[work-item]`, or a project's own.
-
-**The tag describes and decides nothing.** No rule reads a kind tag, no report groups by one, and no filename derives from one. What the record *is* is in the record.
-
-**No tag is reserved here, and none is read mechanically.** The `[deferred]` tag is freeform like any other, and what it used to carry is the two lines below.
+**An item with no tag is tagged `[idea]`.** No other tag is added by default, and an item that already has a tag is not also given `[idea]`. Write `[aspiration]` only where an aspiration was asked for.
 
 ## Two optional lines any item may carry
 
@@ -64,7 +60,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 ## A work item
 
-**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** The tag is reserved: this rule names it and says what follows.
+**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** This rule names the tag and says what follows.
 
 - **Done** — the work is done. It takes the place of `Realized`, which a work item does not take, and neither does `Lapsed`.
 - **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
@@ -104,57 +100,52 @@ Change the state as the item reaches another word, renaming the file with it, an
 10. Where an item that settles things deliberately leaves something out, mark it in an **Out of Scope / Deferred** tail.
 11. An item that sequences work carries checkbox tasks stating behavior.
 12. An item that neither settles things nor sequences work carries neither resolutions nor tasks.
-13. A tag may describe an item by its kind, and nothing about an item's tags is strict: a design item `[design]`, a plan item `[plan]`, an aspiration `[aspiration]`, an observation `[observation]`.
+13. An item may carry tags, such as `[design]`, `[plan]`, or `[aspiration]`.
 14. Tag an item that has no tag at all `[idea]`.
 15. Give `[idea]` to no item that already carries a tag.
-16. Assign no kind tag but `[idea]` by default. Write `[aspiration]` only where an aspiration was asked for.
+16. Assign no tag but `[idea]` by default. Write `[aspiration]` only where an aspiration was asked for.
 17. The tag set is open.
-18. `[deferred]` is freeform like any other tag.
-19. An item may carry several tags, or none.
-20. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-21. A kind tag describes the item and decides nothing about it, with two exceptions.
-22. `[observation]` is one exception: it makes the item an observation.
-23. `[work-item]` is the other exception, described below.
-24. Otherwise, what an item is, the item itself says, not its tag.
-25. No report groups items by kind tag, and no filename derives from one.
-26. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
-27. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
-28. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
-29. Rank 1 is worked next among the actionable items.
-30. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
-31. A rank does not clear a wait.
-32. Nothing derives from either line.
-33. An item's content is point-in-time.
-34. A reference in an item that time has overtaken is not a defect.
-35. Do not chase such a reference.
-36. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
-37. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
-38. Make an item **Active** when its work starts. **Active** is the in-progress state.
-39. An observation, and only an observation, starts and stays **Stated**.
-40. **Realized** — what it describes exists.
-41. **Deferred** — kept deliberately, with no date and no one working toward it.
-42. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
-43. **Suspended** — paused, not ended.
-44. **Superseded** — a later item replaced it, and the two name each other.
-45. **Abandoned** — dropped by decision.
-46. **Lapsed** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**.
-47. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
-48. At each change of state, change the `**State:**` line and rename the file.
-49. At each change of state, write the log entry.
-50. A work item, tagged `[work-item]`, is a piece of work to be done.
-51. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-52. A work item concludes `Done`, `Abandoned`, or `Superseded`.
-53. A work item never takes `Realized` or `Lapsed`.
-54. Take `Done` back to `Active` when the work reopens.
-55. Supersede an item rather than rewrite it.
-56. What a superseded item settled stays as written.
-57. Amend an item by dated addition.
-58. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
-59. Answer a question that runs against what an item settled, and record the change.
-60. Do not refuse to answer until the item is amended.
-61. Reconcile a settled item against later work.
-62. Never regenerate a settled item from later work. Where one item names another as what it realizes, the named item is the source of truth.
-63. **Why:** One class of record, because its earlier kinds differed only in a word, which a tag carries. A thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
+18. An item may carry several tags.
+19. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule).
+20. `[observation]` and `[work-item]` mean what their rules say: the observations rule, and the work-item section below.
+21. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
+22. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
+23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
+24. Rank 1 is worked next among the actionable items.
+25. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
+26. A rank does not clear a wait.
+27. Nothing derives from either line.
+28. An item's content is point-in-time.
+29. A reference in an item that time has overtaken is not a defect.
+30. Do not chase such a reference.
+31. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
+32. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
+33. Make an item **Active** when its work starts. **Active** is the in-progress state.
+34. An observation, and only an observation, starts and stays **Stated**.
+35. **Realized** — what it describes exists.
+36. **Deferred** — kept deliberately, with no date and no one working toward it.
+37. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
+38. **Suspended** — paused, not ended.
+39. **Superseded** — a later item replaced it, and the two name each other.
+40. **Abandoned** — dropped by decision.
+41. **Lapsed** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**.
+42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
+43. At each change of state, change the `**State:**` line and rename the file.
+44. At each change of state, write the log entry.
+45. A work item, tagged `[work-item]`, is a piece of work to be done.
+46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
+47. A work item concludes `Done`, `Abandoned`, or `Superseded`.
+48. A work item never takes `Realized` or `Lapsed`.
+49. Take `Done` back to `Active` when the work reopens.
+50. Supersede an item rather than rewrite it.
+51. What a superseded item settled stays as written.
+52. Amend an item by dated addition.
+53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
+54. Answer a question that runs against what an item settled, and record the change.
+55. Do not refuse to answer until the item is amended.
+56. Reconcile a settled item against later work.
+57. Never regenerate a settled item from later work. Where one item names another as what it realizes, the named item is the source of truth.
+58. **Why:** One class of record, because its earlier kinds differed only in a word, which a tag carries. A thin shape, because a shape imposed on thinking is ceremony where the thinking does not have it.
 
 
 ## Compression
@@ -166,6 +157,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-27, revised: Active is the in-progress state, and an item done on an experiment's branch concludes when the work is done; checked: 63 directives, 34 kept, 29 less precise, 0 lost, 25 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, 3 repairs; directives 10, 11, 12, and 52 follow the engineer's resolution of the reserved tags
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, every repair kept; 53, 56, and 61 are kept by the earlier checks
+- 2026-10-27, revised: the claim that no tag is reserved is removed, and a tag means what a rule about it says; checked: 71 directives, 69 kept, 2 less precise, 0 lost; 62 and 69 are kept by the earlier checks
 
 ## History
 
@@ -182,6 +174,8 @@ Until Mon Oct 26 2026 this rule was named the-items-directory-holds-the-projects
 Until 2026-08-25 the `**Waits for:**` and `**Priority:**` lines were the deferred queue's mechanism.
 
 Until 2026-10-26 **Active** meant settled, with the work expected, and **Open** meant the thinking is not settled. They were the two starting words, and an item started Active where it settled something, whether or not the work had begun. No state said the work was under way. The engineer settled that Active is the in-progress state, and that an item stays Open until its work starts, settled or not.
+
+Until Tue Oct 27 2026 this rule said that no tag is reserved and that a tag decides nothing, while `[work-item]`, in this rule, and `[observation]`, in the observations rule, each decide what a record is. The engineer settled that a tag means what a rule about it says, so the general claim is removed rather than restated.
 
 Related:
 
@@ -234,3 +228,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:19:11 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 9:26:00 PM PT
