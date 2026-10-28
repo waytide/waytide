@@ -9,19 +9,19 @@
 **Two SHA columns follow the handle: the commit that created the record, and the last to touch it.** They are standing columns rather than chosen ones, in every list but a list of items and a list of commits.
 
 ```
-|              | created   | changed   | implementation              | state     |
-|--------------|-----------|-----------|-----------------------------|-----------|
-| `2026-08-25` | `159985b` | `ed7ec4a` | Feature — Self-Explanation  | Abandoned |
-| `2026-10-21` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
+|                        | created   | changed   | implementation                   | state     |
+|------------------------|-----------|-----------|----------------------------------|-----------|
+| `2026-08-25T00-36-18Z` | `159985b` | `ed7ec4a` | Feature — Self-Explanation       | Abandoned |
+| `2026-10-21T05-44-56Z` | `d27a638` | `66d2ea2` | Feature — "Item" replaces "idea" | Completed |
 ```
 
 A list of items takes the ordinal and no SHA columns:
 
 ```
-| # |              | item                        | state  |
-|---|--------------|-----------------------------|--------|
-| 1 | `2026-08-10` | A Generalized Description   | Active |
-| 2 | `2026-08-23` | Waytide for content and web | Open   |
+| # |                        | item                        | state  |
+|---|------------------------|-----------------------------|--------|
+| 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
+| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
 ```
 
 **A record never amended shows the same SHA twice, and that is the point.** The pair says whether a record has been touched since it was written. One that has not, and whose subject has moved since, is the stale case a reader is looking for.
@@ -62,6 +62,8 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Until Tue Oct 27 2026 a list of items took the two SHA columns and no ordinal, and a field that runs to a sentence sent a list to rows even where the engineer asked for a table. The engineer settled that a list of items takes an ordinal and no SHA columns, and that a table asked for is rendered in rows and columns.
 
+Until Tue Oct 27 2026 the example tables showed the handle as the date alone, such as `2026-08-25`, while the text named the full ISO-8601-UTC prefix. An agent copied the example. The engineer settled that the handle is the full prefix, such as `2026-08-25T00-36-18Z`.
+
 Related:
 
 - the status-report-format rule — whose tables this agrees with
@@ -80,3 +82,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:20 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 8:12:44 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 8:54:53 PM PT
