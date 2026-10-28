@@ -36,9 +36,11 @@
 | Participation | Attended | Wed Oct 28 2026 at 3:53:38 PM PT |
 | Vocabulary category | Shared journal and private journal reserved, ETE agent artifacts | Wed Oct 28 2026 at 4:36:21 PM PT |
 | Logging about private entries | Not logged, for anything about a private entry | Wed Oct 28 2026 at 4:43:41 PM PT |
+| Worktree removal and branch deletion | Removed and deleted | Wed Oct 28 2026 at 4:58:01 PM PT |
 | Pending item changes | Committed on `master` before the branch, as `e10ab69` | Wed Oct 28 2026 at 3:53:38 PM PT |
 
 ---
 
 Authored by Scott Bellware on Wed Oct 28 2026 at 3:53:38 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 4:58:01 PM PT
