@@ -1906,6 +1906,39 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The session-start instruction now tells the agent to run the loader in one command and read its whole output, reading the saved file to its end where the output is long, and to read no rule file one by one.** On this repository the loader prints 26 files, 377,775 characters.
 
+### Phase 2 — the read through the loader, measured 2026-10-29
+
+**The first five runs, at `cd79c06`, are discarded.** The new instruction had four placeholders where the old had five, so the hook printed it twice, the second copy with broken paths. Every agent ignored that copy, but the read is measured on the corrected instruction, at the commit after `cd79c06`.
+
+| session | start (UTC) | duration | tool calls |
+|---|---|---|---|
+| `7a733373` | 00:01:09 | 45.2 s | 14 |
+| `117df7b7` | 00:01:54 | 17.7 s | 6 |
+| `528b84ce` | 00:02:12 | 19.5 s | 7 |
+| `7637e971` | 00:02:32 | 19.9 s | 7 |
+| `ac90ef9f` | 00:02:52 | 28.5 s | 7 |
+
+- **Median:** 19.9 seconds and 7 tool calls.
+- **Range:** 17.7 to 45.2 seconds, and 6 to 14 tool calls.
+
+**Every session ran the loader once, and the harness saved its output to a file**, which the agent then read in four or five parts. The session at 14 calls read the file through twice.
+
+**The three reads compared:**
+
+| read | median duration | median tool calls |
+|---|---|---|
+| about 110 compressed rule files, opened by the agent | 40.8 s | 16 |
+| seven package files, opened by the agent | 44.8 s | 18 |
+| the loader, one command | 19.9 s | 7 |
+
+**Forecast 4 holds in part.** The median duration fell to 19.9 seconds, under the 20 forecast and about half the read before. The tool calls fell to 7, not to one to three.
+
+**Forecast 5 holds.** The output, 377,775 characters, exceeded what one tool result carries. The harness saved it to a file, and the reads of that file are most of the 7 calls.
+
+**Forecast 6 does not hold**, as recorded with the package-file read.
+
+**Finding #7 is answered.** The read is now one command with a fixed list of files, so it is complete whenever the agent reads the saved output to its end.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5097,3 +5130,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 3:35:58 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:54 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:40:48 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:03:47 PM PT
