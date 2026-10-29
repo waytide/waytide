@@ -32,6 +32,10 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 ## State
 
+**Affirmed by the engineer on Thu Oct 29 2026**, with all fifteen phases decided: fourteen affirmed and phase 5, title-display, abandoned. Every phase branch is merged into `experiment/worktree/rule-reduction`. The session-start read went from about 547,000 characters to 168,292, and in each test sessions behaved the same as before.
+
+**The integration branch is not yet merged into `master`.** A test merge stops on about 100 files: most are rules `master` keeps in the old one-file-per-rule layout, and one is the a-response-is-clarified-twice-before-it-is-sent rule, added on both sides.
+
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
 
 - **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
@@ -42,7 +46,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 **Resumed by the engineer on 2026-10-22.** The State line is removed, since absence is the in-progress state, and work continues on the phase branch in the worktree.
 
-- **State:** Active
+- **State:** Affirmed
 
 **The line is added on 2026-10-27.** Active became an implementation's in-progress state on 2026-10-26, and the record had not taken it.
 
@@ -5838,3 +5842,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 2:03:18 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:05:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:11 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:52 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 2:12:20 PM PT
