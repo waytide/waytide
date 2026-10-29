@@ -121,13 +121,14 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 1. Where an active package's README includes another package, that package is active, named or not.
 2. An include states a dependency, and `install` already treats it so.
 
-## Every package is still read
+## A deactivated package is listed, not read
 
-1. A deactivated package's rules are read at session start like an active package's.
-2. The declaration decides which rules are applied, not which are read.
-3. The declaration does not narrow the unconditional read.
-4. A rule that is read and withheld can be cited, weighed, and reactivated within the session.
-5. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale.
+1. The loader does not print a deactivated package's rules at session start.
+2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`.
+3. The read is still unconditional. The declaration decides what it holds.
+   Follow only the active packages' rules.
+4. Where the engineer reactivates a package during the session, run its command and follow its rules from then on. No restart is needed.
+5. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing loaded is stale.
 
 ## What is printed
 

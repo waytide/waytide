@@ -2234,6 +2234,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **Forecast 17.** On five requests governed by active packages, three runs on each side, scored blind, the listing side passed 14 of 15 and the read-and-withhold side 12 of 15. Every failure was on reserving a word, where sessions on both sides asked for the word's meaning and put the category choice off, as in the confirming test.
 - **Forecast 18.** In five sessions the engineer reactivated `journal` and asked for the journal timeline. All five ran `load-rules.sh --package journal` before acting, and all five timelines passed.
 
+### Active packages only — the package-set rule describes the listing, 2026-10-29
+
+**The package-set rule now says a deactivated package is listed, not read**, with the command that loads it, and that reactivating one during a session needs no restart. Its section *Every package is still read* is now *A deactivated package is listed, not read*, and its History records what it said before. Its check found 45 directives, 43 kept, 2 less precise, and 0 lost. The one that mattered, following only the active packages' rules, was repaired.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5453,3 +5457,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:51:03 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:59:28 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:05:34 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT

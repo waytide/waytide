@@ -30,13 +30,13 @@
 
 **An include activates what it names.** Where an active package's README includes another, that one is active whether or not the declaration named it. An include states that a package does not work without another one, which is a fact about the package rather than a preference, and it is how `install` already behaves.
 
-## Every package is still read
+## A deactivated package is listed, not read
 
-**A deactivated package's rules are read at session start exactly as an active package's are.** The declaration governs whether they are applied, not whether they are read. The the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule's unconditional read stands whole and is not narrowed by any declaration.
+**A deactivated package's rules are not printed at session start.** The loader prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`. The read is still unconditional, and the declaration decides what it holds.
 
-**So the read costs what it always cost.** Skipping the read of a deactivated package would save that cost and is deliberately not done: a rule that is read and withheld can be cited, weighed, and reactivated within the session, and one that was never read cannot.
+**So the read costs less by the deactivated packages' share.** A rule never read cannot be cited or weighed, so the listing keeps each deactivated package one command away. Where the engineer reactivates one during the session, run its command and follow its rules from then on.
 
-**`refresh-packages.sh` refreshes a deactivated package like any other.** The set decides what is applied rather than what is on disk, and a package that is read must not be stale.
+**`refresh-packages.sh` refreshes a deactivated package like any other.** The set decides what is applied rather than what is on disk, and a package that may be loaded must not be stale.
 
 ## What is printed, and where
 
@@ -54,9 +54,11 @@
 
 **Say so when the set is declared.** State that the deactivated packages' rules stay in force for this session and that Claude has to be restarted for them to go. A mechanism whose effect is delayed and does not say so reads as a mechanism that did not work.
 
+**Reactivating a package needs no restart.** Its rules are one command away: run the command its `DEACTIVATED` section names, and follow its rules from then on.
+
 **Why:** a project does not need every convention the system carries. A content project has no use for a design method meant for a unit of code, and until this existed the only remedy was to not install the package or to write a local rule saying it does not apply. The first cannot be undone in a session and the second is a hand-built stand-in for a mechanism. A declaration is a recorded project decision — committed, dated, and reviewable — which is what distinguishes it from an agent's in-the-moment judgment about what to bother with.
 
-**How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Read every installed package's rules as always, and follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying.
+**How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Run the loader as always: it prints the active packages' rules and lists each deactivated one with the command that loads it. Follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying. Where the engineer reactivates a package during a session, load it with its listed command and follow its rules from then on.
 
 ## Compressed
 
@@ -97,13 +99,14 @@
 1. Where an active package's README includes another package, that package is active, named or not.
 2. An include states a dependency, and `install` already treats it so.
 
-## Every package is still read
+## A deactivated package is listed, not read
 
-1. A deactivated package's rules are read at session start like an active package's.
-2. The declaration decides which rules are applied, not which are read.
-3. The declaration does not narrow the unconditional read.
-4. A rule that is read and withheld can be cited, weighed, and reactivated within the session.
-5. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing read is stale.
+1. The loader does not print a deactivated package's rules at session start.
+2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`.
+3. The read is still unconditional. The declaration decides what it holds.
+   Follow only the active packages' rules.
+4. Where the engineer reactivates a package during the session, run its command and follow its rules from then on. No restart is needed.
+5. `refresh-packages.sh` refreshes a deactivated package like any other, so nothing loaded is stale.
 
 ## What is printed
 
@@ -135,14 +138,17 @@
 - 2026-10-22, checked: 37 directives, 34 kept, 3 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list, restored directive 33; checked twice, every directive kept
 - 2026-10-28, revised: Why points removed, solubility 57 → 62, clarity 0.70 → 0.86; checked: 34 directives, 32 kept, 2 less precise, 0 lost, 1 repair, re-checked with 0 lost
+- 2026-10-29, revised: a deactivated package is listed, not read, and reactivating it needs no restart, solubility 62 → 61, clarity 0.86 → 0.86; checked: 45 directives, 43 kept, 2 less precise, 0 lost, 1 repair; the less precise directive left is that the declaration is read from three plain text data attribute lines
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named a-project-declares-its-package-set and titled "A project declares which of its installed packages are active".
 
+Until Thu Oct 29 2026 a deactivated package's rules were read at session start and withheld, so that within the session they could be cited, weighed, and reactivated. Phase 6 of the rule-reduction experiment, active-packages-only, had the loader list a deactivated package with the command that loads it in place of printing its rules.
+
 Related:
 
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read this leaves whole
+- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read, whose content the declaration decides
 - the the-startup-display-prints-once-per-session rule — where the printed block is defined
 - the a-status-report-prints-a-fixed-whole-project-report rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
@@ -168,3 +174,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
