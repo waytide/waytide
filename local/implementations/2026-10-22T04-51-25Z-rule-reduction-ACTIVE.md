@@ -16,6 +16,8 @@ One at a time, in this order, each on its own branch from the experiment's.
 2. **packaged-script** — `experiment/worktree/rule-reduction.packaged-script`. Does one packaged script that prints every rule in a fixed order shorten the session-start read?
 3. **additional-context** — `experiment/worktree/rule-reduction.additional-context`. Can the session-start hook deliver the rules to the agent before its first response, with no read at all?
 
+**Changed 2026-10-29, before phase 3's work:** phase 3 is **triggers** — `experiment/worktree/rule-reduction.triggers`. Can a trigger index, always loaded, stand in for pre-loading part of the rules, with sessions behaving the same?
+
 ## State
 
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
@@ -1976,6 +1978,23 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **It takes up finding #10:** nothing re-reads the rules after the context is compacted. It also takes up the engineer's wish to see each rule's title as the rules load, which a hook can show the engineer alone.
 
 **A numbering fault is corrected.** The forecast phase 2 added on 2026-10-28 was numbered 6, which phase 3's first forecast already held. It is renumbered 8, with the two places that cite it.
+
+### Phase 3 becomes triggers, replacing additional-context — 2026-10-29
+
+**The engineer replaced phase 3's question before any of its work ran.** Phase 3 is now **triggers**, on `experiment/worktree/rule-reduction.triggers`, the branch renamed from `.additional-context`, which was never pushed. The phases are now compression, packaged-script, and triggers. Forecasts 6 and 7, committed for additional-context, stand as written and are not tested, since their question is dropped.
+
+**How it came about.** Every prompt carries the whole conversation, so the rules, about 95,000 tokens once read, travel with every request until compaction. The engineer asked what Waytide can do to reduce that, and liked four ways: read no deactivated package, compress the local rules and the vocabularies, load foundation's rare rules only when needed, and load rules on demand from their titles. A rule that is not read at the start is applied only if the agent notices it applies, and the engineer asked whether a trigger, a line naming when to read a rule, could stand in for pre-loading.
+
+**The question:** can a trigger index, always loaded, stand in for pre-loading part of the rules, with sessions behaving the same?
+
+**Forecasts, before the work:**
+
+9. **The rules that apply all the time cannot take a trigger**, the language rules and the selection-prompt rule among them, and stay pre-loaded. *High confidence.*
+10. **About a third of the rules have an act that triggers them cleanly**, mostly in foundation, git, and versioning. *Low confidence.*
+11. **On requests governed by a triggered rule, sessions with the trigger index score lower than sessions with the full read**, because the agent must notice the trigger before acting. *Moderate confidence.*
+12. **Where the act runs through a script that prints its rule, the triggered rule is applied as reliably as a pre-loaded one.** *Moderate confidence.*
+
+**Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5172,3 +5191,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:03:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:12:43 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:28:18 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:43:06 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:03:49 PM PT
