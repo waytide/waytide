@@ -1,6 +1,6 @@
 # A problem is an item type
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [idea]
 
 **An item may be a problem: something wrong or in the way, recorded before anyone knows what to do about it.** Where an idea proposes a change and a work item is work to do, a problem states a difficulty on its own, so that it is kept without a solution having to be named.
@@ -17,3 +17,4 @@ As the engineer first stated it: "New idea: Problem as an item type"
 ---
 
 Authored by Scott Bellware on Sun Oct 25 2026 at 10:44:22 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:56:18 PM PT

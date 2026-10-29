@@ -20,6 +20,7 @@ fail() {
 # backslash to the next one there, and three lines of the figure end in one.
 control_display_text() {
   cat <<'DISPLAY'
+
 Waytide: Human-in-the-Loop Harness
 
 Copyright © 2026 Scott Bellware

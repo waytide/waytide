@@ -1,6 +1,6 @@
 # The participation question is named "Participation" rather than "Who decides"
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [idea]
 
 **The decision put at a feature's or an experiment's start is named "Participation" rather than "Who decides".** The design-by-efferent attended-or-unattended-is-chosen-at-the-start rule fixes the question's words as *Who decides?*, and the selection prompt carries them, in its question and in its header. The DBE vocabulary already names the decision **the human's level of participation**.
@@ -32,3 +32,4 @@ Authored by Scott Bellware on Wed Oct 28 2026 at 5:42:31 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 6:49:35 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 6:50:37 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 6:55:39 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:56:18 PM PT

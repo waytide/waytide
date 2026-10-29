@@ -260,6 +260,7 @@ Related:
 - the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
 - the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
+- the a-phase-starts-by-stating-its-goal rule — what is said when a phase starts
 
 ---
 
@@ -289,3 +290,5 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:18:21 AM PT
