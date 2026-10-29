@@ -1,3 +1,21 @@
+# A response is clarified twice before it is sent
+
+Source: system/language/source/a-response-is-clarified-twice-before-it-is-sent.md
+
+1. Write every response at the clarity it would have after the engineer asked twice to clarify it.
+2. This is the default, not a level reached on request.
+3. Before sending, rewrite the draft as if asked to clarify it, then rewrite it again.
+4. State the point first, in a sentence or two of plain words.
+5. Give only the few facts the engineer needs to understand the response and decide.
+6. Leave out figures, file names, method detail, and caveats unless the engineer asks for them. They stay in the records.
+7. Before sending any response, ask what the engineer needs from it, and remove the rest.
+
+**Not this:** a status report with a table of counts, the hook's quoted text, the commit's name, and a list of what remains untested.
+
+**This:**
+
+> Phase 4 is nearly done. When a conversation gets long, Claude Code shortens it into a summary, and the agent then has a summary of the rules, not the rules themselves. The hook now tells the agent to read them again, and in testing every session did. Left to do: update the rule that describes the hook, and check the fix as built.
+
 # An answer is a list, and prose must justify itself
 
 Source: system/language/source/an-answer-is-a-list-and-prose-must-justify-itself.md
