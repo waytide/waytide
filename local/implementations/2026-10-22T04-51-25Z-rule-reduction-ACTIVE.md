@@ -2002,6 +2002,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** 50 of 50.
 14. **On requests written without sight of the triggers, real index sessions pass no more than 10 points below real full sessions.** *Moderate confidence.*
    - **Held, 2026-10-29.** The index read passed 36 of 50, the full read 38 of 50.
+15. **After the context is compacted, a session runs the loader again before its next act in fewer than half of sessions, with the session-start instruction as it is.** The instruction asks for the read before the session's first substantive action, and after compaction the summary says the read was done. *Moderate confidence.*
+16. **An instruction the hook gives on compaction alone, saying the rules in context are only a summary and must be read again, raises that to at least 80% of sessions.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2147,6 +2149,14 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **Their checks found two older gaps, both repaired.** Neither compressed text listed everything the loader prints, and the binding rule's compressed text left out the journal. The binding rule's How to apply line also left out the journal.
 
 **The compressed texts of the 61 triggered rules are not checked again**, since the trigger line is a loading cue outside the directives they are checked against.
+
+### Phase 4, re-read-after-compaction, starts — 2026-10-29
+
+**The phase asks finding #10's question:** after the context is compacted, does the session read the rules again in full, or keep them only as the compaction's summary?
+
+**What is known going in.** The `SessionStart` hook runs on every source, compaction among them, since `.claude/settings.json` gives it no matcher. Its instruction asks for the read before the session's first substantive action, and says nothing particular to compaction. The hook does not read the event's input, so it cannot tell a compaction from a start.
+
+**Forecasts 15 and 16 are what this phase tests.** First, sessions are compacted and given a request governed by a pre-loaded rule, with the hook as it is, to see whether the loader runs again. If it mostly does not, the hook is given an instruction for compaction alone, and the test runs again.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5355,3 +5365,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:54:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:10:00 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:45:00 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:12 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 10:05:32 PM PT
