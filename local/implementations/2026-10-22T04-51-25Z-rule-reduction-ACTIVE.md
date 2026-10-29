@@ -2004,6 +2004,27 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **At the engineer's direction, the four matters left without a phase become phases 4 to 7, in this order:** re-read-after-compaction, title-display, active-packages-only, and local-compression. Each runs after triggers, one at a time, each branching from the experiment's branch as the phase before it left it. Each states its forecast before its work.
 
+### Triggers — the rules are sorted, 2026-10-29
+
+**The engineer approved the plan, and its first step sorted the 108 rules.** Seven fresh agents read each rule's title, source path, and compressed text and marked it **ALWAYS**, where it can apply at any moment of ordinary work, or **TRIGGERED**, where a recognizable act comes first, with a trigger line beginning *When*. Where a rule could be either, they chose ALWAYS. The engineer accepted the sorting. It is in the appendix `triggers-sorting.md`.
+
+| package | triggered | rules |
+|---|---|---|
+| foundation | 27 | 40 |
+| design-by-efferent | 10 | 15 |
+| testing | 7 | 20 |
+| journal | 7 | 10 |
+| git | 5 | 7 |
+| language | 3 | 14 |
+| versioning | 2 | 2 |
+| **all** | **61** | **108** |
+
+**The triggered rules are 160,051 characters, 60% of the package rules,** and their trigger lines about 10,500. With them out of the session-start read, the read would fall from 377,775 characters to about 228,000.
+
+**Forecast 9 holds.** The rules that apply all the time, the language rules and the selection-prompt rule among them, were all marked ALWAYS.
+
+**Forecast 10 does not hold.** More than half of the rules have a trigger, 61 of 108, not about a third.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5201,3 +5222,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:28:18 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:03:49 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:06:19 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:12:53 PM PT
