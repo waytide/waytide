@@ -26,6 +26,9 @@ One at a time, in this order, each on its own branch from the experiment's.
 10. **live-references** — `experiment/worktree/rule-reduction.live-references`. Added 2026-10-29. Does every live reference point at something that exists? Finding #5.
 11. **record-obligations** — `experiment/worktree/rule-reduction.record-obligations`. Added 2026-10-29. Can a change to a record carry fewer obligations, with what each obligation protects still kept? Finding #8.
 12. **prompt-turns** — `experiment/worktree/rule-reduction.prompt-turns`. Added 2026-10-29. Can the work ask the engineer fewer times, with the engineer still deciding what is theirs to decide? Finding #9.
+13. **local-vocabulary** — `experiment/worktree/rule-reduction.local-vocabulary`. Added 2026-10-29. Can `local/vocabulary.md` be compressed as the package vocabularies were, with sessions behaving the same? Phase 7 left it whole.
+14. **journal-time-question** — `experiment/worktree/rule-reduction.journal-time-question`. Added 2026-10-29. Why do sessions sometimes put the wrong options in the journal's time question, and can the rule be made so they do not? It failed 3 times in 23 runs in phase 9, before the changes and after.
+15. **master-rule-compression** — `experiment/worktree/rule-reduction.master-rule-compression`. Added 2026-10-29. Can the language rule added on `master` on 2026-10-29, a-response-is-clarified-twice-before-it-is-sent, be brought into the experiment's branch and compressed as the others were?
 
 ## State
 
@@ -2488,6 +2491,12 @@ The read fell from 177,387 characters to 177,172.
 ### Phase 12, prompt-turns, is affirmed — 2026-10-29
 
 **The engineer affirmed the prompt-turns phase.** The `Explain` option is gone, the rules no longer describe the free-text option, and a lone candidate is offered with its negative. The ask-at-once rule is kept, and the attended outcome's five questions are left to the batch-size item.
+
+### Three phases are added for the outstanding work — 2026-10-29
+
+**At the engineer's direction, the work still outstanding becomes phases 13 to 15**, each run one at a time from the experiment's branch, each stating its forecast before its work: local-vocabulary, journal-time-question, and master-rule-compression.
+
+**What is not given a phase.** How often attended work stops is left to the open item on participation as a range of batch sizes, as the engineer decided in phase 12. Forecast 12 cannot be tested.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5739,3 +5748,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:38:53 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:43:12 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:46:28 PM PT
