@@ -2006,6 +2006,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** 3 of 20 sessions ran the loader again before their next act.
 16. **An instruction the hook gives on compaction alone, saying the rules in context are only a summary and must be read again, raises that to at least 80% of sessions.** *Moderate confidence.*
    - **Held, 2026-10-29.** 20 of 20 sessions ran the loader again before their next act.
+17. **In a project with packages turned off, sessions on requests governed by active packages behave the same when the turned-off packages are only listed as when their rules are read and withheld.** *Moderate confidence.*
+18. **When the engineer turns a listed package back on during a session, the session loads it with its listed command before applying its rules, in at least 80% of sessions.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2195,6 +2197,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 ### Phase 5, title-display, is abandoned — 2026-10-29
 
 **At the engineer's direction, phase 5 is abandoned before its work.** The engineer had already decided not to pursue a printed index of the rules: Claude Code has no surface that shows a list in place, and a printed list of 108 titles scrolls. That left the phase nothing to try.
+
+### Phase 6, active-packages-only, starts — 2026-10-29
+
+**The phase asks whether the read can leave out a project's turned-off packages**, with sessions behaving the same while the read shrinks.
+
+**It reverses part of the package-set rule.** That rule has a turned-off package's rules read at session start and withheld, so that within the session they can be cited, weighed, and turned back on. A rule never read cannot be.
+
+**At the engineer's direction, a turned-off package is listed, not skipped.** The loader prints no rule of a turned-off package. It prints the package's name with the command that loads it, as an on-demand rule's trigger is printed. A package turned back on during the session can then be loaded without a restart.
+
+**Forecasts 17 and 18 are what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5410,3 +5422,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:07:39 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:26:15 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:37:21 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:39:24 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:40:29 AM PT
