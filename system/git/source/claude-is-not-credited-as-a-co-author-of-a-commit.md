@@ -1,5 +1,7 @@
 # Claude is not credited as a co-author of a commit
 
+**Trigger:** When creating a commit
+
 Do not add a `Co-Authored-By: Claude …` trailer (or any other "co-authored by Claude/Anthropic" attribution) to any commit you create. The commit should appear as authored by the user only.
 
 **Why:** User preference — they don't want AI co-authorship attribution in their commit history.

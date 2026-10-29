@@ -1,5 +1,7 @@
 # A log entry is written for an implementation record, and the concluding entry depends on whether the work merged
 
+**Trigger:** When creating an implementation record, or changing its **State:** line
+
 An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
 **The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the work merged.

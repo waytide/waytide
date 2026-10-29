@@ -1,5 +1,7 @@
 # The startup display prints once per session
 
+**Trigger:** When the engineer types `load waytide`, or when changing the startup display or its script
+
 The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
 **The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.

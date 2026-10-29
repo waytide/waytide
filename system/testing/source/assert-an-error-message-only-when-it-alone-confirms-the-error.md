@@ -1,5 +1,7 @@
 # Assert an error message only when it alone confirms the error
 
+**Trigger:** When writing an `assert_raises` or deciding whether to assert an error's message
+
 Assert an error's **message content** only in one case. That is where the message is the **only** way for the test to determine that the **correct error was raised under the expected conditions**. Otherwise, do not assert the message.
 
 In the ordinary case, `assert_raises(SomeClass)` plus the test's condition setup already determines that the right error was raised. The class identifies the failure, and the actuation's setup fixes the condition. A message assertion there tests **presentation** (the wording), not **behavior** — and couples the test to the exact string, so a harmless reword breaks it.

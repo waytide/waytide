@@ -1,5 +1,7 @@
 # An implementation runs on a branch to a declared end
 
+**Trigger:** When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation
+
 - **Solubility:** 21
 - **Original rank:** 6 of 106
 - **Unclarity:** 0.58

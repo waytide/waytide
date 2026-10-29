@@ -1,5 +1,7 @@
 # After any implementation hinge, show the test output for the current feature
 
+**Trigger:** When an implementation is accepted at the implementation hinge
+
 - **Solubility:** 91
 - **Original rank:** 105 of 106
 - **Unclarity:** 0.06

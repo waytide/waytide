@@ -1,5 +1,7 @@
 # A feature's normal path and its exceptional paths are separate test files
 
+**Trigger:** When writing a test for a feature's exceptional (raising) path
+
 A feature's **normal path** is the ordinary, non-raising course through it. Its test and the test of each **exceptional path** live in **separate files**. A feature with one normal path and one exceptional path is two files, not one file with two contexts.
 
 The mechanical reason is the actuation. A test file actuates the concern **once**, at the top of the feature context. It asserts each outcome of that one actuation in its own nested context. See the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule.

@@ -1,5 +1,7 @@
 # At the implementation hinge, the engineer chooses a direct implementation or red-green-refactor
 
+**Trigger:** When reaching the implementation hinge of an outcome
+
 At the **implementation hinge** — the fourth of the five — the agent puts two candidates to the engineer:
 
 1. **A working implementation** — the code that satisfies the test, written directly.

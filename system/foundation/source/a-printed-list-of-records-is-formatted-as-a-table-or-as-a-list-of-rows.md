@@ -1,5 +1,7 @@
 # A printed list of records is formatted as a table or as a list of rows
 
+**Trigger:** When the engineer asks for a list of records
+
 **When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 
 **The first column is the record's handle and carries no heading.** That is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit. The columns after it are headed.

@@ -1,5 +1,7 @@
 # The next version is put to the engineer, never decided by the agent
 
+**Trigger:** When cutting a release or determining the next version of a package
+
 At a release, the agent does not select the next version. It presents the candidates through the **AskUserQuestion** selection UI. There is one option per segment that could be increased, each showing the version that would result. The engineer chooses.
 
 For a package at `2.2.3.1`, that is:

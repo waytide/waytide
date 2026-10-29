@@ -1,5 +1,7 @@
 # Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
+**Trigger:** When creating and naming a new file under waytide/local/ or a new rule file in a package
+
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
 - The **working-state** directories: the contemporaneous, historical records under `logs/` — the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.

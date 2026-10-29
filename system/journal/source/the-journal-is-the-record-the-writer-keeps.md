@@ -1,5 +1,7 @@
 # The journal is the record the writer keeps
 
+**Trigger:** When writing, changing, or committing a journal entry
+
 **`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing, and the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 **Records written while the package was named `diary` keep that word.** The log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.

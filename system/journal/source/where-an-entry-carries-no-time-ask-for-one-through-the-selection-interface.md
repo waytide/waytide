@@ -1,5 +1,7 @@
 # Where an entry carries no time, ask for one through the selection interface
 
+**Trigger:** When creating a journal entry for which the writer gave no time
+
 When creating a journal entry, where the writer has not given a **time**, ask them through the selection interface. Do not choose a default, and do not invent or guess a placeholder time.
 
 **A date settles nothing about the time.** *Yesterday*, *today*, *last Tuesday*, and an explicit date each fix the day and say nothing about the hour. So the ask fires for each of them, and the answer decides only whether the entry carries a time and what it is.

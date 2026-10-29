@@ -1,5 +1,7 @@
 # A journal entry has a human-readable datetime line under its title
 
+**Trigger:** When writing a journal entry
+
 Every journal entry carries a datetime stamp in its content, on its own line directly under the `# <title>` heading. It sits above the `**Tags:**` line where there is one, above the `**Summary:**` line where there is one, and above the body.
 
 Format: `Ddd Mon D YYYY at HH:MM` — the abbreviated weekday, the abbreviated month, the day of the month with no leading zero, the four-digit year, the literal word `at`, and the 24-hour `HH:MM`. An example is `Mon Jun 1 2026 at 13:40`.

@@ -1,5 +1,7 @@
 # The test tree command prints the suite's context tree
 
+**Trigger:** When the user gives the command "test tree"
+
 When the user gives the command **"test tree"**, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
 
 The problem it solves is repetition. Each test file re-declares the outer contexts that mirror its folder path, as its siblings in that folder do. The raw run output repeats those headings per file. The normalized tree merges them. Each outer context appears once, then each sub-feature once beneath it. The individual tests are leaves with a `•` prefix, and the pass/fail summary line comes at the end.

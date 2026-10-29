@@ -1,5 +1,7 @@
 # Each hinge displays the actuation as its anchor, and the contexts once
 
+**Trigger:** When presenting a hinge to the engineer
+
 Each hinge of the cycle is handed to the human with a specific amount of the test on screen. The the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule owns the *sequence* of hinges and the acceptance mechanism. This rule owns what is *displayed* at each one.
 
 | Hinge | Displays |

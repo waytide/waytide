@@ -1,5 +1,7 @@
 # Where an entry's body says the same thing as its title, keep the title alone
 
+**Trigger:** When drafting a journal entry
+
 Where the body of a journal entry would be identical or nearly identical to its `# <title>`, omit the body. The entry is then the title heading, the datetime line, and a `**Tags:**` line where it has one. No prose repeats what the title already says.
 
 This is the title-and-body counterpart of the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule, which omits the `**Summary:**` line where it would duplicate the body. Together they keep one sentence from appearing in the title, the summary, and the body alike.

@@ -1,5 +1,7 @@
 # A status report prints a fixed whole-project report
 
+**Trigger:** When the engineer asks for a status report, or when giving any summary of where the project stands
+
 When the user asks for a **status report** (or "project status"), produce a report with these parts, in order:
 
 **The report reads the project's planning records** — the items that carry the work's tasks, whatever the project's kind tags name them. This rule names no directory and no kind, so it survives a change to either.

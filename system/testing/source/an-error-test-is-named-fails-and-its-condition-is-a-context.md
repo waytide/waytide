@@ -1,5 +1,7 @@
 # An error test is named Fails, and its condition is a context
 
+**Trigger:** When writing or naming a test that asserts an actuation raises an error or does not raise
+
 When a test's assertion is that the actuation raises an error (an `assert_raises`), the `test` block's name is **"Fails"** — the actuation fails. The complementary assertion, that the actuation does **not** raise, is named **"Doesn't fail"**. The **condition** under which the actuation fails (or doesn't) is **not** part of the test name. It is promoted to a **`context`** that encloses the test and names that condition.
 
 **The tell:** a `test` name may want the word **"when"**. That "when" clause is a *condition*. Lift it into a `context`, and name the `test` "Fails", or "Doesn't fail".

@@ -1,5 +1,7 @@
 # Record a rule's authorship in a provenance footer
 
+**Trigger:** When authoring a new rule file or changing an existing one
+
 - **Solubility:** 50
 - **Original rank:** 54 of 106
 - **Unclarity:** 0.70

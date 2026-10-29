@@ -1,5 +1,7 @@
 # A record may be tagged with square-bracket tags
 
+**Trigger:** When adding a tag to a record or a list item
+
 **Any record may carry tags**, such as `[idea]`. Put them on a `**Tags:**` line at the head of the record, after `**State:**` where there is one: `**Tags:** [idea] [decision]`. To tag one list item, prefix it: `- [idea] My idea`.
 
 **Write a tag lower-case in square brackets**, with dashes between words: `[legal-matter]`.

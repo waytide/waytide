@@ -1,5 +1,7 @@
 # The writer's username is read from the environment, then the project, then the user's config file
 
+**Trigger:** When resolving the active writer's username or display name (for a journal directory or any Waytide tool)
+
 This is the binding contract every Waytide tool follows to determine **who is writing now**. Each tool names its own variable at the first level, and the journal's is `JOURNAL_WRITER`. The two levels below it are common to all of them. An identity set once on a machine then resolves the same person in each. What this rule fixes is the chain rather than any one tool's variable, so a tool built independently of this one agrees with it.
 
 ## What identity is

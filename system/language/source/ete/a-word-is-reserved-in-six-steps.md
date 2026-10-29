@@ -1,5 +1,7 @@
 # A word is reserved in six steps
 
+**Trigger:** When asked to reserve a word (e.g. "Waytide reserves the word, X")
+
 **Each step is stated in some rule, and the sequence is stated here.** A writer who reserves a word without the sequence reconstructs it, or picks a category by feel.
 
 **The instruction that starts the sequence is "Waytide reserves the word, X".** It names the word and asks for all six steps. So the sequence does not have to be spelled out each time a term is settled.

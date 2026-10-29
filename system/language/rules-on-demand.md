@@ -1,0 +1,117 @@
+# A word is reserved in six steps
+
+Source: system/language/source/ete/a-word-is-reserved-in-six-steps.md
+
+Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
+
+1. Reserve a word by following these six steps in order, every time a word is reserved.
+2. The instruction that starts the sequence is "Waytide reserves the word, X". It names the word and asks for all six steps.
+3. The sequence does not have to be spelled out each time a term is settled.
+4. Write the verb as `reserves`, and never `claims`.
+5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.
+6. Step 1: look the word up in the STE dictionary. This step is mechanical.
+7. The lookup has three outcomes. The word is approved, with the one meaning it may carry.
+8. Or the word is not approved, and the dictionary names the approved word that replaces it.
+9. Or the word is absent from the STE dictionary.
+10. Step 2: ask what the word names. Do not skip this step.
+11. A word that names something in the subject field is terminology. Continue the sequence.
+12. A word that qualifies, joins two statements, or does grammatical work is ordinary vocabulary. Stop and write no entry, per the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule.
+13. Step 3: decide noun or verb.
+14. A word used both ways takes a category for each. These are two decisions, not one.
+15. STE Rule 1.7 forbids a technical noun used as a verb. STE Rule 1.13 forbids a technical verb used as a noun.
+16. Step 4: try an STE category first. STE Rule 1.5 gives twenty-two noun categories, and STE Rule 1.12 gives four verb categories.
+17. Waytide's terms land in noun categories 7, 11, 15, and 19, and verb category 2.
+18. Step 5: use an ETE category only where no STE category holds the word.
+19. Do not reach step 5 until an STE category has been tried and refused.
+20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
+21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
+22. The entry gives the definition, what the STE dictionary says about the word, and the category.
+23. The engineer decides the term's category, because a term is a design decision.
+24. Put the category to the engineer through the selection UI.
+25. Bring the step 1 lookup already done, and name the candidate categories.
+26. Steps 4 and 5 are judgment. Step 1 is not.
+27. The phrase reserves the word and does not order a sweep.
+28. A reservation settles what the word means in Waytide's prose from that point on.
+29. Replacing another word with the reserved word where it already stands is a separate instruction, asked for separately.
+30. Do not conform existing prose until that separate instruction is given.
+
+# ETE declares its own categories
+
+Source: system/language/source/ete/ete-declares-its-own-categories.md
+
+Trigger: When reserving a word or choosing a vocabulary category for a term
+
+1. STE's category lists are closed. Its word lists are open.
+2. STE Rule 1.5 admits a technical noun that fits one or more of its twenty-two categories.
+3. STE Rule 1.12 admits a technical verb that fits one or more of its four categories.
+4. The words listed inside each STE category are only examples.
+5. ETE adds five categories. Each one holds technical nouns and technical verbs.
+6. The five categories are declared here and nowhere else.
+7. An entry names its category and its part of speech. STE Rules 1.7 and 1.13 depend on which part of speech a word is reserved as.
+
+## Engineering, design, process, and method
+
+1. This category holds terms that name how engineering work is conducted, recorded, and set aside.
+2. It also holds the acts that conduct that work, and the parts of a design method.
+3. Examples: `hinge`, `gate`, `cradle`, `cycle`, `loop`, `actuation`, `observation`, `efferent`, `solubility`, `subtle`, `load-bearing`, `mean-bias`, `deferred`, `suspended`, `out of scope`, `responsibility`, `transfer`, `reconcile`.
+4. Try STE category 7 before this one. It covers concepts, design, calculations, and methodologies.
+
+## Evented systems and autonomous components
+
+1. This category holds terms that name the parts of a message-based system, the components that run on their own, and what they do.
+2. Examples: `projection`, `entity`, `event`, `stream`, `consumer`, `handler`, `message`, `autonomous component`.
+
+## Agent artifacts
+
+1. This category holds terms that name the files an agent and an engineer write and read as they work.
+2. It also holds terms for what is done to those files.
+3. Examples: `working-state artifact`, `implementation record`, `loop record`, `work session record`, `log entry`, `rule file`, `vocabulary`.
+
+## Human-computer interaction (HCI)
+
+1. This category holds terms that name how a person and a machine work together, and what each of them does.
+2. Examples: `attended`, `unattended`, `free-text option`, `selection prompt`, `harness`.
+
+## Deliberation and speech
+
+1. This category holds words whose object is a judgment or a statement rather than a thing.
+2. Examples: `ask`, `decide`, `choose`, `settle`, `state`, `present`, `observe`, `govern`, `establish`, `explain`.
+
+## Applying the categories
+
+1. This rule contradicts STE Rule 1.5 and STE Rule 1.12, because each of them closes its list of categories.
+2. It contradicts nothing else.
+3. A word admitted to an ETE category is reserved, used, and bound exactly as a word in an STE category is.
+4. Try an STE category first.
+5. Use an ETE category only for a word that no STE category holds.
+6. Reserve words one at a time.
+7. The word's vocabulary entry names its category.
+8. The same entry states what the STE dictionary says about the word.
+9. A word with no entry is not reserved.
+10. An ETE category is not a standing permission to use the words that fit it.
+
+# ETE fixes the meaning of a word in its category
+
+Source: system/language/source/ete/ete-fixes-the-meaning-of-a-word-in-its-category.md
+
+Trigger: When reserving a word as a technical noun or verb in a package's vocabulary.md, or writing that reservation's entry
+
+1. The STE dictionary carries no technical nouns. STE Rule 1.8 sends the reader to the company glossary for them.
+2. A technical noun takes its meaning from the vocabulary that reserves it.
+3. Rules 1.5 and 1.6 reach only a word the dictionary omits or refuses. So an approved word cannot be reserved as a technical noun under them.
+4. STE Rule 1.3 requires an approved word to keep the dictionary's meaning and no other.
+5. A word reserved in an ETE category takes the meaning its ETE entry gives it.
+6. This holds whether the STE dictionary omits the word, refuses it, or approves it with a different meaning.
+7. This contradicts STE Rule 1.3.
+8. Mark each word reserved with a meaning different from its approved meaning in its package's vocabulary.
+9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Waytide's loop is the DBE cycle.
+10. This is the most expensive reservation ETE makes, and the entry carries the cost.
+11. The entry quotes the approved meaning.
+12. The entry states why the approved meaning does not carry Waytide's.
+13. Recast the sentence instead where a different word serves.
+14. STE Rule 9.1 covers the case where a word-for-word replacement will not do.
+15. This reservation is the last resort, not the first.
+16. An entry that does not argue against the approved meaning has not made the reservation.
+17. Use the STE dictionary's approved meaning where it serves.
+18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
+19. Reserve the word in an ETE category only where neither serves.

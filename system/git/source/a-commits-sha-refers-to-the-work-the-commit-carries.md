@@ -1,5 +1,7 @@
 # A commit's SHA refers to the work the commit carries
 
+**Trigger:** When the engineer gives a commit SHA
+
 **When the engineer names a commit by its SHA, they are asking about the substance the commit carries.** That is the item, the implementation, the rule, or the change to the code. They are not asking about the commit's own mechanics — its message, its file list, its diff statistics, or the log entry that travelled with it.
 
 **Answer from what the commit added or changed.** Where it carries an item, an implementation record, or a rule, read that file and answer from its content. Where it changes code, answer from what the code now does. The SHA is the handle nearest to hand for a piece of work, and it is used because it is unambiguous rather than because the commit object is the subject.

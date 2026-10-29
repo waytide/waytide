@@ -1,5 +1,7 @@
 # Rules may establish a mindset rather than a mechanic
 
+**Trigger:** When writing, evaluating, placing, or reconciling conflicting rules
+
 A rule's package — `language`, `testing`, `git`, and the others — names the **surface** a rule acts on (words, commits, tests, code), not the **purpose** it serves. A large share of rules exist to establish a **mental stance**, which is a way of thinking about the code and the work. They do not exist to standardize a mechanic. Purpose is not confined to category. Two rules in different packages can be doing the same work, and a rule's real justification is often not visible from its package.
 
 - **Terminology is the purest case.** Every terminology rule is an X-not-Y substitution (controls-not-factories, name-concepts-literally-not-by-analogy-code-or-jargon rule). None change what the code *does*. Each swaps a word to swap the concept the word installs. Vocabulary is the most direct lever on a mental model.

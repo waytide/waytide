@@ -1,5 +1,7 @@
 # The implementations directory holds one record per implementation
 
+**Trigger:** When starting an experiment or feature, or writing or changing an implementation record
+
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
 **Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule), and the lifecycle turns on which one a record carries.

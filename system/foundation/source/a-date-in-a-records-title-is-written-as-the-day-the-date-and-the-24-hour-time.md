@@ -1,5 +1,7 @@
 # A date in a record's title is written as the day, the date, and the 24-hour time
 
+**Trigger:** When writing a date into a working-state record's title
+
 A working-state record's **title** may carry a date, as the work session record's `# Work Session — <name> (<date>)` does. In that record and any other whose title is dated, the date is written as:
 
 ```

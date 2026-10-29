@@ -1,5 +1,7 @@
 # A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
+**Trigger:** When the project stops doing something, such as removing a rule, procedure, or report
+
 **When the project stops doing something, log it and tag the entry `[suspended]`.** That is the whole of the act. There is no directory the thing moves to, and nothing is kept beside the entry.
 
 **What can be suspended** is anything the project *did*: a rule that became ceremony, a procedure nobody runs, a report nobody reads, a step that costs more than it is worth. **Not** something the project only wanted — an item set aside takes `**State:** Suspended` and stays where it is, which is a different act with a different record.

@@ -1,5 +1,7 @@
 # A record carrying a state line ends its filename with the state in upper case
 
+**Trigger:** When creating, renaming, changing the state of, or referencing an item or implementation record
+
 Where a record carries a canonical `**State:**` line, its **filename** ends with that state word in **upper case**, appended to the name with a dash and sitting before the extension.
 
 ```

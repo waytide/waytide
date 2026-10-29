@@ -1,5 +1,7 @@
 # An observation is a working hypothesis whose one state, Stated, never changes
 
+**Trigger:** When recording, revising, or promoting an observation in waytide/local/items/
+
 `waytide/local/items/` holds working hypotheses, definitions, and methods that are **not yet binding**. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
 
 **An observation lives in `waytide/local/items/` and is tagged `[observation]`.** The tag is what makes a record an observation.

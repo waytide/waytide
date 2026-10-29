@@ -1,5 +1,7 @@
 # ETE fixes the meaning of a word in its category
 
+**Trigger:** When reserving a word as a technical noun or verb in a package's vocabulary.md, or writing that reservation's entry
+
 **STE supplies no meaning for a technical noun.** The dictionary carries approved words and their meanings. It carries no technical nouns at all, and says why: there are too many, and each subject field uses different ones. STE Rule 1.8 sends the reader to the company glossary for them. So a technical noun already takes its meaning from the vocabulary that reserves it.
 
 **The gap is the word that is already approved.** An approved word cannot be reserved as a technical noun, since Rules 1.5 and 1.6 reach only a word the dictionary omits or refuses. Its meaning stays the dictionary's, and STE Rule 1.3 requires that meaning and no other.

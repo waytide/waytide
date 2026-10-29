@@ -1,5 +1,7 @@
 # The items directory holds one file per item
 
+**Trigger:** When creating an item, changing an item's state or content, or answering against what an item settled
+
 - **Solubility:** 11
 - **Original rank:** 1 of 106
 - **Unclarity:** 0.82

@@ -1,5 +1,7 @@
 # The work-sessions directory holds one record per work session
 
+**Trigger:** When a work session is closing, or the engineer asks for a work session record
+
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.

@@ -1,5 +1,7 @@
 # A loop record holds the cycles through the loop, one file per feature
 
+**Trigger:** When writing a loop record for a feature under waytide/local/logs/loops/
+
 `waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one entry at a time. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line log, which a loop record must not displace (the log stays one line per entry).

@@ -1,5 +1,7 @@
 # A timeline view lists every journal entry by its datetime
 
+**Trigger:** When the writer asks for the journal timeline or a list of journal entries
+
 Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. List them in chronological order, oldest first.
 
 Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>` is the human-readable datetime line under the entry's title, as `Wed Jun 17 2026 at 18:28` is. The `<title>` is the entry's `# ` heading with the leading `# ` removed. End with a one-line count and date span, as *15 entries, spanning Jun 15–17, 2026*. Output the list alone, with no preamble.

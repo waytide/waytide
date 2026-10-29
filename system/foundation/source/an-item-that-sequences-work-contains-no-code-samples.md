@@ -1,5 +1,7 @@
 # An item that sequences work contains no code samples
 
+**Trigger:** When writing or revising an item in waytide/local/items/ that sequences work
+
 - **Solubility:** 88
 - **Original rank:** 103 of 106
 - **Unclarity:** 0.18

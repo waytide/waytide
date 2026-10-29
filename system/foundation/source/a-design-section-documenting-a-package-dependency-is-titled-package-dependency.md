@@ -1,5 +1,7 @@
 # A design section documenting a package dependency is titled "Package Dependency"
 
+**Trigger:** When writing a section of a [design] item that documents a dependency on a package
+
 A design — an item tagged `[design]` — may have a section that documents a dependency on a package, meaning a gem, a library, or another installable package. Title that section **Package Dependency**, not just "Dependency".
 
 **Why:** "Dependency" is overloaded — it can mean a code-level dependency, a runtime relationship, an injected collaborator, and more. "Package Dependency" names exactly what the section is about: a dependency on a package. The user corrected a bare "Dependency" heading to "Package Dependency" directly.

@@ -1,5 +1,7 @@
 # The logs directory holds the contemporaneous, historical records
 
+**Trigger:** When writing a record under local/logs/ or deciding which directory a new kind of record belongs in
+
 **A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
 
 - **`waytide/local/logs/log/`** — the log, one file per entry, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).

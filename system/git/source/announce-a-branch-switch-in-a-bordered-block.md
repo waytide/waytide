@@ -1,5 +1,7 @@
 # Announce a branch switch in a bordered block
 
+**Trigger:** When switching the working tree to another branch (including `git switch -c`)
+
 When the agent switches branches, it prints this block. The block has a border above and below, made of `=` characters:
 
 ```

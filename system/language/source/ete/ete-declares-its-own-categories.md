@@ -1,5 +1,7 @@
 # ETE declares its own categories
 
+**Trigger:** When reserving a word or choosing a vocabulary category for a term
+
 **STE's category lists are closed and its word lists are open.** Rule 1.5 says a technical noun is usable *if you can include it in one or more of these twenty-two categories*. Rule 1.12 says the same of a technical verb and *these four categories*. The words inside each category are only examples, and Rule 1.5 states that outright.
 
 **ETE adds five categories, and each holds technical nouns and technical verbs.** They are declared here and nowhere else. An entry names its category and its part of speech, since STE Rules 1.7 and 1.13 turn on which one a word is reserved as.

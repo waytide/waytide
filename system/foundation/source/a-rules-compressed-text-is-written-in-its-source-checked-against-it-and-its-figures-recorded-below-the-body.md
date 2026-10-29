@@ -1,5 +1,7 @@
 # A rule's compressed text is written in its source, checked against it, and its figures recorded below the body
 
+**Trigger:** When editing a source rule's body, or writing, revising, or checking a rule's compressed text
+
 **A source rule may carry a compressed text: the rule restated with the same effect and outcome, in fewer words.** It is written in the source, in a `## Compressed` section below the body, and it shares the source's title and `Related:` list. The source's body stays the authority. The compressed text is a second rendering of it, and is never edited apart from it.
 
 ## The compressed text

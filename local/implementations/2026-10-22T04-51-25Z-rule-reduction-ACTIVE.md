@@ -2048,6 +2048,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 1. **With no argument, after each package's pre-loaded rules, the loader prints its on-demand file's trigger lines, and not the rules.** Each line names the command that loads its rule: `- When some-act, run: system/foundation/load-rules.sh c-rule`. The rule's name is its source file's name. This is part of the outcome *Prints every file the session reads, in order*.
 2. **Given a rule's name, the loader prints that on-demand rule's entry alone**: its title, source, trigger, and compressed text. Given a name no on-demand file holds, it says so and fails. The outcome is *Prints the named on-demand rule*.
 
+### Triggers — the 61 triggers are written, and the session start uses them, 2026-10-29
+
+**Each of the 61 rules the sorting marked triggered now carries its trigger, as a `**Trigger:**` line under its title in its source.** The trigger is the sorting's, without the path. The compiler sends the 61 to the packages' `rules-on-demand.md` files and keeps the 47 others in `rules-pre-loaded.md`.
+
+**The trigger line is a loading cue, not a directive of the rule**, so the rules' compressed texts do not change and are not checked again. A trigger the session comparison shows to be wrong is changed in its source.
+
+**The session-start instruction tells the agent what an ON DEMAND section is:** a list of rules the loader does not print, each with its trigger and its command, and that when the act a trigger names comes up, it runs the command and follows the rule before acting.
+
+**The session-start read is 229,028 characters, against 377,775 with every rule pre-loaded, 39% smaller.** The 61 trigger lines are part of it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5249,3 +5259,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:12:53 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:16:53 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:20:46 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:36:49 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:37:28 PM PT

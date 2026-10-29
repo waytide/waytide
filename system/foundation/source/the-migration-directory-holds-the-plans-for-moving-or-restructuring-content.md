@@ -1,5 +1,7 @@
 # The migration directory holds the plans for moving or restructuring content
 
+**Trigger:** When planning to move content across a repository boundary or to restructure, rename, or regroup a project's files
+
 `waytide/local/migration/` holds **migration records**: the execution plans for moving or restructuring content, and the record of how each move actually went. **A migration is a structural change**: content moved across a repository boundary, or the layout of a project's files changed within one.
 
 - **When to use:** content is to cross out of this repository or into it, or the structure it sits in is to change. A library extracted into its own repository, a body of work moved to a project that will own it, one repository split into several or several merged into one, or existing conventions migrated into an installed system. A directory renamed or regrouped, as the contemporaneous, historical records were grouped under `logs/`, or a set of files restructured, is a migration too. If content ends up under a different root, or in a different structure, it belongs here.

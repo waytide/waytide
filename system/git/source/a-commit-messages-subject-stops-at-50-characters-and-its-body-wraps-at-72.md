@@ -1,5 +1,7 @@
 # A commit message's subject stops at 50 characters and its body wraps at 72
 
+**Trigger:** When writing a commit message
+
 - **The subject line is at most 50 characters.**
 - **The body is wrapped at 72 characters.**
 

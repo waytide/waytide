@@ -1,5 +1,7 @@
 # The actuation gate offers candidate actuations as options
 
+**Trigger:** When presenting the actuation hinge of an outcome
+
 At the actuation gate — the first gate, where the cradle is set — the AI does not commit a single actuation and proceed. It presents the human a small set of **candidate actuations** as options to choose among. The human then either:
 
 - **chooses** the option that reads as the more soluble use, or

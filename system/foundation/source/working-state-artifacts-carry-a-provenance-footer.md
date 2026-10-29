@@ -1,5 +1,7 @@
 # Working-state artifacts carry a provenance footer
 
+**Trigger:** When creating or changing a working-state document under waytide/
+
 - **Solubility:** 49
 - **Original rank:** 52 of 106
 - **Unclarity:** 0.52

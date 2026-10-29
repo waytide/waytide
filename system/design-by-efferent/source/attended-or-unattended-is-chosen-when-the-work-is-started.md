@@ -1,5 +1,7 @@
 # Attended or unattended is chosen when the work is started
 
+**Trigger:** When starting a feature or an experiment
+
 Work designed through DBE runs in one of two modes, chosen when a feature or an experiment is started and held for its duration:
 
 - **Attended** — human-in-the-loop. The loop **waits** at every hinge, and the engineer deliberates each one. **This is the default.**

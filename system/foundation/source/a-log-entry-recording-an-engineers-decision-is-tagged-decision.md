@@ -1,5 +1,7 @@
 # A log entry recording an engineer's decision is tagged `[decision]`
 
+**Trigger:** When writing a log entry that records a decision
+
 **When the engineer makes a decision, the log entry that records it carries `**Tags:** [decision]`.** The tag says who decided.
 
 **Every log entry states a decision, so the tag marks the engineer's.** Most entries record what the agent did under a rule, or what followed from the work. An entry tagged `[decision]` records a choice the engineer made. Examples are a direction set, a question settled, and work held for a later piece of work.

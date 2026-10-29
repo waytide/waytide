@@ -1,5 +1,7 @@
 # A log entry is written for an item on creation, on each settled resolution, and on a change of state
 
+**Trigger:** When creating an item, adding a dated Settled resolution to it, changing its **State:** line, or closing a work session with a reconciliation
+
 - **Solubility:** 17
 - **Original rank:** 2 of 106
 - **Unclarity:** 0.77

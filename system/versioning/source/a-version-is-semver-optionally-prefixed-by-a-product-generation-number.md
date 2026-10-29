@@ -1,5 +1,7 @@
 # A version is semver, optionally prefixed by a product generation number
 
+**Trigger:** When choosing, writing, or proposing a package version or cutting a release
+
 A version takes one of two forms:
 
 ```

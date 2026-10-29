@@ -1,5 +1,7 @@
 # The log records why work was abandoned, and never says undone work was done
 
+**Trigger:** When writing a log entry, especially one recording abandoned work
+
 **A log entry never conveys that something was done when it was not done.** That is the whole prohibition, and it holds whatever the entry is about.
 
 **As the engineer stated it:** if work is abandoned, the log can record any reasoning given for the abandonment, but the log should never make a record that conveys that something was done when in fact it was not done. The log on `master` shouldn't convey that work from an abandoned branch landed on `master`.

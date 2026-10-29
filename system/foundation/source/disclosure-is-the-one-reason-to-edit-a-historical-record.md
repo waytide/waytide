@@ -1,5 +1,7 @@
 # Disclosure is the one reason to edit a historical record
 
+**Trigger:** When about to edit a historical record (a log entry, work session record, implementation record, or completed migration record), or when the engineer says a record discloses something it should not
+
 A historical record states what was true when it was written, and is **not** revised to suit a later convention. That is a log entry, a work session record, an experiment record, a feature record, or a completed migration record. That is the standing rule. It holds against renaming, reformatting, and correcting a term the project has since replaced. It holds against every other reason a reader might want a record to read differently.
 
 **It does not hold against disclosure.** Where a record names something that should not have been disclosed, it is corrected. A record is not a commitment to keep publishing something that should not have been published in the first place.

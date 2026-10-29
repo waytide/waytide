@@ -1,5 +1,7 @@
 # A test of behavior that already exists is coverage, not design
 
+**Trigger:** When an implementation hinge finds that the existing code already satisfies the test
+
 In DBE, a test justifies itself by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. A test that passes the first time it runs, because the behavior already exists, is **uncontested**: no implementation is written to meet it, and it drives nothing. It *confirms* the behavior rather than *designing* it. **Such a test is coverage, not a DBE design step.**
 
 **Coverage has value, and it is a concern of testing rather than of DBE.** A test of existing behavior prevents a regression in it, which is worth having. It is not part of the design loop, and DBE does not take it as an outcome. Adding it is a decision about coverage, made on its own. See the "TDD designs, coverage prevents" rule.

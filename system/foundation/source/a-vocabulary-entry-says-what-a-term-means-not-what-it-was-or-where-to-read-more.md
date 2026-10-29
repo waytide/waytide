@@ -1,5 +1,7 @@
 # A vocabulary entry says what a term means, not what it was or where to read more
 
+**Trigger:** When writing or revising an entry in a vocabulary.md file
+
 **A vocabulary entry states the term's current meaning and stops there.** Two things are barred.
 
 **It records no lifecycle history.** Not what the term used to name, what directory it used to sit in, when it changed, or what governed it before. That belongs to the log.

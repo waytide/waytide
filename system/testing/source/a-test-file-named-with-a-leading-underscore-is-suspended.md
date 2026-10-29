@@ -1,5 +1,7 @@
 # A test file named with a leading underscore is suspended
 
+**Trigger:** When taking a test out of the suite, finding a failing test to set aside, or writing the code that selects a suite's test files
+
 **A leading underscore on a test file's name means the file is suspended.** `_upload.rb` is suspended and `upload.rb` is not. **A suite run does not run a suspended file.**
 
 **Suspending a test is a rename and nothing else.** The file stays where it is, with its content untouched. Removing the underscore takes it back into the suite.

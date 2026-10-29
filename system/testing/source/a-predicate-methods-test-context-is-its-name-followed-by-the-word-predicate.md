@@ -1,5 +1,7 @@
 # A predicate method's test context is its name followed by the word "Predicate"
 
+**Trigger:** When naming a test context for a ?-suffixed predicate method
+
 The `context` for a predicate method — a `?`-suffixed, boolean-returning method — is named by the method's name (without the `?`) followed by **"Predicate"**. So `defined?` → `context "Defined Predicate"`, not `context "Defined?"`.
 
 Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", and `empty?` → "Empty Predicate".
