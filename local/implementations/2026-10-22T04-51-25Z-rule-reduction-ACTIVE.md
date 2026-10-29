@@ -75,7 +75,9 @@ Committed before the work. Each item carries the agent's confidence.
 **Phase 3 — additional-context**
 
 6. **Delivering every rule this way is refuted by size alone.** The channel is capped at 10,000 characters and the compiled read is about 547,000. *High confidence.*
+   - **Held, 2026-10-29.** The channel holds about 10,000 characters, and the read is 180,146.
 7. **A part of the rules fits, and what fits is not enough to stand in for the read.** *Low confidence.*
+   - **Held, 2026-10-29.** About 7,150 characters are left after the hook's own instruction, 4% of the read.
 
 ## Confirmations
 
@@ -2302,6 +2304,17 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **At the engineer's direction, the work still outstanding becomes phases 8 to 12**, each run one at a time from the experiment's branch, each stating its forecast before its work: hook-delivery, single-statement, live-references, record-obligations, and prompt-turns.
 
 **What is not given a phase.** Forecast 12 cannot be tested, since no act runs through a script that prints its rule. Finding #2 no longer shows: no History clause reaches the read, since the read is of compressed texts. Finding #6 was settled in the hook, which leaves out the package-set sentence where the set is `default` with nothing deactivated.
+
+### Phase 8, hook-delivery — the channel's limit, measured, 2026-10-29
+
+**The phase asks whether the session-start hook can give the agent part of the rules directly, with no read.** Its forecasts are 6 and 7, left untested when phase 3 became triggers.
+
+**The hook's channel to the agent holds about 10,000 characters.** Sessions were given hook text with markers along it. Text of 9,900 characters reached the agent whole. Text of 10,100 or more did not: Claude Code saved it to a file and gave the agent the first 2,000 characters and the file's path.
+
+- **Forecast 6 held: delivering every rule this way is refuted by size.** The read is 180,146 characters, about eighteen times the limit.
+- **Forecast 7 held: a part fits, and it cannot stand in for the read.** The hook's own instruction takes 2,848 characters, which leaves about 7,150, 4% of the read. Of the packages' pre-loaded rules, only `git`'s and `journal`'s would fit.
+
+**At the engineer's direction, both are recorded as held by this measurement, with no session test.** A session given only what fits would show only that it does not follow rules it was never given.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5530,3 +5543,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:03:11 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:09:30 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:10:42 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:13:54 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:12 AM PT
