@@ -2005,6 +2005,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 15. **After the context is compacted, a session runs the loader again before its next act in fewer than half of sessions, with the session-start instruction as it is.** The instruction asks for the read before the session's first substantive action, and after compaction the summary says the read was done. *Moderate confidence.*
    - **Held, 2026-10-29.** 3 of 20 sessions ran the loader again before their next act.
 16. **An instruction the hook gives on compaction alone, saying the rules in context are only a summary and must be read again, raises that to at least 80% of sessions.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 20 of 20 sessions ran the loader again before their next act.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2166,6 +2167,14 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **The method.** Each session typed `load waytide`, asked what the git package does, was compacted with `/compact`, and then got one of five requests from the confirming test: dropping an item, a migration plan, the journal timeline, suspending a flaky test, and the patch-bump question. There were four runs of each, with the hook as it is.
 - **The hook fired on every compaction**, as `SessionStart:compact`, and gave the same instruction it gives at the start.
 - **15 of the 20 loaded their request's on-demand rule by name before acting.** The compaction's summary kept the triggers, or the rules' names, well enough to find the rule, while the rules themselves were left only as the summary.
+
+### Re-read after compaction — an instruction for compaction, tried, 2026-10-29
+
+**Forecast 16 held: with an instruction given on compaction alone, 20 of 20 sessions ran the loader again before their next act.** All 20 also loaded their request's on-demand rule before acting.
+
+- **The trial ran in the test copies, not the repository.** The copies' `session-start.sh` read the event's input. Where its source was `compact`, the hook put this ahead of its usual instruction: *The context has just been compacted. The rules read at the start of this session now survive only as the compaction's summary, which does not hold them. Before your next act, whatever the next request is, run the loader again and read its whole output, as follows.*
+- **The method was the baseline's**: the same five requests, four runs each, 20 sessions.
+- **A start, a resume, and a clear are unchanged**, since the sentence is given only where the source is `compact`.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5376,3 +5385,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 8:45:00 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:12 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:05:32 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:13:13 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 10:19:22 PM PT
