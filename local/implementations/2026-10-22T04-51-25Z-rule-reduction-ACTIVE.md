@@ -2336,6 +2336,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **At the engineer's direction, the head line of each vocabulary is left out of its compressed text.** The line says every word in the vocabulary is approved or reserved, and cites the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule. That rule is in the read and says the same of every vocabulary, so nothing is lost. The line stays in each vocabulary's full text, where the rule requires it. The read fell from 180,146 characters to 178,474.
 
+### Single statement — the vocabularies' opening lines, 2026-10-29
+
+**At the engineer's direction, each vocabulary's compressed text no longer opens by naming the vocabulary or saying it is binding.** The loader prints the file's path above it, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule, which is pre-loaded, says every vocabulary binds. The lines stay in the full texts. The read fell from 178,474 characters to 177,387.
+
+**At the engineer's direction, the term preloaded replaces read where it means printed at session start**, since an on-demand rule is read too.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5567,3 +5573,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:38 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:27 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:57 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:17 PM PT

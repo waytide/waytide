@@ -20,8 +20,6 @@ The journal package's vocabulary. Three terms, and one substitution that keeps t
 
 ## Compressed
 
-1. This is the journal package's vocabulary: three terms and one substitution.
-2. It is binding. Use these terms with these meanings in rules, entries, prose, and dialogue.
 
 ## Terms
 
@@ -39,6 +37,7 @@ The journal package's vocabulary. Three terms, and one substitution that keeps t
 
 - 2026-10-29, compressed: 3294 → 2183 characters; checked: 30 directives, 24 kept, 4 less precise, 2 lost; 3 repairs, re-checked: 29 directives, 23 kept, 5 less precise, 1 lost; what is still not kept was judged reasons or background
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
+- 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 
 ---
 
@@ -52,3 +51,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
