@@ -2342,6 +2342,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **At the engineer's direction, the term pre-loaded replaces read where it means printed at session start**, since an on-demand rule is read too.
 
+### Single statement — two more opening lines are evaluated, 2026-10-29
+
+**At the engineer's direction, three opening lines were evaluated**, each by a fresh agent that read the whole pre-loaded and on-demand text. Each was asked whether pre-loaded text already states the line, and whether a realistic request exists where an agent with the line acts differently.
+
+- **"This is the canonical glossary. The deeper docs defer to it." is kept.** No other pre-loaded text says a package's vocabulary wins over that package's rules where they disagree, and the rules disagree with the glossary in places, as on bare *cycle*.
+- **"Prefer these words over synonyms. Do not reintroduce a discontinued term." is left out**, since the vocabulary rule and the language rules state it, and the vocabulary's own Discontinuations section takes a discontinued word out of use.
+- **"The rest of a version number is semantic versioning, defined elsewhere and not restated here." is left out**, since the product generation entry says the other three segments are semantic versioning.
+
+The read fell from 177,387 characters to 177,172.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5574,3 +5584,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:38 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:27 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:17 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:10:08 PM PT
