@@ -58,9 +58,11 @@ display=$(awk '
 # The harness renders a systemMessage as plain text, so a line wrapped in markdown emphasis
 # loses its asterisks rather than showing them. Then backslashes and double quotes are escaped
 # and the lines joined with a literal backslash-n, which is what a JSON string can carry.
+# The message opens with a backslash-n too: the harness prints its own label ahead of a
+# systemMessage, and the line break puts the title on a line of its own.
 escaped=$(printf '%s\n' "$display" |
   sed 's/^\*\(.*\)\*$/\1/' |
   sed 's/\\/\\\\/g; s/"/\\"/g' |
-  awk 'BEGIN { ORS = "" } NR > 1 { print "\\n" } { print }')
+  awk 'BEGIN { ORS = "" } { print "\\n" } { print }')
 
 printf '{"systemMessage": "%s"}\n' "$escaped"

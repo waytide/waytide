@@ -97,6 +97,8 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 **The title leads.** It is the first line of the display, and the display is printed before the agent's response begins, so nothing the agent writes can stand ahead of it.
 
+**The display opens with a line break, so the title starts a line of its own.** The harness prints its own label ahead of a hook's message, as in `UserPromptSubmit says:`. Without the break, the title runs on from that label as though the two were one sentence. The break is the script's, and it is not a fenced block in this file.
+
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
 **No description of Waytide is printed here.** What Waytide is and what it does live in the `README.md`. This display carries a name, a configuration, an ownership statement, and a wait — and nothing that argues for the system to a reader who is already using it.
