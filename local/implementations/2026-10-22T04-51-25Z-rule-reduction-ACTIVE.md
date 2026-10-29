@@ -2025,6 +2025,14 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecast 10 does not hold.** More than half of the rules have a trigger, 61 of 108, not about a third.
 
+### Triggers — the design, 2026-10-29
+
+**The engineer settled three questions:**
+
+1. **The trigger lives in the source rule**, as a `**Trigger:**` line under its title. The compiler reads it. A rule with no trigger line always applies.
+2. **When a trigger comes up, the agent runs the loader with the rule's name**, such as `system/foundation/load-rules.sh a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72`, which prints that rule's title, source, and compressed text.
+3. **Each package has two compiled files.** `rules.md` keeps the rules that always apply. `triggered.md` holds the triggered rules, each with its trigger line. At session start the loader prints each `rules.md` in full and, from each `triggered.md`, only the trigger lines, each naming the command that loads its rule.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5223,3 +5231,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:03:49 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:06:19 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:12:53 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:16:53 PM PT
