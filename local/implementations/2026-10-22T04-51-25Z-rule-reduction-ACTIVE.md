@@ -2021,6 +2021,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held on size, 2026-10-29**, at 38%. Ten points remain not kept, each judged a reason or background, so on loss it holds by that judgment.
 20. **Sessions on requests governed by the local rules and the vocabularies' terms behave the same with the compressed forms as with the full ones.** *Moderate confidence.*
    - **Held, 2026-10-29.** The compressed forms passed 13 of 18, the full forms 11 of 18.
+21. **Stating each instruction that appears in several places once, and citing it by name elsewhere, shrinks the session-start read by at least 5%.** *Low confidence.*
+22. **Sessions on requests governed by those instructions behave the same after the change.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2319,6 +2321,14 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 ### Phase 8, hook-delivery, is affirmed — 2026-10-29
 
 **The engineer affirmed the hook-delivery phase.** Its forecasts held: the hook's channel holds about 10,000 characters, so it cannot carry the rules, and the read stays. Nothing in the system changes.
+
+### Phase 9, single-statement, starts — 2026-10-29
+
+**The phase asks whether each instruction stated in several places can be stated once and cited by name elsewhere**, with sessions behaving the same. It answers findings #3 and #4. In the read, the vocabularies' shared paragraph on what each word is prints 7 times, and the never-offer instruction is named in 6 places.
+
+**The first step is an inventory**: every instruction the read, or an on-demand rule, states in more than one place, where each copy sits, and which rule each belongs to.
+
+**Forecasts 21 and 22 are what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5549,3 +5559,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:10:42 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:13:54 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:38 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:27 AM PT
