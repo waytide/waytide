@@ -30,6 +30,8 @@ Beyond the four core directories, foundation defines the **work-artifact** direc
 
 **An implementation carries a full branch lifecycle**, in the `implementations-convention` and `implementation-lifecycle` rules — its own branch, a working location chosen at the start, a declared end, and recorded confirmations. **Two kinds, and a tag says which.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent**, and that one difference accounts for every other: an experiment forecasts, reaches a verdict of affirmed, refuted, or inconclusive, merges through a test gate on the engineer's affirmation, and is watched for drift. A feature does none of those, ends **completed**, is simply verified before it integrates, and is the only kind that may be built on the current branch.
 
+**An experiment may run in phases, and each phase starts by stating its goal** (`a-phase-starts-by-stating-its-goal`) — what the phase is to establish, and how that serves the experiment's question — beside a list of the experiment's phases with the current one marked.
+
 The four rules that stated this as two lifecycles were consolidated on 2026-08-18. They agreed on almost everything and had already drifted in their wording of the same clauses.
 
 **The project's items** live in `waytide/local/items/`, one file per item (`items-convention`). **An item is an item.** A tag may describe one — `[design]`, `[plan]`, `[aspiration]` — and nothing about it is strict: the set is open, an item may carry several or none, no rule reads a kind tag, and **none is assigned by default**. `[aspiration]` in particular is written where an aspiration was asked for, never as the dress a design item is put in. The six words the mode mechanism fixed as a planning vocabulary outlived it as a tag set that read as exhaustive, and that is the last of the mode gone with them.
@@ -202,3 +204,5 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Wed Oct 14 2026 at 9:08:35 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:18:21 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:19:08 AM PT

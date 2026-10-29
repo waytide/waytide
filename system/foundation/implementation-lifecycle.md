@@ -109,3 +109,4 @@ Related:
 - the design-by-efferent attended-or-unattended-is-chosen-at-the-start and hinge-cycle rules
 - the announce-waytide-at-session-start rule — the notice reporting what has not concluded
 - the `git` run-suite-before-commit and announce-a-branch-switch-in-a-bordered-block rules
+- the a-phase-starts-by-stating-its-goal rule — what is said when a phase starts
