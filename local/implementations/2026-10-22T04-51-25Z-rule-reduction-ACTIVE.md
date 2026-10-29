@@ -2238,6 +2238,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The package-set rule now says a deactivated package is listed, not read**, with the command that loads it, and that reactivating one during a session needs no restart. Its section *Every package is still read* is now *A deactivated package is listed, not read*, and its History records what it said before. Its check found 45 directives, 43 kept, 2 less precise, and 0 lost. The one that mattered, following only the active packages' rules, was repaired.
 
+### Phase 6, active-packages-only, is affirmed — 2026-10-29
+
+**The engineer affirmed the active-packages-only phase.** The loader lists a deactivated package with the command that loads it, in place of printing its rules. In a project deactivating two packages, the read was 19% smaller, sessions behaved the same, and every session loaded a reactivated package before using it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5458,3 +5462,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:59:28 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:05:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:43 AM PT
