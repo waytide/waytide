@@ -2031,6 +2031,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** 32 citations and one path were corrected, and no directive changed.
 25. **A state change on a record can take fewer steps, with what each dropped step protects kept by another means.** *Low confidence.*
    - **Missed, 2026-10-29.** The engineer keeps all four steps, each for what it protects.
+26. **At one or more of the three places finding #9 names, the work can ask the engineer fewer questions, with the engineer still deciding everything that is theirs to decide.** *Low confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2454,6 +2455,16 @@ The read fell from 177,387 characters to 177,172.
 ### Phase 11, record-obligations, is affirmed — 2026-10-29
 
 **The engineer affirmed the record-obligations phase.** A state change keeps its four steps, each for what it protects, and no rule changes. Its forecast missed, and the finding it answered is settled as the rules stand.
+
+### Phase 12, prompt-turns, starts — 2026-10-29
+
+**The phase asks whether the work can ask the engineer fewer questions**, with the engineer still deciding what is theirs to decide. It answers finding #9, which named three places:
+
+1. **`Explain` takes one of a prompt's four option slots**, leaving three for answers.
+2. **The ask-at-once rule interrupts the work for each stated preference**, to ask how it is to be recorded. The finding's alternative is to keep the engineer's words at the moment and ask at the task's end.
+3. **Attended work asks at every hinge of every outcome**, five times an outcome, even for a small unit.
+
+**Forecast 26 is what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5700,3 +5711,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:21:01 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:09 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:35 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:28:14 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:29:05 PM PT
