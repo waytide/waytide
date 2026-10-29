@@ -143,7 +143,7 @@ Waytide: Human-in-the-Loop Harness
 ```
 
 13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-14. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`.
+14. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
 15. The title stands alone. No subtitle or description is printed under it.
 16. The title is the category line. The root `README.md` leads with the same line.
 17. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
@@ -235,6 +235,7 @@ Loading Waytide will take a few moments.
 - 2026-10-29, revised: point 12's title reads *Waytide: Human-in-the-Loop Harness*, as the body's does; not checked
 - 2026-10-29, merge from master re-checked: 60 directives, 60 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-10-29, revised: master's line break ahead of the title is carried into the compressed text; not checked
+- 2026-10-29, merge from master re-checked: 61 directives, 60 kept, 1 less precise, 0 lost, 1 repair
 
 ## History
 

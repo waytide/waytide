@@ -26,6 +26,7 @@
 ## Compression
 
 - 2026-10-29, compressed during the merge from master; not checked
+- 2026-10-29, merge from master re-checked: 5 directives, 5 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 
