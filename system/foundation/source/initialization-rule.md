@@ -13,7 +13,7 @@ The things below are printed once per session, verbatim. Four are always printed
 First the title, on its own:
 
 ```
-Waytide: Human-Agent Relations
+Waytide: Human-in-the-Loop Harness
 ```
 
 **It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
@@ -129,7 +129,7 @@ The package set stood between the title and the copyright until 2026-10-10, beca
 
 The list carried `**on**  *off*` under it briefly on 2026-08-23.
 
-*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03. The four-sentence paragraph *A Generalized Description of Waytide* was settled on 2026-08-20, and with the formulation it lives in the `README.md`.
+*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03, and it was the title until 2026-10-28, when the engineer changed it to *Waytide: Human-in-the-Loop Harness*. The four-sentence paragraph *A Generalized Description of Waytide* was settled on 2026-08-20, and with the formulation it lives in the `README.md`.
 
 The license line read `Licensed under the Eventide Common Interest License` until 2026-08-23. Its italics held the name apart from the copyright while the agent printed the display as markdown.
 
@@ -172,3 +172,4 @@ Changed by Scott Bellware on Wed Oct 14 2026 at 1:39:37 PM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:27:32 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 3:30:04 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 6:57:20 PM PT

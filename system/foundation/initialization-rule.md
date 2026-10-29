@@ -13,7 +13,7 @@ The things below are printed once per session, verbatim. Four are always printed
 First the title, on its own:
 
 ```
-Waytide: Human-Agent Relations
+Waytide: Human-in-the-Loop Harness
 ```
 
 **It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
