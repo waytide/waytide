@@ -2007,7 +2007,9 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 16. **An instruction the hook gives on compaction alone, saying the rules in context are only a summary and must be read again, raises that to at least 80% of sessions.** *Moderate confidence.*
    - **Held, 2026-10-29.** 20 of 20 sessions ran the loader again before their next act.
 17. **In a project with packages turned off, sessions on requests governed by active packages behave the same when the turned-off packages are only listed as when their rules are read and withheld.** *Moderate confidence.*
+   - **Held, 2026-10-29.** The listing side passed 14 of 15, the read-and-withhold side 12 of 15.
 18. **When the engineer turns a listed package back on during a session, the session loads it with its listed command before applying its rules, in at least 80% of sessions.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 5 of 5.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2223,6 +2225,14 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **A third outcome is built, attended, with its test and implementation accepted:** *With a package set declared, the read instruction says deactivated packages are listed, not printed.* It is the second outcome in `test/automated/session-start.sh`.
 
 **The instruction no longer says to read a deactivated package's rules and withhold them.** It says the loader does not print them, that the `DEACTIVATED` section names the command that loads one, and that if the engineer reactivates one during the session, the agent runs that command and follows its rules from then on.
+
+### Active packages only — the session test's result, 2026-10-29
+
+**Forecasts 17 and 18 held.**
+
+- **The project** was this repository with a package set deactivating `design-by-efferent` and `journal`. Its read fell from 230,244 characters to 187,554, 19% smaller.
+- **Forecast 17.** On five requests governed by active packages, three runs on each side, scored blind, the listing side passed 14 of 15 and the read-and-withhold side 12 of 15. Every failure was on reserving a word, where sessions on both sides asked for the word's meaning and put the category choice off, as in the confirming test.
+- **Forecast 18.** In five sessions the engineer reactivated `journal` and asked for the journal timeline. All five ran `load-rules.sh --package journal` before acting, and all five timelines passed.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5442,3 +5452,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:40:29 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:51:03 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:59:28 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:05:34 AM PT
