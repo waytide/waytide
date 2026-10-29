@@ -2182,6 +2182,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **`session-start.sh` now reads the event Claude Code gives it on its input**, and takes the `source` field. Where it is `compact`, the trial's sentence goes ahead of the usual instruction. A start, a resume, and a clear are unchanged. Run by hand at a terminal, the script does not wait for input.
 
+### Re-read after compaction — the built hook is confirmed, and the rule describes it, 2026-10-29
+
+**With the hook as committed, 10 of 10 sessions ran the loader again after compaction, before their next act**, and all 10 loaded their request's on-demand rule first. The method was the baseline's, two runs of each of the five requests, against a clone of the phase branch.
+
+**The harness-announces rule now describes the sentence the hook adds after a compaction**, in its body, its compressed text, and its History. Its check found 101 directives, 100 kept, and 1 less precise, which this revision did not touch.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5393,3 +5399,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 10:05:32 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:13:13 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:19:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:07:39 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:26:15 AM PT
