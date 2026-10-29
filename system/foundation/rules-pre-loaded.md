@@ -448,14 +448,15 @@ To load them now, type: load waytide.
 14. Do not print the startup display.
 15. Print no package count.
 16. Then wait for the engineer's request.
-17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-18. This rule does not restate the directory list.
-19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-21. Nothing verifies the read. The hook cannot observe what the agent does.
-22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-24. The work honoring the rules is the verification.
+17. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+18. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
 
 ## The status line
 

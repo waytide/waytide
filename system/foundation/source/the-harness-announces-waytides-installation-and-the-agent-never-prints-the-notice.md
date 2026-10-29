@@ -135,6 +135,8 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
 **The instruction ends the read with the wait for the engineer's request.**
 
+**After a compaction, the instruction opens with one more sentence.** The hook runs again when the context is compacted, and it reads the event's source from its input. Where the source is `compact`, the instruction first says that the rules read at the start now survive only as the compaction's summary, which does not hold them, and that the loader is to be run again before the next act. Without that sentence, the instruction given at the start reads as already done: the summary says the read happened, and most sessions went on from the summary. A start, a resume, and a clear get the instruction unchanged.
+
 **It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. A `UserPromptSubmit` hook now prints it when the engineer types `load waytide` (see the the-startup-display-prints-once-per-session rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
 
   **The line says the rules are loaded. The notice's first line still says installed.** They are different claims about different things. The first line reports what a pre-session hook can observe — that the packages are on disk and the configuration is live. This line describes what the session does next, and offers the command that does it now. It reports no read as having happened.
@@ -245,14 +247,15 @@ To load them now, type: load waytide.
 14. Do not print the startup display.
 15. Print no package count.
 16. Then wait for the engineer's request.
-17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-18. This rule does not restate the directory list.
-19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-21. Nothing verifies the read. The hook cannot observe what the agent does.
-22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-24. The work honoring the rules is the verification.
+17. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+18. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
 
 ## The status line
 
@@ -320,6 +323,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-10-28, revised: Why points removed, solubility 32 → 39, clarity 0.58 → 0.75; checked: 75 directives, 74 kept, 1 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 39 → 39, clarity 0.75 → 0.74; checked: 74 directives, 73 kept, 1 less precise, 0 lost; directive 60 left as it was, untouched by this revision
 - 2026-10-29, revised: the read instruction's ON DEMAND section, solubility 39 → 39, clarity 0.74 → 0.74; checked: 96 directives, 95 kept, 1 less precise, 0 lost, 1 repair
+- 2026-10-29, revised: the instruction after a compaction, solubility 39 → 39, clarity 0.74 → 0.74; checked: 101 directives, 100 kept, 1 less precise, 0 lost; the less precise directive, that the scripts enumerate the package directories, is untouched by this revision
 
 ## History
 
@@ -342,6 +346,8 @@ Until 2026-07-28 the Waytide segment trailed after a hyphen, the two closing sen
 Until Thu Oct 29 2026 the read instruction told the agent to read every rule file under the system, leaving out each package's `source/` directory and `README.md`. Phase 2 of the rule-reduction experiment replaced the file-by-file read with the loader, which prints the whole read in one output.
 
 Until Thu Oct 29 2026 the loader printed every compiled rule. Phase 3 of the rule-reduction experiment, triggers, added each package's ON DEMAND section, and the instruction says what to do with it.
+
+Until Thu Oct 29 2026 the hook gave the same instruction after a compaction as at the start. Phase 4 of the rule-reduction experiment, re-read-after-compaction, added the sentence that asks for the read again.
 
 Related:
 
@@ -430,3 +436,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:00 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:24:19 AM PT
