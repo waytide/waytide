@@ -2466,6 +2466,12 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 26 is what this phase tests.**
 
+### Prompt turns — the engineer's decisions on the three places, 2026-10-29
+
+1. **The `Explain` option is abandoned, and the rules stop describing the free-text option.** The harness adds its own free-text choice to every selection prompt, and no rule can remove it, so the rules no longer tell the agent anything about it. The term *free-text option* stays in the `foundation` vocabulary as a bare definition, since the README-figure local rule and the ETE categories rule cite it as a word.
+2. **The ask-at-once rule is kept as it is.** A preference stated mid-task is still asked about at once.
+3. **The five questions of an attended outcome** are put to the engineer: the suggestion is to present a small outcome's hinges together in one prompt, each still accepted or changed by the engineer. The open item on participation as a range of batch sizes covers the same ground.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5712,3 +5718,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:09 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:35 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:28:14 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:29:05 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:31 PM PT
