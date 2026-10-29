@@ -17,6 +17,10 @@ One at a time, in this order, each on its own branch from the experiment's.
 3. **additional-context** — `experiment/worktree/rule-reduction.additional-context`. Can the session-start hook deliver the rules to the agent before its first response, with no read at all?
 
 **Changed 2026-10-29, before phase 3's work:** phase 3 is **triggers** — `experiment/worktree/rule-reduction.triggers`. Can a trigger index, always loaded, stand in for pre-loading part of the rules, with sessions behaving the same?
+4. **re-read-after-compaction** — `experiment/worktree/rule-reduction.re-read-after-compaction`. Added 2026-10-29. After the context is compacted, does the session read the rules again in full, rather than keep them only as a summary? Finding #10.
+5. **title-display** — `experiment/worktree/rule-reduction.title-display`. Added 2026-10-29. Can the engineer see each rule's title as the rules load, without the agent receiving the list?
+6. **active-packages-only** — `experiment/worktree/rule-reduction.active-packages-only`. Added 2026-10-29. Does reading only a project's active packages, and no deactivated one, keep sessions behaving the same while the read shrinks?
+7. **local-compression** — `experiment/worktree/rule-reduction.local-compression`. Added 2026-10-29. Can the local rules and the vocabularies be compressed as the package rules were, with sessions behaving the same?
 
 ## State
 
@@ -1995,6 +1999,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 12. **Where the act runs through a script that prints its rule, the triggered rule is applied as reliably as a pre-loaded one.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
+
+### Four phases are added — 2026-10-29
+
+**At the engineer's direction, the four matters left without a phase become phases 4 to 7, in this order:** re-read-after-compaction, title-display, active-packages-only, and local-compression. Each runs after triggers, one at a time, each branching from the experiment's branch as the phase before it left it. Each states its forecast before its work.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5192,3 +5200,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:12:43 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:28:18 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:43:06 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:03:49 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:06:19 PM PT
