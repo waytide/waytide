@@ -2036,6 +2036,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Missed, 2026-10-29.** The engineer keeps all four steps, each for what it protects.
 26. **At one or more of the three places finding #9 names, the work can ask the engineer fewer questions, with the engineer still deciding everything that is theirs to decide.** *Low confidence.*
    - **Missed, 2026-10-29.** The questions are as many as before. `Explain` is gone, so each question's four places hold real answers.
+27. **`local/vocabulary.md` can be compressed by at least a third, with nothing it states lost after repair.** *Moderate confidence.*
+28. **Sessions on requests governed by its substitution behave the same with the compressed form as with the full one.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2497,6 +2499,12 @@ The read fell from 177,387 characters to 177,172.
 **At the engineer's direction, the work still outstanding becomes phases 13 to 15**, each run one at a time from the experiment's branch, each stating its forecast before its work: local-vocabulary, journal-time-question, and master-rule-compression.
 
 **What is not given a phase.** How often attended work stops is left to the open item on participation as a range of batch sizes, as the engineer decided in phase 12. Forecast 12 cannot be tested.
+
+### Phase 13, local-vocabulary, starts — 2026-10-29
+
+**The phase compresses `local/vocabulary.md`**, the one vocabulary phase 7 left whole, by the method the package vocabularies took, and under the decisions phase 9 made: no opening line naming the vocabulary or saying it binds, no head line on approved and reserved words, and no repetition of an instruction whose origin is pre-loaded. It is 2,961 characters and holds one substitution, *superseded* for "overtaken".
+
+**Forecasts 27 and 28 are what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5749,3 +5757,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:38:53 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:43:12 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:46:28 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:48:46 PM PT
