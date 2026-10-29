@@ -2552,6 +2552,10 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 29 held.** The failures phase 9 saw came from the `Explain` option, which three of the four left out and phase 12 removed. The rule needs no change.
 
+### Phase 14, journal-time-question, is affirmed — 2026-10-29
+
+**The engineer affirmed the journal-time-question phase.** With `Explain` gone, the time question carries the rule's options in every session measured, and the rule is unchanged.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5810,3 +5814,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:45 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:58:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:00:08 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:02:48 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 2:03:18 PM PT
