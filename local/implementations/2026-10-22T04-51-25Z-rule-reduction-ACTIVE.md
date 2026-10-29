@@ -2013,6 +2013,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 19. **The vocabularies and the local rules can be compressed by at least a third, with no definition or directive lost after repair.** *Moderate confidence.*
    - **Held on size, 2026-10-29**, at 38%. Ten points remain not kept, each judged a reason or background, so on loss it holds by that judgment.
 20. **Sessions on requests governed by the local rules and the vocabularies' terms behave the same with the compressed forms as with the full ones.** *Moderate confidence.*
+   - **Held, 2026-10-29.** The compressed forms passed 13 of 18, the full forms 11 of 18.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2269,6 +2270,23 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **The method was phase 1's.** An agent compressed each file by the compression rule. A fresh agent listed its directives and judged each against the compressed text. An agent repaired each loss or material vagueness that could change what an agent does, and left out reasons and background. A fresh agent checked each repaired file again.
 - **The first checks found 539 directives, 24 lost and 41 less precise.** 27 were repaired and 39 left out. After the re-checks, 10 remain not kept, each judged a reason or a background fact no act depends on.
 - **Forecast 19 holds on size**, at 38% against a third. On loss, it holds only by the repair step's judgment of those 10.
+
+### Local compression — the session test's result, 2026-10-29
+
+**Forecast 20 held: the compressed forms passed 13 of 18, the full forms 11 of 18.** Six requests were governed by the local rules and the vocabularies' terms, written by an agent that read the full forms, with three runs on each side, scored blind.
+
+| Request | Full | Compressed |
+|---|---|---|
+| 1. a new root script | 0/3 | 1/3 |
+| 2. clean up the README's language | 2/3 | 3/3 |
+| 3. publish a package from the experiment branch | 0/3 | 0/3 |
+| 4. a test comment on what it stops | 3/3 | 3/3 |
+| 5. a log entry on the hand-over at the actuation gate | 3/3 | 3/3 |
+| 6. attended and unattended, in two sentences | 3/3 | 3/3 |
+
+**Both sides failed requests 1 and 3 alike.** On request 1, most sessions asked the questions that open new work and wrote no script. On request 3, every session declined to publish, but each offered a way to publish later or anyway, which the rule forbids.
+
+**Requests 2 and 6 depend on points the repair step left out of the compressed forms**: what the README's figures stand for, and attended and unattended as a batch-size trade. The compressed side passed both 3 of 3.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5494,3 +5512,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:43 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:50:53 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:56:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:03:11 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:09:30 AM PT
