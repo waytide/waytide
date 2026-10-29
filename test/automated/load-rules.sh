@@ -97,4 +97,45 @@ rule_output=$(cd "$project" && system/foundation/load-rules.sh c-rule)
 
 [ "$rule_output" = "$(control_rule_entry)" ] || fail "Prints the named on-demand rule" "output:" "$rule_output"
 
-echo "2 passed"
+# Prints a deactivated package's name and the command that loads it, in place of its rules ------
+
+set_project=$(mktemp -d)
+trap 'rm -rf "$project" "$set_project"' EXIT
+
+mkdir -p "$set_project/system/foundation" "$set_project/system/sample" "$set_project/system/other" "$set_project/local"
+cp system/foundation/load-rules.sh "$set_project/system/foundation/"
+
+echo some-foundation-rules > "$set_project/system/foundation/rules-pre-loaded.md"
+echo some-sample-rules > "$set_project/system/sample/rules-pre-loaded.md"
+echo some-other-rules > "$set_project/system/other/rules-pre-loaded.md"
+echo some-other-vocabulary > "$set_project/system/other/vocabulary.md"
+
+cat > "$set_project/local/2026-01-01T00-00-00Z-some-set-package-set.md" <<'SET'
+# Some set package set
+
+- **Package set:** some-set
+- **Packages:** foundation, sample
+- **Inactive:** other
+SET
+
+control_deactivated_output() {
+  cat <<'OUTPUT'
+===== FILE: system/foundation/rules-pre-loaded.md =====
+
+some-foundation-rules
+
+===== DEACTIVATED: system/other =====
+
+- Its rules are not printed. If the engineer reactivates it, run: system/foundation/load-rules.sh --package other
+
+===== FILE: system/sample/rules-pre-loaded.md =====
+
+some-sample-rules
+OUTPUT
+}
+
+set_output=$(cd "$set_project" && system/foundation/load-rules.sh)
+
+[ "$set_output" = "$(control_deactivated_output)" ] || fail "Prints a deactivated package's name and the command that loads it, in place of its rules" "output:" "$set_output"
+
+echo "3 passed"

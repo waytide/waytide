@@ -65,7 +65,29 @@ print_index() {
   ' "$1"
 }
 
+# The packages the project's latest package set deactivates, one name per line. A project with no
+# declaration has none.
+declaration=$(ls "$local"/*-package-set.md 2>/dev/null | sort | tail -1)
+deactivated=
+if [ -n "$declaration" ]; then
+  deactivated=$(sed -n 's|^[[:space:]]*-\{0,1\}[[:space:]]*\*\*Inactive:\*\*[[:space:]]*\(.*\)$|\1|p' "$declaration" |
+    head -1 | tr ',' '\n' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | grep -v '^none$' || true)
+fi
+
+# A deactivated package's rules are not printed. Its name is, with the command that loads it.
+print_deactivated() {
+  [ "$first" -eq 1 ] || echo
+  first=0
+  echo "===== DEACTIVATED: $1 ====="
+  echo
+  echo "- Its rules are not printed. If the engineer reactivates it, run: $system/foundation/load-rules.sh --package ${1##*/}"
+}
+
 for package in "$system/foundation" $(ls -d "$system"/*/ | sed 's|/$||' | grep -v "^$system/foundation$" | sort); do
+  if printf '%s\n' "$deactivated" | grep -qx "${package##*/}"; then
+    print_deactivated "$package"
+    continue
+  fi
   print_file "$package/rules-pre-loaded.md"
   print_index "$package/rules-on-demand.md"
   print_file "$package/vocabulary.md"

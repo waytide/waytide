@@ -2208,6 +2208,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecasts 17 and 18 are what this phase tests.**
 
+### Active packages only — the loader lists a deactivated package, 2026-10-29
+
+**One outcome is built, attended, with its test and implementation accepted:** *Prints a deactivated package's name and the command that loads it, in place of its rules.* It is in the loader's test file.
+
+**The loader reads the Inactive line of the project's latest package-set record**, as the hook does. A package named there is printed as a `DEACTIVATED` section holding one line: its rules are not printed, and the command that loads it if the engineer reactivates it, `load-rules.sh --package <name>`. A project with no package set, or none deactivated, prints as before.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5423,3 +5429,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:26:15 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:37:21 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:39:24 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:40:29 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:51:03 AM PT
