@@ -2032,6 +2032,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 25. **A state change on a record can take fewer steps, with what each dropped step protects kept by another means.** *Low confidence.*
    - **Missed, 2026-10-29.** The engineer keeps all four steps, each for what it protects.
 26. **At one or more of the three places finding #9 names, the work can ask the engineer fewer questions, with the engineer still deciding everything that is theirs to decide.** *Low confidence.*
+   - **Missed, 2026-10-29.** The questions are as many as before. `Explain` is gone, so each question's four places hold real answers.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2477,6 +2478,12 @@ The read fell from 177,387 characters to 177,172.
 **At the engineer's direction, the five questions of an attended outcome are not changed in this phase.** They are left to the open item on participation as a range of batch sizes, which proposes that how often the agent stops is a setting the engineer moves during the work.
 
 **Where a question has one genuine candidate, the agent offers it and its negative**, as in *Accept* and *Don't accept*, at the engineer's direction. With `Explain` gone, the present-every-prompt rule said nothing of that case, since `Explain` had filled the second place.
+
+### Prompt turns — the `Explain` option leaves the rules, and forecast 26 misses, 2026-10-29
+
+**Six files no longer offer `Explain` or describe the free-text option**, in their full texts and compressed texts alike: the present-every-prompt-to-the-engineer-through-the-selection-ui rule, the actuation-gate and hinge-cycle rules, the journal's time-question rule, and the `foundation` and `design-by-efferent` vocabularies. Each has a History paragraph saying what it said before. A fresh agent checked each compressed text against its full text. What is not kept was left out on purpose, in this revision or an earlier one, or is stated in the pre-loaded present-every-prompt rule. The read is 168,984 characters, and the tests pass.
+
+**Forecast 26 missed.** The engineer kept the ask-at-once interruption and left the attended outcome's five questions to the batch-size item, so the work asks no fewer questions. What changed is the questions' form: each now carries real answers in all four of its places, where `Explain` took one.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5726,3 +5733,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:28:14 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:29:05 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:38:53 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:22 PM PT

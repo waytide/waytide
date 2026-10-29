@@ -315,17 +315,15 @@ Trigger: When creating a journal entry for which the writer gave no time
 6. **Enter the time.** The writer gives the value.
 7. A value stated to the second takes the `YYYY-MM-DDTHH-MM-SS` prefix.
 8. Every other entered value stops at the minute.
-9. **Explain**, per the foundation package's present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 ## Applying the answer
 
 1. Offer **Now** only for an entry about today.
-2. For a back-dated entry, offer only **No time**, **Enter the time**, and **Explain**.
+2. For a back-dated entry, offer only **No time** and **Enter the time**.
 3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
 4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
-5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
-6. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
-7. Name the file and write the datetime line to match the answer.
+5. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
+6. Name the file and write the datetime line to match the answer.
 
 # Where an entry's body says the same thing as its title, keep the title alone
 

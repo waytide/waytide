@@ -221,7 +221,7 @@ Trigger: When presenting the actuation hinge of an outcome
 1. At the actuation gate, the first gate where the cradle is set, do not commit a single actuation and proceed.
 2. Present the human a small set of candidate actuations as options to choose among.
 3. The human chooses the option that reads as the more soluble use.
-4. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the two results it rests on.
+4. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the result it rests on.
 5. Present each candidate as it would read at the use site.
 6. A chosen candidate becomes the cradle. Where the human writes their own instead, take that actuation or enter a dialogue.
 7. Settle the actuation before writing the test file. Do not proceed to the test body until it is settled.

@@ -33,13 +33,11 @@ The lexicon of **Design By Efferent** (DBE) — use this vocabulary, with these 
 
 ## The two results the gates rest on
 
-Every gate's form — options plus a mandatory free-text option — follows from two results, and the rules refer to them by these names:
+Every gate's form follows from two results, and the rules refer to them by these names:
 
 **Make the human produce the answer, not approve one.** A single proposal put up for approval ("here's my actuation — approve?") puts the human in judge mode, downstream of the AI's mean-drawn answer. Judging is not producing: the human ratifies, and their judgment is pulled toward the average rather than exercised above it. Offering several genuine alternatives keeps the human comparing real candidates, and producing an answer instead of ratifying one. So a gate presents alternatives, never a fait accompli.
 
 **The best options are ones the AI can't produce.** The option set is the AI's own, drawn from the average. The best answer is often one only the human can produce.
-
-A closed list tempts the human to pick from it instead of producing their own. So every gate keeps the free-text option there — the human dictating outright, or a chat to work the answer out. It is mandatory, at every gate, without exception. It is what keeps the human above the AI's mean when the right answer is not on the list.
 
 The first result says *why there are options*. The second says *why the options are never enough*.
 
@@ -210,6 +208,11 @@ A word removed from use with nothing in its place. **This is not a substitution.
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 - 2026-10-29, revised: the line "Prefer these words over synonyms. Do not reintroduce a discontinued term." is left out of the compressed text, at the engineer's direction, after an evaluation found the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule and the language rules already say to use a vocabulary's terms and no loose synonym, and the Discontinuations section takes a discontinued word out of use
+- 2026-10-29, revised: the `Explain` option and every statement about the free-text option are removed, at the engineer's direction; checked: 111 directives, 96 kept, 6 less precise, 9 lost; what is not kept was left out on purpose, in this revision or an earlier one, or is stated in the pre-loaded present-every-prompt-to-the-engineer-through-the-selection-ui rule
+
+## History
+
+Until Thu Oct 29 2026, this file said that every gate's form is options plus a mandatory free-text option, and that every gate keeps the free-text option, for the human to dictate outright or open a chat, because a closed list tempts the human to pick from it instead of producing their own answer. The file said nothing about an `Explain` option.
 
 Related:
 
@@ -266,3 +269,5 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:09:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:05 PM PT

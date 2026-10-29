@@ -38,23 +38,23 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 
 **Why:** the actuation hinge asks for a decision. An engineer answering it does not otherwise know that four more follow, what those cover, or what happens in between. Without the account they weigh the actuation as though it were the whole of what is being asked. Every question the account would have answered arrives at a later hinge instead. One at a time, in the middle of another decision. Six lines given once removes all of them.
 
-**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the free-text option** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in **Other** answer *is* the free-text option — see the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
+**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI — see the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 **An option is the artifact, not a label for it.** The option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)` — the line that would be written, shown as it would be written. A gloss may follow it where the difference between two candidates is not visible in the code alone. **A label standing in place of the artifact is not an option.** `Accept — assert the returned count against 3` asks the engineer to approve a description of a thing rather than to read the thing. The engineer is judging a design, and the design is in the characters.
 
-**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, and `Explain` fills the second place, per the present-every-prompt-to-the-engineer-through-the-selection-ui rule. The agent does not search for a second candidate to reach two.
+**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The agent does not search for a second candidate to reach two.
 
-**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
+**What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
 
 **Why:** Each of the five is a real design hinge with its own failure mode. The implementation is where solubility is judged. An awkward implementation reveals a bad cradle, and the fix then goes to the cradle rather than the code. The naming is where a name that mis-describes what the observation establishes is a design error in its own right. The outcome taxonomy is a design artifact, settled deliberately rather than a label applied after the fact.
 
-Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them keeps the human producing an answer at every hinge, where the above-the-mean decision is introduced rather than ratified. Each carries a mandatory free-text option. The observation and the controls especially had been smuggled in under the actuation's gate.
+Bundling collapses separate deliberations into one judgment and puts the human in judge-mode on a fait accompli — the mean-bias failure. Separating them keeps the human producing an answer at every hinge, where the above-the-mean decision is introduced rather than ratified. The observation and the controls especially had been smuggled in under the actuation's gate.
 
 The controls are a hinge in their own right. A non-discriminating example asserts nothing, and a top-level constant cannot distinguish a full name from a final segment.
 
 **How to apply:** Give the brief account of the five hinges once, ahead of the first one, and not again. Then run the five in order (naming deferred to the feature's close).
 
-At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way, beside `Explain`. Always offer the free-text option.
+At each hinge, present every genuine candidate as an option. Write it as the artifact itself rather than as a label for it. Present a lone candidate the same way.
 
 What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 
@@ -126,12 +126,15 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 
 - 2026-10-24, compressed: compression 0.18, change 0.64, solubility 30 → 42, clarity 0.54 → 0.72, 33 directives, 33 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 42 → 42, clarity 0.72 → 0.70; checked: 28 directives, 28 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: the `Explain` option and every statement about the free-text option are removed, at the engineer's direction; checked: 42 directives, 38 kept, 1 less precise, 3 lost; what is not kept was left out on purpose, in this revision or an earlier one, or is stated in the pre-loaded present-every-prompt-to-the-engineer-through-the-selection-ui rule
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named hinge-cycle and titled "The initial-implementation hinge cycle: actuation → observation → controls → implementation → naming".
 
 Until Mon Oct 26 2026 this rule was named the-hinge-cycle-runs-from-actuation-to-naming and titled "The hinge cycle runs from actuation to naming".
+
+Until Thu Oct 29 2026 this rule said every hinge always offers the free-text option, which is the selection UI's built-in Other answer and is how the human dictates or opens a chat, and that it keeps a lone candidate from foreclosing the answer. It also said a lone candidate is presented beside an `Explain` option, which fills the selection UI's second place.
 
 Related:
 
@@ -173,3 +176,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:28:05 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:05 PM PT

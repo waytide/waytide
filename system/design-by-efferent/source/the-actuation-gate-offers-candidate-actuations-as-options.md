@@ -2,14 +2,11 @@
 
 **Trigger:** When presenting the actuation hinge of an outcome
 
-At the actuation gate — the first gate, where the cradle is set — the AI does not commit a single actuation and proceed. It presents the human a small set of **candidate actuations** as options to choose among. The human then either:
+At the actuation gate — the first gate, where the cradle is set — the AI does not commit a single actuation and proceed. It presents the human a small set of **candidate actuations** as options to choose among. The human then **chooses** the option that reads as the more soluble use.
 
-- **chooses** the option that reads as the more soluble use, or
-- takes the **free-text option** — dictating the actuation outright, or opening a chat to work out what it should be.
+This is how the highest-leverage hinge is handed over for deliberation, that hinge being the efferent shape of the actuation. The engineer compares concrete alternatives.
 
-This is how the highest-leverage hinge is handed over for deliberation, that hinge being the efferent shape of the actuation. The engineer compares concrete alternatives. The free-text option, always there, covers the case where the right shape is not among the options.
-
-The form is deliberate. It is the form every hinge takes, and the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule states it and the two results it rests on: the human produces the answer rather than approving one, and the free-text option is mandatory because the best answer is often one only the human can produce.
+The form is deliberate. It is the form every hinge takes, and the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule states it and the result it rests on: the human produces the answer rather than approving one.
 
 ## A candidate varies what the use site states
 
@@ -25,24 +22,24 @@ The form is deliberate. It is the form every hinge takes, and the the-hinge-cycl
 
 **Why the test is worth stating.** The rule already refuses a cosmetic variant, and an agent that could tell a cosmetic variant from a real one would not have produced one. A named test gives the agent something to apply: hold the receiver constant, and ask what the use site states. Without it the gate fails in both directions at once. Three shapes are offered where one decision exists, and the omitted-argument shape is discarded as no shape at all.
 
-**Why:** The actuation is the cradle and the highest-leverage hinge (human-in-the-loop rule, step 1: "the AI may propose the actuation… asks rather than averaging"). Concrete alternatives make the deliberation tractable, and they make the human produce the answer. The mandatory free-text option keeps the human above the AI's mean when the right actuation is one the AI couldn't produce. Together they let the AI carry the proposing work without pulling the human's judgment down to the mean.
+**Why:** The actuation is the cradle and the highest-leverage hinge (human-in-the-loop rule, step 1: "the AI may propose the actuation… asks rather than averaging"). Concrete alternatives make the deliberation tractable, and they make the human produce the answer. They let the AI carry the proposing work without pulling the human's judgment down to the mean.
 
 **How to apply:** At the first gate, generate a few genuinely distinct candidate actuations. They are different efferent shapes rather than cosmetic variants. Present each as it would read at the use site.
 
 **Judge distinctness by what the use site states.** Keep a shape that omits an argument. Drop a chained construction and a varied receiver.
 
-Offer them through the selection UI, which supplies the free-text option. Do not add one of your own. See the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
+Offer them through the selection UI. See the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 If the human chooses one, adopt it as the cradle. If the human writes their own instead, take that actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
 
-**A lone candidate is presented as every hinge presents one**, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
+**A lone candidate is presented as every hinge presents one**, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
 
 ## Compressed
 
 1. At the actuation gate, the first gate where the cradle is set, do not commit a single actuation and proceed.
 2. Present the human a small set of candidate actuations as options to choose among.
 3. The human chooses the option that reads as the more soluble use.
-4. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the two results it rests on.
+4. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the result it rests on.
 5. Present each candidate as it would read at the use site.
 6. A chosen candidate becomes the cradle. Where the human writes their own instead, take that actuation or enter a dialogue.
 7. Settle the actuation before writing the test file. Do not proceed to the test body until it is settled.
@@ -67,12 +64,15 @@ If the human chooses one, adopt it as the cradle. If the human writes their own 
 - 2026-10-27, re-checked: 19 directives, 19 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 56 → 61, clarity 0.76 → 0.77; checked: 20 directives, 17 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 61 → 64, clarity 0.77 → 0.77; checked: 19 directives, 19 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: the `Explain` option and every statement about the free-text option are removed, at the engineer's direction; checked: 29 directives, 21 kept, 5 less precise, 3 lost; what is not kept was left out on purpose, in this revision or an earlier one, or is stated in the pre-loaded present-every-prompt-to-the-engineer-through-the-selection-ui rule
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named actuation-gate-options-or-chat and titled "The actuation gate: offer candidate actuations as options. The human selects one or writes their own".
 
 Until Mon Oct 26 2026 this rule restated the mechanism every hinge follows: the candidates as options, the mandatory free-text option and its reasons, and a lone candidate beside `Explain`. The the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule states it, and this rule now cites it, keeping only what is particular to the actuation.
+
+Until Thu Oct 29 2026 this rule offered the human the free-text option, supplied by the selection UI, to dictate the actuation or open a chat, and gave its being mandatory as one of the results the gate's form rests on. It also presented a lone candidate beside `Explain`.
 
 Related:
 
@@ -111,3 +111,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:05 PM PT

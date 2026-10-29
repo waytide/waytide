@@ -349,30 +349,13 @@ Source: system/foundation/source/present-every-prompt-to-the-engineer-through-th
 2. This holds for any prompt.
 3. Never use a prose question or a hand-typed list.
 4. Each genuine candidate is an option.
-5. Do not add a free-text option of your own, such as "Chat about this".
-6. The UI's built-in **"Other"** answer is how the engineer answers outside the option set. A closed list must never foreclose an answer only the engineer can produce.
-7. Offer an `Explain` option on every prompt, not only where you judge the question hard.
-8. `Explain` is not a free-text option. It lets the engineer ask what the question means before answering.
-9. When `Explain` is selected, answer with a summary at the top, followed by a normal level of explanation.
-10. That explanation must not restate the options or repeat the same framing.
-11. Then display the same selection prompt again, with every other option unchanged.
-12. On that second display, `Explain` is replaced by **`Explain briefly`**.
-13. When `Explain briefly` is selected, answer with the summary alone: the shortest statement of what the question decides, with nothing under it.
-14. Then display the prompt again, still carrying `Explain briefly`.
-15. Do not invent a further variant. The option does not change again, however many times it is selected.
-16. Word `Explain`'s description as *…then display this selection prompt again*.
-17. Never word a description as *put this question again*.
-18. `Explain briefly`'s description states its length: *…in a sentence or two, then display this selection prompt again*.
-19. `Explain` takes one of the UI's four option slots, which leaves three for genuine candidates.
-20. Where there are more than three genuine candidates, the question says so and directs the engineer to `Explain` to see them all. The first display carries three and `Explain`. The `Explain` answer gives every candidate. The prompt then shows the same three and `Explain briefly`, and a candidate beyond the third is chosen through the built-in "Other" answer.
-21. Place `Explain` among the supplied options. Its position relative to the built-in free-text answer is not yours to choose, since the harness renders that answer last.
-22. The UI requires at least two options. Do not invent an option to reach that floor.
-23. Present every genuine candidate you find.
-24. Where you find only one, the second option is `Explain`, an account of that candidate.
-25. Do not search for options just to fill the second place.
-26. Do not say that a lone candidate is the only possibility.
-27. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
-28. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
+5. The UI requires at least two options. Do not invent an option to reach that floor.
+6. Present every genuine candidate you find.
+7. Do not search for options just to fill the second place.
+8. Do not say that a lone candidate is the only possibility.
+9. Where there is one genuine candidate, offer it and its negative, as in *Accept* and *Don't accept*. The negative is a real answer, not an invented option.
+10. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
+11. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
 
 # The harness announces Waytide's installation, and the agent never prints the notice
 

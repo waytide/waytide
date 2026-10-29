@@ -30,9 +30,7 @@ The distinguishing question: **deferred** is *not yet*, **suspended** is *no lon
 - **transfer** — a **technical verb**: to move responsibility for the next act from one party to the other. The agent **transfers responsibility to the engineer** at a hinge, and the engineer **transfers responsibility to the agent** once they make the decision. It names the point a collaborative workflow changes hands, which is not the mechanism that carries it — a `gate` is the mechanism, and the loop `waits` there. **STE: not approved. The STE dictionary gives `MOVE (v)`**, which says nothing about who is answerable next. **Technical verb, ETE engineering, design, process, and method.**
   - **It is never written as a noun.** STE Rule 1.13 forbids a technical verb used as one, so there is no *the transfer of responsibility*. Write the verb — *responsibility transfers to the engineer*. This is the `gate` case in mirror image: that word is a noun and takes no verb form, and this one is a verb and takes no noun form.
 - **responsibility** — what transfers: answerability for the next act in the work. **STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.**
-- **free-text option** — the answer the **selection interface** supplies beside the options, where the engineer answers outside the option set. **The harness provides it, so the agent adds none of its own.** It is what keeps a closed list from foreclosing the answer only the engineer can produce, and it is present at every prompt without exception.
-  - **It is not the `Explain` option**, which asks what the question **means** rather than answering it. The two serve opposite halves of the moment responsibility transfers, and `Explain` costs one of the four option slots where this one costs none.
-  - **An option that names an answer inside the question is not this.** A prompt asking for a time may offer *Enter the time*, and that is a candidate rather than a way out of the option set.
+- **free-text option** — the answer the **selection interface** supplies beside the options, where the engineer answers outside the option set.
   - **STE: absent from the STE dictionary as a compound. `option (n)` is not approved and gives ALTERNATIVE (n), `FREE (adj)` is approved in an unrelated sense, and `text` is absent. Technical noun, ETE human-computer interaction.**
 
 ## Substitutions
@@ -46,7 +44,7 @@ Foundation-domain word substitutions. When the impulse is a word in the **Don't 
 
 ### Finer distinctions
 
-- **free-text option** — **`escape` is a figure**, and what it pictures is a closed room. The option set is not closed, since the free-text option is always there, so the word dramatized an ordinary part of the interface as a way out of a trap. **STE: `escape (v)` is not approved and gives DEFLATE (v)**, as in *let the air escape from the tire*.
+- **free-text option** — **`escape` is a figure**, and what it pictures is a closed room. **STE: `escape (v)` is not approved and gives DEFLATE (v)**, as in *let the air escape from the tire*.
 - **work session record** — always carrying **work**. Bare *session* is ambiguous. A reader can supply a shell session, a therapy session, or a parliamentary one, and the shell reading is the one an engineer reaches first. The qualifier says which sense is meant. This holds in the prompt that offers to write one, and in prose about either. The record's own title is `# Work Session — <name> (<date>)`, and the directory name is `waytide/local/logs/work-sessions/`.
 
 ## Discontinuations
@@ -80,8 +78,7 @@ A word taken out of use with **nothing in its place**. This is not a substitutio
 11. Never write `transfer` as a noun (STE Rule 1.13). Write *responsibility transfers to the engineer*, not *the transfer of responsibility*. It mirrors `gate`, a noun that takes no verb form.
 12. **responsibility** — what transfers: answerability for the next act in the work. STE: absent. Technical noun, ETE engineering, design, process, and method.
 13. **free-text option** — the answer the selection interface supplies beside the options, where the engineer answers outside the option set.
-14. An option that names an answer inside the question, such as *Enter the time* at a prompt asking for a time, is a candidate, not the free-text option.
-15. STE for free-text option: absent as a compound. `option (n)` is not approved and gives ALTERNATIVE (n). `FREE (adj)` is approved in an unrelated sense. `text` is absent. Technical noun, ETE human-computer interaction.
+14. STE for free-text option: absent as a compound. `option (n)` is not approved and gives ALTERNATIVE (n). `FREE (adj)` is approved in an unrelated sense. `text` is absent. Technical noun, ETE human-computer interaction.
 
 ## Substitutions
 
@@ -102,6 +99,11 @@ A word taken out of use with **nothing in its place**. This is not a substitutio
 - 2026-10-29, compressed: 11717 → 8636 characters; checked: 86 directives, 84 kept, 1 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
+- 2026-10-29, revised: the `Explain` option and every statement about the free-text option are removed, at the engineer's direction; checked: 93 directives, 84 kept, 2 less precise, 7 lost; what is not kept was left out on purpose, in this revision or an earlier one, or is stated in the pre-loaded present-every-prompt-to-the-engineer-through-the-selection-ui rule
+
+## History
+
+Until Thu Oct 29 2026, the free-text option entry said the harness provides it so the agent adds none of its own, that it is present at every prompt, and that it differs from the `Explain` option, which asks what a question means and costs one of the four option slots. It also said an option naming an answer inside the question, such as *Enter the time*, is not the free-text option, and the `escape` distinction argued that the option set is not closed because the free-text option is always there.
 
 ---
 
@@ -141,3 +143,5 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:05 PM PT
