@@ -2029,6 +2029,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** In 14 files.
 24. **Each can be reconciled by correcting the reference alone, with no rule's directives changed.** *Moderate confidence.*
    - **Held, 2026-10-29.** 32 citations and one path were corrected, and no directive changed.
+25. **A state change on a record can take fewer steps, with what each dropped step protects kept by another means.** *Low confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2425,6 +2426,19 @@ The read fell from 177,387 characters to 177,172.
 ### Phase 10, live-references, is affirmed — 2026-10-29
 
 **The engineer affirmed the live-references phase.** Every live reference to a rule or a path names something that exists, apart from the seven left deliberately.
+
+### Phase 11, record-obligations, starts — 2026-10-29
+
+**The phase asks whether a change to a record can carry fewer obligations**, with what each one protects still kept. It answers finding #8, which named five steps for a state change on an item: a rename, a new state line, a log entry, a footer line, and a reconciliation of the live paths that cite the old name. It also named the renumbering a priority rank causes.
+
+**Two of those are already answered by the rules as they stand.**
+
+- **No live path needs reconciling.** The state-suffix rule has a reference to a record leave out its suffix and extension, so a rename breaks no reference.
+- **A rank's renumbering is a stated, accepted cost**, and 1 of this project's 39 items carries a rank.
+
+**That leaves four steps for a state change: the rename, the state line, the log entry, and the footer line.**
+
+**Forecast 25 is what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5667,3 +5681,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:15:33 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:16:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:42 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:21:01 PM PT
