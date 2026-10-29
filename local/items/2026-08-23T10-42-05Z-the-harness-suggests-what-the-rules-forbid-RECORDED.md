@@ -1,6 +1,6 @@
 # The harness suggests what the rules forbid the agent to offer
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 ## What was observed
@@ -36,3 +36,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 3:42:05 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

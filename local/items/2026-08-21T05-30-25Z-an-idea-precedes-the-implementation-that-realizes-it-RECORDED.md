@@ -1,6 +1,6 @@
 # An idea is recorded first, and a feature or experiment follows it at the engineer's pace
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **The observation, as the engineer stated it:** the process with Waytide works well when it is
@@ -48,3 +48,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Thu Aug 20 2026 at 10:30:25 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

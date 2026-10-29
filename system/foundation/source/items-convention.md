@@ -43,10 +43,10 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Suspended** — paused, not ended.
 - **Superseded** — another item replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
-- **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
+- **Recorded** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the observations-convention.
 - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
 
-**`Stated` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
+**`Recorded` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
 
 **`Open` is the starting word for every other item**, whether its thinking is settled or not. **`Active` is the in-progress state**, and an item reaches it when its work starts. **As the engineer stated it:** Active is the in-progress state. Absence is not a state, and an item without a line is a defect.
 
@@ -125,3 +125,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:26:00 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT

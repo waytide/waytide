@@ -1,6 +1,6 @@
 # A lens names a set of positions on one matter, and the system is full of them
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **What was found is still true and is why the record is kept.** Ten sets of positions exist in the system and none is named as an instance of a kind. That survey stands whether or not `lens` is the word for it.
@@ -68,3 +68,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:32:18 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

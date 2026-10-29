@@ -1,6 +1,6 @@
 # An experiment works on an existing implementation and a feature is a new one — a prediction, not a rule
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **As the engineer stated it:** a way to think of experiments and features is that experiments work on existing implementations, and features are new implementations. This isn't a rule, though. It's a prediction.
@@ -36,3 +36,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Sun Aug 23 2026 at 12:00:26 AM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

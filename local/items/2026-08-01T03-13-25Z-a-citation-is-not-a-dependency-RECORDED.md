@@ -1,6 +1,6 @@
 # A citation is not a dependency — the criterion is availability, and the system already practices it
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **The survey.** Every package but one references packages it does not declare:
@@ -49,3 +49,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

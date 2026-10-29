@@ -1,6 +1,6 @@
 # The three context-tree rules disagree on whether the tree comes from the source or from a run
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 Three rules produce a context tree from the same suite, and each says something different about where the tree comes from.
@@ -21,3 +21,4 @@ Authored by Scott Bellware on Thu Jul 30 2026 at 7:03:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

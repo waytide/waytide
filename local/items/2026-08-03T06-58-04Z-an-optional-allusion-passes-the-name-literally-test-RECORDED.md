@@ -1,6 +1,6 @@
 # An allusion the reader need not catch passes the name-literally test, and the rule does not say so
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **The case.** *Human-Agent Relations* alludes to C-3PO's self-introduction, *"I am C-3PO, human-cyborg relations."* For a technical reader the allusion is most of its appeal. It is also an accurate, literal description of what Waytide governs — the relationship between a human and an agent — to a reader who has never seen the film.
@@ -28,3 +28,4 @@ Authored by Scott Bellware on Sun Aug 2 2026 at 11:58:04 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT

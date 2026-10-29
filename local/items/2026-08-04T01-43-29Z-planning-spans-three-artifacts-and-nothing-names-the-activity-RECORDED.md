@@ -1,6 +1,6 @@
 # Planning spans three artifacts across two packages, and nothing names the activity they share
 
-- **State:** Stated
+- **State:** Recorded
 - **Tags:** [observation]
 
 **The question that surfaced it:** does "implementation plan" cover all the elements of planning? It does not, on two counts.
@@ -60,3 +60,4 @@ Changed by Scott Bellware on Mon Aug 17 2026 at 11:16:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:21:39 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:25:14 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 5:31:14 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:27:01 PM PT
