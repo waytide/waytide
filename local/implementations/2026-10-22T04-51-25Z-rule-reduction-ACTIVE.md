@@ -2041,6 +2041,13 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **No source rule carries a trigger line yet**, so no package has an on-demand file. The trigger lines are written into the 61 rules once the loader can print the index and load a rule by name.
 
+### Triggers — the loader prints the triggers and loads a rule by name, 2026-10-29
+
+**Two loader outcomes are built, attended, each with a direct implementation:**
+
+1. **With no argument, after each package's pre-loaded rules, the loader prints its on-demand file's trigger lines, and not the rules.** Each line names the command that loads its rule: `- When some-act, run: system/foundation/load-rules.sh c-rule`. The rule's name is its source file's name. This is part of the outcome *Prints every file the session reads, in order*.
+2. **Given a rule's name, the loader prints that on-demand rule's entry alone**: its title, source, trigger, and compressed text. Given a name no on-demand file holds, it says so and fails. The outcome is *Prints the named on-demand rule*.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5241,3 +5248,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:06:19 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:12:53 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:16:53 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:20:46 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:36:49 PM PT
