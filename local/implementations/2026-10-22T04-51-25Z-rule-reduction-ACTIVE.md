@@ -2188,6 +2188,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The harness-announces rule now describes the sentence the hook adds after a compaction**, in its body, its compressed text, and its History. Its check found 101 directives, 100 kept, and 1 less precise, which this revision did not touch.
 
+### Phase 4, re-read-after-compaction, is affirmed — 2026-10-29
+
+**The engineer affirmed the re-read-after-compaction phase.** After a compaction, the session-start hook tells the agent that the rules survive only as the compaction's summary, and to read them again before its next act. In testing, every session did, against 3 of 20 before.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5400,3 +5404,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 10:13:13 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:19:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:07:39 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:26:15 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:37:21 AM PT
