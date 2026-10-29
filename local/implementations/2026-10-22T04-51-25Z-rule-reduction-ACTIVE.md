@@ -2042,6 +2042,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** 6 of 6 on each side.
 29. **With `Explain` gone, the journal's time question carries exactly the rule's options in at least 90% of sessions.** Three of phase 9's four failures left `Explain` out, and phase 12 removed it. *Moderate confidence.*
    - **Held, 2026-10-29.** 20 of 20.
+30. **The a-response-is-clarified-twice-before-it-is-sent rule, added on `master`, can be brought onto the experiment's branch and compressed with nothing it states lost after repair.** *High confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2555,6 +2556,12 @@ The read fell from 177,387 characters to 177,172.
 ### Phase 14, journal-time-question, is affirmed — 2026-10-29
 
 **The engineer affirmed the journal-time-question phase.** With `Explain` gone, the time question carries the rule's options in every session measured, and the rule is unchanged.
+
+### Phase 15, master-rule-compression, starts — 2026-10-29
+
+**The phase brings onto the experiment's branch the `language` rule added on `master` on 2026-10-29**, a-response-is-clarified-twice-before-it-is-sent, and compresses it as the others were. On `master` it was compiled in the old way, as a file of its own at the package root. On this branch the compiler writes it into the package's `rules-pre-loaded.md`, and the file at the root is not carried over.
+
+**Forecast 30 is what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5815,3 +5822,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:58:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:00:08 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:02:48 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:03:18 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 2:05:22 PM PT
