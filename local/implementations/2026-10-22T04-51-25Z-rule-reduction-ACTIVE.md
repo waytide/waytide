@@ -2451,6 +2451,10 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 25 missed.** Each of the four steps of a state change protects something the engineer keeps: the state line is the authority, the rename shows the state in a listing, the log entry is the project's history, and the footer line keeps the record's provenance in the file. No step is taken away, and no rule changes.
 
+### Phase 11, record-obligations, is affirmed — 2026-10-29
+
+**The engineer affirmed the record-obligations phase.** A state change keeps its four steps, each for what it protects, and no rule changes. Its forecast missed, and the finding it answered is settled as the rules stand.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5695,3 +5699,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:42 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:21:01 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:09 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:35 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:28:14 PM PT
