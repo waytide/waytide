@@ -43,7 +43,7 @@ Speak and write to the user in plain language, using the **actual names of thing
 4. Say the thing itself — "the notes copied into a project when it installs a package," not "the distributed tier."
 5. Do not point back to an earlier list item by its number or position ("#2", "option 3", "the second one", "the latter").
 6. Name the thing again each time — "the show-the-test merge," not "#2" — even at the cost of some repetition.
-7. The engineer may refer to a list item by its number. Number a list the engineer may refer back to.
+7. The engineer may refer to a list item by its number.
 8. When the engineer writes a number such as *#2*, name what it refers to before acting on it, so the reference is confirmed.
 9. Use a compressed term ("distributed", "atomic records") only once its plain meaning has been stated.
 10. Do not lead with a compressed term as though the reader already shares it.

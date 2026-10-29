@@ -145,18 +145,17 @@ A word removed from use with nothing in its place. **This is not a substitution.
 9. **mechanical** / **mechanics** (the complement): everything that is not a hinge. The AI generates it straight through. STE: `MECHANICAL (adj)` is approved, meaning *related to or operated with a mechanism*, which is not this. Technical noun and technical adjective, ETE engineering, design, process, and method, with its meaning fixed here per the ete-fixes-the-meaning rule.
 10. **subtle** (vs **crude**) (first mark of a hinge): the decision takes design judgment that is not written in the code or tests. It lives in the person. Crude is a tool, pattern, or answer that can be read off the artifacts. The distinction is Bellware's subtle and crude knowledge: https://madabout.software/articles/subtle-knowledge-crude-knowledge/. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
 11. **cradle** (the constraint): the efferent test, held during code generation. It holds the implementation in position without gripping it rigid, steering toward solubility. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
-12. **efferent** (the perspective): designing a unit from the use site. DBE is built on designing from this view: the test is the first efferent reference, and the interface is designed from the efferent side. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
-13. **actuation** (the act): the invocation of the unit under test, the first efferent reference. Write it before any implementation, so the interface is designed from the use site. It is the first and highest-leverage gate. STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing rather than its invocation from a use site. Technical noun, ETE engineering, design, process, and method.
+12. **efferent** (the perspective): DBE is built on designing from this view: the test is the first efferent reference, and the interface is designed from the efferent side. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
+13. **actuation** (the act): the invocation of the unit under test, the first efferent reference. Write it before any implementation, so the interface is designed from the use site. It is the first and highest-leverage gate.
 14. **observation** (the act of reading the outcome): what the test observes about the outcome of the actuation. An **assertion** is the mechanism that implements an observation, not the observation itself. STE: absent from the STE dictionary. `observe (v)` is not approved and gives MONITOR (v), which names watching rather than reading a result. Technical noun, ETE engineering, design, process, and method.
 15. **load-bearing** (second mark of a hinge): other work rests on the decision, so a wrong one spreads and sticks: cheap to fix now, costly later. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
-16. **solubility** (the quality): the general design-quality term: how readily a unit dissolves into the reader's understanding. In DBE it is the focus of the actuation hinge. Judge its particular expression from the use site, the efferent view. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
+16. **solubility** (the quality): in DBE it is the focus of the actuation hinge. Judge its particular expression from the use site, the efferent view. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
 17. **mean-bias** (the AI's failure mode): the AI's pull toward the average of the code it has seen, most of which is poorly designed. It acts on the human too: a single AI proposal put up for approval drags the human's judgment toward that average. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
 
 ## The two results the gates rest on
 
 1. The rules refer to two results by these names: **Make the human produce the answer, not approve one**, and **The best options are ones the AI can't produce**.
 2. A gate presents several genuine alternatives. It never presents a single proposal for approval or a fait accompli.
-3. Every gate also keeps a free-text option: the human dictating outright, or a chat to work the answer out. It is mandatory at every gate, without exception.
 
 ## "Cycle" is scoped by what precedes it
 
@@ -193,19 +192,17 @@ A word removed from use with nothing in its place. **This is not a substitution.
 
 ## Substitutions
 
-1. When the impulse is the word not to write, write the term instead.
-2. Write **subtle**, not "intrinsic": the first mark of a hinge, where the judgment lives in the person rather than in the artifacts.
-3. Write **load-bearing**, not "asymmetric": the second mark of a hinge, where other work rests on the decision.
-4. Write **mechanical**, not "non-hinge": everything that is not a hinge, which the AI generates straight through.
-5. Write **cycle**, not "pass": one traversal of the loop.
-6. Write **wait**, not "gate" as a verb: what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form. STE: `WAIT (v)` is approved, and used with its approved meaning.
-7. Write **the human's level of participation**, not "gating cadence": whether the human is in the loop. Attended is in the loop, and unattended is out of it. Attended and unattended cause a cadence and are not one. STE: `LEVEL (n)` is approved, meaning *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved.
+1. Write **subtle**, not "intrinsic": the first mark of a hinge, where the judgment lives in the person rather than in the artifacts.
+2. Write **load-bearing**, not "asymmetric": the second mark of a hinge, where other work rests on the decision.
+3. Write **mechanical**, not "non-hinge": everything that is not a hinge, which the AI generates straight through.
+4. Write **cycle**, not "pass": one traversal of the loop.
+5. Write **wait**, not "gate" as a verb: what the loop does at a hinge. `gate` is the noun for the mechanism and takes no verb form. STE: `WAIT (v)` is approved, and used with its approved meaning.
+6. Write **the human's level of participation**, not "gating cadence": whether the human is in the loop. Attended is in the loop, and unattended is out of it. Attended and unattended cause a cadence and are not one. STE: `LEVEL (n)` is approved, meaning *a horizontal line, plane, surface, or condition*. Waytide's sense is degree, which STE Rule 1.3 forbids, so `level` is reserved.
 
 ## Discontinuations
 
-1. A discontinuation removes a word with nothing in its place, because the concept went rather than the name. It is not a substitution, which names two words.
-2. **discriminator**: there is no test-noun. The test is "is this a hinge?"
-3. **capability-independent**: state it plainly. Subtlety is about the design, not the model.
+1. **discriminator**: there is no test-noun. The test is "is this a hinge?"
+2. **capability-independent**: state it plainly. Subtlety is about the design, not the model.
 
 ## Compression
 

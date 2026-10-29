@@ -31,7 +31,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 3. Binding rules live in two directories, separated by source.
 4. **`waytide/system/`** holds the installed system packages, each in its own subdirectory (`waytide/system/foundation/`, `waytide/system/language/`, …).
 5. Packages are installed with `git subtree` and refreshed by pulling.
-6. A package's `vocabulary.md` glossary is part of its rules. Its terms are binding and cannot be applied unread.
+6. A package's `vocabulary.md` glossary is part of its rules, and cannot be applied unread.
 7. **`waytide/local/rules/`** holds the project's own local rules, one per file. Every rule, system or local, is kept one per file.
 8. Local rules are the project's own conventions, not installed from a package.
 
@@ -49,12 +49,8 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 9. The rules override default behavior where they conflict.
 10. Explicit user instructions still win over the rules.
 11. Read `waytide/system/foundation/` first. It defines the system.
-12. Read `waytide/local/vocabulary.md` with the rules. It binds.
-13. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
-14. Its terms decide over every package's terms.
-15. It is not a rule and does not live in `rules/`.
-16. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
-17. It may not exist, and neither may `rules/`. Either absence is ordinary.
+12. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
+13. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -63,7 +59,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
 4. Work with working state as its own conventions describe.
 5. Do not read working state as binding rules at session start.
-6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is read at session start and is the one thing there that binds.
+6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is the one thing there that binds.
 
 ## Purpose of a rule
 

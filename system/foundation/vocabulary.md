@@ -79,27 +79,23 @@ A word taken out of use with **nothing in its place**. This is not a substitutio
 10. **transfer** — a technical verb: to move responsibility for the next act from one party to the other. The agent transfers responsibility to the engineer at a hinge, and the engineer transfers responsibility to the agent once they decide. It names where a collaborative workflow changes hands, not the mechanism. A `gate` is the mechanism, and the loop `waits` there. STE: not approved. The STE dictionary gives `MOVE (v)`. Technical verb, ETE engineering, design, process, and method.
 11. Never write `transfer` as a noun (STE Rule 1.13). Write *responsibility transfers to the engineer*, not *the transfer of responsibility*. It mirrors `gate`, a noun that takes no verb form.
 12. **responsibility** — what transfers: answerability for the next act in the work. STE: absent. Technical noun, ETE engineering, design, process, and method.
-13. **free-text option** — the answer the selection interface supplies beside the options, where the engineer answers outside the option set. The harness provides it, so the agent adds none of its own. It is present at every prompt without exception.
-14. The free-text option is not the `Explain` option, which asks what the question means rather than answering it. `Explain` costs one of the four option slots, and the free-text option costs none.
-15. An option that names an answer inside the question, such as *Enter the time* at a prompt asking for a time, is a candidate, not the free-text option.
-16. STE for free-text option: absent as a compound. `option (n)` is not approved and gives ALTERNATIVE (n). `FREE (adj)` is approved in an unrelated sense. `text` is absent. Technical noun, ETE human-computer interaction.
+13. **free-text option** — the answer the selection interface supplies beside the options, where the engineer answers outside the option set.
+14. An option that names an answer inside the question, such as *Enter the time* at a prompt asking for a time, is a candidate, not the free-text option.
+15. STE for free-text option: absent as a compound. `option (n)` is not approved and gives ALTERNATIVE (n). `FREE (adj)` is approved in an unrelated sense. `text` is absent. Technical noun, ETE human-computer interaction.
 
 ## Substitutions
-
-1. When the impulse is a word in the Don't use column, write the Use term.
 
 | Use | Don't use | Meaning |
 |---|---|---|
 | **work session record** | "session record" | the record of a stretch of work |
 | **free-text option** | "escape" | the answer the selection interface supplies beside the options |
 
-2. Do not write `escape` for the free-text option. STE: `escape (v)` is not approved and gives DEFLATE (v).
-3. Always write **work session record** with **work**, not bare *session*. This holds in the prompt that offers to write one and in prose about either. The record's title is `# Work Session — <name> (<date>)`, and its directory is `waytide/local/logs/work-sessions/`.
+1. Do not write `escape` for the free-text option. STE: `escape (v)` is not approved and gives DEFLATE (v).
+2. Always write **work session record** with **work**, not bare *session*. This holds in the prompt that offers to write one and in prose about either. The record's title is `# Work Session — <name> (<date>)`, and its directory is `waytide/local/logs/work-sessions/`.
 
 ## Discontinuations
 
-1. A discontinued word is taken out of use with nothing in its place. It is not a substitution.
-2. **handoff** — the point where the work passed between the engineer and the agent. It is discontinued. Use `transfer`, a verb, and rewrite the sentence rather than patch it (STE Rule 9.1). *The naming gate offers the same handoff as the actuation gate* becomes *the naming gate transfers responsibility the same way the actuation gate does*.
+1. **handoff** — the point where the work passed between the engineer and the agent. It is discontinued. Use `transfer`, a verb, and rewrite the sentence rather than patch it (STE Rule 9.1). *The naming gate offers the same handoff as the actuation gate* becomes *the naming gate transfers responsibility the same way the actuation gate does*.
 
 ## Compression
 

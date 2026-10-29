@@ -30,7 +30,7 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
 3. A reserved word is a technical noun or verb in a category its entry names: STE Rule 1.5, 1.6, or 1.12, or an ETE category. The vocabulary that holds it is the approval STE Rule 1.8 requires.
 4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
 5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
-6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, not reserved and not rewritten.
+6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary.
 7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
 
 ## Which vocabulary decides
@@ -193,7 +193,7 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 3. Binding rules live in two directories, separated by source.
 4. **`waytide/system/`** holds the installed system packages, each in its own subdirectory (`waytide/system/foundation/`, `waytide/system/language/`, …).
 5. Packages are installed with `git subtree` and refreshed by pulling.
-6. A package's `vocabulary.md` glossary is part of its rules. Its terms are binding and cannot be applied unread.
+6. A package's `vocabulary.md` glossary is part of its rules, and cannot be applied unread.
 7. **`waytide/local/rules/`** holds the project's own local rules, one per file. Every rule, system or local, is kept one per file.
 8. Local rules are the project's own conventions, not installed from a package.
 
@@ -211,12 +211,8 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 9. The rules override default behavior where they conflict.
 10. Explicit user instructions still win over the rules.
 11. Read `waytide/system/foundation/` first. It defines the system.
-12. Read `waytide/local/vocabulary.md` with the rules. It binds.
-13. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
-14. Its terms decide over every package's terms.
-15. It is not a rule and does not live in `rules/`.
-16. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
-17. It may not exist, and neither may `rules/`. Either absence is ordinary.
+12. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
+13. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -225,7 +221,7 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
 4. Work with working state as its own conventions describe.
 5. Do not read working state as binding rules at session start.
-6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is read at session start and is the one thing there that binds.
+6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is the one thing there that binds.
 
 ## Purpose of a rule
 
@@ -277,15 +273,14 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 2. The rules bind that context, the working directories hold it, and git carries it.
 3. An agent memory store is not one of those places.
 4. Do not hold in a store anything that belongs in one of those places.
-5. A binding convention is a rule in `waytide/local/rules/`.
-6. A decision is a one-line entry in `waytide/local/logs/log/`.
-7. Thinking that has not stabilized is an observation in `waytide/local/items/`.
-8. The project's planning goes in an item.
-9. Postponed work is a deferred item.
-10. What the project stopped doing is suspended.
-11. Each artifact follows its own convention.
-12. A note on how the project's code is arranged belongs in an artifact. So does what was decided last week, or which approach was rejected.
-13. Do not create an agent memory store.
+5. A decision is a one-line entry in `waytide/local/logs/log/`.
+6. Thinking that has not stabilized is an observation in `waytide/local/items/`.
+7. The project's planning goes in an item.
+8. Postponed work is a deferred item.
+9. What the project stopped doing is suspended.
+10. Each artifact follows its own convention.
+11. A note on how the project's code is arranged belongs in an artifact. So does what was decided last week, or which approach was rejected.
+12. Do not create an agent memory store.
 
 ## What it does not reach
 
@@ -293,9 +288,8 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 2. How the engineer wants to be answered, and what they want never offered, are such facts.
 3. A machine-scoped fact goes to per-machine configuration under `~/.config/`, outside any repository, per the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule.
 4. A preference not yet settled as a rule is outside this rule.
-5. Ask about such a preference at once, per the ask-at-once-when-the-engineer-expresses-a-preference rule, rather than holding it.
-6. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
-7. Harness working state is not project context and is no substitute for an artifact.
+5. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
+6. Harness working state is not project context and is no substitute for an artifact.
 
 # A time value carries minutes and seconds
 
@@ -339,7 +333,7 @@ Source: system/foundation/source/ask-at-once-when-the-engineer-expresses-a-prefe
 
 1. Each candidate is genuine, and the selection carries only those that apply.
 2. An amendment to an existing rule, offered only where a rule covers the subject. It is made in that rule's source, with its History.
-3. A new rule in `waytide/local/rules/`, written with its `waytide/local/logs/log/` entry.
+3. A new rule.
 4. An observation in `waytide/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
 5. Neither, where the engineer does not want the preference recorded. It is taken without argument.
 6. Do not ask again in the same session about a preference the engineer declined to record.
@@ -440,24 +434,21 @@ To load them now, type: load waytide.
 5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
-8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
-10. A package's ON DEMAND section lists rules the loader does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
-11. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
-12. Each is named whether or not it exists, and its absence is ordinary.
-13. Name the other working directories and leave them out.
-14. Do not print the startup display.
-15. Print no package count.
-16. Then wait for the engineer's request.
-17. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-18. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-19. This rule does not restate the directory list.
-20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-21. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-22. Nothing verifies the read. The hook cannot observe what the agent does.
-23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-25. The work honoring the rules is the verification.
+8. Read no rule file one by one.
+9. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and never name `local/` as a whole.
+10. Name the other working directories.
+11. Do not print the startup display.
+12. Print no package count.
+13. Then wait for the engineer's request.
+14. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+15. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+16. This rule does not restate the directory list.
+17. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+18. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+19. Nothing verifies the read. The hook cannot observe what the agent does.
+20. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+21. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+22. The work honoring the rules is the verification.
 
 ## The status line
 
@@ -618,4 +609,4 @@ Source: system/foundation/source/work-in-a-downstream-project-is-never-offered-a
 5. To tell them apart, ask whether the sentence describes something that happened.
 6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
 7. Raising downstream state unbidden stays forbidden.
-8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
+8. The session-start notice. The harness emits it, it reports only on the current project, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.

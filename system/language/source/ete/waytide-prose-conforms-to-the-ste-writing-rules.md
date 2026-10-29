@@ -56,15 +56,11 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 2. These rules bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers.
 3. This rule holds the STE rules Waytide breaks most.
 4. When another STE rule is found broken in use, add it to the table. Record beside it the phrase that broke it.
-5. This rule is part of Eventide Technical English, or ETE. ETE is Waytide's implementation of the standard.
+5. This rule is part of Eventide Technical English, or ETE.
 6. The waytide-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Waytide's vocabulary decides first, and the standard second.
-7. Three rules carry ETE's departures from the standard. Each names the STE rule it contradicts.
-8. The ete-declares-its-own-categories rule adds five categories of Waytide's own.
-9. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives.
-10. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone.
-11. Check a phrase against Waytide's vocabulary first.
-12. Then check it against the STE dictionary.
-13. Then check it against the writing rules below.
+7. Check a phrase against Waytide's vocabulary first.
+8. Then check it against the STE dictionary.
+9. Then check it against the writing rules below.
 
 ## The writing rules
 
@@ -83,7 +79,7 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 
 ### `swept across 20 files`
 
-1. **`swept`**: the `language` vocabulary discontinues `sweep` for `conform`. The STE dictionary replaces `sweep (v)` with `SCAN`, which does not carry the meaning either.
+1. **`swept`**: the STE dictionary replaces `sweep (v)` with `SCAN`, which does not carry the meaning.
 2. **`across`**: `ACROSS (prep)` is approved only as *from one side to the other*. STE Rule 1.3 forbids other meanings. Where `across` would mean *throughout*, write `in`, as in `in 20 files`.
 3. **`was swept`**: this is the passive with a known agent, against STE Rule 3.6.
 4. **The semicolon** in the sentence that held it is against STE Rule 8.1.

@@ -390,7 +390,7 @@ Trigger: When the project stops doing something, such as removing a rule, proced
 1. Like every log entry, the title states what was suspended and why.
 2. The why gives what it cost and what it stopped buying.
 3. Reconcile whatever cites the removed thing. The entry names, in its own clause, what else changed.
-4. For example, removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule.
+4. For example, removing a rule means dropping it from the package README's summary.
 5. The suspended thing's file is removed in the same commit as the entry.
 6. Git holds the removed text, reachable by path from `master`'s history.
 
@@ -417,7 +417,7 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 
 1. A vocabulary entry states the term's current meaning and stops there.
 2. Write the entry in the present tense, saying what the term means now.
-3. Give the STE note, the category, and any distinction against a neighbouring term.
+3. Give any distinction against a neighbouring term.
 4. An entry records no lifecycle history.
 5. Do not record what the term used to name, or what directory it used to sit in.
 6. Do not record when the term changed, or what governed it before.
@@ -439,9 +439,8 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 ## Where the history goes
 
 1. History goes to the log.
-2. A discontinuation, under the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule's own heading, is not an exception.
-3. A discontinuation entry names the word and says it is not used.
-4. It does not narrate when the word was dropped or what carried it before.
+2. A discontinuation is not an exception.
+3. It does not narrate when the word was dropped or what carried it before.
 
 # An implementation runs on a branch to a declared end
 
@@ -562,10 +561,9 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 ## The agent never raises the end of an `[experiment]`
 
 1. Do not offer to conclude, affirm, refute, or merge one: not as a next step, an option, or a precondition.
-2. The precondition is the form that slips through, as in *this cannot be published until it merges*.
-3. Report what is settled and what is open, and stop.
-4. An experiment's length is the engineer's judgment, not readable from the work done.
-5. A `[feature]` is not covered, because its completion is ordinary.
+2. Report what is settled and what is open, and stop.
+3. An experiment's length is the engineer's judgment, not readable from the work done.
+4. A `[feature]` is not covered, because its completion is ordinary.
 
 ## Drift
 
@@ -575,9 +573,7 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 4. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question.
 5. The watch is a practice, not a guarantee.
 6. Under a worktree there is nothing to watch.
-7. The session-start notice reports every implementation not concluded.
-8. A `[feature]` has no watch, since starting other work during one is ordinary.
-9. A forgotten feature is reported by the same notice.
+7. A `[feature]` has no watch, since starting other work during one is ordinary.
 
 # An item that sequences work contains no code samples
 
@@ -678,7 +674,6 @@ Trigger: When creating and naming a new file under waytide/local/ or a new rule 
 1. System rules do not take the prefix.
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
-4. A project's own `waytide/local/vocabulary.md` takes no prefix. It is a structural file, not a dated entry. See the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule.
 
 # Disclosure is the one reason to edit a historical record
 
@@ -934,8 +929,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
 54. Answer a question that runs against what an item settled, and record the change.
 55. Do not refuse to answer until the item is amended.
-56. Reconcile a settled item against later work.
-57. Never regenerate a settled item from later work. Where one item names another as what it realizes, the named item is the source of truth.
+56. Where one item names another as what it realizes, the named item is the source of truth.
 
 # The log records why work was abandoned, and never says undone work was done
 
@@ -1154,12 +1148,11 @@ Trigger: When a work session is closing, or the engineer asks for a work session
 12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
 13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
 14. A trivial work session needs no record. A record is not required for every session.
-15. When the agent raises the question of recording, it asks through the **AskUserQuestion** selection UI. It does not ask in free-text prose.
-16. The prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
-17. The engineer's selection decides.
-18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
-19. A direct instruction from the engineer to write or append a record needs no prompt.
-20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+15. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+16. The engineer's selection decides.
+17. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+18. A direct instruction from the engineer to write or append a record needs no prompt.
+19. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
 ## The shape of a work session record
 
@@ -1192,10 +1185,9 @@ Trigger: When a work session is closing, or the engineer asks for a work session
 8. Name anything the design asserts that the work session contradicts.
 9. Either side may be the stale one. Only the engineer can say which.
 10. Change neither the design nor the records on your own initiative.
-11. Reconcile a design. Never regenerate it from the records or the work downstream of it.
-12. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read the design against the records rather than rebuilding it.
-13. Where no design exists, or nothing in the work session bears on one, say so and move on.
-14. Do not invent a divergence to justify the prompt.
+11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records.
+12. Where no design exists, or nothing in the work session bears on one, say so and move on.
+13. Do not invent a divergence to justify the prompt.
 
 # Working-state artifacts carry a provenance footer
 

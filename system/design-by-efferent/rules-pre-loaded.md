@@ -12,7 +12,7 @@ Source: system/design-by-efferent/source/advance-one-outcome-at-a-time-and-stop-
 8. A test left with an empty, unnamed outcome context is unfinished.
 9. The closing step ascribes the test's name.
 10. Name one test at a time.
-11. At the naming gate, present candidate outcome-context names, as every hinge presents its candidates. The name passes to the human through the options and the free-text answer. The AI does not name the test on its own.
+11. At the naming gate, present candidate outcome-context names, as every hinge presents its candidates. The AI does not name the test on its own.
 12. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for the mechanism and its reasons.
 13. Build one outcome's test at a time.
 14. After each test, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait.
@@ -34,16 +34,14 @@ Source: system/design-by-efferent/source/dbe-is-a-design-tool-not-a-testing-ritu
 7. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt.
 8. A cycle the engineer chose after weighing two real alternatives is not choreography. Only the engineer's choice makes the cycle legitimate.
 9. Approach every unit from the efferent side first. The test is the first efferent reference.
-10. Author the actuation before the implementation exists, so the unit's interface is designed from the use site.
-11. Aim for the unit's greatest **solubility**: how readily it dissolves into the reader's understanding.
-12. Seek minimal necessary complexity, found rather than presumed.
-13. Treat the efferent test as a **cradle**. It holds the implementation in position without gripping it rigid.
-14. Generate code within the dictates of the efferent view, free to move inside those bounds.
-15. The test is not an after-the-fact filter or pass/fail gate, and not a point to halt at.
-16. Keep the cradle in context while building, and generate straight through inside it, steering toward solubility. The human sets the cradle.
-17. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
-18. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
-19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
+10. Aim for the unit's greatest **solubility**.
+11. Treat the efferent test as a **cradle**.
+12. Generate code within the dictates of the efferent view, free to move inside those bounds.
+13. The test is not an after-the-fact filter or pass/fail gate, and not a point to halt at.
+14. Keep the cradle in context while building, and generate straight through inside it, steering toward solubility. The human sets the cradle.
+15. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
+16. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
+17. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
 
 # TDD designs behavior, coverage prevents regression, and neither breaks an implementation
 
@@ -89,17 +87,16 @@ Source: system/design-by-efferent/source/test-first-is-the-default-so-never-ask-
 Source: system/design-by-efferent/source/the-human-deliberates-the-hinges-never-the-pass-fail-bar.md
 
 1. In DBE, place the human's attention only at the hinges, where design judgment lives.
-2. A hinge is a subtle, load-bearing decision the design turns on (see the DBE vocabulary).
-3. The original pair of hinges is setting the cradle (the efferent shape of the actuation) and judging solubility (the result).
-4. The loop waits at the hinges so the human can deliberate them.
-5. The agent does all code generation between hinges straight through.
-6. Never make the human wait at a red or green bar.
-7. Never deliberate the pass/fail bar.
-8. The AI generates. The human deliberates.
-9. The human owns the efferent design, meaning what the actuation looks like.
-10. The human owns the solubility verdict on what comes back.
-11. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
-12. Let the AI fill everything other than the actuation and the solubility verdict.
+2. The original pair of hinges is setting the cradle (the efferent shape of the actuation) and judging solubility (the result).
+3. The loop waits at the hinges so the human can deliberate them.
+4. The agent does all code generation between hinges straight through.
+5. Never make the human wait at a red or green bar.
+6. Never deliberate the pass/fail bar.
+7. The AI generates. The human deliberates.
+8. The human owns the efferent design, meaning what the actuation looks like.
+9. The human owns the solubility verdict on what comes back.
+10. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
+11. Let the AI fill everything other than the actuation and the solubility verdict.
 
 ## The loop, by turn
 

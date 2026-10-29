@@ -56,7 +56,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 ## The cycle is for the first implementation of a unit
 
 1. Offer the cycle only for new behavior being designed.
-2. Do not offer the cycle, or manufacture a red, when covering behavior that already exists. A red there breaks working code.
+2. Do not offer the cycle when covering behavior that already exists.
 3. When covering, the implementation hinge is degenerate. See the the-design-of-a-test-waits-at-the-hinges-coverage-included rule.
 4. Never offer the cycle and then refuse it; offer it only where it is available.
 
@@ -78,10 +78,7 @@ But it does not excuse the search. Where a hinge has a real second implementatio
 ## The second candidate is real
 
 1. The cycle counts as a real second candidate under the present-every-prompt two-option floor.
-2. Do not present a failing implementation as an option merely to reach the two-option floor.
-3. Where the hinge has a real second implementation, surface that option.
-4. The cycle is not a substitute for searching for another implementation.
-5. Do not manufacture cosmetic options to reach the two-option floor.
+2. The cycle is not a substitute for searching for another implementation.
 
 ## Compression
 

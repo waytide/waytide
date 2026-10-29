@@ -22,7 +22,7 @@ The loop advances **one outcome at a time** and, in attended work, **stops at ev
 8. A test left with an empty, unnamed outcome context is unfinished.
 9. The closing step ascribes the test's name.
 10. Name one test at a time.
-11. At the naming gate, present candidate outcome-context names, as every hinge presents its candidates. The name passes to the human through the options and the free-text answer. The AI does not name the test on its own.
+11. At the naming gate, present candidate outcome-context names, as every hinge presents its candidates. The AI does not name the test on its own.
 12. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for the mechanism and its reasons.
 13. Build one outcome's test at a time.
 14. After each test, stop at each of its hinges (see the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule) and wait.

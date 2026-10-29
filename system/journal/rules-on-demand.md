@@ -49,7 +49,7 @@ Trigger: When the writer asks for the journal timeline or a list of journal entr
 12. Store none of it: not the bullets, not the count, and not the date span.
 13. There is no `TIMELINE.md`, and none is written.
 14. Write nothing to a file.
-15. The view is a projection, in the sense of the foundation package's vocabulary. It reads the entries without destroying them and is regenerated, not maintained.
+15. The view is a projection, in the sense of the foundation package's vocabulary.
 
 # Journal entries are recorded in the writer's journal directory, one file per entry
 
@@ -83,16 +83,12 @@ Trigger: When writing a journal entry (including when the writer opens with "new
 ## Entry format
 
 1. **Voice:** write in first person, from the writer's perspective, for example *I raised the concern …*.
-2. **Editing:** clean the text up lightly.
-3. Preserve the writer's words, meaning, and emphasis.
-4. Correct the grammar and the flow.
-5. Invent no fact, and embellish nothing.
-6. **Structure:** write a `# <title>`, then the datetime line, then a `**Tags:**` line where the entry has tags.
-7. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
-8. Write the datetime line by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule.
-9. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
-10. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
-11. The entry is then the title and the prose, with nothing repeated.
+2. **Structure:** write a `# <title>`, then the datetime line, then a `**Tags:**` line where the entry has tags.
+3. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
+4. Write the datetime line by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule.
+5. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
+6. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
+7. The entry is then the title and the prose, with nothing repeated.
 
 ## The directive *new entry*
 
@@ -165,10 +161,9 @@ Trigger: When writing, changing, or committing a journal entry
 
 1. An entry carries the provenance footer, per foundation's working-state-artifacts-carry-a-provenance-footer rule.
 2. The footer carries an `Authored by` line and no `Changed by` line.
-3. An entry is not edited once written, and is not corrected when the writer changes their mind. The later thought is a later entry.
-4. Only two things reach an existing entry: disclosure, governed by foundation's disclosure rule, and a change the writer directs to their own entry, governed by the an-entry-is-the-writers-words rule.
-5. For both, the footer stays as it is.
-6. Each is recorded in the log, not in the entry.
+3. When the writer changes their mind, the later thought is a later entry.
+4. For a disclosure, the footer stays as it is.
+5. A disclosure is recorded in the log, not in the entry.
 
 ## Committing
 
@@ -329,9 +324,8 @@ Trigger: When creating a journal entry for which the writer gave no time
 3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
 4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
 5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt rule.
-6. The harness's own free-text option remains for anything else.
-7. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
-8. Name the file and write the datetime line to match the answer.
+6. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
+7. Name the file and write the datetime line to match the answer.
 
 # Where an entry's body says the same thing as its title, keep the title alone
 

@@ -14,8 +14,8 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
 8. Or the word is not approved, and the dictionary names the approved word that replaces it.
 9. Or the word is absent from the STE dictionary.
 10. Step 2: ask what the word names. Do not skip this step.
-11. A word that names something in the subject field is terminology. Continue the sequence.
-12. A word that qualifies, joins two statements, or does grammatical work is ordinary vocabulary. Stop and write no entry, per the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule.
+11. If the word is terminology, continue the sequence.
+12. If the word is ordinary vocabulary, stop.
 13. Step 3: decide noun or verb.
 14. A word used both ways takes a category for each. These are two decisions, not one.
 15. STE Rule 1.7 forbids a technical noun used as a verb. STE Rule 1.13 forbids a technical verb used as a noun.
@@ -25,7 +25,7 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
 19. Do not reach step 5 until an STE category has been tried and refused.
 20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
 21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
-22. The entry gives the definition, what the STE dictionary says about the word, and the category.
+22. The entry gives the definition.
 23. The engineer decides the term's category, because a term is a design decision.
 24. Put the category to the engineer through the selection UI.
 25. Bring the step 1 lookup already done, and name the candidate categories.
@@ -85,10 +85,8 @@ Trigger: When reserving a word or choosing a vocabulary category for a term
 4. Try an STE category first.
 5. Use an ETE category only for a word that no STE category holds.
 6. Reserve words one at a time.
-7. The word's vocabulary entry names its category.
-8. The same entry states what the STE dictionary says about the word.
-9. A word with no entry is not reserved.
-10. An ETE category is not a standing permission to use the words that fit it.
+7. A word with no entry is not reserved.
+8. An ETE category is not a standing permission to use the words that fit it.
 
 # ETE fixes the meaning of a word in its category
 

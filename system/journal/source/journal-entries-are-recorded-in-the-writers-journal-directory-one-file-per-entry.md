@@ -62,16 +62,12 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 ## Entry format
 
 1. **Voice:** write in first person, from the writer's perspective, for example *I raised the concern …*.
-2. **Editing:** clean the text up lightly.
-3. Preserve the writer's words, meaning, and emphasis.
-4. Correct the grammar and the flow.
-5. Invent no fact, and embellish nothing.
-6. **Structure:** write a `# <title>`, then the datetime line, then a `**Tags:**` line where the entry has tags.
-7. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
-8. Write the datetime line by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule.
-9. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
-10. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
-11. The entry is then the title and the prose, with nothing repeated.
+2. **Structure:** write a `# <title>`, then the datetime line, then a `**Tags:**` line where the entry has tags.
+3. Follow these with a bold `**Summary:**` one-line gist, then the narrative prose.
+4. Write the datetime line by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule.
+5. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
+6. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
+7. The entry is then the title and the prose, with nothing repeated.
 
 ## The directive *new entry*
 

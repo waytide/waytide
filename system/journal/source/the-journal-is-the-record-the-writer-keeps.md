@@ -100,10 +100,9 @@ One file per entry rather than one per day follows the convention every other da
 
 1. An entry carries the provenance footer, per foundation's working-state-artifacts-carry-a-provenance-footer rule.
 2. The footer carries an `Authored by` line and no `Changed by` line.
-3. An entry is not edited once written, and is not corrected when the writer changes their mind. The later thought is a later entry.
-4. Only two things reach an existing entry: disclosure, governed by foundation's disclosure rule, and a change the writer directs to their own entry, governed by the an-entry-is-the-writers-words rule.
-5. For both, the footer stays as it is.
-6. Each is recorded in the log, not in the entry.
+3. When the writer changes their mind, the later thought is a later entry.
+4. For a disclosure, the footer stays as it is.
+5. A disclosure is recorded in the log, not in the entry.
 
 ## Committing
 

@@ -121,12 +121,11 @@ with these options:
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
 6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
-7. ETE is the STE dictionary and writing rules, plus Waytide's reserved terms such as `hinge`, `actuation`, `cradle`, and `solubility`.
-8. Use short sentences and active voice in the plan.
-9. Use no semicolon in the plan.
-10. Put one idea in each list item.
-11. Present the plan in the response.
-12. Do not write the plan to a file. It is not a `foundation` planning record.
+7. Use short sentences and active voice in the plan.
+8. Use no semicolon in the plan.
+9. Put one idea in each list item.
+10. Present the plan in the response.
+11. Do not write the plan to a file. It is not a `foundation` planning record.
 
 ## Compression
 

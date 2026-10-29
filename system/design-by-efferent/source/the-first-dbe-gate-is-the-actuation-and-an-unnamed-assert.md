@@ -54,12 +54,11 @@ Each is proposed and accepted before the next, per the the-hinge-cycle-is-actuat
 2. The first turn produces that test file and nothing more.
 3. The first turn begins at the first gate, where responsibility first transfers to the human.
 4. The first gate puts down only the actuation and an unnamed assert.
-5. The actuation is the invocation of the unit under test, the first efferent reference, bound to an explaining variable.
+5. Bind the actuation to an explaining variable.
 6. State any inputs just above the actuation, via controls or literals.
 7. The unnamed assert is a single bare `test` block asserting the explaining variable, or the variable against a control value.
 8. Write no inner outcome `context` yet, so no outcome is named.
-9. Nest the file to mirror its folder path, per the folder-mirroring rule, with one outer `context` per path segment.
-10. Place the actuation and the unnamed `test` block inside the innermost `context`.
+9. Place the actuation and the unnamed `test` block inside the innermost `context`.
 
 ```ruby
 context "Constant" do
@@ -82,26 +81,23 @@ context "Constant" do
 end
 ```
 
-11. Assert against an explaining variable, a named local whose name states what is asserted, not against an inline expression.
-12. The explaining variable holds the result of actuating the concern.
-13. Actuate first, bind the result, then assert it.
-14. The shell of the cradle is the actuation and its unnamed assert.
-15. Once the shell is implemented, leave the test unnamed through the rest of the feature's development.
-16. Name the test only at the end of the feature.
-17. Add the outcome `context` each observation establishes at that time, giving the test-structure rule's "one inner `context` per outcome" structure.
-18. This naming step is the seam where the next feature begins.
-19. A feature in progress carries bare unnamed asserts. A finished feature carries named outcome contexts.
-20. The first gate's hinge is the actuation's shape and the truth of the one observation, not how outcomes are named or divided.
-21. Before writing the file, settle the actuation, the observation, and the controls.
-22. Do not write the implementation in the first turn.
-23. Do not pause to run the inevitably-failing test.
-24. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
-25. The implementation is the fourth hinge.
-26. The naming is the fifth hinge, at the feature's close.
-27. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
-28. Do not present the whole test file for a single accept.
-29. Settle the three test hinges first, then assemble and show the file.
-30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
+10. The shell of the cradle is the actuation and its unnamed assert.
+11. Once the shell is implemented, leave the test unnamed through the rest of the feature's development.
+12. Name the test only at the end of the feature.
+13. Add the outcome `context` each observation establishes at that time, giving the test-structure rule's "one inner `context` per outcome" structure.
+14. This naming step is the seam where the next feature begins.
+15. A feature in progress carries bare unnamed asserts. A finished feature carries named outcome contexts.
+16. The first gate's hinge is the actuation's shape and the truth of the one observation, not how outcomes are named or divided.
+17. Before writing the file, settle the actuation, the observation, and the controls.
+18. Do not write the implementation in the first turn.
+19. Do not pause to run the inevitably-failing test.
+20. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
+21. The implementation is the fourth hinge.
+22. The naming is the fifth hinge, at the feature's close.
+23. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
+24. Do not present the whole test file for a single accept.
+25. Settle the three test hinges first, then assemble and show the file.
+26. The exception to points 24 and 25 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 
 ## Compression
 

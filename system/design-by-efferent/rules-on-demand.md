@@ -43,15 +43,12 @@ Source: system/design-by-efferent/source/a-test-of-behavior-that-already-exists-
 Trigger: When an implementation hinge finds that the existing code already satisfies the test
 
 1. A test justifies itself in DBE by driving an implementation that did not exist.
-2. A test that passes the first time it runs, because the behavior already exists, is uncontested: no implementation is written to meet it. It confirms the behavior and designs nothing.
-3. Such a test is coverage, not a DBE design step. DBE does not take it as an outcome, and it is not part of the design loop.
-4. The tell is a no-op implementation hinge in the hinge cycle: "nothing to write — the existing code already satisfies this".
-5. At a no-op implementation hinge, do not take the outcome as a design step. Move to the next outcome, rather than writing a test to confirm this one.
-6. Behavior may already be present when its own outcome comes up. It may have come from a default value, a conveyed keyword, or a prevention written incidentally. Notice that the implementation ran ahead of its test, and do not take a confirming test as design.
-7. Coverage has value. A test of existing behavior prevents a regression in it.
-8. Coverage is a concern of testing, not of DBE. Adding such a test is a decision about coverage, and it is the engineer's.
-9. The agent may suggest the test to the engineer as an increase to coverage, to accept or decline.
-10. When the work is adding coverage, an uncontested test is expected and correct. See the "TDD designs, coverage prevents" rule.
+2. DBE does not take an uncontested test as an outcome, and it is not part of the design loop.
+3. The tell is a no-op implementation hinge in the hinge cycle: "nothing to write — the existing code already satisfies this".
+4. At a no-op implementation hinge, do not take the outcome as a design step. Move to the next outcome, rather than writing a test to confirm this one.
+5. Behavior may already be present when its own outcome comes up. It may have come from a default value, a conveyed keyword, or a prevention written incidentally. Notice that the implementation ran ahead of its test, and do not take a confirming test as design.
+6. Adding a test of existing behavior is a decision about coverage, and it is the engineer's.
+7. The agent may suggest the test to the engineer as an increase to coverage, to accept or decline.
 
 # After any implementation hinge, show the test output for the current feature
 
@@ -94,7 +91,7 @@ Trigger: When reaching the implementation hinge of an outcome
 ## The cycle is for the first implementation of a unit
 
 1. Offer the cycle only for new behavior being designed.
-2. Do not offer the cycle, or manufacture a red, when covering behavior that already exists. A red there breaks working code.
+2. Do not offer the cycle when covering behavior that already exists.
 3. When covering, the implementation hinge is degenerate. See the the-design-of-a-test-waits-at-the-hinges-coverage-included rule.
 4. Never offer the cycle and then refuse it; offer it only where it is available.
 
@@ -116,10 +113,7 @@ Trigger: When reaching the implementation hinge of an outcome
 ## The second candidate is real
 
 1. The cycle counts as a real second candidate under the present-every-prompt two-option floor.
-2. Do not present a failing implementation as an option merely to reach the two-option floor.
-3. Where the hinge has a real second implementation, surface that option.
-4. The cycle is not a substitute for searching for another implementation.
-5. Do not manufacture cosmetic options to reach the two-option floor.
+2. The cycle is not a substitute for searching for another implementation.
 
 # Attended or unattended is chosen when the work is started
 
@@ -172,12 +166,11 @@ with these options:
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
 6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
-7. ETE is the STE dictionary and writing rules, plus Waytide's reserved terms such as `hinge`, `actuation`, `cradle`, and `solubility`.
-8. Use short sentences and active voice in the plan.
-9. Use no semicolon in the plan.
-10. Put one idea in each list item.
-11. Present the plan in the response.
-12. Do not write the plan to a file. It is not a `foundation` planning record.
+7. Use short sentences and active voice in the plan.
+8. Use no semicolon in the plan.
+9. Put one idea in each list item.
+10. Present the plan in the response.
+11. Do not write the plan to a file. It is not a `foundation` planning record.
 
 # Each hinge displays the actuation as its anchor, and the contexts once
 
@@ -227,15 +220,11 @@ Trigger: When presenting the actuation hinge of an outcome
 
 1. At the actuation gate, the first gate where the cradle is set, do not commit a single actuation and proceed.
 2. Present the human a small set of candidate actuations as options to choose among.
-3. The human either chooses the option that reads as the more soluble use, or takes the free-text option.
-4. The free-text option lets the human dictate the actuation outright, or open a chat to work out what it should be.
-5. The free-text option is mandatory and always present. It covers the case where the right shape is not among the options.
-6. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the two results it rests on.
-7. Present each candidate as it would read at the use site.
-8. Offer the candidates through the selection UI, which supplies the free-text option. Do not add a free-text option of your own. See the present-every-prompt rule.
-9. A chosen candidate becomes the cradle. Where the human writes their own instead, take that actuation or enter a dialogue.
-10. Settle the actuation before writing the test file. Do not proceed to the test body until it is settled.
-11. A lone candidate is presented as every hinge presents one, beside `Explain`, with no candidate manufactured to reach two. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
+3. The human chooses the option that reads as the more soluble use.
+4. This is the form every hinge takes. See the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule for it and the two results it rests on.
+5. Present each candidate as it would read at the use site.
+6. A chosen candidate becomes the cradle. Where the human writes their own instead, take that actuation or enter a dialogue.
+7. Settle the actuation before writing the test file. Do not proceed to the test body until it is settled.
 
 ## A candidate varies what the use site states
 
@@ -275,7 +264,7 @@ Trigger: When writing a test to cover behavior that already exists
 7. Show the implementation hinge as verified.
 8. Solubility is still judged at the implementation hinge.
 9. If the test reads awkwardly against clean code, fix the test's control, actuation, or observation.
-10. Never change the implementation to resolve that awkwardness. Never break an implementation to introduce a test.
+10. Never change the implementation to resolve that awkwardness.
 
 # The first DBE gate is the actuation and an unnamed assert
 
@@ -287,12 +276,11 @@ Trigger: When starting a feature by writing its first test file
 2. The first turn produces that test file and nothing more.
 3. The first turn begins at the first gate, where responsibility first transfers to the human.
 4. The first gate puts down only the actuation and an unnamed assert.
-5. The actuation is the invocation of the unit under test, the first efferent reference, bound to an explaining variable.
+5. Bind the actuation to an explaining variable.
 6. State any inputs just above the actuation, via controls or literals.
 7. The unnamed assert is a single bare `test` block asserting the explaining variable, or the variable against a control value.
 8. Write no inner outcome `context` yet, so no outcome is named.
-9. Nest the file to mirror its folder path, per the folder-mirroring rule, with one outer `context` per path segment.
-10. Place the actuation and the unnamed `test` block inside the innermost `context`.
+9. Place the actuation and the unnamed `test` block inside the innermost `context`.
 
 ```ruby
 context "Constant" do
@@ -315,26 +303,23 @@ context "Constant" do
 end
 ```
 
-11. Assert against an explaining variable, a named local whose name states what is asserted, not against an inline expression.
-12. The explaining variable holds the result of actuating the concern.
-13. Actuate first, bind the result, then assert it.
-14. The shell of the cradle is the actuation and its unnamed assert.
-15. Once the shell is implemented, leave the test unnamed through the rest of the feature's development.
-16. Name the test only at the end of the feature.
-17. Add the outcome `context` each observation establishes at that time, giving the test-structure rule's "one inner `context` per outcome" structure.
-18. This naming step is the seam where the next feature begins.
-19. A feature in progress carries bare unnamed asserts. A finished feature carries named outcome contexts.
-20. The first gate's hinge is the actuation's shape and the truth of the one observation, not how outcomes are named or divided.
-21. Before writing the file, settle the actuation, the observation, and the controls.
-22. Do not write the implementation in the first turn.
-23. Do not pause to run the inevitably-failing test.
-24. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
-25. The implementation is the fourth hinge.
-26. The naming is the fifth hinge, at the feature's close.
-27. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
-28. Do not present the whole test file for a single accept.
-29. Settle the three test hinges first, then assemble and show the file.
-30. The exception to points 28 and 29 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
+10. The shell of the cradle is the actuation and its unnamed assert.
+11. Once the shell is implemented, leave the test unnamed through the rest of the feature's development.
+12. Name the test only at the end of the feature.
+13. Add the outcome `context` each observation establishes at that time, giving the test-structure rule's "one inner `context` per outcome" structure.
+14. This naming step is the seam where the next feature begins.
+15. A feature in progress carries bare unnamed asserts. A finished feature carries named outcome contexts.
+16. The first gate's hinge is the actuation's shape and the truth of the one observation, not how outcomes are named or divided.
+17. Before writing the file, settle the actuation, the observation, and the controls.
+18. Do not write the implementation in the first turn.
+19. Do not pause to run the inevitably-failing test.
+20. The human accepts the first turn's content in separate hinges: actuation, then observation, then controls.
+21. The implementation is the fourth hinge.
+22. The naming is the fifth hinge, at the feature's close.
+23. Propose each hinge and get it accepted before the next, per the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule.
+24. Do not present the whole test file for a single accept.
+25. Settle the three test hinges first, then assemble and show the file.
+26. The exception to points 24 and 25 is when the engineer chose unattended work at the start, per the attended-or-unattended-is-chosen-when-the-work-is-started rule.
 
 # The hinge cycle is actuation, observation, controls, implementation, and naming
 
@@ -344,7 +329,7 @@ Trigger: When starting the DBE loop on an outcome, before the first hinge
 
 1. Building the initial implementation of an outcome runs a cycle of five hinges, in the order below.
 2. Hand each hinge to the human separately. Get it accepted before moving to the next.
-3. **Actuation** is the invocation of the unit under test. It is the unit's efferent shape: name, arguments, arity, return.
+3. **Actuation** is the unit's efferent shape: name, arguments, arity, return.
 4. **Observation** is what is asserted about the result. That covers value-equality vs. identity vs. a raised error, and what the explaining variable is compared against.
 5. What the test reads is the side effect the actuation produces. A returned value is one such effect, a case rather than the rule.
 6. An actuation that returns nothing still produces an effect somewhere. One that returns a value frequently produces others beside it.
@@ -365,21 +350,15 @@ Trigger: When starting the DBE loop on an outcome, before the first hinge
 21. When an awkward implementation reveals a bad cradle, the fix goes to the cradle rather than the code.
 22. Settle the outcome taxonomy deliberately, as a design artifact. Do not treat it as a label applied after the fact.
 23. Where a hinge has genuinely distinct options, present them as options.
-24. Where a hinge has one candidate, present that one the same way.
-25. In both cases, always offer the free-text option. That is the human dictating outright, or a chat to work out the answer.
-26. Never pass a hinge without the human's acceptance.
-27. Present every hinge through the selection UI. Its built-in **Other** answer is the free-text option (see the present-every-prompt rule).
-28. An option is the artifact, not a label for it. It is the line that would be written, shown as it would be written.
-29. For example, the option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)`.
-30. A gloss may follow an option where the difference between two candidates is not visible in the code alone.
-31. A label standing in place of the artifact is not an option. For example, `Accept — assert the returned count against 3` is not an option.
-32. A hinge with one candidate is not an "accept" prompt. It shows that candidate as its option, exactly as a hinge with three shows three.
-33. Selecting the lone candidate is the acceptance. Nothing about the single case changes the form.
-34. The selection UI takes no fewer than two options. With a lone candidate, `Explain` fills the second place, per the present-every-prompt rule.
-35. Do not search for a second candidate to reach two.
-36. Do not manufacture a second candidate to avoid the appearance of a foregone conclusion.
-37. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
-38. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
+24. Never pass a hinge without the human's acceptance.
+25. An option is the artifact, not a label for it. It is the line that would be written, shown as it would be written.
+26. For example, the option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)`.
+27. A gloss may follow an option where the difference between two candidates is not visible in the code alone.
+28. A label standing in place of the artifact is not an option. For example, `Accept — assert the returned count against 3` is not an option.
+29. A hinge with one candidate is not an "accept" prompt. It shows that candidate as its option, exactly as a hinge with three shows three.
+30. Selecting the lone candidate is the acceptance. Nothing about the single case changes the form.
+31. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
+32. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 
 ## The five are named before the first one is put
 

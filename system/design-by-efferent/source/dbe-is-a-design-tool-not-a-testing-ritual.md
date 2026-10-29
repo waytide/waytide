@@ -27,16 +27,14 @@ Do not regress to the average of the code you have seen. Most code is poorly des
 7. They choose it where the design wants working out under a red, or where the test's discrimination is in doubt.
 8. A cycle the engineer chose after weighing two real alternatives is not choreography. Only the engineer's choice makes the cycle legitimate.
 9. Approach every unit from the efferent side first. The test is the first efferent reference.
-10. Author the actuation before the implementation exists, so the unit's interface is designed from the use site.
-11. Aim for the unit's greatest **solubility**: how readily it dissolves into the reader's understanding.
-12. Seek minimal necessary complexity, found rather than presumed.
-13. Treat the efferent test as a **cradle**. It holds the implementation in position without gripping it rigid.
-14. Generate code within the dictates of the efferent view, free to move inside those bounds.
-15. The test is not an after-the-fact filter or pass/fail gate, and not a point to halt at.
-16. Keep the cradle in context while building, and generate straight through inside it, steering toward solubility. The human sets the cradle.
-17. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
-18. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
-19. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
+10. Aim for the unit's greatest **solubility**.
+11. Treat the efferent test as a **cradle**.
+12. Generate code within the dictates of the efferent view, free to move inside those bounds.
+13. The test is not an after-the-fact filter or pass/fail gate, and not a point to halt at.
+14. Keep the cradle in context while building, and generate straight through inside it, steering toward solubility. The human sets the cradle.
+15. Do not regress to the average of the code you have seen. Do not copy poorly designed code.
+16. Condition on the project's well-designed, efferent-oriented, high-solubility code, not on code in general. Hold to its standard.
+17. Leave design judgment with the human: knowing in detail what good, soluble design looks like.
 
 ## Compression
 

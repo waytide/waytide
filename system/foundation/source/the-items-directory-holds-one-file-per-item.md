@@ -145,8 +145,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
 54. Answer a question that runs against what an item settled, and record the change.
 55. Do not refuse to answer until the item is amended.
-56. Reconcile a settled item against later work.
-57. Never regenerate a settled item from later work. Where one item names another as what it realizes, the named item is the source of truth.
+56. Where one item names another as what it realizes, the named item is the source of truth.
 
 ## Compression
 

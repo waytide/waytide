@@ -2,18 +2,17 @@
 
 Source: system/testing/source/a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables.md
 
-1. A `test` block holds exactly one assertion and nothing else, per the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule.
-2. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
-3. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
-4. Local instrumentation means an explaining variable of the outcome's own.
-5. Local instrumentation also means a `comment` or `detail` specific to that outcome.
-6. Also use a named `context` where it is a leading `When …` condition, promoted to a context per the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
-7. The `When` exception covers only a leading `When …`.
-8. A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test.
-9. An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"` and `"Located when the response carries a location"`.
-10. Such a name is written as a directly named test, as in `test "Created when the file is accepted" do …`.
-11. When the outcome is a single assertion over values already in scope, name the `test` directly and use no context.
-12. Values already in scope are the shared controls and actuation at the top of the feature context.
+1. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
+2. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
+3. Local instrumentation means an explaining variable of the outcome's own.
+4. Local instrumentation also means a `comment` or `detail` specific to that outcome.
+5. Also use a named `context` where it is a leading `When …` condition, promoted to a context per the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
+6. The `When` exception covers only a leading `When …`.
+7. A context named `"When the file is empty"` stays a context, with `test "Fails"` inside, even though it holds nothing but the test.
+8. An outcome name that merely contains "when" is not a condition context. Examples are `"Created when the file is accepted"` and `"Located when the response carries a location"`.
+9. Such a name is written as a directly named test, as in `test "Created when the file is accepted" do …`.
+10. When the outcome is a single assertion over values already in scope, name the `test` directly and use no context.
+11. Values already in scope are the shared controls and actuation.
 
 ```ruby
 # No local setup needed → named test, no context
@@ -31,18 +30,18 @@ context "Status" do
 end
 ```
 
-13. When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test.
-14. Do not flatten a context that is a leading `When …` condition.
-15. This is how the tests the agent writes are shaped. It is not a ban on a context that holds only a test.
-16. Where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead.
-17. The warning names the file and the context. It says that the context holds only a test, whose name could sit on the test.
-18. The warning offers two choices: flatten the context, or suppress these warnings from then on.
-19. Several such contexts found in one turn take one warning.
-20. Flatten only on the engineer's choice.
-21. On the choice to suppress, write `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`. It says that this project gives no warning of a context that holds only a test.
-22. Local rules are read at every session start, so the suppression holds from then on. Deleting the file restores the warnings.
-23. Where that local rule exists, give no warning. The tests the agent writes still take this rule's shape.
-24. A leading `When …` condition context is never warned of.
+12. When flattening an over-nested test, flatten only where there is no code between the context and the `test`, so the context holds nothing but the test.
+13. Do not flatten a context that is a leading `When …` condition.
+14. This is how the tests the agent writes are shaped. It is not a ban on a context that holds only a test.
+15. Where the agent finds such a context, in a test it reads or is asked to change, it does not flatten it on its own. It warns the engineer instead.
+16. The warning names the file and the context. It says that the context holds only a test, whose name could sit on the test.
+17. The warning offers two choices: flatten the context, or suppress these warnings from then on.
+18. Several such contexts found in one turn take one warning.
+19. Flatten only on the engineer's choice.
+20. On the choice to suppress, write `local/rules/<timestamp>-a-lone-test-context-is-not-warned-about.md`. It says that this project gives no warning of a context that holds only a test.
+21. Local rules are read at every session start, so the suppression holds from then on. Deleting the file restores the warnings.
+22. Where that local rule exists, give no warning. The tests the agent writes still take this rule's shape.
+23. A leading `When …` condition context is never warned of.
 
 # A control-built test value is prefixed with control_
 
@@ -108,9 +107,8 @@ Source: system/testing/source/a-high-level-context-names-a-behavior-never-a-meth
 2. The root test sits directly under the unit's own context.
 3. The root test's outcome context carries the name of the unit's central behavior.
 4. Each subsequent test takes a second-level context named for the behavior it covers.
-5. Contexts mirror the file path under `test/automated/`, per the test-context-nesting-mirrors-the-folder-hierarchy rule. Do not drop a context and keep its path segment.
-6. A root test lives at `test/automated/<unit>.rb`.
-7. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
+5. A root test lives at `test/automated/<unit>.rb`.
+6. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
 
 # A precondition documents the factors that decide a test's outcome, and its predicate reads inline
 
@@ -250,11 +248,9 @@ context "Status" do
 end
 ```
 
-18. Name the derivation that produces the asserted value, and bind it on its own line.
-19. The `test` block asserts the variable, never an inline expression.
-20. `comment` narrates scenario-wide values near the actuation.
-21. `detail` narrates a value local to one inner context.
-22. Each `test` block holds one assertion, and that assertion confirms the outcome its inner context's title states.
+18. `comment` narrates scenario-wide values near the actuation.
+19. `detail` narrates a value local to one inner context.
+20. Each `test` block's assertion confirms the outcome its inner context's title states.
 
 # A test block holds only the assertion, and its values are declared in the enclosing context
 
@@ -292,11 +288,6 @@ context "..." do
   end
 end
 ```
-
-## The three parts govern a `test` block, and a precondition is not one
-
-1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition, which reads inline.
-2. A precondition is the one stated exception to these parts. The precondition rule states what it is, and why these reasons do not reach it.
 
 # Do not test the platform
 

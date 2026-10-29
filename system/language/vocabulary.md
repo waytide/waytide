@@ -84,20 +84,18 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 ## Terms
 
-1. **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive. The ideal is immediate comprehension with minimal interpretive work: knowledge at a glance. It is the design quality a unit is judged against, and the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
+1. **solubility** — the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
 2. **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. `caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view. A general design-vocabulary term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
-3. **Eventide Technical English (ETE)** — Waytide's implementation of ASD-STE100 Simplified Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms and its substitutions, in the precedence the `ete/` rules state. The rules are in `waytide/system/language/ete/`. STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.
-4. `Say it in ETE` is the instruction to write in ETE. `Say it in STE` is different: it asks for the raw standard, which forbids `efferent`, `cradle`, `hinge`, and every other term Waytide reserved.
-5. **actuation** — the invocation of a unit from its use site. STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing, not its invocation from a use site. Technical noun, ETE engineering, design, process, and method.
-6. **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. It is the extant word of structural design and software design, not a Waytide coinage. STE: not approved. The STE dictionary gives PRESERVATION, a technical noun for a maintenance procedure, which does not carry this. Technical verb, ETE engineering, design, process, and method.
-7. **moot** — no longer bearing on anything, because circumstances moved rather than because a judgment was reached. A moot question is one whose answer would change nothing now. It is the adjective for the condition the state word **Lapsed** names in a record. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
+3. **Eventide Technical English (ETE)** — its rules are in `waytide/system/language/ete/`. STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.
+4. **actuation** — the invocation of a unit from its use site. STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing, not its invocation from a use site. Technical noun, ETE engineering, design, process, and method.
+5. **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. It is the extant word of structural design and software design, not a Waytide coinage. STE: not approved. The STE dictionary gives PRESERVATION, a technical noun for a maintenance procedure, which does not carry this. Technical verb, ETE engineering, design, process, and method.
+6. **moot** — no longer bearing on anything, because circumstances moved rather than because a judgment was reached. A moot question is one whose answer would change nothing now. It is the adjective for the condition the state word **Lapsed** names in a record. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
 
 ## Substitutions
 
 1. Each substitution puts the literal term in place of a slang, imported-jargon, or figurative one, and the unambiguous term in place of one that leaves a reader to guess which system it belongs to.
-2. When the impulse is a **Don't use** word, write the **Use** term. That holds in names, prose, comments, commit messages, logs, loop records, and dialogue.
-3. Domain-specific swaps live in their own package's vocabulary, as `verified`/`prevent` do in `testing`.
-4. When a new substitution is settled, add a row to the table.
+2. A substitution holds in names, prose, comments, commit messages, logs, loop records, and dialogue.
+3. When a new substitution is settled, add a row to the table.
 
 | Use | Don't use | Meaning |
 |---|---|---|

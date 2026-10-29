@@ -56,9 +56,8 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 2. The root test sits directly under the unit's own context.
 3. The root test's outcome context carries the name of the unit's central behavior.
 4. Each subsequent test takes a second-level context named for the behavior it covers.
-5. Contexts mirror the file path under `test/automated/`, per the test-context-nesting-mirrors-the-folder-hierarchy rule. Do not drop a context and keep its path segment.
-6. A root test lives at `test/automated/<unit>.rb`.
-7. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
+5. A root test lives at `test/automated/<unit>.rb`.
+6. A subsequent behavior lives at `test/automated/<unit>/<behavior>.rb`.
 
 ## Compression
 

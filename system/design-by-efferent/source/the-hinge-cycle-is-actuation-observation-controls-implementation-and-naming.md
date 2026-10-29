@@ -66,7 +66,7 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 
 1. Building the initial implementation of an outcome runs a cycle of five hinges, in the order below.
 2. Hand each hinge to the human separately. Get it accepted before moving to the next.
-3. **Actuation** is the invocation of the unit under test. It is the unit's efferent shape: name, arguments, arity, return.
+3. **Actuation** is the unit's efferent shape: name, arguments, arity, return.
 4. **Observation** is what is asserted about the result. That covers value-equality vs. identity vs. a raised error, and what the explaining variable is compared against.
 5. What the test reads is the side effect the actuation produces. A returned value is one such effect, a case rather than the rule.
 6. An actuation that returns nothing still produces an effect somewhere. One that returns a value frequently produces others beside it.
@@ -87,21 +87,15 @@ This is the **initial**-implementation cycle for one outcome. Looping to further
 21. When an awkward implementation reveals a bad cradle, the fix goes to the cradle rather than the code.
 22. Settle the outcome taxonomy deliberately, as a design artifact. Do not treat it as a label applied after the fact.
 23. Where a hinge has genuinely distinct options, present them as options.
-24. Where a hinge has one candidate, present that one the same way.
-25. In both cases, always offer the free-text option. That is the human dictating outright, or a chat to work out the answer.
-26. Never pass a hinge without the human's acceptance.
-27. Present every hinge through the selection UI. Its built-in **Other** answer is the free-text option (see the present-every-prompt rule).
-28. An option is the artifact, not a label for it. It is the line that would be written, shown as it would be written.
-29. For example, the option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)`.
-30. A gloss may follow an option where the difference between two candidates is not visible in the code alone.
-31. A label standing in place of the artifact is not an option. For example, `Accept — assert the returned count against 3` is not an option.
-32. A hinge with one candidate is not an "accept" prompt. It shows that candidate as its option, exactly as a hinge with three shows three.
-33. Selecting the lone candidate is the acceptance. Nothing about the single case changes the form.
-34. The selection UI takes no fewer than two options. With a lone candidate, `Explain` fills the second place, per the present-every-prompt rule.
-35. Do not search for a second candidate to reach two.
-36. Do not manufacture a second candidate to avoid the appearance of a foregone conclusion.
-37. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
-38. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
+24. Never pass a hinge without the human's acceptance.
+25. An option is the artifact, not a label for it. It is the line that would be written, shown as it would be written.
+26. For example, the option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)`.
+27. A gloss may follow an option where the difference between two candidates is not visible in the code alone.
+28. A label standing in place of the artifact is not an option. For example, `Accept — assert the returned count against 3` is not an option.
+29. A hinge with one candidate is not an "accept" prompt. It shows that candidate as its option, exactly as a hinge with three shows three.
+30. Selecting the lone candidate is the acceptance. Nothing about the single case changes the form.
+31. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
+32. What goes on screen at each hinge is the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule. That is the actuation as the anchor, and the contexts shown once.
 
 ## The five are named before the first one is put
 

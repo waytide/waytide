@@ -60,7 +60,7 @@ Carry out any of that when the engineer asks for it, and report what happened on
 5. To tell them apart, ask whether the sentence describes something that happened.
 6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
 7. Raising downstream state unbidden stays forbidden.
-8. The session-start notice. The harness emits it, it reports only the current project's open experiments and features, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
+8. The session-start notice. The harness emits it, it reports only on the current project, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
 
 ## Compression
 

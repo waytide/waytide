@@ -39,8 +39,7 @@ end
 ```
 
 6. Several conditions over the same actuation may sit as sibling `When …` contexts, each with its own `test "Fails"`.
-7. "Fails" is a plain outcome name, not an "Is" case. It does not conflict with the "Is"-naming rule, which reserves "Is" for value-equals.
-8. An error test always takes an enclosing context, because the context carries the condition. The a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables rule warns of a context that holds only a test. It never warns of a leading `When …` context, such as an error test's.
+7. An error test always takes an enclosing context, because the context carries the condition.
 
 ## Compression
 

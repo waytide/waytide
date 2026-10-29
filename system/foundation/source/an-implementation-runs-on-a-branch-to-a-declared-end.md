@@ -224,10 +224,9 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 ## The agent never raises the end of an `[experiment]`
 
 1. Do not offer to conclude, affirm, refute, or merge one: not as a next step, an option, or a precondition.
-2. The precondition is the form that slips through, as in *this cannot be published until it merges*.
-3. Report what is settled and what is open, and stop.
-4. An experiment's length is the engineer's judgment, not readable from the work done.
-5. A `[feature]` is not covered, because its completion is ordinary.
+2. Report what is settled and what is open, and stop.
+3. An experiment's length is the engineer's judgment, not readable from the work done.
+4. A `[feature]` is not covered, because its completion is ordinary.
 
 ## Drift
 
@@ -237,9 +236,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 4. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question.
 5. The watch is a practice, not a guarantee.
 6. Under a worktree there is nothing to watch.
-7. The session-start notice reports every implementation not concluded.
-8. A `[feature]` has no watch, since starting other work during one is ordinary.
-9. A forgotten feature is reported by the same notice.
+7. A `[feature]` has no watch, since starting other work during one is ordinary.
 
 ## Compression
 

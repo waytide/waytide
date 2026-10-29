@@ -36,7 +36,7 @@ When adding coverage for behavior that already exists, all five are in play:
 7. Show the implementation hinge as verified.
 8. Solubility is still judged at the implementation hinge.
 9. If the test reads awkwardly against clean code, fix the test's control, actuation, or observation.
-10. Never change the implementation to resolve that awkwardness. Never break an implementation to introduce a test.
+10. Never change the implementation to resolve that awkwardness.
 
 ## Compression
 

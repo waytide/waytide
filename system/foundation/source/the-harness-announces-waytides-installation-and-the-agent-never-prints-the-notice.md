@@ -238,24 +238,21 @@ To load them now, type: load waytide.
 5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
-8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
-10. A package's ON DEMAND section lists rules the loader does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
-11. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
-12. Each is named whether or not it exists, and its absence is ordinary.
-13. Name the other working directories and leave them out.
-14. Do not print the startup display.
-15. Print no package count.
-16. Then wait for the engineer's request.
-17. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-18. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-19. This rule does not restate the directory list.
-20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-21. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-22. Nothing verifies the read. The hook cannot observe what the agent does.
-23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-25. The work honoring the rules is the verification.
+8. Read no rule file one by one.
+9. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and never name `local/` as a whole.
+10. Name the other working directories.
+11. Do not print the startup display.
+12. Print no package count.
+13. Then wait for the engineer's request.
+14. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+15. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+16. This rule does not restate the directory list.
+17. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+18. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+19. Nothing verifies the read. The hook cannot observe what the agent does.
+20. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+21. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+22. The work honoring the rules is the verification.
 
 ## The status line
 

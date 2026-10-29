@@ -50,28 +50,26 @@ The two are different acts. A **substitution** replaces a word Waytide rejects. 
 8. For a word the STE dictionary does not approve, it names an approved alternative.
 9. Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
 10. Keep Waytide's word where the approved word means something else.
-11. Reserve that word as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`.
-12. Record what the STE dictionary says about the reserved word.
-13. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
-14. A word the dictionary does not list is not a defect.
-15. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
-16. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
-17. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention.
-18. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
-19. A substitution replaces a word Waytide rejects.
-20. A reservation keeps a word STE rejects.
-21. A substitution and a reservation are different acts, and `conform` is both.
-22. An absent word and a word that is not approved differ.
-23. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
-24. A word that is not approved is a disagreement: the standard considered it and named something else.
-25. A reservation of a word that is not approved rejects the standard's decision.
-26. So the record says which case a reserved term is in.
-27. `reserve` is absent.
-28. `discontinue` is not approved, and the dictionary gives `STOP`.
-29. Three rules beside this one carry ETE's departures from the standard.
-30. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
-31. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
-32. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
+11. Reserve that word in the package's `vocabulary.md`.
+12. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+13. A word the dictionary does not list is not a defect.
+14. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+15. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
+16. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
+17. A substitution replaces a word Waytide rejects.
+18. A reservation keeps a word STE rejects.
+19. A substitution and a reservation are different acts, and `conform` is both.
+20. An absent word and a word that is not approved differ.
+21. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
+22. A word that is not approved is a disagreement: the standard considered it and named something else.
+23. A reservation of a word that is not approved rejects the standard's decision.
+24. So the record says which case a reserved term is in.
+25. `reserve` is absent.
+26. `discontinue` is not approved, and the dictionary gives `STOP`.
+27. Three rules beside this one carry ETE's departures from the standard.
+28. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
+29. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
+30. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
 
 ## Compression
 

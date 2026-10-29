@@ -67,9 +67,8 @@ Name the file and write the datetime line to match the answer. Settle the date f
 3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
 4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
 5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt rule.
-6. The harness's own free-text option remains for anything else.
-7. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
-8. Name the file and write the datetime line to match the answer.
+6. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
+7. Name the file and write the datetime line to match the answer.
 
 ## Compression
 

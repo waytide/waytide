@@ -44,8 +44,8 @@ Reserve the word and stop there. Conform existing prose to it only where that is
 8. Or the word is not approved, and the dictionary names the approved word that replaces it.
 9. Or the word is absent from the STE dictionary.
 10. Step 2: ask what the word names. Do not skip this step.
-11. A word that names something in the subject field is terminology. Continue the sequence.
-12. A word that qualifies, joins two statements, or does grammatical work is ordinary vocabulary. Stop and write no entry, per the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule.
+11. If the word is terminology, continue the sequence.
+12. If the word is ordinary vocabulary, stop.
 13. Step 3: decide noun or verb.
 14. A word used both ways takes a category for each. These are two decisions, not one.
 15. STE Rule 1.7 forbids a technical noun used as a verb. STE Rule 1.13 forbids a technical verb used as a noun.
@@ -55,7 +55,7 @@ Reserve the word and stop there. Conform existing prose to it only where that is
 19. Do not reach step 5 until an STE category has been tried and refused.
 20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
 21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
-22. The entry gives the definition, what the STE dictionary says about the word, and the category.
+22. The entry gives the definition.
 23. The engineer decides the term's category, because a term is a design decision.
 24. Put the category to the engineer through the selection UI.
 25. Bring the step 1 lookup already done, and name the candidate categories.

@@ -34,7 +34,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 12. Store none of it: not the bullets, not the count, and not the date span.
 13. There is no `TIMELINE.md`, and none is written.
 14. Write nothing to a file.
-15. The view is a projection, in the sense of the foundation package's vocabulary. It reads the entries without destroying them and is regenerated, not maintained.
+15. The view is a projection, in the sense of the foundation package's vocabulary.
 
 ## Compression
 

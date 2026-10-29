@@ -65,7 +65,7 @@ Source: system/language/source/communicate-plainly-and-name-the-actual-thing.md
 4. Say the thing itself — "the notes copied into a project when it installs a package," not "the distributed tier."
 5. Do not point back to an earlier list item by its number or position ("#2", "option 3", "the second one", "the latter").
 6. Name the thing again each time — "the show-the-test merge," not "#2" — even at the cost of some repetition.
-7. The engineer may refer to a list item by its number. Number a list the engineer may refer back to.
+7. The engineer may refer to a list item by its number.
 8. When the engineer writes a number such as *#2*, name what it refers to before acting on it, so the reference is confirmed.
 9. Use a compressed term ("distributed", "atomic records") only once its plain meaning has been stated.
 10. Do not lead with a compressed term as though the reader already shares it.
@@ -118,28 +118,26 @@ Source: system/language/source/ete/waytide-keeps-its-word-where-the-ste-word-mea
 8. For a word the STE dictionary does not approve, it names an approved alternative.
 9. Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
 10. Keep Waytide's word where the approved word means something else.
-11. Reserve that word as a technical noun or a technical verb, in a category its entry names, in the package's `vocabulary.md`.
-12. Record what the STE dictionary says about the reserved word.
-13. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
-14. A word the dictionary does not list is not a defect.
-15. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
-16. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
-17. The `language` vocabulary discontinues `sweep` for `conform`: to bring code or prose into line with a convention.
-18. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
-19. A substitution replaces a word Waytide rejects.
-20. A reservation keeps a word STE rejects.
-21. A substitution and a reservation are different acts, and `conform` is both.
-22. An absent word and a word that is not approved differ.
-23. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
-24. A word that is not approved is a disagreement: the standard considered it and named something else.
-25. A reservation of a word that is not approved rejects the standard's decision.
-26. So the record says which case a reserved term is in.
-27. `reserve` is absent.
-28. `discontinue` is not approved, and the dictionary gives `STOP`.
-29. Three rules beside this one carry ETE's departures from the standard.
-30. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
-31. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
-32. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
+11. Reserve that word in the package's `vocabulary.md`.
+12. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
+13. A word the dictionary does not list is not a defect.
+14. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
+15. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
+16. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
+17. A substitution replaces a word Waytide rejects.
+18. A reservation keeps a word STE rejects.
+19. A substitution and a reservation are different acts, and `conform` is both.
+20. An absent word and a word that is not approved differ.
+21. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
+22. A word that is not approved is a disagreement: the standard considered it and named something else.
+23. A reservation of a word that is not approved rejects the standard's decision.
+24. So the record says which case a reserved term is in.
+25. `reserve` is absent.
+26. `discontinue` is not approved, and the dictionary gives `STOP`.
+27. Three rules beside this one carry ETE's departures from the standard.
+28. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
+29. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
+30. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
 
 # Waytide prose conforms to the STE writing rules
 
@@ -149,15 +147,11 @@ Source: system/language/source/ete/waytide-prose-conforms-to-the-ste-writing-rul
 2. These rules bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers.
 3. This rule holds the STE rules Waytide breaks most.
 4. When another STE rule is found broken in use, add it to the table. Record beside it the phrase that broke it.
-5. This rule is part of Eventide Technical English, or ETE. ETE is Waytide's implementation of the standard.
+5. This rule is part of Eventide Technical English, or ETE.
 6. The waytide-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Waytide's vocabulary decides first, and the standard second.
-7. Three rules carry ETE's departures from the standard. Each names the STE rule it contradicts.
-8. The ete-declares-its-own-categories rule adds five categories of Waytide's own.
-9. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives.
-10. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone.
-11. Check a phrase against Waytide's vocabulary first.
-12. Then check it against the STE dictionary.
-13. Then check it against the writing rules below.
+7. Check a phrase against Waytide's vocabulary first.
+8. Then check it against the STE dictionary.
+9. Then check it against the writing rules below.
 
 ## The writing rules
 
@@ -176,7 +170,7 @@ Source: system/language/source/ete/waytide-prose-conforms-to-the-ste-writing-rul
 
 ### `swept across 20 files`
 
-1. **`swept`**: the `language` vocabulary discontinues `sweep` for `conform`. The STE dictionary replaces `sweep (v)` with `SCAN`, which does not carry the meaning either.
+1. **`swept`**: the STE dictionary replaces `sweep (v)` with `SCAN`, which does not carry the meaning.
 2. **`across`**: `ACROSS (prep)` is approved only as *from one side to the other*. STE Rule 1.3 forbids other meanings. Where `across` would mean *throughout*, write `in`, as in `in 20 files`.
 3. **`was swept`**: this is the passive with a known agent, against STE Rule 3.6.
 4. **The semicolon** in the sentence that held it is against STE Rule 8.1.
@@ -276,19 +270,9 @@ Source: system/language/source/no-slang.md
 4. Do not use a figurative or slang term when a literal one states the thing directly.
 5. Each discontinued figurative term has a literal replacement, and each replacement is an entry in the `language` vocabulary.
 6. Use the literal replacement, as its entry in the `language` vocabulary defines it.
-7. Replace **wrap / wrapper** with **mediates**.
-8. Replace **sweep** with **conform**.
-9. Replace **"does that land?"** with plain phrasing, such as "is that right?".
-10. Replace **arm** with **scenario**.
-11. Replace **cut** with **increment**.
-12. Replace **in flight** with **in progress**.
-13. Replace **owed** with **required**.
-14. Replace **choice** with **selection** for what is picked at a prompt.
-15. Replace **choice** with **decision** for the matter settled.
-16. Replace **earns its keep / earns its place** with **justified / justifiable**.
-17. A historical record that quotes a decision keeps the original word.
-18. Only live, forward-looking prose conforms.
-19. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
+7. A historical record that quotes a decision keeps the original word.
+8. Only live, forward-looking prose conforms.
+9. This rule governs phrasing in prose and conversation. The name-concepts-literally-not-by-analogy-code-or-jargon rule governs naming a concept.
 
 # Solubility is how readily a unit dissolves into the reader's understanding
 

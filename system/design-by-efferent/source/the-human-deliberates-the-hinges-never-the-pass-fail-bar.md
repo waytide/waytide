@@ -23,17 +23,16 @@ The loop, by turn:
 ## Compressed
 
 1. In DBE, place the human's attention only at the hinges, where design judgment lives.
-2. A hinge is a subtle, load-bearing decision the design turns on (see the DBE vocabulary).
-3. The original pair of hinges is setting the cradle (the efferent shape of the actuation) and judging solubility (the result).
-4. The loop waits at the hinges so the human can deliberate them.
-5. The agent does all code generation between hinges straight through.
-6. Never make the human wait at a red or green bar.
-7. Never deliberate the pass/fail bar.
-8. The AI generates. The human deliberates.
-9. The human owns the efferent design, meaning what the actuation looks like.
-10. The human owns the solubility verdict on what comes back.
-11. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
-12. Let the AI fill everything other than the actuation and the solubility verdict.
+2. The original pair of hinges is setting the cradle (the efferent shape of the actuation) and judging solubility (the result).
+3. The loop waits at the hinges so the human can deliberate them.
+4. The agent does all code generation between hinges straight through.
+5. Never make the human wait at a red or green bar.
+6. Never deliberate the pass/fail bar.
+7. The AI generates. The human deliberates.
+8. The human owns the efferent design, meaning what the actuation looks like.
+9. The human owns the solubility verdict on what comes back.
+10. The AI owns generating within the cradle: the test scaffolding and the implementation, steered toward solubility.
+11. Let the AI fill everything other than the actuation and the solubility verdict.
 
 ## The loop, by turn
 

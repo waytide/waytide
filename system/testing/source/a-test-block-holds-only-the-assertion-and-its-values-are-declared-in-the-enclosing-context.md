@@ -70,11 +70,6 @@ context "..." do
 end
 ```
 
-## The three parts govern a `test` block, and a precondition is not one
-
-1. Points 1 through 11 govern `test` blocks only. They do not apply to a precondition, which reads inline.
-2. A precondition is the one stated exception to these parts. The precondition rule states what it is, and why these reasons do not reach it.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.24, change 0.64, solubility 53 → 80, clarity 0.52 → 0.88, 13 directives, 13 kept, 0 less precise, 0 lost

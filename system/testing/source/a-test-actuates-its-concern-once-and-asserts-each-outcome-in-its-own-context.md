@@ -76,11 +76,9 @@ context "Status" do
 end
 ```
 
-18. Name the derivation that produces the asserted value, and bind it on its own line.
-19. The `test` block asserts the variable, never an inline expression.
-20. `comment` narrates scenario-wide values near the actuation.
-21. `detail` narrates a value local to one inner context.
-22. Each `test` block holds one assertion, and that assertion confirms the outcome its inner context's title states.
+18. `comment` narrates scenario-wide values near the actuation.
+19. `detail` narrates a value local to one inner context.
+20. Each `test` block's assertion confirms the outcome its inner context's title states.
 
 ## Compression
 

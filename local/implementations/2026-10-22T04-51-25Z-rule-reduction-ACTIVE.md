@@ -2352,6 +2352,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 The read fell from 177,387 characters to 177,172.
 
+### Single statement — repetitions whose origin is pre-loaded are removed, 2026-10-29
+
+**At the engineer's direction, a repetition is removed from a compressed text only where the instruction's origin, the rule it belongs to, is pre-loaded.** Where the origin is on-demand, its repetitions in pre-loaded rules stay, since they are the only copy at session start. The full texts are unchanged.
+
+- **The full inventory holds 86 instructions**, of which 44 have a pre-loaded origin. Their repetitions stood in 45 files.
+- **82 repetitions were removed and 11 kept.** Each removal was made only after the origin's compressed text was confirmed to state the same thing. A passage that also said something of its own file's subject kept that part. `local/vocabulary.md` has no compressed text, so it was left.
+- **The read fell from 177,172 characters to 169,785.** The tests pass.
+
+**Three vocabulary terms lost their definitions from their compressed entries**: *solubility* in the language vocabulary, and *controls* and *precondition* in the testing vocabulary. Each is defined in full in a pre-loaded rule, which the inventory took as the origin. This is put to the engineer.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5585,3 +5595,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:27 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:17 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:10:08 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:29:10 PM PT

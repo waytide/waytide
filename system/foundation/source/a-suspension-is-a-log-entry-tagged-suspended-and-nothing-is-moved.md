@@ -53,7 +53,7 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 1. Like every log entry, the title states what was suspended and why.
 2. The why gives what it cost and what it stopped buying.
 3. Reconcile whatever cites the removed thing. The entry names, in its own clause, what else changed.
-4. For example, removing a rule means dropping it from the `Related:` lists that cite it and from the package README's summary, per the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule.
+4. For example, removing a rule means dropping it from the package README's summary.
 5. The suspended thing's file is removed in the same commit as the entry.
 6. Git holds the removed text, reachable by path from `master`'s history.
 

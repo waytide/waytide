@@ -42,7 +42,7 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 
 1. A vocabulary entry states the term's current meaning and stops there.
 2. Write the entry in the present tense, saying what the term means now.
-3. Give the STE note, the category, and any distinction against a neighbouring term.
+3. Give any distinction against a neighbouring term.
 4. An entry records no lifecycle history.
 5. Do not record what the term used to name, or what directory it used to sit in.
 6. Do not record when the term changed, or what governed it before.
@@ -64,9 +64,8 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 ## Where the history goes
 
 1. History goes to the log.
-2. A discontinuation, under the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule's own heading, is not an exception.
-3. A discontinuation entry names the word and says it is not used.
-4. It does not narrate when the word was dropped or what carried it before.
+2. A discontinuation is not an exception.
+3. It does not narrate when the word was dropped or what carried it before.
 
 ## Compression
 

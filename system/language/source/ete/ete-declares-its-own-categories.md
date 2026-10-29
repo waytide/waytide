@@ -78,10 +78,8 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 4. Try an STE category first.
 5. Use an ETE category only for a word that no STE category holds.
 6. Reserve words one at a time.
-7. The word's vocabulary entry names its category.
-8. The same entry states what the STE dictionary says about the word.
-9. A word with no entry is not reserved.
-10. An ETE category is not a standing permission to use the words that fit it.
+7. A word with no entry is not reserved.
+8. An ETE category is not a standing permission to use the words that fit it.
 
 ## Compression
 

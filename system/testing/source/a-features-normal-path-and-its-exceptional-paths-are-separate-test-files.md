@@ -21,21 +21,17 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 1. A feature's normal path is its ordinary, non-raising course through it.
 2. The normal path's test and each exceptional path's test live in separate files.
 3. A feature with one normal path and one exceptional path is two files. It is not one file with two contexts.
-4. A test file actuates the concern once, at the top of the feature context. See the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule.
-5. Each outcome of that one actuation is asserted in its own nested context.
-6. An exceptional path cannot share the normal path's actuation. Its actuation is inside an `assert_raises` and produces no result to observe.
-7. Naming follows the existing file conventions.
-8. Where a feature has a normal path and one or more exceptional paths, the feature takes a folder.
-9. Each file in the folder is named for the case it distinguishes. See the a-feature-with-one-case-has-one-test-file-named-for-the-feature rule.
-10. The normal-path file is named for the feature.
-11. Each exceptional-path file is named for the condition under which the actuation fails.
-12. That condition is also promoted to a `context` inside the exceptional-path file.
-13. The test in that context is named `Fails`. See the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
-14. An exceptional-path file holds only its one exceptional case.
-15. An exceptional-path file does not re-prove the normal path.
-16. Controls in an exceptional-path file that also appear on the normal path serve only to make the failure discriminating.
-17. Discriminating means the raised error can be told from a different failure of the same class.
-18. Do not add a second, raising actuation to a normal-path file.
+4. An exceptional path cannot share the normal path's actuation. Its actuation is inside an `assert_raises` and produces no result to observe.
+5. Naming follows the existing file conventions.
+6. The normal-path file is named for the feature.
+7. Each exceptional-path file is named for the condition under which the actuation fails.
+8. That condition is also promoted to a `context` inside the exceptional-path file.
+9. The test in that context is named `Fails`. See the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
+10. An exceptional-path file holds only its one exceptional case.
+11. An exceptional-path file does not re-prove the normal path.
+12. Controls in an exceptional-path file that also appear on the normal path serve only to make the failure discriminating.
+13. Discriminating means the raised error can be told from a different failure of the same class.
+14. Do not add a second, raising actuation to a normal-path file.
 
 ## Compression
 
