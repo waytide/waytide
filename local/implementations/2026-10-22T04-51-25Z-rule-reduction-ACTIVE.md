@@ -18,7 +18,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 **Changed 2026-10-29, before phase 3's work:** phase 3 is **triggers** — `experiment/worktree/rule-reduction.triggers`. Can a trigger index, always loaded, stand in for pre-loading part of the rules, with sessions behaving the same?
 4. **re-read-after-compaction** — `experiment/worktree/rule-reduction.re-read-after-compaction`. Added 2026-10-29. After the context is compacted, does the session read the rules again in full, rather than keep them only as a summary? Finding #10.
-5. **title-display** — `experiment/worktree/rule-reduction.title-display`. Added 2026-10-29. Can the engineer see each rule's title as the rules load, without the agent receiving the list?
+5. **title-display** — `experiment/worktree/rule-reduction.title-display`. Added 2026-10-29. Can the engineer see each rule's title as the rules load, without the agent receiving the list? **Abandoned 2026-10-29**, at the engineer's decision not to pursue a printed index of the rules.
 6. **active-packages-only** — `experiment/worktree/rule-reduction.active-packages-only`. Added 2026-10-29. Does reading only a project's active packages, and no deactivated one, keep sessions behaving the same while the read shrinks?
 7. **local-compression** — `experiment/worktree/rule-reduction.local-compression`. Added 2026-10-29. Can the local rules and the vocabularies be compressed as the package rules were, with sessions behaving the same?
 
@@ -2191,6 +2191,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 ### Phase 4, re-read-after-compaction, is affirmed — 2026-10-29
 
 **The engineer affirmed the re-read-after-compaction phase.** After a compaction, the session-start hook tells the agent that the rules survive only as the compaction's summary, and to read them again before its next act. In testing, every session did, against 3 of 20 before.
+
+### Phase 5, title-display, is abandoned — 2026-10-29
+
+**At the engineer's direction, phase 5 is abandoned before its work.** The engineer had already decided not to pursue a printed index of the rules: Claude Code has no surface that shows a list in place, and a printed list of 108 titles scrolls. That left the phase nothing to try.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5405,3 +5409,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 10:19:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:07:39 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:26:15 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:37:21 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:39:24 AM PT
