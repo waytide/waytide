@@ -1,6 +1,6 @@
 # A mistake is an item type
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [idea]
 
 **An item may be a mistake: something done wrong, recorded with what went wrong and why.** Where a problem is a difficulty that may have no author, a mistake is an act that should have gone otherwise, and recording it keeps what was learned from it.
@@ -18,3 +18,4 @@ As the engineer first stated it: "Idea: Mistake as an item type"
 ---
 
 Authored by Scott Bellware on Sun Oct 25 2026 at 10:44:22 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:56:18 PM PT
