@@ -21,6 +21,11 @@ One at a time, in this order, each on its own branch from the experiment's.
 5. **title-display** — `experiment/worktree/rule-reduction.title-display`. Added 2026-10-29. Can the engineer see each rule's title as the rules load, without the agent receiving the list? **Abandoned 2026-10-29**, at the engineer's decision not to pursue a printed index of the rules.
 6. **active-packages-only** — `experiment/worktree/rule-reduction.active-packages-only`. Added 2026-10-29. Does reading only a project's active packages, and no deactivated one, keep sessions behaving the same while the read shrinks?
 7. **local-compression** — `experiment/worktree/rule-reduction.local-compression`. Added 2026-10-29. Can the local rules and the vocabularies be compressed as the package rules were, with sessions behaving the same?
+8. **hook-delivery** — `experiment/worktree/rule-reduction.hook-delivery`. Added 2026-10-29. Can the session-start hook deliver part of the rules to the agent before its first response, with no read? Forecasts 6 and 7, left untested when phase 3 became triggers.
+9. **single-statement** — `experiment/worktree/rule-reduction.single-statement`. Added 2026-10-29. Can each instruction stated in several places be stated once and cited elsewhere, with sessions behaving the same? Findings #3 and #4: the vocabularies' shared paragraphs print 7 times, and the never-offer instruction 6.
+10. **live-references** — `experiment/worktree/rule-reduction.live-references`. Added 2026-10-29. Does every live reference point at something that exists? Finding #5.
+11. **record-obligations** — `experiment/worktree/rule-reduction.record-obligations`. Added 2026-10-29. Can a change to a record carry fewer obligations, with what each obligation protects still kept? Finding #8.
+12. **prompt-turns** — `experiment/worktree/rule-reduction.prompt-turns`. Added 2026-10-29. Can the work ask the engineer fewer times, with the engineer still deciding what is theirs to decide? Finding #9.
 
 ## State
 
@@ -2291,6 +2296,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 ### Phase 7, local-compression, is affirmed — 2026-10-29
 
 **The engineer affirmed the local-compression phase.** Each package vocabulary and each local rule carries a `## Compressed` section, and the loader prints it in place of the whole file. The read was 22% smaller, and sessions behaved the same.
+
+### Five phases are added for the outstanding work — 2026-10-29
+
+**At the engineer's direction, the work still outstanding becomes phases 8 to 12**, each run one at a time from the experiment's branch, each stating its forecast before its work: hook-delivery, single-statement, live-references, record-obligations, and prompt-turns.
+
+**What is not given a phase.** Forecast 12 cannot be tested, since no act runs through a script that prints its rule. Finding #2 no longer shows: no History clause reaches the read, since the read is of compressed texts. Finding #6 was settled in the hook, which leaves out the package-set sentence where the set is `default` with nothing deactivated.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5518,3 +5529,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:56:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:03:11 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:09:30 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:10:42 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:13:54 AM PT
