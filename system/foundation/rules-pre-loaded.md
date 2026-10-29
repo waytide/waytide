@@ -199,19 +199,23 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 ## Reading the rules
 
 1. At the start of a session, run `waytide/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
+   It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal.
 2. Do not read a package's `source/` directory or its `README.md` at session start.
 3. A package's `source/` holds its full rules, one per file. Edit a rule there.
 4. A package's `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
 5. The package's `rules-pre-loaded.md` is what is read.
-6. The rules override default behavior where they conflict.
-7. Explicit user instructions still win over the rules.
-8. Read `waytide/system/foundation/` first. It defines the system.
-9. Read `waytide/local/vocabulary.md` with the rules. It binds.
-10. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
-11. Its terms decide over every package's terms.
-12. It is not a rule and does not live in `rules/`.
-13. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
-14. It may not exist, and neither may `rules/`. Either absence is ordinary.
+6. A package's `rules-on-demand.md`, at the package root, holds each rule whose source carries a `**Trigger:**` line under its title, with its trigger. `./compile.sh` writes it.
+7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `waytide/system/foundation/load-rules.sh <rule-name>`.
+8. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
+9. The rules override default behavior where they conflict.
+10. Explicit user instructions still win over the rules.
+11. Read `waytide/system/foundation/` first. It defines the system.
+12. Read `waytide/local/vocabulary.md` with the rules. It binds.
+13. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
+14. Its terms decide over every package's terms.
+15. It is not a rule and does not live in `rules/`.
+16. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
+17. It may not exist, and neither may `rules/`. Either absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -436,21 +440,22 @@ To load them now, type: load waytide.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
 8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
-10. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
-11. Each is named whether or not it exists, and its absence is ordinary.
-12. Name the other working directories and leave them out.
-13. Do not print the startup display.
-14. Print no package count.
-15. Then wait for the engineer's request.
-16. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-17. This rule does not restate the directory list.
-18. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-19. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-20. Nothing verifies the read. The hook cannot observe what the agent does.
-21. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-22. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-23. The work honoring the rules is the verification.
+9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
+10. A package's ON DEMAND section lists rules the loader does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
+11. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
+12. Each is named whether or not it exists, and its absence is ordinary.
+13. Name the other working directories and leave them out.
+14. Do not print the startup display.
+15. Print no package count.
+16. Then wait for the engineer's request.
+17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+18. This rule does not restate the directory list.
+19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+21. Nothing verifies the read. The hook cannot observe what the agent does.
+22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+24. The work honoring the rules is the verification.
 
 ## The status line
 

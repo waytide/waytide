@@ -2138,6 +2138,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **What this does not settle.** The sessions ran one prompt each, with no engineer to answer. Ten sessions saved the loader's output to the same temporary file. Their transcripts show each read its own side's output. Requests whose rule names the request in its trigger, as request 8's does, are the easiest case.
 
+### Triggers — the phase is affirmed, 2026-10-29
+
+**The engineer affirmed the triggers phase.** Rules whose source carries a trigger load on demand. The session-start read is 229,028 characters, 39% smaller, and the two comparisons found no cost to the rules being followed.
+
+**The two rules that describe the read now describe on-demand rules:** the binding-rules rule and the harness-announces rule. Each states what a package's `rules-on-demand.md` holds, that the loader prints a trigger and its command in place of the rule, and that the agent loads the rule and follows it before the trigger's act.
+
+**Their checks found two older gaps, both repaired.** Neither compressed text listed everything the loader prints, and the binding rule's compressed text left out the journal. The binding rule's How to apply line also left out the journal.
+
+**The compressed texts of the 61 triggered rules are not checked again**, since the trigger line is a loading cue outside the directives they are checked against.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5344,3 +5354,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:40:29 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:54:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:10:00 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:45:00 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:12 PM PT

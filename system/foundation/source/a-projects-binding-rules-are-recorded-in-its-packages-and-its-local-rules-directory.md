@@ -5,7 +5,7 @@ The project's **binding** rules are read at the start of every session and follo
 - **`waytide/system/`** — the **installed system packages**, each in its own subdirectory (`waytide/system/foundation/`, `waytide/system/language/`, …). These are installed with `git subtree` and refreshed by pulling. A package's `vocabulary.md` glossary is part of its rules — the terms are binding and can't be applied unread.
 - **`waytide/local/rules/`** — the project's **own local rules**, one per file. The project's own conventions, not installed from a package.
 
-- **Read the rules at the start of a session and follow them: run `waytide/system/foundation/load-rules.sh` and read its whole output.** It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, since it defines the system, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal. A package's `source/` holds its full rules, one per file, and is where a rule is edited. Its `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it, and it is what is read. A package's `source/` and its `README.md` are not read at session start. The rules override default behavior where they conflict. Explicit user instructions still win.
+- **Read the rules at the start of a session and follow them: run `waytide/system/foundation/load-rules.sh` and read its whole output.** It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, since it defines the system, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal. A package's `source/` holds its full rules, one per file, and is where a rule is edited. Its `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it, and it is what is read. A rule whose source carries a `**Trigger:**` line under its title goes instead to the package's `rules-on-demand.md`, with its trigger. The loader does not print an on-demand rule: it prints the rule's trigger and the command that loads it, `waytide/system/foundation/load-rules.sh <rule-name>`. When the act a trigger names comes up, run that command and follow the rule it prints before acting. A package's `source/` and its `README.md` are not read at session start. The rules override default behavior where they conflict. Explicit user instructions still win.
 - **One file beside `rules/` is read with them and binds: `waytide/local/vocabulary.md`**, the project's own vocabulary. It is binding and its terms cannot be applied unread, exactly as a package's `vocabulary.md` is, and its terms decide over every package's. It is not a rule and does not live in `rules/`. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why. Like `rules/`, it may not exist, and its absence is ordinary.
 - **Rules are kept separate from work artifacts.** `waytide/local/rules/` holds only rules. `waytide/system/` holds the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state. The project's working state lives beside `rules/` under `waytide/local/` — `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/` — worked with as their own conventions describe, not read as binding rules at session start. `waytide/local/vocabulary.md` sits beside them and is not working state: it is read at session start, and it is the one thing there that binds.
 - **A rule's purpose is not confined to its category.** A rule's package names the *surface* it acts on, not the purpose it serves. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
@@ -18,7 +18,7 @@ The project's **binding** rules are read at the start of every session and follo
 
 **Why:** the rules are the project's durable, in-repo conventions. They are committed alongside the code and read fresh each session rather than recalled, so they stay authoritative and current. One rule per file keeps each convention individually readable, referenceable, and revisable. The installed packages are in `waytide/system/`, and the project's own rules are in `waytide/local/rules/`. Separating the two keeps installed content distinct from the project's own work, so refreshing a package never touches a local rule.
 
-**How to apply:** at session start, run `waytide/system/foundation/load-rules.sh` and read its whole output: the packages' rules files and vocabularies, `waytide/local/rules/`, and `waytide/local/vocabulary.md` where the project has one. Hold to them.
+**How to apply:** at session start, run `waytide/system/foundation/load-rules.sh` and read its whole output: the packages' pre-loaded rules, the triggers of their on-demand rules, and their vocabularies, `waytide/local/rules/`, `waytide/local/vocabulary.md` where the project has one, and the journal. When a trigger's act comes up, load its rule and follow it before acting. Hold to them.
 
 When a new binding convention is set, write it in `waytide/local/rules/` in the format above and log it. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule. Prefer an observation over a rule when the thinking hasn't stabilized (see the observations rule).
 
@@ -38,19 +38,23 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 ## Reading the rules
 
 1. At the start of a session, run `waytide/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
+   It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal.
 2. Do not read a package's `source/` directory or its `README.md` at session start.
 3. A package's `source/` holds its full rules, one per file. Edit a rule there.
 4. A package's `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
 5. The package's `rules-pre-loaded.md` is what is read.
-6. The rules override default behavior where they conflict.
-7. Explicit user instructions still win over the rules.
-8. Read `waytide/system/foundation/` first. It defines the system.
-9. Read `waytide/local/vocabulary.md` with the rules. It binds.
-10. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
-11. Its terms decide over every package's terms.
-12. It is not a rule and does not live in `rules/`.
-13. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
-14. It may not exist, and neither may `rules/`. Either absence is ordinary.
+6. A package's `rules-on-demand.md`, at the package root, holds each rule whose source carries a `**Trigger:**` line under its title, with its trigger. `./compile.sh` writes it.
+7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `waytide/system/foundation/load-rules.sh <rule-name>`.
+8. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
+9. The rules override default behavior where they conflict.
+10. Explicit user instructions still win over the rules.
+11. Read `waytide/system/foundation/` first. It defines the system.
+12. Read `waytide/local/vocabulary.md` with the rules. It binds.
+13. Its terms cannot be applied unread, exactly as a package's `vocabulary.md`.
+14. Its terms decide over every package's terms.
+15. It is not a rule and does not live in `rules/`.
+16. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why.
+17. It may not exist, and neither may `rules/`. Either absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -110,6 +114,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 - 2026-10-27, re-checked: 49 directives, 47 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 50 → 47, clarity 0.81 → 0.79; checked: 44 directives, 44 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 47 → 47, clarity 0.79 → 0.81; checked: 47 directives, 47 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: on-demand rules, and what the loader prints, solubility 47 → 47, clarity 0.81 → 0.81; checked: 63 directives, 60 kept, 2 less precise, 1 lost, 1 repair, re-checked kept; the less precise directive left is that removing a rule is the only case that strands a citation
 
 ## History
 
@@ -124,6 +129,8 @@ Until Mon Oct 26 2026 this rule was named binding-rules-live-in-the-installed-pa
 Until Mon Oct 26 2026 this rule was named a-projects-binding-rules-live-in-its-packages-and-its-local-rules-directory and titled "A project's binding rules live in its packages and its local rules directory".
 
 Until Thu Oct 29 2026 the session-start read opened every rule file under `waytide/system/` and `waytide/local/rules/`, and each package's compiled rules sat at its root, one file per rule. Phase 2 of the rule-reduction experiment replaced them with one `rules-pre-loaded.md` per package and a loader that prints the whole read in one output.
+
+Until Thu Oct 29 2026 every compiled rule was printed at session start. Phase 3 of the rule-reduction experiment, triggers, moved each rule whose source carries a trigger to its package's `rules-on-demand.md`, which the loader lists by trigger and prints by name.
 
 Related:
 
@@ -171,3 +178,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:00 PM PT
