@@ -2091,7 +2091,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **Two full-read answers to request 5** used a figure of speech: "The commit subject is the software."
 - **One index-read answer to request 7** left out the observation option.
 
-**Every one of the seven requests governed by an on-demand rule scored 5 of 5 on both sides.** In those sessions the agent noticed the trigger and read the rule before acting, as often as the full read had the rule already in hand.
+**Every one of the seven requests governed by an on-demand rule scored 5 of 5 on both sides.** Whether each index session read its on-demand rule was not checked, since only the answers were scored.
 
 **The index sessions read less.** Each index session used about 107,000 to 128,000 tokens. Each full session used about 165,000 to 170,000.
 
