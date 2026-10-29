@@ -26,6 +26,37 @@ This criterion was practiced before it was written. Every declaration in the sys
 - the packages are usually installed together
 - the rule reads better with its sibling present
 
+## Compressed
+
+## Citation and dependency
+
+1. A rule may name another package's rule. Naming it is a citation, and a citation is not a dependency.
+2. A dependency exists only where the citing rule will not work without the cited package.
+
+## The test
+
+1. When a rule you are writing names another package's rule, ask whether your rule could still be applied with that package absent.
+2. It cannot be applied where it instructs something that has no meaning without the package, or requires content that is not there.
+3. If it can be applied, cite the rule plainly and declare nothing.
+4. If it cannot, declare the dependency in the package README's `Includes` line and its dependency graph, and add it to `install-dependencies.sh`.
+5. Judge whether the rule can be applied, not whether it still has a point. A rule whose reason to exist weakens without the sibling package is still a citation.
+6. Do not declare a dependency because a citation is frequent, because the packages are usually installed together, or because the rule reads better with its sibling present.
+7. A rule that names another package may be written to work in that package's absence, and that package is then cited, not declared.
+
+## Standalone packages
+
+1. A "standalone" claim is about installation, not about prose. It says what must be installed alongside the package.
+2. A package that declares no dependencies may still name any other package's rules.
+
+## Scope
+
+1. This is a local rule of the Waytide authoring source, not a `foundation` rule. It governs writing packages.
+2. A `foundation` rule does not cite this rule.
+
+## Compression
+
+- 2026-10-29, compressed: 4238 → 1584 characters; checked: 17 directives, 15 kept, 1 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
+
 Related:
 
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule format and where rules live
@@ -57,3 +88,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:02:18 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT

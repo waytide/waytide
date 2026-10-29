@@ -2011,6 +2011,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 18. **When the engineer turns a listed package back on during a session, the session loads it with its listed command before applying its rules, in at least 80% of sessions.** *Moderate confidence.*
    - **Held, 2026-10-29.** 5 of 5.
 19. **The vocabularies and the local rules can be compressed by at least a third, with no definition or directive lost after repair.** *Moderate confidence.*
+   - **Held on size, 2026-10-29**, at 38%. Ten points remain not kept, each judged a reason or background, so on loss it holds by that judgment.
 20. **Sessions on requests governed by the local rules and the vocabularies' terms behave the same with the compressed forms as with the full ones.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
@@ -2259,6 +2260,15 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **At the engineer's direction, the compressed form of a vocabulary or a local rule is a `## Compressed` section in the file itself**, as a package rule's is, not a second file.
 
 **One outcome is built, attended, with its test and implementation accepted:** *Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file, where it has one.* Its full text, History, Related list, and footer are left out. A file with no Compressed section prints whole, and journal entries are untouched.
+
+### Local compression — the twelve files are compressed and checked, 2026-10-29
+
+**The six package vocabularies and the six local rules each carry a `## Compressed` section**, and a `## Compression` line with its figures. The read fell from 230,433 characters to 180,146, 22% smaller.
+
+- **The texts went from 84,905 characters to 52,637, 38% shorter**, and their footers, about 14,800 characters, are no longer printed. The local rules shortened most, by 40% to 69%. The vocabularies shortened by 2% to 34%, since a definition is kept whole.
+- **The method was phase 1's.** An agent compressed each file by the compression rule. A fresh agent listed its directives and judged each against the compressed text. An agent repaired each loss or material vagueness that could change what an agent does, and left out reasons and background. A fresh agent checked each repaired file again.
+- **The first checks found 539 directives, 24 lost and 41 less precise.** 27 were repaired and 39 left out. After the re-checks, 10 remain not kept, each judged a reason or a background fact no act depends on.
+- **Forecast 19 holds on size**, at 38% against a third. On loss, it holds only by the repair step's judgment of those 10.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5483,3 +5493,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:43 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:50:53 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:56:12 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:03:11 AM PT

@@ -60,7 +60,53 @@ This was already the practice when the rule was written: all ten `.sh` files in 
 
 Give it a usage line in its header, naming the command that runs it. Write the command from the directory it is typed in. Write `./name.sh` for a script at this repository's root. Write the path form for a script inside a package. Write `sh name.sh` only for one delivered by `curl`, there and wherever its install is documented.
 
-Where the script is run by the harness rather than by a person, record its invocation. Say what runs it. When reviewing a script someone added, check the mode before anything else. It is the one defect that will not show up until another machine runs it. Related:
+Where the script is run by the harness rather than by a person, record its invocation. Say what runs it. When reviewing a script someone added, check the mode before anything else. It is the one defect that will not show up until another machine runs it.
+
+## Compressed
+
+## Self-executable
+
+1. Every shell script in this repository is runnable as itself: `./report-direct-commits.sh`, never `sh report-direct-commits.sh`. The bit and the shebang make it so, not `./`. `./` only marks the argument as a path, and any path containing a slash, as in the path form below, is equally runnable as itself. The one exception is a `curl`-delivered script's usage line, below.
+2. Set the executable bit when the file is created, and commit it. A bit set only locally does not count.
+3. Confirm with `git ls-files -s` that the mode is `100755`, not `100644`.
+4. Open the file with a shebang naming the interpreter: `#!/bin/sh` for every script here.
+5. Both the bit and the shebang are required. Neither alone is enough.
+6. A script need not carry `.sh`. Its absence changes nothing this rule asks for. Read `.sh` in this rule as "shell script".
+
+## What it reaches
+
+1. It reaches every shell script authored in this repository.
+2. The root authoring tools, `report-direct-commits.sh` and `compile.sh`, run in this repository. And `install`, also at the root, which is not an authoring tool: a consuming project fetches it.
+3. The package scripts, including `foundation`'s `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, `read-consuming-projects.sh`, and each package's `install-dependencies.sh`.
+4. The tests in `test/automated/` and `test/interactive/`.
+5. It does not reach a script a consuming project writes for itself. This is a local rule, not a `foundation` rule. A consuming project wanting it adopts it as its own local rule.
+
+## The usage line
+
+1. Every script opens with a usage line in its header, naming the command an engineer types.
+2. Write the command from the directory it is typed in.
+3. Write `./name.sh` for a script in the directory the command is typed in, as the tools at this repository's root are.
+4. Write the path form, as in `waytide/system/foundation/refresh-packages.sh`, for a packaged script, run from a consuming project's root, and for the tests.
+5. Write `sh name.sh` only for a script delivered by `curl`, in its header and wherever its install is documented. It is the only form that names an interpreter.
+6. `name.sh` in these forms stands for the script's own name.
+7. A script run by the harness rather than typed, such as `session-start.sh`, `startup-display.sh`, and `statusline.sh`, carries an Invocation block in place of a usage line. It records what runs it and says why it is recorded.
+
+## Delivery
+
+1. Set the bit on every shell script, without exception, including one fetched with `curl`.
+2. A script delivered by `git clone` or `git subtree` arrives executable and its usage line names no interpreter.
+3. A script delivered by `curl` arrives never executable, so its usage line is `sh name.sh`.
+4. `install` is the only `curl`-delivered script. Its usage line is `sh install`, and the root `README.md` matches.
+
+## Review
+
+1. When reviewing a script someone added, check its mode before anything else.
+
+## Compression
+
+- 2026-10-29, compressed: 9925 → 3020 characters; checked: 37 directives, 32 kept, 2 less precise, 3 lost; 3 repairs, re-checked: 37 directives, 32 kept, 5 less precise, 0 lost; what is still not kept was judged reasons or background
+
+Related:
 
 - the `git` package's run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before a commit
 - the foundation README's account of which scripts are authoring tools and which are carried to a consuming project
@@ -84,3 +130,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:51:09 AM PT
 Changed by Scott Bellware on Sat Oct 10 2026 at 10:22:31 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 9:46:42 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT

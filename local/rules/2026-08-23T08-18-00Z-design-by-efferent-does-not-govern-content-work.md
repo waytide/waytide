@@ -37,6 +37,35 @@ The method's spine is not code-specific: the engineer decides where a decision b
 
 Where a piece of work is both — a rule that governs content, a script that builds a site — DBE governs the code half and this rule reaches the prose. Suspend this rule and log it if this repository declares a set that leaves the method out, or if the core question is answered the other way.
 
+## Compressed
+
+## Content work
+
+1. Content work is work whose product is prose or pages rather than code. An article, a lesson, a slide deck, a rule file, a record, a README, and the material of a site are each content.
+2. Writing the scripts and rules that govern content is not content work. Design By Efferent governs it.
+3. When the work is content, write it.
+4. Do not run content work through the five hinges: actuation, observation, controls, implementation, and naming.
+5. Do not put the five hinges to the engineer, do not open a loop record, settle no actuation before the work, and do not ask attended or unattended.
+6. Where a piece of work is both, such as a rule that governs content or a script that builds a site, Design By Efferent governs the code half and this rule reaches the prose.
+
+## The package stays active
+
+1. This repository keeps design-by-efferent active. This rule is what holds it off content work here.
+2. The package is still read. This rule stops it being applied to content work, and it does not stop it loading or remove anything.
+
+## Precedence
+
+1. In this project, a local rule overrides a package rule where the two conflict. No rule settles this for rules in general; this rule asserts it for itself.
+
+## Retiring the rule
+
+1. This rule is an interim. The core question is settled: the core keeps the method.
+2. Suspend it and log it if this repository declares a set that leaves the method out, or if the core question is answered the other way, so that the core is without the method.
+
+## Compression
+
+- 2026-10-29, compressed: 4800 → 1512 characters; checked: 28 directives, 18 kept, 4 less precise, 6 lost; 3 repairs, re-checked: 23 directives, 18 kept, 2 less precise, 3 lost; what is still not kept was judged reasons or background
+
 Related:
 
 - the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming and attended-or-unattended-is-chosen-when-the-work-is-started rules — what this suspends for content work
@@ -64,3 +93,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT

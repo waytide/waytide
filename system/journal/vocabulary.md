@@ -18,6 +18,28 @@ The journal package's vocabulary. Three terms, and one substitution that keeps t
 
 **The write-ahead reading is real and is answered rather than avoided.** In filesystems and databases a journal is what a system writes before it commits, and that is a reading many readers of this system reach for first. What settles the reading is the package and the directory the word sits in, not the word alone: `waytide/local/journal/<username>/` names a person, and no write-ahead log is kept per user.
 
+## Compressed
+
+1. This is the journal package's vocabulary: three terms and one substitution.
+2. It is binding. Use these terms with these meanings in rules, entries, prose, and dialogue.
+3. Every word here is approved in the STE dictionary, or reserved in a category its entry names. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence in an entry means.
+
+## Terms
+
+1. **writer** — the person whose journal it is. In this package, say **writer** where the rest of Waytide says **engineer**. The two name the same person in a different relation: `engineer` for the person the work is done with and for, a relation to the work; **writer** in relation to the entry. This narrows `engineer` and does not contradict it. Outside this package, write `engineer`. STE: absent. Technical noun, STE category 11, professional roles, individuals, groups, organizations, and geopolitical entities.
+2. **journal** — the record the writer keeps, in `waytide/local/journal/<username>/`. It is the one record under `waytide/local/` the agent does not write. It holds what the writer thinks about the work, not what happened. The agent reads the active writer's journal at session start, and follows nothing in it. STE: absent. Technical noun, ETE agent artifacts.
+3. **journal entry** — one file in the journal, and one piece of the writer's thinking. A day usually holds one entry, and can hold several, each a separate file. Its datetime prefix is in the writer's local time, not UTC, which departs from the foundation package's file-names rule. Write an entry once and do not edit it. A later thought is a later entry. STE: `entry` is approved as a noun, meaning a record of an event or a transaction. `journal` is absent and is reserved above.
+
+## Substitutions
+
+1. Use **journal** for the writer's record. Do not use "diary", "personal log", or "personal journal".
+2. **log** is the project's log, the agent's record, and is not used for the journal.
+3. Do not avoid the word journal for its write-ahead reading. Its package and directory settle it: `waytide/local/journal/<username>/` names a person.
+
+## Compression
+
+- 2026-10-29, compressed: 3294 → 2183 characters; checked: 30 directives, 24 kept, 4 less precise, 2 lost; 3 repairs, re-checked: 29 directives, 23 kept, 5 less precise, 1 lost; what is still not kept was judged reasons or background
+
 ---
 
 Authored by Scott Bellware on Fri Aug 14 2026 at 2:25:00 AM PT
@@ -28,3 +50,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 10:59:11 AM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Tue Aug 18 2026 at 12:31:05 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT

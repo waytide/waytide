@@ -55,6 +55,59 @@ A word taken out of use with **nothing in its place**. This is not a substitutio
 
 - **handoff** — the point where the work passed between the engineer and the agent. It is discontinued because `transfer` covers it and is a **verb**, so no word-for-word replacement exists: the sentence is rewritten rather than patched. *The naming gate offers the same handoff as the actuation gate* becomes *the naming gate transfers responsibility the same way the actuation gate does*. This is the case STE Rule 9.1 names: use a different sentence construction where a word-for-word replacement is not sufficient. It is the first one Waytide has recorded.
 
+## Compressed
+
+1. These are the foundation package's terms and word substitutions, used by every other package and every project.
+2. They are binding. Use these terms and swaps in rules, artifacts, prose, and dialogue.
+3. Every word here is approved in the STE dictionary, or reserved in a category its entry names. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence in an entry means.
+
+## The three ways of saying "not now"
+
+1. They differ in what is set aside, where it goes, and what brings it back. **Deferred** is not yet, **suspended** is no longer, **out of scope** is not here.
+2. **deferred** — work identified mid-task and postponed until the current task finishes. It is an ordinary item in `waytide/local/items/` with a `**Waits for:**` line, and it may carry a `**Priority:**` rank. It waits its turn. STE: absent. Technical noun, ETE engineering, design, process, and method.
+3. **suspended** — something the project stopped doing and set aside rather than deleted, such as a rule that became ceremony or a procedure nobody runs. The thing is removed, with a log entry tagged `[suspended]` naming what it cost, what else changed, and why the project stopped. It does not wait its turn. STE: absent. `suspend (v)` is not approved and gives HANG (v), which is physical. Technical noun, ETE engineering, process, and method.
+4. **out of scope** — what a design deliberately excludes. It is neither queued nor set aside. It is a boundary the design draws around itself, recorded in its trailing **Out of Scope / Deferred** section so the omission reads as chosen. STE: absent. Technical noun, ETE engineering, design, process, and method.
+
+## The rest
+
+1. **distributable rule** — a rule that ships in a package and is installed into a consuming project. Its name is dash-separated and lower-case, with no datetime prefix. A project receives one by `git subtree`, and a refresh brings a change to it down. STE: `distributable` is absent. `distribute (v)` is not approved and gives APPLY (v), which is physical. `distribution (n)` is not approved and gives SUPPLY (n). `rule` is absent. Technical noun, ETE agent artifacts.
+2. **local rule** — a rule a project writes for itself, in `waytide/local/rules/`. It takes the ISO-8601-UTC datetime prefix. `waytide/local/` is never split or pushed, so a local rule cannot leak upstream. STE: `LOCAL (adj)` is approved, meaning applicable to a given location or position. Waytide's sense is belonging to one project, so the word is reserved with its meaning fixed here per the ete-fixes-the-meaning-of-a-word-in-its-category rule. `rule` is absent. Technical noun, ETE agent artifacts.
+3. `local` is the fourth word ETE fixes the meaning of, after `loop`, `mechanical`, and `level`.
+4. **system rule** is neither of the two and carries no entry here. It names where a rule sits: under `waytide/system/` in a consuming project, or `system/` in the authoring source. `distributable rule` names how it travels. Every distributable rule becomes a system rule once installed.
+5. **item** — a record in `waytide/local/items/`: a design, a plan, an aspiration, an observation, or deferred work, each told apart by a tag. The the-items-directory-holds-one-file-per-item rule fixes its states and shape. A bare *item* means this record and nothing else. Call an entry in a bulleted or numbered list a **list item**, in full. Name a thing in general for what it is, such as a part, a segment, or a piece of work. STE: `ITEM (n)` is approved, meaning a thing that is determined or specified, which is not this. Technical noun, ETE agent artifacts, with its meaning fixed here per the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+6. **projection** — a derived artifact that reads a record without destroying it, such as a summary generated at read-time from the log, or a work session record reconstituted from other records. Where the impulse is to merge, rewrite, or tidy a record, make a projection and leave the record as written. A projection is regenerated, never maintained. Do not back-edit its record to suit it. STE: absent. Technical noun, ETE evented systems and autonomous components.
+7. **reconcile** — to correct the live, forward-looking artifacts that cite something which has changed, moved, or been deleted. It is directed at what points at a thing, not at the thing. It is confined to artifacts read as current: an observation, an item, another deferred item, an implementation record. Leave historical records as written, except a record that discloses what should not have been disclosed. Reconcile a design against the records. Never regenerate it from them. STE: absent. Technical verb, ETE engineering, design, process, and method.
+8. **working-state artifact** — a file holding the project's own work rather than an installed rule: everything under `waytide/local/` except `rules/`. That is log entries, deferred items, observations, designs, plans, work session records, loop records, feature records, experiments, migration records, and suspended things. Each takes the ISO-8601-UTC filename prefix and the `Authored by … / Changed by …` provenance footer. STE: absent. Technical noun, ETE agent artifacts.
+9. **plain text data attribute line** — a bold label, a colon, and a value, optionally as a list item: `- **Priority:** 3`, `**State:** active`, `**Origin:** waytide/system/…`. It is the system's one protocol for content read mechanically as well as by a person. `session-start.sh` parses these lines. Use this one form, not a new one per directory. Frontmatter is permitted, but is not used where this form fits. STE: absent. Technical noun, STE category 15, official documents, parts of documentation, standards, and guidelines.
+10. **transfer** — a technical verb: to move responsibility for the next act from one party to the other. The agent transfers responsibility to the engineer at a hinge, and the engineer transfers responsibility to the agent once they decide. It names where a collaborative workflow changes hands, not the mechanism. A `gate` is the mechanism, and the loop `waits` there. STE: not approved. The STE dictionary gives `MOVE (v)`. Technical verb, ETE engineering, design, process, and method.
+11. Never write `transfer` as a noun (STE Rule 1.13). Write *responsibility transfers to the engineer*, not *the transfer of responsibility*. It mirrors `gate`, a noun that takes no verb form.
+12. **responsibility** — what transfers: answerability for the next act in the work. STE: absent. Technical noun, ETE engineering, design, process, and method.
+13. **free-text option** — the answer the selection interface supplies beside the options, where the engineer answers outside the option set. The harness provides it, so the agent adds none of its own. It is present at every prompt without exception.
+14. The free-text option is not the `Explain` option, which asks what the question means rather than answering it. `Explain` costs one of the four option slots, and the free-text option costs none.
+15. An option that names an answer inside the question, such as *Enter the time* at a prompt asking for a time, is a candidate, not the free-text option.
+16. STE for free-text option: absent as a compound. `option (n)` is not approved and gives ALTERNATIVE (n). `FREE (adj)` is approved in an unrelated sense. `text` is absent. Technical noun, ETE human-computer interaction.
+
+## Substitutions
+
+1. When the impulse is a word in the Don't use column, write the Use term.
+
+| Use | Don't use | Meaning |
+|---|---|---|
+| **work session record** | "session record" | the record of a stretch of work |
+| **free-text option** | "escape" | the answer the selection interface supplies beside the options |
+
+2. Do not write `escape` for the free-text option. STE: `escape (v)` is not approved and gives DEFLATE (v).
+3. Always write **work session record** with **work**, not bare *session*. This holds in the prompt that offers to write one and in prose about either. The record's title is `# Work Session — <name> (<date>)`, and its directory is `waytide/local/logs/work-sessions/`.
+
+## Discontinuations
+
+1. A discontinued word is taken out of use with nothing in its place. It is not a substitution.
+2. **handoff** — the point where the work passed between the engineer and the agent. It is discontinued. Use `transfer`, a verb, and rewrite the sentence rather than patch it (STE Rule 9.1). *The naming gate offers the same handoff as the actuation gate* becomes *the naming gate transfers responsibility the same way the actuation gate does*.
+
+## Compression
+
+- 2026-10-29, compressed: 11717 → 8636 characters; checked: 86 directives, 84 kept, 1 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
+
 ---
 
 Authored by Scott Bellware on Mon Aug 3 2026 at 11:31:19 PM PT
@@ -90,3 +143,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 12:26:19 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT

@@ -38,6 +38,34 @@ Do not report a README figure as a violation of the `language` rules or a packag
 
 Hold every other artifact to the `language` package unchanged.
 
+## Compressed
+
+1. Write the root `README.md` for a reader who holds none of Waytide's terms and is deciding whether the system is worth their attention.
+2. Use a figure where it explains better than the exact word does.
+3. An apparent contradiction between the README and a rule is not a defect. Do not report it as one.
+4. Do not report a README figure as a violation of the `language` rules or a package vocabulary.
+
+## What this reaches
+
+1. This rule reaches the root `README.md` of this repository only.
+2. It does not reach a rule file, a record, a commit message, an artifact under `local/`, or the agent's answers. Hold every artifact other than the root `README.md` to the `language` package unchanged.
+3. This rule does not settle a package's own `README.md`.
+
+## What is given up
+
+1. This rule takes an exception to the `language` package's rules, which otherwise reach outward-facing prose: the no-slang rule and the waytide-prose-conforms-to-the-ste-writing-rules rule.
+2. The figures already in the README stand, such as *a free-text escape hatch* and *the engineer takes the helm*. Each is precise enough for a reader meeting the system for the first time, and each would be wrong in a rule.
+3. The README is not an example of the system's own standard. The tension with the vocabulary is accepted, not solved.
+
+## What is not licensed
+
+1. A figure stands in for a precise term, never for a different fact. Report a false statement in the README.
+2. A figure is licensed only where it explains. Do not use slang in place of an available plain word. A word chosen because it sounds better is dramatic jargon under the language-is-used-precisely-here-and-words-are-load-bearing rule, and is not licensed.
+
+## Compression
+
+- 2026-10-29, compressed: 4214 → 1701 characters; checked: 25 directives, 17 kept, 5 less precise, 3 lost; 3 repairs, re-checked: 24 directives, 18 kept, 3 less precise, 3 lost; what is still not kept was judged reasons or background
+
 Related:
 
 - the `language` no-slang rule — which reaches prose and conversation, and which this takes an exception to
@@ -55,3 +83,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:33:49 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
