@@ -2288,6 +2288,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Requests 2 and 6 depend on points the repair step left out of the compressed forms**: what the README's figures stand for, and attended and unattended as a batch-size trade. The compressed side passed both 3 of 3.
 
+### Phase 7, local-compression, is affirmed — 2026-10-29
+
+**The engineer affirmed the local-compression phase.** Each package vocabulary and each local rule carries a `## Compressed` section, and the loader prints it in place of the whole file. The read was 22% smaller, and sessions behaved the same.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5513,3 +5517,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:50:53 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:56:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:03:11 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:09:30 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:10:42 AM PT
