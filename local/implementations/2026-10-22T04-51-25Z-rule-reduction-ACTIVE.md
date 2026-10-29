@@ -1852,7 +1852,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecast, added before the work:**
 
-6. **Reading one file per package, the read falls to two to four tool calls and well under the 40.8 seconds measured today.** About eight files replace about 110, and an agent can open several in one call. *Moderate confidence.*
+8. **Reading one file per package, the read falls to two to four tool calls and well under the 40.8 seconds measured today.** About eight files replace about 110, and an agent can open several in one call. *Moderate confidence.*
 
 ### Phase 2 — the compiler writes one rules file per package, 2026-10-28
 
@@ -1889,7 +1889,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **Median:** 44.8 seconds and 18 tool calls, against 40.8 seconds and 16 before.
 - **Range:** 25.3 to 59.4 seconds, and 14 to 24 tool calls.
 
-**Forecast 6 does not hold.** The package files did not shorten the read. The agent opened each of the 13 files, seven rules files and six vocabularies, with a Read call of its own, and made further calls to find the files, read the local rules and the journal, and resolve the writer. Before, it had read many rule files in one `cat` call. Fewer files did not mean fewer calls.
+**Forecast 8 does not hold.** The package files did not shorten the read. The agent opened each of the 13 files, seven rules files and six vocabularies, with a Read call of its own, and made further calls to find the files, read the local rules and the journal, and resolve the writer. Before, it had read many rule files in one `cat` call. Fewer files did not mean fewer calls.
 
 **The tool counts each call once.** A transcript repeats a tool call's entry as it streams, and the measuring tool counts distinct call ids, so the figures here and before are comparable.
 
@@ -1935,7 +1935,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecast 5 holds.** The output, 377,775 characters, exceeded what one tool result carries. The harness saved it to a file, and the reads of that file are most of the 7 calls.
 
-**Forecast 6 does not hold**, as recorded with the package-file read.
+**Forecast 8 does not hold**, as recorded with the package-file read.
 
 **Finding #7 is answered.** The read is now one command with a fixed list of files, so it is complete whenever the agent reads the saved output to its end.
 
@@ -1966,6 +1966,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **The check:** a fresh lister and a fresh checker, four rules each. 216 directives, 213 kept, 3 less precise, 0 lost. Two less precise directives in the compression rule were repaired, and the rule was checked again with all 44 kept. The third, in the harness-announces rule, predates this revision and is left as it was.
 
 **The measuring script** compiled a rule with the old per-rule compiler, which is now gone. It now uses a copy of that compiler from `74ae46b`, so the figures stay comparable with the earlier ones.
+
+### Phase 3, additional-context — started, 2026-10-29
+
+**Phase 3 starts on `experiment/worktree/rule-reduction.additional-context`, branched from the experiment's branch at `5c1e70e`**, where phase 2 and the five updates left it. It works in the experiment's worktree, with the experiment's participation, attended.
+
+**Its question:** can the session-start hook deliver the rules to the agent before its first response, with no read at all? Its forecasts, 6 and 7, were committed at the experiment's start: delivering every rule this way is refuted by size alone, since the channel is capped at 10,000 characters, and a part of the rules fits but is not enough to stand in for the read. The read is now 377,775 characters through the loader, not the 547,000 forecast 6 names, which leaves it 38 times the cap.
+
+**It takes up finding #10:** nothing re-reads the rules after the context is compacted. It also takes up the engineer's wish to see each rule's title as the rules load, which a hook can show the engineer alone.
+
+**A numbering fault is corrected.** The forecast phase 2 added on 2026-10-28 was numbered 6, which phase 3's first forecast already held. It is renumbered 8, with the two places that cite it.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5161,3 +5171,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:03:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:12:43 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:28:18 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:43:06 PM PT
