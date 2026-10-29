@@ -37,6 +37,7 @@
 ## Compression
 
 - 2026-10-29, compressed: 1369 → 1082 characters; checked: 10 directives, 8 kept, 1 less precise, 1 lost; the example, first left out, is kept in the compressed text at the engineer's direction, so nothing is lost
+- 2026-10-29, merge from master re-checked: 10 directives, 10 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

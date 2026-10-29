@@ -61,6 +61,7 @@ Change no entry that exists on your own reading. Where the writer directs a chan
 
 - 2026-10-24, compressed: compression 0.36, change 0.60, solubility 44 → 74, clarity 0.45 → 0.75, 24 directives, 24 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 74 → 70, clarity 0.75 → 0.71; checked: 16 directives, 16 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 25 directives, 25 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

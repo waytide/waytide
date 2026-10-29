@@ -168,7 +168,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 4. An experiment's changes must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
 5. A feature is the main line.
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
-7. When offering it, state its cost plainly: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
+7. The current branch's cost: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
 8. On the current branch, the record still carries the intent, the state, and the confirmations.
 9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
 10. A worktree inside the repository would show as untracked content in the work's own `git status`.
@@ -244,6 +244,7 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 - 2026-10-24, revised: written as a numbered list; checked: 86 directives, 75 kept, 11 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-27, re-checked: 88 directives, 75 kept, 12 less precise, 1 lost, 13 repairs, re-checked kept; directive 58 left less precise, since the point gives its reason and the run-the-test-suite-after-changes-before-considering-whether-to-commit rule states the directive
 - 2026-10-28, revised: Why points removed, solubility 42 → 41, clarity 0.76 → 0.79; checked: 85 directives, 84 kept, 1 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 88 directives, 86 kept, 2 less precise, 0 lost, 1 repair
 
 ## History
 

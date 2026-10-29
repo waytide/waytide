@@ -84,7 +84,7 @@ Trigger: When reserving a word or choosing a vocabulary category for a term
 3. A word admitted to an ETE category is reserved, used, and bound exactly as a word in an STE category is.
 4. Try an STE category first.
 5. Use an ETE category only for a word that no STE category holds.
-6. Reserve words one at a time.
+6. Reserve words one at a time. The word's vocabulary entry names the category and states what the STE dictionary says about the word.
 7. A word with no entry is not reserved.
 8. An ETE category is not a standing permission to use the words that fit it.
 
@@ -101,7 +101,7 @@ Trigger: When reserving a word as a technical noun or verb in a package's vocabu
 5. A word reserved in an ETE category takes the meaning its ETE entry gives it.
 6. This holds whether the STE dictionary omits the word, refuses it, or approves it with a different meaning.
 7. This contradicts STE Rule 1.3.
-8. Mark each word reserved with a meaning different from its approved meaning in its package's vocabulary.
+8. Mark each word reserved this way in its package's vocabulary.
 9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Waytide's loop is the DBE cycle.
 10. This is the most expensive reservation ETE makes, and the entry carries the cost.
 11. The entry quotes the approved meaning.

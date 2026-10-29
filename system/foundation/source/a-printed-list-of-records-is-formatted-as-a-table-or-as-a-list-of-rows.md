@@ -106,6 +106,7 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-10-27, re-checked: 24 directives, 21 kept, 3 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-27, revised: the example tables show the full prefix as the handle; checked: 24 directives, 24 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 69 → 56, clarity 0.75 → 0.75; checked: 23 directives, 23 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 25 directives, 25 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

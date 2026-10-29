@@ -77,13 +77,14 @@ Adding a category is one departure, stated once. Reserving each such word by a s
 3. A word admitted to an ETE category is reserved, used, and bound exactly as a word in an STE category is.
 4. Try an STE category first.
 5. Use an ETE category only for a word that no STE category holds.
-6. Reserve words one at a time.
+6. Reserve words one at a time. The word's vocabulary entry names the category and states what the STE dictionary says about the word.
 7. A word with no entry is not reserved.
 8. An ETE category is not a standing permission to use the words that fit it.
 
 ## Compression
 
 - 2026-10-28, revised: Why points removed, solubility 76, clarity 1.00; checked: 11 directives, 11 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 22 directives, 21 kept, 0 less precise, 1 lost, 1 repair
 
 ## History
 

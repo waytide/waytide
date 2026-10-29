@@ -273,7 +273,7 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 2. The rules bind that context, the working directories hold it, and git carries it.
 3. An agent memory store is not one of those places.
 4. Do not hold in a store anything that belongs in one of those places.
-5. A decision is a one-line entry in `waytide/local/logs/log/`.
+5. A binding convention is a rule in `waytide/local/rules/`. A decision is a one-line entry in `waytide/local/logs/log/`.
 6. Thinking that has not stabilized is an observation in `waytide/local/items/`.
 7. The project's planning goes in an item.
 8. Postponed work is a deferred item.
@@ -287,7 +287,7 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 1. A fact about the engineer rather than the project is outside this rule.
 2. How the engineer wants to be answered, and what they want never offered, are such facts.
 3. A machine-scoped fact goes to per-machine configuration under `~/.config/`, outside any repository, per the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule.
-4. A preference not yet settled as a rule is outside this rule.
+4. A preference not yet settled as a rule is outside this rule. Ask about it at once rather than holding it.
 5. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 6. Harness working state is not project context and is no substitute for an artifact.
 
@@ -333,7 +333,7 @@ Source: system/foundation/source/ask-at-once-when-the-engineer-expresses-a-prefe
 
 1. Each candidate is genuine, and the selection carries only those that apply.
 2. An amendment to an existing rule, offered only where a rule covers the subject. It is made in that rule's source, with its History.
-3. A new rule.
+3. A new rule, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry.
 4. An observation in `waytide/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
 5. Neither, where the engineer does not want the preference recorded. It is taken without argument.
 6. Do not ask again in the same session about a preference the engineer declined to record.
@@ -492,7 +492,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-line-title.md
 
-1. Record each decision made during a session as its own file in `waytide/local/logs/log/`.
+1. Record the log's entries made during sessions in `waytide/local/logs/log/`.
 2. Write one file per entry.
 3. Give each entry a one-line title.
 

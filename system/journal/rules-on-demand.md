@@ -101,6 +101,8 @@ Trigger: When writing a journal entry (including when the writer opens with "new
 5. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
 6. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
 7. The entry is then the title and the prose, with nothing repeated.
+8. **Editing:** clean the entry up lightly. Preserve the writer's words, meaning, and emphasis.
+9. Correct the grammar and the flow. Invent no fact, and embellish nothing.
 
 ## The directive *new entry*
 
@@ -214,9 +216,9 @@ Trigger: When writing, changing, or committing a journal entry
 
 1. An entry carries the provenance footer, per foundation's working-state-artifacts-carry-a-provenance-footer rule.
 2. The footer carries an `Authored by` line and no `Changed by` line.
-3. When the writer changes their mind, the later thought is a later entry.
-4. For a disclosure, the footer stays as it is.
-5. A disclosure is recorded in the log, not in the entry.
+3. Do not edit an entry once it is written, except for a disclosure or a change the writer directs to their own entry. When the writer changes their mind, the later thought is a later entry.
+4. For a disclosure or a directed change, the footer stays as it is.
+5. Each is recorded in the log, not in the entry.
 
 ## Committing
 

@@ -52,7 +52,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 
 1. Each candidate is genuine, and the selection carries only those that apply.
 2. An amendment to an existing rule, offered only where a rule covers the subject. It is made in that rule's source, with its History.
-3. A new rule.
+3. A new rule, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry.
 4. An observation in `waytide/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
 5. Neither, where the engineer does not want the preference recorded. It is taken without argument.
 6. Do not ask again in the same session about a preference the engineer declined to record.
@@ -66,6 +66,7 @@ Do not ask about an instruction that governs only the artifact at hand. Do not a
 - 2026-10-27, revised: rewritten for preferences asked about at once, with an amendment among the candidates; not checked
 - 2026-10-27, re-checked: 22 directives, 9 kept, 12 less precise, 1 lost, 14 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 69 → 72, clarity 0.67 → 0.80; checked: 17 directives, 17 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 19 directives, 18 kept, 1 less precise, 0 lost, 1 repair
 
 ## History
 

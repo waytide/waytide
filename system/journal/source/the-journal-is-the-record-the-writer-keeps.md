@@ -102,9 +102,9 @@ One file per entry rather than one per day follows the convention every other da
 
 1. An entry carries the provenance footer, per foundation's working-state-artifacts-carry-a-provenance-footer rule.
 2. The footer carries an `Authored by` line and no `Changed by` line.
-3. When the writer changes their mind, the later thought is a later entry.
-4. For a disclosure, the footer stays as it is.
-5. A disclosure is recorded in the log, not in the entry.
+3. Do not edit an entry once it is written, except for a disclosure or a change the writer directs to their own entry. When the writer changes their mind, the later thought is a later entry.
+4. For a disclosure or a directed change, the footer stays as it is.
+5. Each is recorded in the log, not in the entry.
 
 ## Committing
 
@@ -136,6 +136,7 @@ Journal: Idea
 - 2026-10-27, re-checked: 39 directives, 39 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 48 → 50, clarity 0.77 → 0.80; checked: 37 directives, 34 kept, 3 less precise, 0 lost, 5 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 50 → 50, clarity 0.80 → 0.79; checked: 37 directives, 35 kept, 2 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 37 directives, 35 kept, 0 less precise, 2 lost, 2 repairs
 
 ## History
 

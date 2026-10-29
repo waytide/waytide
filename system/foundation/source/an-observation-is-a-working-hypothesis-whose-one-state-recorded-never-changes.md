@@ -97,6 +97,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 - 2026-10-27, re-checked: 22 directives, 21 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 61 → 59, clarity 0.70 → 0.75; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: the one state is `Recorded`, not `Stated`, a term the engineer settled; not checked
+- 2026-10-29, merge from master re-checked: 31 directives, 31 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

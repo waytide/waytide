@@ -115,7 +115,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
 24. Rank 1 is worked next among the actionable items.
 25. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
-26. A rank does not clear a wait.
+26. A waiting item may still be ranked, and a rank does not clear a wait.
 27. Nothing derives from either line.
 28. An item's content is point-in-time.
 29. A reference in an item that time has overtaken is not a defect.
@@ -145,7 +145,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
 54. Answer a question that runs against what an item settled, and record the change.
 55. Do not refuse to answer until the item is amended.
-56. Where one item names another as what it realizes, the named item is the source of truth.
+56. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
 
 ## Compression
 
@@ -159,6 +159,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-27, revised: the claim that no tag is reserved is removed, and a tag means what a rule about it says; checked: 71 directives, 69 kept, 2 less precise, 0 lost; 62 and 69 are kept by the earlier checks
 - 2026-10-28, revised: Why points removed, solubility 46 → 45, clarity 0.55 → 0.71; checked: 57 directives, 57 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: an observation's state is `Recorded`, not `Stated`, a term the engineer settled; not checked
+- 2026-10-29, merge from master re-checked: 67 directives, 64 kept, 3 less precise, 0 lost, 2 repairs
 
 ## History
 

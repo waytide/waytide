@@ -50,11 +50,13 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 1. System rules do not take the prefix.
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
+4. A project's own `waytide/local/vocabulary.md` takes no prefix.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.30, change 0.60, solubility 48 → 79, clarity 0.44 → 0.83, 13 directives, 13 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 79 → 79, clarity 0.83 → 0.83; checked: 10 directives, 10 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 14 directives, 13 kept, 0 less precise, 1 lost, 1 repair
 
 ## History
 

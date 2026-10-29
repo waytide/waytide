@@ -86,6 +86,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 - 2026-10-27, re-checked: 18 directives, 18 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 62 → 54, clarity 0.80 → 0.72; checked: 14 directives, 13 kept, 1 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 54 → 58, clarity 0.72 → 0.70; checked: 20 directives, 20 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 16 directives, 16 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

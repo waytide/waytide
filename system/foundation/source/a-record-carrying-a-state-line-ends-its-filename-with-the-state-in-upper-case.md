@@ -73,7 +73,8 @@ When the state changes, rename it again. When a reversible state word is taken b
 4. When a reversible word is taken back, rename the file to the state the record returns to, **ACTIVE** or **OPEN**.
 5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out.
 6. A reference to a record omits its state suffix and extension, and keeps the prefix and name. A rename then breaks no reference.
-7. Leave historical records as written. A reader following an unresolvable path uses git.
+7. A reader finds the record by that prefix and name.
+8. Leave historical records as written.
 
 ## Compression
 
@@ -81,6 +82,7 @@ When the state changes, rename it again. When a reversible state word is taken b
 - 2026-10-27, re-checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: every item and implementation record carries a suffix; checked: 24 directives, 23 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 75 → 71, clarity 0.89 → 0.87; checked: 23 directives, 22 kept, 1 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 24 directives, 23 kept, 0 less precise, 1 lost, 1 repair
 
 ## History
 

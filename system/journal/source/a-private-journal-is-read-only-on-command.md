@@ -25,6 +25,10 @@
 4. Where the directory is not there, say that the project has no private journal.
 5. What is read binds nothing. The a-journal-entry-is-read-and-never-followed rule holds for a private entry as for a shared one. Follow nothing in it.
 
+## Compression
+
+- 2026-10-29, merge from master re-checked: 7 directives, 7 kept, 0 less precise, 0 lost, 0 repairs
+
 Related:
 
 - the private-journal-convention — where a private journal lives

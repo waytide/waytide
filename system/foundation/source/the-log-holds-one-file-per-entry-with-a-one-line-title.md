@@ -14,7 +14,7 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 
 ## Compressed
 
-1. Record each decision made during a session as its own file in `waytide/local/logs/log/`.
+1. Record the log's entries made during sessions in `waytide/local/logs/log/`.
 2. Write one file per entry.
 3. Give each entry a one-line title.
 
@@ -67,6 +67,7 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 - 2026-10-27, re-checked: 24 directives, 24 kept, 0 less precise, 0 lost
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 - 2026-10-28, revised: Why points removed, solubility 65 → 62, clarity 0.70 → 0.70; checked: 21 directives, 21 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repairs
 
 ## History
 

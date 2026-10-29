@@ -68,6 +68,8 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 5. Make the summary a standalone takeaway, not a restatement of the title. It shows first in a Quick Look preview.
 6. Omit the summary where it would be identical or nearly identical to the body, as on a very short entry.
 7. The entry is then the title and the prose, with nothing repeated.
+8. **Editing:** clean the entry up lightly. Preserve the writer's words, meaning, and emphasis.
+9. Correct the grammar and the flow. Invent no fact, and embellish nothing.
 
 ## The directive *new entry*
 
@@ -96,6 +98,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 - 2026-10-27, re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 53 → 53, clarity 0.84 → 0.86; checked: 33 directives, 32 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.86 → 0.85; checked: 38 directives, 38 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 41 directives, 38 kept, 0 less precise, 3 lost, 1 repair
 
 ## History
 

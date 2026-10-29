@@ -29,6 +29,7 @@
 - 2026-10-24, compressed: compression 0.30, change 0.53, solubility 28 → 60, clarity 0.37 → 0.90, 29 directives, 29 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-10-27, revised: the rule is rewritten, with no reserved tags and with lifecycle states left to each tag's rule, compression 0.09, change 0.17, solubility 92 → 94, clarity 0.97 → 1.00; checked: 12 directives, 12 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 94 → 95, clarity 1.00 → 1.00; checked: 8 directives, 8 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 8 directives, 8 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

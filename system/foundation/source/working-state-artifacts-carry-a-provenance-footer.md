@@ -46,6 +46,7 @@ This is a different justification from the rule-file footer's (which recovers hi
 - 2026-10-24, compressed: compression 0.42, change 0.64, solubility 49 → 80, clarity 0.48 → 0.81, 18 directives, 18 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 - 2026-10-28, revised: Why points removed, solubility 80 → 79, clarity 0.81 → 0.80; checked: 17 directives, 15 kept, 1 less precise, 1 lost
+- 2026-10-29, merge from master re-checked: 14 directives, 14 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

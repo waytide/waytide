@@ -40,6 +40,7 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 - 2026-10-24, compressed: compression 0.44, change 0.64, solubility 52 → 83, clarity 0.39 → 0.78, 15 directives, 15 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 83 → 80, clarity 0.78 → 0.78; checked: 12 directives, 12 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 15 directives, 15 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

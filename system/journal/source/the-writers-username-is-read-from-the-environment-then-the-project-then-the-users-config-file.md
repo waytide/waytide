@@ -207,6 +207,7 @@ display-name = "Jane Doe"
 - 2026-10-24, compressed: compression 0.23, change 0.50, solubility 39 → 52, clarity 0.70 → 0.92, 52 directives, 52 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 53, clarity 0.92 → 0.92; checked: 54 directives, 54 kept, 0 less precise, 0 lost, no repair
 - 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.92 → 0.93; checked: 49 directives, 49 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 49 directives, 49 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

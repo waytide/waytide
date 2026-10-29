@@ -65,12 +65,14 @@ Write no pointer. Name no rule the reader should go and read, and send them to n
 
 1. History goes to the log.
 2. A discontinuation is not an exception.
-3. It does not narrate when the word was dropped or what carried it before.
+3. A discontinuation's entry names the word and says it is not used.
+4. It does not narrate when the word was dropped or what carried it before.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 34 → 70, clarity 0.36 → 0.67, 16 directives, 16 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 70 → 64, clarity 0.67 → 0.58; checked: 12 directives, 12 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 15 directives, 14 kept, 1 less precise, 0 lost, 1 repair
 
 ## History
 

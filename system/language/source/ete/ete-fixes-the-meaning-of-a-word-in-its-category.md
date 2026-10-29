@@ -29,7 +29,7 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 5. A word reserved in an ETE category takes the meaning its ETE entry gives it.
 6. This holds whether the STE dictionary omits the word, refuses it, or approves it with a different meaning.
 7. This contradicts STE Rule 1.3.
-8. Mark each word reserved with a meaning different from its approved meaning in its package's vocabulary.
+8. Mark each word reserved this way in its package's vocabulary.
 9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Waytide's loop is the DBE cycle.
 10. This is the most expensive reservation ETE makes, and the entry carries the cost.
 11. The entry quotes the approved meaning.
@@ -45,6 +45,7 @@ The reservation is bounded by being stated. A reader who wants to know where Way
 ## Compression
 
 - 2026-10-28, revised: Why points removed, solubility 87, clarity 0.92; checked: 7 directives, 7 kept, 0 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 20 directives, 19 kept, 1 less precise, 0 lost, 1 repair
 
 ## History
 

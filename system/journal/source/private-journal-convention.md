@@ -87,6 +87,10 @@ Move a private entry to the shared journal only on the engineer's command, uncha
 1. Private means kept out of the project's repository and out of the session-start read, and nothing more.
 2. It does not keep an entry on the machine. An entry the agent writes or reads is plain text in the session, and reaches the model provider, the local transcript, and any deployed hook.
 
+## Compression
+
+- 2026-10-29, merge from master re-checked: 22 directives, 22 kept, 0 less precise, 0 lost, 0 repairs
+
 Related:
 
 - the journal-convention — the shared journal, and the one this is kept apart from

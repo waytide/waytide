@@ -30,7 +30,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 2. The rules bind that context, the working directories hold it, and git carries it.
 3. An agent memory store is not one of those places.
 4. Do not hold in a store anything that belongs in one of those places.
-5. A decision is a one-line entry in `waytide/local/logs/log/`.
+5. A binding convention is a rule in `waytide/local/rules/`. A decision is a one-line entry in `waytide/local/logs/log/`.
 6. Thinking that has not stabilized is an observation in `waytide/local/items/`.
 7. The project's planning goes in an item.
 8. Postponed work is a deferred item.
@@ -44,7 +44,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 1. A fact about the engineer rather than the project is outside this rule.
 2. How the engineer wants to be answered, and what they want never offered, are such facts.
 3. A machine-scoped fact goes to per-machine configuration under `~/.config/`, outside any repository, per the a-project-does-not-name-its-downstream-consumers-in-its-own-files rule.
-4. A preference not yet settled as a rule is outside this rule.
+4. A preference not yet settled as a rule is outside this rule. Ask about it at once rather than holding it.
 5. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 6. Harness working state is not project context and is no substitute for an artifact.
 
@@ -52,6 +52,7 @@ Where a fact is about the engineer rather than the project, it is outside this r
 
 - 2026-10-24, compressed: compression 0.42, change 0.66, solubility 44 → 68, clarity 0.41 → 0.61, 19 directives, 19 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 68 → 67, clarity 0.61 → 0.62; checked: 16 directives, 15 kept, 1 less precise, 0 lost
+- 2026-10-29, merge from master re-checked: 21 directives, 19 kept, 0 less precise, 2 lost, 2 repairs
 
 ## History
 

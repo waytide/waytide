@@ -230,6 +230,7 @@ Loading Waytide will take a few moments.
 - 2026-10-28, revised: Why points removed, solubility 53 → 52, clarity 0.90 → 0.90; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 52 → 52, clarity 0.90 → 0.90; checked: 51 directives, 51 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: point 12's title reads *Waytide: Human-in-the-Loop Harness*, as the body's does; not checked
+- 2026-10-29, merge from master re-checked: 60 directives, 60 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
 

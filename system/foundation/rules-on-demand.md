@@ -111,7 +111,7 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 25. This rule states the obligation once, for every item.
 26. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
 27. The the-items-directory-holds-one-file-per-item rule points here and keeps no second copy.
-28. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
+28. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever a real decision is made, and when in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
 
 # A log entry recording an engineer's decision is tagged `[decision]`
 
@@ -232,7 +232,8 @@ Trigger: When creating, renaming, changing the state of, or referencing an item 
 4. When a reversible word is taken back, rename the file to the state the record returns to, **ACTIVE** or **OPEN**.
 5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out.
 6. A reference to a record omits its state suffix and extension, and keeps the prefix and name. A rename then breaks no reference.
-7. Leave historical records as written. A reader following an unresolvable path uses git.
+7. A reader finds the record by that prefix and name.
+8. Leave historical records as written.
 
 # A record may be tagged with square-bracket tags
 
@@ -440,7 +441,8 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 
 1. History goes to the log.
 2. A discontinuation is not an exception.
-3. It does not narrate when the word was dropped or what carried it before.
+3. A discontinuation's entry names the word and says it is not used.
+4. It does not narrate when the word was dropped or what carried it before.
 
 # An implementation runs on a branch to a declared end
 
@@ -505,7 +507,7 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 4. An experiment's changes must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
 5. A feature is the main line.
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
-7. When offering it, state its cost plainly: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
+7. The current branch's cost: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
 8. On the current branch, the record still carries the intent, the state, and the confirmations.
 9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
 10. A worktree inside the repository would show as untracked content in the work's own `git status`.
@@ -674,6 +676,7 @@ Trigger: When creating and naming a new file under waytide/local/ or a new rule 
 1. System rules do not take the prefix.
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
+4. A project's own `waytide/local/vocabulary.md` takes no prefix.
 
 # Disclosure is the one reason to edit a historical record
 
@@ -899,7 +902,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
 24. Rank 1 is worked next among the actionable items.
 25. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
-26. A rank does not clear a wait.
+26. A waiting item may still be ranked, and a rank does not clear a wait.
 27. Nothing derives from either line.
 28. An item's content is point-in-time.
 29. A reference in an item that time has overtaken is not a defect.
@@ -929,7 +932,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
 54. Answer a question that runs against what an item settled, and record the change.
 55. Do not refuse to answer until the item is amended.
-56. Where one item names another as what it realizes, the named item is the source of truth.
+56. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
 
 # The log records why work was abandoned, and never says undone work was done
 
