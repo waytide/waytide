@@ -84,7 +84,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 ## Terms
 
-1. **solubility** — the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
+1. **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive. The ideal is immediate comprehension with minimal interpretive work: knowledge at a glance. It is the design quality a unit is judged against, and the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
 2. **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. `caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view. A general design-vocabulary term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
 3. **Eventide Technical English (ETE)** — its rules are in `waytide/system/language/ete/`. STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.
 4. **actuation** — the invocation of a unit from its use site. STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing, not its invocation from a use site. Technical noun, ETE engineering, design, process, and method.
@@ -154,6 +154,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 - 2026-10-29, compressed: 16276 → 12750 characters; checked: 92 directives, 87 kept, 5 less precise, 0 lost; 2 repairs, re-checked: 68 directives, 67 kept, 1 less precise, 0 lost; what is still not kept was judged reasons or background
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
+- 2026-10-29, revised: the definition of *solubility* is restored, at the engineer's direction, since a vocabulary entry keeps its term's meaning
 
 ---
 
@@ -206,3 +207,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT

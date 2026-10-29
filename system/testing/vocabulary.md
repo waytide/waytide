@@ -29,13 +29,20 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 
 ## Terms
 
-1. The package's control rules hold the term **controls** in place: the `control_` variable prefix and the "some" string value.
-2. **controls**, STE: absent from the STE dictionary as a plural. `CONTROL (n)` is approved, meaning something that controls, which is the singular sense this narrows. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
-3. **precondition**, STE: absent from the STE dictionary. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
-4. **uncontested**: of a test, it passes without any implementation written to meet it, because the behavior it checks already exists.
-5. A test is **contested** when it fails until code is written to satisfy it, which is how a DBE test drives a design.
-6. Taxonomically an uncontested test is a **confirming test**.
-7. **uncontested**, STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
+1. **controls**: the known, deterministic inputs a test is built from. They are the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them.
+2. A test reads **control → actuate → observe**.
+3. The package's control rules hold the term in place: the `control_` variable prefix and the "some" string value.
+4. **controls**, STE: absent from the STE dictionary as a plural. `CONTROL (n)` is approved, meaning something that controls, which is the singular sense this narrows. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
+5. **precondition**: a bare `assert` or `refute` that is not a test. It documents a factor that decides the test's outcome, where the test script does not express it.
+6. That factor is most often a property of a control. Name its value rather than describe it.
+7. A precondition documents by asserting, so the clarification is checked.
+8. A precondition qualifies the test. It does not prevent a regression. When it fails, the test's result is meaningless, not wrong.
+9. A precondition carries no name. Its predicate reads inline as the name. It sits immediately before what it qualifies.
+10. **precondition**, STE: absent from the STE dictionary. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
+11. **uncontested**: of a test, it passes without any implementation written to meet it, because the behavior it checks already exists.
+12. A test is **contested** when it fails until code is written to satisfy it, which is how a DBE test drives a design.
+13. Taxonomically an uncontested test is a **confirming test**.
+14. **uncontested**, STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
 
 ## Substitutions
 
@@ -58,6 +65,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 - 2026-10-29, compressed: 4004 → 3693 characters; checked: 39 directives, 38 kept, 0 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
+- 2026-10-29, revised: the definitions of *controls* and *precondition* are restored, at the engineer's direction, since a vocabulary entry keeps its term's meaning
 
 ---
 
@@ -82,3 +90,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:00:02 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT

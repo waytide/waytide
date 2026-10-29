@@ -2362,6 +2362,10 @@ The read fell from 177,387 characters to 177,172.
 
 **Three vocabulary terms lost their definitions from their compressed entries**: *solubility* in the language vocabulary, and *controls* and *precondition* in the testing vocabulary. Each is defined in full in a pre-loaded rule, which the inventory took as the origin. This is put to the engineer.
 
+### Single statement — three vocabulary definitions are restored, 2026-10-29
+
+**At the engineer's direction, a vocabulary entry keeps its term's meaning in its compressed text, even where a pre-loaded rule also defines the term.** The definitions of *solubility*, *controls*, and *precondition* are restored. The read is 170,884 characters.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5596,3 +5600,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:57 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:17 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:10:08 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:29:10 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:54 PM PT
