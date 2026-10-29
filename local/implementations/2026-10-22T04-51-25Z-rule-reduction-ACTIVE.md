@@ -2440,6 +2440,10 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 25 is what this phase tests.**
 
+### Record obligations — the rename is kept, 2026-10-29
+
+**At the engineer's direction, a state change still renames the record**, so that a plain directory listing shows every record's state. The state-suffix rule is unchanged.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5682,3 +5686,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:16:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:42 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:21:01 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:09 PM PT
