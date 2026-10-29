@@ -2422,6 +2422,10 @@ The read fell from 177,387 characters to 177,172.
 - **Forecast 23 held:** stale references stood in 14 files.
 - **Forecast 24 held:** each was corrected by its reference alone, and no directive changed.
 
+### Phase 10, live-references, is affirmed — 2026-10-29
+
+**The engineer affirmed the live-references phase.** Every live reference to a rule or a path names something that exists, apart from the seven left deliberately.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5662,3 +5666,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:07:47 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:15:33 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:16:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:07 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:42 PM PT
