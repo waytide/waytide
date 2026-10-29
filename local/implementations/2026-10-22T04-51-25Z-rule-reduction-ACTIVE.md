@@ -2022,7 +2022,9 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 20. **Sessions on requests governed by the local rules and the vocabularies' terms behave the same with the compressed forms as with the full ones.** *Moderate confidence.*
    - **Held, 2026-10-29.** The compressed forms passed 13 of 18, the full forms 11 of 18.
 21. **Stating each instruction that appears in several places once, and citing it by name elsewhere, shrinks the session-start read by at least 5%.** *Low confidence.*
+   - **Held, 2026-10-29.** The read fell from 180,146 characters to 170,884, 5.1%.
 22. **Sessions on requests governed by those instructions behave the same after the change.** *Moderate confidence.*
+   - **Held, 2026-10-29.** The rules before passed 36 of 38, and after 35 of 38.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2382,6 +2384,12 @@ The read fell from 177,387 characters to 177,172.
 **Both failures are on instructions whose repetitions were removed.** On request 3, one session called the shared setup a fixture, and the testing vocabulary's line that names *fixtures* among the words not to use had been removed. On request 4, one session left out the `Explain` option, and the foundation vocabulary's lines on the `Explain` and free-text options had been removed. Each instruction is still stated in its pre-loaded origin.
 
 **Forecast 22 is not settled.** Two failures in eighteen runs could be chance, or a real loss where a repetition was doing work its origin does not.
+
+### Single statement — the two failing requests are run again, 2026-10-29
+
+**At the engineer's direction, requests 3 and 4 were run ten more times on each side.** The rules after the phase passed 19 of 20, and before it 18 of 20. Request 3, the shared setup function, passed 10 of 10 on both sides. Request 4, the journal entry with no time, failed on both: twice before and once after, each by leaving out or adding to the time question's options.
+
+**Across both runs, the rules before passed 36 of 38 and after 35 of 38.** The first run's two failures were chance. **Forecast 22 held.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5619,3 +5627,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:10:08 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:29:10 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:00:37 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:07:47 PM PT
