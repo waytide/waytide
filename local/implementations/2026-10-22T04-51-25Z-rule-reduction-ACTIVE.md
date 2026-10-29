@@ -2340,7 +2340,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **At the engineer's direction, each vocabulary's compressed text no longer opens by naming the vocabulary or saying it is binding.** The loader prints the file's path above it, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule, which is pre-loaded, says every vocabulary binds. The lines stay in the full texts. The read fell from 178,474 characters to 177,387.
 
-**At the engineer's direction, the term preloaded replaces read where it means printed at session start**, since an on-demand rule is read too.
+**At the engineer's direction, the term pre-loaded replaces read where it means printed at session start**, since an on-demand rule is read too.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
