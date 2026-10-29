@@ -313,6 +313,17 @@ if [ -n "$declaration" ]; then
   fi
 fi
 
+# On a compaction, the rules read at the start survive only as the compaction's summary. The
+# event's input names its source; a hook run by hand at a terminal has no input, and is not
+# waited on.
+event=
+[ -t 0 ] || event=$(cat)
+source=$(printf '%s' "$event" | sed -n 's/.*"source"[[:space:]]*:[[:space:]]*"\([a-z]*\)".*/\1/p')
+
+if [ "$source" = "compact" ]; then
+  instruction="The context has just been compacted. The rules read at the start of this session now survive only as the compaction's summary, which does not hold them. Before your next act, whatever the next request is, run the loader again and read its whole output, as follows. ${instruction}"
+fi
+
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
   "$instruction")
 

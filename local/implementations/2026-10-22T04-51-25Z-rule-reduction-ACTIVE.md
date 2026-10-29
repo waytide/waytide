@@ -2176,6 +2176,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **The method was the baseline's**: the same five requests, four runs each, 20 sessions.
 - **A start, a resume, and a clear are unchanged**, since the sentence is given only where the source is `compact`.
 
+### Re-read after compaction — the hook gives the compaction instruction, 2026-10-29
+
+**One outcome is built, attended, with its test accepted and its implementation accepted:** *On a compaction, the read instruction says the rules survive only as a summary and must be read again.* It is the first outcome in a new test file, `test/automated/session-start.sh`.
+
+**`session-start.sh` now reads the event Claude Code gives it on its input**, and takes the `source` field. Where it is `compact`, the trial's sentence goes ahead of the usual instruction. A start, a resume, and a clear are unchanged. Run by hand at a terminal, the script does not wait for input.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5386,3 +5392,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:12 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:05:32 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:13:13 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:19:22 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:07:39 AM PT
