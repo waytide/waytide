@@ -2040,6 +2040,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** 53% shorter, with two repairs; what is not kept is stated in the pre-loaded vocabulary rule, or is background.
 28. **Sessions on requests governed by its substitution behave the same with the compressed form as with the full one.** *Moderate confidence.*
    - **Held, 2026-10-29.** 6 of 6 on each side.
+29. **With `Explain` gone, the journal's time question carries exactly the rule's options in at least 90% of sessions.** Three of phase 9's four failures left `Explain` out, and phase 12 removed it. *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2533,6 +2534,16 @@ The read fell from 177,387 characters to 177,172.
 ### Phase 13, local-vocabulary, is affirmed — 2026-10-29
 
 **The engineer affirmed the local-vocabulary phase.** The project vocabulary's one substitution, *superseded*, is compressed and now stands in the `foundation` vocabulary, and `local/vocabulary.md` is removed.
+
+### Phase 14, journal-time-question, starts — 2026-10-29
+
+**The phase asks why sessions sometimes put the wrong options in the journal's time question, and whether the rule can be made so they do not.** In phase 9 it failed 4 times in 23 runs across both sides. Three of the four left out the `Explain` option, and one added a free-text choice of its own.
+
+**Phase 12 removed `Explain`**, so three of the four failures no longer apply. The question carries **No time**, **Now** with the current time, and **Enter the time** for an entry about today, and **No time** and **Enter the time** for a back-dated one.
+
+**The first step is to measure the question as it now stands**: 20 sessions, 10 on an entry about today and 10 on a back-dated one, scored blind.
+
+**Forecast 29 is what this tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5790,3 +5801,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:50:19 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:54:27 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:45 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:58:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 2:00:08 PM PT
