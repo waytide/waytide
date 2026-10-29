@@ -2058,6 +2058,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The session-start read is 229,028 characters, against 377,775 with every rule pre-loaded, 39% smaller.** The 61 trigger lines are part of it.
 
+### Triggers — the session comparison's method, 2026-10-29
+
+**At the engineer's direction, five runs per request on each side, 100 sessions,** on the ten requests of the earlier comparisons, scored blind against their pass conditions, S3's as corrected.
+
+- **The full read** is every package's rules, each pre-loaded, and its vocabulary, 333,853 characters: the loader's output with the trigger lines removed from the sources.
+- **The index read** is the 47 pre-loaded rules, the 61 trigger lines, and the vocabularies, 186,212 characters. Each trigger line names a file holding its rule, in place of the loader command, since these sessions can read files and run no command.
+- **Seven of the ten requests are governed by rules now on demand:** committing, a journal entry with no time, listing items, cutting a release, recording an idea, starting a feature, and where an experiment stands.
+
+**Forecast 11 is what this tests.** Forecast 12, a rule printed by the script its act runs through, cannot be tested, since no act runs through such a script.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5260,3 +5270,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:16:53 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:20:46 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:36:49 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:37:28 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:40:29 PM PT
