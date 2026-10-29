@@ -321,12 +321,12 @@ Source: system/testing/source/start-a-test-name-with-is-only-for-a-value-equals-
 7. Counter-examples, where "Is" is not used:
    - a predicate result — `context "Defined"` → `assert(defined)`
    - a returned value — `context "The defined constant is returned"`
-   - a raised error — named `Fails`, per the error-test-naming rule
+   - a raised error — named `Fails`, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule
    - an exclusion — `context "Excludes non-module inner constants"`
 8. Before naming a context "Is …", look at its assertion.
 9. If the assertion is `assert(a == b)`, or an identity comparison, "Is …" fits.
 10. Otherwise, name the context for the outcome it establishes: the predicate, the presence, the exclusion, or the behavior.
-11. Name a context for a raised error "Fails", per the error-test-naming rule.
+11. Name a context for a raised error "Fails", per the an-error-test-is-named-fails-and-its-condition-is-a-context rule.
 
 # Test context nesting mirrors the folder hierarchy
 

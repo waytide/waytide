@@ -17,7 +17,7 @@ When creating a journal entry, where the writer has not given a **time**, ask th
 
 **`Now` is offered only for an entry about today.** For a back-dated entry the current clock time is not the entry's time, and naming it `Now` would say it is. The ask then carries **No time**, **Enter the time**, and **Explain**.
 
-**`Enter the time` is not a free-text option, and adding it does not break the present-every-prompt rule.** That rule forbids an agent-supplied free-text option because the harness already gives one for what the options do not contain. This question asks for a time, so a specific time is an answer **within** the question rather than outside it. The harness's free-text option remains for anything else.
+**`Enter the time` is not a free-text option, and adding it does not break the present-every-prompt-to-the-engineer-through-the-selection-ui rule.** That rule forbids an agent-supplied free-text option because the harness already gives one for what the options do not contain. This question asks for a time, so a specific time is an answer **within** the question rather than outside it. The harness's free-text option remains for anything else.
 
 **A date-only entry sorts to the start of its day**, which matches the filename sort, where `-` precedes `T`.
 
@@ -66,7 +66,7 @@ Name the file and write the datetime line to match the answer. Settle the date f
 2. For a back-dated entry, offer only **No time**, **Enter the time**, and **Explain**.
 3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
 4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
-5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt rule.
+5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 6. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
 7. Name the file and write the datetime line to match the answer.
 

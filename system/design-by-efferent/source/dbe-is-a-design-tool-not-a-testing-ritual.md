@@ -48,7 +48,7 @@ Until Sun Oct 25 2026 this rule was named dbe-as-design-tool.
 Related:
 
 - the DBE vocabulary — cradle, efferent, solubility
-- the human-in-the-loop rule
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule
 - the first-turn rule
 - the tdd-designs-behavior-coverage-prevents-regression-and-neither-breaks-an-implementation rule
 - the at-the-implementation-hinge-the-engineer-chooses-a-direct-implementation-or-red-green-refactor rule — the chosen cycle this does not reject

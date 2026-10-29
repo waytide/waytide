@@ -93,7 +93,7 @@ Related:
 
 - the DBE-as-design-tool rule
 - the DBE first-turn rule
-- the controls-not-factories rule
+- the test-values-are-controls-never-factories-fixtures-or-arrange rule
 - the `control_` test-variable prefix rule
 
 ---

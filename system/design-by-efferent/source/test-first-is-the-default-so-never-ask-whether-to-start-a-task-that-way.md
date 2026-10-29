@@ -49,7 +49,7 @@ Until Mon Oct 26 2026 this rule restated the batch-size trade between attended a
 
 Related:
 
-- the human-in-the-loop rule
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule
 - the DBE-as-design-tool rule
 - the attended-or-unattended-is-chosen-when-the-work-is-started rule — the cadence question this does not forbid
 

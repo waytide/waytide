@@ -31,7 +31,7 @@ The form is deliberate. It is the form every hinge takes, and the the-hinge-cycl
 
 **Judge distinctness by what the use site states.** Keep a shape that omits an argument. Drop a chained construction and a varied receiver.
 
-Offer them through the selection UI, which supplies the free-text option. Do not add one of your own. See the present-every-prompt rule.
+Offer them through the selection UI, which supplies the free-text option. Do not add one of your own. See the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 If the human chooses one, adopt it as the cradle. If the human writes their own instead, take that actuation or enter a dialogue. Settle the actuation before writing the test file. Do not proceed to the test body until the actuation is settled.
 

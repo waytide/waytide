@@ -36,7 +36,7 @@ Until Sun Oct 25 2026 this rule was named controls-not-factories-fixtures-arrang
 Related:
 
 - the `control_` test-variable prefix rule
-- the control-string-value rule
+- the a-controls-string-value-starts-with-some rule
 - the name-concepts-literally-not-by-analogy-code-or-jargon and no-slang rules in `language`
 
 ---

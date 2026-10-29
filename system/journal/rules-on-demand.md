@@ -323,7 +323,7 @@ Trigger: When creating a journal entry for which the writer gave no time
 2. For a back-dated entry, offer only **No time**, **Enter the time**, and **Explain**.
 3. Hold **Now** to the minute. Drop the clock's seconds value from the stamp.
 4. Write seconds in a filename only where the writer stated seconds. No answer produces a resolution the writer did not give.
-5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt rule.
+5. **Enter the time** is an answer within the question, not an agent-supplied free-text option. Offering it does not break the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 6. A date-only entry sorts to the start of its day, matching the filename sort where `-` precedes `T`.
 7. Name the file and write the datetime line to match the answer.
 

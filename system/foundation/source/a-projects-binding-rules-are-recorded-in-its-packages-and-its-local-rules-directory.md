@@ -8,7 +8,7 @@ The project's **binding** rules are read at the start of every session and follo
 - **Read the rules at the start of a session and follow them: run `waytide/system/foundation/load-rules.sh` and read its whole output.** It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, since it defines the system, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal. A package's `source/` holds its full rules, one per file, and is where a rule is edited. Its `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it, and it is what is read. A rule whose source carries a `**Trigger:**` line under its title goes instead to the package's `rules-on-demand.md`, with its trigger. The loader does not print an on-demand rule: it prints the rule's trigger and the command that loads it, `waytide/system/foundation/load-rules.sh <rule-name>`. When the act a trigger names comes up, run that command and follow the rule it prints before acting. A package's `source/` and its `README.md` are not read at session start. The rules override default behavior where they conflict. Explicit user instructions still win.
 - **One file beside `rules/` is read with them and binds: `waytide/local/vocabulary.md`**, the project's own vocabulary. It is binding and its terms cannot be applied unread, exactly as a package's `vocabulary.md` is, and its terms decide over every package's. It is not a rule and does not live in `rules/`. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where it sits and why. Like `rules/`, it may not exist, and its absence is ordinary.
 - **Rules are kept separate from work artifacts.** `waytide/local/rules/` holds only rules. `waytide/system/` holds the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state. The project's working state lives beside `rules/` under `waytide/local/` — `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/` — worked with as their own conventions describe, not read as binding rules at session start. `waytide/local/vocabulary.md` sits beside them and is not working state: it is read at session start, and it is the one thing there that binds.
-- **A rule's purpose is not confined to its category.** A rule's package names the *surface* it acts on, not the purpose it serves. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
+- **A rule's purpose is not confined to its category.** A rule's package names the *surface* it acts on, not the purpose it serves. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-may-establish-a-mindset-rather-than-a-mechanic rule.
 - **Format:** frontmatter-free markdown — a `# <title>` stating the rule, the rule in prose, then short `**Why:**` and `**How to apply:**` lines. A **system package** rule is named by a dash-separated, lower-case name. A project's **own local rule** in `waytide/local/rules/` takes the ISO-8601-UTC datetime prefix (see the file-names rule).
 - **A rule's history goes in a `## History` section, placed before `Related:`.** History is what the rule used to say, when it changed, what it was named, and where it sat. The compiler leaves the section out of the package's rules file, so the session-start read does not carry it, and the full rule in `source/` keeps it. Reasoning the directive depends on is not history, even where it tells what failed before: it stays in the body, where the `**Why:**` passage is.
 - **A paragraph leads with its claim in bold.** The sentences after it support that claim. Where the support runs past six sentences, the next paragraph carries no bold lead. The absence is what marks it as continuation rather than a new claim. The six-sentence limit is STE Rule 6.6 (see the language package's waytide-prose-conforms-to-the-ste-writing-rules rule).
@@ -64,7 +64,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 ## Purpose of a rule
 
 1. A rule's package names the surface it acts on, not the purpose it serves. A rule's purpose is not confined to its category.
-2. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
+2. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-may-establish-a-mindset-rather-than-a-mechanic rule.
 
 ## Format
 
@@ -132,7 +132,7 @@ Related:
 
 - the file-names rule
 - the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the project's own vocabulary and where it sits
-- the rules-establish-a-mindset rule
+- the rules-may-establish-a-mindset-rather-than-a-mechanic rule
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 
 ---

@@ -38,11 +38,11 @@ The fifth hinge, **naming**, is **deferred to the feature's close**. Per the fir
 
 **Why:** the actuation hinge asks for a decision. An engineer answering it does not otherwise know that four more follow, what those cover, or what happens in between. Without the account they weigh the actuation as though it were the whole of what is being asked. Every question the account would have answered arrives at a later hinge instead. One at a time, in the middle of another decision. Six lines given once removes all of them.
 
-**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the free-text option** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in **Other** answer *is* the free-text option — see the present-every-prompt rule.
+**How responsibility transfers at every hinge:** where there are genuinely distinct options, present them **as options**. Where there is one, present that one the same way. **In the two cases, always offer the free-text option** — the human dictating outright, or a chat to work out the answer. Never pass a hinge without the human's acceptance. Every hinge is presented through the selection UI, whose built-in **Other** answer *is* the free-text option — see the present-every-prompt-to-the-engineer-through-the-selection-ui rule.
 
 **An option is the artifact, not a label for it.** The option reads `assert(retries == 3)` or `Controls::Upload.example(client: control_client, retries: 3)` — the line that would be written, shown as it would be written. A gloss may follow it where the difference between two candidates is not visible in the code alone. **A label standing in place of the artifact is not an option.** `Accept — assert the returned count against 3` asks the engineer to approve a description of a thing rather than to read the thing. The engineer is judging a design, and the design is in the characters.
 
-**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, and `Explain` fills the second place, per the present-every-prompt rule. The agent does not search for a second candidate to reach two.
+**So a hinge with one candidate is not an "accept" prompt.** It shows that candidate as its option, exactly as a hinge with three shows three, and selecting it is the acceptance. Nothing about the single case changes the form. The selection UI takes no fewer than two options, and `Explain` fills the second place, per the present-every-prompt-to-the-engineer-through-the-selection-ui rule. The agent does not search for a second candidate to reach two.
 
 **What is still forbidden is manufacturing a second candidate** to avoid the appearance of a foregone conclusion. Not every hinge has real alternatives. The free-text option is what keeps a lone candidate from foreclosing the answer, since the best decision is often one only the human can produce. This generalizes the the-actuation-gate-offers-candidate-actuations-as-options rule, which states the same mechanism at the first gate.
 
@@ -137,9 +137,9 @@ Related:
 
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
 - the first-turn rule — the three test hinges produce turn one
-- the human-in-the-loop rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — actuation and solubility were the original two hinges. The implementation hinge is that solubility judgment made an explicit acceptance
 - the the-actuation-gate-offers-candidate-actuations-as-options rule — the same mechanism at the first gate
-- the one-outcome-at-a-time rule
+- the advance-one-outcome-at-a-time-and-stop-at-every-gate-in-attended-work rule
 
 ---
 

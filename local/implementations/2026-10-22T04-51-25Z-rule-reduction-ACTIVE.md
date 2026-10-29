@@ -2026,7 +2026,9 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 22. **Sessions on requests governed by those instructions behave the same after the change.** *Moderate confidence.*
    - **Held, 2026-10-29.** The rules before passed 36 of 38, and after 35 of 38.
 23. **A mechanical check finds live references, to a rule by name or to a path, that point at nothing, in at least 5 rules.** *Moderate confidence.*
+   - **Held, 2026-10-29.** In 14 files.
 24. **Each can be reconciled by correcting the reference alone, with no rule's directives changed.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 32 citations and one path were corrected, and no directive changed.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2406,6 +2408,19 @@ The read fell from 177,387 characters to 177,172.
 **The first step is a mechanical check**: every rule cited by name, and every path, in the rules' full texts, compressed texts, the vocabularies, the local rules, and the scripts, checked against what exists.
 
 **Forecasts 23 and 24 are what this phase tests.**
+
+### Live references — the check and the corrections, 2026-10-29
+
+**The check found 17 live references that matched nothing**: 10 rule names and 7 paths, outside each rule's History section.
+
+- **9 were old names of renamed rules**, cited in 14 files. Each one's current name is in the rule's own History or in the commit that renamed it, as *human-in-the-loop* became the-human-deliberates-the-hinges-never-the-pass-fail-bar. The 32 citations now carry the current names.
+- **1 was a stale path.** The language vocabulary placed the ETE rules at `waytide/system/language/ete/`, and they are under `waytide/system/language/source/ete/`.
+- **7 are deliberate** and are left: an example declaration's file name, an optional file a rule says is not read, an install step that renames an old directory, a reason in a rule's Why, the Ruby package's install place, an example of the path form a rule says not to write, and a rule in the Ruby package, cited across packages as a citation and not a dependency.
+
+**A second check, the compiled rules included, finds only the 7 deliberate ones.** The tests pass.
+
+- **Forecast 23 held:** stale references stood in 14 files.
+- **Forecast 24 held:** each was corrected by its reference alone, and no directive changed.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5646,3 +5661,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:00:37 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:07:47 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:15:33 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:16:28 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:07 PM PT

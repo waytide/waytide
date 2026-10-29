@@ -46,8 +46,8 @@ Until Tue Oct 27 2026 this rule called such a test one that "passes when first r
 Related:
 
 - the DBE-as-design-tool rule
-- the human-in-the-loop rule — exit on solubility
-- the one-outcome-at-a-time rule
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule — exit on solubility
+- the advance-one-outcome-at-a-time-and-stop-at-every-gate-in-attended-work rule
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule — the implementation hinge
 - the testing package's vocabulary — verified, not green
 - the `testing` vocabulary — *uncontested*

@@ -226,7 +226,7 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 ## Purpose of a rule
 
 1. A rule's package names the surface it acts on, not the purpose it serves. A rule's purpose is not confined to its category.
-2. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-establish-a-mindset rule.
+2. Judge a rule that establishes a stance by the mindset it establishes, not by surface conformance. See the rules-may-establish-a-mindset-rather-than-a-mechanic rule.
 
 ## Format
 

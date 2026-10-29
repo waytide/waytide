@@ -39,9 +39,9 @@ Until Sun Oct 25 2026 this rule was named show-feature-test-output-after-impleme
 Related:
 
 - the the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rule
-- the human-in-the-loop rule
+- the the-human-deliberates-the-hinges-never-the-pass-fail-bar rule
 - the each-hinge-displays-the-actuation-as-its-anchor-and-the-contexts-once rule
-- the one-outcome-at-a-time rule
+- the advance-one-outcome-at-a-time-and-stop-at-every-gate-in-attended-work rule
 
 ---
 
