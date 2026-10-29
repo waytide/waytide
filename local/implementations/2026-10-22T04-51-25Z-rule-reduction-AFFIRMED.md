@@ -36,6 +36,8 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 **The integration branch is merged into `master` on Thu Oct 29 2026.** `master` was first merged into the integration branch, in its worktree, so that `master`'s own 110 commits since the branch point were carried into the experiment's layout: each change to a renamed rule went into its new source and its compressed text, the old one-file-per-rule compiled files stayed deleted, and `master`'s new rules took compressed texts and, where one fits, a trigger. A fresh agent re-checked each compressed text the merge edited: 30 rules, 822 directives, 20 repairs. The observation rule was renamed to an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes, after `master`'s `Recorded`, and `master`'s copy of the decision-tag rule was dropped for the experiment's, which had renamed it. `master` then moved forward to the integration branch, with no conflict. The tests pass on `master`, and its session-start read is 170,400 characters.
 
+**At the engineer's confirmation, the experiment's branches and worktree are deleted on Thu Oct 29 2026**: the integration branch `experiment/worktree/rule-reduction`, its 14 phase branches, locally and on `origin`, and the worktree `waytide-experiment-worktree-rule-reduction`. Every branch was contained in `master` before it was deleted.
+
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
 
 - **Five rules compressed:** #2, #7, #11, #12, and #15. Each passed the predictability simulation, with one miss in 150 answers.
@@ -5844,3 +5846,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:11 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:12:20 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 3:00:11 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 3:02:03 PM PT
