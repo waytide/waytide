@@ -2530,6 +2530,10 @@ The read fell from 177,387 characters to 177,172.
 
 **The items rule's one use of *overtaken* is left as written**, since the substitution orders no sweep.
 
+### Phase 13, local-vocabulary, is affirmed — 2026-10-29
+
+**The engineer affirmed the local-vocabulary phase.** The project vocabulary's one substitution, *superseded*, is compressed and now stands in the `foundation` vocabulary, and `local/vocabulary.md` is removed.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5785,3 +5789,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:48:46 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:50:19 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:54:27 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:45 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:58:54 PM PT
