@@ -2485,6 +2485,10 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 26 missed.** The engineer kept the ask-at-once interruption and left the attended outcome's five questions to the batch-size item, so the work asks no fewer questions. What changed is the questions' form: each now carries real answers in all four of its places, where `Explain` took one.
 
+### Phase 12, prompt-turns, is affirmed — 2026-10-29
+
+**The engineer affirmed the prompt-turns phase.** The `Explain` option is gone, the rules no longer describe the free-text option, and a lone candidate is offered with its negative. The ask-at-once rule is kept, and the attended outcome's five questions are left to the batch-size item.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5734,3 +5738,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:29:05 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:38:53 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:22 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:43:12 PM PT
