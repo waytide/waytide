@@ -19,8 +19,6 @@ The versioning package's vocabulary. One term, and it is the one the package exi
 1. This is the versioning package's vocabulary. It holds one term.
 2. The rest of a version number is semantic versioning, defined elsewhere and not restated here.
 3. Binding: use this term with this meaning in rules, release notes, prose, and dialogue.
-4. Every word here is approved in the STE dictionary, or reserved in a category its entry names.
-5. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each status means, what a reserved word's entry states, and what silence in an entry means.
 
 ## product generation
 
@@ -38,6 +36,7 @@ The versioning package's vocabulary. One term, and it is the one the package exi
 ## Compression
 
 - 2026-10-29, compressed: 1727 → 1685 characters; checked: 18 directives, 17 kept, 0 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
+- 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 
 ---
 
@@ -56,3 +55,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT

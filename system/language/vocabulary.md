@@ -82,8 +82,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 1. This is the language package's vocabulary: the terms it defines and the word substitutions it enforces.
 2. It is binding. Use these terms and swaps in code, tests, rules, designs, commits, and prose.
-3. Every word here is approved in the STE dictionary, or reserved in a category its entry names. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence in an entry means.
-4. The principles that govern word selection stay as rules: `name-concepts-literally-not-by-analogy-code-or-jargon`, `no-slang`, `communicate-plainly-and-name-the-actual-thing`, and `language-is-used-precisely-here-and-words-are-load-bearing`. This file holds the lexicon they produce.
+3. The principles that govern word selection stay as rules: `name-concepts-literally-not-by-analogy-code-or-jargon`, `no-slang`, `communicate-plainly-and-name-the-actual-thing`, and `language-is-used-precisely-here-and-words-are-load-bearing`. This file holds the lexicon they produce.
 
 ## Terms
 
@@ -157,6 +156,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 ## Compression
 
 - 2026-10-29, compressed: 16276 → 12750 characters; checked: 92 directives, 87 kept, 5 less precise, 0 lost; 2 repairs, re-checked: 68 directives, 67 kept, 1 less precise, 0 lost; what is still not kept was judged reasons or background
+- 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 
 ---
 
@@ -207,3 +207,4 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 9:02:44 AM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:57:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT

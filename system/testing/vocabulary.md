@@ -28,7 +28,6 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 
 1. This is the testing package's vocabulary for controls-based test-writing: its terms and its word substitutions.
 2. It is binding. Use these terms and substitutions in tests, rules, prose, and dialogue.
-3. Every word here is approved in the STE dictionary, or reserved in a category its entry names. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence in an entry means.
 
 ## Terms
 
@@ -67,6 +66,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 ## Compression
 
 - 2026-10-29, compressed: 4004 → 3693 characters; checked: 39 directives, 38 kept, 0 less precise, 1 lost; nothing repaired, the items not kept being reasons or background
+- 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 
 ---
 
@@ -89,3 +89,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Fri Aug 14 2026 at 1:29:25 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:00:02 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT

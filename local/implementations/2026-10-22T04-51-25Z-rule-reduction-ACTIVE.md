@@ -2330,6 +2330,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecasts 21 and 22 are what this phase tests.**
 
+### Single statement — the inventory, and the vocabularies' head line, 2026-10-29
+
+**The inventory found 39 instructions written out in more than one place.** Outside each one's own rule, the copies come to about 20,000 characters of the read, 11%, and about 15,500 of the on-demand rules. It is in the appendix `inventory.md` beside this record.
+
+**At the engineer's direction, the head line of each vocabulary is left out of its compressed text.** The line says every word in the vocabulary is approved or reserved, and cites the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule. That rule is in the read and says the same of every vocabulary, so nothing is lost. The line stays in each vocabulary's full text, where the rule requires it. The read fell from 180,146 characters to 178,474.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5560,3 +5566,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:13:54 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:12 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:38 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:27 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:57 AM PT

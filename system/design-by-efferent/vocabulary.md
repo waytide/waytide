@@ -129,9 +129,8 @@ A word removed from use with nothing in its place. **This is not a substitution.
 
 1. This is the Design By Efferent (DBE) vocabulary. Use these terms, with these meanings, in code, tests, rules, designs, commits, and prose.
 2. This is the canonical glossary. The deeper docs defer to it.
-3. Every word here is approved in the STE dictionary, or reserved in a category its entry names. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
-4. Prefer these words over synonyms. Do not reintroduce a discontinued term.
-5. The one-liner:
+3. Prefer these words over synonyms. Do not reintroduce a discontinued term.
+4. The one-liner:
 
 > The AI **generates** straight through, and **waits** at the **hinges** — the **subtle**, **load-bearing** decisions — for the human to **deliberate**. Everything else is **mechanical**.
 
@@ -213,6 +212,7 @@ A word removed from use with nothing in its place. **This is not a substitution.
 ## Compression
 
 - 2026-10-29, compressed: 17966 → 12759 characters; checked: 120 directives, 109 kept, 10 less precise, 1 lost; 6 repairs, re-checked: 85 directives, 81 kept, 3 less precise, 1 lost; what is still not kept was judged reasons or background
+- 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 
 Related:
 
@@ -266,3 +266,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 2:06:30 PM PT
 Changed by Scott Bellware on Mon Aug 17 2026 at 9:41:07 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:22:43 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
