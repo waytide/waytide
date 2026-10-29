@@ -44,8 +44,8 @@ Until Thu Oct 29 2026 the How to apply line said to cut the rest. The engineer s
 
 Related:
 
-- the lead-with-a-summary-before-details rule
-- the communicate-plainly-name-the-thing rule
+- the lead-with-a-summary-then-the-details rule
+- the communicate-plainly-and-name-the-actual-thing rule
 - the solubility rule
 
 ---

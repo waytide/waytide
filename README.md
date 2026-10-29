@@ -1,4 +1,4 @@
-# Waytide: Human-Agent Relations
+# Waytide: Human-in-the-Loop Harness
 
 By [The Eventide Project](https://eventide-project.org)
 

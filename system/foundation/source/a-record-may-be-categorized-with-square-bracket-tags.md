@@ -47,7 +47,7 @@ Related:
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — what `[suspended]` means
 - the the-implementations-directory-holds-one-record-per-implementation rule — the states of `[experiment]` and `[feature]`
 - the the-items-directory-holds-one-file-per-item rule — the states of an item, and of `[work-item]`
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — the one state of `[observation]`
+- the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — the one state of `[observation]`
 - the `journal` package's a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — where a journal entry's `**Tags:**` line sits
 
 ---
@@ -77,3 +77,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT

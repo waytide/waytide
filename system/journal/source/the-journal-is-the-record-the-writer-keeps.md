@@ -28,6 +28,8 @@
 
 **The journal is committed with the project.** It is not ignored and it is not kept outside the repository. A second writer on the project reads it, which is what makes it a record rather than a private note.
 
+**This is the shared journal, and a writer may also keep a private one.** A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it. An entry the `new entry` directive starts goes here, and never to the private journal.
+
 **The commit message is `Journal: <subject>`.** The subject is the entry's, and nothing follows it.
 
 **It carries no date.** A date in the subject would cost 17 characters against a line the `git` package's a-commit-messages-subject-stops-at-50-characters-and-its-body-wraps-at-72 rule caps at 50, and it would sit at the tail, where truncation takes it first. So it would be carried at the subject's expense, and no reader would see it in a listing. The entry's filename holds the date.
@@ -121,6 +123,12 @@ Journal: I finished the basic implementation of E…
 Journal: Idea
 ```
 
+## The private journal
+
+1. This is the shared journal. A writer may also keep a private one.
+2. A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
+3. An entry the `new entry` directive starts goes in the shared journal, never the private one.
+
 ## Compression
 
 - 2026-10-24, compressed: compression 0.41, change 0.65, solubility 23 → 48, clarity 0.40 → 0.77, 37 directives, 37 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
@@ -152,6 +160,7 @@ Related:
 - the foundation package's working-state-artifacts-carry-a-provenance-footer rule — the footer
 - the foundation package's log rule — the agent's record, and the one this is not
 - the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule — the local-time stamp stated at the entry
+- the private-journal-convention rule — the private journal, kept outside the repository
 
 ---
 
@@ -189,3 +198,7 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Sat Oct 24 2026 at 3:17:47 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT

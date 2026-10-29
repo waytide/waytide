@@ -15,7 +15,7 @@ The things below are printed once per session, verbatim. Four are always printed
 First the title, on its own:
 
 ```
-Waytide: Human-Agent Relations
+Waytide: Human-in-the-Loop Harness
 ```
 
 **It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
@@ -137,7 +137,7 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 12. First the title, on its own:
 
 ```
-Waytide: Human-Agent Relations
+Waytide: Human-in-the-Loop Harness
 ```
 
 13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
@@ -229,6 +229,7 @@ Loading Waytide will take a few moments.
 - 2026-10-27, re-checked: 53 directives, 51 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 52, clarity 0.90 → 0.90; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 52 → 52, clarity 0.90 → 0.90; checked: 51 directives, 51 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: point 12's title reads *Waytide: Human-in-the-Loop Harness*, as the body's does; not checked
 
 ## History
 
@@ -240,7 +241,7 @@ The package set stood between the title and the copyright until 2026-10-10, beca
 
 The list carried `**on**  *off*` under it briefly on 2026-08-23.
 
-*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03. The four-sentence paragraph *A Generalized Description of Waytide* was settled on 2026-08-20, and with the formulation it lives in the `README.md`.
+*Waytide: Human-Agent Relations* was settled as the category line on 2026-08-03, and it was the title until 2026-10-28, when the engineer changed it to *Waytide: Human-in-the-Loop Harness*. The four-sentence paragraph *A Generalized Description of Waytide* was settled on 2026-08-20, and with the formulation it lives in the `README.md`.
 
 The license line read `Licensed under the Eventide Common Interest License` until 2026-08-23. Its italics held the name apart from the copyright while the agent printed the display as markdown.
 
@@ -292,3 +293,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:13:54 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:09 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 6:57:20 PM PT

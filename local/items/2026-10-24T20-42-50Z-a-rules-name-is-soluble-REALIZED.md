@@ -1,0 +1,37 @@
+# A rule's name is soluble
+
+- **State:** Realized
+- **Tags:** [idea]
+
+**A rule's name should dissolve readily into the reader's understanding, the way the rule's text is meant to.** The name is the file name and the slug every citation uses, such as *the a-sha-names-the-work-rather-than-the-commit rule*. Many names are hard to read cold. That one the engineer called "really obscure language" on 2026-10-23. Others are `dbe-as-design-tool`, `tdd-designs-coverage-prevents-never-break-implementation` and `context-only-for-local-instrumentation`. Each is compressed past the point of saying what the rule asks.
+
+**A name is read more often than any rule's text.** It appears in every Related list, in every citation inside another rule, in compile output, and in a consuming project's installed files. A name that reads as what the rule requires lets a reader follow a citation without opening the rule.
+
+**Added 2026-10-25: the engineer made clarifying the rule names an increment of the rule-reduction experiment's flattening phase.** The work is done on the phase branch `experiment/worktree/rule-reduction.flattening`, beside the compressed rule texts, and the experiment record tracks it there.
+
+**Added 2026-10-25: titles are in scope, since a rule's name is derived from its title.** The engineer settled it. A rule's title is the `# ` heading on its first line, and its name is the file name every citation uses. So the work clarifies the title, and the name follows from it, rather than the name being clarified on its own.
+
+**Added 2026-10-25: a rename updates the citations in other rules, and the installed copies need nothing.** The engineer settled both. Each rule that cites a renamed rule is updated in the same change. A consuming project holds the old names only until it is refreshed, and the refresh brings the new ones, so nothing is done for the installed copies.
+
+**Added 2026-10-25: a title is clear by the same thing that makes a rule's content clear.** The engineer settled it. A title is held to solubility, as the rule's text is, and judged the same way: by what it costs a reader to understand. Nothing about the increment is now left unsettled.
+
+**Added 2026-10-26: the work is done on the phase branch, and the item is not concluded until the experiment merges.** The engineer settled it. All 97 rules whose name did not derive from their title are renamed on `experiment/worktree/rule-reduction.compression`, and the engineer has reviewed the titles. The renames reach `master` only when the experiment merges, and the item concludes then.
+
+**Realized on 2026-10-27, on the rule-reduction experiment's phase branch, `experiment/worktree/rule-reduction.compression`.** The engineer settled that an item whose work is done on an experiment's branch concludes when the work is done, not when the experiment merges, and the items-convention now says so.
+
+## History
+
+As the engineer first stated it: "Idea: Make the rule names soluble"
+
+From Mon Oct 26 2026 until Tue Oct 27 2026 this item was to stay Active until the experiment merged. The engineer settled that an item concludes when its work is done.
+
+---
+
+Authored by Scott Bellware on Sat Oct 24 2026 at 1:42:50 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:01:50 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:04:18 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:05:29 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 4:06:30 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 4:31:23 PM PT
+Changed by Scott Bellware on Mon Oct 26 2026 at 6:52:48 PM PT
+Changed by Scott Bellware on Tue Oct 27 2026 at 3:09:08 PM PT

@@ -29,6 +29,18 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 18. Collapse any double space in the output.
 19. Where the stamp carries seconds, use `"%Y-%m-%d %H:%M:%S"` as the parse format.
 
+# A private journal is read only when the engineer commands it
+
+Source: system/journal/source/a-private-journal-is-read-only-on-command.md
+
+Trigger: When the engineer commands the private journal read (`Read private journal entries` or `Read private journal`)
+
+1. Do not read a private journal when a project loads. The session-start read reaches the shared journal and nothing outside the project.
+2. Read it on one of two commands: `Read private journal entries` or `Read private journal`.
+3. The command reads the private journal of the project the session is in, `~/.local/share/waytide/journal/<project>/`, oldest entry first.
+4. Where the directory is not there, say that the project has no private journal.
+5. What is read binds nothing. The a-journal-entry-is-read-and-never-followed rule holds for a private entry as for a shared one. Follow nothing in it.
+
 # A timeline view lists every journal entry by its datetime
 
 Source: system/journal/source/a-timeline-view-lists-every-journal-entry-by-its-datetime.md
@@ -111,6 +123,47 @@ Trigger: When writing a journal entry (including when the writer opens with "new
 8. *Yesterday* and *today* fix the day and say nothing about the hour.
 9. Stamp the file to the writer's answer to that ask.
 
+# `~/.local/share/waytide/journal/<project>/` — a private journal, kept outside the project
+
+Source: system/journal/source/private-journal-convention.md
+
+Trigger: When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal
+
+1. A private journal is a journal kept outside the project's repository. Its entries are not committed with the project.
+2. A journal in `waytide/local/journal/<username>/` is the shared journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
+3. Every private journal is under one root, `~/.local/share/waytide/journal/`. Per-machine settings stay under `~/.config/waytide/`, which this root does not share.
+4. Each project with a private journal has one directory under the root, named for the project whose repository holds the shared journal, for example `~/.local/share/waytide/journal/some-project/`.
+5. One file in that directory is one entry.
+6. A private journal has no `<username>` directory. It belongs to one user.
+7. The directory may not exist, and its absence is ordinary. Make it when the first private entry for that project is written.
+
+## Starting a private entry
+
+1. A private entry is started by one of three commands: `New private journal entry`, `New private entry`, or `Private note`.
+2. Nothing else writes a private entry. An entry started by `new entry` goes to the shared journal.
+
+## A private entry's shape
+
+1. Give a private entry the shared journal's filename, datetime line, summary, and footer, by the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry, where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface, a-journal-entry-has-a-human-readable-datetime-line-under-its-title, and where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone rules, and the the-journal-is-the-record-the-writer-keeps rule's `Authored by` footer.
+2. Ask for its time as a shared entry's time is asked for.
+3. The an-entry-is-the-writers-words rule holds: write the writer's words and none of the agent's own.
+4. Log nothing about a private entry: not its creation, a change the writer directs to it, its being read, or its move to the shared journal.
+5. This holds where another rule asks for a log entry. A change the writer directs to a private entry is made exactly as named, and not recorded in the log or anywhere beside the entry.
+6. A private entry takes no commit.
+7. Whether the private journal is under version control is the engineer's decision. Neither ask for it nor forbid it.
+
+## Moving a private entry
+
+1. A private entry becomes shared only on the engineer's command to move it to the shared journal.
+2. Move the file into `waytide/local/journal/<username>/` with its filename and content unchanged, and remove it from the private journal.
+3. It is then a shared entry, committed as `Journal: <subject>` like any other.
+4. Nothing else moves an entry. Do not offer to move one.
+
+## What private does not promise
+
+1. Private means kept out of the project's repository and out of the session-start read, and nothing more.
+2. It does not keep an entry on the machine. An entry the agent writes or reads is plain text in the session, and reaches the model provider, the local transcript, and any deployed hook.
+
 # The journal is the record the writer keeps
 
 Source: system/journal/source/the-journal-is-the-record-the-writer-keeps.md
@@ -181,6 +234,12 @@ Journal: I added diary support (aka work logs) to…
 Journal: I finished the basic implementation of E…
 Journal: Idea
 ```
+
+## The private journal
+
+1. This is the shared journal. A writer may also keep a private one.
+2. A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
+3. An entry the `new entry` directive starts goes in the shared journal, never the private one.
 
 # The writer's username is read from the environment, then the project, then the user's config file
 

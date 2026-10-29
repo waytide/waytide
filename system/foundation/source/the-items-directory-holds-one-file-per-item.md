@@ -49,10 +49,10 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Suspended** — paused, not ended.
 - **Superseded** — another item replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
-- **Stated** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule.
+- **Recorded** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule.
 - **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
 
-**`Stated` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
+**`Recorded` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
 
 **`Open` is the starting word for every other item**, whether its thinking is settled or not. **`Active` is the in-progress state**, and an item reaches it when its work starts. **As the engineer stated it:** Active is the in-progress state. Absence is not a state, and an item without a line is a defect.
 
@@ -123,7 +123,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 31. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
 32. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
 33. Make an item **Active** when its work starts. **Active** is the in-progress state.
-34. An observation, and only an observation, starts and stays **Stated**.
+34. An observation, and only an observation, starts and stays **Recorded**.
 35. **Realized** — what it describes exists.
 36. **Deferred** — kept deliberately, with no date and no one working toward it.
 37. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
@@ -158,6 +158,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-27, re-checked: 63 directives, 56 kept, 7 less precise, 0 lost, every repair kept; 53, 56, and 61 are kept by the earlier checks
 - 2026-10-27, revised: the claim that no tag is reserved is removed, and a tag means what a rule about it says; checked: 71 directives, 69 kept, 2 less precise, 0 lost; 62 and 69 are kept by the earlier checks
 - 2026-10-28, revised: Why points removed, solubility 46 → 45, clarity 0.55 → 0.71; checked: 57 directives, 57 kept, 0 less precise, 0 lost
+- 2026-10-28, revised: an observation's state is `Recorded`, not `Stated`, a term the engineer settled; not checked
 
 ## History
 
@@ -182,7 +183,7 @@ Related:
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry an item takes
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — an observation, which is an item and carries the promotion path to a rule
+- the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — an observation, which is an item and carries the promotion path to a rule
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and an-item-that-sequences-work-contains-no-code-samples rules
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
 
@@ -229,3 +230,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:19:11 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:26:00 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT

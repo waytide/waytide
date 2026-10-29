@@ -92,7 +92,7 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 6. Write the entry on each change of the item's `**State:**` line.
 7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item.
 8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
-9. An observation is `Stated` and never moves, so it takes a creation entry only.
+9. An observation is `Recorded` and never moves, so it takes a creation entry only.
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
 11. Do not log prose that settles nothing either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section.
 12. The provenance footer records those unlogged changes.
@@ -109,7 +109,7 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 23. Carry the same mood into the commit subject the entry travels in.
 24. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
 25. This rule states the obligation once, for every item.
-26. The an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
+26. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
 27. The the-items-directory-holds-one-file-per-item rule points here and keeps no second copy.
 28. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
 
@@ -212,7 +212,7 @@ Trigger: When creating, renaming, changing the state of, or referencing an item 
 4. Each convention fixes its own state words. This rule fixes only where the word is rendered.
 5. Every item and every implementation record carries a suffix. Each carries a state line from the moment it is written, and the in-progress state of each is **Active**.
 6. A name with no suffix is a defect.
-7. An observation's suffix is always `-STATED`.
+7. An observation's suffix is always `-RECORDED`.
 8. The file's contents are unchanged. Add no suffix to any file's contents.
 9. The state inside the file is the `**State:**` line and nothing else.
 10. The file still ends with its provenance footer.
@@ -593,9 +593,9 @@ Trigger: When writing or revising an item in waytide/local/items/ that sequences
 10. At implementation time, generate code only on the user's explicit instruction.
 11. Generate it in the increments the user chooses.
 
-# An observation is a working hypothesis whose one state, Stated, never changes
+# An observation is a working hypothesis whose one state, Recorded, never changes
 
-Source: system/foundation/source/an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes.md
+Source: system/foundation/source/an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes.md
 
 Trigger: When recording, revising, or promoting an observation in waytide/local/items/
 
@@ -608,11 +608,11 @@ Lines 1–6 below are the opening statements, which come before any section head
 5. An observation is tagged `[observation]`.
 6. The tag is what makes a record an observation.
 
-## `Stated` is an observation's only state, and it never changes
+## `Recorded` is an observation's only state, and it never changes
 
-1. An observation carries `**State:** Stated` from the moment it is written.
+1. An observation carries `**State:** Recorded` from the moment it is written.
 2. It keeps that state for the rest of its life.
-3. Its filename ends `-STATED`.
+3. Its filename ends `-RECORDED`.
 4. It carries no `**Why this state:**` line.
 5. An observation has no lifecycle.
 6. It is never realized, abandoned, lapsed, superseded, or suspended.
@@ -630,10 +630,10 @@ Lines 1–6 below are the opening statements, which come before any section head
 2. Also use one for a method or definition the engineer has not ratified as a convention.
 3. When in doubt between a rule and an observation, prefer an observation.
 4. **Format:** use the same frontmatter-free markdown as rules.
-5. The file starts with a `# <title>`, then a `**State:** Stated` line.
+5. The file starts with a `# <title>`, then a `**State:** Recorded` line.
 6. Next comes a `**Tags:**` line carrying `[observation]`, then the content in prose.
 7. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
-8. The filename ends `-STATED`.
+8. The filename ends `-RECORDED`.
 9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
 10. **Promotion:** write the rule in `waytide/local/rules/`.
 11. Name the observation in the rule, and add the `**Promoted to:**` line to the observation.
@@ -907,7 +907,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 31. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
 32. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
 33. Make an item **Active** when its work starts. **Active** is the in-progress state.
-34. An observation, and only an observation, starts and stays **Stated**.
+34. An observation, and only an observation, starts and stays **Recorded**.
 35. **Realized** — what it describes exists.
 36. **Deferred** — kept deliberately, with no date and no one working toward it.
 37. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
@@ -1043,7 +1043,7 @@ Trigger: When the engineer types `load waytide`, or when changing the startup di
 12. First the title, on its own:
 
 ```
-Waytide: Human-Agent Relations
+Waytide: Human-in-the-Loop Harness
 ```
 
 13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.

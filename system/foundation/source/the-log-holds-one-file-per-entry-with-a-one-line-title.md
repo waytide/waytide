@@ -86,7 +86,7 @@ Related:
 
 - the file-names rule — the shared filename convention
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — a new rule pairs with a log entry
-- the an-observation-is-a-working-hypothesis-whose-one-state-stated-never-changes rule — its recording step logs too
+- the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — its recording step logs too
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — an item, deferred work included, logs on creation and on each change of state
 - the the-logs-directory-holds-the-contemporaneous-historical-records rule — the contemporaneous, historical records this sits among
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the `**Tags:**` line an entry carries, in the one form
@@ -129,3 +129,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT
+Changed by Scott Bellware on Sun Oct 25 2026 at 2:00:23 PM PT

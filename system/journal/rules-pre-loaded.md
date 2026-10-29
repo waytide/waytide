@@ -70,3 +70,4 @@ Source: system/journal/source/the-journal-is-read-at-the-start-of-a-session-with
 17. Give no summary of it.
 18. Give no count of its entries.
 19. Do not name what the writer was last thinking about.
+20. Do not read the writer's private journal. It is kept outside the project and read only on the engineer's command, per the a-private-journal-is-read-only-on-command rule.
