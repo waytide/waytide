@@ -1998,6 +1998,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 11. **On requests governed by a triggered rule, sessions with the trigger index score lower than sessions with the full read**, because the agent must notice the trigger before acting. *Moderate confidence.*
    - **Missed, 2026-10-29.** The index read scored 49 of 50, the full read 48 of 50, and every request governed by an on-demand rule scored 5 of 5 on both sides.
 12. **Where the act runs through a script that prints its rule, the triggered rule is applied as reliably as a pre-loaded one.** *Moderate confidence.*
+13. **In real sessions, an index session runs the loader for the on-demand rule that governs its request before acting, in at least 80% of sessions.** *Moderate confidence.*
+14. **On requests written without sight of the triggers, real index sessions pass no more than 10 points below real full sessions.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2094,6 +2096,19 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 **Every one of the seven requests governed by an on-demand rule scored 5 of 5 on both sides.** Whether each index session read its on-demand rule was not checked, since only the answers were scored.
 
 **The index sessions read less.** Each index session used about 107,000 to 128,000 tokens. Each full session used about 165,000 to 170,000.
+
+### Triggers — a confirming test, its method, 2026-10-29
+
+**At the engineer's direction, a second comparison closes two gaps in the first.** In the first, the triggers were written with the ten test requests in view, and the sessions read a prepared file in place of running the session start.
+
+- **Ten new requests**, each governed by an on-demand rule, are written by an agent shown the on-demand rules without their triggers, with a pass condition for each.
+- **Real sessions**: each runs `claude -p` with the request as its prompt, in its own copy of the repository with its own git history, so the session-start hook and the loader run as in use and no session sees another's writes.
+- **The index side** is the triggers branch as built. **The full side** is the same copy with the trigger lines removed and the rules recompiled, so every rule is pre-loaded.
+- **Five runs per request on each side**, 100 sessions.
+- **Each index transcript is checked** for whether the session ran the loader for the governing rule before acting.
+- **Scoring is blind**: each scorer sees a request's ten final replies and the files each session changed, shuffled, against the pass condition.
+
+**Forecasts 13 and 14 are what this tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5299,3 +5314,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:36:49 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:37:28 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:40:29 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:54:47 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 8:10:00 PM PT
