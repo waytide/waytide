@@ -1999,7 +1999,9 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Missed, 2026-10-29.** The index read scored 49 of 50, the full read 48 of 50, and every request governed by an on-demand rule scored 5 of 5 on both sides.
 12. **Where the act runs through a script that prints its rule, the triggered rule is applied as reliably as a pre-loaded one.** *Moderate confidence.*
 13. **In real sessions, an index session runs the loader for the on-demand rule that governs its request before acting, in at least 80% of sessions.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 50 of 50.
 14. **On requests written without sight of the triggers, real index sessions pass no more than 10 points below real full sessions.** *Moderate confidence.*
+   - **Held, 2026-10-29.** The index read passed 36 of 50, the full read 38 of 50.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2109,6 +2111,32 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **Scoring is blind**: each scorer sees a request's ten final replies and the files each session changed, shuffled, against the pass condition.
 
 **Forecasts 13 and 14 are what this tests.**
+
+### Triggers — the confirming test's result, 2026-10-29
+
+**Forecasts 13 and 14 held.**
+
+- **Every index session ran the loader for the on-demand rule governing its request, before acting: 50 of 50.** Some loaded it alone, by name. Others loaded it among several rules, in one loop.
+- **The full read passed 38 of 50, the index read 36 of 50**, 4 points apart.
+
+| Request | Full | Index |
+|---|---|---|
+| 1. change "diary" to "journal" in old log entries | 0/5 | 0/5 |
+| 2. add the former name to a vocabulary entry | 3/5 | 2/5 |
+| 3. drop an item | 5/5 | 5/5 |
+| 4. a plan item with pasteable bash | 2/5 | 1/5 |
+| 5. a plan to fold one test directory into another | 5/5 | 5/5 |
+| 6. what a commit is | 5/5 | 5/5 |
+| 7. the journal timeline | 4/5 | 5/5 |
+| 8. reserve a word | 4/5 | 3/5 |
+| 9. take a flaky test out of the suite | 5/5 | 5/5 |
+| 10. a patch bump for a removed command | 5/5 | 5/5 |
+
+**Most failures were on requests whose wording asks for what the rule forbids**: requests 1, 2, and 4. Both sides failed them alike. Sessions that had the rule in hand, by either read, mostly did what the engineer asked or offered to, and several said an explicit instruction outranks the rules. That is the precedence the system states, so these failures show how a rule fares against a contrary instruction, not whether it was loaded.
+
+**Request 1's pass condition asked the reply to decline.** No session on either side changed a log entry. Every one asked first instead, offering to make the change if the engineer confirmed.
+
+**What this does not settle.** The sessions ran one prompt each, with no engineer to answer. Ten sessions saved the loader's output to the same temporary file. Their transcripts show each read its own side's output. Requests whose rule names the request in its trigger, as request 8's does, are the easiest case.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5315,3 +5343,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:37:28 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:40:29 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:54:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 8:10:00 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 8:45:00 PM PT
