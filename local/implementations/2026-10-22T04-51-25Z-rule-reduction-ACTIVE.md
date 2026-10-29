@@ -2522,6 +2522,14 @@ The read fell from 177,387 characters to 177,172.
 
 **Forecast 28 held.**
 
+### Local vocabulary — the substitution moves to `foundation`, 2026-10-29
+
+**At the engineer's direction, the *superseded* substitution moves from `local/vocabulary.md` to the `foundation` vocabulary**, so that every project that installs `foundation` writes *superseded*, not only this repository. It takes its full text and its compressed points as phase 13 checked them, and the vocabulary's History records where it stood before.
+
+**`local/vocabulary.md` is removed**, since the substitution was all it held. Its absence is ordinary: the rules name it whether or not it exists, and `AGENTS.md` already describes it as not existing here.
+
+**The items rule's one use of *overtaken* is left as written**, since the substitution orders no sweep.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5776,3 +5784,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:46:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:48:46 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:50:19 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:54:27 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:45 PM PT
