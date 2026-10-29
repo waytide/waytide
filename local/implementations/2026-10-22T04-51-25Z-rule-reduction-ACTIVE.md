@@ -2010,6 +2010,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** The listing side passed 14 of 15, the read-and-withhold side 12 of 15.
 18. **When the engineer turns a listed package back on during a session, the session loads it with its listed command before applying its rules, in at least 80% of sessions.** *Moderate confidence.*
    - **Held, 2026-10-29.** 5 of 5.
+19. **The vocabularies and the local rules can be compressed by at least a third, with no definition or directive lost after repair.** *Moderate confidence.*
+20. **Sessions on requests governed by the local rules and the vocabularies' terms behave the same with the compressed forms as with the full ones.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2241,6 +2243,16 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 ### Phase 6, active-packages-only, is affirmed — 2026-10-29
 
 **The engineer affirmed the active-packages-only phase.** The loader lists a deactivated package with the command that loads it, in place of printing its rules. In a project deactivating two packages, the read was 19% smaller, sessions behaved the same, and every session loaded a reactivated package before using it.
+
+### Phase 7, local-compression, starts — 2026-10-29
+
+**The phase asks whether the parts of the read phase 1 left whole can be compressed as the package rules were**, with sessions behaving the same: the six package vocabularies, 65,775 characters, and this project's six local rules, 37,966. Together they are about 45% of the read.
+
+**Each is printed whole now, footer included.** The provenance footers alone are about 14,800 characters of the two.
+
+**A local rule is not compiled.** It lives in a project that installs the packages, and `compile.sh` runs only in the authoring source. So whatever reads a local rule's compressed form has to be the loader, not the compiler.
+
+**Forecasts 19 and 20 are what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5463,3 +5475,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:59:28 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:05:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:43 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:50:53 AM PT
