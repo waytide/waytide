@@ -2472,6 +2472,12 @@ The read fell from 177,387 characters to 177,172.
 2. **The ask-at-once rule is kept as it is.** A preference stated mid-task is still asked about at once.
 3. **The five questions of an attended outcome** are put to the engineer: the suggestion is to present a small outcome's hinges together in one prompt, each still accepted or changed by the engineer. The open item on participation as a range of batch sizes covers the same ground.
 
+### Prompt turns — the attended outcome's questions are left to the batch-size item, 2026-10-29
+
+**At the engineer's direction, the five questions of an attended outcome are not changed in this phase.** They are left to the open item on participation as a range of batch sizes, which proposes that how often the agent stops is a setting the engineer moves during the work.
+
+**Where a question has one genuine candidate, the agent offers it and its negative**, as in *Accept* and *Don't accept*, at the engineer's direction. With `Explain` gone, the present-every-prompt rule said nothing of that case, since `Explain` had filled the second place.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5719,3 +5725,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:35 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:28:14 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:29:05 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:31 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:38:53 PM PT
