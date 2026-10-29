@@ -2025,6 +2025,8 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
    - **Held, 2026-10-29.** The read fell from 180,146 characters to 170,884, 5.1%.
 22. **Sessions on requests governed by those instructions behave the same after the change.** *Moderate confidence.*
    - **Held, 2026-10-29.** The rules before passed 36 of 38, and after 35 of 38.
+23. **A mechanical check finds live references, to a rule by name or to a path, that point at nothing, in at least 5 rules.** *Moderate confidence.*
+24. **Each can be reconciled by correcting the reference alone, with no rule's directives changed.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2396,6 +2398,14 @@ The read fell from 177,387 characters to 177,172.
 **The engineer affirmed the single-statement phase.** Where an instruction's origin is pre-loaded, its repetitions are left out of the other compressed texts, and a vocabulary entry keeps its term's meaning. The read was 5.1% smaller, and sessions behaved the same.
 
 **Left open:** the journal's time question failed 3 times in 23 runs, on both sides, each by getting the question's options wrong. The phase did not cause it.
+
+### Phase 10, live-references, starts — 2026-10-29
+
+**The phase asks whether every live reference points at something that exists.** It answers finding #5. A live reference is one in a rule, a vocabulary, or a script that is in use, as opposed to a historical record, which is not revised.
+
+**The first step is a mechanical check**: every rule cited by name, and every path, in the rules' full texts, compressed texts, the vocabularies, the local rules, and the scripts, checked against what exists.
+
+**Forecasts 23 and 24 are what this phase tests.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5635,3 +5645,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:00:37 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:07:47 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:15:33 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:16:28 PM PT
