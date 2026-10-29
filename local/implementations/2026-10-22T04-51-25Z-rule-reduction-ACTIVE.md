@@ -2391,6 +2391,12 @@ The read fell from 177,387 characters to 177,172.
 
 **Across both runs, the rules before passed 36 of 38 and after 35 of 38.** The first run's two failures were chance. **Forecast 22 held.**
 
+### Phase 9, single-statement, is affirmed — 2026-10-29
+
+**The engineer affirmed the single-statement phase.** Where an instruction's origin is pre-loaded, its repetitions are left out of the other compressed texts, and a vocabulary entry keeps its term's meaning. The read was 5.1% smaller, and sessions behaved the same.
+
+**Left open:** the journal's time question failed 3 times in 23 runs, on both sides, each by getting the question's options wrong. The phase did not cause it.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5628,3 +5634,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:29:10 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:00:37 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:07:47 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:15:33 PM PT
