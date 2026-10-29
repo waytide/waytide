@@ -6,7 +6,7 @@ The things below are printed once per session, verbatim. Four are always printed
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
-**The script reads the four from this file's fenced blocks, by position.** The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this file changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
+**The script reads the four from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
 **The display prints on `load waytide` and on no other prompt.** A session opened with any other request shows no display. That is the cost of the hook acting only on the exact command.
 
@@ -87,7 +87,7 @@ Then **one blank line**, then the block:
 
 **These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one part that is not always present, and its absence is the ordinary case rather than an omission.
 
-**The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows opens every compiled rule in every installed package. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
+**The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
 
 **It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is read **after** they have, while the wait is happening.
 
@@ -126,10 +126,10 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
 4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
 5. The agent prints the package set, at the head of the response that carries the rule read.
-6. The script reads the four from this file's fenced blocks, by position.
+6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
 8. The second fenced block is the package-set example, which the script skips.
-9. Adding, removing, or reordering a fenced block in this file changes what is printed, so the rule's sections stay where they are.
+9. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
 10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
 11. The fences mark where each printed part begins and ends. They are not printed.
 12. First the title, on its own:
@@ -193,7 +193,7 @@ Copyright © 2026 Scott Bellware
 Loading Waytide will take a few moments.
 ```
 
-49. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response opens every compiled rule in every installed package.
+49. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response loads every installed package's rules.
 50. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
 51. Then one blank line, then the block:
 
@@ -226,6 +226,7 @@ Loading Waytide will take a few moments.
 - 2026-10-25, revised: points 1, 14, and 18 take the new wording, that the package set prints after the display; not checked
 - 2026-10-27, re-checked: 53 directives, 51 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 52, clarity 0.90 → 0.90; checked: 46 directives, 46 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 52 → 52, clarity 0.90 → 0.90; checked: 51 directives, 51 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -246,6 +247,8 @@ The copyright line read `Waytide — Copyright © 2026 Scott Bellware` until 202
 Until 2026-10-25 the rule said its parts print "in this order" and described the package set second, between the title and the copyright, while saying the agent prints the set after the harness's display. The title section said "Nothing is printed under it". The engineer settled that the order covers the harness's four parts, that the package set keeps its place in this file and prints after them, and that what the title excludes is a subtitle or description. The sections stay where they are, because the script reads the display's parts from this file's fenced blocks by position.
 
 Until Sun Oct 25 2026 this rule was named initialization-rule and titled "Initialization".
+
+Until Thu Oct 29 2026 the script read the display from this rule's compiled file, which held the body alone. When the compiled rules became one file per package, it began reading the source file, up to the `## Compressed` heading.
 
 ---
 

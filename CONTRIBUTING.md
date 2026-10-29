@@ -22,7 +22,7 @@ Author in the composite repo. You never edit a component repository directly. A 
 
 ## Publishing a package
 
-**Before publishing, compile the source.** Run `./compile.sh` from the repository root. A split carries committed history, so where the compile changes a compiled rule, run the suite and commit it on `master` before splitting. A change there means a compiled rule was stale. See the local the-source-is-compiled-before-a-package-is-published rule.
+**Before publishing, compile the source.** Run `./compile.sh` from the repository root. A split carries committed history, so where the compile changes a package's `rules.md`, run the suite and commit it on `master` before splitting. A change there means a rules file was stale. See the local the-source-is-compiled-before-a-package-is-published rule.
 
 **Before publishing, check for direct commits.** Run `./report-direct-commits.sh` from the repository root. It reads each component repo's `master` and reports any commit whose message this repository's history does not contain. That is a commit made directly to the component repo rather than produced by a split.
 

@@ -381,11 +381,11 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 
 ## Reading the rules
 
-1. Read every rule file under `waytide/system/` and `waytide/local/rules/` at the start of a session, and follow them.
-2. Do not read a package's `source/` directory or its `README.md`.
-3. A package's `source/` holds the full rules that its compiled rules are compiled from.
-4. Edit a rule in `source/`.
-5. The compiled rules at the package root are what is read.
+1. At the start of a session, run `waytide/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
+2. Do not read a package's `source/` directory or its `README.md` at session start.
+3. A package's `source/` holds its full rules, one per file. Edit a rule there.
+4. A package's `rules.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
+5. The package's `rules.md` is what is read.
 6. The rules override default behavior where they conflict.
 7. Explicit user instructions still win over the rules.
 8. Read `waytide/system/foundation/` first. It defines the system.
@@ -418,7 +418,7 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 4. Give a project's own local rule in `waytide/local/rules/` the ISO-8601-UTC datetime prefix in its file name. See the file-names rule.
 5. Put a rule's history in a `## History` section, placed before `Related:`.
 6. History is what the rule used to say, when it changed, what it was named, and where it sat.
-7. The compiler leaves `## History` out of the compiled rule. The full rule in `source/` keeps it.
+7. The compiler leaves `## History` out of the package's rules file. The full rule in `source/` keeps it.
 8. Reasoning the directive depends on is not history, even where it tells what failed before. Keep it in the body, where the `**Why:**` passage is.
 9. A paragraph leads with its claim in bold. The sentences after it support that claim.
 10. Where the support runs past six sentences, the next paragraph carries no bold lead. The absence marks it as continuation, not a new claim.
@@ -542,8 +542,8 @@ Source: system/foundation/source/a-rules-compressed-text-is-written-in-its-sourc
 4. Keep a fenced example the directives depend on.
 5. A change to the body reaches the compressed text in the same commit.
 6. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
-7. `./compile.sh` compiles the body. `./compile.sh --compressed` compiles a rule with a Compressed section to its title, the compressed text, and its `Related:` list, and a rule with none as by default.
-8. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer. Each carries the latest measures.
+7. `./compile.sh` writes each package's `rules.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
+8. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check
 
@@ -557,7 +557,7 @@ Source: system/foundation/source/a-rules-compressed-text-is-written-in-its-sourc
 
 ## The figures
 
-1. Record each compression, revision, and check of a compressed text in a `## Compression` section below the Compressed section.
+1. Record each compression, revision, and check of a compressed text in its source, in a `## Compression` section below the Compressed section.
 2. One line records each event. A later event adds a line, and the earlier lines stay as written.
 3. A line gives the date, the event, and its figures.
 4. A **compressed** line gives the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
@@ -571,7 +571,7 @@ Source: system/foundation/source/a-rules-compressed-text-is-written-in-its-sourc
 12. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
 13. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 14. The process that compresses, revises, or checks the text writes the figures, in the same commit.
-15. The compiled rule carries only the latest value of each measure, each with the date of the event that gave it, in a `## Compression` section above its `Related:` list. The compiler writes it in both forms. The earlier events are history, and stay in the source alone.
+15. The package's rules file carries no figures. They stay in the source.
 
 # A status report prints a fixed whole-project report
 
@@ -1186,7 +1186,7 @@ To load them now, type: load waytide.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
 8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Read the compiled rules, leaving out each package's `source/` directory and `README.md`.
+9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
 10. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
 11. Each is named whether or not it exists, and its absence is ordinary.
 12. Name the other working directories and leave them out.
@@ -1549,10 +1549,10 @@ Source: system/foundation/source/the-startup-display-prints-once-per-session.md
 3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
 4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
 5. The agent prints the package set, at the head of the response that carries the rule read.
-6. The script reads the four from this file's fenced blocks, by position.
+6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
 8. The second fenced block is the package-set example, which the script skips.
-9. Adding, removing, or reordering a fenced block in this file changes what is printed, so the rule's sections stay where they are.
+9. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
 10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
 11. The fences mark where each printed part begins and ends. They are not printed.
 12. First the title, on its own:
@@ -1616,7 +1616,7 @@ Copyright © 2026 Scott Bellware
 Loading Waytide will take a few moments.
 ```
 
-49. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response opens every compiled rule in every installed package.
+49. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response loads every installed package's rules.
 50. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
 51. Then one blank line, then the block:
 

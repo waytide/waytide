@@ -10,7 +10,7 @@
 
 **A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
 
-**`./compile.sh` compiles the body, and `./compile.sh --compressed` compiles the compressed text.** Told `--compressed`, a rule with a Compressed section compiles to its title, the compressed text, and its `Related:` list. A rule with none compiles as it does by default. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer, and each carries the latest measures, as set out below.
+**`./compile.sh` packages the compressed texts.** It writes each package's `rules.md`, at the package root, holding every rule in its `source/`: the rule's title, a `Source:` line with the path of its source, and its compressed text. A rule with no Compressed section appears with its body in its place. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check
 
@@ -46,7 +46,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 
 **The figures are written by the process that compresses, revises, or checks the text, in the same commit.**
 
-**The compiled rule carries only the latest value of each measure**, each with the date of the event that gave it, in a `## Compression` section above its `Related:` list. The compiler writes it in both forms. The earlier events are the history of the measures, and they stay in the source alone, as a `## History` section does.
+**The package's rules file carries no figures.** They stay in the source, as a `## History` section does.
 
 **Why:** a compressed text is read in place of its source, so a directive it loses is lost to every session that reads it. The check is what shows that it carries what the source carries. Recording the figures in the source keeps the facts about a compressed text where the text is. A reader of the rule sees how it was compressed, how it changed, and when it was last checked, without the experiment record that produced it.
 
@@ -66,8 +66,8 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 4. Keep a fenced example the directives depend on.
 5. A change to the body reaches the compressed text in the same commit.
 6. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
-7. `./compile.sh` compiles the body. `./compile.sh --compressed` compiles a rule with a Compressed section to its title, the compressed text, and its `Related:` list, and a rule with none as by default.
-8. Neither form carries the `## Compressed` heading, the `## History` section, or the provenance footer. Each carries the latest measures.
+7. `./compile.sh` writes each package's `rules.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
+8. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check
 
@@ -81,7 +81,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 
 ## The figures
 
-1. Record each compression, revision, and check of a compressed text in a `## Compression` section below the Compressed section.
+1. Record each compression, revision, and check of a compressed text in its source, in a `## Compression` section below the Compressed section.
 2. One line records each event. A later event adds a line, and the earlier lines stay as written.
 3. A line gives the date, the event, and its figures.
 4. A **compressed** line gives the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
@@ -95,13 +95,14 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 12. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
 13. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 14. The process that compresses, revises, or checks the text writes the figures, in the same commit.
-15. The compiled rule carries only the latest value of each measure, each with the date of the event that gave it, in a `## Compression` section above its `Related:` list. The compiler writes it in both forms. The earlier events are history, and stay in the source alone.
+15. The package's rules file carries no figures. They stay in the source.
 
 ## Compression
 
 - 2026-10-27, compressed: compression 0.18, change 0.31, solubility 34 → 56, clarity 0.49 → 0.86, 41 directives, 41 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-27, revised: the compiled rule carries the latest value of each measure, solubility 34 → 53, clarity 0.50 → 0.84; checked: 45 directives, 44 kept, 1 less precise, 0 lost, 1 repair, re-checked kept; directive 41 left as the source words it
 - 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.84 → 0.84; checked: 46 directives, 46 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 55 → 56, clarity 0.84 → 0.84; checked: 44 directives, 42 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 
 ## History
 
@@ -109,9 +110,11 @@ Until Tue Oct 27 2026 the compiler left the whole Compression section out of the
 
 Until Wed Oct 28 2026 the compressed text carried each reason as a point leading with `**Why:**`. A session comparison found that the reasons changed no agent's behavior, and the engineer settled that the compressed text leaves them out.
 
+Until Thu Oct 29 2026 the compiler wrote a file per rule, in a default form and a `--compressed` form, each carrying the latest value of each measure. Phase 2 of the rule-reduction experiment replaced them with one rules file per package, which carries no figures.
+
 Related:
 
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — a package's `source/` and its compiled rules
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — a package's `source/` and its rules file
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the rule-reduction experiment, which brings this rule to master when it merges
 
 ---

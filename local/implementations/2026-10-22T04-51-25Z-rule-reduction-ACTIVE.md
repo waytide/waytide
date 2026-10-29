@@ -1953,6 +1953,20 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **The phase branch merges into the experiment's branch.** Phase 3, additional-context, branches from it next.
 
+### The five places are brought in line with one rules file per package, 2026-10-29
+
+**At the engineer's direction, on the experiment's branch rather than master**, since master has neither the package files nor the loader until the experiment merges. The four rules and `CONTRIBUTING.md` that described a compiled file per rule now describe the two steps as they are: compressing writes the compressed text into the source rule, below the source text, and packaging, `./compile.sh`, writes one `rules.md` into each package's root.
+
+1. **The compression rule:** `./compile.sh` packages the compressed texts into each package's `rules.md`, which carries no figures. The `--compressed` form and the measures block in the compiled rule are gone, and its History says so.
+2. **The binding-rules rule:** the session-start read runs the loader and reads its whole output. A package's `rules.md` holds each rule's title, its source path, and its compressed text.
+3. **The harness-announces rule:** the read instruction has the agent run the loader in one command and read no rule file one by one.
+4. **The startup-display rule:** the script reads the display from the fenced blocks of the rule's body, in its source file, up to the `## Compressed` heading.
+5. **`CONTRIBUTING.md`:** a compile that changes a package's `rules.md` means a rules file was stale.
+
+**The check:** a fresh lister and a fresh checker, four rules each. 216 directives, 213 kept, 3 less precise, 0 lost. Two less precise directives in the compression rule were repaired, and the rule was checked again with all 44 kept. The third, in the harness-announces rule, predates this revision and is left as it was.
+
+**The measuring script** compiled a rule with the old per-rule compiler, which is now gone. It now uses a copy of that compiler from `74ae46b`, so the figures stay comparable with the earlier ones.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5146,3 +5160,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 4:40:48 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:03:47 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:12:43 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:28:18 PM PT

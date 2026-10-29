@@ -92,7 +92,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   **The command names the read outright, and carries no emphasis markup.** `load waytide` says what it does. So an engineer who has never seen this system can act on it without being told what the word stands for. The line also states the two facts an engineer needs before deciding whether to type it. The rules load ahead of their first instruction either way, and loading takes a few moments.
 
-  **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It opens every compiled rule in every installed package, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
+  **The caveat says a few moments, not a moment.** A moment describes an interval short enough to wait through without noticing it, and the read is not that. It loads every installed package's rules, which is a wait an engineer sees. Understating it makes the notice's one caveat the part of the line least worth trusting. The plural says the length the wait actually has while staying informal, which is the register the rest of the line is in.
 
   **The command sentence comes last.** In the other order — the command, then the caveat that loading takes a moment — the close would end on its cost, with the words to be typed in the middle of it. This order puts the caveat where an engineer reads it before deciding, and leaves the command last. That is where the eye settles, and where it can be copied without reading past it.
 
@@ -123,7 +123,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   It is named **whether or not the directory exists**, and the instruction says its absence is ordinary rather than an error. A conditional instruction would vary its text by project, which is a second thing to keep true. The binding rule and the bootstrap name it without a condition, and this now matches them.
 
-  **Within the packages it names the compiled rules: each package's `source/` directory and its `README.md` are left out.** The source rules are the same rules with their footers and History sections, and a README summarizes rules the read already carries.
+  **It has the agent run the loader, `foundation/load-rules.sh`, in one command, and read its whole output.** The loader prints each package's `rules.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal. Each package's `source/` directory and its `README.md` are left out: the source rules are the same rules at full length, and a README summarizes rules the read already carries. The instruction tells the agent to read no rule file one by one, since the loader's output is the read.
 
   **It names `local/rules/` and `local/vocabulary.md`, and nothing else beside the packages.** The working directories beside them are worked with as their own conventions describe and are **not** read as binding rules at session start. The instruction says so outright, naming each of them, because an instruction naming `local/` rather than the two would reverse that settled distinction.
 
@@ -237,7 +237,7 @@ To load them now, type: load waytide.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
 8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Read the compiled rules, leaving out each package's `source/` directory and `README.md`.
+9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
 10. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
 11. Each is named whether or not it exists, and its absence is ordinary.
 12. Name the other working directories and leave them out.
@@ -317,6 +317,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-10-27, re-checked: 68 directives, 62 kept, 6 less precise, 0 lost, 6 repairs, re-checked kept
 - 2026-10-27, revised: an Active record is reported; checked: 72 directives, 70 kept, 2 less precise, 0 lost; directives 30 and 41 follow the source's wording
 - 2026-10-28, revised: Why points removed, solubility 32 → 39, clarity 0.58 → 0.75; checked: 75 directives, 74 kept, 1 less precise, 0 lost
+- 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 39 → 39, clarity 0.75 → 0.74; checked: 74 directives, 73 kept, 1 less precise, 0 lost; directive 60 left as it was, untouched by this revision
 
 ## History
 
@@ -335,6 +336,8 @@ A `WAYTIDE_QUIET` environment variable silenced the two surfaces, and what the a
 Until Sun Oct 25 2026 this rule was named announce-waytide-at-session-start and titled "The harness announces Waytide's installation. The agent never prints the notice".
 
 Until 2026-07-28 the Waytide segment trailed after a hyphen, the two closing sentences ran the command first and the caveat second, the command was written in markdown bold, and the notice asked for a foil request, the word `begin`, rather than a named command. Until 2026-07-30 the two closing sentences were one line. Until 2026-08-01 the read instruction named only the installed packages, and not the project's own `local/rules/`.
+
+Until Thu Oct 29 2026 the read instruction told the agent to read every rule file under the system, leaving out each package's `source/` directory and `README.md`. Phase 2 of the rule-reduction experiment replaced the file-by-file read with the loader, which prints the whole read in one output.
 
 Related:
 
