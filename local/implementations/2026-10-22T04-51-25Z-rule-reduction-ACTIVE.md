@@ -1939,6 +1939,20 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Finding #7 is answered.** The read is now one command with a fixed list of files, so it is complete whenever the agent reads the saved output to its end.
 
+### Phase 2 — verdict, 2026-10-29
+
+**Phase 2 is affirmed by the engineer.** One command that prints every rule shortens the session-start read.
+
+**Findings:**
+
+1. **The loader halves the read:** a median of 19.9 seconds and 7 tool calls, against 40.8 seconds and 16 for the compressed rule files opened one by one.
+2. **One rules file per package does not shorten the read on its own:** 44.8 seconds and 18 tool calls. The agent opens each file with a call of its own.
+3. **The loader's output exceeds one tool result,** so the harness saves it and the agent reads it in four or five parts. Those reads are most of the 7 calls.
+4. **The read is complete by construction:** one command with a fixed list of files, which answers finding #7.
+5. **What master gains at the experiment's merge:** the compiler's one rules file per package, the loader, the session-start instruction that runs it, and the two tests. Before the merge, the compression rule, the binding-rules rule, the harness-announces rule, the startup-display rule, and `CONTRIBUTING.md` are brought in line with them.
+
+**The phase branch merges into the experiment's branch.** Phase 3, additional-context, branches from it next.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5131,3 +5145,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:54 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:40:48 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:57:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:03:47 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 5:12:43 PM PT
