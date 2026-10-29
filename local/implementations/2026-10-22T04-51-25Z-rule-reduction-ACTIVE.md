@@ -2366,6 +2366,23 @@ The read fell from 177,387 characters to 177,172.
 
 **At the engineer's direction, a vocabulary entry keeps its term's meaning in its compressed text, even where a pre-loaded rule also defines the term.** The definitions of *solubility*, *controls*, and *precondition* are restored. The read is 170,884 characters.
 
+### Single statement — the session test's result, 2026-10-29
+
+**The rules before the phase passed 18 of 18, and after it 16 of 18.** Six requests were each governed by an instruction whose repetitions were removed, written by an agent that read the removal logs, with three runs on each side, scored blind.
+
+| Request | Before | After |
+|---|---|---|
+| 1. a comment in slang | 3/3 | 3/3 |
+| 2. a term binding for this project | 3/3 | 3/3 |
+| 3. a shared setup function in a test | 3/3 | 2/3 |
+| 4. a journal entry with no time | 3/3 | 2/3 |
+| 5. correcting a journal entry | 3/3 | 3/3 |
+| 6. a test for existing behavior | 3/3 | 3/3 |
+
+**Both failures are on instructions whose repetitions were removed.** On request 3, one session called the shared setup a fixture, and the testing vocabulary's line that names *fixtures* among the words not to use had been removed. On request 4, one session left out the `Explain` option, and the foundation vocabulary's lines on the `Explain` and free-text options had been removed. Each instruction is still stated in its pre-loaded origin.
+
+**Forecast 22 is not settled.** Two failures in eighteen runs could be chance, or a real loss where a repetition was doing work its origin does not.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5601,3 +5618,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:17 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:10:08 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:29:10 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:00:37 PM PT
