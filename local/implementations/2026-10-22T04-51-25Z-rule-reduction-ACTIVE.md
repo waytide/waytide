@@ -2039,6 +2039,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 27. **`local/vocabulary.md` can be compressed by at least a third, with nothing it states lost after repair.** *Moderate confidence.*
    - **Held, 2026-10-29.** 53% shorter, with two repairs; what is not kept is stated in the pre-loaded vocabulary rule, or is background.
 28. **Sessions on requests governed by its substitution behave the same with the compressed form as with the full one.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 6 of 6 on each side.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2514,6 +2515,12 @@ The read fell from 177,387 characters to 177,172.
 **A fresh agent checked it: 21 directives, 11 kept, 4 less precise, 6 lost.** Two were repaired. The compressed text had said a `superseded` in prose does not report a state, which is more than the full text says, and it now says a reader cannot tell from the word alone. And `moot` keeps its tie to the `Lapsed` state. What is still not kept is the opening lines phase 9 left out of every vocabulary, which the pre-loaded vocabulary rule states, and two background facts: which rule writes `overtaken`, and that the two rules writing it are unchanged.
 
 **Forecast 27 held**, at 53%.
+
+### Local vocabulary — the session test's result, 2026-10-29
+
+**At the engineer's direction, 12 sessions were run: the full form passed 6 of 6, and the compressed form 6 of 6.** Two requests asked for prose where *overtaken* is the ready word, a log entry and a sentence added to an item, with three runs on each side, scored blind. The requests were written in the session that wrote the compressed form, since the vocabulary holds one substitution. Every session wrote *superseded*, and none changed a state line or renamed a record.
+
+**Forecast 28 held.**
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5768,3 +5775,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:43:12 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:46:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:48:46 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:50:19 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:54:27 PM PT
