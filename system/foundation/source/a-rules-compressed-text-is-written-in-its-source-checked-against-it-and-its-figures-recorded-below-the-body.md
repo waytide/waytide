@@ -10,7 +10,7 @@
 
 **A change to the body reaches the compressed text in the same commit.** A point keeps its number where it can, so that a check's verdicts and a reader's references still find it.
 
-**`./compile.sh` packages the compressed texts.** It writes each package's `rules.md`, at the package root, holding every rule in its `source/`: the rule's title, a `Source:` line with the path of its source, and its compressed text. A rule with no Compressed section appears with its body in its place. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
+**`./compile.sh` packages the compressed texts.** It writes each package's `rules-pre-loaded.md`, at the package root, holding every rule in its `source/`: the rule's title, a `Source:` line with the path of its source, and its compressed text. A rule with no Compressed section appears with its body in its place. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check
 
@@ -66,7 +66,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 4. Keep a fenced example the directives depend on.
 5. A change to the body reaches the compressed text in the same commit.
 6. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
-7. `./compile.sh` writes each package's `rules.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
+7. `./compile.sh` writes each package's `rules-pre-loaded.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
 8. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check

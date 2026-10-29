@@ -7,11 +7,13 @@
 #   ./compile.sh
 #
 # A source rule is the authority and the only copy edited. Each package's rules file,
-# system/<package>/rules.md, is regenerated, never edited. It holds every source rule under the
-# package's source/ directory, in path order. Each rule appears as its title, a Source: line
+# system/<package>/rules-pre-loaded.md, is regenerated, never edited. It holds every source rule under the
+# package's source/ directory that has no trigger, in path order. Each rule appears as its title, a Source: line
 # giving the path of the source rule it came from, and its compressed text: the Compressed
 # section without its heading. A rule that has no Compressed section appears with its body in
-# its place.
+# its place. A rule whose source carries a **Trigger:** line under its title goes instead to the
+# package's rules-on-demand.md, with a Trigger: line after its Source: line. A package with no triggered
+# rule has no rules-on-demand.md.
 #
 # A source rule's body runs from its title to its first "## Compressed", "## Compression", or
 # "## History" line, its "Related:" line, or its provenance footer: the --- divider and the
@@ -24,13 +26,17 @@ for package in system/*/; do
   package=${package%/}
   [ -d "$package/source" ] || continue
 
-  rules_file="$package/rules.md"
-  : > "$rules_file"
+  : > "$package/rules-pre-loaded.md"
+  : > "$package/rules-on-demand.md"
 
   for source_rule in $(find "$package/source" -name '*.md' | sort); do
+    # A rule with a **Trigger:** line goes to rules-on-demand.md, with its trigger. Every other rule goes
+    # to rules-pre-loaded.md.
+    trigger=$(sed -n 's/^\*\*Trigger:\*\* //p' "$source_rule" | head -n 1)
+    if [ -n "$trigger" ]; then rules_file="$package/rules-on-demand.md"; else rules_file="$package/rules-pre-loaded.md"; fi
     [ -s "$rules_file" ] && echo >> "$rules_file"
 
-    awk -v source="$source_rule" '
+    awk -v source="$source_rule" -v trigger="$trigger" '
       { line[NR] = $0 }
 
       END {
@@ -64,6 +70,7 @@ for package in system/*/; do
         print line[1]
         print ""
         print "Source: " source
+        if (trigger != "") { print ""; print "Trigger: " trigger }
         if (first) {
           print ""
           for (i = first; i <= last; i++) if (kind[i] == text) print line[i]
@@ -71,4 +78,6 @@ for package in system/*/; do
       }
     ' "$source_rule" >> "$rules_file"
   done
+
+  [ -s "$package/rules-on-demand.md" ] || rm -f "$package/rules-on-demand.md"
 done

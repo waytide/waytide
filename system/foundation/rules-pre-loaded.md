@@ -384,8 +384,8 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 1. At the start of a session, run `waytide/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
 2. Do not read a package's `source/` directory or its `README.md` at session start.
 3. A package's `source/` holds its full rules, one per file. Edit a rule there.
-4. A package's `rules.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
-5. The package's `rules.md` is what is read.
+4. A package's `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
+5. The package's `rules-pre-loaded.md` is what is read.
 6. The rules override default behavior where they conflict.
 7. Explicit user instructions still win over the rules.
 8. Read `waytide/system/foundation/` first. It defines the system.
@@ -542,7 +542,7 @@ Source: system/foundation/source/a-rules-compressed-text-is-written-in-its-sourc
 4. Keep a fenced example the directives depend on.
 5. A change to the body reaches the compressed text in the same commit.
 6. A point keeps its number where it can, so a check's verdicts and a reader's references still find it.
-7. `./compile.sh` writes each package's `rules.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
+7. `./compile.sh` writes each package's `rules-pre-loaded.md`, at the package root, holding every rule in its `source/`: each rule's title, a `Source:` line with its source path, and its compressed text, or its body where it has none.
 8. The rules file carries no `## Compressed` heading, no figures, no `## History` section, no `Related:` list, and no provenance footer.
 
 ## The check
@@ -1186,7 +1186,7 @@ To load them now, type: load waytide.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
 8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
+9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
 10. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
 11. Each is named whether or not it exists, and its absence is ordinary.
 12. Name the other working directories and leave them out.

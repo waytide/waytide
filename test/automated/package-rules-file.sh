@@ -41,6 +41,22 @@ RULE
 control_rule a > "$repository/system/sample/source/a-rule.md"
 control_rule b > "$repository/system/sample/source/b-rule.md"
 
+cat > "$repository/system/sample/source/c-rule.md" <<'RULE'
+# Some rule c
+
+**Trigger:** When some-act
+
+some-body-c
+
+## Compressed
+
+1. some-directive-c
+
+---
+
+Authored by some-author on some-date
+RULE
+
 control_rules_file() {
   cat <<'RULES'
 # Some rule a
@@ -57,16 +73,36 @@ Source: system/sample/source/b-rule.md
 RULES
 }
 
+control_triggered_file() {
+  cat <<'RULES'
+# Some rule c
+
+Source: system/sample/source/c-rule.md
+
+Trigger: When some-act
+
+1. some-directive-c
+RULES
+}
+
 # Actuation ------------------------------------------------------------------
 
 (cd "$repository" && ./compile.sh)
 
 # Writes each rule's title, source, and compressed text --------------------------
 
-rules_file="$repository/system/sample/rules.md"
+rules_file="$repository/system/sample/rules-pre-loaded.md"
 
-[ -f "$rules_file" ] || fail "Writes each rule's title, source, and compressed text" "no rules file:" "system/sample/rules.md"
+[ -f "$rules_file" ] || fail "Writes each rule's title, source, and compressed text" "no rules file:" "system/sample/rules-pre-loaded.md"
 
 control_rules_file | cmp -s - "$rules_file" || fail "Writes each rule's title, source, and compressed text" "rules file:" "$(cat "$rules_file")"
 
-echo "1 passed"
+# Writes each triggered rule to rules-on-demand.md, with its trigger ----------------------
+
+triggered_file="$repository/system/sample/rules-on-demand.md"
+
+[ -f "$triggered_file" ] || fail "Writes each triggered rule to rules-on-demand.md, with its trigger" "no triggered file:" "system/sample/rules-on-demand.md"
+
+control_triggered_file | cmp -s - "$triggered_file" || fail "Writes each triggered rule to rules-on-demand.md, with its trigger" "triggered file:" "$(cat "$triggered_file")"
+
+echo "2 passed"

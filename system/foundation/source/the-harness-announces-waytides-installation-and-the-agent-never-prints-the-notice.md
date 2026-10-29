@@ -123,7 +123,7 @@ The three are wired by a committed `.claude/settings.json` that `install.sh` pla
 
   It is named **whether or not the directory exists**, and the instruction says its absence is ordinary rather than an error. A conditional instruction would vary its text by project, which is a second thing to keep true. The binding rule and the bootstrap name it without a condition, and this now matches them.
 
-  **It has the agent run the loader, `foundation/load-rules.sh`, in one command, and read its whole output.** The loader prints each package's `rules.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal. Each package's `source/` directory and its `README.md` are left out: the source rules are the same rules at full length, and a README summarizes rules the read already carries. The instruction tells the agent to read no rule file one by one, since the loader's output is the read.
+  **It has the agent run the loader, `foundation/load-rules.sh`, in one command, and read its whole output.** The loader prints each package's `rules-pre-loaded.md` and `vocabulary.md`, the local rules, the project's vocabulary, and the journal. Each package's `source/` directory and its `README.md` are left out: the source rules are the same rules at full length, and a README summarizes rules the read already carries. The instruction tells the agent to read no rule file one by one, since the loader's output is the read.
 
   **It names `local/rules/` and `local/vocabulary.md`, and nothing else beside the packages.** The working directories beside them are worked with as their own conventions describe and are **not** read as binding rules at session start. The instruction says so outright, naming each of them, because an instruction naming `local/` rather than the two would reverse that settled distinction.
 
@@ -237,7 +237,7 @@ To load them now, type: load waytide.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
 8. Read `foundation/` first, and each package's `vocabulary.md`.
-9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
+9. Run `foundation/load-rules.sh` in one command and read its whole output. It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, leaving out each package's `source/` directory and `README.md`. Read no rule file one by one.
 10. Read the project's `local/rules/` and `local/vocabulary.md`, and never name `local/` as a whole.
 11. Each is named whether or not it exists, and its absence is ordinary.
 12. Name the other working directories and leave them out.

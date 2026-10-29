@@ -22,16 +22,16 @@ trap 'rm -rf "$project"' EXIT
 mkdir -p "$project/system/foundation" "$project/system/sample" "$project/local/rules" "$project/local/journal/some-writer"
 cp system/foundation/load-rules.sh "$project/system/foundation/"
 
-echo some-foundation-rules > "$project/system/foundation/rules.md"
+echo some-foundation-rules > "$project/system/foundation/rules-pre-loaded.md"
 echo some-foundation-vocabulary > "$project/system/foundation/vocabulary.md"
-echo some-sample-rules > "$project/system/sample/rules.md"
+echo some-sample-rules > "$project/system/sample/rules-pre-loaded.md"
 echo some-local-rule > "$project/local/rules/some-rule.md"
 echo some-local-vocabulary > "$project/local/vocabulary.md"
 echo some-entry > "$project/local/journal/some-writer/2026-01-01T00-00-some-entry.md"
 
 control_output() {
   cat <<'OUTPUT'
-===== FILE: system/foundation/rules.md =====
+===== FILE: system/foundation/rules-pre-loaded.md =====
 
 some-foundation-rules
 
@@ -39,7 +39,7 @@ some-foundation-rules
 
 some-foundation-vocabulary
 
-===== FILE: system/sample/rules.md =====
+===== FILE: system/sample/rules-pre-loaded.md =====
 
 some-sample-rules
 

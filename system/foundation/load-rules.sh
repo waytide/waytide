@@ -34,7 +34,7 @@ print_file() {
 }
 
 for package in "$system/foundation" $(ls -d "$system"/*/ | sed 's|/$||' | grep -v "^$system/foundation$" | sort); do
-  print_file "$package/rules.md"
+  print_file "$package/rules-pre-loaded.md"
   print_file "$package/vocabulary.md"
 done
 
