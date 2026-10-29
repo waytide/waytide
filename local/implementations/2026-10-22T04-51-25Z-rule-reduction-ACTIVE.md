@@ -1996,6 +1996,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 9. **The rules that apply all the time cannot take a trigger**, the language rules and the selection-prompt rule among them, and stay pre-loaded. *High confidence.*
 10. **About a third of the rules have an act that triggers them cleanly**, mostly in foundation, git, and versioning. *Low confidence.*
 11. **On requests governed by a triggered rule, sessions with the trigger index score lower than sessions with the full read**, because the agent must notice the trigger before acting. *Moderate confidence.*
+   - **Missed, 2026-10-29.** The index read scored 49 of 50, the full read 48 of 50, and every request governed by an on-demand rule scored 5 of 5 on both sides.
 12. **Where the act runs through a script that prints its rule, the triggered rule is applied as reliably as a pre-loaded one.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
@@ -2067,6 +2068,32 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 - **Seven of the ten requests are governed by rules now on demand:** committing, a journal entry with no time, listing items, cutting a release, recording an idea, starting a feature, and where an experiment stands.
 
 **Forecast 11 is what this tests.** Forecast 12, a rule printed by the script its act runs through, cannot be tested, since no act runs through such a script.
+
+### Triggers — the session comparison's result, 2026-10-29
+
+**Forecast 11 missed.** The index read scored 49 of 50, the full read 48 of 50. The sessions that had only the triggers did no worse than the ones that read every rule.
+
+| Request | Full | Index |
+|---|---|---|
+| 1. recording an idea | 5/5 | 5/5 |
+| 2. committing | 5/5 | 5/5 |
+| 3. a test for an existing guard | 5/5 | 5/5 |
+| 4. starting a feature | 5/5 | 5/5 |
+| 5. what the git package does | 3/5 | 5/5 |
+| 6. a journal entry with no time | 5/5 | 5/5 |
+| 7. a stated preference mid-task | 5/5 | 4/5 |
+| 8. listing items | 5/5 | 5/5 |
+| 9. cutting a release | 5/5 | 5/5 |
+| 10. where the experiment stands | 5/5 | 5/5 |
+
+**The three failures are on requests governed by pre-loaded rules, not on-demand ones.**
+
+- **Two full-read answers to request 5** used a figure of speech: "The commit subject is the software."
+- **One index-read answer to request 7** left out the observation option.
+
+**Every one of the seven requests governed by an on-demand rule scored 5 of 5 on both sides.** In those sessions the agent noticed the trigger and read the rule before acting, as often as the full read had the rule already in hand.
+
+**The index sessions read less.** Each index session used about 107,000 to 128,000 tokens. Each full session used about 165,000 to 170,000.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5271,3 +5298,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:20:46 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:36:49 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:37:28 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:40:29 PM PT
+Changed by Scott Bellware on Wed Oct 28 2026 at 7:54:47 PM PT
