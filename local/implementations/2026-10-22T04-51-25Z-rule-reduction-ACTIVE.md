@@ -2041,6 +2041,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 28. **Sessions on requests governed by its substitution behave the same with the compressed form as with the full one.** *Moderate confidence.*
    - **Held, 2026-10-29.** 6 of 6 on each side.
 29. **With `Explain` gone, the journal's time question carries exactly the rule's options in at least 90% of sessions.** Three of phase 9's four failures left `Explain` out, and phase 12 removed it. *Moderate confidence.*
+   - **Held, 2026-10-29.** 20 of 20.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2544,6 +2545,12 @@ The read fell from 177,387 characters to 177,172.
 **The first step is to measure the question as it now stands**: 20 sessions, 10 on an entry about today and 10 on a back-dated one, scored blind.
 
 **Forecast 29 is what this tests.**
+
+### Journal time question — the measurement, 2026-10-29
+
+**All 20 sessions put exactly the rule's options in the time question: 10 of 10 on an entry about today, and 10 of 10 on a back-dated one**, scored blind. None added an option of its own, and none wrote the entry before the answer.
+
+**Forecast 29 held.** The failures phase 9 saw came from the `Explain` option, which three of the four left out and phase 12 removed. The rule needs no change.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5802,3 +5809,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:54:27 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:45 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:58:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:00:08 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 2:02:48 PM PT
