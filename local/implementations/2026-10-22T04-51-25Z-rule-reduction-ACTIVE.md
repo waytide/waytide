@@ -2037,6 +2037,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 26. **At one or more of the three places finding #9 names, the work can ask the engineer fewer questions, with the engineer still deciding everything that is theirs to decide.** *Low confidence.*
    - **Missed, 2026-10-29.** The questions are as many as before. `Explain` is gone, so each question's four places hold real answers.
 27. **`local/vocabulary.md` can be compressed by at least a third, with nothing it states lost after repair.** *Moderate confidence.*
+   - **Held, 2026-10-29.** 53% shorter, with two repairs; what is not kept is stated in the pre-loaded vocabulary rule, or is background.
 28. **Sessions on requests governed by its substitution behave the same with the compressed form as with the full one.** *Moderate confidence.*
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
@@ -2505,6 +2506,14 @@ The read fell from 177,387 characters to 177,172.
 **The phase compresses `local/vocabulary.md`**, the one vocabulary phase 7 left whole, by the method the package vocabularies took, and under the decisions phase 9 made: no opening line naming the vocabulary or saying it binds, no head line on approved and reserved words, and no repetition of an instruction whose origin is pre-loaded. It is 2,961 characters and holds one substitution, *superseded* for "overtaken".
 
 **Forecasts 27 and 28 are what this phase tests.**
+
+### Local vocabulary — compressed and checked, 2026-10-29
+
+**`local/vocabulary.md` carries a `## Compressed` section**, 1,285 characters against its full text's 2,751, 53% shorter. The loader prints it in place of the whole file. The read is 167,335 characters.
+
+**A fresh agent checked it: 21 directives, 11 kept, 4 less precise, 6 lost.** Two were repaired. The compressed text had said a `superseded` in prose does not report a state, which is more than the full text says, and it now says a reader cannot tell from the word alone. And `moot` keeps its tie to the `Lapsed` state. What is still not kept is the opening lines phase 9 left out of every vocabulary, which the pre-loaded vocabulary rule states, and two background facts: which rule writes `overtaken`, and that the two rules writing it are unchanged.
+
+**Forecast 27 held**, at 53%.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5758,3 +5767,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:43:12 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:46:28 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:48:46 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:50:19 PM PT
