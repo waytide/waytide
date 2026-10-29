@@ -2316,6 +2316,10 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **At the engineer's direction, both are recorded as held by this measurement, with no session test.** A session given only what fits would show only that it does not follow rules it was never given.
 
+### Phase 8, hook-delivery, is affirmed — 2026-10-29
+
+**The engineer affirmed the hook-delivery phase.** Its forecasts held: the hook's channel holds about 10,000 characters, so it cannot carry the rules, and the read stays. Nothing in the system changes.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5544,3 +5548,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:09:30 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:10:42 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:13:54 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:12 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:22:38 AM PT
