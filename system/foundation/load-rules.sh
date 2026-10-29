@@ -51,6 +51,28 @@ print_file() {
   cat "$1"
 }
 
+# A vocabulary or a local rule with a Compressed section is printed as its title and that section:
+# its full text, History, Related list, and footer are left out. Without one, it is printed whole.
+print_compressed() {
+  [ -f "$1" ] || return 0
+  grep -qx '## Compressed' "$1" || { print_file "$1"; return 0; }
+  [ "$first" -eq 1 ] || echo
+  first=0
+  echo "===== FILE: $1 ====="
+  echo
+  awk '
+    NR == 1 { print; print ""; next }
+    $0 == "## Compressed" { inside = 1; next }
+    inside && ($0 ~ /^## (Compression|History)$/ || $0 ~ /^Related:/ || $0 == "---") { exit }
+    inside { line[++n] = $0 }
+    END {
+      first = 1; while (first <= n && line[first] == "") first++
+      while (n >= first && line[n] == "") n--
+      for (i = first; i <= n; i++) print line[i]
+    }
+  ' "$1"
+}
+
 # A package's on-demand rules are not printed. Each one's trigger is, with the command that loads
 # it: the rule's name is its source file's name.
 print_index() {
@@ -71,7 +93,7 @@ if [ "$1" = "--package" ]; then
   [ -n "$2" ] && [ -d "$system/$2" ] || { echo "No package named $2" >&2; exit 1; }
   print_file "$system/$2/rules-pre-loaded.md"
   print_index "$system/$2/rules-on-demand.md"
-  print_file "$system/$2/vocabulary.md"
+  print_compressed "$system/$2/vocabulary.md"
   exit 0
 fi
 
@@ -100,14 +122,14 @@ for package in "$system/foundation" $(ls -d "$system"/*/ | sed 's|/$||' | grep -
   fi
   print_file "$package/rules-pre-loaded.md"
   print_index "$package/rules-on-demand.md"
-  print_file "$package/vocabulary.md"
+  print_compressed "$package/vocabulary.md"
 done
 
 for rule in $(ls "$local"/rules/*.md 2>/dev/null | sort); do
-  print_file "$rule"
+  print_compressed "$rule"
 done
 
-print_file "$local/vocabulary.md"
+print_compressed "$local/vocabulary.md"
 
 # Oldest first across writers: sorted by the entry's file name, which leads with its datetime.
 for entry in $(ls "$local"/journal/*/*.md 2>/dev/null | awk -F/ '{ print $NF "\t" $0 }' | sort | cut -f2); do

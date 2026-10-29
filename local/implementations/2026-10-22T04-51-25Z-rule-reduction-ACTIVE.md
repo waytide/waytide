@@ -2254,6 +2254,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **Forecasts 19 and 20 are what this phase tests.**
 
+### Local compression — the loader prints a Compressed section, 2026-10-29
+
+**At the engineer's direction, the compressed form of a vocabulary or a local rule is a `## Compressed` section in the file itself**, as a package rule's is, not a second file.
+
+**One outcome is built, attended, with its test and implementation accepted:** *Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file, where it has one.* Its full text, History, Related list, and footer are left out. A file with no Compressed section prints whole, and journal entries are untouched.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5476,3 +5482,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:05:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:43 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:50:53 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:56:12 AM PT

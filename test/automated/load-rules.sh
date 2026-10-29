@@ -170,4 +170,70 @@ package_output=$(cd "$set_project" && system/foundation/load-rules.sh --package 
 
 [ "$package_output" = "$(control_package_output)" ] || fail "Prints a named package's rules, on-demand triggers, and vocabulary" "output:" "$package_output"
 
-echo "4 passed"
+# Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file
+
+compressed_project=$(mktemp -d)
+trap 'rm -rf "$project" "$set_project" "$compressed_project"' EXIT
+
+mkdir -p "$compressed_project/system/foundation" "$compressed_project/local/rules"
+cp system/foundation/load-rules.sh "$compressed_project/system/foundation/"
+
+echo some-foundation-rules > "$compressed_project/system/foundation/rules-pre-loaded.md"
+
+cat > "$compressed_project/system/foundation/vocabulary.md" <<'VOCABULARY'
+# Some vocabulary
+
+some-full-vocabulary
+
+## Compressed
+
+some-compressed-vocabulary
+
+---
+
+Authored by some-author on some-date
+VOCABULARY
+
+cat > "$compressed_project/local/rules/some-rule.md" <<'RULE'
+# Some rule
+
+some-full-rule
+
+## Compressed
+
+1. some-compressed-directive
+
+## History
+
+some-history
+
+---
+
+Authored by some-author on some-date
+RULE
+
+control_compressed_output() {
+  cat <<'OUTPUT'
+===== FILE: system/foundation/rules-pre-loaded.md =====
+
+some-foundation-rules
+
+===== FILE: system/foundation/vocabulary.md =====
+
+# Some vocabulary
+
+some-compressed-vocabulary
+
+===== FILE: local/rules/some-rule.md =====
+
+# Some rule
+
+1. some-compressed-directive
+OUTPUT
+}
+
+compressed_output=$(cd "$compressed_project" && system/foundation/load-rules.sh)
+
+[ "$compressed_output" = "$(control_compressed_output)" ] || fail "Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file" "output:" "$compressed_output"
+
+echo "5 passed"
