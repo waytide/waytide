@@ -2218,6 +2218,12 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 
 **A second outcome is built, attended, with its test and implementation accepted:** *Prints a named package's rules, on-demand triggers, and vocabulary.* `load-rules.sh --package <name>` prints the package as the full read prints it when it is active, whether or not it is deactivated. A name with no package fails with a message.
 
+### Active packages only — the hook's instruction for a package set, 2026-10-29
+
+**A third outcome is built, attended, with its test and implementation accepted:** *With a package set declared, the read instruction says deactivated packages are listed, not printed.* It is the second outcome in `test/automated/session-start.sh`.
+
+**The instruction no longer says to read a deactivated package's rules and withhold them.** It says the loader does not print them, that the `DEACTIVATED` section names the command that loads one, and that if the engineer reactivates one during the session, the agent runs that command and follows its rules from then on.
+
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
 **Every prompt had the same form**: the opening below, then `RULE:` and one version of the rule between `<<<` and `>>>`, then `SCENARIO:` and one scenario, then `QUESTION:` and its question. Each of the six prompts — two versions, three scenarios — was given unchanged to five agents. The answers are each agent's reply, word for word.
@@ -5435,3 +5441,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 9:39:24 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:40:29 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:51:03 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:55:57 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 9:59:28 AM PT

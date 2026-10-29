@@ -299,7 +299,7 @@ if [ -n "$declaration" ]; then
       inactive="none"
     fi
 
-    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. Read every installed package'\''s rules as instructed above, deactivated ones included — the declaration governs which rules are applied and not which are read. Follow the active packages'\'' rules and withhold the deactivated ones.' \
+    set_instruction=$(printf ' This project has declared a package set: %s. The active packages are %s, and the deactivated ones are %s. The loader does not print a deactivated package'\''s rules; its DEACTIVATED section names the command that loads it. If the engineer reactivates a deactivated package during the session, run that command and follow its rules from then on. Follow only the active packages'\'' rules.' \
       "$declared" "$active" "$inactive")
 
     # The set is printed unless it is `default` with nothing deactivated, where the initialization

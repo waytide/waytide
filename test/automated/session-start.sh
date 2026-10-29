@@ -38,4 +38,26 @@ case "$output" in
   *) fail "On a compaction, the read instruction says the rules survive only as a summary and must be read again" "output:" "$output" ;;
 esac
 
-echo "1 passed"
+# With a package set declared, the read instruction says deactivated packages are listed, not printed
+
+mkdir -p "$project/system/other" "$project/local"
+echo some-readme > "$project/system/other/README.md"
+
+cat > "$project/local/2026-01-01T00-00-00Z-some-set-package-set.md" <<'SET'
+# Some set package set
+
+- **Package set:** some-set
+- **Packages:** foundation
+- **Inactive:** other
+SET
+
+control_set_text="This project has declared a package set: some-set. The active packages are foundation, and the deactivated ones are other. The loader does not print a deactivated package's rules; its DEACTIVATED section names the command that loads it. If the engineer reactivates a deactivated package during the session, run that command and follow its rules from then on. Follow only the active packages' rules."
+
+set_output=$(cd "$project" && sh system/foundation/session-start.sh < /dev/null)
+
+case "$set_output" in
+  *"$control_set_text"*) ;;
+  *) fail "With a package set declared, the read instruction says deactivated packages are listed, not printed" "output:" "$set_output" ;;
+esac
+
+echo "2 passed"
