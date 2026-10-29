@@ -34,7 +34,7 @@ One at a time, in this order, each on its own branch from the experiment's.
 
 **Affirmed by the engineer on Thu Oct 29 2026**, with all fifteen phases decided: fourteen affirmed and phase 5, title-display, abandoned. Every phase branch is merged into `experiment/worktree/rule-reduction`. The session-start read went from about 547,000 characters to 168,292, and in each test sessions behaved the same as before.
 
-**The integration branch is not yet merged into `master`.** A test merge stops on about 100 files: most are rules `master` keeps in the old one-file-per-rule layout, and one is the a-response-is-clarified-twice-before-it-is-sent rule, added on both sides.
+**The integration branch is merged into `master` on Thu Oct 29 2026.** `master` was first merged into the integration branch, in its worktree, so that `master`'s own 110 commits since the branch point were carried into the experiment's layout: each change to a renamed rule went into its new source and its compressed text, the old one-file-per-rule compiled files stayed deleted, and `master`'s new rules took compressed texts and, where one fits, a trigger. A fresh agent re-checked each compressed text the merge edited: 30 rules, 822 directives, 19 repairs. The observation rule was renamed to an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes, after `master`'s `Recorded`, and `master`'s copy of the decision-tag rule was dropped for the experiment's, which had renamed it. `master` then moved forward to the integration branch, with no conflict. The tests pass on `master`, and its session-start read is 170,400 characters.
 
 **Suspended by the engineer on 2026-10-22**, during phase 1, flattening. The phase branch `experiment/worktree/rule-reduction.flattening` and the worktree are kept. Phase 1 had reached this point:
 
@@ -5843,3 +5843,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 2:05:22 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:11 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:07:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:12:20 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 3:00:11 PM PT
