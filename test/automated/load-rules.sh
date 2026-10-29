@@ -138,4 +138,36 @@ set_output=$(cd "$set_project" && system/foundation/load-rules.sh)
 
 [ "$set_output" = "$(control_deactivated_output)" ] || fail "Prints a deactivated package's name and the command that loads it, in place of its rules" "output:" "$set_output"
 
-echo "3 passed"
+# Prints a named package's rules, on-demand triggers, and vocabulary --------------------------------
+
+cat > "$set_project/system/other/rules-on-demand.md" <<'RULES'
+# Some rule d
+
+Source: system/other/source/d-rule.md
+
+Trigger: When some-other-act
+
+1. some-directive-d
+RULES
+
+control_package_output() {
+  cat <<'OUTPUT'
+===== FILE: system/other/rules-pre-loaded.md =====
+
+some-other-rules
+
+===== ON DEMAND: system/other/rules-on-demand.md =====
+
+- When some-other-act, run: system/foundation/load-rules.sh d-rule
+
+===== FILE: system/other/vocabulary.md =====
+
+some-other-vocabulary
+OUTPUT
+}
+
+package_output=$(cd "$set_project" && system/foundation/load-rules.sh --package other)
+
+[ "$package_output" = "$(control_package_output)" ] || fail "Prints a named package's rules, on-demand triggers, and vocabulary" "output:" "$package_output"
+
+echo "4 passed"

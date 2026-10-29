@@ -26,7 +26,7 @@ fi
 
 # Given a rule's name, print that on-demand rule's entry alone: its title, source, trigger, and
 # compressed text.
-if [ -n "$1" ]; then
+if [ -n "$1" ] && [ "$1" != "--package" ]; then
   awk -v name="$1" '
     function flush() {
       if (found) { while (n > 0 && entry[n] == "") n--; for (i = 1; i <= n; i++) print entry[i]; done = 1 }
@@ -64,6 +64,16 @@ print_index() {
     /^Trigger: / { trigger = substr($0, 10); print "- " trigger ", run: " loader " " name }
   ' "$1"
 }
+
+# Given --package and a package's name, print that package alone, as the full read prints it when
+# it is active: its pre-loaded rules, its on-demand triggers, and its vocabulary.
+if [ "$1" = "--package" ]; then
+  [ -n "$2" ] && [ -d "$system/$2" ] || { echo "No package named $2" >&2; exit 1; }
+  print_file "$system/$2/rules-pre-loaded.md"
+  print_index "$system/$2/rules-on-demand.md"
+  print_file "$system/$2/vocabulary.md"
+  exit 0
+fi
 
 # The packages the project's latest package set deactivates, one name per line. A project with no
 # declaration has none.
