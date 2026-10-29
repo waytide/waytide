@@ -2030,6 +2030,7 @@ The six ETE rules had no `## Compression` section. Each now has one, opening wit
 24. **Each can be reconciled by correcting the reference alone, with no rule's directives changed.** *Moderate confidence.*
    - **Held, 2026-10-29.** 32 citations and one path were corrected, and no directive changed.
 25. **A state change on a record can take fewer steps, with what each dropped step protects kept by another means.** *Low confidence.*
+   - **Missed, 2026-10-29.** The engineer keeps all four steps, each for what it protects.
 
 **Placed elsewhere, or left open:** finding #10, nothing re-reading the rules after compaction, and the titles the engineer wanted to see as the rules load were placed in additional-context and have no phase now. Reading no deactivated package and compressing the local rules and vocabularies are not triggers either.
 
@@ -2443,6 +2444,12 @@ The read fell from 177,387 characters to 177,172.
 ### Record obligations — the rename is kept, 2026-10-29
 
 **At the engineer's direction, a state change still renames the record**, so that a plain directory listing shows every record's state. The state-suffix rule is unchanged.
+
+### Record obligations — the footer line is kept, and forecast 25 misses, 2026-10-29
+
+**At the engineer's direction, a state change still adds its line to the record's footer.** Every change to a record keeps its footer line, so who changed the record and when stays in the file itself.
+
+**Forecast 25 missed.** Each of the four steps of a state change protects something the engineer keeps: the state line is the authority, the rename shows the state in a listing, the log entry is the project's history, and the footer line keeps the record's provenance in the file. No step is taken away, and no rule changes.
 
 ## Appendix — the predictability simulation on #2, its prompts and answers
 
@@ -5687,3 +5694,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:42 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:21:01 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:09 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 1:27:35 PM PT
