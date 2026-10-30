@@ -12,7 +12,7 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 
 **Key metrics at this point:**
 
-- Session-start read: 547,780 characters, in 108 rule files
+- Session-start read: 547,780 characters in 108 rule files
 - Mean solubility: 51, with the median at 49.5
 - Mean clarity score: 0.52
 
