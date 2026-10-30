@@ -175,6 +175,10 @@
 
 **`/log-this` writes a log entry for the current work.** The engineer added it to the help text, under the log commands.
 
+## Amended — 2026-10-30: current-items
+
+**The command is `/current-items`, in place of `/current`.** It lists the Open, Active, and Suspended items, as `/item list current` does.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -229,6 +233,8 @@ On 2026-10-30: "Rename “lapse” to “obsolete”. And it should be applicabl
 
 On 2026-10-30: "Add a “/current” command that lists current items". The engineer confirmed adding `/log-this` to the help text: "Write a log entry for the current work".
 
+On 2026-10-30: "Actually, it should be “/current-items”"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -257,3 +263,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
