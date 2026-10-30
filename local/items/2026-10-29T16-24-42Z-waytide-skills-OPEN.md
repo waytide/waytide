@@ -140,6 +140,17 @@
 | `/release` | Choose the next version |
 | `/publish` | Publish packages, in this repository only |
 
+## Amended â€” 2026-10-29: tests
+
+**`/test` is a root command for running and reporting on the tests.**
+
+- `/test` runs the automated suite, by whatever command the project's stack sets.
+- `/test interactive [<test>]` runs an interactive test, or asks which one. An interactive test runs only when the engineer asks.
+- `/test report` classifies the suite. `/test-report` is another wording of it.
+- `/test tree` runs the suite and prints its context tree. `/test-tree` is another wording of it.
+
+**The reports group keeps only `/status-report`.**
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -184,6 +195,8 @@ On 2026-10-29: "Yeah. That's the wrong place for that. There should be a root â€
 
 On 2026-10-29: "Write this into an item", of the list of root commands without aliases.
 
+On 2026-10-29, of a proposed `/test` command: "Yes, adopt that"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -207,3 +220,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:29:17 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
