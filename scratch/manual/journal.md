@@ -7,11 +7,11 @@ NAME
      journal - keep the writer's own record of what they think
 
 SYNOPSIS
-     /journal new | entry
+     /journal [new | entry]
      /journal private
      /journal read private
      /journal timeline
-     /journal move
+     /journal publish-private
      /journal help
 
 DESCRIPTION
@@ -33,11 +33,15 @@ DESCRIPTION
      none, the agent asks.
 
 SUBCOMMANDS
-     new, entry      Write a shared journal entry.
+     (none), new, entry
+                     Write a shared journal entry.
      private         Write a private journal entry.
      read private    Read the private journal, oldest entry first.
      timeline        List the entries by date.
-     move            Move a private entry to the shared journal.
+     publish-private Move a private entry to the shared journal. The
+                     agent asks for confirmation first, because the move
+                     publishes the entry to every reader of the
+                     repository.
 
 EXAMPLES
      /journal new The payment step still feels slower than it should

@@ -199,6 +199,13 @@
 
 **The command is `/phase`, singular, in place of `/phases`, with the same subcommands.** A bare `/phase` lists the phases with the current one emphasized.
 
+## Amended — 2026-10-30: the engineer's edits to phase and journal
+
+- **A bare `/phase` prints the current phase, its goal, and its branch**, as `/phase current` does. **`/phases` lists the phases in order, the current one emphasized.**
+- **`/phase refute`** concludes a phase whose proposition is not realized.
+- **A bare `/journal` writes a shared journal entry**, as `/journal new` and `/journal entry` do.
+- **`/journal publish-private`** moves a private entry to the shared journal, in place of `/journal move`, and requires confirmation.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -259,6 +266,8 @@ On 2026-10-30: "Create a “/phases” root command. Add appropriate subcommands
 
 On 2026-10-30: "Make “phases” singular: “phase”"
 
+On 2026-10-30, the engineer edited the help text: "/phase, /phase current — The current phase, its goal, and its branch", "/phases — List the phases, the current one emphasized", "/phase refute — -> Refuted (the phase's proposition is not realized)", "/journal, /journal new, /journal entry — Write a shared journal entry", and "/journal publish-private — Move a private entry to the shared journal (requires conformation)"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -290,3 +299,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:34:21 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:42:03 PM PT

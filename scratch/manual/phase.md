@@ -7,8 +7,8 @@ NAME
      phase - run a feature or an experiment in steps, one at a time
 
 SYNOPSIS
-     /phase
-     /phase current
+     /phase, /phase current
+     /phases
      /phase add <name>
      /phase start
      /phase complete | affirm | refute | inconclusive
@@ -28,15 +28,15 @@ DESCRIPTION
      is added.
 
 SUBCOMMANDS
-     (none)          List the phases in order, the current one emphasized.
-     current         The current phase, its goal, and its branch.
+     (none), current The current phase, its goal, and its branch.
      add <name>      Add a phase after the last.
      start           Start the next phase: create its branch, state its
                      goal, and list the phases with the current one marked.
      complete        Conclude a phase that reaches no verdict, and merge it.
      affirm          Conclude a phase as Affirmed (the engineer's
                      declaration only), and merge it.
-     refute          Conclude a phase as Refuted.
+     refute          Conclude a phase as Refuted: its proposition is not
+                     realized.
      inconclusive    Conclude a phase as Inconclusive.
 
 EXAMPLES
@@ -50,6 +50,8 @@ EXAMPLES
      /phase add receipt
      /phase start
 
+     /phases lists the phases in order, the current one emphasized.
+
 SEE ALSO
-     /feature, /experiment
+     /phases, /feature, /experiment
 ```
