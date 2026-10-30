@@ -13,7 +13,10 @@ SYNOPSIS
 
 DESCRIPTION
      A feature is bounded work on the project's main line: something the
-     project means to have. It runs on a branch created for it, and its
+     project means to have. A feature gets a branch of its own, and is
+     built there, apart from master, until it completes and merges. The
+     one exception is a feature the engineer chooses to build on the
+     current branch, which creates no branch at all. Its
      record in local/implementations/ carries how it began, where it is
      being worked, and what became of it.
 
@@ -42,8 +45,8 @@ BRANCHES
      A feature without phases has one branch, merged into its upstream
      branch, usually master, when the feature completes:
 
-         feature/upload-retries
-         feature/worktree/upload-retries       (with a worktree)
+         feature/cart-totals
+         feature/worktree/cart-totals          (with a worktree)
 
      A feature with phases has its own branch and one branch per phase.
      Each phase branches from the feature's branch, and is merged back
