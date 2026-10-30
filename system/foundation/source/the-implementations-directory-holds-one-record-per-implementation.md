@@ -4,9 +4,13 @@
 
 `waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
-**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and is built to a **question**. A **feature** is tagged `[feature]` and is built to an **intent**. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule), and the lifecycle turns on which one a record carries.
+**Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and a **feature** is tagged `[feature]`. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule). **They name what the work is, and no rule reads them to decide how it runs.**
 
-**That one difference accounts for every other.** A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict. Everything the two kinds do differently follows from it, and nothing else does.
+**Either kind opens with a question or an intent, whichever the work has.** An experiment may be built to an intent, and a feature to a question.
+
+**As the engineer stated it:** change features and experiments so that both can have either an intent or a question. And: an intent can also bring a forecast and verdict.
+
+**Whether the work forecasts and reaches a verdict is chosen at the start, and that choice is what the lifecycle reads.** It is put to the engineer at the start and recorded as a confirmation, beside the working location and the participation. It does not follow from the kind, and it does not follow from whether the work opens with a question or an intent.
 
 ## The record
 
@@ -17,13 +21,14 @@ Open with the **Question** or the **Intent**, then the setup:
 - the **implementation branch**
 - its **base**
 - the **working location** chosen at the start
+- **whether it reaches a verdict**, chosen at the start
 - a **`**Tags:**`** line carrying `[experiment]` or `[feature]`
 
-**An `[experiment]` also states a forecast** — what is expected to happen — **before** the work. As the work proceeds it records what actually happened against that forecast, then the findings and any post-hoc misses. The outcomes the forecast did not account for are usually the most informative.
+**Work that reaches a verdict states a forecast** — what is expected to happen — **before** the work. As the work proceeds it records what actually happened against that forecast, then the findings and any post-hoc misses. The outcomes the forecast did not account for are usually the most informative.
 
-**A `[feature]` states none of that.** Nothing is being tested, so there is nothing to predict and nothing to compare a prediction against.
+**Work without a verdict states none of that.** There is no forecast, no comparison against one, and no findings or misses.
 
-**Both record the confirmations the lifecycle required**, so the work's authority is auditable: the working-location selection at the start, the attended-or-unattended selection at the start, adding a worktree to work already under way, branch deletion with worktree removal, and — for an experiment — the affirmation declaration, concluding a superseded one, and merging untested code.
+**Every record carries the confirmations the lifecycle required**, so the work's authority is auditable: the working-location selection at the start, the attended-or-unattended selection at the start, the verdict selection at the start, adding a worktree to work already under way, and branch deletion with worktree removal. **Work that reaches a verdict also records** the affirmation declaration, concluding a superseded one, and merging untested code.
 
 ## The state
 
@@ -31,28 +36,28 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **`Active` is the in-progress state**, as it is for an item. A record is written when its work starts, so it carries `Active` from the moment it is written. Absence is not a state, and a record without a line is a defect.
 
-**The state words both kinds take:**
+**The state words every implementation takes:**
 
 - **Active** — the work is in progress.
 - **Abandoned** — dropped before concluding. Not merged, and the record is kept.
 - **Superseded** — replaced by another implementation. The two records name the counterpart.
 - **Suspended** — paused, not ended.
 
-**The words an `[experiment]` alone takes**, because each judges a **question**:
+**The words work that reaches a verdict takes**, because each is a verdict:
 
-- **Affirmed** — the question held. User-declared.
-- **Refuted** — the question was disproven.
+- **Affirmed** — the question held, or the intent was met as forecast. The engineer declares it.
+- **Refuted** — the question was disproven, or the intent was not met as forecast.
 - **Inconclusive** — it ran and gave no clear verdict either way.
 
-**The word a `[feature]` alone takes:**
+**The word work without a verdict takes:**
 
 - **Completed** — integrated into the upstream branch. The ordinary conclusion.
 
-**A feature has no verdict words and an experiment has no `Completed`**, and neither is an oversight. *Affirmed*, *refuted*, and *inconclusive* judge a question a feature never asked. *Completed* names an intent finished, which is not what an experiment reaches.
+**Work without a verdict has no verdict words, and work with one has no `Completed`.** Neither is an oversight, and neither depends on the kind.
 
 ## Runs
 
-**Runs are optional and are an experiment's alone.** Split an implementation into runs only when the question is held fixed and one factor is varied to compare. Each run is its own branch from the same base, carries its own forecast, and is titled `Run 1`, `Run 2`, and so on. A run is a deliberate variation, not a retry. A feature has no question to hold fixed.
+**Runs are optional and belong to work that reaches a verdict.** Split an implementation into runs only when its question or intent is held fixed and one factor is varied to compare. Each run is its own branch from the same base, carries its own forecast, and is titled `Run 1`, `Run 2`, and so on. A run is a deliberate variation, not a retry.
 
 ## It is the lifecycle record, not the design record
 
@@ -62,13 +67,11 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## Format
 
-The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line.** The title is prose and the tag is what the lifecycle reads, so a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and the state suffix. End the file with the provenance footer, and pair it with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
+The same frontmatter-free markdown as rules — a `# Experiment — <name>` or `# Feature — <name>` title, then prose and tables. **The kind reads in the title and is stated as data in the `**Tags:**` line**, and a record whose title says one kind and whose tag says another is a defect in the record. The filename takes the ISO-8601-UTC prefix (see the file-names rule) and the state suffix. End the file with the provenance footer, and pair it with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
-**Why:** an experiment and a feature had two conventions and two lifecycles that agreed on almost everything. Both are bounded work on a branch, with a working location chosen at the start, a declared end, and recorded confirmations. What they did not share follows from one difference — a question against an intent — which a tag states and the lifecycle reads.
+**Why:** an experiment and a feature share one lifecycle. What differs between two implementations is whether the work is judged against a forecast, and that is a decision about this piece of work rather than about its kind. Recording it at the start lets the lifecycle read it, while the kind keeps naming what the work is.
 
-Four rules stating one lifecycle twice is four places to keep true, and the two pairs had already drifted in their wording of the same clauses.
-
-**How to apply:** record every implementation here, tagged `[experiment]` or `[feature]`. Open with the question or the intent, then the branch topology and the working location. Forecast before the work where it is an experiment, and record what happened against the forecast.
+**How to apply:** record every implementation here, tagged `[experiment]` or `[feature]`. Open with the question or the intent, then the branch topology, the working location, and whether it reaches a verdict. Forecast before the work where it reaches a verdict, and record what happened against the forecast.
 
 Write the state line as `Active` when the record is written, and update it as the state changes. Record each confirmation the lifecycle requires.
 
@@ -78,27 +81,26 @@ Write the state line as `Active` when the record is written, and update it as th
 2. A record carries how the implementation began, where it is being worked, and what became of it.
 3. An implementation is a bounded unit of work with a lifecycle.
 4. The record is a persisted, dated artifact, kept after the implementation concludes.
-5. An experiment is tagged `[experiment]` and is built to a question.
-6. A feature is tagged `[feature]` and is built to an intent.
-7. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-8. The lifecycle turns on which one a record carries.
-9. A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict.
-10. Every difference between the two kinds follows from that one difference, and from nothing else.
+5. An experiment is tagged `[experiment]`, and a feature is tagged `[feature]`. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
+6. The tags name what the work is. No rule reads them to decide how the work runs.
+7. Either kind opens with a question or an intent, whichever the work has.
+8. Whether the work forecasts and reaches a verdict is chosen at the start. Put it to the engineer, and record it as a confirmation beside the working location and the participation.
+9. The lifecycle reads that choice. It does not follow from the kind, or from whether the work opens with a question or an intent.
 
 ## The record
 
 1. Open with the **Question** or the **Intent**.
-2. Then give the setup: a `**State:**` line, the upstream branch it merges into, the implementation branch, its base, and the working location chosen at the start.
+2. Then give the setup: a `**State:**` line, the upstream branch it merges into, the implementation branch, its base, the working location chosen at the start, and whether it reaches a verdict.
 3. The upstream branch is `master` or another topic branch.
 4. The setup also includes a `**Tags:**` line carrying `[experiment]` or `[feature]`.
-5. An `[experiment]` states a forecast of what is expected to happen, before the work.
-6. As the work proceeds, an experiment records what actually happened against the forecast.
-7. An experiment then records the findings and any post-hoc misses, including outcomes the forecast did not account for.
-8. A `[feature]` states no forecast, no comparison against one, and no findings or misses.
-9. Both kinds record the confirmations the lifecycle required, so the work's authority is auditable.
-10. Both record these confirmations: the working-location selection at the start, and the attended-or-unattended selection at the start.
-11. Both also record these: adding a worktree to work already under way, and branch deletion with worktree removal.
-12. An experiment also records the confirmations of the affirmation declaration, concluding a superseded experiment, and merging untested code.
+5. Work that reaches a verdict states a forecast of what is expected to happen, before the work.
+6. As the work proceeds, it records what actually happened against the forecast.
+7. It then records the findings and any post-hoc misses, including outcomes the forecast did not account for.
+8. Work without a verdict states no forecast, no comparison against one, and no findings or misses.
+9. Every record carries the confirmations the lifecycle required, so the work's authority is auditable.
+10. Every record carries these: the working-location selection, the attended-or-unattended selection, and the verdict selection, each at the start.
+11. Every record also carries these: adding a worktree to work already under way, and branch deletion with worktree removal.
+12. Work that reaches a verdict also records the affirmation declaration, concluding a superseded implementation, and merging untested code.
 
 ## The state
 
@@ -111,24 +113,24 @@ Write the state line as `Active` when the record is written, and update it as th
 7. Do not invent a state word.
 8. A record is written when its work starts, so it carries `Active` from the moment it is written.
 9. The filename carries the state suffix, `-ACTIVE` while the work is in progress (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
-10. The state words both kinds take are these.
+10. The state words every implementation takes are these.
     - **Active**: the work is in progress.
     - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
     - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
     - **Suspended**: paused, not ended.
-11. The words only an `[experiment]` takes are these, since each judges a question.
-    - **Affirmed**: the question held. The user declares it.
-    - **Refuted**: the question was disproven.
+11. The words only work that reaches a verdict takes are these.
+    - **Affirmed**: the question held, or the intent was met as forecast. The engineer declares it.
+    - **Refuted**: the question was disproven, or the intent was not met as forecast.
     - **Inconclusive**: it ran and gave no clear verdict either way.
-12. The word only a `[feature]` takes is this.
+12. The word only work without a verdict takes is this.
     - **Completed**: integrated into the upstream branch. It is the ordinary conclusion.
-13. A feature takes no verdict word, and an experiment takes no `Completed`. Neither is an oversight.
+13. Work without a verdict takes no verdict word, and work with one takes no `Completed`, whatever the kind.
 
 ## Runs
 
 1. Runs are optional.
-2. Only an experiment has runs. A feature has none.
-3. Split an implementation into runs only when the question is held fixed and one factor is varied to compare.
+2. Only work that reaches a verdict has runs.
+3. Split an implementation into runs only when its question or intent is held fixed and one factor is varied to compare.
 4. Each run is its own branch from the same base.
 5. Each run carries its own forecast.
 6. Runs are titled `Run 1`, `Run 2`, and so on.
@@ -148,12 +150,11 @@ Write the state line as `Active` when the record is written, and update it as th
 1. Use the same frontmatter-free markdown as rules: a title, then prose and tables.
 2. The title is `# Experiment — <name>` or `# Feature — <name>`.
 3. The kind reads in the title and is stated as data in the `**Tags:**` line.
-4. The lifecycle reads the tag, not the title.
-5. A record whose title and tag name different kinds is defective.
-6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
-7. The filename also takes the state suffix.
-8. End the file with the provenance footer.
-9. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
+4. A record whose title and tag name different kinds is defective.
+5. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
+6. The filename also takes the state suffix.
+7. End the file with the provenance footer.
+8. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
 ## Compression
 
@@ -164,8 +165,11 @@ Write the state line as `Active` when the record is written, and update it as th
 - 2026-10-27, revised: `[experiment]` and `[feature]` are no longer called reserved tags, a term the engineer settled; not checked
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 46 → 46, clarity 0.78 → 0.79; checked: 55 directives, 54 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 46 → 46, clarity 0.79 → 0.79; checked: 41 directives, 41 kept, 0 less precise, 0 lost
+- 2026-10-29, revised: either kind opens with a question or an intent, and the verdict is chosen at the start; checked: 52 directives, 52 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Oct 29 2026 an experiment was built to a question and a feature to an intent, and that one difference decided the forecast, the verdict, the state words, and runs. The engineer settled that either kind opens with a question or an intent, that whether it forecasts and reaches a verdict is chosen at the start, and that the tags stay as names no rule reads.
 
 Until 2026-10-25 Abandoned, Superseded, and Suspended were listed as "the concluding words both kinds take", though Suspended is defined as paused, not ended, and the filename took its state suffix "once the record concludes". That left open whether a suspended record takes the suffix, which the a-record-ends-with-its-state-in-upper-case rule gives to any record carrying a state line. The engineer settled that Suspended is a state and not a conclusion, and that the suffix follows the state line.
 
@@ -211,3 +215,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:38:42 PM PT

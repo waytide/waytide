@@ -18,6 +18,7 @@
 1. **Items**
    - `New item` creates an item. It carries `[idea]` where no other tag is given.
    - `New idea` creates an item tagged `[idea]`.
+   - `/item work` creates an item tagged `[work]`, a piece of work to be done. `/work-item` is another wording of it.
    - `List` lists the items in a given state, such as `/list open`. It renders the list as the a-record-list-is-a-table rule fixes it: an ordinal, the handle, the title, and the state.
    - `New mistake` creates an item tagged `[mistake]`.
    - `New problem` creates an item tagged `[problem]`.
@@ -48,7 +49,7 @@
      - `Lapse item`: Lapsed
      - `Reopen item`: takes back Realized, Deferred, or Open, returning to Active or Open
    - **An observation:** `Promote observation to rule` writes the rule in `local/rules/`, naming the observation it came from. It adds the `**Promoted to:**` line under the observation's `**Tags:**` line and writes the promotion's log entry. The observation stays `Recorded`, and nothing else in it changes.
-   - **A work item:** the item commands, with `Done` in place of `Realize item`, and no `Lapse item`. `Reopen item` takes back Done.
+   - **A piece of work, tagged `[work]`:** the item commands, with `Done` in place of `Realize item`, and no `Lapse item`. `Reopen item` takes back Done.
    - **An experiment:**
      - `Affirm experiment`: Affirmed
      - `Refute experiment`: Refuted
@@ -74,6 +75,96 @@
 - **Where the frontmatter carries an `allowed-tools` line, `AskUserQuestion` is in it**, or the agent cannot call it.
 - **The interaction was simulated** for `/collect` with no argument and no collection running: the question *No collection is running. What do you want to do?*, with the options `begin`, `resume`, and `Explain`.
 
+## Amended — 2026-10-29: the list command
+
+**Items are listed by state in two forms, `/item list <state>` and `/list <state>`**, such as `/item list open` and `/list open`. Each is a wording of the same command.
+
+**`current` is a virtual, aggregate state: Open, Active, and Suspended together.** `/list current` lists the items in any of the three. No `**State:**` line ever reads `Current`, and no filename carries it. It is a word the list command reads, not a state an item reaches.
+
+- **A suspended item is asked for by name here.** The status-report-format rule counts a suspended record in a report or a brief rather than listing it, and lists it when it is asked for. `/list current` asks for it.
+- **STE:** `current` as an adjective is absent from the STE dictionary, which carries the word only as electrical current in an example.
+
+## Amended — 2026-10-29: work
+
+**The category is named "work", and its tag is `[work]`.** The engineer judges "work item" colloquial. The items-convention names the tag `[work-item]`, and this item does not change that rule.
+
+## Amended — 2026-10-29: the work-item tag stays
+
+**The tag stays `[work-item]`.** Offered `[work]`, `[work-item]`, and `[task]`, the engineer selected `[work-item]`, and that replaces the `[work]` in the amendment above. The commands keep their words: `/item work`, with `/work-item` as another wording of it. The foundation rules already name the tag `[work-item]`, so no rule changes.
+
+## Amended — 2026-10-29: the tag is `[work]`
+
+**The tag is `[work]`, reversing the amendment above.** The foundation rules name the tag `[work-item]`, and where they change is not settled.
+
+## Amended — 2026-10-29: aliases for creating items
+
+**Each kind of item is also created by a command of its own name.** `/idea` is `/item idea`, `/mistake` is `/item mistake`, `/problem` is `/item problem`, and `/work` and `/work-item` are `/item work`. `/observation` is `/item observation`, which creates an item tagged `[observation]` with the state `Recorded`.
+
+**Not settled:** `/observation` already takes `promote` as a subcommand. Whether `/observation` alone creates one and `/observation promote` promotes one, or the promotion moves elsewhere.
+
+**The engineer judges that the two do not clash (2026-10-29).** `/observation` with no subcommand creates an observation, and `/observation promote` promotes one.
+
+**A bare `/idea` is `/idea new` (2026-10-29).** `/idea` takes subcommands, and with none it creates an idea, as a bare `/observation` creates an observation.
+
+## Amended — 2026-10-29: freewrite
+
+**`/freewrite begin`, `/freewrite end`, and `/freewrite resume` replace `/collect` and `/sketch`.**
+
+## Amended — 2026-10-29: projects
+
+**`/projects` is a root command that works with the machine's registry of Waytide projects, `~/.config/waytide/consuming-projects.toml`, from within any project on the machine.** It replaces `/package projects`, which put a command about projects under packages. Listing the registered projects is one thing it does.
+
+**Not settled:** what else it does, such as adding a project to the registry or removing one.
+
+## Amended — 2026-10-29: the root commands
+
+**The root commands, without aliases, are these.**
+
+| Command | What it does |
+|---|---|
+| `/item` | Items: create, list, change state |
+| `/experiment` | Experiments: create, status, change state |
+| `/feature` | Features: create, status, change state |
+| `/journal` | Shared and private journal entries |
+| `/log` | Write a log entry, or summarize the log |
+| `/freewrite` | Begin, end, or resume freewriting |
+| `/package` | Activate, deactivate, refresh, install |
+| `/projects` | The machine's registry of Waytide projects |
+| `/status-report` | The whole-project report |
+| `/test-report` | Classify the suite |
+| `/test-tree` | The suite's context tree |
+| `/reserve` | Reserve a word |
+| `/ete` | Write in Eventide Technical English |
+| `/expand` | Expand the previous answer |
+| `/work-session` | Write or append a work session record |
+| `/release` | Choose the next version |
+| `/publish` | Publish packages, in this repository only |
+
+## Amended — 2026-10-29: tests
+
+**`/test` is a root command for running and reporting on the tests.**
+
+- `/test` runs the automated suite, by whatever command the project's stack sets.
+- `/test interactive [<test>]` runs an interactive test, or asks which one. An interactive test runs only when the engineer asks.
+- `/test report` classifies the suite. `/test-report` is another wording of it.
+- `/test tree` runs the suite and prints its context tree. `/test-tree` is another wording of it.
+
+**The reports group keeps only `/status-report`.**
+
+## Amended — 2026-10-29: phases
+
+**`/phases` is a root command that lists the current implementation's phases in order, and prints the current phase with emphasis.**
+
+**Not settled:** how it finds the current implementation, such as from the branch the working tree is on, and how it sits beside `/experiment status` and `/feature status`, which list the phases with the current one's goal.
+
+## Amended — 2026-10-30: the engineer's edits to the help text
+
+**The engineer added four commands to the help text in `scratch/skills-help.md`.**
+
+- `/feature new with phases` starts a feature and asks for its phases, as `/experiment new with phases` does.
+- `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` freewrite and record the result in a new item of that kind. The destination is chosen at the start, where `/freewrite end` otherwise asks whether the points become a new item or are appended to a recent one.
+- `/clarify` clarifies the previous answer, and then clarifies it again.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -96,6 +187,34 @@ On 2026-10-29, the engineer asked: "Can Claude slash commands have subcommand op
 
 On 2026-10-29: "A “list” command that can list items of a particular state"
 
+On 2026-10-29, of the slash-command forms: "“/item list” is good, but so is “/list open”"
+
+On 2026-10-29: "Use the word “current” as a virtual, aggregate state that includes open, active, and suspended items"
+
+On 2026-10-29: "“Work item” is colloquial. The category should ust be “work”. The tag should be [work]. “/item work” is fine". Then: "“/work-item” should be an alias for “/item work”"
+
+On 2026-10-29: "I'm not sure if it's [work-item] or [work]". Offered `[work]`, `[work-item]`, and `[task]`, the engineer selected `[work-item]`.
+
+On 2026-10-29: "No. Reverse that. Use the tag [work]"
+
+On 2026-10-29: "The following should be alias to the respective item commands: idea, observation, mistake, problem, work (and also work-item)"
+
+On 2026-10-29: "No clash"
+
+On 2026-10-29, of how a bare `/item` offers its subcommands: "No, disregard that. A bare “/idea” is an alias for “/idea new”"
+
+On 2026-10-29, after "brainstorm", "sketch", "braindump", and "spew" were weighed: "Yup. “freewrite” is right". Offered whether it replaces only "sketch" or "collect" too, the engineer selected that it replaces both.
+
+On 2026-10-29: "Yeah. That's the wrong place for that. There should be a root “/projects” command that can interact with the consuming projects registry from within a project on the machine"
+
+On 2026-10-29: "Write this into an item", of the list of root commands without aliases.
+
+On 2026-10-29, of a proposed `/test` command: "Yes, adopt that"
+
+On 2026-10-29: "Another slash command: “/phases”. It lists the phases in order, and prints the current phase with emphasis"
+
+On 2026-10-30, the engineer added to the help text: "/feature new with phases — Start a feature, asking for its phases", "/freewrite idea — Freewrite and record it in an idea item", "/freewrite observation — Freewrite and record it in an observation item", "/freewrite mistake — Freewrite and record it in a mistake item", and "/clarify — Clarify the previous answer, then clarify it again for good measure"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -108,3 +227,17 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:47:56 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:19:44 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:14:30 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:26:21 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:14:30 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:17:07 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:30:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:18 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:42 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:25:31 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:26:51 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:29:17 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT

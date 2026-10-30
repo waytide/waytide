@@ -39,6 +39,10 @@
 - which tag the collected record carries
 - whether the points are held as they are collected and reframed by the agent at the end, or written to disk as each one arrives
 
+## Amended — 2026-10-29: freewrite
+
+**The commands are *begin freewriting*, *end freewriting*, and *resume freewriting*, typed `/freewrite begin`, `/freewrite end`, and `/freewrite resume`.** This replaces *collect* and *sketch* in the resolutions above. Freewriting is the established practice of producing text continuously and unedited, and shaping it afterward.
+
 ## History
 
 As the engineer first stated it: "Idea: Command protocol for “begin recording” (or “begin stream”) and “end recording” (or “end stream”)"
@@ -55,6 +59,8 @@ On 2026-10-28: "The file is named only with the date prefix to begin with, and t
 
 On 2026-10-29: "It will be collect and sketch"
 
+On 2026-10-29, after "brainstorm", "sketch", "braindump", and "spew" were weighed: "Yup. “freewrite” is right". Offered whether it replaces only "sketch" or "collect" too, the engineer selected that it replaces both.
+
 ---
 
 Authored by Scott Bellware on Wed Oct 28 2026 at 7:42:44 PM PT
@@ -69,3 +75,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 10:02:02 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 10:05:01 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:37 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:56:18 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
