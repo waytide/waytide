@@ -12,7 +12,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 - **On creation.** That the item was recorded at all is itself a decision, and the entry records the item rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit an item records decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out. **An observation is `Recorded` and never moves**, so it takes a creation entry and no other.
+- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a `[work]` item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a `[work]` item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out. **An observation is `Recorded` and never moves**, so it takes a creation entry and no other.
 
 ## What the entry says
 
@@ -64,8 +64,8 @@ Name the record in the entry, and say what happened to it. State what the record
 4. Write the entry on the item's creation.
 5. Write the entry on each dated `Settled` resolution added after the item is created.
 6. Write the entry on each change of the item's `**State:**` line.
-7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item.
-8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
+7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a `[work]` item.
+8. A change of state is also the line taking back Realized, Deferred, Open, or a `[work]` item's Done.
 9. An observation is `Recorded` and never moves, so it takes a creation entry only.
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
 11. Do not log prose that settles nothing either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section.
@@ -105,6 +105,7 @@ Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "
 Until Mon Oct 26 2026 this rule was named an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state and titled "An item takes a log entry on creation, on each settled resolution, and on a change of state".
 
 Until Tue Oct 27 2026 this rule described the log as "a one-line-per-decision record". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
+- **Thu Oct 29 2026** — the tag for a piece of work to be done was `[work-item]`, and the record was called a work item. It is `[work]`, at the engineer's direction.
 
 Related:
 
@@ -164,3 +165,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
