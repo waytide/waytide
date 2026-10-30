@@ -15,9 +15,9 @@ DESCRIPTION
      once more: the point first, in a sentence or two, then only the few
      facts needed to understand it and decide.
 
-     It runs twice because the second pass often gives the more soluble
-     answer: one the reader takes in at once, with little work to
-     understand it. The first pass clears out what the answer did not need. The
+     It runs twice because the second pass often gives the more humane
+     and soluble answer: one written for a person, which the reader takes
+     in at once, with little work to understand it. The first pass clears out what the answer did not need. The
      second is written for the person reading it, in the words they would
      use themselves.
 
