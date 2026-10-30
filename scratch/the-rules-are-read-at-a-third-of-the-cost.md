@@ -10,6 +10,12 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 
 **Each phase stated its forecast before its work**: what it expected to find, and how confident it was. After the work, each forecast was recorded as held or missed.
 
+**Key metrics at this point:**
+
+- Session-start read: 547,780 characters, in 108 rule files
+- Mean solubility: 51, with the median at 49.5
+- Mean clarity score: 0.52
+
 ## 2. The experiment is set up, and the first rules are compressed (Oct 21)
 
 1. **The rule-reduction idea gained flattening**: restating a rule as its essential directives.
@@ -22,6 +28,14 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 8. **A predictability simulation was designed**: fresh agents answer scenarios from the full rule or from its compressed text, and the answers are compared. It passed on #2.
 9. **Rules #11, #7, #15, and #12 were compressed, and each passed its simulation.** One answer in 150 differed.
 
+**Key metrics at this point:**
+
+- Five rules compressed: #2, #7, #11, #12, and #15
+- Their mean compression: 0.55, from 0.27 to 0.71
+- Their mean change: 0.78, from 0.56 to 0.91
+- Simulation: 149 of 150 answers the same
+- Session-start read: unchanged, 547,780 characters
+
 ## 3. The method is checked, and run across the corpus (Oct 22–24)
 
 1. **The simulation was found not to settle whether a compressed rule has the same effect**, so a **directive check** was designed: one fresh agent lists every directive in the full text, and a second judges each one against the compressed text as kept, less precise, or lost.
@@ -31,6 +45,13 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 5. **An unattended method for the rest of the corpus was settled**: an agent compresses each rule, fresh agents list and check its directives, losses are repaired, and repaired rules are checked again.
 6. **The corpus was compressed in batches**: `git` first, then `testing`, `design-by-efferent` with `versioning`, `language` with `journal`, and `foundation`. Each batch's review list went to the engineer.
 7. **Compressed texts were settled as numbered lists**, keeping their headings.
+
+**Key metrics at this point:**
+
+- Rules compressed: 102
+- Mean compression: 0.31, median 0.29
+- Mean change: 0.59, median 0.60
+- Mean solubility: 51 → 73
 
 ## 4. The rules are cleaned up, and compression becomes a rule (Oct 25–27)
 
@@ -42,6 +63,11 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 6. **Compression was governed by a rule**, and each rule's figures were recorded in its own file, in a `## Compression` section below the compressed text. That rule is a-rules-compressed-text-is-written-in-its-source-checked-against-it-and-its-figures-recorded-below-the-body.
 7. **The experiment's record took the Active state**, and findings #7 and #10 were placed in phases 2 and 3.
 
+**Key metrics at this point:**
+
+- Session-start read, compressed: 451,614 characters, with each rule's measures still printed
+- Mean solubility: 73
+
 ## 5. Phase 1 is tested and affirmed (Oct 27–28)
 
 1. **The compressed read was measured smaller than `master`'s.**
@@ -51,12 +77,26 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 5. **Phase 2 was suspended to return to phase 1.** A session comparison tested whether the compressed texts need their *Why* points: 56 of 75 passed with them, and 58 of 75 without. The compressed texts were settled to carry no reasons, and *How to apply* was removed from them.
 6. **Phase 1 was affirmed again, and phase 2 resumed.**
 
+**Key metrics at this point:**
+
+- Session-start read: 450,824 characters at the first affirmation, 17.7% smaller than 547,780
+- After the reasons were removed: 396,052 characters, 27.7% smaller
+- Mean solubility: 73
+- Mean clarity score: 0.52 → 0.80
+- Sessions: 49 of 50 compressed against 48 of 50 full; 58 of 75 without the Why points against 56 of 75 with them
+
 ## 6. One read, in one command (Oct 28)
 
 1. **The read was measured before the change**: its characters, its time, and its tool calls.
 2. **The compiler wrote one rules file per package.** On its own, that did not shorten the read.
 3. **A loader was written that prints every file the read covers, in one command**: `system/foundation/load-rules.sh`. The read took 19.9 seconds and 7 tool calls, against 44.8 seconds and 18 calls before.
 4. **Phase 2 was affirmed**, and the rules were updated to describe one rules file per package.
+
+**Key metrics at this point:**
+
+- Session-start read, everything the loader prints: 377,775 characters
+- Time: 44.8 seconds → 19.9 seconds
+- Tool calls: 18 → 7
 
 ## 7. Triggers (Oct 28–29)
 
@@ -71,6 +111,13 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 9. **The triggers phase was affirmed and merged into the experiment's branch.**
 10. **A printed index of every rule, for the engineer, was not pursued.**
 
+**Key metrics at this point:**
+
+- Session-start read: 377,775 → 229,028 characters, 39% smaller
+- Pre-loaded rules: 47
+- On-demand rules: 61
+- Real sessions that loaded their rule before acting: 50 of 50
+
 ## 8. Compaction, packages, and local compression (Oct 29)
 
 1. **Phase 4 measured that after compaction 3 of 20 sessions read the rules again.**
@@ -79,6 +126,13 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 4. **Phase 5, title-display, was abandoned**, since a printed list scrolls and the engineer had not pursued it.
 5. **Phase 6 had the loader list a deactivated package, with the command that loads it, in place of its rules**, and load a package by name. The hook and the package-set rule were updated. Sessions behaved the same, and every session loaded a reactivated package before using it. Phase 6 was affirmed.
 6. **Phase 7 had the loader print the compressed section of a vocabulary or a local rule**, and the vocabularies and local rules were compressed and checked. The read fell another 22%, and sessions behaved the same. Phase 7 was affirmed.
+
+**Key metrics at this point:**
+
+- Session-start read: 230,433 → 180,146 characters, 22% smaller
+- Vocabularies and local rules: 84,905 → 52,637 characters, 38% shorter
+- Sessions reading the rules again after compaction: 3 of 20 → 20 of 20
+- A project with two packages turned off: 19% smaller still
 
 ## 9. The outstanding work (Oct 29)
 
@@ -94,6 +148,12 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 10. **Phase 14 found the journal's time question right in 20 of 20 sessions**, with `Explain` gone. Phase 14 was affirmed.
 11. **Phase 15 compressed the clarified-twice rule added on `master`, keeping its example.** Phase 15 was affirmed.
 
+**Key metrics at this point:**
+
+- Session-start read: 180,146 → 170,884 characters after single statement, 167,074 after the local vocabulary, 168,292 after the last rule was compressed
+- Mean solubility: 73.3
+- Mean clarity score: 0.82
+
 ## 10. The conclusion and the merge (Oct 29)
 
 1. **The engineer concluded the experiment as affirmed.** Its record was renamed to end in `-AFFIRMED`.
@@ -102,11 +162,23 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 4. **`master` moved forward to the experiment's branch.**
 5. **The experiment's branches and worktree were deleted**, with the engineer's confirmation.
 
+**Key metrics at this point:**
+
+- Session-start read on `master`: 170,400 characters, about a third of 547,780
+- Rules: 111, of which 48 pre-loaded and 63 on-demand
+- Re-checked after the merge: 30 rules, 822 directives, 20 repairs
+
 ## 11. After the merge (Oct 29–30)
 
 1. **The size rank became a figure of its own**, recorded with the others.
 2. **The figures took the order size rank, clarity score, solubility, change, compression.** The **clarity score** is 1 minus the unclarity.
 3. **This record was written.**
+
+**Key metrics at this point:**
+
+- Session-start read: 170,400 characters
+- Mean solubility: 73.3
+- Mean clarity score: 0.82
 
 ## Takeaways
 
@@ -137,3 +209,4 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 Authored by Scott Bellware on Thu Oct 29 2026 at 6:50:58 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:01:32 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:38:04 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:43:15 PM PT
