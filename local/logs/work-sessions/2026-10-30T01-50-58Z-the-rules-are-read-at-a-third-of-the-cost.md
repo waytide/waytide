@@ -1,96 +1,138 @@
 # Work Session — The rules are read at a third of the cost (Oct 21–29, 2026)
 
-This work session began as a question: can Waytide's rules be made much cheaper to read at the start of a session, with sessions behaving the same? It became fifteen phases of the rule-reduction experiment. It ended with the experiment affirmed and merged into `master`, and the session-start read at about 170,000 characters, against about 547,000 when it began.
+This work session began as a question: can Waytide's rules be made much cheaper to read at the start of a session, with sessions behaving the same? It became the rule-reduction experiment, run in fifteen phases. It ended with the experiment affirmed and merged into `master`, and the session-start read at about 170,000 characters, against about 547,000 when it began.
 
-**This is the guided tour, not the record of truth.** The durable records it points to are authoritative: above all the experiment's record, `local/implementations/2026-10-22T04-51-25Z-rule-reduction`, which holds every finding, forecast, and figure.
+**This is the guided tour, not the record of truth.** The durable records it points to are authoritative: above all the experiment's record, `local/implementations/2026-10-22T04-51-25Z-rule-reduction`, which holds every finding, forecast, and figure, and the log, `local/logs/log/`, which holds an entry for each action below.
 
 ## 1. The goal
 
 **The engineer asked for a smaller read that keeps the rules' effect.** Every session starts by reading the rules, and every later prompt carries them. A smaller read costs less time and less of the agent's context. It counts only if the agent still does what the rules require, so the test of every change is that sessions behave the same.
 
-**Each phase stated its forecast before its work**: what it expected to find, and how confident it was. After the work, each forecast was recorded as held or missed. The forecasts are in the experiment record's Forecast section.
+**Each phase stated its forecast before its work**: what it expected to find, and how confident it was. After the work, each forecast was recorded as held or missed.
 
-## 2. Compression, and the measures it made
+## 2. The experiment is set up, and the first rules are compressed (Oct 21)
 
-**Each rule got a short form**: numbered instructions in plain sentences, without the reasons, in a `## Compressed` section below the rule's full text. The full text stays the authority.
+1. **The rule-reduction idea gained flattening**: restating a rule as its essential directives.
+2. **An experiment was allowed to run in phases**, each on its own branch from the experiment's.
+3. **The experiment's record was written**, with its question, its phases, and its forecasts.
+4. **Fifteen candidate rules were measured and tabled.** Each took a **size rank**, its rank by length among all the rules, and an **unclarity**, the mean of six ranks: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
+5. **The two were combined into solubility**, corrected to run upward and scaled to 100: higher is easier to take in. The combined score was settled as a screen for candidates, not a ranking.
+6. **Two more figures were set for a compressed text**: **compression**, the share of characters it removes, and **change**, the share of words it removes, adds, or replaces.
+7. **Rule #2 was compressed, and the compiler learned to print a rule's compressed text in place of its body.**
+8. **A predictability simulation was designed**: fresh agents answer scenarios from the full rule or from its compressed text, and the answers are compared. It passed on #2.
+9. **Rules #11, #7, #15, and #12 were compressed, and each passed its simulation.** One answer in 150 differed.
 
-**Five figures measure a short form against its full text**, recorded in the rule's own `## Compression` section, one line per event:
+## 3. The method is checked, and run across the corpus (Oct 22–24)
 
-1. **Size rank:** the rule's rank by length among all the rules, from 0 for the smallest to 1 for the largest.
-2. **Clarity score:** 1 minus the rule's unclarity. Unclarity is the mean of six ranks among all the rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
-3. **Solubility:** the size rank and the unclarity together, on a scale of 0 to 100. Higher is easier to take in.
-4. **Change:** the share of the full text's words that the short form removes, adds, or replaces.
-5. **Compression:** the share of the full text's characters that the short form removes.
+1. **The simulation was found not to settle whether a compressed rule has the same effect**, so a **directive check** was designed: one fresh agent lists every directive in the full text, and a second judges each one against the compressed text as kept, less precise, or lost.
+2. **The check ran on #15, #11, #12, #7, and #2.** It found one material weakening and two losses, and each was restored with the smallest clause.
+3. **The experiment was suspended and resumed the same day.**
+4. **Rules #13 and #14 were compressed and checked**, and the rewritten #2 and #12 were checked again.
+5. **An unattended method for the rest of the corpus was settled**: an agent compresses each rule, fresh agents list and check its directives, losses are repaired, and repaired rules are checked again.
+6. **The corpus was compressed in batches**: `git` first, then `testing`, `design-by-efferent` with `versioning`, `language` with `journal`, and `foundation`. Each batch's review list went to the engineer.
+7. **Compressed texts were settled as numbered lists**, keeping their headings.
 
-Each rank compares the rule with all the rules as they stood at one fixed point in time, so a figure measured on one day compares with one measured on another.
+## 4. The rules are cleaned up, and compression becomes a rule (Oct 25–27)
 
-**Three measures test whether the short form keeps the rule's meaning:**
+1. **Every rule's name was clarified**, so that a name says what its rule says, and each rename updated the rule's citations.
+2. **Phase 1 was renamed compression**, and its ten findings about where the rules cost more than they needed to were recorded.
+3. **On `master`, from those findings, history clauses moved out of the rule bodies, the vocabularies' shared preamble was stated once, restated instructions were cited instead, and two stale references were reconciled.**
+4. **On `master`, the hook stopped asking for the package set where it prints nothing.**
+5. **Every compressed text changed since its check was checked again.**
+6. **Compression was governed by a rule**, and each rule's figures were recorded in its own file, in a `## Compression` section below the compressed text. That rule is a-rules-compressed-text-is-written-in-its-source-checked-against-it-and-its-figures-recorded-below-the-body.
+7. **The experiment's record took the Active state**, and findings #7 and #10 were placed in phases 2 and 3.
 
-1. **The directive check.** One fresh agent lists every instruction in the full text. A second fresh agent judges each one against the short form: kept, less precise, or lost. Neither agent wrote the short form.
-2. **The predictability simulation.** Agents answer the same scenarios with the full rule or with its short form, and the answers are compared. On the first five rules, one answer in 150 differed.
-3. **The session comparison.** Agents given one version of the rules or another answer the same requests. A separate agent scores every answer against a pass condition, without knowing which version produced it. This settled, for one, that a rule's *Why* points could go: 56 of 75 passed with them, and 58 of 75 without.
+## 5. Phase 1 is tested and affirmed (Oct 27–28)
 
-**The directive check became the gate.** A short form stands only after it passes. Each lost instruction, and each materially less precise one, is repaired with the smallest wording that restores it, and the short form is checked again. The method is now a rule: a-rules-compressed-text-is-written-in-its-source-checked-against-it-and-its-figures-recorded-below-the-body.
+1. **The compressed read was measured smaller than `master`'s.**
+2. **A session comparison was designed**: agents given one version of the rules or the other answer the same requests, and a separate agent scores each answer against a pass condition without knowing its version. It held the forecast that compressed rules behave the same.
+3. **A forecast that solubility would predict ease of processing did not hold**, though the compressed rules were found easier to process.
+4. **Phase 1 was affirmed, and phase 2 started.**
+5. **Phase 2 was suspended to return to phase 1.** A session comparison tested whether the compressed texts need their *Why* points: 56 of 75 passed with them, and 58 of 75 without. The compressed texts were settled to carry no reasons, and *How to apply* was removed from them.
+6. **Phase 1 was affirmed again, and phase 2 resumed.**
 
-**The phase also recorded ten findings** about where the rules cost more than they needed to. Later phases took most of them up.
+## 6. One read, in one command (Oct 28)
 
-## 3. One read, in one command
+1. **The read was measured before the change**: its characters, its time, and its tool calls.
+2. **The compiler wrote one rules file per package.** On its own, that did not shorten the read.
+3. **A loader was written that prints every file the read covers, in one command**: `system/foundation/load-rules.sh`. The read took 19.9 seconds and 7 tool calls, against 44.8 seconds and 18 calls before.
+4. **Phase 2 was affirmed**, and the rules were updated to describe one rules file per package.
 
-**Each package's rules were compiled into one file, and a loader prints the whole read in one command**: `system/foundation/load-rules.sh`. The read took 19.9 seconds and 7 tool calls, against 44.8 seconds and 18 calls before. Here the read itself became something measured: its size in characters, its time, and its tool calls.
+## 7. Triggers (Oct 28–29)
 
-## 4. Triggers
+1. **Phase 3 started as additional-context**, delivering the rules through the hook, **and became triggers.**
+2. **Four phases were added**: re-read-after-compaction, title-display, active-packages-only, and local-compression.
+3. **The rules were sorted** into those printed at session start, the **pre-loaded** rules, and those loaded when their act comes up, the **on-demand** rules.
+4. **The design was settled**: a **trigger**, a line naming the act, goes under an on-demand rule's title, and the compiler writes each package's `rules-pre-loaded.md` and `rules-on-demand.md`.
+5. **The loader learned to print each on-demand rule's trigger with the command that loads it, and to load a rule by name.**
+6. **The 61 triggers were written.** The read fell 39%.
+7. **A session comparison scored the trigger index as well as the full read.**
+8. **A confirming test ran in real sessions**, in Claude Code itself, each in its own copy of the repository, on requests written by an agent that had not seen the triggers. Every session loaded its rule before acting, 50 of 50.
+9. **The triggers phase was affirmed and merged into the experiment's branch.**
+10. **A printed index of every rule, for the engineer, was not pursued.**
 
-**About half the rules load only when their act comes up.** These are the **on-demand** rules. At session start, the loader lists each one's **trigger**, a line naming the act, with the command that loads it. The rest are **pre-loaded**, printed in full at session start. The read fell 39%.
+## 8. Compaction, packages, and local compression (Oct 29)
 
-**A confirming test ran in real sessions**, in Claude Code itself, on requests written by an agent that had not seen the triggers. Every session loaded its rule before acting, 50 of 50. From here on, a change that touches the harness was tested in real sessions, each in its own copy of the repository, and each transcript was checked for whether the agent loaded what it needed.
+1. **Phase 4 measured that after compaction 3 of 20 sessions read the rules again.**
+2. **An instruction given on compaction alone was tried**, and 20 of 20 sessions read them again.
+3. **The hook was built to give that instruction, attended, with a test**, the harness rule was updated to describe it, and the built hook was confirmed in 10 of 10 sessions. Phase 4 was affirmed.
+4. **Phase 5, title-display, was abandoned**, since a printed list scrolls and the engineer had not pursued it.
+5. **Phase 6 had the loader list a deactivated package, with the command that loads it, in place of its rules**, and load a package by name. The hook and the package-set rule were updated. Sessions behaved the same, and every session loaded a reactivated package before using it. Phase 6 was affirmed.
+6. **Phase 7 had the loader print the compressed section of a vocabulary or a local rule**, and the vocabularies and local rules were compressed and checked. The read fell another 22%, and sessions behaved the same. Phase 7 was affirmed.
 
-## 5. Reading again after compaction
+## 9. The outstanding work (Oct 29)
 
-**When Claude Code shortens a long conversation into a summary, the hook now tells the agent to read the rules again.** Before the change, 3 of 20 sessions read them again. After it, 20 of 20 did.
+1. **Five phases were added for the work still outstanding**: hook-delivery, single-statement, live-references, record-obligations, and prompt-turns.
+2. **Phase 8 measured the hook's channel to the agent at about 10,000 characters**, too little to carry the rules. Phase 8 was affirmed.
+3. **Phase 9 left the vocabularies' head line and opening lines out of their compressed texts**, after an evaluation of each line.
+4. **It removed each repetition whose origin, the rule the instruction belongs to, is pre-loaded**, and kept a vocabulary entry's meaning in its compressed text. A session test passed 16 of 18 against 18 of 18; a rerun showed the difference was chance. Phase 9 was affirmed.
+5. **Phase 10 corrected nine old rule names and one stale path.** Phase 10 was affirmed.
+6. **Phase 11 kept every step of a record's state change**: the rename and the footer line. Phase 11 was affirmed.
+7. **Phase 12 removed the `Explain` option, kept asking at once about a preference, and had a question with one real answer offer it and its negative.** Phase 12 was affirmed.
+8. **Three more phases were added**: local-vocabulary, journal-time-question, and master-rule-compression.
+9. **Phase 13 compressed the project vocabulary, and moved its one substitution, *superseded* for *overtaken*, to the `foundation` vocabulary.** Phase 13 was affirmed.
+10. **Phase 14 found the journal's time question right in 20 of 20 sessions**, with `Explain` gone. Phase 14 was affirmed.
+11. **Phase 15 compressed the clarified-twice rule added on `master`, keeping its example.** Phase 15 was affirmed.
 
-## 6. The phases that followed
+## 10. The conclusion and the merge (Oct 29)
 
-1. **Title display** was abandoned. Claude Code has no place to show a list of rule titles without it scrolling.
-2. **Active packages only:** a package that a project turns off is listed, with the command that loads it, instead of read. It can be turned back on during a session.
-3. **Local compression:** the vocabularies and the project's own rules got short forms. The read fell another 22%.
-4. **Hook delivery:** the hook can give the agent about 10,000 characters directly, too little to carry the rules, so the read stays.
-5. **Single statement:** an instruction written out in several rules is now stated once, in its origin, the rule it belongs to. Where a difference showed in the first run, the requests were run again, and the difference was chance.
-6. **Live references:** rules cited by old names, and one stale path, were corrected.
-7. **Record obligations:** the four steps of a record's state change were each found worth keeping, so nothing changed.
-8. **Prompt turns:** the `Explain` option was removed from questions. A question with one real answer offers it and its negative.
-9. **Local vocabulary:** the project's one word choice, *superseded* for *overtaken*, moved into the `foundation` vocabulary.
-10. **Journal time question:** with `Explain` gone, the question for an entry's time came out right in every test.
-11. **Master rule compression:** the rule that a response is clarified twice, added on `master` during the experiment, got its short form.
+1. **The engineer concluded the experiment as affirmed.** Its record was renamed to end in `-AFFIRMED`.
+2. **`master` was merged into the experiment's branch**, carrying `master`'s 110 commits from the same time into the experiment's layout. Each change to a renamed rule went into its new source and its compressed text, and `master`'s new rules took compressed texts.
+3. **Each compressed text the merge changed was checked again**: 30 rules, with 20 repairs.
+4. **`master` moved forward to the experiment's branch.**
+5. **The experiment's branches and worktree were deleted**, with the engineer's confirmation.
 
-## 7. The conclusion and the merge
+## 11. After the merge (Oct 29–30)
 
-**The engineer concluded the experiment as affirmed on Oct 29, 2026.** Before the merge, `master`'s own 110 commits from the same time were carried into the experiment's layout, and each short form the merge changed was checked again. `master` then moved forward to the experiment's branch, and the branches and worktree were deleted.
-
-**Afterward, the size rank became a figure of its own**, recorded beside the others, and the figures took the order size rank, clarity score, solubility, change, compression.
+1. **The size rank became a figure of its own**, recorded with the others.
+2. **The figures took the order size rank, clarity score, solubility, change, compression.** The **clarity score** is 1 minus the unclarity.
+3. **This record was written.**
 
 ## Takeaways
 
 - The session-start read is about a third of what it was, and sessions behave the same.
-- A short form stands only after a fresh agent finds it keeps its full text's instructions.
+- A compressed text stands only after a fresh agent finds it keeps its full text's directives.
 - A change that could alter behavior is tested in blind-scored sessions, and in real sessions where the harness is involved.
 - Each forecast is stated before the work, and recorded as held or missed after it.
 
 ## Glossary
 
-- **short form** — a rule's compressed text: its instructions without the reasons.
+- **compressed text** — a rule restated as numbered directives, without the reasons, below its full text.
 - **pre-loaded** — a rule printed in full at session start.
 - **on-demand** — a rule loaded only when its trigger comes up.
 - **trigger** — the line naming the act that loads an on-demand rule.
 - **origin** — the rule an instruction belongs to, which states it in full.
-- **size rank, clarity score, solubility, change, compression** — the five figures of a short form, as section 2 defines them.
+- **directive check** — the listing of a rule's directives and the judging of each against its compressed text.
+- **size rank, clarity score, solubility, change, compression** — the five figures of a compressed text, as sections 2 and 11 define them.
 
 ## Where the durable records live
 
 - **The experiment's record:** `local/implementations/2026-10-22T04-51-25Z-rule-reduction`, with its appendices.
 - **The compression rule:** a-rules-compressed-text-is-written-in-its-source-checked-against-it-and-its-figures-recorded-below-the-body.
 - **The loader and the hook:** `system/foundation/load-rules.sh` and `system/foundation/session-start.sh`.
-- **The log:** `local/logs/log/`, the entries from 2026-10-22 to 2026-10-30, with each of the engineer's decisions tagged `[decision]`.
+- **The log:** `local/logs/log/`, the entries from 2026-10-21 to 2026-10-30, with each of the engineer's decisions tagged `[decision]`.
 
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 6:50:58 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:01:32 PM PT
