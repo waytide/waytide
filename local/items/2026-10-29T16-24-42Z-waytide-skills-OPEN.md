@@ -169,6 +169,12 @@
 
 **The state Lapsed is renamed Obsolete, and every item takes it, a work item included.** `Lapse item` is `Obsolete item`, typed `/item obsolete`, and a piece of work takes it like any other item. This replaces `Lapse item` and the "no `Lapse item`" for a piece of work in the list above.
 
+## Amended — 2026-10-30: current
+
+**`/current` lists the current items: those Open, Active, or Suspended.** It is another wording of `/item list current`.
+
+**`/log-this` writes a log entry for the current work.** The engineer added it to the help text, under the log commands.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -221,6 +227,8 @@ On 2026-10-30, the engineer added to the help text: "/feature new with phases �
 
 On 2026-10-30: "Rename “lapse” to “obsolete”. And it should be applicable to all item categories, including work items."
 
+On 2026-10-30: "Add a “/current” command that lists current items". The engineer confirmed adding `/log-this` to the help text: "Write a log entry for the current work".
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -248,3 +256,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
