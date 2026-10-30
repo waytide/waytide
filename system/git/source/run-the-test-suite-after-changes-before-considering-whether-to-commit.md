@@ -8,6 +8,10 @@ After making any code change, run the full test suite and confirm it passes **be
 
 **The prompt also offers `Snooze this question`.** Selecting it means the agent commits at each good time from then on, without the prompt, for as long as the working tree stays on the branch it was selected on. When the working tree leaves that branch, the prompt returns. The suite still has to pass before each commit.
 
+**The question is never snoozed on `master`.** On `master` the prompt does not offer `Snooze this question`, and every commit there waits for the engineer's selection.
+
+**As the engineer stated it:** the prompt should never be able to be snoozed on master.
+
 **As the engineer stated it:** an option in the commit prompt should be: Snooze this prompt. That option will cause the agent to commit rather than prompt. Then: "Prompt" is the wrong word. It should say, "Snooze this question".
 
 **How the suite is run is the project's stack's concern, not this rule's.** What command runs it, and what its output reads when nothing failed, differ by language and test framework. So they are settled where a stack is settled. For a Ruby project that is the `ext/ruby-lang` package's rule on running the suite. This rule fixes only *when* the run happens relative to the commit decision, which holds for any stack.
@@ -38,6 +42,7 @@ After making any code change, run the full test suite and confirm it passes **be
 18. Commit only when the engineer selects it. Where the agent cannot tell, wait to be asked.
 19. The prompt also offers `Snooze this question`. Once it is selected, commit at each good time without the prompt, while the working tree stays on the branch it was selected on. The suite still passes before each commit.
 20. When the working tree leaves that branch, offer the prompt again.
+21. On `master`, do not offer `Snooze this question`. Every commit on `master` waits for the engineer's selection.
 
 ## Compression
 
@@ -46,8 +51,11 @@ After making any code change, run the full test suite and confirm it passes **be
 - 2026-10-28, revised: Why points removed, solubility 89 → 89, clarity 0.87 → 0.91; checked: 10 directives, 8 kept, 1 less precise, 1 lost, 2 repairs, re-checked kept
 - 2026-10-29, revised: the agent offers the commit when it can tell the time is right; checked: 15 directives, 15 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the commit prompt offers Snooze this question, lasting while the working tree stays on its branch; checked: 18 directives, 17 kept, 1 less precise, 0 lost. Left less precise: the run framed as verification rather than ceremony, a reason the compressed text does not carry. The option's wording was then swapped, a term the engineer settled, so no re-check
+- 2026-10-29, revised: the question is never snoozed on master; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Oct 29 2026 `Snooze this question` was offered on any branch. The engineer settled that it is never offered on `master`.
 
 Until Thu Oct 29 2026 the commit prompt offered only to commit or not. The engineer settled a third option, `Snooze this question`, lasting while the working tree stays on its branch.
 
@@ -80,3 +88,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:07:48 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:54:36 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:58:00 PM PT

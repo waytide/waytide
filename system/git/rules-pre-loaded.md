@@ -41,3 +41,4 @@ Source: system/git/source/run-the-test-suite-after-changes-before-considering-wh
 18. Commit only when the engineer selects it. Where the agent cannot tell, wait to be asked.
 19. The prompt also offers `Snooze this question`. Once it is selected, commit at each good time without the prompt, while the working tree stays on the branch it was selected on. The suite still passes before each commit.
 20. When the working tree leaves that branch, offer the prompt again.
+21. On `master`, do not offer `Snooze this question`. Every commit on `master` waits for the engineer's selection.
