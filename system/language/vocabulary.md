@@ -50,6 +50,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force — see below. **STE: `ACTIVATE (v)` is approved, and used with its approved meaning** |
 | **name who did it, and how** — *I ran `git mv`*, *the agent edited the Tags lines*, *you renamed it*, and where the contrast matters, *directly, not by the installer* | "by hand" | work done by a party and a means that are both named. The figure describes the work by a body part and leaves the actor out: asked *whose hand?*, it has no answer, and an agent has no hand at all. **STE: this row replaces a phrase rather than reserving a word, so no category applies** |
 | **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard — see below. **STE: this row fixes a citation form rather than reserving a word, so no category applies** |
+| **smaller** | "shorter" | of a size: having fewer characters, words, or lines. *Shorter* is said of time, as of a read that takes less time |
 
 ### Finer distinctions
 
@@ -128,6 +129,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 | **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force. STE: `ACTIVATE (v)` is approved, and used with its approved meaning |
 | **name who did it, and how** — *I ran `git mv`*, *the agent edited the Tags lines*, *you renamed it*, and where the contrast matters, *directly, not by the installer* | "by hand" | work done by a party and a means that are both named. STE: this row replaces a phrase rather than reserving a word, so no category applies |
 | **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard. STE: this row fixes a citation form rather than reserving a word, so no category applies |
+| **smaller** | "shorter" | of a size: having fewer characters, words, or lines. *Shorter* is said of time, as of a read that takes less time |
 
 ## Finer distinctions
 
@@ -155,6 +157,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 - 2026-10-29, revised: the definition of *solubility* is restored, at the engineer's direction, since a vocabulary entry keeps its term's meaning
+- 2026-10-30, revised: the substitution *smaller* for *shorter*, of a size, is added at the engineer's direction, as one table row in the full text and the compressed text alike; checked: 95 directives, 87 kept, 3 less precise, 5 lost, the new row kept; the losses are the opening lines left out on purpose and the repetitions phase 9 removed, whose origins are pre-loaded
 
 ---
 
@@ -208,3 +211,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 12:45:47 AM PT
