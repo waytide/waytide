@@ -106,6 +106,16 @@
 
 **A bare `/idea` is `/idea new` (2026-10-29).** `/idea` takes subcommands, and with none it creates an idea, as a bare `/observation` creates an observation.
 
+## Amended — 2026-10-29: freewrite
+
+**`/freewrite begin`, `/freewrite end`, and `/freewrite resume` replace `/collect` and `/sketch`.**
+
+## Amended — 2026-10-29: projects
+
+**`/projects` is a root command that works with the machine's registry of Waytide projects, `~/.config/waytide/consuming-projects.toml`, from within any project on the machine.** It replaces `/package projects`, which put a command about projects under packages. Listing the registered projects is one thing it does.
+
+**Not settled:** what else it does, such as adding a project to the registry or removing one.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -144,6 +154,10 @@ On 2026-10-29: "No clash"
 
 On 2026-10-29, of how a bare `/item` offers its subcommands: "No, disregard that. A bare “/idea” is an alias for “/idea new”"
 
+On 2026-10-29, after "brainstorm", "sketch", "braindump", and "spew" were weighed: "Yup. “freewrite” is right". Offered whether it replaces only "sketch" or "collect" too, the engineer selected that it replaces both.
+
+On 2026-10-29: "Yeah. That's the wrong place for that. There should be a root “/projects” command that can interact with the consuming projects registry from within a project on the machine"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -164,3 +178,5 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:42 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:25:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:26:51 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:29:17 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT

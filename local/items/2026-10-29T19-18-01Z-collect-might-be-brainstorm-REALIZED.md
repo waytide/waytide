@@ -22,6 +22,10 @@
 
 - **2026-10-29** — The commands are named for "collect" and "sketch", each a wording of the same command. "Brainstorm" and "ideate" are not used.
 
+## Amended — 2026-10-29: freewrite
+
+**The word is "freewrite", and neither "collect" nor "sketch" is used.** This replaces the resolution above. "Brainstorm" names producing ideas, not capturing them unsorted to be organized later, and "braindump" and "spew" are colloquial.
+
 ## History
 
 As the engineer first stated it: "Idea: “Collect” might be “brainstorm”"
@@ -30,9 +34,12 @@ On 2026-10-29: "It might also be “sketch” or “ideate”. I like “sketch�
 
 On 2026-10-29: "It will be collect and sketch"
 
+On 2026-10-29, after "brainstorm", "sketch", "braindump", and "spew" were weighed: "Yup. “freewrite” is right". Offered whether it replaces only "sketch" or "collect" too, the engineer selected that it replaces both.
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 12:18:01 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:19:58 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:18:37 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:56:18 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
