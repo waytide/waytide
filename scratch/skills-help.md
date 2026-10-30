@@ -20,6 +20,7 @@ ITEMS
                                    <state>: any item state, or "current"
                                    (Open, Active, and Suspended)
   /current-items                   List current items (/item list current)
+
   /item start                      Open -> Active
   /item realize                    -> Realized
   /item done                       -> Done ([work] items only)
@@ -29,6 +30,7 @@ ITEMS
   /item abandon                    -> Abandoned
   /item obsolete                   -> Obsolete
   /item reopen                     Take back Realized, Deferred, Open, or Done
+
   /item help                       Print this command's help
 
   /observation promote             Promote an observation to a rule
