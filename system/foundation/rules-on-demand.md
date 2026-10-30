@@ -54,11 +54,11 @@ Trigger: When creating an implementation record, or changing its **State:** line
 
 1. The concluding entry takes one of two forms. Which one is not a matter of taste.
 2. The form is decided by whether the work merged.
-3. Merged work means an affirmed experiment merged into its upstream branch, or a completed feature integrated. An affirmed experiment merges, and a completed feature integrates.
+3. Merged work means affirmed work merged into its upstream branch, or completed work integrated, whatever the kind.
 4. For merged work, the entry is a summary marker. It names the record and its state, and stops there.
-5. Unmerged work means a refuted, inconclusive, abandoned, or superseded experiment, or an abandoned or superseded feature. That work is never merged, and its branch is deleted only on confirmation. Its record is kept, marked with its state, as evidence.
-6. For unmerged work, the entry carries the finding, and only where there is one.
-7. For an unmerged experiment that reached a verdict, the entry states the question, the verdict, and what was found.
+5. Unmerged work means refuted, inconclusive, abandoned, or superseded work, whatever the kind. That work is never merged, and its branch is deleted only on confirmation. Its record is kept, marked with its state, as evidence.
+6. For unmerged work, the entry states the question or the intent, and the verdict or the outcome. It carries the finding, and only where there is one.
+7. For unmerged work that reached a verdict, the entry states the question or the intent, the verdict, and what was found.
 8. For abandoned work, the entry states the intent, that it was abandoned, and the reasoning given for stopping.
 9. An abandoned-work entry does not reproduce the plan, the increments, or the design the work produced. A careful tense is not enough (see the the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done rule).
 10. The entry carries the substance whenever the branch did not merge, whether or not the record reached `master` by another route.
@@ -67,9 +67,9 @@ Trigger: When creating an implementation record, or changing its **State:** line
 
 ## What is already required, and not restated
 
-1. An affirmed experiment still copies its own log into the project's log, as an-implementation-runs-on-a-branch-to-a-declared-end rule requires.
+1. Affirmed work still copies its own log into the project's log, as an-implementation-runs-on-a-branch-to-a-declared-end rule requires.
 2. The summary marker sits beside those copied entries. It does not replace them.
-3. A completed feature has no affirmation and no log copy. Its marker is the whole of what its conclusion writes.
+3. Work without a verdict has no affirmation and no log copy. Completed work's marker is the whole of what its conclusion writes.
 
 ## What is not logged
 
@@ -150,9 +150,9 @@ Source: system/foundation/source/a-phase-starts-by-stating-its-goal.md
 Trigger: When starting a phase of an experiment or a feature
 
 1. At the start of an experiment's or a feature's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
-2. For an experiment, the goal is what the phase is to establish, and how that serves the experiment's question. For a feature, it is the phase's intent, what the phase is to build, and how that serves the feature's intent.
-3. List the implementation's phases with it, in the order the record names them, and mark the current phase.
-4. State it at each phase's start, not only when the record is written.
+2. The goal is the phase's question or intent, whichever it has, whatever the kind. For a question, it is what the phase is to establish. For an intent, it is what the phase is to build. Say how it serves the implementation's question or intent.
+3. List the implementation's phases with it, in the order the record names them, and mark the current phase, so the engineer sees which phases are done and which are still to come.
+4. State the goal and the list at each phase's start, not only when the record is written. The record's naming of the phases, and a phase's forecast, do not stand in for them.
 
 # A printed list of records is formatted as a table or as a list of rows
 
@@ -464,15 +464,15 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 
 1. An implementation runs on its own branch, designed through the five hinges by DBE, to a declared state.
 2. It is never left silently open.
-3. Its tag decides the parts that differ.
-4. An `[experiment]` is built to a question, and a `[feature]` to an intent (see the the-implementations-directory-holds-one-record-per-implementation rule).
-5. A clause below names a kind only because of that difference. Every other clause holds for both.
+3. Whether the work reaches a verdict decides the parts that differ. The tag names the record and the branch, and decides nothing else.
+4. Either kind opens with a question or an intent, and whether it reaches a verdict is chosen at the start (see the the-implementations-directory-holds-one-record-per-implementation rule).
+5. A clause below names work with or without a verdict only because of that difference. Every other clause holds for both.
 
 ## The branch
 
 1. Name it `experiment/<subject>` or `feature/<subject>`, matching the tag.
 2. The subject is short, lower-case, and dash-separated, and names literally what is tested or built.
-3. Add `-run-<n>` only where an experiment has more than one run.
+3. Add `-run-<n>` only where the work has more than one run.
 4. With a worktree, the name carries `worktree/`: `experiment/worktree/<subject>`, `feature/worktree/<subject>`.
 5. A branch checked out in a worktree cannot be checked out in the main working tree, and `git branch` is where that question comes up.
 6. Adding a worktree to work under way renames the branch.
@@ -486,17 +486,17 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 
 ## Phases
 
-1. An experiment or a feature may run in phases. An experiment's phase is a question that serves the experiment's question. A feature's phase is an intent that serves the feature's intent.
+1. An experiment or a feature may run in phases. Each phase is a question or an intent that serves the implementation's.
 2. The record names the phases and their order at the start.
-3. An experiment's record states each phase's forecast before its work. A feature's record states none.
+3. Work that reaches a verdict states each phase's forecast before its work. Work without one states none.
 4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
 7. A phase branches from the implementation's branch and concludes into it.
-8. An experiment's phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
-9. An affirmed phase merges back into the experiment's branch.
-10. The experiment's record carries each phase's verdict and findings.
-11. A feature's phase concludes Completed, with no verdict, and merges back into the feature's branch.
+8. Where the work reaches a verdict, a phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+9. An affirmed phase merges back into the implementation's branch.
+10. The record carries each phase's verdict and findings.
+11. Where the work reaches no verdict, a phase concludes Completed, with no verdict, and merges back into the implementation's branch.
 12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
 13. A phase merges nowhere else.
 14. The implementation concludes after its phases, and only then merges to its upstream branch.
@@ -516,9 +516,9 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 > **The current branch** — Build it where the working tree already is, creating nothing. There is
 > no branch to switch back to and nothing to merge.
 
-3. Offer the current branch for a feature only.
-4. An experiment's changes must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
-5. A feature is the main line.
+3. Offer the current branch only to work without a verdict, whatever the kind.
+4. The changes of work that reaches a verdict must not reach the branch it deviates from before it is affirmed, and its own branch is what keeps them out.
+5. Work without a verdict is the main line.
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
 7. The current branch's cost: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
 8. On the current branch, the record still carries the intent, the state, and the confirmations.
@@ -541,19 +541,26 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 3. The design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started rule states why the two sit at one gate, and what changes between them.
 4. Record both choices.
 
+## The verdict
+
+1. Put whether the work reaches a verdict through the selection interface at the start, beside the working location and the participation, and record it as a confirmation.
+2. Work that reaches a verdict forecasts before its work and ends Affirmed, Refuted, or Inconclusive.
+3. Work without a verdict ends Completed.
+4. The selection follows neither the kind nor whether the work opens with a question or an intent.
+
 ## The end
 
 1. Every implementation ends in a declared state, or is suspended, which pauses it.
 2. The words are the the-implementations-directory-holds-one-record-per-implementation rule's.
-3. An `[experiment]` is affirmed only on the engineer's explicit declaration.
+3. Work that reaches a verdict is affirmed only on the engineer's explicit declaration.
 4. On affirmation, its log is copied into the project log.
 5. Where it produced implementation, its branch merges to the upstream branch, after the tests pass.
 6. Where no test covers the work, the merge also waits for specific confirmation.
-7. An observation-only experiment's affirmation is the log copy alone.
-8. An `[experiment]` that will merge brings what master needs to conform to it: every rule its practice needs, and every other change, on its branch before it merges.
-9. A `[feature]` merges with no gate, because every commit was verified under the run-the-test-suite-after-changes-before-considering-whether-to-commit rule.
+7. Observation-only work's affirmation is the log copy alone.
+8. Work that reaches a verdict and will merge brings what master needs to conform to it: every rule its practice needs, and every other change, on its branch before it merges.
+9. Work without a verdict merges with no gate, because every commit was verified under the run-the-test-suite-after-changes-before-considering-whether-to-commit rule.
 10. The merged result can still break the suite, and that is fixed from there.
-11. A feature has no affirmation.
+11. Work without a verdict has no affirmation.
 12. Refuted, inconclusive, abandoned, and superseded work keeps its record, marked with its state, so the attempt and its findings survive.
 13. Refuted, inconclusive, abandoned, and superseded work does not merge.
 14. Supersession runs through suspension.
@@ -573,22 +580,22 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 28. Remove the worktree first, since git refuses to delete a branch checked out in a worktree.
 29. Suspension deletes no branch and removes no worktree.
 
-## The agent never raises the end of an `[experiment]`
+## The agent never raises the end of work that reaches a verdict
 
 1. Do not offer to conclude, affirm, refute, or merge one: not as a next step, an option, or a precondition.
 2. Report what is settled and what is open, and stop.
-3. An experiment's length is the engineer's judgment, not readable from the work done.
-4. A `[feature]` is not covered, because its completion is ordinary.
+3. The length of work that reaches a verdict is the engineer's judgment, not readable from the work done.
+4. Work without a verdict is not covered, because its completion is ordinary.
 
 ## Drift
 
-1. While an `[experiment]` is open under branch only, watch for main-sequence work starting, and surface it.
-2. Offer two recourses through the selection interface: suspend the experiment, where the intent is to stop working it for now, or add a worktree, where the intent is to keep working it alongside.
-3. Neither recourse ends the experiment, and the engineer's intent decides.
-4. The watch rests on the branch name in the status line and on a judgment of whether the work answers the recorded question.
+1. While work that reaches a verdict is open under branch only, watch for main-sequence work starting, and surface it.
+2. Offer two recourses through the selection interface: suspend the implementation, where the intent is to stop working it for now, or add a worktree, where the intent is to keep working it alongside.
+3. Neither recourse ends the implementation, and the engineer's intent decides.
+4. The watch rests on the branch name in the status line and on a judgment of whether the work serves the recorded question or intent.
 5. The watch is a practice, not a guarantee.
-6. Under a worktree there is nothing to watch.
-7. A `[feature]` has no watch, since starting other work during one is ordinary.
+6. Under a worktree there is nothing to watch. The session-start notice reports every implementation that has not concluded.
+7. Work without a verdict has no watch, since starting other work during it is ordinary.
 
 # An item that sequences work contains no code samples
 
@@ -807,27 +814,26 @@ Trigger: When starting an experiment or feature, or writing or changing an imple
 2. A record carries how the implementation began, where it is being worked, and what became of it.
 3. An implementation is a bounded unit of work with a lifecycle.
 4. The record is a persisted, dated artifact, kept after the implementation concludes.
-5. An experiment is tagged `[experiment]` and is built to a question.
-6. A feature is tagged `[feature]` and is built to an intent.
-7. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-8. The lifecycle turns on which one a record carries.
-9. A question is forecast and reaches a verdict. An intent is not forecast and reaches no verdict.
-10. Every difference between the two kinds follows from that one difference, and from nothing else.
+5. An experiment is tagged `[experiment]`, and a feature is tagged `[feature]`. These are ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule).
+6. The tags name what the work is. No rule reads them to decide how the work runs.
+7. Either kind opens with a question or an intent, whichever the work has.
+8. Whether the work forecasts and reaches a verdict is chosen at the start. Put it to the engineer, and record it as a confirmation beside the working location and the participation.
+9. The lifecycle reads that choice. It does not follow from the kind, or from whether the work opens with a question or an intent.
 
 ## The record
 
 1. Open with the **Question** or the **Intent**.
-2. Then give the setup: a `**State:**` line, the upstream branch it merges into, the implementation branch, its base, and the working location chosen at the start.
+2. Then give the setup: a `**State:**` line, the upstream branch it merges into, the implementation branch, its base, the working location chosen at the start, and whether it reaches a verdict.
 3. The upstream branch is `master` or another topic branch.
 4. The setup also includes a `**Tags:**` line carrying `[experiment]` or `[feature]`.
-5. An `[experiment]` states a forecast of what is expected to happen, before the work.
-6. As the work proceeds, an experiment records what actually happened against the forecast.
-7. An experiment then records the findings and any post-hoc misses, including outcomes the forecast did not account for.
-8. A `[feature]` states no forecast, no comparison against one, and no findings or misses.
-9. Both kinds record the confirmations the lifecycle required, so the work's authority is auditable.
-10. Both record these confirmations: the working-location selection at the start, and the attended-or-unattended selection at the start.
-11. Both also record these: adding a worktree to work already under way, and branch deletion with worktree removal.
-12. An experiment also records the confirmations of the affirmation declaration, concluding a superseded experiment, and merging untested code.
+5. Work that reaches a verdict states a forecast of what is expected to happen, before the work.
+6. As the work proceeds, it records what actually happened against the forecast.
+7. It then records the findings and any post-hoc misses, including outcomes the forecast did not account for.
+8. Work without a verdict states no forecast, no comparison against one, and no findings or misses.
+9. Every record carries the confirmations the lifecycle required, so the work's authority is auditable.
+10. Every record carries these: the working-location selection, the attended-or-unattended selection, and the verdict selection, each at the start.
+11. Every record also carries these: adding a worktree to work already under way, and branch deletion with worktree removal.
+12. Work that reaches a verdict also records the affirmation declaration, concluding a superseded implementation, and merging untested code.
 
 ## The state
 
@@ -840,24 +846,24 @@ Trigger: When starting an experiment or feature, or writing or changing an imple
 7. Do not invent a state word.
 8. A record is written when its work starts, so it carries `Active` from the moment it is written.
 9. The filename carries the state suffix, `-ACTIVE` while the work is in progress (see the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule).
-10. The state words both kinds take are these.
+10. The state words every implementation takes are these.
     - **Active**: the work is in progress.
     - **Abandoned**: dropped before concluding. It is not merged, and the record is kept.
     - **Superseded**: replaced by another implementation. Each of the two records names its counterpart.
     - **Suspended**: paused, not ended.
-11. The words only an `[experiment]` takes are these, since each judges a question.
-    - **Affirmed**: the question held. The user declares it.
-    - **Refuted**: the question was disproven.
+11. The words only work that reaches a verdict takes are these.
+    - **Affirmed**: the question held, or the intent was met as forecast. The engineer declares it.
+    - **Refuted**: the question was disproven, or the intent was not met as forecast.
     - **Inconclusive**: it ran and gave no clear verdict either way.
-12. The word only a `[feature]` takes is this.
+12. The word only work without a verdict takes is this.
     - **Completed**: integrated into the upstream branch. It is the ordinary conclusion.
-13. A feature takes no verdict word, and an experiment takes no `Completed`. Neither is an oversight.
+13. Work without a verdict takes no verdict word, and work with one takes no `Completed`, whatever the kind.
 
 ## Runs
 
 1. Runs are optional.
-2. Only an experiment has runs. A feature has none.
-3. Split an implementation into runs only when the question is held fixed and one factor is varied to compare.
+2. Only work that reaches a verdict has runs.
+3. Split an implementation into runs only when its question or intent is held fixed and one factor is varied to compare.
 4. Each run is its own branch from the same base.
 5. Each run carries its own forecast.
 6. Runs are titled `Run 1`, `Run 2`, and so on.
@@ -877,12 +883,11 @@ Trigger: When starting an experiment or feature, or writing or changing an imple
 1. Use the same frontmatter-free markdown as rules: a title, then prose and tables.
 2. The title is `# Experiment — <name>` or `# Feature — <name>`.
 3. The kind reads in the title and is stated as data in the `**Tags:**` line.
-4. The lifecycle reads the tag, not the title.
-5. A record whose title and tag name different kinds is defective.
-6. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
-7. The filename also takes the state suffix.
-8. End the file with the provenance footer.
-9. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
+4. A record whose title and tag name different kinds is defective.
+5. The filename takes the ISO-8601-UTC prefix (see the file-names rule).
+6. The filename also takes the state suffix.
+7. End the file with the provenance footer.
+8. Pair the record with a log entry (see the a-log-entry-is-written-for-an-implementation-record-and-the-concluding-entry-depends-on-whether-the-work-merged rule).
 
 # The items directory holds one file per item
 

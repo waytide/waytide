@@ -383,30 +383,29 @@ To load them now, type: load waytide.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
 5. The open line names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
-6. An experiment that is Affirmed, Refuted, Inconclusive, Abandoned, or Superseded has concluded.
-7. A feature that is Completed, Abandoned, or Superseded has concluded.
-8. One that is Active, Suspended, or carries no state line is reported.
-9. With nothing open, the open line is absent.
-10. The open line exists because an experiment must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
-11. The close is always present: the caveat, then the command on a line of its own, last.
-12. A blank line precedes the close, after any open line, because the close asks and everything above it reports.
-13. A second blank line stands the command alone, so it is read and copied without reading past anything.
-14. The caveat says `a few moments`, because the read is a wait an engineer sees.
-15. The command names the read outright, so an engineer new to the system can act on it.
-16. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
-17. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
-18. The trade of observability for legibility is deliberate.
-19. The notice says `installed`, never `loaded`.
-20. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
-21. The close's `are loaded` describes what the session does next, and reports no read.
-22. Call it the session-start notice, not the load notice.
-23. The status line reports the system active, a claim about the configuration rather than the agent.
-24. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
-25. The notice carries no mark. The startup display prints it (see the the-startup-display-prints-once-per-session rule).
-26. Put no quotation marks, and no lone backslash, in anything the hook emits.
-27. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
-28. A double quote ends the string, and a lone backslash begins an invalid escape.
-29. Either way the harness fails to parse the output, and the notice disappears with no error.
+6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
+7. One that is Active, Suspended, or carries no state line is reported.
+8. With nothing open, the open line is absent.
+9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
+10. The close is always present: the caveat, then the command on a line of its own, last.
+11. A blank line precedes the close, after any open line, because the close asks and everything above it reports.
+12. A second blank line stands the command alone, so it is read and copied without reading past anything.
+13. The caveat says `a few moments`, because the read is a wait an engineer sees.
+14. The command names the read outright, so an engineer new to the system can act on it.
+15. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
+16. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
+17. The trade of observability for legibility is deliberate.
+18. The notice says `installed`, never `loaded`.
+19. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
+20. The close's `are loaded` describes what the session does next, and reports no read.
+21. Call it the session-start notice, not the load notice.
+22. The status line reports the system active, a claim about the configuration rather than the agent.
+23. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+24. The notice carries no mark. The startup display prints it (see the the-startup-display-prints-once-per-session rule).
+25. Put no quotation marks, and no lone backslash, in anything the hook emits.
+26. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
+27. A double quote ends the string, and a lone backslash begins an invalid escape.
+28. Either way the harness fails to parse the output, and the notice disappears with no error.
 
 ## The read instruction
 
@@ -417,21 +416,23 @@ To load them now, type: load waytide.
 5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
 6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
 7. The hook carries the whole instruction, as the following points state.
-8. Read no rule file one by one.
-9. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and never name `local/` as a whole.
-10. Name the other working directories.
-11. Do not print the startup display.
-12. Print no package count.
-13. Then wait for the engineer's request.
-14. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-15. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
-16. This rule does not restate the directory list.
-17. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-18. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
-19. Nothing verifies the read. The hook cannot observe what the agent does.
-20. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-21. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-22. The work honoring the rules is the verification.
+8. The instruction tells the agent to run `foundation/load-rules.sh` in one command and read its whole output. The loader's output is the read, so no rule file is read one by one.
+9. The loader prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `foundation/` first, then the local rules, the project's vocabulary, and the journal. It leaves out each package's `source/` and `README.md`.
+10. Its ON DEMAND section lists the rules it does not print, each with its trigger and the command that loads it. When the trigger's act comes up, the agent runs that command and follows the rule before acting.
+11. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and say that the absence of either is ordinary, not an error. Never name `local/` as a whole.
+12. Name the other working directories, as not read as binding rules at session start.
+13. Do not print the startup display.
+14. Print no package count.
+15. Then wait for the engineer's request.
+16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+18. This rule does not restate the directory list.
+19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+21. Nothing verifies the read. The hook cannot observe what the agent does.
+22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+24. The work honoring the rules is the verification.
 
 ## The status line
 
@@ -480,6 +481,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 1. These surfaces exist so that a system read every session says so.
 2. The read instruction is emitted every session. Quieting a display never disables the mechanism that carries it.
+3. Add no opt-out, such as a variable that quiets these surfaces.
 
 ## What this costs
 

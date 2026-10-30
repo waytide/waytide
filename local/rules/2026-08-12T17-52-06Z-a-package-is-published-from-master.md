@@ -6,7 +6,7 @@
 
 **A merge to some other branch does not release the hold.** An experiment's upstream branch is not always `master`, and a feature's is not either. Each may merge into another topic branch, and the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule says so. That merge concludes the work against its own upstream. It does not put the content on `master`, so it licenses no publish. The publish waits for `master`, however many merges that takes.
 
-**The work also has to have concluded.** An experiment is **affirmed**, which the engineer declares. A feature is **completed**. A feature has no affirmation, being built to an intent rather than to a question, which the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule states. Reaching `master` and reaching a concluded state are two conditions, and a publish waits for the two.
+**The work also has to have concluded.** Work that reaches a verdict is **affirmed**, which the engineer declares. Work without a verdict is **completed**, and has no affirmation. Whether the work reaches a verdict is chosen at its start, whatever its kind, as the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule states. Reaching `master` and reaching a concluded state are two conditions, and a publish waits for the two.
 
 ## The publish is never offered
 
@@ -14,7 +14,7 @@
 
 **A publish named as a precondition is the same offer.** *This package cannot be installed anywhere until it is published* states a true fact and points at the publish. It makes the open state read as an obstacle. Do not write what the work is blocked on where the block is that the work has not concluded.
 
-**This is the publishing case of the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule's instruction** that the agent never raises the end of an experiment. An offer to publish reaches the same place by a longer route. A publish requires a merge, and a merge requires the ending.
+**This is the publishing case of the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule's instruction** that the agent never raises the end of work that reaches a verdict. An offer to publish reaches the same place by a longer route. A publish requires a merge, and a merge requires the ending.
 
 **Report what is settled and what is open, and stop there.** The engineer signals when the work is done.
 
@@ -24,9 +24,9 @@
 
 ## The exception is rare and it is confirmed
 
-Where an experiment's own question is about publishing, put the exception through the selection UI and record it as a confirmation in the experiment record. Nothing else licenses a publish from a topic branch.
+Where an implementation's own question or intent is about publishing, put the exception through the selection UI and record it as a confirmation in its record. Nothing else licenses a publish from a topic branch.
 
-**The never-offer instruction does not reach that case.** An experiment whose question is about publishing has publishing as its subject, so raising it is the work rather than an offer. What is forbidden is raising it where the experiment is about something else.
+**The never-offer instruction does not reach that case.** An implementation whose question or intent is about publishing has publishing as its subject, so raising it is the work rather than an offer. What is forbidden is raising it where the implementation is about something else.
 
 **Waytide carries no version numbers**, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
 
@@ -47,7 +47,7 @@ Never offer a publish while an experiment or a feature is open. Never name one a
 1. Publish only after the work merges to `master`. A commit, or a merge to any other branch, does not license a publish.
 2. An experiment and a feature never publish. Neither is `master`.
 3. An experiment's or a feature's upstream may be another topic branch. A merge into it concludes the work against that upstream, but puts nothing on `master` and licenses no publish. The publish waits for `master`, however many merges that takes.
-4. The work must also have concluded: an experiment is affirmed, which the engineer declares, and a feature is completed. A feature has no affirmation.
+4. The work must also have concluded: work that reaches a verdict is affirmed, which the engineer declares, and work without one is completed and has no affirmation, whatever the kind. Whether the work reaches a verdict is chosen at its start.
 5. A publish waits for both conditions: reaching `master` and reaching a concluded state.
 6. Merge the work to `master` first. Then publish the affected packages, following `CONTRIBUTING.md`.
 7. Do not publish from an experiment branch, a feature branch, or any other topic branch.
@@ -57,26 +57,31 @@ Never offer a publish while an experiment or a feature is open. Never name one a
 1. Never offer a publish while an experiment or a feature is open, whatever the work has produced.
 2. Do not offer it in any form: as an action, a next step, in a state summary, as an option among others, or as a precondition or reason something else cannot happen yet.
 3. Do not write what the work is blocked on where the block is that the work has not concluded.
-4. Do not raise the end of an experiment by way of a publish.
+4. Do not raise the end of work that reaches a verdict by way of a publish.
 5. Report what is settled and what is open, and stop. Wait for the engineer to signal that the work is done.
 6. The instruction reaches only the agent's own text. A harness suggestion, such as the grey text the tab key completes, is not the agent's offer, not a violation of this rule, and not a loophole. It does not weaken the instruction.
 
 ## The exception
 
-1. Where an experiment's own question is about publishing, put the exception through the selection UI and record it as a confirmation in the experiment record.
+1. Where an implementation's own question or intent is about publishing, put the exception through the selection UI and record it as a confirmation in its record.
 2. Nothing else licenses a publish from a topic branch.
-3. In that experiment, raising the publish is the work, not a forbidden offer. Raising it in an experiment about something else stays forbidden.
+3. In that implementation, raising the publish is the work, not a forbidden offer. Raising it in an implementation about something else stays forbidden.
 4. Waytide carries no version numbers, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
 
 ## Compression
 
 - 2026-10-29, compressed: 5183 → 2360 characters; checked: 32 directives, 23 kept, 6 less precise, 3 lost; 5 repairs, re-checked: 27 directives, 24 kept, 2 less precise, 1 lost; what is still not kept was judged reasons or background
+- 2026-10-29, revised: a publish waits for concluded work, with or without a verdict, whatever the kind; checked: 16 directives, 14 kept, 2 less precise, 0 lost, 1 repair; re-checked: 16 directives, 15 kept, 1 less precise, 0 lost. Left less precise: the harness suggestion's wording, which keeps that it does not weaken the instruction
+
+## History
+
+Until Thu Oct 29 2026 this rule read the concluded state by kind: an experiment affirmed, a feature completed. The engineer settled that whether the work reaches a verdict is chosen at its start, whatever its kind.
 
 Related:
 
 - `CONTRIBUTING.md` — the publish procedure itself
 - the foundation work-in-a-downstream-project-is-never-offered-and-its-pending-state-is-not-reported rule — the same never-offer instruction for the act on the other side of a publish, refreshing the projects that installed the package
-- the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of an experiment, and why a feature has no affirmation
+- the foundation an-implementation-runs-on-a-branch-to-a-declared-end rule — the affirmation and the completion a publish waits on, its instruction that the agent never raises the end of work that reaches a verdict, and why work without one has no affirmation
 - the versioning package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule — which governs a consuming project that versions its packages, and not this one
 
 ---
@@ -91,3 +96,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:44 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:42:15 PM PT
