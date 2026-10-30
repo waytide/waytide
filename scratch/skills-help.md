@@ -28,8 +28,10 @@ ITEMS
   /item abandon                    -> Abandoned
   /item lapse                      -> Lapsed (not for [work] items)
   /item reopen                     Take back Realized, Deferred, Open, or Done
+  /item help                       Print this command's help
 
   /observation promote             Promote an observation to a rule
+  /observation help                Print this command's help
 
   A bare /idea is /idea new. A bare /observation is /observation new.
 
@@ -42,6 +44,7 @@ FEATURES
   /feature resume                  Suspended -> Active
   /feature supersede               -> Superseded, after suspension
   /feature abandon                 -> Abandoned
+  /feature help                    Print this command's help
 
   Either kind opens with a question or an intent, and whether it
   reaches a verdict is chosen when it starts.
@@ -57,11 +60,14 @@ EXPERIMENTS
   /experiment resume               Suspended -> Active
   /experiment supersede            -> Superseded, after suspension
   /experiment abandon              -> Abandoned
+  /experiment help                 Print this command's help
 
 LOG
   /log                             Write a log entry
   /log summary                     Summarize the log
+  /log help                        Print this command's help
   /work-session new | append       Write or append a work session record
+  /work-session help               Print this command's help
 
 JOURNAL
   /journal new, /journal entry     Write a shared journal entry
@@ -69,6 +75,7 @@ JOURNAL
   /journal read private            Read the private journal
   /journal timeline                List entries by date
   /journal move                    Move a private entry to the shared journal
+  /journal help                    Print this command's help
 
 FREEWRITING
   /freewrite begin                 Begin freewriting
@@ -77,32 +84,43 @@ FREEWRITING
   /freewrite idea                  Freewrite and record it in an idea item
   /freewrite observation           Freewrite and record it in an observation item
   /freewrite mistake               Freewrite and record it in a mistake item
+  /freewrite help                  Print this command's help
 
 TESTS
   /test                            Run the automated suite
   /test interactive [<test>]       Run an interactive test, or ask which
   /test report, /test-report       Classify the suite
   /test tree, /test-tree           Run the suite and print its context tree
+  /test help                       Print this command's help
 
 PROJECTS
   /projects                        The machine's registry of Waytide projects
+  /projects help                   Print this command's help
 
 PROCEDURES
   /release                         Choose the next version
+  /release help                    Print this command's help
   /publish [<package>...]          Publish packages (this repository only)
+  /publish help                    Print this command's help
 
 REPORTS
   /status-report                   The whole-project report
+  /status-report help              Print this command's help
 
 PACKAGES
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
   /package refresh [<package>...]  Refresh installed packages
   /package install                 Install Waytide
+  /package help                    Print this command's help
 
 LANGUAGE
   /reserve <word>                  Reserve a word, in six steps
+  /reserve help                    Print this command's help
   /ete                             Write in Eventide Technical English
+  /ete help                        Print this command's help
   /expand                          Expand the previous answer
+  /expand help                     Print this command's help
   /clarify                         Clarify the previous answer, then clarify it again for good measure
+  /clarify help                    Print this command's help
 ```
