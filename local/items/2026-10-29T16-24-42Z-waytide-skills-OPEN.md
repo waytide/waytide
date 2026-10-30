@@ -96,6 +96,16 @@
 
 **The tag is `[work]`, reversing the amendment above.** The foundation rules name the tag `[work-item]`, and where they change is not settled.
 
+## Amended — 2026-10-29: aliases for creating items
+
+**Each kind of item is also created by a command of its own name.** `/idea` is `/item idea`, `/mistake` is `/item mistake`, `/problem` is `/item problem`, and `/work` and `/work-item` are `/item work`. `/observation` is `/item observation`, which creates an item tagged `[observation]` with the state `Recorded`.
+
+**Not settled:** `/observation` already takes `promote` as a subcommand. Whether `/observation` alone creates one and `/observation promote` promotes one, or the promotion moves elsewhere.
+
+**The engineer judges that the two do not clash (2026-10-29).** `/observation` with no subcommand creates an observation, and `/observation promote` promotes one.
+
+**A bare `/idea` is `/idea new` (2026-10-29).** `/idea` takes subcommands, and with none it creates an idea, as a bare `/observation` creates an observation.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -128,6 +138,12 @@ On 2026-10-29: "I'm not sure if it's [work-item] or [work]". Offered `[work]`, `
 
 On 2026-10-29: "No. Reverse that. Use the tag [work]"
 
+On 2026-10-29: "The following should be alias to the respective item commands: idea, observation, mistake, problem, work (and also work-item)"
+
+On 2026-10-29: "No clash"
+
+On 2026-10-29, of how a bare `/item` offers its subcommands: "No, disregard that. A bare “/idea” is an alias for “/idea new”"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -145,3 +161,6 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 6:17:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:30:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:18 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:42 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:25:31 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:26:51 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:29:17 PM PT
