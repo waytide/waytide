@@ -54,7 +54,7 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 ## 6. One read, in one command (Oct 28)
 
 1. **The read was measured before the change**: its characters, its time, and its tool calls.
-2. **The compiler wrote one rules file per package.** On its own, that did not shorten the read.
+2. **The compiler wrote one rules file per package.** On its own, that did not make the read take less time.
 3. **A loader was written that prints every file the read covers, in one command**: `system/foundation/load-rules.sh`. The read took 19.9 seconds and 7 tool calls, against 44.8 seconds and 18 calls before.
 4. **Phase 2 was affirmed**, and the rules were updated to describe one rules file per package.
 
