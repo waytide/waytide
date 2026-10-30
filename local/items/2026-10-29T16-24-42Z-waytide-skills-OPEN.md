@@ -18,6 +18,7 @@
 1. **Items**
    - `New item` creates an item. It carries `[idea]` where no other tag is given.
    - `New idea` creates an item tagged `[idea]`.
+   - `/item work` creates an item tagged `[work]`, a piece of work to be done. `/work-item` is another wording of it.
    - `List` lists the items in a given state, such as `/list open`. It renders the list as the a-record-list-is-a-table rule fixes it: an ordinal, the handle, the title, and the state.
    - `New mistake` creates an item tagged `[mistake]`.
    - `New problem` creates an item tagged `[problem]`.
@@ -48,7 +49,7 @@
      - `Lapse item`: Lapsed
      - `Reopen item`: takes back Realized, Deferred, or Open, returning to Active or Open
    - **An observation:** `Promote observation to rule` writes the rule in `local/rules/`, naming the observation it came from. It adds the `**Promoted to:**` line under the observation's `**Tags:**` line and writes the promotion's log entry. The observation stays `Recorded`, and nothing else in it changes.
-   - **A work item:** the item commands, with `Done` in place of `Realize item`, and no `Lapse item`. `Reopen item` takes back Done.
+   - **A piece of work, tagged `[work]`:** the item commands, with `Done` in place of `Realize item`, and no `Lapse item`. `Reopen item` takes back Done.
    - **An experiment:**
      - `Affirm experiment`: Affirmed
      - `Refute experiment`: Refuted
@@ -74,6 +75,27 @@
 - **Where the frontmatter carries an `allowed-tools` line, `AskUserQuestion` is in it**, or the agent cannot call it.
 - **The interaction was simulated** for `/collect` with no argument and no collection running: the question *No collection is running. What do you want to do?*, with the options `begin`, `resume`, and `Explain`.
 
+## Amended — 2026-10-29: the list command
+
+**Items are listed by state in two forms, `/item list <state>` and `/list <state>`**, such as `/item list open` and `/list open`. Each is a wording of the same command.
+
+**`current` is a virtual, aggregate state: Open, Active, and Suspended together.** `/list current` lists the items in any of the three. No `**State:**` line ever reads `Current`, and no filename carries it. It is a word the list command reads, not a state an item reaches.
+
+- **A suspended item is asked for by name here.** The status-report-format rule counts a suspended record in a report or a brief rather than listing it, and lists it when it is asked for. `/list current` asks for it.
+- **STE:** `current` as an adjective is absent from the STE dictionary, which carries the word only as electrical current in an example.
+
+## Amended — 2026-10-29: work
+
+**The category is named "work", and its tag is `[work]`.** The engineer judges "work item" colloquial. The items-convention names the tag `[work-item]`, and this item does not change that rule.
+
+## Amended — 2026-10-29: the work-item tag stays
+
+**The tag stays `[work-item]`.** Offered `[work]`, `[work-item]`, and `[task]`, the engineer selected `[work-item]`, and that replaces the `[work]` in the amendment above. The commands keep their words: `/item work`, with `/work-item` as another wording of it. The foundation rules already name the tag `[work-item]`, so no rule changes.
+
+## Amended — 2026-10-29: the tag is `[work]`
+
+**The tag is `[work]`, reversing the amendment above.** The foundation rules name the tag `[work-item]`, and where they change is not settled.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -96,6 +118,16 @@ On 2026-10-29, the engineer asked: "Can Claude slash commands have subcommand op
 
 On 2026-10-29: "A “list” command that can list items of a particular state"
 
+On 2026-10-29, of the slash-command forms: "“/item list” is good, but so is “/list open”"
+
+On 2026-10-29: "Use the word “current” as a virtual, aggregate state that includes open, active, and suspended items"
+
+On 2026-10-29: "“Work item” is colloquial. The category should ust be “work”. The tag should be [work]. “/item work” is fine". Then: "“/work-item” should be an alias for “/item work”"
+
+On 2026-10-29: "I'm not sure if it's [work-item] or [work]". Offered `[work]`, `[work-item]`, and `[task]`, the engineer selected `[work-item]`.
+
+On 2026-10-29: "No. Reverse that. Use the tag [work]"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -108,3 +140,8 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:47:56 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:19:44 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:14:30 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:26:21 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:14:30 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:17:07 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:30:54 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:18 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:33:42 PM PT
