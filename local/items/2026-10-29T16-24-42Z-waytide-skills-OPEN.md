@@ -116,6 +116,30 @@
 
 **Not settled:** what else it does, such as adding a project to the registry or removing one.
 
+## Amended — 2026-10-29: the root commands
+
+**The root commands, without aliases, are these.**
+
+| Command | What it does |
+|---|---|
+| `/item` | Items: create, list, change state |
+| `/experiment` | Experiments: create, status, change state |
+| `/feature` | Features: create, status, change state |
+| `/journal` | Shared and private journal entries |
+| `/log` | Write a log entry, or summarize the log |
+| `/freewrite` | Begin, end, or resume freewriting |
+| `/package` | Activate, deactivate, refresh, install |
+| `/projects` | The machine's registry of Waytide projects |
+| `/status-report` | The whole-project report |
+| `/test-report` | Classify the suite |
+| `/test-tree` | The suite's context tree |
+| `/reserve` | Reserve a word |
+| `/ete` | Write in Eventide Technical English |
+| `/expand` | Expand the previous answer |
+| `/work-session` | Write or append a work session record |
+| `/release` | Choose the next version |
+| `/publish` | Publish packages, in this repository only |
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -158,6 +182,8 @@ On 2026-10-29, after "brainstorm", "sketch", "braindump", and "spew" were weighe
 
 On 2026-10-29: "Yeah. That's the wrong place for that. There should be a root “/projects” command that can interact with the consuming projects registry from within a project on the machine"
 
+On 2026-10-29: "Write this into an item", of the list of root commands without aliases.
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -180,3 +206,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:26:51 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:29:17 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
