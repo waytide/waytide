@@ -296,16 +296,16 @@ Trigger: When editing a source rule's body, or writing, revising, or checking a 
 1. Record each compression, revision, and check of a compressed text in its source, in a `## Compression` section below the Compressed section.
 2. One line records each event. A later event adds a line, and the earlier lines stay as written.
 3. A line gives the date, the event, and its figures.
-4. A **compressed** line gives the compression, the change, the size rank, the solubility, and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
-5. A **revised** line gives the size rank, the solubility, and the clarity score before and after, and the directive counts of the check that followed.
+4. A **compressed** line gives the size rank, the clarity score, and the solubility before and after, the change, the compression, and the directive counts: how many, and how many kept, less precise, and lost.
+5. A **revised** line gives the size rank, the clarity score, and the solubility before and after, and the directive counts of the check that followed.
 6. A **re-checked** line gives the directive counts and the number of repairs.
 7. Name restorations, where a compression put back text it had dropped, on the line of the event that made them.
 8. Leave out a figure that was not measured. Do not estimate it.
-9. Compression is the share of the body's characters the compressed text removes.
-10. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
-11. Size rank is the rule's rank by characters among the compiled rules, from 0 for the smallest to 1 for the largest.
-12. Clarity score is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
-13. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
+9. Size rank is the rule's rank by characters among the compiled rules, from 0 for the smallest to 1 for the largest.
+10. Clarity score is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
+11. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
+12. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
+13. Compression is the share of the body's characters the compressed text removes.
 14. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 16. The package's rules file carries no figures. They stay in the source.
