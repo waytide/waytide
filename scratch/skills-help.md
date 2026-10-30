@@ -65,6 +65,21 @@ EXPERIMENTS
   /experiment abandon              -> Abandoned
   /experiment help                 Print this command's help
 
+PHASES
+  /phases                          List the phases, the current one emphasized
+  /phases current                  The current phase, its goal, and its branch
+  /phases add <name>               Add a phase after the last
+  /phases start                    Start the next phase
+  /phases complete                 -> Completed, merged into the implementation
+  /phases affirm                   -> Affirmed (engineer's declaration only)
+  /phases refute                   -> Refuted
+  /phases inconclusive             -> Inconclusive
+
+  /phases help                     Print this command's help
+
+  Whether a phase reaches a verdict is chosen for each phase,
+  when it is added.
+
 LOG
   /log                             Write a log entry
   /log-this                        Write a log entry for the current work

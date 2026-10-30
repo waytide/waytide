@@ -179,6 +179,22 @@
 
 **The command is `/current-items`, in place of `/current`.** It lists the Open, Active, and Suspended items, as `/item list current` does.
 
+## Amended — 2026-10-30: the phases command
+
+**`/phases` is a root command for the current implementation's phases, with these subcommands.**
+
+- `/phases` lists the phases in order and prints the current phase with emphasis.
+- `/phases current` prints the current phase, its goal, and its branch.
+- `/phases add <name>` adds a phase to the record, after the last one.
+- `/phases start` starts the next phase in the record's order: it creates the phase's branch from the implementation's branch, then states the phase's goal and lists the phases.
+- `/phases complete` concludes the current phase where it reaches no verdict, and merges its branch into the implementation's branch.
+- `/phases affirm`, `/phases refute`, and `/phases inconclusive` conclude the current phase where it reaches a verdict, on the engineer's declaration only. An affirmed phase merges into the implementation's branch.
+- `/phases help` prints this command's help.
+
+**The rules behind it** are the an-implementation-runs-on-a-branch-to-a-declared-end rule, for a phase's branch and its merge, and the a-phase-starts-by-stating-its-goal rule, for what is printed when a phase starts. Listing the phases on request has no rule yet, and is among the rules the slash-commands phase writes.
+
+**Whether a phase reaches a verdict is chosen for each phase, when it is added**, whatever its implementation's choice. The engineer settled this on 2026-10-30. The an-implementation-runs-on-a-branch-to-a-declared-end rule does not yet say so, and is amended with the rules the slash-commands phase writes.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -235,6 +251,8 @@ On 2026-10-30: "Add a “/current” command that lists current items". The engi
 
 On 2026-10-30: "Actually, it should be “/current-items”"
 
+On 2026-10-30: "Create a “/phases” root command. Add appropriate subcommands." Asked whether a phase's verdict follows its implementation's or is chosen per phase, the engineer selected that it is chosen per phase.
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -264,3 +282,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
