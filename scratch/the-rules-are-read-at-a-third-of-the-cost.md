@@ -111,6 +111,27 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 9. **The triggers phase was affirmed and merged into the experiment's branch.**
 10. **A printed index of every rule, for the engineer, was not pursued.**
 
+**How the rules were selected for one group or the other:**
+
+1. **Seven fresh agents sorted the 108 rules.** Each read a rule's title, its source path, and its compressed text, and gave it one of two verdicts.
+2. **ALWAYS:** the rule can apply at any moment of ordinary work, with no act that announces it. It stays pre-loaded.
+3. **TRIGGERED:** a recognizable act comes before the rule applies. The agent wrote the trigger, a line beginning *When*, naming that act.
+4. **Where a rule could be either, the agents chose ALWAYS.** A rule the agent does not have when it needs it fails silently, so the doubtful cases stayed pre-loaded.
+5. **Each verdict carries its reason**, in the appendix `triggers-sorting.md` beside the experiment's record. For example:
+   - *DBE is a design tool, not a testing ritual*: ALWAYS, since it sets the stance for every unit and all generated code.
+   - *The actuation gate offers candidate actuations as options*: TRIGGERED, "When presenting the actuation hinge of an outcome".
+   - *A time value carries minutes and seconds*: ALWAYS. It could be triggered by writing a time, but a time is written in nearly every session, in footers, log entries, and records.
+   - *A package's vocabulary holds its terms*: ALWAYS, since its terms bind every word the agent writes.
+6. **The engineer accepted the sorting.** 61 of the 108 rules were triggered: 27 of 40 in `foundation`, 10 of 15 in `design-by-efferent`, 7 of 20 in `testing`, 7 of 10 in `journal`, 5 of 7 in `git`, 3 of 14 in `language`, and 2 of 2 in `versioning`. The rules that apply all the time, such as the language rules and the selection-prompt rule, were all ALWAYS.
+7. **Rules added later were sorted by the same test.** `master`'s new rules took a trigger where one recognizable act comes first, such as the rule that a phase starts by stating its goal: "When starting a phase of an experiment".
+
+**How the two groups were separated:**
+
+1. **A rule's group is set in its source**, by a `**Trigger:** When …` line under its title. A rule with no trigger line is pre-loaded.
+2. **The compiler writes two files per package.** `rules-pre-loaded.md` holds every rule with no trigger, and `rules-on-demand.md` holds every rule with one, each with its trigger.
+3. **At session start, the loader prints each package's pre-loaded rules in full.** For its on-demand rules, it prints only a list: each one's trigger, and the command that loads it, `load-rules.sh <rule-name>`.
+4. **When the act a trigger names comes up, the agent runs that command**, and the loader prints the one rule. The agent follows it before acting.
+
 **Key metrics at this point:**
 
 - Session-start read: 377,775 → 229,028 characters, 39% smaller
@@ -210,3 +231,4 @@ Authored by Scott Bellware on Thu Oct 29 2026 at 6:50:58 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:01:32 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:38:04 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:43:15 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 12:47:41 AM PT
