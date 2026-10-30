@@ -31,8 +31,8 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 **Key metrics at this point:**
 
 - Five rules compressed: #2, #7, #11, #12, and #15
-- Their mean compression: 0.55, from 0.27 to 0.71
-- Their mean change: 0.78, from 0.56 to 0.91
+- Compression: 0.55, from 0.27 to 0.71
+- Change: 0.78, from 0.56 to 0.91
 - Simulation: 149 of 150 answers the same
 - Session-start read: unchanged, 547,780 characters
 
@@ -49,8 +49,8 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 **Key metrics at this point:**
 
 - Rules compressed: 102
-- Mean compression: 0.31, median 0.29
-- Mean change: 0.59, median 0.60
+- Compression: 0.31
+- Change: 0.59
 - Solubility: 51 → 73
 
 ## 4. The rules are cleaned up, and compression becomes a rule (Oct 25–27)
