@@ -109,7 +109,6 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 7. **A session comparison scored the trigger index as well as the full read.**
 8. **A confirming test ran in real sessions**, in Claude Code itself, each in its own copy of the repository, on requests written by an agent that had not seen the triggers. Every session loaded its rule before acting, 50 of 50.
 9. **The triggers phase was affirmed and merged into the experiment's branch.**
-10. **A printed index of every rule, for the engineer, was deferred to documentation.**
 
 **How the rules were selected for one group or the other:**
 
