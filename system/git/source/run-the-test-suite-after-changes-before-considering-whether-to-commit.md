@@ -2,6 +2,10 @@
 
 After making any code change, run the full test suite and confirm it passes **before** considering whether to commit. The suite run is a precondition of the commit decision, not a step taken after deciding to commit. A failing or incomplete suite means there is nothing to weigh — don't reach the question of committing until the suite passes.
 
+**When the agent can tell that it is a good time to commit, it offers the commit through the selection interface.** A good time is a piece of work finished and the suite passing. The prompt offers to commit and not to commit, and the agent does not commit until the engineer selects it. Where the agent cannot tell, it waits to be asked.
+
+**As the engineer stated it:** if the agent can know whether it's an appropriate time to commit, then it should prompt with an option to commit.
+
 **How the suite is run is the project's stack's concern, not this rule's.** What command runs it, and what its output reads when nothing failed, differ by language and test framework. So they are settled where a stack is settled. For a Ruby project that is the `ext/ruby-lang` package's rule on running the suite. This rule fixes only *when* the run happens relative to the commit decision, which holds for any stack.
 
 **Why:** Committing is the point of no easy return. The suite is the cheapest way to prevent committing a regression. Running it *before* deliberating commit keeps a failing change from ever becoming a commit candidate. It also keeps the recorded history verified at every commit. This is verification rather than ceremony, consistent with the human-in-the-loop TDD rule's framing of the test run as confirmation. The *commit* waits on the bar, not the human's attention.
@@ -26,14 +30,19 @@ After making any code change, run the full test suite and confirm it passes **be
 14. For a single-file change, you may run that one file's tests first for speed.
 15. Run the full suite before commit anyway.
 16. The commit waits on the suite passing, not on the human's attention.
+17. When the agent can tell it is a good time to commit, a piece of work finished and the suite passing, it offers the commit through the selection interface: commit, or do not commit.
+18. Commit only when the engineer selects it. Where the agent cannot tell, wait to be asked.
 
 ## Compression
 
 - 2026-10-22, compressed: compression 0.17, change 0.42, solubility 75 → 89, clarity 0.66 → 0.87, 10 directives, 9 kept, 1 less precise, 0 lost
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
 - 2026-10-28, revised: Why points removed, solubility 89 → 89, clarity 0.87 → 0.91; checked: 10 directives, 8 kept, 1 less precise, 1 lost, 2 repairs, re-checked kept
+- 2026-10-29, revised: the agent offers the commit when it can tell the time is right; checked: 15 directives, 15 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Oct 29 2026 this rule said when the commit question arises, and not who raises it. The engineer settled that the agent offers the commit when it can tell the time is right.
 
 Until Sun Oct 25 2026 this rule was named run-suite-before-commit.
 
@@ -60,3 +69,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:30 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:07:48 PM PT
