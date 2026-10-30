@@ -29,8 +29,10 @@
 
 - **2026-10-29** — Increment 1 is made on `feature/worktree/skills`, uncommitted. The compiled rules match the sources, and the automated tests pass.
 - **2026-10-29** — The engineer settled that the `foundation` installer converts a consuming project's `[work-item]` tags.
+- **2026-10-29** — Increment 1 is committed on `feature/worktree/skills` as `19c4e07`.
 
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 6:37:48 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:58:47 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:06:11 PM PT
