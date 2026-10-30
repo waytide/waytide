@@ -116,7 +116,7 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 1. **Seven fresh agents sorted the 108 rules.** Each read a rule's title, its source path, and its compressed text, and gave it one of two verdicts.
 2. **ALWAYS:** the rule can apply at any moment of ordinary work, with no act that announces it. It stays pre-loaded.
 3. **TRIGGERED:** a recognizable act comes before the rule applies. The agent wrote the trigger, a line beginning *When*, naming that act.
-4. **Where a rule could be either, the agents chose ALWAYS.** A rule the agent does not have when it needs it fails silently, so the doubtful cases stayed pre-loaded.
+4. **Where a rule could be either, the agents chose ALWAYS**, so the doubtful cases stayed pre-loaded.
 5. **Each verdict carries its reason**, in the appendix `triggers-sorting.md` beside the experiment's record. For example:
    - *DBE is a design tool, not a testing ritual*: ALWAYS, since it sets the stance for every unit and all generated code.
    - *The actuation gate offers candidate actuations as options*: TRIGGERED, "When presenting the actuation hinge of an outcome".
