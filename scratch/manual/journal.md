@@ -37,6 +37,12 @@ SUBCOMMANDS
                      Write a shared journal entry.
      private         Write a private journal entry.
      read private    Read the private journal, oldest entry first.
+                     Unlike the shared journal, the private journal is
+                     not read when the session starts, so the agent
+                     does not know what is in it. The writer decides
+                     whether and when its entries reach the agent, by
+                     asking for this read. Once read, the entries are
+                     part of the session like anything else said in it.
      timeline        List the entries by date.
      publish-private Move a private entry to the shared journal. The
                      agent asks for confirmation first, because the move
