@@ -10,7 +10,7 @@ SYNOPSIS
      /journal [new | entry]
      /journal private
      /journal read private
-     /journal timeline
+     /journal list [<timespan>]
      /journal publish-private
      /journal help
 
@@ -43,7 +43,10 @@ SUBCOMMANDS
                      whether and when its entries reach the agent, by
                      asking for this read. Once read, the entries are
                      part of the session like anything else said in it.
-     timeline        List the entries by date.
+     list [<timespan>]
+                     List the entries by date, oldest first, each led by
+                     its date and time. With a timespan, only the entries
+                     within it.
      publish-private Move a private entry to the shared journal. The
                      agent asks for confirmation first, because the move
                      publishes the entry to every reader of the

@@ -206,6 +206,12 @@
 - **A bare `/journal` writes a shared journal entry**, as `/journal new` and `/journal entry` do.
 - **`/journal publish-private`** moves a private entry to the shared journal, in place of `/journal move`, and requires confirmation.
 
+## Amended — 2026-10-30: journal list
+
+**`/journal list [<timespan>]` replaces `/journal timeline`.** It lists the journal's entries by date, all of them, or only those within the timespan given.
+
+**Not settled:** how a timespan is written, such as a date range or a phrase like "last week". The a-timeline-view-lists-every-journal-entry-by-its-datetime rule lists every entry, and is amended for the timespan with the rules the slash-commands phase writes.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -268,6 +274,8 @@ On 2026-10-30: "Make “phases” singular: “phase”"
 
 On 2026-10-30, the engineer edited the help text: "/phase, /phase current — The current phase, its goal, and its branch", "/phases — List the phases, the current one emphasized", "/phase refute — -> Refuted (the phase's proposition is not realized)", "/journal, /journal new, /journal entry — Write a shared journal entry", and "/journal publish-private — Move a private entry to the shared journal (requires conformation)"
 
+On 2026-10-30: "“/journal timeline” should be “/journal list”. It should take an optional timespan"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -300,3 +308,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:34:21 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:42:03 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:49:26 PM PT
