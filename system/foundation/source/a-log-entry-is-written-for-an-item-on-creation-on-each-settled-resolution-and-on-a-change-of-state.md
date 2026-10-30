@@ -12,7 +12,7 @@ An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/lo
 
 - **On creation.** That the item was recorded at all is itself a decision, and the entry records the item rather than the word.
 - **On each `Settled` resolution.** A dated resolution is the unit an item records decisions in, so each one is a decision the log carries.
-- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Lapsed** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out. **An observation is `Recorded` and never moves**, so it takes a creation entry and no other.
+- **On a change of state.** The canonical `**State:**` line reaching **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, or **Obsolete** — or **Done**, for a work item — is a decision. So is a reversible word being taken back — **Realized**, **Deferred**, **Open**, or a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out. **An observation is `Recorded` and never moves**, so it takes a creation entry and no other.
 
 ## What the entry says
 
@@ -60,11 +60,11 @@ Name the record in the entry, and say what happened to it. State what the record
 
 1. An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.
 2. Write the entry at three moments, and at no others.
-3. The item's tag makes no difference.
+3. The item's kind tag, such as `[design]`, `[plan]`, or `[aspiration]`, makes no difference, and an item with no kind tag takes the same entries.
 4. Write the entry on the item's creation.
 5. Write the entry on each dated `Settled` resolution added after the item is created.
 6. Write the entry on each change of the item's `**State:**` line.
-7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item.
+7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Obsolete, or Done for a work item.
 8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
 9. An observation is `Recorded` and never moves, so it takes a creation entry only.
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
@@ -80,7 +80,7 @@ Name the record in the entry, and say what happened to it. State what the record
 20. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software.
 21. An item is not a change to the software, so do not use that form for it.
 22. The fact about an item is that it was recorded, or that its state moved.
-23. Carry the same mood into the commit subject the entry travels in.
+23. Carry the same into the commit subject the entry travels in: name the record, attribute what it settles to the record, and keep the mood. An entry corrected while its commit subject makes the same claim is half corrected.
 24. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
 25. This rule states the obligation once, for every item.
 26. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
@@ -97,8 +97,11 @@ Name the record in the entry, and say what happened to it. State what the record
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 - 2026-10-28, revised: Why points removed, solubility 44 → 51, clarity 0.47 → 0.70; checked: 20 directives, 18 kept, 2 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 20 directives, 19 kept, 1 less precise, 0 lost, 1 repair
+- 2026-10-30, revised: Lapsed is renamed Obsolete; checked: 16 directives, 14 kept, 2 less precise, 0 lost, 2 repairs; re-checked: 16 directives, 14 kept, 2 less precise, 0 lost. Left less precise: the commit form's passive voice, which the git rules state, and "substantive" before section, neither of which changes what is logged
 
 ## History
+
+Until Fri Oct 30 2026 the state word Obsolete was Lapsed.
 
 Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "An item takes a log entry — on creation, on each settled resolution, and on a change of state — and the entry names the record rather than asserting what the record settles".
 
@@ -164,3 +167,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT

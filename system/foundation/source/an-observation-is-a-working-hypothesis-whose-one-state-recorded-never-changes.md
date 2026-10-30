@@ -16,7 +16,7 @@
 
 **It carries no `**Why this state:**` line.** That line said how settled the thinking was and what would promote it. Where a record has one state and cannot leave it, there is nothing to account for.
 
-**An observation has no lifecycle**, which is what one unchanging state says. It is never realized, abandoned, lapsed, superseded, or suspended. Those words belong to a record that was going somewhere, and an observation is not going anywhere — it was thought, and it was written down, and neither of those is a stage.
+**An observation has no lifecycle**, which is what one unchanging state says. It is never realized, abandoned, obsolete, superseded, or suspended. Those words belong to a record that was going somewhere, and an observation is not going anywhere — it was thought, and it was written down, and neither of those is a stage.
 
 **An observation that no longer holds is not retracted.** A later observation states the later thinking, and the earlier one stays as what was thought at the time.
 
@@ -60,7 +60,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 3. Its filename ends `-RECORDED`.
 4. It carries no `**Why this state:**` line.
 5. An observation has no lifecycle.
-6. It is never realized, abandoned, lapsed, superseded, or suspended.
+6. It is never realized, abandoned, obsolete, superseded, or suspended.
 7. An observation that no longer holds is not retracted.
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
@@ -98,8 +98,11 @@ Lines 1–6 below are the opening statements, which come before any section head
 - 2026-10-28, revised: Why points removed, solubility 61 → 59, clarity 0.70 → 0.75; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: the one state is `Recorded`, not `Stated`, a term the engineer settled; not checked
 - 2026-10-29, merge from master re-checked: 31 directives, 31 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-10-30, revised: lapsed is renamed obsolete; checked: 27 directives, 27 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Oct 30 2026 the state word Obsolete was Lapsed.
 
 Until 2026-10-25 the Promotion step said to "note the promotion in the two files", the rule and the observation, while the same step said to leave the observation as written and the body said nothing about the observation changes when the rule appears. The engineer settled that the rule is the observation's result, and that the observation names it in one added line.
 
@@ -149,3 +152,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:22:19 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT

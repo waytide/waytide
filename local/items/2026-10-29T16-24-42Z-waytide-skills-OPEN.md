@@ -165,6 +165,10 @@
 - `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` freewrite and record the result in a new item of that kind. The destination is chosen at the start, where `/freewrite end` otherwise asks whether the points become a new item or are appended to a recent one.
 - `/clarify` clarifies the previous answer, and then clarifies it again.
 
+## Amended — 2026-10-30: obsolete
+
+**The state Lapsed is renamed Obsolete, and every item takes it, a work item included.** `Lapse item` is `Obsolete item`, typed `/item obsolete`, and a piece of work takes it like any other item. This replaces `Lapse item` and the "no `Lapse item`" for a piece of work in the list above.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -215,6 +219,8 @@ On 2026-10-29: "Another slash command: “/phases”. It lists the phases in ord
 
 On 2026-10-30, the engineer added to the help text: "/feature new with phases — Start a feature, asking for its phases", "/freewrite idea — Freewrite and record it in an idea item", "/freewrite observation — Freewrite and record it in an observation item", "/freewrite mistake — Freewrite and record it in a mistake item", and "/clarify — Clarify the previous answer, then clarify it again for good measure"
 
+On 2026-10-30: "Rename “lapse” to “obsolete”. And it should be applicable to all item categories, including work items."
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -241,3 +247,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT

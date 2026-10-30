@@ -26,7 +26,7 @@ ITEMS
   /item suspend                    -> Suspended
   /item supersede                  -> Superseded, naming the replacement
   /item abandon                    -> Abandoned
-  /item lapse                      -> Lapsed (not for [work] items)
+  /item obsolete                   -> Obsolete
   /item reopen                     Take back Realized, Deferred, Open, or Done
   /item help                       Print this command's help
 
@@ -64,6 +64,7 @@ EXPERIMENTS
 
 LOG
   /log                             Write a log entry
+  /log-this                        Write a log entry for the current work
   /log summary                     Summarize the log
   /log help                        Print this command's help
   /work-session new | append       Write or append a work session record

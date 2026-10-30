@@ -39,7 +39,7 @@ STATES
      Suspended       Paused.
      Superseded      Replaced by another item, which it names.
      Abandoned       Dropped by decision.
-     Lapsed          Left behind as the work moved on.
+     Obsolete        Left behind as the work moved on.
      Recorded        An observation's only state.
 
 FILES

@@ -86,11 +86,11 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 
 1. An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.
 2. Write the entry at three moments, and at no others.
-3. The item's tag makes no difference.
+3. The item's kind tag, such as `[design]`, `[plan]`, or `[aspiration]`, makes no difference, and an item with no kind tag takes the same entries.
 4. Write the entry on the item's creation.
 5. Write the entry on each dated `Settled` resolution added after the item is created.
 6. Write the entry on each change of the item's `**State:**` line.
-7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Lapsed, or Done for a work item.
+7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Obsolete, or Done for a work item.
 8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
 9. An observation is `Recorded` and never moves, so it takes a creation entry only.
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
@@ -106,7 +106,7 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 20. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software.
 21. An item is not a change to the software, so do not use that form for it.
 22. The fact about an item is that it was recorded, or that its state moved.
-23. Carry the same mood into the commit subject the entry travels in.
+23. Carry the same into the commit subject the entry travels in: name the record, attribute what it settles to the record, and keep the mood. An entry corrected while its commit subject makes the same claim is half corrected.
 24. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
 25. This rule states the obligation once, for every item.
 26. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
@@ -637,7 +637,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 3. Its filename ends `-RECORDED`.
 4. It carries no `**Why this state:**` line.
 5. An observation has no lifecycle.
-6. It is never realized, abandoned, lapsed, superseded, or suspended.
+6. It is never realized, abandoned, obsolete, superseded, or suspended.
 7. An observation that no longer holds is not retracted.
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
@@ -935,14 +935,14 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 38. **Suspended** — paused, not ended.
 39. **Superseded** — a later item replaced it, and the two name each other.
 40. **Abandoned** — dropped by decision.
-41. **Lapsed** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**.
+41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
 42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
 43. At each change of state, change the `**State:**` line and rename the file.
 44. At each change of state, write the log entry.
 45. A work item, tagged `[work-item]`, is a piece of work to be done.
 46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-47. A work item concludes `Done`, `Abandoned`, or `Superseded`.
-48. A work item never takes `Realized` or `Lapsed`.
+47. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
+48. A work item never takes `Realized`.
 49. Take `Done` back to `Active` when the work reopens.
 50. Supersede an item rather than rewrite it.
 51. What a superseded item settled stays as written.

@@ -50,7 +50,9 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Superseded** — another item replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
 - **Recorded** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule.
-- **Lapsed** — it lost its relevance over time. **`Lapsed` and `Abandoned` differ in who acted:** abandoning is a decision, and lapsing is what happens when nobody decides and the work moves past the item.
+- **Obsolete** — it lost its relevance over time. **`Obsolete` and `Abandoned` differ in who acted:** abandoning is a decision, and an item becomes obsolete when nobody decides and the work moves past it. Any item takes it, a work item included.
+
+**As the engineer stated it:** rename “lapse” to “obsolete”. And it should be applicable to all item categories, including work items.
 
 **`Recorded` is the second starting word and the only terminal one**, and an observation takes it alone. Every other item takes the one below.
 
@@ -62,9 +64,9 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 ## A work item
 
-**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, or `Superseded`.** This rule names the tag and says what follows.
+**An item tagged `[work-item]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, `Superseded`, or `Obsolete`.** This rule names the tag and says what follows.
 
-- **Done** — the work is done. It takes the place of `Realized`, which a work item does not take, and neither does `Lapsed`.
+- **Done** — the work is done. It takes the place of `Realized`, which a work item does not take.
 - **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
 - **`Done` is taken back** to `Active` when the work reopens, as `Realized` is for any other item.
 
@@ -130,14 +132,14 @@ Change the state as the item reaches another word, renaming the file with it, an
 38. **Suspended** — paused, not ended.
 39. **Superseded** — a later item replaced it, and the two name each other.
 40. **Abandoned** — dropped by decision.
-41. **Lapsed** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**.
+41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
 42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
 43. At each change of state, change the `**State:**` line and rename the file.
 44. At each change of state, write the log entry.
 45. A work item, tagged `[work-item]`, is a piece of work to be done.
 46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-47. A work item concludes `Done`, `Abandoned`, or `Superseded`.
-48. A work item never takes `Realized` or `Lapsed`.
+47. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
+48. A work item never takes `Realized`.
 49. Take `Done` back to `Active` when the work reopens.
 50. Supersede an item rather than rewrite it.
 51. What a superseded item settled stays as written.
@@ -160,8 +162,11 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-28, revised: Why points removed, solubility 46 → 45, clarity 0.55 → 0.71; checked: 57 directives, 57 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: an observation's state is `Recorded`, not `Stated`, a term the engineer settled; not checked
 - 2026-10-29, merge from master re-checked: 67 directives, 64 kept, 3 less precise, 0 lost, 2 repairs
+- 2026-10-30, revised: Lapsed is renamed Obsolete, and a work item may take it; checked: 56 directives, 56 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Oct 30 2026 the state an item reached when the work moved past it was Lapsed, and a work item did not take it. The engineer settled that it is Obsolete, and that every item takes it, a work item included.
 
 **This is the last of the mode vocabulary, and it is gone with it.** A project once worked in one of three modes, and the mode fixed what a planning record was called — a design, an aspiration, or an orientation in one; a plan, an intention, or an action in another. The mechanism was decommissioned on 2026-08-18 and the six words outlived it as a tag set that still read as exhaustive.
 
@@ -232,3 +237,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:19:11 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:26:00 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
