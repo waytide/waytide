@@ -94,6 +94,12 @@ PROCEDURES
 REPORTS
   /status-report                   The whole-project report
 
+PACKAGES
+  /package activate <package>      Activate an installed package
+  /package deactivate <package>    Deactivate an installed package
+  /package refresh [<package>...]  Refresh installed packages
+  /package install                 Install Waytide
+
 LANGUAGE
   /reserve <word>                  Reserve a word, in six steps
   /ete                             Write in Eventide Technical English
