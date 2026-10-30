@@ -306,7 +306,7 @@ Trigger: When editing a source rule's body, or writing, revising, or checking a 
 11. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
 12. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
 13. Compression is the share of the body's characters the compressed text removes.
-14. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+14. Rank each rule among the compiled rules as they stood at one fixed point in time, commit `770c7eb`, so figures measured at different times compare. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 16. The package's rules file carries no figures. They stay in the source.
 

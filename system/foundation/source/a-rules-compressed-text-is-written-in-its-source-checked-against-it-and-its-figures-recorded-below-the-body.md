@@ -45,7 +45,7 @@ Restorations, where a compression put back text it had dropped, are named on the
 - **Change** is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
 - **Compression** is the share of the body's characters the compressed text removes.
 
-The ranks are taken against the compiled rules at commit `770c7eb`, so that a figure written later is comparable with one written earlier. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+Each rule is ranked among the compiled rules as they stood at one fixed point in time, commit `770c7eb`, so that a figure written later compares with one written earlier. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 
 **The figures are written by the process that compresses, revises, or checks the text, in the same commit.**
 
@@ -97,7 +97,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 11. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
 12. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
 13. Compression is the share of the body's characters the compressed text removes.
-14. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+14. Rank each rule among the compiled rules as they stood at one fixed point in time, commit `770c7eb`, so figures measured at different times compare. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
 15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 16. The package's rules file carries no figures. They stay in the source.
 
@@ -109,6 +109,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 55 → 56, clarity 0.84 → 0.84; checked: 44 directives, 42 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-29, revised: the size rank is recorded as a figure of its own, size rank 0.85 → 0.75, solubility 32 → 55, clarity 0.49 → 0.84; checked: 48 directives, 47 kept, 1 less precise, 0 lost; the less precise directive, that the size rank sits beside the solubility, is left, since the lists name the two side by side
 - 2026-10-29, revised: the figures are listed in the order size rank, clarity score, solubility, change, compression, at the engineer's direction; checked: 52 directives, 50 kept, 0 less precise, 2 lost; the full text's sentence placing the size rank beside the solubility is corrected to place it with the clarity score and the solubility, and the other, the trigger line, is a loading cue and not a directive
+- 2026-10-29, revised: the ranks' fixed reference is worded as one fixed point in time, at the engineer's direction; one sentence reworded in the full text and its one point in the compressed text, with the same meaning, so not checked again
 
 ## History
 
@@ -133,3 +134,4 @@ Authored by Scott Bellware on Tue Oct 27 2026 at 2:31:40 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:00 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:19:10 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:24:12 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:31:12 PM PT
