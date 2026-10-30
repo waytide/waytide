@@ -8,6 +8,7 @@ NAME
 
 SYNOPSIS
      /log
+     /log-this
      /log summary
      /log help
 
@@ -29,12 +30,23 @@ SUBCOMMANDS
      summary         Summarize the log, in the response. The summary is
                      never written to a file.
 
+LOG-THIS
+     /log-this writes a log entry for the work the conversation is on,
+     without the engineer stating it. The agent states the decision or
+     the finding in the entry's title, and adds a body where the
+     reasoning will not fit. The entry follows the same conventions as
+     one written with /log.
+
 EXAMPLES
      /log The cart keeps its contents for 30 days
+
+     After settling that a receipt is emailed as well as shown:
+
+     /log-this
 
 FILES
      local/logs/log/<UTC timestamp>-<name>.md
 
 SEE ALSO
-     /log-this, /work-session, /item
+     /work-session, /item
 ```
