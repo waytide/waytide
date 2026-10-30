@@ -40,7 +40,7 @@ ITEMS
 
 FEATURES
   /feature new                     Start a feature
-  /feature new with phases        Start a feature, asking for its phases
+  /feature new with phases         Start a feature, asking for its phases
   /feature status                  Phases, current phase, and its goal
   /feature complete                -> Completed
   /feature suspend                 -> Suspended
@@ -66,13 +66,14 @@ EXPERIMENTS
   /experiment help                 Print this command's help
 
 PHASE
-  /phase, /phase current                   The current phase, its goal, and its branch
+  /phase, /phase current           The current phase, its goal, and its branch
   /phases                          List the phases, the current one emphasized
   /phase add <name>                Add a phase after the last
   /phase start                     Start the next phase
   /phase complete                  -> Completed, merged into the implementation
   /phase affirm                    -> Affirmed (engineer's declaration only)
-  /phase refute                    -> Refuted (the phase's proposition is not realized)
+  /phase refute                    -> Refuted (the phase's proposition is
+                                   not realized)
   /phase inconclusive              -> Inconclusive
 
   /phase help                      Print this command's help
@@ -89,11 +90,13 @@ LOG
   /work-session help               Print this command's help
 
 JOURNAL
-  /journal, /journal new, /journal entry     Write a shared journal entry
+  /journal, /journal new, /journal entry
+                                   Write a shared journal entry
   /journal private                 Write a private journal entry
   /journal read private            Read the private journal
   /journal timeline                List entries by date
-  /journal publish-private                    Move a private entry to the shared journal (requires conformation)
+  /journal publish-private         Move a private entry to the shared journal
+                                   (requires confirmation)
   /journal help                    Print this command's help
 
 FREEWRITING
@@ -101,7 +104,8 @@ FREEWRITING
   /freewrite end                   End it, and organize what was said
   /freewrite resume                Resume a freewrite that has ended
   /freewrite idea                  Freewrite and record it in an idea item
-  /freewrite observation           Freewrite and record it in an observation item
+  /freewrite observation           Freewrite and record it in an observation
+                                   item
   /freewrite mistake               Freewrite and record it in a mistake item
   /freewrite help                  Print this command's help
 
@@ -140,6 +144,7 @@ LANGUAGE
   /ete help                        Print this command's help
   /expand                          Expand the previous answer
   /expand help                     Print this command's help
-  /clarify                         Clarify the previous answer, then clarify it again for good measure
+  /clarify                         Clarify the previous answer, then clarify
+                                   it again for good measure
   /clarify help                    Print this command's help
 ```
