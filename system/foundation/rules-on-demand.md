@@ -143,15 +143,15 @@ Trigger: When writing a log entry that records a decision
 5. What `[decision]` marks is fixed here.
 6. The set of the engineer's decisions is read from this tag.
 
-# When an experiment's phase starts, its goal is stated, and the phases are listed with the current one marked
+# When an implementation's phase starts, its goal is stated, and the phases are listed with the current one marked
 
 Source: system/foundation/source/a-phase-starts-by-stating-its-goal.md
 
-Trigger: When starting a phase of an experiment
+Trigger: When starting a phase of an experiment or a feature
 
-1. At the start of an experiment's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
-2. The goal is what the phase is to establish, and how that serves the experiment's question.
-3. List the experiment's phases with it, in the order the record names them, and mark the current phase.
+1. At the start of an experiment's or a feature's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
+2. For an experiment, the goal is what the phase is to establish, and how that serves the experiment's question. For a feature, it is the phase's intent, what the phase is to build, and how that serves the feature's intent.
+3. List the implementation's phases with it, in the order the record names them, and mark the current phase.
 4. State it at each phase's start, not only when the record is written.
 
 # A printed list of records is formatted as a table or as a list of rows
@@ -486,19 +486,20 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 
 ## Phases
 
-1. An experiment may run in phases, each a question that serves the experiment's.
+1. An experiment or a feature may run in phases. An experiment's phase is a question that serves the experiment's question. A feature's phase is an intent that serves the feature's intent.
 2. The record names the phases and their order at the start.
-3. The record states each phase's forecast before its work.
-4. A phase's branch is the experiment's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`.
+3. An experiment's record states each phase's forecast before its work. A feature's record states none.
+4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
-7. A phase branches from the experiment's branch and concludes into it.
-8. A phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+7. A phase branches from the implementation's branch and concludes into it.
+8. An experiment's phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
 9. An affirmed phase merges back into the experiment's branch.
-10. The record carries each phase's verdict and findings.
-11. One phase runs at a time, in the record's order, each from the experiment's branch as the earlier phases left it.
-12. A phase merges nowhere else.
-13. The experiment concludes after its phases, and only then merges to its upstream branch.
+10. The experiment's record carries each phase's verdict and findings.
+11. A feature's phase concludes Completed, with no verdict, and merges back into the feature's branch.
+12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
+13. A phase merges nowhere else.
+14. The implementation concludes after its phases, and only then merges to its upstream branch.
 
 ## The working location
 
@@ -1011,7 +1012,7 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 
 Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
 
-Trigger: When planning to move content across a repository boundary or to restructure, rename, or regroup a project's files
+Trigger: When planning to move content across a repository boundary, to restructure, rename, or regroup a project's files, or to conform existing content to a changed norm or standard
 
 1. `waytide/local/migration/` holds migration records.
 2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
@@ -1019,24 +1020,25 @@ Trigger: When planning to move content across a repository boundary or to restru
 4. Plan a move here when content ends up under a different root, or in a different structure.
 5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
 6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
-7. Do not use an ordinary item for a migration.
-8. An item sequences a build, against something this repository settled.
-9. A migration plan sequences a change to where existing content lives. Across repositories, its increments land in two.
-10. Its order matters because content is unavailable or duplicated in between.
-11. Across repositories, the plan is not finished when this repository's part is done. Within one, a reference to the old place breaks until it is reconciled.
-12. A migration may realize a settled item, or be mechanical enough to need none.
-13. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
-14. Revise the record while the migration runs.
-15. Write it before moving the content.
-16. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
-17. State the source and destination outright: the repositories, or the old and new places within one.
-18. State the increments in order.
-19. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
-20. Record what actually happened against the plan as the work proceeds.
-21. Keep the record after the content has moved. Do not delete it on completion.
-22. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
-23. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
-24. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
+7. A change to a norm or standard that existing content must be conformed to is a migration too: a tag renamed, a term substituted, or a format changed, where records already written carry the old form. Example: the `[work-item]` tag becoming `[work]`, in this repository or in a consuming project.
+8. Do not use an ordinary item for a migration.
+9. An item sequences a build, against something this repository settled.
+10. A migration plan sequences a change to where existing content lives, or to the form it is written in. Across repositories, its increments land in two.
+11. Its order matters because content is unavailable or duplicated in between, a reference to the old place breaks until it is reconciled, and content in the old form does not match its rules until it is conformed.
+12. Across repositories, the plan is not finished when this repository's part is done.
+13. A migration may realize a settled item, or be mechanical enough to need none.
+14. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
+15. Revise the record while the migration runs.
+16. Write it before moving content across a repository boundary, restructuring where it lives, or conforming it to a changed norm or standard.
+17. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
+18. State the source and destination outright: the repositories, or the old and new places within one.
+19. State the increments in order.
+20. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
+21. Record what actually happened against the plan as the work proceeds.
+22. Keep the record after the content has moved. Do not delete it on completion.
+23. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
+24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
+25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
 
 # The startup display prints once per session
 

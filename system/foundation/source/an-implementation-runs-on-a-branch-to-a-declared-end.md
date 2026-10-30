@@ -20,14 +20,16 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **The worktree segment is an exception to the upstream clause, and it is one deliberately.** The upstream target is kept out of the name because a name that goes stale misleads, and a worktree can be added or removed the same way. What separates them is where each fact is asked about. An upstream target is asked about when the work is merged, and the record is open at that moment. The existence of a worktree is asked about in `git branch`, where the record is not. So the one that has no other answer at the point of asking is the one the name carries — and the rename is what keeps it from becoming the stale name the other clause refuses.
 
-## An experiment in phases
+## An implementation in phases
 
-**An experiment may run in phases**, each a question of its own that serves the experiment's. The record names the phases and their order at the start, and states a forecast for each before its work.
+**An experiment or a feature may run in phases.** An experiment's phase is a question of its own that serves the experiment's question. A feature's phase is an intent of its own that serves the feature's intent. The record names the phases and their order at the start. An experiment's record states a forecast for each phase before its work, and a feature's record states none.
 
-- **A phase's branch is the experiment's branch name, a dot, and the phase's name** — `experiment/rule-reduction.flattening`. A slash cannot join them: git refuses a branch named beneath another branch's name, so `experiment/rule-reduction/flattening` cannot exist beside `experiment/rule-reduction`. The `worktree/` segment, where the experiment has one, carries into each phase's name.
-- **A phase branches from the experiment's branch and concludes into it.** It is affirmed, refuted, or inconclusive on the engineer's declaration, as an experiment is, and an affirmed phase merges back into the experiment's branch. The experiment's record carries each phase's verdict and findings.
-- **The experiment concludes after its phases**, and only then merges to its upstream branch. A phase never merges anywhere else.
-- **One phase runs at a time, in the order the record names**, each starting from the experiment's branch as the phases before it left it.
+**As the engineer stated it:** features should have phases as well.
+
+- **A phase's branch is the implementation's branch name, a dot, and the phase's name** — `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`. A slash cannot join them: git refuses a branch named beneath another branch's name, so `experiment/rule-reduction/flattening` cannot exist beside `experiment/rule-reduction`. The `worktree/` segment, where the implementation has one, carries into each phase's name.
+- **A phase branches from the implementation's branch and concludes into it.** An experiment's phase is affirmed, refuted, or inconclusive on the engineer's declaration, as an experiment is, and an affirmed phase merges back into the experiment's branch. The experiment's record carries each phase's verdict and findings. A feature's phase concludes **Completed** and merges back into the feature's branch, with no verdict.
+- **The implementation concludes after its phases**, and only then merges to its upstream branch. A phase never merges anywhere else.
+- **One phase runs at a time, in the order the record names**, each starting from the implementation's branch as the phases before it left it.
 
 ## The working location, chosen at the start
 
@@ -135,19 +137,20 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 
 ## Phases
 
-1. An experiment may run in phases, each a question that serves the experiment's.
+1. An experiment or a feature may run in phases. An experiment's phase is a question that serves the experiment's question. A feature's phase is an intent that serves the feature's intent.
 2. The record names the phases and their order at the start.
-3. The record states each phase's forecast before its work.
-4. A phase's branch is the experiment's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`.
+3. An experiment's record states each phase's forecast before its work. A feature's record states none.
+4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
-7. A phase branches from the experiment's branch and concludes into it.
-8. A phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+7. A phase branches from the implementation's branch and concludes into it.
+8. An experiment's phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
 9. An affirmed phase merges back into the experiment's branch.
-10. The record carries each phase's verdict and findings.
-11. One phase runs at a time, in the record's order, each from the experiment's branch as the earlier phases left it.
-12. A phase merges nowhere else.
-13. The experiment concludes after its phases, and only then merges to its upstream branch.
+10. The experiment's record carries each phase's verdict and findings.
+11. A feature's phase concludes Completed, with no verdict, and merges back into the feature's branch.
+12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
+13. A phase merges nowhere else.
+14. The implementation concludes after its phases, and only then merges to its upstream branch.
 
 ## The working location
 
@@ -245,8 +248,11 @@ Raise no ending for an experiment. Leave the engineer on the upstream branch in 
 - 2026-10-27, re-checked: 88 directives, 75 kept, 12 less precise, 1 lost, 13 repairs, re-checked kept; directive 58 left less precise, since the point gives its reason and the run-the-test-suite-after-changes-before-considering-whether-to-commit rule states the directive
 - 2026-10-28, revised: Why points removed, solubility 42 → 41, clarity 0.76 → 0.79; checked: 85 directives, 84 kept, 1 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 88 directives, 86 kept, 2 less precise, 0 lost, 1 repair
+- 2026-10-29, revised: a feature may run in phases; checked: 66 directives, 66 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Oct 29 2026 only an experiment ran in phases. The engineer settled that a feature may run in phases too, each phase an intent of its own.
 
 Until Sun Oct 25 2026 this rule was named implementation-lifecycle and titled "An implementation runs on a branch, from a working location chosen at the start, to a declared end".
 
@@ -292,3 +298,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:18:21 AM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 10:02:31 PM PT
