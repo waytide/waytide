@@ -195,6 +195,10 @@
 
 **Whether a phase reaches a verdict is chosen for each phase, when it is added**, whatever its implementation's choice. The engineer settled this on 2026-10-30. The an-implementation-runs-on-a-branch-to-a-declared-end rule does not yet say so, and is amended with the rules the slash-commands phase writes.
 
+## Amended — 2026-10-30: phase
+
+**The command is `/phase`, singular, in place of `/phases`, with the same subcommands.** A bare `/phase` lists the phases with the current one emphasized.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -253,6 +257,8 @@ On 2026-10-30: "Actually, it should be “/current-items”"
 
 On 2026-10-30: "Create a “/phases” root command. Add appropriate subcommands." Asked whether a phase's verdict follows its implementation's or is chosen per phase, the engineer selected that it is chosen per phase.
 
+On 2026-10-30: "Make “phases” singular: “phase”"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -283,3 +289,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:34:21 PM PT
