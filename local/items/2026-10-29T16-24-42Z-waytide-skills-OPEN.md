@@ -151,6 +151,12 @@
 
 **The reports group keeps only `/status-report`.**
 
+## Amended — 2026-10-29: phases
+
+**`/phases` is a root command that lists the current implementation's phases in order, and prints the current phase with emphasis.**
+
+**Not settled:** how it finds the current implementation, such as from the branch the working tree is on, and how it sits beside `/experiment status` and `/feature status`, which list the phases with the current one's goal.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -197,6 +203,8 @@ On 2026-10-29: "Write this into an item", of the list of root commands without a
 
 On 2026-10-29, of a proposed `/test` command: "Yes, adopt that"
 
+On 2026-10-29: "Another slash command: “/phases”. It lists the phases in order, and prints the current phase with emphasis"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -221,3 +229,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:43:36 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
