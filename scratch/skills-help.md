@@ -66,13 +66,13 @@ EXPERIMENTS
   /experiment help                 Print this command's help
 
 PHASE
-  /phase                           List the phases, the current one emphasized
-  /phase current                   The current phase, its goal, and its branch
+  /phase, /phase current                   The current phase, its goal, and its branch
+  /phases                          List the phases, the current one emphasized
   /phase add <name>                Add a phase after the last
   /phase start                     Start the next phase
   /phase complete                  -> Completed, merged into the implementation
   /phase affirm                    -> Affirmed (engineer's declaration only)
-  /phase refute                    -> Refuted
+  /phase refute                    -> Refuted (the phase's proposition is not realized)
   /phase inconclusive              -> Inconclusive
 
   /phase help                      Print this command's help
@@ -89,11 +89,11 @@ LOG
   /work-session help               Print this command's help
 
 JOURNAL
-  /journal new, /journal entry     Write a shared journal entry
+  /journal, /journal new, /journal entry     Write a shared journal entry
   /journal private                 Write a private journal entry
   /journal read private            Read the private journal
   /journal timeline                List entries by date
-  /journal move                    Move a private entry to the shared journal
+  /journal publish-private                    Move a private entry to the shared journal (requires conformation)
   /journal help                    Print this command's help
 
 FREEWRITING

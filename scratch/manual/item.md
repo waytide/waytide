@@ -1,0 +1,90 @@
+# Item — manual page
+
+```
+ITEM(1)                        Waytide Manual                        ITEM(1)
+
+NAME
+     item - record the project's thinking about what the work should be
+
+SYNOPSIS
+     /item new | idea | work | observation | mistake | problem
+     /item list <state>
+     /item start | realize | done | defer | suspend | supersede
+           | abandon | obsolete | reopen
+     /item help
+
+     /idea, /work, /work-item, /observation, /observe, /mistake,
+     /problem, /list <state>, /current-items
+
+DESCRIPTION
+     An item is one file in local/items/ holding a piece of the project's
+     thinking: an idea, a design, a plan, an observation, or a piece of
+     work to be done. Items are where direction is settled before it is
+     built, and they are kept after it is.
+
+     Each item has a title, a state, and one or more tags. The tags say
+     what kind of item it is. The state says where it stands.
+
+     An item is never rewritten. It grows by dated additions, so it reads
+     as the history of how the thinking moved.
+
+SUBCOMMANDS
+     Create
+       new             An item, tagged [idea] if it has no other tag
+       idea            An item tagged [idea]           (/idea)
+       work            An item tagged [work]           (/work, /work-item)
+       observation     An observation                  (/observation, /observe)
+       mistake         An item tagged [mistake]        (/mistake)
+       problem         An item tagged [problem]        (/problem)
+
+     List
+       list <state>    The items in a state            (/list <state>)
+                       <state> is any state below, or "current": Open,
+                       Active, and Suspended together  (/current-items)
+
+     Change state
+       start           Open -> Active
+       realize         -> Realized
+       done            -> Done ([work] items only)
+       defer           -> Deferred
+       suspend         -> Suspended
+       supersede       -> Superseded, naming the item that replaces it
+       abandon         -> Abandoned
+       obsolete        -> Obsolete
+       reopen          Take back Realized, Deferred, Open, or Done
+
+     A bare /idea is /idea new. A bare /observation is /observation new.
+
+KINDS
+     [idea]          The default, for an item with no other tag.
+     [observation]   A working hypothesis, not yet binding. Its state is
+                     always Recorded, and it may be promoted to a rule.
+     [work]          A piece of work to be done. It ends Done.
+     [mistake], [problem], [design], [plan], [aspiration]
+                     Other kinds. The set is open.
+
+STATES
+     Open            The work has not started.
+     Active          The work is in progress.
+     Realized        What the item describes exists.
+     Done            A piece of work is finished ([work] only).
+     Deferred        Kept, with nobody working toward it.
+     Suspended       Paused.
+     Superseded      Replaced by another item, which it names.
+     Abandoned       Dropped by decision.
+     Obsolete        Left behind as the work moved on.
+     Recorded        An observation's only state.
+
+EXAMPLES
+     /idea A coupon field on the cart page
+     /work Round the cart total to two decimal places
+     /item list current
+
+FILES
+     local/items/<UTC timestamp>-<name>-<STATE>.md
+             The state ends the file name in upper case, so a directory
+             listing shows where each item stands.
+
+SEE ALSO
+     /observation, /freewrite, /log, /feature, /experiment
+```

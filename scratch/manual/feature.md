@@ -10,14 +10,15 @@ SYNOPSIS
      /feature new [with phases]
      /feature status
      /feature complete | suspend | resume | supersede | abandon
+     /feature help
 
 DESCRIPTION
      A feature is a piece of work with a start and a declared end, added
      to the project's main line: something the project means to have. A
-     feature gets a branch of its own, and is
-     built there, apart from master, until it completes and merges. The
-     one exception is a feature the engineer chooses to build on the
-     current branch, which creates no branch at all. Its
+     feature gets a branch of its own, and is built there, apart from
+     master, until it completes and merges. The one exception is a
+     feature the engineer chooses to build on the current branch, which
+     creates no branch at all. Its
      record in local/implementations/ carries how it began, where it is
      being worked, and what became of it.
 
@@ -88,5 +89,5 @@ FILES
      local/implementations/<UTC timestamp>-<name>-<STATE>.md
 
 SEE ALSO
-     /experiment, /phases, /item, /log
+     /experiment, /phase, /item, /log
 ```
