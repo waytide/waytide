@@ -16,7 +16,7 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 2. **An experiment was allowed to run in phases**, each on its own branch from the experiment's.
 3. **The experiment's record was written**, with its question, its phases, and its forecasts.
 4. **Fifteen candidate rules were measured and tabled.** Each took a **size rank**, its rank by length among all the rules, and an **unclarity**, the mean of six ranks: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
-5. **The two were combined into solubility**, corrected to run upward and scaled to 100: higher is easier to take in. The combined score was settled as a screen for candidates, not a ranking.
+5. **The two were combined into solubility**, inverted to ascend in value rather than descend, and scaled to 100: higher is easier to take in. The combined score was settled as a screen for candidates, not a ranking.
 6. **Two more figures were set for a compressed text**: **compression**, the share of characters it removes, and **change**, the share of words it removes, adds, or replaces.
 7. **Rule #2 was compressed, and the compiler learned to print a rule's compressed text in place of its body.**
 8. **A predictability simulation was designed**: fresh agents answer scenarios from the full rule or from its compressed text, and the answers are compared. It passed on #2.
@@ -136,3 +136,4 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 6:50:58 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:01:32 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 11:38:04 PM PT
