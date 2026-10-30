@@ -46,6 +46,7 @@ EXPERIMENTS
 
 FEATURES
   /feature new                     Start a feature
+  /feature new with phases        Start a feature, asking for its phases
   /feature status                  Phases, current phase, and its goal
   /feature complete                -> Completed
   /feature suspend                 -> Suspended
@@ -71,6 +72,9 @@ FREEWRITING
   /freewrite begin                 Begin freewriting
   /freewrite end                   End it, and organize what was said
   /freewrite resume                Resume a freewrite that has ended
+  /freewrite idea                  Freewrite and record it in an idea item
+  /freewrite observation           Freewrite and record it in an observation item
+  /freewrite mistake               Freewrite and record it in a mistake item
 
 PACKAGES
   /package activate <package>      Activate an installed package
@@ -94,6 +98,7 @@ LANGUAGE
   /reserve <word>                  Reserve a word, in six steps
   /ete                             Write in Eventide Technical English
   /expand                          Expand the previous answer
+  /clarify                         Clarify the previous answer, then clarify it again for good measure
 
 PROCEDURES
   /work-session new | append       Write or append a work session record

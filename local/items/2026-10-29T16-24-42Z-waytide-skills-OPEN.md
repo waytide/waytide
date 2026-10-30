@@ -157,6 +157,14 @@
 
 **Not settled:** how it finds the current implementation, such as from the branch the working tree is on, and how it sits beside `/experiment status` and `/feature status`, which list the phases with the current one's goal.
 
+## Amended — 2026-10-30: the engineer's edits to the help text
+
+**The engineer added four commands to the help text in `scratch/skills-help.md`.**
+
+- `/feature new with phases` starts a feature and asks for its phases, as `/experiment new with phases` does.
+- `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` freewrite and record the result in a new item of that kind. The destination is chosen at the start, where `/freewrite end` otherwise asks whether the points become a new item or are appended to a recent one.
+- `/clarify` clarifies the previous answer, and then clarifies it again.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -205,6 +213,8 @@ On 2026-10-29, of a proposed `/test` command: "Yes, adopt that"
 
 On 2026-10-29: "Another slash command: “/phases”. It lists the phases in order, and prints the current phase with emphasis"
 
+On 2026-10-30, the engineer added to the help text: "/feature new with phases — Start a feature, asking for its phases", "/freewrite idea — Freewrite and record it in an idea item", "/freewrite observation — Freewrite and record it in an observation item", "/freewrite mistake — Freewrite and record it in a mistake item", and "/clarify — Clarify the previous answer, then clarify it again for good measure"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -230,3 +240,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:48:29 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
