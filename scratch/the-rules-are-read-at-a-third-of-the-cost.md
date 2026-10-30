@@ -31,8 +31,8 @@ This work session began as a question: can Waytide's rules be made much cheaper 
 **Key metrics at this point:**
 
 - Five rules compressed: #2, #7, #11, #12, and #15
-- Compression: 0.55, from 0.27 to 0.71
-- Change: 0.78, from 0.56 to 0.91
+- Compression: 0.55 (min 0.27 max 0.71)
+- Change: 0.78 (min 0.56 max 0.91)
 - Simulation: 149 of 150 answers the same
 - Session-start read: unchanged, 547,780 characters
 
