@@ -31,8 +31,8 @@
 
 **A line gives the date, the event, and its figures:**
 
-- **compressed** — the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many directives, and how many of them kept, less precise, and lost
-- **revised** — the solubility and the clarity score before and after, and the directive counts of the check that followed
+- **compressed** — the compression, the change, the size rank, the solubility, and the clarity score before and after, and the directive counts: how many directives, and how many of them kept, less precise, and lost
+- **revised** — the size rank, the solubility, and the clarity score before and after, and the directive counts of the check that followed
 - **re-checked** — the directive counts, and the number of repairs
 
 Restorations, where a compression put back text it had dropped, are named on the line of the event that made them. A figure that was not measured is left out, not estimated.
@@ -41,6 +41,7 @@ Restorations, where a compression put back text it had dropped, are named on the
 
 - **Compression** is the share of the body's characters the compressed text removes.
 - **Change** is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
+- **Size rank** is the rule's rank by characters among the compiled rules, from 0 for the smallest to 1 for the largest. It is recorded beside the solubility, so a reader sees whether a change in solubility came from the rule's size or its clarity.
 - **Clarity score** is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: the average sentence length, the share of sentences over 25 words, and the history words, the asides, the citations, and the negations per sentence.
 - **Solubility** is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
 
@@ -86,18 +87,19 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 1. Record each compression, revision, and check of a compressed text in its source, in a `## Compression` section below the Compressed section.
 2. One line records each event. A later event adds a line, and the earlier lines stay as written.
 3. A line gives the date, the event, and its figures.
-4. A **compressed** line gives the compression, the change, the solubility and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
-5. A **revised** line gives the solubility and the clarity score before and after, and the directive counts of the check that followed.
+4. A **compressed** line gives the compression, the change, the size rank, the solubility, and the clarity score before and after, and the directive counts: how many, and how many kept, less precise, and lost.
+5. A **revised** line gives the size rank, the solubility, and the clarity score before and after, and the directive counts of the check that followed.
 6. A **re-checked** line gives the directive counts and the number of repairs.
 7. Name restorations, where a compression put back text it had dropped, on the line of the event that made them.
 8. Leave out a figure that was not measured. Do not estimate it.
 9. Compression is the share of the body's characters the compressed text removes.
 10. Change is the share of the body's words removed, added, or replaced, from a word-level comparison of the body and the compressed text.
-11. Clarity score is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
-12. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
-13. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
-14. The process that compresses, revises, or checks the text writes the figures, in the same commit.
-15. The package's rules file carries no figures. They stay in the source.
+11. Size rank is the rule's rank by characters among the compiled rules, from 0 for the smallest to 1 for the largest.
+12. Clarity score is 1 − unclarity. Unclarity is the mean of six ranks among the compiled rules: average sentence length, share of sentences over 25 words, and history words, asides, citations, and negations per sentence.
+13. Solubility is (1 − the mean of the size rank and the unclarity) × 100, as a whole number. Higher is easier to process.
+14. Take the ranks against the compiled rules at commit `770c7eb`, so later figures compare with earlier ones. The rule-reduction experiment's record, `2026-10-22T04-51-25Z-rule-reduction`, sets out each measure.
+15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
+16. The package's rules file carries no figures. They stay in the source.
 
 ## Compression
 
@@ -105,6 +107,7 @@ The ranks are taken against the compiled rules at commit `770c7eb`, so that a fi
 - 2026-10-27, revised: the compiled rule carries the latest value of each measure, solubility 34 → 53, clarity 0.50 → 0.84; checked: 45 directives, 44 kept, 1 less precise, 0 lost, 1 repair, re-checked kept; directive 41 left as the source words it
 - 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.84 → 0.84; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 55 → 56, clarity 0.84 → 0.84; checked: 44 directives, 42 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
+- 2026-10-29, revised: the size rank is recorded as a figure of its own, size rank 0.85 → 0.75, solubility 32 → 55, clarity 0.49 → 0.84; checked: 48 directives, 47 kept, 1 less precise, 0 lost; the less precise directive, that the size rank sits beside the solubility, is left, since the lists name the two side by side
 
 ## History
 
@@ -113,6 +116,8 @@ Until Tue Oct 27 2026 the compiler left the whole Compression section out of the
 Until Wed Oct 28 2026 the compressed text carried each reason as a point leading with `**Why:**`. A session comparison found that the reasons changed no agent's behavior, and the engineer settled that the compressed text leaves them out.
 
 Until Thu Oct 29 2026 the compiler wrote a file per rule, in a default form and a `--compressed` form, each carrying the latest value of each measure. Phase 2 of the rule-reduction experiment replaced them with one rules file per package, which carries no figures.
+
+Until Thu Oct 29 2026 the size rank was not recorded on its own. It stood only inside the solubility, and could be worked out from the solubility and the clarity score. The engineer settled that it is recorded as a figure of its own.
 
 Related:
 
@@ -123,3 +128,4 @@ Related:
 
 Authored by Scott Bellware on Tue Oct 27 2026 at 2:31:40 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:40:00 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:19:10 PM PT
