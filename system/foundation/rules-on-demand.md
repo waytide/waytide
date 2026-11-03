@@ -1,3 +1,18 @@
+# A command takes its subcommand first, asks when it has none, and always takes help
+
+Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help.md
+
+Trigger: When running or writing a Waytide slash command
+
+1. A Waytide command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
+2. With no subcommand, the command asks which one is meant, through the selection interface, unless its help gives the bare command a meaning of its own, as a bare `/journal` writes an entry.
+3. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
+4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
+5. Every root command takes `help`, which prints that command's part of the help text.
+6. `help` is always the subcommand, never an argument. `/reserve help` prints help, and does not reserve the word "help".
+7. A subcommand that is not the command's own is not guessed at. The command says so, and asks which one is meant, through the selection interface.
+8. A command's skill only reads the words typed, and hands the act to the rule that governs it. That rule says what the act is. This rule does not, and governs only how a command is typed and how its words are read.
+
 # A date in a record's title is written as the day, the date, and the 24-hour time
 
 Source: system/foundation/source/a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time.md
