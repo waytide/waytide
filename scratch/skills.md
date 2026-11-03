@@ -114,7 +114,7 @@ FREEWRITING
   /freewrite mistake               Freewrite and record it in a mistake item
   /freewrite help                  Print this command's help
 
-  /freeform is another wording of /freewrite, with the same
+  /freeform is an alias of /freewrite, with the same
   subcommands.
 
 TESTS

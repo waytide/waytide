@@ -10,7 +10,7 @@ SYNOPSIS
      /freewrite begin | end | resume
      /freewrite idea | observation | mistake
      /freewrite help
-     /freeform [subcommand]   (the same as /freewrite)
+     /freeform [subcommand]   (an alias of /freewrite)
 
 DESCRIPTION
      Freewriting is saying points as they occur, unsorted and unedited,
