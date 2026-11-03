@@ -114,6 +114,9 @@ FREEWRITING
   /freewrite mistake               Freewrite and record it in a mistake item
   /freewrite help                  Print this command's help
 
+  /freeform is another wording of /freewrite, with the same
+  subcommands.
+
 TESTS
   /test                            Run the automated suite
   /test interactive [<test>]       Run an interactive test, or ask which

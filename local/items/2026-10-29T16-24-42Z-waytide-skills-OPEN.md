@@ -220,6 +220,10 @@
 
 **`/item aspiration` creates an item tagged `[aspiration]`, and `/item goal` creates one tagged `[goal]`.** `/aspiration` and `/goal` are other wordings of each. An aspiration is written only where one was asked for, and the command is that asking.
 
+## Amended — 2026-11-02: freeform
+
+**`/freeform` is another wording of `/freewrite`, taking the same subcommands.** The commands keep the name freewrite.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -288,6 +292,8 @@ On 2026-11-02: "Both plan and design should have representation in the item subc
 
 On 2026-11-02, offered tags for item subcommands, the engineer selected "aspiration" and "goal", then: "add them"
 
+On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -323,3 +329,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 3:42:03 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:49:26 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:19:18 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:20:57 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
