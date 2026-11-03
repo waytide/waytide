@@ -50,7 +50,7 @@ Every item carries a `**State:**` line, from the moment it is written:
 - **Superseded** — another item replaced it, and the two name each other.
 - **Abandoned** — dropped, by decision.
 - **Recorded** — an observation, and an observation only. It is the one state that never changes: an observation has no lifecycle, so it carries this word from the moment it is written and carries it for good. See the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule.
-- **Obsolete** — it lost its relevance over time. **`Obsolete` and `Abandoned` differ in who acted:** abandoning is a decision, and an item becomes obsolete when nobody decides and the work moves past it. Any item takes it, a `[work]` item included.
+- **Obsolete** — it lost its relevance over time. **`Obsolete` and `Abandoned` differ in who acted:** abandoning is a decision, and an item becomes obsolete when nobody decides and the work moves past it. Any item takes it, a work item included.
 
 **As the engineer stated it:** rename “lapse” to “obsolete”. And it should be applicable to all item categories, including work items.
 
@@ -60,17 +60,17 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 **`Realized`, `Deferred`, and `Open` are taken back**, each returning to `Active` or to `Open` when the work resumes. The rest are not.
 
-**An item whose work is done on an experiment's branch concludes when the work is done**, as `Realized`, or as `Done` for a `[work]` item. It does not wait for the experiment to merge. The item names the branch the work is on.
+**An item whose work is done on an experiment's branch concludes when the work is done**, as `Realized`, or as `Done` for a work item. It does not wait for the experiment to merge. The item names the branch the work is on.
 
-## Work
+## A work item
 
 **An item tagged `[work]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, `Superseded`, or `Obsolete`.** This rule names the tag and says what follows.
 
-- **Done** — the work is done. It takes the place of `Realized`, which a `[work]` item does not take.
-- **Before it concludes**, a `[work]` item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
+- **Done** — the work is done. It takes the place of `Realized`, which a work item does not take.
+- **Before it concludes**, a work item takes an item's states — `Open`, `Active`, `Deferred`, and `Suspended`.
 - **`Done` is taken back** to `Active` when the work reopens, as `Realized` is for any other item.
 
-**Why:** a `[work]` item describes something to do rather than something to exist, so *realized* misstates its end. *Done* says what happened to it.
+**Why:** a work item describes something to do rather than something to exist, so *realized* misstates its end. *Done* says what happened to it.
 
 ## Supersession
 
@@ -111,7 +111,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 17. The tag set is open.
 18. An item may carry several tags.
 19. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-20. `[observation]` and `[work]` mean what their rules say: the observations rule, and the work section below.
+20. `[observation]` and `[work]` mean what their rules say: the observations rule, and the work-item section below.
 21. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
 22. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
 23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
@@ -132,14 +132,14 @@ Change the state as the item reaches another word, renaming the file with it, an
 38. **Suspended** — paused, not ended.
 39. **Superseded** — a later item replaced it, and the two name each other.
 40. **Abandoned** — dropped by decision.
-41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a `[work]` item included.
-42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a `[work]` item. Do not wait for the merge, and name the branch.
+41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
+42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
 43. At each change of state, change the `**State:**` line and rename the file.
 44. At each change of state, write the log entry.
 45. An item tagged `[work]` is a piece of work to be done.
-46. A `[work]` item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-47. A `[work]` item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
-48. A `[work]` item never takes `Realized`.
+46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
+47. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
+48. A work item never takes `Realized`.
 49. Take `Done` back to `Active` when the work reopens.
 50. Supersede an item rather than rewrite it.
 51. What a superseded item settled stays as written.

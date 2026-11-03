@@ -90,8 +90,8 @@ Trigger: When creating an item, adding a dated Settled resolution to it, changin
 4. Write the entry on the item's creation.
 5. Write the entry on each dated `Settled` resolution added after the item is created.
 6. Write the entry on each change of the item's `**State:**` line.
-7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Obsolete, or Done for a `[work]` item.
-8. A change of state is also the line taking back Realized, Deferred, Open, or a `[work]` item's Done.
+7. A change of state is the line reaching Open, Active, Realized, Deferred, Suspended, Superseded, Abandoned, or Obsolete, or Done for a work item.
+8. A change of state is also the line taking back Realized, Deferred, Open, or a work item's Done.
 9. An observation is `Recorded` and never moves, so it takes a creation entry only.
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
 11. Do not log prose that settles nothing either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section.
@@ -241,7 +241,7 @@ Trigger: When creating, renaming, changing the state of, or referencing an item 
 2. Where name and line disagree, the line is right and the name is stale.
 3. A state change renames the file, using `git mv`.
 4. When a reversible word is taken back, rename the file to the state the record returns to, **ACTIVE** or **OPEN**.
-5. The reversible words are **Realized**, **Deferred**, **Open**, and a `[work]` item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out.
+5. The reversible words are **Realized**, **Deferred**, **Open**, and a work item's **Done**, as the the-items-directory-holds-one-file-per-item rule sets out.
 6. A reference to a record omits its state suffix and extension, and keeps the prefix and name. A rename then breaks no reference.
 7. A reader finds the record by that prefix and name.
 8. Leave historical records as written.
@@ -914,7 +914,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 17. The tag set is open.
 18. An item may carry several tags.
 19. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-20. `[observation]` and `[work]` mean what their rules say: the observations rule, and the work section below.
+20. `[observation]` and `[work]` mean what their rules say: the observations rule, and the work-item section below.
 21. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
 22. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
 23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
@@ -935,14 +935,14 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 38. **Suspended** — paused, not ended.
 39. **Superseded** — a later item replaced it, and the two name each other.
 40. **Abandoned** — dropped by decision.
-41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a `[work]` item included.
-42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a `[work]` item. Do not wait for the merge, and name the branch.
+41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
+42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
 43. At each change of state, change the `**State:**` line and rename the file.
 44. At each change of state, write the log entry.
 45. An item tagged `[work]` is a piece of work to be done.
-46. A `[work]` item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-47. A `[work]` item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
-48. A `[work]` item never takes `Realized`.
+46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
+47. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
+48. A work item never takes `Realized`.
 49. Take `Done` back to `Active` when the work reopens.
 50. Supersede an item rather than rewrite it.
 51. What a superseded item settled stays as written.
