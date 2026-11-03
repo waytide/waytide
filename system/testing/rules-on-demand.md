@@ -129,6 +129,20 @@ Trigger: When the user asks for a test report
 7. A bare unnamed `test do` adds no context line.
 8. A report on what a run produced is the test-tree command's, not this one's.
 
+# A test run asked for runs the automated suite, or the interactive test named
+
+Source: system/testing/source/a-test-run-asked-for-runs-the-automated-suite-or-the-interactive-test-named.md
+
+Trigger: When the engineer asks for a test run, as with `/test` or `/test interactive`
+
+1. `/test` runs the automated suite, every test under `test/automated/`, by the command the project's stack sets. Skip a file whose name begins with an underscore.
+2. Report the automated tests passing or failing, never *the tests*. Where there are interactive tests, say they were not run. Report a failure with the test that failed and what it reported.
+3. `/test interactive <test>` runs the one interactive test named, from `test/interactive/`. With none named, list them through the selection interface and ask which to run.
+4. Run an interactive test only when the engineer asks for it. No other command runs one.
+5. Report what an interactive test brought back. The engineer judges whether it passed.
+6. `/test report` and `/test tree` run the test-report and test-tree commands. `/test-report` and `/test-tree` are their aliases.
+7. With no automated suite, `/test` runs nothing, and says the project has no automated tests. That is not a failure.
+
 # An error test is named Fails, and its condition is a context
 
 Source: system/testing/source/an-error-test-is-named-fails-and-its-condition-is-a-context.md
