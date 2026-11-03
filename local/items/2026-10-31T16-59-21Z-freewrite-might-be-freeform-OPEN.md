@@ -9,10 +9,17 @@
 
 **Not yet settled:** whether "freeform" replaces "freewrite".
 
+## Settled
+
+- **2026-11-02** — The commands stay `/freewrite`. `/freeform` is another wording of `/freewrite`, taking the same subcommands.
+
 ## History
 
 As the engineer first stated it: "Idea: “Freeform” rather than “freewrite”"
 
+On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
+
 ---
 
 Authored by Scott Bellware on Sat Oct 31 2026 at 9:59:21 AM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT

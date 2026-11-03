@@ -212,6 +212,18 @@
 
 **Not settled:** how a timespan is written, such as a date range or a phrase like "last week". The a-timeline-view-lists-every-journal-entry-by-its-datetime rule lists every entry, and is amended for the timespan with the rules the slash-commands phase writes.
 
+## Amended — 2026-11-02: plan and design
+
+**`/item plan` creates an item tagged `[plan]`, and `/item design` creates one tagged `[design]`.** `/plan` and `/design` are other wordings of each, as `/idea` is of `/item idea`.
+
+## Amended — 2026-11-02: aspiration and goal
+
+**`/item aspiration` creates an item tagged `[aspiration]`, and `/item goal` creates one tagged `[goal]`.** `/aspiration` and `/goal` are other wordings of each. An aspiration is written only where one was asked for, and the command is that asking.
+
+## Amended — 2026-11-02: freeform
+
+**`/freeform` is another wording of `/freewrite`, taking the same subcommands.** The commands keep the name freewrite.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -276,6 +288,12 @@ On 2026-10-30, the engineer edited the help text: "/phase, /phase current — Th
 
 On 2026-10-30: "“/journal timeline” should be “/journal list”. It should take an optional timespan"
 
+On 2026-11-02: "Both plan and design should have representation in the item subcommands"
+
+On 2026-11-02, offered tags for item subcommands, the engineer selected "aspiration" and "goal", then: "add them"
+
+On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -309,3 +327,6 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:34:21 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:42:03 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 3:49:26 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:19:18 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:20:57 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
