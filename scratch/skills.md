@@ -90,6 +90,12 @@ PHASE
   Whether a phase reaches a verdict is chosen for each phase,
   when it is added.
 
+PROCESS
+  /next                            Proceed to the next step in the current
+                                   multi-step process
+  /next?                           The next step in the current multi-step
+                                   process
+
 LOG
   /log                             Write a log entry
   /log-this                        Write a log entry for the current work
