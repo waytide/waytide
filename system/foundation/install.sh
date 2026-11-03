@@ -309,12 +309,12 @@ place_settings_json() {
   warn_ignored_settings_json
 }
 
-# Assemble the slash plugin, Slasher, in .claude/skills/slash/ from the skills the packages
-# carry, each as skills/<command>/ in its package. The plugin is assembled, never edited: a
-# skill is changed in its package, so the directory is rebuilt whole each time and nothing in
-# it is kept.
+# Assemble the slasher plugin, Slasher, in .claude/skills/slasher/ from the skills the
+# packages carry, each as skills/<command>/ in its package. The plugin is assembled, never
+# edited: a skill is changed in its package, so the directory is rebuilt whole each time and
+# nothing in it is kept.
 place_skills() {
-  plugin=.claude/skills/slash
+  plugin=.claude/skills/slasher
 
   # A deactivated package's skills go with it. The packages are read from the latest package
   # set's Inactive line, as load-rules.sh reads them.
@@ -344,11 +344,11 @@ place_skills() {
   plugin_json > "$plugin/.claude-plugin/plugin.json"
 }
 
-# The manifest that names the plugin, and so the namespace its skills are typed under: /slash:log.
+# The manifest that names the plugin, and so the namespace its skills are typed under: /slasher:log.
 plugin_json() {
   cat <<'JSON'
 {
-  "name": "slash",
+  "name": "slasher",
   "displayName": "Slasher",
   "description": "The Slasher commands"
 }

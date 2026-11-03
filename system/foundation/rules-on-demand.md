@@ -1230,19 +1230,19 @@ Loading Waytide will take a few moments.
 56. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 57. The package set's absence is the ordinary case, not an omission.
 
-# The Waytide skills are delivered as a plugin named slash
+# The Waytide skills are delivered as a plugin named slasher
 
-Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-named-slash.md
+Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-named-slasher.md
 
 Trigger: When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
 
-1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slash/`, whose `.claude-plugin/plugin.json` gives `name` as `slash`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slash:<command>`, as in `/slash:log`, or `/<command>` where no other command claims the name.
+1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
-3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slash/` from the active packages' skills, leaving out a deactivated package's.
+3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slasher/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
-7. A bare `/slash` prints every active skill's help together, in the order of the help text.
+7. A bare `/slasher` prints every active skill's help together, in the order of the help text.
 
 # The work-sessions directory holds one record per work session
 
