@@ -18,6 +18,8 @@ Three conventions govern all of them: the **ISO-8601-UTC filename prefix** (`fil
 
 Foundation also provides the project-wide **status report** command, a whole-project summary. **A report counts a hidden record rather than listing it** (`a-status-report-prints-a-fixed-whole-project-report`), and that reaches a brief as much as the fixed report. Two kinds are hidden today: a record whose `**State:**` line reads `Suspended`, and a log entry carrying the `[suspended]` tag. The state marks something the project **wanted** and set aside; the tag marks something it **did** and stopped. The count is what makes either askable for — a record dropped entirely leaves a reader believing they have seen everything.
 
+**`/next?` names the next step of the work under way, and `/next` takes it** (`next-takes-the-next-step-of-the-work-under-way`), in place of asking *What's next?* and saying *proceed*. Neither decides anything the rules leave to the engineer.
+
 **Freewriting records points as they are said, and organizes them at the end** (`freewriting-records-points-as-they-are-said-and-organizes-them-at-the-end`). Each point goes word for word to a collection file outside the repository, and at the end the agent reframes them into an item.
 
 **A Waytide command takes its subcommand first, asks when it has none, and always takes `help`** (`a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help`). An alias does exactly what the command it names does, and each subcommand hands its act to the rule that governs it.

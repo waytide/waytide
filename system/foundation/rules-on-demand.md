@@ -778,6 +778,19 @@ Trigger: When the engineer begins, ends, or resumes freewriting (`/freewrite`, o
 8. `/freewrite resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
 9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
 
+# Next takes the next step of the work under way, and next? names it
+
+Source: system/foundation/source/next-takes-the-next-step-of-the-work-under-way.md
+
+Trigger: When the engineer types `/next` or `/next?`, or asks what is next
+
+1. `/next?` asks what the next step is, as the engineer asking *What's next?* would. `/next` takes it, as the engineer saying *proceed* would.
+2. The work under way is any work with steps still to take: a plan's tasks, an implementation's phases, an outcome's design hinges, a list of steps the agent gave, a procedure part done. The next step is the first not yet taken.
+3. On `/next?`, name the next step and what it would do, in a sentence or two, and do not take it.
+4. On `/next`, take the next step and nothing beyond it, then stop.
+5. Follow the work the conversation is on. Where that is not clear, ask which, through the selection interface. Where no work is under way, say so.
+6. `/next` does not stand in for a decision a rule leaves to the engineer, such as affirming an experiment, committing on `master`, or deleting a branch. It brings the step to that decision, and asks it as the step's rule says.
+
 # Record a rule's authorship in a provenance footer
 
 Source: system/foundation/source/record-a-rules-authorship-in-a-provenance-footer.md
