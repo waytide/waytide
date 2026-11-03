@@ -45,7 +45,7 @@ Trigger: When the engineer commands the private journal read (`Read private jour
 
 Source: system/journal/source/a-timeline-view-lists-every-journal-entry-by-its-datetime.md
 
-Trigger: When the writer asks for the journal timeline or a list of journal entries
+Trigger: When the writer asks for the journal timeline or a list of journal entries, as with `/journal list`
 
 1. When the writer asks for the timeline, such as *show the timeline* or *list the entries*, list every journal entry in the active writer's journal directory.
 2. The directory is `waytide/local/journal/<username>/`.
@@ -62,6 +62,7 @@ Trigger: When the writer asks for the journal timeline or a list of journal entr
 13. There is no `TIMELINE.md`, and none is written.
 14. Write nothing to a file.
 15. The view is a projection, in the sense of the foundation package's vocabulary.
+16. The list is asked for with `/journal list`. A list may be asked for within a timespan, as with `/journal list <timespan>`: a date, a range of dates, or a phrase such as *last week*, read in the writer's local time, both ends included. List only the entries within it, and give the count and date span for those.
 
 # Journal entries are recorded in the writer's journal directory, one file per entry
 

@@ -791,6 +791,28 @@ Trigger: When the engineer types `/next` or `/next?`, or asks what is next
 5. Follow the work the conversation is on. Where that is not clear, ask which, through the selection interface. Where no work is under way, say so.
 6. `/next` does not stand in for a decision a rule leaves to the engineer, such as affirming an experiment, committing on `master`, or deleting a branch. It brings the step to that decision, and asks it as the step's rule says.
 
+# Package refresh and install run foundation's scripts
+
+Source: system/foundation/source/package-refresh-and-install-run-foundations-scripts.md
+
+Trigger: When the engineer asks to refresh or install Waytide's packages, as with `/package refresh` or `/package install`
+
+1. `/package refresh [<package>...]` refreshes the installed packages from their repositories. Run foundation's `refresh-packages.sh` with the packages named, or none for every one. Report each package that moved and its changed rule files, as the script prints them.
+2. `/package install` installs Waytide into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
+3. Act only on the project the session is in. Refreshing or installing in another project is the engineer's to ask for there.
+4. Never run `/package install` in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
+5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load waytide`.
+
+# Projects lists the machine's registry of Waytide projects
+
+Source: system/foundation/source/projects-lists-the-machines-registry-of-waytide-projects.md
+
+Trigger: When the engineer asks for the Waytide projects on this machine, as with `/projects`
+
+1. `/projects` lists the Waytide projects registered on this machine, from within any project. Run foundation's `read-consuming-projects.sh`, which reads `~/.config/waytide/consuming-projects.toml`, and print its report.
+2. Write no project's name into any file, and none into the project the session is in.
+3. List only. Do not change the registry, and act on no project listed. Where there is no registry, say so.
+
 # Record a rule's authorship in a provenance footer
 
 Source: system/foundation/source/record-a-rules-authorship-in-a-provenance-footer.md
@@ -1206,6 +1228,18 @@ Loading Waytide will take a few moments.
 55. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 56. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 57. The package set's absence is the ordinary case, not an omission.
+
+# The Waytide skills are delivered as a plugin named we
+
+Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-named-we.md
+
+Trigger: When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
+
+1. The skills reach a project as one skills-directory plugin, `.claude/skills/we/`, whose `.claude-plugin/plugin.json` names it `we`. A skill is typed `/we:<command>`, or `/<command>` where no other command claims the name.
+2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
+3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/we/` from the active packages' skills, leaving out a deactivated package's.
+4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
 
 # The work-sessions directory holds one record per work session
 
