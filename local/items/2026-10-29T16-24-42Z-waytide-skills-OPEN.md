@@ -165,6 +165,53 @@
 - `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` freewrite and record the result in a new item of that kind. The destination is chosen at the start, where `/freewrite end` otherwise asks whether the points become a new item or are appended to a recent one.
 - `/clarify` clarifies the previous answer, and then clarifies it again.
 
+## Amended — 2026-10-30: obsolete
+
+**The state Lapsed is renamed Obsolete, and every item takes it, a work item included.** `Lapse item` is `Obsolete item`, typed `/item obsolete`, and a piece of work takes it like any other item. This replaces `Lapse item` and the "no `Lapse item`" for a piece of work in the list above.
+
+## Amended — 2026-10-30: current
+
+**`/current` lists the current items: those Open, Active, or Suspended.** It is another wording of `/item list current`.
+
+**`/log-this` writes a log entry for the current work.** The engineer added it to the help text, under the log commands.
+
+## Amended — 2026-10-30: current-items
+
+**The command is `/current-items`, in place of `/current`.** It lists the Open, Active, and Suspended items, as `/item list current` does.
+
+## Amended — 2026-10-30: the phases command
+
+**`/phases` is a root command for the current implementation's phases, with these subcommands.**
+
+- `/phases` lists the phases in order and prints the current phase with emphasis.
+- `/phases current` prints the current phase, its goal, and its branch.
+- `/phases add <name>` adds a phase to the record, after the last one.
+- `/phases start` starts the next phase in the record's order: it creates the phase's branch from the implementation's branch, then states the phase's goal and lists the phases.
+- `/phases complete` concludes the current phase where it reaches no verdict, and merges its branch into the implementation's branch.
+- `/phases affirm`, `/phases refute`, and `/phases inconclusive` conclude the current phase where it reaches a verdict, on the engineer's declaration only. An affirmed phase merges into the implementation's branch.
+- `/phases help` prints this command's help.
+
+**The rules behind it** are the an-implementation-runs-on-a-branch-to-a-declared-end rule, for a phase's branch and its merge, and the a-phase-starts-by-stating-its-goal rule, for what is printed when a phase starts. Listing the phases on request has no rule yet, and is among the rules the slash-commands phase writes.
+
+**Whether a phase reaches a verdict is chosen for each phase, when it is added**, whatever its implementation's choice. The engineer settled this on 2026-10-30. The an-implementation-runs-on-a-branch-to-a-declared-end rule does not yet say so, and is amended with the rules the slash-commands phase writes.
+
+## Amended — 2026-10-30: phase
+
+**The command is `/phase`, singular, in place of `/phases`, with the same subcommands.** A bare `/phase` lists the phases with the current one emphasized.
+
+## Amended — 2026-10-30: the engineer's edits to phase and journal
+
+- **A bare `/phase` prints the current phase, its goal, and its branch**, as `/phase current` does. **`/phases` lists the phases in order, the current one emphasized.**
+- **`/phase refute`** concludes a phase whose proposition is not realized.
+- **A bare `/journal` writes a shared journal entry**, as `/journal new` and `/journal entry` do.
+- **`/journal publish-private`** moves a private entry to the shared journal, in place of `/journal move`, and requires confirmation.
+
+## Amended — 2026-10-30: journal list
+
+**`/journal list [<timespan>]` replaces `/journal timeline`.** It lists the journal's entries by date, all of them, or only those within the timespan given.
+
+**Not settled:** how a timespan is written, such as a date range or a phrase like "last week". The a-timeline-view-lists-every-journal-entry-by-its-datetime rule lists every entry, and is amended for the timespan with the rules the slash-commands phase writes.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -215,6 +262,20 @@ On 2026-10-29: "Another slash command: “/phases”. It lists the phases in ord
 
 On 2026-10-30, the engineer added to the help text: "/feature new with phases — Start a feature, asking for its phases", "/freewrite idea — Freewrite and record it in an idea item", "/freewrite observation — Freewrite and record it in an observation item", "/freewrite mistake — Freewrite and record it in a mistake item", and "/clarify — Clarify the previous answer, then clarify it again for good measure"
 
+On 2026-10-30: "Rename “lapse” to “obsolete”. And it should be applicable to all item categories, including work items."
+
+On 2026-10-30: "Add a “/current” command that lists current items". The engineer confirmed adding `/log-this` to the help text: "Write a log entry for the current work".
+
+On 2026-10-30: "Actually, it should be “/current-items”"
+
+On 2026-10-30: "Create a “/phases” root command. Add appropriate subcommands." Asked whether a phase's verdict follows its implementation's or is chosen per phase, the engineer selected that it is chosen per phase.
+
+On 2026-10-30: "Make “phases” singular: “phase”"
+
+On 2026-10-30, the engineer edited the help text: "/phase, /phase current — The current phase, its goal, and its branch", "/phases — List the phases, the current one emphasized", "/phase refute — -> Refuted (the phase's proposition is not realized)", "/journal, /journal new, /journal entry — Write a shared journal entry", and "/journal publish-private — Move a private entry to the shared journal (requires conformation)"
+
+On 2026-10-30: "“/journal timeline” should be “/journal list”. It should take an optional timespan"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -241,3 +302,10 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:51:07 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:24:41 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:54:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:10:04 AM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:50 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:15 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:53:58 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 1:59:17 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:34:21 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:42:03 PM PT
+Changed by Scott Bellware on Fri Oct 30 2026 at 3:49:26 PM PT
