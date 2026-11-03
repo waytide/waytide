@@ -1236,7 +1236,7 @@ Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-na
 
 Trigger: When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
 
-1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slash/`, whose `.claude-plugin/plugin.json` names it `slash`. A skill is typed `/slash:<command>`, as in `/slash:log`, or `/<command>` where no other command claims the name.
+1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slash/`, whose `.claude-plugin/plugin.json` gives `name` as `slash`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slash:<command>`, as in `/slash:log`, or `/<command>` where no other command claims the name.
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
 3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slash/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.

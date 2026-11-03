@@ -349,7 +349,8 @@ plugin_json() {
   cat <<'JSON'
 {
   "name": "slash",
-  "description": "Slasher"
+  "displayName": "Slasher",
+  "description": "The Slasher commands"
 }
 JSON
 }

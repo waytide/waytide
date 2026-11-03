@@ -86,7 +86,8 @@ control_manifest_text() {
   cat <<'MANIFEST'
 {
   "name": "slash",
-  "description": "Slasher"
+  "displayName": "Slasher",
+  "description": "The Slasher commands"
 }
 MANIFEST
 }
