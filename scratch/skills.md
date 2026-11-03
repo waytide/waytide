@@ -11,6 +11,8 @@ ITEMS
   /item new                        Create an item (tagged [idea] if untagged)
   /item idea, /idea                Create an item tagged [idea]
   /item work, /work, /work-item    Create an item tagged [work]
+  /item plan, /plan                Create an item tagged [plan]
+  /item design, /design            Create an item tagged [design]
   /item observation, /observation, /observe
                                    Record an observation
   /item mistake, /mistake          Create an item tagged [mistake]

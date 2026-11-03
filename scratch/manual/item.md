@@ -7,14 +7,15 @@ NAME
      item - record the project's thinking about what the work should be
 
 SYNOPSIS
-     /item new | idea | work | observation | mistake | problem
+     /item new | idea | work | plan | design | observation | mistake
+         | problem
      /item list <state>
      /item start | realize | done | defer | suspend | supersede
            | abandon | obsolete | reopen
      /item help
 
-     /idea, /work, /work-item, /observation, /observe, /mistake,
-     /problem, /list <state>, /current-items
+     /idea, /work, /work-item, /plan, /design, /observation, /observe,
+     /mistake, /problem, /list <state>, /current-items
 
 DESCRIPTION
      An item is one file in local/items/ holding a piece of the project's
@@ -33,6 +34,8 @@ SUBCOMMANDS
        new             An item, tagged [idea] if it has no other tag
        idea            An item tagged [idea]           (/idea)
        work            An item tagged [work]           (/work, /work-item)
+       plan            An item tagged [plan]           (/plan)
+       design          An item tagged [design]         (/design)
        observation     An observation                  (/observation, /observe)
        mistake         An item tagged [mistake]        (/mistake)
        problem         An item tagged [problem]        (/problem)
@@ -60,7 +63,10 @@ KINDS
      [observation]   A working hypothesis, not yet binding. Its state is
                      always Recorded, and it may be promoted to a rule.
      [work]          A piece of work to be done. It ends Done.
-     [mistake], [problem], [design], [plan], [aspiration]
+     [plan]          A sequence of work, with tasks stating behavior and
+                     no code.
+     [design]        Settled direction, recorded as dated resolutions.
+     [mistake], [problem], [aspiration]
                      Other kinds. The set is open.
 
 STATES
