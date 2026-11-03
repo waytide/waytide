@@ -1128,12 +1128,12 @@ Trigger: When planning to move content across a repository boundary, to restruct
 
 Source: system/foundation/source/the-startup-display-prints-once-per-session.md
 
-Trigger: When the engineer types `load waytide`, or when changing the startup display or its script
+Trigger: When the engineer types `load waytide` or `/load`, or when changing the startup display or its script
 
 1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
 2. The harness prints the four always-printed parts. The agent prints none of them.
-3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
-4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
+3. When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
+4. The display prints on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt. A session opened with any other request shows no display.
 5. The agent prints the package set, at the head of the response that carries the rule read.
 6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
@@ -1240,7 +1240,7 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
 3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slasher/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
-5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
 7. A bare `/slasher` prints every active skill's help together, in the order of the help text.
 

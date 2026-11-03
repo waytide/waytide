@@ -68,7 +68,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to somewhere, and with no upstream configured there is nowhere for it to be relative to. A branch that was never going to be pushed is ordinary, and calling it unpushed would be false. That does leave an upstream missing *by accident* unreported. It is a different fact from the one this segment names, and it is deliberately not folded in.
 
-- **A startup display.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure. It reads them from the the-startup-display-prints-once-per-session rule, which governs the display. It is printed once, on that command and on no other prompt.
+- **A startup display.** When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the title, the copyright and license, the loading line, and the figure. It reads them from the the-startup-display-prints-once-per-session rule, which governs the display. It is printed once, on that command and on no other prompt.
 
 The three are wired by a committed `.claude/settings.json` that `install.sh` places in the consuming project.
 
@@ -172,7 +172,7 @@ Keep the instruction naming the project's own `local/rules/` and `local/vocabula
 
 Keep it telling the agent not to print the startup display. Add no opt-out: these surfaces are not silenceable, and the read instruction is emitted every session. Keep the mark's art out of this hook: it belongs in the rule, where it is not a JSON literal.
 
-Keep the load command worded the same in the two channels. The notice tells the engineer to type `load waytide`. The instruction tells the agent that the command asks for the read and nothing more.
+Keep the load command worded the same in the two channels. The notice tells the engineer to type `load waytide`. The instruction tells the agent that the command asks for the read and nothing more. `/load` is the same command delivered as a skill, typed `/load` or `/slasher:load`. It asks for the same read and nothing more, and the hook prints the same display for it. It takes the read instruction from `session-start.sh instruction`, which prints the instruction alone, as plain text, so `/load` and `load waytide` follow one text.
 
 Keep the command the notice's **last** sentence, on a line of its own, with the loading-takes-a-moment caveat ahead of it. Keep the two blank lines. The first separates the notice's report from the closing ask, placed after any open-experiment and open-feature lines. The second separates the caveat from the command sentence.
 
@@ -246,7 +246,7 @@ To load them now, type: load waytide.
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
 18. This rule does not restate the directory list.
 19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
 20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
@@ -283,9 +283,9 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## The startup display
 
-1. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`.
+1. When the engineer types `load waytide` or `/load`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`.
 2. It prints the title, the copyright and license, the loading line, and the figure, read from the the-startup-display-prints-once-per-session rule.
-3. It prints them once, on that command only.
+3. It prints them once, on that command only. `/load` is that command.
 4. The agent does not print it.
 
 ## Wiring
@@ -324,8 +324,12 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-10-29, revised: the read instruction's ON DEMAND section, solubility 39 → 39, clarity 0.74 → 0.74; checked: 96 directives, 95 kept, 1 less precise, 0 lost, 1 repair
 - 2026-10-29, revised: the instruction after a compaction, solubility 39 → 39, clarity 0.74 → 0.74; checked: 101 directives, 100 kept, 1 less precise, 0 lost; the less precise directive, that the scripts enumerate the package directories, is untouched by this revision
 - 2026-10-29, revised: concluded states read the same for both kinds; checked: 74 directives, 66 kept, 5 less precise, 3 lost, 7 repairs to the read instruction; re-checked: 72 kept, 2 less precise, 0 lost, 1 repair; re-checked: 74 directives, 73 kept, 1 less precise, 0 lost. Left less precise: the compaction sentence's wording, which keeps what the agent does
+- 2026-11-03, revised: `/load` is the same command as `load waytide`; checked: 47 directives, 47 kept, 0 less precise, 0 lost
+- 2026-11-03, revised: `/load` takes the instruction from `session-start.sh instruction`; checked: 67 directives, 64 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the read instruction, like the close, reports no read; that other harnesses need equivalent glue; and why the mark is kept out of the hook
 
 ## History
+
+Until Tue Nov 3 2026 `load waytide` was the only command that asked for the read. `/load`, its skill, was added that day.
 
 Until Thu Oct 29 2026 the concluded states were read by kind: an experiment's verdict words, and a feature's Completed. The engineer settled that the verdict is chosen at the start whatever the kind, so the six concluding words are read the same for both.
 
@@ -440,3 +444,5 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:00 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 9:24:19 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:41:18 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 3:12:40 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 3:41:02 PM PT

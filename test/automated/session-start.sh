@@ -60,4 +60,12 @@ case "$set_output" in
   *) fail "With a package set declared, the read instruction says deactivated packages are listed, not printed" "output:" "$set_output" ;;
 esac
 
-echo "2 passed"
+# Prints the read instruction alone, as the hook emits it -------------------------
+
+control_instruction=$(printf '%s' "$set_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["hookSpecificOutput"]["additionalContext"])')
+
+instruction_output=$(cd "$project" && sh system/foundation/session-start.sh instruction < /dev/null)
+
+[ "$instruction_output" = "$control_instruction" ] || fail "Prints the read instruction alone, as the hook emits it" "output:" "$instruction_output"
+
+echo "3 passed"

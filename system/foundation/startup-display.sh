@@ -1,5 +1,5 @@
 #!/bin/sh
-# Print the Waytide startup display when the engineer types load waytide.
+# Print the Waytide startup display when the engineer types load waytide, or /load, its skill.
 #
 # Run by the harness as a UserPromptSubmit hook, not by the agent. The harness sends the
 # prompt as JSON on standard input, and renders the systemMessage this prints as its own
@@ -37,9 +37,12 @@ fi
 rule=$system/foundation/source/the-startup-display-prints-once-per-session.md
 [ -f "$rule" ] || exit 0
 
-# Only the exact command. The closing quote is what makes the match exact.
+# Only the exact command, or /load, its skill, typed bare or in the plugin's namespace. The closing
+# quote is what makes the match exact.
 case "$(cat)" in
   *'"prompt":"load waytide"'*|*'"prompt": "load waytide"'*) ;;
+  *'"prompt":"/load"'*|*'"prompt": "/load"'*) ;;
+  *'"prompt":"/slasher:load"'*|*'"prompt": "/slasher:load"'*) ;;
   *) exit 0 ;;
 esac
 

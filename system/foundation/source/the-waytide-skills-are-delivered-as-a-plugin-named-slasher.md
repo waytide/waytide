@@ -10,7 +10,7 @@
 
 **The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
 
-**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule.
+**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`.
 
 **Why:** a plugin gives the skills one namespace, so a clash with another plugin's command is kept apart. Carrying each skill in its package means a deactivated package's commands go with its rules, and the assembled directory means a project needs nothing beyond the packages to have them.
 
@@ -24,7 +24,7 @@
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
 3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slasher/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
-5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
 7. A bare `/slasher` prints every active skill's help together, in the order of the help text.
 
@@ -35,6 +35,7 @@
 - 2026-11-03, revised: the plugin is called Slasher and named slash; checked: 22 directives, 20 kept, 1 less precise, 1 lost, 0 repairs. Left less precise: the reason the directory is committed. Left lost: the reason one plugin is used, a shared namespace, which constrains nothing the one-plugin directive does not already require
 - 2026-11-03, revised: plugin.json gives `name` as the namespace and `displayName` as Slasher, the name shown; checked: 18 directives, 16 kept, 2 less precise, 0 lost, 0 repairs. Left less precise: the reason the directory is committed, and that assembling is done by copying, which assembling already requires
 - 2026-11-03, revised: the plugin is named slasher, a term swap the engineer settled; not re-checked
+- 2026-11-03, revised: a skill may run a script that prints its act's instruction; checked: 18 directives, 17 kept, 1 less precise, 0 lost. Left less precise: the name collision's scope on the machine, as in earlier checks
 
 ## History
 
@@ -56,3 +57,4 @@ Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 2:24:30 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 2:41:06 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 2:55:18 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 3:41:02 PM PT

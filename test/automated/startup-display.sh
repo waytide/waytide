@@ -57,4 +57,18 @@ display=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(s
 
 [ "$display" = "$control_display" ] || fail "Is the the-startup-display-prints-once-per-session's display, as plain text" "found:" "$display"
 
+# Prints the display on /load, the skill of load waytide -------------------------
+
+load_output=$(printf '{"prompt":"/load"}' | system/foundation/startup-display.sh)
+load_display=$(printf '%s' "$load_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
+
+[ "$load_display" = "$control_display" ] || fail "Prints the display on /load, the skill of load waytide" "found:" "$load_output"
+
+# Prints the display on /slasher:load ---------------------------------------------
+
+namespaced_output=$(printf '{"prompt":"/slasher:load"}' | system/foundation/startup-display.sh)
+namespaced_display=$(printf '%s' "$namespaced_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
+
+[ "$namespaced_display" = "$control_display" ] || fail "Prints the display on /slasher:load" "found:" "$namespaced_output"
+
 echo "0 failed, 0 aborted"

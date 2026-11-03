@@ -1,16 +1,16 @@
 # The startup display prints once per session
 
-**Trigger:** When the engineer types `load waytide`, or when changing the startup display or its script
+**Trigger:** When the engineer types `load waytide` or `/load`, or when changing the startup display or its script
 
 The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
-**The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
 **The script reads the four from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
-**The display prints on `load waytide` and on no other prompt.** A session opened with any other request shows no display. That is the cost of the hook acting only on the exact command.
+**The display prints on `load waytide` and on `/load`, and on no other prompt.** `/load` is the same command delivered as a skill, and the hook matches it as `/load` and as `/slasher:load`. A session opened with any other request shows no display. That is the cost of the hook acting only on the exact command.
 
 First the title, on its own:
 
@@ -127,8 +127,8 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
 2. The harness prints the four always-printed parts. The agent prints none of them.
-3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
-4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
+3. When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
+4. The display prints on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt. A session opened with any other request shows no display.
 5. The agent prints the package set, at the head of the response that carries the rule read.
 6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
@@ -236,10 +236,13 @@ Loading Waytide will take a few moments.
 - 2026-10-29, merge from master re-checked: 60 directives, 60 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-10-29, revised: master's line break ahead of the title is carried into the compressed text; not checked
 - 2026-10-29, merge from master re-checked: 61 directives, 60 kept, 1 less precise, 0 lost, 1 repair
+- 2026-11-03, revised: the display prints on `/load` as well; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 
 ## History
 
 The agent printed the four until 2026-10-10, at the head of the response that carried the rule read. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, and nothing reported either failure. That the harness renders blank lines and the figure's spacing exactly was confirmed in a session on 2026-10-10.
+
+Until Tue Nov 3 2026 the display printed on `load waytide` alone. `/load`, its skill, was added that day.
 
 The formulation *Agent harness and ally* sat under the title until 2026-08-23, when it was removed — first to the end of the load and then from the display altogether.
 
@@ -301,3 +304,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 6:57:20 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:35:51 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 3:12:40 PM PT

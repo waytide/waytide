@@ -11,9 +11,12 @@
 # Invocation:
 #
 #   waytide/system/foundation/session-start.sh
+#   waytide/system/foundation/session-start.sh instruction
 #
-# Nobody types that. install.sh wires it into .claude/settings.json as the SessionStart
-# hook command, and the harness runs it. The line is recorded because a script whose
+# Nobody types the first. The second prints the read instruction alone, as plain text, and is
+# run by the /load skill, so /load follows the same text load waytide acts on rather than a copy.
+# install.sh wires the first into .claude/settings.json as the SessionStart hook command,
+# and the harness runs it. The line is recorded because a script whose
 # invocation is not written down is one nobody can reproduce when the wiring breaks.
 
 # Never let a notice break a session start.
@@ -311,6 +314,13 @@ if [ -n "$declaration" ]; then
 
     instruction="${instruction}${set_instruction}"
   fi
+fi
+
+# The read instruction alone, for /load. It is the instruction a session start carries, with no
+# compaction preface, since /load is typed rather than run after a compaction.
+if [ "$1" = "instruction" ]; then
+  printf '%s\n' "$instruction"
+  exit 0
 fi
 
 # On a compaction, the rules read at the start survive only as the compaction's summary. The
