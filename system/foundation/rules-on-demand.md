@@ -207,6 +207,11 @@ A list of items takes the ordinal and no SHA columns:
 13. Do not add a column nobody asked for.
 14. A list of commits takes no SHA columns.
 
+## Listing items by state
+
+1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
+2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
+
 ## Keep every column short
 
 1. Keep every column short.
