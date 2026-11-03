@@ -10,7 +10,7 @@ Trigger: When running or writing a Waytide slash command
 4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
 5. Every root command takes `help`, which prints that command's part of the help text.
 6. `help` is always the subcommand, never an argument. `/reserve help` prints help, and does not reserve the word "help".
-7. A subcommand that is not the command's own is not guessed at. The command says so, and asks which one is meant, through the selection interface.
+7. A subcommand that is not the command's own is not guessed at. The command says so, and asks which one is meant, through the selection interface. Where the command's help gives it words of its own, as `/log <message>` does, a first word that is not a subcommand starts those words. `/log The cart keeps its contents for 30 days` writes that entry, and `/log summary` still summarizes.
 8. A command's skill only reads the words typed, and hands the act to the rule that governs it. That rule says what the act is. This rule does not, and governs only how a command is typed and how its words are read.
 
 # A date in a record's title is written as the day, the date, and the 24-hour time
