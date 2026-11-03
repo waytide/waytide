@@ -10,6 +10,8 @@
 - what the name reaches: the repositories, the packages' paths, the `waytide/` directory in a consuming project, `~/.config/waytide/`, the skills namespace, and the prose
 - whether the change is planned as a migration, which the migration rule makes a renamed norm across repositories
 
+**It supersedes `2026-10-30T06-12-44Z-waytide-is-renamed-slasher`**, a duplicate of the same idea.
+
 ## Settled
 
 - **2026-11-03** — The product's main domain is `slasher.bot`.
@@ -25,3 +27,4 @@ On 2026-11-03, of `slasher.tools` and `slasher.bot`: "Slasher.bot has a cool fac
 
 Authored by Scott Bellware on Fri Oct 30 2026 at 11:25:28 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 11:49:57 AM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 12:09:14 PM PT
