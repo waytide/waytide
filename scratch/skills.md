@@ -11,6 +11,10 @@ ITEMS
   /item new                        Create an item (tagged [idea] if untagged)
   /item idea, /idea                Create an item tagged [idea]
   /item work, /work, /work-item    Create an item tagged [work]
+  /item plan, /plan                Create an item tagged [plan]
+  /item design, /design            Create an item tagged [design]
+  /item aspiration, /aspiration    Create an item tagged [aspiration]
+  /item goal, /goal                Create an item tagged [goal]
   /item observation, /observation, /observe
                                    Record an observation
   /item mistake, /mistake          Create an item tagged [mistake]
@@ -109,6 +113,9 @@ FREEWRITING
                                    item
   /freewrite mistake               Freewrite and record it in a mistake item
   /freewrite help                  Print this command's help
+
+  /freeform is an alias of /freewrite, with the same
+  subcommands.
 
 TESTS
   /test                            Run the automated suite
