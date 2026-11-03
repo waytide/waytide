@@ -309,11 +309,12 @@ place_settings_json() {
   warn_ignored_settings_json
 }
 
-# Assemble the we plugin in .claude/skills/we/ from the skills the packages carry, each as
-# skills/<command>/ in its package. The plugin is assembled, never edited: a skill is changed
-# in its package, so the directory is rebuilt whole each time and nothing in it is kept.
+# Assemble the slash plugin, Slasher, in .claude/skills/slash/ from the skills the packages
+# carry, each as skills/<command>/ in its package. The plugin is assembled, never edited: a
+# skill is changed in its package, so the directory is rebuilt whole each time and nothing in
+# it is kept.
 place_skills() {
-  plugin=.claude/skills/we
+  plugin=.claude/skills/slash
 
   # A deactivated package's skills go with it. The packages are read from the latest package
   # set's Inactive line, as load-rules.sh reads them.
@@ -343,12 +344,12 @@ place_skills() {
   plugin_json > "$plugin/.claude-plugin/plugin.json"
 }
 
-# The manifest that names the plugin, and so the namespace its skills are typed under: /we:log.
+# The manifest that names the plugin, and so the namespace its skills are typed under: /slash:log.
 plugin_json() {
   cat <<'JSON'
 {
-  "name": "we",
-  "description": "The Waytide commands"
+  "name": "slash",
+  "description": "Slasher"
 }
 JSON
 }

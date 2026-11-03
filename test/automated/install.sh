@@ -85,8 +85,8 @@ HELP
 control_manifest_text() {
   cat <<'MANIFEST'
 {
-  "name": "we",
-  "description": "The Waytide commands"
+  "name": "slash",
+  "description": "Slasher"
 }
 MANIFEST
 }
@@ -139,21 +139,21 @@ design_item=$(cat "$project/waytide/local/items/$control_design_name")
 
 # Places a package's skills in the plugin -------------------------------------
 
-skill=$(cat "$project/.claude/skills/we/skills/some-command/SKILL.md" 2>/dev/null || true)
-help=$(cat "$project/.claude/skills/we/skills/some-command/help.md" 2>/dev/null || true)
+skill=$(cat "$project/.claude/skills/slash/skills/some-command/SKILL.md" 2>/dev/null || true)
+help=$(cat "$project/.claude/skills/slash/skills/some-command/help.md" 2>/dev/null || true)
 
 [ "$skill" = "$(control_skill_text)" ] || fail "Places a package's skills in the plugin" "SKILL.md found:" "$skill"
 [ "$help" = "$(control_help_text)" ] || fail "Places a package's skills in the plugin" "help.md found:" "$help"
 
-# Names the plugin we ----------------------------------------------------------
+# Names the plugin slash -------------------------------------------------------
 
-manifest=$(cat "$project/.claude/skills/we/.claude-plugin/plugin.json" 2>/dev/null || true)
+manifest=$(cat "$project/.claude/skills/slash/.claude-plugin/plugin.json" 2>/dev/null || true)
 
-[ "$manifest" = "$(control_manifest_text)" ] || fail "Names the plugin we" "plugin.json found:" "$manifest"
+[ "$manifest" = "$(control_manifest_text)" ] || fail "Names the plugin slash" "plugin.json found:" "$manifest"
 
 # Leaves out a deactivated package's skills ------------------------------------
 
-deactivated_skill="$project/.claude/skills/we/skills/some-other-command"
+deactivated_skill="$project/.claude/skills/slash/skills/some-other-command"
 
 [ ! -e "$deactivated_skill" ] || fail "Leaves out a deactivated package's skills" "present:" "some-other-command"
 
