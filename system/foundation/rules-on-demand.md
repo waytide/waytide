@@ -162,12 +162,14 @@ Trigger: When writing a log entry that records a decision
 
 Source: system/foundation/source/a-phase-starts-by-stating-its-goal.md
 
-Trigger: When starting a phase of an experiment or a feature
+Trigger: When starting a phase of an experiment or a feature, or when the engineer asks for the current phase or the list of phases
 
 1. At the start of an experiment's or a feature's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
 2. The goal is the phase's question or intent, whichever it has, whatever the kind. For a question, it is what the phase is to establish. For an intent, it is what the phase is to build. Say how it serves the implementation's question or intent.
 3. List the implementation's phases with it, in the order the record names them, and mark the current phase, so the engineer sees which phases are done and which are still to come.
 4. State the goal and the list at each phase's start, not only when the record is written. The record's naming of the phases, and a phase's forecast, do not stand in for them.
+5. When the engineer asks for the current phase, as with `/phase` or `/phase current`, print its goal and its branch.
+6. When the engineer asks for the phases, as with `/phases`, list them in the record's order, with the current phase emphasized.
 
 # A printed list of records is formatted as a table or as a list of rows
 
@@ -508,15 +510,15 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 
 1. An experiment or a feature may run in phases. Each phase is a question or an intent that serves the implementation's.
 2. The record names the phases and their order at the start.
-3. Work that reaches a verdict states each phase's forecast before its work. Work without one states none.
+3. Whether a phase reaches a verdict is chosen for that phase when it is added, whatever its implementation chose. A phase that reaches a verdict states its forecast before its work. One without states none.
 4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
 7. A phase branches from the implementation's branch and concludes into it.
-8. Where the work reaches a verdict, a phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+8. Where the phase reaches a verdict, it is affirmed, refuted, or inconclusive only on the engineer's declaration.
 9. An affirmed phase merges back into the implementation's branch.
 10. The record carries each phase's verdict and findings.
-11. Where the work reaches no verdict, a phase concludes Completed, with no verdict, and merges back into the implementation's branch.
+11. Where the phase reaches no verdict, it concludes Completed, with no verdict, and merges back into the implementation's branch.
 12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
 13. A phase merges nowhere else.
 14. The implementation concludes after its phases, and only then merges to its upstream branch.
