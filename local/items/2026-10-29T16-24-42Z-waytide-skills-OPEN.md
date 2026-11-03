@@ -228,6 +228,15 @@
 
 **`current` is Open and Active together, and no longer includes Suspended.** `/item list current` and `/current-items` list the Open and Active items.
 
+## Amended — 2026-11-02: process
+
+**`/next` proceeds to the next step in the current multi-step process, and `/next?` shows what that step is without taking it.** The engineer added them to the help text, in a section named PROCESS.
+
+**Not settled:**
+
+- what counts as a multi-step process, and where its steps come from, such as a plan's tasks or an implementation's phases. No rule says so yet, and one is written with the other missing rules.
+- whether `/next?` is an allowed skill name. A `?` may not be, and the name is checked when the skills are built.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -300,6 +309,8 @@ On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
 
 On 2026-11-02: "Remove suspended from current"
 
+On 2026-11-02, the engineer added to the help text: "/next — Proceed to the next step in the current multi-step process" and "/next? — The next step in the current multi-step process". Offered other names for /next?, the engineer chose to keep /next?.
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -337,3 +348,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 6:19:18 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:20:57 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:25 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 8:20:03 PM PT
