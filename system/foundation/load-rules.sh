@@ -5,7 +5,8 @@
 #
 #   waytide/system/foundation/load-rules.sh     in a consuming project
 #   system/foundation/load-rules.sh             in the Waytide authoring source
-#   system/foundation/load-rules.sh <rule-name> one on-demand rule, when its trigger comes up
+#   system/foundation/load-rules.sh <rule-name> one rule, on-demand when its trigger comes up, or
+#                                               pre-loaded when a skill hands its act to the rule
 #
 # The order is fixed: foundation's pre-loaded rules, the triggers of its on-demand rules, and its
 # vocabulary; then each other package's, in name order; then the project's local rules, in name
@@ -24,19 +25,19 @@ else
   local=local
 fi
 
-# Given a rule's name, print that on-demand rule's entry alone: its title, source, trigger, and
-# compressed text.
+# Given a rule's name, print that rule's entry alone: its title, source, any trigger, and its
+# compressed text. The on-demand rules are searched, then the pre-loaded ones.
 if [ -n "$1" ] && [ "$1" != "--package" ]; then
   awk -v name="$1" '
     function flush() {
       if (found) { while (n > 0 && entry[n] == "") n--; for (i = 1; i <= n; i++) print entry[i]; done = 1 }
       n = 0; found = 0
     }
-    /^# / { flush() }
+    FNR == 1 || /^# / { flush() }
     { entry[++n] = $0 }
     /^Source: / { k = split($2, parts, "/"); if (parts[k] == name ".md") found = 1 }
     END { flush(); if (!done) exit 1 }
-  ' "$system"/*/rules-on-demand.md 2>/dev/null || { echo "No on-demand rule named $1" >&2; exit 1; }
+  ' "$system"/*/rules-on-demand.md "$system"/*/rules-pre-loaded.md 2>/dev/null || { echo "No rule named $1" >&2; exit 1; }
   exit 0
 fi
 

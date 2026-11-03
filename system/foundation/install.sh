@@ -309,6 +309,50 @@ place_settings_json() {
   warn_ignored_settings_json
 }
 
+# Assemble the we plugin in .claude/skills/we/ from the skills the packages carry, each as
+# skills/<command>/ in its package. The plugin is assembled, never edited: a skill is changed
+# in its package, so the directory is rebuilt whole each time and nothing in it is kept.
+place_skills() {
+  plugin=.claude/skills/we
+
+  # A deactivated package's skills go with it. The packages are read from the latest package
+  # set's Inactive line, as load-rules.sh reads them.
+  declaration=$(ls waytide/local/*-package-set.md 2>/dev/null | sort | tail -1)
+  deactivated=
+  if [ -n "$declaration" ]; then
+    deactivated=$(sed -n 's|^[[:space:]]*-\{0,1\}[[:space:]]*\*\*Inactive:\*\*[[:space:]]*\(.*\)$|\1|p' "$declaration" |
+      head -1 | tr ',' '\n' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | grep -v '^none$' || true)
+  fi
+
+  rm -rf "$plugin"
+
+  for skill in waytide/system/*/skills/*/; do
+    [ -f "${skill}SKILL.md" ] || continue
+    package=${skill#waytide/system/}
+    package=${package%%/*}
+    if printf '%s\n' "$deactivated" | grep -qx "$package"; then
+      continue
+    fi
+    mkdir -p "$plugin/skills"
+    cp -R "${skill%/}" "$plugin/skills/"
+  done
+
+  [ -d "$plugin/skills" ] || return 0
+
+  mkdir -p "$plugin/.claude-plugin"
+  plugin_json > "$plugin/.claude-plugin/plugin.json"
+}
+
+# The manifest that names the plugin, and so the namespace its skills are typed under: /we:log.
+plugin_json() {
+  cat <<'JSON'
+{
+  "name": "we",
+  "description": "The Waytide commands"
+}
+JSON
+}
+
 # Rename a project's waytide/local/sessions/ to waytide/local/work-sessions/. The
 # directory carried the bare name sessions/ until 2026-07-30, when it was renamed for
 # what a session is here — a work session. A rule change names the new directory but
@@ -438,6 +482,7 @@ fi
 place_agents_md
 place_claude_md
 place_settings_json
+place_skills
 
 # 3. Carry a project's own working state across the directory renames a rule change
 #    cannot reach.

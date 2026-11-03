@@ -97,6 +97,36 @@ rule_output=$(cd "$project" && system/foundation/load-rules.sh c-rule)
 
 [ "$rule_output" = "$(control_rule_entry)" ] || fail "Prints the named on-demand rule" "output:" "$rule_output"
 
+# Prints the named pre-loaded rule -----------------------------------------------
+
+cat > "$project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+
+# Some rule f
+
+Source: system/sample/source/f-rule.md
+
+1. some-directive-f
+RULES
+
+control_pre_loaded_rule_entry() {
+  cat <<'RULE'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+RULE
+}
+
+pre_loaded_rule_output=$(cd "$project" && system/foundation/load-rules.sh e-rule 2>&1 || true)
+
+[ "$pre_loaded_rule_output" = "$(control_pre_loaded_rule_entry)" ] || fail "Prints the named pre-loaded rule" "output:" "$pre_loaded_rule_output"
+
 # Prints a deactivated package's name and the command that loads it, in place of its rules ------
 
 set_project=$(mktemp -d)
@@ -236,4 +266,4 @@ compressed_output=$(cd "$compressed_project" && system/foundation/load-rules.sh)
 
 [ "$compressed_output" = "$(control_compressed_output)" ] || fail "Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file" "output:" "$compressed_output"
 
-echo "5 passed"
+echo "6 passed"
