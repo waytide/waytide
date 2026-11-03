@@ -13,6 +13,8 @@ ITEMS
   /item work, /work, /work-item    Create an item tagged [work]
   /item plan, /plan                Create an item tagged [plan]
   /item design, /design            Create an item tagged [design]
+  /item aspiration, /aspiration    Create an item tagged [aspiration]
+  /item goal, /goal                Create an item tagged [goal]
   /item observation, /observation, /observe
                                    Record an observation
   /item mistake, /mistake          Create an item tagged [mistake]
