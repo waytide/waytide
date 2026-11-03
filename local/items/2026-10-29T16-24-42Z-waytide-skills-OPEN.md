@@ -224,6 +224,10 @@
 
 **`/freeform` is another wording of `/freewrite`, taking the same subcommands.** The commands keep the name freewrite.
 
+## Amended — 2026-11-02: current without suspended
+
+**`current` is Open and Active together, and no longer includes Suspended.** `/item list current` and `/current-items` list the Open and Active items.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -294,6 +298,8 @@ On 2026-11-02, offered tags for item subcommands, the engineer selected "aspirat
 
 On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
 
+On 2026-11-02: "Remove suspended from current"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 9:24:42 AM PT
@@ -330,3 +336,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 3:49:26 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:19:18 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:20:57 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:25 PM PT
