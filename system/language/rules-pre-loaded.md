@@ -73,6 +73,12 @@ For more detail than bullet points, ask for an expanded answer.
 9. Two stricter forms are not adopted: appending the line to every list answer, or appending it above a length threshold.
 10. Either stricter form may be adopted if the judgment proves unreliable in use.
 
+## Expanding an answer
+
+1. `/expand` gives the previous answer at more length, adding the detail compressed out of it: the reasoning, the figures, and the examples.
+2. It says the same thing, with no claim changed, and is still led by its point.
+3. It is a list where its items are facts, with prose where reasoning runs from one step to the next.
+
 # Communicate plainly, and name the actual thing
 
 Source: system/language/source/communicate-plainly-and-name-the-actual-thing.md

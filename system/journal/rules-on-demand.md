@@ -130,7 +130,7 @@ Trigger: When writing a journal entry (including when the writer opens with "new
 
 Source: system/journal/source/private-journal-convention.md
 
-Trigger: When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal
+Trigger: When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal, as with `/journal publish-private`
 
 1. A private journal is a journal kept outside the project's repository. Its entries are not committed with the project.
 2. A journal in `waytide/local/journal/<username>/` is the shared journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
@@ -166,6 +166,11 @@ Trigger: When the writer starts a private journal entry, directs a change to one
 
 1. Private means kept out of the project's repository and out of the session-start read, and nothing more.
 2. It does not keep an entry on the machine. An entry the agent writes or reads is plain text in the session, and reaches the model provider, the local transcript, and any deployed hook.
+
+## Confirming a move
+
+1. `/journal publish-private` moves a private entry to the shared journal only after the engineer confirms it.
+2. Name the entry and ask, through the selection interface, whether to move it, since the move publishes it to every reader of the repository.
 
 # The journal is the record the writer keeps
 

@@ -16,6 +16,8 @@
 
 **How to apply:** write a skill in its package's `skills/<command>/SKILL.md`, thin, handing its act to a rule. Assemble `.claude/skills/we/` from the active packages' skills at install and refresh, with `plugin.json` naming `we`, and commit it. Edit no skill in the assembled directory.
 
+**Each skill carries its own help**, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it. A bare `/we` prints every active skill's help together, in the order of the help text.
+
 ## Compressed
 
 1. The skills reach a project as one skills-directory plugin, `.claude/skills/we/`, whose `.claude-plugin/plugin.json` names it `we`. A skill is typed `/we:<command>`, or `/<command>` where no other command claims the name.
@@ -23,10 +25,17 @@
 3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/we/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
+6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
+7. A bare `/we` prints every active skill's help together, in the order of the help text.
 
 ## Compression
 
 - 2026-11-02, compressed: checked: 18 directives, 16 kept, 2 less precise, 0 lost, 1 repair; re-checked: 18 directives, 16 kept, 2 less precise, 0 lost. Left less precise: the reason the assembled directory is committed, and when a changed skill reaches the plugin, which follows from the assembly point
+- 2026-11-03, revised: each skill carries its own help; checked: 18 directives, 16 kept, 2 less precise, 0 lost. Left less precise: the name collision's scope on the machine, and the reason the directory is committed
+
+## History
+
+Until Mon Nov 2 2026 no rule said where a skill's help came from.
 
 Related:
 
@@ -36,3 +45,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Nov 2 2026 at 9:02:21 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT

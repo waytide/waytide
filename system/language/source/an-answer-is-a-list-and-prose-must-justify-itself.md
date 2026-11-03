@@ -67,6 +67,10 @@ Test each survivor by whether it could be false. Number the list where its list 
 
 Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left something out, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the answer says all it has.
 
+## Expanding an answer
+
+**`/expand` gives the previous answer at more length: the detail that was compressed out of it.** It says the same thing the answer said, with no claim changed, and adds the reasoning, the figures, and the examples the list left out. It is still led by its point, and still a list where its items are facts, with prose where reasoning runs from one step to the next.
+
 ## Compressed
 
 1. An answer to the engineer is a list.
@@ -122,12 +126,21 @@ For more detail than bullet points, ask for an expanded answer.
 9. Two stricter forms are not adopted: appending the line to every list answer, or appending it above a length threshold.
 10. Either stricter form may be adopted if the judgment proves unreliable in use.
 
+## Expanding an answer
+
+1. `/expand` gives the previous answer at more length, adding the detail compressed out of it: the reasoning, the figures, and the examples.
+2. It says the same thing, with no claim changed, and is still led by its point.
+3. It is a list where its items are facts, with prose where reasoning runs from one step to the next.
+
 ## Compression
 
 - 2026-10-24, compressed: compression 0.49, change 0.71, solubility 25 → 53, clarity 0.41 → 0.78, 22 directives, 22 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.78 → 0.78; checked: 22 directives, 22 kept, 0 less precise, 0 lost
+- 2026-11-03, revised: /expand gives the previous answer at more length; checked: 29 directives, 28 kept, 1 less precise, 0 lost. Left less precise, from before this change: the detail behind a sentence or two taking no list
 
 ## History
+
+Until Mon Nov 2 2026 an answer offered an expansion, and no rule said what the expansion gave.
 
 Until Sun Oct 25 2026 this rule was titled "An answer is a list. Prose must justify itself".
 
@@ -162,3 +175,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:07 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT

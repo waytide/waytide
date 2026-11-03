@@ -162,7 +162,7 @@ Trigger: When writing a log entry that records a decision
 
 Source: system/foundation/source/a-phase-starts-by-stating-its-goal.md
 
-Trigger: When starting a phase of an experiment or a feature, or when the engineer asks for the current phase or the list of phases
+Trigger: When starting a phase of an experiment or a feature, or when the engineer asks for the current phase or the list of phases, as with `/experiment status` or `/feature status`
 
 1. At the start of an experiment's or a feature's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
 2. The goal is the phase's question or intent, whichever it has, whatever the kind. For a question, it is what the phase is to establish. For an intent, it is what the phase is to build. Say how it serves the implementation's question or intent.
@@ -170,6 +170,7 @@ Trigger: When starting a phase of an experiment or a feature, or when the engine
 4. State the goal and the list at each phase's start, not only when the record is written. The record's naming of the phases, and a phase's forecast, do not stand in for them.
 5. When the engineer asks for the current phase, as with `/phase` or `/phase current`, print its goal and its branch.
 6. When the engineer asks for the phases, as with `/phases`, list them in the record's order, with the current phase emphasized.
+7. `/experiment status` and `/feature status` print the phases in the record's order, the current one emphasized, and the current phase's goal. Without phases, they print the implementation's question or intent, and its state.
 
 # A printed list of records is formatted as a table or as a list of rows
 
@@ -1240,6 +1241,8 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/we/` from the active packages' skills, leaving out a deactivated package's.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it.
+6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
+7. A bare `/we` prints every active skill's help together, in the order of the help text.
 
 # The work-sessions directory holds one record per work session
 

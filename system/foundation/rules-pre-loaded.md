@@ -154,6 +154,12 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 4. Then say that the deactivated packages' rules stay in force for this session.
 5. Also say that Claude must be restarted for those rules to stop applying.
 
+## Activating or deactivating one package
+
+1. `/package activate <package>` and `/package deactivate <package>` write a new declaration that changes the set by one package.
+2. Its `**Package set:**` line names the earlier set and the change, as `content, +testing` or `default, -design-by-efferent`. Its `**Packages:**` and `**Inactive:**` lines record what that resolves to.
+3. A package already in the state asked for is left as it is, and nothing is written.
+
 # A project does not name its downstream consumers in its own files
 
 Source: system/foundation/source/a-project-does-not-name-its-downstream-consumers-in-its-own-files.md
@@ -539,6 +545,12 @@ Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-lin
 5. For a readable overview, generate a summary of the log at read time instead.
 6. Never write that summary to a file.
 7. Give it in the response instead.
+
+## Log this
+
+1. `/log-this` writes a log entry for the work the conversation is on. State as its title the decision or finding the work has just reached, with a body where the reasoning will not fit.
+2. Where nothing has been reached, say so and write nothing. Where it is unclear which decision is meant, ask, through the selection interface.
+3. The entry follows every convention of an entry the engineer dictates.
 
 # When the work diverges from the plan, the work is definitive
 
