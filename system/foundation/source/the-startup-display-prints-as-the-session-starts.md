@@ -1,16 +1,16 @@
-# The startup display prints once per session
+# The startup display prints as the session starts
 
 **Trigger:** When the engineer types `load waytide` or `/load`, or when changing the startup display or its script
 
-The things below are printed once per session, verbatim. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
+The things below are printed as the session starts, verbatim, and printed again when the engineer types `load waytide` or `/load`. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
 
-**The harness prints the four, and the agent prints none of them.** When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the four, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints them ahead of the session-start notice, in the one `systemMessage`. It takes them from `startup-display.sh message`, which prints the display alone. When the engineer types `load waytide`, or `/load`, its skill, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
 **The script reads the four from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
-**The display prints on `load waytide` and on `/load`, and on no other prompt.** `/load` is the same command delivered as a skill, and the hook matches it as `/load` and as `/slasher:load`. A session opened with any other request shows no display. That is the cost of the hook acting only on the exact command.
+**After the session start, the display prints again on `load waytide` and on `/load`, and on no other prompt.** `/load` is the same command delivered as a skill, and the hook matches it as `/load` and as `/slasher:load`. Any other prompt prints no display, because the hook acts only on the exact command.
 
 First the title, on its own:
 
@@ -89,9 +89,9 @@ Then **one blank line**, then the block:
 
 **These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one part that is not always present, and its absence is the ordinary case rather than an omission.
 
-**The loading line says what the wait is.** The display is printed when the engineer types `load waytide`, and the response that follows loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
+**The loading line says what the wait is.** The display is printed as the session starts and when the engineer types `load waytide`, and the response that carries the read loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
 
-**It repeats the session-start notice's caveat deliberately, and the two are read at different moments.** The notice says *Loading the rules will take a few moments* **before** the engineer types `load waytide`. It is one of the two facts they weigh in deciding to type it. This line is read **after** they have, while the wait is happening.
+**It repeats the session-start notice's caveat deliberately.** As the session starts, the two are in one message: this line in the display, and the notice's *Loading the rules will take a few moments* below it, one of the two facts the engineer weighs in deciding to type `load waytide`. When the engineer types it, this line is printed again, and read while the wait is happening.
 
 The first informs a decision. The second explains a pause. Duplication costs where one fact is stated twice to one reader. This is one fact stated to a reader in two different positions, and removing either leaves that position uncovered.
 
@@ -125,10 +125,10 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 ## Compressed
 
-1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
+1. Five parts are printed as the session starts, verbatim, and again on `load waytide` or `/load`. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
 2. The harness prints the four always-printed parts. The agent prints none of them.
-3. When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
-4. The display prints on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt. A session opened with any other request shows no display.
+3. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints them ahead of the session-start notice, in one `systemMessage`, taking them from `startup-display.sh message`, which prints the display alone. On `load waytide`, or `/load`, its skill, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again as a `systemMessage`.
+4. After the session start, the display prints again on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt.
 5. The agent prints the package set, at the head of the response that carries the rule read.
 6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
@@ -198,8 +198,8 @@ Copyright © 2026 Scott Bellware
 Loading Waytide will take a few moments.
 ```
 
-50. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response loads every installed package's rules.
-51. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
+50. The loading line says *Waytide* rather than *the rules*. It names the wait for the read, while the response that carries it loads every installed package's rules.
+51. The loading line deliberately repeats the session-start notice's caveat, which follows it in the same message as the session starts. Neither statement is removed.
 52. Then one blank line, then the block:
 
 ```
@@ -237,12 +237,13 @@ Loading Waytide will take a few moments.
 - 2026-10-29, revised: master's line break ahead of the title is carried into the compressed text; not checked
 - 2026-10-29, merge from master re-checked: 61 directives, 60 kept, 1 less precise, 0 lost, 1 repair
 - 2026-11-03, revised: the display prints on `/load` as well; checked: 46 directives, 46 kept, 0 less precise, 0 lost
+- 2026-11-04, revised: the display prints as the session starts, from the plugin's hook, and again on the load command; checked: 54 directives, 51 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 54 directives, 53 kept, 1 less precise, 0 lost. Left less precise: the reason the agent prints none of the four, which the Why points removed on 2026-10-28 already left out
 
 ## History
 
-The agent printed the four until 2026-10-10, at the head of the response that carried the rule read. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, and nothing reported either failure. That the harness renders blank lines and the figure's spacing exactly was confirmed in a session on 2026-10-10.
+Until Tue Nov 3 2026 the rule was named the-startup-display-prints-once-per-session, and the display printed only on `load waytide`, and from that day on `/load`, through a `UserPromptSubmit` hook in `.claude/settings.json`. A session opened with any other request showed no display. The hooks moved into the Slasher plugin, and the display came to print as the session starts, ahead of the notice.
 
-Until Tue Nov 3 2026 the display printed on `load waytide` alone. `/load`, its skill, was added that day.
+The agent printed the four until 2026-10-10, at the head of the response that carried the rule read. Under a later model they stopped reaching the engineer: the agent skipped them, or wrote them into its thinking, and nothing reported either failure. That the harness renders blank lines and the figure's spacing exactly was confirmed in a session on 2026-10-10.
 
 The formulation *Agent harness and ally* sat under the title until 2026-08-23, when it was removed — first to the end of the load and then from the display altogether.
 
@@ -305,3 +306,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 6:57:20 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:35:51 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 3:12:40 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT

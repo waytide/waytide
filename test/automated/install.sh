@@ -92,6 +92,17 @@ control_manifest_text() {
 MANIFEST
 }
 
+control_settings_text() {
+  cat <<'SETTINGS'
+{
+  "statusLine": {
+    "type": "command",
+    "command": "waytide/system/foundation/statusline.sh"
+  }
+}
+SETTINGS
+}
+
 control_no_kind_name=2026-01-01T00-00-00Z-some-item-OPEN.md
 control_other_tag_name=2026-01-01T00-00-01Z-some-other-item-OPEN.md
 control_design_name=2026-01-01T00-00-02Z-some-design-ACTIVE.md
@@ -100,6 +111,9 @@ mkdir -p "$project/waytide/local/ideas"
 control_no_kind_text > "$project/waytide/local/ideas/$control_no_kind_name"
 control_other_tag_text > "$project/waytide/local/ideas/$control_other_tag_name"
 control_design_text > "$project/waytide/local/ideas/$control_design_name"
+
+mkdir -p "$project/waytide/system/foundation"
+cp -R system/foundation/plugin "$project/waytide/system/foundation/"
 
 control_skill_dir="$project/waytide/system/some-package/skills/some-command"
 mkdir -p "$control_skill_dir"
@@ -157,5 +171,18 @@ manifest=$(cat "$project/.claude/skills/slasher/.claude-plugin/plugin.json" 2>/d
 deactivated_skill="$project/.claude/skills/slasher/skills/some-other-command"
 
 [ ! -e "$deactivated_skill" ] || fail "Leaves out a deactivated package's skills" "present:" "some-other-command"
+
+# Carries the session-start hooks in the plugin ----------------------------------
+
+hooks=$(cat "$project/.claude/skills/slasher/hooks/hooks.json" 2>/dev/null || true)
+control_hooks=$(cat system/foundation/plugin/hooks/hooks.json)
+
+[ "$hooks" = "$control_hooks" ] || fail "Carries the session-start hooks in the plugin" "hooks.json found:" "$hooks"
+
+# Places a settings.json carrying only the status line ---------------------------
+
+settings=$(cat "$project/.claude/settings.json" 2>/dev/null || true)
+
+[ "$settings" = "$(control_settings_text)" ] || fail "Places a settings.json carrying only the status line" "settings.json found:" "$settings"
 
 echo "0 failed, 0 aborted"

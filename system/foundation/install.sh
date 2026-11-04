@@ -3,9 +3,9 @@
 # Foundation is standalone, but it owns the bootstrap: this script places the
 # project-root AGENTS.md that makes waytide/system/, waytide/local/rules/, and
 # waytide/local/vocabulary.md get read at session start,
-# a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a
-# .claude/settings.json whose SessionStart hook and status line print the session-start
-# notice.
+# a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), the Slasher plugin
+# in .claude/skills/slasher/, whose SessionStart hook prints the startup display and the
+# session-start notice, and a .claude/settings.json whose status line keeps the system on screen.
 # Run from the root of the consuming project. This script lives inside the package it
 # installs, so once foundation is present it is invoked by its path from that root — not
 # as `./install.sh`, which would name a file in the project root that is not there.
@@ -67,7 +67,7 @@ Read `waytide/system/foundation/` first; it defines the system. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
-`SessionStart` hook in `.claude/settings.json` runs
+`SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
 actually present and emits the `Waytide installed at … — N packages: …` notice, closing
 with a line telling the engineer to type `load waytide` — the command that asks for the
@@ -175,33 +175,12 @@ place_claude_md() {
   fi
 }
 
-# The .claude/settings.json content that makes the harness print the session-start notice and,
-# on load waytide, the startup display.
+# The .claude/settings.json content Waytide needs: the status line. The session-start notice and
+# the startup display are the plugin's hooks, and a plugin cannot set the main status line, so
+# this one key stays here.
 settings_json() {
   cat <<'EOF'
 {
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "waytide/system/foundation/session-start.sh"
-          }
-        ]
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "waytide/system/foundation/startup-display.sh"
-          }
-        ]
-      }
-    ]
-  },
   "statusLine": {
     "type": "command",
     "command": "waytide/system/foundation/statusline.sh"
@@ -210,149 +189,86 @@ settings_json() {
 EOF
 }
 
-# The one key a settings.json wired before the startup display existed is missing. It goes
-# inside the file's "hooks" object, beside "SessionStart".
-display_hook_json() {
-  cat <<'EOF'
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "waytide/system/foundation/startup-display.sh"
-          }
-        ]
-      }
-    ]
-EOF
-}
+# Warn when git is configured to ignore .claude/settings.json or the plugin. The notice and the
+# status line are meant to travel with the project, and they only do that if both are committed
+# — so an ignored file works for whoever ran the install and reaches nobody else. Projects
+# commonly ignore the whole .claude/ directory, in which case the install would otherwise report
+# success while the notice silently stays on one machine. A file that is already committed is
+# unaffected by an ignore rule, so a tracked file draws no warning. Outside a git repository,
+# check-ignore fails and nothing is printed.
+warn_ignored_claude_files() {
+  ignored=
+  for path in .claude/settings.json .claude/skills/slasher/.claude-plugin/plugin.json; do
+    git check-ignore -q "$path" 2>/dev/null || continue
+    git ls-files --error-unmatch "$path" >/dev/null 2>&1 && continue
+    ignored=yes
+  done
 
-# Warn when git is configured to ignore .claude/settings.json. The notice is meant to
-# travel with the project, and it only does that if the file is committed — so an
-# ignored settings.json works for whoever ran the install and reaches nobody else.
-# Projects commonly ignore the whole .claude/ directory, in which case the install
-# would otherwise report success while the notice silently stays on one machine.
-# A file that is already committed is unaffected by an ignore rule, so a tracked
-# settings.json draws no warning. Outside a git repository, check-ignore fails and
-# nothing is printed.
-warn_ignored_settings_json() {
-  if ! git check-ignore -q .claude/settings.json 2>/dev/null; then
-    return
-  fi
-
-  if git ls-files --error-unmatch .claude/settings.json >/dev/null 2>&1; then
-    return
-  fi
+  [ -n "$ignored" ] || return 0
 
   echo
-  echo "WARNING: git is set to ignore .claude/settings.json."
+  echo "WARNING: git is set to ignore .claude/settings.json or .claude/skills/slasher/."
   echo
-  echo "The file is in place and the notice works for you, but git will not commit it,"
-  echo "so it will not reach anyone else who checks this project out."
+  echo "The files are in place and work for you, but git will not commit them, so the"
+  echo "notice and the status line will not reach anyone else who checks this project out."
   echo
   echo "If your .gitignore excludes the whole .claude/ directory, a negation alone will"
-  echo "not rescue the file — git cannot re-include anything inside an excluded"
-  echo "directory. Replace the '.claude/' line with these two:"
+  echo "not rescue the files — git cannot re-include anything inside an excluded"
+  echo "directory. Replace the '.claude/' line with these three:"
   echo
   echo "    .claude/*"
   echo "    !.claude/settings.json"
+  echo "    !.claude/skills/"
   echo
-  echo "Or leave the ignore rule alone and commit the file explicitly:"
+  echo "Or leave the ignore rule alone and commit the files explicitly:"
   echo
-  echo "    git add -f .claude/settings.json"
+  echo "    git add -f .claude/settings.json .claude/skills/slasher"
 }
 
-# Ensure .claude/settings.json carries the SessionStart hook and status line that
-# print the session-start notice. Unlike AGENTS.md and CLAUDE.md, this file cannot be safely
-# appended to — merging JSON needs a JSON tool that may not be installed, and a
-# corrupted settings.json silently disables every setting in it. So an existing file
-# is never modified: the exact block is printed for the engineer to merge. Note
-# that adopting the status line replaces whatever status line they had configured.
-# Idempotent.
+# Ensure .claude/settings.json carries the status line. Unlike AGENTS.md and CLAUDE.md, this file
+# cannot be safely appended to — merging JSON needs a JSON tool that may not be installed, and a
+# corrupted settings.json silently disables every setting in it. So an existing file is never
+# modified: the exact block, or the keys to remove, is printed for the engineer. Note that
+# adopting the status line replaces whatever status line they had configured. Idempotent.
 place_settings_json() {
-  if [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json &&
-     grep -q 'foundation/startup-display.sh' .claude/settings.json; then
-    echo ".claude/settings.json already runs the Waytide session-start notice and startup display — left unchanged."
-  elif [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh' .claude/settings.json; then
-    # Wired before the startup display existed. The agent no longer prints the display, so
-    # without this key the project shows none. The file is still not modified, for the reason
-    # given above.
-    echo ".claude/settings.json runs the Waytide session-start notice but not the startup display."
+  if [ -f .claude/settings.json ] && grep -q 'foundation/session-start.sh\|foundation/startup-display.sh' .claude/settings.json; then
+    # Wired before the plugin carried the hooks. Both now run the session-start scripts, so the
+    # notice and the read instruction print twice until these keys go. The file is still not
+    # modified, for the reason given above.
+    echo ".claude/settings.json still runs the Waytide session-start notice or startup display."
     echo
-    echo "Without it, load waytide prints no display: the agent no longer prints one. Merge this"
-    echo "key into the 'hooks' object of your file yourself, beside 'SessionStart':"
-    echo
-    echo "----------------------------------------------------------------------"
-    display_hook_json
-    echo "----------------------------------------------------------------------"
+    echo "The Slasher plugin, in .claude/skills/slasher/, now runs both, so with these entries in"
+    echo "place the notice prints twice. Remove from the 'hooks' object of your file yourself the"
+    echo "'SessionStart' entry that runs waytide/system/foundation/session-start.sh and the"
+    echo "'UserPromptSubmit' entry that runs waytide/system/foundation/startup-display.sh. Keep"
+    echo "'statusLine'. Remove 'hooks' itself if nothing is left in it."
+  elif [ -f .claude/settings.json ] && grep -q 'foundation/statusline.sh' .claude/settings.json; then
+    echo ".claude/settings.json already runs the Waytide status line — left unchanged."
   elif [ ! -f .claude/settings.json ]; then
     # No settings file yet — creating one takes nothing away, so do it directly.
     mkdir -p .claude
     settings_json > .claude/settings.json
-    echo "Created .claude/settings.json with the Waytide session-start notice (SessionStart hook and status line)."
-    echo "Commit it so the notice travels to everyone who checks the project out."
+    echo "Created .claude/settings.json with the Waytide status line."
+    echo "Commit it so the status line travels to everyone who checks the project out."
   else
     echo "You already have a .claude/settings.json."
     echo
     echo "It is not modified here: JSON cannot be safely appended to, and a malformed"
-    echo "settings.json silently disables every setting in it. Merge these two keys into"
-    echo "your file yourself — 'hooks' prints the session-start notice, and"
-    echo "'statusLine' keeps the package count on screen. Note that setting 'statusLine'"
-    echo "REPLACES any status line you have already configured; leave that key out if you"
-    echo "would rather keep yours."
+    echo "settings.json silently disables every setting in it. Merge this key into your file"
+    echo "yourself. 'statusLine' keeps Waytide's presence on screen. Note that setting it"
+    echo "REPLACES any status line you have already configured; leave it out if you would"
+    echo "rather keep yours."
     echo
     echo "----------------------------------------------------------------------"
     settings_json
     echo "----------------------------------------------------------------------"
   fi
-
-  warn_ignored_settings_json
 }
 
-# Assemble the slasher plugin, Slasher, in .claude/skills/slasher/ from the skills the
-# packages carry, each as skills/<command>/ in its package. The plugin is assembled, never
-# edited: a skill is changed in its package, so the directory is rebuilt whole each time and
-# nothing in it is kept.
-place_skills() {
-  plugin=.claude/skills/slasher
-
-  # A deactivated package's skills go with it. The packages are read from the latest package
-  # set's Inactive line, as load-rules.sh reads them.
-  declaration=$(ls waytide/local/*-package-set.md 2>/dev/null | sort | tail -1)
-  deactivated=
-  if [ -n "$declaration" ]; then
-    deactivated=$(sed -n 's|^[[:space:]]*-\{0,1\}[[:space:]]*\*\*Inactive:\*\*[[:space:]]*\(.*\)$|\1|p' "$declaration" |
-      head -1 | tr ',' '\n' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | grep -v '^none$' || true)
-  fi
-
-  rm -rf "$plugin"
-
-  for skill in waytide/system/*/skills/*/; do
-    [ -f "${skill}SKILL.md" ] || continue
-    package=${skill#waytide/system/}
-    package=${package%%/*}
-    if printf '%s\n' "$deactivated" | grep -qx "$package"; then
-      continue
-    fi
-    mkdir -p "$plugin/skills"
-    cp -R "${skill%/}" "$plugin/skills/"
-  done
-
-  [ -d "$plugin/skills" ] || return 0
-
-  mkdir -p "$plugin/.claude-plugin"
-  plugin_json > "$plugin/.claude-plugin/plugin.json"
-}
-
-# The manifest that names the plugin, and so the namespace its skills are typed under: /slasher:log.
-plugin_json() {
-  cat <<'JSON'
-{
-  "name": "slasher",
-  "displayName": "Slasher",
-  "description": "The Slasher commands"
-}
-JSON
+# Assemble the plugin, which carries the skills and the session-start hooks. The script beside
+# this one does it, so compile.sh can run the same assembly in the authoring source.
+place_plugin() {
+  sh "$(dirname "$0")/assemble-plugin.sh"
 }
 
 # Rename a project's waytide/local/sessions/ to waytide/local/work-sessions/. The
@@ -479,12 +395,14 @@ if [ "$1" != "agents-md" ]; then
 fi
 
 # 2. Ensure the project-root AGENTS.md activates the system, that CLAUDE.md
-#    imports it so the bootstrap also reaches Claude Code sessions, and that
-#    .claude/settings.json prints the session-start notice.
+#    imports it so the bootstrap also reaches Claude Code sessions, that the plugin
+#    prints the startup display and the session-start notice, and that
+#    .claude/settings.json keeps the status line.
 place_agents_md
 place_claude_md
 place_settings_json
-place_skills
+place_plugin
+warn_ignored_claude_files
 
 # 3. Carry a project's own working state across the directory renames a rule change
 #    cannot reach.

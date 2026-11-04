@@ -1124,16 +1124,16 @@ Trigger: When planning to move content across a repository boundary, to restruct
 24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
 25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
 
-# The startup display prints once per session
+# The startup display prints as the session starts
 
-Source: system/foundation/source/the-startup-display-prints-once-per-session.md
+Source: system/foundation/source/the-startup-display-prints-as-the-session-starts.md
 
 Trigger: When the engineer types `load waytide` or `/load`, or when changing the startup display or its script
 
-1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
+1. Five parts are printed as the session starts, verbatim, and again on `load waytide` or `/load`. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
 2. The harness prints the four always-printed parts. The agent prints none of them.
-3. When the engineer types `load waytide`, or `/load`, its skill, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
-4. The display prints on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt. A session opened with any other request shows no display.
+3. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints them ahead of the session-start notice, in one `systemMessage`, taking them from `startup-display.sh message`, which prints the display alone. On `load waytide`, or `/load`, its skill, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again as a `systemMessage`.
+4. After the session start, the display prints again on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt.
 5. The agent prints the package set, at the head of the response that carries the rule read.
 6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
@@ -1203,8 +1203,8 @@ Copyright © 2026 Scott Bellware
 Loading Waytide will take a few moments.
 ```
 
-50. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response loads every installed package's rules.
-51. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
+50. The loading line says *Waytide* rather than *the rules*. It names the wait for the read, while the response that carries it loads every installed package's rules.
+51. The loading line deliberately repeats the session-start notice's caveat, which follows it in the same message as the session starts. Neither statement is removed.
 52. Then one blank line, then the block:
 
 ```
@@ -1238,7 +1238,7 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 
 1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
-3. `install.sh` and `refresh-packages.sh` assemble `.claude/skills/slasher/` from the active packages' skills, leaving out a deactivated package's.
+3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the session-start hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.

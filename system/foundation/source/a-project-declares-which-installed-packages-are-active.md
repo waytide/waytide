@@ -162,7 +162,7 @@ Until Thu Oct 29 2026 a deactivated package's rules were read at session start a
 Related:
 
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read, whose content the declaration decides
-- the the-startup-display-prints-once-per-session rule — where the printed block is defined
+- the the-startup-display-prints-as-the-session-starts rule — where the printed block is defined
 - the a-status-report-prints-a-fixed-whole-project-report rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
 
@@ -189,3 +189,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT

@@ -68,4 +68,22 @@ instruction_output=$(cd "$project" && sh system/foundation/session-start.sh inst
 
 [ "$instruction_output" = "$control_instruction" ] || fail "Prints the read instruction alone, as the hook emits it" "output:" "$instruction_output"
 
-echo "3 passed"
+# Prints the startup display ahead of the notice, in one message -----------------
+
+mkdir -p "$project/system/foundation/source"
+cp system/foundation/startup-display.sh "$project/system/foundation/"
+cp system/foundation/source/the-startup-display-prints-as-the-session-starts.md "$project/system/foundation/source/"
+
+control_display=$(cd "$project" && system/foundation/startup-display.sh message | sed 's/^/"/; s/$/"/' | python3 -c 'import json,sys; print(json.load(sys.stdin))')
+
+display_output=$(cd "$project" && sh system/foundation/session-start.sh < /dev/null)
+display_message=$(printf '%s' "$display_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
+
+case "$display_message" in
+  "$control_display
+
+Waytide installed at "*) ;;
+  *) fail "Prints the startup display ahead of the notice, in one message" "message:" "$display_message" ;;
+esac
+
+echo "4 passed"

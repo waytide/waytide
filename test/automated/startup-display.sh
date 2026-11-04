@@ -51,11 +51,11 @@ control_display=$(control_display_text)
 
 output=$(printf '{"prompt":"load waytide"}' | system/foundation/startup-display.sh)
 
-# Is the the-startup-display-prints-once-per-session's display, as plain text ---------------------------
+# Is the the-startup-display-prints-as-the-session-starts's display, as plain text ---------------------------
 
 display=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
 
-[ "$display" = "$control_display" ] || fail "Is the the-startup-display-prints-once-per-session's display, as plain text" "found:" "$display"
+[ "$display" = "$control_display" ] || fail "Is the the-startup-display-prints-as-the-session-starts's display, as plain text" "found:" "$display"
 
 # Prints the display on /load, the skill of load waytide -------------------------
 
@@ -70,5 +70,12 @@ namespaced_output=$(printf '{"prompt":"/slasher:load"}' | system/foundation/star
 namespaced_display=$(printf '%s' "$namespaced_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
 
 [ "$namespaced_display" = "$control_display" ] || fail "Prints the display on /slasher:load" "found:" "$namespaced_output"
+
+# Prints the display alone, as the hook's message carries it -----------------------
+
+message=$(system/foundation/startup-display.sh message)
+message_display=$(printf '"%s"' "$message" | python3 -c 'import json,sys; print(json.load(sys.stdin))' 2>/dev/null || true)
+
+[ "$message_display" = "$control_display" ] || fail "Prints the display alone, as the hook's message carries it" "found:" "$message"
 
 echo "0 failed, 0 aborted"

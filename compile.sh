@@ -81,3 +81,11 @@ for package in system/*/; do
 
   [ -s "$package/rules-on-demand.md" ] || rm -f "$package/rules-on-demand.md"
 done
+
+# The Slasher plugin in .claude/skills/slasher/ carries the skills and the session-start hooks. In
+# a consuming project install.sh assembles it. Here the compile does, so the plugin this
+# repository's sessions start with is current with the packages it is built from. A tree with no
+# foundation package has no plugin to assemble.
+if [ -f system/foundation/assemble-plugin.sh ]; then
+  system/foundation/assemble-plugin.sh
+fi
