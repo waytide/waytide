@@ -379,10 +379,6 @@ Source: system/foundation/source/the-harness-announces-waytides-installation-and
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
-
-Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
-
-To load them now, type: /load.
 ```
 
 2. The install line enumerates what is on disk.
@@ -393,25 +389,21 @@ To load them now, type: /load.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
 9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
-10. The close is always present: the caveat, then the command on a line of its own, last.
-11. A blank line precedes the close, after any open line, because the close asks and everything above it reports.
-12. A second blank line stands the command alone, so it is read and copied without reading past anything.
-13. The caveat says `a few moments`, because the read is a wait an engineer sees.
-14. The command names the read outright, so an engineer new to the system can act on it. It is `/load`, which the plugin printing the notice always provides. `load waytide` is the same command typed in words.
-15. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
-16. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
-17. The trade of observability for legibility is deliberate.
-18. The notice says `installed`, never `loaded`.
-19. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
-20. The close's `are loaded` describes what the session does next, and reports no read.
-21. Call it the session-start notice, not the load notice.
-22. The status line reports the system active, a claim about the configuration rather than the agent.
-23. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
-24. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
-25. Put no quotation marks, and no lone backslash, in anything the hook emits.
-26. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
-27. A double quote ends the string, and a lone backslash begins an invalid escape.
-28. Either way the harness fails to parse the output, and the notice disappears with no error.
+10. The notice has no close of its own. It ends with what it reports. The startup display's load line, ahead of it in the same message, says when the rules load and that `/load` loads them now.
+11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
+12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
+13. The trade of observability for legibility is deliberate.
+14. The notice says `installed`, never `loaded`.
+15. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
+16. The read instruction describes what the session does next, and reports no read.
+17. Call it the session-start notice, not the load notice.
+18. The status line reports the system active, a claim about the configuration rather than the agent.
+19. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+20. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
+21. Put no quotation marks, and no lone backslash, in anything the hook emits.
+22. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
+23. A double quote ends the string, and a lone backslash begins an invalid escape.
+24. Either way the harness fails to parse the output, and the notice disappears with no error.
 
 ## The read instruction
 
@@ -431,7 +423,7 @@ To load them now, type: /load.
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load waytide` asks for exactly that read and nothing more. The notice names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+17. `load waytide` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
 18. This rule does not restate the directory list.
 19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
 20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
@@ -468,9 +460,9 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## The startup display
 
-1. As the session starts, the title, the copyright and license, the loading line, and the figure lead the notice's message, read from the the-startup-display-prints-as-the-session-starts rule.
-2. When the engineer types `load waytide` or `/load`, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again.
-3. After the session start, it prints on that command only. `/load` is that command.
+1. As the session starts, the display's session-start part, the title, the copyright and license, and the load line, leads the notice's message, read from the the-startup-display-prints-as-the-session-starts rule.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and the figure, on the session's first prompt only.
+3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 
 ## Wiring

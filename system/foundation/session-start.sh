@@ -183,48 +183,10 @@ if [ -n "$implementations" ]; then
   notice="${notice}\\n${implementations}"
 fi
 
-# The load-command line, always present. The notice states what is installed; this states
-# when the rules are read and what the engineer types to have it happen now.
-#
-# The command names the read: /load, the skill of the load waytide command, which the plugin
-# carrying this hook always provides. It is a command, not the contentless
-# foil request the line carried until 2026-07-28 — the engineer's message now carries the
-# instruction rather than only the occasion for it. What that gives up is attributability:
-# with a contentless word, a read that followed could only have come from the hook's
-# additionalContext channel, and with a named command it could have come from either. The
-# command is legible to a engineer who has never seen the system, which is what it buys.
-#
-# The command carries no emphasis markup. It was written with markdown asterisks until
-# 2026-07-28, on the assumption that the harness renders the notice as markdown; it does not
-# — the systemMessage is displayed as plain text, so the asterisks reached the engineer
-# literally and drew the eye to punctuation rather than to the words they were meant to
-# emphasize. Emphasis is unavailable on this channel, and the line stands without it: it
-# already ends with the command in the position the sentence points at.
-#
-# The command sentence is last. Until 2026-07-28 the cost of typing it — that loading takes
-# a moment — followed the command, so the line ended on a caveat and the words to be typed
-# sat mid-line. The two sentences are swapped so the command ends the line: the caveat is
-# read before the engineer decides, and the thing to type is the last thing on the line,
-# which is where the eye lands and where a command can be copied without reading past it.
-#
-# No quotation marks, deliberately. The notice is interpolated into a JSON string built by
-# printf with no escaping, so a double quote here would terminate the string and produce
-# output the harness cannot parse — the notice would vanish with no error at all.
-#
-# A blank line precedes it. Everything above is what the notice reports — the install, and
-# any experiment or feature left open — and this line is the only part that asks the
-# engineer to do something. Run together, the ask reads as one more reported fact and the
-# command to type sits at the bottom of an undifferentiated block. The blank line falls
-# after the open-work lines rather than between them and the install line, so the report
-# stays one block and the break marks the change of purpose rather than a change of subject.
-#
-# A second blank line sets the command sentence apart from the caveat ahead of it. Ending
-# the line with the command put the words to be typed in the position the eye settles on,
-# but they were still the tail of a two-sentence paragraph, so finding them meant reading
-# the caveat first. On its own line the command is the one thing on the notice's last line,
-# and it can be read and copied without reading past anything. The caveat keeps its place
-# ahead of it, where a engineer reads it before deciding whether to type the command.
-notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.\\n\\nTo load them now, type: /load."
+# The notice has no close of its own. The load line that ends the display's session-start part,
+# printed ahead of the notice, says when the rules load and that /load loads them now. A close
+# here said the same until 2026-11-04, and the notice ends with what it reports: the install,
+# and any experiment or feature left open.
 
 # The read instruction, carried to the agent rather than to the engineer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an

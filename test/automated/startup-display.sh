@@ -18,7 +18,7 @@ fail() {
 
 # Read from a function rather than a heredoc inside $(…): macOS /bin/sh joins a line ending in a
 # backslash to the next one there, and three lines of the figure end in one.
-control_display_text() {
+control_start_text() {
   cat <<'DISPLAY'
 
 Waytide: Human-in-the-Loop Harness
@@ -26,7 +26,14 @@ Waytide: Human-in-the-Loop Harness
 Copyright © 2026 Scott Bellware
 Eventide Common Interest License
 
-Loading Waytide will take a few moments.
+Waytide's rules will load on the first prompt, or enter: /load
+DISPLAY
+}
+
+control_loading_text() {
+  cat <<'DISPLAY'
+
+Loading will take a moment
 
      __      /
     /  \    /
@@ -45,37 +52,37 @@ Loading Waytide will take a few moments.
 DISPLAY
 }
 
-control_display=$(control_display_text)
+control_start=$(control_start_text)
+control_loading=$(control_loading_text)
+
+# The marker that records a session's first prompt is kept under TMPDIR, so the test keeps its own.
+TMPDIR=$(mktemp -d)
+export TMPDIR
+trap 'rm -rf "$TMPDIR"' EXIT
+
+control_event='{"session_id": "some-session", "hook_event_name": "UserPromptSubmit", "prompt": "some prompt"}'
 
 # Actuation ------------------------------------------------------------------
 
-output=$(printf '{"prompt":"load waytide"}' | system/foundation/startup-display.sh)
+output=$(printf '%s' "$control_event" | system/foundation/startup-display.sh)
 
-# Is the the-startup-display-prints-as-the-session-starts's display, as plain text ---------------------------
+# Prints the loading line and the figure on a session's first prompt ---------------
 
-display=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
+loading=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
 
-[ "$display" = "$control_display" ] || fail "Is the the-startup-display-prints-as-the-session-starts's display, as plain text" "found:" "$display"
+[ "$loading" = "$control_loading" ] || fail "Prints the loading line and the figure on a session's first prompt" "found:" "$output"
 
-# Prints the display on /load, the skill of load waytide -------------------------
+# Prints nothing on a later prompt in the same session -------------------------------
 
-load_output=$(printf '{"prompt":"/load"}' | system/foundation/startup-display.sh)
-load_display=$(printf '%s' "$load_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
+later_output=$(printf '%s' "$control_event" | system/foundation/startup-display.sh)
 
-[ "$load_display" = "$control_display" ] || fail "Prints the display on /load, the skill of load waytide" "found:" "$load_output"
+[ -z "$later_output" ] || fail "Prints nothing on a later prompt in the same session" "found:" "$later_output"
 
-# Prints the display on /slasher:load ---------------------------------------------
-
-namespaced_output=$(printf '{"prompt":"/slasher:load"}' | system/foundation/startup-display.sh)
-namespaced_display=$(printf '%s' "$namespaced_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
-
-[ "$namespaced_display" = "$control_display" ] || fail "Prints the display on /slasher:load" "found:" "$namespaced_output"
-
-# Prints the display alone, as the hook's message carries it -----------------------
+# Prints the session-start part alone, as the session-start message carries it ------
 
 message=$(system/foundation/startup-display.sh message)
-message_display=$(printf '"%s"' "$message" | python3 -c 'import json,sys; print(json.load(sys.stdin))' 2>/dev/null || true)
+start=$(printf '"%s"' "$message" | python3 -c 'import json,sys; print(json.load(sys.stdin))' 2>/dev/null || true)
 
-[ "$message_display" = "$control_display" ] || fail "Prints the display alone, as the hook's message carries it" "found:" "$message"
+[ "$start" = "$control_start" ] || fail "Prints the session-start part alone, as the session-start message carries it" "found:" "$message"
 
 echo "0 failed, 0 aborted"

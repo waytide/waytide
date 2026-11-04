@@ -86,15 +86,12 @@ Waytide installed at "*) ;;
   *) fail "Prints the startup display ahead of the notice, in one message" "message:" "$display_message" ;;
 esac
 
-# Closes by telling the engineer to type /load -----------------------------------
+# Ends with the install line, the display's load line standing in for a close ---------
 
-control_close_text="To load them now, type: /load."
+control_message="$control_display
 
-case "$display_message" in
-  *"
+Waytide installed at system/ — 2 packages: foundation, other"
 
-$control_close_text") ;;
-  *) fail "Closes by telling the engineer to type /load" "message:" "$display_message" ;;
-esac
+[ "$display_message" = "$control_message" ] || fail "Ends with the install line, the display's load line standing in for a close" "message:" "$display_message"
 
 echo "5 passed"

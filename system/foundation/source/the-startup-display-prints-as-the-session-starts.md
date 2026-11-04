@@ -1,16 +1,16 @@
 # The startup display prints as the session starts
 
-**Trigger:** When the engineer types `load waytide` or `/load`, or when changing the startup display or its script
+**Trigger:** When a session starts, or the engineer types its first prompt, or when changing the startup display or its script
 
-The things below are printed as the session starts, verbatim, and printed again when the engineer types `load waytide` or `/load`. Four are always printed, in the order this file gives them. The fifth, the package set, is printed only where the project has declared one, and it prints after the other four, whatever its place in this file.
+The things below are printed verbatim, in two parts. **The session-start part** prints as the session starts: the title, the copyright and license, and the load line. **The loading part** prints on the session's first prompt, whatever the prompt is, since that is when the rules are read: the loading line and the figure. Five things are always printed, in the order this file gives them. The package set is printed only where the project has declared one, and it prints after the loading part, whatever its place in this file.
 
-**The harness prints the four, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints them ahead of the session-start notice, in the one `systemMessage`. It takes them from `startup-display.sh message`, which prints the display alone. When the engineer types `load waytide`, or `/load`, its skill, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again as a `systemMessage`. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the five, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the session-start part ahead of the session-start notice, in the one `systemMessage`. It takes that part from `startup-display.sh message`, which prints it alone. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt and nothing after. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
-**The script reads the four from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
+**The script reads the five from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line: the session-start part. The fifth and sixth are the loading line and the figure: the loading part. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
-**After the session start, the display prints again on `load waytide` and on `/load`, and on no other prompt.** `/load` is the same command delivered as a skill, and the hook matches it as `/load` and as `/slasher:load`. Any other prompt prints no display, because the hook acts only on the exact command.
+**The loading part prints once per session, on the first prompt.** The first prompt is when the read starts, whether it is `/load`, `load waytide`, or any other request. The script records the session's first prompt in a marker named for the session, under the temporary directory, and prints nothing on a later prompt. A prompt whose input names no session prints the loading part every time, rather than never.
 
 First the title, on its own:
 
@@ -56,10 +56,16 @@ Copyright © 2026 Scott Bellware
 *Eventide Common Interest License*
 ```
 
-Then **one blank line**, then the loading line:
+Then **one blank line**, then the load line, which ends the session-start part of the display:
 
 ```
-Loading Waytide will take a few moments.
+Waytide's rules will load on the first prompt, or enter: /load
+```
+
+The loading part prints on the session's first prompt. First the loading line:
+
+```
+Loading will take a moment
 ```
 
 Then **one blank line**, then the block:
@@ -81,7 +87,7 @@ Then **one blank line**, then the block:
  (o)   (o)
 ```
 
-**Each gap is one blank line.** There are three — after the title, after the license line, and after the loading line. With no gap at all a block reads as a caption attached to what follows, or as its first line, so a separation is needed.
+**Each gap is one blank line.** In the session-start part there are two — after the title and after the license line. In the loading part there is one — after the loading line. With no gap at all a block reads as a caption attached to what follows, or as its first line, so a separation is needed.
 
 **The harness renders the display as plain text, so the lines print exactly as the blocks hold them.** A blank line is a blank line, and the figure keeps its spacing without a fence. One line is kept because one is what separates.
 
@@ -89,13 +95,11 @@ Then **one blank line**, then the block:
 
 **These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one part that is not always present, and its absence is the ordinary case rather than an omission.
 
-**The loading line says what the wait is.** The display is printed as the session starts and when the engineer types `load waytide`, and the response that carries the read loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
+**The load line says when the rules load, and how to load them now.** It ends the session-start part, so it is what the engineer reads last before typing. It states the one fact the engineer needs before the first prompt: the rules load on that prompt, whatever it is, and `/load` loads them with no other request. The session-start notice has no close of its own, because this line says what a close said. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 
-**It repeats the session-start notice's caveat deliberately.** As the session starts, the two are in one message: this line in the display, and the notice's *Loading the rules will take a few moments* below it, one of the two facts the engineer weighs in deciding to type `/load`. When the engineer types it, or `load waytide`, this line is printed again, and read while the wait is happening.
+**It says *Waytide's rules*.** It stands under a title, a copyright, and a license, none of which is a sentence, so it names its subject itself.
 
-The first informs a decision. The second explains a pause. Duplication costs where one fact is stated twice to one reader. This is one fact stated to a reader in two different positions, and removing either leaves that position uncovered.
-
-**It says *Waytide* rather than *the rules*.** The notice can say *the rules* because its preceding line has just named the system. This line stands with a title, a copyright, and a license above it and a figure below, none of which is a sentence. So it names its subject itself.
+**The loading line says what the wait is.** It prints on the first prompt, as the read starts, and the response that carries the read loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained, and the figure under it fills the wait.
 
 **The title leads.** It is the first line of the display, and the display is printed before the agent's response begins, so nothing the agent writes can stand ahead of it.
 
@@ -103,7 +107,7 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
-**No description of Waytide is printed here.** What Waytide is and what it does live in the `README.md`. This display carries a name, a configuration, an ownership statement, and a wait — and nothing that argues for the system to a reader who is already using it.
+**No description of Waytide is printed here.** What Waytide is and what it does live in the `README.md`. This display carries a name, an ownership statement, when the rules load, and a wait — and nothing that argues for the system to a reader who is already using it.
 
 **The title names the work, so the copyright line does not.** The title stands above it and names the work outright, and the copyright line carries the owner and the year alone.
 
@@ -125,39 +129,40 @@ The first informs a decision. The second explains a pause. Duplication costs whe
 
 ## Compressed
 
-1. Five parts are printed as the session starts, verbatim, and again on `load waytide` or `/load`. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
-2. The harness prints the four always-printed parts. The agent prints none of them.
-3. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints them ahead of the session-start notice, in one `systemMessage`, taking them from `startup-display.sh message`, which prints the display alone. On `load waytide`, or `/load`, its skill, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them again as a `systemMessage`.
-4. After the session start, the display prints again on `load waytide` and on `/load`, matched as `/load` and as `/slasher:load`, and on no other prompt.
-5. The agent prints the package set, at the head of the response that carries the rule read.
-6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
-7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
-8. The second fenced block is the package-set example, which the script skips.
-9. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
-10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
-11. The fences mark where each printed part begins and ends. They are not printed.
-12. First the title, on its own:
+1. The display prints verbatim in two parts. The session-start part, the title, the copyright and license, and the load line, prints as the session starts. The loading part, the loading line and the figure, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
+2. The package set is printed only where the project has declared one, after the loading part.
+3. The harness prints both parts. The agent prints none of them.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the session-start part ahead of the session-start notice, in one `systemMessage`, taking it from `startup-display.sh message`, which prints that part alone.
+5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
+6. The agent prints the package set, at the head of the response that carries the rule read.
+7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
+8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the loading line and the figure.
+9. The second fenced block is the package-set example, which the script skips.
+10. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
+11. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
+12. The fences mark where each printed part begins and ends. They are not printed.
+13. First the title, on its own:
 
 ```
 Waytide: Human-in-the-Loop Harness
 ```
 
-13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-14. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
-15. The title stands alone. No subtitle or description is printed under it.
-16. The title is the category line. The root `README.md` leads with the same line.
-17. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
-18. The display carries nothing that argues for the system to a reader already using it.
-19. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
-20. The stanza follows the display rather than sitting inside it.
-21. Where no set is declared, this part is absent entirely. No line says there is none.
-22. The declared set `default` prints nothing where nothing is deactivated.
-23. The `default` set prints where it leaves an installed package deactivated, such as `ext/ruby-lang`.
-24. The condition is that nothing is off, not that the name is `default`.
-25. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
-26. A named set other than `default` prints even where nothing is deactivated.
-27. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-which-installed-packages-are-active rule says where the record lives and what it carries.
-28. The stanza takes this form:
+14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
+15. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
+16. The title stands alone. No subtitle or description is printed under it.
+17. The title is the category line. The root `README.md` leads with the same line.
+18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
+19. The display carries nothing that argues for the system to a reader already using it.
+20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
+21. The stanza follows the display rather than sitting inside it.
+22. Where no set is declared, this part is absent entirely. No line says there is none.
+23. The declared set `default` prints nothing where nothing is deactivated.
+24. The `default` set prints where it leaves an installed package deactivated, such as `ext/ruby-lang`.
+25. The condition is that nothing is off, not that the name is `default`.
+26. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
+27. A named set other than `default` prints even where nothing is deactivated.
+28. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-which-installed-packages-are-active rule says where the record lives and what it carries.
+29. The stanza takes this form:
 
 ```
 *design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
@@ -166,41 +171,47 @@ package set: content
 (5 active of 8 installed)
 ```
 
-29. The stanza's lines carry no gap between them.
-30. The package list leads. The set's name follows it, above the count. The count closes the stanza.
-31. The set is named in the engineer's own wording, as in `package set: content`, not in a restatement of it.
-32. Every installed package is listed, in the order the session-start notice lists them.
-33. Active packages are bold. Deactivated packages are italic.
-34. No package is omitted, and none is replaced by a count.
-35. The count line states how many are active and the installed total, in the form `(N active of M installed)`.
-36. No legend is printed.
-37. Emphasis is available on the package set stanza and nowhere else in the display.
-38. The harness display is plain text, where markup reaches the engineer as literal asterisks.
-39. Then one blank line, then the copyright notice and the license line, on consecutive lines with no gap between them:
+30. The stanza's lines carry no gap between them.
+31. The package list leads. The set's name follows it, above the count. The count closes the stanza.
+32. The set is named in the engineer's own wording, as in `package set: content`, not in a restatement of it.
+33. Every installed package is listed, in the order the session-start notice lists them.
+34. Active packages are bold. Deactivated packages are italic.
+35. No package is omitted, and none is replaced by a count.
+36. The count line states how many are active and the installed total, in the form `(N active of M installed)`.
+37. No legend is printed.
+38. Emphasis is available on the package set stanza and nowhere else in the display.
+39. The harness display is plain text, where markup reaches the engineer as literal asterisks.
+40. Then one blank line, then the copyright notice and the license line, on consecutive lines with no gap between them:
 
 ```
 Copyright © 2026 Scott Bellware
 *Eventide Common Interest License*
 ```
 
-40. The copyright and license belong on this display, not on the session-start notice. Any standing statement that never changes belongs here, not as a permanent segment of the notice.
-41. The copyright line carries the owner and the year alone. It does not name the work.
-42. The license line is the license's name alone, set in italics. It takes no leading words such as *Licensed under the*.
-43. The block keeps the license line in italics. `startup-display.sh` removes the asterisks from a line wrapped in them, so it prints without them.
-44. The gap falls after the license line, never between it and the copyright.
-45. The printed license line points to the license. It does not carry the terms, and is not the place to put them.
-46. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
-47. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
-48. The year is not computed. It changes only when the rule changes.
-49. Then one blank line, then the loading line:
+41. The copyright and license belong on this display, not on the session-start notice. Any standing statement that never changes belongs here, not as a permanent segment of the notice.
+42. The copyright line carries the owner and the year alone. It does not name the work.
+43. The license line is the license's name alone, set in italics. It takes no leading words such as *Licensed under the*.
+44. The block keeps the license line in italics. `startup-display.sh` removes the asterisks from a line wrapped in them, so it prints without them.
+45. The gap falls after the license line, never between it and the copyright.
+46. The printed license line points to the license. It does not carry the terms, and is not the place to put them.
+47. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
+48. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
+49. The year is not computed. It changes only when the rule changes.
+50. Then one blank line, then the load line, which ends the session-start part:
 
 ```
-Loading Waytide will take a few moments.
+Waytide's rules will load on the first prompt, or enter: /load
 ```
 
-50. The loading line says *Waytide* rather than *the rules*. It names the wait for the read, while the response that carries it loads every installed package's rules.
-51. The loading line deliberately repeats the session-start notice's caveat, which follows it in the same message as the session starts. Neither statement is removed.
-52. Then one blank line, then the block:
+51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Waytide's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
+52. The session-start notice has no close of its own. The load line says what a close said.
+53. The loading part opens with the loading line, which names the wait for the read:
+
+```
+Loading will take a moment
+```
+
+54. Then one blank line, then the block:
 
 ```
      __      /
@@ -219,11 +230,11 @@ Loading Waytide will take a few moments.
  (o)   (o)
 ```
 
-53. Each gap is one blank line. There are three: after the title, after the license line, and after the loading line.
-54. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
-55. A blank line prints as a blank line. The figure keeps its spacing without a fence.
-56. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
-57. The package set's absence is the ordinary case, not an omission.
+55. Each gap is one blank line: after the title and after the license line in the session-start part, and after the loading line in the loading part.
+56. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
+57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
+58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
+59. The package set's absence is the ordinary case, not an omission.
 
 ## Compression
 
@@ -239,8 +250,11 @@ Loading Waytide will take a few moments.
 - 2026-11-03, revised: the display prints on `/load` as well; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-11-04, revised: the display prints as the session starts, from the plugin's hook, and again on the load command; checked: 54 directives, 51 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 54 directives, 53 kept, 1 less precise, 0 lost. Left less precise: the reason the agent prints none of the four, which the Why points removed on 2026-10-28 already left out
 - 2026-11-04, revised: the notice's close names `/load`, a body sentence only; not checked, since the compressed text does not name the command there
+- 2026-11-04, revised: the display prints in two parts, the session-start part as the session starts and the loading part on the first prompt; checked: 61 directives, 58 kept, 2 less precise, 1 lost, 2 repairs; re-checked: 61 directives, 60 kept, 1 less precise, 0 lost. Left less precise: that the figure fills the wait the loading line names
 
 ## History
+
+Until Wed Nov 4 2026 the display printed whole, with the loading line *Loading Waytide will take a few moments.* and the figure, as the session starts and again on `load waytide` or `/load`. The session-start notice closed with its own caveat and `To load them now, type: /load.`
 
 Until Tue Nov 3 2026 the rule was named the-startup-display-prints-once-per-session, and the display printed only on `load waytide`, and from that day on `/load`, through a `UserPromptSubmit` hook in `.claude/settings.json`. A session opened with any other request showed no display. The hooks moved into the Slasher plugin, and the display came to print as the session starts, ahead of the notice.
 
@@ -309,3 +323,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 7:35:51 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 3:12:40 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:51:16 AM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 1:03:03 PM PT
