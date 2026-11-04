@@ -86,4 +86,15 @@ Waytide installed at "*) ;;
   *) fail "Prints the startup display ahead of the notice, in one message" "message:" "$display_message" ;;
 esac
 
-echo "4 passed"
+# Closes by telling the engineer to type /load -----------------------------------
+
+control_close_text="To load them now, type: /load."
+
+case "$display_message" in
+  *"
+
+$control_close_text") ;;
+  *) fail "Closes by telling the engineer to type /load" "message:" "$display_message" ;;
+esac
+
+echo "5 passed"

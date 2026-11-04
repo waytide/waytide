@@ -70,7 +70,7 @@ override default behavior where they conflict; explicit user instructions still 
 `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
 actually present and emits the `Waytide installed at … — N packages: …` notice, closing
-with a line telling the engineer to type `load waytide` — the command that asks for the
+with a line telling the engineer to type `/load` — the command that asks for the
 read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
 the working directory, branch, and any uncommitted, untracked, or unpushed work.

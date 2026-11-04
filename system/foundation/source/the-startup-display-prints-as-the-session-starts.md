@@ -91,7 +91,7 @@ Then **one blank line**, then the block:
 
 **The loading line says what the wait is.** The display is printed as the session starts and when the engineer types `load waytide`, and the response that carries the read loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained. It is the only one at the head that is about the moment rather than about the work.
 
-**It repeats the session-start notice's caveat deliberately.** As the session starts, the two are in one message: this line in the display, and the notice's *Loading the rules will take a few moments* below it, one of the two facts the engineer weighs in deciding to type `load waytide`. When the engineer types it, this line is printed again, and read while the wait is happening.
+**It repeats the session-start notice's caveat deliberately.** As the session starts, the two are in one message: this line in the display, and the notice's *Loading the rules will take a few moments* below it, one of the two facts the engineer weighs in deciding to type `/load`. When the engineer types it, or `load waytide`, this line is printed again, and read while the wait is happening.
 
 The first informs a decision. The second explains a pause. Duplication costs where one fact is stated twice to one reader. This is one fact stated to a reader in two different positions, and removing either leaves that position uncovered.
 
@@ -238,6 +238,7 @@ Loading Waytide will take a few moments.
 - 2026-10-29, merge from master re-checked: 61 directives, 60 kept, 1 less precise, 0 lost, 1 repair
 - 2026-11-03, revised: the display prints on `/load` as well; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-11-04, revised: the display prints as the session starts, from the plugin's hook, and again on the load command; checked: 54 directives, 51 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 54 directives, 53 kept, 1 less precise, 0 lost. Left less precise: the reason the agent prints none of the four, which the Why points removed on 2026-10-28 already left out
+- 2026-11-04, revised: the notice's close names `/load`, a body sentence only; not checked, since the compressed text does not name the command there
 
 ## History
 
@@ -307,3 +308,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 6:57:20 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 7:35:51 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 3:12:40 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 11:51:16 AM PT

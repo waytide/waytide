@@ -382,7 +382,7 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 
 Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
 
-To load them now, type: load waytide.
+To load them now, type: /load.
 ```
 
 2. The install line enumerates what is on disk.
@@ -397,7 +397,7 @@ To load them now, type: load waytide.
 11. A blank line precedes the close, after any open line, because the close asks and everything above it reports.
 12. A second blank line stands the command alone, so it is read and copied without reading past anything.
 13. The caveat says `a few moments`, because the read is a wait an engineer sees.
-14. The command names the read outright, so an engineer new to the system can act on it.
+14. The command names the read outright, so an engineer new to the system can act on it. It is `/load`, which the plugin printing the notice always provides. `load waytide` is the same command typed in words.
 15. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
 16. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
 17. The trade of observability for legibility is deliberate.
@@ -431,7 +431,7 @@ To load them now, type: load waytide.
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+17. `load waytide` asks for exactly that read and nothing more. The notice names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
 18. This rule does not restate the directory list.
 19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
 20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.

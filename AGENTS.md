@@ -8,7 +8,7 @@ The rule packages live at the top level of `system/`: `system/foundation/`, `sys
 
 Read `system/foundation/` first. It defines the system. The rules override default behavior where they conflict. Explicit user instructions still win.
 
-**The session-start notice is printed by the harness, not by you — do not print one.** A `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs `system/foundation/session-start.sh`. It prints the startup display ahead of the notice. `compile.sh` assembles the plugin here, and `.claude/settings.json` carries only the status line. That script reads the package directories actually present and emits the `Waytide installed at system/ — N packages: …` notice. The notice closes with a line telling the engineer to type `load waytide`. That command asks for the read instruction the hook carries to be acted on now.
+**The session-start notice is printed by the harness, not by you — do not print one.** A `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs `system/foundation/session-start.sh`. It prints the startup display ahead of the notice. `compile.sh` assembles the plugin here, and `.claude/settings.json` carries only the status line. That script reads the package directories actually present and emits the `Waytide installed at system/ — N packages: …` notice. The notice closes with a line telling the engineer to type `/load`, the skill of the `load waytide` command. That command asks for the read instruction the hook carries to be acted on now.
 
 `system/foundation/statusline.sh` keeps the system's presence in the status line for the rest of the session. It sits beside the working directory, the branch, and any uncommitted, untracked, or unpushed work. Neither can be silenced.
 
