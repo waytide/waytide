@@ -18,6 +18,7 @@
 
 - **2026-11-05** — It is called the **system project**, not the root install. It is a catch-all project for general-purpose work, kept apart from the special-purpose work of a project of its own.
 - **2026-11-05** — A facility sets the system project, and a project can override which system project is its own.
+- **2026-11-05, later** — It is called the **root project**, not the system project. This replaces the name in the two resolutions and the amendment above, and what they say otherwise stands: the root project is the catch-all for general-purpose work, a facility sets it, and a project can override which root project is its own.
 
 **Amended 2026-11-05:** the system project might be hierarchical. A system project would sit at the level of a directory holding several other projects, and serve those beneath it. **Not yet settled:** whether it is hierarchical, how a project finds its system project where there are several, the facility's form, and whether the `/root` prefix and the `/package` subcommand named above still stand.
 
@@ -27,7 +28,10 @@ As the engineer first stated it: "Idea: a “root” command (ie: “/root”) t
 
 On 2026-11-05: "Update to that idea: It should be called the "system" project. It's use is to have a kind of catch-all project that's for general purpose work, rather than special-purpose local project stuff. The feature needs a facility to set the system project, and a given project can override what it's system project is. It might be hierarchical, as well, so a system project is at the level of a directory containing numerous other projects."
 
+Later on 2026-11-05: "Actually, it should be "root", not "system""
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 11:57:47 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:57:44 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 1:58:46 PM PT
