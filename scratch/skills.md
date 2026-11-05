@@ -140,7 +140,7 @@ PROJECTS
   /projects                        The machine's registry of Waytide projects
   /projects help                   Print this command's help
 
-PROCEDURES
+VERSIONING
   /release                         Choose the next version
   /release help                    Print this command's help
 
