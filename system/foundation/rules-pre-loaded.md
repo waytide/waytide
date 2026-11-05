@@ -462,7 +462,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 ## The startup display
 
 1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
-2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the figure and then the loading line, on the session's first prompt only.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
 3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 

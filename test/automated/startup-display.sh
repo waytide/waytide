@@ -34,6 +34,8 @@ control_load_line="Waytide's rules will load on the first prompt, or enter: /loa
 control_loading_text() {
   cat <<'DISPLAY'
 
+Slasher is pre-loading its rules...
+
      __      /
     /  \    /
    |    |  /
@@ -48,8 +50,6 @@ control_loading_text() {
     | |
   __|_|__
  (o)   (o)
-
-Slasher is pre-loading its rules...
 DISPLAY
 }
 
@@ -67,11 +67,11 @@ control_event='{"session_id": "some-session", "hook_event_name": "UserPromptSubm
 
 output=$(printf '%s' "$control_event" | system/foundation/startup-display.sh)
 
-# Prints the figure and the loading line on a session's first prompt ---------------
+# Prints the loading line and the figure on a session's first prompt ---------------
 
 loading=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
 
-[ "$loading" = "$control_loading" ] || fail "Prints the figure and the loading line on a session's first prompt" "found:" "$output"
+[ "$loading" = "$control_loading" ] || fail "Prints the loading line and the figure on a session's first prompt" "found:" "$output"
 
 # Prints nothing on a later prompt in the same session -------------------------------
 

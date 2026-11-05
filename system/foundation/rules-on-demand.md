@@ -1130,14 +1130,14 @@ Source: system/foundation/source/the-startup-display-prints-as-the-session-start
 
 Trigger: When a session starts, or the engineer types its first prompt, or when changing the startup display or its script
 
-1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
+1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
 2. The package set is printed only where the project has declared one, after the loading part.
 3. The harness prints both parts. The agent prints none of them.
 4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
 5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
 6. The agent prints the package set, at the head of the response that carries the rule read.
 7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
-8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the figure and the loading line.
+8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the loading line and the figure.
 9. The second fenced block is the package-set example, which the script skips.
 10. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
 11. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
@@ -1206,7 +1206,13 @@ Waytide's rules will load on the first prompt, or enter: /load
 
 51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Waytide's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 52. The session-start notice has no close of its own. The load line says what a close said.
-53. The loading part opens with the block:
+53. The loading part opens with the loading line, which names the wait for the read:
+
+```
+Slasher is pre-loading its rules...
+```
+
+54. Then one blank line, then the block, which ends the loading part:
 
 ```
      __      /
@@ -1225,13 +1231,7 @@ Waytide's rules will load on the first prompt, or enter: /load
  (o)   (o)
 ```
 
-54. Then one blank line, then the loading line, which names the wait for the read and ends the loading part:
-
-```
-Slasher is pre-loading its rules...
-```
-
-55. Each gap is one blank line: after the title, after the license line, and ahead of the load line in the session-start part, and after the figure in the loading part.
+55. Each gap is one blank line: after the title, after the license line, and ahead of the load line in the session-start part, and after the loading line in the loading part.
 56. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
 57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.

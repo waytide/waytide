@@ -61,7 +61,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to somewhere, and with no upstream configured there is nowhere for it to be relative to. A branch that was never going to be pushed is ordinary, and calling it unpushed would be false. That does leave an upstream missing *by accident* unreported. It is a different fact from the one this segment names, and it is deliberately not folded in.
 
-- **A startup display, in two parts.** As the session starts, the session-start part frames the notice: the title and the copyright and license ahead of it, and the load line after it, last. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is: the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh` on every prompt, and it prints on the first only. Both read them from the the-startup-display-prints-as-the-session-starts rule, which governs the display.
+- **A startup display, in two parts.** As the session starts, the session-start part frames the notice: the title and the copyright and license ahead of it, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is: the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh` on every prompt, and it prints on the first only. Both read them from the the-startup-display-prints-as-the-session-starts rule, which governs the display.
 
 The notice and the display are wired by the hooks of the Slasher plugin, in `.claude/skills/slasher/`, which `install.sh` assembles in the consuming project. The status line is wired by a committed `.claude/settings.json`, which `install.sh` places too, because a plugin cannot set the main status line.
 
@@ -254,7 +254,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 ## The startup display
 
 1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
-2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the figure and then the loading line, on the session's first prompt only.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
 3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 
@@ -303,6 +303,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: the loading part prints the figure, then the loading line, a change of order in two sentences; not checked, since the compressed point says the same in place
 - 2026-11-04, revised: a blank line sets the open line apart from the install line; checked: 84 directives, 81 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the instruction itself states the read is unconditional, why the loader is run again after a compaction, and that other harnesses need equivalent glue
 - 2026-11-04, revised: the startup display's load line follows the notice; checked: 79 directives, 76 kept, 3 less precise, 0 lost. Left less precise: that the loading part, like the session-start part, is read from the startup display rule, which the point that the script reads the art from that rule already gives; why the loader is run again after a compaction; and that other harnesses need equivalent glue
+- 2026-11-04, revised: the loading part prints the loading line, then the figure, the order the engineer set; not re-checked
 
 ## History
 
@@ -437,3 +438,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 1:04:41 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 5:47:26 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:01:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT

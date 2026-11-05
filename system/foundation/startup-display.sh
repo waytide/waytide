@@ -8,7 +8,7 @@
 #
 # The display is read from the the-startup-display-prints-as-the-session-starts rule's fenced
 # blocks, so the rule stays the one copy of it. The session-start part is the title, the
-# copyright and license, and the load line. The loading part is the figure, then the loading line.
+# copyright and license, and the load line. The loading part is the loading line, then the figure.
 # The package-set example block is skipped: the agent prints the package set, in markdown.
 #
 # The display never disrupts a prompt: any problem exits quietly with no output.
