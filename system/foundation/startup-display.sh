@@ -85,8 +85,10 @@ escaped=$(printf '%s\n' "$display" |
   sed 's/\\/\\\\/g; s/"/\\"/g' |
   awk 'BEGIN { ORS = "" } { print "\\n" } { print }')
 
+# The session-start part opens with one more backslash-n, so a blank line stands between the
+# harness's label and the title.
 if [ "$1" = "message" ]; then
-  printf '%s\n' "$escaped"
+  printf '\\n%s\n' "$escaped"
   exit 0
 fi
 

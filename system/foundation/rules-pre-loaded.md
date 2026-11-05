@@ -378,13 +378,14 @@ Source: system/foundation/source/the-harness-announces-waytides-installation-and
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
 
 2. The install line enumerates what is on disk.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
-5. The open line names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
 6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.

@@ -21,6 +21,7 @@ fail() {
 control_start_text() {
   cat <<'DISPLAY'
 
+
 Waytide: Human-in-the-Loop Harness
 
 Copyright © 2026 Scott Bellware

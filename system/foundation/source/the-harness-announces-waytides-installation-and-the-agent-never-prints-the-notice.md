@@ -12,10 +12,11 @@ A project running Waytide announces the system's presence through **three surfac
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 ```
 
-  Below the install line, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
+  Below the install line, after a blank line, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
 
@@ -169,13 +170,14 @@ Keep the engineer's own segments separated by the middle dot. Set the trailing W
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
 
 2. The install line enumerates what is on disk.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
-5. The open line names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
 6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
@@ -299,8 +301,11 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: the notice's close names `/load`; checked: 63 directives, 62 kept, 1 less precise, 0 lost. Left less precise, untouched by this revision: that a missing upstream is reported nowhere, not only kept out of the unpushed segment
 - 2026-11-04, revised: the notice has no close, and the startup display's load line says what it said; checked: 71 directives, 69 kept, 2 less precise, 0 lost. Left less precise, untouched by this revision: that the two local files are the only things named beside the packages, and that `session-start.sh instruction` prints the instruction alone, as plain text
 - 2026-11-04, revised: the loading part prints the figure, then the loading line, a change of order in two sentences; not checked, since the compressed point says the same in place
+- 2026-11-04, revised: a blank line sets the open line apart from the install line; checked: 84 directives, 81 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the instruction itself states the read is unconditional, why the loader is run again after a compaction, and that other harnesses need equivalent glue
 
 ## History
+
+Until Wed Nov 4 2026 the open line sat directly under the install line, with no blank line between them.
 
 Until Wed Nov 4 2026 the notice closed with a caveat, `Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.`, then, on a line of its own, the command to type. The two blank lines ahead of them set the ask apart from the report and the command apart from the caveat.
 
@@ -429,3 +434,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:51:16 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 1:04:41 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 5:47:26 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:01:43 PM PT

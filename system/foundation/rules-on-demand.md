@@ -1149,7 +1149,7 @@ Waytide: Human-in-the-Loop Harness
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-15. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
+15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. The session-start part opens with one more, so a blank line stands between the label and the title. The breaks are the script's, not fenced blocks in this file.
 16. The title stands alone. No subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
 18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.

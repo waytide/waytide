@@ -177,10 +177,11 @@ if [ -n "$own" ]; then
   )
 fi
 
-# A literal backslash-n, so the JSON string carries a line break the harness
-# renders — not an actual newline, which would be invalid inside a JSON string.
+# Literal backslash-ns, so the JSON string carries line breaks the harness renders — not
+# actual newlines, which would be invalid inside a JSON string. A blank line sets the open
+# implementations apart from the install line.
 if [ -n "$implementations" ]; then
-  notice="${notice}\\n${implementations}"
+  notice="${notice}\\n\\n${implementations}"
 fi
 
 # The notice has no close of its own. The load line that ends the display's session-start part,

@@ -94,4 +94,23 @@ Waytide installed at system/ — 2 packages: foundation, other"
 
 [ "$display_message" = "$control_message" ] || fail "Ends with the install line, the display's load line standing in for a close" "message:" "$display_message"
 
-echo "5 passed"
+# Sets the open implementations apart from the install line with a blank line ------
+
+mkdir -p "$project/local/implementations"
+cat > "$project/local/implementations/2026-01-01T00-00-00Z-some-feature-ACTIVE.md" <<'RECORD'
+# Feature — Some feature
+
+- **State:** Active
+RECORD
+
+open_output=$(cd "$project" && sh system/foundation/session-start.sh < /dev/null)
+open_message=$(printf '%s' "$open_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
+
+case "$open_message" in
+  *"Waytide installed at system/ — 2 packages: foundation, other
+
+1 implementation open: "*) ;;
+  *) fail "Sets the open implementations apart from the install line with a blank line" "message:" "$open_message" ;;
+esac
+
+echo "6 passed"

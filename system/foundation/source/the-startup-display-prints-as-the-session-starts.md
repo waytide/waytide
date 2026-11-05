@@ -103,7 +103,7 @@ Loading will take a moment
 
 **The title leads.** It is the first line of the display, and the display is printed before the agent's response begins, so nothing the agent writes can stand ahead of it.
 
-**The display opens with a line break, so the title starts a line of its own.** The harness prints its own label ahead of a hook's message, as in `UserPromptSubmit says:`. Without the break, the title runs on from that label as though the two were one sentence. The break is the script's, and it is not a fenced block in this file.
+**Each part opens with a line break, so its first line starts a line of its own.** The harness prints its own label ahead of a hook's message, as in `SessionStart:startup says:`. Without the break, the first line runs on from that label as though the two were one sentence. **The session-start part opens with one more**, so a blank line stands between the label and the title. The breaks are the script's, and they are not fenced blocks in this file.
 
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
@@ -148,7 +148,7 @@ Waytide: Human-in-the-Loop Harness
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-15. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
+15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. The session-start part opens with one more, so a blank line stands between the label and the title. The breaks are the script's, not fenced blocks in this file.
 16. The title stands alone. No subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
 18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
@@ -252,6 +252,7 @@ Loading will take a moment
 - 2026-11-04, revised: the notice's close names `/load`, a body sentence only; not checked, since the compressed text does not name the command there
 - 2026-11-04, revised: the display prints in two parts, the session-start part as the session starts and the loading part on the first prompt; checked: 61 directives, 58 kept, 2 less precise, 1 lost, 2 repairs; re-checked: 61 directives, 60 kept, 1 less precise, 0 lost. Left less precise: that the figure fills the wait the loading line names
 - 2026-11-04, revised: the loading part prints the figure, then the loading line; checked: 60 directives, 59 kept, 1 less precise, 0 lost. Left less precise, untouched by this revision: that the agent prints the package set because it needs markdown
+- 2026-11-04, revised: a blank line stands between the harness's label and the title; checked: 66 directives, 66 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -328,3 +329,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:51:16 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 1:03:03 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 5:47:07 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:02:22 PM PT
