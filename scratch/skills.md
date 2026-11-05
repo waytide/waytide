@@ -143,8 +143,6 @@ PROJECTS
 PROCEDURES
   /release                         Choose the next version
   /release help                    Print this command's help
-  /publish [<package>...]          Publish packages (this repository only)
-  /publish help                    Print this command's help
 
 REPORTS
   /status-report                   The whole-project report
