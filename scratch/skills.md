@@ -117,7 +117,7 @@ JOURNAL
   /journal help                    Print this command's help
 
 FREEWRITING
-  /freewrite begin                 Begin freewriting
+  /freewrite, /freewrite begin     Begin freewriting
   /freewrite end                   End it, and organize what was said
   /freewrite resume                Resume a freewrite that has ended
   /freewrite idea                  Freewrite and record it in an idea item
