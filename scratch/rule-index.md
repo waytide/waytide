@@ -19,7 +19,7 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
 | 4 | The harness announces Waytide's installation, and the agent never prints the notice | `the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice` | pre-loaded |  |
-| 5 | The startup display prints once per session | `the-startup-display-prints-as-the-session-starts` | on-demand | When the engineer types `load waytide`, or when changing the startup display or its script |
+| 5 | The startup display prints once per session | `the-startup-display-prints-as-the-session-starts` | on-demand | When the engineer types `load rules`, or when changing the startup display or its script |
 
 ### Writing rules
 

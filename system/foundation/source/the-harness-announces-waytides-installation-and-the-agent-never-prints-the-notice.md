@@ -149,7 +149,7 @@ Keep the instruction naming the project's own `local/rules/` and `local/vocabula
 
 Keep it telling the agent not to print the startup display. Add no opt-out: these surfaces are not silenceable, and the read instruction is emitted every session. Keep the mark's art out of this hook's script: it belongs in the startup display rule, where it is not a JSON literal, and `session-start.sh` takes it from `startup-display.sh message`, which escapes it.
 
-Keep the load command named in both channels. The startup display's load line, after the notice, tells the engineer to type `/load`. The instruction tells the agent that `/load`, or `load waytide`, asks for the read and nothing more. `/load` is the same command delivered as a skill, typed `/load` or `/slasher:load`. It asks for the same read and nothing more. It takes the read instruction from `session-start.sh instruction`, which prints the instruction alone, as plain text, so `/load` and `load waytide` follow one text.
+Keep the load command named in both channels. The startup display's load line, after the notice, tells the engineer to type `/load`. The instruction tells the agent that `/load`, or `load rules`, asks for the read and nothing more. `/load` is the same command delivered as a skill, typed `/load` or `/slasher:load`. It asks for the same read and nothing more. It takes the read instruction from `session-start.sh instruction`, which prints the instruction alone, as plain text, so `/load` and `load rules` follow one text.
 
 Keep the notice ending with what it reports. The startup display's load line, after it, names `/load`.
 
@@ -216,7 +216,7 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load waytide` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+17. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
 18. This rule does not restate the directory list.
 19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
 20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
@@ -304,8 +304,11 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: a blank line sets the open line apart from the install line; checked: 84 directives, 81 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the instruction itself states the read is unconditional, why the loader is run again after a compaction, and that other harnesses need equivalent glue
 - 2026-11-04, revised: the startup display's load line follows the notice; checked: 79 directives, 76 kept, 3 less precise, 0 lost. Left less precise: that the loading part, like the session-start part, is read from the startup display rule, which the point that the script reads the art from that rule already gives; why the loader is run again after a compaction; and that other harnesses need equivalent glue
 - 2026-11-04, revised: the loading part prints the loading line, then the figure, the order the engineer set; not re-checked
+- 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
 
 ## History
+
+Until Wed Nov 4 2026 the typed command was `load waytide`.
 
 Until Wed Nov 4 2026 the open line sat directly under the install line, with no blank line between them.
 
@@ -439,3 +442,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 5:47:26 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:01:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT

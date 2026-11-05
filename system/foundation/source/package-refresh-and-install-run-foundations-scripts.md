@@ -8,7 +8,7 @@
 
 **`/package install` installs Waytide into the project the session is in.** It runs foundation's `install.sh` from the project's root, and the installer asks before it changes a file the project already has. It is not run in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
 
-**Each changes what the project reads at its next session.** A refreshed or installed rule is read when the rules are next loaded, so the report says that a session restart, or a `load waytide`, takes it up.
+**Each changes what the project reads at its next session.** A refreshed or installed rule is read when the rules are next loaded, so the report says that a session restart, or a `load rules`, takes it up.
 
 **Why:** a refresh and an install are each a script that already does the work and reports it. A command that runs the script, in the right place, and passes on its report, keeps the engineer from typing a path and keeps the agent from guessing at the work the script does.
 
@@ -20,11 +20,16 @@
 2. `/package install` installs Waytide into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
 3. Act only on the project the session is in. Refreshing or installing in another project is the engineer's to ask for there.
 4. Never run `/package install` in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
-5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load waytide`.
+5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load rules`.
 
 ## Compression
 
 - 2026-11-02, compressed: checked: 12 directives, 7 kept, 5 less precise, 0 lost, 5 repairs; re-checked: 12 directives, 11 kept, 1 less precise, 0 lost. Left less precise: running install.sh directly in the authoring source, which the repository's own AGENTS.md forbids
+- 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
+
+## History
+
+Until Wed Nov 4 2026 the typed command was `load waytide`.
 
 Related:
 
@@ -34,3 +39,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Nov 2 2026 at 9:02:21 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT

@@ -10,7 +10,7 @@ The things below are printed verbatim, in two parts. **The session-start part** 
 
 **The script reads the five from the fenced blocks of this rule's body, in its source file, by position.** It stops at the `## Compressed` heading, so the compressed text's blocks are not counted. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line: the session-start part. The fifth and sixth are the loading line and the figure: the loading part. The second is the package-set example, which the script skips. **Adding, removing, or reordering a fenced block in this rule's body changes what is printed.** The automated test `test/automated/startup-display.sh` compares the printed display with the expected text, and fails when the two differ.
 
-**The loading part prints once per session, on the first prompt.** The first prompt is when the read starts, whether it is `/load`, `load waytide`, or any other request. The script records the session's first prompt in a marker named for the session, under the temporary directory, and prints nothing on a later prompt. A prompt whose input names no session prints the loading part every time, rather than never.
+**The loading part prints once per session, on the first prompt.** The first prompt is when the read starts, whether it is `/load`, `load rules`, or any other request. The script records the session's first prompt in a marker named for the session, under the temporary directory, and prints nothing on a later prompt. A prompt whose input names no session prints the loading part every time, rather than never.
 
 First the title, on its own:
 
@@ -257,8 +257,11 @@ Slasher is pre-loading its rules...
 - 2026-11-04, revised: the loading line reads *Slasher is pre-loading its rules...*, wording the engineer gave; not re-checked
 - 2026-11-04, revised: the loading line prints ahead of the figure, the order the engineer set; not re-checked
 - 2026-11-04, revised: a blank line stands between the harness's label and the loading line, as the engineer directed; not re-checked
+- 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
 
 ## History
+
+Until Wed Nov 4 2026 the typed command was `load waytide`.
 
 On Wed Nov 4 2026 the loading line read *Loading will take a moment*, until the engineer reworded it the same day.
 
@@ -342,3 +345,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:09:55 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:14:38 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT

@@ -802,7 +802,7 @@ Trigger: When the engineer asks to refresh or install Waytide's packages, as wit
 2. `/package install` installs Waytide into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
 3. Act only on the project the session is in. Refreshing or installing in another project is the engineer's to ask for there.
 4. Never run `/package install` in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
-5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load waytide`.
+5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load rules`.
 
 # Projects lists the machine's registry of Waytide projects
 
