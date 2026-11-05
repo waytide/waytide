@@ -184,10 +184,10 @@ if [ -n "$implementations" ]; then
   notice="${notice}\\n\\n${implementations}"
 fi
 
-# The notice has no close of its own. The load line that ends the display's session-start part,
-# printed ahead of the notice, says when the rules load and that /load loads them now. A close
-# here said the same until 2026-11-04, and the notice ends with what it reports: the install,
-# and any experiment or feature left open.
+# The notice has no close of its own. The startup display's load line, printed after it, says
+# when the rules load and that /load loads them now. A close here said the same until
+# 2026-11-04, and the notice ends with what it reports: the install, and any experiment or
+# feature left open.
 
 # The read instruction, carried to the agent rather than to the engineer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
@@ -298,12 +298,17 @@ if [ "$source" = "compact" ]; then
   instruction="The context has just been compacted. The rules read at the start of this session now survive only as the compaction's summary, which does not hold them. Before your next act, whatever the next request is, run the loader again and read its whole output, as follows. ${instruction}"
 fi
 
-# The startup display leads the message, so the session opens with it and the notice follows.
-# startup-display.sh prints it ready for a JSON string, and prints nothing where its rule is
-# missing, which leaves the notice alone.
+# The startup display's title and license lead the message, and its load line ends it, so the
+# notice stands between them. startup-display.sh prints each ready for a JSON string, and prints
+# nothing where its rule is missing, which leaves the notice alone.
 display=$(sh "$system/foundation/startup-display.sh" message 2>/dev/null)
 if [ -n "$display" ]; then
   notice="${display}\\n\\n${notice}"
+fi
+
+load_line=$(sh "$system/foundation/startup-display.sh" load-line 2>/dev/null)
+if [ -n "$load_line" ]; then
+  notice="${notice}\\n\\n${load_line}"
 fi
 
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \

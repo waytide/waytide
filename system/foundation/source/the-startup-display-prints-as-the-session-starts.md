@@ -2,9 +2,9 @@
 
 **Trigger:** When a session starts, or the engineer types its first prompt, or when changing the startup display or its script
 
-The things below are printed verbatim, in two parts. **The session-start part** prints as the session starts: the title, the copyright and license, and the load line. **The loading part** prints on the session's first prompt, whatever the prompt is, since that is when the rules are read: the figure, then the loading line. Five things are always printed, in the order this file gives them. The package set is printed only where the project has declared one, and it prints after the loading part, whatever its place in this file.
+The things below are printed verbatim, in two parts. **The session-start part** prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. **The loading part** prints on the session's first prompt, whatever the prompt is, since that is when the rules are read: the figure, then the loading line. Five things are always printed, in the order this file gives them. The package set is printed only where the project has declared one, and it prints after the loading part, whatever its place in this file.
 
-**The harness prints the five, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the session-start part ahead of the session-start notice, in the one `systemMessage`. It takes that part from `startup-display.sh message`, which prints it alone. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt and nothing after. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the five, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice, and the load line after it, in the one `systemMessage`. It takes the title and the license from `startup-display.sh message`, and the load line from `startup-display.sh load-line`, each of which prints its blocks alone. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt and nothing after. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
@@ -56,7 +56,7 @@ Copyright © 2026 Scott Bellware
 *Eventide Common Interest License*
 ```
 
-Then **one blank line**, then the load line, which ends the session-start part of the display:
+The load line follows the session-start notice, after **one blank line**, and ends the session-start message:
 
 ```
 Waytide's rules will load on the first prompt, or enter: /load
@@ -84,10 +84,10 @@ The loading part prints on the session's first prompt. First the block:
 Then **one blank line**, then the loading line, which ends the loading part:
 
 ```
-Loading will take a moment
+Slasher is pre-loading its rules...
 ```
 
-**Each gap is one blank line.** In the session-start part there are two — after the title and after the license line. In the loading part there is one — after the figure. With no gap at all a block reads as a caption attached to what follows, or as its first line, so a separation is needed.
+**Each gap is one blank line.** In the session-start part there are three — after the title, after the license line, and ahead of the load line, after the notice. In the loading part there is one — after the figure. With no gap at all a block reads as a caption attached to what follows, or as its first line, so a separation is needed.
 
 **The harness renders the display as plain text, so the lines print exactly as the blocks hold them.** A blank line is a blank line, and the figure keeps its spacing without a fence. One line is kept because one is what separates.
 
@@ -95,7 +95,7 @@ Loading will take a moment
 
 **These are the whole of what is printed.** Nothing else accompanies them — no greeting, no account of what is about to be read, no name for the block itself. The package set is the one part that is not always present, and its absence is the ordinary case rather than an omission.
 
-**The load line says when the rules load, and how to load them now.** It ends the session-start part, so it is what the engineer reads last before typing. It states the one fact the engineer needs before the first prompt: the rules load on that prompt, whatever it is, and `/load` loads them with no other request. The session-start notice has no close of its own, because this line says what a close said. The plugin that prints it carries the `/load` skill, so the command it names is always available.
+**The load line says when the rules load, and how to load them now.** It ends the session-start message, after the notice, so it is what the engineer reads last before typing. It states the one fact the engineer needs before the first prompt: the rules load on that prompt, whatever it is, and `/load` loads them with no other request. The session-start notice has no close of its own, because this line says what a close said. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 
 **It says *Waytide's rules*.** It stands under a title, a copyright, and a license, none of which is a sentence, so it names its subject itself.
 
@@ -129,10 +129,10 @@ Loading will take a moment
 
 ## Compressed
 
-1. The display prints verbatim in two parts. The session-start part, the title, the copyright and license, and the load line, prints as the session starts. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
+1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
 2. The package set is printed only where the project has declared one, after the loading part.
 3. The harness prints both parts. The agent prints none of them.
-4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the session-start part ahead of the session-start notice, in one `systemMessage`, taking it from `startup-display.sh message`, which prints that part alone.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
 5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
 6. The agent prints the package set, at the head of the response that carries the rule read.
 7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
@@ -197,7 +197,7 @@ Copyright © 2026 Scott Bellware
 47. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
 48. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
 49. The year is not computed. It changes only when the rule changes.
-50. Then one blank line, then the load line, which ends the session-start part:
+50. The load line follows the session-start notice, after one blank line, and ends the session-start message:
 
 ```
 Waytide's rules will load on the first prompt, or enter: /load
@@ -227,10 +227,10 @@ Waytide's rules will load on the first prompt, or enter: /load
 54. Then one blank line, then the loading line, which names the wait for the read and ends the loading part:
 
 ```
-Loading will take a moment
+Slasher is pre-loading its rules...
 ```
 
-55. Each gap is one blank line: after the title and after the license line in the session-start part, and after the figure in the loading part.
+55. Each gap is one blank line: after the title, after the license line, and ahead of the load line in the session-start part, and after the figure in the loading part.
 56. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
 57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
@@ -253,8 +253,14 @@ Loading will take a moment
 - 2026-11-04, revised: the display prints in two parts, the session-start part as the session starts and the loading part on the first prompt; checked: 61 directives, 58 kept, 2 less precise, 1 lost, 2 repairs; re-checked: 61 directives, 60 kept, 1 less precise, 0 lost. Left less precise: that the figure fills the wait the loading line names
 - 2026-11-04, revised: the loading part prints the figure, then the loading line; checked: 60 directives, 59 kept, 1 less precise, 0 lost. Left less precise, untouched by this revision: that the agent prints the package set because it needs markdown
 - 2026-11-04, revised: a blank line stands between the harness's label and the title; checked: 66 directives, 66 kept, 0 less precise, 0 lost
+- 2026-11-04, revised: the load line ends the session-start message, after the notice; checked: 65 directives, 65 kept, 0 less precise, 0 lost
+- 2026-11-04, revised: the loading line reads *Slasher is pre-loading its rules...*, wording the engineer gave; not re-checked
 
 ## History
+
+On Wed Nov 4 2026 the loading line read *Loading will take a moment*, until the engineer reworded it the same day.
+
+On Wed Nov 4 2026 the load line followed the license line, ahead of the session-start notice, until it was moved after the notice the same day.
 
 On Wed Nov 4 2026 the loading part printed the loading line ahead of the figure, until it was put after it the same day.
 
@@ -330,3 +336,5 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 11:51:16 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 1:03:03 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 5:47:07 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:02:22 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:09:55 PM PT

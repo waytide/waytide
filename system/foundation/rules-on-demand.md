@@ -1130,10 +1130,10 @@ Source: system/foundation/source/the-startup-display-prints-as-the-session-start
 
 Trigger: When a session starts, or the engineer types its first prompt, or when changing the startup display or its script
 
-1. The display prints verbatim in two parts. The session-start part, the title, the copyright and license, and the load line, prints as the session starts. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
+1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the figure and then the loading line, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
 2. The package set is printed only where the project has declared one, after the loading part.
 3. The harness prints both parts. The agent prints none of them.
-4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the session-start part ahead of the session-start notice, in one `systemMessage`, taking it from `startup-display.sh message`, which prints that part alone.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
 5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
 6. The agent prints the package set, at the head of the response that carries the rule read.
 7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
@@ -1198,7 +1198,7 @@ Copyright © 2026 Scott Bellware
 47. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
 48. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
 49. The year is not computed. It changes only when the rule changes.
-50. Then one blank line, then the load line, which ends the session-start part:
+50. The load line follows the session-start notice, after one blank line, and ends the session-start message:
 
 ```
 Waytide's rules will load on the first prompt, or enter: /load
@@ -1228,10 +1228,10 @@ Waytide's rules will load on the first prompt, or enter: /load
 54. Then one blank line, then the loading line, which names the wait for the read and ends the loading part:
 
 ```
-Loading will take a moment
+Slasher is pre-loading its rules...
 ```
 
-55. Each gap is one blank line: after the title and after the license line in the session-start part, and after the figure in the loading part.
+55. Each gap is one blank line: after the title, after the license line, and ahead of the load line in the session-start part, and after the figure in the loading part.
 56. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
 57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.

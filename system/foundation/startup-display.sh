@@ -17,6 +17,7 @@
 #
 #   printf '{"session_id":"some-session","prompt":"some prompt"}' | waytide/system/foundation/startup-display.sh
 #   waytide/system/foundation/startup-display.sh message
+#   waytide/system/foundation/startup-display.sh load-line
 #
 # Nobody types the first. The Slasher plugin's UserPromptSubmit hook runs it on every prompt, and
 # session-start.sh runs the second. The line is recorded because a script whose
@@ -40,16 +41,20 @@ fi
 rule=$system/foundation/source/the-startup-display-prints-as-the-session-starts.md
 [ -f "$rule" ] || exit 0
 
-# Given message, the session-start part is printed alone, as the systemMessage carries it, for
-# session-start.sh to put ahead of the notice. No prompt is read. That part is fenced blocks 1,
-# 3, and 4. Block 2 is the package-set example, which the agent prints.
+# Given message, the title and the copyright and license, fenced blocks 1 and 3, are printed
+# alone, as the systemMessage carries them, for session-start.sh to put ahead of the notice.
+# Given load-line, the load line, block 4, is printed alone, for session-start.sh to put last,
+# after the notice. Neither reads a prompt. Block 2 is the package-set example, which the agent
+# prints.
 #
 # Otherwise this is the prompt hook, and the loading part, blocks 5 and 6, prints on the
 # session's first prompt only, since that is when the read starts. A marker named for the
 # session, under TMPDIR, records that the first prompt has passed. A prompt that names no
 # session prints the loading part every time.
 if [ "$1" = "message" ]; then
-  blocks=" 1 3 4 "
+  blocks=" 1 3 "
+elif [ "$1" = "load-line" ]; then
+  blocks=" 4 "
 else
   session=$(cat | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | tr -cd 'A-Za-z0-9_-')
   if [ -n "$session" ]; then
@@ -89,6 +94,12 @@ escaped=$(printf '%s\n' "$display" |
 # harness's label and the title.
 if [ "$1" = "message" ]; then
   printf '\\n%s\n' "$escaped"
+  exit 0
+fi
+
+# The load line follows the notice inside the same message, so it takes no break of its own.
+if [ "$1" = "load-line" ]; then
+  printf '%s\n' "${escaped#\\n}"
   exit 0
 fi
 

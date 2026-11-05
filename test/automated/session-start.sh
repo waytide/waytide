@@ -86,13 +86,17 @@ Waytide installed at "*) ;;
   *) fail "Prints the startup display ahead of the notice, in one message" "message:" "$display_message" ;;
 esac
 
-# Ends with the install line, the display's load line standing in for a close ---------
+# Ends with the display's load line, after the install line --------------------------
+
+control_load_line=$(cd "$project" && system/foundation/startup-display.sh load-line | sed 's/^/"/; s/$/"/' | python3 -c 'import json,sys; print(json.load(sys.stdin))')
 
 control_message="$control_display
 
-Waytide installed at system/ — 2 packages: foundation, other"
+Waytide installed at system/ — 2 packages: foundation, other
 
-[ "$display_message" = "$control_message" ] || fail "Ends with the install line, the display's load line standing in for a close" "message:" "$display_message"
+$control_load_line"
+
+[ "$display_message" = "$control_message" ] || fail "Ends with the display's load line, after the install line" "message:" "$display_message"
 
 # Sets the open implementations apart from the install line with a blank line ------
 

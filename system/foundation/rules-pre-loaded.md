@@ -390,7 +390,7 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
 9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
-10. The notice has no close of its own. It ends with what it reports. The startup display's load line, ahead of it in the same message, says when the rules load and that `/load` loads them now.
+10. The notice has no close of its own. It ends with what it reports. The startup display's load line, after it in the same message, says when the rules load and that `/load` loads them now.
 11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
 12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
 13. The trade of observability for legibility is deliberate.
@@ -461,7 +461,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## The startup display
 
-1. As the session starts, the display's session-start part, the title, the copyright and license, and the load line, leads the notice's message, read from the the-startup-display-prints-as-the-session-starts rule.
+1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
 2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the figure and then the loading line, on the session's first prompt only.
 3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.

@@ -26,10 +26,10 @@ Waytide: Human-in-the-Loop Harness
 
 Copyright © 2026 Scott Bellware
 Eventide Common Interest License
-
-Waytide's rules will load on the first prompt, or enter: /load
 DISPLAY
 }
+
+control_load_line="Waytide's rules will load on the first prompt, or enter: /load"
 
 control_loading_text() {
   cat <<'DISPLAY'
@@ -49,7 +49,7 @@ control_loading_text() {
   __|_|__
  (o)   (o)
 
-Loading will take a moment
+Slasher is pre-loading its rules...
 DISPLAY
 }
 
@@ -85,5 +85,12 @@ message=$(system/foundation/startup-display.sh message)
 start=$(printf '"%s"' "$message" | python3 -c 'import json,sys; print(json.load(sys.stdin))' 2>/dev/null || true)
 
 [ "$start" = "$control_start" ] || fail "Prints the session-start part alone, as the session-start message carries it" "found:" "$message"
+
+# Prints the load line alone, for session-start.sh to put last ------------------------
+
+load_line=$(system/foundation/startup-display.sh load-line)
+load_line_text=$(printf '"%s"' "$load_line" | python3 -c 'import json,sys; print(json.load(sys.stdin))' 2>/dev/null || true)
+
+[ "$load_line_text" = "$control_load_line" ] || fail "Prints the load line alone, for session-start.sh to put last" "found:" "$load_line"
 
 echo "0 failed, 0 aborted"

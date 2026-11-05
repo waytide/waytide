@@ -69,8 +69,8 @@ override default behavior where they conflict; explicit user instructions still 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
 `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs
 `waytide/system/foundation/session-start.sh`, which reads the package directories
-actually present and emits the `Waytide installed at … — N packages: …` notice, after a
-line telling the engineer the rules load on the first prompt, or to type `/load` — the
+actually present and emits the `Waytide installed at … — N packages: …` notice, followed
+by a line telling the engineer the rules load on the first prompt, or to type `/load` — the
 command that asks for the read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
 the working directory, branch, and any uncommitted, untracked, or unpushed work.
