@@ -103,7 +103,7 @@ Then **one blank line**, then the block, which ends the loading part:
 
 **The title leads.** It is the first line of the display, and the display is printed before the agent's response begins, so nothing the agent writes can stand ahead of it.
 
-**Each part opens with a line break, so its first line starts a line of its own.** The harness prints its own label ahead of a hook's message, as in `SessionStart:startup says:`. Without the break, the first line runs on from that label as though the two were one sentence. **The session-start part opens with one more**, so a blank line stands between the label and the title. The breaks are the script's, and they are not fenced blocks in this file.
+**Each part opens with a line break, so its first line starts a line of its own.** The harness prints its own label ahead of a hook's message, as in `SessionStart:startup says:`. Without the break, the first line runs on from that label as though the two were one sentence. **Each part opens with one more**, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, and they are not fenced blocks in this file.
 
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
@@ -148,7 +148,7 @@ Waytide: Human-in-the-Loop Harness
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. The session-start part opens with one more, so a blank line stands between the label and the title. The breaks are the script's, not fenced blocks in this file.
+15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
 16. The title stands alone. No subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
 18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
@@ -256,6 +256,7 @@ Slasher is pre-loading its rules...
 - 2026-11-04, revised: the load line ends the session-start message, after the notice; checked: 65 directives, 65 kept, 0 less precise, 0 lost
 - 2026-11-04, revised: the loading line reads *Slasher is pre-loading its rules...*, wording the engineer gave; not re-checked
 - 2026-11-04, revised: the loading line prints ahead of the figure, the order the engineer set; not re-checked
+- 2026-11-04, revised: a blank line stands between the harness's label and the loading line, as the engineer directed; not re-checked
 
 ## History
 
@@ -340,3 +341,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:02:22 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:09:55 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:14:38 PM PT

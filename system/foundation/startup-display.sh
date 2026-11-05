@@ -103,4 +103,6 @@ if [ "$1" = "load-line" ]; then
   exit 0
 fi
 
-printf '{"systemMessage": "%s"}\n' "$escaped"
+# The loading part opens with one more backslash-n too, so a blank line stands between the
+# harness's label and the loading line.
+printf '{"systemMessage": "\\n%s"}\n' "$escaped"

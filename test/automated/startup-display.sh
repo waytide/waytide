@@ -34,6 +34,7 @@ control_load_line="Waytide's rules will load on the first prompt, or enter: /loa
 control_loading_text() {
   cat <<'DISPLAY'
 
+
 Slasher is pre-loading its rules...
 
      __      /
