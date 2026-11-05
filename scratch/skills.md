@@ -144,10 +144,6 @@ VERSIONING
   /release                         Choose the next version
   /release help                    Print this command's help
 
-REPORTS
-  /status-report                   The whole-project report
-  /status-report help              Print this command's help
-
 PACKAGES
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
