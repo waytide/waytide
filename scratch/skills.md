@@ -150,6 +150,9 @@ PACKAGES
   /package refresh [<package>...]  Refresh installed packages
   /package install                 Install Waytide
   /package help                    Print this command's help
+  /package-set                     Show the active package set
+  /package-set <set or packages>   Declare the package set
+  /package-set help                Print this command's help
 
 LANGUAGE
   /reserve <word>                  Reserve a word, in six steps
