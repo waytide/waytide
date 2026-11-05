@@ -95,7 +95,7 @@ PROCESS
                                    multi-step process
   /next?                           The next step in the current multi-step
                                    process
-  /work-status                     What was recently done, and what's next
+  /work-status, /status            What was recently done, and what's next
 
 LOG
   /log                             Write a log entry
