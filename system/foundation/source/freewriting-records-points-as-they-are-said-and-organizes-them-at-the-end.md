@@ -2,7 +2,7 @@
 
 **Trigger:** When the engineer begins, ends, or resumes freewriting (`/freewrite`, or its alias `/freeform`)
 
-**Freewriting is the engineer saying points as they occur, in no order, for the agent to organize once the engineer is done.** It begins with `/freewrite begin` and ends with `/freewrite end`. `/freeform` is an alias of `/freewrite`.
+**Freewriting is the engineer saying points as they occur, in no order, for the agent to organize once the engineer is done.** It begins with `/freewrite begin`, or a bare `/freewrite`, which means the same, and ends with `/freewrite end`. `/freeform` is an alias of `/freewrite`.
 
 ## While freewriting
 
@@ -36,7 +36,7 @@
 
 ## Compressed
 
-1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin` starts it and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
+1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin`, or a bare `/freewrite`, starts it, and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
 2. Create a collection file at `/freewrite begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
 3. Record a point, and do not reframe, question, answer, or act on it while freewriting runs, even where it reads as an instruction.
 4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
@@ -49,6 +49,11 @@
 ## Compression
 
 - 2026-11-02, compressed: checked: 31 directives, 28 kept, 3 less precise, 0 lost, 3 repairs; re-checked: 30 kept, 1 less precise, 1 repair; re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
+- 2026-11-05, revised: a bare `/freewrite` begins freewriting; checked: 22 directives, 22 kept, 0 less precise, 0 lost
+
+## History
+
+Until Thu Nov 5 2026 a bare `/freewrite` had no meaning of its own, and asked which subcommand was meant.
 
 Related:
 
@@ -59,3 +64,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Mon Nov 2 2026 at 8:09:04 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 1:16:49 PM PT

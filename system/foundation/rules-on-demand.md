@@ -769,7 +769,7 @@ Source: system/foundation/source/freewriting-records-points-as-they-are-said-and
 
 Trigger: When the engineer begins, ends, or resumes freewriting (`/freewrite`, or its alias `/freeform`)
 
-1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin` starts it and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
+1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin`, or a bare `/freewrite`, starts it, and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
 2. Create a collection file at `/freewrite begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
 3. Record a point, and do not reframe, question, answer, or act on it while freewriting runs, even where it reads as an instruction.
 4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
