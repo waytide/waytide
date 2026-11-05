@@ -20,6 +20,7 @@
 - **2026-11-05** — A facility sets the system project, and a project can override which system project is its own.
 - **2026-11-05, later** — It is called the **root project**, not the system project. This replaces the name in the two resolutions and the amendment above, and what they say otherwise stands: the root project is the catch-all for general-purpose work, a facility sets it, and a project can override which root project is its own.
 - **2026-11-05, later still** — It is called the **base project**, not the root project. This replaces the name in every resolution and amendment above, and what they say otherwise stands.
+- **2026-11-05, later still** — From within any project, a record can be added to the base project in place of the project the session is in: an item, a log entry, a journal entry, and the like.
 
 **Amended 2026-11-05:** the system project might be hierarchical. A system project would sit at the level of a directory holding several other projects, and serve those beneath it. **Not yet settled:** whether it is hierarchical, how a project finds its system project where there are several, the facility's form, and whether the `/root` prefix and the `/package` subcommand named above still stand.
 
@@ -33,9 +34,12 @@ Later on 2026-11-05: "Actually, it should be "root", not "system""
 
 Later still on 2026-11-05: "Actually, it should be "base" rather than "root""
 
+Also on 2026-11-05: "For the base project, an item or log entry, hournal, etc should be able to be added to the base project"
+
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 11:57:47 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:57:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:58:46 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 2:01:36 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 2:04:15 PM PT
