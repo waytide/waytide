@@ -33,8 +33,6 @@ DISPLAY
 control_loading_text() {
   cat <<'DISPLAY'
 
-Loading will take a moment
-
      __      /
     /  \    /
    |    |  /
@@ -49,6 +47,8 @@ Loading will take a moment
     | |
   __|_|__
  (o)   (o)
+
+Loading will take a moment
 DISPLAY
 }
 
@@ -66,11 +66,11 @@ control_event='{"session_id": "some-session", "hook_event_name": "UserPromptSubm
 
 output=$(printf '%s' "$control_event" | system/foundation/startup-display.sh)
 
-# Prints the loading line and the figure on a session's first prompt ---------------
+# Prints the figure and the loading line on a session's first prompt ---------------
 
 loading=$(printf '%s' "$output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])' 2>/dev/null || true)
 
-[ "$loading" = "$control_loading" ] || fail "Prints the loading line and the figure on a session's first prompt" "found:" "$output"
+[ "$loading" = "$control_loading" ] || fail "Prints the figure and the loading line on a session's first prompt" "found:" "$output"
 
 # Prints nothing on a later prompt in the same session -------------------------------
 
