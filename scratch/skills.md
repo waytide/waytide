@@ -157,7 +157,8 @@ PACKAGES
 LANGUAGE
   /reserve <word>                  Reserve a word, in six steps
   /reserve help                    Print this command's help
-  /ete                             Write in Eventide Technical English
+  /ete [<text>]                    Say the previous answer, or the text, in
+                                   Eventide Technical English
   /ete help                        Print this command's help
   /expand                          Expand the previous answer
   /expand help                     Print this command's help
