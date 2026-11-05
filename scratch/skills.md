@@ -91,9 +91,9 @@ PHASE
   when it is added.
 
 PROCESS
-  /next                            Proceed to the next step in the current
+  /next-work                       Proceed to the next step in the current
                                    multi-step process
-  /next?                           The next step in the current multi-step
+  /next-work?                      The next step in the current multi-step
                                    process
   /work-status                     What was recently done, and what's next
 
