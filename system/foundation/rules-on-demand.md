@@ -1316,9 +1316,9 @@ Trigger: When a work session is closing, or the engineer asks for a work session
 
 Source: system/foundation/source/work-status-says-what-was-recently-done-and-what-is-next.md
 
-Trigger: When the engineer types `/work-status` or its alias `/status`, or asks what was recently done and what is next
+Trigger: When the engineer types `/work-status`, or asks what was recently done and what is next
 
-1. `/work-status`, and its alias `/status`, says in a few lines what was recently done and what is next. Where Claude Code's own `/status` claims the bare name, the alias is typed `/slasher:status`.
+1. `/work-status` says in a few lines what was recently done and what is next. It has no alias.
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.

@@ -1,8 +1,8 @@
 # Work status says what was recently done, and what is next
 
-**Trigger:** When the engineer types `/work-status` or its alias `/status`, or asks what was recently done and what is next
+**Trigger:** When the engineer types `/work-status`, or asks what was recently done and what is next
 
-**`/work-status` answers two questions in a few lines: what was recently done, and what is next.** `/status` is its alias. Where Claude Code's own `/status` claims the bare name, the alias is typed `/slasher:status`, and the namespace sets it apart.
+**`/work-status` answers two questions in a few lines: what was recently done, and what is next.** It has no alias.
 
 **As the engineer stated it:** what was recently done, and what's next.
 
@@ -16,11 +16,11 @@
 
 **Why:** a session that works through many changes asks *what's recent* and *what's next* again and again. One command answers both, in the same shape each time, without the full report's weight.
 
-**How to apply:** on `/work-status` or `/status`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
+**How to apply:** on `/work-status`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
 
 ## Compressed
 
-1. `/work-status`, and its alias `/status`, says in a few lines what was recently done and what is next. Where Claude Code's own `/status` claims the bare name, the alias is typed `/slasher:status`.
+1. `/work-status` says in a few lines what was recently done and what is next. It has no alias.
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
@@ -30,6 +30,11 @@
 ## Compression
 
 - 2026-11-04, compressed: checked: 16 directives, 15 kept, 1 less precise, 0 lost. Left less precise: the examples of a fact about the work, which the requirement carries without them
+- 2026-11-04, revised: the `/status` alias is removed, as the engineer directed; not re-checked
+
+## History
+
+On Wed Nov 4 2026 `/status` was an alias of `/work-status`, typed `/slasher:status` where Claude Code's own `/status` claimed the bare name. The engineer removed it the same day.
 
 Related:
 
@@ -40,3 +45,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Wed Nov 4 2026 at 8:49:42 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 9:07:44 PM PT
