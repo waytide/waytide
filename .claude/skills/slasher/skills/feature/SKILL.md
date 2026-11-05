@@ -12,9 +12,9 @@ The engineer typed `/feature $ARGUMENTS`.
 3. Where the first word is `help`, print the text of `help.md`, in this skill's directory, and do nothing more.
 4. Where nothing was typed, ask which subcommand is meant, through the selection interface, in these groups. Then ask again within the group selected, where it holds more than one.
    - **Start:** `new`, `new with phases`
-   - **Change state:** `complete`, `suspend`, `resume`, `supersede`, `abandon`
-   - **Status:** `status`
-   - **Help:** `help`
+   - **Conclude:** `complete`, `supersede`, `abandon`
+   - **Pause or resume:** `suspend`, `resume`
+   - **Status and help:** `status`, `help`
 5. **`new`**: start a feature. Load the-implementations-directory-holds-one-record-per-implementation and an-implementation-runs-on-a-branch-to-a-declared-end. The words after it, where any were typed, state the feature's intent or question.
 6. **`new with phases`**: start a feature as `new` does, and ask for its phases. Load a-phase-starts-by-stating-its-goal too.
 7. **`status`**: show the feature's phases, its current phase, and that phase's goal. Load a-phase-starts-by-stating-its-goal.
