@@ -1,5 +1,7 @@
 # Do not test the platform
 
+**Trigger:** When creating or editing a file under `test/`
+
 Test the library's **own** behavior and decisions, not the language or system it sits on. When a unit is a **transparent pass-through** to a platform primitive. It may add no branch, guard, normalization, or policy of its own on that path, and just forward to the primitive. Then its behavior on that path **is** the platform's. A test there tests the platform, not the library.
 
 **The signal.** If you can only state the expected behavior in terms of the underlying primitive's guarantee ("`String#empty?` returns true for an empty string"). The unit contributes nothing of its own on that path, there is nothing of *ours* at risk — so write no test.
@@ -38,6 +40,8 @@ Having *decided* that `#empty?` stays transparent to Ruby (imposes no policy), t
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was titled "Don't test the platform — a transparent pass-through has nothing of ours to pin".
 
 Related:
@@ -63,3 +67,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:20:57 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:09 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:35 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

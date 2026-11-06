@@ -54,7 +54,7 @@ Until Sun Oct 25 2026 this rule was named prose-is-not-hard-wrapped and titled "
 Related:
 
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule format this governs the lines of
-- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the vocabularies, whose entries are prose the same way
+- the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule — the vocabularies, whose entries are prose the same way
 - the record-a-rules-authorship-in-a-provenance-footer rule — the footer whose lines are exempt
 
 ---
@@ -70,3 +70,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:50 PM PT

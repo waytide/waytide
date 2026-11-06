@@ -26,18 +26,28 @@ else
 fi
 
 # Given a rule's name, print that rule's entry alone: its title, source, any trigger, and its
-# compressed text. The on-demand rules are searched, then the pre-loaded ones.
+# compressed text. The on-demand rules are searched, then the pre-loaded ones. A line inside a
+# fenced code block never starts a rule, though a comment in a code example may begin with #.
 if [ -n "$1" ] && [ "$1" != "--package" ]; then
+  # Only the files that exist. A pattern that matches nothing reaches awk as a name it cannot
+  # open, and awk stops there, before the files after it.
+  rule_files=
+  for file in "$system"/*/rules-on-demand.md "$system"/*/rules-pre-loaded.md; do
+    [ -f "$file" ] && rule_files="$rule_files $file"
+  done
+  [ -n "$rule_files" ] || { echo "No rule named $1" >&2; exit 1; }
   awk -v name="$1" '
     function flush() {
       if (found) { while (n > 0 && entry[n] == "") n--; for (i = 1; i <= n; i++) print entry[i]; done = 1 }
       n = 0; found = 0
     }
-    FNR == 1 || /^# / { flush() }
+    FNR == 1 { fenced = 0 }
+    FNR == 1 || (!fenced && /^# /) { flush() }
+    /^```/ { fenced = !fenced }
     { entry[++n] = $0 }
     /^Source: / { k = split($2, parts, "/"); if (parts[k] == name ".md") found = 1 }
     END { flush(); if (!done) exit 1 }
-  ' "$system"/*/rules-on-demand.md "$system"/*/rules-pre-loaded.md 2>/dev/null || { echo "No rule named $1" >&2; exit 1; }
+  ' $rule_files 2>/dev/null || { echo "No rule named $1" >&2; exit 1; }
   exit 0
 fi
 

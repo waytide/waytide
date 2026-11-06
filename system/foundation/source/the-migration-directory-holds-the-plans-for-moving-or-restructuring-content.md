@@ -1,7 +1,5 @@
 # The migration directory holds the plans for moving or restructuring content
 
-**Trigger:** When planning to move content across a repository boundary, to restructure, rename, or regroup a project's files, or to conform existing content to a changed norm or standard
-
 `waytide/local/migration/` holds **migration records**: the execution plans for moving or restructuring content, and the record of how each move actually went. **A migration is a structural change**: content moved across a repository boundary, or the layout of a project's files changed within one. **A change to a norm or standard that existing content must be conformed to is a migration too**: a tag renamed, a term substituted, or a format changed, where records already written carry the old form.
 
 - **When to use:** content is to cross out of this repository or into it, or the structure it sits in is to change. A library extracted into its own repository, a body of work moved to a project that will own it, one repository split into several or several merged into one, or existing conventions migrated into an installed system. A directory renamed or regrouped, as the contemporaneous, historical records were grouped under `logs/`, or a set of files restructured, is a migration too. If content ends up under a different root, or in a different structure, it belongs here. So does a change to a norm or standard, such as the `[work-item]` tag becoming `[work]`, when existing content in this repository or in a consuming project has to be conformed to it.
@@ -54,6 +52,8 @@ Planning it where the content is before it moves puts the plan beside it. Keepin
 
 ## History
 
+Until Thu Nov 5 2026 this rule was loaded on demand, on the trigger *When planning to move content across a repository boundary, to restructure, rename, or regroup a project's files, or to conform existing content to a changed norm or standard*. Its trigger was not a safe one, so it is pre-loaded.
+
 Until 2026-10-25 the Related entry for the logs-directory rule said a migration record "is written to be executed rather than to account for what happened", while the body says the record also holds how the move actually went. The engineer settled that the record is written ahead of the move and then records what happened against the plan.
 
 Until Sun Oct 25 2026 this rule was named migration-convention and titled "`waytide/local/migration/` — execution plans for transitions of content between repository boundaries".
@@ -100,3 +100,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:18:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:38:54 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

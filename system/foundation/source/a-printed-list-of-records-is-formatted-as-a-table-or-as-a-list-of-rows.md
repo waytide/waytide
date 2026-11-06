@@ -1,6 +1,6 @@
 # A printed list of records is formatted as a table or as a list of rows
 
-**Trigger:** When the engineer asks for a list of records
+**Trigger:** When the engineer asks for a list of records, as with `/item list` or `/list`
 
 **When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 
@@ -122,6 +122,8 @@ A list of items takes the ordinal and no SHA columns:
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When the engineer asks for a list of records*, which was not a safe one.
+
 Until Mon Nov 2 2026 this rule did not say how a list of items is asked for by state, or what `current` asks for.
 
 Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A list of records presented on request is a table".
@@ -165,3 +167,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 8:54:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:44 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

@@ -2,7 +2,7 @@
 
 The versioning package's vocabulary. One term, and it is the one the package exists to introduce. Everything else in a version number is semantic versioning, which is defined elsewhere and is not restated here. Binding — use this term with this meaning in rules, release notes, prose, and dialogue.
 
-**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
+**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
 
 ## Terms
 
@@ -23,9 +23,8 @@ The versioning package's vocabulary. One term, and it is the one the package exi
 5. It is not derived from a change and cannot be computed from a diff.
 6. No code change obliges a generation bump.
 7. A generation bump does not, by itself, say anything about compatibility.
-8. STE: absent from the STE dictionary. `generation` is absent, and `product (n)` is listed with the guidance to be accurate. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
-9. A version with no leading segment is the ordinary case: three segments, plain semver, no generation declared.
-10. The segment appears only where a project has declared generations. Its absence is not a defect.
+8. A version with no leading segment is the ordinary case: three segments, plain semver, no generation declared.
+9. The segment appears only where a project has declared generations. Its absence is not a defect.
 
 ## Compression
 
@@ -33,6 +32,7 @@ The versioning package's vocabulary. One term, and it is the one the package exi
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 - 2026-10-29, revised: the line "The rest of a version number is semantic versioning, defined elsewhere and not restated here." is left out of the compressed text, at the engineer's direction, after an evaluation found the product generation entry already says the other three segments are semantic versioning
+- 2026-11-05, revised: each entry's STE note is left out of the compressed text, at the engineer's direction; it matters only when a word is reserved or an entry written, and the full text keeps it
 
 ---
 
@@ -54,3 +54,5 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:09:54 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:33:19 PM PT

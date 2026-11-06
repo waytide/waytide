@@ -109,25 +109,6 @@ Source: system/language/source/communicate-plainly-and-name-the-actual-thing.md
 6. Not this: "The printed-list rule contradicts itself about what the first column holds. This is the master version, `a-record-list-is-a-table.md`… What the rule says, line 5: …"
 7. This: "The list rule says the first column holds the full date and time, like `2026-10-02T14-10-05Z`. Its examples show just the date, like `2026-10-02`. To fix it, either the examples change, or the text does."
 
-# Ordinary vocabulary is not reserved and not rewritten
-
-Source: system/language/source/ete/ordinary-vocabulary-is-not-reserved-and-not-rewritten.md
-
-1. ETE conforms its terminology to the STE dictionary. It does not conform its ordinary vocabulary.
-2. This departs from STE Rule 1.1, which admits only approved words, technical nouns, and technical verbs.
-3. What a word names decides which side of the line it falls on.
-4. A word that names something in the subject field is terminology. It is either reserved or rewritten.
-5. A word that does a sentence's grammatical work, joins two statements, or qualifies one is ordinary vocabulary.
-6. Example: `branch` is terminology. `under` is not.
-7. Words such as `as`, `every`, `never`, `under`, `would`, `already`, and `may` are ordinary vocabulary. They are not technical nouns or verbs in any category.
-8. Do not reserve an ordinary-vocabulary word. Reserving it puts a false claim of conformance in a vocabulary. A vocabulary carries no false claim of conformance.
-9. Do not rewrite prose to replace an ordinary-vocabulary word.
-10. To apply this rule, ask what a refused word names.
-11. Reserve the word in a category where it names something in the subject field.
-12. Rewrite the prose where an approved word says the same thing.
-13. Leave the word in place where it is ordinary vocabulary.
-14. Record no entry for an ordinary-vocabulary word.
-
 # Waytide keeps its word where the STE word means something else
 
 Source: system/language/source/ete/waytide-keeps-its-word-where-the-ste-word-means-something-else.md

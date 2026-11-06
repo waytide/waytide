@@ -1,6 +1,6 @@
 # A test report classifies the suite and prints its context hierarchy
 
-**Trigger:** When the user asks for a test report
+**Trigger:** When the user asks for a test report, as with `/test report` or `/test-report`
 
 When the user asks for a **test report**, classify the automated suite along the lenses below, then print the context hierarchy two levels deep. **Re-derive everything from the current files** — read the tests and recompute membership and counts. Do not report stale buckets from memory. The lenses are the frame. The specific buckets are whatever the current suite yields.
 
@@ -96,6 +96,8 @@ Companion to the `lib-report` command in `ext/ruby-lang`, and to the `test-tree`
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When the user asks for a test report*, which was not a safe one.
+
 Until 2026-10-24 the context hierarchy alone was derived from a suite run, not from the source, while the opening said to re-derive everything from the current files. A test report is a report on the test files, so the hierarchy is now read from them as well.
 
 Until Sun Oct 25 2026 this rule was named test-report-format and titled ""Test report" classifies the suite and prints the two-level context hierarchy".
@@ -116,3 +118,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:32 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 1:45:29 AM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:27 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

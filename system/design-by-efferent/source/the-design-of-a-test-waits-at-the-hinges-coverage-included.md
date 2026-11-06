@@ -1,6 +1,6 @@
 # The design of a test waits at the hinges, coverage included
 
-**Trigger:** When writing a test to cover behavior that already exists
+**Trigger:** When creating or editing a file under `test/`
 
 The five hinges are actuation, observation, controls, implementation, and naming. They are where **design decisions** wait, and *designing a test* is itself a design act. That holds whether behavior is being designed (DBE) or existing behavior is being covered (testing). So the hinges are in play when writing coverage, not only when designing.
 
@@ -45,6 +45,8 @@ When adding coverage for behavior that already exists, all five are in play:
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When writing a test to cover behavior that already exists*, which was not a safe one.
+
 Until Sun Oct 25 2026 this rule was named the-design-of-a-test-waits-at-the-hinges-including-coverage and titled "The design of a *test* waits at the hinges — they apply to coverage too, with the implementation hinge degenerate".
 
 Related:
@@ -71,3 +73,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:09 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

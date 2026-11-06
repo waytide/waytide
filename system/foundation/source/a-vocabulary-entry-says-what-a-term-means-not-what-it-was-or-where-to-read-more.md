@@ -26,7 +26,7 @@
 
 **The log.** A term that changes meaning, moves, or stops being used is a decision, and the the-log-holds-one-file-per-entry-with-a-one-line-title rule already carries it. A reader wanting to know when a word changed reads the log or the git history, and both answer better than a sentence in a glossary can.
 
-**A discontinuation is not an exception.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
+**A discontinuation is not an exception.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule gives a discontinuation its own heading — a word taken out of use with nothing in its place. That entry names the word and says it is not used, which is a statement about the present. It does not narrate when the word was dropped or what carried it before.
 
 **Why:** a vocabulary is read to settle what a word means right now. A reader meets it mid-sentence, with a word in hand and a question about that word. History answers a question they did not ask, and it grows: every change adds a clause, and no clause is ever removed, so the entry drifts from being a definition toward being a record of its own edits.
 
@@ -82,7 +82,7 @@ Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer 
 
 Related:
 
-- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — what a vocabulary holds, and which one decides
+- the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule — what a vocabulary holds, and which one decides
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — where the history goes instead
 - the `language` package's a-word-is-reserved-in-six-steps rule — the sequence that produces an entry, whose sixth step this constrains
 - the disclosure-is-the-one-reason-to-edit-a-historical-record rule — the log entry, which is a historical record and is left as written
@@ -99,3 +99,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT

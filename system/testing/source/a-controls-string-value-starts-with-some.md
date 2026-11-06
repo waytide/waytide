@@ -1,5 +1,7 @@
 # A control's string value starts with "some"
 
+**Trigger:** When creating or editing a file under `test/`
+
 A control may hold a **string value**, meaning a literal value used as test input rather than a constant name. The string starts with **"some"**, as in `control_file = "some file"` and not `"a file"`. The word "some" marks it as an arbitrary placeholder value whose specific content does not matter.
 
 This parallels the constant-name convention, where example names are `"SomeModule"`, `"SomeOtherModule"` (capitalized, because they are constant names). A bare string *value* is lowercase: `"some file"`, `"some other file"`.
@@ -26,6 +28,8 @@ This parallels the constant-name convention, where example names are `"SomeModul
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named control-string-value-starts-with-some.
 
 Related:
@@ -42,3 +46,4 @@ Changed by Scott Bellware on Tue Aug 11 2026 at 2:41:09 AM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:15 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:26:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

@@ -1,5 +1,7 @@
 # Start a test name with "Is" only for a value-equals-comparator assertion
 
+**Trigger:** When creating or editing a file under `test/`
+
 A test or context name should begin with "Is" only when the test asserts that a value **is** some other comparator. That is an equality or identity comparison of a value against another value. Do not start the name with "Is" for any other kind of assertion. That is a predicate being true, a presence or definition check, a raised error, an exclusion, or a behavior or side effect. Name it for what it establishes.
 
 Good examples — tests each asserting `value == <comparator>`:
@@ -45,6 +47,8 @@ Counter-examples, where "Is" is not used:
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named test-name-is-prefix.
 
 Related:
@@ -63,3 +67,4 @@ Changed by Scott Bellware on Thu Oct 15 2026 at 4:46:47 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

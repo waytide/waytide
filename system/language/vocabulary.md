@@ -2,7 +2,7 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
-**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
+**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
 
 The *principles* that govern word selection stay as rules — `name-concepts-literally-not-by-analogy-code-or-jargon`, `no-slang`, `communicate-plainly-and-name-the-actual-thing`, `language-is-used-precisely-here-and-words-are-load-bearing`. This file holds the settled lexicon those principles produce.
 
@@ -85,12 +85,12 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 ## Terms
 
-1. **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive. The ideal is immediate comprehension with minimal interpretive work: knowledge at a glance. It is the design quality a unit is judged against, and the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
-2. **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. `caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view. A general design-vocabulary term. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method.
-3. **Eventide Technical English (ETE)** — its rules are in `waytide/system/language/source/ete/`. STE: absent from the STE dictionary, and approved here as a technical noun in the official documents, standards, and guidelines category, per STE Rules 1.5 and 1.8.
-4. **actuation** — the invocation of a unit from its use site. STE: not approved. The STE dictionary gives OPERATION, which names the running of a thing, not its invocation from a use site. Technical noun, ETE engineering, design, process, and method.
-5. **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. It is the extant word of structural design and software design, not a Waytide coinage. STE: not approved. The STE dictionary gives PRESERVATION, a technical noun for a maintenance procedure, which does not carry this. Technical verb, ETE engineering, design, process, and method.
-6. **moot** — no longer bearing on anything, because circumstances moved rather than because a judgment was reached. A moot question is one whose answer would change nothing now. It is the adjective for the condition the state word **Obsolete** names in a record. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
+1. **solubility** — how readily a unit dissolves and disappears smoothly into the reader's cognition and understanding. It is cognitive. The ideal is immediate comprehension with minimal interpretive work: knowledge at a glance. It is the design quality a unit is judged against, and the quality the name-literally test serves. It is a load-bearing methodological principle, not merely a term.
+2. **efferent** — the use-site perspective: the view that conducts outward from the unit doing the using to the unit being used. `caller`, and its compounds `caller-side`, `caller-first`, and `caller's-eye`, are the common software-development patois for this view. A general design-vocabulary term.
+3. **Eventide Technical English (ETE)** — its rules are in `waytide/system/language/source/ete/`.
+4. **actuation** — the invocation of a unit from its use site.
+5. **preserve** — to keep something that already exists, rather than putting it there or serving it. A rule preserves a mindset. Clarity is preserved. It is the extant word of structural design and software design, not a Waytide coinage.
+6. **moot** — no longer bearing on anything, because circumstances moved rather than because a judgment was reached. A moot question is one whose answer would change nothing now. It is the adjective for the condition the state word **Obsolete** names in a record.
 
 ## Substitutions
 
@@ -100,35 +100,35 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 
 | Use | Don't use | Meaning |
 |---|---|---|
-| **normal path** | "happy path" | the ordinary, non-error course through a method or feature. The raising cases are "error cases" or "exceptional cases", and the course through one is the **exceptional path**, never "sad path" or "exception path". STE: `normal (adj)` is not approved and gives USUAL (adj), and `path` is absent. Technical noun, ETE engineering, design, process, and method |
-| **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention. STE: not approved. The STE dictionary gives AGREE, which does not carry it |
-| **convey** (or "pass … through") | "thread" | a value passed through layers of methods or APIs. STE: not approved. The STE dictionary gives MOVE |
-| **increment** | "cut" | a bounded slice of scope delivered as a step. STE: `INCREMENT (n)` is approved, meaning one of a sequence, which names a step in a series rather than a slice of scope. Technical noun, ETE engineering, design, process, and method, with its meaning fixed here |
-| **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base. STE: `create (v)` is not approved and gives MAKE (v), which does not carry branching from a base. Technical verb, ETE engineering, design, process, and method |
-| **install packages** / "the installed bundle" | "vendor" | a plain installation of gem or package dependencies. STE: `INSTALL (v)` is approved, and used with its approved meaning |
-| **scenario** | "arm" | one variant or case a method or feature handles. STE: absent from the STE dictionary. Technical noun, ETE engineering, design, process, and method |
+| **normal path** | "happy path" | the ordinary, non-error course through a method or feature. The raising cases are "error cases" or "exceptional cases", and the course through one is the **exceptional path**, never "sad path" or "exception path". |
+| **conform** (or *reconcile* / *propagate* where more exact) | "sweep" | bringing code or prose into line with a convention. |
+| **convey** (or "pass … through") | "thread" | a value passed through layers of methods or APIs. |
+| **increment** | "cut" | a bounded slice of scope delivered as a step. |
+| **created** / **branched from** | "cut" (a branch) | bringing a git branch into existence from a base. |
+| **install packages** / "the installed bundle" | "vendor" | a plain installation of gem or package dependencies. |
+| **scenario** | "arm" | one variant or case a method or feature handles. |
 | a direct question — **"is that right?"**, "does that work?" | "does that land?" | a plain question, not dressed up |
-| **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost. STE: `EFFECT (n)` is approved, and used with its approved meaning. `effect (v)` is not approved and gives DO (v), and Waytide does not use the verb |
-| **examine** | "decode" | working through or inspecting something to understand it. STE: `EXAMINE (v)` is approved, and used with its approved meaning |
-| **evaluate** / **evaluated** | "score" / "scored" | judging a thing against a criterion and reaching a verdict, as a forecast item against what happened. STE: `evaluate (v)` is not approved. The STE dictionary gives EXAMINE (v), and MAKE AN ANALYSIS for *Evaluate the test results*. Technical verb, ETE deliberation and speech |
-| **start** | "pick up" | beginning work on something: a task, a deferred item, or other queued work. STE: `START (n)` and `START (v)` are approved, and used with their approved meanings |
+| **effect** | "what it costs" | the result or consequences of a change, named neutrally rather than presumed a cost. |
+| **examine** | "decode" | working through or inspecting something to understand it. |
+| **evaluate** / **evaluated** | "score" / "scored" | judging a thing against a criterion and reaching a verdict, as a forecast item against what happened. |
+| **start** | "pick up" | beginning work on something: a task, a deferred item, or other queued work. |
 | **justified** / **justifiable** | "earns its keep" / "earns its place" | a thing being worth having |
-| **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. STE: `choice (n)` is not approved. The STE dictionary gives SELECTION (n), the action or result of choosing |
+| **selection** / **decision** | "choice" | what the engineer picks at a prompt is a **selection**, and the matter being settled is a **decision**. |
 | **required** | "owed" | what a rule asks of a thing |
 | **cost** | "price" | what a trade gives up, where the giving up is real and stated |
-| **in progress** | "in flight" | work that has been started and has not concluded. STE: `progress` is not approved as a noun or a verb, and gives CONTINUE (v), which names carrying on rather than a state. Technical adjective, ETE engineering, design, process, and method |
-| **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. STE: `dash` is absent, and `case (n)` is not approved and gives CONDITION (n). Technical adjective, ETE engineering, design, process, and method |
-| **name** | "slug" | the descriptive part of a filename. STE: `NAME (n)` is approved, and used with its approved meaning |
-| **discontinue** | "retire" | taking a word or a rule out of use. STE: not approved. The STE dictionary gives STOP, whose approved meanings are terminal |
-| **engineer** | "developer" | the person the work is done with and for: at the loop, at a hinge, and as the reader the terminology is conveyed to. STE: absent from the STE dictionary. Technical noun, STE category 11, professional roles, individuals, groups, organizations, and geopolitical entities |
-| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself. STE: absent from the STE dictionary, and `mediate` is absent too. Technical verb, ETE engineering, design, process, and method |
-| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use. STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method |
-| **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer. STE: `SEND (v)` is approved, meaning to cause a thing to go to a place, and Waytide means a value reaching a method. Technical verb, ETE engineering, design, process, and method, with its meaning fixed here |
+| **in progress** | "in flight" | work that has been started and has not concluded. |
+| **dash-separated, lower-case** | "kebab-case" | a name written in lower-case with its words joined by dashes. |
+| **name** | "slug" | the descriptive part of a filename. |
+| **discontinue** | "retire" | taking a word or a rule out of use. |
+| **engineer** | "developer" | the person the work is done with and for: at the loop, at a hinge, and as the reader the terminology is conveyed to. |
+| **mediates** | "wrap" / "wrapper" | an object that provides access to another through itself. |
+| **obsolete** (or a more exact word) | "dead" | something no longer in force or in use. |
+| **sent to** | "initialized with" / "passed to" | a value passed into a method or initializer. |
 | **efferent** | "caller" | the use-site perspective, and the unit doing the using |
 | **actuation** | "the call" (the call shape, the call site) | the invocation of a unit, the first efferent reference |
-| **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force. STE: `ACTIVATE (v)` is approved, and used with its approved meaning |
-| **name who did it, and how** — *I ran `git mv`*, *the agent edited the Tags lines*, *you renamed it*, and where the contrast matters, *directly, not by the installer* | "by hand" | work done by a party and a means that are both named. STE: this row replaces a phrase rather than reserving a word, so no category applies |
-| **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard. STE: this row fixes a citation form rather than reserving a word, so no category applies |
+| **activate** / **deactivate** | "switch on" / "switch off" | bringing a system or mechanism into force, or taking it out of force. |
+| **name who did it, and how** — *I ran `git mv`*, *the agent edited the Tags lines*, *you renamed it*, and where the contrast matters, *directly, not by the installer* | "by hand" | work done by a party and a means that are both named. |
+| **the standard's name, then the part** — *STE Rule 1.7*, *the STE dictionary* | "Rule 1.7", "the dictionary" | a reference to any part of an external standard. |
 | **smaller** | "shorter" | of a size: having fewer characters, words, or lines. *Shorter* is said of time, as of a read that takes less time |
 
 ## Finer distinctions
@@ -158,6 +158,7 @@ General, domain-less word substitutions. Each puts the literal term in place of 
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 - 2026-10-29, revised: the definition of *solubility* is restored, at the engineer's direction, since a vocabulary entry keeps its term's meaning
 - 2026-10-30, revised: the substitution *smaller* for *shorter*, of a size, is added at the engineer's direction, as one table row in the full text and the compressed text alike; checked: 95 directives, 87 kept, 3 less precise, 5 lost, the new row kept; the losses are the opening lines left out on purpose and the repetitions phase 9 removed, whose origins are pre-loaded
+- 2026-11-05, revised: each entry's STE note is left out of the compressed text, at the engineer's direction; it matters only when a word is reserved or an entry written, and the full text keeps it
 
 ---
 
@@ -213,3 +214,5 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:45:47 AM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:35 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:33:19 PM PT

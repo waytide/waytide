@@ -1,5 +1,7 @@
 # A test block holds only the assertion, and its values are declared in the enclosing context
 
+**Trigger:** When creating or editing a file under `test/`
+
 Three bound parts:
 
 1. **Never inline a method call in an assertion.** Every value the assertion examines — the actuation result *and* whatever it is compared against — is assigned to an explaining variable first. The assertion then references only those variables (and the comparison itself).
@@ -78,6 +80,8 @@ end
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named test-block-is-assertion-only and titled "A test block holds only the assertion. Every assertion operand is an explaining variable declared in the enclosing context".
 
 Until Mon Oct 26 2026 this rule was named a-test-block-holds-only-the-assertion and titled "A test block holds only the assertion".
@@ -108,3 +112,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:16:55 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

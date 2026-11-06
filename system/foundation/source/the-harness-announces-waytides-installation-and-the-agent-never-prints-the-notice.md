@@ -1,5 +1,7 @@
 # The harness announces Waytide's installation, and the agent never prints the notice
 
+**Trigger:** When changing the session-start notice, the startup display, the status line, or their hooks or scripts
+
 - **Solubility:** 24
 - **Original rank:** 10 of 106
 - **Unclarity:** 0.52
@@ -114,6 +116,8 @@ The notice and the display are wired by the hooks of the Slasher plugin, in `.cl
 
 **After a compaction, the instruction opens with one more sentence.** The hook runs again when the context is compacted, and it reads the event's source from its input. Where the source is `compact`, the instruction first says that the rules read at the start now survive only as the compaction's summary, which does not hold them, and that the loader is to be run again before the next act. Without that sentence, the instruction given at the start reads as already done: the summary says the read happened, and most sessions went on from the summary. A start, a resume, and a clear get the instruction unchanged.
 
+**The instruction carries the core rules after it, so they hold from the session's start, before the read.** `foundation/core-rules` names them, and the hook adds each as the loader prints it, under a line saying they hold before the read, which still runs in full. A hook can give the agent at most 10,000 characters, and Claude Code saves anything longer to a file the agent is not asked to read. So the core holds only the rules that shape the first answer, and the whole of what the hook gives the agent stays within 10,000 characters. The core rules hold quotation marks and backslashes, which the hook escapes, unlike the notice, which carries none.
+
 **It tells the agent not to print the startup display, because the harness prints it.** Under a later model the display stopped reaching the engineer, skipped or written into the agent's thinking, and nothing reported it. The plugin's hooks now print it, as the session starts and on its first prompt (see the the-startup-display-prints-as-the-session-starts rule). The **art is not carried on this channel either**. The display hook reads it from that rule.
 
   **The instruction says the rules are to be read. The notice's install line still says installed.** They are different claims about different things. The install line reports what a pre-session hook can observe — that the packages are on disk and the configuration is live. The instruction describes what the session does next. It reports no read as having happened.
@@ -216,14 +220,15 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
-18. This rule does not restate the directory list.
-19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
-21. Nothing verifies the read. The hook cannot observe what the agent does.
-22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-24. The work honoring the rules is the verification.
+17. The instruction carries the core rules after it, the rules `foundation/core-rules` names, each as the loader prints it, under a line saying they hold before the read, which still runs in full. The core holds only the rules that shape the first answer, so the whole of what the hook gives the agent stays within 10,000 characters, the most a hook can give. The hook escapes their quotation marks and backslashes.
+18. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
 
 ## The status line
 
@@ -305,8 +310,13 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: the startup display's load line follows the notice; checked: 79 directives, 76 kept, 3 less precise, 0 lost. Left less precise: that the loading part, like the session-start part, is read from the startup display rule, which the point that the script reads the art from that rule already gives; why the loader is run again after a compaction; and that other harnesses need equivalent glue
 - 2026-11-04, revised: the loading part prints the loading line, then the figure, the order the engineer set; not re-checked
 - 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
+- 2026-11-05, revised: the instruction carries the core rules, within the hook's 10,000 characters; checked: 63 directives, 59 kept, 4 less precise, 0 lost, 2 repairs, to the core rules point; re-checked: 63 directives, 61 kept, 2 less precise, 0 lost. Left less precise: the status line example's in-between lines, which the prose states, and that the loading part is read from the startup display rule, as the art is
 
 ## History
+
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start. Its standing points are carried by the read instruction the hook gives every session.
+
+Until Thu Nov 5 2026 the hook carried the read instruction alone, and no rule held before the read.
 
 Until Wed Nov 4 2026 the typed command was `load waytide`.
 
@@ -443,3 +453,5 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:01:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 6:40:22 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

@@ -51,7 +51,7 @@ Related:
 - the-journal-is-read-at-the-start-of-a-session-with-the-rules rule — the read this rule qualifies
 - the the-journal-is-the-record-the-writer-keeps rule — where the journal lives and what one entry is
 - the foundation package's a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the form a binding rule takes, and where one lives
-- the foundation package's a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — where a term is settled
+- the foundation package's a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule — where a term is settled
 
 ---
 
@@ -69,3 +69,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:06:58 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:50 PM PT

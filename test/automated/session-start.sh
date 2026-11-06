@@ -117,4 +117,40 @@ case "$open_message" in
   *) fail "Sets the open implementations apart from the install line with a blank line" "message:" "$open_message" ;;
 esac
 
-echo "6 passed"
+# Carries the core rules after the read instruction ---------------------------------
+
+cp system/foundation/load-rules.sh "$project/system/foundation/"
+mkdir -p "$project/system/sample"
+echo some-core-rule > "$project/system/foundation/core-rules"
+
+cat > "$project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some core rule
+
+Source: system/sample/source/some-core-rule.md
+
+1. Some "quoted" directive.
+RULES
+
+control_core_rule="# Some core rule
+
+Source: system/sample/source/some-core-rule.md
+
+1. Some \"quoted\" directive."
+control_core_rule=$(printf '%s' "$control_core_rule" | sed 's/\\"/"/g')
+
+core_output=$(cd "$project" && sh system/foundation/session-start.sh < /dev/null)
+core_context=$(printf '%s' "$core_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["hookSpecificOutput"]["additionalContext"])' 2>/dev/null || true)
+
+case "$core_context" in
+  *"$control_core_rule"*) ;;
+  *) fail "Carries the core rules after the read instruction" "context:" "$core_context" ;;
+esac
+
+# Keeps this repository's context within the hook's 10,000 characters --------------
+
+repository_context=$(printf '{"source":"startup"}' | system/foundation/session-start.sh | python3 -c 'import json,sys; print(json.load(sys.stdin)["hookSpecificOutput"]["additionalContext"])')
+repository_length=$(printf '%s' "$repository_context" | python3 -c 'import sys; print(len(sys.stdin.read()))')
+
+[ "$repository_length" -le 10000 ] || fail "Keeps this repository's context within the hook's 10,000 characters" "length:" "$repository_length"
+
+echo "8 passed"

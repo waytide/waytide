@@ -97,7 +97,7 @@ Related:
 - the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the second departure, and the only other one
 - the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts decide in
-- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in
+- the foundation a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved — which vocabulary a term is written in
 
 ---
 
@@ -115,3 +115,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:12 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:50 PM PT

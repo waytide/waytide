@@ -4,34 +4,8 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
 
 1. A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces.
 2. It is binding.
-3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue.
-4. Give a package a vocabulary only when its domain has specialized words.
-5. A package whose subject is written in ordinary words has no vocabulary. The absence is correct, not missing.
-6. `git` and `ext/ruby-lang` have none. Six packages do.
-7. Put a term in the vocabulary of the package whose domain it belongs to.
-8. Put a domain-less term or substitution in `language`. Put a domain-specific substitution in its own package's vocabulary.
-
-## What a vocabulary holds
-
-1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
-2. A term is a glossary entry, and it says what the concept is.
-3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
-4. **Discontinuations** name a word removed from use with nothing in its place. `discriminator` went because the concept went.
-5. A substitution names two words. A discontinuation names one.
-6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
-7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
-8. Where a word was taken rather than coined, the entry says so in its own prose.
-9. That statement is an **origin**, not a kind of entry.
-
-## Every word in a vocabulary is approved or reserved
-
-1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
-2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
-3. A reserved word is a technical noun or verb in a category its entry names: STE Rule 1.5, 1.6, or 1.12, or an ETE category. The vocabulary that holds it is the approval STE Rule 1.8 requires.
-4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
-5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
-6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary.
-7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
+3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Waytide's prose is written.
+4. This rule governs using a vocabulary. Writing one, what it holds, and where a term goes are the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule's, which loads when a vocabulary file is written.
 
 ## Which vocabulary decides
 
@@ -43,24 +17,16 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
    4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
 3. When a word appears in two vocabularies, the more specific one decides.
 
-## A project's own vocabulary is `waytide/local/vocabulary.md`
+## A project's own vocabulary binds
 
-1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
-2. It has the same shape as a package's `vocabulary.md`.
-3. It takes no datetime prefix. It is a structural file, not a dated decision. See the file-names rule.
-4. It is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
-5. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
-6. It is optional, and its absence is not a defect.
-7. Write no such file until there is a term to write.
-8. It is not a rule. Do not put it in `rules/`.
+1. `waytide/local/vocabulary.md` is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
+2. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
+3. It is optional, and its absence is not a defect.
 
 ## Specialization is not conflict
 
 1. A package can narrow a general term rather than contradict it. The narrower entry rests on the general one and does not displace it.
 2. Example: `language` defines `actuation` as the invocation of a unit from its use site. `design-by-efferent` adds that the actuation is written before any implementation.
-3. Where a package narrows a term, its entry names the general term it narrows.
-4. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
-5. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
 
 # A paragraph is one line, and the reader's editor wraps it
 
@@ -214,11 +180,12 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 6. A package's `rules-on-demand.md`, at the package root, holds each rule whose source carries a `**Trigger:**` line under its title, with its trigger. `./compile.sh` writes it.
 7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `waytide/system/foundation/load-rules.sh <rule-name>`.
 8. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
-9. The rules override default behavior where they conflict.
-10. Explicit user instructions still win over the rules.
-11. Read `waytide/system/foundation/` first. It defines the system.
-12. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
-13. `rules/` may not exist. Its absence is ordinary.
+9. Give a rule a trigger only where it names a discrete act the agent itself takes, such as running a command or creating or editing a named kind of file, so the agent cannot reach the act without knowing it, and where a missed load is cheap and visible. A trigger naming a judgment about a situation, such as giving a summary or working with tests, is not safe, and its rule stays pre-loaded.
+10. The rules override default behavior where they conflict.
+11. Explicit user instructions still win over the rules.
+12. Read `waytide/system/foundation/` first. It defines the system.
+13. The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule settles where `waytide/local/vocabulary.md` sits and why.
+14. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -297,6 +264,78 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 5. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 6. Harness working state is not project context and is no substitute for an artifact.
 
+# A status report prints a fixed whole-project report
+
+Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-report.md
+
+1. When the user asks for a **status report** (or "project status"), produce a report with the five parts below, in order.
+2. The report reads the project's planning records. These are the items that carry the work's tasks, whatever the project's kind tags name them.
+3. Identify those records without naming a directory or a kind.
+4. Part 1, **Task table**: the tasks those records carry, as a table of number, task, status (done / next / pending), and a terse note.
+5. Mark the next task in the task table.
+6. Include any out-of-sequence extras already built in the task table.
+7. Part 2, **Waiting work table**: the items carrying a `**Waits for:**` line, with name, date, what it waits for, and a one-line gist.
+8. Waiting items are off the task line until the wait ends.
+9. Order waiting items by their `**Priority:**` rank where they carry one.
+10. Do not list a hidden record in the waiting work table.
+11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
+12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
+13. The map shows that `waytide/local/rules/` holds the project's own local rules.
+14. The map states that both are binding and both are read at session start.
+15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
+16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
+17. The orientation says how to work with the directory. Rules are enforceable conventions.
+18. The log is title-only ISO-8601-UTC decision entries.
+19. A rule typically pairs with a log entry.
+20. An item holds the task checklist where it sequences work.
+21. A `**Waits for:**` line marks work that is not yet actionable.
+22. Part 4, **Recent flows of work**: a brief of the recent direction, drawn from the latest log and commit entries.
+23. Keep the brief to a few lines, not an exhaustive list.
+24. Part 5, **Test suite**: this part is convention-aware of the testing package.
+25. If the project has adopted the testing conventions, run the suite and report the count and pass/fail line.
+26. Report the suite's context tree two levels deep, rendered hierarchically.
+27. Each distinct top-level context is a tree root. Its distinct second-level contexts are indented as its branches.
+28. Use an indented tree, such as a fenced block with `├─`/`└─` branches.
+29. Stop at two levels. Do not descend into per-assertion contexts.
+30. If the project has not adopted the testing conventions, degrade this part. Report whatever suite the project has, with its count and pass/fail.
+31. If the project has no suite, note that there is none.
+
+## A hidden record is counted rather than listed
+
+1. A hidden record is one a report states the number of and does not otherwise show.
+2. Omit a hidden record from the table or passage it would ordinarily sit in.
+3. Put a line there giving the count and the kind.
+4. The line says no more than that. It carries no *not listed*, no *withheld*, and no explanation.
+
+```
+3 suspended items
+12 suspension log entries
+```
+
+5. Hiding applies to any summary of the project's state, not only the fixed status report.
+6. That includes the *Recent flows of work* brief in part 4 and any ad-hoc account of where things stand.
+7. A record hidden from one surface is hidden from all of them.
+8. Two kinds are hidden today.
+9. A record whose `**State:**` line reads `Suspended` is hidden.
+10. A record carrying the `[suspended]` tag is hidden. That is a log entry, per the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
+11. The two are different records, hidden for the same reason, and take the same treatment. Do not merge them.
+12. A later rule may name another kind, and it becomes hidden by saying so.
+13. The treatment is fixed: counted, not listed, and named by kind in the count.
+14. Show hidden records when they are asked for.
+15. *Include the suspended items*, *show what is hidden*, or a request for a suspended record by name each produce the full listing.
+16. Never simply drop a hidden record. The count is what separates hiding from omitting.
+
+## The report is rendered from current state
+
+1. Keep each part tight.
+2. Read current state before printing.
+3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
+4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
+5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
+6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
+7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
+8. An unnamed test appears in the source and emits no line.
+
 # A time value carries minutes and seconds
 
 Source: system/foundation/source/a-time-value-carries-minutes-and-seconds.md
@@ -363,133 +402,6 @@ Source: system/foundation/source/present-every-prompt-to-the-engineer-through-th
 10. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
 11. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
 
-# The harness announces Waytide's installation, and the agent never prints the notice
-
-Source: system/foundation/source/the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice.md
-
-1. The harness announces Waytide, through three surfaces it renders.
-2. The agent prints no notice, at session start or at any other time.
-3. An agent-printed copy would only duplicate the harness's.
-4. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
-
-## The session-start notice
-
-1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
-
-```
-Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
-
-3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
-```
-
-2. The install line enumerates what is on disk.
-3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
-4. Nothing prints a fixed list.
-5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
-6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
-7. One that is Active, Suspended, or carries no state line is reported.
-8. With nothing open, the open line is absent.
-9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
-10. The notice has no close of its own. It ends with what it reports. The startup display's load line, after it in the same message, says when the rules load and that `/load` loads them now.
-11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
-12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
-13. The trade of observability for legibility is deliberate.
-14. The notice says `installed`, never `loaded`.
-15. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
-16. The read instruction describes what the session does next, and reports no read.
-17. Call it the session-start notice, not the load notice.
-18. The status line reports the system active, a claim about the configuration rather than the agent.
-19. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
-20. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
-21. Put no quotation marks, and no lone backslash, in anything the hook emits.
-22. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
-23. A double quote ends the string, and a lone backslash begins an invalid escape.
-24. Either way the harness fails to parse the output, and the notice disappears with no error.
-
-## The read instruction
-
-1. The same hook carries the read instruction to the agent on a separate channel.
-2. The notice goes in `systemMessage`, for the engineer.
-3. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent and is never displayed.
-4. They are different texts for different readers.
-5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
-6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
-7. The hook carries the whole instruction, as the following points state.
-8. The instruction tells the agent to run `foundation/load-rules.sh` in one command and read its whole output. The loader's output is the read, so no rule file is read one by one.
-9. The loader prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `foundation/` first, then the local rules, the project's vocabulary, and the journal. It leaves out each package's `source/` and `README.md`.
-10. Its ON DEMAND section lists the rules it does not print, each with its trigger and the command that loads it. When the trigger's act comes up, the agent runs that command and follows the rule before acting.
-11. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and say that the absence of either is ordinary, not an error. Never name `local/` as a whole.
-12. Name the other working directories, as not read as binding rules at session start.
-13. Do not print the startup display.
-14. Print no package count.
-15. Then wait for the engineer's request.
-16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
-18. This rule does not restate the directory list.
-19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
-21. Nothing verifies the read. The hook cannot observe what the agent does.
-22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-24. The work honoring the rules is the verification.
-
-## The status line
-
-1. `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
-
-```
-waytide · master :: Waytide
-waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
-```
-
-2. The repository name leads, in bold. The bold is a terminal escape sequence the harness passes through.
-3. The bold repository name is the only emphasis on the line.
-4. A middle dot separates the engineer's segments.
-5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
-6. The Waytide segment is one word, with no package count.
-7. Presence is read from disk, by the same README test the notice uses.
-8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
-9. `uncommitted changes` appears only when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
-10. It is words, not a mark like `master*`.
-11. `untracked files` names the case whose remedy differs: add or ignore, not commit.
-12. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
-13. Segments that can show together are named in words that read distinctly.
-14. `unpushed commits` appears when committed work exists only in this working copy. It carries no count and never reaches the network.
-15. It compares against the remote-tracking ref, so it reflects the last fetch.
-16. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
-17. An upstream missing by accident is a different fact, and is deliberately not folded into this segment.
-
-## The startup display
-
-1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
-2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
-3. The first prompt is when the read starts, whatever the prompt is.
-4. The agent does not print it.
-
-## Wiring
-
-1. The committed Slasher plugin, `.claude/skills/slasher/`, wires the notice and the display through its `SessionStart` and `UserPromptSubmit` hooks.
-2. A committed `.claude/settings.json` wires the status line, since a plugin cannot set the main status line.
-3. `install.sh` assembles the plugin and places `.claude/settings.json` in a consuming project.
-4. `install.sh` warns when git ignores `.claude/settings.json` or the plugin and the file is not tracked, and prints how to correct it.
-5. The fix is `.claude/*` with `!.claude/settings.json` and `!.claude/skills/`, since git cannot re-include a file inside an excluded directory.
-6. The fix keeps `.claude/settings.local.json` ignored.
-7. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too.
-8. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block, or the hook entries to remove where the file still runs the session-start scripts, and leaves the decision to the engineer.
-
-## There is no opt-out
-
-1. These surfaces exist so that a system read every session says so.
-2. The read instruction is emitted every session. Quieting a display never disables the mechanism that carries it.
-3. Add no opt-out, such as a variable that quiets these surfaces.
-
-## What this costs
-
-1. The mechanism works only where a harness loads a plugin from `.claude/skills/` and reads `.claude/settings.json`.
-2. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently.
-3. A setting that disables hooks silences it too.
-4. A newly placed plugin or `.claude/settings.json` may not take effect until the harness reloads.
-
 # The log holds one file per entry, with a one-line title
 
 Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-line-title.md
@@ -545,6 +457,96 @@ Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-lin
 1. `/log-this` writes a log entry for the work the conversation is on. State as its title the decision or finding the work has just reached, with a body where the reasoning will not fit.
 2. Where nothing has been reached, say so and write nothing. Where it is unclear which decision is meant, ask, through the selection interface.
 3. The entry follows every convention of an entry the engineer dictates.
+
+# The migration directory holds the plans for moving or restructuring content
+
+Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
+
+1. `waytide/local/migration/` holds migration records.
+2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
+3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
+4. Plan a move here when content ends up under a different root, or in a different structure.
+5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
+6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
+7. A change to a norm or standard that existing content must be conformed to is a migration too: a tag renamed, a term substituted, or a format changed, where records already written carry the old form. Example: the `[work-item]` tag becoming `[work]`, in this repository or in a consuming project.
+8. Do not use an ordinary item for a migration.
+9. An item sequences a build, against something this repository settled.
+10. A migration plan sequences a change to where existing content lives, or to the form it is written in. Across repositories, its increments land in two.
+11. Its order matters because content is unavailable or duplicated in between, a reference to the old place breaks until it is reconciled, and content in the old form does not match its rules until it is conformed.
+12. Across repositories, the plan is not finished when this repository's part is done.
+13. A migration may realize a settled item, or be mechanical enough to need none.
+14. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
+15. Revise the record while the migration runs.
+16. Write it before moving content across a repository boundary, restructuring where it lives, or conforming it to a changed norm or standard.
+17. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
+18. State the source and destination outright: the repositories, or the old and new places within one.
+19. State the increments in order.
+20. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
+21. Record what actually happened against the plan as the work proceeds.
+22. Keep the record after the content has moved. Do not delete it on completion.
+23. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
+24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
+25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
+
+# The work-sessions directory holds one record per work session
+
+Source: system/foundation/source/the-work-sessions-directory-holds-one-record-per-work-session.md
+
+1. `waytide/local/logs/work-sessions/` holds work session records.
+2. A work session record is the chronological narrative of one discrete work session between an engineer and Claude.
+3. A work session is a unit of the engineer's work. It may last hours, a day, or longer.
+4. The discrete piece of work sets a work session's boundaries, not a fixed clock.
+5. A work session record is the guided tour of the work session. It gives what was asked and concluded at each step, in order.
+6. It defines settled vocabulary as that vocabulary arises.
+7. It is written for a person to read. Its job is orientation and reasoning, not truth-of-record.
+8. It is not the source of truth. The durable records are authoritative.
+9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
+10. The record points to the durable records throughout. It does not restate them.
+11. The record keeps the reasoning behind each fork in the work. It ties the durable records together as a narrative and keeps the arc.
+12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
+13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
+14. A trivial work session needs no record. A record is not required for every session.
+15. Also propose it when the agent concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded.
+16. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+17. The engineer's selection decides.
+18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+19. A direct instruction from the engineer to write or append a record needs no prompt.
+20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+
+## The shape of a work session record
+
+1. Title the record `# Work Session — <name> (<date>)`.
+2. Records written before 2026-08-03 are titled `# Session — …`. Keep those titles. Do not retitle them.
+3. The parts appear in the order below.
+4. **Opening summary**: a short paragraph naming what the work session was, as its arc. For example, it began as X, became Y, and ended with Z.
+5. **Framing note**: states that this is the communicable record, or guided tour. It states that the durable records it points to are the source of truth.
+6. **Chronological body**: numbered sections (`## 1.`, `## 2.`, …) walking the work session in order.
+7. Each section states what was asked and concluded at that step.
+8. Each section defines settled vocabulary as it arises.
+9. Each section points inline to the durable records that step produced.
+10. **Takeaways**: the settled conclusions, compressed to a few bullets.
+11. **Glossary**: the terms settled during the work session, each with its literal definition.
+12. **Where the durable records live**: pointers to the rules, observations, log entries, experiments, and code the work session produced.
+13. Optionally, a **reflective closing note** on the work session itself.
+14. A **provenance footer**: the record ends with the `Authored by … / Changed by …` footer, like every working-state artifact.
+15. The footer follows the working-state-artifacts-carry-a-provenance-footer rule and the record-a-rules-authorship-in-a-provenance-footer format.
+16. A work session record is not shaped like a plan. It records the past. This convention defines that format, alongside the directory.
+
+## Reconcile the settled direction once the record is written
+
+1. "Design" here means whichever settled item the work session bears on, whatever its kind tag.
+2. After the record is written, ask the engineer about the design through the AskUserQuestion selection UI.
+3. Ask whether the work session's output changes the design, or whether the design has fallen behind it.
+4. Offer three options: **update the design**, **the design stands**, or **no design bears on this work session**.
+5. Ask this every time a record is written. No other threshold applies.
+6. Surface the candidates. Do not decide.
+7. Name what the work session settled that the design does not reflect.
+8. Name anything the design asserts that the work session contradicts.
+9. Either side may be the stale one. Only the engineer can say which.
+10. Change neither the design nor the records on your own initiative.
+11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read a design against the records, and never regenerate it from the work downstream of it. Reconcile it instead.
+12. Where no design exists, or nothing in the work session bears on one, say so and move on.
+13. Do not invent a divergence to justify the prompt.
 
 # When the work diverges from the plan, the work is definitive
 
