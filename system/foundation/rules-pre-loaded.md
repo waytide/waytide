@@ -540,11 +540,12 @@ Source: system/foundation/source/the-work-sessions-directory-holds-one-record-pe
 12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
 13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
 14. A trivial work session needs no record. A record is not required for every session.
-15. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
-16. The engineer's selection decides.
-17. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
-18. A direct instruction from the engineer to write or append a record needs no prompt.
-19. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+15. Also propose it when the agent concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded.
+16. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+17. The engineer's selection decides.
+18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+19. A direct instruction from the engineer to write or append a record needs no prompt.
+20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
 ## The shape of a work session record
 
@@ -577,7 +578,7 @@ Source: system/foundation/source/the-work-sessions-directory-holds-one-record-pe
 8. Name anything the design asserts that the work session contradicts.
 9. Either side may be the stale one. Only the engineer can say which.
 10. Change neither the design nor the records on your own initiative.
-11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records.
+11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read a design against the records, and never regenerate it from the work downstream of it. Reconcile it instead.
 12. Where no design exists, or nothing in the work session bears on one, say so and move on.
 13. Do not invent a divergence to justify the prompt.
 
