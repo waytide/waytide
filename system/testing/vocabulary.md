@@ -32,24 +32,19 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 1. **controls**: the known, deterministic inputs a test is built from. They are the helpers that build example values, the example values themselves, and the pre-actuation setup that establishes them.
 2. A test reads **control → actuate → observe**.
 3. The package's control rules hold the term in place: the `control_` variable prefix and the "some" string value.
-4. **controls**, STE: absent from the STE dictionary as a plural. `CONTROL (n)` is approved, meaning something that controls, which is the singular sense this narrows. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
-5. **precondition**: a bare `assert` or `refute` that is not a test. It documents a factor that decides the test's outcome, where the test script does not express it.
-6. That factor is most often a property of a control. Name its value rather than describe it.
-7. A precondition documents by asserting, so the clarification is checked.
-8. A precondition qualifies the test. It does not prevent a regression. When it fails, the test's result is meaningless, not wrong.
-9. A precondition carries no name. Its predicate reads inline as the name. It sits immediately before what it qualifies.
-10. **precondition**, STE: absent from the STE dictionary. Technical noun, STE category 7, mathematical, scientific, engineering terms, and formulas.
-11. **uncontested**: of a test, it passes without any implementation written to meet it, because the behavior it checks already exists.
-12. A test is **contested** when it fails until code is written to satisfy it, which is how a DBE test drives a design.
-13. Taxonomically an uncontested test is a **confirming test**.
-14. **uncontested**, STE: absent from the STE dictionary. Technical adjective, ETE engineering, design, process, and method.
+4. **precondition**: a bare `assert` or `refute` that is not a test. It documents a factor that decides the test's outcome, where the test script does not express it.
+5. That factor is most often a property of a control. Name its value rather than describe it.
+6. A precondition documents by asserting, so the clarification is checked.
+7. A precondition qualifies the test. It does not prevent a regression. When it fails, the test's result is meaningless, not wrong.
+8. A precondition carries no name. Its predicate reads inline as the name. It sits immediately before what it qualifies.
+9. **uncontested**: of a test, it passes without any implementation written to meet it, because the behavior it checks already exists.
+10. A test is **contested** when it fails until code is written to satisfy it, which is how a DBE test drives a design.
+11. Taxonomically an uncontested test is a **confirming test**.
 
 ## Substitutions
 
 1. Write **verified**, not "green", for passing tests and for the report that tests pass.
-2. **verified**, STE: absent from the STE dictionary. `verify (v)` is not approved and gives MAKE SURE (v). Technical verb, STE category 2b, computer processes and applications, user interface and application processes, where the dictionary's own list gives `validate`. `verified` is its past participle used as an adjective, which STE Rule 1.13 permits.
-3. Write **prevent**, not "guard" or "protect", for what a test does to a regression.
-4. **prevent**, STE: `PREVENT (v)` is approved, and used with its approved meaning.
+2. Write **prevent**, not "guard" or "protect", for what a test does to a regression.
 
 ## Finer distinctions
 
@@ -66,6 +61,7 @@ Test-domain word substitutions. When the impulse is a word in the **Don't use** 
 - 2026-10-29, revised: the head line saying every word is approved or reserved is left out of the compressed text, at the engineer's direction, since the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule states it in the read
 - 2026-10-29, revised: the lines naming the vocabulary and saying it is binding are left out of the compressed text, at the engineer's direction; the loader names the file, and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says every vocabulary binds
 - 2026-10-29, revised: the definitions of *controls* and *precondition* are restored, at the engineer's direction, since a vocabulary entry keeps its term's meaning
+- 2026-11-05, revised: each entry's STE note is left out of the compressed text, at the engineer's direction; it matters only when a word is reserved or an entry written, and the full text keeps it
 
 ---
 
@@ -92,3 +88,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:33:19 PM PT
