@@ -20,7 +20,7 @@
 
 ## Freewriting into a kind of item
 
-**`/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` begin freewriting with the destination already settled:** a new item of that kind. At the end the agent reframes the points and writes them to the new item, and does not ask where they go.
+**`/freewrite <kind>` begins freewriting with the destination already settled:** a new item of that kind, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`. At the end the agent reframes the points and writes them to the new item, and does not ask where they go.
 
 ## Resuming
 
@@ -42,7 +42,7 @@
 4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
 6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
-7. `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` settle the destination at the start: a new item of that kind. At the end, write to it without asking.
+7. `/freewrite <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
 8. `/freewrite resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
 9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
 
@@ -50,8 +50,11 @@
 
 - 2026-11-02, compressed: checked: 31 directives, 28 kept, 3 less precise, 0 lost, 3 repairs; re-checked: 30 kept, 1 less precise, 1 repair; re-checked: 31 directives, 31 kept, 0 less precise, 0 lost
 - 2026-11-05, revised: a bare `/freewrite` begins freewriting; checked: 22 directives, 22 kept, 0 less precise, 0 lost
+- 2026-11-05, revised: `/freewrite` takes every item kind; checked: 27 directives, 27 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Nov 5 2026 `/freewrite` took three kinds, `idea`, `observation`, and `mistake`.
 
 Until Thu Nov 5 2026 a bare `/freewrite` had no meaning of its own, and asked which subcommand was meant.
 
@@ -65,3 +68,4 @@ Related:
 
 Authored by Scott Bellware on Mon Nov 2 2026 at 8:09:04 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:16:49 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 7:54:49 PM PT
