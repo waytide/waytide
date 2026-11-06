@@ -7,10 +7,17 @@
 
 **Not yet settled:** which implementation is current where more than one is Active or Suspended, what the second line shows where none is current, and how the phase is shown where the implementation has no phases.
 
+## Settled
+
+- **2026-11-06** — Where more than one implementation is current, the second line shows the one most recently acted upon.
+
 ## History
 
 As the engineer first stated it: "Idea: The current implementation (and phase) should be displayed on the second line of the status line"
 
+As the engineer stated it, on which implementation is shown: "The one that is most recently acted upon"
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 1:35:35 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:36:51 PM PT
