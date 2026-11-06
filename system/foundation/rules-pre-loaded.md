@@ -522,6 +522,65 @@ Source: system/foundation/source/the-migration-directory-holds-the-plans-for-mov
 24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
 25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
 
+# The work-sessions directory holds one record per work session
+
+Source: system/foundation/source/the-work-sessions-directory-holds-one-record-per-work-session.md
+
+1. `waytide/local/logs/work-sessions/` holds work session records.
+2. A work session record is the chronological narrative of one discrete work session between an engineer and Claude.
+3. A work session is a unit of the engineer's work. It may last hours, a day, or longer.
+4. The discrete piece of work sets a work session's boundaries, not a fixed clock.
+5. A work session record is the guided tour of the work session. It gives what was asked and concluded at each step, in order.
+6. It defines settled vocabulary as that vocabulary arises.
+7. It is written for a person to read. Its job is orientation and reasoning, not truth-of-record.
+8. It is not the source of truth. The durable records are authoritative.
+9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
+10. The record points to the durable records throughout. It does not restate them.
+11. The record keeps the reasoning behind each fork in the work. It ties the durable records together as a narrative and keeps the arc.
+12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
+13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
+14. A trivial work session needs no record. A record is not required for every session.
+15. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+16. The engineer's selection decides.
+17. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+18. A direct instruction from the engineer to write or append a record needs no prompt.
+19. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+
+## The shape of a work session record
+
+1. Title the record `# Work Session — <name> (<date>)`.
+2. Records written before 2026-08-03 are titled `# Session — …`. Keep those titles. Do not retitle them.
+3. The parts appear in the order below.
+4. **Opening summary**: a short paragraph naming what the work session was, as its arc. For example, it began as X, became Y, and ended with Z.
+5. **Framing note**: states that this is the communicable record, or guided tour. It states that the durable records it points to are the source of truth.
+6. **Chronological body**: numbered sections (`## 1.`, `## 2.`, …) walking the work session in order.
+7. Each section states what was asked and concluded at that step.
+8. Each section defines settled vocabulary as it arises.
+9. Each section points inline to the durable records that step produced.
+10. **Takeaways**: the settled conclusions, compressed to a few bullets.
+11. **Glossary**: the terms settled during the work session, each with its literal definition.
+12. **Where the durable records live**: pointers to the rules, observations, log entries, experiments, and code the work session produced.
+13. Optionally, a **reflective closing note** on the work session itself.
+14. A **provenance footer**: the record ends with the `Authored by … / Changed by …` footer, like every working-state artifact.
+15. The footer follows the working-state-artifacts-carry-a-provenance-footer rule and the record-a-rules-authorship-in-a-provenance-footer format.
+16. A work session record is not shaped like a plan. It records the past. This convention defines that format, alongside the directory.
+
+## Reconcile the settled direction once the record is written
+
+1. "Design" here means whichever settled item the work session bears on, whatever its kind tag.
+2. After the record is written, ask the engineer about the design through the AskUserQuestion selection UI.
+3. Ask whether the work session's output changes the design, or whether the design has fallen behind it.
+4. Offer three options: **update the design**, **the design stands**, or **no design bears on this work session**.
+5. Ask this every time a record is written. No other threshold applies.
+6. Surface the candidates. Do not decide.
+7. Name what the work session settled that the design does not reflect.
+8. Name anything the design asserts that the work session contradicts.
+9. Either side may be the stale one. Only the engineer can say which.
+10. Change neither the design nor the records on your own initiative.
+11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records.
+12. Where no design exists, or nothing in the work session bears on one, say so and move on.
+13. Do not invent a divergence to justify the prompt.
+
 # When the work diverges from the plan, the work is definitive
 
 Source: system/foundation/source/when-the-work-diverges-from-the-plan-the-work-is-definitive.md

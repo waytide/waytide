@@ -1,7 +1,5 @@
 # The work-sessions directory holds one record per work session
 
-**Trigger:** When the engineer asks for a work session record, as with `/work-session`
-
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
@@ -113,6 +111,8 @@ Once the record is written, put the **design reconciliation** through the same U
 
 ## History
 
+Later on Thu Nov 5 2026 the engineer had it pre-loaded, so the agent offers a work session record as a session closes, as it did before its trigger was reworded.
+
 Until Thu Nov 5 2026 its trigger read *When a work session is closing, or the engineer asks for a work session record*, which was not a safe one.
 
 The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
@@ -193,3 +193,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:51:20 PM PT
