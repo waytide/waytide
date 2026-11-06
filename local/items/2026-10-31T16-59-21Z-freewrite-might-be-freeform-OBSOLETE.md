@@ -1,6 +1,6 @@
 # "Freewrite" might be "freeform"
 
-- **State:** Open
+- **State:** Obsolete
 - **Tags:** [idea]
 
 **The freewriting commands might be named "freeform" in place of "freewrite"**, as `/freeform begin`, `/freeform end`, and `/freeform resume`. The item `2026-10-29T19-18-01Z-collect-might-be-brainstorm` settles "freewrite", and the item `2026-10-29T16-24-42Z-waytide-skills` records the commands.
@@ -23,3 +23,4 @@ On 2026-11-02: "Keep it freewrite, but include freeform as an alias"
 
 Authored by Scott Bellware on Sat Oct 31 2026 at 9:59:21 AM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:40 PM PT
