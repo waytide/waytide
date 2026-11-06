@@ -41,7 +41,7 @@ On Thu Nov 5 2026 the commands were renamed `/next-work` and `/next-work?`, and 
 
 Related:
 
-- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule — how the command is read
+- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule — how the command is read
 - the present-every-prompt-to-the-engineer-through-the-selection-ui rule — the question where the work is unclear
 
 ---
@@ -49,3 +49,4 @@ Related:
 Authored by Scott Bellware on Mon Nov 2 2026 at 8:46:33 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:03:01 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:09:56 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT

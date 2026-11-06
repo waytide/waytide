@@ -124,7 +124,7 @@ NEXT
   /sup? is an alias of /work-status, with the same
   subcommands.
 
-  /process help                       Print this command's help
+  /process help                    Print this command's help
 
 LOG
   The log records what was decided and when, and a work session record tells the
@@ -140,11 +140,11 @@ LOG
   /log help                        Print this command's help
 
 JOURNAL
-  The journal is the writer's own record of what they think, either stored with the project or kept in a private journal.
+  The journal is the writer's own record of what they think, either stored with
+  the project or kept in a private journal.
 
   /journal, /journal new, /journal entry
-                                   Write a journal entry in the
-  project's local journal
+                                   Write an entry in the project journal
   /journal private                 Write a private journal entry
   /journal read private            Read the private journal
   /journal list [<timespan>]       List entries by date, all or within
@@ -157,16 +157,17 @@ BRAINSTORMING
   Brainstorming records points as they are said, freeform in no order, and
   organizes them when the writer is done.
 
-  /brainstorm, /brainstorm begin     Begin brainstorming
-  /brainstorm end                   End it, and organize what was said
-  /brainstorm suspend               Resume a brainstorm that has ended or is suspended
-  /brainstorm resume                Resume a brainstorm that has ended
-  /brainstorm <kind>                Brainstorm and record it in an item of
+  /brainstorm, /brainstorm begin   Begin brainstorming
+  /brainstorm end                  End it, and organize what was said
+  /brainstorm suspend              Suspend the brainstorm
+  /brainstorm resume               Resume a brainstorm that has ended or is
+                                   suspended
+  /brainstorm <kind>               Brainstorm and record it in an item of
                                    that kind
                                    <kind>: idea, work, plan, design,
                                    aspiration, goal, observation, mistake,
                                    or problem
-  /brainstorm help                  Print this command's help
+  /brainstorm help                 Print this command's help
 
 TESTS
   These commands run the project's tests and report on them.
@@ -178,19 +179,22 @@ TESTS
   /test help                       Print this command's help
 
 PROJECTS
-  This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects.
+  This command lists the Waytide projects registered on this machine. The list
+  helps move ideas, new patterns, and corrections into other projects.
 
   /projects                        The machine's registry of Waytide projects
   /projects help                   Print this command's help
 
 RELEASE
-  This command presents the candidates for a package's next version, for the engineer to choose.
+  This command presents the candidates for a package's next version, for the
+  engineer to choose.
 
   /release                         Choose the next version
   /release help                    Print this command's help
 
 PACKAGES
-  These commands manage the installed packages: which are active, refreshing them, and installing Waytide.
+  These commands manage the installed packages: which are active, refreshing
+  them, and installing Waytide.
 
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
@@ -204,19 +208,20 @@ PACKAGES
 
 LANGUAGE
   These commands work on language: reserving a word, ETE, Waytide's
-  implementation of STE and its extensions, and clarifying language, often the agent's.
+  implementation of STE and its extensions, and clarifying language, often the
+  agent's.
 
   /clarify                         Clarify the previous answer, then clarify
+                                   it again for good measure
 
   /expand                          Expand the previous answer
-  /expand help                     Print this command's help
-                                   it again for good measure
+
   /reserve <word>                  Reserve a word, in six steps
-  /reserve help                    Print this command's help
 
   /ete [<text>]                    Say the previous answer, or the text, in
                                    Eventide Technical English
-  /language help                        Print this command's help
+
+  /language help                   Print this command's help
 
 LOAD
   This command loads the rules now, without waiting for the first prompt.

@@ -28,7 +28,7 @@
 
 **The journal is committed with the project.** It is not ignored and it is not kept outside the repository. A second writer on the project reads it, which is what makes it a record rather than a private note.
 
-**This is the shared journal, and a writer may also keep a private one.** A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it. An entry the `new entry` directive starts goes here, and never to the private journal.
+**This is the project journal, and a writer may also keep a private one.** A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it. An entry the `new entry` directive starts goes here, and never to the private journal.
 
 **The commit message is `Journal: <subject>`.** The subject is the entry's, and nothing follows it.
 
@@ -125,9 +125,9 @@ Journal: Idea
 
 ## The private journal
 
-1. This is the shared journal. A writer may also keep a private one.
+1. This is the project journal. A writer may also keep a private one.
 2. A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
-3. An entry the `new entry` directive starts goes in the shared journal, never the private one.
+3. An entry the `new entry` directive starts goes in the project journal, never the private one.
 
 ## Compression
 
@@ -203,3 +203,4 @@ Changed by Scott Bellware on Sat Oct 24 2026 at 3:17:47 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:37 PM PT

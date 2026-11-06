@@ -6,4 +6,8 @@ PACKAGES
   /package deactivate <package>    Deactivate an installed package
   /package refresh [<package>...]  Refresh installed packages
   /package install                 Install Waytide
+
+  /package-set                     Show the active package set
+  /package-set <set or packages>   Declare the package set
+
   /package help                    Print this command's help

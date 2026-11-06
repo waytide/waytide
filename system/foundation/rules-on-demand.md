@@ -1,6 +1,6 @@
-# A command takes its subcommand first, asks when it has none, and always takes help
+# A command takes its subcommand first, asks when it has none, and its domain takes help
 
-Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help.md
+Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help.md
 
 Trigger: When running or writing a Waytide slash command
 
@@ -8,10 +8,11 @@ Trigger: When running or writing a Waytide slash command
 2. With no subcommand, the command asks which one is meant, through the selection interface, unless its help gives the bare command a meaning of its own, as a bare `/journal` writes an entry.
 3. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
 4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
-5. Every root command takes `help`, which prints that command's part of the help text.
-6. `help` is always the subcommand, never an argument. `/reserve help` prints help, and does not reserve the word "help".
+5. Each command domain, a group of root commands under one heading in the Slasher help, has one help command, which prints the domain's part of the help text. It is the domain's own root command where it has one, as `/log help`, and otherwise a command that takes only `help`, as `/process help`.
+6. Any other command in the domain takes no `help`. `/next help` says so, names `/process help`, and does nothing more.
 7. A subcommand that is not the command's own is not guessed at. The command says so, and asks which one is meant, through the selection interface. Where the command's help gives it words of its own, as `/log <message>` does, a first word that is not a subcommand starts those words. `/log The cart keeps its contents for 30 days` writes that entry, and `/log summary` still summarizes.
 8. A command's skill only reads the words typed, and hands the act to the rule that governs it. That rule says what the act is. This rule does not, and governs only how a command is typed and how its words are read.
+9. `help` is always the subcommand, never an argument. `/reserve help` does not reserve the word "help".
 
 # A date in a record's title is written as the day, the date, and the 24-hour time
 
@@ -677,7 +678,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 
 Source: system/foundation/source/brainstorming-records-points-as-they-are-said-and-organizes-them-at-the-end.md
 
-Trigger: When the engineer begins, ends, or resumes brainstorming (`/brainstorm`)
+Trigger: When the engineer begins, ends, suspends, or resumes brainstorming (`/brainstorm`)
 
 1. Brainstorming is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/brainstorm begin`, or a bare `/brainstorm`, starts it, and `/brainstorm end` ends it.
 2. Create a collection file at `/brainstorm begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
@@ -686,8 +687,9 @@ Trigger: When the engineer begins, ends, or resumes brainstorming (`/brainstorm`
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
 6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
 7. `/brainstorm <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
-8. `/brainstorm resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
+8. `/brainstorm resume` reopens a collection file that has ended or is suspended. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
 9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
+10. `/brainstorm suspend` stops recording without ending. Do not reframe the points or ask where they go. Leave the collection file as it is, named by its prefix alone. Answer what is said after it as ordinary conversation.
 
 # Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
@@ -1331,8 +1333,9 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
-6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
-7. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
+6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
+7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+8. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 # Work status says what was recently done, and what is next
 

@@ -430,7 +430,7 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/phase` | Phases split a feature or an experiment into steps, run one at a time, each on its own sub branch. |
-| `/next` | These commands move the work under way along: take its next step, or say what was done and what's next. |
+| `/current` | These commands move the work under way along: take its next step, or say what was done and what's next. |
 | `/log` | The log records what was decided and when, and a work session record tells the story of a stretch of work. |
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
 | `/brainstorm` | Brainstorming records points as they are said, freeform in no order, and organizes them when the writer is done. |
@@ -438,10 +438,10 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/projects` | This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
 | `/release` | This command presents the candidates for a package's next version, for the engineer to choose. |
 | `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Waytide. |
-| `/reserve` | These commands work on language: reserving a word, ETE, Waytide's implementation of STE and its extensions, and clarifying language, often the agent's. |
+| `/clarify` | These commands work on language: reserving a word, ETE, Waytide's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 
-**Each row is one command domain.** A command domain is a group of root commands that share one heading and one description in the Slasher help. The row names the domain's first root command, and its description is the one under that heading. Print no other root command, alias, or subcommand in the table.
+**Each row is one command domain.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's first root command, and its description is the one under that heading. Print no other root command, alias, or subcommand in the table.
 
 **After the table, run `/current 5`.** In the same response, below the table, print the five most recently created current items and the current implementations, as the `/current` command prints them. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 5`, for the same reason it prints no table.
 

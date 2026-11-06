@@ -37,8 +37,9 @@ Related:
 - the tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit rule — the two directories, and who runs each
 - the a-test-file-named-with-a-leading-underscore-is-suspended rule — the files a run skips
 - the a-test-report-classifies-the-suite-and-prints-its-context-hierarchy rule and the the-test-tree-command-prints-the-suites-context-tree rule — the report and the tree
-- the `foundation` a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule — how the command is read
+- the `foundation` a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule — how the command is read
 
 ---
 
 Authored by Scott Bellware on Mon Nov 2 2026 at 8:53:36 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT

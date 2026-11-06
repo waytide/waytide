@@ -1,6 +1,6 @@
 # Brainstorming records points as they are said, and organizes them at the end
 
-**Trigger:** When the engineer begins, ends, or resumes brainstorming (`/brainstorm`)
+**Trigger:** When the engineer begins, ends, suspends, or resumes brainstorming (`/brainstorm`)
 
 **Brainstorming is the engineer saying points as they occur, in no order, for the agent to organize once the engineer is done.** It begins with `/brainstorm begin`, or a bare `/brainstorm`, which means the same, and ends with `/brainstorm end`.
 
@@ -22,9 +22,13 @@
 
 **`/brainstorm <kind>` begins brainstorming with the destination already settled:** a new item of that kind, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`. At the end the agent reframes the points and writes them to the new item, and does not ask where they go.
 
+## Suspending
+
+**`/brainstorm suspend` stops brainstorming without ending it.** The agent stops recording points, and does not reframe them or ask where they go. The collection file stays as it is, with its prefix alone as its name. What the engineer says after it is answered as ordinary conversation, not recorded.
+
 ## Resuming
 
-**`/brainstorm resume` reopens a collection file that has ended.** The engineer's new words are added after the earlier ones. At the next `/brainstorm end`, the new reframed version replaces the earlier one in the collection file, and is written to the item as an amendment.
+**`/brainstorm resume` reopens a collection file that has ended or is suspended.** The engineer's new words are added after the earlier ones. At the next `/brainstorm end`, the new reframed version replaces the earlier one in the collection file, and is written to the item as an amendment.
 
 ## Kept out of the record
 
@@ -32,7 +36,7 @@
 
 **Why:** a point is lost when it has to be organized before it can be said. Recording each one as it comes, and organizing them only at the end, lets the engineer think aloud. Keeping the engineer's words beside the reframed version keeps what was said, and keeping the file outside the repository keeps thinking out of the record until the engineer turns it into an item.
 
-**How to apply:** on `/brainstorm begin`, create the collection file and write each point to it as it is said, word for word, without reframing or answering it. On `/brainstorm end`, reframe the points, write the reframed version into the file, ask where it goes, write it there, and rename the file for that item. With a kind given, write to a new item of that kind without asking. On `/brainstorm resume`, add the new words after the earlier ones. Log and commit nothing about the collection file.
+**How to apply:** on `/brainstorm begin`, create the collection file and write each point to it as it is said, word for word, without reframing or answering it. On `/brainstorm end`, reframe the points, write the reframed version into the file, ask where it goes, write it there, and rename the file for that item. With a kind given, write to a new item of that kind without asking. On `/brainstorm suspend`, stop recording, and leave the file as it is. On `/brainstorm resume`, add the new words after the earlier ones. Log and commit nothing about the collection file.
 
 ## Compressed
 
@@ -43,8 +47,9 @@
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
 6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
 7. `/brainstorm <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
-8. `/brainstorm resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
+8. `/brainstorm resume` reopens a collection file that has ended or is suspended. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
 9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
+10. `/brainstorm suspend` stops recording without ending. Do not reframe the points or ask where they go. Leave the collection file as it is, named by its prefix alone. Answer what is said after it as ordinary conversation.
 
 ## Compression
 
@@ -52,8 +57,11 @@
 - 2026-11-05, revised: a bare `/brainstorm` begins brainstorming; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-11-05, revised: `/brainstorm` takes every item kind; checked: 27 directives, 27 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: freewriting is renamed brainstorming, `/freewrite` is renamed `/brainstorm`, and the `/freeform` alias is removed; checked: 39 directives, 39 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: `/brainstorm suspend` stops recording without ending, and `/brainstorm resume` reopens a suspended collection file; checked: 20 directives, 20 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Nov 6 2026 brainstorming could not be suspended, and `/brainstorm resume` reopened only a collection file that had ended.
 
 Until Fri Nov 6 2026 this rule was named freewriting-records-points-as-they-are-said-and-organizes-them-at-the-end, the activity was called freewriting, and its command was `/freewrite`, with `/freeform` as an alias.
 
@@ -73,3 +81,4 @@ Authored by Scott Bellware on Mon Nov 2 2026 at 8:09:04 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:16:49 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 7:54:49 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:49:24 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:01 PM PT

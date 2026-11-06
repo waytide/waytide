@@ -47,7 +47,7 @@ Related:
 
 - the next-takes-the-next-step-of-the-work-under-way rule — what is next
 - the a-status-report-prints-a-fixed-whole-project-report rule — the whole-project report, and the hidden records
-- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule — how the command is read
+- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule — how the command is read
 
 ---
 
@@ -56,3 +56,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 9:07:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:03:01 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:09:56 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:41:59 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT

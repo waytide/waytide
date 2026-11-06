@@ -10,13 +10,13 @@
 
 **The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills and the hooks. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
 
-**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`.
+**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`.
 
 **Why:** a plugin gives the skills one namespace, so a clash with another plugin's command is kept apart. Carrying each skill in its package means a deactivated package's commands go with its rules, and the assembled directory means a project needs nothing beyond the packages to have them.
 
 **How to apply:** write a skill in its package's `skills/<command>/SKILL.md`, thin, handing its act to a rule. Assemble `.claude/skills/slasher/` from foundation's `plugin/` and the active packages' skills at install and refresh, with `plugin.json` giving `name` as `slasher` and `displayName` as `Slasher`, and commit it. Edit no skill in the assembled directory.
 
-**Each skill carries its own help**, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
+**Each command domain's help command carries the domain's help**, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it, as `/log help` prints the LOG section. A skill that is not its domain's help command carries no `help.md`. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
 
 ## Compressed
 
@@ -25,8 +25,9 @@
 3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
-6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
-7. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
+6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
+7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+8. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 ## Compression
 
@@ -39,8 +40,11 @@
 - 2026-11-04, revised: the plugin carries foundation's plugin/ directory, with the session-start hooks, and assemble-plugin.sh builds it; checked: 25 directives, 21 kept, 4 less precise, 0 lost, 1 repair, the notice rule added to Related; re-checked: 25 directives, 20 kept, 5 less precise, 0 lost. Left less precise: that assembling copies plugin/ before the skills, that activation takes effect at the next assembly, the reasons the directory is committed and a skill runs a script, and that a changed skill reaches the plugin at the next install or refresh, each following from what the compressed text states
 - 2026-11-05, revised: `/slasher help` prints the full help, and a bare `/slasher` does nothing, as the engineer directed; not re-checked
 - 2026-11-06, revised: the plugin's hooks include the branch-switch hook; checked: 24 directives, 21 kept, 3 less precise, 0 lost, 0 repairs. Left less precise: that no other command on the machine claims the name, and the reasons the directory is committed and a skill runs a script, each as the 2026-11-04 check left them
+- 2026-11-06, revised: each command domain's help command carries the domain's help, and `/process` and `/language` take only `help`; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Nov 6 2026 each skill carried its own help, as `help.md` beside its `SKILL.md`, and `/<command> help` printed that command's own section.
 
 On Thu Nov 5 2026 a bare `/slasher` printed the full help, until the engineer moved it to `/slasher help` the same day.
 
@@ -54,7 +58,7 @@ From Tue Nov 3 2026 the plugin was named `slash`, at `.claude/skills/slash/`, an
 
 Related:
 
-- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule — the thin skill
+- the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule — the thin skill
 - the a-project-declares-which-installed-packages-are-active rule — the active packages
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the session-start hooks the plugin carries
 - the `git` package's announce-a-branch-switch-in-a-bordered-block rule — the branch-switch hook the plugin carries
@@ -70,3 +74,5 @@ Changed by Scott Bellware on Tue Nov 3 2026 at 3:41:02 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:07:04 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:41 PM PT

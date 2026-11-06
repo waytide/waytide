@@ -24,7 +24,7 @@ Foundation also provides the project-wide **status report** command, a whole-pro
 
 **Brainstorming records points as they are said, and organizes them at the end** (`brainstorming-records-points-as-they-are-said-and-organizes-them-at-the-end`). Each point goes word for word to a collection file outside the repository, and at the end the agent reframes them into an item.
 
-**A Waytide command takes its subcommand first, asks when it has none, and always takes `help`** (`a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help`). An alias does exactly what the command it names does, and each subcommand hands its act to the rule that governs it.
+**A Waytide command takes its subcommand first, asks when it has none, and its domain takes `help`** (`a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help`). An alias does exactly what the command it names does, and each subcommand hands its act to the rule that governs it.
 
 **Every prompt to the engineer goes through the selection interface** (`present-every-prompt-to-the-engineer-through-the-selection-ui`) — any selection, decision, or answer, never a prose question. The harness supplies the free-text option, so the agent adds none of its own. It does add an **`Explain`** option, which is the opposite half of it. The free-text option is how an engineer answers outside the options. `Explain` is how they ask what the question means before answering. **On the re-displayed prompt it reads `Explain briefly` and answers with the summary alone.** An engineer reaching for it a second time did not get what they needed at a normal length, so answering at that length again repeats the attempt that failed.
 
