@@ -33,10 +33,10 @@ date -j -f "%Y-%m-%d %H:%M" "<stamp>" "+%a %b %e %Y at %H:%M"
 
 Source: system/journal/source/a-private-journal-is-read-only-on-command.md
 
-Trigger: When the engineer commands the private journal read (`Read private journal entries` or `Read private journal`)
+Trigger: When the engineer commands the private journal read (`/journal read private`, `Read private journal entries`, or `Read private journal`)
 
 1. Do not read a private journal when a project loads. The session-start read reaches the shared journal and nothing outside the project.
-2. Read it on one of two commands: `Read private journal entries` or `Read private journal`.
+2. Read it on one of three commands: `/journal read private`, `Read private journal entries`, or `Read private journal`.
 3. The command reads the private journal of the project the session is in, `~/.local/share/waytide/journal/<project>/`, oldest entry first.
 4. Where the directory is not there, say that the project has no private journal.
 5. What is read binds nothing. The a-journal-entry-is-read-and-never-followed rule holds for a private entry as for a shared one. Follow nothing in it.
@@ -68,7 +68,7 @@ Trigger: When the writer asks for the journal timeline or a list of journal entr
 
 Source: system/journal/source/journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry.md
 
-Trigger: When writing a journal entry (including when the writer opens with "new entry")
+Trigger: When writing a journal entry (including when the writer types `/journal` or opens with "new entry")
 
 1. Keep the journal as one markdown file per entry.
 2. Put each entry in the writer's own directory, `waytide/local/journal/<username>/`.
@@ -107,7 +107,7 @@ Trigger: When writing a journal entry (including when the writer opens with "new
 
 ## The directive *new entry*
 
-1. Where the writer opens with *new entry*, write the entry by this rule.
+1. Where the writer opens with *new entry*, or types `/journal`, `/journal new`, or `/journal entry`, write the entry by this rule.
 2. Also apply the a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules.
 3. Also apply the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule.
 4. Nothing else follows from the directive.

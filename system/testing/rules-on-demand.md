@@ -193,9 +193,9 @@ Trigger: When writing an `assert_raises` or deciding whether to assert an error'
 
 Source: system/testing/source/the-test-tree-command-prints-the-suites-context-tree.md
 
-Trigger: When the user gives the command "test tree"
+Trigger: When the user gives the command "test tree", or types `/test tree` or `/test-tree`
 
-1. When the user gives the command **"test tree"**, run the automated suite.
+1. When the user gives the command **"test tree"**, or types `/test tree` or `/test-tree`, run the automated suite.
 2. Print its structure as a **single normalized tree**.
 3. The tree is the whole suite's `context`/`test` hierarchy.
 4. Merge **duplicate outer context headings**, so each context path appears **once**.

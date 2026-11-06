@@ -13,10 +13,10 @@ Trigger: When the engineer asks for an answer to be clarified, as with `/clarify
 
 Source: system/language/source/ete/a-word-is-reserved-in-six-steps.md
 
-Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
+Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `/reserve X`)
 
 1. Reserve a word by following these six steps in order, every time a word is reserved.
-2. The instruction that starts the sequence is "Waytide reserves the word, X". It names the word and asks for all six steps.
+2. The instruction that starts the sequence is "Waytide reserves the word, X", or the command `/reserve X`. It names the word and asks for all six steps.
 3. The sequence does not have to be spelled out each time a term is settled.
 4. Write the verb as `reserves`, and never `claims`.
 5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.

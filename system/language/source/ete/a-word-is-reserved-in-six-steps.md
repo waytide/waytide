@@ -1,10 +1,10 @@
 # A word is reserved in six steps
 
-**Trigger:** When asked to reserve a word (e.g. "Waytide reserves the word, X")
+**Trigger:** When asked to reserve a word (e.g. "Waytide reserves the word, X", or `/reserve X`)
 
 **Each step is stated in some rule, and the sequence is stated here.** A writer who reserves a word without the sequence reconstructs it, or picks a category by feel.
 
-**The instruction that starts the sequence is "Waytide reserves the word, X".** It names the word and asks for all six steps. So the sequence does not have to be spelled out each time a term is settled.
+**The instruction that starts the sequence is "Waytide reserves the word, X", or the command `/reserve X`.** It names the word and asks for all six steps. So the sequence does not have to be spelled out each time a term is settled.
 
 **The verb is `reserves`, and never `claims`.** STE Rules 1.5, 1.6, and 1.12 permit a project to add its own technical nouns and technical verbs. A reservation is made under those rules. A claim asserts a right that no rule granted, so it names the wrong act.
 
@@ -35,7 +35,7 @@ Reserve the word and stop there. Conform existing prose to it only where that is
 ## Compressed
 
 1. Reserve a word by following these six steps in order, every time a word is reserved.
-2. The instruction that starts the sequence is "Waytide reserves the word, X". It names the word and asks for all six steps.
+2. The instruction that starts the sequence is "Waytide reserves the word, X", or the command `/reserve X`. It names the word and asks for all six steps.
 3. The sequence does not have to be spelled out each time a term is settled.
 4. Write the verb as `reserves`, and never `claims`.
 5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.
@@ -68,6 +68,7 @@ Reserve the word and stop there. Conform existing prose to it only where that is
 ## Compression
 
 - 2026-10-28, revised: Why points removed, solubility 65, clarity 0.77; checked: 19 directives, 18 kept, 1 less precise, 0 lost
+- 2026-11-05, revised: `/reserve X` is a command that starts the sequence; checked: 19 directives, 17 kept, 2 less precise, 0 lost. Left less precise, untouched by this revision: the test for ordinary vocabulary, which the Related rule gives, and that the entry records the STE result and the category
 
 Related:
 
@@ -86,3 +87,4 @@ Changed by Scott Bellware on Fri Aug 14 2026 at 12:11:32 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:48 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 5:52:32 PM PT
