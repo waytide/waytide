@@ -15,7 +15,7 @@ The things below are printed verbatim, in two parts. **The session-start part** 
 First the title, on its own:
 
 ```
-Waytide: Human-in-the-Loop Harness
+Slasher: Human-in-the-Loop Harness
 ```
 
 **It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
@@ -144,7 +144,7 @@ Then **one blank line**, then the block, which ends the loading part:
 13. First the title, on its own:
 
 ```
-Waytide: Human-in-the-Loop Harness
+Slasher: Human-in-the-Loop Harness
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
@@ -258,8 +258,11 @@ Slasher is pre-loading its rules...
 - 2026-11-04, revised: the loading line prints ahead of the figure, the order the engineer set; not re-checked
 - 2026-11-04, revised: a blank line stands between the harness's label and the loading line, as the engineer directed; not re-checked
 - 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
+- 2026-11-06, revised: the title reads *Slasher: Human-in-the-Loop Harness*, wording the engineer gave; not re-checked
 
 ## History
+
+Until Fri Nov 6 2026 the title, and the root `README.md`'s title with it, read *Waytide: Human-in-the-Loop Harness*.
 
 Until Wed Nov 4 2026 the typed command was `load waytide`.
 
@@ -346,3 +349,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:09:55 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:14:38 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:26:59 PM PT

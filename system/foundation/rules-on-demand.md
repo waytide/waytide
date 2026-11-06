@@ -1227,7 +1227,7 @@ Trigger: When a session starts, or the engineer types its first prompt, or when 
 13. First the title, on its own:
 
 ```
-Waytide: Human-in-the-Loop Harness
+Slasher: Human-in-the-Loop Harness
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
