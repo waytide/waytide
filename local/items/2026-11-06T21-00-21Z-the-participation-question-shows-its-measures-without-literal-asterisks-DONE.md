@@ -1,6 +1,6 @@
 # The participation question shows its measures without literal asterisks
 
-- **State:** Open
+- **State:** Done
 - **Tags:** [work]
 
 The "Human in the loop" question, asked when a feature or experiment starts, shows each measure with literal `**` around it, as `**Agent's confidence: 55%.**`. The selection interface does not render markdown, so the asterisks print as characters. The measures are to show without them.
@@ -10,3 +10,5 @@ The "Human in the loop" question, asked when a feature or experiment starts, sho
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 1:00:21 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:06:40 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:08:36 PM PT

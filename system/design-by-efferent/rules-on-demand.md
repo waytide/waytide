@@ -138,10 +138,10 @@ Trigger: When starting a feature or an experiment
 
 > Human in the loop
 >
-> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80%. How sure the agent is that, working alone, it does the work as you would have it done.
+> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -150,7 +150,7 @@ with these options:
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 15. These words are fixed. The figures are examples.
-16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
 17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
