@@ -17,27 +17,63 @@ Unattended is **big-batch**: no attention is spent until the end. A wrong turn i
 
 Which is cheaper depends on how load-bearing the work is, and on how likely the first pass is to be right. That is a judgment about *this* piece of work.
 
-**It is asked at the start, through the selection UI, beside the working location.** The two are decisions about how the work will be conducted. Each is made once and holds for its duration. So they are put at the same gate rather than adding one. The default is attended, and the option set says so.
+**It is asked at the start, through the selection UI, beside the working location.** The two are decisions about how the work will be conducted. Each is made once and holds for its duration. So they are put at the same gate rather than adding one. The default is attended.
 
 **The question is asked in these words:**
 
-> Who decides?
+> Human in the loop
+>
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
-> **Attended** — You decide. The agent automates. (the default)
+> **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-**Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole of what the decision settles.
+**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
-**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names only the agent, because under it the engineer has no part.
+- **The overall score** comes first, labeled *Agent's confidence*. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
+- **The risk of redo** comes second. It is 100% minus the overall score: the chance that the engineer has to redo some of the work. It is computed, not estimated. It puts the same figure in the terms of what the engineer stands to lose.
+- **Works**, labeled *It'll work*, is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do. Works is high when the work is well understood and the tests can say when it is done. It is low when the agent cannot know how something behaves until it is built.
+- **Voice**, labeled *Your approval*, is the agent's confidence that, working alone, it does what the engineer would do. It names things as the engineer would name them, shapes each actuation as the engineer would shape it, and decides each hinge as the engineer would decide it. Voice is high when the project already shows how the engineer decides work of this kind, in its code, its rules, and its records. It is low when the work makes decisions the engineer has not made before, or when the engineer's intent can be read more than one way.
+
+**Works and voice are shown apart because they fail apart.** Work can pass every test and still be work the engineer would undo. A works failure is caught by the tests. A voice failure is caught only by the engineer, and under unattended work the engineer sees it only at the end, with everything built on top of it.
+
+**The overall score is estimated directly, not computed.** It is not the product or the average of the other two. The two are often related. A misread intent, for example, lowers both. The agent is the party that can judge how they relate in this piece of work. The overall score is never higher than the lower of the two, because unattended work has to come out right in both ways.
+
+**Why the figures are in the question:** the decision rests on how likely the first pass is to be right, and the agent is the party that has looked at the work. Putting its estimate in the question puts that judgment in view where the engineer makes the decision. A low *voice* figure says the engineer would change what the agent decides alone.
+
+**When the overall score is 70% or lower, the question carries a warning, and Attended is the recommendation.** The warning is the question's last line, in these words:
+
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+
+and the Attended option is marked as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+Above 70%, the question carries no warning, and neither option is marked. The engineer still chooses either way.
+
+**Why 70%:** at about 70%, the expected cost of fixing a wrong unattended result is about what attended work costs in attention as it goes. The estimate is in the log entry `2026-11-06T09-23-01Z-the-attended-floor-is-estimated-at-about-70-percent`. It has not yet been checked against how the work turns out. The warning puts the agent's doubt in front of the decision, rather than leaving it to show in the work.
+
+**Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Human in the loop** is a phrase an engineer knows before meeting this system, and it is the whole of what the decision settles.
+
+**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names what the agent does, and the one part left to the engineer: accepting the plan. After that, the engineer has no part. Naming the plan tells the engineer, while choosing, that they will see the intended path, and accept it, before any work is done.
 
 **The vocabulary is not being avoided, only deferred.** The hinges are named the moment the loop reaches the first one, where the engineer sees an actuation rather than a definition.
 
 **The mode is recorded in the two records.**
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside the working-location selection. It is a lifecycle fact: what was chosen, when, and by whom.
+
+  **The confirmation also records the four figures the question showed, and whether the warning was shown.** For example:
+
+  > - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
+  Recorded at the start, before the work, the figures can later be compared with how the work turned out. That comparison is the only way to learn whether the agent's estimates are accurate.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
 **An unattended cycle is not written as though an engineer was consulted.** A loop record's cycle ordinarily carries a hinge, the **options** put at the gate, and the **decision or chat** that resolved it. Under unattended work the last two did not happen. So:
@@ -54,6 +90,18 @@ with these options:
 
 **This is the one cheap moment of attention in a big-batch arrangement.** Unattended spends no attention until the end, and a wrong turn is found with everything built on top of it. A plan read before the work costs one reading and can move the whole path.
 
+**The agent generates only once the engineer accepts the plan.** It presents the plan and waits. If the engineer does not accept it, the agent revises it as the engineer directs and presents it again. This acceptance is the one wait in unattended work. It is put where a wait costs least, before anything is built.
+
+**Acceptance is asked through the selection UI, after the plan is presented.** The question and options are asked in these words:
+
+> Accept the plan?
+>
+> **Accept** — The agent makes the decisions and generates through.
+>
+> **Revise** — Say what to change. The agent revises the plan and shows it again.
+
+The words are fixed. The engineer says what to change in the selection's own text field, or in the reply after it.
+
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
 **Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
@@ -68,11 +116,11 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.* and *The agent decides and generates through.* Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent makes the decisions and generates through if you accept the plan it'll propose.* as the options. Name no hinge in the question or in an option.
 
-Record the selection as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way.
+Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
-**When unattended, present the plan as a list before generating, and write it in ETE.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
+**When unattended, present the plan as a list before generating, write it in ETE, and ask the engineer to accept it, through the selection UI, in the words fixed above.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
 ## Compressed
 
@@ -89,52 +137,97 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 11. The choice is a judgment about this piece of work: how load-bearing it is, and how likely the first pass is to be right.
 12. Ask the mode at the start, through the selection UI, beside the working-location selection.
 13. Put both decisions at the same gate. Do not add a separate gate.
-14. The option set shows that attended is the default.
-15. Ask the question in these exact words:
+14. Ask the question in these exact words, with the agent's own figures:
 
-> Who decides?
+> Human in the loop
+>
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
-> **Attended** — You decide. The agent automates. (the default)
+> **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-16. These words are fixed.
-17. Name no hinge in the question or in any option.
-18. Name the hinges when the loop reaches the first one, not before.
-19. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-20. That confirmation records what was chosen, when, and by whom.
-21. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-22. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-23. Under unattended work, each cycle records its hinge, and what was decided and why.
-24. The "why" is the reasoning the agent actually applied.
-25. Under unattended work, write no Options line and no Decision / chat line.
-26. Do not write an unattended cycle as though an engineer was consulted.
-27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+15. These words are fixed. The figures are examples.
+16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
+18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
+19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
+20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
+21. The second line is the risk of redo: 100% minus the overall score. Compute it. Do not estimate it.
+22. Estimate the overall score directly. Do not compute it from works and voice.
+23. Never give an overall score higher than the lower of works and voice.
+24. When the overall score is 70% or lower, end the question with this line:
+
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+26. Above 70%, give no warning, and mark neither option.
+27. The engineer may choose either option, whatever the score.
+28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+29. Name the hinges when the loop reaches the first one, not before.
+30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+31. That confirmation records what was chosen, when, and by whom.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
+
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
+33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+35. Under unattended work, each cycle records its hinge, and what was decided and why.
+36. The "why" is the reasoning the agent actually applied.
+37. Under unattended work, write no Options line and no Decision / chat line.
+38. Do not write an unattended cycle as though an engineer was consulted.
+39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan.
-3. The plan is a list.
-4. Use an ordered list where each step rests on the one above it.
-5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
-7. Use short sentences and active voice in the plan.
-8. Use no semicolon in the plan.
-9. Put one idea in each list item.
-10. Present the plan in the response.
-11. Do not write the plan to a file. It is not a `foundation` planning record.
+2. Do not generate until the engineer accepts the plan. This is the one wait in unattended work.
+3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
+
+> Accept the plan?
+>
+> **Accept** — The agent makes the decisions and generates through.
+>
+> **Revise** — Say what to change. The agent revises the plan and shows it again.
+
+4. If the engineer selects Revise, revise the plan as the engineer directs, and present it again. Take what to change from the selection's own text field, or from the reply after it.
+5. Attended work needs no plan. Do not present one for it.
+6. The plan is a list.
+7. Use an ordered list where each step rests on the one above it.
+8. Use a bullet list where the steps are independent.
+9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+10. Use short sentences and active voice in the plan.
+11. Use no semicolon in the plan.
+12. Put one idea in each list item.
+13. Present the plan in the response.
+14. Do not write the plan to a file. It is not a `foundation` planning record.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, and the question mark after *Human in the loop* removed, and *(the default)* removed from the Attended option with the directive that the option set show the default, as the engineer directed, not re-checked
+- 2026-11-06, revised: a warning and the Attended recommendation at an overall score of 70% or lower; checked: 52 directives, 52 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept; the warning's words then set by the engineer, not re-checked; the overall score's label then set to *Agent's confidence* by the engineer, and the warning's words changed to match, not re-checked; the works figure's label then set to *It'll work* by the engineer, not re-checked; the voice figure's label then set to *Your style*, then to *Satisfactory*, then to *Approval*, then to *Your approval*, by the engineer, not re-checked; the warning's words then set again by the engineer, not re-checked
+- 2026-11-06, revised: the risk of redo added, as the engineer directed; checked: 57 directives, 57 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the figures recorded in the start confirmation, as the engineer directed; checked: 58 directives, 58 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-11-06, revised: the Unattended option says the plan comes first, as the engineer directed; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-11-06, revised: unattended work waits for the engineer to accept the plan, and the Unattended option says so, as the engineer directed; checked: 61 directives, 61 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the Unattended option's words then set by the engineer, and *approve* made *accept* to match, not re-checked
+- 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; checked: 69 directives, 69 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
+
+Until Fri Nov 6 2026 the question was asked as *Who decides?*, with no confidence figures.
 
 Related:
 
@@ -182,3 +275,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT

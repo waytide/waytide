@@ -134,43 +134,79 @@ Trigger: When starting a feature or an experiment
 11. The choice is a judgment about this piece of work: how load-bearing it is, and how likely the first pass is to be right.
 12. Ask the mode at the start, through the selection UI, beside the working-location selection.
 13. Put both decisions at the same gate. Do not add a separate gate.
-14. The option set shows that attended is the default.
-15. Ask the question in these exact words:
+14. Ask the question in these exact words, with the agent's own figures:
 
-> Who decides?
+> Human in the loop
+>
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
-> **Attended** — You decide. The agent automates. (the default)
+> **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-16. These words are fixed.
-17. Name no hinge in the question or in any option.
-18. Name the hinges when the loop reaches the first one, not before.
-19. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-20. That confirmation records what was chosen, when, and by whom.
-21. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-22. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-23. Under unattended work, each cycle records its hinge, and what was decided and why.
-24. The "why" is the reasoning the agent actually applied.
-25. Under unattended work, write no Options line and no Decision / chat line.
-26. Do not write an unattended cycle as though an engineer was consulted.
-27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+15. These words are fixed. The figures are examples.
+16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
+18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
+19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
+20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
+21. The second line is the risk of redo: 100% minus the overall score. Compute it. Do not estimate it.
+22. Estimate the overall score directly. Do not compute it from works and voice.
+23. Never give an overall score higher than the lower of works and voice.
+24. When the overall score is 70% or lower, end the question with this line:
+
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+26. Above 70%, give no warning, and mark neither option.
+27. The engineer may choose either option, whatever the score.
+28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+29. Name the hinges when the loop reaches the first one, not before.
+30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+31. That confirmation records what was chosen, when, and by whom.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
+
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
+33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+35. Under unattended work, each cycle records its hinge, and what was decided and why.
+36. The "why" is the reasoning the agent actually applied.
+37. Under unattended work, write no Options line and no Decision / chat line.
+38. Do not write an unattended cycle as though an engineer was consulted.
+39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan.
-3. The plan is a list.
-4. Use an ordered list where each step rests on the one above it.
-5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
-7. Use short sentences and active voice in the plan.
-8. Use no semicolon in the plan.
-9. Put one idea in each list item.
-10. Present the plan in the response.
-11. Do not write the plan to a file. It is not a `foundation` planning record.
+2. Do not generate until the engineer accepts the plan. This is the one wait in unattended work.
+3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
+
+> Accept the plan?
+>
+> **Accept** — The agent makes the decisions and generates through.
+>
+> **Revise** — Say what to change. The agent revises the plan and shows it again.
+
+4. If the engineer selects Revise, revise the plan as the engineer directs, and present it again. Take what to change from the selection's own text field, or from the reply after it.
+5. Attended work needs no plan. Do not present one for it.
+6. The plan is a list.
+7. Use an ordered list where each step rests on the one above it.
+8. Use a bullet list where the steps are independent.
+9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+10. Use short sentences and active voice in the plan.
+11. Use no semicolon in the plan.
+12. Put one idea in each list item.
+13. Present the plan in the response.
+14. Do not write the plan to a file. It is not a `foundation` planning record.
 
 # Each hinge displays the actuation as its anchor, and the contexts once
 
