@@ -3,8 +3,8 @@ feature
 experiment
 phase
 phases
-next-work
-next-work?
+next
+next?
 work-status
 log
 log-this

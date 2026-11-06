@@ -90,15 +90,15 @@ PHASES
   /phases                          List the phases, the current one emphasized
   /phases help                     Print this command's help
 
-NEXT WORK
-  /next-work                       Proceed to the next step in the current
+NEXT
+  /next                            Proceed to the next step in the current
                                    multi-step process
-  /next-work help                  Print this command's help
+  /next help                       Print this command's help
 
-NEXT WORK?
-  /next-work?                      The next step in the current multi-step
+NEXT?
+  /next?                           The next step in the current multi-step
                                    process
-  /next-work? help                 Print this command's help
+  /next? help                      Print this command's help
 
 WORK STATUS
   /work-status                     What was recently done, and what's next
