@@ -24,12 +24,12 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## An implementation in phases
 
-**An experiment or a feature may run in phases.** Each phase is a question or an intent of its own that serves the implementation's. The record names the phases and their order at the start. Work that reaches a verdict states a forecast for each phase before its work, and work without one states none.
+**An experiment or a feature may run in phases.** Each phase is a question or an intent of its own that serves the implementation's. The record names the phases and their order at the start. **Whether a phase reaches a verdict is chosen for that phase, when it is added**, whatever its implementation chose. A phase that reaches a verdict states its forecast before its work, and a phase without one states none. **As the engineer stated it:** chosen per phase.
 
 **As the engineer stated it:** features should have phases as well.
 
 - **A phase's branch is the implementation's branch name, a dot, and the phase's name** — `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`. A slash cannot join them: git refuses a branch named beneath another branch's name, so `experiment/rule-reduction/flattening` cannot exist beside `experiment/rule-reduction`. The `worktree/` segment, where the implementation has one, carries into each phase's name.
-- **A phase branches from the implementation's branch and concludes into it.** Where the work reaches a verdict, a phase is affirmed, refuted, or inconclusive on the engineer's declaration, and an affirmed phase merges back into the implementation's branch. The record carries each phase's verdict and findings. Where the work reaches no verdict, a phase concludes **Completed** and merges back into the implementation's branch, with no verdict.
+- **A phase branches from the implementation's branch and concludes into it.** Where the phase reaches a verdict, it is affirmed, refuted, or inconclusive on the engineer's declaration, and an affirmed phase merges back into the implementation's branch. The record carries each phase's verdict and findings. Where the phase reaches no verdict, it concludes **Completed** and merges back into the implementation's branch, with no verdict.
 - **The implementation concludes after its phases**, and only then merges to its upstream branch. A phase never merges anywhere else.
 - **One phase runs at a time, in the order the record names**, each starting from the implementation's branch as the phases before it left it.
 
@@ -147,15 +147,15 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 
 1. An experiment or a feature may run in phases. Each phase is a question or an intent that serves the implementation's.
 2. The record names the phases and their order at the start.
-3. Work that reaches a verdict states each phase's forecast before its work. Work without one states none.
+3. Whether a phase reaches a verdict is chosen for that phase when it is added, whatever its implementation chose. A phase that reaches a verdict states its forecast before its work. One without states none.
 4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
 7. A phase branches from the implementation's branch and concludes into it.
-8. Where the work reaches a verdict, a phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+8. Where the phase reaches a verdict, it is affirmed, refuted, or inconclusive only on the engineer's declaration.
 9. An affirmed phase merges back into the implementation's branch.
 10. The record carries each phase's verdict and findings.
-11. Where the work reaches no verdict, a phase concludes Completed, with no verdict, and merges back into the implementation's branch.
+11. Where the phase reaches no verdict, it concludes Completed, with no verdict, and merges back into the implementation's branch.
 12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
 13. A phase merges nowhere else.
 14. The implementation concludes after its phases, and only then merges to its upstream branch.
@@ -265,8 +265,11 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 - 2026-10-29, merge from master re-checked: 88 directives, 86 kept, 2 less precise, 0 lost, 1 repair
 - 2026-10-29, revised: a feature may run in phases; checked: 66 directives, 66 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the verdict choice, not the kind, decides the parts that differ; checked: 72 directives, 71 kept, 1 less precise, 0 lost, 1 repair; re-checked: 71 kept, 1 less precise, 1 repair; re-checked: 72 directives, 72 kept, 0 less precise, 0 lost
+- 2026-11-02, revised: a phase's verdict is chosen for that phase; checked: 63 directives, 63 kept, 0 less precise, 0 lost. The body's forecast sentence was then made to say the phase, as the compressed text already did
 
 ## History
+
+Until Mon Nov 2 2026 a phase reached a verdict where its implementation did. The engineer settled that the choice is made for each phase.
 
 Until Thu Oct 29 2026 the tag decided the parts that differ: an `[experiment]` took the forecast, the verdict, isolation, the merge on affirmation, the drift watch, and the bar on the agent raising its end, and a `[feature]` took none of them. The engineer settled that whether the work reaches a verdict is chosen at the start, and that those parts follow the choice, not the kind.
 
@@ -318,3 +321,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:18:23 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:18:21 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:02:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:40:11 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 8:34:36 PM PT

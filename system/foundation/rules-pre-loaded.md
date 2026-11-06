@@ -154,6 +154,12 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 4. Then say that the deactivated packages' rules stay in force for this session.
 5. Also say that Claude must be restarted for those rules to stop applying.
 
+## Activating or deactivating one package
+
+1. `/package activate <package>` and `/package deactivate <package>` write a new declaration that changes the set by one package.
+2. Its `**Package set:**` line names the earlier set and the change, as `content, +testing` or `default, -design-by-efferent`. Its `**Packages:**` and `**Inactive:**` lines record what that resolves to.
+3. A package already in the state asked for is left as it is, and nothing is written.
+
 # A project does not name its downstream consumers in its own files
 
 Source: system/foundation/source/a-project-does-not-name-its-downstream-consumers-in-its-own-files.md
@@ -368,44 +374,37 @@ Source: system/foundation/source/the-harness-announces-waytides-installation-and
 
 ## The session-start notice
 
-1. A `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
 
 ```
 Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
-
-Waytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.
-
-To load them now, type: load waytide.
 ```
 
 2. The install line enumerates what is on disk.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
-5. The open line names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
 6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
 9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
-10. The close is always present: the caveat, then the command on a line of its own, last.
-11. A blank line precedes the close, after any open line, because the close asks and everything above it reports.
-12. A second blank line stands the command alone, so it is read and copied without reading past anything.
-13. The caveat says `a few moments`, because the read is a wait an engineer sees.
-14. The command names the read outright, so an engineer new to the system can act on it.
-15. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
-16. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
-17. The trade of observability for legibility is deliberate.
-18. The notice says `installed`, never `loaded`.
-19. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
-20. The close's `are loaded` describes what the session does next, and reports no read.
-21. Call it the session-start notice, not the load notice.
-22. The status line reports the system active, a claim about the configuration rather than the agent.
-23. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
-24. The notice carries no mark. The startup display prints it (see the the-startup-display-prints-once-per-session rule).
-25. Put no quotation marks, and no lone backslash, in anything the hook emits.
-26. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
-27. A double quote ends the string, and a lone backslash begins an invalid escape.
-28. Either way the harness fails to parse the output, and the notice disappears with no error.
+10. The notice has no close of its own. It ends with what it reports. The startup display's load line, after it in the same message, says when the rules load and that `/load` loads them now.
+11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
+12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
+13. The trade of observability for legibility is deliberate.
+14. The notice says `installed`, never `loaded`.
+15. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
+16. The read instruction describes what the session does next, and reports no read.
+17. Call it the session-start notice, not the load notice.
+18. The status line reports the system active, a claim about the configuration rather than the agent.
+19. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+20. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
+21. Put no quotation marks, and no lone backslash, in anything the hook emits.
+22. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
+23. A double quote ends the string, and a lone backslash begins an invalid escape.
+24. Either way the harness fails to parse the output, and the notice disappears with no error.
 
 ## The read instruction
 
@@ -425,10 +424,10 @@ To load them now, type: load waytide.
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load waytide` asks for exactly that read and nothing more. It is worded the same in the notice and the instruction.
+17. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
 18. This rule does not restate the directory list.
 19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel. The display hook reads it from the the-startup-display-prints-once-per-session rule.
+20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
 21. Nothing verifies the read. The hook cannot observe what the agent does.
 22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
 23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
@@ -462,20 +461,21 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## The startup display
 
-1. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`.
-2. It prints the title, the copyright and license, the loading line, and the figure, read from the the-startup-display-prints-once-per-session rule.
-3. It prints them once, on that command only.
+1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
+3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 
 ## Wiring
 
-1. A committed `.claude/settings.json` wires the three surfaces.
-2. `install.sh` places it in a consuming project.
-3. `install.sh` warns when git ignores `.claude/settings.json` and the file is not tracked, and prints how to correct it.
-4. The fix is `.claude/*` with `!.claude/settings.json`, since git cannot re-include a file inside an excluded directory.
-5. The fix keeps `.claude/settings.local.json` ignored.
-6. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too.
-7. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block and leaves the decision to the engineer.
+1. The committed Slasher plugin, `.claude/skills/slasher/`, wires the notice and the display through its `SessionStart` and `UserPromptSubmit` hooks.
+2. A committed `.claude/settings.json` wires the status line, since a plugin cannot set the main status line.
+3. `install.sh` assembles the plugin and places `.claude/settings.json` in a consuming project.
+4. `install.sh` warns when git ignores `.claude/settings.json` or the plugin and the file is not tracked, and prints how to correct it.
+5. The fix is `.claude/*` with `!.claude/settings.json` and `!.claude/skills/`, since git cannot re-include a file inside an excluded directory.
+6. The fix keeps `.claude/settings.local.json` ignored.
+7. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too.
+8. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block, or the hook entries to remove where the file still runs the session-start scripts, and leaves the decision to the engineer.
 
 ## There is no opt-out
 
@@ -485,10 +485,10 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## What this costs
 
-1. The mechanism works only where a harness reads `.claude/settings.json`.
+1. The mechanism works only where a harness loads a plugin from `.claude/skills/` and reads `.claude/settings.json`.
 2. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently.
 3. A setting that disables hooks silences it too.
-4. A newly placed `.claude/settings.json` may not take effect until the harness reloads.
+4. A newly placed plugin or `.claude/settings.json` may not take effect until the harness reloads.
 
 # The log holds one file per entry, with a one-line title
 
@@ -539,6 +539,12 @@ Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-lin
 5. For a readable overview, generate a summary of the log at read time instead.
 6. Never write that summary to a file.
 7. Give it in the response instead.
+
+## Log this
+
+1. `/log-this` writes a log entry for the work the conversation is on. State as its title the decision or finding the work has just reached, with a body where the reasoning will not fit.
+2. Where nothing has been reached, say so and write nothing. Where it is unclear which decision is meant, ask, through the selection interface.
+3. The entry follows every convention of an entry the engineer dictates.
 
 # When the work diverges from the plan, the work is definitive
 

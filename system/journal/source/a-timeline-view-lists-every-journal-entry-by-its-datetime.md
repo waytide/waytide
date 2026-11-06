@@ -1,10 +1,14 @@
 # A timeline view lists every journal entry by its datetime
 
-**Trigger:** When the writer asks for the journal timeline or a list of journal entries
+**Trigger:** When the writer asks for the journal timeline or a list of journal entries, as with `/journal list`
 
 Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. List them in chronological order, oldest first.
 
 Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>` is the human-readable datetime line under the entry's title, as `Wed Jun 17 2026 at 18:28` is. The `<title>` is the entry's `# ` heading with the leading `# ` removed. End with a one-line count and date span, as *15 entries, spanning Jun 15–17, 2026*. Output the list alone, with no preamble.
+
+**A list may be asked for within a timespan, as with `/journal list <timespan>`, and then holds only the entries whose datetime falls within it.** A timespan is a date, a range of dates, or a phrase the writer would say, such as *last week* or *since October*, read in the writer's local time. Both ends of a range are included. The count and date span at the end describe the entries listed.
+
+**As the engineer stated it:** “/journal timeline” should be “/journal list”. It should take an optional timespan.
 
 **The view is computed every time it is asked for, and it is stored nowhere.** Not the bullets, not the count, and not the date span. There is no `TIMELINE.md` and none is written.
 
@@ -35,14 +39,18 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 13. There is no `TIMELINE.md`, and none is written.
 14. Write nothing to a file.
 15. The view is a projection, in the sense of the foundation package's vocabulary.
+16. The list is asked for with `/journal list`. A list may be asked for within a timespan, as with `/journal list <timespan>`: a date, a range of dates, or a phrase such as *last week*, read in the writer's local time, both ends included. List only the entries within it, and give the count and date span for those.
 
 ## Compression
 
 - 2026-10-24, compressed: compression 0.44, change 0.64, solubility 52 → 83, clarity 0.39 → 0.78, 15 directives, 15 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 83 → 80, clarity 0.78 → 0.78; checked: 12 directives, 12 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 15 directives, 15 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-11-02, revised: the list takes a timespan, and is asked for with /journal list; checked: 21 directives, 20 kept, 1 less precise, 0 lost, 1 repair; re-checked: 21 directives, 20 kept, 1 less precise, 0 lost. Left less precise: /journal timeline not ruled out, which the command-protocol rule covers by asking
 
 ## History
+
+Until Mon Nov 2 2026 the view listed every entry, with no timespan.
 
 Until Sun Oct 25 2026 this rule was named timeline-view and titled "Timeline view: on request, list every journal entry chronologically, each row led by its datetime".
 
@@ -73,3 +81,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:58 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 9:02:21 PM PT

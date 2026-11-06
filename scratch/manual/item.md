@@ -45,8 +45,8 @@ SUBCOMMANDS
 
      List
        list <state>    The items in a state            (/list <state>)
-                       <state> is any state below, or "current": Open,
-                       Active, and Suspended together  (/current-items)
+                       <state> is any state below, or "current": Open
+                       and Active together  (/current-items)
 
      Change state
        start           Open -> Active

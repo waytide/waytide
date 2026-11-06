@@ -60,6 +60,10 @@
 
 **How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Run the loader as always: it prints the active packages' rules and lists each deactivated one with the command that loads it. Follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying. Where the engineer reactivates a package during a session, load it with its listed command and follow its rules from then on.
 
+## Activating or deactivating one package
+
+**`/package activate <package>` and `/package deactivate <package>` change the set by one package.** Each writes a new declaration, whose `**Package set:**` line names the earlier set and the change, as `content, +testing` or `default, -design-by-efferent`, and whose `**Packages:**` and `**Inactive:**` lines record what that resolves to. A package already in the state asked for is left as it is, and nothing is written.
+
 ## Compressed
 
 ## Declaring a set
@@ -132,6 +136,12 @@
 4. Then say that the deactivated packages' rules stay in force for this session.
 5. Also say that Claude must be restarted for those rules to stop applying.
 
+## Activating or deactivating one package
+
+1. `/package activate <package>` and `/package deactivate <package>` write a new declaration that changes the set by one package.
+2. Its `**Package set:**` line names the earlier set and the change, as `content, +testing` or `default, -design-by-efferent`. Its `**Packages:**` and `**Inactive:**` lines record what that resolves to.
+3. A package already in the state asked for is left as it is, and nothing is written.
+
 ## Compression
 
 - 2026-10-22, compressed: compression 0.44, change 0.78, solubility 20 → 57, clarity 0.24 → 0.70
@@ -139,8 +149,11 @@
 - 2026-10-24, revised: written as a numbered list, restored directive 33; checked twice, every directive kept
 - 2026-10-28, revised: Why points removed, solubility 57 → 62, clarity 0.70 → 0.86; checked: 34 directives, 32 kept, 2 less precise, 0 lost, 1 repair, re-checked with 0 lost
 - 2026-10-29, revised: a deactivated package is listed, not read, and reactivating it needs no restart, solubility 62 → 61, clarity 0.86 → 0.86; checked: 45 directives, 43 kept, 2 less precise, 0 lost, 1 repair; the less precise directive left is that the declaration is read from three plain text data attribute lines
+- 2026-11-03, revised: /package activate and deactivate change the set by one package; checked: 42 directives, 40 kept, 2 less precise, 0 lost. Left less precise, from before this change: what Packages being authoritative means, and the set deciding what is applied rather than what is on disk
 
 ## History
+
+Until Mon Nov 2 2026 a declaration named a whole set, and no command changed it by one package.
 
 Until Sun Oct 25 2026 this rule was named a-project-declares-its-package-set and titled "A project declares which of its installed packages are active".
 
@@ -149,7 +162,7 @@ Until Thu Oct 29 2026 a deactivated package's rules were read at session start a
 Related:
 
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read, whose content the declaration decides
-- the the-startup-display-prints-once-per-session rule — where the printed block is defined
+- the the-startup-display-prints-as-the-session-starts rule — where the printed block is defined
 - the a-status-report-prints-a-fixed-whole-project-report rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
 
@@ -175,3 +188,5 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:26 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT

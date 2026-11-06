@@ -1,6 +1,6 @@
 # Journal entries are recorded in the writer's journal directory, one file per entry
 
-**Trigger:** When writing a journal entry (including when the writer opens with "new entry")
+**Trigger:** When writing a journal entry (including when the writer types `/journal` or opens with "new entry")
 
 The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
@@ -22,7 +22,7 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 - **Editing:** lightly cleaned up. Preserve the writer's words, their meaning, and their emphasis. Correct the grammar and the flow. Invent no fact, and embellish nothing.
 - **Structure:** a `# <title>`, then the datetime line, then the optional `**Tags:**` line, then a bold `**Summary:**` one-line gist, then the narrative prose. See the a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule. The summary is what shows first in a Quick Look preview, so make it a standalone takeaway rather than a restatement of the title. **Omit the summary where it would be identical or nearly identical to the body**, as it is on a very short entry. The entry is then the title and the prose, with nothing repeated.
 
-**The directive is *new entry*.** Where the writer opens with that phrase, write the entry by this rule, by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the a-timeline-view-lists-every-journal-entry-by-its-datetime rule.
+**The directive is *new entry*, or the command `/journal`.** Where the writer opens with that phrase, or types `/journal`, `/journal new`, or `/journal entry`, write the entry by this rule, by the a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules, and by the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule. Nothing else follows from it. Nothing beside the entry file is written, and no index is maintained — see the a-timeline-view-lists-every-journal-entry-by-its-datetime rule.
 
 **Dating default:** an entry is about **today** unless the writer signals otherwise. Where the writer refers to a different time, by an explicit date or by a phrase such as *last Tuesday's meeting* or *back in April*, date and stamp the entry to that time instead. Opening with *Today* is a signal, and it means today.
 
@@ -73,7 +73,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 
 ## The directive *new entry*
 
-1. Where the writer opens with *new entry*, write the entry by this rule.
+1. Where the writer opens with *new entry*, or types `/journal`, `/journal new`, or `/journal entry`, write the entry by this rule.
 2. Also apply the a-journal-entry-has-a-human-readable-datetime-line-under-its-title, where-an-entrys-body-says-the-same-thing-as-its-title-keep-the-title-alone, and where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rules.
 3. Also apply the `foundation` package's a-record-may-be-categorized-with-square-bracket-tags rule.
 4. Nothing else follows from the directive.
@@ -99,6 +99,7 @@ Stamp to the minute. Write seconds only where the writer stated seconds, and dro
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 53 → 53, clarity 0.84 → 0.86; checked: 33 directives, 32 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.86 → 0.85; checked: 38 directives, 38 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 41 directives, 38 kept, 0 less precise, 3 lost, 1 repair
+- 2026-11-05, revised: `/journal` is a command for a new entry; checked: 30 directives, 30 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -154,3 +155,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 5:52:32 PM PT

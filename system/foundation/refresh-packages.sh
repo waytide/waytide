@@ -237,18 +237,32 @@ packages just refreshed. To regenerate it, delete AGENTS.md's Waytide section an
 BOOTSTRAP
 fi
 
-# A settings.json wired before the startup display existed lacks its hook. The refreshed
-# session-start.sh tells the agent not to print the display, so such a project would show
-# none at all, and the refresh is the moment that gap opens. It is checked here for the
-# same reason the bootstrap is: a reminder is not read, and a check is.
-if [ -f .claude/settings.json ] && [ -f waytide/system/foundation/startup-display.sh ] &&
-   ! grep -q 'foundation/startup-display.sh' .claude/settings.json; then
-  cat <<'DISPLAY'
+# The Slasher plugin carries the skills and the session-start hooks, assembled from the packages,
+# so a refresh that moves a package reassembles it. The assembly is not a package, so no subtree
+# pull touches it, and it is left uncommitted for the engineer to commit with the refresh.
+if [ -f waytide/system/foundation/assemble-plugin.sh ]; then
+  sh waytide/system/foundation/assemble-plugin.sh
+  if [ -n "$(git status --porcelain .claude/skills/slasher 2>/dev/null)" ]; then
+    cat <<'PLUGIN'
 
-.claude/settings.json does not run the startup display, so load waytide prints no
-display: the refreshed rules leave it to a hook rather than to the agent. Run
-`waytide/system/foundation/install.sh agents-md`, which prints the key to merge.
-DISPLAY
+.claude/skills/slasher/ is reassembled from the refreshed packages. Commit it with the
+refresh.
+PLUGIN
+  fi
+fi
+
+# A settings.json wired before the plugin carried the hooks still runs the session-start scripts,
+# so beside the plugin the notice prints twice. The refresh is the moment that duplicate opens,
+# and it is checked here for the same reason the bootstrap is: a reminder is not read, and a
+# check is.
+if [ -f .claude/settings.json ] && [ -d .claude/skills/slasher/hooks ] &&
+   grep -q 'foundation/session-start.sh\|foundation/startup-display.sh' .claude/settings.json; then
+  cat <<'HOOKS'
+
+.claude/settings.json still runs the session-start scripts that the Slasher plugin now
+runs, so the notice prints twice. Run `waytide/system/foundation/install.sh agents-md`,
+which names the entries to remove.
+HOOKS
 fi
 
 [ -z "$failed" ]

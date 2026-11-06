@@ -1,0 +1,12 @@
+---
+name: ete
+description: Say the previous answer, or the words typed, in Eventide Technical English.
+argument-hint: "[<text> | help]"
+disable-model-invocation: true
+---
+
+The engineer typed `/ete $ARGUMENTS`.
+
+1. Where the first word is `help`, print the text of `help.md`, in this skill's directory, and do nothing more.
+2. Otherwise, load the rule that governs the act. From the project root, run `waytide/system/foundation/load-rules.sh waytide-keeps-its-word-where-the-ste-word-means-something-else`. Where the project has no `waytide/` directory, run `system/foundation/load-rules.sh` with the same rule name. Follow the rule it prints.
+3. Say the previous answer again in Eventide Technical English, as *Say it in ETE* asks. Where words were typed after the command, say those in ETE instead.

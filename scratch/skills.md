@@ -8,7 +8,10 @@ Usage: /<command> [<subcommand>] [<arguments>]
        except where a bare command has its own meaning, shown below.
 
 ITEMS
-  /item new                        Create an item (tagged [idea] if untagged)
+  /item new [<kind>]               Create an item tagged [<kind>], or [idea]
+                                   with no kind. Any kind may be named.
+  /item <kind>                     An alias of /item new <kind>, where the
+                                   kind is not also a subcommand of /item
   /item idea, /idea                Create an item tagged [idea]
   /item work, /work, /work-item    Create an item tagged [work]
   /item plan, /plan                Create an item tagged [plan]
@@ -22,7 +25,7 @@ ITEMS
   /item list <state>, /list <state>
                                    List items in a state
                                    <state>: any item state, or "current"
-                                   (Open, Active, and Suspended)
+                                   (Open and Active)
   /current-items                   List current items (/item list current)
 
   /item start                      Open -> Active
@@ -41,6 +44,8 @@ ITEMS
   /observation help                Print this command's help
 
   A bare /idea is /idea new. A bare /observation is /observation new.
+  A kind that is also a subcommand, such as list, is created with
+  /item new list.
 
 FEATURES
   /feature new                     Start a feature
@@ -84,6 +89,12 @@ PHASE
 
   Whether a phase reaches a verdict is chosen for each phase,
   when it is added.
+
+PROCESS
+  /next                            Proceed to the next step in the current
+                                   multi-step process
+  /next?                           The next step in the current multi-step
+                                   process
 
 LOG
   /log                             Write a log entry

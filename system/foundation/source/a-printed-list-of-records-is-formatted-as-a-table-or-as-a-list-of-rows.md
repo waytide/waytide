@@ -32,6 +32,12 @@ A list of items takes the ordinal and no SHA columns:
 
 **A list of commits takes no SHA columns**, because the handle is already the SHA and a commit has no creation distinct from itself. **A list of items takes none either**, at the engineer's direction. Its rows are referred to by their ordinal.
 
+## Listing items by state
+
+**A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.** `current` is not a state: it asks for the Open and Active items together, the items whose work has not concluded and is not paused.
+
+**As the engineer stated it:** remove suspended from current.
+
 ## Keep every column short
 
 **A field that is a sentence does not belong in a table.** Column widths are fixed against the widest cell, so one long field narrows every other column and wraps every row. What was a scannable grid becomes prose in boxes.
@@ -88,6 +94,11 @@ A list of items takes the ordinal and no SHA columns:
 13. Do not add a column nobody asked for.
 14. A list of commits takes no SHA columns.
 
+## Listing items by state
+
+1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
+2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
+
 ## Keep every column short
 
 1. Keep every column short.
@@ -107,8 +118,11 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-10-27, revised: the example tables show the full prefix as the handle; checked: 24 directives, 24 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 69 → 56, clarity 0.75 → 0.75; checked: 23 directives, 23 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 25 directives, 25 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-11-02, revised: a list of items is asked for by state, and current is Open and Active; checked: 29 directives, 29 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Mon Nov 2 2026 this rule did not say how a list of items is asked for by state, or what `current` asks for.
 
 Until Sun Oct 25 2026 this rule was named a-record-list-is-a-table and titled "A list of records presented on request is a table".
 
@@ -150,3 +164,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 8:54:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
+Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:44 PM PT

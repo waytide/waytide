@@ -11,9 +11,12 @@
 # Invocation:
 #
 #   waytide/system/foundation/session-start.sh
+#   waytide/system/foundation/session-start.sh instruction
 #
-# Nobody types that. install.sh wires it into .claude/settings.json as the SessionStart
-# hook command, and the harness runs it. The line is recorded because a script whose
+# Nobody types the first. The second prints the read instruction alone, as plain text, and is
+# run by the /load skill, so /load follows the same text load rules acts on rather than a copy.
+# install.sh wires the first into .claude/settings.json as the SessionStart hook command,
+# and the harness runs it. The line is recorded because a script whose
 # invocation is not written down is one nobody can reproduce when the wiring breaks.
 
 # Never let a notice break a session start.
@@ -60,9 +63,9 @@ fi
 # read in — which is the one thing this notice cannot report. Installation and a live
 # configuration are what the script can actually observe, so they are what it claims.
 #
-# What the the-startup-display-prints-once-per-session rule carries is not here. It led this line from 2026-08-05 until
+# What the the-startup-display-prints-as-the-session-starts rule carries is not here. It led this line from 2026-08-05 until
 # 2026-08-06, and it moved to the agent, which prints it at the head of the response that begins
-# the rule read — see the the-startup-display-prints-once-per-session rule. It stands for a loading, and this hook runs before
+# the rule read — see the the-startup-display-prints-as-the-session-starts rule. It stands for a loading, and this hook runs before
 # the session, so it could only ever appear here at a moment when nothing was being loaded. The
 # move takes the doubled-backslash hazard with it: nothing of it is interpolated into JSON any
 # more.
@@ -174,53 +177,17 @@ if [ -n "$own" ]; then
   )
 fi
 
-# A literal backslash-n, so the JSON string carries a line break the harness
-# renders — not an actual newline, which would be invalid inside a JSON string.
+# Literal backslash-ns, so the JSON string carries line breaks the harness renders — not
+# actual newlines, which would be invalid inside a JSON string. A blank line sets the open
+# implementations apart from the install line.
 if [ -n "$implementations" ]; then
-  notice="${notice}\\n${implementations}"
+  notice="${notice}\\n\\n${implementations}"
 fi
 
-# The load-command line, always present. The notice states what is installed; this states
-# when the rules are read and what the engineer types to have it happen now.
-#
-# The command names the read outright: "load waytide". It is a command, not the contentless
-# foil request the line carried until 2026-07-28 — the engineer's message now carries the
-# instruction rather than only the occasion for it. What that gives up is attributability:
-# with a contentless word, a read that followed could only have come from the hook's
-# additionalContext channel, and with a named command it could have come from either. The
-# command is legible to a engineer who has never seen the system, which is what it buys.
-#
-# The command carries no emphasis markup. It was written with markdown asterisks until
-# 2026-07-28, on the assumption that the harness renders the notice as markdown; it does not
-# — the systemMessage is displayed as plain text, so the asterisks reached the engineer
-# literally and drew the eye to punctuation rather than to the words they were meant to
-# emphasize. Emphasis is unavailable on this channel, and the line stands without it: it
-# already ends with the command in the position the sentence points at.
-#
-# The command sentence is last. Until 2026-07-28 the cost of typing it — that loading takes
-# a moment — followed the command, so the line ended on a caveat and the words to be typed
-# sat mid-line. The two sentences are swapped so the command ends the line: the caveat is
-# read before the engineer decides, and the thing to type is the last thing on the line,
-# which is where the eye lands and where a command can be copied without reading past it.
-#
-# No quotation marks, deliberately. The notice is interpolated into a JSON string built by
-# printf with no escaping, so a double quote here would terminate the string and produce
-# output the harness cannot parse — the notice would vanish with no error at all.
-#
-# A blank line precedes it. Everything above is what the notice reports — the install, and
-# any experiment or feature left open — and this line is the only part that asks the
-# engineer to do something. Run together, the ask reads as one more reported fact and the
-# command to type sits at the bottom of an undifferentiated block. The blank line falls
-# after the open-work lines rather than between them and the install line, so the report
-# stays one block and the break marks the change of purpose rather than a change of subject.
-#
-# A second blank line sets the command sentence apart from the caveat ahead of it. Ending
-# the line with the command put the words to be typed in the position the eye settles on,
-# but they were still the tail of a two-sentence paragraph, so finding them meant reading
-# the caveat first. On its own line the command is the one thing on the notice's last line,
-# and it can be read and copied without reading past anything. The caveat keeps its place
-# ahead of it, where a engineer reads it before deciding whether to type the command.
-notice="${notice}\\n\\nWaytide's rules are loaded before your first instruction will be processed. Loading the rules will take a few moments.\\n\\nTo load them now, type: load waytide."
+# The notice has no close of its own. The startup display's load line, printed after it, says
+# when the rules load and that /load loads them now. A close here said the same until
+# 2026-11-04, and the notice ends with what it reports: the install, and any experiment or
+# feature left open.
 
 # The read instruction, carried to the agent rather than to the engineer. It goes in
 # additionalContext, not in the notice: the notice is rendered for a person, and an
@@ -250,11 +217,12 @@ own_rules=${own:-waytide/local}
 # summarizes rules the read already carries.
 #
 # The instruction does not ask the agent to print the startup display. The harness prints it, from
-# startup-display.sh, when the engineer types load waytide — see the the-startup-display-prints-once-per-session rule. The
-# agent printed it until 2026-10-10, on an instruction here naming the the-startup-display-prints-once-per-session rule as the
+# startup-display.sh, as the session starts and on its first prompt — see the
+# the-startup-display-prints-as-the-session-starts rule. The
+# agent printed it until 2026-10-10, on an instruction here naming the the-startup-display-prints-as-the-session-starts rule as the
 # first file to open, and under a later model the display stopped reaching the engineer: it was
 # skipped, or written into the agent's thinking where it is not shown. Nothing reported either.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, run %s/foundation/load-rules.sh from the project root, in one command, and read its whole output; where the output is saved to a file because it is long, read that file to its end. It prints, each under a line naming it, every package'\''s rules-pre-loaded.md and vocabulary.md, foundation first, since it defines the system; the vocabularies'\'' terms are binding and cannot be applied unread. It then prints the local rules this project adds, in %s/rules/, which are binding in the same way, this project'\''s own vocabulary, %s/vocabulary.md, whose terms and substitutions decide over every package'\''s, and the journal. Follow the rules. Read no rule file one by one; the loader'\''s output is the read. Each package'\''s ON DEMAND section lists rules it does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-once-per-session rule describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with the command load waytide, which asks for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
+instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, run %s/foundation/load-rules.sh from the project root, in one command, and read its whole output; where the output is saved to a file because it is long, read that file to its end. It prints, each under a line naming it, every package'\''s rules-pre-loaded.md and vocabulary.md, foundation first, since it defines the system; the vocabularies'\'' terms are binding and cannot be applied unread. It then prints the local rules this project adds, in %s/rules/, which are binding in the same way, this project'\''s own vocabulary, %s/vocabulary.md, whose terms and substitutions decide over every package'\''s, and the journal. Follow the rules. Read no rule file one by one; the loader'\''s output is the read. Each package'\''s ON DEMAND section lists rules it does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-as-the-session-starts rule describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with /load, or with the command load rules, which ask for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
   "$system" "$system" "$own_rules" "$own_rules")
 
 # The package set, where the project has declared one. It goes to the agent and not into the
@@ -313,6 +281,13 @@ if [ -n "$declaration" ]; then
   fi
 fi
 
+# The read instruction alone, for /load. It is the instruction a session start carries, with no
+# compaction preface, since /load is typed rather than run after a compaction.
+if [ "$1" = "instruction" ]; then
+  printf '%s\n' "$instruction"
+  exit 0
+fi
+
 # On a compaction, the rules read at the start survive only as the compaction's summary. The
 # event's input names its source; a hook run by hand at a terminal has no input, and is not
 # waited on.
@@ -322,6 +297,19 @@ source=$(printf '%s' "$event" | sed -n 's/.*"source"[[:space:]]*:[[:space:]]*"\(
 
 if [ "$source" = "compact" ]; then
   instruction="The context has just been compacted. The rules read at the start of this session now survive only as the compaction's summary, which does not hold them. Before your next act, whatever the next request is, run the loader again and read its whole output, as follows. ${instruction}"
+fi
+
+# The startup display's title and license lead the message, and its load line ends it, so the
+# notice stands between them. startup-display.sh prints each ready for a JSON string, and prints
+# nothing where its rule is missing, which leaves the notice alone.
+display=$(sh "$system/foundation/startup-display.sh" message 2>/dev/null)
+if [ -n "$display" ]; then
+  notice="${display}\\n\\n${notice}"
+fi
+
+load_line=$(sh "$system/foundation/startup-display.sh" load-line 2>/dev/null)
+if [ -n "$load_line" ]; then
+  notice="${notice}\\n\\n${load_line}"
 fi
 
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
