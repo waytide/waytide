@@ -1,6 +1,6 @@
 # The default namespace for the Waytide skills is `we`
 
-- **State:** Open
+- **State:** Obsolete
 - **Tags:** [idea]
 
 **The Waytide skills plugin is named `we`, so its skills are typed as `/we:item`, `/we:log`, and so on, until an engineer chooses another name.** It is the default the item `2026-10-30T06-46-24Z-an-alias-command-names-the-skills-namespace` would replace.
@@ -14,3 +14,4 @@ As the engineer first stated it: "Idea: Default skills alias (plugin name) is we
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 11:50:19 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:05:01 AM PT
