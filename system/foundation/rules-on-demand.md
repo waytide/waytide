@@ -176,7 +176,7 @@ Trigger: When starting a phase of an experiment or a feature, or when the engine
 
 Source: system/foundation/source/a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows.md
 
-Trigger: When the engineer asks for a list of records, as with `/item list` or `/list`
+Trigger: When the engineer asks for a list of records, as with `/item list`, `/list`, or `/current`
 
 1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with its fields in sequence and no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
@@ -214,6 +214,12 @@ A list of items takes the ordinal and no SHA columns:
 
 1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
 2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
+
+## The current command
+
+1. `/current` lists the current items, then the current implementations.
+2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
+3. Present each current implementation as one row: its handle, its title, and its state. Give it no ordinal and no SHA columns.
 
 ## Keep every column short
 

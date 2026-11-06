@@ -1,6 +1,6 @@
 # A printed list of records is formatted as a table or as a list of rows
 
-**Trigger:** When the engineer asks for a list of records, as with `/item list` or `/list`
+**Trigger:** When the engineer asks for a list of records, as with `/item list`, `/list`, or `/current`
 
 **When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 
@@ -37,6 +37,14 @@ A list of items takes the ordinal and no SHA columns:
 **A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.** `current` is not a state: it asks for the Open and Active items together, the items whose work has not concluded and is not paused.
 
 **As the engineer stated it:** remove suspended from current.
+
+## The current command
+
+**`/current` lists the current items, then the current implementations.** The items are the ones `current` asks for, Open and Active. The implementations are the features and experiments whose `**State:**` line reads Active or Suspended: the ones that have not concluded, whether they are under way or paused.
+
+**Each current implementation is one row: its handle, its title, and its state.** Its title is the record's own, as in `Feature — The current command`. It takes no ordinal and no SHA columns, since the list is a summary below the items, not a list of its own.
+
+**As the engineer stated it:** Change current-items to current, and include a summary of current implementations at the bottom.
 
 ## Keep every column short
 
@@ -99,6 +107,12 @@ A list of items takes the ordinal and no SHA columns:
 1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
 2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
 
+## The current command
+
+1. `/current` lists the current items, then the current implementations.
+2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
+3. Present each current implementation as one row: its handle, its title, and its state. Give it no ordinal and no SHA columns.
+
 ## Keep every column short
 
 1. Keep every column short.
@@ -119,8 +133,11 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-10-28, revised: Why points removed, solubility 69 → 56, clarity 0.75 → 0.75; checked: 23 directives, 23 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 25 directives, 25 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-11-02, revised: a list of items is asked for by state, and current is Open and Active; checked: 29 directives, 29 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the current command lists the current items, then the current implementations; checked: 38 directives, 38 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Nov 6 2026 the current items were listed by `/current-items`, and no command listed the current implementations.
 
 Until Thu Nov 5 2026 its trigger read *When the engineer asks for a list of records*, which was not a safe one.
 
@@ -168,3 +185,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:17:13 AM PT
