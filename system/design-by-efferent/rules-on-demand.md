@@ -188,17 +188,25 @@ with these options:
 
 1. Under unattended work, present a plan before generating.
 2. Do not generate until the engineer accepts the plan.
-3. If the engineer does not accept the plan, revise it as the engineer directs, and present it again.
-4. Attended work needs no plan. Do not present one for it.
-5. The plan is a list.
-6. Use an ordered list where each step rests on the one above it.
-7. Use a bullet list where the steps are independent.
-8. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
-9. Use short sentences and active voice in the plan.
-10. Use no semicolon in the plan.
-11. Put one idea in each list item.
-12. Present the plan in the response.
-13. Do not write the plan to a file. It is not a `foundation` planning record.
+3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
+
+> Accept the plan?
+>
+> **Accept** — The agent makes the decisions and generates through.
+>
+> **Revise** — Say what to change. The agent revises the plan and shows it again.
+
+4. If the engineer selects Revise, revise the plan as the engineer directs, and present it again.
+5. Attended work needs no plan. Do not present one for it.
+6. The plan is a list.
+7. Use an ordered list where each step rests on the one above it.
+8. Use a bullet list where the steps are independent.
+9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+10. Use short sentences and active voice in the plan.
+11. Use no semicolon in the plan.
+12. Put one idea in each list item.
+13. Present the plan in the response.
+14. Do not write the plan to a file. It is not a `foundation` planning record.
 
 # Each hinge displays the actuation as its anchor, and the contexts once
 

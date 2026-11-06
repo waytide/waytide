@@ -55,6 +55,7 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The Unattended option reads *The agent decides and generates through if you approve the plan it'll propose.*, in the engineer's words.
 - **2026-11-06** — The Unattended option reads *The agent makes the decisions and generates through if you approve the plan it'll propose.*, in the engineer's words.
 - **2026-11-06** — The Unattended option reads *The agent makes the decisions and generates through if you accept the plan it'll propose.*, in the engineer's words. The rule's prose says *accept* for the plan to match.
+- **2026-11-06** — Acceptance of the plan is asked through the selection UI, with the options *Accept* and *Revise*, as the engineer directed. The question and the options' sentences are the agent's wording.
 
 ---
 
