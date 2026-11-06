@@ -775,7 +775,7 @@ Trigger: When the engineer begins, ends, or resumes freewriting (`/freewrite`, o
 4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
 6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
-7. `/freewrite idea`, `/freewrite observation`, and `/freewrite mistake` settle the destination at the start: a new item of that kind. At the end, write to it without asking.
+7. `/freewrite <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
 8. `/freewrite resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
 9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
 
