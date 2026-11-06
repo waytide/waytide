@@ -1042,6 +1042,7 @@ Trigger: When starting an experiment or feature, or writing or changing an imple
 12. The word only work without a verdict takes is this.
     - **Completed**: integrated into the upstream branch. It is the ordinary conclusion.
 13. Work without a verdict takes no verdict word, and work with one takes no `Completed`, whatever the kind.
+14. Where the engineer asks for an implementation to be concluded and names no state, put the concluding states it can take to the engineer through the selection interface. Do not choose the state, and do not conclude the implementation before the engineer selects one. *Conclude the feature* names no state. *The feature is completed* names one.
 
 ## Runs
 
@@ -1140,6 +1141,7 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 59. Answer a question that runs against what an item settled, and record the change.
 60. Do not refuse to answer until the item is amended.
 61. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
+62. Where the engineer asks for an item to be concluded and names no state, put the concluding states the item can take to the engineer through the selection interface. Do not choose the state, and do not conclude the item before the engineer selects one. *Conclude that item* names no state. *That item is done* names one.
 
 # The log records why work was abandoned, and never says undone work was done
 

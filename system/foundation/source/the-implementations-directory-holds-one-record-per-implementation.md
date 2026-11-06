@@ -55,6 +55,10 @@ Open with the **Question** or the **Intent**, then the setup:
 
 **Work without a verdict has no verdict words, and work with one has no `Completed`.** Neither is an oversight, and neither depends on the kind.
 
+**Where the engineer asks for an implementation to be concluded and names no state, the state is put to the engineer through the selection interface.** Each concluding state the implementation can take is an option. The agent does not choose the state, and does not conclude the implementation before the engineer selects one. *Conclude the feature* names no state. *The feature is completed* names one.
+
+**As the engineer stated it:** When an item or an implementation is concluded without the engineer having given the concluding state, present the engineer with the state options using AskUserQuestion.
+
 ## Runs
 
 **Runs are optional and belong to work that reaches a verdict.** Split an implementation into runs only when its question or intent is held fixed and one factor is varied to compare. Each run is its own branch from the same base, carries its own forecast, and is titled `Run 1`, `Run 2`, and so on. A run is a deliberate variation, not a retry.
@@ -125,6 +129,7 @@ Write the state line as `Active` when the record is written, and update it as th
 12. The word only work without a verdict takes is this.
     - **Completed**: integrated into the upstream branch. It is the ordinary conclusion.
 13. Work without a verdict takes no verdict word, and work with one takes no `Completed`, whatever the kind.
+14. Where the engineer asks for an implementation to be concluded and names no state, put the concluding states it can take to the engineer through the selection interface. Do not choose the state, and do not conclude the implementation before the engineer selects one. *Conclude the feature* names no state. *The feature is completed* names one.
 
 ## Runs
 
@@ -166,6 +171,7 @@ Write the state line as `Active` when the record is written, and update it as th
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 46 → 46, clarity 0.78 → 0.79; checked: 55 directives, 54 kept, 1 less precise, 0 lost, 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 46 → 46, clarity 0.79 → 0.79; checked: 41 directives, 41 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: either kind opens with a question or an intent, and the verdict is chosen at the start; checked: 52 directives, 52 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: a concluding state the engineer did not name is put to the engineer through the selection interface; checked: 76 directives, 75 kept, 0 less precise, 1 lost, 1 repair; re-checked: 76 directives, 76 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -216,3 +222,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:28:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:38:42 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:29:16 AM PT

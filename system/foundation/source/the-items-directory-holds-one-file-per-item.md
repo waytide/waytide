@@ -81,6 +81,10 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 **An item whose work is done on an experiment's branch concludes when the work is done**, as `Realized`, or as `Done` for a work item. It does not wait for the experiment to merge. The item names the branch the work is on.
 
+**Where the engineer asks for an item to be concluded and names no state, the state is put to the engineer through the selection interface.** Each concluding state the item can take is an option. The agent does not choose the state, and does not conclude the item before the engineer selects one. *Conclude that item* names no state. *That item is done* names one.
+
+**As the engineer stated it:** When an item or an implementation is concluded without the engineer having given the concluding state, present the engineer with the state options using AskUserQuestion.
+
 ## A work item
 
 **An item tagged `[work]` is a piece of work to be done, and it concludes as `Done`, `Abandoned`, `Superseded`, or `Obsolete`.** This rule names the tag and says what follows.
@@ -172,6 +176,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 59. Answer a question that runs against what an item settled, and record the change.
 60. Do not refuse to answer until the item is amended.
 61. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
+62. Where the engineer asks for an item to be concluded and names no state, put the concluding states the item can take to the engineer through the selection interface. Do not choose the state, and do not conclude the item before the engineer selects one. *Conclude that item* names no state. *That item is done* names one.
 
 ## Compression
 
@@ -188,6 +193,7 @@ Change the state as the item reaches another word, renaming the file with it, an
 - 2026-10-29, merge from master re-checked: 67 directives, 64 kept, 3 less precise, 0 lost, 2 repairs
 - 2026-10-30, revised: Lapsed is renamed Obsolete, and a work item may take it; checked: 56 directives, 56 kept, 0 less precise, 0 lost
 - 2026-11-02, revised: each kind in common use is described, and any kind is created by its name; checked: 62 directives, 60 kept, 2 less precise, 0 lost, 1 repair; re-checked: 62 directives, 62 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: a concluding state the engineer did not name is put to the engineer through the selection interface; checked: 103 directives, 100 kept, 2 less precise, 1 lost, 1 repair; re-checked: 103 directives, 101 kept, 2 less precise, 0 lost. Directives 24 and 70, the problem and mistake contrast and the description of Recorded, are less precise in text this revision did not change, and are left as they are
 
 ## History
 
@@ -269,3 +275,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:49:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:29:16 AM PT
