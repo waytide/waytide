@@ -111,35 +111,20 @@ NEXT
   These commands move the work under way along: take its next step, or say what
   was done and what's next.
 
+  /current [<n>]                   The current items, or the n most recent,
+                                   then the current features and experiments
+
   /next                            Proceed to the next step in the current
                                    multi-step process
-  /next help                       Print this command's help
-
-NEXT?
-  These commands move the work under way along: take its next step, or say what
-  was done and what's next.
-
   /next?                           The next step in the current multi-step
                                    process
-  /next? help                      Print this command's help
-
-WORK STATUS
-  These commands move the work under way along: take its next step, or say what
-  was done and what's next.
 
   /work-status                     What was recently done, and what's next
-  /work-status help                Print this command's help
 
   /sup? is an alias of /work-status, with the same
   subcommands.
 
-CURRENT
-  These commands move the work under way along: take its next step, or say what
-  was done and what's next.
-
-  /current [<n>]                   The current items, or the n most recent,
-                                   then the current features and experiments
-  /current help                    Print this command's help
+  /process help                       Print this command's help
 
 LOG
   The log records what was decided and when, and a work session record tells the
@@ -147,33 +132,24 @@ LOG
 
   /log [<message>]                 Write a log entry
   /log summary                     Summarize the log
-  /log help                        Print this command's help
-
-LOG THIS
-  The log records what was decided and when, and a work session record tells the
-  story of a stretch of work.
 
   /log-this                        Write a log entry for the current work
-  /log-this help                   Print this command's help
-
-WORK SESSION
-  The log records what was decided and when, and a work session record tells the
-  story of a stretch of work.
 
   /work-session new | append       Write or append a work session record
-  /work-session help               Print this command's help
+
+  /log help                        Print this command's help
 
 JOURNAL
-  The journal is the writer's own record of what they think, either stored with
-  the project or kept in a private journal.
+  The journal is the writer's own record of what they think, either stored with the project or kept in a private journal.
 
   /journal, /journal new, /journal entry
-                                   Write a shared journal entry
+                                   Write a journal entry in the
+  project's local journal
   /journal private                 Write a private journal entry
   /journal read private            Read the private journal
   /journal list [<timespan>]       List entries by date, all or within
                                    a timespan
-  /journal publish-private         Move a private entry to the shared journal
+  /journal publish-private         Move a private entry to the project journal
                                    (requires confirmation)
   /journal help                    Print this command's help
 
@@ -183,6 +159,7 @@ BRAINSTORMING
 
   /brainstorm, /brainstorm begin     Begin brainstorming
   /brainstorm end                   End it, and organize what was said
+  /brainstorm suspend               Resume a brainstorm that has ended or is suspended
   /brainstorm resume                Resume a brainstorm that has ended
   /brainstorm <kind>                Brainstorm and record it in an item of
                                    that kind
@@ -201,70 +178,45 @@ TESTS
   /test help                       Print this command's help
 
 PROJECTS
-  This command lists the Waytide projects registered on this machine. The list
-  helps move ideas, new patterns, and corrections into other projects.
+  This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects.
 
   /projects                        The machine's registry of Waytide projects
   /projects help                   Print this command's help
 
 RELEASE
-  This command presents the candidates for a package's next version, for the
-  engineer to choose.
+  This command presents the candidates for a package's next version, for the engineer to choose.
 
   /release                         Choose the next version
   /release help                    Print this command's help
 
 PACKAGES
-  These commands manage the installed packages: which are active, refreshing
-  them, and installing Waytide.
+  These commands manage the installed packages: which are active, refreshing them, and installing Waytide.
 
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
   /package refresh [<package>...]  Refresh installed packages
   /package install                 Install Waytide
-  /package help                    Print this command's help
-
-PACKAGE SET
-  These commands manage the installed packages: which are active, refreshing
-  them, and installing Waytide.
 
   /package-set                     Show the active package set
   /package-set <set or packages>   Declare the package set
-  /package-set help                Print this command's help
 
-RESERVE
+  /package help                    Print this command's help
+
+LANGUAGE
   These commands work on language: reserving a word, ETE, Waytide's
-  implementation of STE and its extensions, and clarifying language, often the
-  agent's.
+  implementation of STE and its extensions, and clarifying language, often the agent's.
 
-  /reserve <word>                  Reserve a word, in six steps
-  /reserve help                    Print this command's help
-
-ETE
-  These commands work on language: reserving a word, ETE, Waytide's
-  implementation of STE and its extensions, and clarifying language, often the
-  agent's.
-
-  /ete [<text>]                    Say the previous answer, or the text, in
-                                   Eventide Technical English
-  /ete help                        Print this command's help
-
-EXPAND
-  These commands work on language: reserving a word, ETE, Waytide's
-  implementation of STE and its extensions, and clarifying language, often the
-  agent's.
+  /clarify                         Clarify the previous answer, then clarify
 
   /expand                          Expand the previous answer
   /expand help                     Print this command's help
-
-CLARIFY
-  These commands work on language: reserving a word, ETE, Waytide's
-  implementation of STE and its extensions, and clarifying language, often the
-  agent's.
-
-  /clarify                         Clarify the previous answer, then clarify
                                    it again for good measure
-  /clarify help                    Print this command's help
+  /reserve <word>                  Reserve a word, in six steps
+  /reserve help                    Print this command's help
+
+  /ete [<text>]                    Say the previous answer, or the text, in
+                                   Eventide Technical English
+  /language help                        Print this command's help
 
 LOAD
   This command loads the rules now, without waiting for the first prompt.
