@@ -41,6 +41,15 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The Attended option no longer carries *(the default)*, as the engineer directed. Attended is still the default, and the option set no longer says so.
 - **2026-11-06** — When the overall score is 70% or lower, the question carries a warning and the Attended option is marked as the recommendation, as the engineer directed. This carries out the item `2026-11-05T02-38-50Z-low-confidence-in-unattended-work-recommends-attended`, made Active.
 - **2026-11-06** — The warning reads *When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.*, in the engineer's words.
+- **2026-11-06** — The overall score is labeled *Agent's confidence* in the question, as the engineer directed. The warning names it the same way: *When the agent's confidence is 70% or lower, leaving the agent unattended risks adverse outcomes.*
+- **2026-11-06** — The works figure is labeled *It'll work* in the question, as the engineer directed.
+- **2026-11-06** — The voice figure is labeled *Your style* in the question, as the engineer directed.
+- **2026-11-06** — The voice figure is labeled *Satisfactory* instead, as the engineer directed, so the label says whether the work is acceptable to the engineer.
+- **2026-11-06** — The voice figure is labeled *Approval* instead of *Satisfactory*, as the engineer directed.
+- **2026-11-06** — The voice figure is labeled *Your approval* instead of *Approval*, as the engineer directed.
+- **2026-11-06** — The warning reads *When the agent's confidence is 70% or lower, you may have to redo work the agent does.*, in the engineer's words, replacing *leaving the agent unattended risks adverse outcomes*.
+- **2026-11-06** — The question carries a *Risk of redo* line after the agent's confidence, as the engineer directed. It is 100% minus the agent's confidence, computed rather than estimated.
+- **2026-11-06** — The start confirmation records the four figures the question showed, and whether the warning was shown, beside the participation selection, as the engineer directed.
 
 ---
 

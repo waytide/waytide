@@ -138,9 +138,10 @@ Trigger: When starting a feature or an experiment
 
 > Human in the loop
 >
-> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -154,29 +155,31 @@ with these options:
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
 20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
-21. Estimate the overall score directly. Do not compute it from works and voice.
-22. Never give an overall score higher than the lower of works and voice.
-23. When the overall score is 70% or lower, end the question with this line:
+21. The second line is the risk of redo: 100% minus the overall score. Compute it. Do not estimate it.
+22. Estimate the overall score directly. Do not compute it from works and voice.
+23. Never give an overall score higher than the lower of works and voice.
+24. When the overall score is 70% or lower, end the question with this line:
 
-> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
-24. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
 
 > **Attended (Recommended)** — You decide. The agent automates.
 
-25. Above 70%, give no warning, and mark neither option.
-26. The engineer may choose either option, whatever the score.
-27. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
-28. Name the hinges when the loop reaches the first one, not before.
-29. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-30. That confirmation records what was chosen, when, and by whom.
-31. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-32. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-33. Under unattended work, each cycle records its hinge, and what was decided and why.
-34. The "why" is the reasoning the agent actually applied.
-35. Under unattended work, write no Options line and no Decision / chat line.
-36. Do not write an unattended cycle as though an engineer was consulted.
-37. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+26. Above 70%, give no warning, and mark neither option.
+27. The engineer may choose either option, whatever the score.
+28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+29. Name the hinges when the loop reaches the first one, not before.
+30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+31. That confirmation records what was chosen, when, and by whom.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended.
+33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+35. Under unattended work, each cycle records its hinge, and what was decided and why.
+36. The "why" is the reasoning the agent actually applied.
+37. Under unattended work, write no Options line and no Decision / chat line.
+38. Do not write an unattended cycle as though an engineer was consulted.
+39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 

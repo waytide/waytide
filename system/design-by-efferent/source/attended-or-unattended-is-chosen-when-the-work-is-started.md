@@ -23,9 +23,10 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 > Human in the loop
 >
-> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -33,11 +34,12 @@ with these options:
 >
 > **Unattended** — The agent decides and generates through.
 
-**The question carries the agent's confidence in doing the work unattended, as three percentages.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
+**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
-- **The overall score** comes first. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
-- **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do. Works is high when the work is well understood and the tests can say when it is done. It is low when the agent cannot know how something behaves until it is built.
-- **Voice** is the agent's confidence that, working alone, it does what the engineer would do. It names things as the engineer would name them, shapes each actuation as the engineer would shape it, and decides each hinge as the engineer would decide it. Voice is high when the project already shows how the engineer decides work of this kind, in its code, its rules, and its records. It is low when the work makes decisions the engineer has not made before, or when the engineer's intent can be read more than one way.
+- **The overall score** comes first, labeled *Agent's confidence*. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
+- **The risk of redo** comes second. It is 100% minus the overall score: the chance that the engineer has to redo some of the work. It is computed, not estimated. It puts the same figure in the terms of what the engineer stands to lose.
+- **Works**, labeled *It'll work*, is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do. Works is high when the work is well understood and the tests can say when it is done. It is low when the agent cannot know how something behaves until it is built.
+- **Voice**, labeled *Your approval*, is the agent's confidence that, working alone, it does what the engineer would do. It names things as the engineer would name them, shapes each actuation as the engineer would shape it, and decides each hinge as the engineer would decide it. Voice is high when the project already shows how the engineer decides work of this kind, in its code, its rules, and its records. It is low when the work makes decisions the engineer has not made before, or when the engineer's intent can be read more than one way.
 
 **Works and voice are shown apart because they fail apart.** Work can pass every test and still be work the engineer would undo. A works failure is caught by the tests. A voice failure is caught only by the engineer, and under unattended work the engineer sees it only at the end, with everything built on top of it.
 
@@ -47,7 +49,7 @@ with these options:
 
 **When the overall score is 70% or lower, the question carries a warning, and Attended is the recommendation.** The warning is the question's last line, in these words:
 
-> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
 and the Attended option is marked as the recommendation:
 
@@ -66,6 +68,12 @@ Above 70%, the question carries no warning, and neither option is marked. The en
 **The mode is recorded in the two records.**
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside the working-location selection. It is a lifecycle fact: what was chosen, when, and by whom.
+
+  **The confirmation also records the four figures the question showed, and whether the warning was shown.** For example:
+
+  > - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
+  Recorded at the start, before the work, the figures can later be compared with how the work turned out. That comparison is the only way to learn whether the agent's estimates are accurate.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
 
 **An unattended cycle is not written as though an engineer was consulted.** A loop record's cycle ordinarily carries a hinge, the **options** put at the gate, and the **decision or chat** that resolved it. Under unattended work the last two did not happen. So:
@@ -96,9 +104,9 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Human in the loop*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
 
-Record the selection as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way.
+Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
 **When unattended, present the plan as a list before generating, and write it in ETE.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
@@ -121,9 +129,10 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 > Human in the loop
 >
-> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -137,29 +146,31 @@ with these options:
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
 20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
-21. Estimate the overall score directly. Do not compute it from works and voice.
-22. Never give an overall score higher than the lower of works and voice.
-23. When the overall score is 70% or lower, end the question with this line:
+21. The second line is the risk of redo: 100% minus the overall score. Compute it. Do not estimate it.
+22. Estimate the overall score directly. Do not compute it from works and voice.
+23. Never give an overall score higher than the lower of works and voice.
+24. When the overall score is 70% or lower, end the question with this line:
 
-> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
-24. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
 
 > **Attended (Recommended)** — You decide. The agent automates.
 
-25. Above 70%, give no warning, and mark neither option.
-26. The engineer may choose either option, whatever the score.
-27. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
-28. Name the hinges when the loop reaches the first one, not before.
-29. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-30. That confirmation records what was chosen, when, and by whom.
-31. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-32. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-33. Under unattended work, each cycle records its hinge, and what was decided and why.
-34. The "why" is the reasoning the agent actually applied.
-35. Under unattended work, write no Options line and no Decision / chat line.
-36. Do not write an unattended cycle as though an engineer was consulted.
-37. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+26. Above 70%, give no warning, and mark neither option.
+27. The engineer may choose either option, whatever the score.
+28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+29. Name the hinges when the loop reaches the first one, not before.
+30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+31. That confirmation records what was chosen, when, and by whom.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended.
+33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+35. Under unattended work, each cycle records its hinge, and what was decided and why.
+36. The "why" is the reasoning the agent actually applied.
+37. Under unattended work, write no Options line and no Decision / chat line.
+38. Do not write an unattended cycle as though an engineer was consulted.
+39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
@@ -180,7 +191,9 @@ with these options:
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, and the question mark after *Human in the loop* removed, and *(the default)* removed from the Attended option with the directive that the option set show the default, as the engineer directed, not re-checked
-- 2026-11-06, revised: a warning and the Attended recommendation at an overall score of 70% or lower; checked: 52 directives, 52 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept; the warning's words then set by the engineer, not re-checked
+- 2026-11-06, revised: a warning and the Attended recommendation at an overall score of 70% or lower; checked: 52 directives, 52 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept; the warning's words then set by the engineer, not re-checked; the overall score's label then set to *Agent's confidence* by the engineer, and the warning's words changed to match, not re-checked; the works figure's label then set to *It'll work* by the engineer, not re-checked; the voice figure's label then set to *Your style*, then to *Satisfactory*, then to *Approval*, then to *Your approval*, by the engineer, not re-checked; the warning's words then set again by the engineer, not re-checked
+- 2026-11-06, revised: the risk of redo added, as the engineer directed; checked: 57 directives, 57 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the figures recorded in the start confirmation, as the engineer directed; checked: 58 directives, 58 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 
 ## History
 
