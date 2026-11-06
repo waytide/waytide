@@ -1335,7 +1335,7 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
 7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
-8. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
+8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 # Work status says what was recently done, and what is next
 

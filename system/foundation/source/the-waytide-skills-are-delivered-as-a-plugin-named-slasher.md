@@ -16,7 +16,7 @@
 
 **How to apply:** write a skill in its package's `skills/<command>/SKILL.md`, thin, handing its act to a rule. Assemble `.claude/skills/slasher/` from foundation's `plugin/` and the active packages' skills at install and refresh, with `plugin.json` giving `name` as `slasher` and `displayName` as `Slasher`, and commit it. Edit no skill in the assembled directory.
 
-**Each command domain's help command carries the domain's help**, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it, as `/log help` prints the LOG section. A skill that is not its domain's help command carries no `help.md`. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+**Each command domain's help command carries the domain's help**, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it, as `/log help` prints the LOG section. A skill that is not its domain's help command carries no `help.md`. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
 
 ## Compressed
 
@@ -27,7 +27,7 @@
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
 7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
-8. A domain with no root command of its own name, such as NEXT or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
+8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 ## Compression
 
@@ -41,6 +41,7 @@
 - 2026-11-05, revised: `/slasher help` prints the full help, and a bare `/slasher` does nothing, as the engineer directed; not re-checked
 - 2026-11-06, revised: the plugin's hooks include the branch-switch hook; checked: 24 directives, 21 kept, 3 less precise, 0 lost, 0 repairs. Left less precise: that no other command on the machine claims the name, and the reasons the directory is committed and a skill runs a script, each as the 2026-11-04 check left them
 - 2026-11-06, revised: each command domain's help command carries the domain's help, and `/process` and `/language` take only `help`; checked: 21 directives, 21 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the NEXT domain is named PROCESS, a term swap the engineer settled; not re-checked
 
 ## History
 
@@ -76,3 +77,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 6:07:04 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:41 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:16:16 PM PT
