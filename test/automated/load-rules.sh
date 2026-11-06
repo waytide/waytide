@@ -310,4 +310,24 @@ compressed_output=$(cd "$compressed_project" && system/foundation/load-rules.sh)
 
 [ "$compressed_output" = "$(control_compressed_output)" ] || fail "Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file" "output:" "$compressed_output"
 
-echo "7 passed"
+# Prints a named pre-loaded rule where no package has on-demand rules --------------
+
+plain_project=$(mktemp -d)
+trap 'rm -rf "$project" "$set_project" "$compressed_project" "$plain_project"' EXIT
+
+mkdir -p "$plain_project/system/foundation" "$plain_project/system/sample"
+cp system/foundation/load-rules.sh "$plain_project/system/foundation/"
+
+cat > "$plain_project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+RULES
+
+plain_rule_output=$(cd "$plain_project" && system/foundation/load-rules.sh e-rule 2>&1 || true)
+
+[ "$plain_rule_output" = "$(control_pre_loaded_rule_entry)" ] || fail "Prints a named pre-loaded rule where no package has on-demand rules" "output:" "$plain_rule_output"
+
+echo "8 passed"

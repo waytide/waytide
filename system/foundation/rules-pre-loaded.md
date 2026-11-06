@@ -424,14 +424,15 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 14. Print no package count.
 15. Then wait for the engineer's request.
 16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
-17. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
-18. This rule does not restate the directory list.
-19. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
-20. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
-21. Nothing verifies the read. The hook cannot observe what the agent does.
-22. The instruction removes one excuse: an instruction buried in a file the agent may not open.
-23. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
-24. The work honoring the rules is the verification.
+17. The instruction carries the core rules after it, the rules `foundation/core-rules` names, each as the loader prints it, under a line saying they hold before the read, which still runs in full. The core holds only the rules that shape the first answer, so the whole of what the hook gives the agent stays within 10,000 characters, the most a hook can give. The hook escapes their quotation marks and backslashes.
+18. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
 
 ## The status line
 

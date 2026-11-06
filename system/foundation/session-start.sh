@@ -312,6 +312,30 @@ if [ -n "$load_line" ]; then
   notice="${notice}\\n\\n${load_line}"
 fi
 
+# The core rules, carried after the instruction, so they hold from the session's start, before
+# the read that loads the rest. core-rules names them, and the loader prints each as the read
+# does. A hook can give the agent at most 10,000 characters, so the list holds only the rules
+# that shape the first answer. Unlike the notice, these rules hold quotation marks and
+# backslashes, so they are escaped for the JSON string, and their lines joined with
+# backslash-n.
+core=
+if [ -f "$system/foundation/core-rules" ] && [ -f "$system/foundation/load-rules.sh" ]; then
+  while IFS= read -r name; do
+    [ -n "$name" ] || continue
+    entry=$(sh "$system/foundation/load-rules.sh" "$name" 2>/dev/null) || continue
+    core="${core}
+
+${entry}"
+  done < "$system/foundation/core-rules"
+fi
+
+if [ -n "$core" ]; then
+  escaped_core=$(printf 'These rules hold from the start of the session, before the read, which still runs in full.%s\n' "$core" |
+    sed 's/\\/\\\\/g; s/"/\\"/g; s/	/\\t/g' |
+    awk 'BEGIN { ORS = "" } NR > 1 { print "\\n" } { print }')
+  instruction="${instruction}\\n\\n${escaped_core}"
+fi
+
 hook_output=$(printf '"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "%s"}' \
   "$instruction")
 
