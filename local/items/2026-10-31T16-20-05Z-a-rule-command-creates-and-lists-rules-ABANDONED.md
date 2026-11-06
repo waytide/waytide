@@ -1,6 +1,6 @@
 # A rule command creates and lists rules
 
-- **State:** Open
+- **State:** Abandoned
 - **Tags:** [idea]
 
 **`/rule` is a root command for the project's rules.**
@@ -24,3 +24,4 @@ As the engineer first stated it: "New idea: “/rule” command (creates a local
 ---
 
 Authored by Scott Bellware on Sat Oct 31 2026 at 9:20:05 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:04:20 PM PT

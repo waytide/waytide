@@ -1,6 +1,6 @@
 # An alias command names the namespace the Waytide skills are typed under
 
-- **State:** Open
+- **State:** Abandoned
 - **Tags:** [idea]
 
 **`/alias <alias-name>` sets a namespace of the engineer's choosing for the Waytide skills**, so that `/alias wt` would have them typed as `/wt:item`, `/wt:log`, and so on. It belongs with the item `2026-10-29T16-24-42Z-waytide-skills`.
@@ -20,3 +20,4 @@ As the engineer first stated it: "Idea: “/alias <alias-name>” generates an a
 ---
 
 Authored by Scott Bellware on Thu Oct 29 2026 at 11:46:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:04:20 PM PT

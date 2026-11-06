@@ -1,6 +1,6 @@
 # Participation is a range of batch sizes, set finer or coarser, and changed as the work goes
 
-- **State:** Open
+- **State:** Abandoned
 - **Tags:** [idea]
 
 **Participation is a setting on a scale, not a choice between two values.** At the fine end the agent stops at every hinge, as attended work does today. At the coarse end it works through to the end on its own, as unattended work does. Between them it stops at larger points of the cycle — after each outcome, each phase, or each feature — and decides everything below that point itself.
@@ -23,3 +23,4 @@ As the engineer first stated it: "Batch size, or level of detail in the decision
 Authored by Scott Bellware on Wed Oct 21 2026 at 9:53:28 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:54:30 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:55:12 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:04:20 PM PT

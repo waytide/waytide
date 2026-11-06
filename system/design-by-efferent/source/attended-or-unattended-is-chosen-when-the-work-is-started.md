@@ -23,10 +23,10 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 > Human in the loop
 >
-> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80%. How sure the agent is that, working alone, it does the work as you would have it done.
+> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -34,7 +34,7 @@ with these options:
 >
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
+**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The question is plain text, with no `**` around a figure, because the selection UI does not render markdown and prints the asterisks as characters. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
 - **The overall score** comes first, labeled *Agent's confidence*. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
 - **The risk of redo** comes second. It is 100% minus the overall score: the chance that the engineer has to redo some of the work. It is computed, not estimated. It puts the same figure in the terms of what the engineer stands to lose.
@@ -149,10 +149,10 @@ Record the selection as a confirmation in the feature or experiment record, with
 
 > Human in the loop
 >
-> - **Agent's confidence: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Risk of redo: 20%.** How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - **It'll work: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Your approval: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80%. How sure the agent is that, working alone, it does the work as you would have it done.
+> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
+> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -161,7 +161,7 @@ with these options:
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 15. These words are fixed. The figures are examples.
-16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
 17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
@@ -237,12 +237,15 @@ with these exact options:
 - 2026-11-06, revised: unattended work waits for the engineer to accept the plan, and the Unattended option says so, as the engineer directed; checked: 61 directives, 61 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the Unattended option's words then set by the engineer, and *approve* made *accept* to match, not re-checked
 - 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; checked: 69 directives, 69 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-11-06, revised: the plan put inside the *Accept the plan?* question, as the engineer directed; checked: 53 directives, 53 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the `**` marks removed from the question's figures, and a directive added that the question carries none, as the engineer directed; not re-checked
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
 
 Until Fri Nov 6 2026 the question was asked as *Who decides?*, with no confidence figures.
+
+Until Fri Nov 6 2026 each figure in the question was written in bold, between `**` marks, which the selection UI printed as characters.
 
 Related:
 
@@ -291,3 +294,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:07:02 PM PT

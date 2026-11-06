@@ -1,6 +1,6 @@
 # Waytide is renamed Slasher
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **The system now called Waytide takes the name Slasher.**
@@ -28,3 +28,4 @@ On 2026-11-03, of `slasher.tools` and `slasher.bot`: "Slasher.bot has a cool fac
 Authored by Scott Bellware on Fri Oct 30 2026 at 11:25:28 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 11:49:57 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 12:09:14 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:05:34 PM PT

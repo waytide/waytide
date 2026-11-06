@@ -9,10 +9,17 @@
 
 **How the agent arrives at an estimate, and how it states its uncertainty, is not yet settled.**
 
+## Settled
+
+- **2026-11-06** — The idea results in an `/estimate` command, in the process command domain, whose help is `/process help`.
+
 ## History
 
 As the engineer first stated it: "Idea: I can ask the agent how long it would take me to do something"
 
+On 2026-11-06: "#3 should result in an "/estimate" command, which whould go into the PROCESS domain"
+
 ---
 
 Authored by Scott Bellware on Fri Oct 23 2026 at 11:33:25 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:02:32 PM PT
