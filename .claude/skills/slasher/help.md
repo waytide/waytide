@@ -174,22 +174,19 @@ JOURNAL
                                    (requires confirmation)
   /journal help                    Print this command's help
 
-FREEWRITING
-  Freewriting records points as they are said, freeform in no order, and
+BRAINSTORMING
+  Brainstorming records points as they are said, freeform in no order, and
   organizes them when the writer is done.
 
-  /freewrite, /freewrite begin     Begin freewriting
-  /freewrite end                   End it, and organize what was said
-  /freewrite resume                Resume a freewrite that has ended
-  /freewrite <kind>                Freewrite and record it in an item of
+  /brainstorm, /brainstorm begin     Begin brainstorming
+  /brainstorm end                   End it, and organize what was said
+  /brainstorm resume                Resume a brainstorm that has ended
+  /brainstorm <kind>                Brainstorm and record it in an item of
                                    that kind
                                    <kind>: idea, work, plan, design,
                                    aspiration, goal, observation, mistake,
                                    or problem
-  /freewrite help                  Print this command's help
-
-  /freeform is an alias of /freewrite, with the same
-  subcommands.
+  /brainstorm help                  Print this command's help
 
 TESTS
   These commands run the project's tests and report on them.

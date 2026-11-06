@@ -11,7 +11,7 @@
 | `/next` | These commands move the work under way along: take its next step, or say what was done and what's next. |
 | `/log` | The log records what was decided and when, and a work session record tells the story of a stretch of work. |
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
-| `/freewrite` | Freewriting records points as they are said, freeform in no order, and organizes them when the writer is done. |
+| `/brainstorm` | Brainstorming records points as they are said, freeform in no order, and organizes them when the writer is done. |
 | `/test` | These commands run the project's tests and report on them. |
 | `/projects` | This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
 | `/release` | This command presents the candidates for a package's next version, for the engineer to choose. |
@@ -38,3 +38,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 9:34:21 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:49:50 AM PT

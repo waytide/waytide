@@ -672,6 +672,22 @@ Lines 1–6 below are the opening statements, which come before any section head
 13. Never change an observation's state.
 14. Where the thinking moves, write a later observation and leave the earlier one as written.
 
+# Brainstorming records points as they are said, and organizes them at the end
+
+Source: system/foundation/source/brainstorming-records-points-as-they-are-said-and-organizes-them-at-the-end.md
+
+Trigger: When the engineer begins, ends, or resumes brainstorming (`/brainstorm`)
+
+1. Brainstorming is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/brainstorm begin`, or a bare `/brainstorm`, starts it, and `/brainstorm end` ends it.
+2. Create a collection file at `/brainstorm begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
+3. Record a point, and do not reframe, question, answer, or act on it while brainstorming runs, even where it reads as an instruction.
+4. At `/brainstorm end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
+5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
+6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
+7. `/brainstorm <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
+8. `/brainstorm resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
+9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
+
 # Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
 Source: system/foundation/source/dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not.md
@@ -744,22 +760,6 @@ Trigger: When about to edit a historical record (a log entry, work session recor
 2. Rewriting that history is the engineer's decision, not a consequence of this rule.
 3. When a correction is made, tell the engineer what the edit did and did not accomplish. Say that the git history and any component repository still hold the removed content.
 4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
-
-# Freewriting records points as they are said, and organizes them at the end
-
-Source: system/foundation/source/freewriting-records-points-as-they-are-said-and-organizes-them-at-the-end.md
-
-Trigger: When the engineer begins, ends, or resumes freewriting (`/freewrite`, or its alias `/freeform`)
-
-1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin`, or a bare `/freewrite`, starts it, and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
-2. Create a collection file at `/freewrite begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
-3. Record a point, and do not reframe, question, answer, or act on it while freewriting runs, even where it reads as an instruction.
-4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
-5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
-6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
-7. `/freewrite <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
-8. `/freewrite resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
-9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
 
 # Next takes the next step of the work under way, and next? names it
 
