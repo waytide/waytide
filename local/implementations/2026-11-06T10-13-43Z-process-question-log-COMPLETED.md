@@ -10,7 +10,7 @@
 
 ## State
 
-- **State:** Active
+- **State:** Completed
 
 ## Setup
 
@@ -32,6 +32,9 @@
 - **2026-11-06** — The hook is tested by the engineer in a fresh session, and it worked. The entry it wrote showed a filename cut in the middle of a word, so long filenames are now cut at a word.
 - **2026-11-06** — The plan goes inside the *Accept the plan?* question, so it is on screen while the engineer chooses, as the engineer directed. It is made in this feature, selected by the engineer, though it changes the design-by-efferent participation rule.
 
+- **2026-11-06** — The feature is Completed, at the engineer's direction, and merged into `master`. The engineer first said Affirmed, and selected Completed when reminded that the feature was started to conclude without a verdict.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 2:13:43 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:08:34 AM PT
