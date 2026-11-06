@@ -46,6 +46,22 @@ Source: system/foundation/source/a-paragraph-is-one-line-and-the-readers-editor-
 5. Each line of the provenance footer stays its own line: `Authored by …` and every `Changed by …` beneath it.
 6. Do not join the footer lines. They are a running history, and joining them would lose the record.
 
+# A process question and its answer are logged
+
+Source: system/foundation/source/a-process-question-and-its-answer-are-logged.md
+
+1. Log every process question put through the selection interface, with the engineer's answer.
+2. A process question asks the engineer to decide how the work is conducted or what it settles. Examples are *Human in the loop*, the working location, the verdict question, *Accept the plan?*, a wording, and a design.
+3. A mechanical question is the opposite of a process question. It confirms an act whose outcome is already settled, such as a commit, a push, a merge, a branch deletion, or a worktree removal.
+4. Do not log a mechanical question.
+5. Mark a process question by setting the selection's `metadata.source` to `decision`, in the same call that asks the question.
+6. Set no marker on a mechanical question.
+7. The plugin's `PostToolUse` hook on `AskUserQuestion` runs foundation's `process-question-log.sh`. It writes one log entry to `waytide/local/logs/log/` for each marked question that was answered, and nothing for an unmarked one.
+8. Do not write these entries yourself.
+9. Each entry is an ordinary log entry, with `**Tags:** [decision]` under its title. Its title is the question's first line and the engineer's answer, as in `# Accept the plan? — Accept, selected by the engineer`.
+10. Its body holds the question, the options with their descriptions, the answer, and any notes the engineer added.
+11. Commit the entries the hook writes, in the same commit as the change they bear on or separately with a `Log:` prefix.
+
 # A project declares which installed packages are active
 
 Source: system/foundation/source/a-project-declares-which-installed-packages-are-active.md
