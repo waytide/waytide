@@ -1,6 +1,6 @@
 # The participation question shows the unattended plan and a confidence
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **When the agent asks whether the work runs attended or unattended, it would first show how it would proceed unattended, and how confident it is in doing so, as a percentage.** The engineer would then choose with the plan and the agent's own estimate in view, rather than choosing blind.
@@ -22,3 +22,4 @@ It came after the engineer asked how confident the agent was in doing the `/item
 ---
 
 Authored by Scott Bellware on Wed Nov 4 2026 at 6:29:51 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:08:36 AM PT

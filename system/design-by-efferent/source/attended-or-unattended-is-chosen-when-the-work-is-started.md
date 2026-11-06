@@ -21,7 +21,11 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 **The question is asked in these words:**
 
-> Who decides?
+> Human in the loop?
+>
+> - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Voice: 65%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -29,7 +33,19 @@ with these options:
 >
 > **Unattended** — The agent decides and generates through.
 
-**Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Who decides** is answerable by anyone, and it is the whole of what the decision settles.
+**The question carries the agent's confidence in doing the work unattended, as three percentages.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
+
+- **The overall score** comes first. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
+- **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do. Works is high when the work is well understood and the tests can say when it is done. It is low when the agent cannot know how something behaves until it is built.
+- **Voice** is the agent's confidence that, working alone, it does what the engineer would do. It names things as the engineer would name them, shapes each actuation as the engineer would shape it, and decides each hinge as the engineer would decide it. Voice is high when the project already shows how the engineer decides work of this kind, in its code, its rules, and its records. It is low when the work makes decisions the engineer has not made before, or when the engineer's intent can be read more than one way.
+
+**Works and voice are shown apart because they fail apart.** Work can pass every test and still be work the engineer would undo. A works failure is caught by the tests. A voice failure is caught only by the engineer, and under unattended work the engineer sees it only at the end, with everything built on top of it.
+
+**The overall score is estimated directly, not computed.** It is not the product or the average of the other two. The two are often related. A misread intent, for example, lowers both. The agent is the party that can judge how they relate in this piece of work. The overall score is never higher than the lower of the two, because unattended work has to come out right in both ways.
+
+**Why the figures are in the question:** the decision rests on how likely the first pass is to be right, and the agent is the party that has looked at the work. Putting its estimate in the question puts that judgment in view where the engineer makes the decision. A low *voice* figure says the engineer would change what the agent decides alone.
+
+**Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Human in the loop** is a phrase an engineer knows before meeting this system, and it is the whole of what the decision settles.
 
 **The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names only the agent, because under it the engineer has no part.
 
@@ -68,7 +84,7 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Who decides?*, with *You decide. The agent automates.* and *The agent decides and generates through.* Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop?*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
 
 Record the selection as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way.
 
@@ -90,9 +106,13 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 12. Ask the mode at the start, through the selection UI, beside the working-location selection.
 13. Put both decisions at the same gate. Do not add a separate gate.
 14. The option set shows that attended is the default.
-15. Ask the question in these exact words:
+15. Ask the question in these exact words, with the agent's own figures:
 
-> Who decides?
+> Human in the loop?
+>
+> - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Voice: 65%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -100,18 +120,25 @@ with these options:
 >
 > **Unattended** — The agent decides and generates through.
 
-16. These words are fixed.
-17. Name no hinge in the question or in any option.
-18. Name the hinges when the loop reaches the first one, not before.
-19. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-20. That confirmation records what was chosen, when, and by whom.
-21. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-22. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-23. Under unattended work, each cycle records its hinge, and what was decided and why.
-24. The "why" is the reasoning the agent actually applied.
-25. Under unattended work, write no Options line and no Decision / chat line.
-26. Do not write an unattended cycle as though an engineer was consulted.
-27. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+16. These words are fixed. The figures are examples.
+17. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+18. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
+19. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
+20. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
+21. Give the agent's own three estimates for this piece of work, made at the moment it asks.
+22. Estimate the overall score directly. Do not compute it from works and voice.
+23. Never give an overall score higher than the lower of works and voice.
+24. Name no hinge, gate, or loop in the question or in any option.
+25. Name the hinges when the loop reaches the first one, not before.
+26. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+27. That confirmation records what was chosen, when, and by whom.
+28. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+29. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+30. Under unattended work, each cycle records its hinge, and what was decided and why.
+31. The "why" is the reasoning the agent actually applied.
+32. Under unattended work, write no Options line and no Decision / chat line.
+33. Do not write an unattended cycle as though an engineer was consulted.
+34. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
@@ -131,10 +158,13 @@ with these options:
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, as the engineer directed, not re-checked
 
 ## History
 
 Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
+
+Until Fri Nov 6 2026 the question was asked as *Who decides?*, with no confidence figures.
 
 Related:
 
@@ -182,3 +212,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:25:02 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
