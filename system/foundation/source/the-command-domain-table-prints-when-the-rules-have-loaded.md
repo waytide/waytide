@@ -21,7 +21,7 @@
 
 **Each row is one command domain.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. Print no other root command, alias, or subcommand in the table.
 
-**After the table, run `/current 5`.** In the same response, below the table, print the five most recently created current items and the current implementations, as the `/current` command prints them. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 5`, for the same reason it prints no table.
+**After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
@@ -29,14 +29,20 @@
 
 **Why:** the engineer sees what the commands are for at the moment they can start using them. The table gives one line for each domain, so it shows the whole set at a glance, and `/slasher help` gives the detail. The current items and implementations show the engineer where the work stands before they make the first request.
 
-**How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/current 5` below it, and then turn to the engineer's request or wait for one.
+**How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/current 10` below it, and then turn to the engineer's request or wait for one.
+
+## History
+
+Until Fri Nov 6 2026 the read ran `/current 5`, and printed the five most recently created current items.
+
+Until Fri Nov 6 2026 the items printed after the table took no heading of their own.
 
 Related:
 
 - the the-startup-display-prints-as-the-session-starts rule — the display the harness prints ahead of the read
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — what the agent prints at the start, and what it does not
 - the the-waytide-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin whose help the table follows
-- the a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows rule — what `/current 5` prints
+- the a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows rule — what `/current 10` prints
 
 ---
 
@@ -45,3 +51,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 10:49:50 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:37:03 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:32:53 PM PT
