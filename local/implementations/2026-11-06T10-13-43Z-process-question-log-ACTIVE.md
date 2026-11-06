@@ -29,6 +29,7 @@
 - **2026-11-06** — Participation: Unattended, selected by the engineer. Agent's confidence 70%, risk of redo 30%, It'll work 85%, Your approval 75%. The warning was shown, and Attended was recommended.
 - **2026-11-06** — The marker is `metadata.source` set to `decision`, selected by the engineer. A mechanical question is the opposite of a process question, as the engineer stated.
 - **2026-11-06** — The plan is accepted, selected by the engineer.
+- **2026-11-06** — The hook is tested by the engineer in a fresh session, and it worked. The entry it wrote showed a filename cut in the middle of a word, so long filenames are now cut at a word.
 
 ---
 

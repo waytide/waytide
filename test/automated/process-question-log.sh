@@ -26,13 +26,14 @@ unmarked_log=$control_directory/unmarked
 mkdir "$marked_log" "$unmarked_log"
 
 control_question='{"question": "Some question?", "header": "Some header", "multiSelect": false, "options": [{"label": "Some option", "description": "Some description."}, {"label": "Some other option", "description": "Some other description."}]}'
+control_long_question='{"question": "Some question whose words run on well past the length a filename takes, to the end?", "header": "Some long", "multiSelect": false, "options": [{"label": "Some option", "description": "Some description."}]}'
 control_other_question='{"question": "Some other question?\n\nSome detail.", "header": "Some other", "multiSelect": false, "options": [{"label": "Some option", "description": "Some description."}]}'
 
 control_marked_event=$(cat <<EOF
 {"session_id": "some-session", "hook_event_name": "PostToolUse", "tool_name": "AskUserQuestion",
- "tool_input": {"questions": [$control_question, $control_other_question], "metadata": {"source": "decision"}},
- "tool_response": {"questions": [$control_question, $control_other_question],
-   "answers": {"Some question?": "Some other option", "Some other question?\n\nSome detail.": "Some option"},
+ "tool_input": {"questions": [$control_question, $control_other_question, $control_long_question], "metadata": {"source": "decision"}},
+ "tool_response": {"questions": [$control_question, $control_other_question, $control_long_question],
+   "answers": {"Some question?": "Some other option", "Some other question?\n\nSome detail.": "Some option", "Some question whose words run on well past the length a filename takes, to the end?": "Some option"},
    "annotations": {"Some question?": {"notes": "Some note."}}}}
 EOF
 )
@@ -52,7 +53,7 @@ printf '%s' "$control_unmarked_event" | "$script" "$unmarked_log"
 # Writes one log entry for each question of a process question --------------
 
 count=$(ls "$marked_log" | wc -l | tr -d ' ')
-[ "$count" = 2 ] || fail "Writes one log entry for each question of a process question" "found $count entries:" "$(ls "$marked_log")"
+[ "$count" = 3 ] || fail "Writes one log entry for each question of a process question" "found $count entries:" "$(ls "$marked_log")"
 
 entry=$(ls "$marked_log"/*-some-question.md 2>/dev/null | head -1)
 [ -n "$entry" ] || fail "Names the entry for its question" "found:" "$(ls "$marked_log")"
@@ -77,6 +78,11 @@ other_entry=$(ls "$marked_log"/*-some-other-question.md 2>/dev/null | head -1)
 [ -n "$other_entry" ] || fail "Names the entry for the first line of its question" "found:" "$(ls "$marked_log")"
 other_title=$(head -1 "$other_entry")
 [ "$other_title" = "# Some other question? — Some option, selected by the engineer" ] || fail "Titles a question of several lines by its first line" "found:" "$other_title"
+
+# Shortens a long question's filename at a word -----------------------------
+
+long_entry=$(ls "$marked_log"/*-some-question-whose-words-run-on-well-past-the-length-a.md 2>/dev/null | head -1)
+[ -n "$long_entry" ] || fail "Shortens a long question's filename at a word" "found:" "$(ls "$marked_log")"
 
 # Writes nothing for a mechanical question -----------------------------------
 

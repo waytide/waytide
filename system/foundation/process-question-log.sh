@@ -38,7 +38,10 @@ for question in questions:
     answer = answers[text]
     first_line = text.strip().splitlines()[0] if text.strip() else question.get("header", "")
 
-    slug = re.sub(r"[^a-z0-9]+", "-", first_line.lower()).strip("-")[:60].strip("-") or "question"
+    slug = re.sub(r"[^a-z0-9]+", "-", first_line.lower()).strip("-")
+    if len(slug) > 60:
+        slug = slug[:61].rsplit("-", 1)[0]
+    slug = slug or "question"
     path = os.path.join(directory, prefix + "-" + slug + ".md")
     number = 2
     while os.path.exists(path):
