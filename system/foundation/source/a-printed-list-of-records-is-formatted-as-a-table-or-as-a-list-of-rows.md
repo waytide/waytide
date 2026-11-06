@@ -46,6 +46,10 @@ A list of items takes the ordinal and no SHA columns:
 
 **As the engineer stated it:** Include the item kind in the table printed by "/current"
 
+**`/current` takes an optional number, *n*, and then lists only the *n* most recent current items.** An item's recency is its handle, the time it was created. The items listed keep the order of the full list, oldest first, and their ordinals count from 1. The number does not reach the current implementations, which are listed in full. `/current 5` lists the five most recently created current items.
+
+**As the engineer stated it:** The "/current" command should optionally take a number that is the **n-most** recent items
+
 **As the engineer stated it:** Don't print the kind as its tag. eg: for "[idea]", print in the table, "Idea"
 
 **Each current implementation is one row: its handle, its title, and its state.** Its title is the record's own, as in `Feature — The current command`. It takes no ordinal and no SHA columns, since the list is a summary below the items, not a list of its own.
@@ -119,11 +123,12 @@ A list of items takes the ordinal and no SHA columns:
 
 ## The current command
 
-1. `/current` lists the current items, then the current implementations.
+1. `/current` lists the current items, then, under a heading of their own, the current implementations.
 2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
 3. Present each current implementation as one row: its handle, its title, and its state. The title is the record's own, as in `Feature — The current command`. Give it no ordinal and no SHA columns.
 4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
 5. In the items table `/current` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
+6. `/current` takes an optional number *n*, as in `/current 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
 
 ## Keep every column short
 
@@ -147,10 +152,13 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-11-02, revised: a list of items is asked for by state, and current is Open and Active; checked: 29 directives, 29 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the current command lists the current items, then the current implementations; checked: 38 directives, 38 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: where no implementation is current, the summary says *No current feature or experiment.*, and the items table of `/current` takes a kind column, written as a word rather than a tag; checked: 41 directives, 38 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 41 directives, 40 kept, 1 less precise, 0 lost, 1 repair; re-checked after the kind is written as a word: 43 directives, 43 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: `/current` takes an optional number of the most recent current items to list; checked: 41 directives, 35 kept, 6 less precise, 0 lost, 1 repair; re-checked: 41 directives, 39 kept, 2 less precise, 0 lost. Left less precise: the trigger's example commands `/item list` and `/list`, which the trigger line carries, and the example *Work* for `[work]`
 
 ## History
 
 Until Fri Nov 6 2026 the current items were listed by `/current-items`, and no command listed the current implementations.
+
+Until Fri Nov 6 2026 `/current` took no number, and always listed every current item.
 
 Until Thu Nov 5 2026 its trigger read *When the engineer asks for a list of records*, which was not a safe one.
 
@@ -200,3 +208,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:17:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:33:13 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:31:45 PM PT

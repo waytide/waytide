@@ -139,6 +139,8 @@ CURRENT
 
   /current                         The current items, then the current
                                    features and experiments
+  /current <n>                     The n most recent current items, then
+                                   the current features and experiments
   /current help                    Print this command's help
 
 LOG
