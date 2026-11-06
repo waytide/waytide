@@ -10,7 +10,7 @@
 
 ## State
 
-- **State:** Affirmed
+- **State:** Completed
 
 ## Setup
 
@@ -88,6 +88,7 @@ Adopted by the engineer on 2026-10-30.
 - **2026-11-03** — The code of `/log`'s placement and its test runs unattended, selected by the engineer. The engineer first selected attended, then corrected it: do this unattended.
 - **2026-11-05** — The feature reaches a verdict, selected by the engineer at its conclusion, since it began before that choice was asked at the start.
 - **2026-11-05** — The feature is Affirmed, on the engineer's declaration, and merged into `master`.
+- **2026-11-05**, later — Corrected by the engineer: the feature reaches no verdict, and concludes Completed, integrated into `master`. The two confirmations above stand as written.
 
 ---
 
@@ -114,3 +115,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 6:40:38 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:02:30 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:43:14 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:49:39 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:52:10 PM PT
