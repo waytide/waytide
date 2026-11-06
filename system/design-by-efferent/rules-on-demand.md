@@ -134,8 +134,7 @@ Trigger: When starting a feature or an experiment
 11. The choice is a judgment about this piece of work: how load-bearing it is, and how likely the first pass is to be right.
 12. Ask the mode at the start, through the selection UI, beside the working-location selection.
 13. Put both decisions at the same gate. Do not add a separate gate.
-14. The option set shows that attended is the default.
-15. Ask the question in these exact words, with the agent's own figures:
+14. Ask the question in these exact words, with the agent's own figures:
 
 > Human in the loop
 >
@@ -145,29 +144,29 @@ Trigger: When starting a feature or an experiment
 
 with these options:
 
-> **Attended** — You decide. The agent automates. (the default)
+> **Attended** — You decide. The agent automates.
 >
 > **Unattended** — The agent decides and generates through.
 
-16. These words are fixed. The figures are examples.
-17. Put each figure on a line of its own, with its fixed sentence that says what it measures.
-18. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
-19. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
-20. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
-21. Give the agent's own three estimates for this piece of work, made at the moment it asks.
-22. Estimate the overall score directly. Do not compute it from works and voice.
-23. Never give an overall score higher than the lower of works and voice.
-24. Name no hinge, gate, or loop in the question or in any option.
-25. Name the hinges when the loop reaches the first one, not before.
-26. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-27. That confirmation records what was chosen, when, and by whom.
-28. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-29. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-30. Under unattended work, each cycle records its hinge, and what was decided and why.
-31. The "why" is the reasoning the agent actually applied.
-32. Under unattended work, write no Options line and no Decision / chat line.
-33. Do not write an unattended cycle as though an engineer was consulted.
-34. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+15. These words are fixed. The figures are examples.
+16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
+17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
+18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
+19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
+20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
+21. Estimate the overall score directly. Do not compute it from works and voice.
+22. Never give an overall score higher than the lower of works and voice.
+23. Name no hinge, gate, or loop in the question or in any option.
+24. Name the hinges when the loop reaches the first one, not before.
+25. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+26. That confirmation records what was chosen, when, and by whom.
+27. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+28. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+29. Under unattended work, each cycle records its hinge, and what was decided and why.
+30. The "why" is the reasoning the agent actually applied.
+31. Under unattended work, write no Options line and no Decision / chat line.
+32. Do not write an unattended cycle as though an engineer was consulted.
+33. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 

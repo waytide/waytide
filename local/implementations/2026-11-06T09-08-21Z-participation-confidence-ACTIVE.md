@@ -38,6 +38,7 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — Each figure is on a line of its own, with a sentence that says what it measures, as the engineer directed.
 - **2026-11-06** — The question carries no heading over the figures, as the engineer directed. The line *The agent's confidence in doing this work unattended:* was added and then removed.
 - **2026-11-06** — *Human in the loop* carries no question mark, as the engineer directed.
+- **2026-11-06** — The Attended option no longer carries *(the default)*, as the engineer directed. Attended is still the default, and the option set no longer says so.
 
 ---
 
