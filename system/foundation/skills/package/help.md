@@ -1,4 +1,7 @@
 PACKAGES
+  These commands manage the installed packages: which are active, refreshing
+  them, and installing Waytide.
+
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
   /package refresh [<package>...]  Refresh installed packages

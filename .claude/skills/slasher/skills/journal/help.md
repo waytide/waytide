@@ -1,4 +1,7 @@
 JOURNAL
+  The journal is the writer's own record of what they think, either stored with
+  the project or kept in a private journal.
+
   /journal, /journal new, /journal entry
                                    Write a shared journal entry
   /journal private                 Write a private journal entry

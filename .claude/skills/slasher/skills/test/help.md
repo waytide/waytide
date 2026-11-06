@@ -1,4 +1,6 @@
 TESTS
+  These commands run the project's tests and report on them.
+
   /test                            Run the automated suite
   /test interactive [<test>]       Run an interactive test, or ask which
   /test report, /test-report       Classify the suite

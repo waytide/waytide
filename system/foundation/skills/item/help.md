@@ -1,4 +1,7 @@
 ITEMS
+  Items hold the project's thinking: ideas, plans, designs, observations, and
+  work to be done, each with a state.
+
   /item new [<kind>]               Create an item tagged [<kind>], or [idea]
                                    with no kind. Any kind may be named.
   /item <kind>                     An alias of /item new <kind>, where the
