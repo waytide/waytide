@@ -256,6 +256,18 @@ The skills are built, in the feature's first phase, and this item falls behind t
 
 An observation is not promoted to a rule. `/observation promote` and `/observe promote` are removed, and `Promote observation to rule` is not a command. An observation takes no command beyond the one that records it.
 
+## Amended — 2026-11-06: one help per command domain
+
+**Each command domain has one help command, and the help is grouped by domain.** The engineer restructured `skills.md` so that each domain's root commands sit under one heading, and Slasher was conformed to it.
+
+- `/process help` prints NEXT: `/current`, `/next`, `/next?`, and `/work-status`. `/log help` prints LOG, with `/log-this` and `/work-session`. `/package help` prints PACKAGES, with `/package-set`. `/language help` prints LANGUAGE: `/clarify`, `/expand`, `/reserve`, and `/ete`.
+- `/process` and `/language` are commands that take only `help`.
+- A command that is not its domain's help command takes no `help`. `/next help` says so, and names `/process help`.
+- The command domain table names `/current` and `/clarify` as their domains' first root commands.
+- `/current` takes an optional number, written `/current [<n>]`.
+- `/brainstorm suspend` stops recording without ending, and `/brainstorm resume` resumes a brainstorm that has ended or is suspended.
+- The journal committed with the project is the project journal, not the shared journal.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -371,3 +383,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 8:20:03 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:47:11 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:04:45 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:13:08 PM PT
