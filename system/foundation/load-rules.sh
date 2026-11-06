@@ -26,14 +26,17 @@ else
 fi
 
 # Given a rule's name, print that rule's entry alone: its title, source, any trigger, and its
-# compressed text. The on-demand rules are searched, then the pre-loaded ones.
+# compressed text. The on-demand rules are searched, then the pre-loaded ones. A line inside a
+# fenced code block never starts a rule, though a comment in a code example may begin with #.
 if [ -n "$1" ] && [ "$1" != "--package" ]; then
   awk -v name="$1" '
     function flush() {
       if (found) { while (n > 0 && entry[n] == "") n--; for (i = 1; i <= n; i++) print entry[i]; done = 1 }
       n = 0; found = 0
     }
-    FNR == 1 || /^# / { flush() }
+    FNR == 1 { fenced = 0 }
+    FNR == 1 || (!fenced && /^# /) { flush() }
+    /^```/ { fenced = !fenced }
     { entry[++n] = $0 }
     /^Source: / { k = split($2, parts, "/"); if (parts[k] == name ".md") found = 1 }
     END { flush(); if (!done) exit 1 }
