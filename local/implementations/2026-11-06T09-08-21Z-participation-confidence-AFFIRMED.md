@@ -10,7 +10,7 @@
 
 ## State
 
-- **State:** Active
+- **State:** Affirmed
 
 ## Setup
 
@@ -57,7 +57,10 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The Unattended option reads *The agent makes the decisions and generates through if you accept the plan it'll propose.*, in the engineer's words. The rule's prose says *accept* for the plan to match.
 - **2026-11-06** — Acceptance of the plan is asked through the selection UI, with the options *Accept* and *Revise*, as the engineer directed. The question and the options' sentences are the agent's wording.
 
+- **2026-11-06** — The feature is Affirmed, by the engineer's declaration, and merged into `master`.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 1:08:21 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 2:04:42 AM PT

@@ -1,6 +1,6 @@
 # Low confidence in unattended work recommends attended
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **Where the agent's confidence in doing a piece of work unattended is below a threshold, it would say so and recommend attended work.** The engineer would still choose. The recommendation puts the agent's doubt in front of the choice, rather than leaving it to show in the work.
@@ -12,6 +12,7 @@ It builds on the item `2026-11-05T02-29-51Z-the-participation-question-shows-the
 ## Settled
 
 - **2026-11-06** — The threshold is an overall score of 70% or lower, fixed in the rule. At or below it, the question carries a warning line and the Attended option is marked as the recommendation, so it does both. It is carried out by the participation confidence feature, `2026-11-06T09-08-21Z-participation-confidence`. The 70% comes from the estimate in the log entry `2026-11-06T09-23-01Z-the-attended-floor-is-estimated-at-about-70-percent`.
+- **2026-11-06** — Realized by the participation confidence feature, `2026-11-06T09-08-21Z-participation-confidence`, Affirmed: at an agent's confidence of 70% or lower, the question carries a warning and Attended is marked as the recommendation.
 
 ## History
 
@@ -21,3 +22,4 @@ As the engineer first stated it: "Idea: If the agent has less than a certain per
 
 Authored by Scott Bellware on Wed Nov 4 2026 at 6:38:50 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:25:09 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 2:04:42 AM PT
