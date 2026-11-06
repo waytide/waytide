@@ -29,7 +29,7 @@ ITEMS
                                    List items in a state
                                    <state>: any item state, or "current"
                                    (Open and Active)
-  /item current, /current-items    List current items (/item list current)
+  /item current                    List current items (/item list current)
 
   /item start                      Open -> Active
   /item realize                    -> Realized
@@ -87,7 +87,6 @@ PHASE
   its own sub branch.
 
   /phase, /phase current           The current phase, its goal, and its branch
-  /phases                          List the phases, the current one emphasized
   /phase add <name>                Add a phase after the last
   /phase start                     Start the next phase
   /phase complete                  -> Completed, merged into the implementation
@@ -101,24 +100,66 @@ PHASE
   Whether a phase reaches a verdict is chosen for each phase,
   when it is added.
 
-PROCESS
+PHASES
+  Phases split a feature or an experiment into steps, run one at a time, each on
+  its own sub branch.
+
+  /phases                          List the phases, the current one emphasized
+  /phases help                     Print this command's help
+
+NEXT
   These commands move the work under way along: take its next step, or say what
   was done and what's next.
 
   /next                            Proceed to the next step in the current
                                    multi-step process
+  /next help                       Print this command's help
+
+NEXT?
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
+
   /next?                           The next step in the current multi-step
                                    process
+  /next? help                      Print this command's help
+
+WORK STATUS
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
+
   /work-status                     What was recently done, and what's next
+  /work-status help                Print this command's help
+
+  /sup? is an alias of /work-status, with the same
+  subcommands.
+
+CURRENT
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
+
+  /current                         The current items, then the current
+                                   features and experiments
+  /current help                    Print this command's help
 
 LOG
   The log records what was decided and when, and a work session record tells the
   story of a stretch of work.
 
-  /log                             Write a log entry
-  /log-this                        Write a log entry for the current work
+  /log [<message>]                 Write a log entry
   /log summary                     Summarize the log
   /log help                        Print this command's help
+
+LOG THIS
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
+
+  /log-this                        Write a log entry for the current work
+  /log-this help                   Print this command's help
+
+WORK SESSION
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
+
   /work-session new | append       Write or append a work session record
   /work-session help               Print this command's help
 
@@ -136,22 +177,19 @@ JOURNAL
                                    (requires confirmation)
   /journal help                    Print this command's help
 
-FREEWRITING
-  Freewriting records points as they are said, freeform in no order, and
+BRAINSTORMING
+  Brainstorming records points as they are said, freeform in no order, and
   organizes them when the writer is done.
 
-  /freewrite, /freewrite begin     Begin freewriting
-  /freewrite end                   End it, and organize what was said
-  /freewrite resume                Resume a freewrite that has ended
-  /freewrite <kind>                Freewrite and record it in an item of
+  /brainstorm, /brainstorm begin     Begin brainstorming
+  /brainstorm end                   End it, and organize what was said
+  /brainstorm resume                Resume a brainstorm that has ended
+  /brainstorm <kind>                Brainstorm and record it in an item of
                                    that kind
                                    <kind>: idea, work, plan, design,
                                    aspiration, goal, observation, mistake,
                                    or problem
-  /freewrite help                  Print this command's help
-
-  /freeform is an alias of /freewrite, with the same
-  subcommands.
+  /brainstorm help                  Print this command's help
 
 TESTS
   These commands run the project's tests and report on them.
@@ -169,7 +207,7 @@ PROJECTS
   /projects                        The machine's registry of Waytide projects
   /projects help                   Print this command's help
 
-VERSIONING
+RELEASE
   This command presents the candidates for a package's next version, for the
   engineer to choose.
 
@@ -185,22 +223,45 @@ PACKAGES
   /package refresh [<package>...]  Refresh installed packages
   /package install                 Install Waytide
   /package help                    Print this command's help
+
+PACKAGE SET
+  These commands manage the installed packages: which are active, refreshing
+  them, and installing Waytide.
+
   /package-set                     Show the active package set
   /package-set <set or packages>   Declare the package set
   /package-set help                Print this command's help
 
-LANGUAGE
+RESERVE
   These commands work on language: reserving a word, ETE, Waytide's
   implementation of STE and its extensions, and clarifying language, often the
   agent's.
 
   /reserve <word>                  Reserve a word, in six steps
   /reserve help                    Print this command's help
+
+ETE
+  These commands work on language: reserving a word, ETE, Waytide's
+  implementation of STE and its extensions, and clarifying language, often the
+  agent's.
+
   /ete [<text>]                    Say the previous answer, or the text, in
                                    Eventide Technical English
   /ete help                        Print this command's help
+
+EXPAND
+  These commands work on language: reserving a word, ETE, Waytide's
+  implementation of STE and its extensions, and clarifying language, often the
+  agent's.
+
   /expand                          Expand the previous answer
   /expand help                     Print this command's help
+
+CLARIFY
+  These commands work on language: reserving a word, ETE, Waytide's
+  implementation of STE and its extensions, and clarifying language, often the
+  agent's.
+
   /clarify                         Clarify the previous answer, then clarify
                                    it again for good measure
   /clarify help                    Print this command's help
