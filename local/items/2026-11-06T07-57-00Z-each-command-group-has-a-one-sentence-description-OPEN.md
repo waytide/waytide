@@ -18,6 +18,27 @@ It carries out the idea `2026-11-04T21-08-46Z-each-command-group-in-the-help-tex
 
 **Not yet settled:** where a group holds several root commands, such as PROCESS with `/next`, `/next?`, and `/work-status`, whether each command's help carries the group's sentence or a sentence of its own.
 
+## The command domain headings
+
+Added 2026-11-05. Each heading in `scratch/skills.md`, with the root commands it holds:
+
+| Heading | Root commands |
+|---|---|
+| ITEMS | `/item`, and its aliases `/idea`, `/work`, `/work-item`, `/plan`, `/design`, `/aspiration`, `/goal`, `/observation`, `/observe`, `/mistake`, `/problem`, `/list`, `/current-items` |
+| FEATURES | `/feature` |
+| EXPERIMENTS | `/experiment` |
+| PHASE | `/phase`, `/phases` |
+| PROCESS | `/next`, `/next?`, `/work-status` |
+| LOG | `/log`, `/log-this`, `/work-session` |
+| JOURNAL | `/journal` |
+| FREEWRITING | `/freewrite`, and its alias `/freeform` |
+| TESTS | `/test`, and its aliases `/test-report`, `/test-tree` |
+| PROJECTS | `/projects` |
+| VERSIONING | `/release` |
+| PACKAGES | `/package`, `/package-set` |
+| LANGUAGE | `/reserve`, `/ete`, `/expand`, `/clarify` |
+| LOAD | `/load` |
+
 ## History
 
 As the engineer first stated it: "New work item: Each one of these headings needs a scentence of short description at the top of their root command's help output, and that text should be under the respective HEADING in skills.md"
@@ -25,3 +46,4 @@ As the engineer first stated it: "New work item: Each one of these headings need
 ---
 
 Authored by Scott Bellware on Thu Nov 5 2026 at 11:57:00 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 11:57:51 PM PT
