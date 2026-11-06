@@ -52,3 +52,30 @@ for skill in "$system"/*/skills/*/; do
   mkdir -p "$plugin/skills"
   cp -R "${skill%/}" "$plugin/skills/"
 done
+
+# The full help a bare /slasher prints: the header, then each skill's help in the order
+# help-order lists, then any skill the list does not name, in name order. An alias carries no
+# help.md of its own, so it adds nothing. The header and the list are what the help is built
+# from, not part of the plugin, so they are removed once it is written.
+if [ -f "$plugin/help-header.md" ] && [ -f "$plugin/help-order" ]; then
+  {
+    cat "$plugin/help-header.md"
+    listed=" "
+    while IFS= read -r name; do
+      [ -n "$name" ] || continue
+      listed="$listed$name "
+      [ -f "$plugin/skills/$name/help.md" ] || continue
+      echo
+      cat "$plugin/skills/$name/help.md"
+    done < "$plugin/help-order"
+    for help in "$plugin"/skills/*/help.md; do
+      [ -f "$help" ] || continue
+      name=${help%/help.md}
+      name=${name##*/}
+      case "$listed" in *" $name "*) continue ;; esac
+      echo
+      cat "$help"
+    done
+  } > "$plugin/help.md"
+  rm -f "$plugin/help-header.md" "$plugin/help-order"
+fi

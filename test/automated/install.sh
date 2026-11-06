@@ -185,4 +185,13 @@ settings=$(cat "$project/.claude/settings.json" 2>/dev/null || true)
 
 [ "$settings" = "$(control_settings_text)" ] || fail "Places a settings.json carrying only the status line" "settings.json found:" "$settings"
 
+# Writes every skill's help, in the help order, under the header -------------------
+
+full_help=$(cat "$project/.claude/skills/slasher/help.md" 2>/dev/null || true)
+control_full_help="$(cat system/foundation/plugin/help-header.md)
+
+$(control_help_text)"
+
+[ "$full_help" = "$control_full_help" ] || fail "Writes every skill's help, in the help order, under the header" "help.md found:" "$full_help"
+
 echo "0 failed, 0 aborted"
