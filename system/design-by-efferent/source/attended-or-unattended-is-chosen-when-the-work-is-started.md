@@ -92,21 +92,29 @@ Above 70%, the question carries no warning, and neither option is marked. The en
 
 **The agent generates only once the engineer accepts the plan.** It presents the plan and waits. If the engineer does not accept it, the agent revises it as the engineer directs and presents it again. This acceptance is the one wait in unattended work. It is put where a wait costs least, before anything is built.
 
-**Acceptance is asked through the selection UI, after the plan is presented.** The question and options are asked in these words:
+**Acceptance is asked through the selection UI, with the plan inside the question.** The question opens with *Accept the plan?*, and the plan follows it, as its list. For example:
 
 > Accept the plan?
 >
+> 1. Write the test first.
+> 2. Implement the script, so that the test passes.
+> 3. Run the suite.
+
+with these options:
+
 > **Accept** — The agent makes the decisions and generates through.
 >
 > **Revise** — Say what to change. The agent revises the plan and shows it again.
 
-The words are fixed. The engineer says what to change in the selection's own text field, or in the reply after it.
+**The plan goes inside the question because a selection may hide the response above it.** While a selection is open, the response may not be on screen. A plan put only in the response could go unread at the moment it is accepted. Inside the question, it is in view while the engineer chooses.
+
+The question's opening words and the options are fixed. The plan's steps are the agent's. The engineer says what to change in the selection's own text field, or in the reply after it.
 
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
 **Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
 
-**This is not a planning record.** `foundation` governs the project's planning records, which are written to a directory and kept. This plan is presented in the response, before the agent generates, and it is not written to a file.
+**This is not a planning record.** `foundation` governs the project's planning records, which are written to a directory and kept. This plan is presented inside the selection, before the agent generates, and it is not written to a file.
 
 **Why:** the engineer's attention is the scarce thing the whole method is arranged around. The arrangement assumes it is always worth spending at a hinge. For work whose rework cost is negligible that assumption is wrong, and five waits buy nothing. That is the ceremony this method exists to discontinue, arriving by a different route.
 
@@ -120,7 +128,7 @@ Ask it in the words fixed above: *Human in the loop*, then the overall score, th
 
 Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
-**When unattended, present the plan as a list before generating, write it in ETE, and ask the engineer to accept it, through the selection UI, in the words fixed above.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
+**When unattended, write the plan as a list in ETE, and put it inside the *Accept the plan?* question, before generating, in the words fixed above.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
 ## Compressed
 
@@ -191,10 +199,16 @@ with these options:
 
 1. Under unattended work, present a plan before generating.
 2. Do not generate until the engineer accepts the plan. This is the one wait in unattended work.
-3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
+3. Ask for acceptance through the selection UI. Open the question with *Accept the plan?*, and put the plan inside the question, after those words, as its list. For example:
 
 > Accept the plan?
 >
+> 1. Write the test first.
+> 2. Implement the script, so that the test passes.
+> 3. Run the suite.
+
+with these exact options:
+
 > **Accept** — The agent makes the decisions and generates through.
 >
 > **Revise** — Say what to change. The agent revises the plan and shows it again.
@@ -208,7 +222,7 @@ with these options:
 10. Use short sentences and active voice in the plan.
 11. Use no semicolon in the plan.
 12. Put one idea in each list item.
-13. Present the plan in the response.
+13. Present the plan inside the selection's question, not only in the response.
 14. Do not write the plan to a file. It is not a `foundation` planning record.
 
 ## Compression
@@ -222,6 +236,7 @@ with these options:
 - 2026-11-06, revised: the Unattended option says the plan comes first, as the engineer directed; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-11-06, revised: unattended work waits for the engineer to accept the plan, and the Unattended option says so, as the engineer directed; checked: 61 directives, 61 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the Unattended option's words then set by the engineer, and *approve* made *accept* to match, not re-checked
 - 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; checked: 69 directives, 69 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
+- 2026-11-06, revised: the plan put inside the *Accept the plan?* question, as the engineer directed; checked: 53 directives, 53 kept, 0 less precise, 0 lost
 
 ## History
 
