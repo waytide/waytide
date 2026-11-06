@@ -175,7 +175,7 @@ with these options:
 29. Name the hinges when the loop reaches the first one, not before.
 30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
 31. That confirmation records what was chosen, when, and by whom.
-32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form:
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
 
 > - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
 
@@ -190,7 +190,7 @@ with these options:
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Do not generate until the engineer accepts the plan.
+2. Do not generate until the engineer accepts the plan. This is the one wait in unattended work.
 3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
 
 > Accept the plan?
@@ -199,7 +199,7 @@ with these options:
 >
 > **Revise** — Say what to change. The agent revises the plan and shows it again.
 
-4. If the engineer selects Revise, revise the plan as the engineer directs, and present it again.
+4. If the engineer selects Revise, revise the plan as the engineer directs, and present it again. Take what to change from the selection's own text field, or from the reply after it.
 5. Attended work needs no plan. Do not present one for it.
 6. The plan is a list.
 7. Use an ordered list where each step rests on the one above it.
@@ -221,7 +221,7 @@ with these options:
 - 2026-11-06, revised: the figures recorded in the start confirmation, as the engineer directed; checked: 58 directives, 58 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-11-06, revised: the Unattended option says the plan comes first, as the engineer directed; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-11-06, revised: unattended work waits for the engineer to accept the plan, and the Unattended option says so, as the engineer directed; checked: 61 directives, 61 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the Unattended option's words then set by the engineer, and *approve* made *accept* to match, not re-checked
-- 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; not checked
+- 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; checked: 69 directives, 69 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 
 ## History
 
