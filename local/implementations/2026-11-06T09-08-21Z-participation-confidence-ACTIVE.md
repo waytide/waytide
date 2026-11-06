@@ -39,6 +39,8 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The question carries no heading over the figures, as the engineer directed. The line *The agent's confidence in doing this work unattended:* was added and then removed.
 - **2026-11-06** — *Human in the loop* carries no question mark, as the engineer directed.
 - **2026-11-06** — The Attended option no longer carries *(the default)*, as the engineer directed. Attended is still the default, and the option set no longer says so.
+- **2026-11-06** — When the overall score is 70% or lower, the question carries a warning and the Attended option is marked as the recommendation, as the engineer directed. This carries out the item `2026-11-05T02-38-50Z-low-confidence-in-unattended-work-recommends-attended`, made Active.
+- **2026-11-06** — The warning reads *When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.*, in the engineer's words.
 
 ---
 

@@ -23,9 +23,9 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 > Human in the loop
 >
-> - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 65%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -44,6 +44,18 @@ with these options:
 **The overall score is estimated directly, not computed.** It is not the product or the average of the other two. The two are often related. A misread intent, for example, lowers both. The agent is the party that can judge how they relate in this piece of work. The overall score is never higher than the lower of the two, because unattended work has to come out right in both ways.
 
 **Why the figures are in the question:** the decision rests on how likely the first pass is to be right, and the agent is the party that has looked at the work. Putting its estimate in the question puts that judgment in view where the engineer makes the decision. A low *voice* figure says the engineer would change what the agent decides alone.
+
+**When the overall score is 70% or lower, the question carries a warning, and Attended is the recommendation.** The warning is the question's last line, in these words:
+
+> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+
+and the Attended option is marked as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+Above 70%, the question carries no warning, and neither option is marked. The engineer still chooses either way.
+
+**Why 70%:** at about 70%, the expected cost of fixing a wrong unattended result is about what attended work costs in attention as it goes. The estimate is in the log entry `2026-11-06T09-23-01Z-the-attended-floor-is-estimated-at-about-70-percent`. It has not yet been checked against how the work turns out. The warning puts the agent's doubt in front of the decision, rather than leaving it to show in the work.
 
 **Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Human in the loop** is a phrase an engineer knows before meeting this system, and it is the whole of what the decision settles.
 
@@ -84,7 +96,7 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Human in the loop*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
 
 Record the selection as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way.
 
@@ -109,9 +121,9 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 
 > Human in the loop
 >
-> - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 65%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -127,22 +139,32 @@ with these options:
 20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
 21. Estimate the overall score directly. Do not compute it from works and voice.
 22. Never give an overall score higher than the lower of works and voice.
-23. Name no hinge, gate, or loop in the question or in any option.
-24. Name the hinges when the loop reaches the first one, not before.
-25. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-26. That confirmation records what was chosen, when, and by whom.
-27. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-28. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-29. Under unattended work, each cycle records its hinge, and what was decided and why.
-30. The "why" is the reasoning the agent actually applied.
-31. Under unattended work, write no Options line and no Decision / chat line.
-32. Do not write an unattended cycle as though an engineer was consulted.
-33. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+23. When the overall score is 70% or lower, end the question with this line:
+
+> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+
+24. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+25. Above 70%, give no warning, and mark neither option.
+26. The engineer may choose either option, whatever the score.
+27. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+28. Name the hinges when the loop reaches the first one, not before.
+29. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+30. That confirmation records what was chosen, when, and by whom.
+31. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+32. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+33. Under unattended work, each cycle records its hinge, and what was decided and why.
+34. The "why" is the reasoning the agent actually applied.
+35. Under unattended work, write no Options line and no Decision / chat line.
+36. Do not write an unattended cycle as though an engineer was consulted.
+37. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan.
+2. Attended work needs no plan. Do not present one for it.
 3. The plan is a list.
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
@@ -158,6 +180,7 @@ with these options:
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, and the question mark after *Human in the loop* removed, and *(the default)* removed from the Attended option with the directive that the option set show the default, as the engineer directed, not re-checked
+- 2026-11-06, revised: a warning and the Attended recommendation at an overall score of 70% or lower; checked: 52 directives, 52 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept; the warning's words then set by the engineer, not re-checked
 
 ## History
 

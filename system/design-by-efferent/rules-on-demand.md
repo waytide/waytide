@@ -138,9 +138,9 @@ Trigger: When starting a feature or an experiment
 
 > Human in the loop
 >
-> - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
-> - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - **Voice: 65%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - **Overall score: 80%.** How sure the agent is that, working alone, it does the work as you would have it done.
+> - **Works: 95%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
+> - **Voice: 85%.** How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
 
 with these options:
 
@@ -156,22 +156,32 @@ with these options:
 20. Give the agent's own three estimates for this piece of work, made at the moment it asks.
 21. Estimate the overall score directly. Do not compute it from works and voice.
 22. Never give an overall score higher than the lower of works and voice.
-23. Name no hinge, gate, or loop in the question or in any option.
-24. Name the hinges when the loop reaches the first one, not before.
-25. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
-26. That confirmation records what was chosen, when, and by whom.
-27. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
-28. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
-29. Under unattended work, each cycle records its hinge, and what was decided and why.
-30. The "why" is the reasoning the agent actually applied.
-31. Under unattended work, write no Options line and no Decision / chat line.
-32. Do not write an unattended cycle as though an engineer was consulted.
-33. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+23. When the overall score is 70% or lower, end the question with this line:
+
+> When the overall score is 70% or lower, leaving the agent unattended risks adverse outcomes.
+
+24. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+
+> **Attended (Recommended)** — You decide. The agent automates.
+
+25. Above 70%, give no warning, and mark neither option.
+26. The engineer may choose either option, whatever the score.
+27. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
+28. Name the hinges when the loop reaches the first one, not before.
+29. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
+30. That confirmation records what was chosen, when, and by whom.
+31. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
+32. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
+33. Under unattended work, each cycle records its hinge, and what was decided and why.
+34. The "why" is the reasoning the agent actually applied.
+35. Under unattended work, write no Options line and no Decision / chat line.
+36. Do not write an unattended cycle as though an engineer was consulted.
+37. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
 
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan.
+2. Attended work needs no plan. Do not present one for it.
 3. The plan is a list.
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
