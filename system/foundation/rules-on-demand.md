@@ -861,7 +861,7 @@ Trigger: When changing the session-start notice, the startup display, the status
 1. The harness announces Waytide, through three surfaces it renders.
 2. The agent prints no notice, at session start or at any other time.
 3. An agent-printed copy would only duplicate the harness's.
-4. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+4. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read.
 
 ## The session-start notice
 

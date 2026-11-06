@@ -124,7 +124,7 @@ The notice and the display are wired by the hooks of the Slasher plugin, in `.cl
 
   **No quotation marks, and they must not be added.** The notice and the instruction are each interpolated into a JSON string built by `printf` with no escaping. A double quote would terminate the string, and the harness would fail to parse the output. The notice would disappear with no error at all, which is the silent failure this whole mechanism exists to avoid.
 
-- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders. Its session-start part frames the notice's message as the session starts, and its loading part prints on the session's first prompt. See the the-startup-display-prints-as-the-session-starts rule. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+- **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders. Its session-start part frames the notice's message as the session starts, and its loading part prints on the session's first prompt. See the the-startup-display-prints-as-the-session-starts rule. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read. See the the-command-domain-table-prints-when-the-rules-have-loaded rule.
 - **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
 - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
@@ -166,7 +166,7 @@ Keep the engineer's own segments separated by the middle dot. Set the trailing W
 1. The harness announces Waytide, through three surfaces it renders.
 2. The agent prints no notice, at session start or at any other time.
 3. An agent-printed copy would only duplicate the harness's.
-4. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+4. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read.
 
 ## The session-start notice
 
@@ -311,6 +311,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: the loading part prints the loading line, then the figure, the order the engineer set; not re-checked
 - 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
 - 2026-11-05, revised: the instruction carries the core rules, within the hook's 10,000 characters; checked: 63 directives, 59 kept, 4 less precise, 0 lost, 2 repairs, to the core rules point; re-checked: 63 directives, 61 kept, 2 less precise, 0 lost. Left less precise: the status line example's in-between lines, which the prose states, and that the loading part is read from the startup display rule, as the art is
+- 2026-11-06, revised: the agent prints the command domain table at the end of the session-start read, beside the package set stanza; checked: 103 directives, 99 kept, 4 less precise, 0 lost. Left less precise, none touched by this revision: that the uncommitted changes segment carries no count, that the loading part reads its content from the startup display rule, that the authoring source lists packages under `system/`, and that `session-start.sh instruction` prints the instruction alone, as plain text
 
 ## History
 
@@ -357,6 +358,7 @@ Until Thu Oct 29 2026 the hook gave the same instruction after a compaction as a
 Related:
 
 - the the-startup-display-prints-as-the-session-starts rule — the startup display, which this notice does not carry and the agent does not print
+- the the-command-domain-table-prints-when-the-rules-have-loaded rule — the second thing the agent prints at the start
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — the rule format and where the bootstrap lives
 - the foundation `install.sh` that places the bootstrap files
 - the a-status-report-prints-a-fixed-whole-project-report rule — the on-demand report that answers in detail what is installed
@@ -455,3 +457,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:40:22 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:34:21 AM PT

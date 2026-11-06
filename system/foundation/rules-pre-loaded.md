@@ -418,6 +418,39 @@ Source: system/foundation/source/present-every-prompt-to-the-engineer-through-th
 10. This applies whenever you would ask the engineer to decide or answer. That includes a design decision, a "which approach", a confirmation to proceed or commit, and a clarification between interpretations.
 11. Keep plain prose for statements, reports, and explanations that do not ask the engineer to choose.
 
+# The command domain table prints when the rules have loaded
+
+Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-have-loaded.md
+
+**When the session-start read concludes, print the command domain table below, word for word.** Print it in the response that carries the read, after the package set stanza where one prints, and ahead of anything else in that response. This holds for a read started by the session's first prompt, by `/load`, and by `load rules`. A read run again after a compaction prints no table, since the engineer asked for nothing.
+
+| Command | Description |
+|---|---|
+| `/item` | Items hold the project's thinking: ideas, plans, designs, observations, and work to be done, each with a state. |
+| `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
+| `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
+| `/phase` | Phases split a feature or an experiment into steps, run one at a time, each on its own sub branch. |
+| `/next` | These commands move the work under way along: take its next step, or say what was done and what's next. |
+| `/log` | The log records what was decided and when, and a work session record tells the story of a stretch of work. |
+| `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
+| `/freewrite` | Freewriting records points as they are said, freeform in no order, and organizes them when the writer is done. |
+| `/test` | These commands run the project's tests and report on them. |
+| `/projects` | This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
+| `/release` | This command presents the candidates for a package's next version, for the engineer to choose. |
+| `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Waytide. |
+| `/reserve` | These commands work on language: reserving a word, ETE, Waytide's implementation of STE and its extensions, and clarifying language, often the agent's. |
+| `/load` | This command loads the rules now, without waiting for the first prompt. |
+
+**Each row is one command domain.** A command domain is a group of root commands that share one heading and one description in the Slasher help. The row names the domain's first root command, and its description is the one under that heading. Print no other root command, alias, or subcommand in the table.
+
+**The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
+
+**Keep the table in line with the help.** When a domain's heading, its first root command, or its description changes in the help text, change this table in the same commit.
+
+**Why:** the engineer sees what the commands are for at the moment they can start using them. The table gives one line for each domain, so it shows the whole set at a glance, and `/slasher help` gives the detail.
+
+**How to apply:** at the end of the session-start read, print the table as it stands here, once, and then turn to the engineer's request or wait for one.
+
 # The log holds one file per entry, with a one-line title
 
 Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-line-title.md
