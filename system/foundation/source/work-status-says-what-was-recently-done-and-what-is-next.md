@@ -1,8 +1,8 @@
 # Work status says what was recently done, and what is next
 
-**Trigger:** When the engineer types `/work-status`, or asks what was recently done and what is next
+**Trigger:** When the engineer types `/work-status` or its alias `/sup?`, or asks what was recently done and what is next
 
-**`/work-status` answers two questions in a few lines: what was recently done, and what is next.** It has no alias.
+**`/work-status` answers two questions in a few lines: what was recently done, and what is next.** `/sup?` is its alias, and does exactly what it does.
 
 **As the engineer stated it:** what was recently done, and what's next.
 
@@ -20,7 +20,7 @@
 
 ## Compressed
 
-1. `/work-status` says in a few lines what was recently done and what is next. It has no alias.
+1. `/work-status` says in a few lines what was recently done and what is next. `/sup?` is its alias.
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
@@ -33,8 +33,11 @@
 - 2026-11-04, revised: the `/status` alias is removed, as the engineer directed; not re-checked
 - 2026-11-05, revised: the commands are `/next-work` and `/next-work?`, a term swap the engineer settled; not re-checked
 - 2026-11-05, revised: the commands are `/next` and `/next?` again, a term swap the engineer settled; not re-checked
+- 2026-11-06, revised: `/sup?` is its alias, in place of "It has no alias"; not re-checked
 
 ## History
+
+Until Fri Nov 6 2026 the rule said `/work-status` had no alias. The engineer then made `/sup?` its alias.
 
 On Thu Nov 5 2026 the commands were renamed `/next-work` and `/next-work?`, and then named `/next` and `/next?` again the same day.
 
@@ -52,3 +55,4 @@ Authored by Scott Bellware on Wed Nov 4 2026 at 8:49:42 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 9:07:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 1:03:01 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:09:56 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:41:59 AM PT
