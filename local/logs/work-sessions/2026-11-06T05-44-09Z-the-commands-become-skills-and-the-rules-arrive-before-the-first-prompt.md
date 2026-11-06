@@ -1,6 +1,6 @@
 # Work Session — The commands become skills, and the rules arrive before the first prompt (Thu Nov 5 2026)
 
-This work session began with one skill to build, `/log`, and ended with the skills feature's two phases concluded. Phase 1 built every command in the help text as a skill in a plugin, which came to be named `slasher` and to carry the whole session start. Phase 2 measured the session-start read, found the limit on what a hook can carry, and shrank the read by about 18%, with five rules now arriving before the first prompt. Along the way the engineer recorded several ideas, among them the base project.
+This work session began with one skill to build, `/log`, and ended with the skills feature concluded and merged into `master`. Phase 1 built every command in the help text as a skill in a plugin, which came to be named `slasher` and to carry the whole session start. Phase 2 measured the session-start read, found the limit on what a hook can carry, and shrank the read by about 18%, with five rules now arriving before the first prompt. Along the way the engineer recorded several ideas, among them the base project.
 
 This record is the guided tour. The durable records it points to are the source of truth: the feature record `local/implementations/2026-10-30T01-21-06Z-skills`, the log, the rules, and the commits on `feature/worktree/skills`.
 
@@ -23,6 +23,10 @@ Phase 2 was started to reach a verdict, with a forecast that command domains' ru
 ## 5. Safe triggers
 
 Moving rules to triggers raised whether the corpus grows less predictable. The engineer settled that a rule takes a trigger only where the trigger names a discrete act the agent itself takes, and a missed load is cheap and visible, and foundation's rule on binding rules now says so. An audit of 86 triggers reworded or reversed 13. The vocabulary rule was split into using and writing, two more rules took triggers, the work-session rule was pre-loaded again and taught to propose a record at each conclusion, and the vocabularies' compressed text dropped its STE notes. A session confirmed three of the new triggers loaded before their acts. The read came to about 145,000 characters. The engineer declared phase 2 Affirmed.
+
+## 6. The feature concludes
+
+The engineer first declared the feature Affirmed, and the record took a confirmation that it reaches a verdict, since it began before that choice was asked at a start. The engineer then corrected it: the feature is Completed. The record carries both confirmations and the correction, and the log carries an entry for each. The feature merged into `master`, keeping `master`'s help text where the two had both changed it, and the worktree and the branch were removed. The skills item was amended with the skills as built.
 
 ## Takeaways
 
@@ -49,3 +53,4 @@ Moving rules to triggers raised whether the corpus grows less predictable. The e
 ---
 
 Authored by Scott Bellware on Thu Nov 5 2026 at 9:44:09 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:55:42 PM PT
