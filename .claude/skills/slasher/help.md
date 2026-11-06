@@ -26,7 +26,7 @@ ITEMS
                                    List items in a state
                                    <state>: any item state, or "current"
                                    (Open and Active)
-  /item current, /current-items    List current items (/item list current)
+  /item current                    List current items (/item list current)
 
   /item start                      Open -> Active
   /item realize                    -> Realized
@@ -129,6 +129,14 @@ WORK STATUS
 
   /sup? is an alias of /work-status, with the same
   subcommands.
+
+CURRENT
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
+
+  /current                         The current items, then the current
+                                   features and experiments
+  /current help                    Print this command's help
 
 LOG
   The log records what was decided and when, and a work session record tells the
