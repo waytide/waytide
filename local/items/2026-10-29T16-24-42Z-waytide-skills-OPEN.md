@@ -237,6 +237,21 @@
 - what counts as a multi-step process, and where its steps come from, such as a plan's tasks or an implementation's phases. No rule says so yet, and one is written with the other missing rules.
 - whether `/next?` is an allowed skill name. A `?` may not be, and the name is checked when the skills are built.
 
+## Amended — 2026-11-05: the skills as built
+
+The skills are built, in the feature's first phase, and this item falls behind them where the work moved:
+
+- The skills are delivered in a plugin called Slasher and named `slasher`, typed `/slasher:<command>`, or `/<command>` where nothing else claims the name. `/slasher help` prints the full help, and a bare `/slasher` does nothing.
+- `/load` is a command, the same as typing `load rules`, which was `load waytide`.
+- `/work-status` says what was recently done and what is next. Its `/status` alias was added and then removed.
+- `/next` and `/next?` were renamed `/next-work` and `/next-work?`, then given their first names again.
+- `/package-set` declares the package set, or shows the active one.
+- `/freewrite` takes every item kind, and a bare `/freewrite` begins freewriting.
+- `/item current` lists the current items, beside the `/current-items` alias.
+- `/publish` and `/status-report` have no skill, at the engineer's direction. Each stays a request made in words.
+- `/ete` says the previous answer, or the text typed, in Eventide Technical English.
+- A skill name may end in `?`. `/next?` loads and runs, which settles the question the process amendment left open.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -349,3 +364,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 6:20:57 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:25 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:20:03 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:47:11 PM PT
