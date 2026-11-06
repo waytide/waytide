@@ -26,7 +26,7 @@ ITEMS
                                    List items in a state
                                    <state>: any item state, or "current"
                                    (Open and Active)
-  /current-items                   List current items (/item list current)
+  /item current, /current-items    List current items (/item list current)
 
   /item start                      Open -> Active
   /item realize                    -> Realized
