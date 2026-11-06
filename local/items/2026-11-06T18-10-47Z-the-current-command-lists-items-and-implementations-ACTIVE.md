@@ -1,6 +1,6 @@
 # The current command lists the current items, then summarizes the current implementations
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **`/current-items` would be renamed `/current`.** It would still list the Open and Active items, in the same form.
@@ -16,3 +16,4 @@ As the engineer first stated it: "Change current-items to current, and include a
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 10:10:47 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:13:34 AM PT
