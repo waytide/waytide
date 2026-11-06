@@ -1,6 +1,6 @@
 # Test values are controls, never factories, fixtures, or arrange
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 The known, deterministic inputs a test is built from are all **controls**. Those are the helpers that build example values, the example values themselves, and the pre-actuation setup phase where they are established. Hold to the one term for all three:
 

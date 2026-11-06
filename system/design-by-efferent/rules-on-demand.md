@@ -40,7 +40,7 @@ Trigger: When writing a loop record for a feature under waytide/local/logs/loops
 
 Source: system/design-by-efferent/source/a-test-of-behavior-that-already-exists-is-coverage-not-design.md
 
-Trigger: When an implementation hinge finds that the existing code already satisfies the test
+Trigger: When the test at an implementation hinge passes before any code is written
 
 1. A test justifies itself in DBE by driving an implementation that did not exist.
 2. DBE does not take an uncontested test as an outcome, and it is not part of the design loop.
@@ -244,7 +244,7 @@ Trigger: When presenting the actuation hinge of an outcome
 
 Source: system/design-by-efferent/source/the-design-of-a-test-waits-at-the-hinges-coverage-included.md
 
-Trigger: When writing a test to cover behavior that already exists
+Trigger: When creating or editing a file under `test/`
 
 1. The five hinges are actuation, observation, controls, implementation, and naming.
 2. Designing a test is a design act, so the design of a test waits at the hinges.

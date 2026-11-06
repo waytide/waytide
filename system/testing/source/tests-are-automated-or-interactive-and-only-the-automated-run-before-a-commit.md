@@ -1,7 +1,5 @@
 # Tests are automated or interactive, and only the automated run before a commit
 
-**Trigger:** When writing, reading, or running a test
-
 **A project's tests sit under `test/`, in one of two directories**, and a project may hold either or both:
 
 - **`test/automated/`** — tests a machine runs and a machine judges. This is the **suite** every other rule in this package means.
@@ -85,8 +83,6 @@ Where a project has no automated suite, run nothing and report nothing missing.
 - 2026-10-28, revised: Why points removed, solubility 70 → 73, clarity 0.85 → 0.90; checked: 16 directives, 16 kept, 0 less precise, 0 lost
 
 ## History
-
-Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
 
 Until Sun Oct 25 2026 this rule was named tests-are-automated-or-interactive and titled "`test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit".
 

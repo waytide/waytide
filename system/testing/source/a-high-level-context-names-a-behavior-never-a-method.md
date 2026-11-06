@@ -1,6 +1,6 @@
 # A high-level context names a behavior, never a method
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 - **Solubility:** 50
 - **Original rank:** 56 of 106

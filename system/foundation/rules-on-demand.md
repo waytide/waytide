@@ -176,7 +176,7 @@ Trigger: When starting a phase of an experiment or a feature, or when the engine
 
 Source: system/foundation/source/a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows.md
 
-Trigger: When the engineer asks for a list of records
+Trigger: When the engineer asks for a list of records, as with `/item list` or `/list`
 
 1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with its fields in sequence and no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
@@ -333,85 +333,11 @@ Trigger: When editing a source rule's body, or writing, revising, or checking a 
 15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 16. The package's rules file carries no figures. They stay in the source.
 
-# A status report prints a fixed whole-project report
-
-Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-report.md
-
-Trigger: When the engineer asks for a status report, or when giving any summary of where the project stands
-
-1. When the user asks for a **status report** (or "project status"), produce a report with the five parts below, in order.
-2. The report reads the project's planning records. These are the items that carry the work's tasks, whatever the project's kind tags name them.
-3. Identify those records without naming a directory or a kind.
-4. Part 1, **Task table**: the tasks those records carry, as a table of number, task, status (done / next / pending), and a terse note.
-5. Mark the next task in the task table.
-6. Include any out-of-sequence extras already built in the task table.
-7. Part 2, **Waiting work table**: the items carrying a `**Waits for:**` line, with name, date, what it waits for, and a one-line gist.
-8. Waiting items are off the task line until the wait ends.
-9. Order waiting items by their `**Priority:**` rank where they carry one.
-10. Do not list a hidden record in the waiting work table.
-11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
-12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
-13. The map shows that `waytide/local/rules/` holds the project's own local rules.
-14. The map states that both are binding and both are read at session start.
-15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
-16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
-17. The orientation says how to work with the directory. Rules are enforceable conventions.
-18. The log is title-only ISO-8601-UTC decision entries.
-19. A rule typically pairs with a log entry.
-20. An item holds the task checklist where it sequences work.
-21. A `**Waits for:**` line marks work that is not yet actionable.
-22. Part 4, **Recent flows of work**: a brief of the recent direction, drawn from the latest log and commit entries.
-23. Keep the brief to a few lines, not an exhaustive list.
-24. Part 5, **Test suite**: this part is convention-aware of the testing package.
-25. If the project has adopted the testing conventions, run the suite and report the count and pass/fail line.
-26. Report the suite's context tree two levels deep, rendered hierarchically.
-27. Each distinct top-level context is a tree root. Its distinct second-level contexts are indented as its branches.
-28. Use an indented tree, such as a fenced block with `├─`/`└─` branches.
-29. Stop at two levels. Do not descend into per-assertion contexts.
-30. If the project has not adopted the testing conventions, degrade this part. Report whatever suite the project has, with its count and pass/fail.
-31. If the project has no suite, note that there is none.
-
-## A hidden record is counted rather than listed
-
-1. A hidden record is one a report states the number of and does not otherwise show.
-2. Omit a hidden record from the table or passage it would ordinarily sit in.
-3. Put a line there giving the count and the kind.
-4. The line says no more than that. It carries no *not listed*, no *withheld*, and no explanation.
-
-```
-3 suspended items
-12 suspension log entries
-```
-
-5. Hiding applies to any summary of the project's state, not only the fixed status report.
-6. That includes the *Recent flows of work* brief in part 4 and any ad-hoc account of where things stand.
-7. A record hidden from one surface is hidden from all of them.
-8. Two kinds are hidden today.
-9. A record whose `**State:**` line reads `Suspended` is hidden.
-10. A record carrying the `[suspended]` tag is hidden. That is a log entry, per the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
-11. The two are different records, hidden for the same reason, and take the same treatment. Do not merge them.
-12. A later rule may name another kind, and it becomes hidden by saying so.
-13. The treatment is fixed: counted, not listed, and named by kind in the count.
-14. Show hidden records when they are asked for.
-15. *Include the suspended items*, *show what is hidden*, or a request for a suspended record by name each produce the full listing.
-16. Never simply drop a hidden record. The count is what separates hiding from omitting.
-
-## The report is rendered from current state
-
-1. Keep each part tight.
-2. Read current state before printing.
-3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
-4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
-5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
-6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
-7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
-8. An unnamed test appears in the source and emits no line.
-
 # A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
 Source: system/foundation/source/a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved.md
 
-Trigger: When the project stops doing something, such as removing a rule, procedure, or report
+Trigger: When removing a rule, procedure, or report
 
 1. When the project stops doing something, log it and tag the entry `[suspended]`. That is the whole act.
 2. Nothing moves to any directory. Nothing is kept beside the entry, and no copy is kept anywhere.
@@ -483,7 +409,7 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 
 Source: system/foundation/source/an-implementation-runs-on-a-branch-to-a-declared-end.md
 
-Trigger: When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation
+Trigger: When starting, adding a worktree to, suspending, or concluding an experiment or feature implementation
 
 1. An implementation runs on its own branch, designed through the five hinges by DBE, to a declared state.
 2. It is never left silently open.
@@ -858,7 +784,7 @@ Changed by <other name> on <datetime>
 
 Source: system/foundation/source/rules-may-establish-a-mindset-rather-than-a-mechanic.md
 
-Trigger: When writing, evaluating, placing, or reconciling conflicting rules
+Trigger: When writing or changing a rule file
 
 1. A rule's package names the surface it acts on, such as words, commits, tests, or code. It does not name the purpose the rule serves.
 2. Many rules exist to establish a mental stance, a way of thinking about the code and the work, rather than to standardize a mechanic.
@@ -1222,38 +1148,6 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
 
-# The migration directory holds the plans for moving or restructuring content
-
-Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
-
-Trigger: When planning to move content across a repository boundary, to restructure, rename, or regroup a project's files, or to conform existing content to a changed norm or standard
-
-1. `waytide/local/migration/` holds migration records.
-2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
-3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
-4. Plan a move here when content ends up under a different root, or in a different structure.
-5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
-6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
-7. A change to a norm or standard that existing content must be conformed to is a migration too: a tag renamed, a term substituted, or a format changed, where records already written carry the old form. Example: the `[work-item]` tag becoming `[work]`, in this repository or in a consuming project.
-8. Do not use an ordinary item for a migration.
-9. An item sequences a build, against something this repository settled.
-10. A migration plan sequences a change to where existing content lives, or to the form it is written in. Across repositories, its increments land in two.
-11. Its order matters because content is unavailable or duplicated in between, a reference to the old place breaks until it is reconciled, and content in the old form does not match its rules until it is conformed.
-12. Across repositories, the plan is not finished when this repository's part is done.
-13. A migration may realize a settled item, or be mechanical enough to need none.
-14. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
-15. Revise the record while the migration runs.
-16. Write it before moving content across a repository boundary, restructuring where it lives, or conforming it to a changed norm or standard.
-17. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
-18. State the source and destination outright: the repositories, or the old and new places within one.
-19. State the increments in order.
-20. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
-21. Record what actually happened against the plan as the work proceeds.
-22. Keep the record after the content has moved. Do not delete it on completion.
-23. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
-24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
-25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
-
 # The startup display prints as the session starts
 
 Source: system/foundation/source/the-startup-display-prints-as-the-session-starts.md
@@ -1385,7 +1279,7 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 
 Source: system/foundation/source/the-work-sessions-directory-holds-one-record-per-work-session.md
 
-Trigger: When a work session is closing, or the engineer asks for a work session record
+Trigger: When the engineer asks for a work session record, as with `/work-session`
 
 1. `waytide/local/logs/work-sessions/` holds work session records.
 2. A work session record is the chronological narrative of one discrete work session between an engineer and Claude.

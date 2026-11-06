@@ -1,6 +1,6 @@
 # The work-sessions directory holds one record per work session
 
-**Trigger:** When a work session is closing, or the engineer asks for a work session record
+**Trigger:** When the engineer asks for a work session record, as with `/work-session`
 
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
@@ -113,6 +113,8 @@ Once the record is written, put the **design reconciliation** through the same U
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When a work session is closing, or the engineer asks for a work session record*, which was not a safe one.
+
 The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
 
 Until 2026-10-25 the statement that the prompt always says "work session" sat in the recording prompt's bullet alone, and How to apply worded the design reconciliation's third option as "no design bears on this session". The engineer settled that every prompt this convention puts says "work session", and How to apply now says it too.
@@ -190,3 +192,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

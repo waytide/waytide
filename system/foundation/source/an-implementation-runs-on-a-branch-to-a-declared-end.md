@@ -1,6 +1,6 @@
 # An implementation runs on a branch to a declared end
 
-**Trigger:** When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation
+**Trigger:** When starting, adding a worktree to, suspending, or concluding an experiment or feature implementation
 
 - **Solubility:** 21
 - **Original rank:** 6 of 106
@@ -269,6 +269,8 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation*, which was not a safe one.
+
 Until Mon Nov 2 2026 a phase reached a verdict where its implementation did. The engineer settled that the choice is made for each phase.
 
 Until Thu Oct 29 2026 the tag decided the parts that differ: an `[experiment]` took the forecast, the verdict, isolation, the merge on affirmation, the drift watch, and the bar on the agent raising its end, and a `[feature]` took none of them. The engineer settled that whether the work reaches a verdict is chosen at the start, and that those parts follow the choice, not the kind.
@@ -322,3 +324,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:18:21 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:02:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:40:11 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:34:36 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

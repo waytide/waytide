@@ -1,6 +1,6 @@
 # A test actuates its concern once, and asserts each outcome in its own context
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 A test file is built in layers. There is a feature context, a shared control-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
 

@@ -1,6 +1,6 @@
 # A feature with one case has one test file, named for the feature
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 - **Solubility:** 88
 - **Original rank:** 104 of 106

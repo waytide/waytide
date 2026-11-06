@@ -1,6 +1,6 @@
 # A test block holds only the assertion, and its values are declared in the enclosing context
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 Three bound parts:
 

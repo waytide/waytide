@@ -1,6 +1,6 @@
 # A precondition documents the factors that decide a test's outcome, and its predicate reads inline
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 A **precondition** is an `assert` or `refute` that is **not** a test. It sits in a context beside the controls and the actuation rather than inside a `test` block.
 

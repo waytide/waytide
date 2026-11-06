@@ -1,6 +1,6 @@
 # A feature's normal path and its exceptional paths are separate test files
 
-**Trigger:** When writing a test for a feature's exceptional (raising) path
+**Trigger:** When creating or editing a file under `test/`
 
 A feature's **normal path** is the ordinary, non-raising course through it. Its test and the test of each **exceptional path** live in **separate files**. A feature with one normal path and one exceptional path is two files, not one file with two contexts.
 
@@ -40,6 +40,8 @@ An exceptional path cannot share that actuation. The actuation is inside an `ass
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When writing a test for a feature's exceptional (raising) path*, which was not a safe one.
+
 Until Sun Oct 25 2026 this rule was named normal-path-and-exceptional-paths-are-separate-files.
 
 Related:
@@ -73,3 +75,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

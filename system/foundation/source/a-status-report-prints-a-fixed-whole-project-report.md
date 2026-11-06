@@ -1,7 +1,5 @@
 # A status report prints a fixed whole-project report
 
-**Trigger:** When the engineer asks for a status report, or when giving any summary of where the project stands
-
 When the user asks for a **status report** (or "project status"), produce a report with these parts, in order:
 
 **The report reads the project's planning records** — the items that carry the work's tasks, whatever the project's kind tags name them. This rule names no directory and no kind, so it survives a change to either.
@@ -120,6 +118,8 @@ Keep each part tight. Read current state before printing — do not report stale
 
 ## History
 
+Until Thu Nov 5 2026 this rule was loaded on demand, on the trigger *When the engineer asks for a status report, or when giving any summary of where the project stands*. Its trigger was not a safe one, so it is pre-loaded.
+
 Until Sun Oct 25 2026 this rule was named status-report-format and titled ""Status report" prints a fixed whole-project report".
 
 Until Mon Oct 26 2026 this rule called the records under `logs/` "the running records". The engineer settled that they are the contemporaneous, historical records.
@@ -167,3 +167,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

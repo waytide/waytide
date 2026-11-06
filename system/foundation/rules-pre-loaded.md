@@ -214,11 +214,12 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 6. A package's `rules-on-demand.md`, at the package root, holds each rule whose source carries a `**Trigger:**` line under its title, with its trigger. `./compile.sh` writes it.
 7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `waytide/system/foundation/load-rules.sh <rule-name>`.
 8. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
-9. The rules override default behavior where they conflict.
-10. Explicit user instructions still win over the rules.
-11. Read `waytide/system/foundation/` first. It defines the system.
-12. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
-13. `rules/` may not exist. Its absence is ordinary.
+9. Give a rule a trigger only where it names a discrete act the agent itself takes, such as running a command or creating or editing a named kind of file, so the agent cannot reach the act without knowing it, and where a missed load is cheap and visible. A trigger naming a judgment about a situation, such as giving a summary or working with tests, is not safe, and its rule stays pre-loaded.
+10. The rules override default behavior where they conflict.
+11. Explicit user instructions still win over the rules.
+12. Read `waytide/system/foundation/` first. It defines the system.
+13. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
+14. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
 
@@ -296,6 +297,78 @@ Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-c
 4. A preference not yet settled as a rule is outside this rule. Ask about it at once rather than holding it.
 5. The harness's own working state is outside this rule. That is a cache, a transcript, or an index of the repository.
 6. Harness working state is not project context and is no substitute for an artifact.
+
+# A status report prints a fixed whole-project report
+
+Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-report.md
+
+1. When the user asks for a **status report** (or "project status"), produce a report with the five parts below, in order.
+2. The report reads the project's planning records. These are the items that carry the work's tasks, whatever the project's kind tags name them.
+3. Identify those records without naming a directory or a kind.
+4. Part 1, **Task table**: the tasks those records carry, as a table of number, task, status (done / next / pending), and a terse note.
+5. Mark the next task in the task table.
+6. Include any out-of-sequence extras already built in the task table.
+7. Part 2, **Waiting work table**: the items carrying a `**Waits for:**` line, with name, date, what it waits for, and a one-line gist.
+8. Waiting items are off the task line until the wait ends.
+9. Order waiting items by their `**Priority:**` rank where they carry one.
+10. Do not list a hidden record in the waiting work table.
+11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
+12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
+13. The map shows that `waytide/local/rules/` holds the project's own local rules.
+14. The map states that both are binding and both are read at session start.
+15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
+16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
+17. The orientation says how to work with the directory. Rules are enforceable conventions.
+18. The log is title-only ISO-8601-UTC decision entries.
+19. A rule typically pairs with a log entry.
+20. An item holds the task checklist where it sequences work.
+21. A `**Waits for:**` line marks work that is not yet actionable.
+22. Part 4, **Recent flows of work**: a brief of the recent direction, drawn from the latest log and commit entries.
+23. Keep the brief to a few lines, not an exhaustive list.
+24. Part 5, **Test suite**: this part is convention-aware of the testing package.
+25. If the project has adopted the testing conventions, run the suite and report the count and pass/fail line.
+26. Report the suite's context tree two levels deep, rendered hierarchically.
+27. Each distinct top-level context is a tree root. Its distinct second-level contexts are indented as its branches.
+28. Use an indented tree, such as a fenced block with `├─`/`└─` branches.
+29. Stop at two levels. Do not descend into per-assertion contexts.
+30. If the project has not adopted the testing conventions, degrade this part. Report whatever suite the project has, with its count and pass/fail.
+31. If the project has no suite, note that there is none.
+
+## A hidden record is counted rather than listed
+
+1. A hidden record is one a report states the number of and does not otherwise show.
+2. Omit a hidden record from the table or passage it would ordinarily sit in.
+3. Put a line there giving the count and the kind.
+4. The line says no more than that. It carries no *not listed*, no *withheld*, and no explanation.
+
+```
+3 suspended items
+12 suspension log entries
+```
+
+5. Hiding applies to any summary of the project's state, not only the fixed status report.
+6. That includes the *Recent flows of work* brief in part 4 and any ad-hoc account of where things stand.
+7. A record hidden from one surface is hidden from all of them.
+8. Two kinds are hidden today.
+9. A record whose `**State:**` line reads `Suspended` is hidden.
+10. A record carrying the `[suspended]` tag is hidden. That is a log entry, per the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
+11. The two are different records, hidden for the same reason, and take the same treatment. Do not merge them.
+12. A later rule may name another kind, and it becomes hidden by saying so.
+13. The treatment is fixed: counted, not listed, and named by kind in the count.
+14. Show hidden records when they are asked for.
+15. *Include the suspended items*, *show what is hidden*, or a request for a suspended record by name each produce the full listing.
+16. Never simply drop a hidden record. The count is what separates hiding from omitting.
+
+## The report is rendered from current state
+
+1. Keep each part tight.
+2. Read current state before printing.
+3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
+4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
+5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
+6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
+7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
+8. An unnamed test appears in the source and emits no line.
 
 # A time value carries minutes and seconds
 
@@ -418,6 +491,36 @@ Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-lin
 1. `/log-this` writes a log entry for the work the conversation is on. State as its title the decision or finding the work has just reached, with a body where the reasoning will not fit.
 2. Where nothing has been reached, say so and write nothing. Where it is unclear which decision is meant, ask, through the selection interface.
 3. The entry follows every convention of an entry the engineer dictates.
+
+# The migration directory holds the plans for moving or restructuring content
+
+Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
+
+1. `waytide/local/migration/` holds migration records.
+2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
+3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
+4. Plan a move here when content ends up under a different root, or in a different structure.
+5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
+6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
+7. A change to a norm or standard that existing content must be conformed to is a migration too: a tag renamed, a term substituted, or a format changed, where records already written carry the old form. Example: the `[work-item]` tag becoming `[work]`, in this repository or in a consuming project.
+8. Do not use an ordinary item for a migration.
+9. An item sequences a build, against something this repository settled.
+10. A migration plan sequences a change to where existing content lives, or to the form it is written in. Across repositories, its increments land in two.
+11. Its order matters because content is unavailable or duplicated in between, a reference to the old place breaks until it is reconciled, and content in the old form does not match its rules until it is conformed.
+12. Across repositories, the plan is not finished when this repository's part is done.
+13. A migration may realize a settled item, or be mechanical enough to need none.
+14. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
+15. Revise the record while the migration runs.
+16. Write it before moving content across a repository boundary, restructuring where it lives, or conforming it to a changed norm or standard.
+17. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
+18. State the source and destination outright: the repositories, or the old and new places within one.
+19. State the increments in order.
+20. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
+21. Record what actually happened against the plan as the work proceeds.
+22. Keep the record after the content has moved. Do not delete it on completion.
+23. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
+24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
+25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
 
 # When the work diverges from the plan, the work is definitive
 

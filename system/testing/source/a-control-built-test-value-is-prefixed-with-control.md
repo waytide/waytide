@@ -1,6 +1,6 @@
 # A control-built test value is prefixed with control_
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 - **Solubility:** 99
 - **Original rank:** 106 of 106

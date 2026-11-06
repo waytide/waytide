@@ -1,6 +1,6 @@
 # Test context nesting mirrors the folder hierarchy
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 - **Solubility:** 87
 - **Original rank:** 102 of 106

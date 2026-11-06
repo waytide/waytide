@@ -1,6 +1,6 @@
 # A control's string value starts with "some"
 
-**Trigger:** When writing, reading, or running a test
+**Trigger:** When creating or editing a file under `test/`
 
 A control may hold a **string value**, meaning a literal value used as test input rather than a constant name. The string starts with **"some"**, as in `control_file = "some file"` and not `"a file"`. The word "some" marks it as an arbitrary placeholder value whose specific content does not matter.
 

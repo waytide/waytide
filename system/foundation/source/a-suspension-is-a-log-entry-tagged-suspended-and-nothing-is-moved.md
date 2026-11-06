@@ -1,6 +1,6 @@
 # A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
-**Trigger:** When the project stops doing something, such as removing a rule, procedure, or report
+**Trigger:** When removing a rule, procedure, or report
 
 **When the project stops doing something, log it and tag the entry `[suspended]`.** That is the whole of the act. There is no directory the thing moves to, and nothing is kept beside the entry.
 
@@ -81,6 +81,8 @@ Do not keep a copy of the removed thing. Do not tag an item's log entry this way
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When the project stops doing something, such as removing a rule, procedure, or report*, which was not a safe one.
+
 A leading-tag form was written on 2026-08-18 and superseded the same day.
 
 Until Sun Oct 25 2026 this rule was named a-suspension-is-a-log-entry and titled "A suspension is a log entry tagged `[suspended]`, and nothing is moved anywhere".
@@ -116,3 +118,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

@@ -2,7 +2,7 @@
 
 Source: system/testing/source/a-context-block-is-used-for-a-test-block-only-when-the-tests-outcome-needs-local-instrumentation-or-local-variables.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. Naming an outcome does not require a `context` block. TestBench lets a test carry its own name: `test "Outcome name" do … end`.
 2. Enclose a test in a named `context` only when the outcome needs local instrumentation. Otherwise name the test directly.
@@ -49,7 +49,7 @@ end
 
 Source: system/testing/source/a-control-built-test-value-is-prefixed-with-control.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. In test code, a control is anything from `Controls::*`.
 2. Name a local variable that holds a control-built value with a `control_` prefix, as in `control_file` and `control_response`.
@@ -60,7 +60,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/a-controls-string-value-starts-with-some.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. A control may hold a string value: a literal used as test input, not a constant name.
 2. The string value starts with "some", as in `control_file = "some file"`, not `"a file"`.
@@ -75,7 +75,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/a-feature-with-one-case-has-one-test-file-named-for-the-feature.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. When a feature has only one case, its test is a single file named for the feature.
 2. The file sits directly under the feature context. Example: `test/automated/upload/status.rb`, under `context "Upload" do; context "Status" do`.
@@ -93,7 +93,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/a-features-normal-path-and-its-exceptional-paths-are-separate-test-files.md
 
-Trigger: When writing a test for a feature's exceptional (raising) path
+Trigger: When creating or editing a file under `test/`
 
 1. A feature's normal path is its ordinary, non-raising course through it.
 2. The normal path's test and each exceptional path's test live in separate files.
@@ -114,7 +114,7 @@ Trigger: When writing a test for a feature's exceptional (raising) path
 
 Source: system/testing/source/a-high-level-context-names-a-behavior-never-a-method.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. A test's high-level context names a behavior.
 2. A high-level context does not name a method. A method name is an implementation.
@@ -145,7 +145,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/a-precondition-documents-the-factors-that-decide-a-tests-outcome-and-its-predicate-reads-inline.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. A precondition is an `assert` or `refute` that is not a test.
 2. It sits in a context beside the controls and the actuation, not inside a `test` block.
@@ -245,7 +245,7 @@ end
 
 Source: system/testing/source/a-predicate-methods-test-context-is-its-name-followed-by-the-word-predicate.md
 
-Trigger: When naming a test context for a ?-suffixed predicate method
+Trigger: When creating or editing a file under `test/`
 
 1. A predicate method is a `?`-suffixed, boolean-returning method.
 2. Name a predicate method's test `context` by the method's name without the `?`, followed by "Predicate".
@@ -258,7 +258,7 @@ Trigger: When naming a test context for a ?-suffixed predicate method
 
 Source: system/testing/source/a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. A test file has three layers: a feature context, a shared control-and-actuation block at its top, and inner contexts that each establish one outcome.
 2. The outer `context` names the feature.
@@ -304,7 +304,7 @@ end
 
 Source: system/testing/source/a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. Never inline a method call in an assertion.
 2. Assign every value the assertion examines to an explaining variable first. This includes the actuation result and whatever it is compared against.
@@ -380,7 +380,7 @@ Trigger: When taking a test out of the suite, finding a failing test to set asid
 
 Source: system/testing/source/a-test-report-classifies-the-suite-and-prints-its-context-hierarchy.md
 
-Trigger: When the user asks for a test report
+Trigger: When the user asks for a test report, as with `/test report` or `/test-report`
 
 1. This rule applies when the user asks for a **test report**.
 2. Classify the automated suite along the lenses below.
@@ -500,7 +500,7 @@ Trigger: When writing an `assert_raises` or deciding whether to assert an error'
 
 Source: system/testing/source/do-not-test-the-platform.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. Test the library's own behavior and decisions, not the language or system it sits on.
 2. A unit is a transparent pass-through on a path only when it just forwards to a platform primitive. It adds no branch, guard, normalization, or policy there.
@@ -519,7 +519,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/start-a-test-name-with-is-only-for-a-value-equals-comparator-assertion.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. Begin a test or context name with "Is" only when the test asserts that a value is some other comparator.
 2. Such an assertion is an equality or identity comparison of a value against another value.
@@ -543,7 +543,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/test-context-nesting-mirrors-the-folder-hierarchy.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. A test file's context nesting mirrors the hierarchy of its folder path.
 2. Each directory segment under `test/automated/` becomes a context.
@@ -564,7 +564,7 @@ Trigger: When writing, reading, or running a test
 
 Source: system/testing/source/test-values-are-controls-never-factories-fixtures-or-arrange.md
 
-Trigger: When writing, reading, or running a test
+Trigger: When creating or editing a file under `test/`
 
 1. The known, deterministic inputs a test is built from are all **controls**.
 2. Helpers that build example values are **controls**, never "factories".
@@ -575,48 +575,6 @@ Trigger: When writing, reading, or running a test
 7. Apply this in prose, comments, docs, and dialogue.
 8. In talk about tests, never say "factory", "factories", "fixture", "fixtures", "arrange", or "arrangement".
 9. Where a test framework has its own `Fixture` context object, the known input values are still controls, not fixtures.
-
-# Tests are automated or interactive, and only the automated run before a commit
-
-Source: system/testing/source/tests-are-automated-or-interactive-and-only-the-automated-run-before-a-commit.md
-
-Trigger: When writing, reading, or running a test
-
-1. A project's tests sit under `test/`, in `test/automated/`, `test/interactive/`, or both.
-2. Put a test that a machine runs and a machine judges in `test/automated/`.
-3. `test/automated/` is the suite that every other rule in this package means.
-4. Put a test that needs a person in `test/interactive/`. The engineer runs it, with a person in the loop.
-5. In an interactive test, a person drives the run and a person judges what came back.
-6. Only `test/automated/` runs before a commit. Run it before weighing a commit.
-7. The suite that the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit rule requires to pass is the automated one.
-8. This rule applies in full in a project that does not install the `git` package.
-
-## An interactive test is the engineer's to run
-
-1. Do not run an interactive test on your own initiative.
-2. Do not run an interactive test as part of a suite run.
-3. Run an interactive test when the engineer asks for it.
-4. A test is interactive when a person is part of the run.
-5. A test is interactive when it needs a judgment that a machine cannot make.
-6. A test is also interactive when it reaches something the project does not control.
-7. Examples are a network, a remote repository, an installer that writes outside the working tree, or a rendering someone has to look at.
-8. No pre-commit gate depends on an interactive test.
-
-## Say which tests ran
-
-1. A report of a suite run names the automated tests and claims nothing more.
-2. Say that the automated tests passed, not that the tests passed.
-3. Where a project holds interactive tests, say that they were not run.
-4. That line states a fact. It is not an offer to run them.
-
-## A project may hold only one of the two
-
-1. A project with no `test/interactive/` is the ordinary case, and nothing is missing.
-2. A project with no `test/automated/` is ordinary too.
-3. In that case the pre-commit run has nothing to run, so run nothing.
-4. Do not report the missing automated suite as a failure, or as anything missing.
-5. Weigh the commit decision on what the project does have.
-6. Run-suite-before-commit is then satisfied vacuously, not violated.
 
 # The test tree command prints the suite's context tree
 
