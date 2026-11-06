@@ -619,7 +619,7 @@ Trigger: When writing or revising an item in waytide/local/items/ that sequences
 
 Source: system/foundation/source/an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes.md
 
-Trigger: When recording, revising, or promoting an observation in waytide/local/items/
+Trigger: When recording or revising an observation in waytide/local/items/
 
 Lines 1–6 below are the opening statements, which come before any section heading.
 
@@ -641,9 +641,9 @@ Lines 1–6 below are the opening statements, which come before any section head
 7. An observation that no longer holds is not retracted.
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
-10. Promotion is not a state change.
-11. When an observation stabilizes into a binding convention, write the rule in `waytide/local/rules/`.
-12. When the rule is written, the observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. The rule is its result. Everything else stays as it is, as the discovery record.
+10. An observation is not promoted.
+11. Where the thinking stabilizes into a binding convention, write the rule in `waytide/local/rules/` the way any rule is written.
+12. Do not change the observation. It takes no line naming the rule.
 13. The the-items-directory-holds-one-file-per-item rule needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
 ## The shape
@@ -657,15 +657,11 @@ Lines 1–6 below are the opening statements, which come before any section head
 7. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 8. The filename ends `-RECORDED`.
 9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
-10. **Promotion:** write the rule in `waytide/local/rules/`.
-11. Name the observation in the rule, and add the `**Promoted to:**` line to the observation.
-12. Add a `waytide/local/logs/log/` entry for the promotion.
-13. Leave the rest of the observation as written.
-14. **Recording one:** add the file.
-15. Add a matching one-line entry to `waytide/local/logs/log/`.
-16. The entry notes that it was recorded as an observation, and why it is not yet a rule.
-17. Never change an observation's state.
-18. Where the thinking moves, write a later observation and leave the earlier one as written.
+10. **Recording one:** add the file.
+11. Add a matching one-line entry to `waytide/local/logs/log/`.
+12. The entry notes that it was recorded as an observation, and why it is not yet a rule.
+13. Never change an observation's state.
+14. Where the thinking moves, write a later observation and leave the earlier one as written.
 
 # Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 

@@ -217,7 +217,7 @@ Related:
 - the a-record-may-be-categorized-with-square-bracket-tags rule — the tags that say what an item is
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix
 - the a-log-entry-is-written-for-an-item-on-creation-on-each-settled-resolution-and-on-a-change-of-state rule — the log entry an item takes
-- the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — an observation, which is an item and carries the promotion path to a rule
+- the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — an observation, which is an item whose one state never changes
 - the file-names, working-state-artifacts-carry-a-provenance-footer, and an-item-that-sequences-work-contains-no-code-samples rules
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the other `Suspended`, which is an act on something the project did rather than a state on something it wanted
 
@@ -268,3 +268,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:49:58 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT

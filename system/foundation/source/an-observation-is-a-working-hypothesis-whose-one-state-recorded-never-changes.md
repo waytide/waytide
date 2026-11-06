@@ -1,6 +1,6 @@
 # An observation is a working hypothesis whose one state, Recorded, never changes
 
-**Trigger:** When recording, revising, or promoting an observation in waytide/local/items/
+**Trigger:** When recording or revising an observation in waytide/local/items/
 
 `waytide/local/items/` holds working hypotheses, definitions, and methods that are **not yet binding**. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
 
@@ -14,22 +14,21 @@
 
 **An observation carries `**State:** Recorded` from the moment it is written**, and it carries that word for the rest of its life. Its filename ends `-RECORDED`.
 
-**It carries no `**Why this state:**` line.** That line said how settled the thinking was and what would promote it. Where a record has one state and cannot leave it, there is nothing to account for.
+**It carries no `**Why this state:**` line.** That line said how settled the thinking was. Where a record has one state and cannot leave it, there is nothing to account for.
 
 **An observation has no lifecycle**, which is what one unchanging state says. It is never realized, abandoned, obsolete, superseded, or suspended. Those words belong to a record that was going somewhere, and an observation is not going anywhere — it was thought, and it was written down, and neither of those is a stage.
 
 **An observation that no longer holds is not retracted.** A later observation states the later thinking, and the earlier one stays as what was thought at the time.
 
-**Promotion is not a state change either.** When an observation stabilizes into a binding convention, the rule is written in `waytide/local/rules/`, and that rule is the observation's result. The observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. Nothing else about the observation changes: what it says stays as written, as the discovery record, and its state stays `Recorded`.
+**An observation is not promoted.** Where the thinking it records stabilizes into a binding convention, the rule is written in `waytide/local/rules/` the way any rule is written. The observation is not changed by it. It takes no line naming the rule, and its state stays `Recorded`. It stays as written, as the discovery record.
 
 **So the the-items-directory-holds-one-file-per-item rule needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
 ## The shape
 
-- **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method or definition the engineer has not ratified as a convention. When in doubt between a rule and an observation, prefer an observation — promoting later is cheap, retracting a premature rule is not.
+- **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method or definition the engineer has not ratified as a convention. When in doubt between a rule and an observation, prefer an observation — writing a rule later is cheap, retracting a premature rule is not.
 - **Format:** the same frontmatter-free markdown as rules — a `# <title>`, a `**State:** Recorded` line, a `**Tags:**` line carrying `[observation]`, then the content in prose. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule) and ends `-RECORDED`.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
-- **Promotion:** write the rule in `waytide/local/rules/`, naming the observation it came from. Add the `**Promoted to:**` line to the observation, and add a `waytide/local/logs/log/` entry for the promotion. Leave the rest of the observation as written.
 - **Recording one:** add the file, and add a matching one-line entry to `waytide/local/logs/log/` noting it was recorded as an observation, and why it is not yet a rule.
 
 **Why:** discovery produces valuable thinking before it is ready to be binding, and a place for non-binding hypotheses keeps that thinking without prematurely imposing it as a rule.
@@ -40,7 +39,7 @@ Giving an observation the **eight states every other item takes** was the cost o
 
 **How to apply:** record an in-progress hypothesis or unratified method here, tagged `[observation]`, with `**State:** Recorded` and a filename ending `-RECORDED`. Write no `**Why this state:**` line. Never change the state.
 
-Write a later observation where the thinking moves, and leave the earlier one as written. Promote it by writing the rule elsewhere, and add to the observation only the line naming that rule.
+Write a later observation where the thinking moves, and leave the earlier one as written. Where a rule is written from the same thinking, leave the observation as written too.
 
 ## Compressed
 
@@ -64,9 +63,9 @@ Lines 1–6 below are the opening statements, which come before any section head
 7. An observation that no longer holds is not retracted.
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
-10. Promotion is not a state change.
-11. When an observation stabilizes into a binding convention, write the rule in `waytide/local/rules/`.
-12. When the rule is written, the observation takes one added line naming it, `**Promoted to:** the <name> rule`, under its `**Tags:**` line. The rule is its result. Everything else stays as it is, as the discovery record.
+10. An observation is not promoted.
+11. Where the thinking stabilizes into a binding convention, write the rule in `waytide/local/rules/` the way any rule is written.
+12. Do not change the observation. It takes no line naming the rule.
 13. The the-items-directory-holds-one-file-per-item rule needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
 ## The shape
@@ -80,15 +79,11 @@ Lines 1–6 below are the opening statements, which come before any section head
 7. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule).
 8. The filename ends `-RECORDED`.
 9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
-10. **Promotion:** write the rule in `waytide/local/rules/`.
-11. Name the observation in the rule, and add the `**Promoted to:**` line to the observation.
-12. Add a `waytide/local/logs/log/` entry for the promotion.
-13. Leave the rest of the observation as written.
-14. **Recording one:** add the file.
-15. Add a matching one-line entry to `waytide/local/logs/log/`.
-16. The entry notes that it was recorded as an observation, and why it is not yet a rule.
-17. Never change an observation's state.
-18. Where the thinking moves, write a later observation and leave the earlier one as written.
+10. **Recording one:** add the file.
+11. Add a matching one-line entry to `waytide/local/logs/log/`.
+12. The entry notes that it was recorded as an observation, and why it is not yet a rule.
+13. Never change an observation's state.
+14. Where the thinking moves, write a later observation and leave the earlier one as written.
 
 ## Compression
 
@@ -99,8 +94,11 @@ Lines 1–6 below are the opening statements, which come before any section head
 - 2026-10-28, revised: the one state is `Recorded`, not `Stated`, a term the engineer settled; not checked
 - 2026-10-29, merge from master re-checked: 31 directives, 31 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-10-30, revised: lapsed is renamed obsolete; checked: 27 directives, 27 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: promotion removed; checked: 22 directives, 20 kept, 1 less precise, 1 lost, 0 repairs. Left as they are: the less precise one lacks only the reason the observation stays as written, that it is the discovery record, and the lost one is the STE meaning of `RECORD (v)`, a reason for the state's word. The compressed text carries no reasons
 
 ## History
+
+Until Fri Nov 6 2026 an observation could be promoted to a rule. The rule was written naming the observation, the observation took a `**Promoted to:** the <name> rule` line under its `**Tags:**` line, and a log entry recorded the promotion. `/observation promote` and `/observe promote` carried the act.
 
 Until Fri Oct 30 2026 the state word Obsolete was Lapsed.
 
@@ -115,7 +113,7 @@ Until Thu Oct 29 2026 this rule was named an-observation-is-a-working-hypothesis
 Related:
 
 - the the-items-directory-holds-one-file-per-item rule — the eight states an observation does not take, and the state requirement it satisfies
-- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — where a promoted observation's rule goes
+- the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule — where a rule goes
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the `-RECORDED` filename suffix
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule — the entry that records one
 
@@ -153,3 +151,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:22:19 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT

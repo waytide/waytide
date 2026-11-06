@@ -4,11 +4,10 @@
 OBSERVATION(1)                 Waytide Manual                 OBSERVATION(1)
 
 NAME
-     observation - record a working hypothesis, and promote it to a rule
+     observation - record a working hypothesis
 
 SYNOPSIS
      /observation [new]
-     /observation promote
      /observation help
 
      /item observation, /observe
@@ -25,16 +24,12 @@ DESCRIPTION
 
 SUBCOMMANDS
      new             Record an observation. A bare /observation does this.
-     promote         Write a rule from a settled observation. The rule
-                     names the observation, and the observation gains a
-                     line naming the rule. Nothing else in it changes.
 
 EXAMPLES
      /observation Most abandoned carts are left at the shipping step
 
 FILES
      local/items/<UTC timestamp>-<name>-RECORDED.md
-     local/rules/<UTC timestamp>-<name>.md     (a promoted rule)
 
 SEE ALSO
      /item, /freewrite

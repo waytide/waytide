@@ -37,7 +37,6 @@ ITEMS
 
   /item help                       Print this command's help
 
-  /observation promote             Promote an observation to a rule
   /observation help                Print this command's help
 
   A bare /idea is /idea new. A bare /observation is /observation new.

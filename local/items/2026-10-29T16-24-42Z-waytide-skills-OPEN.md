@@ -252,6 +252,10 @@ The skills are built, in the feature's first phase, and this item falls behind t
 - `/ete` says the previous answer, or the text typed, in Eventide Technical English.
 - A skill name may end in `?`. `/next?` loads and runs, which settles the question the process amendment left open.
 
+## Amended — 2026-11-06: no promotion
+
+An observation is not promoted to a rule. `/observation promote` and `/observe promote` are removed, and `Promote observation to rule` is not a command. An observation takes no command beyond the one that records it.
+
 ## History
 
 As the engineer first stated it: "Idea: Waytide skills"
@@ -365,3 +369,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 6:23:06 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:25 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:20:03 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:47:11 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT

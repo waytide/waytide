@@ -64,7 +64,7 @@ SUBCOMMANDS
 KINDS
      [idea]          The default, for an item with no other tag.
      [observation]   A working hypothesis, not yet binding. Its state is
-                     always Recorded, and it may be promoted to a rule.
+                     always Recorded.
      [work]          A piece of work to be done. It ends Done.
      [plan]          A sequence of work, with tasks stating behavior and
                      no code.

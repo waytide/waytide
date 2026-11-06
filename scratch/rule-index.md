@@ -73,7 +73,7 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
 | 23 | The items directory holds one file per item | `the-items-directory-holds-one-file-per-item` | on-demand | When creating an item, changing an item's state or content, or answering against what an item settled |
-| 24 | An observation is a working hypothesis whose one state, Recorded, never changes | `an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes` | on-demand | When recording, revising, or promoting an observation in waytide/local/items/ |
+| 24 | An observation is a working hypothesis whose one state, Recorded, never changes | `an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes` | on-demand | When recording or revising an observation in waytide/local/items/ |
 | 25 | An item that sequences work contains no code samples | `an-item-that-sequences-work-contains-no-code-samples` | on-demand | When writing or revising an item in waytide/local/items/ that sequences work |
 | 26 | A design section documenting a package dependency is titled "Package Dependency" | `a-design-section-documenting-a-package-dependency-is-titled-package-dependency` | on-demand | When writing a section of a [design] item that documents a dependency on a package |
 

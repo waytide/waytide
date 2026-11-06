@@ -9,6 +9,10 @@ Both would record an observation, a working hypothesis whose one state, Recorded
 
 **Not yet settled:** whether `/thought promote` promotes an observation to a rule, as `/observation promote` does, and whether `/freewrite thought` follows.
 
+## Settled
+
+- **2026-11-06** — An observation is not promoted, so `/thought` takes no `promote` subcommand. Whether `/freewrite thought` follows is still open.
+
 ## History
 
 As the engineer first stated it: "Iead: a "/thought" alias and "/item thought" alias for observation"
@@ -16,3 +20,4 @@ As the engineer first stated it: "Iead: a "/thought" alias and "/item thought" a
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 12:00:03 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
