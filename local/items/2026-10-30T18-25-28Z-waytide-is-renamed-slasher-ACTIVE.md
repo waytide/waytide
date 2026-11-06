@@ -16,6 +16,7 @@
 
 - **2026-11-03** — The product's main domain is `slasher.bot`.
 - **2026-11-03** — `slasher.sh` serves the installer, as in `curl -fsSL slasher.sh | sh`. Every other path on it redirects permanently to `slasher.bot`.
+- **2026-11-06** — The rename reaches the prose, the project paths such as `waytide/system/` and `waytide/local/`, the machine configuration under `~/.config/waytide/` and `~/.local/share/waytide/`, and the GitHub organization and repositories.
 
 ## History
 
@@ -29,3 +30,4 @@ Authored by Scott Bellware on Fri Oct 30 2026 at 11:25:28 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 11:49:57 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 12:09:14 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:05:34 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:43:30 PM PT
