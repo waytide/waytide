@@ -29,6 +29,7 @@
 - **2026-11-06** — Participation: Unattended, selected by the engineer. Agent's confidence 80%, risk of redo 20%, It'll work 90%, Your approval 80%. The warning was not shown, and no option was recommended.
 - **2026-11-06** — The plan is accepted, selected by the engineer. The work is prose files only, and no test is written for it, under the design-by-efferent-does-not-govern-content-work local rule.
 - **2026-11-06** — The feature is Completed, at the engineer's direction, and merged into `master`.
+- **2026-11-06** — The branch `feature/sup-alias` is deleted, selected by the engineer.
 
 ---
 
