@@ -184,7 +184,7 @@ Trigger: When the engineer asks for a list of records, as with `/item list`, `/l
 4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
 5. Every column after the handle has a heading.
 6. Two SHA columns come right after the handle: the commit that created the record, then the last commit to touch it. A list of items takes no SHA columns, and opens with an ordinal ahead of the handle, which the engineer refers to a row by. The ordinal counts from 1, in the order the rows are printed.
-7. These two SHA columns are always present. They are not chosen per request.
+7. These two SHA columns are always present, in every list but a list of items or a list of commits. They are not chosen per request.
 8. After the SHA columns comes the title. Then comes one column for the fact asked about.
 
 ```
@@ -219,7 +219,9 @@ A list of items takes the ordinal and no SHA columns:
 
 1. `/current` lists the current items, then the current implementations.
 2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
-3. Present each current implementation as one row: its handle, its title, and its state. Give it no ordinal and no SHA columns.
+3. Present each current implementation as one row: its handle, its title, and its state. The title is the record's own, as in `Feature — The current command`. Give it no ordinal and no SHA columns.
+4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
+5. In the items table `/current` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
 
 ## Keep every column short
 

@@ -42,7 +42,17 @@ A list of items takes the ordinal and no SHA columns:
 
 **`/current` lists the current items, then the current implementations.** The items are the ones `current` asks for, Open and Active. The implementations are the features and experiments whose `**State:**` line reads Active or Suspended: the ones that have not concluded, whether they are under way or paused.
 
+**The items table printed by `/current` takes a kind column, between the title and the state.** It names the kind each of the item's tags gives, written as a word, not as a tag: *Idea* for `[idea]`, *Work* for `[work]`, and *Legal matter* for `[legal-matter]`. Where the item carries several tags, it names each, separated by commas. Other lists of items take no kind column unless it is asked for.
+
+**As the engineer stated it:** Include the item kind in the table printed by "/current"
+
+**As the engineer stated it:** Don't print the kind as its tag. eg: for "[idea]", print in the table, "Idea"
+
 **Each current implementation is one row: its handle, its title, and its state.** Its title is the record's own, as in `Feature — The current command`. It takes no ordinal and no SHA columns, since the list is a summary below the items, not a list of its own.
+
+**Where no implementation is current, the summary is one line: *No current feature or experiment.*** It is printed under the summary's heading, in place of the rows.
+
+**As the engineer stated it:** No current feature or experiment.
 
 **As the engineer stated it:** Change current-items to current, and include a summary of current implementations at the bottom.
 
@@ -76,7 +86,7 @@ Keep every column short. Where a field runs to a sentence, use rows instead.
 4. The handle is the ISO-8601-UTC filename prefix for a working-state artifact, or the short SHA for a commit.
 5. Every column after the handle has a heading.
 6. Two SHA columns come right after the handle: the commit that created the record, then the last commit to touch it. A list of items takes no SHA columns, and opens with an ordinal ahead of the handle, which the engineer refers to a row by. The ordinal counts from 1, in the order the rows are printed.
-7. These two SHA columns are always present. They are not chosen per request.
+7. These two SHA columns are always present, in every list but a list of items or a list of commits. They are not chosen per request.
 8. After the SHA columns comes the title. Then comes one column for the fact asked about.
 
 ```
@@ -111,7 +121,9 @@ A list of items takes the ordinal and no SHA columns:
 
 1. `/current` lists the current items, then the current implementations.
 2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
-3. Present each current implementation as one row: its handle, its title, and its state. Give it no ordinal and no SHA columns.
+3. Present each current implementation as one row: its handle, its title, and its state. The title is the record's own, as in `Feature — The current command`. Give it no ordinal and no SHA columns.
+4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
+5. In the items table `/current` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
 
 ## Keep every column short
 
@@ -134,6 +146,7 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-10-29, merge from master re-checked: 25 directives, 25 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-11-02, revised: a list of items is asked for by state, and current is Open and Active; checked: 29 directives, 29 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the current command lists the current items, then the current implementations; checked: 38 directives, 38 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: where no implementation is current, the summary says *No current feature or experiment.*, and the items table of `/current` takes a kind column, written as a word rather than a tag; checked: 41 directives, 38 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 41 directives, 40 kept, 1 less precise, 0 lost, 1 repair; re-checked after the kind is written as a word: 43 directives, 43 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -186,3 +199,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 1:46:43 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:44 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:17:13 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:33:13 AM PT
