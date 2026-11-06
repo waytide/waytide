@@ -92,17 +92,12 @@ PHASE
                                    not realized)
   /phase inconclusive              -> Inconclusive
 
-  /phase help                      Print this command's help
-
   Whether a phase reaches a verdict is chosen for each phase,
   when it is added.
 
-PHASES
-  Phases split a feature or an experiment into steps, run one at a time, each on
-  its own sub branch.
-
   /phases                          List the phases, the current one emphasized
-  /phases help                     Print this command's help
+
+  /phase help                      Print this command's help
 
 NEXT
   These commands move the work under way along: take its next step, or say what
