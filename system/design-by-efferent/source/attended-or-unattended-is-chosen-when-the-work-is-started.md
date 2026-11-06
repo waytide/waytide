@@ -32,7 +32,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 **The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
@@ -61,7 +61,7 @@ Above 70%, the question carries no warning, and neither option is marked. The en
 
 **Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Human in the loop** is a phrase an engineer knows before meeting this system, and it is the whole of what the decision settles.
 
-**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names only what the agent does, because under it the engineer has no part after the plan. It says the plan comes first, so the engineer knows, while choosing, that they will see the intended path before any work is done.
+**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names what the agent does, and the one part left to the engineer: accepting the plan. After that, the engineer has no part. Naming the plan tells the engineer, while choosing, that they will see the intended path, and accept it, before any work is done.
 
 **The vocabulary is not being avoided, only deferred.** The hinges are named the moment the loop reaches the first one, where the engineer sees an actuation rather than a definition.
 
@@ -90,6 +90,8 @@ Above 70%, the question carries no warning, and neither option is marked. The en
 
 **This is the one cheap moment of attention in a big-batch arrangement.** Unattended spends no attention until the end, and a wrong turn is found with everything built on top of it. A plan read before the work costs one reading and can move the whole path.
 
+**The agent generates only once the engineer accepts the plan.** It presents the plan and waits. If the engineer does not accept it, the agent revises it as the engineer directs and presents it again. This acceptance is the one wait in unattended work. It is put where a wait costs least, before anything is built.
+
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
 **Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
@@ -104,11 +106,11 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent shows you its plan first. Then it decides and generates through.* as the options. Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent makes the decisions and generates through if you accept the plan it'll propose.* as the options. Name no hinge in the question or in an option.
 
 Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
-**When unattended, present the plan as a list before generating, and write it in ETE.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
+**When unattended, present the plan as a list before generating, write it in ETE, and wait for the engineer to accept it.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
 ## Compressed
 
@@ -138,7 +140,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
@@ -163,7 +165,10 @@ with these options:
 29. Name the hinges when the loop reaches the first one, not before.
 30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
 31. That confirmation records what was chosen, when, and by whom.
-32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form:
+
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
 33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
 34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
 35. Under unattended work, each cycle records its hinge, and what was decided and why.
@@ -175,16 +180,18 @@ with these options:
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan. Do not present one for it.
-3. The plan is a list.
-4. Use an ordered list where each step rests on the one above it.
-5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
-7. Use short sentences and active voice in the plan.
-8. Use no semicolon in the plan.
-9. Put one idea in each list item.
-10. Present the plan in the response.
-11. Do not write the plan to a file. It is not a `foundation` planning record.
+2. Do not generate until the engineer accepts the plan.
+3. If the engineer does not accept the plan, revise it as the engineer directs, and present it again.
+4. Attended work needs no plan. Do not present one for it.
+5. The plan is a list.
+6. Use an ordered list where each step rests on the one above it.
+7. Use a bullet list where the steps are independent.
+8. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+9. Use short sentences and active voice in the plan.
+10. Use no semicolon in the plan.
+11. Put one idea in each list item.
+12. Present the plan in the response.
+13. Do not write the plan to a file. It is not a `foundation` planning record.
 
 ## Compression
 
@@ -195,6 +202,7 @@ with these options:
 - 2026-11-06, revised: the risk of redo added, as the engineer directed; checked: 57 directives, 57 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the figures recorded in the start confirmation, as the engineer directed; checked: 58 directives, 58 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-11-06, revised: the Unattended option says the plan comes first, as the engineer directed; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-11-06, revised: unattended work waits for the engineer to accept the plan, and the Unattended option says so, as the engineer directed; checked: 61 directives, 61 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the Unattended option's words then set by the engineer, and *approve* made *accept* to match, not re-checked
 
 ## History
 

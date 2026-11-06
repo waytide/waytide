@@ -51,6 +51,10 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The question carries a *Risk of redo* line after the agent's confidence, as the engineer directed. It is 100% minus the agent's confidence, computed rather than estimated.
 - **2026-11-06** — The start confirmation records the four figures the question showed, and whether the warning was shown, beside the participation selection, as the engineer directed.
 - **2026-11-06** — The Unattended option tells the engineer that the agent shows its plan first: *The agent shows you its plan first. Then it decides and generates through.*, as the engineer directed. The wording is the agent's.
+- **2026-11-06** — The Unattended option reads *The agent decides and generates through if you approve its plan.*, in the engineer's words. Unattended work now waits for the engineer to approve the plan before it generates, and an unapproved plan is revised as the engineer directs and presented again.
+- **2026-11-06** — The Unattended option reads *The agent decides and generates through if you approve the plan it'll propose.*, in the engineer's words.
+- **2026-11-06** — The Unattended option reads *The agent makes the decisions and generates through if you approve the plan it'll propose.*, in the engineer's words.
+- **2026-11-06** — The Unattended option reads *The agent makes the decisions and generates through if you accept the plan it'll propose.*, in the engineer's words. The rule's prose says *accept* for the plan to match.
 
 ---
 

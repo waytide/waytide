@@ -147,7 +147,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
@@ -172,7 +172,10 @@ with these options:
 29. Name the hinges when the loop reaches the first one, not before.
 30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
 31. That confirmation records what was chosen, when, and by whom.
-32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended.
+32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form:
+
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+
 33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
 34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
 35. Under unattended work, each cycle records its hinge, and what was decided and why.
@@ -184,16 +187,18 @@ with these options:
 ## Unattended presents a plan before it generates
 
 1. Under unattended work, present a plan before generating.
-2. Attended work needs no plan. Do not present one for it.
-3. The plan is a list.
-4. Use an ordered list where each step rests on the one above it.
-5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
-7. Use short sentences and active voice in the plan.
-8. Use no semicolon in the plan.
-9. Put one idea in each list item.
-10. Present the plan in the response.
-11. Do not write the plan to a file. It is not a `foundation` planning record.
+2. Do not generate until the engineer accepts the plan.
+3. If the engineer does not accept the plan, revise it as the engineer directs, and present it again.
+4. Attended work needs no plan. Do not present one for it.
+5. The plan is a list.
+6. Use an ordered list where each step rests on the one above it.
+7. Use a bullet list where the steps are independent.
+8. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+9. Use short sentences and active voice in the plan.
+10. Use no semicolon in the plan.
+11. Put one idea in each list item.
+12. Present the plan in the response.
+13. Do not write the plan to a file. It is not a `foundation` planning record.
 
 # Each hinge displays the actuation as its anchor, and the contexts once
 
