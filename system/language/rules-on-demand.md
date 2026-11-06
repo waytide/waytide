@@ -1,11 +1,22 @@
+# Clarify rewrites the previous answer twice
+
+Source: system/language/source/clarify-rewrites-the-previous-answer-twice.md
+
+Trigger: When the engineer asks for an answer to be clarified, as with `/clarify`
+
+1. `/clarify` rewrites the previous answer more plainly, then rewrites that once more. Show only the second rewrite.
+2. Each rewrite follows the a-response-is-clarified-twice-before-it-is-sent rule: the point first, in a sentence or two of plain words, then only the few facts the engineer needs to understand the answer and decide. Leave out figures, file names, method detail, and caveats unless the answer turns on them.
+3. The first pass clears out what the answer did not need. The second is written for the person reading it, to be understood at once, with little work.
+4. The clarified answer says the same thing: no new claim, no decision dropped, no fact changed. Where the previous answer asked a question through the selection interface, ask it again through the selection interface.
+
 # A word is reserved in six steps
 
 Source: system/language/source/ete/a-word-is-reserved-in-six-steps.md
 
-Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
+Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `/reserve X`)
 
 1. Reserve a word by following these six steps in order, every time a word is reserved.
-2. The instruction that starts the sequence is "Waytide reserves the word, X". It names the word and asks for all six steps.
+2. The instruction that starts the sequence is "Waytide reserves the word, X", or the command `/reserve X`. It names the word and asks for all six steps.
 3. The sequence does not have to be spelled out each time a term is settled.
 4. Write the verb as `reserves`, and never `claims`.
 5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.
@@ -24,7 +35,7 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X")
 18. Step 5: use an ETE category only where no STE category holds the word.
 19. Do not reach step 5 until an STE category has been tried and refused.
 20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
-21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
+21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved.
 22. The entry gives the definition.
 23. The engineer decides the term's category, because a term is a design decision.
 24. Put the category to the engineer through the selection UI.
@@ -113,3 +124,24 @@ Trigger: When reserving a word as a technical noun or verb in a package's vocabu
 17. Use the STE dictionary's approved meaning where it serves.
 18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
 19. Reserve the word in an ETE category only where neither serves.
+
+# Ordinary vocabulary is not reserved and not rewritten
+
+Source: system/language/source/ete/ordinary-vocabulary-is-not-reserved-and-not-rewritten.md
+
+Trigger: When reserving a word, or writing or revising a vocabulary entry
+
+1. ETE conforms its terminology to the STE dictionary. It does not conform its ordinary vocabulary.
+2. This departs from STE Rule 1.1, which admits only approved words, technical nouns, and technical verbs.
+3. What a word names decides which side of the line it falls on.
+4. A word that names something in the subject field is terminology. It is either reserved or rewritten.
+5. A word that does a sentence's grammatical work, joins two statements, or qualifies one is ordinary vocabulary.
+6. Example: `branch` is terminology. `under` is not.
+7. Words such as `as`, `every`, `never`, `under`, `would`, `already`, and `may` are ordinary vocabulary. They are not technical nouns or verbs in any category.
+8. Do not reserve an ordinary-vocabulary word. Reserving it puts a false claim of conformance in a vocabulary. A vocabulary carries no false claim of conformance.
+9. Do not rewrite prose to replace an ordinary-vocabulary word.
+10. To apply this rule, ask what a refused word names.
+11. Reserve the word in a category where it names something in the subject field.
+12. Rewrite the prose where an approved word says the same thing.
+13. Leave the word in place where it is ordinary vocabulary.
+14. Record no entry for an ordinary-vocabulary word.

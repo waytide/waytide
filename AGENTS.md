@@ -8,11 +8,11 @@ The rule packages live at the top level of `system/`: `system/foundation/`, `sys
 
 Read `system/foundation/` first. It defines the system. The rules override default behavior where they conflict. Explicit user instructions still win.
 
-**The session-start notice is printed by the harness, not by you — do not print one.** A `SessionStart` hook in `.claude/settings.json` runs `system/foundation/session-start.sh`. That script reads the package directories actually present and emits the `Waytide installed at system/ — N packages: …` notice. The notice closes with a line telling the engineer to type `load waytide`. That command asks for the read instruction the hook carries to be acted on now.
+**The session-start notice is printed by the harness, not by you — do not print one.** A `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs `system/foundation/session-start.sh`. It prints the startup display ahead of the notice. `compile.sh` assembles the plugin here, and `.claude/settings.json` carries only the status line. That script reads the package directories actually present and emits the `Waytide installed at system/ — N packages: …` notice. The startup display's last line, after it, tells the engineer the rules load on the first prompt, or to type `/load`, the skill of the `load rules` command. That command asks for the read instruction the hook carries to be acted on now.
 
 `system/foundation/statusline.sh` keeps the system's presence in the status line for the rest of the session. It sits beside the working directory, the branch, and any uncommitted, untracked, or unpushed work. Neither can be silenced.
 
-In a consuming project `install.sh` places the equivalent `.claude/settings.json`. Here in the source it is committed like this file.
+In a consuming project `install.sh` places the plugin and the equivalent `.claude/settings.json`. Here in the source both are committed like this file.
 
 The `local/` directory holds this project's own working state. That is `logs/`, `items/`, `implementations/`, and `migration/`. They are worked with as their conventions describe, not read as binding rules at session start. **`logs/` groups the contemporaneous, historical records** — `logs/log/`, `logs/loops/`, and `logs/work-sessions/` — which sat directly under `local/` until 2026-08-18. **The deferred queue is gone** — work postponed mid-task is an ordinary item carrying a `**Waits for:**` line, and the queue's convention, its reserved tag, its session-start print, and its command were all suspended on 2026-08-25.
 
@@ -39,3 +39,5 @@ Changed by Scott Bellware on Tue Aug 18 2026 at 4:41:26 PM PT
 Changed by Scott Bellware on Mon Aug 24 2026 at 11:14:28 PM PT
 Changed by Scott Bellware on Mon Oct 12 2026 at 1:00:17 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 3:52:10 PM PT
+Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:34 PM PT

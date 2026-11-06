@@ -93,6 +93,7 @@ Until 2026-08-16 the suffix was also appended to the file's contents.
 Until Tue Oct 27 2026 live artifacts that cited a record by its full filename were reconciled at each rename. The engineer settled that a reference omits the state suffix and keeps the rest of the filename, so a state change breaks no reference.
 
 Until 2026-10-26 an implementation record took no suffix while its work was under way, since the absence of a state line was its in-progress state. Items had stopped taking an absent state on 2026-08-16, when **Active** was added. The engineer settled that implementations take the Active state too, so every item and every implementation record now carries a suffix.
+- **Thu Oct 29 2026** — the tag for a piece of work to be done was `[work-item]`, and the record was called a work item. It is `[work]`, at the engineer's direction.
 
 Related:
 
@@ -133,3 +134,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:34:26 AM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT

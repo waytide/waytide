@@ -1,3 +1,18 @@
+# A command takes its subcommand first, asks when it has none, and always takes help
+
+Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help.md
+
+Trigger: When running or writing a Waytide slash command
+
+1. A Waytide command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
+2. With no subcommand, the command asks which one is meant, through the selection interface, unless its help gives the bare command a meaning of its own, as a bare `/journal` writes an entry.
+3. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
+4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
+5. Every root command takes `help`, which prints that command's part of the help text.
+6. `help` is always the subcommand, never an argument. `/reserve help` prints help, and does not reserve the word "help".
+7. A subcommand that is not the command's own is not guessed at. The command says so, and asks which one is meant, through the selection interface. Where the command's help gives it words of its own, as `/log <message>` does, a first word that is not a subcommand starts those words. `/log The cart keeps its contents for 30 days` writes that entry, and `/log summary` still summarizes.
+8. A command's skill only reads the words typed, and hands the act to the rule that governs it. That rule says what the act is. This rule does not, and governs only how a command is typed and how its words are read.
+
 # A date in a record's title is written as the day, the date, and the 24-hour time
 
 Source: system/foundation/source/a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time.md
@@ -147,18 +162,21 @@ Trigger: When writing a log entry that records a decision
 
 Source: system/foundation/source/a-phase-starts-by-stating-its-goal.md
 
-Trigger: When starting a phase of an experiment or a feature
+Trigger: When starting a phase of an experiment or a feature, or when the engineer asks for the current phase or the list of phases, as with `/experiment status` or `/feature status`
 
 1. At the start of an experiment's or a feature's phase, state the phase's goal to the engineer, before its work, in the response that starts it.
 2. The goal is the phase's question or intent, whichever it has, whatever the kind. For a question, it is what the phase is to establish. For an intent, it is what the phase is to build. Say how it serves the implementation's question or intent.
 3. List the implementation's phases with it, in the order the record names them, and mark the current phase, so the engineer sees which phases are done and which are still to come.
 4. State the goal and the list at each phase's start, not only when the record is written. The record's naming of the phases, and a phase's forecast, do not stand in for them.
+5. When the engineer asks for the current phase, as with `/phase` or `/phase current`, print its goal and its branch.
+6. When the engineer asks for the phases, as with `/phases`, list them in the record's order, with the current phase emphasized.
+7. `/experiment status` and `/feature status` print the phases in the record's order, the current one emphasized, and the current phase's goal. Without phases, they print the implementation's question or intent, and its state.
 
 # A printed list of records is formatted as a table or as a list of rows
 
 Source: system/foundation/source/a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows.md
 
-Trigger: When the engineer asks for a list of records
+Trigger: When the engineer asks for a list of records, as with `/item list` or `/list`
 
 1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with its fields in sequence and no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
@@ -191,6 +209,11 @@ A list of items takes the ordinal and no SHA columns:
 12. A list of commits asked about for their subject widths takes the width.
 13. Do not add a column nobody asked for.
 14. A list of commits takes no SHA columns.
+
+## Listing items by state
+
+1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
+2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
 
 ## Keep every column short
 
@@ -258,7 +281,7 @@ Trigger: When adding a tag to a record or a list item
 4. Write a tag lower-case in square brackets, with dashes between words: `[legal-matter]`.
 5. Tags are optional and freeform. Add one when it is useful.
 6. Nothing checks tags, and there is no fixed list.
-7. Some tags have lifecycle states, such as `[experiment]`, `[feature]`, `[observation]`, and `[work-item]`. Each one's own rule states its states.
+7. Some tags have lifecycle states, such as `[experiment]`, `[feature]`, `[observation]`, and `[work]`. Each one's own rule states its states.
 
 # A rule's compressed text is written in its source, checked against it, and its figures recorded below the body
 
@@ -310,85 +333,11 @@ Trigger: When editing a source rule's body, or writing, revising, or checking a 
 15. The process that compresses, revises, or checks the text writes the figures, in the same commit.
 16. The package's rules file carries no figures. They stay in the source.
 
-# A status report prints a fixed whole-project report
-
-Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-report.md
-
-Trigger: When the engineer asks for a status report, or when giving any summary of where the project stands
-
-1. When the user asks for a **status report** (or "project status"), produce a report with the five parts below, in order.
-2. The report reads the project's planning records. These are the items that carry the work's tasks, whatever the project's kind tags name them.
-3. Identify those records without naming a directory or a kind.
-4. Part 1, **Task table**: the tasks those records carry, as a table of number, task, status (done / next / pending), and a terse note.
-5. Mark the next task in the task table.
-6. Include any out-of-sequence extras already built in the task table.
-7. Part 2, **Waiting work table**: the items carrying a `**Waits for:**` line, with name, date, what it waits for, and a one-line gist.
-8. Waiting items are off the task line until the wait ends.
-9. Order waiting items by their `**Priority:**` rank where they carry one.
-10. Do not list a hidden record in the waiting work table.
-11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
-12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
-13. The map shows that `waytide/local/rules/` holds the project's own local rules.
-14. The map states that both are binding and both are read at session start.
-15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
-16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
-17. The orientation says how to work with the directory. Rules are enforceable conventions.
-18. The log is title-only ISO-8601-UTC decision entries.
-19. A rule typically pairs with a log entry.
-20. An item holds the task checklist where it sequences work.
-21. A `**Waits for:**` line marks work that is not yet actionable.
-22. Part 4, **Recent flows of work**: a brief of the recent direction, drawn from the latest log and commit entries.
-23. Keep the brief to a few lines, not an exhaustive list.
-24. Part 5, **Test suite**: this part is convention-aware of the testing package.
-25. If the project has adopted the testing conventions, run the suite and report the count and pass/fail line.
-26. Report the suite's context tree two levels deep, rendered hierarchically.
-27. Each distinct top-level context is a tree root. Its distinct second-level contexts are indented as its branches.
-28. Use an indented tree, such as a fenced block with `├─`/`└─` branches.
-29. Stop at two levels. Do not descend into per-assertion contexts.
-30. If the project has not adopted the testing conventions, degrade this part. Report whatever suite the project has, with its count and pass/fail.
-31. If the project has no suite, note that there is none.
-
-## A hidden record is counted rather than listed
-
-1. A hidden record is one a report states the number of and does not otherwise show.
-2. Omit a hidden record from the table or passage it would ordinarily sit in.
-3. Put a line there giving the count and the kind.
-4. The line says no more than that. It carries no *not listed*, no *withheld*, and no explanation.
-
-```
-3 suspended items
-12 suspension log entries
-```
-
-5. Hiding applies to any summary of the project's state, not only the fixed status report.
-6. That includes the *Recent flows of work* brief in part 4 and any ad-hoc account of where things stand.
-7. A record hidden from one surface is hidden from all of them.
-8. Two kinds are hidden today.
-9. A record whose `**State:**` line reads `Suspended` is hidden.
-10. A record carrying the `[suspended]` tag is hidden. That is a log entry, per the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule.
-11. The two are different records, hidden for the same reason, and take the same treatment. Do not merge them.
-12. A later rule may name another kind, and it becomes hidden by saying so.
-13. The treatment is fixed: counted, not listed, and named by kind in the count.
-14. Show hidden records when they are asked for.
-15. *Include the suspended items*, *show what is hidden*, or a request for a suspended record by name each produce the full listing.
-16. Never simply drop a hidden record. The count is what separates hiding from omitting.
-
-## The report is rendered from current state
-
-1. Keep each part tight.
-2. Read current state before printing.
-3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
-4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
-5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
-6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
-7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
-8. An unnamed test appears in the source and emits no line.
-
 # A suspension is a log entry tagged `[suspended]`, and nothing is moved
 
 Source: system/foundation/source/a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved.md
 
-Trigger: When the project stops doing something, such as removing a rule, procedure, or report
+Trigger: When removing a rule, procedure, or report
 
 1. When the project stops doing something, log it and tag the entry `[suspended]`. That is the whole act.
 2. Nothing moves to any directory. Nothing is kept beside the entry, and no copy is kept anywhere.
@@ -456,11 +405,62 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 3. A discontinuation's entry names the word and says it is not used.
 4. It does not narrate when the word was dropped or what carried it before.
 
+# A vocabulary file holds terms, substitutions, and discontinuations, and each word is approved or reserved
+
+Source: system/foundation/source/a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved.md
+
+Trigger: When writing, revising, or creating a `vocabulary.md` file
+
+1. This rule governs writing a vocabulary. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule governs using one.
+2. Give a package a vocabulary only when its domain has specialized words.
+3. A package whose subject is written in ordinary words has no vocabulary. The absence is correct, not missing.
+4. `git` and `ext/ruby-lang` have none. Six packages do.
+5. Put a term in the vocabulary of the package whose domain it belongs to.
+6. Put a domain-less term or substitution in `language`. Put a domain-specific substitution in its own package's vocabulary.
+
+## What a vocabulary holds
+
+1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
+2. A term is a glossary entry, and it says what the concept is.
+3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
+4. **Discontinuations** name a word removed from use with nothing in its place, because the concept went, as `discriminator` did.
+5. A substitution names two words. A discontinuation names one.
+6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
+7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+8. Where a word was taken rather than coined, the entry says so in its own prose.
+9. That statement is an **origin**, not a kind of entry.
+
+## Every word in a vocabulary is approved or reserved
+
+1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
+2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
+3. A reserved word is a technical noun or verb in a category its entry names: under STE Rule 1.5 for a noun the dictionary omits, STE Rule 1.6 for a noun it lists and refuses, STE Rule 1.12 for a verb, or an ETE category under the ete-declares-its-own-categories rule. The vocabulary that holds it is the approval STE Rule 1.8 requires.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
+6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, which is not reserved and not rewritten.
+7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
+
+## A project's own vocabulary is `waytide/local/vocabulary.md`
+
+1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
+2. It has the same shape as a package's `vocabulary.md`.
+3. It takes no datetime prefix. It is a structural file, not a dated decision. See the file-names rule.
+4. It is read at session start and binds, as the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says. That is why it sits beside `rules/`, not in a working directory.
+5. It is optional, and its absence is not a defect.
+6. Write no such file until there is a term to write.
+7. It is not a rule. Do not put it in `rules/`.
+
+## Saying how an entry relates to a general term
+
+1. Where a package narrows a term, its entry names the general term it narrows.
+2. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
+3. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
+
 # An implementation runs on a branch to a declared end
 
 Source: system/foundation/source/an-implementation-runs-on-a-branch-to-a-declared-end.md
 
-Trigger: When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation
+Trigger: When starting, adding a worktree to, suspending, or concluding an experiment or feature implementation
 
 1. An implementation runs on its own branch, designed through the five hinges by DBE, to a declared state.
 2. It is never left silently open.
@@ -488,15 +488,15 @@ Trigger: When starting, working within, adding a worktree to, suspending, or con
 
 1. An experiment or a feature may run in phases. Each phase is a question or an intent that serves the implementation's.
 2. The record names the phases and their order at the start.
-3. Work that reaches a verdict states each phase's forecast before its work. Work without one states none.
+3. Whether a phase reaches a verdict is chosen for that phase when it is added, whatever its implementation chose. A phase that reaches a verdict states its forecast before its work. One without states none.
 4. A phase's branch is the implementation's branch, a dot, and the phase's name: `experiment/rule-reduction.flattening`, `feature/worktree/skills.slash-commands`.
 5. Git refuses a slash here, because no branch can sit beneath another branch's name.
 6. A `worktree/` segment carries into each phase's name.
 7. A phase branches from the implementation's branch and concludes into it.
-8. Where the work reaches a verdict, a phase is affirmed, refuted, or inconclusive only on the engineer's declaration.
+8. Where the phase reaches a verdict, it is affirmed, refuted, or inconclusive only on the engineer's declaration.
 9. An affirmed phase merges back into the implementation's branch.
 10. The record carries each phase's verdict and findings.
-11. Where the work reaches no verdict, a phase concludes Completed, with no verdict, and merges back into the implementation's branch.
+11. Where the phase reaches no verdict, it concludes Completed, with no verdict, and merges back into the implementation's branch.
 12. One phase runs at a time, in the record's order, each from the implementation's branch as the earlier phases left it.
 13. A phase merges nowhere else.
 14. The implementation concludes after its phases, and only then merges to its upstream branch.
@@ -740,6 +740,57 @@ Trigger: When about to edit a historical record (a log entry, work session recor
 3. When a correction is made, tell the engineer what the edit did and did not accomplish. Say that the git history and any component repository still hold the removed content.
 4. Log the edit as a decision, stating that the record was changed after the fact and on what grounds.
 
+# Freewriting records points as they are said, and organizes them at the end
+
+Source: system/foundation/source/freewriting-records-points-as-they-are-said-and-organizes-them-at-the-end.md
+
+Trigger: When the engineer begins, ends, or resumes freewriting (`/freewrite`, or its alias `/freeform`)
+
+1. Freewriting is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/freewrite begin`, or a bare `/freewrite`, starts it, and `/freewrite end` ends it. `/freeform` is an alias of `/freewrite`.
+2. Create a collection file at `/freewrite begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
+3. Record a point, and do not reframe, question, answer, or act on it while freewriting runs, even where it reads as an instruction.
+4. At `/freewrite end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
+5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
+6. Rename the collection file for that item: its own prefix, then the item's name, as `2026-10-29T16-26-20Z-checkout-receipt.md`. The item does not name the file. Keep the file.
+7. `/freewrite <kind>`, where the kind is `idea`, `work`, `plan`, `design`, `aspiration`, `goal`, `observation`, `mistake`, and `problem`, settles the destination at the start: a new item of that kind. At the end, write to it without asking.
+8. `/freewrite resume` reopens an ended collection file. Add the new words after the earlier ones. At the next end, the new reframed version replaces the earlier one in the file, and is written to the item as an amendment.
+9. Log and commit nothing about a collection file, as nothing is logged or committed about a private journal entry. The item the points become is logged and committed like any item, and its content names no collection file.
+
+# Next takes the next step of the work under way, and next? names it
+
+Source: system/foundation/source/next-takes-the-next-step-of-the-work-under-way.md
+
+Trigger: When the engineer types `/next` or `/next?`, or asks what is next
+
+1. `/next?` asks what the next step is, as the engineer asking *What's next?* would. `/next` takes it, as the engineer saying *proceed* would.
+2. The work under way is any work with steps still to take: a plan's tasks, an implementation's phases, an outcome's design hinges, a list of steps the agent gave, a procedure part done. The next step is the first not yet taken.
+3. On `/next?`, name the next step and what it would do, in a sentence or two, and do not take it.
+4. On `/next`, take the next step and nothing beyond it, then stop.
+5. Follow the work the conversation is on. Where that is not clear, ask which, through the selection interface. Where no work is under way, say so.
+6. `/next` does not stand in for a decision a rule leaves to the engineer, such as affirming an experiment, committing on `master`, or deleting a branch. It brings the step to that decision, and asks it as the step's rule says.
+
+# Package refresh and install run foundation's scripts
+
+Source: system/foundation/source/package-refresh-and-install-run-foundations-scripts.md
+
+Trigger: When the engineer asks to refresh or install Waytide's packages, as with `/package refresh` or `/package install`
+
+1. `/package refresh [<package>...]` refreshes the installed packages from their repositories. Run foundation's `refresh-packages.sh` with the packages named, or none for every one. Report each package that moved and its changed rule files, as the script prints them.
+2. `/package install` installs Waytide into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
+3. Act only on the project the session is in. Refreshing or installing in another project is the engineer's to ask for there.
+4. Never run `/package install` in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
+5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load rules`.
+
+# Projects lists the machine's registry of Waytide projects
+
+Source: system/foundation/source/projects-lists-the-machines-registry-of-waytide-projects.md
+
+Trigger: When the engineer asks for the Waytide projects on this machine, as with `/projects`
+
+1. `/projects` lists the Waytide projects registered on this machine, from within any project. Run foundation's `read-consuming-projects.sh`, which reads `~/.config/waytide/consuming-projects.toml`, and print its report.
+2. Write no project's name into any file, and none into the project the session is in.
+3. List only. Do not change the registry, and act on no project listed. Where there is no registry, say so.
+
 # Record a rule's authorship in a provenance footer
 
 Source: system/foundation/source/record-a-rules-authorship-in-a-provenance-footer.md
@@ -784,7 +835,7 @@ Changed by <other name> on <datetime>
 
 Source: system/foundation/source/rules-may-establish-a-mindset-rather-than-a-mechanic.md
 
-Trigger: When writing, evaluating, placing, or reconciling conflicting rules
+Trigger: When writing or changing a rule file
 
 1. A rule's package names the surface it acts on, such as words, commits, tests, or code. It does not name the purpose the rule serves.
 2. Many rules exist to establish a mental stance, a way of thinking about the code and the work, rather than to standardize a mechanic.
@@ -803,6 +854,136 @@ Trigger: When writing, evaluating, placing, or reconciling conflicting rules
 15. Do not treat package membership as the whole of a rule's meaning.
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
+
+# The harness announces Waytide's installation, and the agent never prints the notice
+
+Source: system/foundation/source/the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice.md
+
+Trigger: When changing the session-start notice, the startup display, the status line, or their hooks or scripts
+
+1. The harness announces Waytide, through three surfaces it renders.
+2. The agent prints no notice, at session start or at any other time.
+3. An agent-printed copy would only duplicate the harness's.
+4. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+
+## The session-start notice
+
+1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+
+```
+Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
+3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
+```
+
+2. The install line enumerates what is on disk.
+3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
+4. Nothing prints a fixed list.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
+7. One that is Active, Suspended, or carries no state line is reported.
+8. With nothing open, the open line is absent.
+9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
+10. The notice has no close of its own. It ends with what it reports. The startup display's load line, after it in the same message, says when the rules load and that `/load` loads them now.
+11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
+12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
+13. The trade of observability for legibility is deliberate.
+14. The notice says `installed`, never `loaded`.
+15. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
+16. The read instruction describes what the session does next, and reports no read.
+17. Call it the session-start notice, not the load notice.
+18. The status line reports the system active, a claim about the configuration rather than the agent.
+19. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+20. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
+21. Put no quotation marks, and no lone backslash, in anything the hook emits.
+22. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
+23. A double quote ends the string, and a lone backslash begins an invalid escape.
+24. Either way the harness fails to parse the output, and the notice disappears with no error.
+
+## The read instruction
+
+1. The same hook carries the read instruction to the agent on a separate channel.
+2. The notice goes in `systemMessage`, for the engineer.
+3. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent and is never displayed.
+4. They are different texts for different readers.
+5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
+6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
+7. The hook carries the whole instruction, as the following points state.
+8. The instruction tells the agent to run `foundation/load-rules.sh` in one command and read its whole output. The loader's output is the read, so no rule file is read one by one.
+9. The loader prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `foundation/` first, then the local rules, the project's vocabulary, and the journal. It leaves out each package's `source/` and `README.md`.
+10. Its ON DEMAND section lists the rules it does not print, each with its trigger and the command that loads it. When the trigger's act comes up, the agent runs that command and follows the rule before acting.
+11. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and say that the absence of either is ordinary, not an error. Never name `local/` as a whole.
+12. Name the other working directories, as not read as binding rules at session start.
+13. Do not print the startup display.
+14. Print no package count.
+15. Then wait for the engineer's request.
+16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+17. The instruction carries the core rules after it, the rules `foundation/core-rules` names, each as the loader prints it, under a line saying they hold before the read, which still runs in full. The core holds only the rules that shape the first answer, so the whole of what the hook gives the agent stays within 10,000 characters, the most a hook can give. The hook escapes their quotation marks and backslashes.
+18. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
+
+## The status line
+
+1. `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+
+```
+waytide · master :: Waytide
+waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+```
+
+2. The repository name leads, in bold. The bold is a terminal escape sequence the harness passes through.
+3. The bold repository name is the only emphasis on the line.
+4. A middle dot separates the engineer's segments.
+5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
+6. The Waytide segment is one word, with no package count.
+7. Presence is read from disk, by the same README test the notice uses.
+8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
+9. `uncommitted changes` appears only when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
+10. It is words, not a mark like `master*`.
+11. `untracked files` names the case whose remedy differs: add or ignore, not commit.
+12. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
+13. Segments that can show together are named in words that read distinctly.
+14. `unpushed commits` appears when committed work exists only in this working copy. It carries no count and never reaches the network.
+15. It compares against the remote-tracking ref, so it reflects the last fetch.
+16. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
+17. An upstream missing by accident is a different fact, and is deliberately not folded into this segment.
+
+## The startup display
+
+1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
+3. The first prompt is when the read starts, whatever the prompt is.
+4. The agent does not print it.
+
+## Wiring
+
+1. The committed Slasher plugin, `.claude/skills/slasher/`, wires the notice and the display through its `SessionStart` and `UserPromptSubmit` hooks.
+2. A committed `.claude/settings.json` wires the status line, since a plugin cannot set the main status line.
+3. `install.sh` assembles the plugin and places `.claude/settings.json` in a consuming project.
+4. `install.sh` warns when git ignores `.claude/settings.json` or the plugin and the file is not tracked, and prints how to correct it.
+5. The fix is `.claude/*` with `!.claude/settings.json` and `!.claude/skills/`, since git cannot re-include a file inside an excluded directory.
+6. The fix keeps `.claude/settings.local.json` ignored.
+7. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too.
+8. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block, or the hook entries to remove where the file still runs the session-start scripts, and leaves the decision to the engineer.
+
+## There is no opt-out
+
+1. These surfaces exist so that a system read every session says so.
+2. The read instruction is emitted every session. Quieting a display never disables the mechanism that carries it.
+3. Add no opt-out, such as a variable that quiets these surfaces.
+
+## What this costs
+
+1. The mechanism works only where a harness loads a plugin from `.claude/skills/` and reads `.claude/settings.json`.
+2. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently.
+3. A setting that disables hooks silences it too.
+4. A newly placed plugin or `.claude/settings.json` may not take effect until the harness reloads.
 
 # The implementations directory holds one record per implementation
 
@@ -914,43 +1095,48 @@ Trigger: When creating an item, changing an item's state or content, or answerin
 17. The tag set is open.
 18. An item may carry several tags.
 19. Tags are the ordinary square-bracket tags every working-state artifact takes (see the a-record-may-be-categorized-with-square-bracket-tags rule).
-20. `[observation]` and `[work-item]` mean what their rules say: the observations rule, and the work-item section below.
-21. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
-22. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
-23. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
-24. Rank 1 is worked next among the actionable items.
-25. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
-26. A waiting item may still be ranked, and a rank does not clear a wait.
-27. Nothing derives from either line.
-28. An item's content is point-in-time.
-29. A reference in an item that time has overtaken is not a defect.
-30. Do not chase such a reference.
-31. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
-32. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
-33. Make an item **Active** when its work starts. **Active** is the in-progress state.
-34. An observation, and only an observation, starts and stays **Recorded**.
-35. **Realized** — what it describes exists.
-36. **Deferred** — kept deliberately, with no date and no one working toward it.
-37. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
-38. **Suspended** — paused, not ended.
-39. **Superseded** — a later item replaced it, and the two name each other.
-40. **Abandoned** — dropped by decision.
-41. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
-42. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
-43. At each change of state, change the `**State:**` line and rename the file.
-44. At each change of state, write the log entry.
-45. A work item, tagged `[work-item]`, is a piece of work to be done.
-46. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
-47. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
-48. A work item never takes `Realized`.
-49. Take `Done` back to `Active` when the work reopens.
-50. Supersede an item rather than rewrite it.
-51. What a superseded item settled stays as written.
-52. Amend an item by dated addition.
-53. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
-54. Answer a question that runs against what an item settled, and record the change.
-55. Do not refuse to answer until the item is amended.
-56. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
+20. `[observation]` and `[work]` mean what their rules say: the observations rule, and the work-item section below.
+21. Create an item as a kind by tagging it with the kind's name. A kind needs no description beyond its name. A kind this rule does not list is as good as one it does. An item created with no kind is tagged `[idea]`.
+22. `[idea]` is a thought proposed and not yet settled. `[design]` is settled direction, as dated Settled resolutions. `[plan]` is a sequence of work, as checkbox tasks stating behavior, with no code.
+23. `[aspiration]` is an outcome hoped for, written only where one was asked for. `[goal]` is an outcome the project means to reach, which other items serve, open until reached or given up.
+24. `[problem]` is something wrong or in the way, recorded without a solution named. `[mistake]` is an act that should have gone otherwise, recorded with what went wrong and why.
+25. A kind takes the states every item takes, except where its own rule says otherwise.
+26. An item may carry two optional lines, `**Waits for:**` and `**Priority:**`, and most items carry neither.
+27. `**Waits for:**` states what must finish before the item is actionable, and nothing more.
+28. `**Priority:** N`, written as `- **Priority:** 3`, ranks the item from 1 to N, contiguous, one item to a number.
+29. Rank 1 is worked next among the actionable items.
+30. Ranking an item renumbers those below it. The several files that changes are the accepted cost.
+31. A waiting item may still be ranked, and a rank does not clear a wait.
+32. Nothing derives from either line.
+33. An item's content is point-in-time.
+34. A reference in an item that time has overtaken is not a defect.
+35. Do not chase such a reference.
+36. Every item carries a `**State:**` line from the moment it is written, holding one of the words below and no other. Absence is not a state, and an item without the line is a defect.
+37. **Open** — the work has not started. Start every item but an observation **Open**, whether its thinking is settled or not.
+38. Make an item **Active** when its work starts. **Active** is the in-progress state.
+39. An observation, and only an observation, starts and stays **Recorded**.
+40. **Realized** — what it describes exists.
+41. **Deferred** — kept deliberately, with no date and no one working toward it.
+42. An item merely waiting its turn is not **Deferred**. It carries `**Waits for:**` and whatever state its thinking has reached.
+43. **Suspended** — paused, not ended.
+44. **Superseded** — a later item replaced it, and the two name each other.
+45. **Abandoned** — dropped by decision.
+46. **Obsolete** — it lost its relevance over time, as the work moved past it with no one deciding. Where a decision dropped it, it is **Abandoned**. Any item takes it, a work item included.
+47. Take `Realized`, `Deferred`, and `Open` back to `Active` or `Open` when the work resumes. The other states are not taken back. Conclude an item whose work is done on an experiment's branch when the work is done, as `Realized`, or `Done` for a work item. Do not wait for the merge, and name the branch.
+48. At each change of state, change the `**State:**` line and rename the file.
+49. At each change of state, write the log entry.
+50. An item tagged `[work]` is a piece of work to be done.
+51. A work item takes `Open`, `Active`, `Deferred`, and `Suspended`.
+52. A work item concludes `Done`, `Abandoned`, `Superseded`, or `Obsolete`.
+53. A work item never takes `Realized`.
+54. Take `Done` back to `Active` when the work reopens.
+55. Supersede an item rather than rewrite it.
+56. What a superseded item settled stays as written.
+57. Amend an item by dated addition.
+58. When amending, keep an outdated resolution's date and wording, and state what changed in a later resolution.
+59. Answer a question that runs against what an item settled, and record the change.
+60. Do not refuse to answer until the item is amended.
+61. Where one item names another as what it realizes, the named item is the source of truth. Reconcile it; never regenerate it from the work downstream.
 
 # The log records why work was abandoned, and never says undone work was done
 
@@ -1013,77 +1199,46 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
 
-# The migration directory holds the plans for moving or restructuring content
+# The startup display prints as the session starts
 
-Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
+Source: system/foundation/source/the-startup-display-prints-as-the-session-starts.md
 
-Trigger: When planning to move content across a repository boundary, to restructure, rename, or regroup a project's files, or to conform existing content to a changed norm or standard
+Trigger: When a session starts, or the engineer types its first prompt, or when changing the startup display or its script
 
-1. `waytide/local/migration/` holds migration records.
-2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
-3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
-4. Plan a move here when content ends up under a different root, or in a different structure.
-5. Examples: a library extracted into its own repository, or work moved to a project that will own it.
-6. Further examples: one repository split into several, several merged into one, existing conventions migrated into an installed system, or a directory renamed or regrouped.
-7. A change to a norm or standard that existing content must be conformed to is a migration too: a tag renamed, a term substituted, or a format changed, where records already written carry the old form. Example: the `[work-item]` tag becoming `[work]`, in this repository or in a consuming project.
-8. Do not use an ordinary item for a migration.
-9. An item sequences a build, against something this repository settled.
-10. A migration plan sequences a change to where existing content lives, or to the form it is written in. Across repositories, its increments land in two.
-11. Its order matters because content is unavailable or duplicated in between, a reference to the old place breaks until it is reconciled, and content in the old form does not match its rules until it is conformed.
-12. Across repositories, the plan is not finished when this repository's part is done.
-13. A migration may realize a settled item, or be mechanical enough to need none.
-14. A migration record is one document, not entries that accrue like the contemporaneous, historical records under `logs/`.
-15. Revise the record while the migration runs.
-16. Write it before moving content across a repository boundary, restructuring where it lives, or conforming it to a changed norm or standard.
-17. Use the same frontmatter-free markdown as rules: a `# <title>`, then prose.
-18. State the source and destination outright: the repositories, or the old and new places within one.
-19. State the increments in order.
-20. State what is true in between: what is duplicated, what is unavailable, and what is authoritative while the move is under way.
-21. Record what actually happened against the plan as the work proceeds.
-22. Keep the record after the content has moved. Do not delete it on completion.
-23. End the file with the `Authored by … / Changed by …` footer, per the working-state-artifacts-carry-a-provenance-footer rule.
-24. The filename follows the ISO-8601-UTC prefix convention of the file-names rule.
-25. Records written before this convention reached a project keep their names. A datetime is not revised to a resolution it never had.
-
-# The startup display prints once per session
-
-Source: system/foundation/source/the-startup-display-prints-once-per-session.md
-
-Trigger: When the engineer types `load waytide`, or when changing the startup display or its script
-
-1. Five parts are printed once per session, verbatim. Four are always printed, in this file's order. The package set is printed only where the project has declared one.
-2. The harness prints the four always-printed parts. The agent prints none of them.
-3. When the engineer types `load waytide`, a `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints them as a `systemMessage`.
-4. The display prints on `load waytide` and on no other prompt. A session opened with any other request shows no display.
-5. The agent prints the package set, at the head of the response that carries the rule read.
-6. The script reads the four from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
-7. The first, third, fourth, and fifth fenced blocks are the title, the copyright and license, the loading line, and the figure.
-8. The second fenced block is the package-set example, which the script skips.
-9. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
-10. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
-11. The fences mark where each printed part begins and ends. They are not printed.
-12. First the title, on its own:
+1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
+2. The package set is printed only where the project has declared one, after the loading part.
+3. The harness prints both parts. The agent prints none of them.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
+5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
+6. The agent prints the package set, at the head of the response that carries the rule read.
+7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
+8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the loading line and the figure.
+9. The second fenced block is the package-set example, which the script skips.
+10. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
+11. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
+12. The fences mark where each printed part begins and ends. They are not printed.
+13. First the title, on its own:
 
 ```
 Waytide: Human-in-the-Loop Harness
 ```
 
-13. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
-14. The display opens with a line break, so the title starts a line of its own after the harness's label, as in `UserPromptSubmit says:`. The break is the script's, not a fenced block in this file.
-15. The title stands alone. No subtitle or description is printed under it.
-16. The title is the category line. The root `README.md` leads with the same line.
-17. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
-18. The display carries nothing that argues for the system to a reader already using it.
-19. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
-20. The stanza follows the display rather than sitting inside it.
-21. Where no set is declared, this part is absent entirely. No line says there is none.
-22. The declared set `default` prints nothing where nothing is deactivated.
-23. The `default` set prints where it leaves an installed package deactivated, such as `ext/ruby-lang`.
-24. The condition is that nothing is off, not that the name is `default`.
-25. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
-26. A named set other than `default` prints even where nothing is deactivated.
-27. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-which-installed-packages-are-active rule says where the record lives and what it carries.
-28. The stanza takes this form:
+14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
+15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
+16. The title stands alone. No subtitle or description is printed under it.
+17. The title is the category line. The root `README.md` leads with the same line.
+18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
+19. The display carries nothing that argues for the system to a reader already using it.
+20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
+21. The stanza follows the display rather than sitting inside it.
+22. Where no set is declared, this part is absent entirely. No line says there is none.
+23. The declared set `default` prints nothing where nothing is deactivated.
+24. The `default` set prints where it leaves an installed package deactivated, such as `ext/ruby-lang`.
+25. The condition is that nothing is off, not that the name is `default`.
+26. A suppressed stanza must never be the reason a deactivated package goes unmentioned.
+27. A named set other than `default` prints even where nothing is deactivated.
+28. The declaration is supplied to the agent by the read instruction, before any file is opened. The a-project-declares-which-installed-packages-are-active rule says where the record lives and what it carries.
+29. The stanza takes this form:
 
 ```
 *design-by-efferent*, **foundation**, **git**, **journal**, **language**, *testing*,
@@ -1092,41 +1247,47 @@ package set: content
 (5 active of 8 installed)
 ```
 
-29. The stanza's lines carry no gap between them.
-30. The package list leads. The set's name follows it, above the count. The count closes the stanza.
-31. The set is named in the engineer's own wording, as in `package set: content`, not in a restatement of it.
-32. Every installed package is listed, in the order the session-start notice lists them.
-33. Active packages are bold. Deactivated packages are italic.
-34. No package is omitted, and none is replaced by a count.
-35. The count line states how many are active and the installed total, in the form `(N active of M installed)`.
-36. No legend is printed.
-37. Emphasis is available on the package set stanza and nowhere else in the display.
-38. The harness display is plain text, where markup reaches the engineer as literal asterisks.
-39. Then one blank line, then the copyright notice and the license line, on consecutive lines with no gap between them:
+30. The stanza's lines carry no gap between them.
+31. The package list leads. The set's name follows it, above the count. The count closes the stanza.
+32. The set is named in the engineer's own wording, as in `package set: content`, not in a restatement of it.
+33. Every installed package is listed, in the order the session-start notice lists them.
+34. Active packages are bold. Deactivated packages are italic.
+35. No package is omitted, and none is replaced by a count.
+36. The count line states how many are active and the installed total, in the form `(N active of M installed)`.
+37. No legend is printed.
+38. Emphasis is available on the package set stanza and nowhere else in the display.
+39. The harness display is plain text, where markup reaches the engineer as literal asterisks.
+40. Then one blank line, then the copyright notice and the license line, on consecutive lines with no gap between them:
 
 ```
 Copyright © 2026 Scott Bellware
 *Eventide Common Interest License*
 ```
 
-40. The copyright and license belong on this display, not on the session-start notice. Any standing statement that never changes belongs here, not as a permanent segment of the notice.
-41. The copyright line carries the owner and the year alone. It does not name the work.
-42. The license line is the license's name alone, set in italics. It takes no leading words such as *Licensed under the*.
-43. The block keeps the license line in italics. `startup-display.sh` removes the asterisks from a line wrapped in them, so it prints without them.
-44. The gap falls after the license line, never between it and the copyright.
-45. The printed license line points to the license. It does not carry the terms, and is not the place to put them.
-46. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
-47. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
-48. The year is not computed. It changes only when the rule changes.
-49. Then one blank line, then the loading line:
+41. The copyright and license belong on this display, not on the session-start notice. Any standing statement that never changes belongs here, not as a permanent segment of the notice.
+42. The copyright line carries the owner and the year alone. It does not name the work.
+43. The license line is the license's name alone, set in italics. It takes no leading words such as *Licensed under the*.
+44. The block keeps the license line in italics. `startup-display.sh` removes the asterisks from a line wrapped in them, so it prints without them.
+45. The gap falls after the license line, never between it and the copyright.
+46. The printed license line points to the license. It does not carry the terms, and is not the place to put them.
+47. The `LICENSE` file states the terms. A copy sits at this repository's root and in every package directory.
+48. The year is the year of the notice, not of the session. It is written into this rule and printed verbatim.
+49. The year is not computed. It changes only when the rule changes.
+50. The load line follows the session-start notice, after one blank line, and ends the session-start message:
 
 ```
-Loading Waytide will take a few moments.
+Waytide's rules will load on the first prompt, or enter: /load
 ```
 
-50. The loading line says *Waytide* rather than *the rules*. It names the wait after `load waytide`, while the response loads every installed package's rules.
-51. The loading line deliberately repeats the session-start notice's caveat. Neither statement is removed.
-52. Then one blank line, then the block:
+51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Waytide's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
+52. The session-start notice has no close of its own. The load line says what a close said.
+53. The loading part opens with the loading line, which names the wait for the read:
+
+```
+Slasher is pre-loading its rules...
+```
+
+54. Then one blank line, then the block, which ends the loading part:
 
 ```
      __      /
@@ -1145,72 +1306,38 @@ Loading Waytide will take a few moments.
  (o)   (o)
 ```
 
-53. Each gap is one blank line. There are three: after the title, after the license line, and after the loading line.
-54. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
-55. A blank line prints as a blank line. The figure keeps its spacing without a fence.
-56. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
-57. The package set's absence is the ordinary case, not an omission.
+55. Each gap is one blank line: after the title, after the license line, and ahead of the load line in the session-start part, and after the loading line in the loading part.
+56. The harness renders the display as plain text, so the lines print exactly as the blocks hold them.
+57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
+58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
+59. The package set's absence is the ordinary case, not an omission.
 
-# The work-sessions directory holds one record per work session
+# The Waytide skills are delivered as a plugin named slasher
 
-Source: system/foundation/source/the-work-sessions-directory-holds-one-record-per-work-session.md
+Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-named-slasher.md
 
-Trigger: When a work session is closing, or the engineer asks for a work session record
+Trigger: When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
 
-1. `waytide/local/logs/work-sessions/` holds work session records.
-2. A work session record is the chronological narrative of one discrete work session between an engineer and Claude.
-3. A work session is a unit of the engineer's work. It may last hours, a day, or longer.
-4. The discrete piece of work sets a work session's boundaries, not a fixed clock.
-5. A work session record is the guided tour of the work session. It gives what was asked and concluded at each step, in order.
-6. It defines settled vocabulary as that vocabulary arises.
-7. It is written for a person to read. Its job is orientation and reasoning, not truth-of-record.
-8. It is not the source of truth. The durable records are authoritative.
-9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
-10. The record points to the durable records throughout. It does not restate them.
-11. The record keeps the reasoning behind each fork in the work. It ties the durable records together as a narrative and keeps the arc.
-12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
-13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
-14. A trivial work session needs no record. A record is not required for every session.
-15. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
-16. The engineer's selection decides.
-17. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
-18. A direct instruction from the engineer to write or append a record needs no prompt.
-19. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
+2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
+3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the session-start hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
+4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
+6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
+7. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
 
-## The shape of a work session record
+# Work status says what was recently done, and what is next
 
-1. Title the record `# Work Session — <name> (<date>)`.
-2. Records written before 2026-08-03 are titled `# Session — …`. Keep those titles. Do not retitle them.
-3. The parts appear in the order below.
-4. **Opening summary**: a short paragraph naming what the work session was, as its arc. For example, it began as X, became Y, and ended with Z.
-5. **Framing note**: states that this is the communicable record, or guided tour. It states that the durable records it points to are the source of truth.
-6. **Chronological body**: numbered sections (`## 1.`, `## 2.`, …) walking the work session in order.
-7. Each section states what was asked and concluded at that step.
-8. Each section defines settled vocabulary as it arises.
-9. Each section points inline to the durable records that step produced.
-10. **Takeaways**: the settled conclusions, compressed to a few bullets.
-11. **Glossary**: the terms settled during the work session, each with its literal definition.
-12. **Where the durable records live**: pointers to the rules, observations, log entries, experiments, and code the work session produced.
-13. Optionally, a **reflective closing note** on the work session itself.
-14. A **provenance footer**: the record ends with the `Authored by … / Changed by …` footer, like every working-state artifact.
-15. The footer follows the working-state-artifacts-carry-a-provenance-footer rule and the record-a-rules-authorship-in-a-provenance-footer format.
-16. A work session record is not shaped like a plan. It records the past. This convention defines that format, alongside the directory.
+Source: system/foundation/source/work-status-says-what-was-recently-done-and-what-is-next.md
 
-## Reconcile the settled direction once the record is written
+Trigger: When the engineer types `/work-status`, or asks what was recently done and what is next
 
-1. "Design" here means whichever settled item the work session bears on, whatever its kind tag.
-2. After the record is written, ask the engineer about the design through the AskUserQuestion selection UI.
-3. Ask whether the work session's output changes the design, or whether the design has fallen behind it.
-4. Offer three options: **update the design**, **the design stands**, or **no design bears on this work session**.
-5. Ask this every time a record is written. No other threshold applies.
-6. Surface the candidates. Do not decide.
-7. Name what the work session settled that the design does not reflect.
-8. Name anything the design asserts that the work session contradicts.
-9. Either side may be the stale one. Only the engineer can say which.
-10. Change neither the design nor the records on your own initiative.
-11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records.
-12. Where no design exists, or nothing in the work session bears on one, say so and move on.
-13. Do not invent a divergence to justify the prompt.
+1. `/work-status` says in a few lines what was recently done and what is next. It has no alias.
+2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
+3. Say how many commits on each branch are not yet pushed.
+4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
+5. Carry no task table, no map of `waytide/`, and no suite run. Those belong to `/status-report`.
+6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
 
 # Working-state artifacts carry a provenance footer
 

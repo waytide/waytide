@@ -1,8 +1,8 @@
 # The test tree command prints the suite's context tree
 
-**Trigger:** When the user gives the command "test tree"
+**Trigger:** When the user gives the command "test tree", or types `/test tree` or `/test-tree`
 
-When the user gives the command **"test tree"**, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
+When the user gives the command **"test tree"**, or types `/test tree` or `/test-tree`, run the automated suite and print its structure as a **single normalized tree**. That is the whole suite's `context`/`test` hierarchy with **duplicate outer context headings merged**, so each context path appears **once**.
 
 The problem it solves is repetition. Each test file re-declares the outer contexts that mirror its folder path, as its siblings in that folder do. The raw run output repeats those headings per file. The normalized tree merges them. Each outer context appears once, then each sub-feature once beneath it. The individual tests are leaves with a `•` prefix, and the pass/fail summary line comes at the end.
 
@@ -18,7 +18,7 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 
 ## Compressed
 
-1. When the user gives the command **"test tree"**, run the automated suite.
+1. When the user gives the command **"test tree"**, or types `/test tree` or `/test-tree`, run the automated suite.
 2. Print its structure as a **single normalized tree**.
 3. The tree is the whole suite's `context`/`test` hierarchy.
 4. Merge **duplicate outer context headings**, so each context path appears **once**.
@@ -41,6 +41,7 @@ For a Ruby project it is settled by the `ext/ruby-lang` package's rule on runnin
 
 - 2026-10-24, compressed: compression 0.19, change 0.44, solubility 75 → 84, clarity 0.76 → 0.86, 16 directives, 16 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 84 → 84, clarity 0.86 → 0.85; checked: 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-11-05, revised: `/test tree` and `/test-tree` are commands for the tree; checked: 17 directives, 17 kept, 0 less precise, 0 lost
 
 ## History
 
@@ -67,3 +68,4 @@ Changed by Scott Bellware on Sun Aug 23 2026 at 1:12:05 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 5:52:32 PM PT

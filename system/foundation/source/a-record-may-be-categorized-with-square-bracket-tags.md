@@ -8,7 +8,7 @@
 
 **Tags are optional and freeform.** Add one when it is useful. Nothing checks them, and there is no fixed list.
 
-**Some tags have lifecycle states**, such as `[experiment]`, `[feature]`, `[observation]`, and `[work-item]`. Each one's own rule states its states.
+**Some tags have lifecycle states**, such as `[experiment]`, `[feature]`, `[observation]`, and `[work]`. Each one's own rule states its states.
 
 **Why:** a tag costs nothing to add, shows in plain text, and is found by an ordinary search.
 
@@ -22,7 +22,7 @@
 4. Write a tag lower-case in square brackets, with dashes between words: `[legal-matter]`.
 5. Tags are optional and freeform. Add one when it is useful.
 6. Nothing checks tags, and there is no fixed list.
-7. Some tags have lifecycle states, such as `[experiment]`, `[feature]`, `[observation]`, and `[work-item]`. Each one's own rule states its states.
+7. Some tags have lifecycle states, such as `[experiment]`, `[feature]`, `[observation]`, and `[work]`. Each one's own rule states its states.
 
 ## Compression
 
@@ -40,6 +40,7 @@ Until Sun Oct 25 2026 this rule was named a-record-takes-category-tags and title
 Until Mon Oct 26 2026 this rule called the log "the decision log". The engineer settled that it is the log, since its entries record more than decisions.
 
 Until Tue Oct 27 2026 this rule was titled "A record takes square-bracket category tags". It divided tags into reserved and freeform, said where a log entry puts its tags, and kept an account of the discontinued leading-tag form and of what the distinction cost. The engineer settled that a tag means what a rule about it says, so the rule needs no category of reserved tags, and that the rest is said elsewhere or is history.
+- **Thu Oct 29 2026** — the tag for a piece of work to be done was `[work-item]`, and the record was called a work item. It is `[work]`, at the engineer's direction.
 
 Related:
 
@@ -47,7 +48,7 @@ Related:
 - the a-log-entry-recording-an-engineers-decision-is-tagged-decision rule — what `[decision]` means
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — what `[suspended]` means
 - the the-implementations-directory-holds-one-record-per-implementation rule — the states of `[experiment]` and `[feature]`
-- the the-items-directory-holds-one-file-per-item rule — the states of an item, and of `[work-item]`
+- the the-items-directory-holds-one-file-per-item rule — the states of an item, and of `[work]`
 - the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule — the one state of `[observation]`
 - the `journal` package's a-journal-entry-has-a-human-readable-datetime-line-under-its-title rule — where a journal entry's `**Tags:**` line sits
 
@@ -79,3 +80,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT

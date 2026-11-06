@@ -1,6 +1,6 @@
 # A predicate method's test context is its name followed by the word "Predicate"
 
-**Trigger:** When naming a test context for a ?-suffixed predicate method
+**Trigger:** When creating or editing a file under `test/`
 
 The `context` for a predicate method — a `?`-suffixed, boolean-returning method — is named by the method's name (without the `?`) followed by **"Predicate"**. So `defined?` → `context "Defined Predicate"`, not `context "Defined?"`.
 
@@ -26,6 +26,8 @@ Examples: `defined?` → "Defined Predicate", `valid?` → "Valid Predicate", an
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When naming a test context for a ?-suffixed predicate method*, which was not a safe one.
+
 Until Sun Oct 25 2026 this rule was named predicate-context-name and titled "A predicate method's test context is named "`<Name>` Predicate"".
 
 Until Mon Oct 26 2026 this rule was named a-predicate-methods-test-context-is-named-for-the-predicate and titled "A predicate method's test context is named for the predicate".
@@ -49,3 +51,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:21:00 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

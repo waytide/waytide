@@ -97,6 +97,80 @@ rule_output=$(cd "$project" && system/foundation/load-rules.sh c-rule)
 
 [ "$rule_output" = "$(control_rule_entry)" ] || fail "Prints the named on-demand rule" "output:" "$rule_output"
 
+# Prints the named pre-loaded rule -----------------------------------------------
+
+cat > "$project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+
+# Some rule f
+
+Source: system/sample/source/f-rule.md
+
+1. some-directive-f
+RULES
+
+control_pre_loaded_rule_entry() {
+  cat <<'RULE'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+RULE
+}
+
+pre_loaded_rule_output=$(cd "$project" && system/foundation/load-rules.sh e-rule 2>&1 || true)
+
+[ "$pre_loaded_rule_output" = "$(control_pre_loaded_rule_entry)" ] || fail "Prints the named pre-loaded rule" "output:" "$pre_loaded_rule_output"
+
+# Prints a named rule whole where its code example holds a comment line -------------
+
+cat > "$project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some rule g
+
+Source: system/sample/source/g-rule.md
+
+1. some-directive-g
+
+```ruby
+# some comment
+some_code
+```
+
+2. some-other-directive-g
+
+# Some rule h
+
+Source: system/sample/source/h-rule.md
+
+1. some-directive-h
+RULES
+
+control_fenced_rule_entry() {
+  cat <<'RULE'
+# Some rule g
+
+Source: system/sample/source/g-rule.md
+
+1. some-directive-g
+
+```ruby
+# some comment
+some_code
+```
+
+2. some-other-directive-g
+RULE
+}
+
+fenced_rule_output=$(cd "$project" && system/foundation/load-rules.sh g-rule 2>&1 || true)
+
+[ "$fenced_rule_output" = "$(control_fenced_rule_entry)" ] || fail "Prints a named rule whole where its code example holds a comment line" "output:" "$fenced_rule_output"
+
 # Prints a deactivated package's name and the command that loads it, in place of its rules ------
 
 set_project=$(mktemp -d)
@@ -236,4 +310,24 @@ compressed_output=$(cd "$compressed_project" && system/foundation/load-rules.sh)
 
 [ "$compressed_output" = "$(control_compressed_output)" ] || fail "Prints a vocabulary's or a local rule's title and its Compressed section in place of the whole file" "output:" "$compressed_output"
 
-echo "5 passed"
+# Prints a named pre-loaded rule where no package has on-demand rules --------------
+
+plain_project=$(mktemp -d)
+trap 'rm -rf "$project" "$set_project" "$compressed_project" "$plain_project"' EXIT
+
+mkdir -p "$plain_project/system/foundation" "$plain_project/system/sample"
+cp system/foundation/load-rules.sh "$plain_project/system/foundation/"
+
+cat > "$plain_project/system/sample/rules-pre-loaded.md" <<'RULES'
+# Some rule e
+
+Source: system/sample/source/e-rule.md
+
+1. some-directive-e
+RULES
+
+plain_rule_output=$(cd "$plain_project" && system/foundation/load-rules.sh e-rule 2>&1 || true)
+
+[ "$plain_rule_output" = "$(control_pre_loaded_rule_entry)" ] || fail "Prints a named pre-loaded rule where no package has on-demand rules" "output:" "$plain_rule_output"
+
+echo "8 passed"

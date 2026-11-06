@@ -12,6 +12,10 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 
 **How to apply:** when a decision is made, write a titled entry under `waytide/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
 
+## Log this
+
+**`/log-this` writes a log entry for the work the conversation is on, without the engineer stating the decision.** The agent states the decision or the finding the work has just reached as the entry's title, and adds a body where the reasoning will not fit. Where the work has reached nothing to log, it says so and writes nothing. Where it is unclear which decision is meant, it asks, through the selection interface. The entry follows every convention an entry the engineer dictates follows.
+
 ## Compressed
 
 1. Record the log's entries made during sessions in `waytide/local/logs/log/`.
@@ -60,6 +64,12 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 6. Never write that summary to a file.
 7. Give it in the response instead.
 
+## Log this
+
+1. `/log-this` writes a log entry for the work the conversation is on. State as its title the decision or finding the work has just reached, with a body where the reasoning will not fit.
+2. Where nothing has been reached, say so and write nothing. Where it is unclear which decision is meant, ask, through the selection interface.
+3. The entry follows every convention of an entry the engineer dictates.
+
 ## Compression
 
 - 2026-10-24, compressed: compression 0.29, change 0.60, solubility 34 → 65, clarity 0.26 → 0.70, 30 directives, 30 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
@@ -68,8 +78,11 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 - 2026-10-27, revised: the log is one file per entry, of short entries, not one line or one file per decision, a term the engineer settled; not checked
 - 2026-10-28, revised: Why points removed, solubility 65 → 62, clarity 0.70 → 0.70; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 29 directives, 28 kept, 1 less precise, 0 lost, 1 repairs
+- 2026-11-03, revised: /log-this writes an entry for the current work; checked: 27 directives, 27 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Mon Nov 2 2026 an entry was written for a decision the engineer stated or the agent detected, and no command asked for one for the current work.
 
 Until 2026-10-25 the Content line said "An untagged entry is one line", and How to apply said to write "a titled one-line entry". Both read as barring the body the same line allows where reasoning will not fit a title, which an abandonment takes. The engineer settled that bodies stay and one line is the ordinary case.
 
@@ -131,3 +144,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:00:23 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT

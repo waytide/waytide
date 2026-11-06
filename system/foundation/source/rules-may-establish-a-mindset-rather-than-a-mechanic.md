@@ -1,6 +1,6 @@
 # Rules may establish a mindset rather than a mechanic
 
-**Trigger:** When writing, evaluating, placing, or reconciling conflicting rules
+**Trigger:** When writing or changing a rule file
 
 A rule's package — `language`, `testing`, `git`, and the others — names the **surface** a rule acts on (words, commits, tests, code), not the **purpose** it serves. A large share of rules exist to establish a **mental stance**, which is a way of thinking about the code and the work. They do not exist to standardize a mechanic. Purpose is not confined to category. Two rules in different packages can be doing the same work, and a rule's real justification is often not visible from its package.
 
@@ -41,6 +41,8 @@ State its purpose, the mindset, in the rule's body. Cross-reference sibling rule
 
 ## History
 
+Until Thu Nov 5 2026 its trigger read *When writing, evaluating, placing, or reconciling conflicting rules*, which was not a safe one.
+
 Until Sun Oct 25 2026 this rule was named rules-establish-a-mindset-purpose-over-category and titled "A rule's purpose is not confined to its category — many rules establish a mindset".
 
 Until Mon Oct 26 2026 this rule was named a-rules-purpose-is-not-confined-to-its-category and titled "A rule's purpose is not confined to its category".
@@ -69,3 +71,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:42 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:19:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

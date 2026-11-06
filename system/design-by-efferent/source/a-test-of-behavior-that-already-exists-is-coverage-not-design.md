@@ -1,6 +1,6 @@
 # A test of behavior that already exists is coverage, not design
 
-**Trigger:** When an implementation hinge finds that the existing code already satisfies the test
+**Trigger:** When the test at an implementation hinge passes before any code is written
 
 In DBE, a test justifies itself by **driving** an implementation that did not exist. The failing test is what brings the behavior into being. A test that passes the first time it runs, because the behavior already exists, is **uncontested**: no implementation is written to meet it, and it drives nothing. It *confirms* the behavior rather than *designing* it. **Such a test is coverage, not a DBE design step.**
 
@@ -34,6 +34,8 @@ In DBE, a test justifies itself by **driving** an implementation that did not ex
 - 2026-10-28, revised: Why points removed, solubility 81 → 82, clarity 0.75 → 0.81; checked: 10 directives, 9 kept, 1 less precise, 0 lost
 
 ## History
+
+Until Thu Nov 5 2026 its trigger read *When an implementation hinge finds that the existing code already satisfies the test*, which was not a safe one.
 
 Until Sun Oct 25 2026 this rule was named no-green-on-arrival-tests and titled "Drop an outcome whose test is green-on-arrival — it drives no design".
 
@@ -71,3 +73,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 3:00:02 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT

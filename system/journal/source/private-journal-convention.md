@@ -1,6 +1,6 @@
 # `~/.local/share/waytide/journal/<project>/` — a private journal, kept outside the project
 
-**Trigger:** When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal
+**Trigger:** When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal, as with `/journal publish-private`
 
 **A private journal is a journal kept outside the project's repository.** Its entries are not committed with the project, so the project's other writers and the readers of its repository do not reach them. A journal in `waytide/local/journal/<username>/` is the **shared journal**, and the journal-convention governs it.
 
@@ -50,6 +50,10 @@ Make a change the writer directs to a private entry exactly as named. Write no l
 
 Move a private entry to the shared journal only on the engineer's command, unchanged, and remove it from the private journal. Do not offer to move one.
 
+## Confirming a move
+
+**`/journal publish-private` moves a private entry to the shared journal, after the engineer confirms it.** The agent names the entry and asks, through the selection interface, whether to move it, since the move publishes it to every reader of the repository. It moves the entry only on the engineer's confirmation.
+
 ## Compressed
 
 1. A private journal is a journal kept outside the project's repository. Its entries are not committed with the project.
@@ -87,9 +91,19 @@ Move a private entry to the shared journal only on the engineer's command, uncha
 1. Private means kept out of the project's repository and out of the session-start read, and nothing more.
 2. It does not keep an entry on the machine. An entry the agent writes or reads is plain text in the session, and reaches the model provider, the local transcript, and any deployed hook.
 
+## Confirming a move
+
+1. `/journal publish-private` moves a private entry to the shared journal only after the engineer confirms it.
+2. Name the entry and ask, through the selection interface, whether to move it, since the move publishes it to every reader of the repository.
+
 ## Compression
 
 - 2026-10-29, merge from master re-checked: 22 directives, 22 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-11-03, revised: /journal publish-private asks for confirmation; checked: 32 directives, 30 kept, 2 less precise, 0 lost. Left less precise, from before this change: which rule asks for a log entry, and who deploys a hook
+
+## History
+
+Until Mon Nov 2 2026 a private entry moved on the engineer's command, with no confirmation asked.
 
 Related:
 
@@ -104,3 +118,4 @@ Related:
 Authored by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:43:38 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:44:26 PM PT
+Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT

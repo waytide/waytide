@@ -1,5 +1,7 @@
 # A test actuates its concern once, and asserts each outcome in its own context
 
+**Trigger:** When creating or editing a file under `test/`
+
 A test file is built in layers. There is a feature context, a shared control-and-actuation block at its top, and a series of inner contexts that each establish one outcome.
 
 **Outer `context` names the feature.** Everything for the feature lives inside it.
@@ -87,6 +89,8 @@ end
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named tdd-test-structure and titled "Test structure: actuate the concern once at the top, assert each outcome in its own nested context".
 
 Related:
@@ -107,3 +111,4 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 12:26:52 PM PT
 Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:06 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

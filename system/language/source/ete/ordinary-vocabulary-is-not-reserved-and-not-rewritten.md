@@ -1,5 +1,7 @@
 # Ordinary vocabulary is not reserved and not rewritten
 
+**Trigger:** When reserving a word, or writing or revising a vocabulary entry
+
 **The STE dictionary refuses hundreds of the words any English prose runs on.** When this rule was written, Waytide's own rule files used `as` 411 times, `every` 221, `never` 133, `under` 126, `would` 121, `already` 105, and `may` 86. The dictionary gives BECAUSE, ALL, DO NOT, BELOW, CAN, IN PROGRESS, and CAN for them.
 
 **None of them is a technical noun or a technical verb, in any category.** A technical noun names a thing in a subject field, and a technical verb names an action performed in one. `every` names nothing. `under` names nothing. No category holds them, and ETE's two do not either.
@@ -37,12 +39,16 @@ The trade is not close. Conforming the terminology is bounded work with a real r
 
 - 2026-10-28, revised: Why points removed, solubility 89, clarity 0.90; checked: 9 directives, 9 kept, 0 less precise, 0 lost
 
+## History
+
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Related:
 
 - the a-word-is-reserved-in-six-steps rule — where step 2 of the sequence stops
 - the ete-declares-its-own-categories rule — where a term is reserved
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the meaning a reserved word takes
-- the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides — which vocabulary a term is written in
+- the foundation a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved — which vocabulary a term is written in
 
 ---
 
@@ -54,3 +60,5 @@ Changed by Scott Bellware on Tue Oct 20 2026 at 11:51:09 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 11:55:11 AM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:23:36 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:50 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:18:12 PM PT

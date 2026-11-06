@@ -1,12 +1,10 @@
 # The work-sessions directory holds one record per work session
 
-**Trigger:** When a work session is closing, or the engineer asks for a work session record
-
 `waytide/local/logs/work-sessions/` holds **work session records**: the communicable, chronological narrative of a discrete work session between an engineer and Claude. A work session is a unit of the engineer's work. It may run a few hours, a whole day, or span more than a day. Its boundaries are the discrete piece of work, not a fixed clock.
 
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
 - **It is not the source of truth.** The durable records are: the binding rules (`waytide/system/`, `waytide/local/rules/`), the project's items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`). The work session record **points to** them throughout. They are authoritative, and the work session record is the narrative that ties them together and preserves the reasoning behind each fork.
-- **When it is written.** At the close of a work session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the work session has accumulated such work and proposes recording it. A trivial work session needs no record. The work session record is not a per-session obligation.
+- **When it is written.** At the close of a work session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the work session has accumulated such work and proposes recording it. A trivial work session needs no record. The work session record is not a per-session obligation. **The agent also proposes recording at a conclusion it carries out:** when it concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded. Each is a discrete act the agent takes, so the proposal cannot be missed there.
 - **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **Every prompt this convention puts says "work session"**, this one and the design reconciliation alike — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
 - **Naming.** A work session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
@@ -63,11 +61,12 @@ Once the record is written, put the **design reconciliation** through the same U
 12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
 13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
 14. A trivial work session needs no record. A record is not required for every session.
-15. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
-16. The engineer's selection decides.
-17. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
-18. A direct instruction from the engineer to write or append a record needs no prompt.
-19. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
+15. Also propose it when the agent concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded.
+16. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+17. The engineer's selection decides.
+18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+19. A direct instruction from the engineer to write or append a record needs no prompt.
+20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
 ## The shape of a work session record
 
@@ -100,7 +99,7 @@ Once the record is written, put the **design reconciliation** through the same U
 8. Name anything the design asserts that the work session contradicts.
 9. Either side may be the stale one. Only the engineer can say which.
 10. Change neither the design nor the records on your own initiative.
-11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records.
+11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read a design against the records, and never regenerate it from the work downstream of it. Reconcile it instead.
 12. Where no design exists, or nothing in the work session bears on one, say so and move on.
 13. Do not invent a divergence to justify the prompt.
 
@@ -110,8 +109,15 @@ Once the record is written, put the **design reconciliation** through the same U
 - 2026-10-25, revised: point 18 takes the new wording, that every prompt says work session; not checked
 - 2026-10-27, re-checked: 34 directives, 34 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 45 → 46, clarity 0.75 → 0.77; checked: 36 directives, 36 kept, 0 less precise, 0 lost
+- 2026-11-05, revised: the agent also proposes a record at a conclusion it carries out; checked: 36 directives, 34 kept, 1 less precise, 1 lost, 1 repair, restoring that a design is read against the records and never regenerated from them; re-checked: 36 directives, 36 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Thu Nov 5 2026 the agent proposed a record only at a work session's close.
+
+Later on Thu Nov 5 2026 the engineer had it pre-loaded, so the agent offers a work session record as a session closes, as it did before its trigger was reworded.
+
+Until Thu Nov 5 2026 its trigger read *When a work session is closing, or the engineer asks for a work session record*, which was not a safe one.
 
 The rule was written in `foundation` rather than in the `plan` package on that ground. That package was included in `foundation` on 2026-08-03, so the distinction no longer decides where a format lives.
 
@@ -190,3 +196,6 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:51:20 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:54:41 PM PT

@@ -108,6 +108,7 @@ Until Sun Oct 25 2026 this rule was named an-item-takes-a-log-entry and titled "
 Until Mon Oct 26 2026 this rule was named an-item-takes-a-log-entry-on-creation-on-each-settled-resolution-and-on-a-change-of-state and titled "An item takes a log entry on creation, on each settled resolution, and on a change of state".
 
 Until Tue Oct 27 2026 this rule described the log as "a one-line-per-decision record". An entry can carry a body, and not every entry records a decision, so the engineer settled the wording on short entries, one file each.
+- **Thu Oct 29 2026** — the tag for a piece of work to be done was `[work-item]`, and the record was called a work item. It is `[work]`, at the engineer's direction.
 
 Related:
 
@@ -167,4 +168,5 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
+Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
