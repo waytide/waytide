@@ -52,8 +52,7 @@ ITEMS
 
 FEATURES
   A feature builds something the project needs, on its own branch or worktree,
-  to a declared end. Features and experiments are both kinds of
-  implementations.
+  to a declared end. Features and experiments are both kinds of implementations.
 
   /feature new                     Start a feature
   /feature new with phases         Start a feature, asking for its phases
@@ -85,8 +84,8 @@ EXPERIMENTS
   /experiment help                 Print this command's help
 
 PHASE
-  Phases split a feature or an experiment into steps, run one at a time, each
-  on its own sub branch.
+  Phases split a feature or an experiment into steps, run one at a time, each on
+  its own sub branch.
 
   /phase, /phase current           The current phase, its goal, and its branch
   /phases                          List the phases, the current one emphasized
@@ -104,8 +103,8 @@ PHASE
   when it is added.
 
 PROCESS
-  These commands move the work under way along: take its next step, or say
-  what was done and what's next.
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
 
   /next                            Proceed to the next step in the current
                                    multi-step process
@@ -114,8 +113,8 @@ PROCESS
   /work-status                     What was recently done, and what's next
 
 LOG
-  The log records what was decided and when, and a work session record tells
-  the story of a stretch of work.
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
 
   /log                             Write a log entry
   /log-this                        Write a log entry for the current work
@@ -125,8 +124,8 @@ LOG
   /work-session help               Print this command's help
 
 JOURNAL
-  The journal is the writer's own record of what they think, either stored
-  with the project or kept in a private journal.
+  The journal is the writer's own record of what they think, either stored with
+  the project or kept in a private journal.
 
   /journal, /journal new, /journal entry
                                    Write a shared journal entry

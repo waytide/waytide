@@ -49,8 +49,7 @@ ITEMS
 
 FEATURES
   A feature builds something the project needs, on its own branch or worktree,
-  to a declared end. Features and experiments are both kinds of
-  implementations.
+  to a declared end. Features and experiments are both kinds of implementations.
 
   /feature new                     Start a feature
   /feature new with phases         Start a feature, asking for its phases
@@ -82,8 +81,8 @@ EXPERIMENTS
   /experiment help                 Print this command's help
 
 PHASE
-  Phases split a feature or an experiment into steps, run one at a time, each
-  on its own sub branch.
+  Phases split a feature or an experiment into steps, run one at a time, each on
+  its own sub branch.
 
   /phase, /phase current           The current phase, its goal, and its branch
   /phase add <name>                Add a phase after the last
@@ -100,60 +99,60 @@ PHASE
   when it is added.
 
 PHASES
-  Phases split a feature or an experiment into steps, run one at a time, each
-  on its own sub branch.
+  Phases split a feature or an experiment into steps, run one at a time, each on
+  its own sub branch.
 
   /phases                          List the phases, the current one emphasized
   /phases help                     Print this command's help
 
 NEXT
-  These commands move the work under way along: take its next step, or say
-  what was done and what's next.
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
 
   /next                            Proceed to the next step in the current
                                    multi-step process
   /next help                       Print this command's help
 
 NEXT?
-  These commands move the work under way along: take its next step, or say
-  what was done and what's next.
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
 
   /next?                           The next step in the current multi-step
                                    process
   /next? help                      Print this command's help
 
 WORK STATUS
-  These commands move the work under way along: take its next step, or say
-  what was done and what's next.
+  These commands move the work under way along: take its next step, or say what
+  was done and what's next.
 
   /work-status                     What was recently done, and what's next
   /work-status help                Print this command's help
 
 LOG
-  The log records what was decided and when, and a work session record tells
-  the story of a stretch of work.
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
 
   /log [<message>]                 Write a log entry
   /log summary                     Summarize the log
   /log help                        Print this command's help
 
 LOG THIS
-  The log records what was decided and when, and a work session record tells
-  the story of a stretch of work.
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
 
   /log-this                        Write a log entry for the current work
   /log-this help                   Print this command's help
 
 WORK SESSION
-  The log records what was decided and when, and a work session record tells
-  the story of a stretch of work.
+  The log records what was decided and when, and a work session record tells the
+  story of a stretch of work.
 
   /work-session new | append       Write or append a work session record
   /work-session help               Print this command's help
 
 JOURNAL
-  The journal is the writer's own record of what they think, either stored
-  with the project or kept in a private journal.
+  The journal is the writer's own record of what they think, either stored with
+  the project or kept in a private journal.
 
   /journal, /journal new, /journal entry
                                    Write a shared journal entry
