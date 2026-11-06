@@ -124,3 +124,24 @@ Trigger: When reserving a word as a technical noun or verb in a package's vocabu
 17. Use the STE dictionary's approved meaning where it serves.
 18. Where the approved meaning does not serve but a different word does, recast the sentence under STE Rule 9.1.
 19. Reserve the word in an ETE category only where neither serves.
+
+# Ordinary vocabulary is not reserved and not rewritten
+
+Source: system/language/source/ete/ordinary-vocabulary-is-not-reserved-and-not-rewritten.md
+
+Trigger: When reserving a word, or writing or revising a vocabulary entry
+
+1. ETE conforms its terminology to the STE dictionary. It does not conform its ordinary vocabulary.
+2. This departs from STE Rule 1.1, which admits only approved words, technical nouns, and technical verbs.
+3. What a word names decides which side of the line it falls on.
+4. A word that names something in the subject field is terminology. It is either reserved or rewritten.
+5. A word that does a sentence's grammatical work, joins two statements, or qualifies one is ordinary vocabulary.
+6. Example: `branch` is terminology. `under` is not.
+7. Words such as `as`, `every`, `never`, `under`, `would`, `already`, and `may` are ordinary vocabulary. They are not technical nouns or verbs in any category.
+8. Do not reserve an ordinary-vocabulary word. Reserving it puts a false claim of conformance in a vocabulary. A vocabulary carries no false claim of conformance.
+9. Do not rewrite prose to replace an ordinary-vocabulary word.
+10. To apply this rule, ask what a refused word names.
+11. Reserve the word in a category where it names something in the subject field.
+12. Rewrite the prose where an approved word says the same thing.
+13. Leave the word in place where it is ordinary vocabulary.
+14. Record no entry for an ordinary-vocabulary word.

@@ -1,22 +1,3 @@
-# A commit message states that a task is done, never that it is marked done
-
-Source: system/git/source/a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done.md
-
-1. A commit message never uses "mark ... done" or "mark ... complete".
-2. State the accomplishment as a fact about the work.
-3. Do not phrase it as bookkeeping on a checkbox.
-4. Write **"Task 9 is done"**, not "mark Task 9 done" or "mark Task 9 as complete".
-
-| Don't | Do |
-|---|---|
-| `Log: mark Task 9 done (already passing)` | `Log: Task 9 is done (already passing)` |
-| `mark the predicate task complete` | `the predicate task is done` |
-
-5. Phrase finished work as the task being done. Say "Task N is done" or "X is complete".
-6. This applies to the commit subject and the commit body.
-7. Prose addressed to the user follows the same preference.
-8. In prose addressed to the user, state the plain fact. Do not describe the act of marking it.
-
 # Run the test suite after changes, before considering whether to commit
 
 Source: system/git/source/run-the-test-suite-after-changes-before-considering-whether-to-commit.md

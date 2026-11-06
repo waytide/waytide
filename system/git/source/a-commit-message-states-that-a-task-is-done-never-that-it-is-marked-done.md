@@ -1,5 +1,7 @@
 # A commit message states that a task is done, never that it is marked done
 
+**Trigger:** When writing a commit message
+
 A commit message must not use the phrasing "mark ... done" (or "mark ... complete"). State the accomplishment as a fact about the work, not as an act of bookkeeping on a checkbox. For example, write **"Task 9 is done"** — not "mark Task 9 done" / "mark Task 9 as complete".
 
 | Don't | Do |
@@ -37,6 +39,8 @@ A commit message must not use the phrasing "mark ... done" (or "mark ... complet
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named commit-says-task-is-done-not-mark-done and titled "Commit messages: never say "mark ... done" — state the fact ("Task 9 is done")".
 
 Until Mon Oct 26 2026 this rule's example commit carried "(green-on-arrival)", a term since replaced by a literal phrase.
@@ -62,3 +66,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:34:57 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:18:12 PM PT
