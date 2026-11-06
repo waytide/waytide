@@ -377,6 +377,41 @@ migrate_items() {
   echo "Commit the move."
 }
 
+# Carry a project's observations from the state Stated to Recorded. An observation's one state
+# was Stated until 2026-10-28, and its filename ended -STATED. A rule change names the new word
+# but cannot rename a project's own files, so the installer does it.
+#
+# The same narrow semantics as the migrations above: each observation moves only when its new
+# name is absent, and a clash is reported and left alone. Plain mv rather than git mv, for
+# records that were never committed. This runs after migrate_items, so an observation still in
+# waytide/local/ideas/ is moved into items/ first.
+migrate_observation_state() {
+  items_dir="waytide/local/items"
+
+  [ -d "$items_dir" ] || return 0
+
+  migrated=0
+  for stated in "$items_dir"/*-STATED.md; do
+    [ -f "$stated" ] || continue
+    recorded="${stated%-STATED.md}-RECORDED.md"
+
+    if [ -e "$recorded" ]; then
+      echo "Both $stated and $recorded are present — neither is touched."
+      echo "The -STATED file is the old name. Reconcile the two and remove it."
+      continue
+    fi
+
+    sed 's/^\(- \)\{0,1\}\*\*State:\*\* Stated$/\1**State:** Recorded/' "$stated" > "$recorded"
+    rm "$stated"
+    migrated=$((migrated + 1))
+  done
+
+  if [ "$migrated" -gt 0 ]; then
+    echo "Renamed $migrated observation(s) from -STATED to -RECORDED — an observation's state is now Recorded."
+    echo "Commit the rename."
+  fi
+}
+
 # 0. Print the bootstrap section and stop. Nothing is installed and nothing is placed,
 #    so this is safe to run anywhere, including from the authoring source. It exists so
 #    refresh-packages.sh can compare a project's AGENTS.md against the current text
@@ -409,3 +444,4 @@ warn_ignored_claude_files
 migrate_work_sessions
 migrate_logs
 migrate_items
+migrate_observation_state
