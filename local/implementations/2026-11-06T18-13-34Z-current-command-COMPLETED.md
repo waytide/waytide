@@ -10,7 +10,7 @@
 
 ## State
 
-- **State:** Active
+- **State:** Completed
 
 ## Setup
 
@@ -27,7 +27,9 @@
 - **2026-11-06** — The working location is branch and worktree, selected by the engineer at the start.
 - **2026-11-06** — The feature concludes without an engineer's verdict, selected by the engineer at the start.
 - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+- **2026-11-06** — Branch deletion and worktree removal, selected by the engineer at the conclusion.
 
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 10:13:34 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:20:23 AM PT
