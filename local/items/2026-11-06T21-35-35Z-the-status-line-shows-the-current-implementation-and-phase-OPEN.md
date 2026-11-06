@@ -11,6 +11,7 @@
 
 - **2026-11-06** — Where more than one implementation is current, the second line shows the one most recently acted upon.
 - **2026-11-06** — Where no implementation is current, the status line has no second line.
+- **2026-11-06** — Where the implementation has no phases, the second line shows no phase.
 
 ## History
 
@@ -20,8 +21,11 @@ As the engineer stated it, on which implementation is shown: "The one that is mo
 
 As the engineer stated it, on what the second line shows when nothing is current: "The second line should not even display"
 
+As the engineer stated it, on how the phase is shown where the implementation has no phases: "It should not be displayed"
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 1:35:35 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:36:51 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:37:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:37:39 PM PT
