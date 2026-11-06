@@ -188,10 +188,16 @@ with these options:
 
 1. Under unattended work, present a plan before generating.
 2. Do not generate until the engineer accepts the plan. This is the one wait in unattended work.
-3. After presenting the plan, ask for acceptance through the selection UI, in these exact words:
+3. Ask for acceptance through the selection UI. Open the question with *Accept the plan?*, and put the plan inside the question, after those words, as its list. For example:
 
 > Accept the plan?
 >
+> 1. Write the test first.
+> 2. Implement the script, so that the test passes.
+> 3. Run the suite.
+
+with these exact options:
+
 > **Accept** — The agent makes the decisions and generates through.
 >
 > **Revise** — Say what to change. The agent revises the plan and shows it again.
@@ -205,7 +211,7 @@ with these options:
 10. Use short sentences and active voice in the plan.
 11. Use no semicolon in the plan.
 12. Put one idea in each list item.
-13. Present the plan in the response.
+13. Present the plan inside the selection's question, not only in the response.
 14. Do not write the plan to a file. It is not a `foundation` planning record.
 
 # Each hinge displays the actuation as its anchor, and the contexts once
