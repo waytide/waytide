@@ -1,6 +1,6 @@
 # Announce a branch switch in a bordered block
 
-**Trigger:** When switching the working tree to another branch (including `git switch -c`)
+**Trigger:** When switching the working tree to another branch (including `git switch -c`), or when the branch-switch hook reports a switch
 
 When the agent switches branches, it prints this block. The block has a border above and below, made of `=` characters:
 
@@ -16,6 +16,14 @@ BRANCH SWITCHED
 ```
 
 **Print it on every switch.** Print it when the engineer asked for the switch. Print it when the agent switched to reach a file. Print it when the switch returns to a branch the session started on.
+
+## The hook reports the switch
+
+**A hook reports each switch a shell command makes.** The Slasher plugin runs the git package's `branch-switch.sh` before and after each shell command. Where the branch changed, it tells the agent the two branches, and tells it to print the block. **Print the block at once when the hook reports a switch.** The hook cannot know why the switch was made, so the agent fills the reason.
+
+**Print the block for a switch the hook does not report, too.** A switch made by a tool other than the shell is one. The hook makes the announcement reliable, and the announcement stays the agent's.
+
+**The hook exists because an on-demand rule depends on the agent loading it before the act.** An agent that switched without loading this rule printed nothing, and nothing showed the engineer that the branch had changed.
 
 ## The three fields
 
@@ -45,6 +53,8 @@ BRANCH SWITCHED
 
 ## History
 
+Until Fri Nov 6 2026 nothing reported a switch, and the block depended on the agent loading this rule before it switched.
+
 Until 2026-10-23 the rule said that any unmissable form satisfied it, with `=` characters above and below the settled one.
 
 ## Compressed
@@ -68,6 +78,13 @@ BRANCH SWITCHED
 5. Print it when the switch was made to reach a file.
 6. Print it when the switch goes back to the branch the session started on.
 7. Print it before reporting anything else about the work.
+
+## The hook reports the switch
+
+1. The Slasher plugin runs the git package's `branch-switch.sh` before and after each shell command. Where the branch changed, it tells the agent the two branches, and tells it to print the block.
+2. When the hook reports a switch, print the block at once.
+3. Fill the reason yourself. The hook cannot know it.
+4. Print the block for a switch the hook does not report, too.
 
 ## The three fields
 
@@ -95,11 +112,13 @@ BRANCH SWITCHED
 - 2026-10-23, revised: the `=` border required, and a push named among the cases that print no block; not checked
 - 2026-10-24, revised: written as a numbered list; checked twice, every directive kept
 - 2026-10-28, revised: Why points removed, solubility 80 → 84, clarity 0.75 → 0.86; checked: 13 directives, 13 kept, 0 less precise, 0 lost
+- 2026-11-06, revised: the hook reports the switch; checked: 25 directives, 23 kept, 2 less precise, 0 lost, 1 repair, the hook's script and its instruction to print named; re-checked: 25 directives, 25 kept, 0 less precise, 0 lost
 
 Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
 - the run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before work is recorded
+- the `foundation` the-waytide-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin that carries the hook
 
 ---
 
@@ -115,3 +134,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:39:11 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT

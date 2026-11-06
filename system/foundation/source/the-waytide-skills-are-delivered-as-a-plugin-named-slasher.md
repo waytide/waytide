@@ -6,9 +6,9 @@
 
 **Each package carries its own skills**, under `skills/` in the package: `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rules it hands its act to.
 
-**The plugin directory is assembled from foundation's `plugin/` directory and the active packages' skills.** `plugin/` holds the plugin's manifest and its session-start hooks, which the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule governs. `assemble-plugin.sh` copies it, then each active package's `skills/`, into `.claude/skills/slasher/`, and leaves out a deactivated package's. `install.sh` and `refresh-packages.sh` run it in a consuming project, and `compile.sh` runs it in the Waytide authoring source. A package activated or deactivated takes its skills with it at the next assembly.
+**The plugin directory is assembled from foundation's `plugin/` directory and the active packages' skills.** `plugin/` holds the plugin's manifest and its hooks: the session-start hooks, which the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule governs, and the hook that reports a branch switch, which the `git` package's announce-a-branch-switch-in-a-bordered-block rule governs. `assemble-plugin.sh` copies it, then each active package's `skills/`, into `.claude/skills/slasher/`, and leaves out a deactivated package's. `install.sh` and `refresh-packages.sh` run it in a consuming project, and `compile.sh` runs it in the Waytide authoring source. A package activated or deactivated takes its skills with it at the next assembly.
 
-**The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills and the session-start hooks. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
+**The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills and the hooks. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
 
 **A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`.
 
@@ -22,7 +22,7 @@
 
 1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
-3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the session-start hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
+3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
@@ -38,6 +38,7 @@
 - 2026-11-03, revised: a skill may run a script that prints its act's instruction; checked: 18 directives, 17 kept, 1 less precise, 0 lost. Left less precise: the name collision's scope on the machine, as in earlier checks
 - 2026-11-04, revised: the plugin carries foundation's plugin/ directory, with the session-start hooks, and assemble-plugin.sh builds it; checked: 25 directives, 21 kept, 4 less precise, 0 lost, 1 repair, the notice rule added to Related; re-checked: 25 directives, 20 kept, 5 less precise, 0 lost. Left less precise: that assembling copies plugin/ before the skills, that activation takes effect at the next assembly, the reasons the directory is committed and a skill runs a script, and that a changed skill reaches the plugin at the next install or refresh, each following from what the compressed text states
 - 2026-11-05, revised: `/slasher help` prints the full help, and a bare `/slasher` does nothing, as the engineer directed; not re-checked
+- 2026-11-06, revised: the plugin's hooks include the branch-switch hook; checked: 24 directives, 21 kept, 3 less precise, 0 lost, 0 repairs. Left less precise: that no other command on the machine claims the name, and the reasons the directory is committed and a skill runs a script, each as the 2026-11-04 check left them
 
 ## History
 
@@ -56,6 +57,7 @@ Related:
 - the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-always-takes-help rule — the thin skill
 - the a-project-declares-which-installed-packages-are-active rule — the active packages
 - the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the session-start hooks the plugin carries
+- the `git` package's announce-a-branch-switch-in-a-bordered-block rule — the branch-switch hook the plugin carries
 
 ---
 
@@ -67,3 +69,4 @@ Changed by Scott Bellware on Tue Nov 3 2026 at 2:55:18 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 3:41:02 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:07:04 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT

@@ -88,7 +88,7 @@ Trigger: When the engineer gives a commit SHA
 
 Source: system/git/source/announce-a-branch-switch-in-a-bordered-block.md
 
-Trigger: When switching the working tree to another branch (including `git switch -c`)
+Trigger: When switching the working tree to another branch (including `git switch -c`), or when the branch-switch hook reports a switch
 
 1. When the agent switches branches, it prints this block.
 2. The block has a border of `=` characters above and below:
@@ -109,6 +109,13 @@ BRANCH SWITCHED
 5. Print it when the switch was made to reach a file.
 6. Print it when the switch goes back to the branch the session started on.
 7. Print it before reporting anything else about the work.
+
+## The hook reports the switch
+
+1. The Slasher plugin runs the git package's `branch-switch.sh` before and after each shell command. Where the branch changed, it tells the agent the two branches, and tells it to print the block.
+2. When the hook reports a switch, print the block at once.
+3. Fill the reason yourself. The hook cannot know it.
+4. Print the block for a switch the hook does not report, too.
 
 ## The three fields
 

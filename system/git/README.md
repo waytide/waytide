@@ -16,7 +16,7 @@ One rule governs how a commit is **read** rather than how it is made:
 
 One rule governs a branch operation rather than a commit:
 
-- **Announce a branch switch in a bordered block**. A switch changes what every path in the repository means, and it is the one operation whose effect is invisible in every later report. The block gives the branch left, the branch reached, and why, inside a border that ordinary output cannot be mistaken for.
+- **Announce a branch switch in a bordered block**. A switch changes what every path in the repository means, and it is the one operation whose effect is invisible in every later report. The block gives the branch left, the branch reached, and why, inside a border that ordinary output cannot be mistaken for. A hook in the Slasher plugin reports each switch a shell command makes, so the block does not depend on the agent remembering the rule.
 
 This is a standalone package: it includes no other packages.
 
@@ -50,3 +50,4 @@ Waytide is licensed under the **Eventide Common Interest License**. It is source
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:58:01 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:15:22 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:54:04 AM PT
