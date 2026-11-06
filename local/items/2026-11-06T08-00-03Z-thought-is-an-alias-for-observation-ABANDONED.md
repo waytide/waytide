@@ -1,6 +1,6 @@
 # "Thought" is an alias for observation
 
-- **State:** Open
+- **State:** Abandoned
 - **Tags:** [idea]
 
 **An observation could also be recorded as a "thought":** `/thought` would be an alias of `/item observation`, as `/observation` and `/observe` are, and `/item thought` would be an alias of `/item observation` within `/item`.
@@ -21,3 +21,4 @@ As the engineer first stated it: "Iead: a "/thought" alias and "/item thought" a
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 12:00:03 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:36 PM PT
