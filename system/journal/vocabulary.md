@@ -2,7 +2,7 @@
 
 The journal package's vocabulary. Five terms, and one substitution that keeps them apart from the records the agent writes. Binding — use these terms with these meanings in rules, entries, prose, and dialogue.
 
-**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
+**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
 
 ## Terms
 
@@ -58,3 +58,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:55:34 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:36:21 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT

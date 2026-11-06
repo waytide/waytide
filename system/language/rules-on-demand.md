@@ -35,7 +35,7 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `
 18. Step 5: use an ETE category only where no STE category holds the word.
 19. Do not reach step 5 until an STE category has been tried and refused.
 20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
-21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides.
+21. Step 6: write the entry in the vocabulary of the package whose domain the term belongs to, per the foundation a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved.
 22. The entry gives the definition.
 23. The engineer decides the term's category, because a term is a design decision.
 24. Put the category to the engineer through the selection UI.

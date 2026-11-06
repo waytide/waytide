@@ -4,34 +4,8 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
 
 1. A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces.
 2. It is binding.
-3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue.
-4. Give a package a vocabulary only when its domain has specialized words.
-5. A package whose subject is written in ordinary words has no vocabulary. The absence is correct, not missing.
-6. `git` and `ext/ruby-lang` have none. Six packages do.
-7. Put a term in the vocabulary of the package whose domain it belongs to.
-8. Put a domain-less term or substitution in `language`. Put a domain-specific substitution in its own package's vocabulary.
-
-## What a vocabulary holds
-
-1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
-2. A term is a glossary entry, and it says what the concept is.
-3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
-4. **Discontinuations** name a word removed from use with nothing in its place. `discriminator` went because the concept went.
-5. A substitution names two words. A discontinuation names one.
-6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
-7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
-8. Where a word was taken rather than coined, the entry says so in its own prose.
-9. That statement is an **origin**, not a kind of entry.
-
-## Every word in a vocabulary is approved or reserved
-
-1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
-2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
-3. A reserved word is a technical noun or verb in a category its entry names: STE Rule 1.5, 1.6, or 1.12, or an ETE category. The vocabulary that holds it is the approval STE Rule 1.8 requires.
-4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
-5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
-6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary.
-7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
+3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Waytide's prose is written.
+4. This rule governs using a vocabulary. Writing one, what it holds, and where a term goes are the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule's, which loads when a vocabulary file is written.
 
 ## Which vocabulary decides
 
@@ -43,24 +17,16 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
    4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
 3. When a word appears in two vocabularies, the more specific one decides.
 
-## A project's own vocabulary is `waytide/local/vocabulary.md`
+## A project's own vocabulary binds
 
-1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
-2. It has the same shape as a package's `vocabulary.md`.
-3. It takes no datetime prefix. It is a structural file, not a dated decision. See the file-names rule.
-4. It is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
-5. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
-6. It is optional, and its absence is not a defect.
-7. Write no such file until there is a term to write.
-8. It is not a rule. Do not put it in `rules/`.
+1. `waytide/local/vocabulary.md` is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
+2. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
+3. It is optional, and its absence is not a defect.
 
 ## Specialization is not conflict
 
 1. A package can narrow a general term rather than contradict it. The narrower entry rests on the general one and does not displace it.
 2. Example: `language` defines `actuation` as the invocation of a unit from its use site. `design-by-efferent` adds that the actuation is written before any implementation.
-3. Where a package narrows a term, its entry names the general term it narrows.
-4. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
-5. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
 
 # A paragraph is one line, and the reader's editor wraps it
 
@@ -218,7 +184,7 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 10. The rules override default behavior where they conflict.
 11. Explicit user instructions still win over the rules.
 12. Read `waytide/system/foundation/` first. It defines the system.
-13. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
+13. The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule settles where `waytide/local/vocabulary.md` sits and why.
 14. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts

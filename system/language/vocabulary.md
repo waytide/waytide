@@ -2,7 +2,7 @@
 
 The language package's vocabulary: the terms it defines and the word substitutions it enforces. Binding — use these terms and swaps in code, tests, rules, designs, commits, and prose.
 
-**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
+**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
 
 The *principles* that govern word selection stay as rules — `name-concepts-literally-not-by-analogy-code-or-jargon`, `no-slang`, `communicate-plainly-and-name-the-actual-thing`, `language-is-used-precisely-here-and-words-are-load-bearing`. This file holds the settled lexicon those principles produce.
 
@@ -213,3 +213,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 12:04:03 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 12:41:44 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 12:45:47 AM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:35 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT

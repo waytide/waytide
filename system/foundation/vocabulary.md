@@ -2,7 +2,7 @@
 
 The foundation package's vocabulary: the terms it defines and the word substitutions it enforces. These are the terms every other package and every project uses, because foundation defines the artifacts the rest of the system writes into. Binding — use these terms and swaps in rules, artifacts, prose, and dialogue.
 
-**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
+**Every word here is approved in the STE dictionary, or reserved in a category its entry names.** The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule sets out what each means, what a reserved word's entry states, and what silence means in an entry.
 
 ## Terms
 
@@ -160,3 +160,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 1:34:54 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:40:05 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 1:57:17 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:35 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT

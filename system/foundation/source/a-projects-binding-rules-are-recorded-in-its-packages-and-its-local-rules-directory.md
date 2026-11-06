@@ -50,7 +50,7 @@ When a new binding convention is set, write it in `waytide/local/rules/` in the 
 10. The rules override default behavior where they conflict.
 11. Explicit user instructions still win over the rules.
 12. Read `waytide/system/foundation/` first. It defines the system.
-13. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule settles where `waytide/local/vocabulary.md` sits and why.
+13. The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule settles where `waytide/local/vocabulary.md` sits and why.
 14. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
@@ -135,7 +135,8 @@ Until Thu Oct 29 2026 every compiled rule was printed at session start. Phase 3 
 Related:
 
 - the file-names rule
-- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the project's own vocabulary and where it sits
+- the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the project's own vocabulary, and which vocabulary decides
+- the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule — where the project's own vocabulary sits
 - the rules-may-establish-a-mindset-rather-than-a-mechanic rule
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 
@@ -180,3 +181,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 9:43:00 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:38:17 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT

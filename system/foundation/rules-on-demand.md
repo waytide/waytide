@@ -405,6 +405,57 @@ Trigger: When writing or revising an entry in a vocabulary.md file
 3. A discontinuation's entry names the word and says it is not used.
 4. It does not narrate when the word was dropped or what carried it before.
 
+# A vocabulary file holds terms, substitutions, and discontinuations, and each word is approved or reserved
+
+Source: system/foundation/source/a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved.md
+
+Trigger: When writing, revising, or creating a `vocabulary.md` file
+
+1. This rule governs writing a vocabulary. The a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule governs using one.
+2. Give a package a vocabulary only when its domain has specialized words.
+3. A package whose subject is written in ordinary words has no vocabulary. The absence is correct, not missing.
+4. `git` and `ext/ruby-lang` have none. Six packages do.
+5. Put a term in the vocabulary of the package whose domain it belongs to.
+6. Put a domain-less term or substitution in `language`. Put a domain-specific substitution in its own package's vocabulary.
+
+## What a vocabulary holds
+
+1. **Terms** are the concepts the package defines, such as `solubility`, `efferent`, `hinge`, `precondition`.
+2. A term is a glossary entry, and it says what the concept is.
+3. **Substitutions** name a word not to write, and the word to write instead. Examples: `conform` rather than "sweep", `verified` rather than "green".
+4. **Discontinuations** name a word removed from use with nothing in its place, because the concept went, as `discriminator` did.
+5. A substitution names two words. A discontinuation names one.
+6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
+7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+8. Where a word was taken rather than coined, the entry says so in its own prose.
+9. That statement is an **origin**, not a kind of entry.
+
+## Every word in a vocabulary is approved or reserved
+
+1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
+2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
+3. A reserved word is a technical noun or verb in a category its entry names: under STE Rule 1.5 for a noun the dictionary omits, STE Rule 1.6 for a noun it lists and refuses, STE Rule 1.12 for a verb, or an ETE category under the ete-declares-its-own-categories rule. The vocabulary that holds it is the approval STE Rule 1.8 requires.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
+6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, which is not reserved and not rewritten.
+7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
+
+## A project's own vocabulary is `waytide/local/vocabulary.md`
+
+1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
+2. It has the same shape as a package's `vocabulary.md`.
+3. It takes no datetime prefix. It is a structural file, not a dated decision. See the file-names rule.
+4. It is read at session start and binds, as the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule says. That is why it sits beside `rules/`, not in a working directory.
+5. It is optional, and its absence is not a defect.
+6. Write no such file until there is a term to write.
+7. It is not a rule. Do not put it in `rules/`.
+
+## Saying how an entry relates to a general term
+
+1. Where a package narrows a term, its entry names the general term it narrows.
+2. Where a package keeps a word the `language` vocabulary substitutes away, its entry says so and gives the reason.
+3. A reader must not have to work out which case an entry is. The entry says whether it narrows or replaces the general term.
+
 # An implementation runs on a branch to a declared end
 
 Source: system/foundation/source/an-implementation-runs-on-a-branch-to-a-declared-end.md
