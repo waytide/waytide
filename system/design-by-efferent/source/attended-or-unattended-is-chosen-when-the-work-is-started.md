@@ -21,7 +21,7 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 **The question is asked in these words:**
 
-> Human in the loop?
+> Human in the loop
 >
 > - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
 > - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
@@ -84,7 +84,7 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Human in the loop?*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
 
 Record the selection as a confirmation in the feature or experiment record. Declare it at the top of the loop record. Run the hinges either way.
 
@@ -108,7 +108,7 @@ Record the selection as a confirmation in the feature or experiment record. Decl
 14. The option set shows that attended is the default.
 15. Ask the question in these exact words, with the agent's own figures:
 
-> Human in the loop?
+> Human in the loop
 >
 > - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
 > - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
@@ -158,7 +158,7 @@ with these options:
 
 - 2026-10-24, compressed: compression 0.48, change 0.72, solubility 36 → 59, clarity 0.62 → 0.86, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 59 → 54, clarity 0.86 → 0.76; checked: 35 directives, 35 kept, 0 less precise, 0 lost
-- 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, as the engineer directed, not re-checked
+- 2026-11-06, revised: the question renamed and given the unattended confidence; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept; the question's confidence heading then removed, and the question mark after *Human in the loop* removed, as the engineer directed, not re-checked
 
 ## History
 

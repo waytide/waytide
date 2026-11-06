@@ -6,7 +6,7 @@
 
 **As the engineer stated it:** I want to work on presenting the confidence percentage in the "Who decides?" label.
 
-**The participation question carries the agent's confidence in doing the work unattended, as three percentages, in the question itself:** *Human in the loop?*, then each figure on a line of its own with a sentence that says what it measures: overall score 60%, works 90%, voice 65%. The first is the overall score, the agent's own estimate that the work both works and is what the engineer would have done. **Works** is the agent's estimate that the work it builds works. **Voice** is its estimate that it does what the engineer would do. It carries out part of the item `2026-11-05T02-29-51Z-the-participation-question-shows-the-unattended-plan-and-a-confidence`. The attended-or-unattended-is-chosen-when-the-work-is-started rule, which fixes the question's words, changes with it.
+**The participation question carries the agent's confidence in doing the work unattended, as three percentages, in the question itself:** *Human in the loop*, then each figure on a line of its own with a sentence that says what it measures: overall score 60%, works 90%, voice 65%. The first is the overall score, the agent's own estimate that the work both works and is what the engineer would have done. **Works** is the agent's estimate that the work it builds works. **Voice** is its estimate that it does what the engineer would do. It carries out part of the item `2026-11-05T02-29-51Z-the-participation-question-shows-the-unattended-plan-and-a-confidence`. The attended-or-unattended-is-chosen-when-the-work-is-started rule, which fixes the question's words, changes with it.
 
 ## State
 
@@ -37,6 +37,7 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The first figure is called the *overall score*, replacing *combined*, as the engineer directed.
 - **2026-11-06** — Each figure is on a line of its own, with a sentence that says what it measures, as the engineer directed.
 - **2026-11-06** — The question carries no heading over the figures, as the engineer directed. The line *The agent's confidence in doing this work unattended:* was added and then removed.
+- **2026-11-06** — *Human in the loop* carries no question mark, as the engineer directed.
 
 ---
 

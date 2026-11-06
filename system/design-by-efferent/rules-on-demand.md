@@ -137,7 +137,7 @@ Trigger: When starting a feature or an experiment
 14. The option set shows that attended is the default.
 15. Ask the question in these exact words, with the agent's own figures:
 
-> Human in the loop?
+> Human in the loop
 >
 > - **Overall score: 60%.** How sure the agent is that, working alone, it does the work as you would have it done.
 > - **Works: 90%.** How sure the agent is that what it builds alone works, and does what the work was started to do.
