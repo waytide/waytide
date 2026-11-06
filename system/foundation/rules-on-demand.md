@@ -1249,7 +1249,7 @@ Trigger: When writing a Waytide skill, or installing, refreshing, or activating 
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
-7. A bare `/slasher` prints every active skill's help together, in the order of the help text.
+7. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
 
 # The work-sessions directory holds one record per work session
 

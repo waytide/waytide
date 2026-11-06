@@ -16,7 +16,7 @@
 
 **How to apply:** write a skill in its package's `skills/<command>/SKILL.md`, thin, handing its act to a rule. Assemble `.claude/skills/slasher/` from foundation's `plugin/` and the active packages' skills at install and refresh, with `plugin.json` giving `name` as `slasher` and `displayName` as `Slasher`, and commit it. Edit no skill in the assembled directory.
 
-**Each skill carries its own help**, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it. A bare `/slasher` prints every active skill's help together, in the order of the help text.
+**Each skill carries its own help**, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
 
 ## Compressed
 
@@ -26,7 +26,7 @@
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each skill carries its own help, as `help.md` beside its `SKILL.md`: that command's section of the help text. `/<command> help` prints it.
-7. A bare `/slasher` prints every active skill's help together, in the order of the help text.
+7. `/slasher help` prints every active skill's help together, in the order of the help text. A bare `/slasher` does nothing.
 
 ## Compression
 
@@ -37,8 +37,11 @@
 - 2026-11-03, revised: the plugin is named slasher, a term swap the engineer settled; not re-checked
 - 2026-11-03, revised: a skill may run a script that prints its act's instruction; checked: 18 directives, 17 kept, 1 less precise, 0 lost. Left less precise: the name collision's scope on the machine, as in earlier checks
 - 2026-11-04, revised: the plugin carries foundation's plugin/ directory, with the session-start hooks, and assemble-plugin.sh builds it; checked: 25 directives, 21 kept, 4 less precise, 0 lost, 1 repair, the notice rule added to Related; re-checked: 25 directives, 20 kept, 5 less precise, 0 lost. Left less precise: that assembling copies plugin/ before the skills, that activation takes effect at the next assembly, the reasons the directory is committed and a skill runs a script, and that a changed skill reaches the plugin at the next install or refresh, each following from what the compressed text states
+- 2026-11-05, revised: `/slasher help` prints the full help, and a bare `/slasher` does nothing, as the engineer directed; not re-checked
 
 ## History
+
+On Thu Nov 5 2026 a bare `/slasher` printed the full help, until the engineer moved it to `/slasher help` the same day.
 
 Until Wed Nov 4 2026 the plugin held only the skills and its manifest, which `install.sh` wrote, and `install.sh` assembled it itself.
 
@@ -63,3 +66,4 @@ Changed by Scott Bellware on Tue Nov 3 2026 at 2:41:06 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 2:55:18 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 3:41:02 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 6:07:04 PM PT
