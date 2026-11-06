@@ -1,6 +1,6 @@
 # Every root command has a manual page
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [idea]
 
 **Each root command of the Waytide skills has a manual page of its own**, in the form of a Unix manual: a name, a synopsis, a description, and the sections the command needs. Two are written already, in `scratch/item-manual.md` and `scratch/feature-manual.md`. It belongs with the item `2026-10-29T16-24-42Z-waytide-skills`, and with `2026-10-30T18-44-53Z-every-root-command-takes-a-help-subcommand`.
@@ -18,3 +18,4 @@ As the engineer first stated it: "Idea: Generate a manual file for every root co
 ---
 
 Authored by Scott Bellware on Fri Oct 30 2026 at 1:58:27 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 1:04:20 PM PT
