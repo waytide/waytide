@@ -1,6 +1,6 @@
 # Waytide skills
 
-- **State:** Open
+- **State:** Realized
 - **Tags:** [idea]
 
 **Some of Waytide is delivered as Claude Code skills.** A skill loads when its command is typed or its task is recognized, rather than in the session-start read. The hypothesis logged as `2026-10-29T16-23-07Z-waytide-as-a-set-of-skills-is-hypothesized` sorts the rules into those always in force, those triggered by a command, and those triggered by a condition, and names the test that would refute it.
@@ -370,3 +370,4 @@ Changed by Scott Bellware on Mon Nov 2 2026 at 6:58:25 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:20:03 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:47:11 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:04:45 AM PT
