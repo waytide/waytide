@@ -1,4 +1,7 @@
 EXPERIMENTS
+  An experiment tests a question on its own branch or worktree, to a declared
+  end. Features and experiments are both kinds of implementations.
+
   /experiment new                  Start an experiment
   /experiment new with phases      Start an experiment, asking for its phases
   /experiment status               Phases, current phase, and its goal

@@ -67,7 +67,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 ## Whether the work reaches a verdict, chosen at the start
 
-**Put through the selection interface beside the working location and the participation, and recorded as a confirmation.** Work that reaches a verdict forecasts before its work and ends Affirmed, Refuted, or Inconclusive. Work without one ends Completed. The selection follows neither the kind nor whether the work opens with a question or an intent.
+**Put through the selection interface beside the working location and the participation, and recorded as a confirmation.** Work that reaches a verdict forecasts before its work and ends Affirmed, Refuted, or Inconclusive. Work without one ends Completed. The selection follows neither the kind nor whether the work opens with a question or an intent. **Its two options read, in these words:** *Conclude with an engineer's verdict* and *Conclude without an engineer's verdict*. A verdict is the engineer's declaration, so the options name whose it is.
 
 **As the engineer stated it:** an intent can also bring a forecast and verdict.
 
@@ -206,6 +206,7 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 2. Work that reaches a verdict forecasts before its work and ends Affirmed, Refuted, or Inconclusive.
 3. Work without a verdict ends Completed.
 4. The selection follows neither the kind nor whether the work opens with a question or an intent.
+5. Its two options read, in these words: *Conclude with an engineer's verdict* and *Conclude without an engineer's verdict*.
 
 ## The end
 
@@ -266,8 +267,11 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 - 2026-10-29, revised: a feature may run in phases; checked: 66 directives, 66 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the verdict choice, not the kind, decides the parts that differ; checked: 72 directives, 71 kept, 1 less precise, 0 lost, 1 repair; re-checked: 71 kept, 1 less precise, 1 repair; re-checked: 72 directives, 72 kept, 0 less precise, 0 lost
 - 2026-11-02, revised: a phase's verdict is chosen for that phase; checked: 63 directives, 63 kept, 0 less precise, 0 lost. The body's forecast sentence was then made to say the phase, as the compressed text already did
+- 2026-11-06, revised: the verdict question's options are fixed in words; checked: 72 directives, 71 kept, 1 less precise, 0 lost. Left less precise, untouched by this revision: that only an affirmed phase merges back, not a refuted or inconclusive one
 
 ## History
+
+Until Fri Nov 6 2026 the verdict question's options had no fixed words.
 
 Until Thu Nov 5 2026 its trigger read *When starting, working within, adding a worktree to, suspending, or concluding an experiment or feature implementation*, which was not a safe one.
 
@@ -325,3 +329,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:02:31 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:40:11 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:34:36 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 12:03:54 AM PT

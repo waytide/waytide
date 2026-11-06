@@ -1,4 +1,7 @@
 PHASE
+  Phases split a feature or an experiment into steps, run one at a time, each
+  on its own sub branch.
+
   /phase, /phase current           The current phase, its goal, and its branch
   /phase add <name>                Add a phase after the last
   /phase start                     Start the next phase

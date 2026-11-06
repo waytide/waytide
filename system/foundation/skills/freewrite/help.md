@@ -1,4 +1,7 @@
 FREEWRITING
+  Freewriting records points as they are said, freeform in no order, and
+  organizes them when the writer is done.
+
   /freewrite, /freewrite begin     Begin freewriting
   /freewrite end                   End it, and organize what was said
   /freewrite resume                Resume a freewrite that has ended

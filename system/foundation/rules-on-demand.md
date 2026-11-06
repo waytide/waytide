@@ -547,6 +547,7 @@ Trigger: When starting, adding a worktree to, suspending, or concluding an exper
 2. Work that reaches a verdict forecasts before its work and ends Affirmed, Refuted, or Inconclusive.
 3. Work without a verdict ends Completed.
 4. The selection follows neither the kind nor whether the work opens with a question or an intent.
+5. Its two options read, in these words: *Conclude with an engineer's verdict* and *Conclude without an engineer's verdict*.
 
 ## The end
 
