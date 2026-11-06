@@ -32,7 +32,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
 
 **The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
@@ -61,7 +61,7 @@ Above 70%, the question carries no warning, and neither option is marked. The en
 
 **Neither the question nor an option names a hinge.** The words are fixed for that reason. The decision is put at a feature's or an experiment's **start**. An engineer meeting this system has not yet met a hinge, a gate, or the loop. So *the loop waits at each hinge* asks them to hold three reserved terms before they can answer. **Human in the loop** is a phrase an engineer knows before meeting this system, and it is the whole of what the decision settles.
 
-**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names only the agent, because under it the engineer has no part.
+**The option says what each party does, in that order.** *You decide. The agent automates.* names the engineer's part first, because that part is what the engineer is choosing to keep or to give up. The unattended option names only what the agent does, because under it the engineer has no part after the plan. It says the plan comes first, so the engineer knows, while choosing, that they will see the intended path before any work is done.
 
 **The vocabulary is not being avoided, only deferred.** The hinges are named the moment the loop reaches the first one, where the engineer sees an actuation rather than a definition.
 
@@ -104,7 +104,7 @@ A record that showed options put to an engineer who was not there would be worse
 
 **How to apply:** at a feature's or an experiment's start, ask **attended or unattended** through the selection UI. Ask it alongside the working location. Attended is the default.
 
-Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent decides and generates through.* as the options. Name no hinge in the question or in an option.
+Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent shows you its plan first. Then it decides and generates through.* as the options. Name no hinge in the question or in an option.
 
 Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
@@ -138,7 +138,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
@@ -179,7 +179,7 @@ with these options:
 3. The plan is a list.
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
+6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
 7. Use short sentences and active voice in the plan.
 8. Use no semicolon in the plan.
 9. Put one idea in each list item.
@@ -194,6 +194,7 @@ with these options:
 - 2026-11-06, revised: a warning and the Attended recommendation at an overall score of 70% or lower; checked: 52 directives, 52 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept; the warning's words then set by the engineer, not re-checked; the overall score's label then set to *Agent's confidence* by the engineer, and the warning's words changed to match, not re-checked; the works figure's label then set to *It'll work* by the engineer, not re-checked; the voice figure's label then set to *Your style*, then to *Satisfactory*, then to *Approval*, then to *Your approval*, by the engineer, not re-checked; the warning's words then set again by the engineer, not re-checked
 - 2026-11-06, revised: the risk of redo added, as the engineer directed; checked: 57 directives, 57 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the figures recorded in the start confirmation, as the engineer directed; checked: 58 directives, 58 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
+- 2026-11-06, revised: the Unattended option says the plan comes first, as the engineer directed; checked: 50 directives, 50 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 
 ## History
 

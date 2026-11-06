@@ -147,7 +147,7 @@ with these options:
 
 > **Attended** — You decide. The agent automates.
 >
-> **Unattended** — The agent decides and generates through.
+> **Unattended** — The agent shows you its plan first. Then it decides and generates through.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures.
@@ -188,7 +188,7 @@ with these options:
 3. The plan is a list.
 4. Use an ordered list where each step rests on the one above it.
 5. Use a bullet list where the steps are independent.
-6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`.
+6. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
 7. Use short sentences and active voice in the plan.
 8. Use no semicolon in the plan.
 9. Put one idea in each list item.

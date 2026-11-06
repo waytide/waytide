@@ -50,6 +50,7 @@ Stated before the work. With the agent's confidence in the question, the enginee
 - **2026-11-06** — The warning reads *When the agent's confidence is 70% or lower, you may have to redo work the agent does.*, in the engineer's words, replacing *leaving the agent unattended risks adverse outcomes*.
 - **2026-11-06** — The question carries a *Risk of redo* line after the agent's confidence, as the engineer directed. It is 100% minus the agent's confidence, computed rather than estimated.
 - **2026-11-06** — The start confirmation records the four figures the question showed, and whether the warning was shown, beside the participation selection, as the engineer directed.
+- **2026-11-06** — The Unattended option tells the engineer that the agent shows its plan first: *The agent shows you its plan first. Then it decides and generates through.*, as the engineer directed. The wording is the agent's.
 
 ---
 
