@@ -1,6 +1,6 @@
 # Reducing rule files to their essential directives
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **As the engineer stated it:** reduce size of files by reducing them to their essential directives. The determination of "essential" is the challenge.
@@ -120,13 +120,13 @@ So a reduction that keeps only the directive is a reduction that discards the re
 
 **This order replaces the order in the section above, which is left as written.** The `additionalContext` experiment moves from fifth to last, after the read is measured again. Nothing else moves.
 
-- [ ] **The starting point is measured.**
-- [ ] **An experiment: a session reads derived files.**
-- [ ] **The open questions are settled by the engineer, with the experiment's findings in hand.**
-- [ ] **A feature: one packaged script prints every rule, in a fixed order.**
-- [ ] **What is read is shrunk by the answer.**
-- [ ] **The read is measured again** against the starting point, and the result is recorded here by dated addition.
-- [ ] **Optionally, an experiment: the rules arrive through the `additionalContext` channel.** Every step above it is complete without it. Its forecast and its result are measured against the second measurement rather than the starting point, so what it adds is read separately from what the rest of the plan achieved.
+- [x] **The starting point is measured.**
+- [x] **An experiment: a session reads derived files.**
+- [x] **The open questions are settled by the engineer, with the experiment's findings in hand.**
+- [x] **A feature: one packaged script prints every rule, in a fixed order.**
+- [x] **What is read is shrunk by the answer.**
+- [x] **The read is measured again** against the starting point, and the result is recorded here by dated addition.
+- [x] **Optionally, an experiment: the rules arrive through the `additionalContext` channel.** Every step above it is complete without it. Its forecast and its result are measured against the second measurement rather than the starting point, so what it adds is read separately from what the rest of the plan achieved.
 
 **Each step carries the content the section above gives it.** Only the order and the optional standing of the last step are new here.
 
@@ -137,6 +137,18 @@ So a reduction that keeps only the directive is a reduction that discards the re
 - **Flattening is what was done to the initialization-rule on 2026-10-20**, in the obsolete-rules experiment. Its body was restated as present directives and reasons, and every account of what changed went to its `## History` section, so the compiled read no longer carries it. The startup display and its test were unchanged.
 - **The statement gives "essential" a test**, which the section above calls the challenge: what a rule keeps is what its effect and outcome need. A passage the rule's behavior does not depend on is not essential, and a passage it does depend on is, however it reads.
 - **The test is about behavior, so it is judged by behavior.** The derived-rule-files experiment judged adherence by putting the same requests to sessions reading each version of a rule and comparing what they did. That is the method this test asks for.
+
+## Where each step of the 2026-10-10 order was done — added 2026-11-06
+
+**Every step of the 2026-10-10 order is done, through two experiments the engineer affirmed.** The checkboxes in that order are ticked on 2026-11-06.
+
+- **The starting point is measured** on 2026-10-12, in the derived-rule-files experiment: a median of 32.4 seconds and 10 tool calls over five sessions.
+- **The derived-files experiment** is the derived-rule-files experiment, affirmed and merged into `master` on 2026-10-14. Each package's source rules sit in `source/`, and the compiled rules sit at the package root.
+- **The open questions are settled** in the two experiments. The read leaves out the footers, the `## History` sections, and the `README.md` files. Each rule is compressed to its essential directives, and fresh agents check each compressed text against its source.
+- **The packaged script** is phase 2, packaged-script, of the rule-reduction experiment, affirmed on 2026-10-29. It is `load-rules.sh`. It was built in an experiment, not a feature.
+- **What is read is shrunk** by the rule-reduction experiment's compression phases and its triggers phase, which loads some rules only when their act comes up.
+- **The read is measured again** in the rule-reduction experiment: from about 547,000 characters to 168,292, with sessions behaving the same as before in each test. After `master` was merged in on 2026-10-29, the read was 170,400 characters.
+- **The `additionalContext` experiment** is phase 8, hook-delivery, of the rule-reduction experiment, affirmed on 2026-10-29. The hook's channel holds about 10,000 characters, so it cannot carry the rules, and the read stays.
 
 ---
 
@@ -149,3 +161,4 @@ Changed by Scott Bellware on Sat Oct 10 2026 at 9:54:48 AM PT
 Changed by Scott Bellware on Tue Oct 20 2026 at 10:36:44 PM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 2:38:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 4:28:05 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:26:41 AM PT
