@@ -1,5 +1,7 @@
 # The harness announces Waytide's installation, and the agent never prints the notice
 
+**Trigger:** When changing the session-start notice, the startup display, the status line, or their hooks or scripts
+
 - **Solubility:** 24
 - **Original rank:** 10 of 106
 - **Unclarity:** 0.52
@@ -312,6 +314,8 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start. Its standing points are carried by the read instruction the hook gives every session.
+
 Until Thu Nov 5 2026 the hook carried the read instruction alone, and no rule held before the read.
 
 Until Wed Nov 4 2026 the typed command was `load waytide`.
@@ -450,3 +454,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:07:24 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:40:22 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

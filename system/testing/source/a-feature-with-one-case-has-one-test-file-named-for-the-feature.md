@@ -1,5 +1,7 @@
 # A feature with one case has one test file, named for the feature
 
+**Trigger:** When writing, reading, or running a test
+
 - **Solubility:** 88
 - **Original rank:** 104 of 106
 - **Unclarity:** 0.15
@@ -33,6 +35,8 @@ The folder-with-case-files form is reserved for features with **multiple** cases
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named single-case-test-named-for-feature and titled "A single-case feature is one test file named for the feature, not a folder of case files".
 
 Until Mon Oct 26 2026 this rule was named a-single-case-feature-is-one-test-file-named-for-the-feature and titled "A single-case feature is one test file named for the feature".
@@ -58,3 +62,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:01 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

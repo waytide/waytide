@@ -1,5 +1,7 @@
 # A precondition documents the factors that decide a test's outcome, and its predicate reads inline
 
+**Trigger:** When writing, reading, or running a test
+
 A **precondition** is an `assert` or `refute` that is **not** a test. It sits in a context beside the controls and the actuation rather than inside a `test` block.
 
 **Its purpose is to clarify the deciding factors.** A test's outcome is determined by conditions and factors that are frequently **not clearly expressed in the test script** — most often the **controls**. A control is named for itself, not for the properties of the value it produces. `Controls::Account::Sequence.example` says nothing about which positions that account has already processed.
@@ -206,6 +208,8 @@ end
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named precondition-documents-deciding-factors-and-reads-inline and titled "A precondition documents the factors that decide a test's outcome, and its predicate reads inline".
 
 Until Mon Oct 26 2026 this rule was named a-precondition-names-a-tests-deciding-factors-and-reads-inline and titled "A precondition names a test's deciding factors and reads inline".
@@ -241,3 +245,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:09:31 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

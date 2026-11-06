@@ -1,5 +1,7 @@
 # A high-level context names a behavior, never a method
 
+**Trigger:** When writing, reading, or running a test
+
 - **Solubility:** 50
 - **Original rank:** 56 of 106
 - **Unclarity:** 0.37
@@ -66,6 +68,8 @@ Prefer a behavior at every level. Where a deeper context describes an implementa
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named a-high-level-context-names-a-behavior-not-a-method.
 
 Related:
@@ -93,3 +97,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 4:21:00 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:08 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

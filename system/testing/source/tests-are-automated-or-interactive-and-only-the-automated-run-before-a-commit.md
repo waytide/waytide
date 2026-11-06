@@ -1,5 +1,7 @@
 # Tests are automated or interactive, and only the automated run before a commit
 
+**Trigger:** When writing, reading, or running a test
+
 **A project's tests sit under `test/`, in one of two directories**, and a project may hold either or both:
 
 - **`test/automated/`** — tests a machine runs and a machine judges. This is the **suite** every other rule in this package means.
@@ -84,6 +86,8 @@ Where a project has no automated suite, run nothing and report nothing missing.
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named tests-are-automated-or-interactive and titled "`test/` holds `automated/`, `interactive/`, or both — and only the automated tests run before a commit".
 
 From 2026-08-24 to 2026-10-10 Waytide's own composite repository had interactive tests and no automated suite, until `test/automated/startup-display.sh` became its first automated test.
@@ -109,3 +113,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

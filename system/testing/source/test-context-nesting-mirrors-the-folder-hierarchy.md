@@ -1,5 +1,7 @@
 # Test context nesting mirrors the folder hierarchy
 
+**Trigger:** When writing, reading, or running a test
+
 - **Solubility:** 87
 - **Original rank:** 102 of 106
 - **Unclarity:** 0.16
@@ -42,6 +44,8 @@ Do **not** flatten the hierarchy into a single combined context (e.g. `"Upload R
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until Sun Oct 25 2026 this rule was named test-context-nesting-mirrors-folders.
 
 Related:
@@ -64,3 +68,4 @@ Changed by Scott Bellware on Fri Oct 23 2026 at 11:55:16 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:58 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:16 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

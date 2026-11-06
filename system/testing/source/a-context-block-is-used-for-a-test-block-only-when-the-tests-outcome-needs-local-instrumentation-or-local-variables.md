@@ -1,5 +1,7 @@
 # A context block is used for a test block only when the test's outcome needs local instrumentation or local variables
 
+**Trigger:** When writing, reading, or running a test
+
 A `test` block holds **exactly one assertion** and nothing else (per the a-test-block-holds-only-the-assertion-and-its-values-are-declared-in-the-enclosing-context rule). Naming an outcome does **not** require a `context` block: TestBench lets a test carry its own name — `test "Outcome name" do … end`.
 
 Use a named **`context`** to enclose a `test` when that outcome needs local instrumentation. That is an **explaining variable of its own**, or a **`comment`** or **`detail`** specific to it. Use one **or** where the context is a **leading `When …` condition**. That is a condition promoted to a context, per the an-error-test-is-named-fails-and-its-condition-is-a-context rule. The context exists to hold that local setup alongside the bare test, or to name the condition.
@@ -94,6 +96,8 @@ end
 
 ## History
 
+Until Thu Nov 5 2026 this rule had no trigger, and was read at every session start.
+
 Until 2026-10-24 the rule was a ban: a context that held only a test was not to be written, and an over-nested test was flattened. The engineer decided that naming the test directly is a preference, not to be imposed on other engineers, so such a context now draws a warning that can be suppressed.
 
 Until Sun Oct 25 2026 this rule was named context-only-for-local-instrumentation and titled "Enclose a test in a context only when the outcome needs local instrumentation. Otherwise name the test directly, and warn of a context that holds only a test".
@@ -125,3 +129,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:11:22 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:23:42 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT

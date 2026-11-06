@@ -878,6 +878,136 @@ Trigger: When writing, evaluating, placing, or reconciling conflicting rules
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 
+# The harness announces Waytide's installation, and the agent never prints the notice
+
+Source: system/foundation/source/the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice.md
+
+Trigger: When changing the session-start notice, the startup display, the status line, or their hooks or scripts
+
+1. The harness announces Waytide, through three surfaces it renders.
+2. The agent prints no notice, at session start or at any other time.
+3. An agent-printed copy would only duplicate the harness's.
+4. The one thing the agent prints at the start is the package set stanza, where a project shows one, because it needs markdown.
+
+## The session-start notice
+
+1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+
+```
+Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+
+3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
+```
+
+2. The install line enumerates what is on disk.
+3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
+4. Nothing prints a fixed list.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
+7. One that is Active, Suspended, or carries no state line is reported.
+8. With nothing open, the open line is absent.
+9. The open line exists because an implementation must never be left silently open. One worked in a worktree leaves no trace in the main working tree.
+10. The notice has no close of its own. It ends with what it reports. The startup display's load line, after it in the same message, says when the rules load and that `/load` loads them now.
+11. Something the engineer types is required in any case, since the agent produces nothing until the engineer speaks.
+12. This gives up a contentless foil word whose only effect came through the hook's channel. So that channel is no longer testable from ordinary use.
+13. The trade of observability for legibility is deliberate.
+14. The notice says `installed`, never `loaded`.
+15. A hook runs before the session. It can observe that the packages are on disk and the configuration is live, and not that any rule was read.
+16. The read instruction describes what the session does next, and reports no read.
+17. Call it the session-start notice, not the load notice.
+18. The status line reports the system active, a claim about the configuration rather than the agent.
+19. The notice is plain text. The harness renders `systemMessage` literally, so markup reaches the engineer as punctuation.
+20. The notice carries no mark of its own. The startup display, which holds it, leads the same message, taken from `startup-display.sh message` (see the the-startup-display-prints-as-the-session-starts rule).
+21. Put no quotation marks, and no lone backslash, in anything the hook emits.
+22. `printf` interpolates the notice and the instruction into a JSON string with no escaping.
+23. A double quote ends the string, and a lone backslash begins an invalid escape.
+24. Either way the harness fails to parse the output, and the notice disappears with no error.
+
+## The read instruction
+
+1. The same hook carries the read instruction to the agent on a separate channel.
+2. The notice goes in `systemMessage`, for the engineer.
+3. The instruction goes in `hookSpecificOutput.additionalContext`, which reaches the agent and is never displayed.
+4. They are different texts for different readers.
+5. The read is unconditional. The apparent size of the first request is not a reason to defer it.
+6. A session opened with a one-line request once skipped the read. It grew into rule edits and publishes governed by rules never read.
+7. The hook carries the whole instruction, as the following points state.
+8. The instruction tells the agent to run `foundation/load-rules.sh` in one command and read its whole output. The loader's output is the read, so no rule file is read one by one.
+9. The loader prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `foundation/` first, then the local rules, the project's vocabulary, and the journal. It leaves out each package's `source/` and `README.md`.
+10. Its ON DEMAND section lists the rules it does not print, each with its trigger and the command that loads it. When the trigger's act comes up, the agent runs that command and follows the rule before acting.
+11. Name `local/rules/` and `local/vocabulary.md` whether or not each exists, and say that the absence of either is ordinary, not an error. Never name `local/` as a whole.
+12. Name the other working directories, as not read as binding rules at session start.
+13. Do not print the startup display.
+14. Print no package count.
+15. Then wait for the engineer's request.
+16. After a compaction, the instruction opens by saying the rules now survive only as the compaction's summary, and that the loader is to be run again before the next act. The hook reads the event's source from its input. A start, a resume, and a clear get the instruction unchanged.
+17. The instruction carries the core rules after it, the rules `foundation/core-rules` names, each as the loader prints it, under a line saying they hold before the read, which still runs in full. The core holds only the rules that shape the first answer, so the whole of what the hook gives the agent stays within 10,000 characters, the most a hook can give. The hook escapes their quotation marks and backslashes.
+18. `load rules` asks for exactly that read and nothing more. The startup display's load line names `/load`, and the instruction names both. `/load`, its skill, typed `/load` or `/slasher:load`, is the same command. It follows the instruction `session-start.sh instruction` prints, the one text both follow.
+19. This rule does not restate the directory list.
+20. `session-start.sh` is the only place the list is enumerated, since a second copy drifted once.
+21. The mark's art is not carried on this channel, and is not written into this hook's script. `startup-display.sh` reads it from the the-startup-display-prints-as-the-session-starts rule and escapes it.
+22. Nothing verifies the read. The hook cannot observe what the agent does.
+23. The instruction removes one excuse: an instruction buried in a file the agent may not open.
+24. Instructing is not vouching: the notice still reports nothing about whether the agent read the rules.
+25. The work honoring the rules is the verification.
+
+## The status line
+
+1. `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+
+```
+waytide · master :: Waytide
+waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+```
+
+2. The repository name leads, in bold. The bold is a terminal escape sequence the harness passes through.
+3. The bold repository name is the only emphasis on the line.
+4. A middle dot separates the engineer's segments.
+5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
+6. The Waytide segment is one word, with no package count.
+7. Presence is read from disk, by the same README test the notice uses.
+8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
+9. `uncommitted changes` appears only when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
+10. It is words, not a mark like `master*`.
+11. `untracked files` names the case whose remedy differs: add or ignore, not commit.
+12. An untracked file raises both segments, deliberately, so `uncommitted changes` alone answers whether anything is uncommitted.
+13. Segments that can show together are named in words that read distinctly.
+14. `unpushed commits` appears when committed work exists only in this working copy. It carries no count and never reaches the network.
+15. It compares against the remote-tracking ref, so it reflects the last fetch.
+16. A branch with no upstream reports nothing, since unpushed is relative to an upstream.
+17. An upstream missing by accident is a different fact, and is deliberately not folded into this segment.
+
+## The startup display
+
+1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
+3. The first prompt is when the read starts, whatever the prompt is.
+4. The agent does not print it.
+
+## Wiring
+
+1. The committed Slasher plugin, `.claude/skills/slasher/`, wires the notice and the display through its `SessionStart` and `UserPromptSubmit` hooks.
+2. A committed `.claude/settings.json` wires the status line, since a plugin cannot set the main status line.
+3. `install.sh` assembles the plugin and places `.claude/settings.json` in a consuming project.
+4. `install.sh` warns when git ignores `.claude/settings.json` or the plugin and the file is not tracked, and prints how to correct it.
+5. The fix is `.claude/*` with `!.claude/settings.json` and `!.claude/skills/`, since git cannot re-include a file inside an excluded directory.
+6. The fix keeps `.claude/settings.local.json` ignored.
+7. A project-level `statusLine` replaces the engineer's own, so the script renders the directory and branch too.
+8. `install.sh` never merges into an existing `.claude/settings.json`. It prints the block, or the hook entries to remove where the file still runs the session-start scripts, and leaves the decision to the engineer.
+
+## There is no opt-out
+
+1. These surfaces exist so that a system read every session says so.
+2. The read instruction is emitted every session. Quieting a display never disables the mechanism that carries it.
+3. Add no opt-out, such as a variable that quiets these surfaces.
+
+## What this costs
+
+1. The mechanism works only where a harness loads a plugin from `.claude/skills/` and reads `.claude/settings.json`.
+2. Elsewhere the system loads through the `AGENTS.md` bootstrap, silently.
+3. A setting that disables hooks silences it too.
+4. A newly placed plugin or `.claude/settings.json` may not take effect until the harness reloads.
+
 # The implementations directory holds one record per implementation
 
 Source: system/foundation/source/the-implementations-directory-holds-one-record-per-implementation.md
