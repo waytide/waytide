@@ -10,7 +10,7 @@
 
 **The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills and the hooks. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
 
-**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`.
+**A skill's body stays thin.** It reads the words typed, loads the rule that governs the act with `load-rules.sh`, and follows it, per the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule. Where a script already prints the instruction the act follows, the skill runs that script and follows what it prints, so the instruction has one text. `/load` runs `session-start.sh instruction`. `/?` is the one skill that carries its act in its own body: it answers the prompt *What are we doing?*, and loads no rule.
 
 **Why:** a plugin gives the skills one namespace, so a clash with another plugin's command is kept apart. Carrying each skill in its package means a deactivated package's commands go with its rules, and the assembled directory means a project needs nothing beyond the packages to have them.
 
@@ -24,7 +24,7 @@
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
 3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Slasher authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
-5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`. `/?` alone carries its act in its body: it answers *What are we doing?* and loads no rule.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
 7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` offers topics to learn about.
 8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
@@ -43,8 +43,11 @@
 - 2026-11-06, revised: each command domain's help command carries the domain's help, and `/process` and `/language` take only `help`; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the NEXT domain is named PROCESS, a term swap the engineer settled; not re-checked
 - 2026-11-07, revised: a bare `/slasher` offers topics to learn about, in place of doing nothing, as the engineer directed; not re-checked
+- 2026-11-07, revised: `/?` carries its act in its own body, the one skill that does, as the engineer directed; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 every skill loaded the rule that governs its act, or ran a script that prints it. The engineer made `/?` carry its prompt in its own body.
 
 Until Sat Nov 7 2026 the rule said a bare `/slasher` does nothing, though it had printed the command domain table since Fri Nov 6 2026. It now offers topics to learn about.
 
@@ -83,3 +86,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:16:16 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:00:17 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:34:55 AM PT

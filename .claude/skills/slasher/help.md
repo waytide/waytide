@@ -110,6 +110,7 @@ PROCESS
   /items [<n>]                     The current items, or the n most recent,
                                    then the current features and experiments
   /recent                          What was recently done, and what's next
+  /?                               What are we doing?
 
   /next                            Proceed to the next step in the current
                                    multi-step process
