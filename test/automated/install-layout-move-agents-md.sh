@@ -17,7 +17,8 @@ fail() {
 # Controls -------------------------------------------------------------------
 
 project=$(mktemp -d)
-trap 'rm -rf "$project"' EXIT
+home=$(mktemp -d)
+trap 'rm -rf "$project" "$home"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
 
 control_old_section() {
@@ -33,7 +34,7 @@ control_old_section > "$project/AGENTS.md"
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" && sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" XDG_CONFIG_HOME= XDG_DATA_HOME= sh "$installer" agents-md) > /dev/null
 
 # ----------------------------------------------------------------------------
 

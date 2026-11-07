@@ -318,6 +318,35 @@ migrate_layout() {
   echo "Commit the move."
 }
 
+# Move this machine's waytide folders to the slasher names: the configuration under
+# XDG_CONFIG_HOME, which holds the project registry and the writer's name, and the data under
+# XDG_DATA_HOME, which holds the private journals. Each setting falls back to its default under
+# HOME where it is not set. The folders were named for Waytide until 2026-11-06.
+#
+# The same narrow semantics as the project's move: each folder moves only where the old one is
+# present and the new one absent, and anything else is reported and left alone. The folders are
+# outside the repository, so nothing is left to commit.
+migrate_machine() {
+  config_home=${XDG_CONFIG_HOME:-$HOME/.config}
+  data_home=${XDG_DATA_HOME:-$HOME/.local/share}
+
+  for base in "$config_home" "$data_home"; do
+    old_dir="$base/waytide"
+    new_dir="$base/slasher"
+
+    [ -d "$old_dir" ] || continue
+
+    if [ -e "$new_dir" ]; then
+      echo "Both $old_dir/ and $new_dir/ are present — neither is touched."
+      echo "$old_dir/ is the old name. Move its contents into $new_dir/ and remove it."
+      continue
+    fi
+
+    mv "$old_dir" "$new_dir"
+    echo "Moved $old_dir/ to $new_dir/ — Waytide is renamed Slasher."
+  done
+}
+
 # Rename a project's slasher/local/sessions/ to slasher/local/work-sessions/. The
 # directory carried the bare name sessions/ until 2026-07-30, when it was renamed for
 # what a session is here — a work session. A rule change names the new directory but
@@ -470,6 +499,7 @@ fi
 
 # Carry a project's waytide/ to slasher/ before anything reads or writes either.
 migrate_layout
+migrate_machine
 
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.
 if [ "$1" != "agents-md" ]; then

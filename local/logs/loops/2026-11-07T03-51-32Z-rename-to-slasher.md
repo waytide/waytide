@@ -79,8 +79,34 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer selected the direct implementation.
 - **Outcome:** `place_agents_md` replaces the old section and keeps the text above its heading. The automated tests pass. The test is unnamed until the feature's close.
 
+## Cycle 13 — Actuation, outcome 4: a machine's old folders are moved to the `slasher` names
+
+- **Hinge:** how the test actuates the installer so that it moves the folders in a pretend home rather than the engineer's.
+- **Options:** a pretend `HOME`, recommended by the agent. The XDG settings `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, read by the installer with a fallback to `HOME`.
+- **Decision / chat:** the engineer asked to clarify, then asked whether to start using the XDG variables. The agent recommended against it for this rename: the folders already sit at the XDG defaults, and every reader would have to honor the settings, including the rules the agent follows. The engineer decided that every script and rule reading the machine folders honors the settings, a decision recorded in the rename item. The actuation was then put again with that one candidate, both XDG settings pointing into a temporary home, and its negative. The engineer selected both XDG settings.
+
+## Cycle 14 — Observation, outcome 4
+
+- **Hinge:** what the test reads in the pretend home after the installer runs.
+- **Options:** arrived and gone for both folders, recommended by the agent. Arrived only.
+- **Decision / chat:** the engineer selected arrived and gone. The engineer asked, while the cycle ran, whether the XDG settings are honored with a fallback to `HOME`. The agent answered that this is what was decided, that none of it was built yet, and that the fallback takes a test of its own.
+
+## Cycle 15 — Controls, outcome 4
+
+- **Hinge:** what the pretend home holds before the installer runs.
+- **Options:** one placeholder file in each old folder. The real file names: `consuming-projects.toml` and `user`, and a journal entry.
+- **Decision / chat:** the engineer selected one file in each.
+
+## Cycle 16 — Implementation, outcome 4
+
+- **Hinge:** how the move comes about. The test failed against the installer as it stood. The agent noted that six other tests run the installer without a pretend home, so once the installer moves the machine folders, a suite run would move the engineer's own.
+- **Options:** a direct implementation, `migrate_machine`, called after `migrate_layout`, with the six tests run under a temporary `HOME` and empty XDG settings. Red, green, refactor.
+- **Decision / chat:** the engineer selected the direct implementation.
+- **Outcome:** `migrate_machine` moves `waytide` to `slasher` under `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, falling back to `HOME`, and leaves both alone where both exist. The six other installer tests run under a temporary `HOME`. The automated tests pass, and the engineer's own machine folders are untouched. The fallback to `HOME` is not yet tested. The test is unnamed until the feature's close.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 7:56:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:24:15 PM PT

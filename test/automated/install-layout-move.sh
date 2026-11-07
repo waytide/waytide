@@ -17,7 +17,8 @@ fail() {
 # Controls -------------------------------------------------------------------
 
 project=$(mktemp -d)
-trap 'rm -rf "$project"' EXIT
+home=$(mktemp -d)
+trap 'rm -rf "$project" "$home"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
 
 control_record_name=2026-01-01T00-00-00Z-some-item-OPEN.md
@@ -30,7 +31,7 @@ cp -R system/foundation/plugin "$project/waytide/system/foundation/"
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" && sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" XDG_CONFIG_HOME= XDG_DATA_HOME= sh "$installer" agents-md) > /dev/null
 
 # ----------------------------------------------------------------------------
 
