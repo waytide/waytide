@@ -1,6 +1,6 @@
 # A brief explanation offers a more detailed answer
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **A brief explanation of a topic, as a bare `/slasher` gives one, would end with the option of a more detailed answer.** The engineer could then ask for the topic explained at more length without wording a new request.
@@ -14,3 +14,4 @@ As the engineer first stated it: "At the bottom of a breief description, give th
 ---
 
 Authored by Scott Bellware on Sat Nov 7 2026 at 12:08:25 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:13:03 AM PT
