@@ -30,9 +30,10 @@
 
 ## What happened
 
-Nothing has moved yet.
+- **2026-11-06** — The engineer renamed the GitHub organization `waytide` to `slasher-bot`, with the display name Slasher. This came ahead of the first increment, so the repositories step is under way before the scripts change. Every URL in this repository still names `github.com/waytide/`. The repositories `waytide` and `waytide-ruby` keep their names for now, as `slasher-bot/waytide` and `slasher-bot/waytide-ruby`.
 
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 5:26:11 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 5:32:41 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 6:04:30 PM PT
