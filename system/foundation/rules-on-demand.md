@@ -177,7 +177,7 @@ Trigger: When starting a phase of an experiment or a feature, or when the engine
 
 Source: system/foundation/source/a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows.md
 
-Trigger: When the engineer asks for a list of records, as with `/item list`, `/list`, or `/current`
+Trigger: When the engineer asks for a list of records, as with `/item list`, `/list`, or `/report`
 
 1. When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence. A table presents the fields in headed columns. Rows present one record to a line, with its fields in sequence and no columns. A list is called a table only where it is formatted as columns.
 2. This applies to any record type. That includes items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
@@ -216,14 +216,14 @@ A list of items takes the ordinal and no SHA columns:
 1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
 2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
 
-## The current command
+## The report command
 
-1. `/current` lists the current items, then, under a heading of their own, the current implementations.
+1. `/report` lists the current items, then, under a heading of their own, the current implementations.
 2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
 3. Present each current implementation as one row: its handle, its title, and its state. The title is the record's own, as in `Feature — The current command`. Give it no ordinal and no SHA columns.
 4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
-5. In the items table `/current` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
-6. `/current` takes an optional number *n*, as in `/current 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
+5. In the items table `/report` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
+6. `/report` takes an optional number *n*, as in `/report 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
 
 ## Keep every column short
 
@@ -863,6 +863,20 @@ Trigger: When writing or changing a rule file
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 
+# The brief report says what was recently done, and what is next
+
+Source: system/foundation/source/the-brief-report-says-what-was-recently-done-and-what-is-next.md
+
+Trigger: When the engineer types `/report brief` or its alias `/brief`, or asks what was recently done and what is next
+
+1. `/report brief` says in a few lines what was recently done and what is next. `/brief` is its alias.
+2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
+3. Say how many commits on each branch are not yet pushed.
+4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
+5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
+6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
+7. Head the part that gives the next step *What's next*, not *What is next*.
+
 # The harness announces Slasher's installation, and the agent never prints the notice
 
 Source: system/foundation/source/the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice.md
@@ -1336,20 +1350,6 @@ Slasher is pre-loading its rules...
 57. A blank line prints as a blank line. The figure keeps its spacing without a fence.
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 59. The package set's absence is the ordinary case, not an omission.
-
-# Work status says what was recently done, and what is next
-
-Source: system/foundation/source/work-status-says-what-was-recently-done-and-what-is-next.md
-
-Trigger: When the engineer types `/work-status` or its alias `/sup?`, or asks what was recently done and what is next
-
-1. `/work-status` says in a few lines what was recently done and what is next. `/sup?` is its alias.
-2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
-3. Say how many commits on each branch are not yet pushed.
-4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
-5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
-6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
-7. Head the part that gives the next step *What's next*, not *What is next*.
 
 # Working-state artifacts carry a provenance footer
 

@@ -1,8 +1,8 @@
-# Work status says what was recently done, and what is next
+# The brief report says what was recently done, and what is next
 
-**Trigger:** When the engineer types `/work-status` or its alias `/sup?`, or asks what was recently done and what is next
+**Trigger:** When the engineer types `/report brief` or its alias `/brief`, or asks what was recently done and what is next
 
-**`/work-status` answers two questions in a few lines: what was recently done, and what is next.** `/sup?` is its alias, and does exactly what it does.
+**`/report brief` answers two questions in a few lines: what was recently done, and what is next.** `/brief` is its alias, and does exactly what it does.
 
 **As the engineer stated it:** what was recently done, and what's next.
 
@@ -12,17 +12,17 @@
 
 **The part that gives the next step is headed *What's next*, not *What is next*.** The engineer asks the question in those words, and the answer is headed as it was asked.
 
-**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/work-status` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
+**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/report brief` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
 
 **It is read from current state, never from memory.** The log, the commits, and the records are read when the command is typed. A record that summary rule hides, such as a suspended item, is counted rather than listed here too.
 
 **Why:** a session that works through many changes asks *what's recent* and *what's next* again and again. One command answers both, in the same shape each time, without the full report's weight.
 
-**How to apply:** on `/work-status`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
+**How to apply:** on `/report brief`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
 
 ## Compressed
 
-1. `/work-status` says in a few lines what was recently done and what is next. `/sup?` is its alias.
+1. `/report brief` says in a few lines what was recently done and what is next. `/brief` is its alias.
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
@@ -38,8 +38,11 @@
 - 2026-11-05, revised: the commands are `/next` and `/next?` again, a term swap the engineer settled; not re-checked
 - 2026-11-06, revised: `/sup?` is its alias, in place of "It has no alias"; not re-checked
 - 2026-11-06, revised: the part that gives the next step is headed *What's next*, as point 7; re-checked: 13 directives, 12 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the direction to `/status-report` for the whole project, which "Those belong to `/status-report`" carries without naming the redirect
+- 2026-11-06, revised: the command is `/report brief`, with the alias `/brief`, a term swap the engineer settled; not re-checked
 
 ## History
+
+Until Fri Nov 6 2026 the command was `/work-status`, with the alias `/sup?`, and this rule was named work-status-says-what-was-recently-done-and-what-is-next. The engineer renamed the command `/report brief`, with the alias `/brief`, and dropped both earlier names.
 
 Until Fri Nov 6 2026 the rule named no heading for the part that gives the next step. The engineer then asked that it read *What's next*, not *What is next*.
 
@@ -65,3 +68,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 9:41:59 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:36:40 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:08:55 PM PT
