@@ -5,6 +5,7 @@
 | Command | Description |
 |---|---|
 | `/slasher help` | Print the help of every Slasher command |
+| `/unattended` | Carry out a request on the agent's own, after a plan is accepted |
 | `/item` | Items hold the project's thinking: ideas, plans, designs, observations, and work to be done, each with a state. |
 | `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
@@ -22,9 +23,11 @@
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 | `/command-table` | Print this table |
 
-**Each row is one command domain, except the `/slasher help`, `/items`, `/brief`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/items` and `/brief` are root commands of the PROCESS domain. Each has a row of its own above the `/process` row, and its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
+**Each row is one command domain, except the `/slasher help`, `/unattended`, `/items`, `/brief`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/items` and `/brief` are root commands of the PROCESS domain. Each has a row of its own above the `/process` row, and its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
 
 **After the table, run `/items 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/items` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/items 10`, for the same reason it prints no table.
+
+**The second row names `/unattended`, a root command of the PROCESS domain.** It stands below `/slasher help`, apart from the PROCESS rows.
 
 **The PHASE domain has no row.** `/slasher help` and `/phase help` still give its help.
 
@@ -41,6 +44,8 @@
 **How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/items 10` below it, and then turn to the engineer's request or wait for one.
 
 ## History
+
+Until Sat Nov 7 2026 the table had no `/unattended` row, and `/item` stood second.
 
 Until Sat Nov 7 2026 the rows of `/items` and `/brief` named `/report` and `/report brief`, and the read ran `/report 10`.
 
@@ -93,3 +98,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 11:35:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:36:20 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:00:17 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 1:04:28 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:17:53 AM PT

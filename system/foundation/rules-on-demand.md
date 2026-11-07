@@ -1366,6 +1366,19 @@ Slasher is pre-loading its rules...
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 59. The package set's absence is the ordinary case, not an omission.
 
+# Unattended carries out a request without stopping for the engineer
+
+Source: system/foundation/source/unattended-carries-out-a-request-without-stopping-for-the-engineer.md
+
+Trigger: When the engineer types `/unattended`
+
+1. `/unattended <request>` has the agent carry out the request on its own. With no request typed, ask for one through the free-text option.
+2. Show a plan first, through the selection interface: *Accept the plan?*, the plan as its list, and the options *Accept* and *Revise*. On *Revise*, revise and show it again. Generate nothing until it is accepted.
+3. After acceptance, decide every question yourself: candidates, design, wording, confirmations, and commits on any branch but `master`. Record each decision where its convention records it, as the agent's, with its reasoning.
+4. A commit on `master` and a push still wait for the engineer's selection.
+5. Where the request names a feature to build or an item to start, start an unattended feature for it, choosing its working location and verdict and recording them as the agent's selections. Otherwise work where the working tree is, creating no branch.
+6. It holds for the one request. The next prompt is attended unless it also begins with `/unattended`.
+
 # Working-state artifacts carry a provenance footer
 
 Source: system/foundation/source/working-state-artifacts-carry-a-provenance-footer.md

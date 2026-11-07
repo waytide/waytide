@@ -116,6 +116,9 @@ PROCESS
   /next?                           The next step in the current multi-step
                                    process
 
+  /unattended <request>            Carry out the request on the agent's own,
+                                   after a plan is accepted
+
   /process help                    Print this command's help
 
 LOG
