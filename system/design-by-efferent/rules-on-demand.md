@@ -145,9 +145,9 @@ Trigger: When starting a feature or an experiment
 
 with these options:
 
-> **Attended** — You decide. The agent automates.
->
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
+>
+> **Attended** — You decide. The agent automates.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
@@ -162,11 +162,13 @@ with these options:
 
 > When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
-25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation, and list it first:
 
 > **Attended (Recommended)** — You decide. The agent automates.
+>
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-26. Above 70%, give no warning, and mark neither option.
+26. Above 70%, give no warning, mark neither option, and list Unattended first.
 27. The engineer may choose either option, whatever the score.
 28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
 29. Name the hinges when the loop reaches the first one, not before.

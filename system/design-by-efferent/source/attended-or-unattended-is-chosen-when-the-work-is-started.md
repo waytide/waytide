@@ -30,9 +30,9 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 with these options:
 
-> **Attended** — You decide. The agent automates.
->
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
+>
+> **Attended** — You decide. The agent automates.
 
 **The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The question is plain text, with no `**` around a figure, because the selection UI does not render markdown and prints the asterisks as characters. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
@@ -51,11 +51,17 @@ with these options:
 
 > When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
-and the Attended option is marked as the recommendation:
+and the Attended option is marked as the recommendation, and moves first:
 
 > **Attended (Recommended)** — You decide. The agent automates.
+>
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-Above 70%, the question carries no warning, and neither option is marked. The engineer still chooses either way.
+Above 70%, the question carries no warning, neither option is marked, and Unattended is first. The engineer still chooses either way.
+
+**The options are listed Unattended first and Attended second, except where Attended is the recommendation.** A first option reads as recommended. So where Attended is marked as the recommendation, it is listed first, and the order does not contradict the mark.
+
+**As the engineer stated it:** "Swap Attended and Unattended options"
 
 **Why 70%:** at about 70%, the expected cost of fixing a wrong unattended result is about what attended work costs in attention as it goes. The estimate is in the log entry `2026-11-06T09-23-01Z-the-attended-floor-is-estimated-at-about-70-percent`. It has not yet been checked against how the work turns out. The warning puts the agent's doubt in front of the decision, rather than leaving it to show in the work.
 
@@ -156,9 +162,9 @@ Record the selection as a confirmation in the feature or experiment record, with
 
 with these options:
 
-> **Attended** — You decide. The agent automates.
->
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
+>
+> **Attended** — You decide. The agent automates.
 
 15. These words are fixed. The figures are examples.
 16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
@@ -173,11 +179,13 @@ with these options:
 
 > When the agent's confidence is 70% or lower, you may have to redo work the agent does.
 
-25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation, and list it first:
 
 > **Attended (Recommended)** — You decide. The agent automates.
+>
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-26. Above 70%, give no warning, and mark neither option.
+26. Above 70%, give no warning, mark neither option, and list Unattended first.
 27. The engineer may choose either option, whatever the score.
 28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
 29. Name the hinges when the loop reaches the first one, not before.
@@ -239,8 +247,11 @@ with these exact options:
 - 2026-11-06, revised: the plan put inside the *Accept the plan?* question, as the engineer directed; checked: 53 directives, 53 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the `**` marks removed from the question's figures, and a directive added that the question carries none, as the engineer directed; not re-checked
 - 2026-11-07, revised: the confidence figure's sentence reads *How sure the agent is about working alone.*, wording the engineer gave; not re-checked
+- 2026-11-07, revised: the options are listed Unattended first, and Attended moves first where it is recommended, as the engineer directed; checked: 51 directives, 51 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
+
+Until Sat Nov 7 2026 the options were listed Attended first and Unattended second, in every case.
 
 Until Sat Nov 7 2026 the confidence figure's sentence read *How sure the agent is that, working alone, it does the work as you would have it done.*
 
@@ -300,3 +311,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:07:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:16:42 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:46:52 AM PT

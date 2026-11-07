@@ -17,7 +17,7 @@
 - **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Implementation branch:** `feature/worktree/participation-question-offers-unattended-first`
-- **Base:** to be recorded when the branch is created, from `master`
+- **Base:** `349826fe`, from `master`
 - **Working location:** branch and worktree, chosen at the start. The worktree is `../slasher-feature-worktree-participation-question-offers-unattended-first`, and the main working tree stays on `master`.
 - **Participation:** not asked. The work is content work, which the local rule design-by-efferent-does-not-govern-content-work holds off the design loop.
 - **Verdict:** it concludes without an engineer's verdict, selected at the start.
