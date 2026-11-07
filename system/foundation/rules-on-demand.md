@@ -236,6 +236,8 @@ A list of items takes the ordinal and no SHA columns:
 4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
 5. In the items table `/items` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
 6. `/items` takes an optional number *n*, as in `/items 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
+7. Below the items table, print one line for each state other than Open and Active that some item holds, giving the count and the state, as in `45 Realized`. Order the lines from the largest count to the smallest. Count Suspended items here too.
+8. A number given to `/items` does not change these counts.
 
 ## Keep every column short
 
