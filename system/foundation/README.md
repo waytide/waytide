@@ -1,6 +1,6 @@
 # Slasher — foundation
 
-The `slasher/` [artifact system](https://github.com/waytide/waytide) that every other package builds on.
+The `slasher/` [artifact system](https://github.com/slasher-bot/slasher) that every other package builds on.
 
 All agent artifacts for a project live under a single top-level `slasher/` folder. So they are committed to git alongside the code, and read at the start of each session rather than recalled. It holds two directories, separating what came from outside from what is the project's own. **`slasher/system/`** holds the installed packages, never edited in place. **`slasher/local/`** holds everything the project writes.
 
@@ -129,11 +129,11 @@ It also **renames `slasher/local/logs/work-sessions/` if your project still hold
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 
 ```
-git subtree add  --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
-git subtree pull --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree add  --prefix slasher/system/foundation git@github.com:slasher-bot/foundation.git master --squash
+git subtree pull --prefix slasher/system/foundation git@github.com:slasher-bot/foundation.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/foundation.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/slasher-bot/foundation.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/slasher-bot` for the same reason.
 
 This package has no dependencies. (The composite `install-all.sh` installs every package and runs this same bootstrap for you.)
 
@@ -145,12 +145,12 @@ slasher/system/foundation/refresh-packages.sh
 
 **A package's repository is its installed path with the slashes flattened to dashes**, so a nested `group/name` publishes to `group-name`. **A package may declare a different one**, on a `**Repository:**` line in its `README.md` — the plain text data attribute form the rest of the system reads. `refresh-packages.sh` reads that line where it is present and derives the name where it is not, which is every package but one.
 
-The declaration exists because a repository name is met by people as well as by scripts. The Ruby package installs at `slasher/system/ext/ruby-lang/` and is published from `waytide/waytide-ruby`, which the flattening does not produce.
+The declaration exists because a repository name is met by people as well as by scripts. The Ruby package installs at `slasher/system/ext/ruby-lang/` and is published from `slasher-bot/slasher-ruby`, which the flattening does not produce.
 
-It reports each package that moved and the rule files that changed in it. Those files are binding, and a silent refresh would be a change of behavior nobody saw. Name packages to refresh only those (`… refresh-packages.sh testing git`). Set `SLASHER_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/waytide`. A single package can still be pulled directly:
+It reports each package that moved and the rule files that changed in it. Those files are binding, and a silent refresh would be a change of behavior nobody saw. Name packages to refresh only those (`… refresh-packages.sh testing git`). Set `SLASHER_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/slasher-bot`. A single package can still be pulled directly:
 
 ```
-git subtree pull --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree pull --prefix slasher/system/foundation git@github.com:slasher-bot/foundation.git master --squash
 ```
 
 

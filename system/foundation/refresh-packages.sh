@@ -17,7 +17,7 @@ set -e
 # Where the component repositories live. Overridable so a fork or a mirror can be
 # refreshed from, and so this script can be exercised against a local repository
 # without reaching the network.
-origin=${SLASHER_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 # --- Preconditions ---------------------------------------------------------
 

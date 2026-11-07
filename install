@@ -5,7 +5,7 @@
 # whose SessionStart hook and status line print the session-start notice.
 # Fetch it into the root of the consuming project and run it from there:
 #
-#   curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
+#   curl -O https://raw.githubusercontent.com/slasher-bot/slasher/master/install
 #   sh install                          the default set
 #   sh install content                  a package set
 #   sh install foundation git           packages by name
@@ -24,9 +24,9 @@ set -e
 # The origin the packages are fetched from. Override it to work over HTTPS where no SSH
 # key is registered:
 #
-#   SLASHER_ORIGIN=https://github.com/waytide <this script>
+#   SLASHER_ORIGIN=https://github.com/slasher-bot <this script>
 #
-origin=${SLASHER_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 # Slasher is installed with `git subtree`, so there has to be a repository to install into.
 # Rather than refusing outright, offer to make one — a developer running this in a directory
@@ -135,7 +135,7 @@ set_packages() {
 package_repository() {
   case $1 in
     ext/ruby-lang)
-      printf '%s' "waytide-ruby"
+      printf '%s' "slasher-ruby"
       ;;
     *)
       printf '%s' "$1" | tr '/' '-'

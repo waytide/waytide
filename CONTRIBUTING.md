@@ -8,7 +8,7 @@ How the packages are authored and published. If you only want to *use* a package
 
 **Each package also has its own repository** in the `slasher` org — `foundation`, `testing`, `git`, and so on. A grouped package's repository is its installed path with the slash flattened to a dash, so a grouped `ext/some-tool` gives `slasher/ext-some-tool`. A package may declare a different one, and the Ruby package does. Each holds a single package's files at its root. These are how a consuming project installs a package.
 
-**One package is not authored here.** `ext/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `waytide/waytide-ruby` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
+**One package is not authored here.** `ext/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `slasher-bot/slasher-ruby` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
 
 The component repositories are **generated from this composite repo, not edited directly.** Publishing a package is a `git subtree split` that extracts one package's slice of the composite repo history and pushes it to that package's repository. Sync runs one way only: composite repo → component repositories.
 
@@ -40,9 +40,9 @@ The component repos now track the `system/<package>` split, and ordinary publish
 git subtree split --prefix=system/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
-  "$(git ls-remote git@github.com:waytide/testing.git master | cut -f1)" \
+  "$(git ls-remote git@github.com:slasher-bot/testing.git master | cut -f1)" \
   publish-tmp && \
-git push git@github.com:waytide/testing.git publish-tmp:master
+git push git@github.com:slasher-bot/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -55,7 +55,7 @@ gh repo create slasher/<package> --public \
   -d "Slasher <package>. <What it governs>. By the Eventide Project."
 
 git subtree split --prefix=system/<package> -b publish-tmp
-git push git@github.com:waytide/<package>.git publish-tmp:master
+git push git@github.com:slasher-bot/<package>.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -80,7 +80,7 @@ The one exception: you spot a fix while deep in a consuming project and don't wa
 2. **Push it back from the consuming project.** Commit the edit in the project's `slasher/system/testing/`, then:
 
    ```
-   git subtree push --prefix slasher/system/testing git@github.com:waytide/testing.git master
+   git subtree push --prefix slasher/system/testing git@github.com:slasher-bot/testing.git master
    ```
 
    This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and you still have to bring the change into the composite repo yourself. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever you can.

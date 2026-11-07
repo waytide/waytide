@@ -27,9 +27,9 @@ set -e
 # The origin foundation is fetched from. Override it to install over HTTPS where no SSH
 # key is registered:
 #
-#   SLASHER_ORIGIN=https://github.com/waytide ./install.sh
+#   SLASHER_ORIGIN=https://github.com/slasher-bot ./install.sh
 #
-origin=${SLASHER_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 prefix="slasher/system/foundation"
 repo="$origin/foundation.git"

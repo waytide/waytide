@@ -81,8 +81,8 @@ fi
 
 (
   cd "$control_ruby_project"
-  curl -sSfL -O https://raw.githubusercontent.com/waytide/waytide-ruby/master/install.sh
-  SLASHER_ORIGIN=https://github.com/waytide sh install.sh >/dev/null 2>&1
+  curl -sSfL -O https://raw.githubusercontent.com/slasher-bot/slasher-ruby/master/install.sh
+  SLASHER_ORIGIN=https://github.com/slasher-bot sh install.sh >/dev/null 2>&1
 )
 
 ruby_packages=$(cd "$control_ruby_project/slasher/system" && ls)

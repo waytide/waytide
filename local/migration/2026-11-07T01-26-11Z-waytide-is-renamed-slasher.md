@@ -38,6 +38,7 @@
 - **2026-11-06** — The installer moves a machine's `~/.config/waytide/` and `~/.local/share/waytide/` to the `slasher` names, and leaves both alone where both exist. It first honored the XDG settings, and the engineer then reversed that, so it reads `HOME` only. The XDG test was removed, and the fallback test took its name. The tests that run the installer use a temporary `HOME`. The automated tests pass.
 - **2026-11-06** — The third increment is done. A test covers a machine with both the old and the new folder, which the installer leaves alone.
 - **2026-11-06** — The fourth increment is done. Waytide became Slasher, `waytide` `slasher`, and `WAYTIDE_` `SLASHER_`, in the rules, the vocabularies, the help, the READMEs, `CONTRIBUTING.md`, `AGENTS.md`, `CLAUDE.md`, the scripts and their messages, the tests, and `scratch/`. Six rules were renamed: the five package rules and the local rule on examples. Left as written: the historical records, each rule's History section, quoted words of the engineer, the installer's handling of the old name and its tests, and the GitHub addresses and the two old repository names, for the repositories increment. The writer-name rule dropped its XDG clause. The automated tests pass.
+- **2026-11-06** — The fifth increment is done. Every GitHub address in the live text names `slasher-bot`: `waytide/waytide` became `slasher-bot/slasher`, `waytide-ruby` became `slasher-ruby`, and each package repository is `slasher-bot/<package>`. Each repository answered at its new address. This repository's `origin` remote is `https://github.com/slasher-bot/slasher.git`, which master shares. The automated tests pass. Every increment in the plan is done on the feature branch.
 
 ---
 
@@ -54,3 +55,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:40 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:41:27 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:45:01 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:47 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:50:10 PM PT

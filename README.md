@@ -60,7 +60,7 @@ Slasher's packages are installed using `git subtree`. Each package is its own su
 Install all of Slasher's packages at once with:
 
 ```
-curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
+curl -O https://raw.githubusercontent.com/slasher-bot/slasher/master/install
 sh install
 ```
 
@@ -72,7 +72,7 @@ Execute the install script using `sh`:
 
 `sh install`
 
-The script fetches the packages over SSH. Where no SSH key is registered, run it as `SLASHER_ORIGIN=https://github.com/waytide sh install`.
+The script fetches the packages over SSH. Where no SSH key is registered, run it as `SLASHER_ORIGIN=https://github.com/slasher-bot sh install`.
 
 The file is committed as an executable, but `curl` transfers content and not file metadata. The copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other script reaches a project by `git subtree`, which does preserve the mode.
 
@@ -116,13 +116,13 @@ The list of installed packages is printed at the start of a session, under the t
 
 ## Packages
 
-- **[foundation](https://github.com/waytide/foundation)**. The `slasher/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
-- **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Slasher's implementation of ASD-STE100.
-- **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method (DBE): hinges and gates, the actuation-first cycle, and the method's own `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI. Contributes the `logs/loops/` artifact directory.
-- **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test structure and naming, assertion form.
-- **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the agent announces.
-- **[versioning](https://github.com/waytide/versioning)**. What a version means and how the next one is chosen: semver, optionally prefixed by a product generation number. Not how a package is built or published.
-- **[journal](https://github.com/waytide/journal)**. The engineer's periodic record, written by the engineer in their own words. The agent only reads these records. Read at session start, but not binding. Contributes the `journal/` artifact directory.
+- **[foundation](https://github.com/slasher-bot/foundation)**. The `slasher/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
+- **[language](https://github.com/slasher-bot/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Slasher's implementation of ASD-STE100.
+- **[design-by-efferent](https://github.com/slasher-bot/design-by-efferent)**. Human-in-the-loop, efferent-first design method (DBE): hinges and gates, the actuation-first cycle, and the method's own `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI. Contributes the `logs/loops/` artifact directory.
+- **[testing](https://github.com/slasher-bot/testing)**. Controls-based test-writing conventions: variable prefixes, test structure and naming, assertion form.
+- **[git](https://github.com/slasher-bot/git)**. Commit conventions, and the one branch operation the agent announces.
+- **[versioning](https://github.com/slasher-bot/versioning)**. What a version means and how the next one is chosen: semver, optionally prefixed by a product generation number. Not how a package is built or published.
+- **[journal](https://github.com/slasher-bot/journal)**. The engineer's periodic record, written by the engineer in their own words. The agent only reads these records. Read at session start, but not binding. Contributes the `journal/` artifact directory.
 
 A package that has dependencies carries an `install-dependencies.sh` that installs them. A standalone package has none. Each arrow below points from a package to the packages it depends on (`→` reads "includes"):
 
@@ -144,11 +144,11 @@ ext/ruby-lang       →  every package above
 A consuming project installs a package with `git subtree`. That places the package's files physically into the project's `slasher/system/` tree, so they are committed alongside the code and read at session start:
 
 ```
-git subtree add  --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
-git subtree pull --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
+git subtree add  --prefix slasher/system/testing git@github.com:slasher-bot/testing.git master --squash
+git subtree pull --prefix slasher/system/testing git@github.com:slasher-bot/testing.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/<package>.git` in place of the address above. Every Slasher script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/slasher-bot/<package>.git` in place of the address above. Every Slasher script takes `SLASHER_ORIGIN=https://github.com/slasher-bot` for the same reason.
 
 Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them. Otherwise the package is standalone.
 
@@ -157,7 +157,7 @@ Refresh any package later using `git subtree pull`:
 ```
 git subtree pull \
   --prefix slasher/system/foundation \
-  git@github.com:waytide/foundation.git \
+  git@github.com:slasher-bot/foundation.git \
   master \
   --squash
 ```

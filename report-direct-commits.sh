@@ -19,9 +19,9 @@ set -e
 # The origin the packages are fetched from. Override it to work over HTTPS where no SSH
 # key is registered:
 #
-#   SLASHER_ORIGIN=https://github.com/waytide <this script>
+#   SLASHER_ORIGIN=https://github.com/slasher-bot <this script>
 #
-origin=${SLASHER_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 if [ ! -d system/foundation ]; then
   echo "Run this from the composite repository root." >&2
