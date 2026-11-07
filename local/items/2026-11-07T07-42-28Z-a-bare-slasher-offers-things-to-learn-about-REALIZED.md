@@ -12,6 +12,7 @@ Today a bare `/slasher` prints the command domain table, which `/command-table` 
 ## Settled
 
 - **2026-11-07** — A bare `/slasher` no longer prints the command domain table. It offers Items, Features, Experiments, and Commands, and *Commands* prints the table.
+- **2026-11-07** — After each explanation, the topics are offered again, until the engineer escapes.
 
 ## History
 
@@ -24,3 +25,4 @@ As the engineer first stated it: "A bare \"/slasher\" command offers the user th
 Authored by Scott Bellware on Fri Nov 6 2026 at 11:42:28 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:59:23 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:01:22 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:38:23 AM PT

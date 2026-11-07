@@ -8,24 +8,34 @@
 
 **A topic selected is explained briefly, as the request *Briefly explain <topic>* would be.** Selecting *Items* is the same as the engineer typing *Briefly explain items*. A topic typed in takes the same treatment. The explanation follows the `language` package's rules: it leads with the point, and it is short.
 
-**Selecting *Commands* prints the command domain table.** It prints the table word for word, and nothing else, as `/command-table` does. The the-command-domain-table-prints-when-the-rules-have-loaded rule holds the table.
+**Selecting *Commands* prints the command domain table.** It prints the table word for word, as `/command-table` does, and nothing else before the topics are offered again. The the-command-domain-table-prints-when-the-rules-have-loaded rule holds the table.
+
+**After each explanation, the topics are offered again, until the engineer escapes.** The response gives the explanation, then puts the same four topics through the selection interface again. It repeats after every explanation and after the table. It ends only when the engineer dismisses the selection.
+
+**As the engineer stated it:** in the "/slasher" command, after an explanation is shown, it should loop back to the /slasher command until the user escapes
 
 **The question offers no other topics.** The selection interface holds four options. Items, Features, and Experiments are the three the engineer named, and Commands takes the fourth place because the table was what a bare `/slasher` printed before.
 
 **Why:** an engineer new to Slasher does not yet know its words. A bare `/slasher` is the first thing such an engineer types, and it answers with the ideas the work is organized around, explained in a few lines each, rather than with a table of commands that assumes those ideas are already known.
 
-**How to apply:** on a bare `/slasher`, put the four topics through the selection interface. On a selection, explain that topic briefly, or print the command domain table for *Commands*.
+**How to apply:** on a bare `/slasher`, put the four topics through the selection interface. On a selection, explain that topic briefly, or print the command domain table for *Commands*, then put the four topics again. Stop when the engineer dismisses the selection.
 
 ## Compressed
 
 1. A bare `/slasher` offers topics to learn about, through the selection interface: *Items*, *Features*, *Experiments*, and *Commands*. The free-text option takes any other topic.
 2. Explain a topic selected or typed briefly, as *Briefly explain <topic>* would. Lead with the point, and keep it short.
-3. For *Commands*, print the command domain table word for word, and nothing else.
+3. For *Commands*, print the command domain table word for word, and nothing else before the topics are offered again.
 4. Offer no other topics.
+5. After each explanation, and after the table, put the four topics again. Stop only when the engineer dismisses the selection.
 
 ## Compression
 
 - 2026-11-06, compressed: written with the rule; checked: 9 directives, 6 kept, 3 less precise, 0 lost, 0 repairs. Left less precise: the example that *Items* is *Briefly explain items*, the `language` package named as the source of the explanation's form, and that the bare command no longer prints the table, which the rule states only where it names what *Commands* prints
+- 2026-11-07, revised: the topics are offered again after each explanation, until the engineer escapes, as point 5; re-checked: 11 directives, 10 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the example that *Items* is *Briefly explain items*
+
+## History
+
+Until Sat Nov 7 2026 a bare `/slasher` offered the topics once, and ended after the explanation.
 
 Related:
 
@@ -35,3 +45,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 11:59:49 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:38:23 AM PT
