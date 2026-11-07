@@ -23,7 +23,7 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 > Human in the loop
 >
-> - Agent's confidence: 80%. How sure the agent is that, working alone, it does the work as you would have it done.
+> - Agent's confidence: 80%. How sure the agent is about working alone.
 > - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
 > - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
 > - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
@@ -149,7 +149,7 @@ Record the selection as a confirmation in the feature or experiment record, with
 
 > Human in the loop
 >
-> - Agent's confidence: 80%. How sure the agent is that, working alone, it does the work as you would have it done.
+> - Agent's confidence: 80%. How sure the agent is about working alone.
 > - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
 > - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
 > - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
@@ -238,8 +238,11 @@ with these exact options:
 - 2026-11-06, revised: acceptance asked through the selection UI, with Accept and Revise, as the engineer directed; checked: 69 directives, 69 kept, 0 less precise, 0 lost, after 3 repairs, re-checked kept
 - 2026-11-06, revised: the plan put inside the *Accept the plan?* question, as the engineer directed; checked: 53 directives, 53 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the `**` marks removed from the question's figures, and a directive added that the question carries none, as the engineer directed; not re-checked
+- 2026-11-07, revised: the confidence figure's sentence reads *How sure the agent is about working alone.*, wording the engineer gave; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 the confidence figure's sentence read *How sure the agent is that, working alone, it does the work as you would have it done.*
 
 Until Sun Oct 25 2026 this rule was named attended-or-unattended-is-chosen-at-the-start and titled "Attended or unattended is chosen when the work is started. DBE is in effect either way".
 
@@ -296,3 +299,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:07:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:16:42 AM PT
