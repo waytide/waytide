@@ -1,3 +1,14 @@
+# A bare /slasher offers topics to learn about
+
+Source: system/foundation/source/a-bare-slasher-offers-topics-to-learn-about.md
+
+Trigger: When the engineer types a bare `/slasher`, with nothing after it
+
+1. A bare `/slasher` offers topics to learn about, through the selection interface: *Items*, *Features*, *Experiments*, and *Commands*. The free-text option takes any other topic.
+2. Explain a topic selected or typed briefly, as *Briefly explain <topic>* would. Lead with the point, and keep it short.
+3. For *Commands*, print the command domain table word for word, and nothing else.
+4. Offer no other topics.
+
 # A command takes its subcommand first, asks when it has none, and its domain takes help
 
 Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help.md
@@ -1236,7 +1247,7 @@ Trigger: When writing a Slasher skill, or installing, refreshing, or activating 
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
-7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` offers topics to learn about.
 8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 # The startup display prints as the session starts

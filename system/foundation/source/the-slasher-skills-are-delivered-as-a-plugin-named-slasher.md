@@ -16,7 +16,7 @@
 
 **How to apply:** write a skill in its package's `skills/<command>/SKILL.md`, thin, handing its act to a rule. Assemble `.claude/skills/slasher/` from foundation's `plugin/` and the active packages' skills at install and refresh, with `plugin.json` giving `name` as `slasher` and `displayName` as `Slasher`, and commit it. Edit no skill in the assembled directory.
 
-**Each command domain's help command carries the domain's help**, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it, as `/log help` prints the LOG section. A skill that is not its domain's help command carries no `help.md`. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+**Each command domain's help command carries the domain's help**, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it, as `/log help` prints the LOG section. A skill that is not its domain's help command carries no `help.md`. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` offers topics to learn about, under the a-bare-slasher-offers-topics-to-learn-about rule.
 
 ## Compressed
 
@@ -26,7 +26,7 @@
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
-7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` offers topics to learn about.
 8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 ## Compression
@@ -42,8 +42,11 @@
 - 2026-11-06, revised: the plugin's hooks include the branch-switch hook; checked: 24 directives, 21 kept, 3 less precise, 0 lost, 0 repairs. Left less precise: that no other command on the machine claims the name, and the reasons the directory is committed and a skill runs a script, each as the 2026-11-04 check left them
 - 2026-11-06, revised: each command domain's help command carries the domain's help, and `/process` and `/language` take only `help`; checked: 21 directives, 21 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: the NEXT domain is named PROCESS, a term swap the engineer settled; not re-checked
+- 2026-11-07, revised: a bare `/slasher` offers topics to learn about, in place of doing nothing, as the engineer directed; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 the rule said a bare `/slasher` does nothing, though it had printed the command domain table since Fri Nov 6 2026. It now offers topics to learn about.
 
 Until Fri Nov 6 2026 each skill carried its own help, as `help.md` beside its `SKILL.md`, and `/<command> help` printed that command's own section.
 
@@ -79,3 +82,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:16:16 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:00:17 AM PT

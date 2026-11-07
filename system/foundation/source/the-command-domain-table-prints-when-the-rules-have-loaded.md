@@ -30,7 +30,7 @@
 
 **The first row names `/slasher help`, which prints the help of every Slasher command.** It names no command domain.
 
-**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/report 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
+**`/command-table` prints the table too.** It prints the table word for word, and nothing else: no `/report 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
@@ -41,6 +41,8 @@
 **How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/report 10` below it, and then turn to the engineer's request or wait for one.
 
 ## History
+
+Until Sat Nov 7 2026 a bare `/slasher` printed the table. It now offers topics to learn about, under the a-bare-slasher-offers-topics-to-learn-about rule, and selecting *Commands* there prints the table.
 
 Until Fri Nov 6 2026 the table had a `/phase` row, below the `/experiment` row.
 
@@ -87,3 +89,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 11:00:59 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:08:55 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:35:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:36:20 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:00:17 AM PT
