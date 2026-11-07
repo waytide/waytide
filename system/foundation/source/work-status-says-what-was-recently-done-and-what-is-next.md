@@ -10,6 +10,8 @@
 
 **What is next is the next step of the work under way**, as the next-takes-the-next-step-of-the-work-under-way rule finds it for `/next?`. Where more than one piece of work is under way, the answer names the next step of each, the one the conversation is on first.
 
+**The part that gives the next step is headed *What's next*, not *What is next*.** The engineer asks the question in those words, and the answer is headed as it was asked.
+
 **It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/work-status` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
 
 **It is read from current state, never from memory.** The log, the commits, and the records are read when the command is typed. A record that summary rule hides, such as a suspended item, is counted rather than listed here too.
@@ -26,6 +28,7 @@
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
 5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
+7. Head the part that gives the next step *What's next*, not *What is next*.
 
 ## Compression
 
@@ -34,8 +37,11 @@
 - 2026-11-05, revised: the commands are `/next-work` and `/next-work?`, a term swap the engineer settled; not re-checked
 - 2026-11-05, revised: the commands are `/next` and `/next?` again, a term swap the engineer settled; not re-checked
 - 2026-11-06, revised: `/sup?` is its alias, in place of "It has no alias"; not re-checked
+- 2026-11-06, revised: the part that gives the next step is headed *What's next*, as point 7; re-checked: 13 directives, 12 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the direction to `/status-report` for the whole project, which "Those belong to `/status-report`" carries without naming the redirect
 
 ## History
+
+Until Fri Nov 6 2026 the rule named no heading for the part that gives the next step. The engineer then asked that it read *What's next*, not *What is next*.
 
 Until Fri Nov 6 2026 the rule said `/work-status` had no alias. The engineer then made `/sup?` its alias.
 
@@ -58,3 +64,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 6:09:56 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:41:59 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:36:40 PM PT

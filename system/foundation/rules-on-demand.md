@@ -1349,6 +1349,7 @@ Trigger: When the engineer types `/work-status` or its alias `/sup?`, or asks wh
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
 5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
+7. Head the part that gives the next step *What's next*, not *What is next*.
 
 # Working-state artifacts carry a provenance footer
 
