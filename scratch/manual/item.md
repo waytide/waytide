@@ -1,7 +1,7 @@
 # Item — manual page
 
 ```
-ITEM(1)                        Waytide Manual                        ITEM(1)
+ITEM(1)                        Slasher Manual                        ITEM(1)
 
 NAME
      item - record the project's thinking about what the work should be

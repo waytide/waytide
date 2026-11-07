@@ -42,7 +42,7 @@ session=$(field session_id)
 tool_use=$(field tool_use_id)
 [ -n "$session" ] || exit 0
 
-records="${TMPDIR:-/tmp}/waytide-branch"
+records="${TMPDIR:-/tmp}/slasher-branch"
 record="$records/$session-$tool_use"
 
 case "$1" in

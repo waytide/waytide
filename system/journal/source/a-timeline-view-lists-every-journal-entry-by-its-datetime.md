@@ -2,7 +2,7 @@
 
 **Trigger:** When the writer asks for the journal timeline or a list of journal entries, as with `/journal list`
 
-Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `waytide/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. List them in chronological order, oldest first.
+Where the writer asks for the timeline — *show the timeline*, *list the entries* — list every journal entry in the active writer's journal directory, `slasher/local/journal/<username>/`. Those are the `20*.md` files there, and `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. List them in chronological order, oldest first.
 
 Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>` is the human-readable datetime line under the entry's title, as `Wed Jun 17 2026 at 18:28` is. The `<title>` is the entry's `# ` heading with the leading `# ` removed. End with a one-line count and date span, as *15 entries, spanning Jun 15–17, 2026*. Output the list alone, with no preamble.
 
@@ -20,12 +20,12 @@ Format each as a single bullet, `- **<datetime>** — <title>`. The `<datetime>`
 
 **Why:** the timeline says nothing the entries do not. It is an ordering and a rendering of material that is already on disk, so a second copy of it buys a reader nothing and can only disagree with the first. Computing it on request means it is correct by construction, and it cannot be stale.
 
-**How to apply:** resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read the `20*.md` files in `waytide/local/journal/<username>/`, sort them by their datetime line, emit the bullets, and append the computed count and date span. Write nothing to a file.
+**How to apply:** resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read the `20*.md` files in `slasher/local/journal/<username>/`, sort them by their datetime line, emit the bullets, and append the computed count and date span. Write nothing to a file.
 
 ## Compressed
 
 1. When the writer asks for the timeline, such as *show the timeline* or *list the entries*, list every journal entry in the active writer's journal directory.
-2. The directory is `waytide/local/journal/<username>/`.
+2. The directory is `slasher/local/journal/<username>/`.
 3. Resolve `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 4. The entries are the `20*.md` files in that directory.
 5. Sort the entries by their datetime line, oldest first.
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:38 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 9:02:21 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

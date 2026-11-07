@@ -1,8 +1,8 @@
 #!/bin/sh
-# Render the status line, carrying a persistent Waytide installation indicator.
+# Render the status line, carrying a persistent Slasher installation indicator.
 #
 # Run by the harness as its statusLine command — see the
-# the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule. Where the SessionStart notice marks
+# the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule. Where the SessionStart notice marks
 # the moment the system loaded, this keeps the fact on screen for the whole
 # session, outside the conversation.
 #
@@ -105,23 +105,23 @@ fi
 # The segment names the system and nothing else. It carried a package count until
 # 2026-07-28; the count told a engineer nothing they act on, changed only when a package
 # was installed, and competed for width with the segments that do change. What the line is
-# for here is the standing fact that Waytide is in force — one word says it.
+# for here is the standing fact that Slasher is in force — one word says it.
 #
 # Presence is still read from disk rather than assumed: at least one directory carrying a
 # README.md, the same test for a package that the session-start notice uses. Only the
 # display drops the number.
-waytide=
+slasher=
 if [ -n "$system" ]; then
   package=$(
     cd "$system" 2>/dev/null &&
       find . -mindepth 2 -maxdepth 3 -name README.md 2>/dev/null | head -1
   )
   if [ -n "$package" ]; then
-    waytide=":: Waytide"
+    slasher=":: Slasher"
   fi
 fi
 
-# The directory and branch lead, separated by a middle dot; the Waytide segment
+# The directory and branch lead, separated by a middle dot; the Slasher segment
 # trails after a double colon, so the engineer's own orientation comes first and the
 # system indicator reads as an annotation on it. The double colon separates more firmly
 # than the hyphen it replaced on 2026-07-28: a hyphen also joins words, so it read as
@@ -138,11 +138,11 @@ for segment in "$directory" "$branch" "$changes" "$untracked" "$unpushed"; do
   fi
 done
 
-if [ -n "$waytide" ]; then
+if [ -n "$slasher" ]; then
   if [ -z "$line" ]; then
-    line="$waytide"
+    line="$slasher"
   else
-    line="$line $waytide"
+    line="$line $slasher"
   fi
 fi
 

@@ -6,15 +6,15 @@ The engineer decides. The agent generates.
 
 Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
-Waytide offers a project five things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
+Slasher offers a project five things: rules that direct the agent's behavior, work that records itself, a design method with the engineer in control at decision points, local extensibility, and the machinery that installs and activates all of it.
 
 ## Rules that direct the agent's behavior
 
 - **Rules loaded fresh at startup.** The entire rule set is read and loaded by the agent at session start, rather than the agent only applying what it remembers.
-- **Files, not memory.** Memory is written to disk, in the project's own `waytide/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is fed by the committed artifacts.
+- **Files, not memory.** Memory is written to disk, in the project's own `slasher/` directory, rather than kept in the agent's. Committed with the code, and so reviewable, diffable, and versioned like the code. An agent memory store is fed by the committed artifacts.
 - **One rule per file, written in prose.** A rule is in one file and written in prose. They're readable and understandable, and easy to find and identify in your project's directories.
 - **Work that records itself.** Comprehensive logging and recording of the engineer's decisions and the agent's actions.
-- **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Waytide's own.
+- **Extensible locally.** local/rules/ for a project's own rules, local/vocabulary.md for its own terms, both binding and both having precedence over Slasher's own.
 - **Installed as packages.** A consuming project installs packages, rather than single rules. With tools for installing and refreshing packages, and reporting on changes.
 
 ## A design method with the engineer in control at decision points
@@ -27,17 +27,17 @@ Waytide offers a project five things: rules that direct the agent's behavior, wo
 
 ## The work records itself
 
-**These directories are the memory.** They sit under `waytide/local/`, they are committed with the code, and they are read at the start of a session rather than recalled.
+**These directories are the memory.** They sit under `slasher/local/`, they are committed with the code, and they are read at the start of a session rather than recalled.
 
 - **items/** — Designs, plans, aspirations, observations, specifications. One class of record, differentiated by tags and status.
 - **logs/** — The log (one file, one line, one decision), loop records, work session records. Written by the agent at the appropriate time.
 - **implementations/** — Features and experiments, each with a branch or a working tree, a working location chosen at the start, a lifecycle, a declared end, and recorded confirmations.
 - **journal/** — The engineer's periodic record, written by the engineer in their own words. The agent only reads these records. Read at session start, but not binding.
-- **migration/** — Execution plans for rules and content moving to or from another repository, or to shape existing artifacts to changes to the Waytide system, or even a project's own local rules.
+- **migration/** — Execution plans for rules and content moving to or from another repository, or to shape existing artifacts to changes to the Slasher system, or even a project's own local rules.
 
 ## Project-local rules
 
-A project's own rules live in `waytide/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `waytide/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own local rules and vocabulary overrule those in the base system.
+A project's own rules live in `slasher/local/rules/`, one per file, each named with the ISO-8601-UTC datetime prefix. Its own terms live beside them in `slasher/local/vocabulary.md`. Both are read at session start and bind exactly as an installed package does, and a project's own local rules and vocabulary overrule those in the base system.
 
 ## Domain conventions
 
@@ -53,11 +53,11 @@ A project's own rules live in `waytide/local/rules/`, one per file, each named w
 - **Commands.** Status report, test report, test tree, lib report, timeline.
 - **11 scripts.** Installed with the packages or held at the authoring root.
 
-## Install Waytide
+## Install Slasher
 
-Waytide's packages are installed using `git subtree`. Each package is its own subtree, which allows the packages to be refreshed from the source.
+Slasher's packages are installed using `git subtree`. Each package is its own subtree, which allows the packages to be refreshed from the source.
 
-Install all of Waytide's packages at once with:
+Install all of Slasher's packages at once with:
 
 ```
 curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
@@ -72,7 +72,7 @@ Execute the install script using `sh`:
 
 `sh install`
 
-The script fetches the packages over SSH. Where no SSH key is registered, run it as `WAYTIDE_ORIGIN=https://github.com/waytide sh install`.
+The script fetches the packages over SSH. Where no SSH key is registered, run it as `SLASHER_ORIGIN=https://github.com/waytide sh install`.
 
 The file is committed as an executable, but `curl` transfers content and not file metadata. The copy it writes is not executable, whatever mode the original carries. Every other script here is invoked as itself, because every other script reaches a project by `git subtree`, which does preserve the mode.
 
@@ -96,10 +96,10 @@ A set's members are installed as ordinary packages. Nothing records which set as
 
 Installing a subset is one way to run a package set. The other is to **declare one in a project that already holds more packages than it wants active**, which uninstalls nothing. A project that installed everything and later wants five packages does not have to take three back out.
 
-A project declares it by writing a record under `waytide/local/`, named for the moment it was made and for what it names:
+A project declares it by writing a record under `slasher/local/`, named for the moment it was made and for what it names:
 
 ```
-waytide/local/2026-08-23T09-30-00Z-content-package-set.md
+slasher/local/2026-08-23T09-30-00Z-content-package-set.md
 
 - **Package set:** content
 - **Packages:** foundation, git, journal, language, versioning
@@ -116,8 +116,8 @@ The list of installed packages is printed at the start of a session, under the t
 
 ## Packages
 
-- **[foundation](https://github.com/waytide/foundation)**. The `waytide/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
-- **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Waytide's implementation of ASD-STE100.
+- **[foundation](https://github.com/waytide/foundation)**. The `slasher/` artifact system: the `rules/` and `vocabulary.md` that bind, and the `items/`, `logs/`, `implementations/`, and `migration/` directories the work is recorded in. The one-line log format, the ISO-8601-UTC filename convention, the tag protocol, and the implementation lifecycle. Everything includes it.
+- **[language](https://github.com/waytide/language)**. How language is used: precisely. Words are load-bearing, so a word selection is a design decision. Name concepts literally, drop slang, and keep the settled substitutions in the package's `vocabulary.md`. Carries Eventide Technical English, Slasher's implementation of ASD-STE100.
 - **[design-by-efferent](https://github.com/waytide/design-by-efferent)**. Human-in-the-loop, efferent-first design method (DBE): hinges and gates, the actuation-first cycle, and the method's own `vocabulary.md` lexicon. An updated TDD variant with accommodations for AI. Contributes the `logs/loops/` artifact directory.
 - **[testing](https://github.com/waytide/testing)**. Controls-based test-writing conventions: variable prefixes, test structure and naming, assertion form.
 - **[git](https://github.com/waytide/git)**. Commit conventions, and the one branch operation the agent announces.
@@ -141,14 +141,14 @@ ext/ruby-lang       →  every package above
 
 ## Using a specific package in a project
 
-A consuming project installs a package with `git subtree`. That places the package's files physically into the project's `waytide/system/` tree, so they are committed alongside the code and read at session start:
+A consuming project installs a package with `git subtree`. That places the package's files physically into the project's `slasher/system/` tree, so they are committed alongside the code and read at session start:
 
 ```
-git subtree add  --prefix waytide/system/testing git@github.com:waytide/testing.git master --squash
-git subtree pull --prefix waytide/system/testing git@github.com:waytide/testing.git master --squash
+git subtree add  --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
+git subtree pull --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/<package>.git` in place of the address above. Every Waytide script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/<package>.git` in place of the address above. Every Slasher script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
 
 Dependency packages are not installed automatically. If the package has an `install-dependencies.sh`, run it from your project root to install them. Otherwise the package is standalone.
 
@@ -156,7 +156,7 @@ Refresh any package later using `git subtree pull`:
 
 ```
 git subtree pull \
-  --prefix waytide/system/foundation \
+  --prefix slasher/system/foundation \
   git@github.com:waytide/foundation.git \
   master \
   --squash
@@ -164,23 +164,23 @@ git subtree pull \
 
 ## Extensions and externals
 
-Most of Waytide is about how the work is done, whatever a project is built with. Some of it is not. For example, programming language-specific style, the command that runs a test suite, and the mechanics of releasing a package are about **a tool a project uses**, and they are inert in a project that does not use it.
+Most of Slasher is about how the work is done, whatever a project is built with. Some of it is not. For example, programming language-specific style, the command that runs a test suite, and the mechanics of releasing a package are about **a tool a project uses**, and they are inert in a project that does not use it.
 
 Those live in **`ext/`**, one package per subject. Such a package is not part of the default distribution — a project takes what it needs, and takes nothing from the tools it does not use.
 
-**More are to come.** An **external** is something Waytide did not write and does not govern, and an **extension** is something that adds to Waytide. A language, a test framework, a package manager, and a build system are each one or the other, and their directories are in `ext/`.
+**More are to come.** An **external** is something Slasher did not write and does not govern, and an **extension** is something that adds to Slasher. A language, a test framework, a package manager, and a build system are each one or the other, and their directories are in `ext/`.
 
 **Such a package is authored in its own repository**, rather than here and then split out. It holds rules for something this composite has no other reason to know about.
 
 ## Origins
 
-Waytide grew out of the design system that the Eventide Project uses in its own work. The rules were extracted from its [Constant](https://github.com/eventide-project/constant) project and generalized and consolidated into these packages.
+Slasher grew out of the design system that the Eventide Project uses in its own work. The rules were extracted from its [Constant](https://github.com/eventide-project/constant) project and generalized and consolidated into these packages.
 
 **This composite repository is not itself installed into a project.** It is the authoring source. A consuming project installs the individual component packages, each with its own repository.
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 
 ---
 

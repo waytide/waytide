@@ -109,52 +109,52 @@ Source: system/language/source/communicate-plainly-and-name-the-actual-thing.md
 6. Not this: "The printed-list rule contradicts itself about what the first column holds. This is the master version, `a-record-list-is-a-table.md`… What the rule says, line 5: …"
 7. This: "The list rule says the first column holds the full date and time, like `2026-10-02T14-10-05Z`. Its examples show just the date, like `2026-10-02`. To fix it, either the examples change, or the text does."
 
-# Waytide keeps its word where the STE word means something else
+# Slasher keeps its word where the STE word means something else
 
-Source: system/language/source/ete/waytide-keeps-its-word-where-the-ste-word-means-something-else.md
+Source: system/language/source/ete/slasher-keeps-its-word-where-the-ste-word-means-something-else.md
 
-1. Waytide writes its prose in ASD-STE100 Simplified Technical English, which has an approved dictionary and 53 writing rules.
+1. Slasher writes its prose in ASD-STE100 Simplified Technical English, which has an approved dictionary and 53 writing rules.
 2. STE Rules 1.5 through 1.13 let a project add its own technical nouns and technical verbs.
-3. The rules in this directory are Eventide Technical English, or ETE, which is Waytide's implementation of the standard.
-4. ETE is the STE dictionary and writing rules, with Waytide's reserved terms and its substitutions, in the sequence this rule states.
+3. The rules in this directory are Eventide Technical English, or ETE, which is Slasher's implementation of the standard.
+4. ETE is the STE dictionary and writing rules, with Slasher's reserved terms and its substitutions, in the sequence this rule states.
 5. `Say it in ETE` asks for ETE.
-6. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Waytide reserved.
+6. `Say it in STE` asks for the raw standard, without `efferent`, `cradle`, `hinge`, or any other term Slasher reserved.
 7. The STE dictionary decides first.
 8. For a word the STE dictionary does not approve, it names an approved alternative.
 9. Use the alternative where it carries the meaning: `initiate` becomes `start`, `impact` becomes `effect`, and `protect` becomes `prevent`.
-10. Keep Waytide's word where the approved word means something else.
+10. Keep Slasher's word where the approved word means something else.
 11. Reserve that word in the package's `vocabulary.md`.
 12. Where the approved word carries a different meaning, the ete-fixes-the-meaning-of-a-word-in-its-category rule governs.
 13. A word the dictionary does not list is not a defect.
 14. STE Rule 1.1 permits an unlisted word as a technical noun or a technical verb, as with `efferent`, `cradle`, and `solubility`.
 15. The worked instance is `sweep`: the STE dictionary replaces `sweep (v)` with `SCAN`.
 16. Neither `SCAN` nor `AGREE`, which the dictionary gives for `conform`, carries that meaning, so `conform` is reserved and wins.
-17. A substitution replaces a word Waytide rejects.
+17. A substitution replaces a word Slasher rejects.
 18. A reservation keeps a word STE rejects.
 19. A substitution and a reservation are different acts, and `conform` is both.
 20. An absent word and a word that is not approved differ.
-21. An absent word is a gap: the standard never considered it, as with most terms Waytide coined.
+21. An absent word is a gap: the standard never considered it, as with most terms Slasher coined.
 22. A word that is not approved is a disagreement: the standard considered it and named something else.
 23. A reservation of a word that is not approved rejects the standard's decision.
 24. So the record says which case a reserved term is in.
 25. `reserve` is absent.
 26. `discontinue` is not approved, and the dictionary gives `STOP`.
 27. Three rules beside this one carry ETE's departures from the standard.
-28. The ete-declares-its-own-categories rule adds five categories of Waytide's own, against STE Rules 1.5 and 1.12.
+28. The ete-declares-its-own-categories rule adds five categories of Slasher's own, against STE Rules 1.5 and 1.12.
 29. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take its entry's meaning, against STE Rule 1.3.
 30. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves ordinary words alone, against STE Rule 1.1.
 
-# Waytide prose conforms to the STE writing rules
+# Slasher prose conforms to the STE writing rules
 
-Source: system/language/source/ete/waytide-prose-conforms-to-the-ste-writing-rules.md
+Source: system/language/source/ete/slasher-prose-conforms-to-the-ste-writing-rules.md
 
 1. ASD-STE100 holds 53 writing rules in nine sections.
-2. These rules bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers.
-3. This rule holds the STE rules Waytide breaks most.
+2. These rules bind Slasher's prose, its rules, its records, its commit messages, and the agent's answers.
+3. This rule holds the STE rules Slasher breaks most.
 4. When another STE rule is found broken in use, add it to the table. Record beside it the phrase that broke it.
 5. This rule is part of Eventide Technical English, or ETE.
-6. The waytide-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Waytide's vocabulary decides first, and the standard second.
-7. Check a phrase against Waytide's vocabulary first.
+6. The slasher-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Slasher's vocabulary decides first, and the standard second.
+7. Check a phrase against Slasher's vocabulary first.
 8. Then check it against the STE dictionary.
 9. Then check it against the writing rules below.
 
@@ -171,7 +171,7 @@ Source: system/language/source/ete/waytide-prose-conforms-to-the-ste-writing-rul
 
 ## Two worked phrases
 
-1. The agent wrote each of these phrases. Each broke Waytide's vocabulary before it broke the standard.
+1. The agent wrote each of these phrases. Each broke Slasher's vocabulary before it broke the standard.
 
 ### `swept across 20 files`
 

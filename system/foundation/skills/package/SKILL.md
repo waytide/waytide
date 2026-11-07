@@ -1,6 +1,6 @@
 ---
 name: package
-description: Activate or deactivate an installed package, refresh the packages, or install Waytide.
+description: Activate or deactivate an installed package, refresh the packages, or install Slasher.
 argument-hint: "[activate <package> | deactivate <package> | refresh [<package>...] | install | help]"
 disable-model-invocation: true
 ---
@@ -17,5 +17,5 @@ The engineer typed `/package $ARGUMENTS`.
    - **Help:** `help`
 5. **`activate <package>`** or **`deactivate <package>`**: change the package set by that one package. Load a-project-declares-which-installed-packages-are-active. Where no package was named, ask which, through the selection interface, from the packages installed.
 6. **`refresh [<package>...]`**: refresh the packages named, or every installed package. Load package-refresh-and-install-run-foundations-scripts.
-7. **`install`**: install Waytide into the project the session is in. Load package-refresh-and-install-run-foundations-scripts. Never run it in the Waytide authoring source.
+7. **`install`**: install Slasher into the project the session is in. Load package-refresh-and-install-run-foundations-scripts. Never run it in the Slasher authoring source.
 8. Any other first word is not guessed at. Say it is not one of this command's subcommands, and ask which is meant, as step 4 does.

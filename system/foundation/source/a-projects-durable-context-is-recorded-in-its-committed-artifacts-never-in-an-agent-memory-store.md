@@ -1,8 +1,8 @@
 # A project's durable context is recorded in its committed artifacts, never in an agent memory store
 
-**Every piece of context meant to survive a session is written into `waytide/`.** The rules bind it, the working directories hold it, and git carries it. An agent memory store is not one of those places, and nothing that belongs in one of them is held in a store instead.
+**Every piece of context meant to survive a session is written into `slasher/`.** The rules bind it, the working directories hold it, and git carries it. An agent memory store is not one of those places, and nothing that belongs in one of them is held in a store instead.
 
-**The artifacts are the ones this package already defines.** A binding convention is a rule in `waytide/local/rules/`. A decision is a one-line entry in `waytide/local/logs/log/`. Thinking that has not stabilized is an observation in `waytide/local/items/`. An item is where the project's planning goes. Postponed work is a deferred item, and what the project stopped doing is suspended. Each has its own convention, and between them they hold what a project knows about itself.
+**The artifacts are the ones this package already defines.** A binding convention is a rule in `slasher/local/rules/`. A decision is a one-line entry in `slasher/local/logs/log/`. Thinking that has not stabilized is an observation in `slasher/local/items/`. An item is where the project's planning goes. Postponed work is a deferred item, and what the project stopped doing is suspended. Each has its own convention, and between them they hold what a project knows about itself.
 
 **What this forbids is a store standing in for one of them.** A note about how this project's code is arranged, what was decided last week, or which approach was rejected belongs in an artifact. Holding it anywhere else is holding it where nobody reviews it.
 
@@ -26,12 +26,12 @@ Where a fact is about the engineer rather than the project, it is outside this r
 
 ## Compressed
 
-1. Write every piece of context meant to survive a session into `waytide/`.
+1. Write every piece of context meant to survive a session into `slasher/`.
 2. The rules bind that context, the working directories hold it, and git carries it.
 3. An agent memory store is not one of those places.
 4. Do not hold in a store anything that belongs in one of those places.
-5. A binding convention is a rule in `waytide/local/rules/`. A decision is a one-line entry in `waytide/local/logs/log/`.
-6. Thinking that has not stabilized is an observation in `waytide/local/items/`.
+5. A binding convention is a rule in `slasher/local/rules/`. A decision is a one-line entry in `slasher/local/logs/log/`.
+6. Thinking that has not stabilized is an observation in `slasher/local/items/`.
 7. The project's planning goes in an item.
 8. Postponed work is a deferred item.
 9. What the project stopped doing is suspended.
@@ -98,3 +98,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

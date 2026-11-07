@@ -118,7 +118,7 @@ Related:
 
 - the `foundation` an-implementation-runs-on-a-branch-to-a-declared-end rule — which require the working tree to end on the upstream branch, and which the block makes checkable
 - the run-the-test-suite-after-changes-before-considering-whether-to-commit rule — the other thing confirmed before work is recorded
-- the `foundation` the-waytide-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin that carries the hook
+- the `foundation` the-slasher-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin that carries the hook
 
 ---
 
@@ -135,3 +135,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:24:09 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

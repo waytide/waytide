@@ -1,7 +1,7 @@
 # Clarify — manual page
 
 ```
-CLARIFY(1)                     Waytide Manual                     CLARIFY(1)
+CLARIFY(1)                     Slasher Manual                     CLARIFY(1)
 
 NAME
      clarify - make the previous answer plainer

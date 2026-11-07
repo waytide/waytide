@@ -27,7 +27,7 @@
 
 **A project with no `test/automated/` is ordinary too**, and its consequence is worth stating: the pre-commit run has nothing to run. That is not a failure and is not reported as one. The commit decision is then weighed on what the project does have, and the run-the-test-suite-after-changes-before-considering-whether-to-commit rule is satisfied vacuously rather than violated.
 
-**Waytide's own composite repository has both.** Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. Its automated tests, such as `test/automated/startup-display.sh`, run a script on a fixed input and compare the output, with no network access and no person in the run.
+**Slasher's own composite repository has both.** Its three interactive tests install packages from real repositories over the network and drive an installer that writes a project tree, so each is interactive. Its automated tests, such as `test/automated/startup-display.sh`, run a script on a fixed input and compare the output, with no network access and no person in the run.
 
 **Why:** a suite is trusted in proportion to what happens when it is red. A run that sometimes needs a person, sometimes reaches a network, and sometimes cannot be judged by its exit status is a run whose failures get explained rather than fixed. Separating the two by directory keeps the automated suite mechanically true — it passes or it does not — and gives the tests that genuinely need a person a place to be, rather than being deleted for not fitting.
 
@@ -110,3 +110,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

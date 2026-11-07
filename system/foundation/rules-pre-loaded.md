@@ -4,22 +4,22 @@ Source: system/foundation/source/a-packages-vocabulary-holds-its-terms-and-the-m
 
 1. A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces.
 2. It is binding.
-3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Waytide's prose is written.
+3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Slasher's prose is written.
 4. This rule governs using a vocabulary. Writing one, what it holds, and where a term goes are the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule's, which loads when a vocabulary file is written.
 
 ## Which vocabulary decides
 
 1. Four levels hold terms, and a word can appear in more than one.
 2. They stand in this order, from the most general to the most specific, which decides:
-   1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
+   1. **The STE dictionary**, and Slasher's reserved terms where the approved word means something else. The `language` package's slasher-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
    2. **The `language` package's vocabulary**: the terms and substitutions that belong to no domain. The `language` vocabulary says so itself.
    3. **An individual package's vocabulary**: the terms and substitutions of one domain.
-   4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
+   4. **The project's own vocabulary**, in `slasher/local/vocabulary.md`, which a project writes for itself.
 3. When a word appears in two vocabularies, the more specific one decides.
 
 ## A project's own vocabulary binds
 
-1. `waytide/local/vocabulary.md` is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
+1. `slasher/local/vocabulary.md` is read at session start, with `slasher/system/` and `slasher/local/rules/`. That read makes it binding.
 2. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
 3. It is optional, and its absence is not a defect.
 
@@ -56,7 +56,7 @@ Source: system/foundation/source/a-process-question-and-its-answer-are-logged.md
 4. Do not log a mechanical question.
 5. Mark a process question by setting the selection's `metadata.source` to `decision`, in the same call that asks the question.
 6. Set no marker on a mechanical question.
-7. The plugin's `PostToolUse` hook on `AskUserQuestion` runs foundation's `process-question-log.sh`. It writes one log entry to `waytide/local/logs/log/` for each marked question that was answered, and nothing for an unmarked one.
+7. The plugin's `PostToolUse` hook on `AskUserQuestion` runs foundation's `process-question-log.sh`. It writes one log entry to `slasher/local/logs/log/` for each marked question that was answered, and nothing for an unmarked one.
 8. Do not write these entries yourself.
 9. Each entry is an ordinary log entry, with `**Tags:** [decision]` under its title. Its title is the question's first line and the engineer's answer, as in `# Accept the plan? — Accept, selected by the engineer`.
 10. Its body holds the question, the options with their descriptions, the answer, and any notes the engineer added.
@@ -74,8 +74,8 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 
 ## The record
 
-1. A declaration is a record under `waytide/local/`.
-2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`.
+1. A declaration is a record under `slasher/local/`.
+2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `slasher/local/2026-08-23T09-30-00Z-content-package-set.md`.
 3. A new declaration writes a new record.
 4. A new declaration edits no existing record.
 5. At session start, read the record with the latest prefix. It holds, and the earlier ones are history.
@@ -106,7 +106,7 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 ## A deactivated package is listed, not read
 
 1. The loader does not print a deactivated package's rules at session start.
-2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`.
+2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `slasher/system/foundation/load-rules.sh --package <name>`.
 3. The read is still unconditional. The declaration decides what it holds.
    Follow only the active packages' rules.
 4. Where the engineer reactivates a package during the session, run its command and follow its rules from then on. No restart is needed.
@@ -147,7 +147,7 @@ Source: system/foundation/source/a-project-declares-which-installed-packages-are
 Source: system/foundation/source/a-project-does-not-name-its-downstream-consumers-in-its-own-files.md
 
 1. A project's own files do not name the projects that consume it.
-2. This covers the installed packages under `waytide/system/`, the working state under `waytide/local/`, and the code and documentation beside them.
+2. This covers the installed packages under `slasher/system/`, the working state under `slasher/local/`, and the code and documentation beside them.
 3. It holds for a library, a package, a rule system, or anything else other projects install.
 4. A consumer is a project named only because it installed this one. That is the whole test.
 5. Do not add a list of consumers for convenience.
@@ -156,8 +156,8 @@ Source: system/foundation/source/a-project-does-not-name-its-downstream-consumer
 
 1. The test is why the name is there, not whether the named project consumes this one.
 2. A project named because a decision was about it may be named. Leave its name.
-3. A project that is part of this project at large may be named, such as Waytide's `website`.
-4. A reference project the method is shown through may be named, such as Waytide's `constant`.
+3. A project that is part of this project at large may be named, such as Slasher's `website`.
+4. A reference project the method is shown through may be named, such as Slasher's `constant`.
 5. Leave a historical record that already names a consumer as written. It is not revised to suit a later convention.
 6. The one exception is disclosure, governed by the disclosure rule, not this one. A consumer's name already in a record is that rule's concern.
 7. That correction removes the name and keeps every claim true by stating it at a lower resolution.
@@ -179,38 +179,38 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 1. The project's binding rules are read at the start of every session and followed.
 2. Binding rules include naming conventions, terminology, plan-writing norms, commit conventions, and the like.
 3. Binding rules live in two directories, separated by source.
-4. **`waytide/system/`** holds the installed system packages, each in its own subdirectory (`waytide/system/foundation/`, `waytide/system/language/`, …).
+4. **`slasher/system/`** holds the installed system packages, each in its own subdirectory (`slasher/system/foundation/`, `slasher/system/language/`, …).
 5. Packages are installed with `git subtree` and refreshed by pulling.
 6. A package's `vocabulary.md` glossary is part of its rules, and cannot be applied unread.
-7. **`waytide/local/rules/`** holds the project's own local rules, one per file. Every rule, system or local, is kept one per file.
+7. **`slasher/local/rules/`** holds the project's own local rules, one per file. Every rule, system or local, is kept one per file.
 8. Local rules are the project's own conventions, not installed from a package.
 
 ## Reading the rules
 
-1. At the start of a session, run `waytide/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
-   It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `waytide/system/foundation/` first, then the rules in `waytide/local/rules/`, `waytide/local/vocabulary.md`, and the journal.
+1. At the start of a session, run `slasher/system/foundation/load-rules.sh` and read its whole output. Follow the rules it prints.
+   It prints each package's `rules-pre-loaded.md` and `vocabulary.md`, `slasher/system/foundation/` first, then the rules in `slasher/local/rules/`, `slasher/local/vocabulary.md`, and the journal.
 2. Do not read a package's `source/` directory or its `README.md` at session start.
 3. A package's `source/` holds its full rules, one per file. Edit a rule there.
 4. A package's `rules-pre-loaded.md`, at the package root, holds each rule's title, the path of its source, and its compressed text. `./compile.sh` writes it.
 5. The package's `rules-pre-loaded.md` is what is read.
 6. A package's `rules-on-demand.md`, at the package root, holds each rule whose source carries a `**Trigger:**` line under its title, with its trigger. `./compile.sh` writes it.
-7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `waytide/system/foundation/load-rules.sh <rule-name>`.
+7. The loader does not print an on-demand rule. It prints the rule's trigger and the command that loads it: `slasher/system/foundation/load-rules.sh <rule-name>`.
 8. When the act a trigger names comes up, run that command and follow the rule it prints before acting.
 9. Give a rule a trigger only where it names a discrete act the agent itself takes, such as running a command or creating or editing a named kind of file, so the agent cannot reach the act without knowing it, and where a missed load is cheap and visible. A trigger naming a judgment about a situation, such as giving a summary or working with tests, is not safe, and its rule stays pre-loaded.
 10. The rules override default behavior where they conflict.
 11. Explicit user instructions still win over the rules.
-12. Read `waytide/system/foundation/` first. It defines the system.
-13. The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule settles where `waytide/local/vocabulary.md` sits and why.
+12. Read `slasher/system/foundation/` first. It defines the system.
+13. The a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule settles where `slasher/local/vocabulary.md` sits and why.
 14. `rules/` may not exist. Its absence is ordinary.
 
 ## Rules and work artifacts
 
 1. Rules are kept separate from work artifacts.
-2. `waytide/local/rules/` holds only rules. `waytide/system/` holds only the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state.
-3. The project's working state lives beside `rules/` under `waytide/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
+2. `slasher/local/rules/` holds only rules. `slasher/system/` holds only the packages' rules and what packages them: each package's `README.md`, `source/`, and `LICENSE`, its `vocabulary.md` where it has one, and its scripts. Neither holds any of the project's working state.
+3. The project's working state lives beside `rules/` under `slasher/local/`: `logs/` (holding `log/`, `loops/`, and `work-sessions/`), `items/`, `implementations/`, `migration/`.
 4. Work with working state as its own conventions describe.
 5. Do not read working state as binding rules at session start.
-6. `waytide/local/vocabulary.md` sits beside working state but is not working state. It is the one thing there that binds.
+6. `slasher/local/vocabulary.md` sits beside working state but is not working state. It is the one thing there that binds.
 
 ## Purpose of a rule
 
@@ -222,27 +222,27 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 1. A rule is frontmatter-free markdown.
 2. It has a `# <title>` stating the rule, then the rule in prose, then short `**Why:**` and `**How to apply:**` lines.
 3. Name a system package rule with a dash-separated, lower-case name.
-4. Give a project's own local rule in `waytide/local/rules/` the ISO-8601-UTC datetime prefix in its file name. See the file-names rule.
+4. Give a project's own local rule in `slasher/local/rules/` the ISO-8601-UTC datetime prefix in its file name. See the file-names rule.
 5. Put a rule's history in a `## History` section, placed before `Related:`.
 6. History is what the rule used to say, when it changed, what it was named, and where it sat.
 7. The compiler leaves `## History` out of the package's rules file. The full rule in `source/` keeps it.
 8. Reasoning the directive depends on is not history, even where it tells what failed before. Keep it in the body, where the `**Why:**` passage is.
 9. A paragraph leads with its claim in bold. The sentences after it support that claim.
 10. Where the support runs past six sentences, the next paragraph carries no bold lead. The absence marks it as continuation, not a new claim.
-11. The six-sentence limit is STE Rule 6.6. See the language package's waytide-prose-conforms-to-the-ste-writing-rules rule.
+11. The six-sentence limit is STE Rule 6.6. See the language package's slasher-prose-conforms-to-the-ste-writing-rules rule.
 
 ## Recording a new local rule
 
-1. When the user states a rule, or a decision sets a rule for future work, add it as a new file in `waytide/local/rules/`.
-2. Add a matching one-line entry to `waytide/local/logs/log/`.
-3. Edit a rule that belongs to a system package in that package and re-publish it. Do not add it to `waytide/local/rules/`.
-4. When the project settles a term or a substitution of its own, write it in `waytide/local/vocabulary.md`. Do not write it as a rule.
+1. When the user states a rule, or a decision sets a rule for future work, add it as a new file in `slasher/local/rules/`.
+2. Add a matching one-line entry to `slasher/local/logs/log/`.
+3. Edit a rule that belongs to a system package in that package and re-publish it. Do not add it to `slasher/local/rules/`.
+4. When the project settles a term or a substitution of its own, write it in `slasher/local/vocabulary.md`. Do not write it as a rule.
 5. Prefer an observation over a rule when the thinking has not stabilized. See the observations rule.
 
 ## Referencing a rule
 
 1. Reference a rule by its name, never by its file path.
-2. Write "the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule", not `waytide/system/testing/a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context.md`.
+2. Write "the a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context rule", not `slasher/system/testing/a-test-actuates-its-concern-once-and-asserts-each-outcome-in-its-own-context.md`.
 3. Rename a rule when its name stops saying what it says. Its filename changes with it, so a recorded path then points at nothing.
 
 ## Removing a rule
@@ -258,12 +258,12 @@ Source: system/foundation/source/a-projects-binding-rules-are-recorded-in-its-pa
 
 Source: system/foundation/source/a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store.md
 
-1. Write every piece of context meant to survive a session into `waytide/`.
+1. Write every piece of context meant to survive a session into `slasher/`.
 2. The rules bind that context, the working directories hold it, and git carries it.
 3. An agent memory store is not one of those places.
 4. Do not hold in a store anything that belongs in one of those places.
-5. A binding convention is a rule in `waytide/local/rules/`. A decision is a one-line entry in `waytide/local/logs/log/`.
-6. Thinking that has not stabilized is an observation in `waytide/local/items/`.
+5. A binding convention is a rule in `slasher/local/rules/`. A decision is a one-line entry in `slasher/local/logs/log/`.
+6. Thinking that has not stabilized is an observation in `slasher/local/items/`.
 7. The project's planning goes in an item.
 8. Postponed work is a deferred item.
 9. What the project stopped doing is suspended.
@@ -294,12 +294,12 @@ Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-re
 8. Waiting items are off the task line until the wait ends.
 9. Order waiting items by their `**Priority:**` rank where they carry one.
 10. Do not list a hidden record in the waiting work table.
-11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
-12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
-13. The map shows that `waytide/local/rules/` holds the project's own local rules.
+11. Part 3, **Slasher-directory orientation**: a basic map of `slasher/`.
+12. The map shows that `slasher/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
+13. The map shows that `slasher/local/rules/` holds the project's own local rules.
 14. The map states that both are binding and both are read at session start.
-15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
-16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
+15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `slasher/local/`.
+16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `slasher/local/`.
 17. The orientation says how to work with the directory. Rules are enforceable conventions.
 18. The log is title-only ISO-8601-UTC decision entries.
 19. A rule typically pairs with a log entry.
@@ -346,7 +346,7 @@ Source: system/foundation/source/a-status-report-prints-a-fixed-whole-project-re
 1. Keep each part tight.
 2. Read current state before printing.
 3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
-4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
+4. Render the parts from current files: the project's items, `slasher/local/logs/log/`, and git.
 5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
 6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
 7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
@@ -394,8 +394,8 @@ Source: system/foundation/source/ask-at-once-when-the-engineer-expresses-a-prefe
 
 1. Each candidate is genuine, and the selection carries only those that apply.
 2. An amendment to an existing rule, offered only where a rule covers the subject. It is made in that rule's source, with its History.
-3. A new rule, in `waytide/local/rules/`, with the matching `waytide/local/logs/log/` entry.
-4. An observation in `waytide/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
+3. A new rule, in `slasher/local/rules/`, with the matching `slasher/local/logs/log/` entry.
+4. An observation in `slasher/local/items/`, where the thinking has not stabilized. It is preferred where there is doubt.
 5. Neither, where the engineer does not want the preference recorded. It is taken without argument.
 6. Do not ask again in the same session about a preference the engineer declined to record.
 7. Record the engineer's own words, not a paraphrase or the agent's reading of them from memory.
@@ -435,10 +435,10 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
 | `/brainstorm` | Brainstorming records points as they are said, freeform in no order, and organizes them when the writer is done. |
 | `/test` | These commands run the project's tests and report on them. |
-| `/projects` | This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
+| `/projects` | This command lists the Slasher projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
 | `/release` | This command presents the candidates for a package's next version, for the engineer to choose. |
-| `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Waytide. |
-| `/language` | These commands work on language: reserving a word, ETE, Waytide's implementation of STE and its extensions, and clarifying language, often the agent's. |
+| `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Slasher. |
+| `/language` | These commands work on language: reserving a word, ETE, Slasher's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 
 **Each row is one command domain.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. Print no other root command, alias, or subcommand in the table.
@@ -457,7 +457,7 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 
 Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-line-title.md
 
-1. Record the log's entries made during sessions in `waytide/local/logs/log/`.
+1. Record the log's entries made during sessions in `slasher/local/logs/log/`.
 2. Write one file per entry.
 3. Give each entry a one-line title.
 
@@ -513,7 +513,7 @@ Source: system/foundation/source/the-log-holds-one-file-per-entry-with-a-one-lin
 
 Source: system/foundation/source/the-migration-directory-holds-the-plans-for-moving-or-restructuring-content.md
 
-1. `waytide/local/migration/` holds migration records.
+1. `slasher/local/migration/` holds migration records.
 2. A migration record is the execution plan for moving or restructuring content, and the record of how the move actually went. A migration is a structural change: content moved across a repository boundary, or the layout of a project's files changed within one.
 3. Plan and record here any content leaving this repository for another, or arriving from one, and any change to the structure content sits in.
 4. Plan a move here when content ends up under a different root, or in a different structure.
@@ -543,7 +543,7 @@ Source: system/foundation/source/the-migration-directory-holds-the-plans-for-mov
 
 Source: system/foundation/source/the-work-sessions-directory-holds-one-record-per-work-session.md
 
-1. `waytide/local/logs/work-sessions/` holds work session records.
+1. `slasher/local/logs/work-sessions/` holds work session records.
 2. A work session record is the chronological narrative of one discrete work session between an engineer and Claude.
 3. A work session is a unit of the engineer's work. It may last hours, a day, or longer.
 4. The discrete piece of work sets a work session's boundaries, not a fixed clock.
@@ -551,7 +551,7 @@ Source: system/foundation/source/the-work-sessions-directory-holds-one-record-pe
 6. It defines settled vocabulary as that vocabulary arises.
 7. It is written for a person to read. Its job is orientation and reasoning, not truth-of-record.
 8. It is not the source of truth. The durable records are authoritative.
-9. The durable records are the binding rules (`waytide/system/`, `waytide/local/rules/`), the items (`waytide/local/items/`), the log (`waytide/local/logs/log/`), and the implementation records (`waytide/local/implementations/`).
+9. The durable records are the binding rules (`slasher/system/`, `slasher/local/rules/`), the items (`slasher/local/items/`), the log (`slasher/local/logs/log/`), and the implementation records (`slasher/local/implementations/`).
 10. The record points to the durable records throughout. It does not restate them.
 11. The record keeps the reasoning behind each fork in the work. It ties the durable records together as a narrative and keeps the arc.
 12. Write a record at the close of a work session that produced substantial dialogue, decisions, or discovery worth keeping as a narrative.
@@ -653,4 +653,4 @@ Source: system/foundation/source/work-in-a-downstream-project-is-never-offered-a
 5. To tell them apart, ask whether the sentence describes something that happened.
 6. Answering a question about downstream state, such as *Are the consuming projects up to date*, plainly and in full.
 7. Raising downstream state unbidden stays forbidden.
-8. The session-start notice. The harness emits it, it reports only on the current project, and it names no other repository. See the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule.
+8. The session-start notice. The harness emits it, it reports only on the current project, and it names no other repository. See the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule.

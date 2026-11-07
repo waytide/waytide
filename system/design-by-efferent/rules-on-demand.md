@@ -2,16 +2,16 @@
 
 Source: system/design-by-efferent/source/a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature.md
 
-Trigger: When writing a loop record for a feature under waytide/local/logs/loops/
+Trigger: When writing a loop record for a feature under slasher/local/logs/loops/
 
-1. `waytide/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
+1. `slasher/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
 2. The loop is the distributed OODA cycle, as defined in the DBE vocabulary.
 3. A loop record captures how a feature was decided. The log captures what was decided.
 4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
 5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
 6. A loop record must not displace the log.
 7. The log stays one line per entry. Keep its entries separate and intact.
-8. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format below.
+8. When a feature's loop is worth preserving, add a file under `slasher/local/logs/loops/` in the format below.
 
 ## Format
 
@@ -207,7 +207,7 @@ with these exact options:
 6. The plan is a list.
 7. Use an ordered list where each step rests on the one above it.
 8. Use a bullet list where the steps are independent.
-9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Slasher's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
 10. Use short sentences and active voice in the plan.
 11. Use no semicolon in the plan.
 12. Put one idea in each list item.

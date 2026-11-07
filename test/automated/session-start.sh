@@ -82,7 +82,7 @@ display_message=$(printf '%s' "$display_output" | python3 -c 'import json,sys; p
 case "$display_message" in
   "$control_display
 
-Waytide installed at "*) ;;
+Slasher installed at "*) ;;
   *) fail "Prints the startup display ahead of the notice, in one message" "message:" "$display_message" ;;
 esac
 
@@ -92,7 +92,7 @@ control_load_line=$(cd "$project" && system/foundation/startup-display.sh load-l
 
 control_message="$control_display
 
-Waytide installed at system/ — 2 packages: foundation, other
+Slasher installed at system/ — 2 packages: foundation, other
 
 $control_load_line"
 
@@ -111,7 +111,7 @@ open_output=$(cd "$project" && sh system/foundation/session-start.sh < /dev/null
 open_message=$(printf '%s' "$open_output" | python3 -c 'import json,sys; print(json.load(sys.stdin)["systemMessage"])')
 
 case "$open_message" in
-  *"Waytide installed at system/ — 2 packages: foundation, other
+  *"Slasher installed at system/ — 2 packages: foundation, other
 
 1 implementation open: "*) ;;
   *) fail "Sets the open implementations apart from the install line with a blank line" "message:" "$open_message" ;;

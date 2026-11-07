@@ -13,10 +13,10 @@
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
 | `/brainstorm` | Brainstorming records points as they are said, freeform in no order, and organizes them when the writer is done. |
 | `/test` | These commands run the project's tests and report on them. |
-| `/projects` | This command lists the Waytide projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
+| `/projects` | This command lists the Slasher projects registered on this machine. The list helps move ideas, new patterns, and corrections into other projects. |
 | `/release` | This command presents the candidates for a package's next version, for the engineer to choose. |
-| `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Waytide. |
-| `/language` | These commands work on language: reserving a word, ETE, Waytide's implementation of STE and its extensions, and clarifying language, often the agent's. |
+| `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Slasher. |
+| `/language` | These commands work on language: reserving a word, ETE, Slasher's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 
 **Each row is one command domain.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. Print no other root command, alias, or subcommand in the table.
@@ -40,8 +40,8 @@ Until Fri Nov 6 2026 the items printed after the table took no heading of their 
 Related:
 
 - the the-startup-display-prints-as-the-session-starts rule — the display the harness prints ahead of the read
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — what the agent prints at the start, and what it does not
-- the the-waytide-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin whose help the table follows
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — what the agent prints at the start, and what it does not
+- the the-slasher-skills-are-delivered-as-a-plugin-named-slasher rule — the plugin whose help the table follows
 - the a-printed-list-of-records-is-formatted-as-a-table-or-as-a-list-of-rows rule — what `/current 10` prints
 
 ---
@@ -52,3 +52,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 12:37:03 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:32:53 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

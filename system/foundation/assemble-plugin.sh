@@ -4,7 +4,7 @@
 # Run from the project root:
 #
 #   slasher/system/foundation/assemble-plugin.sh     in a consuming project
-#   system/foundation/assemble-plugin.sh             in the Waytide authoring source
+#   system/foundation/assemble-plugin.sh             in the Slasher authoring source
 #
 # install.sh runs it in a consuming project, and compile.sh runs it in the authoring source.
 #
@@ -15,7 +15,7 @@
 set -e
 
 # Locate the system and the project's own directory: slasher/ in a consuming project, the root
-# in the Waytide authoring source. Checked in that order — a consuming project may have a
+# in the Slasher authoring source. Checked in that order — a consuming project may have a
 # system/ directory of its own.
 if [ -d slasher/system ]; then
   system=slasher/system

@@ -1,8 +1,8 @@
 # The writer's username is read from the environment, then the project, then the user's config file
 
-**Trigger:** When resolving the active writer's username or display name (for a journal directory or any Waytide tool)
+**Trigger:** When resolving the active writer's username or display name (for a journal directory or any Slasher tool)
 
-This is the binding contract every Waytide tool follows to determine **who is writing now**. Each tool names its own variable at the first level, and the journal's is `JOURNAL_WRITER`. The two levels below it are common to all of them. An identity set once on a machine then resolves the same person in each. What this rule fixes is the chain rather than any one tool's variable, so a tool built independently of this one agrees with it.
+This is the binding contract every Slasher tool follows to determine **who is writing now**. Each tool names its own variable at the first level, and the journal's is `JOURNAL_WRITER`. The two levels below it are common to all of them. An identity set once on a machine then resolves the same person in each. What this rule fixes is the chain rather than any one tool's variable, so a tool built independently of this one agrees with it.
 
 ## What identity is
 
@@ -16,31 +16,30 @@ A display name is never computed from a username. The capitalization and the wor
 
 1. **`JOURNAL_WRITER` environment variable** — ephemeral/per-process override (CI, one-offs like `JOURNAL_WRITER=jane-doe <cmd>`).
 2. **Project-local `.current-user`** — a gitignored file in the project root. It overrides the global default for this one checkout, and is rarely needed.
-3. **`~/.config/waytide/user`** — the normal case. It is set once per machine and read by *all* Waytide tools, one shared file rather than one per tool.
-4. **Error** — if none resolve, fail loudly (e.g. "no identity configured; set ~/.config/waytide/user or JOURNAL_WRITER"). Never guess.
+3. **`~/.config/slasher/user`** — the normal case. It is set once per machine and read by *all* Slasher tools, one shared file rather than one per tool.
+4. **Error** — if none resolve, fail loudly (e.g. "no identity configured; set ~/.config/slasher/user or JOURNAL_WRITER"). Never guess.
 
 **The active writer is declared in the user file and never in a project.** A project's `writers.toml` records display names and selects nobody. So a project holding no entry for the active writer is ordinary rather than a gap.
 
 ## The user file's location is platform-resolved
 
-The tail is always `waytide/user`; only the base directory varies:
+The tail is always `slasher/user`; only the base directory varies:
 
-- If `$XDG_CONFIG_HOME` is set → `$XDG_CONFIG_HOME/waytide/user` (forces one location on any OS).
-- Else by platform:
-  - **Linux** → `~/.config/waytide/user`
-  - **macOS** → `~/.config/waytide/user` (CLI convention; keeps Linux + macOS identical — chosen over `~/Library/Application Support`)
-  - **Windows** → `%APPDATA%\waytide\user`
+- By platform:
+  - **Linux** → `~/.config/slasher/user`
+  - **macOS** → `~/.config/slasher/user` (CLI convention; keeps Linux + macOS identical — chosen over `~/Library/Application Support`)
+  - **Windows** → `%APPDATA%\slasher\user`
 
 Tools agree on this **resolution rule**, not a raw path string.
 
-**`waytide` is the namespace because the file is Waytide's.** An `identity/` namespace, on the reasoning that the file holds identity and is reusable beyond one tool, would take a top-level name on every machine Waytide is installed on, for a file only Waytide reads. A tool outside Waytide has its own idea of what identity is and no reason to accept this one's. The namespace says what the file belongs to, and `~/.config/waytide/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
+**`slasher` is the namespace because the file is Slasher's.** An `identity/` namespace, on the reasoning that the file holds identity and is reusable beyond one tool, would take a top-level name on every machine Slasher is installed on, for a file only Slasher reads. A tool outside Slasher has its own idea of what identity is and no reason to accept this one's. The namespace says what the file belongs to, and `~/.config/slasher/` already holds `consuming-projects.toml`, which `foundation`'s `read-consuming-projects.sh` reads.
 
 ## The user file's format
 
 **TOML, with a `username` key and an optional `display-name` key.**
 
 ```toml
-# ~/.config/waytide/user
+# ~/.config/slasher/user
 
 username = "scott-bellware"
 display-name = "Scott Bellware"
@@ -55,7 +54,7 @@ display-name = "Scott Bellware"
 ## The display name resolves in this order (first match wins)
 
 1. **The project's `writers.toml`**, where it holds an entry for the resolved username.
-2. **`~/.config/waytide/user`**, where that file's `username` is the resolved username.
+2. **`~/.config/slasher/user`**, where that file's `username` is the resolved username.
 3. **The username itself**, verbatim.
 
 **The project's entry wins, and that is the whole of the hierarchy.** It moves one value and no other. A project may need a writer to appear under a name the machine-level file does not give, such as a full legal name in one repository and a short one elsewhere.
@@ -64,11 +63,11 @@ display-name = "Scott Bellware"
 
 ## Per-project registry
 
-Each project is its own space of writers, and may commit a `writers.toml` giving display names. It lives at `waytide/local/journal/writers.toml`, beside the per-writer directories the journal is kept in.
+Each project is its own space of writers, and may commit a `writers.toml` giving display names. It lives at `slasher/local/journal/writers.toml`, beside the per-writer directories the journal is kept in.
 
 **It records a display name and nothing else.** It refuses nobody, selects nobody, and declares no identity. The resolution chain *selects* a username, and this file supplies a name to show for it.
 
-**It may omit the active writer.** Where `~/.config/waytide/user` already gives that writer's display name, a project entry would only repeat it. An entry is written where the project needs a different name.
+**It may omit the active writer.** Where `~/.config/slasher/user` already gives that writer's display name, a project entry would only repeat it. An entry is written where the project needs a different name.
 
 **The file is optional.** A project without one works. Every writer in it then shows as the name their user file gives, or as their username.
 
@@ -76,7 +75,7 @@ Each project is its own space of writers, and may commit a `writers.toml` giving
 
 ```toml
 # The writers this project shows under a name their own
-# ~/.config/waytide/user does not give. A writer absent from this
+# ~/.config/slasher/user does not give. A writer absent from this
 # file shows as that name, or as their username.
 
 [scott-bellware]
@@ -94,7 +93,7 @@ display-name = "Jane Doe"
 
 Separating the two values is what keeps the hierarchy small. Who is writing is one fact with one source, so no project can declare somebody. What a writer is called is presentation, and a project may legitimately need its own. Overriding the second alone gives a project what it needs and no authority it should not have.
 
-**How to apply:** when implementing identity in any Waytide tool, resolve the active username through the chain above. Read the user file at `~/.config/waytide/user`, resolving its base directory by platform. Parse it as TOML and take its `username`.
+**How to apply:** when implementing identity in any Slasher tool, resolve the active username through the chain above. Read the user file at `~/.config/slasher/user`, resolving its base directory by platform. Parse it as TOML and take its `username`.
 
 Take the display name from the project's `writers.toml` where it holds one for that username. Take it from the user file where that file's `username` is the resolved one. Fall back to the username itself.
 
@@ -102,7 +101,7 @@ Never read git for identity. Never invent a username, and never compute a displa
 
 ## Compressed
 
-1. This contract fixes how every Waytide tool determines who is writing now.
+1. This contract fixes how every Slasher tool determines who is writing now.
 2. Each tool names its own environment variable at the first level. The journal's variable is `JOURNAL_WRITER`.
 3. The two levels below the variable are common to all tools.
 4. The chain is fixed, not any one tool's variable. A tool built independently must still agree with it.
@@ -123,9 +122,9 @@ Never read git for identity. Never invent a username, and never compute a displa
 
 1. **`JOURNAL_WRITER` environment variable**: the ephemeral, per-process override, for CI and one-offs like `JOURNAL_WRITER=jane-doe <cmd>`.
 2. **Project-local `.current-user`**: a gitignored file in the project root. It overrides the global default for this checkout only, and is rarely needed.
-3. **`~/.config/waytide/user`**: the normal case. It is set once per machine.
-4. All Waytide tools read this one shared file. There is no per-tool file.
-5. **Error**: if none resolve, fail loudly, e.g. "no identity configured; set ~/.config/waytide/user or JOURNAL_WRITER".
+3. **`~/.config/slasher/user`**: the normal case. It is set once per machine.
+4. All Slasher tools read this one shared file. There is no per-tool file.
+5. **Error**: if none resolve, fail loudly, e.g. "no identity configured; set ~/.config/slasher/user or JOURNAL_WRITER".
 6. Never guess a username.
 7. The active writer is declared in the user file, never in a project.
 8. A project's `writers.toml` records display names and selects nobody.
@@ -133,20 +132,19 @@ Never read git for identity. Never invent a username, and never compute a displa
 
 ## The user file's location is platform-resolved
 
-1. The tail is always `waytide/user`. Only the base directory varies.
-2. If `$XDG_CONFIG_HOME` is set, use `$XDG_CONFIG_HOME/waytide/user`, on any OS.
-3. Otherwise, on Linux, use `~/.config/waytide/user`.
-4. On macOS, use `~/.config/waytide/user`, not `~/Library/Application Support`.
-5. On Windows, use `%APPDATA%\waytide\user`.
-6. Tools agree on this resolution rule, not on a raw path string.
-7. The namespace is `waytide`, because the file belongs to Waytide. It is not `identity/`.
+1. The tail is always `slasher/user`. Only the base directory varies.
+2. On Linux, use `~/.config/slasher/user`.
+3. On macOS, use `~/.config/slasher/user`, not `~/Library/Application Support`.
+4. On Windows, use `%APPDATA%\slasher\user`.
+5. Tools agree on this resolution rule, not on a raw path string.
+6. The namespace is `slasher`, because the file belongs to Slasher. It is not `identity/`.
 
 ## The user file's format
 
 1. The file is TOML, with a required `username` key and an optional `display-name` key.
 
 ```toml
-# ~/.config/waytide/user
+# ~/.config/slasher/user
 
 username = "scott-bellware"
 display-name = "Scott Bellware"
@@ -164,7 +162,7 @@ display-name = "Scott Bellware"
 ## The display name resolves in this order (first match wins)
 
 1. **The project's `writers.toml`**, where it holds an entry for the resolved username.
-2. **`~/.config/waytide/user`**, where that file's `username` is the resolved username.
+2. **`~/.config/slasher/user`**, where that file's `username` is the resolved username.
 3. **The username itself**, verbatim.
 4. The project's entry wins, and that is the whole hierarchy. It overrides the display name and no other value.
 5. The user file's display name applies only to the user file's username.
@@ -174,7 +172,7 @@ display-name = "Scott Bellware"
 ## Per-project registry
 
 1. Each project is its own space of writers. It may commit a `writers.toml` giving display names.
-2. The file lives at `waytide/local/journal/writers.toml`, beside the journal's per-writer directories.
+2. The file lives at `slasher/local/journal/writers.toml`, beside the journal's per-writer directories.
 3. It records a display name and nothing else.
 4. It refuses nobody, selects nobody, and declares no identity.
 5. It may omit the active writer.
@@ -186,7 +184,7 @@ display-name = "Scott Bellware"
 
 ```toml
 # The writers this project shows under a name their own
-# ~/.config/waytide/user does not give. A writer absent from this
+# ~/.config/slasher/user does not give. A writer absent from this
 # file shows as that name, or as their username.
 
 [scott-bellware]
@@ -208,8 +206,11 @@ display-name = "Jane Doe"
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 52 → 53, clarity 0.92 → 0.92; checked: 54 directives, 54 kept, 0 less precise, 0 lost, no repair
 - 2026-10-28, revised: Why points removed, solubility 53 → 55, clarity 0.92 → 0.93; checked: 49 directives, 49 kept, 0 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 49 directives, 49 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-11-06, revised: the XDG clause is dropped, and the user file is read under `~/.config` on Linux and macOS; checked: 42 directives, 42 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Fri Nov 6 2026 the user file was read from `$XDG_CONFIG_HOME/waytide/user` where `$XDG_CONFIG_HOME` was set, on any OS. The engineer settled that nothing in Slasher honors the XDG settings.
 
 **The two files no longer share a reader.** They did until 2026-08-14, when each held a bare username. The user file gained a second value and `.current-user` did not, because a per-checkout override selects a person rather than renaming one.
 
@@ -246,3 +247,5 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:29 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:08 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

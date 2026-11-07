@@ -1,30 +1,30 @@
-# Waytide — foundation
+# Slasher — foundation
 
-The `waytide/` [artifact system](https://github.com/waytide/waytide) that every other package builds on.
+The `slasher/` [artifact system](https://github.com/waytide/waytide) that every other package builds on.
 
-All agent artifacts for a project live under a single top-level `waytide/` folder. So they are committed to git alongside the code, and read at the start of each session rather than recalled. It holds two directories, separating what came from outside from what is the project's own. **`waytide/system/`** holds the installed packages, never edited in place. **`waytide/local/`** holds everything the project writes.
+All agent artifacts for a project live under a single top-level `slasher/` folder. So they are committed to git alongside the code, and read at the start of each session rather than recalled. It holds two directories, separating what came from outside from what is the project's own. **`slasher/system/`** holds the installed packages, never edited in place. **`slasher/local/`** holds everything the project writes.
 
 Foundation defines the four core artifact directories and how to work with them. Each has its own rule in this package:
 
-- **`waytide/system/`** and **`waytide/local/rules/`**. Binding project rules, one per file, read and followed every session — the installed system packages in `waytide/system/`, the project's own local rules in `waytide/local/rules/`.
-- **`waytide/local/vocabulary.md`**. The project's own vocabulary, read with the rules and binding like them. Its terms and substitutions decide over every package's (`a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides`). One file, no datetime prefix, and optional.
-- **`waytide/local/items/`**. Working hypotheses and rule-candidates still under discovery. Not yet binding.
+- **`slasher/system/`** and **`slasher/local/rules/`**. Binding project rules, one per file, read and followed every session — the installed system packages in `slasher/system/`, the project's own local rules in `slasher/local/rules/`.
+- **`slasher/local/vocabulary.md`**. The project's own vocabulary, read with the rules and binding like them. Its terms and substitutions decide over every package's (`a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides`). One file, no datetime prefix, and optional.
+- **`slasher/local/items/`**. Working hypotheses and rule-candidates still under discovery. Not yet binding.
 - **Work postponed mid-task is an ordinary item** carrying a `**Waits for:**` line, and it may carry a `**Priority:**` rank (`the-items-directory-holds-one-file-per-item`). It was a **deferred queue** with a convention, a reserved tag, a session-start print, and a command until 2026-08-25, when all four were suspended — what made it a queue was the print and the command, and the two lines are what remained.
 **The log records the reasoning for an abandonment, and never conveys that something was done when it was not** (`the-log-records-why-work-was-abandoned-and-never-says-undone-work-was-done`). When work is abandoned its branch goes, which leaves the log as the only durable trace and makes it tempting to pour the branch into it. What belongs there is the decision to stop and the reason given for it. What does not is the plan, the increments, or the design that was never built. **A careful tense is not enough** — every sentence can be conditional, every claim true, and the entry still leaves a reader believing the project worked something out.
 
-- **`waytide/local/logs/`**. The **contemporaneous, historical records**, grouped (`the-logs-directory-holds-the-contemporaneous-historical-records`) — records that accrue chronologically and are never revised, as against the directories that state what is currently true. It holds **`logs/log/`**, the log, one file per decision with a one-line title; **`logs/loops/`**, contributed by `design-by-efferent`; and **`logs/work-sessions/`**. The three sat directly under `waytide/local/` until 2026-08-18.
+- **`slasher/local/logs/`**. The **contemporaneous, historical records**, grouped (`the-logs-directory-holds-the-contemporaneous-historical-records`) — records that accrue chronologically and are never revised, as against the directories that state what is currently true. It holds **`logs/log/`**, the log, one file per decision with a one-line title; **`logs/loops/`**, contributed by `design-by-efferent`; and **`logs/work-sessions/`**. The three sat directly under `slasher/local/` until 2026-08-18.
 
 Three conventions govern all of them: the **ISO-8601-UTC filename prefix** (`file-names`) that makes every artifact sort chronologically and declare its timezone. **a time value carries minutes and seconds** (`a-time-value-carries-minutes-and-seconds`), wherever a datetime written into a file includes a time of day. Third is **purpose-over-category** (`rules-establish-a-mindset`). A rule's folder names the surface it acts on, not the purpose it serves.
 
 Foundation also provides the project-wide **status report** command, a whole-project summary. **A report counts a hidden record rather than listing it** (`a-status-report-prints-a-fixed-whole-project-report`), and that reaches a brief as much as the fixed report. Two kinds are hidden today: a record whose `**State:**` line reads `Suspended`, and a log entry carrying the `[suspended]` tag. The state marks something the project **wanted** and set aside; the tag marks something it **did** and stopped. The count is what makes either askable for — a record dropped entirely leaves a reader believing they have seen everything.
 
-**`/projects` lists the machine's registry of Waytide projects** (`projects-lists-the-machines-registry-of-waytide-projects`), **`/package refresh` and `/package install` run foundation's scripts in the current project** (`package-refresh-and-install-run-foundations-scripts`), and **the skills reach a project as a plugin called Slasher and named `slasher`**, assembled from the active packages' skills (`the-waytide-skills-are-delivered-as-a-plugin-named-slasher`).
+**`/projects` lists the machine's registry of Slasher projects** (`projects-lists-the-machines-registry-of-slasher-projects`), **`/package refresh` and `/package install` run foundation's scripts in the current project** (`package-refresh-and-install-run-foundations-scripts`), and **the skills reach a project as a plugin called Slasher and named `slasher`**, assembled from the active packages' skills (`the-slasher-skills-are-delivered-as-a-plugin-named-slasher`).
 
 **`/next?` names the next step of the work under way, and `/next` takes it** (`next-takes-the-next-step-of-the-work-under-way`), in place of asking *What's next?* and saying *proceed*. Neither decides anything the rules leave to the engineer.
 
 **Brainstorming records points as they are said, and organizes them at the end** (`brainstorming-records-points-as-they-are-said-and-organizes-them-at-the-end`). Each point goes word for word to a collection file outside the repository, and at the end the agent reframes them into an item.
 
-**A Waytide command takes its subcommand first, asks when it has none, and its domain takes `help`** (`a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help`). An alias does exactly what the command it names does, and each subcommand hands its act to the rule that governs it.
+**A Slasher command takes its subcommand first, asks when it has none, and its domain takes `help`** (`a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help`). An alias does exactly what the command it names does, and each subcommand hands its act to the rule that governs it.
 
 **Every prompt to the engineer goes through the selection interface** (`present-every-prompt-to-the-engineer-through-the-selection-ui`) — any selection, decision, or answer, never a prose question. The harness supplies the free-text option, so the agent adds none of its own. It does add an **`Explain`** option, which is the opposite half of it. The free-text option is how an engineer answers outside the options. `Explain` is how they ask what the question means before answering. **On the re-displayed prompt it reads `Explain briefly` and answers with the summary alone.** An engineer reaching for it a second time did not get what they needed at a normal length, so answering at that length again repeats the attempt that failed.
 
@@ -32,9 +32,9 @@ The rule lives here rather than in `design-by-efferent`, where it was written, b
 
 Beyond the four core directories, foundation defines the **work-artifact** directories for planning and running changes:
 
-- `waytide/local/items/` — the project's planning records, whatever its tags name them
-- `waytide/local/implementations/` — the lifecycle record of an experiment or a feature
-- `waytide/local/migration/` — execution plans for transitions of content **across a repository boundary**, kept after the content has gone so the trail of where it went stays in the repository it left
+- `slasher/local/items/` — the project's planning records, whatever its tags name them
+- `slasher/local/implementations/` — the lifecycle record of an experiment or a feature
+- `slasher/local/migration/` — execution plans for transitions of content **across a repository boundary**, kept after the content has gone so the trail of where it went stays in the repository it left
 
 **An implementation carries a full branch lifecycle**, in the `the-implementations-directory-holds-one-record-per-implementation` and `an-implementation-runs-on-a-branch-to-a-declared-end` rules — its own branch, a working location chosen at the start, a declared end, and recorded confirmations. **Two kinds, and a tag says which.** An `[experiment]` is built to a **question** and a `[feature]` to an **intent**, and that one difference accounts for every other: an experiment forecasts, reaches a verdict of affirmed, refuted, or inconclusive, merges through a test gate on the engineer's affirmation, and is watched for drift. A feature does none of those, ends **completed**, is simply verified before it integrates, and is the only kind that may be built on the current branch.
 
@@ -42,7 +42,7 @@ Beyond the four core directories, foundation defines the **work-artifact** direc
 
 The four rules that stated this as two lifecycles were consolidated on 2026-08-18. They agreed on almost everything and had already drifted in their wording of the same clauses.
 
-**The project's items** live in `waytide/local/items/`, one file per item (`the-items-directory-holds-one-file-per-item`). **An item is an item.** A tag may describe one — `[design]`, `[plan]`, `[aspiration]` — and nothing about it is strict: the set is open, an item may carry several or none, no rule reads a kind tag, and **none is assigned by default**. `[aspiration]` in particular is written where an aspiration was asked for, never as the dress a design item is put in. The six words the mode mechanism fixed as a planning vocabulary outlived it as a tag set that read as exhaustive, and that is the last of the mode gone with them.
+**The project's items** live in `slasher/local/items/`, one file per item (`the-items-directory-holds-one-file-per-item`). **An item is an item.** A tag may describe one — `[design]`, `[plan]`, `[aspiration]` — and nothing about it is strict: the set is open, an item may carry several or none, no rule reads a kind tag, and **none is assigned by default**. `[aspiration]` in particular is written where an aspiration was asked for, never as the dress a design item is put in. The six words the mode mechanism fixed as a planning vocabulary outlived it as a tag set that read as exhaustive, and that is the last of the mode gone with them.
 
 - **The shape is thin.** A title, a `**State:**` line, a `**Tags:**` line, and whatever the item has to say. A footer, a log entry, the ISO-8601-UTC prefix, and the state suffix. Nothing else is required, because an item that settles nothing has no resolutions and an item that sequences nothing has no tasks.
 - **Nine states**, one set for every item: **Open**, **Active**, **Realized**, **Deferred**, **Suspended**, **Superseded**, **Abandoned**, **Obsolete**, and **Recorded**. **`Recorded` is an observation's, and an observation's alone** — it is the one state that never changes, because an observation has no lifecycle (`an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes`). It is written when the observation is, and it stays. `Open` and `Active` are the two starting words. `Obsolete` and `Abandoned` differ in who acted — an item becomes obsolete when nobody decides and the work moves past it.
@@ -59,7 +59,7 @@ It replaces four rules — two conventions and two document formats — decommis
 
 They live here because foundation defines the artifacts they format. Held separately, the citation ran in both directions. Foundation named the `plan` package for the shape of documents foundation itself governs. Every rule in that package was addressed to directories only foundation creates.
 
-Other packages may contribute their own artifact directories (for example, design-by-efferent contributes `waytide/local/logs/loops/`). Foundation owns `rules`/`observations`/`deferred`/`log` and the `items`/`implementations`/`logs`/`migration` work-artifact directories.
+Other packages may contribute their own artifact directories (for example, design-by-efferent contributes `slasher/local/logs/loops/`). Foundation owns `rules`/`observations`/`deferred`/`log` and the `items`/`implementations`/`logs`/`migration` work-artifact directories.
 
 **A project's durable context lives in its committed artifacts, never in an agent memory store** (`a-projects-durable-context-is-recorded-in-its-committed-artifacts-never-in-an-agent-memory-store`). The premise is the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule's — the conventions are read fresh each session rather than recalled, and a store is recall. It reaches project context alone. A fact about the engineer rather than the project is machine-scoped, and per-machine configuration under `~/.config/` is where the `a-project-does-not-name-its-downstream-consumers-in-its-own-files` rule already sends one.
 
@@ -75,7 +75,7 @@ Other packages may contribute their own artifact directories (for example, desig
 
 **The mode mechanism was decommissioned on 2026-08-18.** A project worked in one of three modes — formal, intuitive, or OODA — chosen at its start, and the mode decided what the two planning artifacts were called and where they lived. Six directories existed for one kind of work.
 
-**One directory replaces it, `waytide/local/items/`, and the kind is a tag.** A design is an item and an item is a design. An aspiration is an item tagged `[aspiration]`, and the kind set is open. The mode may now change mid-stream, which the mechanism forbade, because its two unanswered questions were both questions about directories.
+**One directory replaces it, `slasher/local/items/`, and the kind is a tag.** A design is an item and an item is a design. An aspiration is an item tagged `[aspiration]`, and the kind set is open. The mode may now change mid-stream, which the mechanism forbade, because its two unanswered questions were both questions about directories.
 
 **A project does not name its downstream consumers** in its own files (`a-project-does-not-name-its-downstream-consumers-in-its-own-files`) — not in the installed packages, not in its own working state. A consumer list inverts the dependency direction, drifts silently, and publishes other people's projects to everyone who reads the file. A project named because a **decision was about it** is unaffected. What a tool needs in order to reach the consuming projects lives in per-machine configuration under `~/.config/`, outside the repository.
 
@@ -96,19 +96,19 @@ foundation  →  (nothing — the base every other package builds on)
 **Foundation carries the tooling a consuming project runs**, and it is the only package that does. Two facts settle that, and they decide all six of its scripts rather than only the installer:
 
 - **`git subtree` can only place files inside a package directory.** So a tool a consuming project runs has to live in some package. There is nowhere else for it to be delivered.
-- **It has to be a package that is always there.** Foundation is the only one — every other package includes it, so a project running Waytide at all has foundation.
+- **It has to be a package that is always there.** Foundation is the only one — every other package includes it, so a project running Slasher at all has foundation.
 
 So `install.sh`, `refresh-packages.sh`, `session-start.sh`, `startup-display.sh`, `statusline.sh`, and `read-consuming-projects.sh` are here. The **authoring** tools are not. `install-all.sh` and `report-direct-commits.sh` sit unpackaged at the root of the composite repository. Only the composite publishes, and a consuming project never runs them.
 
-**`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Waytide projects **on this machine**, reading a per-machine registry at `~/.config/waytide/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Waytide into more than one project, rather than whoever maintains Waytide.
+**`read-consuming-projects.sh` is packaged because it is not an authoring tool**, though it sat with them until 2026-08-07. It reports the Slasher projects **on this machine**, reading a per-machine registry at `~/.config/slasher/consuming-projects.toml`. So it is **machine-scoped** where the rest of this package is project-scoped. The engineer who wants it is anyone who installed Slasher into more than one project, rather than whoever maintains Slasher.
 
 The authoring tools run **against the packages**. This one runs **beside projects**, which is a third position the earlier classification had no slot for. It detects nothing about a project's condition, reaches no network, and takes no action on what it finds. It also names no consuming project in its own source: the list is in the registry, outside any repository, per the `a-project-does-not-name-its-downstream-consumers-in-its-own-files` rule.
 
 **Being installed into every project means a copy per project, and one registry.** Each copy reads the same file and reports the same set, so an engineer runs whichever copy is nearest rather than the right one.
 
-**It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others. It would be the first Waytide package that is a **tool** rather than a set of rules.
+**It is here for now, and a package of its own is the likely next position.** `foundation` is where it reaches every project from, being the package every project has — not because discovery is foundational. A package of its own would carry it to the engineers who want it and no others. It would be the first Slasher package that is a **tool** rather than a set of rules.
 
-**`report-unrecognized-mode.sh` was decommissioned on 2026-08-18**, with the mode mechanism whose rule it read. It reported a mode rule in `waytide/local/rules/` naming a mode the installed rule no longer defined, and there is no such rule to read.
+**`report-unrecognized-mode.sh` was decommissioned on 2026-08-18**, with the mode mechanism whose rule it read. It reported a mode rule in `slasher/local/rules/` naming a mode the installed rule no longer defined, and there is no such rule to read.
 
 **`refresh-packages.sh` also checks the bootstrap.** The root `AGENTS.md` is written by `install.sh`, belongs to no package, and is therefore the one activated file no `git subtree pull` can reach. So a refresh updates the packages beneath it and leaves it behind.
 
@@ -122,41 +122,41 @@ Foundation carries an **`install.sh`**, which also has to activate the system. R
 ./install.sh
 ```
 
-It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `waytide/system/`, `waytide/local/rules/`, and `waytide/local/vocabulary.md` at the start of every session. That root file is what actually activates the system. `git subtree` can only put files under `waytide/`, never at the project root. Without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending. It never edits your file silently.
+It installs foundation and then places a **root `AGENTS.md`** that tells the agent to read `slasher/system/`, `slasher/local/rules/`, and `slasher/local/vocabulary.md` at the start of every session. That root file is what actually activates the system. `git subtree` can only put files under `slasher/`, never at the project root. Without this step the rules are installed but nothing reads them. If you already have an `AGENTS.md`, the script shows you the exact text, explains the effect, and asks before appending. It never edits your file silently.
 
-It also **renames `waytide/local/logs/work-sessions/` if your project still holds it under its old name**, `waytide/local/sessions/`. This is the one place the installer touches your project's own working state. It moves the directory only when the old name is present and the new one is absent. Where the two exist it reports them and changes nothing, leaving the merge to you.
+It also **renames `slasher/local/logs/work-sessions/` if your project still holds it under its old name**, `slasher/local/sessions/`. This is the one place the installer touches your project's own working state. It moves the directory only when the old name is present and the new one is absent. Where the two exist it reports them and changes nothing, leaving the merge to you.
 
 You can install with plain `git subtree` instead, but then you must add the root `AGENTS.md` yourself or the system stays inactive:
 
 ```
-git subtree add  --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
-git subtree pull --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree add  --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree pull --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/foundation.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/foundation.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
 
 This package has no dependencies. (The composite `install-all.sh` installs every package and runs this same bootstrap for you.)
 
 **Refresh from upstream** periodically to pull the latest rules. Once foundation is installed, one command refreshes every installed package:
 
 ```
-waytide/system/foundation/refresh-packages.sh
+slasher/system/foundation/refresh-packages.sh
 ```
 
 **A package's repository is its installed path with the slashes flattened to dashes**, so a nested `group/name` publishes to `group-name`. **A package may declare a different one**, on a `**Repository:**` line in its `README.md` — the plain text data attribute form the rest of the system reads. `refresh-packages.sh` reads that line where it is present and derives the name where it is not, which is every package but one.
 
-The declaration exists because a repository name is met by people as well as by scripts. The Ruby package installs at `waytide/system/ext/ruby-lang/` and is published from `waytide/waytide-ruby`, which the flattening does not produce.
+The declaration exists because a repository name is met by people as well as by scripts. The Ruby package installs at `slasher/system/ext/ruby-lang/` and is published from `waytide/waytide-ruby`, which the flattening does not produce.
 
-It reports each package that moved and the rule files that changed in it. Those files are binding, and a silent refresh would be a change of behavior nobody saw. Name packages to refresh only those (`… refresh-packages.sh testing git`). Set `WAYTIDE_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/waytide`. A single package can still be pulled directly:
+It reports each package that moved and the rule files that changed in it. Those files are binding, and a silent refresh would be a change of behavior nobody saw. Name packages to refresh only those (`… refresh-packages.sh testing git`). Set `SLASHER_ORIGIN` to refresh from a fork or a mirror instead of `https://github.com/waytide`. A single package can still be pulled directly:
 
 ```
-git subtree pull --prefix waytide/system/foundation git@github.com:waytide/foundation.git master --squash
+git subtree pull --prefix slasher/system/foundation git@github.com:waytide/foundation.git master --squash
 ```
 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT

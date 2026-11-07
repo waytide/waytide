@@ -2,11 +2,11 @@
 
 **Trigger:** When writing a record under local/logs/ or deciding which directory a new kind of record belongs in
 
-**A project keeps more than one contemporaneous, historical record, and they sit together.** `waytide/local/logs/` holds them:
+**A project keeps more than one contemporaneous, historical record, and they sit together.** `slasher/local/logs/` holds them:
 
-- **`waytide/local/logs/log/`** — the log, one file per entry, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
-- **`waytide/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
-- **`waytide/local/logs/work-sessions/`** — the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
+- **`slasher/local/logs/log/`** — the log, one file per entry, a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
+- **`slasher/local/logs/loops/`** — the loop records, one file per feature, the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
+- **`slasher/local/logs/work-sessions/`** — the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
 
 **What makes a record belong here is that it accrues chronologically and is never revised.** Each is a running account of something that happened, entry after entry, in the order it happened. A reader reaches one by date. Nothing here is a statement of what is currently true, which is what separates these from an item, an implementation record, or a migration record.
 
@@ -16,27 +16,27 @@
 
 ## A fourth contemporaneous, historical record goes here
 
-**A convention that adds one names its directory under `waytide/local/logs/`.** That is the whole of what this rule asks of a later convention.
+**A convention that adds one names its directory under `slasher/local/logs/`.** That is the whole of what this rule asks of a later convention.
 
 ## The grouping crosses a package boundary, and does not invert it
 
 **`logs/loops/` is contributed by `design-by-efferent`**, which includes `foundation` rather than the reverse. Foundation names the parent directory here, and that is a **citation** — it requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it. A project installing `foundation` alone has `logs/log/` and no `logs/loops/`, and nothing is missing.
 
-**Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `waytide/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
+**Why:** the three were siblings of `items/`, `implementations/`, and `migration/` under `slasher/local/`, which put a chronological account beside a statement of current state and made the directory listing say nothing about which was which. Grouping them says it in the path.
 
 The grouping also gives a later contemporaneous, historical record somewhere obvious to go, in a place that names it as the same kind of thing as the others.
 
-**How to apply:** write a decision entry to `waytide/local/logs/log/`, a loop record to `waytide/local/logs/loops/`, and a work session record to `waytide/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too, and say so in the convention that adds it.
+**How to apply:** write a decision entry to `slasher/local/logs/log/`, a loop record to `slasher/local/logs/loops/`, and a work session record to `slasher/local/logs/work-sessions/`. Put a contemporaneous, historical record this rule does not name under `slasher/local/logs/` too, and say so in the convention that adds it.
 
 ## Compressed
 
-1. `waytide/local/logs/` holds the project's contemporaneous, historical records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
-2. `waytide/local/logs/log/` holds the log, one file per entry, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
-3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
-4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
-5. Write a decision entry to `waytide/local/logs/log/`.
-6. Write a loop record to `waytide/local/logs/loops/`.
-7. Write a work session record to `waytide/local/logs/work-sessions/`.
+1. `slasher/local/logs/` holds the project's contemporaneous, historical records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
+2. `slasher/local/logs/log/` holds the log, one file per entry, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
+3. `slasher/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
+4. `slasher/local/logs/work-sessions/` holds the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
+5. Write a decision entry to `slasher/local/logs/log/`.
+6. Write a loop record to `slasher/local/logs/loops/`.
+7. Write a work session record to `slasher/local/logs/work-sessions/`.
 8. A record belongs here only when it accrues chronologically and is never revised.
 9. Each record here is a running account, entry after entry, in the order things happened, and it is reached by date.
 10. Nothing here states what is currently true. Items, implementation records, and migration records do not belong here.
@@ -47,8 +47,8 @@ The grouping also gives a later contemporaneous, historical record somewhere obv
 
 ## A fourth contemporaneous, historical record goes here
 
-1. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too.
-2. The convention that adds it names its directory under `waytide/local/logs/`.
+1. Put a contemporaneous, historical record this rule does not name under `slasher/local/logs/` too.
+2. The convention that adds it names its directory under `slasher/local/logs/`.
 3. That is all this rule asks of a later convention.
 
 ## The grouping crosses a package boundary, and does not invert it
@@ -111,3 +111,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:02:14 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

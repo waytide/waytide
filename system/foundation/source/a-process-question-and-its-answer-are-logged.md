@@ -14,7 +14,7 @@
 
 **A mechanical question carries no marker.** The engineer does not see the marker. It tells the hook which questions to log.
 
-**The plugin's `PostToolUse` hook on `AskUserQuestion` writes the entries.** It runs foundation's `process-question-log.sh`, which writes one log entry to `waytide/local/logs/log/` for each marked question that was answered. Nothing is written for an unmarked one. The agent does not write these entries itself.
+**The plugin's `PostToolUse` hook on `AskUserQuestion` writes the entries.** It runs foundation's `process-question-log.sh`, which writes one log entry to `slasher/local/logs/log/` for each marked question that was answered. Nothing is written for an unmarked one. The agent does not write these entries itself.
 
 ## The entry
 
@@ -42,7 +42,7 @@ Its body holds the question, the options with their descriptions, the answer, an
 4. Do not log a mechanical question.
 5. Mark a process question by setting the selection's `metadata.source` to `decision`, in the same call that asks the question.
 6. Set no marker on a mechanical question.
-7. The plugin's `PostToolUse` hook on `AskUserQuestion` runs foundation's `process-question-log.sh`. It writes one log entry to `waytide/local/logs/log/` for each marked question that was answered, and nothing for an unmarked one.
+7. The plugin's `PostToolUse` hook on `AskUserQuestion` runs foundation's `process-question-log.sh`. It writes one log entry to `slasher/local/logs/log/` for each marked question that was answered, and nothing for an unmarked one.
 8. Do not write these entries yourself.
 9. Each entry is an ordinary log entry, with `**Tags:** [decision]` under its title. Its title is the question's first line and the engineer's answer, as in `# Accept the plan? — Accept, selected by the engineer`.
 10. Its body holds the question, the options with their descriptions, the answer, and any notes the engineer added.
@@ -63,3 +63,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 2:13:43 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -1,8 +1,8 @@
 # A command takes its subcommand first, asks when it has none, and its domain takes help
 
-**Trigger:** When running or writing a Waytide slash command
+**Trigger:** When running or writing a Slasher slash command
 
-**A Waytide command is typed as `/<command> [<subcommand>] [<arguments>]`.** The first word after the command's name is its subcommand, and the words after that are the subcommand's arguments. `/item list current` runs the `list` subcommand of `/item`, with `current` as its argument.
+**A Slasher command is typed as `/<command> [<subcommand>] [<arguments>]`.** The first word after the command's name is its subcommand, and the words after that are the subcommand's arguments. `/item list current` runs the `list` subcommand of `/item`, with `current` as its argument.
 
 **A command typed with no subcommand asks which one is meant**, through the selection interface, unless the command's help gives the bare command a meaning of its own. A bare `/journal` writes a journal entry, and a bare `/item` asks. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
 
@@ -22,7 +22,7 @@
 
 ## Compressed
 
-1. A Waytide command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
+1. A Slasher command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
 2. With no subcommand, the command asks which one is meant, through the selection interface, unless its help gives the bare command a meaning of its own, as a bare `/journal` writes an entry.
 3. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
 4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
@@ -53,3 +53,4 @@ Related:
 Authored by Scott Bellware on Mon Nov 2 2026 at 6:27:47 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 2:10:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:21 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

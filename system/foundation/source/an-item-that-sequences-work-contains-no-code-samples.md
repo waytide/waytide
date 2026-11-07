@@ -1,12 +1,12 @@
 # An item that sequences work contains no code samples
 
-**Trigger:** When writing or revising an item in waytide/local/items/ that sequences work
+**Trigger:** When writing or revising an item in slasher/local/items/ that sequences work
 
 - **Solubility:** 88
 - **Original rank:** 103 of 106
 - **Unclarity:** 0.18
 
-A planning record in `waytide/local/items/` must never contain code samples, whatever its tags name it. No code blocks, no literal method bodies, no "write this content" snippets. A plan describes the intended work and outcomes in prose. Code is produced later, interactively, when the user directs it.
+A planning record in `slasher/local/items/` must never contain code samples, whatever its tags name it. No code blocks, no literal method bodies, no "write this content" snippets. A plan describes the intended work and outcomes in prose. Code is produced later, interactively, when the user directs it.
 
 Plans should also avoid over-prescription. Do not commit up front to specific method names, file names, or other implementation details. Those are not actually known or decided yet. Those emerge during the work. State the goal and the behavior at the altitude that's genuinely settled. Leave the rest open rather than inventing names to fill the plan.
 
@@ -16,7 +16,7 @@ Plans should also avoid over-prescription. Do not commit up front to specific me
 
 ## Compressed
 
-1. An item in `waytide/local/items/` that sequences work must never contain code samples, whatever its tags name it.
+1. An item in `slasher/local/items/` that sequences work must never contain code samples, whatever its tags name it.
 2. Such a plan contains no code blocks.
 3. It contains no literal method bodies.
 4. It contains no "write this content" snippets.
@@ -54,3 +54,4 @@ Changed by Scott Bellware on Wed Oct 21 2026 at 10:33:43 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 3:50:22 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:22:43 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

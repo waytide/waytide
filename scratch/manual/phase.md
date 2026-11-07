@@ -1,7 +1,7 @@
 # Phase — manual page
 
 ```
-PHASE(1)                       Waytide Manual                       PHASE(1)
+PHASE(1)                       Slasher Manual                       PHASE(1)
 
 NAME
      phase - run a feature or an experiment in steps, one at a time

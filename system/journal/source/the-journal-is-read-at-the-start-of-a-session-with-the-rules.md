@@ -4,13 +4,13 @@
 - **Original rank:** 53 of 106
 - **Unclarity:** 0.51
 
-**Read the active writer's journal at the start of a session.** That is every entry in `waytide/local/journal/<username>/`, where `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
+**Read the active writer's journal at the start of a session.** That is every entry in `slasher/local/journal/<username>/`, where `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Read it after the rules and the vocabularies, and before the first request. The journal is not a rule, and this is the one thing beside the rules and the vocabularies that is read and does not bind. What it carries is what the writer thinks about the work.
 
 **Another writer's journal is not read.** A project may hold several, and each is one writer's thinking carried across their own sessions. The agent reads the journal of the writer whose session this is.
 
 **The writer's private journal is not read either.** It is kept outside the project and read only on the engineer's command. See the a-private-journal-is-read-only-on-command rule.
 
-**One thing under `waytide/local/journal/` is not an entry, and is not read.** `writers.toml` overrides a writer's display name for this project, and carries nothing an entry does.
+**One thing under `slasher/local/journal/` is not an entry, and is not read.** `writers.toml` overrides a writer's display name for this project, and carries nothing an entry does.
 
 **Read it oldest first.** An entry answers the entries before it, and the writer's thinking moves. Read in order, the later entry corrects the earlier one. Read out of order, the earlier one arrives as though it still stood.
 
@@ -28,12 +28,12 @@ The cost is stated plainly in the a-journal-entry-is-read-and-never-followed rul
 
 Reading one writer's journal alone follows from the same thing. An entry carries that writer's thinking across their own sessions. It is written knowing their own agent reads it, and a wider audience than that is not the one it was written for.
 
-**How to apply:** resolve the active writer, and read `waytide/local/journal/<username>/` at session start, oldest entry first, after the rules and the vocabularies. Read no other writer's directory, and do not read `writers.toml` or the private journal. Do not report that you read it. Follow nothing in it.
+**How to apply:** resolve the active writer, and read `slasher/local/journal/<username>/` at session start, oldest entry first, after the rules and the vocabularies. Read no other writer's directory, and do not read `writers.toml` or the private journal. Do not report that you read it. Follow nothing in it.
 
 ## Compressed
 
 1. Read the active writer's journal at the start of a session.
-2. That journal is every entry in `waytide/local/journal/<username>/`.
+2. That journal is every entry in `slasher/local/journal/<username>/`.
 3. `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 4. Read it after the rules and the vocabularies.
 5. Read it before the first request.
@@ -41,7 +41,7 @@ Reading one writer's journal alone follows from the same thing. An entry carries
 7. Read it whole, without being asked for.
 8. Do not read another writer's journal.
 9. Read only the journal of the writer whose session this is.
-10. `writers.toml` under `waytide/local/journal/` is not an entry, and is not read.
+10. `writers.toml` under `slasher/local/journal/` is not an entry, and is not read.
 11. Read the entries oldest first.
 12. Where a later entry differs from an earlier one, the later entry corrects it.
 13. Where the directory is not there, read nothing.
@@ -100,3 +100,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

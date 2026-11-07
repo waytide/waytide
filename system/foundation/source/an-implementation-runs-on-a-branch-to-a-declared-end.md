@@ -55,7 +55,7 @@ An implementation is bounded work with a lifecycle. It runs on a branch created 
 
 **What the current branch costs, stated plainly.** There is no isolation: partial work sits on the branch others read, and abandoning means reverting rather than deleting a branch. The record still carries the intent, the state, and the confirmations, so only the containment differs.
 
-**A worktree is a sibling of the repository directory**, named `<repository-name>-<branch with its slash written as a dash>` — `constant-feature-upload-retries`, `waytide-experiment-state-suffix-legibility`. The kind comes before the subject, so every experiment sorts together and every feature does. Sibling placement keeps the path outside the repository working tree, where a worktree created inside would appear as untracked content in the work's own `git status`.
+**A worktree is a sibling of the repository directory**, named `<repository-name>-<branch with its slash written as a dash>` — `constant-feature-upload-retries`, `slasher-experiment-state-suffix-legibility`. The kind comes before the subject, so every experiment sorts together and every feature does. Sibling placement keeps the path outside the repository working tree, where a worktree created inside would appear as untracked content in the work's own `git status`.
 
 **The commands are `git switch -c <branch>` and `git worktree add -b <branch> <path>`.** The `-b` is not optional — `git worktree add <path> <branch>` fails on a branch that does not exist, and is the right form only when a worktree is added to work already under way.
 
@@ -181,7 +181,7 @@ Raise no ending for work that reaches a verdict. Leave the engineer on the upstr
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
 7. The current branch's cost: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
 8. On the current branch, the record still carries the intent, the state, and the confirmations.
-9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
+9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `slasher-experiment-state-suffix-legibility`.
 10. A worktree inside the repository would show as untracked content in the work's own `git status`.
 11. Create a branch-only implementation with `git switch -c <branch>`, and a worktree implementation with `git worktree add -b <branch> <path>`, where `-b` is required.
 12. Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
@@ -291,7 +291,7 @@ Related:
 
 - the the-implementations-directory-holds-one-record-per-implementation rule — the record, the tags, and the state words
 - the design-by-efferent attended-or-unattended-is-chosen-when-the-work-is-started and the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming rules
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the notice reporting what has not concluded
 - the `git` run-the-test-suite-after-changes-before-considering-whether-to-commit and announce-a-branch-switch-in-a-bordered-block rules
 - the a-phase-starts-by-stating-its-goal rule — what is said when a phase starts
 
@@ -330,3 +330,4 @@ Changed by Scott Bellware on Thu Oct 29 2026 at 10:40:11 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 8:34:36 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:03:54 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

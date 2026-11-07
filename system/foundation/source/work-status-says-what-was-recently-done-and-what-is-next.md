@@ -10,7 +10,7 @@
 
 **What is next is the next step of the work under way**, as the next-takes-the-next-step-of-the-work-under-way rule finds it for `/next?`. Where more than one piece of work is under way, the answer names the next step of each, the one the conversation is on first.
 
-**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `waytide/`, and a run of the test suite. `/work-status` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
+**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/work-status` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
 
 **It is read from current state, never from memory.** The log, the commits, and the records are read when the command is typed. A record that summary rule hides, such as a suspended item, is counted rather than listed here too.
 
@@ -24,7 +24,7 @@
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
-5. Carry no task table, no map of `waytide/`, and no suite run. Those belong to `/status-report`.
+5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
 
 ## Compression
@@ -57,3 +57,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 1:03:01 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:09:56 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:41:59 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

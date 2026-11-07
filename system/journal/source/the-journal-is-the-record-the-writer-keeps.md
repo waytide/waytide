@@ -2,11 +2,11 @@
 
 **Trigger:** When writing, changing, or committing a journal entry
 
-**`waytide/local/journal/<username>/` holds a writer's journal.** It is the one record in `waytide/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing, and the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
+**`slasher/local/journal/<username>/` holds a writer's journal.** It is the one record in `slasher/local/` the writer keeps. A project may hold the journals of more than one writer, and each writer's entries sit under their own directory, named for their username. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing, and the journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry. The log, the work session record, the loop record, and the implementation record are all the agent's work, read by the writer. The journal runs the other way. The writer keeps it, and the agent reads it.
 
 **Records written while the package was named `diary` keep that word.** The log, the implementation records, and the writer's own entries are historical and are not revised. So `diary` still reads in this repository's history, and it names nothing live.
 
-**`waytide/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/waytide/user`. A writer absent from it shows as the name that file gives, or as their username. See the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
+**`slasher/local/journal/` holds the writers' directories and the writers file.** That file is `writers.toml`, and it overrides a writer's display name for this project. It is optional, and it may omit the active writer, whose name and username are declared in `~/.config/slasher/user`. A writer absent from it shows as the name that file gives, or as their username. See the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 
 **One file is one entry.** A day usually holds one, and it can hold several. Each is a separate file, so a day with three entries is three files, in the order they were written.
 
@@ -28,7 +28,7 @@
 
 **The journal is committed with the project.** It is not ignored and it is not kept outside the repository. A second writer on the project reads it, which is what makes it a record rather than a private note.
 
-**This is the project journal, and a writer may also keep a private one.** A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it. An entry the `new entry` directive starts goes here, and never to the private journal.
+**This is the project journal, and a writer may also keep a private one.** A private journal is kept outside the repository, under `~/.local/share/slasher/journal/<project>/`, and is not committed. The private-journal-convention rule governs it. An entry the `new entry` directive starts goes here, and never to the private journal.
 
 **The commit message is `Journal: <subject>`.** The subject is the entry's, and nothing follows it.
 
@@ -48,18 +48,18 @@ Journal: I finished the basic implementation of E…
 Journal: Idea
 ```
 
-**The directory may not exist, and its absence is ordinary.** A project that keeps no journal has no `waytide/local/journal/`, and nothing is wrong. So does a project whose other writers keep one and this writer does not. The convention names the directory whether or not it is there, so the first entry has a place to go.
+**The directory may not exist, and its absence is ordinary.** A project that keeps no journal has no `slasher/local/journal/`, and nothing is wrong. So does a project whose other writers keep one and this writer does not. The convention names the directory whether or not it is there, so the first entry has a place to go.
 
-**Why:** everything else Waytide keeps is written by the agent for the writer to read. What the writer thinks about the work is nowhere, and it is the thing that most often gets lost between one session and the next. A place for it makes it a record the project keeps rather than something recalled.
+**Why:** everything else Slasher keeps is written by the agent for the writer to read. What the writer thinks about the work is nowhere, and it is the thing that most often gets lost between one session and the next. A place for it makes it a record the project keeps rather than something recalled.
 
 One file per entry rather than one per day follows the convention every other dated artifact already uses. It also makes the listing readable: an entry named for what it is about can be found without opening it. The local-time stamp is the one place the journal departs from that convention, and the reason is above.
 
-**How to apply:** resolve the active writer, and write an entry as a new file in `waytide/local/journal/<username>/`. Give it the datetime prefix in the writer's local time, to the minute, and a name saying what it is about. Carry seconds only where the writer gave seconds. Do not convert the time to UTC. End it with an `Authored by` line. Do not edit an entry once it is written, except for disclosure or a change the writer directs to their own entry. A later thought is a later entry.
+**How to apply:** resolve the active writer, and write an entry as a new file in `slasher/local/journal/<username>/`. Give it the datetime prefix in the writer's local time, to the minute, and a name saying what it is about. Carry seconds only where the writer gave seconds. Do not convert the time to UTC. End it with an `Authored by` line. Do not edit an entry once it is written, except for disclosure or a change the writer directs to their own entry. A later thought is a later entry.
 
 ## Compressed
 
-1. `waytide/local/journal/<username>/` holds a writer's journal.
-2. The journal is the one record in `waytide/local/` that the writer keeps, not the agent. The agent reads it.
+1. `slasher/local/journal/<username>/` holds a writer's journal.
+2. The journal is the one record in `slasher/local/` that the writer keeps, not the agent. The agent reads it.
 3. A project may hold several writers' journals. Each writer's entries sit under a directory named for their username.
 4. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing.
 5. The journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry.
@@ -67,18 +67,18 @@ One file per entry rather than one per day follows the convention every other da
 7. Records written before the rename keep the word they were written with: the log, the implementation records, and the journal entries. They are historical and are not revised.
 8. `diary` in this repository's history names nothing live.
 
-## `waytide/local/journal/`
+## `slasher/local/journal/`
 
 1. It holds the writers' directories and the writers file, `writers.toml`.
 2. `writers.toml` overrides a writer's display name for this project.
-3. `writers.toml` is optional. It may omit the active writer, whose name and username are declared in `~/.config/waytide/user`.
-4. A writer absent from `writers.toml` shows as the name `~/.config/waytide/user` gives, or as their username.
+3. `writers.toml` is optional. It may omit the active writer, whose name and username are declared in `~/.config/slasher/user`.
+4. A writer absent from `writers.toml` shows as the name `~/.config/slasher/user` gives, or as their username.
 5. The directory may not exist, and its absence is ordinary. This includes a project whose other writers keep one and this writer does not.
 6. The convention names the directory whether or not it exists, so the first entry has a place to go.
 
 ## Entries
 
-1. One file is one entry. To write one, resolve the active writer, then write the entry as a new file in `waytide/local/journal/<username>/`.
+1. One file is one entry. To write one, resolve the active writer, then write the entry as a new file in `slasher/local/journal/<username>/`.
 2. A day can hold several entries, each a separate file, in the order written.
 3. An entry takes a datetime prefix in the writer's local time, of the form `YYYY-MM-DDTHH-MM-<name>.md`.
 4. The name is dash-separated and lower-case, and says what the entry is about.
@@ -126,7 +126,7 @@ Journal: Idea
 ## The private journal
 
 1. This is the project journal. A writer may also keep a private one.
-2. A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
+2. A private journal is kept outside the repository, under `~/.local/share/slasher/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
 3. An entry the `new entry` directive starts goes in the project journal, never the private one.
 
 ## Compression
@@ -204,3 +204,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:37 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -1,7 +1,7 @@
 # Log — manual page
 
 ```
-LOG(1)                         Waytide Manual                         LOG(1)
+LOG(1)                         Slasher Manual                         LOG(1)
 
 NAME
      log - record a decision, one file per entry

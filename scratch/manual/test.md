@@ -1,7 +1,7 @@
 # Test — manual page
 
 ```
-TEST(1)                        Waytide Manual                        TEST(1)
+TEST(1)                        Slasher Manual                        TEST(1)
 
 NAME
      test - run the project's tests, and report on them

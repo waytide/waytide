@@ -1,4 +1,4 @@
-# Waytide — testing
+# Slasher — testing
 
 Controls-based test-writing conventions. Not tied to a specific test-framework API.
 
@@ -41,27 +41,27 @@ testing  →  foundation, language
 
 ## Installing into a project
 
-Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `slasher/system/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/system/testing git@github.com:waytide/testing.git master --squash
-git subtree pull --prefix waytide/system/testing git@github.com:waytide/testing.git master --squash
+git subtree add  --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
+git subtree pull --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/testing.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/testing.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
 
-It includes `foundation` and `language` — install those too, or run `waytide/system/testing/install-dependencies.sh` from your project root.
+It includes `foundation` and `language` — install those too, or run `slasher/system/testing/install-dependencies.sh` from your project root.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/system/testing git@github.com:waytide/testing.git master --squash
+git subtree pull --prefix slasher/system/testing git@github.com:waytide/testing.git master --squash
 ```
 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:34:57 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT

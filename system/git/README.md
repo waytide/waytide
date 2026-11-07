@@ -1,4 +1,4 @@
-# Waytide — git
+# Slasher — git
 
 Commit conventions for a project's git history, the one branch operation the agent announces, and how a reference to a commit is read.
 
@@ -26,27 +26,27 @@ git  →  (nothing — standalone)
 
 ## Installing into a project
 
-Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `slasher/system/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/system/git git@github.com:waytide/git.git master --squash
-git subtree pull --prefix waytide/system/git git@github.com:waytide/git.git master --squash
+git subtree add  --prefix slasher/system/git git@github.com:waytide/git.git master --squash
+git subtree pull --prefix slasher/system/git git@github.com:waytide/git.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/git.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/git.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
 
 It has no dependencies.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/system/git git@github.com:waytide/git.git master --squash
+git subtree pull --prefix slasher/system/git git@github.com:waytide/git.git master --squash
 ```
 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Mon Aug 17 2026 at 11:58:01 PM PT
 Changed by Scott Bellware on Sun Aug 23 2026 at 12:15:22 AM PT
 Changed by Scott Bellware on Wed Oct 21 2026 at 9:37:27 AM PT

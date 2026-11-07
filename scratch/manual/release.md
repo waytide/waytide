@@ -1,7 +1,7 @@
 # Release — manual page
 
 ```
-RELEASE(1)                     Waytide Manual                     RELEASE(1)
+RELEASE(1)                     Slasher Manual                     RELEASE(1)
 
 NAME
      release - choose the next version of a package

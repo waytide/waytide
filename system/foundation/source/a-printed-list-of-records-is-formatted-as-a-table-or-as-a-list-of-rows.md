@@ -23,7 +23,7 @@ A list of items takes the ordinal and no SHA columns:
 | # |                        | item                        | state  |
 |---|------------------------|-----------------------------|--------|
 | 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
-| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
+| 2 | `2026-08-23T06-58-41Z` | Slasher for content and web | Open   |
 ```
 
 **A record never amended shows the same SHA twice, and that is the point.** The pair says whether a record has been touched since it was written. One that has not, and whose subject has moved since, is the stale case a reader is looking for.
@@ -106,7 +106,7 @@ A list of items takes the ordinal and no SHA columns:
 | # |                        | item                        | state  |
 |---|------------------------|-----------------------------|--------|
 | 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
-| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
+| 2 | `2026-08-23T06-58-41Z` | Slasher for content and web | Open   |
 ```
 
 9. A record that was never amended shows the same SHA in both columns. This is intended, since it shows the record has not been touched since it was written.
@@ -209,3 +209,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:17:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:33:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:31:45 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

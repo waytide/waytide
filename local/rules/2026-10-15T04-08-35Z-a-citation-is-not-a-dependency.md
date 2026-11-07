@@ -10,7 +10,7 @@ A rule may **name** another package's rule — for orientation, for contrast, or
 
 **The model citation** is foundation's own a-status-report-prints-a-fixed-whole-project-report rule. It names the `testing` package and is written for its absence. Its words are *"If the project has **not** adopted the testing conventions, degrade this section."* The rule works either way. So `testing` is cited and not declared.
 
-**The refused dependency** is the the-implementations-directory-holds-one-record-per-implementation rule. It cites `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule and deliberately stops short of requiring anything in `waytide/local/logs/loops/`. Its words are *"would invert the package graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone."* That rule is two things at once. It is a citation of another package, and the reason a dependency was not taken.
+**The refused dependency** is the the-implementations-directory-holds-one-record-per-implementation rule. It cites `design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule and deliberately stops short of requiring anything in `slasher/local/logs/loops/`. Its words are *"would invert the package graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone."* That rule is two things at once. It is a citation of another package, and the reason a dependency was not taken.
 
 **Why:** the alternative reading is not available, and the package graph shows it. Six of the seven packages name packages they do not declare. `foundation`, the base every other package builds on, cites most of them, design-by-efferent among them. If a citation were a dependency, `foundation` would depend on `design-by-efferent`, which declares a dependency on `foundation`, and the graph would cycle. So the two kinds of reference have to be distinct, and the only workable line between them is whether the rule functions alone.
 
@@ -18,7 +18,7 @@ Keeping the line at *works* rather than *is motivated* also keeps the declaratio
 
 This criterion was practiced before it was written. Every declaration in the system already conforms to it. Stating it here is what makes it available to a rule's author without their having to infer it from another rule's aside.
 
-**It is a local rule of the Waytide authoring source, not a `foundation` rule.** It governs writing packages, and the packages are written here. It moved from `foundation` on 2026-10-14, so that a project which installs `foundation` and writes no package does not read it. A `foundation` rule does not cite it, since a citation of this repository's local rule points at nothing in any other project.
+**It is a local rule of the Slasher authoring source, not a `foundation` rule.** It governs writing packages, and the packages are written here. It moved from `foundation` on 2026-10-14, so that a project which installs `foundation` and writes no package does not read it. A `foundation` rule does not cite it, since a citation of this repository's local rule points at nothing in any other project.
 
 **How to apply:** when a rule you are writing names another package's rule, ask one question. Could your rule still be applied with that package absent? If it could, cite it plainly and declare nothing. If it could not, declare the dependency in the package README's `Includes` line and its dependency graph. Add it to `install-dependencies.sh`. Do not declare a dependency for any of these reasons:
 
@@ -50,7 +50,7 @@ This criterion was practiced before it was written. Every declaration in the sys
 
 ## Scope
 
-1. This is a local rule of the Waytide authoring source, not a `foundation` rule. It governs writing packages.
+1. This is a local rule of the Slasher authoring source, not a `foundation` rule. It governs writing packages.
 2. A `foundation` rule does not cite this rule.
 
 ## Compression
@@ -89,3 +89,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

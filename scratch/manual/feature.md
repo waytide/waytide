@@ -1,7 +1,7 @@
 # Feature — manual page
 
 ```
-FEATURE(1)                     Waytide Manual                     FEATURE(1)
+FEATURE(1)                     Slasher Manual                     FEATURE(1)
 
 NAME
      feature - build a piece of the main line, on a branch, to a declared end

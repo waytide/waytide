@@ -1,5 +1,5 @@
 #!/bin/sh
-# Refresh the installed Waytide packages from their component repositories.
+# Refresh the installed Slasher packages from their component repositories.
 #
 # Run from the root of the consuming project.
 #
@@ -17,7 +17,7 @@ set -e
 # Where the component repositories live. Overridable so a fork or a mirror can be
 # refreshed from, and so this script can be exercised against a local repository
 # without reaching the network.
-origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:waytide}
 
 # --- Preconditions ---------------------------------------------------------
 
@@ -27,7 +27,7 @@ if [ ! -d .git ]; then
 fi
 
 if [ -d system/foundation ] && [ ! -d slasher/system ]; then
-  echo "This is the Waytide authoring source, where the packages are written rather" >&2
+  echo "This is the Slasher authoring source, where the packages are written rather" >&2
   echo "than installed. There is nothing upstream of it to refresh." >&2
   exit 1
 fi
@@ -196,7 +196,7 @@ if [ -f AGENTS.md ] && [ -f "$installer" ] && grep -q '"\$1" = "bootstrap"' "$in
 
   # AGENTS.md may hold the project's own content above the section, so only the section
   # is compared.
-  sed -n '/^## Waytide$/,$p' AGENTS.md > "$carried"
+  sed -n '/^## Slasher$/,$p' AGENTS.md > "$carried"
 
   # An empty result means the installer answered with nothing, which is not agreement.
   # Reporting a match on a comparison that did not happen is the one outcome worth
@@ -215,7 +215,7 @@ if [ "$bootstrap_state" = stale ]; then
 
 The root AGENTS.md does not match the bootstrap the installed foundation now generates.
 It is not a package, so no refresh reaches it, and it activates the system the packages
-above were just refreshed into. To regenerate it, delete AGENTS.md's Waytide section and
+above were just refreshed into. To regenerate it, delete AGENTS.md's Slasher section and
 run `slasher/system/foundation/install.sh agents-md`.
 BOOTSTRAP
 elif [ "$bootstrap_state" = current ]; then
@@ -232,7 +232,7 @@ else
 The root AGENTS.md was NOT checked against the installed foundation's bootstrap — either
 there is no AGENTS.md, or the installed installer cannot print the bootstrap for
 comparison. It is not a package, so no refresh reaches it, and it may be behind the
-packages just refreshed. To regenerate it, delete AGENTS.md's Waytide section and run
+packages just refreshed. To regenerate it, delete AGENTS.md's Slasher section and run
 `slasher/system/foundation/install.sh agents-md`.
 BOOTSTRAP
 fi

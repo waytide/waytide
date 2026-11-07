@@ -14,7 +14,7 @@
 
 **Two items would make it unnecessary**, and both are now settled:
 
-- *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**, the engineer being undecided whether the core of Waytide should be without the method. **That question was settled later the same day: the core keeps the method.** So this item will not retire the rule, and the abandonment is now a decision rather than a deferral.
+- *Design By Efferent is an `ext/` package* — if DBE leaves the default distribution, a content project does not install it, and nothing has to say it does not govern. **Abandoned 2026-08-25**, the engineer being undecided whether the core of Slasher should be without the method. **That question was settled later the same day: the core keeps the method.** So this item will not retire the rule, and the abandonment is now a decision rather than a deferral.
 - *A content project does not start with Design By Efferent active* — the parked question this rule answers with a rule rather than a mechanism. **Realized 2026-08-25** by the `content` package set and the package-set declaration.
 
 **Neither settlement retires this rule, and the reason is which project each reaches.** They settle what a **content project** installs and activates. This rule governs content work **in this repository**, where the `default` set holds design-by-efferent and it is active. The retirement condition below was written loosely, and this is what it missed.
@@ -69,7 +69,7 @@ Where a piece of work is both — a rule that governs content, a script that bui
 Related:
 
 - the `design-by-efferent` package's the-hinge-cycle-is-actuation-observation-controls-implementation-and-naming and attended-or-unattended-is-chosen-when-the-work-is-started rules — what this suspends for content work
-- the `foundation` the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read that leaves no package dormant
+- the `foundation` the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the unconditional read that leaves no package dormant
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule and the a-packages-vocabulary-holds-its-terms-and-the-most-specific-one-decides rule — the precedence this asserts and the gap it names
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — how this rule ends
 
@@ -94,3 +94,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:19:36 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

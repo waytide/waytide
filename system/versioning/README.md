@@ -1,4 +1,4 @@
-# Waytide — versioning
+# Slasher — versioning
 
 What a version means, and how the next one is chosen. Not how a package is built or published — that is the concern of whatever technology the package is distributed with.
 
@@ -13,7 +13,7 @@ What a version means, and how the next one is chosen. Not how a package is built
 - **The mechanics** — where the version is recorded, and how the package is built and published — belong to the technology the package is distributed with. For a Ruby gem that is the `tools/ruby-lang` package: the gemspec's `s.version`, `gem build`, `gem push`.
 - **This package has no knowledge of any of that**, even though every package versioned under it today is a Ruby gem. What a version means does not change with the packaging technology, and a rule that mixed the two would be unusable by a project that packages differently.
 
-**Why it is called versioning.** Not *release* or *packaging*: each names an act whose substance is the technology-specific part — bundling a distributable and publishing it. What is left is not an act but a meaning. Not *version*. A version is a particular value, where this package governs the practice of assigning and interpreting them. `waytide/version` would read as the version of Waytide itself, rather than of the things made with it.
+**Why it is called versioning.** Not *release* or *packaging*: each names an act whose substance is the technology-specific part — bundling a distributable and publishing it. What is left is not an act but a meaning. Not *version*. A version is a particular value, where this package governs the practice of assigning and interpreting them. `slasher/version` would read as the version of Slasher itself, rather than of the things made with it.
 
 This is a standalone package: it includes no other packages.
 
@@ -23,27 +23,27 @@ versioning  →  (nothing — standalone)
 
 ## Installing into a project
 
-Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `slasher/system/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/system/versioning git@github.com:waytide/versioning.git master --squash
-git subtree pull --prefix waytide/system/versioning git@github.com:waytide/versioning.git master --squash
+git subtree add  --prefix slasher/system/versioning git@github.com:waytide/versioning.git master --squash
+git subtree pull --prefix slasher/system/versioning git@github.com:waytide/versioning.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/versioning.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/versioning.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/waytide` for the same reason.
 
 It has no dependencies.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/system/versioning git@github.com:waytide/versioning.git master --squash
+git subtree pull --prefix slasher/system/versioning git@github.com:waytide/versioning.git master --squash
 ```
 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sun Aug 9 2026 at 6:06:52 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 6:14:48 PM PT
 Changed by Scott Bellware on Mon Aug 10 2026 at 10:58:52 PM PT

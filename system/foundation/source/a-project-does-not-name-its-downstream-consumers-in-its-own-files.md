@@ -1,6 +1,6 @@
 # A project does not name its downstream consumers in its own files
 
-A project's own files do not name the projects that **consume** it. Not the installed packages under `waytide/system/`, not the project's own working state under `waytide/local/`, and not the code or documentation beside them. This holds for a library, a package, a rule system, or anything else other projects install.
+A project's own files do not name the projects that **consume** it. Not the installed packages under `slasher/system/`, not the project's own working state under `slasher/local/`, and not the code or documentation beside them. This holds for a library, a package, a rule system, or anything else other projects install.
 
 **What a consumer is, here.** A project named **only because it installed this one**. That is the whole of the test, and it is narrow on purpose — see what it does not reach, below.
 
@@ -16,7 +16,7 @@ Three reasons, and each would be sufficient on its own:
 
 **A project named because a decision was about it.** The test is *why* the name is there, not whether the named project happens to consume this one. A project that is part of this project at large may be named. So may a reference project the method is shown through. Each is named because something was decided about it.
 
-That is ordinary, and removing such a name would cost the record its subject. Waytide's own two are `website`, which is part of Waytide at large, and `constant`, the worked example the method is shown through. Neither is named as a consumer.
+That is ordinary, and removing such a name would cost the record its subject. Slasher's own two are `website`, which is part of Slasher at large, and `constant`, the worked example the method is shown through. Neither is named as a consumer.
 
 **A historical record that already names one.** A record states what was true when it was written and is not revised to suit a later convention. The one exception is disclosure, and it is the disclosure rule that governs it. The correction removes the name and keeps every claim true by stating it at a lower resolution.
 
@@ -39,7 +39,7 @@ A decision may have been about that project, and its name is there for that. Lea
 ## Compressed
 
 1. A project's own files do not name the projects that consume it.
-2. This covers the installed packages under `waytide/system/`, the working state under `waytide/local/`, and the code and documentation beside them.
+2. This covers the installed packages under `slasher/system/`, the working state under `slasher/local/`, and the code and documentation beside them.
 3. It holds for a library, a package, a rule system, or anything else other projects install.
 4. A consumer is a project named only because it installed this one. That is the whole test.
 5. Do not add a list of consumers for convenience.
@@ -48,8 +48,8 @@ A decision may have been about that project, and its name is there for that. Lea
 
 1. The test is why the name is there, not whether the named project consumes this one.
 2. A project named because a decision was about it may be named. Leave its name.
-3. A project that is part of this project at large may be named, such as Waytide's `website`.
-4. A reference project the method is shown through may be named, such as Waytide's `constant`.
+3. A project that is part of this project at large may be named, such as Slasher's `website`.
+4. A reference project the method is shown through may be named, such as Slasher's `constant`.
 5. Leave a historical record that already names a consumer as written. It is not revised to suit a later convention.
 6. The one exception is disclosure, governed by the disclosure rule, not this one. A consumer's name already in a record is that rule's concern.
 7. That correction removes the name and keeps every claim true by stating it at a lower resolution.
@@ -95,3 +95,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:22:08 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 6:45:53 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -30,7 +30,7 @@
 
 **What `[suspended]` marks is fixed here**, and the set of suspensions is read from it.
 
-**Why:** an undo queue held the suspended thing itself under `waytide/local/suspended/`, with a return address and a list of reconciliations to reverse. It ran from 2026-08-03 to 2026-08-18 and accumulated eleven entries. **Not one was restored.** The mechanism was built for a reversal that never happened, and its cost was paid on every suspension: a file to place, four canonical lines to write, and a growing directory that a reader had to be told the purpose of.
+**Why:** an undo queue held the suspended thing itself under `slasher/local/suspended/`, with a return address and a list of reconciliations to reverse. It ran from 2026-08-03 to 2026-08-18 and accumulated eleven entries. **Not one was restored.** The mechanism was built for a reversal that never happened, and its cost was paid on every suspension: a file to place, four canonical lines to write, and a growing directory that a reader had to be told the purpose of.
 
 What the queue was really protecting against is a thing coming back different, reconstructed from memory and argument. The log entry protects against that at a fraction of the cost. It names what was stopped, why, and what else changed — which is what someone reconsidering the decision needs. The text itself is in git, where every other removed file in this project already is.
 
@@ -119,3 +119,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

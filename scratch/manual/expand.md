@@ -1,7 +1,7 @@
 # Expand — manual page
 
 ```
-EXPAND(1)                      Waytide Manual                      EXPAND(1)
+EXPAND(1)                      Slasher Manual                      EXPAND(1)
 
 NAME
      expand - expand the previous answer

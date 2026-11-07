@@ -1,6 +1,6 @@
 # Index of the rules
 
-Every rule Waytide holds, by package, with the name it is cited by and when it loads. **Pre-loaded** rules are printed in full at session start. **On-demand** rules load when their trigger comes up.
+Every rule Slasher holds, by package, with the name it is cited by and when it loads. **Pre-loaded** rules are printed in full at session start. **On-demand** rules load when their trigger comes up.
 
 **112 package rules: 48 pre-loaded and 64 on-demand**, and 6 local rules, all pre-loaded.
 
@@ -18,7 +18,7 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
-| 4 | The harness announces Waytide's installation, and the agent never prints the notice | `the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice` | pre-loaded |  |
+| 4 | The harness announces Slasher's installation, and the agent never prints the notice | `the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice` | pre-loaded |  |
 | 5 | The startup display prints once per session | `the-startup-display-prints-as-the-session-starts` | on-demand | When the engineer types `load rules`, or when changing the startup display or its script |
 
 ### Writing rules
@@ -61,8 +61,8 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
-| 17 | Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not | `dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not` | on-demand | When creating and naming a new file under waytide/local/ or a new rule file in a package |
-| 18 | Working-state artifacts carry a provenance footer | `working-state-artifacts-carry-a-provenance-footer` | on-demand | When creating or changing a working-state document under waytide/ |
+| 17 | Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not | `dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not` | on-demand | When creating and naming a new file under slasher/local/ or a new rule file in a package |
+| 18 | Working-state artifacts carry a provenance footer | `working-state-artifacts-carry-a-provenance-footer` | on-demand | When creating or changing a working-state document under slasher/ |
 | 19 | A date in a record's title is written as the day, the date, and the 24-hour time | `a-date-in-a-records-title-is-written-as-the-day-the-date-and-the-24-hour-time` | on-demand | When writing a date into a working-state record's title |
 | 20 | A record carrying a state line ends its filename with the state in upper case | `a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case` | on-demand | When creating, renaming, changing the state of, or referencing an item or implementation record |
 | 21 | A record may be tagged with square-bracket tags | `a-record-may-be-categorized-with-square-bracket-tags` | on-demand | When adding a tag to a record or a list item |
@@ -73,8 +73,8 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
 | 23 | The items directory holds one file per item | `the-items-directory-holds-one-file-per-item` | on-demand | When creating an item, changing an item's state or content, or answering against what an item settled |
-| 24 | An observation is a working hypothesis whose one state, Recorded, never changes | `an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes` | on-demand | When recording or revising an observation in waytide/local/items/ |
-| 25 | An item that sequences work contains no code samples | `an-item-that-sequences-work-contains-no-code-samples` | on-demand | When writing or revising an item in waytide/local/items/ that sequences work |
+| 24 | An observation is a working hypothesis whose one state, Recorded, never changes | `an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes` | on-demand | When recording or revising an observation in slasher/local/items/ |
+| 25 | An item that sequences work contains no code samples | `an-item-that-sequences-work-contains-no-code-samples` | on-demand | When writing or revising an item in slasher/local/items/ that sequences work |
 | 26 | A design section documenting a package dependency is titled "Package Dependency" | `a-design-section-documenting-a-package-dependency-is-titled-package-dependency` | on-demand | When writing a section of a [design] item that documents a dependency on a package |
 
 ### Implementations
@@ -157,7 +157,7 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
-| 15 | A loop record holds the cycles through the loop, one file per feature | `a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature` | on-demand | When writing a loop record for a feature under waytide/local/logs/loops/ |
+| 15 | A loop record holds the cycles through the loop, one file per feature | `a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature` | on-demand | When writing a loop record for a feature under slasher/local/logs/loops/ |
 
 ## git
 
@@ -198,8 +198,8 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
 | 4 | Journal entries are recorded in the writer's journal directory, one file per entry | `journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry` | on-demand | When writing a journal entry (including when the writer opens with "new entry") |
-| 5 | `~/.local/share/waytide/journal/<project>/` — a private journal, kept outside the project | `private-journal-convention` | on-demand | When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal |
-| 6 | The writer's username is read from the environment, then the project, then the user's config file | `the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file` | on-demand | When resolving the active writer's username or display name (for a journal directory or any Waytide tool) |
+| 5 | `~/.local/share/slasher/journal/<project>/` — a private journal, kept outside the project | `private-journal-convention` | on-demand | When the writer starts a private journal entry, directs a change to one, or commands one moved to the shared journal |
+| 6 | The writer's username is read from the environment, then the project, then the user's config file | `the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file` | on-demand | When resolving the active writer's username or display name (for a journal directory or any Slasher tool) |
 
 ### Writing an entry
 
@@ -242,8 +242,8 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 
 | # | Rule | Name | Loads | Trigger |
 |---|---|---|---|---|
-| 10 | Waytide prose conforms to the STE writing rules | `waytide-prose-conforms-to-the-ste-writing-rules` | pre-loaded |  |
-| 11 | Waytide keeps its word where the STE word means something else | `waytide-keeps-its-word-where-the-ste-word-means-something-else` | pre-loaded |  |
+| 10 | Slasher prose conforms to the STE writing rules | `slasher-prose-conforms-to-the-ste-writing-rules` | pre-loaded |  |
+| 11 | Slasher keeps its word where the STE word means something else | `slasher-keeps-its-word-where-the-ste-word-means-something-else` | pre-loaded |  |
 | 12 | Ordinary vocabulary is not reserved and not rewritten | `ordinary-vocabulary-is-not-reserved-and-not-rewritten` | pre-loaded |  |
 
 ### Reserving a word
@@ -252,7 +252,7 @@ Every rule Waytide holds, by package, with the name it is cited by and when it l
 |---|---|---|---|---|
 | 13 | ETE declares its own categories | `ete-declares-its-own-categories` | on-demand | When reserving a word or choosing a vocabulary category for a term |
 | 14 | ETE fixes the meaning of a word in its category | `ete-fixes-the-meaning-of-a-word-in-its-category` | on-demand | When reserving a word as a technical noun or verb in a package's vocabulary.md, or writing that reservation's entry |
-| 15 | A word is reserved in six steps | `a-word-is-reserved-in-six-steps` | on-demand | When asked to reserve a word (e.g. "Waytide reserves the word, X") |
+| 15 | A word is reserved in six steps | `a-word-is-reserved-in-six-steps` | on-demand | When asked to reserve a word (e.g. "Slasher reserves the word, X") |
 
 ## testing
 

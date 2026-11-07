@@ -1,6 +1,6 @@
 # The `README.md` is written for the uninitiated, and it is figurative where that serves them
 
-**This project's `README.md` is outward-facing prose.** Its reader has not read Waytide's rules, does not hold its vocabulary, and is deciding whether the system is worth their attention. **It is written for that reader**, and it reaches for a figure where a figure is what lands.
+**This project's `README.md` is outward-facing prose.** Its reader has not read Slasher's rules, does not hold its vocabulary, and is deciding whether the system is worth their attention. **It is written for that reader**, and it reaches for a figure where a figure is what lands.
 
 **As the engineer stated it:** the README is often figurative — explaining to the uninitiated. That's why it can sometimes appear to contradict Waytide's rules.
 
@@ -16,11 +16,11 @@
 
 ## What is deliberately given up
 
-**The `language` package's rules reach outward-facing prose and this takes an exception to them.** The no-slang rule says its standard governs prose **and** conversation, on the ground that the mindset it preserves lives in the person rather than in the artifact. The waytide-prose-conforms-to-the-ste-writing-rules rule binds Waytide's prose, its records, its commit messages, and the agent's answers. Neither carves out a document written for someone who does not yet hold the terms.
+**The `language` package's rules reach outward-facing prose and this takes an exception to them.** The no-slang rule says its standard governs prose **and** conversation, on the ground that the mindset it preserves lives in the person rather than in the artifact. The slasher-prose-conforms-to-the-ste-writing-rules rule binds Slasher's prose, its records, its commit messages, and the agent's answers. Neither carves out a document written for someone who does not yet hold the terms.
 
 **The figures already in the README are the worked cases.** *A free-text escape hatch* uses a word the `foundation` vocabulary substitutes away — `escape` pictures a closed room, and the option set is not closed. *The engineer takes the helm* is a figure for what the corpus calls responsibility transferring. Each is precise enough for a reader meeting the system for the first time, and each would be wrong in a rule.
 
-**The cost is that the README stops being an example of the system's own standard.** A reader who adopts Waytide from its README and then meets the vocabulary finds the two in tension, and nothing in the README says why. That is accepted rather than solved.
+**The cost is that the README stops being an example of the system's own standard.** A reader who adopts Slasher from its README and then meets the vocabulary finds the two in tension, and nothing in the README says why. That is accepted rather than solved.
 
 ## What is not licensed
 
@@ -32,7 +32,7 @@
 
 The rule exists because the alternative is an agent auditing the README against binding prose every time it reads one, and reporting the same findings the engineer has already declined. That happened, which is what occasioned this.
 
-**How to apply:** write the root `README.md` for a reader who holds none of Waytide's terms. Use a figure where it explains better than the exact word does.
+**How to apply:** write the root `README.md` for a reader who holds none of Slasher's terms. Use a figure where it explains better than the exact word does.
 
 Do not report a README figure as a violation of the `language` rules or a package vocabulary. Do report a statement that is **false**, which this rule does not reach.
 
@@ -40,7 +40,7 @@ Hold every other artifact to the `language` package unchanged.
 
 ## Compressed
 
-1. Write the root `README.md` for a reader who holds none of Waytide's terms and is deciding whether the system is worth their attention.
+1. Write the root `README.md` for a reader who holds none of Slasher's terms and is deciding whether the system is worth their attention.
 2. Use a figure where it explains better than the exact word does.
 3. An apparent contradiction between the README and a rule is not a defect. Do not report it as one.
 4. Do not report a README figure as a violation of the `language` rules or a package vocabulary.
@@ -53,7 +53,7 @@ Hold every other artifact to the `language` package unchanged.
 
 ## What is given up
 
-1. This rule takes an exception to the `language` package's rules, which otherwise reach outward-facing prose: the no-slang rule and the waytide-prose-conforms-to-the-ste-writing-rules rule.
+1. This rule takes an exception to the `language` package's rules, which otherwise reach outward-facing prose: the no-slang rule and the slasher-prose-conforms-to-the-ste-writing-rules rule.
 2. The figures already in the README stand, such as *a free-text escape hatch* and *the engineer takes the helm*. Each is precise enough for a reader meeting the system for the first time, and each would be wrong in a rule.
 3. The README is not an example of the system's own standard. The tension with the vocabulary is accepted, not solved.
 
@@ -70,7 +70,7 @@ Related:
 
 - the `language` no-slang rule — which reaches prose and conversation, and which this takes an exception to
 - its language-is-used-precisely-here-and-words-are-load-bearing rule — dramatic jargon, which is not licensed here
-- its waytide-prose-conforms-to-the-ste-writing-rules rule — the standard the README is excused from
+- its slasher-prose-conforms-to-the-ste-writing-rules rule — the standard the README is excused from
 - the `foundation` vocabulary — `free-text option` rather than *escape*, the worked case
 - the `foundation` ask-at-once-when-the-engineer-expresses-a-preference rule — the ask this rule came from
 
@@ -84,3 +84,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 6:17:07 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:33:49 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 1:39:53 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

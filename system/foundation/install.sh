@@ -27,9 +27,9 @@ set -e
 # The origin foundation is fetched from. Override it to install over HTTPS where no SSH
 # key is registered:
 #
-#   WAYTIDE_ORIGIN=https://github.com/waytide ./install.sh
+#   SLASHER_ORIGIN=https://github.com/waytide ./install.sh
 #
-origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:waytide}
 
 prefix="slasher/system/foundation"
 repo="$origin/foundation.git"
@@ -49,9 +49,9 @@ here=$(dirname "$0")
 # which survives without naming every one. Do not add the planning directories back.
 bootstrap() {
   cat <<'EOF'
-## Waytide
+## Slasher
 
-This project's Waytide system and working conventions live under `slasher/`,
+This project's Slasher system and working conventions live under `slasher/`,
 committed alongside the code and read at the start of each session.
 
 **At the start of a session, read every rule file under `slasher/system/` and
@@ -72,7 +72,7 @@ override default behavior where they conflict; explicit user instructions still 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
 `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs
 `slasher/system/foundation/session-start.sh`, which reads the package directories
-actually present and emits the `Waytide installed at … — N packages: …` notice, followed
+actually present and emits the `Slasher installed at … — N packages: …` notice, followed
 by a line telling the engineer the rules load on the first prompt, or to type `/load` — the
 command that asks for the read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
@@ -109,13 +109,13 @@ place_agents_md() {
   elif [ ! -f AGENTS.md ]; then
     # No root AGENTS.md yet — creating one takes nothing away, so do it directly.
     bootstrap > AGENTS.md
-    echo "Created AGENTS.md with the Waytide bootstrap."
+    echo "Created AGENTS.md with the Slasher bootstrap."
   else
     # An AGENTS.md you maintain already exists. Explain the effect, show the exact
     # text, and ask before touching it — never append silently.
     echo "You already have an AGENTS.md at the project root."
     echo
-    echo "Appending the Waytide bootstrap will add a section that tells the agent,"
+    echo "Appending the Slasher bootstrap will add a section that tells the agent,"
     echo "at the start of every session, to read every rule file under slasher/system/ and slasher/local/rules/"
     echo "(except each package's source/ directory and README.md),"
     echo "and slasher/local/vocabulary.md, and follow"
@@ -139,7 +139,7 @@ place_agents_md() {
       [Yy] | [Yy][Ee][Ss])
         printf '\n' >> AGENTS.md
         bootstrap >> AGENTS.md
-        echo "Appended the Waytide bootstrap to AGENTS.md."
+        echo "Appended the Slasher bootstrap to AGENTS.md."
         ;;
       *)
         echo "Left AGENTS.md unchanged. Paste the section above into it to activate the system."
@@ -166,7 +166,7 @@ place_claude_md() {
     # touching it — never append silently.
     echo "You already have a CLAUDE.md at the project root."
     echo
-    echo "Claude Code reads CLAUDE.md, not AGENTS.md. For the Waytide bootstrap in AGENTS.md"
+    echo "Claude Code reads CLAUDE.md, not AGENTS.md. For the Slasher bootstrap in AGENTS.md"
     echo "to load at session start under Claude Code, CLAUDE.md needs to import it with a line"
     echo "reading: @AGENTS.md. Your existing CLAUDE.md content is left exactly as it is; the"
     echo "import is added at the end, after a blank line."
@@ -190,7 +190,7 @@ place_claude_md() {
   fi
 }
 
-# The .claude/settings.json content Waytide needs: the status line. The session-start notice and
+# The .claude/settings.json content Slasher needs: the status line. The session-start notice and
 # the startup display are the plugin's hooks, and a plugin cannot set the main status line, so
 # this one key stays here.
 settings_json() {
@@ -250,7 +250,7 @@ place_settings_json() {
     # Wired before the plugin carried the hooks. Both now run the session-start scripts, so the
     # notice and the read instruction print twice until these keys go. The file is still not
     # modified, for the reason given above.
-    echo ".claude/settings.json still runs the Waytide session-start notice or startup display."
+    echo ".claude/settings.json still runs the Slasher session-start notice or startup display."
     echo
     echo "The Slasher plugin, in .claude/skills/slasher/, now runs both, so with these entries in"
     echo "place the notice prints twice. Remove from the 'hooks' object of your file yourself the"
@@ -258,19 +258,19 @@ place_settings_json() {
     echo "'UserPromptSubmit' entry that runs slasher/system/foundation/startup-display.sh. Keep"
     echo "'statusLine'. Remove 'hooks' itself if nothing is left in it."
   elif [ -f .claude/settings.json ] && grep -q 'foundation/statusline.sh' .claude/settings.json; then
-    echo ".claude/settings.json already runs the Waytide status line — left unchanged."
+    echo ".claude/settings.json already runs the Slasher status line — left unchanged."
   elif [ ! -f .claude/settings.json ]; then
     # No settings file yet — creating one takes nothing away, so do it directly.
     mkdir -p .claude
     settings_json > .claude/settings.json
-    echo "Created .claude/settings.json with the Waytide status line."
+    echo "Created .claude/settings.json with the Slasher status line."
     echo "Commit it so the status line travels to everyone who checks the project out."
   else
     echo "You already have a .claude/settings.json."
     echo
     echo "It is not modified here: JSON cannot be safely appended to, and a malformed"
     echo "settings.json silently disables every setting in it. Merge this key into your file"
-    echo "yourself. 'statusLine' keeps Waytide's presence on screen. Note that setting it"
+    echo "yourself. 'statusLine' keeps Slasher's presence on screen. Note that setting it"
     echo "REPLACES any status line you have already configured; leave it out if you would"
     echo "rather keep yours."
     echo

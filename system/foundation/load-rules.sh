@@ -4,7 +4,7 @@
 # Run from the project root:
 #
 #   slasher/system/foundation/load-rules.sh     in a consuming project
-#   system/foundation/load-rules.sh             in the Waytide authoring source
+#   system/foundation/load-rules.sh             in the Slasher authoring source
 #   system/foundation/load-rules.sh <rule-name> one rule, on-demand when its trigger comes up, or
 #                                               pre-loaded when a skill hands its act to the rule
 #
@@ -15,7 +15,7 @@
 set -e
 
 # Locate the system and the project's own directory: slasher/ in a consuming project, the root
-# in the Waytide authoring source. Checked in that order — a consuming project may have a
+# in the Slasher authoring source. Checked in that order — a consuming project may have a
 # system/ directory of its own.
 if [ -d slasher/system ]; then
   system=slasher/system

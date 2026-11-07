@@ -1,16 +1,16 @@
 #!/bin/sh
 # Read the consuming projects on this machine — the projects that have installed
-# the Waytide packages — and print the actionable set, one path per line.
+# the Slasher packages — and print the actionable set, one path per line.
 #
-# Run from the root of any project that has installed Waytide. This script lives
+# Run from the root of any project that has installed Slasher. This script lives
 # inside the package, so it is invoked by its path from that root:
 #
 #   slasher/system/foundation/read-consuming-projects.sh
 #
 # It is packaged rather than kept with the authoring tools because it is not one.
-# It is machine-scoped rather than project-scoped: it reports the Waytide projects
+# It is machine-scoped rather than project-scoped: it reports the Slasher projects
 # on this machine, and the engineer who wants that is anyone who installed
-# Waytide into more than one project, not only whoever maintains Waytide. The
+# Slasher into more than one project, not only whoever maintains Slasher. The
 # authoring tools at the composite root run against the packages; this runs
 # beside projects, which is a third position and the reason it is here.
 #
@@ -35,7 +35,7 @@ set -e
 
 # Overridable so the script can be exercised against a registry written for a
 # test, without touching the engineer's own.
-registry=${WAYTIDE_REGISTRY:-$HOME/.config/slasher/consuming-projects.toml}
+registry=${SLASHER_REGISTRY:-$HOME/.config/slasher/consuming-projects.toml}
 
 # --- The registry ----------------------------------------------------------
 #

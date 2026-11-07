@@ -6,7 +6,7 @@ When the user asks for a **status report** (or "project status"), produce a repo
 
 1. **Task table** — the tasks those records carry, as a table: number, task, status (done / next / pending), and a terse note. Mark the next task. Include any out-of-sequence extras already built.
 2. **Waiting work table** — the items carrying a `**Waits for:**` line: name, date, what it waits for, one-line gist. These are off the task line until the wait ends. Order them by their `**Priority:**` rank where they carry one. **A hidden record is not listed here** — see below.
-3. **Waytide-directory orientation** — a basic map of `waytide/`: `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`) and `waytide/local/rules/` holds the project's own local rules — each binding, each read at session start. Alongside `rules/` under `waytide/local/`, the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), and the work-artifact directories `items/`, `implementations/`, and `migration/`. How to work with it: rules are enforceable conventions, and the log is title-only ISO-8601-UTC decision entries. A rule typically pairs with a log entry. An item holds the task checklist where it sequences work, and a `**Waits for:**` line marks work that is not yet actionable.
+3. **Slasher-directory orientation** — a basic map of `slasher/`: `slasher/system/` holds the installed rule packages (e.g. `foundation/`, `language/`) and `slasher/local/rules/` holds the project's own local rules — each binding, each read at session start. Alongside `rules/` under `slasher/local/`, the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), and the work-artifact directories `items/`, `implementations/`, and `migration/`. How to work with it: rules are enforceable conventions, and the log is title-only ISO-8601-UTC decision entries. A rule typically pairs with a log entry. An item holds the task checklist where it sequences work, and a `**Waits for:**` line marks work that is not yet actionable.
 4. **Recent flows of work** — a brief of the recent direction, drawn from the latest log/commit entries (a few lines, not an exhaustive list).
 5. **Test suite** — **convention-aware of the testing package.** If the project has adopted the testing conventions, run the suite and report the count and pass/fail line. Report the suite's **context tree two levels deep, rendered hierarchically**. Each distinct **top-level context** is a tree root, with its distinct **second-level contexts** indented as its branches. Use an indented tree, such as a fenced block with `├─`/`└─` branches. Stop at two levels — do not descend into per-assertion contexts. If the project has **not** adopted the testing conventions, degrade this section. Report whatever suite the project has, with its count and pass/fail, or note that there is none.
 
@@ -38,7 +38,7 @@ Keep each part tight. Read current state before printing — do not report stale
 
 **Why:** a status report is a recurring request with a known shape. Fixing the format makes the report repeatable and complete, and steers reading toward the in-repo sources of truth rather than recollection.
 
-**How to apply:** on a status-report request, render the parts above from current files. Those are the project's items, `waytide/local/logs/log/`, and git. Confirm the suite count and the two-level context tree by running the suite rather than asserting them. Take the two levels from **the run's output**, not from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source, and as its real value in a run. An unnamed test appears in the source and emits no line.
+**How to apply:** on a status-report request, render the parts above from current files. Those are the project's items, `slasher/local/logs/log/`, and git. Confirm the suite count and the two-level context tree by running the suite rather than asserting them. Take the two levels from **the run's output**, not from the `context "…"` declarations in the source. A dynamic context reads as a placeholder in the source, and as its real value in a run. An unnamed test appears in the source and emits no line.
 
 ## Compressed
 
@@ -52,12 +52,12 @@ Keep each part tight. Read current state before printing — do not report stale
 8. Waiting items are off the task line until the wait ends.
 9. Order waiting items by their `**Priority:**` rank where they carry one.
 10. Do not list a hidden record in the waiting work table.
-11. Part 3, **Waytide-directory orientation**: a basic map of `waytide/`.
-12. The map shows that `waytide/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
-13. The map shows that `waytide/local/rules/` holds the project's own local rules.
+11. Part 3, **Slasher-directory orientation**: a basic map of `slasher/`.
+12. The map shows that `slasher/system/` holds the installed rule packages (e.g. `foundation/`, `language/`).
+13. The map shows that `slasher/local/rules/` holds the project's own local rules.
 14. The map states that both are binding and both are read at session start.
-15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `waytide/local/`.
-16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `waytide/local/`.
+15. The map shows the contemporaneous, historical records under `logs/` (`log/`, `loops/`, `work-sessions/`), alongside `rules/` under `slasher/local/`.
+16. The map shows the work-artifact directories `items/`, `implementations/`, and `migration/`, also under `slasher/local/`.
 17. The orientation says how to work with the directory. Rules are enforceable conventions.
 18. The log is title-only ISO-8601-UTC decision entries.
 19. A rule typically pairs with a log entry.
@@ -104,7 +104,7 @@ Keep each part tight. Read current state before printing — do not report stale
 1. Keep each part tight.
 2. Read current state before printing.
 3. Do not report stale task counts, suite numbers, contexts, or deferred items from memory.
-4. Render the parts from current files: the project's items, `waytide/local/logs/log/`, and git.
+4. Render the parts from current files: the project's items, `slasher/local/logs/log/`, and git.
 5. Confirm the suite count and the two-level context tree by running the suite, not by asserting them.
 6. Take the two levels from the run's output, not from the `context "…"` declarations in the source.
 7. A dynamic context reads as a placeholder in the source, and as its real value in a run.
@@ -168,3 +168,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:12:23 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

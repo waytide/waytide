@@ -6,7 +6,7 @@
 - **Original rank:** 2 of 106
 - **Unclarity:** 0.77
 
-An **item** in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`. The entry is written at three moments, and at no others.
+An **item** in `slasher/local/items/` pairs with a one-line entry in `slasher/local/logs/log/`. The entry is written at three moments, and at no others.
 
 **Whatever the item is tagged does not matter here.** A `[design]`, a `[plan]`, an `[aspiration]`, or an item carrying no kind tag at all takes the same entry at the same moments. The tag describes the item and decides nothing about the log.
 
@@ -50,7 +50,7 @@ The exclusions are what keep the obligation worth having. A log that carried eve
 
 **The mood is required because the log is the artifact a reader finds holding nothing else.** Every other record carries a `**State:**` line saying whether the thing exists. A log entry carries a title. Where the title asserts what a record only settles, the reader has nothing to weigh it against, and reads a proposal as the system's behavior.
 
-**How to apply:** when an item is created, write a matching one-line entry in `waytide/local/logs/log/`. Write one for each `Settled` resolution added afterward, and one for each change of the `**State:**` line.
+**How to apply:** when an item is created, write a matching one-line entry in `slasher/local/logs/log/`. Write one for each `Settled` resolution added afterward, and one for each change of the `**State:**` line.
 
 Write none for a completed task, and none for prose that settles nothing. Write one where a reconciliation finds the direction still standing, naming what it was read against.
 
@@ -58,7 +58,7 @@ Name the record in the entry, and say what happened to it. State what the record
 
 ## Compressed
 
-1. An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.
+1. An item in `slasher/local/items/` pairs with a one-line entry in `slasher/local/logs/log/`.
 2. Write the entry at three moments, and at no others.
 3. The item's kind tag, such as `[design]`, `[plan]`, or `[aspiration]`, makes no difference, and an item with no kind tag takes the same entries.
 4. Write the entry on the item's creation.
@@ -170,3 +170,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

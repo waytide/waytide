@@ -8,16 +8,16 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 **Four levels hold terms, and a word can appear in more than one.** They decide in this order, from the one that decides first:
 
-1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
+1. **The STE dictionary**, and Slasher's reserved terms where the approved word means something else. The `language` package's slasher-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
 2. **The `language` package's vocabulary** — the terms and substitutions that belong to no domain.
 3. **An individual package's vocabulary** — the terms and substitutions of one domain.
-4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
+4. **The project's own vocabulary**, in `slasher/local/vocabulary.md`, which a project writes for itself.
 
-**The more specific decides.** A domain knows its own words, and a general vocabulary cannot anticipate what a domain needs. A project knows its own work, and Waytide cannot anticipate that either.
+**The more specific decides.** A domain knows its own words, and a general vocabulary cannot anticipate what a domain needs. A project knows its own work, and Slasher cannot anticipate that either.
 
 ## A project's own vocabulary binds
 
-**A project's own vocabulary, `waytide/local/vocabulary.md`, is read at session start**, with `waytide/system/` and `waytide/local/rules/`. That is what makes it binding. `session-start.sh` names it in the read instruction, and the `AGENTS.md` bootstrap names it too. It is optional, and its absence is not a defect.
+**A project's own vocabulary, `slasher/local/vocabulary.md`, is read at session start**, with `slasher/system/` and `slasher/local/rules/`. That is what makes it binding. `session-start.sh` names it in the read instruction, and the `AGENTS.md` bootstrap names it too. It is optional, and its absence is not a defect.
 
 **Most of the time the levels do not meet.** The `language` vocabulary holds the substitutions that belong to no domain, and it says so. A domain-specific substitution belongs in its own package. So two vocabularies rarely name the same word, and the order settles the case where they do.
 
@@ -27,28 +27,28 @@ A package's `vocabulary.md` holds the terms that package defines and the word su
 
 **Why:** several vocabularies bind the same prose. A reader who finds a word in two of them cannot choose without a stated order. The cost is not hypothetical. `actuation` is defined in `language` and in `design-by-efferent`, and which one governs rests today on a sentence one of them happens to carry. Naming the order once removes that from every future case.
 
-**How to apply:** use a vocabulary's terms and substitutions wherever Waytide's prose is written. When a word appears in two vocabularies, the more specific one decides. Read a narrower entry as resting on the general one. When writing a vocabulary, follow the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule.
+**How to apply:** use a vocabulary's terms and substitutions wherever Slasher's prose is written. When a word appears in two vocabularies, the more specific one decides. Read a narrower entry as resting on the general one. When writing a vocabulary, follow the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule.
 
 ## Compressed
 
 1. A package's `vocabulary.md` holds the terms that package defines and the word substitutions it enforces.
 2. It is binding.
-3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Waytide's prose is written.
+3. Use its terms and substitutions in code, tests, rules, designs, commits, records, and dialogue, wherever Slasher's prose is written.
 4. This rule governs using a vocabulary. Writing one, what it holds, and where a term goes are the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule's, which loads when a vocabulary file is written.
 
 ## Which vocabulary decides
 
 1. Four levels hold terms, and a word can appear in more than one.
 2. They stand in this order, from the most general to the most specific, which decides:
-   1. **The STE dictionary**, and Waytide's reserved terms where the approved word means something else. The `language` package's waytide-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
+   1. **The STE dictionary**, and Slasher's reserved terms where the approved word means something else. The `language` package's slasher-keeps-its-word-where-the-ste-word-means-something-else rule states this level and its exception.
    2. **The `language` package's vocabulary**: the terms and substitutions that belong to no domain. The `language` vocabulary says so itself.
    3. **An individual package's vocabulary**: the terms and substitutions of one domain.
-   4. **The project's own vocabulary**, in `waytide/local/vocabulary.md`, which a project writes for itself.
+   4. **The project's own vocabulary**, in `slasher/local/vocabulary.md`, which a project writes for itself.
 3. When a word appears in two vocabularies, the more specific one decides.
 
 ## A project's own vocabulary binds
 
-1. `waytide/local/vocabulary.md` is read at session start, with `waytide/system/` and `waytide/local/rules/`. That read makes it binding.
+1. `slasher/local/vocabulary.md` is read at session start, with `slasher/system/` and `slasher/local/rules/`. That read makes it binding.
 2. `session-start.sh` names it in the read instruction. The `AGENTS.md` bootstrap names it too.
 3. It is optional, and its absence is not a defect.
 
@@ -79,11 +79,11 @@ Until Mon Oct 26 2026 the account of what every word in a vocabulary is stood in
 Related:
 
 - the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule — writing a vocabulary
-- the `language` package's `vocabulary.md` and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
+- the `language` package's `vocabulary.md` and its slasher-keeps-its-word-where-the-ste-word-means-something-else rule — the level above this one
 - its language-is-used-precisely-here-and-words-are-load-bearing rule — the premise every vocabulary follows from
 - the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule
 - the file-names rule — why the project's file takes no prefix
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the read instruction that names it
 
 ---
 
@@ -111,3 +111,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 7:09:15 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:06 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
