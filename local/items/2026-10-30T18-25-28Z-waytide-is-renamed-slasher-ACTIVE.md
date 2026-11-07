@@ -23,6 +23,10 @@
 - **2026-11-06** — Where a machine has `~/.config/waytide/` or `~/.local/share/waytide/` and not the `slasher` folder beside it, the installer moves it to the new name, as it moves a project's `waytide/`.
 - **2026-11-06** — Every script and rule that reads the machine folders honors `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, falling back to `~/.config` and `~/.local/share` where they are not set.
 - **2026-11-06** — The resolution above that the machine folders honor `XDG_CONFIG_HOME` and `XDG_DATA_HOME` is reversed. The installer and every reader use `~/.config` and `~/.local/share` only. The writer-name rule, which read `$XDG_CONFIG_HOME/waytide/user` before this feature, drops that clause in the prose increment.
+- **2026-11-06** — The five rules with Waytide in their names are renamed with slasher in its place, as in `the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice`.
+- **2026-11-06** — The settings `WAYTIDE_ORIGIN`, `WAYTIDE_QUIET`, and `WAYTIDE_REGISTRY` become `SLASHER_ORIGIN`, `SLASHER_QUIET`, and `SLASHER_REGISTRY`. A `WAYTIDE_` setting is no longer read.
+- **2026-11-06** — The plugin keeps the name slasher, which the product now shares.
+- **2026-11-06** — The drafts in `scratch/` say Slasher, like the rest of the live text.
 
 ## History
 
@@ -49,3 +53,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 5:32:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:12:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:19:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:40 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:45:01 PM PT

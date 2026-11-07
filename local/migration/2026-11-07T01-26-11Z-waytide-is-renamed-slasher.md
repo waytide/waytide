@@ -14,7 +14,7 @@
 1. **The project paths in the scripts.** Every script reads `slasher/` where it read `waytide/`. The tests change first, and the scripts follow.
 2. **The move of an old layout.** The installer and a refresh move a consuming project's `waytide/` to `slasher/` and regenerate its `AGENTS.md`. The tests change first.
 3. **The machine paths.** Every script reads `~/.config/slasher/` and `~/.local/share/slasher/`. The installer moves a machine's old folders to the new names, settled 2026-11-06. Every script and rule that reads them honors `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, falling back to `~/.config` and `~/.local/share`, settled 2026-11-06. Reversed 2026-11-06: the XDG settings are not honored, and the writer-name rule drops its XDG clause in the prose increment.
-4. **The prose.** The rules, the vocabularies, the help, the READMEs, `CONTRIBUTING.md`, `AGENTS.md`, and the scripts' messages say Slasher and name the new paths. Each changed rule is compiled.
+4. **The prose.** The rules, the vocabularies, the help, the READMEs, `CONTRIBUTING.md`, `AGENTS.md`, and the scripts' messages say Slasher and name the new paths. Each changed rule is compiled. Settled 2026-11-06: the five rules named with waytide are renamed, the `WAYTIDE_` settings become `SLASHER_` settings and the old names are no longer read, and the drafts in `scratch/` change too.
 5. **The repositories.** The engineer renames the GitHub organization and the two repositories. Then every URL in this repository names `github.com/slasher-bot/`, and this repository's `origin` remote follows.
 
 ## What is true in between
@@ -26,7 +26,7 @@
 ## Not yet settled
 
 - Whether the machine paths are moved where they exist under the old name, as the project layout is, or only read under the new name. Settled 2026-11-06: the installer moves them.
-- Whether the plugin, already named Slasher, keeps its name now that the product shares it.
+- Whether the plugin, already named Slasher, keeps its name now that the product shares it. Settled 2026-11-06: it keeps the name.
 
 ## What happened
 
@@ -51,3 +51,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:14:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:19:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:40 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:41:27 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:45:01 PM PT
