@@ -54,7 +54,33 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer kept it.
 - **Outcome:** `test/automated/install-layout-move-clash.sh` is in the suite. The automated tests pass. The test is unnamed until the feature's close.
 
+## Cycle 9 — Actuation, outcome 3: the old `AGENTS.md` section is replaced
+
+- **Hinge:** how the test actuates the installer. An old project's `AGENTS.md` carries a section naming `waytide/system/`, and the installer would otherwise ask to add a second section, since it finds no `slasher/system/` in the file.
+- **Options:** `sh "$installer" agents-md`, as in outcomes 1 and 2, and its negative.
+- **Decision / chat:** the engineer selected the same actuation.
+
+## Cycle 10 — Observation, outcome 3
+
+- **Hinge:** what the test reads in `AGENTS.md` after the installer runs.
+- **Options:** the exact file — the project's own line, then the new section as the installer prints it, recommended by the agent. Old gone, new present — the file no longer names `waytide/system/` and does name `slasher/system/`.
+- **Decision / chat:** the engineer selected old gone, new present.
+
+## Cycle 11 — Controls, outcome 3
+
+- **Hinge:** what the project holds before the installer runs.
+- **Options:** a `waytide/local/` folder and an `AGENTS.md` holding only a stand-in old section. The same, with a line of the project's own text above the section.
+- **Decision / chat:** the engineer selected the old section only.
+
+## Cycle 12 — Implementation, outcome 3
+
+- **Hinge:** how the old section comes to be replaced. The test failed against the installer as it stood.
+- **Options:** a direct implementation at the start of `place_agents_md`, replacing everything from the `## Waytide` heading to the end of the file where the file names `waytide/system/`. Red, green, refactor.
+- **Decision / chat:** the engineer selected the direct implementation.
+- **Outcome:** `place_agents_md` replaces the old section and keeps the text above its heading. The automated tests pass. The test is unnamed until the feature's close.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 7:56:58 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT

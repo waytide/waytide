@@ -92,6 +92,18 @@ EOF
 # absent; when one already exists, asks before appending (never silently); does
 # nothing when it's already there. Idempotent.
 place_agents_md() {
+  # An AGENTS.md written before Waytide was renamed Slasher carries a section naming
+  # waytide/system/. The section runs from its heading to the end of the file, the span
+  # refresh-packages.sh compares, so that span is replaced and the text above it is kept.
+  if [ -f AGENTS.md ] && grep -q 'waytide/system/' AGENTS.md &&
+     grep -q '^## Waytide$' AGENTS.md; then
+    replaced=$(mktemp)
+    sed '/^## Waytide$/,$d' AGENTS.md > "$replaced"
+    bootstrap >> "$replaced"
+    mv "$replaced" AGENTS.md
+    echo "Replaced AGENTS.md's Waytide section, which named waytide/system/."
+  fi
+
   if [ -f AGENTS.md ] && grep -q 'slasher/system/' AGENTS.md; then
     echo "AGENTS.md already points at slasher/system/ — left unchanged."
   elif [ ! -f AGENTS.md ]; then
