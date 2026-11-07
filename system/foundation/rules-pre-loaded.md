@@ -430,8 +430,8 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/item` | Items hold the project's thinking: ideas, plans, designs, observations, and work to be done, each with a state. |
 | `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
-| `/report` | This command lists the current items, then the current features and experiments. |
-| `/report brief` | This command says what was recently done, and what's next. |
+| `/items` | This command lists the current items, then the current features and experiments. |
+| `/brief` | This command says what was recently done, and what's next. |
 | `/process` | These commands move the work under way along: take its next step, or say what was done and what's next. |
 | `/log` | The log records what was decided and when, and a work session record tells the story of a stretch of work. |
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
@@ -444,15 +444,15 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 | `/command-table` | Print this table |
 
-**Each row is one command domain, except the `/slasher help`, `/report`, `/report brief`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/report` is a root command of the PROCESS domain, and `/report brief` is its subcommand. Each has a row of its own above the `/process` row, and its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
+**Each row is one command domain, except the `/slasher help`, `/items`, `/brief`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/items` and `/brief` are root commands of the PROCESS domain. Each has a row of its own above the `/process` row, and its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
 
-**After the table, run `/report 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/report` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/report 10`, for the same reason it prints no table.
+**After the table, run `/items 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/items` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/items 10`, for the same reason it prints no table.
 
 **The PHASE domain has no row.** `/slasher help` and `/phase help` still give its help.
 
 **The first row names `/slasher help`, which prints the help of every Slasher command.** It names no command domain.
 
-**`/command-table` prints the table too.** It prints the table word for word, and nothing else: no `/report 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
+**`/command-table` prints the table too.** It prints the table word for word, and nothing else: no `/items 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
@@ -460,7 +460,7 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 
 **Why:** the engineer sees what the commands are for at the moment they can start using them. The table gives one line for each domain but PHASE, so it shows the whole set at a glance, and `/slasher help` gives the detail. The current items and implementations show the engineer where the work stands before they make the first request.
 
-**How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/report 10` below it, and then turn to the engineer's request or wait for one.
+**How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/items 10` below it, and then turn to the engineer's request or wait for one.
 
 # The log holds one file per entry, with a one-line title
 
