@@ -40,24 +40,20 @@ An answer to the engineer is a **list**. Prose is not forbidden, and it is not t
 
 **This is why dependent reasoning is not an exception.** The problem was never prose against lists. It was one kind of list used where another was meant.
 
-## After a list answer, the engineer is offered an expansion
+## After a compressed answer, the engineer is offered an expansion
 
-**Where an expansion would add something, the answer ends with one line:**
+**Every answer the agent compressed ends with one line:**
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 - **It is a line, not a prompt.** A selection prompt where no decision is pending doubles the turns and becomes furniture — a thing always present is read once and never again.
-- **It appears only where there is something to expand**, meaning the agent compressed material out of the answer. On an answer that says all it has, the line is noise.
+- **It ends every answer the agent compressed, whether a list or prose.** An answer is compressed wherever the agent left out detail it holds. The a-response-is-clarified-twice-before-it-is-sent rule makes that the ordinary case, so most answers end with the line. A brief explanation, such as one a bare `/slasher` gives, always does.
+- **It is left off only an answer that says all the agent holds**, such as *Yes*, or a one-line fact.
+- **Whether to include it is not the agent's judgment.** The test is whether detail was left out, not whether the agent thinks an expansion would be useful.
 - **What it offers is depth on the answer given, not a next topic.** That distinction is the whole difference between this line and the trailing offer-of-more that is otherwise a defect: it points back at what was just said, not forward at what else might be done.
 - **It names the form being traded away**, not only the depth on offer. *More detail* alone leaves an engineer to guess what an expansion would look like. *more detail than bullet points* says the expansion is a different form of answer, which is what they would be asking for.
-
-**The known weakness, stated rather than discovered later.** The timing rests on the agent judging its own answer. An agent's judgment about its own output is exactly what makes this rule necessary. An agent that compresses badly will also decide badly whether it compressed.
-
-**It is left as a judgment on purpose, and experience decides whether it stays one.** The rule is not tightened before there is proof that it needs to be tightened. The cost of tightening is real. The alternatives replace the judgment with a mechanical condition. Each is more reliable, and each adds noise.
-
-**Appending the line to every list answer** cannot be got wrong. It puts the same sentence under every answer, which is how a line stops being read. **Appending it above a length threshold** removes the most pointless instances and still fires on answers that say all they have. Either is available if the judgment proves unreliable in use. Neither is worth paying for a weakness that has not yet cost anything.
 
 **Why:** an agent produces prose without choosing to, and prose is where padding, editorializing, and unattributed back-references hide. A list forces each claim onto its own line, where a claim with nothing in it is visible as a line with nothing in it. The engineer this was settled with had stated the preference three times in a week before it was written down. A preference restated is a rule that has not been written, because every restatement is evidence the agent does not hold it between sessions. Inverting the burden, rather than expressing a preference, is what makes the difference survive a session boundary.
 
@@ -65,7 +61,7 @@ For more detail than bullet points, ask for an expanded answer.
 
 Test each survivor by whether it could be false. Number the list where its list items depend on each other, or where the engineer may refer back to them, and leave it unordered otherwise.
 
-Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left something out, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line where the answer says all it has.
+Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left out detail the agent holds, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line only where the answer says all the agent holds.
 
 ## Expanding an answer
 
@@ -108,23 +104,20 @@ Write prose only where the answer is a sentence or two. Do not reach for it beca
 4. Those numbers are handles, such as *#2*. They imply no order.
 5. In all other cases, leave the list unordered.
 
-## After a list answer, the engineer is offered an expansion
+## After a compressed answer, the engineer is offered an expansion
 
-1. Where an expansion would add something, end the answer with this line:
+1. End every answer the agent compressed with this line, whether the answer is a list or prose:
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 2. Write it as a line on its own, not as a selection prompt.
-3. Include it only where the agent compressed material out of the answer.
-4. Leave it out of an answer that says all it has.
+3. An answer is compressed wherever the agent left out detail it holds. A brief explanation, such as one a bare `/slasher` gives, always ends with the line.
+4. Leave it off only an answer that says all the agent holds, such as *Yes*, or a one-line fact.
 5. It offers more depth on the answer given, not a next topic. Do not end any answer with an offer of a next topic, or of what else might be done.
 6. It names the form being given up, "more detail than bullet points". "More detail" alone does not do this.
-7. Whether to include the line is the agent's own judgment.
-8. Do not make the judgment stricter until there is proof that it needs to be.
-9. Two stricter forms are not adopted: appending the line to every list answer, or appending it above a length threshold.
-10. Either stricter form may be adopted if the judgment proves unreliable in use.
+7. Whether to include the line is not the agent's judgment. The test is whether detail was left out.
 
 ## Expanding an answer
 
@@ -137,8 +130,11 @@ For more detail than bullet points, ask for an expanded answer.
 - 2026-10-24, compressed: compression 0.49, change 0.71, solubility 25 → 53, clarity 0.41 → 0.78, 22 directives, 22 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.78 → 0.78; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-11-03, revised: /expand gives the previous answer at more length; checked: 29 directives, 28 kept, 1 less precise, 0 lost. Left less precise, from before this change: the detail behind a sentence or two taking no list
+- 2026-11-07, revised: the expansion line ends every answer the agent compressed, list or prose, and is no longer the agent's judgment; re-checked: 24 directives, 23 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the bans on a single bullet and on two bullets for a two-clause answer, which *Such an answer takes no list* carries
 
 ## History
+
+Until Sat Nov 7 2026 the expansion line ended a list answer only where the agent judged that an expansion would add something. The rule called that judgment its known weakness, and left two stricter forms unadopted: the line on every list answer, or above a length threshold. The engineer settled that the line ends every answer the agent compressed, list or prose, and that a brief explanation always ends with it.
 
 Until Mon Nov 2 2026 an answer offered an expansion, and no rule said what the expansion gave.
 
@@ -176,3 +172,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:32 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:22:04 AM PT

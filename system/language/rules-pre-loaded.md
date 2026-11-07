@@ -55,23 +55,20 @@ Source: system/language/source/an-answer-is-a-list-and-prose-must-justify-itself
 4. Those numbers are handles, such as *#2*. They imply no order.
 5. In all other cases, leave the list unordered.
 
-## After a list answer, the engineer is offered an expansion
+## After a compressed answer, the engineer is offered an expansion
 
-1. Where an expansion would add something, end the answer with this line:
+1. End every answer the agent compressed with this line, whether the answer is a list or prose:
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 2. Write it as a line on its own, not as a selection prompt.
-3. Include it only where the agent compressed material out of the answer.
-4. Leave it out of an answer that says all it has.
+3. An answer is compressed wherever the agent left out detail it holds. A brief explanation, such as one a bare `/slasher` gives, always ends with the line.
+4. Leave it off only an answer that says all the agent holds, such as *Yes*, or a one-line fact.
 5. It offers more depth on the answer given, not a next topic. Do not end any answer with an offer of a next topic, or of what else might be done.
 6. It names the form being given up, "more detail than bullet points". "More detail" alone does not do this.
-7. Whether to include the line is the agent's own judgment.
-8. Do not make the judgment stricter until there is proof that it needs to be.
-9. Two stricter forms are not adopted: appending the line to every list answer, or appending it above a length threshold.
-10. Either stricter form may be adopted if the judgment proves unreliable in use.
+7. Whether to include the line is not the agent's judgment. The test is whether detail was left out.
 
 ## Expanding an answer
 
