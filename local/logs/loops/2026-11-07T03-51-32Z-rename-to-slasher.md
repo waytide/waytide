@@ -29,6 +29,32 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer selected the direct implementation.
 - **Outcome:** `migrate_layout` in `install.sh` runs before the subtree step and before `AGENTS.md` is placed. It moves `waytide/` to `slasher/` only where `slasher/` is absent, and updates the directory the installer runs from, so `place_plugin` still finds `assemble-plugin.sh`. The automated tests pass. The test is unnamed until the feature's close.
 
+## Cycle 5 — Actuation, outcome 2: where both `waytide/` and `slasher/` exist, neither is touched
+
+- **Hinge:** how the test actuates the installer for the clash.
+- **Options:** `sh "$installer" agents-md`, as in outcome 1, and its negative.
+- **Decision / chat:** the engineer selected the same actuation.
+
+## Cycle 6 — Observation, outcome 2
+
+- **Hinge:** what the test reads after the installer runs.
+- **Options:** both untouched — the `waytide/` record is still there, the `slasher/` record is still there, and the `waytide/` record did not appear in `slasher/`. The old one kept.
+- **Decision / chat:** the engineer asked to clarify, then said they did not understand the question. The agent restated it in terms of the project the test sets up, with a recommendation of both untouched, since *neither is touched* covers both folders. The engineer selected both untouched.
+
+## Cycle 7 — Controls, outcome 2
+
+- **Hinge:** what the project holds before the installer runs.
+- **Options:** two records, one in each folder. The two records and the plugin directory in `waytide/system/foundation/`.
+- **Decision / chat:** the engineer selected two records.
+
+## Cycle 8 — Implementation, outcome 2
+
+- **Hinge:** none to write. The test passed against the installer as it stood, because `migrate_layout` already carried the clash branch. The test is coverage, not design.
+- **Options:** keep the test as coverage, or remove it.
+- **Decision / chat:** the engineer kept it.
+- **Outcome:** `test/automated/install-layout-move-clash.sh` is in the suite. The automated tests pass. The test is unnamed until the feature's close.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 7:56:58 PM PT
