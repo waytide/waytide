@@ -6,9 +6,9 @@ Trigger: When the engineer types a bare `/slasher`, with nothing after it
 
 1. A bare `/slasher` offers topics to learn about, through the selection interface: *Items*, *Features*, *Experiments*, and *Commands*. The free-text option takes any other topic.
 2. Explain a topic selected or typed briefly, as *Briefly explain <topic>* would. Lead with the point, and keep it short.
-3. For *Commands*, print the command domain table word for word, and nothing else before the topics are offered again.
+3. For *Commands*, print the command domain table word for word, and nothing else.
 4. Offer no other topics.
-5. After each explanation, and after the table, put the four topics again. Stop only when the engineer dismisses the selection.
+5. Offer the topics once. Do not offer them again after the explanation or the table.
 
 # A command takes its subcommand first, asks when it has none, and its domain takes help
 
