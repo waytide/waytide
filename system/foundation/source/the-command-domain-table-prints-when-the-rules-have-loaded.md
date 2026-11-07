@@ -23,6 +23,8 @@
 
 **After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
+**A bare `/slasher` prints the table too.** It prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session.
+
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
 **Keep the table in line with the help.** When a domain's heading, its help command, or its description changes in the help text, change this table in the same commit.
@@ -36,6 +38,8 @@
 Until Fri Nov 6 2026 the read ran `/current 5`, and printed the five most recently created current items.
 
 Until Fri Nov 6 2026 the items printed after the table took no heading of their own.
+
+Until Fri Nov 6 2026 a bare `/slasher` printed nothing, and the table printed only when the rules loaded.
 
 Related:
 
@@ -53,3 +57,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:32:53 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:36:16 PM PT
