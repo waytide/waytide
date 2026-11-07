@@ -21,6 +21,7 @@
 - **2026-11-06** — The GitHub organization `waytide` is renamed `slasher`, the composite repository `slasher/slasher`, and `waytide-ruby` `slasher-ruby`. The package repositories keep their names, as `slasher/foundation`.
 - **2026-11-06** — The GitHub name `slasher` is taken, so the organization is renamed `slasher-bot`, not `slasher`. The composite repository is `slasher-bot/slasher`, `waytide-ruby` becomes `slasher-bot/slasher-ruby`, and the package repositories read as `slasher-bot/foundation`.
 - **2026-11-06** — Where a machine has `~/.config/waytide/` or `~/.local/share/waytide/` and not the `slasher` folder beside it, the installer moves it to the new name, as it moves a project's `waytide/`.
+- **2026-11-06** — Every script and rule that reads the machine folders honors `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, falling back to `~/.config` and `~/.local/share` where they are not set.
 
 ## History
 
@@ -43,3 +44,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 2:14:35 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 5:25:36 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 5:32:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:12:58 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:19:54 PM PT
