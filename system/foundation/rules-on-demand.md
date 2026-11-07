@@ -876,7 +876,7 @@ Trigger: When the engineer types `/report brief` or its alias `/brief`, or asks 
 5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
 7. Head the part that gives the next step *What's next*, not *What is next*.
-8. Number each part's list from 1, not with bullets.
+8. Number the items in one sequence, not with bullets: from 1 in the first part, continuing through the second.
 
 # The harness announces Slasher's installation, and the agent never prints the notice
 

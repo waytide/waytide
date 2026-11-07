@@ -10,7 +10,7 @@
 
 **What is next is the next step of the work under way**, as the next-takes-the-next-step-of-the-work-under-way rule finds it for `/next?`. Where more than one piece of work is under way, the answer names the next step of each, the one the conversation is on first.
 
-**Each part's list is numbered.** Its items carry sequence numbers, from 1 in each part, not bullets, so the engineer can refer to an item by its number.
+**The lists are numbered in one sequence.** The items carry sequence numbers, not bullets. The numbers start at 1 in the part that says what was recently done, and continue through the part that gives the next step, so no two items share a number and the engineer can refer to any item by its number.
 
 **The part that gives the next step is headed *What's next*, not *What is next*.** The engineer asks the question in those words, and the answer is headed as it was asked.
 
@@ -31,7 +31,7 @@
 5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
 7. Head the part that gives the next step *What's next*, not *What is next*.
-8. Number each part's list from 1, not with bullets.
+8. Number the items in one sequence, not with bullets: from 1 in the first part, continuing through the second.
 
 ## Compression
 
@@ -43,10 +43,11 @@
 - 2026-11-06, revised: the part that gives the next step is headed *What's next*, as point 7; re-checked: 13 directives, 12 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the direction to `/status-report` for the whole project, which "Those belong to `/status-report`" carries without naming the redirect
 - 2026-11-06, revised: the command is `/report brief`, with the alias `/brief`, a term swap the engineer settled; not re-checked
 - 2026-11-06, revised: each part's list is numbered from 1, as point 8; re-checked: 13 directives, 11 kept, 2 less precise, 0 lost, 0 repairs. Left less precise: the direction to `/status-report` for the whole project, which point 5 carries without naming the redirect, as before
+- 2026-11-06, revised: point 8 numbers the items in one sequence through both parts; re-checked: 18 directives, 14 kept, 4 less precise, 0 lost, 0 repairs. Left less precise: the trigger's asking form, which the trigger line carries; the examples of a fact about the work; the direction to `/status-report`; and *a few lines*, which point 1 carries
 
 ## History
 
-Until Fri Nov 6 2026 the rule did not say how each part's list is marked, and the lists were bulleted.
+Until Fri Nov 6 2026 the rule did not say how each part's list is marked, and the lists were bulleted. For a time on that day each part's list was numbered from 1, before the numbers ran in one sequence through both parts.
 
 Until Fri Nov 6 2026 the command was `/work-status`, with the alias `/sup?`, and this rule was named work-status-says-what-was-recently-done-and-what-is-next. The engineer renamed the command `/report brief`, with the alias `/brief`, and dropped both earlier names.
 
@@ -76,3 +77,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:36:40 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:08:55 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:45:14 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:52:45 PM PT
