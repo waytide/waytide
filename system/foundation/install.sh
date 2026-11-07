@@ -34,6 +34,9 @@ origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
 prefix="slasher/system/foundation"
 repo="$origin/foundation.git"
 
+# The directory this script runs from. migrate_layout updates it when it moves the directory.
+here=$(dirname "$0")
+
 # The bootstrap section written into the project-root AGENTS.md.
 #
 # It does not name the planning directory, and that is deliberate. It named none while the
@@ -268,7 +271,39 @@ place_settings_json() {
 # Assemble the plugin, which carries the skills and the session-start hooks. The script beside
 # this one does it, so compile.sh can run the same assembly in the authoring source.
 place_plugin() {
-  sh "$(dirname "$0")/assemble-plugin.sh"
+  sh "$here/assemble-plugin.sh"
+}
+
+# Move a project's waytide/ to slasher/. The system was named Waytide until 2026-11-06, and the
+# directory was named for it. A rule change names the new directory but cannot move a project's
+# own files, so the installer does it.
+#
+# It runs before everything else the installer does: a full install would otherwise add a second
+# copy of every package under slasher/system/, and every other move below reads slasher/local/.
+#
+# The same narrow semantics as the moves below: it moves only when waytide/ is present and
+# slasher/ absent, and anything else is reported and left alone. Plain mv rather than git mv, for
+# records that were never committed.
+migrate_layout() {
+  [ -d waytide ] || return 0
+
+  if [ -e slasher ]; then
+    echo "Both waytide/ and slasher/ are present — neither is touched."
+    echo "waytide/ is the old name. Move its contents into slasher/ and remove it."
+    return 0
+  fi
+
+  mv waytide slasher
+
+  # The installer may have been run as waytide/system/foundation/install.sh, so the folder it
+  # runs from has just moved.
+  case "$here" in
+    waytide/*) here="slasher/${here#waytide/}" ;;
+    ./waytide/*) here="./slasher/${here#./waytide/}" ;;
+  esac
+
+  echo "Moved waytide/ to slasher/ — Waytide is renamed Slasher."
+  echo "Commit the move."
 }
 
 # Rename a project's slasher/local/sessions/ to slasher/local/work-sessions/. The
@@ -420,6 +455,9 @@ if [ "$1" = "bootstrap" ]; then
   bootstrap
   exit 0
 fi
+
+# Carry a project's waytide/ to slasher/ before anything reads or writes either.
+migrate_layout
 
 # 1. Install (or refresh) the foundation rules — skipped in agents-md-only mode.
 if [ "$1" != "agents-md" ]; then
