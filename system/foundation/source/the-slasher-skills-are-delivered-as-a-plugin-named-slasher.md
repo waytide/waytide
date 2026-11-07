@@ -4,7 +4,7 @@
 
 **The Slasher skills reach a project as one skills-directory plugin, called Slasher and named `slasher`.** It sits at `.claude/skills/slasher/` in the project, with a `.claude-plugin/plugin.json` whose `name` is `slasher` and whose `displayName` is `Slasher`. The `name` is the namespace every skill is typed under, and the `displayName` is what Claude Code shows in its place. A skill is typed `/slasher:<command>`, as in `/slasher:log`, and `/<command>` where no other command on the machine claims the name.
 
-**Each package carries its own skills**, under `skills/` in the package: `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rules it hands its act to.
+**Each package carries its own skills**, under `skills/` in the package: `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rules it hands its act to. A command whose name cannot be a directory's, as `/.`, takes a directory named for it in words, `dot`, and the skill's `name` field gives the command.
 
 **The plugin directory is assembled from foundation's `plugin/` directory and the active packages' skills.** `plugin/` holds the plugin's manifest and its hooks: the session-start hooks, which the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule governs, and the hook that reports a branch switch, which the `git` package's announce-a-branch-switch-in-a-bordered-block rule governs. `assemble-plugin.sh` copies it, then each active package's `skills/`, into `.claude/skills/slasher/`, and leaves out a deactivated package's. `install.sh` and `refresh-packages.sh` run it in a consuming project, and `compile.sh` runs it in the Slasher authoring source. A package activated or deactivated takes its skills with it at the next assembly.
 
@@ -21,7 +21,7 @@
 ## Compressed
 
 1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
-2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
+2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to. A command whose name cannot be a directory's, as `/.`, takes a directory named for it in words, `dot`, and gives the command in the skill's `name` field.
 3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Slasher authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`. `/?` alone carries its act in its body: it answers *What are we doing?* and loads no rule.
@@ -44,8 +44,11 @@
 - 2026-11-06, revised: the NEXT domain is named PROCESS, a term swap the engineer settled; not re-checked
 - 2026-11-07, revised: a bare `/slasher` offers topics to learn about, in place of doing nothing, as the engineer directed; not re-checked
 - 2026-11-07, revised: `/?` carries its act in its own body, the one skill that does, as the engineer directed; not re-checked
+- 2026-11-07, revised: a command whose name cannot be a directory's takes a directory named for it in words; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 every skill's directory was named for its command.
 
 Until Sat Nov 7 2026 every skill loaded the rule that governs its act, or ran a script that prints it. The engineer made `/?` carry its prompt in its own body.
 
@@ -87,3 +90,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 1:16:16 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:00:17 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 2:34:55 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:40:29 AM PT
