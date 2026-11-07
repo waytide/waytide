@@ -442,7 +442,7 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 | `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Slasher. |
 | `/language` | These commands work on language: reserving a word, ETE, Slasher's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
-| `/command-table` | This command prints this table. |
+| `/command-table` | Print this table |
 
 **Each row is one command domain, except the `/current`, `/work-status`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/current` and `/work-status` are root commands of the PROCESS domain, and each has a row of its own above the `/process` row. Its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
 
