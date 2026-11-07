@@ -27,8 +27,10 @@
 - **2026-11-06** — The working location is branch and worktree, selected by the engineer at the start.
 - **2026-11-06** — The feature concludes without an engineer's verdict, selected by the engineer at the start.
 - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 40%, risk of redo 60%, It'll work 70%, Your approval 45%. The warning was shown, and Attended was recommended.
+- **2026-11-06** — Branch deletion and worktree removal, selected by the engineer at the conclusion.
 
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 1:42:05 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:17:44 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:19:54 PM PT
