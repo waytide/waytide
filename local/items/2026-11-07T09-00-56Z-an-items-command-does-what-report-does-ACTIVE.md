@@ -1,6 +1,6 @@
 # An /items command does what /report does
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **A command, `/items`, would do what `/report` does: list the current items, then the current features and experiments.** It would take the same optional number, as `/items 10`.
@@ -14,3 +14,4 @@ As the engineer first stated it: "A \"/items\" command that does what \"/report\
 ---
 
 Authored by Scott Bellware on Sat Nov 7 2026 at 1:00:56 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:02:55 AM PT
