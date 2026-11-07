@@ -1,6 +1,6 @@
 # The participation question offers Unattended first
 
-- **State:** Active
+- **State:** Realized
 - **Tags:** [idea]
 
 **The question asked when a feature or an experiment starts, *Human in the loop*, would offer Unattended as its first option and Attended as its second.** Today Attended is first and Unattended second, as the attended-or-unattended-is-chosen-when-the-work-is-started rule fixes them.
@@ -19,3 +19,4 @@ As the engineer first stated it: "Swap Attended and Unattended options"
 
 Authored by Scott Bellware on Sat Nov 7 2026 at 12:03:39 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 1:46:08 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:31:15 AM PT
