@@ -1,8 +1,8 @@
 ![Slasher](material/slasher-logo-wide.png)
 
-# Slasher: Human-in-the-Loop Harness
+# Slasher: Human in the Loop AI
 
-The engineer decides. The agent generates.
+The engineer decides. The agent generates. Humanity rules.
 
 Where there is ambiguity, the agent gives the engineer options, including the option to take control.
 
