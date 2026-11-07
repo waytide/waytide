@@ -10,7 +10,7 @@
 
 ## State
 
-- **State:** Active
+- **State:** Completed
 
 ## Setup
 
@@ -27,7 +27,9 @@
 - **2026-11-07** — The working location is branch only, selected by the engineer at the start.
 - **2026-11-07** — The feature concludes without an engineer's verdict, selected by the engineer at the start.
 - **2026-11-07** — Participation: Attended, selected by the engineer. Agent's confidence 65%, risk of redo 35%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+- **2026-11-07** — Commit, merge, and completion, with branch deletion, selected by the engineer at the conclusion.
 
 ---
 
 Authored by Scott Bellware on Sat Nov 7 2026 at 1:02:55 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:05:12 AM PT
