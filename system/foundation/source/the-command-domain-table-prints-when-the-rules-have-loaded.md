@@ -20,12 +20,13 @@
 | `/package` | These commands manage the installed packages: which are active, refreshing them, and installing Slasher. |
 | `/language` | These commands work on language: reserving a word, ETE, Slasher's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
+| `/command-table` | This command prints this table. |
 
-**Each row is one command domain, except the `/current` and `/work-status` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/current` and `/work-status` are root commands of the PROCESS domain, and each has a row of its own above the `/process` row. Its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
+**Each row is one command domain, except the `/current`, `/work-status`, and `/command-table` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/current` and `/work-status` are root commands of the PROCESS domain, and each has a row of its own above the `/process` row. Its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
 
 **After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
-**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain, so it has no row in the table. The help header names it, beside the bare `/slasher`.
+**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
@@ -45,7 +46,7 @@ Until Fri Nov 6 2026 a bare `/slasher` printed nothing, and the table printed on
 
 Until Fri Nov 6 2026 the `/process` row named only `/process`. For a time on that day it also named `/current` and `/work-status`, before each took a row of its own. Those rows stood below the `/process` row before they moved above it.
 
-Until Fri Nov 6 2026 only a bare `/slasher` printed the table during a session. `/command-table` did not exist.
+Until Fri Nov 6 2026 only a bare `/slasher` printed the table during a session. `/command-table` did not exist. When it was first added, it had no row in the table.
 
 Related:
 
@@ -68,3 +69,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 9:52:38 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:55:31 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:56:59 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:58:45 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 10:02:30 PM PT
