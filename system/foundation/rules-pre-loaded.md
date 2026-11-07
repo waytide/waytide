@@ -448,7 +448,7 @@ Source: system/foundation/source/the-command-domain-table-prints-when-the-rules-
 
 **After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
-**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`.
+**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 

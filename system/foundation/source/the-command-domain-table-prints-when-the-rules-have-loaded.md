@@ -26,7 +26,7 @@
 
 **After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
-**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`.
+**A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/current 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
 
 **The agent prints the table, not the harness.** The harness renders its display as plain text, and the table needs markdown. That is the reason the package set stanza is the agent's too.
 
@@ -47,6 +47,8 @@ Until Fri Nov 6 2026 a bare `/slasher` printed nothing, and the table printed on
 Until Fri Nov 6 2026 the `/process` row named only `/process`. For a time on that day it also named `/current` and `/work-status`, before each took a row of its own. Those rows stood below the `/process` row before they moved above it.
 
 Until Fri Nov 6 2026 only a bare `/slasher` printed the table during a session. `/command-table` did not exist. When it was first added, it had no row in the table.
+
+Until Fri Nov 6 2026 `/command-table` had no alias. The engineer then made `/commands` its alias.
 
 Related:
 
@@ -71,3 +73,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 9:56:59 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:58:45 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:02:30 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:03:18 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:00:59 PM PT
