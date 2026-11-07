@@ -1,0 +1,3 @@
+# The confidence of attended work can be estimated, not calculated, as about the It'll work figure
+
+Attended work removes most of the risk behind *Your approval*, since the engineer decides each point where the design could go more than one way. That leaves *It'll work* as the main limit, so attended confidence is about that figure: in the example, 60% unattended against about 90% attended. Catching a wrong turn when it happens can raise *It'll work* a little. The figure is an estimate, like the others. The project has no record of how attended and unattended work turned out, so nothing checks it, and the 70% threshold is unchecked too.
