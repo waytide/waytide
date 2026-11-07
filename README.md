@@ -1,10 +1,10 @@
 ![Slasher](material/slasher-logo-wide.png)
 
-# Slasher: Humanity in the Loop AI
+# Humanity in the Loop for Claude Code
 
 The engineer decides. The agent generates. Humanity rules.
 
-Where there is ambiguity, the agent gives the engineer options, including the option to rein it in.
+Where there is ambiguity, the agent gives the engineer options, including the option to take over.
 
 ## License
 
