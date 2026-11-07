@@ -36,6 +36,7 @@
 - **2026-11-06** — The second increment is done. The installer, in any mode but `bootstrap`, moves a project's `waytide/` to `slasher/` before it does anything else, and leaves both alone where both exist. It replaces an `AGENTS.md` section naming `waytide/system/` with the new one, keeping the text above it. The automated tests pass.
 - **2026-11-06** — The third increment's reading half is done. The one script that reads a machine path, `read-consuming-projects.sh`, reads `~/.config/slasher/`. The writer's name and the private journal are read by the agent following rules, so their paths change with the prose. The installer's move of the old machine folders is still to come. The automated tests pass.
 - **2026-11-06** — The installer moves a machine's `~/.config/waytide/` and `~/.local/share/waytide/` to the `slasher` names, and leaves both alone where both exist. It first honored the XDG settings, and the engineer then reversed that, so it reads `HOME` only. The XDG test was removed, and the fallback test took its name. The tests that run the installer use a temporary `HOME`. The automated tests pass.
+- **2026-11-06** — The third increment is done. A test covers a machine with both the old and the new folder, which the installer leaves alone.
 
 ---
 
@@ -49,3 +50,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:12:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:14:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:19:54 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:40 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:41:27 PM PT
