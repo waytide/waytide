@@ -318,17 +318,16 @@ migrate_layout() {
   echo "Commit the move."
 }
 
-# Move this machine's waytide folders to the slasher names: the configuration under
-# XDG_CONFIG_HOME, which holds the project registry and the writer's name, and the data under
-# XDG_DATA_HOME, which holds the private journals. Each setting falls back to its default under
-# HOME where it is not set. The folders were named for Waytide until 2026-11-06.
+# Move this machine's waytide folders to the slasher names: the configuration under ~/.config,
+# which holds the project registry and the writer's name, and the data under ~/.local/share,
+# which holds the private journals. The folders were named for Waytide until 2026-11-06.
 #
 # The same narrow semantics as the project's move: each folder moves only where the old one is
 # present and the new one absent, and anything else is reported and left alone. The folders are
 # outside the repository, so nothing is left to commit.
 migrate_machine() {
-  config_home=${XDG_CONFIG_HOME:-$HOME/.config}
-  data_home=${XDG_DATA_HOME:-$HOME/.local/share}
+  config_home=$HOME/.config
+  data_home=$HOME/.local/share
 
   for base in "$config_home" "$data_home"; do
     old_dir="$base/waytide"

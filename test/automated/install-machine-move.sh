@@ -30,9 +30,7 @@ echo some-data > "$home/.local/share/waytide/$control_data_name"
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" &&
-  XDG_CONFIG_HOME="$home/.config" XDG_DATA_HOME="$home/.local/share" \
-  sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
 # ----------------------------------------------------------------------------
 

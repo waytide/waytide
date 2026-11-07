@@ -133,7 +133,7 @@ DECLARATION
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" && HOME="$home" XDG_CONFIG_HOME= XDG_DATA_HOME= sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
 # Moves ideas to items ------------------------------------------------------
 

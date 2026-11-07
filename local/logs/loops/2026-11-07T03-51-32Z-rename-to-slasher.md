@@ -129,6 +129,13 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer kept it.
 - **Outcome:** `test/automated/install-machine-move-home.sh` is in the suite. The automated tests pass. The test is unnamed until the feature's close.
 
+## Cycle 21 — The XDG settings are not honored
+
+- **Hinge:** the engineer asked whether it was too late to change their mind about supporting the XDG variables, then decided against supporting them. This reverses the decision made in cycle 13, and the cradle of outcome 4 with it.
+- **Options:** none put as a gate for the reversal itself, which the engineer stated. The agent found that the writer-name rule already read `$XDG_CONFIG_HOME/waytide/user` before this feature, contrary to its earlier answer that nothing read the settings, and put the conflict: drop the rule's XDG clause, or keep it.
+- **Decision / chat:** the engineer selected dropping the clause, in the prose increment.
+- **Outcome:** `migrate_machine` reads `HOME` only. Outcome 4's test, which actuated through the XDG settings, is removed, and outcome 5's test, which actuates through `HOME`, takes its name, `test/automated/install-machine-move.sh`. The other installer tests no longer empty the XDG settings. The automated tests pass.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
@@ -136,3 +143,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 7:56:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:24:15 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:29:31 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:50 PM PT
