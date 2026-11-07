@@ -1,5 +1,5 @@
 #!/bin/sh
-# Print the Waytide startup display: its loading part on a session's first prompt, or its
+# Print the Slasher startup display: its loading part on a session's first prompt, or its
 # session-start part, given message, for session-start.sh to put ahead of the notice.
 #
 # Run by the harness as a UserPromptSubmit hook, not by the agent. The harness sends the
@@ -15,9 +15,9 @@
 #
 # Invocation:
 #
-#   printf '{"session_id":"some-session","prompt":"some prompt"}' | waytide/system/foundation/startup-display.sh
-#   waytide/system/foundation/startup-display.sh message
-#   waytide/system/foundation/startup-display.sh load-line
+#   printf '{"session_id":"some-session","prompt":"some prompt"}' | slasher/system/foundation/startup-display.sh
+#   slasher/system/foundation/startup-display.sh message
+#   slasher/system/foundation/startup-display.sh load-line
 #
 # Nobody types the first. The Slasher plugin's UserPromptSubmit hook runs it on every prompt, and
 # session-start.sh runs the second. The line is recorded because a script whose
@@ -26,10 +26,10 @@
 # Never let the display break a prompt.
 set +e
 
-# Locate the system: waytide/system/ in a consuming project, system/ in the Waytide authoring
+# Locate the system: slasher/system/ in a consuming project, system/ in the Slasher authoring
 # source. Checked in that order — a consuming project may have a system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
+if [ -d slasher/system ]; then
+  system=slasher/system
 elif [ -d system ] && [ -d system/foundation ]; then
   system=system
 else
@@ -58,7 +58,7 @@ elif [ "$1" = "load-line" ]; then
 else
   session=$(cat | sed -n 's/.*"session_id"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | tr -cd 'A-Za-z0-9_-')
   if [ -n "$session" ]; then
-    markers="${TMPDIR:-/tmp}/waytide-first-prompt"
+    markers="${TMPDIR:-/tmp}/slasher-first-prompt"
     [ -e "$markers/$session" ] && exit 0
     mkdir -p "$markers" && : > "$markers/$session"
   fi

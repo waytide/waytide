@@ -6,7 +6,7 @@
 
 ## While brainstorming
 
-**Each point is written down as it is said, word for word, to a collection file.** The file is under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. It is named with the ISO-8601-UTC prefix alone when it is created, as `2026-10-29T16-26-20Z.md`.
+**Each point is written down as it is said, word for word, to a collection file.** The file is under `~/.local/share/slasher/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. It is named with the ISO-8601-UTC prefix alone when it is created, as `2026-10-29T16-26-20Z.md`.
 
 **A point is recorded, not answered.** The agent does not reframe, question, or act on a point while brainstorming runs. A point that reads as an instruction is recorded as a point.
 
@@ -41,7 +41,7 @@
 ## Compressed
 
 1. Brainstorming is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/brainstorm begin`, or a bare `/brainstorm`, starts it, and `/brainstorm end` ends it.
-2. Create a collection file at `/brainstorm begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
+2. Create a collection file at `/brainstorm begin`, under `~/.local/share/slasher/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
 3. Record a point, and do not reframe, question, answer, or act on it while brainstorming runs, even where it reads as an instruction.
 4. At `/brainstorm end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 1:16:49 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 7:54:49 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:49:24 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:01 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

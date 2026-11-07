@@ -5,19 +5,19 @@
 #
 # Usage:
 #
-#   waytide/system/testing/install-dependencies.sh
+#   slasher/system/testing/install-dependencies.sh
 #
 set -e
 
 # The origin the packages are fetched from. Override it to install over HTTPS where no
 # SSH key is registered:
 #
-#   WAYTIDE_ORIGIN=https://github.com/waytide <this script>
+#   SLASHER_ORIGIN=https://github.com/slasher-bot <this script>
 #
-origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 add() {
-  prefix="waytide/system/$1"
+  prefix="slasher/system/$1"
   repo="$origin/$1.git"
 
   if [ ! -d "$prefix" ]; then

@@ -1,8 +1,8 @@
 # A loop record holds the cycles through the loop, one file per feature
 
-**Trigger:** When writing a loop record for a feature under waytide/local/logs/loops/
+**Trigger:** When writing a loop record for a feature under slasher/local/logs/loops/
 
-`waytide/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one entry at a time. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
+`slasher/local/logs/loops/` holds **loop records** — one file per feature documenting the cycles through the **loop** (the distributed OODA cycle — see the DBE vocabulary). The log captures *what* was decided, one entry at a time. A loop record captures *how*. It is the deliberation history of a feature. That is the hinges the AI determined, and, in attended work, the options it put to the engineer. It is also the decisions the engineer made, or the chat that replaced them. In unattended work, it is the decisions the agent made, with its reasoning.
 
 **Purpose:** make the *how* of a feature's design recoverable — which hinges were found, what alternatives were weighed, and why the chosen path won. It is the narrative companion to the one-line log, which a loop record must not displace (the log stays one line per entry).
 
@@ -22,18 +22,18 @@
 
 **Why:** the deliberation is the conveyable substance of this method. That is the hinges and the reasoning over the options. It evaporates if only the final code and one-line decisions survive. A per-feature narrative of the loop's cycles keeps it, teaches the method by example, and exposes where gates were skipped.
 
-**How to apply:** when a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line log entries separate and intact.
+**How to apply:** when a feature's loop is worth preserving, add a file under `slasher/local/logs/loops/` in the format above. Record each cycle's hinge, options, and decision or chat. Under unattended work, record its hinge and the decision with its reasoning. Mark retroactive reconstructions as backfills. Keep the one-line log entries separate and intact.
 
 ## Compressed
 
-1. `waytide/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
+1. `slasher/local/logs/loops/` holds loop records: one file per feature, recording its cycles through the loop.
 2. The loop is the distributed OODA cycle, as defined in the DBE vocabulary.
 3. A loop record captures how a feature was decided. The log captures what was decided.
 4. A loop record holds the hinges the AI determined and, in attended work, the options it put to the engineer.
 5. It also holds the engineer's decisions, or the chat that replaced them. In unattended work, it holds the agent's decisions, with its reasoning.
 6. A loop record must not displace the log.
 7. The log stays one line per entry. Keep its entries separate and intact.
-8. When a feature's loop is worth preserving, add a file under `waytide/local/logs/loops/` in the format below.
+8. When a feature's loop is worth preserving, add a file under `slasher/local/logs/loops/` in the format below.
 
 ## Format
 
@@ -116,3 +116,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:13:10 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:45:31 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

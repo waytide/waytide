@@ -4,7 +4,7 @@
 - **Original rank:** 5 of 106
 - **Unclarity:** 0.76
 
-**A project may declare a package set, and the packages outside it are deactivated.** The declaration is a record at `waytide/local/`, named for the moment it was made and for what it names: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`. Where more than one name is declared, the file name hyphen-joins them.
+**A project may declare a package set, and the packages outside it are deactivated.** The declaration is a record at `slasher/local/`, named for the moment it was made and for what it names: `slasher/local/2026-08-23T09-30-00Z-content-package-set.md`. Where more than one name is declared, the file name hyphen-joins them.
 
 **Where no declaration exists, every installed package is active.** That is the ordinary state and it is not reported as one.
 
@@ -32,7 +32,7 @@
 
 ## A deactivated package is listed, not read
 
-**A deactivated package's rules are not printed at session start.** The loader prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`. The read is still unconditional, and the declaration decides what it holds.
+**A deactivated package's rules are not printed at session start.** The loader prints the package's name in a `DEACTIVATED` section, with the command that loads it: `slasher/system/foundation/load-rules.sh --package <name>`. The read is still unconditional, and the declaration decides what it holds.
 
 **So the read costs less by the deactivated packages' share.** A rule never read cannot be cited or weighed, so the listing keeps each deactivated package one command away. Where the engineer reactivates one during the session, run its command and follow its rules from then on.
 
@@ -58,7 +58,7 @@
 
 **Why:** a project does not need every convention the system carries. A content project has no use for a design method meant for a unit of code, and until this existed the only remedy was to not install the package or to write a local rule saying it does not apply. The first cannot be undone in a session and the second is a hand-built stand-in for a mechanism. A declaration is a recorded project decision — committed, dated, and reviewable — which is what distinguishes it from an agent's in-the-moment judgment about what to bother with.
 
-**How to apply:** at session start, read the most recent `*-package-set.md` under `waytide/local/`. Run the loader as always: it prints the active packages' rules and lists each deactivated one with the command that loads it. Follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying. Where the engineer reactivates a package during a session, load it with its listed command and follow its rules from then on.
+**How to apply:** at session start, read the most recent `*-package-set.md` under `slasher/local/`. Run the loader as always: it prints the active packages' rules and lists each deactivated one with the command that loads it. Follow only the active ones. Print the packages at the head of the response that carries the read, active bold and deactivated italic, then the set's name, then the count line. Where the engineer declares a set during a session, write the record, then say that a restart is needed before the deactivated rules stop applying. Where the engineer reactivates a package during a session, load it with its listed command and follow its rules from then on.
 
 ## Activating or deactivating one package
 
@@ -74,8 +74,8 @@
 
 ## The record
 
-1. A declaration is a record under `waytide/local/`.
-2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `waytide/local/2026-08-23T09-30-00Z-content-package-set.md`.
+1. A declaration is a record under `slasher/local/`.
+2. Its name is the ISO-8601-UTC prefix and the declared names, hyphen-joined: `slasher/local/2026-08-23T09-30-00Z-content-package-set.md`.
 3. A new declaration writes a new record.
 4. A new declaration edits no existing record.
 5. At session start, read the record with the latest prefix. It holds, and the earlier ones are history.
@@ -106,7 +106,7 @@
 ## A deactivated package is listed, not read
 
 1. The loader does not print a deactivated package's rules at session start.
-2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `waytide/system/foundation/load-rules.sh --package <name>`.
+2. It prints the package's name in a `DEACTIVATED` section, with the command that loads it: `slasher/system/foundation/load-rules.sh --package <name>`.
 3. The read is still unconditional. The declaration decides what it holds.
    Follow only the active packages' rules.
 4. Where the engineer reactivates a package during the session, run its command and follow its rules from then on. No restart is needed.
@@ -161,7 +161,7 @@ Until Thu Oct 29 2026 a deactivated package's rules were read at session start a
 
 Related:
 
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the unconditional read, whose content the declaration decides
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the unconditional read, whose content the declaration decides
 - the the-startup-display-prints-as-the-session-starts rule — where the printed block is defined
 - the a-status-report-prints-a-fixed-whole-project-report rule — the hidden-record convention this deliberately does not use
 - the plain text data attribute line, as `**State:**` and `**Repository:**` already use it
@@ -190,3 +190,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:36:20 AM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 11:37:47 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

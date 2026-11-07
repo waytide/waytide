@@ -1,6 +1,6 @@
 # Work Session — The rules are read at a third of the cost (Oct 21–29, 2026)
 
-This work session began as a question: can Waytide's rules be made much cheaper to read at the start of a session, with sessions behaving the same? It became the rule-reduction experiment, run in fifteen phases. It ended with the experiment affirmed and merged into `master`, and the session-start read at about 170,000 characters, against about 547,000 when it began.
+This work session began as a question: can Slasher's rules be made much cheaper to read at the start of a session, with sessions behaving the same? It became the rule-reduction experiment, run in fifteen phases. It ended with the experiment affirmed and merged into `master`, and the session-start read at about 170,000 characters, against about 547,000 when it began.
 
 **This is the guided tour, not the record of truth.** The durable records it points to are authoritative: above all the experiment's record, `local/implementations/2026-10-22T04-51-25Z-rule-reduction`, which holds every finding, forecast, and figure, and the log, `local/logs/log/`, which holds an entry for each action below.
 

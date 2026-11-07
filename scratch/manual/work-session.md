@@ -1,7 +1,7 @@
 # Work-session — manual page
 
 ```
-WORK-SESSION(1)                Waytide Manual                WORK-SESSION(1)
+WORK-SESSION(1)                Slasher Manual                WORK-SESSION(1)
 
 NAME
      work-session - write the narrative of a stretch of work

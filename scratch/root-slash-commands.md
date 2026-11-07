@@ -1,4 +1,4 @@
-# Waytide skills — root commands
+# Slasher skills — root commands
 
 ```
 /item           Items: create, list, change state
@@ -8,7 +8,7 @@
 /log            Write a log entry, or summarize the log
 /freewrite      Begin, end, or resume freewriting
 /package        Activate, deactivate, refresh, install
-/projects       The machine's registry of Waytide projects
+/projects       The machine's registry of Slasher projects
 /status-report  The whole-project report
 /test           Run the suite, run an interactive test, report, tree
 /reserve        Reserve a word

@@ -24,7 +24,7 @@
 
 **A word is reserved one at a time.** The vocabulary entry names the category and states what the STE dictionary says about the word. A word with no entry is not reserved, and the category is not a standing permission.
 
-**Why:** STE was written for aerospace maintenance documentation, where the reader acts on a machine. Its categories follow from that subject and are complete for it. Waytide's subject is a design method and the decisions a person makes inside it.
+**Why:** STE was written for aerospace maintenance documentation, where the reader acts on a machine. Its categories follow from that subject and are complete for it. Slasher's subject is a design method and the decisions a person makes inside it.
 
 Two things fall outside every STE category. The method's own nouns, where category 7 sometimes reaches and sometimes does not. And every verb whose object is a judgment, which none of the four verb categories reaches.
 
@@ -96,7 +96,7 @@ Related:
 
 - the a-word-is-reserved-in-six-steps rule — where steps 4 and 5 of the sequence sit
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — the second departure, and the only other one
-- the waytide-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts decide in
+- the slasher-keeps-its-word-where-the-ste-word-means-something-else rule — the order the two parts decide in
 - the foundation a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved — which vocabulary a term is written in
 
 ---
@@ -116,3 +116,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:53 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:42:32 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:50 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

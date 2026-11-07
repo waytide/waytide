@@ -1,11 +1,11 @@
 #!/bin/sh
-# Install (or refresh) Waytide packages into a consuming project, then
+# Install (or refresh) Slasher packages into a consuming project, then
 # activate the system by placing the project-root AGENTS.md, a CLAUDE.md that
 # imports it (Claude Code reads CLAUDE.md, not AGENTS.md), and a .claude/settings.json
 # whose SessionStart hook and status line print the session-start notice.
 # Fetch it into the root of the consuming project and run it from there:
 #
-#   curl -O https://raw.githubusercontent.com/waytide/waytide/master/install
+#   curl -O https://raw.githubusercontent.com/slasher-bot/slasher/master/install
 #   sh install                          the default set
 #   sh install content                  a package set
 #   sh install foundation git           packages by name
@@ -24,11 +24,11 @@ set -e
 # The origin the packages are fetched from. Override it to work over HTTPS where no SSH
 # key is registered:
 #
-#   WAYTIDE_ORIGIN=https://github.com/waytide <this script>
+#   SLASHER_ORIGIN=https://github.com/slasher-bot <this script>
 #
-origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
-# Waytide is installed with `git subtree`, so there has to be a repository to install into.
+# Slasher is installed with `git subtree`, so there has to be a repository to install into.
 # Rather than refusing outright, offer to make one — a developer running this in a directory
 # they mean to be a project is one `git init` away from what the script needs, and that is a
 # likelier reading than their having run it somewhere by mistake.
@@ -37,7 +37,7 @@ origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
 # assume: the directory may be inside another project, or meant to stay untracked, and an
 # unasked-for `.git` is a thing a developer then has to notice and undo.
 if [ ! -d .git ] && ! git rev-parse --git-dir >/dev/null 2>&1; then
-  echo "This is not a git repository, and Waytide is installed with git subtree."
+  echo "This is not a git repository, and Slasher is installed with git subtree."
   echo
   echo "Directory: $(pwd)"
   echo
@@ -72,13 +72,13 @@ if [ ! -d .git ] && ! git rev-parse --git-dir >/dev/null 2>&1; then
   esac
 fi
 
-# The authoring source holds the packages at system/, with no waytide/ wrapper; a consuming
-# project holds them at waytide/system/. Installing here would add a second, installed copy of
+# The authoring source holds the packages at system/, with no slasher/ wrapper; a consuming
+# project holds them at slasher/system/. Installing here would add a second, installed copy of
 # every package beside the ones being written, and place a consuming project's bootstrap over
 # this repository's own. The same refusal is in refresh-packages.sh.
-if [ -d system/foundation ] && [ ! -d waytide/system ]; then
-  echo "This is the Waytide authoring source, where the packages are written rather than" >&2
-  echo "installed. Installing here would put a second copy of every package under waytide/," >&2
+if [ -d system/foundation ] && [ ! -d slasher/system ]; then
+  echo "This is the Slasher authoring source, where the packages are written rather than" >&2
+  echo "installed. Installing here would put a second copy of every package under slasher/," >&2
   echo "beside the ones at system/, and overwrite this repository's own bootstrap." >&2
   exit 1
 fi
@@ -88,7 +88,7 @@ fi
 # ambiguous argument, and git subtree reads that failure as a dirty tree and says so — which is
 # false and sends the developer looking for changes that are not there.
 #
-# A project created moments ago is the likeliest project to be installing Waytide into, so the
+# A project created moments ago is the likeliest project to be installing Slasher into, so the
 # commit is made here rather than demanded. It is empty, it is announced, and it is the history's
 # first commit — nothing of the developer's is swept into it, because there is nothing yet.
 if ! git rev-parse HEAD >/dev/null 2>&1; then
@@ -98,7 +98,7 @@ if ! git rev-parse HEAD >/dev/null 2>&1; then
 fi
 
 add() {
-  prefix="waytide/system/$1"
+  prefix="slasher/system/$1"
   repo="$origin/$2.git"
 
   if [ ! -d "$prefix" ]; then
@@ -135,7 +135,7 @@ set_packages() {
 package_repository() {
   case $1 in
     ext/ruby-lang)
-      printf '%s' "waytide-ruby"
+      printf '%s' "slasher-ruby"
       ;;
     *)
       printf '%s' "$1" | tr '/' '-'
@@ -164,5 +164,5 @@ done
 
 # Activate the system: place the project-root AGENTS.md. Foundation is
 # installed above, so run its AGENTS.md-only mode (it won't re-add itself).
-# The bootstrap logic lives only in waytide/system/foundation/install.sh — not duplicated here.
-waytide/system/foundation/install.sh agents-md
+# The bootstrap logic lives only in slasher/system/foundation/install.sh — not duplicated here.
+slasher/system/foundation/install.sh agents-md

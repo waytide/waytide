@@ -13,10 +13,10 @@ Trigger: When the engineer asks for an answer to be clarified, as with `/clarify
 
 Source: system/language/source/ete/a-word-is-reserved-in-six-steps.md
 
-Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `/reserve X`)
+Trigger: When asked to reserve a word (e.g. "Slasher reserves the word, X", or `/reserve X`)
 
 1. Reserve a word by following these six steps in order, every time a word is reserved.
-2. The instruction that starts the sequence is "Waytide reserves the word, X", or the command `/reserve X`. It names the word and asks for all six steps.
+2. The instruction that starts the sequence is "Slasher reserves the word, X", or the command `/reserve X`. It names the word and asks for all six steps.
 3. The sequence does not have to be spelled out each time a term is settled.
 4. Write the verb as `reserves`, and never `claims`.
 5. A reservation is made under STE Rules 1.5, 1.6, and 1.12, which let a project add its own technical nouns and verbs.
@@ -31,7 +31,7 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `
 14. A word used both ways takes a category for each. These are two decisions, not one.
 15. STE Rule 1.7 forbids a technical noun used as a verb. STE Rule 1.13 forbids a technical verb used as a noun.
 16. Step 4: try an STE category first. STE Rule 1.5 gives twenty-two noun categories, and STE Rule 1.12 gives four verb categories.
-17. Waytide's terms land in noun categories 7, 11, 15, and 19, and verb category 2.
+17. Slasher's terms land in noun categories 7, 11, 15, and 19, and verb category 2.
 18. Step 5: use an ETE category only where no STE category holds the word.
 19. Do not reach step 5 until an STE category has been tried and refused.
 20. The five ETE categories are declared in the ete-declares-its-own-categories rule.
@@ -42,7 +42,7 @@ Trigger: When asked to reserve a word (e.g. "Waytide reserves the word, X", or `
 25. Bring the step 1 lookup already done, and name the candidate categories.
 26. Steps 4 and 5 are judgment. Step 1 is not.
 27. The phrase reserves the word and does not order a sweep.
-28. A reservation settles what the word means in Waytide's prose from that point on.
+28. A reservation settles what the word means in Slasher's prose from that point on.
 29. Replacing another word with the reserved word where it already stands is a separate instruction, asked for separately.
 30. Do not conform existing prose until that separate instruction is given.
 
@@ -113,10 +113,10 @@ Trigger: When reserving a word as a technical noun or verb in a package's vocabu
 6. This holds whether the STE dictionary omits the word, refuses it, or approves it with a different meaning.
 7. This contradicts STE Rule 1.3.
 8. Mark each word reserved this way in its package's vocabulary.
-9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Waytide's loop is the DBE cycle.
+9. For example, `LOOP (n)` is approved as *a circular shape made in a flexible material*, and Slasher's loop is the DBE cycle.
 10. This is the most expensive reservation ETE makes, and the entry carries the cost.
 11. The entry quotes the approved meaning.
-12. The entry states why the approved meaning does not carry Waytide's.
+12. The entry states why the approved meaning does not carry Slasher's.
 13. Recast the sentence instead where a different word serves.
 14. STE Rule 9.1 covers the case where a word-for-word replacement will not do.
 15. This reservation is the last resort, not the first.

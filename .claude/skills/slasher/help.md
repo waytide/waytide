@@ -1,4 +1,4 @@
-WAYTIDE SKILLS
+SLASHER SKILLS
 
 Usage: /<command> [<subcommand>] [<arguments>]
        A command typed with no subcommand asks which one is meant,
@@ -171,10 +171,10 @@ TESTS
   /test help                       Print this command's help
 
 PROJECTS
-  This command lists the Waytide projects registered on this machine. The list
+  This command lists the Slasher projects registered on this machine. The list
   helps move ideas, new patterns, and corrections into other projects.
 
-  /projects                        The machine's registry of Waytide projects
+  /projects                        The machine's registry of Slasher projects
   /projects help                   Print this command's help
 
 RELEASE
@@ -186,12 +186,12 @@ RELEASE
 
 PACKAGES
   These commands manage the installed packages: which are active, refreshing
-  them, and installing Waytide.
+  them, and installing Slasher.
 
   /package activate <package>      Activate an installed package
   /package deactivate <package>    Deactivate an installed package
   /package refresh [<package>...]  Refresh installed packages
-  /package install                 Install Waytide
+  /package install                 Install Slasher
 
   /package-set                     Show the active package set
   /package-set <set or packages>   Declare the package set
@@ -199,7 +199,7 @@ PACKAGES
   /package help                    Print this command's help
 
 LANGUAGE
-  These commands work on language: reserving a word, ETE, Waytide's
+  These commands work on language: reserving a word, ETE, Slasher's
   implementation of STE and its extensions, and clarifying language, often the
   agent's.
 

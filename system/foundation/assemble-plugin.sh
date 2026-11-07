@@ -3,8 +3,8 @@
 #
 # Run from the project root:
 #
-#   waytide/system/foundation/assemble-plugin.sh     in a consuming project
-#   system/foundation/assemble-plugin.sh             in the Waytide authoring source
+#   slasher/system/foundation/assemble-plugin.sh     in a consuming project
+#   system/foundation/assemble-plugin.sh             in the Slasher authoring source
 #
 # install.sh runs it in a consuming project, and compile.sh runs it in the authoring source.
 #
@@ -14,12 +14,12 @@
 # rebuilt whole each time and nothing in it is kept.
 set -e
 
-# Locate the system and the project's own directory: waytide/ in a consuming project, the root
-# in the Waytide authoring source. Checked in that order — a consuming project may have a
+# Locate the system and the project's own directory: slasher/ in a consuming project, the root
+# in the Slasher authoring source. Checked in that order — a consuming project may have a
 # system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
-  local=waytide/local
+if [ -d slasher/system ]; then
+  system=slasher/system
+  local=slasher/local
 else
   system=system
   local=local

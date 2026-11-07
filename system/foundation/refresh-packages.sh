@@ -1,11 +1,11 @@
 #!/bin/sh
-# Refresh the installed Waytide packages from their component repositories.
+# Refresh the installed Slasher packages from their component repositories.
 #
 # Run from the root of the consuming project.
 #
 # Usage:
-#   waytide/system/foundation/refresh-packages.sh               refresh every installed package
-#   waytide/system/foundation/refresh-packages.sh testing git   refresh only those named
+#   slasher/system/foundation/refresh-packages.sh               refresh every installed package
+#   slasher/system/foundation/refresh-packages.sh testing git   refresh only those named
 #
 # What a refresh changes is binding rules — files read at the start of every session,
 # which govern how the agent works. So every package that moves is reported by name,
@@ -17,7 +17,7 @@ set -e
 # Where the component repositories live. Overridable so a fork or a mirror can be
 # refreshed from, and so this script can be exercised against a local repository
 # without reaching the network.
-origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
+origin=${SLASHER_ORIGIN:-git@github.com:slasher-bot}
 
 # --- Preconditions ---------------------------------------------------------
 
@@ -26,14 +26,14 @@ if [ ! -d .git ]; then
   exit 1
 fi
 
-if [ -d system/foundation ] && [ ! -d waytide/system ]; then
-  echo "This is the Waytide authoring source, where the packages are written rather" >&2
+if [ -d system/foundation ] && [ ! -d slasher/system ]; then
+  echo "This is the Slasher authoring source, where the packages are written rather" >&2
   echo "than installed. There is nothing upstream of it to refresh." >&2
   exit 1
 fi
 
-if [ ! -d waytide/system ]; then
-  echo "No packages installed — waytide/system/ is not present." >&2
+if [ ! -d slasher/system ]; then
+  echo "No packages installed — slasher/system/ is not present." >&2
   exit 1
 fi
 
@@ -51,14 +51,14 @@ fi
 # notice uses.
 # Depth 2 finds a top-level package, depth 3 a grouped one such as ext/ruby-lang.
 installed=$(
-  cd waytide/system &&
+  cd slasher/system &&
     find . -mindepth 2 -maxdepth 3 -name README.md |
       sed 's|^\./||; s|/README\.md$||' |
       sort
 )
 
 if [ -z "$installed" ]; then
-  echo "No packages found under waytide/system/." >&2
+  echo "No packages found under slasher/system/." >&2
   exit 1
 fi
 
@@ -102,7 +102,7 @@ for package in $packages; do
   # the ordinary case, the name is derived.
   repository=$(
     sed -n 's|^[[:space:]]*\*\*Repository:\*\*[[:space:]]*\([A-Za-z0-9._-]*\).*|\1|p' \
-      "waytide/system/$package/README.md" 2>/dev/null |
+      "slasher/system/$package/README.md" 2>/dev/null |
       head -1
   )
 
@@ -111,7 +111,7 @@ for package in $packages; do
   fi
 
   url="$origin/$repository.git"
-  prefix="waytide/system/$package"
+  prefix="slasher/system/$package"
 
   before=$(git rev-parse HEAD)
 
@@ -182,7 +182,7 @@ fi
 # So it is checked rather than mentioned: the refresh is the moment the drift is created,
 # and it is the moment nobody has to remember.
 bootstrap_state=unchecked
-installer="waytide/system/foundation/install.sh"
+installer="slasher/system/foundation/install.sh"
 
 # The installer is asked for the bootstrap text rather than parsed for it, but only when
 # it is known to answer. An installer predating the `bootstrap` subcommand treats the
@@ -196,7 +196,7 @@ if [ -f AGENTS.md ] && [ -f "$installer" ] && grep -q '"\$1" = "bootstrap"' "$in
 
   # AGENTS.md may hold the project's own content above the section, so only the section
   # is compared.
-  sed -n '/^## Waytide$/,$p' AGENTS.md > "$carried"
+  sed -n '/^## Slasher$/,$p' AGENTS.md > "$carried"
 
   # An empty result means the installer answered with nothing, which is not agreement.
   # Reporting a match on a comparison that did not happen is the one outcome worth
@@ -215,15 +215,15 @@ if [ "$bootstrap_state" = stale ]; then
 
 The root AGENTS.md does not match the bootstrap the installed foundation now generates.
 It is not a package, so no refresh reaches it, and it activates the system the packages
-above were just refreshed into. To regenerate it, delete AGENTS.md's Waytide section and
-run `waytide/system/foundation/install.sh agents-md`.
+above were just refreshed into. To regenerate it, delete AGENTS.md's Slasher section and
+run `slasher/system/foundation/install.sh agents-md`.
 BOOTSTRAP
 elif [ "$bootstrap_state" = current ]; then
   cat <<'BOOTSTRAP'
 
 The root AGENTS.md matches the installed foundation's bootstrap. .claude/settings.json is
 not a package either, and is checked only for the startup display hook; if the
-session-start hook or status line stops working, `waytide/system/foundation/install.sh
+session-start hook or status line stops working, `slasher/system/foundation/install.sh
 agents-md` places it again.
 BOOTSTRAP
 else
@@ -232,16 +232,16 @@ else
 The root AGENTS.md was NOT checked against the installed foundation's bootstrap — either
 there is no AGENTS.md, or the installed installer cannot print the bootstrap for
 comparison. It is not a package, so no refresh reaches it, and it may be behind the
-packages just refreshed. To regenerate it, delete AGENTS.md's Waytide section and run
-`waytide/system/foundation/install.sh agents-md`.
+packages just refreshed. To regenerate it, delete AGENTS.md's Slasher section and run
+`slasher/system/foundation/install.sh agents-md`.
 BOOTSTRAP
 fi
 
 # The Slasher plugin carries the skills and the session-start hooks, assembled from the packages,
 # so a refresh that moves a package reassembles it. The assembly is not a package, so no subtree
 # pull touches it, and it is left uncommitted for the engineer to commit with the refresh.
-if [ -f waytide/system/foundation/assemble-plugin.sh ]; then
-  sh waytide/system/foundation/assemble-plugin.sh
+if [ -f slasher/system/foundation/assemble-plugin.sh ]; then
+  sh slasher/system/foundation/assemble-plugin.sh
   if [ -n "$(git status --porcelain .claude/skills/slasher 2>/dev/null)" ]; then
     cat <<'PLUGIN'
 
@@ -260,7 +260,7 @@ if [ -f .claude/settings.json ] && [ -d .claude/skills/slasher/hooks ] &&
   cat <<'HOOKS'
 
 .claude/settings.json still runs the session-start scripts that the Slasher plugin now
-runs, so the notice prints twice. Run `waytide/system/foundation/install.sh agents-md`,
+runs, so the notice prints twice. Run `slasher/system/foundation/install.sh agents-md`,
 which names the entries to remove.
 HOOKS
 fi

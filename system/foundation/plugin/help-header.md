@@ -1,4 +1,4 @@
-WAYTIDE SKILLS
+SLASHER SKILLS
 
 Usage: /<command> [<subcommand>] [<arguments>]
        A command typed with no subcommand asks which one is meant,

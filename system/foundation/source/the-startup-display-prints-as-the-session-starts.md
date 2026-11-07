@@ -4,7 +4,7 @@
 
 The things below are printed verbatim, in two parts. **The session-start part** prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. **The loading part** prints on the session's first prompt, whatever the prompt is, since that is when the rules are read: the loading line, then the figure. Five things are always printed, in the order this file gives them. The package set is printed only where the project has declared one, and it prints after the loading part, whatever its place in this file.
 
-**The harness prints the five, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice, and the load line after it, in the one `systemMessage`. It takes the title and the license from `startup-display.sh message`, and the load line from `startup-display.sh load-line`, each of which prints its blocks alone. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt and nothing after. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
+**The harness prints the five, and the agent prints none of them.** As the session starts, the Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice, and the load line after it, in the one `systemMessage`. It takes the title and the license from `startup-display.sh message`, and the load line from `startup-display.sh load-line`, each of which prints its blocks alone. On every prompt, the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt and nothing after. An agent can skip a display it is told to print, or write it into its thinking, where it is not shown, and nothing reports either. A display the harness prints does not depend on the agent following an instruction.
 
 **The package set is the one part the agent still prints**, at the head of the response that carries the rule read, because it is the one part that needs markdown. See below.
 
@@ -59,7 +59,7 @@ Copyright © 2026 Scott Bellware
 The load line follows the session-start notice, after **one blank line**, and ends the session-start message:
 
 ```
-Waytide's rules will load on the first prompt, or enter: /load
+Slasher's rules will load on the first prompt, or enter: /load
 ```
 
 The loading part prints on the session's first prompt. First the loading line:
@@ -97,7 +97,7 @@ Then **one blank line**, then the block, which ends the loading part:
 
 **The load line says when the rules load, and how to load them now.** It ends the session-start message, after the notice, so it is what the engineer reads last before typing. It states the one fact the engineer needs before the first prompt: the rules load on that prompt, whatever it is, and `/load` loads them with no other request. The session-start notice has no close of its own, because this line says what a close said. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 
-**It says *Waytide's rules*.** It stands under a title, a copyright, and a license, none of which is a sentence, so it names its subject itself.
+**It says *Slasher's rules*.** It stands under a title, a copyright, and a license, none of which is a sentence, so it names its subject itself.
 
 **The loading line says what the wait is.** It prints on the first prompt, as the read starts, and the response that carries the read loads every installed package's rules. That is a wait an engineer sees. The line names it rather than leaving a pause unexplained, and the figure under it fills the wait.
 
@@ -107,7 +107,7 @@ Then **one blank line**, then the block, which ends the loading part:
 
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
-**No description of Waytide is printed here.** What Waytide is and what it does live in the `README.md`. This display carries a name, an ownership statement, when the rules load, and a wait — and nothing that argues for the system to a reader who is already using it.
+**No description of Slasher is printed here.** What Slasher is and what it does live in the `README.md`. This display carries a name, an ownership statement, when the rules load, and a wait — and nothing that argues for the system to a reader who is already using it.
 
 **The title names the work, so the copyright line does not.** The title stands above it and names the work outright, and the copyright line carries the owner and the year alone.
 
@@ -132,8 +132,8 @@ Then **one blank line**, then the block, which ends the loading part:
 1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
 2. The package set is printed only where the project has declared one, after the loading part.
 3. The harness prints both parts. The agent prints none of them.
-4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
-5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
+5. On every prompt, the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
 6. The agent prints the package set, at the head of the response that carries the rule read.
 7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the loading line and the figure.
@@ -151,7 +151,7 @@ Slasher: Human-in-the-Loop Harness
 15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
 16. The title stands alone. No subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
-18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
+18. No description of Slasher is printed. What Slasher is and does belongs to the `README.md`.
 19. The display carries nothing that argues for the system to a reader already using it.
 20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
 21. The stanza follows the display rather than sitting inside it.
@@ -200,10 +200,10 @@ Copyright © 2026 Scott Bellware
 50. The load line follows the session-start notice, after one blank line, and ends the session-start message:
 
 ```
-Waytide's rules will load on the first prompt, or enter: /load
+Slasher's rules will load on the first prompt, or enter: /load
 ```
 
-51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Waytide's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
+51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Slasher's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 52. The session-start notice has no close of its own. The load line says what a close said.
 53. The loading part opens with the loading line, which names the wait for the read:
 
@@ -243,7 +243,7 @@ Slasher is pre-loading its rules...
 - 2026-10-27, re-checked: 53 directives, 51 kept, 2 less precise, 0 lost, 2 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 53 → 52, clarity 0.90 → 0.90; checked: 46 directives, 46 kept, 0 less precise, 0 lost
 - 2026-10-29, revised: the compiled rules are one file per package and the read runs the loader, solubility 52 → 52, clarity 0.90 → 0.90; checked: 51 directives, 51 kept, 0 less precise, 0 lost
-- 2026-10-29, revised: point 12's title reads *Waytide: Human-in-the-Loop Harness*, as the body's does; not checked
+- 2026-10-29, revised: point 12's title reads *Slasher: Human-in-the-Loop Harness*, as the body's does; not checked
 - 2026-10-29, merge from master re-checked: 60 directives, 60 kept, 0 less precise, 0 lost, 0 repairs
 - 2026-10-29, revised: master's line break ahead of the title is carried into the compressed text; not checked
 - 2026-10-29, merge from master re-checked: 61 directives, 60 kept, 1 less precise, 0 lost, 1 repair
@@ -257,7 +257,7 @@ Slasher is pre-loading its rules...
 - 2026-11-04, revised: the loading line reads *Slasher is pre-loading its rules...*, wording the engineer gave; not re-checked
 - 2026-11-04, revised: the loading line prints ahead of the figure, the order the engineer set; not re-checked
 - 2026-11-04, revised: a blank line stands between the harness's label and the loading line, as the engineer directed; not re-checked
-- 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
+- 2026-11-04, revised: the typed command `load slasher` is `load rules`, a term swap the engineer settled; not re-checked
 - 2026-11-06, revised: the title reads *Slasher: Human-in-the-Loop Harness*, wording the engineer gave; not re-checked
 
 ## History
@@ -350,3 +350,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:11:43 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:14:38 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:26:59 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -13,15 +13,15 @@
 #
 # The script is the git package's, so this does nothing where that package is not installed or
 # is deactivated in the latest package set. The system is found from the project root: in
-# waytide/system/ in a consuming project, in system/ in the Waytide authoring source. The script
+# slasher/system/ in a consuming project, in system/ in the Slasher authoring source. The script
 # runs in the directory the command ran in, which the hook's input names, so it reads the branch
 # of the repository the command worked in.
 
 project=${CLAUDE_PROJECT_DIR:-.}
 
-if [ -d "$project/waytide/system" ]; then
-  system=$project/waytide/system
-  local=$project/waytide/local
+if [ -d "$project/slasher/system" ]; then
+  system=$project/slasher/system
+  local=$project/slasher/local
 else
   system=$project/system
   local=$project/local

@@ -1,7 +1,7 @@
 # Publish — manual page
 
 ```
-PUBLISH(1)                     Waytide Manual                     PUBLISH(1)
+PUBLISH(1)                     Slasher Manual                     PUBLISH(1)
 
 NAME
      publish - publish packages from this repository
@@ -13,7 +13,7 @@ SYNOPSIS
 DESCRIPTION
      Publishes packages from this repository to their own repositories,
      following CONTRIBUTING.md. It exists only in the repository where
-     Waytide's packages are written.
+     Slasher's packages are written.
 
      A publish happens only from master, and only after the work has
      concluded and merged there. It is never offered while a feature or

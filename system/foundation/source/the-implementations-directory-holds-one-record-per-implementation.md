@@ -2,7 +2,7 @@
 
 **Trigger:** When starting an experiment or feature, or writing or changing an implementation record
 
-`waytide/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
+`slasher/local/implementations/` holds **implementation records**: one file per implementation, carrying how it began, where it is being worked, and what became of it. An implementation is a bounded unit of work with a lifecycle, and the record is a persisted, dated artifact kept after it concludes.
 
 **Two kinds, and a tag says which.** An **experiment** is tagged `[experiment]` and a **feature** is tagged `[feature]`. The tags are the ordinary square-bracket tags (see the a-record-may-be-categorized-with-square-bracket-tags rule). **They name what the work is, and no rule reads them to decide how it runs.**
 
@@ -65,9 +65,9 @@ Open with the **Question** or the **Intent**, then the setup:
 
 ## It is the lifecycle record, not the design record
 
-**The same work's design belongs in a loop record** under `waytide/local/logs/loops/` — each cycle's hinge, the options put to the engineer, and the decision. The two divide by concern and each names the other.
+**The same work's design belongs in a loop record** under `slasher/local/logs/loops/` — each cycle's hinge, the options put to the engineer, and the decision. The two divide by concern and each names the other.
 
-**They are separate files because of the package graph, and that is a refused dependency.** `waytide/local/logs/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather than the reverse. A foundation rule requiring fields in that directory would invert the graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone. Naming the loop record in prose is a **citation** and costs nothing.
+**They are separate files because of the package graph, and that is a refused dependency.** `slasher/local/logs/loops/` is contributed by `design-by-efferent`, which includes `foundation` rather than the reverse. A foundation rule requiring fields in that directory would invert the graph, and would make the implementation lifecycle unavailable to a project that installs `foundation` alone. Naming the loop record in prose is a **citation** and costs nothing.
 
 ## Format
 
@@ -81,7 +81,7 @@ Write the state line as `Active` when the record is written, and update it as th
 
 ## Compressed
 
-1. `waytide/local/implementations/` holds implementation records, one file per implementation.
+1. `slasher/local/implementations/` holds implementation records, one file per implementation.
 2. A record carries how the implementation began, where it is being worked, and what became of it.
 3. An implementation is a bounded unit of work with a lifecycle.
 4. The record is a persisted, dated artifact, kept after the implementation concludes.
@@ -143,10 +143,10 @@ Write the state line as `Active` when the record is written, and update it as th
 
 ## It is the lifecycle record, not the design record
 
-1. The same work's design belongs in a loop record under `waytide/local/logs/loops/`.
+1. The same work's design belongs in a loop record under `slasher/local/logs/loops/`.
 2. A loop record holds each cycle's hinge, the options put to the engineer, and the decision.
 3. The implementation record and the loop record divide by concern. Each names the other.
-4. Keep them as separate files. `waytide/local/logs/loops/` belongs to `design-by-efferent`, which includes `foundation`, not the reverse.
+4. Keep them as separate files. `slasher/local/logs/loops/` belongs to `design-by-efferent`, which includes `foundation`, not the reverse.
 5. A foundation rule must not require fields in that directory. That dependency is refused.
 6. Naming the loop record in prose is a citation and is permitted. It is the only reference permitted.
 
@@ -192,7 +192,7 @@ Related:
 - the an-implementation-runs-on-a-branch-to-a-declared-end rule — the lifecycle this records
 - the a-record-may-be-categorized-with-square-bracket-tags rule — how a tag is written
 - the a-record-carrying-a-state-line-ends-its-filename-with-the-state-in-upper-case rule — the filename suffix the state line gives
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the notice that reports an open implementation
 - the design-by-efferent a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule — the design record for the same work, which names this one
 - the the-items-directory-holds-one-file-per-item rule — the other record that carries a state, and whose in-progress state is also Active
 
@@ -223,3 +223,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 3:18:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:38:42 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:29:16 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

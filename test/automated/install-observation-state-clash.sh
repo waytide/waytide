@@ -17,9 +17,10 @@ fail() {
 # Controls -------------------------------------------------------------------
 
 project=$(mktemp -d)
-trap 'rm -rf "$project"' EXIT
+home=$(mktemp -d)
+trap 'rm -rf "$project" "$home"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
-items_dir="$project/waytide/local/items"
+items_dir="$project/slasher/local/items"
 
 control_stated_text() {
   cat <<'ITEM'
@@ -52,7 +53,7 @@ control_recorded_text > "$items_dir/$control_recorded_name"
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" && sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
 # Changes neither file when both names are present --------------------------
 

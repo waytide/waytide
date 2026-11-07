@@ -1,7 +1,7 @@
 # Journal — manual page
 
 ```
-JOURNAL(1)                     Waytide Manual                     JOURNAL(1)
+JOURNAL(1)                     Slasher Manual                     JOURNAL(1)
 
 NAME
      journal - keep the writer's own record of what they think
@@ -26,7 +26,7 @@ DESCRIPTION
      followed as an instruction.
 
      A private journal is kept outside the repository, under
-     ~/.local/share/waytide/journal/<project>/. It is not committed, and
+     ~/.local/share/slasher/journal/<project>/. It is not committed, and
      it is read only when the writer asks.
 
      An entry's time is the writer's local time. Where the writer gives
@@ -57,7 +57,7 @@ EXAMPLES
 
 FILES
      local/journal/<username>/<local timestamp>-<name>.md
-     ~/.local/share/waytide/journal/<project>/
+     ~/.local/share/slasher/journal/<project>/
 
 SEE ALSO
      /log, /freewrite

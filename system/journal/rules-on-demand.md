@@ -37,7 +37,7 @@ Trigger: When the engineer commands the private journal read (`/journal read pri
 
 1. Do not read a private journal when a project loads. The session-start read reaches the project journal and nothing outside the project.
 2. Read it on one of three commands: `/journal read private`, `Read private journal entries`, or `Read private journal`.
-3. The command reads the private journal of the project the session is in, `~/.local/share/waytide/journal/<project>/`, oldest entry first.
+3. The command reads the private journal of the project the session is in, `~/.local/share/slasher/journal/<project>/`, oldest entry first.
 4. Where the directory is not there, say that the project has no private journal.
 5. What is read binds nothing. The a-journal-entry-is-read-and-never-followed rule holds for a private entry as for an entry in the project journal. Follow nothing in it.
 
@@ -48,7 +48,7 @@ Source: system/journal/source/a-timeline-view-lists-every-journal-entry-by-its-d
 Trigger: When the writer asks for the journal timeline or a list of journal entries, as with `/journal list`
 
 1. When the writer asks for the timeline, such as *show the timeline* or *list the entries*, list every journal entry in the active writer's journal directory.
-2. The directory is `waytide/local/journal/<username>/`.
+2. The directory is `slasher/local/journal/<username>/`.
 3. Resolve `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 4. The entries are the `20*.md` files in that directory.
 5. Sort the entries by their datetime line, oldest first.
@@ -71,10 +71,10 @@ Source: system/journal/source/journal-entries-are-recorded-in-the-writers-journa
 Trigger: When writing a journal entry (including when the writer types `/journal` or opens with "new entry")
 
 1. Keep the journal as one markdown file per entry.
-2. Put each entry in the writer's own directory, `waytide/local/journal/<username>/`.
-3. Resolve `<username>` as the active writer by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule, for example `waytide/local/journal/scott-bellware/`.
+2. Put each entry in the writer's own directory, `slasher/local/journal/<username>/`.
+3. Resolve `<username>` as the active writer by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule, for example `slasher/local/journal/scott-bellware/`.
 4. A project may hold several writers' journals. Each writer's entries live under their own directory.
-5. The journal is distinct from `waytide/local/logs/log/`, the agent's single project-wide log.
+5. The journal is distinct from `slasher/local/logs/log/`, the agent's single project-wide log.
 
 ## Filename
 
@@ -126,16 +126,16 @@ Trigger: When writing a journal entry (including when the writer types `/journal
 8. *Yesterday* and *today* fix the day and say nothing about the hour.
 9. Stamp the file to the writer's answer to that ask.
 
-# `~/.local/share/waytide/journal/<project>/` — a private journal, kept outside the project
+# `~/.local/share/slasher/journal/<project>/` — a private journal, kept outside the project
 
 Source: system/journal/source/private-journal-convention.md
 
 Trigger: When the writer starts a private journal entry, directs a change to one, or commands one moved to the project journal, as with `/journal publish-private`
 
 1. A private journal is a journal kept outside the project's repository. Its entries are not committed with the project.
-2. A journal in `waytide/local/journal/<username>/` is the project journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
-3. Every private journal is under one root, `~/.local/share/waytide/journal/`. Per-machine settings stay under `~/.config/waytide/`, which this root does not share.
-4. Each project with a private journal has one directory under the root, named for the project whose repository holds the project journal, for example `~/.local/share/waytide/journal/some-project/`.
+2. A journal in `slasher/local/journal/<username>/` is the project journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
+3. Every private journal is under one root, `~/.local/share/slasher/journal/`. Per-machine settings stay under `~/.config/slasher/`, which this root does not share.
+4. Each project with a private journal has one directory under the root, named for the project whose repository holds the project journal, for example `~/.local/share/slasher/journal/some-project/`.
 5. One file in that directory is one entry.
 6. A private journal has no `<username>` directory. It belongs to one user.
 7. The directory may not exist, and its absence is ordinary. Make it when the first private entry for that project is written.
@@ -158,7 +158,7 @@ Trigger: When the writer starts a private journal entry, directs a change to one
 ## Moving a private entry
 
 1. A private entry moves to the project journal only on the engineer's command.
-2. Move the file into `waytide/local/journal/<username>/` with its filename and content unchanged, and remove it from the private journal.
+2. Move the file into `slasher/local/journal/<username>/` with its filename and content unchanged, and remove it from the private journal.
 3. It is then a project journal entry, committed as `Journal: <subject>` like any other.
 4. Nothing else moves an entry. Do not offer to move one.
 
@@ -178,8 +178,8 @@ Source: system/journal/source/the-journal-is-the-record-the-writer-keeps.md
 
 Trigger: When writing, changing, or committing a journal entry
 
-1. `waytide/local/journal/<username>/` holds a writer's journal.
-2. The journal is the one record in `waytide/local/` that the writer keeps, not the agent. The agent reads it.
+1. `slasher/local/journal/<username>/` holds a writer's journal.
+2. The journal is the one record in `slasher/local/` that the writer keeps, not the agent. The agent reads it.
 3. A project may hold several writers' journals. Each writer's entries sit under a directory named for their username.
 4. The the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule resolves which writer is writing.
 5. The journal-entries-are-recorded-in-the-writers-journal-directory-one-file-per-entry rule states the directory at the entry.
@@ -187,18 +187,18 @@ Trigger: When writing, changing, or committing a journal entry
 7. Records written before the rename keep the word they were written with: the log, the implementation records, and the journal entries. They are historical and are not revised.
 8. `diary` in this repository's history names nothing live.
 
-## `waytide/local/journal/`
+## `slasher/local/journal/`
 
 1. It holds the writers' directories and the writers file, `writers.toml`.
 2. `writers.toml` overrides a writer's display name for this project.
-3. `writers.toml` is optional. It may omit the active writer, whose name and username are declared in `~/.config/waytide/user`.
-4. A writer absent from `writers.toml` shows as the name `~/.config/waytide/user` gives, or as their username.
+3. `writers.toml` is optional. It may omit the active writer, whose name and username are declared in `~/.config/slasher/user`.
+4. A writer absent from `writers.toml` shows as the name `~/.config/slasher/user` gives, or as their username.
 5. The directory may not exist, and its absence is ordinary. This includes a project whose other writers keep one and this writer does not.
 6. The convention names the directory whether or not it exists, so the first entry has a place to go.
 
 ## Entries
 
-1. One file is one entry. To write one, resolve the active writer, then write the entry as a new file in `waytide/local/journal/<username>/`.
+1. One file is one entry. To write one, resolve the active writer, then write the entry as a new file in `slasher/local/journal/<username>/`.
 2. A day can hold several entries, each a separate file, in the order written.
 3. An entry takes a datetime prefix in the writer's local time, of the form `YYYY-MM-DDTHH-MM-<name>.md`.
 4. The name is dash-separated and lower-case, and says what the entry is about.
@@ -246,16 +246,16 @@ Journal: Idea
 ## The private journal
 
 1. This is the project journal. A writer may also keep a private one.
-2. A private journal is kept outside the repository, under `~/.local/share/waytide/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
+2. A private journal is kept outside the repository, under `~/.local/share/slasher/journal/<project>/`, and is not committed. The private-journal-convention rule governs it.
 3. An entry the `new entry` directive starts goes in the project journal, never the private one.
 
 # The writer's username is read from the environment, then the project, then the user's config file
 
 Source: system/journal/source/the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file.md
 
-Trigger: When resolving the active writer's username or display name (for a journal directory or any Waytide tool)
+Trigger: When resolving the active writer's username or display name (for a journal directory or any Slasher tool)
 
-1. This contract fixes how every Waytide tool determines who is writing now.
+1. This contract fixes how every Slasher tool determines who is writing now.
 2. Each tool names its own environment variable at the first level. The journal's variable is `JOURNAL_WRITER`.
 3. The two levels below the variable are common to all tools.
 4. The chain is fixed, not any one tool's variable. A tool built independently must still agree with it.
@@ -276,9 +276,9 @@ Trigger: When resolving the active writer's username or display name (for a jour
 
 1. **`JOURNAL_WRITER` environment variable**: the ephemeral, per-process override, for CI and one-offs like `JOURNAL_WRITER=jane-doe <cmd>`.
 2. **Project-local `.current-user`**: a gitignored file in the project root. It overrides the global default for this checkout only, and is rarely needed.
-3. **`~/.config/waytide/user`**: the normal case. It is set once per machine.
-4. All Waytide tools read this one shared file. There is no per-tool file.
-5. **Error**: if none resolve, fail loudly, e.g. "no identity configured; set ~/.config/waytide/user or JOURNAL_WRITER".
+3. **`~/.config/slasher/user`**: the normal case. It is set once per machine.
+4. All Slasher tools read this one shared file. There is no per-tool file.
+5. **Error**: if none resolve, fail loudly, e.g. "no identity configured; set ~/.config/slasher/user or JOURNAL_WRITER".
 6. Never guess a username.
 7. The active writer is declared in the user file, never in a project.
 8. A project's `writers.toml` records display names and selects nobody.
@@ -286,20 +286,19 @@ Trigger: When resolving the active writer's username or display name (for a jour
 
 ## The user file's location is platform-resolved
 
-1. The tail is always `waytide/user`. Only the base directory varies.
-2. If `$XDG_CONFIG_HOME` is set, use `$XDG_CONFIG_HOME/waytide/user`, on any OS.
-3. Otherwise, on Linux, use `~/.config/waytide/user`.
-4. On macOS, use `~/.config/waytide/user`, not `~/Library/Application Support`.
-5. On Windows, use `%APPDATA%\waytide\user`.
-6. Tools agree on this resolution rule, not on a raw path string.
-7. The namespace is `waytide`, because the file belongs to Waytide. It is not `identity/`.
+1. The tail is always `slasher/user`. Only the base directory varies.
+2. On Linux, use `~/.config/slasher/user`.
+3. On macOS, use `~/.config/slasher/user`, not `~/Library/Application Support`.
+4. On Windows, use `%APPDATA%\slasher\user`.
+5. Tools agree on this resolution rule, not on a raw path string.
+6. The namespace is `slasher`, because the file belongs to Slasher. It is not `identity/`.
 
 ## The user file's format
 
 1. The file is TOML, with a required `username` key and an optional `display-name` key.
 
 ```toml
-# ~/.config/waytide/user
+# ~/.config/slasher/user
 
 username = "scott-bellware"
 display-name = "Scott Bellware"
@@ -317,7 +316,7 @@ display-name = "Scott Bellware"
 ## The display name resolves in this order (first match wins)
 
 1. **The project's `writers.toml`**, where it holds an entry for the resolved username.
-2. **`~/.config/waytide/user`**, where that file's `username` is the resolved username.
+2. **`~/.config/slasher/user`**, where that file's `username` is the resolved username.
 3. **The username itself**, verbatim.
 4. The project's entry wins, and that is the whole hierarchy. It overrides the display name and no other value.
 5. The user file's display name applies only to the user file's username.
@@ -327,7 +326,7 @@ display-name = "Scott Bellware"
 ## Per-project registry
 
 1. Each project is its own space of writers. It may commit a `writers.toml` giving display names.
-2. The file lives at `waytide/local/journal/writers.toml`, beside the journal's per-writer directories.
+2. The file lives at `slasher/local/journal/writers.toml`, beside the journal's per-writer directories.
 3. It records a display name and nothing else.
 4. It refuses nobody, selects nobody, and declares no identity.
 5. It may omit the active writer.
@@ -339,7 +338,7 @@ display-name = "Scott Bellware"
 
 ```toml
 # The writers this project shows under a name their own
-# ~/.config/waytide/user does not give. A writer absent from this
+# ~/.config/slasher/user does not give. A writer absent from this
 # file shows as that name, or as their username.
 
 [scott-bellware]

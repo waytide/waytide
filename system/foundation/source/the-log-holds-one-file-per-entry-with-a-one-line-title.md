@@ -1,6 +1,6 @@
 # The log holds one file per entry, with a one-line title
 
-Record the log's entries made during sessions as one file per entry in `waytide/local/logs/log/`.
+Record the log's entries made during sessions as one file per entry in `slasher/local/logs/log/`.
 
 - **Trigger:** detect — write an entry whenever a real decision is made (the user picks among alternatives, accepts or rejects an approach, or sets a rule that will guide future work). Don't wait to be asked. When in doubt, log it. Over-logging is cheaper than under-logging here.
 - **Filename:** the ISO-8601-UTC prefix convention (see the file-names rule), computed with `date -u +%Y-%m-%dT%H-%M-%SZ`. Contributors are globally distributed, so UTC is mandatory — never local time.
@@ -10,7 +10,7 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 
 **Why:** the reasoning and decisions of a project are easy to lose and expensive to reconstruct. A log of short entries, one file each, committed alongside the code, keeps a skimmable, durable record without the overhead of a template. Detecting and logging without being asked keeps the record complete rather than sampled.
 
-**How to apply:** when a decision is made, write a titled entry under `waytide/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
+**How to apply:** when a decision is made, write a titled entry under `slasher/local/logs/log/`, with a UTC filename. It is one line in the ordinary case, and takes a body where its reasoning will not fit the title. Commit it with the change, or with a `Log:` prefix.
 
 ## Log this
 
@@ -18,7 +18,7 @@ Record the log's entries made during sessions as one file per entry in `waytide/
 
 ## Compressed
 
-1. Record the log's entries made during sessions in `waytide/local/logs/log/`.
+1. Record the log's entries made during sessions in `slasher/local/logs/log/`.
 2. Write one file per entry.
 3. Give each entry a one-line title.
 
@@ -145,3 +145,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:47 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:00:23 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

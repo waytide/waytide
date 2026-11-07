@@ -1,7 +1,7 @@
 # Experiment — manual page
 
 ```
-EXPERIMENT(1)                  Waytide Manual                  EXPERIMENT(1)
+EXPERIMENT(1)                  Slasher Manual                  EXPERIMENT(1)
 
 NAME
      experiment - try something on a branch, apart from master, to a

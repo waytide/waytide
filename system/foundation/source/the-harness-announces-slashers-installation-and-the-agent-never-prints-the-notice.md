@@ -1,4 +1,4 @@
-# The harness announces Waytide's installation, and the agent never prints the notice
+# The harness announces Slasher's installation, and the agent never prints the notice
 
 **Trigger:** When changing the session-start notice, the startup display, the status line, or their hooks or scripts
 
@@ -6,18 +6,18 @@
 - **Original rank:** 10 of 106
 - **Unclarity:** 0.52
 
-A project running Waytide announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
+A project running Slasher announces the system's presence through **three surfaces the harness renders**, not through anything the agent says:
 
-- **A session-start notice.** The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`. That script reads the package directories actually present and emits a notice. The notice says what is installed:
+- **A session-start notice.** The Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`. That script reads the package directories actually present and emits a notice. The notice says what is installed:
 
 ```
-Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Slasher installed at slasher/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 ```
 
   Below the install line, after a blank line, the notice reports **experiments and features that have not concluded**. They take one further line together, when there are any:
 
 ```
-Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Slasher installed at slasher/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
@@ -28,26 +28,26 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 
   **The move took a hazard with it.** The mark's backslashes had to be doubled here. The notice is interpolated into a JSON string by `printf` with no escaping, and a lone backslash begins a JSON escape sequence. `\_` is not a valid one, the harness fails to parse the output, and **the notice disappears with no error at all**. That constraint is now off the art entirely. It still governs everything else this hook emits, and the load line's no-quotation-marks rule below is the same hazard arriving through a different character.
 
-  Each record under `waytide/local/implementations/` is read for its canonical `**State:**` line (see the the-implementations-directory-holds-one-record-per-implementation rule). An implementation whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Completed**, **Abandoned**, or **Superseded** has concluded, whatever its kind. Those are not reported. **Active**, **Suspended**, and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
+  Each record under `slasher/local/implementations/` is read for its canonical `**State:**` line (see the the-implementations-directory-holds-one-record-per-implementation rule). An implementation whose state is **Affirmed**, **Refuted**, **Inconclusive**, **Completed**, **Abandoned**, or **Superseded** has concluded, whatever its kind. Those are not reported. **Active**, **Suspended**, and a record carrying no state line are. When every implementation has concluded that line is absent entirely, so the notice grows only when there is something open.
 
-  **Why the notice carries it.** The lifecycle requires that an implementation never be left silently open, but nothing was enforcing that in every session. The working directories under `waytide/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
+  **Why the notice carries it.** The lifecycle requires that an implementation never be left silently open, but nothing was enforcing that in every session. The working directories under `slasher/` are not read at session start, so an open experiment goes unnoticed unless something names it. An experiment worked in a **worktree** leaves no trace at all in the main working tree, which stays on the upstream branch. So not even the branch name gives it away. The configuration that best isolates an experiment is the one that most easily loses track of it.
 
-- **A status line.** `waytide/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch. The fact then stays available instead of scrolling away:
+- **A status line.** `slasher/system/foundation/statusline.sh` keeps the system's presence on screen for the whole session, alongside the working directory and git branch. The fact then stays available instead of scrolling away:
 
 ```
-waytide · master :: Waytide
-waytide · master · uncommitted changes :: Waytide
-waytide · master · untracked files :: Waytide
-waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+slasher · master :: Slasher
+slasher · master · uncommitted changes :: Slasher
+slasher · master · untracked files :: Slasher
+slasher · master · uncommitted changes · untracked files · unpushed commits :: Slasher
 ```
 
   **The repository's name leads the line, in bold.** It is the first orientation the line gives — which repository this is. Every segment after it annotates that: the branch, the uncommitted and unpushed work, and the system in force. Bold separates the subject from its annotations, so the line is read at a glance rather than parsed left to right. It is a terminal escape sequence, which the harness passes through. Only the repository name takes one, since a line where several segments are emphasized emphasizes nothing.
 
-  **The Waytide segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
+  **The Slasher segment is one word and carries no package count.** The count told an engineer nothing they act on. It changed only when a package was installed or removed, and it competed for width with the segments that do change. What the line is for here is the standing fact that the system is in force.
 
   Presence is still read from disk: at least one directory carrying a `README.md`, the same test for a package the notice uses. So only the display drops the number. The on-demand detail is the status report's job (see the a-status-report-prints-a-fixed-whole-project-report rule).
 
-  **The Waytide segment trails after a double colon.** A hyphen would also join words. So it would read as punctuation inside the sentence of segments, not as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
+  **The Slasher segment trails after a double colon.** A hyphen would also join words. So it would read as punctuation inside the sentence of segments, not as the break between the engineer's own state and the system standing behind it. The double colon separates and does nothing else, which is the whole of what is wanted there.
 
   The middle dot between the engineer's own segments is unaffected. The two marks now differ from each other. That is what makes the trailing segment read as an annotation on the line rather than another segment in it.
 
@@ -63,7 +63,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 
 **A branch with no upstream reports nothing.** "Unpushed" is a claim relative to somewhere, and with no upstream configured there is nowhere for it to be relative to. A branch that was never going to be pushed is ordinary, and calling it unpushed would be false. That does leave an upstream missing *by accident* unreported. It is a different fact from the one this segment names, and it is deliberately not folded in.
 
-- **A startup display, in two parts.** As the session starts, the session-start part frames the notice: the title and the copyright and license ahead of it, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is: the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh` on every prompt, and it prints on the first only. Both read them from the the-startup-display-prints-as-the-session-starts rule, which governs the display.
+- **A startup display, in two parts.** As the session starts, the session-start part frames the notice: the title and the copyright and license ahead of it, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is: the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh` on every prompt, and it prints on the first only. Both read them from the the-startup-display-prints-as-the-session-starts rule, which governs the display.
 
 The notice and the display are wired by the hooks of the Slasher plugin, in `.claude/skills/slasher/`, which `install.sh` assembles in the consuming project. The status line is wired by a committed `.claude/settings.json`, which `install.sh` places too, because a plugin cannot set the main status line.
 
@@ -96,7 +96,7 @@ The notice and the display are wired by the hooks of the Slasher plugin, in `.cl
   - wait for the engineer's request
   - print no package count
 
-  **The instruction names the project's own `local/rules/`, unconditionally.** Naming only the installed packages would make it **narrower than the rule it exists to get followed**. a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule requires reading `waytide/system/` and `waytide/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read would disagree, with the hook carrying less.
+  **The instruction names the project's own `local/rules/`, unconditionally.** Naming only the installed packages would make it **narrower than the rule it exists to get followed**. a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule requires reading `slasher/system/` and `slasher/local/rules/`, and the `AGENTS.md` bootstrap `install.sh` generates names the two. So the two surfaces carrying the read would disagree, with the hook carrying less.
 
   It is the path this rule calls primary, the file route being the one it was written to stop depending on. A project's own rules are the half no package supplies and no refresh restores.
 
@@ -125,7 +125,7 @@ The notice and the display are wired by the hooks of the Slasher plugin, in `.cl
   **No quotation marks, and they must not be added.** The notice and the instruction are each interpolated into a JSON string built by `printf` with no escaping. A double quote would terminate the string, and the harness would fail to parse the output. The notice would disappear with no error at all, which is the silent failure this whole mechanism exists to avoid.
 
 - **The agent does not print a notice.** Not at session start, not before the first response, not at all. The harness has already printed it, and an agent-printed copy would only duplicate it. **The agent does not print the startup display either.** That is the third surface the harness renders. Its session-start part frames the notice's message as the session starts, and its loading part prints on the session's first prompt. See the the-startup-display-prints-as-the-session-starts rule. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read. See the the-command-domain-table-prints-when-the-rules-have-loaded rule.
-- **Enumerate what is actually on disk.** The scripts list the package directories under `waytide/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
+- **Enumerate what is actually on disk.** The scripts list the package directories under `slasher/system/` (or `system/` in the authoring source). A directory carrying a `README.md` is a package — which is what distinguishes a grouped package (one carrying a README) from the grouping directory above it. Nothing prints a fixed list. The notice reflects the real install because the directories must be read to produce it.
 - **What the notice claims is narrow, and its wording says so.** It reports that the system is **installed** and its configuration is live. It says nothing about whether the rules were read or internalized — the agent is not its author, so it cannot vouch for the agent. That verification comes from the work honoring the rules, as it always did. **Carrying the read instruction does not widen this claim.** Instructing and vouching are different acts: the hook tells the agent to read the rules, and still reports nothing about whether it did.
 - **The notice says "installed", never "loaded".** The two words claim different things, and only one of them is observable at the moment the notice prints. A hook runs **before** the session, so no rule file has been read yet. The notice and the read instruction are emitted in the same output. So the notice is printed at the very moment the reading is still being asked for. "Loaded" means brought into a runtime, read in. That is precisely the fact the hook cannot establish. The notice earlier used it anyway, so the rule's narrow claim and the script's wording disagreed, and the wide reading was the one an engineer actually saw. Nothing about the timing can be fixed — no message emitted before a session can report on what the session then does — so the correction is the verb, not the mechanism. The same holds for the term: this is the **session-start notice**, not "the load notice", and the status line reports the system **active**, which is a claim about the configuration rather than the agent.
 - **A project that ignores `.claude/` is warned.** The notice travels only if the plugin is committed, and the status line only if `.claude/settings.json` is, so `install.sh` checks whether git is set to ignore either path. When it is, and the file is not already tracked, it prints how to correct it. Without the check the install reports success while the notice stays on one machine. It works for whoever ran the install and reaches nobody else on the team. Git cannot re-include a file inside an excluded directory, so a negation added under a `.claude/` rule does nothing. The rule has to become `.claude/*` plus `!.claude/settings.json` and `!.claude/skills/`, which keeps each engineer's personal `.claude/settings.local.json` ignored.
@@ -133,7 +133,7 @@ The notice and the display are wired by the hooks of the Slasher plugin, in `.cl
 
 **There is no opt-out.** An option whose whole purpose is to make the system invisible while it is in force sits against every reason these surfaces exist.
 
-The notice, the status line, and the printed copyright and license are each there for one reason. A system read at the start of every session should say so. The `WAYTIDE_QUIET` variable was the one sanctioned way to have it in force and say nothing.
+The notice, the status line, and the printed copyright and license are each there for one reason. A system read at the start of every session should say so. The `SLASHER_QUIET` variable was the one sanctioned way to have it in force and say nothing.
 
 What it never silenced was the read instruction itself — quieting a display must not disable the mechanism that carries the rules. That guarantee is unaffected by its removal, since nothing about the read ever depended on it.
 
@@ -159,21 +159,21 @@ Keep the notice ending with what it reports. The startup display's load line, af
 
 Write the notice as plain text, with no markdown markup, since the harness renders it literally. Keep the repository name bold in the status line. It is a terminal escape sequence, the one emphasis that does render. Leave every other segment plain.
 
-Keep the engineer's own segments separated by the middle dot. Set the trailing Waytide segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
+Keep the engineer's own segments separated by the middle dot. Set the trailing Slasher segment off by the double colon. Keep an untracked file raising the uncommitted segment as well as the untracked one.
 
 ## Compressed
 
-1. The harness announces Waytide, through three surfaces it renders.
+1. The harness announces Slasher, through three surfaces it renders.
 2. The agent prints no notice, at session start or at any other time.
 3. An agent-printed copy would only duplicate the harness's.
 4. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read.
 
 ## The session-start notice
 
-1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+1. The Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
 
 ```
-Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Slasher installed at slasher/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
@@ -181,7 +181,7 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 2. The install line enumerates what is on disk.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
-5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `slasher/local/implementations/`.
 6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
@@ -232,18 +232,18 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 
 ## The status line
 
-1. `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+1. `slasher/system/foundation/statusline.sh` keeps the system's presence on screen all session:
 
 ```
-waytide · master :: Waytide
-waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+slasher · master :: Slasher
+slasher · master · uncommitted changes · untracked files · unpushed commits :: Slasher
 ```
 
 2. The repository name leads, in bold. The bold is a terminal escape sequence the harness passes through.
 3. The bold repository name is the only emphasis on the line.
 4. A middle dot separates the engineer's segments.
-5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
-6. The Waytide segment is one word, with no package count.
+5. The Slasher segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
+6. The Slasher segment is one word, with no package count.
 7. Presence is read from disk, by the same README test the notice uses.
 8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
 9. `uncommitted changes` appears only when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
@@ -259,7 +259,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 ## The startup display
 
 1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
-2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
 3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 
@@ -300,7 +300,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-10-29, revised: the read instruction's ON DEMAND section, solubility 39 → 39, clarity 0.74 → 0.74; checked: 96 directives, 95 kept, 1 less precise, 0 lost, 1 repair
 - 2026-10-29, revised: the instruction after a compaction, solubility 39 → 39, clarity 0.74 → 0.74; checked: 101 directives, 100 kept, 1 less precise, 0 lost; the less precise directive, that the scripts enumerate the package directories, is untouched by this revision
 - 2026-10-29, revised: concluded states read the same for both kinds; checked: 74 directives, 66 kept, 5 less precise, 3 lost, 7 repairs to the read instruction; re-checked: 72 kept, 2 less precise, 0 lost, 1 repair; re-checked: 74 directives, 73 kept, 1 less precise, 0 lost. Left less precise: the compaction sentence's wording, which keeps what the agent does
-- 2026-11-03, revised: `/load` is the same command as `load waytide`; checked: 47 directives, 47 kept, 0 less precise, 0 lost
+- 2026-11-03, revised: `/load` is the same command as `load slasher`; checked: 47 directives, 47 kept, 0 less precise, 0 lost
 - 2026-11-03, revised: `/load` takes the instruction from `session-start.sh instruction`; checked: 67 directives, 64 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the read instruction, like the close, reports no read; that other harnesses need equivalent glue; and why the mark is kept out of the hook
 - 2026-11-04, revised: the plugin's hooks carry the notice and the display, and the display leads the notice's message; checked: 64 directives, 64 kept, 0 less precise, 0 lost
 - 2026-11-04, revised: the notice's close names `/load`; checked: 63 directives, 62 kept, 1 less precise, 0 lost. Left less precise, untouched by this revision: that a missing upstream is reported nowhere, not only kept out of the unpushed segment
@@ -309,7 +309,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 - 2026-11-04, revised: a blank line sets the open line apart from the install line; checked: 84 directives, 81 kept, 3 less precise, 0 lost. Left less precise, none touched by this revision: that the instruction itself states the read is unconditional, why the loader is run again after a compaction, and that other harnesses need equivalent glue
 - 2026-11-04, revised: the startup display's load line follows the notice; checked: 79 directives, 76 kept, 3 less precise, 0 lost. Left less precise: that the loading part, like the session-start part, is read from the startup display rule, which the point that the script reads the art from that rule already gives; why the loader is run again after a compaction; and that other harnesses need equivalent glue
 - 2026-11-04, revised: the loading part prints the loading line, then the figure, the order the engineer set; not re-checked
-- 2026-11-04, revised: the typed command `load waytide` is `load rules`, a term swap the engineer settled; not re-checked
+- 2026-11-04, revised: the typed command `load slasher` is `load rules`, a term swap the engineer settled; not re-checked
 - 2026-11-05, revised: the instruction carries the core rules, within the hook's 10,000 characters; checked: 63 directives, 59 kept, 4 less precise, 0 lost, 2 repairs, to the core rules point; re-checked: 63 directives, 61 kept, 2 less precise, 0 lost. Left less precise: the status line example's in-between lines, which the prose states, and that the loading part is read from the startup display rule, as the art is
 - 2026-11-06, revised: the agent prints the command domain table at the end of the session-start read, beside the package set stanza; checked: 103 directives, 99 kept, 4 less precise, 0 lost. Left less precise, none touched by this revision: that the uncommitted changes segment carries no count, that the loading part reads its content from the startup display rule, that the authoring source lists packages under `system/`, and that `session-start.sh instruction` prints the instruction alone, as plain text
 
@@ -458,3 +458,4 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 6:40:22 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:06:23 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:34:21 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

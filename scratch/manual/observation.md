@@ -1,7 +1,7 @@
 # Observation — manual page
 
 ```
-OBSERVATION(1)                 Waytide Manual                 OBSERVATION(1)
+OBSERVATION(1)                 Slasher Manual                 OBSERVATION(1)
 
 NAME
      observation - record a working hypothesis

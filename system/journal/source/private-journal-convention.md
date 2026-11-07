@@ -1,12 +1,12 @@
-# `~/.local/share/waytide/journal/<project>/` — a private journal, kept outside the project
+# `~/.local/share/slasher/journal/<project>/` — a private journal, kept outside the project
 
 **Trigger:** When the writer starts a private journal entry, directs a change to one, or commands one moved to the project journal, as with `/journal publish-private`
 
-**A private journal is a journal kept outside the project's repository.** Its entries are not committed with the project, so the project's other writers and the readers of its repository do not reach them. A journal in `waytide/local/journal/<username>/` is the **project journal**, and the journal-convention governs it.
+**A private journal is a journal kept outside the project's repository.** Its entries are not committed with the project, so the project's other writers and the readers of its repository do not reach them. A journal in `slasher/local/journal/<username>/` is the **project journal**, and the journal-convention governs it.
 
-**Every private journal is under one root, `~/.local/share/waytide/journal/`.** XDG puts the data a program keeps for a user under `~/.local/share/`, and an entry is data. Per-machine settings stay under `~/.config/waytide/`, which this root does not share.
+**Every private journal is under one root, `~/.local/share/slasher/journal/`.** XDG puts the data a program keeps for a user under `~/.local/share/`, and an entry is data. Per-machine settings stay under `~/.config/slasher/`, which this root does not share.
 
-**Each project with a private journal has one directory under the root, named for that project.** The name is the name of the project whose repository holds the project journal — `~/.local/share/waytide/journal/some-project/`. One file in that directory is one entry.
+**Each project with a private journal has one directory under the root, named for that project.** The name is the name of the project whose repository holds the project journal — `~/.local/share/slasher/journal/some-project/`. One file in that directory is one entry.
 
 **A private journal has no `<username>` directory.** It sits in one user's home directory, so it belongs to one user by definition. A project journal holds a directory per writer because a project can have several writers, and a private journal cannot.
 
@@ -30,7 +30,7 @@
 
 ## A private entry moves to the project journal only on command
 
-**A private entry moves from the private journal to the project journal only on the engineer's command.** The file moves into `waytide/local/journal/<username>/` with its filename and content unchanged, and it is removed from the private journal. It is then a project journal entry, committed as `Journal: <subject>` like any other.
+**A private entry moves from the private journal to the project journal only on the engineer's command.** The file moves into `slasher/local/journal/<username>/` with its filename and content unchanged, and it is removed from the private journal. It is then a project journal entry, committed as `Journal: <subject>` like any other.
 
 **Nothing else moves an entry, and the agent does not offer to.** Moving an entry publishes it to every reader of the project's repository.
 
@@ -44,7 +44,7 @@
 
 Keeping the private journal outside the repository, rather than in an ignored file inside it, means no `.gitignore` has to stay correct. It also means a reader of the repository cannot see that private entries exist.
 
-**How to apply:** on `New private journal entry`, `New private entry`, or `Private note`, write the entry in `~/.local/share/waytide/journal/<project>/`, named for the project that holds the project journal. Make the directory where it is absent. Give the entry the project journal's filename, datetime line, summary, and footer, and ask for its time as a project journal entry's time is asked for. Commit nothing.
+**How to apply:** on `New private journal entry`, `New private entry`, or `Private note`, write the entry in `~/.local/share/slasher/journal/<project>/`, named for the project that holds the project journal. Make the directory where it is absent. Give the entry the project journal's filename, datetime line, summary, and footer, and ask for its time as a project journal entry's time is asked for. Commit nothing.
 
 Make a change the writer directs to a private entry exactly as named. Write no log entry about a private entry, for any reason.
 
@@ -57,9 +57,9 @@ Move a private entry to the project journal only on the engineer's command, unch
 ## Compressed
 
 1. A private journal is a journal kept outside the project's repository. Its entries are not committed with the project.
-2. A journal in `waytide/local/journal/<username>/` is the project journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
-3. Every private journal is under one root, `~/.local/share/waytide/journal/`. Per-machine settings stay under `~/.config/waytide/`, which this root does not share.
-4. Each project with a private journal has one directory under the root, named for the project whose repository holds the project journal, for example `~/.local/share/waytide/journal/some-project/`.
+2. A journal in `slasher/local/journal/<username>/` is the project journal. The the-journal-is-the-record-the-writer-keeps rule governs it.
+3. Every private journal is under one root, `~/.local/share/slasher/journal/`. Per-machine settings stay under `~/.config/slasher/`, which this root does not share.
+4. Each project with a private journal has one directory under the root, named for the project whose repository holds the project journal, for example `~/.local/share/slasher/journal/some-project/`.
 5. One file in that directory is one entry.
 6. A private journal has no `<username>` directory. It belongs to one user.
 7. The directory may not exist, and its absence is ordinary. Make it when the first private entry for that project is written.
@@ -82,7 +82,7 @@ Move a private entry to the project journal only on the engineer's command, unch
 ## Moving a private entry
 
 1. A private entry moves to the project journal only on the engineer's command.
-2. Move the file into `waytide/local/journal/<username>/` with its filename and content unchanged, and remove it from the private journal.
+2. Move the file into `slasher/local/journal/<username>/` with its filename and content unchanged, and remove it from the private journal.
 3. It is then a project journal entry, committed as `Journal: <subject>` like any other.
 4. Nothing else moves an entry. Do not offer to move one.
 
@@ -120,3 +120,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 4:43:38 PM PT
 Changed by Scott Bellware on Wed Oct 28 2026 at 4:44:26 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:37 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

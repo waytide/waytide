@@ -28,7 +28,7 @@ Where an implementation's own question or intent is about publishing, put the ex
 
 **The never-offer instruction does not reach that case.** An implementation whose question or intent is about publishing has publishing as its subject, so raising it is the work rather than an offer. What is forbidden is raising it where the implementation is about something else.
 
-**Waytide carries no version numbers**, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
+**Slasher carries no version numbers**, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
 
 **Why:** an experiment can be refuted, and its branch is deleted on confirmation. A feature can be abandoned. A publish is neither reversible nor confirmable after the fact, since a component repository's `master` is what a consuming project pulls.
 
@@ -66,7 +66,7 @@ Never offer a publish while an experiment or a feature is open. Never name one a
 1. Where an implementation's own question or intent is about publishing, put the exception through the selection UI and record it as a confirmation in its record.
 2. Nothing else licenses a publish from a topic branch.
 3. In that implementation, raising the publish is the work, not a forbidden offer. Raising it in an implementation about something else stays forbidden.
-4. Waytide carries no version numbers, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
+4. Slasher carries no version numbers, and this rule asks for none. The `versioning` package's the-next-version-is-put-to-the-engineer-never-decided-by-the-agent rule governs a consuming project that versions its packages. It does not govern this project, which versions nothing.
 
 ## Compression
 
@@ -97,3 +97,4 @@ Changed by Scott Bellware on Sun Oct 25 2026 at 4:21:53 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:27:43 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 11:02:45 AM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:42:15 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

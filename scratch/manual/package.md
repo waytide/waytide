@@ -1,10 +1,10 @@
 # Package — manual page
 
 ```
-PACKAGE(1)                     Waytide Manual                     PACKAGE(1)
+PACKAGE(1)                     Slasher Manual                     PACKAGE(1)
 
 NAME
-     package - manage the Waytide packages installed in this project
+     package - manage the Slasher packages installed in this project
 
 SYNOPSIS
      /package activate <package>
@@ -14,8 +14,8 @@ SYNOPSIS
      /package help
 
 DESCRIPTION
-     Waytide is a set of packages of rules, installed under
-     waytide/system/. All of them are read at the start of each session,
+     Slasher is a set of packages of rules, installed under
+     slasher/system/. All of them are read at the start of each session,
      and the active ones are followed.
 
      Activating or deactivating a package writes a new package-set
@@ -27,11 +27,11 @@ SUBCOMMANDS
      deactivate      Set an installed package aside.
      refresh         Bring installed packages up to date from their
                      repositories, and report which rules changed.
-     install         Install Waytide into this project.
+     install         Install Slasher into this project.
 
 FILES
-     waytide/system/<package>/
-     waytide/local/<UTC timestamp>-<set>-package-set.md
+     slasher/system/<package>/
+     slasher/local/<UTC timestamp>-<set>-package-set.md
 
 SEE ALSO
      /projects, /release

@@ -6,7 +6,7 @@
 - **Original rank:** 1 of 106
 - **Unclarity:** 0.82
 
-`waytide/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
+`slasher/local/items/` holds the project's **items**: the thinking that settles what the work should be and how it should go. **An item is an item**, and that is the whole of what a record here is.
 
 **An item may carry tags, such as `[design]`, `[plan]`, or `[aspiration]`.** The set is open, and an item may carry several. The tags are the ordinary square-bracket tags every working-state artifact takes.
 
@@ -109,13 +109,13 @@ Every item carries a `**State:**` line, from the moment it is written:
 
 Keeping the shape thin is the other half. The rules this replaces fixed a spine for a design and an element order for a plan, and an item that is neither had nowhere to sit. What every item genuinely shares is a state, a tag, a footer, a log entry, and a name.
 
-**How to apply:** write an item as a file in `waytide/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open**, and make it **Active** when its work starts. Conclude an item whose work is done on an experiment's branch when the work is done, not when the experiment merges.
+**How to apply:** write an item as a file in `slasher/local/items/`, with a `**State:**` line, a `**Tags:**` line saying what it is, and the ISO-8601-UTC prefix and state suffix in its name. Start it **Open**, and make it **Active** when its work starts. Conclude an item whose work is done on an experiment's branch when the work is done, not when the experiment merges.
 
 Change the state as the item reaches another word, renaming the file with it, and write the log entry. Supersede rather than rewrite. Amend by dated addition. Add no spine the thinking does not have.
 
 ## Compressed
 
-1. `waytide/local/items/` holds the project's items, one file per item. Every record there is an item, and only an item.
+1. `slasher/local/items/` holds the project's items, one file per item. Every record there is an item, and only an item.
 2. An item is the thinking that settles what the work should be and how it should go.
 3. Name the file with the ISO-8601-UTC prefix, ending in its state in upper case.
 4. Write the item as frontmatter-free markdown.
@@ -276,3 +276,4 @@ Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
 Changed by Scott Bellware on Mon Nov 2 2026 at 6:49:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 10:29:16 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -1,12 +1,12 @@
-# The Waytide skills are delivered as a plugin named slasher
+# The Slasher skills are delivered as a plugin named slasher
 
-**Trigger:** When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
+**Trigger:** When writing a Slasher skill, or installing, refreshing, or activating the packages that carry skills
 
-**The Waytide skills reach a project as one skills-directory plugin, called Slasher and named `slasher`.** It sits at `.claude/skills/slasher/` in the project, with a `.claude-plugin/plugin.json` whose `name` is `slasher` and whose `displayName` is `Slasher`. The `name` is the namespace every skill is typed under, and the `displayName` is what Claude Code shows in its place. A skill is typed `/slasher:<command>`, as in `/slasher:log`, and `/<command>` where no other command on the machine claims the name.
+**The Slasher skills reach a project as one skills-directory plugin, called Slasher and named `slasher`.** It sits at `.claude/skills/slasher/` in the project, with a `.claude-plugin/plugin.json` whose `name` is `slasher` and whose `displayName` is `Slasher`. The `name` is the namespace every skill is typed under, and the `displayName` is what Claude Code shows in its place. A skill is typed `/slasher:<command>`, as in `/slasher:log`, and `/<command>` where no other command on the machine claims the name.
 
 **Each package carries its own skills**, under `skills/` in the package: `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rules it hands its act to.
 
-**The plugin directory is assembled from foundation's `plugin/` directory and the active packages' skills.** `plugin/` holds the plugin's manifest and its hooks: the session-start hooks, which the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule governs, and the hook that reports a branch switch, which the `git` package's announce-a-branch-switch-in-a-bordered-block rule governs. `assemble-plugin.sh` copies it, then each active package's `skills/`, into `.claude/skills/slasher/`, and leaves out a deactivated package's. `install.sh` and `refresh-packages.sh` run it in a consuming project, and `compile.sh` runs it in the Waytide authoring source. A package activated or deactivated takes its skills with it at the next assembly.
+**The plugin directory is assembled from foundation's `plugin/` directory and the active packages' skills.** `plugin/` holds the plugin's manifest and its hooks: the session-start hooks, which the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule governs, and the hook that reports a branch switch, which the `git` package's announce-a-branch-switch-in-a-bordered-block rule governs. `assemble-plugin.sh` copies it, then each active package's `skills/`, into `.claude/skills/slasher/`, and leaves out a deactivated package's. `install.sh` and `refresh-packages.sh` run it in a consuming project, and `compile.sh` runs it in the Slasher authoring source. A package activated or deactivated takes its skills with it at the next assembly.
 
 **The plugin directory is committed with the project**, as `.claude/settings.json` is, so every engineer who clones the project has the skills and the hooks. It is assembled rather than edited: a change to a skill is made in its package, and reaches the plugin at the next install or refresh.
 
@@ -22,7 +22,7 @@
 
 1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
 2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
-3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
+3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Slasher authoring source.
 4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
 5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
 6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
@@ -61,7 +61,7 @@ Related:
 
 - the a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help rule — the thin skill
 - the a-project-declares-which-installed-packages-are-active rule — the active packages
-- the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule — the session-start hooks the plugin carries
+- the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule — the session-start hooks the plugin carries
 - the `git` package's announce-a-branch-switch-in-a-bordered-block rule — the branch-switch hook the plugin carries
 
 ---
@@ -78,3 +78,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 12:53:55 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:57:33 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:59:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:16:16 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

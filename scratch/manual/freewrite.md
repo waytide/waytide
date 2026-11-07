@@ -1,7 +1,7 @@
 # Freewrite — manual page
 
 ```
-FREEWRITE(1)                   Waytide Manual                   FREEWRITE(1)
+FREEWRITE(1)                   Slasher Manual                   FREEWRITE(1)
 
 NAME
      freewrite - say points as they come, and organize them afterward
@@ -44,7 +44,7 @@ EXAMPLES
      /freewrite end
 
 FILES
-     ~/.local/share/waytide/collections/<project>/<UTC timestamp>[-<name>].md
+     ~/.local/share/slasher/collections/<project>/<UTC timestamp>[-<name>].md
 
 SEE ALSO
      /item, /observation, /journal

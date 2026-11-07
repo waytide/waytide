@@ -1,7 +1,7 @@
 # Status-report — manual page
 
 ```
-STATUS-REPORT(1)               Waytide Manual               STATUS-REPORT(1)
+STATUS-REPORT(1)               Slasher Manual               STATUS-REPORT(1)
 
 NAME
      status-report - print a fixed report of where the whole project stands
@@ -17,7 +17,7 @@ DESCRIPTION
      1. Task table      The tasks the planning items carry, with the
                         next one marked.
      2. Waiting work    Items that wait on something else to finish.
-     3. Orientation     A map of the waytide/ directory and how to work
+     3. Orientation     A map of the slasher/ directory and how to work
                         with it.
      4. Recent work     A few lines on the recent direction, from the log
                         and the commits.

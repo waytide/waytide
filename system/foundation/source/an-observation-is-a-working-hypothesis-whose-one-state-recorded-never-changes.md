@@ -1,10 +1,10 @@
 # An observation is a working hypothesis whose one state, Recorded, never changes
 
-**Trigger:** When recording or revising an observation in waytide/local/items/
+**Trigger:** When recording or revising an observation in slasher/local/items/
 
-`waytide/local/items/` holds working hypotheses, definitions, and methods that are **not yet binding**. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
+`slasher/local/items/` holds working hypotheses, definitions, and methods that are **not yet binding**. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized enough to canonize. They are *not* read as binding at session start the way rules are. They record in-progress understanding.
 
-**An observation lives in `waytide/local/items/` and is tagged `[observation]`.** The tag is what makes a record an observation.
+**An observation lives in `slasher/local/items/` and is tagged `[observation]`.** The tag is what makes a record an observation.
 
 ## `Recorded` is an observation's only state, and it never changes
 
@@ -20,7 +20,7 @@
 
 **An observation that no longer holds is not retracted.** A later observation states the later thinking, and the earlier one stays as what was thought at the time.
 
-**An observation is not promoted.** Where the thinking it records stabilizes into a binding convention, the rule is written in `waytide/local/rules/` the way any rule is written. The observation is not changed by it. It takes no line naming the rule, and its state stays `Recorded`. It stays as written, as the discovery record.
+**An observation is not promoted.** Where the thinking it records stabilizes into a binding convention, the rule is written in `slasher/local/rules/` the way any rule is written. The observation is not changed by it. It takes no line naming the rule, and its state stays `Recorded`. It stays as written, as the discovery record.
 
 **So the the-items-directory-holds-one-file-per-item rule needs no exception.** Every item carries a state from the moment it is written, and an observation does too. What is particular to an observation is that the state is fixed, not that it is absent.
 
@@ -29,7 +29,7 @@
 - **When to use:** the material is genuinely useful to keep but still under active discovery, or it is a method or definition the engineer has not ratified as a convention. When in doubt between a rule and an observation, prefer an observation — writing a rule later is cheap, retracting a premature rule is not.
 - **Format:** the same frontmatter-free markdown as rules — a `# <title>`, a `**State:** Recorded` line, a `**Tags:**` line carrying `[observation]`, then the content in prose. The filename follows the ISO-8601-UTC prefix convention (see the file-names rule) and ends `-RECORDED`.
 - **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
-- **Recording one:** add the file, and add a matching one-line entry to `waytide/local/logs/log/` noting it was recorded as an observation, and why it is not yet a rule.
+- **Recording one:** add the file, and add a matching one-line entry to `slasher/local/logs/log/` noting it was recorded as an observation, and why it is not yet a rule.
 
 **Why:** discovery produces valuable thinking before it is ready to be binding, and a place for non-binding hypotheses keeps that thinking without prematurely imposing it as a rule.
 
@@ -45,10 +45,10 @@ Write a later observation where the thinking moves, and leave the earlier one as
 
 Lines 1–6 below are the opening statements, which come before any section heading.
 
-1. `waytide/local/items/` holds working hypotheses, definitions, and methods that are not yet binding.
+1. `slasher/local/items/` holds working hypotheses, definitions, and methods that are not yet binding.
 2. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized.
 3. They are not read as binding at session start, the way rules are.
-4. An observation lives in `waytide/local/items/`.
+4. An observation lives in `slasher/local/items/`.
 5. An observation is tagged `[observation]`.
 6. The tag is what makes a record an observation.
 
@@ -64,7 +64,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
 10. An observation is not promoted.
-11. Where the thinking stabilizes into a binding convention, write the rule in `waytide/local/rules/` the way any rule is written.
+11. Where the thinking stabilizes into a binding convention, write the rule in `slasher/local/rules/` the way any rule is written.
 12. Do not change the observation. It takes no line naming the rule.
 13. The the-items-directory-holds-one-file-per-item rule needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
@@ -80,7 +80,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 8. The filename ends `-RECORDED`.
 9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
 10. **Recording one:** add the file.
-11. Add a matching one-line entry to `waytide/local/logs/log/`.
+11. Add a matching one-line entry to `slasher/local/logs/log/`.
 12. The entry notes that it was recorded as an observation, and why it is not yet a rule.
 13. Never change an observation's state.
 14. Where the thinking moves, write a later observation and leave the earlier one as written.
@@ -152,3 +152,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 2:22:19 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:45:17 AM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

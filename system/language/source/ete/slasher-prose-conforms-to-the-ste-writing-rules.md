@@ -1,12 +1,12 @@
-# Waytide prose conforms to the STE writing rules
+# Slasher prose conforms to the STE writing rules
 
-ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers. This rule holds the ones Waytide breaks most, and it grows as more are found in use.
+ASD-STE100 holds 53 writing rules in nine sections. They bind Slasher's prose, its rules, its records, its commit messages, and the agent's answers. This rule holds the ones Slasher breaks most, and it grows as more are found in use.
 
-**This rule is part of Eventide Technical English, or ETE** — Waytide's implementation of the standard. See the waytide-keeps-its-word-where-the-ste-word-means-something-else rule beside it, which states what ETE is and the order its two parts decide in.
+**This rule is part of Eventide Technical English, or ETE** — Slasher's implementation of the standard. See the slasher-keeps-its-word-where-the-ste-word-means-something-else rule beside it, which states what ETE is and the order its two parts decide in.
 
-**Three rules beside those two carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Waytide's own. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone. Each names the STE rule it contradicts.
+**Three rules beside those two carry ETE's departures from the standard.** The ete-declares-its-own-categories rule adds five categories of Slasher's own. The ete-fixes-the-meaning-of-a-word-in-its-category rule lets a reserved word take the meaning its entry gives. The ordinary-vocabulary-is-not-reserved-and-not-rewritten rule leaves the ordinary words alone. Each names the STE rule it contradicts.
 
-**A phrase passes two checks, in this order.** Waytide's own vocabulary decides first. The standard decides second. In the two phrases worked below, Waytide's vocabulary caught the word before the standard did.
+**A phrase passes two checks, in this order.** Slasher's own vocabulary decides first. The standard decides second. In the two phrases worked below, Slasher's vocabulary caught the word before the standard did.
 
 ## The writing rules
 
@@ -21,7 +21,7 @@ ASD-STE100 holds 53 writing rules in nine sections. They bind Waytide's prose, i
 
 ## Two worked phrases
 
-**The agent wrote each of these, and each broke Waytide's vocabulary first.**
+**The agent wrote each of these, and each broke Slasher's vocabulary first.**
 
 ### `swept across 20 files`
 
@@ -48,17 +48,17 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 
 **Why:** the writing rules are where the standard reaches every sentence, and the STE dictionary is where it reaches a word at a time. A writer who reads only the STE dictionary keeps writing long passive sentences out of approved words. Each rule is recorded here as it is met in use, beside the phrase that met it. That makes a rule findable by the shape of the mistake, not by its number.
 
-**How to apply:** check a phrase against Waytide's vocabulary first, then against the STE dictionary, then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use, add it to the table and add the phrase that met it.
+**How to apply:** check a phrase against Slasher's vocabulary first, then against the STE dictionary, then against the rules above. Write the active voice. Write all the words. Use no semicolon. Keep a descriptive sentence to 25 words and a procedural sentence to 20. When a new rule is met in use, add it to the table and add the phrase that met it.
 
 ## Compressed
 
 1. ASD-STE100 holds 53 writing rules in nine sections.
-2. These rules bind Waytide's prose, its rules, its records, its commit messages, and the agent's answers.
-3. This rule holds the STE rules Waytide breaks most.
+2. These rules bind Slasher's prose, its rules, its records, its commit messages, and the agent's answers.
+3. This rule holds the STE rules Slasher breaks most.
 4. When another STE rule is found broken in use, add it to the table. Record beside it the phrase that broke it.
 5. This rule is part of Eventide Technical English, or ETE.
-6. The waytide-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Waytide's vocabulary decides first, and the standard second.
-7. Check a phrase against Waytide's vocabulary first.
+6. The slasher-keeps-its-word-where-the-ste-word-means-something-else rule states what ETE is and the order its two parts decide in. Slasher's vocabulary decides first, and the standard second.
+7. Check a phrase against Slasher's vocabulary first.
 8. Then check it against the STE dictionary.
 9. Then check it against the writing rules below.
 
@@ -75,7 +75,7 @@ After: `The two checks are verified.` Or, to say what happened rather than name 
 
 ## Two worked phrases
 
-1. The agent wrote each of these phrases. Each broke Waytide's vocabulary before it broke the standard.
+1. The agent wrote each of these phrases. Each broke Slasher's vocabulary before it broke the standard.
 
 ### `swept across 20 files`
 
@@ -111,13 +111,13 @@ Until Sun Oct 25 2026 this rule was titled "Waytide's prose conforms to the STE 
 
 Related:
 
-- the waytide-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
+- the slasher-keeps-its-word-where-the-ste-word-means-something-else rule in this directory
 - the a-word-is-reserved-in-six-steps rule — the sequence for reserving a word
 - the ete-declares-its-own-categories rule — the categories a reserved word is named in
 - the ete-fixes-the-meaning-of-a-word-in-its-category rule — which overrides STE Rule 1.3 above
 - the ordinary-vocabulary-is-not-reserved-and-not-rewritten rule — the words that are left alone
 - the `language` and `testing` vocabularies
-- the specification at `waytide/local/reference/`
+- the specification at `slasher/local/reference/`
 
 ---
 
@@ -132,3 +132,4 @@ Changed by Scott Bellware on Thu Aug 13 2026 at 12:52:39 PM PT
 Changed by Scott Bellware on Thu Aug 13 2026 at 1:08:26 PM PT
 Changed by Scott Bellware on Sat Oct 24 2026 at 2:41:36 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 4:25:22 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

@@ -12,7 +12,7 @@
 # that set and nothing else. Named packages it places those and nothing else.
 #
 # It runs offline. Each package is split out of this repository into a bare repository and the
-# installer is pointed at them with WAYTIDE_ORIGIN, so nothing reaches the network and the
+# installer is pointed at them with SLASHER_ORIGIN, so nothing reaches the network and the
 # content installed is the content this repository holds.
 set -e
 
@@ -46,7 +46,7 @@ project() {
 }
 
 installed() {
-  ( cd "$1/waytide/system" && ls ) | tr '\n' ' ' | sed 's/ $//'
+  ( cd "$1/slasher/system" && ls ) | tr '\n' ' ' | sed 's/ $//'
 }
 
 fail() {
@@ -61,7 +61,7 @@ fail() {
 
 control_default=$(project default)
 
-( cd "$control_default" && WAYTIDE_ORIGIN="$control_origin" sh install >/dev/null 2>&1 )
+( cd "$control_default" && SLASHER_ORIGIN="$control_origin" sh install >/dev/null 2>&1 )
 
 default_installed=$(installed "$control_default")
 default_expected="design-by-efferent foundation git journal language testing versioning"
@@ -73,7 +73,7 @@ default_expected="design-by-efferent foundation git journal language testing ver
 
 control_content=$(project content)
 
-( cd "$control_content" && WAYTIDE_ORIGIN="$control_origin" sh install content >/dev/null 2>&1 )
+( cd "$control_content" && SLASHER_ORIGIN="$control_origin" sh install content >/dev/null 2>&1 )
 
 content_installed=$(installed "$control_content")
 content_expected="foundation git journal language versioning"
@@ -85,7 +85,7 @@ content_expected="foundation git journal language versioning"
 
 control_named=$(project named)
 
-( cd "$control_named" && WAYTIDE_ORIGIN="$control_origin" sh install foundation git >/dev/null 2>&1 )
+( cd "$control_named" && SLASHER_ORIGIN="$control_origin" sh install foundation git >/dev/null 2>&1 )
 
 named_installed=$(installed "$control_named")
 named_expected="foundation git"

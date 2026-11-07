@@ -1,17 +1,17 @@
 # Working-state artifacts carry a provenance footer
 
-**Trigger:** When creating or changing a working-state document under waytide/
+**Trigger:** When creating or changing a working-state document under slasher/
 
 - **Solubility:** 49
 - **Original rank:** 52 of 106
 - **Unclarity:** 0.52
 
-Every working-state artifact under `waytide/` that is a document with a body ends with a **provenance footer**. That is the `Authored by … / Changed by …` block, in the record-a-rules-authorship-in-a-provenance-footer format, with a local human-readable datetime. This covers **implementation records (experiments and features), items (designs, plans, observations, and deferred work among them), loop records, and work session records**.
+Every working-state artifact under `slasher/` that is a document with a body ends with a **provenance footer**. That is the `Authored by … / Changed by …` block, in the record-a-rules-authorship-in-a-provenance-footer format, with a local human-readable datetime. This covers **implementation records (experiments and features), items (designs, plans, observations, and deferred work among them), loop records, and work session records**.
 
-- **Same footer, different reason than the rule files.** The rule-file footer exists because `git subtree` strips the composite's per-file history when a package is installed into a consuming project, so `git blame` can't show a rule's author there. That reason does **not** apply to a working-state artifact: it lives in the project's own `waytide/` tree, is never shipped by subtree, and keeps its git history intact. The footer is here for a different reason. **The file should be useful on its own.** These artifacts are written to be read as self-contained documents, so a reader should not have to leave the file and query the git log to learn who wrote it and when.
+- **Same footer, different reason than the rule files.** The rule-file footer exists because `git subtree` strips the composite's per-file history when a package is installed into a consuming project, so `git blame` can't show a rule's author there. That reason does **not** apply to a working-state artifact: it lives in the project's own `slasher/` tree, is never shipped by subtree, and keeps its git history intact. The footer is here for a different reason. **The file should be useful on its own.** These artifacts are written to be read as self-contained documents, so a reader should not have to leave the file and query the git log to learn who wrote it and when.
 - **The format is the record-a-rules-authorship-in-a-provenance-footer format.** `Authored by <name> on <local datetime>` for the original author, a `Changed by <name> on <local datetime>` line appended for each later change — oldest first, never rewritten. The datetime is the artifact's true authoring time. For a dated artifact whose ISO-8601-UTC filename prefix records when it was created, that prefix is the authoritative time (a later git add-date from a migration is a false trail).
 
-**The one exception — the log.** `waytide/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
+**The one exception — the log.** `slasher/local/logs/log/` entries do **not** carry a footer. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 
 Its authoring time is already in its ISO-8601-UTC filename and its commit. A footer would contradict that shape and the log's no-reformat rule. The log records who and when by its filename and commit history, not by an in-file footer.
 
@@ -19,11 +19,11 @@ Its authoring time is already in its ISO-8601-UTC filename and its commit. A foo
 
 This is a different justification from the rule-file footer's (which recovers history that subtree strips). Stating it once, here, keeps every working-state convention from repeating it. The log is exempt because its one-file-per-entry shape already carries its provenance in the filename, and a footer would break that shape.
 
-**How to apply:** end a provenance footer on every one of these: an implementation record, whether an experiment or a feature; an item, whatever it is tagged; a loop record; and a work session record. The format is the record-a-rules-authorship-in-a-provenance-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `waytide/local/logs/log/` entry.
+**How to apply:** end a provenance footer on every one of these: an implementation record, whether an experiment or a feature; an item, whatever it is tagged; a loop record; and a work session record. The format is the record-a-rules-authorship-in-a-provenance-footer format: `Authored by` on creation, and an appended `Changed by` line on each later change. Do not add a footer to a `slasher/local/logs/log/` entry.
 
 ## Compressed
 
-1. Every working-state artifact under `waytide/` that is a document with a body ends with a **provenance footer**.
+1. Every working-state artifact under `slasher/` that is a document with a body ends with a **provenance footer**.
 2. The footer is the `Authored by … / Changed by …` block, in the record-a-rules-authorship-in-a-provenance-footer format, with a local human-readable datetime.
 3. The footer goes on every implementation record, whether an experiment or a feature.
 4. It goes on every item, whatever it is tagged, including designs, plans, observations, and deferred work.
@@ -37,7 +37,7 @@ This is a different justification from the rule-file footer's (which recovers hi
 
 ## The one exception — the log
 
-1. Do not add a footer to a `waytide/local/logs/log/` entry.
+1. Do not add a footer to a `slasher/local/logs/log/` entry.
 2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 3. A log entry records who and when by its ISO-8601-UTC filename and its commit history, not by an in-file footer.
 
@@ -95,3 +95,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 10:02:10 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

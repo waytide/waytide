@@ -2,7 +2,7 @@
 
 **Trigger:** When creating an implementation record, or changing its **State:** line
 
-An **implementation record** pairs with a one-line entry in `waytide/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
+An **implementation record** pairs with a one-line entry in `slasher/local/logs/log/`, on creation and on each change of the canonical `**State:**` line.
 
 **The concluding entry takes one of two forms**, and which one is not a matter of taste. It is decided by whether the work merged.
 
@@ -47,7 +47,7 @@ Write no entry for a confirmation the record already holds, and none for a turn 
 
 ## An implementation record takes a log entry
 
-1. An implementation record pairs with a one-line entry in `waytide/local/logs/log/`.
+1. An implementation record pairs with a one-line entry in `slasher/local/logs/log/`.
 2. Write the entry when the record is created.
 3. Write another entry on each change of the canonical `**State:**` line.
 
@@ -135,3 +135,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Sun Oct 25 2026 at 2:26:56 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 10:40:45 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

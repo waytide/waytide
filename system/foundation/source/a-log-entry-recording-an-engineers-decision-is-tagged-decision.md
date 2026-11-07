@@ -13,7 +13,7 @@
 **The entry carries the tag under its title**, separated by a blank line, in the one form every record uses:
 
 ```
-# The README item settles that the README's content is addressed with Waytide's website, and waits for it
+# The README item settles that the README's content is addressed with Slasher's website, and waits for it
 
 **Tags:** [decision]
 ```
@@ -42,7 +42,7 @@
 2. The tag uses the one form every record uses:
 
 ```
-# The README item settles that the README's content is addressed with Waytide's website, and waits for it
+# The README item settles that the README's content is addressed with Slasher's website, and waits for it
 
 **Tags:** [decision]
 ```
@@ -82,3 +82,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 2:38:01 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 9:42:16 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

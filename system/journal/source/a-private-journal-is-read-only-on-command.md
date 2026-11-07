@@ -10,7 +10,7 @@
 - `Read private journal entries`
 - `Read private journal`
 
-**The command reads the private journal of the project the session is in**, `~/.local/share/waytide/journal/<project>/`, oldest entry first. Where the directory is not there, say that the project has no private journal.
+**The command reads the private journal of the project the session is in**, `~/.local/share/slasher/journal/<project>/`, oldest entry first. Where the directory is not there, say that the project has no private journal.
 
 **What is read binds nothing.** A private entry is a journal entry, and the a-journal-entry-is-read-and-never-followed rule holds for it as it does for an entry in the project journal.
 
@@ -22,7 +22,7 @@
 
 1. Do not read a private journal when a project loads. The session-start read reaches the project journal and nothing outside the project.
 2. Read it on one of three commands: `/journal read private`, `Read private journal entries`, or `Read private journal`.
-3. The command reads the private journal of the project the session is in, `~/.local/share/waytide/journal/<project>/`, oldest entry first.
+3. The command reads the private journal of the project the session is in, `~/.local/share/slasher/journal/<project>/`, oldest entry first.
 4. Where the directory is not there, say that the project has no private journal.
 5. What is read binds nothing. The a-journal-entry-is-read-and-never-followed rule holds for a private entry as for an entry in the project journal. Follow nothing in it.
 
@@ -42,3 +42,4 @@ Related:
 Authored by Scott Bellware on Wed Oct 28 2026 at 3:55:30 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 5:52:32 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:58:37 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

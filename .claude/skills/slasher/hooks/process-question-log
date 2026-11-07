@@ -9,14 +9,14 @@
 # hook's input on standard input. The line is recorded because a script whose invocation is not
 # written down is one nobody can reproduce when the wiring breaks.
 #
-# The entries go to the project's log: waytide/local/logs/log/ in a consuming project,
-# local/logs/log/ in the Waytide authoring source.
+# The entries go to the project's log: slasher/local/logs/log/ in a consuming project,
+# local/logs/log/ in the Slasher authoring source.
 
 project=${CLAUDE_PROJECT_DIR:-.}
 
-if [ -d "$project/waytide/system" ]; then
-  system=$project/waytide/system
-  local=$project/waytide/local
+if [ -d "$project/slasher/system" ]; then
+  system=$project/slasher/system
+  local=$project/slasher/local
 else
   system=$project/system
   local=$project/local

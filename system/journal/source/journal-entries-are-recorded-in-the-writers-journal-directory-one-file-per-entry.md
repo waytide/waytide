@@ -2,7 +2,7 @@
 
 **Trigger:** When writing a journal entry (including when the writer types `/journal` or opens with "new entry")
 
-The journal is kept as one markdown file per entry, in the writer's own journal directory `waytide/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `waytide/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `waytide/local/logs/log/`, the log the agent writes, which is one record for the whole project.
+The journal is kept as one markdown file per entry, in the writer's own journal directory `slasher/local/journal/<username>/`. The `<username>` is the active writer, resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule — `slasher/local/journal/scott-bellware/`, for example. A project may hold the journals of more than one writer, and each writer's entries live under their own directory. This is distinct from `slasher/local/logs/log/`, the log the agent writes, which is one record for the whole project.
 
 Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local time** by `date +%Y-%m-%dT%H-%M`. The colons of ISO 8601 are written as dashes for filename safety. Never use UTC for these entries, which is the writer's stated preference.
 
@@ -28,19 +28,19 @@ Filename: `YYYY-MM-DDTHH-MM-<name>.md`, with the timestamp computed in **local t
 
 **This rule settles the date alone.** The **time** is the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule's, and that ask fires wherever the writer gave no time — including where they gave a day, since *yesterday* and *today* fix the day and say nothing about the hour.
 
-**Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, to sort chronologically, and to reference. Keeping each writer's entries under `waytide/local/journal/<username>/` separates one writer's record from another's. It separates all of them from the records the agent writes. The summary pays off in a Quick Look preview, which is where a reader meets the entry before opening it.
+**Why:** a consistent, sortable naming scheme keeps a long-running journal easy to skim, to sort chronologically, and to reference. Keeping each writer's entries under `slasher/local/journal/<username>/` separates one writer's record from another's. It separates all of them from the records the agent writes. The summary pays off in a Quick Look preview, which is where a reader meets the entry before opening it.
 
-**How to apply:** when the writer dictates an event or an experience, resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Create a new file in `waytide/local/journal/<username>/` with the local-time filename stamp, a `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, a `**Summary:**` line, and then the first-person narrative. Set the filename stamp to the referenced past time where the entry is not about today. Where the writer gave no time, ask by the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule and stamp the file to their answer. A day they named is not a time.
+**How to apply:** when the writer dictates an event or an experience, resolve the active `<username>` by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule. Create a new file in `slasher/local/journal/<username>/` with the local-time filename stamp, a `# <title>` heading, the datetime line, a `**Tags:**` line where the entry has tags, a `**Summary:**` line, and then the first-person narrative. Set the filename stamp to the referenced past time where the entry is not about today. Where the writer gave no time, ask by the where-an-entry-carries-no-time-ask-for-one-through-the-selection-interface rule and stamp the file to their answer. A day they named is not a time.
 
 Stamp to the minute. Write seconds only where the writer stated seconds, and drop the clock's seconds under **Now**.
 
 ## Compressed
 
 1. Keep the journal as one markdown file per entry.
-2. Put each entry in the writer's own directory, `waytide/local/journal/<username>/`.
-3. Resolve `<username>` as the active writer by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule, for example `waytide/local/journal/scott-bellware/`.
+2. Put each entry in the writer's own directory, `slasher/local/journal/<username>/`.
+3. Resolve `<username>` as the active writer by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule, for example `slasher/local/journal/scott-bellware/`.
 4. A project may hold several writers' journals. Each writer's entries live under their own directory.
-5. The journal is distinct from `waytide/local/logs/log/`, the agent's single project-wide log.
+5. The journal is distinct from `slasher/local/logs/log/`, the agent's single project-wide log.
 
 ## Filename
 
@@ -156,3 +156,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 7:01:39 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 5:52:32 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

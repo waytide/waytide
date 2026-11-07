@@ -1,4 +1,4 @@
-# Contributing to Waytide
+# Contributing to Slasher
 
 How the packages are authored and published. If you only want to *use* a package in your project, see the README.
 
@@ -6,9 +6,9 @@ How the packages are authored and published. If you only want to *use* a package
 
 **This composite repo is where all authoring happens.** It holds every package as a directory under `system/` (`system/foundation`, `system/testing`, …) under one shared history. Add or refine a rule here. A change spanning several packages is one atomic commit, since the packages live together. The whole rule set can be read, grepped, and consolidated in one place. This is the source of truth.
 
-**Each package also has its own repository** in the `waytide` org — `foundation`, `testing`, `git`, and so on. A grouped package's repository is its installed path with the slash flattened to a dash, so a grouped `ext/some-tool` gives `waytide/ext-some-tool`. A package may declare a different one, and the Ruby package does. Each holds a single package's files at its root. These are how a consuming project installs a package.
+**Each package also has its own repository** in the `slasher` org — `foundation`, `testing`, `git`, and so on. A grouped package's repository is its installed path with the slash flattened to a dash, so a grouped `ext/some-tool` gives `slasher/ext-some-tool`. A package may declare a different one, and the Ruby package does. Each holds a single package's files at its root. These are how a consuming project installs a package.
 
-**One package is not authored here.** `ext/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `waytide/waytide-ruby` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
+**One package is not authored here.** `ext/ruby-lang` moved out of this composite on 2026-08-21 and is authored in `slasher-bot/slasher-ruby` directly. Nothing splits into it, so it is not downstream-only and the rule below does not reach it. Its dependency is every package this composite holds, which is what makes installing it enough for a Ruby project. See the migration record *The Ruby package moves to `tools-ruby-lang`*.
 
 The component repositories are **generated from this composite repo, not edited directly.** Publishing a package is a `git subtree split` that extracts one package's slice of the composite repo history and pushes it to that package's repository. Sync runs one way only: composite repo → component repositories.
 
@@ -40,9 +40,9 @@ The component repos now track the `system/<package>` split, and ordinary publish
 git subtree split --prefix=system/testing -b publish-tmp
 # confirm fast-forward, then push:
 git merge-base --is-ancestor \
-  "$(git ls-remote git@github.com:waytide/testing.git master | cut -f1)" \
+  "$(git ls-remote git@github.com:slasher-bot/testing.git master | cut -f1)" \
   publish-tmp && \
-git push git@github.com:waytide/testing.git publish-tmp:master
+git push git@github.com:slasher-bot/testing.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -51,11 +51,11 @@ No package in this composite is nested today. A grouped one would split from its
 **A new package's first publish** has no `master` to fast-forward from, so the guard does not apply — the push creates the branch. Create the repository, give it a description in the form the others use, then split and push:
 
 ```
-gh repo create waytide/<package> --public \
-  -d "Waytide <package>. <What it governs>. By the Eventide Project."
+gh repo create slasher/<package> --public \
+  -d "Slasher <package>. <What it governs>. By the Eventide Project."
 
 git subtree split --prefix=system/<package> -b publish-tmp
-git push git@github.com:waytide/<package>.git publish-tmp:master
+git push git@github.com:slasher-bot/<package>.git publish-tmp:master
 git branch -D publish-tmp
 ```
 
@@ -77,10 +77,10 @@ The normal way to change a rule is to edit it in the composite repo and re-publi
 The one exception: you spot a fix while deep in a consuming project and don't want to lose it. Two ways to capture it, preferred first:
 
 1. **Make the fix in the composite repo** and `git subtree pull` it back down into the consuming project. Cleanest — the change originates where the source lives.
-2. **Push it back from the consuming project.** Commit the edit in the project's `waytide/system/testing/`, then:
+2. **Push it back from the consuming project.** Commit the edit in the project's `slasher/system/testing/`, then:
 
    ```
-   git subtree push --prefix waytide/system/testing git@github.com:waytide/testing.git master
+   git subtree push --prefix slasher/system/testing git@github.com:slasher-bot/testing.git master
    ```
 
    This puts your commits on the component repo. It is a **fallback**. `subtree push` reconciles history awkwardly, and you still have to bring the change into the composite repo yourself. The component repo is downstream, and the next composite split would otherwise overwrite it. Author in the composite whenever you can.

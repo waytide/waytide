@@ -55,10 +55,10 @@ cp "$repository/install" "$control_base_project/install"
 
 (
   cd "$control_base_project"
-  WAYTIDE_ORIGIN="$control_origin" sh install >/dev/null 2>&1
+  SLASHER_ORIGIN="$control_origin" sh install >/dev/null 2>&1
 )
 
-base_packages=$(cd "$control_base_project/waytide/system" && ls)
+base_packages=$(cd "$control_base_project/slasher/system" && ls)
 
 base_expected="design-by-efferent
 foundation
@@ -81,11 +81,11 @@ fi
 
 (
   cd "$control_ruby_project"
-  curl -sSfL -O https://raw.githubusercontent.com/waytide/waytide-ruby/master/install.sh
-  WAYTIDE_ORIGIN=https://github.com/waytide sh install.sh >/dev/null 2>&1
+  curl -sSfL -O https://raw.githubusercontent.com/slasher-bot/slasher-ruby/master/install.sh
+  SLASHER_ORIGIN=https://github.com/slasher-bot sh install.sh >/dev/null 2>&1
 )
 
-ruby_packages=$(cd "$control_ruby_project/waytide/system" && ls)
+ruby_packages=$(cd "$control_ruby_project/slasher/system" && ls)
 
 ruby_expected="design-by-efferent
 ext
@@ -105,10 +105,10 @@ if [ "$ruby_packages" != "$ruby_expected" ]; then
   exit 1
 fi
 
-ruby_package=$(cd "$control_ruby_project/waytide/system/ext" && ls)
+ruby_package=$(cd "$control_ruby_project/slasher/system/ext" && ls)
 
 if [ "$ruby_package" != "ruby-lang" ]; then
-  echo "waytide/system/ext/ holds: $ruby_package"
+  echo "slasher/system/ext/ holds: $ruby_package"
   echo "Expected: ruby-lang"
   echo "1 failed, 0 aborted"
   exit 1

@@ -16,8 +16,8 @@
 #
 # Invocation:
 #
-#   printf '{"session_id":"some-session","tool_use_id":"some-tool-use"}' | waytide/system/git/branch-switch.sh before
-#   printf '{"session_id":"some-session","tool_use_id":"some-tool-use"}' | waytide/system/git/branch-switch.sh after
+#   printf '{"session_id":"some-session","tool_use_id":"some-tool-use"}' | slasher/system/git/branch-switch.sh before
+#   printf '{"session_id":"some-session","tool_use_id":"some-tool-use"}' | slasher/system/git/branch-switch.sh after
 #
 # Nobody types these. The Slasher plugin's hooks run them on every shell command. The lines are
 # recorded because a script whose invocation is not written down is one nobody can reproduce when
@@ -42,7 +42,7 @@ session=$(field session_id)
 tool_use=$(field tool_use_id)
 [ -n "$session" ] || exit 0
 
-records="${TMPDIR:-/tmp}/waytide-branch"
+records="${TMPDIR:-/tmp}/slasher-branch"
 record="$records/$session-$tool_use"
 
 case "$1" in

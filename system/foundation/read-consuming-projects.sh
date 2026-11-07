@@ -1,16 +1,16 @@
 #!/bin/sh
 # Read the consuming projects on this machine — the projects that have installed
-# the Waytide packages — and print the actionable set, one path per line.
+# the Slasher packages — and print the actionable set, one path per line.
 #
-# Run from the root of any project that has installed Waytide. This script lives
+# Run from the root of any project that has installed Slasher. This script lives
 # inside the package, so it is invoked by its path from that root:
 #
-#   waytide/system/foundation/read-consuming-projects.sh
+#   slasher/system/foundation/read-consuming-projects.sh
 #
 # It is packaged rather than kept with the authoring tools because it is not one.
-# It is machine-scoped rather than project-scoped: it reports the Waytide projects
+# It is machine-scoped rather than project-scoped: it reports the Slasher projects
 # on this machine, and the engineer who wants that is anyone who installed
-# Waytide into more than one project, not only whoever maintains Waytide. The
+# Slasher into more than one project, not only whoever maintains Slasher. The
 # authoring tools at the composite root run against the packages; this runs
 # beside projects, which is a third position and the reason it is here.
 #
@@ -25,7 +25,7 @@
 #
 # The registry it reads is per-machine and lives outside this repository:
 #
-#   ~/.config/waytide/consuming-projects.toml
+#   ~/.config/slasher/consuming-projects.toml
 #
 # That placement is the foundation rule a-project-does-not-name-its-downstream-consumers-in-its-own-files: a
 # project does not name the projects that consume it, so this script is
@@ -35,7 +35,7 @@ set -e
 
 # Overridable so the script can be exercised against a registry written for a
 # test, without touching the engineer's own.
-registry=${WAYTIDE_REGISTRY:-$HOME/.config/waytide/consuming-projects.toml}
+registry=${SLASHER_REGISTRY:-$HOME/.config/slasher/consuming-projects.toml}
 
 # --- The registry ----------------------------------------------------------
 #
@@ -169,7 +169,7 @@ fi
 
 # --- Discovery -------------------------------------------------------------
 #
-# A consuming project is a git repository whose root holds waytide/system/ —
+# A consuming project is a git repository whose root holds slasher/system/ —
 # the discriminator refresh-packages.sh already applies, reused rather than
 # defined a second time. This repository is excluded by it without a special
 # case: the authoring source holds system/foundation with no wrapper.
@@ -188,9 +188,9 @@ while IFS= read -r root; do
     continue
   fi
 
-  find "$root" -type d -path '*/waytide/system' -prune -print 2>/dev/null |
+  find "$root" -type d -path '*/slasher/system' -prune -print 2>/dev/null |
     while IFS= read -r match; do
-      project=${match%/waytide/system}
+      project=${match%/slasher/system}
 
       # .git is a directory in an ordinary clone and a file in a worktree.
       if [ -e "$project/.git" ]; then

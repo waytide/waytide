@@ -16,7 +16,7 @@
 
 **A substitution and a discontinuation are different acts.** A substitution names two words. A discontinuation names one. Do not file one under the other's heading.
 
-**A term Waytide did not coin is still a term.** `load-bearing` comes from structural engineering, `cradle` from a physical object, and `preserve` from the vocabulary of design. Each is a term, because the vocabulary says what it means. Where the word was taken rather than coined, the entry says so in its own prose. That is an **origin** and not a kind of entry.
+**A term Slasher did not coin is still a term.** `load-bearing` comes from structural engineering, `cradle` from a physical object, and `preserve` from the vocabulary of design. Each is a term, because the vocabulary says what it means. Where the word was taken rather than coined, the entry says so in its own prose. That is an **origin** and not a kind of entry.
 
 ## Every word in a vocabulary is approved or reserved
 
@@ -25,15 +25,15 @@
 - **Approved** in the STE dictionary, and used with its approved meaning. Nothing further is required, and the entry fixes the word against a neighbouring one rather than asking for permission.
 - **Reserved** as a technical noun or a technical verb, **in a category the entry names**. An STE noun category is reserved under STE Rule 1.5 where the dictionary omits the word, and under STE Rule 1.6 where it lists and refuses it. An STE verb category is reserved under STE Rule 1.12. An ETE category is reserved under the ete-declares-its-own-categories rule. STE Rule 1.8 requires a technical noun to be approved in the subject field, and the vocabulary that holds it is that approval.
 
-**A reserved word's entry states what the STE dictionary says about it.** The word is absent from the dictionary. Or the dictionary refuses it and gives an alternative. Or the dictionary approves it with a meaning Waytide does not use. The last of the three is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
+**A reserved word's entry states what the STE dictionary says about it.** The word is absent from the dictionary. Or the dictionary refuses it and gives an alternative. Or the dictionary approves it with a meaning Slasher does not use. The last of the three is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule, and it is the most expensive of them.
 
 **The sequence for reserving a word is the a-word-is-reserved-in-six-steps rule**, in the `language` package's `ete/` directory.
 
-**Silence means different things in the two kinds of entry.** A **definition** with no STE note names a term absent from the STE dictionary, and reserves it. A definition exists to name a term, and a term names something in the subject field. A **substitution's Use word** with no STE note is **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its waytide-keeps-its-word-where-the-ste-word-means-something-else rule.
+**Silence means different things in the two kinds of entry.** A **definition** with no STE note names a term absent from the STE dictionary, and reserves it. A definition exists to name a term, and a term names something in the subject field. A **substitution's Use word** with no STE note is **ordinary vocabulary**, which is not reserved and not rewritten. See the `language` package's ordinary-vocabulary-is-not-reserved-and-not-rewritten rule, and its slasher-keeps-its-word-where-the-ste-word-means-something-else rule.
 
 **A vocabulary states this by citing this rule, not by repeating it.** One line at its head says that every word in it is approved or reserved, and points here.
 
-## A project's own vocabulary is `waytide/local/vocabulary.md`
+## A project's own vocabulary is `slasher/local/vocabulary.md`
 
 **One file, beside `rules/`, named for what it is.** It holds the terms and substitutions a project settles for itself, in the same shape a package's `vocabulary.md` has. It takes **no datetime prefix**. It is a structural file rather than a dated decision, exactly as a package's `vocabulary.md` is. See the file-names rule.
 
@@ -49,7 +49,7 @@
 
 **Why:** a vocabulary is written rarely and used constantly. What it holds and how its entries are written matter only while one is written, so they load then, and the rules for using a vocabulary stay in every session's read.
 
-**How to apply:** when writing a vocabulary, put each term in its domain's package, keep substitutions and discontinuations under separate headings, and give every word an approval or a reservation. A project's own terms go in `waytide/local/vocabulary.md`, with no datetime prefix, written only once there is a term to write. Say whether an entry narrows or replaces a general term.
+**How to apply:** when writing a vocabulary, put each term in its domain's package, keep substitutions and discontinuations under separate headings, and give every word an approval or a reservation. A project's own terms go in `slasher/local/vocabulary.md`, with no datetime prefix, written only once there is a term to write. Say whether an entry narrows or replaces a general term.
 
 ## Compressed
 
@@ -68,7 +68,7 @@
 4. **Discontinuations** name a word removed from use with nothing in its place, because the concept went, as `discriminator` did.
 5. A substitution names two words. A discontinuation names one.
 6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
-7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+7. A word Slasher did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
 8. Where a word was taken rather than coined, the entry says so in its own prose.
 9. That statement is an **origin**, not a kind of entry.
 
@@ -77,12 +77,12 @@
 1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
 2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
 3. A reserved word is a technical noun or verb in a category its entry names: under STE Rule 1.5 for a noun the dictionary omits, STE Rule 1.6 for a noun it lists and refuses, STE Rule 1.12 for a verb, or an ETE category under the ete-declares-its-own-categories rule. The vocabulary that holds it is the approval STE Rule 1.8 requires.
-4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Slasher does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
 5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
 6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, which is not reserved and not rewritten.
 7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
 
-## A project's own vocabulary is `waytide/local/vocabulary.md`
+## A project's own vocabulary is `slasher/local/vocabulary.md`
 
 1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
 2. It has the same shape as a package's `vocabulary.md`.
@@ -116,3 +116,4 @@ Related:
 ---
 
 Authored by Scott Bellware on Thu Nov 5 2026 at 9:09:06 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

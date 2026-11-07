@@ -1,11 +1,11 @@
 # Dated artifacts are prefixed with an ISO 8601 UTC datetime, and system rules are not
 
-**Trigger:** When creating and naming a new file under waytide/local/ or a new rule file in a package
+**Trigger:** When creating and naming a new file under slasher/local/ or a new rule file in a package
 
 The datetime prefix marks a **dated artifact** — something a project accrues over time, ordered by when it was made. These take it:
 
 - The **working-state** directories: the contemporaneous, historical records under `logs/` — the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/` — and the work-artifact directories `items/`, `implementations/`, and `migration/`.
-- A consuming project's **own local rules** — the rules that project adds to its `waytide/local/rules/`. A local rule is a dated decision in that project's history.
+- A consuming project's **own local rules** — the rules that project adds to its `slasher/local/rules/`. A local rule is a dated decision in that project's history.
 
 The prefix is an **ISO 8601 datetime normalized to UTC**, followed by a dash-separated, lower-case name and `.md`.
 
@@ -19,11 +19,11 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 
 **Package structural files** — `README.md` (its introduction), `vocabulary.md` (its terminology reference), and `install-dependencies.sh` (its dependency installer) — take no prefix either. They are named by what they are.
 
-**A project's own `waytide/local/vocabulary.md` takes no prefix, for the same reason.** It is a structural file rather than a dated entry: it accretes terms over the project's life and is named by what it is. That is what separates it from a local rule, which is a dated decision and takes the prefix. See the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule.
+**A project's own `slasher/local/vocabulary.md` takes no prefix, for the same reason.** It is a structural file rather than a dated entry: it accretes terms over the project's life and is named by what it is. That is what separates it from a local rule, which is a dated decision and takes the prefix. See the a-vocabulary-file-holds-terms-substitutions-and-discontinuations-and-each-word-is-approved-or-reserved rule.
 
 **Why:** the dated artifacts are a chronological record. So one consistent, UTC-normalized, lexically-sortable prefix orders them regardless of directory. It preserves within-day ordering, and avoids timezone drift between machines. System rules are not a chronology. They are the current, durable set of conventions, so each is named for what it says.
 
-**How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `waytide/local/vocabulary.md` no prefix either.
+**How to apply:** prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime. Prefix every local rule a project adds the same way. Name a system package's rules, and its structural files, by a dash-separated, lower-case name — no prefix. Give a project's own `slasher/local/vocabulary.md` no prefix either.
 
 ## Compressed
 
@@ -31,7 +31,7 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 1. A dated artifact takes the datetime prefix. A dated artifact is something a project accrues over time, ordered by when it was made.
 2. The contemporaneous, historical records under `logs/` take it: the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/`.
 3. The work-artifact directories `items/`, `implementations/`, and `migration/` take it.
-4. A consuming project's own local rules, the ones it adds to its `waytide/local/rules/`, take it. A local rule is a dated decision in that project's history.
+4. A consuming project's own local rules, the ones it adds to its `slasher/local/rules/`, take it. A local rule is a dated decision in that project's history.
 5. Prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime.
 6. Prefix every local rule a project adds the same way.
 
@@ -50,7 +50,7 @@ That is the distinction between the two kinds of rule: a **system rule** ships i
 1. System rules do not take the prefix.
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
-4. A project's own `waytide/local/vocabulary.md` takes no prefix.
+4. A project's own `slasher/local/vocabulary.md` takes no prefix.
 
 ## Compression
 
@@ -96,3 +96,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 5:52:41 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 2:41:43 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 9:09:28 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

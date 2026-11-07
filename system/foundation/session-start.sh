@@ -1,8 +1,8 @@
 #!/bin/sh
-# Print the Waytide session-start notice.
+# Print the Slasher session-start notice.
 #
 # Run by the harness as a SessionStart hook, not by the agent — see the
-# the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule. It reads the package directories
+# the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule. It reads the package directories
 # actually present and emits the notice as JSON on stdout, which the harness
 # renders as its own message.
 #
@@ -10,8 +10,8 @@
 #
 # Invocation:
 #
-#   waytide/system/foundation/session-start.sh
-#   waytide/system/foundation/session-start.sh instruction
+#   slasher/system/foundation/session-start.sh
+#   slasher/system/foundation/session-start.sh instruction
 #
 # Nobody types the first. The second prints the read instruction alone, as plain text, and is
 # run by the /load skill, so /load follows the same text load rules acts on rather than a copy.
@@ -22,11 +22,11 @@
 # Never let a notice break a session start.
 set +e
 
-# Locate the system: waytide/system/ in a consuming project, system/
-# in the Waytide authoring source. Checked in that order — a consuming project
+# Locate the system: slasher/system/ in a consuming project, system/
+# in the Slasher authoring source. Checked in that order — a consuming project
 # may have a system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
+if [ -d slasher/system ]; then
+  system=slasher/system
 elif [ -d system ] && [ -d system/foundation ]; then
   system=system
 else
@@ -69,12 +69,12 @@ fi
 # the session, so it could only ever appear here at a moment when nothing was being loaded. The
 # move takes the doubled-backslash hazard with it: nothing of it is interpolated into JSON any
 # more.
-notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
+notice=$(printf 'Slasher installed at %s/ — %s %s: %s' \
   "$system" "$count" "$noun" "$list")
 
 # Report work that has not reached a concluded state. An implementation is never
 # left silently open (the an-implementation-runs-on-a-branch-to-a-declared-end rule), but nothing otherwise
-# brings an open one to attention: the working directories under waytide/ are not read at session
+# brings an open one to attention: the working directories under slasher/ are not read at session
 # start, and work done in a worktree leaves no trace in the main working tree at
 # all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
@@ -154,10 +154,10 @@ report_open() {
   printf '%s %s open: %s' "$open_count" "$noun" "$names"
 }
 
-# Locate the project's own working state: waytide/local/ in a consuming project,
-# local/ in the Waytide authoring source — the same two-layout check the packages get.
-if [ -d waytide/local ]; then
-  own=waytide/local
+# Locate the project's own working state: slasher/local/ in a consuming project,
+# local/ in the Slasher authoring source — the same two-layout check the packages get.
+if [ -d slasher/local ]; then
+  own=slasher/local
 elif [ -d local ]; then
   own=local
 else
@@ -209,7 +209,7 @@ fi
 #
 # The path defaults to the consuming-project layout, which is what an install produces; the
 # authoring source is detected the same way the packages and the open-work scan are.
-own_rules=${own:-waytide/local}
+own_rules=${own:-slasher/local}
 
 # A package's rules are compiled from its source/ directory, by compile.sh in the authoring
 # source. The compiled rules at the package root are what is read. The source rules and the
@@ -222,7 +222,7 @@ own_rules=${own:-waytide/local}
 # agent printed it until 2026-10-10, on an instruction here naming the the-startup-display-prints-as-the-session-starts rule as the
 # first file to open, and under a later model the display stopped reaching the engineer: it was
 # skipped, or written into the agent's thinking where it is not shown. Nothing reported either.
-instruction=$(printf 'Waytide is installed at %s/. Before your first substantive action in this session, run %s/foundation/load-rules.sh from the project root, in one command, and read its whole output; where the output is saved to a file because it is long, read that file to its end. It prints, each under a line naming it, every package'\''s rules-pre-loaded.md and vocabulary.md, foundation first, since it defines the system; the vocabularies'\'' terms are binding and cannot be applied unread. It then prints the local rules this project adds, in %s/rules/, which are binding in the same way, this project'\''s own vocabulary, %s/vocabulary.md, whose terms and substitutions decide over every package'\''s, and the journal. Follow the rules. Read no rule file one by one; the loader'\''s output is the read. Each package'\''s ON DEMAND section lists rules it does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-as-the-session-starts rule describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with /load, or with the command load rules, which ask for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
+instruction=$(printf 'Slasher is installed at %s/. Before your first substantive action in this session, run %s/foundation/load-rules.sh from the project root, in one command, and read its whole output; where the output is saved to a file because it is long, read that file to its end. It prints, each under a line naming it, every package'\''s rules-pre-loaded.md and vocabulary.md, foundation first, since it defines the system; the vocabularies'\'' terms are binding and cannot be applied unread. It then prints the local rules this project adds, in %s/rules/, which are binding in the same way, this project'\''s own vocabulary, %s/vocabulary.md, whose terms and substitutions decide over every package'\''s, and the journal. Follow the rules. Read no rule file one by one; the loader'\''s output is the read. Each package'\''s ON DEMAND section lists rules it does not print, each with its trigger and the command that loads it. When the act a trigger names comes up, run that command and follow the rule it prints before acting. Read only those two beside the packages, unless an installed package'\''s own rule directs another read: the working directories next to them — logs, items, implementations, migration — are worked with as their own conventions describe and are not read as binding rules at session start. The read is unconditional: the apparent size of the first request is not a reason to defer it, because the size of the opening request predicts nothing about where the session goes. Do not print the startup display the the-startup-display-prints-as-the-session-starts rule describes. The harness prints it. Once the rules are read, wait for the engineer to make a request. The engineer may open with /load, or with the command load rules, which ask for exactly that and nothing more. Do not restate the session-start notice or print a package count; the the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice rule reserves that to the harness.' \
   "$system" "$system" "$own_rules" "$own_rules")
 
 # The package set, where the project has declared one. It goes to the agent and not into the

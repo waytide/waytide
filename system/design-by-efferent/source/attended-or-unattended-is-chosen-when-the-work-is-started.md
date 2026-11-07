@@ -112,7 +112,7 @@ The question's opening words and the options are fixed. The plan's steps are the
 
 **The plan is a list.** Use an ordered list where each step rests on the one above it. Use a bullet list where the steps are independent. This is the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, applied to a plan.
 
-**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Waytide's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
+**Write the plan in ETE.** That is Eventide Technical English: the STE dictionary and the STE writing rules, with Slasher's reserved terms. Short sentences. Active voice. No semicolon. One idea in each list item. The STE dictionary does not approve `hinge`, `actuation`, `cradle`, or `solubility`. A plan written in the raw standard could not name any of them. See the `language` package's ETE rules, in `ete/`.
 
 **This is not a planning record.** `foundation` governs the project's planning records, which are written to a directory and kept. This plan is presented inside the selection, before the agent generates, and it is not written to a file.
 
@@ -218,7 +218,7 @@ with these exact options:
 6. The plan is a list.
 7. Use an ordered list where each step rests on the one above it.
 8. Use a bullet list where the steps are independent.
-9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Waytide's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
+9. Write the plan in ETE, per the `language` package's ETE rules in `ete/`. Slasher's reserved terms, such as hinge, actuation, cradle, and solubility, may be used in it.
 10. Use short sentences and active voice in the plan.
 11. Use no semicolon in the plan.
 12. Put one idea in each list item.
@@ -295,3 +295,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:12:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:07:02 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT

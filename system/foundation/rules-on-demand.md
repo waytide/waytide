@@ -2,9 +2,9 @@
 
 Source: system/foundation/source/a-command-takes-its-subcommand-first-asks-when-it-has-none-and-its-domain-takes-help.md
 
-Trigger: When running or writing a Waytide slash command
+Trigger: When running or writing a Slasher slash command
 
-1. A Waytide command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
+1. A Slasher command is typed `/<command> [<subcommand>] [<arguments>]`. The first word after the name is the subcommand, and the rest are its arguments, as in `/item list current`. Every command reads its words this way.
 2. With no subcommand, the command asks which one is meant, through the selection interface, unless its help gives the bare command a meaning of its own, as a bare `/journal` writes an entry.
 3. Where a command has more than four subcommands, the question groups them, and asks again within the group selected.
 4. An alias does exactly what the command it names does, as `/idea` does `/item idea`. Its arguments pass to that command unchanged.
@@ -62,7 +62,7 @@ Trigger: When creating an implementation record, or changing its **State:** line
 
 ## An implementation record takes a log entry
 
-1. An implementation record pairs with a one-line entry in `waytide/local/logs/log/`.
+1. An implementation record pairs with a one-line entry in `slasher/local/logs/log/`.
 2. Write the entry when the record is created.
 3. Write another entry on each change of the canonical `**State:**` line.
 
@@ -100,7 +100,7 @@ Source: system/foundation/source/a-log-entry-is-written-for-an-item-on-creation-
 
 Trigger: When creating an item, adding a dated Settled resolution to it, changing its **State:** line, or closing a work session with a reconciliation
 
-1. An item in `waytide/local/items/` pairs with a one-line entry in `waytide/local/logs/log/`.
+1. An item in `slasher/local/items/` pairs with a one-line entry in `slasher/local/logs/log/`.
 2. Write the entry at three moments, and at no others.
 3. The item's kind tag, such as `[design]`, `[plan]`, or `[aspiration]`, makes no difference, and an item with no kind tag takes the same entries.
 4. Write the entry on the item's creation.
@@ -149,7 +149,7 @@ Trigger: When writing a log entry that records a decision
 2. The tag uses the one form every record uses:
 
 ```
-# The README item settles that the README's content is addressed with Waytide's website, and waits for it
+# The README item settles that the README's content is addressed with Slasher's website, and waits for it
 
 **Tags:** [decision]
 ```
@@ -201,7 +201,7 @@ A list of items takes the ordinal and no SHA columns:
 | # |                        | item                        | state  |
 |---|------------------------|-----------------------------|--------|
 | 1 | `2026-08-10T20-54-51Z` | A Generalized Description   | Active |
-| 2 | `2026-08-23T06-58-41Z` | Waytide for content and web | Open   |
+| 2 | `2026-08-23T06-58-41Z` | Slasher for content and web | Open   |
 ```
 
 9. A record that was never amended shows the same SHA in both columns. This is intended, since it shows the record has not been touched since it was written.
@@ -436,7 +436,7 @@ Trigger: When writing, revising, or creating a `vocabulary.md` file
 4. **Discontinuations** name a word removed from use with nothing in its place, because the concept went, as `discriminator` did.
 5. A substitution names two words. A discontinuation names one.
 6. Keep substitutions and discontinuations under separate headings. Do not file one under the other's heading.
-7. A word Waytide did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
+7. A word Slasher did not coin is still a term where the vocabulary says what it means, and is entered as one. Examples: `load-bearing`, `cradle`, `preserve`.
 8. Where a word was taken rather than coined, the entry says so in its own prose.
 9. That statement is an **origin**, not a kind of entry.
 
@@ -445,12 +445,12 @@ Trigger: When writing, revising, or creating a `vocabulary.md` file
 1. Every word in a vocabulary is approved or reserved. This holds for its terms and for the Use column of its substitutions.
 2. An approved word is approved in the STE dictionary and used with its approved meaning. Nothing further is required.
 3. A reserved word is a technical noun or verb in a category its entry names: under STE Rule 1.5 for a noun the dictionary omits, STE Rule 1.6 for a noun it lists and refuses, STE Rule 1.12 for a verb, or an ETE category under the ete-declares-its-own-categories rule. The vocabulary that holds it is the approval STE Rule 1.8 requires.
-4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Waytide does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
+4. A reserved word's entry states what the STE dictionary says about it: absent, refused with an alternative, or approved with a meaning Slasher does not use. The last is governed by the ete-fixes-the-meaning-of-a-word-in-its-category rule.
 5. Reserve a word by the sequence the a-word-is-reserved-in-six-steps rule gives, in the `language` package's `ete/` directory.
 6. A definition with no STE note reserves a term absent from the dictionary. A substitution's Use word with no STE note is ordinary vocabulary, which is not reserved and not rewritten.
 7. One line at a vocabulary's head says that every word in it is approved or reserved, and cites this rule. The vocabulary does not repeat the rule.
 
-## A project's own vocabulary is `waytide/local/vocabulary.md`
+## A project's own vocabulary is `slasher/local/vocabulary.md`
 
 1. It is one file, beside `rules/`, holding the terms and substitutions a project settles for itself.
 2. It has the same shape as a package's `vocabulary.md`.
@@ -532,7 +532,7 @@ Trigger: When starting, adding a worktree to, suspending, or concluding an exper
 6. Offer the current branch last, because a first option reads as recommended, and the current branch gives up isolation.
 7. The current branch's cost: there is no isolation, partial work sits where others read, and abandoning means reverting rather than deleting a branch.
 8. On the current branch, the record still carries the intent, the state, and the confirmations.
-9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `waytide-experiment-state-suffix-legibility`.
+9. Place a worktree beside the repository directory, named `<repository-name>-<branch, each slash as a dash>`, as in `slasher-experiment-state-suffix-legibility`.
 10. A worktree inside the repository would show as untracked content in the work's own `git status`.
 11. Create a branch-only implementation with `git switch -c <branch>`, and a worktree implementation with `git worktree add -b <branch> <path>`, where `-b` is required.
 12. Use `git worktree add <path> <branch>` only to add a worktree to work under way, since it fails on a branch that does not exist.
@@ -612,9 +612,9 @@ Trigger: When starting, adding a worktree to, suspending, or concluding an exper
 
 Source: system/foundation/source/an-item-that-sequences-work-contains-no-code-samples.md
 
-Trigger: When writing or revising an item in waytide/local/items/ that sequences work
+Trigger: When writing or revising an item in slasher/local/items/ that sequences work
 
-1. An item in `waytide/local/items/` that sequences work must never contain code samples, whatever its tags name it.
+1. An item in `slasher/local/items/` that sequences work must never contain code samples, whatever its tags name it.
 2. Such a plan contains no code blocks.
 3. It contains no literal method bodies.
 4. It contains no "write this content" snippets.
@@ -630,14 +630,14 @@ Trigger: When writing or revising an item in waytide/local/items/ that sequences
 
 Source: system/foundation/source/an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes.md
 
-Trigger: When recording or revising an observation in waytide/local/items/
+Trigger: When recording or revising an observation in slasher/local/items/
 
 Lines 1–6 below are the opening statements, which come before any section heading.
 
-1. `waytide/local/items/` holds working hypotheses, definitions, and methods that are not yet binding.
+1. `slasher/local/items/` holds working hypotheses, definitions, and methods that are not yet binding.
 2. They are rule-candidates surfaced during open-ended discovery, before the thinking has stabilized.
 3. They are not read as binding at session start, the way rules are.
-4. An observation lives in `waytide/local/items/`.
+4. An observation lives in `slasher/local/items/`.
 5. An observation is tagged `[observation]`.
 6. The tag is what makes a record an observation.
 
@@ -653,7 +653,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 8. A later observation states the later thinking.
 9. The earlier observation stays as what was thought at the time.
 10. An observation is not promoted.
-11. Where the thinking stabilizes into a binding convention, write the rule in `waytide/local/rules/` the way any rule is written.
+11. Where the thinking stabilizes into a binding convention, write the rule in `slasher/local/rules/` the way any rule is written.
 12. Do not change the observation. It takes no line naming the rule.
 13. The the-items-directory-holds-one-file-per-item rule needs no exception, because an observation also carries a state from the moment it is written. Its state is fixed, not absent.
 
@@ -669,7 +669,7 @@ Lines 1–6 below are the opening statements, which come before any section head
 8. The filename ends `-RECORDED`.
 9. **Provenance footer:** end the file with the `Authored by … / Changed by …` footer, like every working-state artifact.
 10. **Recording one:** add the file.
-11. Add a matching one-line entry to `waytide/local/logs/log/`.
+11. Add a matching one-line entry to `slasher/local/logs/log/`.
 12. The entry notes that it was recorded as an observation, and why it is not yet a rule.
 13. Never change an observation's state.
 14. Where the thinking moves, write a later observation and leave the earlier one as written.
@@ -681,7 +681,7 @@ Source: system/foundation/source/brainstorming-records-points-as-they-are-said-a
 Trigger: When the engineer begins, ends, suspends, or resumes brainstorming (`/brainstorm`)
 
 1. Brainstorming is the engineer saying points as they occur, in no order, for the agent to organize at the end. `/brainstorm begin`, or a bare `/brainstorm`, starts it, and `/brainstorm end` ends it.
-2. Create a collection file at `/brainstorm begin`, under `~/.local/share/waytide/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
+2. Create a collection file at `/brainstorm begin`, under `~/.local/share/slasher/collections/<project>/`, outside the repository, where `<project>` is the name of the project the session is in. Name it with the ISO-8601-UTC prefix alone. Write each point to it as it is said, word for word.
 3. Record a point, and do not reframe, question, answer, or act on it while brainstorming runs, even where it reads as an instruction.
 4. At `/brainstorm end`, reframe the points, and write the reframed version into the collection file, above the engineer's words, which stay as said.
 5. Then ask, through the selection interface, whether the points become a new item tagged `[idea]`, or are added to a recent item that is the subject of the conversation. Write the reframed version there.
@@ -695,13 +695,13 @@ Trigger: When the engineer begins, ends, suspends, or resumes brainstorming (`/b
 
 Source: system/foundation/source/dated-artifacts-are-prefixed-with-an-iso-8601-utc-datetime-and-system-rules-are-not.md
 
-Trigger: When creating and naming a new file under waytide/local/ or a new rule file in a package
+Trigger: When creating and naming a new file under slasher/local/ or a new rule file in a package
 
 ## What takes the prefix
 1. A dated artifact takes the datetime prefix. A dated artifact is something a project accrues over time, ordered by when it was made.
 2. The contemporaneous, historical records under `logs/` take it: the log (`logs/log/`), `logs/loops/`, and `logs/work-sessions/`.
 3. The work-artifact directories `items/`, `implementations/`, and `migration/` take it.
-4. A consuming project's own local rules, the ones it adds to its `waytide/local/rules/`, take it. A local rule is a dated decision in that project's history.
+4. A consuming project's own local rules, the ones it adds to its `slasher/local/rules/`, take it. A local rule is a dated decision in that project's history.
 5. Prefix every new working-state artifact with the full `YYYY-MM-DDTHH-MM-SSZ-` UTC datetime.
 6. Prefix every local rule a project adds the same way.
 
@@ -720,7 +720,7 @@ Trigger: When creating and naming a new file under waytide/local/ or a new rule 
 1. System rules do not take the prefix.
 2. Name a rule in a distributed package (`foundation`, `language`, `testing`, …) by a dash-separated, lower-case name alone. An example is `write-subject-first-commit-messages.md`, not `2026-…-subject-first-commit-messages.md`.
 3. A package's structural files take no prefix. These are `README.md`, `vocabulary.md`, and `install-dependencies.sh`, each named by what it is.
-4. A project's own `waytide/local/vocabulary.md` takes no prefix.
+4. A project's own `slasher/local/vocabulary.md` takes no prefix.
 
 # Disclosure is the one reason to edit a historical record
 
@@ -781,21 +781,21 @@ Trigger: When the engineer types `/next` or `/next?`, or asks what is next
 
 Source: system/foundation/source/package-refresh-and-install-run-foundations-scripts.md
 
-Trigger: When the engineer asks to refresh or install Waytide's packages, as with `/package refresh` or `/package install`
+Trigger: When the engineer asks to refresh or install Slasher's packages, as with `/package refresh` or `/package install`
 
 1. `/package refresh [<package>...]` refreshes the installed packages from their repositories. Run foundation's `refresh-packages.sh` with the packages named, or none for every one. Report each package that moved and its changed rule files, as the script prints them.
-2. `/package install` installs Waytide into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
+2. `/package install` installs Slasher into the project the session is in. Run foundation's `install.sh` from that project's root. The installer asks before changing a file the project already has.
 3. Act only on the project the session is in. Refreshing or installing in another project is the engineer's to ask for there.
-4. Never run `/package install` in the Waytide authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
+4. Never run `/package install` in the Slasher authoring source, whose root `AGENTS.md` it would overwrite with a consuming project's bootstrap.
 5. Say that a refreshed or installed rule is read at the next load of the rules: a session restart, or `load rules`.
 
-# Projects lists the machine's registry of Waytide projects
+# Projects lists the machine's registry of Slasher projects
 
-Source: system/foundation/source/projects-lists-the-machines-registry-of-waytide-projects.md
+Source: system/foundation/source/projects-lists-the-machines-registry-of-slasher-projects.md
 
-Trigger: When the engineer asks for the Waytide projects on this machine, as with `/projects`
+Trigger: When the engineer asks for the Slasher projects on this machine, as with `/projects`
 
-1. `/projects` lists the Waytide projects registered on this machine, from within any project. Run foundation's `read-consuming-projects.sh`, which reads `~/.config/waytide/consuming-projects.toml`, and print its report.
+1. `/projects` lists the Slasher projects registered on this machine, from within any project. Run foundation's `read-consuming-projects.sh`, which reads `~/.config/slasher/consuming-projects.toml`, and print its report.
 2. Write no project's name into any file, and none into the project the session is in.
 3. List only. Do not change the registry, and act on no project listed. Where there is no registry, say so.
 
@@ -863,23 +863,23 @@ Trigger: When writing or changing a rule file
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 
-# The harness announces Waytide's installation, and the agent never prints the notice
+# The harness announces Slasher's installation, and the agent never prints the notice
 
-Source: system/foundation/source/the-harness-announces-waytides-installation-and-the-agent-never-prints-the-notice.md
+Source: system/foundation/source/the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice.md
 
 Trigger: When changing the session-start notice, the startup display, the status line, or their hooks or scripts
 
-1. The harness announces Waytide, through three surfaces it renders.
+1. The harness announces Slasher, through three surfaces it renders.
 2. The agent prints no notice, at session start or at any other time.
 3. An agent-printed copy would only duplicate the harness's.
 4. The agent prints two things at the start, because each needs markdown: the package set stanza, where a project shows one, and the command domain table, at the end of the session-start read.
 
 ## The session-start notice
 
-1. The Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
+1. The Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`, which reads the package directories on disk and emits the notice:
 
 ```
-Waytide installed at waytide/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
+Slasher installed at slasher/system/ — 5 packages: foundation, language, testing, design-by-efferent, git
 
 3 implementations open: gate-forecasting (no state recorded), shipped-test-tree-script (suspended), upload-retries (suspended)
 ```
@@ -887,7 +887,7 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 2. The install line enumerates what is on disk.
 3. A directory carrying a `README.md` is a package, which tells a grouped package from the grouping directory above it.
 4. Nothing prints a fixed list.
-5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `waytide/local/implementations/`.
+5. The open line, after a blank line below the install line, names experiments and features that have not concluded, read from each record's `**State:**` line under `slasher/local/implementations/`.
 6. An implementation that is Affirmed, Refuted, Inconclusive, Completed, Abandoned, or Superseded has concluded, whatever its kind.
 7. One that is Active, Suspended, or carries no state line is reported.
 8. With nothing open, the open line is absent.
@@ -938,18 +938,18 @@ Waytide installed at waytide/system/ — 5 packages: foundation, language, testi
 
 ## The status line
 
-1. `waytide/system/foundation/statusline.sh` keeps the system's presence on screen all session:
+1. `slasher/system/foundation/statusline.sh` keeps the system's presence on screen all session:
 
 ```
-waytide · master :: Waytide
-waytide · master · uncommitted changes · untracked files · unpushed commits :: Waytide
+slasher · master :: Slasher
+slasher · master · uncommitted changes · untracked files · unpushed commits :: Slasher
 ```
 
 2. The repository name leads, in bold. The bold is a terminal escape sequence the harness passes through.
 3. The bold repository name is the only emphasis on the line.
 4. A middle dot separates the engineer's segments.
-5. The Waytide segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
-6. The Waytide segment is one word, with no package count.
+5. The Slasher segment trails after a double colon, which separates and does nothing else. So the segment reads as an annotation on the line.
+6. The Slasher segment is one word, with no package count.
 7. Presence is read from disk, by the same README test the notice uses.
 8. The detail is the status report's (see the a-status-report-prints-a-fixed-whole-project-report rule).
 9. `uncommitted changes` appears only when there is a modified tracked file, a staged change, or an untracked file that is not ignored.
@@ -965,7 +965,7 @@ waytide · master · uncommitted changes · untracked files · unpushed commits 
 ## The startup display
 
 1. As the session starts, the display's session-start part frames the notice's message: the title and the copyright and license ahead of it, and the load line after it, last, read from the the-startup-display-prints-as-the-session-starts rule.
-2. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
+2. On every prompt, the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh`, which prints the loading part, the loading line and then the figure, on the session's first prompt only.
 3. The first prompt is when the read starts, whatever the prompt is.
 4. The agent does not print it.
 
@@ -999,7 +999,7 @@ Source: system/foundation/source/the-implementations-directory-holds-one-record-
 
 Trigger: When starting an experiment or feature, or writing or changing an implementation record
 
-1. `waytide/local/implementations/` holds implementation records, one file per implementation.
+1. `slasher/local/implementations/` holds implementation records, one file per implementation.
 2. A record carries how the implementation began, where it is being worked, and what became of it.
 3. An implementation is a bounded unit of work with a lifecycle.
 4. The record is a persisted, dated artifact, kept after the implementation concludes.
@@ -1061,10 +1061,10 @@ Trigger: When starting an experiment or feature, or writing or changing an imple
 
 ## It is the lifecycle record, not the design record
 
-1. The same work's design belongs in a loop record under `waytide/local/logs/loops/`.
+1. The same work's design belongs in a loop record under `slasher/local/logs/loops/`.
 2. A loop record holds each cycle's hinge, the options put to the engineer, and the decision.
 3. The implementation record and the loop record divide by concern. Each names the other.
-4. Keep them as separate files. `waytide/local/logs/loops/` belongs to `design-by-efferent`, which includes `foundation`, not the reverse.
+4. Keep them as separate files. `slasher/local/logs/loops/` belongs to `design-by-efferent`, which includes `foundation`, not the reverse.
 5. A foundation rule must not require fields in that directory. That dependency is refused.
 6. Naming the loop record in prose is a citation and is permitted. It is the only reference permitted.
 
@@ -1085,7 +1085,7 @@ Source: system/foundation/source/the-items-directory-holds-one-file-per-item.md
 
 Trigger: When creating an item, changing an item's state or content, or answering against what an item settled
 
-1. `waytide/local/items/` holds the project's items, one file per item. Every record there is an item, and only an item.
+1. `slasher/local/items/` holds the project's items, one file per item. Every record there is an item, and only an item.
 2. An item is the thinking that settles what the work should be and how it should go.
 3. Name the file with the ISO-8601-UTC prefix, ending in its state in upper case.
 4. Write the item as frontmatter-free markdown.
@@ -1181,13 +1181,13 @@ Source: system/foundation/source/the-logs-directory-holds-the-contemporaneous-hi
 
 Trigger: When writing a record under local/logs/ or deciding which directory a new kind of record belongs in
 
-1. `waytide/local/logs/` holds the project's contemporaneous, historical records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
-2. `waytide/local/logs/log/` holds the log, one file per entry, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
-3. `waytide/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
-4. `waytide/local/logs/work-sessions/` holds the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
-5. Write a decision entry to `waytide/local/logs/log/`.
-6. Write a loop record to `waytide/local/logs/loops/`.
-7. Write a work session record to `waytide/local/logs/work-sessions/`.
+1. `slasher/local/logs/` holds the project's contemporaneous, historical records, together. Every record here takes the ISO-8601-UTC prefix of the file-names rule.
+2. `slasher/local/logs/log/` holds the log, one file per entry, with a one-line title (`the-log-holds-one-file-per-entry-with-a-one-line-title`).
+3. `slasher/local/logs/loops/` holds the loop records, one file per feature, recording the cycles through the loop (`design-by-efferent`'s a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule).
+4. `slasher/local/logs/work-sessions/` holds the narrative record of a work session (`the-work-sessions-directory-holds-one-record-per-work-session`).
+5. Write a decision entry to `slasher/local/logs/log/`.
+6. Write a loop record to `slasher/local/logs/loops/`.
+7. Write a work session record to `slasher/local/logs/work-sessions/`.
 8. A record belongs here only when it accrues chronologically and is never revised.
 9. Each record here is a running account, entry after entry, in the order things happened, and it is reached by date.
 10. Nothing here states what is currently true. Items, implementation records, and migration records do not belong here.
@@ -1198,8 +1198,8 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 
 ## A fourth contemporaneous, historical record goes here
 
-1. Put a contemporaneous, historical record this rule does not name under `waytide/local/logs/` too.
-2. The convention that adds it names its directory under `waytide/local/logs/`.
+1. Put a contemporaneous, historical record this rule does not name under `slasher/local/logs/` too.
+2. The convention that adds it names its directory under `slasher/local/logs/`.
 3. That is all this rule asks of a later convention.
 
 ## The grouping crosses a package boundary, and does not invert it
@@ -1208,6 +1208,21 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 2. Foundation's naming of `logs/loops/` is only a citation.
 3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
+
+# The Slasher skills are delivered as a plugin named slasher
+
+Source: system/foundation/source/the-slasher-skills-are-delivered-as-a-plugin-named-slasher.md
+
+Trigger: When writing a Slasher skill, or installing, refreshing, or activating the packages that carry skills
+
+1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
+2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
+3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Slasher authoring source.
+4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
+5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
+6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
+7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
+8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
 
 # The startup display prints as the session starts
 
@@ -1218,8 +1233,8 @@ Trigger: When a session starts, or the engineer types its first prompt, or when 
 1. The display prints verbatim in two parts. The session-start part prints as the session starts: the title and the copyright and license ahead of the session-start notice, and the load line after it, last. The loading part, the loading line and then the figure, prints on the session's first prompt, whatever it is. These five are always printed, in this file's order.
 2. The package set is printed only where the project has declared one, after the loading part.
 3. The harness prints both parts. The agent prints none of them.
-4. As the session starts, the Slasher plugin's `SessionStart` hook runs `waytide/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
-5. On every prompt, the plugin's `UserPromptSubmit` hook runs `waytide/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
+4. As the session starts, the Slasher plugin's `SessionStart` hook runs `slasher/system/foundation/session-start.sh`, which prints the title and the copyright and license ahead of the session-start notice and the load line after it, in one `systemMessage`. It takes them from `startup-display.sh message` and `startup-display.sh load-line`, each of which prints its blocks alone.
+5. On every prompt, the plugin's `UserPromptSubmit` hook runs `slasher/system/foundation/startup-display.sh`, which prints the loading part as a `systemMessage` on the session's first prompt only. A marker named for the session, under the temporary directory, records that the first prompt has passed. A prompt that names no session prints the loading part every time.
 6. The agent prints the package set, at the head of the response that carries the rule read.
 7. The script reads the five from the fenced blocks of this rule's body, in its source file, by position. It stops at the `## Compressed` heading.
 8. The first, third, and fourth fenced blocks are the title, the copyright and license, and the load line. The fifth and sixth are the loading line and the figure.
@@ -1237,7 +1252,7 @@ Slasher: Human-in-the-Loop Harness
 15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
 16. The title stands alone. No subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
-18. No description of Waytide is printed. What Waytide is and does belongs to the `README.md`.
+18. No description of Slasher is printed. What Slasher is and does belongs to the `README.md`.
 19. The display carries nothing that argues for the system to a reader already using it.
 20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
 21. The stanza follows the display rather than sitting inside it.
@@ -1286,10 +1301,10 @@ Copyright © 2026 Scott Bellware
 50. The load line follows the session-start notice, after one blank line, and ends the session-start message:
 
 ```
-Waytide's rules will load on the first prompt, or enter: /load
+Slasher's rules will load on the first prompt, or enter: /load
 ```
 
-51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Waytide's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
+51. The load line states that the rules load on the first prompt, whatever it is, and that `/load` loads them now. It names its subject, *Slasher's rules*, itself. The plugin that prints it carries the `/load` skill, so the command it names is always available.
 52. The session-start notice has no close of its own. The load line says what a close said.
 53. The loading part opens with the loading line, which names the wait for the read:
 
@@ -1322,21 +1337,6 @@ Slasher is pre-loading its rules...
 58. These are the whole of what is printed. No greeting, no account of what is about to be read, and no name for the block accompany them.
 59. The package set's absence is the ordinary case, not an omission.
 
-# The Waytide skills are delivered as a plugin named slasher
-
-Source: system/foundation/source/the-waytide-skills-are-delivered-as-a-plugin-named-slasher.md
-
-Trigger: When writing a Waytide skill, or installing, refreshing, or activating the packages that carry skills
-
-1. The skills reach a project as one skills-directory plugin, called Slasher, at `.claude/skills/slasher/`, whose `.claude-plugin/plugin.json` gives `name` as `slasher`, the namespace, and `displayName` as `Slasher`, the name shown. A skill is typed `/slasher:<command>`, as in `/slasher:log`, or `/<command>` where no other command claims the name.
-2. Each package carries its own skills, as `skills/<command>/SKILL.md`, one directory per root command or alias. A skill belongs to the package whose rule it hands its act to.
-3. `assemble-plugin.sh` builds `.claude/skills/slasher/` from foundation's `plugin/` directory, which holds the manifest and the hooks, and the active packages' skills, leaving out a deactivated package's. `install.sh` and `refresh-packages.sh` run it, and `compile.sh` in the Waytide authoring source.
-4. Commit the assembled directory, as `.claude/settings.json` is committed. Change a skill in its package, never in the assembled directory.
-5. A skill's body stays thin: it only reads the words typed, loads the rule governing the act with `load-rules.sh`, and follows it. Where a script already prints the instruction the act follows, the skill runs it and follows its output instead, as `/load` runs `session-start.sh instruction`.
-6. Each command domain's help command carries the domain's help, as `help.md` beside its `SKILL.md`: that domain's section of the help text. `/<command> help` prints it. A skill that is not its domain's help command carries no `help.md`.
-7. `/slasher help` prints every active domain's help together, in the order of the help text. A bare `/slasher` does nothing.
-8. A domain with no root command of its own name, such as PROCESS or LANGUAGE, has a skill that takes only `help`, as `/process` and `/language`.
-
 # Work status says what was recently done, and what is next
 
 Source: system/foundation/source/work-status-says-what-was-recently-done-and-what-is-next.md
@@ -1347,16 +1347,16 @@ Trigger: When the engineer types `/work-status` or its alias `/sup?`, or asks wh
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
-5. Carry no task table, no map of `waytide/`, and no suite run. Those belong to `/status-report`.
+5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
 6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
 
 # Working-state artifacts carry a provenance footer
 
 Source: system/foundation/source/working-state-artifacts-carry-a-provenance-footer.md
 
-Trigger: When creating or changing a working-state document under waytide/
+Trigger: When creating or changing a working-state document under slasher/
 
-1. Every working-state artifact under `waytide/` that is a document with a body ends with a **provenance footer**.
+1. Every working-state artifact under `slasher/` that is a document with a body ends with a **provenance footer**.
 2. The footer is the `Authored by … / Changed by …` block, in the record-a-rules-authorship-in-a-provenance-footer format, with a local human-readable datetime.
 3. The footer goes on every implementation record, whether an experiment or a feature.
 4. It goes on every item, whatever it is tagged, including designs, plans, observations, and deferred work.
@@ -1370,6 +1370,6 @@ Trigger: When creating or changing a working-state document under waytide/
 
 ## The one exception — the log
 
-1. Do not add a footer to a `waytide/local/logs/log/` entry.
+1. Do not add a footer to a `slasher/local/logs/log/` entry.
 2. A log entry is deliberately one line: a `# <title>`, with no body and no template. See the the-log-holds-one-file-per-entry-with-a-one-line-title rule.
 3. A log entry records who and when by its ISO-8601-UTC filename and its commit history, not by an in-file footer.

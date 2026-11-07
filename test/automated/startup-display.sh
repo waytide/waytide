@@ -29,7 +29,7 @@ Eventide Common Interest License
 DISPLAY
 }
 
-control_load_line="Waytide's rules will load on the first prompt, or enter: /load"
+control_load_line="Slasher's rules will load on the first prompt, or enter: /load"
 
 control_loading_text() {
   cat <<'DISPLAY'

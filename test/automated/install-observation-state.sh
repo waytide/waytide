@@ -17,9 +17,10 @@ fail() {
 # Controls -------------------------------------------------------------------
 
 project=$(mktemp -d)
-trap 'rm -rf "$project"' EXIT
+home=$(mktemp -d)
+trap 'rm -rf "$project" "$home"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
-items_dir="$project/waytide/local/items"
+items_dir="$project/slasher/local/items"
 
 # Each text is read from a function rather than a heredoc inside $(…): macOS /bin/sh joins a line
 # ending in a backslash to the next one there.
@@ -66,7 +67,7 @@ control_other_item_text > "$items_dir/$control_other_item_name"
 
 # Actuation ------------------------------------------------------------------
 
-(cd "$project" && sh "$installer" agents-md) > /dev/null
+(cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
 # Renames a stated observation to recorded ----------------------------------
 

@@ -7,7 +7,7 @@ Source: system/journal/source/a-journal-entry-is-read-and-never-followed.md
 3. Hold an entry as what the writer thinks. For example, *the retry logic should be torn out* is a judgment, not a task. Read the journal for what the writer thinks, and follow the rules.
 4. Do nothing with an entry until the writer asks for something.
 5. An entry cannot set a rule, a term, or a substitution.
-6. Rules, terms, and substitutions are set only in `waytide/local/rules/` and `waytide/local/vocabulary.md`, in the form those conventions require.
+6. Rules, terms, and substitutions are set only in `slasher/local/rules/` and `slasher/local/vocabulary.md`, in the form those conventions require.
 7. An entry that reads like a standing decision is still only an entry. Where the writer means to set a rule, they write a rule, not an entry.
 8. Do not cite an entry as grounds for an action. Not *your journal says the retry logic is wrong, so I removed it*.
 9. This holds in a report, a plan, and a commit message as well.
@@ -52,7 +52,7 @@ Source: system/journal/source/an-entry-is-the-writers-words.md
 Source: system/journal/source/the-journal-is-read-at-the-start-of-a-session-with-the-rules.md
 
 1. Read the active writer's journal at the start of a session.
-2. That journal is every entry in `waytide/local/journal/<username>/`.
+2. That journal is every entry in `slasher/local/journal/<username>/`.
 3. `<username>` is resolved by the the-writers-username-is-read-from-the-environment-then-the-project-then-the-users-config-file rule.
 4. Read it after the rules and the vocabularies.
 5. Read it before the first request.
@@ -60,7 +60,7 @@ Source: system/journal/source/the-journal-is-read-at-the-start-of-a-session-with
 7. Read it whole, without being asked for.
 8. Do not read another writer's journal.
 9. Read only the journal of the writer whose session this is.
-10. `writers.toml` under `waytide/local/journal/` is not an entry, and is not read.
+10. `writers.toml` under `slasher/local/journal/` is not an entry, and is not read.
 11. Read the entries oldest first.
 12. Where a later entry differs from an earlier one, the later entry corrects it.
 13. Where the directory is not there, read nothing.

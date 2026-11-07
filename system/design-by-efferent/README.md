@@ -1,4 +1,4 @@
-# Waytide — design-by-efferent
+# Slasher — design-by-efferent
 
 **Design By Efferent** (DBE). Human-in-the-loop, efferent-first design method. An updated TDD variant with accommodations for AI. Tests are the vehicle and design is the point. The **actuation**, the first efferent reference to a unit, is written before any implementation, forcing the interface to be designed from the use site.
 
@@ -51,27 +51,27 @@ design-by-efferent  →  foundation, language, testing
 
 ## Installing into a project
 
-Install with `git subtree`. It puts the files in your project's `waytide/system/` tree, committed alongside your code and read at session start:
+Install with `git subtree`. It puts the files in your project's `slasher/system/` tree, committed alongside your code and read at session start:
 
 ```
-git subtree add  --prefix waytide/system/design-by-efferent git@github.com:waytide/design-by-efferent.git master --squash
-git subtree pull --prefix waytide/system/design-by-efferent git@github.com:waytide/design-by-efferent.git master --squash
+git subtree add  --prefix slasher/system/design-by-efferent git@github.com:slasher-bot/design-by-efferent.git master --squash
+git subtree pull --prefix slasher/system/design-by-efferent git@github.com:slasher-bot/design-by-efferent.git master --squash
 ```
 
-**Over HTTPS**, where no SSH key is registered, use `https://github.com/waytide/design-by-efferent.git` in place of the address above. A script takes `WAYTIDE_ORIGIN=https://github.com/waytide` for the same reason.
+**Over HTTPS**, where no SSH key is registered, use `https://github.com/slasher-bot/design-by-efferent.git` in place of the address above. A script takes `SLASHER_ORIGIN=https://github.com/slasher-bot` for the same reason.
 
-It includes `foundation`, `language`, and `testing` — install those too, or run `waytide/system/design-by-efferent/install-dependencies.sh` from your project root.
+It includes `foundation`, `language`, and `testing` — install those too, or run `slasher/system/design-by-efferent/install-dependencies.sh` from your project root.
 
 **Refresh from upstream** periodically to pull the latest rules:
 
 ```
-git subtree pull --prefix waytide/system/design-by-efferent git@github.com:waytide/design-by-efferent.git master --squash
+git subtree pull --prefix slasher/system/design-by-efferent git@github.com:slasher-bot/design-by-efferent.git master --squash
 ```
 
 
 ## License
 
-Waytide is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
+Slasher is licensed under the **Eventide Common Interest License**. It is source-available and free to use. It is not open source in the strict sense, since it does not permit modification. The license text is forthcoming and will be published in `LICENSE`.
 Changed by Scott Bellware on Sat Aug 8 2026 at 1:35:10 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:21:56 PM PT
 Changed by Scott Bellware on Sat Aug 8 2026 at 2:32:48 PM PT
