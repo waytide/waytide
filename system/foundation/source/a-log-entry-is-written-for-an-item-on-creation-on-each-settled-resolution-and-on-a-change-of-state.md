@@ -1,6 +1,6 @@
 # A log entry is written for an item on creation, on each settled resolution, and on a change of state
 
-**Trigger:** When creating an item, adding a dated Settled resolution to it, changing its **State:** line, or closing a work session with a reconciliation
+**Trigger:** When creating an item, adding a dated Settled resolution to it, changing its **State:** line
 
 - **Solubility:** 17
 - **Original rank:** 2 of 106
@@ -34,8 +34,6 @@ An **item** in `slasher/local/items/` pairs with a one-line entry in `slasher/lo
 
 **Prose that settles nothing is not a decision.** Reconciling a Background & Motivation section, correcting a summary, or rewording a substantive section changes how the artifact reads and changes no direction. The provenance footer records that the file was changed, which is what that footer is for.
 
-**A reconciliation that finds nothing is the exception worth naming, and it is logged.** The the-work-sessions-directory-holds-one-record-per-work-session rule puts the design reconciliation to the engineer at each work session's close, and *the direction stands* is a real answer to it. That the artifacts were read against new work and found still standing is not recoverable from the artifacts, since nothing in them changed. This project's `The aspirations stand against …` entries are that case.
-
 ## Why the obligation is stated here rather than in each convention
 
 **Three conventions state their own log entry in full, and the the-items-directory-holds-one-file-per-item rule points here.** The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule each state the pairing inline. The the-items-directory-holds-one-file-per-item rule requires the record, its dated resolutions, and its footer, and names the entry only by pointing to this rule.
@@ -52,7 +50,7 @@ The exclusions are what keep the obligation worth having. A log that carried eve
 
 **How to apply:** when an item is created, write a matching one-line entry in `slasher/local/logs/log/`. Write one for each `Settled` resolution added afterward, and one for each change of the `**State:**` line.
 
-Write none for a completed task, and none for prose that settles nothing. Write one where a reconciliation finds the direction still standing, naming what it was read against.
+Write none for a completed task, and none for prose that settles nothing.
 
 Name the record in the entry, and say what happened to it. State what the record settles as the record's, never as the system's behavior, and carry that into the commit subject the entry travels in. Fix no template for the wording.
 
@@ -70,22 +68,19 @@ Name the record in the entry, and say what happened to it. State what the record
 10. Do not log a completed checkbox task, because it carries out a direction already settled.
 11. Do not log prose that settles nothing either. Examples are reconciling a Background & Motivation section, correcting a summary, and rewording a section.
 12. The provenance footer records those unlogged changes.
-13. Log one reconciliation, though nothing changed: a reconciliation at a work session's close that finds the direction still standing.
-14. Name what that reconciliation was read against, as in `The aspirations stand against …`.
-15. Log it because nothing in the artifacts records that it happened.
-16. The entry names the record and what happened to it: the record was written, or its state reached a word.
-17. What the record settles may follow, attributed to the record.
-18. Never state an unbuilt direction in the indicative mood.
-19. *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not.
-20. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software.
-21. An item is not a change to the software, so do not use that form for it.
-22. The fact about an item is that it was recorded, or that its state moved.
-23. Carry the same into the commit subject the entry travels in: name the record, attribute what it settles to the record, and keep the mood. An entry corrected while its commit subject makes the same claim is half corrected.
-24. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
-25. This rule states the obligation once, for every item.
-26. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
-27. The the-items-directory-holds-one-file-per-item rule points here and keeps no second copy.
-28. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever a real decision is made, and when in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
+13. The entry names the record and what happened to it: the record was written, or its state reached a word.
+14. What the record settles may follow, attributed to the record.
+15. Never state an unbuilt direction in the indicative mood.
+16. *The check runs at the engineer's first prompt* says the system does that. While the item is `Open` or `Active`, it does not.
+17. The `git` package's commit-message rules ask for the changed thing in its new state. That form is right for a change to the software.
+18. An item is not a change to the software, so do not use that form for it.
+19. The fact about an item is that it was recorded, or that its state moved.
+20. Carry the same into the commit subject the entry travels in: name the record, attribute what it settles to the record, and keep the mood. An entry corrected while its commit subject makes the same claim is half corrected.
+21. Fix no wording template. *X is recorded as an item, Open because …* and *X is realized* are forms in use.
+22. This rule states the obligation once, for every item.
+23. The an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, the a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule state their own entries.
+24. The the-items-directory-holds-one-file-per-item rule points here and keeps no second copy.
+25. The the-log-holds-one-file-per-entry-with-a-one-line-title rule's general trigger is to log whenever a real decision is made, and when in doubt. It rests on each writer's judgment, so it does not make the entries reliable.
 
 ## Compression
 
@@ -98,8 +93,11 @@ Name the record in the entry, and say what happened to it. State what the record
 - 2026-10-28, revised: Why points removed, solubility 44 → 51, clarity 0.47 → 0.70; checked: 20 directives, 18 kept, 2 less precise, 0 lost
 - 2026-10-29, merge from master re-checked: 20 directives, 19 kept, 1 less precise, 0 lost, 1 repair
 - 2026-10-30, revised: Lapsed is renamed Obsolete; checked: 16 directives, 14 kept, 2 less precise, 0 lost, 2 repairs; re-checked: 16 directives, 14 kept, 2 less precise, 0 lost. Left less precise: the commit form's passive voice, which the git rules state, and "substantive" before section, neither of which changes what is logged
+- 2026-11-07, revised: the entry for a reconciliation at a work session's close is removed, with that reconciliation, as the engineer directed; checked: 17 directives, 16 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: that what the record settles is never stated as the system's behavior, which points 14 to 16 carry by attributing it to the record and barring the indicative for an unbuilt direction
 
 ## History
+
+Until Sat Nov 7 2026 a reconciliation at a work session's close that found the direction still standing was logged. The engineer removed that reconciliation as obsolete, and the entry with it.
 
 Until Fri Oct 30 2026 the state word Obsolete was Lapsed.
 
@@ -116,7 +114,6 @@ Related:
 - the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the entry a removal takes, which is the whole of that act
 - the an-observation-is-a-working-hypothesis-whose-one-state-recorded-never-changes rule, a-projects-binding-rules-are-recorded-in-its-packages-and-its-local-rules-directory rule, and the a-suspension-is-a-log-entry-tagged-suspended-and-nothing-is-moved rule — the three that already state their own pairing
 - the working-state-artifacts-carry-a-provenance-footer rule — the same shape, one obligation stated once across several conventions
-- the the-work-sessions-directory-holds-one-record-per-work-session rule — the reconciliation prompt whose *the direction stands* answer is logged
 - the `git` package's write-subject-first-commit-messages and a-commit-message-states-that-a-task-is-done-never-that-it-is-marked-done rules — the grammar that is right for a change to the software and wrong for a record that settles one
 - the the-items-directory-holds-one-file-per-item rule — the record whose states an entry reports, and which this rule's name predates
 
@@ -171,3 +168,4 @@ Changed by Scott Bellware on Wed Oct 28 2026 at 5:26:52 PM PT
 Changed by Scott Bellware on Thu Oct 29 2026 at 6:34:30 PM PT
 Changed by Scott Bellware on Fri Oct 30 2026 at 1:48:29 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:26:13 AM PT

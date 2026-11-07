@@ -5,7 +5,7 @@
 - **What a work session record is.** The **guided tour** of the work session — what was asked and what was concluded at each step, in order, with the settled vocabulary defined as it arises. It is written to be *read by a person*, so its job is orientation and reasoning, not truth-of-record.
 - **It is not the source of truth.** The durable records are: the binding rules (`slasher/system/`, `slasher/local/rules/`), the project's items (`slasher/local/items/`), the log (`slasher/local/logs/log/`), and the implementation records (`slasher/local/implementations/`). The work session record **points to** them throughout. They are authoritative, and the work session record is the narrative that ties them together and preserves the reasoning behind each fork.
 - **When it is written.** At the close of a work session that produced substantial dialogue, decisions, or discovery worth a durable narrative — on the engineer's request, or when the agent recognizes the work session has accumulated such work and proposes recording it. A trivial work session needs no record. The work session record is not a per-session obligation. **The agent also proposes recording at a conclusion it carries out:** when it concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded. Each is a discrete act the agent takes, so the proposal cannot be missed there.
-- **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **Every prompt this convention puts says "work session"**, this one and the design reconciliation alike — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
+- **How the recording is asked.** When the agent raises the question of recording a work session, it puts the decision through the **AskUserQuestion** selection UI, not a free-text prose question. It offers three options, each naming it a **work session record**: **write a new work session record** for the work, **append the previous work session record**, or **don't write a work session record**. The engineer's selection decides it. **The prompt says "work session"** — the directory is `work-sessions/`, a work session here is a unit of the engineer's work, and the shortened form invites the reader to supply some other sense of "session". (A direct instruction from the engineer to write or append a record needs no such prompt — the question isn't being asked.)
 - **Naming.** A work session record is a dated working-state artifact, so it takes the ISO-8601-UTC filename prefix (see the file-names rule): `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
 ## The shape of a work session record
@@ -21,18 +21,6 @@ Titled `# Work Session — <name> (<date>)`, it reads in this order. **Records w
 - Optionally, a **reflective closing note** on the work session itself.
 - A **provenance footer** — like every working-state artifact, a work session record ends with the `Authored by … / Changed by …` footer, so the file stands on its own. See the working-state-artifacts-carry-a-provenance-footer rule (the shared convention and its reason) and the record-a-rules-authorship-in-a-provenance-footer rule (the format).
 
-## Reconcile the settled direction once the record is written
-
-**This section says *design* throughout for readability, and means whichever settled item the work session bears on.** A design is an item, and an item is a design — the kind is a tag rather than a class. Nothing in this section depends on which kind it carries.
-
-**After the record is written, put the design to the engineer through the AskUserQuestion selection UI.** Does what this work session produced change the design, or has the design fallen behind it? Three genuine options — **update the design**, **the design stands**, or **no design bears on this work session**.
-
-- **Why the prompt fires here.** Writing the record means reading the work session's log entries, rules, and observations — the same material a reconciliation reads — so the reading is already done and the reconciliation costs almost nothing. The work session is closing, so nothing is mid-flight and direction can still change cheaply. And deciding to write a record *is* the engineer judging the work substantial, so no threshold has to be invented for when to ask.
-- **Surface the candidates. Do not decide.** Name what the work session settled that the design does not reflect, and anything the design asserts that the work session contradicts. **Either side may be the stale one** — a design can be out of date, and a design can be right about a direction the work drifted from. Only the engineer can say which, which is why this is a prompt and not an edit.
-- **A design is reconciled, never regenerated.** A work session record is a projection and says so. A design is a source of truth that a plan points back at as its **Source design**. Read the records against the design and change neither on your own initiative. Regenerating a design from the work downstream of it would invert that relationship and would silently treat the implementation as correct every time.
-- **Nothing to reconcile is a real answer.** Where the project has no design, or the work session produced nothing bearing on one, say so and move on. Do not manufacture a divergence to justify the prompt.
-- **What a projection cannot recover.** A design's **Out of Scope / Deferred** section records decisions *not* to do something, and its settled-but-unbuilt direction describes shape ahead of the code. Neither exists anywhere in the records, which is the second reason the design is read against rather than rebuilt.
-
 **Why:** the durable records capture *what* was decided. The reasoning and the arc of a work session are easy to lose and expensive to reconstruct. That is how the thinking moved, why a fork was taken, and what vocabulary settled.
 
 A narrative work session record preserves that arc as a communicable whole. It points to the durable records rather than restating them. So it stays a route through the records rather than a second source of truth. The format lives here, with the directory convention, the same way the experiment and loop-record formats live with theirs.
@@ -42,8 +30,6 @@ A narrative work session record preserves that arc as a communicable whole. It p
 **How to apply:** at a substantial work session's close, write a work session record here. It narrates the work session chronologically per the shape above. It defines the settled vocabulary, and points to the durable records it produced. It ends with a provenance footer in the record-a-rules-authorship-in-a-provenance-footer format.
 
 When *you* raise the question of recording, rather than being told to, put it through the AskUserQuestion selection UI. It carries the three options, each naming a **work session record**: a new one, appending the previous one, or none. Let the engineer's selection decide.
-
-Once the record is written, put the **design reconciliation** through the same UI. The options are to update the design, that the design stands, or that no design bears on this work session. Surface what diverges, and leave the verdict to the engineer.
 
 ## Compressed
 
@@ -62,9 +48,9 @@ Once the record is written, put the **design reconciliation** through the same U
 13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
 14. A trivial work session needs no record. A record is not required for every session.
 15. Also propose it when the agent concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded.
-16. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+16. When the agent raises the question of recording, it asks through the AskUserQuestion selection UI, not as a prose question. The prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
 17. The engineer's selection decides.
-18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+18. The prompt says "work session", never the shortened "session".
 19. A direct instruction from the engineer to write or append a record needs no prompt.
 20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
@@ -87,22 +73,6 @@ Once the record is written, put the **design reconciliation** through the same U
 15. The footer follows the working-state-artifacts-carry-a-provenance-footer rule and the record-a-rules-authorship-in-a-provenance-footer format.
 16. A work session record is not shaped like a plan. It records the past. This convention defines that format, alongside the directory.
 
-## Reconcile the settled direction once the record is written
-
-1. "Design" here means whichever settled item the work session bears on, whatever its kind tag.
-2. After the record is written, ask the engineer about the design through the AskUserQuestion selection UI.
-3. Ask whether the work session's output changes the design, or whether the design has fallen behind it.
-4. Offer three options: **update the design**, **the design stands**, or **no design bears on this work session**.
-5. Ask this every time a record is written. No other threshold applies.
-6. Surface the candidates. Do not decide.
-7. Name what the work session settled that the design does not reflect.
-8. Name anything the design asserts that the work session contradicts.
-9. Either side may be the stale one. Only the engineer can say which.
-10. Change neither the design nor the records on your own initiative.
-11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read a design against the records, and never regenerate it from the work downstream of it. Reconcile it instead.
-12. Where no design exists, or nothing in the work session bears on one, say so and move on.
-13. Do not invent a divergence to justify the prompt.
-
 ## Compression
 
 - 2026-10-24, compressed: compression 0.33, change 0.61, solubility 18 → 45, clarity 0.32 → 0.75, 38 directives, 38 kept, 0 less precise, 0 lost, after 2 repairs, re-checked kept
@@ -110,8 +80,11 @@ Once the record is written, put the **design reconciliation** through the same U
 - 2026-10-27, re-checked: 34 directives, 34 kept, 0 less precise, 0 lost
 - 2026-10-28, revised: Why points removed, solubility 45 → 46, clarity 0.75 → 0.77; checked: 36 directives, 36 kept, 0 less precise, 0 lost
 - 2026-11-05, revised: the agent also proposes a record at a conclusion it carries out; checked: 36 directives, 34 kept, 1 less precise, 1 lost, 1 repair, restoring that a design is read against the records and never regenerated from them; re-checked: 36 directives, 36 kept, 0 less precise, 0 lost
+- 2026-11-07, revised: the design reconciliation asked after a record is written is removed, as the engineer directed; checked: 36 directives, 35 kept, 1 less precise, 0 lost, 1 repair, restoring that the recording question is asked through the selection UI; re-checked: 36 directives, 36 kept, 0 less precise, 0 lost
 
 ## History
+
+Until Sat Nov 7 2026, after a record was written, the agent asked whether the work session's output changed the design or the design had fallen behind it, with the options *update the design*, *the design stands*, and *no design bears on this work session*. The engineer removed the question as obsolete.
 
 Until Thu Nov 5 2026 the agent proposed a record only at a work session's close.
 
@@ -139,7 +112,6 @@ Related:
 - the the-log-holds-one-file-per-entry-with-a-one-line-title rule
 - the observations rule
 - the the-logs-directory-holds-the-contemporaneous-historical-records rule — the contemporaneous, historical records this sits among
-- the when-the-work-diverges-from-the-plan-the-work-is-definitive rule — the ordinary answer to the design reconciliation, where the work has only gone further than the design foresaw
 
 ---
 
@@ -200,3 +172,4 @@ Changed by Scott Bellware on Thu Nov 5 2026 at 8:41:02 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:51:20 PM PT
 Changed by Scott Bellware on Thu Nov 5 2026 at 8:54:41 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:26:13 AM PT

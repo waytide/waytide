@@ -570,9 +570,9 @@ Source: system/foundation/source/the-work-sessions-directory-holds-one-record-pe
 13. Write it when the engineer asks. Or propose it when the agent sees the work session has built up such work.
 14. A trivial work session needs no record. A record is not required for every session.
 15. Also propose it when the agent concludes a feature, an experiment, or a phase, or takes an item to Done, Realized, Abandoned, or Superseded.
-16. When the agent raises the question of recording, the prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
+16. When the agent raises the question of recording, it asks through the AskUserQuestion selection UI, not as a prose question. The prompt offers three options, each naming a **work session record**: **write a new work session record**, **append the previous work session record**, or **don't write a work session record**.
 17. The engineer's selection decides.
-18. Every prompt this convention puts says "work session", never the shortened "session". That covers this prompt and the design reconciliation alike.
+18. The prompt says "work session", never the shortened "session".
 19. A direct instruction from the engineer to write or append a record needs no prompt.
 20. Name a record with the ISO-8601-UTC filename prefix, per the file-names rule: `YYYY-MM-DDTHH-MM-SSZ-<name>.md`.
 
@@ -595,22 +595,6 @@ Source: system/foundation/source/the-work-sessions-directory-holds-one-record-pe
 15. The footer follows the working-state-artifacts-carry-a-provenance-footer rule and the record-a-rules-authorship-in-a-provenance-footer format.
 16. A work session record is not shaped like a plan. It records the past. This convention defines that format, alongside the directory.
 
-## Reconcile the settled direction once the record is written
-
-1. "Design" here means whichever settled item the work session bears on, whatever its kind tag.
-2. After the record is written, ask the engineer about the design through the AskUserQuestion selection UI.
-3. Ask whether the work session's output changes the design, or whether the design has fallen behind it.
-4. Offer three options: **update the design**, **the design stands**, or **no design bears on this work session**.
-5. Ask this every time a record is written. No other threshold applies.
-6. Surface the candidates. Do not decide.
-7. Name what the work session settled that the design does not reflect.
-8. Name anything the design asserts that the work session contradicts.
-9. Either side may be the stale one. Only the engineer can say which.
-10. Change neither the design nor the records on your own initiative.
-11. A design's Out of Scope / Deferred section and its settled-but-unbuilt direction exist nowhere in the records. So read a design against the records, and never regenerate it from the work downstream of it. Reconcile it instead.
-12. Where no design exists, or nothing in the work session bears on one, say so and move on.
-13. Do not invent a divergence to justify the prompt.
-
 # When the work diverges from the plan, the work is definitive
 
 Source: system/foundation/source/when-the-work-diverges-from-the-plan-the-work-is-definitive.md
@@ -630,7 +614,7 @@ Source: system/foundation/source/when-the-work-diverges-from-the-plan-the-work-i
 2. The test of whether the plan's direction is wrong is whether the plan still says what the work should be. It is not whether the plan says what the work turned out to be.
 3. The engineer may amend a plan for their own reasons at any time. Amend it where the engineer asks. Every amendment, including a correction, is a dated addition.
 4. This rule removes an obligation, not a permission.
-5. Per the the-work-sessions-directory-holds-one-record-per-work-session rule, either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
+5. Either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
 6. This rule settles the ordinary case and leaves that judgment with the engineer.
 
 # Work in a downstream project is never offered, and its pending state is not reported

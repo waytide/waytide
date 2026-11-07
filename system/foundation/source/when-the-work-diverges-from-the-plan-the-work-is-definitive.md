@@ -12,7 +12,7 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 
 **The engineer's own decision to amend.** They may amend a plan for their own reasons at any time, by dated addition. This rule removes an obligation rather than a permission.
 
-**Which side is stale.** The the-work-sessions-directory-holds-one-record-per-work-session rule already states that either side may be stale, that a design can be right about a direction the work drifted from, and that only the engineer can say which. This rule settles the ordinary case and leaves that judgment where it is.
+**Which side is stale.** Either side may be stale. A design can be right about a direction the work drifted from, and only the engineer can say which. This rule settles the ordinary case and leaves that judgment with the engineer.
 
 **Why:** a plan edited to match the work stops being a plan. It becomes a second record of what was built, beside the records that already carry that, and its value as a statement of intent is spent. It also becomes unfalsifiable — a plan that always agrees with the work can never be found to have been wrong, so nothing is learned from having written it.
 
@@ -35,7 +35,7 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 2. The test of whether the plan's direction is wrong is whether the plan still says what the work should be. It is not whether the plan says what the work turned out to be.
 3. The engineer may amend a plan for their own reasons at any time. Amend it where the engineer asks. Every amendment, including a correction, is a dated addition.
 4. This rule removes an obligation, not a permission.
-5. Per the the-work-sessions-directory-holds-one-record-per-work-session rule, either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
+5. Either side may be stale, and only the engineer can say which. A design may be right about a direction the work drifted from.
 6. This rule settles the ordinary case and leaves that judgment with the engineer.
 
 ## Compression
@@ -43,10 +43,14 @@ When the work diverges from the plan, it is the work that is definitive. The pla
 - 2026-10-24, compressed: compression 0.24, change 0.48, solubility 55 → 83, clarity 0.37 → 0.84, 15 directives, 15 kept, 0 less precise, 0 lost, after 1 repair, re-checked kept
 - 2026-10-28, revised: How to apply removed, each directive only it carried moved to the section it belongs to, solubility 83 → 75, clarity 0.84 → 0.72; checked: 12 directives, 8 kept, 4 less precise, 0 lost, 3 repairs, re-checked kept
 - 2026-10-28, revised: Why points removed, solubility 75 → 76, clarity 0.72 → 0.70; checked: 10 directives, 9 kept, 1 less precise, 0 lost
+- 2026-11-07, revised: the citation of the design reconciliation is removed with it, and the claim that either side may be stale is stated here; checked: 12 directives, 12 kept, 0 less precise, 0 lost, 0 repairs
+
+## History
+
+Until Sat Nov 7 2026 this rule cited the the-work-sessions-directory-holds-one-record-per-work-session rule for the claim that either side may be stale. The engineer removed that rule's design reconciliation as obsolete.
 
 Related:
 
-- the the-work-sessions-directory-holds-one-record-per-work-session rule — the design reconciliation this settles the ordinary answer to
 - the the-items-directory-holds-one-file-per-item rule — amendment by dated addition, and supersession rather than rewriting
 - this package's vocabulary — the reconcile term, and a design being reconciled against rather than regenerated from the work downstream of it
 
@@ -62,3 +66,4 @@ Changed by Scott Bellware on Mon Oct 26 2026 at 3:03:07 PM PT
 Changed by Scott Bellware on Mon Oct 26 2026 at 3:38:10 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:26:24 AM PT
