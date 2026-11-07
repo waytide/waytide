@@ -161,6 +161,17 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer kept it.
 - **Outcome:** `test/automated/install-machine-move-clash.sh` is in the suite. The automated tests pass. The test is unnamed until the feature's close.
 
+## Cycles 26 to 30 — Naming, at the feature's close
+
+Each test was named one at a time, in its heading above the checks and in its failure messages. The candidates followed the existing installer tests, which name a test in a short sentence.
+
+- **Outcome 1, `install-layout-move.sh`:** options *Moves waytide/ to slasher/*, *Renames waytide/ to slasher/*, *Moves the project's work to slasher/*. The engineer selected *Moves waytide/ to slasher/*.
+- **Outcome 2, `install-layout-move-clash.sh`:** options *Changes neither folder when both are present*, following the observation-state clash test, and *Leaves waytide/ and slasher/ alone when both exist*. The engineer selected *Changes neither folder when both are present*.
+- **Outcome 3, `install-layout-move-agents-md.sh`:** options *Replaces the AGENTS.md section that names waytide/* and *Points AGENTS.md at slasher/*. The engineer selected *Replaces the AGENTS.md section that names waytide/*.
+- **Outcome 5, `install-machine-move.sh`:** options *Moves the machine's waytide folders to slasher* and *Moves ~/.config/waytide/ and ~/.local/share/waytide/*. The engineer selected *Moves the machine's waytide folders to slasher*. Outcome 4's test had been removed with the XDG support.
+- **Outcome 6, `install-machine-move-clash.sh`:** options *Changes neither machine folder when both are present* and *Changes neither folder when both are present*. The engineer selected *Changes neither machine folder when both are present*.
+- **Outcome:** every test the feature added is named. The automated tests pass.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
@@ -170,3 +181,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:24:15 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:29:31 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:35:50 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:41:27 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:59:56 PM PT

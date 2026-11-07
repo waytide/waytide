@@ -36,9 +36,9 @@ control_old_section > "$project/AGENTS.md"
 
 (cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
-# ----------------------------------------------------------------------------
+# Replaces the AGENTS.md section that names waytide/ -------------------------
 
-! grep -q 'waytide/system/' "$project/AGENTS.md" || fail "" "still names waytide/system/"
-grep -q 'slasher/system/' "$project/AGENTS.md" || fail "" "does not name slasher/system/"
+! grep -q 'waytide/system/' "$project/AGENTS.md" || fail "Replaces the AGENTS.md section that names waytide/" "still names waytide/system/"
+grep -q 'slasher/system/' "$project/AGENTS.md" || fail "Replaces the AGENTS.md section that names waytide/" "does not name slasher/system/"
 
 echo "0 failed, 0 aborted"

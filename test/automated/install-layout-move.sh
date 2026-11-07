@@ -33,12 +33,12 @@ cp -R system/foundation/plugin "$project/waytide/system/foundation/"
 
 (cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
-# ----------------------------------------------------------------------------
+# Moves waytide/ to slasher/ -------------------------------------------------
 
 moved_record="$project/slasher/local/items/$control_record_name"
 old_dir="$project/waytide"
 
-[ -f "$moved_record" ] || fail "" "not under slasher/:" "$control_record_name"
-[ ! -e "$old_dir" ] || fail "" "waytide/ is still present"
+[ -f "$moved_record" ] || fail "Moves waytide/ to slasher/" "not under slasher/:" "$control_record_name"
+[ ! -e "$old_dir" ] || fail "Moves waytide/ to slasher/" "waytide/ is still present"
 
 echo "0 failed, 0 aborted"

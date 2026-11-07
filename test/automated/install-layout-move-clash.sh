@@ -32,14 +32,14 @@ echo some-other-item > "$project/slasher/local/items/$control_other_record_name"
 
 (cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
-# ----------------------------------------------------------------------------
+# Changes neither folder when both are present -------------------------------
 
 old_record="$project/waytide/local/items/$control_record_name"
 own_record="$project/slasher/local/items/$control_other_record_name"
 moved_record="$project/slasher/local/items/$control_record_name"
 
-[ -f "$old_record" ] || fail "" "no longer under waytide/:" "$control_record_name"
-[ -f "$own_record" ] || fail "" "no longer under slasher/:" "$control_other_record_name"
-[ ! -e "$moved_record" ] || fail "" "appeared under slasher/:" "$control_record_name"
+[ -f "$old_record" ] || fail "Changes neither folder when both are present" "no longer under waytide/:" "$control_record_name"
+[ -f "$own_record" ] || fail "Changes neither folder when both are present" "no longer under slasher/:" "$control_other_record_name"
+[ ! -e "$moved_record" ] || fail "Changes neither folder when both are present" "appeared under slasher/:" "$control_record_name"
 
 echo "0 failed, 0 aborted"

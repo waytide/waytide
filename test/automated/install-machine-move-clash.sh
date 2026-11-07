@@ -32,14 +32,14 @@ echo some-other-config > "$home/.config/slasher/$control_other_config_name"
 
 (cd "$project" && HOME="$home" sh "$installer" agents-md) > /dev/null
 
-# ----------------------------------------------------------------------------
+# Changes neither machine folder when both are present -----------------------
 
 old_file="$home/.config/waytide/$control_config_name"
 own_file="$home/.config/slasher/$control_other_config_name"
 moved_file="$home/.config/slasher/$control_config_name"
 
-[ -f "$old_file" ] || fail "" "no longer under .config/waytide/:" "$control_config_name"
-[ -f "$own_file" ] || fail "" "no longer under .config/slasher/:" "$control_other_config_name"
-[ ! -e "$moved_file" ] || fail "" "appeared under .config/slasher/:" "$control_config_name"
+[ -f "$old_file" ] || fail "Changes neither machine folder when both are present" "no longer under .config/waytide/:" "$control_config_name"
+[ -f "$own_file" ] || fail "Changes neither machine folder when both are present" "no longer under .config/slasher/:" "$control_other_config_name"
+[ ! -e "$moved_file" ] || fail "Changes neither machine folder when both are present" "appeared under .config/slasher/:" "$control_config_name"
 
 echo "0 failed, 0 aborted"
