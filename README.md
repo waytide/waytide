@@ -1,4 +1,4 @@
-![Slasher](material/slasher-logo.png)
+![Slasher](material/slasher-logo-wide.png)
 
 # Slasher: Human-in-the-Loop Harness
 
