@@ -1256,17 +1256,19 @@ Trigger: When a session starts, or the engineer types its first prompt, or when 
 10. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
 11. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
 12. The fences mark where each printed part begins and ends. They are not printed.
-13. First the title, on its own:
+13. First the title, with the tagline under it:
 
 ```
-Slasher: Human-in-the-Loop Harness
+Slasher: Human in the Loop AI
+
+The engineer decides. The agent generates. Humanity rules.
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
 15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
-16. The title stands alone. No subtitle or description is printed under it.
+16. The tagline stands under the title, as the root `README.md` gives it. No other subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
-18. No description of Slasher is printed. What Slasher is and does belongs to the `README.md`.
+18. No description of Slasher is printed, beyond the tagline. What Slasher is and does belongs to the `README.md`.
 19. The display carries nothing that argues for the system to a reader already using it.
 20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
 21. The stanza follows the display rather than sitting inside it.

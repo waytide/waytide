@@ -12,13 +12,15 @@ The things below are printed verbatim, in two parts. **The session-start part** 
 
 **The loading part prints once per session, on the first prompt.** The first prompt is when the read starts, whether it is `/load`, `load rules`, or any other request. The script records the session's first prompt in a marker named for the session, under the temporary directory, and prints nothing on a later prompt. A prompt whose input names no session prints the loading part every time, rather than never.
 
-First the title, on its own:
+First the title, with the tagline under it:
 
 ```
-Slasher: Human-in-the-Loop Harness
+Slasher: Human in the Loop AI
+
+The engineer decides. The agent generates. Humanity rules.
 ```
 
-**It stands alone.** No subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
+**The tagline stands under it, and nothing else does.** The tagline is the line the root `README.md` gives under its title. No other subtitle or description is printed under it. What the system is belongs to the `README.md`, which a reader reaches deliberately. This display is read every session by someone who has read it before.
 
 **The package set is described here, and prints after the display, where one is declared.** The agent prints it at the head of the response that carries the rule read, after the harness has printed the display. The display and the stanza come from two printers at two moments, so the stanza follows the display rather than sitting inside it. Where no set is declared, nothing about a set is printed and this part is absent entirely — no line saying there is none.
 
@@ -107,7 +109,7 @@ Then **one blank line**, then the block, which ends the loading part:
 
 **The title is the category line.** It is what this display prints and what the root `README.md` leads with, so the system names itself the same way wherever it is met.
 
-**No description of Slasher is printed here.** What Slasher is and what it does live in the `README.md`. This display carries a name, an ownership statement, when the rules load, and a wait — and nothing that argues for the system to a reader who is already using it.
+**No description of Slasher is printed here, beyond the tagline.** What Slasher is and what it does live in the `README.md`. This display carries a name, an ownership statement, when the rules load, and a wait — and nothing that argues for the system to a reader who is already using it.
 
 **The title names the work, so the copyright line does not.** The title stands above it and names the work outright, and the copyright line carries the owner and the year alone.
 
@@ -141,17 +143,19 @@ Then **one blank line**, then the block, which ends the loading part:
 10. Adding, removing, or reordering a fenced block in this rule's body changes what is printed, so the rule's sections stay where they are.
 11. The automated test `test/automated/startup-display.sh` compares the printed display with the expected text. It fails when the two differ.
 12. The fences mark where each printed part begins and ends. They are not printed.
-13. First the title, on its own:
+13. First the title, with the tagline under it:
 
 ```
-Slasher: Human-in-the-Loop Harness
+Slasher: Human in the Loop AI
+
+The engineer decides. The agent generates. Humanity rules.
 ```
 
 14. The title leads. It is the first line of the display, and nothing the agent writes stands ahead of it.
 15. Each part opens with a line break, so its first line starts a line of its own after the harness's label, as in `SessionStart:startup says:`. Each part opens with one more, so a blank line stands between the label and the part's first line: the title, or the loading line. The breaks are the script's, not fenced blocks in this file.
-16. The title stands alone. No subtitle or description is printed under it.
+16. The tagline stands under the title, as the root `README.md` gives it. No other subtitle or description is printed under it.
 17. The title is the category line. The root `README.md` leads with the same line.
-18. No description of Slasher is printed. What Slasher is and does belongs to the `README.md`.
+18. No description of Slasher is printed, beyond the tagline. What Slasher is and does belongs to the `README.md`.
 19. The display carries nothing that argues for the system to a reader already using it.
 20. The package set is described here, and prints after the display, where one is declared. The agent prints it after the harness has printed the display.
 21. The stanza follows the display rather than sitting inside it.
@@ -259,8 +263,14 @@ Slasher is pre-loading its rules...
 - 2026-11-04, revised: a blank line stands between the harness's label and the loading line, as the engineer directed; not re-checked
 - 2026-11-04, revised: the typed command `load slasher` is `load rules`, a term swap the engineer settled; not re-checked
 - 2026-11-06, revised: the title reads *Slasher: Human-in-the-Loop Harness*, wording the engineer gave; not re-checked
+- 2026-11-06, revised: the title reads *Slasher: Human in the Loop AI*, wording the engineer gave; not re-checked
+- 2026-11-06, revised: the tagline *The engineer decides. The agent generates. Humanity rules.* prints under the title, as the engineer directed; not re-checked
 
 ## History
+
+Until Fri Nov 6 2026 the title stood alone, and no tagline was printed under it.
+
+Until Fri Nov 6 2026 the title, and the root `README.md`'s title with it, read *Slasher: Human-in-the-Loop Harness*.
 
 Until Fri Nov 6 2026 the title, and the root `README.md`'s title with it, read *Waytide: Human-in-the-Loop Harness*.
 
@@ -351,3 +361,5 @@ Changed by Scott Bellware on Wed Nov 4 2026 at 6:14:38 PM PT
 Changed by Scott Bellware on Wed Nov 4 2026 at 6:22:26 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:26:59 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:17:41 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:24:39 PM PT
