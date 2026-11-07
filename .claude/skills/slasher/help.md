@@ -203,8 +203,8 @@ LANGUAGE
   implementation of STE and its extensions, and clarifying language, often the
   agent's.
 
-  /clarify                         Clarify the previous answer, then clarify
-                                   it again for good measure
+  /clarify                         Explain the previous answer again, from
+                                   what you already know
 
   /expand                          Expand the previous answer
 

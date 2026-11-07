@@ -1,11 +1,11 @@
 ---
 name: clarify
-description: Clarify the previous answer, then clarify it again.
+description: Explain the previous answer again, from what the engineer already knows.
 disable-model-invocation: true
 ---
 
 The engineer typed `/clarify $ARGUMENTS`.
 
 1. Where the first word is `help`, say that this command takes no `help`, and that `/language help` prints the help of its command domain. Do nothing more.
-2. Otherwise, load the rule that governs the act. From the project root, run `slasher/system/foundation/load-rules.sh clarify-rewrites-the-previous-answer-twice`. Where the project has no `slasher/` directory, run `system/foundation/load-rules.sh` with the same rule name. Follow the rule it prints.
-3. Rewrite the previous answer more plainly, then once more, as the rule says.
+2. Otherwise, load the rule that governs the act. From the project root, run `slasher/system/foundation/load-rules.sh clarify-explains-the-previous-answer-from-what-the-engineer-already-knows`. Where the project has no `slasher/` directory, run `system/foundation/load-rules.sh` with the same rule name. Follow the rule it prints.
+3. Explain the previous answer again, from what the engineer already knows, as the rule says. This is what the reply "I don't understand" asks for.

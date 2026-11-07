@@ -1,13 +1,15 @@
-# Clarify rewrites the previous answer twice
+# Clarify explains the previous answer from what the engineer already knows
 
-Source: system/language/source/clarify-rewrites-the-previous-answer-twice.md
+Source: system/language/source/clarify-explains-the-previous-answer-from-what-the-engineer-already-knows.md
 
 Trigger: When the engineer asks for an answer to be clarified, as with `/clarify`
 
-1. `/clarify` rewrites the previous answer more plainly, then rewrites that once more. Show only the second rewrite.
-2. Each rewrite follows the a-response-is-clarified-twice-before-it-is-sent rule: the point first, in a sentence or two of plain words, then only the few facts the engineer needs to understand the answer and decide. Leave out figures, file names, method detail, and caveats unless the answer turns on them.
-3. The first pass clears out what the answer did not need. The second is written for the person reading it, to be understood at once, with little work.
-4. The clarified answer says the same thing: no new claim, no decision dropped, no fact changed. Where the previous answer asked a question through the selection interface, ask it again through the selection interface.
+1. `/clarify` does what the reply "I don't understand" does. It explains the previous answer again from what the engineer already knows. It does not shorten the answer or the question.
+2. Start from what the engineer already knows that the answer bears on: the code, the test, the behavior seen, and the engineer's own words. State the point first in those terms, in a sentence or two of plain words. Then give each fact the point rests on, in the same terms, including those the answer left out.
+3. Replace each term the answer took for granted with what it names.
+4. Where the previous answer put a question, state what the question decides in those terms. Set out each option by what it would and would not do. Recommend one option, with a sentence on why. Put the question again through the selection interface, with the same options.
+5. Keep every claim, fact, and decision the engineer was asked to make. Add no new claim. The recommendation is the only addition, and only where the answer put a question.
+6. The clarified answer may be longer than the previous one. It still leads with its point and follows the a-response-is-clarified-twice-before-it-is-sent rule in all else.
 
 # A word is reserved in six steps
 
