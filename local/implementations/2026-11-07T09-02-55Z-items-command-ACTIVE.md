@@ -17,7 +17,7 @@
 - **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Implementation branch:** `feature/items-command`
-- **Base:** `5e4c42f7`, from `master`
+- **Base:** `fef2482c`, from `master`
 - **Working location:** branch only, chosen at the start. This working tree switches to the branch, and back at the conclusion.
 - **Participation:** attended, chosen at the start.
 - **Verdict:** it concludes without an engineer's verdict, selected at the start.

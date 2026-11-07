@@ -1,6 +1,6 @@
 # A printed list of records is formatted as a table or as a list of rows
 
-**Trigger:** When the engineer asks for a list of records, as with `/item list`, `/list`, or `/report`
+**Trigger:** When the engineer asks for a list of records, as with `/item list`, `/list`, or `/items`
 
 **When the engineer asks for a list of records, render it as a table where every field is short, and as rows where a field runs to a sentence.** A table presents the fields in headed columns. Rows present one record to a line, its fields in sequence, with no columns. **A list is called a table only where it is formatted as columns.** That reaches any record — items, implementation records, log entries, loop records, work session records, migration records, journal entries, and commits.
 
@@ -38,15 +38,15 @@ A list of items takes the ordinal and no SHA columns:
 
 **As the engineer stated it:** remove suspended from current.
 
-## The report command
+## The items command
 
-**`/report` lists the current items, then the current implementations.** The items are the ones `current` asks for, Open and Active. The implementations are the features and experiments whose `**State:**` line reads Active or Suspended: the ones that have not concluded, whether they are under way or paused.
+**`/items` lists the current items, then the current implementations.** The items are the ones `current` asks for, Open and Active. The implementations are the features and experiments whose `**State:**` line reads Active or Suspended: the ones that have not concluded, whether they are under way or paused.
 
-**The items table printed by `/report` takes a kind column, between the title and the state.** It names the kind each of the item's tags gives, written as a word, not as a tag: *Idea* for `[idea]`, *Work* for `[work]`, and *Legal matter* for `[legal-matter]`. Where the item carries several tags, it names each, separated by commas. Other lists of items take no kind column unless it is asked for.
+**The items table printed by `/items` takes a kind column, between the title and the state.** It names the kind each of the item's tags gives, written as a word, not as a tag: *Idea* for `[idea]`, *Work* for `[work]`, and *Legal matter* for `[legal-matter]`. Where the item carries several tags, it names each, separated by commas. Other lists of items take no kind column unless it is asked for.
 
 **As the engineer stated it:** Include the item kind in the table printed by "/current"
 
-**`/report` takes an optional number, *n*, and then lists only the *n* most recent current items.** An item's recency is its handle, the time it was created. The items listed keep the order of the full list, oldest first, and their ordinals count from 1. The number does not reach the current implementations, which are listed in full. `/report 5` lists the five most recently created current items.
+**`/items` takes an optional number, *n*, and then lists only the *n* most recent current items.** An item's recency is its handle, the time it was created. The items listed keep the order of the full list, oldest first, and their ordinals count from 1. The number does not reach the current implementations, which are listed in full. `/items 5` lists the five most recently created current items.
 
 **As the engineer stated it:** The "/current" command should optionally take a number that is the **n-most** recent items
 
@@ -121,14 +121,14 @@ A list of items takes the ordinal and no SHA columns:
 1. A list of items may be asked for by state, and lists the items whose `**State:**` line reads that state.
 2. `current` asks for the Open and Active items together. It is not a state, and it leaves out Suspended items.
 
-## The report command
+## The items command
 
-1. `/report` lists the current items, then, under a heading of their own, the current implementations.
+1. `/items` lists the current items, then, under a heading of their own, the current implementations.
 2. The current implementations are the features and experiments whose `**State:**` line reads Active or Suspended.
 3. Present each current implementation as one row: its handle, its title, and its state. The title is the record's own, as in `Feature — The current command`. Give it no ordinal and no SHA columns.
 4. Where no implementation is current, print the one line *No current feature or experiment.* under the summary's heading, in place of the rows.
-5. In the items table `/report` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
-6. `/report` takes an optional number *n*, as in `/report 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
+5. In the items table `/items` prints, put a kind column between the title and the state. It names the kind each tag gives as a word, not a tag: *Idea* for `[idea]`, *Legal matter* for `[legal-matter]`. Several tags are named each, separated by commas. Other lists of items take no kind column unless it is asked for.
+6. `/items` takes an optional number *n*, as in `/items 5`. It then lists only the *n* most recently created current items, by handle, oldest first, with ordinals from 1. It lists the current implementations in full.
 
 ## Keep every column short
 
@@ -154,8 +154,11 @@ A list of items takes the ordinal and no SHA columns:
 - 2026-11-06, revised: where no implementation is current, the summary says *No current feature or experiment.*, and the items table of `/current` takes a kind column, written as a word rather than a tag; checked: 41 directives, 38 kept, 3 less precise, 0 lost, 2 repairs; re-checked: 41 directives, 40 kept, 1 less precise, 0 lost, 1 repair; re-checked after the kind is written as a word: 43 directives, 43 kept, 0 less precise, 0 lost
 - 2026-11-06, revised: `/current` takes an optional number of the most recent current items to list; checked: 41 directives, 35 kept, 6 less precise, 0 lost, 1 repair; re-checked: 41 directives, 39 kept, 2 less precise, 0 lost. Left less precise: the trigger's example commands `/item list` and `/list`, which the trigger line carries, and the example *Work* for `[work]`
 - 2026-11-06, revised: the command is `/report`, in place of `/current`, a term swap the engineer settled; not re-checked
+- 2026-11-07, revised: the command is `/items`, in place of `/report`, a term swap the engineer settled; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 the command that lists the current items and implementations was `/report`. The engineer renamed it `/items`, and dropped the old name.
 
 Until Fri Nov 6 2026 the command that lists the current items and implementations was `/current`. The engineer renamed it `/report`, and dropped the old name.
 
@@ -214,3 +217,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 10:33:13 AM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 12:31:45 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:08:55 PM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:04:28 AM PT
