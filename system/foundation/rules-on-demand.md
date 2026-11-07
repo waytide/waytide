@@ -875,21 +875,6 @@ Trigger: When writing or changing a rule file
 16. Judge a stance-establishing rule by the mindset it produces, not by surface conformance.
 17. A rule that is technically obeyed while the intended stance is absent has failed.
 
-# The brief report says what was recently done, and what is next
-
-Source: system/foundation/source/the-brief-report-says-what-was-recently-done-and-what-is-next.md
-
-Trigger: When the engineer types `/brief`, or asks what was recently done and what is next
-
-1. `/brief` says in a few lines what was recently done and what is next.
-2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
-3. Say how many commits on each branch are not yet pushed.
-4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
-5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
-6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
-7. Head the part that gives the next step *What's next*, not *What is next*.
-8. Number the list of what was recently done from 1, not with bullets. Give the part that gives the next step bullets, not numbers.
-
 # The harness announces Slasher's installation, and the agent never prints the notice
 
 Source: system/foundation/source/the-harness-announces-slashers-installation-and-the-agent-never-prints-the-notice.md
@@ -1235,6 +1220,21 @@ Trigger: When writing a record under local/logs/ or deciding which directory a n
 2. Foundation's naming of `logs/loops/` is only a citation.
 3. Foundation requires nothing of what sits inside `loops/`, reads nothing there, and derives nothing from it.
 4. A project that installs only `foundation` has `logs/log/` and no `logs/loops/`, and nothing is missing.
+
+# The recent report says what was recently done, and what is next
+
+Source: system/foundation/source/the-recent-report-says-what-was-recently-done-and-what-is-next.md
+
+Trigger: When the engineer types `/recent`, or asks what was recently done and what is next
+
+1. `/recent` says in a few lines what was recently done and what is next.
+2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
+3. Say how many commits on each branch are not yet pushed.
+4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
+5. Carry no task table, no map of `slasher/`, and no suite run. Those belong to `/status-report`.
+6. Read the log, the commits, and the records when the command is typed, never from memory. A record the status report rule hides is counted rather than listed.
+7. Head the part that gives the next step *What's next*, not *What is next*.
+8. Number the list of what was recently done from 1, not with bullets. Give the part that gives the next step bullets, not numbers.
 
 # The Slasher skills are delivered as a plugin named slasher
 

@@ -1,8 +1,8 @@
-# The brief report says what was recently done, and what is next
+# The recent report says what was recently done, and what is next
 
-**Trigger:** When the engineer types `/brief`, or asks what was recently done and what is next
+**Trigger:** When the engineer types `/recent`, or asks what was recently done and what is next
 
-**`/brief` answers two questions in a few lines: what was recently done, and what is next.**
+**`/recent` answers two questions in a few lines: what was recently done, and what is next.**
 
 **As the engineer stated it:** what was recently done, and what's next.
 
@@ -14,17 +14,17 @@
 
 **The part that gives the next step is headed *What's next*, not *What is next*.** The engineer asks the question in those words, and the answer is headed as it was asked.
 
-**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/brief` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
+**It is not the status report.** The a-status-report-prints-a-fixed-whole-project-report rule's report adds a task table, a map of `slasher/`, and a run of the test suite. `/recent` carries none of them. Where the engineer wants the whole project, `/status-report` gives it.
 
 **It is read from current state, never from memory.** The log, the commits, and the records are read when the command is typed. A record that summary rule hides, such as a suspended item, is counted rather than listed here too.
 
 **Why:** a session that works through many changes asks *what's recent* and *what's next* again and again. One command answers both, in the same shape each time, without the full report's weight.
 
-**How to apply:** on `/brief`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
+**How to apply:** on `/recent`, read the latest log entries and commits on the branches the work touches, list what was recently done, and give the next step of the work under way. Say what is not pushed. Keep it to a few lines, and leave the whole-project parts to `/status-report`.
 
 ## Compressed
 
-1. `/brief` says in a few lines what was recently done and what is next.
+1. `/recent` says in a few lines what was recently done and what is next.
 2. What was recently done is read from the latest log entries and commits: a short list, newest last, each a fact about the work. It covers the branch the work is on, and `master` where work landed there too.
 3. Say how many commits on each branch are not yet pushed.
 4. What is next is the next step of the work under way, found as `/next?` finds it. Where more than one piece of work is under way, name the next step of each, the one the conversation is on first.
@@ -46,8 +46,11 @@
 - 2026-11-06, revised: point 8 numbers the items in one sequence through both parts; re-checked: 18 directives, 14 kept, 4 less precise, 0 lost, 0 repairs. Left less precise: the trigger's asking form, which the trigger line carries; the examples of a fact about the work; the direction to `/status-report`; and *a few lines*, which point 1 carries
 - 2026-11-06, revised: point 8 numbers only the list of what was recently done, and gives the next step bullets; re-checked: 20 directives, 15 kept, 5 less precise, 0 lost, 0 repairs. Left less precise: the trigger's asking form, which the trigger line carries; the examples of a fact about the work; the reason for the numbers; the direction to `/status-report`; and *a few lines*, which point 1 carries
 - 2026-11-07, revised: the command is `/brief`, its own command, in place of `/report brief` and its alias, a term swap the engineer settled; not re-checked
+- 2026-11-07, revised: the command is `/recent`, in place of `/brief`, a term swap the engineer settled; not re-checked
 
 ## History
+
+Until Sat Nov 7 2026 the command was `/brief`, and this rule was named the-brief-report-says-what-was-recently-done-and-what-is-next. The engineer renamed the command `/recent`, and the rule with it.
 
 Until Sat Nov 7 2026 the command was `/report brief`, with the alias `/brief`. The engineer made `/brief` a command of its own when `/items` replaced `/report`.
 
@@ -84,3 +87,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 11:45:14 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:52:45 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:54:57 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 1:04:28 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:27:22 AM PT
