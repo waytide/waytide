@@ -10,13 +10,13 @@
 # written down is one nobody can reproduce when the wiring breaks.
 #
 # The plugin sits in the project's .claude/skills/, so the script moves to the project root and
-# finds the system there: waytide/system/ in a consuming project, system/ in the Waytide
+# finds the system there: slasher/system/ in a consuming project, system/ in the Waytide
 # authoring source. Checked in that order, as foundation's own scripts check it.
 
 cd "${CLAUDE_PROJECT_DIR:-.}" || exit 0
 
-if [ -d waytide/system ]; then
-  exec waytide/system/foundation/session-start.sh "$@"
+if [ -d slasher/system ]; then
+  exec slasher/system/foundation/session-start.sh "$@"
 fi
 
 exec system/foundation/session-start.sh "$@"

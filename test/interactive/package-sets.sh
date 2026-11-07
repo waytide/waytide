@@ -46,7 +46,7 @@ project() {
 }
 
 installed() {
-  ( cd "$1/waytide/system" && ls ) | tr '\n' ' ' | sed 's/ $//'
+  ( cd "$1/slasher/system" && ls ) | tr '\n' ' ' | sed 's/ $//'
 }
 
 fail() {

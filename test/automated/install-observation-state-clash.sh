@@ -19,7 +19,7 @@ fail() {
 project=$(mktemp -d)
 trap 'rm -rf "$project"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
-items_dir="$project/waytide/local/items"
+items_dir="$project/slasher/local/items"
 
 control_stated_text() {
   cat <<'ITEM'

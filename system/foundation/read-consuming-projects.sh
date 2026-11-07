@@ -5,7 +5,7 @@
 # Run from the root of any project that has installed Waytide. This script lives
 # inside the package, so it is invoked by its path from that root:
 #
-#   waytide/system/foundation/read-consuming-projects.sh
+#   slasher/system/foundation/read-consuming-projects.sh
 #
 # It is packaged rather than kept with the authoring tools because it is not one.
 # It is machine-scoped rather than project-scoped: it reports the Waytide projects
@@ -169,7 +169,7 @@ fi
 
 # --- Discovery -------------------------------------------------------------
 #
-# A consuming project is a git repository whose root holds waytide/system/ —
+# A consuming project is a git repository whose root holds slasher/system/ —
 # the discriminator refresh-packages.sh already applies, reused rather than
 # defined a second time. This repository is excluded by it without a special
 # case: the authoring source holds system/foundation with no wrapper.
@@ -188,9 +188,9 @@ while IFS= read -r root; do
     continue
   fi
 
-  find "$root" -type d -path '*/waytide/system' -prune -print 2>/dev/null |
+  find "$root" -type d -path '*/slasher/system' -prune -print 2>/dev/null |
     while IFS= read -r match; do
-      project=${match%/waytide/system}
+      project=${match%/slasher/system}
 
       # .git is a directory in an ordinary clone and a file in a worktree.
       if [ -e "$project/.git" ]; then

@@ -97,7 +97,7 @@ control_settings_text() {
 {
   "statusLine": {
     "type": "command",
-    "command": "waytide/system/foundation/statusline.sh"
+    "command": "slasher/system/foundation/statusline.sh"
   }
 }
 SETTINGS
@@ -107,24 +107,24 @@ control_no_kind_name=2026-01-01T00-00-00Z-some-item-OPEN.md
 control_other_tag_name=2026-01-01T00-00-01Z-some-other-item-OPEN.md
 control_design_name=2026-01-01T00-00-02Z-some-design-ACTIVE.md
 
-mkdir -p "$project/waytide/local/ideas"
-control_no_kind_text > "$project/waytide/local/ideas/$control_no_kind_name"
-control_other_tag_text > "$project/waytide/local/ideas/$control_other_tag_name"
-control_design_text > "$project/waytide/local/ideas/$control_design_name"
+mkdir -p "$project/slasher/local/ideas"
+control_no_kind_text > "$project/slasher/local/ideas/$control_no_kind_name"
+control_other_tag_text > "$project/slasher/local/ideas/$control_other_tag_name"
+control_design_text > "$project/slasher/local/ideas/$control_design_name"
 
-mkdir -p "$project/waytide/system/foundation"
-cp -R system/foundation/plugin "$project/waytide/system/foundation/"
+mkdir -p "$project/slasher/system/foundation"
+cp -R system/foundation/plugin "$project/slasher/system/foundation/"
 
-control_skill_dir="$project/waytide/system/some-package/skills/some-command"
+control_skill_dir="$project/slasher/system/some-package/skills/some-command"
 mkdir -p "$control_skill_dir"
 control_skill_text > "$control_skill_dir/SKILL.md"
 control_help_text > "$control_skill_dir/help.md"
 
-control_deactivated_skill_dir="$project/waytide/system/some-other-package/skills/some-other-command"
+control_deactivated_skill_dir="$project/slasher/system/some-other-package/skills/some-other-command"
 mkdir -p "$control_deactivated_skill_dir"
 control_skill_text > "$control_deactivated_skill_dir/SKILL.md"
 
-cat > "$project/waytide/local/2026-01-01T00-00-03Z-some-package-set.md" <<'DECLARATION'
+cat > "$project/slasher/local/2026-01-01T00-00-03Z-some-package-set.md" <<'DECLARATION'
 - **Package set:** some-package
 - **Packages:** some-package
 - **Inactive:** some-other-package
@@ -136,17 +136,17 @@ DECLARATION
 
 # Moves ideas to items ------------------------------------------------------
 
-item="$project/waytide/local/items/$control_no_kind_name"
-ideas_dir="$project/waytide/local/ideas"
+item="$project/slasher/local/items/$control_no_kind_name"
+ideas_dir="$project/slasher/local/ideas"
 
 [ -f "$item" ] || fail "Moves ideas to items" "not in items/:" "$control_no_kind_name"
 [ ! -e "$ideas_dir" ] || fail "Moves ideas to items" "ideas/ is still present"
 
 # Tags an item without a tag as an idea -----------------------------------
 
-no_kind_item=$(cat "$project/waytide/local/items/$control_no_kind_name")
-other_tag_item=$(cat "$project/waytide/local/items/$control_other_tag_name")
-design_item=$(cat "$project/waytide/local/items/$control_design_name")
+no_kind_item=$(cat "$project/slasher/local/items/$control_no_kind_name")
+other_tag_item=$(cat "$project/slasher/local/items/$control_other_tag_name")
+design_item=$(cat "$project/slasher/local/items/$control_design_name")
 
 [ "$no_kind_item" = "$(control_no_kind_expected_text)" ] || fail "Tags an item without a tag as an idea" "found:" "$no_kind_item"
 [ "$other_tag_item" = "$(control_other_tag_text)" ] || fail "Tags an item without a tag as an idea" "found:" "$other_tag_item"

@@ -1,8 +1,8 @@
 #!/bin/sh
 # Install (or refresh) the foundation package AND activate the system.
 # Foundation is standalone, but it owns the bootstrap: this script places the
-# project-root AGENTS.md that makes waytide/system/, waytide/local/rules/, and
-# waytide/local/vocabulary.md get read at session start,
+# project-root AGENTS.md that makes slasher/system/, slasher/local/rules/, and
+# slasher/local/vocabulary.md get read at session start,
 # a CLAUDE.md that imports it (Claude Code reads CLAUDE.md, not AGENTS.md), the Slasher plugin
 # in .claude/skills/slasher/, whose SessionStart hook prints the startup display and the
 # session-start notice, and a .claude/settings.json whose status line keeps the system on screen.
@@ -12,14 +12,14 @@
 #
 # Usage:
 #
-#   waytide/system/foundation/install.sh
+#   slasher/system/foundation/install.sh
 #     Install or refresh foundation, then place the bootstrap files.
 #
-#   waytide/system/foundation/install.sh agents-md
+#   slasher/system/foundation/install.sh agents-md
 #     Place the bootstrap files only, foundation already being installed. The composite
 #     install-all.sh uses this, so the bootstrap logic lives in one place rather than two.
 #
-#   waytide/system/foundation/install.sh bootstrap
+#   slasher/system/foundation/install.sh bootstrap
 #     Print the AGENTS.md bootstrap section and exit, placing nothing. refresh-packages.sh
 #     compares it against the project's AGENTS.md, so the text has one source here.
 set -e
@@ -31,7 +31,7 @@ set -e
 #
 origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
 
-prefix="waytide/system/foundation"
+prefix="slasher/system/foundation"
 repo="$origin/foundation.git"
 
 # The bootstrap section written into the project-root AGENTS.md.
@@ -48,36 +48,36 @@ bootstrap() {
   cat <<'EOF'
 ## Waytide
 
-This project's Waytide system and working conventions live under `waytide/`,
+This project's Waytide system and working conventions live under `slasher/`,
 committed alongside the code and read at the start of each session.
 
-**At the start of a session, read every rule file under `waytide/system/` and
-`waytide/local/rules/`, except each package's `source/` directory and `README.md`,
-and `waytide/local/vocabulary.md`, and follow them.**
+**At the start of a session, read every rule file under `slasher/system/` and
+`slasher/local/rules/`, except each package's `source/` directory and `README.md`,
+and `slasher/local/vocabulary.md`, and follow them.**
 
-`waytide/system/` holds the installed system packages —
-`waytide/system/foundation/`, `waytide/system/language/`, and so on, including
+`slasher/system/` holds the installed system packages —
+`slasher/system/foundation/`, `slasher/system/language/`, and so on, including
 each package's `vocabulary.md` glossary where it has one (its terms are binding and
 can't be applied unread; not every package has one, and its absence is not a
-defect). `waytide/local/rules/` holds this project's own local rules, and
-`waytide/local/vocabulary.md` holds the terms and substitutions this project settles
+defect). `slasher/local/rules/` holds this project's own local rules, and
+`slasher/local/vocabulary.md` holds the terms and substitutions this project settles
 for itself, which decide over every package's. That file may not exist, which is
 ordinary and not a defect.
-Read `waytide/system/foundation/` first; it defines the system. The rules
+Read `slasher/system/foundation/` first; it defines the system. The rules
 override default behavior where they conflict; explicit user instructions still win.
 
 **The session-start notice is printed by the harness, not by you — do not print one.** A
 `SessionStart` hook in the Slasher plugin, `.claude/skills/slasher/`, runs
-`waytide/system/foundation/session-start.sh`, which reads the package directories
+`slasher/system/foundation/session-start.sh`, which reads the package directories
 actually present and emits the `Waytide installed at … — N packages: …` notice, followed
 by a line telling the engineer the rules load on the first prompt, or to type `/load` — the
 command that asks for the read instruction the hook carries to be acted on now;
 a status line keeps the system's presence on screen for the rest of the session, beside
 the working directory, branch, and any uncommitted, untracked, or unpushed work.
 
-`waytide/` holds exactly two directories, splitting what came from outside from what
-is this project's own. `waytide/system/` is installed and never edited in place.
-`waytide/local/` is everything this project writes: `rules/` and `vocabulary.md`
+`slasher/` holds exactly two directories, splitting what came from outside from what
+is this project's own. `slasher/system/` is installed and never edited in place.
+`slasher/local/` is everything this project writes: `rules/` and `vocabulary.md`
 alongside the working state — `logs/` (holding `log/`, `loops/`, and
 `work-sessions/`), `items/`, `implementations/`, and `migration/` — each worked with as
 its convention describes, and only `rules/` and `vocabulary.md` read as binding at
@@ -89,8 +89,8 @@ EOF
 # absent; when one already exists, asks before appending (never silently); does
 # nothing when it's already there. Idempotent.
 place_agents_md() {
-  if [ -f AGENTS.md ] && grep -q 'waytide/system/' AGENTS.md; then
-    echo "AGENTS.md already points at waytide/system/ — left unchanged."
+  if [ -f AGENTS.md ] && grep -q 'slasher/system/' AGENTS.md; then
+    echo "AGENTS.md already points at slasher/system/ — left unchanged."
   elif [ ! -f AGENTS.md ]; then
     # No root AGENTS.md yet — creating one takes nothing away, so do it directly.
     bootstrap > AGENTS.md
@@ -101,9 +101,9 @@ place_agents_md() {
     echo "You already have an AGENTS.md at the project root."
     echo
     echo "Appending the Waytide bootstrap will add a section that tells the agent,"
-    echo "at the start of every session, to read every rule file under waytide/system/ and waytide/local/rules/"
+    echo "at the start of every session, to read every rule file under slasher/system/ and slasher/local/rules/"
     echo "(except each package's source/ directory and README.md),"
-    echo "and waytide/local/vocabulary.md, and follow"
+    echo "and slasher/local/vocabulary.md, and follow"
     echo "it. Those rules then OVERRIDE the agent's default behavior where they conflict"
     echo "(your explicit instructions still win). Your existing AGENTS.md content is left"
     echo "exactly as it is; the section is added at the end, after a blank line."
@@ -183,7 +183,7 @@ settings_json() {
 {
   "statusLine": {
     "type": "command",
-    "command": "waytide/system/foundation/statusline.sh"
+    "command": "slasher/system/foundation/statusline.sh"
   }
 }
 EOF
@@ -239,8 +239,8 @@ place_settings_json() {
     echo
     echo "The Slasher plugin, in .claude/skills/slasher/, now runs both, so with these entries in"
     echo "place the notice prints twice. Remove from the 'hooks' object of your file yourself the"
-    echo "'SessionStart' entry that runs waytide/system/foundation/session-start.sh and the"
-    echo "'UserPromptSubmit' entry that runs waytide/system/foundation/startup-display.sh. Keep"
+    echo "'SessionStart' entry that runs slasher/system/foundation/session-start.sh and the"
+    echo "'UserPromptSubmit' entry that runs slasher/system/foundation/startup-display.sh. Keep"
     echo "'statusLine'. Remove 'hooks' itself if nothing is left in it."
   elif [ -f .claude/settings.json ] && grep -q 'foundation/statusline.sh' .claude/settings.json; then
     echo ".claude/settings.json already runs the Waytide status line — left unchanged."
@@ -271,12 +271,12 @@ place_plugin() {
   sh "$(dirname "$0")/assemble-plugin.sh"
 }
 
-# Rename a project's waytide/local/sessions/ to waytide/local/work-sessions/. The
+# Rename a project's slasher/local/sessions/ to slasher/local/work-sessions/. The
 # directory carried the bare name sessions/ until 2026-07-30, when it was renamed for
 # what a session is here — a work session. A rule change names the new directory but
 # cannot move a project's own files, so the installer does it.
 #
-# This is the ONLY place the installer touches waytide/local/, a project's own working
+# This is the ONLY place the installer touches slasher/local/, a project's own working
 # state, and it stays narrow accordingly: it moves only when the old directory is
 # present and the new one is absent, so there is exactly one reading of what should
 # happen. Anything else is reported and left alone — an installer guessing at a merge
@@ -284,31 +284,31 @@ place_plugin() {
 # move is a plain mv rather than git mv, which would fail on records that were never
 # committed; git detects the rename when the engineer commits it.
 migrate_work_sessions() {
-  old_dir="waytide/local/sessions"
-  new_dir="waytide/local/work-sessions"
+  old_dir="slasher/local/sessions"
+  new_dir="slasher/local/work-sessions"
 
   if [ ! -d "$old_dir" ]; then
     return 0
   fi
 
   if [ -d "$new_dir" ]; then
-    echo "Both waytide/local/sessions/ and waytide/local/work-sessions/ are present — neither is touched."
-    echo "waytide/local/sessions/ is the old name. Move its records into work-sessions/ and remove it."
+    echo "Both slasher/local/sessions/ and slasher/local/work-sessions/ are present — neither is touched."
+    echo "slasher/local/sessions/ is the old name. Move its records into work-sessions/ and remove it."
     return 0
   fi
 
   mv "$old_dir" "$new_dir"
-  echo "Renamed waytide/local/sessions/ to waytide/local/work-sessions/."
+  echo "Renamed slasher/local/sessions/ to slasher/local/work-sessions/."
   echo "Commit the rename."
 }
 
-# Move a project's contemporaneous, historical records under waytide/local/logs/. The log, the loop
-# records, and the work session records sat directly under waytide/local/ until
+# Move a project's contemporaneous, historical records under slasher/local/logs/. The log, the loop
+# records, and the work session records sat directly under slasher/local/ until
 # 2026-08-18, beside the directories that state what is currently true. The
 # the-logs-directory-holds-the-contemporaneous-historical-records rule groups them, and a rule cannot move a project's own files.
 #
 # This runs after migrate_work_sessions, so a project still holding the pre-2026-07-30
-# name reaches waytide/local/logs/work-sessions/ in two steps rather than needing a
+# name reaches slasher/local/logs/work-sessions/ in two steps rather than needing a
 # third case here.
 #
 # It keeps the same narrow semantics: each directory moves only when the old location is
@@ -316,8 +316,8 @@ migrate_work_sessions() {
 # rather than git mv, for records that were never committed.
 migrate_logs() {
   for name in log loops work-sessions; do
-    old_dir="waytide/local/$name"
-    new_dir="waytide/local/logs/$name"
+    old_dir="slasher/local/$name"
+    new_dir="slasher/local/logs/$name"
 
     [ -d "$old_dir" ] || continue
 
@@ -327,14 +327,14 @@ migrate_logs() {
       continue
     fi
 
-    mkdir -p waytide/local/logs
+    mkdir -p slasher/local/logs
     mv "$old_dir" "$new_dir"
     echo "Moved $old_dir/ to $new_dir/ — the contemporaneous, historical records are grouped under logs/."
     echo "Commit the move."
   done
 }
 
-# Rename a project's waytide/local/ideas/ to waytide/local/items/. The record kind was
+# Rename a project's slasher/local/ideas/ to slasher/local/items/. The record kind was
 # called an idea until 2026-10-21, and the directory was named for it. A rule change names
 # the new directory but cannot move a project's own files, so the installer does it.
 #
@@ -343,8 +343,8 @@ migrate_logs() {
 # rather than git mv, for records that were never committed. Each moved record that carries
 # no tag is then tagged [idea].
 migrate_items() {
-  old_dir="waytide/local/ideas"
-  new_dir="waytide/local/items"
+  old_dir="slasher/local/ideas"
+  new_dir="slasher/local/items"
 
   [ -d "$old_dir" ] || return 0
 
@@ -384,9 +384,9 @@ migrate_items() {
 # The same narrow semantics as the migrations above: each observation moves only when its new
 # name is absent, and a clash is reported and left alone. Plain mv rather than git mv, for
 # records that were never committed. This runs after migrate_items, so an observation still in
-# waytide/local/ideas/ is moved into items/ first.
+# slasher/local/ideas/ is moved into items/ first.
 migrate_observation_state() {
-  items_dir="waytide/local/items"
+  items_dir="slasher/local/items"
 
   [ -d "$items_dir" ] || return 0
 

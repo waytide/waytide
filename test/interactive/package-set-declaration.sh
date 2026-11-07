@@ -30,14 +30,14 @@ fail() {
 # A scratch project in the consuming-project layout, which is what an install produces.
 project() {
   path="$tmp/$1"
-  mkdir -p "$path/waytide/system/foundation" "$path/waytide/local"
-  echo "# Foundation" > "$path/waytide/system/foundation/README.md"
-  cp "$repository/system/foundation/session-start.sh" "$path/waytide/system/foundation/"
+  mkdir -p "$path/slasher/system/foundation" "$path/slasher/local"
+  echo "# Foundation" > "$path/slasher/system/foundation/README.md"
+  cp "$repository/system/foundation/session-start.sh" "$path/slasher/system/foundation/"
   printf '%s' "$path"
 }
 
 declare_set() {
-  cat > "$1/waytide/local/$2-package-set.md" <<RECORD
+  cat > "$1/slasher/local/$2-package-set.md" <<RECORD
 # Package set
 
 - **Package set:** $3
@@ -48,7 +48,7 @@ RECORD
 
 # The parsed context, or a failure that says the JSON did not parse at all.
 context() {
-  ( cd "$1" && ./waytide/system/foundation/session-start.sh ) |
+  ( cd "$1" && ./slasher/system/foundation/session-start.sh ) |
     python3 -c '
 import json, sys
 try:
@@ -116,7 +116,7 @@ esac
 # Obeying it would deactivate every package, which nobody means by declaring a set.
 
 partial=$(project partial)
-cat > "$partial/waytide/local/2026-08-23T09-30-00Z-content-package-set.md" <<'RECORD'
+cat > "$partial/slasher/local/2026-08-23T09-30-00Z-content-package-set.md" <<'RECORD'
 # Package set
 
 - **Package set:** content
@@ -135,7 +135,7 @@ esac
 # interpolated into a JSON string by a printf with no escaping.
 
 hostile=$(project hostile)
-cat > "$hostile/waytide/local/2026-08-23T09-30-00Z-content-package-set.md" <<'RECORD'
+cat > "$hostile/slasher/local/2026-08-23T09-30-00Z-content-package-set.md" <<'RECORD'
 # Package set
 
 - **Package set:** content" , "x": "

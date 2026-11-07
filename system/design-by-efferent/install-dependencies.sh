@@ -5,7 +5,7 @@
 #
 # Usage:
 #
-#   waytide/system/design-by-efferent/install-dependencies.sh
+#   slasher/system/design-by-efferent/install-dependencies.sh
 #
 set -e
 
@@ -17,7 +17,7 @@ set -e
 origin=${WAYTIDE_ORIGIN:-git@github.com:waytide}
 
 add() {
-  prefix="waytide/system/$1"
+  prefix="slasher/system/$1"
   repo="$origin/$1.git"
 
   if [ ! -d "$prefix" ]; then

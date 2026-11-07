@@ -15,9 +15,9 @@
 #
 # Invocation:
 #
-#   printf '{"session_id":"some-session","prompt":"some prompt"}' | waytide/system/foundation/startup-display.sh
-#   waytide/system/foundation/startup-display.sh message
-#   waytide/system/foundation/startup-display.sh load-line
+#   printf '{"session_id":"some-session","prompt":"some prompt"}' | slasher/system/foundation/startup-display.sh
+#   slasher/system/foundation/startup-display.sh message
+#   slasher/system/foundation/startup-display.sh load-line
 #
 # Nobody types the first. The Slasher plugin's UserPromptSubmit hook runs it on every prompt, and
 # session-start.sh runs the second. The line is recorded because a script whose
@@ -26,10 +26,10 @@
 # Never let the display break a prompt.
 set +e
 
-# Locate the system: waytide/system/ in a consuming project, system/ in the Waytide authoring
+# Locate the system: slasher/system/ in a consuming project, system/ in the Waytide authoring
 # source. Checked in that order — a consuming project may have a system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
+if [ -d slasher/system ]; then
+  system=slasher/system
 elif [ -d system ] && [ -d system/foundation ]; then
   system=system
 else

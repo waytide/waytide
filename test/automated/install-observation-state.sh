@@ -19,7 +19,7 @@ fail() {
 project=$(mktemp -d)
 trap 'rm -rf "$project"' EXIT
 installer="$(pwd)/system/foundation/install.sh"
-items_dir="$project/waytide/local/items"
+items_dir="$project/slasher/local/items"
 
 # Each text is read from a function rather than a heredoc inside $(…): macOS /bin/sh joins a line
 # ending in a backslash to the next one there.

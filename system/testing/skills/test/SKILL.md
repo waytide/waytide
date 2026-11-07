@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 The engineer typed `/test $ARGUMENTS`.
 
-1. Load each rule this skill names with the loader. From the project root, run `waytide/system/foundation/load-rules.sh <rule-name>`. Where the project has no `waytide/` directory, run `system/foundation/load-rules.sh <rule-name>`. Follow the rule it prints.
+1. Load each rule this skill names with the loader. From the project root, run `slasher/system/foundation/load-rules.sh <rule-name>`. Where the project has no `slasher/` directory, run `system/foundation/load-rules.sh <rule-name>`. Follow the rule it prints.
 2. Read the first word typed as the subcommand. The words after it are its arguments.
 3. Where the first word is `help`, print the text of `help.md`, in this skill's directory, and do nothing more.
 4. **Nothing typed**: run the automated suite. Load a-test-run-asked-for-runs-the-automated-suite-or-the-interactive-test-named.

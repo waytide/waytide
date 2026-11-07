@@ -8,7 +8,7 @@
 #
 # Invocation:
 #
-#   waytide/system/foundation/statusline.sh
+#   slasher/system/foundation/statusline.sh
 #
 # Nobody types that either. install.sh wires it into .claude/settings.json as the
 # statusLine command, and the harness runs it every turn.
@@ -94,8 +94,8 @@ if git rev-parse --abbrev-ref --symbolic-full-name @{upstream} >/dev/null 2>&1; 
 fi
 
 # Locate the system, as the session-start notice does.
-if [ -d waytide/system ]; then
-  system=waytide/system
+if [ -d slasher/system ]; then
+  system=slasher/system
 elif [ -d system ] && [ -d system/foundation ]; then
   system=system
 else

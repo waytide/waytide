@@ -10,8 +10,8 @@
 #
 # Invocation:
 #
-#   waytide/system/foundation/session-start.sh
-#   waytide/system/foundation/session-start.sh instruction
+#   slasher/system/foundation/session-start.sh
+#   slasher/system/foundation/session-start.sh instruction
 #
 # Nobody types the first. The second prints the read instruction alone, as plain text, and is
 # run by the /load skill, so /load follows the same text load rules acts on rather than a copy.
@@ -22,11 +22,11 @@
 # Never let a notice break a session start.
 set +e
 
-# Locate the system: waytide/system/ in a consuming project, system/
+# Locate the system: slasher/system/ in a consuming project, system/
 # in the Waytide authoring source. Checked in that order — a consuming project
 # may have a system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
+if [ -d slasher/system ]; then
+  system=slasher/system
 elif [ -d system ] && [ -d system/foundation ]; then
   system=system
 else
@@ -74,7 +74,7 @@ notice=$(printf 'Waytide installed at %s/ — %s %s: %s' \
 
 # Report work that has not reached a concluded state. An implementation is never
 # left silently open (the an-implementation-runs-on-a-branch-to-a-declared-end rule), but nothing otherwise
-# brings an open one to attention: the working directories under waytide/ are not read at session
+# brings an open one to attention: the working directories under slasher/ are not read at session
 # start, and work done in a worktree leaves no trace in the main working tree at
 # all — it stays on the upstream branch, so even the branch name gives nothing away.
 #
@@ -154,10 +154,10 @@ report_open() {
   printf '%s %s open: %s' "$open_count" "$noun" "$names"
 }
 
-# Locate the project's own working state: waytide/local/ in a consuming project,
+# Locate the project's own working state: slasher/local/ in a consuming project,
 # local/ in the Waytide authoring source — the same two-layout check the packages get.
-if [ -d waytide/local ]; then
-  own=waytide/local
+if [ -d slasher/local ]; then
+  own=slasher/local
 elif [ -d local ]; then
   own=local
 else
@@ -209,7 +209,7 @@ fi
 #
 # The path defaults to the consuming-project layout, which is what an install produces; the
 # authoring source is detected the same way the packages and the open-work scan are.
-own_rules=${own:-waytide/local}
+own_rules=${own:-slasher/local}
 
 # A package's rules are compiled from its source/ directory, by compile.sh in the authoring
 # source. The compiled rules at the package root are what is read. The source rules and the

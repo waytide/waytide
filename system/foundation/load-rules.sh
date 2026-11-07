@@ -3,7 +3,7 @@
 #
 # Run from the project root:
 #
-#   waytide/system/foundation/load-rules.sh     in a consuming project
+#   slasher/system/foundation/load-rules.sh     in a consuming project
 #   system/foundation/load-rules.sh             in the Waytide authoring source
 #   system/foundation/load-rules.sh <rule-name> one rule, on-demand when its trigger comes up, or
 #                                               pre-loaded when a skill hands its act to the rule
@@ -14,12 +14,12 @@
 # that does not exist is passed over.
 set -e
 
-# Locate the system and the project's own directory: waytide/ in a consuming project, the root
+# Locate the system and the project's own directory: slasher/ in a consuming project, the root
 # in the Waytide authoring source. Checked in that order — a consuming project may have a
 # system/ directory of its own.
-if [ -d waytide/system ]; then
-  system=waytide/system
-  local=waytide/local
+if [ -d slasher/system ]; then
+  system=slasher/system
+  local=slasher/local
 else
   system=system
   local=local
