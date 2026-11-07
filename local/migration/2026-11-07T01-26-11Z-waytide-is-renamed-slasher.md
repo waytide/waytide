@@ -13,7 +13,7 @@
 
 1. **The project paths in the scripts.** Every script reads `slasher/` where it read `waytide/`. The tests change first, and the scripts follow.
 2. **The move of an old layout.** The installer and a refresh move a consuming project's `waytide/` to `slasher/` and regenerate its `AGENTS.md`. The tests change first.
-3. **The machine paths.** Every script reads `~/.config/slasher/` and `~/.local/share/slasher/`.
+3. **The machine paths.** Every script reads `~/.config/slasher/` and `~/.local/share/slasher/`. The installer moves a machine's old folders to the new names, settled 2026-11-06.
 4. **The prose.** The rules, the vocabularies, the help, the READMEs, `CONTRIBUTING.md`, `AGENTS.md`, and the scripts' messages say Slasher and name the new paths. Each changed rule is compiled.
 5. **The repositories.** The engineer renames the GitHub organization and the two repositories. Then every URL in this repository names `github.com/slasher-bot/`, and this repository's `origin` remote follows.
 
@@ -25,7 +25,7 @@
 
 ## Not yet settled
 
-- Whether the machine paths are moved where they exist under the old name, as the project layout is, or only read under the new name.
+- Whether the machine paths are moved where they exist under the old name, as the project layout is, or only read under the new name. Settled 2026-11-06: the installer moves them.
 - Whether the plugin, already named Slasher, keeps its name now that the product shares it.
 
 ## What happened
@@ -43,3 +43,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 6:04:30 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 6:06:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 7:41:40 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:12:58 PM PT
