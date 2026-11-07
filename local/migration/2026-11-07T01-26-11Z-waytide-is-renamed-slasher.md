@@ -34,6 +34,7 @@
 - **2026-11-06** — The agent renamed `slasher-bot/waytide` to `slasher-bot/slasher` and `slasher-bot/waytide-ruby` to `slasher-bot/slasher-ruby`, with `gh repo rename`, at the engineer's selection. Every URL in this repository still names `github.com/waytide/`.
 - **2026-11-06** — The first increment is done. The tests changed first, then the scripts. The increment reached further than the plan named: the plugin's hooks and the skills' instructions run commands by the project path, so they read `slasher/` too, and so do the messages and comments that name the folder. Left for later increments: the `WAYTIDE_ORIGIN` and `WAYTIDE_REGISTRY` settings, the temporary marker files named `waytide-…`, and the status line's `:: Waytide`, for the prose. `~/.config/waytide/`, for the machine paths. The `github.com/waytide/` addresses, for the repositories. The automated tests pass.
 - **2026-11-06** — The second increment is done. The installer, in any mode but `bootstrap`, moves a project's `waytide/` to `slasher/` before it does anything else, and leaves both alone where both exist. It replaces an `AGENTS.md` section naming `waytide/system/` with the new one, keeping the text above it. The automated tests pass.
+- **2026-11-06** — The third increment's reading half is done. The one script that reads a machine path, `read-consuming-projects.sh`, reads `~/.config/slasher/`. The writer's name and the private journal are read by the agent following rules, so their paths change with the prose. The installer's move of the old machine folders is still to come. The automated tests pass.
 
 ---
 
@@ -44,3 +45,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 6:06:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 7:41:40 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:12:58 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:14:54 PM PT

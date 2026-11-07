@@ -25,7 +25,7 @@
 #
 # The registry it reads is per-machine and lives outside this repository:
 #
-#   ~/.config/waytide/consuming-projects.toml
+#   ~/.config/slasher/consuming-projects.toml
 #
 # That placement is the foundation rule a-project-does-not-name-its-downstream-consumers-in-its-own-files: a
 # project does not name the projects that consume it, so this script is
@@ -35,7 +35,7 @@ set -e
 
 # Overridable so the script can be exercised against a registry written for a
 # test, without touching the engineer's own.
-registry=${WAYTIDE_REGISTRY:-$HOME/.config/waytide/consuming-projects.toml}
+registry=${WAYTIDE_REGISTRY:-$HOME/.config/slasher/consuming-projects.toml}
 
 # --- The registry ----------------------------------------------------------
 #
