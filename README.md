@@ -1,3 +1,5 @@
+![Slasher](material/slasher-logo-white-bg-798x409.png)
+
 # Slasher: Human-in-the-Loop Harness
 
 By [The Eventide Project](https://eventide-project.org)
