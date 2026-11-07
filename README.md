@@ -4,7 +4,7 @@
 
 The engineer decides. The agent generates. Humanity rules.
 
-Where there is ambiguity, the agent gives the engineer options, including the option to take the reigns.
+Where there is ambiguity, the agent gives the engineer options, including the option to rein it in.
 
 ## License
 
