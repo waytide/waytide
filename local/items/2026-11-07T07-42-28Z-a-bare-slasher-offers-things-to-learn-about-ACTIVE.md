@@ -1,6 +1,6 @@
 # A bare /slasher offers things to learn about
 
-- **State:** Open
+- **State:** Active
 - **Tags:** [idea]
 
 **A bare `/slasher` would offer the engineer things to learn about, through the selection interface: Items, Features, and Experiments.** The engineer could also type something else in. For the selection, Slasher would explain it briefly: selecting Items would run *Briefly explain items*.
@@ -16,3 +16,4 @@ As the engineer first stated it: "A bare \"/slasher\" command offers the user th
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 11:42:28 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:59:23 PM PT
