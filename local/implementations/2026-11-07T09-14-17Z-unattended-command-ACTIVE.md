@@ -17,7 +17,7 @@
 - **Tags:** [feature]
 - **Upstream branch:** `master`
 - **Implementation branch:** `feature/worktree/unattended-command`
-- **Base:** BASE, from `master`
+- **Base:** `713678e8`, from `master`
 - **Working location:** branch and worktree, chosen at the start. The worktree is `../slasher-feature-worktree-unattended-command`, and the main working tree stays on `master`.
 - **Participation:** attended, chosen at the start.
 - **Verdict:** it concludes without an engineer's verdict, selected at the start.
