@@ -138,19 +138,19 @@ Trigger: When starting a feature or an experiment
 
 > Human in the loop
 >
-> - Agent's confidence: 80%. How sure the agent is about working alone.
-> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80% (how sure the agent is about working alone.)
+> - Risk of redo: 20% (how likely it is that you will have to redo work the agent does.)
+> - It'll work: 95% (how sure the agent is that what it builds on its own does what it says.)
+> - Your approval: 85% (how sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.)
 
 with these options:
 
-> **Attended** — You decide. The agent automates.
->
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
+>
+> **Attended (95%)** — You decide. The agent automates.
 
 15. These words are fixed. The figures are examples.
-16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
+16. Put each figure on a line of its own, followed by its fixed sentence that says what it measures, in parentheses. Write no `**` around a figure. The selection UI prints them as characters.
 17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
@@ -160,21 +160,23 @@ with these options:
 23. Never give an overall score higher than the lower of works and voice.
 24. When the overall score is 70% or lower, end the question with this line:
 
-> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+> When the agent's confidence is 70% or lower, intervention is indicated.
 
-25. When the overall score is 70% or lower, mark the Attended option as the recommendation:
+25. When the overall score is 70% or lower, mark the Attended option as the recommendation, and list it first:
 
-> **Attended (Recommended)** — You decide. The agent automates.
+> **Attended (Recommended, 90%)** — You decide. The agent automates.
+>
+> **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
-26. Above 70%, give no warning, and mark neither option.
+26. Above 70%, give no warning, mark neither option, and list Unattended first.
 27. The engineer may choose either option, whatever the score.
 28. Name no reserved term, such as hinge, gate, or loop, in the question or in any option.
 29. Name the hinges when the loop reaches the first one, not before.
 30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
 31. That confirmation records what was chosen, when, and by whom.
-32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
+32. That confirmation also records the five figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
 
-> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%, attended confidence 90%. The warning was shown, and Attended was recommended.
 
 33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
 34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
@@ -183,6 +185,7 @@ with these options:
 37. Under unattended work, write no Options line and no Decision / chat line.
 38. Do not write an unattended cycle as though an engineer was consulted.
 39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+40. Put the agent's estimate of its confidence if the work is attended in parentheses in the Attended option, as *Attended (95%)*, or *Attended (Recommended, 90%)* where it is recommended. Estimate it as about the *It'll work* figure, or a little higher. Do not calculate it.
 
 ## Unattended presents a plan before it generates
 
