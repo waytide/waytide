@@ -104,9 +104,35 @@ The feature `2026-11-06T21-42-05Z-rename-to-slasher` renames Waytide to Slasher,
 - **Decision / chat:** the engineer selected the direct implementation.
 - **Outcome:** `migrate_machine` moves `waytide` to `slasher` under `XDG_CONFIG_HOME` and `XDG_DATA_HOME`, falling back to `HOME`, and leaves both alone where both exist. The six other installer tests run under a temporary `HOME`. The automated tests pass, and the engineer's own machine folders are untouched. The fallback to `HOME` is not yet tested. The test is unnamed until the feature's close.
 
+## Cycle 17 — Actuation, outcome 5: with neither XDG setting, the old folders are found under `HOME`
+
+- **Hinge:** how the test actuates the installer so that only the fallback can find the folders.
+- **Options:** `HOME` pointing at a pretend home with both XDG settings empty, and its negative.
+- **Decision / chat:** the engineer selected `HOME` with the XDG settings empty.
+
+## Cycle 18 — Observation, outcome 5
+
+- **Hinge:** what the test reads in the pretend home.
+- **Options:** arrived and gone, as in outcome 4. Arrived only.
+- **Decision / chat:** the engineer selected arrived and gone.
+
+## Cycle 19 — Controls, outcome 5
+
+- **Hinge:** what the pretend home holds.
+- **Options:** one placeholder file in each old folder, as in outcome 4, and its negative.
+- **Decision / chat:** the engineer selected one file in each.
+
+## Cycle 20 — Implementation, outcome 5
+
+- **Hinge:** none to write. The test passed against the installer as it stood, because `migrate_machine` already fell back to `HOME`. The test is coverage, not design.
+- **Options:** keep the test as coverage, or remove it.
+- **Decision / chat:** the engineer kept it.
+- **Outcome:** `test/automated/install-machine-move-home.sh` is in the suite. The automated tests pass. The test is unnamed until the feature's close.
+
 ---
 
 Authored by Scott Bellware on Fri Nov 6 2026 at 7:51:32 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 7:56:58 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:01:03 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:24:15 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 8:29:31 PM PT
