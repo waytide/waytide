@@ -19,12 +19,15 @@
 - **2026-11-06** — The rename reaches the prose, the project paths such as `waytide/system/` and `waytide/local/`, the machine configuration under `~/.config/waytide/` and `~/.local/share/waytide/`, and the GitHub organization and repositories.
 - **2026-11-06** — Where a consuming project still has `waytide/` and no `slasher/`, the installer or a refresh moves `waytide/` to `slasher/` and regenerates its `AGENTS.md`. The scripts read only `slasher/`.
 - **2026-11-06** — The GitHub organization `waytide` is renamed `slasher`, the composite repository `slasher/slasher`, and `waytide-ruby` `slasher-ruby`. The package repositories keep their names, as `slasher/foundation`.
+- **2026-11-06** — The GitHub name `slasher` is taken, so the organization is renamed `slasher-bot`, not `slasher`. The composite repository is `slasher-bot/slasher`, `waytide-ruby` becomes `slasher-bot/slasher-ruby`, and the package repositories read as `slasher-bot/foundation`.
 
 ## History
 
 As the engineer first stated it: "Idea for master: Rename Waytide to Slasher"
 
 On 2026-11-03, of `slasher.tools` and `slasher.bot`: "Slasher.bot has a cool factor that attracts geeks". Then: "Or I could register slasher.sh, and route it to slasher bot". Then: "Yes, the sh domain should be the installer"
+
+On 2026-11-06, asked whether the organization takes a dash or one word, as in "slasherbot", the engineer selected `slasher-bot`.
 
 ---
 
@@ -35,3 +38,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 1:05:34 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 1:43:30 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 2:14:35 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 5:25:36 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 5:32:41 PM PT
