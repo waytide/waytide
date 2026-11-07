@@ -28,7 +28,7 @@ Source: system/language/source/an-answer-is-a-list-and-prose-must-justify-itself
 ## What justifies prose
 
 1. Only one condition justifies prose: the answer is a sentence or two.
-2. Such an answer takes no list. Examples: *Yes*, *The suite passes*, *Correct — the rule says so and I did not follow it*.
+2. Such an answer takes no list. Examples: *Yes*, *The suite passes*, *Correct — the rule says so and I did not follow it*. Do not put it in a single bullet, or in two bullets for a two-clause answer.
 3. No other condition justifies prose.
 4. An explanation the engineer asked for does not justify prose. It is answered in a list.
 5. Connected or dependent reasoning does not justify prose. It is answered in a numbered list.
@@ -55,20 +55,20 @@ Source: system/language/source/an-answer-is-a-list-and-prose-must-justify-itself
 4. Those numbers are handles, such as *#2*. They imply no order.
 5. In all other cases, leave the list unordered.
 
-## After a compressed answer, the engineer is offered an expansion
+## After a brief explanation, and where an expansion would add something, the engineer is offered an expansion
 
-1. End every answer the agent compressed with this line, whether the answer is a list or prose:
+1. End a brief explanation with this line, always:
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 2. Write it as a line on its own, not as a selection prompt.
-3. An answer is compressed wherever the agent left out detail it holds. A brief explanation, such as one a bare `/slasher` gives, always ends with the line.
-4. Leave it off only an answer that says all the agent holds, such as *Yes*, or a one-line fact.
+3. A brief explanation is one asked for as brief, such as a topic a bare `/slasher` explains, or a request worded *Briefly explain…*.
+4. End any other answer with the line only where the agent compressed material out of it and an expansion would add something. That is the agent's own judgment.
 5. It offers more depth on the answer given, not a next topic. Do not end any answer with an offer of a next topic, or of what else might be done.
 6. It names the form being given up, "more detail than bullet points". "More detail" alone does not do this.
-7. Whether to include the line is not the agent's judgment. The test is whether detail was left out.
+7. Leave it out of an answer that says all it has.
 
 ## Expanding an answer
 

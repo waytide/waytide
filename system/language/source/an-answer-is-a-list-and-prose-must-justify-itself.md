@@ -40,18 +40,17 @@ An answer to the engineer is a **list**. Prose is not forbidden, and it is not t
 
 **This is why dependent reasoning is not an exception.** The problem was never prose against lists. It was one kind of list used where another was meant.
 
-## After a compressed answer, the engineer is offered an expansion
+## After a brief explanation, and where an expansion would add something, the engineer is offered an expansion
 
-**Every answer the agent compressed ends with one line:**
+**A brief explanation always ends with one line, and another answer ends with it where an expansion would add something:**
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 - **It is a line, not a prompt.** A selection prompt where no decision is pending doubles the turns and becomes furniture — a thing always present is read once and never again.
-- **It ends every answer the agent compressed, whether a list or prose.** An answer is compressed wherever the agent left out detail it holds. The a-response-is-clarified-twice-before-it-is-sent rule makes that the ordinary case, so most answers end with the line. A brief explanation, such as one a bare `/slasher` gives, always does.
-- **It is left off only an answer that says all the agent holds**, such as *Yes*, or a one-line fact.
-- **Whether to include it is not the agent's judgment.** The test is whether detail was left out, not whether the agent thinks an expansion would be useful.
+- **A brief explanation always ends with it.** A brief explanation is one asked for as brief, such as a topic a bare `/slasher` explains, or a request worded *Briefly explain…*. Its brevity is the point of the request, so there is always more to give.
+- **Any other answer ends with it only where the agent compressed material out of it, and an expansion would add something.** That is the agent's own judgment. On a report, a confirmation, or an answer that says all it has, the line is noise, and putting it under every answer is how a line stops being read.
 - **What it offers is depth on the answer given, not a next topic.** That distinction is the whole difference between this line and the trailing offer-of-more that is otherwise a defect: it points back at what was just said, not forward at what else might be done.
 - **It names the form being traded away**, not only the depth on offer. *More detail* alone leaves an engineer to guess what an expansion would look like. *more detail than bullet points* says the expansion is a different form of answer, which is what they would be asking for.
 
@@ -61,7 +60,7 @@ For more detail than bullet points, ask for an expanded answer.
 
 Test each survivor by whether it could be false. Number the list where its list items depend on each other, or where the engineer may refer back to them, and leave it unordered otherwise.
 
-Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. Where the answer left out detail the agent holds, end it with `For more detail than bullet points, ask for an expanded answer.` on its own line, and omit that line only where the answer says all the agent holds.
+Write prose only where the answer is a sentence or two. Do not reach for it because an explanation was requested, or because the reasoning is connected. The first is not a justification, and the second is served by numbering. End a brief explanation with `For more detail than bullet points, ask for an expanded answer.` on its own line. End any other answer with it only where the agent compressed material out of it and an expansion would add something.
 
 ## Expanding an answer
 
@@ -77,7 +76,7 @@ Write prose only where the answer is a sentence or two. Do not reach for it beca
 ## What justifies prose
 
 1. Only one condition justifies prose: the answer is a sentence or two.
-2. Such an answer takes no list. Examples: *Yes*, *The suite passes*, *Correct — the rule says so and I did not follow it*.
+2. Such an answer takes no list. Examples: *Yes*, *The suite passes*, *Correct — the rule says so and I did not follow it*. Do not put it in a single bullet, or in two bullets for a two-clause answer.
 3. No other condition justifies prose.
 4. An explanation the engineer asked for does not justify prose. It is answered in a list.
 5. Connected or dependent reasoning does not justify prose. It is answered in a numbered list.
@@ -104,20 +103,20 @@ Write prose only where the answer is a sentence or two. Do not reach for it beca
 4. Those numbers are handles, such as *#2*. They imply no order.
 5. In all other cases, leave the list unordered.
 
-## After a compressed answer, the engineer is offered an expansion
+## After a brief explanation, and where an expansion would add something, the engineer is offered an expansion
 
-1. End every answer the agent compressed with this line, whether the answer is a list or prose:
+1. End a brief explanation with this line, always:
 
 ```
 For more detail than bullet points, ask for an expanded answer.
 ```
 
 2. Write it as a line on its own, not as a selection prompt.
-3. An answer is compressed wherever the agent left out detail it holds. A brief explanation, such as one a bare `/slasher` gives, always ends with the line.
-4. Leave it off only an answer that says all the agent holds, such as *Yes*, or a one-line fact.
+3. A brief explanation is one asked for as brief, such as a topic a bare `/slasher` explains, or a request worded *Briefly explain…*.
+4. End any other answer with the line only where the agent compressed material out of it and an expansion would add something. That is the agent's own judgment.
 5. It offers more depth on the answer given, not a next topic. Do not end any answer with an offer of a next topic, or of what else might be done.
 6. It names the form being given up, "more detail than bullet points". "More detail" alone does not do this.
-7. Whether to include the line is not the agent's judgment. The test is whether detail was left out.
+7. Leave it out of an answer that says all it has.
 
 ## Expanding an answer
 
@@ -131,8 +130,11 @@ For more detail than bullet points, ask for an expanded answer.
 - 2026-10-28, revised: Why points removed, solubility 53 → 54, clarity 0.78 → 0.78; checked: 22 directives, 22 kept, 0 less precise, 0 lost
 - 2026-11-03, revised: /expand gives the previous answer at more length; checked: 29 directives, 28 kept, 1 less precise, 0 lost. Left less precise, from before this change: the detail behind a sentence or two taking no list
 - 2026-11-07, revised: the expansion line ends every answer the agent compressed, list or prose, and is no longer the agent's judgment; re-checked: 24 directives, 23 kept, 1 less precise, 0 lost, 0 repairs. Left less precise: the bans on a single bullet and on two bullets for a two-clause answer, which *Such an answer takes no list* carries
+- 2026-11-07, revised: a brief explanation always ends with the expansion line, and another answer only where the agent judges an expansion would add something; checked: 25 directives, 23 kept, 1 less precise, 1 lost, 1 repair: the ban on a single bullet, or two bullets for a two-clause answer, restored to the compressed text; re-checked: 25 directives, 24 kept, 1 less precise, 0 lost. Left less precise: the line left off reports and confirmations, which *an answer that says all it has* carries
 
 ## History
+
+For a time on Sat Nov 7 2026 the expansion line ended every answer the agent compressed, list or prose. The engineer found it displayed too often, and settled that a brief explanation always ends with it, and another answer only at the agent's judgment.
 
 Until Sat Nov 7 2026 the expansion line ended a list answer only where the agent judged that an expansion would add something. The rule called that judgment its known weakness, and left two stricter forms unadopted: the line on every list answer, or above a length threshold. The engineer settled that the line ends every answer the agent compressed, list or prose, and that a brief explanation always ends with it.
 
@@ -173,3 +175,4 @@ Changed by Scott Bellware on Tue Oct 27 2026 at 2:06:51 PM PT
 Changed by Scott Bellware on Tue Oct 27 2026 at 2:29:24 PM PT
 Changed by Scott Bellware on Tue Nov 3 2026 at 10:38:55 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:22:04 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:30:08 AM PT

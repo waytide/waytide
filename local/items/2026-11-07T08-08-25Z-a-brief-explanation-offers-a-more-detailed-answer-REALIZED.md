@@ -13,6 +13,7 @@
 - **2026-11-07** — It reaches every brief explanation, not only those a bare `/slasher` gives.
 - **2026-11-07** — It is the existing expansion line of the `language` package's an-answer-is-a-list-and-prose-must-justify-itself rule, *For more detail than bullet points, ask for an expanded answer.*, and `/expand` gives the detail.
 - **2026-11-07** — It ends every answer the agent compressed, explanation or not, list or prose. It is no longer the agent's judgment whether to include it.
+- **2026-11-07** — The line displayed too often, and the previous resolution is narrowed: a brief explanation always ends with it, and any other answer only where the agent judges an expansion would add something.
 
 ## History
 
@@ -26,3 +27,4 @@ Authored by Scott Bellware on Sat Nov 7 2026 at 12:08:25 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:13:03 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:21:42 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:24:13 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 12:30:08 AM PT
