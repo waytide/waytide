@@ -8,7 +8,9 @@
 | `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/phase` | Phases split a feature or an experiment into steps, run one at a time, each on its own sub branch. |
-| `/process`, `/current`, `/work-status` | These commands move the work under way along: take its next step, or say what was done and what's next. |
+| `/process` | These commands move the work under way along: take its next step, or say what was done and what's next. |
+| `/current` | This command lists the current items, then the current features and experiments. |
+| `/work-status` | This command says what was recently done, and what's next. |
 | `/log` | The log records what was decided and when, and a work session record tells the story of a stretch of work. |
 | `/journal` | The journal is the writer's own record of what they think, either stored with the project or kept in a private journal. |
 | `/brainstorm` | Brainstorming records points as they are said, freeform in no order, and organizes them when the writer is done. |
@@ -19,7 +21,7 @@
 | `/language` | These commands work on language: reserving a word, ETE, Slasher's implementation of STE and its extensions, and clarifying language, often the agent's. |
 | `/load` | This command loads the rules now, without waiting for the first prompt. |
 
-**Each row is one command domain.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. The `/process` row also names `/current` and `/work-status`, two root commands of its domain. Print no other root command, alias, or subcommand in the table.
+**Each row is one command domain, except the `/current` and `/work-status` rows.** A command domain is a group of root commands that share one heading, one description, and one help command in the Slasher help. The row names the domain's help command, and its description is the one under that heading. The help command is the command `/<command> help` runs on to print the domain's help. For a domain with no root command of its own name, it is the skill named for the domain, as `/process` for PROCESS and `/language` for LANGUAGE. `/current` and `/work-status` are root commands of the PROCESS domain, and each has a row of its own below the `/process` row. Its description is the one its line in the help gives. Print no other root command, alias, or subcommand in the table.
 
 **After the table, run `/current 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/current` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/current 10`, for the same reason it prints no table.
 
@@ -41,7 +43,7 @@ Until Fri Nov 6 2026 the items printed after the table took no heading of their 
 
 Until Fri Nov 6 2026 a bare `/slasher` printed nothing, and the table printed only when the rules loaded.
 
-Until Fri Nov 6 2026 the `/process` row named only `/process`.
+Until Fri Nov 6 2026 the `/process` row named only `/process`. For a time on that day it also named `/current` and `/work-status`, before each took a row of its own.
 
 Until Fri Nov 6 2026 only a bare `/slasher` printed the table during a session. `/command-table` did not exist.
 
@@ -64,3 +66,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:36:16 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:52:38 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 9:55:31 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 9:56:59 PM PT
