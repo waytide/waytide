@@ -23,18 +23,18 @@ Which is cheaper depends on how load-bearing the work is, and on how likely the 
 
 > Human in the loop
 >
-> - Agent's confidence: 80%. How sure the agent is about working alone.
-> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80% (how sure the agent is about working alone.)
+> - Risk of redo: 20% (how likely it is that you will have to redo work the agent does.)
+> - It'll work: 95% (how sure the agent is that what it builds on its own does what it says.)
+> - Your approval: 85% (how sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.)
 
 with these options:
 
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 >
-> **Attended** — You decide. The agent automates.
+> **Attended (95%)** — You decide. The agent automates.
 
-**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, with a sentence that says what it measures, so the engineer does not have to know the terms to read it. The question is plain text, with no `**` around a figure, because the selection UI does not render markdown and prints the asterisks as characters. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
+**The question carries the agent's confidence in doing the work unattended, as three percentages, and the risk of redo that follows from them.** Each is on a line of its own, followed by a sentence in parentheses that says what it measures, so the engineer does not have to know the terms to read it. The question is plain text, with no `**` around a figure, because the selection UI does not render markdown and prints the asterisks as characters. The figures above are examples. Each is the agent's own estimate for this piece of work, made at the moment it asks.
 
 - **The overall score** comes first, labeled *Agent's confidence*. It is the agent's confidence that the unattended work comes out as the engineer would accept it: it works, and it is what the engineer would have done. It is the score the decision is made on.
 - **The risk of redo** comes second. It is 100% minus the overall score: the chance that the engineer has to redo some of the work. It is computed, not estimated. It puts the same figure in the terms of what the engineer stands to lose.
@@ -49,15 +49,19 @@ with these options:
 
 **When the overall score is 70% or lower, the question carries a warning, and Attended is the recommendation.** The warning is the question's last line, in these words:
 
-> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+> When the agent's confidence is 70% or lower, intervention is indicated.
 
 and the Attended option is marked as the recommendation, and moves first:
 
-> **Attended (Recommended)** — You decide. The agent automates.
+> **Attended (Recommended, 90%)** — You decide. The agent automates.
 >
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
 Above 70%, the question carries no warning, neither option is marked, and Unattended is first. The engineer still chooses either way.
+
+**The Attended option carries, in parentheses, the agent's confidence if the work is attended.** Where Attended is the recommendation, the figure shares the parentheses: *Attended (Recommended, 90%)*. Attended work removes most of the risk behind *Your approval*, since the engineer decides each point where the design could go more than one way. That leaves *It'll work* as the main limit, so the attended confidence is about that figure, and may be a little higher, since a wrong turn is caught when it is taken. It is estimated, not calculated, like the other figures.
+
+**As the engineer stated it:** In each Attended option, put the confidence percentage in parentheses
 
 **The options are listed Unattended first and Attended second, except where Attended is the recommendation.** A first option reads as recommended. So where Attended is marked as the recommendation, it is listed first, and the order does not contradict the mark.
 
@@ -75,9 +79,9 @@ Above 70%, the question carries no warning, neither option is marked, and Unatte
 
 - **The feature or experiment record** carries it as a **confirmation at the start**, beside the working-location selection. It is a lifecycle fact: what was chosen, when, and by whom.
 
-  **The confirmation also records the four figures the question showed, and whether the warning was shown.** For example:
+  **The confirmation also records the five figures the question showed, and whether the warning was shown.** For example:
 
-  > - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+  > - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%, attended confidence 90%. The warning was shown, and Attended was recommended.
 
   Recorded at the start, before the work, the figures can later be compared with how the work turned out. That comparison is the only way to learn whether the agent's estimates are accurate.
 - **The loop record declares it at the top**, because it changes how every cycle below is read.
@@ -132,7 +136,7 @@ A record that showed options put to an engineer who was not there would be worse
 
 Ask it in the words fixed above: *Human in the loop*, then the overall score, the risk of redo, works, and voice, each on a line of its own with its fixed sentence. Put your own three estimates for this piece of work in place of the example figures. Estimate the overall score directly, and give none higher than the lower of works and voice. Give the risk of redo as 100% minus the overall score. When the overall score is 70% or lower, end the question with the fixed warning line, and mark the Attended option *(Recommended)*. Use *You decide. The agent automates.* and *The agent makes the decisions and generates through if you accept the plan it'll propose.* as the options. Name no hinge in the question or in an option.
 
-Record the selection as a confirmation in the feature or experiment record, with the four figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
+Record the selection as a confirmation in the feature or experiment record, with the five figures the question showed and whether the warning was shown. Declare it at the top of the loop record. Run the hinges either way.
 
 **When unattended, write the plan as a list in ETE, and put it inside the *Accept the plan?* question, before generating, in the words fixed above.** Write each cycle as its hinge and the decision with its reasoning. Write no Options or Decision / chat line.
 
@@ -155,19 +159,19 @@ Record the selection as a confirmation in the feature or experiment record, with
 
 > Human in the loop
 >
-> - Agent's confidence: 80%. How sure the agent is about working alone.
-> - Risk of redo: 20%. How likely it is that you will have to redo work the agent does. It is 100% minus the agent's confidence.
-> - It'll work: 95%. How sure the agent is that what it builds alone works, and does what the work was started to do.
-> - Your approval: 85%. How sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.
+> - Agent's confidence: 80% (how sure the agent is about working alone.)
+> - Risk of redo: 20% (how likely it is that you will have to redo work the agent does.)
+> - It'll work: 95% (how sure the agent is that what it builds on its own does what it says.)
+> - Your approval: 85% (how sure the agent is that it does what you would do: naming, shaping, and deciding things as you would.)
 
 with these options:
 
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 >
-> **Attended** — You decide. The agent automates.
+> **Attended (95%)** — You decide. The agent automates.
 
 15. These words are fixed. The figures are examples.
-16. Put each figure on a line of its own, with its fixed sentence that says what it measures. Write no `**` around a figure. The selection UI prints them as characters.
+16. Put each figure on a line of its own, followed by its fixed sentence that says what it measures, in parentheses. Write no `**` around a figure. The selection UI prints them as characters.
 17. The first figure is the overall score, the agent's confidence that the unattended work works and is what the engineer would have done.
 18. **Works** is the agent's confidence that the work it builds alone works: its tests pass, and it does what the work was started to do.
 19. **Voice** is the agent's confidence that, working alone, it does what the engineer would do: names things, shapes each actuation, and decides each hinge as the engineer would.
@@ -177,11 +181,11 @@ with these options:
 23. Never give an overall score higher than the lower of works and voice.
 24. When the overall score is 70% or lower, end the question with this line:
 
-> When the agent's confidence is 70% or lower, you may have to redo work the agent does.
+> When the agent's confidence is 70% or lower, intervention is indicated.
 
 25. When the overall score is 70% or lower, mark the Attended option as the recommendation, and list it first:
 
-> **Attended (Recommended)** — You decide. The agent automates.
+> **Attended (Recommended, 90%)** — You decide. The agent automates.
 >
 > **Unattended** — The agent makes the decisions and generates through if you accept the plan it'll propose.
 
@@ -191,9 +195,9 @@ with these options:
 29. Name the hinges when the loop reaches the first one, not before.
 30. Record the mode in the feature or experiment record, as a confirmation at the start, beside the working-location selection.
 31. That confirmation records what was chosen, when, and by whom.
-32. That confirmation also records the four figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
+32. That confirmation also records the five figures the question showed, whether the warning was shown, and whether Attended was recommended. Write it in this form, with the actual date and figures in place of the example ones:
 
-> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%. The warning was shown, and Attended was recommended.
+> - **2026-11-06** — Participation: Attended, selected by the engineer. Agent's confidence 60%, risk of redo 40%, It'll work 90%, Your approval 65%, attended confidence 90%. The warning was shown, and Attended was recommended.
 
 33. Declare the mode once, at the top of the loop record. Do not infer it cycle by cycle.
 34. Under unattended work, the top-of-record declaration is what distinguishes the mode's ungated hinges from skipped gates.
@@ -202,6 +206,7 @@ with these options:
 37. Under unattended work, write no Options line and no Decision / chat line.
 38. Do not write an unattended cycle as though an engineer was consulted.
 39. Do not mark unattended hinges with the a-loop-record-holds-the-cycles-through-the-loop-one-file-per-feature rule form *"none — no gate"*. That form surfaces a skipped gate in an attended run as a defect.
+40. Put the agent's estimate of its confidence if the work is attended in parentheses in the Attended option, as *Attended (95%)*, or *Attended (Recommended, 90%)* where it is recommended. Estimate it as about the *It'll work* figure, or a little higher. Do not calculate it.
 
 ## Unattended presents a plan before it generates
 
@@ -248,8 +253,24 @@ with these exact options:
 - 2026-11-06, revised: the `**` marks removed from the question's figures, and a directive added that the question carries none, as the engineer directed; not re-checked
 - 2026-11-07, revised: the confidence figure's sentence reads *How sure the agent is about working alone.*, wording the engineer gave; not re-checked
 - 2026-11-07, revised: the options are listed Unattended first, and Attended moves first where it is recommended, as the engineer directed; checked: 51 directives, 51 kept, 0 less precise, 0 lost, 0 repairs
+- 2026-11-07, revised: the warning reads *intervention is indicated*, wording the engineer gave, after a moment as *you're likely to redo the agent's work*, then *reworking the agent's work is recommended*, then *rework is likely*, then *intervention is likely*; not re-checked
+- 2026-11-07, revised: the sentence that says what each figure measures is put in parentheses, as the engineer directed; not re-checked
+- 2026-11-07, revised: each parenthetical starts with a lower-case letter, as the engineer directed; not re-checked
+- 2026-11-07, revised: the *It'll work* sentence reads *how sure the agent is that what it builds on its own does what it says*, wording the engineer gave, after a moment ending *does what it says it does*; not re-checked
+- 2026-11-07, revised: *It is 100% minus the agent's confidence.* is removed from the risk-of-redo line, as the engineer directed; not re-checked
+- 2026-11-07, revised: the Attended option carries the attended confidence in parentheses, and the confirmation records it, as point 40 and point 32; checked: 51 directives, 51 kept, 0 less precise, 0 lost, 0 repairs
 
 ## History
+
+Until Sat Nov 7 2026 the Attended option carried no figure, and the start confirmation recorded four figures.
+
+Until Sat Nov 7 2026 the risk-of-redo line ended *It is 100% minus the agent's confidence.*
+
+Until Sat Nov 7 2026 the *It'll work* figure's sentence read *How sure the agent is that what it builds alone works, and does what the work was started to do.*
+
+Until Sat Nov 7 2026 the sentence that says what each figure measures followed the figure after a full stop, not in parentheses, and started with a capital letter.
+
+Until Sat Nov 7 2026 the warning read *When the agent's confidence is 70% or lower, you may have to redo work the agent does.*
 
 Until Sat Nov 7 2026 the options were listed Attended first and Unattended second, in every case.
 
@@ -312,3 +333,9 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 1:07:02 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 8:47:18 PM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 12:16:42 AM PT
 Changed by Scott Bellware on Sat Nov 7 2026 at 1:46:52 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:52:31 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:57:53 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:58:31 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 1:59:54 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:06:32 AM PT
+Changed by Scott Bellware on Sat Nov 7 2026 at 2:18:41 AM PT
