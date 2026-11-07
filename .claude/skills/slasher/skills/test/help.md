@@ -1,5 +1,6 @@
 TESTS
-  These commands run the project's tests and report on them.
+  These commands run the project's tests, or other compliance routines,
+  quality checks, and report on them.
 
   /test                            Run the automated suite
   /test interactive [<test>]       Run an interactive test, or ask which

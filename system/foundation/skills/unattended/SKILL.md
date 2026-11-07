@@ -1,6 +1,6 @@
 ---
 name: unattended
-description: Carry out a request on the agent's own, after a plan is accepted.
+description: Carry out a request on the agent's own, after a plan is proposed.
 argument-hint: "<request>"
 disable-model-invocation: true
 ---

@@ -5,8 +5,8 @@ Usage: /<command> [<subcommand>] [<arguments>]
        except where a bare command has its own meaning, shown below.
        A bare /slasher offers topics to learn about. /command-table prints
        the command domain table, one line for each command domain, and
-       /commands is an alias of /command-table. /slasher help prints this
-       help.
+       /commands and /? are aliases of /command-table. /slasher help
+       prints this help.
 
 ITEMS
   Items hold the project's thinking: ideas, plans, designs, observations, and
@@ -109,9 +109,9 @@ PROCESS
 
   /items [<n>]                     The current items, or the n most recent,
                                    then the current features and experiments
-  /. [<n>]                         An alias of /items
+  /' [<n>]                         An alias of /items
   /recent                          What was recently done, and what's next
-  /?                               What are we doing?
+  /.                               An alias of /recent
 
   /next                            Proceed to the next step in the current
                                    multi-step process
@@ -119,7 +119,7 @@ PROCESS
                                    process
 
   /unattended <request>            Carry out the request on the agent's own,
-                                   after a plan is accepted
+                                   after a plan is proposed
 
   /process help                    Print this command's help
 
@@ -167,7 +167,8 @@ BRAINSTORMING
   /brainstorm help                 Print this command's help
 
 TESTS
-  These commands run the project's tests and report on them.
+  These commands run the project's tests, or other compliance routines,
+  quality checks, and report on them.
 
   /test                            Run the automated suite
   /test interactive [<test>]       Run an interactive test, or ask which

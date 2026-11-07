@@ -4,9 +4,9 @@ PROCESS
 
   /items [<n>]                     The current items, or the n most recent,
                                    then the current features and experiments
-  /. [<n>]                         An alias of /items
+  /' [<n>]                         An alias of /items
   /recent                          What was recently done, and what's next
-  /?                               What are we doing?
+  /.                               An alias of /recent
 
   /next                            Proceed to the next step in the current
                                    multi-step process
@@ -14,6 +14,6 @@ PROCESS
                                    process
 
   /unattended <request>            Carry out the request on the agent's own,
-                                   after a plan is accepted
+                                   after a plan is proposed
 
   /process help                    Print this command's help
