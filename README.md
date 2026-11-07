@@ -2,8 +2,6 @@
 
 # Slasher: Human-in-the-Loop Harness
 
-By [The Eventide Project](https://eventide-project.org)
-
 The engineer decides. The agent generates.
 
 Where there is ambiguity, the agent gives the engineer options, including the option to take control.
