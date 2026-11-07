@@ -8,7 +8,6 @@
 | `/item` | Items hold the project's thinking: ideas, plans, designs, observations, and work to be done, each with a state. |
 | `/feature` | A feature builds something the project needs, on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
 | `/experiment` | An experiment tests a question on its own branch or worktree, to a declared end. Features and experiments are both kinds of implementations. |
-| `/phase` | Phases split a feature or an experiment into steps, run one at a time, each on its own sub branch. |
 | `/report` | This command lists the current items, then the current features and experiments. |
 | `/report brief` | This command says what was recently done, and what's next. |
 | `/process` | These commands move the work under way along: take its next step, or say what was done and what's next. |
@@ -27,6 +26,8 @@
 
 **After the table, run `/report 10`.** In the same response, below the table, print the ten most recently created current items and the current implementations, as the `/report` command prints them. Head the items *10 most recent items*. Where the project has no items directory, print nothing in place of it. A read run again after a compaction runs no `/report 10`, for the same reason it prints no table.
 
+**The PHASE domain has no row.** `/slasher help` and `/phase help` still give its help.
+
 **The first row names `/slasher help`, which prints the help of every Slasher command.** It names no command domain.
 
 **A bare `/slasher` prints the table too, and so does `/command-table`.** Each prints the table word for word, and nothing else: no `/report 10` and no package set stanza. The engineer asks for it to see the commands again during a session. `/command-table` belongs to no command domain. It has the last row of the table, and the help header names it, beside the bare `/slasher`. `/commands` is an alias of `/command-table`, and the help header names it too. As an alias, it has no row.
@@ -35,11 +36,13 @@
 
 **Keep the table in line with the help.** When a domain's heading, its help command, or its description changes in the help text, change this table in the same commit.
 
-**Why:** the engineer sees what the commands are for at the moment they can start using them. The table gives one line for each domain, so it shows the whole set at a glance, and `/slasher help` gives the detail. The current items and implementations show the engineer where the work stands before they make the first request.
+**Why:** the engineer sees what the commands are for at the moment they can start using them. The table gives one line for each domain but PHASE, so it shows the whole set at a glance, and `/slasher help` gives the detail. The current items and implementations show the engineer where the work stands before they make the first request.
 
 **How to apply:** at the end of the session-start read, print the table as it stands here, once, run `/report 10` below it, and then turn to the engineer's request or wait for one.
 
 ## History
+
+Until Fri Nov 6 2026 the table had a `/phase` row, below the `/experiment` row.
 
 Until Fri Nov 6 2026 the table opened with the `/item` row, and no row named `/slasher help`.
 
@@ -83,3 +86,4 @@ Changed by Scott Bellware on Fri Nov 6 2026 at 10:03:18 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:00:59 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:08:55 PM PT
 Changed by Scott Bellware on Fri Nov 6 2026 at 11:35:54 PM PT
+Changed by Scott Bellware on Fri Nov 6 2026 at 11:36:20 PM PT
